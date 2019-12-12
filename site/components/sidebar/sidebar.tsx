@@ -13,7 +13,7 @@ import {Overlay} from '../overlay';
 import {SidebarNav} from './sidebar-navigation';
 import {CloseIcon} from '../icons';
 import {handleEnterKeyPress} from '../../helpers/a11y';
-import NewsKitLogo from '../newskit-logo';
+import {NewsKitLogo} from '../logo';
 import {Link} from '../link';
 
 interface SidebarProps {
@@ -57,6 +57,11 @@ const SidebarHeader = styled.div`
   width: 100%;
   position: sticky;
   top: 0;
+
+  ${getMediaQueryFromTheme('md')} {
+    padding-top: ${getSizingFromTheme('spacingSize030')};
+    padding-bottom: ${getSizingFromTheme('spacingSize030')};
+  }
 `;
 
 const IconWrapper = styled.div`

@@ -59,6 +59,7 @@ export const StyledRoot = styled.nav`
   ${getTypePresetFromTheme('body030')};
   list-style-type: none;
   margin: 0;
+  padding-top: ${getSizingFromTheme('spacingSize0600')};
 `;
 
 export const NavItemContainer = styled.li`
