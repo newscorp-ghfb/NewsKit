@@ -9,7 +9,7 @@ import {
   styled,
 } from 'newskit';
 
-import HeaderNavigation from './header-navigation';
+import SiteHeader from './site-header';
 import SiteFooter from './site-footer';
 import Sidebar from './sidebar';
 import SectionNavigation from './section-navigation';
@@ -153,7 +153,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
         />
 
         <Container>
-          <HeaderNavigation
+          <SiteHeader
             handleSidebarClick={this.toggleSidebar}
             toggleTheme={toggleTheme}
             ref={this.headerRef}
