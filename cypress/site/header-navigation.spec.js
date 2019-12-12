@@ -13,7 +13,7 @@ describe('Documentation Site - header-navigation component', () => {
   });
 
   it('should contain logo', () => {
-    cy.get('[data-testid="logo-box"]').should('exist');
+    cy.get('[data-testid="logo-container"]').should('exist');
     cy.get(hamburgerIconTestID).should('be.hidden');
   });
 

@@ -3,7 +3,7 @@ import Sidebar from '..';
 
 describe('Sidebar', () => {
   describe('renders correctly', () => {
-    test('when opened', () => {
+    test('when open', () => {
       const fragment = renderToFragmentWithTheme(Sidebar, {
         path: '/',
         sidebarOpen: true,
