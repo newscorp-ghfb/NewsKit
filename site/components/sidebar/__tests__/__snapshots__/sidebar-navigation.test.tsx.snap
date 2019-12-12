@@ -13,6 +13,7 @@ exports[`Sidebar navigation collapses successfully at 2nd level 1`] = `
   letter-spacing: 0;
   list-style-type: none;
   margin: 0;
+  padding-top: 32px;
 }
 
 .emotion-20 {
@@ -404,6 +405,7 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
   letter-spacing: 0;
   list-style-type: none;
   margin: 0;
+  padding-top: 32px;
 }
 
 .emotion-21 {
@@ -756,6 +758,7 @@ exports[`Sidebar navigation on route level renders correctly without given path 
   letter-spacing: 0;
   list-style-type: none;
   margin: 0;
+  padding-top: 32px;
 }
 
 .emotion-21 {
@@ -1108,6 +1111,7 @@ exports[`Sidebar navigation on theming page after click guides menu collapses 1`
   letter-spacing: 0;
   list-style-type: none;
   margin: 0;
+  padding-top: 32px;
 }
 
 .emotion-21 {
@@ -1460,6 +1464,7 @@ exports[`Sidebar navigation on theming page after enter key guides menu collapse
   letter-spacing: 0;
   list-style-type: none;
   margin: 0;
+  padding-top: 32px;
 }
 
 .emotion-21 {
@@ -1812,6 +1817,7 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
   letter-spacing: 0;
   list-style-type: none;
   margin: 0;
+  padding-top: 32px;
 }
 
 .emotion-62 {
@@ -2494,6 +2500,7 @@ exports[`Sidebar navigation on theming page renders as expected 1`] = `
   letter-spacing: 0;
   list-style-type: none;
   margin: 0;
+  padding-top: 32px;
 }
 
 .emotion-8 {
