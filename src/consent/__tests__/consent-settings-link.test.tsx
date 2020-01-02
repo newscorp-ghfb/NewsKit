@@ -73,4 +73,32 @@ describe('ConsentSettingsLink', () => {
       expect(console.warn).toBeCalled();
     });
   });
+
+  describe('with link props', () => {
+    test('renders link with styles', () => {
+      const fragment = renderToFragmentWithTheme(ConsentSettingsLink, {
+        siteId,
+        privacyManagerId,
+        children: 'Some Custom Link Text With Styles',
+        $noUnderline: true,
+        $color: 'inkBase',
+        $font: 'body010',
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('handles correctly passed click event', async () => {
+      const onClick = jest.fn();
+
+      const link = await renderWithTheme(ConsentSettingsLink, {
+        siteId,
+        privacyManagerId,
+        children: 'Some Custom Link Text With Styles',
+        onClick,
+      }).findByRole('button');
+      fireEvent.click(link);
+
+      expect(onClick).toBeCalled();
+    });
+  });
 });

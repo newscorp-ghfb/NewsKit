@@ -9,13 +9,11 @@ import {
 import {ButtonProps, ButtonShape, ButtonSize} from './types';
 
 const ButtonElement = styled.button<ButtonProps>`
-  display: inline-block;
   position: relative;
   width: auto;
   border: none;
   outline: none;
   appearance: none;
-  overflow: hidden;
   color: ${getColorFromTheme('buttonText')};
   transition-property: background-color;
   transition-duration: ${getAnimationFromTheme('timing100')};
@@ -23,12 +21,11 @@ const ButtonElement = styled.button<ButtonProps>`
   background-color: ${getColorFromTheme('buttonFill')};
   cursor: pointer;
 
-  ${({$size = ButtonSize.Small, icon, theme}) => {
+  ${({$size = ButtonSize.Small, theme}) => {
     const defaultStyle = css`
       ${getTypePresetFromTheme('button010')({theme})}
       padding: 0 ${theme.sizing.sizing020};
       height: ${theme.sizing.sizing060};
-      ${icon && `width: ${theme.sizing.sizing060};`}
       /* Extend touchpoint area */
       margin: ${theme.sizing.spacingSize020} 0;
       ::before {
@@ -47,13 +44,11 @@ const ButtonElement = styled.button<ButtonProps>`
         ${getTypePresetFromTheme('button020')({theme})}
         padding: 0 ${theme.sizing.sizing040};
         height: ${theme.sizing.sizing070};
-        ${icon && `width: ${theme.sizing.sizing070};`}
       `,
       [ButtonSize.Large]: css`
         ${getTypePresetFromTheme('button030')({theme})}
         padding: 0 ${theme.sizing.sizing050};
         height: ${theme.sizing.sizing080};
-        ${icon && `width: ${theme.sizing.sizing080};`}
       `,
     }[$size];
   }}
@@ -84,66 +79,8 @@ const ButtonElement = styled.button<ButtonProps>`
   :active:not(:disabled) {
     background-color: ${getColorFromTheme('interactive010Pressed')};
   }
-
-  ${({icon, theme}) =>
-    icon &&
-    `padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid ${getColorFromTheme('interactive010')({theme})};
-    background-color: ${getColorFromTheme('interface010')({theme})};
-
-    & svg {
-      fill: ${getColorFromTheme('inkBase')({theme})};
-    }
-
-    :disabled {
-      border: none;
-      background-color: ${getColorFromTheme('interactiveDisabled')({theme})};
-
-      & svg {
-        fill: ${getColorFromTheme('inkNonEssential')({theme})};
-      }
-    }
-  
-    :hover:not(:disabled) {
-      border: 1px solid ${getColorFromTheme('interactive010')({theme})};
-      background-color: ${getColorFromTheme('interfaceHover')({theme})};
-      
-      & svg {
-        fill: ${getColorFromTheme('inkBase')({theme})};
-      }
-    }
-  
-    :focus:not(:disabled) {
-      border: 1px solid ${getColorFromTheme('interactive010')({theme})};
-      background-color: ${getColorFromTheme('interface010')({theme})};
-
-      & svg {
-        fill: ${getColorFromTheme('inkBase')({theme})};
-      }
-    }
-  
-    :active:not(:disabled) {
-      border: 1px solid ${getColorFromTheme('interactive010Active')({theme})};
-      background-color: ${getColorFromTheme('interfaceActive')({theme})};
-
-      & svg {
-        fill: ${getColorFromTheme('inkInverse')({theme})};
-      }
-    }
-  `}
 `;
 
 export const Button: React.FC<
   React.ButtonHTMLAttributes<HTMLButtonElement> & ButtonProps
-> = props => {
-  const {children, icon: Icon, ...restOfProps} = props;
-  return (
-    <ButtonElement type="button" {...restOfProps} icon={Icon}>
-      {(Icon && <Icon />) || children}
-    </ButtonElement>
-  );
-};
+> = props => <ButtonElement type="button" {...props} />;

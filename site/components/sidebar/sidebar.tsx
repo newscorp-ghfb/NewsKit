@@ -14,6 +14,7 @@ import {SidebarNav} from './sidebar-navigation';
 import {CloseIcon} from '../icons';
 import {handleEnterKeyPress} from '../../helpers/a11y';
 import NewsKitLogo from '../newskit-logo';
+import {Link} from '../link';
 
 interface SidebarProps {
   path: string;
@@ -74,7 +75,9 @@ const Sidebar: React.FC<SidebarProps> = ({
       role="complementary"
     >
       <SidebarHeader>
-        <NewsKitLogo $color="inkBase" $size="spacingSize120" />
+        <Link href="/">
+          <NewsKitLogo $color="inkBase" $size="spacingSize120" />
+        </Link>
         <Visible xs sm>
           <Block $display="flex" $height="100%">
             <IconWrapper

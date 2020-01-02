@@ -59,7 +59,6 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 }
 
 .emotion-2 {
-  display: inline-block;
   position: relative;
   width: auto;
   border: none;
@@ -67,7 +66,6 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  overflow: hidden;
   color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {Link} from '../link';
+import {LinkProps} from '../link/types';
 
 type SPWindow = Window & {
   _sp_: {
@@ -7,7 +8,7 @@ type SPWindow = Window & {
   };
 };
 
-export interface ConsentSettingsLinkProps {
+export interface ConsentSettingsLinkProps extends Omit<LinkProps, 'href'> {
   siteId: string;
   privacyManagerId: string;
   children?: string;
@@ -17,12 +18,14 @@ export const ConsentSettingsLink: React.FC<ConsentSettingsLinkProps> = ({
   siteId,
   privacyManagerId,
   children = 'Manage Consent',
+  ...props
 }) => (
   // eslint-disable-next-line jsx-a11y/anchor-is-valid
   <Link
+    {...props}
     href="#"
     role="button"
-    onClick={() => {
+    onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
       try {
         // eslint-disable-next-line no-underscore-dangle
         (window as SPWindow)._sp_.loadPrivacyManagerModal(
@@ -35,6 +38,10 @@ export const ConsentSettingsLink: React.FC<ConsentSettingsLinkProps> = ({
           'Error occurred attempting to open privacy manager modal. Is Sourcepoint CMP present on this page?',
           e,
         );
+      }
+
+      if (props.onClick) {
+        props.onClick(event);
       }
     }}
   >

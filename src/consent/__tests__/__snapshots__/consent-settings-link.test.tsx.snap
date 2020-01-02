@@ -36,6 +36,50 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 </DocumentFragment>
 `;
 
+exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2e2e2e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+}
+
+.emotion-0:visited {
+  color: #2e2e2e;
+}
+
+.emotion-0:hover {
+  color: #2e2e2e;
+}
+
+.emotion-0:active {
+  color: #2e2e2e;
+}
+
+<a
+    class="emotion-0"
+    href="#"
+    role="button"
+  >
+    Some Custom Link Text With Styles
+  </a>
+</DocumentFragment>
+`;
+
 exports[`ConsentSettingsLink with no children renders link with default text 1`] = `
 <DocumentFragment>
   .emotion-0 {

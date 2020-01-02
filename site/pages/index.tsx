@@ -46,7 +46,7 @@ const Index: React.FC<{toggleTheme: () => void}> = ({toggleTheme}) => (
   <React.Fragment>
     <PageTitle title="Homepage" />
     <Layout toggleTheme={toggleTheme} path="/">
-      <Grid xsRowGutter="sizing000">
+      <Grid xsRowGutter="sizing000" xsMargin="sizing000">
         <Cell xs={12}>
           <MainContent>
             <StyledH1>NewsKit,</StyledH1>

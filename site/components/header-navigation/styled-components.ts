@@ -15,8 +15,6 @@ export const Header = styled.header`
 export const Root = styled.nav`
   display: flex;
   box-shadow: none;
-  padding-left: ${getSizingFromTheme('spacingSize040')};
-  padding-right: ${getSizingFromTheme('spacingSize040')};
   background-color: ${getColorFromTheme('interface010')};
   ${getTypePresetFromTheme('body030')}
 `;

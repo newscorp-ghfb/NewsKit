@@ -2,43 +2,29 @@ import React, {useState} from 'react';
 import {styled, getColorFromTheme} from '../utils/style';
 import {Placeholder} from '../icons';
 
-export enum ImageShape {
-  Square = 'square',
-  Round = 'round',
-}
-
 export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   aspectHeight: Number | String;
   aspectWidth: Number | String;
   hideLoadingIcon?: Boolean;
-  shape?: ImageShape;
 }
 
-interface ImageContainerProps extends React.HtmlHTMLAttributes<HTMLElement> {
-  isLoading: Boolean;
-  aspectHeight: Number | String;
-  aspectWidth: Number | String;
-  shape?: ImageShape;
-}
-
-const ImageContainer = styled.div<ImageContainerProps>`
-  position: relative;
-  width: 100%;
-  height: ${props => (props.isLoading ? 0 : 'auto')};
-  padding-top: ${props =>
-    props.isLoading
-      ? `calc(100% * (${props.aspectHeight}/${props.aspectWidth}))`
-      : 0};
-  background-color: ${getColorFromTheme('skeleton010')};
-  border-radius: ${props => ({shape = props.shape || ImageShape.Square}) =>
-    ({
-      [ImageShape.Square]: undefined,
-      [ImageShape.Round]: '50%',
-    }[shape])};
-`;
-
-export const Image = ({hideLoadingIcon, ...rest}: ImageProps) => {
+export const Image = ({
+  aspectHeight,
+  aspectWidth,
+  hideLoadingIcon,
+  ...rest
+}: ImageProps) => {
   const [{isLoading}, setState] = useState({isLoading: true});
+
+  const Container = styled.div`
+    position: relative;
+    width: 100%;
+    height: ${isLoading ? 0 : 'auto'};
+    padding-top: ${isLoading
+      ? `calc(100% * (${aspectHeight}/${aspectWidth}))`
+      : 0};
+    background-color: ${getColorFromTheme('skeleton010')};
+  `;
 
   const DisplayImage = styled.img`
     display: ${isLoading ? 'none' : 'block'};
@@ -74,7 +60,7 @@ export const Image = ({hideLoadingIcon, ...rest}: ImageProps) => {
   `;
 
   return (
-    <ImageContainer {...rest} isLoading={isLoading}>
+    <Container>
       <IconContainer>
         <InnerIconContainer>
           <Placeholder $size="sizing080" />
@@ -84,6 +70,6 @@ export const Image = ({hideLoadingIcon, ...rest}: ImageProps) => {
         {...rest}
         onLoad={() => isLoading && setState({isLoading: false})}
       />
-    </ImageContainer>
+    </Container>
   );
 };

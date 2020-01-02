@@ -57,6 +57,16 @@
     "id": "/components",
     "subNav": [
       {
+        "title": "Tag",
+        "page": true,
+        "id": "/components/tag"
+      },
+      {
+        "title": "Link",
+        "page": true,
+        "id": "/components/link"
+      },
+      {
         "title": "ArticleByline",
         "page": true,
         "id": "/components/article-byline"
@@ -72,9 +82,9 @@
         "id": "/components/article-standfirst"
       },
       {
-        "title": "AudioPlayer",
+        "title": "DateLine",
         "page": true,
-        "id": "/components/audio-player"
+        "id": "/components/date-line"
       },
       {
         "title": "Divider",
@@ -82,49 +92,9 @@
         "id": "/components/divider"
       },
       {
-        "title": "Button",
-        "page": true,
-        "id": "/components/button"
-      },
-      {
-        "title": "Consent",
-        "page": true,
-        "id": "/components/consent"
-      },
-      {
-        "title": "DateLine",
-        "page": true,
-        "id": "/components/date-line"
-      },
-      {
-        "title": "Grid & Cell",
-        "page": true,
-        "id": "/components/grid"
-      },
-      {
         "title": "Image",
         "page": true,
         "id": "/components/image"
-      },
-      {
-        "title": "Link",
-        "page": true,
-        "id": "/components/link"
-      },
-      {
-        "title": "OrderedList",
-        "page": true,
-        "id": "/components/ordered-list"
-      },
-      {
-        "title": "ShareBar",
-        "page": true,
-        "id": "/components/share-bar"
-      },
-      {
-        "title": "Tag",
-        "page": true,
-        "id": "/components/tag"
       },
       {
         "title": "TagList",
@@ -137,9 +107,39 @@
         "id": "/components/title-bar"
       },
       {
+        "title": "Grid & Cell",
+        "page": true,
+        "id": "/components/grid"
+      },
+      {
+        "title": "OrderedList",
+        "page": true,
+        "id": "/components/ordered-list"
+      },
+      {
         "title": "UnorderedList",
         "page": true,
         "id": "/components/unordered-list"
+      },
+      {
+        "title": "ShareBar",
+        "page": true,
+        "id": "/components/share-bar"
+      },
+      {
+        "title": "Consent",
+        "page": true,
+        "id": "/components/consent"
+      },
+      {
+        "title": "ConsentSettingsLink",
+        "page": true,
+        "id": "/components/consent-settings-link"
+      },
+      {
+        "title": "Button",
+        "page": true,
+        "id": "/components/button"
       }
     ]
   },

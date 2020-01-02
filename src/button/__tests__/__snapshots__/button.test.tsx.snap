@@ -3,7 +3,6 @@
 exports[`Button renders Large Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   position: relative;
   width: auto;
   border: none;
@@ -11,7 +10,6 @@ exports[`Button renders Large Button 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  overflow: hidden;
   color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -63,7 +61,6 @@ exports[`Button renders Large Button 1`] = `
 exports[`Button renders Medium Rounded Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   position: relative;
   width: auto;
   border: none;
@@ -71,7 +68,6 @@ exports[`Button renders Medium Rounded Button 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  overflow: hidden;
   color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -123,7 +119,6 @@ exports[`Button renders Medium Rounded Button 1`] = `
 exports[`Button renders Small Square Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   position: relative;
   width: auto;
   border: none;
@@ -131,7 +126,6 @@ exports[`Button renders Small Square Button 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  overflow: hidden;
   color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -193,7 +187,6 @@ exports[`Button renders Small Square Button 1`] = `
 exports[`Button renders with fallback formatting 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   position: relative;
   width: auto;
   border: none;
@@ -201,7 +194,6 @@ exports[`Button renders with fallback formatting 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  overflow: hidden;
   color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
