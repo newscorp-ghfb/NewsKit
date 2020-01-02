@@ -4,7 +4,7 @@ import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {Block} from '../../components/block';
 
-import {Image, Link} from 'newskit';
+import {Image, ImageShape, Link} from 'newskit';
 
 export default Layout;
 
@@ -31,6 +31,9 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
   </Prop>
   <Prop name="hideLoadingIcon" type="boolean" default={false} >
     Hide the loading icon whilst the image is loading.
+  </Prop>
+  <Prop name="shape" type="ImageShape" default={ImageShape.Square} >
+    Sets the shape of the image.
   </Prop>
 </Block>
 
@@ -75,11 +78,24 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
           value: true
         }
       ]
+    },
+    {
+      name: 'shape',
+      propName: 'shape',
+      options: [
+        {
+          label: 'square',
+          value: undefined,
+          isDefault: true
+        },
+        {
+          label: 'rounded',
+          value: ImageShape.Rounded
+        }
+      ]
     }
   ]}
 />
-
-### Styling
 
 ### Styling
 

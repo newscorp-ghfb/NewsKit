@@ -200,7 +200,7 @@ export class AudioPlayer extends React.Component<
         <MetaArea>
           <ImageContainer>
             <Image
-              shape={ImageShape.Round}
+              shape={ImageShape.Rounded}
               src={imgSrc}
               alt={imgAlt}
               aspectHeight="1"

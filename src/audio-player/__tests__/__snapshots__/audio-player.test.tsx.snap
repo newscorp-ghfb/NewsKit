@@ -88,6 +88,7 @@ exports[`AudioPlayer renders player 1`] = `
   height: auto;
   -webkit-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
+  border-radius: inherit;
 }
 
 .emotion-9 {
@@ -297,7 +298,7 @@ exports[`AudioPlayer renders player 1`] = `
       >
         <div
           class="emotion-4"
-          shape="round"
+          shape="rounded"
         >
           <div
             class="emotion-2"
@@ -318,7 +319,7 @@ exports[`AudioPlayer renders player 1`] = `
           </div>
           <img
             class="emotion-3"
-            shape="round"
+            shape="rounded"
           />
         </div>
       </div>
@@ -451,6 +452,7 @@ exports[`AudioPlayer renders with live 1`] = `
   height: auto;
   -webkit-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
+  border-radius: inherit;
 }
 
 .emotion-10 {
@@ -700,7 +702,7 @@ exports[`AudioPlayer renders with live 1`] = `
         <div
           alt="test image"
           class="emotion-4"
-          shape="round"
+          shape="rounded"
           src="https://via.placeholder.com/150"
         >
           <div
@@ -723,7 +725,7 @@ exports[`AudioPlayer renders with live 1`] = `
           <img
             alt="test image"
             class="emotion-3"
-            shape="round"
+            shape="rounded"
             src="https://via.placeholder.com/150"
           />
         </div>
@@ -862,6 +864,7 @@ exports[`AudioPlayer renders with tags 1`] = `
   height: auto;
   -webkit-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
+  border-radius: inherit;
 }
 
 .emotion-10 {
@@ -1087,7 +1090,7 @@ exports[`AudioPlayer renders with tags 1`] = `
         <div
           alt="test image"
           class="emotion-4"
-          shape="round"
+          shape="rounded"
           src="https://via.placeholder.com/150"
         >
           <div
@@ -1110,7 +1113,7 @@ exports[`AudioPlayer renders with tags 1`] = `
           <img
             alt="test image"
             class="emotion-3"
-            shape="round"
+            shape="rounded"
             src="https://via.placeholder.com/150"
           />
         </div>

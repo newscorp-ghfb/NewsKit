@@ -55,6 +55,7 @@ exports[`Image renders with defaults 1`] = `
   height: auto;
   -webkit-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
+  border-radius: inherit;
 }
 
 <div
@@ -138,6 +139,7 @@ exports[`Image renders with defaults after load 1`] = `
   height: auto;
   -webkit-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
+  border-radius: inherit;
 }
 
 <div
@@ -224,6 +226,7 @@ exports[`Image renders without icon 1`] = `
   height: auto;
   -webkit-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
+  border-radius: inherit;
 }
 
 <div
