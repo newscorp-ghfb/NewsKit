@@ -159,9 +159,10 @@ exports[`Sidebar renders correctly when closed 1`] = `
   color: #777777;
   cursor: pointer;
   font-weight: normal;
-  height: 40px;
+  min-height: 40px;
   padding-left: 12px;
   padding-top: 8px;
+  padding-bottom: 8px;
   padding-right: 24px;
   border-radius: 8px;
   text-overflow: ellipsis;
@@ -764,9 +765,10 @@ exports[`Sidebar renders correctly when opened 1`] = `
   color: #777777;
   cursor: pointer;
   font-weight: normal;
-  height: 40px;
+  min-height: 40px;
   padding-left: 12px;
   padding-top: 8px;
+  padding-bottom: 8px;
   padding-right: 24px;
   border-radius: 8px;
   text-overflow: ellipsis;

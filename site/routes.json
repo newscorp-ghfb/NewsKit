@@ -87,6 +87,11 @@
         "id": "/components/date-line"
       },
       {
+        "title": "Date Line",
+        "page": true,
+        "id": "/components/date-line"
+      },
+      {
         "title": "Divider",
         "page": true,
         "id": "/components/divider"
@@ -100,11 +105,6 @@
         "title": "TagList",
         "page": true,
         "id": "/components/tag-list"
-      },
-      {
-        "title": "Title Bar",
-        "page": true,
-        "id": "/components/title-bar"
       },
       {
         "title": "Grid & Cell",
@@ -137,7 +137,7 @@
         "id": "/components/consent-settings-link"
       },
       {
-        "title": "Button",
+        "title": "Unordered List",
         "page": true,
         "id": "/components/button"
       }
