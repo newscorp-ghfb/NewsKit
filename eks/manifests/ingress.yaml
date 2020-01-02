@@ -1,0 +1,46 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: {{ (datasource "config").DocSiteName }}-ingress
+  namespace: {{ (datasource "config").Namespace }}
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/inbound-cidrs: {{ (datasource "config").NewsUKcidr }}
+    alb.ingress.kubernetes.io/tags: Environment={{ (datasource "config").Environment }},ServiceOwner=product-plaform,ServiceName={{ (datasource "config").DocSiteName }}
+    external-dns.alpha.kubernetes.io/hostname: {{ (datasource "config").FQDN }}
+  labels:
+    app: {{ (datasource "config").DocSiteName }}
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /*
+            backend:
+              serviceName: {{ (datasource "config").DocSiteName }}-loadbalancer-service
+              servicePort: 80
+
+---
+
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: {{ (datasource "config").StorybookName }}-ingress
+  namespace: {{ (datasource "config").Namespace }}
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/inbound-cidrs: {{ (datasource "config").NewsUKcidr }}
+    alb.ingress.kubernetes.io/tags: Environment={{ (datasource "config").Environment }},ServiceOwner=product-plaform,ServiceName={{ (datasource "config").StorybookName }}
+    external-dns.alpha.kubernetes.io/hostname: {{ (datasource "config").FQDNStorybook }}
+  labels:
+    app: {{ (datasource "config").StorybookName }}
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /*
+            backend:
+              serviceName: {{ (datasource "config").StorybookName }}-loadbalancer-service
+              servicePort: 80

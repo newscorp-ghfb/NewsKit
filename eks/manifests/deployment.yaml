@@ -18,7 +18,7 @@ spec:
         app: {{ (datasource "config").DocSiteName }}
     spec:
       containers:
-      - name: ncu-newskit
+      - name: {{ (datasource "config").DocSiteName }}
         command: ["yarn", "serve:docs"]
         image: {{ .Env.ECR_AWS_ACCOUNT_ID }}.dkr.ecr.{{ .Env.AWS_DEFAULT_REGION }}.amazonaws.com/ncu-newskit:{{ .Env.CIRCLE_SHA1 }}
         ports:
@@ -51,7 +51,7 @@ spec:
         app: {{ (datasource "config").StorybookName }}
     spec:
       containers:
-      - name: ncu-newskit-storybook
+      - name: {{ (datasource "config").StorybookName }}
         command: ["yarn", "serve:storybook"]
         image: {{ .Env.ECR_AWS_ACCOUNT_ID }}.dkr.ecr.{{ .Env.AWS_DEFAULT_REGION }}.amazonaws.com/ncu-newskit:{{ .Env.CIRCLE_SHA1 }}
         ports:

@@ -19,6 +19,13 @@ executors:
           username: $DOCKER_USERNAME
           password: $DOCKER_PASSWORD
 
+  kubectl-deploy:
+    docker:
+      - image: $PIPELINE_REGISTRY/kubectl:latest
+        auth:
+          username: $DOCKER_USERNAME
+          password: $DOCKER_PASSWORD
+
 commands:
   # This one does a Flux deployment (writes to a Flux repo), using the flux-k8s tool you can find in https://github.com/newscorp-ghfb/ncu-circle-pipeline
   flux-deploy:
@@ -48,6 +55,51 @@ commands:
           git config --global user.name "Product Platforms Service"
           flux-generate "${CIRCLE_SHA1}" << parameters.config_values >> << parameters.substitution_dir >> << parameters.out_dir >>
           flux-commit -u << parameters.flux_repo_url >> -n << parameters.flux_repo_name >> -d << parameters.out_dir >> -t << parameters.flux_repo_target >> -m "${CIRCLE_SHA1}_<< parameters.out_dir >>"
+
+  kubectl-deploy:
+    description: "deploy to eks cluster using kubectl"
+    parameters:
+      aws_region:
+        description: AWS Region
+        type: string
+      aws_access_key_id:
+        description: AWS Access Key Id
+        type: string
+      aws_secret_key:
+        description: AWS Secret Key
+        type: string
+      aws_assume_role_arn:
+        description: AWS ARN For Assume Role
+        type: string
+      cluster_name:
+        description: AWS EKS cluster name
+        type: string
+      environment:
+        description: Environment name
+        type: string
+    steps:
+      - setup_remote_docker:
+          docker_layer_caching: true
+      - add_ssh_keys:
+          fingerprints: "7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80"
+      - run: |
+          apk --no-cache add openssh git bash
+          export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
+          git config --global user.email "ncu-product-platforms@news.co.uk"
+          git config --global user.name "Product Platforms Service"
+          git clone git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git flux
+          export EKS_IAM_ROLE_DEV=<< parameters.aws_assume_role_arn >>
+          export EKS_AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
+          export EKS_AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
+          export AWS_DEFAULT_REGION=<< parameters.aws_region >>
+          export CLUSTER_NAME=<< parameters.cluster_name >>
+
+          nukubectl | grep "export AWS_" > auth.env
+          export $(egrep -v '^#' auth.env | xargs)
+          rm auth.env
+
+          cd flux/<< parameters.environment >>/eks
+          kubectl apply -f .
 
   ecr-build-push-docker:
     description: "Assume Role and Push to ECR"
@@ -276,6 +328,72 @@ jobs:
           ecr_repo: "${AWS_RESOURCE_NAME_PREFIX}"
           docker_tag: "${CIRCLE_SHA1}"
 
+  eks_flux_deploy_dev:
+    executor: flux-deploy
+    steps:
+      - flux-deploy:
+          config_values: eks/values/product-platforms-values-dev.yaml
+          substitution_dir: eks/manifests
+          out_dir: product-platforms-dev
+          flux_repo_url: git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git
+          flux_repo_name: ncu-flux-newskit-site
+          flux_repo_target: dev/eks
+
+  eks_flux_deploy_staging:
+    executor: flux-deploy
+    steps:
+      - flux-deploy:
+          config_values: eks/values/product-platforms-values-staging.yaml
+          substitution_dir: eks/manifests
+          out_dir: product-platforms-staging
+          flux_repo_url: git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git
+          flux_repo_name: ncu-flux-newskit-site
+          flux_repo_target: staging/eks
+
+  eks_flux_deploy_prod:
+    executor: flux-deploy
+    steps:
+      - flux-deploy:
+          config_values: eks/values/product-platforms-values-prod.yaml
+          substitution_dir: eks/manifests
+          out_dir: product-platforms-prod
+          flux_repo_url: git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git
+          flux_repo_name: ncu-flux-newskit-site
+          flux_repo_target: prod/eks
+
+  eks_kubectl_deploy_dev:
+    executor: kubectl-deploy
+    steps:
+      - kubectl-deploy:
+          aws_region: "${AWS_DEFAULT_REGION}"
+          aws_access_key_id: "${AWS_ACCESS_KEY_ID}"
+          aws_secret_key: "${AWS_SECRET_ACCESS_KEY}"
+          aws_assume_role_arn: "${AWS_ASSUME_ROLE_ARN}"
+          cluster_name: ceng-eks-dev
+          environment: dev
+
+  eks_kubectl_deploy_staging:
+    executor: kubectl-deploy
+    steps:
+      - kubectl-deploy:
+          aws_region: "${AWS_DEFAULT_REGION}"
+          aws_access_key_id: "${AWS_ACCESS_KEY_ID}"
+          aws_secret_key: "${AWS_SECRET_ACCESS_KEY}"
+          aws_assume_role_arn: "${AWS_ASSUME_ROLE_ARN}"
+          cluster_name: ceng-eks-staging
+          environment: staging
+
+  eks_kubectl_deploy_prod:
+    executor: kubectl-deploy
+    steps:
+      - kubectl-deploy:
+          aws_region: "${AWS_DEFAULT_REGION}"
+          aws_access_key_id: "${AWS_ACCESS_KEY_ID}"
+          aws_secret_key: "${AWS_SECRET_ACCESS_KEY}"
+          aws_assume_role_arn: "${AWS_ASSUME_ROLE_ARN}"
+          cluster_name: ceng-eks-prod
+          environment: prod
+
   k8s_flux_deploy_dev:
     executor: flux-deploy
     steps:
@@ -387,6 +505,16 @@ workflows:
           <<: *only_develop
           requires:
             - build_push_docker_ecr
+      - eks_flux_deploy_dev:
+          context: ncu-newskit-site-dev
+          <<: *only_develop
+          requires:
+            - build_push_docker_ecr
+      - eks_kubectl_deploy_dev:
+          context: ncu-newskit-site-dev
+          <<: *only_develop
+          requires:
+            - eks_flux_deploy_dev
       - approve_deployment:
           type: approval
           <<: *only_master

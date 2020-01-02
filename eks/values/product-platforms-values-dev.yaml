@@ -1,0 +1,18 @@
+Name:
+  ncu-newskit
+DocSiteName:
+  ncu-newskit-doc-site
+StorybookName:
+  ncu-newskit-storybook
+Environment:
+  dev
+Namespace:
+  newskit-dev
+NewsUKcidr:
+  143.252.0.0/16
+FQDN:
+  newskit-dev.digieng-dev.ntch.co.uk
+FQDNStorybook:
+  newskit-dev-storybook.digieng-dev.ntch.co.uk
+SSLCertARN:
+  arn:aws:acm:eu-west-1:720262317718:certificate/9e9bed2a-8818-42e0-b6cb-ddfb1bd792cc
