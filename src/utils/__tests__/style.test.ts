@@ -217,35 +217,35 @@ describe('Style helpers', () => {
     expect(declaration).toEqual('radius200_border');
   });
 
-  test('getAnimationFromTheme("timing100")({theme}) returns "timing100_timing"', () => {
+  test('getAnimationFromTheme("animationDuration020")({theme}) returns "animationDuration020_timing"', () => {
     const props = {
       theme: {
         animation: {
-          timing100: 'timing100_timing',
+          animationDuration020: 'animationDuration020_timing',
         },
       },
     };
     const declaration = getAnimationFromTheme<{animation?: string; theme: any}>(
-      'timing100' as any,
+      'animationDuration020' as any,
     )(props);
-    expect(declaration).toEqual('timing100_timing');
+    expect(declaration).toEqual('animationDuration020_timing');
   });
 
-  test('getAnimationFromTheme("timing100", "animation")({theme, animation: "timing200"}) returns "timing200_timing"', () => {
+  test('getAnimationFromTheme("animationDuration020", "animation")({theme, animation: "animationDuration040"}) returns "animationDuration040_timing"', () => {
     const props = {
       theme: {
         animation: {
-          timing100: 'timing100_timing',
-          timing200: 'timing200_timing',
+          animationDuration020: 'animationDuration020_timing',
+          animationDuration040: 'animationDuration040_timing',
         },
       },
-      animation: 'timing200',
+      animation: 'animationDuration040',
     };
     const declaration = getAnimationFromTheme<{animation?: string; theme: any}>(
-      'timing100' as any,
+      'animationDuration020' as any,
       'animation',
     )(props);
-    expect(declaration).toEqual('timing200_timing');
+    expect(declaration).toEqual('animationDuration040_timing');
   });
 
   test('getFontSizingFromTheme with font size primitive returns expected font sizing object', () => {

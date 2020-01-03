@@ -13,8 +13,8 @@ const StyledLink = styled.a<LinkProps>`
   color: ${getColorFromTheme('linkText', '$color')};
   text-decoration: ${({$noUnderline}) => ($noUnderline ? `none` : `underline`)};
   transition-property: color;
-  transition-duration: ${getAnimationFromTheme('timing100')};
-  transition-timing-function: ${getAnimationFromTheme('easeOutCurve')};
+  transition-duration: ${getAnimationFromTheme('animationDuration020')};
+  transition-timing-function: ${getAnimationFromTheme('animationEaseOut')};
 
   :visited {
     color: ${getColorFromTheme('linkVisited', '$color')};

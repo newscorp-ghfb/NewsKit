@@ -36,10 +36,10 @@ exports[`Sidebar renders correctly when closed 1`] = `
   text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-2:visited {
@@ -220,10 +220,10 @@ exports[`Sidebar renders correctly when closed 1`] = `
   text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-27:visited {
@@ -650,10 +650,10 @@ exports[`Sidebar renders correctly when open 1`] = `
   text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-2:visited {
@@ -834,10 +834,10 @@ exports[`Sidebar renders correctly when open 1`] = `
   text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-27:visited {

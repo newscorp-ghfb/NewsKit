@@ -100,10 +100,10 @@ exports[`Sidebar navigation collapses successfully at 2nd level 1`] = `
   text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-23:visited {
@@ -491,10 +491,10 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
   text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-19:visited {
@@ -843,10 +843,10 @@ exports[`Sidebar navigation on route level renders correctly without given path 
   text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-19:visited {
@@ -1195,10 +1195,10 @@ exports[`Sidebar navigation on theming page after click guides menu collapses 1`
   text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-19:visited {
@@ -1547,10 +1547,10 @@ exports[`Sidebar navigation on theming page after enter key guides menu collapse
   text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-19:visited {
@@ -1899,10 +1899,10 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
   text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-12:visited {
@@ -2581,10 +2581,10 @@ exports[`Sidebar navigation on theming page renders as expected 1`] = `
   text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-3:visited {

@@ -100,10 +100,10 @@ exports[`ShareBar does not render invalid elements 1`] = `
   text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-3:visited {
@@ -299,10 +299,10 @@ exports[`ShareBar href renders as an anchor 1`] = `
   text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-2:visited {
@@ -500,10 +500,10 @@ exports[`ShareBar renders with a border 1`] = `
   text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-2:visited {
@@ -787,10 +787,10 @@ exports[`ShareBar renders with custom components 1`] = `
   text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-3:visited {

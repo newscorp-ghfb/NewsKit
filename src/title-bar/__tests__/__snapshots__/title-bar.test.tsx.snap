@@ -69,10 +69,10 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
   background-color: #0A68C1;
   cursor: pointer;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -207,10 +207,10 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-2:visited {

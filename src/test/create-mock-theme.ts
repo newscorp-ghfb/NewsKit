@@ -13,8 +13,8 @@
  *     radius300: '8px',
  *   },
  *   animation: {
- *     timing100: '0.25s',
- *     timing400: '0.4s',
+ *     animationDuration020: '0.25s',
+ *     animationDuration040: '0.4s',
  *   }
  * }
  *
@@ -27,8 +27,8 @@
  *     radius300: '$theme.borders.radius300',
  *   },
  *   animation: {
- *     timing100: '$theme.animation.timing100',
- *     timing400: '$theme.animation.timing400',
+ *     animationDuration020: '$theme.animation.animationDuration020',
+ *     animationDuration040: '$theme.animation.animationDuration040',
  *   }
  * }
  */

@@ -16,8 +16,8 @@ const ButtonElement = styled.button<ButtonProps>`
   appearance: none;
   color: ${getColorFromTheme('buttonText')};
   transition-property: background-color;
-  transition-duration: ${getAnimationFromTheme('timing100')};
-  transition-timing-function: ${getAnimationFromTheme('easeOutCurve')};
+  transition-duration: ${getAnimationFromTheme('animationDuration020')};
+  transition-timing-function: ${getAnimationFromTheme('animationEaseOut')};
   background-color: ${getColorFromTheme('buttonFill')};
   cursor: pointer;
 

@@ -1,8 +1,12 @@
 export const animationPrimitives = {
-  timing100: '0.25s',
-  timing400: '0.4s',
-  timing700: '0.6s',
-  easeOutCurve: 'cubic-bezier(.2, .8, .4, 1)',
+  animationEaseIn: 'cubic-bezier(.5, 0, 1, 1)',
+  animationEaseOut: 'cubic-bezier(0, 0, .5, 1)',
+  animationEaseInAndOut: 'cubic-bezier(.5, 0, .5, 1)',
+  animationDuration010: '100ms',
+  animationDuration020: '200ms',
+  animationDuration030: '300ms',
+  animationDuration040: '400ms',
+  animationDuration050: '500ms',
 };
 
 export type AnimationKeys = keyof Animation;

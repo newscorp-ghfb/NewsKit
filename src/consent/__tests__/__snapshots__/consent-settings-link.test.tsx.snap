@@ -8,10 +8,10 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
   text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-0:visited {
@@ -52,10 +52,10 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
   text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-0:visited {
@@ -88,10 +88,10 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
   text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(.2,.8,.4,1);
-  transition-timing-function: cubic-bezier(.2,.8,.4,1);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
 .emotion-0:visited {
