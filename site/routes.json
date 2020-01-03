@@ -198,6 +198,11 @@
             "id": "/utils/code-helpers/get-fonts-from-theme"
           },
           {
+            "title": "getShadowFromTheme",
+            "page": true,
+            "id": "/utils/code-helpers/get-shadow-from-theme"
+          },
+          {
             "title": "getSizingFromTheme",
             "page": true,
             "id": "/utils/code-helpers/get-sizing-from-theme"
