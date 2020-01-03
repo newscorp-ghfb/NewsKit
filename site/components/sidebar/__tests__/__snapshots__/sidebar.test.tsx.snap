@@ -11,15 +11,23 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #ffffff;
+  background-color: #FAFAFA;
   padding-left: 16px;
   padding-right: 16px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+}
+
+@media screen and (min-width:960px) {
+  .emotion-7 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 32px;
+  }
 }
 
 .emotion-2 {
@@ -125,7 +133,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   letter-spacing: 0;
   list-style-type: none;
   margin: 0;
-  padding-top: 32px;
 }
 
 .emotion-29 {
@@ -240,7 +247,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   top: 0;
   left: 0;
   z-index: 3;
-  background-color: #ffffff;
+  background-color: #FAFAFA;
   border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #E6E6E6;
@@ -589,7 +596,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   top: 0;
   left: 0;
   z-index: 3;
-  background-color: #ffffff;
+  background-color: #FAFAFA;
   border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #E6E6E6;
@@ -618,15 +625,23 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #ffffff;
+  background-color: #FAFAFA;
   padding-left: 16px;
   padding-right: 16px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+}
+
+@media screen and (min-width:960px) {
+  .emotion-7 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 32px;
+  }
 }
 
 .emotion-2 {
@@ -732,7 +747,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   letter-spacing: 0;
   list-style-type: none;
   margin: 0;
-  padding-top: 32px;
 }
 
 .emotion-29 {

@@ -12,10 +12,9 @@ import {
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
-  width: ${getSizingFromTheme('spacingSize0700')};
-  height: ${getSizingFromTheme('spacingSize0700')};
+  width: ${getSizingFromTheme('spacingSize070')};
+  height: ${getSizingFromTheme('spacingSize070')};
   overflow: hidden;
-  // border: 1px solid purple;
 `;
 
 interface NewsKitMobileLogo {

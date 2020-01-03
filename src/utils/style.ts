@@ -11,6 +11,7 @@ import {
 import {FontSizeKeys, LineHeightKeys} from '../themes/newskit-light/fonts';
 import {getFontSizing} from './font-sizing';
 import {GridKeys} from '../themes/newskit-light/grid';
+import {ShadowKeys} from '../themes/newskit-light/shadow';
 
 export {css} from '@emotion/core';
 
@@ -52,6 +53,8 @@ export const getSizingFromTheme = getValueFromTheme<SizingKeys>('sizing');
 export const getBorderFromTheme = getValueFromTheme<BorderKeys>('borders');
 
 export const getGridSettingFromTheme = getValueFromTheme<GridKeys>('grid');
+
+export const getShadowFromTheme = getValueFromTheme<ShadowKeys>('shadow');
 
 export const getFontSizingFromTheme = (
   fontSizeKey: TypePresetKeys | FontSizeKeys,

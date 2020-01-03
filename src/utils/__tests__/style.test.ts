@@ -6,6 +6,7 @@ import {
   getTypePresetFromTheme,
   getFontSizingFromTheme,
   getGridSettingFromTheme,
+  getShadowFromTheme,
 } from '../style';
 import {getFontSizing} from '../font-sizing';
 
@@ -317,5 +318,36 @@ describe('Style helpers', () => {
     } as any;
 
     expect(getGridSettingFromTheme('maxWidth')(props)).toEqual('123px');
+  });
+
+  test('getShadowFromTheme("shadow100")({theme}) returns "shadow100_shadow"', () => {
+    const props = {
+      theme: {
+        shadow: {
+          shadow100: 'shadow100_shadow',
+        },
+      },
+    };
+    const declaration = getShadowFromTheme<{shadow?: string; theme: any}>(
+      'shadow100' as any,
+    )(props);
+    expect(declaration).toEqual('shadow100_shadow');
+  });
+
+  test('getShadowFromTheme("shadow100", "shadow")({theme, shadow: "shadow200"}) returns "shadow200_shadow"', () => {
+    const props = {
+      theme: {
+        shadow: {
+          shadow100: 'shadow100_shadow',
+          shadow200: 'shadow200_shadow',
+        },
+      },
+      shadow: 'shadow200',
+    };
+    const declaration = getShadowFromTheme<{shadow?: string; theme: any}>(
+      'timing100' as any,
+      'shadow',
+    )(props);
+    expect(declaration).toEqual('shadow200_shadow');
   });
 });

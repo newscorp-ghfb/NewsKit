@@ -14,18 +14,17 @@ interface SectionNavigationProps {
 
 const SectionNavigationContainer = styled.nav`
   width: 100%;
-  min-height: 88px;
+  min-height: 64px;
   margin-bottom: ${getSizingFromTheme('spacingSize070')};
   border-bottom: 1px solid ${getColorFromTheme('interface040')};
   background-color: ${getColorFromTheme('interfaceBackground')};
   display: flex;
   position: sticky;
-  top: 88px;
+  top: 64px;
   z-index: 1;
 
   ${getMediaQueryFromTheme('md')} {
     top: 0;
-    min-height: 64px;
   }
 `;
 

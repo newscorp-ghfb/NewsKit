@@ -7,6 +7,7 @@ import {
   getFontsFromTheme,
   getMediaQueryFromTheme,
   getSizingFromTheme,
+  getShadowFromTheme,
   getTypePresetFromTheme,
   styled,
 } from 'newskit';
@@ -22,20 +23,22 @@ const Header = styled.header`
   position: sticky;
   top: 0;
   z-index: 1;
-  background-color: ${getColorFromTheme('interface01')};
-  ${getTypePresetFromTheme('body02')}
-  padding: ${getSizingFromTheme('spacingSize0500')} 0;
+  min-height: 64px;
+  background-color: ${getColorFromTheme('interface010')};
+  ${getTypePresetFromTheme('label020')}
+  padding: ${getSizingFromTheme('spacingSize030')} 0;
+  box-shadow: ${getShadowFromTheme('shadow030')};
 
   ${getMediaQueryFromTheme('md')} {
-    padding: ${getSizingFromTheme('spacingSize0300')} 0;
     min-height: 64px;
+    box-shadow: none; // Remove this line when header links are displayed
   }
 `;
 
 const MobileMenu = styled.div`
   font-size: 0;
   align-self: center;
-  margin-right: ${getSizingFromTheme('spacingSize0400')};
+  margin-right: ${getSizingFromTheme('spacingSize040')};
 `;
 
 const NavigationList = styled.ul`
@@ -45,8 +48,8 @@ const NavigationList = styled.ul`
   display: flex;
 
   li {
-    margin-right: ${getSizingFromTheme('spacingSize0600')};
-    font-weight: ${getFontsFromTheme('fontWeight0300')};
+    margin-right: ${getSizingFromTheme('spacingSize060')};
+    font-weight: ${getFontsFromTheme('fontWeight030')};
   }
 `;
 
@@ -58,7 +61,7 @@ const SearchContainer = styled.div`
 
 const MobileLogo: React.FC = () => (
   <Link href="/">
-    <NewsKitMobileLogo $color="inkDefault" $size="spacingSize0700" />
+    <NewsKitMobileLogo $color="inkBase" $size="spacingSize070" />
   </Link>
 );
 
@@ -104,12 +107,17 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
               <nav>
                 <NavigationList>
                   <li>
-                    <Link href="/components" $noUnderline $color="inkDefault">
+                    <Link href="/components" $noUnderline $color="inkSubtle">
                       Components
                     </Link>
                   </li>
                   <li>
-                    <Link href="/resources" $noUnderline $color="inkDefault">
+                    <Link href="/styleguides" $noUnderline $color="inkSubtle">
+                      Styleguides
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/resources" $noUnderline $color="inkSubtle">
                       Resources
                     </Link>
                   </li>

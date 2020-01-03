@@ -34,7 +34,7 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
   top: 0;
   left: 0;
   z-index: 3;
-  background-color: ${getColorFromTheme('interface010')};
+  background-color: ${getColorFromTheme('interface020')};
   border-right-width: 1px;
   border-right-style: solid;
   border-right-color: ${getColorFromTheme('interface030')};
@@ -49,7 +49,7 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
 const SidebarHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  background-color: ${getColorFromTheme('interface010')};
+  background-color: ${getColorFromTheme('interface020')};
   padding-left: ${getSizingFromTheme('spacingSize040')};
   padding-right: ${getSizingFromTheme('spacingSize040')};
   padding-top: ${getSizingFromTheme('spacingSize020')};
@@ -61,6 +61,7 @@ const SidebarHeader = styled.div`
   ${getMediaQueryFromTheme('md')} {
     padding-top: ${getSizingFromTheme('spacingSize030')};
     padding-bottom: ${getSizingFromTheme('spacingSize030')};
+    margin-bottom: ${getSizingFromTheme('spacingSize060')};
   }
 `;
 
