@@ -30,6 +30,12 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
   <Prop name="title" type="string" required>
     The title of the currently playing show or track.
   </Prop>
+  <Prop name="imgSrc" type="string" required>
+    Image to illustrate the show.
+  </Prop>
+  <Prop name="imgAlt" type="string" required>
+     Alt text for the show image, this should describe the contents of the image.
+  </Prop>
   <Prop name="description" type="string">
     Description text for the current show or track.
   </Prop>
@@ -43,24 +49,16 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
     <div>
       Even though the feature is supported in most browser but the browser will only follow this setting if:
     </div>
-    
     <ul>
       <li>you are on a desktop browser. it will not work on mobile browsers to prevent users from eating into their mobile data allowance</li>
       <li>it can't happen on page load, the user has to interact with the site for it to work: navigating inside an SPA seems to satisfy the browser as there was no page refresh.</li>
     </ul>
-    
     <div>
       In Summary autoplay will work in some scenarios, this is expected. It's best thought of as a suggestion for the browser: play the audio automatically if it's acceptable from a usability perspective
     </div>
   </Prop>
   <Prop name="tags" type="Array<string>">
     List of tags to describe the current show, e.g. comedy, politics
-  </Prop>
-  <Prop name="imgSrc" type="string" required>
-    Image to illustrate the show.
-  </Prop>
-  <Prop name="imgAlt" type="string" required>
-     Alt text for the show image, this should describe the contents of the image. 
   </Prop>
 </Block>
 

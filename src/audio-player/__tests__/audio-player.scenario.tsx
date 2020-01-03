@@ -10,8 +10,6 @@ const props = {
   imgAlt: 'test image',
   title: 'title',
   imgSrc: 'https://via.placeholder.com/150',
-  description: 'Test Description',
-  time: '1PM to 3PM',
 };
 
 const Container = styled.div`
@@ -22,8 +20,19 @@ const Container = styled.div`
 export const component = () => (
   <Container>
     <div>
-      <StorybookHeading>Player with default props</StorybookHeading>
+      <StorybookHeading>Player with required props</StorybookHeading>
       <AudioPlayer {...props} />
+    </div>
+    <div>
+      <StorybookHeading>Player with all UI props</StorybookHeading>
+      <AudioPlayer
+        {...props}
+        src="https://radio.talkradio.co.uk/stream"
+        time="1PM to 3PM"
+        description="Test description"
+        live
+        tags={['Tag 1', 'Tag 2']}
+      />
     </div>
     <div>
       <StorybookHeading>Player with live tag</StorybookHeading>
@@ -35,7 +44,23 @@ export const component = () => (
     </div>
     <div>
       <StorybookHeading>Player with tags</StorybookHeading>
-      <AudioPlayer {...props} tags={['Tag 1', 'Tag 2']} autoPlay />
+      <AudioPlayer {...props} tags={['Tag 1', 'Tag 2']} />
+    </div>
+    <div>
+      <StorybookHeading>Player with description</StorybookHeading>
+      <AudioPlayer
+        {...props}
+        src="https://radio.talkradio.co.uk/stream"
+        description="Test description"
+      />
+    </div>
+    <div>
+      <StorybookHeading>Player with time</StorybookHeading>
+      <AudioPlayer
+        {...props}
+        src="https://radio.talkradio.co.uk/stream"
+        time="1PM to 3PM"
+      />
     </div>
   </Container>
 );

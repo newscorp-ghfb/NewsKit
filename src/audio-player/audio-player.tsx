@@ -23,8 +23,8 @@ export interface AudioPlayerProps
   imgSrc: string;
   imgAlt: string;
   title: string;
-  time: string;
-  description: string;
+  time?: string;
+  description?: string;
   live?: boolean;
   tags?: string[];
 }
@@ -215,7 +215,7 @@ export class AudioPlayer extends React.Component<
             </div>
             <ProgrammeTitle>{title}</ProgrammeTitle>
             <ProgrammeDescription>{description}</ProgrammeDescription>
-            {tags.length && (
+            {tags.length > 0 && (
               <ProgrammeTags>
                 {tags.map(
                   (tag, i) => `${tag}${i <= tags.length - 2 ? ' | ' : ''}`,

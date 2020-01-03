@@ -336,7 +336,6 @@ exports[`AudioPlayer renders player 1`] = `
         <span
           class="emotion-8"
         />
-        0
       </div>
     </div>
     <button
@@ -754,7 +753,6 @@ exports[`AudioPlayer renders with live 1`] = `
         >
           Test Description
         </span>
-        0
       </div>
     </div>
     <button
