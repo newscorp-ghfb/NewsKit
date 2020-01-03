@@ -87,6 +87,21 @@
         "id": "/components/date-line"
       },
       {
+        "title": "Button",
+        "page": true,
+        "id": "/components/button"
+      },
+      {
+        "title": "Consent",
+        "page": true,
+        "id": "/components/image"
+      },
+      {
+        "title": "TagList",
+        "page": true,
+        "id": "/components/tag-list"
+      },
+      {
         "title": "Date Line",
         "page": true,
         "id": "/components/date-line"
@@ -95,16 +110,6 @@
         "title": "Divider",
         "page": true,
         "id": "/components/divider"
-      },
-      {
-        "title": "Image",
-        "page": true,
-        "id": "/components/image"
-      },
-      {
-        "title": "TagList",
-        "page": true,
-        "id": "/components/tag-list"
       },
       {
         "title": "Grid & Cell",

@@ -45,6 +45,7 @@ const MetaArea = styled.div`
   flex-direction: row;
   justify-content: center;
 `;
+
 const InfoArea = styled.div`
   margin-left: ${getSizingFromTheme('spacingSize050')};
   display: flex;
@@ -62,6 +63,7 @@ const LiveTag = styled(Tag)`
   background-color: ${getColorFromTheme('semanticNegative')};
   color: ${getColorFromTheme('inkInverse')};
   text-transform: uppercase;
+  margin-right: ${getSizingFromTheme('spacingSize040')};
 `;
 
 const Label = styled.span`
@@ -71,7 +73,6 @@ const Label = styled.span`
 `;
 
 const ProgrammeTime = styled(Label)`
-  margin-left: ${getSizingFromTheme('spacingSize040')};
   height: ${getSizingFromTheme('sizing050')};
   display: inline-block;
 `;
@@ -216,7 +217,9 @@ export class AudioPlayer extends React.Component<
             <ProgrammeDescription>{description}</ProgrammeDescription>
             {tags.length && (
               <ProgrammeTags>
-                {tags.map((o, i) => `${o}${i <= tags.length - 2 ? ' | ' : ''}`)}
+                {tags.map(
+                  (tag, i) => `${tag}${i <= tags.length - 2 ? ' | ' : ''}`,
+                )}
               </ProgrammeTags>
             )}
           </InfoArea>

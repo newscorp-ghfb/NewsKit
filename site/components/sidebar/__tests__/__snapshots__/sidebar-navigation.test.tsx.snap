@@ -2171,38 +2171,6 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
           >
             <a
               class="emotion-12"
-              href="/components/date-line"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/date-line"
-                tabindex="-1"
-              >
-                Date Line
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/divider"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/divider"
-                tabindex="-1"
-              >
-                Divider
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
               href="/components/button"
             >
               <div
@@ -2243,6 +2211,38 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
                 tabindex="-1"
               >
                 Consent Settings Link
+              </div>
+            </a>
+          </li>
+          <li
+            class="emotion-2"
+          >
+            <a
+              class="emotion-12"
+              href="/components/date-line"
+            >
+              <div
+                class="emotion-1"
+                data-testid="/components/date-line"
+                tabindex="-1"
+              >
+                Date Line
+              </div>
+            </a>
+          </li>
+          <li
+            class="emotion-2"
+          >
+            <a
+              class="emotion-12"
+              href="/components/divider"
+            >
+              <div
+                class="emotion-1"
+                data-testid="/components/divider"
+                tabindex="-1"
+              >
+                Divider
               </div>
             </a>
           </li>

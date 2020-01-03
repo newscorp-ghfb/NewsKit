@@ -117,7 +117,6 @@ exports[`AudioPlayer renders player 1`] = `
   letter-spacing: 0.5px;
   color: #777777;
   font-weight: 300;
-  margin-left: 16px;
   height: 24px;
   display: inline-block;
 }
@@ -481,7 +480,6 @@ exports[`AudioPlayer renders with live 1`] = `
   letter-spacing: 0.5px;
   color: #777777;
   font-weight: 300;
-  margin-left: 16px;
   height: 24px;
   display: inline-block;
 }
@@ -684,6 +682,7 @@ exports[`AudioPlayer renders with live 1`] = `
   background-color: #EF1703;
   color: #ffffff;
   text-transform: uppercase;
+  margin-right: 16px;
 }
 
 <div
@@ -893,7 +892,6 @@ exports[`AudioPlayer renders with tags 1`] = `
   letter-spacing: 0.5px;
   color: #777777;
   font-weight: 300;
-  margin-left: 16px;
   height: 24px;
   display: inline-block;
 }

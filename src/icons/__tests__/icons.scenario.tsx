@@ -90,6 +90,22 @@ export const component = () => (
       <Circle $color="semanticNotice" $size="sizing080" />
     </div>
     <div>
+      <Play $size="sizing060" />
+      <Play $size="sizing070" />
+      <Play $size="sizing080" />
+      <Play $color="semanticNegative" $size="sizing060" />
+      <Play $color="semanticPositive" $size="sizing070" />
+      <Play $color="semanticNotice" $size="sizing080" />
+    </div>
+    <div>
+      <Pause $size="sizing060" />
+      <Pause $size="sizing070" />
+      <Pause $size="sizing080" />
+      <Pause $color="semanticNegative" $size="sizing060" />
+      <Pause $color="semanticPositive" $size="sizing070" />
+      <Pause $color="semanticNotice" $size="sizing080" />
+    </div>
+    <div>
       <Placeholder $size="sizing060" />
       <Placeholder $size="sizing070" />
       <Placeholder $size="sizing080" />

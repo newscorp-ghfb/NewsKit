@@ -31,7 +31,11 @@ export const component = () => (
     </div>
     <div>
       <StorybookHeading>Player that auto plays</StorybookHeading>
-      <AudioPlayer {...props} tags={['Tag 1', 'Tag 2']} />
+      <AudioPlayer {...props} autoPlay />
+    </div>
+    <div>
+      <StorybookHeading>Player with tags</StorybookHeading>
+      <AudioPlayer {...props} tags={['Tag 1', 'Tag 2']} autoPlay />
     </div>
   </Container>
 );

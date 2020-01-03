@@ -27,7 +27,19 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
   <Prop name="src" type="string" required>
     URL of the audio source to be played.
   </Prop>
-  <Prop name="autoplay" type="string">
+  <Prop name="title" type="string" required>
+    The title of the currently playing show or track.
+  </Prop>
+  <Prop name="description" type="string">
+    Description text for the current show or track.
+  </Prop>
+  <Prop name="time" type="string">
+    Textual description of the show time e.g. 1PM - 3PM. 
+  </Prop>
+  <Prop name="live" type="boolean">
+    If true will display a label indicating the current show is live. 
+  </Prop>
+  <Prop name="autoplay" type="boolean">
     <div>
       Even though the feature is supported in most browser but the browser will only follow this setting if:
     </div>
@@ -40,6 +52,15 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
     <div>
       In Summary autoplay will work in some scenarios, this is expected. It's best thought of as a suggestion for the browser: play the audio automatically if it's acceptable from a usability perspective
     </div>
+  </Prop>
+  <Prop name="tags" type="Array<string>">
+    List of tags to describe the current show, e.g. comedy, politics
+  </Prop>
+  <Prop name="imgSrc" type="string" required>
+    Image to illustrate the show.
+  </Prop>
+  <Prop name="imgAlt" type="string" required>
+     Alt text for the show image, this should describe the contents of the image. 
   </Prop>
 </Block>
 
@@ -54,11 +75,6 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       name: 'Source',
       propName: 'src',
       value: 'https://radio.talkradio.co.uk/stream',
-    },
-    {
-      name: 'Image Source',
-      propName: 'imgSrc',
-      value: "https://via.placeholder.com/150",
     },
     {
       name: 'Title',
@@ -91,6 +107,16 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       name: 'Tags',
       propName: 'tags',
       value: ["News", "Sport", "Live"],
+    },
+    {
+      name: 'Image Source',
+      propName: 'imgSrc',
+      value: "https://via.placeholder.com/150",
+    },
+    {
+      name: 'Image Alt Text',
+      propName: 'imgAlt',
+      value: 'Giles Coren',
     },
   ]}
 />
