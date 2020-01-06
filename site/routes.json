@@ -46,6 +46,11 @@
         "id": "/foundations/colours"
       },
       {
+        "title": "Animation",
+        "page": true,
+        "id": "/foundations/animation"
+      },
+      {
         "title": "Icons",
         "page": true,
         "id": "/foundations/icons"

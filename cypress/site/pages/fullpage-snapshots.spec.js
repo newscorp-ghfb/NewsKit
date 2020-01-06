@@ -5,6 +5,7 @@ const routes = {
   colours: '/foundations/colours',
   icons: '/foundations/icons',
   typography: '/foundations/typography',
+  animation: '/foundations/animation',
   tag: '/components/tag',
   link: '/components/link',
   articleByline: '/components/article-byline',
