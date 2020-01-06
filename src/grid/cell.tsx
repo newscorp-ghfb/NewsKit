@@ -15,11 +15,14 @@ const generateBreakpointConfig = (breakpoint: BreakpointKeys) => ({
   const order =
     (props[`${breakpoint}Order` as keyof CellProps] as CellProps['xsOrder']) ||
     undefined;
+  const colOffset =
+    Number(props[`${breakpoint}Offset` as keyof CellProps] as CellProps) || 0;
 
   // Calculations
   const colSpan = props[breakpoint] || (breakpoint === 'xs' ? 1 : 0);
   const colWidth = 100 / theme.grid.columns;
   const width = colSpan * colWidth;
+  const offsetColumnGutter = colOffset * colWidth;
   const halfColumnGutter =
     getOverridableProp(OverrideProp.ColumnGutter, breakpoint, {
       theme,
@@ -33,6 +36,7 @@ const generateBreakpointConfig = (breakpoint: BreakpointKeys) => ({
   return css`
     ${getMediaQueryFromTheme(breakpoint)({theme})} {
       padding: 0 ${halfColumnGutter}px;
+      ${offsetColumnGutter > 0 ? `margin-left: ${offsetColumnGutter}%;` : ''}
       margin-top: ${rowGutter}px;
       flex-basis: ${width ? `${width}%` : undefined};
       max-width: ${width ? `${width}%` : undefined};

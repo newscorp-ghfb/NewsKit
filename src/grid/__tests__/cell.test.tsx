@@ -59,6 +59,24 @@ describe('Cell Container', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders expected cell offset styles', () => {
+    const fragment = renderToFragmentWithTheme(Cell, {
+      xsOffset: 1,
+      smOffset: 2,
+      mdOffset: 3,
+      lgOffset: 4,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders expected inherited sm cell offset styles from theme', () => {
+    const fragment = renderToFragmentWithTheme(Cell, {
+      xsOffset: 1,
+      smOffset: 2,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('renders with expected grid overrides', () => {
     const fragment = renderToFragmentWithTheme(() => (
       <GridContextProvider

@@ -1,5 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Cell Container renders expected cell offset styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-left: 8.333333333333334%;
+    margin-top: 16px;
+    -webkit-flex-basis: 8.333333333333334%;
+    -ms-flex-preferred-size: 8.333333333333334%;
+    flex-basis: 8.333333333333334%;
+    max-width: 8.333333333333334%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-left: 16.666666666666668%;
+    margin-top: 16px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-left: 25%;
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-left: 33.333333333333336%;
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
 exports[`Cell Container renders expected cell order styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -426,6 +482,60 @@ exports[`Cell Container renders expected hidden at xs styles 1`] = `
     -ms-flex-preferred-size: 16.666666666666668%;
     flex-basis: 16.666666666666668%;
     max-width: 16.666666666666668%;
+    display: block;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell Container renders expected inherited sm cell offset styles from theme 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-left: 8.333333333333334%;
+    margin-top: 16px;
+    -webkit-flex-basis: 8.333333333333334%;
+    -ms-flex-preferred-size: 8.333333333333334%;
+    flex-basis: 8.333333333333334%;
+    max-width: 8.333333333333334%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    padding: 0 8px;
+    margin-left: 16.666666666666668%;
+    margin-top: 16px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    padding: 0 12px;
+    margin-top: 24px;
     display: block;
   }
 }

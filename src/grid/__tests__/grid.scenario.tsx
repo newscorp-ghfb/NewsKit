@@ -252,6 +252,23 @@ export const component = () => (
     </BorderedBox>
 
     <BorderedBox>
+      <Grid>
+        <Cell xs={1} sm={2} xsOffset={2} smOffset={1}>
+          <Content>1</Content>
+        </Cell>
+        <Cell xs={1} xsOffset={2}>
+          <Content>2</Content>
+        </Cell>
+        <Cell xs={1} sm={2} xsOffset={2} smOffset={1}>
+          <Content>3</Content>
+        </Cell>
+        <Cell xs={1} xsOffset={2}>
+          <Content>4</Content>
+        </Cell>
+      </Grid>
+    </BorderedBox>
+
+    <BorderedBox>
       <Grid
         xsColumnGutter="sizing000"
         xsRowGutter="sizing000"

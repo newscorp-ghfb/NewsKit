@@ -32,4 +32,9 @@ export interface CellProps {
   smOrder?: number;
   mdOrder?: number;
   lgOrder?: number;
+
+  xsOffset?: number;
+  smOffset?: number;
+  mdOffset?: number;
+  lgOffset?: number;
 }
