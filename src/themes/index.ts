@@ -3,7 +3,12 @@ export {ColorKeys, Colors} from './mappers/colors';
 export {TypePresetKeys, TypePresets} from './mappers/type-presets';
 
 export {colorPrimitives, ColorPrimitives} from './newskit-light/colors';
-export {Animation, AnimationKeys} from './newskit-light/animation';
+export {
+  AnimationEasing as Animation,
+  AnimationEasingKeys as AnimationKeys,
+  AnimationDuration,
+  AnimationDurationKeys,
+} from './newskit-light/animation';
 export {BorderRadius, BorderRadiusShape} from './newskit-light/border-radius';
 export {Breakpoints, BreakpointKeys} from './newskit-light/breakpoints';
 export {Sizing, SizingKeys} from './newskit-light/sizing';
