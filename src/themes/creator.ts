@@ -1,12 +1,7 @@
 import {deepMerge} from '../utils/deep-merge';
 import {createThemeColors, Colors, ColorKeys} from './mappers/colors';
 import {colorPrimitives, ColorPrimitives} from './newskit-light/colors';
-import {
-  AnimationEasing,
-  animationEasing,
-  AnimationDuration,
-  animationDuration,
-} from './newskit-light/animation';
+import {Animation, animationPrimitives} from './newskit-light/animation';
 import {
   BorderRadius,
   borderRadiusPrimitives,
@@ -54,7 +49,7 @@ export interface Theme extends Record<string, unknown> {
   sizing: Sizing;
   borderRadius: BorderRadius;
   borders: Borders;
-  animation: AnimationEasing & AnimationDuration;
+  animation: Animation;
   icons: Icons;
   overlay: Overlay;
   shadow: Shadow;
@@ -74,7 +69,7 @@ const createDefaultTheme = (): Theme => ({
   shadow: shadowPrimitives,
   borderRadius: borderRadiusPrimitives,
   borders: createBorders(borderPrimitives),
-  animation: {...animationEasing, ...animationDuration},
+  animation: animationPrimitives,
   overlay: overlayPrimitives,
   icons: {},
   zIndex: {
