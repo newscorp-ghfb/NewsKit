@@ -18,10 +18,9 @@ export const StyledNavItem = styled.div<{
     active ? theme.colors.interactive010Pressed : theme.colors.inkSubtle};
   cursor: pointer;
   font-weight: ${({active}) => (active ? '500' : 'normal')};
-  min-height: ${getSizingFromTheme('sizing070')};
+  height: ${getSizingFromTheme('sizing070')};
   padding-left: ${({theme}) => theme.sizing.sizing030};
   padding-top: ${({theme}) => theme.sizing.sizing020};
-  padding-bottom: ${({theme}) => theme.sizing.sizing020};
   padding-right: ${({theme}) => theme.sizing.sizing050};
   border-radius: ${getSizingFromTheme('sizing020')};
   text-overflow: ellipsis;

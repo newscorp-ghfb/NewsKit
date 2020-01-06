@@ -47,10 +47,9 @@ exports[`Sidebar navigation collapses successfully at 2nd level 1`] = `
   color: #777777;
   cursor: pointer;
   font-weight: normal;
-  min-height: 40px;
+  height: 40px;
   padding-left: 12px;
   padding-top: 8px;
-  padding-bottom: 8px;
   padding-right: 24px;
   border-radius: 8px;
   text-overflow: ellipsis;
@@ -438,10 +437,9 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
   color: #777777;
   cursor: pointer;
   font-weight: normal;
-  min-height: 40px;
+  height: 40px;
   padding-left: 12px;
   padding-top: 8px;
-  padding-bottom: 8px;
   padding-right: 24px;
   border-radius: 8px;
   text-overflow: ellipsis;
@@ -790,10 +788,9 @@ exports[`Sidebar navigation on route level renders correctly without given path 
   color: #777777;
   cursor: pointer;
   font-weight: normal;
-  min-height: 40px;
+  height: 40px;
   padding-left: 12px;
   padding-top: 8px;
-  padding-bottom: 8px;
   padding-right: 24px;
   border-radius: 8px;
   text-overflow: ellipsis;
@@ -1142,10 +1139,9 @@ exports[`Sidebar navigation on theming page after click guides menu collapses 1`
   color: #777777;
   cursor: pointer;
   font-weight: normal;
-  min-height: 40px;
+  height: 40px;
   padding-left: 12px;
   padding-top: 8px;
-  padding-bottom: 8px;
   padding-right: 24px;
   border-radius: 8px;
   text-overflow: ellipsis;
@@ -1494,10 +1490,9 @@ exports[`Sidebar navigation on theming page after enter key guides menu collapse
   color: #777777;
   cursor: pointer;
   font-weight: normal;
-  min-height: 40px;
+  height: 40px;
   padding-left: 12px;
   padding-top: 8px;
-  padding-bottom: 8px;
   padding-right: 24px;
   border-radius: 8px;
   text-overflow: ellipsis;
@@ -1846,10 +1841,9 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
   color: #777777;
   cursor: pointer;
   font-weight: normal;
-  min-height: 40px;
+  height: 40px;
   padding-left: 12px;
   padding-top: 8px;
-  padding-bottom: 8px;
   padding-right: 24px;
   border-radius: 8px;
   text-overflow: ellipsis;
@@ -1932,10 +1926,9 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
   color: #01396E;
   cursor: pointer;
   font-weight: 500;
-  min-height: 40px;
+  height: 40px;
   padding-left: 12px;
   padding-top: 8px;
-  padding-bottom: 8px;
   padding-right: 24px;
   border-radius: 8px;
   text-overflow: ellipsis;
@@ -2171,14 +2164,14 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
           >
             <a
               class="emotion-12"
-              href="/components/button"
+              href="/components/article-headline"
             >
               <div
                 class="emotion-1"
-                data-testid="/components/button"
+                data-testid="/components/article-headline"
                 tabindex="-1"
               >
-                Button
+                ArticleHeadline
               </div>
             </a>
           </li>
@@ -2187,30 +2180,14 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
           >
             <a
               class="emotion-12"
-              href="/components/consent"
+              href="/components/article-standfirst"
             >
               <div
                 class="emotion-1"
-                data-testid="/components/consent"
+                data-testid="/components/article-standfirst"
                 tabindex="-1"
               >
-                Consent
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/consent-settings-link"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/consent-settings-link"
-                tabindex="-1"
-              >
-                Consent Settings Link
+                ArticleStandfirst
               </div>
             </a>
           </li>
@@ -2226,7 +2203,7 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
                 data-testid="/components/date-line"
                 tabindex="-1"
               >
-                Date Line
+                DateLine
               </div>
             </a>
           </li>
@@ -2243,6 +2220,22 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
                 tabindex="-1"
               >
                 Divider
+              </div>
+            </a>
+          </li>
+          <li
+            class="emotion-2"
+          >
+            <a
+              class="emotion-12"
+              href="/components/image"
+            >
+              <div
+                class="emotion-1"
+                data-testid="/components/image"
+                tabindex="-1"
+              >
+                Image
               </div>
             </a>
           </li>
@@ -2386,7 +2379,7 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
                 data-testid="/components/button"
                 tabindex="-1"
               >
-                Unordered List
+                Button
               </div>
             </a>
           </li>
@@ -2528,10 +2521,9 @@ exports[`Sidebar navigation on theming page renders as expected 1`] = `
   color: #777777;
   cursor: pointer;
   font-weight: normal;
-  min-height: 40px;
+  height: 40px;
   padding-left: 12px;
   padding-top: 8px;
-  padding-bottom: 8px;
   padding-right: 24px;
   border-radius: 8px;
   text-overflow: ellipsis;

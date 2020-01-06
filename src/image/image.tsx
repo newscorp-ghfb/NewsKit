@@ -2,11 +2,6 @@ import React, {useState} from 'react';
 import {styled, getColorFromTheme} from '../utils/style';
 import {Placeholder} from '../icons';
 
-export enum ImageShape {
-  Square = 'square',
-  Rounded = 'rounded',
-}
-
 export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   aspectHeight: Number | String;
   aspectWidth: Number | String;
@@ -28,24 +23,14 @@ export const Image = ({
     padding-top: ${isLoading
       ? `calc(100% * (${aspectHeight}/${aspectWidth}))`
       : 0};
-  background-color: ${getColorFromTheme('skeleton010')};
-  border-radius: ${props => ({shape = props.shape || ImageShape.Square}) =>
-    ({
-      [ImageShape.Square]: undefined,
-      [ImageShape.Rounded]: '50%',
-    }[shape])};
-`;
-
-export const Image = (props: ImageProps) => {
-  const {hideLoadingIcon} = props;
-  const [{isLoading}, setState] = useState({isLoading: true});
+    background-color: ${getColorFromTheme('skeleton010')};
+  `;
 
   const DisplayImage = styled.img`
     display: ${isLoading ? 'none' : 'block'};
     width: 100%;
     height: auto;
     animation: fadeIn 300ms;
-    border-radius: inherit;
 
     @keyframes fadeIn {
       from {
@@ -75,14 +60,14 @@ export const Image = (props: ImageProps) => {
   `;
 
   return (
-    <ImageContainer {...props} isLoading={isLoading}>
+    <Container>
       <IconContainer>
         <InnerIconContainer>
           <Placeholder $size="sizing080" />
         </InnerIconContainer>
       </IconContainer>
       <DisplayImage
-        {...props}
+        {...rest}
         onLoad={() => isLoading && setState({isLoading: false})}
       />
     </Container>
