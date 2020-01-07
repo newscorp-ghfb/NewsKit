@@ -84,8 +84,6 @@ export const Icon: React.FC<IconProps> = ({
     return null;
   }
 
-  const size = $borderEnabled ? 'sizing050' : 'sizing070';
-
   const onKeyDown = (e: React.KeyboardEvent<HTMLElement>) => {
     if (e.keyCode === 13 && onClick) {
       onClick();
@@ -94,7 +92,7 @@ export const Icon: React.FC<IconProps> = ({
 
   const icon = (
     <Wrapper $borderEnabled={$borderEnabled}>
-      <SelectedIcon $color="shareIconFill" $size={size} />
+      <SelectedIcon $color="shareIconFill" $size="iconSize020" />
     </Wrapper>
   );
 

@@ -119,7 +119,7 @@ const SiteFooter: React.FC = () => (
           <Hidden xs sm md lg>
             <FooterLink>
               <Link href="/" $noUnderline $color="inkSubtle">
-                <GitHub $size="sizing050" />
+                <GitHub $size="iconSize020" />
               </Link>
             </FooterLink>
           </Hidden>

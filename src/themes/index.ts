@@ -6,7 +6,12 @@ export {colorPrimitives, ColorPrimitives} from './newskit-light/colors';
 export {Animation, AnimationKeys} from './newskit-light/animation';
 export {BorderRadius, BorderRadiusShape} from './newskit-light/border-radius';
 export {Breakpoints, BreakpointKeys} from './newskit-light/breakpoints';
-export {Sizing, SizingKeys} from './newskit-light/sizing';
+export {
+  Sizing,
+  SizingKeys,
+  IconSizeKeys,
+  IconSize,
+} from './newskit-light/sizing';
 export {FontPrimitives, FontPrimitivesKeys} from './newskit-light/fonts';
 
 export {newskitLightTheme} from './newskit-light';

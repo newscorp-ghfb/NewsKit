@@ -1,8 +1,8 @@
 import * as React from 'react';
-import {Svg, SizingKeys, ColorKeys, Theme, withTheme} from 'newskit';
+import {Svg, IconSizeKeys, ColorKeys, Theme, withTheme} from 'newskit';
 
 interface TonalityProps {
-  $size: SizingKeys;
+  $size: IconSizeKeys;
   $color: ColorKeys;
 }
 

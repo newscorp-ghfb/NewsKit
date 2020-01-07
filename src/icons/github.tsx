@@ -1,16 +1,19 @@
 import React from 'react';
-
 import {withTheme} from '../themes/emotion';
-import {Svg} from './svg';
-import {SizingKeys} from '../themes/newskit-light/sizing';
+import {Svg, SvgLabels} from './svg';
+import {IconSizeKeys} from '../themes/newskit-light/sizing';
 
-export interface GitHubIconProps {
-  $size: SizingKeys;
+export interface GitHubIconProps extends SvgLabels {
+  $size: IconSizeKeys;
 }
 
-const defaultIcon: React.FC<GitHubIconProps> = ({$size}) => (
-  <Svg viewBox="0 0 16 16" $size={$size}>
-    <title>GitHub logo</title>
+const defaultIcon: React.FC<GitHubIconProps> = ({
+  $size,
+  title = 'GitHub icon',
+  ariaLabel,
+}) => (
+  <Svg viewBox="0 0 16 16" $size={$size} aria-label={ariaLabel}>
+    <title>{title}</title>
     <path
       fillRule="evenodd"
       fill="#000000"

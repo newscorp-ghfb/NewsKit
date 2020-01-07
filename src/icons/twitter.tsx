@@ -1,16 +1,19 @@
 import React from 'react';
-
 import {withTheme} from '../themes/emotion';
-import {Svg} from './svg';
-import {SizingKeys} from '../themes/newskit-light/sizing';
+import {Svg, SvgLabels} from './svg';
+import {IconSizeKeys} from '../themes/newskit-light/sizing';
 
-export interface TwitterIconProps {
-  $size: SizingKeys;
+export interface TwitterIconProps extends SvgLabels {
+  $size: IconSizeKeys;
 }
 
-const defaultIcon: React.FC<TwitterIconProps> = ({$size}) => (
-  <Svg viewBox="0 0 400 400" $size={$size}>
-    <title>Twitter logo</title>
+const defaultIcon: React.FC<TwitterIconProps> = ({
+  $size,
+  title = 'Twitter logo',
+  ariaLabel,
+}) => (
+  <Svg viewBox="0 0 400 400" $size={$size} aria-label={ariaLabel}>
+    <title>{title}</title>
     <g>
       <circle fill="#1DA1F2" cx="200" cy="200" r="200" />
     </g>

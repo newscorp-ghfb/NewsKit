@@ -13,7 +13,6 @@ import {
   Bookmark,
   CopyLink,
   Circle,
-  Placeholder,
 } from '..';
 
 export const name = 'icons';
@@ -21,98 +20,93 @@ export const name = 'icons';
 export const component = () => (
   <React.Fragment>
     <div>
-      <Menu $size="sizing060" />
-      <Menu $size="sizing070" />
-      <Menu $size="sizing080" />
-      <Menu $color="semanticNegative" $size="sizing080" />
-      <Menu $color="semanticPositive" $size="sizing080" />
-      <Menu $color="semanticNotice" $size="sizing080" />
-      <Menu $color="semanticInformative" $size="sizing080" />
+      <Menu $size="iconSize030" />
+      <Menu $size="iconSize040" />
+      <Menu $size="iconSize050" />
+      <Menu $color="semanticNegative" $size="iconSize050" />
+      <Menu $color="semanticPositive" $size="iconSize050" />
+      <Menu $color="semanticNotice" $size="iconSize050" />
+      <Menu $color="semanticInformative" $size="iconSize050" />
     </div>
     <div>
-      <SaveActive $size="sizing060" />
-      <SaveActive $size="sizing070" />
-      <SaveActive $size="sizing080" />
-      <SaveActive $color="semanticNegative" $size="sizing080" />
-      <SaveActive $color="semanticPositive" $size="sizing080" />
-      <SaveActive $color="semanticNotice" $size="sizing080" />
-      <SaveActive $color="semanticInformative" $size="sizing080" />
+      <SaveActive $size="iconSize030" />
+      <SaveActive $size="iconSize040" />
+      <SaveActive $size="iconSize050" />
+      <SaveActive $color="semanticNegative" $size="iconSize050" />
+      <SaveActive $color="semanticPositive" $size="iconSize050" />
+      <SaveActive $color="semanticNotice" $size="iconSize050" />
+      <SaveActive $color="semanticInformative" $size="iconSize050" />
     </div>
     <div>
-      <SaveInactive $size="sizing060" />
-      <SaveInactive $size="sizing070" />
-      <SaveInactive $size="sizing080" />
-      <SaveInactive $color="semanticNegative" $size="sizing080" />
-      <SaveInactive $color="semanticPositive" $size="sizing080" />
-      <SaveInactive $color="semanticNotice" $size="sizing080" />
-      <SaveInactive $color="semanticInformative" $size="sizing080" />
+      <SaveInactive $size="iconSize030" />
+      <SaveInactive $size="iconSize040" />
+      <SaveInactive $size="iconSize050" />
+      <SaveInactive $color="semanticNegative" $size="iconSize050" />
+      <SaveInactive $color="semanticPositive" $size="iconSize050" />
+      <SaveInactive $color="semanticNotice" $size="iconSize050" />
+      <SaveInactive $color="semanticInformative" $size="iconSize050" />
     </div>
     <div>
-      <Email $size="sizing060" />
-      <Email $size="sizing070" />
-      <Email $size="sizing080" />
-      <Email $color="semanticNegative" $size="sizing080" />
-      <Email $color="semanticPositive" $size="sizing080" />
-      <Email $color="semanticNotice" $size="sizing080" />
-      <Email $color="semanticInformative" $size="sizing080" />
+      <Email $size="iconSize030" />
+      <Email $size="iconSize040" />
+      <Email $size="iconSize050" />
+      <Email $color="semanticNegative" $size="iconSize050" />
+      <Email $color="semanticPositive" $size="iconSize050" />
+      <Email $color="semanticNotice" $size="iconSize050" />
+      <Email $color="semanticInformative" $size="iconSize050" />
     </div>
     <div>
-      <Comment $size="sizing060" />
-      <Comment $size="sizing070" />
-      <Comment $size="sizing080" />
-      <Comment $color="semanticNegative" $size="sizing080" />
-      <Comment $color="semanticPositive" $size="sizing080" />
-      <Comment $color="semanticNotice" $size="sizing080" />
-      <Comment $color="semanticInformative" $size="sizing080" />
+      <Comment $size="iconSize030" />
+      <Comment $size="iconSize040" />
+      <Comment $size="iconSize050" />
+      <Comment $color="semanticNegative" $size="iconSize050" />
+      <Comment $color="semanticPositive" $size="iconSize050" />
+      <Comment $color="semanticNotice" $size="iconSize050" />
+      <Comment $color="semanticInformative" $size="iconSize050" />
     </div>
     <div>
-      <Bookmark $size="sizing060" />
-      <Bookmark $size="sizing070" />
-      <Bookmark $size="sizing080" />
-      <Bookmark $color="semanticNegative" $size="sizing060" />
-      <Bookmark $color="semanticPositive" $size="sizing070" />
-      <Bookmark $color="semanticNotice" $size="sizing080" />
+      <Bookmark $size="iconSize030" />
+      <Bookmark $size="iconSize040" />
+      <Bookmark $size="iconSize050" />
+      <Bookmark $color="semanticNegative" $size="iconSize030" />
+      <Bookmark $color="semanticPositive" $size="iconSize040" />
+      <Bookmark $color="semanticNotice" $size="iconSize050" />
     </div>
     <div>
-      <CopyLink $size="sizing060" />
-      <CopyLink $size="sizing070" />
-      <CopyLink $size="sizing080" />
-      <CopyLink $color="semanticNegative" $size="sizing060" />
-      <CopyLink $color="semanticPositive" $size="sizing070" />
-      <CopyLink $color="semanticNotice" $size="sizing080" />
+      <CopyLink $size="iconSize030" />
+      <CopyLink $size="iconSize040" />
+      <CopyLink $size="iconSize050" />
+      <CopyLink $color="semanticNegative" $size="iconSize030" />
+      <CopyLink $color="semanticPositive" $size="iconSize040" />
+      <CopyLink $color="semanticNotice" $size="iconSize050" />
     </div>
     <div>
-      <Circle $size="sizing060" />
-      <Circle $size="sizing070" />
-      <Circle $size="sizing080" />
-      <Circle $color="semanticNegative" $size="sizing060" />
-      <Circle $color="semanticPositive" $size="sizing070" />
-      <Circle $color="semanticNotice" $size="sizing080" />
+      <Circle $size="iconSize030" />
+      <Circle $size="iconSize040" />
+      <Circle $size="iconSize050" />
+      <Circle $color="semanticNegative" $size="iconSize030" />
+      <Circle $color="semanticPositive" $size="iconSize040" />
+      <Circle $color="semanticNotice" $size="iconSize050" />
     </div>
     <div>
-      <Placeholder $size="sizing060" />
-      <Placeholder $size="sizing070" />
-      <Placeholder $size="sizing080" />
+      <Facebook $size="iconSize030" />
+      <Facebook $size="iconSize040" />
+      <Facebook $size="iconSize050" />
     </div>
     <div>
-      <Facebook $size="sizing060" />
-      <Facebook $size="sizing070" />
-      <Facebook $size="sizing080" />
+      <Twitter $size="iconSize030" />
+      <Twitter $size="iconSize040" />
+      <Twitter $size="iconSize050" />
     </div>
     <div>
-      <Twitter $size="sizing060" />
-      <Twitter $size="sizing070" />
-      <Twitter $size="sizing080" />
+      <WhatsApp $size="iconSize030" />
+      <WhatsApp $size="iconSize040" />
+      <WhatsApp $size="iconSize050" />
     </div>
     <div>
-      <WhatsApp $size="sizing060" />
-      <WhatsApp $size="sizing070" />
-      <WhatsApp $size="sizing080" />
-    </div>
-    <div>
-      <GitHub $size="sizing060" />
-      <GitHub $size="sizing070" />
-      <GitHub $size="sizing080" />
+      <GitHub $size="iconSize030" />
+      <GitHub $size="iconSize040" />
+      <GitHub $size="iconSize050" />
     </div>
   </React.Fragment>
 );

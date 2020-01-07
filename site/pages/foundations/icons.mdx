@@ -35,31 +35,37 @@ Icons can be used to enhance other elements and content, as well as used inside 
 
 ### Available Icons
 
-| Name         |                      Preview                        | Color prop? |
-| ------------ | :-------------------------------------------------: | :---------: |
-| Bookmark     | <Icon Component={Bookmark} _size="sizing060" />     |     👍      |
-| Comment      | <Icon Component={Comment} _size="sizing060" />      |     👍      |
-| Email        | <Icon Component={Email} _size="sizing060" />        |     👍      |
-| Menu         | <Icon Component={Menu} _size="sizing060" />         |     👍      |
-| SaveActive   | <Icon Component={SaveActive} _size="sizing060" />   |     👍      |
-| SaveInactive | <Icon Component={SaveInactive} _size="sizing060" /> |     👍      |
-| CopyLink     | <Icon Component={CopyLink} _size="sizing060" />     |     👍      |
-| Circle       | <Icon Component={Circle} _size="sizing060" />       |     👍      |
-| Facebook     | <Icon Component={Facebook} _size="sizing060" />     |     👎      |
-| GitHub       | <Icon Component={GitHub} _size="sizing060" />       |     👎      |
-| Twitter      | <Icon Component={Twitter} _size="sizing060" />      |     👎      |
-| WhatsApp     | <Icon Component={WhatsApp} _size="sizing060" />     |     👎      |
-| Placeholder  | <Icon Component={Placeholder} _size="sizing060" />  |     👎      |
+| Name         |                      Preview                       | Color prop? |
+| ------------ | :------------------------------------------------: | :---------: |
+| Bookmark     |   <Icon Component={Bookmark} _size="iconSize030" />   |     👍      |
+| Comment      |   <Icon Component={Comment} _size="iconSize030" />    |     👍      |
+| Email        |    <Icon Component={Email} _size="iconSize030" />     |     👍      |
+| Menu         |     <Icon Component={Menu} _size="iconSize030" />     |     👍      |
+| SaveActive   |  <Icon Component={SaveActive} _size="iconSize030" />  |     👍      |
+| SaveInactive | <Icon Component={SaveInactive} _size="iconSize030" /> |     👍      |
+| CopyLink     |   <Icon Component={CopyLink} _size="iconSize030" />   |     👍      |
+| Circle       |   <Icon Component={Circle} _size="iconSize030" />     |     👍      |
+| Facebook     |   <Icon Component={Facebook} _size="iconSize030" />   |     👎      |
+| GitHub       |    <Icon Component={GitHub} _size="iconSize030" />    |     👎      |
+| Twitter      |   <Icon Component={Twitter} _size="iconSize030" />    |     👎      |
+| WhatsApp     |   <Icon Component={WhatsApp} _size="iconSize030" />   |     👎      |
+
 ## Props
 
 Icons must have a size specified, and some also support an optional colour override.
 
 <Block $marginTop="sizing040">
-  <Prop name="size" type="SizingKeys" required>
+  <Prop name="size" type="IconSizeKeys" required>
     A sizing token must be provided.
   </Prop>
   <Prop name="color" type="ColorKeys" default="inkBase">
     This optional property is available on some icons, but not brand icons.
+  </Prop>
+  <Prop name="ariaLabel" type="string">
+    This optional aira property that is set to improve accessibility.
+  </Prop>
+  <Prop name="title" type="string">
+    This is an optional title property to override the existing svg title, set in each icon.
   </Prop>
 </Block>
 
@@ -84,21 +90,21 @@ Icons must have a size specified, and some also support an optional colour overr
       propName: '$size',
       options: [
         {
-          label: 'sizing050',
-          value: 'sizing050',
+          label: 'iconSize020',
+          value: 'iconSize020',
         },
         {
-          label: 'sizing060',
-          value: 'sizing060',
-        },
-        {
-          label: 'sizing070',
-          value: 'sizing070',
+          label: 'iconSize030',
+          value: 'iconSize030',
           isDefault: true,
         },
         {
-          label: 'sizing080',
-          value: 'sizing080',
+          label: 'iconSize040',
+          value: 'iconSize040',
+        },
+        {
+          label: 'iconSize050',
+          value: 'iconSize050',
         },
       ],
     },
@@ -140,21 +146,21 @@ Icons must have a size specified, and some also support an optional colour overr
       propName: '$size',
       options: [
         {
-          label: 'sizing050',
-          value: 'sizing050',
+          label: 'iconSize020',
+          value: 'iconSize020',
         },
         {
-          label: 'sizing060',
-          value: 'sizing060',
-        },
-        {
-          label: 'sizing070',
-          value: 'sizing070',
+          label: 'iconSize030',
+          value: 'iconSize030',
           isDefault: true,
         },
         {
-          label: 'sizing080',
-          value: 'sizing080',
+          label: 'iconSize040',
+          value: 'iconSize040',
+        },
+        {
+          label: 'iconSize050',
+          value: 'iconSize050',
         },
       ],
     },

@@ -1,13 +1,18 @@
 import {FloatProperty} from 'csstype';
-import {SizingKeys, ColorKeys} from '../themes';
+import {IconSizeKeys, ColorKeys} from '../themes';
 import {styled, getColorFromTheme, getSizingFromTheme} from '../utils/style';
 
 export interface SvgProps {
   viewBox: string;
-  $size: SizingKeys;
+  $size: IconSizeKeys;
   $color?: ColorKeys;
   $float?: FloatProperty;
-  $margin?: SizingKeys;
+  $margin?: IconSizeKeys;
+}
+
+export interface SvgLabels {
+  title?: string;
+  ariaLabel?: string;
 }
 
 export const Svg = styled.svg<SvgProps>`

@@ -1,16 +1,19 @@
 import React from 'react';
-
 import {withTheme} from '../themes/emotion';
-import {Svg} from './svg';
-import {SizingKeys} from '../themes/newskit-light/sizing';
+import {Svg, SvgLabels} from './svg';
+import {IconSizeKeys} from '../themes/newskit-light/sizing';
 
-export interface FacebookIconProps {
-  $size: SizingKeys;
+export interface FacebookIconProps extends SvgLabels {
+  $size: IconSizeKeys;
 }
 
-const defaultIcon: React.FC<FacebookIconProps> = ({$size}) => (
-  <Svg viewBox="0 0 1365.3333 1365.3333" $size={$size}>
-    <title>Facebook logo</title>
+const defaultIcon: React.FC<FacebookIconProps> = ({
+  $size,
+  title = 'Facebook icon',
+  ariaLabel,
+}) => (
+  <Svg viewBox="0 0 1365.3333 1365.3333" $size={$size} aria-label={ariaLabel}>
+    <title>{title}</title>
     <g transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)">
       <g transform="scale(0.1)">
         <path

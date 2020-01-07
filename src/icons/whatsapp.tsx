@@ -1,16 +1,19 @@
 import React from 'react';
-
 import {withTheme} from '../themes/emotion';
-import {Svg} from './svg';
-import {SizingKeys} from '../themes/newskit-light/sizing';
+import {Svg, SvgLabels} from './svg';
+import {IconSizeKeys} from '../themes/newskit-light/sizing';
 
-export interface WhatsAppIconProps {
-  $size: SizingKeys;
+export interface WhatsAppIconProps extends SvgLabels {
+  $size: IconSizeKeys;
 }
 
-const defaultIcon: React.FC<WhatsAppIconProps> = ({$size}) => (
-  <Svg viewBox="0 0 400 400" $size={$size}>
-    <title>WhatsApp Logo</title>
+const defaultIcon: React.FC<WhatsAppIconProps> = ({
+  $size,
+  title = 'WhatsApp Logo',
+  ariaLabel,
+}) => (
+  <Svg viewBox="0 0 400 400" $size={$size} aria-label={ariaLabel}>
+    <title>{title}</title>
     <g>
       <circle fill="#25D366" cx="200" cy="200" r="200" />
     </g>

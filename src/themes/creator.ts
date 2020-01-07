@@ -10,17 +10,23 @@ import {borderPrimitives} from './newskit-light/borders';
 import {Breakpoints, breakpointPrimitives} from './newskit-light/breakpoints';
 import {Grid, gridPrimitives} from './newskit-light/grid';
 import {FontPrimitives, fontPrimitives} from './newskit-light/fonts';
-import {Sizing, sizingPrimitives, SizingKeys} from './newskit-light/sizing';
+import {
+  Sizing,
+  sizingPrimitives,
+  IconSizeKeys,
+  IconSize,
+  iconSizes,
+} from './newskit-light/sizing';
 import {TypePresets, createTypePresets} from './mappers/type-presets';
 import {Borders, createBorders} from './mappers/borders';
 import {Shadow, shadowPrimitives} from './newskit-light/shadow';
 import {Overlay, overlayPrimitives} from './newskit-light/overlay';
 
 type ColourableIcon = React.ComponentType<{
-  $size: SizingKeys;
+  $size: IconSizeKeys;
   $color?: ColorKeys;
 }>;
-type NonColourableIcon = React.ComponentType<{$size: SizingKeys}>;
+type NonColourableIcon = React.ComponentType<{$size: IconSizeKeys}>;
 
 export interface Icons {
   // Not sure how to solve this.
@@ -46,7 +52,7 @@ export interface Theme extends Record<string, unknown> {
   colors: Colors;
   typePresets: TypePresets;
   fonts: FontPrimitives;
-  sizing: Sizing;
+  sizing: Sizing & IconSize;
   borderRadius: BorderRadius;
   borders: Borders;
   animation: Animation;
@@ -65,7 +71,7 @@ const createDefaultTheme = (): Theme => ({
   colors: createThemeColors(colorPrimitives),
   typePresets: createTypePresets(fontPrimitives),
   fonts: fontPrimitives,
-  sizing: sizingPrimitives,
+  sizing: {...sizingPrimitives, ...iconSizes},
   shadow: shadowPrimitives,
   borderRadius: borderRadiusPrimitives,
   borders: createBorders(borderPrimitives),

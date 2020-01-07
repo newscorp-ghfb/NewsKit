@@ -10,7 +10,7 @@ Object.entries(icons)
     const props = {
       // n.b. color prop not supported on all icons.
       $color: 'inkSubtle',
-      $size: 'sizing080',
+      $size: 'iconSize050',
     };
 
     describe(name, () => {

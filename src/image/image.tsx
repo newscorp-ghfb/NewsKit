@@ -63,7 +63,7 @@ export const Image = ({
     <Container>
       <IconContainer>
         <InnerIconContainer>
-          <Placeholder $size="sizing080" />
+          <Placeholder $size="iconSize040" />
         </InnerIconContainer>
       </IconContainer>
       <DisplayImage

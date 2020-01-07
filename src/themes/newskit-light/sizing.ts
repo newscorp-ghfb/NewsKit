@@ -35,8 +35,8 @@ export const iconSizes = {
   iconSize010: sizingPrimitives.sizing040,
   iconSize020: sizingPrimitives.sizing050,
   iconSize030: sizingPrimitives.sizing060,
-  iconSize040: sizingPrimitives.sizing070,
-  iconSize050: sizingPrimitives.sizing080,
+  iconSize040: sizingPrimitives.sizing080,
+  iconSize050: sizingPrimitives.sizing090,
 };
 
 export type IconSize = typeof iconSizes;

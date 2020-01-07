@@ -9,11 +9,11 @@ describe('Svg', () => {
         inkBase: '#000000',
       },
       sizing: {
-        sizing080: 3,
+        iconSize050: 3,
       },
     };
     const fragment = renderToFragment(
-      <Svg theme={theme as any} viewBox="1 2 3 4" $size="sizing080" />,
+      <Svg theme={theme as any} viewBox="1 2 3 4" $size="iconSize050" />,
     );
     expect(fragment).toMatchSnapshot();
   });
@@ -31,7 +31,7 @@ describe('Svg', () => {
       <Svg
         theme={theme as any}
         viewBox="1 2 3 4"
-        $size="sizing010"
+        $size="iconSize010"
         $color="interactive030"
       />,
     );

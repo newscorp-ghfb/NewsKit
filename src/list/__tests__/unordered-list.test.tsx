@@ -15,7 +15,7 @@ describe('UnorderedList', () => {
   test('renders with custom list item marker', () => {
     const props = {
       children: ['first node', 'second node', 'third node'],
-      listItemMarker: () => <Twitter $size="spacingSize040" />,
+      listItemMarker: () => <Twitter $size="iconSize010" />,
     };
     const fragment = renderToFragmentWithTheme(UnorderedList, props);
     expect(fragment).toMatchSnapshot();
