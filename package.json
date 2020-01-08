@@ -14,6 +14,7 @@
     "dev": "concurrently --names \"src,storybook,docs\" \"yarn build:ts --watch\" \"yarn dev:storybook\" \"next site -p 8081\"",
     "dev:docs": "concurrently --names \"src,docs\" \"yarn build:ts --watch\" \"next site -p 8081\"",
     "dev:storybook": "start-storybook --ci -p 6006",
+    "eyes:storybook": "eyes-storybook",
     "lint:code:base": "eslint --report-unused-disable-directives --ext=.js,.ts,.jsx,.tsx --cache",
     "lint:code": "scripts/assert-tests-folder.js && yarn lint:code:base .",
     "lint:code:fix": "yarn lint:code --fix",
@@ -49,6 +50,7 @@
     "create:release": "sh ./scripts/release.sh"
   },
   "devDependencies": {
+    "@applitools/eyes-storybook": "^3.2.3",
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
     "@emotion/serialize": "^0.11.9",
