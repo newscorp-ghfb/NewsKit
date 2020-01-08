@@ -83,4 +83,16 @@ const ButtonElement = styled.button<ButtonProps>`
 
 export const Button: React.FC<
   React.ButtonHTMLAttributes<HTMLButtonElement> & ButtonProps
-> = props => <ButtonElement type="button" {...props} />;
+> = props => {
+  const {children, icon: Icon, ...restOfProps} = props;
+
+  if (Icon && children) {
+    throw new Error('Button with children and Icon is not implemented');
+  }
+
+  return (
+    <ButtonElement type="button" {...restOfProps} icon={Icon}>
+      {(Icon && <Icon />) || children}
+    </ButtonElement>
+  );
+};

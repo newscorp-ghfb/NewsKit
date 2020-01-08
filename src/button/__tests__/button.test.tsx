@@ -1,6 +1,9 @@
+import * as React from 'react';
+
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {Button} from '..';
 import {ButtonSize, ButtonShape} from '../types';
+import {Email} from '../../icons';
 
 describe('Button', () => {
   test('renders with fallback formatting', () => {
@@ -32,5 +35,26 @@ describe('Button', () => {
     };
     const fragment = renderToFragmentWithTheme(Button, props);
     expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders Icon Button', () => {
+    const props = {
+      $size: ButtonSize.Large,
+      icon: () => <Email $size="sizing120" />,
+    };
+    const fragment = renderToFragmentWithTheme(Button, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('Throws errors with both Icon and children Button', () => {
+    const props = {
+      $size: ButtonSize.Large,
+      icon: () => <Email $size="sizing120" />,
+      children: "can't click this!",
+    };
+
+    expect(() =>
+      renderToFragmentWithTheme(Button, props),
+    ).toThrowErrorMatchingSnapshot();
   });
 });

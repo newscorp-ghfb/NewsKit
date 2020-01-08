@@ -1,5 +1,144 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Button Throws errors with both Icon and children Button 1`] = `"Button with children and Icon is not implemented"`;
+
+exports[`Button renders Icon Button 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  color: #ffffff;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  background-color: #0A68C1;
+  cursor: pointer;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 0 24px;
+  height: 48px;
+  width: 48px;
+  border-radius: 0;
+  padding: 0;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #0A68C1;
+  background-color: #ffffff;
+}
+
+.emotion-1:disabled {
+  cursor: not-allowed;
+  background-color: #F2F2F2;
+  color: #c0c0c0;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #0A68C1;
+  box-shadow: 0 0 0 2px white,0 0 0 4px transparent;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-1 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-1:disabled {
+  border: none;
+  background-color: #F2F2F2;
+}
+
+.emotion-1:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-1:hover:not(:disabled) {
+  border: 1px solid #0A68C1;
+  background-color: #E5F3FF;
+}
+
+.emotion-1:hover:not(:disabled) svg {
+  fill: #2e2e2e;
+}
+
+.emotion-1:focus:not(:disabled) {
+  border: 1px solid #0A68C1;
+  background-color: #ffffff;
+}
+
+.emotion-1:focus:not(:disabled) svg {
+  fill: #2e2e2e;
+}
+
+.emotion-1:active:not(:disabled) {
+  border: 1px solid #002141;
+  background-color: #0A68C1;
+}
+
+.emotion-1:active:not(:disabled) svg {
+  fill: #ffffff;
+}
+
+.emotion-0 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 160px;
+  height: 160px;
+}
+
+<button
+    class="emotion-1"
+    type="button"
+  >
+    <svg
+      class="emotion-0"
+      viewBox="0 0 24 24"
+    >
+      <title>
+        Email icon
+      </title>
+      <path
+        d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+      />
+    </svg>
+  </button>
+</DocumentFragment>
+`;
+
 exports[`Button renders Large Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
