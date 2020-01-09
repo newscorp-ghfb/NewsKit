@@ -40,7 +40,7 @@ describe('Button', () => {
   test('renders Icon Button', () => {
     const props = {
       $size: ButtonSize.Large,
-      icon: () => <Email $size="sizing120" />,
+      icon: () => <Email $size="iconSize050" />,
     };
     const fragment = renderToFragmentWithTheme(Button, props);
     expect(fragment).toMatchSnapshot();
@@ -49,7 +49,7 @@ describe('Button', () => {
   test('Throws errors with both Icon and children Button', () => {
     const props = {
       $size: ButtonSize.Large,
-      icon: () => <Email $size="sizing120" />,
+      icon: () => <Email $size="iconSize050" />,
       children: "can't click this!",
     };
 

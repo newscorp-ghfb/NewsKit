@@ -116,8 +116,8 @@ exports[`Button renders Icon Button 1`] = `
   display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
-  width: 160px;
-  height: 160px;
+  width: 64px;
+  height: 64px;
 }
 
 <button
