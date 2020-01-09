@@ -6,6 +6,7 @@ const routes = {
   icons: '/foundations/icons',
   typography: '/foundations/typography',
   animation: '/foundations/animation',
+  spacing: '/foundations/spacing',
   tag: '/components/tag',
   link: '/components/link',
   articleByline: '/components/article-byline',

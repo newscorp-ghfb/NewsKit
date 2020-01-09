@@ -16,11 +16,12 @@ import {
   IconSizeKeys,
   IconSize,
   iconSizes,
-} from './newskit-light/sizing';
+} from './newskit-light/spacing';
 import {TypePresets, createTypePresets} from './mappers/type-presets';
 import {Borders, createBorders} from './mappers/borders';
 import {Shadow, shadowPrimitives} from './newskit-light/shadow';
 import {Overlay, overlayPrimitives} from './newskit-light/overlay';
+import {createSpacingPresets, SpacingPreset} from './mappers/spacing';
 
 type ColourableIcon = React.ComponentType<{
   $size: IconSizeKeys;
@@ -52,7 +53,7 @@ export interface Theme extends Record<string, unknown> {
   colors: Colors;
   typePresets: TypePresets;
   fonts: FontPrimitives;
-  sizing: Sizing & IconSize;
+  sizing: SpacingPreset & IconSize;
   borderRadius: BorderRadius;
   borders: Borders;
   animation: Animation;
@@ -71,7 +72,7 @@ const createDefaultTheme = (): Theme => ({
   colors: createThemeColors(colorPrimitives),
   typePresets: createTypePresets(fontPrimitives),
   fonts: fontPrimitives,
-  sizing: {...sizingPrimitives, ...iconSizes},
+  sizing: {...createSpacingPresets(sizingPrimitives), ...iconSizes},
   shadow: shadowPrimitives,
   borderRadius: borderRadiusPrimitives,
   borders: createBorders(borderPrimitives),

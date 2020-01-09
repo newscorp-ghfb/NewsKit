@@ -51,6 +51,11 @@
         "id": "/foundations/animation"
       },
       {
+        "title": "Spacing",
+        "page": true,
+        "id": "/foundations/spacing"
+      },
+      {
         "title": "Icons",
         "page": true,
         "id": "/foundations/icons"

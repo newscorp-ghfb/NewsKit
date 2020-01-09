@@ -1,7 +1,7 @@
 import React from 'react';
 import {withTheme} from '../themes/emotion';
 import {Svg, SvgLabels} from './svg';
-import {IconSizeKeys} from '../themes/newskit-light/sizing';
+import {IconSizeKeys} from '../themes/newskit-light/spacing';
 
 export interface FacebookIconProps extends SvgLabels {
   $size: IconSizeKeys;

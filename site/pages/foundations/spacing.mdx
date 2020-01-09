@@ -1,0 +1,141 @@
+import Layout from '../../components/layout';
+import {Block} from '../../components/block';
+import {Image} from 'newskit';
+
+export default Layout;
+
+# Spacing
+
+Whitespace is the space between UI elements on a screen. Good use of whitespace helps to de-clutter content so that users can focus on the important elements and read content more easily.
+Our system is built on a 4px baseline grid and we have spacing tokens available to ensure consistency of UI elements.
+
+## Generic Spacing Tokens
+
+Avoid using generic space tokens in favour of more specific options such as inset, squish, stretch, stack, and inline options described below.
+However, when established concepts don’t meet your needs – or you are overriding or extending a concept for a special case – use these recognisable, generic variables to persist spatial concepts and maintenance in code.
+
+<Block $marginBottom="sizing05" $maxWidth="760px">
+    <Image src="/static/examples/spacing/generic.png" alt="Generic Spacing" />
+</Block>
+
+| Token          |                      Px Value                      |  Rem Value   |
+| -------------- | :------------------------------------------------: | :----------: |
+| spacingSize010 |                        4px                         |    0.25      |
+| spacingSize020 |                        8px                         |    0.5       |
+| spacingSize030 |                       12px                         |    0.75      |
+| spacingSize040 |                       16px                         |    1         |
+| spacingSize050 |                       24px                         |    1.5       |
+| spacingSize060 |                       32px                         |    2         |
+| spacingSize070 |                       40px                         |    2.5       |
+| spacingSize080 |                       48px                         |    3         |
+| spacingSize090 |                       64px                         |    4         |
+| spacingSize100 |                       80px                         |    5         |
+| spacingSize110 |                      120px                         |    7.5       |
+| spacingSize120 |                      160px                         |    10        |
+
+## Inset Spacing Tokens
+
+An inset is the space within a container from which elements —typography, images, icons, and more — are separated from the edge.
+By default, a component’s inset should be equal on all four sides.
+
+<Block $marginBottom="sizing05" $maxWidth="760px">
+    <Image src="/static/examples/spacing/inset1.png" alt="Inset Spacing" />
+</Block>
+
+| Token           |                      Px Value                      |  Rem Value   |
+| --------------- | :------------------------------------------------: | :----------: |
+| spac3Inset000   |                        0px                         |   0 0 0 0    |
+| spac3Inset010   |                        4px                         | 0.25 0.25 0.25 0.25 |
+| spac3Inset020   |                        8px                         | 0.5 0.5 0.5 0.5 |
+| spac3Inset030   |                       12px                         | 0.75 0.75 0.75 0.75 |
+| spac3Inset040   |                       16px                         |   1 1 1 1    |
+| spac3Inset050   |                       24px                         | 1.5 1.5 1.5 1.5 |
+| spac3Inset060   |                       32px                         |   2 2 2 2    |
+| spac3Inset070   |                       48px                         |   3 3 3 3    |
+
+Apply a inset spacing token to the padding property.
+
+## Squish Spacing Tokens
+
+A squish inset reduces top and bottom padding relative to the default inset space.
+
+<Block $marginBottom="sizing05" $maxWidth="760px">
+    <Image src="/static/examples/spacing/Squish-Inset.png" alt="Squish Spacing" />
+</Block>
+
+| Token                 |                      Px Value                      |  Rem Value   |
+| --------------------- | :------------------------------------------------: | :----------: |
+| spaceInset000Squish   |                        0px                         | 0 0 0 0      |
+| spaceInset010Squish   |                4px 8px 4px 8px                     | 0.25 0.5 0.25 0.5 |
+| spaceInset020Squish   |                8px 12px 8px 12px                   | 0.5 0.75 0.5 0.75 |
+| spaceInset030Squish   |                16px 24px 16px 24px                 | 1 1.5 1 1.5  |
+| spaceInset040Squish   |                24px 32px 24px 32px                 | 1.5 2 1.5 2  |
+| spaceInset050Squish   |                32px 48px 32px 48px                 | 2 3 2 3      |
+
+Apply a squish inset spacing token to the padding property.
+
+## Stretch Spacing Tokens
+
+A stretched inset increases top and bottom padding relative to the default inset space.
+
+<Block $marginBottom="sizing05" $maxWidth="760px">
+    <Image src="/static/examples/spacing/Stretch-Inset.png" alt="Stretch Spacing" />
+</Block>
+
+| Token                  |                      Px Value                      |  Rem Value   |
+| ---------------------- | :------------------------------------------------: | :----------: |
+| spaceInset000Stretch   |                        0px                         | 0 0 0 0      |
+| spaceInset010Stretch   |                8px 4px 8px 4px                     | 0.5 0.25 0.5 0.25 |
+| spaceInset020Stretch   |                12px 8px 12px 8px                   | 0.75 0.5 0.75 0.5 |
+| spaceInset030Stretch   |                24px 16px 24px 16px                 | 1.5 1 1.5 1  |
+| spaceInset040Stretch   |                32px 24px 32px 24px                 | 2 1.5 2 1.5  |
+| spaceInset050Stretch   |                48px 32px 48px 32px                 | 3 2 3 2      |
+
+Apply a stretch inset spacing token to the padding property.
+
+## Stacking Spacing Tokens
+
+Use a stacking value to separate block components arranged vertically in a column. The last component in a stack should omit this space.
+
+<Block $marginBottom="sizing05" $maxWidth="760px">
+    <Image src="/static/examples/spacing/Stacking.png" alt="Stacking Spacing" />
+</Block>
+
+| Token         |                      Px Value                       |  Rem Value   |
+| ------------- | :-------------------------------------------------: | :----------: |
+| spaceStack000 |                    0 0 0px 0                        | 0 0 0 0      |
+| spaceStack010 |                    0 0 4px 0                        | 0 0 0.25 0   |
+| spaceStack020 |                    0 0 8px 0                        | 0 0 0.5 0    |
+| spaceStack030 |                    0 0 12px 0                       | 0 0 0.75 0   |
+| spaceStack040 |                    0 0 16px 0                       | 0 0 1 0      |
+| spaceStack050 |                    0 0 24px 0                       | 0 0 1.5 0    |
+| spaceStack060 |                    0 0 32px 0                       | 0 0 2 0      |
+| spaceStack070 |                    0 0 40px 0                       | 0 0 2.5 0    |
+| spaceStack080 |                    0 0 48px 0                       | 0 0 3 0      |
+| spaceStack090 |                    0 0 64px 0                       | 0 0 4 0      |
+| spaceStack100 |                    0 0 80px 0                       | 0 0 5 0      |
+| spaceStack110 |                    0 0 120px 0                      | 0 0 7.5 0    |
+| spaceStack120 |                    0 0 160px 0                      | 0 0 10 0     |
+
+Apply stacking spacing tokens to the margin property.
+
+## Inline Spacing Tokens
+
+Use inline spacing variable tokens to separate inline elements arranged horizontally and that may wrap on the right. The last component in an inline set should omit this space.
+
+<Block $marginBottom="sizing05" $maxWidth="760px">
+    <Image src="/static/examples/spacing/Inline.png" alt="Inline Spacing" />
+</Block>
+
+| Token            |                      Px Value                      |  Rem Value   |
+| ---------------- | :------------------------------------------------: | :----------: |
+| spaceInline000   |                     0 0px 0 0                      |   0 0 0 0    |
+| spaceInline010   |                     0 4px 0 0                      |   0 0.25 0 0 |
+| spaceInline020   |                     0 8px 0 0                      |   0 0.5 0 0  |
+| spaceInline030   |                     0 12px 0 0                     |   0 0.75 0 0 |
+| spaceInline040   |                     0 16px 0 0                     |   0 1 0 0    |
+| spaceInline050   |                     0 24px 0 0                     |   0 1.5 0 0  |
+| spaceInline060   |                     0 32px 0 0                     |   0 2 0 0    |
+| spaceInline070   |                     0 48px 0 0                     |   0 3 0 0    |
+
+Apply inline spacing tokens to the margin property.

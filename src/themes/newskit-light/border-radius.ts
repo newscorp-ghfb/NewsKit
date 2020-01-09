@@ -1,4 +1,4 @@
-import {Sizing, SizingKeys, sizingPrimitives} from './sizing';
+import {Sizing, SizingKeys, sizingPrimitives} from './spacing';
 
 export enum BorderRadiusShape {
   Squared = 'squared',

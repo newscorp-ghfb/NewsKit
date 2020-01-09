@@ -11,7 +11,7 @@ export {
   SizingKeys,
   IconSizeKeys,
   IconSize,
-} from './newskit-light/sizing';
+} from './newskit-light/spacing';
 export {FontPrimitives, FontPrimitivesKeys} from './newskit-light/fonts';
 
 export {newskitLightTheme} from './newskit-light';
