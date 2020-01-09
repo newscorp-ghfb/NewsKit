@@ -14,7 +14,6 @@ import {Play, Pause} from '../icons';
 
 interface AudioPlayerState {
   playing: boolean;
-  canPlay: boolean;
   volume: number;
 }
 
@@ -110,7 +109,6 @@ export class AudioPlayer extends React.Component<
     super(props);
     this.state = {
       playing: false,
-      canPlay: true,
       volume: 1,
     };
     this.playerRef = React.createRef<HTMLAudioElement>();
@@ -120,24 +118,20 @@ export class AudioPlayer extends React.Component<
     const playerNode = this.playerRef.current;
 
     if (playerNode) {
-      playerNode.addEventListener('canPlay', this.playable);
       playerNode.addEventListener('play', this.playing);
       playerNode.addEventListener('pause', this.paused);
     }
   }
 
   get buttonProps(): ButtonProps {
-    const {canPlay, playing} = this.state;
-
-    const playState = playing ? 'pause' : 'play';
+    const {playing} = this.state;
 
     const props = {
       type: 'button',
       'data-testid': 'audio-player-play-button',
       $size: ButtonSize.Large,
-      disabled: !canPlay && !playing,
       icon: () => <Play $size="sizing060" $color="buttonFill" />,
-      onClick: () => this.setPlayState(playState),
+      onClick: () => this.togglePlay(),
       'aria-pressed': false,
     };
 
@@ -149,10 +143,6 @@ export class AudioPlayer extends React.Component<
     return props;
   }
 
-  playable = () => {
-    this.setState({canPlay: true});
-  };
-
   playing = () => {
     this.setState({playing: true});
   };
@@ -163,10 +153,25 @@ export class AudioPlayer extends React.Component<
 
   setPlayState = (state: 'play' | 'pause') => {
     const playerNode = this.playerRef.current;
-    const {canPlay} = this.state;
+    if (!playerNode) {
+      return;
+    }
 
-    if (playerNode && canPlay) {
-      playerNode[state]();
+    if (state !== 'play') {
+      playerNode.pause();
+      return;
+    }
+
+    // TODO: should go into a loading state here https://nidigitalsolutions.jira.com/browse/PPDSC-649
+    const playPromise = playerNode.play();
+    if (playPromise) {
+      playPromise
+        .then(() => {
+          this.playing();
+        })
+        .catch(() => {
+          // TODO: Display error to user https://nidigitalsolutions.jira.com/browse/PPDSC-554 consider autoplay error states https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide
+        });
     }
   };
 
