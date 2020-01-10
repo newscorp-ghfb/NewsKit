@@ -1,5 +1,5 @@
-import React from 'react';
-import {Button, ButtonSize, ButtonProps} from '../button';
+import React, {useEffect, useRef} from 'react';
+import {Button, ButtonSize} from '../button';
 import {
   styled,
   getColorFromTheme,
@@ -11,11 +11,6 @@ import {Image, ImageShape} from '../image';
 import {H1} from '../typography';
 import {Tag} from '../tag';
 import {Play, Pause} from '../icons';
-
-interface AudioPlayerState {
-  playing: boolean;
-  volume: number;
-}
 
 export interface AudioPlayerProps
   extends React.AudioHTMLAttributes<HTMLAudioElement> {
@@ -99,89 +94,67 @@ const ImageContainer = styled.div`
   width: 208px;
 `;
 
-export class AudioPlayer extends React.Component<
-  AudioPlayerProps,
-  AudioPlayerState
-> {
-  private playerRef: React.RefObject<HTMLAudioElement>;
+export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
+  {
+    const playerRef = useRef<HTMLAudioElement>(null);
+    const [isPlaying, setIsPlaying] = React.useState(false);
+    const [volume] = React.useState(1);
 
-  constructor(props: AudioPlayerProps) {
-    super(props);
-    this.state = {
-      playing: false,
-      volume: 1,
+    const playing = () => {
+      setIsPlaying(true);
     };
-    this.playerRef = React.createRef<HTMLAudioElement>();
-  }
 
-  componentDidMount() {
-    const playerNode = this.playerRef.current;
+    const paused = () => {
+      setIsPlaying(false);
+    };
 
-    if (playerNode) {
-      playerNode.addEventListener('play', this.playing);
-      playerNode.addEventListener('pause', this.paused);
-    }
-  }
+    useEffect(() => {
+      const playerNode = playerRef.current;
+      if (playerNode) {
+        playerNode.addEventListener('play', playing);
+        playerNode.addEventListener('pause', paused);
+      }
+    });
 
-  get buttonProps(): ButtonProps {
-    const {playing} = this.state;
+    const setPlayState = (state: 'play' | 'pause') => {
+      const playerNode = playerRef.current;
+      if (!playerNode) {
+        return;
+      }
 
-    const props = {
-      type: 'button',
+      if (state !== 'play') {
+        playerNode.pause();
+        return;
+      }
+
+      // TODO: should go into a loading state here https://nidigitalsolutions.jira.com/browse/PPDSC-649
+      const playPromise = playerNode.play();
+      if (playPromise) {
+        playPromise
+          .then(() => {
+            playing();
+          })
+          .catch(() => {
+            // TODO: Display error to user https://nidigitalsolutions.jira.com/browse/PPDSC-554 consider autoplay error states https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide
+          });
+      }
+    };
+
+    const togglePlay = () => {
+      const playState = isPlaying ? 'pause' : 'play';
+      setPlayState(playState);
+    };
+
+    const buttonProps = {
       'data-testid': 'audio-player-play-button',
       $size: ButtonSize.Large,
-      icon: () => <Play $size="sizing060" $color="buttonFill" />,
-      onClick: () => this.togglePlay(),
-      'aria-pressed': false,
+      icon: isPlaying
+        ? () => <Pause $size="iconSize030" $color="buttonFill" />
+        : () => <Play $size="iconSize030" $color="buttonFill" />,
+      onClick: () => togglePlay(),
+      'aria-pressed': isPlaying,
     };
 
-    if (playing) {
-      props.icon = () => <Pause $size="sizing060" $color="buttonFill" />;
-      props['aria-pressed'] = true;
-    }
-
-    return props;
-  }
-
-  playing = () => {
-    this.setState({playing: true});
-  };
-
-  paused = () => {
-    this.setState({playing: false});
-  };
-
-  setPlayState = (state: 'play' | 'pause') => {
-    const playerNode = this.playerRef.current;
-    if (!playerNode) {
-      return;
-    }
-
-    if (state !== 'play') {
-      playerNode.pause();
-      return;
-    }
-
-    // TODO: should go into a loading state here https://nidigitalsolutions.jira.com/browse/PPDSC-649
-    const playPromise = playerNode.play();
-    if (playPromise) {
-      playPromise
-        .then(() => {
-          this.playing();
-        })
-        .catch(() => {
-          // TODO: Display error to user https://nidigitalsolutions.jira.com/browse/PPDSC-554 consider autoplay error states https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide
-        });
-    }
-  };
-
-  togglePlay = () => {
-    const {playing} = this.state;
-    const playState = playing ? 'pause' : 'play';
-    this.setPlayState(playState);
-  };
-
-  render() {
     const {
       imgSrc,
       imgAlt,
@@ -191,9 +164,8 @@ export class AudioPlayer extends React.Component<
       description,
       tags = [],
       ...rest
-    } = this.props;
-    const {volume} = this.state;
-    const playerNode = this.playerRef.current;
+    } = props;
+    const playerNode = playerRef.current;
 
     if (playerNode) {
       playerNode.volume = volume;
@@ -202,7 +174,7 @@ export class AudioPlayer extends React.Component<
     return (
       <PlayerContainer>
         {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-        <audio ref={this.playerRef} data-testid="audio-player" {...rest} />
+        <audio ref={playerRef} data-testid="audio-player" {...rest} />
         <MetaArea>
           <ImageContainer>
             <Image
@@ -229,8 +201,8 @@ export class AudioPlayer extends React.Component<
             )}
           </InfoArea>
         </MetaArea>
-        <PlayerButton {...this.buttonProps} />
+        <PlayerButton {...buttonProps} />
       </PlayerContainer>
     );
   }
-}
+};
