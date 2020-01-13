@@ -39,5 +39,6 @@ We use the following libraries for our automated tests:
 * Jest and React Testing Library for unit testing
 * Cypress for component and E2E testing
 * cypress-axe for automated accessibility testing
+* Applitools for cross browser visual testing
 
 For detailed information on how to run the automated tests, please visit [Testing](./docs/testing.md)

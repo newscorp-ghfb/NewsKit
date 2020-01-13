@@ -70,7 +70,16 @@ module.exports = {
       files: ['site/**/*.ts', 'site/**/*.tsx'],
       rules: {
         'react/display-name': 'off',
-        'import/no-unresolved': ['error', {ignore: ['newskit', 'csstype', '@components/page-title']}],
+        'import/no-unresolved': [
+          'error',
+          {ignore: ['newskit', 'csstype', '@components/page-title']},
+        ],
+      },
+    },
+    {
+      files: ['cypress/**/*.spec.js'],
+      env: {
+        mocha: true,
       },
     },
   ],
