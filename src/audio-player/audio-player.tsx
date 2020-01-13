@@ -21,6 +21,7 @@ export interface AudioPlayerProps
   description?: string;
   live?: boolean;
   tags?: string[];
+  captionSrc?: string;
 }
 
 const PlayerContainer = styled.div`
@@ -95,114 +96,107 @@ const ImageContainer = styled.div`
 `;
 
 export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
-  {
-    const playerRef = useRef<HTMLAudioElement>(null);
-    const [isPlaying, setIsPlaying] = React.useState(false);
-    const [volume] = React.useState(1);
+  const playerRef = useRef<HTMLAudioElement>(null);
+  const [isPlaying, setIsPlaying] = React.useState(false);
+  const [volume] = React.useState(1);
 
-    const playing = () => {
-      setIsPlaying(true);
-    };
-
-    const paused = () => {
-      setIsPlaying(false);
-    };
-
-    useEffect(() => {
-      const playerNode = playerRef.current;
-      if (playerNode) {
-        playerNode.addEventListener('play', playing);
-        playerNode.addEventListener('pause', paused);
-      }
-    });
-
-    const setPlayState = (state: 'play' | 'pause') => {
-      const playerNode = playerRef.current;
-      if (!playerNode) {
-        return;
-      }
-
-      if (state !== 'play') {
-        playerNode.pause();
-        return;
-      }
-
-      // TODO: should go into a loading state here https://nidigitalsolutions.jira.com/browse/PPDSC-649
-      const playPromise = playerNode.play();
-      if (playPromise) {
-        playPromise
-          .then(() => {
-            playing();
-          })
-          .catch(() => {
-            // TODO: Display error to user https://nidigitalsolutions.jira.com/browse/PPDSC-554 consider autoplay error states https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide
-          });
-      }
-    };
-
-    const togglePlay = () => {
-      const playState = isPlaying ? 'pause' : 'play';
-      setPlayState(playState);
-    };
-
-    const buttonProps = {
-      'data-testid': 'audio-player-play-button',
-      $size: ButtonSize.Large,
-      icon: isPlaying
-        ? () => <Pause $size="iconSize030" $color="buttonFill" />
-        : () => <Play $size="iconSize030" $color="buttonFill" />,
-      onClick: () => togglePlay(),
-      'aria-pressed': isPlaying,
-    };
-
-    const {
-      imgSrc,
-      imgAlt,
-      live = false,
-      time,
-      title,
-      description,
-      tags = [],
-      ...rest
-    } = props;
+  useEffect(() => {
     const playerNode = playerRef.current;
-
     if (playerNode) {
-      playerNode.volume = volume;
+      playerNode.addEventListener('play', () => setIsPlaying(true));
+      playerNode.addEventListener('pause', () => setIsPlaying(false));
+    }
+  });
+
+  const setPlayState = (state: 'play' | 'pause') => {
+    const playerNode = playerRef.current;
+    if (!playerNode) {
+      return;
     }
 
-    return (
-      <PlayerContainer>
-        {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-        <audio ref={playerRef} data-testid="audio-player" {...rest} />
-        <MetaArea>
-          <ImageContainer>
-            <Image
-              shape={ImageShape.Rounded}
-              src={imgSrc}
-              alt={imgAlt}
-              aspectHeight="1"
-              aspectWidth="1"
-            />
-          </ImageContainer>
-          <InfoArea>
-            <div>
-              {live && <LiveTag>Live</LiveTag>}
-              <ProgrammeTime>{time}</ProgrammeTime>
-            </div>
-            <ProgrammeTitle>{title}</ProgrammeTitle>
-            <ProgrammeDescription>{description}</ProgrammeDescription>
-            {tags.length > 0 && (
-              <ProgrammeTags>
-                {tags.map(
-                  (tag, i) => `${tag}${i <= tags.length - 2 ? ' | ' : ''}`,
-                )}
-              </ProgrammeTags>
-            )}
-          </InfoArea>
-        </MetaArea>
-        <PlayerButton {...buttonProps} />
-      </PlayerContainer>
-    );
+    if (state !== 'play') {
+      playerNode.pause();
+      return;
+    }
+
+    // TODO: should go into a loading state here https://nidigitalsolutions.jira.com/browse/PPDSC-649
+    const playPromise = playerNode.play();
+    if (playPromise) {
+      playPromise
+        .then(() => {
+          setIsPlaying(true);
+        })
+        .catch(() => {
+          // TODO: Display error to user https://nidigitalsolutions.jira.com/browse/PPDSC-554 consider autoplay error states https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide
+        });
+    }
+  };
+
+  const togglePlay = () => {
+    const playState = isPlaying ? 'pause' : 'play';
+    setPlayState(playState);
+  };
+
+  const buttonProps = {
+    'data-testid': 'audio-player-play-button',
+    $size: ButtonSize.Large,
+    icon: isPlaying
+      ? () => <Pause $size="iconSize030" $color="buttonFill" />
+      : () => <Play $size="iconSize030" $color="buttonFill" />,
+    onClick: () => togglePlay(),
+    'aria-pressed': isPlaying,
+  };
+
+  const {
+    imgSrc,
+    imgAlt,
+    live = false,
+    time,
+    title,
+    description,
+    tags = [],
+    captionSrc,
+    ...rest
+  } = props;
+  const playerNode = playerRef.current;
+
+  if (playerNode) {
+    playerNode.volume = volume;
   }
+
+  return (
+    <PlayerContainer>
+      {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+      <audio ref={playerRef} data-testid="audio-player" {...rest}>
+        {captionSrc && <track kind="captions" src={captionSrc} />}
+      </audio>
+      <MetaArea>
+        <ImageContainer>
+          <Image
+            shape={ImageShape.Rounded}
+            src={imgSrc}
+            alt={imgAlt}
+            aspectHeight="1"
+            aspectWidth="1"
+          />
+        </ImageContainer>
+        <InfoArea>
+          <div>
+            {live && <LiveTag>Live</LiveTag>}
+            <ProgrammeTime>{time}</ProgrammeTime>
+          </div>
+          <ProgrammeTitle>{title}</ProgrammeTitle>
+          <ProgrammeDescription>{description}</ProgrammeDescription>
+          {tags.length > 0 && (
+            <ProgrammeTags>
+              {tags.map(
+                (tag, i) => `${tag}${i <= tags.length - 2 ? ' | ' : ''}`,
+              )}
+            </ProgrammeTags>
+          )}
+        </InfoArea>
+      </MetaArea>
+      <PlayerButton {...buttonProps} />
+    </PlayerContainer>
+  );
 };

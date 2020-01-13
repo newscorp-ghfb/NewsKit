@@ -10,6 +10,7 @@ const props = {
   imgAlt: 'test image',
   title: 'title',
   imgSrc: 'https://via.placeholder.com/150',
+  captionSrc: 'captions.vtt',
 };
 
 const Container = styled.div`

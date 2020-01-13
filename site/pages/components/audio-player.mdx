@@ -60,6 +60,9 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
   <Prop name="tags" type="Array<string>">
     List of tags to describe the current show, e.g. comedy, politics
   </Prop>
+  <Prop name="captionSrc" type="string">
+    Source for audio transcription generally provided in <a href='https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API'>web vtt format</a>.
+  </Prop>
 </Block>
 
 ## Playground
@@ -116,6 +119,11 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       propName: 'imgAlt',
       value: 'Giles Coren',
     },
+    {
+      name: 'captionSrc',
+      propName: 'captionSrc',
+      value: 'captionsSrc.vtt',
+    }
   ]}
 />
 

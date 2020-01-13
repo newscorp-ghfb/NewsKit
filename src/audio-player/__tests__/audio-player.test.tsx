@@ -12,6 +12,7 @@ const props = {
   imgSrc: 'https://via.placeholder.com/150',
   description: 'Test Description',
   time: '1PM to 3PM',
+  captionSrc: 'captions.vtt',
 };
 
 describe('AudioPlayer', () => {

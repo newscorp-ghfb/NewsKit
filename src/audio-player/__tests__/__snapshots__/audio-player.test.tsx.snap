@@ -693,7 +693,12 @@ exports[`AudioPlayer renders with live 1`] = `
     <audio
       data-testid="audio-player"
       src="https://radio.talkradio.co.uk/stream"
-    />
+    >
+      <track
+        kind="captions"
+        src="captions.vtt"
+      />
+    </audio>
     <div
       class="emotion-11"
     >
@@ -1082,7 +1087,12 @@ exports[`AudioPlayer renders with tags 1`] = `
     <audio
       data-testid="audio-player"
       src="https://radio.talkradio.co.uk/stream"
-    />
+    >
+      <track
+        kind="captions"
+        src="captions.vtt"
+      />
+    </audio>
     <div
       class="emotion-11"
     >

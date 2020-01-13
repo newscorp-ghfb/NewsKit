@@ -3,18 +3,18 @@ import {styled, getColorFromTheme} from '../utils/style';
 import {Placeholder} from '../icons';
 
 export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
-  aspectHeight: Number | String;
-  aspectWidth: Number | String;
-  hideLoadingIcon?: Boolean;
+  aspectHeight: number | string;
+  aspectWidth: number | string;
+  hideLoadingIcon?: boolean;
+  shape?: ImageShape;
 }
 
-export const Image = ({
-  aspectHeight,
-  aspectWidth,
-  hideLoadingIcon,
-  ...rest
-}: ImageProps) => {
-  const [{isLoading}, setState] = useState({isLoading: true});
+interface ImageContainerProps extends React.HtmlHTMLAttributes<HTMLElement> {
+  isLoading: boolean;
+  aspectHeight: number | string;
+  aspectWidth: number | string;
+  shape?: ImageShape;
+}
 
   const Container = styled.div`
     position: relative;
@@ -23,8 +23,17 @@ export const Image = ({
     padding-top: ${isLoading
       ? `calc(100% * (${aspectHeight}/${aspectWidth}))`
       : 0};
-    background-color: ${getColorFromTheme('skeleton010')};
-  `;
+  background-color: ${getColorFromTheme('skeleton010')};
+  border-radius: ${props => ({shape = props.shape || ImageShape.Square}) =>
+    ({
+      [ImageShape.Square]: undefined,
+      [ImageShape.Rounded]: '50%',
+    }[shape])};
+`;
+
+export const Image = (props: ImageProps) => {
+  const {hideLoadingIcon} = props;
+  const [isLoading, setIsLoading] = useState(true);
 
   const DisplayImage = styled.img`
     display: ${isLoading ? 'none' : 'block'};
@@ -67,8 +76,8 @@ export const Image = ({
         </InnerIconContainer>
       </IconContainer>
       <DisplayImage
-        {...rest}
-        onLoad={() => isLoading && setState({isLoading: false})}
+        {...props}
+        onLoad={() => isLoading && setIsLoading(false)}
       />
     </Container>
   );
