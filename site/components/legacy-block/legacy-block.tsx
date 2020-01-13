@@ -1,9 +1,9 @@
 import {StyledComponent} from '@emotion/styled';
 import {styled, ColorKeys, SizingKeys, Theme} from 'newskit';
 import {build} from './style-builder';
-import {BlockProps} from './types';
+import {LegacyBlockProps} from './types';
 
-const getStyleFromProps = (props: BlockProps & {theme: Theme}) => {
+const getStyleFromProps = (props: LegacyBlockProps & {theme: Theme}) => {
   const {breakpoints, colors, typePresets, sizing} = props.theme;
 
   const getColor = (color: ColorKeys | string) =>
@@ -227,7 +227,7 @@ const getStyleFromProps = (props: BlockProps & {theme: Theme}) => {
     .value();
 };
 
-export const Block = (styled.div(
+export const LegacyBlock = (styled.div(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   getStyleFromProps as any,
-) as unknown) as StyledComponent<BlockProps, {}, Theme>;
+) as unknown) as StyledComponent<LegacyBlockProps, {}, Theme>;

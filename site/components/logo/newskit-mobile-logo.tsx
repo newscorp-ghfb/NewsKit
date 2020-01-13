@@ -12,8 +12,8 @@ import {
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
-  width: ${getSizingFromTheme('spacingSize070')};
-  height: ${getSizingFromTheme('spacingSize070')};
+  width: ${getSizingFromTheme('sizing070')};
+  height: ${getSizingFromTheme('sizing070')};
   overflow: hidden;
 `;
 

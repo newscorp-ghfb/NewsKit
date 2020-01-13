@@ -11,14 +11,14 @@ export const component = () => (
     <Divider $border="borderWidth030" />
     <Divider $color="interface050" />
     <Divider $color="interface050" $border="borderWidth030" />
-    <Divider $marginLeft="spacingSize080" />
-    <Divider $marginRight="spacingSize080" />
-    <Divider $marginLeft="spacingSize080" $marginRight="spacingSize080" />
+    <Divider $marginLeft="sizing080" />
+    <Divider $marginRight="sizing080" />
+    <Divider $marginLeft="sizing080" $marginRight="sizing080" />
     <Divider
-      $marginTop="spacingSize080"
-      $marginRight="spacingSize080"
-      $marginBottom="spacingSize080"
-      $marginLeft="spacingSize080"
+      $marginTop="sizing080"
+      $marginRight="sizing080"
+      $marginBottom="sizing080"
+      $marginLeft="sizing080"
     />
   </React.Fragment>
 );

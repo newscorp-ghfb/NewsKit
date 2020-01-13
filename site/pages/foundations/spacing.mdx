@@ -1,5 +1,5 @@
 import Layout from '../../components/layout';
-import {Block} from '../../components/block';
+import {LegacyBlock} from '../../components/legacy-block';
 import {Image} from 'newskit';
 
 export default Layout;
@@ -14,33 +14,34 @@ Our system is built on a 4px baseline grid and we have spacing tokens available 
 Avoid using generic space tokens in favour of more specific options such as inset, squish, stretch, stack, and inline options described below.
 However, when established concepts don’t meet your needs – or you are overriding or extending a concept for a special case – use these recognisable, generic variables to persist spatial concepts and maintenance in code.
 
-<Block $marginBottom="sizing05" $maxWidth="760px">
+<LegacyBlock $marginBottom="sizing05" $maxWidth="760px">
     <Image src="/static/examples/spacing/generic.png" alt="Generic Spacing" />
-</Block>
+</LegacyBlock>
 
 | Token          |                      Px Value                      |  Rem Value   |
 | -------------- | :------------------------------------------------: | :----------: |
-| spacingSize010 |                        4px                         |    0.25      |
-| spacingSize020 |                        8px                         |    0.5       |
-| spacingSize030 |                       12px                         |    0.75      |
-| spacingSize040 |                       16px                         |    1         |
-| spacingSize050 |                       24px                         |    1.5       |
-| spacingSize060 |                       32px                         |    2         |
-| spacingSize070 |                       40px                         |    2.5       |
-| spacingSize080 |                       48px                         |    3         |
-| spacingSize090 |                       64px                         |    4         |
-| spacingSize100 |                       80px                         |    5         |
-| spacingSize110 |                      120px                         |    7.5       |
-| spacingSize120 |                      160px                         |    10        |
+| sizing000 |                        0px                         |    0      |
+| sizing010 |                        4px                         |    0.25      |
+| sizing020 |                        8px                         |    0.5       |
+| sizing030 |                       12px                         |    0.75      |
+| sizing040 |                       16px                         |    1         |
+| sizing050 |                       24px                         |    1.5       |
+| sizing060 |                       32px                         |    2         |
+| sizing070 |                       40px                         |    2.5       |
+| sizing080 |                       48px                         |    3         |
+| sizing090 |                       64px                         |    4         |
+| sizing100 |                       80px                         |    5         |
+| sizing110 |                      120px                         |    7.5       |
+| sizing120 |                      160px                         |    10        |
 
 ## Inset Spacing Tokens
 
 An inset is the space within a container from which elements —typography, images, icons, and more — are separated from the edge.
 By default, a component’s inset should be equal on all four sides.
 
-<Block $marginBottom="sizing05" $maxWidth="760px">
+<LegacyBlock $marginBottom="sizing05" $maxWidth="760px">
     <Image src="/static/examples/spacing/inset1.png" alt="Inset Spacing" />
-</Block>
+</LegacyBlock>
 
 | Token           |                      Px Value                      |  Rem Value   |
 | --------------- | :------------------------------------------------: | :----------: |
@@ -59,9 +60,9 @@ Apply a inset spacing token to the padding property.
 
 A squish inset reduces top and bottom padding relative to the default inset space.
 
-<Block $marginBottom="sizing05" $maxWidth="760px">
+<LegacyBlock $marginBottom="sizing05" $maxWidth="760px">
     <Image src="/static/examples/spacing/Squish-Inset.png" alt="Squish Spacing" />
-</Block>
+</LegacyBlock>
 
 | Token                 |                      Px Value                      |  Rem Value   |
 | --------------------- | :------------------------------------------------: | :----------: |
@@ -78,9 +79,9 @@ Apply a squish inset spacing token to the padding property.
 
 A stretched inset increases top and bottom padding relative to the default inset space.
 
-<Block $marginBottom="sizing05" $maxWidth="760px">
+<LegacyBlock $marginBottom="sizing05" $maxWidth="760px">
     <Image src="/static/examples/spacing/Stretch-Inset.png" alt="Stretch Spacing" />
-</Block>
+</LegacyBlock>
 
 | Token                  |                      Px Value                      |  Rem Value   |
 | ---------------------- | :------------------------------------------------: | :----------: |
@@ -97,9 +98,9 @@ Apply a stretch inset spacing token to the padding property.
 
 Use a stacking value to separate block components arranged vertically in a column. The last component in a stack should omit this space.
 
-<Block $marginBottom="sizing05" $maxWidth="760px">
+<LegacyBlock $marginBottom="sizing05" $maxWidth="760px">
     <Image src="/static/examples/spacing/Stacking.png" alt="Stacking Spacing" />
-</Block>
+</LegacyBlock>
 
 | Token         |                      Px Value                       |  Rem Value   |
 | ------------- | :-------------------------------------------------: | :----------: |
@@ -123,9 +124,9 @@ Apply stacking spacing tokens to the margin property.
 
 Use inline spacing variable tokens to separate inline elements arranged horizontally and that may wrap on the right. The last component in an inline set should omit this space.
 
-<Block $marginBottom="sizing05" $maxWidth="760px">
+<LegacyBlock $marginBottom="sizing05" $maxWidth="760px">
     <Image src="/static/examples/spacing/Inline.png" alt="Inline Spacing" />
-</Block>
+</LegacyBlock>
 
 | Token            |                      Px Value                      |  Rem Value   |
 | ---------------- | :------------------------------------------------: | :----------: |

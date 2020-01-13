@@ -2,7 +2,7 @@ import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import Prop from '../../components/prop';
 import {CodeFromFile} from '../../components/code';
-import {Block} from '../../components/block';
+import {LegacyBlock} from '../../components/legacy-block';
 
 import {Consent} from 'newskit';
 
@@ -24,7 +24,7 @@ To utilise this component you will need to have a [Sourcepoint](https://www.sour
 
 ## Props
 
-<Block $marginTop='sizing040'>
+<LegacyBlock $marginTop='sizing040'>
   <Prop required name='accountId' type='string'>
     Your sourcepoint account id.
   </Prop>
@@ -34,7 +34,7 @@ To utilise this component you will need to have a [Sourcepoint](https://www.sour
   <Prop name='waitForConsent' type='boolean' default="true">
     When true (the default value), the consent component will cause prebid.js to wait for user consent to be provided before it initialises.
   </Prop>
-</Block>
+</LegacyBlock>
 
 # AMP
 
@@ -46,7 +46,7 @@ Note the use of the AMP `Head` component. The `Consent` component must be used a
 
 ## Props With AMP
 
-<Block $marginTop='sizing040'>
+<LegacyBlock $marginTop='sizing040'>
   <Prop required name='accountId' type='string'>
     Your sourcepoint account id.
   </Prop>
@@ -59,4 +59,4 @@ Note the use of the AMP `Head` component. The `Consent` component must be used a
   <Prop name='postPromptUI' type='string' default="privacy-settings-prompt">
     This is the reference to  on-page element that will display after a user has provided consent. When this element appears a user can click on it to change their consent preferences.
   </Prop>
-</Block>
+</LegacyBlock>

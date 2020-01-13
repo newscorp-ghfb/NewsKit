@@ -6,7 +6,7 @@ import {
   css,
   getColorFromTheme,
 } from 'newskit';
-import {Block} from '../../block';
+import {LegacyBlock} from '../../legacy-block';
 import {KnobContainer, StyledTitle, getHash} from './common';
 
 export interface MultiChoiceKnobOptions {
@@ -88,7 +88,7 @@ export const MultiChoiceKnob: React.FC<MultiChoiceKnobProps> = ({
   const hash = getHash();
   return (
     <KnobContainer>
-      <Block $display="inline" $position="relative">
+      <LegacyBlock $display="inline" $position="relative">
         <StyledFieldset>
           <StyledLegend>{name}</StyledLegend>
           {options.map(({value, label}) => {
@@ -109,7 +109,7 @@ export const MultiChoiceKnob: React.FC<MultiChoiceKnobProps> = ({
             );
           })}
         </StyledFieldset>
-      </Block>
+      </LegacyBlock>
     </KnobContainer>
   );
 };

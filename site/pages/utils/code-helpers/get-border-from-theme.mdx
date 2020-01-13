@@ -1,4 +1,4 @@
-import {Block} from '../../../components/block';
+import {LegacyBlock} from '../../../components/legacy-block';
 import Layout from '../../../components/layout';
 import {Code, CodeFromFile} from '../../../components/code';
 import Prop from '../../../components/prop';
@@ -17,7 +17,7 @@ Retrieve a border token from the current theme. Border tokens are CSS values to 
 
 ## Parameters
 
-<Block $marginTop='sizing040'>
+<LegacyBlock $marginTop='sizing040'>
   <Prop name='defaultToken' type='ThemeToken'>
     Is the name of the border token to be retrieved. If provided, it is used as an object key on the border section of the theme to get the token value.
   </Prop>
@@ -27,7 +27,7 @@ Retrieve a border token from the current theme. Border tokens are CSS values to 
   <Prop name='props' type='Props'>
     Is the props of the component including the theme. If the function is used inside a styled component template literal, or a [css block](/utils/css), [Emotion](https://emotion.sh/docs/) will call the function first with the component props passed in.
   </Prop>
-</Block>
+</LegacyBlock>
 
 ## Return value
 

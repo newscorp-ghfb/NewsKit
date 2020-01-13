@@ -6,7 +6,7 @@ import {
   ColorKeys,
   getSizingFromTheme,
 } from 'newskit';
-import {Block} from '../block';
+import {LegacyBlock} from '../legacy-block';
 import {Header, ExampleWrapper} from './common';
 
 const getBrightness = (rgbString: string) => {
@@ -34,7 +34,7 @@ export const TextBoxSwatch = styled.span<{
 }>`
   display: inline-block;
   width: 192px;
-  height: ${getSizingFromTheme('spacingSize060')};
+  height: ${getSizingFromTheme('sizing060')};
   border-radius: ${({theme}) => theme.borderRadius.semiRounded.sizing040};
   background-color: ${({theme, themeColor}) => theme.colors[themeColor]};
   color: ${({theme, dark}) =>
@@ -42,7 +42,7 @@ export const TextBoxSwatch = styled.span<{
 
   ::before {
     content: '${({theme, themeColor}) => theme.colors[themeColor]}';
-    padding: ${getSizingFromTheme('spacingSize030')};
+    padding: ${getSizingFromTheme('sizing030')};
     line-height: 1.9;
     text-transform: ${({theme, themeColor}) =>
       theme.colors[themeColor].startsWith('#') ? 'uppercase' : null};
@@ -50,9 +50,9 @@ export const TextBoxSwatch = styled.span<{
 `;
 
 const ColorPreview = ({colors}: {colors: ColorPrimitives}): JSX.Element => (
-  <Block $display="flex" $flexWrap>
+  <LegacyBlock $display="flex" $flexWrap>
     {Object.entries(colors).map(([key, value]) => (
-      <Block
+      <LegacyBlock
         key={key + value}
         $width="15rem"
         $margin="sizing050"
@@ -60,21 +60,21 @@ const ColorPreview = ({colors}: {colors: ColorPrimitives}): JSX.Element => (
         $alignItems="center"
       >
         <CircleSwatch color={value} />
-        <Block $display="inline" $marginLeft="sizing030">
+        <LegacyBlock $display="inline" $marginLeft="sizing030">
           {key}
-        </Block>
-      </Block>
+        </LegacyBlock>
+      </LegacyBlock>
     ))}
-  </Block>
+  </LegacyBlock>
 );
 
 const Colors = (): JSX.Element => (
-  <Block $font="body020">
+  <LegacyBlock $font="body020">
     <Header>Color Primitives</Header>
     <ExampleWrapper>
       <ColorPreview colors={colorPrimitives} />
     </ExampleWrapper>
-  </Block>
+  </LegacyBlock>
 );
 
 export default Colors;

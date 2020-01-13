@@ -1,7 +1,7 @@
 import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import Prop from '../../components/prop';
-import {Block} from '../../components/block';
+import {LegacyBlock} from '../../components/legacy-block';
 
 import {
   TagList,
@@ -26,7 +26,7 @@ A tag list can be used anywhere that quick links to related content could be ben
 
 ## Props
 
-<Block $marginTop="sizing040">
+<LegacyBlock $marginTop="sizing040">
   <Prop name="tagData" type="array" required>
     An array of tag data to populate the child Tag components. Tag data objects
     must contain a label, and an optional href. See playground for example.
@@ -55,7 +55,7 @@ A tag list can be used anywhere that quick links to related content could be ben
   <Prop name="$spacing" type="SizingKeys">
     The amount of space added to the right of each tag.
   </Prop>
-</Block>
+</LegacyBlock>
 
 ## Playground
 
@@ -144,21 +144,21 @@ A tag list can be used anywhere that quick links to related content could be ben
       propName: '$spacing',
       options: [
         {
-          label: 'spacingSize020',
-          value: 'spacingSize020',
+          label: 'sizing020',
+          value: 'sizing020',
         },
         {
-          label: 'spacingSize030',
-          value: 'spacingSize030',
+          label: 'sizing030',
+          value: 'sizing030',
         },
         {
-          label: 'spacingSize040',
-          value: 'spacingSize040',
+          label: 'sizing040',
+          value: 'sizing040',
           isDefault: true,
         },
         {
-          label: 'spacingSize050',
-          value: 'spacingSize050',
+          label: 'sizing050',
+          value: 'sizing050',
         },
       ],
     }

@@ -2,7 +2,7 @@ import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import Prop from '../../components/prop';
 import {CodeFromFile} from '../../components/code';
-import {Block} from '../../components/block';
+import {LegacyBlock} from '../../components/legacy-block';
 
 import {Consent} from 'newskit';
 
@@ -28,7 +28,7 @@ The consent settings link supports any prop valid on the [Link](/components/link
 
 Custom and required props are detailed below:
 
-<Block $marginTop="sizing040">
+<LegacyBlock $marginTop="sizing040">
   <Prop required name="siteId" type="string">
     Your Sourcepoint site id.
   </Prop>
@@ -38,4 +38,4 @@ Custom and required props are detailed below:
   <Prop name="children" type="ReactNode" default="Manage Consent">
     The content of the link. Can be undefined and left to default text.
   </Prop>
-</Block>
+</LegacyBlock>

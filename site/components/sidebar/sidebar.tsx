@@ -7,7 +7,7 @@ import {
   styled,
 } from 'newskit';
 
-import {Block} from '../block';
+import {LegacyBlock} from '../legacy-block';
 
 import {Overlay} from '../overlay';
 import {SidebarNav} from './sidebar-navigation';
@@ -50,18 +50,18 @@ const SidebarHeader = styled.div`
   display: flex;
   justify-content: space-between;
   background-color: ${getColorFromTheme('interface020')};
-  padding-left: ${getSizingFromTheme('spacingSize040')};
-  padding-right: ${getSizingFromTheme('spacingSize040')};
-  padding-top: ${getSizingFromTheme('spacingSize020')};
-  padding-bottom: ${getSizingFromTheme('spacingSize020')};
+  padding-left: ${getSizingFromTheme('sizing040')};
+  padding-right: ${getSizingFromTheme('sizing040')};
+  padding-top: ${getSizingFromTheme('sizing020')};
+  padding-bottom: ${getSizingFromTheme('sizing020')};
   width: 100%;
   position: sticky;
   top: 0;
 
   ${getMediaQueryFromTheme('md')} {
-    padding-top: ${getSizingFromTheme('spacingSize030')};
-    padding-bottom: ${getSizingFromTheme('spacingSize030')};
-    margin-bottom: ${getSizingFromTheme('spacingSize060')};
+    padding-top: ${getSizingFromTheme('sizing030')};
+    padding-bottom: ${getSizingFromTheme('sizing030')};
+    margin-bottom: ${getSizingFromTheme('sizing060')};
   }
 `;
 
@@ -82,10 +82,10 @@ const Sidebar: React.FC<SidebarProps> = ({
     >
       <SidebarHeader>
         <Link href="/">
-          <NewsKitLogo $color="inkBase" $size="spacingSize120" />
+          <NewsKitLogo $color="inkBase" $size="sizing120" />
         </Link>
         <Visible xs sm>
-          <Block $display="flex" $height="100%">
+          <LegacyBlock $display="flex" $height="100%">
             <IconWrapper
               onClick={handleSidebarClick}
               onKeyDown={handleEnterKeyPress(handleSidebarClick)}
@@ -94,7 +94,7 @@ const Sidebar: React.FC<SidebarProps> = ({
             >
               <CloseIcon />
             </IconWrapper>
-          </Block>
+          </LegacyBlock>
         </Visible>
       </SidebarHeader>
       <SidebarNav path={path} />

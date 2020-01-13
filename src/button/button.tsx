@@ -27,12 +27,12 @@ const ButtonElement = styled.button<ButtonProps>`
       padding: 0 ${theme.sizing.sizing020};
       height: ${theme.sizing.sizing060};
       /* Extend touchpoint area */
-      margin: ${theme.sizing.spacingSize020} 0;
+      margin: ${theme.sizing.sizing020} 0;
       ::before {
         content: '';
         position: absolute;
         left: 0;
-        top: -${theme.sizing.spacingSize020};
+        top: -${theme.sizing.sizing020};
         width: 100%;
         height: ${theme.sizing.sizing080};
       }

@@ -2,7 +2,7 @@ import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
-import {Block} from '../../components/block';
+import {LegacyBlock} from '../../components/legacy-block';
 
 import {Button, ButtonSize, ButtonShape} from 'newskit';
 
@@ -16,14 +16,14 @@ A styled button element with customisable shape and size.
 
 ## Props
 
-<Block marginTop="sizing040">
+<LegacyBlock marginTop="sizing040">
   <Prop name="$size" type="ButtonSize">
     Set the size of the button. Possible values: Small, Medium and Large. Default styling: Small.
   </Prop>
   <Prop name="$shape" type="ButtonShape">
     Set the shape of the button. Possible values: Square and Rounded. Default styling: Square.
   </Prop>
-</Block>
+</LegacyBlock>
 
 ## Playground
 

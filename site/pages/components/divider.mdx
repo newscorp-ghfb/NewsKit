@@ -1,6 +1,6 @@
 import Layout from '../../components/layout';
 import Playground from '../../components/playground';
-import {Block} from '../../components/block';
+import {LegacyBlock} from '../../components/legacy-block';
 import {Prop} from '../../components/prop';
 
 import {Divider, BorderKeys, ColorKeys, SizingKeys} from 'newskit';
@@ -18,7 +18,7 @@ The purpose of this component is to visually separate elements of the content.
 <Playground
   componentName="Divider"
   newskitPath="/divider"
-  component={(state) => <Block $width="100%"><Divider {...state} /></Block>}
+  component={(state) => <LegacyBlock $width="100%"><Divider {...state} /></LegacyBlock>}
   knobs={[
     {
       name: 'Color',
@@ -68,16 +68,16 @@ The purpose of this component is to visually separate elements of the content.
           isDefault: true,
         },
         {
-          label: 'spacingSize040',
-          value: 'spacingSize040',
+          label: 'sizing040',
+          value: 'sizing040',
         },
         {
-          label: 'spacingSize060',
-          value: 'spacingSize060',
+          label: 'sizing060',
+          value: 'sizing060',
         },
         {
-          label: 'spacingSize100',
-          value: 'spacingSize100',
+          label: 'sizing100',
+          value: 'sizing100',
         }
       ],
     },
@@ -91,16 +91,16 @@ The purpose of this component is to visually separate elements of the content.
           isDefault: true,
         },
         {
-          label: 'spacingSize040',
-          value: 'spacingSize040',
+          label: 'sizing040',
+          value: 'sizing040',
         },
         {
-          label: 'spacingSize060',
-          value: 'spacingSize060',
+          label: 'sizing060',
+          value: 'sizing060',
         },
         {
-          label: 'spacingSize100',
-          value: 'spacingSize100',
+          label: 'sizing100',
+          value: 'sizing100',
         }
       ],
     },
@@ -114,16 +114,16 @@ The purpose of this component is to visually separate elements of the content.
           isDefault: true,
         },
         {
-          label: 'spacingSize040',
-          value: 'spacingSize040',
+          label: 'sizing040',
+          value: 'sizing040',
         },
         {
-          label: 'spacingSize060',
-          value: 'spacingSize060',
+          label: 'sizing060',
+          value: 'sizing060',
         },
         {
-          label: 'spacingSize100',
-          value: 'spacingSize100',
+          label: 'sizing100',
+          value: 'sizing100',
         }
       ],
     },
@@ -137,16 +137,16 @@ The purpose of this component is to visually separate elements of the content.
           isDefault: true,
         },
         {
-          label: 'spacingSize040',
-          value: 'spacingSize040',
+          label: 'sizing040',
+          value: 'sizing040',
         },
         {
-          label: 'spacingSize060',
-          value: 'spacingSize060',
+          label: 'sizing060',
+          value: 'sizing060',
         },
         {
-          label: 'spacingSize100',
-          value: 'spacingSize100',
+          label: 'sizing100',
+          value: 'sizing100',
         }
       ],
     },
@@ -157,7 +157,7 @@ The purpose of this component is to visually separate elements of the content.
 
 Divider have a number of props to facilitate a variety of uses. Custom and required props are detailed below:
 
-<Block marginTop="sizing05">
+<LegacyBlock marginTop="sizing05">
   <Prop name="$color" type="ColorKeys">
     If provided, overrides the color of the divider.
   </Prop>
@@ -176,4 +176,4 @@ Divider have a number of props to facilitate a variety of uses. Custom and requi
   <Prop name="$marginLeft" type="SizingKeys">
     Specifies the left offset of the divider.
   </Prop>
-</Block>
+</LegacyBlock>

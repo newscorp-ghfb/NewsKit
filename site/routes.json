@@ -72,6 +72,11 @@
         "id": "/components/tag"
       },
       {
+        "title": "Block",
+        "page": true,
+        "id": "/components/block"
+      },
+      {
         "title": "Link",
         "page": true,
         "id": "/components/link"

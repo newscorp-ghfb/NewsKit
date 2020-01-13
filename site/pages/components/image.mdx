@@ -2,7 +2,7 @@ import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
-import {Block} from '../../components/block';
+import {LegacyBlock} from '../../components/legacy-block';
 
 import {Image, Link} from 'newskit';
 
@@ -12,11 +12,11 @@ export default Layout;
 
 ## Overview
 Simple component for adding images.
-The image component provides a `<figure>` and an `<img>` element inside it to place the image in the dom. 
+The image component provides a `<figure>` and an `<img>` element inside it to place the image in the dom.
 
 ## Props
 
-<Block marginTop="sizing040">
+<LegacyBlock marginTop="sizing040">
   <Prop name="src" type="string">
     Image file path that is used directly in the <code>src</code> attribute of the internal <code>img</code> element.
   </Prop>
@@ -24,15 +24,15 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
     Image description that is used directly in the <code>alt</code> attribute of the internal <code>img</code> element.
   </Prop>
   <Prop name="aspectWidth" type="string|number">
-    Used in combination with `aspectHeight` to calculate the aspect ratio for the image. Generally supply the width px value if know, if not supply horizontal aspect ratio. Both aspectWidth and aspectRatio should be supplied in a consistent manner. 
+    Used in combination with `aspectHeight` to calculate the aspect ratio for the image. Generally supply the width px value if know, if not supply horizontal aspect ratio. Both aspectWidth and aspectRatio should be supplied in a consistent manner.
   </Prop>
   <Prop name="aspectHeight" type="string|number">
-    Used in combination with `aspectWidth` to calculate the aspect ratio for the image. Generally supply the height px value if know, if not supply vertical aspect ratio. Both aspectWidth and aspectRatio should be supplied in a consistent manner. 
+    Used in combination with `aspectWidth` to calculate the aspect ratio for the image. Generally supply the height px value if know, if not supply vertical aspect ratio. Both aspectWidth and aspectRatio should be supplied in a consistent manner.
   </Prop>
   <Prop name="hideLoadingIcon" type="boolean" default={false} >
     Hide the loading icon whilst the image is loading.
   </Prop>
-</Block>
+</LegacyBlock>
 
 ## Playground
 

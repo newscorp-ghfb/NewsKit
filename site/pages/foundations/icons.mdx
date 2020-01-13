@@ -3,7 +3,7 @@ import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {DollarPropRenderer as Icon} from '../../components/dollar-prop-renderer';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
-import {Block} from '../../components/block';
+import {LegacyBlock} from '../../components/legacy-block';
 
 import {
   Comment,
@@ -54,7 +54,7 @@ Icons can be used to enhance other elements and content, as well as used inside 
 
 Icons must have a size specified, and some also support an optional colour override.
 
-<Block $marginTop="sizing040">
+<LegacyBlock $marginTop="sizing040">
   <Prop name="size" type="IconSizeKeys" required>
     A sizing token must be provided.
   </Prop>
@@ -67,7 +67,7 @@ Icons must have a size specified, and some also support an optional colour overr
   <Prop name="title" type="string">
     This is an optional title property to override the existing svg title, set in each icon.
   </Prop>
-</Block>
+</LegacyBlock>
 
 ## Playground
 

@@ -113,7 +113,7 @@ const Article: React.FC = () => (
             <TagList
               $size="small"
               $shape="semiRounded"
-              $spacing="spacingSize040"
+              $spacing="sizing040"
               tagData={[
                 {
                   label: 'Cooking',

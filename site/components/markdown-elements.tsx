@@ -10,7 +10,7 @@ import {
   TypePresetKeys,
 } from 'newskit';
 import Link from 'next/link';
-import {Block} from './block';
+import {LegacyBlock} from './legacy-block';
 import slugify from '../helpers/slugify';
 
 interface TextProps {
@@ -43,7 +43,9 @@ const getText = (children: any) => {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const cleanAnchor = (anchor: any) => slugify(getText(anchor));
 
-const Code: React.FC<TextProps> = ({children}) => <Block>{children}</Block>;
+const Code: React.FC<TextProps> = ({children}) => (
+  <LegacyBlock>{children}</LegacyBlock>
+);
 
 interface HeadingContainerProps {
   as: React.ElementType;
@@ -61,7 +63,7 @@ interface HeadingContainerProps {
 const TextElement = styled.span<HeadingContainerProps>`
   ${getTypePresetFromTheme(undefined, 'font')};
   color: ${getColorFromTheme('inkBase')};
-  margin-bottom: ${getSizingFromTheme('spacingSize050')};
+  margin-bottom: ${getSizingFromTheme('sizing050')};
   font-weight: ${({weight}) => weight || null};
   line-height: ${({lineHeight}) => lineHeight || null};
   font-size: ${({size}) => size || null};
@@ -161,8 +163,8 @@ export const Table = styled.table`
 
   td,
   th {
-    padding: ${getSizingFromTheme('spacingSize020')}
-      ${getSizingFromTheme('spacingSize030')};
+    padding: ${getSizingFromTheme('sizing020')}
+      ${getSizingFromTheme('sizing030')};
     border-top: none;
   }
 `;

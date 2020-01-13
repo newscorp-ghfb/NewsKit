@@ -14,7 +14,7 @@ export interface HeadingProps {
 export const Heading1 = styled.h1<HeadingProps>`
   ${getTypePresetFromTheme('heading070')};
   color: ${getColorFromTheme('inkContrast')};
-  margin: 0 0 ${getSizingFromTheme('spacingSize050')} 0;
+  margin: 0 0 ${getSizingFromTheme('sizing050')} 0;
   font-weight: ${({theme, $bold}) =>
     $bold ? theme.fonts.fontWeight040 : null};
 `;
@@ -24,7 +24,7 @@ export const H1 = Heading1;
 export const Heading2 = styled.h2<HeadingProps>`
   ${getTypePresetFromTheme('heading050')};
   color: ${getColorFromTheme('inkContrast')};
-  margin: 0 0 ${getSizingFromTheme('spacingSize040')} 0;
+  margin: 0 0 ${getSizingFromTheme('sizing040')} 0;
   font-weight: ${({theme, $bold}) =>
     $bold ? theme.fonts.fontWeight040 : null};
 `;
@@ -34,7 +34,7 @@ export const H2 = Heading2;
 export const Heading3 = styled.h3<HeadingProps>`
   ${getTypePresetFromTheme('heading030')};
   color: ${getColorFromTheme('inkContrast')};
-  margin: 0 0 ${getSizingFromTheme('spacingSize030')} 0;
+  margin: 0 0 ${getSizingFromTheme('sizing030')} 0;
   font-weight: ${({theme, $bold}) =>
     $bold ? theme.fonts.fontWeight040 : null};
 `;
@@ -44,7 +44,7 @@ export const H3 = Heading3;
 export const Heading4 = styled.h4<HeadingProps>`
   ${getTypePresetFromTheme('heading020')};
   color: ${getColorFromTheme('inkContrast')};
-  margin: 0 0 ${getSizingFromTheme('spacingSize020')} 0;
+  margin: 0 0 ${getSizingFromTheme('sizing020')} 0;
   font-weight: ${({theme, $bold}) =>
     $bold ? theme.fonts.fontWeight040 : null};
 `;
@@ -55,7 +55,7 @@ export const Heading5 = styled.h5<HeadingProps>`
   ${getTypePresetFromTheme('heading010')};
   ${getFontSizingFromTheme('font500', 'fontLineHeight020')};
   color: ${getColorFromTheme('inkContrast')};
-  margin: 0 0 ${getSizingFromTheme('spacingSize020')} 0;
+  margin: 0 0 ${getSizingFromTheme('sizing020')} 0;
   font-weight: ${({theme, $bold}) =>
     $bold ? theme.fonts.fontWeight040 : null};
 `;
@@ -65,7 +65,7 @@ export const H5 = Heading5;
 export const Heading6 = styled.h6<HeadingProps>`
   ${getTypePresetFromTheme('label010')};
   color: ${getColorFromTheme('inkContrast')};
-  margin: 0 0 ${getSizingFromTheme('spacingSize020')} 0;
+  margin: 0 0 ${getSizingFromTheme('sizing020')} 0;
   font-weight: ${({theme, $bold}) =>
     $bold ? theme.fonts.fontWeight040 : null};
 `;

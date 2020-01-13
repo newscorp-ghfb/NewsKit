@@ -41,8 +41,8 @@ const BodyWrapper = styled.main`
 `;
 
 const ContentWrapper = styled.div`
-  padding-top: ${getSizingFromTheme('spacingSize060')};
-  padding-bottom: ${getSizingFromTheme('spacingSize060')};
+  padding-top: ${getSizingFromTheme('sizing060')};
+  padding-bottom: ${getSizingFromTheme('sizing060')};
 `;
 
 interface LayoutProps {

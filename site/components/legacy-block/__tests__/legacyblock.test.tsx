@@ -1,18 +1,18 @@
 import {renderToFragmentWithTheme} from 'newskit/test/test-utils';
-import {Block} from '..';
-import {BlockProps} from '../types';
+import {LegacyBlock} from '..';
+import {LegacyBlockProps} from '../types';
 
 describe('Block', () => {
   describe('with no props', () => {
     test('renders an unstyled div', () => {
-      const fragment = renderToFragmentWithTheme(Block);
+      const fragment = renderToFragmentWithTheme(LegacyBlock);
       expect(fragment).toMatchSnapshot();
     });
   });
 
   describe('with simple style props', () => {
     test('renders a styled div', () => {
-      const blockProps: BlockProps = {
+      const blockProps: LegacyBlockProps = {
         $color: 'inkContrast',
         $backgroundColor: 'interactive010Pressed',
         $font: 'body010',
@@ -55,14 +55,14 @@ describe('Block', () => {
         $overflow: 'hidden',
       };
 
-      const fragment = renderToFragmentWithTheme(Block, blockProps);
+      const fragment = renderToFragmentWithTheme(LegacyBlock, blockProps);
       expect(fragment).toMatchSnapshot();
     });
   });
 
   describe('with responsive style props', () => {
     test('renders a responsive styled div', () => {
-      const blockProps: BlockProps = {
+      const blockProps: LegacyBlockProps = {
         $color: ['inkContrast', 'inkBase', 'inkSubtle'],
         $backgroundColor: ['interface010', 'interface020', 'interface030'],
         $font: ['body010', 'body020', 'body030'],
@@ -105,14 +105,14 @@ describe('Block', () => {
         $overflow: 'hidden',
       };
 
-      const fragment = renderToFragmentWithTheme(Block, blockProps);
+      const fragment = renderToFragmentWithTheme(LegacyBlock, blockProps);
       expect(fragment).toMatchSnapshot();
     });
   });
 
   describe('with non-theme values for width and height', () => {
     test('uses the actual values', () => {
-      const blockProps: BlockProps = {
+      const blockProps: LegacyBlockProps = {
         $borderTop: '1px',
         $borderRight: '2px',
         $borderBottom: '3px',
@@ -132,7 +132,7 @@ describe('Block', () => {
         $left: '40px',
       };
 
-      const fragment = renderToFragmentWithTheme(Block, blockProps);
+      const fragment = renderToFragmentWithTheme(LegacyBlock, blockProps);
       expect(fragment).toMatchSnapshot();
     });
   });
@@ -140,11 +140,11 @@ describe('Block', () => {
   ['scrollX', 'scrollY'].forEach(overflow => {
     describe(`with overflow set to ${overflow}`, () => {
       test('renders no overflow prop', () => {
-        const blockProps: BlockProps = {
+        const blockProps: LegacyBlockProps = {
           $overflow: overflow as 'scrollX' | 'scrollY',
         };
 
-        const fragment = renderToFragmentWithTheme(Block, blockProps);
+        const fragment = renderToFragmentWithTheme(LegacyBlock, blockProps);
         expect(fragment).toMatchSnapshot();
       });
     });
@@ -152,7 +152,7 @@ describe('Block', () => {
 
   describe(`with 'as' prop`, () => {
     test('renders the specified html element', () => {
-      const fragment = renderToFragmentWithTheme(Block, {as: 'select'});
+      const fragment = renderToFragmentWithTheme(LegacyBlock, {as: 'select'});
       expect(fragment).toMatchSnapshot();
     });
   });

@@ -34,7 +34,7 @@ export const StyledLabel = styled.label`
 export const StyledInput = styled.input`
   ${getTypePresetFromTheme('body010')};
   display: block;
-  padding: ${getSizingFromTheme('spacingSize020')};
+  padding: ${getSizingFromTheme('sizing020')};
   background-color: ${getColorFromTheme('interface020')};
   color: ${getColorFromTheme('inkContrast')};
 

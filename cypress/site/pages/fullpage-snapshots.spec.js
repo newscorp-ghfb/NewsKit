@@ -12,6 +12,7 @@ const routes = {
   articleByline: '/components/article-byline',
   articleHeadline: '/components/article-headline',
   articleStandfirst: '/components/article-standfirst',
+  block: '/components/block',
   orderedList: '/components/ordered-list',
   unorderedList: '/components/unordered-list',
   // consent: '/components/consent',

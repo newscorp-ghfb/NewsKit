@@ -1,8 +1,8 @@
 import {styled, getSizingFromTheme, getTypePresetFromTheme} from 'newskit';
 
 export const KnobContainer = styled.div`
-  margin-bottom: ${getSizingFromTheme('spacingSize020')};
-  margin-right: ${getSizingFromTheme('spacingSize020')};
+  margin-bottom: ${getSizingFromTheme('sizing020')};
+  margin-right: ${getSizingFromTheme('sizing020')};
   width: 100%;
 `;
 

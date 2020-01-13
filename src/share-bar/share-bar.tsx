@@ -23,12 +23,12 @@ const StyledHeader = styled.span`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-right: ${getSizingFromTheme('spacingSize040')};
+  margin-right: ${getSizingFromTheme('sizing040')};
 `;
 
 const StyledLi = styled.li`
   list-style-type: none;
-  margin-right: ${getSizingFromTheme('spacingSize040')};
+  margin-right: ${getSizingFromTheme('sizing040')};
 `;
 
 function isValidIcon(item: Item | React.ComponentType): item is Item {
@@ -54,9 +54,9 @@ const renderItems = (items: (Item | React.ComponentType)[] = []) =>
 const Wrapper = styled.div`
   width: 100%;
   background-color: ${getColorFromTheme('shareBarBackground')};
-  padding-top: ${getSizingFromTheme('spacingSize020')};
-  padding-bottom: ${getSizingFromTheme('spacingSize020')};
-  padding-left: ${getSizingFromTheme('spacingSize040')};
+  padding-top: ${getSizingFromTheme('sizing020')};
+  padding-bottom: ${getSizingFromTheme('sizing020')};
+  padding-left: ${getSizingFromTheme('sizing040')};
   display: flex;
   box-sizing: border-box;
   ${getMediaQueryFromTheme(undefined, 'sm')} {

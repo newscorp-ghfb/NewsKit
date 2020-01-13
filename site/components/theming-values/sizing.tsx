@@ -5,7 +5,7 @@ import {
   newskitLightTheme,
   styled,
 } from 'newskit';
-import {Block} from '../block';
+import {LegacyBlock} from '../legacy-block';
 import {Header, ExampleWrapper} from './common';
 
 interface StyledSizeBox {
@@ -26,12 +26,12 @@ const StyledSizeBox = styled.div<StyledSizeBox>`
 
 function SizePreview({name, size}: SizePreviewProps): JSX.Element {
   return (
-    <Block $width="250px">
-      <Block $font="body030">
+    <LegacyBlock $width="250px">
+      <LegacyBlock $font="body030">
         {name} ({size})
-      </Block>
+      </LegacyBlock>
       <StyledSizeBox size={size} />
-    </Block>
+    </LegacyBlock>
   );
 }
 

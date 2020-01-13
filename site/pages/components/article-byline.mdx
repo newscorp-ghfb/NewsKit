@@ -2,7 +2,7 @@ import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
-import {Block} from '../../components/block';
+import {LegacyBlock} from '../../components/legacy-block';
 
 import {ArticleByline} from 'newskit';
 
@@ -24,13 +24,13 @@ The byline uses a type preset of `meta02` and inherits its font color from its p
 
 ## Props
 
-<Block $marginTop="sizing040">
+<LegacyBlock $marginTop="sizing040">
   <Prop name="bylineData" type="array" required>
     An array of byline data to populate the byline authors. Byline data objects
     must contain an author string, and can contain optional href and title
     strings. See playground for example.
   </Prop>
-</Block>
+</LegacyBlock>
 
 ## Playground
 

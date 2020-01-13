@@ -7,7 +7,7 @@ import {
   Button,
   ButtonSize,
 } from 'newskit';
-import {Block} from '../../block';
+import {LegacyBlock} from '../../legacy-block';
 import {KnobContainer, StyledTitle} from './common';
 import {TextKnob} from './text-knob';
 
@@ -31,7 +31,7 @@ export const StyledLabel = styled.label`
 export const StyledInput = styled.input`
   ${getTypePresetFromTheme('body010')};
   display: block;
-  padding: ${getSizingFromTheme('spacingSize020')};
+  padding: ${getSizingFromTheme('sizing020')};
   background-color: ${getColorFromTheme('interface020')};
   color: ${getColorFromTheme('inkContrast')};
 
@@ -56,7 +56,7 @@ const renderRow = (
 ) => {
   if (typeof value === 'object') {
     return Object.entries(value as Record<string, string>).map(([k, v]) => (
-      <Block $display="flex" $flexGrow={1} $maxWidth="350px">
+      <LegacyBlock $display="flex" $flexGrow={1} $maxWidth="350px">
         <TextKnob
           key={label + k + length}
           label={k}
@@ -64,13 +64,13 @@ const renderRow = (
           value={v}
           onChange={update(index, k)}
         />
-      </Block>
+      </LegacyBlock>
     ));
   }
 
   if (typeof value === 'string') {
     return (
-      <Block $display="flex" $flexGrow={1} $maxWidth="350px">
+      <LegacyBlock $display="flex" $flexGrow={1} $maxWidth="350px">
         <TextKnob
           key={label + length}
           label={label}
@@ -78,7 +78,7 @@ const renderRow = (
           value={value}
           onChange={update(index)}
         />
-      </Block>
+      </LegacyBlock>
     );
   }
 
@@ -115,7 +115,7 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
   return (
     <KnobContainer data-testid={`${TEST_ID_PREFIX}-${lowercaseLabel}`}>
       <StyledTitle>{label}</StyledTitle>
-      <Block $marginLeft="sizing030">
+      <LegacyBlock $marginLeft="sizing030">
         {values.map((value, i, arr) => {
           if (!value || Array.isArray(value)) {
             // eslint-disable-next-line no-console
@@ -127,9 +127,9 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
 
           const row = renderRow(label, value, i, arr.length, update);
           return row ? (
-            <Block $display="flex">
+            <LegacyBlock $display="flex">
               {row}
-              <Block
+              <LegacyBlock
                 $display="flex"
                 $alignItems="baseline"
                 $flexDirection="column-reverse"
@@ -142,8 +142,8 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
                 >
                   -
                 </Button>
-              </Block>
-            </Block>
+              </LegacyBlock>
+            </LegacyBlock>
           ) : null;
         })}
         <Button
@@ -153,7 +153,7 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
         >
           +
         </Button>
-      </Block>
+      </LegacyBlock>
     </KnobContainer>
   );
 };

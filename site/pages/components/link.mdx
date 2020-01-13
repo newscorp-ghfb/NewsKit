@@ -2,7 +2,7 @@ import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
-import {Block} from '../../components/block';
+import {LegacyBlock} from '../../components/legacy-block';
 
 import {Link} from 'newskit';
 
@@ -33,7 +33,7 @@ The default link component uses the following style tokens, which can be overrid
 
 Links have a number of props to facilitate a variety of uses. Any prop valid on an Anchor HTML element, is also valid on the Link component. Custom and required props are detailed below:
 
-<Block marginTop="sizing040">
+<LegacyBlock marginTop="sizing040">
   <Prop name="children" type="string" required>
     The content of the link is passed as the child of the component.
   </Prop>
@@ -52,7 +52,7 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
   <Prop name="$noUnderline" type="boolean">
     If provided, determines if the link will be underlined.
   </Prop>
-</Block>
+</LegacyBlock>
 
 ## Playground
 

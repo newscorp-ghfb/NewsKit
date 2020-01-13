@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
-import {Block} from './block';
+import {LegacyBlock} from './legacy-block';
 
 interface CodeProps {
   children: string;
@@ -13,11 +13,11 @@ interface CodeFromFileProps {
 }
 
 export const Code: React.FC<CodeProps> = ({language = 'jsx', children}) => (
-  <Block>
+  <LegacyBlock>
     <SyntaxHighlighter language={language} useInlineStyles={false}>
       {children}
     </SyntaxHighlighter>
-  </Block>
+  </LegacyBlock>
 );
 
 export const CodeFromFile: React.FC<CodeFromFileProps> = ({language, path}) => {

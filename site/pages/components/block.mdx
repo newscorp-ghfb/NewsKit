@@ -1,0 +1,83 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {Prop} from '../../components/prop';
+import {LegacyBlock} from '../../components/legacy-block';
+
+import {Block} from 'newskit';
+
+export default Layout;
+
+# Block
+
+## Overview
+
+A Block component is a simple div component that only applies margin using the fixed spacing preset set in the theme.
+For more information on the spacing preset, please refer to page [here](/foundations/spacing).
+
+## Props
+
+<LegacyBlock marginTop="sizing040">
+  <Prop name="$margin" type="MarginPresetKeys">
+    This is a margin prop that only accepts stack and inline preset tokens defined in the spacing theme.
+    see https://developer.mozilla.org/en-US/docs/Web/CSS/margin
+  </Prop>
+  <Prop name="as" type="string">
+    This is a string name of html element that the block can be converted to.
+    Block defaults as a div element, but it can be converted to a span by `as="span"` prop.
+  </Prop>
+</LegacyBlock>
+
+## Playground
+
+<Playground
+  componentName="Block"
+  newskitPath="/block"
+  component={props => (
+    <div>
+      <LegacyBlock $height="sizing060" $width="sizing120" $backgroundColor="buttonFill" />
+      <Block {...props} />
+      <LegacyBlock $height="sizing060" $width="sizing120" $backgroundColor="buttonFill" />
+    </div>
+  )}
+  knobs={[
+    {
+      name: 'Children',
+      propName: 'children',
+      value: 'This is a block',
+    },
+    {
+      name: '$margin',
+      propName: '$margin',
+      options: [
+        {
+          label: 'undefined',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'spaceStack020',
+          value: 'spaceStack020',
+        },
+        {
+          label: 'spaceInline020',
+          value: 'spaceInline020',
+        },
+      ],
+    },
+    {
+      name: 'as',
+      propName: 'as',
+      options: [
+        {
+          label: 'undefined',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'span',
+          value: 'span',
+        },
+      ],
+    }
+  ]}
+/>

@@ -2,7 +2,7 @@ import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
-import {Block} from '../../components/block';
+import {LegacyBlock} from '../../components/legacy-block';
 
 import {DateLine, Link} from 'newskit';
 
@@ -18,7 +18,7 @@ Date formatting is powered by the [date-fns](https://date-fns.org/v2.6.0/docs/fo
 
 ## Props
 
-<Block marginTop="sizing040">
+<LegacyBlock marginTop="sizing040">
   <Prop name="date" type="string">
     Timestamp string of the date to be displayed. Provide this in the ISO8601 format that is understood by the native <Link href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">Date object</Link>.
   </Prop>
@@ -34,7 +34,7 @@ Date formatting is powered by the [date-fns](https://date-fns.org/v2.6.0/docs/fo
   <Prop name="$color" type="ColorKeys">
     Adds custom color to date.
   </Prop>
-</Block>
+</LegacyBlock>
 
 ## Playground
 

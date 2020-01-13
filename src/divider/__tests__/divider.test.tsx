@@ -10,10 +10,10 @@ describe('Divider', () => {
     const fragment = renderToFragmentWithTheme(Divider, {
       $color: 'interface050',
       $border: 'borderWidth030',
-      $marginTop: 'spacingSize040',
-      $marginRight: 'spacingSize090',
-      $marginBottom: 'spacingSize040',
-      $marginLeft: 'spacingSize090',
+      $marginTop: 'sizing040',
+      $marginRight: 'sizing090',
+      $marginBottom: 'sizing040',
+      $marginLeft: 'sizing090',
     });
 
     expect(fragment).toMatchSnapshot();

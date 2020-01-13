@@ -1,7 +1,7 @@
 import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
-import {Block} from '../../components/block';
+import {LegacyBlock} from '../../components/legacy-block';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 
 import {
@@ -32,9 +32,9 @@ The title bar provides context and actions related to a particular section of co
   componentName="TitleBar"
   newskitPath="/title-bar"
   component={state => (
-    <Block $width="100%">
+    <LegacyBlock $width="100%">
       <TitleBar {...state} />
-    </Block>
+    </LegacyBlock>
   )}
   knobs={[
     {
@@ -167,7 +167,7 @@ The title bar provides context and actions related to a particular section of co
 
 Title bar has a number of props to facilitate a variety of uses:
 
-<Block $marginTop="sizing05">
+<LegacyBlock $marginTop="sizing05">
   <Prop name="children" type="string" required>
     The content of the title is passed as the child of the component.
   </Prop>
@@ -190,7 +190,7 @@ Title bar has a number of props to facilitate a variety of uses:
     Right padding of the title and button according to main container.
   </Prop>
 
-</Block>
+</LegacyBlock>
 
 ## Anatomy
 

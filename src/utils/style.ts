@@ -2,7 +2,6 @@ import baseStyled, {CreateStyled} from '@emotion/styled';
 import {
   TypePresetKeys,
   ColorKeys,
-  SizingKeys,
   AnimationKeys,
   BorderKeys,
   Theme,
@@ -12,6 +11,8 @@ import {FontSizeKeys, LineHeightKeys} from '../themes/newskit-light/fonts';
 import {getFontSizing} from './font-sizing';
 import {GridKeys} from '../themes/newskit-light/grid';
 import {ShadowKeys} from '../themes/newskit-light/shadow';
+import {SizingKeys, IconSizeKeys} from '../themes/newskit-light/spacing';
+import {MarginPresetKeys, PaddingPresetKeys} from '../themes/mappers/spacing';
 
 export {css} from '@emotion/core';
 
@@ -48,7 +49,9 @@ export const getFontsFromTheme = getValueFromTheme<FontPrimitivesKeys>('fonts');
 
 export const getColorFromTheme = getValueFromTheme<ColorKeys>('colors');
 
-export const getSizingFromTheme = getValueFromTheme<SizingKeys>('sizing');
+export const getSizingFromTheme = getValueFromTheme<
+  SizingKeys | MarginPresetKeys | PaddingPresetKeys | IconSizeKeys
+>('sizing');
 
 export const getBorderFromTheme = getValueFromTheme<BorderKeys>('borders');
 

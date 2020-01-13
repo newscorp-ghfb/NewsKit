@@ -1,7 +1,7 @@
 import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import Prop from '../../components/prop';
-import {Block} from '../../components/block';
+import {LegacyBlock} from '../../components/legacy-block';
 
 import {ShareBar} from 'newskit';
 
@@ -11,7 +11,7 @@ export default Layout;
 
 ## Overview
 
-The share bar uses [icons](/foundations/icons) to allow users to share. 
+The share bar uses [icons](/foundations/icons) to allow users to share.
 
 ### Usage
 
@@ -19,7 +19,7 @@ A share bar can be used anywhere a user would like to easily share something wit
 
 ## Props
 
-<Block $marginTop='sizing040'>
+<LegacyBlock $marginTop='sizing040'>
   <Prop name='leftIcons' type='array'>
     An array of social items that start from the left.
   </Prop>
@@ -32,7 +32,7 @@ A share bar can be used anywhere a user would like to easily share something wit
   <Prop name='rightLabel' type='string'>
     A label to appear before the right items.
   </Prop>
-</Block>
+</LegacyBlock>
 
 ## Playground
 

@@ -59,7 +59,7 @@ export const fontPrimitives = {
 export type FontSizeKeys = keyof typeof fontSizes;
 export type LineHeightKeys = keyof typeof lineHeights;
 export type FontWeightKeys = keyof typeof fontWeights;
-export type FontLetterSpacingKeys = keyof typeof fontLetterSpacing;
+export type FontLetterSizingKeys = keyof typeof fontLetterSpacing;
 
 export type FontPrimitivesKeys = keyof FontPrimitives;
 export type FontPrimitives = typeof fontPrimitives;

@@ -12,7 +12,7 @@ import {
   styled,
 } from 'newskit';
 
-import {Block} from './block';
+import {LegacyBlock} from './legacy-block';
 import {Link} from './link';
 import {NewsKitMobileLogo} from './logo';
 import {MenuIcon, SearchIcon} from './icons';
@@ -26,7 +26,7 @@ const Header = styled.header`
   min-height: 64px;
   background-color: ${getColorFromTheme('interface010')};
   ${getTypePresetFromTheme('label020')}
-  padding: ${getSizingFromTheme('spacingSize030')} 0;
+  padding: ${getSizingFromTheme('sizing030')} 0;
   box-shadow: ${getShadowFromTheme('shadow030')};
 
   ${getMediaQueryFromTheme('md')} {
@@ -38,7 +38,7 @@ const Header = styled.header`
 const MobileMenu = styled.div`
   font-size: 0;
   align-self: center;
-  margin-right: ${getSizingFromTheme('spacingSize040')};
+  margin-right: ${getSizingFromTheme('sizing040')};
 `;
 
 const NavigationList = styled.ul`
@@ -48,7 +48,7 @@ const NavigationList = styled.ul`
   display: flex;
 
   li {
-    margin-right: ${getSizingFromTheme('spacingSize060')};
+    margin-right: ${getSizingFromTheme('sizing060')};
     font-weight: ${getFontsFromTheme('fontWeight030')};
   }
 `;
@@ -61,7 +61,7 @@ const SearchContainer = styled.div`
 
 const MobileLogo: React.FC = () => (
   <Link href="/">
-    <NewsKitMobileLogo $color="inkBase" $size="spacingSize070" />
+    <NewsKitMobileLogo $color="inkBase" $size="sizing070" />
   </Link>
 );
 
@@ -75,7 +75,7 @@ type HeaderRef = HTMLElement;
 const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
   ({handleSidebarClick}, ref) => {
     const renderMobileNavigation = (handleClick: () => void) => (
-      <Block $display="flex" data-testid="logo-container">
+      <LegacyBlock $display="flex" data-testid="logo-container">
         <MobileMenu
           onClick={handleClick}
           onKeyDown={handleEnterKeyPress(handleClick)}
@@ -85,7 +85,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
           <MenuIcon />
         </MobileMenu>
         <MobileLogo />
-      </Block>
+      </LegacyBlock>
     );
 
     return (
@@ -97,7 +97,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
             </Hidden>
           </Cell>
           <Cell xsHidden smHidden mdHidden lgHidden md={12}>
-            <Block
+            <LegacyBlock
               $display="flex"
               $justifyContent="flex-end"
               $alignItems="center"
@@ -129,7 +129,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                   <SearchIcon />
                 </SearchContainer>
               </Hidden>
-            </Block>
+            </LegacyBlock>
           </Cell>
         </Grid>
       </Header>

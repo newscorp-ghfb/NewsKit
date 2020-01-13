@@ -12,7 +12,7 @@ import {
 } from 'csstype';
 import {ColorKeys, TypePresetKeys, SizingKeys, Responsive} from 'newskit';
 
-export interface BlockProps {
+export interface LegacyBlockProps {
   as?: React.ElementType;
   $color?: Responsive<ColorKeys | ColorProperty>;
   $backgroundColor?: Responsive<ColorKeys | ColorProperty>;

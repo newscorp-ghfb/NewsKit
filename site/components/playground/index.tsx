@@ -9,7 +9,7 @@ import {
   theSunTheme,
   theTimesTheme,
 } from 'newskit';
-import {Block, BlockProps} from '../block';
+import {LegacyBlock, LegacyBlockProps} from '../legacy-block';
 import {MultiChoiceKnob} from './knobs/multichoice-knob';
 import {TextKnob} from './knobs/text-knob';
 import {BooleanKnob} from './knobs/boolean-knob';
@@ -37,7 +37,7 @@ const PlaygroundContainer = styled.div`
 
 const StyledMockTab = styled.span`
   display: inline-block;
-  padding: ${getSizingFromTheme('spacingSize040')};
+  padding: ${getSizingFromTheme('sizing040')};
   border-bottom-style: solid;
   border-bottom-width: ${getBorderFromTheme('borderWidth020')};
   border-bottom-color: ${getColorFromTheme('interactive010')};
@@ -152,7 +152,7 @@ export const Playground: React.FC<
     ? componentName.map((name, index) => [name, index] as [string, number])
     : false;
 
-  const commonBlockProps: Partial<BlockProps> = {
+  const commonBlockProps: Partial<LegacyBlockProps> = {
     $display: 'flex',
     $justifyContent: 'center',
     $alignItems: 'center',
@@ -173,7 +173,7 @@ export const Playground: React.FC<
 
   return (
     <PlaygroundContainer>
-      <Block
+      <LegacyBlock
         data-testid="playground-element"
         {...commonBlockProps}
         $minHeight="200px"
@@ -183,10 +183,10 @@ export const Playground: React.FC<
             <Component {...state} />
           </ThemeProvider>
         </ErrorBoundary>
-      </Block>
-      <Block $font="body030">
+      </LegacyBlock>
+      <LegacyBlock $font="body030">
         <StyledMockTab>Props</StyledMockTab>
-      </Block>
+      </LegacyBlock>
       <Selector
         options={[
           ['NewsKit Light', newskitLightTheme],
@@ -202,16 +202,20 @@ export const Playground: React.FC<
           Component
         </Selector>
       )}
-      <Block {...commonBlockProps} $alignItems="left" $padding="sizing030">
+      <LegacyBlock
+        {...commonBlockProps}
+        $alignItems="left"
+        $padding="sizing030"
+      >
         {knobs.map(renderKnob(state, updateState))}
-      </Block>
-      <Block {...commonBlockProps}>
+      </LegacyBlock>
+      <LegacyBlock {...commonBlockProps}>
         <CodeExample
           componentName={selectedCompName}
           source={source.code || source.error}
           error={Boolean(source.error)}
         />
-      </Block>
+      </LegacyBlock>
     </PlaygroundContainer>
   );
 };

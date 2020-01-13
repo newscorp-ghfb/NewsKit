@@ -12,11 +12,11 @@ const ListItem = styled(StyledLi)`
   display: flex;
   align-items: center;
   justify-content: start;
-  margin-bottom: ${getSizingFromTheme('spacingSize040')};
+  margin-bottom: ${getSizingFromTheme('sizing040')};
 `;
 
 const MarkerContainer = styled.span`
-  margin-right: ${getSizingFromTheme('spacingSize010')};
+  margin-right: ${getSizingFromTheme('sizing010')};
 `;
 
 export const UnorderedList: React.FC<UnorderedListProps> = ({

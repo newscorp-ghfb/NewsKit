@@ -37,7 +37,7 @@ const TagListContainer = styled.div`
   justify-content: center;
   border-top: 1px solid ${getColorFromTheme('interface040')};
   border-bottom: ${({theme}) => `1px solid ${theme.colors.interface040}`};
-  margin-bottom: ${getSizingFromTheme('spacingSize080')};
+  margin-bottom: ${getSizingFromTheme('sizing080')};
   padding: 20px 0 16px 0;
 `;
 
@@ -89,7 +89,7 @@ const Article: React.FC = () => (
             </ArticleHeadline>
           </Cell>
           <Cell xs={12}>
-            <LayoutContainer $marginBottom="spacingSize020">
+            <LayoutContainer $marginBottom="sizing020">
               <Description>
                 Refrigerated Treats Make For A Cool Event
               </Description>
@@ -116,7 +116,7 @@ const Article: React.FC = () => (
           </Cell>
 
           <Cell xs={12} md={6}>
-            <LayoutContainer $marginBottom="spacingSize020">
+            <LayoutContainer $marginBottom="sizing020">
               <ShareBar
                 rightIcons={[
                   {type: 'facebook'},
@@ -128,7 +128,7 @@ const Article: React.FC = () => (
           </Cell>
 
           <Cell xs={12}>
-            <LayoutContainer $marginBottom="spacingSize020">
+            <LayoutContainer $marginBottom="sizing020">
               <Image
                 src="https://via.placeholder.com/736x414"
                 alt="Placeholder image"
@@ -139,7 +139,7 @@ const Article: React.FC = () => (
           </Cell>
 
           <Cell xs={12}>
-            <LayoutContainer $marginBottom="spacingSize060">
+            <LayoutContainer $marginBottom="sizing060">
               <ArticleContent $boldIntro $boldHeadings>
                 <P>
                   Chopped, sliced or wedged, hard-cooked eggs are the basis of
@@ -189,7 +189,7 @@ const Article: React.FC = () => (
               <TagList
                 $size="small"
                 $shape="semiRounded"
-                $spacing="spacingSize040"
+                $spacing="sizing040"
                 tagData={[
                   {
                     label: 'Cooking',

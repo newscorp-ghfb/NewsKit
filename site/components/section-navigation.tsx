@@ -15,7 +15,7 @@ interface SectionNavigationProps {
 const SectionNavigationContainer = styled.nav`
   width: 100%;
   min-height: 64px;
-  margin-bottom: ${getSizingFromTheme('spacingSize070')};
+  margin-bottom: ${getSizingFromTheme('sizing070')};
   border-bottom: 1px solid ${getColorFromTheme('interface040')};
   background-color: ${getColorFromTheme('interfaceBackground')};
   display: flex;
@@ -31,7 +31,7 @@ const SectionNavigationContainer = styled.nav`
 const ListContainer = styled.ul`
   width: 100%;
   margin: 0;
-  padding: ${getSizingFromTheme('spacingSize040')};
+  padding: ${getSizingFromTheme('sizing040')};
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;

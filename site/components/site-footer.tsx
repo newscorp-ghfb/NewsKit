@@ -16,7 +16,7 @@ import {Link} from './link';
 
 const Footer = styled.footer`
   flex-shrink: 0;
-  padding: ${getSizingFromTheme('spacingSize050')} 0;
+  padding: ${getSizingFromTheme('sizing050')} 0;
   position: relative;
 
   &::before {
@@ -62,13 +62,13 @@ const FooterMenu = styled.div`
 
 const FooterLink = styled.span`
   flex-basis: 50%;
-  padding-top: ${getSizingFromTheme('spacingSize050')};
+  padding-top: ${getSizingFromTheme('sizing050')};
   ${getTypePresetFromTheme('label020')};
 
   ${getMediaQueryFromTheme('md')} {
     flex-basis: auto;
     padding-top: 0;
-    padding-left: ${getSizingFromTheme('spacingSize050')};
+    padding-left: ${getSizingFromTheme('sizing050')};
   }
 `;
 

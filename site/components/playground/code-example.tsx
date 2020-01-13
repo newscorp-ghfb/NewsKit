@@ -2,7 +2,7 @@ import React from 'react';
 import CodeSandboxer from 'react-codesandboxer';
 import {Button, ButtonSize} from 'newskit';
 import {Code} from '../code';
-import {Block} from '../block';
+import {LegacyBlock} from '../legacy-block';
 import {ErrorMessageContainer} from './error-boundary';
 
 // TODO: reinstate proper version when stable.
@@ -40,7 +40,7 @@ export const CodeExample: React.FC<CodeExampleProps> = ({
   source,
   error,
 }) => (
-  <Block
+  <LegacyBlock
     $display="flex"
     $flexDirection="column"
     $alignItems="space-between"
@@ -50,12 +50,12 @@ export const CodeExample: React.FC<CodeExampleProps> = ({
     $justifyContent="space-between"
   >
     {source && (
-      <Block $overflow="scrollX">
+      <LegacyBlock $overflow="scrollX">
         {error && (
           <ErrorMessageContainer>Source code invalid!</ErrorMessageContainer>
         )}
         <Code>{source}</Code>
-      </Block>
+      </LegacyBlock>
     )}
     <CodeSandboxer
       examplePath="/"
@@ -70,15 +70,15 @@ export const CodeExample: React.FC<CodeExampleProps> = ({
       template="create-react-app"
     >
       {() => (
-        <Block $alignSelf="flex-end">
+        <LegacyBlock $alignSelf="flex-end">
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a>
             <Button $size={ButtonSize.Large} data-testid="code-sandbox">
               Edit on CodeSandbox
             </Button>
           </a>
-        </Block>
+        </LegacyBlock>
       )}
     </CodeSandboxer>
-  </Block>
+  </LegacyBlock>
 );

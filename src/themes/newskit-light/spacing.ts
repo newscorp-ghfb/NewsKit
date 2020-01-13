@@ -12,20 +12,6 @@ export const sizingPrimitives = {
   sizing100: '80px',
   sizing110: '120px',
   sizing120: '160px',
-
-  spacingSize000: '0',
-  spacingSize010: '4px',
-  spacingSize020: '8px',
-  spacingSize030: '12px',
-  spacingSize040: '16px',
-  spacingSize050: '24px',
-  spacingSize060: '32px',
-  spacingSize070: '40px',
-  spacingSize080: '48px',
-  spacingSize090: '64px',
-  spacingSize100: '80px',
-  spacingSize110: '120px',
-  spacingSize120: '160px',
 };
 
 export type SizingKeys = keyof Sizing;

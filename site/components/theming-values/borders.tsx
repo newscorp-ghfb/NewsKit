@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {getSizingFromTheme, newskitLightTheme, styled} from 'newskit';
-import {Block} from '../block';
+import {LegacyBlock} from '../legacy-block';
 import {Header, ExampleWrapper} from './common';
 
 type BorderPreviewProps = {
@@ -18,7 +18,7 @@ interface StyledBorderBoxProps {
 }
 
 const StyledBorderBox = styled.div<StyledBorderBoxProps>`
-  margin-top: ${getSizingFromTheme('spacingSize010')};
+  margin-top: ${getSizingFromTheme('sizing010')};
   height: ${getSizingFromTheme('sizing070')};
   ${({borderWidth}) => borderWidth && `border-width: ${borderWidth};`}
   ${({borderStyle}) => borderStyle && `border-style: ${borderStyle};`}
@@ -26,12 +26,12 @@ const StyledBorderBox = styled.div<StyledBorderBoxProps>`
 
 function BorderPreview({name, border}: BorderPreviewProps): JSX.Element {
   return (
-    <Block $width="250px" $margin="sizing070">
-      <Block $font="body030">
+    <LegacyBlock $width="250px" $margin="sizing070">
+      <LegacyBlock $font="body030">
         {name} ({border.borderWidth} {border.borderStyle} {border.borderColor})
-      </Block>
+      </LegacyBlock>
       <StyledBorderBox {...border} />
-    </Block>
+    </LegacyBlock>
   );
 }
 

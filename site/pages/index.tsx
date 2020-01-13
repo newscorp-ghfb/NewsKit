@@ -16,7 +16,7 @@ import PageTitle from '../components/page-title';
 import Layout from '../components/layout';
 
 const MainContent = styled.div`
-  margin-bottom: ${getSizingFromTheme('spacingSize090')};
+  margin-bottom: ${getSizingFromTheme('sizing090')};
 `;
 const StyledH1 = styled(H1)`
   ${getTypePresetFromTheme('heading080')}

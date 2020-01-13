@@ -23,8 +23,8 @@ const StyledLi = styled.li<{$spacing?: SizingKeys}>`
   display: inline-block;
   list-style-type: none;
 
-  margin-right: ${getSizingFromTheme('spacingSize010', '$spacing')};
-  margin-bottom: ${getSizingFromTheme('spacingSize010')};
+  margin-right: ${getSizingFromTheme('sizing010', '$spacing')};
+  margin-bottom: ${getSizingFromTheme('sizing010')};
 
   :last-child {
     margin-right: 0;

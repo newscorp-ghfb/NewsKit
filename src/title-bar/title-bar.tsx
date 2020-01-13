@@ -20,12 +20,12 @@ const Container = styled.div<ContainerProps>`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: ${getSizingFromTheme('spacingSize050')};
+  padding-top: ${getSizingFromTheme('sizing050')};
   padding-right: ${({$paddingRight, theme}) =>
-    $paddingRight ? getSizingFromTheme('spacingSize050')({theme}) : null};
-  padding-bottom: ${getSizingFromTheme('spacingSize050')};
+    $paddingRight ? getSizingFromTheme('sizing050')({theme}) : null};
+  padding-bottom: ${getSizingFromTheme('sizing050')};
   padding-left: ${({$paddingLeft, theme}) =>
-    $paddingLeft ? getSizingFromTheme('spacingSize050')({theme}) : null};
+    $paddingLeft ? getSizingFromTheme('sizing050')({theme}) : null};
   box-sizing: border-box;
   border-color: ${getColorFromTheme('titleBarBorder')};
   border-width: ${getBorderFromTheme('titleBarBorderWidth')};
@@ -52,7 +52,7 @@ const TitleContainer = styled.div<TitleContainerProps>`
 `;
 
 const ActionItemsContainer = styled.div`
-  padding-left: ${getSizingFromTheme('spacingSize050')};
+  padding-left: ${getSizingFromTheme('sizing050')};
   display: none;
   ${getMediaQueryFromTheme('sm')} {
     display: block;

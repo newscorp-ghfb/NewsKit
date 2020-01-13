@@ -7,7 +7,7 @@ import {
   getColorFromTheme,
   getBuiId,
 } from 'newskit';
-import {Block} from '../block';
+import {LegacyBlock} from '../legacy-block';
 
 const StyledContainer = styled.span`
   position: relative;
@@ -30,11 +30,9 @@ const StyledContainer = styled.span`
 const StyledSelect = styled.select`
   ${getTypePresetFromTheme('body010')}
   line-height:1.5;
-  margin-left: ${getSizingFromTheme('spacingSize020')};
-  padding: ${getSizingFromTheme('spacingSize020')}
-    ${getSizingFromTheme('spacingSize080')}
-    ${getSizingFromTheme('spacingSize020')}
-    ${getSizingFromTheme('spacingSize030')};
+  margin-left: ${getSizingFromTheme('sizing020')};
+  padding: ${getSizingFromTheme('sizing020')} ${getSizingFromTheme('sizing080')}
+    ${getSizingFromTheme('sizing020')} ${getSizingFromTheme('sizing030')};
   border-radius: ${({theme}) => theme.borderRadius.rounded.sizing050};
   appearance: none;
   border: none;
@@ -60,7 +58,7 @@ export const Selector: React.FC<SelectorProps> = ({
 }) => {
   const id = `playground-${children}-${getBuiId()}-selector`;
   return (
-    <Block
+    <LegacyBlock
       $font="body030"
       $paddingTop="sizing050"
       $paddingBottom="sizing040"
@@ -82,6 +80,6 @@ export const Selector: React.FC<SelectorProps> = ({
           ))}
         </StyledSelect>
       </StyledContainer>
-    </Block>
+    </LegacyBlock>
   );
 };

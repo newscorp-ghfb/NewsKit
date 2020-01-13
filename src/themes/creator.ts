@@ -11,8 +11,8 @@ import {Breakpoints, breakpointPrimitives} from './newskit-light/breakpoints';
 import {Grid, gridPrimitives} from './newskit-light/grid';
 import {FontPrimitives, fontPrimitives} from './newskit-light/fonts';
 import {
-  Sizing,
   sizingPrimitives,
+  Sizing,
   IconSizeKeys,
   IconSize,
   iconSizes,
@@ -21,7 +21,12 @@ import {TypePresets, createTypePresets} from './mappers/type-presets';
 import {Borders, createBorders} from './mappers/borders';
 import {Shadow, shadowPrimitives} from './newskit-light/shadow';
 import {Overlay, overlayPrimitives} from './newskit-light/overlay';
-import {createSpacingPresets, SpacingPreset} from './mappers/spacing';
+import {
+  createPaddingPresets,
+  PaddingPreset,
+  createMarginPresets,
+  MarginPreset,
+} from './mappers/spacing';
 
 type ColourableIcon = React.ComponentType<{
   $size: IconSizeKeys;
@@ -53,7 +58,7 @@ export interface Theme extends Record<string, unknown> {
   colors: Colors;
   typePresets: TypePresets;
   fonts: FontPrimitives;
-  sizing: SpacingPreset & IconSize;
+  sizing: PaddingPreset & IconSize & Sizing & MarginPreset;
   borderRadius: BorderRadius;
   borders: Borders;
   animation: Animation;
@@ -72,7 +77,12 @@ const createDefaultTheme = (): Theme => ({
   colors: createThemeColors(colorPrimitives),
   typePresets: createTypePresets(fontPrimitives),
   fonts: fontPrimitives,
-  sizing: {...createSpacingPresets(sizingPrimitives), ...iconSizes},
+  sizing: {
+    ...createPaddingPresets(sizingPrimitives),
+    ...iconSizes,
+    ...sizingPrimitives,
+    ...createMarginPresets(sizingPrimitives),
+  },
   shadow: shadowPrimitives,
   borderRadius: borderRadiusPrimitives,
   borders: createBorders(borderPrimitives),
