@@ -1,5 +1,6 @@
 import prettier from 'prettier/standalone';
 import parser from 'prettier/parser-flow';
+import {isComponent} from './utils';
 
 export interface GenerateArgs {
   newskitPath: string;
@@ -9,16 +10,25 @@ export interface GenerateArgs {
 
 type PropFormatter = (key: string, value: unknown) => string;
 const propFormatters: Record<string, PropFormatter> = {
+  number: (k, v) => ` ${k}={${v}}`,
   string: (k, v) => ` ${k}="${v}"`,
   boolean: (k, v) => (v ? ` ${k}` : ''),
   object: (key, value) => {
-    if (value.$$typeof && value.displayName) {
+    if (isComponent(value)) {
       // object is React Component class
       return ` ${key}={${value.displayName}}`;
     }
     return ` ${key}={${JSON.stringify(value, (k, v) =>
       v === '' ? undefined : v,
     )}}`;
+  },
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  function: (k, v: any) => {
+    const {displayName} = v;
+    if (displayName) {
+      return ` ${k}={${displayName}}`;
+    }
+    return '';
   },
 };
 const formatProp: PropFormatter = (key, value) => {

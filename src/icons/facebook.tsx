@@ -30,9 +30,6 @@ const defaultIcon: React.FC<FacebookIconProps> = ({
 );
 
 export const Facebook = withTheme<FacebookIconProps>(props => {
-  const {$size, theme} = props;
-
-  const Icon = theme.icons.Facebook || defaultIcon;
-
-  return <Icon $size={$size} />;
+  const Icon = props.theme.icons.Facebook || defaultIcon;
+  return <Icon {...props} />;
 });

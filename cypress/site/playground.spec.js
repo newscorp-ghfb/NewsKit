@@ -31,8 +31,8 @@ describe('Documentation Site - playground - Tag list', () => {
   const tagsArrayKnob = '[data-testid="array-knob-tags"]';
   const buttonAdd = '[data-testid="array-knob-button-add"]';
   const buttonRemove = '[data-testid="array-knob-button-remove"]';
-  const textKnobLabel = '[data-testid="text-knob-label"]';
-  const textKnobHref = '[data-testid="text-knob-href"]';
+  const textKnobLabel = '[data-testid="input-knob-label"]';
+  const textKnobHref = '[data-testid="input-knob-href"]';
   const testTagText = 'Test Tag';
   const testTagUrl = 'http://www.test-tag.com';
 

@@ -1,0 +1,831 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`slider labels should not render labels by default 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div>
+      react-range
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`slider labels should render custom component min, max labels 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-right: 8px;
+}
+
+.emotion-1 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-left: 8px;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-0"
+    >
+      <span>
+        0
+      </span>
+    </div>
+    <div>
+      react-range
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <span>
+        100
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`slider labels should render horizontal labels 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-right: 8px;
+}
+
+.emotion-1 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-left: 8px;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-0"
+    >
+      0
+    </div>
+    <div>
+      react-range
+    </div>
+    <div
+      class="emotion-1"
+    >
+      100
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`slider labels should render max label 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-left: 8px;
+}
+
+<div
+    class="emotion-1"
+  >
+    <div>
+      react-range
+    </div>
+    <div
+      class="emotion-0"
+    >
+      0
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`slider labels should render min label 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-right: 8px;
+}
+
+<div
+    class="emotion-1"
+  >
+    <div
+      class="emotion-0"
+    >
+      0
+    </div>
+    <div>
+      react-range
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`slider labels should render vertical labels 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 32px;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-top: 8px;
+}
+
+.emotion-1 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-bottom: 8px;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-0"
+    >
+      0
+    </div>
+    <div>
+      react-range
+    </div>
+    <div
+      class="emotion-1"
+    >
+      100
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`slider react-range Range function props renderThumb should render custom aria-label slider thumb 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  background-color: #ffffff;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0A68C1;
+  cursor: inherit;
+}
+
+<div
+    aria-label="my custom aria label"
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`slider react-range Range function props renderThumb should render custom label component slider thumb 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  background-color: #ffffff;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0A68C1;
+  cursor: inherit;
+}
+
+<div
+    aria-label="slider"
+    class="emotion-0"
+  >
+    <span />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`slider react-range Range function props renderThumb should render dragged slider thumb 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  background-color: #ffffff;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0A68C1;
+  cursor: inherit;
+}
+
+<div
+    aria-label="slider"
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`slider react-range Range function props renderThumb should render multiple index slider thumb 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  background-color: #ffffff;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0A68C1;
+  cursor: inherit;
+}
+
+<div
+    aria-label="slider"
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`slider react-range Range function props renderThumb should render range label slider thumb 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  background-color: #ffffff;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0A68C1;
+  cursor: inherit;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: -32px;
+  background-color: transparent;
+  white-space: nowrap;
+}
+
+<div
+    aria-label="slider"
+    class="emotion-1"
+  >
+    <div
+      class="emotion-0"
+    >
+      25.0
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`slider react-range Range function props renderThumb should render undragged slider thumb 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  background-color: #ffffff;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0A68C1;
+  cursor: inherit;
+}
+
+<div
+    aria-label="slider"
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`slider react-range Range function props renderThumb should render vertical slider thumb 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  background-color: #ffffff;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0A68C1;
+  cursor: inherit;
+}
+
+.emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  position: absolute;
+  right: -40px;
+  background-color: transparent;
+  white-space: nowrap;
+}
+
+<div
+    aria-label="slider"
+    class="emotion-1"
+  >
+    <div
+      class="emotion-0"
+    >
+      25.0
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`slider react-range Range function props renderTrack should render default slider track 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.emotion-0 {
+  border-radius: 12px;
+  height: 12px;
+  width: 100%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  cursor: inherit;
+}
+
+<div
+    class="emotion-1"
+    data-testid="slider-track"
+    values="25"
+  >
+    <div
+      class="emotion-0"
+      max="30"
+      min="10"
+      values="25"
+    >
+      <div>
+        children
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`slider react-range Range function props renderTrack should render disabled slider track 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0 16px;
+  cursor: not-allowed;
+}
+
+.emotion-0 {
+  border-radius: 12px;
+  height: 12px;
+  width: 100%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  cursor: not-allowed;
+}
+
+<div
+    class="emotion-1"
+    data-testid="slider-track"
+    disabled=""
+    values="25"
+  >
+    <div
+      class="emotion-0"
+      disabled=""
+      max="30"
+      min="10"
+      values="25"
+    >
+      <div>
+        children
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`slider react-range Range function props renderTrack should render disabled slider track 2`] = `
+<DocumentFragment>
+  .emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0 16px;
+  cursor: not-allowed;
+}
+
+.emotion-0 {
+  border-radius: 12px;
+  height: 12px;
+  width: 100%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  cursor: not-allowed;
+}
+
+<div
+    class="emotion-1"
+    data-testid="slider-track"
+    disabled=""
+    values="25"
+  >
+    <div
+      class="emotion-0"
+      disabled=""
+      max="30"
+      min="10"
+      values="25"
+    >
+      <div>
+        children
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`slider react-range Range function props renderTrack should render grabbed slider track 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  border-radius: 12px;
+  height: 12px;
+  width: 100%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  cursor: inherit;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0 16px;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+}
+
+<div
+    class="emotion-1"
+    data-testid="slider-track"
+    values="25"
+  >
+    <div
+      class="emotion-0"
+      max="30"
+      min="10"
+      values="25"
+    >
+      <div>
+        children
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`slider react-range Range function props renderTrack should render multi-thumb slider track 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  border-radius: 12px;
+  height: 12px;
+  width: 100%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  cursor: inherit;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0 16px;
+  cursor: inherit;
+}
+
+<div
+    class="emotion-1"
+    data-testid="slider-track"
+    values="10,20"
+  >
+    <div
+      class="emotion-0"
+      max="30"
+      min="10"
+      values="10,20"
+    >
+      <div>
+        children
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`slider react-range Range function props renderTrack should render vertical slider track 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  padding: 16px 0;
+  cursor: pointer;
+}
+
+.emotion-0 {
+  border-radius: 12px;
+  height: 100%;
+  width: 12px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  cursor: inherit;
+}
+
+<div
+    class="emotion-1"
+    data-testid="slider-track"
+    values="25"
+  >
+    <div
+      class="emotion-0"
+      max="30"
+      min="10"
+      values="25"
+    >
+      <div>
+        children
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

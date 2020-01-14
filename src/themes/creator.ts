@@ -46,6 +46,7 @@ export interface Icons {
   WhatsApp?: NonColourableIcon;
   Facebook?: NonColourableIcon;
   GitHub?: NonColourableIcon;
+  Menu?: ColourableIcon;
   Placeholder?: NonColourableIcon;
   CopyLink?: ColourableIcon;
   Circle?: ColourableIcon;

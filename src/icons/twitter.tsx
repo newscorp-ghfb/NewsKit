@@ -32,9 +32,6 @@ const defaultIcon: React.FC<TwitterIconProps> = ({
 );
 
 export const Twitter = withTheme<TwitterIconProps>(props => {
-  const {$size, theme} = props;
-
-  const Icon = theme.icons.Twitter || defaultIcon;
-
-  return <Icon $size={$size} />;
+  const Icon = props.theme.icons.Twitter || defaultIcon;
+  return <Icon {...props} />;
 });

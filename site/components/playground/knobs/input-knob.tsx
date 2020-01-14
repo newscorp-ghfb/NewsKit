@@ -7,11 +7,12 @@ import {
 } from 'newskit';
 import {KnobContainer, getHash} from './common';
 
-export interface TextKnobProps {
-  value: string;
+type Value = string | number;
+export interface InputKnobProps {
+  value: Value;
   label: string;
   labelVisible?: boolean;
-  onChange?: (value: string | undefined) => void;
+  onChange?: (value: Value | undefined) => void;
 }
 
 export const HiddenLabel = styled.label`
@@ -52,9 +53,9 @@ export const StyledInput = styled.input`
   }
 `;
 
-const TEST_ID_PREFIX = 'text-knob';
+const TEST_ID_PREFIX = 'input-knob';
 
-export const TextKnob: React.FC<TextKnobProps> = ({
+export const InputKnob: React.FC<InputKnobProps> = ({
   label,
   labelVisible = true,
   value,
@@ -67,22 +68,23 @@ export const TextKnob: React.FC<TextKnobProps> = ({
   ) : (
     <HiddenLabel htmlFor={id}>{label}</HiddenLabel>
   );
-
+  const inputType = typeof value === 'number' ? 'number' : 'text';
+  const v = inputType === 'text' && !value ? '' : value;
   return (
     <KnobContainer>
       {LabelForInput}
       <StyledInput
-        type="text"
+        type={inputType}
         id={id}
         name={label}
-        value={value || ''}
+        value={v}
         data-testid={`${TEST_ID_PREFIX}-${lowercaseLabel}`}
         onChange={({target}) => {
-          onChange(target.value);
+          onChange(inputType === 'number' ? +target.value : target.value);
         }}
       />
     </KnobContainer>
   );
 };
 
-export default TextKnob;
+export default InputKnob;

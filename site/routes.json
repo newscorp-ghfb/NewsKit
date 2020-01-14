@@ -142,6 +142,11 @@
         "id": "/components/share-bar"
       },
       {
+        "title": "Slider",
+        "page": true,
+        "id": "/components/slider"
+      },
+      {
         "title": "Consent",
         "page": true,
         "id": "/components/consent"

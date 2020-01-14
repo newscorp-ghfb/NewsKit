@@ -11,12 +11,12 @@ import {
 } from 'newskit';
 import {LegacyBlock, LegacyBlockProps} from '../legacy-block';
 import {MultiChoiceKnob} from './knobs/multichoice-knob';
-import {TextKnob} from './knobs/text-knob';
+import {InputKnob} from './knobs/input-knob';
 import {BooleanKnob} from './knobs/boolean-knob';
 import {
   PlaygroundProps,
   MultiChoiceKnobConfig,
-  TextKnobConfig,
+  InputKnobConfig,
   BooleanKnobConfig,
   KnobsConfig,
 } from './types';
@@ -25,6 +25,7 @@ import {generateSource} from './source-generator';
 import {ArrayKnob} from './knobs/array-knob';
 import {Selector} from './selector';
 import {ErrorBoundary} from './error-boundary';
+import {isComponent} from './utils';
 
 const PlaygroundContainer = styled.div`
   display: flex;
@@ -48,8 +49,9 @@ const isMultiChoiceKnobConfig = (
 ): config is MultiChoiceKnobConfig =>
   Boolean(config && (config as MultiChoiceKnobConfig).options);
 
-const isTextKnobConfig = (config: unknown): config is TextKnobConfig =>
-  config && typeof (config as TextKnobConfig).value === 'string';
+const isInputKnobConfig = (config: unknown): config is InputKnobConfig =>
+  config &&
+  ['string', 'number'].includes(typeof (config as InputKnobConfig).value);
 
 const isBooleanKnobConfig = (config: unknown): config is BooleanKnobConfig =>
   config && typeof (config as BooleanKnobConfig).value === 'boolean';
@@ -79,12 +81,16 @@ const renderKnob = (
       />
     );
   }
-  if (isTextKnobConfig(knobConfig)) {
+  if (isInputKnobConfig(knobConfig)) {
+    let value = state[knobConfig.propName] as string | number;
+    if (!value && value !== 0) {
+      value = '';
+    }
     return (
-      <TextKnob
+      <InputKnob
         key={knobConfig.propName}
         label={knobConfig.name}
-        value={(state[knobConfig.propName] as string) || ''}
+        value={value}
         onChange={updateState(knobConfig.propName)}
       />
     );
@@ -168,7 +174,7 @@ export const Playground: React.FC<
   });
 
   const errorBoundaryKey = JSON.stringify(state, (k, v) =>
-    v && v.$$typeof && v.displayName ? v.displayName : v,
+    isComponent(v) ? v.displayName : v,
   );
 
   return (
@@ -219,4 +225,6 @@ export const Playground: React.FC<
     </PlaygroundContainer>
   );
 };
+
 export default Playground;
+export {withProps} from './utils';

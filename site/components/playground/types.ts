@@ -6,10 +6,16 @@ export interface BooleanKnobConfig {
   value: boolean;
 }
 
-export interface TextKnobConfig {
+export interface InputKnobConfig {
   name: string;
   propName: string;
   value: string;
+}
+
+export interface NumberKnobConfig {
+  name: string;
+  propName: string;
+  value: number;
 }
 
 export interface ArrayKnobConfig {
@@ -26,7 +32,7 @@ export interface MultiChoiceKnobConfig {
 
 export type KnobsConfig =
   | BooleanKnobConfig
-  | TextKnobConfig
+  | InputKnobConfig
   | ArrayKnobConfig
   | MultiChoiceKnobConfig;
 

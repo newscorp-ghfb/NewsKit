@@ -29,9 +29,6 @@ const defaultIcon: React.FC<WhatsAppIconProps> = ({
 );
 
 export const WhatsApp = withTheme<WhatsAppIconProps>(props => {
-  const {$size, theme} = props;
-
-  const Icon = theme.icons.WhatsApp || defaultIcon;
-
-  return <Icon $size={$size} />;
+  const Icon = props.theme.icons.WhatsApp || defaultIcon;
+  return <Icon {...props} />;
 });

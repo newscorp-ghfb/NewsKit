@@ -54,7 +54,7 @@ export const StyledNavItem = styled.div<{
   }
 `;
 
-export const StyledRoot = styled.nav`
+export const StyledContainer = styled.nav`
   ${getTypePresetFromTheme('body030')};
   list-style-type: none;
   margin: 0;

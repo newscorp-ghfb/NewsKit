@@ -1,0 +1,204 @@
+import Layout from '../../components/layout';
+import Playground, {withProps} from '../../components/playground';
+import Prop from '../../components/prop';
+import {LegacyBlock} from '../../components/legacy-block';
+
+import {StatefulSlider, Circle, styled, Heading1} from 'newskit';
+
+export default Layout;
+
+# Slider
+
+## Overview
+
+### Usage
+
+The Slider component renders a draggable "thumb" on a track, allowing the user to choose a numeric value between a predefined minimum and maximum. The slider supports multiple values, i.e. you can have multiple "thumbs" sliding on the same rail.
+
+NewsKit also exports a StatefulSlider component which has the same props (except onChange becomes optional) and this handles the values updating via the onChange function for you.
+
+## Props
+
+<LegacyBlock $marginTop="sizing05">
+  <Prop name="min" required type="number">
+    The minimum value the slider can be set to, either at the left or the bottom
+    of the slider depending on orientation.
+  </Prop>
+  <Prop name="max" required type="number">
+    The maximum value the slider can be set to, either at the right or the top
+    of the slider depending on orientation.
+  </Prop>
+  <Prop name="values" required type="number[]">
+    The values of the thumbs on the slider, i.e. their position. One thumb is
+    rendered per value.
+  </Prop>
+  <Prop name="onChange" required type="(values: number[]) => void">
+    The onChange function receives the new values of the thumbs whenever they
+    are moved along the slider track. For the Slider, passing these values back
+    into the values prop is essential to make the slider interactive. For the
+    StatefulSlider, this is done for you and the onChange function is optional.
+  </Prop>
+  <Prop name="onFinalChange" type="(values: number[]) => void">
+    Similar to the onChange function, however this function is only called once
+    the slider has stopped being dragged.
+  </Prop>
+  <Prop name="disabled" type="boolean">
+    If true, the slider is disabled and cannot be interacted with.
+  </Prop>
+  <Prop name="step" type="number" default={1}>
+    The step is how much the slider increments or decrements the thumb value by
+    as it is moved along the rail. The difference of max and min must be
+    divisible by the step.
+  </Prop>
+  <Prop name="vertical" type="boolean">
+    If true, the slider is rendered vertically rather than horizontally. The
+    slider will have a height of 100% in vertical mode. To ensure the slider
+    renders as expected, your container must have a height set.
+  </Prop>
+  <Prop name="ariaLabel" type="string" default="slider">
+    The aria-label attribute for the slider. It is recommended that you set this
+    for screen readers to be able to explain the sliders purpose. If left
+    undefined it is simply set to "slider".
+  </Prop>
+  <Prop name="minLabel" type="string | React.ComponentType">
+    Either a string or a custom component can be passed in to be rendered to the
+    left of the rail. Typically this would show the user the minimum value of
+    the slider. If left undefined, no label is rendered.
+  </Prop>
+  <Prop name="maxLabel" type="string | React.ComponentType">
+    Either a string or a custom component can be passed in to be rendered to the
+    right of the rail. Typically this would show the user the maximum value of
+    the slider. If left undefined, no label is rendered.
+  </Prop>
+  <Prop name="thumbLabel" type="boolean | React.ComponentType<ThumbLabelProps>">
+    If true, a simple text thumb label is rendered above each thumb showing the
+    value of that thumb. If a custom component is passed in, that component is
+    rendered instead. Custom thumb labels receive a set of props including the
+    values, index of the thumb, and whether the thumb is being dragged. It also
+    receives the current thumb value as its children. If left undefined or set
+    falsy, no thumb label is rendered.
+  </Prop>
+</LegacyBlock>
+
+## Playground
+
+<Playground
+  componentName="StatefulSlider"
+  newskitPath="/slider"
+  component={props => (
+    <LegacyBlock
+      $width="100%"
+      $height={props.vertical ? '240px' : undefined}
+      style={{textAlign: 'center'}}
+    >
+      <StatefulSlider {...props} />
+    </LegacyBlock>
+  )}
+  knobs={[
+    {
+      name: 'Min',
+      propName: 'min',
+      value: 0,
+    },
+    {
+      name: 'Max',
+      propName: 'max',
+      value: 100,
+    },
+    {
+      name: 'Values',
+      propName: 'values',
+      value: [50],
+    },
+    {
+      name: 'Step',
+      propName: 'step',
+      value: 1,
+    },
+    {
+      name: 'Disabled',
+      propName: 'disabled',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'Min Label',
+      propName: 'minLabel',
+      options: [
+        {
+          label: 'undefined',
+          isDefault: true,
+          value: undefined,
+        },
+        {
+          label: 'Text',
+          value: '0%',
+        },
+        {
+          label: 'Component',
+          value: withProps(Circle, {$size: 'sizing040'}, 'MyLabelIcon'),
+        },
+      ],
+    },
+    {
+      name: 'Max Label',
+      propName: 'maxLabel',
+      options: [
+        {
+          label: 'undefined',
+          isDefault: true,
+          value: undefined,
+        },
+        {
+          label: 'Text',
+          value: '100%',
+        },
+        {
+          label: 'Component',
+          value: withProps(Circle, {$size: 'sizing040'}, 'MyLabelIcon'),
+        },
+      ],
+    },
+    {
+      name: 'Thumb Label',
+      propName: 'thumbLabel',
+      options: [
+        {
+          label: 'undefined',
+          isDefault: true,
+          value: undefined,
+        },
+        {
+          label: 'true',
+          value: true,
+        },
+        {
+          label: 'Component',
+          value: withProps(
+            styled(Heading1)`
+              position: relative;
+              top: 42px;
+            `,
+            {},
+            'MyThumbLabel',
+          ),
+        },
+      ],
+    },
+    {
+      name: 'Vertical',
+      propName: 'vertical',
+      options: [
+        {
+          label: 'undefined',
+          isDefault: true,
+          value: undefined,
+        },
+        {
+          label: 'true',
+          value: true,
+        },
+      ],
+    },
+  ]}
+/>

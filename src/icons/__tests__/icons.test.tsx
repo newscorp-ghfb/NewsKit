@@ -6,7 +6,7 @@ import {createTheme} from '../../themes';
 Object.entries(icons)
   .filter(icon => icon[0] !== 'Svg')
   .forEach((entry: any) => {
-    const [name, Comp] = entry as [string, React.ComponentType<any>];
+    const [name, Icon] = entry as [string, React.ComponentType<any>];
     const props = {
       // n.b. color prop not supported on all icons.
       $color: 'inkSubtle',
@@ -15,12 +15,21 @@ Object.entries(icons)
 
     describe(name, () => {
       test(`renders the ${name} icon with specified style`, () => {
-        const fragment = renderToFragmentWithTheme(Comp, props);
+        const fragment = renderToFragmentWithTheme(Icon, props);
         expect(fragment).toMatchSnapshot();
       });
+
+      test(`renders the ${name} icon with title override`, () => {
+        const fragment = renderToFragmentWithTheme(Icon, {
+          ...props,
+          title: 'override title value',
+        });
+        expect(fragment).toMatchSnapshot();
+      });
+
       test(`renders the ${name} icon from theme override`, () => {
         const fragment = renderToFragmentWithTheme(
-          Comp,
+          Icon,
           props,
           createTheme('icon-test-theme', {
             themeOverrider: () => ({

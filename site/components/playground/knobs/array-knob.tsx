@@ -9,7 +9,7 @@ import {
 } from 'newskit';
 import {LegacyBlock} from '../../legacy-block';
 import {KnobContainer, StyledTitle} from './common';
-import {TextKnob} from './text-knob';
+import {InputKnob} from './input-knob';
 
 type UpdateFunction = (
   index: number,
@@ -57,7 +57,7 @@ const renderRow = (
   if (typeof value === 'object') {
     return Object.entries(value as Record<string, string>).map(([k, v]) => (
       <LegacyBlock $display="flex" $flexGrow={1} $maxWidth="350px">
-        <TextKnob
+        <InputKnob
           key={label + k + length}
           label={k}
           labelVisible={!index}
@@ -68,10 +68,10 @@ const renderRow = (
     ));
   }
 
-  if (typeof value === 'string') {
+  if (typeof value === 'string' || typeof value === 'number') {
     return (
       <LegacyBlock $display="flex" $flexGrow={1} $maxWidth="350px">
-        <TextKnob
+        <InputKnob
           key={label + length}
           label={label}
           labelVisible={false}
@@ -117,7 +117,7 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
       <StyledTitle>{label}</StyledTitle>
       <LegacyBlock $marginLeft="sizing030">
         {values.map((value, i, arr) => {
-          if (!value || Array.isArray(value)) {
+          if (typeof value === 'undefined' || Array.isArray(value)) {
             // eslint-disable-next-line no-console
             console.error(
               'Arrays of arrays not currently supported by ArrayKnob. Entries must be strings or objects of string values',

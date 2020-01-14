@@ -14,6 +14,7 @@ export * from './image';
 export * from './link';
 export * from './list';
 export * from './share-bar';
+export * from './slider';
 export * from './tag-list';
 export * from './tag';
 export * from './title-bar';

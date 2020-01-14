@@ -6,7 +6,7 @@ import {
   NavItemContainer,
   SubNavContainer,
   StyledNavItem,
-  StyledRoot,
+  StyledContainer,
 } from './styled';
 import {Item} from './types';
 import {handleEnterKeyPress} from '../../helpers/a11y';
@@ -130,12 +130,12 @@ export const SidebarNav: React.FC<{path: string}> = ({path}) => {
   const [openId, setOpenId] = useState<string>(path);
 
   return (
-    <StyledRoot role="navigation" aria-label="Sidebar">
+    <StyledContainer role="navigation" aria-label="Sidebar">
       <SubNavContainer role="list">
         {routes.map((item, index) =>
           renderNavItem(openId, item, index, 0, setOpenId),
         )}
       </SubNavContainer>
-    </StyledRoot>
+    </StyledContainer>
   );
 };
