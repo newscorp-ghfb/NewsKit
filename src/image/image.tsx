@@ -31,7 +31,14 @@ interface ImageContainerProps extends React.HtmlHTMLAttributes<HTMLElement> {
     }[shape])};
 `;
 
-export const Image = (props: ImageProps) => {
+const imagePropsAreEqual = (prevProps: ImageProps, nextProps: ImageProps) =>
+  prevProps.aspectHeight === nextProps.aspectHeight &&
+  prevProps.aspectWidth === nextProps.aspectWidth &&
+  prevProps.hideLoadingIcon === nextProps.hideLoadingIcon &&
+  prevProps.shape === nextProps.shape &&
+  prevProps.src === nextProps.src;
+
+const ImageComponent = (props: ImageProps) => {
   const {hideLoadingIcon} = props;
   const [isLoading, setIsLoading] = useState(true);
 
@@ -82,3 +89,5 @@ export const Image = (props: ImageProps) => {
     </Container>
   );
 };
+
+export const Image = React.memo(ImageComponent, imagePropsAreEqual);
