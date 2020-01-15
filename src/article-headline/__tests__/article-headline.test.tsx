@@ -14,7 +14,7 @@ describe('ArticleHeadline', () => {
     const fragment = renderToFragmentWithTheme(ArticleHeadline, {
       children: 'test',
       kickerText: 'this is kicker',
-      kickerColor: 'interactive010Pressed',
+      kickerColor: 'blue080',
     } as any) as any;
 
     expect(fragment).toMatchSnapshot();

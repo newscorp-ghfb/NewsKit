@@ -64,7 +64,7 @@ exports[`Block with responsive style props renders a responsive styled div 1`] =
 <DocumentFragment>
   .emotion-0 {
   color: #0a0a0a;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -126,7 +126,7 @@ exports[`Block with responsive style props renders a responsive styled div 1`] =
 @media screen and (min-width:0px) {
   .emotion-0 {
     color: #2e2e2e;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -185,7 +185,7 @@ exports[`Block with responsive style props renders a responsive styled div 1`] =
 @media screen and (min-width:480px) {
   .emotion-0 {
     color: #777777;
-    background-color: #E6E6E6;
+    background-color: #e4e4e4;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     font-size: 18px;

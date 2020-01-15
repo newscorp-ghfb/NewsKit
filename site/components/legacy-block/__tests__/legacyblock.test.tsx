@@ -14,7 +14,7 @@ describe('Block', () => {
     test('renders a styled div', () => {
       const blockProps: LegacyBlockProps = {
         $color: 'inkContrast',
-        $backgroundColor: 'interactive010Pressed',
+        $backgroundColor: 'blue080',
         $font: 'body010',
         $border: '1px solid black',
         $borderTop: 'sizing010',

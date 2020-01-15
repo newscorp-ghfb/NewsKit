@@ -43,7 +43,7 @@ const PropsRow = styled.div`
 const PropName = styled.span`
   padding: ${getSizingFromTheme('sizing010')};
   border-radius: ${({theme}) => theme.borderRadius.semiRounded.sizing020};
-  background: ${getColorFromTheme('highlight')};
+  background: ${getColorFromTheme('blue020')};
 `;
 
 const PropType = styled.span`
@@ -56,8 +56,8 @@ const PropType = styled.span`
 const PropRequiredFlag = styled.span`
   padding: ${getSizingFromTheme('sizing010')};
   border-radius: ${({theme}) => theme.borderRadius.semiRounded.sizing020};
-  background: ${getColorFromTheme('semanticNegative')};
-  color: ${getColorFromTheme('inverse010')};
+  background: ${getColorFromTheme('semanticNegativeBase')};
+  color: ${getColorFromTheme('white')};
   margin: 0 ${getSizingFromTheme('sizing030')};
 
   ::before {

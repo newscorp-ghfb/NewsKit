@@ -337,7 +337,7 @@ exports[`slider react-range Range function props renderThumb should render custo
   height: 32px;
   width: 32px;
   border-radius: 32px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -366,7 +366,7 @@ exports[`slider react-range Range function props renderThumb should render custo
   height: 32px;
   width: 32px;
   border-radius: 32px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -397,7 +397,7 @@ exports[`slider react-range Range function props renderThumb should render dragg
   height: 32px;
   width: 32px;
   border-radius: 32px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -426,7 +426,7 @@ exports[`slider react-range Range function props renderThumb should render multi
   height: 32px;
   width: 32px;
   border-radius: 32px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -455,7 +455,7 @@ exports[`slider react-range Range function props renderThumb should render range
   height: 32px;
   width: 32px;
   border-radius: 32px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -505,7 +505,7 @@ exports[`slider react-range Range function props renderThumb should render undra
   height: 32px;
   width: 32px;
   border-radius: 32px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -534,7 +534,7 @@ exports[`slider react-range Range function props renderThumb should render verti
   height: 32px;
   width: 32px;
   border-radius: 32px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;

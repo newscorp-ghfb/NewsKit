@@ -22,9 +22,9 @@ export const getTrackBackgroundStyle = ({
     colors:
       values.length > 1
         ? Array.from({length: values.length + 1}, (v, i) =>
-            i % 2 ? colors.interactive010 : colors.interface030,
+            i % 2 ? colors.blue060 : colors.neutral030,
           )
-        : [colors.interactive010, colors.interface030],
+        : [colors.blue060, colors.neutral030],
     min,
     max,
     direction: vertical ? Direction.Up : undefined,

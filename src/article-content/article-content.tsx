@@ -27,7 +27,7 @@ const StyledArticleContent = styled.div<ArticleContentProps>`
 
   ::selection,
   *::selection {
-    background-color: ${getColorFromTheme('highlight')};
+    background-color: ${getColorFromTheme('blue020')};
   }
 `;
 

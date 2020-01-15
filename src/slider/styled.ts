@@ -95,7 +95,7 @@ export const StyledThumb = styled.div<Pick<TrackProps, 'disabled'>>`
   box-sizing: border-box;
   border-style: solid;
   border-width: ${getBorderFromTheme('borderWidth010')};
-  border-color: ${getColorFromTheme('interactive010')};
+  border-color: ${getColorFromTheme('blue060')};
   cursor: ${getCursor};
 `;
 

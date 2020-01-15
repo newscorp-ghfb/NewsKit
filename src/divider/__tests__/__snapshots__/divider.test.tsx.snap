@@ -3,7 +3,7 @@
 exports[`Divider renders with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  border-color: #E6E6E6;
+  border-color: #e4e4e4;
   border-width: 1px;
   margin-top: 24px;
   margin-right: 0;
@@ -22,7 +22,7 @@ exports[`Divider renders with default styles 1`] = `
 exports[`Divider renders with props 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  border-color: #0A0A0A;
+  border-color: #0a0a0a;
   border-width: 4px;
   margin-top: 16px;
   margin-right: 64px;

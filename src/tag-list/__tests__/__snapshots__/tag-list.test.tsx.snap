@@ -37,8 +37,8 @@ exports[`TagList renders with custom margins 1`] = `
   padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #E6E6E6;
-  background-color: #FAFAFA;
+  border-color: #e4e4e4;
+  background-color: #fafafa;
   color: #777777;
   height: 32px;
   line-height: calc(32px - 2px * 2);
@@ -53,8 +53,8 @@ exports[`TagList renders with custom margins 1`] = `
 .emotion-0:hover,
 .emotion-0:active,
 .emotion-0:focus {
-  border-color: #CCCCCC;
-  background-color: #E5F3FF;
+  border-color: #cccccc;
+  background-color: #F6FBFF;
   color: #2e2e2e;
 }
 
@@ -156,8 +156,8 @@ exports[`TagList renders with custom size and shape 1`] = `
   padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #E6E6E6;
-  background-color: #FAFAFA;
+  border-color: #e4e4e4;
+  background-color: #fafafa;
   color: #777777;
   height: 40px;
   line-height: calc(40px - 2px * 2);
@@ -172,8 +172,8 @@ exports[`TagList renders with custom size and shape 1`] = `
 .emotion-0:hover,
 .emotion-0:active,
 .emotion-0:focus {
-  border-color: #CCCCCC;
-  background-color: #E5F3FF;
+  border-color: #cccccc;
+  background-color: #F6FBFF;
   color: #2e2e2e;
 }
 
@@ -263,8 +263,8 @@ exports[`TagList renders with defaults 1`] = `
   padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #E6E6E6;
-  background-color: #FAFAFA;
+  border-color: #e4e4e4;
+  background-color: #fafafa;
   color: #777777;
   height: 32px;
   line-height: calc(32px - 2px * 2);
@@ -279,8 +279,8 @@ exports[`TagList renders with defaults 1`] = `
 .emotion-0:hover,
 .emotion-0:active,
 .emotion-0:focus {
-  border-color: #CCCCCC;
-  background-color: #E5F3FF;
+  border-color: #cccccc;
+  background-color: #F6FBFF;
   color: #2e2e2e;
 }
 

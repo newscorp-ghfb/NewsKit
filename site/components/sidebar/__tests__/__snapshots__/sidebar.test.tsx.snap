@@ -11,7 +11,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 8px;
@@ -178,17 +178,17 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-9:hover {
   color: #2e2e2e;
-  background-color: #E5F3FF;
+  background-color: #F6FBFF;
 }
 
 .emotion-9:focus {
   outline: none;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #0A68C1;
 }
 
 .emotion-9:focus svg polygon {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-9 a {
@@ -246,10 +246,10 @@ exports[`Sidebar renders correctly when closed 1`] = `
   top: 0;
   left: 0;
   z-index: 3;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #E6E6E6;
+  border-right-color: #e4e4e4;
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
@@ -595,10 +595,10 @@ exports[`Sidebar renders correctly when open 1`] = `
   top: 0;
   left: 0;
   z-index: 3;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #E6E6E6;
+  border-right-color: #e4e4e4;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
@@ -624,7 +624,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 8px;
@@ -791,17 +791,17 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-9:hover {
   color: #2e2e2e;
-  background-color: #E5F3FF;
+  background-color: #F6FBFF;
 }
 
 .emotion-9:focus {
   outline: none;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #0A68C1;
 }
 
 .emotion-9:focus svg polygon {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-9 a {

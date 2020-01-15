@@ -18,8 +18,8 @@ exports[`Tag href renders as an anchor 1`] = `
   padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #E6E6E6;
-  background-color: #FAFAFA;
+  border-color: #e4e4e4;
+  background-color: #fafafa;
   color: #777777;
   height: 32px;
   line-height: calc(32px - 2px * 2);
@@ -34,8 +34,8 @@ exports[`Tag href renders as an anchor 1`] = `
 .emotion-0:hover,
 .emotion-0:active,
 .emotion-0:focus {
-  border-color: #CCCCCC;
-  background-color: #E5F3FF;
+  border-color: #cccccc;
+  background-color: #F6FBFF;
   color: #2e2e2e;
 }
 
@@ -64,8 +64,8 @@ exports[`Tag href renders in disable state with an anchor 1`] = `
   padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #E6E6E6;
-  background-color: #FAFAFA;
+  border-color: #e4e4e4;
+  background-color: #fafafa;
   color: #777777;
   height: 32px;
   line-height: calc(32px - 2px * 2);
@@ -75,8 +75,8 @@ exports[`Tag href renders in disable state with an anchor 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-color: #F2F2F2;
-  background-color: #F2F2F2;
+  border-color: #f0f0f0;
+  background-color: #f0f0f0;
   color: #c0c0c0;
   cursor: default;
 }
@@ -107,8 +107,8 @@ exports[`Tag renders in disabled state 1`] = `
   padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #E6E6E6;
-  background-color: #FAFAFA;
+  border-color: #e4e4e4;
+  background-color: #fafafa;
   color: #777777;
   height: 32px;
   line-height: calc(32px - 2px * 2);
@@ -118,8 +118,8 @@ exports[`Tag renders in disabled state 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-color: #F2F2F2;
-  background-color: #F2F2F2;
+  border-color: #f0f0f0;
+  background-color: #f0f0f0;
   color: #c0c0c0;
   cursor: default;
 }
@@ -149,8 +149,8 @@ exports[`Tag renders with Large size 1`] = `
   padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #E6E6E6;
-  background-color: #FAFAFA;
+  border-color: #e4e4e4;
+  background-color: #fafafa;
   color: #777777;
   height: 40px;
   line-height: calc(40px - 2px * 2);
@@ -186,8 +186,8 @@ exports[`Tag renders with Medium size 1`] = `
   padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #E6E6E6;
-  background-color: #FAFAFA;
+  border-color: #e4e4e4;
+  background-color: #fafafa;
   color: #777777;
   height: 32px;
   line-height: calc(32px - 2px * 2);
@@ -223,8 +223,8 @@ exports[`Tag renders with Rounded shape 1`] = `
   padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #E6E6E6;
-  background-color: #FAFAFA;
+  border-color: #e4e4e4;
+  background-color: #fafafa;
   color: #777777;
   height: 32px;
   line-height: calc(32px - 2px * 2);
@@ -260,8 +260,8 @@ exports[`Tag renders with SemiRounded shape 1`] = `
   padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #E6E6E6;
-  background-color: #FAFAFA;
+  border-color: #e4e4e4;
+  background-color: #fafafa;
   color: #777777;
   height: 32px;
   line-height: calc(32px - 2px * 2);
@@ -297,8 +297,8 @@ exports[`Tag renders with Small size 1`] = `
   padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #E6E6E6;
-  background-color: #FAFAFA;
+  border-color: #e4e4e4;
+  background-color: #fafafa;
   color: #777777;
   height: 24px;
   line-height: calc(24px - 2px * 2);
@@ -334,8 +334,8 @@ exports[`Tag renders with Squared shape 1`] = `
   padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #E6E6E6;
-  background-color: #FAFAFA;
+  border-color: #e4e4e4;
+  background-color: #fafafa;
   color: #777777;
   height: 32px;
   line-height: calc(32px - 2px * 2);
@@ -371,8 +371,8 @@ exports[`Tag renders with default styles 1`] = `
   padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #E6E6E6;
-  background-color: #FAFAFA;
+  border-color: #e4e4e4;
+  background-color: #fafafa;
   color: #777777;
   height: 32px;
   line-height: calc(32px - 2px * 2);

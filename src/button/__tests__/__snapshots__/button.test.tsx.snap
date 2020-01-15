@@ -14,7 +14,7 @@ exports[`Button renders Icon Button 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  color: #ffffff;
+  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -50,12 +50,12 @@ exports[`Button renders Icon Button 1`] = `
   -ms-flex-align: center;
   align-items: center;
   border: 1px solid #0A68C1;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 .emotion-1:disabled {
   cursor: not-allowed;
-  background-color: #F2F2F2;
+  background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
@@ -65,7 +65,7 @@ exports[`Button renders Icon Button 1`] = `
 
 .emotion-1:focus:not(:disabled) {
   background-color: #0A68C1;
-  box-shadow: 0 0 0 2px white,0 0 0 4px transparent;
+  box-shadow: 0 0 0 2px white,0 0 0 4px #FFFFFF;
 }
 
 .emotion-1:active:not(:disabled) {
@@ -78,7 +78,7 @@ exports[`Button renders Icon Button 1`] = `
 
 .emotion-1:disabled {
   border: none;
-  background-color: #F2F2F2;
+  background-color: #f0f0f0;
 }
 
 .emotion-1:disabled svg {
@@ -87,7 +87,7 @@ exports[`Button renders Icon Button 1`] = `
 
 .emotion-1:hover:not(:disabled) {
   border: 1px solid #0A68C1;
-  background-color: #E5F3FF;
+  background-color: #F6FBFF;
 }
 
 .emotion-1:hover:not(:disabled) svg {
@@ -96,7 +96,7 @@ exports[`Button renders Icon Button 1`] = `
 
 .emotion-1:focus:not(:disabled) {
   border: 1px solid #0A68C1;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 .emotion-1:focus:not(:disabled) svg {
@@ -109,7 +109,7 @@ exports[`Button renders Icon Button 1`] = `
 }
 
 .emotion-1:active:not(:disabled) svg {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-0 {
@@ -149,7 +149,8 @@ exports[`Button renders Large Button 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #ffffff;
+  overflow: hidden;
+  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -173,7 +174,7 @@ exports[`Button renders Large Button 1`] = `
 
 .emotion-0:disabled {
   cursor: not-allowed;
-  background-color: #F2F2F2;
+  background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
@@ -183,7 +184,7 @@ exports[`Button renders Large Button 1`] = `
 
 .emotion-0:focus:not(:disabled) {
   background-color: #0A68C1;
-  box-shadow: 0 0 0 2px white,0 0 0 4px transparent;
+  box-shadow: 0 0 0 2px white,0 0 0 4px #FFFFFF;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -207,7 +208,8 @@ exports[`Button renders Medium Rounded Button 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #ffffff;
+  overflow: hidden;
+  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -231,7 +233,7 @@ exports[`Button renders Medium Rounded Button 1`] = `
 
 .emotion-0:disabled {
   cursor: not-allowed;
-  background-color: #F2F2F2;
+  background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
@@ -241,7 +243,7 @@ exports[`Button renders Medium Rounded Button 1`] = `
 
 .emotion-0:focus:not(:disabled) {
   background-color: #0A68C1;
-  box-shadow: 0 0 0 2px white,0 0 0 4px transparent;
+  box-shadow: 0 0 0 2px white,0 0 0 4px #FFFFFF;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -265,7 +267,8 @@ exports[`Button renders Small Square Button 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #ffffff;
+  overflow: hidden;
+  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -299,7 +302,7 @@ exports[`Button renders Small Square Button 1`] = `
 
 .emotion-0:disabled {
   cursor: not-allowed;
-  background-color: #F2F2F2;
+  background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
@@ -309,7 +312,7 @@ exports[`Button renders Small Square Button 1`] = `
 
 .emotion-0:focus:not(:disabled) {
   background-color: #0A68C1;
-  box-shadow: 0 0 0 2px white,0 0 0 4px transparent;
+  box-shadow: 0 0 0 2px white,0 0 0 4px #FFFFFF;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -333,7 +336,8 @@ exports[`Button renders with fallback formatting 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #ffffff;
+  overflow: hidden;
+  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -367,7 +371,7 @@ exports[`Button renders with fallback formatting 1`] = `
 
 .emotion-0:disabled {
   cursor: not-allowed;
-  background-color: #F2F2F2;
+  background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
@@ -377,7 +381,7 @@ exports[`Button renders with fallback formatting 1`] = `
 
 .emotion-0:focus:not(:disabled) {
   background-color: #0A68C1;
-  box-shadow: 0 0 0 2px white,0 0 0 4px transparent;
+  box-shadow: 0 0 0 2px white,0 0 0 4px #FFFFFF;
 }
 
 .emotion-0:active:not(:disabled) {

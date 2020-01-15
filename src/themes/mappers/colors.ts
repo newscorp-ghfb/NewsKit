@@ -5,18 +5,17 @@ export const createThemeColors = (primitives: ColorPrimitives) => ({
 
   // Button
 
-  buttonFill: primitives.interactive010,
+  buttonFill: primitives.inkBrand,
   buttonText: primitives.inkInverse,
-
-  buttonDisabledFill: primitives.interactiveDisabled,
+  buttonDisabledFill: primitives.disabled,
   buttonDisabledText: primitives.inkNonEssential,
 
   // Link
 
-  linkText: primitives.link010,
-  linkVisited: primitives.link010Visited,
-  linkHover: primitives.link010Hover,
-  linkActive: primitives.link010Active,
+  linkText: primitives.accessibleBlue010,
+  linkVisited: primitives.visited010,
+  linkHover: primitives.accessibleBlue010,
+  linkActive: primitives.accessibleBlue010,
 
   // Title Bar
 
@@ -28,13 +27,11 @@ export const createThemeColors = (primitives: ColorPrimitives) => ({
   tagFill: primitives.interface020,
   tagBorder: primitives.interface030,
   tagText: primitives.inkSubtle,
-
   tagHoverFill: primitives.interfaceHover,
   tagHoverBorder: primitives.interface040,
   tagHoverText: primitives.inkBase,
-
-  tagDisabledFill: primitives.interactiveDisabled,
-  tagDisabledBorder: primitives.interactiveDisabled,
+  tagDisabledFill: primitives.disabled,
+  tagDisabledBorder: primitives.disabled,
   tagDisabledText: primitives.inkNonEssential,
 
   // Share bar
@@ -44,8 +41,8 @@ export const createThemeColors = (primitives: ColorPrimitives) => ({
   shareIconBorder: primitives.inkSubtle,
   shareIconBackground: primitives.interface020,
 
-  shareIconHoverFill: primitives.interactive010,
-  shareIconHoverBorder: primitives.interactive010,
+  shareIconHoverFill: primitives.inkBrand,
+  shareIconHoverBorder: primitives.inkBrand,
   shareIconHoverBackground: primitives.interface020,
 
   // Article

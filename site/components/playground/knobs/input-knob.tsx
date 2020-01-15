@@ -49,7 +49,7 @@ export const StyledInput = styled.input`
 
   :focus {
     outline: none;
-    border-color: ${getColorFromTheme('interactive010')};
+    border-color: ${getColorFromTheme('inkBrand')};
   }
 `;
 

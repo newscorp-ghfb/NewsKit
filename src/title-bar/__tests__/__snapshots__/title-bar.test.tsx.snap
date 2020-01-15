@@ -18,7 +18,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   padding-top: 24px;
   padding-bottom: 24px;
   box-sizing: border-box;
-  border-color: #E6E6E6;
+  border-color: #e4e4e4;
   border-width: 1px;
   border-style: none;
   border-top-style: none;
@@ -66,7 +66,8 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #ffffff;
+  overflow: hidden;
+  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -100,7 +101,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 
 .emotion-2:disabled {
   cursor: not-allowed;
-  background-color: #F2F2F2;
+  background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
@@ -110,7 +111,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 
 .emotion-2:focus:not(:disabled) {
   background-color: #0A68C1;
-  box-shadow: 0 0 0 2px white,0 0 0 4px transparent;
+  box-shadow: 0 0 0 2px white,0 0 0 4px #FFFFFF;
 }
 
 .emotion-2:active:not(:disabled) {
@@ -161,7 +162,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   padding-top: 24px;
   padding-bottom: 24px;
   box-sizing: border-box;
-  border-color: #E6E6E6;
+  border-color: #e4e4e4;
   border-width: 1px;
   border-style: none;
   border-top-style: none;
@@ -269,7 +270,7 @@ exports[`TitleBar should display correctly as Heading1 tag 1`] = `
   padding-top: 24px;
   padding-bottom: 24px;
   box-sizing: border-box;
-  border-color: #E6E6E6;
+  border-color: #e4e4e4;
   border-width: 1px;
   border-style: none;
   border-top-style: none;
@@ -332,7 +333,7 @@ exports[`TitleBar should display correctly as Heading2 tag 1`] = `
   padding-top: 24px;
   padding-bottom: 24px;
   box-sizing: border-box;
-  border-color: #E6E6E6;
+  border-color: #e4e4e4;
   border-width: 1px;
   border-style: none;
   border-top-style: none;
@@ -395,7 +396,7 @@ exports[`TitleBar should display correctly as Heading3 tag 1`] = `
   padding-top: 24px;
   padding-bottom: 24px;
   box-sizing: border-box;
-  border-color: #E6E6E6;
+  border-color: #e4e4e4;
   border-width: 1px;
   border-style: none;
   border-top-style: none;
@@ -458,7 +459,7 @@ exports[`TitleBar should display correctly as Heading4 tag 1`] = `
   padding-top: 24px;
   padding-bottom: 24px;
   box-sizing: border-box;
-  border-color: #E6E6E6;
+  border-color: #e4e4e4;
   border-width: 1px;
   border-style: none;
   border-top-style: none;
@@ -521,7 +522,7 @@ exports[`TitleBar should display correctly as Heading5 tag 1`] = `
   padding-top: 24px;
   padding-bottom: 24px;
   box-sizing: border-box;
-  border-color: #E6E6E6;
+  border-color: #e4e4e4;
   border-width: 1px;
   border-style: none;
   border-top-style: none;
@@ -586,7 +587,7 @@ exports[`TitleBar should display correctly as Heading6 tag 1`] = `
   padding-top: 24px;
   padding-bottom: 24px;
   box-sizing: border-box;
-  border-color: #E6E6E6;
+  border-color: #e4e4e4;
   border-width: 1px;
   border-style: none;
   border-top-style: none;
@@ -649,7 +650,7 @@ exports[`TitleBar should display correctly with align center 1`] = `
   padding-top: 24px;
   padding-bottom: 24px;
   box-sizing: border-box;
-  border-color: #E6E6E6;
+  border-color: #e4e4e4;
   border-width: 1px;
   border-style: none;
   border-top-style: none;
@@ -712,7 +713,7 @@ exports[`TitleBar should display correctly with align left 1`] = `
   padding-top: 24px;
   padding-bottom: 24px;
   box-sizing: border-box;
-  border-color: #E6E6E6;
+  border-color: #e4e4e4;
   border-width: 1px;
   border-style: none;
   border-top-style: none;
@@ -797,7 +798,7 @@ exports[`TitleBar should display correctly with border Bottom 1`] = `
   padding-top: 24px;
   padding-bottom: 24px;
   box-sizing: border-box;
-  border-color: #E6E6E6;
+  border-color: #e4e4e4;
   border-width: 1px;
   border-style: none;
   border-top-style: none;
@@ -838,7 +839,7 @@ exports[`TitleBar should display correctly with border None 1`] = `
   padding-top: 24px;
   padding-bottom: 24px;
   box-sizing: border-box;
-  border-color: #E6E6E6;
+  border-color: #e4e4e4;
   border-width: 1px;
   border-style: none;
   border-top-style: none;
@@ -923,7 +924,7 @@ exports[`TitleBar should display correctly with border Top 1`] = `
   padding-top: 24px;
   padding-bottom: 24px;
   box-sizing: border-box;
-  border-color: #E6E6E6;
+  border-color: #e4e4e4;
   border-width: 1px;
   border-style: none;
   border-top-style: solid;
@@ -986,7 +987,7 @@ exports[`TitleBar should display correctly with border TopAndBottom 1`] = `
   padding-top: 24px;
   padding-bottom: 24px;
   box-sizing: border-box;
-  border-color: #E6E6E6;
+  border-color: #e4e4e4;
   border-width: 1px;
   border-style: none;
   border-top-style: solid;
@@ -1027,7 +1028,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
   padding-top: 24px;
   padding-bottom: 24px;
   box-sizing: border-box;
-  border-color: #E6E6E6;
+  border-color: #e4e4e4;
   border-width: 1px;
   border-style: none;
   border-top-style: none;
@@ -1113,7 +1114,7 @@ exports[`TitleBar should display correctly with padding left 1`] = `
   padding-bottom: 24px;
   padding-left: 24px;
   box-sizing: border-box;
-  border-color: #E6E6E6;
+  border-color: #e4e4e4;
   border-width: 1px;
   border-style: none;
   border-top-style: none;
@@ -1177,7 +1178,7 @@ exports[`TitleBar should display correctly with padding right 1`] = `
   padding-right: 24px;
   padding-bottom: 24px;
   box-sizing: border-box;
-  border-color: #E6E6E6;
+  border-color: #e4e4e4;
   border-width: 1px;
   border-style: none;
   border-top-style: none;

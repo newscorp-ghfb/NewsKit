@@ -23,7 +23,7 @@ interface ImageContainerProps extends React.HtmlHTMLAttributes<HTMLElement> {
     padding-top: ${isLoading
       ? `calc(100% * (${aspectHeight}/${aspectWidth}))`
       : 0};
-  background-color: ${getColorFromTheme('skeleton010')};
+  background-color: ${getColorFromTheme('skeletonLight')};
   border-radius: ${props => ({shape = props.shape || ImageShape.Square}) =>
     ({
       [ImageShape.Square]: undefined,

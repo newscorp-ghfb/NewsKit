@@ -36,10 +36,10 @@ export const component = () => (
             <Icon $size="sizing070" />
             <Icon $size="sizing080" />
             <Icon $size="sizing090" />
-            <Icon $color="semanticNegative" $size="sizing090" />
-            <Icon $color="semanticPositive" $size="sizing090" />
-            <Icon $color="semanticNotice" $size="sizing090" />
-            <Icon $color="semanticInformative" $size="sizing090" />
+            <Icon $color="semanticNegativeBase" $size="sizing090" />
+            <Icon $color="semanticPositiveBase" $size="sizing090" />
+            <Icon $color="semanticNoticeBase" $size="sizing090" />
+            <Icon $color="semanticInformativeBase" $size="sizing090" />
           </div>
         );
       })}

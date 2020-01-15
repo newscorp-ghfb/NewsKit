@@ -55,7 +55,7 @@ const LiveTag = styled(Tag)`
   text-align: center;
   line-height: 1.6;
   border: none;
-  background-color: ${getColorFromTheme('semanticNegative')};
+  background-color: ${getColorFromTheme('semanticNegativeBase')};
   color: ${getColorFromTheme('inkInverse')};
   text-transform: uppercase;
   margin-right: ${getSizingFromTheme('spacingSize040')};

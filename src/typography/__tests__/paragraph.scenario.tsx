@@ -16,7 +16,7 @@ export const component = () => (
       <Sup>superscript element</Sup>
     </P>
     <P $dropCap>{bodyString}</P>
-    <P $dropCap $dropCapColor="link010">
+    <P $dropCap $dropCapColor="accessibleBlue010">
       {bodyString}
     </P>
   </React.Fragment>

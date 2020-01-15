@@ -58,17 +58,17 @@ exports[`Sidebar navigation collapses successfully at 2nd level 1`] = `
 
 .emotion-1:hover {
   color: #2e2e2e;
-  background-color: #E5F3FF;
+  background-color: #F6FBFF;
 }
 
 .emotion-1:focus {
   outline: none;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #0A68C1;
 }
 
 .emotion-1:focus svg polygon {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 a {
@@ -448,17 +448,17 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
 
 .emotion-1:hover {
   color: #2e2e2e;
-  background-color: #E5F3FF;
+  background-color: #F6FBFF;
 }
 
 .emotion-1:focus {
   outline: none;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #0A68C1;
 }
 
 .emotion-1:focus svg polygon {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 a {
@@ -799,17 +799,17 @@ exports[`Sidebar navigation on route level renders correctly without given path 
 
 .emotion-1:hover {
   color: #2e2e2e;
-  background-color: #E5F3FF;
+  background-color: #F6FBFF;
 }
 
 .emotion-1:focus {
   outline: none;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #0A68C1;
 }
 
 .emotion-1:focus svg polygon {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 a {
@@ -1150,17 +1150,17 @@ exports[`Sidebar navigation on theming page after click guides menu collapses 1`
 
 .emotion-1:hover {
   color: #2e2e2e;
-  background-color: #E5F3FF;
+  background-color: #F6FBFF;
 }
 
 .emotion-1:focus {
   outline: none;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #0A68C1;
 }
 
 .emotion-1:focus svg polygon {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 a {
@@ -1501,17 +1501,17 @@ exports[`Sidebar navigation on theming page after enter key guides menu collapse
 
 .emotion-1:hover {
   color: #2e2e2e;
-  background-color: #E5F3FF;
+  background-color: #F6FBFF;
 }
 
 .emotion-1:focus {
   outline: none;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #0A68C1;
 }
 
 .emotion-1:focus svg polygon {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 a {
@@ -1852,17 +1852,17 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
 
 .emotion-1:hover {
   color: #2e2e2e;
-  background-color: #E5F3FF;
+  background-color: #F6FBFF;
 }
 
 .emotion-1:focus {
   outline: none;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #0A68C1;
 }
 
 .emotion-1:focus svg polygon {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 a {
@@ -1937,17 +1937,17 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
 
 .emotion-10:hover {
   color: #2e2e2e;
-  background-color: #E5F3FF;
+  background-color: #F6FBFF;
 }
 
 .emotion-10:focus {
   outline: none;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #0A68C1;
 }
 
 .emotion-10:focus svg polygon {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-10 a {
@@ -2564,17 +2564,17 @@ exports[`Sidebar navigation on theming page renders as expected 1`] = `
 
 .emotion-1:hover {
   color: #2e2e2e;
-  background-color: #E5F3FF;
+  background-color: #F6FBFF;
 }
 
 .emotion-1:focus {
   outline: none;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #0A68C1;
 }
 
 .emotion-1:focus svg polygon {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-1 a {

@@ -66,19 +66,68 @@ const ButtonElement = styled.button<ButtonProps>`
   }
 
   :hover:not(:disabled) {
-    background-color: ${getColorFromTheme('interactive010Hover')};
+    background-color: ${getColorFromTheme('blue070')};
   }
 
   :focus:not(:disabled) {
     background-color: ${getColorFromTheme('buttonFill')};
-    box-shadow: 0 0 0 2px white, 0 0 0 4px ${getColorFromTheme(
-      'interactive030',
-    )};
+    box-shadow: 0 0 0 2px white, 0 0 0 4px ${getColorFromTheme('white')};
   }
 
   :active:not(:disabled) {
-    background-color: ${getColorFromTheme('interactive010Pressed')};
+    background-color: ${getColorFromTheme('blue080')};
   }
+
+  ${({icon, theme}) =>
+    icon &&
+    `padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid ${getColorFromTheme('blue060')({theme})};
+    background-color: ${getColorFromTheme('interface010')({theme})};
+
+    & svg {
+      fill: ${getColorFromTheme('inkBase')({theme})};
+    }
+
+    :disabled {
+      border: none;
+      background-color: ${getColorFromTheme('disabled')({theme})};
+
+      & svg {
+        fill: ${getColorFromTheme('inkNonEssential')({theme})};
+      }
+    }
+  
+    :hover:not(:disabled) {
+      border: 1px solid ${getColorFromTheme('blue060')({theme})};
+      background-color: ${getColorFromTheme('interfaceHover')({theme})};
+      
+      & svg {
+        fill: ${getColorFromTheme('inkBase')({theme})};
+      }
+    }
+  
+    :focus:not(:disabled) {
+      border: 1px solid ${getColorFromTheme('blue060')({theme})};
+      background-color: ${getColorFromTheme('interface010')({theme})};
+
+      & svg {
+        fill: ${getColorFromTheme('inkBase')({theme})};
+      }
+    }
+  
+    :active:not(:disabled) {
+      border: 1px solid ${getColorFromTheme('blue090')({theme})};
+      background-color: ${getColorFromTheme('blue060')({theme})};
+
+      & svg {
+        fill: ${getColorFromTheme('inkInverse')({theme})};
+      }
+    }
+  `}
 `;
 
 export const Button: React.FC<

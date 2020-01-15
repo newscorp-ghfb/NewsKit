@@ -51,12 +51,12 @@ const StyledLabel = styled.label<StyledLabelProps>`
   }}
 
   input:checked + & {
-    background-color: ${getColorFromTheme('interactive010')};
+    background-color: ${getColorFromTheme('inkBrand')};
     color: ${getColorFromTheme('interface020')};
   }
   input:focus + & {
     outline: none;
-    background-color: ${getColorFromTheme('interactive010Pressed')};
+    background-color: ${getColorFromTheme('blue080')};
   }
 
   :hover {

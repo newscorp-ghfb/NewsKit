@@ -4,7 +4,7 @@ exports[`ShareBar does not render invalid elements 1`] = `
 <DocumentFragment>
   .emotion-12 {
   width: 100%;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
@@ -226,7 +226,7 @@ exports[`ShareBar href renders as an anchor 1`] = `
 <DocumentFragment>
   .emotion-14 {
   width: 100%;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
@@ -449,7 +449,7 @@ exports[`ShareBar renders with a border 1`] = `
 <DocumentFragment>
   .emotion-14 {
   width: 100%;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
@@ -559,7 +559,7 @@ exports[`ShareBar renders with a border 1`] = `
 
 .emotion-1:hover {
   border: 1px solid #0A68C1;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .emotion-1:hover svg {
@@ -691,7 +691,7 @@ exports[`ShareBar renders with custom components 1`] = `
 <DocumentFragment>
   .emotion-16 {
   width: 100%;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
@@ -936,7 +936,7 @@ exports[`ShareBar renders with left and right icons 1`] = `
 <DocumentFragment>
   .emotion-14 {
   width: 100%;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
@@ -1176,7 +1176,7 @@ exports[`ShareBar renders with left and right labels 1`] = `
 <DocumentFragment>
   .emotion-16 {
   width: 100%;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
@@ -1449,7 +1449,7 @@ exports[`ShareBar renders with left icons 1`] = `
 <DocumentFragment>
   .emotion-8 {
   width: 100%;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
@@ -1611,7 +1611,7 @@ exports[`ShareBar renders with no icons and labels 1`] = `
 <DocumentFragment>
   .emotion-2 {
   width: 100%;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;

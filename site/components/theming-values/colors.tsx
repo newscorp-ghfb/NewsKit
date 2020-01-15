@@ -38,7 +38,7 @@ export const TextBoxSwatch = styled.span<{
   border-radius: ${({theme}) => theme.borderRadius.semiRounded.sizing040};
   background-color: ${({theme, themeColor}) => theme.colors[themeColor]};
   color: ${({theme, dark}) =>
-    dark ? theme.colors.inverse010 : theme.colors.inkContrast};
+    dark ? theme.colors.white : theme.colors.inkContrast};
 
   ::before {
     content: '${({theme, themeColor}) => theme.colors[themeColor]}';

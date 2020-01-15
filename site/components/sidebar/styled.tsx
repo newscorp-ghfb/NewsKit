@@ -15,7 +15,7 @@ export const StyledNavItem = styled.div<{
   background-color: transparent;
   box-sizing: border-box;
   color: ${({theme, active}) =>
-    active ? theme.colors.interactive010Pressed : theme.colors.inkSubtle};
+    active ? theme.colors.blue080 : theme.colors.inkSubtle};
   cursor: pointer;
   font-weight: ${({active}) => (active ? '500' : 'normal')};
   height: ${getSizingFromTheme('sizing070')};
@@ -34,7 +34,7 @@ export const StyledNavItem = styled.div<{
   :focus {
     outline: none;
     color: ${getColorFromTheme('inkInverse')};
-    background-color: ${({theme}) => theme.colors.interfaceActive};
+    background-color: ${({theme}) => theme.colors.blue060};
 
     & svg polygon {
       fill: ${getColorFromTheme('inkInverse')};

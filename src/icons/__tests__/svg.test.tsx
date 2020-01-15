@@ -21,7 +21,7 @@ describe('Svg', () => {
   test('renders a menu icon with specified size and color', () => {
     const theme = {
       colors: {
-        interactive030: '#158acf',
+        white: '#158acf',
       },
       sizing: {
         sizing010: 1,
@@ -32,7 +32,7 @@ describe('Svg', () => {
         theme={theme as any}
         viewBox="1 2 3 4"
         $size="iconSize010"
-        $color="interactive030"
+        $color="white"
       />,
     );
     expect(fragment).toMatchSnapshot();

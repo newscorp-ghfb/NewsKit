@@ -17,7 +17,7 @@ const SectionNavigationContainer = styled.nav`
   min-height: 64px;
   margin-bottom: ${getSizingFromTheme('sizing070')};
   border-bottom: 1px solid ${getColorFromTheme('interface040')};
-  background-color: ${getColorFromTheme('interfaceBackground')};
+  background-color: ${getColorFromTheme('interfaceBackground010')};
   display: flex;
   position: sticky;
   top: 64px;
