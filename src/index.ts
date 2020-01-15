@@ -23,3 +23,4 @@ export * from './typography';
 export * from './utils/get-bui-id';
 export * from './utils/responsive-helpers';
 export * from './utils/style';
+export * from './tealium';

@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tealium with environment dev renders scripts for dev environment 1`] = `
+<DocumentFragment>
+  <script
+    type="text/javascript"
+  >
+    (function(a,b,c,d){
+                a='//tags.tiqcdn.com/utag/newsinternational/thetimes.newskit/dev/utag.js';
+               b=document;
+               c='script';
+               d=b.createElement(c);
+               d.src=a;
+               d.type='text/java'+c;
+               d.async=true;
+               a=b.getElementsByTagName(c)[0];
+               a.parentNode.insertBefore(d,a);
+             })();
+             
+  </script>
+</DocumentFragment>
+`;
+
+exports[`Tealium with environment prod renders scripts for prod environment 1`] = `
+<DocumentFragment>
+  <script
+    type="text/javascript"
+  >
+    (function(a,b,c,d){
+                a='//tags.tiqcdn.com/utag/newsinternational/thetimes.newskit/prod/utag.js';
+               b=document;
+               c='script';
+               d=b.createElement(c);
+               d.src=a;
+               d.type='text/java'+c;
+               d.async=true;
+               a=b.getElementsByTagName(c)[0];
+               a.parentNode.insertBefore(d,a);
+             })();
+             
+  </script>
+</DocumentFragment>
+`;
+
+exports[`Tealium with environment stage renders scripts for stage environment 1`] = `
+<DocumentFragment>
+  <script
+    type="text/javascript"
+  >
+    (function(a,b,c,d){
+                a='//tags.tiqcdn.com/utag/newsinternational/thetimes.newskit/stage/utag.js';
+               b=document;
+               c='script';
+               d=b.createElement(c);
+               d.src=a;
+               d.type='text/java'+c;
+               d.async=true;
+               a=b.getElementsByTagName(c)[0];
+               a.parentNode.insertBefore(d,a);
+             })();
+             
+  </script>
+</DocumentFragment>
+`;

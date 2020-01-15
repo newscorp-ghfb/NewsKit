@@ -1,7 +1,7 @@
 /* eslint react/no-array-index-key: 0 */
 import * as React from 'react';
 import Document, {Head, Main, NextScript, DocumentContext} from 'next/document';
-import {Consent} from 'newskit';
+import {Consent, Tealium} from 'newskit';
 import Meta from '../components/meta';
 
 interface Props {
@@ -28,7 +28,7 @@ export default class MyDocument extends Document<Props> {
             *, ::after, ::before {
               box-sizing: border-box;
             }
-          
+
             body {
               margin: 0;
             }
@@ -38,6 +38,11 @@ export default class MyDocument extends Document<Props> {
           <Consent accountId="259" />
         </Head>
         <body>
+          <Tealium
+            account="newsinternational"
+            profile="thetimes.newskit"
+            env="dev"
+          />
           <Main />
           <NextScript />
         </body>
