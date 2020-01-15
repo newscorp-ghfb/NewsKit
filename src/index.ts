@@ -3,6 +3,7 @@ export * from './article-byline';
 export * from './article-content';
 export * from './article-headline';
 export * from './article-standfirst';
+export * from './audio-player';
 export * from './block';
 export * from './button';
 export * from './consent';

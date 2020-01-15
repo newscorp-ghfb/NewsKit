@@ -59,6 +59,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 }
 
 .emotion-2 {
+  display: inline-block;
   position: relative;
   width: auto;
   border: none;

@@ -142,6 +142,7 @@ exports[`Button renders Icon Button 1`] = `
 exports[`Button renders Large Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: inline-block;
   position: relative;
   width: auto;
   border: none;
@@ -201,6 +202,7 @@ exports[`Button renders Large Button 1`] = `
 exports[`Button renders Medium Rounded Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: inline-block;
   position: relative;
   width: auto;
   border: none;
@@ -260,6 +262,7 @@ exports[`Button renders Medium Rounded Button 1`] = `
 exports[`Button renders Small Square Button 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: inline-block;
   position: relative;
   width: auto;
   border: none;
@@ -329,6 +332,7 @@ exports[`Button renders Small Square Button 1`] = `
 exports[`Button renders with fallback formatting 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: inline-block;
   position: relative;
   width: auto;
   border: none;

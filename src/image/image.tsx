@@ -2,6 +2,11 @@ import React, {useState} from 'react';
 import {styled, getColorFromTheme} from '../utils/style';
 import {Placeholder} from '../icons';
 
+export enum ImageShape {
+  Square = 'square',
+  Rounded = 'rounded',
+}
+
 export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   aspectHeight: number | string;
   aspectWidth: number | string;
@@ -16,12 +21,13 @@ interface ImageContainerProps extends React.HtmlHTMLAttributes<HTMLElement> {
   shape?: ImageShape;
 }
 
-  const Container = styled.div`
-    position: relative;
-    width: 100%;
-    height: ${isLoading ? 0 : 'auto'};
-    padding-top: ${isLoading
-      ? `calc(100% * (${aspectHeight}/${aspectWidth}))`
+const ImageContainer = styled.div<ImageContainerProps>`
+  position: relative;
+  width: 100%;
+  height: ${props => (props.isLoading ? 0 : 'auto')};
+  padding-top: ${props =>
+    props.isLoading
+      ? `calc(100% * (${props.aspectHeight}/${props.aspectWidth}))`
       : 0};
   background-color: ${getColorFromTheme('skeletonLight')};
   border-radius: ${props => ({shape = props.shape || ImageShape.Square}) =>
@@ -47,6 +53,7 @@ const ImageComponent = (props: ImageProps) => {
     width: 100%;
     height: auto;
     animation: fadeIn 300ms;
+    border-radius: inherit;
 
     @keyframes fadeIn {
       from {
@@ -76,7 +83,7 @@ const ImageComponent = (props: ImageProps) => {
   `;
 
   return (
-    <Container>
+    <ImageContainer {...props} isLoading={isLoading}>
       <IconContainer>
         <InnerIconContainer>
           <Placeholder $size="iconSize040" />
@@ -86,7 +93,7 @@ const ImageComponent = (props: ImageProps) => {
         {...props}
         onLoad={() => isLoading && setIsLoading(false)}
       />
-    </Container>
+    </ImageContainer>
   );
 };
 

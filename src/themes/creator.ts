@@ -50,6 +50,8 @@ export interface Icons {
   Placeholder?: NonColourableIcon;
   CopyLink?: ColourableIcon;
   Circle?: ColourableIcon;
+  Play?: ColourableIcon;
+  Pause?: ColourableIcon;
 }
 
 export interface Theme extends Record<string, unknown> {

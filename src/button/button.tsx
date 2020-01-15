@@ -9,11 +9,13 @@ import {
 import {ButtonProps, ButtonShape, ButtonSize} from './types';
 
 const ButtonElement = styled.button<ButtonProps>`
+  display: inline-block;
   position: relative;
   width: auto;
   border: none;
   outline: none;
   appearance: none;
+  overflow: hidden;
   color: ${getColorFromTheme('buttonText')};
   transition-property: background-color;
   transition-duration: ${getAnimationFromTheme('animationDuration020')};
@@ -21,11 +23,12 @@ const ButtonElement = styled.button<ButtonProps>`
   background-color: ${getColorFromTheme('buttonFill')};
   cursor: pointer;
 
-  ${({$size = ButtonSize.Small, theme}) => {
+  ${({$size = ButtonSize.Small, icon, theme}) => {
     const defaultStyle = css`
       ${getTypePresetFromTheme('button010')({theme})}
       padding: 0 ${theme.sizing.sizing020};
       height: ${theme.sizing.sizing060};
+      ${icon && `width: ${theme.sizing.sizing060};`}
       /* Extend touchpoint area */
       margin: ${theme.sizing.sizing020} 0;
       ::before {
@@ -44,11 +47,13 @@ const ButtonElement = styled.button<ButtonProps>`
         ${getTypePresetFromTheme('button020')({theme})}
         padding: 0 ${theme.sizing.sizing040};
         height: ${theme.sizing.sizing070};
+        ${icon && `width: ${theme.sizing.sizing070};`}
       `,
       [ButtonSize.Large]: css`
         ${getTypePresetFromTheme('button030')({theme})}
         padding: 0 ${theme.sizing.sizing050};
         height: ${theme.sizing.sizing080};
+        ${icon && `width: ${theme.sizing.sizing080};`}
       `,
     }[$size];
   }}

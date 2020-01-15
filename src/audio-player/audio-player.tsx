@@ -32,7 +32,7 @@ const PlayerContainer = styled.div`
   border-radius: ${getSizingFromTheme('sizing040')};
   box-shadow: 0px 1px ${getSizingFromTheme('sizing010')} 0px
     rgba(96, 97, 112, 0.5);
-  padding: ${getSizingFromTheme('spacingSize060')};
+  padding: ${getSizingFromTheme('sizing060')};
 `;
 
 const MetaArea = styled.div`
@@ -42,7 +42,7 @@ const MetaArea = styled.div`
 `;
 
 const InfoArea = styled.div`
-  margin-left: ${getSizingFromTheme('spacingSize050')};
+  margin-left: ${getSizingFromTheme('sizing050')};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,7 +58,7 @@ const LiveTag = styled(Tag)`
   background-color: ${getColorFromTheme('semanticNegativeBase')};
   color: ${getColorFromTheme('inkInverse')};
   text-transform: uppercase;
-  margin-right: ${getSizingFromTheme('spacingSize040')};
+  margin-right: ${getSizingFromTheme('sizing040')};
 `;
 
 const Label = styled.span`
@@ -74,13 +74,13 @@ const ProgrammeTime = styled(Label)`
 
 const ProgrammeTitle = styled(H1)`
   ${getTypePresetFromTheme('heading040')};
-  margin-top: ${getSizingFromTheme('spacingSize040')};
-  margin-bottom: ${getSizingFromTheme('spacingSize020')};
+  margin-top: ${getSizingFromTheme('sizing040')};
+  margin-bottom: ${getSizingFromTheme('sizing020')};
 `;
 
 const ProgrammeDescription = styled(Label)`
   ${getTypePresetFromTheme('subhead010')};
-  margin-bottom: ${getSizingFromTheme('spacingSize040')};
+  margin-bottom: ${getSizingFromTheme('sizing040')};
 `;
 
 const ProgrammeTags = styled(Label)`
@@ -88,7 +88,7 @@ const ProgrammeTags = styled(Label)`
 `;
 
 const PlayerButton = styled(Button)`
-  margin: ${getSizingFromTheme('spacingSize040')} auto 0;
+  margin: ${getSizingFromTheme('sizing040')} auto 0;
 `;
 
 const ImageContainer = styled.div`

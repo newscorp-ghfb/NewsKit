@@ -67,9 +67,9 @@
     "id": "/components",
     "subNav": [
       {
-        "title": "Tag",
+        "title": "Article Byline",
         "page": true,
-        "id": "/components/tag"
+        "id": "/components/article-byline"
       },
       {
         "title": "Block",
@@ -77,27 +77,37 @@
         "id": "/components/block"
       },
       {
-        "title": "Link",
-        "page": true,
-        "id": "/components/link"
-      },
-      {
-        "title": "ArticleByline",
-        "page": true,
-        "id": "/components/article-byline"
-      },
-      {
-        "title": "ArticleHeadline",
+        "title": "Article Headline",
         "page": true,
         "id": "/components/article-headline"
       },
       {
-        "title": "ArticleStandfirst",
+        "title": "Article Standfirst",
         "page": true,
         "id": "/components/article-standfirst"
       },
       {
-        "title": "DateLine",
+        "title": "Audio Player",
+        "page": true,
+        "id": "/components/audio-player"
+      },
+      {
+        "title": "Button",
+        "page": true,
+        "id": "/components/button"
+      },
+      {
+        "title": "Consent",
+        "page": true,
+        "id": "/components/consent"
+      },
+      {
+        "title": "Consent Settings Link",
+        "page": true,
+        "id": "/components/consent-settings-link"
+      },
+      {
+        "title": "Date Line",
         "page": true,
         "id": "/components/date-line"
       },
@@ -107,37 +117,27 @@
         "id": "/components/divider"
       },
       {
-        "title": "Image",
-        "page": true,
-        "id": "/components/image"
-      },
-      {
-        "title": "TagList",
-        "page": true,
-        "id": "/components/tag-list"
-      },
-      {
-        "title": "Title Bar",
-        "page": true,
-        "id": "/components/title-bar"
-      },
-      {
         "title": "Grid & Cell",
         "page": true,
         "id": "/components/grid"
       },
       {
-        "title": "OrderedList",
+        "title": "Image",
+        "page": true,
+        "id": "/components/image"
+      },
+      {
+        "title": "Link",
+        "page": true,
+        "id": "/components/link"
+      },
+      {
+        "title": "Ordered List",
         "page": true,
         "id": "/components/ordered-list"
       },
       {
-        "title": "UnorderedList",
-        "page": true,
-        "id": "/components/unordered-list"
-      },
-      {
-        "title": "ShareBar",
+        "title": "Share Bar",
         "page": true,
         "id": "/components/share-bar"
       },
@@ -147,19 +147,24 @@
         "id": "/components/slider"
       },
       {
-        "title": "Consent",
+        "title": "Tag",
         "page": true,
-        "id": "/components/consent"
+        "id": "/components/tag"
       },
       {
-        "title": "ConsentSettingsLink",
+        "title": "Tag List",
         "page": true,
-        "id": "/components/consent-settings-link"
+        "id": "/components/tag-list"
       },
       {
-        "title": "Button",
+        "title": "Title Bar",
         "page": true,
-        "id": "/components/button"
+        "id": "/components/title-bar"
+      },
+      {
+        "title": "Unordered List",
+        "page": true,
+        "id": "/components/unordered-list"
       }
     ]
   },

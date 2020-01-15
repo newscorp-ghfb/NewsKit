@@ -11,8 +11,8 @@ const Block = styled.div`
   margin: 30px;
 `;
 
-const PlayIcon = () => <Pause $size="sizing060" $color="buttonFill" />;
-const EmailIcon = () => <Email $size="sizing120" />;
+const PlayIcon = () => <Pause $size="iconSize030" $color="buttonFill" />;
+const EmailIcon = () => <Email $size="iconSize010" />;
 
 export const component = () => (
   <React.Fragment>

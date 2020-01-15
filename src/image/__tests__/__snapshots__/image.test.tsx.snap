@@ -55,10 +55,13 @@ exports[`Image renders with defaults 1`] = `
   height: auto;
   -webkit-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
+  border-radius: inherit;
 }
 
 <div
+    alt="Example Image"
     class="emotion-4"
+    src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
   >
     <div
       class="emotion-2"
@@ -141,10 +144,13 @@ exports[`Image renders with defaults after load 1`] = `
   height: auto;
   -webkit-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
+  border-radius: inherit;
 }
 
 <div
+    alt="Example Image"
     class="emotion-4"
+    src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
   >
     <div
       class="emotion-2"
@@ -230,10 +236,13 @@ exports[`Image renders without icon 1`] = `
   height: auto;
   -webkit-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
+  border-radius: inherit;
 }
 
 <div
+    alt="Example Image"
     class="emotion-4"
+    src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
   >
     <div
       class="emotion-2"

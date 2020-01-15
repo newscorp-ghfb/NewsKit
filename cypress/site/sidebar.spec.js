@@ -32,19 +32,23 @@ describe('Documentation Site - sidebar component', () => {
     cy.contains('Typography').should('exist');
 
     cy.get('[data-testid="/components"]').click();
-    cy.contains('Tag').should('exist');
-    cy.contains('Link').should('exist');
-    cy.contains('ArticleByline').should('exist');
-    cy.contains('ArticleHeadline').should('exist');
-    cy.contains('ArticleStandfirst').should('exist');
-    cy.contains('DateLine').should('exist');
-    cy.contains('Image').should('exist');
-    cy.contains('TagList').should('exist');
-    cy.contains('Grid & Cell').should('exist');
-    cy.contains('OrderedList').should('exist');
-    cy.contains('UnorderedList').should('exist');
-    cy.contains('ShareBar').should('exist');
+    cy.contains('Article Byline').should('exist');
+    cy.contains('Article Headline').should('exist');
+    cy.contains('Article Standfirst').should('exist');
+    cy.contains('Audio Player').should('exist');
+    cy.contains('Date Line').should('exist');
+    cy.contains('Divider').should('exist');
+    cy.contains('Button').should('exist');
     cy.contains('Consent').should('exist');
+    cy.contains('Consent Settings Link').should('exist');
+    cy.contains('Grid & Cell').should('exist');
+    cy.contains('Image').should('exist');
+    cy.contains('Link').should('exist');
+    cy.contains('Ordered List').should('exist');
+    cy.contains('Share Bar').should('exist');
+    cy.contains('Tag').should('exist');
+    cy.contains('Tag List').should('exist');
+    cy.contains('Unordered List').should('exist');
 
     cy.get('[data-testid="/pages"]').click();
     cy.contains('Article').should('exist');
