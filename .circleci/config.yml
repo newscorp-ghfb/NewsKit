@@ -21,7 +21,7 @@ executors:
 
   kubectl-deploy:
     docker:
-      - image: $PIPELINE_REGISTRY/kubectl:latest
+      - image: $PIPELINE_REGISTRY/kubectl:0.1.51
         auth:
           username: $DOCKER_USERNAME
           password: $DOCKER_PASSWORD
