@@ -1,6 +1,5 @@
 module.exports = {
   appName: 'DS Site',
-  showLogs: true,
   batchName: 'DS Site',
   browser: [
     {deviceName: 'iPhone 5/SE'},

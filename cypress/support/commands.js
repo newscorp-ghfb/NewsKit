@@ -19,3 +19,19 @@ Cypress.Commands.add('takeSnapshot', viewport => {
   checkViewport(viewport);
   cy.matchImageSnapshot(viewport);
 });
+
+Cypress.Commands.add('checkA11yWithDefaultRules', () => {
+  cy.checkA11y({
+    rules: {
+      'page-has-heading-one': {enabled: false},
+    },
+  });
+});
+
+Cypress.Commands.add('checkA11yWithCustomRule', customRule => {
+  cy.checkA11y({
+    rules: {
+      [customRule]: {enabled: false},
+    },
+  });
+});

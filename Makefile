@@ -38,6 +38,9 @@ build_docs:
 unit_test:
 	yarn test:ci
 
+comps_visual_test:
+	yarn test:visual:comps:ci
+
 e2e_test_build:
 	yarn e2e:build;
 

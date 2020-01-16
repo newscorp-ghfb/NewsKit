@@ -1,6 +1,5 @@
 module.exports = {
   appName: 'DS Components',
-  showLogs: true,
   batchName: 'DS Components',
   storybookUrl: 'http://localhost:6006',
   browser: [
