@@ -9,10 +9,9 @@ spec:
   selector:
     app: {{ (datasource "config").DocSiteName }}
   ports:
-  - name: https
-    port: 80
-    protocol: TCP
-    targetPort: 8081
+    - port: 80
+      protocol: TCP
+      targetPort: 8081
     
 ---
 
@@ -26,7 +25,6 @@ spec:
   selector:
     app: {{ (datasource "config").StorybookName }}
   ports:
-  - name: https
-    port: 80
+  - port: 80
     protocol: TCP
     targetPort: 6006

@@ -9,8 +9,8 @@ Environment:
 Namespace:
   newskit-staging
 FQDN:
-  newskit-staging.digieng-prod.ntch.co.uk
+  newskit.staging-news.co.uk
 FQDNStorybook:
-  newskit-storybook-staging.digieng-prod.ntch.co.uk
+  storybook.newskit.staging-news.co.uk
 SSLCertARN:
   arn:aws:acm:eu-west-1:474887192380:certificate/b170a102-baab-48a4-8a55-af600246b539
