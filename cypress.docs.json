@@ -1,0 +1,6 @@
+{
+  "baseUrl": "http://localhost:8081",
+  "integrationFolder": "cypress/site",
+  "video": false,
+  "viewportWidth": 1280
+}

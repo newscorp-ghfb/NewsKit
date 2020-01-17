@@ -4,7 +4,7 @@ const playgroundElement = '[data-testid="playground-element"]';
 
 describe('Documentation Site - playground', () => {
   beforeEach(() => {
-    cy.visit(`${Cypress.env('DOC_SITE_URL')}/components/tag`);
+    cy.visit('/components/tag');
   });
 
   it('Tag playground should update the content', () => {
@@ -25,7 +25,7 @@ describe('Documentation Site - playground', () => {
 
 describe('Documentation Site - playground - Tag list', () => {
   beforeEach(() => {
-    cy.visit(`${Cypress.env('DOC_SITE_URL')}/components/tag-list`);
+    cy.visit('/components/tag-list');
   });
 
   const tagsArrayKnob = '[data-testid="array-knob-tags"]';

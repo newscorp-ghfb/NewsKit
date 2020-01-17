@@ -24,7 +24,7 @@ install:
 	yarn install --frozen-lockfile;
 
 install_cypress:
-	yarn global add cypress@3.4.0;
+	yarn global add cypress@3.8.2;
 
 build_components:
 	yarn build:comps
@@ -41,13 +41,14 @@ unit_test:
 comps_visual_test:
 	yarn test:visual:comps:ci
 
+e2e_test_comps:
+	yarn e2e:comps:ci;
+
 e2e_test_build:
 	yarn e2e:build;
 
-e2e_test:
-	(yarn serve:docs &);
-	(yarn e2e:serve &);
-	yarn e2e:test;
+e2e_test_docs:
+	yarn e2e:docs:ci;
 
 publish_npm_dev:
 	cd dist; yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable;

@@ -3,13 +3,12 @@ module.exports = {
   batchName: 'DS Site',
   browser: [
     {deviceName: 'iPhone 5/SE'},
-    {deviceName: 'iPhone X'},
     {deviceName: 'iPad'},
-    {deviceName: 'Pixel 2'},
-    {width: 800, height: 600, name: 'firefox'},
+    {width: 1024, height: 768, name: 'firefox'},
     {width: 2880, height: 1800, name: 'chrome'},
-    {width: 1024, height: 768, name: 'ie11'},
-    {width: 800, height: 600, name: 'edge'},
+    // TODO: Add back ie11 once we have fixed the IE11 related bugs (e.g https://nidigitalsolutions.jira.com/browse/PPDSC-676)
+    // {width: 1024, height: 768, name: 'ie11'},
   ],
-  concurrency: 100,
+  matchLevel: 'Layout',
+  concurrency: 20,
 };

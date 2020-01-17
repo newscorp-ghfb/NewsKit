@@ -16,12 +16,10 @@ const pages = flatRoutes(siteRoutes);
 
 describe('Page accessibility', () => {
   pages.forEach(path => {
-    it(`should pass basic a11y test for ${Cypress.env(
-      'DOC_SITE_URL',
+    it(`should pass basic a11y test for ${Cypress.config(
+      'baseUrl',
     )}${path}`, () => {
-      const url = `${Cypress.env('DOC_SITE_URL')}${path}`;
-
-      cy.visit(url);
+      cy.visit(path);
       cy.injectAxe();
       if (path === `/foundations/typography` || path === `/pages/article`) {
         // The typography page is a showcase so we have disabled the heading order rule for this page.
@@ -33,6 +31,7 @@ describe('Page accessibility', () => {
           },
         });
       } else {
+        // TODO: Need to remove color-contrast as a rule here once PPDSC-785 ticket is fixed
         cy.checkA11y({
           rules: {
             'color-contrast': {enabled: false},

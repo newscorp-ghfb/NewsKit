@@ -1,13 +1,18 @@
 // /<reference types="Cypress" />
 
 describe('Documentation Site - sidebar component', () => {
-  beforeEach(() => {
-    cy.visit(Cypress.env('DOC_SITE_URL'));
+  before(() => {
+    cy.visit('/');
   });
 
-  it.skip('should pass basic a11y test', () => {
+  // TODO: Need to remove color-contrast as a rule here once PPDSC-785 ticket is fixed
+  it('should pass basic a11y test', () => {
     cy.injectAxe();
-    cy.checkA11y();
+    cy.checkA11y({
+      rules: {
+        'color-contrast': {enabled: false},
+      },
+    });
   });
 
   it('should contain the correct links', () => {

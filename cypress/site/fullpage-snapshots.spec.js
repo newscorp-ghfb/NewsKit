@@ -1,27 +1,25 @@
 // / <reference types="Cypress" />
 
+// Note only a subset of pages as a base for smoke tests
 const routes = {
-  welcome: '/index',
-  colours: '/foundations/colours',
-  icons: '/foundations/icons',
-  typography: '/foundations/typography',
   articleByline: '/components/article-byline',
-  articleHeadline: '/components/article-headline',
+  audioPlayer: '/components/audio-player',
   dateLine: '/components/date-line',
-  image: '/components/image',
-  orderedList: '/components/ordered-list',
-  tagList: '/components/tag-list',
+  icons: '/foundations/icons',
   shareBar: '/components/share-bar',
-  button: '/components/button',
+  // TODO: Add back when https://nidigitalsolutions.jira.com/browse/PPDSC-860 is fixed
+  // spacing: '/foundations/spacing',
+  typography: '/foundations/typography',
+  welcome: '/index',
 };
 
 Object.entries(routes).forEach(route => {
   const [pageName, path] = route;
 
-  describe.skip(`${pageName} page`, () => {
+  describe(`${pageName} page`, () => {
     it(`should pass visual regression test on ${pageName}`, () => {
       cy.eyesOpen();
-      cy.visit(`${Cypress.env('DOC_SITE_URL')}${path}`);
+      cy.visit(path);
       cy.eyesCheckWindow(`${pageName} page`);
       cy.eyesClose();
     });

@@ -46,17 +46,29 @@ docs:dev
 
 * `test:unit:ci` -> runs the unit tests on a single thread (needed for build pipeline).
 
+* `test:unit:comps` -> runs the unit tests on the src folder.
+
+* `test:unit:site` -> runs the unit tests on the site folder.
+
+* `test:visual:comps:ci` -> starts the local storybook and runs the applitools storybook tests afterwards.
+
 * `e2e:build` -> builds the end to end tests.
 
 * `e2e:serve` -> runs the end to end tests on port 8080.
 
-* `e2e:test` -> runs cypress tests to completion (e2e:build needs to run prior to this).
+* `e2e:comps` -> opens the cypress test runner in interactive mode and loads the tests found on cypress/components folder (e2e:serve needs to be running prior to this).
 
-* `e2e:dev` -> opens the Cypress test runner in interactive mode (e2e:serve needs to be running prior to this).
+* `e2e:comps:ci` -> starts e2e:serve and runs the cypress components tests headlessly.
+
+* `e2e:docs` -> opens the cypress test runner and loads the tests found on cypress/site folder.
+
+* `e2e:docs:ci` -> starts serve:docs and runs the cypress docs tests headlessly.
+
+* `eyes:storybook` -> runs the applitools storybook tests locally. Requires APPLITOOLS_API_KEY to be exported prior to running.
 
 ## Storybook
 
-* `storybook` -> locally starts storybook at port 6006.
+* `dev:storybook` -> locally starts storybook at port 6006.
 
 ## Build and deploy
 
@@ -68,7 +80,7 @@ docs:dev
 
 * `build:ts` -> builds the Typescript components using (default) commonjs module format, into dist/.
 
-* `build:esm` -> builds the Typescript components using es2015 module format, into dist/esm/.
+* `build:ts:esm` -> builds the Typescript components using es2015 module format, into dist/esm/.
 
 * `build:storybook` -> builds storybook.
 
