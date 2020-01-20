@@ -1,6 +1,6 @@
 export type TealiumLinkEvent = {
-  event_navigation_action: string;
-  event_navigation_browsing_method: string;
+  event_navigation_action: React.ReactNode;
+  event_navigation_browsing_method?: string;
 };
 
 export type TealiumViewEvent = {

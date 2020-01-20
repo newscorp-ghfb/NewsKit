@@ -7,7 +7,6 @@ import {
   getTypePresetFromTheme,
 } from '../utils/style';
 import {ButtonProps, ButtonShape, ButtonSize} from './types';
-import {tracking} from '../analytics';
 
 const ButtonElement = styled.button<ButtonProps>`
   display: inline-block;
@@ -146,12 +145,7 @@ export const Button: React.FC<
   }
 
   return (
-    <ButtonElement
-      type="button"
-      {...restOfProps}
-      onClick={() => tracking.trackInteraction('button click', 'click')}
-      icon={Icon}
-    >
+    <ButtonElement type="button" {...restOfProps} icon={Icon}>
       {(Icon && <Icon />) || children}
     </ButtonElement>
   );

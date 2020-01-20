@@ -32,7 +32,10 @@ export const trackPageView = (pageUrl: string) => {
   });
 };
 
-export const trackInteraction = (eventName: string, browsingMethod: string) => {
+export const trackInteraction = (
+  eventName: React.ReactNode,
+  browsingMethod?: string,
+) => {
   track({
     type: 'link',
     data: {

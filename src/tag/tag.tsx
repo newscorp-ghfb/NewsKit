@@ -10,6 +10,7 @@ import {as} from '../utils/component';
 import {TagProps} from './types';
 import {SizingKeys, BorderRadiusShape} from '../themes';
 import {TagSize} from './utils';
+import {tracking} from '../analytics';
 
 const tagSizeToToken: Record<TagSize, SizingKeys> = {
   [TagSize.Large]: 'sizing070',
@@ -72,7 +73,11 @@ export const Tag: React.FC<TagProps> = props => {
   const {href, children, disabled} = props;
   const renderAs = href && !disabled ? 'a' : 'span';
   return (
-    <StyledTag {...as(renderAs)} {...props}>
+    <StyledTag
+      {...as(renderAs)}
+      {...props}
+      onClick={() => tracking.trackInteraction(children)}
+    >
       {children}
     </StyledTag>
   );
