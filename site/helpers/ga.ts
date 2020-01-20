@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-
 export const GA_ID = 'UA-133544678-2';
 
 type GoogleWindow = Window & {

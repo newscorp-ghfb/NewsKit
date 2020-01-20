@@ -14,6 +14,7 @@ module.exports = {
     context: true,
     cy: true,
     Cypress: true,
+    window: true
   },
   rules: {
     'react/prop-types': 'off',

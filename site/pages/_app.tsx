@@ -7,7 +7,10 @@ import {
   instrumentationHandlers,
   instrumentationMiddleware,
   composeInstrumentationMiddleware,
+  eventQueueInit,
+  tracking,
 } from 'newskit';
+import Router from 'next/router';
 import App, {Container} from 'next/app';
 import '../prism-coy.css'; // light theme code highlighting
 import '../tomorrow-night.css'; // dark theme code highlighting
@@ -47,6 +50,10 @@ export default class MyApp extends App<Props, State> {
     return {path: ctx.asPath, pageProps};
   }
 
+  handleRouteChange = (url: String) => {
+    tracking.trackPageView(url);
+  };
+
   componentDidMount() {
     if (window.matchMedia) {
       const mmDark = window.matchMedia(DARK_MEDIA_QUERY);
@@ -58,6 +65,8 @@ export default class MyApp extends App<Props, State> {
       mmDark.addListener(this.mediaQueryListener);
       mmLight.addListener(this.mediaQueryListener);
     }
+    Router.events.on('routeChangeComplete', this.handleRouteChange);
+    eventQueueInit();
     this.setTheme();
   }
 
@@ -68,6 +77,7 @@ export default class MyApp extends App<Props, State> {
       mmDark.removeListener(this.mediaQueryListener);
       mmLight.removeListener(this.mediaQueryListener);
     }
+    Router.events.off('routeChangeComplete', this.handleRouteChange);
   }
 
   mediaQueryListener(e) {

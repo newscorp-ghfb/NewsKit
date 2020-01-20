@@ -7,6 +7,7 @@ import {
   getTypePresetFromTheme,
 } from '../utils/style';
 import {ButtonProps, ButtonShape, ButtonSize} from './types';
+import {tracking} from '../analytics';
 
 const ButtonElement = styled.button<ButtonProps>`
   display: inline-block;
@@ -105,16 +106,16 @@ const ButtonElement = styled.button<ButtonProps>`
         fill: ${getColorFromTheme('inkNonEssential')({theme})};
       }
     }
-  
+
     :hover:not(:disabled) {
       border: 1px solid ${getColorFromTheme('blue060')({theme})};
       background-color: ${getColorFromTheme('interfaceHover')({theme})};
-      
+
       & svg {
         fill: ${getColorFromTheme('inkBase')({theme})};
       }
     }
-  
+
     :focus:not(:disabled) {
       border: 1px solid ${getColorFromTheme('blue060')({theme})};
       background-color: ${getColorFromTheme('interface010')({theme})};
@@ -123,7 +124,7 @@ const ButtonElement = styled.button<ButtonProps>`
         fill: ${getColorFromTheme('inkBase')({theme})};
       }
     }
-  
+
     :active:not(:disabled) {
       border: 1px solid ${getColorFromTheme('blue090')({theme})};
       background-color: ${getColorFromTheme('blue060')({theme})};
@@ -145,7 +146,12 @@ export const Button: React.FC<
   }
 
   return (
-    <ButtonElement type="button" {...restOfProps} icon={Icon}>
+    <ButtonElement
+      type="button"
+      {...restOfProps}
+      onClick={() => tracking.trackInteraction('button click', 'click')}
+      icon={Icon}
+    >
       {(Icon && <Icon />) || children}
     </ButtonElement>
   );

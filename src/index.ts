@@ -24,5 +24,10 @@ export * from './typography';
 export * from './utils/get-bui-id';
 export * from './utils/responsive-helpers';
 export * from './utils/style';
+<<<<<<< HEAD
 export * from './volume-control';
 export * from './utils/style-preset';
+=======
+export * from './tealium';
+export * from './analytics';
+>>>>>>> feat: implemented tealium collector
