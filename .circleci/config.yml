@@ -291,7 +291,9 @@ jobs:
           name: Run Component Tests
           command: make e2e_test_comps
       - store_artifacts:
-          path: cypress/snapshots
+          path: cypress/screenshots
+      - store_artifacts:
+          path: cypress/videos
 
   test_e2e_docs:
     working_directory: ~/project
@@ -310,7 +312,9 @@ jobs:
             export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}
             make e2e_test_docs
       - store_artifacts:
-          path: cypress/snapshots
+          path: cypress/screenshots
+      - store_artifacts:
+          path: cypress/videos
 
   create_release_candidate:
     working_directory: ~/project
