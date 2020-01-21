@@ -14,7 +14,6 @@ export function sendEventToTealium(e: AnalyticsEvent) {
       return null;
   }
 }
-
 const track = (event: AnalyticsEvent) => {
   if (extendedWindow && extendedWindow.utag) {
     sendEventToTealium(event);

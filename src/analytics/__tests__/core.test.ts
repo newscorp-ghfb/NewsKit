@@ -51,4 +51,16 @@ describe('Analytics', () => {
       page_url: 'foo bar page',
     });
   });
+
+  describe('sendEventToTealium', () => {
+    test("doesn't trigger an event if the event type is not supported", () => {
+      const event = core.sendEventToTealium({
+        type: 'foo' as any,
+        data: {
+          page_url: 'page url',
+        },
+      });
+      expect(event).toEqual(null);
+    });
+  });
 });

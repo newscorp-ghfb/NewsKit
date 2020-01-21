@@ -11,4 +11,19 @@ describe('Analytics Index', () => {
 
     expect(EventQueue.flush).toHaveBeenCalled();
   });
+
+  test('waitForTealium to be called on event queue init', () => {
+    (window as any).utag = {};
+    const spy = jest.spyOn(analytics, 'waitForTealium');
+    analytics.eventQueueInit();
+
+    expect(spy).toHaveBeenCalled();
+  });
+
+  test('waitForTealium to be called after 2000 ms if `window.utag` is not available', () => {
+    (window as any).utag = undefined;
+    analytics.waitForTealium();
+    expect(setTimeout).toHaveBeenCalledTimes(1);
+    expect(setTimeout).toHaveBeenLastCalledWith(analytics.waitForTealium, 2000);
+  });
 });
