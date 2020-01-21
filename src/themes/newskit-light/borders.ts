@@ -5,3 +5,4 @@ export const borderPrimitives = {
 };
 
 export type BorderPrimitives = typeof borderPrimitives;
+export type BorderPrimitiveKeys = keyof BorderPrimitives;

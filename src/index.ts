@@ -25,3 +25,4 @@ export * from './utils/get-bui-id';
 export * from './utils/responsive-helpers';
 export * from './utils/style';
 export * from './tealium';
+export * from './utils/style-preset';

@@ -1,6 +1,12 @@
 export {Borders, BorderKeys} from './mappers/borders';
 export {ColorKeys, Colors} from './mappers/colors';
 export {TypePresetKeys, TypePresets} from './mappers/type-presets';
+export {
+  StylePresetStyles,
+  StylePresetStyleKeys,
+  StylePresetStates,
+  StylePresetStateKeys,
+} from './mappers/style-preset';
 
 export {colorPrimitives, ColorPrimitives} from './newskit-light/colors';
 export {Animation, AnimationKeys} from './newskit-light/animation';

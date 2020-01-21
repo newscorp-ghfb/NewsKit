@@ -1,0 +1,195 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Surface Helper getStylePresetFromTheme interactive010 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #0A68C1;
+  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+<div
+    class="emotion-0"
+  >
+    interactive010
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Surface Helper getStylePresetFromTheme interactive010 with borderRadius 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 12px;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+<div
+    class="emotion-0"
+  >
+    interactive010
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Surface Helper getStylePresetFromTheme interactive010 with current state 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+<div
+    class="emotion-0"
+  >
+    interactive010
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Surface Helper getStylePresetFromTheme interactive010 with loading and current state 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #ffff00;
+  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+<div
+    class="emotion-0"
+  >
+    interactive010
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Surface Helper getStylePresetFromTheme interactive010 with loading state 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+<div
+    class="emotion-0"
+  >
+    interactive010
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Surface Helper getStylePresetFromTheme interactive010 without background-color styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-0:disabled {
+  color: #c0c0c0;
+}
+
+<div
+    class="emotion-0"
+  >
+    interactive010
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Surface Helper getStylePresetFromTheme interactive010 without disabled state styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #0A68C1;
+  color: #FFFFFF;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+<div
+    class="emotion-0"
+  >
+    interactive010
+  </div>
+</DocumentFragment>
+`;

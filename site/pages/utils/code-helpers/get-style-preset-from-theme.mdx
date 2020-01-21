@@ -1,0 +1,66 @@
+import {LegacyBlock} from '../../../components/legacy-block';
+import Layout from '../../../components/layout';
+import {Code, CodeFromFile} from '../../../components/code';
+import Prop from '../../../components/prop';
+import {Image} from 'newskit';
+
+export default Layout;
+
+# getStylePresetFromTheme()
+
+## Overview
+
+Retrieve a style preset values as a css template from the current theme. 
+For more information on what consists of style preset see doc (here)[/theming/style-preset].
+
+## Syntax
+
+<Code>{'getStylePresetFromTheme(defaultToken, customProp)(props)'}</Code>
+
+## Parameters
+
+<LegacyBlock $marginTop='sizing040'>
+  <Prop name='defaultToken' type='ThemeToken'>
+    Is the name of the style preset token to be retrieved. If provided, it is used as an object key on the style presets section of the theme to get the token value.
+  </Prop>
+  <Prop name='customProp' type="GetStylePresetFromThemeOptions">
+    This prop consists of isLoading, isCurrent, omitStates and omitStyles options. These are component specific behaviours that can be controlled via either state or passed down from parent as prop.
+  </Prop>
+  <Prop name='props' type='Props'>
+    Is the props of the component including the theme. If the function is used inside a styled component template literal, or a [css block](/utils/css), [Emotion](https://emotion.sh/docs/) will call the function first with the component props passed in.
+  </Prop>
+</LegacyBlock>
+
+## Return value
+
+Returns a template string with style preset css styles.
+
+Returns an empty string if invalid attributes or no attributes are provided.
+
+## Example
+
+<CodeFromFile language="text" path="examples/utils/get-style-preset-from-theme.tsx"/>
+
+In this example the `Paragraph` component will use the sizing value
+
+<Code>{'<Paragraph stylePreset="interactive010" />'}</Code>
+
+In this example the `Paragraph` component will use `interactive010` style preset set in the default theme.
+
+<Code>{'<Paragraph stylePreset="interactive010" isLoading={true} />'}</Code>
+
+In this example the component has a loading state passed down from the parent component.
+If so the `loading` style presets, if present, will override the `base` style presets.
+
+<Code>{'<Paragraph stylePreset="interactive010" isCurrent={true} />'}</Code>
+
+In this example the component has a current state passed down from the parent component.
+If so the `current` style presets, if present, will override the `base` style presets.
+
+<Code>{'<Paragraph stylePreset="interactive010" omitStates={["disabled"]} />'}</Code>
+
+In this example the component is using the `interactive010` style preset, without using `disabled` style presets.
+
+<Code>{'<Paragraph stylePreset="interactive010" omitStyles={["backgroundColor"]} />'}</Code>
+
+In this example the component is using the `interactive010` style preset, while ignorning all `backgroundColor` across all style presets.

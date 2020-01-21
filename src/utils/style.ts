@@ -14,7 +14,7 @@ import {ShadowKeys} from '../themes/newskit-light/shadow';
 import {SizingKeys, IconSizeKeys} from '../themes/newskit-light/spacing';
 import {MarginPresetKeys, PaddingPresetKeys} from '../themes/mappers/spacing';
 
-export {css} from '@emotion/core';
+export {css, CSSObject} from '@emotion/core';
 
 // Cast styled with the Theme so we don't have to specify theme at every usage.
 export const styled = baseStyled as CreateStyled<Theme>;

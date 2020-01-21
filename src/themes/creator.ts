@@ -21,6 +21,7 @@ import {TypePresets, createTypePresets} from './mappers/type-presets';
 import {Borders, createBorders} from './mappers/borders';
 import {Shadow, shadowPrimitives} from './newskit-light/shadow';
 import {Overlay, overlayPrimitives} from './newskit-light/overlay';
+import {createStylePresets, StylePresets} from './mappers/style-preset';
 import {
   createPaddingPresets,
   PaddingPreset,
@@ -68,6 +69,7 @@ export interface Theme extends Record<string, unknown> {
   icons: Icons;
   overlay: Overlay;
   shadow: Shadow;
+  stylePresets: StylePresets;
   zIndex: {
     modal: number;
   };
@@ -91,6 +93,11 @@ const createDefaultTheme = (): Theme => ({
   borders: createBorders(borderPrimitives),
   animation: animationPrimitives,
   overlay: overlayPrimitives,
+  stylePresets: createStylePresets({
+    colorPrimitives,
+    borderPrimitives,
+    borderRadiusPrimitives,
+  }),
   icons: {},
   zIndex: {
     modal: 2000,

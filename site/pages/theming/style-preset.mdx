@@ -1,0 +1,105 @@
+import {Code, CodeFromFile} from '../../components/code';
+import {LegacyBlock} from '../../components/legacy-block';
+import Layout from '../../components/layout';
+import {Image} from 'newskit';
+
+export default Layout;
+
+# StylePreset
+
+## Overview
+
+Every style preset carries a meaning and purpose. Specific shapes, colours or effects are used to communicate intent or give cues about the interaction.
+
+<LegacyBlock $marginBottom="sizing05" $maxWidth="760px">
+  <Image src="/static/examples/utils/style-preset.png" alt="stylepreset" />
+</LegacyBlock>
+
+1. Overlay *will be a separate foundation that can be applied in rare use cases
+2. Border
+3. Fill (image or solid colour)
+4. Shadow
+
+
+Contained within a shape of:
+- Square
+- Rounded
+- Semi-rounded
+
+A combination of the above can be used at different states, for example a button might not have a shadow until the user hovers over.
+
+In some scenarios you will want to change the look and feel of a component in ways that aren't possible through changing tokens in a theme, this is where style presets come in. 
+They can be thought of as a subset of CSS used to define look and feel of components. Style presets and their default mapping are defined on a theme, additional style presets can be created as and when needed.   
+
+Not all properties will style a given component, you should refer to specific component's to see what's supported.
+
+```
+{
+  interactive010: {
+    base: {
+      backgroundColor: colorPrimitives.brand010,
+      color: colorPrimitives.inkInverse,
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+      iconColor: colorPrimitives.inkInverse,
+    },
+    hover: {
+      backgroundColor: colorPrimitives.blue070,
+    },
+    active: {
+      backgroundColor: colorPrimitives.blue080,
+    },
+    focus: {
+      borderWidth: borderPrimitives.borderWidth020,
+    },
+    disabled: {
+      backgroundColor: colorPrimitives.neutral020,
+      color: colorPrimitives.inkNonEssential,
+    },
+  }
+}
+```
+
+The base theme defines default style presets for each component for instance 
+
+<CodeFromFile language="text" path="examples/utils/get-style-preset-from-theme.tsx"/>
+
+These can be overridden in a child theme.
+
+Often we will only want to update a specific instance of a component to style in a different manner, in this scenario we can pass a style preset to a component. 
+Nearly all visual components will take at least one style preset. It may help to think of this as applying a class to an element in HTML.
+
+<Code>{'<Paragraph stylePreset="interactive020" />'}</Code>
+
+If no style preset is provided, the button will render in the default state. Configuring this is detailed above.
+
+<Code>{'<Paragraph />'}</Code>
+
+In the future some components will take multiple style presets, that apply across multiple child components.
+
+## StylePreset States
+
+| Name    | Type            |  Description                                          |
+| ------- | --------------- | -------------------------------------------- |
+| base    | baseline css        | this is a group of style preset preset css styles |
+| hover    | css Pseudo-classes    | see https://developer.mozilla.org/en-US/docs/Web/CSS/:hover |
+| focus    | css Pseudo-classes     | see https://developer.mozilla.org/en-US/docs/Web/CSS/:focus |
+| active    | css Pseudo-classes     | see https://developer.mozilla.org/en-US/docs/Web/CSS/:active |
+| visited    | css Pseudo-classes    | see https://developer.mozilla.org/en-US/docs/Web/CSS/:visited |
+| disabled    | css Pseudo-classes   | see https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled |
+| current    | component state      | this is a set of css styles to override the base when the component is current, for example, in a tab menu the "current" would be the selected tab |
+| loading    | component state      | this is a css styles to override the base when component is in transitional "loading" state |
+
+## StylePreset Properties
+
+| Name    | Type            |  Description                                          |
+| ------- | --------------- | -------------------------------------------- |
+| boxShadow    | ShadowKeys    | see [get shadow from theme](/utils/code-helpers/get-shadow-from-theme) |
+| color    | ColorKeys    | see [get color from theme](/utils/code-helpers/get-color-from-theme)  |
+| background color    | ColorKeys    | see [get color from theme](/utils/code-helpers/get-color-from-theme)  |
+| background image    | string    | see https://developer.mozilla.org/en-US/docs/Web/CSS/background-image |
+| background repeat    | string    | see https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat |
+| background position    | string    | see https://developer.mozilla.org/en-US/docs/Web/CSS/background-position |
+| border styles    | ShadowKeys    | see [get color from theme](/utils/code-helpers/get-color-from-theme) |
+| border color    | ColorKeys    | see [get color from theme](/utils/code-helpers/get-color-from-theme) |
+| border radius    | BorderPrimitives    | see enum BorderRadiusShape (rounded, squared, semiRounded)  |
+| iconColor    | ColorKeys    | styles child svg using color and fill | 

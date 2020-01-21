@@ -2531,7 +2531,7 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
 
 exports[`Sidebar navigation on theming page renders as expected 1`] = `
 <DocumentFragment>
-  .emotion-36 {
+  .emotion-39 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -2649,7 +2649,7 @@ exports[`Sidebar navigation on theming page renders as expected 1`] = `
 
 <nav
     aria-label="Sidebar"
-    class="emotion-36"
+    class="emotion-39"
     role="navigation"
   >
     <ul
@@ -2793,6 +2793,22 @@ exports[`Sidebar navigation on theming page renders as expected 1`] = `
                 tabindex="-1"
               >
                 Code
+              </div>
+            </a>
+          </li>
+          <li
+            class="emotion-4"
+          >
+            <a
+              class="emotion-3"
+              href="/theming/style-preset"
+            >
+              <div
+                class="emotion-1"
+                data-testid="/theming/style-preset"
+                tabindex="-1"
+              >
+                StylePreset
               </div>
             </a>
           </li>

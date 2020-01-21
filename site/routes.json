@@ -28,6 +28,11 @@
         "title": "Code",
         "page": true,
         "id": "/theming/code"
+      },
+      {
+        "title": "StylePreset",
+        "page": true,
+        "id": "/theming/style-preset"
       }
     ]
   },
@@ -201,6 +206,11 @@
             "title": "getAnimationFromTheme",
             "page": true,
             "id": "/utils/code-helpers/get-animation-from-theme"
+          },
+          {
+            "title": "getStylePresetFromTheme",
+            "page": true,
+            "id": "/utils/code-helpers/get-style-preset-from-theme"
           },
           {
             "title": "getBorderFromTheme",
