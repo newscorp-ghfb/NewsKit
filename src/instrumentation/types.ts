@@ -5,6 +5,11 @@ export enum EventTrigger {
   Swipe = 'swipe',
 }
 
+export enum TealiumEvents {
+  Link = 'link',
+  View = 'view',
+}
+
 export interface InstrumentationEvent {
   originator: string;
   trigger: EventTrigger;
@@ -19,4 +24,13 @@ export type EventHandler = (
 export interface EventInstrumentation {
   context: EventContext;
   fireEvent: (event: InstrumentationEvent) => void;
+}
+
+export type UTag = {
+  link(e: InstrumentationEvent): void;
+  view(e: InstrumentationEvent): void;
+};
+
+export interface ExtendedWindow extends Window {
+  utag: UTag;
 }
