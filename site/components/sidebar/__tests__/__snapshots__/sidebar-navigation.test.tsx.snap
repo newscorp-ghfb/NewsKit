@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Sidebar navigation collapses successfully at 2nd level 1`] = `
+exports[`Sidebar navigation collapses successfully at nested level 1`] = `
 <DocumentFragment>
-  .emotion-26 {
+  .emotion-17 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -15,7 +15,7 @@ exports[`Sidebar navigation collapses successfully at 2nd level 1`] = `
   margin: 0;
 }
 
-.emotion-20 {
+.emotion-14 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
@@ -94,7 +94,7 @@ exports[`Sidebar navigation collapses successfully at 2nd level 1`] = `
   float: right;
 }
 
-.emotion-23 {
+.emotion-6 {
   color: #2F75D7;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -106,25 +106,25 @@ exports[`Sidebar navigation collapses successfully at 2nd level 1`] = `
   transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
-.emotion-23:visited {
+.emotion-6:visited {
   color: #903D91;
 }
 
-.emotion-23:hover {
+.emotion-6:hover {
   color: #2F75D7;
 }
 
-.emotion-23:active {
+.emotion-6:active {
   color: #2F75D7;
 }
 
 <nav
     aria-label="Sidebar"
-    class="emotion-26"
+    class="emotion-17"
     role="navigation"
   >
     <ul
-      class="emotion-20"
+      class="emotion-14"
       role="list"
     >
       <li
@@ -132,10 +132,10 @@ exports[`Sidebar navigation collapses successfully at 2nd level 1`] = `
       >
         <div
           class="emotion-1"
-          data-testid="/guides"
+          data-testid="/group1"
           tabindex="0"
         >
-          Getting Started
+          Group 1
           <svg
             class="emotion-0"
             viewBox="0 0 16 16"
@@ -166,146 +166,10 @@ exports[`Sidebar navigation collapses successfully at 2nd level 1`] = `
       >
         <div
           class="emotion-1"
-          data-testid="/theming"
+          data-testid="/group2"
           tabindex="0"
         >
-          Theming
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/foundations"
-          tabindex="0"
-        >
-          Foundations
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/components"
-          tabindex="0"
-        >
-          Components
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/pages"
-          tabindex="0"
-        >
-          Pages
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/utils"
-          tabindex="0"
-        >
-          Utilities
+          Group 2
           <svg
             class="emotion-0"
             viewBox="0 0 16 16"
@@ -331,18 +195,50 @@ exports[`Sidebar navigation collapses successfully at 2nd level 1`] = `
           </svg>
         </div>
         <ul
-          class="emotion-20"
+          class="emotion-14"
           role="list"
         >
           <li
             class="emotion-2"
           >
+            <a
+              class="emotion-6"
+              href="/group2/page1"
+            >
+              <div
+                class="emotion-1"
+                data-testid="/group2/page1"
+                tabindex="-1"
+              >
+                Group 2 Page 1
+              </div>
+            </a>
+          </li>
+          <li
+            class="emotion-2"
+          >
+            <a
+              class="emotion-6"
+              href="/group2/page2"
+            >
+              <div
+                class="emotion-1"
+                data-testid="/group2/page2"
+                tabindex="-1"
+              >
+                Group 2 Page 2
+              </div>
+            </a>
+          </li>
+          <li
+            class="emotion-2"
+          >
             <div
               class="emotion-1"
-              data-testid="/utils/code-helpers"
+              data-testid="/group2/group2b"
               tabindex="0"
             >
-              Code Helpers
+              Group 2b
               <svg
                 class="emotion-0"
                 viewBox="0 0 16 16"
@@ -370,30 +266,14 @@ exports[`Sidebar navigation collapses successfully at 2nd level 1`] = `
           </li>
         </ul>
       </li>
-      <li
-        class="emotion-2"
-      >
-        <a
-          class="emotion-23"
-          href="/feedback"
-        >
-          <div
-            class="emotion-1"
-            data-testid="/feedback"
-            tabindex="-1"
-          >
-            Feedback
-          </div>
-        </a>
-      </li>
     </ul>
   </nav>
 </DocumentFragment>
 `;
 
-exports[`Sidebar navigation on route level renders as expected 1`] = `
+exports[`Sidebar navigation on group 1 page after click group1 menu collapses 1`] = `
 <DocumentFragment>
-  .emotion-22 {
+  .emotion-7 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -406,7 +286,7 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
   margin: 0;
 }
 
-.emotion-21 {
+.emotion-6 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
@@ -485,37 +365,13 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
   float: right;
 }
 
-.emotion-19 {
-  color: #2F75D7;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-}
-
-.emotion-19:visited {
-  color: #903D91;
-}
-
-.emotion-19:hover {
-  color: #2F75D7;
-}
-
-.emotion-19:active {
-  color: #2F75D7;
-}
-
 <nav
     aria-label="Sidebar"
-    class="emotion-22"
+    class="emotion-7"
     role="navigation"
   >
     <ul
-      class="emotion-21"
+      class="emotion-6"
       role="list"
     >
       <li
@@ -523,10 +379,10 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
       >
         <div
           class="emotion-1"
-          data-testid="/guides"
+          data-testid="/group1"
           tabindex="0"
         >
-          Getting Started
+          Group 1
           <svg
             class="emotion-0"
             viewBox="0 0 16 16"
@@ -557,10 +413,10 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
       >
         <div
           class="emotion-1"
-          data-testid="/theming"
+          data-testid="/group2"
           tabindex="0"
         >
-          Theming
+          Group 2
           <svg
             class="emotion-0"
             viewBox="0 0 16 16"
@@ -585,167 +441,15 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
             </g>
           </svg>
         </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/foundations"
-          tabindex="0"
-        >
-          Foundations
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/components"
-          tabindex="0"
-        >
-          Components
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/pages"
-          tabindex="0"
-        >
-          Pages
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/utils"
-          tabindex="0"
-        >
-          Utilities
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <a
-          class="emotion-19"
-          href="/feedback"
-        >
-          <div
-            class="emotion-1"
-            data-testid="/feedback"
-            tabindex="-1"
-          >
-            Feedback
-          </div>
-        </a>
       </li>
     </ul>
   </nav>
 </DocumentFragment>
 `;
 
-exports[`Sidebar navigation on route level renders correctly without given path 1`] = `
+exports[`Sidebar navigation on group 1 page after enter key group1 menu collapses 1`] = `
 <DocumentFragment>
-  .emotion-22 {
+  .emotion-7 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -758,7 +462,7 @@ exports[`Sidebar navigation on route level renders correctly without given path 
   margin: 0;
 }
 
-.emotion-21 {
+.emotion-6 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
@@ -837,37 +541,13 @@ exports[`Sidebar navigation on route level renders correctly without given path 
   float: right;
 }
 
-.emotion-19 {
-  color: #2F75D7;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-}
-
-.emotion-19:visited {
-  color: #903D91;
-}
-
-.emotion-19:hover {
-  color: #2F75D7;
-}
-
-.emotion-19:active {
-  color: #2F75D7;
-}
-
 <nav
     aria-label="Sidebar"
-    class="emotion-22"
+    class="emotion-7"
     role="navigation"
   >
     <ul
-      class="emotion-21"
+      class="emotion-6"
       role="list"
     >
       <li
@@ -875,10 +555,10 @@ exports[`Sidebar navigation on route level renders correctly without given path 
       >
         <div
           class="emotion-1"
-          data-testid="/guides"
+          data-testid="/group1"
           tabindex="0"
         >
-          Getting Started
+          Group 1
           <svg
             class="emotion-0"
             viewBox="0 0 16 16"
@@ -909,10 +589,10 @@ exports[`Sidebar navigation on route level renders correctly without given path 
       >
         <div
           class="emotion-1"
-          data-testid="/theming"
+          data-testid="/group2"
           tabindex="0"
         >
-          Theming
+          Group 2
           <svg
             class="emotion-0"
             viewBox="0 0 16 16"
@@ -937,167 +617,15 @@ exports[`Sidebar navigation on route level renders correctly without given path 
             </g>
           </svg>
         </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/foundations"
-          tabindex="0"
-        >
-          Foundations
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/components"
-          tabindex="0"
-        >
-          Components
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/pages"
-          tabindex="0"
-        >
-          Pages
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/utils"
-          tabindex="0"
-        >
-          Utilities
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <a
-          class="emotion-19"
-          href="/feedback"
-        >
-          <div
-            class="emotion-1"
-            data-testid="/feedback"
-            tabindex="-1"
-          >
-            Feedback
-          </div>
-        </a>
       </li>
     </ul>
   </nav>
 </DocumentFragment>
 `;
 
-exports[`Sidebar navigation on theming page after click guides menu collapses 1`] = `
+exports[`Sidebar navigation on group 1 page by clicking on components menu, group1 menu collapses and group2 menu expands 1`] = `
 <DocumentFragment>
-  .emotion-22 {
+  .emotion-17 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -1110,7 +638,7 @@ exports[`Sidebar navigation on theming page after click guides menu collapses 1`
   margin: 0;
 }
 
-.emotion-21 {
+.emotion-14 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
@@ -1189,7 +717,7 @@ exports[`Sidebar navigation on theming page after click guides menu collapses 1`
   float: right;
 }
 
-.emotion-19 {
+.emotion-6 {
   color: #2F75D7;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1201,723 +729,19 @@ exports[`Sidebar navigation on theming page after click guides menu collapses 1`
   transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
-.emotion-19:visited {
+.emotion-6:visited {
   color: #903D91;
 }
 
-.emotion-19:hover {
+.emotion-6:hover {
   color: #2F75D7;
 }
 
-.emotion-19:active {
+.emotion-6:active {
   color: #2F75D7;
 }
 
-<nav
-    aria-label="Sidebar"
-    class="emotion-22"
-    role="navigation"
-  >
-    <ul
-      class="emotion-21"
-      role="list"
-    >
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/guides"
-          tabindex="0"
-        >
-          Getting Started
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/theming"
-          tabindex="0"
-        >
-          Theming
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/foundations"
-          tabindex="0"
-        >
-          Foundations
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/components"
-          tabindex="0"
-        >
-          Components
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/pages"
-          tabindex="0"
-        >
-          Pages
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/utils"
-          tabindex="0"
-        >
-          Utilities
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <a
-          class="emotion-19"
-          href="/feedback"
-        >
-          <div
-            class="emotion-1"
-            data-testid="/feedback"
-            tabindex="-1"
-          >
-            Feedback
-          </div>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</DocumentFragment>
-`;
-
-exports[`Sidebar navigation on theming page after enter key guides menu collapses 1`] = `
-<DocumentFragment>
-  .emotion-22 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  list-style-type: none;
-  margin: 0;
-}
-
-.emotion-21 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0;
-}
-
-.emotion-2 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0 16px;
-}
-
-.emotion-2 .emotion-2,
-.emotion-2 .emotion-2 .emotion-2 {
-  padding-right: 0;
-}
-
-.emotion-1 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
-  box-sizing: border-box;
-  color: #777777;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.emotion-1:hover {
-  color: #2e2e2e;
-  background-color: #F6FBFF;
-}
-
-.emotion-1:focus {
-  outline: none;
-  color: #FFFFFF;
-  background-color: #0A68C1;
-}
-
-.emotion-1:focus svg polygon {
-  fill: #FFFFFF;
-}
-
-.emotion-1 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-1 a:visited {
-  color: #0a0a0a;
-}
-
-.emotion-0 {
-  display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  width: 16px;
-  height: 16px;
-  float: right;
-}
-
-.emotion-19 {
-  color: #2F75D7;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-}
-
-.emotion-19:visited {
-  color: #903D91;
-}
-
-.emotion-19:hover {
-  color: #2F75D7;
-}
-
-.emotion-19:active {
-  color: #2F75D7;
-}
-
-<nav
-    aria-label="Sidebar"
-    class="emotion-22"
-    role="navigation"
-  >
-    <ul
-      class="emotion-21"
-      role="list"
-    >
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/guides"
-          tabindex="0"
-        >
-          Getting Started
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/theming"
-          tabindex="0"
-        >
-          Theming
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/foundations"
-          tabindex="0"
-        >
-          Foundations
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/components"
-          tabindex="0"
-        >
-          Components
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/pages"
-          tabindex="0"
-        >
-          Pages
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/utils"
-          tabindex="0"
-        >
-          Utilities
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <a
-          class="emotion-19"
-          href="/feedback"
-        >
-          <div
-            class="emotion-1"
-            data-testid="/feedback"
-            tabindex="-1"
-          >
-            Feedback
-          </div>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</DocumentFragment>
-`;
-
-exports[`Sidebar navigation on theming page by clicking on components menu, guides menu collapses and components menu expands 1`] = `
-<DocumentFragment>
-  .emotion-86 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  list-style-type: none;
-  margin: 0;
-}
-
-.emotion-74 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0;
-}
-
-.emotion-2 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0 16px;
-}
-
-.emotion-2 .emotion-2,
-.emotion-2 .emotion-2 .emotion-2 {
-  padding-right: 0;
-}
-
-.emotion-1 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
-  box-sizing: border-box;
-  color: #777777;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.emotion-1:hover {
-  color: #2e2e2e;
-  background-color: #F6FBFF;
-}
-
-.emotion-1:focus {
-  outline: none;
-  color: #FFFFFF;
-  background-color: #0A68C1;
-}
-
-.emotion-1:focus svg polygon {
-  fill: #FFFFFF;
-}
-
-.emotion-1 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-1 a:visited {
-  color: #0a0a0a;
-}
-
-.emotion-0 {
-  display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  width: 16px;
-  height: 16px;
-  float: right;
-}
-
-.emotion-12 {
-  color: #2F75D7;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-}
-
-.emotion-12:visited {
-  color: #903D91;
-}
-
-.emotion-12:hover {
-  color: #2F75D7;
-}
-
-.emotion-12:active {
-  color: #2F75D7;
-}
-
-.emotion-10 {
+.emotion-4 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -1942,22 +766,22 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
   overflow: hidden;
 }
 
-.emotion-10:hover {
+.emotion-4:hover {
   color: #2e2e2e;
   background-color: #F6FBFF;
 }
 
-.emotion-10:focus {
+.emotion-4:focus {
   outline: none;
   color: #FFFFFF;
   background-color: #0A68C1;
 }
 
-.emotion-10:focus svg polygon {
+.emotion-4:focus svg polygon {
   fill: #FFFFFF;
 }
 
-.emotion-10 a {
+.emotion-4 a {
   color: #0a0a0a;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1966,17 +790,17 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
   height: 100%;
 }
 
-.emotion-10 a:visited {
+.emotion-4 a:visited {
   color: #0a0a0a;
 }
 
 <nav
     aria-label="Sidebar"
-    class="emotion-86"
+    class="emotion-17"
     role="navigation"
   >
     <ul
-      class="emotion-74"
+      class="emotion-14"
       role="list"
     >
       <li
@@ -1984,10 +808,10 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
       >
         <div
           class="emotion-1"
-          data-testid="/guides"
+          data-testid="/group1"
           tabindex="0"
         >
-          Getting Started
+          Group 1
           <svg
             class="emotion-0"
             viewBox="0 0 16 16"
@@ -2017,79 +841,11 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
         class="emotion-2"
       >
         <div
-          class="emotion-1"
-          data-testid="/theming"
+          class="emotion-4"
+          data-testid="/group2"
           tabindex="0"
         >
-          Theming
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/foundations"
-          tabindex="0"
-        >
-          Foundations
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-10"
-          data-testid="/components"
-          tabindex="0"
-        >
-          Components
+          Group 2
           <svg
             class="emotion-0"
             viewBox="0 0 16 16"
@@ -2115,22 +871,22 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
           </svg>
         </div>
         <ul
-          class="emotion-74"
+          class="emotion-14"
           role="list"
         >
           <li
             class="emotion-2"
           >
             <a
-              class="emotion-12"
-              href="/components/article-byline"
+              class="emotion-6"
+              href="/group2/page1"
             >
               <div
                 class="emotion-1"
-                data-testid="/components/article-byline"
+                data-testid="/group2/page1"
                 tabindex="-1"
               >
-                Article Byline
+                Group 2 Page 1
               </div>
             </a>
           </li>
@@ -2138,416 +894,62 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
             class="emotion-2"
           >
             <a
-              class="emotion-12"
-              href="/components/block"
+              class="emotion-6"
+              href="/group2/page2"
             >
               <div
                 class="emotion-1"
-                data-testid="/components/block"
+                data-testid="/group2/page2"
                 tabindex="-1"
               >
-                Block
+                Group 2 Page 2
               </div>
             </a>
           </li>
           <li
             class="emotion-2"
           >
-            <a
-              class="emotion-12"
-              href="/components/article-headline"
+            <div
+              class="emotion-1"
+              data-testid="/group2/group2b"
+              tabindex="0"
             >
-              <div
-                class="emotion-1"
-                data-testid="/components/article-headline"
-                tabindex="-1"
+              Group 2b
+              <svg
+                class="emotion-0"
+                viewBox="0 0 16 16"
               >
-                Article Headline
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/article-standfirst"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/article-standfirst"
-                tabindex="-1"
-              >
-                Article Standfirst
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/audio-player"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/audio-player"
-                tabindex="-1"
-              >
-                Audio Player
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/button"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/button"
-                tabindex="-1"
-              >
-                Button
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/consent"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/consent"
-                tabindex="-1"
-              >
-                Consent
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/consent-settings-link"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/consent-settings-link"
-                tabindex="-1"
-              >
-                Consent Settings Link
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/date-line"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/date-line"
-                tabindex="-1"
-              >
-                Date Line
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/divider"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/divider"
-                tabindex="-1"
-              >
-                Divider
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/grid"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/grid"
-                tabindex="-1"
-              >
-                Grid & Cell
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/image"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/image"
-                tabindex="-1"
-              >
-                Image
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/link"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/link"
-                tabindex="-1"
-              >
-                Link
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/ordered-list"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/ordered-list"
-                tabindex="-1"
-              >
-                Ordered List
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/slider"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/slider"
-                tabindex="-1"
-              >
-                Slider
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/tag"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/tag"
-                tabindex="-1"
-              >
-                Tag
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/tag-list"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/tag-list"
-                tabindex="-1"
-              >
-                Tag List
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/tealium"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/tealium"
-                tabindex="-1"
-              >
-                Tealium
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/title-bar"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/title-bar"
-                tabindex="-1"
-              >
-                Title Bar
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/unordered-list"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/unordered-list"
-                tabindex="-1"
-              >
-                Unordered List
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-12"
-              href="/components/volume-control"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/components/volume-control"
-                tabindex="-1"
-              >
-                Volume Control
-              </div>
-            </a>
+                <title>
+                  close icon
+                </title>
+                <g
+                  fill="none"
+                >
+                  <mask
+                    fill="white"
+                  >
+                    <polygon
+                      points="7 10 12 15 17 10"
+                    />
+                  </mask>
+                  <polygon
+                    fill="#666"
+                    points="7 10 12 15 17 10"
+                  />
+                </g>
+              </svg>
+            </div>
           </li>
         </ul>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/pages"
-          tabindex="0"
-        >
-          Pages
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/utils"
-          tabindex="0"
-        >
-          Utilities
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <a
-          class="emotion-12"
-          href="/feedback"
-        >
-          <div
-            class="emotion-1"
-            data-testid="/feedback"
-            tabindex="-1"
-          >
-            Feedback
-          </div>
-        </a>
       </li>
     </ul>
   </nav>
 </DocumentFragment>
 `;
 
-exports[`Sidebar navigation on theming page renders as expected 1`] = `
+exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
 <DocumentFragment>
-  .emotion-39 {
+  .emotion-11 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -2560,7 +962,7 @@ exports[`Sidebar navigation on theming page renders as expected 1`] = `
   margin: 0;
 }
 
-.emotion-8 {
+.emotion-5 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
@@ -2663,13 +1065,66 @@ exports[`Sidebar navigation on theming page renders as expected 1`] = `
   color: #2F75D7;
 }
 
+.emotion-2 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 1.5rem;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #01396E;
+  cursor: pointer;
+  font-weight: 500;
+  min-height: 40px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 24px;
+  border-radius: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.emotion-2:hover {
+  color: #2e2e2e;
+  background-color: #F6FBFF;
+}
+
+.emotion-2:focus {
+  outline: none;
+  color: #FFFFFF;
+  background-color: #0A68C1;
+}
+
+.emotion-2:focus svg polygon {
+  fill: #FFFFFF;
+}
+
+.emotion-2 a {
+  color: #0a0a0a;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-2 a:visited {
+  color: #0a0a0a;
+}
+
 <nav
     aria-label="Sidebar"
-    class="emotion-39"
+    class="emotion-11"
     role="navigation"
   >
     <ul
-      class="emotion-8"
+      class="emotion-5"
       role="list"
     >
       <li
@@ -2677,10 +1132,10 @@ exports[`Sidebar navigation on theming page renders as expected 1`] = `
       >
         <div
           class="emotion-1"
-          data-testid="/guides"
+          data-testid="/group1"
           tabindex="0"
         >
-          Getting Started
+          Group 1
           <svg
             class="emotion-0"
             viewBox="0 0 16 16"
@@ -2706,7 +1161,7 @@ exports[`Sidebar navigation on theming page renders as expected 1`] = `
           </svg>
         </div>
         <ul
-          class="emotion-8"
+          class="emotion-5"
           role="list"
         >
           <li
@@ -2714,30 +1169,14 @@ exports[`Sidebar navigation on theming page renders as expected 1`] = `
           >
             <a
               class="emotion-3"
-              href="/guides/getting-started-amp"
+              href="/group1/page1"
             >
               <div
-                class="emotion-1"
-                data-testid="/guides/getting-started-amp"
+                class="emotion-2"
+                data-testid="/group1/page1"
                 tabindex="-1"
               >
-                AMP
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-4"
-          >
-            <a
-              class="emotion-3"
-              href="/guides/getting-started-instrumentation"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/guides/getting-started-instrumentation"
-                tabindex="-1"
-              >
-                Instrumentation
+                Group 1 Page 1
               </div>
             </a>
           </li>
@@ -2748,16 +1187,16 @@ exports[`Sidebar navigation on theming page renders as expected 1`] = `
       >
         <div
           class="emotion-1"
-          data-testid="/theming"
+          data-testid="/group2"
           tabindex="0"
         >
-          Theming
+          Group 2
           <svg
             class="emotion-0"
             viewBox="0 0 16 16"
           >
             <title>
-              open icon
+              close icon
             </title>
             <g
               fill="none"
@@ -2766,79 +1205,134 @@ exports[`Sidebar navigation on theming page renders as expected 1`] = `
                 fill="white"
               >
                 <polygon
-                  points="7 14 12 9 17 14"
+                  points="7 10 12 15 17 10"
                 />
               </mask>
               <polygon
                 fill="#666"
-                points="7 14 12 9 17 14"
+                points="7 10 12 15 17 10"
               />
             </g>
           </svg>
         </div>
-        <ul
-          class="emotion-8"
-          role="list"
-        >
-          <li
-            class="emotion-4"
-          >
-            <a
-              class="emotion-3"
-              href="/theming/overview"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/theming/overview"
-                tabindex="-1"
-              >
-                Overview
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-4"
-          >
-            <a
-              class="emotion-3"
-              href="/theming/code"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/theming/code"
-                tabindex="-1"
-              >
-                Code
-              </div>
-            </a>
-          </li>
-          <li
-            class="emotion-4"
-          >
-            <a
-              class="emotion-3"
-              href="/theming/style-preset"
-            >
-              <div
-                class="emotion-1"
-                data-testid="/theming/style-preset"
-                tabindex="-1"
-              >
-                StylePreset
-              </div>
-            </a>
-          </li>
-        </ul>
       </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Sidebar navigation on route level renders as expected 1`] = `
+<DocumentFragment>
+  .emotion-7 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.emotion-6 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+}
+
+.emotion-2 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0 16px;
+}
+
+.emotion-2 .emotion-2,
+.emotion-2 .emotion-2 .emotion-2 {
+  padding-right: 0;
+}
+
+.emotion-1 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 1.5rem;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #777777;
+  cursor: pointer;
+  font-weight: normal;
+  min-height: 40px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 24px;
+  border-radius: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.emotion-1:hover {
+  color: #2e2e2e;
+  background-color: #F6FBFF;
+}
+
+.emotion-1:focus {
+  outline: none;
+  color: #FFFFFF;
+  background-color: #0A68C1;
+}
+
+.emotion-1:focus svg polygon {
+  fill: #FFFFFF;
+}
+
+.emotion-1 a {
+  color: #0a0a0a;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-1 a:visited {
+  color: #0a0a0a;
+}
+
+.emotion-0 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 16px;
+  height: 16px;
+  float: right;
+}
+
+<nav
+    aria-label="Sidebar"
+    class="emotion-7"
+    role="navigation"
+  >
+    <ul
+      class="emotion-6"
+      role="list"
+    >
       <li
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
           class="emotion-1"
-          data-testid="/foundations"
+          data-testid="/group1"
           tabindex="0"
         >
-          Foundations
+          Group 1
           <svg
             class="emotion-0"
             viewBox="0 0 16 16"
@@ -2865,14 +1359,156 @@ exports[`Sidebar navigation on theming page renders as expected 1`] = `
         </div>
       </li>
       <li
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
           class="emotion-1"
-          data-testid="/components"
+          data-testid="/group2"
           tabindex="0"
         >
-          Components
+          Group 2
+          <svg
+            class="emotion-0"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              close icon
+            </title>
+            <g
+              fill="none"
+            >
+              <mask
+                fill="white"
+              >
+                <polygon
+                  points="7 10 12 15 17 10"
+                />
+              </mask>
+              <polygon
+                fill="#666"
+                points="7 10 12 15 17 10"
+              />
+            </g>
+          </svg>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Sidebar navigation on route level renders correctly without given path 1`] = `
+<DocumentFragment>
+  .emotion-7 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.emotion-6 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+}
+
+.emotion-2 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0 16px;
+}
+
+.emotion-2 .emotion-2,
+.emotion-2 .emotion-2 .emotion-2 {
+  padding-right: 0;
+}
+
+.emotion-1 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 1.5rem;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #777777;
+  cursor: pointer;
+  font-weight: normal;
+  min-height: 40px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 24px;
+  border-radius: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.emotion-1:hover {
+  color: #2e2e2e;
+  background-color: #F6FBFF;
+}
+
+.emotion-1:focus {
+  outline: none;
+  color: #FFFFFF;
+  background-color: #0A68C1;
+}
+
+.emotion-1:focus svg polygon {
+  fill: #FFFFFF;
+}
+
+.emotion-1 a {
+  color: #0a0a0a;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-1 a:visited {
+  color: #0a0a0a;
+}
+
+.emotion-0 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 16px;
+  height: 16px;
+  float: right;
+}
+
+<nav
+    aria-label="Sidebar"
+    class="emotion-7"
+    role="navigation"
+  >
+    <ul
+      class="emotion-6"
+      role="list"
+    >
+      <li
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          data-testid="/group1"
+          tabindex="0"
+        >
+          Group 1
           <svg
             class="emotion-0"
             viewBox="0 0 16 16"
@@ -2899,14 +1535,14 @@ exports[`Sidebar navigation on theming page renders as expected 1`] = `
         </div>
       </li>
       <li
-        class="emotion-4"
+        class="emotion-2"
       >
         <div
           class="emotion-1"
-          data-testid="/pages"
+          data-testid="/group2"
           tabindex="0"
         >
-          Pages
+          Group 2
           <svg
             class="emotion-0"
             viewBox="0 0 16 16"
@@ -2931,56 +1567,6 @@ exports[`Sidebar navigation on theming page renders as expected 1`] = `
             </g>
           </svg>
         </div>
-      </li>
-      <li
-        class="emotion-4"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/utils"
-          tabindex="0"
-        >
-          Utilities
-          <svg
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title>
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-4"
-      >
-        <a
-          class="emotion-3"
-          href="/feedback"
-        >
-          <div
-            class="emotion-1"
-            data-testid="/feedback"
-            tabindex="-1"
-          >
-            Feedback
-          </div>
-        </a>
       </li>
     </ul>
   </nav>
