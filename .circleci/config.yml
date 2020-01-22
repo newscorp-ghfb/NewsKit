@@ -275,6 +275,27 @@ jobs:
           command: |
             export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}
             make comps_visual_test
+  
+  test_visual_docs:
+    working_directory: ~/project
+    docker:
+      - image: cypress/base:10
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: install cypress
+          command: make install_cypress
+      - run:
+          name: Run Applitools Docs Site Visual Tests
+          command: |
+            export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}
+            make e2e_visual_test_docs
+      - store_artifacts:
+          path: cypress/screenshots
+      - store_artifacts:
+          path: cypress/videos
 
   test_e2e_comps:
     working_directory: ~/project
@@ -307,9 +328,8 @@ jobs:
           name: install cypress
           command: make install_cypress
       - run:
-          name: Run Docs Site Tests
+          name: Run Docs Site Functional Tests
           command: |
-            export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}
             make e2e_test_docs
       - store_artifacts:
           path: cypress/screenshots
@@ -539,6 +559,11 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - build_test_e2e
+      - test_visual_docs:
+          <<: *only_develop
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs
       - test_e2e_docs:
           <<: *ignore_release
           context: ncu-product-platforms-context
@@ -557,6 +582,7 @@ workflows:
             - test_unit
             - test_visual_comps
             - test_e2e_comps
+            - test_visual_docs
             - test_e2e_docs
             - approve_publish_npm_dev
       - build_push_docker_ecr:
@@ -568,6 +594,7 @@ workflows:
             - test_unit
             - test_visual_comps
             - test_e2e_comps
+            - test_visual_docs
             - test_e2e_docs
       - k8s_flux_deploy_dev:
           context: ncu-product-platforms-context

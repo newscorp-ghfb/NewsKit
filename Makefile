@@ -50,6 +50,9 @@ e2e_test_build:
 e2e_test_docs:
 	yarn e2e:docs:ci;
 
+e2e_visual_test_docs:
+	yarn e2e:visual:docs:ci;
+
 publish_npm_dev:
 	cd dist; yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable;
 

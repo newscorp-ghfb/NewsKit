@@ -1,6 +1,6 @@
 // / <reference types="Cypress" />
 
-import siteRoutes from '../../site/routes.json';
+import siteRoutes from '../../../site/routes.json';
 
 const flatRoutes = routes =>
   routes.reduce((acc, route) => {
