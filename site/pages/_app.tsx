@@ -174,7 +174,6 @@ export default class MyApp extends App<Props, State> {
 
     const tealiumHandler = composeInstrumentationMiddleware(
       instrumentationHandlers.createTealiumHandler(),
-      instrumentationMiddleware.filterByOriginator('link'),
     );
 
     return (

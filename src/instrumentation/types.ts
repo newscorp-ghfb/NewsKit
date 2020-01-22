@@ -3,11 +3,7 @@ export type EventContext = object;
 export enum EventTrigger {
   Click = 'click',
   Swipe = 'swipe',
-}
-
-export enum TealiumEvents {
-  Link = 'link',
-  View = 'view',
+  PageView = 'page view',
 }
 
 export interface InstrumentationEvent {

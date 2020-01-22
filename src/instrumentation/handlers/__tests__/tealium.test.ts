@@ -11,8 +11,8 @@ describe('instrumentation event handler - tealium', () => {
       data: {href: 'href1'},
     },
     {
-      originator: 'view',
-      trigger: EventTrigger.Swipe,
+      originator: 'link',
+      trigger: EventTrigger.PageView,
       data: {href: 'href2'},
     },
   ];
@@ -24,8 +24,8 @@ describe('instrumentation event handler - tealium', () => {
       data: {href: 'href1'},
     },
     {
-      originator: 'foo',
-      trigger: EventTrigger.Click,
+      originator: 'link',
+      trigger: 'foo' as any,
       data: {href: 'href2'},
     },
   ];
@@ -47,8 +47,8 @@ describe('instrumentation event handler - tealium', () => {
     const handler = createHandler();
     handler(mockEvents2);
 
-    expect(extendedWindow.utag.link).nthCalledWith(1, mockEvents[0]);
-    expect(extendedWindow.utag.link).not.nthCalledWith(1, mockEvents[1]);
+    expect(extendedWindow.utag.link).nthCalledWith(1, mockEvents2[0]);
+    expect(extendedWindow.utag.link).not.nthCalledWith(1, mockEvents2[1]);
   });
 
   test('sendEventToTealium returns null if originator is not in supported event types', () => {

@@ -2,17 +2,17 @@ import {
   EventHandler,
   InstrumentationEvent,
   ExtendedWindow,
-  TealiumEvents,
+  EventTrigger,
 } from '../types';
 
 const extendedWindow: ExtendedWindow | null =
   typeof window !== 'undefined' ? ((window as Window) as ExtendedWindow) : null;
 
 export function sendEventToTealium(e: InstrumentationEvent) {
-  switch (e.originator) {
-    case TealiumEvents.Link:
+  switch (e.trigger) {
+    case EventTrigger.Click:
       return extendedWindow && extendedWindow.utag.link(e);
-    case TealiumEvents.View:
+    case EventTrigger.PageView:
       return extendedWindow && extendedWindow.utag.view(e);
     default:
       return null;
