@@ -2,6 +2,7 @@
 import * as React from 'react';
 import Document, {Head, Main, NextScript, DocumentContext} from 'next/document';
 import {Consent, Tealium} from 'newskit';
+import Helmet from 'react-helmet';
 import Meta from '../components/meta';
 
 interface Props {
@@ -19,6 +20,7 @@ export default class MyDocument extends Document<Props> {
   }
 
   render() {
+    const helmet = Helmet.rewind();
     return (
       <html lang="en">
         <Head>
@@ -32,15 +34,16 @@ export default class MyDocument extends Document<Props> {
             body {
               margin: 0;
             }
-          `}
+            `}
           </style>
+          {helmet.script.toComponent()}
           <Meta />
-          <Consent accountId="259" />
+          <Consent accountId="259" reactHelmet={Helmet} />
         </Head>
         <body>
           <Tealium
-            account="newsinternational"
-            profile="thetimes.newskit"
+            accountId="newsinternational"
+            profileId="thetimes.newskit"
             env="dev"
           />
           <Main />

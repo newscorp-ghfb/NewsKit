@@ -1801,7 +1801,7 @@ exports[`Sidebar navigation on theming page after enter key guides menu collapse
 
 exports[`Sidebar navigation on theming page by clicking on components menu, guides menu collapses and components menu expands 1`] = `
 <DocumentFragment>
-  .emotion-83 {
+  .emotion-86 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -1814,7 +1814,7 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
   margin: 0;
 }
 
-.emotion-71 {
+.emotion-74 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
@@ -1972,11 +1972,11 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
 
 <nav
     aria-label="Sidebar"
-    class="emotion-83"
+    class="emotion-86"
     role="navigation"
   >
     <ul
-      class="emotion-71"
+      class="emotion-74"
       role="list"
     >
       <li
@@ -2115,7 +2115,7 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
           </svg>
         </div>
         <ul
-          class="emotion-71"
+          class="emotion-74"
           role="list"
         >
           <li
@@ -2403,6 +2403,22 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
                 tabindex="-1"
               >
                 Tag List
+              </div>
+            </a>
+          </li>
+          <li
+            class="emotion-2"
+          >
+            <a
+              class="emotion-12"
+              href="/components/tealium"
+            >
+              <div
+                class="emotion-1"
+                data-testid="/components/tealium"
+                tabindex="-1"
+              >
+                Tealium
               </div>
             </a>
           </li>

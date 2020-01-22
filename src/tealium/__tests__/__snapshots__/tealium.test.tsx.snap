@@ -1,64 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tealium with environment dev renders scripts for dev environment 1`] = `
+exports[`Tealium renders scripts for dev environment 1`] = `
 <DocumentFragment>
-  <script
-    type="text/javascript"
-  >
-    (function(a,b,c,d){
-                a='//tags.tiqcdn.com/utag/newsinternational/thetimes.newskit/dev/utag.js';
-               b=document;
-               c='script';
-               d=b.createElement(c);
-               d.src=a;
-               d.type='text/java'+c;
-               d.async=true;
-               a=b.getElementsByTagName(c)[0];
-               a.parentNode.insertBefore(d,a);
-             })();
-             
-  </script>
+  <div>
+    RenderScripts Component with props:{
+  "scripts": [
+    {
+      "content": "(function(a,b,c,d){\\n                a='//tags.tiqcdn.com/utag/the-account-id/the-profile-id/the-env-id/utag.js';\\n               b=document;\\n               c='script';\\n               d=b.createElement(c);\\n               d.src=a;\\n               d.type='text/java'+c;\\n               d.async=true;\\n               a=b.getElementsByTagName(c)[0];\\n               a.parentNode.insertBefore(d,a);\\n             })();\\n             "
+    }
+  ],
+  "reactHelmet": "undefined"
+}
+  </div>
 </DocumentFragment>
 `;
 
-exports[`Tealium with environment prod renders scripts for prod environment 1`] = `
+exports[`Tealium renders scripts for dev environment 2`] = `
 <DocumentFragment>
-  <script
-    type="text/javascript"
-  >
-    (function(a,b,c,d){
-                a='//tags.tiqcdn.com/utag/newsinternational/thetimes.newskit/prod/utag.js';
-               b=document;
-               c='script';
-               d=b.createElement(c);
-               d.src=a;
-               d.type='text/java'+c;
-               d.async=true;
-               a=b.getElementsByTagName(c)[0];
-               a.parentNode.insertBefore(d,a);
-             })();
-             
-  </script>
-</DocumentFragment>
-`;
-
-exports[`Tealium with environment stage renders scripts for stage environment 1`] = `
-<DocumentFragment>
-  <script
-    type="text/javascript"
-  >
-    (function(a,b,c,d){
-                a='//tags.tiqcdn.com/utag/newsinternational/thetimes.newskit/stage/utag.js';
-               b=document;
-               c='script';
-               d=b.createElement(c);
-               d.src=a;
-               d.type='text/java'+c;
-               d.async=true;
-               a=b.getElementsByTagName(c)[0];
-               a.parentNode.insertBefore(d,a);
-             })();
-             
-  </script>
+  <div>
+    RenderScripts Component with props:{
+  "scripts": [
+    {
+      "content": "(function(a,b,c,d){\\n                a='//tags.tiqcdn.com/utag/the-account-id/the-profile-id/the-env-id/utag.js';\\n               b=document;\\n               c='script';\\n               d=b.createElement(c);\\n               d.src=a;\\n               d.type='text/java'+c;\\n               d.async=true;\\n               a=b.getElementsByTagName(c)[0];\\n               a.parentNode.insertBefore(d,a);\\n             })();\\n             "
+    }
+  ],
+  "reactHelmet": "undefined"
+}
+  </div>
 </DocumentFragment>
 `;

@@ -162,6 +162,11 @@
         "id": "/components/tag-list"
       },
       {
+        "title": "Tealium",
+        "page": true,
+        "id": "/components/tealium"
+      },
+      {
         "title": "Title Bar",
         "page": true,
         "id": "/components/title-bar"

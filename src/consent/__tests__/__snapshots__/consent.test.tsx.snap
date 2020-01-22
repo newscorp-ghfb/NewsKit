@@ -1,49 +1,127 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Consent with id renders scripts with default values 1`] = `
+exports[`Consent with helmet with id renders scripts with default values 1`] = `
 <DocumentFragment>
-  <script
-    type="text/javascript"
-  >
-    (function () { var e = false; var c = window; var t = document; function r() { if (!c.frames["__cmpLocator"]) { if (t.body) { var a = t.body; var e = t.createElement("iframe"); e.style.cssText = "display:none"; e.name = "__cmpLocator"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === "ping") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === "string"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, "*") }) } } catch (a) { } } if (typeof __cmp !== "function") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener("message", l, false) } })();
-  </script>
-  <script>
-    window._sp_ = {"config":{"mmsDomain":"https://messagetest-accountId.sp-prod.net","accountId":"test-accountId","cmpOrigin":"https://sourcepoint.mgr.consensu.org","waitForConsent":true}}
-  </script>
-  <script
-    src="https://dialogue.sp-prod.net/messagingWithoutDetection.js"
-  />
+  <div>
+    RenderScripts Component with props:{
+  "scripts": [
+    {
+      "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
+    },
+    {
+      "content": "window._sp_ = {\\"config\\":{\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"accountId\\":\\"test-accountId\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true}}"
+    },
+    {
+      "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
+    }
+  ],
+  "reactHelmet": "function"
+}
+  </div>
 </DocumentFragment>
 `;
 
-exports[`Consent with mmsDomain renders scripts with mmsDomain 1`] = `
+exports[`Consent with helmet with mmsDomain renders scripts with mmsDomain 1`] = `
 <DocumentFragment>
-  <script
-    type="text/javascript"
-  >
-    (function () { var e = false; var c = window; var t = document; function r() { if (!c.frames["__cmpLocator"]) { if (t.body) { var a = t.body; var e = t.createElement("iframe"); e.style.cssText = "display:none"; e.name = "__cmpLocator"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === "ping") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === "string"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, "*") }) } } catch (a) { } } if (typeof __cmp !== "function") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener("message", l, false) } })();
-  </script>
-  <script>
-    window._sp_ = {"config":{"mmsDomain":"test-mmsDomain","accountId":"test-accountId","cmpOrigin":"https://sourcepoint.mgr.consensu.org","waitForConsent":true}}
-  </script>
-  <script
-    src="https://dialogue.sp-prod.net/messagingWithoutDetection.js"
-  />
+  <div>
+    RenderScripts Component with props:{
+  "scripts": [
+    {
+      "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
+    },
+    {
+      "content": "window._sp_ = {\\"config\\":{\\"mmsDomain\\":\\"test-mmsDomain\\",\\"accountId\\":\\"test-accountId\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true}}"
+    },
+    {
+      "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
+    }
+  ],
+  "reactHelmet": "function"
+}
+  </div>
 </DocumentFragment>
 `;
 
-exports[`Consent with waitForConsent false renders scripts with false waitForConsent 1`] = `
+exports[`Consent with helmet with waitForConsent false renders scripts with false waitForConsent 1`] = `
 <DocumentFragment>
-  <script
-    type="text/javascript"
-  >
-    (function () { var e = false; var c = window; var t = document; function r() { if (!c.frames["__cmpLocator"]) { if (t.body) { var a = t.body; var e = t.createElement("iframe"); e.style.cssText = "display:none"; e.name = "__cmpLocator"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === "ping") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === "string"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, "*") }) } } catch (a) { } } if (typeof __cmp !== "function") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener("message", l, false) } })();
-  </script>
-  <script>
-    window._sp_ = {"config":{"mmsDomain":"https://messagetest-accountId.sp-prod.net","accountId":"test-accountId","cmpOrigin":"https://sourcepoint.mgr.consensu.org","waitForConsent":false}}
-  </script>
-  <script
-    src="https://dialogue.sp-prod.net/messagingWithoutDetection.js"
-  />
+  <div>
+    RenderScripts Component with props:{
+  "scripts": [
+    {
+      "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
+    },
+    {
+      "content": "window._sp_ = {\\"config\\":{\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"accountId\\":\\"test-accountId\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":false}}"
+    },
+    {
+      "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
+    }
+  ],
+  "reactHelmet": "function"
+}
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Consent without helmet with id renders scripts with default values 1`] = `
+<DocumentFragment>
+  <div>
+    RenderScripts Component with props:{
+  "scripts": [
+    {
+      "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
+    },
+    {
+      "content": "window._sp_ = {\\"config\\":{\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"accountId\\":\\"test-accountId\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true}}"
+    },
+    {
+      "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
+    }
+  ],
+  "reactHelmet": "undefined"
+}
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Consent without helmet with mmsDomain renders scripts with mmsDomain 1`] = `
+<DocumentFragment>
+  <div>
+    RenderScripts Component with props:{
+  "scripts": [
+    {
+      "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
+    },
+    {
+      "content": "window._sp_ = {\\"config\\":{\\"mmsDomain\\":\\"test-mmsDomain\\",\\"accountId\\":\\"test-accountId\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true}}"
+    },
+    {
+      "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
+    }
+  ],
+  "reactHelmet": "undefined"
+}
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Consent without helmet with waitForConsent false renders scripts with false waitForConsent 1`] = `
+<DocumentFragment>
+  <div>
+    RenderScripts Component with props:{
+  "scripts": [
+    {
+      "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
+    },
+    {
+      "content": "window._sp_ = {\\"config\\":{\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"accountId\\":\\"test-accountId\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":false}}"
+    },
+    {
+      "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
+    }
+  ],
+  "reactHelmet": "undefined"
+}
+  </div>
 </DocumentFragment>
 `;

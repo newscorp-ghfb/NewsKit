@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RenderScripts renders inline and external scripts as script tags 1`] = `
+<DocumentFragment>
+  <script
+    src="https://example.com/my-javascript-file.js"
+    type="text/javascript"
+  />
+  <script
+    type="text/javascript"
+  >
+    (function () { alert('some injected script') })();
+  </script>
+  <script
+    src="https://example.com/my-javascript-file2.js"
+    type="text/javascript"
+  />
+  <script
+    type="text/javascript"
+  >
+    (function () { alert('some more injected script') })();
+  </script>
+</DocumentFragment>
+`;
+
+exports[`RenderScripts renders inline and external scripts via ReactHelmet 1`] = `
+<DocumentFragment>
+  <div>
+    MockReactHelmet props: {
+  "script": [
+    {
+      "type": "text/javascript",
+      "src": "https://example.com/my-javascript-file.js"
+    },
+    {
+      "type": "text/javascript",
+      "innerHTML": "(function () { alert('some injected script') })();"
+    },
+    {
+      "type": "text/javascript",
+      "src": "https://example.com/my-javascript-file2.js"
+    },
+    {
+      "type": "text/javascript",
+      "innerHTML": "(function () { alert('some more injected script') })();"
+    }
+  ]
+}
+  </div>
+</DocumentFragment>
+`;

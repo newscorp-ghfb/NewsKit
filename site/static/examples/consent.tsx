@@ -1,4 +1,4 @@
-import {Consent} from 'newskit';
+import { Consent } from 'newskit';
 
 <head>
   <Consent accountId="12345" />

@@ -1,41 +1,19 @@
 import * as React from 'react';
+import {Helmet} from 'react-helmet';
 import {Tealium} from '..';
 import {renderToFragment} from '../../test/test-utils';
 
+jest.mock('../../utils/render-scripts');
+
 describe('Tealium', () => {
-  describe('with environment dev', () => {
+  [undefined, Helmet].forEach(helmet => {
     test('renders scripts for dev environment', () => {
       const fragment = renderToFragment(
         <Tealium
-          account="newsinternational"
-          profile="thetimes.newskit"
-          env="dev"
-        />,
-      );
-      expect(fragment).toMatchSnapshot();
-    });
-  });
-
-  describe('with environment stage', () => {
-    test('renders scripts for stage environment', () => {
-      const fragment = renderToFragment(
-        <Tealium
-          account="newsinternational"
-          profile="thetimes.newskit"
-          env="stage"
-        />,
-      );
-      expect(fragment).toMatchSnapshot();
-    });
-  });
-
-  describe('with environment prod', () => {
-    test('renders scripts for prod environment', () => {
-      const fragment = renderToFragment(
-        <Tealium
-          account="newsinternational"
-          profile="thetimes.newskit"
-          env="prod"
+          accountId="the-account-id"
+          profileId="the-profile-id"
+          env="the-env-id"
+          reactHelmet={helmet}
         />,
       );
       expect(fragment).toMatchSnapshot();

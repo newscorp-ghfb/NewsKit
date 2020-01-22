@@ -1,18 +1,25 @@
-/* eslint-disable react/no-danger */
 import * as React from 'react';
+import {
+  RenderScriptsReactHelmetProp,
+  RenderScripts,
+} from '../utils/render-scripts';
 
-export interface TealiumProps {
-  account: string;
-  profile: string;
+export interface TealiumProps extends RenderScriptsReactHelmetProp {
+  accountId: string;
+  profileId: string;
   env: string;
 }
 
-export const Tealium: React.FC<TealiumProps> = ({account, profile, env}) => (
-  <script
-    type="text/javascript"
-    dangerouslySetInnerHTML={{
-      __html: `(function(a,b,c,d){
-                a='//tags.tiqcdn.com/utag/${account}/${profile}/${env}/utag.js';
+export const Tealium: React.FC<TealiumProps> = ({
+  accountId,
+  profileId,
+  env,
+}) => (
+  <RenderScripts
+    scripts={[
+      {
+        content: `(function(a,b,c,d){
+                a='//tags.tiqcdn.com/utag/${accountId}/${profileId}/${env}/utag.js';
                b=document;
                c='script';
                d=b.createElement(c);
@@ -23,6 +30,7 @@ export const Tealium: React.FC<TealiumProps> = ({account, profile, env}) => (
                a.parentNode.insertBefore(d,a);
              })();
              `,
-    }}
+      },
+    ]}
   />
 );
