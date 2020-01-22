@@ -3,7 +3,7 @@ import Playground from '../../components/playground';
 import Prop from '../../components/prop';
 import {LegacyBlock} from '../../components/legacy-block';
 
-import {ShareBar} from 'newskit';
+import {ShareBar} from 'newskit/share-bar';
 
 export default Layout;
 
@@ -19,17 +19,17 @@ A share bar can be used anywhere a user would like to easily share something wit
 
 ## Props
 
-<LegacyBlock $marginTop='sizing040'>
-  <Prop name='leftIcons' type='array'>
+<LegacyBlock $marginTop="sizing040">
+  <Prop name="leftIcons" type="array">
     An array of social items that start from the left.
   </Prop>
-  <Prop name='rightIcons' type='array'>
+  <Prop name="rightIcons" type="array">
     An array of social items that start from the right.
   </Prop>
-  <Prop name='leftLabel' type='string'>
+  <Prop name="leftLabel" type="string">
     A label to appear before the left items.
   </Prop>
-  <Prop name='rightLabel' type='string'>
+  <Prop name="rightLabel" type="string">
     A label to appear before the right items.
   </Prop>
 </LegacyBlock>
@@ -37,8 +37,8 @@ A share bar can be used anywhere a user would like to easily share something wit
 ## Playground
 
 <Playground
-  componentName='ShareBar'
-  newskitPath='/share-bar'
+  componentName="ShareBar"
+  newskitPath="/share-bar"
   component={ShareBar}
   knobs={[
     {
@@ -57,15 +57,18 @@ A share bar can be used anywhere a user would like to easily share something wit
       value: [
         {
           type: 'twitter',
-          href: '/components/share-bar'
+          $borderEnabled: '',
+          href: '/components/share-bar',
         },
         {
           type: 'facebook',
-          href: '/components/share-bar'
+          $borderEnabled: '',
+          href: '/components/share-bar',
         },
         {
           type: 'whatsApp',
-          href: '/components/share-bar'
+          $borderEnabled: '',
+          href: '/components/share-bar',
         },
       ],
     },
@@ -76,12 +79,12 @@ A share bar can be used anywhere a user would like to easily share something wit
         {
           type: 'comment',
           $borderEnabled: true,
-          href: '/components/share-bar'
+          href: '/components/share-bar',
         },
         {
           type: 'bookmark',
           $borderEnabled: true,
-          href: '/components/share-bar'
+          href: '/components/share-bar',
         },
       ],
     },
@@ -99,6 +102,7 @@ The articles can be shared via social media or saved locally for later use.
 ### Accessibility
 
 #### Keyboard navigation
+
 The share bar uses an unordered list to follow accessibility standards.
 
 If a user focuses on an element and presses enter it will do the same action as if the user clicked on it.
@@ -106,10 +110,13 @@ If a user focuses on an element and presses enter it will do the same action as 
 ### SEO
 
 #### Ranking
+
 Coming Soon
 
 #### Navigation
+
 Coming Soon
 
 #### Descriptive
+
 Coming Soon

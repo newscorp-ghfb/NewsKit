@@ -90,9 +90,12 @@ export const Icon: React.FC<IconProps> = ({
     }
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const size = ($borderEnabled ? 'sizing050' : 'sizing070') as any;
+
   const icon = (
     <Wrapper $borderEnabled={$borderEnabled}>
-      <SelectedIcon $color="shareIconFill" $size="iconSize020" />
+      <SelectedIcon $color="shareIconFill" $size={size} />
     </Wrapper>
   );
 

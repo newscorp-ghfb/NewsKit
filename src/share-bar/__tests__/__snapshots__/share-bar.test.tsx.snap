@@ -67,8 +67,8 @@ exports[`ShareBar does not render invalid elements 1`] = `
   display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 .emotion-0 {
@@ -289,8 +289,8 @@ exports[`ShareBar href renders as an anchor 1`] = `
   display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 .emotion-2 {
@@ -321,8 +321,8 @@ exports[`ShareBar href renders as an anchor 1`] = `
   display: inline-block;
   fill: #777777;
   color: #777777;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 <div
@@ -494,14 +494,6 @@ exports[`ShareBar renders with a border 1`] = `
   margin-right: 16px;
 }
 
-.emotion-0 {
-  display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  width: 24px;
-  height: 24px;
-}
-
 .emotion-2 {
   color: #2F75D7;
   -webkit-text-decoration: underline;
@@ -524,14 +516,6 @@ exports[`ShareBar renders with a border 1`] = `
 
 .emotion-2:active {
   color: #2F75D7;
-}
-
-.emotion-9 {
-  display: inline-block;
-  fill: #777777;
-  color: #777777;
-  width: 24px;
-  height: 24px;
 }
 
 .emotion-1 {
@@ -565,6 +549,22 @@ exports[`ShareBar renders with a border 1`] = `
 .emotion-1:hover svg {
   fill: #0A68C1;
   color: #0A68C1;
+}
+
+.emotion-0 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-9 {
+  display: inline-block;
+  fill: #777777;
+  color: #777777;
+  width: 24px;
+  height: 24px;
 }
 
 <div
@@ -754,8 +754,8 @@ exports[`ShareBar renders with custom components 1`] = `
   display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 .emotion-0 {
@@ -999,8 +999,8 @@ exports[`ShareBar renders with left and right icons 1`] = `
   display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 <div
@@ -1239,8 +1239,8 @@ exports[`ShareBar renders with left and right labels 1`] = `
   display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 .emotion-0 {
@@ -1512,8 +1512,8 @@ exports[`ShareBar renders with left icons 1`] = `
   display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 <div

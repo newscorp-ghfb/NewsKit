@@ -50,7 +50,6 @@ describe('Documentation Site - sidebar component', () => {
     cy.contains('Image').should('exist');
     cy.contains('Link').should('exist');
     cy.contains('Ordered List').should('exist');
-    cy.contains('Share Bar').should('exist');
     cy.contains('Tag').should('exist');
     cy.contains('Tag List').should('exist');
     cy.contains('Unordered List').should('exist');

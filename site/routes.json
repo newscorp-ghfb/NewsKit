@@ -142,11 +142,6 @@
         "id": "/components/ordered-list"
       },
       {
-        "title": "Share Bar",
-        "page": true,
-        "id": "/components/share-bar"
-      },
-      {
         "title": "Slider",
         "page": true,
         "id": "/components/slider"
