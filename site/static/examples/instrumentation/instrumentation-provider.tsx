@@ -7,6 +7,8 @@ import {
 
 const handlers = [
   instrumentationHandlers.createConsoleHandler(),
+  instrumentationHandlers.createTealiumHandler(),
+
 ];
 const contextObject = {
   url: 'www.my-amazing-website.com',
