@@ -11,14 +11,14 @@ export const renderWithTheme = <T extends {}>(
   Component: React.ComponentType<T>,
   props?: T & {children?: React.ReactNode},
   theme: Theme = newskitLightTheme,
-  options?: RenderOptions,
+  options?: Omit<RenderOptions, 'wrapper'>,
 ) =>
-  renderer(
-    <ThemeProvider theme={theme}>
-      <Component {...(props as T)} />
-    </ThemeProvider>,
-    options,
-  );
+  renderer(<Component {...(props as T)} />, {
+    ...options,
+    wrapper: ({children}) => (
+      <ThemeProvider theme={theme}>{children}</ThemeProvider>
+    ),
+  });
 
 export const renderToFragmentWithTheme = <T extends {}>(
   Component: React.ComponentType<T>,

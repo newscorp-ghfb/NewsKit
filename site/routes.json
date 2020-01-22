@@ -175,6 +175,11 @@
         "title": "Unordered List",
         "page": true,
         "id": "/components/unordered-list"
+      },
+      {
+        "title": "Volume Control",
+        "page": true,
+        "id": "/components/volume-control"
       }
     ]
   },

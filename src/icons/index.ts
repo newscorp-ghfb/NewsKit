@@ -15,5 +15,8 @@ export * from './svg';
 export * from './pause';
 export * from './play';
 export * from './twitter';
+export * from './volume-down';
+export * from './volume-mute';
+export * from './volume-up';
 export * from './whatsapp';
 export type IconComponent = React.ComponentType;

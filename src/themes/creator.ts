@@ -53,6 +53,9 @@ export interface Icons {
   Circle?: ColourableIcon;
   Play?: ColourableIcon;
   Pause?: ColourableIcon;
+  VolumeUp?: ColourableIcon;
+  VolumeDown?: ColourableIcon;
+  VolumeMute?: ColourableIcon;
 }
 
 export interface Theme extends Record<string, unknown> {

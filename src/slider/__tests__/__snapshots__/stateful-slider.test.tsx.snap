@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatefulSlider holds the slider values in state 1`] = `
+<DocumentFragment>
+  .emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-1 {
+  border-radius: 12px;
+  height: 12px;
+  width: 100%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  cursor: inherit;
+}
+
+.emotion-0 {
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  background-color: #FFFFFF;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0A68C1;
+  cursor: inherit;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0 16px;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+}
+
+<div
+    class="emotion-3"
+  >
+    <div
+      class="emotion-2"
+      data-testid="slider-track"
+      values="40"
+    >
+      <div
+        class="emotion-1"
+        max="75"
+        min="25"
+        values="40"
+      >
+        <div
+          aria-label="slider"
+          aria-valuemax="75"
+          aria-valuemin="25"
+          aria-valuenow="40"
+          class="emotion-0"
+          draggable="false"
+          role="slider"
+          style="position: absolute; z-index: 0; cursor: grabbing; user-select: none; transform: translate(NaNpx, NaNpx);"
+          tabindex="0"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

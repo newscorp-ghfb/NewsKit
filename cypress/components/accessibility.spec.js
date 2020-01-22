@@ -13,6 +13,7 @@ const a11yComponentRules = [
   {name: 'ordered-list'},
   {name: 'share-bar'},
   {name: 'slider'},
+  {name: 'volume-control'},
   {name: 'tag-list', a11yRule: 'color-contrast'},
   {name: 'tag', a11yRule: 'color-contrast'},
   {name: 'typography/heading'},

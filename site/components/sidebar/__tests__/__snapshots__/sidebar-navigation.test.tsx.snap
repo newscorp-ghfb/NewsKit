@@ -1801,7 +1801,7 @@ exports[`Sidebar navigation on theming page after enter key guides menu collapse
 
 exports[`Sidebar navigation on theming page by clicking on components menu, guides menu collapses and components menu expands 1`] = `
 <DocumentFragment>
-  .emotion-86 {
+  .emotion-89 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -1814,7 +1814,7 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
   margin: 0;
 }
 
-.emotion-74 {
+.emotion-77 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
@@ -1972,11 +1972,11 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
 
 <nav
     aria-label="Sidebar"
-    class="emotion-86"
+    class="emotion-89"
     role="navigation"
   >
     <ul
-      class="emotion-74"
+      class="emotion-77"
       role="list"
     >
       <li
@@ -2115,7 +2115,7 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
           </svg>
         </div>
         <ul
-          class="emotion-74"
+          class="emotion-77"
           role="list"
         >
           <li
@@ -2451,6 +2451,22 @@ exports[`Sidebar navigation on theming page by clicking on components menu, guid
                 tabindex="-1"
               >
                 Unordered List
+              </div>
+            </a>
+          </li>
+          <li
+            class="emotion-2"
+          >
+            <a
+              class="emotion-12"
+              href="/components/volume-control"
+            >
+              <div
+                class="emotion-1"
+                data-testid="/components/volume-control"
+                tabindex="-1"
+              >
+                Volume Control
               </div>
             </a>
           </li>

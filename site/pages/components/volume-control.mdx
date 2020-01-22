@@ -1,0 +1,79 @@
+import {useState} from 'react';
+import Layout from '../../components/layout';
+import Playground, {withProps} from '../../components/playground';
+import Prop from '../../components/prop';
+import {LegacyBlock} from '../../components/legacy-block';
+import {VolumeControl} from 'newskit';
+
+import {StatefulSlider, Circle, styled, Heading1} from 'newskit';
+
+export default Layout;
+
+# Volume Control
+
+## Overview
+
+### Usage
+
+The VolumeControl component utilises the [Slider](/components/slider) component, for controlling audio player volume level.
+The slider has a step of 0.1 and changes a volume number between 0 and 1. The min label is also a clickable mute/unmute button
+which will set the volume to 0 or back to its previous value on click. The onChange function prop can be used to pass the volume
+value to the relevant audio player instance, along with also passing the value back down to the VolumeControl.
+
+## Props
+
+<LegacyBlock $marginTop="sizing05">
+  <Prop name="volume" required type="number">
+    The volume value, a number between 0 and 1. This value must be updated when
+    onChange is called.
+  </Prop>
+  <Prop name="onChange" required type="(volume: number) => void">
+    The onChange function receives the new volume value whenever it is changed.
+    Passing this value back into the volume prop is essential to make the slider
+    interactive.
+  </Prop>
+  <Prop name="vertical" type="boolean">
+    If true, the volume control is rendered vertically rather than horizontally.
+    The volume control will have a height of 100% in vertical mode. To ensure
+    the slider renders as expected, your container must have a height set.
+  </Prop>
+</LegacyBlock>
+
+## Playground
+
+<Playground
+  componentName="StatefulVolumeControl"
+  newskitPath="/volume-control"
+  component={props => {
+    const [stateVolume, setVolume] = useState(0.5);
+    const onChange = newValues => {
+      setVolume(newValues);
+    };
+    return (
+      <LegacyBlock
+        $width="100%"
+        $height={props.vertical ? '240px' : undefined}
+        style={{textAlign: 'center'}}
+      >
+        <VolumeControl {...props} volume={stateVolume} onChange={onChange} />
+      </LegacyBlock>
+    );
+  }}
+  knobs={[
+    {
+      name: 'Vertical',
+      propName: 'vertical',
+      options: [
+        {
+          label: 'undefined',
+          isDefault: true,
+          value: undefined,
+        },
+        {
+          label: 'true',
+          value: true,
+        },
+      ],
+    },
+  ]}
+/>

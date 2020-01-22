@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import {Range, Direction} from 'react-range';
 import {withTheme} from 'emotion-theming';
 import {SliderProps} from './types';
@@ -16,7 +16,6 @@ import {ThemeProp} from '../utils/style';
 export const Slider: React.FC<SliderProps> = withTheme<
   React.FC<SliderProps & ThemeProp>
 >(props => {
-  const rangeRef = useRef<Range>(null);
   const {
     min,
     max,
@@ -47,7 +46,6 @@ export const Slider: React.FC<SliderProps> = withTheme<
         disabled={disabled}
         onChange={v => onChange(v)}
         onFinalChange={v => onFinalChange && onFinalChange(v)}
-        ref={rangeRef}
         direction={vertical ? Direction.Up : Direction.Right}
         renderTrack={({props: p, children, isDragged}) => (
           <StyledTrack
@@ -77,7 +75,6 @@ export const Slider: React.FC<SliderProps> = withTheme<
             <ThumbLabelWrapper
               values={values}
               index={index}
-              rangeRef={rangeRef.current}
               isDragged={isDragged}
               thumbLabel={thumbLabel}
               vertical={vertical}
