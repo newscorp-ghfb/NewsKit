@@ -1,5 +1,5 @@
-import {EventTrigger, ExtendedWindow} from '../../types';
-import createHandler, {sendEventToTealium} from '../tealium';
+import {EventTrigger} from '../../types';
+import createHandler, {sendEventToTealium, ExtendedWindow} from '../tealium';
 
 const extendedWindow: ExtendedWindow = (window as Window) as ExtendedWindow;
 
@@ -12,7 +12,7 @@ describe('instrumentation event handler - tealium', () => {
     },
     {
       originator: 'link',
-      trigger: EventTrigger.PageView,
+      trigger: EventTrigger.Load,
       data: {href: 'href2'},
     },
   ];

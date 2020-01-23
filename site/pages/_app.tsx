@@ -5,9 +5,6 @@ import {
   createEventInstrumentation,
   InstrumentationProvider,
   instrumentationHandlers,
-  instrumentationMiddleware,
-  composeInstrumentationMiddleware,
-  EventTrigger,
 } from 'newskit';
 import App, {Container} from 'next/app';
 import '../prism-coy.css'; // light theme code highlighting
@@ -168,30 +165,17 @@ export default class MyApp extends App<Props, State> {
     const {Component, pageProps, path} = this.props;
     const {theme} = this.state as State;
 
-    const consoleHandler = composeInstrumentationMiddleware(
-      instrumentationHandlers.createConsoleHandler('Instrumentation event:'),
-      instrumentationMiddleware.filterByOriginator('link'),
-    );
-
-    const tealiumPageHandler = composeInstrumentationMiddleware(
+    const handlers = [
+      instrumentationHandlers.createConsoleHandler(),
       instrumentationHandlers.createTealiumHandler(),
-      instrumentationMiddleware.filterByTrigger(EventTrigger.PageView),
-    );
-
-    const tealiumLinkHandler = composeInstrumentationMiddleware(
-      instrumentationHandlers.createTealiumHandler(),
-      instrumentationMiddleware.filterByTrigger(EventTrigger.Click),
-    );
+    ];
 
     return (
       <Container>
         <InstrumentationProvider
-          {...createEventInstrumentation(
-            [consoleHandler, tealiumPageHandler, tealiumLinkHandler],
-            {
-              ...pageProps,
-            },
-          )}
+          {...createEventInstrumentation(handlers, {
+            ...pageProps,
+          })}
         >
           <ThemeProvider theme={theme}>
             <Component

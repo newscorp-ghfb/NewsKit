@@ -3,7 +3,7 @@ export type EventContext = object;
 export enum EventTrigger {
   Click = 'click',
   Swipe = 'swipe',
-  PageView = 'page view',
+  Load = 'load',
 }
 
 export interface InstrumentationEvent {
@@ -20,13 +20,4 @@ export type EventHandler = (
 export interface EventInstrumentation {
   context: EventContext;
   fireEvent: (event: InstrumentationEvent) => void;
-}
-
-export type UTag = {
-  link(e: InstrumentationEvent): void;
-  view(e: InstrumentationEvent): void;
-};
-
-export interface ExtendedWindow extends Window {
-  utag: UTag;
 }
