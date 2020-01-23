@@ -9,20 +9,23 @@ export default Layout;
 
 ## Overview
 
-Retrieve a style preset values as a css template from the current theme. 
+Retrieve a style preset values as a css template from the current theme.
 For more information on what consists of style preset see doc [here](/theming/style-preset).
 
 ## Syntax
 
-<Code>{'getStylePresetFromTheme(defaultToken, customProp)(props)'}</Code>
+<Code>{'getStylePresetFromTheme(defaultToken, customProp, options)(props)'}</Code>
 
 ## Parameters
 
 <LegacyBlock $marginTop='sizing040'>
-  <Prop name='defaultToken' type='ThemeToken'>
+  <Prop name='defaultToken' type='string'>
     Is the name of the style preset token to be retrieved. If provided, it is used as an object key on the style presets section of the theme to get the token value.
   </Prop>
-  <Prop name='customProp' type="GetStylePresetFromThemeOptions">
+  <Prop name='customProp' type="string">
+    Is the name of the component prop in which a style preset token name can be provided by the end-user of the component. If provided, the style preset to be retrieved will come from the component prop.
+  </Prop>
+  <Prop name='options' type="GetStylePresetFromThemeOptions">
     This prop consists of isLoading, isCurrent, omitStates and omitStyles options. These are component specific behaviours that can be controlled via either state or passed down from parent as prop.
   </Prop>
   <Prop name='props' type='Props'>

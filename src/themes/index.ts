@@ -1,5 +1,6 @@
 export {Borders, BorderKeys} from './mappers/borders';
 export {ColorKeys, Colors} from './mappers/colors';
+export {StylePresets} from './mappers/style-preset';
 export {TypePresetKeys, TypePresets} from './mappers/type-presets';
 export {
   StylePresetStyles,

@@ -31,9 +31,7 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 1`] = `
 
 <div
     class="emotion-0"
-  >
-    interactive010
-  </div>
+  />
 </DocumentFragment>
 `;
 
@@ -69,16 +67,14 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 with borderRadius
 
 <div
     class="emotion-0"
-  >
-    interactive010
-  </div>
+  />
 </DocumentFragment>
 `;
 
 exports[`Surface Helper getStylePresetFromTheme interactive010 with current state 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #FFFFFF;
+  background-color: #00ff00;
   color: #FFFFFF;
 }
 
@@ -89,9 +85,43 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 with current stat
 
 <div
     class="emotion-0"
-  >
-    interactive010
-  </div>
+  />
+</DocumentFragment>
+`;
+
+exports[`Surface Helper getStylePresetFromTheme interactive010 with disabled and loading state 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FF0000;
+  color: #c0c0c0;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Surface Helper getStylePresetFromTheme interactive010 with disabled state 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FF0000;
+  color: #c0c0c0;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+<div
+    class="emotion-0"
+  />
 </DocumentFragment>
 `;
 
@@ -109,16 +139,14 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 with loading and 
 
 <div
     class="emotion-0"
-  >
-    interactive010
-  </div>
+  />
 </DocumentFragment>
 `;
 
 exports[`Surface Helper getStylePresetFromTheme interactive010 with loading state 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #FFFFFF;
+  background-color: #ffff00;
   color: #FFFFFF;
 }
 
@@ -129,9 +157,7 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 with loading stat
 
 <div
     class="emotion-0"
-  >
-    interactive010
-  </div>
+  />
 </DocumentFragment>
 `;
 
@@ -156,9 +182,7 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 without backgroun
 
 <div
     class="emotion-0"
-  >
-    interactive010
-  </div>
+  />
 </DocumentFragment>
 `;
 
@@ -188,8 +212,39 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 without disabled 
 
 <div
     class="emotion-0"
-  >
-    interactive010
-  </div>
+  />
+</DocumentFragment>
+`;
+
+exports[`Surface Helper getStylePresetFromTheme with override to interactive020 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FF00FF;
+  border-styles: solid;
+  border-color: #0A68C1;
+  border-width: 1px;
+  color: #0A68C1;
+}
+
+.emotion-0 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-0:hover:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-0:active:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+}
+
+<div
+    class="emotion-0"
+  />
 </DocumentFragment>
 `;

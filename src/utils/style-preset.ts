@@ -3,7 +3,6 @@ import {
   StylePresetStyles,
   StylePresetStyleKeys,
   StylePresetStateKeys,
-  StylePresetsKeys,
   StylePresetStates,
 } from '../themes/mappers/style-preset';
 import {filterObject} from './filter-object';
@@ -12,6 +11,7 @@ import {SizingKeys} from '../themes/newskit-light/spacing';
 export interface GetStylePresetFromThemeOptions {
   isLoading?: boolean;
   isCurrent?: boolean;
+  isDisabled?: boolean;
   omitStates?: StylePresetStateKeys[];
   omitStyles?: StylePresetStyleKeys[];
   borderRadiusSize?: SizingKeys;
@@ -57,36 +57,47 @@ const cssTmpl = (
   ${selector && '}'}
 `;
 
-export const getStylePresetFromTheme = (
-  stylePreset: StylePresetsKeys,
+export const getStylePresetFromTheme = <Props extends ThemeProp>(
+  defaultToken?: string,
+  customProp?: Exclude<keyof Props, 'theme'>,
   options?: GetStylePresetFromThemeOptions,
-) => ({theme}: ThemeProp) => {
+) => ({theme, ...props}: Props) => {
   const {
     omitStates = [],
     isCurrent = false,
     isLoading = false,
+    isDisabled = false,
     ...presetOptions
   } = options || {};
+
+  const stylePreset =
+    (customProp &&
+      theme.stylePresets[(props[customProp] as unknown) as string]) ||
+    (defaultToken && theme.stylePresets[defaultToken]);
+
+  if (!stylePreset) {
+    return '';
+  }
+
   const {current, loading, ...presetStates} = filterObject(
-    theme.stylePresets[stylePreset] as StylePresetStates,
+    stylePreset as StylePresetStates,
     omitStates,
   );
 
-  if (isCurrent || isLoading) {
-    const stateOverrides =
-      (isLoading && loading) || (isCurrent && current) || {};
+  const stateOverrides =
+    (isDisabled && presetStates.disabled) ||
+    (isLoading && loading) ||
+    (isCurrent && current) ||
+    undefined;
+
+  if (stateOverrides) {
     const {base = {}} = presetStates;
     return cssTmpl(
       getPresetStyles({...base, ...stateOverrides}, presetOptions),
     );
   }
 
-  const presetStateKeys = Object.keys(presetStates) as Array<
-    keyof typeof presetStates
-  >;
-  return presetStateKeys.map(stateKey => {
-    const presetState = presetStates[stateKey];
-
+  return Object.entries(presetStates).map(([stateKey, presetState]) => {
     if (presetState) {
       const presetStyle = getPresetStyles(presetState, presetOptions);
 

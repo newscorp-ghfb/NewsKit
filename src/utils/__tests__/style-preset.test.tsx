@@ -1,4 +1,3 @@
-import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {
   getStylePresetFromTheme,
@@ -7,14 +6,16 @@ import {
 import {createTheme} from '../../themes';
 import {styled} from '../style';
 
-const TestSurface: React.FC<GetStylePresetFromThemeOptions> = props => {
-  const TestElement = styled.div<GetStylePresetFromThemeOptions>`
-    ${({theme, ...options}) =>
-      getStylePresetFromTheme('interactive010', options)({theme})}
-  `;
+const TestSurface = styled.div<GetStylePresetFromThemeOptions>`
+  ${options => getStylePresetFromTheme('interactive010', undefined, options)}
+`;
 
-  return <TestElement {...props}>interactive010</TestElement>;
-};
+const OverridableTestSurface = styled.div<
+  GetStylePresetFromThemeOptions & {stylePresetToUse: string}
+>`
+  ${options =>
+    getStylePresetFromTheme('interactive010', 'stylePresetToUse', options)}
+`;
 
 describe('Surface Helper', () => {
   test('getStylePresetFromTheme interactive010', () => {
@@ -22,10 +23,52 @@ describe('Surface Helper', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('getStylePresetFromTheme with override to interactive020', () => {
+    const fragment = renderToFragmentWithTheme(
+      OverridableTestSurface,
+      {
+        stylePresetToUse: 'interactive020',
+      },
+      createTheme('test-style-preset', {
+        themeOverrider: () => ({
+          stylePresets: {
+            interactive020: {
+              base: {
+                backgroundColor: '#FF00FF',
+              },
+            },
+          },
+        }),
+      }),
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('getStylePresetFromTheme interactive010 with borderRadius', () => {
     const fragment = renderToFragmentWithTheme(TestSurface, {
       borderRadiusSize: 'sizing030',
     });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('getStylePresetFromTheme interactive010 with disabled state', () => {
+    const fragment = renderToFragmentWithTheme(
+      TestSurface,
+      {
+        isDisabled: true,
+      },
+      createTheme('test-style-preset', {
+        themeOverrider: () => ({
+          stylePresets: {
+            interactive010: {
+              disabled: {
+                backgroundColor: '#FF0000',
+              },
+            },
+          },
+        }),
+      }),
+    );
     expect(fragment).toMatchSnapshot();
   });
 
@@ -40,7 +83,7 @@ describe('Surface Helper', () => {
           stylePresets: {
             interactive010: {
               loading: {
-                backgroundColor: '#FFFFFF',
+                backgroundColor: '#ffff00',
               },
             },
           },
@@ -61,7 +104,7 @@ describe('Surface Helper', () => {
           stylePresets: {
             interactive010: {
               current: {
-                backgroundColor: '#FFFFFF',
+                backgroundColor: '#00ff00',
               },
             },
           },
@@ -83,10 +126,35 @@ describe('Surface Helper', () => {
           stylePresets: {
             interactive010: {
               current: {
-                backgroundColor: '#FFFFFF',
+                backgroundColor: '#00ff00',
               },
               loading: {
                 backgroundColor: '#ffff00',
+              },
+            },
+          },
+        }),
+      }),
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('getStylePresetFromTheme interactive010 with disabled and loading state', () => {
+    const fragment = renderToFragmentWithTheme(
+      TestSurface,
+      {
+        isDisabled: true,
+        isLoading: true,
+      },
+      createTheme('test-style-preset', {
+        themeOverrider: () => ({
+          stylePresets: {
+            interactive010: {
+              current: {
+                backgroundColor: '#00ff00',
+              },
+              disabled: {
+                backgroundColor: '#FF0000',
               },
             },
           },

@@ -1,13 +1,12 @@
-import {getStylePresetFromTheme, GetStylePresetFromThemeOptions, StylePresetsKeys, styled} from 'newskit';
+import {
+  getStylePresetFromTheme,
+  styled,
+} from 'newskit';
 
-interface Paragraph extends GetStylePresetFromThemeOptions {
-  stylePreset: StylePresetsKeys;
+interface ParagraphProps {
+  stylePreset: string;
 }
 
-const Paragraph = ({stylePreset = "interactive010", ...props}: Paragraph) => {
-  const P = styled.p<GetStylePresetFromThemeOptions>`
-    ${getStylePresetFromTheme(stylePreset, props)}
-  `;
-
-  return <P {...props} />;
-};
+const Paragraph = styled.p<ParagraphProps>`
+  ${getStylePresetFromTheme('interactive010', 'stylePreset')}
+`;

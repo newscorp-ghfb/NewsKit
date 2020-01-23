@@ -74,7 +74,7 @@ export const createStylePresets = ({
       backgroundColor: colorPrimitives.neutral020,
       color: colorPrimitives.inkNonEssential,
     },
-  },
+  } as StylePresetStates,
   interactive010Inverse: {
     base: {
       color: colorPrimitives.inkBrand,
@@ -96,7 +96,7 @@ export const createStylePresets = ({
       backgroundColor: colorPrimitives.neutral020,
       color: colorPrimitives.inkNonEssential,
     },
-  },
+  } as StylePresetStates,
   interactive020: {
     base: {
       backgroundColor: colorPrimitives.white,
@@ -116,7 +116,7 @@ export const createStylePresets = ({
     disabled: {
       backgroundColor: colorPrimitives.neutral020,
     },
-  },
+  } as StylePresetStates,
   interactive030: {
     base: {
       backgroundColor: colorPrimitives.neutral040,
@@ -125,7 +125,7 @@ export const createStylePresets = ({
     disabled: {
       backgroundColor: colorPrimitives.neutral020,
     },
-  },
+  } as StylePresetStates,
   interactive040: {
     base: {
       backgroundColor: colorPrimitives.neutral030,
@@ -134,8 +134,8 @@ export const createStylePresets = ({
     disabled: {
       backgroundColor: colorPrimitives.neutral020,
     },
-  },
+  } as StylePresetStates,
 });
 
-export type StylePresetsKeys = keyof StylePresets;
-export type StylePresets = ReturnType<typeof createStylePresets>;
+export type StylePresets = ReturnType<typeof createStylePresets> &
+  Record<string, StylePresetStates>;
