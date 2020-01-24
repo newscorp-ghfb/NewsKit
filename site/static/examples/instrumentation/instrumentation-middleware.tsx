@@ -20,17 +20,12 @@ const consoleHandler3 = instrumentationHandlers.createConsoleHandler(
   'Some other event:',
 );
 
-const pageViewHandler = composeInstrumentationMiddleware(
+const tealiumHandler = composeInstrumentationMiddleware(
   instrumentationHandlers.createTealiumHandler(),
-  instrumentationMiddleware.filterByTrigger(EventTrigger.PageView),
+  instrumentationMiddleware.filterByTrigger(EventTrigger.Load),
 )
 
-const linkHandler = composeInstrumentationMiddleware(
-  instrumentationHandlers.createTealiumHandler(),
-  instrumentationMiddleware.filterByTrigger(EventTrigger.Click),
-)
-
-const handlers = [consoleHandler1, consoleHandler2, consoleHandler3, pageViewHandler, linkHandler];
+const handlers = [consoleHandler1, consoleHandler2, consoleHandler3, tealiumHandler];
 
 const instrumentation = createEventInstrumentation(handlers, {
   url: 'www.my-amazing-website.com',
