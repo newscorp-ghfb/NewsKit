@@ -1,5 +1,5 @@
 import {EventTrigger} from '../../types';
-import createHandler, {sendEventToTealium, ExtendedWindow} from '../tealium';
+import createHandler, {ExtendedWindow} from '../tealium';
 
 const extendedWindow: ExtendedWindow = (window as Window) as ExtendedWindow;
 
@@ -12,20 +12,28 @@ describe('instrumentation event handler - tealium', () => {
     },
     {
       originator: 'link',
+      trigger: EventTrigger.Swipe,
+      data: {href: 'href1'},
+    },
+    {
+      originator: 'link',
       trigger: EventTrigger.Load,
       data: {href: 'href2'},
     },
   ];
 
-  const mockEvents2 = [
+  const viewEvents = [
+    {
+      originator: 'link',
+      trigger: EventTrigger.Load,
+      data: {href: 'href2'},
+    },
+  ];
+
+  const linkEvent = [
     {
       originator: 'link',
       trigger: EventTrigger.Click,
-      data: {href: 'href1'},
-    },
-    {
-      originator: 'link',
-      trigger: 'foo' as any,
       data: {href: 'href2'},
     },
   ];
@@ -35,26 +43,27 @@ describe('instrumentation event handler - tealium', () => {
     const viewStub = jest.fn();
     (extendedWindow.utag as any) = {link: linkStub, view: viewStub};
   });
+
+  test('triggers a view event', () => {
+    const handler = createHandler();
+    handler(viewEvents);
+
+    expect(extendedWindow.utag.view).toBeCalledWith(viewEvents[0]);
+  });
+
+  test('triggers a link event', () => {
+    const handler = createHandler();
+    handler(linkEvent);
+
+    expect(extendedWindow.utag.link).toBeCalledWith(linkEvent[0]);
+  });
+
   test("triggers each event, according to it's type", () => {
     const handler = createHandler();
     handler(mockEvents);
 
     expect(extendedWindow.utag.link).nthCalledWith(1, mockEvents[0]);
-    expect(extendedWindow.utag.view).nthCalledWith(1, mockEvents[1]);
-  });
-
-  test('triggers only the events which types we are supporting', () => {
-    const handler = createHandler();
-    handler(mockEvents2);
-
-    expect(extendedWindow.utag.link).nthCalledWith(1, mockEvents2[0]);
-    expect(extendedWindow.utag.link).not.nthCalledWith(1, mockEvents2[1]);
-  });
-
-  test('sendEventToTealium returns null if originator is not in supported event types', () => {
-    const sentEvents = sendEventToTealium(mockEvents2[1]);
-
-    expect(sentEvents).toBeNull();
-    expect(extendedWindow.utag.link).not.toBeCalled();
+    expect(extendedWindow.utag.link).nthCalledWith(2, mockEvents[1]);
+    expect(extendedWindow.utag.view).toBeCalledWith(mockEvents[2]);
   });
 });
