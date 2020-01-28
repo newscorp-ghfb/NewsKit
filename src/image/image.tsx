@@ -1,6 +1,10 @@
 import React, {useState} from 'react';
-import {styled, getColorFromTheme} from '../utils/style';
+import {styled} from '../utils/style';
 import {Placeholder} from '../icons';
+import {
+  getStylePresetFromTheme,
+  GetStylePresetFromThemeOptions,
+} from '../utils/style-preset';
 
 export enum ImageShape {
   Square = 'square',
@@ -12,6 +16,7 @@ export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   aspectWidth: number | string;
   hideLoadingIcon?: boolean;
   shape?: ImageShape;
+  stylePreset?: string;
 }
 
 interface ImageContainerProps extends React.HtmlHTMLAttributes<HTMLElement> {
@@ -19,6 +24,7 @@ interface ImageContainerProps extends React.HtmlHTMLAttributes<HTMLElement> {
   aspectHeight: number | string;
   aspectWidth: number | string;
   shape?: ImageShape;
+  stylePreset?: string;
 }
 
 const ImageContainer = styled.div<ImageContainerProps>`
@@ -29,12 +35,19 @@ const ImageContainer = styled.div<ImageContainerProps>`
     props.isLoading
       ? `calc(100% * (${props.aspectHeight}/${props.aspectWidth}))`
       : 0};
-  background-color: ${getColorFromTheme('skeletonLight')};
-  border-radius: ${props => ({shape = props.shape || ImageShape.Square}) =>
-    ({
-      [ImageShape.Square]: undefined,
-      [ImageShape.Rounded]: '50%',
-    }[shape])};
+
+  ${({stylePreset}) => {
+    const options = {
+      borderRadiusSize: 'sizing000',
+    } as GetStylePresetFromThemeOptions;
+
+    const presetName =
+      stylePreset && getStylePresetFromTheme(stylePreset, undefined, options)
+        ? stylePreset
+        : 'static010';
+
+    return getStylePresetFromTheme(presetName, 'stylePreset', options);
+  }}
 `;
 
 const imagePropsAreEqual = (prevProps: ImageProps, nextProps: ImageProps) =>
@@ -65,7 +78,7 @@ const ImageComponent = (props: ImageProps) => {
     }
   `;
 
-  const IconContainer = styled.div`
+  const IconContainer = styled.div<{stylePreset?: string}>`
     top: 0;
     left: 0;
     position: absolute;
@@ -75,6 +88,18 @@ const ImageComponent = (props: ImageProps) => {
     width: 100%;
     height: 100%;
     margin: 0;
+    ${({stylePreset}) => {
+      const options = {
+        omitStyles: ['backgroundColor', 'borderRadius'],
+      } as GetStylePresetFromThemeOptions;
+
+      const presetName =
+        stylePreset && getStylePresetFromTheme(stylePreset, undefined, options)
+          ? stylePreset
+          : 'static010';
+
+      return getStylePresetFromTheme(presetName, 'stylePreset', options);
+    }}
   `;
 
   const InnerIconContainer = styled.div`

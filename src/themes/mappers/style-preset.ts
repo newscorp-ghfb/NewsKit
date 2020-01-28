@@ -135,6 +135,13 @@ export const createStylePresets = ({
       backgroundColor: colorPrimitives.neutral020,
     },
   } as StylePresetStates,
+  static010: {
+    base: {
+      backgroundColor: colorPrimitives.neutral030,
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
+      iconColor: colorPrimitives.brand010,
+    },
+  } as StylePresetStates,
 });
 
 export type StylePresets = ReturnType<typeof createStylePresets> &
