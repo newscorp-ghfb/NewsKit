@@ -517,6 +517,13 @@ only_master: &only_master
     branches:
       only: master
 
+only_pr: &only_pr
+  filters:
+    branches:
+      ignore: 
+        - develop
+        - master
+
 ignore_release: &ignore_release
   filters:
     branches:
@@ -551,6 +558,7 @@ workflows:
           <<: *require_dep
       - test_visual_comps:
           <<: *ignore_release
+          <<: *only_pr
           context: ncu-product-platforms-context
           type: approval
           requires:
