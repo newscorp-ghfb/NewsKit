@@ -244,7 +244,7 @@ jobs:
       - store_test_results:
           path: unit-test-results
 
-  test_visual_comps:
+  test_visual_comps: &test_visual_comps
     working_directory: ~/project
     docker:
       - image: circleci/node:10.16
@@ -275,6 +275,12 @@ jobs:
           command: |
             export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}
             make comps_visual_test
+
+  test_visual_comps_pr:
+    <<: *test_visual_comps
+
+  test_visual_comps_develop:
+    <<: *test_visual_comps
   
   test_visual_docs:
     working_directory: ~/project
@@ -516,7 +522,7 @@ only_master: &only_master
   filters:
     branches:
       only: master
-
+      
 only_pr: &only_pr
   filters:
     branches:
@@ -557,10 +563,19 @@ workflows:
       - test_unit:
           <<: *ignore_release
           <<: *require_dep
-      - test_visual_comps:
+      - run_visual_comps_pr:
+          <<: *only_pr
+          type: approval
+          requires:
+            - build_storybook
+      - test_visual_comps_pr:
           <<: *only_pr
           context: ncu-product-platforms-context
-          type: approval
+          requires:
+            - run_visual_comps_pr
+      - test_visual_comps_develop:
+          <<: *only_develop
+          context: ncu-product-platforms-context
           requires:
             - build_storybook
       - test_e2e_comps:
@@ -589,7 +604,7 @@ workflows:
           requires:
             - build_components
             - test_unit
-            - test_visual_comps
+            - test_visual_comps_develop
             - test_e2e_comps
             - test_visual_docs
             - test_e2e_docs
@@ -601,7 +616,7 @@ workflows:
             - build_docs
             - build_storybook
             - test_unit
-            - test_visual_comps
+            - test_visual_comps_develop
             - test_e2e_comps
             - test_visual_docs
             - test_e2e_docs
@@ -626,7 +641,7 @@ workflows:
           <<: *only_master
           requires:
             - test_unit
-            - test_visual_comps
+            - test_visual_comps_develop
             - test_e2e_comps
             - test_e2e_docs
       - publish_npm:
@@ -635,7 +650,7 @@ workflows:
           requires:
             - build_components
             - test_unit
-            - test_visual_comps
+            - test_visual_comps_develop
             - test_e2e_comps
             - test_e2e_docs
       - k8s_flux_deploy_prod:
