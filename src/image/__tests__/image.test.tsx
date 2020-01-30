@@ -35,7 +35,7 @@ describe('Image', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  ['maskSemiRounded', 'maskRound'].forEach(token => {
+  ['maskSemiRounded', 'maskRound', 'invalidPreset'].forEach(token => {
     test('renders with ', () => {
       const props = {
         ...defaultProps,
