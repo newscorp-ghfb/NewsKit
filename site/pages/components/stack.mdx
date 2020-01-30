@@ -1,0 +1,129 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {LegacyBlock} from '../../components/legacy-block';
+import {Prop} from '../../components/prop';
+
+import {Stack, Tag} from 'newskit';
+
+export default Layout;
+
+# Stack
+
+## Overview
+
+The Stack component is a low-level primitive used to layout items in a horizontal or vertical stack, with even spacing between the items. Distribution requires the Stacks parent to have a width and height values set.
+
+## Props
+
+Stack have a number of props to facilitate a variety of uses. Custom and required props are detailed below:
+
+<LegacyBlock marginTop="sizing05">
+  <Prop
+    name="flow"
+    type="Flow.VerticalLeft | Flow.VerticalCenter | Flow.VerticalRight | Flow.HorizontalTop | Flow.HorizontalCenter | Flow.HorizontalBottom"
+    default="Flow.Vertical"
+  >
+    If provided, defines the flow direction of the stack contents.
+  </Prop>
+  <Prop
+    name="stackDistribution"
+    type="StackDistribution"
+    default="StackDistribution.SpaceAround"
+  >
+    If provided, defines the type of spacing used to layout the items in the
+    stack.
+  </Prop>
+  <Prop name="space" type="SizingKeys">
+    If provided, defines the spacing value used to layout the items of the
+    stack.
+  </Prop>
+  <Prop name="wrap" type="wrap | nowrap">
+    If provided, defines if the content of the stack wraps.
+  </Prop>
+</LegacyBlock>
+
+## Playground
+
+<Playground
+  componentName="Stack"
+  newskitPath="/stack"
+  component={state => (
+    <LegacyBlock $width="100%" $height="300px">
+      <Stack {...state}>
+        {[
+          'This',
+          'Is',
+          'A',
+          'Stack',
+          'Example',
+          'Showing',
+          'Multiple',
+          'Tags',
+        ].map(item => (
+          <Tag>{item}</Tag>
+        ))}
+      </Stack>
+    </LegacyBlock>
+  )}
+  knobs={[
+    {
+      name: 'Stack Flow',
+      propName: 'flow',
+      options: (() =>
+        [
+          'vertical-left',
+          'vertical-center',
+          'vertical-right',
+          'horizontal-top',
+          'horizontal-center',
+          'horizontal-bottom',
+        ].map((flow, i) => ({
+          label: flow,
+          value: flow,
+          isDefault: !i,
+        })))(),
+    },
+    {
+      name: 'Stack Distribution',
+      propName: 'stackDistribution',
+      options: (() =>
+        [
+          'flex-start',
+          'center',
+          'flex-end',
+          'space-around',
+          'space-between',
+          'space-evenly',
+        ].map((flow, i) => ({
+          label: flow,
+          value: flow,
+          isDefault: !i,
+        })))(),
+    },
+    {
+      name: 'Space',
+      propName: 'space',
+      options: (() =>
+        ['sizing000', 'sizing030', 'sizing060', 'sizing120'].map((size, i) => ({
+          label: size,
+          value: size,
+          isDefault: !i,
+        })))(),
+    },
+    {
+      name: 'Wrap',
+      propName: 'wrap',
+      options: [
+        {
+          label: 'wrap',
+          value: 'wrap',
+        },
+        {
+          label: 'nowrap',
+          value: 'nowrap',
+          isDefault: true,
+        },
+      ],
+    },
+  ]}
+/>
