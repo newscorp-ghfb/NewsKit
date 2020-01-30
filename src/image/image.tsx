@@ -96,7 +96,7 @@ const ImageComponent = (props: ImageProps) => {
       const presetName =
         stylePreset && getStylePresetFromTheme(stylePreset, undefined, options)
           ? stylePreset
-          : 'static010';
+          : 'maskPointed010';
 
       return getStylePresetFromTheme(presetName, 'stylePreset', options);
     }}

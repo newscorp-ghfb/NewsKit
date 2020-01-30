@@ -34,4 +34,15 @@ describe('Image', () => {
     const fragment = renderToFragmentWithTheme(Image, props);
     expect(fragment).toMatchSnapshot();
   });
+
+  ['maskSemiRounded', 'maskRound'].forEach(token => {
+    test('renders with ', () => {
+      const props = {
+        ...defaultProps,
+        stylePreset: token,
+      };
+      const fragment = renderToFragmentWithTheme(Image, props);
+      expect(fragment).toMatchSnapshot();
+    });
+  });
 });

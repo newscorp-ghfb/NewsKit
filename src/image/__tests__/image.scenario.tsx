@@ -1,6 +1,30 @@
 import * as React from 'react';
 import {Image} from '..';
 import {styled} from '../../utils/style';
+import {createTheme} from '../../themes/creator';
+import {
+  BorderRadiusShape,
+  borderRadiusPrimitives,
+} from '../../themes/newskit-light/border-radius';
+import {colorPrimitives} from '../../themes/newskit-light/colors';
+import {StylePresetStates} from '../../../dist/themes/mappers/style-preset';
+import {Theme} from '../../../dist/themes/creator';
+import {ThemeProvider} from '../../themes';
+import {StorybookHeading} from '../../test/storybook-comps';
+
+const customTheme: Theme = createTheme('awesome-theme', {
+  themeOverrider: () => ({
+    stylePresets: {
+      myAwesomeCustomStyle: {
+        base: {
+          backgroundColor: colorPrimitives.skeletonDark,
+          borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
+          iconColor: colorPrimitives.inkInverse,
+        },
+      } as StylePresetStates,
+    },
+  }),
+});
 
 export const name = 'image';
 
@@ -11,6 +35,7 @@ const Container = styled.div`
 
 export const component = () => (
   <React.Fragment>
+    <StorybookHeading>Default theme</StorybookHeading>
     <div>
       <Container>
         <Image
@@ -21,6 +46,9 @@ export const component = () => (
         />
       </Container>
     </div>
+    <StorybookHeading>
+      Default theme with invalid image reference hiding logo
+    </StorybookHeading>
     <div>
       <Container>
         <Image
@@ -31,6 +59,53 @@ export const component = () => (
           hideLoadingIcon
         />
       </Container>
+    </div>
+    <StorybookHeading>Using custom style preset</StorybookHeading>
+    <div>
+      <ThemeProvider theme={customTheme}>
+        <Container>
+          <Image
+            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
+            aspectWidth={3}
+            aspectHeight={2}
+            alt="Example Image"
+            stylePreset="myAwesomeCustomStyle"
+          />
+        </Container>
+      </ThemeProvider>
+    </div>
+    <StorybookHeading>
+      Using custom style preset with invalid image reference
+    </StorybookHeading>
+    <div>
+      <ThemeProvider theme={customTheme}>
+        <Container>
+          <Image
+            src="invalid-image"
+            aspectWidth={3}
+            aspectHeight={2}
+            alt="Example Image"
+            stylePreset="myAwesomeCustomStyle"
+          />
+        </Container>
+      </ThemeProvider>
+    </div>
+    <StorybookHeading>
+      Using custom style preset with invalid image reference hiding logo
+    </StorybookHeading>
+    <div>
+      <ThemeProvider theme={customTheme}>
+        <Container>
+          <Image
+            src="invalid-image"
+            aspectWidth={3}
+            aspectHeight={2}
+            alt="Example Image"
+            stylePreset="myAwesomeCustomStyle"
+            hideLoadingIcon
+          />
+        </Container>
+      </ThemeProvider>
     </div>
   </React.Fragment>
 );
