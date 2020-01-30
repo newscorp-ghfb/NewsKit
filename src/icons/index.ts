@@ -19,4 +19,6 @@ export * from './volume-down';
 export * from './volume-mute';
 export * from './volume-up';
 export * from './whatsapp';
+export * from './forward10';
+export * from './replay10';
 export type IconComponent = React.ComponentType;

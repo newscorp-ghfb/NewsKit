@@ -1,0 +1,67 @@
+/* eslint-disable jsx-a11y/media-has-caption */
+import React, {
+  useRef,
+  useImperativeHandle,
+  forwardRef,
+  RefObject,
+  Ref,
+} from 'react';
+
+const getValueInRange = (value: number, [start, end]: [number, number]) =>
+  Math.max(start, Math.min(end, value));
+
+export interface AudioHandler {
+  togglePlay: (isPlaying: boolean) => boolean;
+  setVolume: (newVolume: number) => number;
+  setCurrentTime: (newTime: number) => number;
+}
+
+export const useAudioHandler = (
+  localRef: RefObject<HTMLAudioElement>,
+  parentRef: Ref<AudioHandler>,
+) => {
+  useImperativeHandle(parentRef, () => ({
+    togglePlay: isPlaying => {
+      const playerNode = localRef.current!;
+      if (isPlaying) {
+        playerNode.pause();
+      } else {
+        playerNode.play();
+      }
+      return !isPlaying;
+    },
+    setCurrentTime: newTime => {
+      const playerNode = localRef.current!;
+      const timeRange = playerNode.seekable;
+      const value = getValueInRange(newTime, [
+        timeRange.start(0),
+        timeRange.end(timeRange.length - 1),
+      ]);
+      playerNode.currentTime = value;
+      return value;
+    },
+    setVolume: newVolume => {
+      const playerNode = localRef.current!;
+      const value = getValueInRange(newVolume, [0, 1]);
+      playerNode.volume = value;
+      return value;
+    },
+  }));
+};
+
+export interface AudioElementProps
+  extends React.AudioHTMLAttributes<HTMLAudioElement> {
+  captionSrc?: string;
+}
+
+export const AudioElement = forwardRef<AudioHandler, AudioElementProps>(
+  ({captionSrc, ...props}, parentRef) => {
+    const localRef = useRef<HTMLAudioElement>(null);
+    useAudioHandler(localRef, parentRef);
+    return (
+      <audio ref={localRef} {...props}>
+        {captionSrc && <track kind="captions" src={captionSrc} />}
+      </audio>
+    );
+  },
+);

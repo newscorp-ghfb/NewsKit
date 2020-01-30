@@ -40,10 +40,10 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
     Description text for the current show or track.
   </Prop>
   <Prop name="time" type="string">
-    Textual description of the show time e.g. 1PM - 3PM. 
+    Textual description of the show time e.g. 1PM - 3PM.
   </Prop>
   <Prop name="live" type="boolean">
-    If true will display a label indicating the current show is live. 
+    If true will display a label indicating the current show is live.
   </Prop>
   <Prop name="autoplay" type="boolean">
     <div>
@@ -65,7 +65,7 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
   </Prop>
 </Block>
 
-## Playground
+## Playground - Live Player
 
 <Playground
   componentName="AudioPlayer"
@@ -97,6 +97,68 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       propName: 'live',
       type: 'boolean',
       value: true,
+    },
+    {
+      name: 'Auto Play',
+      propName: 'autoPlay',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'Tags',
+      propName: 'tags',
+      value: ["News", "Sport", "Live"],
+    },
+    {
+      name: 'Image Source',
+      propName: 'imgSrc',
+      value: "https://via.placeholder.com/150",
+    },
+    {
+      name: 'Image Alt Text',
+      propName: 'imgAlt',
+      value: 'Giles Coren',
+    },
+    {
+      name: 'captionSrc',
+      propName: 'captionSrc',
+      value: 'captionsSrc.vtt',
+    }
+  ]}
+/>
+
+## Playground - Recorded Player
+
+<Playground
+  componentName="AudioPlayer"
+  newskitPath="/audio-player"
+  component={AudioPlayer}
+  knobs={[
+    {
+      name: 'Source',
+      propName: 'src',
+      value: 'https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3',
+    },
+    {
+      name: 'Title',
+      propName: 'title',
+      value: 'Talk Radio Live',
+    },
+    {
+      name: 'Description',
+      propName: 'description',
+      value: 'Live from talkRadio.',
+    },
+    {
+      name: 'Time',
+      propName: 'time',
+      value: '1PM to 3PM',
+    },
+    {
+      name: 'Live',
+      propName: 'live',
+      type: 'boolean',
+      value: false,
     },
     {
       name: 'Auto Play',

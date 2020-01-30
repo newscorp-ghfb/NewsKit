@@ -9,6 +9,16 @@ const props = {
   src: 'https://radio.talkradio.co.uk/stream',
   imgAlt: 'test image',
   title: 'title',
+  live: true,
+  imgSrc: 'https://via.placeholder.com/150',
+  captionSrc: 'captions.vtt',
+};
+const podcast = {
+  src:
+    'https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3',
+  imgAlt: 'test image',
+  title: 'title',
+  live: false,
   imgSrc: 'https://via.placeholder.com/150',
   captionSrc: 'captions.vtt',
 };
@@ -28,7 +38,6 @@ export const component = () => (
       <StorybookHeading>Player with all UI props</StorybookHeading>
       <AudioPlayer
         {...props}
-        src="https://radio.talkradio.co.uk/stream"
         time="1PM to 3PM"
         description="Test description"
         live
@@ -49,19 +58,15 @@ export const component = () => (
     </div>
     <div>
       <StorybookHeading>Player with description</StorybookHeading>
-      <AudioPlayer
-        {...props}
-        src="https://radio.talkradio.co.uk/stream"
-        description="Test description"
-      />
+      <AudioPlayer {...props} description="Test description" />
     </div>
     <div>
       <StorybookHeading>Player with time</StorybookHeading>
-      <AudioPlayer
-        {...props}
-        src="https://radio.talkradio.co.uk/stream"
-        time="1PM to 3PM"
-      />
+      <AudioPlayer {...props} time="1PM to 3PM" />
+    </div>
+    <div>
+      <StorybookHeading>Player with static audio</StorybookHeading>
+      <AudioPlayer {...podcast} />
     </div>
   </Container>
 );

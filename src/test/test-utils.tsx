@@ -28,3 +28,4 @@ export const renderToFragmentWithTheme = <T extends {}>(
 ) => renderWithTheme(Component, props, theme, options).asFragment();
 
 export {render} from '@testing-library/react';
+export {renderHook} from '@testing-library/react-hooks';

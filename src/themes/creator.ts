@@ -56,6 +56,8 @@ export interface Icons {
   VolumeUp?: ColourableIcon;
   VolumeDown?: ColourableIcon;
   VolumeMute?: ColourableIcon;
+  Forward10?: ColourableIcon;
+  Replay10?: ColourableIcon;
 }
 
 export interface Theme extends Record<string, unknown> {

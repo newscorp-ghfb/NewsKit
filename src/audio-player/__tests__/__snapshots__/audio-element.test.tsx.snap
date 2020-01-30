@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AudioElement renders correctly <audio> with caption 1`] = `
+<DocumentFragment>
+  <audio
+    src="https://radio.talkradio.co.uk/stream"
+  >
+    <track
+      kind="captions"
+      src="captions.vtt"
+    />
+  </audio>
+</DocumentFragment>
+`;
+
+exports[`AudioElement renders correctly default <audio> 1`] = `
+<DocumentFragment>
+  <audio />
+</DocumentFragment>
+`;

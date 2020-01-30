@@ -13,6 +13,7 @@ export interface ThumbLabelProps extends TrackProps {
   children: number;
 }
 
+// see https://github.com/tajo/react-range#range--props
 interface CommonSliderProps extends CommonProps {
   min: number;
   max: number;
