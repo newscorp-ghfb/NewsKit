@@ -1,15 +1,13 @@
 import * as React from 'react';
 import {Image} from '..';
 import {styled} from '../../utils/style';
-import {createTheme} from '../../themes/creator';
+import {createTheme, Theme} from '../../themes/creator';
 import {
   BorderRadiusShape,
   borderRadiusPrimitives,
 } from '../../themes/newskit-light/border-radius';
 import {colorPrimitives} from '../../themes/newskit-light/colors';
-import {StylePresetStates} from '../../../dist/themes/mappers/style-preset';
-import {Theme} from '../../../dist/themes/creator';
-import {ThemeProvider} from '../../themes';
+import {ThemeProvider, StylePresetStates} from '../../themes';
 import {StorybookHeading} from '../../test/storybook-comps';
 
 const customTheme: Theme = createTheme('awesome-theme', {
