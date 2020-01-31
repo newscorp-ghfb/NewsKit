@@ -42,10 +42,10 @@ const fontLetterSpacing = {
 };
 
 export const fontPrimitives = {
-  fontFamilyPrimary: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-  fontFamilySecondary: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-  fontFamilyAdditional: 'system-ui, "Open Sans", sans-serif',
-  fontFamilyMonospaced: '"Courier", monospace',
+  fontFamily1: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+  fontFamily2: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+  fontFamily3: 'system-ui, "Open Sans", sans-serif',
+  fontFamily4: '"Courier", monospace',
 
   ...fontSizes,
 

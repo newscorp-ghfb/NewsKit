@@ -14,9 +14,9 @@ export const theSunTheme = createTheme('the-sun-theme', {
     interface050: '#222526',
   },
   fontOverrides: {
-    fontFamilyPrimary: 'TheSun',
-    fontFamilySecondary: 'TheSun',
-    fontFamilyAdditional: 'TheSun-HeavyNarrow, TheSun',
+    fontFamily1: 'TheSun',
+    fontFamily2: 'TheSun',
+    fontFamily3: 'TheSun-HeavyNarrow, TheSun',
   },
   themeOverrider: ({colors, fonts}) => ({
     colors: {

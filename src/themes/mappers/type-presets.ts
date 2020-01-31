@@ -6,39 +6,39 @@ const getFontWithFallback = (font: string, fallback: string) =>
   font === fallback ? font : `${font}, ${fallback}`;
 
 const getBaseTypePresets = (p: FontPrimitives) => {
-  const primaryFontFamily = getFontWithFallback(
-    p.fontFamilyPrimary,
-    fontPrimitives.fontFamilyPrimary,
+  const fontFamily1 = getFontWithFallback(
+    p.fontFamily1,
+    fontPrimitives.fontFamily1,
   );
-  const secondaryFontFamily = getFontWithFallback(
-    p.fontFamilySecondary,
-    fontPrimitives.fontFamilySecondary,
+  const fontFamily2 = getFontWithFallback(
+    p.fontFamily2,
+    fontPrimitives.fontFamily2,
   );
-  const monospaceFontFamily = getFontWithFallback(
-    p.fontFamilyMonospaced,
-    fontPrimitives.fontFamilyMonospaced,
+  const fontFamily3 = getFontWithFallback(
+    p.fontFamily4,
+    fontPrimitives.fontFamily4,
   );
 
   const label010 = {
-    fontFamily: secondaryFontFamily,
+    fontFamily: fontFamily2,
     ...getFontSizing(p.fontSize010, p.fontLineHeight050),
     fontWeight: p.fontWeight030,
     letterSpacing: p.fontLetterSpacing050,
   };
   const label020 = {
-    fontFamily: secondaryFontFamily,
+    fontFamily: fontFamily2,
     ...getFontSizing(p.fontSize020, p.fontLineHeight050),
     fontWeight: p.fontWeight030,
     letterSpacing: p.fontLetterSpacing030,
   };
   const label030 = {
-    fontFamily: secondaryFontFamily,
+    fontFamily: fontFamily2,
     ...getFontSizing(p.fontSize030, p.fontLineHeight050),
     fontWeight: p.fontWeight030,
     letterSpacing: p.fontLetterSpacing030,
   };
   const label040 = {
-    fontFamily: secondaryFontFamily,
+    fontFamily: fontFamily2,
     ...getFontSizing(p.fontSize040, p.fontLineHeight050),
     fontWeight: p.fontWeight030,
     letterSpacing: p.fontLetterSpacing030,
@@ -48,25 +48,25 @@ const getBaseTypePresets = (p: FontPrimitives) => {
     // Display
 
     display010: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize130, p.fontLineHeight020),
       fontWeight: p.fontWeight040,
       letterSpacing: p.fontLetterSpacing030,
     },
     display020: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize140, p.fontLineHeight020),
       fontWeight: p.fontWeight040,
       letterSpacing: p.fontLetterSpacing030,
     },
     display030: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize150, p.fontLineHeight020),
       fontWeight: p.fontWeight040,
       letterSpacing: p.fontLetterSpacing030,
     },
     display040: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize160, p.fontLineHeight020),
       fontWeight: p.fontWeight040,
       letterSpacing: p.fontLetterSpacing030,
@@ -75,55 +75,55 @@ const getBaseTypePresets = (p: FontPrimitives) => {
     // Heading
 
     heading010: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize040, p.fontLineHeight020),
       fontWeight: p.fontWeight040,
       letterSpacing: p.fontLetterSpacing030,
     },
     heading020: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize060, p.fontLineHeight020),
       fontWeight: p.fontWeight040,
       letterSpacing: p.fontLetterSpacing030,
     },
     heading030: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize070, p.fontLineHeight020),
       fontWeight: p.fontWeight040,
       letterSpacing: p.fontLetterSpacing030,
     },
     heading040: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize080, p.fontLineHeight020),
       fontWeight: p.fontWeight040,
       letterSpacing: p.fontLetterSpacing030,
     },
     heading050: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize090, p.fontLineHeight020),
       fontWeight: p.fontWeight040,
       letterSpacing: p.fontLetterSpacing030,
     },
     heading060: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize100, p.fontLineHeight020),
       fontWeight: p.fontWeight040,
       letterSpacing: p.fontLetterSpacing030,
     },
     heading070: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize110, p.fontLineHeight020),
       fontWeight: p.fontWeight040,
       letterSpacing: p.fontLetterSpacing030,
     },
     heading080: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize120, p.fontLineHeight020),
       fontWeight: p.fontWeight040,
       letterSpacing: p.fontLetterSpacing030,
     },
     heading090: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize130, p.fontLineHeight020),
       fontWeight: p.fontWeight040,
       letterSpacing: p.fontLetterSpacing030,
@@ -132,31 +132,31 @@ const getBaseTypePresets = (p: FontPrimitives) => {
     // Subheading
 
     subhead010: {
-      fontFamily: secondaryFontFamily,
+      fontFamily: fontFamily2,
       ...getFontSizing(p.fontSize030, p.fontLineHeight020),
       fontWeight: p.fontWeight010,
       letterSpacing: p.fontLetterSpacing030,
     },
     subhead020: {
-      fontFamily: secondaryFontFamily,
+      fontFamily: fontFamily2,
       ...getFontSizing(p.fontSize040, p.fontLineHeight020),
       fontWeight: p.fontWeight010,
       letterSpacing: p.fontLetterSpacing030,
     },
     subhead030: {
-      fontFamily: secondaryFontFamily,
+      fontFamily: fontFamily2,
       ...getFontSizing(p.fontSize050, p.fontLineHeight020),
       fontWeight: p.fontWeight010,
       letterSpacing: p.fontLetterSpacing030,
     },
     subhead040: {
-      fontFamily: secondaryFontFamily,
+      fontFamily: fontFamily2,
       ...getFontSizing(p.fontSize070, p.fontLineHeight020),
       fontWeight: p.fontWeight010,
       letterSpacing: p.fontLetterSpacing030,
     },
     subhead050: {
-      fontFamily: secondaryFontFamily,
+      fontFamily: fontFamily2,
       ...getFontSizing(p.fontSize080, p.fontLineHeight020),
       fontWeight: p.fontWeight010,
       letterSpacing: p.fontLetterSpacing030,
@@ -165,19 +165,19 @@ const getBaseTypePresets = (p: FontPrimitives) => {
     // Body
 
     body010: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize020, p.fontLineHeight040),
       fontWeight: p.fontWeight020,
       letterSpacing: p.fontLetterSpacing030,
     },
     body020: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize030, p.fontLineHeight040),
       fontWeight: p.fontWeight020,
       letterSpacing: p.fontLetterSpacing030,
     },
     body030: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize040, p.fontLineHeight040),
       fontWeight: p.fontWeight020,
       letterSpacing: p.fontLetterSpacing030,
@@ -186,14 +186,14 @@ const getBaseTypePresets = (p: FontPrimitives) => {
     // Quote
 
     quote010: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize070, p.fontLineHeight020),
       fontWeight: p.fontWeight020,
       letterSpacing: p.fontLetterSpacing030,
       fontStyles: 'italic',
     },
     quote020: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize090, p.fontLineHeight020),
       fontWeight: p.fontWeight020,
       letterSpacing: p.fontLetterSpacing030,
@@ -210,7 +210,7 @@ const getBaseTypePresets = (p: FontPrimitives) => {
     // Caption
 
     caption010: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize020, p.fontLineHeight040),
       fontWeight: p.fontWeight020,
       letterSpacing: p.fontLetterSpacing030,
@@ -219,13 +219,13 @@ const getBaseTypePresets = (p: FontPrimitives) => {
     // Meta
 
     meta010: {
-      fontFamily: secondaryFontFamily,
+      fontFamily: fontFamily2,
       ...getFontSizing(p.fontSize010, p.fontLineHeight040),
       fontWeight: p.fontWeight020,
       letterSpacing: p.fontLetterSpacing050,
     },
     meta020: {
-      fontFamily: secondaryFontFamily,
+      fontFamily: fontFamily2,
       ...getFontSizing(p.fontSize020, p.fontLineHeight040),
       fontWeight: p.fontWeight020,
       letterSpacing: p.fontLetterSpacing030,
@@ -234,13 +234,13 @@ const getBaseTypePresets = (p: FontPrimitives) => {
     // Code
 
     code010: {
-      fontFamily: monospaceFontFamily,
+      fontFamily: fontFamily3,
       ...getFontSizing(p.fontSize020, p.fontLineHeight040),
       fontWeight: p.fontWeight020,
       letterSpacing: p.fontLetterSpacing030,
     },
     code020: {
-      fontFamily: monospaceFontFamily,
+      fontFamily: fontFamily3,
       ...getFontSizing(p.fontSize030, p.fontLineHeight040),
       fontWeight: p.fontWeight020,
       letterSpacing: p.fontLetterSpacing030,
@@ -253,7 +253,7 @@ const getBaseTypePresets = (p: FontPrimitives) => {
     button030: label030,
 
     font500: {
-      fontFamily: primaryFontFamily,
+      fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize050, p.fontLineHeight040),
       fontWeight: p.fontWeight020,
       letterSpacing: p.fontLetterSpacing030,

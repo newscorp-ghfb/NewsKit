@@ -17,9 +17,9 @@ export const theTimesTheme = createTheme('the-times-theme', {
     semanticNegativeBase: '#C51D24',
   },
   fontOverrides: {
-    fontFamilyPrimary: 'TimesModern-Regular',
-    fontFamilySecondary: 'TimesDigitalW04-Regular',
-    fontFamilyAdditional: 'GillSansMTStd-Medium',
+    fontFamily1: 'TimesModern-Regular',
+    fontFamily2: 'TimesDigitalW04-Regular',
+    fontFamily3: 'GillSansMTStd-Medium',
   },
   themeOverrider: ({colors, borders}) => ({
     borders: {

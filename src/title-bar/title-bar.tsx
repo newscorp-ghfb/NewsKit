@@ -47,7 +47,7 @@ const Container = styled.div<ContainerProps>`
 const TitleContainer = styled.div<TitleContainerProps>`
   flex: 1;
   text-align: ${({$titleAlignment}) => $titleAlignment};
-  font-family: ${getFontsFromTheme('fontFamilyPrimary')};
+  font-family: ${getFontsFromTheme('fontFamily1')};
   color: ${getColorFromTheme('titleBarTextColor')};
 `;
 

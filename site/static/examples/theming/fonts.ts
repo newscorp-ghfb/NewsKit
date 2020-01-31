@@ -1,8 +1,8 @@
 const fonts = {
-  fontFamilyPrimary: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-  fontFamilySecondary: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-  fontFamilyAdditional: 'system-ui, "Open Sans", sans-serif',
-  fontFamilyMonospaced: '"Courier", monospace',
+  fontFamily1: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+  fontFamily2: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+  fontFamily3: 'system-ui, "Open Sans", sans-serif',
+  fontFamily4: '"Courier", monospace',
 
   fontSize010: '12px', // 0.75rem
   fontSize020: '14px', // 0.875rem
