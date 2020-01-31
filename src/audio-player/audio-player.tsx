@@ -9,47 +9,104 @@ import {PlayerContainer, MetaArea as ControlPanel} from './styled';
 import {Slider} from '../slider';
 import {PlayerButton, ForwardButton, ReplayButton} from './controls';
 import {
-  PlayerMeta,
-  PlayerMetaProps,
-  AudioElement,
-  AudioHandler,
-  AudioElementProps,
-} from './meta';
+  styled,
+  getColorFromTheme,
+  getSizingFromTheme,
+  getTypePresetFromTheme,
+  getFontsFromTheme,
+} from '../utils/style';
+import {Image} from '../image';
+import {H1} from '../typography';
+import {Tag} from '../tag';
+import {Play, Pause} from '../icons';
 
-type EventListener = (event: ChangeEvent<HTMLAudioElement>) => void;
-export type AudioPlayerProps = AudioElementProps & PlayerMetaProps;
+export interface AudioPlayerProps
+  extends React.AudioHTMLAttributes<HTMLAudioElement> {
+  imgSrc: string;
+  imgAlt: string;
+  title: string;
+  time?: string;
+  description?: string;
+  live?: boolean;
+  tags?: string[];
+  captionSrc?: string;
+}
 
-export const AudioPlayer: React.FC<AudioPlayerProps> = ({
-  imgSrc,
-  imgAlt,
-  time,
-  title,
-  description,
-  tags = [],
-  live = false,
-  ...props
-}) => {
-  const playerRef = useRef<AudioHandler>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [timeArr, setCurrentTime] = useState([0]);
-  const [duration, setDuration] = useState(0);
-  const [currentTime] = timeArr;
+const PlayerContainer = styled.div`
+  width: 100%;
+  max-width: 920px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: ${getSizingFromTheme('sizing040')};
+  box-shadow: 0px 1px ${getSizingFromTheme('sizing010')} 0px
+    rgba(96, 97, 112, 0.5);
+  padding: ${getSizingFromTheme('sizing060')};
+`;
 
-  const showControls = !live && !Number.isNaN(duration) && duration > 0;
-  const maxTime = showControls
-    ? new Date(duration * 1000).toISOString().substr(11, 8)
-    : '0.00';
+const MetaArea = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`;
 
-  const onPlay: EventListener = () => setIsPlaying(true);
-  const onPause: EventListener = () => setIsPlaying(false);
-  const onDurationChange: EventListener = event =>
-    setDuration(event.target.duration);
-  const onTimeUpdate: EventListener = event => {
-    const eventTime = Number(event.target.currentTime.toFixed(2));
-    if (currentTime !== eventTime) {
-      setCurrentTime([eventTime]);
-    }
-  };
+const InfoArea = styled.div`
+  margin-left: ${getSizingFromTheme('sizing050')};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const LiveTag = styled(Tag)`
+  width: ${getSizingFromTheme('sizing080')};
+  height: ${getSizingFromTheme('sizing050')};
+  padding: 0;
+  text-align: center;
+  line-height: 1.6;
+  border: none;
+  background-color: ${getColorFromTheme('semanticNegativeBase')};
+  color: ${getColorFromTheme('inkInverse')};
+  text-transform: uppercase;
+  margin-right: ${getSizingFromTheme('sizing040')};
+`;
+
+const Label = styled.span`
+  ${getTypePresetFromTheme('meta010')};
+  color: ${getColorFromTheme('inkSubtle')};
+  font-weight: ${getFontsFromTheme('fontWeight010')};
+`;
+
+const ProgrammeTime = styled(Label)`
+  height: ${getSizingFromTheme('sizing050')};
+  display: inline-block;
+`;
+
+const ProgrammeTitle = styled(H1)`
+  ${getTypePresetFromTheme('heading040')};
+  margin-top: ${getSizingFromTheme('sizing040')};
+  margin-bottom: ${getSizingFromTheme('sizing020')};
+`;
+
+const ProgrammeDescription = styled(Label)`
+  ${getTypePresetFromTheme('subhead010')};
+  margin-bottom: ${getSizingFromTheme('sizing040')};
+`;
+
+const ProgrammeTags = styled(Label)`
+  font-size: ${getFontsFromTheme('fontSize020')};
+`;
+
+const PlayerButton = styled(Button)`
+  margin: ${getSizingFromTheme('sizing040')} auto 0;
+`;
+
+const ImageContainer = styled.div`
+  width: 208px;
+`;
+
+export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
+  const playerRef = useRef<HTMLAudioElement>(null);
+  const [isPlaying, setIsPlaying] = React.useState(false);
+  const [volume] = React.useState(1);
 
   const togglePlay = useCallback(() => {
     const playerNode = playerRef.current;
@@ -92,41 +149,38 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
 
   return (
     <PlayerContainer>
-      <AudioElement
-        ref={playerRef}
-        title={title}
-        onPlay={onPlay}
-        onPause={onPause}
-        onDurationChange={onDurationChange}
-        onTimeUpdate={onTimeUpdate}
-        data-testid="audio-player"
-        {...props}
-      />
-      <PlayerMeta
-        imgSrc={imgSrc}
-        imgAlt={imgAlt}
-        live={live}
-        time={time}
-        title={title}
-        description={description}
-        tags={tags}
-      />
-      {showControls && (
-        <Slider
-          min={0}
-          minLabel="0.00"
-          max={duration}
-          maxLabel={maxTime}
-          values={timeArr}
-          step={1}
-          onChange={onChangeSlider}
-        />
-      )}
-      <ControlPanel>
-        {showControls && <ReplayButton onClick={onClickReplay} />}
-        <PlayerButton isPlaying={isPlaying} onClick={togglePlay} />
-        {showControls && <ForwardButton onClick={onClickForward} />}
-      </ControlPanel>
+      {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+      <audio ref={playerRef} data-testid="audio-player" {...rest}>
+        {captionSrc && <track kind="captions" src={captionSrc} />}
+      </audio>
+      <MetaArea>
+        <ImageContainer>
+          <Image
+            borderRadius="sizing120"
+            stylePreset="maskRound010"
+            src={imgSrc}
+            alt={imgAlt}
+            aspectHeight="1"
+            aspectWidth="1"
+          />
+        </ImageContainer>
+        <InfoArea>
+          <div>
+            {live && <LiveTag>Live</LiveTag>}
+            <ProgrammeTime>{time}</ProgrammeTime>
+          </div>
+          <ProgrammeTitle>{title}</ProgrammeTitle>
+          <ProgrammeDescription>{description}</ProgrammeDescription>
+          {tags.length > 0 && (
+            <ProgrammeTags>
+              {tags.map(
+                (tag, i) => `${tag}${i <= tags.length - 2 ? ' | ' : ''}`,
+              )}
+            </ProgrammeTags>
+          )}
+        </InfoArea>
+      </MetaArea>
+      <PlayerButton {...buttonProps} />
     </PlayerContainer>
   );
 };

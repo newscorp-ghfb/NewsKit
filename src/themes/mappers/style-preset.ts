@@ -137,6 +137,7 @@ export const createStylePresets = ({
   } as StylePresetStates,
   maskPointed010: {
     base: {
+      backgroundColor: colorPrimitives.skeletonLight,
       borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
     },
     loading: {
@@ -145,17 +146,17 @@ export const createStylePresets = ({
       iconColor: colorPrimitives.inkSubtle,
     },
   } as StylePresetStates,
-  maskSemiRounded: {
+  maskSemiRounded010: {
     base: {
       borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
     },
     loading: {
-      backgroundColor: colorPrimitives.skeletonLight,
+      backgroundColor: colorPrimitives.skeletonDark,
       borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
       iconColor: colorPrimitives.inkSubtle,
     },
   } as StylePresetStates,
-  maskRound: {
+  maskRound010: {
     base: {
       borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
     },

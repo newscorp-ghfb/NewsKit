@@ -68,6 +68,7 @@ export const component = () => (
             aspectHeight={2}
             alt="Example Image"
             stylePreset="myAwesomeCustomStyle"
+            borderRadius="sizing120"
           />
         </Container>
       </ThemeProvider>
@@ -84,6 +85,7 @@ export const component = () => (
             aspectHeight={2}
             alt="Example Image"
             stylePreset="myAwesomeCustomStyle"
+            borderRadius="sizing120"
           />
         </Container>
       </ThemeProvider>
@@ -100,6 +102,7 @@ export const component = () => (
             aspectHeight={2}
             alt="Example Image"
             stylePreset="myAwesomeCustomStyle"
+            borderRadius="sizing120"
             hideLoadingIcon
           />
         </Container>

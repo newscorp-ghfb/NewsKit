@@ -11,6 +11,7 @@ export default Layout;
 # Image
 
 ## Overview
+
 Simple component for adding images.
 The image component provides a `<figure>` and an `<img>` element inside it to place the image in the dom.
 
@@ -18,24 +19,36 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
 
 <LegacyBlock marginTop="sizing040">
   <Prop name="src" type="string">
-    Image file path that is used directly in the <code>src</code> attribute of the internal <code>img</code> element.
+    Image file path that is used directly in the <code>src</code> attribute of
+    the internal <code>img</code> element.
   </Prop>
   <Prop name="alt" type="string">
-    Image description that is used directly in the <code>alt</code> attribute of the internal <code>img</code> element.
+    Image description that is used directly in the <code>alt</code> attribute of
+    the internal <code>img</code> element.
   </Prop>
   <Prop name="aspectWidth" type="string|number">
-    Used in combination with `aspectHeight` to calculate the aspect ratio for the image. Generally supply the width px value if know, if not supply horizontal aspect ratio. Both aspectWidth and aspectRatio should be supplied in a consistent manner.
+    Used in combination with `aspectHeight` to calculate the aspect ratio for
+    the image. Generally supply the width px value if know, if not supply
+    horizontal aspect ratio. Both aspectWidth and aspectRatio should be supplied
+    in a consistent manner.
   </Prop>
   <Prop name="aspectHeight" type="string|number">
-    Used in combination with `aspectWidth` to calculate the aspect ratio for the image. Generally supply the height px value if know, if not supply vertical aspect ratio. Both aspectWidth and aspectRatio should be supplied in a consistent manner.
+    Used in combination with `aspectWidth` to calculate the aspect ratio for the
+    image. Generally supply the height px value if know, if not supply vertical
+    aspect ratio. Both aspectWidth and aspectRatio should be supplied in a
+    consistent manner.
   </Prop>
-  <Prop name="hideLoadingIcon" type="boolean" default={false} >
+  <Prop name="hideLoadingIcon" type="boolean" default={false}>
     Hide the loading icon whilst the image is loading.
   </Prop>
-  <Prop name="shape" type="ImageShape" default={ImageShape.Square} >
+  <Prop name="shape" type="ImageShape" default={ImageShape.Square}>
     Sets the shape of the image.
   </Prop>
 </LegacyBlock>
+
+## Notes
+
+The aspect width/height is only used on loading state.
 
 ## Playground
 
@@ -47,7 +60,8 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
     {
       name: 'src',
       propName: 'src',
-      value: 'http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png',
+      value:
+        'http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png',
     },
     {
       name: 'alt',
@@ -71,13 +85,13 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
         {
           label: 'undefined',
           value: undefined,
-          isDefault: true
+          isDefault: true,
         },
         {
           label: 'true',
-          value: true
-        }
-      ]
+          value: true,
+        },
+      ],
     },
     {
       name: 'shape',
@@ -86,14 +100,14 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
         {
           label: 'square',
           value: undefined,
-          isDefault: true
+          isDefault: true,
         },
         {
           label: 'rounded',
-          value: ImageShape.Rounded
-        }
-      ]
-    }
+          value: ImageShape.Rounded,
+        },
+      ],
+    },
   ]}
 />
 

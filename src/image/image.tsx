@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import {styled} from '../utils/style';
 import {Placeholder} from '../icons';
+import {Theme} from '../themes';
+import {SizingKeys} from '../themes/newskit-light/spacing';
 import {
   getStylePresetFromTheme,
   GetStylePresetFromThemeOptions,
@@ -14,8 +16,8 @@ export enum ImageShape {
 export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   aspectHeight: number | string;
   aspectWidth: number | string;
+  borderRadius?: SizingKeys;
   hideLoadingIcon?: boolean;
-  shape?: ImageShape;
   stylePreset?: string;
 }
 
@@ -23,9 +25,26 @@ interface ImageContainerProps extends React.HtmlHTMLAttributes<HTMLElement> {
   isLoading: boolean;
   aspectHeight: number | string;
   aspectWidth: number | string;
-  shape?: ImageShape;
+  borderRadius?: SizingKeys;
   stylePreset?: string;
 }
+
+const renderStyles = (
+  theme: Theme,
+  stylePreset: string | undefined,
+  options: GetStylePresetFromThemeOptions,
+) => {
+  const presetName =
+    stylePreset &&
+    getStylePresetFromTheme(stylePreset, 'stylePreset' as any, options)({theme}) // eslint-disable-line @typescript-eslint/no-explicit-any
+      ? stylePreset
+      : 'maskPointed010';
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return getStylePresetFromTheme(presetName, 'stylePreset' as any, options)({
+    theme,
+  });
+};
 
 const ImageContainer = styled.div<ImageContainerProps>`
   position: relative;
@@ -36,17 +55,13 @@ const ImageContainer = styled.div<ImageContainerProps>`
       ? `calc(100% * (${props.aspectHeight}/${props.aspectWidth}))`
       : 0};
 
-  ${({stylePreset}) => {
+  ${({stylePreset, borderRadius, theme}) => {
     const options = {
-      borderRadiusSize: 'sizing000',
+      borderRadiusSize: borderRadius,
+      omitStyles: ['iconColor'],
     } as GetStylePresetFromThemeOptions;
 
-    const presetName =
-      stylePreset && getStylePresetFromTheme(stylePreset, undefined, options)
-        ? stylePreset
-        : 'static010';
-
-    return getStylePresetFromTheme(presetName, 'stylePreset', options);
+    return renderStyles(theme, stylePreset, options);
   }}
 `;
 
@@ -54,7 +69,7 @@ const imagePropsAreEqual = (prevProps: ImageProps, nextProps: ImageProps) =>
   prevProps.aspectHeight === nextProps.aspectHeight &&
   prevProps.aspectWidth === nextProps.aspectWidth &&
   prevProps.hideLoadingIcon === nextProps.hideLoadingIcon &&
-  prevProps.shape === nextProps.shape &&
+  prevProps.borderRadius === nextProps.borderRadius &&
   prevProps.src === nextProps.src;
 
 const ImageComponent = (props: ImageProps) => {
@@ -88,17 +103,12 @@ const ImageComponent = (props: ImageProps) => {
     width: 100%;
     height: 100%;
     margin: 0;
-    ${({stylePreset}) => {
+    ${({stylePreset, theme}) => {
       const options = {
         omitStyles: ['backgroundColor', 'borderRadius'],
       } as GetStylePresetFromThemeOptions;
 
-      const presetName =
-        stylePreset && getStylePresetFromTheme(stylePreset, undefined, options)
-          ? stylePreset
-          : 'maskPointed010';
-
-      return getStylePresetFromTheme(presetName, 'stylePreset', options);
+      return renderStyles(theme, stylePreset, options);
     }}
   `;
 
