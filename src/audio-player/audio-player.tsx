@@ -19,6 +19,7 @@ import {Image} from '../image';
 import {H1} from '../typography';
 import {Tag} from '../tag';
 import {Play, Pause} from '../icons';
+import {SizingKeys} from '../themes/newskit-light/spacing';
 
 export interface AudioPlayerProps
   extends React.AudioHTMLAttributes<HTMLAudioElement> {
@@ -30,6 +31,8 @@ export interface AudioPlayerProps
   live?: boolean;
   tags?: string[];
   captionSrc?: string;
+  stylePreset?: string;
+  borderRadius?: SizingKeys;
 }
 
 const PlayerContainer = styled.div`
@@ -125,27 +128,64 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   useEffect(() => {
     timeRef.current = currentTime;
   });
-  const onChangeAudioTime = useCallback(
-    (newTime: number) => {
-      const playerNode = playerRef.current;
-      if (playerNode) {
-        setCurrentTime([playerNode.setCurrentTime(newTime)]);
-      }
-    },
-    [playerRef, setCurrentTime],
-  );
-  const onChangeSlider = useCallback(
-    ([value]: number[]) => onChangeAudioTime(value),
-    [onChangeAudioTime],
-  );
-  const onClickReplay = useCallback(
-    () => onChangeAudioTime(timeRef.current - 10),
-    [onChangeAudioTime, timeRef],
-  );
-  const onClickForward = useCallback(
-    () => onChangeAudioTime(timeRef.current + 10),
-    [onChangeAudioTime, timeRef],
-  );
+
+  const setPlayState = (state: 'play' | 'pause') => {
+    const playerNode = playerRef.current;
+    if (!playerNode) {
+      return;
+    }
+
+    if (state !== 'play') {
+      playerNode.pause();
+      return;
+    }
+
+    // TODO: should go into a loading state here https://nidigitalsolutions.jira.com/browse/PPDSC-649
+    const playPromise = playerNode.play();
+    if (playPromise) {
+      playPromise
+        .then(() => {
+          setIsPlaying(true);
+        })
+        .catch(() => {
+          // TODO: Display error to user https://nidigitalsolutions.jira.com/browse/PPDSC-554 consider autoplay error states https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide
+        });
+    }
+  };
+
+  const togglePlay = () => {
+    const playState = isPlaying ? 'pause' : 'play';
+    setPlayState(playState);
+  };
+
+  const buttonProps = {
+    'data-testid': 'audio-player-play-button',
+    $size: ButtonSize.Large,
+    icon: isPlaying
+      ? () => <Pause $size="iconSize030" $color="buttonFill" />
+      : () => <Play $size="iconSize030" $color="buttonFill" />,
+    onClick: () => togglePlay(),
+    'aria-pressed': isPlaying,
+  };
+
+  const {
+    imgSrc,
+    imgAlt,
+    live = false,
+    time,
+    title,
+    description,
+    tags = [],
+    captionSrc,
+    borderRadius,
+    stylePreset,
+    ...rest
+  } = props;
+  const playerNode = playerRef.current;
+
+  if (playerNode) {
+    playerNode.volume = volume;
+  }
 
   return (
     <PlayerContainer>
@@ -156,8 +196,8 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
       <MetaArea>
         <ImageContainer>
           <Image
-            borderRadius="sizing120"
-            stylePreset="maskRound010"
+            borderRadius={borderRadius || 'sizing120'}
+            stylePreset={stylePreset || 'maskRound010'}
             src={imgSrc}
             alt={imgAlt}
             aspectHeight="1"
