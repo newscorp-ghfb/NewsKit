@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {Button} from '..';
-import {ButtonSize, ButtonShape} from '../types';
+import {ButtonSize} from '../types';
 import {Email} from '../../icons';
 
 describe('Button', () => {
@@ -11,19 +11,17 @@ describe('Button', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders Small Square Button', () => {
+  test('renders Small Button', () => {
     const props = {
       $size: ButtonSize.Small,
-      $shape: ButtonShape.Square,
     };
     const fragment = renderToFragmentWithTheme(Button, props);
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders Medium Rounded Button', () => {
+  test('renders Medium Button', () => {
     const props = {
       $size: ButtonSize.Medium,
-      $shape: ButtonShape.Rounded,
     };
     const fragment = renderToFragmentWithTheme(Button, props);
     expect(fragment).toMatchSnapshot();
@@ -56,5 +54,14 @@ describe('Button', () => {
     expect(() =>
       renderToFragmentWithTheme(Button, props),
     ).toThrowErrorMatchingSnapshot();
+  });
+
+  test('renders with different style preset', () => {
+    const props = {
+      $stylePreset: 'interactive050',
+    };
+
+    const fragment = renderToFragmentWithTheme(Button, props);
+    expect(fragment).toMatchSnapshot();
   });
 });

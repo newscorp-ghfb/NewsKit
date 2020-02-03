@@ -68,15 +68,17 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  background-color: #0A68C1;
   cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 32px;
+  height: 32px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -86,9 +88,24 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   padding: 0 8px;
-  height: 32px;
   margin: 8px 0;
-  border-radius: 0;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-2:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-2:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-2::before {
@@ -102,21 +119,6 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 
 .emotion-2:disabled {
   cursor: not-allowed;
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-2:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-2:focus:not(:disabled) {
-  background-color: #0A68C1;
-  box-shadow: 0 0 0 2px white,0 0 0 4px #FFFFFF;
-}
-
-.emotion-2:active:not(:disabled) {
-  background-color: #01396E;
 }
 
 <div

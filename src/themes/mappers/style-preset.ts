@@ -19,7 +19,7 @@ export interface StylePresetStyles {
   backgroundImage?: BackgroundImageProperty;
   backgroundRepeat?: BackgroundRepeatProperty;
   backgroundPosition?: BackgroundPositionProperty<string>;
-  borderStyles?: BorderStyleProperty;
+  borderStyle?: BorderStyleProperty;
   borderColor?: BorderColorProperty;
   borderWidth?: string;
   color?: ColorProperty;
@@ -100,7 +100,7 @@ export const createStylePresets = ({
   interactive020: {
     base: {
       backgroundColor: colorPrimitives.white,
-      borderStyles: 'solid',
+      borderStyle: 'solid',
       borderColor: colorPrimitives.brand010,
       borderWidth: borderPrimitives.borderWidth010,
       color: colorPrimitives.inkBrand,
@@ -135,35 +135,46 @@ export const createStylePresets = ({
       backgroundColor: colorPrimitives.neutral020,
     },
   } as StylePresetStates,
-  maskPointed010: {
+  interactive050: {
     base: {
-      backgroundColor: colorPrimitives.skeletonLight,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
+      borderStyle: 'solid',
+      borderColor: colorPrimitives.blue020,
+      borderWidth: borderPrimitives.borderWidth010,
+      color: colorPrimitives.inkBrand,
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+      iconColor: colorPrimitives.inkBrand,
     },
-    loading: {
-      backgroundColor: colorPrimitives.skeletonLight,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
-      iconColor: colorPrimitives.inkSubtle,
+    hover: {
+      backgroundColor: colorPrimitives.blue010,
+    },
+    active: {
+      backgroundColor: colorPrimitives.blue010,
+      borderWidth: colorPrimitives.blue060,
+    },
+    disabled: {
+      backgroundColor: colorPrimitives.disabled,
+      color: colorPrimitives.inkNonEssential,
+      iconColor: colorPrimitives.inkNonEssential,
     },
   } as StylePresetStates,
-  maskSemiRounded010: {
+  interactive060: {
     base: {
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
-    },
-    loading: {
-      backgroundColor: colorPrimitives.skeletonDark,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
-      iconColor: colorPrimitives.inkSubtle,
-    },
-  } as StylePresetStates,
-  maskRound010: {
-    base: {
+      color: colorPrimitives.inkBrand,
       borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+      iconColor: colorPrimitives.inkBrand,
     },
-    loading: {
-      backgroundColor: colorPrimitives.skeletonLight,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
-      iconColor: colorPrimitives.inkSubtle,
+    hover: {
+      backgroundColor: colorPrimitives.blue010,
+    },
+    active: {
+      backgroundColor: colorPrimitives.blue010,
+      borderStyle: 'solid',
+      borderColor: colorPrimitives.blue060,
+      borderWidth: borderPrimitives.borderWidth010,
+    },
+    disabled: {
+      color: colorPrimitives.inkNonEssential,
+      iconColor: colorPrimitives.inkNonEssential,
     },
   } as StylePresetStates,
 });

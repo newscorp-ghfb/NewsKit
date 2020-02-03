@@ -2,11 +2,60 @@ import React from 'react';
 import {
   css,
   styled,
-  getColorFromTheme,
   getAnimationFromTheme,
   getTypePresetFromTheme,
 } from '../utils/style';
-import {ButtonProps, ButtonShape, ButtonSize} from './types';
+import {ButtonProps, ButtonSize} from './types';
+import {getStylePresetFromTheme} from '../utils/style-preset';
+import {SizingKeys, TypePresetKeys, Theme} from '../themes';
+
+const buttonStylePresetDefault = 'interactive010';
+
+const getButtonStylePreset = (
+  props: ButtonProps & {theme: Theme},
+  {
+    borderRadiusSize,
+    withIconColor,
+  }: {borderRadiusSize: SizingKeys; withIconColor?: boolean},
+) =>
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  getStylePresetFromTheme(buttonStylePresetDefault, '$stylePreset' as any, {
+    borderRadiusSize,
+    omitStyles: withIconColor ? [] : ['iconColor'],
+  })(props);
+
+const buttonSizeStyleTokens: Record<
+  ButtonSize,
+  {
+    height: SizingKeys;
+    width: SizingKeys;
+    borderRadiusSize: SizingKeys;
+    typePreset: TypePresetKeys;
+    paddingY: SizingKeys;
+  }
+> = {
+  [ButtonSize.Large]: {
+    height: 'sizing080',
+    width: 'sizing080',
+    borderRadiusSize: 'sizing080',
+    typePreset: 'button030',
+    paddingY: 'sizing050',
+  },
+  [ButtonSize.Medium]: {
+    height: 'sizing070',
+    width: 'sizing070',
+    borderRadiusSize: 'sizing070',
+    typePreset: 'button020',
+    paddingY: 'sizing040',
+  },
+  [ButtonSize.Small]: {
+    height: 'sizing060',
+    width: 'sizing060',
+    borderRadiusSize: 'sizing060',
+    typePreset: 'button010',
+    paddingY: 'sizing020',
+  },
+};
 
 const ButtonElement = styled.button<ButtonProps>`
   display: inline-block;
@@ -16,123 +65,63 @@ const ButtonElement = styled.button<ButtonProps>`
   outline: none;
   appearance: none;
   overflow: hidden;
-  color: ${getColorFromTheme('buttonText')};
   transition-property: background-color;
   transition-duration: ${getAnimationFromTheme('animationDuration020')};
   transition-timing-function: ${getAnimationFromTheme('animationEaseOut')};
-  background-color: ${getColorFromTheme('buttonFill')};
   cursor: pointer;
 
-  ${({$size = ButtonSize.Small, icon, theme}) => {
-    const defaultStyle = css`
-      ${getTypePresetFromTheme('button010')({theme})}
-      padding: 0 ${theme.sizing.sizing020};
-      height: ${theme.sizing.sizing060};
-      ${icon && `width: ${theme.sizing.sizing060};`}
-      /* Extend touchpoint area */
-      margin: ${theme.sizing.sizing020} 0;
-      ::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: -${theme.sizing.sizing020};
-        width: 100%;
-        height: ${theme.sizing.sizing080};
-      }
+  ${({$size = ButtonSize.Small, icon, theme, $stylePreset}) => {
+    const {
+      height,
+      width,
+      borderRadiusSize,
+      typePreset,
+      paddingY,
+    } = buttonSizeStyleTokens[$size];
+
+    const commonStyles = css`
+      ${getButtonStylePreset({$stylePreset, theme}, {borderRadiusSize})}
+      height: ${theme.sizing[height]};
+      ${icon && `width: ${theme.sizing[width]};`}
+      ${getTypePresetFromTheme(typePreset)({theme})}
+      padding: 0 ${theme.sizing[paddingY]};
     `;
 
     return {
-      [ButtonSize.Small]: defaultStyle,
-      [ButtonSize.Medium]: css`
-        ${getTypePresetFromTheme('button020')({theme})}
-        padding: 0 ${theme.sizing.sizing040};
-        height: ${theme.sizing.sizing070};
-        ${icon && `width: ${theme.sizing.sizing070};`}
+      [ButtonSize.Small]: css`
+        ${commonStyles}
+        /* Extend touchpoint area */
+        margin: ${theme.sizing.sizing020} 0;
+        ::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: -${theme.sizing.sizing020};
+          width: 100%;
+          height: ${theme.sizing.sizing080};
+        }
       `,
-      [ButtonSize.Large]: css`
-        ${getTypePresetFromTheme('button030')({theme})}
-        padding: 0 ${theme.sizing.sizing050};
-        height: ${theme.sizing.sizing080};
-        ${icon && `width: ${theme.sizing.sizing080};`}
-      `,
+      [ButtonSize.Medium]: commonStyles,
+      [ButtonSize.Large]: commonStyles,
     }[$size];
   }}
 
-  border-radius: ${({$shape = ButtonShape.Square, theme}) =>
-    ({
-      [ButtonShape.Square]: 0,
-      [ButtonShape.Rounded]: theme.sizing.sizing020,
-    }[$shape])};
-
   :disabled {
     cursor: not-allowed;
-    background-color: ${getColorFromTheme('buttonDisabledFill')};
-    color: ${getColorFromTheme('buttonDisabledText')};
   }
 
-  :hover:not(:disabled) {
-    background-color: ${getColorFromTheme('blue070')};
-  }
-
-  :focus:not(:disabled) {
-    background-color: ${getColorFromTheme('buttonFill')};
-    box-shadow: 0 0 0 2px white, 0 0 0 4px ${getColorFromTheme('white')};
-  }
-
-  :active:not(:disabled) {
-    background-color: ${getColorFromTheme('blue080')};
-  }
-
-  ${({icon, theme}) =>
+  ${({icon, ...props}) =>
     icon &&
-    `padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid ${getColorFromTheme('blue060')({theme})};
-    background-color: ${getColorFromTheme('interface010')({theme})};
-
-    & svg {
-      fill: ${getColorFromTheme('inkBase')({theme})};
-    }
-
-    :disabled {
-      border: none;
-      background-color: ${getColorFromTheme('disabled')({theme})};
-
-      & svg {
-        fill: ${getColorFromTheme('inkNonEssential')({theme})};
-      }
-    }
-
-    :hover:not(:disabled) {
-      border: 1px solid ${getColorFromTheme('blue060')({theme})};
-      background-color: ${getColorFromTheme('interfaceHover')({theme})};
-
-      & svg {
-        fill: ${getColorFromTheme('inkBase')({theme})};
-      }
-    }
-
-    :focus:not(:disabled) {
-      border: 1px solid ${getColorFromTheme('blue060')({theme})};
-      background-color: ${getColorFromTheme('interface010')({theme})};
-
-      & svg {
-        fill: ${getColorFromTheme('inkBase')({theme})};
-      }
-    }
-
-    :active:not(:disabled) {
-      border: 1px solid ${getColorFromTheme('blue090')({theme})};
-      background-color: ${getColorFromTheme('blue060')({theme})};
-
-      & svg {
-        fill: ${getColorFromTheme('inkInverse')({theme})};
-      }
-    }
-  `}
+    css`
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ${getButtonStylePreset(
+        {...props},
+        {borderRadiusSize: 'sizing120', withIconColor: true},
+      )}
+    `}
 `;
 
 export const Button: React.FC<

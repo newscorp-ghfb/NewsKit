@@ -148,15 +148,18 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  background-color: #0A68C1;
   cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  height: 48px;
+  width: 48px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -166,11 +169,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 0 24px;
-  height: 48px;
-  width: 48px;
-  border-radius: 0;
   padding: 0;
-  border-radius: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -183,68 +182,53 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 160px;
   margin: 16px auto 0;
-}
-
-.emotion-12:disabled {
-  cursor: not-allowed;
-  background-color: #f0f0f0;
-  color: #c0c0c0;
 }
 
 .emotion-12:hover:not(:disabled) {
   background-color: #02509B;
 }
 
+.emotion-12:active:not(:disabled) {
+  background-color: #01396E;
+}
+
 .emotion-12:focus:not(:disabled) {
-  background-color: #0A68C1;
-  box-shadow: 0 0 0 2px white,0 0 0 4px #FFFFFF;
+  border-width: 2px;
+}
+
+.emotion-12:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-12:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-12 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-12:hover:not(:disabled) {
+  background-color: #02509B;
 }
 
 .emotion-12:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-12 svg {
-  fill: #2e2e2e;
+.emotion-12:focus:not(:disabled) {
+  border-width: 2px;
 }
 
 .emotion-12:disabled {
-  border: none;
   background-color: #f0f0f0;
-}
-
-.emotion-12:disabled svg {
-  fill: #c0c0c0;
-}
-
-.emotion-12:hover:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #F6FBFF;
-}
-
-.emotion-12:hover:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-12:focus:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
-}
-
-.emotion-12:focus:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-12:active:not(:disabled) {
-  border: 1px solid #002141;
-  background-color: #0A68C1;
-}
-
-.emotion-12:active:not(:disabled) svg {
-  fill: #FFFFFF;
+  color: #c0c0c0;
 }
 
 .emotion-11 {
@@ -524,15 +508,18 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  background-color: #0A68C1;
   cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  height: 48px;
+  width: 48px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -542,11 +529,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 0 24px;
-  height: 48px;
-  width: 48px;
-  border-radius: 0;
   padding: 0;
-  border-radius: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -559,68 +542,53 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 160px;
   margin: 16px auto 0;
-}
-
-.emotion-12:disabled {
-  cursor: not-allowed;
-  background-color: #f0f0f0;
-  color: #c0c0c0;
 }
 
 .emotion-12:hover:not(:disabled) {
   background-color: #02509B;
 }
 
+.emotion-12:active:not(:disabled) {
+  background-color: #01396E;
+}
+
 .emotion-12:focus:not(:disabled) {
-  background-color: #0A68C1;
-  box-shadow: 0 0 0 2px white,0 0 0 4px #FFFFFF;
+  border-width: 2px;
+}
+
+.emotion-12:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-12:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-12 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-12:hover:not(:disabled) {
+  background-color: #02509B;
 }
 
 .emotion-12:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-12 svg {
-  fill: #2e2e2e;
+.emotion-12:focus:not(:disabled) {
+  border-width: 2px;
 }
 
 .emotion-12:disabled {
-  border: none;
   background-color: #f0f0f0;
-}
-
-.emotion-12:disabled svg {
-  fill: #c0c0c0;
-}
-
-.emotion-12:hover:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #F6FBFF;
-}
-
-.emotion-12:hover:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-12:focus:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
-}
-
-.emotion-12:focus:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-12:active:not(:disabled) {
-  border: 1px solid #002141;
-  background-color: #0A68C1;
-}
-
-.emotion-12:active:not(:disabled) svg {
-  fill: #FFFFFF;
+  color: #c0c0c0;
 }
 
 .emotion-11 {
@@ -900,15 +868,18 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  background-color: #0A68C1;
   cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  height: 48px;
+  width: 48px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -918,11 +889,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 0 24px;
-  height: 48px;
-  width: 48px;
-  border-radius: 0;
   padding: 0;
-  border-radius: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -935,68 +902,53 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 160px;
   margin: 16px auto 0;
-}
-
-.emotion-12:disabled {
-  cursor: not-allowed;
-  background-color: #f0f0f0;
-  color: #c0c0c0;
 }
 
 .emotion-12:hover:not(:disabled) {
   background-color: #02509B;
 }
 
+.emotion-12:active:not(:disabled) {
+  background-color: #01396E;
+}
+
 .emotion-12:focus:not(:disabled) {
-  background-color: #0A68C1;
-  box-shadow: 0 0 0 2px white,0 0 0 4px #FFFFFF;
+  border-width: 2px;
+}
+
+.emotion-12:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-12:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-12 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-12:hover:not(:disabled) {
+  background-color: #02509B;
 }
 
 .emotion-12:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-12 svg {
-  fill: #2e2e2e;
+.emotion-12:focus:not(:disabled) {
+  border-width: 2px;
 }
 
 .emotion-12:disabled {
-  border: none;
   background-color: #f0f0f0;
-}
-
-.emotion-12:disabled svg {
-  fill: #c0c0c0;
-}
-
-.emotion-12:hover:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #F6FBFF;
-}
-
-.emotion-12:hover:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-12:focus:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
-}
-
-.emotion-12:focus:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-12:active:not(:disabled) {
-  border: 1px solid #002141;
-  background-color: #0A68C1;
-}
-
-.emotion-12:active:not(:disabled) svg {
-  fill: #FFFFFF;
+  color: #c0c0c0;
 }
 
 .emotion-11 {
@@ -1276,15 +1228,18 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  background-color: #0A68C1;
   cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  height: 48px;
+  width: 48px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -1294,11 +1249,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 0 24px;
-  height: 48px;
-  width: 48px;
-  border-radius: 0;
   padding: 0;
-  border-radius: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1311,68 +1262,53 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 160px;
   margin: 16px auto 0;
-}
-
-.emotion-12:disabled {
-  cursor: not-allowed;
-  background-color: #f0f0f0;
-  color: #c0c0c0;
 }
 
 .emotion-12:hover:not(:disabled) {
   background-color: #02509B;
 }
 
+.emotion-12:active:not(:disabled) {
+  background-color: #01396E;
+}
+
 .emotion-12:focus:not(:disabled) {
-  background-color: #0A68C1;
-  box-shadow: 0 0 0 2px white,0 0 0 4px #FFFFFF;
+  border-width: 2px;
+}
+
+.emotion-12:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-12:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-12 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-12:hover:not(:disabled) {
+  background-color: #02509B;
 }
 
 .emotion-12:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-12 svg {
-  fill: #2e2e2e;
+.emotion-12:focus:not(:disabled) {
+  border-width: 2px;
 }
 
 .emotion-12:disabled {
-  border: none;
   background-color: #f0f0f0;
-}
-
-.emotion-12:disabled svg {
-  fill: #c0c0c0;
-}
-
-.emotion-12:hover:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #F6FBFF;
-}
-
-.emotion-12:hover:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-12:focus:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
-}
-
-.emotion-12:focus:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-12:active:not(:disabled) {
-  border: 1px solid #002141;
-  background-color: #0A68C1;
-}
-
-.emotion-12:active:not(:disabled) svg {
-  fill: #FFFFFF;
+  color: #c0c0c0;
 }
 
 .emotion-11 {
@@ -1652,15 +1588,18 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  background-color: #0A68C1;
   cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  height: 48px;
+  width: 48px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -1670,11 +1609,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 0 24px;
-  height: 48px;
-  width: 48px;
-  border-radius: 0;
   padding: 0;
-  border-radius: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1687,68 +1622,53 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 160px;
   margin: 16px auto 0;
-}
-
-.emotion-12:disabled {
-  cursor: not-allowed;
-  background-color: #f0f0f0;
-  color: #c0c0c0;
 }
 
 .emotion-12:hover:not(:disabled) {
   background-color: #02509B;
 }
 
+.emotion-12:active:not(:disabled) {
+  background-color: #01396E;
+}
+
 .emotion-12:focus:not(:disabled) {
-  background-color: #0A68C1;
-  box-shadow: 0 0 0 2px white,0 0 0 4px #FFFFFF;
+  border-width: 2px;
+}
+
+.emotion-12:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-12:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-12 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-12:hover:not(:disabled) {
+  background-color: #02509B;
 }
 
 .emotion-12:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-12 svg {
-  fill: #2e2e2e;
+.emotion-12:focus:not(:disabled) {
+  border-width: 2px;
 }
 
 .emotion-12:disabled {
-  border: none;
   background-color: #f0f0f0;
-}
-
-.emotion-12:disabled svg {
-  fill: #c0c0c0;
-}
-
-.emotion-12:hover:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #F6FBFF;
-}
-
-.emotion-12:hover:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-12:focus:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
-}
-
-.emotion-12:focus:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-12:active:not(:disabled) {
-  border: 1px solid #002141;
-  background-color: #0A68C1;
-}
-
-.emotion-12:active:not(:disabled) svg {
-  fill: #FFFFFF;
+  color: #c0c0c0;
 }
 
 .emotion-11 {
@@ -2028,15 +1948,18 @@ exports[`Live AudioPlayer render default player 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  background-color: #0A68C1;
   cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  height: 48px;
+  width: 48px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -2046,11 +1969,7 @@ exports[`Live AudioPlayer render default player 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 0 24px;
-  height: 48px;
-  width: 48px;
-  border-radius: 0;
   padding: 0;
-  border-radius: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2063,68 +1982,53 @@ exports[`Live AudioPlayer render default player 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 160px;
   margin: 16px auto 0;
-}
-
-.emotion-11:disabled {
-  cursor: not-allowed;
-  background-color: #f0f0f0;
-  color: #c0c0c0;
 }
 
 .emotion-11:hover:not(:disabled) {
   background-color: #02509B;
 }
 
+.emotion-11:active:not(:disabled) {
+  background-color: #01396E;
+}
+
 .emotion-11:focus:not(:disabled) {
-  background-color: #0A68C1;
-  box-shadow: 0 0 0 2px white,0 0 0 4px #FFFFFF;
+  border-width: 2px;
+}
+
+.emotion-11:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-11:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-11 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-11:hover:not(:disabled) {
+  background-color: #02509B;
 }
 
 .emotion-11:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-11 svg {
-  fill: #2e2e2e;
+.emotion-11:focus:not(:disabled) {
+  border-width: 2px;
 }
 
 .emotion-11:disabled {
-  border: none;
   background-color: #f0f0f0;
-}
-
-.emotion-11:disabled svg {
-  fill: #c0c0c0;
-}
-
-.emotion-11:hover:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #F6FBFF;
-}
-
-.emotion-11:hover:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-11:focus:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
-}
-
-.emotion-11:focus:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-11:active:not(:disabled) {
-  border: 1px solid #002141;
-  background-color: #0A68C1;
-}
-
-.emotion-11:active:not(:disabled) svg {
-  fill: #FFFFFF;
+  color: #c0c0c0;
 }
 
 .emotion-10 {
@@ -2361,15 +2265,18 @@ exports[`Live AudioPlayer render live player 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  background-color: #0A68C1;
   cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  height: 48px;
+  width: 48px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -2379,11 +2286,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 0 24px;
-  height: 48px;
-  width: 48px;
-  border-radius: 0;
   padding: 0;
-  border-radius: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2396,68 +2299,53 @@ exports[`Live AudioPlayer render live player 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 160px;
   margin: 16px auto 0;
-}
-
-.emotion-13:disabled {
-  cursor: not-allowed;
-  background-color: #f0f0f0;
-  color: #c0c0c0;
 }
 
 .emotion-13:hover:not(:disabled) {
   background-color: #02509B;
 }
 
+.emotion-13:active:not(:disabled) {
+  background-color: #01396E;
+}
+
 .emotion-13:focus:not(:disabled) {
-  background-color: #0A68C1;
-  box-shadow: 0 0 0 2px white,0 0 0 4px #FFFFFF;
+  border-width: 2px;
+}
+
+.emotion-13:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-13:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-13 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-13:hover:not(:disabled) {
+  background-color: #02509B;
 }
 
 .emotion-13:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-13 svg {
-  fill: #2e2e2e;
+.emotion-13:focus:not(:disabled) {
+  border-width: 2px;
 }
 
 .emotion-13:disabled {
-  border: none;
   background-color: #f0f0f0;
-}
-
-.emotion-13:disabled svg {
-  fill: #c0c0c0;
-}
-
-.emotion-13:hover:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #F6FBFF;
-}
-
-.emotion-13:hover:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-13:focus:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
-}
-
-.emotion-13:focus:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-13:active:not(:disabled) {
-  border: 1px solid #002141;
-  background-color: #0A68C1;
-}
-
-.emotion-13:active:not(:disabled) svg {
-  fill: #FFFFFF;
+  color: #c0c0c0;
 }
 
 .emotion-12 {
@@ -2781,15 +2669,18 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  background-color: #0A68C1;
   cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  height: 48px;
+  width: 48px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -2799,11 +2690,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 0 24px;
-  height: 48px;
-  width: 48px;
-  border-radius: 0;
   padding: 0;
-  border-radius: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2816,68 +2703,53 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 160px;
   margin: 16px auto 0;
-}
-
-.emotion-13:disabled {
-  cursor: not-allowed;
-  background-color: #f0f0f0;
-  color: #c0c0c0;
 }
 
 .emotion-13:hover:not(:disabled) {
   background-color: #02509B;
 }
 
+.emotion-13:active:not(:disabled) {
+  background-color: #01396E;
+}
+
 .emotion-13:focus:not(:disabled) {
-  background-color: #0A68C1;
-  box-shadow: 0 0 0 2px white,0 0 0 4px #FFFFFF;
+  border-width: 2px;
+}
+
+.emotion-13:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-13:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-13 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-13:hover:not(:disabled) {
+  background-color: #02509B;
 }
 
 .emotion-13:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-13 svg {
-  fill: #2e2e2e;
+.emotion-13:focus:not(:disabled) {
+  border-width: 2px;
 }
 
 .emotion-13:disabled {
-  border: none;
   background-color: #f0f0f0;
-}
-
-.emotion-13:disabled svg {
-  fill: #c0c0c0;
-}
-
-.emotion-13:hover:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #F6FBFF;
-}
-
-.emotion-13:hover:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-13:focus:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
-}
-
-.emotion-13:focus:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-13:active:not(:disabled) {
-  border: 1px solid #002141;
-  background-color: #0A68C1;
-}
-
-.emotion-13:active:not(:disabled) svg {
-  fill: #FFFFFF;
+  color: #c0c0c0;
 }
 
 .emotion-12 {

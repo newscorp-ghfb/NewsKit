@@ -220,7 +220,7 @@ exports[`Surface Helper getStylePresetFromTheme with override to interactive020 
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF00FF;
-  border-styles: solid;
+  border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
   color: #0A68C1;

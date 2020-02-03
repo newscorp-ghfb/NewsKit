@@ -4,7 +4,7 @@ import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 
-import {Button, ButtonSize, ButtonShape} from 'newskit';
+import {Button, ButtonSize} from 'newskit';
 
 export default Layout;
 
@@ -12,16 +12,19 @@ export default Layout;
 
 ## Overview
 
-A styled button element with customisable shape and size.
+A styled button element with customisable size.
 
 ## Props
 
+Buttons have a number of props to facilitate a variety of uses. Any prop valid on an Button HTML element as described in [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#Attributes), is also valid on the Button component. 
+Custom props are detailed below:
+
 <LegacyBlock marginTop="sizing040">
-  <Prop name="$size" type="ButtonSize">
+  <Prop name="$size" type="ButtonSize" enum={ButtonSize} default={ButtonSize.Small}>
     Set the size of the button. Possible values: Small, Medium and Large. Default styling: Small.
   </Prop>
-  <Prop name="$shape" type="ButtonShape">
-    Set the shape of the button. Possible values: Square and Rounded. Default styling: Square.
+    <Prop name="$stylePreset" type="string" default="interactive010">
+    Set the style presets of the button.
   </Prop>
 </LegacyBlock>
 
@@ -38,7 +41,7 @@ A styled button element with customisable shape and size.
       value: 'Click me!',
     },
     {
-      name: '$size',
+      name: 'Size',
       propName: '$size',
       options: [
         {
@@ -56,21 +59,39 @@ A styled button element with customisable shape and size.
         },
       ],
     },
-    {
-      name: '$shape',
-      propName: '$shape',
+        {
+      name: 'Style Preset',
+      propName: '$stylePreset',
       options: [
         {
-          label: 'ButtonShape.Square',
-          value: ButtonShape.Square,
+          label: 'interactive010',
+          value: 'interactive010',
           isDefault: true,
         },
         {
-          label: 'ButtonShape.Rounded',
-          value: ButtonShape.Rounded,
+          label: 'interactive010Inverse',
+          value: 'interactive010Inverse',
+        },
+        {
+          label: 'interactive020',
+          value: 'interactive020',
+        },
+        {
+          label: 'interactive030',
+          value: 'interactive030',
+        },
+        {
+          label: 'interactive040',
+          value: 'interactive040',
         },
       ],
-    }
+    },
+      {
+      name: 'Disabled',
+      propName: 'disabled',
+      type: 'boolean',
+      value: false,
+    },
   ]}
 />
 

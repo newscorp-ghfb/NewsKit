@@ -171,15 +171,18 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  background-color: #0A68C1;
   cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  height: 48px;
+  width: 48px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -189,11 +192,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 0 24px;
-  height: 48px;
-  width: 48px;
-  border-radius: 0;
   padding: 0;
-  border-radius: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -206,68 +205,53 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 160px;
   margin: 16px auto 0;
-}
-
-.emotion-18:disabled {
-  cursor: not-allowed;
-  background-color: #f0f0f0;
-  color: #c0c0c0;
 }
 
 .emotion-18:hover:not(:disabled) {
   background-color: #02509B;
 }
 
+.emotion-18:active:not(:disabled) {
+  background-color: #01396E;
+}
+
 .emotion-18:focus:not(:disabled) {
-  background-color: #0A68C1;
-  box-shadow: 0 0 0 2px white,0 0 0 4px #FFFFFF;
+  border-width: 2px;
+}
+
+.emotion-18:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-18:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-18 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-18:hover:not(:disabled) {
+  background-color: #02509B;
 }
 
 .emotion-18:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-18 svg {
-  fill: #2e2e2e;
+.emotion-18:focus:not(:disabled) {
+  border-width: 2px;
 }
 
 .emotion-18:disabled {
-  border: none;
   background-color: #f0f0f0;
-}
-
-.emotion-18:disabled svg {
-  fill: #c0c0c0;
-}
-
-.emotion-18:hover:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #F6FBFF;
-}
-
-.emotion-18:hover:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-18:focus:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
-}
-
-.emotion-18:focus:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-18:active:not(:disabled) {
-  border: 1px solid #002141;
-  background-color: #0A68C1;
-}
-
-.emotion-18:active:not(:disabled) svg {
-  fill: #FFFFFF;
+  color: #c0c0c0;
 }
 
 .emotion-17 {
@@ -869,15 +853,18 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  background-color: #0A68C1;
   cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  height: 48px;
+  width: 48px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -887,11 +874,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 0 24px;
-  height: 48px;
-  width: 48px;
-  border-radius: 0;
   padding: 0;
-  border-radius: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -904,68 +887,53 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 160px;
   margin: 16px auto 0;
-}
-
-.emotion-18:disabled {
-  cursor: not-allowed;
-  background-color: #f0f0f0;
-  color: #c0c0c0;
 }
 
 .emotion-18:hover:not(:disabled) {
   background-color: #02509B;
 }
 
+.emotion-18:active:not(:disabled) {
+  background-color: #01396E;
+}
+
 .emotion-18:focus:not(:disabled) {
-  background-color: #0A68C1;
-  box-shadow: 0 0 0 2px white,0 0 0 4px #FFFFFF;
+  border-width: 2px;
+}
+
+.emotion-18:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-18:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-18 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-18:hover:not(:disabled) {
+  background-color: #02509B;
 }
 
 .emotion-18:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-18 svg {
-  fill: #2e2e2e;
+.emotion-18:focus:not(:disabled) {
+  border-width: 2px;
 }
 
 .emotion-18:disabled {
-  border: none;
   background-color: #f0f0f0;
-}
-
-.emotion-18:disabled svg {
-  fill: #c0c0c0;
-}
-
-.emotion-18:hover:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #F6FBFF;
-}
-
-.emotion-18:hover:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-18:focus:not(:disabled) {
-  border: 1px solid #0A68C1;
-  background-color: #FFFFFF;
-}
-
-.emotion-18:focus:not(:disabled) svg {
-  fill: #2e2e2e;
-}
-
-.emotion-18:active:not(:disabled) {
-  border: 1px solid #002141;
-  background-color: #0A68C1;
-}
-
-.emotion-18:active:not(:disabled) svg {
-  fill: #FFFFFF;
+  color: #c0c0c0;
 }
 
 .emotion-17 {

@@ -1,14 +1,9 @@
 import {IconComponent} from '../icons';
 
 export interface ButtonProps {
-  $shape?: ButtonShape;
   $size?: ButtonSize;
   icon?: IconComponent;
-}
-
-export enum ButtonShape {
-  Square = 'square',
-  Rounded = 'rounded',
+  $stylePreset?: string;
 }
 
 export enum ButtonSize {
