@@ -1,5 +1,6 @@
 import React from 'react';
-import {Image, ImageShape} from '../../image';
+import {Image} from '../../image';
+import {SizingKeys} from '../../themes/newskit-light/spacing';
 import {
   MetaArea,
   InfoArea,
@@ -19,18 +20,31 @@ export interface PlayerMetaProps {
   description?: string;
   live?: boolean;
   tags?: string[];
+  stylePreset?: string;
+  borderRadius?: SizingKeys;
 }
 
 export const PlayerMeta: React.FC<PlayerMetaProps> = React.memo(
-  ({imgSrc, imgAlt, time, live, title, description, tags}) => (
+  ({
+    imgSrc,
+    imgAlt,
+    time,
+    live,
+    title,
+    description,
+    tags,
+    borderRadius,
+    stylePreset,
+  }) => (
     <MetaArea>
       <ImageContainer>
         <Image
-          shape={ImageShape.Rounded}
           src={imgSrc}
           alt={imgAlt}
           aspectHeight="1"
           aspectWidth="1"
+          borderRadius={borderRadius || 'sizing120'}
+          stylePreset={stylePreset || 'maskRound010'}
         />
       </ImageContainer>
       <InfoArea>
