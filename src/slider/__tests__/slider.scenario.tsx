@@ -4,8 +4,46 @@ import {StatefulSlider} from '..';
 import {styled} from '../../utils/style';
 import {ThumbLabelProps} from '../types';
 import {StorybookHeading} from '../../test/storybook-comps';
+import {createTheme, ThemeProvider} from '../../themes';
 
 export const name = 'slider';
+
+const myCustomTheme = createTheme('my-custom-slider-theme', {
+  themeOverrider: () => ({
+    stylePresets: {
+      customTrackStylePreset: {
+        base: {
+          backgroundColor: 'red',
+          borderColor: 'blue',
+          borderWidth: '5px',
+          borderStyle: 'solid',
+        },
+      },
+      customIndicatorStylePreset: {
+        base: {
+          backgroundColor: 'yellow',
+        },
+      },
+      customThumbStylePreset: {
+        base: {
+          backgroundColor: 'green',
+          borderColor: 'black',
+          borderWidth: '5px',
+          borderStyle: 'solid',
+        },
+      },
+      customLabelStylePreset: {
+        base: {
+          borderColor: 'purple',
+          borderWidth: '2px',
+          borderRadius: '999px',
+          borderStyle: 'dashed',
+          color: 'purple',
+        },
+      },
+    },
+  }),
+});
 
 const Svg = styled.svg`
   width: ${({width}) => width}px;
@@ -138,6 +176,23 @@ export const component = () => (
         maxLabel={CustomMaxLabel}
         thumbLabel={CustomThumbLabel}
       />
+    </Container>
+    <StorybookHeading>Custom style presets</StorybookHeading>
+    <Container>
+      <ThemeProvider theme={myCustomTheme}>
+        <StatefulSlider
+          values={[50]}
+          max={100}
+          min={0}
+          minLabel="0"
+          maxLabel="100%"
+          thumbLabel
+          $trackStylePreset="customTrackStylePreset"
+          $indicatorStylePreset="customIndicatorStylePreset"
+          $thumbStylePreset="customThumbStylePreset"
+          $labelStylePreset="customLabelStylePreset"
+        />
+      </ThemeProvider>
     </Container>
     <VerticalContainer>
       <StatefulSlider values={[20]} max={50} min={0} vertical />

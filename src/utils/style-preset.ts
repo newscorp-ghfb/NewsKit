@@ -3,9 +3,8 @@ import {
   StylePresetStyles,
   StylePresetStyleKeys,
   StylePresetStateKeys,
-  StylePresetStates,
 } from '../themes/mappers/style-preset';
-import {filterObject} from './filter-object';
+import {filterObject, rejectObject} from './filter-object';
 import {SizingKeys} from '../themes/newskit-light/spacing';
 
 export interface GetStylePresetFromThemeOptions {
@@ -13,7 +12,9 @@ export interface GetStylePresetFromThemeOptions {
   isCurrent?: boolean;
   isDisabled?: boolean;
   omitStates?: StylePresetStateKeys[];
+  filterStates?: StylePresetStateKeys[];
   omitStyles?: StylePresetStyleKeys[];
+  filterStyles?: StylePresetStyleKeys[];
   borderRadiusSize?: SizingKeys;
 }
 
@@ -27,8 +28,7 @@ const getPresetStyles = (
   options?: GetPresetStylesOptions,
 ) => {
   const {omitStyles = [], borderRadiusSize = undefined} = options || {};
-
-  const {borderRadius: borderRadiusSizing, ...styles} = filterObject(
+  const {borderRadius: borderRadiusSizing, ...styles} = rejectObject(
     presetStyles,
     omitStyles,
   );
@@ -67,6 +67,7 @@ export const getStylePresetFromTheme = <Props extends ThemeProp>(
 ) => ({theme, ...props}: Props) => {
   const {
     omitStates = [],
+    filterStates = [],
     isCurrent = false,
     isLoading = false,
     isDisabled = false,
@@ -82,10 +83,10 @@ export const getStylePresetFromTheme = <Props extends ThemeProp>(
     return '';
   }
 
-  const {current, loading, ...presetStates} = filterObject(
-    stylePreset as StylePresetStates,
-    omitStates,
-  );
+  const {current, loading, ...presetStates} =
+    filterStates && filterStates.length
+      ? filterObject(stylePreset, filterStates)
+      : rejectObject(stylePreset, omitStates);
 
   const stateOverrides =
     (isDisabled && presetStates.disabled) ||

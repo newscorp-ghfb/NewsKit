@@ -17,6 +17,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-2 {
+  color: #0A68C1;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -29,7 +30,17 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding-right: 8px;
+  margin-right: 8px;
+}
+
+.emotion-2 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-2:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -64,6 +75,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-4 {
+  background-color: #cccccc;
   border-radius: 12px;
   height: 12px;
   width: 100%;
@@ -73,11 +85,19 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   cursor: inherit;
 }
 
+.emotion-4:disabled {
+  background-color: #f0f0f0;
+}
+
 .emotion-3 {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #0A68C1;
+  border-width: 1px;
+  color: #0A68C1;
+  border-radius: 32px;
   height: 32px;
   width: 32px;
-  border-radius: 32px;
-  background-color: #FFFFFF;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -87,13 +107,28 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #0A68C1;
   cursor: inherit;
 }
 
+.emotion-3 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-3:hover:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-3:active:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-3:disabled {
+  background-color: #f0f0f0;
+}
+
 .emotion-7 {
+  color: #0A68C1;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -106,7 +141,17 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding-left: 8px;
+  margin-left: 8px;
+}
+
+.emotion-7 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-7:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 <div
@@ -144,9 +189,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
     >
       <div
         class="emotion-4"
-        max="1"
-        min="0"
-        values="0"
       >
         <div
           aria-label="Volume Control"
@@ -201,6 +243,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-2 {
+  color: #0A68C1;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -213,7 +256,17 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding-right: 8px;
+  margin-right: 8px;
+}
+
+.emotion-2 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-2:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -248,6 +301,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-4 {
+  background-color: #cccccc;
   border-radius: 12px;
   height: 12px;
   width: 100%;
@@ -257,11 +311,19 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   cursor: inherit;
 }
 
+.emotion-4:disabled {
+  background-color: #f0f0f0;
+}
+
 .emotion-3 {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #0A68C1;
+  border-width: 1px;
+  color: #0A68C1;
+  border-radius: 32px;
   height: 32px;
   width: 32px;
-  border-radius: 32px;
-  background-color: #FFFFFF;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -271,13 +333,28 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #0A68C1;
   cursor: inherit;
 }
 
+.emotion-3 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-3:hover:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-3:active:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-3:disabled {
+  background-color: #f0f0f0;
+}
+
 .emotion-7 {
+  color: #0A68C1;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -290,7 +367,17 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding-left: 8px;
+  margin-left: 8px;
+}
+
+.emotion-7 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-7:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 <div
@@ -328,9 +415,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
     >
       <div
         class="emotion-4"
-        max="1"
-        min="0"
-        values="0.8"
       >
         <div
           aria-label="Volume Control"
@@ -385,6 +469,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-2 {
+  color: #0A68C1;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -397,7 +482,17 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding-right: 8px;
+  margin-right: 8px;
+}
+
+.emotion-2 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-2:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -432,6 +527,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-4 {
+  background-color: #cccccc;
   border-radius: 12px;
   height: 12px;
   width: 100%;
@@ -441,11 +537,19 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   cursor: inherit;
 }
 
+.emotion-4:disabled {
+  background-color: #f0f0f0;
+}
+
 .emotion-3 {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #0A68C1;
+  border-width: 1px;
+  color: #0A68C1;
+  border-radius: 32px;
   height: 32px;
   width: 32px;
-  border-radius: 32px;
-  background-color: #FFFFFF;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -455,13 +559,28 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #0A68C1;
   cursor: inherit;
 }
 
+.emotion-3 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-3:hover:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-3:active:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-3:disabled {
+  background-color: #f0f0f0;
+}
+
 .emotion-7 {
+  color: #0A68C1;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -474,7 +593,17 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding-left: 8px;
+  margin-left: 8px;
+}
+
+.emotion-7 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-7:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 <div
@@ -512,9 +641,6 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
     >
       <div
         class="emotion-4"
-        max="1"
-        min="0"
-        values="1"
       >
         <div
           aria-label="Volume Control"
@@ -576,10 +702,14 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-3 {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #0A68C1;
+  border-width: 1px;
+  color: #0A68C1;
+  border-radius: 32px;
   height: 32px;
   width: 32px;
-  border-radius: 32px;
-  background-color: #FFFFFF;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -589,10 +719,24 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #0A68C1;
   cursor: inherit;
+}
+
+.emotion-3 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-3:hover:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-3:active:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-3:disabled {
+  background-color: #f0f0f0;
 }
 
 .emotion-8 {
@@ -613,6 +757,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-2 {
+  color: #0A68C1;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -625,7 +770,17 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding-top: 8px;
+  margin-top: 8px;
+}
+
+.emotion-2 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-2:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-5 {
@@ -639,6 +794,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-4 {
+  background-color: #cccccc;
   border-radius: 12px;
   height: 100%;
   width: 12px;
@@ -648,7 +804,12 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   cursor: inherit;
 }
 
+.emotion-4:disabled {
+  background-color: #f0f0f0;
+}
+
 .emotion-7 {
+  color: #0A68C1;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -661,7 +822,17 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.emotion-7 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-7:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 <div
@@ -699,9 +870,6 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
     >
       <div
         class="emotion-4"
-        max="1"
-        min="0"
-        values="1"
       >
         <div
           aria-label="Volume Control"

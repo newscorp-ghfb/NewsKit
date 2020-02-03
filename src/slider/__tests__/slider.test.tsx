@@ -4,6 +4,8 @@ import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
+import {SliderProps} from '../types';
+import {Theme} from '../../themes';
 
 let mockRange: jest.Mock;
 jest.mock('react-range', () => {
@@ -86,21 +88,25 @@ describe('slider', () => {
       let onFinalChange: jest.Mock;
       let rangeProps: any;
 
-      const renderRange = (props = {}) => {
+      const renderRange = (props: Partial<SliderProps> = {}, theme?: Theme) => {
         mockRange.mockClear();
 
         onChange = jest.fn();
         onFinalChange = jest.fn();
 
-        renderWithTheme(Slider, {
-          values: [25],
-          min: 10,
-          max: 30,
-          step: 2.5,
-          onChange,
-          onFinalChange,
-          ...props,
-        });
+        renderWithTheme(
+          Slider,
+          {
+            values: [25],
+            min: 10,
+            max: 30,
+            step: 2.5,
+            onChange,
+            onFinalChange,
+            ...props,
+          },
+          theme,
+        );
 
         [[rangeProps]] = mockRange.mock.calls;
       };

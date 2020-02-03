@@ -29,12 +29,20 @@ export const Slider: React.FC<SliderProps> = withTheme<
     minLabel,
     maxLabel,
     thumbLabel,
+    $trackStylePreset,
+    $thumbStylePreset,
+    $labelStylePreset,
   } = props;
 
   return (
     <StyledContainer vertical={vertical}>
       {minLabel && (
-        <StyledSliderLabel vertical={vertical} labelType="min">
+        <StyledSliderLabel
+          $labelStylePreset={$labelStylePreset}
+          disabled={disabled}
+          vertical={vertical}
+          labelType="min"
+        >
           {renderLabel(minLabel)}
         </StyledSliderLabel>
       )}
@@ -56,34 +64,44 @@ export const Slider: React.FC<SliderProps> = withTheme<
             data-testid="slider-track"
             vertical={vertical}
             disabled={disabled}
+            $trackStylePreset={$trackStylePreset}
           >
             <StyledInnerTrack
-              values={values}
-              min={min}
-              max={max}
               ref={p.ref}
               vertical={vertical}
               style={getTrackBackgroundStyle(props)}
               disabled={disabled}
+              $trackStylePreset={$trackStylePreset}
             >
               {children}
             </StyledInnerTrack>
           </StyledTrack>
         )}
         renderThumb={({props: p, index, isDragged}) => (
-          <StyledThumb {...p} disabled={disabled} aria-label={ariaLabel}>
+          <StyledThumb
+            {...p}
+            disabled={disabled}
+            aria-label={ariaLabel}
+            $thumbStylePreset={$thumbStylePreset}
+          >
             <ThumbLabelWrapper
               values={values}
               index={index}
               isDragged={isDragged}
               thumbLabel={thumbLabel}
               vertical={vertical}
+              $labelStylePreset={$labelStylePreset}
             />
           </StyledThumb>
         )}
       />
       {maxLabel && (
-        <StyledSliderLabel vertical={vertical} labelType="max">
+        <StyledSliderLabel
+          $labelStylePreset={$labelStylePreset}
+          disabled={disabled}
+          vertical={vertical}
+          labelType="max"
+        >
           {renderLabel(maxLabel)}
         </StyledSliderLabel>
       )}

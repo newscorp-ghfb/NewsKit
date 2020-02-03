@@ -4,7 +4,10 @@ import {StyledThumbValue} from './styled';
 import {SliderProps, ThumbLabelProps} from './types';
 
 interface ThumbLabelWrapperProps
-  extends Pick<SliderProps, 'thumbLabel' | 'values' | 'vertical'> {
+  extends Pick<
+    SliderProps,
+    'thumbLabel' | 'values' | 'vertical' | '$labelStylePreset'
+  > {
   index: number;
   isDragged: boolean;
 }
@@ -15,6 +18,7 @@ export const ThumbLabelWrapper: React.FC<ThumbLabelWrapperProps> = ({
   isDragged,
   vertical,
   thumbLabel: ThumbLabel,
+  $labelStylePreset,
 }) => {
   if (!ThumbLabel) {
     return null;
@@ -22,7 +26,12 @@ export const ThumbLabelWrapper: React.FC<ThumbLabelWrapperProps> = ({
 
   if (ThumbLabel === true) {
     return (
-      <StyledThumbValue vertical={vertical}>{values[index]}</StyledThumbValue>
+      <StyledThumbValue
+        $labelStylePreset={$labelStylePreset}
+        vertical={vertical}
+      >
+        {values[index]}
+      </StyledThumbValue>
     );
   }
 

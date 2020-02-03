@@ -3,12 +3,16 @@ import {
   styled,
   getSizingFromTheme,
   getTypePresetFromTheme,
-  getColorFromTheme,
-  getBorderFromTheme,
   ThemeProp,
 } from '../utils/style';
 import {TrackProps, SliderProps} from './types';
 import {SizingKeys} from '../themes';
+import {getStylePresetFromTheme} from '../utils/style-preset';
+
+export const trackStylePresetDefault = 'interactive030';
+export const indicatorStylePresetDefault = 'interactive010';
+const thumbStylePresetDefault = 'interactive020';
+const labelStylePresetDefault = 'interactive010Inverse';
 
 type CursorProps = Pick<TrackProps, 'disabled'>;
 
@@ -70,10 +74,16 @@ export const StyledTrack = styled.div<TrackProps>`
 //
 
 type InnerTrackProps = CursorProps &
-  Pick<SliderProps, 'values' | 'min' | 'max' | 'vertical'>;
+  Pick<SliderProps, 'vertical' | '$trackStylePreset'>;
 
 export const StyledInnerTrack = styled.div<InnerTrackProps>`
-  border-radius: ${getSizingFromTheme('sizing030')};
+  ${({disabled}) =>
+    getStylePresetFromTheme(trackStylePresetDefault, '$trackStylePreset', {
+      isDisabled: disabled,
+      borderRadiusSize: 'sizing030',
+      filterStates: ['base', 'disabled'],
+    })}
+
   height: ${({theme, vertical}) =>
     vertical ? '100%' : theme.sizing.sizing030};
   width: ${({theme, vertical}) => (vertical ? theme.sizing.sizing030 : '100%')};
@@ -85,21 +95,34 @@ export const StyledInnerTrack = styled.div<InnerTrackProps>`
 // Thumb
 //
 
-export const StyledThumb = styled.div<Pick<TrackProps, 'disabled'>>`
+type StyledThumbProps = Pick<SliderProps, 'disabled' | '$thumbStylePreset'>;
+
+export const StyledThumb = styled.div<StyledThumbProps>`
+  ${({disabled}) =>
+    getStylePresetFromTheme(thumbStylePresetDefault, '$thumbStylePreset', {
+      isDisabled: disabled,
+      borderRadiusSize: 'sizing060',
+    })}
+
   height: ${getSizingFromTheme('sizing060')};
   width: ${getSizingFromTheme('sizing060')};
-  border-radius: ${getSizingFromTheme('sizing060')};
-  background-color: ${getColorFromTheme('interface010')};
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  border-style: solid;
-  border-width: ${getBorderFromTheme('borderWidth010')};
-  border-color: ${getColorFromTheme('blue060')};
   cursor: ${getCursor};
 `;
 
-export const StyledThumbValue = styled.div<VerticalProp>`
+type StyledThumbValueProps = VerticalProp &
+  Pick<SliderProps, 'disabled' | '$labelStylePreset'>;
+
+export const StyledThumbValue = styled.div<StyledThumbValueProps>`
+  ${({disabled}) =>
+    getStylePresetFromTheme(labelStylePresetDefault, '$labelStylePreset', {
+      isDisabled: disabled,
+      borderRadiusSize: 'sizing060',
+      omitStates: ['focus', 'hover'],
+    })}
+
   ${getTypePresetFromTheme('caption010')};
   position: absolute;
   ${({theme, vertical}) =>
@@ -108,28 +131,39 @@ export const StyledThumbValue = styled.div<VerticalProp>`
       : `top: -${theme.sizing.sizing060};`}
   background-color: transparent;
   white-space: nowrap;
+  width: 100%;
+  text-align: center;
 `;
 
 //
 // Slider Label
 //
 
-export const StyledSliderLabel = styled.div<
-  VerticalProp & ({labelType: 'min' | 'max'})
->`
+interface StyledSliderLabelProps
+  extends Pick<SliderProps, 'vertical' | '$labelStylePreset' | 'disabled'> {
+  labelType: 'min' | 'max';
+}
+
+export const StyledSliderLabel = styled.div<StyledSliderLabelProps>`
+  ${({disabled}) =>
+    getStylePresetFromTheme(labelStylePresetDefault, '$labelStylePreset', {
+      isDisabled: disabled,
+      filterStates: ['base', 'disabled'],
+    })};
+
   ${getTypePresetFromTheme('caption010')};
   display: inline-flex;
   ${({theme, vertical, labelType}) => {
     if (labelType === 'min') {
       return vertical
-        ? `padding-top: ${theme.sizing.sizing020};`
-        : `padding-right: ${theme.sizing.sizing020};`;
+        ? `margin-top: ${theme.sizing.sizing020};`
+        : `margin-right: ${theme.sizing.sizing020};`;
     }
     /* istanbul ignore else */
     if (labelType === 'max') {
       return vertical
-        ? `padding-bottom: ${theme.sizing.sizing020};`
-        : `padding-left: ${theme.sizing.sizing020};`;
+        ? `margin-bottom: ${theme.sizing.sizing020};`
+        : `margin-left: ${theme.sizing.sizing020};`;
     }
     /* istanbul ignore next */
     return '';

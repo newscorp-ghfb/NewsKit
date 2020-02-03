@@ -2,6 +2,7 @@ interface CommonProps {
   disabled?: boolean;
   vertical?: boolean;
   values: number[];
+  $trackStylePreset?: string;
 }
 
 export interface TrackProps extends CommonProps {
@@ -23,6 +24,9 @@ interface CommonSliderProps extends CommonProps {
   minLabel?: string | React.ComponentType;
   maxLabel?: string | React.ComponentType;
   thumbLabel?: boolean | React.ComponentType<ThumbLabelProps>;
+  $indicatorStylePreset?: string;
+  $thumbStylePreset?: string;
+  $labelStylePreset?: string;
 }
 
 export interface SliderProps extends CommonSliderProps {

@@ -17,6 +17,7 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
 }
 
 .emotion-1 {
+  background-color: #cccccc;
   border-radius: 12px;
   height: 12px;
   width: 100%;
@@ -26,11 +27,19 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
   cursor: inherit;
 }
 
+.emotion-1:disabled {
+  background-color: #f0f0f0;
+}
+
 .emotion-0 {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #0A68C1;
+  border-width: 1px;
+  color: #0A68C1;
+  border-radius: 32px;
   height: 32px;
   width: 32px;
-  border-radius: 32px;
-  background-color: #FFFFFF;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -40,10 +49,24 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #0A68C1;
   cursor: inherit;
+}
+
+.emotion-0 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-0:hover:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-0:active:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
 }
 
 .emotion-2 {
@@ -68,9 +91,6 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
     >
       <div
         class="emotion-1"
-        max="75"
-        min="25"
-        values="40"
       >
         <div
           aria-label="slider"
