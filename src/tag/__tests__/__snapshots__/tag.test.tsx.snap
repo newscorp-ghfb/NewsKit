@@ -120,7 +120,7 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
 }
 
 .emotion-0 svg {
