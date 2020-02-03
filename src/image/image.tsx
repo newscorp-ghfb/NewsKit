@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react';
 import {styled, getColorFromTheme} from '../utils/style';
 import {Placeholder} from '../icons';
-import {Theme} from '../themes';
+import {Theme, StylePresetStyles} from '../themes';
 import {SizingKeys} from '../themes/newskit-light/spacing';
 import {
   getStylePresetFromTheme,
@@ -21,6 +21,10 @@ interface ImageContainerProps extends React.HtmlHTMLAttributes<HTMLElement> {
   aspectHeight: number | string;
   aspectWidth: number | string;
   borderRadius?: SizingKeys;
+  stylePreset?: string;
+}
+
+interface IconContainerProps extends React.HtmlHTMLAttributes<HTMLElement> {
   stylePreset?: string;
 }
 
@@ -81,8 +85,7 @@ export const handleClientSideRender = (
 };
 
 const ImageComponent = (props: ImageProps) => {
-  const imageRef: React.RefObject<HTMLImageElement> = useRef(null);
-  const {hideLoadingIcon} = props;
+  const {hideLoadingIcon, stylePreset = 'maskPointed010'} = props;
   const [isLoading, setIsLoading] = useState(true);
   const handleOnImageLoad = () => isLoading && setIsLoading(false);
 
@@ -105,7 +108,7 @@ const ImageComponent = (props: ImageProps) => {
     }
   `;
 
-  const IconContainer = styled.div<{stylePreset?: string}>`
+  const IconContainer = styled.div<IconContainerProps>`
     top: 0;
     left: 0;
     position: absolute;
@@ -115,11 +118,14 @@ const ImageComponent = (props: ImageProps) => {
     width: 100%;
     height: 100%;
     margin: 0;
-    ${({stylePreset, theme}) => {
+    ${({theme}) => {
+      const presetStyle = theme.stylePresets[stylePreset]
+        .base as StylePresetStyles;
       const options = {
-        omitStyles: ['backgroundColor', 'borderRadius'],
+        omitStyles: Object.keys(presetStyle).filter(
+          (styleKey: string) => styleKey !== 'iconColor',
+        ),
       } as GetStylePresetFromThemeOptions;
-
       return renderStyles(theme, stylePreset, options);
     }}
   `;
@@ -131,7 +137,7 @@ const ImageComponent = (props: ImageProps) => {
 
   return (
     <ImageContainer {...props} isLoading={isLoading}>
-      <IconContainer>
+      <IconContainer stylePreset={stylePreset}>
         <InnerIconContainer>
           <Placeholder $size="iconSize040" />
         </InnerIconContainer>

@@ -15,9 +15,12 @@ const customTheme: Theme = createTheme('awesome-theme', {
     stylePresets: {
       myAwesomeCustomStyle: {
         base: {
-          backgroundColor: colorPrimitives.skeletonDark,
+          backgroundColor: colorPrimitives.blue040,
           borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
-          iconColor: colorPrimitives.inkInverse,
+          iconColor: colorPrimitives.green040,
+          borderWidth: '3px',
+          borderStyle: 'dotted',
+          borderColor: 'red',
         },
       } as StylePresetStates,
     },
