@@ -21,4 +21,6 @@ export * from './volume-up';
 export * from './whatsapp';
 export * from './forward10';
 export * from './replay10';
+export * from './skip-next';
+export * from './skip-previous';
 export type IconComponent = React.ComponentType;

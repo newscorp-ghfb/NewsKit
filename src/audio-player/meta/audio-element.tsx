@@ -33,12 +33,15 @@ export const useAudioHandler = (
     setCurrentTime: newTime => {
       const playerNode = localRef.current!;
       const timeRange = playerNode.seekable;
-      const value = getValueInRange(newTime, [
-        timeRange.start(0),
-        timeRange.end(timeRange.length - 1),
-      ]);
-      playerNode.currentTime = value;
-      return value;
+      if (timeRange.length > 0) {
+        const value = getValueInRange(newTime, [
+          timeRange.start(0),
+          timeRange.end(timeRange.length - 1),
+        ]);
+        playerNode.currentTime = value;
+        return value;
+      }
+      return newTime;
     },
     setVolume: newVolume => {
       const playerNode = localRef.current!;

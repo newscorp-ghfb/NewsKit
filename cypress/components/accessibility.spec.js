@@ -4,6 +4,7 @@ const a11yComponentRules = [
   {name: 'article-headline'},
   {name: 'article-standfirst'},
   {name: 'audio-player', a11yRule: 'color-contrast'},
+  {name: 'tracked-audio-player', a11yRule: 'color-contrast'},
   {name: 'block'},
   {name: 'button', a11yRule: 'color-contrast'},
   {name: 'date-line'},

@@ -68,5 +68,25 @@ export const component = () => (
       <StorybookHeading>Player with static audio</StorybookHeading>
       <AudioPlayer {...podcast} />
     </div>
+    <div>
+      <StorybookHeading>Skippable player with static audio</StorybookHeading>
+      <AudioPlayer
+        {...podcast}
+        onNextTrack={() => {}}
+        onPreviousTrack={() => {}}
+      />
+    </div>
+    <div>
+      <StorybookHeading>
+        Disabled Skippable Player with static audio
+      </StorybookHeading>
+      <AudioPlayer
+        {...podcast}
+        onNextTrack={() => {}}
+        onPreviousTrack={() => {}}
+        disableNextTrack
+        disablePreviousTrack
+      />
+    </div>
   </Container>
 );

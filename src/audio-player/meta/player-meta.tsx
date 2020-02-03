@@ -37,10 +37,12 @@ export const PlayerMeta: React.FC<PlayerMetaProps> = React.memo(
       <InfoArea>
         <div>
           {live && <LiveTag>Live</LiveTag>}
-          <ProgrammeTime>{time}</ProgrammeTime>
+          {time && <ProgrammeTime>{time}</ProgrammeTime>}
         </div>
         {title && <ProgrammeTitle>{title}</ProgrammeTitle>}
-        <ProgrammeDescription>{description}</ProgrammeDescription>
+        {description && (
+          <ProgrammeDescription>{description}</ProgrammeDescription>
+        )}
         {tags && tags.length > 0 && (
           <ProgrammeTags>
             {tags.map((tag, i) => `${tag}${i <= tags.length - 2 ? ' | ' : ''}`)}

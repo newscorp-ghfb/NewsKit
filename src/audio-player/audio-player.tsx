@@ -1,122 +1,75 @@
 import React, {
   useRef,
   useState,
-  useEffect,
   ChangeEvent,
   useCallback,
+  useEffect,
 } from 'react';
-import {PlayerContainer, MetaArea as ControlPanel} from './styled';
-import {Slider} from '../slider';
-import {PlayerButton, ForwardButton, ReplayButton} from './controls';
 import {
-  styled,
-  getColorFromTheme,
-  getSizingFromTheme,
-  getTypePresetFromTheme,
-  getFontsFromTheme,
-} from '../utils/style';
-import {Image} from '../image';
-import {H1} from '../typography';
-import {Tag} from '../tag';
-import {Play, Pause} from '../icons';
-import {SizingKeys} from '../themes/newskit-light/spacing';
+  PlayerButton,
+  ForwardButton,
+  ReplayButton,
+  SkipPreviousButton,
+  SkipNextButton,
+} from './controls';
+import {
+  PlayerMeta,
+  PlayerMetaProps,
+  AudioElement,
+  AudioHandler,
+  AudioElementProps,
+} from './meta';
+import {Slider} from '../slider';
+import {PlayerContainer, MetaArea as ControlPanel} from './styled';
 
-export interface AudioPlayerProps
-  extends React.AudioHTMLAttributes<HTMLAudioElement> {
-  imgSrc: string;
-  imgAlt: string;
-  title: string;
-  time?: string;
-  description?: string;
-  live?: boolean;
-  tags?: string[];
-  captionSrc?: string;
-  stylePreset?: string;
-  borderRadius?: SizingKeys;
+type EventListener = (event: ChangeEvent<HTMLAudioElement>) => void;
+
+export interface AudioPlayerProps extends AudioElementProps, PlayerMetaProps {
+  onNextTrack?: () => void;
+  disableNextTrack?: boolean;
+  onPreviousTrack?: () => void;
+  disablePreviousTrack?: boolean;
 }
 
-const PlayerContainer = styled.div`
-  width: 100%;
-  max-width: 920px;
-  box-sizing: border-box;
-  overflow: hidden;
-  border-radius: ${getSizingFromTheme('sizing040')};
-  box-shadow: 0px 1px ${getSizingFromTheme('sizing010')} 0px
-    rgba(96, 97, 112, 0.5);
-  padding: ${getSizingFromTheme('sizing060')};
-`;
+export const AudioPlayer: React.FC<AudioPlayerProps> = ({
+  imgSrc,
+  imgAlt,
+  time,
+  title,
+  description,
+  tags = [],
+  live = false,
+  onNextTrack,
+  disableNextTrack,
+  onPreviousTrack,
+  disablePreviousTrack,
+  ...props
+}) => {
+  const playerRef = useRef<AudioHandler>(null);
 
-const MetaArea = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-`;
+  /**
+   * audio src duration handler
+   */
+  const [duration, setDuration] = useState(0);
+  const onDurationChange: EventListener = event =>
+    setDuration(event.target.duration);
+  const showControls = !live && !Number.isNaN(duration) && duration > 0;
+  const maxTime = showControls
+    ? new Date(duration * 1000).toISOString().substr(11, 8)
+    : '0:00';
 
-const InfoArea = styled.div`
-  margin-left: ${getSizingFromTheme('sizing050')};
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
-
-const LiveTag = styled(Tag)`
-  width: ${getSizingFromTheme('sizing080')};
-  height: ${getSizingFromTheme('sizing050')};
-  padding: 0;
-  text-align: center;
-  line-height: 1.6;
-  border: none;
-  background-color: ${getColorFromTheme('semanticNegativeBase')};
-  color: ${getColorFromTheme('inkInverse')};
-  text-transform: uppercase;
-  margin-right: ${getSizingFromTheme('sizing040')};
-`;
-
-const Label = styled.span`
-  ${getTypePresetFromTheme('meta010')};
-  color: ${getColorFromTheme('inkSubtle')};
-  font-weight: ${getFontsFromTheme('fontWeight010')};
-`;
-
-const ProgrammeTime = styled(Label)`
-  height: ${getSizingFromTheme('sizing050')};
-  display: inline-block;
-`;
-
-const ProgrammeTitle = styled(H1)`
-  ${getTypePresetFromTheme('heading040')};
-  margin-top: ${getSizingFromTheme('sizing040')};
-  margin-bottom: ${getSizingFromTheme('sizing020')};
-`;
-
-const ProgrammeDescription = styled(Label)`
-  ${getTypePresetFromTheme('subhead010')};
-  margin-bottom: ${getSizingFromTheme('sizing040')};
-`;
-
-const ProgrammeTags = styled(Label)`
-  font-size: ${getFontsFromTheme('fontSize020')};
-`;
-
-const PlayerButton = styled(Button)`
-  margin: ${getSizingFromTheme('sizing040')} auto 0;
-`;
-
-const ImageContainer = styled.div`
-  width: 208px;
-`;
-
-export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
-  const playerRef = useRef<HTMLAudioElement>(null);
-  const [isPlaying, setIsPlaying] = React.useState(false);
-  const [volume] = React.useState(1);
-
+  /**
+   * audio playback handlers
+   */
+  const [isPlaying, setIsPlaying] = useState(false);
+  const onPlay = () => setIsPlaying(true);
+  const onPause = () => setIsPlaying(false);
   const togglePlay = useCallback(() => {
     const playerNode = playerRef.current;
     if (playerNode) {
       setIsPlaying(playerNode.togglePlay(isPlaying));
     }
-  }, [isPlaying, playerRef, setIsPlaying]);
+  }, [isPlaying, setIsPlaying, playerRef]);
 
   /**
    * audio time management callbacks
@@ -124,103 +77,93 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
    * this is to prevent recreation of all the event handlers on every audio time update
    * see https://reactjs.org/docs/hooks-faq.html#how-to-read-an-often-changing-value-from-usecallback
    */
+  const [timeArr, setCurrentTime] = useState([0]);
+  const [currentTime] = timeArr;
   const timeRef = useRef(0);
   useEffect(() => {
     timeRef.current = currentTime;
   });
-
-  const setPlayState = (state: 'play' | 'pause') => {
-    const playerNode = playerRef.current;
-    if (!playerNode) {
-      return;
-    }
-
-    if (state !== 'play') {
-      playerNode.pause();
-      return;
-    }
-
-    // TODO: should go into a loading state here https://nidigitalsolutions.jira.com/browse/PPDSC-649
-    const playPromise = playerNode.play();
-    if (playPromise) {
-      playPromise
-        .then(() => {
-          setIsPlaying(true);
-        })
-        .catch(() => {
-          // TODO: Display error to user https://nidigitalsolutions.jira.com/browse/PPDSC-554 consider autoplay error states https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide
-        });
+  const onTimeUpdate: EventListener = event => {
+    const eventTime = Number(event.target.currentTime.toFixed(2));
+    if (timeRef.current !== eventTime) {
+      setCurrentTime([eventTime]);
     }
   };
-
-  const togglePlay = () => {
-    const playState = isPlaying ? 'pause' : 'play';
-    setPlayState(playState);
-  };
-
-  const buttonProps = {
-    'data-testid': 'audio-player-play-button',
-    $size: ButtonSize.Large,
-    icon: isPlaying
-      ? () => <Pause $size="iconSize030" $color="buttonFill" />
-      : () => <Play $size="iconSize030" $color="buttonFill" />,
-    onClick: () => togglePlay(),
-    'aria-pressed': isPlaying,
-  };
-
-  const {
-    imgSrc,
-    imgAlt,
-    live = false,
-    time,
-    title,
-    description,
-    tags = [],
-    captionSrc,
-    borderRadius,
-    stylePreset,
-    ...rest
-  } = props;
-  const playerNode = playerRef.current;
-
-  if (playerNode) {
-    playerNode.volume = volume;
-  }
+  const onChangeAudioTime = useCallback(
+    (newTime: number) => {
+      const playerNode = playerRef.current;
+      if (playerNode) {
+        setCurrentTime([playerNode.setCurrentTime(newTime)]);
+      }
+    },
+    [playerRef, setCurrentTime],
+  );
+  const onChangeSlider = useCallback(
+    ([value]: number[]) => onChangeAudioTime(value),
+    [onChangeAudioTime],
+  );
+  const onClickPrevious = useCallback(() => {
+    if (timeRef.current > 5) {
+      onChangeAudioTime(0);
+    } else if (onPreviousTrack) {
+      onPreviousTrack();
+    }
+  }, [onPreviousTrack, timeRef, onChangeAudioTime]);
+  const onClickReplay = useCallback(
+    () => onChangeAudioTime(timeRef.current - 10),
+    [onChangeAudioTime, timeRef],
+  );
+  const onClickForward = useCallback(
+    () => onChangeAudioTime(timeRef.current + 10),
+    [onChangeAudioTime, timeRef],
+  );
 
   return (
     <PlayerContainer>
-      {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-      <audio ref={playerRef} data-testid="audio-player" {...rest}>
-        {captionSrc && <track kind="captions" src={captionSrc} />}
-      </audio>
-      <MetaArea>
-        <ImageContainer>
-          <Image
-            borderRadius={borderRadius || 'sizing120'}
-            stylePreset={stylePreset || 'maskRound010'}
-            src={imgSrc}
-            alt={imgAlt}
-            aspectHeight="1"
-            aspectWidth="1"
+      <AudioElement
+        ref={playerRef}
+        title={title}
+        onPlay={onPlay}
+        onPause={onPause}
+        onDurationChange={onDurationChange}
+        onTimeUpdate={onTimeUpdate}
+        data-testid="audio-player"
+        {...props}
+      />
+      <PlayerMeta
+        imgSrc={imgSrc}
+        imgAlt={imgAlt}
+        live={live}
+        time={time}
+        title={title}
+        description={description}
+        tags={tags}
+      />
+      {showControls && (
+        <Slider
+          min={0}
+          minLabel="0:00"
+          max={duration}
+          maxLabel={maxTime}
+          values={timeArr}
+          step={1}
+          onChange={onChangeSlider}
+        />
+      )}
+      <ControlPanel>
+        {onPreviousTrack && (
+          <SkipPreviousButton
+            onClick={onClickPrevious}
+            disabled={disablePreviousTrack}
           />
-        </ImageContainer>
-        <InfoArea>
-          <div>
-            {live && <LiveTag>Live</LiveTag>}
-            <ProgrammeTime>{time}</ProgrammeTime>
-          </div>
-          <ProgrammeTitle>{title}</ProgrammeTitle>
-          <ProgrammeDescription>{description}</ProgrammeDescription>
-          {tags.length > 0 && (
-            <ProgrammeTags>
-              {tags.map(
-                (tag, i) => `${tag}${i <= tags.length - 2 ? ' | ' : ''}`,
-              )}
-            </ProgrammeTags>
-          )}
-        </InfoArea>
-      </MetaArea>
-      <PlayerButton {...buttonProps} />
+        )}
+        {showControls && <ReplayButton onClick={onClickReplay} />}
+        <PlayerButton isPlaying={isPlaying} onClick={togglePlay} />
+        {showControls && <ForwardButton onClick={onClickForward} />}
+        {onNextTrack && (
+          <SkipNextButton onClick={onNextTrack} disabled={disableNextTrack} />
+        )}
+      </ControlPanel>
     </PlayerContainer>
   );
 };

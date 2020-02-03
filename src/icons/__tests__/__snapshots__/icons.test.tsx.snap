@@ -966,6 +966,138 @@ exports[`SaveInactive renders the SaveInactive icon with title override 1`] = `
 </DocumentFragment>
 `;
 
+exports[`SkipNext renders the SkipNext icon from theme override 1`] = `
+<DocumentFragment>
+  <svg>
+    <path>
+      a different icon
+    </path>
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`SkipNext renders the SkipNext icon with specified style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: inline-block;
+  fill: #777777;
+  color: #777777;
+  width: 64px;
+  height: 64px;
+}
+
+<svg
+    class="emotion-0"
+    viewBox="0 0 24 24"
+  >
+    <title>
+      SkipNext icon
+    </title>
+    <path
+      d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
+    />
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`SkipNext renders the SkipNext icon with title override 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: inline-block;
+  fill: #777777;
+  color: #777777;
+  width: 64px;
+  height: 64px;
+}
+
+<svg
+    class="emotion-0"
+    viewBox="0 0 24 24"
+  >
+    <title>
+      override title value
+    </title>
+    <path
+      d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
+    />
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`SkipPrevious renders the SkipPrevious icon from theme override 1`] = `
+<DocumentFragment>
+  <svg>
+    <path>
+      a different icon
+    </path>
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`SkipPrevious renders the SkipPrevious icon with specified style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: inline-block;
+  fill: #777777;
+  color: #777777;
+  width: 64px;
+  height: 64px;
+}
+
+<svg
+    class="emotion-0"
+    viewBox="0 0 24 24"
+  >
+    <title>
+      SkipPrevious icon
+    </title>
+    <path
+      d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+    />
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`SkipPrevious renders the SkipPrevious icon with title override 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: inline-block;
+  fill: #777777;
+  color: #777777;
+  width: 64px;
+  height: 64px;
+}
+
+<svg
+    class="emotion-0"
+    viewBox="0 0 24 24"
+  >
+    <title>
+      override title value
+    </title>
+    <path
+      d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+    />
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
 exports[`Twitter renders the Twitter icon from theme override 1`] = `
 <DocumentFragment>
   <svg>

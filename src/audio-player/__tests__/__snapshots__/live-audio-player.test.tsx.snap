@@ -101,43 +101,6 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   justify-content: center;
 }
 
-.emotion-6 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 400;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  color: #777777;
-  font-weight: 300;
-  height: 24px;
-  display: inline-block;
-}
-
-.emotion-8 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 400;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  color: #777777;
-  font-weight: 300;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin-bottom: 16px;
-}
-
 .emotion-12 {
   display: inline-block;
   position: relative;
@@ -239,6 +202,21 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   height: 32px;
 }
 
+.emotion-6 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 400;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #777777;
+  font-weight: 300;
+  height: 24px;
+  display: inline-block;
+}
+
 .emotion-7 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 40px;
@@ -260,6 +238,28 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   letter-spacing: 0;
   margin-top: 16px;
   margin-bottom: 8px;
+}
+
+.emotion-8 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 400;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #777777;
+  font-weight: 300;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
 }
 
 <div
@@ -461,43 +461,6 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   justify-content: center;
 }
 
-.emotion-6 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 400;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  color: #777777;
-  font-weight: 300;
-  height: 24px;
-  display: inline-block;
-}
-
-.emotion-8 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 400;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  color: #777777;
-  font-weight: 300;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin-bottom: 16px;
-}
-
 .emotion-12 {
   display: inline-block;
   position: relative;
@@ -599,6 +562,21 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   height: 32px;
 }
 
+.emotion-6 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 400;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #777777;
+  font-weight: 300;
+  height: 24px;
+  display: inline-block;
+}
+
 .emotion-7 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 40px;
@@ -620,6 +598,28 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   letter-spacing: 0;
   margin-top: 16px;
   margin-bottom: 8px;
+}
+
+.emotion-8 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 400;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #777777;
+  font-weight: 300;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
 }
 
 <div
@@ -821,43 +821,6 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   justify-content: center;
 }
 
-.emotion-6 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 400;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  color: #777777;
-  font-weight: 300;
-  height: 24px;
-  display: inline-block;
-}
-
-.emotion-8 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 400;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  color: #777777;
-  font-weight: 300;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin-bottom: 16px;
-}
-
 .emotion-12 {
   display: inline-block;
   position: relative;
@@ -959,6 +922,21 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   height: 32px;
 }
 
+.emotion-6 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 400;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #777777;
+  font-weight: 300;
+  height: 24px;
+  display: inline-block;
+}
+
 .emotion-7 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 40px;
@@ -980,6 +958,28 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   letter-spacing: 0;
   margin-top: 16px;
   margin-bottom: 8px;
+}
+
+.emotion-8 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 400;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #777777;
+  font-weight: 300;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
 }
 
 <div
@@ -1181,43 +1181,6 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   justify-content: center;
 }
 
-.emotion-6 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 400;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  color: #777777;
-  font-weight: 300;
-  height: 24px;
-  display: inline-block;
-}
-
-.emotion-8 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 400;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  color: #777777;
-  font-weight: 300;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin-bottom: 16px;
-}
-
 .emotion-12 {
   display: inline-block;
   position: relative;
@@ -1319,6 +1282,21 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   height: 32px;
 }
 
+.emotion-6 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 400;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #777777;
+  font-weight: 300;
+  height: 24px;
+  display: inline-block;
+}
+
 .emotion-7 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 40px;
@@ -1340,6 +1318,28 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   letter-spacing: 0;
   margin-top: 16px;
   margin-bottom: 8px;
+}
+
+.emotion-8 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 400;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #777777;
+  font-weight: 300;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
 }
 
 <div
@@ -1541,43 +1541,6 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   justify-content: center;
 }
 
-.emotion-6 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 400;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  color: #777777;
-  font-weight: 300;
-  height: 24px;
-  display: inline-block;
-}
-
-.emotion-8 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 400;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  color: #777777;
-  font-weight: 300;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin-bottom: 16px;
-}
-
 .emotion-12 {
   display: inline-block;
   position: relative;
@@ -1679,6 +1642,21 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   height: 32px;
 }
 
+.emotion-6 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 400;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #777777;
+  font-weight: 300;
+  height: 24px;
+  display: inline-block;
+}
+
 .emotion-7 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 40px;
@@ -1700,6 +1678,28 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   letter-spacing: 0;
   margin-top: 16px;
   margin-bottom: 8px;
+}
+
+.emotion-8 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 400;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #777777;
+  font-weight: 300;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
 }
 
 <div
@@ -1802,7 +1802,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 
 exports[`Live AudioPlayer render default player 1`] = `
 <DocumentFragment>
-  .emotion-13 {
+  .emotion-11 {
   width: 100%;
   max-width: 920px;
   box-sizing: border-box;
@@ -1812,7 +1812,7 @@ exports[`Live AudioPlayer render default player 1`] = `
   padding: 32px;
 }
 
-.emotion-9 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1886,7 +1886,7 @@ exports[`Live AudioPlayer render default player 1`] = `
   border-radius: inherit;
 }
 
-.emotion-8 {
+.emotion-6 {
   margin-left: 24px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1901,44 +1901,7 @@ exports[`Live AudioPlayer render default player 1`] = `
   justify-content: center;
 }
 
-.emotion-6 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 400;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  color: #777777;
-  font-weight: 300;
-  height: 24px;
-  display: inline-block;
-}
-
-.emotion-7 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 400;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  color: #777777;
-  font-weight: 300;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin-bottom: 16px;
-}
-
-.emotion-11 {
+.emotion-9 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -1988,50 +1951,50 @@ exports[`Live AudioPlayer render default player 1`] = `
   margin: 16px auto 0;
 }
 
-.emotion-11:hover:not(:disabled) {
+.emotion-9:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-11:active:not(:disabled) {
+.emotion-9:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-11:focus:not(:disabled) {
+.emotion-9:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-11:disabled {
+.emotion-9:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-11:disabled {
+.emotion-9:disabled {
   cursor: not-allowed;
 }
 
-.emotion-11 svg {
+.emotion-9 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-11:hover:not(:disabled) {
+.emotion-9:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-11:active:not(:disabled) {
+.emotion-9:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-11:focus:not(:disabled) {
+.emotion-9:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-11:disabled {
+.emotion-9:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-10 {
+.emotion-8 {
   display: inline-block;
   fill: #0A68C1;
   color: #0A68C1;
@@ -2040,13 +2003,13 @@ exports[`Live AudioPlayer render default player 1`] = `
 }
 
 <div
-    class="emotion-13"
+    class="emotion-11"
   >
     <audio
       data-testid="audio-player"
     />
     <div
-      class="emotion-9"
+      class="emotion-7"
     >
       <div
         class="emotion-5"
@@ -2079,29 +2042,22 @@ exports[`Live AudioPlayer render default player 1`] = `
         </div>
       </div>
       <div
-        class="emotion-8"
+        class="emotion-6"
       >
-        <div>
-          <span
-            class="emotion-6"
-          />
-        </div>
-        <span
-          class="emotion-7"
-        />
+        <div />
       </div>
     </div>
     <div
-      class="emotion-9"
+      class="emotion-7"
     >
       <button
         aria-pressed="false"
-        class="emotion-11"
+        class="emotion-9"
         data-testid="audio-player-play-button"
         type="button"
       >
         <svg
-          class="emotion-10"
+          class="emotion-8"
           viewBox="0 0 24 24"
         >
           <title>
@@ -2216,43 +2172,6 @@ exports[`Live AudioPlayer render live player 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.emotion-7 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 400;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  color: #777777;
-  font-weight: 300;
-  height: 24px;
-  display: inline-block;
-}
-
-.emotion-9 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 400;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  color: #777777;
-  font-weight: 300;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin-bottom: 16px;
 }
 
 .emotion-13 {
@@ -2395,6 +2314,21 @@ exports[`Live AudioPlayer render live player 1`] = `
   margin-right: 16px;
 }
 
+.emotion-7 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 400;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #777777;
+  font-weight: 300;
+  height: 24px;
+  display: inline-block;
+}
+
 .emotion-8 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 40px;
@@ -2416,6 +2350,28 @@ exports[`Live AudioPlayer render live player 1`] = `
   letter-spacing: 0;
   margin-top: 16px;
   margin-bottom: 8px;
+}
+
+.emotion-9 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 400;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #777777;
+  font-weight: 300;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
 }
 
 <div
@@ -2622,43 +2578,6 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   justify-content: center;
 }
 
-.emotion-6 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 400;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  color: #777777;
-  font-weight: 300;
-  height: 24px;
-  display: inline-block;
-}
-
-.emotion-8 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 400;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  color: #777777;
-  font-weight: 300;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin-bottom: 16px;
-}
-
 .emotion-13 {
   display: inline-block;
   position: relative;
@@ -2760,6 +2679,21 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   height: 32px;
 }
 
+.emotion-6 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 400;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #777777;
+  font-weight: 300;
+  height: 24px;
+  display: inline-block;
+}
+
 .emotion-7 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 40px;
@@ -2781,6 +2715,28 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   letter-spacing: 0;
   margin-top: 16px;
   margin-bottom: 8px;
+}
+
+.emotion-8 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 400;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #777777;
+  font-weight: 300;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
 }
 
 .emotion-9 {

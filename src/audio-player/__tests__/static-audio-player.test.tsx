@@ -69,6 +69,56 @@ describe('Static AudioPlayer', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  test('renders player with slider and all the controls', () => {
+    const onNextTrack = jest.fn();
+    const onPreviousTrack = jest.fn();
+    const {getByTestId, asFragment} = renderWithTheme(AudioPlayer, {
+      ...props,
+      onNextTrack,
+      onPreviousTrack,
+    } as AudioPlayerProps);
+
+    const player = getByTestId('audio-player');
+
+    fireEvent.durationChange(player);
+
+    const nextTrack = getByTestId('audio-player-skip-next');
+    fireEvent.click(nextTrack);
+    expect(onNextTrack).toHaveBeenCalled();
+
+    const previousTrack = getByTestId('audio-player-skip-previous');
+    fireEvent.click(previousTrack);
+    expect(onPreviousTrack).toHaveBeenCalled();
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('renders player with slider and all the controls, but skips are disabled', () => {
+    const onNextTrack = jest.fn();
+    const onPreviousTrack = jest.fn();
+    const {getByTestId, asFragment} = renderWithTheme(AudioPlayer, {
+      ...props,
+      onNextTrack,
+      onPreviousTrack,
+      disableNextTrack: true,
+      disablePreviousTrack: true,
+    } as AudioPlayerProps);
+
+    const player = getByTestId('audio-player');
+
+    fireEvent.durationChange(player);
+
+    const nextTrack = getByTestId('audio-player-skip-next');
+    fireEvent.click(nextTrack);
+    expect(onNextTrack).not.toHaveBeenCalled();
+
+    const previousTrack = getByTestId('audio-player-skip-previous');
+    fireEvent.click(previousTrack);
+    expect(onPreviousTrack).not.toHaveBeenCalled();
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   test('renders player with slider set to the updated current time', () => {
     const {getByTestId, asFragment} = renderWithTheme(
       AudioPlayer,
