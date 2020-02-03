@@ -8,11 +8,6 @@ import {
   GetStylePresetFromThemeOptions,
 } from '../utils/style-preset';
 
-export enum ImageShape {
-  Square = 'square',
-  Rounded = 'rounded',
-}
-
 export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   aspectHeight: number | string;
   aspectWidth: number | string;

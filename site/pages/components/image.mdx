@@ -41,8 +41,12 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
   <Prop name="hideLoadingIcon" type="boolean" default={false}>
     Hide the loading icon whilst the image is loading.
   </Prop>
-  <Prop name="shape" type="ImageShape" default={ImageShape.Square}>
-    Sets the shape of the image.
+  <Prop name="stylePreset" type="string" default="maskPointed010">
+    Sets the style presets of the image.
+  </Prop>
+  <Prop name="borderRadius" type="SizingKeys">
+    This is required when setting a style preset whereby the image is expected
+    to be either rounded or semi-rounded.
   </Prop>
 </LegacyBlock>
 
