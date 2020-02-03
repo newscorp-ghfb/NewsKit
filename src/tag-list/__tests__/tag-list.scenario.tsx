@@ -5,7 +5,6 @@ import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {BorderRadiusShape} from '../../themes';
 import {TagSize} from '../../tag';
 import {TagListLayout} from '../types';
 import {styled} from '../../utils/style';
@@ -39,8 +38,17 @@ const tagData = (): TagData[] => [
   },
 ];
 
+const tagDataWithoutHref = (): TagData[] => [
+  {
+    label: `alpha tag`,
+  },
+  {
+    label: `bravo tag`,
+  },
+];
+
 const Container = styled.div`
-  margin-bottom: 75px;
+  margin-bottom: 35px;
 `;
 
 const SmallContainer = styled(Container)`
@@ -48,29 +56,24 @@ const SmallContainer = styled(Container)`
 `;
 
 export const component = () => [
-  ...Object.entries(BorderRadiusShape).map(([key, shape]) => (
+  <StorybookHeading>Tags with `href` (render as an anchor)</StorybookHeading>,
+  ...Object.entries(TagSize).map(([key, size]) => (
     <Container>
-      <StorybookHeading>{key}</StorybookHeading>
-
-      <StorybookSubHeading>Small</StorybookSubHeading>
-      <TagList $size={TagSize.Small} $shape={shape} tagData={tagData()} />
-
-      <StorybookSubHeading>Medium</StorybookSubHeading>
-      <TagList $size={TagSize.Medium} $shape={shape} tagData={tagData()} />
-
-      <StorybookSubHeading>Large</StorybookSubHeading>
-      <TagList $size={TagSize.Large} $shape={shape} tagData={tagData()} />
+      <StorybookSubHeading>{key}</StorybookSubHeading>
+      <TagList $size={size} tagData={tagData()} />
     </Container>
   )),
   ...Object.entries(TagListLayout).map(([key, layout]) => (
     <SmallContainer>
-      <StorybookHeading>{key}</StorybookHeading>
-      <TagList
-        $size={TagSize.Small}
-        $shape={BorderRadiusShape.Rounded}
-        $layout={layout}
-        tagData={tagData()}
-      />
+      <StorybookSubHeading>{key}</StorybookSubHeading>
+      <TagList $size={TagSize.Small} $layout={layout} tagData={tagData()} />
+    </SmallContainer>
+  )),
+  <StorybookHeading>Tags without `href` (render as a span)</StorybookHeading>,
+  ...Object.entries(TagSize).map(([key, size]) => (
+    <SmallContainer>
+      <StorybookSubHeading>{key}</StorybookSubHeading>
+      <TagList $size={size} tagData={tagDataWithoutHref()} />
     </SmallContainer>
   )),
 ];

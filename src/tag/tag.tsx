@@ -1,17 +1,31 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 import React from 'react';
 import {
   styled,
-  getSizingFromTheme,
   getTypePresetFromTheme,
   getColorFromTheme,
   getBorderFromTheme,
 } from '../utils/style';
 import {as} from '../utils/component';
 import {TagProps} from './types';
-import {SizingKeys, BorderRadiusShape} from '../themes';
+import {SizingKeys} from '../themes';
 import {TagSize} from './utils';
+import {getStylePresetFromTheme} from '../utils/style-preset';
+import {PaddingPresetKeys} from '../themes/mappers/spacing';
 
 const tagSizeToToken: Record<TagSize, SizingKeys> = {
+  [TagSize.Large]: 'sizing070',
+  [TagSize.Medium]: 'sizing060',
+  [TagSize.Small]: 'sizing050',
+};
+
+const tagPaddingToken: Record<TagSize, PaddingPresetKeys> = {
+  [TagSize.Large]: 'spaceInset020Squish',
+  [TagSize.Medium]: 'spaceInset020Squish',
+  [TagSize.Small]: 'spaceInset010Squish',
+};
+
+const tagBorderRadiusToken: Record<TagSize, SizingKeys> = {
   [TagSize.Large]: 'sizing070',
   [TagSize.Medium]: 'sizing060',
   [TagSize.Small]: 'sizing050',
@@ -22,23 +36,22 @@ const StyledTag = styled.a<TagProps>`
   display: inline-block;
   vertical-align: middle;
   ${getTypePresetFromTheme('caption010')}
-  padding-left: ${getSizingFromTheme('sizing040')};
-  padding-right: ${getSizingFromTheme('sizing040')};
+
   border-style: solid;
   border-width: ${getBorderFromTheme('tagBorderWidth')};
-  border-color: ${getColorFromTheme('tagBorder')};
-  background-color: ${getColorFromTheme('tagFill', '$backgroundColor')};
   color: ${getColorFromTheme('tagText')};
-  ${({theme, $size: sizeProp, $shape: shapeProp}) => {
+
+  ${({theme, $size: sizeProp}) => {
     const size = sizeProp || TagSize.Medium;
-    const shape = shapeProp || BorderRadiusShape.Squared;
-    const token = tagSizeToToken[size];
+    const sizeToken = tagSizeToToken[size];
+    const paddingToken = tagPaddingToken[size];
     const borderWidth = theme.borders.borderWidth020;
-    const height = theme.sizing[token];
+    const height = theme.sizing[sizeToken];
+
     return {
-      height: theme.sizing[token],
+      minHeight: theme.sizing[sizeToken],
+      padding: theme.sizing[paddingToken],
       lineHeight: `calc(${height} - ${borderWidth} * 2)`,
-      borderRadius: theme.borderRadius[shape][token],
     };
   }};
   text-decoration: none;
@@ -46,25 +59,12 @@ const StyledTag = styled.a<TagProps>`
   text-overflow: ellipsis;
   white-space: nowrap;
 
-  ${({disabled, href, theme: {colors}}) => {
-    if (disabled) {
-      return {
-        borderColor: colors.tagDisabledBorder,
-        backgroundColor: colors.tagDisabledFill,
-        color: colors.tagDisabledText,
-        cursor: 'default',
-      };
-    }
-    if (href) {
-      return {
-        ':hover, :active, :focus': {
-          borderColor: colors.tagHoverBorder,
-          backgroundColor: colors.tagHoverFill,
-          color: colors.tagHoverText,
-        },
-      };
-    }
-    return {};
+  ${({disabled, $size: sizeProp, ...props}) => {
+    const size = sizeProp || TagSize.Medium;
+    return getStylePresetFromTheme('interactive070', '$stylePreset' as any, {
+      isDisabled: disabled,
+      borderRadiusSize: tagBorderRadiusToken[size],
+    })(props);
   }}
 `;
 

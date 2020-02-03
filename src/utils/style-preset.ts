@@ -27,14 +27,17 @@ const getPresetStyles = (
   options?: GetPresetStylesOptions,
 ) => {
   const {omitStyles = [], borderRadiusSize = undefined} = options || {};
+
   const {borderRadius: borderRadiusSizing, ...styles} = filterObject(
     presetStyles,
     omitStyles,
   );
+
   const borderRadius =
     borderRadiusSizing && borderRadiusSize
       ? borderRadiusSizing[borderRadiusSize]
       : '';
+
   return {
     ...styles,
     borderRadius,

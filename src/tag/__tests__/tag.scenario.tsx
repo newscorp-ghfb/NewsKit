@@ -2,9 +2,12 @@ import * as React from 'react';
 
 import {Tag, TagSize} from '..';
 import {StorybookHeading} from '../../test/storybook-comps';
-import {BorderRadiusShape} from '../../themes';
+import {styled} from '../../utils/style';
 
 export const name = 'tag';
+const Block = styled.div`
+  margin: 10px;
+`;
 
 export const component = () => (
   <React.Fragment>
@@ -28,15 +31,29 @@ export const component = () => (
         Large
       </Tag>
     </span>
-    <StorybookHeading>Shape</StorybookHeading>
-    <Tag $shape={BorderRadiusShape.Squared} href="http://example.com">
-      Squared
-    </Tag>
-    <Tag $shape={BorderRadiusShape.SemiRounded} href="http://example.com">
-      SemiRounded
-    </Tag>
-    <Tag $shape={BorderRadiusShape.Rounded} href="http://example.com">
-      Rounded
-    </Tag>
+    <StorybookHeading>Style Presets</StorybookHeading>
+    <Block>
+      <Tag href="http://example.com">interactive010</Tag>
+    </Block>
+    <Block>
+      <Tag $stylePreset="interactive010Inverse" href="http://example.com">
+        interactive010Inverse
+      </Tag>
+    </Block>
+    <Block>
+      <Tag $stylePreset="interactive020" href="http://example.com">
+        interactive020
+      </Tag>
+    </Block>
+    <Block>
+      <Tag $stylePreset="interactive030" href="http://example.com">
+        interactive030
+      </Tag>
+    </Block>
+    <Block>
+      <Tag $stylePreset="interactive040" href="http://example.com">
+        interactive040
+      </Tag>
+    </Block>
   </React.Fragment>
 );

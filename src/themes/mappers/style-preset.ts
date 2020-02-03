@@ -48,7 +48,6 @@ interface CreateStylePreset {
   borderPrimitives: BorderPrimitives;
   borderRadiusPrimitives: BorderRadius;
 }
-
 export const createStylePresets = ({
   colorPrimitives,
   borderPrimitives,
@@ -175,6 +174,27 @@ export const createStylePresets = ({
     disabled: {
       color: colorPrimitives.inkNonEssential,
       iconColor: colorPrimitives.inkNonEssential,
+    },
+  } as StylePresetStates,
+  interactive070: {
+    base: {
+      backgroundColor: 'transparent',
+      color: colorPrimitives.inkBase,
+      borderColor: colorPrimitives.neutral040,
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
+    },
+    hover: {
+      borderColor: colorPrimitives.neutral080,
+    },
+    active: {
+      backgroundColor: colorPrimitives.neutral020,
+    },
+    focus: {
+      borderColor: colorPrimitives.neutral080,
+    },
+    disabled: {
+      backgroundColor: colorPrimitives.disabled,
+      color: colorPrimitives.inkNonEssential,
     },
   } as StylePresetStates,
 });

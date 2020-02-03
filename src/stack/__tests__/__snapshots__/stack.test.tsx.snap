@@ -36,21 +36,38 @@ exports[`Stack renders stack when no properties are set 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 <div
@@ -89,21 +106,38 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -183,21 +217,38 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-6 {
@@ -277,21 +328,38 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -374,21 +442,38 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -471,21 +556,38 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -568,21 +670,38 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -665,21 +784,38 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -740,21 +876,38 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -815,21 +968,38 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -890,21 +1060,38 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -965,21 +1152,38 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -1040,21 +1244,38 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -1121,21 +1342,38 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -1215,21 +1453,38 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-6 {
@@ -1309,21 +1564,38 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -1406,21 +1678,38 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -1503,21 +1792,38 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -1600,21 +1906,38 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -1697,21 +2020,38 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -1772,21 +2112,38 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -1847,21 +2204,38 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -1922,21 +2296,38 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -1997,21 +2388,38 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -2072,21 +2480,38 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -2153,21 +2578,38 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -2247,21 +2689,38 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-6 {
@@ -2341,21 +2800,38 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -2438,21 +2914,38 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -2535,21 +3028,38 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -2632,21 +3142,38 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -2729,21 +3256,38 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -2804,21 +3348,38 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -2879,21 +3440,38 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -2954,21 +3532,38 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -3029,21 +3624,38 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -3104,21 +3716,38 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -3185,21 +3814,38 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -3279,21 +3925,38 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-6 {
@@ -3373,21 +4036,38 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-6 {
@@ -3470,21 +4150,38 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -3567,21 +4264,38 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-6 {
@@ -3664,21 +4378,38 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -3761,21 +4492,38 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -3836,21 +4584,38 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -3911,21 +4676,38 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -3986,21 +4768,38 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -4061,21 +4860,38 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -4136,21 +4952,38 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -4217,21 +5050,38 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-6 {
@@ -4333,21 +5183,38 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -4405,21 +5272,38 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-6 {
@@ -4501,21 +5385,38 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -4597,21 +5498,38 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-6 {
@@ -4693,21 +5611,38 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -4789,21 +5724,38 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -4864,21 +5816,38 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -4961,21 +5930,38 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 <div
@@ -5014,21 +6000,38 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -5089,21 +6092,38 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -5164,21 +6184,38 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -5245,21 +6282,38 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -5339,21 +6393,38 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-6 {
@@ -5433,21 +6504,38 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -5529,21 +6617,38 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -5625,21 +6730,38 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -5721,21 +6843,38 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -5817,21 +6956,38 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -5892,21 +7048,38 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -5967,21 +7140,38 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -6042,21 +7232,38 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -6117,21 +7324,38 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -6192,21 +7416,38 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {

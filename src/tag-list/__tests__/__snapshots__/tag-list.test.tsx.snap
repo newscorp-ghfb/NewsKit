@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TagList renders with custom margins 1`] = `
+exports[`TagList renders as a span with custom margins 1`] = `
 <DocumentFragment>
   .emotion-6 {
   margin: 0;
@@ -33,29 +33,377 @@ exports[`TagList renders with custom margins 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
 }
 
-.emotion-0:hover,
-.emotion-0:active,
-.emotion-0:focus {
-  border-color: #cccccc;
-  background-color: #F6FBFF;
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 48px;
+  margin-bottom: 4px;
+}
+
+.emotion-1:last-child {
+  margin-right: 0;
+}
+
+<ul
+    class="emotion-6"
+  >
+    <li
+      class="emotion-1"
+    >
+      <span
+        class="emotion-0"
+      >
+        first label
+      </span>
+    </li>
+    <li
+      class="emotion-1"
+    >
+      <span
+        class="emotion-0"
+      >
+        second label
+      </span>
+    </li>
+    <li
+      class="emotion-1"
+    >
+      <span
+        class="emotion-0"
+      >
+        third label
+      </span>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`TagList renders as a span with custom size 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  box-sizing: border-box;
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+.emotion-1:last-child {
+  margin-right: 0;
+}
+
+.emotion-6 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  border-style: solid;
+  border-width: 2px;
+  color: #777777;
+  min-height: 40px;
+  padding: 8px 12px;
+  line-height: calc(40px - 2px * 2);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: transparent;
   color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+<ul
+    class="emotion-6"
+  >
+    <li
+      class="emotion-1"
+    >
+      <span
+        class="emotion-0"
+      >
+        first label
+      </span>
+    </li>
+    <li
+      class="emotion-1"
+    >
+      <span
+        class="emotion-0"
+      >
+        second label
+      </span>
+    </li>
+    <li
+      class="emotion-1"
+    >
+      <span
+        class="emotion-0"
+      >
+        third label
+      </span>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`TagList renders as a span with defaults 1`] = `
+<DocumentFragment>
+  .emotion-6 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+.emotion-1:last-child {
+  margin-right: 0;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  border-style: solid;
+  border-width: 2px;
+  color: #777777;
+  min-height: 32px;
+  padding: 8px 12px;
+  line-height: calc(32px - 2px * 2);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+<ul
+    class="emotion-6"
+  >
+    <li
+      class="emotion-1"
+    >
+      <span
+        class="emotion-0"
+      >
+        first label
+      </span>
+    </li>
+    <li
+      class="emotion-1"
+    >
+      <span
+        class="emotion-0"
+      >
+        second label
+      </span>
+    </li>
+    <li
+      class="emotion-1"
+    >
+      <span
+        class="emotion-0"
+      >
+        third label
+      </span>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`TagList renders as an anchor with custom margins 1`] = `
+<DocumentFragment>
+  .emotion-6 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  border-style: solid;
+  border-width: 2px;
+  color: #777777;
+  min-height: 32px;
+  padding: 8px 12px;
+  line-height: calc(32px - 2px * 2);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 .emotion-1 {
@@ -107,7 +455,7 @@ exports[`TagList renders with custom margins 1`] = `
 </DocumentFragment>
 `;
 
-exports[`TagList renders with custom size and shape 1`] = `
+exports[`TagList renders as an anchor with custom size 1`] = `
 <DocumentFragment>
   .emotion-1 {
   box-sizing: border-box;
@@ -152,29 +500,38 @@ exports[`TagList renders with custom size and shape 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 40px;
+  min-height: 40px;
+  padding: 8px 12px;
   line-height: calc(40px - 2px * 2);
-  border-radius: 40px;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
 }
 
-.emotion-0:hover,
-.emotion-0:active,
-.emotion-0:focus {
-  border-color: #cccccc;
-  background-color: #F6FBFF;
-  color: #2e2e2e;
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 <ul
@@ -214,7 +571,7 @@ exports[`TagList renders with custom size and shape 1`] = `
 </DocumentFragment>
 `;
 
-exports[`TagList renders with defaults 1`] = `
+exports[`TagList renders as an anchor with defaults 1`] = `
 <DocumentFragment>
   .emotion-6 {
   margin: 0;
@@ -259,29 +616,38 @@ exports[`TagList renders with defaults 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding-left: 16px;
-  padding-right: 16px;
   border-style: solid;
   border-width: 2px;
-  border-color: #e4e4e4;
-  background-color: #fafafa;
   color: #777777;
-  height: 32px;
+  min-height: 32px;
+  padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
-  border-radius: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
 }
 
-.emotion-0:hover,
-.emotion-0:active,
-.emotion-0:focus {
-  border-color: #cccccc;
-  background-color: #F6FBFF;
-  color: #2e2e2e;
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
 }
 
 <ul

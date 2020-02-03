@@ -1,10 +1,5 @@
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {BorderRadiusShape} from '../../themes';
 import {TagSize, Tag, TagProps} from '..';
-
-const borderRadiusShapeKeys = (Object.keys(
-  BorderRadiusShape,
-) as unknown) as Array<keyof typeof BorderRadiusShape>;
 
 const tagSizeKeys = (Object.keys(TagSize) as unknown) as Array<
   keyof typeof TagSize
@@ -37,18 +32,22 @@ describe('Tag', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test.each(borderRadiusShapeKeys)('renders with %s shape', currentShape => {
-    const borderRadiusShape = BorderRadiusShape[currentShape];
-    const fragment = renderToFragmentWithTheme(Tag, {
-      $shape: borderRadiusShape,
-    } as TagProps);
-    expect(fragment).toMatchSnapshot();
-  });
-
   test.each(tagSizeKeys)('renders with %s size', currentSize => {
     const tagSize = TagSize[currentSize];
     const fragment = renderToFragmentWithTheme(Tag, {
       $size: tagSize,
+    } as TagProps);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders a tag with the default stylePreset', () => {
+    const fragment = renderToFragmentWithTheme(Tag);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders a tag with a custom stylePreset', () => {
+    const fragment = renderToFragmentWithTheme(Tag, {
+      $stylePreset: 'interactive010Inverse',
     } as TagProps);
     expect(fragment).toMatchSnapshot();
   });
