@@ -42,7 +42,7 @@ export const buildBorderRadiusSizing = (radiusCalculators: RadiusCalculators) =>
 export const borderRadiusPrimitives: BorderRadius = buildBorderRadiusSizing({
   [BorderRadiusShape.Squared]: () => '0',
   [BorderRadiusShape.SemiRounded]: (size: string) => `calc(${size} * 0.25)`,
-  [BorderRadiusShape.Rounded]: (size: string) => size,
+  [BorderRadiusShape.Rounded]: () => `100vw`,
 });
 
 export type BorderRadiusKeys = BorderRadiusShape;

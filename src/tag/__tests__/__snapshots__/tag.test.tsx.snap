@@ -270,9 +270,9 @@ exports[`Tag renders with Large size 1`] = `
   border-style: solid;
   border-width: 2px;
   color: #777777;
-  min-height: 40px;
-  padding: 8px 12px;
-  line-height: calc(40px - 2px * 2);
+  height: 32px;
+  line-height: calc(32px - 2px * 2);
+  border-radius: 100vw;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;

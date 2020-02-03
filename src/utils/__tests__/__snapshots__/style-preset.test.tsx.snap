@@ -40,7 +40,7 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 with borderRadius
   .emotion-0 {
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 12px;
+  border-radius: 100vw;
 }
 
 .emotion-0 svg {
