@@ -68,7 +68,7 @@ describe('Image', () => {
   });
 
   ['maskSemiRounded', 'maskRound', 'invalidPreset'].forEach(token => {
-    test('renders with ', () => {
+    test(`renders with ${token}`, () => {
       const props = {
         ...defaultProps,
         stylePreset: token,

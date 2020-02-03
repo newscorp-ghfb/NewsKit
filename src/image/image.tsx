@@ -119,12 +119,15 @@ const ImageComponent = (props: ImageProps) => {
     height: 100%;
     margin: 0;
     ${({theme}) => {
-      const presetStyle = theme.stylePresets[stylePreset]
-        .base as StylePresetStyles;
+      const presetStyle =
+        theme.stylePresets[stylePreset] && theme.stylePresets[stylePreset].base
+          ? Object.keys(theme.stylePresets[stylePreset]
+              .base as StylePresetStyles).filter(
+              (styleKey: string) => styleKey !== 'iconColor',
+            )
+          : undefined;
       const options = {
-        omitStyles: Object.keys(presetStyle).filter(
-          (styleKey: string) => styleKey !== 'iconColor',
-        ),
+        omitStyles: presetStyle,
       } as GetStylePresetFromThemeOptions;
       return renderStyles(theme, stylePreset, options);
     }}
