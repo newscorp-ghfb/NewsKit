@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {styled} from '../utils/style';
+import React, {useState, useEffect, useRef} from 'react';
+import {styled, getColorFromTheme} from '../utils/style';
 import {Placeholder} from '../icons';
 import {Theme} from '../themes';
 import {SizingKeys} from '../themes/newskit-light/spacing';
@@ -72,9 +72,26 @@ const imagePropsAreEqual = (prevProps: ImageProps, nextProps: ImageProps) =>
   prevProps.borderRadius === nextProps.borderRadius &&
   prevProps.src === nextProps.src;
 
+export const handleClientSideRender = (
+  handler: () => boolean | void,
+  imgRef: React.RefObject<HTMLImageElement>,
+) => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+    const imageElement = imgRef.current!;
+    if (imageElement && imageElement.complete) {
+      handler();
+    }
+  });
+};
+
 const ImageComponent = (props: ImageProps) => {
+  const imageRef: React.RefObject<HTMLImageElement> = useRef(null);
   const {hideLoadingIcon} = props;
   const [isLoading, setIsLoading] = useState(true);
+  const handleOnImageLoad = () => isLoading && setIsLoading(false);
+
+  handleClientSideRender(handleOnImageLoad, imageRef);
 
   const DisplayImage = styled.img`
     display: ${isLoading ? 'none' : 'block'};
@@ -124,10 +141,7 @@ const ImageComponent = (props: ImageProps) => {
           <Placeholder $size="iconSize040" />
         </InnerIconContainer>
       </IconContainer>
-      <DisplayImage
-        {...props}
-        onLoad={() => isLoading && setIsLoading(false)}
-      />
+      <DisplayImage {...props} ref={imageRef} onLoad={handleOnImageLoad} />
     </ImageContainer>
   );
 };

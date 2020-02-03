@@ -64,6 +64,7 @@ const Index: React.FC<{toggleTheme: () => void}> = ({toggleTheme}) => (
             src="/static/foundations.png"
             aspectHeight="400"
             aspectWidth="712"
+            alt="foundations image"
           />
           <StyledH3>Foundations</StyledH3>
           <StyledSmallParagraph>
@@ -77,6 +78,7 @@ const Index: React.FC<{toggleTheme: () => void}> = ({toggleTheme}) => (
             src="/static/components.png"
             aspectHeight="400"
             aspectWidth="712"
+            alt="components image"
           />
           <StyledH3>Components</StyledH3>
           <StyledSmallParagraph>
@@ -90,6 +92,7 @@ const Index: React.FC<{toggleTheme: () => void}> = ({toggleTheme}) => (
             src="/static/templates.png"
             aspectHeight="400"
             aspectWidth="712"
+            alt="templates image"
           />
           <StyledH3>Templates</StyledH3>
           <StyledSmallParagraph>

@@ -1,9 +1,11 @@
 import {fireEvent} from '@testing-library/react';
+import {renderHook} from '@testing-library/react-hooks';
+import {RefObject} from 'react';
 import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
-import {Image} from '..';
+import {Image, handleClientSideRender} from '..';
 
 describe('Image', () => {
   const defaultProps = {
@@ -24,6 +26,36 @@ describe('Image', () => {
     const image = getByRole('img');
     fireEvent.load(image);
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('manually call onload handler if rendered on server side', () => {
+    const imageRef = {
+      current: {
+        complete: true,
+      },
+    };
+    const mockOnLoadHandler = jest.fn();
+    renderHook(() =>
+      handleClientSideRender(mockOnLoadHandler, imageRef as RefObject<
+        HTMLImageElement
+      >),
+    );
+    expect(mockOnLoadHandler).toHaveBeenCalled();
+  });
+
+  test('does not manually call onload handler if rendered on client side', () => {
+    const imageRef = {
+      current: {
+        complete: false,
+      },
+    };
+    const mockOnLoadHandler = jest.fn();
+    renderHook(() =>
+      handleClientSideRender(mockOnLoadHandler, imageRef as RefObject<
+        HTMLImageElement
+      >),
+    );
+    expect(mockOnLoadHandler).toHaveBeenCalledTimes(0);
   });
 
   test('renders without icon', () => {
