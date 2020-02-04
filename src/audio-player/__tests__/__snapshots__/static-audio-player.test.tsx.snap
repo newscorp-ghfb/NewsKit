@@ -315,7 +315,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 
 .emotion-13 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
@@ -334,7 +334,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   border-color: #0A68C1;
   border-width: 1px;
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -918,7 +918,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 
 .emotion-13 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
@@ -937,7 +937,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   border-color: #0A68C1;
   border-width: 1px;
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -1686,7 +1686,7 @@ exports[`AudioPlayer renders with live 1`] = `
 
 .emotion-13 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
@@ -1705,7 +1705,7 @@ exports[`AudioPlayer renders with live 1`] = `
   border-color: #0A68C1;
   border-width: 1px;
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -2247,7 +2247,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 
 .emotion-13 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
@@ -2266,7 +2266,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   border-color: #0A68C1;
   border-width: 1px;
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;

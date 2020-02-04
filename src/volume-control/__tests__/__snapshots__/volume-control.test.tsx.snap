@@ -76,7 +76,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 
 .emotion-4 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
@@ -95,7 +95,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   border-color: #0A68C1;
   border-width: 1px;
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -302,7 +302,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 
 .emotion-4 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
@@ -321,7 +321,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   border-color: #0A68C1;
   border-width: 1px;
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -528,7 +528,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 
 .emotion-4 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
@@ -547,7 +547,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   border-color: #0A68C1;
   border-width: 1px;
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -707,7 +707,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   border-color: #0A68C1;
   border-width: 1px;
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -795,7 +795,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 
 .emotion-4 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   height: 100%;
   width: 12px;
   -webkit-align-self: center;

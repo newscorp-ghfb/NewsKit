@@ -427,7 +427,7 @@ exports[`slider react-range Range function props renderThumb should render custo
   border-color: #0A68C1;
   border-width: 1px;
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -474,7 +474,7 @@ exports[`slider react-range Range function props renderThumb should render custo
   border-color: #0A68C1;
   border-width: 1px;
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -523,7 +523,7 @@ exports[`slider react-range Range function props renderThumb should render dragg
   border-color: #0A68C1;
   border-width: 1px;
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -570,7 +570,7 @@ exports[`slider react-range Range function props renderThumb should render multi
   border-color: #0A68C1;
   border-width: 1px;
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -617,7 +617,7 @@ exports[`slider react-range Range function props renderThumb should render range
   border-color: #0A68C1;
   border-width: 1px;
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -651,7 +651,7 @@ exports[`slider react-range Range function props renderThumb should render range
 
 .emotion-0 {
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -708,7 +708,7 @@ exports[`slider react-range Range function props renderThumb should render undra
   border-color: #0A68C1;
   border-width: 1px;
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -755,7 +755,7 @@ exports[`slider react-range Range function props renderThumb should render verti
   border-color: #0A68C1;
   border-width: 1px;
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -789,7 +789,7 @@ exports[`slider react-range Range function props renderThumb should render verti
 
 .emotion-0 {
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -852,7 +852,7 @@ exports[`slider react-range Range function props renderTrack should render defau
 
 .emotion-0 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
@@ -895,7 +895,7 @@ exports[`slider react-range Range function props renderTrack should render disab
 
 .emotion-0 {
   background-color: #f0f0f0;
-  border-radius: 12px;
+  border-radius: 100vw;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
@@ -936,7 +936,7 @@ exports[`slider react-range Range function props renderTrack should render disab
 
 .emotion-0 {
   background-color: #f0f0f0;
-  border-radius: 12px;
+  border-radius: 100vw;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
@@ -967,7 +967,7 @@ exports[`slider react-range Range function props renderTrack should render grabb
 <DocumentFragment>
   .emotion-0 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
@@ -1012,7 +1012,7 @@ exports[`slider react-range Range function props renderTrack should render multi
 <DocumentFragment>
   .emotion-0 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
@@ -1065,7 +1065,7 @@ exports[`slider react-range Range function props renderTrack should render verti
 
 .emotion-0 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   height: 100%;
   width: 12px;
   -webkit-align-self: center;
