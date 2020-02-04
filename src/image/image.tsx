@@ -1,8 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react';
 import {styled, getColorFromTheme} from '../utils/style';
 import {Placeholder} from '../icons';
-import {Theme, StylePresetStyles} from '../themes';
-import {SizingKeys} from '../themes/newskit-light/spacing';
+import {Theme} from '../themes';
 import {
   getStylePresetFromTheme,
   GetStylePresetFromThemeOptions,
@@ -11,39 +10,33 @@ import {
 export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   aspectHeight: number | string;
   aspectWidth: number | string;
-  borderRadius?: SizingKeys;
   hideLoadingIcon?: boolean;
-  stylePreset?: string;
+  $stylePreset?: string;
 }
 
 interface ImageContainerProps extends React.HtmlHTMLAttributes<HTMLElement> {
   isLoading: boolean;
   aspectHeight: number | string;
   aspectWidth: number | string;
-  borderRadius?: SizingKeys;
-  stylePreset?: string;
+  $stylePreset?: string;
 }
 
 interface IconContainerProps extends React.HtmlHTMLAttributes<HTMLElement> {
-  stylePreset?: string;
+  $stylePreset?: string;
 }
 
 const renderStyles = (
   theme: Theme,
-  stylePreset: string | undefined,
+  $stylePreset: string | undefined,
   options: GetStylePresetFromThemeOptions,
-) => {
-  const presetName =
-    stylePreset &&
-    getStylePresetFromTheme(stylePreset, 'stylePreset' as any, options)({theme}) // eslint-disable-line @typescript-eslint/no-explicit-any
-      ? stylePreset
-      : 'maskPointed010';
-
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  return getStylePresetFromTheme(presetName, 'stylePreset' as any, options)({
+) =>
+  getStylePresetFromTheme(
+    $stylePreset || 'maskPointed010',
+    'stylePreset' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+    options,
+  )({
     theme,
   });
-};
 
 const ImageContainer = styled.div<ImageContainerProps>`
   position: relative;
@@ -54,21 +47,16 @@ const ImageContainer = styled.div<ImageContainerProps>`
       ? `calc(100% * (${props.aspectHeight}/${props.aspectWidth}))`
       : 0};
 
-  ${({stylePreset, borderRadius, theme}) => {
-    const options = {
-      borderRadiusSize: borderRadius,
-      omitStyles: ['iconColor'],
-    } as GetStylePresetFromThemeOptions;
-
-    return renderStyles(theme, stylePreset, options);
-  }}
+  ${({$stylePreset: stylePreset, theme}) =>
+    renderStyles(theme, stylePreset, {
+      borderRadiusSize: 'sizing060',
+    })}
 `;
 
 const imagePropsAreEqual = (prevProps: ImageProps, nextProps: ImageProps) =>
   prevProps.aspectHeight === nextProps.aspectHeight &&
   prevProps.aspectWidth === nextProps.aspectWidth &&
   prevProps.hideLoadingIcon === nextProps.hideLoadingIcon &&
-  prevProps.borderRadius === nextProps.borderRadius &&
   prevProps.src === nextProps.src;
 
 export const handleClientSideRender = (
@@ -85,7 +73,8 @@ export const handleClientSideRender = (
 };
 
 const ImageComponent = (props: ImageProps) => {
-  const {hideLoadingIcon, stylePreset = 'maskPointed010'} = props;
+  const imageRef: React.RefObject<HTMLImageElement> = useRef(null);
+  const {hideLoadingIcon, $stylePreset: stylePreset} = props;
   const [isLoading, setIsLoading] = useState(true);
   const handleOnImageLoad = () => isLoading && setIsLoading(false);
 
@@ -119,15 +108,8 @@ const ImageComponent = (props: ImageProps) => {
     height: 100%;
     margin: 0;
     ${({theme}) => {
-      const presetStyle =
-        theme.stylePresets[stylePreset] && theme.stylePresets[stylePreset].base
-          ? Object.keys(theme.stylePresets[stylePreset]
-              .base as StylePresetStyles).filter(
-              (styleKey: string) => styleKey !== 'iconColor',
-            )
-          : undefined;
       const options = {
-        omitStyles: presetStyle,
+        filterStyles: ['iconColor'],
       } as GetStylePresetFromThemeOptions;
       return renderStyles(theme, stylePreset, options);
     }}
@@ -140,7 +122,7 @@ const ImageComponent = (props: ImageProps) => {
 
   return (
     <ImageContainer {...props} isLoading={isLoading}>
-      <IconContainer stylePreset={stylePreset}>
+      <IconContainer $stylePreset={stylePreset}>
         <InnerIconContainer>
           <Placeholder $size="iconSize040" />
         </InnerIconContainer>

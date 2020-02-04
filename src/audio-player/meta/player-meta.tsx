@@ -30,8 +30,7 @@ export const PlayerMeta: React.FC<PlayerMetaProps> = React.memo(
           alt={imgAlt}
           aspectHeight="1"
           aspectWidth="1"
-          borderRadius="sizing120"
-          stylePreset="maskRound010"
+          $stylePreset="maskRound010"
         />
       </ImageContainer>
       <InfoArea>
