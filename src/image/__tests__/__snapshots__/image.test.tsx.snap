@@ -8,6 +8,7 @@ exports[`Image renders with defaults 1`] = `
   height: 0;
   padding-top: calc(100% * (3/3));
   background-color: #fafafa;
+  border-radius: 0;
 }
 
 .emotion-2 {
@@ -118,6 +119,7 @@ exports[`Image renders with defaults after load 1`] = `
   height: auto;
   padding-top: 0;
   background-color: #fafafa;
+  border-radius: 0;
 }
 
 .emotion-2 {
@@ -187,6 +189,27 @@ exports[`Image renders with invalidPreset 1`] = `
   height: 0;
   padding-top: calc(100% * (3/3));
   background-color: #fafafa;
+  border-radius: 0;
+}
+
+.emotion-2 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 .emotion-1 {
@@ -215,27 +238,6 @@ exports[`Image renders with invalidPreset 1`] = `
   -webkit-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
   border-radius: inherit;
-}
-
-.emotion-2 {
-  top: 0;
-  left: 0;
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  background-color: #fafafa;
 }
 
 <div
@@ -279,6 +281,27 @@ exports[`Image renders with maskRound 1`] = `
   height: 0;
   padding-top: calc(100% * (3/3));
   background-color: #fafafa;
+  border-radius: 0;
+}
+
+.emotion-2 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 .emotion-1 {
@@ -307,27 +330,6 @@ exports[`Image renders with maskRound 1`] = `
   -webkit-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
   border-radius: inherit;
-}
-
-.emotion-2 {
-  top: 0;
-  left: 0;
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  background-color: #fafafa;
 }
 
 <div
@@ -371,6 +373,27 @@ exports[`Image renders with maskSemiRounded 1`] = `
   height: 0;
   padding-top: calc(100% * (3/3));
   background-color: #fafafa;
+  border-radius: 0;
+}
+
+.emotion-2 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 .emotion-1 {
@@ -399,27 +422,6 @@ exports[`Image renders with maskSemiRounded 1`] = `
   -webkit-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
   border-radius: inherit;
-}
-
-.emotion-2 {
-  top: 0;
-  left: 0;
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  background-color: #fafafa;
 }
 
 <div
@@ -463,6 +465,7 @@ exports[`Image renders without icon 1`] = `
   height: 0;
   padding-top: calc(100% * (3/3));
   background-color: #fafafa;
+  border-radius: 0;
 }
 
 .emotion-2 {
