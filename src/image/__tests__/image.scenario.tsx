@@ -48,12 +48,25 @@ export const component = () => (
       </Container>
     </div>
     <StorybookHeading>
+      Default theme with invalid image reference
+    </StorybookHeading>
+    <div>
+      <Container>
+        <Image
+          src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.pngx"
+          aspectWidth={3}
+          aspectHeight={2}
+          alt="Example Image"
+        />
+      </Container>
+    </div>
+    <StorybookHeading>
       Default theme with invalid image reference hiding logo
     </StorybookHeading>
     <div>
       <Container>
         <Image
-          src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
+          src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.pngx"
           aspectWidth={3}
           aspectHeight={2}
           alt="Example Image"

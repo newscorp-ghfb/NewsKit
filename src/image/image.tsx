@@ -47,8 +47,8 @@ const ImageContainer = styled.div<ImageContainerProps>`
       ? `calc(100% * (${props.aspectHeight}/${props.aspectWidth}))`
       : 0};
 
-  ${({$stylePreset: stylePreset, theme}) =>
-    renderStyles(theme, stylePreset, {
+  ${({$stylePreset, theme}) =>
+    renderStyles(theme, $stylePreset, {
       borderRadiusSize: 'sizing060',
     })}
 `;
@@ -107,12 +107,6 @@ const ImageComponent = (props: ImageProps) => {
     width: 100%;
     height: 100%;
     margin: 0;
-    ${({theme}) => {
-      const options = {
-        filterStyles: ['iconColor'],
-      } as GetStylePresetFromThemeOptions;
-      return renderStyles(theme, stylePreset, options);
-    }}
   `;
 
   const InnerIconContainer = styled.div`
