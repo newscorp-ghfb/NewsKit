@@ -27,6 +27,7 @@ interface CommonSliderProps extends CommonProps {
   $indicatorStylePreset?: string;
   $thumbStylePreset?: string;
   $labelStylePreset?: string;
+  dataTestId?: string;
 }
 
 export interface SliderProps extends CommonSliderProps {

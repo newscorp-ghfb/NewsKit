@@ -788,6 +788,72 @@ exports[`Play renders the Play icon with title override 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Popout renders the Popout icon from theme override 1`] = `
+<DocumentFragment>
+  <svg>
+    <path>
+      a different icon
+    </path>
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Popout renders the Popout icon with specified style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: inline-block;
+  fill: #777777;
+  color: #777777;
+  width: 64px;
+  height: 64px;
+}
+
+<svg
+    class="emotion-0"
+    viewBox="0 0 24 24"
+  >
+    <title>
+      Popout
+    </title>
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+    <path
+      d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Popout renders the Popout icon with title override 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: inline-block;
+  fill: #777777;
+  color: #777777;
+  width: 64px;
+  height: 64px;
+}
+
+<svg
+    class="emotion-0"
+    viewBox="0 0 24 24"
+  >
+    <title>
+      override title value
+    </title>
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+    <path
+      d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
 exports[`Replay10 renders the Replay10 icon from theme override 1`] = `
 <DocumentFragment>
   <svg>

@@ -11,6 +11,7 @@ import {
   ReplayButton,
   SkipPreviousButton,
   SkipNextButton,
+  PopoutLink,
 } from './controls';
 import {
   PlayerMeta,
@@ -20,7 +21,9 @@ import {
   AudioElementProps,
 } from './meta';
 import {Slider} from '../slider';
-import {PlayerContainer, MetaArea as ControlPanel} from './styled';
+import {Stack, StackDistribution, Flow} from '../stack';
+import {PlayerContainer, ControlContainer} from './styled';
+import {VolumeControl} from '../volume-control';
 
 type EventListener = (event: ChangeEvent<HTMLAudioElement>) => void;
 
@@ -29,6 +32,7 @@ export interface AudioPlayerProps extends AudioElementProps, PlayerMetaProps {
   disableNextTrack?: boolean;
   onPreviousTrack?: () => void;
   disablePreviousTrack?: boolean;
+  href?: string;
 }
 
 export const AudioPlayer: React.FC<AudioPlayerProps> = ({
@@ -43,9 +47,25 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
   disableNextTrack,
   onPreviousTrack,
   disablePreviousTrack,
+  href,
   ...props
 }) => {
   const playerRef = useRef<AudioHandler>(null);
+
+  /**
+   * audio player volume controls
+   */
+  const [volume, setVolume] = useState(1);
+  const onVolumeChange: EventListener = event => setVolume(event.target.volume);
+  const onChangeVolume = useCallback(
+    (newVolume: number) => {
+      const playerNode = playerRef.current;
+      if (playerNode) {
+        setVolume(playerNode.setVolume(newVolume));
+      }
+    },
+    [playerRef, setVolume],
+  );
 
   /**
    * audio src duration handler
@@ -127,6 +147,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
         onPause={onPause}
         onDurationChange={onDurationChange}
         onTimeUpdate={onTimeUpdate}
+        onVolumeChange={onVolumeChange}
         data-testid="audio-player"
         {...props}
       />
@@ -150,20 +171,44 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
           onChange={onChangeSlider}
         />
       )}
-      <ControlPanel>
-        {onPreviousTrack && (
-          <SkipPreviousButton
-            onClick={onClickPrevious}
-            disabled={disablePreviousTrack}
-          />
-        )}
-        {showControls && <ReplayButton onClick={onClickReplay} />}
-        <PlayerButton isPlaying={isPlaying} onClick={togglePlay} />
-        {showControls && <ForwardButton onClick={onClickForward} />}
-        {onNextTrack && (
-          <SkipNextButton onClick={onNextTrack} disabled={disableNextTrack} />
-        )}
-      </ControlPanel>
+      <Stack
+        flow={Flow.HorizontalCenter}
+        stackDistribution={StackDistribution.SpaceBetween}
+      >
+        <ControlContainer>
+          <VolumeControl volume={volume} onChange={onChangeVolume} />
+        </ControlContainer>
+        <div>
+          <Stack
+            flow={Flow.HorizontalCenter}
+            stackDistribution={StackDistribution.Center}
+          >
+            {onPreviousTrack && (
+              <SkipPreviousButton
+                onClick={onClickPrevious}
+                disabled={disablePreviousTrack}
+              />
+            )}
+            {showControls && <ReplayButton onClick={onClickReplay} />}
+            <PlayerButton isPlaying={isPlaying} onClick={togglePlay} />
+            {showControls && <ForwardButton onClick={onClickForward} />}
+            {onNextTrack && (
+              <SkipNextButton
+                onClick={onNextTrack}
+                disabled={disableNextTrack}
+              />
+            )}
+          </Stack>
+        </div>
+        <ControlContainer>
+          <Stack
+            flow={Flow.HorizontalCenter}
+            stackDistribution={StackDistribution.End}
+          >
+            {href && <PopoutLink href={href} />}
+          </Stack>
+        </ControlContainer>
+      </Stack>
     </PlayerContainer>
   );
 };

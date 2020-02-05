@@ -101,7 +101,7 @@ describe('skippable audio player', () => {
       });
   });
 
-  it('should change player time when slider is dragged and skip backwards on time and track', () => {
+  it('should change player time when slider is clicked and skip backwards on time and track', () => {
     cy.get('[data-testid="audio-player-skip-next"]').as('skipNext');
     cy.get('[data-testid="audio-player-skip-previous"]').as('skipPrevious');
 
@@ -152,5 +152,19 @@ describe('skippable audio player', () => {
           });
         });
       });
+  });
+
+  it('should change player volume when the slider is clicked', () => {
+    cy.get('[data-testid="volume-control"]').as('volume');
+    cy.get('@volume').then(slider => {
+      const {top, left} = slider.position();
+      cy.get('@volume')
+        .click(left - 10, top)
+        .then(() => {
+          cy.get('@volume').should(sliderEl => {
+            expect(Number(sliderEl.attr('values'))).to.be.lessThan(1);
+          });
+        });
+    });
   });
 });

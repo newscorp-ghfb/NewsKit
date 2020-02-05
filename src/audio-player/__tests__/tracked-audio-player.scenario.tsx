@@ -13,6 +13,7 @@ const podcast1 = {
   live: false,
   imgSrc: 'https://via.placeholder.com/150',
   captionSrc: 'captions.vtt',
+  href: 'https://www.google.com',
 };
 
 const podcast2 = {
@@ -22,6 +23,7 @@ const podcast2 = {
   live: false,
   imgSrc: 'https://via.placeholder.com/150',
   captionSrc: 'captions.vtt',
+  href: 'https://www.google.com',
 };
 
 const podcast3 = {
@@ -31,6 +33,7 @@ const podcast3 = {
   live: false,
   imgSrc: 'https://via.placeholder.com/150',
   captionSrc: 'captions.vtt',
+  href: 'https://www.google.com',
 };
 
 const audioTrackList = [podcast1, podcast2, podcast3];

@@ -1,5 +1,5 @@
 import React from 'react';
-import {PlayerButton as StyledButton} from '../styled';
+import {StyledButton} from '../styled';
 import {SkipNext, SkipPrevious} from '../../icons';
 import {ButtonSize} from '../../button';
 
@@ -8,9 +8,9 @@ export interface SkipButtonProps {
   disabled?: boolean;
 }
 
-const SkipNextIcon = () => <SkipNext $size="iconSize030" $color="buttonFill" />;
+const SkipNextIcon = () => <SkipNext $size="iconSize020" $color="buttonFill" />;
 const SkipPreviousIcon = () => (
-  <SkipPrevious $size="iconSize030" $color="buttonFill" />
+  <SkipPrevious $size="iconSize020" $color="buttonFill" />
 );
 
 export const SkipNextButton: React.FC<SkipButtonProps> = React.memo(

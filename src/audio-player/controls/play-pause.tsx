@@ -1,7 +1,6 @@
 import React from 'react';
-import {PlayerButton as StyledButton} from '../styled';
+import {Button, ButtonSize} from '../../button';
 import {Play, Pause} from '../../icons';
-import {ButtonSize} from '../../button';
 
 export interface PlayerButtonProps {
   isPlaying: boolean;
@@ -13,7 +12,7 @@ const PauseIcon = () => <Pause $size="iconSize030" $color="buttonFill" />;
 
 export const PlayerButton: React.FC<PlayerButtonProps> = React.memo(
   ({isPlaying, onClick}) => (
-    <StyledButton
+    <Button
       data-testid="audio-player-play-button"
       aria-pressed={isPlaying}
       onClick={onClick}

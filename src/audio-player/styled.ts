@@ -20,17 +20,9 @@ export const PlayerContainer = styled.div`
   padding: ${getSizingFromTheme('sizing060')};
 `;
 
-export const MetaArea = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-`;
-
-export const InfoArea = styled.div`
-  margin-left: ${getSizingFromTheme('sizing050')};
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+export const ControlContainer = styled.div`
+  width: 100%;
+  max-width: ${getSizingFromTheme('sizing110')};
 `;
 
 export const LiveTag = styled(Tag)`
@@ -72,8 +64,12 @@ export const ProgrammeTags = styled(Label)`
   font-size: ${getFontsFromTheme('fontSize020')};
 `;
 
-export const PlayerButton = styled(Button)`
-  margin: ${getSizingFromTheme('sizing040')} auto 0;
+export const StyledButton = styled(Button)`
+  border: none;
+`;
+
+export const StyledTag = styled(Tag)`
+  border: none;
 `;
 
 export const ImageContainer = styled.div`

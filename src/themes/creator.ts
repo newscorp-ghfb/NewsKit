@@ -60,6 +60,7 @@ export interface Icons {
   Replay10?: ColourableIcon;
   SkipNext?: ColourableIcon;
   SkipPrevious?: ColourableIcon;
+  Popout?: ColourableIcon;
 }
 
 export interface Theme extends Record<string, unknown> {

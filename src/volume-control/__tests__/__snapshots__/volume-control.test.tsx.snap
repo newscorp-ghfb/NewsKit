@@ -184,7 +184,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
     </div>
     <div
       class="emotion-5"
-      data-testid="slider-track"
+      data-testid="volume-control"
       values="0"
     >
       <div
@@ -410,7 +410,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
     </div>
     <div
       class="emotion-5"
-      data-testid="slider-track"
+      data-testid="volume-control"
       values="0.8"
     >
       <div
@@ -636,7 +636,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
     </div>
     <div
       class="emotion-5"
-      data-testid="slider-track"
+      data-testid="volume-control"
       values="1"
     >
       <div
@@ -865,7 +865,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
     </div>
     <div
       class="emotion-5"
-      data-testid="slider-track"
+      data-testid="volume-control"
       values="1"
     >
       <div

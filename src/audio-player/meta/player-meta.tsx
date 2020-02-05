@@ -1,8 +1,7 @@
 import React from 'react';
-import {Image} from '../../image';
+import {Stack, Flow, StackDistribution} from '../../stack';
+import {Image, ImageShape} from '../../image';
 import {
-  MetaArea,
-  InfoArea,
   LiveTag,
   ProgrammeTime,
   ProgrammeTitle,
@@ -23,7 +22,10 @@ export interface PlayerMetaProps {
 
 export const PlayerMeta: React.FC<PlayerMetaProps> = React.memo(
   ({imgSrc, imgAlt, time, live, title, description, tags}) => (
-    <MetaArea>
+    <Stack
+      flow={Flow.HorizontalCenter}
+      stackDistribution={StackDistribution.Center}
+    >
       <ImageContainer>
         <Image
           src={imgSrc}
@@ -33,7 +35,10 @@ export const PlayerMeta: React.FC<PlayerMetaProps> = React.memo(
           $stylePreset="maskRound010"
         />
       </ImageContainer>
-      <InfoArea>
+      <Stack
+        flow={Flow.VerticalCenter}
+        stackDistribution={StackDistribution.Center}
+      >
         <div>
           {live && <LiveTag>Live</LiveTag>}
           {time && <ProgrammeTime>{time}</ProgrammeTime>}
@@ -47,7 +52,7 @@ export const PlayerMeta: React.FC<PlayerMetaProps> = React.memo(
             {tags.map((tag, i) => `${tag}${i <= tags.length - 2 ? ' | ' : ''}`)}
           </ProgrammeTags>
         )}
-      </InfoArea>
-    </MetaArea>
+      </Stack>
+    </Stack>
   ),
 );

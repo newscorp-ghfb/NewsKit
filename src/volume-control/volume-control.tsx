@@ -49,6 +49,7 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
       values={[volume]}
       onChange={([newVolume]) => onChange(newVolume)}
       ariaLabel="Volume Control"
+      dataTestId="volume-control"
       minLabel={() => (
         <MuteButton
           volume={volume}

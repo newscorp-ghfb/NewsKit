@@ -1,5 +1,5 @@
 import React from 'react';
-import {PlayerButton as StyledButton} from '../styled';
+import {StyledButton} from '../styled';
 import {Forward10, Replay10} from '../../icons';
 import {ButtonSize} from '../../button';
 
@@ -7,8 +7,8 @@ export interface TrackControlProps {
   onClick: () => void;
 }
 
-const ForwardIcon = () => <Forward10 $size="iconSize030" $color="buttonFill" />;
-const ReplayIcon = () => <Replay10 $size="iconSize030" $color="buttonFill" />;
+const ForwardIcon = () => <Forward10 $size="iconSize020" $color="buttonFill" />;
+const ReplayIcon = () => <Replay10 $size="iconSize020" $color="buttonFill" />;
 
 export const ForwardButton: React.FC<TrackControlProps> = React.memo(
   ({onClick}) => (

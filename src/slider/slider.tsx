@@ -29,6 +29,7 @@ export const Slider: React.FC<SliderProps> = withTheme<
     minLabel,
     maxLabel,
     thumbLabel,
+    dataTestId,
     $trackStylePreset,
     $thumbStylePreset,
     $labelStylePreset,
@@ -61,7 +62,7 @@ export const Slider: React.FC<SliderProps> = withTheme<
             onTouchStart={p.onTouchStart}
             isDragged={isDragged}
             values={values}
-            data-testid="slider-track"
+            data-testid={dataTestId || 'slider-track'}
             vertical={vertical}
             disabled={disabled}
             $trackStylePreset={$trackStylePreset}
