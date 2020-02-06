@@ -1,0 +1,150 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {Prop} from '../../components/prop';
+import {TextBoxSwatch} from '../../components/theming-values/colors';
+import {LegacyBlock} from '../../components/legacy-block';
+
+import {Flag, FlagSize} from 'newskit';
+
+export default Layout;
+
+# Flag
+
+## Overview
+
+The tag element is used within the [tag list](/components/tag-list) as a way of classifying content, typically using keywords. They are added to a web page or other content to help users search for and find related content quickly and easily.
+
+### Usage
+
+A tag is used in a [tag list](/components/tag-list) and displayed anywhere that a quick link to related content could be beneficial to a user e.g. article pages or search.
+
+### Theming
+
+The default tag component uses the following style tokens, which can be overridden:
+
+| Theme Token       | Color Primitive |  Color Value                                          |
+| ----------------- | --------------- | -------------------------------------------- |
+| tagFill           | interface020     | <TextBoxSwatch themeColor="interface020"/>    |
+| tagBorder         | interface030     | <TextBoxSwatch themeColor="interface030"/>    |
+| tagText           | inkSubtle          | <TextBoxSwatch themeColor="inkSubtle" dark/>    |
+| tagHoverFill      | interfaceHover  | <TextBoxSwatch themeColor="interfaceHover"/> |
+| tagHoverBorder    | interface040     | <TextBoxSwatch themeColor="interface040"/>    |
+| tagHoverText      | inkBase          | <TextBoxSwatch themeColor="inkBase" dark/>    |
+| tagDisabledFill   | disabled      | <TextBoxSwatch themeColor="disabled"/>     |
+| tagDisabledBorder | disabled      | <TextBoxSwatch themeColor="disabled"/>     |
+| tagDisabledText   | inkNonEssential          | <TextBoxSwatch themeColor="inkNonEssential" dark/>    |
+
+## Props
+
+Flags have a number of props to facilitate a variety of uses:
+
+<LegacyBlock $marginTop="sizing040">
+  <Prop name="children" type="string" required>
+    The content of the tag is passed as the child of the component.
+  </Prop>
+  <Prop name="disabled" type="boolean" default={false}>
+    If true, the Flag will render in a disabled state, appearing greyed out.
+  </Prop>
+  <Prop name="$size" type="FlagSize" enum={FlagSize} default="Medium">
+    Optional size of the Flag.
+  </Prop>
+  <Prop name="$stylePreset" type="string" default="interactive070">
+    If provided, this overrides the style preset applied to the tag.
+
+  </Prop>
+</LegacyBlock>
+
+## Playground
+
+<Playground
+  componentName="Flag"
+  newskitPath="/tag"
+  component={Flag}
+  knobs={[
+    {
+      name: 'Content',
+      propName: 'children',
+      value: 'Flag Content',
+    },
+    {
+      name: 'Disabled',
+      propName: 'disabled',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'Flag Size',
+      propName: '$size',
+      options: [
+        {
+          label: 'Small',
+          value: FlagSize.Small,
+        },
+        {
+          label: 'Large',
+          value: FlagSize.Large,
+        },
+      ],
+    },
+    {
+      name: 'Style Preset',
+      propName: '$stylePreset',
+      options: [
+        {
+          label: 'interactive070',
+          value: 'interactive070',
+          isDefault: true
+        },
+        {
+          label: 'interactive010',
+          value: 'interactive010',
+        },
+        {
+          label: 'interactive010Inverse',
+          value: 'interactive010Inverse',
+        },
+        {
+          label: 'interactive020',
+          value: 'interactive020',
+        },
+        {
+          label: 'interactive030',
+          value: 'interactive030',
+        },
+        {
+          label: 'interactive040',
+          value: 'interactive040',
+        },
+      ],
+    },
+  ]}
+/>
+
+## Rationale
+
+### Styling
+
+Flags are designed to be compact and discreet as they are intended to supplement the primary content.
+
+Flags should have as few words as possible and always have a direct relationship to the content they represent.
+
+### Accessibility
+
+#### Colour
+
+Text and background colours must have a 3:1 minimum contrast ratio.
+Hover states should have clear contrast change or should include a non colour designator.
+
+### SEO
+
+#### Ranking
+
+Flagging generates hub pages which act as valuable catch-all pages, these rank well in search, are automatically updated and generate more backlinks.
+
+#### Navigation
+
+Good for site navigation (for crawlers and users), particularly helpful where site structure is poor (The Times)
+
+#### Descriptive
+
+Flagging helps tell Google what the page content is about, this then enables Google to better surface those pages in search

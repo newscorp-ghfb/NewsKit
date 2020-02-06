@@ -172,6 +172,11 @@
         "id": "/components/tag"
       },
       {
+        "title": "Flag",
+        "page": true,
+        "id": "/components/flag"
+      },
+      {
         "title": "Tag List",
         "page": true,
         "id": "/components/tag-list"

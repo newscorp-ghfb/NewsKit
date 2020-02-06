@@ -216,6 +216,8 @@ export const createStylePresets = ({
   } as StylePresetStates,
   interactive070: {
     base: {
+      borderStyle: 'solid',
+      borderWidth: borderPrimitives.borderWidth010,
       backgroundColor: 'transparent',
       color: colorPrimitives.inkBase,
       borderColor: colorPrimitives.neutral040,

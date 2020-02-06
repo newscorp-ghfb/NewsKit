@@ -1,17 +1,13 @@
 /* eslint-disable  @typescript-eslint/no-explicit-any */
 import React from 'react';
-import {
-  styled,
-  getTypePresetFromTheme,
-  getColorFromTheme,
-  getBorderFromTheme,
-} from '../utils/style';
+import {styled} from '../utils/style';
 import {as} from '../utils/component';
 import {TagProps} from './types';
-import {SizingKeys} from '../themes';
 import {TagSize} from './utils';
+import {SizingKeys} from '../themes';
 import {getStylePresetFromTheme} from '../utils/style-preset';
 import {PaddingPresetKeys} from '../themes/mappers/spacing';
+import {BaseFlag} from '../baseFlag';
 
 const tagSizeToToken: Record<TagSize, SizingKeys> = {
   [TagSize.Large]: 'sizing070',
@@ -31,16 +27,7 @@ const tagBorderRadiusToken: Record<TagSize, SizingKeys> = {
   [TagSize.Small]: 'sizing050',
 };
 
-const StyledTag = styled.a<TagProps>`
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  ${getTypePresetFromTheme('caption010')}
-
-  border-style: solid;
-  border-width: ${getBorderFromTheme('tagBorderWidth')};
-  color: ${getColorFromTheme('tagText')};
-
+const StyledTag = styled(BaseFlag)<TagProps>`
   ${({theme, $size: sizeProp}) => {
     const size = sizeProp || TagSize.Medium;
     const sizeToken = tagSizeToToken[size];
@@ -54,10 +41,6 @@ const StyledTag = styled.a<TagProps>`
       lineHeight: `calc(${height} - ${borderWidth} * 2)`,
     };
   }};
-  text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 
   ${({disabled, $size: sizeProp, ...props}) => {
     const size = sizeProp || TagSize.Medium;

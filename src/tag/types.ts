@@ -1,8 +1,6 @@
-import {TagSize} from './utils';
+import {BaseFlagProps} from '../baseFlag/types';
 
-export type TagProps = {
+export interface TagProps extends BaseFlagProps {
   href?: string;
   disabled?: boolean;
-  $size?: TagSize;
-  $stylePreset?: string;
-};
+}

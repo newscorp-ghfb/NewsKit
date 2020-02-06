@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tag href renders as an anchor 1`] = `
+exports[`Flag href renders as an anchor 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -19,9 +19,9 @@ exports[`Tag href renders as an anchor 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  line-height: calc(32px - 2px * 2);
+  min-height: 24px;
+  padding: 4px 8px;
+  line-height: calc(24px - 2px * 2);
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
@@ -47,52 +47,14 @@ exports[`Tag href renders as an anchor 1`] = `
   color: #9c9c9c;
 }
 
-<a
-    class="emotion-0"
-    href="#"
-  />
-</DocumentFragment>
-`;
-
-exports[`Tag href renders in disable state with an anchor 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  line-height: calc(32px - 2px * 2);
-  border-style: solid;
-  border-width: 1px;
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-  border-color: #cccccc;
-  border-radius: 0;
-}
-
 <span
     class="emotion-0"
-    disabled=""
     href="#"
   />
 </DocumentFragment>
 `;
 
-exports[`Tag renders a tag with a custom stylePreset 1`] = `
+exports[`Flag renders a flag with a custom stylePreset 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -111,9 +73,9 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  line-height: calc(32px - 2px * 2);
+  min-height: 24px;
+  padding: 4px 8px;
+  line-height: calc(24px - 2px * 2);
   color: #0A68C1;
   border-radius: 100vw;
 }
@@ -156,203 +118,7 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag renders a tag with the default stylePreset 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  line-height: calc(32px - 2px * 2);
-  border-style: solid;
-  border-width: 1px;
-  background-color: transparent;
-  color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
-}
-
-.emotion-0:hover:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-0:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-0:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-<span
-    class="emotion-0"
-  />
-</DocumentFragment>
-`;
-
-exports[`Tag renders in disabled state 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  line-height: calc(32px - 2px * 2);
-  border-style: solid;
-  border-width: 1px;
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-  border-color: #cccccc;
-  border-radius: 0;
-}
-
-<span
-    class="emotion-0"
-    disabled=""
-  />
-</DocumentFragment>
-`;
-
-exports[`Tag renders with Large size 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  min-height: 40px;
-  padding: 8px 12px;
-  line-height: calc(40px - 2px * 2);
-  border-style: solid;
-  border-width: 1px;
-  background-color: transparent;
-  color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
-}
-
-.emotion-0:hover:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-0:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-0:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-<span
-    class="emotion-0"
-  />
-</DocumentFragment>
-`;
-
-exports[`Tag renders with Medium size 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  line-height: calc(32px - 2px * 2);
-  border-style: solid;
-  border-width: 1px;
-  background-color: transparent;
-  color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
-}
-
-.emotion-0:hover:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-0:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-0:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-<span
-    class="emotion-0"
-  />
-</DocumentFragment>
-`;
-
-exports[`Tag renders with Small size 1`] = `
+exports[`Flag renders a flag with the default stylePreset 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -405,7 +171,7 @@ exports[`Tag renders with Small size 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag renders with default styles 1`] = `
+exports[`Flag renders in disabled state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -424,9 +190,169 @@ exports[`Tag renders with default styles 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
+  min-height: 24px;
+  padding: 4px 8px;
+  line-height: calc(24px - 2px * 2);
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+<span
+    class="emotion-0"
+    disabled=""
+  />
+</DocumentFragment>
+`;
+
+exports[`Flag renders with Large size 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 40px;
   padding: 8px 12px;
-  line-height: calc(32px - 2px * 2);
+  line-height: calc(40px - 2px * 2);
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+<span
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Flag renders with Small size 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 24px;
+  padding: 4px 8px;
+  line-height: calc(24px - 2px * 2);
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-0:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-0:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-0:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+<span
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Flag renders with default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 24px;
+  padding: 4px 8px;
+  line-height: calc(24px - 2px * 2);
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
