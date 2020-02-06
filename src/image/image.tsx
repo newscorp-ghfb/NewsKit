@@ -1,11 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react';
 import {styled, getColorFromTheme} from '../utils/style';
 import {Placeholder} from '../icons';
-import {Theme} from '../themes';
-import {
-  getStylePresetFromTheme,
-  GetStylePresetFromThemeOptions,
-} from '../utils/style-preset';
+import {getStylePresetFromTheme} from '../utils/style-preset';
 
 export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   aspectHeight: number | string;
@@ -21,23 +17,6 @@ interface ImageContainerProps extends React.HtmlHTMLAttributes<HTMLElement> {
   $stylePreset?: string;
 }
 
-interface IconContainerProps extends React.HtmlHTMLAttributes<HTMLElement> {
-  $stylePreset?: string;
-}
-
-const renderStyles = (
-  theme: Theme,
-  $stylePreset: string | undefined,
-  options: GetStylePresetFromThemeOptions,
-) =>
-  getStylePresetFromTheme(
-    $stylePreset || 'maskPointed010',
-    'stylePreset' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
-    options,
-  )({
-    theme,
-  });
-
 const ImageContainer = styled.div<ImageContainerProps>`
   position: relative;
   width: 100%;
@@ -47,10 +26,12 @@ const ImageContainer = styled.div<ImageContainerProps>`
       ? `calc(100% * (${props.aspectHeight}/${props.aspectWidth}))`
       : 0};
 
-  ${({$stylePreset, theme}) =>
-    renderStyles(theme, $stylePreset, {
-      borderRadiusSize: 'sizing060',
-    })}
+  ${({$stylePreset, theme, isLoading}) =>
+    getStylePresetFromTheme(
+      $stylePreset || 'maskPointed010',
+      'stylePreset' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+      {borderRadiusSize: 'sizing060', isLoading},
+    )({theme})}
 `;
 
 const imagePropsAreEqual = (prevProps: ImageProps, nextProps: ImageProps) =>
@@ -74,7 +55,7 @@ export const handleClientSideRender = (
 
 const ImageComponent = (props: ImageProps) => {
   const imageRef: React.RefObject<HTMLImageElement> = useRef(null);
-  const {hideLoadingIcon, $stylePreset: stylePreset} = props;
+  const {hideLoadingIcon} = props;
   const [isLoading, setIsLoading] = useState(true);
   const handleOnImageLoad = () => isLoading && setIsLoading(false);
 
@@ -97,7 +78,7 @@ const ImageComponent = (props: ImageProps) => {
     }
   `;
 
-  const IconContainer = styled.div<IconContainerProps>`
+  const IconContainer = styled.div`
     top: 0;
     left: 0;
     position: absolute;
@@ -116,7 +97,7 @@ const ImageComponent = (props: ImageProps) => {
 
   return (
     <ImageContainer {...props} isLoading={isLoading}>
-      <IconContainer $stylePreset={stylePreset}>
+      <IconContainer>
         <InnerIconContainer>
           <Placeholder $size="iconSize040" />
         </InnerIconContainer>
