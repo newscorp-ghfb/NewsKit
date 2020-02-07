@@ -3,7 +3,6 @@ import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
-
 import {Flag, FlagSize} from 'newskit';
 
 export default Layout;
@@ -12,11 +11,11 @@ export default Layout;
 
 ## Overview
 
-The tag element is used within the [tag list](/components/tag-list) as a way of classifying content, typically using keywords. They are added to a web page or other content to help users search for and find related content quickly and easily.
+The flag element is used as a way of showing the status of the content.
 
 ### Usage
 
-A tag is used in a [tag list](/components/tag-list) and displayed anywhere that a quick link to related content could be beneficial to a user e.g. article pages or search.
+A flag is used to show that a stream is live, a content has been created or updated.
 
 ### Theming
 
@@ -34,13 +33,17 @@ The default tag component uses the following style tokens, which can be overridd
 | tagDisabledBorder | disabled      | <TextBoxSwatch themeColor="disabled"/>     |
 | tagDisabledText   | inkNonEssential          | <TextBoxSwatch themeColor="inkNonEssential" dark/>    |
 
+### Theming
+
+The default flag component uses the following style tokens, which can be overridden:
+
 ## Props
 
 Flags have a number of props to facilitate a variety of uses:
 
 <LegacyBlock $marginTop="sizing040">
   <Prop name="children" type="string" required>
-    The content of the tag is passed as the child of the component.
+    The content of the flag is passed as the child of the component.
   </Prop>
   <Prop name="disabled" type="boolean" default={false}>
     If true, the Flag will render in a disabled state, appearing greyed out.
@@ -49,8 +52,7 @@ Flags have a number of props to facilitate a variety of uses:
     Optional size of the Flag.
   </Prop>
   <Prop name="$stylePreset" type="string" default="interactive070">
-    If provided, this overrides the style preset applied to the tag.
-
+    If provided, this overrides the style preset applied to the flag.
   </Prop>
 </LegacyBlock>
 
@@ -58,7 +60,7 @@ Flags have a number of props to facilitate a variety of uses:
 
 <Playground
   componentName="Flag"
-  newskitPath="/tag"
+  newskitPath="/flag"
   component={Flag}
   knobs={[
     {
@@ -79,6 +81,7 @@ Flags have a number of props to facilitate a variety of uses:
         {
           label: 'Small',
           value: FlagSize.Small,
+          isDefault: true
         },
         {
           label: 'Large',
@@ -91,9 +94,13 @@ Flags have a number of props to facilitate a variety of uses:
       propName: '$stylePreset',
       options: [
         {
-          label: 'interactive070',
-          value: 'interactive070',
+          label: 'interactive080',
+          value: 'interactive080',
           isDefault: true
+        },
+        {
+          label: 'interactive080Inverse',
+          value: 'interactive080Inverse',
         },
         {
           label: 'interactive010',
@@ -126,7 +133,6 @@ Flags have a number of props to facilitate a variety of uses:
 
 Flags are designed to be compact and discreet as they are intended to supplement the primary content.
 
-Flags should have as few words as possible and always have a direct relationship to the content they represent.
 
 ### Accessibility
 
@@ -141,10 +147,3 @@ Hover states should have clear contrast change or should include a non colour de
 
 Flagging generates hub pages which act as valuable catch-all pages, these rank well in search, are automatically updated and generate more backlinks.
 
-#### Navigation
-
-Good for site navigation (for crawlers and users), particularly helpful where site structure is poor (The Times)
-
-#### Descriptive
-
-Flagging helps tell Google what the page content is about, this then enables Google to better surface those pages in search

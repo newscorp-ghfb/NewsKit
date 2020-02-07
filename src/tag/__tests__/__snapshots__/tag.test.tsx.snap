@@ -2,7 +2,40 @@
 
 exports[`Tag href renders as an anchor 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -47,16 +80,59 @@ exports[`Tag href renders as an anchor 1`] = `
   color: #9c9c9c;
 }
 
-<a
-    class="emotion-0"
-    href="#"
-  />
+<div
+    class="emotion-2"
+    wrap="nowrap"
+  >
+    <div
+      class="emotion-1"
+      wrap="nowrap"
+    >
+      <a
+        class="emotion-0"
+        href="#"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Tag href renders in disable state with an anchor 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -84,17 +160,60 @@ exports[`Tag href renders in disable state with an anchor 1`] = `
   border-radius: 0;
 }
 
-<span
-    class="emotion-0"
-    disabled=""
-    href="#"
-  />
+<div
+    class="emotion-2"
+    wrap="nowrap"
+  >
+    <div
+      class="emotion-1"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-0"
+        disabled=""
+        href="#"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Tag renders a tag with a custom stylePreset 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -150,15 +269,58 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   color: #9c9c9c;
 }
 
-<span
-    class="emotion-0"
-  />
+<div
+    class="emotion-2"
+    wrap="nowrap"
+  >
+    <div
+      class="emotion-1"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-0"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Tag renders a tag with the default stylePreset 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -203,15 +365,58 @@ exports[`Tag renders a tag with the default stylePreset 1`] = `
   color: #9c9c9c;
 }
 
-<span
-    class="emotion-0"
-  />
+<div
+    class="emotion-2"
+    wrap="nowrap"
+  >
+    <div
+      class="emotion-1"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-0"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Tag renders in disabled state 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -239,16 +444,59 @@ exports[`Tag renders in disabled state 1`] = `
   border-radius: 0;
 }
 
-<span
-    class="emotion-0"
-    disabled=""
-  />
+<div
+    class="emotion-2"
+    wrap="nowrap"
+  >
+    <div
+      class="emotion-1"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-0"
+        disabled=""
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Tag renders with Large size 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -293,15 +541,58 @@ exports[`Tag renders with Large size 1`] = `
   color: #9c9c9c;
 }
 
-<span
-    class="emotion-0"
-  />
+<div
+    class="emotion-2"
+    wrap="nowrap"
+  >
+    <div
+      class="emotion-1"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-0"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Tag renders with Medium size 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -346,15 +637,58 @@ exports[`Tag renders with Medium size 1`] = `
   color: #9c9c9c;
 }
 
-<span
-    class="emotion-0"
-  />
+<div
+    class="emotion-2"
+    wrap="nowrap"
+  >
+    <div
+      class="emotion-1"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-0"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Tag renders with Small size 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -399,15 +733,58 @@ exports[`Tag renders with Small size 1`] = `
   color: #9c9c9c;
 }
 
-<span
-    class="emotion-0"
-  />
+<div
+    class="emotion-2"
+    wrap="nowrap"
+  >
+    <div
+      class="emotion-1"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-0"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Tag renders with default styles 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -452,8 +829,18 @@ exports[`Tag renders with default styles 1`] = `
   color: #9c9c9c;
 }
 
-<span
-    class="emotion-0"
-  />
+<div
+    class="emotion-2"
+    wrap="nowrap"
+  >
+    <div
+      class="emotion-1"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-0"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;

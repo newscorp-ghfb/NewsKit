@@ -2,7 +2,7 @@
 
 exports[`TagList renders as a span with custom margins 1`] = `
 <DocumentFragment>
-  .emotion-6 {
+  .emotion-12 {
   margin: 0;
   padding: 0;
   display: -webkit-inline-box;
@@ -19,6 +19,39 @@ exports[`TagList renders as a span with custom margins 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
 }
 
 .emotion-0 {
@@ -66,7 +99,7 @@ exports[`TagList renders as a span with custom margins 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-1 {
+.emotion-3 {
   box-sizing: border-box;
   display: inline-block;
   list-style-type: none;
@@ -74,39 +107,69 @@ exports[`TagList renders as a span with custom margins 1`] = `
   margin-bottom: 4px;
 }
 
-.emotion-1:last-child {
+.emotion-3:last-child {
   margin-right: 0;
 }
 
 <ul
-    class="emotion-6"
+    class="emotion-12"
   >
     <li
-      class="emotion-1"
+      class="emotion-3"
     >
-      <span
-        class="emotion-0"
+      <div
+        class="emotion-2"
+        wrap="nowrap"
       >
-        first label
-      </span>
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <span
+            class="emotion-0"
+          >
+            first label
+          </span>
+        </div>
+      </div>
     </li>
     <li
-      class="emotion-1"
+      class="emotion-3"
     >
-      <span
-        class="emotion-0"
+      <div
+        class="emotion-2"
+        wrap="nowrap"
       >
-        second label
-      </span>
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <span
+            class="emotion-0"
+          >
+            second label
+          </span>
+        </div>
+      </div>
     </li>
     <li
-      class="emotion-1"
+      class="emotion-3"
     >
-      <span
-        class="emotion-0"
+      <div
+        class="emotion-2"
+        wrap="nowrap"
       >
-        third label
-      </span>
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <span
+            class="emotion-0"
+          >
+            third label
+          </span>
+        </div>
+      </div>
     </li>
   </ul>
 </DocumentFragment>
@@ -114,7 +177,7 @@ exports[`TagList renders as a span with custom margins 1`] = `
 
 exports[`TagList renders as a span with custom size 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-3 {
   box-sizing: border-box;
   display: inline-block;
   list-style-type: none;
@@ -122,11 +185,44 @@ exports[`TagList renders as a span with custom size 1`] = `
   margin-bottom: 4px;
 }
 
-.emotion-1:last-child {
+.emotion-3:last-child {
   margin-right: 0;
 }
 
-.emotion-6 {
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: -webkit-inline-box;
@@ -191,34 +287,64 @@ exports[`TagList renders as a span with custom size 1`] = `
 }
 
 <ul
-    class="emotion-6"
+    class="emotion-12"
   >
     <li
-      class="emotion-1"
+      class="emotion-3"
     >
-      <span
-        class="emotion-0"
+      <div
+        class="emotion-2"
+        wrap="nowrap"
       >
-        first label
-      </span>
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <span
+            class="emotion-0"
+          >
+            first label
+          </span>
+        </div>
+      </div>
     </li>
     <li
-      class="emotion-1"
+      class="emotion-3"
     >
-      <span
-        class="emotion-0"
+      <div
+        class="emotion-2"
+        wrap="nowrap"
       >
-        second label
-      </span>
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <span
+            class="emotion-0"
+          >
+            second label
+          </span>
+        </div>
+      </div>
     </li>
     <li
-      class="emotion-1"
+      class="emotion-3"
     >
-      <span
-        class="emotion-0"
+      <div
+        class="emotion-2"
+        wrap="nowrap"
       >
-        third label
-      </span>
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <span
+            class="emotion-0"
+          >
+            third label
+          </span>
+        </div>
+      </div>
     </li>
   </ul>
 </DocumentFragment>
@@ -226,7 +352,7 @@ exports[`TagList renders as a span with custom size 1`] = `
 
 exports[`TagList renders as a span with defaults 1`] = `
 <DocumentFragment>
-  .emotion-6 {
+  .emotion-12 {
   margin: 0;
   padding: 0;
   display: -webkit-inline-box;
@@ -245,7 +371,7 @@ exports[`TagList renders as a span with defaults 1`] = `
   justify-content: center;
 }
 
-.emotion-1 {
+.emotion-3 {
   box-sizing: border-box;
   display: inline-block;
   list-style-type: none;
@@ -253,8 +379,41 @@ exports[`TagList renders as a span with defaults 1`] = `
   margin-bottom: 4px;
 }
 
-.emotion-1:last-child {
+.emotion-3:last-child {
   margin-right: 0;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
 }
 
 .emotion-0 {
@@ -303,34 +462,64 @@ exports[`TagList renders as a span with defaults 1`] = `
 }
 
 <ul
-    class="emotion-6"
+    class="emotion-12"
   >
     <li
-      class="emotion-1"
+      class="emotion-3"
     >
-      <span
-        class="emotion-0"
+      <div
+        class="emotion-2"
+        wrap="nowrap"
       >
-        first label
-      </span>
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <span
+            class="emotion-0"
+          >
+            first label
+          </span>
+        </div>
+      </div>
     </li>
     <li
-      class="emotion-1"
+      class="emotion-3"
     >
-      <span
-        class="emotion-0"
+      <div
+        class="emotion-2"
+        wrap="nowrap"
       >
-        second label
-      </span>
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <span
+            class="emotion-0"
+          >
+            second label
+          </span>
+        </div>
+      </div>
     </li>
     <li
-      class="emotion-1"
+      class="emotion-3"
     >
-      <span
-        class="emotion-0"
+      <div
+        class="emotion-2"
+        wrap="nowrap"
       >
-        third label
-      </span>
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <span
+            class="emotion-0"
+          >
+            third label
+          </span>
+        </div>
+      </div>
     </li>
   </ul>
 </DocumentFragment>
@@ -338,7 +527,7 @@ exports[`TagList renders as a span with defaults 1`] = `
 
 exports[`TagList renders as an anchor with custom margins 1`] = `
 <DocumentFragment>
-  .emotion-6 {
+  .emotion-12 {
   margin: 0;
   padding: 0;
   display: -webkit-inline-box;
@@ -355,6 +544,39 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
 }
 
 .emotion-0 {
@@ -402,7 +624,7 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-1 {
+.emotion-3 {
   box-sizing: border-box;
   display: inline-block;
   list-style-type: none;
@@ -410,42 +632,72 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
   margin-bottom: 4px;
 }
 
-.emotion-1:last-child {
+.emotion-3:last-child {
   margin-right: 0;
 }
 
 <ul
-    class="emotion-6"
+    class="emotion-12"
   >
     <li
-      class="emotion-1"
+      class="emotion-3"
     >
-      <a
-        class="emotion-0"
-        href="www.url1.com"
+      <div
+        class="emotion-2"
+        wrap="nowrap"
       >
-        first label
-      </a>
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <a
+            class="emotion-0"
+            href="www.url1.com"
+          >
+            first label
+          </a>
+        </div>
+      </div>
     </li>
     <li
-      class="emotion-1"
+      class="emotion-3"
     >
-      <a
-        class="emotion-0"
-        href="www.url2.com"
+      <div
+        class="emotion-2"
+        wrap="nowrap"
       >
-        second label
-      </a>
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <a
+            class="emotion-0"
+            href="www.url2.com"
+          >
+            second label
+          </a>
+        </div>
+      </div>
     </li>
     <li
-      class="emotion-1"
+      class="emotion-3"
     >
-      <a
-        class="emotion-0"
-        href="www.url3.com"
+      <div
+        class="emotion-2"
+        wrap="nowrap"
       >
-        third label
-      </a>
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <a
+            class="emotion-0"
+            href="www.url3.com"
+          >
+            third label
+          </a>
+        </div>
+      </div>
     </li>
   </ul>
 </DocumentFragment>
@@ -453,7 +705,7 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
 
 exports[`TagList renders as an anchor with custom size 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-3 {
   box-sizing: border-box;
   display: inline-block;
   list-style-type: none;
@@ -461,11 +713,44 @@ exports[`TagList renders as an anchor with custom size 1`] = `
   margin-bottom: 4px;
 }
 
-.emotion-1:last-child {
+.emotion-3:last-child {
   margin-right: 0;
 }
 
-.emotion-6 {
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: -webkit-inline-box;
@@ -530,37 +815,67 @@ exports[`TagList renders as an anchor with custom size 1`] = `
 }
 
 <ul
-    class="emotion-6"
+    class="emotion-12"
   >
     <li
-      class="emotion-1"
+      class="emotion-3"
     >
-      <a
-        class="emotion-0"
-        href="www.url1.com"
+      <div
+        class="emotion-2"
+        wrap="nowrap"
       >
-        first label
-      </a>
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <a
+            class="emotion-0"
+            href="www.url1.com"
+          >
+            first label
+          </a>
+        </div>
+      </div>
     </li>
     <li
-      class="emotion-1"
+      class="emotion-3"
     >
-      <a
-        class="emotion-0"
-        href="www.url2.com"
+      <div
+        class="emotion-2"
+        wrap="nowrap"
       >
-        second label
-      </a>
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <a
+            class="emotion-0"
+            href="www.url2.com"
+          >
+            second label
+          </a>
+        </div>
+      </div>
     </li>
     <li
-      class="emotion-1"
+      class="emotion-3"
     >
-      <a
-        class="emotion-0"
-        href="www.url3.com"
+      <div
+        class="emotion-2"
+        wrap="nowrap"
       >
-        third label
-      </a>
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <a
+            class="emotion-0"
+            href="www.url3.com"
+          >
+            third label
+          </a>
+        </div>
+      </div>
     </li>
   </ul>
 </DocumentFragment>
@@ -568,7 +883,7 @@ exports[`TagList renders as an anchor with custom size 1`] = `
 
 exports[`TagList renders as an anchor with defaults 1`] = `
 <DocumentFragment>
-  .emotion-6 {
+  .emotion-12 {
   margin: 0;
   padding: 0;
   display: -webkit-inline-box;
@@ -587,7 +902,7 @@ exports[`TagList renders as an anchor with defaults 1`] = `
   justify-content: center;
 }
 
-.emotion-1 {
+.emotion-3 {
   box-sizing: border-box;
   display: inline-block;
   list-style-type: none;
@@ -595,8 +910,41 @@ exports[`TagList renders as an anchor with defaults 1`] = `
   margin-bottom: 4px;
 }
 
-.emotion-1:last-child {
+.emotion-3:last-child {
   margin-right: 0;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
 }
 
 .emotion-0 {
@@ -645,37 +993,67 @@ exports[`TagList renders as an anchor with defaults 1`] = `
 }
 
 <ul
-    class="emotion-6"
+    class="emotion-12"
   >
     <li
-      class="emotion-1"
+      class="emotion-3"
     >
-      <a
-        class="emotion-0"
-        href="www.url1.com"
+      <div
+        class="emotion-2"
+        wrap="nowrap"
       >
-        first label
-      </a>
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <a
+            class="emotion-0"
+            href="www.url1.com"
+          >
+            first label
+          </a>
+        </div>
+      </div>
     </li>
     <li
-      class="emotion-1"
+      class="emotion-3"
     >
-      <a
-        class="emotion-0"
-        href="www.url2.com"
+      <div
+        class="emotion-2"
+        wrap="nowrap"
       >
-        second label
-      </a>
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <a
+            class="emotion-0"
+            href="www.url2.com"
+          >
+            second label
+          </a>
+        </div>
+      </div>
     </li>
     <li
-      class="emotion-1"
+      class="emotion-3"
     >
-      <a
-        class="emotion-0"
-        href="www.url3.com"
+      <div
+        class="emotion-2"
+        wrap="nowrap"
       >
-        third label
-      </a>
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <a
+            class="emotion-0"
+            href="www.url3.com"
+          >
+            third label
+          </a>
+        </div>
+      </div>
     </li>
   </ul>
 </DocumentFragment>

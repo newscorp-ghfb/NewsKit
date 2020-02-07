@@ -1,6 +1,7 @@
 import React from 'react';
 import {styled, getTypePresetFromTheme} from '../utils/style';
 import {BaseFlagProps} from './types';
+import {Stack} from '../stack';
 
 const StyledBaseFlag = styled.span<BaseFlagProps>`
   box-sizing: border-box;
@@ -16,5 +17,14 @@ const StyledBaseFlag = styled.span<BaseFlagProps>`
 
 export const BaseFlag: React.FC<BaseFlagProps> = props => {
   const {children} = props;
-  return <StyledBaseFlag {...props}>{children}</StyledBaseFlag>;
+  return (
+    <Stack
+      flow="horizontal-top"
+      stackDistribution="flex-start"
+      space="sizing010"
+      wrap="nowrap"
+    >
+      <StyledBaseFlag {...props}>{children}</StyledBaseFlag>
+    </Stack>
+  );
 };
