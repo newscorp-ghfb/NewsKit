@@ -107,6 +107,7 @@ export const StyledMasterContainer = styled.div<StackProps>`
 `;
 
 export const StyledChildContainer = styled.div<ChildProps>`
+  display: inline-flex;
   ${({flow, space, theme: {sizing}}) => {
     const value = sizing[space];
     const size = parseInt(value, 10) !== 0 ? `calc(${value}/2)` : 0;

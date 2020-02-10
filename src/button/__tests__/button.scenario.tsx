@@ -3,11 +3,12 @@ import * as React from 'react';
 import {Button} from '..';
 import {styled} from '../../utils/style';
 import {ButtonSize} from '../types';
-import {Pause, Email} from '../../icons';
-import {Stack} from '../../stack';
+import {Pause, Email, CopyLink} from '../../icons';
+import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
 import {newskitLightTheme} from '../../themes';
+import {IconSizeKeys} from '../../themes/newskit-light/spacing';
 
 export const name = 'button';
 
@@ -76,7 +77,10 @@ export const component = () => (
 
         return (
           <Cell xs={12} sm={3}>
-            <Stack>
+            <Stack
+              space="sizing020"
+              stackDistribution={StackDistribution.SpaceEvenly}
+            >
               <h3>{style}</h3>
               <Block theme={newskitLightTheme} data-state="Default">
                 <Button $stylePreset={stylePreset}>Button</Button>
@@ -109,6 +113,31 @@ export const component = () => (
       </Stack>
     </Container>
 
+    <h2>Icon with text</h2>
+    <Container>
+      {[Pause, Email, CopyLink].map(IconType => (
+        <Stack flow="horizontal-center" space="sizing060">
+          {[
+            {buttonSize: ButtonSize.Small, iconSize: 'iconSize010'},
+            {buttonSize: ButtonSize.Medium, iconSize: 'iconSize020'},
+            {buttonSize: ButtonSize.Large, iconSize: 'iconSize020'},
+          ].map(button => (
+            <Button
+              $size={button.buttonSize}
+              icon={() => (
+                <IconType
+                  $size={button.iconSize as IconSizeKeys}
+                  $color="buttonFill"
+                />
+              )}
+            >
+              Button
+            </Button>
+          ))}
+        </Stack>
+      ))}
+    </Container>
+
     <h2>States</h2>
     <Grid>
       <Cell xsHidden sm={3}>
@@ -124,7 +153,10 @@ export const component = () => (
 
         return (
           <Cell xs={12} sm={3}>
-            <Stack>
+            <Stack
+              space="sizing020"
+              stackDistribution={StackDistribution.SpaceEvenly}
+            >
               <h3>{style}</h3>
               <Block theme={newskitLightTheme} data-state="Default">
                 <Button icon={PauseIcon} $stylePreset={stylePreset} />

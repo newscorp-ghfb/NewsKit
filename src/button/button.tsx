@@ -8,8 +8,13 @@ import {
 import {ButtonProps, ButtonSize} from './types';
 import {getStylePresetFromTheme} from '../utils/style-preset';
 import {SizingKeys, TypePresetKeys, Theme} from '../themes';
+import {PaddingPresetKeys} from '../themes/mappers/spacing';
+import {Stack} from '../stack/stack';
+import {Flow, StackDistribution} from '../stack/types';
+import {IconComponent} from '../icons';
 
 const buttonStylePresetDefault = 'interactive010';
+const spacing: SizingKeys = 'sizing020';
 
 const getButtonStylePreset = (
   props: ButtonProps & {theme: Theme},
@@ -27,33 +32,37 @@ const getButtonStylePreset = (
 const buttonSizeStyleTokens: Record<
   ButtonSize,
   {
-    height: SizingKeys;
-    width: SizingKeys;
+    minHeight: PaddingPresetKeys;
+    wrapperSize: SizingKeys;
     borderRadiusSize: SizingKeys;
     typePreset: TypePresetKeys;
+    paddingX: SizingKeys;
     paddingY: SizingKeys;
   }
 > = {
   [ButtonSize.Large]: {
-    height: 'sizing080',
-    width: 'sizing080',
+    minHeight: 'spaceInset040',
+    wrapperSize: 'sizing050',
     borderRadiusSize: 'sizing080',
     typePreset: 'button030',
+    paddingX: 'sizing040',
     paddingY: 'sizing050',
   },
   [ButtonSize.Medium]: {
-    height: 'sizing070',
-    width: 'sizing070',
+    minHeight: 'spaceInset030',
+    wrapperSize: 'sizing050',
     borderRadiusSize: 'sizing070',
     typePreset: 'button020',
+    paddingX: 'sizing030',
     paddingY: 'sizing040',
   },
   [ButtonSize.Small]: {
-    height: 'sizing060',
-    width: 'sizing060',
+    minHeight: 'spaceInset020',
+    wrapperSize: 'sizing040',
     borderRadiusSize: 'sizing060',
     typePreset: 'button010',
-    paddingY: 'sizing020',
+    paddingX: 'sizing020',
+    paddingY: 'sizing030',
   },
 };
 
@@ -72,34 +81,26 @@ const ButtonElement = styled.button<ButtonProps>`
 
   ${({$size = ButtonSize.Small, icon, theme, $stylePreset}) => {
     const {
-      height,
-      width,
+      minHeight,
       borderRadiusSize,
       typePreset,
+      paddingX,
       paddingY,
     } = buttonSizeStyleTokens[$size];
 
     const commonStyles = css`
-      ${getButtonStylePreset({$stylePreset, theme}, {borderRadiusSize})}
-      height: ${theme.sizing[height]};
-      ${icon && `width: ${theme.sizing[width]};`}
+      ${getButtonStylePreset(
+        {$stylePreset, theme},
+        {borderRadiusSize, withIconColor: !!icon},
+      )}
+      min-height: ${minHeight};
       ${getTypePresetFromTheme(typePreset)({theme})}
-      padding: 0 ${theme.sizing[paddingY]};
+      padding: ${theme.sizing[paddingX]} ${theme.sizing[paddingY]};
     `;
 
     return {
       [ButtonSize.Small]: css`
-        ${commonStyles}
-        /* Extend touchpoint area */
-        margin: ${theme.sizing.sizing020} 0;
-        ::before {
-          content: '';
-          position: absolute;
-          left: 0;
-          top: -${theme.sizing.sizing020};
-          width: 100%;
-          height: ${theme.sizing.sizing080};
-        }
+        ${commonStyles} /* Extend touchpoint area */
       `,
       [ButtonSize.Medium]: commonStyles,
       [ButtonSize.Large]: commonStyles,
@@ -109,19 +110,12 @@ const ButtonElement = styled.button<ButtonProps>`
   :disabled {
     cursor: not-allowed;
   }
+`;
 
-  ${({icon, ...props}) =>
-    icon &&
-    css`
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      ${getButtonStylePreset(
-        {...props},
-        {borderRadiusSize: 'sizing120', withIconColor: true},
-      )}
-    `}
+const InnerContainer = styled.div<{icon: IconComponent}>`
+  ${({icon, theme}) => ({
+    marginTop: icon ? `-${theme.sizing[spacing]}` : 0,
+  })}
 `;
 
 export const Button: React.FC<
@@ -129,13 +123,29 @@ export const Button: React.FC<
 > = props => {
   const {children, icon: Icon, ...restOfProps} = props;
 
-  if (Icon && children) {
-    throw new Error('Button with children and Icon is not implemented');
-  }
-
   return (
     <ButtonElement type="button" {...restOfProps} icon={Icon}>
-      {(Icon && <Icon />) || children}
+      {Icon && children ? (
+        <InnerContainer icon={Icon}>
+          <Stack
+            flow={Flow.HorizontalCenter}
+            space={spacing}
+            stackDistribution={StackDistribution.Center}
+          >
+            <Icon />
+            {children}
+          </Stack>
+        </InnerContainer>
+      ) : (
+        <div>
+          <Stack
+            flow={Flow.HorizontalCenter}
+            stackDistribution={StackDistribution.Center}
+          >
+            {(Icon && <Icon />) || children}
+          </Stack>
+        </div>
+      )}
     </ButtonElement>
   );
 };
