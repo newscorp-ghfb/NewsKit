@@ -1,0 +1,713 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Circle progress indicator renders circle progress indicator with aria label 1`] = `
+<DocumentFragment>
+  .emotion-8 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  height: 24px;
+  width: 24px;
+  border-color: #f0f0f0;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+}
+
+.emotion-7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
+  animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  width: calc( 24px / 2 );
+  height: 24px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  overflow: hidden;
+  position: absolute;
+}
+
+.emotion-2 {
+  width: calc( 24px / 2 );
+  height: 24px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: left-wobble 1.4s linear infinite;
+  animation: left-wobble 1.4s linear infinite;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  height: 24px;
+  width: 24px;
+  border-color: #0A68C1;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  width: calc( 24px / 2 );
+  height: 24px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  overflow: hidden;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.emotion-5 {
+  width: calc( 24px / 2 );
+  height: 24px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: left-wobble 1.4s linear infinite;
+  animation: left-wobble 1.4s linear infinite;
+  -webkit-animation: right-wobble 1.4s linear infinite;
+  animation: right-wobble 1.4s linear infinite;
+}
+
+<div
+    aria-label="progress"
+    class="emotion-8"
+  >
+    <div
+      class="emotion-0"
+    />
+    <div
+      class="emotion-7"
+    >
+      <div
+        class="emotion-3"
+      >
+        <div
+          class="emotion-2"
+        >
+          <div
+            class="emotion-1"
+          />
+        </div>
+      </div>
+      <div
+        class="emotion-6"
+      >
+        <div
+          class="emotion-5"
+        >
+          <div
+            class="emotion-1"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Circle progress indicator renders circle progress indicator with different style 1`] = `
+<DocumentFragment>
+  .emotion-8 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+
+.emotion-7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
+  animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  width: calc( 24px / 2 );
+  height: 24px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  overflow: hidden;
+  position: absolute;
+}
+
+.emotion-2 {
+  width: calc( 24px / 2 );
+  height: 24px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: left-wobble 1.4s linear infinite;
+  animation: left-wobble 1.4s linear infinite;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  width: calc( 24px / 2 );
+  height: 24px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  overflow: hidden;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.emotion-5 {
+  width: calc( 24px / 2 );
+  height: 24px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: left-wobble 1.4s linear infinite;
+  animation: left-wobble 1.4s linear infinite;
+  -webkit-animation: right-wobble 1.4s linear infinite;
+  animation: right-wobble 1.4s linear infinite;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  height: 24px;
+  width: 24px;
+  border-color: rgba(255,255,255,0.40);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  height: 24px;
+  width: 24px;
+  border-color: #FFFFFF;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+}
+
+<div
+    aria-label="loading"
+    class="emotion-8"
+  >
+    <div
+      class="emotion-0"
+    />
+    <div
+      class="emotion-7"
+    >
+      <div
+        class="emotion-3"
+      >
+        <div
+          class="emotion-2"
+        >
+          <div
+            class="emotion-1"
+          />
+        </div>
+      </div>
+      <div
+        class="emotion-6"
+      >
+        <div
+          class="emotion-5"
+        >
+          <div
+            class="emotion-1"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Circle progress indicator renders circle progress indicator with size 1`] = `
+<DocumentFragment>
+  .emotion-7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
+  animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+.emotion-8 {
+  height: 48px;
+  width: 48px;
+  position: relative;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  height: 48px;
+  width: 48px;
+  border-color: #f0f0f0;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  width: calc( 48px / 2 );
+  height: 48px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  overflow: hidden;
+  position: absolute;
+}
+
+.emotion-2 {
+  width: calc( 48px / 2 );
+  height: 48px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: left-wobble 1.4s linear infinite;
+  animation: left-wobble 1.4s linear infinite;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  height: 48px;
+  width: 48px;
+  border-color: #0A68C1;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  width: calc( 48px / 2 );
+  height: 48px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  overflow: hidden;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.emotion-5 {
+  width: calc( 48px / 2 );
+  height: 48px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: left-wobble 1.4s linear infinite;
+  animation: left-wobble 1.4s linear infinite;
+  -webkit-animation: right-wobble 1.4s linear infinite;
+  animation: right-wobble 1.4s linear infinite;
+}
+
+<div
+    aria-label="loading"
+    class="emotion-8"
+  >
+    <div
+      class="emotion-0"
+    />
+    <div
+      class="emotion-7"
+    >
+      <div
+        class="emotion-3"
+      >
+        <div
+          class="emotion-2"
+        >
+          <div
+            class="emotion-1"
+          />
+        </div>
+      </div>
+      <div
+        class="emotion-6"
+      >
+        <div
+          class="emotion-5"
+        >
+          <div
+            class="emotion-1"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Circle progress indicator renders circle progress indicator without track 1`] = `
+<DocumentFragment>
+  .emotion-7 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+
+.emotion-6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
+  animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  width: calc( 24px / 2 );
+  height: 24px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  overflow: hidden;
+  position: absolute;
+}
+
+.emotion-1 {
+  width: calc( 24px / 2 );
+  height: 24px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: left-wobble 1.4s linear infinite;
+  animation: left-wobble 1.4s linear infinite;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  height: 24px;
+  width: 24px;
+  border-color: #0A68C1;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  width: calc( 24px / 2 );
+  height: 24px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  overflow: hidden;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.emotion-4 {
+  width: calc( 24px / 2 );
+  height: 24px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: left-wobble 1.4s linear infinite;
+  animation: left-wobble 1.4s linear infinite;
+  -webkit-animation: right-wobble 1.4s linear infinite;
+  animation: right-wobble 1.4s linear infinite;
+}
+
+<div
+    aria-label="loading"
+    class="emotion-7"
+  >
+    <div
+      class="emotion-6"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <div
+            class="emotion-0"
+          />
+        </div>
+      </div>
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-4"
+        >
+          <div
+            class="emotion-0"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Circle progress indicator renders default circle progress indicator 1`] = `
+<DocumentFragment>
+  .emotion-8 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  height: 24px;
+  width: 24px;
+  border-color: #f0f0f0;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+}
+
+.emotion-7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
+  animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  width: calc( 24px / 2 );
+  height: 24px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  overflow: hidden;
+  position: absolute;
+}
+
+.emotion-2 {
+  width: calc( 24px / 2 );
+  height: 24px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: left-wobble 1.4s linear infinite;
+  animation: left-wobble 1.4s linear infinite;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  height: 24px;
+  width: 24px;
+  border-color: #0A68C1;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  width: calc( 24px / 2 );
+  height: 24px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  overflow: hidden;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.emotion-5 {
+  width: calc( 24px / 2 );
+  height: 24px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: left-wobble 1.4s linear infinite;
+  animation: left-wobble 1.4s linear infinite;
+  -webkit-animation: right-wobble 1.4s linear infinite;
+  animation: right-wobble 1.4s linear infinite;
+}
+
+<div
+    aria-label="loading"
+    class="emotion-8"
+  >
+    <div
+      class="emotion-0"
+    />
+    <div
+      class="emotion-7"
+    >
+      <div
+        class="emotion-3"
+      >
+        <div
+          class="emotion-2"
+        >
+          <div
+            class="emotion-1"
+          />
+        </div>
+      </div>
+      <div
+        class="emotion-6"
+      >
+        <div
+          class="emotion-5"
+        >
+          <div
+            class="emotion-1"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

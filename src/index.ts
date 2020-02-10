@@ -14,6 +14,7 @@ export * from './image';
 export * from './instrumentation';
 export * from './link';
 export * from './list';
+export * from './progress-indicator';
 export * from './scroll';
 export * from './share-bar';
 export * from './slider';

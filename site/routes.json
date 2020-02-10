@@ -102,6 +102,11 @@
         "id": "/components/button"
       },
       {
+        "title": "Circular Progress Indicator",
+        "page": true,
+        "id": "/components/circular-progress-indicator"
+      },
+      {
         "title": "Consent",
         "page": true,
         "id": "/components/consent"

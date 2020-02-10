@@ -1,0 +1,124 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {Prop} from '../../components/prop';
+import {TextBoxSwatch} from '../../components/theming-values/colors';
+import {LegacyBlock} from '../../components/legacy-block';
+
+import {CircularProgressIndicator} from 'newskit';
+
+export default Layout;
+
+# Circular progress indicator
+
+## Overview
+
+Circular progress indicators show the progression of a system operation such as downloading, uploading, processing, etc. in a visual way.
+
+## Behaviour
+
+Circular progress indicators display progress by animating the indicator along the length of the track. The circular indicator fill the circular track with colour, as it moves from 0 to 360 degrees over a quicker duration and repeats the animation until the action has been completed.
+
+## Usage
+
+Circular progress indicators display progress by animating an indicator along an invisible circular track in a clockwise direction. They can be applied to buttons, inputs or other elements.
+
+Don't show more than one circular progress indicator as the user is likely to become overwhelmed! If more than one piece of content is processing, stick to a large for the whole screen and consider skeleton loading or linear progress indicators.
+
+### Theming
+
+## Props
+
+<LegacyBlock marginTop="sizing040">
+  <Prop name="$size" type="IconSizeKeys" default="iconSize020">
+    Set the size of the progress indicator.
+  </Prop>
+  <Prop name="hideTrack" type="boolean" default={false}>
+    If true the progress indicator's track is not displayed.
+  </Prop>
+    <Prop name="ariaLabel" type="string" default="loading">
+    Used to describe the type of progress for accessibility purposes, e.g. loading.
+  </Prop>
+  <Prop name="$trackStylePreset" type="string" default='circleLoaderTrack010'> 
+     Set the style preset of the circular track.
+  </Prop>
+  <Prop name="$indicatorStylePreset" type="string" default='circleLoaderIndicator010'>
+     Set the style preset of the circular indicator.
+  </Prop>
+</LegacyBlock>
+
+## Playground
+
+<Playground
+  componentName="CircularProgressIndicator"
+  newskitPath="/circular-progress-indicator"
+  component={CircularProgressIndicator}
+  knobs={[
+    {
+      name: 'Size',
+      propName: '$size',
+      options: [
+        {
+          label: 'iconSize010',
+          value: 'iconSize010',
+        },
+        {
+          label: 'iconSize020',
+          value: 'iconSize020',
+          isDefault: true,
+        },
+        {
+          label: 'iconSize030',
+          value: 'iconSize030',
+        },
+        {
+          label: 'iconSize040',
+          value: 'iconSize040',
+        },
+        {
+          label: 'iconSize050',
+          value: 'iconSize050',
+        },
+      ],
+    },
+    {
+      name: 'Hide Track',
+      propName: 'hideTrack',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'trackStylePreset',
+      propName: '$trackStylePreset',
+      options: [
+        {
+          label: 'circleLoaderTrack010',
+          value: 'circleLoaderTrack010',
+          isDefault: true,
+        },
+        {
+          label: 'circleLoaderTrack010Inverse',
+          value: 'circleLoaderTrack010Inverse',
+        },
+      ],
+    },
+    {
+      name: 'indicatorStylePreset',
+      propName: '$indicatorStylePreset',
+      options: [
+        {
+          label: 'circleLoaderIndicator010',
+          value: 'circleLoaderIndicator010',
+          isDefault: true,
+        },
+        {
+          label: 'circleLoaderIndicator010Inverse',
+          value: 'circleLoaderIndicator010Inverse',
+        },
+      ],
+    },
+  ]}
+/>
+
+### Accessibility
+
+When applying a progress indicator then the aria-busy state should be applied so that users know content is being updated.

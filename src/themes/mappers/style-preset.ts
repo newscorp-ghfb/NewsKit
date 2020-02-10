@@ -12,6 +12,7 @@ import {BorderPrimitives} from '../newskit-light/borders';
 import {ColorPrimitives} from '../newskit-light/colors';
 import {BorderRadiusShape, BorderRadius} from '../newskit-light/border-radius';
 import {Sizing} from '../newskit-light/spacing';
+import {Overlay} from '../newskit-light/overlay';
 
 export interface StylePresetStyles {
   boxShadow?: BoxShadowProperty; // shadow
@@ -47,11 +48,13 @@ interface CreateStylePreset {
   colorPrimitives: ColorPrimitives;
   borderPrimitives: BorderPrimitives;
   borderRadiusPrimitives: BorderRadius;
+  overlayPrimitives: Overlay;
 }
 export const createStylePresets = ({
   colorPrimitives,
   borderPrimitives,
   borderRadiusPrimitives,
+  overlayPrimitives,
 }: CreateStylePreset) => ({
   interactive010: {
     base: {
@@ -195,6 +198,38 @@ export const createStylePresets = ({
     disabled: {
       backgroundColor: colorPrimitives.disabled,
       color: colorPrimitives.inkNonEssential,
+    },
+  } as StylePresetStates,
+  circleLoaderIndicator010: {
+    base: {
+      borderColor: colorPrimitives.brand010,
+      borderStyle: 'solid',
+      borderWidth: borderPrimitives.borderWidth020,
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+    },
+  } as StylePresetStates,
+  circleLoaderTrack010: {
+    base: {
+      borderColor: colorPrimitives.neutral020,
+      borderStyle: 'solid',
+      borderWidth: borderPrimitives.borderWidth020,
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+    },
+  } as StylePresetStates,
+  circleLoaderIndicator010Inverse: {
+    base: {
+      borderColor: colorPrimitives.white,
+      borderStyle: 'solid',
+      borderWidth: borderPrimitives.borderWidth020,
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+    },
+  } as StylePresetStates,
+  circleLoaderTrack010Inverse: {
+    base: {
+      borderColor: overlayPrimitives.overlayLight020,
+      borderStyle: 'solid',
+      borderWidth: borderPrimitives.borderWidth020,
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
     },
   } as StylePresetStates,
 });
