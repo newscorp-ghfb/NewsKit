@@ -18,6 +18,7 @@ const a11yComponentRules = [
   {name: 'volume-control'},
   {name: 'tag-list', a11yRule: 'color-contrast'},
   {name: 'tag', a11yRule: 'color-contrast'},
+  {name: 'flag', a11yRule: 'color-contrast'},
   {name: 'typography/heading'},
   {name: 'typography/paragraph'},
   {name: 'unordered-list'},

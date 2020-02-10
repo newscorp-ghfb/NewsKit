@@ -19,22 +19,6 @@ A flag is used to show that a stream is live, a content has been created or upda
 
 ### Theming
 
-The default tag component uses the following style tokens, which can be overridden:
-
-| Theme Token       | Color Primitive |  Color Value                                          |
-| ----------------- | --------------- | -------------------------------------------- |
-| tagFill           | interface020     | <TextBoxSwatch themeColor="interface020"/>    |
-| tagBorder         | interface030     | <TextBoxSwatch themeColor="interface030"/>    |
-| tagText           | inkSubtle          | <TextBoxSwatch themeColor="inkSubtle" dark/>    |
-| tagHoverFill      | interfaceHover  | <TextBoxSwatch themeColor="interfaceHover"/> |
-| tagHoverBorder    | interface040     | <TextBoxSwatch themeColor="interface040"/>    |
-| tagHoverText      | inkBase          | <TextBoxSwatch themeColor="inkBase" dark/>    |
-| tagDisabledFill   | disabled      | <TextBoxSwatch themeColor="disabled"/>     |
-| tagDisabledBorder | disabled      | <TextBoxSwatch themeColor="disabled"/>     |
-| tagDisabledText   | inkNonEssential          | <TextBoxSwatch themeColor="inkNonEssential" dark/>    |
-
-### Theming
-
 The default flag component uses the following style tokens, which can be overridden:
 
 ## Props
@@ -44,9 +28,6 @@ Flags have a number of props to facilitate a variety of uses:
 <LegacyBlock $marginTop="sizing040">
   <Prop name="children" type="string" required>
     The content of the flag is passed as the child of the component.
-  </Prop>
-  <Prop name="disabled" type="boolean" default={false}>
-    If true, the Flag will render in a disabled state, appearing greyed out.
   </Prop>
   <Prop name="$size" type="FlagSize" enum={FlagSize} default="Medium">
     Optional size of the Flag.
@@ -69,12 +50,6 @@ Flags have a number of props to facilitate a variety of uses:
       value: 'Flag Content',
     },
     {
-      name: 'Disabled',
-      propName: 'disabled',
-      type: 'boolean',
-      value: false,
-    },
-    {
       name: 'Flag Size',
       propName: '$size',
       options: [
@@ -94,17 +69,9 @@ Flags have a number of props to facilitate a variety of uses:
       propName: '$stylePreset',
       options: [
         {
-          label: 'interactive080',
-          value: 'interactive080',
-          isDefault: true
-        },
-        {
-          label: 'interactive080Inverse',
-          value: 'interactive080Inverse',
-        },
-        {
           label: 'interactive010',
           value: 'interactive010',
+          isDefault: true
         },
         {
           label: 'interactive010Inverse',
@@ -140,10 +107,4 @@ Flags are designed to be compact and discreet as they are intended to supplement
 
 Text and background colours must have a 3:1 minimum contrast ratio.
 Hover states should have clear contrast change or should include a non colour designator.
-
-### SEO
-
-#### Ranking
-
-Flagging generates hub pages which act as valuable catch-all pages, these rank well in search, are automatically updated and generate more backlinks.
 

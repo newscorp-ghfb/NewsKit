@@ -40,8 +40,9 @@ const StyledFlag = styled(BaseFlag)<FlagProps>`
 
   ${({$size: sizeProp, ...props}) => {
     const size = sizeProp || FlagSize.Small;
-    return getStylePresetFromTheme('interactive080', '$stylePreset' as any, {
+    return getStylePresetFromTheme('interactive010', '$stylePreset' as any, {
       borderRadiusSize: flagBorderRadiusToken[size],
+      omitStates: ['hover', 'active', 'focus', 'disabled'],
     })(props);
   }}
 `;
