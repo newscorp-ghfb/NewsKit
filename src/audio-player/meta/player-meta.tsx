@@ -2,7 +2,7 @@ import React from 'react';
 import {Stack, Flow, StackDistribution} from '../../stack';
 import {Image, ImageShape} from '../../image';
 import {
-  LiveTag,
+  LiveFlag,
   ProgrammeTime,
   ProgrammeTitle,
   ProgrammeDescription,
@@ -40,7 +40,7 @@ export const PlayerMeta: React.FC<PlayerMetaProps> = React.memo(
         stackDistribution={StackDistribution.Center}
       >
         <div>
-          {live && <LiveTag>Live</LiveTag>}
+          {live && <LiveFlag>Live</LiveFlag>}
           {time && <ProgrammeTime>{time}</ProgrammeTime>}
         </div>
         {title && <ProgrammeTitle>{title}</ProgrammeTitle>}

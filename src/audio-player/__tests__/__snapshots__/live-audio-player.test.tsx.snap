@@ -5769,15 +5769,12 @@ exports[`Live AudioPlayer render live player 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  line-height: calc(32px - 2px * 2);
-  border-style: solid;
-  border-width: 1px;
-  background-color: transparent;
-  color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
+  min-height: 24px;
+  padding: 4px 8px;
+  line-height: calc(24px - 2px * 2);
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 100vw;
   width: 48px;
   height: 24px;
   padding: 0;
@@ -5790,21 +5787,9 @@ exports[`Live AudioPlayer render live player 1`] = `
   margin-right: 16px;
 }
 
-.emotion-6:hover:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-7:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-7:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
+.emotion-7 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .emotion-10 {

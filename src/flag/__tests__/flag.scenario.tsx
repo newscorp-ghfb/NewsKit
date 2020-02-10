@@ -11,10 +11,8 @@ const Block = styled.div`
 
 export const component = () => (
   <React.Fragment>
-    <StorybookHeading>Enabled Flag</StorybookHeading>
-    <Flag>Enabled</Flag>
-    <StorybookHeading>Disabled Flag</StorybookHeading>
-    <Flag disabled>Disabled</Flag>
+    <StorybookHeading>Default Flag</StorybookHeading>
+    <Flag>Text goes here</Flag>
     <StorybookHeading>Flag Sizes</StorybookHeading>
     <span>
       <Flag $size={FlagSize.Small}>Small</Flag>
