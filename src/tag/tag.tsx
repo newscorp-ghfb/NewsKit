@@ -55,7 +55,7 @@ export const Tag: React.FC<TagProps> = props => {
   const {href, children, disabled} = props;
   const renderAs = href && !disabled ? 'a' : 'span';
   return (
-    <StyledTag {...as(renderAs)} {...props}>
+    <StyledTag data-testid="tag" {...as(renderAs)} {...props}>
       {children}
     </StyledTag>
   );

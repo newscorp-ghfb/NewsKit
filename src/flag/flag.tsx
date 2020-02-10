@@ -49,5 +49,9 @@ const StyledFlag = styled(BaseFlag)<FlagProps>`
 
 export const Flag: React.FC<FlagProps> = props => {
   const {children} = props;
-  return <StyledFlag {...props}>{children}</StyledFlag>;
+  return (
+    <StyledFlag data-testid="flag" {...props}>
+      {children}
+    </StyledFlag>
+  );
 };

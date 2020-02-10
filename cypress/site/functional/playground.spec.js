@@ -14,7 +14,7 @@ describe('Documentation Site - playground', () => {
     cy.get('input[name="Link"]')
       .clear()
       .type('https://test.co.uk');
-    cy.get(`${playgroundElement} > a`)
+    cy.get(`${playgroundElement} [data-testid="tag"]`)
       .contains('Chelsea')
       .should('have.attr', 'href', 'https://test.co.uk');
 
@@ -59,5 +59,18 @@ describe('Documentation Site - playground - Tag list', () => {
 
     cy.get(`${tagsArrayKnob} ${buttonRemove}:last`).click();
     cy.get(`${playgroundElement} ul>li`).should('have.length', 3);
+  });
+});
+
+describe('Documentation Site - playground', () => {
+  beforeEach(() => {
+    cy.visit('/components/flag');
+  });
+
+  it('Flag playground should update the content', () => {
+    cy.get('input[name="Content"]')
+      .clear()
+      .type('Chelsea');
+    cy.get(`${playgroundElement} [data-testid="flag"]`).contains('Chelsea');
   });
 });
