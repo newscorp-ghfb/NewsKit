@@ -15,16 +15,13 @@ const StyledBaseFlag = styled.span<BaseFlagProps>`
   white-space: nowrap;
 `;
 
-export const BaseFlag: React.FC<BaseFlagProps> = props => {
-  const {children} = props;
-  return (
-    <Stack
-      flow="horizontal-top"
-      stackDistribution="flex-start"
-      space="sizing010"
-      wrap="nowrap"
-    >
-      <StyledBaseFlag {...props}>{children}</StyledBaseFlag>
-    </Stack>
-  );
-};
+export const BaseFlag: React.FC<BaseFlagProps> = ({children, ...props}) => (
+  <Stack
+    flow="horizontal-top"
+    stackDistribution="flex-start"
+    space="sizing010"
+    wrap="nowrap"
+  >
+    <StyledBaseFlag {...props}>{children}</StyledBaseFlag>
+  </Stack>
+);
