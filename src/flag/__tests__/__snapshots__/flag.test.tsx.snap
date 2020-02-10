@@ -75,6 +75,7 @@ exports[`Flag href renders as an anchor 1`] = `
     >
       <span
         class="emotion-0"
+        data-testid="flag"
         href="#"
       />
     </div>
@@ -156,6 +157,7 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
     >
       <span
         class="emotion-0"
+        data-testid="flag"
       />
     </div>
   </div>
@@ -237,6 +239,7 @@ exports[`Flag renders a flag with the default stylePreset 1`] = `
     >
       <span
         class="emotion-0"
+        data-testid="flag"
       />
     </div>
   </div>
@@ -318,6 +321,7 @@ exports[`Flag renders in disabled state 1`] = `
     >
       <span
         class="emotion-0"
+        data-testid="flag"
         disabled=""
       />
     </div>
@@ -400,6 +404,7 @@ exports[`Flag renders with Large size 1`] = `
     >
       <span
         class="emotion-0"
+        data-testid="flag"
       />
     </div>
   </div>
@@ -481,6 +486,7 @@ exports[`Flag renders with Small size 1`] = `
     >
       <span
         class="emotion-0"
+        data-testid="flag"
       />
     </div>
   </div>
@@ -562,6 +568,7 @@ exports[`Flag renders with default styles 1`] = `
     >
       <span
         class="emotion-0"
+        data-testid="flag"
       />
     </div>
   </div>

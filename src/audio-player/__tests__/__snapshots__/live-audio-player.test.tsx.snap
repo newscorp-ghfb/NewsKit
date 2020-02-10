@@ -5931,6 +5931,7 @@ exports[`Live AudioPlayer render live player 1`] = `
                 >
                   <span
                     class="emotion-7"
+                    data-testid="flag"
                   >
                     Live
                   </span>

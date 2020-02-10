@@ -127,6 +127,7 @@ exports[`TagList renders as a span with custom margins 1`] = `
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             first label
           </span>
@@ -146,6 +147,7 @@ exports[`TagList renders as a span with custom margins 1`] = `
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             second label
           </span>
@@ -165,6 +167,7 @@ exports[`TagList renders as a span with custom margins 1`] = `
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             third label
           </span>
@@ -302,6 +305,7 @@ exports[`TagList renders as a span with custom size 1`] = `
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             first label
           </span>
@@ -321,6 +325,7 @@ exports[`TagList renders as a span with custom size 1`] = `
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             second label
           </span>
@@ -340,6 +345,7 @@ exports[`TagList renders as a span with custom size 1`] = `
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             third label
           </span>
@@ -477,6 +483,7 @@ exports[`TagList renders as a span with defaults 1`] = `
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             first label
           </span>
@@ -496,6 +503,7 @@ exports[`TagList renders as a span with defaults 1`] = `
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             second label
           </span>
@@ -515,6 +523,7 @@ exports[`TagList renders as a span with defaults 1`] = `
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             third label
           </span>
@@ -652,6 +661,7 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
         >
           <a
             class="emotion-0"
+            data-testid="tag"
             href="www.url1.com"
           >
             first label
@@ -672,6 +682,7 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
         >
           <a
             class="emotion-0"
+            data-testid="tag"
             href="www.url2.com"
           >
             second label
@@ -692,6 +703,7 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
         >
           <a
             class="emotion-0"
+            data-testid="tag"
             href="www.url3.com"
           >
             third label
@@ -830,6 +842,7 @@ exports[`TagList renders as an anchor with custom size 1`] = `
         >
           <a
             class="emotion-0"
+            data-testid="tag"
             href="www.url1.com"
           >
             first label
@@ -850,6 +863,7 @@ exports[`TagList renders as an anchor with custom size 1`] = `
         >
           <a
             class="emotion-0"
+            data-testid="tag"
             href="www.url2.com"
           >
             second label
@@ -870,6 +884,7 @@ exports[`TagList renders as an anchor with custom size 1`] = `
         >
           <a
             class="emotion-0"
+            data-testid="tag"
             href="www.url3.com"
           >
             third label
@@ -1008,6 +1023,7 @@ exports[`TagList renders as an anchor with defaults 1`] = `
         >
           <a
             class="emotion-0"
+            data-testid="tag"
             href="www.url1.com"
           >
             first label
@@ -1028,6 +1044,7 @@ exports[`TagList renders as an anchor with defaults 1`] = `
         >
           <a
             class="emotion-0"
+            data-testid="tag"
             href="www.url2.com"
           >
             second label
@@ -1048,6 +1065,7 @@ exports[`TagList renders as an anchor with defaults 1`] = `
         >
           <a
             class="emotion-0"
+            data-testid="tag"
             href="www.url3.com"
           >
             third label

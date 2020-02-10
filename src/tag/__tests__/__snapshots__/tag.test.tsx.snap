@@ -90,6 +90,7 @@ exports[`Tag href renders as an anchor 1`] = `
     >
       <a
         class="emotion-0"
+        data-testid="tag"
         href="#"
       />
     </div>
@@ -170,6 +171,7 @@ exports[`Tag href renders in disable state with an anchor 1`] = `
     >
       <span
         class="emotion-0"
+        data-testid="tag"
         disabled=""
         href="#"
       />
@@ -279,6 +281,7 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
     >
       <span
         class="emotion-0"
+        data-testid="tag"
       />
     </div>
   </div>
@@ -375,6 +378,7 @@ exports[`Tag renders a tag with the default stylePreset 1`] = `
     >
       <span
         class="emotion-0"
+        data-testid="tag"
       />
     </div>
   </div>
@@ -454,6 +458,7 @@ exports[`Tag renders in disabled state 1`] = `
     >
       <span
         class="emotion-0"
+        data-testid="tag"
         disabled=""
       />
     </div>
@@ -551,6 +556,7 @@ exports[`Tag renders with Large size 1`] = `
     >
       <span
         class="emotion-0"
+        data-testid="tag"
       />
     </div>
   </div>
@@ -647,6 +653,7 @@ exports[`Tag renders with Medium size 1`] = `
     >
       <span
         class="emotion-0"
+        data-testid="tag"
       />
     </div>
   </div>
@@ -743,6 +750,7 @@ exports[`Tag renders with Small size 1`] = `
     >
       <span
         class="emotion-0"
+        data-testid="tag"
       />
     </div>
   </div>
@@ -839,6 +847,7 @@ exports[`Tag renders with default styles 1`] = `
     >
       <span
         class="emotion-0"
+        data-testid="tag"
       />
     </div>
   </div>

@@ -127,6 +127,7 @@ exports[`Stack renders stack when no properties are set 1`] = `
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -147,6 +148,7 @@ exports[`Stack renders stack when no properties are set 1`] = `
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -167,6 +169,7 @@ exports[`Stack renders stack when no properties are set 1`] = `
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -304,6 +307,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -324,6 +328,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -344,6 +349,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -481,6 +487,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -501,6 +508,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -521,6 +529,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -666,6 +675,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -686,6 +696,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -706,6 +717,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -847,6 +859,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -867,6 +880,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -887,6 +901,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -1032,6 +1047,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -1052,6 +1068,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -1072,6 +1089,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -1213,6 +1231,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -1233,6 +1252,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -1253,6 +1273,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -1390,6 +1411,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -1410,6 +1432,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -1430,6 +1453,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -1567,6 +1591,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -1587,6 +1612,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -1607,6 +1633,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -1744,6 +1771,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -1764,6 +1792,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -1784,6 +1813,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -1921,6 +1951,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -1941,6 +1972,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -1961,6 +1993,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -2098,6 +2131,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -2118,6 +2152,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -2138,6 +2173,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -2281,6 +2317,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -2301,6 +2338,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -2321,6 +2359,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -2458,6 +2497,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -2478,6 +2518,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -2498,6 +2539,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -2635,6 +2677,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -2655,6 +2698,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -2675,6 +2719,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -2820,6 +2865,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -2840,6 +2886,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -2860,6 +2907,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -3001,6 +3049,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -3021,6 +3070,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -3041,6 +3091,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -3186,6 +3237,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -3206,6 +3258,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -3226,6 +3279,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -3367,6 +3421,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -3387,6 +3442,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -3407,6 +3463,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -3544,6 +3601,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -3564,6 +3622,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -3584,6 +3643,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -3721,6 +3781,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -3741,6 +3802,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -3761,6 +3823,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -3898,6 +3961,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -3918,6 +3982,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -3938,6 +4003,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -4075,6 +4141,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -4095,6 +4162,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -4115,6 +4183,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -4252,6 +4321,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -4272,6 +4342,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -4292,6 +4363,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -4435,6 +4507,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -4455,6 +4528,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -4475,6 +4549,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -4612,6 +4687,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -4632,6 +4708,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -4652,6 +4729,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -4789,6 +4867,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -4809,6 +4888,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -4829,6 +4909,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -4974,6 +5055,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -4994,6 +5076,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -5014,6 +5097,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -5155,6 +5239,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -5175,6 +5260,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -5195,6 +5281,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -5340,6 +5427,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -5360,6 +5448,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -5380,6 +5469,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -5521,6 +5611,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -5541,6 +5632,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -5561,6 +5653,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -5698,6 +5791,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -5718,6 +5812,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -5738,6 +5833,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -5875,6 +5971,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -5895,6 +5992,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -5915,6 +6013,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -6052,6 +6151,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -6072,6 +6172,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -6092,6 +6193,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -6229,6 +6331,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -6249,6 +6352,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -6269,6 +6373,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -6406,6 +6511,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -6426,6 +6532,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -6446,6 +6553,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -6589,6 +6697,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -6609,6 +6718,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -6629,6 +6739,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -6766,6 +6877,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -6786,6 +6898,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -6806,6 +6919,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -6943,6 +7057,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -6963,6 +7078,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -6983,6 +7099,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -7128,6 +7245,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -7148,6 +7266,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -7168,6 +7287,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -7309,6 +7429,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -7329,6 +7450,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -7349,6 +7471,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -7494,6 +7617,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -7514,6 +7638,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -7534,6 +7659,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -7675,6 +7801,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -7695,6 +7822,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -7715,6 +7843,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -7852,6 +7981,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -7872,6 +8002,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -7892,6 +8023,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -8029,6 +8161,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -8049,6 +8182,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -8069,6 +8203,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -8206,6 +8341,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -8226,6 +8362,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -8246,6 +8383,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -8383,6 +8521,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -8403,6 +8542,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -8423,6 +8563,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -8560,6 +8701,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -8580,6 +8722,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -8600,6 +8743,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -8743,6 +8887,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -8763,6 +8908,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -8783,6 +8929,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -8920,6 +9067,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -8940,6 +9088,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -8960,6 +9109,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -9097,6 +9247,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -9117,6 +9268,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -9137,6 +9289,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -9282,6 +9435,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -9302,6 +9456,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -9322,6 +9477,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -9463,6 +9619,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -9483,6 +9640,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -9503,6 +9661,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -9648,6 +9807,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -9668,6 +9828,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -9688,6 +9849,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -9829,6 +9991,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -9849,6 +10012,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -9869,6 +10033,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -10006,6 +10171,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -10026,6 +10192,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -10046,6 +10213,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -10183,6 +10351,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -10203,6 +10372,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -10223,6 +10393,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -10360,6 +10531,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -10380,6 +10552,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -10400,6 +10573,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -10537,6 +10711,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -10557,6 +10732,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -10577,6 +10753,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -10714,6 +10891,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -10734,6 +10912,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -10754,6 +10933,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -10897,6 +11077,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -10917,6 +11098,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -10937,6 +11119,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -11074,6 +11257,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -11094,6 +11278,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -11114,6 +11299,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -11251,6 +11437,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -11271,6 +11458,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -11291,6 +11479,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -11436,6 +11625,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -11456,6 +11646,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -11476,6 +11667,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -11617,6 +11809,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -11637,6 +11830,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -11657,6 +11851,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -11802,6 +11997,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -11822,6 +12018,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -11842,6 +12039,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -11983,6 +12181,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -12003,6 +12202,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -12023,6 +12223,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -12160,6 +12361,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -12180,6 +12382,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -12200,6 +12403,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -12337,6 +12541,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -12357,6 +12562,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -12377,6 +12583,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -12514,6 +12721,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -12534,6 +12742,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -12554,6 +12763,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -12691,6 +12901,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -12711,6 +12922,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -12731,6 +12943,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -12868,6 +13081,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -12888,6 +13102,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -12908,6 +13123,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
@@ -13051,6 +13267,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 1
           </span>
@@ -13071,6 +13288,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 2
           </span>
@@ -13091,6 +13309,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
         >
           <span
             class="emotion-0"
+            data-testid="tag"
           >
             child 3
           </span>
