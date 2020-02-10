@@ -1,8 +1,295 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button Throws errors with both Icon and children Button 1`] = `"Button with children and Icon is not implemented"`;
-
 exports[`Button renders Icon Button 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-2 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  min-height: spaceInset040;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 16px 24px;
+}
+
+.emotion-2 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-2:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-2:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-2:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-0 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 64px;
+  height: 64px;
+}
+
+<button
+    class="emotion-2"
+    type="button"
+  >
+    <div
+      class="emotion-1"
+    >
+      <svg
+        class="emotion-0"
+        viewBox="0 0 24 24"
+      >
+        <title>
+          Email icon
+        </title>
+        <path
+          d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+        />
+      </svg>
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders Large Button 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  min-height: spaceInset040;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 16px 24px;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-1:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-1:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-1:disabled {
+  cursor: not-allowed;
+}
+
+<button
+    class="emotion-1"
+    type="button"
+  >
+    <div
+      class="emotion-0"
+    />
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders Medium Button 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-1 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 40px;
+  min-height: spaceInset030;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 12px 16px;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-1:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-1:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-1:disabled {
+  cursor: not-allowed;
+}
+
+<button
+    class="emotion-1"
+    type="button"
+  >
+    <div
+      class="emotion-0"
+    />
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders Small Button 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: inline-block;
@@ -23,253 +310,8 @@ exports[`Button renders Icon Button 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
-  height: 48px;
-  width: 48px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.75;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 0 24px;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 100vw;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-1:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-1:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-1:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-1:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-1 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-1:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-1:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-1:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-0 {
-  display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  width: 64px;
-  height: 64px;
-}
-
-<button
-    class="emotion-1"
-    type="button"
-  >
-    <svg
-      class="emotion-0"
-      viewBox="0 0 24 24"
-    >
-      <title>
-        Email icon
-      </title>
-      <path
-        d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
-      />
-    </svg>
-  </button>
-</DocumentFragment>
-`;
-
-exports[`Button renders Large Button 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 100vw;
-  height: 48px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.75;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 0 24px;
-}
-
-.emotion-0:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-0:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-0:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-0:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-0:disabled {
-  cursor: not-allowed;
-}
-
-<button
-    class="emotion-0"
-    type="button"
-  />
-</DocumentFragment>
-`;
-
-exports[`Button renders Medium Button 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 100vw;
-  height: 40px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 0 16px;
-}
-
-.emotion-0:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-0:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-0:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-0:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-0:disabled {
-  cursor: not-allowed;
-}
-
-<button
-    class="emotion-0"
-    type="button"
-  />
-</DocumentFragment>
-`;
-
-exports[`Button renders Small Button 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 100vw;
-  height: 32px;
+  border-radius: 32px;
+  min-height: spaceInset020;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -278,50 +320,90 @@ exports[`Button renders Small Button 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  padding: 0 8px;
-  margin: 8px 0;
+  padding: 8px 12px;
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-0:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-0:focus:not(:disabled) {
+.emotion-1:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-0:disabled {
+.emotion-1:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-0::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-.emotion-0:disabled {
+.emotion-1:disabled {
   cursor: not-allowed;
 }
 
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
-    class="emotion-0"
+    class="emotion-1"
     type="button"
-  />
+  >
+    <div
+      class="emotion-0"
+    />
+  </button>
 </DocumentFragment>
 `;
+
+exports[`Button renders when there is no icon 1`] = `[Function]`;
 
 exports[`Button renders with different style preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-1 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -342,8 +424,8 @@ exports[`Button renders with different style preset 1`] = `
   border-color: #C8E4FD;
   border-width: 1px;
   color: #0A68C1;
-  border-radius: 100vw;
-  height: 32px;
+  border-radius: 32px;
+  min-height: spaceInset020;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -352,47 +434,41 @@ exports[`Button renders with different style preset 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  padding: 0 8px;
-  margin: 8px 0;
+  padding: 8px 12px;
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #F6FBFF;
 }
 
-.emotion-0:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #F6FBFF;
   border-width: #0A68C1;
 }
 
-.emotion-0:disabled {
+.emotion-1:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-0::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-.emotion-0:disabled {
+.emotion-1:disabled {
   cursor: not-allowed;
 }
 
 <button
-    class="emotion-0"
+    class="emotion-1"
     type="button"
-  />
+  >
+    <div
+      class="emotion-0"
+    />
+  </button>
 </DocumentFragment>
 `;
 
 exports[`Button renders with fallback formatting 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -411,8 +487,8 @@ exports[`Button renders with fallback formatting 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
-  height: 32px;
+  border-radius: 32px;
+  min-height: spaceInset020;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -421,43 +497,59 @@ exports[`Button renders with fallback formatting 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  padding: 0 8px;
-  margin: 8px 0;
+  padding: 8px 12px;
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-0:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-0:focus:not(:disabled) {
+.emotion-1:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-0:disabled {
+.emotion-1:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-0::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-.emotion-0:disabled {
+.emotion-1:disabled {
   cursor: not-allowed;
 }
 
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <button
-    class="emotion-0"
+    class="emotion-1"
     type="button"
-  />
+  >
+    <div
+      class="emotion-0"
+    />
+  </button>
 </DocumentFragment>
 `;

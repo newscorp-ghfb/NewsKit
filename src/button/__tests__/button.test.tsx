@@ -44,16 +44,12 @@ describe('Button', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('Throws errors with both Icon and children Button', () => {
+  test('renders when there is no icon', () => {
     const props = {
-      $size: ButtonSize.Large,
-      icon: () => <Email $size="iconSize050" />,
-      children: "can't click this!",
+      children: 'click this!',
     };
 
-    expect(() =>
-      renderToFragmentWithTheme(Button, props),
-    ).toThrowErrorMatchingSnapshot();
+    expect(() => renderToFragmentWithTheme(Button, props)).toMatchSnapshot();
   });
 
   test('renders with different style preset', () => {

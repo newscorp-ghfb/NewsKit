@@ -141,6 +141,10 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -274,6 +278,10 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -363,6 +371,10 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
   margin-top: 64px;
@@ -477,6 +489,10 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
   margin-top: 64px;
@@ -591,6 +607,10 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
   margin-top: 160px;
@@ -705,6 +725,10 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
   margin-top: 160px;
@@ -1377,6 +1401,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -1510,6 +1538,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -1599,6 +1631,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
   margin-top: 64px;
@@ -1713,6 +1749,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
   margin-top: 64px;
@@ -1827,6 +1867,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
   margin-top: 160px;
@@ -1941,6 +1985,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
   margin-top: 160px;
@@ -2613,6 +2661,10 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -2746,6 +2798,10 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -2835,6 +2891,10 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
   margin-top: 64px;
@@ -2949,6 +3009,10 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
   margin-top: 64px;
@@ -3063,6 +3127,10 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
   margin-top: 160px;
@@ -3177,6 +3245,10 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
   margin-top: 160px;
@@ -3849,6 +3921,10 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -3982,6 +4058,10 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -4096,6 +4176,10 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
   margin-top: 64px;
@@ -4185,6 +4269,10 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
   margin-top: 64px;
@@ -4324,6 +4412,10 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
   margin-top: 160px;
@@ -4413,6 +4505,10 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
   margin-top: 160px;
@@ -5107,6 +5203,10 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -5218,6 +5318,10 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -5331,6 +5435,10 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: 0;
   margin-top: 64px;
@@ -5420,6 +5528,10 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: 0;
   margin-top: 64px;
@@ -5557,6 +5669,10 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: 0;
   margin-top: 160px;
@@ -5646,6 +5762,10 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: 0;
   margin-top: 160px;
@@ -6317,6 +6437,10 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -6450,6 +6574,10 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -6539,6 +6667,10 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
   margin-top: 64px;
@@ -6652,6 +6784,10 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
   margin-top: 64px;
@@ -6765,6 +6901,10 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
   margin-top: 160px;
@@ -6878,6 +7018,10 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 }
 
 .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
   margin-top: 160px;

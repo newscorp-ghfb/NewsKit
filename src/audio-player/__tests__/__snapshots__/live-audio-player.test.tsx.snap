@@ -2,7 +2,7 @@
 
 exports[`Live AudioPlayer onPlay / onPause renders play button with correct state when clicked 1`] = `
 <DocumentFragment>
-  .emotion-27 {
+  .emotion-28 {
   width: 100%;
   max-width: 920px;
   box-sizing: border-box;
@@ -122,7 +122,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   justify-content: center;
 }
 
-.emotion-26 {
+.emotion-27 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -301,7 +301,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   color: #c0c0c0;
 }
 
-.emotion-22 {
+.emotion-23 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -320,9 +320,8 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
-  height: 48px;
-  width: 48px;
+  border-radius: 48px;
+  min-height: spaceInset040;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -331,66 +330,33 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 0 24px;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 100vw;
+  padding: 16px 24px;
 }
 
-.emotion-22:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-22:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-22:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-22:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-22:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-22 svg {
+.emotion-23 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-22:hover:not(:disabled) {
+.emotion-23:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-22:active:not(:disabled) {
+.emotion-23:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-22:focus:not(:disabled) {
+.emotion-23:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-22:disabled {
+.emotion-23:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
+}
+
+.emotion-23:disabled {
+  cursor: not-allowed;
 }
 
 .emotion-21 {
@@ -401,7 +367,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   height: 32px;
 }
 
-.emotion-24 {
+.emotion-25 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -484,7 +450,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 <div
-    class="emotion-27"
+    class="emotion-28"
   >
     <audio
       data-testid="audio-player"
@@ -556,7 +522,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
       </div>
     </div>
     <div
-      class="emotion-26"
+      class="emotion-27"
     >
       <div
         class="emotion-20"
@@ -637,21 +603,25 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
         >
           <button
             aria-pressed="true"
-            class="emotion-22"
+            class="emotion-23"
             data-testid="audio-player-play-button"
             type="button"
           >
-            <svg
-              class="emotion-21"
-              viewBox="0 0 24 24"
+            <div
+              class="emotion-10"
             >
-              <title>
-                Pause
-              </title>
-              <path
-                d="M6,19 L10,19 L10,5 L6,5 L6,19 Z M14,5 L14,19 L18,19 L18,5 L14,5 Z"
-              />
-            </svg>
+              <svg
+                class="emotion-21"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Pause
+                </title>
+                <path
+                  d="M6,19 L10,19 L10,5 L6,5 L6,19 Z M14,5 L14,19 L18,19 L18,5 L14,5 Z"
+                />
+              </svg>
+            </div>
           </button>
         </div>
       </div>
@@ -659,7 +629,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
         class="emotion-20"
       >
         <div
-          class="emotion-24"
+          class="emotion-25"
         />
       </div>
     </div>
@@ -669,7 +639,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 exports[`Live AudioPlayer onPlay / onPause renders play button with correct state when clicked 2`] = `
 <DocumentFragment>
-  .emotion-27 {
+  .emotion-28 {
   width: 100%;
   max-width: 920px;
   box-sizing: border-box;
@@ -789,7 +759,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   justify-content: center;
 }
 
-.emotion-26 {
+.emotion-27 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -968,7 +938,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   color: #c0c0c0;
 }
 
-.emotion-22 {
+.emotion-23 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -987,9 +957,8 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
-  height: 48px;
-  width: 48px;
+  border-radius: 48px;
+  min-height: spaceInset040;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -998,66 +967,33 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 0 24px;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 100vw;
+  padding: 16px 24px;
 }
 
-.emotion-22:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-22:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-22:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-22:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-22:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-22 svg {
+.emotion-23 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-22:hover:not(:disabled) {
+.emotion-23:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-22:active:not(:disabled) {
+.emotion-23:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-22:focus:not(:disabled) {
+.emotion-23:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-22:disabled {
+.emotion-23:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
+}
+
+.emotion-23:disabled {
+  cursor: not-allowed;
 }
 
 .emotion-21 {
@@ -1068,7 +1004,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   height: 32px;
 }
 
-.emotion-24 {
+.emotion-25 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1151,7 +1087,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 <div
-    class="emotion-27"
+    class="emotion-28"
   >
     <audio
       data-testid="audio-player"
@@ -1223,7 +1159,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
       </div>
     </div>
     <div
-      class="emotion-26"
+      class="emotion-27"
     >
       <div
         class="emotion-20"
@@ -1304,21 +1240,25 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
         >
           <button
             aria-pressed="false"
-            class="emotion-22"
+            class="emotion-23"
             data-testid="audio-player-play-button"
             type="button"
           >
-            <svg
-              class="emotion-21"
-              viewBox="0 0 24 24"
+            <div
+              class="emotion-10"
             >
-              <title>
-                Play
-              </title>
-              <polygon
-                points="8 5 8 19 19 12"
-              />
-            </svg>
+              <svg
+                class="emotion-21"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Play
+                </title>
+                <polygon
+                  points="8 5 8 19 19 12"
+                />
+              </svg>
+            </div>
           </button>
         </div>
       </div>
@@ -1326,7 +1266,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
         class="emotion-20"
       >
         <div
-          class="emotion-24"
+          class="emotion-25"
         />
       </div>
     </div>
@@ -1336,7 +1276,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fires 1`] = `
 <DocumentFragment>
-  .emotion-27 {
+  .emotion-28 {
   width: 100%;
   max-width: 920px;
   box-sizing: border-box;
@@ -1456,7 +1396,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   justify-content: center;
 }
 
-.emotion-26 {
+.emotion-27 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1635,7 +1575,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   color: #c0c0c0;
 }
 
-.emotion-22 {
+.emotion-23 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -1654,9 +1594,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
-  height: 48px;
-  width: 48px;
+  border-radius: 48px;
+  min-height: spaceInset040;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -1665,66 +1604,33 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 0 24px;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 100vw;
+  padding: 16px 24px;
 }
 
-.emotion-22:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-22:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-22:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-22:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-22:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-22 svg {
+.emotion-23 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-22:hover:not(:disabled) {
+.emotion-23:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-22:active:not(:disabled) {
+.emotion-23:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-22:focus:not(:disabled) {
+.emotion-23:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-22:disabled {
+.emotion-23:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
+}
+
+.emotion-23:disabled {
+  cursor: not-allowed;
 }
 
 .emotion-21 {
@@ -1735,7 +1641,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   height: 32px;
 }
 
-.emotion-24 {
+.emotion-25 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1818,7 +1724,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 }
 
 <div
-    class="emotion-27"
+    class="emotion-28"
   >
     <audio
       data-testid="audio-player"
@@ -1890,7 +1796,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
       </div>
     </div>
     <div
-      class="emotion-26"
+      class="emotion-27"
     >
       <div
         class="emotion-20"
@@ -1971,21 +1877,25 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
         >
           <button
             aria-pressed="false"
-            class="emotion-22"
+            class="emotion-23"
             data-testid="audio-player-play-button"
             type="button"
           >
-            <svg
-              class="emotion-21"
-              viewBox="0 0 24 24"
+            <div
+              class="emotion-10"
             >
-              <title>
-                Play
-              </title>
-              <polygon
-                points="8 5 8 19 19 12"
-              />
-            </svg>
+              <svg
+                class="emotion-21"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Play
+                </title>
+                <polygon
+                  points="8 5 8 19 19 12"
+                />
+              </svg>
+            </div>
           </button>
         </div>
       </div>
@@ -1993,7 +1903,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
         class="emotion-20"
       >
         <div
-          class="emotion-24"
+          class="emotion-25"
         />
       </div>
     </div>
@@ -2003,7 +1913,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 
 exports[`Live AudioPlayer onPlay / onPause renders player after pause event fires 1`] = `
 <DocumentFragment>
-  .emotion-27 {
+  .emotion-28 {
   width: 100%;
   max-width: 920px;
   box-sizing: border-box;
@@ -2123,7 +2033,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   justify-content: center;
 }
 
-.emotion-26 {
+.emotion-27 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2302,7 +2212,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   color: #c0c0c0;
 }
 
-.emotion-22 {
+.emotion-23 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -2321,9 +2231,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
-  height: 48px;
-  width: 48px;
+  border-radius: 48px;
+  min-height: spaceInset040;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -2332,66 +2241,33 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 0 24px;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 100vw;
+  padding: 16px 24px;
 }
 
-.emotion-22:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-22:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-22:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-22:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-22:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-22 svg {
+.emotion-23 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-22:hover:not(:disabled) {
+.emotion-23:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-22:active:not(:disabled) {
+.emotion-23:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-22:focus:not(:disabled) {
+.emotion-23:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-22:disabled {
+.emotion-23:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
+}
+
+.emotion-23:disabled {
+  cursor: not-allowed;
 }
 
 .emotion-21 {
@@ -2402,7 +2278,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   height: 32px;
 }
 
-.emotion-24 {
+.emotion-25 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2485,7 +2361,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 }
 
 <div
-    class="emotion-27"
+    class="emotion-28"
   >
     <audio
       data-testid="audio-player"
@@ -2557,7 +2433,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
       </div>
     </div>
     <div
-      class="emotion-26"
+      class="emotion-27"
     >
       <div
         class="emotion-20"
@@ -2638,21 +2514,25 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
         >
           <button
             aria-pressed="false"
-            class="emotion-22"
+            class="emotion-23"
             data-testid="audio-player-play-button"
             type="button"
           >
-            <svg
-              class="emotion-21"
-              viewBox="0 0 24 24"
+            <div
+              class="emotion-10"
             >
-              <title>
-                Play
-              </title>
-              <polygon
-                points="8 5 8 19 19 12"
-              />
-            </svg>
+              <svg
+                class="emotion-21"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Play
+                </title>
+                <polygon
+                  points="8 5 8 19 19 12"
+                />
+              </svg>
+            </div>
           </button>
         </div>
       </div>
@@ -2660,7 +2540,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
         class="emotion-20"
       >
         <div
-          class="emotion-24"
+          class="emotion-25"
         />
       </div>
     </div>
@@ -2670,7 +2550,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 
 exports[`Live AudioPlayer onPlay / onPause renders player after play event fires 1`] = `
 <DocumentFragment>
-  .emotion-27 {
+  .emotion-28 {
   width: 100%;
   max-width: 920px;
   box-sizing: border-box;
@@ -2790,7 +2670,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   justify-content: center;
 }
 
-.emotion-26 {
+.emotion-27 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2969,7 +2849,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   color: #c0c0c0;
 }
 
-.emotion-22 {
+.emotion-23 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -2988,9 +2868,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
-  height: 48px;
-  width: 48px;
+  border-radius: 48px;
+  min-height: spaceInset040;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -2999,66 +2878,33 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 0 24px;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 100vw;
+  padding: 16px 24px;
 }
 
-.emotion-22:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-22:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-22:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-22:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-22:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-22 svg {
+.emotion-23 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-22:hover:not(:disabled) {
+.emotion-23:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-22:active:not(:disabled) {
+.emotion-23:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-22:focus:not(:disabled) {
+.emotion-23:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-22:disabled {
+.emotion-23:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
+}
+
+.emotion-23:disabled {
+  cursor: not-allowed;
 }
 
 .emotion-21 {
@@ -3069,7 +2915,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   height: 32px;
 }
 
-.emotion-24 {
+.emotion-25 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3152,7 +2998,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 }
 
 <div
-    class="emotion-27"
+    class="emotion-28"
   >
     <audio
       data-testid="audio-player"
@@ -3224,7 +3070,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
       </div>
     </div>
     <div
-      class="emotion-26"
+      class="emotion-27"
     >
       <div
         class="emotion-20"
@@ -3305,21 +3151,25 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
         >
           <button
             aria-pressed="true"
-            class="emotion-22"
+            class="emotion-23"
             data-testid="audio-player-play-button"
             type="button"
           >
-            <svg
-              class="emotion-21"
-              viewBox="0 0 24 24"
+            <div
+              class="emotion-10"
             >
-              <title>
-                Pause
-              </title>
-              <path
-                d="M6,19 L10,19 L10,5 L6,5 L6,19 Z M14,5 L14,19 L18,19 L18,5 L14,5 Z"
-              />
-            </svg>
+              <svg
+                class="emotion-21"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Pause
+                </title>
+                <path
+                  d="M6,19 L10,19 L10,5 L6,5 L6,19 Z M14,5 L14,19 L18,19 L18,5 L14,5 Z"
+                />
+              </svg>
+            </div>
           </button>
         </div>
       </div>
@@ -3327,7 +3177,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
         class="emotion-20"
       >
         <div
-          class="emotion-24"
+          class="emotion-25"
         />
       </div>
     </div>
@@ -3337,7 +3187,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 
 exports[`Live AudioPlayer render default player 1`] = `
 <DocumentFragment>
-  .emotion-24 {
+  .emotion-25 {
   width: 100%;
   max-width: 920px;
   box-sizing: border-box;
@@ -3457,7 +3307,7 @@ exports[`Live AudioPlayer render default player 1`] = `
   justify-content: center;
 }
 
-.emotion-23 {
+.emotion-24 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3636,7 +3486,7 @@ exports[`Live AudioPlayer render default player 1`] = `
   color: #c0c0c0;
 }
 
-.emotion-19 {
+.emotion-20 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -3655,9 +3505,8 @@ exports[`Live AudioPlayer render default player 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
-  height: 48px;
-  width: 48px;
+  border-radius: 48px;
+  min-height: spaceInset040;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -3666,66 +3515,33 @@ exports[`Live AudioPlayer render default player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 0 24px;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 100vw;
+  padding: 16px 24px;
 }
 
-.emotion-19:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-19:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-19:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-19:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-19:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-19 svg {
+.emotion-20 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-19:hover:not(:disabled) {
+.emotion-20:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-19:active:not(:disabled) {
+.emotion-20:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-19:focus:not(:disabled) {
+.emotion-20:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-19:disabled {
+.emotion-20:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
+}
+
+.emotion-20:disabled {
+  cursor: not-allowed;
 }
 
 .emotion-18 {
@@ -3736,7 +3552,7 @@ exports[`Live AudioPlayer render default player 1`] = `
   height: 32px;
 }
 
-.emotion-21 {
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3759,7 +3575,7 @@ exports[`Live AudioPlayer render default player 1`] = `
 }
 
 <div
-    class="emotion-24"
+    class="emotion-25"
   >
     <audio
       data-testid="audio-player"
@@ -3804,7 +3620,7 @@ exports[`Live AudioPlayer render default player 1`] = `
       </div>
     </div>
     <div
-      class="emotion-23"
+      class="emotion-24"
     >
       <div
         class="emotion-17"
@@ -3885,21 +3701,25 @@ exports[`Live AudioPlayer render default player 1`] = `
         >
           <button
             aria-pressed="false"
-            class="emotion-19"
+            class="emotion-20"
             data-testid="audio-player-play-button"
             type="button"
           >
-            <svg
-              class="emotion-18"
-              viewBox="0 0 24 24"
+            <div
+              class="emotion-7"
             >
-              <title>
-                Play
-              </title>
-              <polygon
-                points="8 5 8 19 19 12"
-              />
-            </svg>
+              <svg
+                class="emotion-18"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Play
+                </title>
+                <polygon
+                  points="8 5 8 19 19 12"
+                />
+              </svg>
+            </div>
           </button>
         </div>
       </div>
@@ -3907,7 +3727,7 @@ exports[`Live AudioPlayer render default player 1`] = `
         class="emotion-17"
       >
         <div
-          class="emotion-21"
+          class="emotion-22"
         />
       </div>
     </div>
@@ -3917,7 +3737,7 @@ exports[`Live AudioPlayer render default player 1`] = `
 
 exports[`Live AudioPlayer render live player 1`] = `
 <DocumentFragment>
-  .emotion-28 {
+  .emotion-29 {
   width: 100%;
   max-width: 920px;
   box-sizing: border-box;
@@ -4037,7 +3857,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   justify-content: center;
 }
 
-.emotion-27 {
+.emotion-28 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4216,7 +4036,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   color: #c0c0c0;
 }
 
-.emotion-23 {
+.emotion-24 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -4235,9 +4055,8 @@ exports[`Live AudioPlayer render live player 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
-  height: 48px;
-  width: 48px;
+  border-radius: 48px;
+  min-height: spaceInset040;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -4246,66 +4065,33 @@ exports[`Live AudioPlayer render live player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 0 24px;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 100vw;
+  padding: 16px 24px;
 }
 
-.emotion-23:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-23:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-23:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-23:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-23:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-23 svg {
+.emotion-24 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-23:hover:not(:disabled) {
+.emotion-24:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-23:active:not(:disabled) {
+.emotion-24:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-23:focus:not(:disabled) {
+.emotion-24:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-23:disabled {
+.emotion-24:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
+}
+
+.emotion-24:disabled {
+  cursor: not-allowed;
 }
 
 .emotion-22 {
@@ -4316,7 +4102,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   height: 32px;
 }
 
-.emotion-25 {
+.emotion-26 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4455,7 +4241,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 <div
-    class="emotion-28"
+    class="emotion-29"
   >
     <audio
       data-testid="audio-player"
@@ -4532,7 +4318,7 @@ exports[`Live AudioPlayer render live player 1`] = `
       </div>
     </div>
     <div
-      class="emotion-27"
+      class="emotion-28"
     >
       <div
         class="emotion-21"
@@ -4613,21 +4399,25 @@ exports[`Live AudioPlayer render live player 1`] = `
         >
           <button
             aria-pressed="false"
-            class="emotion-23"
+            class="emotion-24"
             data-testid="audio-player-play-button"
             type="button"
           >
-            <svg
-              class="emotion-22"
-              viewBox="0 0 24 24"
+            <div
+              class="emotion-11"
             >
-              <title>
-                Play
-              </title>
-              <polygon
-                points="8 5 8 19 19 12"
-              />
-            </svg>
+              <svg
+                class="emotion-22"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Play
+                </title>
+                <polygon
+                  points="8 5 8 19 19 12"
+                />
+              </svg>
+            </div>
           </button>
         </div>
       </div>
@@ -4635,7 +4425,7 @@ exports[`Live AudioPlayer render live player 1`] = `
         class="emotion-21"
       >
         <div
-          class="emotion-25"
+          class="emotion-26"
         />
       </div>
     </div>
@@ -4645,7 +4435,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 
 exports[`Live AudioPlayer render tagged player 1`] = `
 <DocumentFragment>
-  .emotion-28 {
+  .emotion-29 {
   width: 100%;
   max-width: 920px;
   box-sizing: border-box;
@@ -4765,7 +4555,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   justify-content: center;
 }
 
-.emotion-27 {
+.emotion-28 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4944,7 +4734,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   color: #c0c0c0;
 }
 
-.emotion-23 {
+.emotion-24 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -4963,9 +4753,8 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
-  height: 48px;
-  width: 48px;
+  border-radius: 48px;
+  min-height: spaceInset040;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -4974,66 +4763,33 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 0 24px;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 100vw;
+  padding: 16px 24px;
 }
 
-.emotion-23:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-23:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-23:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-23:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-23:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-23 svg {
+.emotion-24 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-23:hover:not(:disabled) {
+.emotion-24:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-23:active:not(:disabled) {
+.emotion-24:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-23:focus:not(:disabled) {
+.emotion-24:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-23:disabled {
+.emotion-24:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
+}
+
+.emotion-24:disabled {
+  cursor: not-allowed;
 }
 
 .emotion-22 {
@@ -5044,7 +4800,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   height: 32px;
 }
 
-.emotion-25 {
+.emotion-26 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5141,7 +4897,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 }
 
 <div
-    class="emotion-28"
+    class="emotion-29"
   >
     <audio
       data-testid="audio-player"
@@ -5218,7 +4974,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
       </div>
     </div>
     <div
-      class="emotion-27"
+      class="emotion-28"
     >
       <div
         class="emotion-21"
@@ -5299,21 +5055,25 @@ exports[`Live AudioPlayer render tagged player 1`] = `
         >
           <button
             aria-pressed="false"
-            class="emotion-23"
+            class="emotion-24"
             data-testid="audio-player-play-button"
             type="button"
           >
-            <svg
-              class="emotion-22"
-              viewBox="0 0 24 24"
+            <div
+              class="emotion-11"
             >
-              <title>
-                Play
-              </title>
-              <polygon
-                points="8 5 8 19 19 12"
-              />
-            </svg>
+              <svg
+                class="emotion-22"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Play
+                </title>
+                <polygon
+                  points="8 5 8 19 19 12"
+                />
+              </svg>
+            </div>
           </button>
         </div>
       </div>
@@ -5321,7 +5081,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
         class="emotion-21"
       >
         <div
-          class="emotion-25"
+          class="emotion-26"
         />
       </div>
     </div>

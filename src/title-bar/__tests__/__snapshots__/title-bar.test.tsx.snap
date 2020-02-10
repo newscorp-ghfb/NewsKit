@@ -2,7 +2,7 @@
 
 exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -47,18 +47,18 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   margin: 0 0 16px 0;
 }
 
-.emotion-3 {
+.emotion-4 {
   padding-left: 24px;
   display: none;
 }
 
 @media screen and (min-width:480px) {
-  .emotion-3 {
+  .emotion-4 {
     display: block;
   }
 }
 
-.emotion-2 {
+.emotion-3 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -77,8 +77,8 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
-  height: 32px;
+  border-radius: 32px;
+  min-height: spaceInset020;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -87,42 +87,54 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  padding: 0 8px;
-  margin: 8px 0;
+  padding: 8px 12px;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-2:focus:not(:disabled) {
+.emotion-3:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-2:disabled {
+.emotion-3:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-2::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-.emotion-2:disabled {
+.emotion-3:disabled {
   cursor: not-allowed;
 }
 
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <div
-    class="emotion-4"
+    class="emotion-5"
   >
     <div
       class="emotion-1"
@@ -134,13 +146,17 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
       </h2>
     </div>
     <div
-      class="emotion-3"
+      class="emotion-4"
     >
       <button
-        class="emotion-2"
+        class="emotion-3"
         type="button"
       >
-        Default button
+        <div
+          class="emotion-2"
+        >
+          Default button
+        </div>
       </button>
     </div>
   </div>
