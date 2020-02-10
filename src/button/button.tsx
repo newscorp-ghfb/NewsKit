@@ -11,7 +11,6 @@ import {SizingKeys, TypePresetKeys, Theme} from '../themes';
 import {PaddingPresetKeys} from '../themes/mappers/spacing';
 import {Stack} from '../stack/stack';
 import {Flow, StackDistribution} from '../stack/types';
-import {IconComponent} from '../icons';
 
 const buttonStylePresetDefault = 'interactive010';
 const spacing: SizingKeys = 'sizing020';
@@ -98,13 +97,7 @@ const ButtonElement = styled.button<ButtonProps>`
       padding: ${theme.sizing[paddingX]} ${theme.sizing[paddingY]};
     `;
 
-    return {
-      [ButtonSize.Small]: css`
-        ${commonStyles} /* Extend touchpoint area */
-      `,
-      [ButtonSize.Medium]: commonStyles,
-      [ButtonSize.Large]: commonStyles,
-    }[$size];
+    return commonStyles;
   }}
 
   :disabled {
@@ -112,7 +105,8 @@ const ButtonElement = styled.button<ButtonProps>`
   }
 `;
 
-const InnerContainer = styled.div<{icon: IconComponent}>`
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const InnerContainer = styled.div<{icon: any}>`
   ${({icon, theme}) => ({
     marginTop: icon ? `-${theme.sizing[spacing]}` : 0,
   })}
@@ -121,10 +115,24 @@ const InnerContainer = styled.div<{icon: IconComponent}>`
 export const Button: React.FC<
   React.ButtonHTMLAttributes<HTMLButtonElement> & ButtonProps
 > = props => {
-  const {children, icon: Icon, ...restOfProps} = props;
+  const {
+    children,
+    icon: Icon,
+    $size,
+    $iconColor = 'buttonFill',
+    ...restOfProps
+  } = props;
+  const iconWithProps = (
+    <Icon
+      $size={
+        !$size || $size === ButtonSize.Small ? 'iconSize010' : 'iconSize020'
+      }
+      $color={$iconColor}
+    />
+  );
 
   return (
-    <ButtonElement type="button" {...restOfProps} icon={Icon}>
+    <ButtonElement type="button" $size={$size} {...restOfProps} icon={Icon}>
       {Icon && children ? (
         <InnerContainer icon={Icon}>
           <Stack
@@ -132,19 +140,17 @@ export const Button: React.FC<
             space={spacing}
             stackDistribution={StackDistribution.Center}
           >
-            <Icon />
+            {iconWithProps}
             {children}
           </Stack>
         </InnerContainer>
       ) : (
-        <div>
-          <Stack
-            flow={Flow.HorizontalCenter}
-            stackDistribution={StackDistribution.Center}
-          >
-            {(Icon && <Icon />) || children}
-          </Stack>
-        </div>
+        <Stack
+          flow={Flow.HorizontalCenter}
+          stackDistribution={StackDistribution.Center}
+        >
+          {(Icon && iconWithProps) || children}
+        </Stack>
       )}
     </ButtonElement>
   );

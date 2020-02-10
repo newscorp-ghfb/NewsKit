@@ -47,9 +47,6 @@ enum ButtonStyle {
 
 const states = ['Default', 'Focused', 'Disabled'];
 
-const PauseIcon = () => <Pause $size="iconSize030" $color="buttonFill" />;
-const EmailIcon = () => <Email $size="iconSize010" />;
-
 export const component = () => (
   <React.Fragment>
     <h1>Buttons</h1>
@@ -107,9 +104,9 @@ export const component = () => (
     <h2>Size</h2>
     <Container>
       <Stack flow="horizontal-center" space="sizing070" wrap="wrap">
-        <Button icon={PauseIcon} $size={ButtonSize.Small} />
-        <Button icon={PauseIcon} $size={ButtonSize.Medium} />
-        <Button icon={PauseIcon} $size={ButtonSize.Large} />
+        <Button icon={Pause} $size={ButtonSize.Small} />
+        <Button icon={Pause} $size={ButtonSize.Medium} />
+        <Button icon={Pause} $size={ButtonSize.Large} />
       </Stack>
     </Container>
 
@@ -159,15 +156,15 @@ export const component = () => (
             >
               <h3>{style}</h3>
               <Block theme={newskitLightTheme} data-state="Default">
-                <Button icon={PauseIcon} $stylePreset={stylePreset} />
+                <Button icon={Pause} $stylePreset={stylePreset} />
               </Block>
 
               <Block theme={newskitLightTheme} data-state="Focused">
-                <Button icon={PauseIcon} autoFocus $stylePreset={stylePreset} />
+                <Button icon={CopyLink} autoFocus $stylePreset={stylePreset} />
               </Block>
 
               <Block theme={newskitLightTheme} data-state="Disabled">
-                <Button icon={EmailIcon} disabled $stylePreset={stylePreset} />
+                <Button icon={Email} disabled $stylePreset={stylePreset} />
               </Block>
             </Stack>
           </Cell>

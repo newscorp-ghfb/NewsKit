@@ -1,8 +1,9 @@
-import {IconComponent} from '../icons';
+import {ColorKeys} from '../themes';
 
 export interface ButtonProps {
   $size?: ButtonSize;
-  icon?: IconComponent;
+  icon?: any; // eslint-disable-line
+  $iconColor?: ColorKeys;
   $stylePreset?: string;
 }
 
