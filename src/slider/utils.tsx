@@ -1,9 +1,8 @@
 import React from 'react';
 import {getTrackBackground, Direction} from 'react-range';
-import {SliderProps} from './types';
-import {ThemeProp} from '../utils/style';
 import {Theme} from '../themes/creator';
 import {trackStylePresetDefault, indicatorStylePresetDefault} from './styled';
+import {getSingleStylePreset} from '../utils/style-preset';
 
 export const renderLabel = (Label: string | React.ComponentType) => {
   if (typeof Label === 'string') {
@@ -12,33 +11,31 @@ export const renderLabel = (Label: string | React.ComponentType) => {
   return <Label />;
 };
 
-export const getFillColor = (
-  {stylePresets}: Theme,
-  fallback: string,
-  token?: string,
-) => {
-  const preset = (token && stylePresets[token]) || stylePresets[fallback];
-  return (preset.base || {}).backgroundColor || '';
-};
+export const getFillColor = (theme: Theme, fallback: string, token?: string) =>
+  getSingleStylePreset(theme, 'base', 'backgroundColor', fallback, token);
 
-export const getTrackBackgroundStyle = ({
-  theme,
-  values,
-  min,
-  max,
-  vertical,
-  $trackStylePreset,
-  $indicatorStylePreset,
-}: SliderProps & ThemeProp) => {
-  const trackFill = getFillColor(
+export const getTrackBackgroundStyle = (
+  theme: Theme,
+  trackStylePreset: string | undefined,
+  indicatorStylePreset: string | undefined,
+  values: number[],
+  min: number,
+  max: number,
+  vertical: boolean | undefined,
+) => {
+  const trackFill = getSingleStylePreset(
     theme,
+    'base',
+    'backgroundColor',
     trackStylePresetDefault,
-    $trackStylePreset,
+    trackStylePreset,
   );
-  const indicatorFill = getFillColor(
+  const indicatorFill = getSingleStylePreset(
     theme,
+    'base',
+    'backgroundColor',
     indicatorStylePresetDefault,
-    $indicatorStylePreset,
+    indicatorStylePreset,
   );
   return {
     background: getTrackBackground({

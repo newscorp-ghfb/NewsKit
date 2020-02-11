@@ -2,7 +2,7 @@
 
 exports[`Live AudioPlayer onPlay / onPause renders play button with correct state when clicked 1`] = `
 <DocumentFragment>
-  .emotion-28 {
+  .emotion-35 {
   width: 100%;
   max-width: 920px;
   box-sizing: border-box;
@@ -122,7 +122,117 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   justify-content: center;
 }
 
-.emotion-27 {
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-11 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0A68C1;
+  margin-right: 8px;
+}
+
+.emotion-11 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-11:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-13 {
+  background-color: #e4e4e4;
+  border-radius: 12px;
+  margin: 0 16px;
+  cursor: pointer;
+  height: 12px;
+  width: 100%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-12 {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #0A68C1;
+  border-width: 1px;
+  color: #0A68C1;
+  border-radius: 100vw;
+  height: 32px;
+  width: 32px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: inherit;
+}
+
+.emotion-12 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-12:hover:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-12:active:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-12:disabled {
+  background-color: #f0f0f0;
+}
+
+.emotion-14 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0A68C1;
+  margin-left: 8px;
+}
+
+.emotion-14 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-14:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-34 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -144,53 +254,12 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   justify-content: space-between;
 }
 
-.emotion-20 {
+.emotion-24 {
   width: 100%;
   max-width: 120px;
 }
 
-.emotion-19 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
-  height: 32px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.emotion-13 {
-  color: #0A68C1;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-right: 8px;
-}
-
-.emotion-13 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-13:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-12 {
+.emotion-17 {
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -203,7 +272,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   cursor: pointer;
 }
 
-.emotion-11 {
+.emotion-16 {
   display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
@@ -211,97 +280,23 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   height: 24px;
 }
 
-.emotion-16 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 0 16px;
-  cursor: pointer;
-}
-
-.emotion-15 {
+.emotion-20 {
   background-color: #cccccc;
-  border-radius: 100vw;
+  border-radius: 12px;
+  margin: 0 16px;
+  cursor: pointer;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  cursor: inherit;
 }
 
-.emotion-15:disabled {
+.emotion-20:disabled {
   background-color: #f0f0f0;
 }
 
-.emotion-14 {
-  background-color: #FFFFFF;
-  border-style: solid;
-  border-color: #0A68C1;
-  border-width: 1px;
-  color: #0A68C1;
-  border-radius: 100vw;
-  height: 32px;
-  width: 32px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: inherit;
-}
-
-.emotion-14 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-14:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-14:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-14:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-18 {
-  color: #0A68C1;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 8px;
-}
-
-.emotion-18 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-18:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-23 {
+.emotion-26 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -330,36 +325,170 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
-}
-
-.emotion-23 svg {
-  fill: #FFFFFF;
+  padding: 0 24px;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0A68C1;
   color: #FFFFFF;
+  border-radius: 160px;
+  border: none;
 }
 
-.emotion-23:hover:not(:disabled) {
+.emotion-26:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-23:active:not(:disabled) {
+.emotion-26:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-23:focus:not(:disabled) {
+.emotion-26:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-23:disabled {
+.emotion-26:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-23:disabled {
+.emotion-26:disabled {
   cursor: not-allowed;
 }
 
-.emotion-21 {
+.emotion-26 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-26:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-26:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-26:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-26:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-25 {
+  display: inline-block;
+  fill: #0A68C1;
+  color: #0A68C1;
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-28 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  height: 48px;
+  width: 48px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 0 24px;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 160px;
+}
+
+.emotion-28:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-28:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-28:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-28:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-28:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-28 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-28:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-28:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-28:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-28:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-27 {
   display: inline-block;
   fill: #0A68C1;
   color: #0A68C1;
@@ -367,7 +496,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   height: 32px;
 }
 
-.emotion-25 {
+.emotion-32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -450,7 +579,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 <div
-    class="emotion-28"
+    class="emotion-35"
   >
     <audio
       data-testid="audio-player"
@@ -522,24 +651,58 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
       </div>
     </div>
     <div
-      class="emotion-27"
+      class="emotion-15"
     >
       <div
-        class="emotion-20"
+        class="emotion-11"
+        data-testid="min-label"
+      >
+        0:00
+      </div>
+      <div
+        class="emotion-13"
+        data-testid="slider-track"
+        values="0"
       >
         <div
-          class="emotion-19"
+          aria-label="slider"
+          aria-valuemax="1"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          class="emotion-12"
+          draggable="false"
+          role="slider"
+          style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+          tabindex="0"
+        />
+      </div>
+      <div
+        class="emotion-14"
+        data-testid="max-label"
+      >
+        00:00:00
+      </div>
+    </div>
+    <div
+      class="emotion-34"
+    >
+      <div
+        class="emotion-24"
+      >
+        <div
+          class="emotion-15"
         >
           <div
-            class="emotion-13"
+            class="emotion-11"
+            data-testid="min-label"
           >
             <button
-              class="emotion-12"
+              class="emotion-17"
               data-testid="mute-button"
               type="button"
             >
               <svg
-                class="emotion-11"
+                class="emotion-16"
                 viewBox="0 0 24 24"
               >
                 <title>
@@ -556,31 +719,28 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
             </button>
           </div>
           <div
-            class="emotion-16"
+            class="emotion-20"
             data-testid="volume-control"
             values="1"
           >
             <div
-              class="emotion-15"
-            >
-              <div
-                aria-label="Volume Control"
-                aria-valuemax="1"
-                aria-valuemin="0"
-                aria-valuenow="1"
-                class="emotion-14"
-                draggable="false"
-                role="slider"
-                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                tabindex="0"
-              />
-            </div>
+              aria-label="Volume Control"
+              aria-valuemax="1"
+              aria-valuemin="0"
+              aria-valuenow="1"
+              class="emotion-12"
+              draggable="false"
+              role="slider"
+              style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+              tabindex="0"
+            />
           </div>
           <div
-            class="emotion-18"
+            class="emotion-14"
+            data-testid="max-label"
           >
             <svg
-              class="emotion-11"
+              class="emotion-16"
               viewBox="0 0 24 24"
             >
               <title>
@@ -602,13 +762,31 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
           class="emotion-10"
         >
           <button
+            class="emotion-26"
+            data-testid="audio-player-replay"
+            type="button"
+          >
+            <svg
+              class="emotion-25"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Replay10 icon
+              </title>
+              <path
+                d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
+              />
+            </svg>
+          </button>
+          <button
             aria-pressed="true"
-            class="emotion-23"
+            class="emotion-28"
             data-testid="audio-player-play-button"
             type="button"
           >
-            <div
-              class="emotion-10"
+            <svg
+              class="emotion-27"
+              viewBox="0 0 24 24"
             >
               <svg
                 class="emotion-21"
@@ -623,13 +801,37 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
               </svg>
             </div>
           </button>
+          <button
+            class="emotion-26"
+            data-testid="audio-player-forward"
+            type="button"
+          >
+            <svg
+              class="emotion-25"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Forward10 icon
+              </title>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+              />
+              <path
+                d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
       <div
-        class="emotion-20"
+        class="emotion-24"
       >
         <div
-          class="emotion-25"
+          class="emotion-32"
         />
       </div>
     </div>
@@ -639,7 +841,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 exports[`Live AudioPlayer onPlay / onPause renders play button with correct state when clicked 2`] = `
 <DocumentFragment>
-  .emotion-28 {
+  .emotion-35 {
   width: 100%;
   max-width: 920px;
   box-sizing: border-box;
@@ -759,7 +961,117 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   justify-content: center;
 }
 
-.emotion-27 {
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-11 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0A68C1;
+  margin-right: 8px;
+}
+
+.emotion-11 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-11:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-13 {
+  background-color: #e4e4e4;
+  border-radius: 12px;
+  margin: 0 16px;
+  cursor: pointer;
+  height: 12px;
+  width: 100%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-12 {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #0A68C1;
+  border-width: 1px;
+  color: #0A68C1;
+  border-radius: 100vw;
+  height: 32px;
+  width: 32px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: inherit;
+}
+
+.emotion-12 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-12:hover:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-12:active:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-12:disabled {
+  background-color: #f0f0f0;
+}
+
+.emotion-14 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0A68C1;
+  margin-left: 8px;
+}
+
+.emotion-14 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-14:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-34 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -781,53 +1093,12 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   justify-content: space-between;
 }
 
-.emotion-20 {
+.emotion-24 {
   width: 100%;
   max-width: 120px;
 }
 
-.emotion-19 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
-  height: 32px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.emotion-13 {
-  color: #0A68C1;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-right: 8px;
-}
-
-.emotion-13 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-13:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-12 {
+.emotion-17 {
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -840,7 +1111,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   cursor: pointer;
 }
 
-.emotion-11 {
+.emotion-16 {
   display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
@@ -848,97 +1119,23 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   height: 24px;
 }
 
-.emotion-16 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 0 16px;
-  cursor: pointer;
-}
-
-.emotion-15 {
+.emotion-20 {
   background-color: #cccccc;
-  border-radius: 100vw;
+  border-radius: 12px;
+  margin: 0 16px;
+  cursor: pointer;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  cursor: inherit;
 }
 
-.emotion-15:disabled {
+.emotion-20:disabled {
   background-color: #f0f0f0;
 }
 
-.emotion-14 {
-  background-color: #FFFFFF;
-  border-style: solid;
-  border-color: #0A68C1;
-  border-width: 1px;
-  color: #0A68C1;
-  border-radius: 100vw;
-  height: 32px;
-  width: 32px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: inherit;
-}
-
-.emotion-14 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-14:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-14:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-14:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-18 {
-  color: #0A68C1;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 8px;
-}
-
-.emotion-18 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-18:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-23 {
+.emotion-26 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -967,36 +1164,170 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
-}
-
-.emotion-23 svg {
-  fill: #FFFFFF;
+  padding: 0 24px;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0A68C1;
   color: #FFFFFF;
+  border-radius: 160px;
+  border: none;
 }
 
-.emotion-23:hover:not(:disabled) {
+.emotion-26:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-23:active:not(:disabled) {
+.emotion-26:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-23:focus:not(:disabled) {
+.emotion-26:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-23:disabled {
+.emotion-26:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-23:disabled {
+.emotion-26:disabled {
   cursor: not-allowed;
 }
 
-.emotion-21 {
+.emotion-26 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-26:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-26:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-26:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-26:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-25 {
+  display: inline-block;
+  fill: #0A68C1;
+  color: #0A68C1;
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-28 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  height: 48px;
+  width: 48px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 0 24px;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 160px;
+}
+
+.emotion-28:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-28:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-28:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-28:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-28:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-28 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-28:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-28:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-28:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-28:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-27 {
   display: inline-block;
   fill: #0A68C1;
   color: #0A68C1;
@@ -1004,7 +1335,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   height: 32px;
 }
 
-.emotion-25 {
+.emotion-32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1087,7 +1418,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 <div
-    class="emotion-28"
+    class="emotion-35"
   >
     <audio
       data-testid="audio-player"
@@ -1159,24 +1490,58 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
       </div>
     </div>
     <div
-      class="emotion-27"
+      class="emotion-15"
     >
       <div
-        class="emotion-20"
+        class="emotion-11"
+        data-testid="min-label"
+      >
+        0:00
+      </div>
+      <div
+        class="emotion-13"
+        data-testid="slider-track"
+        values="0"
       >
         <div
-          class="emotion-19"
+          aria-label="slider"
+          aria-valuemax="1"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          class="emotion-12"
+          draggable="false"
+          role="slider"
+          style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+          tabindex="0"
+        />
+      </div>
+      <div
+        class="emotion-14"
+        data-testid="max-label"
+      >
+        00:00:00
+      </div>
+    </div>
+    <div
+      class="emotion-34"
+    >
+      <div
+        class="emotion-24"
+      >
+        <div
+          class="emotion-15"
         >
           <div
-            class="emotion-13"
+            class="emotion-11"
+            data-testid="min-label"
           >
             <button
-              class="emotion-12"
+              class="emotion-17"
               data-testid="mute-button"
               type="button"
             >
               <svg
-                class="emotion-11"
+                class="emotion-16"
                 viewBox="0 0 24 24"
               >
                 <title>
@@ -1193,31 +1558,28 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
             </button>
           </div>
           <div
-            class="emotion-16"
+            class="emotion-20"
             data-testid="volume-control"
             values="1"
           >
             <div
-              class="emotion-15"
-            >
-              <div
-                aria-label="Volume Control"
-                aria-valuemax="1"
-                aria-valuemin="0"
-                aria-valuenow="1"
-                class="emotion-14"
-                draggable="false"
-                role="slider"
-                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                tabindex="0"
-              />
-            </div>
+              aria-label="Volume Control"
+              aria-valuemax="1"
+              aria-valuemin="0"
+              aria-valuenow="1"
+              class="emotion-12"
+              draggable="false"
+              role="slider"
+              style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+              tabindex="0"
+            />
           </div>
           <div
-            class="emotion-18"
+            class="emotion-14"
+            data-testid="max-label"
           >
             <svg
-              class="emotion-11"
+              class="emotion-16"
               viewBox="0 0 24 24"
             >
               <title>
@@ -1239,13 +1601,31 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
           class="emotion-10"
         >
           <button
+            class="emotion-26"
+            data-testid="audio-player-replay"
+            type="button"
+          >
+            <svg
+              class="emotion-25"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Replay10 icon
+              </title>
+              <path
+                d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
+              />
+            </svg>
+          </button>
+          <button
             aria-pressed="false"
-            class="emotion-23"
+            class="emotion-28"
             data-testid="audio-player-play-button"
             type="button"
           >
-            <div
-              class="emotion-10"
+            <svg
+              class="emotion-27"
+              viewBox="0 0 24 24"
             >
               <svg
                 class="emotion-21"
@@ -1260,13 +1640,37 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
               </svg>
             </div>
           </button>
+          <button
+            class="emotion-26"
+            data-testid="audio-player-forward"
+            type="button"
+          >
+            <svg
+              class="emotion-25"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Forward10 icon
+              </title>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+              />
+              <path
+                d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
       <div
-        class="emotion-20"
+        class="emotion-24"
       >
         <div
-          class="emotion-25"
+          class="emotion-32"
         />
       </div>
     </div>
@@ -1276,7 +1680,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fires 1`] = `
 <DocumentFragment>
-  .emotion-28 {
+  .emotion-35 {
   width: 100%;
   max-width: 920px;
   box-sizing: border-box;
@@ -1396,7 +1800,117 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   justify-content: center;
 }
 
-.emotion-27 {
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-11 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0A68C1;
+  margin-right: 8px;
+}
+
+.emotion-11 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-11:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-13 {
+  background-color: #e4e4e4;
+  border-radius: 12px;
+  margin: 0 16px;
+  cursor: pointer;
+  height: 12px;
+  width: 100%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-12 {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #0A68C1;
+  border-width: 1px;
+  color: #0A68C1;
+  border-radius: 32px;
+  height: 32px;
+  width: 32px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: inherit;
+}
+
+.emotion-12 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-12:hover:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-12:active:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-12:disabled {
+  background-color: #f0f0f0;
+}
+
+.emotion-14 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0A68C1;
+  margin-left: 8px;
+}
+
+.emotion-14 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-14:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-34 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1418,53 +1932,12 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   justify-content: space-between;
 }
 
-.emotion-20 {
+.emotion-24 {
   width: 100%;
   max-width: 120px;
 }
 
-.emotion-19 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
-  height: 32px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.emotion-13 {
-  color: #0A68C1;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-right: 8px;
-}
-
-.emotion-13 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-13:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-12 {
+.emotion-17 {
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -1477,7 +1950,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   cursor: pointer;
 }
 
-.emotion-11 {
+.emotion-16 {
   display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
@@ -1485,40 +1958,58 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   height: 24px;
 }
 
-.emotion-16 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 0 16px;
-  cursor: pointer;
-}
-
-.emotion-15 {
+.emotion-20 {
   background-color: #cccccc;
-  border-radius: 100vw;
+  border-radius: 12px;
+  margin: 0 16px;
+  cursor: pointer;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  cursor: inherit;
 }
 
-.emotion-15:disabled {
+.emotion-20:disabled {
   background-color: #f0f0f0;
 }
 
-.emotion-14 {
-  background-color: #FFFFFF;
-  border-style: solid;
-  border-color: #0A68C1;
-  border-width: 1px;
-  color: #0A68C1;
-  border-radius: 100vw;
-  height: 32px;
-  width: 32px;
+.emotion-26 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  height: 48px;
+  width: 48px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 0 24px;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -1527,55 +2018,64 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  box-sizing: border-box;
-  cursor: inherit;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 160px;
+  border: none;
 }
 
-.emotion-14 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+.emotion-26:hover:not(:disabled) {
+  background-color: #02509B;
 }
 
-.emotion-14:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+.emotion-26:active:not(:disabled) {
+  background-color: #01396E;
 }
 
-.emotion-14:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+.emotion-26:focus:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-14:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-18 {
-  color: #0A68C1;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 8px;
-}
-
-.emotion-18 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-18:disabled {
+.emotion-26:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-23 {
+.emotion-26:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-26 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-26:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-26:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-26:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-26:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-25 {
+  display: inline-block;
+  fill: #0A68C1;
+  color: #0A68C1;
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-28 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -1604,36 +2104,69 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
-}
-
-.emotion-23 svg {
-  fill: #FFFFFF;
+  padding: 0 24px;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0A68C1;
   color: #FFFFFF;
+  border-radius: 160px;
 }
 
-.emotion-23:hover:not(:disabled) {
+.emotion-28:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-23:active:not(:disabled) {
+.emotion-28:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-23:focus:not(:disabled) {
+.emotion-28:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-23:disabled {
+.emotion-28:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-23:disabled {
+.emotion-28:disabled {
   cursor: not-allowed;
 }
 
-.emotion-21 {
+.emotion-28 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-28:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-28:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-28:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-28:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-27 {
   display: inline-block;
   fill: #0A68C1;
   color: #0A68C1;
@@ -1641,7 +2174,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   height: 32px;
 }
 
-.emotion-25 {
+.emotion-32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1724,7 +2257,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 }
 
 <div
-    class="emotion-28"
+    class="emotion-35"
   >
     <audio
       data-testid="audio-player"
@@ -1796,24 +2329,58 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
       </div>
     </div>
     <div
-      class="emotion-27"
+      class="emotion-15"
     >
       <div
-        class="emotion-20"
+        class="emotion-11"
+        data-testid="min-label"
+      >
+        0:00
+      </div>
+      <div
+        class="emotion-13"
+        data-testid="slider-track"
+        values="0"
       >
         <div
-          class="emotion-19"
+          aria-label="slider"
+          aria-valuemax="1"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          class="emotion-12"
+          draggable="false"
+          role="slider"
+          style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+          tabindex="0"
+        />
+      </div>
+      <div
+        class="emotion-14"
+        data-testid="max-label"
+      >
+        00:00:00
+      </div>
+    </div>
+    <div
+      class="emotion-34"
+    >
+      <div
+        class="emotion-24"
+      >
+        <div
+          class="emotion-15"
         >
           <div
-            class="emotion-13"
+            class="emotion-11"
+            data-testid="min-label"
           >
             <button
-              class="emotion-12"
+              class="emotion-17"
               data-testid="mute-button"
               type="button"
             >
               <svg
-                class="emotion-11"
+                class="emotion-16"
                 viewBox="0 0 24 24"
               >
                 <title>
@@ -1830,31 +2397,28 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
             </button>
           </div>
           <div
-            class="emotion-16"
+            class="emotion-20"
             data-testid="volume-control"
             values="1"
           >
             <div
-              class="emotion-15"
-            >
-              <div
-                aria-label="Volume Control"
-                aria-valuemax="1"
-                aria-valuemin="0"
-                aria-valuenow="1"
-                class="emotion-14"
-                draggable="false"
-                role="slider"
-                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                tabindex="0"
-              />
-            </div>
+              aria-label="Volume Control"
+              aria-valuemax="1"
+              aria-valuemin="0"
+              aria-valuenow="1"
+              class="emotion-12"
+              draggable="false"
+              role="slider"
+              style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+              tabindex="0"
+            />
           </div>
           <div
-            class="emotion-18"
+            class="emotion-14"
+            data-testid="max-label"
           >
             <svg
-              class="emotion-11"
+              class="emotion-16"
               viewBox="0 0 24 24"
             >
               <title>
@@ -1876,13 +2440,31 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
           class="emotion-10"
         >
           <button
+            class="emotion-26"
+            data-testid="audio-player-replay"
+            type="button"
+          >
+            <svg
+              class="emotion-25"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Replay10 icon
+              </title>
+              <path
+                d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
+              />
+            </svg>
+          </button>
+          <button
             aria-pressed="false"
-            class="emotion-23"
+            class="emotion-28"
             data-testid="audio-player-play-button"
             type="button"
           >
-            <div
-              class="emotion-10"
+            <svg
+              class="emotion-27"
+              viewBox="0 0 24 24"
             >
               <svg
                 class="emotion-21"
@@ -1897,13 +2479,37 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
               </svg>
             </div>
           </button>
+          <button
+            class="emotion-26"
+            data-testid="audio-player-forward"
+            type="button"
+          >
+            <svg
+              class="emotion-25"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Forward10 icon
+              </title>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+              />
+              <path
+                d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
       <div
-        class="emotion-20"
+        class="emotion-24"
       >
         <div
-          class="emotion-25"
+          class="emotion-32"
         />
       </div>
     </div>
@@ -1913,7 +2519,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 
 exports[`Live AudioPlayer onPlay / onPause renders player after pause event fires 1`] = `
 <DocumentFragment>
-  .emotion-28 {
+  .emotion-35 {
   width: 100%;
   max-width: 920px;
   box-sizing: border-box;
@@ -2033,7 +2639,117 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   justify-content: center;
 }
 
-.emotion-27 {
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-11 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0A68C1;
+  margin-right: 8px;
+}
+
+.emotion-11 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-11:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-13 {
+  background-color: #e4e4e4;
+  border-radius: 12px;
+  margin: 0 16px;
+  cursor: pointer;
+  height: 12px;
+  width: 100%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-12 {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #0A68C1;
+  border-width: 1px;
+  color: #0A68C1;
+  border-radius: 32px;
+  height: 32px;
+  width: 32px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: inherit;
+}
+
+.emotion-12 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-12:hover:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-12:active:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-12:disabled {
+  background-color: #f0f0f0;
+}
+
+.emotion-14 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0A68C1;
+  margin-left: 8px;
+}
+
+.emotion-14 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-14:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-34 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2055,53 +2771,12 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   justify-content: space-between;
 }
 
-.emotion-20 {
+.emotion-24 {
   width: 100%;
   max-width: 120px;
 }
 
-.emotion-19 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
-  height: 32px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.emotion-13 {
-  color: #0A68C1;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-right: 8px;
-}
-
-.emotion-13 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-13:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-12 {
+.emotion-17 {
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -2114,7 +2789,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   cursor: pointer;
 }
 
-.emotion-11 {
+.emotion-16 {
   display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
@@ -2122,40 +2797,58 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   height: 24px;
 }
 
-.emotion-16 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 0 16px;
-  cursor: pointer;
-}
-
-.emotion-15 {
+.emotion-20 {
   background-color: #cccccc;
-  border-radius: 100vw;
+  border-radius: 12px;
+  margin: 0 16px;
+  cursor: pointer;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  cursor: inherit;
 }
 
-.emotion-15:disabled {
+.emotion-20:disabled {
   background-color: #f0f0f0;
 }
 
-.emotion-14 {
-  background-color: #FFFFFF;
-  border-style: solid;
-  border-color: #0A68C1;
-  border-width: 1px;
-  color: #0A68C1;
-  border-radius: 100vw;
-  height: 32px;
-  width: 32px;
+.emotion-26 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  height: 48px;
+  width: 48px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 0 24px;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -2164,55 +2857,64 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  box-sizing: border-box;
-  cursor: inherit;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 160px;
+  border: none;
 }
 
-.emotion-14 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+.emotion-26:hover:not(:disabled) {
+  background-color: #02509B;
 }
 
-.emotion-14:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+.emotion-26:active:not(:disabled) {
+  background-color: #01396E;
 }
 
-.emotion-14:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+.emotion-26:focus:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-14:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-18 {
-  color: #0A68C1;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 8px;
-}
-
-.emotion-18 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-18:disabled {
+.emotion-26:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-23 {
+.emotion-26:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-26 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-26:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-26:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-26:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-26:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-25 {
+  display: inline-block;
+  fill: #0A68C1;
+  color: #0A68C1;
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-28 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -2249,28 +2951,50 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   color: #FFFFFF;
 }
 
-.emotion-23:hover:not(:disabled) {
+.emotion-28:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-23:active:not(:disabled) {
+.emotion-28:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-23:focus:not(:disabled) {
+.emotion-28:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-23:disabled {
+.emotion-28:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-23:disabled {
+.emotion-28:disabled {
   cursor: not-allowed;
 }
 
-.emotion-21 {
+.emotion-28 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-28:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-28:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-28:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-28:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-27 {
   display: inline-block;
   fill: #0A68C1;
   color: #0A68C1;
@@ -2278,7 +3002,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   height: 32px;
 }
 
-.emotion-25 {
+.emotion-32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2361,7 +3085,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 }
 
 <div
-    class="emotion-28"
+    class="emotion-35"
   >
     <audio
       data-testid="audio-player"
@@ -2433,24 +3157,58 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
       </div>
     </div>
     <div
-      class="emotion-27"
+      class="emotion-15"
     >
       <div
-        class="emotion-20"
+        class="emotion-11"
+        data-testid="min-label"
+      >
+        0:00
+      </div>
+      <div
+        class="emotion-13"
+        data-testid="slider-track"
+        values="0"
       >
         <div
-          class="emotion-19"
+          aria-label="slider"
+          aria-valuemax="1"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          class="emotion-12"
+          draggable="false"
+          role="slider"
+          style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+          tabindex="0"
+        />
+      </div>
+      <div
+        class="emotion-14"
+        data-testid="max-label"
+      >
+        00:00:00
+      </div>
+    </div>
+    <div
+      class="emotion-34"
+    >
+      <div
+        class="emotion-24"
+      >
+        <div
+          class="emotion-15"
         >
           <div
-            class="emotion-13"
+            class="emotion-11"
+            data-testid="min-label"
           >
             <button
-              class="emotion-12"
+              class="emotion-17"
               data-testid="mute-button"
               type="button"
             >
               <svg
-                class="emotion-11"
+                class="emotion-16"
                 viewBox="0 0 24 24"
               >
                 <title>
@@ -2467,31 +3225,28 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
             </button>
           </div>
           <div
-            class="emotion-16"
+            class="emotion-20"
             data-testid="volume-control"
             values="1"
           >
             <div
-              class="emotion-15"
-            >
-              <div
-                aria-label="Volume Control"
-                aria-valuemax="1"
-                aria-valuemin="0"
-                aria-valuenow="1"
-                class="emotion-14"
-                draggable="false"
-                role="slider"
-                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                tabindex="0"
-              />
-            </div>
+              aria-label="Volume Control"
+              aria-valuemax="1"
+              aria-valuemin="0"
+              aria-valuenow="1"
+              class="emotion-12"
+              draggable="false"
+              role="slider"
+              style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+              tabindex="0"
+            />
           </div>
           <div
-            class="emotion-18"
+            class="emotion-14"
+            data-testid="max-label"
           >
             <svg
-              class="emotion-11"
+              class="emotion-16"
               viewBox="0 0 24 24"
             >
               <title>
@@ -2513,13 +3268,31 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
           class="emotion-10"
         >
           <button
+            class="emotion-26"
+            data-testid="audio-player-replay"
+            type="button"
+          >
+            <svg
+              class="emotion-25"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Replay10 icon
+              </title>
+              <path
+                d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
+              />
+            </svg>
+          </button>
+          <button
             aria-pressed="false"
-            class="emotion-23"
+            class="emotion-28"
             data-testid="audio-player-play-button"
             type="button"
           >
-            <div
-              class="emotion-10"
+            <svg
+              class="emotion-27"
+              viewBox="0 0 24 24"
             >
               <svg
                 class="emotion-21"
@@ -2534,13 +3307,37 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
               </svg>
             </div>
           </button>
+          <button
+            class="emotion-26"
+            data-testid="audio-player-forward"
+            type="button"
+          >
+            <svg
+              class="emotion-25"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Forward10 icon
+              </title>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+              />
+              <path
+                d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
       <div
-        class="emotion-20"
+        class="emotion-24"
       >
         <div
-          class="emotion-25"
+          class="emotion-32"
         />
       </div>
     </div>
@@ -2550,7 +3347,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 
 exports[`Live AudioPlayer onPlay / onPause renders player after play event fires 1`] = `
 <DocumentFragment>
-  .emotion-28 {
+  .emotion-35 {
   width: 100%;
   max-width: 920px;
   box-sizing: border-box;
@@ -2670,7 +3467,117 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   justify-content: center;
 }
 
-.emotion-27 {
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-11 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0A68C1;
+  margin-right: 8px;
+}
+
+.emotion-11 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-11:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-13 {
+  background-color: #e4e4e4;
+  border-radius: 12px;
+  margin: 0 16px;
+  cursor: pointer;
+  height: 12px;
+  width: 100%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-12 {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #0A68C1;
+  border-width: 1px;
+  color: #0A68C1;
+  border-radius: 32px;
+  height: 32px;
+  width: 32px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: inherit;
+}
+
+.emotion-12 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-12:hover:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-12:active:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-12:disabled {
+  background-color: #f0f0f0;
+}
+
+.emotion-14 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0A68C1;
+  margin-left: 8px;
+}
+
+.emotion-14 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-14:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-34 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2692,53 +3599,12 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   justify-content: space-between;
 }
 
-.emotion-20 {
+.emotion-24 {
   width: 100%;
   max-width: 120px;
 }
 
-.emotion-19 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
-  height: 32px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.emotion-13 {
-  color: #0A68C1;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-right: 8px;
-}
-
-.emotion-13 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-13:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-12 {
+.emotion-17 {
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -2751,7 +3617,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   cursor: pointer;
 }
 
-.emotion-11 {
+.emotion-16 {
   display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
@@ -2759,40 +3625,58 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   height: 24px;
 }
 
-.emotion-16 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 0 16px;
-  cursor: pointer;
-}
-
-.emotion-15 {
+.emotion-20 {
   background-color: #cccccc;
-  border-radius: 100vw;
+  border-radius: 12px;
+  margin: 0 16px;
+  cursor: pointer;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  cursor: inherit;
 }
 
-.emotion-15:disabled {
+.emotion-20:disabled {
   background-color: #f0f0f0;
 }
 
-.emotion-14 {
-  background-color: #FFFFFF;
-  border-style: solid;
-  border-color: #0A68C1;
-  border-width: 1px;
-  color: #0A68C1;
-  border-radius: 100vw;
-  height: 32px;
-  width: 32px;
+.emotion-26 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  height: 48px;
+  width: 48px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 0 24px;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -2801,55 +3685,64 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  box-sizing: border-box;
-  cursor: inherit;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 160px;
+  border: none;
 }
 
-.emotion-14 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+.emotion-26:hover:not(:disabled) {
+  background-color: #02509B;
 }
 
-.emotion-14:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+.emotion-26:active:not(:disabled) {
+  background-color: #01396E;
 }
 
-.emotion-14:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+.emotion-26:focus:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-14:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-18 {
-  color: #0A68C1;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 8px;
-}
-
-.emotion-18 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-18:disabled {
+.emotion-26:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-23 {
+.emotion-26:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-26 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-26:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-26:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-26:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-26:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-25 {
+  display: inline-block;
+  fill: #0A68C1;
+  color: #0A68C1;
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-28 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -2878,36 +3771,69 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
-}
-
-.emotion-23 svg {
-  fill: #FFFFFF;
+  padding: 0 24px;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0A68C1;
   color: #FFFFFF;
+  border-radius: 160px;
 }
 
-.emotion-23:hover:not(:disabled) {
+.emotion-28:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-23:active:not(:disabled) {
+.emotion-28:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-23:focus:not(:disabled) {
+.emotion-28:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-23:disabled {
+.emotion-28:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-23:disabled {
+.emotion-28:disabled {
   cursor: not-allowed;
 }
 
-.emotion-21 {
+.emotion-28 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-28:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-28:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-28:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-28:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-27 {
   display: inline-block;
   fill: #0A68C1;
   color: #0A68C1;
@@ -2915,7 +3841,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   height: 32px;
 }
 
-.emotion-25 {
+.emotion-32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2998,7 +3924,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 }
 
 <div
-    class="emotion-28"
+    class="emotion-35"
   >
     <audio
       data-testid="audio-player"
@@ -3070,24 +3996,58 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
       </div>
     </div>
     <div
-      class="emotion-27"
+      class="emotion-15"
     >
       <div
-        class="emotion-20"
+        class="emotion-11"
+        data-testid="min-label"
+      >
+        0:00
+      </div>
+      <div
+        class="emotion-13"
+        data-testid="slider-track"
+        values="0"
       >
         <div
-          class="emotion-19"
+          aria-label="slider"
+          aria-valuemax="1"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          class="emotion-12"
+          draggable="false"
+          role="slider"
+          style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+          tabindex="0"
+        />
+      </div>
+      <div
+        class="emotion-14"
+        data-testid="max-label"
+      >
+        00:00:00
+      </div>
+    </div>
+    <div
+      class="emotion-34"
+    >
+      <div
+        class="emotion-24"
+      >
+        <div
+          class="emotion-15"
         >
           <div
-            class="emotion-13"
+            class="emotion-11"
+            data-testid="min-label"
           >
             <button
-              class="emotion-12"
+              class="emotion-17"
               data-testid="mute-button"
               type="button"
             >
               <svg
-                class="emotion-11"
+                class="emotion-16"
                 viewBox="0 0 24 24"
               >
                 <title>
@@ -3104,31 +4064,28 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
             </button>
           </div>
           <div
-            class="emotion-16"
+            class="emotion-20"
             data-testid="volume-control"
             values="1"
           >
             <div
-              class="emotion-15"
-            >
-              <div
-                aria-label="Volume Control"
-                aria-valuemax="1"
-                aria-valuemin="0"
-                aria-valuenow="1"
-                class="emotion-14"
-                draggable="false"
-                role="slider"
-                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                tabindex="0"
-              />
-            </div>
+              aria-label="Volume Control"
+              aria-valuemax="1"
+              aria-valuemin="0"
+              aria-valuenow="1"
+              class="emotion-12"
+              draggable="false"
+              role="slider"
+              style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+              tabindex="0"
+            />
           </div>
           <div
-            class="emotion-18"
+            class="emotion-14"
+            data-testid="max-label"
           >
             <svg
-              class="emotion-11"
+              class="emotion-16"
               viewBox="0 0 24 24"
             >
               <title>
@@ -3150,13 +4107,31 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
           class="emotion-10"
         >
           <button
+            class="emotion-26"
+            data-testid="audio-player-replay"
+            type="button"
+          >
+            <svg
+              class="emotion-25"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Replay10 icon
+              </title>
+              <path
+                d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
+              />
+            </svg>
+          </button>
+          <button
             aria-pressed="true"
-            class="emotion-23"
+            class="emotion-28"
             data-testid="audio-player-play-button"
             type="button"
           >
-            <div
-              class="emotion-10"
+            <svg
+              class="emotion-27"
+              viewBox="0 0 24 24"
             >
               <svg
                 class="emotion-21"
@@ -3171,13 +4146,37 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
               </svg>
             </div>
           </button>
+          <button
+            class="emotion-26"
+            data-testid="audio-player-forward"
+            type="button"
+          >
+            <svg
+              class="emotion-25"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Forward10 icon
+              </title>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+              />
+              <path
+                d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
       <div
-        class="emotion-20"
+        class="emotion-24"
       >
         <div
-          class="emotion-25"
+          class="emotion-32"
         />
       </div>
     </div>
@@ -3187,7 +4186,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 
 exports[`Live AudioPlayer render default player 1`] = `
 <DocumentFragment>
-  .emotion-25 {
+  .emotion-32 {
   width: 100%;
   max-width: 920px;
   box-sizing: border-box;
@@ -3307,7 +4306,117 @@ exports[`Live AudioPlayer render default player 1`] = `
   justify-content: center;
 }
 
-.emotion-24 {
+.emotion-12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-8 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0A68C1;
+  margin-right: 8px;
+}
+
+.emotion-8 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-8:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-10 {
+  background-color: #e4e4e4;
+  border-radius: 12px;
+  margin: 0 16px;
+  cursor: pointer;
+  height: 12px;
+  width: 100%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-9 {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #0A68C1;
+  border-width: 1px;
+  color: #0A68C1;
+  border-radius: 32px;
+  height: 32px;
+  width: 32px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: inherit;
+}
+
+.emotion-9 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-9:hover:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-9:active:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-9:disabled {
+  background-color: #f0f0f0;
+}
+
+.emotion-11 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0A68C1;
+  margin-left: 8px;
+}
+
+.emotion-11 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-11:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-31 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3329,53 +4438,12 @@ exports[`Live AudioPlayer render default player 1`] = `
   justify-content: space-between;
 }
 
-.emotion-17 {
+.emotion-21 {
   width: 100%;
   max-width: 120px;
 }
 
-.emotion-16 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
-  height: 32px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.emotion-10 {
-  color: #0A68C1;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-right: 8px;
-}
-
-.emotion-10 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-10:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-9 {
+.emotion-14 {
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -3388,7 +4456,7 @@ exports[`Live AudioPlayer render default player 1`] = `
   cursor: pointer;
 }
 
-.emotion-8 {
+.emotion-13 {
   display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
@@ -3396,40 +4464,58 @@ exports[`Live AudioPlayer render default player 1`] = `
   height: 24px;
 }
 
-.emotion-13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 0 16px;
-  cursor: pointer;
-}
-
-.emotion-12 {
+.emotion-17 {
   background-color: #cccccc;
-  border-radius: 100vw;
+  border-radius: 12px;
+  margin: 0 16px;
+  cursor: pointer;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  cursor: inherit;
 }
 
-.emotion-12:disabled {
+.emotion-17:disabled {
   background-color: #f0f0f0;
 }
 
-.emotion-11 {
-  background-color: #FFFFFF;
-  border-style: solid;
-  border-color: #0A68C1;
-  border-width: 1px;
-  color: #0A68C1;
-  border-radius: 100vw;
-  height: 32px;
-  width: 32px;
+.emotion-23 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  height: 48px;
+  width: 48px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 0 24px;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -3438,55 +4524,64 @@ exports[`Live AudioPlayer render default player 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  box-sizing: border-box;
-  cursor: inherit;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 160px;
+  border: none;
 }
 
-.emotion-11 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+.emotion-23:hover:not(:disabled) {
+  background-color: #02509B;
 }
 
-.emotion-11:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+.emotion-23:active:not(:disabled) {
+  background-color: #01396E;
 }
 
-.emotion-11:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+.emotion-23:focus:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-11:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-15 {
-  color: #0A68C1;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 8px;
-}
-
-.emotion-15 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-15:disabled {
+.emotion-23:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-20 {
+.emotion-23:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-23 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-23:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-23:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-23:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-23:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-22 {
+  display: inline-block;
+  fill: #0A68C1;
+  color: #0A68C1;
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-25 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -3515,36 +4610,69 @@ exports[`Live AudioPlayer render default player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
-}
-
-.emotion-20 svg {
-  fill: #FFFFFF;
+  padding: 0 24px;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0A68C1;
   color: #FFFFFF;
+  border-radius: 160px;
 }
 
-.emotion-20:hover:not(:disabled) {
+.emotion-25:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-20:active:not(:disabled) {
+.emotion-25:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-20:focus:not(:disabled) {
+.emotion-25:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-20:disabled {
+.emotion-25:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-20:disabled {
+.emotion-25:disabled {
   cursor: not-allowed;
 }
 
-.emotion-18 {
+.emotion-25 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-25:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-25:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-25:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-25:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-24 {
   display: inline-block;
   fill: #0A68C1;
   color: #0A68C1;
@@ -3552,7 +4680,7 @@ exports[`Live AudioPlayer render default player 1`] = `
   height: 32px;
 }
 
-.emotion-22 {
+.emotion-29 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3575,7 +4703,7 @@ exports[`Live AudioPlayer render default player 1`] = `
 }
 
 <div
-    class="emotion-25"
+    class="emotion-32"
   >
     <audio
       data-testid="audio-player"
@@ -3620,24 +4748,58 @@ exports[`Live AudioPlayer render default player 1`] = `
       </div>
     </div>
     <div
-      class="emotion-24"
+      class="emotion-12"
     >
       <div
-        class="emotion-17"
+        class="emotion-8"
+        data-testid="min-label"
+      >
+        0:00
+      </div>
+      <div
+        class="emotion-10"
+        data-testid="slider-track"
+        values="0"
       >
         <div
-          class="emotion-16"
+          aria-label="slider"
+          aria-valuemax="1"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          class="emotion-9"
+          draggable="false"
+          role="slider"
+          style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+          tabindex="0"
+        />
+      </div>
+      <div
+        class="emotion-11"
+        data-testid="max-label"
+      >
+        00:00:00
+      </div>
+    </div>
+    <div
+      class="emotion-31"
+    >
+      <div
+        class="emotion-21"
+      >
+        <div
+          class="emotion-12"
         >
           <div
-            class="emotion-10"
+            class="emotion-8"
+            data-testid="min-label"
           >
             <button
-              class="emotion-9"
+              class="emotion-14"
               data-testid="mute-button"
               type="button"
             >
               <svg
-                class="emotion-8"
+                class="emotion-13"
                 viewBox="0 0 24 24"
               >
                 <title>
@@ -3654,31 +4816,28 @@ exports[`Live AudioPlayer render default player 1`] = `
             </button>
           </div>
           <div
-            class="emotion-13"
+            class="emotion-17"
             data-testid="volume-control"
             values="1"
           >
             <div
-              class="emotion-12"
-            >
-              <div
-                aria-label="Volume Control"
-                aria-valuemax="1"
-                aria-valuemin="0"
-                aria-valuenow="1"
-                class="emotion-11"
-                draggable="false"
-                role="slider"
-                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                tabindex="0"
-              />
-            </div>
+              aria-label="Volume Control"
+              aria-valuemax="1"
+              aria-valuemin="0"
+              aria-valuenow="1"
+              class="emotion-9"
+              draggable="false"
+              role="slider"
+              style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+              tabindex="0"
+            />
           </div>
           <div
-            class="emotion-15"
+            class="emotion-11"
+            data-testid="max-label"
           >
             <svg
-              class="emotion-8"
+              class="emotion-13"
               viewBox="0 0 24 24"
             >
               <title>
@@ -3700,13 +4859,31 @@ exports[`Live AudioPlayer render default player 1`] = `
           class="emotion-7"
         >
           <button
+            class="emotion-23"
+            data-testid="audio-player-replay"
+            type="button"
+          >
+            <svg
+              class="emotion-22"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Replay10 icon
+              </title>
+              <path
+                d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
+              />
+            </svg>
+          </button>
+          <button
             aria-pressed="false"
-            class="emotion-20"
+            class="emotion-25"
             data-testid="audio-player-play-button"
             type="button"
           >
-            <div
-              class="emotion-7"
+            <svg
+              class="emotion-24"
+              viewBox="0 0 24 24"
             >
               <svg
                 class="emotion-18"
@@ -3721,13 +4898,37 @@ exports[`Live AudioPlayer render default player 1`] = `
               </svg>
             </div>
           </button>
+          <button
+            class="emotion-23"
+            data-testid="audio-player-forward"
+            type="button"
+          >
+            <svg
+              class="emotion-22"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Forward10 icon
+              </title>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+              />
+              <path
+                d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
       <div
-        class="emotion-17"
+        class="emotion-21"
       >
         <div
-          class="emotion-22"
+          class="emotion-29"
         />
       </div>
     </div>
@@ -3737,7 +4938,7 @@ exports[`Live AudioPlayer render default player 1`] = `
 
 exports[`Live AudioPlayer render live player 1`] = `
 <DocumentFragment>
-  .emotion-29 {
+  .emotion-27 {
   width: 100%;
   max-width: 920px;
   box-sizing: border-box;
@@ -3857,34 +5058,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   justify-content: center;
 }
 
-.emotion-28 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.emotion-21 {
-  width: 100%;
-  max-width: 120px;
-}
-
-.emotion-20 {
+.emotion-19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3899,7 +5073,6 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 .emotion-14 {
-  color: #0A68C1;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -3908,10 +5081,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  color: #0A68C1;
   margin-right: 8px;
 }
 
@@ -3923,52 +5093,6 @@ exports[`Live AudioPlayer render live player 1`] = `
 .emotion-14:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
-}
-
-.emotion-13 {
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: none;
-  padding: 0;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-}
-
-.emotion-12 {
-  display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-17 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 0 16px;
-  cursor: pointer;
-}
-
-.emotion-16 {
-  background-color: #cccccc;
-  border-radius: 100vw;
-  height: 12px;
-  width: 100%;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  cursor: inherit;
-}
-
-.emotion-16:disabled {
-  background-color: #f0f0f0;
 }
 
 .emotion-15 {
@@ -4009,8 +5133,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   background-color: #f0f0f0;
 }
 
-.emotion-19 {
-  color: #0A68C1;
+.emotion-18 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -4019,24 +5142,85 @@ exports[`Live AudioPlayer render live player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  color: #0A68C1;
   margin-left: 8px;
 }
 
-.emotion-19 svg {
+.emotion-18 svg {
   fill: #0A68C1;
   color: #0A68C1;
 }
 
-.emotion-19:disabled {
+.emotion-18:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-24 {
+.emotion-26 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-20 {
+  width: 100%;
+  max-width: 120px;
+}
+
+.emotion-13 {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.emotion-12 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-16 {
+  background-color: #cccccc;
+  border-radius: 12px;
+  margin: 0 16px;
+  cursor: pointer;
+  height: 12px;
+  width: 100%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-16:disabled {
+  background-color: #f0f0f0;
+}
+
+.emotion-22 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -4068,33 +5252,50 @@ exports[`Live AudioPlayer render live player 1`] = `
   padding: 16px 24px;
 }
 
-.emotion-24 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-24:hover:not(:disabled) {
+.emotion-22:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-24:active:not(:disabled) {
+.emotion-22:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-24:focus:not(:disabled) {
+.emotion-22:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-24:disabled {
+.emotion-22:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-24:disabled {
+.emotion-22:disabled {
   cursor: not-allowed;
 }
 
-.emotion-22 {
+.emotion-22 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-22:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-22:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-22:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-22:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-21 {
   display: inline-block;
   fill: #0A68C1;
   color: #0A68C1;
@@ -4102,7 +5303,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   height: 32px;
 }
 
-.emotion-26 {
+.emotion-24 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4241,7 +5442,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 <div
-    class="emotion-29"
+    class="emotion-27"
   >
     <audio
       data-testid="audio-player"
@@ -4318,16 +5519,17 @@ exports[`Live AudioPlayer render live player 1`] = `
       </div>
     </div>
     <div
-      class="emotion-28"
+      class="emotion-26"
     >
       <div
-        class="emotion-21"
+        class="emotion-20"
       >
         <div
-          class="emotion-20"
+          class="emotion-19"
         >
           <div
             class="emotion-14"
+            data-testid="min-label"
           >
             <button
               class="emotion-13"
@@ -4352,28 +5554,25 @@ exports[`Live AudioPlayer render live player 1`] = `
             </button>
           </div>
           <div
-            class="emotion-17"
+            class="emotion-16"
             data-testid="volume-control"
             values="1"
           >
             <div
-              class="emotion-16"
-            >
-              <div
-                aria-label="Volume Control"
-                aria-valuemax="1"
-                aria-valuemin="0"
-                aria-valuenow="1"
-                class="emotion-15"
-                draggable="false"
-                role="slider"
-                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                tabindex="0"
-              />
-            </div>
+              aria-label="Volume Control"
+              aria-valuemax="1"
+              aria-valuemin="0"
+              aria-valuenow="1"
+              class="emotion-15"
+              draggable="false"
+              role="slider"
+              style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+              tabindex="0"
+            />
           </div>
           <div
-            class="emotion-19"
+            class="emotion-18"
+            data-testid="max-label"
           >
             <svg
               class="emotion-12"
@@ -4399,12 +5598,13 @@ exports[`Live AudioPlayer render live player 1`] = `
         >
           <button
             aria-pressed="false"
-            class="emotion-24"
+            class="emotion-22"
             data-testid="audio-player-play-button"
             type="button"
           >
-            <div
-              class="emotion-11"
+            <svg
+              class="emotion-21"
+              viewBox="0 0 24 24"
             >
               <svg
                 class="emotion-22"
@@ -4422,10 +5622,10 @@ exports[`Live AudioPlayer render live player 1`] = `
         </div>
       </div>
       <div
-        class="emotion-21"
+        class="emotion-20"
       >
         <div
-          class="emotion-26"
+          class="emotion-24"
         />
       </div>
     </div>
@@ -4435,7 +5635,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 
 exports[`Live AudioPlayer render tagged player 1`] = `
 <DocumentFragment>
-  .emotion-29 {
+  .emotion-36 {
   width: 100%;
   max-width: 920px;
   box-sizing: border-box;
@@ -4555,7 +5755,117 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   justify-content: center;
 }
 
-.emotion-28 {
+.emotion-16 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-12 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0A68C1;
+  margin-right: 8px;
+}
+
+.emotion-12 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-12:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-14 {
+  background-color: #e4e4e4;
+  border-radius: 12px;
+  margin: 0 16px;
+  cursor: pointer;
+  height: 12px;
+  width: 100%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-13 {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #0A68C1;
+  border-width: 1px;
+  color: #0A68C1;
+  border-radius: 32px;
+  height: 32px;
+  width: 32px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: inherit;
+}
+
+.emotion-13 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-13:hover:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-13:active:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+}
+
+.emotion-13:disabled {
+  background-color: #f0f0f0;
+}
+
+.emotion-15 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0A68C1;
+  margin-left: 8px;
+}
+
+.emotion-15 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-15:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-35 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4577,53 +5887,12 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   justify-content: space-between;
 }
 
-.emotion-21 {
+.emotion-25 {
   width: 100%;
   max-width: 120px;
 }
 
-.emotion-20 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
-  height: 32px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.emotion-14 {
-  color: #0A68C1;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-right: 8px;
-}
-
-.emotion-14 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-14:disabled {
-  background-color: #f0f0f0;
-  color: #c0c0c0;
-}
-
-.emotion-13 {
+.emotion-18 {
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -4636,7 +5905,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   cursor: pointer;
 }
 
-.emotion-12 {
+.emotion-17 {
   display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
@@ -4644,40 +5913,58 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   height: 24px;
 }
 
-.emotion-17 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 0 16px;
-  cursor: pointer;
-}
-
-.emotion-16 {
+.emotion-21 {
   background-color: #cccccc;
-  border-radius: 100vw;
+  border-radius: 12px;
+  margin: 0 16px;
+  cursor: pointer;
   height: 12px;
   width: 100%;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  cursor: inherit;
 }
 
-.emotion-16:disabled {
+.emotion-21:disabled {
   background-color: #f0f0f0;
 }
 
-.emotion-15 {
-  background-color: #FFFFFF;
-  border-style: solid;
-  border-color: #0A68C1;
-  border-width: 1px;
-  color: #0A68C1;
-  border-radius: 100vw;
-  height: 32px;
-  width: 32px;
+.emotion-27 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  height: 48px;
+  width: 48px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 0 24px;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -4686,55 +5973,64 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  box-sizing: border-box;
-  cursor: inherit;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 160px;
+  border: none;
 }
 
-.emotion-15 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+.emotion-27:hover:not(:disabled) {
+  background-color: #02509B;
 }
 
-.emotion-15:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+.emotion-27:active:not(:disabled) {
+  background-color: #01396E;
 }
 
-.emotion-15:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+.emotion-27:focus:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-15:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-19 {
-  color: #0A68C1;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 8px;
-}
-
-.emotion-19 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-19:disabled {
+.emotion-27:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-24 {
+.emotion-27:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-27 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-27:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-27:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-27:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-27:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-26 {
+  display: inline-block;
+  fill: #0A68C1;
+  color: #0A68C1;
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-29 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -4763,36 +6059,69 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
-}
-
-.emotion-24 svg {
-  fill: #FFFFFF;
+  padding: 0 24px;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0A68C1;
   color: #FFFFFF;
+  border-radius: 160px;
 }
 
-.emotion-24:hover:not(:disabled) {
+.emotion-29:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-24:active:not(:disabled) {
+.emotion-29:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-24:focus:not(:disabled) {
+.emotion-29:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-24:disabled {
+.emotion-29:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-24:disabled {
+.emotion-29:disabled {
   cursor: not-allowed;
 }
 
-.emotion-22 {
+.emotion-29 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-29:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-29:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-29:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-29:disabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-28 {
   display: inline-block;
   fill: #0A68C1;
   color: #0A68C1;
@@ -4800,7 +6129,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   height: 32px;
 }
 
-.emotion-26 {
+.emotion-33 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4897,7 +6226,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 }
 
 <div
-    class="emotion-29"
+    class="emotion-36"
   >
     <audio
       data-testid="audio-player"
@@ -4974,24 +6303,58 @@ exports[`Live AudioPlayer render tagged player 1`] = `
       </div>
     </div>
     <div
-      class="emotion-28"
+      class="emotion-16"
     >
       <div
-        class="emotion-21"
+        class="emotion-12"
+        data-testid="min-label"
+      >
+        0:00
+      </div>
+      <div
+        class="emotion-14"
+        data-testid="slider-track"
+        values="0"
       >
         <div
-          class="emotion-20"
+          aria-label="slider"
+          aria-valuemax="1"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          class="emotion-13"
+          draggable="false"
+          role="slider"
+          style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+          tabindex="0"
+        />
+      </div>
+      <div
+        class="emotion-15"
+        data-testid="max-label"
+      >
+        00:00:00
+      </div>
+    </div>
+    <div
+      class="emotion-35"
+    >
+      <div
+        class="emotion-25"
+      >
+        <div
+          class="emotion-16"
         >
           <div
-            class="emotion-14"
+            class="emotion-12"
+            data-testid="min-label"
           >
             <button
-              class="emotion-13"
+              class="emotion-18"
               data-testid="mute-button"
               type="button"
             >
               <svg
-                class="emotion-12"
+                class="emotion-17"
                 viewBox="0 0 24 24"
               >
                 <title>
@@ -5008,31 +6371,28 @@ exports[`Live AudioPlayer render tagged player 1`] = `
             </button>
           </div>
           <div
-            class="emotion-17"
+            class="emotion-21"
             data-testid="volume-control"
             values="1"
           >
             <div
-              class="emotion-16"
-            >
-              <div
-                aria-label="Volume Control"
-                aria-valuemax="1"
-                aria-valuemin="0"
-                aria-valuenow="1"
-                class="emotion-15"
-                draggable="false"
-                role="slider"
-                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                tabindex="0"
-              />
-            </div>
+              aria-label="Volume Control"
+              aria-valuemax="1"
+              aria-valuemin="0"
+              aria-valuenow="1"
+              class="emotion-13"
+              draggable="false"
+              role="slider"
+              style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+              tabindex="0"
+            />
           </div>
           <div
-            class="emotion-19"
+            class="emotion-15"
+            data-testid="max-label"
           >
             <svg
-              class="emotion-12"
+              class="emotion-17"
               viewBox="0 0 24 24"
             >
               <title>
@@ -5054,13 +6414,31 @@ exports[`Live AudioPlayer render tagged player 1`] = `
           class="emotion-11"
         >
           <button
+            class="emotion-27"
+            data-testid="audio-player-replay"
+            type="button"
+          >
+            <svg
+              class="emotion-26"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Replay10 icon
+              </title>
+              <path
+                d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
+              />
+            </svg>
+          </button>
+          <button
             aria-pressed="false"
-            class="emotion-24"
+            class="emotion-29"
             data-testid="audio-player-play-button"
             type="button"
           >
-            <div
-              class="emotion-11"
+            <svg
+              class="emotion-28"
+              viewBox="0 0 24 24"
             >
               <svg
                 class="emotion-22"
@@ -5075,13 +6453,37 @@ exports[`Live AudioPlayer render tagged player 1`] = `
               </svg>
             </div>
           </button>
+          <button
+            class="emotion-27"
+            data-testid="audio-player-forward"
+            type="button"
+          >
+            <svg
+              class="emotion-26"
+              viewBox="0 0 24 24"
+            >
+              <title>
+                Forward10 icon
+              </title>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+              />
+              <path
+                d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
       <div
-        class="emotion-21"
+        class="emotion-25"
       >
         <div
-          class="emotion-26"
+          class="emotion-33"
         />
       </div>
     </div>

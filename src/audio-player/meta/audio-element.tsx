@@ -41,7 +41,7 @@ export const useAudioHandler = (
         playerNode.currentTime = value;
         return value;
       }
-      return newTime;
+      return playerNode.currentTime;
     },
     setVolume: newVolume => {
       const playerNode = localRef.current!;

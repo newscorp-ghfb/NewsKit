@@ -1,9 +1,17 @@
+const waitForLoaded = oldValue => {
+  cy.get('@sliderLabel', {timeout: 30000}).should('not.have.text', oldValue);
+};
+
 describe('skippable audio player', () => {
   beforeEach(() => {
     cy.visit('?name=tracked-audio-player');
     cy.fixture('podcasts.json').as('podcasts');
     cy.get('[data-testid="audio-player"]').as('player');
     cy.get('[data-testid="slider-track"]').as('sliderTrack');
+    cy.get('[data-testid="slider-track"] + [data-testid="max-label"]').as(
+      'sliderLabel',
+    );
+    waitForLoaded('00:00:00');
   });
 
   it('should play and pause audio when when clicking play button', () => {
@@ -110,48 +118,55 @@ describe('skippable audio player', () => {
         expect(audio.attr('src')).to.equal(podcasts[0].src);
       });
     });
-    cy.get('@skipNext')
-      .click()
-      .then(() => {
-        cy.get('@podcasts').then(podcasts => {
-          cy.get('@player').should(audio => {
-            expect(audio.attr('src')).to.equal(podcasts[1].src);
+
+    cy.get('@sliderLabel').then(label => {
+      const oldValue = label.text();
+
+      cy.get('@skipNext')
+        .click()
+        .then(() => {
+          cy.get('@podcasts').then(podcasts => {
+            cy.get('@player').should(audio => {
+              expect(audio.attr('src')).to.equal(podcasts[1].src);
+            });
           });
         });
+
+      waitForLoaded(oldValue);
+
+      cy.get('@sliderTrack').then(slider => {
+        const {top, left} = slider.position();
+        cy.get('@sliderTrack')
+          .click(left + 500, top)
+          .then(() => {
+            cy.get('@sliderTrack').should(sliderEl => {
+              expect(Number(sliderEl.attr('values'))).to.be.greaterThan(5);
+            });
+          });
       });
 
-    cy.get('@sliderTrack').then(slider => {
-      const {top, left} = slider.position();
-      cy.get('@sliderTrack')
-        .click(left + 500, top)
+      cy.get('@skipPrevious')
+        .click()
         .then(() => {
-          cy.get('@sliderTrack').should(sliderEl => {
-            expect(Number(sliderEl.attr('values'))).to.be.greaterThan(5);
+          cy.get('@sliderTrack').should(slider => {
+            expect(slider.attr('values')).to.be.equal('0');
+          });
+          cy.get('@podcasts').then(podcasts => {
+            cy.get('@player').should(audio => {
+              expect(audio.attr('src')).to.equal(podcasts[1].src);
+            });
+          });
+        });
+      cy.get('@skipPrevious')
+        .click()
+        .then(() => {
+          cy.get('@podcasts').then(podcasts => {
+            cy.get('@player').should(audio => {
+              expect(audio.attr('src')).to.equal(podcasts[0].src);
+            });
           });
         });
     });
-
-    cy.get('@skipPrevious')
-      .click()
-      .then(() => {
-        cy.get('@sliderTrack').should(slider => {
-          expect(slider.attr('values')).to.be.equal('0');
-        });
-        cy.get('@podcasts').then(podcasts => {
-          cy.get('@player').should(audio => {
-            expect(audio.attr('src')).to.equal(podcasts[1].src);
-          });
-        });
-      });
-    cy.get('@skipPrevious')
-      .click()
-      .then(() => {
-        cy.get('@podcasts').then(podcasts => {
-          cy.get('@player').should(audio => {
-            expect(audio.attr('src')).to.equal(podcasts[0].src);
-          });
-        });
-      });
   });
 
   it('should change player volume when the slider is clicked', () => {
@@ -159,7 +174,7 @@ describe('skippable audio player', () => {
     cy.get('@volume').then(slider => {
       const {top, left} = slider.position();
       cy.get('@volume')
-        .click(left - 10, top)
+        .click(left - 35, top)
         .then(() => {
           cy.get('@volume').should(sliderEl => {
             expect(Number(sliderEl.attr('values'))).to.be.lessThan(1);

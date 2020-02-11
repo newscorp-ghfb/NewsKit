@@ -1,39 +1,85 @@
 import React from 'react';
 import {Range, Direction} from 'react-range';
-import {withTheme} from 'emotion-theming';
 import {SliderProps} from './types';
 import {
   StyledContainer,
   StyledTrack,
-  StyledInnerTrack,
   StyledThumb,
   StyledSliderLabel,
 } from './styled';
 import {ThumbLabelWrapper} from './thumb-label-wrapper';
 import {renderLabel, getTrackBackgroundStyle} from './utils';
-import {ThemeProp} from '../utils/style';
+import {useTheme} from '../themes/emotion';
 
-export const Slider: React.FC<SliderProps> = withTheme<
-  React.FC<SliderProps & ThemeProp>
->(props => {
-  const {
-    min,
-    max,
-    step = 1,
-    onChange,
-    onFinalChange,
-    disabled,
-    values,
-    vertical,
-    ariaLabel = 'slider',
-    minLabel,
-    maxLabel,
-    thumbLabel,
-    dataTestId,
-    $trackStylePreset,
-    $thumbStylePreset,
-    $labelStylePreset,
-  } = props;
+const noop = () => {};
+
+export const Slider: React.FC<SliderProps> = ({
+  min,
+  max,
+  step = 1,
+  onChange,
+  onFinalChange = noop,
+  disabled,
+  values,
+  vertical,
+  ariaLabel = 'slider',
+  minLabel,
+  maxLabel,
+  thumbLabel,
+  dataTestId = 'slider-track',
+  $trackStylePreset,
+  $indicatorStylePreset,
+  $thumbStylePreset,
+  $labelStylePreset,
+  renderTrack,
+  renderThumb,
+}) => {
+  const theme = useTheme();
+
+  const renderTrackFn =
+    renderTrack ||
+    (({props: p, children, isDragged}) => (
+      <StyledTrack
+        {...p}
+        values={values}
+        isDragged={isDragged}
+        disabled={disabled}
+        vertical={vertical}
+        style={getTrackBackgroundStyle(
+          theme,
+          $trackStylePreset,
+          $indicatorStylePreset,
+          values,
+          min,
+          max,
+          vertical,
+        )}
+        $trackStylePreset={$trackStylePreset}
+        data-testid={dataTestId}
+      >
+        {children}
+      </StyledTrack>
+    ));
+
+  const renderThumbFn =
+    renderThumb ||
+    (({props: p, index, isDragged}) => (
+      <StyledThumb
+        {...p}
+        disabled={disabled}
+        aria-label={ariaLabel}
+        $thumbStylePreset={$thumbStylePreset}
+      >
+        <ThumbLabelWrapper
+          values={values}
+          index={index}
+          isDragged={isDragged}
+          thumbLabel={thumbLabel}
+          vertical={vertical}
+          $labelStylePreset={$labelStylePreset}
+        />
+      </StyledThumb>
+    ));
 
   return (
     <StyledContainer vertical={vertical}>
@@ -43,6 +89,7 @@ export const Slider: React.FC<SliderProps> = withTheme<
           disabled={disabled}
           vertical={vertical}
           labelType="min"
+          data-testid="min-label"
         >
           {renderLabel(minLabel)}
         </StyledSliderLabel>
@@ -53,48 +100,11 @@ export const Slider: React.FC<SliderProps> = withTheme<
         max={max}
         values={values}
         disabled={disabled}
-        onChange={v => onChange(v)}
-        onFinalChange={v => onFinalChange && onFinalChange(v)}
+        onChange={onChange}
+        onFinalChange={onFinalChange}
         direction={vertical ? Direction.Up : Direction.Right}
-        renderTrack={({props: p, children, isDragged}) => (
-          <StyledTrack
-            onMouseDown={p.onMouseDown}
-            onTouchStart={p.onTouchStart}
-            isDragged={isDragged}
-            values={values}
-            data-testid={dataTestId || 'slider-track'}
-            vertical={vertical}
-            disabled={disabled}
-            $trackStylePreset={$trackStylePreset}
-          >
-            <StyledInnerTrack
-              ref={p.ref}
-              vertical={vertical}
-              style={getTrackBackgroundStyle(props)}
-              disabled={disabled}
-              $trackStylePreset={$trackStylePreset}
-            >
-              {children}
-            </StyledInnerTrack>
-          </StyledTrack>
-        )}
-        renderThumb={({props: p, index, isDragged}) => (
-          <StyledThumb
-            {...p}
-            disabled={disabled}
-            aria-label={ariaLabel}
-            $thumbStylePreset={$thumbStylePreset}
-          >
-            <ThumbLabelWrapper
-              values={values}
-              index={index}
-              isDragged={isDragged}
-              thumbLabel={thumbLabel}
-              vertical={vertical}
-              $labelStylePreset={$labelStylePreset}
-            />
-          </StyledThumb>
-        )}
+        renderTrack={renderTrackFn}
+        renderThumb={renderThumbFn}
       />
       {maxLabel && (
         <StyledSliderLabel
@@ -102,10 +112,11 @@ export const Slider: React.FC<SliderProps> = withTheme<
           disabled={disabled}
           vertical={vertical}
           labelType="max"
+          data-testid="max-label"
         >
           {renderLabel(maxLabel)}
         </StyledSliderLabel>
       )}
     </StyledContainer>
   );
-});
+};

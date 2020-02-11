@@ -82,13 +82,40 @@ NewsKit also exports a StatefulSlider component which has the same props (except
     If provided, this overrides the style preset applied to the slider track.
   </Prop>
   <Prop name="$indicatorStylePreset" type="string" default="interactive010">
-    If provided, this overrides the style preset applied to the slider indicator. Only the background colour of this preset is used, other properties such as borders are ignored and will take the style of the $trackStylePreset.
+    If provided, this overrides the style preset applied to the slider
+    indicator. Only the background colour of this preset is used, other
+    properties such as borders are ignored and will take the style of the
+    $trackStylePreset.
   </Prop>
   <Prop name="$thumbStylePreset" type="string" default="interactive020">
     If provided, this overrides the style preset applied to the slider thumb.
   </Prop>
   <Prop name="$labelStylePreset" type="string" default="interactive010Inverse">
-    If provided, this overrides the style preset applied to the in-built slider labels. This includes string min and max labels, as well as the thumb label. Custom label components passed in to the slider will not have the $labelStylePreset applied.
+    If provided, this overrides the style preset applied to the in-built slider
+    labels. This includes string min and max labels, as well as the thumb label.
+    Custom label components passed in to the slider will not have the
+    $labelStylePreset applied.
+  </Prop>
+  <Prop
+    name="renderTrack"
+    type="(params: { props, children, isDragged, disabled }) => React.ReactNode"
+  >
+    If provided, this completely replaces the track rendering function passed to
+    the underlying react-range module. The params object passed to the function
+    include: props; apply these to your track component, children; this will
+    contain the thumb and should be rendered inside your track, and isDragged
+    and disabled booleans; these might affect how you wish to style your track.
+  </Prop>
+  <Prop
+    name="renderThumb"
+    type="((params: { props, value, index, isDragged }) => React.ReactNode"
+  >
+    If provided, this completely replaces the thumb rendering function passed to
+    the underlying react-range module. The params object passed to the function
+    include: props; apply these to your thumb component, value; this is the
+    current thumb value, index; the index in the values array that corresponds
+    to this thumb (this is useful if rendering more than one value), isDragged;
+    this may affect how you wish to style your thumb.
   </Prop>
 </LegacyBlock>
 

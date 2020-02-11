@@ -200,6 +200,22 @@ export const createStylePresets = ({
       color: colorPrimitives.inkNonEssential,
     },
   } as StylePresetStates,
+  audioPlayerTrack: {
+    base: {
+      backgroundColor: colorPrimitives.neutral030,
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+    },
+  } as StylePresetStates,
+  audioPlayerTrackIndicator: {
+    base: {
+      backgroundColor: colorPrimitives.brand010,
+    },
+  } as StylePresetStates,
+  audioPlayerTrackBuffering: {
+    base: {
+      backgroundColor: colorPrimitives.neutral040,
+    },
+  } as StylePresetStates,
   circleLoaderIndicator010: {
     base: {
       borderColor: colorPrimitives.brand010,

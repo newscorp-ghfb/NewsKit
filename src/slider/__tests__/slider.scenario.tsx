@@ -2,9 +2,10 @@ import React from 'react';
 
 import {StatefulSlider} from '..';
 import {styled} from '../../utils/style';
-import {ThumbLabelProps} from '../types';
+import {ThumbLabelProps, SliderProps} from '../types';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../themes';
+import {Placeholder} from '../../icons';
 
 export const name = 'slider';
 
@@ -44,6 +45,28 @@ const myCustomTheme = createTheme('my-custom-slider-theme', {
     },
   }),
 });
+
+const CustomTrack = styled.div`
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(red, yellow);
+`;
+const renderCustomTrack: SliderProps['renderTrack'] = ({props, children}) => (
+  <CustomTrack {...props}>{children}</CustomTrack>
+);
+
+const CustomThumb = styled.div`
+  height: 40px;
+  padding: 4px;
+  border-radius: 50% 0 50% 0;
+  background: black;
+  border: dashed 2px yellow;
+`;
+const renderCustomThumb: SliderProps['renderThumb'] = ({props}) => (
+  <CustomThumb {...props} aria-label="custom slider thumb">
+    <Placeholder $size="iconSize030" />
+  </CustomThumb>
+);
 
 const Svg = styled.svg`
   width: ${({width}) => width}px;
@@ -191,6 +214,38 @@ export const component = () => (
           $indicatorStylePreset="customIndicatorStylePreset"
           $thumbStylePreset="customThumbStylePreset"
           $labelStylePreset="customLabelStylePreset"
+        />
+      </ThemeProvider>
+    </Container>
+    <StorybookHeading>Custom renderers</StorybookHeading>
+    <Container>
+      <ThemeProvider theme={myCustomTheme}>
+        <StatefulSlider
+          values={[40]}
+          max={100}
+          min={0}
+          renderTrack={renderCustomTrack}
+        />
+      </ThemeProvider>
+    </Container>
+    <Container>
+      <ThemeProvider theme={myCustomTheme}>
+        <StatefulSlider
+          values={[50]}
+          max={100}
+          min={0}
+          renderThumb={renderCustomThumb}
+        />
+      </ThemeProvider>
+    </Container>
+    <Container>
+      <ThemeProvider theme={myCustomTheme}>
+        <StatefulSlider
+          values={[60]}
+          max={100}
+          min={0}
+          renderTrack={renderCustomTrack}
+          renderThumb={renderCustomThumb}
         />
       </ThemeProvider>
     </Container>

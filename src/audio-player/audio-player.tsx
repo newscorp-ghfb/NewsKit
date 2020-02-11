@@ -5,6 +5,7 @@ import React, {
   useCallback,
   useEffect,
 } from 'react';
+import {getTrackBackground} from 'react-range';
 import {
   PlayerButton,
   ForwardButton,
@@ -20,7 +21,11 @@ import {
   AudioHandler,
   AudioElementProps,
 } from './meta';
-import {Slider} from '../slider';
+import {Slider, SliderProps} from '../slider';
+import {StyledTrack} from '../slider/styled';
+import {useTheme} from '../themes/emotion';
+import {formatTrackData} from './utils';
+import {getSingleStylePreset} from '../utils/style-preset';
 import {Stack, StackDistribution, Flow} from '../stack';
 import {PlayerContainer, ControlContainer} from './styled';
 import {VolumeControl} from '../volume-control';
@@ -73,7 +78,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
   const [duration, setDuration] = useState(0);
   const onDurationChange: EventListener = event =>
     setDuration(event.target.duration);
-  const showControls = !live && !Number.isNaN(duration) && duration > 0;
+  const showControls = !live;
   const maxTime = showControls
     ? new Date(duration * 1000).toISOString().substr(11, 8)
     : '0:00';
@@ -103,6 +108,12 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
   useEffect(() => {
     timeRef.current = currentTime;
   });
+
+  const [buffered, setBuffered] = useState<TimeRanges>();
+  const onProgress: EventListener = event => {
+    setBuffered(event.target.buffered);
+  };
+
   const onTimeUpdate: EventListener = event => {
     const eventTime = Number(event.target.currentTime.toFixed(2));
     if (timeRef.current !== eventTime) {
@@ -118,6 +129,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
     },
     [playerRef, setCurrentTime],
   );
+
   const onChangeSlider = useCallback(
     ([value]: number[]) => onChangeAudioTime(value),
     [onChangeAudioTime],
@@ -138,6 +150,59 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
     [onChangeAudioTime, timeRef],
   );
 
+  /**
+   * audio playback handlers
+   */
+  const theme = useTheme();
+  const renderTrack: SliderProps['renderTrack'] = ({
+    props: p,
+    children,
+    isDragged,
+  }) => {
+    const {values, colors} = formatTrackData(
+      getSingleStylePreset(
+        theme,
+        'base',
+        'backgroundColor',
+        'audioPlayerTrack',
+      ),
+      getSingleStylePreset(
+        theme,
+        'base',
+        'backgroundColor',
+        'audioPlayerTrackIndicator',
+      ),
+      getSingleStylePreset(
+        theme,
+        'base',
+        'backgroundColor',
+        'audioPlayerTrackBuffering',
+      ),
+      timeArr,
+      buffered,
+    );
+
+    return (
+      <StyledTrack
+        {...p}
+        values={timeArr}
+        isDragged={isDragged}
+        $trackStylePreset="audioPlayerTrack"
+        style={{
+          background: getTrackBackground({
+            values,
+            colors,
+            min: 0,
+            max: duration,
+          }),
+        }}
+        data-testid="slider-track"
+      >
+        {children}
+      </StyledTrack>
+    );
+  };
+
   return (
     <PlayerContainer>
       <AudioElement
@@ -147,6 +212,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
         onPause={onPause}
         onDurationChange={onDurationChange}
         onTimeUpdate={onTimeUpdate}
+        onProgress={onProgress}
         onVolumeChange={onVolumeChange}
         data-testid="audio-player"
         {...props}
@@ -164,11 +230,12 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
         <Slider
           min={0}
           minLabel="0:00"
-          max={duration}
+          max={duration || 1}
           maxLabel={maxTime}
           values={timeArr}
           step={1}
           onChange={onChangeSlider}
+          renderTrack={renderTrack}
         />
       )}
       <Stack

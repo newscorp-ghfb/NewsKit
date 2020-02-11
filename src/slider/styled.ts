@@ -34,49 +34,36 @@ export const StyledContainer = styled.div<VerticalProp>`
   flex-direction: ${ifVertical('column-reverse')};
 `;
 
-const getCursor = ({disabled}: CursorProps): CursorProperty =>
-  disabled ? 'not-allowed' : 'inherit';
-
 //
 // Track
 //
 
-const getTrackCursor = ({
+const getCursor = ({
   disabled,
   isDragged,
   values,
-}: TrackProps): CursorProperty => {
+}: {
+  disabled?: boolean;
+  isDragged?: boolean;
+  values?: number[];
+}): CursorProperty => {
   switch (true) {
     case disabled:
       return 'not-allowed';
     case isDragged:
       return 'grabbing';
-    case values.length < 2:
+    case values && values.length < 2:
       return 'pointer';
     default:
       return 'inherit';
   }
 };
 
-export const StyledTrack = styled.div<TrackProps>`
-  display: flex;
-  width: ${ifVertical(undefined, '100%')};
-  height: ${ifVertical('100%')};
-  ${({theme, vertical}) =>
-    vertical
-      ? `padding: ${theme.sizing.sizing040} 0;`
-      : `padding: 0 ${theme.sizing.sizing040};`};
-  cursor: ${getTrackCursor};
-`;
-
-//
-// Inner Track
-//
-
-type InnerTrackProps = CursorProps &
+type StyledTrackProps = TrackProps &
+  CursorProps &
   Pick<SliderProps, 'vertical' | '$trackStylePreset'>;
 
-export const StyledInnerTrack = styled.div<InnerTrackProps>`
+export const StyledTrack = styled.div<StyledTrackProps>`
   ${({disabled}) =>
     getStylePresetFromTheme(trackStylePresetDefault, '$trackStylePreset', {
       isDisabled: disabled,
@@ -84,11 +71,16 @@ export const StyledInnerTrack = styled.div<InnerTrackProps>`
       filterStates: ['base', 'disabled'],
     })}
 
+  ${({theme, vertical}) =>
+    vertical
+      ? `margin: ${theme.sizing.sizing040} 0;`
+      : `margin: 0 ${theme.sizing.sizing040};`};
+
+  cursor: ${getCursor};
   height: ${({theme, vertical}) =>
     vertical ? '100%' : theme.sizing.sizing030};
   width: ${({theme, vertical}) => (vertical ? theme.sizing.sizing030 : '100%')};
   align-self: center;
-  cursor: ${getCursor};
 `;
 
 //
@@ -116,19 +108,21 @@ type StyledThumbValueProps = VerticalProp &
   Pick<SliderProps, 'disabled' | '$labelStylePreset'>;
 
 export const StyledThumbValue = styled.div<StyledThumbValueProps>`
+  ${getTypePresetFromTheme('caption010')};
+
   ${({disabled}) =>
     getStylePresetFromTheme(labelStylePresetDefault, '$labelStylePreset', {
       isDisabled: disabled,
       borderRadiusSize: 'sizing060',
       omitStates: ['focus', 'hover'],
-    })}
+    })};
 
-  ${getTypePresetFromTheme('caption010')};
-  position: absolute;
   ${({theme, vertical}) =>
     vertical
       ? `right: -${theme.sizing.sizing070};`
       : `top: -${theme.sizing.sizing060};`}
+
+  position: absolute;
   background-color: transparent;
   white-space: nowrap;
   width: 100%;
@@ -145,14 +139,14 @@ interface StyledSliderLabelProps
 }
 
 export const StyledSliderLabel = styled.div<StyledSliderLabelProps>`
+  ${getTypePresetFromTheme('caption010')};
+
   ${({disabled}) =>
     getStylePresetFromTheme(labelStylePresetDefault, '$labelStylePreset', {
       isDisabled: disabled,
       filterStates: ['base', 'disabled'],
     })};
 
-  ${getTypePresetFromTheme('caption010')};
-  display: inline-flex;
   ${({theme, vertical, labelType}) => {
     if (labelType === 'min') {
       return vertical

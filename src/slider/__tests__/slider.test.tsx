@@ -54,6 +54,22 @@ describe('slider', () => {
       `);
     });
 
+    it('should allow overriding the renderTrack and renderThumb function', () => {
+      const renderTrack: any = () => {};
+      const renderThumb: any = () => {};
+      renderWithTheme(Slider, {
+        values: [20, 80],
+        min: 0,
+        max: 100,
+        onChange: () => {},
+        renderTrack,
+        renderThumb,
+      });
+
+      expect(mockRange.mock.calls[0][0].renderTrack).toBe(renderTrack);
+      expect(mockRange.mock.calls[0][0].renderThumb).toBe(renderThumb);
+    });
+
     it('should pass custom optional props to Range component', () => {
       renderWithTheme(Slider, {
         values: [22.5],

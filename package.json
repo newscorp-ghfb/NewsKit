@@ -152,7 +152,7 @@
     "date-fns": "^2.6.0",
     "dotenv": "^8.0.0",
     "emotion": "^10.0.14",
-    "emotion-theming": "^10.0.14",
+    "emotion-theming": "^10.0.18",
     "isomorphic-fetch": "^2.2.1",
     "react-range": "^1.5.2"
   },

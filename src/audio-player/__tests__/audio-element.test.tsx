@@ -135,6 +135,77 @@ describe('AudioElement', () => {
         expect(playerRef.current.seekable.start).toHaveBeenCalledWith(0);
         expect(playerRef.current.seekable.end).toHaveBeenCalledWith(1);
       });
+
+      test('returns currentTime value if audio not seekable', () => {
+        const playerRef = {
+          current: {
+            currentTime: 12345,
+            seekable: {
+              start: jest.fn(),
+              end: jest.fn(),
+              length: 0,
+            },
+          },
+        } as any;
+        const propRef = {
+          current: {
+            setCurrentTime: jest.fn(),
+          },
+        } as any;
+        renderHook(() => useAudioHandler(playerRef, propRef));
+        const currentTime = propRef.current.setCurrentTime(50);
+        expect(currentTime).toEqual(12345);
+        expect(playerRef.current.currentTime).toEqual(12345);
+        expect(playerRef.current.seekable.start).not.toHaveBeenCalled();
+        expect(playerRef.current.seekable.end).not.toHaveBeenCalled();
+      });
+    });
+
+    describe('setVolume', () => {
+      test('sets volume to 0.5', () => {
+        const playerRef = {
+          current: {},
+        } as any;
+        const propRef = {
+          current: {},
+        } as any;
+        renderHook(() => useAudioHandler(playerRef, propRef));
+
+        const newVolume = propRef.current.setVolume(0.5);
+
+        expect(newVolume).toEqual(0.5);
+        expect(playerRef.current.volume).toEqual(0.5);
+      });
+
+      test('bounds volume to a max of 1', () => {
+        const playerRef = {
+          current: {},
+        } as any;
+        const propRef = {
+          current: {},
+        } as any;
+        renderHook(() => useAudioHandler(playerRef, propRef));
+
+        const newVolume = propRef.current.setVolume(11);
+
+        expect(newVolume).toEqual(1);
+        expect(playerRef.current.volume).toEqual(1);
+      });
+
+      test('bounds volume to a min of 0', () => {
+        const playerRef = {
+          current: {},
+        } as any;
+        const propRef = {
+          current: {},
+        } as any;
+        renderHook(() => useAudioHandler(playerRef, propRef));
+
+        const newVolume = propRef.current.setVolume(-0.4);
+
+        expect(newVolume).toEqual(0);
+        expect(playerRef.current.volume).toEqual(0);
+      });
     });
   });
 });

@@ -8,7 +8,7 @@ export const name = 'audio-player';
 const props = {
   src: 'https://radio.talkradio.co.uk/stream',
   imgAlt: 'test image',
-  title: 'title',
+  title: 'live audio',
   live: true,
   imgSrc: 'https://via.placeholder.com/150',
   captionSrc: 'captions.vtt',
@@ -17,10 +17,16 @@ const podcast = {
   src:
     'https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3',
   imgAlt: 'test image',
-  title: 'title',
+  title: 'podcast mp3',
   live: false,
   imgSrc: 'https://via.placeholder.com/150',
   captionSrc: 'captions.vtt',
+};
+const longMP3 = {
+  ...podcast,
+  src:
+    'http://www.hyperion-records.co.uk/audiotest/1%20Vaet%20Videns%20Dominus.MP3',
+  title: 'a long mp3 file',
 };
 
 const Container = styled.div`
@@ -67,6 +73,9 @@ export const component = () => (
     <div>
       <StorybookHeading>Player with static audio</StorybookHeading>
       <AudioPlayer {...podcast} />
+    </div>
+    <div>
+      <AudioPlayer {...longMP3} />
     </div>
     <div>
       <StorybookHeading>Skippable player with static audio</StorybookHeading>

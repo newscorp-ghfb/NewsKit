@@ -6,6 +6,7 @@ import {
 } from '../themes/mappers/style-preset';
 import {filterObject, rejectObject} from './filter-object';
 import {SizingKeys} from '../themes/newskit-light/spacing';
+import {Theme} from '../themes/creator';
 
 export interface GetStylePresetFromThemeOptions {
   isLoading?: boolean;
@@ -94,4 +95,16 @@ export const getStylePresetFromTheme = <Props extends ThemeProp>(
     }
     return '';
   });
+};
+
+export const getSingleStylePreset = (
+  {stylePresets}: Theme,
+  state: StylePresetStateKeys,
+  cssProp: Exclude<StylePresetStyleKeys, 'borderRadius'>,
+  defaultToken: string,
+  customToken?: string,
+) => {
+  const preset =
+    (customToken && stylePresets[customToken]) || stylePresets[defaultToken];
+  return (preset[state || 'base'] || {})[cssProp] || '';
 };

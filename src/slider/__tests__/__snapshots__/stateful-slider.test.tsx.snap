@@ -2,7 +2,7 @@
 
 exports[`StatefulSlider holds the slider values in state 1`] = `
 <DocumentFragment>
-  .emotion-3 {
+  .emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -14,21 +14,6 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-}
-
-.emotion-1 {
-  background-color: #cccccc;
-  border-radius: 100vw;
-  height: 12px;
-  width: 100%;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  cursor: inherit;
-}
-
-.emotion-1:disabled {
-  background-color: #f0f0f0;
 }
 
 .emotion-0 {
@@ -69,41 +54,43 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
   background-color: #f0f0f0;
 }
 
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 0 16px;
+.emotion-1 {
+  background-color: #cccccc;
+  border-radius: 12px;
+  margin: 0 16px;
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
   cursor: grabbing;
+  height: 12px;
+  width: 100%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-1:disabled {
+  background-color: #f0f0f0;
 }
 
 <div
-    class="emotion-3"
+    class="emotion-2"
   >
     <div
-      class="emotion-2"
+      class="emotion-1"
       data-testid="slider-track"
       values="40"
     >
       <div
-        class="emotion-1"
-      >
-        <div
-          aria-label="slider"
-          aria-valuemax="75"
-          aria-valuemin="25"
-          aria-valuenow="40"
-          class="emotion-0"
-          draggable="false"
-          role="slider"
-          style="position: absolute; z-index: 0; cursor: grabbing; user-select: none; transform: translate(NaNpx, NaNpx);"
-          tabindex="0"
-        />
-      </div>
+        aria-label="slider"
+        aria-valuemax="75"
+        aria-valuemin="25"
+        aria-valuenow="40"
+        class="emotion-0"
+        draggable="false"
+        role="slider"
+        style="position: absolute; z-index: 0; cursor: grabbing; user-select: none; transform: translate(NaNpx, NaNpx);"
+        tabindex="0"
+      />
     </div>
   </div>
 </DocumentFragment>
