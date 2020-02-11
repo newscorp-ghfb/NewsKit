@@ -14,6 +14,7 @@ const MainContainer = styled.div`
 `;
 
 const Container = styled.div`
+  border: solid 1px red;
   background-color: ${getColorFromTheme('neutral020')};
 `;
 
@@ -33,10 +34,24 @@ export const component = () => (
         <Tag>Example 3</Tag>
       </Stack>
     </Container>
-    <StorybookHeading>Stack using design system spacing token</StorybookHeading>
+    <StorybookHeading>
+      Stack vertical using design system spacing token
+    </StorybookHeading>
     <Container theme={newskitLightTheme}>
       <Block hasHeight>
         <Stack space="sizing050">
+          <Tag>Example 1</Tag>
+          <Tag>Example 2</Tag>
+          <Tag>Example 3</Tag>
+        </Stack>
+      </Block>
+    </Container>
+    <StorybookHeading>
+      Stack horizontal center using design system spacing token
+    </StorybookHeading>
+    <Container theme={newskitLightTheme}>
+      <Block hasHeight>
+        <Stack space="sizing050" flow={Flow.HorizontalCenter}>
           <Tag>Example 1</Tag>
           <Tag>Example 2</Tag>
           <Tag>Example 3</Tag>

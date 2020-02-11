@@ -105,13 +105,6 @@ const ButtonElement = styled.button<ButtonProps>`
   }
 `;
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const InnerContainer = styled.div<{icon: any}>`
-  ${({icon, theme}) => ({
-    marginTop: icon ? `-${theme.sizing[spacing]}` : 0,
-  })}
-`;
-
 export const Button: React.FC<
   React.ButtonHTMLAttributes<HTMLButtonElement> & ButtonProps
 > = props => {
@@ -134,16 +127,14 @@ export const Button: React.FC<
   return (
     <ButtonElement type="button" $size={$size} {...restOfProps} icon={Icon}>
       {Icon && children ? (
-        <InnerContainer icon={Icon}>
-          <Stack
-            flow={Flow.HorizontalCenter}
-            space={spacing}
-            stackDistribution={StackDistribution.Center}
-          >
-            {iconWithProps}
-            {children}
-          </Stack>
-        </InnerContainer>
+        <Stack
+          flow={Flow.HorizontalCenter}
+          space={spacing}
+          stackDistribution={StackDistribution.Center}
+        >
+          {iconWithProps}
+          {children}
+        </Stack>
       ) : (
         <Stack
           flow={Flow.HorizontalCenter}

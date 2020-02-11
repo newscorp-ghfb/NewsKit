@@ -1,27 +1,32 @@
 import React from 'react';
-import {StackProps} from './types';
+import {StackProps, Flow, StackDistribution, StyledStackProps} from './types';
 import {StyledMasterContainer, StyledChildContainer} from './styled';
 
+const wrapChild = (
+  space: StyledStackProps['space'],
+  flow: StyledStackProps['flow'],
+  wrap: StyledStackProps['wrap'],
+) => (child: React.ReactNode) => (
+  <StyledChildContainer space={space} flow={flow} wrap={wrap}>
+    {child}
+  </StyledChildContainer>
+);
+
 export const Stack: React.FC<StackProps> = ({
-  flow,
-  stackDistribution,
-  space,
+  space = 'sizing000',
+  flow = Flow.VerticalLeft,
+  wrap = 'nowrap',
+  stackDistribution = StackDistribution.Start,
   children,
-  wrap,
-}) => {
-  const wrapChild = (child: React.ReactNode, index: number) => (
-    <StyledChildContainer key={index} space={space!} flow={flow}>
-      {child}
-    </StyledChildContainer>
-  );
-  return (
-    <StyledMasterContainer
-      flow={flow}
-      stackDistribution={stackDistribution}
-      space={space}
-      wrap={wrap}
-    >
-      {children && space ? React.Children.map(children, wrapChild) : children}
-    </StyledMasterContainer>
-  );
-};
+}) => (
+  <StyledMasterContainer
+    space={space}
+    flow={flow}
+    wrap={wrap}
+    stackDistribution={stackDistribution}
+  >
+    {children && space
+      ? React.Children.map(children, wrapChild(space, flow, wrap))
+      : children}
+  </StyledMasterContainer>
+);

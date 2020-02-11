@@ -1,7 +1,11 @@
 import {SizingKeys} from '../themes/newskit-light/spacing';
 
-export interface StackProps {
-  flow?:
+export type StackProps = Partial<StyledStackProps>;
+
+export interface StyledStackProps {
+  space: SizingKeys;
+  wrap: 'wrap' | 'nowrap';
+  flow:
     | Flow
     | 'vertical-left'
     | 'vertical-center'
@@ -9,7 +13,7 @@ export interface StackProps {
     | 'horizontal-top'
     | 'horizontal-center'
     | 'horizontal-bottom';
-  stackDistribution?:
+  stackDistribution:
     | StackDistribution
     | 'flex-start'
     | 'center'
@@ -17,21 +21,12 @@ export interface StackProps {
     | 'space-around'
     | 'space-between'
     | 'space-evenly';
-  space?: SizingKeys;
-  wrap?: 'wrap' | 'nowrap';
 }
 
-export interface ChildProps {
-  space: SizingKeys;
-  flow?:
-    | Flow
-    | 'vertical-left'
-    | 'vertical-center'
-    | 'vertical-right'
-    | 'horizontal-top'
-    | 'horizontal-center'
-    | 'horizontal-bottom';
-}
+export type StyledChildProps = Pick<
+  StyledStackProps,
+  'space' | 'flow' | 'wrap'
+>;
 
 export enum Flow {
   VerticalLeft = 'vertical-left',

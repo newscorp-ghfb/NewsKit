@@ -1,8 +1,11 @@
-import {css, styled, getSizingFromTheme} from '../utils/style';
+import {css, styled, ThemeProp, CSSObject} from '../utils/style';
 
-import {StackProps, Flow, ChildProps, StackDistribution} from './types';
-import {Theme} from '../themes';
-import {SizingKeys} from '../themes/newskit-light/spacing';
+import {
+  Flow,
+  StyledChildProps,
+  StackDistribution,
+  StyledStackProps,
+} from './types';
 
 export const flowDictionary = {
   vertical: 'column',
@@ -18,15 +21,58 @@ export const alignmentDictionary = {
   'horizontal-bottom': 'flex-end',
 };
 
-const isZero = (space: SizingKeys, {sizing}: Theme) =>
-  parseInt(sizing[space], 10) === 0;
+const horizontalFlows = [
+  Flow.HorizontalBottom,
+  Flow.HorizontalCenter,
+  Flow.HorizontalTop,
+];
 
-const calcSize = (space: SizingKeys, theme: Theme) =>
-  `calc(-${getSizingFromTheme(space)({theme})}/2)`;
+const verticalFlows = [
+  Flow.VerticalLeft,
+  Flow.VerticalCenter,
+  Flow.VerticalRight,
+];
 
-export const StyledMasterContainer = styled.div<StackProps>`
+const calculateMargins = (negative?: boolean) => ({
+  theme,
+  space,
+  wrap,
+  flow,
+}: StyledChildProps & ThemeProp) => {
+  const hasSpacing = parseInt(theme.sizing[space], 10) !== 0;
+  const hasWrapping = wrap === 'wrap';
+
+  if (!hasSpacing) {
+    return undefined;
+  }
+
+  const margins = {} as CSSObject;
+  const halfSpace = `calc(${negative ? '-' : ''}${theme.sizing[space]}/2)`;
+
+  if (verticalFlows.includes(flow as Flow)) {
+    margins.marginTop = halfSpace;
+    margins.marginBottom = halfSpace;
+
+    if (hasWrapping) {
+      margins.marginLeft = halfSpace;
+      margins.marginRight = halfSpace;
+    }
+  } else if (horizontalFlows.includes(flow as Flow)) {
+    margins.marginLeft = halfSpace;
+    margins.marginRight = halfSpace;
+
+    if (hasWrapping) {
+      margins.marginTop = halfSpace;
+      margins.marginBottom = halfSpace;
+    }
+  }
+
+  return margins;
+};
+
+export const StyledMasterContainer = styled.div<StyledStackProps>`
   display: flex;
-  height: ${({flow = Flow.VerticalLeft}) =>
+  height: ${({flow}) =>
     [
       Flow.VerticalLeft,
       Flow.VerticalCenter,
@@ -36,17 +82,20 @@ export const StyledMasterContainer = styled.div<StackProps>`
     ].includes(flow as Flow)
       ? '100%'
       : 'auto'};
-  align-items: ${({flow = Flow.VerticalLeft}) => alignmentDictionary[flow]};
-  flex-wrap: ${({wrap = 'nowrap'}) => wrap};
-  flex-direction: ${({flow = Flow.VerticalLeft}) =>
-    flow.includes('horizontal')
+
+  align-items: ${({flow}) => alignmentDictionary[flow]};
+  flex-wrap: ${({wrap}) => wrap};
+  flex-direction: ${({flow}) =>
+    horizontalFlows.includes(flow as Flow)
       ? flowDictionary.horizontal
       : flowDictionary.vertical};
-  justify-content: ${({stackDistribution = StackDistribution.Start}) =>
+
+  justify-content: ${({stackDistribution}) =>
     stackDistribution === StackDistribution.SpaceEvenly
       ? StackDistribution.SpaceAround
       : stackDistribution};
-  ${({stackDistribution = StackDistribution.Start}) =>
+
+  ${({stackDistribution}) =>
     stackDistribution === StackDistribution.SpaceEvenly
       ? css`
           &:before,
@@ -55,66 +104,12 @@ export const StyledMasterContainer = styled.div<StackProps>`
             display: block;
           }
         `
-      : ''}
-      margin-top: ${({
-        flow = Flow.VerticalLeft,
-        space = 'sizing000',
-        theme,
-      }) => {
-        if (isZero(space, theme) || flow === Flow.HorizontalBottom) {
-          return undefined;
-        }
-        return flow === Flow.HorizontalCenter && !isZero(space, theme)
-          ? `calc(-${getSizingFromTheme(space)({theme})}/2)`
-          : `-${getSizingFromTheme(space)({theme})}`;
-      }};
-      margin-left: ${({flow = Flow.VerticalLeft, space = 'sizing000', theme}) =>
-        isZero(space, theme) || flow === Flow.VerticalRight
-          ? undefined
-          : `calc(-${getSizingFromTheme(space)({theme})}/2)`};
-      margin-bottom: ${({
-        flow = Flow.VerticalLeft,
-        space = 'sizing000',
-        theme,
-      }) => {
-        if (
-          isZero(space, theme) ||
-          [
-            Flow.HorizontalTop,
-            Flow.HorizontalCenter,
-            Flow.VerticalLeft,
-            Flow.VerticalCenter,
-            Flow.VerticalRight,
-          ].includes(flow as Flow)
-        ) {
-          return undefined;
-        }
-        return calcSize(space, theme);
-      }};
-      margin-right: ${({
-        flow = Flow.VerticalLeft,
-        space = 'sizing000',
-        theme,
-      }) => {
-        if (
-          isZero(space, theme) ||
-          [Flow.VerticalLeft].includes(flow as Flow)
-        ) {
-          return undefined;
-        }
-        return calcSize(space, theme);
-      }}
+      : ''};
+
+  ${calculateMargins(true)};
 `;
 
-export const StyledChildContainer = styled.div<ChildProps>`
+export const StyledChildContainer = styled.div<StyledChildProps>`
   display: inline-flex;
-  ${({flow, space, theme: {sizing}}) => {
-    const value = sizing[space];
-    const size = parseInt(value, 10) !== 0 ? `calc(${value}/2)` : 0;
-    return {
-      marginLeft: size,
-      marginRight: flow && flow !== Flow.VerticalLeft ? size : 0,
-      marginTop: value,
-    };
-  }}
+  ${calculateMargins()}
 `;
