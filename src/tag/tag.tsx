@@ -52,10 +52,19 @@ const StyledTag = styled(BaseFlag)<TagProps>`
 `;
 
 export const Tag: React.FC<TagProps> = props => {
-  const {href, children, disabled} = props;
-  const renderAs = href && !disabled ? 'a' : 'span';
+  const {href, children, disabled, ...rest} = props;
+  const newProps: TagProps = {...rest};
+  let renderAs: 'span' | 'a' = 'span';
+
+  if (href) {
+    renderAs = 'a';
+    newProps.href = href;
+    if (disabled) {
+      newProps.disabled = disabled;
+    }
+  }
   return (
-    <StyledTag data-testid="tag" {...as(renderAs)} {...props}>
+    <StyledTag data-testid="tag" {...as(renderAs)} {...newProps}>
       {children}
     </StyledTag>
   );

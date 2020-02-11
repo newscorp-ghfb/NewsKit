@@ -40,11 +40,6 @@ describe('Tag', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders a tag with the default stylePreset', () => {
-    const fragment = renderToFragmentWithTheme(Tag);
-    expect(fragment).toMatchSnapshot();
-  });
-
   test('renders a tag with a custom stylePreset', () => {
     const fragment = renderToFragmentWithTheme(Tag, {
       $stylePreset: 'interactive010Inverse',

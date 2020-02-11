@@ -127,6 +127,11 @@
         "id": "/components/divider"
       },
       {
+        "title": "Flag",
+        "page": true,
+        "id": "/components/flag"
+      },
+      {
         "title": "Grid & Cell",
         "page": true,
         "id": "/components/grid"
@@ -170,11 +175,6 @@
         "title": "Tag",
         "page": true,
         "id": "/components/tag"
-      },
-      {
-        "title": "Flag",
-        "page": true,
-        "id": "/components/flag"
       },
       {
         "title": "Tag List",

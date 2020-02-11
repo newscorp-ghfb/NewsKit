@@ -169,7 +169,7 @@ exports[`Tag href renders in disable state with an anchor 1`] = `
       class="emotion-1"
       wrap="nowrap"
     >
-      <span
+      <a
         class="emotion-0"
         data-testid="tag"
         disabled=""
@@ -288,7 +288,7 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag renders a tag with the default stylePreset 1`] = `
+exports[`Tag renders in disabled state 1`] = `
 <DocumentFragment>
   .emotion-2 {
   display: -webkit-box;
@@ -379,87 +379,6 @@ exports[`Tag renders a tag with the default stylePreset 1`] = `
       <span
         class="emotion-0"
         data-testid="tag"
-      />
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tag renders in disabled state 1`] = `
-<DocumentFragment>
-  .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-0 {
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  line-height: calc(32px - 2px * 2);
-  border-style: solid;
-  border-width: 1px;
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-  border-color: #cccccc;
-  border-radius: 0;
-}
-
-<div
-    class="emotion-2"
-    wrap="nowrap"
-  >
-    <div
-      class="emotion-1"
-      wrap="nowrap"
-    >
-      <span
-        class="emotion-0"
-        data-testid="tag"
-        disabled=""
       />
     </div>
   </div>
