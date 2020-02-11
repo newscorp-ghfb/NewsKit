@@ -87,6 +87,29 @@ describe('AudioElement', () => {
         expect(playerRef.current.seekable.start).toHaveBeenCalledWith(0);
         expect(playerRef.current.seekable.end).toHaveBeenCalledWith(0);
       });
+      test('does not set passed currentTime if timerange length is 0', () => {
+        const playerRef = {
+          current: {
+            currentTime: 0,
+            seekable: {
+              start: jest.fn().mockReturnValue(0),
+              end: jest.fn().mockReturnValue(100),
+              length: 0,
+            },
+          },
+        } as any;
+        const propRef = {
+          current: {
+            setCurrentTime: jest.fn(),
+          },
+        } as any;
+        renderHook(() => useAudioHandler(playerRef, propRef));
+        const currentTime = propRef.current.setCurrentTime(50);
+        expect(currentTime).toEqual(0);
+        expect(playerRef.current.currentTime).toEqual(0);
+        expect(playerRef.current.seekable.start).not.toHaveBeenCalled();
+        expect(playerRef.current.seekable.end).not.toHaveBeenCalled();
+      });
 
       test('sets the minimum timerange value when passed currentTime is smaller minimum', () => {
         const playerRef = {
@@ -205,6 +228,59 @@ describe('AudioElement', () => {
 
         expect(newVolume).toEqual(0);
         expect(playerRef.current.volume).toEqual(0);
+      });
+    });
+
+    describe('setVolume', () => {
+      test('sets passed volume value onto the player', () => {
+        const playerRef = {
+          current: {
+            volume: 1,
+          },
+        } as any;
+        const propRef = {
+          current: {
+            setVolume: jest.fn(),
+          },
+        } as any;
+        renderHook(() => useAudioHandler(playerRef, propRef));
+        const volume = propRef.current.setVolume(0.5);
+        expect(volume).toEqual(0.5);
+        expect(playerRef.current.volume).toEqual(0.5);
+      });
+
+      test('sets the minimum timerange value when passed volume is smaller minimum', () => {
+        const playerRef = {
+          current: {
+            volume: 1,
+          },
+        } as any;
+        const propRef = {
+          current: {
+            setVolume: jest.fn(),
+          },
+        } as any;
+        renderHook(() => useAudioHandler(playerRef, propRef));
+        const volume = propRef.current.setVolume(-9);
+        expect(volume).toEqual(0);
+        expect(playerRef.current.volume).toEqual(0);
+      });
+
+      test('sets the maximum timerange value when passed volume is smaller maximum', () => {
+        const playerRef = {
+          current: {
+            volume: 1,
+          },
+        } as any;
+        const propRef = {
+          current: {
+            setVolume: jest.fn(),
+          },
+        } as any;
+        renderHook(() => useAudioHandler(playerRef, propRef));
+        const volume = propRef.current.setVolume(90);
+        expect(volume).toEqual(1);
+        expect(playerRef.current.volume).toEqual(1);
       });
     });
   });

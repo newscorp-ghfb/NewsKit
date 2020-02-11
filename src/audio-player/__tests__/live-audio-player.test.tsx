@@ -2,8 +2,10 @@ import {fireEvent, EventType} from '@testing-library/react';
 import {
   renderToFragmentWithTheme,
   renderWithTheme,
+  renderWithImplementation,
 } from '../../test/test-utils';
 import {AudioPlayer, AudioPlayerProps} from '../audio-player';
+import {EventTrigger} from '../../instrumentation';
 
 const props = {
   src: 'https://radio.talkradio.co.uk/stream',
@@ -13,6 +15,7 @@ const props = {
   description: 'Test Description',
   time: '1PM to 3PM',
   captionSrc: 'captions.vtt',
+  live: false,
 };
 
 describe('Live AudioPlayer', () => {
@@ -26,6 +29,14 @@ describe('Live AudioPlayer', () => {
       const fragment = renderToFragmentWithTheme(AudioPlayer, {
         ...props,
         live: true,
+      } as AudioPlayerProps);
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('player with popout link', () => {
+      const fragment = renderToFragmentWithTheme(AudioPlayer, {
+        ...props,
+        href: 'https://thetimes.co.uk/',
       } as AudioPlayerProps);
       expect(fragment).toMatchSnapshot();
     });
@@ -57,9 +68,12 @@ describe('Live AudioPlayer', () => {
     );
 
     test('renders play button with correct state when clicked', () => {
-      const {getByTestId, asFragment} = renderWithTheme(
+      const {src, live, title} = props;
+      const fireEventSpy = jest.fn();
+      const {getByTestId, asFragment} = renderWithImplementation(
         AudioPlayer,
         props as AudioPlayerProps,
+        fireEventSpy,
       );
 
       const player = getByTestId('audio-player');
@@ -69,12 +83,30 @@ describe('Live AudioPlayer', () => {
 
       // Playing state
       fireEvent.click(playButton, {});
+      expect(fireEventSpy).toHaveBeenCalledWith({
+        originator: 'audio-player-play-button',
+        trigger: EventTrigger.Click,
+        data: {
+          src,
+          live,
+          title,
+        },
+      });
       expect(asFragment()).toMatchSnapshot();
 
       fireEvent.play(player, {});
 
       // Paused state
       fireEvent.click(playButton, {});
+      expect(fireEventSpy).toHaveBeenCalledWith({
+        originator: 'audio-player-play-button',
+        trigger: EventTrigger.Click,
+        data: {
+          src,
+          live,
+          title,
+        },
+      });
       expect(asFragment()).toMatchSnapshot();
     });
   });

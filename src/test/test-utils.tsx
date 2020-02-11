@@ -1,11 +1,30 @@
 import React from 'react';
 import {render as renderer, RenderOptions} from '@testing-library/react';
 import {Theme, newskitLightTheme, ThemeProvider} from '../themes';
+import {
+  InstrumentationProvider,
+  InstrumentationEvent,
+} from '../instrumentation';
 
 export const renderToFragment = (
   ui: React.ReactElement,
   options?: RenderOptions,
 ) => renderer(ui, options).asFragment();
+
+export const renderWithImplementation = <T extends {}>(
+  Component: React.ComponentType<T>,
+  props?: T & {children?: React.ReactNode},
+  fireEvent: (event: InstrumentationEvent) => void = () => {},
+  options?: Omit<RenderOptions, 'wrapper'>,
+) =>
+  renderer(<Component {...(props as T)} />, {
+    ...options,
+    wrapper: ({children}) => (
+      <InstrumentationProvider fireEvent={fireEvent}>
+        <ThemeProvider theme={newskitLightTheme}>{children}</ThemeProvider>
+      </InstrumentationProvider>
+    ),
+  });
 
 export const renderWithTheme = <T extends {}>(
   Component: React.ComponentType<T>,

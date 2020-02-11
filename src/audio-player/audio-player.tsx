@@ -29,6 +29,7 @@ import {getSingleStylePreset} from '../utils/style-preset';
 import {Stack, StackDistribution, Flow} from '../stack';
 import {PlayerContainer, ControlContainer} from './styled';
 import {VolumeControl} from '../volume-control';
+import {useInstrumentation, EventTrigger} from '../instrumentation';
 
 type EventListener = (event: ChangeEvent<HTMLAudioElement>) => void;
 
@@ -52,9 +53,11 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
   disableNextTrack,
   onPreviousTrack,
   disablePreviousTrack,
+  src,
   href,
   ...props
 }) => {
+  const {fireEvent} = useInstrumentation();
   const playerRef = useRef<AudioHandler>(null);
 
   /**
@@ -87,14 +90,45 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
    * audio playback handlers
    */
   const [isPlaying, setIsPlaying] = useState(false);
-  const onPlay = () => setIsPlaying(true);
-  const onPause = () => setIsPlaying(false);
+  const onPlay = () => {
+    fireEvent({
+      originator: 'audio-player',
+      trigger: EventTrigger.Start,
+      data: {
+        src,
+        live,
+        title,
+      },
+    });
+    setIsPlaying(true);
+  };
+  const onPause = () => {
+    fireEvent({
+      originator: 'audio-player',
+      trigger: EventTrigger.Stop,
+      data: {
+        src,
+        live,
+        title,
+      },
+    });
+    setIsPlaying(false);
+  };
   const togglePlay = useCallback(() => {
     const playerNode = playerRef.current;
     if (playerNode) {
+      fireEvent({
+        originator: 'audio-player-play-button',
+        trigger: EventTrigger.Click,
+        data: {
+          src,
+          live,
+          title,
+        },
+      });
       setIsPlaying(playerNode.togglePlay(isPlaying));
     }
-  }, [isPlaying, setIsPlaying, playerRef]);
+  }, [fireEvent, src, live, title, isPlaying]);
 
   /**
    * audio time management callbacks
@@ -135,20 +169,72 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
     [onChangeAudioTime],
   );
   const onClickPrevious = useCallback(() => {
-    if (timeRef.current > 5) {
-      onChangeAudioTime(0);
-    } else if (onPreviousTrack) {
-      onPreviousTrack();
+    if (onPreviousTrack) {
+      fireEvent({
+        originator: 'audio-player-skip-previous-button',
+        trigger: EventTrigger.Click,
+        data: {
+          src,
+          live,
+          title,
+        },
+      });
+      if (timeRef.current > 5) {
+        onChangeAudioTime(0);
+      } else {
+        onPreviousTrack();
+      }
     }
-  }, [onPreviousTrack, timeRef, onChangeAudioTime]);
-  const onClickReplay = useCallback(
-    () => onChangeAudioTime(timeRef.current - 10),
-    [onChangeAudioTime, timeRef],
-  );
-  const onClickForward = useCallback(
-    () => onChangeAudioTime(timeRef.current + 10),
-    [onChangeAudioTime, timeRef],
-  );
+  }, [fireEvent, src, live, title, onPreviousTrack, onChangeAudioTime]);
+  const onClickReplay = useCallback(() => {
+    fireEvent({
+      originator: 'audio-player-replay-button',
+      trigger: EventTrigger.Click,
+      data: {
+        src,
+        live,
+        title,
+      },
+    });
+    onChangeAudioTime(timeRef.current - 10);
+  }, [fireEvent, src, live, title, onChangeAudioTime]);
+  const onClickForward = useCallback(() => {
+    fireEvent({
+      originator: 'audio-player-forward-button',
+      trigger: EventTrigger.Click,
+      data: {
+        src,
+        live,
+        title,
+      },
+    });
+    onChangeAudioTime(timeRef.current + 10);
+  }, [fireEvent, src, live, title, onChangeAudioTime]);
+  const onEnded = useCallback(() => {
+    fireEvent({
+      originator: 'audio-player',
+      trigger: EventTrigger.End,
+      data: {
+        src,
+        live,
+        title,
+      },
+    });
+  }, [fireEvent, src, live, title]);
+  const onClickNext = useCallback(() => {
+    if (onNextTrack) {
+      fireEvent({
+        originator: 'audio-player-skip-next-button',
+        trigger: EventTrigger.Click,
+        data: {
+          src,
+          live,
+          title,
+        },
+      });
+      onNextTrack();
+    }
+  }, [onNextTrack, fireEvent, src, live, title]);
 
   /**
    * audio playback handlers
@@ -206,6 +292,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
   return (
     <PlayerContainer>
       <AudioElement
+        src={src}
         ref={playerRef}
         title={title}
         onPlay={onPlay}
@@ -214,6 +301,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
         onTimeUpdate={onTimeUpdate}
         onProgress={onProgress}
         onVolumeChange={onVolumeChange}
+        onEnded={onEnded}
         data-testid="audio-player"
         {...props}
       />
@@ -261,7 +349,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
             {showControls && <ForwardButton onClick={onClickForward} />}
             {onNextTrack && (
               <SkipNextButton
-                onClick={onNextTrack}
+                onClick={onClickNext}
                 disabled={disableNextTrack}
               />
             )}

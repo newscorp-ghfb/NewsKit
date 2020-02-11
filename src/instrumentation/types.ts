@@ -4,6 +4,9 @@ export enum EventTrigger {
   Click = 'click',
   Swipe = 'swipe',
   Load = 'load',
+  Start = 'start',
+  Stop = 'stop',
+  End = 'end',
 }
 
 export interface InstrumentationEvent {
