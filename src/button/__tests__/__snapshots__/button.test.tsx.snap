@@ -44,7 +44,7 @@ exports[`Button renders Icon Button 1`] = `
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: 48px;
-  min-height: spaceInset040;
+  min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -157,7 +157,7 @@ exports[`Button renders Large Button 1`] = `
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: 48px;
-  min-height: spaceInset040;
+  min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -245,7 +245,7 @@ exports[`Button renders Medium Button 1`] = `
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: 40px;
-  min-height: spaceInset030;
+  min-height: 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.7142857142857142;
@@ -311,7 +311,7 @@ exports[`Button renders Small Button 1`] = `
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: 32px;
-  min-height: spaceInset020;
+  min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -425,7 +425,7 @@ exports[`Button renders with different style preset 1`] = `
   border-width: 1px;
   color: #0A68C1;
   border-radius: 32px;
-  min-height: spaceInset020;
+  min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -488,7 +488,7 @@ exports[`Button renders with fallback formatting 1`] = `
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: 32px;
-  min-height: spaceInset020;
+  min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;

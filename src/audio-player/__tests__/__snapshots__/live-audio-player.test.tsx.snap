@@ -316,7 +316,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: 48px;
-  min-height: spaceInset040;
+  min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -1071,26 +1071,36 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   color: #c0c0c0;
 }
 
-.emotion-34 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+.emotion-23 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 48px;
+  min-height: 16px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 16px 24px;
 }
 
 .emotion-24 {
@@ -1994,8 +2004,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: 48px;
-  height: 48px;
-  width: 48px;
+  min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -2934,7 +2943,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: 48px;
-  min-height: spaceInset040;
+  min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -3661,8 +3670,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: 48px;
-  height: 48px;
-  width: 48px;
+  min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -4416,71 +4424,7 @@ exports[`Live AudioPlayer render default player 1`] = `
   color: #c0c0c0;
 }
 
-.emotion-31 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.emotion-21 {
-  width: 100%;
-  max-width: 120px;
-}
-
-.emotion-14 {
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: none;
-  padding: 0;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-}
-
-.emotion-13 {
-  display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-17 {
-  background-color: #cccccc;
-  border-radius: 12px;
-  margin: 0 16px;
-  cursor: pointer;
-  height: 12px;
-  width: 100%;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.emotion-17:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-23 {
+.emotion-20 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -4500,8 +4444,7 @@ exports[`Live AudioPlayer render default player 1`] = `
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: 48px;
-  height: 48px;
-  width: 48px;
+  min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -5240,7 +5183,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: 48px;
-  min-height: spaceInset040;
+  min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -6952,7 +6895,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: 48px;
-  min-height: spaceInset040;
+  min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
