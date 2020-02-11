@@ -92,7 +92,7 @@ const ButtonElement = styled.button<ButtonProps>`
         {$stylePreset, theme},
         {borderRadiusSize, withIconColor: !!icon},
       )}
-      min-height: ${minHeight};
+      min-height: ${theme.sizing[minHeight]};
       ${getTypePresetFromTheme(typePreset)({theme})}
       padding: ${theme.sizing[paddingX]} ${theme.sizing[paddingY]};
     `;
