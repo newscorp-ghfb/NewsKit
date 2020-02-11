@@ -14,6 +14,14 @@ const customTheme: Theme = createTheme('awesome-theme', {
   themeOverrider: () => ({
     stylePresets: {
       myAwesomeCustomStyle: {
+        loading: {
+          backgroundColor: colorPrimitives.red020,
+          borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
+          iconColor: colorPrimitives.green010,
+          borderWidth: '3px',
+          borderStyle: 'solid',
+          borderColor: 'blue',
+        },
         base: {
           backgroundColor: colorPrimitives.blue040,
           borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],

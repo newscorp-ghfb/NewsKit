@@ -26,19 +26,23 @@ const ImageContainer = styled.div<ImageContainerProps>`
       ? `calc(100% * (${props.aspectHeight}/${props.aspectWidth}))`
       : 0};
 
-  ${({$stylePreset, theme, isLoading}) =>
+  ${({isLoading, ...props}) =>
     getStylePresetFromTheme(
-      $stylePreset || 'maskPointed010',
-      'stylePreset' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
-      {borderRadiusSize: 'sizing060', isLoading},
-    )({theme})}
+      'maskPointed010',
+      '$stylePreset' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+      {
+        borderRadiusSize: 'sizing060',
+        isLoading,
+      },
+    )(props)}
 `;
 
 const imagePropsAreEqual = (prevProps: ImageProps, nextProps: ImageProps) =>
   prevProps.aspectHeight === nextProps.aspectHeight &&
   prevProps.aspectWidth === nextProps.aspectWidth &&
   prevProps.hideLoadingIcon === nextProps.hideLoadingIcon &&
-  prevProps.src === nextProps.src;
+  prevProps.src === nextProps.src &&
+  prevProps.$stylePreset === nextProps.$stylePreset;
 
 export const handleClientSideRender = (
   handler: () => boolean | void,
