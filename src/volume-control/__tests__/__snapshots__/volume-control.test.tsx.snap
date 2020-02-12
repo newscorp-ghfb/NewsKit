@@ -62,7 +62,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 
 .emotion-4 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   margin: 0 16px;
   cursor: pointer;
   height: 12px;
@@ -269,7 +269,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 
 .emotion-4 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   margin: 0 16px;
   cursor: pointer;
   height: 12px;
@@ -476,7 +476,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 
 .emotion-4 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   margin: 0 16px;
   cursor: pointer;
   height: 12px;
@@ -724,7 +724,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 
 .emotion-4 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   margin: 16px 0;
   cursor: pointer;
   height: 100%;

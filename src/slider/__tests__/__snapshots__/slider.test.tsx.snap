@@ -635,7 +635,7 @@ exports[`slider react-range Range function props renderThumb should render range
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   top: -32px;
   position: absolute;
   background-color: transparent;
@@ -773,7 +773,7 @@ exports[`slider react-range Range function props renderThumb should render verti
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0A68C1;
-  border-radius: 32px;
+  border-radius: 100vw;
   right: -40px;
   position: absolute;
   background-color: transparent;
@@ -818,7 +818,7 @@ exports[`slider react-range Range function props renderTrack should render defau
 <DocumentFragment>
   .emotion-0 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   margin: 0 16px;
   cursor: pointer;
   height: 12px;
@@ -848,7 +848,7 @@ exports[`slider react-range Range function props renderTrack should render disab
 <DocumentFragment>
   .emotion-0 {
   background-color: #f0f0f0;
-  border-radius: 12px;
+  border-radius: 100vw;
   margin: 0 16px;
   cursor: not-allowed;
   height: 12px;
@@ -875,7 +875,7 @@ exports[`slider react-range Range function props renderTrack should render disab
 <DocumentFragment>
   .emotion-0 {
   background-color: #f0f0f0;
-  border-radius: 12px;
+  border-radius: 100vw;
   margin: 0 16px;
   cursor: not-allowed;
   height: 12px;
@@ -902,7 +902,7 @@ exports[`slider react-range Range function props renderTrack should render grabb
 <DocumentFragment>
   .emotion-0 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   margin: 0 16px;
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
@@ -934,7 +934,7 @@ exports[`slider react-range Range function props renderTrack should render multi
 <DocumentFragment>
   .emotion-0 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   margin: 0 16px;
   cursor: inherit;
   height: 12px;
@@ -964,7 +964,7 @@ exports[`slider react-range Range function props renderTrack should render verti
 <DocumentFragment>
   .emotion-0 {
   background-color: #cccccc;
-  border-radius: 12px;
+  border-radius: 100vw;
   margin: 16px 0;
   cursor: pointer;
   height: 100%;
