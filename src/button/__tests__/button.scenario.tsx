@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import {Button} from '..';
 import {styled} from '../../utils/style';
-import {ButtonSize} from '../types';
+import {ButtonSize, IconPlacement} from '../types';
 import {Pause, Email, CopyLink} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
@@ -124,6 +124,29 @@ export const component = () => (
               {buttonSize: ButtonSize.Large, iconSize: 'iconSize020'},
             ].map(button => (
               <Button $size={button.buttonSize} icon={IconType}>
+                Button
+              </Button>
+            ))}
+          </Stack>
+        </Spacer>
+      ))}
+    </Container>
+
+    <h2>Icon placed after text</h2>
+    <Container>
+      {[Pause, Email, CopyLink].map(IconType => (
+        <Spacer>
+          <Stack flow="horizontal-center" space="sizing060">
+            {[
+              {buttonSize: ButtonSize.Small, iconSize: 'iconSize010'},
+              {buttonSize: ButtonSize.Medium, iconSize: 'iconSize020'},
+              {buttonSize: ButtonSize.Large, iconSize: 'iconSize020'},
+            ].map(button => (
+              <Button
+                $size={button.buttonSize}
+                icon={IconType}
+                iconPlacement={IconPlacement.End}
+              >
                 Button
               </Button>
             ))}

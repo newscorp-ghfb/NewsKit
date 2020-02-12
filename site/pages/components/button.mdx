@@ -4,7 +4,7 @@ import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 
-import {Button, ButtonSize} from 'newskit';
+import {Button, ButtonSize, Email, Pause, IconPlacement} from 'newskit';
 
 export default Layout;
 
@@ -16,15 +16,34 @@ A styled button element with customisable size.
 
 ## Props
 
-Buttons have a number of props to facilitate a variety of uses. Any prop valid on an Button HTML element as described in [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#Attributes), is also valid on the Button component. 
+Buttons have a number of props to facilitate a variety of uses. Any prop valid on an Button HTML element as described in [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#Attributes), is also valid on the Button component.
 Custom props are detailed below:
 
 <LegacyBlock marginTop="sizing040">
-  <Prop name="$size" type="ButtonSize" enum={ButtonSize} default={ButtonSize.Small}>
-    Set the size of the button. Possible values: Small, Medium and Large. Default styling: Small.
+  <Prop
+    name="$size"
+    type="ButtonSize"
+    enum={ButtonSize}
+    default={ButtonSize.Small}
+  >
+    Set the size of the button. Possible values: Small, Medium and Large.
+    Default styling: Small.
   </Prop>
-    <Prop name="$stylePreset" type="string" default="interactive010">
+  <Prop name="$stylePreset" type="string" default="interactive010">
     Set the style presets of the button.
+  </Prop>
+  <Prop name="icon" type="any">
+    Defines which icon to use.
+  </Prop>
+  <Prop name="$iconColor" type="ColorKeys" default="buttonFill">
+    Set the color of the icon.
+  </Prop>
+  <Prop
+    name="iconPlacement"
+    type="IconPlacement.Start | IconPlacement.End"
+    default="IconPlacement.Start"
+  >
+    Defines where the icon is placed in the button.
   </Prop>
 </LegacyBlock>
 
@@ -59,7 +78,7 @@ Custom props are detailed below:
         },
       ],
     },
-        {
+    {
       name: 'Style Preset',
       propName: '$stylePreset',
       options: [
@@ -86,7 +105,41 @@ Custom props are detailed below:
         },
       ],
     },
-      {
+    {
+      name: 'Icon',
+      propName: 'icon',
+      options: [
+        {
+          label: 'no icon',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'Email Icon',
+          value: Email,
+        },
+        {
+          label: 'Pause Icon',
+          value: Pause,
+        },
+      ],
+    },
+    {
+      name: 'Icon Placement',
+      propName: 'iconPlacement',
+      options: [
+        {
+          label: 'IconPlacement.Start',
+          value: IconPlacement.Beginning,
+          isDefault: true,
+        },
+        {
+          label: 'IconPlacement.End',
+          value: IconPlacement.End,
+        },
+      ],
+    },
+    {
       name: 'Disabled',
       propName: 'disabled',
       type: 'boolean',

@@ -5,7 +5,7 @@ import {
   getAnimationFromTheme,
   getTypePresetFromTheme,
 } from '../utils/style';
-import {ButtonProps, ButtonSize} from './types';
+import {ButtonProps, ButtonSize, IconPlacement} from './types';
 import {getStylePresetFromTheme} from '../utils/style-preset';
 import {SizingKeys, TypePresetKeys, Theme} from '../themes';
 import {PaddingPresetKeys} from '../themes/mappers/spacing';
@@ -32,7 +32,6 @@ const buttonSizeStyleTokens: Record<
   ButtonSize,
   {
     minHeight: PaddingPresetKeys;
-    wrapperSize: SizingKeys;
     borderRadiusSize: SizingKeys;
     typePreset: TypePresetKeys;
     paddingX: SizingKeys;
@@ -41,7 +40,6 @@ const buttonSizeStyleTokens: Record<
 > = {
   [ButtonSize.Large]: {
     minHeight: 'spaceInset040',
-    wrapperSize: 'sizing050',
     borderRadiusSize: 'sizing080',
     typePreset: 'button030',
     paddingX: 'sizing040',
@@ -49,7 +47,6 @@ const buttonSizeStyleTokens: Record<
   },
   [ButtonSize.Medium]: {
     minHeight: 'spaceInset030',
-    wrapperSize: 'sizing050',
     borderRadiusSize: 'sizing070',
     typePreset: 'button020',
     paddingX: 'sizing030',
@@ -57,7 +54,6 @@ const buttonSizeStyleTokens: Record<
   },
   [ButtonSize.Small]: {
     minHeight: 'spaceInset020',
-    wrapperSize: 'sizing040',
     borderRadiusSize: 'sizing060',
     typePreset: 'button010',
     paddingX: 'sizing020',
@@ -113,6 +109,7 @@ export const Button: React.FC<
     icon: Icon,
     $size,
     $iconColor = 'buttonFill',
+    iconPlacement = IconPlacement.Start,
     ...restOfProps
   } = props;
   const iconWithProps = (
@@ -123,6 +120,7 @@ export const Button: React.FC<
       $color={$iconColor}
     />
   );
+  const childrenList = [iconWithProps, children];
 
   return (
     <ButtonElement type="button" $size={$size} {...restOfProps} icon={Icon}>
@@ -132,8 +130,9 @@ export const Button: React.FC<
           space={spacing}
           stackDistribution={StackDistribution.Center}
         >
-          {iconWithProps}
-          {children}
+          {iconPlacement === IconPlacement.Start
+            ? childrenList
+            : childrenList.reverse()}
         </Stack>
       ) : (
         <Stack
