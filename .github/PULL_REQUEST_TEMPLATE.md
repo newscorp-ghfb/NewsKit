@@ -9,7 +9,8 @@
 
 **I have:**
  - [ ] Written unit tests against changes
- - [ ] Written end to end/visual regression tests against changes
+ - [ ] Written accessibility tests against the component
+ - [ ] Written functional tests against the component and/or NewsKit site
  - [ ] All the linting and tests are passing
  - [ ] Updated relevant documentation
  - [ ] Discussed with QA and/or design about any visual changes
