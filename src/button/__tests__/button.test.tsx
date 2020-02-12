@@ -66,18 +66,17 @@ describe('Button', () => {
       $size: ButtonSize.Small,
       icon: Email,
       $iconColor: 'buttonText' as ColorKeys,
-      $iconPlacement: undefined,
       children: 'click this!',
     };
     const fragment = renderToFragmentWithTheme(Button, props);
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders when there is an icon with the placement set to beginning', () => {
+  test('renders when there is an icon with the placement set to start', () => {
     const props = {
       $size: ButtonSize.Small,
       icon: Email,
-      $iconPlacement: IconPlacement.Start,
+      iconPlacement: IconPlacement.Start,
       children: 'click this!',
     };
     const fragment = renderToFragmentWithTheme(Button, props);
@@ -88,7 +87,7 @@ describe('Button', () => {
     const props = {
       $size: ButtonSize.Small,
       icon: Email,
-      $iconPlacement: IconPlacement.End,
+      iconPlacement: IconPlacement.End,
       children: 'click this!',
     };
     const fragment = renderToFragmentWithTheme(Button, props);

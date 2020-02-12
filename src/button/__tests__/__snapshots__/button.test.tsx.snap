@@ -529,7 +529,7 @@ exports[`Button renders when there is an icon with a colour 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Button renders when there is an icon with the placement set to beginning 1`] = `
+exports[`Button renders when there is an icon with the placement set to end 1`] = `
 <DocumentFragment>
   .emotion-4 {
   display: inline-block;
@@ -613,7 +613,7 @@ exports[`Button renders when there is an icon with the placement set to beginnin
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -622,7 +622,7 @@ exports[`Button renders when there is an icon with the placement set to beginnin
   margin-right: calc(8px/2);
 }
 
-.emotion-0 {
+.emotion-1 {
   display: inline-block;
   fill: #0A68C1;
   color: #0A68C1;
@@ -639,11 +639,17 @@ exports[`Button renders when there is an icon with the placement set to beginnin
       wrap="nowrap"
     >
       <div
-        class="emotion-1"
+        class="emotion-0"
+        wrap="nowrap"
+      >
+        click this!
+      </div>
+      <div
+        class="emotion-0"
         wrap="nowrap"
       >
         <svg
-          class="emotion-0"
+          class="emotion-1"
           viewBox="0 0 24 24"
         >
           <title>
@@ -654,18 +660,12 @@ exports[`Button renders when there is an icon with the placement set to beginnin
           />
         </svg>
       </div>
-      <div
-        class="emotion-1"
-        wrap="nowrap"
-      >
-        click this!
-      </div>
     </div>
   </button>
 </DocumentFragment>
 `;
 
-exports[`Button renders when there is an icon with the placement set to end 1`] = `
+exports[`Button renders when there is an icon with the placement set to start 1`] = `
 <DocumentFragment>
   .emotion-4 {
   display: inline-block;

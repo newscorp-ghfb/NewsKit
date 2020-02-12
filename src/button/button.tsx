@@ -103,15 +103,14 @@ const ButtonElement = styled.button<ButtonProps>`
 
 export const Button: React.FC<
   React.ButtonHTMLAttributes<HTMLButtonElement> & ButtonProps
-> = props => {
-  const {
-    children,
-    icon: Icon,
-    $size,
-    $iconColor = 'buttonFill',
-    iconPlacement = IconPlacement.Start,
-    ...restOfProps
-  } = props;
+> = ({
+  children,
+  icon: Icon,
+  $size,
+  $iconColor = 'buttonFill',
+  iconPlacement = IconPlacement.Start,
+  ...restOfProps
+}) => {
   const iconWithProps = (
     <Icon
       $size={
