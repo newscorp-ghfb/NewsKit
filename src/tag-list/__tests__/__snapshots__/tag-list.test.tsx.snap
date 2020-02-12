@@ -22,39 +22,6 @@ exports[`TagList renders as a span with custom margins 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -82,21 +49,50 @@ exports[`TagList renders as a span with custom margins 1`] = `
   border-radius: 0;
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #535353;
 }
 
-.emotion-0:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-0:focus:not(:disabled) {
+.emotion-2:focus:not(:disabled) {
   border-color: #535353;
 }
 
-.emotion-0:disabled {
+.emotion-2:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .emotion-3 {
@@ -117,62 +113,62 @@ exports[`TagList renders as a span with custom margins 1`] = `
     <li
       class="emotion-3"
     >
-      <div
+      <span
         class="emotion-2"
-        wrap="nowrap"
+        data-testid="tag"
       >
         <div
           class="emotion-1"
           wrap="nowrap"
         >
-          <span
+          <div
             class="emotion-0"
-            data-testid="tag"
+            wrap="nowrap"
           >
             first label
-          </span>
+          </div>
         </div>
-      </div>
+      </span>
     </li>
     <li
       class="emotion-3"
     >
-      <div
+      <span
         class="emotion-2"
-        wrap="nowrap"
+        data-testid="tag"
       >
         <div
           class="emotion-1"
           wrap="nowrap"
         >
-          <span
+          <div
             class="emotion-0"
-            data-testid="tag"
+            wrap="nowrap"
           >
             second label
-          </span>
+          </div>
         </div>
-      </div>
+      </span>
     </li>
     <li
       class="emotion-3"
     >
-      <div
+      <span
         class="emotion-2"
-        wrap="nowrap"
+        data-testid="tag"
       >
         <div
           class="emotion-1"
           wrap="nowrap"
         >
-          <span
+          <div
             class="emotion-0"
-            data-testid="tag"
+            wrap="nowrap"
           >
             third label
-          </span>
+          </div>
         </div>
-      </div>
+      </span>
     </li>
   </ul>
 </DocumentFragment>
@@ -192,16 +188,16 @@ exports[`TagList renders as a span with custom size 1`] = `
   margin-right: 0;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: auto;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -212,17 +208,13 @@ exports[`TagList renders as a span with custom size 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
 }
 
 .emotion-12 {
@@ -244,7 +236,7 @@ exports[`TagList renders as a span with custom size 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-0 {
+.emotion-2 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -272,19 +264,19 @@ exports[`TagList renders as a span with custom size 1`] = `
   border-radius: 0;
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #535353;
 }
 
-.emotion-0:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-0:focus:not(:disabled) {
+.emotion-2:focus:not(:disabled) {
   border-color: #535353;
 }
 
-.emotion-0:disabled {
+.emotion-2:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
@@ -295,62 +287,62 @@ exports[`TagList renders as a span with custom size 1`] = `
     <li
       class="emotion-3"
     >
-      <div
+      <span
         class="emotion-2"
-        wrap="nowrap"
+        data-testid="tag"
       >
         <div
           class="emotion-1"
           wrap="nowrap"
         >
-          <span
+          <div
             class="emotion-0"
-            data-testid="tag"
+            wrap="nowrap"
           >
             first label
-          </span>
+          </div>
         </div>
-      </div>
+      </span>
     </li>
     <li
       class="emotion-3"
     >
-      <div
+      <span
         class="emotion-2"
-        wrap="nowrap"
+        data-testid="tag"
       >
         <div
           class="emotion-1"
           wrap="nowrap"
         >
-          <span
+          <div
             class="emotion-0"
-            data-testid="tag"
+            wrap="nowrap"
           >
             second label
-          </span>
+          </div>
         </div>
-      </div>
+      </span>
     </li>
     <li
       class="emotion-3"
     >
-      <div
+      <span
         class="emotion-2"
-        wrap="nowrap"
+        data-testid="tag"
       >
         <div
           class="emotion-1"
           wrap="nowrap"
         >
-          <span
+          <div
             class="emotion-0"
-            data-testid="tag"
+            wrap="nowrap"
           >
             third label
-          </span>
+          </div>
         </div>
-      </div>
+      </span>
     </li>
   </ul>
 </DocumentFragment>
@@ -390,39 +382,6 @@ exports[`TagList renders as a span with defaults 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -450,21 +409,50 @@ exports[`TagList renders as a span with defaults 1`] = `
   border-radius: 0;
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #535353;
 }
 
-.emotion-0:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-0:focus:not(:disabled) {
+.emotion-2:focus:not(:disabled) {
   border-color: #535353;
 }
 
-.emotion-0:disabled {
+.emotion-2:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 <ul
@@ -473,62 +461,62 @@ exports[`TagList renders as a span with defaults 1`] = `
     <li
       class="emotion-3"
     >
-      <div
+      <span
         class="emotion-2"
-        wrap="nowrap"
+        data-testid="tag"
       >
         <div
           class="emotion-1"
           wrap="nowrap"
         >
-          <span
+          <div
             class="emotion-0"
-            data-testid="tag"
+            wrap="nowrap"
           >
             first label
-          </span>
+          </div>
         </div>
-      </div>
+      </span>
     </li>
     <li
       class="emotion-3"
     >
-      <div
+      <span
         class="emotion-2"
-        wrap="nowrap"
+        data-testid="tag"
       >
         <div
           class="emotion-1"
           wrap="nowrap"
         >
-          <span
+          <div
             class="emotion-0"
-            data-testid="tag"
+            wrap="nowrap"
           >
             second label
-          </span>
+          </div>
         </div>
-      </div>
+      </span>
     </li>
     <li
       class="emotion-3"
     >
-      <div
+      <span
         class="emotion-2"
-        wrap="nowrap"
+        data-testid="tag"
       >
         <div
           class="emotion-1"
           wrap="nowrap"
         >
-          <span
+          <div
             class="emotion-0"
-            data-testid="tag"
+            wrap="nowrap"
           >
             third label
-          </span>
+          </div>
         </div>
-      </div>
+      </span>
     </li>
   </ul>
 </DocumentFragment>
@@ -556,39 +544,6 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -616,21 +571,50 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
   border-radius: 0;
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #535353;
 }
 
-.emotion-0:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-0:focus:not(:disabled) {
+.emotion-2:focus:not(:disabled) {
   border-color: #535353;
 }
 
-.emotion-0:disabled {
+.emotion-2:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .emotion-3 {
@@ -651,65 +635,65 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
     <li
       class="emotion-3"
     >
-      <div
+      <a
         class="emotion-2"
-        wrap="nowrap"
+        data-testid="tag"
+        href="www.url1.com"
       >
         <div
           class="emotion-1"
           wrap="nowrap"
         >
-          <a
+          <div
             class="emotion-0"
-            data-testid="tag"
-            href="www.url1.com"
+            wrap="nowrap"
           >
             first label
-          </a>
+          </div>
         </div>
-      </div>
+      </a>
     </li>
     <li
       class="emotion-3"
     >
-      <div
+      <a
         class="emotion-2"
-        wrap="nowrap"
+        data-testid="tag"
+        href="www.url2.com"
       >
         <div
           class="emotion-1"
           wrap="nowrap"
         >
-          <a
+          <div
             class="emotion-0"
-            data-testid="tag"
-            href="www.url2.com"
+            wrap="nowrap"
           >
             second label
-          </a>
+          </div>
         </div>
-      </div>
+      </a>
     </li>
     <li
       class="emotion-3"
     >
-      <div
+      <a
         class="emotion-2"
-        wrap="nowrap"
+        data-testid="tag"
+        href="www.url3.com"
       >
         <div
           class="emotion-1"
           wrap="nowrap"
         >
-          <a
+          <div
             class="emotion-0"
-            data-testid="tag"
-            href="www.url3.com"
+            wrap="nowrap"
           >
             third label
-          </a>
+          </div>
         </div>
-      </div>
+      </a>
     </li>
   </ul>
 </DocumentFragment>
@@ -729,16 +713,16 @@ exports[`TagList renders as an anchor with custom size 1`] = `
   margin-right: 0;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: auto;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -749,17 +733,13 @@ exports[`TagList renders as an anchor with custom size 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
 }
 
 .emotion-12 {
@@ -781,7 +761,7 @@ exports[`TagList renders as an anchor with custom size 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-0 {
+.emotion-2 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -809,19 +789,19 @@ exports[`TagList renders as an anchor with custom size 1`] = `
   border-radius: 0;
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #535353;
 }
 
-.emotion-0:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-0:focus:not(:disabled) {
+.emotion-2:focus:not(:disabled) {
   border-color: #535353;
 }
 
-.emotion-0:disabled {
+.emotion-2:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
@@ -832,65 +812,65 @@ exports[`TagList renders as an anchor with custom size 1`] = `
     <li
       class="emotion-3"
     >
-      <div
+      <a
         class="emotion-2"
-        wrap="nowrap"
+        data-testid="tag"
+        href="www.url1.com"
       >
         <div
           class="emotion-1"
           wrap="nowrap"
         >
-          <a
+          <div
             class="emotion-0"
-            data-testid="tag"
-            href="www.url1.com"
+            wrap="nowrap"
           >
             first label
-          </a>
+          </div>
         </div>
-      </div>
+      </a>
     </li>
     <li
       class="emotion-3"
     >
-      <div
+      <a
         class="emotion-2"
-        wrap="nowrap"
+        data-testid="tag"
+        href="www.url2.com"
       >
         <div
           class="emotion-1"
           wrap="nowrap"
         >
-          <a
+          <div
             class="emotion-0"
-            data-testid="tag"
-            href="www.url2.com"
+            wrap="nowrap"
           >
             second label
-          </a>
+          </div>
         </div>
-      </div>
+      </a>
     </li>
     <li
       class="emotion-3"
     >
-      <div
+      <a
         class="emotion-2"
-        wrap="nowrap"
+        data-testid="tag"
+        href="www.url3.com"
       >
         <div
           class="emotion-1"
           wrap="nowrap"
         >
-          <a
+          <div
             class="emotion-0"
-            data-testid="tag"
-            href="www.url3.com"
+            wrap="nowrap"
           >
             third label
-          </a>
+          </div>
         </div>
-      </div>
+      </a>
     </li>
   </ul>
 </DocumentFragment>
@@ -930,39 +910,6 @@ exports[`TagList renders as an anchor with defaults 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -990,21 +937,50 @@ exports[`TagList renders as an anchor with defaults 1`] = `
   border-radius: 0;
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   border-color: #535353;
 }
 
-.emotion-0:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-0:focus:not(:disabled) {
+.emotion-2:focus:not(:disabled) {
   border-color: #535353;
 }
 
-.emotion-0:disabled {
+.emotion-2:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 <ul
@@ -1013,65 +989,65 @@ exports[`TagList renders as an anchor with defaults 1`] = `
     <li
       class="emotion-3"
     >
-      <div
+      <a
         class="emotion-2"
-        wrap="nowrap"
+        data-testid="tag"
+        href="www.url1.com"
       >
         <div
           class="emotion-1"
           wrap="nowrap"
         >
-          <a
+          <div
             class="emotion-0"
-            data-testid="tag"
-            href="www.url1.com"
+            wrap="nowrap"
           >
             first label
-          </a>
+          </div>
         </div>
-      </div>
+      </a>
     </li>
     <li
       class="emotion-3"
     >
-      <div
+      <a
         class="emotion-2"
-        wrap="nowrap"
+        data-testid="tag"
+        href="www.url2.com"
       >
         <div
           class="emotion-1"
           wrap="nowrap"
         >
-          <a
+          <div
             class="emotion-0"
-            data-testid="tag"
-            href="www.url2.com"
+            wrap="nowrap"
           >
             second label
-          </a>
+          </div>
         </div>
-      </div>
+      </a>
     </li>
     <li
       class="emotion-3"
     >
-      <div
+      <a
         class="emotion-2"
-        wrap="nowrap"
+        data-testid="tag"
+        href="www.url3.com"
       >
         <div
           class="emotion-1"
           wrap="nowrap"
         >
-          <a
+          <div
             class="emotion-0"
-            data-testid="tag"
-            href="www.url3.com"
+            wrap="nowrap"
           >
             third label
-          </a>
+          </div>
         </div>
-      </div>
+      </a>
     </li>
   </ul>
 </DocumentFragment>

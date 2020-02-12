@@ -3,7 +3,7 @@ import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
-import {Flag, FlagSize} from 'newskit';
+import {FlagSolid, FlagMinimal, FlagSize} from 'newskit';
 
 export default Layout;
 
@@ -32,7 +32,7 @@ Flags have a number of props to facilitate a variety of uses:
   <Prop name="$size" type="FlagSize" enum={FlagSize} default="Small">
     Optional size of the Flag.
   </Prop>
-  <Prop name="$stylePreset" type="string" default="interactive070">
+  <Prop name="$stylePreset" type="string" default="flag010">
     If provided, this overrides the style preset applied to the flag.
   </Prop>
 </LegacyBlock>
@@ -40,9 +40,9 @@ Flags have a number of props to facilitate a variety of uses:
 ## Playground
 
 <Playground
-  componentName="Flag"
+  componentName={["FlagSolid", "FlagMinimal"]}
   newskitPath="/flag"
-  component={Flag}
+  component={[FlagSolid, FlagMinimal]}
   knobs={[
     {
       name: 'Content',
@@ -69,25 +69,13 @@ Flags have a number of props to facilitate a variety of uses:
       propName: '$stylePreset',
       options: [
         {
-          label: 'interactive010',
-          value: 'interactive010',
+          label: 'flag010',
+          value: 'flag010',
           isDefault: true
         },
         {
-          label: 'interactive010Inverse',
-          value: 'interactive010Inverse',
-        },
-        {
-          label: 'interactive020',
-          value: 'interactive020',
-        },
-        {
-          label: 'interactive030',
-          value: 'interactive030',
-        },
-        {
-          label: 'interactive040',
-          value: 'interactive040',
+          label: 'flag010Inverse',
+          value: 'flag010Inverse',
         },
       ],
     },

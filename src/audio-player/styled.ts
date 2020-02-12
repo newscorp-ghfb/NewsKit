@@ -7,7 +7,7 @@ import {
   getFontsFromTheme,
 } from '../utils/style';
 import {H1} from '../typography';
-import {Flag} from '../flag';
+import {FlagSolid} from '../flag';
 import {Tag} from '../tag';
 
 export const PlayerContainer = styled.div`
@@ -26,7 +26,7 @@ export const ControlContainer = styled.div`
   min-width: ${getSizingFromTheme('sizing110')};
 `;
 
-export const LiveFlag = styled(Flag)`
+export const LiveFlag = styled(FlagSolid)`
   width: ${getSizingFromTheme('sizing080')};
   height: ${getSizingFromTheme('sizing050')};
   padding: 0;

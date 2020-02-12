@@ -5720,39 +5720,6 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 .emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-8 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-7 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -5774,7 +5741,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   line-height: calc(24px - 2px * 2);
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: 0;
   width: 48px;
   height: 24px;
   padding: 0;
@@ -5787,9 +5754,31 @@ exports[`Live AudioPlayer render live player 1`] = `
   margin-right: 16px;
 }
 
-.emotion-7 svg {
+.emotion-9 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .emotion-10 {
@@ -5921,22 +5910,22 @@ exports[`Live AudioPlayer render live player 1`] = `
             wrap="nowrap"
           >
             <div>
-              <div
+              <span
                 class="emotion-9"
-                wrap="nowrap"
+                data-testid="flag"
               >
                 <div
                   class="emotion-8"
                   wrap="nowrap"
                 >
-                  <span
-                    class="emotion-7"
-                    data-testid="flag"
+                  <div
+                    class="emotion-6"
+                    wrap="nowrap"
                   >
                     Live
-                  </span>
+                  </div>
                 </div>
-              </div>
+              </span>
               <span
                 class="emotion-10"
               >
@@ -6598,16 +6587,16 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-54 {
+.emotion-53 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: auto;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -6618,17 +6607,6 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-53 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
 }
 
 .emotion-7 {
@@ -6691,7 +6669,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   margin-bottom: 16px;
 }
 
-.emotion-52 {
+.emotion-54 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -6720,19 +6698,19 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   border: none;
 }
 
-.emotion-52:hover:not(:disabled) {
+.emotion-54:hover:not(:disabled) {
   border-color: #535353;
 }
 
-.emotion-52:active:not(:disabled) {
+.emotion-54:active:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-52:focus:not(:disabled) {
+.emotion-54:focus:not(:disabled) {
   border-color: #535353;
 }
 
-.emotion-52:disabled {
+.emotion-54:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
@@ -7092,18 +7070,18 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
               class="emotion-6"
               wrap="nowrap"
             >
-              <div
+              <a
                 class="emotion-54"
-                wrap="nowrap"
+                data-testid="audio-player-popout"
+                href="https://thetimes.co.uk/"
               >
                 <div
                   class="emotion-53"
                   wrap="nowrap"
                 >
-                  <a
-                    class="emotion-52"
-                    data-testid="audio-player-popout"
-                    href="https://thetimes.co.uk/"
+                  <div
+                    class="emotion-6"
+                    wrap="nowrap"
                   >
                     <svg
                       class="emotion-33"
@@ -7120,9 +7098,9 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
                         d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
                       />
                     </svg>
-                  </a>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>

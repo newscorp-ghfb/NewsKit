@@ -9,7 +9,7 @@ import {PaddingPresetKeys} from '../themes/mappers/spacing';
 import {BaseFlag} from '../baseFlag';
 
 const flagSizeToToken: Record<FlagSize, SizingKeys> = {
-  [FlagSize.Large]: 'sizing070',
+  [FlagSize.Large]: 'sizing060',
   [FlagSize.Small]: 'sizing050',
 };
 
@@ -40,14 +40,13 @@ const StyledFlag = styled(BaseFlag)<FlagProps>`
 
   ${({$size: sizeProp, ...props}) => {
     const size = sizeProp || FlagSize.Small;
-    return getStylePresetFromTheme('interactive010', '$stylePreset' as any, {
+    return getStylePresetFromTheme('flag010', '$stylePreset' as any, {
       borderRadiusSize: flagBorderRadiusToken[size],
-      omitStates: ['hover', 'active', 'focus', 'disabled'],
     })(props);
   }}
 `;
 
-export const Flag: React.FC<FlagProps> = props => {
+export const FlagSolid: React.FC<FlagProps> = props => {
   const {children} = props;
   return (
     <StyledFlag data-testid="flag" {...props}>

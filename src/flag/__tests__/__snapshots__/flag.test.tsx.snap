@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Flag renders a flag with a custom stylePreset 1`] = `
+exports[`FlagMinimal renders a flag with a custom stylePreset 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: auto;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -22,20 +22,9 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
 }
 
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -53,46 +42,67 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   min-height: 24px;
-  padding: 4px 8px;
   line-height: calc(24px - 2px * 2);
   color: #0A68C1;
   border-radius: 100vw;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #0A68C1;
   color: #0A68C1;
 }
 
-<div
-    class="emotion-2"
-    wrap="nowrap"
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:hover:not(:disabled) svg {
+  fill: #02509B;
+  color: #02509B;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:active:not(:disabled) svg {
+  fill: #02509B;
+  color: #02509B;
+}
+
+.emotion-1:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-1:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+<span
+    class="emotion-1"
+    data-testid="flag"
   >
     <div
-      class="emotion-1"
+      class="emotion-0"
       wrap="nowrap"
-    >
-      <span
-        class="emotion-0"
-        data-testid="flag"
-      />
-    </div>
-  </div>
+    />
+  </span>
 </DocumentFragment>
 `;
 
-exports[`Flag renders with Large size 1`] = `
+exports[`FlagMinimal renders with Large size 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: auto;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -103,20 +113,9 @@ exports[`Flag renders with Large size 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
 }
 
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -133,72 +132,318 @@ exports[`Flag renders with Large size 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 40px;
+  min-height: 32px;
+  line-height: calc(32px - 2px * 2);
+  color: #0A68C1;
+  border-radius: 0;
+}
+
+.emotion-1 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+<span
+    class="emotion-1"
+    data-testid="flag"
+  >
+    <div
+      class="emotion-0"
+      wrap="nowrap"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`FlagMinimal renders with Small size 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 24px;
+  line-height: calc(24px - 2px * 2);
+  color: #0A68C1;
+  border-radius: 0;
+}
+
+.emotion-1 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+<span
+    class="emotion-1"
+    data-testid="flag"
+  >
+    <div
+      class="emotion-0"
+      wrap="nowrap"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`FlagMinimal renders with default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 24px;
+  line-height: calc(24px - 2px * 2);
+  color: #0A68C1;
+  border-radius: 0;
+}
+
+.emotion-1 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+<span
+    class="emotion-1"
+    data-testid="flag"
+  >
+    <div
+      class="emotion-0"
+      wrap="nowrap"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`FlagSolid renders a flag with a custom stylePreset 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 24px;
+  padding: 4px 8px;
+  line-height: calc(24px - 2px * 2);
+  color: #0A68C1;
+  border-radius: 100vw;
+}
+
+.emotion-1 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:hover:not(:disabled) svg {
+  fill: #02509B;
+  color: #02509B;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:active:not(:disabled) svg {
+  fill: #02509B;
+  color: #02509B;
+}
+
+.emotion-1:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-1:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+<span
+    class="emotion-1"
+    data-testid="flag"
+  >
+    <div
+      class="emotion-0"
+      wrap="nowrap"
+    />
+  </span>
+</DocumentFragment>
+`;
+
+exports[`FlagSolid renders with Large size 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 32px;
   padding: 8px 12px;
-  line-height: calc(40px - 2px * 2);
+  line-height: calc(32px - 2px * 2);
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: 0;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-<div
-    class="emotion-2"
-    wrap="nowrap"
+<span
+    class="emotion-1"
+    data-testid="flag"
   >
     <div
-      class="emotion-1"
+      class="emotion-0"
       wrap="nowrap"
-    >
-      <span
-        class="emotion-0"
-        data-testid="flag"
-      />
-    </div>
-  </div>
+    />
+  </span>
 </DocumentFragment>
 `;
 
-exports[`Flag renders with Small size 1`] = `
+exports[`FlagSolid renders with Small size 1`] = `
 <DocumentFragment>
-  .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-0 {
+  .emotion-1 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -220,43 +465,24 @@ exports[`Flag renders with Small size 1`] = `
   line-height: calc(24px - 2px * 2);
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: 0;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-<div
-    class="emotion-2"
-    wrap="nowrap"
-  >
-    <div
-      class="emotion-1"
-      wrap="nowrap"
-    >
-      <span
-        class="emotion-0"
-        data-testid="flag"
-      />
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Flag renders with default styles 1`] = `
-<DocumentFragment>
-  .emotion-2 {
+.emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: auto;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -267,20 +493,23 @@ exports[`Flag renders with default styles 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
+<span
+    class="emotion-1"
+    data-testid="flag"
+  >
+    <div
+      class="emotion-0"
+      wrap="nowrap"
+    />
+  </span>
+</DocumentFragment>
+`;
 
-.emotion-0 {
+exports[`FlagSolid renders with default styles 1`] = `
+<DocumentFragment>
+  .emotion-1 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -302,27 +531,44 @@ exports[`Flag renders with default styles 1`] = `
   line-height: calc(24px - 2px * 2);
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: 0;
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-<div
-    class="emotion-2"
-    wrap="nowrap"
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+<span
+    class="emotion-1"
+    data-testid="flag"
   >
     <div
-      class="emotion-1"
+      class="emotion-0"
       wrap="nowrap"
-    >
-      <span
-        class="emotion-0"
-        data-testid="flag"
-      />
-    </div>
-  </div>
+    />
+  </span>
 </DocumentFragment>
 `;

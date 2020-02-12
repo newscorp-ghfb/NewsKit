@@ -285,6 +285,21 @@ export const createStylePresets = ({
       borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
     },
   } as StylePresetStates,
+  flag010: {
+    base: {
+      backgroundColor: colorPrimitives.brand010,
+      color: colorPrimitives.inkInverse,
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
+      iconColor: colorPrimitives.inkInverse,
+    },
+  } as StylePresetStates,
+  flag010Inverse: {
+    base: {
+      color: colorPrimitives.inkBrand,
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
+      iconColor: colorPrimitives.inkBrand,
+    },
+  } as StylePresetStates,
 });
 
 export type StylePresets = ReturnType<typeof createStylePresets> &

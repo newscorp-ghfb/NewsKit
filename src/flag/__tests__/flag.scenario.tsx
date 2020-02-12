@@ -1,8 +1,9 @@
 import * as React from 'react';
 
-import {Flag, FlagSize} from '..';
+import {FlagSolid, FlagMinimal, FlagSize} from '..';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {styled} from '../../utils/style';
+import {Email} from '../../icons';
 
 export const name = 'flag';
 const Block = styled.div`
@@ -11,30 +12,38 @@ const Block = styled.div`
 
 export const component = () => (
   <React.Fragment>
-    <StorybookHeading>Default Flag</StorybookHeading>
-    <Flag>Text goes here</Flag>
+    <StorybookHeading>Flag Variations</StorybookHeading>
+    <h3>Solid Flag</h3>
+    <FlagSolid>Text goes here</FlagSolid>
+    <h3>Minimal Flag</h3>
+    <FlagMinimal>Text goes here</FlagMinimal>
     <StorybookHeading>Flag Sizes</StorybookHeading>
     <span>
-      <Flag $size={FlagSize.Small}>Small</Flag>
+      <FlagSolid $size={FlagSize.Small}>Small</FlagSolid>
     </span>
     <span>
-      <Flag $size={FlagSize.Large}>Large</Flag>
+      <FlagSolid $size={FlagSize.Large}>Large</FlagSolid>
     </span>
     <StorybookHeading>Style Presets</StorybookHeading>
     <Block>
-      <Flag>interactive010</Flag>
+      <FlagSolid>flag010</FlagSolid>
     </Block>
     <Block>
-      <Flag $stylePreset="interactive010Inverse">interactive010Inverse</Flag>
+      <FlagSolid $stylePreset="flag010Inverse">flag010Inverse</FlagSolid>
     </Block>
+    <StorybookHeading>Flags with an icon</StorybookHeading>
+    <h3>Email</h3>
     <Block>
-      <Flag $stylePreset="interactive020">interactive020</Flag>
+      <FlagSolid>
+        <Email $size="iconSize040" />
+      </FlagSolid>
     </Block>
+    <h3>Email and text</h3>
     <Block>
-      <Flag $stylePreset="interactive030">interactive030</Flag>
-    </Block>
-    <Block>
-      <Flag $stylePreset="interactive040">interactive040</Flag>
+      <FlagSolid>
+        <Email $size="iconSize020" />
+        Email
+      </FlagSolid>
     </Block>
   </React.Fragment>
 );
