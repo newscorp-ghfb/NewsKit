@@ -2,7 +2,7 @@
 
 exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 <DocumentFragment>
-  .emotion-5 {
+  .emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -47,18 +47,18 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   margin: 0 0 16px 0;
 }
 
-.emotion-4 {
+.emotion-5 {
   padding-left: 24px;
   display: none;
 }
 
 @media screen and (min-width:480px) {
-  .emotion-4 {
+  .emotion-5 {
     display: block;
   }
 }
 
-.emotion-3 {
+.emotion-4 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -90,28 +90,28 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   padding: 8px 12px;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-3:focus:not(:disabled) {
+.emotion-4:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-3:disabled {
+.emotion-4:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
 }
 
-.emotion-3:disabled {
+.emotion-4:disabled {
   cursor: not-allowed;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -133,8 +133,15 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   justify-content: center;
 }
 
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 <div
-    class="emotion-5"
+    class="emotion-6"
   >
     <div
       class="emotion-1"
@@ -146,16 +153,22 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
       </h2>
     </div>
     <div
-      class="emotion-4"
+      class="emotion-5"
     >
       <button
-        class="emotion-3"
+        class="emotion-4"
         type="button"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
+          wrap="nowrap"
         >
-          Default button
+          <div
+            class="emotion-2"
+            wrap="nowrap"
+          >
+            Default button
+          </div>
         </div>
       </button>
     </div>

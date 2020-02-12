@@ -2,7 +2,7 @@
 
 exports[`Stack renders stack when no properties are set 1`] = `
 <DocumentFragment>
-  .emotion-3 {
+  .emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -22,6 +22,13 @@ exports[`Stack renders stack when no properties are set 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .emotion-0 {
@@ -71,30 +78,53 @@ exports[`Stack renders stack when no properties are set 1`] = `
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is horizontal-bottom and the space is set to sizing000 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -140,16 +170,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   color: #c0c0c0;
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-}
-
 .emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -178,6 +198,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   >
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -187,6 +208,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -196,6 +218,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -209,7 +232,14 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 
 exports[`Stack renders where the stack flow is horizontal-bottom and the space is set to sizing000 2`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -277,22 +307,13 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   justify-content: flex-start;
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-}
-
 <div
     class="emotion-6"
     wrap="nowrap"
   >
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -302,6 +323,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -311,6 +333,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -377,7 +400,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
-  margin-top: 64px;
+  margin-top: calc(64px/2);
+  margin-bottom: calc(64px/2);
 }
 
 .emotion-6 {
@@ -401,8 +425,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -ms-flex-pack: start;
   justify-content: flex-start;
   margin-left: calc(-64px/2);
-  margin-bottom: calc(-64px/2);
   margin-right: calc(-64px/2);
+  margin-top: calc(-64px/2);
+  margin-bottom: calc(-64px/2);
 }
 
 <div
@@ -411,6 +436,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   >
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -420,6 +446,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -429,6 +456,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -495,7 +523,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
-  margin-top: 64px;
 }
 
 .emotion-6 {
@@ -519,7 +546,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -ms-flex-pack: start;
   justify-content: flex-start;
   margin-left: calc(-64px/2);
-  margin-bottom: calc(-64px/2);
   margin-right: calc(-64px/2);
 }
 
@@ -529,6 +555,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   >
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -538,6 +565,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -547,6 +575,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -613,7 +642,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
-  margin-top: 160px;
+  margin-top: calc(160px/2);
+  margin-bottom: calc(160px/2);
 }
 
 .emotion-6 {
@@ -637,8 +667,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -ms-flex-pack: start;
   justify-content: flex-start;
   margin-left: calc(-160px/2);
-  margin-bottom: calc(-160px/2);
   margin-right: calc(-160px/2);
+  margin-top: calc(-160px/2);
+  margin-bottom: calc(-160px/2);
 }
 
 <div
@@ -647,6 +678,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   >
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -656,6 +688,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -665,6 +698,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -731,7 +765,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
-  margin-top: 160px;
 }
 
 .emotion-6 {
@@ -755,7 +788,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -ms-flex-pack: start;
   justify-content: flex-start;
   margin-left: calc(-160px/2);
-  margin-bottom: calc(-160px/2);
   margin-right: calc(-160px/2);
 }
 
@@ -765,6 +797,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   >
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -774,6 +807,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -783,6 +817,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -796,7 +831,14 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 
 exports[`Stack renders where the stack flow is horizontal-bottom and the stack distribution is center 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -842,7 +884,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -865,30 +907,53 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is horizontal-bottom and the stack distribution is flex-end 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -934,7 +999,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -957,30 +1022,53 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is horizontal-bottom and the stack distribution is flex-start 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -1026,7 +1114,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1049,30 +1137,53 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is horizontal-bottom and the stack distribution is space-around 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -1118,7 +1229,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1141,30 +1252,53 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is horizontal-bottom and the stack distribution is space-between 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -1210,7 +1344,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1233,30 +1367,53 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is horizontal-bottom and the stack distribution is space-evenly 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -1302,7 +1459,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1324,37 +1481,60 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   justify-content: space-around;
 }
 
-.emotion-3:before,
-.emotion-3:after {
+.emotion-6:before,
+.emotion-6:after {
   content: '';
   display: block;
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is horizontal-center and the space is set to sizing000 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -1398,16 +1578,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 .emotion-0:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
 }
 
 .emotion-6 {
@@ -1438,6 +1608,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   >
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -1447,6 +1618,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -1456,6 +1628,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -1469,7 +1642,14 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 
 exports[`Stack renders where the stack flow is horizontal-center and the space is set to sizing000 2`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -1537,22 +1717,13 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   justify-content: flex-start;
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-}
-
 <div
     class="emotion-6"
     wrap="nowrap"
   >
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -1562,6 +1733,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -1571,6 +1743,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -1637,7 +1810,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
-  margin-top: 64px;
+  margin-top: calc(64px/2);
+  margin-bottom: calc(64px/2);
 }
 
 .emotion-6 {
@@ -1660,9 +1834,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: calc(-64px/2);
   margin-left: calc(-64px/2);
   margin-right: calc(-64px/2);
+  margin-top: calc(-64px/2);
+  margin-bottom: calc(-64px/2);
 }
 
 <div
@@ -1671,6 +1846,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   >
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -1680,6 +1856,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -1689,6 +1866,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -1755,7 +1933,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   display: inline-flex;
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
-  margin-top: 64px;
 }
 
 .emotion-6 {
@@ -1778,7 +1955,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: calc(-64px/2);
   margin-left: calc(-64px/2);
   margin-right: calc(-64px/2);
 }
@@ -1789,6 +1965,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   >
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -1798,6 +1975,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -1807,6 +1985,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -1873,7 +2052,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
-  margin-top: 160px;
+  margin-top: calc(160px/2);
+  margin-bottom: calc(160px/2);
 }
 
 .emotion-6 {
@@ -1896,9 +2076,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: calc(-160px/2);
   margin-left: calc(-160px/2);
   margin-right: calc(-160px/2);
+  margin-top: calc(-160px/2);
+  margin-bottom: calc(-160px/2);
 }
 
 <div
@@ -1907,6 +2088,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   >
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -1916,6 +2098,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -1925,6 +2108,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -1991,7 +2175,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   display: inline-flex;
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
-  margin-top: 160px;
 }
 
 .emotion-6 {
@@ -2014,7 +2197,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: calc(-160px/2);
   margin-left: calc(-160px/2);
   margin-right: calc(-160px/2);
 }
@@ -2025,6 +2207,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   >
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -2034,6 +2217,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -2043,6 +2227,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -2056,7 +2241,14 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 
 exports[`Stack renders where the stack flow is horizontal-center and the stack distribution is center 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -2102,7 +2294,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2125,30 +2317,53 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is horizontal-center and the stack distribution is flex-end 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -2194,7 +2409,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2217,30 +2432,53 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is horizontal-center and the stack distribution is flex-start 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -2286,7 +2524,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2309,30 +2547,53 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is horizontal-center and the stack distribution is space-around 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -2378,7 +2639,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2401,30 +2662,53 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is horizontal-center and the stack distribution is space-between 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -2470,7 +2754,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2493,30 +2777,53 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is horizontal-center and the stack distribution is space-evenly 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -2562,7 +2869,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2584,37 +2891,60 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   justify-content: space-around;
 }
 
-.emotion-3:before,
-.emotion-3:after {
+.emotion-6:before,
+.emotion-6:after {
   content: '';
   display: block;
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is horizontal-top and the space is set to sizing000 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -2658,16 +2988,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 .emotion-0:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
 }
 
 .emotion-6 {
@@ -2698,6 +3018,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   >
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -2707,6 +3028,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -2716,6 +3038,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -2729,7 +3052,14 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 
 exports[`Stack renders where the stack flow is horizontal-top and the space is set to sizing000 2`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -2797,22 +3127,13 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   justify-content: flex-start;
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-}
-
 <div
     class="emotion-6"
     wrap="nowrap"
   >
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -2822,6 +3143,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -2831,6 +3153,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -2890,16 +3213,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   color: #c0c0c0;
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(64px/2);
-  margin-right: calc(64px/2);
-  margin-top: 64px;
-}
-
 .emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2920,9 +3233,21 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: -64px;
   margin-left: calc(-64px/2);
   margin-right: calc(-64px/2);
+  margin-top: calc(-64px/2);
+  margin-bottom: calc(-64px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(64px/2);
+  margin-right: calc(64px/2);
+  margin-top: calc(64px/2);
+  margin-bottom: calc(64px/2);
 }
 
 <div
@@ -2931,6 +3256,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   >
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -2940,6 +3266,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -2949,6 +3276,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -3008,16 +3336,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   color: #c0c0c0;
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(64px/2);
-  margin-right: calc(64px/2);
-  margin-top: 64px;
-}
-
 .emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3038,9 +3356,17 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: -64px;
   margin-left: calc(-64px/2);
   margin-right: calc(-64px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(64px/2);
+  margin-right: calc(64px/2);
 }
 
 <div
@@ -3049,6 +3375,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   >
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -3058,6 +3385,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -3067,6 +3395,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -3126,16 +3455,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   color: #c0c0c0;
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(160px/2);
-  margin-right: calc(160px/2);
-  margin-top: 160px;
-}
-
 .emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3156,9 +3475,21 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: -160px;
   margin-left: calc(-160px/2);
   margin-right: calc(-160px/2);
+  margin-top: calc(-160px/2);
+  margin-bottom: calc(-160px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(160px/2);
+  margin-right: calc(160px/2);
+  margin-top: calc(160px/2);
+  margin-bottom: calc(160px/2);
 }
 
 <div
@@ -3167,6 +3498,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   >
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -3176,6 +3508,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -3185,6 +3518,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -3244,16 +3578,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   color: #c0c0c0;
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(160px/2);
-  margin-right: calc(160px/2);
-  margin-top: 160px;
-}
-
 .emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3274,9 +3598,17 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: -160px;
   margin-left: calc(-160px/2);
   margin-right: calc(-160px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(160px/2);
+  margin-right: calc(160px/2);
 }
 
 <div
@@ -3285,6 +3617,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   >
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -3294,6 +3627,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -3303,6 +3637,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -3316,7 +3651,14 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 
 exports[`Stack renders where the stack flow is horizontal-top and the stack distribution is center 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -3362,7 +3704,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3385,30 +3727,53 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is horizontal-top and the stack distribution is flex-end 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -3454,7 +3819,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3477,30 +3842,53 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is horizontal-top and the stack distribution is flex-start 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -3546,7 +3934,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3569,30 +3957,53 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is horizontal-top and the stack distribution is space-around 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -3638,7 +4049,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3661,30 +4072,53 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is horizontal-top and the stack distribution is space-between 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -3730,7 +4164,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3753,30 +4187,53 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is horizontal-top and the stack distribution is space-evenly 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -3822,7 +4279,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3844,37 +4301,60 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   justify-content: space-around;
 }
 
-.emotion-3:before,
-.emotion-3:after {
+.emotion-6:before,
+.emotion-6:after {
   content: '';
   display: block;
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-center and the space is set to sizing000 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -3918,16 +4398,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 .emotion-0:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
 }
 
 .emotion-6 {
@@ -3958,6 +4428,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   >
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -3967,6 +4438,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -3976,6 +4448,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -3989,7 +4462,14 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 
 exports[`Stack renders where the stack flow is vertical-center and the space is set to sizing000 2`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -4057,22 +4537,13 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   justify-content: flex-start;
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-}
-
 <div
     class="emotion-6"
     wrap="nowrap"
   >
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -4082,6 +4553,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -4091,6 +4563,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -4150,6 +4623,17 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   color: #c0c0c0;
 }
 
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(64px/2);
+  margin-bottom: calc(64px/2);
+  margin-left: calc(64px/2);
+  margin-right: calc(64px/2);
+}
+
 .emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4170,19 +4654,10 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: -64px;
+  margin-top: calc(-64px/2);
+  margin-bottom: calc(-64px/2);
   margin-left: calc(-64px/2);
   margin-right: calc(-64px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(64px/2);
-  margin-right: calc(64px/2);
-  margin-top: 64px;
 }
 
 <div
@@ -4191,6 +4666,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   >
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -4200,6 +4676,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -4209,6 +4686,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -4273,9 +4751,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-left: calc(64px/2);
-  margin-right: calc(64px/2);
-  margin-top: 64px;
+  margin-top: calc(64px/2);
+  margin-bottom: calc(64px/2);
 }
 
 .emotion-6 {
@@ -4298,9 +4775,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: -64px;
-  margin-left: calc(-64px/2);
-  margin-right: calc(-64px/2);
+  margin-top: calc(-64px/2);
+  margin-bottom: calc(-64px/2);
 }
 
 <div
@@ -4309,6 +4785,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   >
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -4318,6 +4795,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -4327,6 +4805,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -4386,6 +4865,17 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   color: #c0c0c0;
 }
 
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(160px/2);
+  margin-bottom: calc(160px/2);
+  margin-left: calc(160px/2);
+  margin-right: calc(160px/2);
+}
+
 .emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4406,19 +4896,10 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: -160px;
+  margin-top: calc(-160px/2);
+  margin-bottom: calc(-160px/2);
   margin-left: calc(-160px/2);
   margin-right: calc(-160px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(160px/2);
-  margin-right: calc(160px/2);
-  margin-top: 160px;
 }
 
 <div
@@ -4427,6 +4908,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   >
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -4436,6 +4918,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -4445,6 +4928,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -4509,9 +4993,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-left: calc(160px/2);
-  margin-right: calc(160px/2);
-  margin-top: 160px;
+  margin-top: calc(160px/2);
+  margin-bottom: calc(160px/2);
 }
 
 .emotion-6 {
@@ -4534,9 +5017,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: -160px;
-  margin-left: calc(-160px/2);
-  margin-right: calc(-160px/2);
+  margin-top: calc(-160px/2);
+  margin-bottom: calc(-160px/2);
 }
 
 <div
@@ -4545,6 +5027,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   >
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -4554,6 +5037,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -4563,6 +5047,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -4576,7 +5061,14 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 
 exports[`Stack renders where the stack flow is vertical-center and the stack distribution is center 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -4622,7 +5114,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4645,30 +5137,53 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-center and the stack distribution is flex-end 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -4714,7 +5229,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4737,30 +5252,53 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-center and the stack distribution is flex-start 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -4806,7 +5344,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4829,30 +5367,53 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-center and the stack distribution is space-around 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -4898,7 +5459,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4921,30 +5482,53 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-center and the stack distribution is space-between 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -4990,7 +5574,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5013,30 +5597,53 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-center and the stack distribution is space-evenly 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -5082,7 +5689,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5104,37 +5711,60 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   justify-content: space-around;
 }
 
-.emotion-3:before,
-.emotion-3:after {
+.emotion-6:before,
+.emotion-6:after {
   content: '';
   display: block;
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-left and the space is set to sizing000 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -5202,22 +5832,13 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   justify-content: flex-start;
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-}
-
 <div
     class="emotion-6"
     wrap="wrap"
   >
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -5227,6 +5848,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -5236,6 +5858,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -5269,6 +5892,13 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .emotion-0 {
@@ -5317,22 +5947,13 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   color: #c0c0c0;
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-}
-
 <div
     class="emotion-6"
     wrap="nowrap"
   >
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -5342,6 +5963,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -5351,6 +5973,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -5430,8 +6053,10 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: -64px;
+  margin-top: calc(-64px/2);
+  margin-bottom: calc(-64px/2);
   margin-left: calc(-64px/2);
+  margin-right: calc(-64px/2);
 }
 
 .emotion-1 {
@@ -5439,9 +6064,10 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin-top: calc(64px/2);
+  margin-bottom: calc(64px/2);
   margin-left: calc(64px/2);
-  margin-right: 0;
-  margin-top: 64px;
+  margin-right: calc(64px/2);
 }
 
 <div
@@ -5450,6 +6076,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   >
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -5459,6 +6086,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -5468,6 +6096,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -5527,16 +6156,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   color: #c0c0c0;
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(64px/2);
-  margin-right: 0;
-  margin-top: 64px;
-}
-
 .emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5557,8 +6176,17 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: -64px;
-  margin-left: calc(-64px/2);
+  margin-top: calc(-64px/2);
+  margin-bottom: calc(-64px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(64px/2);
+  margin-bottom: calc(64px/2);
 }
 
 <div
@@ -5567,6 +6195,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   >
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -5576,6 +6205,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -5585,6 +6215,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -5664,8 +6295,10 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: -160px;
+  margin-top: calc(-160px/2);
+  margin-bottom: calc(-160px/2);
   margin-left: calc(-160px/2);
+  margin-right: calc(-160px/2);
 }
 
 .emotion-1 {
@@ -5673,9 +6306,10 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin-top: calc(160px/2);
+  margin-bottom: calc(160px/2);
   margin-left: calc(160px/2);
-  margin-right: 0;
-  margin-top: 160px;
+  margin-right: calc(160px/2);
 }
 
 <div
@@ -5684,6 +6318,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   >
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -5693,6 +6328,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -5702,6 +6338,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -5761,16 +6398,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   color: #c0c0c0;
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(160px/2);
-  margin-right: 0;
-  margin-top: 160px;
-}
-
 .emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5791,8 +6418,17 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: -160px;
-  margin-left: calc(-160px/2);
+  margin-top: calc(-160px/2);
+  margin-bottom: calc(-160px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(160px/2);
+  margin-bottom: calc(160px/2);
 }
 
 <div
@@ -5801,6 +6437,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   >
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -5810,6 +6447,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -5819,6 +6457,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -5832,7 +6471,14 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 
 exports[`Stack renders where the stack flow is vertical-left and the stack distribution is center 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -5878,7 +6524,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5901,30 +6547,53 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-left and the stack distribution is flex-end 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -5970,7 +6639,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5993,30 +6662,46 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-left and the stack distribution is flex-start 1`] = `
 <DocumentFragment>
-  .emotion-3 {
+  .emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6036,6 +6721,13 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .emotion-0 {
@@ -6085,30 +6777,53 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-left and the stack distribution is space-around 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -6154,7 +6869,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6177,30 +6892,53 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-left and the stack distribution is space-between 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -6246,7 +6984,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6269,30 +7007,53 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-left and the stack distribution is space-evenly 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -6338,7 +7099,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6360,37 +7121,60 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   justify-content: space-around;
 }
 
-.emotion-3:before,
-.emotion-3:after {
+.emotion-6:before,
+.emotion-6:after {
   content: '';
   display: block;
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-right and the space is set to sizing000 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -6434,16 +7218,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 .emotion-0:disabled {
   background-color: #f0f0f0;
   color: #c0c0c0;
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
 }
 
 .emotion-6 {
@@ -6474,6 +7248,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   >
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -6483,6 +7258,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -6492,6 +7268,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -6505,7 +7282,14 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 
 exports[`Stack renders where the stack flow is vertical-right and the space is set to sizing000 2`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -6573,22 +7357,13 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   justify-content: flex-start;
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-}
-
 <div
     class="emotion-6"
     wrap="nowrap"
   >
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -6598,6 +7373,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -6607,6 +7383,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -6671,9 +7448,10 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin-top: calc(64px/2);
+  margin-bottom: calc(64px/2);
   margin-left: calc(64px/2);
   margin-right: calc(64px/2);
-  margin-top: 64px;
 }
 
 .emotion-6 {
@@ -6696,7 +7474,9 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: -64px;
+  margin-top: calc(-64px/2);
+  margin-bottom: calc(-64px/2);
+  margin-left: calc(-64px/2);
   margin-right: calc(-64px/2);
 }
 
@@ -6706,6 +7486,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   >
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -6715,6 +7496,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -6724,6 +7506,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -6788,9 +7571,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-left: calc(64px/2);
-  margin-right: calc(64px/2);
-  margin-top: 64px;
+  margin-top: calc(64px/2);
+  margin-bottom: calc(64px/2);
 }
 
 .emotion-6 {
@@ -6813,8 +7595,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: -64px;
-  margin-right: calc(-64px/2);
+  margin-top: calc(-64px/2);
+  margin-bottom: calc(-64px/2);
 }
 
 <div
@@ -6823,6 +7605,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   >
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -6832,6 +7615,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -6841,6 +7625,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -6905,9 +7690,10 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin-top: calc(160px/2);
+  margin-bottom: calc(160px/2);
   margin-left: calc(160px/2);
   margin-right: calc(160px/2);
-  margin-top: 160px;
 }
 
 .emotion-6 {
@@ -6930,7 +7716,9 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: -160px;
+  margin-top: calc(-160px/2);
+  margin-bottom: calc(-160px/2);
+  margin-left: calc(-160px/2);
   margin-right: calc(-160px/2);
 }
 
@@ -6940,6 +7728,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   >
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -6949,6 +7738,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -6958,6 +7748,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="wrap"
     >
       <span
         class="emotion-0"
@@ -7022,9 +7813,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-left: calc(160px/2);
-  margin-right: calc(160px/2);
-  margin-top: 160px;
+  margin-top: calc(160px/2);
+  margin-bottom: calc(160px/2);
 }
 
 .emotion-6 {
@@ -7047,8 +7837,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: -160px;
-  margin-right: calc(-160px/2);
+  margin-top: calc(-160px/2);
+  margin-bottom: calc(-160px/2);
 }
 
 <div
@@ -7057,6 +7847,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   >
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -7066,6 +7857,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -7075,6 +7867,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-1"
+      wrap="nowrap"
     >
       <span
         class="emotion-0"
@@ -7088,7 +7881,14 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 
 exports[`Stack renders where the stack flow is vertical-right and the stack distribution is center 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -7134,7 +7934,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7157,30 +7957,53 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-right and the stack distribution is flex-end 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -7226,7 +8049,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7249,30 +8072,53 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-right and the stack distribution is flex-start 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -7318,7 +8164,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7341,30 +8187,53 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-right and the stack distribution is space-around 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -7410,7 +8279,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7433,30 +8302,53 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-right and the stack distribution is space-between 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -7502,7 +8394,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7525,30 +8417,53 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-right and the stack distribution is space-evenly 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -7594,7 +8509,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   color: #c0c0c0;
 }
 
-.emotion-3 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7616,30 +8531,46 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   justify-content: space-around;
 }
 
-.emotion-3:before,
-.emotion-3:after {
+.emotion-6:before,
+.emotion-6:after {
   content: '';
   display: block;
 }
 
 <div
-    class="emotion-3"
+    class="emotion-6"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 1
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-0"
+      >
+        child 2
+      </span>
+    </div>
+    <div
+      class="emotion-1"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-0"
+      >
+        child 3
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
