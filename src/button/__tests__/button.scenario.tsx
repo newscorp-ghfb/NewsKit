@@ -8,7 +8,6 @@ import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
 import {newskitLightTheme} from '../../themes';
-import {IconSizeKeys} from '../../themes/newskit-light/spacing';
 
 export const name = 'button';
 
@@ -37,6 +36,10 @@ const Label = styled.div`
   align-items: center;
   justify-content: center;
   padding: 8px;
+`;
+
+const Spacer = styled.div`
+  margin-bottom: 20px;
 `;
 
 enum ButtonStyle {
@@ -113,25 +116,19 @@ export const component = () => (
     <h2>Icon with text</h2>
     <Container>
       {[Pause, Email, CopyLink].map(IconType => (
-        <Stack flow="horizontal-center" space="sizing060">
-          {[
-            {buttonSize: ButtonSize.Small, iconSize: 'iconSize010'},
-            {buttonSize: ButtonSize.Medium, iconSize: 'iconSize020'},
-            {buttonSize: ButtonSize.Large, iconSize: 'iconSize020'},
-          ].map(button => (
-            <Button
-              $size={button.buttonSize}
-              icon={() => (
-                <IconType
-                  $size={button.iconSize as IconSizeKeys}
-                  $color="buttonFill"
-                />
-              )}
-            >
-              Button
-            </Button>
-          ))}
-        </Stack>
+        <Spacer>
+          <Stack flow="horizontal-center" space="sizing060">
+            {[
+              {buttonSize: ButtonSize.Small, iconSize: 'iconSize010'},
+              {buttonSize: ButtonSize.Medium, iconSize: 'iconSize020'},
+              {buttonSize: ButtonSize.Large, iconSize: 'iconSize020'},
+            ].map(button => (
+              <Button $size={button.buttonSize} icon={IconType}>
+                Button
+              </Button>
+            ))}
+          </Stack>
+        </Spacer>
       ))}
     </Container>
 
