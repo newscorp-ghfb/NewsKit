@@ -387,7 +387,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -420,6 +420,11 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 
 .emotion-35:disabled {
   background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-35:disabled svg {
+  fill: #c0c0c0;
   color: #c0c0c0;
 }
 
@@ -476,7 +481,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -509,6 +514,11 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 
 .emotion-45:disabled {
   background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-45:disabled svg {
+  fill: #c0c0c0;
   color: #c0c0c0;
 }
 
@@ -1352,7 +1362,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -1388,6 +1398,11 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   color: #c0c0c0;
 }
 
+.emotion-35:disabled svg {
+  fill: #c0c0c0;
+  color: #c0c0c0;
+}
+
 .emotion-35:disabled {
   cursor: not-allowed;
 }
@@ -1419,7 +1434,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -1452,6 +1467,11 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 
 .emotion-45:disabled {
   background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-45:disabled svg {
+  fill: #c0c0c0;
   color: #c0c0c0;
 }
 
@@ -2301,7 +2321,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -2334,6 +2354,11 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 
 .emotion-36:disabled {
   background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-36:disabled svg {
+  fill: #c0c0c0;
   color: #c0c0c0;
 }
 
@@ -2390,7 +2415,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -2422,6 +2447,11 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 
 .emotion-41:disabled {
   background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-41:disabled svg {
+  fill: #c0c0c0;
   color: #c0c0c0;
 }
 
@@ -3201,7 +3231,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -3234,6 +3264,11 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 
 .emotion-36:disabled {
   background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-36:disabled svg {
+  fill: #c0c0c0;
   color: #c0c0c0;
 }
 
@@ -3290,7 +3325,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -3322,6 +3357,11 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 
 .emotion-41:disabled {
   background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-41:disabled svg {
+  fill: #c0c0c0;
   color: #c0c0c0;
 }
 

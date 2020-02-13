@@ -322,7 +322,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -358,6 +358,11 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   color: #c0c0c0;
 }
 
+.emotion-36:disabled svg {
+  fill: #c0c0c0;
+  color: #c0c0c0;
+}
+
 .emotion-36:disabled {
   cursor: not-allowed;
 }
@@ -389,7 +394,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -421,6 +426,11 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 .emotion-41:disabled {
   background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-41:disabled svg {
+  fill: #c0c0c0;
   color: #c0c0c0;
 }
 
@@ -1202,7 +1212,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -1238,6 +1248,11 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   color: #c0c0c0;
 }
 
+.emotion-36:disabled svg {
+  fill: #c0c0c0;
+  color: #c0c0c0;
+}
+
 .emotion-36:disabled {
   cursor: not-allowed;
 }
@@ -1269,7 +1284,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -1301,6 +1316,11 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 .emotion-41:disabled {
   background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-41:disabled svg {
+  fill: #c0c0c0;
   color: #c0c0c0;
 }
 
@@ -2082,7 +2102,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -2118,6 +2138,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   color: #c0c0c0;
 }
 
+.emotion-36:disabled svg {
+  fill: #c0c0c0;
+  color: #c0c0c0;
+}
+
 .emotion-36:disabled {
   cursor: not-allowed;
 }
@@ -2149,7 +2174,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -2181,6 +2206,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 
 .emotion-41:disabled {
   background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-41:disabled svg {
+  fill: #c0c0c0;
   color: #c0c0c0;
 }
 
@@ -3007,9 +3037,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
-  height: 48px;
-  width: 48px;
+  border-radius: 8px;
+  min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -3044,6 +3073,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   color: #c0c0c0;
 }
 
+.emotion-36:disabled svg {
+  fill: #c0c0c0;
+  color: #c0c0c0;
+}
+
 .emotion-36:disabled {
   cursor: not-allowed;
 }
@@ -3075,7 +3109,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -3107,6 +3141,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 
 .emotion-41:disabled {
   background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-41:disabled svg {
+  fill: #c0c0c0;
   color: #c0c0c0;
 }
 
@@ -3888,9 +3927,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
-  height: 48px;
-  width: 48px;
+  border-radius: 8px;
+  min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -3925,6 +3963,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   color: #c0c0c0;
 }
 
+.emotion-36:disabled svg {
+  fill: #c0c0c0;
+  color: #c0c0c0;
+}
+
 .emotion-36:disabled {
   cursor: not-allowed;
 }
@@ -3956,7 +3999,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -3988,6 +4031,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 
 .emotion-41:disabled {
   background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-41:disabled svg {
+  fill: #c0c0c0;
   color: #c0c0c0;
 }
 
@@ -4769,7 +4817,7 @@ exports[`Live AudioPlayer render default player 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -4805,6 +4853,11 @@ exports[`Live AudioPlayer render default player 1`] = `
   color: #c0c0c0;
 }
 
+.emotion-33:disabled svg {
+  fill: #c0c0c0;
+  color: #c0c0c0;
+}
+
 .emotion-33:disabled {
   cursor: not-allowed;
 }
@@ -4836,7 +4889,7 @@ exports[`Live AudioPlayer render default player 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -4868,6 +4921,11 @@ exports[`Live AudioPlayer render default player 1`] = `
 
 .emotion-38:disabled {
   background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-38:disabled svg {
+  fill: #c0c0c0;
   color: #c0c0c0;
 }
 
@@ -5592,7 +5650,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -5624,6 +5682,11 @@ exports[`Live AudioPlayer render live player 1`] = `
 
 .emotion-33:disabled {
   background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-33:disabled svg {
+  fill: #c0c0c0;
   color: #c0c0c0;
 }
 
@@ -6369,7 +6432,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -6405,6 +6468,11 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   color: #c0c0c0;
 }
 
+.emotion-36:disabled svg {
+  fill: #c0c0c0;
+  color: #c0c0c0;
+}
+
 .emotion-36:disabled {
   cursor: not-allowed;
 }
@@ -6436,7 +6504,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -6470,6 +6538,11 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
 
 .emotion-41:disabled {
   background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-41:disabled svg {
+  fill: #c0c0c0;
   color: #c0c0c0;
 }
 
@@ -7325,7 +7398,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -7361,6 +7434,11 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   color: #c0c0c0;
 }
 
+.emotion-37:disabled svg {
+  fill: #c0c0c0;
+  color: #c0c0c0;
+}
+
 .emotion-37:disabled {
   cursor: not-allowed;
 }
@@ -7392,7 +7470,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 48px;
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -7424,6 +7502,11 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 
 .emotion-42:disabled {
   background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.emotion-42:disabled svg {
+  fill: #c0c0c0;
   color: #c0c0c0;
 }
 
