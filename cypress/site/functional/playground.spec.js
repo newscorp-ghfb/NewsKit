@@ -15,11 +15,9 @@ describe('Documentation Site - playground', () => {
       .clear()
       .type('https://test.co.uk');
     cy.get(`${playgroundElement} [data-testid="tag"]`)
-      .contains('Chelsea')
-      .should('have.attr', 'href', 'https://test.co.uk');
-
+      .should('have.attr', 'href', 'https://test.co.uk')
+      .contains('Chelsea');
     cy.get('[data-testid="true"]').click({force: true});
-    cy.get(`${playgroundElement} > a`).should('not.exist');
   });
 });
 
