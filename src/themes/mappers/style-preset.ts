@@ -75,6 +75,7 @@ export const createStylePresets = ({
     disabled: {
       backgroundColor: colorPrimitives.neutral020,
       color: colorPrimitives.inkNonEssential,
+      iconColor: colorPrimitives.inkNonEssential,
     },
   } as StylePresetStates,
   interactive010Inverse: {

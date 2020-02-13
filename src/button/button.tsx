@@ -40,21 +40,21 @@ const buttonSizeStyleTokens: Record<
 > = {
   [ButtonSize.Large]: {
     minHeight: 'spaceInset040',
-    borderRadiusSize: 'sizing080',
+    borderRadiusSize: 'sizing020',
     typePreset: 'button030',
     paddingX: 'sizing040',
     paddingY: 'sizing050',
   },
   [ButtonSize.Medium]: {
     minHeight: 'spaceInset030',
-    borderRadiusSize: 'sizing070',
+    borderRadiusSize: 'sizing020',
     typePreset: 'button020',
     paddingX: 'sizing030',
     paddingY: 'sizing040',
   },
   [ButtonSize.Small]: {
     minHeight: 'spaceInset020',
-    borderRadiusSize: 'sizing060',
+    borderRadiusSize: 'sizing020',
     typePreset: 'button010',
     paddingX: 'sizing020',
     paddingY: 'sizing030',
