@@ -22,7 +22,7 @@ export const PlayerContainer = styled.div`
 
 export const ControlContainer = styled.div`
   width: 100%;
-  max-width: ${getSizingFromTheme('sizing110')};
+  min-width: ${getSizingFromTheme('sizing110')};
 `;
 
 export const LiveTag = styled(Tag)`
