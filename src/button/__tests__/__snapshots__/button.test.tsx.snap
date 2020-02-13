@@ -43,7 +43,7 @@ exports[`Button renders Icon Button 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 8px;
+  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -174,7 +174,7 @@ exports[`Button renders Large Button 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 8px;
+  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -263,7 +263,7 @@ exports[`Button renders Medium Button 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 8px;
+  border-radius: 100vw;
   min-height: 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
@@ -330,7 +330,7 @@ exports[`Button renders Small Button 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 8px;
+  border-radius: 100vw;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -419,7 +419,7 @@ exports[`Button renders when there is an icon with a colour 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 8px;
+  border-radius: 100vw;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -560,7 +560,7 @@ exports[`Button renders when there is an icon with the placement set to end 1`] 
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 8px;
+  border-radius: 100vw;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -701,7 +701,7 @@ exports[`Button renders when there is an icon with the placement set to start 1`
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 8px;
+  border-radius: 100vw;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -842,7 +842,7 @@ exports[`Button renders when there is no icon 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 8px;
+  border-radius: 100vw;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -969,7 +969,7 @@ exports[`Button renders with different style preset 1`] = `
   border-color: #C8E4FD;
   border-width: 1px;
   color: #0A68C1;
-  border-radius: 8px;
+  border-radius: 100vw;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -1033,7 +1033,7 @@ exports[`Button renders with fallback formatting 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 8px;
+  border-radius: 100vw;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
