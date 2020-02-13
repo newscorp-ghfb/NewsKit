@@ -17,6 +17,8 @@ const StyledBaseFlag = styled.span<BaseFlagProps>`
 
 export const BaseFlag: React.FC<BaseFlagProps> = ({children, ...props}) => (
   <StyledBaseFlag {...props}>
-    <Stack flow="horizontal-center">{children}</Stack>
+    <Stack space="sizing010" flow="horizontal-center">
+      {children}
+    </Stack>
   </StyledBaseFlag>
 );

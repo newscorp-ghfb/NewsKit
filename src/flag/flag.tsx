@@ -24,7 +24,7 @@ const flagBorderRadiusToken: Record<FlagSize, SizingKeys> = {
 };
 
 const StyledFlag = styled(BaseFlag)<FlagProps>`
-  ${({theme, $size: sizeProp}) => {
+  ${({theme, $size: sizeProp, $spacing: spacingProp}) => {
     const size = sizeProp || FlagSize.Small;
     const sizeToken = flagSizeToToken[size];
     const paddingToken = flagPaddingToken[size];
@@ -33,7 +33,7 @@ const StyledFlag = styled(BaseFlag)<FlagProps>`
 
     return {
       minHeight: theme.sizing[sizeToken],
-      padding: theme.sizing[paddingToken],
+      padding: spacingProp || theme.sizing[paddingToken],
       lineHeight: `calc(${height} - ${borderWidth} * 2)`,
     };
   }};
@@ -46,7 +46,7 @@ const StyledFlag = styled(BaseFlag)<FlagProps>`
   }}
 `;
 
-export const FlagSolid: React.FC<FlagProps> = props => {
+export const Flag: React.FC<FlagProps> = props => {
   const {children} = props;
   return (
     <StyledFlag data-testid="flag" {...props}>

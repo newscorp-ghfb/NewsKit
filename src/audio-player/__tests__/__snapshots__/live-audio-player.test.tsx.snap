@@ -5779,6 +5779,17 @@ exports[`Live AudioPlayer render live player 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
 }
 
 .emotion-10 {
@@ -5919,7 +5930,7 @@ exports[`Live AudioPlayer render live player 1`] = `
                   wrap="nowrap"
                 >
                   <div
-                    class="emotion-6"
+                    class="emotion-7"
                     wrap="nowrap"
                   >
                     Live
@@ -6607,6 +6618,17 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-52 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
 }
 
 .emotion-7 {
@@ -7080,7 +7102,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
                   wrap="nowrap"
                 >
                   <div
-                    class="emotion-6"
+                    class="emotion-52"
                     wrap="nowrap"
                   >
                     <svg

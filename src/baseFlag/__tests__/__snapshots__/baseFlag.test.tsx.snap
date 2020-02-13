@@ -41,6 +41,8 @@ exports[`BaseFlag renders with default styles 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
 }
 
 <span

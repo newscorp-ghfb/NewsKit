@@ -3,7 +3,7 @@ import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
-import {FlagSolid, FlagMinimal, FlagSize} from 'newskit';
+import {Flag, FlagSize} from 'newskit';
 
 export default Layout;
 
@@ -40,9 +40,9 @@ Flags have a number of props to facilitate a variety of uses:
 ## Playground
 
 <Playground
-  componentName={["FlagSolid", "FlagMinimal"]}
+  componentName={["Flag"]}
   newskitPath="/flag"
-  component={[FlagSolid, FlagMinimal]}
+  component={Flag}
   knobs={[
     {
       name: 'Content',
@@ -61,6 +61,21 @@ Flags have a number of props to facilitate a variety of uses:
         {
           label: 'Large',
           value: FlagSize.Large,
+        },
+      ],
+    },
+    {
+      name: 'Spacing',
+      propName: '$spacing',
+      options: [
+        {
+          label: 'Default',
+          value: undefined,
+          isDefault: true
+        },
+        {
+          label: 'sizing000',
+          value: 'sizing000',
         },
       ],
     },
