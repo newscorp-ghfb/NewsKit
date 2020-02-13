@@ -686,8 +686,8 @@ exports[`Placeholder renders the Placeholder icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #777777;
+  color: #777777;
   width: 64px;
   height: 64px;
 }
@@ -710,8 +710,8 @@ exports[`Placeholder renders the Placeholder icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #777777;
+  color: #777777;
   width: 64px;
   height: 64px;
 }

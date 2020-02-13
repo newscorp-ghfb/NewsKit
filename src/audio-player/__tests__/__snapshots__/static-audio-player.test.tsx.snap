@@ -55,8 +55,8 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 }
 
 .emotion-4 svg {
-  fill: #777777;
-  color: #777777;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -1020,8 +1020,8 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 }
 
 .emotion-4 svg {
-  fill: #777777;
-  color: #777777;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -1965,8 +1965,8 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 }
 
 .emotion-4 svg {
-  fill: #777777;
-  color: #777777;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -2869,8 +2869,8 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 }
 
 .emotion-4 svg {
-  fill: #777777;
-  color: #777777;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {

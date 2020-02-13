@@ -55,8 +55,8 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-4 svg {
-  fill: #777777;
-  color: #777777;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -934,8 +934,8 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-4 svg {
-  fill: #777777;
-  color: #777777;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -1814,8 +1814,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 }
 
 .emotion-4 svg {
-  fill: #777777;
-  color: #777777;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -2739,8 +2739,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 }
 
 .emotion-4 svg {
-  fill: #777777;
-  color: #777777;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -3620,8 +3620,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 }
 
 .emotion-4 svg {
-  fill: #777777;
-  color: #777777;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -4501,8 +4501,8 @@ exports[`Live AudioPlayer render default player 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #777777;
-  color: #777777;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -5337,8 +5337,8 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #777777;
-  color: #777777;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -6102,8 +6102,8 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #777777;
-  color: #777777;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -7058,8 +7058,8 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #777777;
-  color: #777777;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
