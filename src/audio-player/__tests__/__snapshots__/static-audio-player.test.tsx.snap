@@ -328,7 +328,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 
 .emotion-30 {
   width: 100%;
-  max-width: 120px;
+  min-width: 120px;
 }
 
 .emotion-23 {
@@ -1303,7 +1303,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 
 .emotion-30 {
   width: 100%;
-  max-width: 120px;
+  min-width: 120px;
 }
 
 .emotion-23 {
@@ -2262,7 +2262,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 
 .emotion-30 {
   width: 100%;
-  max-width: 120px;
+  min-width: 120px;
 }
 
 .emotion-23 {
@@ -3172,7 +3172,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 
 .emotion-30 {
   width: 100%;
-  max-width: 120px;
+  min-width: 120px;
 }
 
 .emotion-23 {

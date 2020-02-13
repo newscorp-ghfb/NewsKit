@@ -263,7 +263,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 .emotion-30 {
   width: 100%;
-  max-width: 120px;
+  min-width: 120px;
 }
 
 .emotion-23 {
@@ -1153,7 +1153,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 .emotion-30 {
   width: 100%;
-  max-width: 120px;
+  min-width: 120px;
 }
 
 .emotion-23 {
@@ -2043,7 +2043,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 
 .emotion-30 {
   width: 100%;
-  max-width: 120px;
+  min-width: 120px;
 }
 
 .emotion-23 {
@@ -2978,7 +2978,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 
 .emotion-30 {
   width: 100%;
-  max-width: 120px;
+  min-width: 120px;
 }
 
 .emotion-23 {
@@ -3868,7 +3868,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 
 .emotion-30 {
   width: 100%;
-  max-width: 120px;
+  min-width: 120px;
 }
 
 .emotion-23 {
@@ -4758,7 +4758,7 @@ exports[`Live AudioPlayer render default player 1`] = `
 
 .emotion-27 {
   width: 100%;
-  max-width: 120px;
+  min-width: 120px;
 }
 
 .emotion-20 {
@@ -5591,7 +5591,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 
 .emotion-26 {
   width: 100%;
-  max-width: 120px;
+  min-width: 120px;
 }
 
 .emotion-19 {
@@ -6373,7 +6373,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
 
 .emotion-30 {
   width: 100%;
-  max-width: 120px;
+  min-width: 120px;
 }
 
 .emotion-23 {
@@ -7339,7 +7339,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 
 .emotion-31 {
   width: 100%;
-  max-width: 120px;
+  min-width: 120px;
 }
 
 .emotion-24 {
