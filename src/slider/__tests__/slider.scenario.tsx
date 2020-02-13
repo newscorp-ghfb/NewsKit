@@ -64,7 +64,7 @@ const CustomThumb = styled.div`
 `;
 const renderCustomThumb: SliderProps['renderThumb'] = ({props}) => (
   <CustomThumb {...props} aria-label="custom slider thumb">
-    <Placeholder $size="iconSize030" />
+    <Placeholder $size="iconSize030" $color="inkNonEssential" />
   </CustomThumb>
 );
 
