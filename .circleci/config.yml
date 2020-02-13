@@ -563,31 +563,11 @@ workflows:
       - test_unit:
           <<: *ignore_release
           <<: *require_dep
-      - run_visual_comps_pr:
-          <<: *only_pr
-          type: approval
-          requires:
-            - build_storybook
-      - test_visual_comps_pr:
-          <<: *only_pr
-          context: ncu-product-platforms-context
-          requires:
-            - run_visual_comps_pr
-      - test_visual_comps_develop:
-          <<: *only_develop
-          context: ncu-product-platforms-context
-          requires:
-            - build_storybook
       - test_e2e_comps:
           <<: *ignore_release
           context: ncu-product-platforms-context
           requires:
             - build_test_e2e
-      - test_visual_docs:
-          <<: *only_develop
-          context: ncu-product-platforms-context
-          requires:
-            - build_docs
       - test_e2e_docs:
           <<: *ignore_release
           context: ncu-product-platforms-context
@@ -604,9 +584,7 @@ workflows:
           requires:
             - build_components
             - test_unit
-            - test_visual_comps_develop
             - test_e2e_comps
-            - test_visual_docs
             - test_e2e_docs
             - approve_publish_npm_dev
       - build_push_docker_ecr:
@@ -616,9 +594,7 @@ workflows:
             - build_docs
             - build_storybook
             - test_unit
-            - test_visual_comps_develop
             - test_e2e_comps
-            - test_visual_docs
             - test_e2e_docs
       - k8s_flux_deploy_dev:
           context: ncu-product-platforms-context
@@ -641,7 +617,6 @@ workflows:
           <<: *only_master
           requires:
             - test_unit
-            - test_visual_comps_develop
             - test_e2e_comps
             - test_e2e_docs
       - publish_npm:
@@ -650,7 +625,6 @@ workflows:
           requires:
             - build_components
             - test_unit
-            - test_visual_comps_develop
             - test_e2e_comps
             - test_e2e_docs
       - k8s_flux_deploy_prod:
