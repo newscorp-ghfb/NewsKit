@@ -137,6 +137,40 @@ export const createStylePresets = ({
       backgroundColor: colorPrimitives.neutral020,
     },
   } as StylePresetStates,
+  maskPointed010: {
+    base: {
+      backgroundColor: colorPrimitives.skeletonLight,
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+    loading: {
+      backgroundColor: colorPrimitives.skeletonLight,
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+  } as StylePresetStates,
+  maskSemiRounded010: {
+    base: {
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+    loading: {
+      backgroundColor: colorPrimitives.skeletonDark,
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+  } as StylePresetStates,
+  maskRound010: {
+    base: {
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+    loading: {
+      backgroundColor: colorPrimitives.skeletonLight,
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+  } as StylePresetStates,
   interactive050: {
     base: {
       borderStyle: 'solid',
