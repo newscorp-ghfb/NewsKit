@@ -30,8 +30,8 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 1`] = `
 }
 
 .emotion-0:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div
@@ -71,8 +71,8 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 with borderRadius
 }
 
 .emotion-0:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div
@@ -107,8 +107,8 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 with disabled and
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div
@@ -125,8 +125,8 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 with disabled sta
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div
@@ -191,8 +191,8 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 without backgroun
 }
 
 .emotion-0:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div

@@ -401,28 +401,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   border: none;
 }
 
-.emotion-26:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-26:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-26:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-26:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-26:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-26 svg {
+.emotion-35 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
@@ -445,8 +424,8 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 }
 
 .emotion-35:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-35:disabled {
@@ -538,13 +517,12 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 }
 
 .emotion-45:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
-.emotion-30:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
+.emotion-45:disabled {
+  cursor: not-allowed;
 }
 
 .emotion-42 {
@@ -1394,28 +1372,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   border: none;
 }
 
-.emotion-26:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-26:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-26:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-26:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-26:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-26 svg {
+.emotion-35 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
@@ -1438,8 +1395,8 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 }
 
 .emotion-35:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-35:disabled {
@@ -1509,13 +1466,12 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 }
 
 .emotion-45:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
-.emotion-30:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
+.emotion-45:disabled {
+  cursor: not-allowed;
 }
 
 .emotion-42 {
@@ -2371,28 +2327,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   border: none;
 }
 
-.emotion-26:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-26:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-26:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-26:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-26:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-26 svg {
+.emotion-36 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
@@ -2415,8 +2350,8 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 }
 
 .emotion-36:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-36:disabled {
@@ -2508,13 +2443,12 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 }
 
 .emotion-41:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
-.emotion-28:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
+.emotion-41:disabled {
+  cursor: not-allowed;
 }
 
 .emotion-38 {
@@ -3300,28 +3234,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   border: none;
 }
 
-.emotion-26:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-26:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-26:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-26:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-26:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-26 svg {
+.emotion-36 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
@@ -3344,8 +3257,8 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 }
 
 .emotion-36:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-36:disabled {
@@ -3437,13 +3350,12 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 }
 
 .emotion-41:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
-.emotion-28:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
+.emotion-41:disabled {
+  cursor: not-allowed;
 }
 
 .emotion-38 {
