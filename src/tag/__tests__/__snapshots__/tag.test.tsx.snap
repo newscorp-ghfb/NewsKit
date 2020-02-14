@@ -16,7 +16,7 @@ exports[`Tag href renders as an anchor 1`] = `
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -45,7 +45,7 @@ exports[`Tag href renders as an anchor 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <a
@@ -71,7 +71,7 @@ exports[`Tag href renders in disable state with an anchor 1`] = `
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -81,7 +81,7 @@ exports[`Tag href renders in disable state with an anchor 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
   border-color: #cccccc;
   border-radius: 0;
 }
@@ -110,7 +110,7 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -152,7 +152,7 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <span
@@ -177,7 +177,7 @@ exports[`Tag renders a tag with the default stylePreset 1`] = `
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -206,7 +206,7 @@ exports[`Tag renders a tag with the default stylePreset 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <span
@@ -231,7 +231,7 @@ exports[`Tag renders in disabled state 1`] = `
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -241,7 +241,7 @@ exports[`Tag renders in disabled state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
   border-color: #cccccc;
   border-radius: 0;
 }
@@ -269,10 +269,10 @@ exports[`Tag renders with Large size 1`] = `
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
-  height: 32px;
-  line-height: calc(32px - 2px * 2);
-  border-radius: 100vw;
+  color: #535353;
+  min-height: 40px;
+  padding: 8px 12px;
+  line-height: calc(40px - 2px * 2);
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
@@ -298,7 +298,7 @@ exports[`Tag renders with Large size 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <span
@@ -323,7 +323,7 @@ exports[`Tag renders with Medium size 1`] = `
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -352,7 +352,7 @@ exports[`Tag renders with Medium size 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <span
@@ -377,7 +377,7 @@ exports[`Tag renders with Small size 1`] = `
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 24px;
   padding: 4px 8px;
   line-height: calc(24px - 2px * 2);
@@ -406,7 +406,7 @@ exports[`Tag renders with Small size 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <span
@@ -431,7 +431,7 @@ exports[`Tag renders with default styles 1`] = `
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -460,7 +460,7 @@ exports[`Tag renders with default styles 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <span

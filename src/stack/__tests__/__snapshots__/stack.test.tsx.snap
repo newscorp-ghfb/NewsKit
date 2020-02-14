@@ -45,7 +45,7 @@ exports[`Stack renders stack when no properties are set 1`] = `
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -74,7 +74,7 @@ exports[`Stack renders stack when no properties are set 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <div
@@ -138,7 +138,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -167,7 +167,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -253,7 +253,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -282,7 +282,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -361,7 +361,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -390,7 +390,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -484,7 +484,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -513,7 +513,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -603,7 +603,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -632,7 +632,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -726,7 +726,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -755,7 +755,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -852,7 +852,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -881,7 +881,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -967,7 +967,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -996,7 +996,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -1082,7 +1082,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -1111,7 +1111,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -1197,7 +1197,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -1226,7 +1226,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -1312,7 +1312,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -1341,7 +1341,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -1427,7 +1427,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -1456,7 +1456,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -1548,7 +1548,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -1577,7 +1577,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -1663,7 +1663,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -1692,7 +1692,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -1771,7 +1771,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -1800,7 +1800,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -1894,7 +1894,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -1923,7 +1923,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -2013,7 +2013,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -2042,7 +2042,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -2136,7 +2136,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -2165,7 +2165,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -2262,7 +2262,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -2291,7 +2291,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -2377,7 +2377,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -2406,7 +2406,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -2492,7 +2492,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -2521,7 +2521,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -2607,7 +2607,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -2636,7 +2636,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -2722,7 +2722,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -2751,7 +2751,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -2837,7 +2837,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -2866,7 +2866,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -2958,7 +2958,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -2987,7 +2987,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -3073,7 +3073,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -3102,7 +3102,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -3181,7 +3181,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -3210,7 +3210,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -3304,7 +3304,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -3333,7 +3333,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -3423,7 +3423,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -3452,7 +3452,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -3546,7 +3546,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -3575,7 +3575,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -3672,7 +3672,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -3701,7 +3701,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -3787,7 +3787,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -3816,7 +3816,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -3902,7 +3902,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -3931,7 +3931,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -4017,7 +4017,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -4046,7 +4046,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -4132,7 +4132,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -4161,7 +4161,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -4247,7 +4247,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -4276,7 +4276,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -4368,7 +4368,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -4397,7 +4397,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -4483,7 +4483,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -4512,7 +4512,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -4591,7 +4591,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -4620,7 +4620,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -4714,7 +4714,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -4743,7 +4743,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -4833,7 +4833,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -4862,7 +4862,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -4956,7 +4956,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -4985,7 +4985,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -5082,7 +5082,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -5111,7 +5111,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -5197,7 +5197,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -5226,7 +5226,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -5312,7 +5312,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -5341,7 +5341,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -5427,7 +5427,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -5456,7 +5456,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -5542,7 +5542,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -5571,7 +5571,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -5657,7 +5657,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -5686,7 +5686,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -5778,7 +5778,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -5807,7 +5807,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -5915,7 +5915,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -5944,7 +5944,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <div
@@ -6001,7 +6001,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -6030,7 +6030,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -6124,7 +6124,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -6153,7 +6153,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -6243,7 +6243,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -6272,7 +6272,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -6366,7 +6366,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -6395,7 +6395,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -6492,7 +6492,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -6521,7 +6521,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -6607,7 +6607,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -6636,7 +6636,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -6744,7 +6744,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -6773,7 +6773,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <div
@@ -6837,7 +6837,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -6866,7 +6866,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -6952,7 +6952,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -6981,7 +6981,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -7067,7 +7067,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -7096,7 +7096,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -7188,7 +7188,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -7217,7 +7217,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -7303,7 +7303,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -7332,7 +7332,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -7411,7 +7411,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -7440,7 +7440,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -7534,7 +7534,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -7563,7 +7563,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -7653,7 +7653,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -7682,7 +7682,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -7776,7 +7776,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -7805,7 +7805,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -7902,7 +7902,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -7931,7 +7931,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -8017,7 +8017,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -8046,7 +8046,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -8132,7 +8132,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -8161,7 +8161,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -8247,7 +8247,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -8276,7 +8276,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -8362,7 +8362,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -8391,7 +8391,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -8477,7 +8477,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -8506,7 +8506,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-6 {

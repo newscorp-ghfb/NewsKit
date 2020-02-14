@@ -12,9 +12,8 @@ export const theTimesTheme = createTheme('the-times-theme', {
     interface030: '#F0F0F0',
     interface040: '#DBDBDB',
     interface050: '#272D34',
-    interfaceBackground010: '#F9F9F9',
 
-    semanticNegativeBase: '#C51D24',
+    semanticNegative010: '#C51D24',
   },
   fontOverrides: {
     fontFamily1: 'TimesModern-Regular',
@@ -29,10 +28,10 @@ export const theTimesTheme = createTheme('the-times-theme', {
       tagBorder: colors.interface040,
       tagHoverBorder: colors.interface040,
 
-      linkText: colors.accessibleBlue010,
-      linkActive: colors.accessibleBlue010,
-      linkHover: colors.accessibleBlue010,
-      linkVisited: colors.accessibleBlue010,
+      linkText: colors.inkLink,
+      linkActive: colors.inkLink,
+      linkHover: colors.inkLink,
+      linkVisited: colors.inkLink,
 
       standfirstText: colors.inkSubtle,
     } as Theme['colors'],

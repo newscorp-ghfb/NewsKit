@@ -290,7 +290,7 @@ exports[`Button renders Medium Button 1`] = `
 
 .emotion-1:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1:disabled {
@@ -358,7 +358,7 @@ exports[`Button renders Small Button 1`] = `
 
 .emotion-1:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1::before {
@@ -613,7 +613,7 @@ exports[`Button renders when there is an icon with the placement set to end 1`] 
 
 .emotion-4:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-4:disabled svg {
@@ -764,7 +764,7 @@ exports[`Button renders when there is an icon with the placement set to start 1`
 
 .emotion-4:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-4:disabled svg {
@@ -910,7 +910,7 @@ exports[`Button renders when there is no icon 1`] = `
 
 .emotion-2:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-2::before {
@@ -1016,7 +1016,7 @@ exports[`Button renders with different style preset 1`] = `
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
   border-style: solid;
-  border-color: #C8E4FD;
+  border-color: #d5ebff;
   border-width: 1px;
   color: #0A68C1;
   border-radius: 100vw;
@@ -1033,18 +1033,18 @@ exports[`Button renders with different style preset 1`] = `
   margin: 8px 0;
 }
 
-.emotion-1:hover:not(:disabled) {
-  background-color: #F6FBFF;
+.emotion-0:hover:not(:disabled) {
+  background-color: #e6f4ff;
 }
 
-.emotion-1:active:not(:disabled) {
-  background-color: #F6FBFF;
+.emotion-0:active:not(:disabled) {
+  background-color: #e6f4ff;
   border-width: #0A68C1;
 }
 
 .emotion-1:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1::before {
@@ -1121,7 +1121,7 @@ exports[`Button renders with fallback formatting 1`] = `
 
 .emotion-1:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1::before {

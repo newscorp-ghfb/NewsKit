@@ -26,7 +26,7 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-0:disabled svg {
@@ -67,7 +67,7 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 with borderRadius
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-0:disabled svg {
@@ -103,7 +103,7 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 with disabled and
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-0 svg {
@@ -121,7 +121,7 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 with disabled sta
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-0 svg {
@@ -187,7 +187,7 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 without backgroun
 }
 
 .emotion-0:disabled {
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-0:disabled svg {

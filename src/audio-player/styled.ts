@@ -32,7 +32,7 @@ export const LiveTag = styled(Tag)`
   text-align: center;
   line-height: 1.6;
   border: none;
-  background-color: ${getColorFromTheme('semanticNegativeBase')};
+  background-color: ${getColorFromTheme('semanticNegative010')};
   color: ${getColorFromTheme('inkInverse')};
   text-transform: uppercase;
   margin-right: ${getSizingFromTheme('sizing040')};

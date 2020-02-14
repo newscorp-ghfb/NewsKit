@@ -10,7 +10,7 @@ exports[`ArticleContent renders ArticleContent with bold headings 1`] = `
 
 .emotion-0::selection,
 .emotion-0 *::selection {
-  background-color: #C8E4FD;
+  background-color: #d5ebff;
 }
 
 <div
@@ -36,7 +36,7 @@ exports[`ArticleContent renders ArticleContent with bold intro 1`] = `
 
 .emotion-0::selection,
 .emotion-0 *::selection {
-  background-color: #C8E4FD;
+  background-color: #d5ebff;
 }
 
 <div
@@ -64,7 +64,7 @@ exports[`ArticleContent renders ArticleContent with bold intro and bold headings
 
 .emotion-0::selection,
 .emotion-0 *::selection {
-  background-color: #C8E4FD;
+  background-color: #d5ebff;
 }
 
 <div
@@ -90,7 +90,7 @@ exports[`ArticleContent renders ArticleContent with children 1`] = `
 
 .emotion-0::selection,
 .emotion-0 *::selection {
-  background-color: #C8E4FD;
+  background-color: #d5ebff;
 }
 
 <div
@@ -116,7 +116,7 @@ exports[`ArticleContent renders empty ArticleContent 1`] = `
 
 .emotion-0::selection,
 .emotion-0 *::selection {
-  background-color: #C8E4FD;
+  background-color: #d5ebff;
 }
 
 <div
@@ -135,7 +135,7 @@ exports[`ArticleContent renders null ArticleContent children 1`] = `
 
 .emotion-0::selection,
 .emotion-0 *::selection {
-  background-color: #C8E4FD;
+  background-color: #d5ebff;
 }
 
 <div

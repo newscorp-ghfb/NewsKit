@@ -39,7 +39,7 @@ describe('Paragraph', () => {
       children: 'paragraph component',
       $bold: true,
       $dropCap: true,
-      $dropCapColor: 'accessibleBlue010',
+      $dropCapColor: 'inkLink',
     } as ParagraphProps);
     expect(wrapper).toMatchSnapshot();
   });

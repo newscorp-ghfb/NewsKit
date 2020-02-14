@@ -164,7 +164,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   line-height: 1.5rem;
   background-color: transparent;
   box-sizing: border-box;
-  color: #777777;
+  color: #535353;
   cursor: pointer;
   font-weight: normal;
   min-height: 40px;
@@ -179,7 +179,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-9:hover {
   color: #2e2e2e;
-  background-color: #F6FBFF;
+  background-color: #d5ebff;
 }
 
 .emotion-9:focus {
@@ -250,7 +250,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   background-color: #fafafa;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #e4e4e4;
+  border-right-color: #f0f0f0;
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
@@ -599,7 +599,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   background-color: #fafafa;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #e4e4e4;
+  border-right-color: #f0f0f0;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
@@ -778,7 +778,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   line-height: 1.5rem;
   background-color: transparent;
   box-sizing: border-box;
-  color: #777777;
+  color: #535353;
   cursor: pointer;
   font-weight: normal;
   min-height: 40px;
@@ -793,7 +793,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-9:hover {
   color: #2e2e2e;
-  background-color: #F6FBFF;
+  background-color: #d5ebff;
 }
 
 .emotion-9:focus {

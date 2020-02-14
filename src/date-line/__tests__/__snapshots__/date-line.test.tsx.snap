@@ -12,7 +12,7 @@ exports[`DateLine renders with custom color 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #777777;
+  color: #535353;
 }
 
 <time

@@ -35,7 +35,7 @@ exports[`TagList renders as a span with custom margins 1`] = `
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -64,7 +64,7 @@ exports[`TagList renders as a span with custom margins 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -160,7 +160,7 @@ exports[`TagList renders as a span with custom size 1`] = `
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 40px;
   padding: 8px 12px;
   line-height: calc(40px - 2px * 2);
@@ -189,7 +189,7 @@ exports[`TagList renders as a span with custom size 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <ul
@@ -273,7 +273,7 @@ exports[`TagList renders as a span with defaults 1`] = `
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -302,7 +302,7 @@ exports[`TagList renders as a span with defaults 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <ul
@@ -374,7 +374,7 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -403,7 +403,7 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -502,7 +502,7 @@ exports[`TagList renders as an anchor with custom size 1`] = `
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 40px;
   padding: 8px 12px;
   line-height: calc(40px - 2px * 2);
@@ -532,7 +532,7 @@ exports[`TagList renders as an anchor with custom size 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <ul
@@ -619,7 +619,7 @@ exports[`TagList renders as an anchor with defaults 1`] = `
   letter-spacing: 0;
   border-style: solid;
   border-width: 2px;
-  color: #777777;
+  color: #535353;
   min-height: 32px;
   padding: 8px 12px;
   line-height: calc(32px - 2px * 2);
@@ -648,7 +648,7 @@ exports[`TagList renders as an anchor with defaults 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <ul

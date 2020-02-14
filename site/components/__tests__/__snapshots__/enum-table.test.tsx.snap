@@ -19,7 +19,7 @@ exports[`EnumTable renders enum as expected 1`] = `
 .emotion-0 th {
   color: #0a0a0a;
   border-spacing: 0;
-  border: solid 1px #cccccc;
+  border: solid 1px #e4e4e4;
 }
 
 .emotion-0 td,

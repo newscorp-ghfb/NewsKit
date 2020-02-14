@@ -62,7 +62,7 @@ exports[`slider labels should render custom component min, max labels 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -85,7 +85,7 @@ exports[`slider labels should render custom component min, max labels 1`] = `
 
 .emotion-1:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <div
@@ -150,7 +150,7 @@ exports[`slider labels should render horizontal labels 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -173,7 +173,7 @@ exports[`slider labels should render horizontal labels 1`] = `
 
 .emotion-1:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <div
@@ -234,7 +234,7 @@ exports[`slider labels should render max label 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <div
@@ -289,7 +289,7 @@ exports[`slider labels should render min label 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <div
@@ -347,7 +347,7 @@ exports[`slider labels should render vertical labels 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -370,7 +370,7 @@ exports[`slider labels should render vertical labels 1`] = `
 
 .emotion-1:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <div
@@ -660,7 +660,7 @@ exports[`slider react-range Range function props renderThumb should render range
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <div
@@ -798,7 +798,7 @@ exports[`slider react-range Range function props renderThumb should render verti
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 <div

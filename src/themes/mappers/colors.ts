@@ -12,10 +12,10 @@ export const createThemeColors = (primitives: ColorPrimitives) => ({
 
   // Link
 
-  linkText: primitives.accessibleBlue010,
-  linkVisited: primitives.visited010,
-  linkHover: primitives.accessibleBlue010,
-  linkActive: primitives.accessibleBlue010,
+  linkText: primitives.inkLink,
+  linkVisited: primitives.inkLinkVisited,
+  linkHover: primitives.inkLink,
+  linkActive: primitives.inkLink,
 
   // Title Bar
 
@@ -27,7 +27,7 @@ export const createThemeColors = (primitives: ColorPrimitives) => ({
   tagFill: primitives.interface020,
   tagBorder: primitives.interface030,
   tagText: primitives.inkSubtle,
-  tagHoverFill: primitives.interfaceHover,
+  tagHoverFill: primitives.interactive130,
   tagHoverBorder: primitives.interface040,
   tagHoverText: primitives.inkBase,
   tagDisabledFill: primitives.disabled,
