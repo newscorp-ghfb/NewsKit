@@ -1,4 +1,3 @@
-/* eslint-disable  @typescript-eslint/no-explicit-any */
 import React from 'react';
 import {styled} from '../utils/style';
 import {FlagProps} from './types';
@@ -40,6 +39,7 @@ const StyledFlag = styled(BaseFlag)<FlagProps>`
 
   ${({$size: sizeProp, ...props}) => {
     const size = sizeProp || FlagSize.Small;
+    /* eslint-disable-next-line  @typescript-eslint/no-explicit-any */
     return getStylePresetFromTheme('flag010', '$stylePreset' as any, {
       borderRadiusSize: flagBorderRadiusToken[size],
     })(props);
