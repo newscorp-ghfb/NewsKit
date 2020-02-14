@@ -111,7 +111,7 @@ export const Button: React.FC<
   iconPlacement = IconPlacement.Start,
   ...restOfProps
 }) => {
-  const iconWithProps = (
+  const iconWithProps = Icon && (
     <Icon
       $size={
         !$size || $size === ButtonSize.Small ? 'iconSize010' : 'iconSize020'
