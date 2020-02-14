@@ -2,7 +2,7 @@ import {ColorKeys} from '../themes';
 
 export interface ButtonProps {
   $size?: ButtonSize;
-  icon?: any; // eslint-disable-line
+  icon?: React.ComponentType;
   $iconColor?: ColorKeys;
   $stylePreset?: string;
   iconPlacement?: IconPlacement;
