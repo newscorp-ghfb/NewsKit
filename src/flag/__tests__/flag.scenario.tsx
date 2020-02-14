@@ -41,100 +41,28 @@ export const component = () => (
     <StorybookHeading>Flags with an icon</StorybookHeading>
     <h2>Regular</h2>
     <Container>
-      <h3>Icon only</h3>
-      <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
-        <Flag>
-          <Email $size="iconSize010" />
-        </Flag>
-        <Flag>
-          <Email $size="iconSize020" />
-        </Flag>
-        <Flag>
-          <Email $size="iconSize030" />
-        </Flag>
-      </Stack>
-    </Container>
-    <Container>
-      <h3>Icon on the left and text</h3>
       <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
         <Flag>
           <Email $size="iconSize010" />
           Text
         </Flag>
         <Flag>
-          <Email $size="iconSize020" />
-          Text
-        </Flag>
-        <Flag>
           <Email $size="iconSize030" />
           Text
-        </Flag>
-      </Stack>
-    </Container>
-    <Container>
-      <h3>Icon on the right and text</h3>
-      <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
-        <Flag>
-          Text
-          <Email $size="iconSize010" />
-        </Flag>
-        <Flag>
-          Text
-          <Email $size="iconSize020" />
-        </Flag>
-        <Flag>
-          Text
-          <Email $size="iconSize030" />
         </Flag>
       </Stack>
     </Container>
 
     <h2>Minimal (without padding)</h2>
     <Container>
-      <h3>Icon only</h3>
-      <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
-        <Flag $spacing="sizing000" $stylePreset="flag010Inverse">
-          <Email $size="iconSize010" />
-        </Flag>
-        <Flag $spacing="sizing000" $stylePreset="flag010Inverse">
-          <Email $size="iconSize020" />
-        </Flag>
-        <Flag $spacing="sizing000" $stylePreset="flag010Inverse">
-          <Email $size="iconSize030" />
-        </Flag>
-      </Stack>
-    </Container>
-    <Container>
-      <h3>Icon on the left and text</h3>
       <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
         <Flag $spacing="sizing000" $stylePreset="flag010Inverse">
           <Email $size="iconSize010" />
           Text
         </Flag>
         <Flag $spacing="sizing000" $stylePreset="flag010Inverse">
-          <Email $size="iconSize020" />
-          Text
-        </Flag>
-        <Flag $spacing="sizing000" $stylePreset="flag010Inverse">
           <Email $size="iconSize030" />
           Text
-        </Flag>
-      </Stack>
-    </Container>
-    <Container>
-      <h3>Icon on the right and text</h3>
-      <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
-        <Flag $spacing="sizing000" $stylePreset="flag010Inverse">
-          Text
-          <Email $size="iconSize010" />
-        </Flag>
-        <Flag $spacing="sizing000" $stylePreset="flag010Inverse">
-          Text
-          <Email $size="iconSize020" />
-        </Flag>
-        <Flag $spacing="sizing000" $stylePreset="flag010Inverse">
-          Text
-          <Email $size="iconSize030" />
         </Flag>
       </Stack>
     </Container>

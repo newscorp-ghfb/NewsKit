@@ -92,10 +92,10 @@ exports[`Stack renders stack when no properties are set 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -250,10 +250,10 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -430,10 +430,10 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -603,10 +603,10 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -791,10 +791,10 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -975,10 +975,10 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -1163,10 +1163,10 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -1354,10 +1354,10 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -1534,10 +1534,10 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -1714,10 +1714,10 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -1894,10 +1894,10 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -2074,10 +2074,10 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -2254,10 +2254,10 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -2440,10 +2440,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -2620,10 +2620,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -2793,10 +2793,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -2981,10 +2981,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -3165,10 +3165,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -3353,10 +3353,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -3544,10 +3544,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -3724,10 +3724,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -3904,10 +3904,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -4084,10 +4084,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -4264,10 +4264,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -4444,10 +4444,10 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -4630,10 +4630,10 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -4810,10 +4810,10 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -4983,10 +4983,10 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -5171,10 +5171,10 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -5355,10 +5355,10 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -5543,10 +5543,10 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -5734,10 +5734,10 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -5914,10 +5914,10 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -6094,10 +6094,10 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -6274,10 +6274,10 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -6454,10 +6454,10 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -6634,10 +6634,10 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -6820,10 +6820,10 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -7000,10 +7000,10 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -7173,10 +7173,10 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -7361,10 +7361,10 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -7545,10 +7545,10 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -7733,10 +7733,10 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -7924,10 +7924,10 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -8104,10 +8104,10 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -8284,10 +8284,10 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -8464,10 +8464,10 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -8644,10 +8644,10 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -8824,10 +8824,10 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -9010,10 +9010,10 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -9212,10 +9212,10 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -9363,10 +9363,10 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -9551,10 +9551,10 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -9735,10 +9735,10 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -9923,10 +9923,10 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -10114,10 +10114,10 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -10294,10 +10294,10 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -10496,10 +10496,10 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -10654,10 +10654,10 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -10834,10 +10834,10 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -11014,10 +11014,10 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -11200,10 +11200,10 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -11380,10 +11380,10 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -11553,10 +11553,10 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -11741,10 +11741,10 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -11925,10 +11925,10 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -12113,10 +12113,10 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -12304,10 +12304,10 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -12484,10 +12484,10 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -12664,10 +12664,10 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -12844,10 +12844,10 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -13024,10 +13024,10 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
@@ -13204,10 +13204,10 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
 }
