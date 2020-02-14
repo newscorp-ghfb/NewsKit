@@ -91,6 +91,19 @@ const ButtonElement = styled.button<ButtonProps>`
       min-height: ${theme.sizing[minHeight]};
       ${getTypePresetFromTheme(typePreset)({theme})}
       padding: ${theme.sizing[paddingX]} ${theme.sizing[paddingY]};
+      
+      ${$size === ButtonSize.Small &&
+        css`
+        /* Extend touchpoint area */
+        margin: ${theme.sizing.sizing020} 0;
+        ::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: -${theme.sizing.sizing020};
+          width: 100%;
+          height: ${theme.sizing.sizing080};
+      `}
     `;
 
     return commonStyles;
