@@ -341,6 +341,7 @@ exports[`Button renders Small Button 1`] = `
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   padding: 8px 12px;
+  margin: 8px 0;
 }
 
 .emotion-1:hover:not(:disabled) {
@@ -360,7 +361,16 @@ exports[`Button renders Small Button 1`] = `
   color: #c0c0c0;
 }
 
-.emotion-1:disabled {
+.emotion-1::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 100%;
+  height: 48px;
+}
+
+.emotion-1::before:disabled {
   cursor: not-allowed;
 }
 
@@ -430,6 +440,7 @@ exports[`Button renders when there is an icon with a colour 1`] = `
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   padding: 8px 12px;
+  margin: 8px 0;
 }
 
 .emotion-4 svg {
@@ -459,7 +470,16 @@ exports[`Button renders when there is an icon with a colour 1`] = `
   color: #c0c0c0;
 }
 
-.emotion-4:disabled {
+.emotion-4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 100%;
+  height: 48px;
+}
+
+.emotion-4::before:disabled {
   cursor: not-allowed;
 }
 
@@ -571,6 +591,7 @@ exports[`Button renders when there is an icon with the placement set to end 1`] 
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   padding: 8px 12px;
+  margin: 8px 0;
 }
 
 .emotion-4 svg {
@@ -600,7 +621,16 @@ exports[`Button renders when there is an icon with the placement set to end 1`] 
   color: #c0c0c0;
 }
 
-.emotion-4:disabled {
+.emotion-4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 100%;
+  height: 48px;
+}
+
+.emotion-4::before:disabled {
   cursor: not-allowed;
 }
 
@@ -712,6 +742,7 @@ exports[`Button renders when there is an icon with the placement set to start 1`
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   padding: 8px 12px;
+  margin: 8px 0;
 }
 
 .emotion-4 svg {
@@ -741,7 +772,16 @@ exports[`Button renders when there is an icon with the placement set to start 1`
   color: #c0c0c0;
 }
 
-.emotion-4:disabled {
+.emotion-4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 100%;
+  height: 48px;
+}
+
+.emotion-4::before:disabled {
   cursor: not-allowed;
 }
 
@@ -853,6 +893,7 @@ exports[`Button renders when there is no icon 1`] = `
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   padding: 8px 12px;
+  margin: 8px 0;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -872,7 +913,16 @@ exports[`Button renders when there is no icon 1`] = `
   color: #c0c0c0;
 }
 
-.emotion-2:disabled {
+.emotion-2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 100%;
+  height: 48px;
+}
+
+.emotion-2::before:disabled {
   cursor: not-allowed;
 }
 
@@ -980,6 +1030,7 @@ exports[`Button renders with different style preset 1`] = `
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   padding: 8px 12px;
+  margin: 8px 0;
 }
 
 .emotion-1:hover:not(:disabled) {
@@ -996,7 +1047,16 @@ exports[`Button renders with different style preset 1`] = `
   color: #c0c0c0;
 }
 
-.emotion-1:disabled {
+.emotion-1::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 100%;
+  height: 48px;
+}
+
+.emotion-1::before:disabled {
   cursor: not-allowed;
 }
 
@@ -1044,6 +1104,7 @@ exports[`Button renders with fallback formatting 1`] = `
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   padding: 8px 12px;
+  margin: 8px 0;
 }
 
 .emotion-1:hover:not(:disabled) {
@@ -1063,7 +1124,16 @@ exports[`Button renders with fallback formatting 1`] = `
   color: #c0c0c0;
 }
 
-.emotion-1:disabled {
+.emotion-1::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 100%;
+  height: 48px;
+}
+
+.emotion-1::before:disabled {
   cursor: not-allowed;
 }
 
