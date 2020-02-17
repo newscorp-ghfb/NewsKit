@@ -5742,6 +5742,14 @@ exports[`Live AudioPlayer render live player 1`] = `
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   width: 48px;
   height: 24px;
   padding: 0;

@@ -7,7 +7,7 @@ import {TagSize} from './utils';
 import {SizingKeys} from '../themes';
 import {getStylePresetFromTheme} from '../utils/style-preset';
 import {PaddingPresetKeys} from '../themes/mappers/spacing';
-import {BaseFlag} from '../baseFlag';
+import {BaseFlag} from '../base-flag';
 
 const tagSizeToToken: Record<TagSize, SizingKeys> = {
   [TagSize.Large]: 'sizing070',

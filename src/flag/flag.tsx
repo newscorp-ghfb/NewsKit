@@ -1,32 +1,40 @@
 import React from 'react';
-import {styled} from '../utils/style';
+import {styled, getTypePresetFromTheme} from '../utils/style';
 import {FlagProps} from './types';
 import {FlagSize} from './utils';
-import {SizingKeys} from '../themes';
+import {SizingKeys, TypePresetKeys} from '../themes';
 import {getStylePresetFromTheme} from '../utils/style-preset';
 import {PaddingPresetKeys} from '../themes/mappers/spacing';
-import {BaseFlag} from '../baseFlag';
+import {BaseFlag} from '../base-flag';
 
-const flagSizeToToken: Record<FlagSize, SizingKeys> = {
-  [FlagSize.Large]: 'sizing060',
-  [FlagSize.Small]: 'sizing050',
-};
-
-const flagPaddingToken: Record<FlagSize, PaddingPresetKeys> = {
-  [FlagSize.Large]: 'spaceInset020Squish',
-  [FlagSize.Small]: 'spaceInset010Squish',
-};
-
-const flagBorderRadiusToken: Record<FlagSize, SizingKeys> = {
-  [FlagSize.Large]: 'sizing070',
-  [FlagSize.Small]: 'sizing050',
+const flagSizeStyleTokens: Record<
+  FlagSize,
+  {
+    minHeight: SizingKeys;
+    borderRadiusSize: SizingKeys;
+    typePreset: TypePresetKeys;
+    padding: PaddingPresetKeys;
+  }
+> = {
+  [FlagSize.Large]: {
+    minHeight: 'sizing060',
+    borderRadiusSize: 'sizing070',
+    typePreset: 'flag020',
+    padding: 'spaceInset020Squish',
+  },
+  [FlagSize.Small]: {
+    minHeight: 'sizing050',
+    borderRadiusSize: 'sizing050',
+    typePreset: 'flag010',
+    padding: 'spaceInset010Squish',
+  },
 };
 
 const StyledFlag = styled(BaseFlag)<FlagProps>`
   ${({theme, $size: sizeProp, $spacing: spacingProp}) => {
     const size = sizeProp || FlagSize.Small;
-    const sizeToken = flagSizeToToken[size];
-    const paddingToken = flagPaddingToken[size];
+    const sizeToken = flagSizeStyleTokens[size].minHeight;
+    const paddingToken = flagSizeStyleTokens[size].padding;
     const borderWidth = theme.borders.borderWidth020;
     const height = theme.sizing[sizeToken];
 
@@ -41,8 +49,13 @@ const StyledFlag = styled(BaseFlag)<FlagProps>`
     const size = sizeProp || FlagSize.Small;
     /* eslint-disable-next-line  @typescript-eslint/no-explicit-any */
     return getStylePresetFromTheme('flag010', '$stylePreset' as any, {
-      borderRadiusSize: flagBorderRadiusToken[size],
+      borderRadiusSize: flagSizeStyleTokens[size].borderRadiusSize,
     })(props);
+  }}
+
+  ${({$size: sizeProp, ...props}) => {
+    const size = sizeProp || FlagSize.Small;
+    return getTypePresetFromTheme(flagSizeStyleTokens[size].typePreset)(props);
   }}
 `;
 

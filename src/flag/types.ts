@@ -1,5 +1,5 @@
 import {FlagSize} from './utils';
-import {BaseFlagProps} from '../baseFlag/types';
+import {BaseFlagProps} from '../base-flag/types';
 import {SizingKeys} from '../themes';
 
 export interface FlagProps extends BaseFlagProps {

@@ -48,6 +48,14 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
   line-height: calc(24px - 2px * 2);
   color: #0A68C1;
   border-radius: 100vw;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 }
 
 .emotion-1 svg {
@@ -142,6 +150,14 @@ exports[`Flag renders a flag with no paddings 1`] = `
   line-height: calc(24px - 2px * 2);
   color: #0A68C1;
   border-radius: 100vw;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 }
 
 .emotion-1 svg {
@@ -237,6 +253,14 @@ exports[`Flag renders with Large size 1`] = `
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 .emotion-1 svg {
@@ -281,6 +305,14 @@ exports[`Flag renders with Small size 1`] = `
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 }
 
 .emotion-1 svg {
@@ -349,6 +381,14 @@ exports[`Flag renders with default styles 1`] = `
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 }
 
 .emotion-1 svg {
