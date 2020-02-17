@@ -1,7 +1,6 @@
 import * as React from 'react';
 
 import {Flag, FlagSize} from '..';
-import {StorybookHeading} from '../../test/storybook-comps';
 import {styled} from '../../utils/style';
 import {Email} from '../../icons';
 import {Stack} from '../../stack';
@@ -17,28 +16,28 @@ const Container = styled.div`
 
 export const component = () => (
   <React.Fragment>
-    <StorybookHeading>Flag Variations</StorybookHeading>
-    <h3>Solid Flag</h3>
+    <h1>Flag Variations</h1>
+    <h2>Solid Flag</h2>
     <Flag>Text goes here</Flag>
-    <h3>Minimal Flag</h3>
+    <h2>Minimal Flag</h2>
     <Flag $spacing="sizing000" $stylePreset="flag010Inverse">
       Text goes here
     </Flag>
-    <StorybookHeading>Flag Sizes</StorybookHeading>
+    <h1>Flag Sizes</h1>
     <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
       {' '}
       <Flag $size={FlagSize.Small}>Small</Flag>{' '}
       <Flag $size={FlagSize.Large}>Large</Flag>
     </Stack>
 
-    <StorybookHeading>Style Presets</StorybookHeading>
+    <h1>Style Presets</h1>
     <Block>
       <Flag>flag010</Flag>
     </Block>
     <Block>
       <Flag $stylePreset="flag010Inverse">flag010Inverse</Flag>
     </Block>
-    <StorybookHeading>Flags with an icon</StorybookHeading>
+    <h1>Flags with an icon</h1>
     <h2>Regular</h2>
     <Container>
       <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
