@@ -4,41 +4,49 @@ import {styled} from '../utils/style';
 import {as} from '../utils/component';
 import {TagProps} from './types';
 import {TagSize} from './utils';
-import {SizingKeys} from '../themes';
+import {SizingKeys, TypePresetKeys} from '../themes';
 import {getStylePresetFromTheme} from '../utils/style-preset';
 import {PaddingPresetKeys} from '../themes/mappers/spacing';
 import {BaseFlag} from '../base-flag';
 
-const tagSizeToToken: Record<TagSize, SizingKeys> = {
-  [TagSize.Large]: 'sizing070',
-  [TagSize.Medium]: 'sizing060',
-  [TagSize.Small]: 'sizing050',
-};
-
-const tagPaddingToken: Record<TagSize, PaddingPresetKeys> = {
-  [TagSize.Large]: 'spaceInset020Squish',
-  [TagSize.Medium]: 'spaceInset020Squish',
-  [TagSize.Small]: 'spaceInset010Squish',
-};
-
-const tagBorderRadiusToken: Record<TagSize, SizingKeys> = {
-  [TagSize.Large]: 'sizing070',
-  [TagSize.Medium]: 'sizing060',
-  [TagSize.Small]: 'sizing050',
+const tagSizeStyleTokens: Record<
+  TagSize,
+  {
+    minHeight: SizingKeys;
+    borderRadiusSize: SizingKeys;
+    typePreset: TypePresetKeys;
+    padding: PaddingPresetKeys;
+  }
+> = {
+  [TagSize.Large]: {
+    minHeight: 'sizing070',
+    borderRadiusSize: 'sizing070',
+    typePreset: 'flag020',
+    padding: 'spaceInset020Squish',
+  },
+  [TagSize.Medium]: {
+    minHeight: 'sizing060',
+    borderRadiusSize: 'sizing060',
+    typePreset: 'flag010',
+    padding: 'spaceInset020Squish',
+  },
+  [TagSize.Small]: {
+    minHeight: 'sizing050',
+    borderRadiusSize: 'sizing050',
+    typePreset: 'flag010',
+    padding: 'spaceInset010Squish',
+  },
 };
 
 const StyledTag = styled(BaseFlag)<TagProps>`
   ${({theme, $size: sizeProp}) => {
     const size = sizeProp || TagSize.Medium;
-    const sizeToken = tagSizeToToken[size];
-    const paddingToken = tagPaddingToken[size];
-    const borderWidth = theme.borders.borderWidth020;
-    const height = theme.sizing[sizeToken];
+    const sizeToken = tagSizeStyleTokens[size].minHeight;
+    const paddingToken = tagSizeStyleTokens[size].padding;
 
     return {
       minHeight: theme.sizing[sizeToken],
       padding: theme.sizing[paddingToken],
-      lineHeight: `calc(${height} - ${borderWidth} * 2)`,
     };
   }};
 
@@ -46,7 +54,7 @@ const StyledTag = styled(BaseFlag)<TagProps>`
     const size = sizeProp || TagSize.Medium;
     return getStylePresetFromTheme('interactive070', '$stylePreset' as any, {
       isDisabled: disabled,
-      borderRadiusSize: tagBorderRadiusToken[size],
+      borderRadiusSize: tagSizeStyleTokens[size].borderRadiusSize,
     })(props);
   }}
 `;

@@ -289,15 +289,20 @@ export const createStylePresets = ({
     base: {
       backgroundColor: colorPrimitives.brand010,
       color: colorPrimitives.inkInverse,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
       iconColor: colorPrimitives.inkInverse,
     },
   } as StylePresetStates,
   flag010Inverse: {
     base: {
       color: colorPrimitives.inkBrand,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
       iconColor: colorPrimitives.inkBrand,
+    },
+  } as StylePresetStates,
+  flagLive010: {
+    base: {
+      backgroundColor: colorPrimitives.semanticNegative010,
+      color: colorPrimitives.inkInverse,
+      iconColor: colorPrimitives.inkInverse,
     },
   } as StylePresetStates,
 });

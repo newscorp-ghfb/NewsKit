@@ -6,14 +6,6 @@ exports[`BaseFlag renders with default styles 1`] = `
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;

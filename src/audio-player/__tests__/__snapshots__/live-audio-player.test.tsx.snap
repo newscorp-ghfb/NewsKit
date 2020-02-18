@@ -5723,14 +5723,6 @@ exports[`Live AudioPlayer render live player 1`] = `
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
@@ -5738,10 +5730,8 @@ exports[`Live AudioPlayer render live player 1`] = `
   white-space: nowrap;
   min-height: 24px;
   padding: 4px 8px;
-  line-height: calc(24px - 2px * 2);
-  background-color: #0A68C1;
+  background-color: #EF1703;
   color: #FFFFFF;
-  border-radius: 0;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -5750,14 +5740,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  width: 48px;
-  height: 24px;
-  padding: 0;
-  text-align: center;
-  line-height: 1.6;
   border: none;
-  background-color: #EF1703;
-  color: #FFFFFF;
   text-transform: uppercase;
   margin-right: 16px;
 }
@@ -6703,14 +6686,6 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
   overflow: hidden;
@@ -6718,7 +6693,6 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
-  line-height: calc(32px - 2px * 2);
   border-style: solid;
   border-width: 1px;
   background-color: transparent;

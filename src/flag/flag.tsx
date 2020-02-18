@@ -35,13 +35,10 @@ const StyledFlag = styled(BaseFlag)<FlagProps>`
     const size = sizeProp || FlagSize.Small;
     const sizeToken = flagSizeStyleTokens[size].minHeight;
     const paddingToken = flagSizeStyleTokens[size].padding;
-    const borderWidth = theme.borders.borderWidth020;
-    const height = theme.sizing[sizeToken];
 
     return {
       minHeight: theme.sizing[sizeToken],
       padding: spacingProp || theme.sizing[paddingToken],
-      lineHeight: `calc(${height} - ${borderWidth} * 2)`,
     };
   }};
 
@@ -59,11 +56,6 @@ const StyledFlag = styled(BaseFlag)<FlagProps>`
   }}
 `;
 
-export const Flag: React.FC<FlagProps> = props => {
-  const {children} = props;
-  return (
-    <StyledFlag data-testid="flag" {...props}>
-      {children}
-    </StyledFlag>
-  );
-};
+export const Flag: React.FC<FlagProps> = props => (
+  <StyledFlag data-testid="flag" {...props} />
+);

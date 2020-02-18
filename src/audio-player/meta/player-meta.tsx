@@ -40,7 +40,7 @@ export const PlayerMeta: React.FC<PlayerMetaProps> = React.memo(
         stackDistribution={StackDistribution.Center}
       >
         <div>
-          {live && <LiveFlag>Live</LiveFlag>}
+          {live && <LiveFlag $stylePreset="flagLive010">Live</LiveFlag>}
           {time && <ProgrammeTime>{time}</ProgrammeTime>}
         </div>
         {title && <ProgrammeTitle>{title}</ProgrammeTitle>}

@@ -15,7 +15,7 @@ The flag element is used as a way of showing the status of the content.
 
 ### Usage
 
-A flag is used to show that a stream is live, a content has been created or updated.
+A flag is used to show that a stream is live, or content has been created or updated.
 
 ## Props
 
@@ -27,6 +27,9 @@ Flags have a number of props to facilitate a variety of uses:
   </Prop>
   <Prop name="$size" type="FlagSize" enum={FlagSize} default="Small">
     Optional size of the Flag.
+  </Prop>
+  <Prop name="$spacing" type="SizingKeys" enum={SizingKeys} default="undefined">
+    Optional spacing of the Flag.
   </Prop>
   <Prop name="$stylePreset" type="string" default="flag010">
     If provided, this overrides the style preset applied to the flag.

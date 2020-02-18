@@ -8,12 +8,11 @@ const StyledBaseFlag = styled.span<BaseFlagProps>`
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
-  ${getTypePresetFromTheme('caption010')}
-
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  /* ${getTypePresetFromTheme(undefined, '$size')} */
 `;
 
 export const BaseFlag: React.FC<BaseFlagProps> = ({children, ...props}) => (
