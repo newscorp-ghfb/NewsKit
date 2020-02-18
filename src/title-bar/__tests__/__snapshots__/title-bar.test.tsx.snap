@@ -91,6 +91,11 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   margin: 8px 0;
 }
 
+.emotion-4 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
 .emotion-4:hover:not(:disabled) {
   background-color: #02509B;
 }
@@ -105,6 +110,11 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 
 .emotion-4:disabled {
   background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-4:disabled svg {
+  fill: #9c9c9c;
   color: #9c9c9c;
 }
 

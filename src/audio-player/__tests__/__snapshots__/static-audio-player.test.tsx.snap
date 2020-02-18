@@ -397,7 +397,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
   border: none;
 }
 
@@ -491,7 +491,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
 }
 
 .emotion-45 svg {
@@ -523,14 +523,6 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 
 .emotion-45:disabled {
   cursor: not-allowed;
-}
-
-.emotion-42 {
-  display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
 .emotion-59 {
@@ -861,7 +853,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
                     wrap="nowrap"
                   >
                     <svg
-                      class="emotion-42"
+                      class="emotion-32"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -1368,7 +1360,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
   border: none;
 }
 
@@ -1440,7 +1432,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
 }
 
 .emotion-45 svg {
@@ -1472,14 +1464,6 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 
 .emotion-45:disabled {
   cursor: not-allowed;
-}
-
-.emotion-42 {
-  display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
 .emotion-59 {
@@ -1811,7 +1795,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
                     wrap="nowrap"
                   >
                     <svg
-                      class="emotion-42"
+                      class="emotion-32"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -2323,7 +2307,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
   border: none;
 }
 
@@ -2417,7 +2401,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
 }
 
 .emotion-41 svg {
@@ -2449,14 +2433,6 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 
 .emotion-41:disabled {
   cursor: not-allowed;
-}
-
-.emotion-38 {
-  display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
 .emotion-51 {
@@ -2755,7 +2731,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
                     wrap="nowrap"
                   >
                     <svg
-                      class="emotion-38"
+                      class="emotion-33"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -3230,7 +3206,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
   border: none;
 }
 
@@ -3324,7 +3300,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
 }
 
 .emotion-41 svg {
@@ -3356,14 +3332,6 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 
 .emotion-41:disabled {
   cursor: not-allowed;
-}
-
-.emotion-38 {
-  display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
 .emotion-51 {
@@ -3662,7 +3630,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
                     wrap="nowrap"
                   >
                     <svg
-                      class="emotion-38"
+                      class="emotion-33"
                       viewBox="0 0 24 24"
                     >
                       <title>

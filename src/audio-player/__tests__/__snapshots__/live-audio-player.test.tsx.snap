@@ -332,7 +332,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
   border: none;
 }
 
@@ -404,7 +404,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
 }
 
 .emotion-41 svg {
@@ -436,14 +436,6 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 .emotion-41:disabled {
   cursor: not-allowed;
-}
-
-.emotion-38 {
-  display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
 .emotion-51 {
@@ -808,7 +800,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
                     wrap="nowrap"
                   >
                     <svg
-                      class="emotion-38"
+                      class="emotion-33"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -1219,7 +1211,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
   border: none;
 }
 
@@ -1291,7 +1283,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
 }
 
 .emotion-41 svg {
@@ -1323,14 +1315,6 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 .emotion-41:disabled {
   cursor: not-allowed;
-}
-
-.emotion-38 {
-  display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
 .emotion-51 {
@@ -1695,7 +1679,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
                     wrap="nowrap"
                   >
                     <svg
-                      class="emotion-38"
+                      class="emotion-33"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -2106,7 +2090,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
   border: none;
 }
 
@@ -2178,7 +2162,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
 }
 
 .emotion-41 svg {
@@ -2210,14 +2194,6 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 
 .emotion-41:disabled {
   cursor: not-allowed;
-}
-
-.emotion-38 {
-  display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
 .emotion-51 {
@@ -2627,7 +2603,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
                     wrap="nowrap"
                   >
                     <svg
-                      class="emotion-38"
+                      class="emotion-33"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -3038,7 +3014,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
   border: none;
 }
 
@@ -3102,7 +3078,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
 }
 
 .emotion-41 svg {
@@ -3134,14 +3110,6 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 
 .emotion-41:disabled {
   cursor: not-allowed;
-}
-
-.emotion-38 {
-  display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
 .emotion-51 {
@@ -3506,7 +3474,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
                     wrap="nowrap"
                   >
                     <svg
-                      class="emotion-38"
+                      class="emotion-33"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -3917,7 +3885,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
   border: none;
 }
 
@@ -4010,7 +3978,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
 }
 
 .emotion-41 svg {
@@ -4042,14 +4010,6 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 
 .emotion-41:disabled {
   cursor: not-allowed;
-}
-
-.emotion-38 {
-  display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 24px;
-  height: 24px;
 }
 
 .emotion-51 {
@@ -4414,7 +4374,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
                     wrap="nowrap"
                   >
                     <svg
-                      class="emotion-38"
+                      class="emotion-33"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -4825,7 +4785,7 @@ exports[`Live AudioPlayer render default player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
   border: none;
 }
 
@@ -4897,7 +4857,7 @@ exports[`Live AudioPlayer render default player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
 }
 
 .emotion-38 svg {
@@ -4929,14 +4889,6 @@ exports[`Live AudioPlayer render default player 1`] = `
 
 .emotion-38:disabled {
   cursor: not-allowed;
-}
-
-.emotion-35 {
-  display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
 .emotion-48 {
@@ -5257,7 +5209,7 @@ exports[`Live AudioPlayer render default player 1`] = `
                     wrap="nowrap"
                   >
                     <svg
-                      class="emotion-35"
+                      class="emotion-30"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -5626,7 +5578,15 @@ exports[`Live AudioPlayer render live player 1`] = `
   background-color: #f0f0f0;
 }
 
-.emotion-35 {
+.emotion-30 {
+  display: inline-block;
+  fill: #0A68C1;
+  color: #0A68C1;
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-33 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -5655,7 +5615,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
 }
 
 .emotion-35 svg {
@@ -5689,15 +5649,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   cursor: not-allowed;
 }
 
-.emotion-32 {
-  display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-41 {
+.emotion-39 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6453,7 +6405,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
   border: none;
 }
 
@@ -6525,7 +6477,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
 }
 
 .emotion-41 svg {
@@ -6559,15 +6511,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   cursor: not-allowed;
 }
 
-.emotion-38 {
-  display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-56 {
+.emotion-54 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6999,7 +6943,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
                     wrap="nowrap"
                   >
                     <svg
-                      class="emotion-38"
+                      class="emotion-33"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -7446,7 +7390,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
   border: none;
 }
 
@@ -7518,7 +7462,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
 }
 
 .emotion-42 svg {
@@ -7550,14 +7494,6 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 
 .emotion-42:disabled {
   cursor: not-allowed;
-}
-
-.emotion-39 {
-  display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
 .emotion-52 {
@@ -7942,7 +7878,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
                     wrap="nowrap"
                   >
                     <svg
-                      class="emotion-39"
+                      class="emotion-34"
                       viewBox="0 0 24 24"
                     >
                       <title>
