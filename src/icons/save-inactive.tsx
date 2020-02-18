@@ -1,10 +1,10 @@
 import React from 'react';
 import {withTheme} from '../themes/emotion';
-import {Svg, SvgLabels} from './svg';
-import {IconSizeKeys, ColorKeys} from '../themes';
+import {Svg} from './svg';
+import {SvgLabels, SvgBase} from './types';
+import {ColorKeys} from '../themes';
 
-export interface SaveInactiveIconProps extends SvgLabels {
-  $size: IconSizeKeys;
+export interface SaveInactiveIconProps extends SvgLabels, SvgBase {
   $color?: ColorKeys;
 }
 

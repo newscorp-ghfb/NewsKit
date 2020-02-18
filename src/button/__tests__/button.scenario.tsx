@@ -1,13 +1,13 @@
 import * as React from 'react';
 
-import {Button} from '..';
+import {Button, IconButton} from '..';
 import {styled} from '../../utils/style';
-import {ButtonSize, IconPlacement} from '../types';
+import {ButtonSize} from '../types';
 import {Pause, Email, CopyLink} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
-import {newskitLightTheme} from '../../themes';
+import {newskitLightTheme, IconSizeKeys} from '../../themes';
 
 export const name = 'button';
 
@@ -103,16 +103,6 @@ export const component = () => (
       })}
     </Grid>
 
-    <h1>Icon Buttons</h1>
-    <h2>Size</h2>
-    <Container>
-      <Stack flow="horizontal-center" space="sizing070" wrap="wrap">
-        <Button icon={Pause} $size={ButtonSize.Small} />
-        <Button icon={Pause} $size={ButtonSize.Medium} />
-        <Button icon={Pause} $size={ButtonSize.Large} />
-      </Stack>
-    </Container>
-
     <h2>Icon with text</h2>
     <Container>
       {[Pause, Email, CopyLink].map(IconType => (
@@ -123,7 +113,8 @@ export const component = () => (
               {buttonSize: ButtonSize.Medium, iconSize: 'iconSize020'},
               {buttonSize: ButtonSize.Large, iconSize: 'iconSize020'},
             ].map(button => (
-              <Button $size={button.buttonSize} icon={IconType}>
+              <Button $size={button.buttonSize}>
+                <IconType $size={button.iconSize as IconSizeKeys} />
                 Button
               </Button>
             ))}
@@ -142,17 +133,30 @@ export const component = () => (
               {buttonSize: ButtonSize.Medium, iconSize: 'iconSize020'},
               {buttonSize: ButtonSize.Large, iconSize: 'iconSize020'},
             ].map(button => (
-              <Button
-                $size={button.buttonSize}
-                icon={IconType}
-                iconPlacement={IconPlacement.End}
-              >
+              <Button $size={button.buttonSize}>
                 Button
+                <IconType $size={button.iconSize as IconSizeKeys} />
               </Button>
             ))}
           </Stack>
         </Spacer>
       ))}
+    </Container>
+
+    <h1>Icon Buttons</h1>
+    <h2>Size</h2>
+    <Container>
+      <Stack flow="horizontal-center" space="sizing070" wrap="wrap">
+        <IconButton $size={ButtonSize.Small}>
+          <Email $size="iconSize050" $color="amber100" />
+        </IconButton>
+        <IconButton $size={ButtonSize.Medium}>
+          <Email $size="iconSize050" $color="amber100" />
+        </IconButton>
+        <IconButton $size={ButtonSize.Large}>
+          <Email $size="iconSize050" $color="amber100" />
+        </IconButton>
+      </Stack>
     </Container>
 
     <h2>States</h2>
@@ -176,15 +180,21 @@ export const component = () => (
             >
               <h3>{style}</h3>
               <Block theme={newskitLightTheme} data-state="Default">
-                <Button icon={Pause} $stylePreset={stylePreset} />
+                <IconButton $stylePreset={stylePreset}>
+                  <Pause $size="iconSize050" $color="amber100" />
+                </IconButton>
               </Block>
 
               <Block theme={newskitLightTheme} data-state="Focused">
-                <Button icon={CopyLink} autoFocus $stylePreset={stylePreset} />
+                <IconButton autoFocus $stylePreset={stylePreset}>
+                  <CopyLink $size="iconSize050" $color="amber100" />
+                </IconButton>
               </Block>
 
               <Block theme={newskitLightTheme} data-state="Disabled">
-                <Button icon={Email} disabled $stylePreset={stylePreset} />
+                <IconButton disabled $stylePreset={stylePreset}>
+                  <Email $size="iconSize050" $color="amber100" />
+                </IconButton>
               </Block>
             </Stack>
           </Cell>

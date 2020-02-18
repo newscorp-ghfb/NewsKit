@@ -1,10 +1,10 @@
 import React from 'react';
-import {Svg, SvgLabels} from './svg';
-import {ColorKeys, IconSizeKeys} from '../themes';
+import {Svg} from './svg';
+import {SvgLabels, SvgBase} from './types';
+import {ColorKeys} from '../themes';
 import {withTheme} from '../themes/emotion';
 
-export interface PlayProps extends SvgLabels {
-  $size: IconSizeKeys;
+export interface PlayProps extends SvgLabels, SvgBase {
   $color?: ColorKeys;
 }
 

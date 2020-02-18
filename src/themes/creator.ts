@@ -30,10 +30,10 @@ import {
 } from './mappers/spacing';
 
 type ColourableIcon = React.ComponentType<{
-  $size: IconSizeKeys;
+  $size?: IconSizeKeys;
   $color?: ColorKeys;
 }>;
-type NonColourableIcon = React.ComponentType<{$size: IconSizeKeys}>;
+type NonColourableIcon = React.ComponentType<{$size?: IconSizeKeys}>;
 
 export interface Icons {
   // Not sure how to solve this.

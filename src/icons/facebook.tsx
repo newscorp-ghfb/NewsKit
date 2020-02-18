@@ -1,11 +1,9 @@
 import React from 'react';
 import {withTheme} from '../themes/emotion';
-import {Svg, SvgLabels} from './svg';
-import {IconSizeKeys} from '../themes/newskit-light/spacing';
+import {Svg} from './svg';
+import {SvgLabels, SvgBase} from './types';
 
-export interface FacebookIconProps extends SvgLabels {
-  $size: IconSizeKeys;
-}
+export type FacebookIconProps = SvgLabels & SvgBase;
 
 const defaultIcon: React.FC<FacebookIconProps> = ({
   $size,

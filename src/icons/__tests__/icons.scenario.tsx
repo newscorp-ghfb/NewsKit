@@ -1,14 +1,20 @@
 import * as React from 'react';
 
 import * as icons from '..';
-import {SizingKeys, ColorKeys} from '../../themes';
+import {ColorKeys} from '../../themes';
+import {SvgBase} from '../types';
+import {styled} from '../../utils/style';
 
-interface IconProps {
-  $size: SizingKeys;
+interface IconProps extends SvgBase {
   $color?: ColorKeys;
 }
 
 export const name = 'icons';
+
+const Constrain = styled.div`
+  max-width: 200px;
+  display: inline-block;
+`;
 
 export const component = () => (
   <React.Fragment>
@@ -24,22 +30,28 @@ export const component = () => (
         if (['Facebook', 'Twitter', 'WhatsApp', 'GitHub'].includes(iconName)) {
           return (
             <div>
-              <Icon $size="sizing070" />
-              <Icon $size="sizing080" />
-              <Icon $size="sizing090" />
+              <Icon $size="iconSize030" />
+              <Icon $size="iconSize040" />
+              <Icon $size="iconSize050" />
+              <Constrain>
+                <Icon />
+              </Constrain>
             </div>
           );
         }
 
         return (
           <div>
-            <Icon $size="sizing070" />
-            <Icon $size="sizing080" />
-            <Icon $size="sizing090" />
-            <Icon $color="semanticNegative010" $size="sizing090" />
-            <Icon $color="semanticPositive010" $size="sizing090" />
-            <Icon $color="semanticNotice010" $size="sizing090" />
-            <Icon $color="semanticInformative010" $size="sizing090" />
+            <Icon $size="iconSize030" />
+            <Icon $size="iconSize040" />
+            <Icon $size="iconSize050" />
+            <Icon $color="semanticNegative010" $size="iconSize050" />
+            <Icon $color="semanticPositive010" $size="iconSize050" />
+            <Icon $color="semanticNotice010" $size="iconSize050" />
+            <Icon $color="semanticInformative010" $size="iconSize050" />
+            <Constrain>
+              <Icon />
+            </Constrain>
           </div>
         );
       })}

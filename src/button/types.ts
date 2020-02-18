@@ -1,12 +1,15 @@
 import {ColorKeys} from '../themes';
 import {SvgProps} from '../icons';
 
+export type GenericIcon = React.ComponentType<
+  Pick<SvgProps, '$size' | '$color'>
+>;
 export interface ButtonProps {
   $size?: ButtonSize;
-  icon?: React.ComponentType<Pick<SvgProps, '$size' | '$color'>>;
+  icon?: GenericIcon;
   $iconColor?: ColorKeys;
   $stylePreset?: string;
-  iconPlacement?: IconPlacement;
+  equalSides?: boolean;
 }
 
 export enum ButtonSize {

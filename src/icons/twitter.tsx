@@ -1,9 +1,10 @@
 import React from 'react';
 import {withTheme} from '../themes/emotion';
-import {Svg, SvgLabels} from './svg';
+import {Svg} from './svg';
+import {SvgLabels, SvgBase} from './types';
 import {IconSizeKeys} from '../themes/newskit-light/spacing';
 
-export interface TwitterIconProps extends SvgLabels {
+export interface TwitterIconProps extends SvgLabels, SvgBase {
   $size: IconSizeKeys;
 }
 

@@ -1,11 +1,11 @@
 import React from 'react';
 import {withTheme} from '../themes/emotion';
-import {Svg, SvgLabels} from './svg';
-import {IconSizeKeys, ColorKeys} from '../themes';
+import {Svg} from './svg';
+import {SvgLabels, SvgBase} from './types';
+import {ColorKeys} from '../themes';
 import {ThemeProp} from '../utils/style';
 
-export interface PlaceholderIconProps extends SvgLabels {
-  $size: IconSizeKeys;
+export interface PlaceholderIconProps extends SvgLabels, SvgBase {
   $color?: ColorKeys;
 }
 

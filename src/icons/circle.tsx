@@ -1,10 +1,10 @@
 import React from 'react';
-import {Svg, SvgLabels} from './svg';
-import {IconSizeKeys, ColorKeys} from '../themes';
+import {Svg} from './svg';
+import {SvgLabels, SvgBase} from './types';
+import {ColorKeys} from '../themes';
 import {withTheme} from '../themes/emotion';
 
-export interface CircleProps extends SvgLabels {
-  $size: IconSizeKeys;
+export interface CircleProps extends SvgLabels, SvgBase {
   $color?: ColorKeys;
 }
 

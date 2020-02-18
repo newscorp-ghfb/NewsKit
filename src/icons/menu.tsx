@@ -1,9 +1,9 @@
 import React from 'react';
-import {IconSizeKeys, ColorKeys, withTheme} from '../themes';
-import {Svg, SvgLabels} from './svg';
+import {ColorKeys, withTheme} from '../themes';
+import {Svg} from './svg';
+import {SvgLabels, SvgBase} from './types';
 
-export interface MenuIconProps extends SvgLabels {
-  $size: IconSizeKeys;
+export interface MenuIconProps extends SvgLabels, SvgBase {
   $color?: ColorKeys;
 }
 

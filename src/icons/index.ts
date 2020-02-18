@@ -24,4 +24,5 @@ export * from './replay10';
 export * from './skip-next';
 export * from './skip-previous';
 export * from './popout';
+export * from './types';
 export type IconComponent = React.ComponentType;
