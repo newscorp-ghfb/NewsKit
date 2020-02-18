@@ -8,20 +8,16 @@ export interface SkipButtonProps {
   disabled?: boolean;
 }
 
-const SkipNextIcon = () => <SkipNext $size="iconSize020" $color="buttonFill" />;
-const SkipPreviousIcon = () => (
-  <SkipPrevious $size="iconSize020" $color="buttonFill" />
-);
-
 export const SkipNextButton: React.FC<SkipButtonProps> = React.memo(
   ({onClick, disabled = false}) => (
     <StyledButton
       data-testid="audio-player-skip-next"
       onClick={onClick}
       disabled={disabled}
-      icon={SkipNextIcon}
       $size={ButtonSize.Large}
-    />
+    >
+      <SkipNext />
+    </StyledButton>
   ),
 );
 
@@ -31,8 +27,9 @@ export const SkipPreviousButton: React.FC<SkipButtonProps> = React.memo(
       data-testid="audio-player-skip-previous"
       onClick={onClick}
       disabled={disabled}
-      icon={SkipPreviousIcon}
       $size={ButtonSize.Large}
-    />
+    >
+      <SkipPrevious />
+    </StyledButton>
   ),
 );

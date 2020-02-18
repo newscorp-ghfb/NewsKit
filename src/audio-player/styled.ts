@@ -1,4 +1,4 @@
-import {Button} from '../button';
+import {IconButton} from '../button/iconButton';
 import {
   styled,
   getColorFromTheme,
@@ -58,7 +58,7 @@ export const ProgrammeTags = styled(Label)`
   font-size: ${getFontsFromTheme('fontSize020')};
 `;
 
-export const StyledButton = styled(Button)`
+export const StyledButton = styled(IconButton)`
   border: none;
 `;
 
