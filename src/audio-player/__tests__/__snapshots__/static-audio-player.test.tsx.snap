@@ -401,6 +401,10 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   border: none;
 }
 
+.emotion-35:disabled {
+  cursor: not-allowed;
+}
+
 .emotion-35 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
@@ -426,10 +430,6 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 .emotion-35:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
-}
-
-.emotion-35:disabled {
-  cursor: not-allowed;
 }
 
 .emotion-32 {
@@ -494,6 +494,10 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   padding: 16px 16px;
 }
 
+.emotion-45:disabled {
+  cursor: not-allowed;
+}
+
 .emotion-45 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
@@ -519,10 +523,6 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 .emotion-45:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
-}
-
-.emotion-45:disabled {
-  cursor: not-allowed;
 }
 
 .emotion-59 {
@@ -1364,6 +1364,10 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   border: none;
 }
 
+.emotion-35:disabled {
+  cursor: not-allowed;
+}
+
 .emotion-35 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
@@ -1389,10 +1393,6 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 .emotion-35:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
-}
-
-.emotion-35:disabled {
-  cursor: not-allowed;
 }
 
 .emotion-32 {
@@ -1435,6 +1435,10 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   padding: 16px 16px;
 }
 
+.emotion-45:disabled {
+  cursor: not-allowed;
+}
+
 .emotion-45 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
@@ -1460,10 +1464,6 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 .emotion-45:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
-}
-
-.emotion-45:disabled {
-  cursor: not-allowed;
 }
 
 .emotion-59 {
@@ -2311,6 +2311,10 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   border: none;
 }
 
+.emotion-36:disabled {
+  cursor: not-allowed;
+}
+
 .emotion-36 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
@@ -2336,10 +2340,6 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 .emotion-36:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
-}
-
-.emotion-36:disabled {
-  cursor: not-allowed;
 }
 
 .emotion-33 {
@@ -2404,6 +2404,10 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   padding: 16px 16px;
 }
 
+.emotion-41:disabled {
+  cursor: not-allowed;
+}
+
 .emotion-41 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
@@ -2429,10 +2433,6 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 .emotion-41:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
-}
-
-.emotion-41:disabled {
-  cursor: not-allowed;
 }
 
 .emotion-51 {
@@ -3210,6 +3210,10 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   border: none;
 }
 
+.emotion-36:disabled {
+  cursor: not-allowed;
+}
+
 .emotion-36 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
@@ -3235,10 +3239,6 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 .emotion-36:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
-}
-
-.emotion-36:disabled {
-  cursor: not-allowed;
 }
 
 .emotion-33 {
@@ -3303,6 +3303,10 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   padding: 16px 16px;
 }
 
+.emotion-41:disabled {
+  cursor: not-allowed;
+}
+
 .emotion-41 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
@@ -3328,10 +3332,6 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 .emotion-41:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
-}
-
-.emotion-41:disabled {
-  cursor: not-allowed;
 }
 
 .emotion-51 {

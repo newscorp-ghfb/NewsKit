@@ -1,7 +1,8 @@
+import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {Button} from '..';
+import {Button, IconButton} from '..';
 import {ButtonSize, IconPlacement} from '../types';
-import {Email} from '../../icons';
+import {Email} from '../../icons/email';
 import {ColorKeys} from '../../themes/mappers/colors';
 
 describe('Button', () => {
@@ -46,9 +47,9 @@ describe('Button', () => {
   test('renders Icon Button', () => {
     const props = {
       $size: ButtonSize.Large,
-      icon: Email,
+      children: [<Email />],
     };
-    const fragment = renderToFragmentWithTheme(Button, props);
+    const fragment = renderToFragmentWithTheme(IconButton, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -64,11 +65,10 @@ describe('Button', () => {
   test('renders when there is an icon with a colour', () => {
     const props = {
       $size: ButtonSize.Small,
-      icon: Email,
       $iconColor: 'buttonText' as ColorKeys,
-      children: 'click this!',
+      children: [<Email />, 'click this!'],
     };
-    const fragment = renderToFragmentWithTheme(Button, props);
+    const fragment = renderToFragmentWithTheme(IconButton, props);
     expect(fragment).toMatchSnapshot();
   });
 
@@ -77,7 +77,7 @@ describe('Button', () => {
       $size: ButtonSize.Small,
       icon: Email,
       iconPlacement: IconPlacement.Start,
-      children: 'click this!',
+      children: [<Email />, 'click this!'],
     };
     const fragment = renderToFragmentWithTheme(Button, props);
     expect(fragment).toMatchSnapshot();
@@ -88,7 +88,7 @@ describe('Button', () => {
       $size: ButtonSize.Small,
       icon: Email,
       iconPlacement: IconPlacement.End,
-      children: 'click this!',
+      children: [<Email />, 'click this!'],
     };
     const fragment = renderToFragmentWithTheme(Button, props);
     expect(fragment).toMatchSnapshot();

@@ -91,6 +91,10 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   margin: 8px 0;
 }
 
+.emotion-4:disabled {
+  cursor: not-allowed;
+}
+
 .emotion-4 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
@@ -125,10 +129,6 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   top: -8px;
   width: 100%;
   height: 48px;
-}
-
-.emotion-4::before:disabled {
-  cursor: not-allowed;
 }
 
 .emotion-3 {

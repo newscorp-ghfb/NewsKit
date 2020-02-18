@@ -1,5 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Svg renders a menu icon with no size 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: inline-block;
+  fill: #158acf;
+  color: #158acf;
+  width: 100%;
+  height: auto;
+}
+
+<svg
+    class="emotion-0"
+    viewBox="1 2 3 4"
+  />
+</DocumentFragment>
+`;
+
 exports[`Svg renders a menu icon with specified size and color 1`] = `
 <DocumentFragment>
   .emotion-0 {

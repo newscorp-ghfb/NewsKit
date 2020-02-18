@@ -37,4 +37,19 @@ describe('Svg', () => {
     );
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders a menu icon with no size', () => {
+    const theme = {
+      colors: {
+        white: '#158acf',
+      },
+      sizing: {
+        sizing010: 1,
+      },
+    };
+    const fragment = renderToFragment(
+      <Svg theme={theme as any} viewBox="1 2 3 4" $color="white" />,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
 });

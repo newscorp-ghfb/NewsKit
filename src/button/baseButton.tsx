@@ -7,27 +7,13 @@ import {
 } from '../utils/style';
 import {ButtonProps, ButtonSize} from './types';
 import {getStylePresetFromTheme} from '../utils/style-preset';
-import {SizingKeys, TypePresetKeys, Theme} from '../themes';
+import {SizingKeys, TypePresetKeys} from '../themes';
 import {PaddingPresetKeys} from '../themes/mappers/spacing';
 import {Stack} from '../stack/stack';
 import {Flow, StackDistribution} from '../stack/types';
 import * as iconList from '../icons';
 import {SvgProps} from '../icons/types';
 
-const buttonStylePresetDefault = 'interactive010';
-const spacing: SizingKeys = 'sizing020';
-const getButtonStylePreset = (
-  props: ButtonProps & {theme: Theme},
-  {
-    borderRadiusSize,
-    withIconColor,
-  }: {borderRadiusSize: SizingKeys; withIconColor?: boolean},
-) =>
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  getStylePresetFromTheme(buttonStylePresetDefault, '$stylePreset' as any, {
-    borderRadiusSize,
-    omitStyles: withIconColor ? [] : ['iconColor'],
-  })(props);
 const buttonSizeStyleTokens: Record<
   ButtonSize,
   {
@@ -72,7 +58,12 @@ const ButtonElement = styled.button<ButtonProps>`
   transition-duration: ${getAnimationFromTheme('animationDuration020')};
   transition-timing-function: ${getAnimationFromTheme('animationEaseOut')};
   cursor: pointer;
-  ${({$size = ButtonSize.Small, theme, $stylePreset, equalSides}) => {
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  ${({$size = ButtonSize.Small, theme, equalSides}) => {
     const {
       minHeight,
       borderRadiusSize,
@@ -81,34 +72,33 @@ const ButtonElement = styled.button<ButtonProps>`
       paddingY,
     } = buttonSizeStyleTokens[$size];
     const commonStyles = css`
-        ${getButtonStylePreset(
-          {$stylePreset, theme},
-          {borderRadiusSize, withIconColor: true},
-        )}
+        ${getStylePresetFromTheme(
+          'interactive010',
+          '$stylePreset' as any /* eslint-disable-line @typescript-eslint/no-explicit-any */,
+          {
+            borderRadiusSize,
+          },
+        )({theme})}
         min-height: ${theme.sizing[minHeight]};
         ${getTypePresetFromTheme(typePreset)({theme})}
         padding: ${theme.sizing[paddingX]} ${
       theme.sizing[equalSides ? paddingX : paddingY]
     };
         
-        ${$size === ButtonSize.Small &&
-          css`
-        /* Extend touchpoint area */
-        margin: ${theme.sizing.sizing020} 0;
-        ::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: -${theme.sizing.sizing020};
-        width: 100%;
-        height: ${theme.sizing.sizing080};
-        `}
-        `;
+    ${$size === ButtonSize.Small &&
+      css`
+      /* Extend touchpoint area */
+      margin: ${theme.sizing.sizing020} 0;
+      ::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -${theme.sizing.sizing020};
+      width: 100%;
+      height: ${theme.sizing.sizing080};
+    `}`;
     return commonStyles;
   }}
-  :disabled {
-    cursor: not-allowed;
-  }
 `;
 
 export const BaseButton: React.FC<
@@ -146,7 +136,7 @@ export const BaseButton: React.FC<
     React.Children.toArray(renderChildren)
       .map(child => isIcon(child as React.ReactElement))
       .find(isIconBoolean => isIconBoolean)
-      ? spacing
+      ? 'sizing020'
       : undefined;
 
   return (
@@ -155,7 +145,6 @@ export const BaseButton: React.FC<
       $size={$size}
       equalSides={equalSides}
       {...restOfProps}
-      icon={Icon}
     >
       <Stack
         flow={Flow.HorizontalCenter}
