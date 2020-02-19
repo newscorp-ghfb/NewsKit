@@ -98,6 +98,7 @@ export const createStylePresets = ({
     disabled: {
       backgroundColor: colorPrimitives.neutral020,
       color: colorPrimitives.inkNonEssential,
+      iconColor: colorPrimitives.inkNonEssential,
     },
   } as StylePresetStates,
   interactive020: {
@@ -118,6 +119,9 @@ export const createStylePresets = ({
     },
     disabled: {
       backgroundColor: colorPrimitives.neutral020,
+      borderColor: colorPrimitives.inkNonEssential,
+      iconColor: colorPrimitives.inkNonEssential,
+      color: colorPrimitives.inkNonEssential,
     },
   } as StylePresetStates,
   interactive030: {
@@ -127,6 +131,9 @@ export const createStylePresets = ({
     },
     disabled: {
       backgroundColor: colorPrimitives.neutral020,
+      borderColor: colorPrimitives.inkNonEssential,
+      iconColor: colorPrimitives.inkNonEssential,
+      color: colorPrimitives.inkNonEssential,
     },
   } as StylePresetStates,
   interactive040: {
@@ -136,6 +143,9 @@ export const createStylePresets = ({
     },
     disabled: {
       backgroundColor: colorPrimitives.neutral020,
+      borderColor: colorPrimitives.inkNonEssential,
+      iconColor: colorPrimitives.inkNonEssential,
+      color: colorPrimitives.inkNonEssential,
     },
   } as StylePresetStates,
   maskPointed010: {

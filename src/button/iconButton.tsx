@@ -1,11 +1,11 @@
 import React from 'react';
 import {ButtonProps} from './types';
-import {BaseButton} from './baseButton';
+import {Button} from './button';
 
 export const IconButton: React.FC<
   React.ButtonHTMLAttributes<HTMLButtonElement> & ButtonProps
 > = ({children, equalSides, ...restOfProps}) => (
-  <BaseButton equalSides {...restOfProps}>
+  <Button equalSides {...restOfProps}>
     {children}
-  </BaseButton>
+  </Button>
 );

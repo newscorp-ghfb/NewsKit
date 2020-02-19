@@ -3,8 +3,16 @@ import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
+import {Selector} from '../../components/playground/selector';
 
-import {Button, ButtonSize, Email, Pause, IconPlacement} from 'newskit';
+import {
+  Button,
+  IconButton,
+  ButtonSize,
+  Email,
+  Pause,
+  IconPlacement,
+} from 'newskit';
 
 export default Layout;
 
@@ -50,9 +58,16 @@ Custom props are detailed below:
 ## Playground
 
 <Playground
-  componentName="Button"
+  componentName={['Button', 'IconButton']}
   newskitPath="/button"
-  component={Button}
+  component={[
+    Button,
+    state => (
+      <IconButton {...state}>
+        <Email />
+      </IconButton>
+    ),
+  ]}
   knobs={[
     {
       name: 'Content',
