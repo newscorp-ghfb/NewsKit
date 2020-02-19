@@ -75,7 +75,7 @@ const ButtonElement = styled.button<ButtonProps>`
     const commonStyles = css`
         ${getStylePresetFromTheme<
           Pick<ButtonProps, '$stylePreset'> & ThemeProp
-        >('interactive010', '$stylePreset', {
+        >('buttonSolidPrimary', '$stylePreset', {
           borderRadiusSize,
         })({
           theme,

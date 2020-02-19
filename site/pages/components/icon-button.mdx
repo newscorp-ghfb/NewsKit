@@ -5,14 +5,7 @@ import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Selector} from '../../components/playground/selector';
 
-import {
-  Button,
-  IconButton,
-  ButtonSize,
-  Email,
-  Pause,
-  IconPlacement,
-} from 'newskit';
+import {IconButton, ButtonSize, Email, Pause, IconPlacement} from 'newskit';
 
 export default Layout;
 
@@ -51,16 +44,15 @@ Custom props are detailed below:
 ## Playground
 
 <Playground
-  componentName={['Button', 'IconButton']}
+  componentName={'IconButton'}
   newskitPath="/button"
-  component={[
-    Button,
+  component={
     state => (
       <IconButton {...state}>
         <Email />
       </IconButton>
     ),
-  ]}
+  }
   knobs={[
     {
       name: 'Content',
@@ -91,17 +83,17 @@ Custom props are detailed below:
       propName: '$stylePreset',
       options: [
         {
-          label: 'buttonSolidPrimary',
-          value: 'buttonSolidPrimary',
+          label: 'iconButtonSolidPrimary',
+          value: 'iconButtonSolidPrimary',
           isDefault: true,
         },
         {
-          label: 'buttonOutlinedPrimary',
-          value: 'buttonOutlinedPrimary',
+          label: 'iconButtonOutlinedPrimary',
+          value: 'iconButtonOutlinedPrimary',
         },
         {
-          label: 'buttonMinimalPrimary',
-          value: 'buttonMinimalPrimary',
+          label: 'iconButtonMinimalPrimary',
+          value: 'iconButtonMinimalPrimary',
         },
       ],
     },
