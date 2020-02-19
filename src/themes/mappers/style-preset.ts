@@ -55,8 +55,8 @@ export const createStylePresets = ({
   borderPrimitives,
   borderRadiusPrimitives,
   overlayPrimitives,
-}: CreateStylePreset) => ({
-  interactive010: {
+}: CreateStylePreset) => {
+  const interactive010: StylePresetStates = {
     base: {
       backgroundColor: colorPrimitives.brand010,
       color: colorPrimitives.inkInverse,
@@ -77,9 +77,10 @@ export const createStylePresets = ({
       color: colorPrimitives.inkNonEssential,
       iconColor: colorPrimitives.inkNonEssential,
     },
-  } as StylePresetStates,
-  interactive010Inverse: {
+  };
+  const interactive010Inverse: StylePresetStates = {
     base: {
+      backgroundColor: colorPrimitives.white,
       color: colorPrimitives.inkBrand,
       borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
       iconColor: colorPrimitives.inkBrand,
@@ -97,11 +98,10 @@ export const createStylePresets = ({
     },
     disabled: {
       backgroundColor: colorPrimitives.neutral020,
-      color: colorPrimitives.inkNonEssential,
       iconColor: colorPrimitives.inkNonEssential,
     },
-  } as StylePresetStates,
-  interactive020: {
+  };
+  const interactive020: StylePresetStates = {
     base: {
       backgroundColor: colorPrimitives.white,
       borderStyle: 'solid',
@@ -123,8 +123,8 @@ export const createStylePresets = ({
       iconColor: colorPrimitives.inkNonEssential,
       color: colorPrimitives.inkNonEssential,
     },
-  } as StylePresetStates,
-  interactive030: {
+  };
+  const interactive030: StylePresetStates = {
     base: {
       backgroundColor: colorPrimitives.neutral040,
       borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
@@ -135,8 +135,8 @@ export const createStylePresets = ({
       iconColor: colorPrimitives.inkNonEssential,
       color: colorPrimitives.inkNonEssential,
     },
-  } as StylePresetStates,
-  interactive040: {
+  };
+  const interactive040: StylePresetStates = {
     base: {
       backgroundColor: colorPrimitives.neutral030,
       borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
@@ -147,42 +147,8 @@ export const createStylePresets = ({
       iconColor: colorPrimitives.inkNonEssential,
       color: colorPrimitives.inkNonEssential,
     },
-  } as StylePresetStates,
-  maskPointed010: {
-    base: {
-      backgroundColor: colorPrimitives.skeleton010,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
-      iconColor: colorPrimitives.inkNonEssential,
-    },
-    loading: {
-      backgroundColor: colorPrimitives.skeleton010,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
-      iconColor: colorPrimitives.inkNonEssential,
-    },
-  } as StylePresetStates,
-  maskSemiRounded010: {
-    base: {
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
-      iconColor: colorPrimitives.inkNonEssential,
-    },
-    loading: {
-      backgroundColor: colorPrimitives.skeleton020,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
-      iconColor: colorPrimitives.inkNonEssential,
-    },
-  } as StylePresetStates,
-  maskRound010: {
-    base: {
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
-      iconColor: colorPrimitives.inkNonEssential,
-    },
-    loading: {
-      backgroundColor: colorPrimitives.skeleton010,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
-      iconColor: colorPrimitives.inkNonEssential,
-    },
-  } as StylePresetStates,
-  interactive050: {
+  };
+  const interactive050: StylePresetStates = {
     base: {
       borderStyle: 'solid',
       borderColor: colorPrimitives.blue020,
@@ -203,8 +169,8 @@ export const createStylePresets = ({
       color: colorPrimitives.inkNonEssential,
       iconColor: colorPrimitives.inkNonEssential,
     },
-  } as StylePresetStates,
-  interactive060: {
+  };
+  const interactive060: StylePresetStates = {
     base: {
       color: colorPrimitives.inkBrand,
       borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
@@ -223,8 +189,8 @@ export const createStylePresets = ({
       color: colorPrimitives.inkNonEssential,
       iconColor: colorPrimitives.inkNonEssential,
     },
-  } as StylePresetStates,
-  interactive070: {
+  };
+  const interactive070: StylePresetStates = {
     base: {
       borderStyle: 'solid',
       borderWidth: borderPrimitives.borderWidth010,
@@ -246,76 +212,125 @@ export const createStylePresets = ({
       backgroundColor: colorPrimitives.disabled,
       color: colorPrimitives.inkNonEssential,
     },
-  } as StylePresetStates,
-  audioPlayerTrack: {
+  };
+
+  //
+  // Audio Player
+  //
+
+  const audioPlayerThumb = interactive020;
+  const audioPlayerTrack = {
     base: {
       backgroundColor: colorPrimitives.neutral030,
       borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
     },
-  } as StylePresetStates,
-  audioPlayerTrackIndicator: {
+  } as StylePresetStates;
+  const audioPlayerTrackIndicator = {
     base: {
       backgroundColor: colorPrimitives.brand010,
     },
-  } as StylePresetStates,
-  audioPlayerTrackBuffering: {
+  } as StylePresetStates;
+  const audioPlayerTrackLabels = {
     base: {
-      backgroundColor: colorPrimitives.neutral040,
+      color: colorPrimitives.inkSubtle,
     },
-  } as StylePresetStates,
-  circleLoaderIndicator010: {
-    base: {
-      borderColor: colorPrimitives.brand010,
-      borderStyle: 'solid',
-      borderWidth: borderPrimitives.borderWidth020,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
-    },
-  } as StylePresetStates,
-  circleLoaderTrack010: {
-    base: {
-      borderColor: colorPrimitives.neutral020,
-      borderStyle: 'solid',
-      borderWidth: borderPrimitives.borderWidth020,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
-    },
-  } as StylePresetStates,
-  circleLoaderIndicator010Inverse: {
-    base: {
-      borderColor: colorPrimitives.white,
-      borderStyle: 'solid',
-      borderWidth: borderPrimitives.borderWidth020,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
-    },
-  } as StylePresetStates,
-  circleLoaderTrack010Inverse: {
-    base: {
-      borderColor: overlayPrimitives.overlayLight020,
-      borderStyle: 'solid',
-      borderWidth: borderPrimitives.borderWidth020,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
-    },
-  } as StylePresetStates,
-  flag010: {
-    base: {
-      backgroundColor: colorPrimitives.brand010,
-      color: colorPrimitives.inkInverse,
-      iconColor: colorPrimitives.inkInverse,
-    },
-  } as StylePresetStates,
-  flag010Inverse: {
-    base: {
-      color: colorPrimitives.inkBrand,
-      iconColor: colorPrimitives.inkBrand,
-    },
-  } as StylePresetStates,
-  flagLive010: {
-    base: {
-      backgroundColor: colorPrimitives.semanticNegative010,
-      color: colorPrimitives.inkInverse,
-      iconColor: colorPrimitives.inkInverse,
-    },
-  } as StylePresetStates,
-});
+  } as StylePresetStates;
+  const audioPlayerPresets = {
+    audioPlayerTrackIndicator,
+    audioPlayerThumb,
+    audioPlayerTrackLabels,
+    audioPlayerTrack,
+    audioPlayerTrackBuffering: {
+      base: {
+        backgroundColor: colorPrimitives.neutral040,
+      },
+    } as StylePresetStates,
+    audioPlayerVolumeTrackIndicator: audioPlayerTrackIndicator,
+    audioPlayerVolumeThumb: audioPlayerThumb,
+    audioPlayerVolumeTrackLabels: interactive010Inverse,
+    audioPlayerVolumeTrack: audioPlayerTrack,
+    audioPlayerControlButton: interactive010Inverse,
+    audioPlayerPlayButton: interactive010,
+  };
+
+  return {
+    interactive010,
+    interactive010Inverse,
+    interactive020,
+    interactive030,
+    interactive040,
+    interactive050,
+    interactive060,
+    interactive070,
+    ...audioPlayerPresets,
+    circleLoaderIndicator010: {
+      base: {
+        borderColor: colorPrimitives.brand010,
+        borderStyle: 'solid',
+        borderWidth: borderPrimitives.borderWidth020,
+        borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+      },
+    } as StylePresetStates,
+    circleLoaderTrack010: {
+      base: {
+        borderColor: colorPrimitives.neutral020,
+        borderStyle: 'solid',
+        borderWidth: borderPrimitives.borderWidth020,
+        borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+      },
+    } as StylePresetStates,
+    circleLoaderIndicator010Inverse: {
+      base: {
+        borderColor: colorPrimitives.white,
+        borderStyle: 'solid',
+        borderWidth: borderPrimitives.borderWidth020,
+        borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+      },
+    } as StylePresetStates,
+    circleLoaderTrack010Inverse: {
+      base: {
+        borderColor: overlayPrimitives.overlayLight020,
+        borderStyle: 'solid',
+        borderWidth: borderPrimitives.borderWidth020,
+        borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+      },
+    } as StylePresetStates,
+    maskPointed010: {
+      base: {
+        backgroundColor: colorPrimitives.skeleton010,
+        borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
+        iconColor: colorPrimitives.inkNonEssential,
+      },
+      loading: {
+        backgroundColor: colorPrimitives.skeleton010,
+        borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
+        iconColor: colorPrimitives.inkNonEssential,
+      },
+    } as StylePresetStates,
+    maskSemiRounded010: {
+      base: {
+        borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
+        iconColor: colorPrimitives.inkNonEssential,
+      },
+      loading: {
+        backgroundColor: colorPrimitives.skeleton020,
+        borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
+        iconColor: colorPrimitives.inkNonEssential,
+      },
+    } as StylePresetStates,
+    maskRound010: {
+      base: {
+        borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+        iconColor: colorPrimitives.inkNonEssential,
+      },
+      loading: {
+        backgroundColor: colorPrimitives.skeleton010,
+        borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+        iconColor: colorPrimitives.inkNonEssential,
+      },
+    } as StylePresetStates,
+  };
+};
 
 export type StylePresets = ReturnType<typeof createStylePresets> &
   Record<string, StylePresetStates>;

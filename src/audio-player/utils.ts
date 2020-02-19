@@ -1,3 +1,11 @@
+const hhmmss: [number, number] = [11, 8];
+const mmss: [number, number] = [14, 5];
+
+export const formatTrackTime = (time: number, maxTime: number = time) => {
+  const args = Math.max(time, maxTime) >= 3600 ? hhmmss : mmss;
+  return new Date(time * 1000).toISOString().substr(...args);
+};
+
 export const formatTrackData = (
   trackColor: string,
   indicatorColor: string,

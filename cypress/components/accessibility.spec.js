@@ -14,7 +14,7 @@ const a11yComponentRules = [
   {name: 'ordered-list'},
   {name: 'scroll', a11yRule: 'color-contrast'},
   {name: 'share-bar'},
-  {name: 'slider'},
+  {name: 'slider', a11yRule: 'color-contrast'},
   {name: 'volume-control'},
   {name: 'tag-list', a11yRule: 'color-contrast'},
   {name: 'tag', a11yRule: 'color-contrast'},

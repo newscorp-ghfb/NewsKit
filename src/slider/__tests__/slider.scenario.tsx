@@ -2,7 +2,7 @@ import React from 'react';
 
 import {StatefulSlider} from '..';
 import {styled} from '../../utils/style';
-import {ThumbLabelProps, SliderProps} from '../types';
+import {ThumbLabelProps, SliderProps, LabelPosition} from '../types';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../themes';
 import {Placeholder} from '../../icons';
@@ -48,7 +48,7 @@ const myCustomTheme = createTheme('my-custom-slider-theme', {
 
 const CustomTrack = styled.div`
   width: 100%;
-  height: 100%;
+  height: 32px;
   background-image: linear-gradient(red, yellow);
 `;
 const renderCustomTrack: SliderProps['renderTrack'] = ({props, children}) => (
@@ -105,7 +105,7 @@ class CustomMaxLabel extends React.Component {
 
 const Container = styled.div`
   border: solid 1px red;
-  margin: 24px 0;
+  margin: 48px 0;
   display: flex;
 `;
 
@@ -166,6 +166,26 @@ export const component = () => (
     </Container>
     <Container>
       <StatefulSlider
+        values={[150]}
+        max={200}
+        min={100}
+        minLabel="100"
+        maxLabel="200"
+        labelPosition={LabelPosition.Before}
+      />
+    </Container>
+    <Container>
+      <StatefulSlider
+        values={[150]}
+        max={200}
+        min={100}
+        minLabel="100"
+        maxLabel="200"
+        labelPosition={LabelPosition.After}
+      />
+    </Container>
+    <Container>
+      <StatefulSlider
         values={[40]}
         max={50}
         min={0}
@@ -210,6 +230,7 @@ export const component = () => (
           minLabel="0"
           maxLabel="100%"
           thumbLabel
+          $trackSize="sizing050"
           $trackStylePreset="customTrackStylePreset"
           $indicatorStylePreset="customIndicatorStylePreset"
           $thumbStylePreset="customThumbStylePreset"
@@ -296,6 +317,30 @@ export const component = () => (
         maxLabel={CustomMaxLabel}
         thumbLabel={CustomThumbLabel}
         vertical
+      />
+    </VerticalContainer>
+    <VerticalContainer>
+      <StatefulSlider
+        values={[50]}
+        max={100}
+        min={0}
+        minLabel="0%"
+        maxLabel="100%"
+        vertical
+        thumbLabel
+        labelPosition={LabelPosition.Before}
+      />
+    </VerticalContainer>
+    <VerticalContainer>
+      <StatefulSlider
+        values={[50]}
+        max={100}
+        min={0}
+        minLabel="0%"
+        maxLabel="100%"
+        vertical
+        thumbLabel
+        labelPosition={LabelPosition.After}
       />
     </VerticalContainer>
   </React.Fragment>

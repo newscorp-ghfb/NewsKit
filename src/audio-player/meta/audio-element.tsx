@@ -11,7 +11,8 @@ const getValueInRange = (value: number, [start, end]: [number, number]) =>
   Math.max(start, Math.min(end, value));
 
 export interface AudioHandler {
-  togglePlay: (isPlaying: boolean) => boolean;
+  play: () => void;
+  pause: () => void;
   setVolume: (newVolume: number) => number;
   setCurrentTime: (newTime: number) => number;
 }
@@ -21,14 +22,17 @@ export const useAudioHandler = (
   parentRef: Ref<AudioHandler>,
 ) => {
   useImperativeHandle(parentRef, () => ({
-    togglePlay: isPlaying => {
-      const playerNode = localRef.current!;
-      if (isPlaying) {
-        playerNode.pause();
-      } else {
+    play: () => {
+      const playerNode = localRef.current;
+      if (playerNode) {
         playerNode.play();
       }
-      return !isPlaying;
+    },
+    pause: () => {
+      const playerNode = localRef.current;
+      if (playerNode) {
+        playerNode.pause();
+      }
     },
     setCurrentTime: newTime => {
       const playerNode = localRef.current!;

@@ -154,7 +154,7 @@
     "emotion": "^10.0.14",
     "emotion-theming": "^10.0.18",
     "isomorphic-fetch": "^2.2.1",
-    "react-range": "^1.5.2"
+    "react-range": "^1.5.3"
   },
   "resolutions": {
     "react": "16.9.0"

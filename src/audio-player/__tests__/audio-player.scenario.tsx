@@ -1,101 +1,88 @@
 import * as React from 'react';
 import {AudioPlayer} from '..';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 import {styled} from '../../utils/style';
+
+const radioPlayerImage = require('./radio-player-image.png');
 
 export const name = 'audio-player';
 
-const props = {
+const liveAudioProps = {
   src: 'https://radio.talkradio.co.uk/stream',
-  imgAlt: 'test image',
-  title: 'live audio',
+  imgAlt: 'Giles Coren, Presenter',
+  title: 'The Breakfast Show with Giles Coren',
   live: true,
-  imgSrc: 'https://via.placeholder.com/150',
+  imgSrc: radioPlayerImage,
   captionSrc: 'captions.vtt',
-};
-const podcast = {
-  src:
-    'https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3',
-  imgAlt: 'test image',
-  title: 'podcast mp3',
-  live: false,
-  imgSrc: 'https://via.placeholder.com/150',
-  captionSrc: 'captions.vtt',
-};
-const longMP3 = {
-  ...podcast,
-  src:
-    'http://www.hyperion-records.co.uk/audiotest/1%20Vaet%20Videns%20Dominus.MP3',
-  title: 'a long mp3 file',
+  time: '1pm - 3pm',
+  description:
+    'Inside Inside No. 9 is a companion series to the anthology of darkly comic twisted tales.',
+  tags: ['Giles Coren', '02 February 2020'],
 };
 
-const Container = styled.div`
-  width: 800px;
-  margin: auto;
+const recordedAudioProps = {
+  src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+  imgAlt: 'Giles Coren, Presenter',
+  title: 'The Breakfast Show with Giles Coren',
+  live: false,
+  imgSrc: radioPlayerImage,
+  captionSrc: 'captions.vtt',
+  time: '1pm - 3pm',
+  description:
+    'Inside Inside No. 9 is a companion series to the anthology of darkly comic twisted tales.',
+  tags: ['Giles Coren', '02 February 2020'],
+};
+
+const PlayerContainer = styled.div`
+  border: solid 1px red;
+  max-width: 1156px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
+// eslint-disable-next-line no-alert
+const alert = (msg: string) => () => window.alert(msg);
+
 export const component = () => (
-  <Container>
-    <div>
-      <StorybookHeading>Player with required props</StorybookHeading>
-      <AudioPlayer {...props} />
-    </div>
-    <div>
-      <StorybookHeading>Player with all UI props</StorybookHeading>
+  <div>
+    <StorybookHeading>Recorded Player</StorybookHeading>
+
+    <PlayerContainer>
       <AudioPlayer
-        {...props}
-        time="1PM to 3PM"
-        description="Test description"
-        live
-        tags={['Tag 1', 'Tag 2']}
+        {...recordedAudioProps}
+        onNextTrack={alert('Next track clicked!')}
+        onPreviousTrack={alert('Previous track clicked!')}
+        popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
       />
-    </div>
-    <div>
-      <StorybookHeading>Player with live tag</StorybookHeading>
-      <AudioPlayer {...props} live />
-    </div>
-    <div>
-      <StorybookHeading>Player that auto plays</StorybookHeading>
-      <AudioPlayer {...props} autoPlay />
-    </div>
-    <div>
-      <StorybookHeading>Player with tags</StorybookHeading>
-      <AudioPlayer {...props} tags={['Tag 1', 'Tag 2']} />
-    </div>
-    <div>
-      <StorybookHeading>Player with description</StorybookHeading>
-      <AudioPlayer {...props} description="Test description" />
-    </div>
-    <div>
-      <StorybookHeading>Player with time</StorybookHeading>
-      <AudioPlayer {...props} time="1PM to 3PM" />
-    </div>
-    <div>
-      <StorybookHeading>Player with static audio</StorybookHeading>
-      <AudioPlayer {...podcast} />
-    </div>
-    <div>
-      <AudioPlayer {...longMP3} />
-    </div>
-    <div>
-      <StorybookHeading>Skippable player with static audio</StorybookHeading>
+    </PlayerContainer>
+
+    <StorybookHeading>Live Player</StorybookHeading>
+
+    <PlayerContainer>
+      <AudioPlayer {...liveAudioProps} />
+    </PlayerContainer>
+
+    <StorybookHeading>Other Player Prop Variants</StorybookHeading>
+
+    <StorybookSubHeading>Player with no skipping or popout</StorybookSubHeading>
+    <PlayerContainer>
+      <AudioPlayer {...recordedAudioProps} />
+    </PlayerContainer>
+
+    <StorybookSubHeading>
+      Disabled Skippable Player with static audio
+    </StorybookSubHeading>
+    <PlayerContainer>
       <AudioPlayer
-        {...podcast}
-        onNextTrack={() => {}}
-        onPreviousTrack={() => {}}
-      />
-    </div>
-    <div>
-      <StorybookHeading>
-        Disabled Skippable Player with static audio
-      </StorybookHeading>
-      <AudioPlayer
-        {...podcast}
+        {...recordedAudioProps}
         onNextTrack={() => {}}
         onPreviousTrack={() => {}}
         disableNextTrack
         disablePreviousTrack
       />
-    </div>
-  </Container>
+    </PlayerContainer>
+  </div>
 );

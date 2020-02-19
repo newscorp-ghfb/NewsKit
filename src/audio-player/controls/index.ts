@@ -1,4 +1,2 @@
-export * from './forward-replay';
-export * from './play-pause';
-export * from './skip-track';
-export * from './popout-player';
+export * from './control-panel';
+export * from './popout-button';

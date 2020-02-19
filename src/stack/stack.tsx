@@ -1,32 +1,49 @@
 import React from 'react';
 import {StackProps, Flow, StackDistribution, StyledStackProps} from './types';
-import {StyledMasterContainer, StyledChildContainer} from './styled';
+import {
+  StyledMasterContainer,
+  StyledChildContainer,
+  hasSpacing,
+} from './styled';
+import {useTheme} from '../themes';
 
 const wrapChild = (
   space: StyledStackProps['space'],
   flow: StyledStackProps['flow'],
   wrap: StyledStackProps['wrap'],
-) => (child: React.ReactNode) => (
-  <StyledChildContainer space={space} flow={flow} wrap={wrap}>
-    {child}
-  </StyledChildContainer>
-);
+) => (child: React.ReactNode) =>
+  child && (
+    <StyledChildContainer space={space} flow={flow} wrap={wrap}>
+      {child}
+    </StyledChildContainer>
+  );
 
 export const Stack: React.FC<StackProps> = ({
   space = 'sizing000',
   flow = Flow.VerticalLeft,
-  wrap = 'nowrap',
+  wrap = false,
   stackDistribution = StackDistribution.Start,
+  flexGrow = false,
+  flexShrink = false,
+  flowReverse = false,
   children,
-}) => (
-  <StyledMasterContainer
-    space={space}
-    flow={flow}
-    wrap={wrap}
-    stackDistribution={stackDistribution}
-  >
-    {children && space
-      ? React.Children.map(children, wrapChild(space, flow, wrap))
-      : children}
-  </StyledMasterContainer>
-);
+  ...props
+}) => {
+  const theme = useTheme();
+  return (
+    <StyledMasterContainer
+      space={space}
+      flow={flow}
+      wrap={wrap}
+      flexGrow={flexGrow}
+      flexShrink={flexShrink}
+      flowReverse={flowReverse}
+      stackDistribution={stackDistribution}
+      {...props}
+    >
+      {children && hasSpacing(theme, space)
+        ? React.Children.map(children, wrapChild(space, flow, wrap))
+        : children}
+    </StyledMasterContainer>
+  );
+};

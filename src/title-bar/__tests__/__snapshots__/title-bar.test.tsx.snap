@@ -2,7 +2,7 @@
 
 exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 <DocumentFragment>
-  .emotion-6 {
+  .emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -47,18 +47,18 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   margin: 0 0 16px 0;
 }
 
-.emotion-5 {
+.emotion-4 {
   padding-left: 24px;
   display: none;
 }
 
 @media screen and (min-width:480px) {
-  .emotion-5 {
+  .emotion-4 {
     display: block;
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -91,38 +91,24 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   margin: 8px 0;
 }
 
-.emotion-4:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-4 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-4:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-4:focus:not(:disabled) {
+.emotion-3:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-4:disabled {
+.emotion-3:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
 
-.emotion-4:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-4::before {
+.emotion-3::before {
   content: '';
   position: absolute;
   left: 0;
@@ -131,7 +117,11 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   height: 48px;
 }
 
-.emotion-3 {
+.emotion-3::before:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -141,9 +131,6 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -153,15 +140,8 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   justify-content: center;
 }
 
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 <div
-    class="emotion-6"
+    class="emotion-5"
   >
     <div
       class="emotion-1"
@@ -173,22 +153,16 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
       </h2>
     </div>
     <div
-      class="emotion-5"
+      class="emotion-4"
     >
       <button
-        class="emotion-4"
+        class="emotion-3"
         type="button"
       >
         <div
-          class="emotion-3"
-          wrap="nowrap"
+          class="emotion-2"
         >
-          <div
-            class="emotion-2"
-            wrap="nowrap"
-          >
-            Default button
-          </div>
+          Default button
         </div>
       </button>
     </div>

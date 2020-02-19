@@ -1,71 +1,18 @@
-import {IconButton} from '../button/iconButton';
-import {
-  styled,
-  getColorFromTheme,
-  getSizingFromTheme,
-  getTypePresetFromTheme,
-  getFontsFromTheme,
-} from '../utils/style';
-import {H1} from '../typography';
-import {Flag} from '../flag';
-import {Tag} from '../tag';
+import {styled} from '../utils/style';
+import {Grid} from '../grid/grid';
+import {Hidden} from '../grid';
+import {SizingKeys} from '../themes';
 
-export const PlayerContainer = styled.div`
-  width: 100%;
-  max-width: 920px;
+export const PlayerContainer = styled(Grid)`
   box-sizing: border-box;
-  overflow: hidden;
-  border-radius: ${getSizingFromTheme('sizing040')};
-  box-shadow: 0px 1px ${getSizingFromTheme('sizing010')} 0px
-    rgba(96, 97, 112, 0.5);
-  padding: ${getSizingFromTheme('sizing060')};
 `;
 
-export const ControlContainer = styled.div`
+export const ControlContainer = styled(Hidden)<{
+  $playerTrackSize: SizingKeys;
+}>`
   width: 100%;
-  min-width: ${getSizingFromTheme('sizing110')};
-`;
-
-export const LiveFlag = styled(Flag)`
-  border: none;
-  text-transform: uppercase;
-  margin-right: ${getSizingFromTheme('sizing040')};
-`;
-
-export const Label = styled.span`
-  ${getTypePresetFromTheme('meta010')};
-  color: ${getColorFromTheme('inkSubtle')};
-  font-weight: ${getFontsFromTheme('fontWeight010')};
-`;
-
-export const ProgrammeTime = styled(Label)`
-  height: ${getSizingFromTheme('sizing050')};
-  display: inline-block;
-`;
-
-export const ProgrammeTitle = styled(H1)`
-  ${getTypePresetFromTheme('heading040')};
-  margin-top: ${getSizingFromTheme('sizing040')};
-  margin-bottom: ${getSizingFromTheme('sizing020')};
-`;
-
-export const ProgrammeDescription = styled(Label)`
-  ${getTypePresetFromTheme('subhead010')};
-  margin-bottom: ${getSizingFromTheme('sizing040')};
-`;
-
-export const ProgrammeTags = styled(Label)`
-  font-size: ${getFontsFromTheme('fontSize020')};
-`;
-
-export const StyledButton = styled(IconButton)`
-  border: none;
-`;
-
-export const StyledTag = styled(Tag)`
-  border: none;
-`;
-
-export const ImageContainer = styled.div`
-  width: 208px;
+  max-width: 184px;
+  padding: 0
+    ${({theme, $playerTrackSize}) =>
+      `calc(${theme.sizing[$playerTrackSize]} / 2)`};
 `;

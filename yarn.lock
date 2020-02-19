@@ -10062,10 +10062,10 @@ react-node-resolver@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-node-resolver/-/react-node-resolver-1.0.1.tgz#1798a729c0e218bf2f0e8ddf79c550d4af61d83a"
 
-react-range@^1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/react-range/-/react-range-1.5.2.tgz#a611a90cd5c34cc16ba6573a33dca1fb15fc3b42"
-  integrity sha512-De7EvZ+ikOf4Fur9OsL1mMYsiN8yRWCYySmQep/8eeYV4bjRDNqv+vNxpiOSODF+wC2iMqwo1OUuJ9L97r6xSg==
+react-range@^1.5.3:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/react-range/-/react-range-1.5.3.tgz#8f50fb810771bbeb39051148f29979ef463d3941"
+  integrity sha512-+nTMlbFCb2D5ql3PKCALJG6kiUkP8U36nCpO0Vk9OSeYCHBKAgvxmumyEEANhUW5HT5A3zJUkF063XdQueJkfQ==
 
 react-side-effect@^1.1.0:
   version "1.2.0"

@@ -57,8 +57,18 @@ const StyledCell = styled.div<CellProps & GridProps>`
   ${generateBreakpointConfig('lg')};
 `;
 
+const filterGridOverrides = (
+  gridOverrides: GridProps & React.ComponentProps<'div'>,
+) => {
+  const overrides = {...gridOverrides};
+  delete overrides.className;
+  return overrides;
+};
+
 export const Cell: React.FC<CellProps> = ({...props}) => (
   <GridContextConsumer>
-    {gridOverrides => <StyledCell {...gridOverrides} {...props} />}
+    {gridOverrides => (
+      <StyledCell {...filterGridOverrides(gridOverrides)} {...props} />
+    )}
   </GridContextConsumer>
 );

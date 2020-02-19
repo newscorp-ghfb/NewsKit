@@ -1,22 +1,21 @@
 import React from 'react';
-import {IconButton} from '../../button/iconButton';
-import {ButtonSize} from '../../button/types';
+import {ButtonSize, Button} from '../../button';
 import {Play, Pause} from '../../icons';
 
 export interface PlayerButtonProps {
   isPlaying: boolean;
   onClick: () => void;
+  $stylePreset?: string;
 }
 
 export const PlayerButton: React.FC<PlayerButtonProps> = React.memo(
-  ({isPlaying, onClick}) => (
-    <IconButton
+  ({isPlaying, ...props}) => (
+    <Button
       data-testid="audio-player-play-button"
       aria-pressed={isPlaying}
-      onClick={onClick}
+      icon={isPlaying ? PauseIcon : PlayIcon}
       $size={ButtonSize.Large}
-    >
-      {isPlaying ? <Pause /> : <Play />}
-    </IconButton>
+      {...props}
+    />
   ),
 );

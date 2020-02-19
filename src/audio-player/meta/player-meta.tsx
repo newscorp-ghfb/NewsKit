@@ -1,6 +1,4 @@
 import React from 'react';
-import {Stack, Flow, StackDistribution} from '../../stack';
-import {Image, ImageShape} from '../../image';
 import {
   LiveFlag,
   ProgrammeTime,
@@ -8,7 +6,10 @@ import {
   ProgrammeDescription,
   ProgrammeTags,
   ImageContainer,
-} from '../styled';
+} from './styled';
+import {Grid, Cell} from '../../grid';
+import {Block} from '../../block';
+import {Image} from '../../image';
 
 export interface PlayerMetaProps {
   imgSrc: string;
@@ -22,37 +23,41 @@ export interface PlayerMetaProps {
 
 export const PlayerMeta: React.FC<PlayerMetaProps> = React.memo(
   ({imgSrc, imgAlt, time, live, title, description, tags}) => (
-    <Stack
-      flow={Flow.HorizontalCenter}
-      stackDistribution={StackDistribution.Center}
-    >
-      <ImageContainer>
-        <Image
-          src={imgSrc}
-          alt={imgAlt}
-          aspectHeight="1"
-          aspectWidth="1"
-          $stylePreset="maskRound010"
-        />
-      </ImageContainer>
-      <Stack
-        flow={Flow.VerticalCenter}
-        stackDistribution={StackDistribution.Center}
-      >
-        <div>
-          {live && <LiveFlag $stylePreset="flagLive010">Live</LiveFlag>}
-          {time && <ProgrammeTime>{time}</ProgrammeTime>}
-        </div>
-        {title && <ProgrammeTitle>{title}</ProgrammeTitle>}
+    <Grid mdColumnGutter="sizing050">
+      <Cell xs={5}>
+        <ImageContainer>
+          <Image
+            src={imgSrc}
+            alt={imgAlt}
+            aspectHeight="1"
+            aspectWidth="1"
+            $stylePreset="maskRound010"
+          />
+        </ImageContainer>
+      </Cell>
+      <Cell xs={7}>
+        {(live || time) && (
+          <Block $margin="spaceStack050">
+            {live && <LiveTag>Live</LiveTag>}
+            {time && <ProgrammeTime>{time}</ProgrammeTime>}
+          </Block>
+        )}
+        {title && (
+          <Block $margin="spaceStack040">
+            <ProgrammeTitle>{title}</ProgrammeTitle>
+          </Block>
+        )}
         {description && (
-          <ProgrammeDescription>{description}</ProgrammeDescription>
+          <Block $margin="spaceStack050">
+            <ProgrammeDescription>{description}</ProgrammeDescription>
+          </Block>
         )}
         {tags && tags.length > 0 && (
           <ProgrammeTags>
             {tags.map((tag, i) => `${tag}${i <= tags.length - 2 ? ' | ' : ''}`)}
           </ProgrammeTags>
         )}
-      </Stack>
-    </Stack>
+      </Cell>
+    </Grid>
   ),
 );

@@ -1,3 +1,3 @@
 export * from './slider';
 export * from './stateful-slider';
-export {SliderProps, ThumbLabelProps} from './types';
+export {SliderProps, ThumbLabelProps, SliderStylePresets} from './types';

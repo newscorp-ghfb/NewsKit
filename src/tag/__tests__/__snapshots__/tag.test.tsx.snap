@@ -169,8 +169,7 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
+  background-color: #FFFFFF;
   color: #0A68C1;
   border-radius: 100vw;
 }
@@ -204,6 +203,10 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
 
 .emotion-1:disabled {
   background-color: #f0f0f0;
+}
+
+.emotion-0:disabled svg {
+  fill: #9c9c9c;
   color: #9c9c9c;
 }
 

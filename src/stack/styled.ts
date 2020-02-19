@@ -6,6 +6,7 @@ import {
   StackDistribution,
   StyledStackProps,
 } from './types';
+import {SizingKeys, Theme} from '../themes';
 
 export const flowDictionary = {
   vertical: 'column',
@@ -33,16 +34,18 @@ const verticalFlows = [
   Flow.VerticalRight,
 ];
 
+export const hasSpacing = (theme: Theme, space: SizingKeys) =>
+  parseInt(theme.sizing[space], 10) !== 0;
+
 const calculateMargins = (negative?: boolean) => ({
   theme,
   space,
   wrap,
   flow,
 }: StyledChildProps & ThemeProp) => {
-  const hasSpacing = parseInt(theme.sizing[space], 10) !== 0;
   const hasWrapping = wrap === 'wrap';
 
-  if (!hasSpacing) {
+  if (!hasSpacing(theme, space)) {
     return undefined;
   }
 
@@ -70,7 +73,15 @@ const calculateMargins = (negative?: boolean) => ({
   return margins;
 };
 
-export const StyledMasterContainer = styled.div<StyledStackProps>`
+const getFlexDirection = ({flow, flowReverse}: StyledStackProps) => {
+  const flexDir = horizontalFlows.includes(flow as Flow)
+    ? flowDictionary.horizontal
+    : flowDictionary.vertical;
+  const reverse = flowReverse ? '-reverse' : '';
+  return flexDir + reverse;
+};
+
+export const StyledMasterContainer = styled('div')<StyledStackProps>`
   display: flex;
   height: ${({flow}) =>
     [
@@ -84,11 +95,10 @@ export const StyledMasterContainer = styled.div<StyledStackProps>`
       : 'auto'};
 
   align-items: ${({flow}) => alignmentDictionary[flow]};
-  flex-wrap: ${({wrap}) => wrap};
-  flex-direction: ${({flow}) =>
-    horizontalFlows.includes(flow as Flow)
-      ? flowDictionary.horizontal
-      : flowDictionary.vertical};
+  flex-wrap: ${({wrap}) => (wrap === true ? 'wrap' : wrap)};
+  flex-grow: ${({flexGrow}) => (flexGrow === true ? 1 : flexGrow)};
+  flex-shrink: ${({flexShrink}) => (flexShrink === true ? 1 : flexShrink)};
+  flex-direction: ${getFlexDirection};
 
   justify-content: ${({stackDistribution}) =>
     stackDistribution === StackDistribution.SpaceEvenly

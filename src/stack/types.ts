@@ -4,7 +4,10 @@ export type StackProps = Partial<StyledStackProps>;
 
 export interface StyledStackProps {
   space: SizingKeys;
-  wrap: 'wrap' | 'nowrap';
+  wrap: boolean | 'wrap' | 'nowrap';
+  flexGrow: boolean | number;
+  flexShrink: boolean | number;
+  flowReverse: boolean;
   flow:
     | Flow
     | 'vertical-left'
