@@ -166,6 +166,11 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   color: #9c9c9c;
 }
 
+.emotion-17:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
 .emotion-19 {
   background-color: #e4e4e4;
   border-radius: 100vw;
@@ -214,6 +219,13 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 .emotion-18:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-18:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-20 {
@@ -236,6 +248,11 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 .emotion-20:disabled {
   background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-20:disabled svg {
+  fill: #9c9c9c;
   color: #9c9c9c;
 }
 
@@ -301,6 +318,13 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 .emotion-26:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-26:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-36 {
@@ -1044,6 +1068,11 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   color: #9c9c9c;
 }
 
+.emotion-17:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
 .emotion-19 {
   background-color: #e4e4e4;
   border-radius: 100vw;
@@ -1093,6 +1122,13 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 .emotion-18:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-18:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-20 {
@@ -1115,6 +1151,11 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 .emotion-20:disabled {
   background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-20:disabled svg {
+  fill: #9c9c9c;
   color: #9c9c9c;
 }
 
@@ -1180,6 +1221,13 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 .emotion-26:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-26:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-36 {
@@ -1923,6 +1971,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   color: #9c9c9c;
 }
 
+.emotion-17:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
 .emotion-19 {
   background-color: #e4e4e4;
   border-radius: 100vw;
@@ -1972,6 +2025,13 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 
 .emotion-18:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-18:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-20 {
@@ -1994,6 +2054,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 
 .emotion-20:disabled {
   background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-20:disabled svg {
+  fill: #9c9c9c;
   color: #9c9c9c;
 }
 
@@ -2059,6 +2124,13 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 
 .emotion-26:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-26:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-36 {
@@ -2847,6 +2919,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   color: #9c9c9c;
 }
 
+.emotion-17:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
 .emotion-19 {
   background-color: #e4e4e4;
   border-radius: 100vw;
@@ -2896,6 +2973,13 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 
 .emotion-18:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-18:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-20 {
@@ -2918,6 +3002,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 
 .emotion-20:disabled {
   background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-20:disabled svg {
+  fill: #9c9c9c;
   color: #9c9c9c;
 }
 
@@ -2983,6 +3072,13 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 
 .emotion-26:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-26:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-36 {
@@ -3726,6 +3822,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   color: #9c9c9c;
 }
 
+.emotion-17:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
 .emotion-19 {
   background-color: #e4e4e4;
   border-radius: 100vw;
@@ -3775,6 +3876,13 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 
 .emotion-18:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-18:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-20 {
@@ -3797,6 +3905,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 
 .emotion-20:disabled {
   background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-20:disabled svg {
+  fill: #9c9c9c;
   color: #9c9c9c;
 }
 
@@ -3862,6 +3975,13 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 
 .emotion-26:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-26:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-36 {
@@ -4626,6 +4746,11 @@ exports[`Live AudioPlayer render default player 1`] = `
   color: #9c9c9c;
 }
 
+.emotion-14:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
 .emotion-16 {
   background-color: #e4e4e4;
   border-radius: 100vw;
@@ -4675,6 +4800,13 @@ exports[`Live AudioPlayer render default player 1`] = `
 
 .emotion-15:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-15:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-17 {
@@ -4697,6 +4829,11 @@ exports[`Live AudioPlayer render default player 1`] = `
 
 .emotion-17:disabled {
   background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-17:disabled svg {
+  fill: #9c9c9c;
   color: #9c9c9c;
 }
 
@@ -4762,6 +4899,13 @@ exports[`Live AudioPlayer render default player 1`] = `
 
 .emotion-23:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-23:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-33 {
@@ -5461,7 +5605,12 @@ exports[`Live AudioPlayer render live player 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-23 {
+.emotion-20:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-21 {
   background-color: #FFFFFF;
   border-style: solid;
   border-color: #0A68C1;
@@ -5497,6 +5646,13 @@ exports[`Live AudioPlayer render live player 1`] = `
 
 .emotion-23:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-21:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-26 {
@@ -5522,7 +5678,12 @@ exports[`Live AudioPlayer render live player 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-44 {
+.emotion-24:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-42 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5584,6 +5745,13 @@ exports[`Live AudioPlayer render live player 1`] = `
 
 .emotion-24:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-22:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-30 {
@@ -6247,6 +6415,11 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   color: #9c9c9c;
 }
 
+.emotion-17:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
 .emotion-19 {
   background-color: #e4e4e4;
   border-radius: 100vw;
@@ -6295,6 +6468,13 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
 
 .emotion-18:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-18:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-20 {
@@ -6320,7 +6500,12 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-59 {
+.emotion-20:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-57 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6382,6 +6567,13 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
 
 .emotion-26:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-26:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-36 {
@@ -7232,6 +7424,11 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   color: #9c9c9c;
 }
 
+.emotion-18:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
 .emotion-20 {
   background-color: #e4e4e4;
   border-radius: 100vw;
@@ -7280,6 +7477,13 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 
 .emotion-19:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-19:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-21 {
@@ -7302,6 +7506,11 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 
 .emotion-21:disabled {
   background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-21:disabled svg {
+  fill: #9c9c9c;
   color: #9c9c9c;
 }
 
@@ -7367,6 +7576,13 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 
 .emotion-27:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-27:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-37 {

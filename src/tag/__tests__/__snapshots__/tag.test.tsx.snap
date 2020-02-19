@@ -207,6 +207,11 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   color: #9c9c9c;
 }
 
+.emotion-0:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
 <span
     class="emotion-1"
     data-testid="tag"

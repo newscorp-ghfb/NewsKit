@@ -52,6 +52,13 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
 
 .emotion-0:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-0:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -70,6 +77,13 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
 
 .emotion-1:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-1:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div

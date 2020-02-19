@@ -39,6 +39,11 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   color: #9c9c9c;
 }
 
+.emotion-2:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
 .emotion-1 {
   border: none;
   outline: none;
@@ -74,6 +79,13 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 
 .emotion-4:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-4:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-3 {
@@ -112,6 +124,13 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 
 .emotion-3:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -134,6 +153,11 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 
 .emotion-6:disabled {
   background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-6:disabled svg {
+  fill: #9c9c9c;
   color: #9c9c9c;
 }
 
@@ -246,6 +270,11 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   color: #9c9c9c;
 }
 
+.emotion-2:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
 .emotion-1 {
   border: none;
   outline: none;
@@ -281,6 +310,13 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 
 .emotion-4:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-4:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-3 {
@@ -319,6 +355,13 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 
 .emotion-3:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -341,6 +384,11 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 
 .emotion-6:disabled {
   background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-6:disabled svg {
+  fill: #9c9c9c;
   color: #9c9c9c;
 }
 
@@ -453,6 +501,11 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   color: #9c9c9c;
 }
 
+.emotion-2:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
 .emotion-1 {
   border: none;
   outline: none;
@@ -488,6 +541,13 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 
 .emotion-4:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-4:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-3 {
@@ -526,6 +586,13 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 
 .emotion-3:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -548,6 +615,11 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 
 .emotion-6:disabled {
   background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-6:disabled svg {
+  fill: #9c9c9c;
   color: #9c9c9c;
 }
 
@@ -680,6 +752,13 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 
 .emotion-3:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-7 {
@@ -722,6 +801,11 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   color: #9c9c9c;
 }
 
+.emotion-2:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
 .emotion-4 {
   background-color: #cccccc;
   border-radius: 100vw;
@@ -736,6 +820,13 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 
 .emotion-4:disabled {
   background-color: #f0f0f0;
+  border-color: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-4:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -758,6 +849,11 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 
 .emotion-6:disabled {
   background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-6:disabled svg {
+  fill: #9c9c9c;
   color: #9c9c9c;
 }
 
