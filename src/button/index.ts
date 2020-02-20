@@ -1,3 +1,3 @@
 export * from './button';
-export * from './iconButton';
+export * from './icon-button';
 export * from './types';

@@ -1,5 +1,6 @@
 import React from 'react';
-import {ButtonSize, Button} from '../../button';
+import {IconButton} from '../../button/icon-button';
+import {ButtonSize} from '../../button/types';
 import {Play, Pause} from '../../icons';
 
 export interface PlayerButtonProps {

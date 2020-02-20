@@ -5,11 +5,11 @@ import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Selector} from '../../components/playground/selector';
 
-import {IconButton, ButtonSize, Email, Pause, IconPlacement} from 'newskit';
+import {IconButton, ButtonSize, Email, Pause} from 'newskit';
 
 export default Layout;
 
-# Button
+# Icon Button
 
 ## Overview
 
@@ -17,7 +17,7 @@ A styled button element with customisable size.
 
 ## Props
 
-Buttons have a number of props to facilitate a variety of uses. Any prop valid on an Button HTML element as described in [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#Attributes), is also valid on the Button component.
+Icon Buttons have a number of props to facilitate a variety of uses. Any prop valid on an Button HTML element as described in [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#Attributes), is also valid on the Button component.
 Custom props are detailed below:
 
 <LegacyBlock marginTop="sizing040">
@@ -33,9 +33,6 @@ Custom props are detailed below:
   <Prop name="$stylePreset" type="string" default="interactive010">
     Set the style presets of the button.
   </Prop>
-  <Prop name="icon" type="React.ComponentType">
-    Defines which icon to use.
-  </Prop>
   <Prop name="$iconColor" type="ColorKeys" default="buttonFill">
     Set the color of the icon.
   </Prop>
@@ -44,21 +41,14 @@ Custom props are detailed below:
 ## Playground
 
 <Playground
-  componentName={'IconButton'}
+  componentName="IconButton"
   newskitPath="/button"
-  component={
-    state => (
-      <IconButton {...state}>
-        <Email />
-      </IconButton>
-    ),
-  }
+  component={state => (
+    <IconButton {...state}>
+      <Email />
+    </IconButton>
+  )}
   knobs={[
-    {
-      name: 'Content',
-      propName: 'children',
-      value: 'Click me!',
-    },
     {
       name: 'Size',
       propName: '$size',
@@ -94,40 +84,6 @@ Custom props are detailed below:
         {
           label: 'iconButtonMinimalPrimary',
           value: 'iconButtonMinimalPrimary',
-        },
-      ],
-    },
-    {
-      name: 'Icon',
-      propName: 'icon',
-      options: [
-        {
-          label: 'no icon',
-          value: undefined,
-          isDefault: true,
-        },
-        {
-          label: 'Email Icon',
-          value: Email,
-        },
-        {
-          label: 'Pause Icon',
-          value: Pause,
-        },
-      ],
-    },
-    {
-      name: 'Icon Placement',
-      propName: 'iconPlacement',
-      options: [
-        {
-          label: 'IconPlacement.Start',
-          value: IconPlacement.Start,
-          isDefault: true,
-        },
-        {
-          label: 'IconPlacement.End',
-          value: IconPlacement.End,
         },
       ],
     },

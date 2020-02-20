@@ -5,14 +5,7 @@ import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Selector} from '../../components/playground/selector';
 
-import {
-  Button,
-  IconButton,
-  ButtonSize,
-  Email,
-  Pause,
-  IconPlacement,
-} from 'newskit';
+import {Button, ButtonSize, Email, Pause} from 'newskit';
 
 export default Layout;
 
@@ -51,22 +44,15 @@ Custom props are detailed below:
 ## Playground
 
 <Playground
-  componentName={['Button', 'IconButton']}
+  componentName="Button"
   newskitPath="/button"
-  component={[
-    Button,
-    state => (
-      <IconButton {...state}>
-        <Email />
-      </IconButton>
-    ),
-  ]}
+  component={state => (
+    <Button {...state}>
+      <Email />
+      Click me!
+    </Button>
+  )}
   knobs={[
-    {
-      name: 'Content',
-      propName: 'children',
-      value: 'Click me!',
-    },
     {
       name: 'Size',
       propName: '$size',
@@ -102,40 +88,6 @@ Custom props are detailed below:
         {
           label: 'buttonMinimalPrimary',
           value: 'buttonMinimalPrimary',
-        },
-      ],
-    },
-    {
-      name: 'Icon',
-      propName: 'icon',
-      options: [
-        {
-          label: 'no icon',
-          value: undefined,
-          isDefault: true,
-        },
-        {
-          label: 'Email Icon',
-          value: Email,
-        },
-        {
-          label: 'Pause Icon',
-          value: Pause,
-        },
-      ],
-    },
-    {
-      name: 'Icon Placement',
-      propName: 'iconPlacement',
-      options: [
-        {
-          label: 'IconPlacement.Start',
-          value: IconPlacement.Start,
-          isDefault: true,
-        },
-        {
-          label: 'IconPlacement.End',
-          value: IconPlacement.End,
         },
       ],
     },

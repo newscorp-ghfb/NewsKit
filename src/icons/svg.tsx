@@ -1,14 +1,12 @@
 import {styled, getColorFromTheme, getSizingFromTheme} from '../utils/style';
-import {SvgProps} from './types';
+import {SvgProps, SvgBase} from './types';
 
-export const Svg = styled.svg<SvgProps>`
+export const Svg = styled.svg<SvgProps & SvgBase>`
   display: inline-block;
   fill: ${getColorFromTheme('inkBase', '$color')};
   color: ${getColorFromTheme('inkBase', '$color')};
-  width: ${({$size}) =>
-    $size ? getSizingFromTheme(undefined, '$size') : '100%'};
-  height: ${({$size}) =>
-    $size ? getSizingFromTheme(undefined, '$size') : 'auto'};
+  width: ${getSizingFromTheme(undefined, '$size')};
+  height: ${getSizingFromTheme(undefined, '$size')};
   float: ${({$float}) => $float};
   margin: ${getSizingFromTheme(undefined, '$margin')};
 `;
