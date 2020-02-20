@@ -799,11 +799,13 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   color: #9c9c9c;
 }
 
-.emotion-38:disabled {
-  cursor: not-allowed;
+.emotion-36 svg {
+  width: 24px;
+  height: 24px;
+  color: #0A68C1;
 }
 
-.emotion-37 {
+.emotion-35 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -813,6 +815,9 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -820,14 +825,23 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
 }
 
-.emotion-36 {
+.emotion-34 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-33 {
   display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 24px;
-  height: 24px;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-46 {
@@ -893,19 +907,13 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   color: #9c9c9c;
 }
 
-.emotion-46:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-44 {
-  display: inline-block;
-  fill: #0A68C1;
+.emotion-41 svg {
+  width: 24px;
+  height: 24px;
   color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
-.emotion-57 {
+.emotion-51 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1253,11 +1261,12 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Replay10 icon
@@ -1279,11 +1288,12 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-44"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Pause
@@ -1304,11 +1314,12 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Forward10 icon
@@ -2163,11 +2174,13 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   color: #9c9c9c;
 }
 
-.emotion-38:disabled {
-  cursor: not-allowed;
+.emotion-36 svg {
+  width: 24px;
+  height: 24px;
+  color: #0A68C1;
 }
 
-.emotion-37 {
+.emotion-35 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2177,6 +2190,9 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -2184,14 +2200,23 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
 }
 
-.emotion-36 {
+.emotion-34 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-33 {
   display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 24px;
-  height: 24px;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-46 {
@@ -2257,19 +2282,13 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   color: #9c9c9c;
 }
 
-.emotion-46:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-44 {
-  display: inline-block;
-  fill: #0A68C1;
+.emotion-41 svg {
+  width: 24px;
+  height: 24px;
   color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
-.emotion-57 {
+.emotion-51 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2617,11 +2636,12 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Replay10 icon
@@ -2643,11 +2663,12 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-44"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Play
@@ -2668,11 +2689,12 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Forward10 icon
@@ -3527,11 +3549,13 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   color: #9c9c9c;
 }
 
-.emotion-38:disabled {
-  cursor: not-allowed;
+.emotion-36 svg {
+  width: 24px;
+  height: 24px;
+  color: #0A68C1;
 }
 
-.emotion-37 {
+.emotion-35 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3541,6 +3565,9 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -3548,14 +3575,23 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
 }
 
-.emotion-36 {
+.emotion-34 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-33 {
   display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 24px;
-  height: 24px;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-46 {
@@ -3621,19 +3657,13 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   color: #9c9c9c;
 }
 
-.emotion-46:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-44 {
-  display: inline-block;
-  fill: #0A68C1;
+.emotion-41 svg {
+  width: 24px;
+  height: 24px;
   color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
-.emotion-57 {
+.emotion-51 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3981,11 +4011,12 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Replay10 icon
@@ -4007,11 +4038,12 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-44"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Play
@@ -4032,11 +4064,12 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Forward10 icon
@@ -4891,11 +4924,13 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   color: #9c9c9c;
 }
 
-.emotion-38:disabled {
-  cursor: not-allowed;
+.emotion-36 svg {
+  width: 24px;
+  height: 24px;
+  color: #0A68C1;
 }
 
-.emotion-37 {
+.emotion-35 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4905,6 +4940,9 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -4912,14 +4950,23 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
 }
 
-.emotion-36 {
+.emotion-34 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-33 {
   display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 24px;
-  height: 24px;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-46 {
@@ -4985,19 +5032,13 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   color: #9c9c9c;
 }
 
-.emotion-46:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-44 {
-  display: inline-block;
-  fill: #0A68C1;
+.emotion-41 svg {
+  width: 24px;
+  height: 24px;
   color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
-.emotion-57 {
+.emotion-51 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5345,11 +5386,12 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Replay10 icon
@@ -5371,11 +5413,12 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-44"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Play
@@ -5396,11 +5439,12 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Forward10 icon
@@ -6255,11 +6299,13 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   color: #9c9c9c;
 }
 
-.emotion-38:disabled {
-  cursor: not-allowed;
+.emotion-36 svg {
+  width: 24px;
+  height: 24px;
+  color: #0A68C1;
 }
 
-.emotion-37 {
+.emotion-35 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6269,6 +6315,9 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -6276,14 +6325,23 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
 }
 
-.emotion-36 {
+.emotion-34 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-33 {
   display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 24px;
-  height: 24px;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-46 {
@@ -6345,19 +6403,13 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   color: #9c9c9c;
 }
 
-.emotion-46:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-44 {
-  display: inline-block;
-  fill: #0A68C1;
+.emotion-41 svg {
+  width: 24px;
+  height: 24px;
   color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
-.emotion-57 {
+.emotion-51 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6705,11 +6757,12 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Replay10 icon
@@ -6731,11 +6784,12 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-44"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Pause
@@ -6756,11 +6810,12 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Forward10 icon
@@ -7615,11 +7670,13 @@ exports[`Live AudioPlayer render default player 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-32:disabled {
-  cursor: not-allowed;
+.emotion-33 svg {
+  width: 24px;
+  height: 24px;
+  color: #0A68C1;
 }
 
-.emotion-31 {
+.emotion-32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7629,6 +7686,9 @@ exports[`Live AudioPlayer render default player 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -7636,14 +7696,23 @@ exports[`Live AudioPlayer render default player 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-31 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
 }
 
 .emotion-30 {
   display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 24px;
-  height: 24px;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-40 {
@@ -7709,19 +7778,13 @@ exports[`Live AudioPlayer render default player 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-40:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-38 {
-  display: inline-block;
-  fill: #0A68C1;
+.emotion-38 svg {
+  width: 24px;
+  height: 24px;
   color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
-.emotion-51 {
+.emotion-48 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7973,11 +8036,12 @@ exports[`Live AudioPlayer render default player 1`] = `
                 type="button"
               >
                 <div
-                  class="emotion-31"
+                  class="emotion-32"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-30"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-31"
+                    wrap="nowrap"
                   >
                     <title>
                       Replay10 icon
@@ -7999,11 +8063,12 @@ exports[`Live AudioPlayer render default player 1`] = `
                 type="button"
               >
                 <div
-                  class="emotion-31"
+                  class="emotion-32"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-38"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-31"
+                    wrap="nowrap"
                   >
                     <title>
                       Play
@@ -8024,11 +8089,12 @@ exports[`Live AudioPlayer render default player 1`] = `
                 type="button"
               >
                 <div
-                  class="emotion-31"
+                  class="emotion-32"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-30"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-31"
+                    wrap="nowrap"
                   >
                     <title>
                       Forward10 icon
@@ -8756,12 +8822,43 @@ exports[`Live AudioPlayer render live player 1`] = `
   color: #9c9c9c;
 }
 
+.emotion-32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-31 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
 .emotion-30 {
   display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 24px;
-  height: 24px;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-31:disabled svg {
@@ -8863,19 +8960,13 @@ exports[`Live AudioPlayer render live player 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-35:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-33 {
-  display: inline-block;
-  fill: #0A68C1;
+.emotion-33 svg {
+  width: 24px;
+  height: 24px;
   color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
-.emotion-42 {
+.emotion-39 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9253,11 +9344,12 @@ exports[`Live AudioPlayer render live player 1`] = `
                 type="button"
               >
                 <div
-                  class="emotion-30"
+                  class="emotion-32"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-33"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-31"
+                    wrap="nowrap"
                   >
                     <title>
                       Play
@@ -10105,11 +10197,13 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-38:disabled {
-  cursor: not-allowed;
+.emotion-36 svg {
+  width: 24px;
+  height: 24px;
+  color: #0A68C1;
 }
 
-.emotion-37 {
+.emotion-35 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10119,6 +10213,9 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -10126,14 +10223,23 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
 }
 
-.emotion-36 {
+.emotion-34 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-33 {
   display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 24px;
-  height: 24px;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-46 {
@@ -10199,19 +10305,13 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-46:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-44 {
-  display: inline-block;
-  fill: #0A68C1;
+.emotion-41 svg {
+  width: 24px;
+  height: 24px;
   color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
-.emotion-57 {
+.emotion-54 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10331,6 +10431,14 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
 .emotion-54:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
+}
+
+.emotion-51 {
+  display: inline-block;
+  fill: #0A68C1;
+  color: #0A68C1;
+  width: 24px;
+  height: 24px;
 }
 
 <div
@@ -10606,11 +10714,12 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Replay10 icon
@@ -10632,11 +10741,12 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-44"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Play
@@ -10657,11 +10767,12 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Forward10 icon
@@ -10688,8 +10799,9 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
                 data-testid="audio-player-skip-next"
                 type="button"
               >
-                <div
-                  class="emotion-37"
+                <svg
+                  class="emotion-51"
+                  viewBox="0 0 24 24"
                 >
                   <svg
                     class="emotion-36"
@@ -11516,11 +11628,13 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-39:disabled {
-  cursor: not-allowed;
+.emotion-37 svg {
+  width: 24px;
+  height: 24px;
+  color: #0A68C1;
 }
 
-.emotion-38 {
+.emotion-36 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11530,6 +11644,9 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -11537,14 +11654,23 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
 }
 
-.emotion-37 {
+.emotion-35 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-34 {
   display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 24px;
-  height: 24px;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-47 {
@@ -11610,19 +11736,13 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-47:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-45 {
-  display: inline-block;
-  fill: #0A68C1;
+.emotion-42 svg {
+  width: 24px;
+  height: 24px;
   color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
-.emotion-58 {
+.emotion-52 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11990,11 +12110,12 @@ exports[`Live AudioPlayer render tagged player 1`] = `
                 type="button"
               >
                 <div
-                  class="emotion-38"
+                  class="emotion-36"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-37"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-35"
+                    wrap="nowrap"
                   >
                     <title>
                       Replay10 icon
@@ -12016,11 +12137,12 @@ exports[`Live AudioPlayer render tagged player 1`] = `
                 type="button"
               >
                 <div
-                  class="emotion-38"
+                  class="emotion-36"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-45"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-35"
+                    wrap="nowrap"
                   >
                     <title>
                       Play
@@ -12041,11 +12163,12 @@ exports[`Live AudioPlayer render tagged player 1`] = `
                 type="button"
               >
                 <div
-                  class="emotion-38"
+                  class="emotion-36"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-37"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-35"
+                    wrap="nowrap"
                   >
                     <title>
                       Forward10 icon

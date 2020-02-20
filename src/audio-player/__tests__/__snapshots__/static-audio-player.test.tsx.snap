@@ -849,38 +849,13 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   color: #9c9c9c;
 }
 
-.emotion-38:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-37 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.emotion-36 {
-  display: inline-block;
-  fill: #0A68C1;
+.emotion-35 svg {
+  width: 24px;
+  height: 24px;
   color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
-.emotion-61 {
+.emotion-34 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -896,10 +871,27 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-33 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-32 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-46 {
@@ -965,19 +957,13 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   color: #9c9c9c;
 }
 
-.emotion-46:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-44 {
-  display: inline-block;
-  fill: #0A68C1;
+.emotion-45 svg {
+  width: 24px;
+  height: 24px;
   color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
-.emotion-57 {
+.emotion-59 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1151,13 +1137,13 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
                 class="emotion-28"
                 data-testid="min-label"
               >
-                <button
-                  class="emotion-27"
-                  data-testid="mute-button"
-                  type="button"
+                <div
+                  class="emotion-34"
+                  wrap="nowrap"
                 >
-                  <span
-                    class="emotion-26"
+                  <div
+                    class="emotion-33"
+                    wrap="nowrap"
                   >
                     <svg
                       class="emotion-25"
@@ -1262,11 +1248,12 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-34"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-33"
+                    wrap="nowrap"
                   >
                     <title>
                       Replay10 icon
@@ -1288,11 +1275,12 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-34"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-44"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-33"
+                    wrap="nowrap"
                   >
                     <title>
                       Play
@@ -1313,11 +1301,12 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-34"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-33"
+                    wrap="nowrap"
                   >
                     <title>
                       Forward10 icon
@@ -1345,11 +1334,12 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-34"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-33"
+                    wrap="nowrap"
                   >
                     <title>
                       SkipNext icon
@@ -2236,11 +2226,13 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   color: #9c9c9c;
 }
 
-.emotion-38:disabled {
-  cursor: not-allowed;
+.emotion-35 svg {
+  width: 24px;
+  height: 24px;
+  color: #0A68C1;
 }
 
-.emotion-37 {
+.emotion-34 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2250,6 +2242,9 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -2257,14 +2252,23 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
 }
 
-.emotion-36 {
+.emotion-33 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-32 {
   display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 32px;
-  height: 32px;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-46 {
@@ -2330,19 +2334,13 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   color: #9c9c9c;
 }
 
-.emotion-46:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-44 {
-  display: inline-block;
-  fill: #0A68C1;
+.emotion-45 svg {
+  width: 24px;
+  height: 24px;
   color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
-.emotion-57 {
+.emotion-59 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2599,11 +2597,12 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-34"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-33"
+                    wrap="nowrap"
                   >
                     <title>
                       SkipPrevious icon
@@ -2628,11 +2627,12 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-34"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-33"
+                    wrap="nowrap"
                   >
                     <title>
                       Replay10 icon
@@ -2654,11 +2654,12 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-34"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-44"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-33"
+                    wrap="nowrap"
                   >
                     <title>
                       Play
@@ -2679,11 +2680,12 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-34"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-33"
+                    wrap="nowrap"
                   >
                     <title>
                       Forward10 icon
@@ -2712,11 +2714,12 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-34"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-33"
+                    wrap="nowrap"
                   >
                     <title>
                       SkipNext icon
@@ -3494,7 +3497,13 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   color: #9c9c9c;
 }
 
-.emotion-56 {
+.emotion-36 svg {
+  width: 24px;
+  height: 24px;
+  color: #0A68C1;
+}
+
+.emotion-35 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3504,10 +3513,9 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -3515,17 +3523,23 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: calc(-12px/2);
-  margin-right: calc(-12px/2);
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
 }
 
-.emotion-39 {
+.emotion-34 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-left: calc(12px/2);
-  margin-right: calc(12px/2);
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-33 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-38 {
@@ -3596,11 +3610,13 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   color: #9c9c9c;
 }
 
-.emotion-38:disabled {
-  cursor: not-allowed;
+.emotion-41 svg {
+  width: 24px;
+  height: 24px;
+  color: #0A68C1;
 }
 
-.emotion-37 {
+.emotion-51 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4009,11 +4025,12 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Replay10 icon
@@ -4035,11 +4052,12 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-44"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Play
@@ -4060,11 +4078,12 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Forward10 icon
@@ -4976,38 +4995,13 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   color: #9c9c9c;
 }
 
-.emotion-38:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-37 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.emotion-36 {
-  display: inline-block;
-  fill: #0A68C1;
+.emotion-36 svg {
+  width: 24px;
+  height: 24px;
   color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
-.emotion-53 {
+.emotion-35 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5023,10 +5017,27 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-34 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-33 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-46 {
@@ -5092,19 +5103,13 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   color: #9c9c9c;
 }
 
-.emotion-46:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-44 {
-  display: inline-block;
-  fill: #0A68C1;
+.emotion-41 svg {
+  width: 24px;
+  height: 24px;
   color: #0A68C1;
-  width: 32px;
-  height: 32px;
 }
 
-.emotion-57 {
+.emotion-51 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5389,11 +5394,12 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Replay10 icon
@@ -5415,11 +5421,12 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-44"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Play
@@ -5440,11 +5447,12 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
                 type="button"
               >
                 <div
-                  class="emotion-37"
+                  class="emotion-35"
+                  wrap="nowrap"
                 >
-                  <svg
-                    class="emotion-36"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-34"
+                    wrap="nowrap"
                   >
                     <title>
                       Forward10 icon

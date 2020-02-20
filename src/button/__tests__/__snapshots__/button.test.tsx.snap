@@ -19,6 +19,8 @@ exports[`Button renders Icon Button 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
 }
 
 .emotion-2 {
@@ -84,16 +86,25 @@ exports[`Button renders Icon Button 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-2:disabled {
-  cursor: not-allowed;
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+  color: #0A68C1;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
 }
 
 .emotion-0 {
   display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 24px;
-  height: 24px;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 <button
@@ -138,6 +149,8 @@ exports[`Button renders Large Button 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
 }
 
 .emotion-1 {
@@ -203,6 +216,12 @@ exports[`Button renders Large Button 1`] = `
   color: #9c9c9c;
 }
 
+.emotion-1 svg {
+  width: 24px;
+  height: 24px;
+  color: #0A68C1;
+}
+
 <button
     class="emotion-1"
     type="button"
@@ -233,6 +252,8 @@ exports[`Button renders Medium Button 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
 }
 
 .emotion-1 {
@@ -296,6 +317,12 @@ exports[`Button renders Medium Button 1`] = `
 .emotion-1:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
+}
+
+.emotion-1 svg {
+  width: 24px;
+  height: 24px;
+  color: #0A68C1;
 }
 
 <button
@@ -375,6 +402,12 @@ exports[`Button renders Small Button 1`] = `
   color: #9c9c9c;
 }
 
+.emotion-1 svg {
+  width: 16px;
+  height: 16px;
+  color: #0A68C1;
+}
+
 .emotion-1::before {
   content: '';
   position: absolute;
@@ -401,6 +434,8 @@ exports[`Button renders Small Button 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
 }
 
 <button
@@ -416,7 +451,46 @@ exports[`Button renders Small Button 1`] = `
 
 exports[`Button renders when there is an icon with a colour 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-4 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -480,6 +554,12 @@ exports[`Button renders when there is an icon with a colour 1`] = `
   color: #9c9c9c;
 }
 
+.emotion-4 svg {
+  width: 16px;
+  height: 16px;
+  color: #FFFFFF;
+}
+
 .emotion-4::before {
   content: '';
   position: absolute;
@@ -487,44 +567,6 @@ exports[`Button renders when there is an icon with a colour 1`] = `
   top: -8px;
   width: 100%;
   height: 48px;
-}
-
-.emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-0 {
-  display: inline-block;
-  fill: #FFFFFF;
-  color: #FFFFFF;
-  width: 16px;
-  height: 16px;
 }
 
 <button
@@ -625,6 +667,12 @@ exports[`Button renders when there is an icon with the placement set to end 1`] 
   color: #9c9c9c;
 }
 
+.emotion-4 svg {
+  width: 16px;
+  height: 16px;
+  color: #0A68C1;
+}
+
 .emotion-4::before {
   content: '';
   position: absolute;
@@ -666,10 +714,8 @@ exports[`Button renders when there is an icon with the placement set to end 1`] 
 
 .emotion-0 {
   display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 16px;
-  height: 16px;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 <button
@@ -776,6 +822,12 @@ exports[`Button renders when there is an icon with the placement set to start 1`
   color: #9c9c9c;
 }
 
+.emotion-4 svg {
+  width: 16px;
+  height: 16px;
+  color: #0A68C1;
+}
+
 .emotion-4::before {
   content: '';
   position: absolute;
@@ -817,10 +869,8 @@ exports[`Button renders when there is an icon with the placement set to start 1`
 
 .emotion-0 {
   display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 16px;
-  height: 16px;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 <button
@@ -907,7 +957,18 @@ exports[`Button renders when there is no icon 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-1::before {
+.emotion-2:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
+  color: #0A68C1;
+}
+
+.emotion-2::before {
   content: '';
   position: absolute;
   left: 0;
@@ -937,6 +998,17 @@ exports[`Button renders when there is no icon 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
 }
 
 <button
@@ -971,6 +1043,8 @@ exports[`Button renders with different style preset 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
 }
 
 .emotion-1 {
@@ -1034,6 +1108,12 @@ exports[`Button renders with different style preset 1`] = `
 .emotion-1:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
+}
+
+.emotion-1 svg {
+  width: 16px;
+  height: 16px;
+  color: #0A68C1;
 }
 
 .emotion-1::before {
@@ -1122,6 +1202,12 @@ exports[`Button renders with fallback formatting 1`] = `
   color: #9c9c9c;
 }
 
+.emotion-1 svg {
+  width: 16px;
+  height: 16px;
+  color: #0A68C1;
+}
+
 .emotion-1::before {
   content: '';
   position: absolute;
@@ -1148,6 +1234,8 @@ exports[`Button renders with fallback formatting 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
 }
 
 <button

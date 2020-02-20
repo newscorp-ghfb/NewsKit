@@ -6,8 +6,6 @@ exports[`Svg renders a menu icon with no size 1`] = `
   display: inline-block;
   fill: #158acf;
   color: #158acf;
-  width: 100%;
-  height: auto;
 }
 
 <svg
