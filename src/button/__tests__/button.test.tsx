@@ -1,9 +1,17 @@
 import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {Button, IconButton} from '..';
-import {ButtonSize, IconPlacement} from '../types';
+import {ButtonSize} from '../types';
 import {Email} from '../../icons/email';
 import {ColorKeys} from '../../themes/mappers/colors';
+import {BaseButton} from '../base-button';
+
+describe('BaseButton', () => {
+  test('renders with fallback formatting', () => {
+    const fragment = renderToFragmentWithTheme(BaseButton);
+    expect(fragment).toMatchSnapshot();
+  });
+});
 
 describe('Button', () => {
   test('renders with fallback formatting', () => {
@@ -44,6 +52,14 @@ describe('Button', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders Icon Button with default size', () => {
+    const props = {
+      children: [<Email />],
+    };
+    const fragment = renderToFragmentWithTheme(IconButton, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('renders Icon Button', () => {
     const props = {
       $size: ButtonSize.Large,
@@ -69,28 +85,6 @@ describe('Button', () => {
       children: [<Email />, 'click this!'],
     };
     const fragment = renderToFragmentWithTheme(IconButton, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders when there is an icon with the placement set to start', () => {
-    const props = {
-      $size: ButtonSize.Small,
-      icon: Email,
-      iconPlacement: IconPlacement.Start,
-      children: [<Email />, 'click this!'],
-    };
-    const fragment = renderToFragmentWithTheme(Button, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders when there is an icon with the placement set to end', () => {
-    const props = {
-      $size: ButtonSize.Small,
-      icon: Email,
-      iconPlacement: IconPlacement.End,
-      children: [<Email />, 'click this!'],
-    };
-    const fragment = renderToFragmentWithTheme(Button, props);
     expect(fragment).toMatchSnapshot();
   });
 });

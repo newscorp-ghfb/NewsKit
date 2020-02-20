@@ -1,8 +1,124 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button renders Icon Button 1`] = `
+exports[`BaseButton renders with fallback formatting 1`] = `
 <DocumentFragment>
   .emotion-1 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 100vw;
+  min-height: 8px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  margin: 8px 0;
+}
+
+.emotion-1:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-1 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-1:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-1:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-1:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-1 svg {
+  width: 16px;
+  height: 16px;
+  color: #0A68C1;
+}
+
+.emotion-1::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 100%;
+  height: 48px;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+<button
+    class="emotion-1"
+    type="button"
+  >
+    <div
+      class="emotion-0"
+      wrap="nowrap"
+    />
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders Icon Button 1`] = `
+<DocumentFragment>
+  .emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -23,7 +139,22 @@ exports[`Button renders Icon Button 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-2 {
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-3 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -59,29 +190,29 @@ exports[`Button renders Icon Button 1`] = `
   cursor: not-allowed;
 }
 
-.emotion-2 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-2:focus:not(:disabled) {
+.emotion-3:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-2:disabled {
+.emotion-3:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
 
-.emotion-2:disabled svg {
+.emotion-3:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
@@ -90,6 +221,137 @@ exports[`Button renders Icon Button 1`] = `
   width: 24px;
   height: 24px;
   color: #0A68C1;
+}
+
+<button
+    class="emotion-3"
+    type="button"
+  >
+    <div
+      class="emotion-2"
+      wrap="nowrap"
+    >
+      <div
+        class="emotion-1"
+        wrap="nowrap"
+      >
+        <svg
+          class="emotion-0"
+          viewBox="0 0 24 24"
+        >
+          <title>
+            Email icon
+          </title>
+          <path
+            d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+          />
+        </svg>
+      </div>
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders Icon Button with default size 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-3 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 100vw;
+  min-height: 8px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  padding: 8px 8px;
+  margin: 8px 0;
+}
+
+.emotion-3:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-3:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-3 svg {
+  width: 16px;
+  height: 16px;
+  color: #0A68C1;
+}
+
+.emotion-3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 100%;
+  height: 48px;
 }
 
 .emotion-1 {
@@ -108,23 +370,29 @@ exports[`Button renders Icon Button 1`] = `
 }
 
 <button
-    class="emotion-2"
+    class="emotion-3"
     type="button"
   >
     <div
-      class="emotion-1"
+      class="emotion-2"
+      wrap="nowrap"
     >
-      <svg
-        class="emotion-0"
-        viewBox="0 0 24 24"
+      <div
+        class="emotion-1"
+        wrap="nowrap"
       >
-        <title>
-          Email icon
-        </title>
-        <path
-          d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
-        />
-      </svg>
+        <svg
+          class="emotion-0"
+          viewBox="0 0 24 24"
+        >
+          <title>
+            Email icon
+          </title>
+          <path
+            d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+          />
+        </svg>
+      </div>
     </div>
   </button>
 </DocumentFragment>
@@ -142,6 +410,9 @@ exports[`Button renders Large Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -245,6 +516,9 @@ exports[`Button renders Medium Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -331,6 +605,7 @@ exports[`Button renders Medium Button 1`] = `
   >
     <div
       class="emotion-0"
+      wrap="nowrap"
     />
   </button>
 </DocumentFragment>
@@ -338,7 +613,31 @@ exports[`Button renders Medium Button 1`] = `
 
 exports[`Button renders Small Button 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -417,33 +716,13 @@ exports[`Button renders Small Button 1`] = `
   height: 48px;
 }
 
-.emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
 <button
     class="emotion-1"
     type="button"
   >
     <div
       class="emotion-0"
+      wrap="nowrap"
     />
   </button>
 </DocumentFragment>
@@ -461,9 +740,6 @@ exports[`Button renders when there is an icon with a colour 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -601,313 +877,33 @@ exports[`Button renders when there is an icon with a colour 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Button renders when there is an icon with the placement set to end 1`] = `
-<DocumentFragment>
-  .emotion-4 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 100vw;
-  min-height: 8px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  padding: 8px 12px;
-  margin: 8px 0;
-}
-
-.emotion-4:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-4 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-4:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-4:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-4:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-4:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-4:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-4 svg {
-  width: 16px;
-  height: 16px;
-  color: #0A68C1;
-}
-
-.emotion-4::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-.emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-0 {
-  display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
-}
-
-<button
-    class="emotion-4"
-    type="button"
-  >
-    <div
-      class="emotion-3"
-    >
-      <div
-        class="emotion-0"
-      >
-        click this!
-      </div>
-      <div
-        class="emotion-0"
-      >
-        <svg
-          class="emotion-0"
-          viewBox="0 0 24 24"
-        >
-          <title>
-            Email icon
-          </title>
-          <path
-            d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
-          />
-        </svg>
-      </div>
-      <div
-        class="emotion-1"
-        wrap="nowrap"
-      >
-        click this!
-      </div>
-    </div>
-  </button>
-</DocumentFragment>
-`;
-
-exports[`Button renders when there is an icon with the placement set to start 1`] = `
-<DocumentFragment>
-  .emotion-4 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 100vw;
-  min-height: 8px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  padding: 8px 12px;
-  margin: 8px 0;
-}
-
-.emotion-4:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-4 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-4:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-4:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-4:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-4:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-4:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-4 svg {
-  width: 16px;
-  height: 16px;
-  color: #0A68C1;
-}
-
-.emotion-4::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-.emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-0 {
-  display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
-}
-
-<button
-    class="emotion-4"
-    type="button"
-  >
-    <div
-      class="emotion-3"
-    >
-      <div
-        class="emotion-1"
-      >
-        <svg
-          class="emotion-0"
-          viewBox="0 0 24 24"
-        >
-          <title>
-            Email icon
-          </title>
-          <path
-            d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
-          />
-        </svg>
-      </div>
-      <div
-        class="emotion-1"
-      >
-        click this!
-      </div>
-    </div>
-  </button>
-</DocumentFragment>
-`;
-
 exports[`Button renders when there is no icon 1`] = `
 <DocumentFragment>
   .emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-2 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -975,31 +971,6 @@ exports[`Button renders when there is no icon 1`] = `
   top: -8px;
   width: 100%;
   height: 48px;
-}
-
-.emotion-1::before:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
 }
 
 .emotion-0 {
@@ -1138,7 +1109,31 @@ exports[`Button renders with different style preset 1`] = `
 
 exports[`Button renders with fallback formatting 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -1215,27 +1210,6 @@ exports[`Button renders with fallback formatting 1`] = `
   top: -8px;
   width: 100%;
   height: 48px;
-}
-
-.emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
 }
 
 <button
