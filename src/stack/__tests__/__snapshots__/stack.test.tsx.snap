@@ -30,6 +30,14 @@ exports[`Stack renders stack when no properties are set 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -123,6 +131,14 @@ exports[`Stack renders stack with flex grow and shrink 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -199,6 +215,14 @@ exports[`Stack renders stack with flex grow and shrink 2`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -441,6 +465,14 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -620,6 +652,14 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -795,6 +835,14 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -974,6 +1022,14 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -1116,6 +1172,14 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -1195,6 +1259,14 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -1274,6 +1346,14 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -1353,6 +1433,14 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -1432,6 +1520,14 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -1511,6 +1607,14 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -1596,6 +1700,14 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -1762,6 +1874,14 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -1941,6 +2061,14 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -2116,6 +2244,14 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -2262,6 +2398,14 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -2404,6 +2548,14 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -2483,6 +2635,14 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -2562,6 +2722,14 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -2641,6 +2809,14 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -2799,6 +2975,14 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -2884,6 +3068,14 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -2967,6 +3159,14 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -3050,6 +3250,14 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -3229,6 +3437,14 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -3404,6 +3620,14 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -3583,6 +3807,14 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -3772,6 +4004,18 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  min-height: 32px;
+  padding: 8px 12px;
+  border-style: solid;
+  border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
@@ -3847,6 +4091,14 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -4015,6 +4267,14 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -4094,6 +4354,14 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -4173,6 +4441,14 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -4347,6 +4623,14 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -4463,6 +4747,14 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -4546,6 +4838,14 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -4725,6 +5025,14 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -4900,6 +5208,14 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -5079,6 +5395,14 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -5254,6 +5578,14 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -5333,6 +5665,14 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -5445,6 +5785,14 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -5524,6 +5872,14 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -5682,6 +6038,14 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -5933,6 +6297,14 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -6112,6 +6484,14 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -6287,6 +6667,14 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -6466,6 +6854,14 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -6641,6 +7037,14 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -6818,6 +7222,14 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -6911,6 +7323,14 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -7023,6 +7443,14 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -7102,6 +7530,14 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -7142,43 +7578,101 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-160px/2);
+  margin-bottom: calc(-160px/2);
+  margin-left: calc(-160px/2);
+  margin-right: calc(-160px/2);
 }
 
-.emotion-3:before,
-.emotion-3:after {
-  content: '';
-  display: block;
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(160px/2);
+  margin-bottom: calc(160px/2);
+  margin-left: calc(160px/2);
+  margin-right: calc(160px/2);
 }
 
 <div
-    class="emotion-3"
+    class="emotion-12"
+    wrap="wrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-right and the space is set to sizing000 1`] = `
+exports[`Stack renders where the stack flow is vertical-left and the space is set to sizing120 2`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -7187,6 +7681,14 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -7214,7 +7716,1310 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   color: #9c9c9c;
 }
 
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-160px/2);
+  margin-bottom: calc(-160px/2);
+}
+
 .emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(160px/2);
+  margin-bottom: calc(160px/2);
+}
+
+<div
+    class="emotion-12"
+    wrap="nowrap"
+  >
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-left and the stack distribution is center 1`] = `
+<DocumentFragment>
+  .emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  min-height: 32px;
+  padding: 8px 12px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-2:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<div
+    class="emotion-12"
+    wrap="nowrap"
+  >
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-left and the stack distribution is flex-end 1`] = `
+<DocumentFragment>
+  .emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  min-height: 32px;
+  padding: 8px 12px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-2:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+<div
+    class="emotion-12"
+    wrap="nowrap"
+  >
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-left and the stack distribution is flex-start 1`] = `
+<DocumentFragment>
+  .emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  min-height: 32px;
+  padding: 8px 12px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-2:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+<div
+    class="emotion-12"
+    wrap="nowrap"
+  >
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-left and the stack distribution is space-around 1`] = `
+<DocumentFragment>
+  .emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  min-height: 32px;
+  padding: 8px 12px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-2:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+}
+
+<div
+    class="emotion-12"
+    wrap="nowrap"
+  >
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-left and the stack distribution is space-between 1`] = `
+<DocumentFragment>
+  .emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  min-height: 32px;
+  padding: 8px 12px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-2:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+<div
+    class="emotion-12"
+    wrap="nowrap"
+  >
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-left and the stack distribution is space-evenly 1`] = `
+<DocumentFragment>
+  .emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  min-height: 32px;
+  padding: 8px 12px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-2:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+}
+
+.emotion-12:before,
+.emotion-12:after {
+  content: '';
+  display: block;
+}
+
+<div
+    class="emotion-12"
+    wrap="nowrap"
+  >
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-right and the space is set to sizing000 1`] = `
+<DocumentFragment>
+  .emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  min-height: 32px;
+  padding: 8px 12px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-2:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7237,31 +9042,86 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 }
 
 <div
-    class="emotion-3"
+    class="emotion-12"
     wrap="wrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
 exports[`Stack renders where the stack flow is vertical-right and the space is set to sizing000 2`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-2 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -7270,6 +9130,14 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -7297,7 +9165,40 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   color: #9c9c9c;
 }
 
-.emotion-3 {
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7320,24 +9221,72 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 }
 
 <div
-    class="emotion-3"
+    class="emotion-12"
     wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -7353,6 +9302,14 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -7532,6 +9489,14 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -7707,6 +9672,745 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  min-height: 32px;
+  padding: 8px 12px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-2:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(160px/2);
+  margin-bottom: calc(160px/2);
+  margin-left: calc(160px/2);
+  margin-right: calc(160px/2);
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-160px/2);
+  margin-bottom: calc(-160px/2);
+  margin-left: calc(-160px/2);
+  margin-right: calc(-160px/2);
+}
+
+<div
+    class="emotion-12"
+    wrap="wrap"
+  >
+    <div
+      class="emotion-3"
+      wrap="wrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-right and the space is set to sizing000 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  min-height: 32px;
+  padding: 8px 12px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-2:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+<div
+    class="emotion-3"
+    wrap="wrap"
+  >
+    <span
+      class="emotion-0"
+    >
+      child 1
+    </span>
+    <span
+      class="emotion-0"
+    >
+      child 2
+    </span>
+    <span
+      class="emotion-0"
+    >
+      child 3
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-right and the space is set to sizing000 2`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-2:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+<div
+    class="emotion-3"
+    wrap="nowrap"
+  >
+    <span
+      class="emotion-0"
+    >
+      child 1
+    </span>
+    <span
+      class="emotion-0"
+    >
+      child 2
+    </span>
+    <span
+      class="emotion-0"
+    >
+      child 3
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-right and the space is set to sizing090 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  min-height: 32px;
+  padding: 8px 12px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-2:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(64px/2);
+  margin-bottom: calc(64px/2);
+  margin-left: calc(64px/2);
+  margin-right: calc(64px/2);
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-64px/2);
+  margin-bottom: calc(-64px/2);
+  margin-left: calc(-64px/2);
+  margin-right: calc(-64px/2);
+}
+
+<div
+    class="emotion-12"
+    wrap="wrap"
+  >
+    <div
+      class="emotion-3"
+      wrap="wrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-right and the space is set to sizing090 2`] = `
+<DocumentFragment>
+  .emotion-2 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  min-height: 32px;
+  padding: 8px 12px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-2:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-2:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(64px/2);
+  margin-bottom: calc(64px/2);
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-64px/2);
+  margin-bottom: calc(-64px/2);
+}
+
+<div
+    class="emotion-12"
+    wrap="nowrap"
+  >
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
+    >
+      <span
+        class="emotion-2"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders where the stack flow is vertical-right and the space is set to sizing120 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -7886,6 +10590,14 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -8298,6 +11010,14 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;
@@ -8456,6 +11176,14 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   min-height: 32px;
   padding: 8px 12px;
   border-style: solid;

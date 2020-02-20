@@ -63,6 +63,9 @@ export const Tag: React.FC<TagProps> = props => {
   const {href, children, disabled, ...rest} = props;
   const newProps: TagProps = {...rest};
   let renderAs: 'span' | 'a' = 'span';
+  newProps.$size = newProps.$size || TagSize.Medium;
+  newProps.$typePreset =
+    newProps.$typePreset || tagSizeStyleTokens[newProps.$size].typePreset;
 
   if (href) {
     renderAs = 'a';
@@ -71,6 +74,7 @@ export const Tag: React.FC<TagProps> = props => {
       newProps.disabled = disabled;
     }
   }
+
   return (
     <StyledTag data-testid="tag" {...as(renderAs)} {...newProps}>
       {children}

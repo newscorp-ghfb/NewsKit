@@ -1,8 +1,8 @@
 import React from 'react';
-import {styled, getTypePresetFromTheme} from '../utils/style';
+import {styled} from '../utils/style';
 import {FlagProps} from './types';
 import {FlagSize} from './utils';
-import {SizingKeys, TypePresetKeys} from '../themes';
+import {SizingKeys} from '../themes';
 import {getStylePresetFromTheme} from '../utils/style-preset';
 import {PaddingPresetKeys} from '../themes/mappers/spacing';
 import {BaseFlag} from '../base-flag';
@@ -12,20 +12,17 @@ const flagSizeStyleTokens: Record<
   {
     minHeight: SizingKeys;
     borderRadiusSize: SizingKeys;
-    typePreset: TypePresetKeys;
     padding: PaddingPresetKeys;
   }
 > = {
   [FlagSize.Large]: {
     minHeight: 'sizing060',
     borderRadiusSize: 'sizing070',
-    typePreset: 'flag020',
     padding: 'spaceInset020Squish',
   },
   [FlagSize.Small]: {
     minHeight: 'sizing050',
     borderRadiusSize: 'sizing050',
-    typePreset: 'flag010',
     padding: 'spaceInset010Squish',
   },
 };
@@ -49,13 +46,17 @@ const StyledFlag = styled(BaseFlag)<FlagProps>`
       borderRadiusSize: flagSizeStyleTokens[size].borderRadiusSize,
     })(props);
   }}
-
-  ${({$size: sizeProp, ...props}) => {
-    const size = sizeProp || FlagSize.Small;
-    return getTypePresetFromTheme(flagSizeStyleTokens[size].typePreset)(props);
-  }}
 `;
 
-export const Flag: React.FC<FlagProps> = props => (
-  <StyledFlag data-testid="flag" {...props} />
-);
+export const Flag: React.FC<FlagProps> = props => {
+  const {$size = FlagSize.Small} = props;
+  return (
+    <StyledFlag
+      data-testid="flag"
+      $stylePreset="flag010"
+      $size={$size}
+      $typePreset={$size === FlagSize.Large ? 'flag020' : 'flag010'}
+      {...props}
+    />
+  );
+};

@@ -1,5 +1,6 @@
 import React from 'react';
 import {styled, getTypePresetFromTheme} from '../utils/style';
+import {getStylePresetFromTheme} from '../utils/style-preset';
 import {BaseFlagProps} from './types';
 import {Stack} from '../stack';
 import {Flow, StackDistribution} from '../stack/types';
@@ -12,7 +13,8 @@ const StyledBaseFlag = styled.span<BaseFlagProps>`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  /* ${getTypePresetFromTheme(undefined, '$size')} */
+  ${getTypePresetFromTheme(undefined, '$typePreset')}
+  ${getStylePresetFromTheme(undefined, '$stylePreset')}
 `;
 
 export const BaseFlag: React.FC<BaseFlagProps> = ({children, ...props}) => (

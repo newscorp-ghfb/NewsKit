@@ -40,20 +40,5 @@ export const component = () => (
         interactive010Inverse
       </Tag>
     </Block>
-    <Block>
-      <Tag $stylePreset="interactive020" href="http://example.com">
-        interactive020
-      </Tag>
-    </Block>
-    <Block>
-      <Tag $stylePreset="interactive030" href="http://example.com">
-        interactive030
-      </Tag>
-    </Block>
-    <Block>
-      <Tag $stylePreset="interactive040" href="http://example.com">
-        interactive040
-      </Tag>
-    </Block>
   </React.Fragment>
 );

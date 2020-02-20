@@ -8907,16 +8907,6 @@ exports[`Live AudioPlayer render live player 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  background-color: transparent;
-  color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
-  width: 48px;
-  height: 24px;
-  padding: 0;
-  text-align: center;
-  background-color: #EF1703;
-  color: #FFFFFF;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -8925,9 +8915,20 @@ exports[`Live AudioPlayer render live player 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
+  background-color: #EF1703;
+  color: #FFFFFF;
+  min-height: 24px;
+  padding: 4px 8px;
+  background-color: #EF1703;
+  color: #FFFFFF;
   border: none;
   text-transform: uppercase;
   margin-right: 16px;
+}
+
+.emotion-9 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .emotion-9 svg {
@@ -10284,6 +10285,52 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  margin-bottom: 16px;
+}
+
+.emotion-54 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  min-height: 32px;
+  padding: 8px 12px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+  color: #2e2e2e;
+  border-color: #cccccc;
+  border-radius: 0;
+  border: none;
+}
+
+.emotion-54:hover:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-54:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-54:focus:not(:disabled) {
+  border-color: #535353;
+}
+
+.emotion-54:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
 }
 
 <div

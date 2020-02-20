@@ -42,11 +42,11 @@ export const component = () => (
     <Container>
       <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
         <Flag $size={FlagSize.Small}>
-          <Email $size="iconSize020" />
+          <Email $size="iconSize010" />
           Text
         </Flag>
         <Flag $size={FlagSize.Large}>
-          <Email $size="iconSize020" />
+          <Email $size="iconSize010" />
           Text
         </Flag>
       </Stack>
@@ -60,7 +60,7 @@ export const component = () => (
           $spacing="sizing000"
           $stylePreset="flag010Inverse"
         >
-          <Email $size="iconSize020" />
+          <Email $size="iconSize010" />
           Text
         </Flag>
         <Flag
@@ -68,7 +68,7 @@ export const component = () => (
           $spacing="sizing000"
           $stylePreset="flag010Inverse"
         >
-          <Email $size="iconSize020" />
+          <Email $size="iconSize010" />
           Text
         </Flag>
       </Stack>

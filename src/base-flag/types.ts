@@ -3,6 +3,6 @@ import {FlagSize} from '../flag/utils';
 
 export interface BaseFlagProps {
   $size?: FlagSize | TagSize;
-  // $typePreset?: string;
+  $typePreset?: string;
   $stylePreset?: string;
 }

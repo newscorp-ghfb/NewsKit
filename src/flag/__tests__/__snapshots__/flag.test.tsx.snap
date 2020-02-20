@@ -35,10 +35,6 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 24px;
-  padding: 4px 8px;
-  color: #0A68C1;
-  border-radius: 100vw;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -47,6 +43,43 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
+  color: #0A68C1;
+  min-height: 24px;
+  padding: 4px 8px;
+  color: #0A68C1;
+  border-radius: 100vw;
+}
+
+.emotion-1 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:hover:not(:disabled) svg {
+  fill: #02509B;
+  color: #02509B;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:active:not(:disabled) svg {
+  fill: #02509B;
+  color: #02509B;
+}
+
+.emotion-1:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-1:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
 }
 
 .emotion-1 svg {
@@ -128,10 +161,6 @@ exports[`Flag renders a flag with no paddings 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 24px;
-  padding: sizing010;
-  color: #0A68C1;
-  border-radius: 100vw;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -140,6 +169,43 @@ exports[`Flag renders a flag with no paddings 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
+  color: #0A68C1;
+  min-height: 24px;
+  padding: sizing010;
+  color: #0A68C1;
+  border-radius: 100vw;
+}
+
+.emotion-1 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:hover:not(:disabled) svg {
+  fill: #02509B;
+  color: #02509B;
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:active:not(:disabled) svg {
+  fill: #02509B;
+  color: #02509B;
+}
+
+.emotion-1:focus:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-1:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
 }
 
 .emotion-1 svg {
@@ -221,10 +287,6 @@ exports[`Flag renders with Large size 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  background-color: #0A68C1;
-  color: #FFFFFF;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.7142857142857142;
@@ -233,6 +295,17 @@ exports[`Flag renders with Large size 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  min-height: 32px;
+  padding: 8px 12px;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+}
+
+.emotion-1 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .emotion-1 svg {
@@ -263,10 +336,6 @@ exports[`Flag renders with Small size 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 24px;
-  padding: 4px 8px;
-  background-color: #0A68C1;
-  color: #FFFFFF;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -275,6 +344,17 @@ exports[`Flag renders with Small size 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  min-height: 24px;
+  padding: 4px 8px;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+}
+
+.emotion-1 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .emotion-1 svg {
@@ -329,10 +409,6 @@ exports[`Flag renders with default styles 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 24px;
-  padding: 4px 8px;
-  background-color: #0A68C1;
-  color: #FFFFFF;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -341,6 +417,17 @@ exports[`Flag renders with default styles 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  min-height: 24px;
+  padding: 4px 8px;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+}
+
+.emotion-1 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .emotion-1 svg {
