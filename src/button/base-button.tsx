@@ -3,7 +3,6 @@ import {
   css,
   styled,
   getAnimationFromTheme,
-  getColorFromTheme,
   getTypePresetFromTheme,
   ThemeProp,
 } from '../utils/style';
@@ -59,14 +58,7 @@ const ButtonElement = styled.button<ButtonProps & ButtonSizing>`
     cursor: not-allowed;
   }
 
-  ${({
-    $size = ButtonSize.Small,
-    $iconColor = 'buttonFill',
-    theme,
-    paddingX,
-    paddingY,
-    $stylePreset,
-  }) => {
+  ${({$size = ButtonSize.Small, theme, paddingX, paddingY, $stylePreset}) => {
     const {
       minHeight,
       borderRadiusSize,
@@ -89,10 +81,6 @@ const ButtonElement = styled.button<ButtonProps & ButtonSizing>`
     svg {
       width: ${theme.sizing[iconSize]};
       height: ${theme.sizing[iconSize]};
-      color: ${getColorFromTheme<Pick<ButtonProps, '$iconColor'> & ThemeProp>(
-        'inkBase',
-        '$iconColor',
-      )({theme, $iconColor})}
     }
         
     ${$size === ButtonSize.Small &&

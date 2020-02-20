@@ -7,7 +7,19 @@ import {Pause, Email, CopyLink} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
-import {newskitLightTheme, IconSizeKeys} from '../../themes';
+import {
+  borderRadiusPrimitives,
+  BorderRadiusShape,
+} from '../../themes/newskit-light/border-radius';
+import {
+  newskitLightTheme,
+  IconSizeKeys,
+  ThemeProvider,
+  StylePresetStates,
+  colorPrimitives,
+  Theme,
+  createTheme,
+} from '../../themes';
 
 export const name = 'button';
 
@@ -41,6 +53,49 @@ const Label = styled.div`
 const Spacer = styled.div`
   margin-bottom: 20px;
 `;
+
+const customTheme: Theme = createTheme('awesome-theme', {
+  themeOverrider: () => ({
+    stylePresets: {
+      squaredStyle: {
+        loading: {
+          backgroundColor: colorPrimitives.red020,
+          borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
+          iconColor: colorPrimitives.green010,
+          borderWidth: '3px',
+          borderStyle: 'solid',
+          borderColor: 'blue',
+        },
+        base: {
+          backgroundColor: colorPrimitives.blue040,
+          borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
+          iconColor: colorPrimitives.green040,
+          borderWidth: '3px',
+          borderStyle: 'solid',
+          borderColor: 'red',
+        },
+      } as StylePresetStates,
+      semiRoundedStyle: {
+        loading: {
+          backgroundColor: colorPrimitives.red020,
+          borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
+          iconColor: colorPrimitives.green010,
+          borderWidth: '3px',
+          borderStyle: 'solid',
+          borderColor: 'blue',
+        },
+        base: {
+          backgroundColor: colorPrimitives.blue040,
+          borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
+          iconColor: colorPrimitives.green040,
+          borderWidth: '3px',
+          borderStyle: 'solid',
+          borderColor: 'red',
+        },
+      } as StylePresetStates,
+    },
+  }),
+});
 
 enum ButtonStyle {
   Solid = 'interactive010',
@@ -158,6 +213,35 @@ export const component = () => (
         </IconButton>
       </Stack>
     </Container>
+
+    <ThemeProvider theme={customTheme}>
+      <Container>
+        <Stack flow="horizontal-center" space="sizing070" wrap="wrap">
+          <IconButton $size={ButtonSize.Small} $stylePreset="squaredStyle">
+            <Email $size="iconSize050" $color="amber100" />
+          </IconButton>
+          <IconButton $size={ButtonSize.Medium} $stylePreset="squaredStyle">
+            <Email $size="iconSize050" $color="amber100" />
+          </IconButton>
+          <IconButton $size={ButtonSize.Large} $stylePreset="squaredStyle">
+            <Email $size="iconSize050" $color="amber100" />
+          </IconButton>
+        </Stack>
+      </Container>
+      <Container>
+        <Stack flow="horizontal-center" space="sizing070" wrap="wrap">
+          <IconButton $size={ButtonSize.Small} $stylePreset="semiRoundedStyle">
+            <Email $size="iconSize050" $color="amber100" />
+          </IconButton>
+          <IconButton $size={ButtonSize.Medium} $stylePreset="semiRoundedStyle">
+            <Email $size="iconSize050" $color="amber100" />
+          </IconButton>
+          <IconButton $size={ButtonSize.Large} $stylePreset="semiRoundedStyle">
+            <Email $size="iconSize050" $color="amber100" />
+          </IconButton>
+        </Stack>
+      </Container>
+    </ThemeProvider>
 
     <h2>States</h2>
     <Grid>
