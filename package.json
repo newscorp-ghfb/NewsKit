@@ -16,7 +16,7 @@
     "dev:storybook": "start-storybook --ci -p 6006",
     "eyes:storybook": "eyes-storybook --conf applitools.components.config.js",
     "lint:code:base": "eslint --report-unused-disable-directives --ext=.js,.ts,.jsx,.tsx --cache",
-    "lint:code": "scripts/assert-tests-folder.js && yarn lint:code:base .",
+    "lint:code": "scripts/assert-files-and-folders.js && yarn lint:code:base .",
     "lint:code:fix": "yarn lint:code --fix",
     "lint:markdown": "markdownlint -c ./.markdownlint.json *.md **/*.md",
     "lint": "yarn lint:code && yarn lint:markdown",
