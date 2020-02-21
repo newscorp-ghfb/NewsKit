@@ -95,7 +95,6 @@ exports[`ShareBar does not render invalid elements 1`] = `
 }
 
 .emotion-3 {
-  color: #2F75D7;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   -webkit-transition-property: color;
@@ -104,18 +103,19 @@ exports[`ShareBar does not render invalid elements 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2F75D7;
 }
 
-.emotion-3:visited {
+.emotion-3:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-3:visited:not(:disabled) {
   color: #903D91;
-}
-
-.emotion-3:hover {
-  color: #2F75D7;
-}
-
-.emotion-3:active {
-  color: #2F75D7;
 }
 
 <div
@@ -294,7 +294,6 @@ exports[`ShareBar href renders as an anchor 1`] = `
 }
 
 .emotion-2 {
-  color: #2F75D7;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   -webkit-transition-property: color;
@@ -303,18 +302,19 @@ exports[`ShareBar href renders as an anchor 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2F75D7;
 }
 
-.emotion-2:visited {
+.emotion-2:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-2:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-2:visited:not(:disabled) {
   color: #903D91;
-}
-
-.emotion-2:hover {
-  color: #2F75D7;
-}
-
-.emotion-2:active {
-  color: #2F75D7;
 }
 
 .emotion-9 {
@@ -495,7 +495,6 @@ exports[`ShareBar renders with a border 1`] = `
 }
 
 .emotion-2 {
-  color: #2F75D7;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   -webkit-transition-property: color;
@@ -504,18 +503,19 @@ exports[`ShareBar renders with a border 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2F75D7;
 }
 
-.emotion-2:visited {
+.emotion-2:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-2:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-2:visited:not(:disabled) {
   color: #903D91;
-}
-
-.emotion-2:hover {
-  color: #2F75D7;
-}
-
-.emotion-2:active {
-  color: #2F75D7;
 }
 
 .emotion-1 {
@@ -782,7 +782,6 @@ exports[`ShareBar renders with custom components 1`] = `
 }
 
 .emotion-3 {
-  color: #2F75D7;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   -webkit-transition-property: color;
@@ -791,18 +790,19 @@ exports[`ShareBar renders with custom components 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2F75D7;
 }
 
-.emotion-3:visited {
+.emotion-3:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-3:visited:not(:disabled) {
   color: #903D91;
-}
-
-.emotion-3:hover {
-  color: #2F75D7;
-}
-
-.emotion-3:active {
-  color: #2F75D7;
 }
 
 <div

@@ -8,7 +8,6 @@ exports[`Image renders with defaults 1`] = `
   height: 0;
   padding-top: calc(100% * (3/3));
   background-color: #fafafa;
-  border-radius: 0;
 }
 
 .emotion-4 svg {
@@ -123,13 +122,6 @@ exports[`Image renders with defaults after load 1`] = `
   width: 100%;
   height: auto;
   padding-top: 0;
-  background-color: #fafafa;
-  border-radius: 0;
-}
-
-.emotion-4 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -199,7 +191,6 @@ exports[`Image renders with invalidPreset 1`] = `
   height: 0;
   padding-top: calc(100% * (3/3));
   background-color: #fafafa;
-  border-radius: 0;
 }
 
 .emotion-4 svg {
@@ -296,7 +287,6 @@ exports[`Image renders with maskRound 1`] = `
   height: 0;
   padding-top: calc(100% * (3/3));
   background-color: #fafafa;
-  border-radius: 0;
 }
 
 .emotion-4 svg {
@@ -393,7 +383,6 @@ exports[`Image renders with maskSemiRounded 1`] = `
   height: 0;
   padding-top: calc(100% * (3/3));
   background-color: #fafafa;
-  border-radius: 0;
 }
 
 .emotion-4 svg {
@@ -490,7 +479,6 @@ exports[`Image renders without icon 1`] = `
   height: 0;
   padding-top: calc(100% * (3/3));
   background-color: #fafafa;
-  border-radius: 0;
 }
 
 .emotion-4 svg {

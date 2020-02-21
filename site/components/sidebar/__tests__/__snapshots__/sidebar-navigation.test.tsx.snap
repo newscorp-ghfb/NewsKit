@@ -95,7 +95,6 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
 }
 
 .emotion-6 {
-  color: #2F75D7;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition-property: color;
@@ -104,18 +103,19 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2F75D7;
 }
 
-.emotion-6:visited {
+.emotion-6:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-6:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-6:visited:not(:disabled) {
   color: #903D91;
-}
-
-.emotion-6:hover {
-  color: #2F75D7;
-}
-
-.emotion-6:active {
-  color: #2F75D7;
 }
 
 <nav
@@ -718,7 +718,6 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
 }
 
 .emotion-6 {
-  color: #2F75D7;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition-property: color;
@@ -727,18 +726,19 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2F75D7;
 }
 
-.emotion-6:visited {
+.emotion-6:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-6:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-6:visited:not(:disabled) {
   color: #903D91;
-}
-
-.emotion-6:hover {
-  color: #2F75D7;
-}
-
-.emotion-6:active {
-  color: #2F75D7;
 }
 
 .emotion-4 {
@@ -1042,7 +1042,6 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
 }
 
 .emotion-3 {
-  color: #2F75D7;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition-property: color;
@@ -1051,18 +1050,19 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2F75D7;
 }
 
-.emotion-3:visited {
+.emotion-3:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-3:visited:not(:disabled) {
   color: #903D91;
-}
-
-.emotion-3:hover {
-  color: #2F75D7;
-}
-
-.emotion-3:active {
-  color: #2F75D7;
 }
 
 .emotion-2 {

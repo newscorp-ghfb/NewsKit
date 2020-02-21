@@ -15,10 +15,10 @@ import {SizingKeys} from '../themes';
 import {Stack, StackProps} from '../stack';
 import {getStylePresetFromTheme} from '../utils/style-preset';
 
-export const trackStylePresetDefault = 'interactive030';
-export const indicatorStylePresetDefault = 'interactive010';
-const thumbStylePresetDefault = 'interactive020';
-const labelStylePresetDefault = 'interactive010Inverse';
+export const trackStylePresetDefault = 'sliderTrack';
+export const indicatorStylePresetDefault = 'sliderIndicatorTrack';
+const thumbStylePresetDefault = 'sliderThumb';
+const labelStylePresetDefault = 'sliderLabels';
 const thumbSizeDefault: SizingKeys = 'sizing060';
 const trackSizeDefault: SizingKeys = 'sizing030';
 const labelStackSpaceDefault: SizingKeys = 'sizing030';

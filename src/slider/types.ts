@@ -23,10 +23,11 @@ export interface ThumbLabelProps extends Omit<StyledTrackProps, '$trackSize'> {
 }
 
 export interface SliderStylePresets {
-  $indicatorStylePreset?: string;
-  $thumbStylePreset?: string;
-  $labelStylePreset?: string;
-  $trackStylePreset?: string;
+  $sliderIndicatorTrackStylePreset?: string;
+  $sliderThumbStylePreset?: string;
+  $sliderLabelsStylePreset?: string;
+  $sliderThumbLabelStylePreset?: string;
+  $sliderTrackStylePreset?: string;
 }
 
 // see https://github.com/tajo/react-range#range--props

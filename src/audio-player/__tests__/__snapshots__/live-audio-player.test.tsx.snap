@@ -192,7 +192,6 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   height: 0;
   padding-top: calc(100% * (1/1));
   background-color: #fafafa;
-  border-radius: 100vw;
 }
 
 .emotion-4 svg {
@@ -374,7 +373,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #e4e4e4;
+  background-color: #f0f0f0;
   border-radius: 100vw;
   margin: calc(24px/2 - 8px/2) calc(24px/2);
   height: 8px;
@@ -386,7 +385,6 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
-  color: #0A68C1;
   border-radius: 100vw;
   height: 24px;
   width: 24px;
@@ -403,27 +401,17 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-17 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-17:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+  border-width: 2px;
 }
 
-.emotion-17:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-17:disabled {
-  background-color: #f0f0f0;
-  border-color: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-18:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-17:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-22 {
@@ -550,31 +538,8 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  color: #535353;
   margin-right: 8px;
-}
-
-.emotion-28 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-28:disabled {
-  background-color: #f0f0f0;
-  border-color: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-26:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-28:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-27 {
@@ -623,7 +588,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #e4e4e4;
+  background-color: #f0f0f0;
   border-radius: 100vw;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -635,7 +600,6 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
-  color: #0A68C1;
   border-radius: 100vw;
   height: 16px;
   width: 16px;
@@ -652,20 +616,17 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-29 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-29:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+  border-width: 2px;
 }
 
-.emotion-29:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-29:disabled {
-  background-color: #f0f0f0;
+.emotion-29:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-33 {
@@ -677,24 +638,8 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  color: #535353;
   margin-left: 8px;
-}
-
-.emotion-33 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-33:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-33:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-56 {
@@ -748,9 +693,8 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #0A68C1;
-  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -769,29 +713,15 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-38:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-38:hover:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
+  background-color: #e6f4ff;
 }
 
 .emotion-38:active:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-38:active:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
-}
-
-.emotion-38:focus:not(:disabled) {
-  border-width: 2px;
+  background-color: #d5ebff;
 }
 
 .emotion-38:disabled {
-  background-color: #f0f0f0;
+  color: #9c9c9c;
 }
 
 .emotion-38:disabled svg {
@@ -863,7 +793,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: calc(8px * 0.25);
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -887,14 +817,11 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 .emotion-46:hover:not(:disabled) {
   background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
 .emotion-46:active:not(:disabled) {
   background-color: #01396E;
-}
-
-.emotion-46:focus:not(:disabled) {
-  border-width: 2px;
 }
 
 .emotion-46:disabled {
@@ -1574,7 +1501,6 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   height: 0;
   padding-top: calc(100% * (1/1));
   background-color: #fafafa;
-  border-radius: 100vw;
 }
 
 .emotion-4 svg {
@@ -1756,7 +1682,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #e4e4e4;
+  background-color: #f0f0f0;
   border-radius: 100vw;
   margin: calc(24px/2 - 8px/2) calc(24px/2);
   height: 8px;
@@ -1768,7 +1694,6 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
-  color: #0A68C1;
   border-radius: 100vw;
   height: 24px;
   width: 24px;
@@ -1785,20 +1710,17 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-17 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-17:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+  border-width: 2px;
 }
 
-.emotion-17:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-17:disabled {
-  background-color: #f0f0f0;
+.emotion-17:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-22 {
@@ -1925,24 +1847,8 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  color: #535353;
   margin-right: 8px;
-}
-
-.emotion-28 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-28:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-28:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-27 {
@@ -1991,7 +1897,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #e4e4e4;
+  background-color: #f0f0f0;
   border-radius: 100vw;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -2003,7 +1909,6 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
-  color: #0A68C1;
   border-radius: 100vw;
   height: 16px;
   width: 16px;
@@ -2020,27 +1925,17 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-29 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-29:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+  border-width: 2px;
 }
 
-.emotion-29:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-29:disabled {
-  background-color: #f0f0f0;
-  border-color: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-18:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-29:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-33 {
@@ -2052,24 +1947,8 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  color: #535353;
   margin-left: 8px;
-}
-
-.emotion-33 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-33:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-33:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-56 {
@@ -2123,9 +2002,8 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #0A68C1;
-  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -2144,29 +2022,15 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-38:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-38:hover:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
+  background-color: #e6f4ff;
 }
 
 .emotion-38:active:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-38:active:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
-}
-
-.emotion-38:focus:not(:disabled) {
-  border-width: 2px;
+  background-color: #d5ebff;
 }
 
 .emotion-38:disabled {
-  background-color: #f0f0f0;
+  color: #9c9c9c;
 }
 
 .emotion-38:disabled svg {
@@ -2238,7 +2102,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: calc(8px * 0.25);
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -2262,14 +2126,11 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 .emotion-46:hover:not(:disabled) {
   background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
 .emotion-46:active:not(:disabled) {
   background-color: #01396E;
-}
-
-.emotion-46:focus:not(:disabled) {
-  border-width: 2px;
 }
 
 .emotion-46:disabled {
@@ -2949,7 +2810,6 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   height: 0;
   padding-top: calc(100% * (1/1));
   background-color: #fafafa;
-  border-radius: 100vw;
 }
 
 .emotion-4 svg {
@@ -3131,7 +2991,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #e4e4e4;
+  background-color: #f0f0f0;
   border-radius: 100vw;
   margin: calc(24px/2 - 8px/2) calc(24px/2);
   height: 8px;
@@ -3143,7 +3003,6 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
-  color: #0A68C1;
   border-radius: 100vw;
   height: 24px;
   width: 24px;
@@ -3160,27 +3019,17 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 }
 
 .emotion-17 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-17:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+  border-width: 2px;
 }
 
-.emotion-17:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-17:disabled {
-  background-color: #f0f0f0;
-  border-color: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-18:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-17:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-22 {
@@ -3307,24 +3156,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  color: #535353;
   margin-right: 8px;
-}
-
-.emotion-28 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-28:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-28:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-27 {
@@ -3373,7 +3206,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #e4e4e4;
+  background-color: #f0f0f0;
   border-radius: 100vw;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -3385,7 +3218,6 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
-  color: #0A68C1;
   border-radius: 100vw;
   height: 16px;
   width: 16px;
@@ -3402,20 +3234,17 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 }
 
 .emotion-29 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-29:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+  border-width: 2px;
 }
 
-.emotion-29:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-29:disabled {
-  background-color: #f0f0f0;
+.emotion-29:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-33 {
@@ -3427,24 +3256,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  color: #535353;
   margin-left: 8px;
-}
-
-.emotion-33 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-33:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-33:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-56 {
@@ -3498,9 +3311,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #0A68C1;
-  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -3519,29 +3331,15 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 }
 
 .emotion-38:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-38:hover:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
+  background-color: #e6f4ff;
 }
 
 .emotion-38:active:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-38:active:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
-}
-
-.emotion-38:focus:not(:disabled) {
-  border-width: 2px;
+  background-color: #d5ebff;
 }
 
 .emotion-38:disabled {
-  background-color: #f0f0f0;
+  color: #9c9c9c;
 }
 
 .emotion-38:disabled svg {
@@ -3613,7 +3411,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: calc(8px * 0.25);
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -3637,14 +3435,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 
 .emotion-46:hover:not(:disabled) {
   background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
 .emotion-46:active:not(:disabled) {
   background-color: #01396E;
-}
-
-.emotion-46:focus:not(:disabled) {
-  border-width: 2px;
 }
 
 .emotion-46:disabled {
@@ -4324,7 +4119,6 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   height: 0;
   padding-top: calc(100% * (1/1));
   background-color: #fafafa;
-  border-radius: 100vw;
 }
 
 .emotion-4 svg {
@@ -4506,7 +4300,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #e4e4e4;
+  background-color: #f0f0f0;
   border-radius: 100vw;
   margin: calc(24px/2 - 8px/2) calc(24px/2);
   height: 8px;
@@ -4518,7 +4312,6 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
-  color: #0A68C1;
   border-radius: 100vw;
   height: 24px;
   width: 24px;
@@ -4535,27 +4328,17 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 }
 
 .emotion-17 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-17:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+  border-width: 2px;
 }
 
-.emotion-17:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-17:disabled {
-  background-color: #f0f0f0;
-  border-color: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-18:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-17:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-22 {
@@ -4682,24 +4465,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  color: #535353;
   margin-right: 8px;
-}
-
-.emotion-28 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-28:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-28:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-27 {
@@ -4748,7 +4515,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #e4e4e4;
+  background-color: #f0f0f0;
   border-radius: 100vw;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -4760,7 +4527,6 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
-  color: #0A68C1;
   border-radius: 100vw;
   height: 16px;
   width: 16px;
@@ -4777,20 +4543,17 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 }
 
 .emotion-29 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-29:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+  border-width: 2px;
 }
 
-.emotion-29:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-29:disabled {
-  background-color: #f0f0f0;
+.emotion-29:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-33 {
@@ -4802,24 +4565,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  color: #535353;
   margin-left: 8px;
-}
-
-.emotion-33 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-33:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-33:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-56 {
@@ -4873,9 +4620,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #0A68C1;
-  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -4894,29 +4640,15 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 }
 
 .emotion-38:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-38:hover:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
+  background-color: #e6f4ff;
 }
 
 .emotion-38:active:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-38:active:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
-}
-
-.emotion-38:focus:not(:disabled) {
-  border-width: 2px;
+  background-color: #d5ebff;
 }
 
 .emotion-38:disabled {
-  background-color: #f0f0f0;
+  color: #9c9c9c;
 }
 
 .emotion-38:disabled svg {
@@ -4988,7 +4720,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: calc(8px * 0.25);
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -5012,14 +4744,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 
 .emotion-46:hover:not(:disabled) {
   background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
 .emotion-46:active:not(:disabled) {
   background-color: #01396E;
-}
-
-.emotion-46:focus:not(:disabled) {
-  border-width: 2px;
 }
 
 .emotion-46:disabled {
@@ -5699,7 +5428,6 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   height: 0;
   padding-top: calc(100% * (1/1));
   background-color: #fafafa;
-  border-radius: 100vw;
 }
 
 .emotion-4 svg {
@@ -5881,7 +5609,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #e4e4e4;
+  background-color: #f0f0f0;
   border-radius: 100vw;
   margin: calc(24px/2 - 8px/2) calc(24px/2);
   height: 8px;
@@ -5893,7 +5621,6 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
-  color: #0A68C1;
   border-radius: 100vw;
   height: 24px;
   width: 24px;
@@ -5910,27 +5637,17 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 }
 
 .emotion-17 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-17:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+  border-width: 2px;
 }
 
-.emotion-17:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-17:disabled {
-  background-color: #f0f0f0;
-  border-color: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-18:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-17:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-22 {
@@ -6057,24 +5774,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  color: #535353;
   margin-right: 8px;
-}
-
-.emotion-28 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-28:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-28:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-27 {
@@ -6123,7 +5824,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #e4e4e4;
+  background-color: #f0f0f0;
   border-radius: 100vw;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -6135,7 +5836,6 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
-  color: #0A68C1;
   border-radius: 100vw;
   height: 16px;
   width: 16px;
@@ -6152,20 +5852,17 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 }
 
 .emotion-29 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-29:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+  border-width: 2px;
 }
 
-.emotion-29:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-29:disabled {
-  background-color: #f0f0f0;
+.emotion-29:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-33 {
@@ -6177,24 +5874,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  color: #535353;
   margin-left: 8px;
-}
-
-.emotion-33 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-33:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-33:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-56 {
@@ -6248,9 +5929,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #0A68C1;
-  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -6269,29 +5949,15 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 }
 
 .emotion-38:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-38:hover:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
+  background-color: #e6f4ff;
 }
 
 .emotion-38:active:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-38:active:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
-}
-
-.emotion-38:focus:not(:disabled) {
-  border-width: 2px;
+  background-color: #d5ebff;
 }
 
 .emotion-38:disabled {
-  background-color: #f0f0f0;
+  color: #9c9c9c;
 }
 
 .emotion-38:disabled svg {
@@ -6363,7 +6029,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: calc(8px * 0.25);
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -6383,14 +6049,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 
 .emotion-46:hover:not(:disabled) {
   background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
 .emotion-46:active:not(:disabled) {
   background-color: #01396E;
-}
-
-.emotion-46:focus:not(:disabled) {
-  border-width: 2px;
 }
 
 .emotion-46:disabled {
@@ -7070,7 +6733,6 @@ exports[`Live AudioPlayer render default player 1`] = `
   height: 0;
   padding-top: calc(100% * (1/1));
   background-color: #fafafa;
-  border-radius: 100vw;
 }
 
 .emotion-4 svg {
@@ -7252,7 +6914,7 @@ exports[`Live AudioPlayer render default player 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #e4e4e4;
+  background-color: #f0f0f0;
   border-radius: 100vw;
   margin: calc(24px/2 - 8px/2) calc(24px/2);
   height: 8px;
@@ -7264,7 +6926,6 @@ exports[`Live AudioPlayer render default player 1`] = `
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
-  color: #0A68C1;
   border-radius: 100vw;
   height: 24px;
   width: 24px;
@@ -7281,27 +6942,17 @@ exports[`Live AudioPlayer render default player 1`] = `
 }
 
 .emotion-11 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-11:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+  border-width: 2px;
 }
 
-.emotion-11:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-11:disabled {
-  background-color: #f0f0f0;
-  border-color: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-15:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-11:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-16 {
@@ -7428,24 +7079,8 @@ exports[`Live AudioPlayer render default player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  color: #535353;
   margin-right: 8px;
-}
-
-.emotion-22 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-22:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-22:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-21 {
@@ -7494,7 +7129,7 @@ exports[`Live AudioPlayer render default player 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #e4e4e4;
+  background-color: #f0f0f0;
   border-radius: 100vw;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -7506,7 +7141,6 @@ exports[`Live AudioPlayer render default player 1`] = `
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
-  color: #0A68C1;
   border-radius: 100vw;
   height: 16px;
   width: 16px;
@@ -7523,20 +7157,17 @@ exports[`Live AudioPlayer render default player 1`] = `
 }
 
 .emotion-23 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-23:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+  border-width: 2px;
 }
 
-.emotion-23:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-23:disabled {
-  background-color: #f0f0f0;
+.emotion-23:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-27 {
@@ -7548,24 +7179,8 @@ exports[`Live AudioPlayer render default player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  color: #535353;
   margin-left: 8px;
-}
-
-.emotion-27 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-27:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-27:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-50 {
@@ -7619,9 +7234,8 @@ exports[`Live AudioPlayer render default player 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #0A68C1;
-  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -7640,29 +7254,15 @@ exports[`Live AudioPlayer render default player 1`] = `
 }
 
 .emotion-32:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-32:hover:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
+  background-color: #e6f4ff;
 }
 
 .emotion-32:active:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-32:active:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
-}
-
-.emotion-32:focus:not(:disabled) {
-  border-width: 2px;
+  background-color: #d5ebff;
 }
 
 .emotion-32:disabled {
-  background-color: #f0f0f0;
+  color: #9c9c9c;
 }
 
 .emotion-32:disabled svg {
@@ -7734,7 +7334,7 @@ exports[`Live AudioPlayer render default player 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: calc(8px * 0.25);
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -7758,14 +7358,11 @@ exports[`Live AudioPlayer render default player 1`] = `
 
 .emotion-40:hover:not(:disabled) {
   background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
 .emotion-40:active:not(:disabled) {
   background-color: #01396E;
-}
-
-.emotion-40:focus:not(:disabled) {
-  border-width: 2px;
 }
 
 .emotion-40:disabled {
@@ -8349,7 +7946,6 @@ exports[`Live AudioPlayer render live player 1`] = `
   height: 0;
   padding-top: calc(100% * (1/1));
   background-color: #fafafa;
-  border-radius: 100vw;
 }
 
 .emotion-4 svg {
@@ -8576,27 +8172,11 @@ exports[`Live AudioPlayer render live player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  color: #535353;
   margin-right: 8px;
 }
 
-.emotion-23 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-23:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-23:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-22 {
+.emotion-20 {
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -8642,7 +8222,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #e4e4e4;
+  background-color: #f0f0f0;
   border-radius: 100vw;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -8654,7 +8234,6 @@ exports[`Live AudioPlayer render live player 1`] = `
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
-  color: #0A68C1;
   border-radius: 100vw;
   height: 16px;
   width: 16px;
@@ -8670,23 +8249,18 @@ exports[`Live AudioPlayer render live player 1`] = `
   cursor: pointer;
 }
 
-.emotion-24 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-24:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-24:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-24:disabled {
-  background-color: #f0f0f0;
-  border-color: #9c9c9c;
+.emotion-22 svg {
+  fill: #9c9c9c;
   color: #9c9c9c;
+}
+
+.emotion-22:hover:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-22:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-28 {
@@ -8698,27 +8272,11 @@ exports[`Live AudioPlayer render live player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  color: #535353;
   margin-left: 8px;
 }
 
-.emotion-28 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-28:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-28:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-43 {
+.emotion-41 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8769,9 +8327,8 @@ exports[`Live AudioPlayer render live player 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #0A68C1;
-  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -8789,31 +8346,15 @@ exports[`Live AudioPlayer render live player 1`] = `
   color: #0A68C1;
 }
 
-.emotion-33:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-31:hover:not(:disabled) {
+  background-color: #e6f4ff;
 }
 
-.emotion-33:hover:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
+.emotion-31:active:not(:disabled) {
+  background-color: #d5ebff;
 }
 
-.emotion-33:active:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-33:active:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
-}
-
-.emotion-33:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-33:disabled {
-  background-color: #f0f0f0;
-  border-color: #9c9c9c;
+.emotion-31:disabled {
   color: #9c9c9c;
 }
 
@@ -8916,7 +8457,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: calc(8px * 0.25);
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -8940,17 +8481,14 @@ exports[`Live AudioPlayer render live player 1`] = `
 
 .emotion-37:hover:not(:disabled) {
   background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
 .emotion-37:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-37:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-37:disabled {
+.emotion-35:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
@@ -9002,18 +8540,10 @@ exports[`Live AudioPlayer render live player 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 24px;
-  padding: 4px 8px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  background-color: #EF1703;
-  color: #FFFFFF;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  color: #2e2e2e;
   width: 48px;
   height: 24px;
   padding: 0;
@@ -9024,44 +8554,17 @@ exports[`Live AudioPlayer render live player 1`] = `
   margin-right: 16px;
 }
 
-.emotion-9 svg {
-  width: 16px;
-  height: 16px;
+.emotion-7 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-9 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+.emotion-7:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
+.emotion-7:active:not(:disabled) {
+  background-color: #f0f0f0;
 }
 
 .emotion-10 {
@@ -9609,7 +9112,6 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   height: 0;
   padding-top: calc(100% * (1/1));
   background-color: #fafafa;
-  border-radius: 100vw;
 }
 
 .emotion-4 svg {
@@ -9791,7 +9293,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #e4e4e4;
+  background-color: #f0f0f0;
   border-radius: 100vw;
   margin: calc(24px/2 - 8px/2) calc(24px/2);
   height: 8px;
@@ -9803,7 +9305,6 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
-  color: #0A68C1;
   border-radius: 100vw;
   height: 24px;
   width: 24px;
@@ -9820,20 +9321,17 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
 }
 
 .emotion-17 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-17:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+  border-width: 2px;
 }
 
-.emotion-17:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-17:disabled {
-  background-color: #f0f0f0;
+.emotion-17:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-22 {
@@ -9960,24 +9458,8 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  color: #535353;
   margin-right: 8px;
-}
-
-.emotion-28 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-28:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-28:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-27 {
@@ -10026,7 +9508,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #e4e4e4;
+  background-color: #f0f0f0;
   border-radius: 100vw;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -10038,7 +9520,6 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
-  color: #0A68C1;
   border-radius: 100vw;
   height: 16px;
   width: 16px;
@@ -10055,27 +9536,17 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
 }
 
 .emotion-29 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-29:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+  border-width: 2px;
 }
 
-.emotion-29:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-29:disabled {
-  background-color: #f0f0f0;
-  border-color: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-18:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-29:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-33 {
@@ -10087,24 +9558,8 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  color: #535353;
   margin-left: 8px;
-}
-
-.emotion-33 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-33:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-33:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-56 {
@@ -10158,9 +9613,8 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #0A68C1;
-  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -10179,29 +9633,15 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
 }
 
 .emotion-38:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-38:hover:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
+  background-color: #e6f4ff;
 }
 
 .emotion-38:active:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-38:active:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
-}
-
-.emotion-38:focus:not(:disabled) {
-  border-width: 2px;
+  background-color: #d5ebff;
 }
 
 .emotion-38:disabled {
-  background-color: #f0f0f0;
+  color: #9c9c9c;
 }
 
 .emotion-38:disabled svg {
@@ -10273,7 +9713,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: calc(8px * 0.25);
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -10297,14 +9737,11 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
 
 .emotion-46:hover:not(:disabled) {
   background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
 .emotion-46:active:not(:disabled) {
   background-color: #01396E;
-}
-
-.emotion-46:focus:not(:disabled) {
-  border-width: 2px;
 }
 
 .emotion-46:disabled {
@@ -11045,7 +10482,6 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   height: 0;
   padding-top: calc(100% * (1/1));
   background-color: #fafafa;
-  border-radius: 100vw;
 }
 
 .emotion-4 svg {
@@ -11227,7 +10663,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #e4e4e4;
+  background-color: #f0f0f0;
   border-radius: 100vw;
   margin: calc(24px/2 - 8px/2) calc(24px/2);
   height: 8px;
@@ -11239,7 +10675,6 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
-  color: #0A68C1;
   border-radius: 100vw;
   height: 24px;
   width: 24px;
@@ -11256,20 +10691,17 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 }
 
 .emotion-18 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-18:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+  border-width: 2px;
 }
 
-.emotion-18:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-18:disabled {
-  background-color: #f0f0f0;
+.emotion-18:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-23 {
@@ -11396,24 +10828,8 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  color: #535353;
   margin-right: 8px;
-}
-
-.emotion-29 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-29:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-29:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-28 {
@@ -11462,7 +10878,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #e4e4e4;
+  background-color: #f0f0f0;
   border-radius: 100vw;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
@@ -11474,7 +10890,6 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
-  color: #0A68C1;
   border-radius: 100vw;
   height: 16px;
   width: 16px;
@@ -11491,27 +10906,17 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 }
 
 .emotion-30 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-30:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
+  border-width: 2px;
 }
 
-.emotion-30:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-30:disabled {
-  background-color: #f0f0f0;
-  border-color: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-19:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-30:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-34 {
@@ -11523,24 +10928,8 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  color: #535353;
   margin-left: 8px;
-}
-
-.emotion-34 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-34:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-34:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-57 {
@@ -11594,9 +10983,8 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: #0A68C1;
-  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -11615,29 +11003,15 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 }
 
 .emotion-39:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-39:hover:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
+  background-color: #e6f4ff;
 }
 
 .emotion-39:active:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-39:active:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
-}
-
-.emotion-39:focus:not(:disabled) {
-  border-width: 2px;
+  background-color: #d5ebff;
 }
 
 .emotion-39:disabled {
-  background-color: #f0f0f0;
+  color: #9c9c9c;
 }
 
 .emotion-39:disabled svg {
@@ -11709,7 +11083,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: calc(8px * 0.25);
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -11733,14 +11107,11 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 
 .emotion-47:hover:not(:disabled) {
   background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
 .emotion-47:active:not(:disabled) {
   background-color: #01396E;
-}
-
-.emotion-47:focus:not(:disabled) {
-  border-width: 2px;
 }
 
 .emotion-47:disabled {

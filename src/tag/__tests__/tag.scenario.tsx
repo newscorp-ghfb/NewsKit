@@ -33,11 +33,11 @@ export const component = () => (
     </span>
     <StorybookHeading>Style Presets</StorybookHeading>
     <Block>
-      <Tag href="http://example.com">interactive010</Tag>
+      <Tag href="http://example.com">tagPrimary</Tag>
     </Block>
     <Block>
-      <Tag $stylePreset="interactive010Inverse" href="http://example.com">
-        interactive010Inverse
+      <Tag href="http://example.com" $stylePreset="buttonSolidPrimary">
+        buttonSolidPrimary
       </Tag>
     </Block>
   </React.Fragment>

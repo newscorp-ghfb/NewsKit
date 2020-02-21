@@ -34,29 +34,29 @@ They can be thought of as a subset of CSS used to define look and feel of compon
 Not all properties will style a given component, you should refer to specific component's to see what's supported.
 
 ```
-{
-  interactive010: {
-    base: {
-      backgroundColor: colorPrimitives.brand010,
-      color: colorPrimitives.inkInverse,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
-      iconColor: colorPrimitives.inkInverse,
-    },
-    hover: {
-      backgroundColor: colorPrimitives.blue070,
-    },
-    active: {
-      backgroundColor: colorPrimitives.blue080,
-    },
-    focus: {
-      borderWidth: borderPrimitives.borderWidth020,
-    },
-    disabled: {
-      backgroundColor: colorPrimitives.neutral020,
-      color: colorPrimitives.inkNonEssential,
-    },
-  }
-}
+const iconButtonSolidPrimary: StylePresetStates = {
+  base: {
+    backgroundColor: colorPrimitives.interactive010,
+    borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
+    color: colorPrimitives.inkInverse,
+    iconColor: colorPrimitives.inkInverse,
+  },
+  hover: {
+    backgroundColor: colorPrimitives.interactive020,
+    boxShadow: shadowPrimitives.shadow020,
+  },
+  active: {
+    backgroundColor: colorPrimitives.interactive030,
+  },
+  disabled: {
+    backgroundColor: colorPrimitives.disabled,
+    color: colorPrimitives.inkNonEssential,
+    iconColor: colorPrimitives.inkNonEssential,
+  },
+  loading: {
+    iconColor: colorPrimitives.white,
+  },
+};
 ```
 
 The base theme defines default style presets for each component for instance

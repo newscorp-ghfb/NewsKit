@@ -1,32 +1,20 @@
 import React from 'react';
 import {
-  getColorFromTheme,
   getAnimationFromTheme,
   getTypePresetFromTheme,
   styled,
 } from '../utils/style';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
 import {LinkProps} from './types';
+import {getStylePresetFromTheme} from '../utils/style-preset';
 
 const StyledLink = styled.a<LinkProps>`
   ${getTypePresetFromTheme(undefined, '$font')};
-  color: ${getColorFromTheme('linkText', '$color')};
   text-decoration: ${({$noUnderline}) => ($noUnderline ? `none` : `underline`)};
   transition-property: color;
   transition-duration: ${getAnimationFromTheme('animationDuration020')};
   transition-timing-function: ${getAnimationFromTheme('animationEaseOut')};
-
-  :visited {
-    color: ${getColorFromTheme('linkVisited', '$color')};
-  }
-
-  :hover {
-    color: ${getColorFromTheme('linkHover', '$color')};
-  }
-
-  :active {
-    color: ${getColorFromTheme('linkActive', '$color')};
-  }
+  ${getStylePresetFromTheme('linkPrimary', '$stylePreset')}
 `;
 
 export const Link: React.FC<LinkProps> = props => {

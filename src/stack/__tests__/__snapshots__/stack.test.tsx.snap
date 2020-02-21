@@ -30,44 +30,23 @@ exports[`Stack renders stack when no properties are set 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -157,44 +136,23 @@ exports[`Stack renders stack with flex grow and shrink 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -284,44 +242,23 @@ exports[`Stack renders stack with flex grow and shrink 2`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -411,31 +348,23 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -548,31 +477,23 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -685,44 +606,23 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -865,44 +765,23 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -1041,44 +920,23 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -1221,44 +1079,23 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -1397,44 +1234,23 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -1543,44 +1359,23 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -1689,44 +1484,23 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -1835,44 +1609,23 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -1981,44 +1734,23 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -2127,39 +1859,23 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -2274,44 +1990,23 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -2424,31 +2119,23 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -2561,44 +2248,23 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -2741,44 +2407,23 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -2917,44 +2562,23 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -3097,44 +2721,23 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -3273,44 +2876,23 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -3419,39 +3001,23 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -3560,44 +3126,23 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -3706,44 +3251,23 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -3852,31 +3376,23 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -3985,44 +3501,23 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -4137,39 +3632,23 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -4282,44 +3761,23 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -4432,39 +3890,23 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -4607,44 +4049,23 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -4783,74 +4204,23 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
 }
 
 .emotion-12 {
@@ -4963,44 +4333,23 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -5139,44 +4488,23 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -5285,44 +4613,23 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -5431,44 +4738,23 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -5577,44 +4863,23 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-3 {
@@ -5723,74 +4988,23 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
 }
 
 .emotion-9 {
@@ -5869,39 +5083,23 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -6016,44 +5214,23 @@ exports[`Stack renders where the stack flow is invalid 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -6162,44 +5339,23 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -6312,44 +5468,23 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -6462,39 +5597,23 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -6637,44 +5756,23 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -6813,44 +5911,23 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -6993,44 +6070,23 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -7169,44 +6225,23 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -7315,44 +6350,23 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -7461,44 +6475,23 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -7607,44 +6600,23 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -7753,74 +6725,23 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
 }
 
 .emotion-9 {
@@ -7899,44 +6820,23 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -8051,44 +6951,23 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -8201,31 +7080,23 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -8338,44 +7209,23 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -8518,44 +7368,23 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -8694,44 +7523,23 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -8874,44 +7682,23 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -9050,44 +7837,23 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -9196,31 +7962,23 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -9348,44 +8106,23 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -9475,44 +8212,23 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -9621,44 +8337,23 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -9767,74 +8462,23 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
 }
 
 .emotion-9 {
@@ -9923,44 +8567,23 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -10073,31 +8696,23 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -10210,44 +8825,23 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -10390,44 +8984,23 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -10566,44 +9139,23 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -10746,44 +9298,23 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -10922,44 +9453,23 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -11068,44 +9578,23 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -11214,44 +9703,23 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -11360,44 +9828,23 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -11509,44 +9956,23 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -11655,44 +10081,23 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   border-style: solid;
+  border-color: #e4e4e4;
   border-width: 1px;
-  background-color: transparent;
   color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
 }
 
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
+.emotion-0 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.emotion-2:hover:not(:disabled) {
-  border-color: #535353;
+.emotion-0:hover:not(:disabled) {
+  background-color: #fafafa;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
 }
 
 .emotion-1 {

@@ -30,7 +30,7 @@ Custom props are detailed below:
     Set the size of the button. Possible values: Small, Medium and Large.
     Default styling: Small.
   </Prop>
-  <Prop name="$stylePreset" type="string" default="interactive010">
+  <Prop name="$stylePreset" type="string" default="buttonSolidPrimary">
     Set the style presets of the button.
   </Prop>
   <Prop name="icon" type="React.ComponentType">
@@ -84,6 +84,40 @@ Custom props are detailed below:
         {
           label: 'buttonOutlinedPrimary',
           value: 'buttonOutlinedPrimary',
+        },
+        {
+          label: 'buttonMinimalPrimary',
+          value: 'buttonMinimalPrimary',
+        },
+      ],
+    },
+    {
+      name: 'Icon',
+      propName: 'icon',
+      options: [
+        {
+          label: 'no icon',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'Email Icon',
+          value: Email,
+        },
+        {
+          label: 'Pause Icon',
+          value: Pause,
+        },
+      ],
+    },
+    {
+      name: 'Icon Placement',
+      propName: 'iconPlacement',
+      options: [
+        {
+          label: 'IconPlacement.Start',
+          value: IconPlacement.Start,
+          isDefault: true,
         },
         {
           label: 'buttonMinimalPrimary',

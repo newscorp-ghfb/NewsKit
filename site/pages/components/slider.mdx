@@ -78,23 +78,23 @@ NewsKit also exports a StatefulSlider component which has the same props (except
     receives the current thumb value as its children. If left undefined or set
     falsy, no thumb label is rendered.
   </Prop>
-  <Prop name="$trackStylePreset" type="string" default="interactive030">
+  <Prop name="$sliderTrackStylePreset" type="string" default="sliderTrack">
     If provided, this overrides the style preset applied to the slider track.
   </Prop>
-  <Prop name="$indicatorStylePreset" type="string" default="interactive010">
+  <Prop name="$sliderIndicatorTrackStylePreset" type="string" default="sliderIndicatorTrack">
     If provided, this overrides the style preset applied to the slider
     indicator. Only the background colour of this preset is used, other
     properties such as borders are ignored and will take the style of the
-    $trackStylePreset.
+    $sliderTrackStylePreset.
   </Prop>
-  <Prop name="$thumbStylePreset" type="string" default="interactive020">
+  <Prop name="$sliderThumbStylePreset" type="string" default="sliderThumb">
     If provided, this overrides the style preset applied to the slider thumb.
   </Prop>
-  <Prop name="$labelStylePreset" type="string" default="interactive010Inverse">
+  <Prop name="$sliderLabelsStylePreset" type="string" default="sliderLabels">
     If provided, this overrides the style preset applied to the in-built slider
     labels. This includes string min and max labels, as well as the thumb label.
     Custom label components passed in to the slider will not have the
-    $labelStylePreset applied.
+    $sliderLabelsStylePreset applied.
   </Prop>
   <Prop
     name="renderTrack"

@@ -45,10 +45,11 @@ export const Slider: React.FC<SliderProps> = ({
   labelPosition = LabelPosition.Inline,
   thumbLabel,
   dataTestId = 'slider',
-  $trackStylePreset,
-  $indicatorStylePreset,
-  $thumbStylePreset,
-  $labelStylePreset,
+  $sliderTrackStylePreset,
+  $sliderIndicatorTrackStylePreset,
+  $sliderThumbStylePreset,
+  $sliderThumbLabelStylePreset,
+  $sliderLabelsStylePreset,
   $trackSize,
   $thumbSize,
   $labelStackSpace,
@@ -68,14 +69,14 @@ export const Slider: React.FC<SliderProps> = ({
         vertical={vertical}
         style={getTrackBackgroundStyle(
           theme,
-          $trackStylePreset,
-          $indicatorStylePreset,
+          $sliderTrackStylePreset,
+          $sliderIndicatorTrackStylePreset,
           values,
           min,
           max,
           vertical,
         )}
-        $stylePreset={$trackStylePreset}
+        $stylePreset={$sliderTrackStylePreset}
         $trackSize={$trackSize}
         $thumbSize={$thumbSize}
         data-testid={`${dataTestId}-track`}
@@ -93,7 +94,7 @@ export const Slider: React.FC<SliderProps> = ({
         {...p}
         disabled={disabled}
         aria-label={ariaLabel}
-        $stylePreset={$thumbStylePreset}
+        $stylePreset={$sliderThumbStylePreset}
         $thumbSize={$thumbSize}
         values={values}
         isDragged={isDragged}
@@ -104,7 +105,7 @@ export const Slider: React.FC<SliderProps> = ({
           isDragged={isDragged}
           thumbLabel={thumbLabel}
           vertical={vertical}
-          $stylePreset={$labelStylePreset}
+          $stylePreset={$sliderThumbLabelStylePreset}
         />
       </StyledThumb>
     ));
@@ -112,7 +113,7 @@ export const Slider: React.FC<SliderProps> = ({
   const minimumLabel = minLabel && (
     <StyledSliderLabel
       labelPosition={labelPosition}
-      $stylePreset={$labelStylePreset}
+      $stylePreset={$sliderLabelsStylePreset}
       $thumbSize={$thumbSize}
       disabled={disabled}
       vertical={vertical}
@@ -126,7 +127,7 @@ export const Slider: React.FC<SliderProps> = ({
   const maximumLabel = maxLabel && (
     <StyledSliderLabel
       labelPosition={labelPosition}
-      $stylePreset={$labelStylePreset}
+      $stylePreset={$sliderLabelsStylePreset}
       $thumbSize={$thumbSize}
       disabled={disabled}
       vertical={vertical}

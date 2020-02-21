@@ -7,18 +7,23 @@ import {createTheme} from '../../themes';
 import {styled} from '../style';
 
 const TestSurface = styled.div<GetStylePresetFromThemeOptions>`
-  ${options => getStylePresetFromTheme('interactive010', undefined, options)}
+  ${options =>
+    getStylePresetFromTheme('iconButtonMinimalPrimary', undefined, options)}
 `;
 
 const OverridableTestSurface = styled.div<
   GetStylePresetFromThemeOptions & {stylePresetToUse: string}
 >`
   ${options =>
-    getStylePresetFromTheme('interactive010', 'stylePresetToUse', options)}
+    getStylePresetFromTheme(
+      'iconButtonMinimalPrimary',
+      'stylePresetToUse',
+      options,
+    )}
 `;
 
 describe('Surface Helper', () => {
-  test('getStylePresetFromTheme interactive010', () => {
+  test('getStylePresetFromTheme iconButtonMinimalPrimary', () => {
     const fragment = renderToFragmentWithTheme(TestSurface);
     expect(fragment).toMatchSnapshot();
   });
@@ -44,14 +49,14 @@ describe('Surface Helper', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('getStylePresetFromTheme interactive010 with borderRadius', () => {
+  test('getStylePresetFromTheme iconButtonMinimalPrimary with borderRadius', () => {
     const fragment = renderToFragmentWithTheme(TestSurface, {
       borderRadiusSize: 'sizing030',
     });
     expect(fragment).toMatchSnapshot();
   });
 
-  test('getStylePresetFromTheme interactive010 with disabled state', () => {
+  test('getStylePresetFromTheme iconButtonMinimalPrimary with disabled state', () => {
     const fragment = renderToFragmentWithTheme(
       TestSurface,
       {
@@ -60,7 +65,7 @@ describe('Surface Helper', () => {
       createTheme('test-style-preset', {
         themeOverrider: () => ({
           stylePresets: {
-            interactive010: {
+            iconButtonMinimalPrimary: {
               disabled: {
                 backgroundColor: '#FF0000',
               },
@@ -72,7 +77,7 @@ describe('Surface Helper', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('getStylePresetFromTheme interactive010 with loading state', () => {
+  test('getStylePresetFromTheme iconButtonMinimalPrimary with loading state', () => {
     const fragment = renderToFragmentWithTheme(
       TestSurface,
       {
@@ -81,7 +86,7 @@ describe('Surface Helper', () => {
       createTheme('test-style-preset', {
         themeOverrider: () => ({
           stylePresets: {
-            interactive010: {
+            iconButtonMinimalPrimary: {
               loading: {
                 backgroundColor: '#ffff00',
               },
@@ -93,7 +98,7 @@ describe('Surface Helper', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('getStylePresetFromTheme interactive010 with current state', () => {
+  test('getStylePresetFromTheme iconButtonMinimalPrimary with current state', () => {
     const fragment = renderToFragmentWithTheme(
       TestSurface,
       {
@@ -102,7 +107,7 @@ describe('Surface Helper', () => {
       createTheme('test-style-preset', {
         themeOverrider: () => ({
           stylePresets: {
-            interactive010: {
+            iconButtonMinimalPrimary: {
               current: {
                 backgroundColor: '#00ff00',
               },
@@ -114,7 +119,7 @@ describe('Surface Helper', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('getStylePresetFromTheme interactive010 with loading and current state', () => {
+  test('getStylePresetFromTheme iconButtonMinimalPrimary with loading and current state', () => {
     const fragment = renderToFragmentWithTheme(
       TestSurface,
       {
@@ -124,7 +129,7 @@ describe('Surface Helper', () => {
       createTheme('test-style-preset', {
         themeOverrider: () => ({
           stylePresets: {
-            interactive010: {
+            iconButtonMinimalPrimary: {
               current: {
                 backgroundColor: '#00ff00',
               },
@@ -139,7 +144,7 @@ describe('Surface Helper', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('getStylePresetFromTheme interactive010 with disabled and loading state', () => {
+  test('getStylePresetFromTheme iconButtonMinimalPrimary with disabled and loading state', () => {
     const fragment = renderToFragmentWithTheme(
       TestSurface,
       {
@@ -149,7 +154,7 @@ describe('Surface Helper', () => {
       createTheme('test-style-preset', {
         themeOverrider: () => ({
           stylePresets: {
-            interactive010: {
+            iconButtonMinimalPrimary: {
               current: {
                 backgroundColor: '#00ff00',
               },
@@ -164,14 +169,14 @@ describe('Surface Helper', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('getStylePresetFromTheme interactive010 without background-color styles', () => {
+  test('getStylePresetFromTheme iconButtonMinimalPrimary without background-color styles', () => {
     const fragment = renderToFragmentWithTheme(TestSurface, {
       omitStyles: ['backgroundColor'],
     });
     expect(fragment).toMatchSnapshot();
   });
 
-  test('getStylePresetFromTheme interactive010 without disabled state styles', () => {
+  test('getStylePresetFromTheme iconButtonMinimalPrimary without disabled state styles', () => {
     const fragment = renderToFragmentWithTheme(TestSurface, {
       omitStates: ['disabled'],
     });

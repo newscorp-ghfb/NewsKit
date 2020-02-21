@@ -33,8 +33,8 @@ export const component = () => (
       {sizes.map(size => (
         <CircularProgressIndicator
           $size={size as IconSizeKeys}
-          $trackStylePreset="circleLoaderTrack010Inverse"
-          $indicatorStylePreset="circleLoaderIndicator010Inverse"
+          $sliderTrackStylePreset="circularProgressIndicatorTrackInverse"
+          $sliderIndicatorTrackStylePreset="circularProgressIndicatorIndicatorInverse"
         />
       ))}
     </Container>

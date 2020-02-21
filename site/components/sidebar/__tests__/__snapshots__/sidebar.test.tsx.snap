@@ -31,7 +31,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-2 {
-  color: #2F75D7;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   -webkit-transition-property: color;
@@ -40,18 +39,19 @@ exports[`Sidebar renders correctly when closed 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2F75D7;
 }
 
-.emotion-2:visited {
+.emotion-2:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-2:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-2:visited:not(:disabled) {
   color: #903D91;
-}
-
-.emotion-2:hover {
-  color: #2F75D7;
-}
-
-.emotion-2:active {
-  color: #2F75D7;
 }
 
 .emotion-1 {
@@ -215,7 +215,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-27 {
-  color: #2F75D7;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition-property: color;
@@ -224,18 +223,19 @@ exports[`Sidebar renders correctly when closed 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2F75D7;
 }
 
-.emotion-27:visited {
+.emotion-27:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-27:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-27:visited:not(:disabled) {
   color: #903D91;
-}
-
-.emotion-27:hover {
-  color: #2F75D7;
-}
-
-.emotion-27:active {
-  color: #2F75D7;
 }
 
 .emotion-31 {
@@ -645,7 +645,6 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-2 {
-  color: #2F75D7;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   -webkit-transition-property: color;
@@ -654,18 +653,19 @@ exports[`Sidebar renders correctly when open 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2F75D7;
 }
 
-.emotion-2:visited {
+.emotion-2:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-2:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-2:visited:not(:disabled) {
   color: #903D91;
-}
-
-.emotion-2:hover {
-  color: #2F75D7;
-}
-
-.emotion-2:active {
-  color: #2F75D7;
 }
 
 .emotion-1 {
@@ -829,7 +829,6 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-27 {
-  color: #2F75D7;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition-property: color;
@@ -838,18 +837,19 @@ exports[`Sidebar renders correctly when open 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2F75D7;
 }
 
-.emotion-27:visited {
+.emotion-27:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-27:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-27:visited:not(:disabled) {
   color: #903D91;
-}
-
-.emotion-27:hover {
-  color: #2F75D7;
-}
-
-.emotion-27:active {
-  color: #2F75D7;
 }
 
 <div

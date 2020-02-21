@@ -106,6 +106,7 @@ const createDefaultTheme = (): Theme => ({
     borderPrimitives,
     borderRadiusPrimitives,
     overlayPrimitives,
+    shadowPrimitives,
   }),
   icons: {},
   zIndex: {

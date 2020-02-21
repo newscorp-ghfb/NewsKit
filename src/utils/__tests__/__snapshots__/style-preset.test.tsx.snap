@@ -1,31 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Surface Helper getStylePresetFromTheme interactive010 1`] = `
+exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #0A68C1;
-  color: #FFFFFF;
+  background-color: transparent;
+  color: #0A68C1;
 }
 
 .emotion-0 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #0A68C1;
+  color: #0A68C1;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #e6f4ff;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-0:focus:not(:disabled) {
-  border-width: 2px;
+  background-color: #d5ebff;
 }
 
 .emotion-0:disabled {
-  background-color: #f0f0f0;
   color: #9c9c9c;
 }
 
@@ -40,33 +35,27 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Surface Helper getStylePresetFromTheme interactive010 with borderRadius 1`] = `
+exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with borderRadius 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 100vw;
+  background-color: transparent;
+  color: #0A68C1;
 }
 
 .emotion-0 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #0A68C1;
+  color: #0A68C1;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #e6f4ff;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-0:focus:not(:disabled) {
-  border-width: 2px;
+  background-color: #d5ebff;
 }
 
 .emotion-0:disabled {
-  background-color: #f0f0f0;
   color: #9c9c9c;
 }
 
@@ -81,16 +70,16 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 with borderRadius
 </DocumentFragment>
 `;
 
-exports[`Surface Helper getStylePresetFromTheme interactive010 with current state 1`] = `
+exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with current state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #00ff00;
-  color: #FFFFFF;
+  color: #0A68C1;
 }
 
 .emotion-0 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #0A68C1;
+  color: #0A68C1;
 }
 
 <div
@@ -99,7 +88,7 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 with current stat
 </DocumentFragment>
 `;
 
-exports[`Surface Helper getStylePresetFromTheme interactive010 with disabled and loading state 1`] = `
+exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with disabled and loading state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
@@ -117,7 +106,7 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 with disabled and
 </DocumentFragment>
 `;
 
-exports[`Surface Helper getStylePresetFromTheme interactive010 with disabled state 1`] = `
+exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with disabled state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
@@ -135,11 +124,11 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 with disabled sta
 </DocumentFragment>
 `;
 
-exports[`Surface Helper getStylePresetFromTheme interactive010 with loading and current state 1`] = `
+exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with loading and current state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #ffff00;
-  color: #FFFFFF;
+  color: #0A68C1;
 }
 
 .emotion-0 svg {
@@ -153,11 +142,11 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 with loading and 
 </DocumentFragment>
 `;
 
-exports[`Surface Helper getStylePresetFromTheme interactive010 with loading state 1`] = `
+exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with loading state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #ffff00;
-  color: #FFFFFF;
+  color: #0A68C1;
 }
 
 .emotion-0 svg {
@@ -171,19 +160,15 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 with loading stat
 </DocumentFragment>
 `;
 
-exports[`Surface Helper getStylePresetFromTheme interactive010 without background-color styles 1`] = `
+exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary without background-color styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #FFFFFF;
+  color: #0A68C1;
 }
 
 .emotion-0 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-0:focus:not(:disabled) {
-  border-width: 2px;
+  fill: #0A68C1;
+  color: #0A68C1;
 }
 
 .emotion-0:disabled {
@@ -201,28 +186,24 @@ exports[`Surface Helper getStylePresetFromTheme interactive010 without backgroun
 </DocumentFragment>
 `;
 
-exports[`Surface Helper getStylePresetFromTheme interactive010 without disabled state styles 1`] = `
+exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary without disabled state styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #0A68C1;
-  color: #FFFFFF;
+  background-color: transparent;
+  color: #0A68C1;
 }
 
 .emotion-0 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #0A68C1;
+  color: #0A68C1;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #e6f4ff;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-0:focus:not(:disabled) {
-  border-width: 2px;
+  background-color: #d5ebff;
 }
 
 <div
@@ -235,34 +216,6 @@ exports[`Surface Helper getStylePresetFromTheme with override to interactive020 
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF00FF;
-  border-style: solid;
-  border-color: #0A68C1;
-  border-width: 1px;
-  color: #0A68C1;
-}
-
-.emotion-0 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-0:hover:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-0:active:not(:disabled) {
-  box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
-}
-
-.emotion-0:disabled {
-  background-color: #f0f0f0;
-  border-color: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-0:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div

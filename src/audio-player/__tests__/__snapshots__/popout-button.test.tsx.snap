@@ -21,7 +21,7 @@ exports[`PopoutButton popout button opens window to href 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: calc(8px * 0.25);
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -45,10 +45,6 @@ exports[`PopoutButton popout button opens window to href 1`] = `
 
 .emotion-2:active:not(:disabled) {
   background-color: #01396E;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-width: 2px;
 }
 
 .emotion-2:disabled {
@@ -140,7 +136,7 @@ exports[`PopoutButton renders popout button 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: calc(8px * 0.25);
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -164,10 +160,6 @@ exports[`PopoutButton renders popout button 1`] = `
 
 .emotion-2:active:not(:disabled) {
   background-color: #01396E;
-}
-
-.emotion-2:focus:not(:disabled) {
-  border-width: 2px;
 }
 
 .emotion-2:disabled {

@@ -70,24 +70,26 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   const {fireEvent} = useInstrumentation();
 
   const volumePresets: Required<AudioPlayerProps['$volumePresets']> = {
-    $indicatorStylePreset: 'audioPlayerVolumeTrackIndicator',
-    $thumbStylePreset: 'audioPlayerVolumeThumb',
-    $labelStylePreset: 'audioPlayerVolumeTrackLabels',
-    $trackStylePreset: 'audioPlayerVolumeTrack',
+    $sliderIndicatorTrackStylePreset: 'volumeControlTrackIndicator',
+    $sliderThumbStylePreset: 'volumeControlThumb',
+    $sliderLabelsStylePreset: 'volumeControlLabels',
+    $sliderThumbLabelStylePreset: 'volumeControlLabels',
+    $sliderTrackStylePreset: 'volumeControlTrack',
     ...$volumePresets,
   };
   const trackPresets: Required<AudioPlayerProps['$trackPresets']> = {
-    $indicatorStylePreset: 'audioPlayerTrackIndicator',
-    $thumbStylePreset: 'audioPlayerThumb',
-    $labelStylePreset: 'audioPlayerTrackLabels',
-    $trackStylePreset: 'audioPlayerTrack',
+    $sliderIndicatorTrackStylePreset: 'audioPlayerTrackIndicator',
+    $sliderThumbStylePreset: 'audioPlayerThumb',
+    $sliderLabelsStylePreset: 'audioPlayerLabels',
+    $sliderThumbLabelStylePreset: 'audioPlayerLabels',
+    $sliderTrackStylePreset: 'audioPlayerTrack',
     $bufferingStylePreset: 'audioPlayerTrackBuffering',
     ...$trackPresets,
   };
   const controlPresets: Required<AudioPlayerProps['$controlPresets']> = {
     previous: 'audioPlayerControlButton',
     replay: 'audioPlayerControlButton',
-    play: 'audioPlayerPlayButton',
+    play: 'audioPlayerPlayPauseButton',
     forward: 'audioPlayerControlButton',
     next: 'audioPlayerControlButton',
     popout: 'audioPlayerControlButton',
@@ -309,13 +311,13 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
         theme,
         'base',
         'backgroundColor',
-        trackPresets.$trackStylePreset,
+        trackPresets.$sliderTrackStylePreset,
       ),
       getSingleStylePreset(
         theme,
         'base',
         'backgroundColor',
-        trackPresets.$indicatorStylePreset,
+        trackPresets.$sliderIndicatorTrackStylePreset,
       ),
       getSingleStylePreset(
         theme,
@@ -332,7 +334,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
         {...p}
         values={trackPositionArr}
         isDragged={isDragged}
-        $stylePreset={trackPresets.$trackStylePreset}
+        $stylePreset={trackPresets.$sliderTrackStylePreset}
         $trackSize="sizing020"
         $thumbSize="sizing050"
         style={{

@@ -45,7 +45,7 @@ describe('Button', () => {
 
   test('renders with different style preset', () => {
     const props = {
-      $stylePreset: 'interactive050',
+      $stylePreset: 'buttonOutlinedPrimary',
     };
 
     const fragment = renderToFragmentWithTheme(Button, props);

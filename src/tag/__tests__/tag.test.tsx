@@ -42,7 +42,7 @@ describe('Tag', () => {
 
   test('renders a tag with a custom stylePreset', () => {
     const fragment = renderToFragmentWithTheme(Tag, {
-      $stylePreset: 'interactive010Inverse',
+      $stylePreset: 'tagPrimary',
     } as TagProps);
     expect(fragment).toMatchSnapshot();
   });

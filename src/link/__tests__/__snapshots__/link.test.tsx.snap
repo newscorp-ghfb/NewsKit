@@ -3,7 +3,6 @@
 exports[`Link renders as expected in default state 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #2F75D7;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   -webkit-transition-property: color;
@@ -12,18 +11,19 @@ exports[`Link renders as expected in default state 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2F75D7;
 }
 
-.emotion-0:visited {
+.emotion-0:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-0:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-0:visited:not(:disabled) {
   color: #903D91;
-}
-
-.emotion-0:hover {
-  color: #2F75D7;
-}
-
-.emotion-0:active {
-  color: #2F75D7;
 }
 
 <a
@@ -38,7 +38,6 @@ exports[`Link renders as expected in default state 1`] = `
 exports[`Link renders correctly with $noUnderline property 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #2F75D7;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition-property: color;
@@ -47,18 +46,19 @@ exports[`Link renders correctly with $noUnderline property 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2F75D7;
 }
 
-.emotion-0:visited {
+.emotion-0:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-0:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-0:visited:not(:disabled) {
   color: #903D91;
-}
-
-.emotion-0:hover {
-  color: #2F75D7;
-}
-
-.emotion-0:active {
-  color: #2F75D7;
 }
 
 <a

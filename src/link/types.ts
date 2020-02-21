@@ -7,4 +7,5 @@ export interface LinkProps
   $noUnderline?: boolean;
   $font?: TypePresetKeys;
   $color?: ColorKeys;
+  $stylePreset?: string;
 }

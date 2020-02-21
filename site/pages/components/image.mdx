@@ -41,7 +41,7 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
   <Prop name="hideLoadingIcon" type="boolean" default={false}>
     Hide the loading icon whilst the image is loading.
   </Prop>
-  <Prop name="$stylePreset" type="string" default="maskPointed010">
+  <Prop name="$stylePreset" type="string" default="imageSquared">
     Sets the style presets of the image.
   </Prop>
 </LegacyBlock>
@@ -98,17 +98,17 @@ The aspect width/height is only used on loading state.
       propName: '$stylePreset',
       options: [
         {
-          label: 'maskPointed010',
-          value: 'maskPointed010',
+          label: 'imageSquared',
+          value: 'imageSquared',
           isDefault: true,
         },
         {
-          label: 'maskSemiRounded010',
-          value: 'maskSemiRounded010',
+          label: 'imageSemiRounded',
+          value: 'imageSemiRounded',
         },
         {
-          label: 'maskRound010',
-          value: 'maskRound010',
+          label: 'imageRounded',
+          value: 'imageRounded',
         },
       ],
     },

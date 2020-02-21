@@ -8,8 +8,8 @@ import {
   CircularIndicatorProps,
 } from './types';
 
-const indicatorStylePresetDefault = 'circleLoaderIndicator010';
-const trackStylePresetDefault = 'circleLoaderTrack010';
+const indicatorStylePresetDefault = 'circularProgressIndicatorIndicatorPrimary';
+const trackStylePresetDefault = 'circularProgressIndicatorTrackPrimary';
 
 const animationDuration = '1.4s';
 
@@ -38,7 +38,10 @@ export const StyledCircularProgressIndicator = styled.div<
 export const StyledCircularTrack = styled.div<CircularTrackProps>`
   box-sizing: border-box;
   ${getSize}
-  ${getStylePresetFromTheme(trackStylePresetDefault, '$trackStylePreset')};
+  ${getStylePresetFromTheme(
+    trackStylePresetDefault,
+    '$sliderTrackStylePreset',
+  )};
   border-radius: 50%;
 `;
 
@@ -47,7 +50,7 @@ export const StyledCircularIndicator = styled.div<CircularIndicatorProps>`
   ${getSize}
   ${getStylePresetFromTheme(
     indicatorStylePresetDefault,
-    '$indicatorStylePreset',
+    '$sliderIndicatorTrackStylePreset',
   )};
   border-radius: 50%;
 `;

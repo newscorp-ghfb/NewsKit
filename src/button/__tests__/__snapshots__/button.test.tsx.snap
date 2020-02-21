@@ -21,8 +21,8 @@ exports[`BaseButton renders with fallback formatting 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
-  min-height: 8px;
+  border-radius: calc(8px * 0.25);
+  min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -51,11 +51,7 @@ exports[`BaseButton renders with fallback formatting 1`] = `
   background-color: #01396E;
 }
 
-.emotion-1:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-1:disabled {
+.emotion-2:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
@@ -173,7 +169,7 @@ exports[`Button renders Icon Button 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: calc(8px * 0.25);
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -203,11 +199,7 @@ exports[`Button renders Icon Button 1`] = `
   background-color: #01396E;
 }
 
-.emotion-3:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-3:disabled {
+.emotion-1:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
@@ -294,8 +286,8 @@ exports[`Button renders Icon Button with default size 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
-  min-height: 8px;
+  border-radius: calc(8px * 0.25);
+  min-height: 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -325,11 +317,7 @@ exports[`Button renders Icon Button with default size 1`] = `
   background-color: #01396E;
 }
 
-.emotion-3:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-3:disabled {
+.emotion-1:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
@@ -443,8 +431,8 @@ exports[`Button renders Large Button 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
-  min-height: 16px;
+  border-radius: calc(8px * 0.25);
+  min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -471,10 +459,6 @@ exports[`Button renders Large Button 1`] = `
 
 .emotion-1:active:not(:disabled) {
   background-color: #01396E;
-}
-
-.emotion-1:focus:not(:disabled) {
-  border-width: 2px;
 }
 
 .emotion-1:disabled {
@@ -549,8 +533,8 @@ exports[`Button renders Medium Button 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
-  min-height: 12px;
+  border-radius: calc(8px * 0.25);
+  min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.7142857142857142;
@@ -579,11 +563,7 @@ exports[`Button renders Medium Button 1`] = `
   background-color: #01396E;
 }
 
-.emotion-1:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-1:disabled {
+.emotion-4:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
@@ -656,7 +636,7 @@ exports[`Button renders Small Button 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: calc(8px * 0.25);
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -687,11 +667,7 @@ exports[`Button renders Small Button 1`] = `
   background-color: #01396E;
 }
 
-.emotion-1:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-1:disabled {
+.emotion-4:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
@@ -785,7 +761,7 @@ exports[`Button renders when there is an icon with a colour 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: calc(8px * 0.25);
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -814,10 +790,6 @@ exports[`Button renders when there is an icon with a colour 1`] = `
 
 .emotion-4:active:not(:disabled) {
   background-color: #01396E;
-}
-
-.emotion-4:focus:not(:disabled) {
-  border-width: 2px;
 }
 
 .emotion-4:disabled {
@@ -922,7 +894,7 @@ exports[`Button renders when there is no icon 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: calc(8px * 0.25);
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -942,10 +914,6 @@ exports[`Button renders when there is no icon 1`] = `
 
 .emotion-1:active:not(:disabled) {
   background-color: #01396E;
-}
-
-.emotion-1:focus:not(:disabled) {
-  border-width: 2px;
 }
 
 .emotion-1:disabled {
@@ -1036,10 +1004,10 @@ exports[`Button renders with different style preset 1`] = `
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
   border-style: solid;
-  border-color: #d5ebff;
+  border-color: #0A68C1;
   border-width: 1px;
   color: #0A68C1;
-  border-radius: 100vw;
+  border-radius: calc(8px * 0.25);
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -1067,12 +1035,11 @@ exports[`Button renders with different style preset 1`] = `
 }
 
 .emotion-1:active:not(:disabled) {
-  background-color: #e6f4ff;
-  border-width: #0A68C1;
+  background-color: #d5ebff;
 }
 
 .emotion-1:disabled {
-  background-color: #f0f0f0;
+  border-color: #f0f0f0;
   color: #9c9c9c;
 }
 
@@ -1152,7 +1119,7 @@ exports[`Button renders with fallback formatting 1`] = `
   cursor: pointer;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: 100vw;
+  border-radius: calc(8px * 0.25);
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -1181,10 +1148,6 @@ exports[`Button renders with fallback formatting 1`] = `
 
 .emotion-1:active:not(:disabled) {
   background-color: #01396E;
-}
-
-.emotion-1:focus:not(:disabled) {
-  border-width: 2px;
 }
 
 .emotion-1:disabled {

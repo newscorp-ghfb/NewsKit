@@ -17,14 +17,14 @@ export const CircularProgressIndicator: React.FC<
   $size,
   hideTrack = false,
   ariaLabel = 'loading',
-  $trackStylePreset,
-  $indicatorStylePreset,
+  $sliderTrackStylePreset,
+  $sliderIndicatorTrackStylePreset,
 }) => (
   <StyledCircularProgressIndicator $size={$size} aria-label={ariaLabel}>
     {!hideTrack && (
       <StyledCircularTrack
         $size={$size}
-        $trackStylePreset={$trackStylePreset}
+        $sliderTrackStylePreset={$sliderTrackStylePreset}
       />
     )}
 
@@ -33,7 +33,7 @@ export const CircularProgressIndicator: React.FC<
         <StyledLeftHalfContainer $size={$size}>
           <StyledCircularIndicator
             $size={$size}
-            $indicatorStylePreset={$indicatorStylePreset}
+            $sliderIndicatorTrackStylePreset={$sliderIndicatorTrackStylePreset}
           />
         </StyledLeftHalfContainer>
       </StyledLeftHalfCircle>
@@ -42,7 +42,7 @@ export const CircularProgressIndicator: React.FC<
         <StyledRightHalfContainer $size={$size}>
           <StyledCircularIndicator
             $size={$size}
-            $indicatorStylePreset={$indicatorStylePreset}
+            $sliderIndicatorTrackStylePreset={$sliderIndicatorTrackStylePreset}
           />
         </StyledRightHalfContainer>
       </StyledRightHalfCircle>

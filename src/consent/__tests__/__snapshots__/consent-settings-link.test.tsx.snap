@@ -3,7 +3,6 @@
 exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #2F75D7;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   -webkit-transition-property: color;
@@ -12,18 +11,19 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2F75D7;
 }
 
-.emotion-0:visited {
+.emotion-0:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-0:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-0:visited:not(:disabled) {
   color: #903D91;
-}
-
-.emotion-0:hover {
-  color: #2F75D7;
-}
-
-.emotion-0:active {
-  color: #2F75D7;
 }
 
 <a
@@ -47,7 +47,6 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2e2e2e;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition-property: color;
@@ -56,18 +55,19 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2F75D7;
 }
 
-.emotion-0:visited {
-  color: #2e2e2e;
+.emotion-0:hover:not(:disabled) {
+  color: #2F75D7;
 }
 
-.emotion-0:hover {
-  color: #2e2e2e;
+.emotion-0:active:not(:disabled) {
+  color: #2F75D7;
 }
 
-.emotion-0:active {
-  color: #2e2e2e;
+.emotion-0:visited:not(:disabled) {
+  color: #903D91;
 }
 
 <a
@@ -83,7 +83,6 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 exports[`ConsentSettingsLink with no children renders link with default text 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #2F75D7;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   -webkit-transition-property: color;
@@ -92,18 +91,19 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2F75D7;
 }
 
-.emotion-0:visited {
+.emotion-0:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-0:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-0:visited:not(:disabled) {
   color: #903D91;
-}
-
-.emotion-0:hover {
-  color: #2F75D7;
-}
-
-.emotion-0:active {
-  color: #2F75D7;
 }
 
 <a

@@ -4,8 +4,8 @@ export interface CircularProgressIndicatorProps {
   $size?: IconSizeKeys;
   hideTrack?: boolean;
   ariaLabel?: string;
-  $trackStylePreset?: string;
-  $indicatorStylePreset?: string;
+  $sliderTrackStylePreset?: string;
+  $sliderIndicatorTrackStylePreset?: string;
 }
 
 export type CircularProgressIndicatorSizeProps = Pick<
@@ -14,9 +14,9 @@ export type CircularProgressIndicatorSizeProps = Pick<
 >;
 
 export interface CircularTrackProps extends CircularProgressIndicatorSizeProps {
-  $trackStylePreset?: string;
+  $sliderTrackStylePreset?: string;
 }
 export interface CircularIndicatorProps
   extends CircularProgressIndicatorSizeProps {
-  $indicatorStylePreset?: string;
+  $sliderIndicatorTrackStylePreset?: string;
 }

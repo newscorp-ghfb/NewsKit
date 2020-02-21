@@ -40,7 +40,6 @@ exports[`ArticleHeadline renders correctly with authors and links 1`] = `
 }
 
 .emotion-0 {
-  color: #2F75D7;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   -webkit-transition-property: color;
@@ -49,18 +48,19 @@ exports[`ArticleHeadline renders correctly with authors and links 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2F75D7;
 }
 
-.emotion-0:visited {
+.emotion-0:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-0:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-0:visited:not(:disabled) {
   color: #903D91;
-}
-
-.emotion-0:hover {
-  color: #2F75D7;
-}
-
-.emotion-0:active {
-  color: #2F75D7;
 }
 
 <div>
@@ -208,7 +208,6 @@ exports[`ArticleHeadline renders correctly with authors, location, titles and li
 }
 
 .emotion-0 {
-  color: #2F75D7;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   -webkit-transition-property: color;
@@ -217,18 +216,19 @@ exports[`ArticleHeadline renders correctly with authors, location, titles and li
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2F75D7;
 }
 
-.emotion-0:visited {
+.emotion-0:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-0:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-0:visited:not(:disabled) {
   color: #903D91;
-}
-
-.emotion-0:hover {
-  color: #2F75D7;
-}
-
-.emotion-0:active {
-  color: #2F75D7;
 }
 
 <div>

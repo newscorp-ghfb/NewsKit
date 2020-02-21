@@ -98,9 +98,9 @@ const customTheme: Theme = createTheme('awesome-theme', {
 });
 
 enum ButtonStyle {
-  Solid = 'interactive010',
-  Outlined = 'interactive050',
-  Minimal = 'interactive060',
+  Solid = 'buttonSolidPrimary',
+  Outlined = 'buttonOutlinedPrimary',
+  Minimal = 'buttonMinimalPrimary',
 }
 
 const states = ['Default', 'Focused', 'Disabled'];
@@ -166,7 +166,6 @@ export const component = () => (
             {[
               {buttonSize: ButtonSize.Small, iconSize: 'iconSize010'},
               {buttonSize: ButtonSize.Medium, iconSize: 'iconSize020'},
-              {buttonSize: ButtonSize.Large, iconSize: 'iconSize020'},
             ].map(button => (
               <Button $size={button.buttonSize}>
                 <IconType $size={button.iconSize as IconSizeKeys} />
@@ -186,7 +185,6 @@ export const component = () => (
             {[
               {buttonSize: ButtonSize.Small, iconSize: 'iconSize010'},
               {buttonSize: ButtonSize.Medium, iconSize: 'iconSize020'},
-              {buttonSize: ButtonSize.Large, iconSize: 'iconSize020'},
             ].map(button => (
               <Button $size={button.buttonSize}>
                 Button

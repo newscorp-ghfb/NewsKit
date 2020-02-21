@@ -231,10 +231,10 @@ export const component = () => (
           maxLabel="100%"
           thumbLabel
           $trackSize="sizing050"
-          $trackStylePreset="customTrackStylePreset"
-          $indicatorStylePreset="customIndicatorStylePreset"
-          $thumbStylePreset="customThumbStylePreset"
-          $labelStylePreset="customLabelStylePreset"
+          $sliderTrackStylePreset="customTrackStylePreset"
+          $sliderIndicatorTrackStylePreset="customIndicatorStylePreset"
+          $sliderThumbStylePreset="customThumbStylePreset"
+          $sliderLabelsStylePreset="customLabelStylePreset"
         />
       </ThemeProvider>
     </Container>

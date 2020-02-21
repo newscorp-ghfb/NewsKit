@@ -38,10 +38,10 @@ Don't show more than one circular progress indicator as the user is likely to be
     <Prop name="ariaLabel" type="string" default="loading">
     Used to describe the type of progress for accessibility purposes, e.g. loading.
   </Prop>
-  <Prop name="$trackStylePreset" type="string" default='circleLoaderTrack010'> 
+  <Prop name="$sliderTrackStylePreset" type="string" default='circularProgressIndicatorTrackPrimary'> 
      Set the style preset of the circular track.
   </Prop>
-  <Prop name="$indicatorStylePreset" type="string" default='circleLoaderIndicator010'>
+  <Prop name="$sliderIndicatorTrackStylePreset" type="string" default='circularProgressIndicatorIndicatorPrimary'>
      Set the style preset of the circular indicator.
   </Prop>
 </LegacyBlock>
@@ -88,31 +88,31 @@ Don't show more than one circular progress indicator as the user is likely to be
     },
     {
       name: 'trackStylePreset',
-      propName: '$trackStylePreset',
+      propName: '$sliderTrackStylePreset',
       options: [
         {
-          label: 'circleLoaderTrack010',
-          value: 'circleLoaderTrack010',
+          label: 'circularProgressIndicatorTrackPrimary',
+          value: 'circularProgressIndicatorTrackPrimary',
           isDefault: true,
         },
         {
-          label: 'circleLoaderTrack010Inverse',
-          value: 'circleLoaderTrack010Inverse',
+          label: 'circularProgressIndicatorTrackInverse',
+          value: 'circularProgressIndicatorTrackInverse',
         },
       ],
     },
     {
       name: 'indicatorStylePreset',
-      propName: '$indicatorStylePreset',
+      propName: '$sliderIndicatorTrackStylePreset',
       options: [
         {
-          label: 'circleLoaderIndicator010',
-          value: 'circleLoaderIndicator010',
+          label: 'circularProgressIndicatorIndicatorPrimary',
+          value: 'circularProgressIndicatorIndicatorPrimary',
           isDefault: true,
         },
         {
-          label: 'circleLoaderIndicator010Inverse',
-          value: 'circleLoaderIndicator010Inverse',
+          label: 'circularProgressIndicatorIndicatorInverse',
+          value: 'circularProgressIndicatorIndicatorInverse',
         },
       ],
     },
