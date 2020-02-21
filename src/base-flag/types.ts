@@ -1,8 +1,12 @@
-import {TagSize} from '../tag/utils';
-import {FlagSize} from '../flag/utils';
+import {SizingKeys, IconSizeKeys} from '../themes';
+import {PaddingPresetKeys} from '../themes/mappers/spacing';
 
 export interface BaseFlagProps {
-  $size?: FlagSize | TagSize;
   $typePreset?: string;
   $stylePreset?: string;
+  isDisabled?: boolean;
+  borderRadiusSize?: SizingKeys;
+  minHeight?: SizingKeys;
+  padding?: PaddingPresetKeys | SizingKeys;
+  iconSize?: IconSizeKeys;
 }

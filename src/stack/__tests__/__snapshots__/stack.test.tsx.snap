@@ -30,6 +30,8 @@ exports[`Stack renders stack when no properties are set 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -38,14 +40,17 @@ exports[`Stack renders stack when no properties are set 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -104,18 +109,62 @@ exports[`Stack renders stack when no properties are set 1`] = `
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -131,6 +180,8 @@ exports[`Stack renders stack with flex grow and shrink 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -139,14 +190,17 @@ exports[`Stack renders stack with flex grow and shrink 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -195,11 +249,66 @@ exports[`Stack renders stack with flex grow and shrink 1`] = `
 <div
     class="emotion-1"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 1
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
+    >
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
+    >
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -215,6 +324,8 @@ exports[`Stack renders stack with flex grow and shrink 2`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -223,14 +334,17 @@ exports[`Stack renders stack with flex grow and shrink 2`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -438,18 +552,62 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -465,6 +623,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -473,14 +633,17 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -580,7 +743,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -601,7 +763,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -622,7 +783,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -652,6 +812,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -660,14 +822,17 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -763,7 +928,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -784,7 +948,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -805,7 +968,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -835,6 +997,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -843,14 +1007,17 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -950,7 +1117,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -971,7 +1137,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -992,7 +1157,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -1022,6 +1186,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -1030,14 +1196,17 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -1100,7 +1269,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -1121,7 +1289,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -1142,7 +1309,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -1172,6 +1338,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -1180,14 +1348,17 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -1232,18 +1403,62 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -1259,6 +1474,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -1267,14 +1484,17 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -1319,18 +1539,62 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -1346,6 +1610,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -1354,14 +1620,17 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -1406,18 +1675,62 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -1433,6 +1746,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -1441,14 +1756,17 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -1493,18 +1811,62 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -1520,6 +1882,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -1528,14 +1892,17 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -1673,18 +2040,62 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -1700,6 +2111,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -1708,14 +2121,17 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -1847,18 +2263,62 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -1874,6 +2334,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -1882,14 +2344,17 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -1989,7 +2454,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -2010,7 +2474,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -2031,7 +2494,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -2061,6 +2523,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -2069,14 +2533,17 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -2172,7 +2639,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -2193,7 +2659,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -2214,7 +2679,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -2244,6 +2708,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -2252,14 +2718,17 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -2326,7 +2795,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -2347,7 +2815,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -2368,7 +2835,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -2398,6 +2864,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -2406,14 +2874,17 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -2476,7 +2947,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -2497,7 +2967,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -2518,7 +2987,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -2548,6 +3016,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -2556,14 +3026,17 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -2695,18 +3168,62 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -2722,6 +3239,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -2730,14 +3249,17 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -2782,18 +3304,62 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -2809,6 +3375,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -2817,14 +3385,17 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -2948,18 +3519,62 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -2975,6 +3590,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -2983,14 +3600,17 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -3132,18 +3752,62 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -3159,6 +3823,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -3167,14 +3833,17 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -3365,7 +4034,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -3386,7 +4054,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -3407,7 +4074,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -3437,6 +4103,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -3445,14 +4113,17 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -3548,7 +4219,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -3569,7 +4239,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -3590,7 +4259,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -3620,6 +4288,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -3628,14 +4298,17 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -3735,7 +4408,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -3756,7 +4428,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -3777,7 +4448,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -3807,6 +4477,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -3815,14 +4487,17 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -3918,7 +4593,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -3939,7 +4613,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -3960,7 +4633,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -4004,6 +4676,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -4012,8 +4686,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
@@ -4022,7 +4694,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   border-radius: 0;
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-2:hover:not(:disabled) {
   border-color: #535353;
 }
 
@@ -4064,18 +4741,62 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -4091,6 +4812,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -4099,14 +4822,17 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -4240,18 +4966,62 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -4267,6 +5037,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -4275,14 +5047,17 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -4327,18 +5102,62 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -4354,6 +5173,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -4362,14 +5183,17 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -4507,18 +5331,62 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -4623,6 +5491,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -4631,14 +5501,17 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -4720,18 +5593,62 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -4747,6 +5664,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -4755,14 +5674,17 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -4953,7 +5875,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -4974,7 +5895,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -4995,7 +5915,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -5025,6 +5944,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -5033,14 +5954,17 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -5136,7 +6060,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -5157,7 +6080,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -5178,7 +6100,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -5208,6 +6129,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -5216,14 +6139,17 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -5323,7 +6249,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -5344,7 +6269,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -5365,7 +6289,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -5395,6 +6318,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -5403,14 +6328,17 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -5506,7 +6434,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -5527,7 +6454,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -5548,7 +6474,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -5578,6 +6503,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -5586,14 +6513,17 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -5638,18 +6568,62 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -5665,6 +6639,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -5673,14 +6649,17 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -5758,18 +6737,62 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -5785,6 +6808,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -5793,14 +6818,17 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -5845,18 +6873,62 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -5872,6 +6944,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -5880,14 +6954,17 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -5932,18 +7009,62 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -5961,12 +7082,25 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -6011,18 +7145,62 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -6038,6 +7216,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -6046,14 +7226,17 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -6104,18 +7287,62 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="wrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -6133,12 +7360,25 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -6270,18 +7510,62 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -6297,6 +7581,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -6305,14 +7591,17 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -6412,7 +7701,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -6433,7 +7721,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -6454,7 +7741,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -6484,6 +7770,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -6492,14 +7780,17 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -6595,7 +7886,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -6616,7 +7906,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -6637,7 +7926,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -6667,6 +7955,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -6675,14 +7965,17 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -6782,7 +8075,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -6803,7 +8095,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -6824,7 +8115,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -6854,6 +8144,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -6862,14 +8154,17 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -6965,7 +8260,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -6986,7 +8280,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -7007,7 +8300,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -7037,6 +8329,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -7045,14 +8339,17 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -7176,18 +8473,62 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -7222,6 +8563,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -7230,14 +8573,17 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -7296,18 +8642,62 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -7323,6 +8713,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -7331,14 +8723,17 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -7416,18 +8811,62 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -7443,6 +8882,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -7451,14 +8892,17 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -7503,18 +8947,62 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -7530,6 +9018,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -7538,14 +9028,17 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -7609,7 +9102,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -7630,7 +9122,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -7651,7 +9142,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -7681,6 +9171,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -7689,14 +9181,17 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -7792,7 +9287,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -7813,7 +9307,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -7834,7 +9327,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -7871,6 +9363,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -7879,14 +9373,17 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -7971,7 +9468,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -7992,7 +9488,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -8013,7 +9508,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -8050,6 +9544,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -8058,14 +9554,17 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -8150,7 +9649,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -8171,7 +9669,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -8192,7 +9689,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -8251,6 +9747,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -8259,14 +9757,17 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -8329,7 +9830,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -8350,7 +9850,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -8371,7 +9870,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -8408,6 +9906,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -8416,14 +9916,17 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -8508,7 +10011,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -8529,7 +10031,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -8550,7 +10051,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -8587,6 +10087,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -8595,14 +10097,17 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -8687,7 +10192,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -8708,7 +10212,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -8729,7 +10232,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -8766,6 +10268,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -8774,14 +10278,17 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -8872,7 +10379,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -8893,7 +10399,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -8914,7 +10419,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -8951,6 +10455,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -8959,14 +10465,17 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -9051,7 +10560,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -9072,7 +10580,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -9093,7 +10600,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -9130,6 +10636,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -9138,14 +10646,17 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -9230,7 +10741,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -9251,7 +10761,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -9272,7 +10781,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -9302,6 +10810,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -9310,14 +10820,17 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -9417,7 +10930,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -9438,7 +10950,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -9459,7 +10970,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -9489,6 +10999,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -9497,14 +11009,17 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -9600,7 +11115,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -9621,7 +11135,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -9642,7 +11155,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -9672,6 +11184,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -9680,14 +11194,17 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -9787,7 +11304,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -9808,7 +11324,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -9829,7 +11344,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -9859,6 +11373,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -9867,14 +11383,17 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -10006,18 +11525,62 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -10033,6 +11596,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -10041,14 +11606,17 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -10148,7 +11716,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -10169,7 +11736,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -10190,7 +11756,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -10220,6 +11785,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -10228,14 +11795,17 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -10331,7 +11901,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -10352,7 +11921,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -10373,7 +11941,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -10403,6 +11970,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -10411,14 +11980,17 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -10518,7 +12090,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -10539,7 +12110,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -10560,7 +12130,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -10590,6 +12159,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -10598,14 +12169,17 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -10701,7 +12275,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -10722,7 +12295,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -10743,7 +12315,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     >
       <span
         class="emotion-2"
-        data-testid="tag"
       >
         <div
           class="emotion-1"
@@ -10775,12 +12346,25 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -10825,18 +12409,62 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -10854,12 +12482,25 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -10904,18 +12545,62 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -10933,12 +12618,25 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -10983,18 +12681,62 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -11010,6 +12752,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -11018,14 +12762,17 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -11055,6 +12802,9 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -11065,23 +12815,69 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 }
 
 <div
-    class="emotion-3"
+    class="emotion-12"
+    wrap="nowrap"
   >
-    <span
-      class="emotion-0"
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -11099,12 +12895,25 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -11149,18 +12958,62 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -11176,6 +13029,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -11184,14 +13039,17 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-2 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -11242,18 +13100,62 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
     <span
       class="emotion-0"
     >
-      child 1
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 1
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 2
-    </span>
-    <span
-      class="emotion-0"
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 2
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="emotion-3"
+      wrap="nowrap"
     >
-      child 3
-    </span>
+      <span
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+          wrap="nowrap"
+        >
+          <div
+            class="emotion-0"
+            wrap="nowrap"
+          >
+            child 3
+          </div>
+        </div>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;

@@ -1,5 +1,9 @@
 import React from 'react';
-import {styled, getTypePresetFromTheme} from '../utils/style';
+import {
+  styled,
+  getTypePresetFromTheme,
+  getSizingFromTheme,
+} from '../utils/style';
 import {getStylePresetFromTheme} from '../utils/style-preset';
 import {BaseFlagProps} from './types';
 import {Stack} from '../stack';
@@ -13,8 +17,21 @@ const StyledBaseFlag = styled.span<BaseFlagProps>`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: ${getSizingFromTheme(undefined, 'minHeight')};
+  padding: ${getSizingFromTheme(undefined, 'padding')};
   ${getTypePresetFromTheme(undefined, '$typePreset')}
-  ${getStylePresetFromTheme(undefined, '$stylePreset')}
+
+  svg {
+    width: ${getSizingFromTheme(undefined, 'iconSize')};
+    height: ${getSizingFromTheme(undefined, 'iconSize')};
+  }
+
+  ${({isDisabled, borderRadiusSize, ...props}) =>
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    getStylePresetFromTheme(undefined, '$stylePreset' as any, {
+      isDisabled,
+      borderRadiusSize,
+    })(props)}
 `;
 
 export const BaseFlag: React.FC<BaseFlagProps> = ({children, ...props}) => (

@@ -24,7 +24,7 @@ describe('Tag', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('href renders in disable state with an anchor', () => {
+  test('href renders in disable state as a span', () => {
     const fragment = renderToFragmentWithTheme(Tag, {
       href: '#',
       disabled: true,

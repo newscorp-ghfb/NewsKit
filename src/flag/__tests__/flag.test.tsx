@@ -29,7 +29,7 @@ describe('Flag', () => {
   test('renders a flag with no paddings', () => {
     const fragment = renderToFragmentWithTheme(Flag, {
       $stylePreset: 'interactive010Inverse',
-      $spacing: 'sizing010',
+      $spacing: 'sizing000',
     } as FlagProps);
     expect(fragment).toMatchSnapshot();
   });

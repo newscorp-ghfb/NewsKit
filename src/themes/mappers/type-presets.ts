@@ -257,6 +257,11 @@ const getBaseTypePresets = (p: FontPrimitives) => {
     flag010: label010,
     flag020: label020,
 
+    // Tag
+
+    tag010: label010,
+    tag020: label020,
+
     font500: {
       fontFamily: fontFamily1,
       ...getFontSizing(p.fontSize050, p.fontLineHeight040),

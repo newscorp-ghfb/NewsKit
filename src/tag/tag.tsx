@@ -1,83 +1,55 @@
-/* eslint-disable  @typescript-eslint/no-explicit-any */
 import React from 'react';
-import {styled} from '../utils/style';
 import {as} from '../utils/component';
-import {TagProps} from './types';
-import {TagSize} from './utils';
-import {SizingKeys, TypePresetKeys} from '../themes';
-import {getStylePresetFromTheme} from '../utils/style-preset';
+import {TagProps, TagSize} from './types';
+import {SizingKeys, TypePresetKeys, IconSizeKeys} from '../themes';
 import {PaddingPresetKeys} from '../themes/mappers/spacing';
 import {BaseFlag} from '../base-flag';
 
 const tagSizeStyleTokens: Record<
   TagSize,
   {
+    $typePreset: TypePresetKeys;
     minHeight: SizingKeys;
     borderRadiusSize: SizingKeys;
-    typePreset: TypePresetKeys;
     padding: PaddingPresetKeys;
+    iconSize: IconSizeKeys;
   }
 > = {
   [TagSize.Large]: {
+    $typePreset: 'tag020',
     minHeight: 'sizing070',
     borderRadiusSize: 'sizing070',
-    typePreset: 'flag020',
     padding: 'spaceInset020Squish',
+    iconSize: 'iconSize020',
   },
   [TagSize.Medium]: {
+    $typePreset: 'tag010',
     minHeight: 'sizing060',
     borderRadiusSize: 'sizing060',
-    typePreset: 'flag010',
     padding: 'spaceInset020Squish',
+    iconSize: 'iconSize010',
   },
   [TagSize.Small]: {
+    $typePreset: 'tag010',
     minHeight: 'sizing050',
     borderRadiusSize: 'sizing050',
-    typePreset: 'flag010',
     padding: 'spaceInset010Squish',
+    iconSize: 'iconSize010',
   },
 };
 
-const StyledTag = styled(BaseFlag)<TagProps>`
-  ${({theme, $size: sizeProp}) => {
-    const size = sizeProp || TagSize.Medium;
-    const sizeToken = tagSizeStyleTokens[size].minHeight;
-    const paddingToken = tagSizeStyleTokens[size].padding;
-
-    return {
-      minHeight: theme.sizing[sizeToken],
-      padding: theme.sizing[paddingToken],
-    };
-  }};
-
-  ${({disabled, $size: sizeProp, ...props}) => {
-    const size = sizeProp || TagSize.Medium;
-    return getStylePresetFromTheme('interactive070', '$stylePreset' as any, {
-      isDisabled: disabled,
-      borderRadiusSize: tagSizeStyleTokens[size].borderRadiusSize,
-    })(props);
-  }}
-`;
-
-export const Tag: React.FC<TagProps> = props => {
-  const {href, children, disabled, ...rest} = props;
-  const newProps: TagProps = {...rest};
-  let renderAs: 'span' | 'a' = 'span';
-  newProps.$size = newProps.$size || TagSize.Medium;
-  newProps.$typePreset =
-    newProps.$typePreset || tagSizeStyleTokens[newProps.$size].typePreset;
-
-  if (href) {
-    renderAs = 'a';
-    newProps.href = href;
-    if (disabled) {
-      newProps.disabled = disabled;
-    }
-  }
-
-  return (
-    <StyledTag data-testid="tag" {...as(renderAs)} {...newProps}>
-      {children}
-    </StyledTag>
-  );
-};
+export const Tag: React.FC<TagProps> = ({
+  disabled,
+  $size = TagSize.Medium,
+  href,
+  ...props
+}) => (
+  <BaseFlag
+    isDisabled={disabled}
+    href={disabled ? undefined : href}
+    $stylePreset="interactive070"
+    {...as(href && !disabled ? 'a' : 'span')}
+    {...tagSizeStyleTokens[$size]}
+    {...props}
+  />
+);

@@ -11,6 +11,8 @@ exports[`Tag href renders as an anchor 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -19,14 +21,17 @@ exports[`Tag href renders as an anchor 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-1 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-1:hover:not(:disabled) {
@@ -72,7 +77,6 @@ exports[`Tag href renders as an anchor 1`] = `
 
 <a
     class="emotion-1"
-    data-testid="tag"
     href="#"
   >
     <div
@@ -83,7 +87,7 @@ exports[`Tag href renders as an anchor 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag href renders in disable state with an anchor 1`] = `
+exports[`Tag href renders in disable state as a span 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -118,6 +122,8 @@ exports[`Tag href renders in disable state with an anchor 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -126,8 +132,6 @@ exports[`Tag href renders in disable state with an anchor 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: #f0f0f0;
@@ -136,17 +140,19 @@ exports[`Tag href renders in disable state with an anchor 1`] = `
   border-radius: 0;
 }
 
-<a
+.emotion-1 svg {
+  width: 16px;
+  height: 16px;
+}
+
+<span
     class="emotion-1"
-    data-testid="tag"
-    disabled=""
-    href="#"
   >
     <div
       class="emotion-0"
       wrap="nowrap"
     />
-  </a>
+  </span>
 </DocumentFragment>
 `;
 
@@ -185,6 +191,8 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -194,51 +202,12 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   color: #0A68C1;
-  min-height: 32px;
-  padding: 8px 12px;
-  color: #0A68C1;
   border-radius: 100vw;
 }
 
 .emotion-1 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-1:hover:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
-}
-
-.emotion-1:active:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-1:active:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
-}
-
-.emotion-1:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-1:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-0:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-0:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-1 svg {
@@ -275,7 +244,6 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
 
 <span
     class="emotion-1"
-    data-testid="tag"
   >
     <div
       class="emotion-0"
@@ -287,51 +255,7 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
 
 exports[`Tag renders in disabled state 1`] = `
 <DocumentFragment>
-  .emotion-1 {
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
-  border-style: solid;
-  border-width: 1px;
-  background-color: transparent;
-  color: #2e2e2e;
-  border-color: #cccccc;
-  border-radius: 0;
-}
-
-.emotion-1:hover:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-1:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-1:focus:not(:disabled) {
-  border-color: #535353;
-}
-
-.emotion-1:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-0 {
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -355,9 +279,40 @@ exports[`Tag renders in disabled state 1`] = `
   margin-right: calc(-4px/2);
 }
 
+.emotion-1 {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+  border-color: #cccccc;
+  border-radius: 0;
+}
+
+.emotion-1 svg {
+  width: 16px;
+  height: 16px;
+}
+
 <span
     class="emotion-1"
-    data-testid="tag"
   >
     <div
       class="emotion-0"
@@ -402,6 +357,8 @@ exports[`Tag renders with Large size 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 40px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.7142857142857142;
@@ -410,14 +367,17 @@ exports[`Tag renders with Large size 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  min-height: 40px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-1 svg {
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-1:hover:not(:disabled) {
@@ -439,7 +399,6 @@ exports[`Tag renders with Large size 1`] = `
 
 <span
     class="emotion-1"
-    data-testid="tag"
   >
     <div
       class="emotion-0"
@@ -460,6 +419,8 @@ exports[`Tag renders with Medium size 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -468,14 +429,17 @@ exports[`Tag renders with Medium size 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-1 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-1:hover:not(:disabled) {
@@ -521,7 +485,6 @@ exports[`Tag renders with Medium size 1`] = `
 
 <span
     class="emotion-1"
-    data-testid="tag"
   >
     <div
       class="emotion-0"
@@ -566,6 +529,8 @@ exports[`Tag renders with Small size 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 24px;
+  padding: 4px 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -574,14 +539,17 @@ exports[`Tag renders with Small size 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 24px;
-  padding: 4px 8px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-1 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-1:hover:not(:disabled) {
@@ -603,7 +571,6 @@ exports[`Tag renders with Small size 1`] = `
 
 <span
     class="emotion-1"
-    data-testid="tag"
   >
     <div
       class="emotion-0"
@@ -624,6 +591,8 @@ exports[`Tag renders with default styles 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -632,14 +601,17 @@ exports[`Tag renders with default styles 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  min-height: 32px;
-  padding: 8px 12px;
   border-style: solid;
   border-width: 1px;
   background-color: transparent;
   color: #2e2e2e;
   border-color: #cccccc;
   border-radius: 0;
+}
+
+.emotion-1 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-1:hover:not(:disabled) {
@@ -685,7 +657,6 @@ exports[`Tag renders with default styles 1`] = `
 
 <span
     class="emotion-1"
-    data-testid="tag"
   >
     <div
       class="emotion-0"
