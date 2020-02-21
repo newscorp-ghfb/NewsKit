@@ -25,8 +25,7 @@ export const component = () => (
     </Flag>
     <h1>Flag Sizes</h1>
     <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
-      {' '}
-      <Flag $size={FlagSize.Small}>Small</Flag>{' '}
+      <Flag $size={FlagSize.Small}>Small</Flag>
       <Flag $size={FlagSize.Large}>Large</Flag>
     </Stack>
 
