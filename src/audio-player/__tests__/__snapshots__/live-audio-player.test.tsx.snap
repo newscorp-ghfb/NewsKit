@@ -8159,13 +8159,13 @@ exports[`Live AudioPlayer render default player 1`] = `
 
 exports[`Live AudioPlayer render live player 1`] = `
 <DocumentFragment>
-  .emotion-16 {
+  .emotion-18 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-46 {
+.emotion-48 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -8182,30 +8182,30 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen {
-  .emotion-46 {
+  .emotion-48 {
     margin: -24px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-46 {
+  .emotion-48 {
     margin: -24px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-46 {
+  .emotion-48 {
     margin: -24px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-46 {
+  .emotion-48 {
     margin: -24px 0px 0 0px;
   }
 }
 
-.emotion-17 {
+.emotion-19 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -8214,7 +8214,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen {
-  .emotion-17 {
+  .emotion-19 {
     padding: 0 0px;
     margin-top: 24px;
     -webkit-flex-basis: 100%;
@@ -8226,7 +8226,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-17 {
+  .emotion-19 {
     padding: 0 0px;
     margin-top: 24px;
     display: block;
@@ -8234,7 +8234,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-17 {
+  .emotion-19 {
     padding: 0 0px;
     margin-left: 16.666666666666668%;
     margin-top: 24px;
@@ -8247,14 +8247,14 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-17 {
+  .emotion-19 {
     padding: 0 0px;
     margin-top: 24px;
     display: block;
   }
 }
 
-.emotion-15 {
+.emotion-17 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -8270,25 +8270,25 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen {
-  .emotion-15 {
+  .emotion-17 {
     margin: -16px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-15 {
+  .emotion-17 {
     margin: -16px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-15 {
+  .emotion-17 {
     margin: -24px 12px 0 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-15 {
+  .emotion-17 {
     margin: -24px 12px 0 12px;
   }
 }
@@ -8405,7 +8405,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   border-radius: inherit;
 }
 
-.emotion-14 {
+.emotion-16 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -8414,7 +8414,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen {
-  .emotion-14 {
+  .emotion-16 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 58.333333333333336%;
@@ -8426,7 +8426,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-14 {
+  .emotion-16 {
     padding: 0 8px;
     margin-top: 16px;
     display: block;
@@ -8434,7 +8434,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-14 {
+  .emotion-16 {
     padding: 0 12px;
     margin-top: 24px;
     display: block;
@@ -8442,14 +8442,14 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-14 {
+  .emotion-16 {
     padding: 0 12px;
     margin-top: 24px;
     display: block;
   }
 }
 
-.emotion-45 {
+.emotion-47 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -8458,7 +8458,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen {
-  .emotion-45 {
+  .emotion-47 {
     padding: 0 0px;
     margin-top: 24px;
     -webkit-flex-basis: 100%;
@@ -8470,7 +8470,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-45 {
+  .emotion-47 {
     padding: 0 0px;
     margin-top: 24px;
     display: block;
@@ -8478,7 +8478,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-45 {
+  .emotion-47 {
     padding: 0 0px;
     margin-top: 24px;
     display: block;
@@ -8486,14 +8486,14 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-45 {
+  .emotion-47 {
     padding: 0 0px;
     margin-top: 24px;
     display: block;
   }
 }
 
-.emotion-44 {
+.emotion-46 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8512,37 +8512,37 @@ exports[`Live AudioPlayer render live player 1`] = `
   justify-content: space-between;
 }
 
-.emotion-28 {
+.emotion-30 {
   width: 100%;
   max-width: 184px;
   padding: 0 calc(24px / 2);
 }
 
 @media screen {
-  .emotion-28 {
+  .emotion-30 {
     display: none;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-28 {
+  .emotion-30 {
     display: none;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-28 {
+  .emotion-30 {
     display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-28 {
+  .emotion-30 {
     display: block;
   }
 }
 
-.emotion-27 {
+.emotion-29 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8567,7 +8567,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   position: relative;
 }
 
-.emotion-21 {
+.emotion-23 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -8582,21 +8582,21 @@ exports[`Live AudioPlayer render live player 1`] = `
   margin-right: 8px;
 }
 
-.emotion-21 svg {
+.emotion-23 svg {
   fill: #0A68C1;
   color: #0A68C1;
 }
 
-.emotion-21:disabled {
+.emotion-23:disabled {
   background-color: #f0f0f0;
 }
 
-.emotion-21:disabled svg {
+.emotion-23:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-20 {
+.emotion-22 {
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -8607,7 +8607,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   padding: 0;
 }
 
-.emotion-19 {
+.emotion-21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8624,7 +8624,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   height: 32px;
 }
 
-.emotion-18 {
+.emotion-20 {
   display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
@@ -8632,7 +8632,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   height: 24px;
 }
 
-.emotion-23 {
+.emotion-25 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8649,7 +8649,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   width: 100%;
 }
 
-.emotion-22 {
+.emotion-24 {
   background-color: #FFFFFF;
   border-style: solid;
   border-color: #0A68C1;
@@ -8670,26 +8670,26 @@ exports[`Live AudioPlayer render live player 1`] = `
   cursor: pointer;
 }
 
-.emotion-22 svg {
+.emotion-24 svg {
   fill: #0A68C1;
   color: #0A68C1;
 }
 
-.emotion-22:hover:not(:disabled) {
+.emotion-24:hover:not(:disabled) {
   box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
 }
 
-.emotion-22:active:not(:disabled) {
+.emotion-24:active:not(:disabled) {
   box-shadow: 0 0 0 4px rgba(200,228,253,0.60);
 }
 
-.emotion-22:disabled {
+.emotion-24:disabled {
   background-color: #f0f0f0;
   border-color: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-26 {
+.emotion-28 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -8704,21 +8704,21 @@ exports[`Live AudioPlayer render live player 1`] = `
   margin-left: 8px;
 }
 
-.emotion-26 svg {
+.emotion-28 svg {
   fill: #0A68C1;
   color: #0A68C1;
 }
 
-.emotion-26:disabled {
+.emotion-28:disabled {
   background-color: #f0f0f0;
 }
 
-.emotion-26:disabled svg {
+.emotion-28:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-41 {
+.emotion-43 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8743,7 +8743,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   margin-right: calc(-12px/2);
 }
 
-.emotion-32 {
+.emotion-34 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -8752,7 +8752,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   margin-right: calc(12px/2);
 }
 
-.emotion-31 {
+.emotion-33 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -8784,34 +8784,34 @@ exports[`Live AudioPlayer render live player 1`] = `
   padding: 16px 24px;
 }
 
-.emotion-31 svg {
+.emotion-33 svg {
   fill: #0A68C1;
   color: #0A68C1;
 }
 
-.emotion-31:hover:not(:disabled) {
+.emotion-33:hover:not(:disabled) {
   background-color: #fafafa;
 }
 
-.emotion-31:hover:not(:disabled) svg {
+.emotion-33:hover:not(:disabled) svg {
   fill: #02509B;
   color: #02509B;
 }
 
-.emotion-31:active:not(:disabled) {
+.emotion-33:active:not(:disabled) {
   background-color: #fafafa;
 }
 
-.emotion-31:active:not(:disabled) svg {
+.emotion-33:active:not(:disabled) svg {
   fill: #02509B;
   color: #02509B;
 }
 
-.emotion-31:focus:not(:disabled) {
+.emotion-33:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-31:disabled {
+.emotion-33:disabled {
   background-color: #f0f0f0;
   border-color: #9c9c9c;
   color: #9c9c9c;
@@ -8861,16 +8861,16 @@ exports[`Live AudioPlayer render live player 1`] = `
   color: #2e2e2e;
 }
 
-.emotion-31:disabled svg {
+.emotion-33:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-31:disabled {
+.emotion-33:disabled {
   cursor: not-allowed;
 }
 
-.emotion-30 {
+.emotion-32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8889,7 +8889,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   justify-content: center;
 }
 
-.emotion-29 {
+.emotion-31 {
   display: inline-block;
   fill: #0A68C1;
   color: #0A68C1;
@@ -8897,7 +8897,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   height: 24px;
 }
 
-.emotion-35 {
+.emotion-37 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -8933,40 +8933,44 @@ exports[`Live AudioPlayer render live player 1`] = `
   cursor: not-allowed;
 }
 
-.emotion-35 svg {
+.emotion-37 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-35:hover:not(:disabled) {
+.emotion-37:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-35:active:not(:disabled) {
+.emotion-37:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-35:focus:not(:disabled) {
+.emotion-37:focus:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-35:disabled {
+.emotion-37:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
 
-.emotion-35:disabled svg {
+.emotion-37:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-33 svg {
-  width: 24px;
-  height: 24px;
+.emotion-37:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-35 {
+  display: inline-block;
+  fill: #0A68C1;
   color: #0A68C1;
 }
 
-.emotion-39 {
+.emotion-44 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8985,11 +8989,11 @@ exports[`Live AudioPlayer render live player 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-9 {
+.emotion-11 {
   margin: 0 0 24px 0;
 }
 
-.emotion-7 {
+.emotion-9 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -9010,7 +9014,12 @@ exports[`Live AudioPlayer render live player 1`] = `
   letter-spacing: 0.5px;
   background-color: #EF1703;
   color: #FFFFFF;
-  border: none;
+  width: 48px;
+  height: 24px;
+  padding: 0;
+  text-align: center;
+  background-color: #EF1703;
+  color: #FFFFFF;
   text-transform: uppercase;
   margin-right: 16px;
 }
@@ -9035,9 +9044,6 @@ exports[`Live AudioPlayer render live player 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -9058,7 +9064,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   margin-right: calc(4px/2);
 }
 
-.emotion-8 {
+.emotion-10 {
   color: #535353;
   font-weight: 300;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -9072,11 +9078,11 @@ exports[`Live AudioPlayer render live player 1`] = `
   display: inline-block;
 }
 
-.emotion-11 {
+.emotion-13 {
   margin: 0 0 16px 0;
 }
 
-.emotion-10 {
+.emotion-12 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 40px;
   line-height: 1.1;
@@ -9098,7 +9104,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   margin: 0;
 }
 
-.emotion-12 {
+.emotion-14 {
   color: #535353;
   font-weight: 300;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -9112,13 +9118,13 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 <div
-    class="emotion-16"
+    class="emotion-18"
   >
     <div
-      class="emotion-46"
+      class="emotion-48"
     >
       <div
-        class="emotion-17"
+        class="emotion-19"
       >
         <audio
           data-testid="audio-player"
@@ -9131,10 +9137,10 @@ exports[`Live AudioPlayer render live player 1`] = `
           />
         </audio>
         <div
-          class="emotion-16"
+          class="emotion-18"
         >
           <div
-            class="emotion-15"
+            class="emotion-17"
           >
             <div
               class="emotion-6"
@@ -9175,36 +9181,45 @@ exports[`Live AudioPlayer render live player 1`] = `
               </div>
             </div>
             <div
-              class="emotion-14"
+              class="emotion-16"
             >
               <div
-                class="emotion-9"
+                class="emotion-11"
               >
                 <span
-                  class="emotion-7"
+                  class="emotion-9"
+                  data-testid="flag"
                 >
-                  Live
+                  <div
+                    class="emotion-8"
+                  >
+                    <div
+                      class="emotion-7"
+                    >
+                      Live
+                    </div>
+                  </div>
                 </span>
                 <span
-                  class="emotion-8"
+                  class="emotion-10"
                 >
                   1PM to 3PM
                 </span>
               </div>
               <div
-                class="emotion-11"
+                class="emotion-13"
               >
                 <h1
-                  class="emotion-10"
+                  class="emotion-12"
                 >
                   title
                 </h1>
               </div>
               <div
-                class="emotion-9"
+                class="emotion-11"
               >
                 <span
-                  class="emotion-12"
+                  class="emotion-14"
                 >
                   Test Description
                 </span>
@@ -9214,32 +9229,32 @@ exports[`Live AudioPlayer render live player 1`] = `
         </div>
       </div>
       <div
-        class="emotion-45"
+        class="emotion-47"
       >
         <div
-          class="emotion-44"
+          class="emotion-46"
         >
           <div
-            class="emotion-28"
+            class="emotion-30"
           >
             <div
-              class="emotion-27"
+              class="emotion-29"
               data-testid="volume-control"
             >
               <div
-                class="emotion-21"
+                class="emotion-23"
                 data-testid="min-label"
               >
                 <button
-                  class="emotion-20"
+                  class="emotion-22"
                   data-testid="mute-button"
                   type="button"
                 >
                   <span
-                    class="emotion-19"
+                    class="emotion-21"
                   >
                     <svg
-                      class="emotion-18"
+                      class="emotion-20"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -9257,7 +9272,7 @@ exports[`Live AudioPlayer render live player 1`] = `
                 </button>
               </div>
               <div
-                class="emotion-23"
+                class="emotion-25"
                 data-testid="volume-control-track"
                 values="1"
               >
@@ -9266,7 +9281,7 @@ exports[`Live AudioPlayer render live player 1`] = `
                   aria-valuemax="1"
                   aria-valuemin="0"
                   aria-valuenow="1"
-                  class="emotion-22"
+                  class="emotion-24"
                   draggable="false"
                   role="slider"
                   style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
@@ -9275,14 +9290,14 @@ exports[`Live AudioPlayer render live player 1`] = `
                 />
               </div>
               <div
-                class="emotion-26"
+                class="emotion-28"
                 data-testid="max-label"
               >
                 <span
-                  class="emotion-19"
+                  class="emotion-21"
                 >
                   <svg
-                    class="emotion-18"
+                    class="emotion-20"
                     viewBox="0 0 24 24"
                   >
                     <title>
@@ -9301,21 +9316,21 @@ exports[`Live AudioPlayer render live player 1`] = `
             </div>
           </div>
           <div
-            class="emotion-41"
+            class="emotion-43"
           >
             <div
-              class="emotion-32"
+              class="emotion-34"
             >
               <button
-                class="emotion-31"
+                class="emotion-33"
                 data-testid="audio-player-skip-previous"
                 type="button"
               >
                 <div
-                  class="emotion-30"
+                  class="emotion-32"
                 >
                   <svg
-                    class="emotion-29"
+                    class="emotion-31"
                     viewBox="0 0 24 24"
                   >
                     <title>
@@ -9333,21 +9348,20 @@ exports[`Live AudioPlayer render live player 1`] = `
               </button>
             </div>
             <div
-              class="emotion-32"
+              class="emotion-34"
             >
               <button
                 aria-pressed="false"
-                class="emotion-35"
+                class="emotion-37"
                 data-testid="audio-player-play-button"
                 type="button"
               >
                 <div
                   class="emotion-32"
-                  wrap="nowrap"
                 >
-                  <div
-                    class="emotion-31"
-                    wrap="nowrap"
+                  <svg
+                    class="emotion-35"
+                    viewBox="0 0 24 24"
                   >
                     <title>
                       Play
@@ -9360,18 +9374,18 @@ exports[`Live AudioPlayer render live player 1`] = `
               </button>
             </div>
             <div
-              class="emotion-32"
+              class="emotion-34"
             >
               <button
-                class="emotion-31"
+                class="emotion-33"
                 data-testid="audio-player-skip-next"
                 type="button"
               >
                 <div
-                  class="emotion-30"
+                  class="emotion-32"
                 >
                   <svg
-                    class="emotion-29"
+                    class="emotion-31"
                     viewBox="0 0 24 24"
                   >
                     <title>
@@ -9390,10 +9404,10 @@ exports[`Live AudioPlayer render live player 1`] = `
             </div>
           </div>
           <div
-            class="emotion-28"
+            class="emotion-30"
           >
             <div
-              class="emotion-42"
+              class="emotion-44"
             />
           </div>
         </div>

@@ -61,9 +61,6 @@ exports[`Tag href renders as an anchor 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -81,7 +78,6 @@ exports[`Tag href renders as an anchor 1`] = `
   >
     <div
       class="emotion-0"
-      wrap="nowrap"
     />
   </a>
 </DocumentFragment>
@@ -99,9 +95,6 @@ exports[`Tag href renders in disable state as a span 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -150,7 +143,6 @@ exports[`Tag href renders in disable state as a span 1`] = `
   >
     <div
       class="emotion-0"
-      wrap="nowrap"
     />
   </span>
 </DocumentFragment>
@@ -168,9 +160,6 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -201,6 +190,7 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
+  background-color: #FFFFFF;
   color: #0A68C1;
   border-radius: 100vw;
 }
@@ -239,6 +229,10 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
 
 .emotion-1:disabled {
   background-color: #f0f0f0;
+}
+
+.emotion-1:disabled svg {
+  fill: #9c9c9c;
   color: #9c9c9c;
 }
 
@@ -247,7 +241,6 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   >
     <div
       class="emotion-0"
-      wrap="nowrap"
     />
   </span>
 </DocumentFragment>
@@ -265,9 +258,6 @@ exports[`Tag renders in disabled state 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -316,7 +306,6 @@ exports[`Tag renders in disabled state 1`] = `
   >
     <div
       class="emotion-0"
-      wrap="nowrap"
     />
   </span>
 </DocumentFragment>
@@ -334,9 +323,6 @@ exports[`Tag renders with Large size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -402,7 +388,6 @@ exports[`Tag renders with Large size 1`] = `
   >
     <div
       class="emotion-0"
-      wrap="nowrap"
     />
   </span>
 </DocumentFragment>
@@ -469,9 +454,6 @@ exports[`Tag renders with Medium size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -488,7 +470,6 @@ exports[`Tag renders with Medium size 1`] = `
   >
     <div
       class="emotion-0"
-      wrap="nowrap"
     />
   </span>
 </DocumentFragment>
@@ -506,9 +487,6 @@ exports[`Tag renders with Small size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -574,7 +552,6 @@ exports[`Tag renders with Small size 1`] = `
   >
     <div
       class="emotion-0"
-      wrap="nowrap"
     />
   </span>
 </DocumentFragment>
@@ -641,9 +618,6 @@ exports[`Tag renders with default styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -660,7 +634,6 @@ exports[`Tag renders with default styles 1`] = `
   >
     <div
       class="emotion-0"
-      wrap="nowrap"
     />
   </span>
 </DocumentFragment>

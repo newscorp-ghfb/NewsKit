@@ -23,9 +23,6 @@ exports[`BaseFlag renders with default styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -42,7 +39,6 @@ exports[`BaseFlag renders with default styles 1`] = `
   >
     <div
       class="emotion-0"
-      wrap="nowrap"
     />
   </span>
 </DocumentFragment>

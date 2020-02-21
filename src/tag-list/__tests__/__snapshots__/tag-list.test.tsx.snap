@@ -57,9 +57,6 @@ exports[`TagList renders as a span with custom margins 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -103,11 +100,9 @@ exports[`TagList renders as a span with custom margins 1`] = `
       >
         <div
           class="emotion-1"
-          wrap="nowrap"
         >
           <div
             class="emotion-0"
-            wrap="nowrap"
           >
             first label
           </div>
@@ -122,11 +117,9 @@ exports[`TagList renders as a span with custom margins 1`] = `
       >
         <div
           class="emotion-1"
-          wrap="nowrap"
         >
           <div
             class="emotion-0"
-            wrap="nowrap"
           >
             second label
           </div>
@@ -141,11 +134,9 @@ exports[`TagList renders as a span with custom margins 1`] = `
       >
         <div
           class="emotion-1"
-          wrap="nowrap"
         >
           <div
             class="emotion-0"
-            wrap="nowrap"
           >
             third label
           </div>
@@ -180,9 +171,6 @@ exports[`TagList renders as a span with custom size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -259,11 +247,9 @@ exports[`TagList renders as a span with custom size 1`] = `
       >
         <div
           class="emotion-1"
-          wrap="nowrap"
         >
           <div
             class="emotion-0"
-            wrap="nowrap"
           >
             first label
           </div>
@@ -278,11 +264,9 @@ exports[`TagList renders as a span with custom size 1`] = `
       >
         <div
           class="emotion-1"
-          wrap="nowrap"
         >
           <div
             class="emotion-0"
-            wrap="nowrap"
           >
             second label
           </div>
@@ -297,11 +281,9 @@ exports[`TagList renders as a span with custom size 1`] = `
       >
         <div
           class="emotion-1"
-          wrap="nowrap"
         >
           <div
             class="emotion-0"
-            wrap="nowrap"
           >
             third label
           </div>
@@ -381,9 +363,6 @@ exports[`TagList renders as a span with defaults 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -415,11 +394,9 @@ exports[`TagList renders as a span with defaults 1`] = `
       >
         <div
           class="emotion-1"
-          wrap="nowrap"
         >
           <div
             class="emotion-0"
-            wrap="nowrap"
           >
             first label
           </div>
@@ -434,11 +411,9 @@ exports[`TagList renders as a span with defaults 1`] = `
       >
         <div
           class="emotion-1"
-          wrap="nowrap"
         >
           <div
             class="emotion-0"
-            wrap="nowrap"
           >
             second label
           </div>
@@ -453,11 +428,9 @@ exports[`TagList renders as a span with defaults 1`] = `
       >
         <div
           class="emotion-1"
-          wrap="nowrap"
         >
           <div
             class="emotion-0"
-            wrap="nowrap"
           >
             third label
           </div>
@@ -525,9 +498,6 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -572,11 +542,9 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
       >
         <div
           class="emotion-1"
-          wrap="nowrap"
         >
           <div
             class="emotion-0"
-            wrap="nowrap"
           >
             first label
           </div>
@@ -592,11 +560,9 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
       >
         <div
           class="emotion-1"
-          wrap="nowrap"
         >
           <div
             class="emotion-0"
-            wrap="nowrap"
           >
             second label
           </div>
@@ -612,11 +578,9 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
       >
         <div
           class="emotion-1"
-          wrap="nowrap"
         >
           <div
             class="emotion-0"
-            wrap="nowrap"
           >
             third label
           </div>
@@ -651,9 +615,6 @@ exports[`TagList renders as an anchor with custom size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -731,11 +692,9 @@ exports[`TagList renders as an anchor with custom size 1`] = `
       >
         <div
           class="emotion-1"
-          wrap="nowrap"
         >
           <div
             class="emotion-0"
-            wrap="nowrap"
           >
             first label
           </div>
@@ -751,11 +710,9 @@ exports[`TagList renders as an anchor with custom size 1`] = `
       >
         <div
           class="emotion-1"
-          wrap="nowrap"
         >
           <div
             class="emotion-0"
-            wrap="nowrap"
           >
             second label
           </div>
@@ -771,11 +728,9 @@ exports[`TagList renders as an anchor with custom size 1`] = `
       >
         <div
           class="emotion-1"
-          wrap="nowrap"
         >
           <div
             class="emotion-0"
-            wrap="nowrap"
           >
             third label
           </div>
@@ -855,9 +810,6 @@ exports[`TagList renders as an anchor with defaults 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -890,11 +842,9 @@ exports[`TagList renders as an anchor with defaults 1`] = `
       >
         <div
           class="emotion-1"
-          wrap="nowrap"
         >
           <div
             class="emotion-0"
-            wrap="nowrap"
           >
             first label
           </div>
@@ -910,11 +860,9 @@ exports[`TagList renders as an anchor with defaults 1`] = `
       >
         <div
           class="emotion-1"
-          wrap="nowrap"
         >
           <div
             class="emotion-0"
-            wrap="nowrap"
           >
             second label
           </div>
@@ -930,11 +878,9 @@ exports[`TagList renders as an anchor with defaults 1`] = `
       >
         <div
           class="emotion-1"
-          wrap="nowrap"
         >
           <div
             class="emotion-0"
-            wrap="nowrap"
           >
             third label
           </div>
