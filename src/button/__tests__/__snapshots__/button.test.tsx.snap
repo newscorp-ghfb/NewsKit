@@ -19,10 +19,7 @@ exports[`BaseButton renders with fallback formatting 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: calc(8px * 0.25);
-  min-height: 16px;
+  min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -39,32 +36,8 @@ exports[`BaseButton renders with fallback formatting 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-1:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-1:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-1 svg {
   width: 16px;
   height: 16px;
-  color: #0A68C1;
 }
 
 .emotion-1::before {
@@ -86,9 +59,6 @@ exports[`BaseButton renders with fallback formatting 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -106,7 +76,6 @@ exports[`BaseButton renders with fallback formatting 1`] = `
   >
     <div
       class="emotion-0"
-      wrap="nowrap"
     />
   </button>
 </DocumentFragment>
@@ -167,9 +136,6 @@ exports[`Button renders Icon Button 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: calc(8px * 0.25);
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -187,32 +153,8 @@ exports[`Button renders Icon Button 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-3:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-1:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-3 svg {
   width: 24px;
   height: 24px;
-  color: #0A68C1;
 }
 
 <button
@@ -221,11 +163,9 @@ exports[`Button renders Icon Button 1`] = `
   >
     <div
       class="emotion-2"
-      wrap="nowrap"
     >
       <div
         class="emotion-1"
-        wrap="nowrap"
       >
         <svg
           class="emotion-0"
@@ -284,10 +224,7 @@ exports[`Button renders Icon Button with default size 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: calc(8px * 0.25);
-  min-height: 12px;
+  min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
@@ -305,32 +242,8 @@ exports[`Button renders Icon Button with default size 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-3:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-1:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-3 svg {
   width: 16px;
   height: 16px;
-  color: #0A68C1;
 }
 
 .emotion-3::before {
@@ -363,11 +276,9 @@ exports[`Button renders Icon Button with default size 1`] = `
   >
     <div
       class="emotion-2"
-      wrap="nowrap"
     >
       <div
         class="emotion-1"
-        wrap="nowrap"
       >
         <svg
           class="emotion-0"
@@ -432,7 +343,7 @@ exports[`Button renders Large Button 1`] = `
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: calc(8px * 0.25);
-  min-height: 8px;
+  min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -474,7 +385,6 @@ exports[`Button renders Large Button 1`] = `
 .emotion-1 svg {
   width: 24px;
   height: 24px;
-  color: #0A68C1;
 }
 
 <button
@@ -534,7 +444,7 @@ exports[`Button renders Medium Button 1`] = `
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: calc(8px * 0.25);
-  min-height: 8px;
+  min-height: 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.7142857142857142;
@@ -563,7 +473,7 @@ exports[`Button renders Medium Button 1`] = `
   background-color: #01396E;
 }
 
-.emotion-4:disabled {
+.emotion-1:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
@@ -576,7 +486,6 @@ exports[`Button renders Medium Button 1`] = `
 .emotion-1 svg {
   width: 24px;
   height: 24px;
-  color: #0A68C1;
 }
 
 <button
@@ -585,7 +494,6 @@ exports[`Button renders Medium Button 1`] = `
   >
     <div
       class="emotion-0"
-      wrap="nowrap"
     />
   </button>
 </DocumentFragment>
@@ -667,7 +575,7 @@ exports[`Button renders Small Button 1`] = `
   background-color: #01396E;
 }
 
-.emotion-4:disabled {
+.emotion-1:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
@@ -680,7 +588,6 @@ exports[`Button renders Small Button 1`] = `
 .emotion-1 svg {
   width: 16px;
   height: 16px;
-  color: #0A68C1;
 }
 
 .emotion-1::before {
@@ -698,7 +605,6 @@ exports[`Button renders Small Button 1`] = `
   >
     <div
       class="emotion-0"
-      wrap="nowrap"
     />
   </button>
 </DocumentFragment>
@@ -727,21 +633,6 @@ exports[`Button renders when there is an icon with a colour 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-0 {
-  display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
-}
-
 .emotion-4 {
   display: inline-block;
   position: relative;
@@ -759,9 +650,6 @@ exports[`Button renders when there is an icon with a colour 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: calc(8px * 0.25);
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -780,32 +668,8 @@ exports[`Button renders when there is an icon with a colour 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-4:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-4:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-4:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-4:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-4 svg {
   width: 16px;
   height: 16px;
-  color: #FFFFFF;
 }
 
 .emotion-4::before {
@@ -815,6 +679,21 @@ exports[`Button renders when there is an icon with a colour 1`] = `
   top: -8px;
   width: 100%;
   height: 48px;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  display: inline-block;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 <button
@@ -861,9 +740,6 @@ exports[`Button renders when there is no icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -908,15 +784,24 @@ exports[`Button renders when there is no icon 1`] = `
   margin: 8px 0;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-2:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-2 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-2:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-1:disabled {
+.emotion-2:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
@@ -929,7 +814,6 @@ exports[`Button renders when there is no icon 1`] = `
 .emotion-2 svg {
   width: 16px;
   height: 16px;
-  color: #0A68C1;
 }
 
 .emotion-2::before {
@@ -951,13 +835,17 @@ exports[`Button renders when there is no icon 1`] = `
 }
 
 <button
-    class="emotion-1"
+    class="emotion-2"
     type="button"
   >
     <div
-      class="emotion-0"
+      class="emotion-1"
     >
-      click this!
+      <div
+        class="emotion-0"
+      >
+        click this!
+      </div>
     </div>
   </button>
 </DocumentFragment>
@@ -1051,7 +939,6 @@ exports[`Button renders with different style preset 1`] = `
 .emotion-1 svg {
   width: 16px;
   height: 16px;
-  color: #0A68C1;
 }
 
 .emotion-1::before {
@@ -1086,9 +973,6 @@ exports[`Button renders with fallback formatting 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1163,7 +1047,6 @@ exports[`Button renders with fallback formatting 1`] = `
 .emotion-1 svg {
   width: 16px;
   height: 16px;
-  color: #0A68C1;
 }
 
 .emotion-1::before {

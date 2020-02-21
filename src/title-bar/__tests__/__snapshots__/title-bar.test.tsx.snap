@@ -2,7 +2,7 @@
 
 exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 <DocumentFragment>
-  .emotion-5 {
+  .emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -47,18 +47,18 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   margin: 0 0 16px 0;
 }
 
-.emotion-4 {
+.emotion-5 {
   padding-left: 24px;
   display: none;
 }
 
 @media screen and (min-width:480px) {
-  .emotion-4 {
+  .emotion-5 {
     display: block;
   }
 }
 
-.emotion-3 {
+.emotion-4 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -91,15 +91,24 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   margin: 8px 0;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-4:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-4 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-4:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-3:disabled {
+.emotion-4:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
@@ -112,7 +121,6 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 .emotion-4 svg {
   width: 16px;
   height: 16px;
-  color: #0A68C1;
 }
 
 .emotion-4::before {
@@ -124,11 +132,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   height: 48px;
 }
 
-.emotion-3::before:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -159,7 +163,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 }
 
 <div
-    class="emotion-5"
+    class="emotion-6"
   >
     <div
       class="emotion-1"
@@ -171,16 +175,20 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
       </h2>
     </div>
     <div
-      class="emotion-4"
+      class="emotion-5"
     >
       <button
-        class="emotion-3"
+        class="emotion-4"
         type="button"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          Default button
+          <div
+            class="emotion-2"
+          >
+            Default button
+          </div>
         </div>
       </button>
     </div>

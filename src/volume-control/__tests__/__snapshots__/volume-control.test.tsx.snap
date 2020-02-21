@@ -109,13 +109,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 
 .emotion-5:disabled {
   background-color: #f0f0f0;
-  border-color: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-4:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-4 {
@@ -175,11 +168,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-8:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-6:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
@@ -373,13 +361,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 
 .emotion-5:disabled {
   background-color: #f0f0f0;
-  border-color: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-4:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-4 {
@@ -439,11 +420,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-8:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-6:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
@@ -637,13 +613,6 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 
 .emotion-5:disabled {
   background-color: #f0f0f0;
-  border-color: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-4:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-4 {
@@ -703,11 +672,6 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-8:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-6:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
@@ -934,13 +898,6 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 
 .emotion-5:disabled {
   background-color: #f0f0f0;
-  border-color: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-4:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-8 {
@@ -966,11 +923,6 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-8:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-6:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
