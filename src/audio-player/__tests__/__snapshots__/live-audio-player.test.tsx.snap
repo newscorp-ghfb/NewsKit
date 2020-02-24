@@ -1231,9 +1231,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
               <button
                 class="emotion-39"
                 data-testid="audio-player-skip-previous"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -1266,9 +1264,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
               <button
                 class="emotion-44"
                 data-testid="audio-player-replay"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -1298,9 +1294,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
                 aria-pressed="true"
                 class="emotion-49"
                 data-testid="audio-player-play-button"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -1329,9 +1323,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
               <button
                 class="emotion-44"
                 data-testid="audio-player-forward"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -1367,9 +1359,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
               <button
                 class="emotion-39"
                 data-testid="audio-player-skip-next"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -2642,9 +2632,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
               <button
                 class="emotion-39"
                 data-testid="audio-player-skip-previous"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -2677,9 +2665,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
               <button
                 class="emotion-44"
                 data-testid="audio-player-replay"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -2709,9 +2695,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
                 aria-pressed="false"
                 class="emotion-49"
                 data-testid="audio-player-play-button"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -2740,9 +2724,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
               <button
                 class="emotion-44"
                 data-testid="audio-player-forward"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -2778,9 +2760,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
               <button
                 class="emotion-39"
                 data-testid="audio-player-skip-next"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -4053,9 +4033,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
               <button
                 class="emotion-39"
                 data-testid="audio-player-skip-previous"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -4088,9 +4066,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
               <button
                 class="emotion-44"
                 data-testid="audio-player-replay"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -4120,9 +4096,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
                 aria-pressed="false"
                 class="emotion-49"
                 data-testid="audio-player-play-button"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -4151,9 +4125,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
               <button
                 class="emotion-44"
                 data-testid="audio-player-forward"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -4189,9 +4161,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
               <button
                 class="emotion-39"
                 data-testid="audio-player-skip-next"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -5464,9 +5434,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
               <button
                 class="emotion-39"
                 data-testid="audio-player-skip-previous"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -5499,9 +5467,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
               <button
                 class="emotion-44"
                 data-testid="audio-player-replay"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -5531,9 +5497,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
                 aria-pressed="false"
                 class="emotion-49"
                 data-testid="audio-player-play-button"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -5562,9 +5526,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
               <button
                 class="emotion-44"
                 data-testid="audio-player-forward"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -5600,9 +5562,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
               <button
                 class="emotion-39"
                 data-testid="audio-player-skip-next"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -6875,9 +6835,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
               <button
                 class="emotion-39"
                 data-testid="audio-player-skip-previous"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -6910,9 +6868,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
               <button
                 class="emotion-44"
                 data-testid="audio-player-replay"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -6942,9 +6898,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
                 aria-pressed="true"
                 class="emotion-49"
                 data-testid="audio-player-play-button"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -6973,9 +6927,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
               <button
                 class="emotion-44"
                 data-testid="audio-player-forward"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -7011,9 +6963,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
               <button
                 class="emotion-39"
                 data-testid="audio-player-skip-next"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -8190,9 +8140,7 @@ exports[`Live AudioPlayer render default player 1`] = `
               <button
                 class="emotion-33"
                 data-testid="audio-player-skip-previous"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-32"
@@ -8225,9 +8173,7 @@ exports[`Live AudioPlayer render default player 1`] = `
               <button
                 class="emotion-38"
                 data-testid="audio-player-replay"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-32"
@@ -8257,9 +8203,7 @@ exports[`Live AudioPlayer render default player 1`] = `
                 aria-pressed="false"
                 class="emotion-43"
                 data-testid="audio-player-play-button"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-32"
@@ -8288,9 +8232,7 @@ exports[`Live AudioPlayer render default player 1`] = `
               <button
                 class="emotion-38"
                 data-testid="audio-player-forward"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-32"
@@ -8326,9 +8268,7 @@ exports[`Live AudioPlayer render default player 1`] = `
               <button
                 class="emotion-33"
                 data-testid="audio-player-skip-next"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-32"
@@ -9420,9 +9360,7 @@ exports[`Live AudioPlayer render live player 1`] = `
               <button
                 class="emotion-32"
                 data-testid="audio-player-skip-previous"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-31"
@@ -9456,9 +9394,7 @@ exports[`Live AudioPlayer render live player 1`] = `
                 aria-pressed="false"
                 class="emotion-37"
                 data-testid="audio-player-play-button"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-31"
@@ -9487,9 +9423,7 @@ exports[`Live AudioPlayer render live player 1`] = `
               <button
                 class="emotion-32"
                 data-testid="audio-player-skip-next"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-31"
@@ -10814,9 +10748,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
               <button
                 class="emotion-39"
                 data-testid="audio-player-skip-previous"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -10849,9 +10781,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
               <button
                 class="emotion-44"
                 data-testid="audio-player-replay"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -10881,9 +10811,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
                 aria-pressed="false"
                 class="emotion-49"
                 data-testid="audio-player-play-button"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -10912,9 +10840,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
               <button
                 class="emotion-44"
                 data-testid="audio-player-forward"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -10950,9 +10876,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
               <button
                 class="emotion-39"
                 data-testid="audio-player-skip-next"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -12245,9 +12169,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
               <button
                 class="emotion-40"
                 data-testid="audio-player-skip-previous"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-39"
@@ -12280,9 +12202,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
               <button
                 class="emotion-45"
                 data-testid="audio-player-replay"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-39"
@@ -12312,9 +12232,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
                 aria-pressed="false"
                 class="emotion-50"
                 data-testid="audio-player-play-button"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-39"
@@ -12343,9 +12261,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
               <button
                 class="emotion-45"
                 data-testid="audio-player-forward"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-39"
@@ -12381,9 +12297,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
               <button
                 class="emotion-40"
                 data-testid="audio-player-skip-next"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-39"

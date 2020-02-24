@@ -190,9 +190,7 @@ exports[`Button renders Icon Button 1`] = `
 
 <button
     class="emotion-3"
-    height="sizing090"
     type="button"
-    width="sizing090"
   >
     <div
       class="emotion-2"
@@ -335,9 +333,7 @@ exports[`Button renders Icon Button with default size 1`] = `
 
 <button
     class="emotion-3"
-    height="sizing060"
     type="button"
-    width="sizing060"
   >
     <div
       class="emotion-2"
@@ -796,9 +792,7 @@ exports[`Button renders when there is an icon with a colour 1`] = `
 
 <button
     class="emotion-4"
-    height="sizing060"
     type="button"
-    width="sizing060"
   >
     <div
       class="emotion-3"

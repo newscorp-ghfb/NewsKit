@@ -1225,9 +1225,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
               <button
                 class="emotion-39"
                 data-testid="audio-player-skip-previous"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -1260,9 +1258,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
               <button
                 class="emotion-44"
                 data-testid="audio-player-replay"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -1292,9 +1288,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
                 aria-pressed="false"
                 class="emotion-49"
                 data-testid="audio-player-play-button"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -1323,9 +1317,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
               <button
                 class="emotion-44"
                 data-testid="audio-player-forward"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -1361,9 +1353,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
               <button
                 class="emotion-39"
                 data-testid="audio-player-skip-next"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -2631,9 +2621,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
                 class="emotion-39"
                 data-testid="audio-player-skip-previous"
                 disabled=""
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -2666,9 +2654,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
               <button
                 class="emotion-44"
                 data-testid="audio-player-replay"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -2698,9 +2684,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
                 aria-pressed="false"
                 class="emotion-49"
                 data-testid="audio-player-play-button"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -2729,9 +2713,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
               <button
                 class="emotion-44"
                 data-testid="audio-player-forward"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -2768,9 +2750,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
                 class="emotion-39"
                 data-testid="audio-player-skip-next"
                 disabled=""
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -4039,9 +4019,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
               <button
                 class="emotion-39"
                 data-testid="audio-player-skip-previous"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -4074,9 +4052,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
               <button
                 class="emotion-44"
                 data-testid="audio-player-replay"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -4106,9 +4082,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
                 aria-pressed="false"
                 class="emotion-49"
                 data-testid="audio-player-play-button"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -4137,9 +4111,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
               <button
                 class="emotion-44"
                 data-testid="audio-player-forward"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -4175,9 +4147,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
               <button
                 class="emotion-39"
                 data-testid="audio-player-skip-next"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -5444,9 +5414,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
               <button
                 class="emotion-39"
                 data-testid="audio-player-skip-previous"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -5479,9 +5447,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
               <button
                 class="emotion-44"
                 data-testid="audio-player-replay"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -5511,9 +5477,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
                 aria-pressed="false"
                 class="emotion-49"
                 data-testid="audio-player-play-button"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"
@@ -5542,9 +5506,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
               <button
                 class="emotion-44"
                 data-testid="audio-player-forward"
-                height="sizing080"
                 type="button"
-                width="sizing080"
               >
                 <div
                   class="emotion-38"
@@ -5580,9 +5542,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
               <button
                 class="emotion-39"
                 data-testid="audio-player-skip-next"
-                height="sizing090"
                 type="button"
-                width="sizing090"
               >
                 <div
                   class="emotion-38"

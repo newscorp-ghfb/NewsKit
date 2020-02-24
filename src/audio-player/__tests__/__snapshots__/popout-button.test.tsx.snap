@@ -110,9 +110,7 @@ exports[`PopoutButton popout button opens window to href 1`] = `
 
 <button
     class="emotion-3"
-    height="sizing090"
     type="button"
-    width="sizing090"
   >
     <div
       class="emotion-2"
@@ -251,9 +249,7 @@ exports[`PopoutButton renders popout button 1`] = `
 
 <button
     class="emotion-3"
-    height="sizing090"
     type="button"
-    width="sizing090"
   >
     <div
       class="emotion-2"
