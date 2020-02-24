@@ -3,10 +3,16 @@ import * as React from 'react';
 import {Tag, TagSize} from '..';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {styled} from '../../utils/style';
+import {Email} from '../../icons';
+import {Stack} from '../../stack';
 
 export const name = 'tag';
 const Block = styled.div`
   margin: 10px;
+`;
+
+const Container = styled.div`
+  margin: 24px;
 `;
 
 export const component = () => (
@@ -35,10 +41,41 @@ export const component = () => (
     <Block>
       <Tag href="http://example.com">tagPrimary</Tag>
     </Block>
-    <Block>
-      <Tag href="http://example.com" $stylePreset="buttonSolidPrimary">
-        buttonSolidPrimary
-      </Tag>
-    </Block>
+    <h1>Tags with an icon</h1>
+    <h2>Solid</h2>
+    <Container>
+      <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
+        <Tag $size={TagSize.Small}>
+          <Email $size="iconSize010" />
+          Text
+        </Tag>
+        <Tag $size={TagSize.Medium}>
+          <Email $size="iconSize010" />
+          Text
+        </Tag>
+        <Tag $size={TagSize.Large}>
+          <Email $size="iconSize010" />
+          Text
+        </Tag>
+      </Stack>
+    </Container>
+
+    <h2>Minimal (without padding)</h2>
+    <Container>
+      <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
+        <Tag $size={TagSize.Small} $stylePreset="TagMinimal">
+          <Email $size="iconSize010" />
+          Text
+        </Tag>
+        <Tag $size={TagSize.Medium} $stylePreset="TagMinimal">
+          <Email $size="iconSize010" />
+          Text
+        </Tag>
+        <Tag $size={TagSize.Large} $stylePreset="TagMinimal">
+          <Email $size="iconSize010" />
+          Text
+        </Tag>
+      </Stack>
+    </Container>
   </React.Fragment>
 );

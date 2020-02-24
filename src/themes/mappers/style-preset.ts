@@ -240,6 +240,11 @@ export const createStylePresets = ({
       current: {
         backgroundColor: colorPrimitives.interactive230,
       },
+      disabled: {
+        backgroundColor: colorPrimitives.disabled,
+        color: colorPrimitives.inkNonEssential,
+        iconColor: colorPrimitives.inkNonEssential,
+      },
     } as StylePresetStates,
     flagSolid: {
       base: {

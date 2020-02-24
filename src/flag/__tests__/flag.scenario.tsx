@@ -20,7 +20,7 @@ export const component = () => (
     <h2>Solid Flag</h2>
     <Flag>Text goes here</Flag>
     <h2>Minimal Flag</h2>
-    <Flag $spacing="sizing000" $stylePreset="flag010Inverse">
+    <Flag $spacing="sizing000" $stylePreset="flagMinimal">
       Text goes here
     </Flag>
     <h1>Flag Sizes</h1>
@@ -31,10 +31,10 @@ export const component = () => (
 
     <h1>Style Presets</h1>
     <Block>
-      <Flag>flag010</Flag>
+      <Flag>flagSolid</Flag>
     </Block>
     <Block>
-      <Flag $stylePreset="flag010Inverse">flag010Inverse</Flag>
+      <Flag $stylePreset="flagMinimal">flagMinimal</Flag>
     </Block>
     <h1>Flags with an icon</h1>
     <h2>Solid</h2>
@@ -57,7 +57,7 @@ export const component = () => (
         <Flag
           $size={FlagSize.Small}
           $spacing="sizing000"
-          $stylePreset="flag010Inverse"
+          $stylePreset="flagMinimal"
         >
           <Email $size="iconSize010" />
           Text
@@ -65,7 +65,7 @@ export const component = () => (
         <Flag
           $size={FlagSize.Large}
           $spacing="sizing000"
-          $stylePreset="flag010Inverse"
+          $stylePreset="flagMinimal"
         >
           <Email $size="iconSize010" />
           Text

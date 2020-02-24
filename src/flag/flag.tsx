@@ -32,7 +32,7 @@ export const Flag: React.FC<FlagProps> = props => {
   return (
     <BaseFlag
       data-testid="flag"
-      $stylePreset="flag010"
+      $stylePreset="flagSolid"
       $size={$size}
       iconSize="iconSize010"
       {...flagSizeStyleTokens[$size]}

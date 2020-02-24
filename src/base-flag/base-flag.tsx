@@ -9,7 +9,7 @@ import {BaseFlagProps} from './types';
 import {Stack} from '../stack';
 import {Flow, StackDistribution} from '../stack/types';
 
-const StyledBaseFlag = styled.span<BaseFlagProps>`
+const StyledBaseFlag = styled.div<BaseFlagProps>`
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -20,6 +20,7 @@ const StyledBaseFlag = styled.span<BaseFlagProps>`
   min-height: ${getSizingFromTheme(undefined, 'minHeight')};
   padding: ${getSizingFromTheme(undefined, 'padding')};
   ${getTypePresetFromTheme(undefined, '$typePreset')}
+  cursor: ${({isDisabled}) => (isDisabled ? 'not-allowed' : 'default')};
 
   svg {
     width: ${getSizingFromTheme(undefined, 'iconSize')};
@@ -32,6 +33,7 @@ const StyledBaseFlag = styled.span<BaseFlagProps>`
       isDisabled,
       borderRadiusSize,
     })(props)}
+
 `;
 
 export const BaseFlag: React.FC<BaseFlagProps> = ({children, ...props}) => (

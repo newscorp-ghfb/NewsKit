@@ -53,9 +53,6 @@ Tags have a number of props to facilitate a variety of uses:
   <Prop name="$size" type="TagSize" enum={TagSize} default="Medium">
     Optional size of the Tag.
   </Prop>
-  <Prop name="$stylePreset" type="string" default="tagPrimary">
-    If provided, this overrides the style preset applied to the tag.
-  </Prop>
   <Prop name="$typePreset" type="string" default="flag010">
     If provided, this overrides the type preset applied to the tag.
   </Prop>
@@ -100,21 +97,6 @@ Tags have a number of props to facilitate a variety of uses:
         {
           label: 'Large',
           value: TagSize.Large,
-        },
-      ],
-    },
-    {
-      name: 'Style Preset',
-      propName: '$stylePreset',
-      options: [
-        {
-          label: 'tagPrimary',
-          value: 'tagPrimary',
-          isDefault: true
-        },
-        {
-          label: 'buttonSolidPrimary',
-          value: 'buttonSolidPrimary',
         },
       ],
     },
