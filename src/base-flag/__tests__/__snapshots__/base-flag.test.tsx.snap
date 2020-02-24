@@ -11,6 +11,7 @@ exports[`BaseFlag renders with default styles 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: default;
 }
 
 .emotion-0 {
@@ -34,12 +35,12 @@ exports[`BaseFlag renders with default styles 1`] = `
   margin-right: calc(-4px/2);
 }
 
-<span
+<div
     class="emotion-1"
   >
     <div
       class="emotion-0"
     />
-  </span>
+  </div>
 </DocumentFragment>
 `;

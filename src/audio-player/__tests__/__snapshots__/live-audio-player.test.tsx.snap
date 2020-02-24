@@ -9128,10 +9128,19 @@ exports[`Live AudioPlayer render live player 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-  color: #2e2e2e;
+  min-height: 24px;
+  padding: 4px 8px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  cursor: default;
+  background-color: #EF1703;
+  color: #FFFFFF;
   width: 48px;
   height: 24px;
   padding: 0;
@@ -9277,7 +9286,7 @@ exports[`Live AudioPlayer render live player 1`] = `
               <div
                 class="emotion-11"
               >
-                <span
+                <div
                   class="emotion-9"
                   data-testid="flag"
                 >
@@ -9290,7 +9299,7 @@ exports[`Live AudioPlayer render live player 1`] = `
                       Live
                     </div>
                   </div>
-                </span>
+                </div>
                 <span
                   class="emotion-10"
                 >

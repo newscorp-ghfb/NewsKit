@@ -38,7 +38,7 @@ export const PlayerMeta: React.FC<PlayerMetaProps> = React.memo(
       <Cell xs={7}>
         {(live || time) && (
           <Block $margin="spaceStack050">
-            {live && <LiveTag>Live</LiveTag>}
+            {live && <LiveFlag $stylePreset="flagSolidLive">Live</LiveFlag>}
             {time && <ProgrammeTime>{time}</ProgrammeTime>}
           </Block>
         )}

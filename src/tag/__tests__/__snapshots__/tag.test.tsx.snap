@@ -21,6 +21,7 @@ exports[`Tag href renders as an anchor 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  cursor: default;
   border-style: solid;
   border-color: #e4e4e4;
   border-width: 1px;
@@ -38,6 +39,16 @@ exports[`Tag href renders as an anchor 1`] = `
 
 .emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
+}
+
+.emotion-1:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-1:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-0 {
@@ -63,6 +74,7 @@ exports[`Tag href renders as an anchor 1`] = `
 
 <a
     class="emotion-1"
+    data-testid="tag"
     href="#"
   >
     <div
@@ -114,22 +126,11 @@ exports[`Tag href renders in disable state as a span 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  cursor: not-allowed;
   border-style: solid;
   border-color: #e4e4e4;
   border-width: 1px;
-  color: #2e2e2e;
-}
-
-.emotion-0 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-}
-
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-0:active:not(:disabled) {
+  color: #9c9c9c;
   background-color: #f0f0f0;
 }
 
@@ -138,40 +139,25 @@ exports[`Tag href renders in disable state as a span 1`] = `
   height: 16px;
 }
 
-<span
+.emotion-1 svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
     class="emotion-1"
+    data-testid="tag"
   >
     <div
       class="emotion-0"
     />
-  </span>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Tag renders a tag with a custom stylePreset 1`] = `
 <DocumentFragment>
-  .emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-1 {
+  .emotion-1 {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -190,9 +176,11 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  cursor: default;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  color: #2e2e2e;
 }
 
 .emotion-1 svg {
@@ -213,13 +201,45 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   background-color: #f0f0f0;
 }
 
-<span
+.emotion-1:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-1:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+<div
     class="emotion-1"
+    data-testid="tag"
   >
     <div
       class="emotion-0"
     />
-  </span>
+  </div>
 </DocumentFragment>
 `;
 
@@ -265,32 +285,32 @@ exports[`Tag renders in disabled state 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  cursor: not-allowed;
   border-style: solid;
   border-color: #e4e4e4;
   border-width: 1px;
-  color: #2e2e2e;
-}
-
-.emotion-0 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-}
-
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-0:active:not(:disabled) {
+  color: #9c9c9c;
   background-color: #f0f0f0;
 }
 
-<span
+.emotion-1 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-1 svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
     class="emotion-1"
+    data-testid="tag"
   >
     <div
       class="emotion-0"
     />
-  </span>
+  </div>
 </DocumentFragment>
 `;
 
@@ -366,6 +386,7 @@ exports[`Tag renders with Large size 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  cursor: default;
   border-style: solid;
   border-width: 2px;
   color: #535353;
@@ -396,13 +417,24 @@ exports[`Tag renders with Large size 1`] = `
   background-color: #f0f0f0;
 }
 
-<span
+.emotion-1:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-1:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
     class="emotion-1"
+    data-testid="tag"
   >
     <div
       class="emotion-0"
     />
-  </span>
+  </div>
 </DocumentFragment>
 `;
 
@@ -427,6 +459,7 @@ exports[`Tag renders with Medium size 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  cursor: default;
   border-style: solid;
   border-color: #e4e4e4;
   border-width: 1px;
@@ -444,6 +477,16 @@ exports[`Tag renders with Medium size 1`] = `
 
 .emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
+}
+
+.emotion-1:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-1:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-0 {
@@ -467,13 +510,14 @@ exports[`Tag renders with Medium size 1`] = `
   margin-right: calc(-4px/2);
 }
 
-<span
+<div
     class="emotion-1"
+    data-testid="tag"
   >
     <div
       class="emotion-0"
     />
-  </span>
+  </div>
 </DocumentFragment>
 `;
 
@@ -509,6 +553,17 @@ exports[`Tag renders with Small size 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 24px;
+  padding: 4px 8px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  cursor: default;
   border-style: solid;
   border-color: #e4e4e4;
   border-width: 1px;
@@ -528,13 +583,24 @@ exports[`Tag renders with Small size 1`] = `
   background-color: #f0f0f0;
 }
 
-<span
+.emotion-1:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-1:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
     class="emotion-1"
+    data-testid="tag"
   >
     <div
       class="emotion-0"
     />
-  </span>
+  </div>
 </DocumentFragment>
 `;
 
@@ -559,6 +625,7 @@ exports[`Tag renders with default styles 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  cursor: default;
   border-style: solid;
   border-color: #e4e4e4;
   border-width: 1px;
@@ -576,6 +643,16 @@ exports[`Tag renders with default styles 1`] = `
 
 .emotion-0:active:not(:disabled) {
   background-color: #f0f0f0;
+}
+
+.emotion-1:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-1:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-0 {
@@ -599,12 +676,13 @@ exports[`Tag renders with default styles 1`] = `
   margin-right: calc(-4px/2);
 }
 
-<span
+<div
     class="emotion-1"
+    data-testid="tag"
   >
     <div
       class="emotion-0"
     />
-  </span>
+  </div>
 </DocumentFragment>
 `;

@@ -42,9 +42,7 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  cursor: default;
 }
 
 .emotion-1 svg {
@@ -52,50 +50,14 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
   height: 16px;
 }
 
-.emotion-1 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-1:hover:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
-}
-
-.emotion-1:active:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-1:active:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
-}
-
-.emotion-1:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-1:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-1:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-<span
+<div
     class="emotion-1"
     data-testid="flag"
   >
     <div
       class="emotion-0"
     />
-  </span>
+  </div>
 </DocumentFragment>
 `;
 
@@ -141,9 +103,7 @@ exports[`Flag renders a flag with no paddings 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  background-color: #FFFFFF;
-  color: #0A68C1;
-  border-radius: 100vw;
+  cursor: default;
 }
 
 .emotion-1 svg {
@@ -151,50 +111,14 @@ exports[`Flag renders a flag with no paddings 1`] = `
   height: 16px;
 }
 
-.emotion-1 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-1:hover:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
-}
-
-.emotion-1:active:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-1:active:not(:disabled) svg {
-  fill: #02509B;
-  color: #02509B;
-}
-
-.emotion-1:focus:not(:disabled) {
-  border-width: 2px;
-}
-
-.emotion-1:disabled {
-  background-color: #f0f0f0;
-}
-
-.emotion-1:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-<span
+<div
     class="emotion-1"
     data-testid="flag"
   >
     <div
       class="emotion-0"
     />
-  </span>
+  </div>
 </DocumentFragment>
 `;
 
@@ -240,7 +164,8 @@ exports[`Flag renders with Large size 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: #0A68C1;
+  cursor: default;
+  background-color: #471e79;
   color: #FFFFFF;
 }
 
@@ -254,14 +179,14 @@ exports[`Flag renders with Large size 1`] = `
   color: #FFFFFF;
 }
 
-<span
+<div
     class="emotion-1"
     data-testid="flag"
   >
     <div
       class="emotion-0"
     />
-  </span>
+  </div>
 </DocumentFragment>
 `;
 
@@ -286,7 +211,8 @@ exports[`Flag renders with Small size 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  background-color: #0A68C1;
+  cursor: default;
+  background-color: #471e79;
   color: #FFFFFF;
 }
 
@@ -321,14 +247,14 @@ exports[`Flag renders with Small size 1`] = `
   margin-right: calc(-4px/2);
 }
 
-<span
+<div
     class="emotion-1"
     data-testid="flag"
   >
     <div
       class="emotion-0"
     />
-  </span>
+  </div>
 </DocumentFragment>
 `;
 
@@ -353,7 +279,8 @@ exports[`Flag renders with default styles 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  background-color: #0A68C1;
+  cursor: default;
+  background-color: #471e79;
   color: #FFFFFF;
 }
 
@@ -388,13 +315,13 @@ exports[`Flag renders with default styles 1`] = `
   margin-right: calc(-4px/2);
 }
 
-<span
+<div
     class="emotion-1"
     data-testid="flag"
   >
     <div
       class="emotion-0"
     />
-  </span>
+  </div>
 </DocumentFragment>
 `;

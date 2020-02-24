@@ -10,7 +10,6 @@ const tagSizeStyleTokens: Record<
   {
     $typePreset: TypePresetKeys;
     minHeight: SizingKeys;
-    borderRadiusSize: SizingKeys;
     padding: PaddingPresetKeys;
     iconSize: IconSizeKeys;
   }
@@ -18,21 +17,18 @@ const tagSizeStyleTokens: Record<
   [TagSize.Large]: {
     $typePreset: 'tag030',
     minHeight: 'sizing070',
-    borderRadiusSize: 'sizing070',
     padding: 'spaceInset020Squish',
     iconSize: 'iconSize020',
   },
   [TagSize.Medium]: {
     $typePreset: 'tag020',
     minHeight: 'sizing060',
-    borderRadiusSize: 'sizing060',
     padding: 'spaceInset020Squish',
     iconSize: 'iconSize010',
   },
   [TagSize.Small]: {
     $typePreset: 'tag010',
     minHeight: 'sizing050',
-    borderRadiusSize: 'sizing050',
     padding: 'spaceInset010Squish',
     iconSize: 'iconSize010',
   },
@@ -45,6 +41,7 @@ export const Tag: React.FC<TagProps> = ({
   ...props
 }) => (
   <BaseFlag
+    data-testid="tag"
     isDisabled={disabled}
     href={disabled ? undefined : href}
     $stylePreset="tagPrimary"

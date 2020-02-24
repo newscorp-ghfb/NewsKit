@@ -27,11 +27,10 @@ const StyledBaseFlag = styled.div<BaseFlagProps>`
     height: ${getSizingFromTheme(undefined, 'iconSize')};
   }
 
-  ${({isDisabled, borderRadiusSize, ...props}) =>
+  ${({isDisabled, ...props}) =>
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     getStylePresetFromTheme(undefined, '$stylePreset' as any, {
       isDisabled,
-      borderRadiusSize,
     })(props)}
 
 `;
