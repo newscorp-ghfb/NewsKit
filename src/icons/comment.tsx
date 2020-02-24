@@ -1,14 +1,9 @@
 import React from 'react';
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
-import {ColorKeys} from '../themes';
+import {SvgProps} from './types';
 
-export interface CommentIconProps extends SvgLabels, SvgBase {
-  $color?: ColorKeys;
-}
-
-const defaultIcon: React.FC<CommentIconProps> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   $color,
   title = 'Comment icon',
@@ -20,7 +15,7 @@ const defaultIcon: React.FC<CommentIconProps> = ({
   </Svg>
 );
 
-export const Comment = withTheme<CommentIconProps>(props => {
+export const Comment = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.Comment || defaultIcon;
   return <Icon {...props} />;
 });

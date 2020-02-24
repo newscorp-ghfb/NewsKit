@@ -1,14 +1,10 @@
 import React from 'react';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
-import {ColorKeys} from '../themes';
+import {SvgProps} from './types';
+
 import {withTheme} from '../themes/emotion';
 
-export interface PauseProps extends SvgLabels, SvgBase {
-  $color?: ColorKeys;
-}
-
-const defaultIcon: React.FC<PauseProps> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   $color,
   title = 'Pause',
@@ -20,7 +16,7 @@ const defaultIcon: React.FC<PauseProps> = ({
   </Svg>
 );
 
-export const Pause = withTheme<PauseProps>(props => {
+export const Pause = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.Pause || defaultIcon;
 
   return <Icon {...props} />;

@@ -1,14 +1,9 @@
 import React from 'react';
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
-import {ColorKeys} from '../themes';
+import {SvgProps} from './types';
 
-export interface EmailIconProps extends SvgLabels, SvgBase {
-  $color?: ColorKeys;
-}
-
-const defaultIcon: React.FC<EmailIconProps> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   $color,
   title = 'Email icon',
@@ -20,7 +15,7 @@ const defaultIcon: React.FC<EmailIconProps> = ({
   </Svg>
 );
 
-export const Email = withTheme<EmailIconProps>(props => {
+export const Email = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.Email || defaultIcon;
   return <Icon {...props} />;
 });

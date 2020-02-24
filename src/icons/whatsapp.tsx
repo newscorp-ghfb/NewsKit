@@ -1,11 +1,9 @@
 import React from 'react';
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
+import {SvgProps} from './types';
 
-export type WhatsAppIconProps = SvgLabels & SvgBase;
-
-const defaultIcon: React.FC<WhatsAppIconProps> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   title = 'WhatsApp Logo',
   ariaLabel,
@@ -26,7 +24,7 @@ const defaultIcon: React.FC<WhatsAppIconProps> = ({
   </Svg>
 );
 
-export const WhatsApp = withTheme<WhatsAppIconProps>(props => {
+export const WhatsApp = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.WhatsApp || defaultIcon;
   return <Icon {...props} />;
 });

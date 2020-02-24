@@ -2,14 +2,9 @@ import React from 'react';
 
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
-import {ColorKeys} from '../themes';
+import {SvgProps} from './types';
 
-export interface VolumeDownIconProps extends SvgLabels, SvgBase {
-  $color?: ColorKeys;
-}
-
-const defaultIcon: React.FC<VolumeDownIconProps> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   $color,
   title = 'Volume down',
@@ -21,7 +16,7 @@ const defaultIcon: React.FC<VolumeDownIconProps> = ({
   </Svg>
 );
 
-export const VolumeDown = withTheme<VolumeDownIconProps>(props => {
+export const VolumeDown = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.VolumeDown || defaultIcon;
   return <Icon {...props} />;
 });

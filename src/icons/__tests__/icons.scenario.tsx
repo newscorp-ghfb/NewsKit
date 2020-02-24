@@ -1,13 +1,8 @@
 import * as React from 'react';
 
 import * as icons from '..';
-import {ColorKeys} from '../../themes';
-import {SvgBase} from '../types';
+import {SvgProps} from '../types';
 import {styled} from '../../utils/style';
-
-interface IconProps extends SvgBase {
-  $color?: ColorKeys;
-}
 
 export const name = 'icons';
 
@@ -24,7 +19,7 @@ export const component = () => (
       .map((entry: any) => {
         const [iconName, Icon] = entry as [
           string,
-          React.ComponentType<IconProps>,
+          React.ComponentType<SvgProps>,
         ];
 
         if (['Facebook', 'Twitter', 'WhatsApp', 'GitHub'].includes(iconName)) {

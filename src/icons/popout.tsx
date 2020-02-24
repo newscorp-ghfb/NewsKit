@@ -2,18 +2,9 @@ import React from 'react';
 
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
-import {ColorKeys} from '../themes';
+import {SvgProps} from './types';
 
-export interface PopoutIconProps extends SvgLabels, SvgBase {
-  $color?: ColorKeys;
-}
-
-const defaultIcon: React.FC<PopoutIconProps> = ({
-  $size,
-  $color,
-  title = 'Popout',
-}) => (
+const defaultIcon: React.FC<SvgProps> = ({$size, $color, title = 'Popout'}) => (
   <Svg viewBox="0 0 24 24" $size={$size} $color={$color}>
     <title>{title}</title>
     <path d="M0 0h24v24H0z" fill="none" />
@@ -21,7 +12,7 @@ const defaultIcon: React.FC<PopoutIconProps> = ({
   </Svg>
 );
 
-export const Popout = withTheme<PopoutIconProps>(props => {
+export const Popout = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.Popout || defaultIcon;
   return <Icon {...props} />;
 });

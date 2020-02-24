@@ -1,11 +1,9 @@
 import React from 'react';
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
+import {SvgProps} from './types';
 
-export type FacebookIconProps = SvgLabels & SvgBase;
-
-const defaultIcon: React.FC<FacebookIconProps> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   title = 'Facebook icon',
   ariaLabel,
@@ -27,7 +25,7 @@ const defaultIcon: React.FC<FacebookIconProps> = ({
   </Svg>
 );
 
-export const Facebook = withTheme<FacebookIconProps>(props => {
+export const Facebook = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.Facebook || defaultIcon;
   return <Icon {...props} />;
 });

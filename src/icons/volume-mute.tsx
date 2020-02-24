@@ -2,14 +2,9 @@ import React from 'react';
 
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
-import {ColorKeys} from '../themes';
+import {SvgProps} from './types';
 
-export interface VolumeMuteIconProps extends SvgLabels, SvgBase {
-  $color?: ColorKeys;
-}
-
-const defaultIcon: React.FC<VolumeMuteIconProps> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   $color,
   title = 'Volume mute',
@@ -21,7 +16,7 @@ const defaultIcon: React.FC<VolumeMuteIconProps> = ({
   </Svg>
 );
 
-export const VolumeMute = withTheme<VolumeMuteIconProps>(props => {
+export const VolumeMute = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.VolumeMute || defaultIcon;
   return <Icon {...props} />;
 });

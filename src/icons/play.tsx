@@ -1,14 +1,10 @@
 import React from 'react';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
-import {ColorKeys} from '../themes';
+import {SvgProps} from './types';
+
 import {withTheme} from '../themes/emotion';
 
-export interface PlayProps extends SvgLabels, SvgBase {
-  $color?: ColorKeys;
-}
-
-const defaultIcon: React.FC<PlayProps> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   $color,
   title = 'Play',
@@ -20,7 +16,7 @@ const defaultIcon: React.FC<PlayProps> = ({
   </Svg>
 );
 
-export const Play = withTheme<PlayProps>(props => {
+export const Play = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.Play || defaultIcon;
 
   return <Icon {...props} />;

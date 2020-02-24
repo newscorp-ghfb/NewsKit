@@ -1,14 +1,10 @@
 import React from 'react';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
-import {ColorKeys} from '../themes';
+import {SvgProps} from './types';
+
 import {withTheme} from '../themes/emotion';
 
-export interface CopyLinkProps extends SvgLabels, SvgBase {
-  $color?: ColorKeys;
-}
-
-const defaultIcon: React.FC<CopyLinkProps> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   $color,
   title = 'Copy icon',
@@ -21,7 +17,7 @@ const defaultIcon: React.FC<CopyLinkProps> = ({
   </Svg>
 );
 
-export const CopyLink = withTheme<CopyLinkProps>(props => {
+export const CopyLink = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.CopyLink || defaultIcon;
 
   return <Icon {...props} />;

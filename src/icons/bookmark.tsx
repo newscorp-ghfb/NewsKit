@@ -2,14 +2,9 @@ import React from 'react';
 
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
-import {ColorKeys} from '../themes';
+import {SvgProps} from './types';
 
-export interface BookmarkIconProps extends SvgLabels, SvgBase {
-  $color?: ColorKeys;
-}
-
-const defaultIcon: React.FC<BookmarkIconProps> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   $color,
   title = 'Bookmark icon',
@@ -21,7 +16,7 @@ const defaultIcon: React.FC<BookmarkIconProps> = ({
   </Svg>
 );
 
-export const Bookmark = withTheme<BookmarkIconProps>(props => {
+export const Bookmark = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.Bookmark || defaultIcon;
 
   return <Icon {...props} />;

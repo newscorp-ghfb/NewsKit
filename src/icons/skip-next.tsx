@@ -2,14 +2,9 @@ import React from 'react';
 
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
-import {ColorKeys} from '../themes';
+import {SvgProps} from './types';
 
-export interface SkipNextIconProps extends SvgLabels, SvgBase {
-  $color?: ColorKeys;
-}
-
-const defaultIcon: React.FC<SkipNextIconProps> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   $color,
   title = 'SkipNext icon',
@@ -22,7 +17,7 @@ const defaultIcon: React.FC<SkipNextIconProps> = ({
   </Svg>
 );
 
-export const SkipNext = withTheme<SkipNextIconProps>(props => {
+export const SkipNext = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.SkipNext || defaultIcon;
 
   return <Icon {...props} />;

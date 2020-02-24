@@ -1,7 +1,7 @@
 import {styled, getColorFromTheme, getSizingFromTheme} from '../utils/style';
-import {SvgProps, SvgBase} from './types';
+import {InternalSvgProps} from './types';
 
-export const Svg = styled.svg<SvgProps & SvgBase>`
+export const Svg = styled.svg<InternalSvgProps>`
   display: inline-block;
   fill: ${getColorFromTheme('inkBase', '$color')};
   color: ${getColorFromTheme('inkBase', '$color')};

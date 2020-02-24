@@ -1,14 +1,10 @@
 import React from 'react';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
-import {ColorKeys} from '../themes';
+
+import {SvgProps} from './types';
 import {withTheme} from '../themes/emotion';
 
-export interface CircleProps extends SvgLabels, SvgBase {
-  $color?: ColorKeys;
-}
-
-const defaultIcon: React.FC<CircleProps> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   $color,
   title = 'Circle',
@@ -20,7 +16,7 @@ const defaultIcon: React.FC<CircleProps> = ({
   </Svg>
 );
 
-export const Circle = withTheme<CircleProps>(props => {
+export const Circle = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.Circle || defaultIcon;
 
   return <Icon {...props} />;

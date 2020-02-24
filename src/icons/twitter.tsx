@@ -1,14 +1,9 @@
 import React from 'react';
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
-import {IconSizeKeys} from '../themes/newskit-light/spacing';
+import {SvgProps} from './types';
 
-export interface TwitterIconProps extends SvgLabels, SvgBase {
-  $size: IconSizeKeys;
-}
-
-const defaultIcon: React.FC<TwitterIconProps> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   title = 'Twitter logo',
   ariaLabel,
@@ -32,7 +27,7 @@ const defaultIcon: React.FC<TwitterIconProps> = ({
   </Svg>
 );
 
-export const Twitter = withTheme<TwitterIconProps>(props => {
+export const Twitter = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.Twitter || defaultIcon;
   return <Icon {...props} />;
 });

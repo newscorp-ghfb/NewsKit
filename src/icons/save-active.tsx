@@ -1,14 +1,9 @@
 import React from 'react';
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
-import {ColorKeys} from '../themes';
+import {SvgProps} from './types';
 
-export interface SaveActiveIconProps extends SvgLabels, SvgBase {
-  $color?: ColorKeys;
-}
-
-const defaultIcon: React.FC<SaveActiveIconProps> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   $color,
   title = 'Save active icon',
@@ -23,7 +18,7 @@ const defaultIcon: React.FC<SaveActiveIconProps> = ({
   </Svg>
 );
 
-export const SaveActive = withTheme<SaveActiveIconProps>(props => {
+export const SaveActive = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.SaveActive || defaultIcon;
   return <Icon {...props} />;
 });

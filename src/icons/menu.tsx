@@ -1,13 +1,9 @@
 import React from 'react';
-import {ColorKeys, withTheme} from '../themes';
+import {withTheme} from '../themes';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
+import {SvgProps} from './types';
 
-export interface MenuIconProps extends SvgLabels, SvgBase {
-  $color?: ColorKeys;
-}
-
-export const defaultIcon: React.FC<MenuIconProps> = ({
+export const defaultIcon: React.FC<SvgProps> = ({
   $size,
   $color,
   title = 'Menu icon',
@@ -21,7 +17,7 @@ export const defaultIcon: React.FC<MenuIconProps> = ({
   </Svg>
 );
 
-export const Menu = withTheme<MenuIconProps>(props => {
+export const Menu = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.Menu || defaultIcon;
   return <Icon {...props} />;
 });

@@ -2,14 +2,9 @@ import React from 'react';
 
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
-import {ColorKeys} from '../themes';
+import {SvgProps} from './types';
 
-export interface Replay10IconProps extends SvgLabels, SvgBase {
-  $color?: ColorKeys;
-}
-
-const defaultIcon: React.FC<Replay10IconProps> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   $color,
   title = 'Replay10 icon',
@@ -21,7 +16,7 @@ const defaultIcon: React.FC<Replay10IconProps> = ({
   </Svg>
 );
 
-export const Replay10 = withTheme<Replay10IconProps>(props => {
+export const Replay10 = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.Replay10 || defaultIcon;
 
   return <Icon {...props} />;

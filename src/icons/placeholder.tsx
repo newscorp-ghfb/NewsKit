@@ -1,15 +1,9 @@
 import React from 'react';
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
-import {ColorKeys} from '../themes';
-import {ThemeProp} from '../utils/style';
+import {SvgProps} from './types';
 
-export interface PlaceholderIconProps extends SvgLabels, SvgBase {
-  $color?: ColorKeys;
-}
-
-const defaultIcon: React.FC<PlaceholderIconProps & ThemeProp> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   $color,
   title = 'Placeholder',
@@ -21,7 +15,7 @@ const defaultIcon: React.FC<PlaceholderIconProps & ThemeProp> = ({
   </Svg>
 );
 
-export const Placeholder = withTheme<PlaceholderIconProps>(props => {
+export const Placeholder = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.Placeholder || defaultIcon;
   return <Icon {...props} />;
 });

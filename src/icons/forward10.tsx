@@ -2,14 +2,9 @@ import React from 'react';
 
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
-import {ColorKeys} from '../themes';
+import {SvgProps} from './types';
 
-export interface Forward10IconProps extends SvgLabels, SvgBase {
-  $color?: ColorKeys;
-}
-
-const defaultIcon: React.FC<Forward10IconProps> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   $color,
   title = 'Forward10 icon',
@@ -23,7 +18,7 @@ const defaultIcon: React.FC<Forward10IconProps> = ({
   </Svg>
 );
 
-export const Forward10 = withTheme<Forward10IconProps>(props => {
+export const Forward10 = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.Forward10 || defaultIcon;
 
   return <Icon {...props} />;

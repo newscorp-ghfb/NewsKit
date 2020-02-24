@@ -1,11 +1,9 @@
 import React from 'react';
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgLabels, SvgBase} from './types';
+import {SvgProps} from './types';
 
-export type GitHubIconProps = SvgLabels & SvgBase;
-
-const defaultIcon: React.FC<GitHubIconProps> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   title = 'GitHub icon',
   ariaLabel,
@@ -20,7 +18,7 @@ const defaultIcon: React.FC<GitHubIconProps> = ({
   </Svg>
 );
 
-export const GitHub = withTheme<GitHubIconProps>(props => {
+export const GitHub = withTheme<SvgProps>(props => {
   const Icon = props.theme.icons.GitHub || defaultIcon;
   return <Icon {...props} />;
 });
