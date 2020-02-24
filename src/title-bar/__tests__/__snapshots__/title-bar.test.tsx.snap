@@ -75,6 +75,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
+  box-sizing: border-box;
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: calc(8px * 0.25);

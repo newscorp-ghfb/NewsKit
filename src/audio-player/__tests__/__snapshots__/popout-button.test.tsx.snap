@@ -2,7 +2,7 @@
 
 exports[`PopoutButton popout button opens window to href 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-3 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -19,9 +19,10 @@ exports[`PopoutButton popout button opens window to href 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
+  box-sizing: border-box;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: calc(8px * 0.25);
+  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -31,42 +32,45 @@ exports[`PopoutButton popout button opens window to href 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
+  width: 64px;
+  height: 64px;
 }
 
-.emotion-1:disabled {
+.emotion-3:disabled {
   cursor: not-allowed;
 }
 
-.emotion-1 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-1:disabled {
+.emotion-3:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
 
-.emotion-1:disabled svg {
+.emotion-3:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-1 svg {
+.emotion-3 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-0 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -87,20 +91,59 @@ exports[`PopoutButton popout button opens window to href 1`] = `
   margin-right: calc(-8px/2);
 }
 
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  display: inline-block;
+  fill: #0A68C1;
+  color: #0A68C1;
+  width: 24px;
+  height: 24px;
+}
+
 <button
-    class="emotion-1"
+    class="emotion-3"
+    height="sizing090"
     type="button"
+    width="sizing090"
   >
     <div
-      class="emotion-0"
-    />
+      class="emotion-2"
+    >
+      <div
+        class="emotion-1"
+      >
+        <svg
+          class="emotion-0"
+          viewBox="0 0 24 24"
+        >
+          <title>
+            Popout
+          </title>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+          />
+        </svg>
+      </div>
+    </div>
   </button>
 </DocumentFragment>
 `;
 
 exports[`PopoutButton renders popout button 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-3 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -117,9 +160,10 @@ exports[`PopoutButton renders popout button 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
+  box-sizing: border-box;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: calc(8px * 0.25);
+  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -129,42 +173,45 @@ exports[`PopoutButton renders popout button 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 24px;
+  padding: 16px 16px;
+  width: 64px;
+  height: 64px;
 }
 
-.emotion-1:disabled {
+.emotion-3:disabled {
   cursor: not-allowed;
 }
 
-.emotion-1 svg {
+.emotion-3 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-1:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
-.emotion-1:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-1:disabled {
+.emotion-3:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
 
-.emotion-1:disabled svg {
+.emotion-3:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-1 svg {
+.emotion-3 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-0 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -185,13 +232,52 @@ exports[`PopoutButton renders popout button 1`] = `
   margin-right: calc(-8px/2);
 }
 
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  display: inline-block;
+  fill: #0A68C1;
+  color: #0A68C1;
+  width: 24px;
+  height: 24px;
+}
+
 <button
-    class="emotion-1"
+    class="emotion-3"
+    height="sizing090"
     type="button"
+    width="sizing090"
   >
     <div
-      class="emotion-0"
-    />
+      class="emotion-2"
+    >
+      <div
+        class="emotion-1"
+      >
+        <svg
+          class="emotion-0"
+          viewBox="0 0 24 24"
+        >
+          <title>
+            Popout
+          </title>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+          />
+        </svg>
+      </div>
+    </div>
   </button>
 </DocumentFragment>
 `;

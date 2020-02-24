@@ -40,6 +40,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with bo
   .emotion-0 {
   background-color: transparent;
   color: #0A68C1;
+  border-radius: 100vw;
 }
 
 .emotion-0 svg {
@@ -132,8 +133,8 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with lo
 }
 
 .emotion-0 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #0A68C1;
+  color: #0A68C1;
 }
 
 <div
@@ -150,8 +151,8 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with lo
 }
 
 .emotion-0 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #0A68C1;
+  color: #0A68C1;
 }
 
 <div

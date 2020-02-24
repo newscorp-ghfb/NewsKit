@@ -19,6 +19,7 @@ exports[`BaseButton renders with fallback formatting 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
+  box-sizing: border-box;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -136,6 +137,10 @@ exports[`Button renders Icon Button 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
+  box-sizing: border-box;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -146,10 +151,36 @@ exports[`Button renders Icon Button 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   padding: 16px 16px;
+  width: 64px;
+  height: 64px;
 }
 
 .emotion-3:disabled {
   cursor: not-allowed;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-3 svg {
@@ -159,7 +190,9 @@ exports[`Button renders Icon Button 1`] = `
 
 <button
     class="emotion-3"
+    height="sizing090"
     type="button"
+    width="sizing090"
   >
     <div
       class="emotion-2"
@@ -224,6 +257,10 @@ exports[`Button renders Icon Button with default size 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
+  box-sizing: border-box;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 100vw;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -234,11 +271,37 @@ exports[`Button renders Icon Button with default size 1`] = `
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   padding: 8px 8px;
+  width: 32px;
+  height: 32px;
   margin: 8px 0;
 }
 
 .emotion-3:disabled {
   cursor: not-allowed;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-3 svg {
@@ -272,7 +335,9 @@ exports[`Button renders Icon Button with default size 1`] = `
 
 <button
     class="emotion-3"
+    height="sizing060"
     type="button"
+    width="sizing060"
   >
     <div
       class="emotion-2"
@@ -340,6 +405,7 @@ exports[`Button renders Large Button 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
+  box-sizing: border-box;
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: calc(8px * 0.25);
@@ -441,6 +507,7 @@ exports[`Button renders Medium Button 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
+  box-sizing: border-box;
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: calc(8px * 0.25);
@@ -542,6 +609,7 @@ exports[`Button renders Small Button 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
+  box-sizing: border-box;
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: calc(8px * 0.25);
@@ -650,6 +718,10 @@ exports[`Button renders when there is an icon with a colour 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
+  box-sizing: border-box;
+  background-color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 100vw;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -660,11 +732,37 @@ exports[`Button renders when there is an icon with a colour 1`] = `
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   padding: 8px 8px;
+  width: 32px;
+  height: 32px;
   margin: 8px 0;
 }
 
 .emotion-4:disabled {
   cursor: not-allowed;
+}
+
+.emotion-4 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-4:hover:not(:disabled) {
+  background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
+}
+
+.emotion-4:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-4:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-4:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-4 svg {
@@ -698,7 +796,9 @@ exports[`Button renders when there is an icon with a colour 1`] = `
 
 <button
     class="emotion-4"
+    height="sizing060"
     type="button"
+    width="sizing060"
   >
     <div
       class="emotion-3"
@@ -768,6 +868,7 @@ exports[`Button renders when there is no icon 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
+  box-sizing: border-box;
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: calc(8px * 0.25);
@@ -891,6 +992,7 @@ exports[`Button renders with different style preset 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
+  box-sizing: border-box;
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
@@ -1001,6 +1103,7 @@ exports[`Button renders with fallback formatting 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
+  box-sizing: border-box;
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: calc(8px * 0.25);
