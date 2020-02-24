@@ -255,7 +255,7 @@ export const createStylePresets = ({
     } as StylePresetStates,
     flagSolid: {
       base: {
-        backgroundColor: colorPrimitives.semanticInformative020,
+        backgroundColor: colorPrimitives.semanticInformative010,
         color: colorPrimitives.inkInverse,
         iconColor: colorPrimitives.inkInverse,
       },
