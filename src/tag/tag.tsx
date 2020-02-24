@@ -16,14 +16,14 @@ const tagSizeStyleTokens: Record<
   }
 > = {
   [TagSize.Large]: {
-    $typePreset: 'tag020',
+    $typePreset: 'tag030',
     minHeight: 'sizing070',
     borderRadiusSize: 'sizing070',
     padding: 'spaceInset020Squish',
     iconSize: 'iconSize020',
   },
   [TagSize.Medium]: {
-    $typePreset: 'tag010',
+    $typePreset: 'tag020',
     minHeight: 'sizing060',
     borderRadiusSize: 'sizing060',
     padding: 'spaceInset020Squish',
