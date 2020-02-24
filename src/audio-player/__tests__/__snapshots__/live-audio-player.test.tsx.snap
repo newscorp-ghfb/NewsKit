@@ -231,11 +231,11 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-3 {
@@ -571,11 +571,11 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-25 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 .emotion-30 {
@@ -775,19 +775,10 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   margin-right: calc(8px/2);
 }
 
-.emotion-34 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-33 {
-  display: inline-block;
+.emotion-36 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
 }
 
 .emotion-44 {
@@ -1651,11 +1642,11 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-3 {
@@ -1991,11 +1982,11 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-25 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 .emotion-30 {
@@ -2195,19 +2186,10 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
   margin-right: calc(8px/2);
 }
 
-.emotion-34 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-33 {
-  display: inline-block;
+.emotion-36 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
 }
 
 .emotion-44 {
@@ -3071,11 +3053,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-3 {
@@ -3411,11 +3393,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 }
 
 .emotion-25 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 .emotion-30 {
@@ -3615,19 +3597,10 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
   margin-right: calc(8px/2);
 }
 
-.emotion-34 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-33 {
-  display: inline-block;
+.emotion-36 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
 }
 
 .emotion-44 {
@@ -4491,11 +4464,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-3 {
@@ -4831,11 +4804,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 }
 
 .emotion-25 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 .emotion-30 {
@@ -5035,19 +5008,10 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
   margin-right: calc(8px/2);
 }
 
-.emotion-34 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-33 {
-  display: inline-block;
+.emotion-36 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
 }
 
 .emotion-44 {
@@ -5911,11 +5875,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-3 {
@@ -6251,11 +6215,11 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 }
 
 .emotion-25 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 .emotion-30 {
@@ -6456,9 +6420,9 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 }
 
 .emotion-36 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
 }
 
 .emotion-44 {
@@ -7322,11 +7286,11 @@ exports[`Live AudioPlayer render default player 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-3 {
@@ -7662,11 +7626,11 @@ exports[`Live AudioPlayer render default player 1`] = `
 }
 
 .emotion-19 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 .emotion-24 {
@@ -7867,9 +7831,9 @@ exports[`Live AudioPlayer render default player 1`] = `
 }
 
 .emotion-30 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
 }
 
 .emotion-38 {
@@ -8637,11 +8601,11 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-3 {
@@ -8856,12 +8820,12 @@ exports[`Live AudioPlayer render live player 1`] = `
   height: 32px;
 }
 
-.emotion-20 {
-  display: inline-block;
+.emotion-18 {
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 .emotion-25 {
@@ -9058,10 +9022,10 @@ exports[`Live AudioPlayer render live player 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-31 {
-  display: inline-block;
+.emotion-29 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
 }
 
 .emotion-37 {
@@ -9793,11 +9757,11 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-3 {
@@ -10133,11 +10097,11 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
 }
 
 .emotion-25 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 .emotion-30 {
@@ -10337,19 +10301,10 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-34 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-33 {
-  display: inline-block;
+.emotion-36 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
 }
 
 .emotion-44 {
@@ -11265,11 +11220,11 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-3 {
@@ -11605,11 +11560,11 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 }
 
 .emotion-26 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 .emotion-31 {
@@ -11809,19 +11764,10 @@ exports[`Live AudioPlayer render tagged player 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-35 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-34 {
-  display: inline-block;
+.emotion-37 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
 }
 
 .emotion-45 {

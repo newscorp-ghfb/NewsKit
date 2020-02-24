@@ -83,11 +83,11 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 .emotion-5 {
@@ -335,11 +335,11 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 .emotion-5 {
@@ -587,11 +587,11 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 .emotion-5 {
@@ -787,11 +787,11 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 .emotion-4 {

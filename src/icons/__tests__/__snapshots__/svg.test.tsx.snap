@@ -3,9 +3,9 @@
 exports[`Svg renders a menu icon with no size 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   fill: #158acf;
   color: #158acf;
+  display: inline-block;
 }
 
 <svg
@@ -18,9 +18,9 @@ exports[`Svg renders a menu icon with no size 1`] = `
 exports[`Svg renders a menu icon with specified size and color 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   fill: #158acf;
   color: #158acf;
+  display: inline-block;
 }
 
 <svg
@@ -33,11 +33,11 @@ exports[`Svg renders a menu icon with specified size and color 1`] = `
 exports[`Svg renders a menu icon with specified size and default color 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   fill: #000000;
   color: #000000;
   width: 3;
   height: 3;
+  display: inline-block;
 }
 
 <svg

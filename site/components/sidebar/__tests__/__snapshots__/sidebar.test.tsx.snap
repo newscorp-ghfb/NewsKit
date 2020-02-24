@@ -115,11 +115,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-3 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 16px;
   height: 16px;
+  display: inline-block;
 }
 
 .emotion-30 {
@@ -206,7 +206,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-8 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 16px;
@@ -729,11 +728,11 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-3 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 16px;
   height: 16px;
+  display: inline-block;
 }
 
 .emotion-30 {
@@ -820,7 +819,6 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-8 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 16px;

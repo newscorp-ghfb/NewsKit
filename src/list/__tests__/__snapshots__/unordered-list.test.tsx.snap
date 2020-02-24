@@ -30,11 +30,11 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 16px;
   height: 16px;
+  display: inline-block;
 }
 
 <ul

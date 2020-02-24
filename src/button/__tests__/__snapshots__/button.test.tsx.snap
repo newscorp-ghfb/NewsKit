@@ -115,9 +115,9 @@ exports[`Button renders Icon Button 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
 }
 
 .emotion-3 {
@@ -328,9 +328,9 @@ exports[`Button renders Icon Button with default size 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
 }
 
 <button
@@ -789,9 +789,9 @@ exports[`Button renders when there is an icon with a colour 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
 }
 
 <button

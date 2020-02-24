@@ -3,11 +3,11 @@
 exports[`Icons Close icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 16px;
   height: 16px;
+  display: inline-block;
 }
 
 <svg
@@ -31,11 +31,11 @@ exports[`Icons Close icon renders as expected 1`] = `
 exports[`Icons Menu icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 <svg
@@ -58,11 +58,11 @@ exports[`Icons Menu icon renders as expected 1`] = `
 exports[`Icons Search icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 <svg

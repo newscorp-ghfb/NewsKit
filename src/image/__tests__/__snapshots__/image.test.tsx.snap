@@ -47,11 +47,11 @@ exports[`Image renders with defaults 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-3 {
@@ -110,11 +110,11 @@ exports[`Image renders with defaults after load 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-4 {
@@ -230,11 +230,11 @@ exports[`Image renders with invalidPreset 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-3 {
@@ -326,11 +326,11 @@ exports[`Image renders with maskRound 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-3 {
@@ -422,11 +422,11 @@ exports[`Image renders with maskSemiRounded 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-3 {
@@ -518,11 +518,11 @@ exports[`Image renders without icon 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-3 {

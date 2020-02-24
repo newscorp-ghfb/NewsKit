@@ -101,11 +101,11 @@ exports[`PopoutButton popout button opens window to href 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #0A68C1;
   color: #0A68C1;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 <button
@@ -242,11 +242,11 @@ exports[`PopoutButton renders popout button 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #0A68C1;
   color: #0A68C1;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 <button

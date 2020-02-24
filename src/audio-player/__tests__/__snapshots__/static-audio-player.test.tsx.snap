@@ -231,11 +231,11 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-3 {
@@ -628,11 +628,11 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 }
 
 .emotion-25 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 .emotion-30 {
@@ -832,19 +832,10 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   margin-right: calc(8px/2);
 }
 
-.emotion-33 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-32 {
-  display: inline-block;
+.emotion-36 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
 }
 
 .emotion-44 {
@@ -1645,11 +1636,11 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-3 {
@@ -2042,11 +2033,11 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 }
 
 .emotion-25 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 .emotion-30 {
@@ -2246,19 +2237,10 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   margin-right: calc(8px/2);
 }
 
-.emotion-33 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-32 {
-  display: inline-block;
+.emotion-36 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
 }
 
 .emotion-44 {
@@ -3061,11 +3043,11 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-3 {
@@ -3458,11 +3440,11 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 }
 
 .emotion-25 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 .emotion-30 {
@@ -3665,33 +3647,9 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 }
 
 .emotion-36 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
   display: inline-block;
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-53 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
 }
 
 .emotion-44 {
@@ -4492,11 +4450,11 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .emotion-3 {
@@ -4889,11 +4847,11 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 }
 
 .emotion-25 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
   height: 24px;
+  display: inline-block;
 }
 
 .emotion-30 {
@@ -5093,19 +5051,10 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   margin-right: calc(8px/2);
 }
 
-.emotion-34 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-33 {
-  display: inline-block;
+.emotion-36 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
 }
 
 .emotion-44 {
