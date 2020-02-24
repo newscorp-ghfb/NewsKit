@@ -1,6 +1,6 @@
 import React from 'react';
 import {Popout} from '../../icons';
-import {Button, ButtonSize} from '../../button';
+import {IconButton, ButtonSize} from '../../button';
 
 export interface PopoutButtonProps {
   onClick?: (props: PopoutButtonProps) => void;
@@ -8,14 +8,11 @@ export interface PopoutButtonProps {
   $stylePreset?: string;
 }
 
-const PopoutIcon = () => <Popout $size="iconSize020" $color="buttonFill" />;
-
 export const PopoutButton: React.FC<PopoutButtonProps> = React.memo(props => {
   const {href, onClick} = props;
   return (
-    <Button
+    <IconButton
       {...props}
-      icon={PopoutIcon}
       $size={ButtonSize.Large}
       onClick={
         href || onClick
@@ -29,6 +26,8 @@ export const PopoutButton: React.FC<PopoutButtonProps> = React.memo(props => {
             }
           : undefined
       }
-    />
+    >
+      <Popout $size="iconSize020" $color="buttonFill" />
+    </IconButton>
   );
 });

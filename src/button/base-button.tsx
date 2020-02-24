@@ -4,38 +4,41 @@ import {
   styled,
   getAnimationFromTheme,
   getTypePresetFromTheme,
-  ThemeProp,
 } from '../utils/style';
-import {ButtonProps, ButtonSize, ButtonSizing} from './types';
+import {
+  ButtonProps,
+  ButtonSize,
+  ButtonSizing,
+  StylePresetAndTheme,
+} from './types';
 import {getStylePresetFromTheme} from '../utils/style-preset';
 import {SizingKeys, TypePresetKeys, IconSizeKeys} from '../themes';
-import {PaddingPresetKeys} from '../themes/mappers/spacing';
 import {Stack} from '../stack/stack';
 import {Flow, StackDistribution} from '../stack/types';
 
 const buttonSizeStyleTokens: Record<
   ButtonSize,
   {
-    minHeight: PaddingPresetKeys;
+    minHeight: SizingKeys;
     borderRadiusSize: SizingKeys;
     typePreset: TypePresetKeys;
     iconSize: IconSizeKeys;
   }
 > = {
   [ButtonSize.Large]: {
-    minHeight: 'spaceInset040',
+    minHeight: 'sizing040',
     borderRadiusSize: 'sizing020',
     typePreset: 'button030',
     iconSize: 'iconSize020',
   },
   [ButtonSize.Medium]: {
-    minHeight: 'spaceInset030',
+    minHeight: 'sizing030',
     borderRadiusSize: 'sizing020',
     typePreset: 'button020',
     iconSize: 'iconSize020',
   },
   [ButtonSize.Small]: {
-    minHeight: 'spaceInset020',
+    minHeight: 'sizing020',
     borderRadiusSize: 'sizing020',
     typePreset: 'button010',
     iconSize: 'iconSize010',
@@ -53,12 +56,21 @@ const ButtonElement = styled.button<ButtonProps & ButtonSizing>`
   transition-duration: ${getAnimationFromTheme('animationDuration020')};
   transition-timing-function: ${getAnimationFromTheme('animationEaseOut')};
   cursor: pointer;
+  box-sizing: border-box;
 
   &:disabled {
     cursor: not-allowed;
   }
 
-  ${({$size = ButtonSize.Small, theme, paddingX, paddingY, $stylePreset}) => {
+  ${({
+    $size = ButtonSize.Small,
+    theme,
+    paddingX,
+    paddingY,
+    $stylePreset,
+    width,
+    height,
+  }) => {
     const {
       minHeight,
       borderRadiusSize,
@@ -66,17 +78,22 @@ const ButtonElement = styled.button<ButtonProps & ButtonSizing>`
       iconSize,
     } = buttonSizeStyleTokens[$size];
     const commonStyles = css`
-        ${getStylePresetFromTheme<
-          Pick<ButtonProps, '$stylePreset'> & ThemeProp
-        >('interactive010', '$stylePreset', {
-          borderRadiusSize,
-        })({
+        ${getStylePresetFromTheme<StylePresetAndTheme>(
+          $stylePreset,
+          '$stylePreset',
+          {
+            borderRadiusSize,
+          },
+        )({
           theme,
           $stylePreset,
         })} 
         min-height: ${theme.sizing[minHeight]};
         ${getTypePresetFromTheme(typePreset)({theme})}
         padding: ${theme.sizing[paddingX]} ${theme.sizing[paddingY]};
+        width: ${width && theme.sizing[width]};
+        height: ${height && theme.sizing[height]};
+        
 
     svg {
       width: ${theme.sizing[iconSize]};

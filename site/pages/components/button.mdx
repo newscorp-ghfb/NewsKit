@@ -5,7 +5,7 @@ import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Selector} from '../../components/playground/selector';
 
-import {Button, ButtonSize, Email, Pause} from 'newskit';
+import {Button, IconButton, ButtonSize, Email, Pause} from 'newskit';
 
 export default Layout;
 
@@ -111,17 +111,87 @@ Custom props are detailed below:
       ],
     },
     {
-      name: 'Icon Placement',
-      propName: 'iconPlacement',
+      name: 'Disabled',
+      propName: 'disabled',
+      type: 'boolean',
+      value: false,
+    },
+  ]}
+/>
+
+# Icon Button
+
+## Overview
+
+A styled button element with customisable size.
+
+## Props
+
+Icon Buttons have a number of props to facilitate a variety of uses. Any prop valid on an Button HTML element as described in [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#Attributes), is also valid on the Button component.
+Custom props are detailed below:
+
+<LegacyBlock marginTop="sizing040">
+  <Prop
+    name="$size"
+    type="ButtonSize"
+    enum={ButtonSize}
+    default={ButtonSize.Small}
+  >
+    Set the size of the button. Possible values: Small, Medium and Large.
+    Default styling: Small.
+  </Prop>
+  <Prop name="$stylePreset" type="string" default="interactive010">
+    Set the style presets of the button.
+  </Prop>
+  <Prop name="$iconColor" type="ColorKeys" default="buttonFill">
+    Set the color of the icon.
+  </Prop>
+</LegacyBlock>
+
+<Playground
+  componentName="IconButton"
+  newskitPath="/button"
+  component={state => (
+    <IconButton {...state}>
+      <Email />
+    </IconButton>
+  )}
+  knobs={[
+    {
+      name: 'Size',
+      propName: '$size',
       options: [
         {
-          label: 'IconPlacement.Start',
-          value: IconPlacement.Start,
+          label: 'ButtonSize.Small',
+          value: ButtonSize.Small,
           isDefault: true,
         },
         {
-          label: 'buttonMinimalPrimary',
-          value: 'buttonMinimalPrimary',
+          label: 'ButtonSize.Medium',
+          value: ButtonSize.Medium,
+        },
+        {
+          label: 'ButtonSize.Large',
+          value: ButtonSize.Large,
+        },
+      ],
+    },
+    {
+      name: 'Style Preset',
+      propName: '$stylePreset',
+      options: [
+        {
+          label: 'iconButtonSolidPrimary',
+          value: 'iconButtonSolidPrimary',
+          isDefault: true,
+        },
+        {
+          label: 'iconButtonOutlinedPrimary',
+          value: 'iconButtonOutlinedPrimary',
+        },
+        {
+          label: 'iconButtonMinimalPrimary',
+          value: 'iconButtonMinimalPrimary',
         },
       ],
     },
@@ -136,11 +206,11 @@ Custom props are detailed below:
 
 ### Styling
 
-The button component is block level element with a native HTML button with custom styling.
+The button & Icon Button components are block level elements with a native HTML button with custom styling.
 
 ### Accessibility
 
-The button is a fully accessible with the native HTML button used.
+Each are fully accessible with the native HTML button used.
 
 #### Colour
 

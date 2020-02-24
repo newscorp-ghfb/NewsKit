@@ -102,11 +102,6 @@
         "id": "/components/button"
       },
       {
-        "title": "Icon Button",
-        "page": true,
-        "id": "/components/icon-button"
-      },
-      {
         "title": "Circular Progress Indicator",
         "page": true,
         "id": "/components/circular-progress-indicator"

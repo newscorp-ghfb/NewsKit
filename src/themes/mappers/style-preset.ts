@@ -62,7 +62,7 @@ export const createStylePresets = ({
   const iconButtonSolidPrimary: StylePresetStates = {
     base: {
       backgroundColor: colorPrimitives.interactive010,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
       color: colorPrimitives.inkInverse,
       iconColor: colorPrimitives.inkInverse,
     },
@@ -78,9 +78,6 @@ export const createStylePresets = ({
       color: colorPrimitives.inkNonEssential,
       iconColor: colorPrimitives.inkNonEssential,
     },
-    loading: {
-      iconColor: colorPrimitives.white,
-    },
   };
   const iconButtonOutlinedPrimary: StylePresetStates = {
     base: {
@@ -89,17 +86,19 @@ export const createStylePresets = ({
       borderWidth: borderPrimitives.borderWidth010,
       color: colorPrimitives.inkBrand,
       iconColor: colorPrimitives.inkBrand,
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
     },
     hover: {
       borderWidth: borderPrimitives.borderWidth020,
+    },
+    active: {
+      borderWidth: borderPrimitives.borderWidth010,
     },
     disabled: {
       backgroundColor: colorPrimitives.disabled,
       color: colorPrimitives.inkNonEssential,
       iconColor: colorPrimitives.inkNonEssential,
-    },
-    loading: {
-      iconColor: colorPrimitives.white,
+      borderColor: colorPrimitives.disabled,
     },
   };
   const iconButtonMinimalPrimary: StylePresetStates = {
@@ -107,6 +106,7 @@ export const createStylePresets = ({
       backgroundColor: 'transparent',
       color: colorPrimitives.inkBrand,
       iconColor: colorPrimitives.inkBrand,
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
     },
     hover: {
       backgroundColor: colorPrimitives.interactive120,
@@ -117,9 +117,6 @@ export const createStylePresets = ({
     disabled: {
       color: colorPrimitives.inkNonEssential,
       iconColor: colorPrimitives.inkNonEssential,
-    },
-    loading: {
-      iconColor: colorPrimitives.white,
     },
   };
   const audioPlayerThumb: StylePresetStates = {

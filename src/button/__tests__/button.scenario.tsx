@@ -7,19 +7,7 @@ import {Pause, Email, CopyLink} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
-import {
-  borderRadiusPrimitives,
-  BorderRadiusShape,
-} from '../../themes/newskit-light/border-radius';
-import {
-  newskitLightTheme,
-  IconSizeKeys,
-  ThemeProvider,
-  StylePresetStates,
-  colorPrimitives,
-  Theme,
-  createTheme,
-} from '../../themes';
+import {newskitLightTheme, IconSizeKeys} from '../../themes';
 
 export const name = 'button';
 
@@ -54,53 +42,16 @@ const Spacer = styled.div`
   margin-bottom: 20px;
 `;
 
-const customTheme: Theme = createTheme('awesome-theme', {
-  themeOverrider: () => ({
-    stylePresets: {
-      squaredStyle: {
-        loading: {
-          backgroundColor: colorPrimitives.red020,
-          borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
-          iconColor: colorPrimitives.green010,
-          borderWidth: '3px',
-          borderStyle: 'solid',
-          borderColor: 'blue',
-        },
-        base: {
-          backgroundColor: colorPrimitives.blue040,
-          borderRadius: borderRadiusPrimitives[BorderRadiusShape.Squared],
-          iconColor: colorPrimitives.green040,
-          borderWidth: '3px',
-          borderStyle: 'solid',
-          borderColor: 'red',
-        },
-      } as StylePresetStates,
-      semiRoundedStyle: {
-        loading: {
-          backgroundColor: colorPrimitives.red020,
-          borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
-          iconColor: colorPrimitives.green010,
-          borderWidth: '3px',
-          borderStyle: 'solid',
-          borderColor: 'blue',
-        },
-        base: {
-          backgroundColor: colorPrimitives.blue040,
-          borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
-          iconColor: colorPrimitives.green040,
-          borderWidth: '3px',
-          borderStyle: 'solid',
-          borderColor: 'red',
-        },
-      } as StylePresetStates,
-    },
-  }),
-});
-
 enum ButtonStyle {
   Solid = 'buttonSolidPrimary',
   Outlined = 'buttonOutlinedPrimary',
   Minimal = 'buttonMinimalPrimary',
+}
+
+enum IconButtonStyle {
+  Solid = 'iconButtonSolidPrimary',
+  Outlined = 'iconButtonOutlinedPrimary',
+  Minimal = 'iconButtonMinimalPrimary',
 }
 
 const states = ['Default', 'Focused', 'Disabled'];
@@ -113,7 +64,6 @@ export const component = () => (
       <Stack flow="horizontal-center" space="sizing070" wrap="wrap">
         <Button>Small button</Button>
         <Button $size={ButtonSize.Medium}>Medium button</Button>
-        <Button $size={ButtonSize.Large}>Large button</Button>
       </Stack>
     </Container>
 
@@ -201,46 +151,18 @@ export const component = () => (
     <Container>
       <Stack flow="horizontal-center" space="sizing070" wrap="wrap">
         <IconButton $size={ButtonSize.Small}>
-          <Email $size="iconSize050" $color="amber100" />
+          <Email />
         </IconButton>
         <IconButton $size={ButtonSize.Medium}>
-          <Email $size="iconSize050" $color="amber100" />
+          <Email />
         </IconButton>
         <IconButton $size={ButtonSize.Large}>
-          <Email $size="iconSize050" $color="amber100" />
+          <Email />
         </IconButton>
       </Stack>
     </Container>
 
-    <ThemeProvider theme={customTheme}>
-      <Container>
-        <Stack flow="horizontal-center" space="sizing070" wrap="wrap">
-          <IconButton $size={ButtonSize.Small} $stylePreset="squaredStyle">
-            <Email $size="iconSize050" $color="amber100" />
-          </IconButton>
-          <IconButton $size={ButtonSize.Medium} $stylePreset="squaredStyle">
-            <Email $size="iconSize050" $color="amber100" />
-          </IconButton>
-          <IconButton $size={ButtonSize.Large} $stylePreset="squaredStyle">
-            <Email $size="iconSize050" $color="amber100" />
-          </IconButton>
-        </Stack>
-      </Container>
-      <Container>
-        <Stack flow="horizontal-center" space="sizing070" wrap="wrap">
-          <IconButton $size={ButtonSize.Small} $stylePreset="semiRoundedStyle">
-            <Email $size="iconSize050" $color="amber100" />
-          </IconButton>
-          <IconButton $size={ButtonSize.Medium} $stylePreset="semiRoundedStyle">
-            <Email $size="iconSize050" $color="amber100" />
-          </IconButton>
-          <IconButton $size={ButtonSize.Large} $stylePreset="semiRoundedStyle">
-            <Email $size="iconSize050" $color="amber100" />
-          </IconButton>
-        </Stack>
-      </Container>
-    </ThemeProvider>
-
+    <h1>Button preset types</h1>
     <h2>States</h2>
     <Grid>
       <Cell xsHidden sm={3}>
@@ -251,8 +173,9 @@ export const component = () => (
           ))}
         </Stack>
       </Cell>
-      {Object.keys(ButtonStyle).map(style => {
-        const stylePreset = ButtonStyle[style as keyof typeof ButtonStyle];
+      {Object.keys(IconButtonStyle).map(style => {
+        const stylePreset =
+          IconButtonStyle[style as keyof typeof IconButtonStyle];
 
         return (
           <Cell xs={12} sm={3}>
@@ -262,20 +185,31 @@ export const component = () => (
             >
               <h3>{style}</h3>
               <Block theme={newskitLightTheme} data-state="Default">
-                <IconButton $stylePreset={stylePreset}>
-                  <Pause $size="iconSize050" $color="amber100" />
+                <IconButton
+                  $stylePreset={stylePreset}
+                  $size={ButtonSize.Medium}
+                >
+                  <Pause />
                 </IconButton>
               </Block>
 
               <Block theme={newskitLightTheme} data-state="Focused">
-                <IconButton autoFocus $stylePreset={stylePreset}>
-                  <CopyLink $size="iconSize050" $color="amber100" />
+                <IconButton
+                  autoFocus
+                  $stylePreset={stylePreset}
+                  $size={ButtonSize.Medium}
+                >
+                  <CopyLink />
                 </IconButton>
               </Block>
 
               <Block theme={newskitLightTheme} data-state="Disabled">
-                <IconButton disabled $stylePreset={stylePreset}>
-                  <Email $size="iconSize050" $color="amber100" />
+                <IconButton
+                  disabled
+                  $stylePreset={stylePreset}
+                  $size={ButtonSize.Medium}
+                >
+                  <Email />
                 </IconButton>
               </Block>
             </Stack>
