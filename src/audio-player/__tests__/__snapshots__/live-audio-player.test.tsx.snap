@@ -9122,12 +9122,8 @@ exports[`Live AudioPlayer render live player 1`] = `
 .emotion-9 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 24px;
   padding: 4px 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;

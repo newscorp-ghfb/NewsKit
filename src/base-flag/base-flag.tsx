@@ -12,11 +12,7 @@ import {Flow, StackDistribution} from '../stack/types';
 const StyledBaseFlag = styled.div<BaseFlagProps>`
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: ${getSizingFromTheme(undefined, 'minHeight')};
   padding: ${getSizingFromTheme(undefined, 'padding')};
   ${getTypePresetFromTheme(undefined, '$typePreset')}

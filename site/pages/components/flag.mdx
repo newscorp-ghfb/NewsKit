@@ -3,7 +3,7 @@ import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
-import {Flag, FlagSize, SizingKeys} from 'newskit';
+import {Flag, FlagSize, PaddingPresetKeys} from 'newskit';
 
 export default Layout;
 
@@ -28,10 +28,10 @@ Flags have a number of props to facilitate a variety of uses:
   <Prop name="$size" type="FlagSize" enum={FlagSize} default="Small">
     Optional size of the Flag.
   </Prop>
-  <Prop name="$spacing" type="SizingKeys" enum={SizingKeys} default="undefined">
+  <Prop name="$spacing" type="PaddingPresetKeys" enum={PaddingPresetKeys} default="undefined">
     Optional spacing of the Flag.
   </Prop>
-  <Prop name="$stylePreset" type="string" default="flag010">
+  <Prop name="$stylePreset" type="string" default="flagSolid">
     If provided, this overrides the style preset applied to the flag.
   </Prop>
   <Prop name="$typePreset" type="string" default="flag010">
@@ -76,8 +76,8 @@ Flags have a number of props to facilitate a variety of uses:
           isDefault: true
         },
         {
-          label: 'sizing000',
-          value: 'sizing000',
+          label: 'spaceInset000Squish',
+          value: 'spaceInset000Squish',
         },
       ],
     },

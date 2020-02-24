@@ -59,23 +59,5 @@ export const component = () => (
         </Tag>
       </Stack>
     </Container>
-
-    <h2>Minimal (without padding)</h2>
-    <Container>
-      <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
-        <Tag $size={TagSize.Small} $stylePreset="TagMinimal">
-          <Email $size="iconSize010" />
-          Text
-        </Tag>
-        <Tag $size={TagSize.Medium} $stylePreset="TagMinimal">
-          <Email $size="iconSize010" />
-          Text
-        </Tag>
-        <Tag $size={TagSize.Large} $stylePreset="TagMinimal">
-          <Email $size="iconSize010" />
-          Text
-        </Tag>
-      </Stack>
-    </Container>
   </React.Fragment>
 );

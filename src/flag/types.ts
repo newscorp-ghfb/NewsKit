@@ -1,5 +1,5 @@
 import {BaseFlagProps} from '../base-flag/types';
-import {SizingKeys} from '../themes';
+import {PaddingPresetKeys} from '../themes/mappers/spacing';
 
 export enum FlagSize {
   Small = 'small',
@@ -8,5 +8,5 @@ export enum FlagSize {
 
 export interface FlagProps extends BaseFlagProps {
   $size?: FlagSize;
-  $spacing?: SizingKeys;
+  $spacing?: PaddingPresetKeys;
 }

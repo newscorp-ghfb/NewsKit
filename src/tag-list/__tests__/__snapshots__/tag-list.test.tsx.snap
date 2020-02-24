@@ -24,12 +24,8 @@ exports[`TagList renders as a span with custom margins 1`] = `
 .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -195,12 +191,8 @@ exports[`TagList renders as a span with custom size 1`] = `
 .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 40px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -315,12 +307,8 @@ exports[`TagList renders as a span with defaults 1`] = `
 .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -432,12 +420,8 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
 .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -606,12 +590,8 @@ exports[`TagList renders as an anchor with custom size 1`] = `
 .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 40px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -729,12 +709,8 @@ exports[`TagList renders as an anchor with defaults 1`] = `
 .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;

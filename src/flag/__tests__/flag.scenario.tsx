@@ -20,7 +20,7 @@ export const component = () => (
     <h2>Solid Flag</h2>
     <Flag>Text goes here</Flag>
     <h2>Minimal Flag</h2>
-    <Flag $spacing="sizing000" $stylePreset="flagMinimal">
+    <Flag $spacing="spaceInset000Squish" $stylePreset="flagMinimal">
       Text goes here
     </Flag>
     <h1>Flag Sizes</h1>
@@ -56,7 +56,7 @@ export const component = () => (
       <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
         <Flag
           $size={FlagSize.Small}
-          $spacing="sizing000"
+          $spacing="spaceInset000Squish"
           $stylePreset="flagMinimal"
         >
           <Email $size="iconSize010" />
@@ -64,7 +64,7 @@ export const component = () => (
         </Flag>
         <Flag
           $size={FlagSize.Large}
-          $spacing="sizing000"
+          $spacing="spaceInset000Squish"
           $stylePreset="flagMinimal"
         >
           <Email $size="iconSize010" />

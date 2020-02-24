@@ -24,12 +24,8 @@ exports[`Stack renders stack when no properties are set 1`] = `
 .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -154,12 +150,8 @@ exports[`Stack renders stack with flex grow and shrink 1`] = `
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -282,12 +274,8 @@ exports[`Stack renders stack with flex grow and shrink 2`] = `
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -410,12 +398,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -563,12 +547,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -716,12 +696,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -899,12 +875,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -1078,12 +1050,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -1261,12 +1229,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -1440,12 +1404,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -1589,12 +1549,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -1738,12 +1694,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -1887,12 +1839,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -2036,12 +1984,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -2185,12 +2129,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -2340,12 +2280,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -2493,12 +2429,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -2646,12 +2578,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -2829,12 +2757,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -3008,12 +2932,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -3191,12 +3111,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -3370,12 +3286,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -3519,12 +3431,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -3668,12 +3576,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -3817,12 +3721,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -3966,12 +3866,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -4115,12 +4011,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -4270,12 +4162,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -4423,12 +4311,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -4576,12 +4460,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -4759,12 +4639,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -4938,12 +4814,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -5121,12 +4993,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -5300,12 +5168,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -5449,12 +5313,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -5598,12 +5458,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -5747,12 +5603,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -5896,12 +5748,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -6045,12 +5893,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -6200,12 +6044,8 @@ exports[`Stack renders where the stack flow is invalid 1`] = `
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -6349,12 +6189,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -6502,12 +6338,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -6655,12 +6487,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -6838,12 +6666,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -7017,12 +6841,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -7200,12 +7020,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -7379,12 +7195,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -7528,12 +7340,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -7677,12 +7485,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -7826,12 +7630,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -7975,12 +7775,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -8124,12 +7920,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -8279,12 +8071,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -8432,12 +8220,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -8585,12 +8369,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -8768,12 +8548,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -8947,12 +8723,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -9130,12 +8902,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -9309,12 +9077,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -9458,12 +9222,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -9626,12 +9386,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -9756,12 +9512,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -9905,12 +9657,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -10054,12 +9802,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -10213,12 +9957,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -10366,12 +10106,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -10519,12 +10255,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -10702,12 +10434,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -10881,12 +10609,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -11064,12 +10788,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -11243,12 +10963,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -11392,12 +11108,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -11541,12 +11253,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -11690,12 +11398,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -11842,12 +11546,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -11991,12 +11691,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   min-height: 32px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;

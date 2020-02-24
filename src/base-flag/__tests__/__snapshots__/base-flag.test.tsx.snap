@@ -2,19 +2,15 @@
 
 exports[`BaseFlag renders with default styles 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-2 {
   box-sizing: border-box;
   display: inline-block;
-  vertical-align: middle;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   cursor: default;
 }
 
-.emotion-0 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -35,12 +31,27 @@ exports[`BaseFlag renders with default styles 1`] = `
   margin-right: calc(-4px/2);
 }
 
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
 <div
-    class="emotion-1"
+    class="emotion-2"
   >
     <div
-      class="emotion-0"
-    />
+      class="emotion-1"
+    >
+      <div
+        class="emotion-0"
+      >
+        Text
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;

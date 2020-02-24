@@ -3,7 +3,9 @@ import {BaseFlag} from '..';
 
 describe('BaseFlag', () => {
   test('renders with default styles', () => {
-    const fragment = renderToFragmentWithTheme(BaseFlag);
+    const fragment = renderToFragmentWithTheme(BaseFlag, {
+      children: ['Text'],
+    });
     expect(fragment).toMatchSnapshot();
   });
 });

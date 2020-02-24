@@ -7,6 +7,6 @@ export interface BaseFlagProps {
   isDisabled?: boolean;
   borderRadiusSize?: SizingKeys;
   minHeight?: SizingKeys;
-  padding?: PaddingPresetKeys | SizingKeys;
+  padding?: PaddingPresetKeys;
   iconSize?: IconSizeKeys;
 }
