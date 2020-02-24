@@ -11,6 +11,16 @@ exports[`Tag href renders as an anchor 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   border-style: solid;
   border-color: #e4e4e4;
   border-width: 1px;
@@ -94,6 +104,16 @@ exports[`Tag href renders in disable state as a span 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   border-style: solid;
   border-color: #e4e4e4;
   border-width: 1px;
@@ -160,10 +180,24 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-  color: #2e2e2e;
+  min-height: 32px;
+  padding: 8px 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  background-color: #FFFFFF;
+  color: #0A68C1;
+  border-radius: 100vw;
+}
+
+.emotion-1 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-0 svg {
@@ -221,6 +255,16 @@ exports[`Tag renders in disabled state 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   border-style: solid;
   border-color: #e4e4e4;
   border-width: 1px;
@@ -315,8 +359,8 @@ exports[`Tag renders with Large size 1`] = `
   display: inline-block;
   vertical-align: middle;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
+  font-size: 16px;
+  line-height: 1.75;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -373,6 +417,16 @@ exports[`Tag renders with Medium size 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   border-style: solid;
   border-color: #e4e4e4;
   border-width: 1px;
@@ -495,6 +549,16 @@ exports[`Tag renders with default styles 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 32px;
+  padding: 8px 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   border-style: solid;
   border-color: #e4e4e4;
   border-width: 1px;

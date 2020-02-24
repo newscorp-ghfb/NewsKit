@@ -30,10 +30,16 @@ exports[`TagList renders as a span with custom margins 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-  color: #2e2e2e;
+  min-height: 32px;
+  padding: 8px 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 .emotion-0 svg {
@@ -194,8 +200,8 @@ exports[`TagList renders as a span with custom size 1`] = `
   min-height: 40px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
+  font-size: 16px;
+  line-height: 1.75;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -331,10 +337,16 @@ exports[`TagList renders as a span with defaults 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-  color: #2e2e2e;
+  min-height: 32px;
+  padding: 8px 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 .emotion-0 svg {
@@ -438,10 +450,16 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-  color: #2e2e2e;
+  min-height: 32px;
+  padding: 8px 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 .emotion-0 svg {
@@ -605,8 +623,8 @@ exports[`TagList renders as an anchor with custom size 1`] = `
   min-height: 40px;
   padding: 8px 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
+  font-size: 16px;
+  line-height: 1.75;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -745,10 +763,16 @@ exports[`TagList renders as an anchor with defaults 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-  color: #2e2e2e;
+  min-height: 32px;
+  padding: 8px 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 .emotion-0 svg {
