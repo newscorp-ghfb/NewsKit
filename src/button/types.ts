@@ -12,8 +12,8 @@ export interface ButtonProps {
 export interface ButtonSizing {
   paddingX: SizingKeys;
   paddingY: SizingKeys;
-  width?: SizingKeys;
-  height?: SizingKeys;
+  $width?: SizingKeys;
+  $height?: SizingKeys;
 }
 
 export enum ButtonSize {

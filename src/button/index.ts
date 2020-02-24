@@ -1,3 +1,3 @@
 export * from './button';
 export * from './icon-button';
-export * from './types';
+export {ButtonProps, ButtonSizing, ButtonSize} from './types';

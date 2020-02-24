@@ -68,8 +68,8 @@ const ButtonElement = styled.button<ButtonProps & ButtonSizing>`
     paddingX,
     paddingY,
     $stylePreset,
-    width,
-    height,
+    $width,
+    $height,
   }) => {
     const {
       minHeight,
@@ -91,8 +91,8 @@ const ButtonElement = styled.button<ButtonProps & ButtonSizing>`
         min-height: ${theme.sizing[minHeight]};
         ${getTypePresetFromTheme(typePreset)({theme})}
         padding: ${theme.sizing[paddingX]} ${theme.sizing[paddingY]};
-        width: ${width && theme.sizing[width]};
-        height: ${height && theme.sizing[height]};
+        width: ${$width && theme.sizing[$width]};
+        height: ${$height && theme.sizing[$height]};
         
 
     svg {
