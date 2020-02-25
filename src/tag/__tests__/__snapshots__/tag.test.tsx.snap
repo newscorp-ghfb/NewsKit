@@ -265,11 +265,11 @@ exports[`Tag renders a tag with an icon 1`] = `
 }
 
 .emotion-0 {
-  display: inline-block;
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 16px;
   height: 16px;
+  display: inline-block;
 }
 
 <div

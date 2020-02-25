@@ -8318,7 +8318,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   margin: 0 auto;
 }
 
-.emotion-49 {
+.emotion-51 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -8335,25 +8335,25 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen {
-  .emotion-49 {
+  .emotion-51 {
     margin: -24px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-49 {
+  .emotion-51 {
     margin: -24px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-49 {
+  .emotion-51 {
     margin: -24px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-49 {
+  .emotion-51 {
     margin: -24px 0px 0 0px;
   }
 }
@@ -8601,7 +8601,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   }
 }
 
-.emotion-48 {
+.emotion-50 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -8610,7 +8610,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen {
-  .emotion-48 {
+  .emotion-50 {
     padding: 0 0px;
     margin-top: 24px;
     -webkit-flex-basis: 100%;
@@ -8622,7 +8622,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-48 {
+  .emotion-50 {
     padding: 0 0px;
     margin-top: 24px;
     display: block;
@@ -8630,7 +8630,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-48 {
+  .emotion-50 {
     padding: 0 0px;
     margin-top: 24px;
     display: block;
@@ -8638,14 +8638,14 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-48 {
+  .emotion-50 {
     padding: 0 0px;
     margin-top: 24px;
     display: block;
   }
 }
 
-.emotion-47 {
+.emotion-49 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8760,7 +8760,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   height: 32px;
 }
 
-.emotion-18 {
+.emotion-20 {
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
@@ -8832,7 +8832,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   margin-left: 8px;
 }
 
-.emotion-44 {
+.emotion-46 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8857,7 +8857,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   margin-right: calc(-12px/2);
 }
 
-.emotion-33 {
+.emotion-35 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -8866,7 +8866,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   margin-right: calc(12px/2);
 }
 
-.emotion-32 {
+.emotion-34 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -8901,38 +8901,38 @@ exports[`Live AudioPlayer render live player 1`] = `
   height: 64px;
 }
 
-.emotion-32:disabled {
+.emotion-34:disabled {
   cursor: not-allowed;
 }
 
-.emotion-32 svg {
+.emotion-34 svg {
   fill: #0A68C1;
   color: #0A68C1;
 }
 
-.emotion-32:hover:not(:disabled) {
+.emotion-34:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-32:active:not(:disabled) {
+.emotion-34:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-32:disabled {
+.emotion-34:disabled {
   color: #9c9c9c;
 }
 
-.emotion-32:disabled svg {
+.emotion-34:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-32 svg {
+.emotion-34 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-31 {
+.emotion-33 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8953,7 +8953,7 @@ exports[`Live AudioPlayer render live player 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-30 {
+.emotion-32 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -8962,13 +8962,13 @@ exports[`Live AudioPlayer render live player 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-29 {
+.emotion-31 {
   fill: #2e2e2e;
   color: #2e2e2e;
   display: inline-block;
 }
 
-.emotion-37 {
+.emotion-39 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -9003,40 +9003,40 @@ exports[`Live AudioPlayer render live player 1`] = `
   height: 64px;
 }
 
-.emotion-37:disabled {
+.emotion-39:disabled {
   cursor: not-allowed;
 }
 
-.emotion-37 svg {
+.emotion-39 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-37:hover:not(:disabled) {
+.emotion-39:hover:not(:disabled) {
   background-color: #02509B;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
-.emotion-37:active:not(:disabled) {
+.emotion-39:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-37:disabled {
+.emotion-39:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
 
-.emotion-37:disabled svg {
+.emotion-39:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-37 svg {
+.emotion-39 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-45 {
+.emotion-47 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9157,7 +9157,7 @@ exports[`Live AudioPlayer render live player 1`] = `
     class="emotion-18"
   >
     <div
-      class="emotion-49"
+      class="emotion-51"
     >
       <div
         class="emotion-19"
@@ -9265,10 +9265,10 @@ exports[`Live AudioPlayer render live player 1`] = `
         </div>
       </div>
       <div
-        class="emotion-48"
+        class="emotion-50"
       >
         <div
-          class="emotion-47"
+          class="emotion-49"
         >
           <div
             class="emotion-30"
@@ -9352,24 +9352,24 @@ exports[`Live AudioPlayer render live player 1`] = `
             </div>
           </div>
           <div
-            class="emotion-44"
+            class="emotion-46"
           >
             <div
-              class="emotion-33"
+              class="emotion-35"
             >
               <button
-                class="emotion-32"
+                class="emotion-34"
                 data-testid="audio-player-skip-previous"
                 type="button"
               >
                 <div
-                  class="emotion-31"
+                  class="emotion-33"
                 >
                   <div
-                    class="emotion-30"
+                    class="emotion-32"
                   >
                     <svg
-                      class="emotion-29"
+                      class="emotion-31"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -9388,22 +9388,22 @@ exports[`Live AudioPlayer render live player 1`] = `
               </button>
             </div>
             <div
-              class="emotion-33"
+              class="emotion-35"
             >
               <button
                 aria-pressed="false"
-                class="emotion-37"
+                class="emotion-39"
                 data-testid="audio-player-play-button"
                 type="button"
               >
                 <div
-                  class="emotion-31"
+                  class="emotion-33"
                 >
                   <div
-                    class="emotion-30"
+                    class="emotion-32"
                   >
                     <svg
-                      class="emotion-29"
+                      class="emotion-31"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -9418,21 +9418,21 @@ exports[`Live AudioPlayer render live player 1`] = `
               </button>
             </div>
             <div
-              class="emotion-33"
+              class="emotion-35"
             >
               <button
-                class="emotion-32"
+                class="emotion-34"
                 data-testid="audio-player-skip-next"
                 type="button"
               >
                 <div
-                  class="emotion-31"
+                  class="emotion-33"
                 >
                   <div
-                    class="emotion-30"
+                    class="emotion-32"
                   >
                     <svg
-                      class="emotion-29"
+                      class="emotion-31"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -9455,7 +9455,7 @@ exports[`Live AudioPlayer render live player 1`] = `
             class="emotion-30"
           >
             <div
-              class="emotion-45"
+              class="emotion-47"
             />
           </div>
         </div>
