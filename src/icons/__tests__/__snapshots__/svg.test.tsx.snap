@@ -20,6 +20,8 @@ exports[`Svg renders a menu icon with specified size and color 1`] = `
   .emotion-0 {
   fill: #158acf;
   color: #158acf;
+  width: 4px;
+  height: 4px;
   display: inline-block;
 }
 
@@ -35,8 +37,8 @@ exports[`Svg renders a menu icon with specified size and default color 1`] = `
   .emotion-0 {
   fill: #000000;
   color: #000000;
-  width: 3;
-  height: 3;
+  width: 24px;
+  height: 24px;
   display: inline-block;
 }
 

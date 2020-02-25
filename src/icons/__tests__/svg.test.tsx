@@ -9,7 +9,7 @@ describe('Svg', () => {
         inkBase: '#000000',
       },
       sizing: {
-        iconSize050: 3,
+        iconSize050: '24px',
       },
     };
     const fragment = renderToFragment(
@@ -24,7 +24,7 @@ describe('Svg', () => {
         white: '#158acf',
       },
       sizing: {
-        sizing010: 1,
+        iconSize010: '4px',
       },
     };
     const fragment = renderToFragment(
@@ -44,7 +44,7 @@ describe('Svg', () => {
         white: '#158acf',
       },
       sizing: {
-        sizing010: 1,
+        sizing010: '4px',
       },
     };
     const fragment = renderToFragment(
