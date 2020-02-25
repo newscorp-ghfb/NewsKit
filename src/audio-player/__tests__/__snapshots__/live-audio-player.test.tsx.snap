@@ -730,6 +730,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 .emotion-39:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-39:disabled svg {
@@ -835,6 +836,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 .emotion-44:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-44:disabled svg {
@@ -2131,6 +2133,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 .emotion-39:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-39:disabled svg {
@@ -2236,6 +2239,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 
 .emotion-44:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-44:disabled svg {
@@ -3532,6 +3536,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 
 .emotion-39:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-39:disabled svg {
@@ -3637,6 +3642,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 
 .emotion-44:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-44:disabled svg {
@@ -4933,6 +4939,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 
 .emotion-39:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-39:disabled svg {
@@ -5038,6 +5045,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 
 .emotion-44:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-44:disabled svg {
@@ -6334,6 +6342,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 
 .emotion-39:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-39:disabled svg {
@@ -6439,6 +6448,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 
 .emotion-44:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-44:disabled svg {
@@ -7735,6 +7745,7 @@ exports[`Live AudioPlayer render default player 1`] = `
 
 .emotion-33:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-33:disabled svg {
@@ -7840,6 +7851,7 @@ exports[`Live AudioPlayer render default player 1`] = `
 
 .emotion-38:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-38:disabled svg {
@@ -8920,6 +8932,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 
 .emotion-34:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-34:disabled svg {
@@ -10195,6 +10208,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
 
 .emotion-39:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-39:disabled svg {
@@ -10300,6 +10314,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
 
 .emotion-44:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-44:disabled svg {
@@ -11648,6 +11663,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 
 .emotion-40:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-40:disabled svg {
@@ -11753,6 +11769,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 
 .emotion-45:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-45:disabled svg {

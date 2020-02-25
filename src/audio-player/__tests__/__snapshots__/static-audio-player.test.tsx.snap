@@ -787,6 +787,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 
 .emotion-39:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-39:disabled svg {
@@ -892,6 +893,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 
 .emotion-44:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-44:disabled svg {
@@ -2182,6 +2184,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 
 .emotion-39:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-39:disabled svg {
@@ -2287,6 +2290,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 
 .emotion-44:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-44:disabled svg {
@@ -3584,6 +3588,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 
 .emotion-39:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-39:disabled svg {
@@ -3686,6 +3691,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 
 .emotion-44:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-44:disabled svg {
@@ -4976,6 +4982,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 
 .emotion-39:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-39:disabled svg {
@@ -5081,6 +5088,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 
 .emotion-44:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-44:disabled svg {

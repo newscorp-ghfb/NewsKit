@@ -991,6 +991,7 @@ exports[`Button renders with different style preset 1`] = `
   border-color: #0A68C1;
   border-width: 1px;
   color: #0A68C1;
+  background-color: transparent;
   border-radius: calc(8px * 0.25);
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -1025,6 +1026,7 @@ exports[`Button renders with different style preset 1`] = `
 .emotion-1:disabled {
   border-color: #f0f0f0;
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-1:disabled svg {

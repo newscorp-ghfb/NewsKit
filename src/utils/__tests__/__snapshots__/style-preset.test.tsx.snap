@@ -22,6 +22,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary 1`] = `
 
 .emotion-0:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-0:disabled svg {
@@ -58,6 +59,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with bo
 
 .emotion-0:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-0:disabled svg {
