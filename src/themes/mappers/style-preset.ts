@@ -87,18 +87,21 @@ export const createStylePresets = ({
       color: colorPrimitives.inkBrand,
       iconColor: colorPrimitives.inkBrand,
       borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+      backgroundColor: 'transparent',
     },
     hover: {
       borderWidth: borderPrimitives.borderWidth020,
+      backgroundColor: 'transparent',
     },
     active: {
       borderWidth: borderPrimitives.borderWidth010,
+      backgroundColor: 'transparent',
     },
     disabled: {
-      backgroundColor: colorPrimitives.disabled,
       color: colorPrimitives.inkNonEssential,
       iconColor: colorPrimitives.inkNonEssential,
       borderColor: colorPrimitives.disabled,
+      backgroundColor: 'transparent',
     },
   };
   const iconButtonMinimalPrimary: StylePresetStates = {
@@ -117,6 +120,11 @@ export const createStylePresets = ({
     disabled: {
       color: colorPrimitives.inkNonEssential,
       iconColor: colorPrimitives.inkNonEssential,
+      backgroundColor: 'transparent',
+    },
+    loading: {
+      backgroundColor: 'transparent',
+      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
     },
   };
   const audioPlayerThumb: StylePresetStates = {
@@ -184,6 +192,7 @@ export const createStylePresets = ({
         borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
         color: colorPrimitives.inkBrand,
         iconColor: colorPrimitives.inkBrand,
+        backgroundColor: 'transparent',
       },
       hover: {
         backgroundColor: colorPrimitives.interactive120,
@@ -195,6 +204,7 @@ export const createStylePresets = ({
         borderColor: colorPrimitives.disabled,
         color: colorPrimitives.inkNonEssential,
         iconColor: colorPrimitives.inkNonEssential,
+        backgroundColor: 'transparent',
       },
       loading: {
         iconColor: colorPrimitives.white,
@@ -218,9 +228,11 @@ export const createStylePresets = ({
       disabled: {
         color: colorPrimitives.inkNonEssential,
         iconColor: colorPrimitives.inkNonEssential,
+        backgroundColor: 'transparent',
       },
       loading: {
         iconColor: colorPrimitives.white,
+        backgroundColor: 'transparent',
       },
     } as StylePresetStates,
     tagPrimary: {
