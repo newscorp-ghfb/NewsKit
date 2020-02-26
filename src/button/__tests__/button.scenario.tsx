@@ -54,7 +54,7 @@ enum IconButtonStyle {
   Minimal = 'iconButtonMinimalPrimary',
 }
 
-const states = ['Default', 'Focused', 'Disabled'];
+const states = ['Default', 'Focused', 'Disabled', 'Loading'];
 
 export const component = () => (
   <React.Fragment>
@@ -99,6 +99,12 @@ export const component = () => (
 
               <Block theme={newskitLightTheme} data-state="Disabled">
                 <Button disabled $stylePreset={stylePreset}>
+                  Button
+                </Button>
+              </Block>
+
+              <Block theme={newskitLightTheme} data-state="Loading">
+                <Button $stylePreset={stylePreset} isLoading>
                   Button
                 </Button>
               </Block>
@@ -208,6 +214,16 @@ export const component = () => (
                   disabled
                   $stylePreset={stylePreset}
                   $size={ButtonSize.Medium}
+                >
+                  <Email />
+                </IconButton>
+              </Block>
+
+              <Block theme={newskitLightTheme} data-state="Loading">
+                <IconButton
+                  $stylePreset={stylePreset}
+                  $size={ButtonSize.Medium}
+                  isLoading
                 >
                   <Email />
                 </IconButton>

@@ -796,8 +796,8 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 }
 
 .emotion-39 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-38 {
@@ -970,8 +970,8 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 }
 
 .emotion-49 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-62 {
@@ -2193,8 +2193,8 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 }
 
 .emotion-39 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-38 {
@@ -2367,8 +2367,8 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 }
 
 .emotion-49 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-62 {
@@ -3597,8 +3597,8 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 }
 
 .emotion-39 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-38 {
@@ -3768,8 +3768,8 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 }
 
 .emotion-49 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-62 {
@@ -4991,8 +4991,8 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 }
 
 .emotion-39 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-38 {
@@ -5165,8 +5165,8 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 }
 
 .emotion-49 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-62 {

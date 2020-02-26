@@ -739,8 +739,8 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-39 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-38 {
@@ -913,8 +913,8 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-49 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-62 {
@@ -2142,8 +2142,8 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-39 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-38 {
@@ -2316,8 +2316,8 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-49 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-62 {
@@ -3545,8 +3545,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 }
 
 .emotion-39 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-38 {
@@ -3719,8 +3719,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 }
 
 .emotion-49 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-62 {
@@ -4948,8 +4948,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 }
 
 .emotion-39 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-38 {
@@ -5122,8 +5122,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 }
 
 .emotion-49 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-62 {
@@ -6351,8 +6351,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 }
 
 .emotion-39 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-38 {
@@ -6525,8 +6525,8 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 }
 
 .emotion-49 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-62 {
@@ -7754,8 +7754,8 @@ exports[`Live AudioPlayer render default player 1`] = `
 }
 
 .emotion-33 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-32 {
@@ -7928,8 +7928,8 @@ exports[`Live AudioPlayer render default player 1`] = `
 }
 
 .emotion-43 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-56 {
@@ -8941,8 +8941,8 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 .emotion-34 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-33 {
@@ -9045,8 +9045,8 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 .emotion-39 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-47 {
@@ -10217,8 +10217,8 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
 }
 
 .emotion-39 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-38 {
@@ -10391,8 +10391,8 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
 }
 
 .emotion-49 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-62 {
@@ -11672,8 +11672,8 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 }
 
 .emotion-40 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-39 {
@@ -11846,8 +11846,8 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 }
 
 .emotion-50 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-63 {

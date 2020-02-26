@@ -15,21 +15,21 @@ import {getStylePresetFromTheme} from '../utils/style-preset';
 import {SizingKeys, TypePresetKeys, IconSizeKeys} from '../themes';
 import {Stack} from '../stack/stack';
 import {Flow, StackDistribution} from '../stack/types';
+import {CircularProgressIndicator} from '../progress-indicator';
 
-const buttonSizeStyleTokens: Record<
-  ButtonSize,
-  {
-    minHeight: SizingKeys;
-    borderRadiusSize: SizingKeys;
-    typePreset: TypePresetKeys;
-    iconSize: IconSizeKeys;
-  }
-> = {
+interface ButtonSizeOption {
+  minHeight: SizingKeys;
+  borderRadiusSize: SizingKeys;
+  typePreset: TypePresetKeys;
+  iconSize: IconSizeKeys;
+}
+
+const buttonSizeStyleTokens: Record<ButtonSize, ButtonSizeOption> = {
   [ButtonSize.Large]: {
     minHeight: 'sizing040',
     borderRadiusSize: 'sizing020',
     typePreset: 'button030',
-    iconSize: 'iconSize020',
+    iconSize: 'iconSize030',
   },
   [ButtonSize.Medium]: {
     minHeight: 'sizing030',
@@ -118,14 +118,17 @@ const ButtonElement = styled.button<ButtonProps & ButtonSizing>`
 
 export const BaseButton: React.FC<
   React.ButtonHTMLAttributes<HTMLButtonElement> & ButtonProps & ButtonSizing
-> = ({children, ...restOfProps}) => (
-  <ButtonElement type="button" {...restOfProps}>
-    <Stack
-      flow={Flow.HorizontalCenter}
-      stackDistribution={StackDistribution.Center}
-      space="sizing020"
-    >
-      {children}
-    </Stack>
-  </ButtonElement>
-);
+> = ({children, isLoading, $size = ButtonSize.Small, ...restOfProps}) => {
+  const {iconSize} = buttonSizeStyleTokens[$size];
+  return (
+    <ButtonElement type="button" $size={$size} {...restOfProps}>
+      <Stack
+        flow={Flow.HorizontalCenter}
+        stackDistribution={StackDistribution.Center}
+        space="sizing020"
+      >
+        {isLoading ? <CircularProgressIndicator $size={iconSize} /> : children}
+      </Stack>
+    </ButtonElement>
+  );
+};

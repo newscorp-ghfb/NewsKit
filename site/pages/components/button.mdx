@@ -36,6 +36,9 @@ Custom props are detailed below:
   <Prop name="icon" type="React.ComponentType">
     Defines which icon to use.
   </Prop>
+  <Prop name="isLoading" type="boolean">
+    boolean flag for indicating loading state of the parent component, which then displays circular progress indicator.
+  </Prop>
 </LegacyBlock>
 
 ## Playground for Button
@@ -94,6 +97,12 @@ Custom props are detailed below:
       type: 'boolean',
       value: false,
     },
+    {
+      name: 'Loading',
+      propName: 'isLoading',
+      type: 'boolean',
+      value: false,
+    },
   ]}
 />
 
@@ -149,6 +158,12 @@ Custom props are detailed below:
     {
       name: 'Disabled',
       propName: 'disabled',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'Loading',
+      propName: 'isLoading',
       type: 'boolean',
       value: false,
     },

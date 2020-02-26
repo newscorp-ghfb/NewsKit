@@ -66,8 +66,8 @@ exports[`PopoutButton popout button opens window to href 1`] = `
 }
 
 .emotion-3 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-2 {
@@ -205,8 +205,8 @@ exports[`PopoutButton renders popout button 1`] = `
 }
 
 .emotion-3 svg {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-2 {

@@ -8,6 +8,7 @@ export interface ButtonProps {
   $size?: ButtonSize;
   $iconColor?: ColorKeys;
   $stylePreset?: string;
+  isLoading?: boolean;
 }
 
 export interface ButtonSizing {

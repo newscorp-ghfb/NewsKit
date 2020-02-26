@@ -52,23 +52,6 @@ describe('Button', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders Icon Button with default size', () => {
-    const props = {
-      children: [<Email />],
-    };
-    const fragment = renderToFragmentWithTheme(IconButton, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders Icon Button', () => {
-    const props = {
-      $size: ButtonSize.Large,
-      children: [<Email />],
-    };
-    const fragment = renderToFragmentWithTheme(IconButton, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
   test('renders when there is no icon', () => {
     const props = {
       $size: ButtonSize.Small,
@@ -78,13 +61,71 @@ describe('Button', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders when there is an icon with a colour', () => {
-    const props = {
-      $size: ButtonSize.Small,
-      $iconColor: 'buttonText' as ColorKeys,
-      children: [<Email />, 'click this!'],
-    };
-    const fragment = renderToFragmentWithTheme(IconButton, props);
-    expect(fragment).toMatchSnapshot();
+  describe('Loading Button', () => {
+    test('renders Small Button', () => {
+      const props = {
+        $size: ButtonSize.Small,
+        isLoading: true,
+      };
+      const fragment = renderToFragmentWithTheme(Button, props);
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders Medium Button', () => {
+      const props = {
+        $size: ButtonSize.Medium,
+        isLoading: true,
+      };
+      const fragment = renderToFragmentWithTheme(Button, props);
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders Large Button', () => {
+      const props = {
+        $size: ButtonSize.Large,
+        isLoading: true,
+      };
+      const fragment = renderToFragmentWithTheme(Button, props);
+      expect(fragment).toMatchSnapshot();
+    });
+  });
+
+  describe('IconButton', () => {
+    test('renders Icon Button with default size', () => {
+      const props = {
+        children: [<Email />],
+      };
+      const fragment = renderToFragmentWithTheme(IconButton, props);
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders Icon Button', () => {
+      const props = {
+        $size: ButtonSize.Large,
+        children: [<Email />],
+      };
+      const fragment = renderToFragmentWithTheme(IconButton, props);
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders Icon Button in loading State', () => {
+      const props = {
+        $size: ButtonSize.Large,
+        isLoading: true,
+        children: [<Email />],
+      };
+      const fragment = renderToFragmentWithTheme(IconButton, props);
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders when there is an icon with a colour', () => {
+      const props = {
+        $size: ButtonSize.Small,
+        $iconColor: 'buttonText' as ColorKeys,
+        children: [<Email />, 'click this!'],
+      };
+      const fragment = renderToFragmentWithTheme(IconButton, props);
+      expect(fragment).toMatchSnapshot();
+    });
   });
 });
