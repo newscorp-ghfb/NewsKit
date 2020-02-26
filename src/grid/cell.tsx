@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {styled, ThemeProp, css} from '../utils/style';
 import {BreakpointKeys} from '../themes';
 import {getMediaQueryFromTheme} from '../utils/responsive-helpers';
-import {GridContextConsumer} from './context';
+import {GridContext} from './context';
 import {GridProps, CellProps} from './types';
 import {getOverridableProp, OverrideProp} from './utils';
 
@@ -65,10 +65,7 @@ const filterGridOverrides = (
   return overrides;
 };
 
-export const Cell: React.FC<CellProps> = ({...props}) => (
-  <GridContextConsumer>
-    {gridOverrides => (
-      <StyledCell {...filterGridOverrides(gridOverrides)} {...props} />
-    )}
-  </GridContextConsumer>
-);
+export const Cell: React.FC<CellProps> = props => {
+  const gridOverrides = useContext(GridContext);
+  return <StyledCell {...filterGridOverrides(gridOverrides)} {...props} />;
+};

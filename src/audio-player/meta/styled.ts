@@ -17,8 +17,11 @@ export const LiveTag = styled(Tag)`
   background-color: ${getColorFromTheme('semanticNegative010')};
   color: ${getColorFromTheme('inkInverse')};
   text-transform: uppercase;
-  margin-right: ${getSizingFromTheme('sizing040')};
 `;
+
+export interface CenterProp {
+  center?: boolean;
+}
 
 export const Label = styled.span`
   color: ${getColorFromTheme('inkSubtle')};
@@ -30,13 +33,21 @@ export const ProgrammeTime = styled(Label)`
   display: inline-block;
 `;
 
-export const ProgrammeTitle = styled(H1)`
-  ${getTypePresetFromTheme('heading040')};
+export const ProgrammeTitle = styled(H1)<CenterProp>`
+  ${({center}) =>
+    center
+      ? getTypePresetFromTheme('heading020')
+      : getTypePresetFromTheme('heading040')};
+  text-align: ${({center}) => (center ? 'center' : 'left')};
   margin: 0;
+  width: 100%;
 `;
 
-export const ProgrammeDescription = styled(Label)`
+export const ProgrammeDescription = styled(Label)<CenterProp>`
+  margin: ${getSizingFromTheme('spaceStack050')};
   ${getTypePresetFromTheme('subhead010')};
+  text-align: ${({center}) => (center ? 'center' : 'left')};
+  width: 100%;
 `;
 
 export const ProgrammeTags = styled(Label)`
@@ -47,5 +58,4 @@ export const ProgrammeTags = styled(Label)`
 export const ImageContainer = styled.div`
   max-width: 212px;
   max-height: 212px;
-  margin-left: auto;
 `;

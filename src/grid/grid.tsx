@@ -2,7 +2,6 @@ import React from 'react';
 import {styled, getGridSettingFromTheme, css, ThemeProp} from '../utils/style';
 import {getMediaQueryFromTheme} from '../utils/responsive-helpers';
 import {BreakpointKeys} from '../themes/newskit-light/breakpoints';
-import {withTheme} from '../themes';
 import {GridContextProvider} from './context';
 import {GridProps} from './types';
 import {getOverridableProp, OverrideProp} from './utils';
@@ -52,10 +51,10 @@ const StyledGrid = styled.div<GridProps>`
   ${generateBreakpointConfig('lg')};
 `;
 
-export const Grid = withTheme<GridProps>(({theme, children, ...props}) => (
+export const Grid: React.FC<GridProps> = ({children, ...props}) => (
   <GridContextProvider value={props}>
     <StyledGridContainer>
       <StyledGrid {...props}>{children}</StyledGrid>
     </StyledGridContainer>
   </GridContextProvider>
-));
+);

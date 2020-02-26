@@ -4,6 +4,8 @@ import {styled} from '../../utils/style';
 
 export const name = 'auto-play-audio-player';
 
+const radioPlayerImage = require('./radio-player-image.png');
+
 const Container = styled.div`
   width: 800px;
   margin: auto;
@@ -17,7 +19,7 @@ export const component = () => (
         imgAlt="AutoPlay"
         title="Auto Play Test"
         live={false}
-        imgSrc="https://via.placeholder.com/150"
+        imgSrc={radioPlayerImage}
         captionSrc="captions.vtt"
         time="1PM to 3PM"
         description="Very annoying auto-playing audio file."

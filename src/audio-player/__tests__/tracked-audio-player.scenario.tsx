@@ -5,13 +5,15 @@ import {styled} from '../../utils/style';
 
 export const name = 'tracked-audio-player';
 
+const imgSrc = require('./radio-player-image.png');
+
 const podcast1 = {
   src:
     'https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3',
   imgAlt: 'test image 1',
   title: 'title 1',
   live: false,
-  imgSrc: 'https://via.placeholder.com/150',
+  imgSrc,
   captionSrc: 'captions.vtt',
   time: '1PM to 3PM',
   description: 'Test description',
@@ -23,7 +25,7 @@ const podcast2 = {
   imgAlt: 'test image 2',
   title: 'title 2',
   live: false,
-  imgSrc: 'https://via.placeholder.com/150',
+  imgSrc,
   captionSrc: 'captions.vtt',
 };
 
@@ -32,7 +34,7 @@ const podcast3 = {
   imgAlt: 'test image 3',
   title: 'title 3',
   live: false,
-  imgSrc: 'https://via.placeholder.com/150',
+  imgSrc,
   captionSrc: 'captions.vtt',
 };
 

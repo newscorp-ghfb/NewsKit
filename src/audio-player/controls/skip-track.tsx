@@ -16,6 +16,7 @@ const SkipPreviousIcon = () => (
 export const SkipNextButton: React.FC<SkipButtonProps> = React.memo(props => (
   <Button
     data-testid="audio-player-skip-next"
+    $size={ButtonSize.Medium}
     {...props}
     icon={SkipNextIcon}
     $size={ButtonSize.Large}
@@ -27,8 +28,7 @@ export const SkipPreviousButton: React.FC<SkipButtonProps> = React.memo(
     <Button
       data-testid="audio-player-skip-previous"
       {...props}
-      icon={SkipPreviousIcon}
-      $size={ButtonSize.Large}
+      $size={ButtonSize.Medium}
     >
       <SkipPrevious />
     </StyledButton>
