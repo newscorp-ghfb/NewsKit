@@ -119,6 +119,7 @@ export const Slider: React.FC<SliderProps> = ({
       vertical={vertical}
       labelType="min"
       data-testid="min-label"
+      isText={typeof minLabel === 'string'}
     >
       {renderLabel(minLabel)}
     </StyledSliderLabel>
@@ -133,6 +134,7 @@ export const Slider: React.FC<SliderProps> = ({
       vertical={vertical}
       labelType="max"
       data-testid="max-label"
+      isText={typeof maxLabel === 'string'}
     >
       {renderLabel(maxLabel)}
     </StyledSliderLabel>

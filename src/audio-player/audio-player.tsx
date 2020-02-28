@@ -72,7 +72,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   const volumePresets: Required<AudioPlayerProps['$volumePresets']> = {
     $sliderIndicatorTrackStylePreset: 'volumeControlTrackIndicator',
     $sliderThumbStylePreset: 'volumeControlThumb',
-    $sliderLabelsStylePreset: 'volumeControlLabels',
+    $sliderLabelsStylePreset: 'volumeControlButtons',
     $sliderThumbLabelStylePreset: 'volumeControlLabels',
     $sliderTrackStylePreset: 'volumeControlTrack',
     ...$volumePresets,

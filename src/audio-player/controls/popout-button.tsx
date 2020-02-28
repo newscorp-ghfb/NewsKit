@@ -13,7 +13,7 @@ export const PopoutButton: React.FC<PopoutButtonProps> = React.memo(props => {
   return (
     <IconButton
       {...props}
-      $size={ButtonSize.Large}
+      $size={ButtonSize.Medium}
       onClick={
         href || onClick
           ? () => {

@@ -74,22 +74,7 @@ exports[`slider labels should render custom component min, max labels 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #0A68C1;
   margin-right: 8px;
-}
-
-.emotion-0 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-0:disabled {
-  color: #9c9c9c;
-}
-
-.emotion-0:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -101,22 +86,7 @@ exports[`slider labels should render custom component min, max labels 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #0A68C1;
   margin-left: 8px;
-}
-
-.emotion-1 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-1:disabled {
-  color: #9c9c9c;
-}
-
-.emotion-1:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div

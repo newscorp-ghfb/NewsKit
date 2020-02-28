@@ -108,4 +108,28 @@ describe('VolumeControl', () => {
     // Should call onChange with new unmuted volume
     expect(onChange).toHaveBeenCalledWith(1);
   });
+
+  test('volumeup button increases volume to 1', async () => {
+    const onChange = jest.fn();
+
+    const volumeControl = renderWithTheme(VolumeControl, {
+      volume: 0.4,
+      onChange,
+    });
+
+    const getVolumeUpButton = () =>
+      volumeControl.getByTestId('volumeup-button');
+
+    // First click, should increase volume
+    fireEvent.click(getVolumeUpButton());
+
+    // Should call onChange with the updated value
+    expect(onChange).toHaveBeenCalledWith(1);
+
+    // Volume set to 1, propagate volume change back to comp
+    volumeControl.rerender(<VolumeControl volume={1} onChange={onChange} />);
+
+    // Check slider props were updated as expected
+    expect(volumeControl.asFragment()).toMatchSnapshot('volume at 100%');
+  });
 });

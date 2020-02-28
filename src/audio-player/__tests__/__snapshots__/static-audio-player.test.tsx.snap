@@ -8,7 +8,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   margin: 0 auto;
 }
 
-.emotion-86 {
+.emotion-89 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -25,25 +25,25 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 }
 
 @media screen {
-  .emotion-86 {
+  .emotion-89 {
     margin: -24px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-86 {
+  .emotion-89 {
     margin: -24px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-86 {
+  .emotion-89 {
     margin: -24px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-86 {
+  .emotion-89 {
     margin: -24px 0px 0 0px;
   }
 }
@@ -744,7 +744,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   color: #535353;
 }
 
-.emotion-84 {
+.emotion-87 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -763,37 +763,37 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   justify-content: space-between;
 }
 
-.emotion-55 {
+.emotion-58 {
   width: 100%;
   max-width: 184px;
   padding: 0 calc(24px / 2);
 }
 
 @media screen {
-  .emotion-55 {
+  .emotion-58 {
     display: none;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-55 {
+  .emotion-58 {
     display: none;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-55 {
+  .emotion-58 {
     display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-55 {
+  .emotion-58 {
     display: block;
   }
 }
 
-.emotion-54 {
+.emotion-57 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -818,7 +818,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   position: relative;
 }
 
-.emotion-48 {
+.emotion-49 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -827,36 +827,114 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #535353;
   margin-right: 8px;
 }
 
-.emotion-47 {
+.emotion-48 {
+  display: inline-block;
+  position: relative;
+  width: auto;
   border: none;
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #0A68C1;
+  border-radius: 100vw;
+  min-height: 8px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  padding: 8px 8px;
+  width: 32px;
+  height: 32px;
+  margin: 8px 0;
 }
 
-.emotion-46 {
+.emotion-48:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-48 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-48:hover:not(:disabled) {
+  background-color: #e6f4ff;
+}
+
+.emotion-48:active:not(:disabled) {
+  background-color: #d5ebff;
+}
+
+.emotion-48:disabled {
+  color: #9c9c9c;
+  background-color: transparent;
+}
+
+.emotion-48:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-48 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-48::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 100%;
+  height: 48px;
+}
+
+.emotion-47 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-46 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
 }
 
 .emotion-45 {
@@ -867,7 +945,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   display: inline-block;
 }
 
-.emotion-50 {
+.emotion-51 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -884,7 +962,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   width: 100%;
 }
 
-.emotion-49 {
+.emotion-50 {
   background-color: #FFFFFF;
   border-style: solid;
   border-color: #0A68C1;
@@ -904,21 +982,21 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   cursor: pointer;
 }
 
-.emotion-49 svg {
+.emotion-50 svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-49:hover:not(:disabled) {
+.emotion-50:hover:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-49:active:not(:disabled) svg {
+.emotion-50:active:not(:disabled) svg {
   fill: #535353;
   color: #535353;
 }
 
-.emotion-53 {
+.emotion-56 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -927,11 +1005,10 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #535353;
   margin-left: 8px;
 }
 
-.emotion-81 {
+.emotion-84 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -956,7 +1033,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   margin-right: calc(-12px/2);
 }
 
-.emotion-60 {
+.emotion-63 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -965,7 +1042,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   margin-right: calc(12px/2);
 }
 
-.emotion-59 {
+.emotion-62 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -1000,78 +1077,45 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   height: 48px;
 }
 
-.emotion-59:disabled {
+.emotion-62:disabled {
   cursor: not-allowed;
 }
 
-.emotion-59 svg {
+.emotion-62 svg {
   fill: #0A68C1;
   color: #0A68C1;
 }
 
-.emotion-59:hover:not(:disabled) {
+.emotion-62:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-59:active:not(:disabled) {
+.emotion-62:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-59:disabled {
+.emotion-62:disabled {
   color: #9c9c9c;
   background-color: transparent;
 }
 
-.emotion-59:disabled svg {
+.emotion-62:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-59 svg {
+.emotion-62 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-58 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-57 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-56 {
+.emotion-59 {
   fill: #2e2e2e;
   color: #2e2e2e;
   display: inline-block;
 }
 
-.emotion-69 {
+.emotion-72 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -1106,40 +1150,40 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   height: 64px;
 }
 
-.emotion-69:disabled {
+.emotion-72:disabled {
   cursor: not-allowed;
 }
 
-.emotion-69 svg {
+.emotion-72 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-69:hover:not(:disabled) {
+.emotion-72:hover:not(:disabled) {
   background-color: #02509B;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
-.emotion-69:active:not(:disabled) {
+.emotion-72:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-69:disabled {
+.emotion-72:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
 
-.emotion-69:disabled svg {
+.emotion-72:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-69 svg {
+.emotion-72 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-82 {
+.emotion-85 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1162,7 +1206,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
     class="emotion-35"
   >
     <div
-      class="emotion-86"
+      class="emotion-89"
     >
       <div
         class="emotion-36"
@@ -1393,47 +1437,51 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
         class="emotion-44"
       >
         <div
-          class="emotion-84"
+          class="emotion-87"
         >
           <div
-            class="emotion-55"
+            class="emotion-58"
           >
             <div
-              class="emotion-54"
+              class="emotion-57"
               data-testid="volume-control"
             >
               <div
-                class="emotion-48"
+                class="emotion-49"
                 data-testid="min-label"
               >
                 <button
-                  class="emotion-47"
+                  class="emotion-48"
                   data-testid="mute-button"
                   type="button"
                 >
-                  <span
-                    class="emotion-46"
+                  <div
+                    class="emotion-47"
                   >
-                    <svg
-                      class="emotion-45"
-                      viewBox="0 0 24 24"
+                    <div
+                      class="emotion-46"
                     >
-                      <title>
-                        Volume down
-                      </title>
-                      <path
-                        d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-                      />
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                    </svg>
-                  </span>
+                      <svg
+                        class="emotion-45"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          Volume down
+                        </title>
+                        <path
+                          d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                      </svg>
+                    </div>
+                  </div>
                 </button>
               </div>
               <div
-                class="emotion-50"
+                class="emotion-51"
                 data-testid="volume-control-track"
                 values="1"
               >
@@ -1442,7 +1490,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
                   aria-valuemax="1"
                   aria-valuemin="0"
                   aria-valuenow="1"
-                  class="emotion-49"
+                  class="emotion-50"
                   draggable="false"
                   role="slider"
                   style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
@@ -1451,50 +1499,60 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
                 />
               </div>
               <div
-                class="emotion-53"
+                class="emotion-56"
                 data-testid="max-label"
               >
-                <span
-                  class="emotion-46"
+                <button
+                  class="emotion-48"
+                  data-testid="volumeup-button"
+                  type="button"
                 >
-                  <svg
-                    class="emotion-45"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-47"
                   >
-                    <title>
-                      Volume up
-                    </title>
-                    <path
-                      d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                    />
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                  </svg>
-                </span>
+                    <div
+                      class="emotion-46"
+                    >
+                      <svg
+                        class="emotion-45"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          Volume up
+                        </title>
+                        <path
+                          d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
               </div>
             </div>
           </div>
           <div
-            class="emotion-81"
+            class="emotion-84"
           >
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
-                class="emotion-59"
+                class="emotion-62"
                 data-testid="audio-player-skip-previous"
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -1513,21 +1571,21 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
               </button>
             </div>
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
-                class="emotion-59"
+                class="emotion-62"
                 data-testid="audio-player-replay"
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -1542,22 +1600,22 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
               </button>
             </div>
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
                 aria-pressed="false"
-                class="emotion-69"
+                class="emotion-72"
                 data-testid="audio-player-play-button"
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -1572,21 +1630,21 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
               </button>
             </div>
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
-                class="emotion-59"
+                class="emotion-62"
                 data-testid="audio-player-forward"
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -1608,21 +1666,21 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
               </button>
             </div>
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
-                class="emotion-59"
+                class="emotion-62"
                 data-testid="audio-player-skip-next"
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -1642,10 +1700,10 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
             </div>
           </div>
           <div
-            class="emotion-55"
+            class="emotion-58"
           >
             <div
-              class="emotion-82"
+              class="emotion-85"
             />
           </div>
         </div>
@@ -1663,7 +1721,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   margin: 0 auto;
 }
 
-.emotion-86 {
+.emotion-89 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -1680,25 +1738,25 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 }
 
 @media screen {
-  .emotion-86 {
+  .emotion-89 {
     margin: -24px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-86 {
+  .emotion-89 {
     margin: -24px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-86 {
+  .emotion-89 {
     margin: -24px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-86 {
+  .emotion-89 {
     margin: -24px 0px 0 0px;
   }
 }
@@ -2399,7 +2457,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   color: #535353;
 }
 
-.emotion-84 {
+.emotion-87 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2418,37 +2476,37 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   justify-content: space-between;
 }
 
-.emotion-55 {
+.emotion-58 {
   width: 100%;
   max-width: 184px;
   padding: 0 calc(24px / 2);
 }
 
 @media screen {
-  .emotion-55 {
+  .emotion-58 {
     display: none;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-55 {
+  .emotion-58 {
     display: none;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-55 {
+  .emotion-58 {
     display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-55 {
+  .emotion-58 {
     display: block;
   }
 }
 
-.emotion-54 {
+.emotion-57 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2473,7 +2531,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   position: relative;
 }
 
-.emotion-48 {
+.emotion-49 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2482,36 +2540,114 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #535353;
   margin-right: 8px;
 }
 
-.emotion-47 {
+.emotion-48 {
+  display: inline-block;
+  position: relative;
+  width: auto;
   border: none;
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #0A68C1;
+  border-radius: 100vw;
+  min-height: 8px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  padding: 8px 8px;
+  width: 32px;
+  height: 32px;
+  margin: 8px 0;
 }
 
-.emotion-46 {
+.emotion-48:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-48 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-48:hover:not(:disabled) {
+  background-color: #e6f4ff;
+}
+
+.emotion-48:active:not(:disabled) {
+  background-color: #d5ebff;
+}
+
+.emotion-48:disabled {
+  color: #9c9c9c;
+  background-color: transparent;
+}
+
+.emotion-48:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-48 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-48::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 100%;
+  height: 48px;
+}
+
+.emotion-47 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-46 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
 }
 
 .emotion-45 {
@@ -2522,7 +2658,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   display: inline-block;
 }
 
-.emotion-50 {
+.emotion-51 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2539,7 +2675,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   width: 100%;
 }
 
-.emotion-49 {
+.emotion-50 {
   background-color: #FFFFFF;
   border-style: solid;
   border-color: #0A68C1;
@@ -2559,21 +2695,21 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   cursor: pointer;
 }
 
-.emotion-49 svg {
+.emotion-50 svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-49:hover:not(:disabled) {
+.emotion-50:hover:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-49:active:not(:disabled) svg {
+.emotion-50:active:not(:disabled) svg {
   fill: #535353;
   color: #535353;
 }
 
-.emotion-53 {
+.emotion-56 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2582,11 +2718,10 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #535353;
   margin-left: 8px;
 }
 
-.emotion-81 {
+.emotion-84 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2611,7 +2746,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   margin-right: calc(-12px/2);
 }
 
-.emotion-60 {
+.emotion-63 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2620,7 +2755,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   margin-right: calc(12px/2);
 }
 
-.emotion-59 {
+.emotion-62 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -2655,75 +2790,45 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   height: 48px;
 }
 
-.emotion-59:disabled {
+.emotion-62:disabled {
   cursor: not-allowed;
 }
 
-.emotion-59 svg {
+.emotion-62 svg {
   fill: #0A68C1;
   color: #0A68C1;
 }
 
-.emotion-59:hover:not(:disabled) {
+.emotion-62:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-59:active:not(:disabled) {
+.emotion-62:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-59:disabled {
+.emotion-62:disabled {
   color: #9c9c9c;
   background-color: transparent;
 }
 
-.emotion-59:disabled svg {
+.emotion-62:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-59 svg {
+.emotion-62 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-58 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-57 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-56 {
+.emotion-59 {
   fill: #2e2e2e;
   color: #2e2e2e;
   display: inline-block;
 }
 
-.emotion-69 {
+.emotion-72 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -2758,40 +2863,40 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   height: 64px;
 }
 
-.emotion-69:disabled {
+.emotion-72:disabled {
   cursor: not-allowed;
 }
 
-.emotion-69 svg {
+.emotion-72 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-69:hover:not(:disabled) {
+.emotion-72:hover:not(:disabled) {
   background-color: #02509B;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
-.emotion-69:active:not(:disabled) {
+.emotion-72:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-69:disabled {
+.emotion-72:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
 
-.emotion-69:disabled svg {
+.emotion-72:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-69 svg {
+.emotion-72 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-82 {
+.emotion-85 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2814,7 +2919,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
     class="emotion-35"
   >
     <div
-      class="emotion-86"
+      class="emotion-89"
     >
       <div
         class="emotion-36"
@@ -3045,47 +3150,51 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
         class="emotion-44"
       >
         <div
-          class="emotion-84"
+          class="emotion-87"
         >
           <div
-            class="emotion-55"
+            class="emotion-58"
           >
             <div
-              class="emotion-54"
+              class="emotion-57"
               data-testid="volume-control"
             >
               <div
-                class="emotion-48"
+                class="emotion-49"
                 data-testid="min-label"
               >
                 <button
-                  class="emotion-47"
+                  class="emotion-48"
                   data-testid="mute-button"
                   type="button"
                 >
-                  <span
-                    class="emotion-46"
+                  <div
+                    class="emotion-47"
                   >
-                    <svg
-                      class="emotion-45"
-                      viewBox="0 0 24 24"
+                    <div
+                      class="emotion-46"
                     >
-                      <title>
-                        Volume down
-                      </title>
-                      <path
-                        d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-                      />
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                    </svg>
-                  </span>
+                      <svg
+                        class="emotion-45"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          Volume down
+                        </title>
+                        <path
+                          d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                      </svg>
+                    </div>
+                  </div>
                 </button>
               </div>
               <div
-                class="emotion-50"
+                class="emotion-51"
                 data-testid="volume-control-track"
                 values="1"
               >
@@ -3094,7 +3203,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
                   aria-valuemax="1"
                   aria-valuemin="0"
                   aria-valuenow="1"
-                  class="emotion-49"
+                  class="emotion-50"
                   draggable="false"
                   role="slider"
                   style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
@@ -3103,51 +3212,61 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
                 />
               </div>
               <div
-                class="emotion-53"
+                class="emotion-56"
                 data-testid="max-label"
               >
-                <span
-                  class="emotion-46"
+                <button
+                  class="emotion-48"
+                  data-testid="volumeup-button"
+                  type="button"
                 >
-                  <svg
-                    class="emotion-45"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-47"
                   >
-                    <title>
-                      Volume up
-                    </title>
-                    <path
-                      d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                    />
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                  </svg>
-                </span>
+                    <div
+                      class="emotion-46"
+                    >
+                      <svg
+                        class="emotion-45"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          Volume up
+                        </title>
+                        <path
+                          d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
               </div>
             </div>
           </div>
           <div
-            class="emotion-81"
+            class="emotion-84"
           >
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
-                class="emotion-59"
+                class="emotion-62"
                 data-testid="audio-player-skip-previous"
                 disabled=""
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -3166,21 +3285,21 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
               </button>
             </div>
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
-                class="emotion-59"
+                class="emotion-62"
                 data-testid="audio-player-replay"
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -3195,22 +3314,22 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
               </button>
             </div>
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
                 aria-pressed="false"
-                class="emotion-69"
+                class="emotion-72"
                 data-testid="audio-player-play-button"
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -3225,21 +3344,21 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
               </button>
             </div>
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
-                class="emotion-59"
+                class="emotion-62"
                 data-testid="audio-player-forward"
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -3261,22 +3380,22 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
               </button>
             </div>
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
-                class="emotion-59"
+                class="emotion-62"
                 data-testid="audio-player-skip-next"
                 disabled=""
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -3296,10 +3415,10 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
             </div>
           </div>
           <div
-            class="emotion-55"
+            class="emotion-58"
           >
             <div
-              class="emotion-82"
+              class="emotion-85"
             />
           </div>
         </div>
@@ -3317,7 +3436,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   margin: 0 auto;
 }
 
-.emotion-86 {
+.emotion-89 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -3334,25 +3453,25 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 }
 
 @media screen {
-  .emotion-86 {
+  .emotion-89 {
     margin: -24px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-86 {
+  .emotion-89 {
     margin: -24px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-86 {
+  .emotion-89 {
     margin: -24px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-86 {
+  .emotion-89 {
     margin: -24px 0px 0 0px;
   }
 }
@@ -4053,7 +4172,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   color: #535353;
 }
 
-.emotion-84 {
+.emotion-87 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4072,37 +4191,37 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   justify-content: space-between;
 }
 
-.emotion-55 {
+.emotion-58 {
   width: 100%;
   max-width: 184px;
   padding: 0 calc(24px / 2);
 }
 
 @media screen {
-  .emotion-55 {
+  .emotion-58 {
     display: none;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-55 {
+  .emotion-58 {
     display: none;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-55 {
+  .emotion-58 {
     display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-55 {
+  .emotion-58 {
     display: block;
   }
 }
 
-.emotion-54 {
+.emotion-57 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4127,7 +4246,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   position: relative;
 }
 
-.emotion-48 {
+.emotion-49 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -4136,36 +4255,114 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #535353;
   margin-right: 8px;
 }
 
-.emotion-47 {
+.emotion-48 {
+  display: inline-block;
+  position: relative;
+  width: auto;
   border: none;
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #0A68C1;
+  border-radius: 100vw;
+  min-height: 8px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  padding: 8px 8px;
+  width: 32px;
+  height: 32px;
+  margin: 8px 0;
 }
 
-.emotion-46 {
+.emotion-48:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-48 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-48:hover:not(:disabled) {
+  background-color: #e6f4ff;
+}
+
+.emotion-48:active:not(:disabled) {
+  background-color: #d5ebff;
+}
+
+.emotion-48:disabled {
+  color: #9c9c9c;
+  background-color: transparent;
+}
+
+.emotion-48:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-48 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-48::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 100%;
+  height: 48px;
+}
+
+.emotion-47 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-46 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
 }
 
 .emotion-45 {
@@ -4176,7 +4373,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   display: inline-block;
 }
 
-.emotion-50 {
+.emotion-51 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4193,7 +4390,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   width: 100%;
 }
 
-.emotion-49 {
+.emotion-50 {
   background-color: #FFFFFF;
   border-style: solid;
   border-color: #0A68C1;
@@ -4213,21 +4410,21 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   cursor: pointer;
 }
 
-.emotion-49 svg {
+.emotion-50 svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-49:hover:not(:disabled) {
+.emotion-50:hover:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-49:active:not(:disabled) svg {
+.emotion-50:active:not(:disabled) svg {
   fill: #535353;
   color: #535353;
 }
 
-.emotion-53 {
+.emotion-56 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -4236,11 +4433,10 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #535353;
   margin-left: 8px;
 }
 
-.emotion-81 {
+.emotion-84 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4264,7 +4460,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   margin-right: calc(-8px/2);
 }
 
-.emotion-60 {
+.emotion-63 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4279,7 +4475,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   color: #2e2e2e;
 }
 
-.emotion-59 {
+.emotion-62 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -4314,75 +4510,45 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   height: 48px;
 }
 
-.emotion-59:disabled {
+.emotion-62:disabled {
   cursor: not-allowed;
 }
 
-.emotion-59 svg {
+.emotion-62 svg {
   fill: #0A68C1;
   color: #0A68C1;
 }
 
-.emotion-59:hover:not(:disabled) {
+.emotion-62:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-59:active:not(:disabled) {
+.emotion-62:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-59:disabled {
+.emotion-62:disabled {
   color: #9c9c9c;
   background-color: transparent;
 }
 
-.emotion-59:disabled svg {
+.emotion-62:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-59 svg {
+.emotion-62 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-58 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-57 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-56 {
+.emotion-59 {
   fill: #2e2e2e;
   color: #2e2e2e;
   display: inline-block;
 }
 
-.emotion-69 {
+.emotion-72 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -4417,40 +4583,40 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   height: 64px;
 }
 
-.emotion-69:disabled {
+.emotion-72:disabled {
   cursor: not-allowed;
 }
 
-.emotion-69 svg {
+.emotion-72 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-69:hover:not(:disabled) {
+.emotion-72:hover:not(:disabled) {
   background-color: #02509B;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
-.emotion-69:active:not(:disabled) {
+.emotion-72:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-69:disabled {
+.emotion-72:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
 
-.emotion-69:disabled svg {
+.emotion-72:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-69 svg {
+.emotion-72 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-82 {
+.emotion-85 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4473,7 +4639,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
     class="emotion-35"
   >
     <div
-      class="emotion-86"
+      class="emotion-89"
     >
       <div
         class="emotion-36"
@@ -4704,47 +4870,51 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
         class="emotion-44"
       >
         <div
-          class="emotion-84"
+          class="emotion-87"
         >
           <div
-            class="emotion-55"
+            class="emotion-58"
           >
             <div
-              class="emotion-54"
+              class="emotion-57"
               data-testid="volume-control"
             >
               <div
-                class="emotion-48"
+                class="emotion-49"
                 data-testid="min-label"
               >
                 <button
-                  class="emotion-47"
+                  class="emotion-48"
                   data-testid="mute-button"
                   type="button"
                 >
-                  <span
-                    class="emotion-46"
+                  <div
+                    class="emotion-47"
                   >
-                    <svg
-                      class="emotion-45"
-                      viewBox="0 0 24 24"
+                    <div
+                      class="emotion-46"
                     >
-                      <title>
-                        Volume down
-                      </title>
-                      <path
-                        d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-                      />
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                    </svg>
-                  </span>
+                      <svg
+                        class="emotion-45"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          Volume down
+                        </title>
+                        <path
+                          d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                      </svg>
+                    </div>
+                  </div>
                 </button>
               </div>
               <div
-                class="emotion-50"
+                class="emotion-51"
                 data-testid="volume-control-track"
                 values="1"
               >
@@ -4753,7 +4923,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
                   aria-valuemax="1"
                   aria-valuemin="0"
                   aria-valuenow="1"
-                  class="emotion-49"
+                  class="emotion-50"
                   draggable="false"
                   role="slider"
                   style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
@@ -4762,50 +4932,60 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
                 />
               </div>
               <div
-                class="emotion-53"
+                class="emotion-56"
                 data-testid="max-label"
               >
-                <span
-                  class="emotion-46"
+                <button
+                  class="emotion-48"
+                  data-testid="volumeup-button"
+                  type="button"
                 >
-                  <svg
-                    class="emotion-45"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-47"
                   >
-                    <title>
-                      Volume up
-                    </title>
-                    <path
-                      d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                    />
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                  </svg>
-                </span>
+                    <div
+                      class="emotion-46"
+                    >
+                      <svg
+                        class="emotion-45"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          Volume up
+                        </title>
+                        <path
+                          d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
               </div>
             </div>
           </div>
           <div
-            class="emotion-81"
+            class="emotion-84"
           >
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
-                class="emotion-59"
+                class="emotion-62"
                 data-testid="audio-player-skip-previous"
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -4824,21 +5004,21 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
               </button>
             </div>
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
-                class="emotion-59"
+                class="emotion-62"
                 data-testid="audio-player-replay"
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -4853,22 +5033,22 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
               </button>
             </div>
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
                 aria-pressed="false"
-                class="emotion-69"
+                class="emotion-72"
                 data-testid="audio-player-play-button"
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -4883,21 +5063,21 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
               </button>
             </div>
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
-                class="emotion-59"
+                class="emotion-62"
                 data-testid="audio-player-forward"
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -4919,21 +5099,21 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
               </button>
             </div>
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
-                class="emotion-59"
+                class="emotion-62"
                 data-testid="audio-player-skip-next"
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -4953,10 +5133,10 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
             </div>
           </div>
           <div
-            class="emotion-55"
+            class="emotion-58"
           >
             <div
-              class="emotion-82"
+              class="emotion-85"
             />
           </div>
         </div>
@@ -4974,7 +5154,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   margin: 0 auto;
 }
 
-.emotion-86 {
+.emotion-89 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -4991,25 +5171,25 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 }
 
 @media screen {
-  .emotion-86 {
+  .emotion-89 {
     margin: -24px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-86 {
+  .emotion-89 {
     margin: -24px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-86 {
+  .emotion-89 {
     margin: -24px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-86 {
+  .emotion-89 {
     margin: -24px 0px 0 0px;
   }
 }
@@ -5710,7 +5890,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   color: #535353;
 }
 
-.emotion-84 {
+.emotion-87 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5729,37 +5909,37 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   justify-content: space-between;
 }
 
-.emotion-55 {
+.emotion-58 {
   width: 100%;
   max-width: 184px;
   padding: 0 calc(24px / 2);
 }
 
 @media screen {
-  .emotion-55 {
+  .emotion-58 {
     display: none;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-55 {
+  .emotion-58 {
     display: none;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-55 {
+  .emotion-58 {
     display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-55 {
+  .emotion-58 {
     display: block;
   }
 }
 
-.emotion-54 {
+.emotion-57 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5784,7 +5964,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   position: relative;
 }
 
-.emotion-48 {
+.emotion-49 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -5793,36 +5973,114 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #535353;
   margin-right: 8px;
 }
 
-.emotion-47 {
+.emotion-48 {
+  display: inline-block;
+  position: relative;
+  width: auto;
   border: none;
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #0A68C1;
+  border-radius: 100vw;
+  min-height: 8px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  padding: 8px 8px;
+  width: 32px;
+  height: 32px;
+  margin: 8px 0;
 }
 
-.emotion-46 {
+.emotion-48:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-48 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-48:hover:not(:disabled) {
+  background-color: #e6f4ff;
+}
+
+.emotion-48:active:not(:disabled) {
+  background-color: #d5ebff;
+}
+
+.emotion-48:disabled {
+  color: #9c9c9c;
+  background-color: transparent;
+}
+
+.emotion-48:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-48 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-48::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 100%;
+  height: 48px;
+}
+
+.emotion-47 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-46 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
 }
 
 .emotion-45 {
@@ -5833,7 +6091,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   display: inline-block;
 }
 
-.emotion-50 {
+.emotion-51 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5850,7 +6108,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   width: 100%;
 }
 
-.emotion-49 {
+.emotion-50 {
   background-color: #FFFFFF;
   border-style: solid;
   border-color: #0A68C1;
@@ -5870,21 +6128,21 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   cursor: pointer;
 }
 
-.emotion-49 svg {
+.emotion-50 svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-49:hover:not(:disabled) {
+.emotion-50:hover:not(:disabled) {
   border-width: 2px;
 }
 
-.emotion-49:active:not(:disabled) svg {
+.emotion-50:active:not(:disabled) svg {
   fill: #535353;
   color: #535353;
 }
 
-.emotion-53 {
+.emotion-56 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -5893,11 +6151,10 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #535353;
   margin-left: 8px;
 }
 
-.emotion-81 {
+.emotion-84 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5922,7 +6179,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   margin-right: calc(-12px/2);
 }
 
-.emotion-60 {
+.emotion-63 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5931,7 +6188,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   margin-right: calc(12px/2);
 }
 
-.emotion-59 {
+.emotion-62 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -5966,78 +6223,45 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   height: 48px;
 }
 
-.emotion-59:disabled {
+.emotion-62:disabled {
   cursor: not-allowed;
 }
 
-.emotion-59 svg {
+.emotion-62 svg {
   fill: #0A68C1;
   color: #0A68C1;
 }
 
-.emotion-59:hover:not(:disabled) {
+.emotion-62:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-59:active:not(:disabled) {
+.emotion-62:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-59:disabled {
+.emotion-62:disabled {
   color: #9c9c9c;
   background-color: transparent;
 }
 
-.emotion-59:disabled svg {
+.emotion-62:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-59 svg {
+.emotion-62 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-58 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-57 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-56 {
+.emotion-59 {
   fill: #2e2e2e;
   color: #2e2e2e;
   display: inline-block;
 }
 
-.emotion-69 {
+.emotion-72 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -6072,40 +6296,40 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   height: 64px;
 }
 
-.emotion-69:disabled {
+.emotion-72:disabled {
   cursor: not-allowed;
 }
 
-.emotion-69 svg {
+.emotion-72 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-69:hover:not(:disabled) {
+.emotion-72:hover:not(:disabled) {
   background-color: #02509B;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
-.emotion-69:active:not(:disabled) {
+.emotion-72:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-69:disabled {
+.emotion-72:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
 
-.emotion-69:disabled svg {
+.emotion-72:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-69 svg {
+.emotion-72 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-82 {
+.emotion-85 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6128,7 +6352,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
     class="emotion-35"
   >
     <div
-      class="emotion-86"
+      class="emotion-89"
     >
       <div
         class="emotion-36"
@@ -6359,47 +6583,51 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
         class="emotion-44"
       >
         <div
-          class="emotion-84"
+          class="emotion-87"
         >
           <div
-            class="emotion-55"
+            class="emotion-58"
           >
             <div
-              class="emotion-54"
+              class="emotion-57"
               data-testid="volume-control"
             >
               <div
-                class="emotion-48"
+                class="emotion-49"
                 data-testid="min-label"
               >
                 <button
-                  class="emotion-47"
+                  class="emotion-48"
                   data-testid="mute-button"
                   type="button"
                 >
-                  <span
-                    class="emotion-46"
+                  <div
+                    class="emotion-47"
                   >
-                    <svg
-                      class="emotion-45"
-                      viewBox="0 0 24 24"
+                    <div
+                      class="emotion-46"
                     >
-                      <title>
-                        Volume down
-                      </title>
-                      <path
-                        d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-                      />
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                    </svg>
-                  </span>
+                      <svg
+                        class="emotion-45"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          Volume down
+                        </title>
+                        <path
+                          d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                      </svg>
+                    </div>
+                  </div>
                 </button>
               </div>
               <div
-                class="emotion-50"
+                class="emotion-51"
                 data-testid="volume-control-track"
                 values="1"
               >
@@ -6408,7 +6636,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
                   aria-valuemax="1"
                   aria-valuemin="0"
                   aria-valuenow="1"
-                  class="emotion-49"
+                  class="emotion-50"
                   draggable="false"
                   role="slider"
                   style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
@@ -6417,50 +6645,60 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
                 />
               </div>
               <div
-                class="emotion-53"
+                class="emotion-56"
                 data-testid="max-label"
               >
-                <span
-                  class="emotion-46"
+                <button
+                  class="emotion-48"
+                  data-testid="volumeup-button"
+                  type="button"
                 >
-                  <svg
-                    class="emotion-45"
-                    viewBox="0 0 24 24"
+                  <div
+                    class="emotion-47"
                   >
-                    <title>
-                      Volume up
-                    </title>
-                    <path
-                      d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                    />
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                  </svg>
-                </span>
+                    <div
+                      class="emotion-46"
+                    >
+                      <svg
+                        class="emotion-45"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          Volume up
+                        </title>
+                        <path
+                          d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
               </div>
             </div>
           </div>
           <div
-            class="emotion-81"
+            class="emotion-84"
           >
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
-                class="emotion-59"
+                class="emotion-62"
                 data-testid="audio-player-skip-previous"
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -6479,21 +6717,21 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
               </button>
             </div>
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
-                class="emotion-59"
+                class="emotion-62"
                 data-testid="audio-player-replay"
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -6508,22 +6746,22 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
               </button>
             </div>
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
                 aria-pressed="false"
-                class="emotion-69"
+                class="emotion-72"
                 data-testid="audio-player-play-button"
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -6538,21 +6776,21 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
               </button>
             </div>
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
-                class="emotion-59"
+                class="emotion-62"
                 data-testid="audio-player-forward"
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -6574,21 +6812,21 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
               </button>
             </div>
             <div
-              class="emotion-60"
+              class="emotion-63"
             >
               <button
-                class="emotion-59"
+                class="emotion-62"
                 data-testid="audio-player-skip-next"
                 type="button"
               >
                 <div
-                  class="emotion-58"
+                  class="emotion-47"
                 >
                   <div
-                    class="emotion-57"
+                    class="emotion-46"
                   >
                     <svg
-                      class="emotion-56"
+                      class="emotion-59"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -6608,10 +6846,10 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
             </div>
           </div>
           <div
-            class="emotion-55"
+            class="emotion-58"
           >
             <div
-              class="emotion-82"
+              class="emotion-85"
             />
           </div>
         </div>

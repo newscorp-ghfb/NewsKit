@@ -188,6 +188,7 @@ interface StyledSliderLabelProps
   extends Pick<SliderProps, 'vertical' | 'disabled' | 'labelPosition'>,
     Pick<ThumbLabelProps, '$stylePreset' | '$thumbSize'> {
   labelType: 'min' | 'max';
+  isText: boolean;
 }
 
 const getLabelMargin = ({
@@ -219,7 +220,8 @@ const getLabelMargin = ({
 export const StyledSliderLabel = styled.div<StyledSliderLabelProps>`
   ${getTypePresetFromTheme('caption010')};
 
-  ${({disabled}) =>
+  ${({isText, disabled}) =>
+    isText &&
     getStylePresetFromTheme(labelStylePresetDefault, '$stylePreset', {
       isDisabled: disabled,
       borderRadiusSize: 'sizing020',

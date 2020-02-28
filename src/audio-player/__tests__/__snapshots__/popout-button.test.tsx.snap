@@ -23,18 +23,18 @@ exports[`PopoutButton popout button opens window to href 1`] = `
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: 100vw;
-  min-height: 16px;
+  min-height: 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.75;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 16px;
-  width: 64px;
-  height: 64px;
+  padding: 12px 12px;
+  width: 48px;
+  height: 48px;
 }
 
 .emotion-3:disabled {
@@ -66,8 +66,8 @@ exports[`PopoutButton popout button opens window to href 1`] = `
 }
 
 .emotion-3 svg {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-2 {
@@ -162,18 +162,18 @@ exports[`PopoutButton renders popout button 1`] = `
   background-color: #0A68C1;
   color: #FFFFFF;
   border-radius: 100vw;
-  min-height: 16px;
+  min-height: 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.75;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 16px;
-  width: 64px;
-  height: 64px;
+  padding: 12px 12px;
+  width: 48px;
+  height: 48px;
 }
 
 .emotion-3:disabled {
@@ -205,8 +205,8 @@ exports[`PopoutButton renders popout button 1`] = `
 }
 
 .emotion-3 svg {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-2 {

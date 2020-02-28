@@ -1,5 +1,5 @@
 import React, {useState, useCallback, useMemo} from 'react';
-import {StyledButton, StyledIconWrapper} from './styled';
+import {IconButton, ButtonSize} from '../button';
 import {VolumeControlProps} from './types';
 import {Slider} from '../slider';
 import {VolumeUp, VolumeDown, VolumeMute} from '../icons';
@@ -9,34 +9,32 @@ interface MuteButtonProps {
   volume: number;
   unMutedVolume: number;
   onChange: VolumeControlProps['onChange'];
+  $volumeControlButtonStylePreset?: string;
 }
 
 const iconSize: IconSizeKeys = 'iconSize020';
+const volumeControlButtonStyleDefault = 'iconButtonMinimalPrimary';
 
 const MuteButton: React.FC<MuteButtonProps> = ({
   volume,
   unMutedVolume,
   onChange,
+  $volumeControlButtonStylePreset,
 }) => (
-  <StyledButton
-    type="button"
+  <IconButton
     data-testid="mute-button"
     onClick={() => (volume === 0 ? onChange(unMutedVolume || 1) : onChange(0))}
+    $size={ButtonSize.Small}
+    $stylePreset={
+      $volumeControlButtonStylePreset || volumeControlButtonStyleDefault
+    }
   >
-    <StyledIconWrapper>
-      {volume === 0 ? (
-        <VolumeMute $size={iconSize} />
-      ) : (
-        <VolumeDown $size={iconSize} />
-      )}
-    </StyledIconWrapper>
-  </StyledButton>
-);
-
-const maxLabel = () => (
-  <StyledIconWrapper>
-    <VolumeUp $size={iconSize} />
-  </StyledIconWrapper>
+    {volume === 0 ? (
+      <VolumeMute $size={iconSize} />
+    ) : (
+      <VolumeDown $size={iconSize} />
+    )}
+  </IconButton>
 );
 
 export const VolumeControl: React.FC<VolumeControlProps> = ({
@@ -45,6 +43,7 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
   onChange,
   $trackSize,
   $thumbSize,
+  $sliderLabelsStylePreset: $volumeControlButtonStylePreset,
   ...presets
 }) => {
   const [unMutedVolume, setUnMutedVolume] = useState(volume);
@@ -61,9 +60,26 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
         volume={volume}
         unMutedVolume={unMutedVolume}
         onChange={onChange}
+        $volumeControlButtonStylePreset={$volumeControlButtonStylePreset}
       />
     ),
-    [volume, unMutedVolume, onChange],
+    [volume, unMutedVolume, onChange, $volumeControlButtonStylePreset],
+  );
+
+  const maxLabel = useCallback(
+    () => (
+      <IconButton
+        data-testid="volumeup-button"
+        onClick={() => onChange(1)}
+        $size={ButtonSize.Small}
+        $stylePreset={
+          $volumeControlButtonStylePreset || volumeControlButtonStyleDefault
+        }
+      >
+        <VolumeUp $size={iconSize} />
+      </IconButton>
+    ),
+    [onChange, $volumeControlButtonStylePreset],
   );
 
   return (
