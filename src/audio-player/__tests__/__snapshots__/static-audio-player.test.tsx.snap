@@ -880,7 +880,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 }
 
 .emotion-48:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-48:disabled {
@@ -1091,7 +1091,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 }
 
 .emotion-62:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-62:disabled {
@@ -2593,7 +2593,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 }
 
 .emotion-48:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-48:disabled {
@@ -2804,7 +2804,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 }
 
 .emotion-62:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-62:disabled {
@@ -4308,7 +4308,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 }
 
 .emotion-48:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-48:disabled {
@@ -4524,7 +4524,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 }
 
 .emotion-62:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-62:disabled {
@@ -6026,7 +6026,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 }
 
 .emotion-48:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-48:disabled {
@@ -6237,7 +6237,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 }
 
 .emotion-62:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-62:disabled {

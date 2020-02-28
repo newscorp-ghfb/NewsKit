@@ -275,7 +275,7 @@ exports[`Flag renders a solid flag with an icon 1`] = `
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   cursor: default;
-  background-color: #503b8c;
+  background-color: #471e79;
   color: #FFFFFF;
 }
 
@@ -407,7 +407,7 @@ exports[`Flag renders with Large size 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
-  background-color: #503b8c;
+  background-color: #471e79;
   color: #FFFFFF;
 }
 
@@ -456,7 +456,7 @@ exports[`Flag renders with Small size 1`] = `
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   cursor: default;
-  background-color: #503b8c;
+  background-color: #471e79;
   color: #FFFFFF;
 }
 
@@ -535,7 +535,7 @@ exports[`Flag renders with default styles 1`] = `
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   cursor: default;
-  background-color: #503b8c;
+  background-color: #471e79;
   color: #FFFFFF;
 }
 

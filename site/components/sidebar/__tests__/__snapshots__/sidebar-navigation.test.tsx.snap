@@ -59,7 +59,7 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
 
 .emotion-1:hover {
   color: #2e2e2e;
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-1:focus {
@@ -329,7 +329,7 @@ exports[`Sidebar navigation on group 1 page after click group1 menu collapses 1`
 
 .emotion-1:hover {
   color: #2e2e2e;
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-1:focus {
@@ -504,7 +504,7 @@ exports[`Sidebar navigation on group 1 page after enter key group1 menu collapse
 
 .emotion-1:hover {
   color: #2e2e2e;
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-1:focus {
@@ -679,7 +679,7 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
 
 .emotion-1:hover {
   color: #2e2e2e;
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-1:focus {
@@ -764,7 +764,7 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
 
 .emotion-4:hover {
   color: #2e2e2e;
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-4:focus {
@@ -1002,7 +1002,7 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
 
 .emotion-1:hover {
   color: #2e2e2e;
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-1:focus {
@@ -1087,7 +1087,7 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
 
 .emotion-2:hover {
   color: #2e2e2e;
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-2:focus {
@@ -1275,7 +1275,7 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
 
 .emotion-1:hover {
   color: #2e2e2e;
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-1:focus {
@@ -1450,7 +1450,7 @@ exports[`Sidebar navigation on route level renders correctly without given path 
 
 .emotion-1:hover {
   color: #2e2e2e;
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-1:focus {

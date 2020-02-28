@@ -5,7 +5,7 @@ export const createThemeColors = (primitives: ColorPrimitives) => ({
 
   // Button
 
-  buttonFill: primitives.inkBrand,
+  buttonFill: primitives.inkBrand010,
   buttonText: primitives.inkInverse,
   buttonDisabledFill: primitives.disabled,
   buttonDisabledText: primitives.inkNonEssential,
@@ -27,7 +27,7 @@ export const createThemeColors = (primitives: ColorPrimitives) => ({
   tagFill: primitives.interface020,
   tagBorder: primitives.interface030,
   tagText: primitives.inkSubtle,
-  tagHoverFill: primitives.interactive130,
+  tagHoverFill: primitives.interactive020,
   tagHoverBorder: primitives.interface040,
   tagHoverText: primitives.inkBase,
   tagDisabledFill: primitives.disabled,
@@ -41,8 +41,8 @@ export const createThemeColors = (primitives: ColorPrimitives) => ({
   shareIconBorder: primitives.inkSubtle,
   shareIconBackground: primitives.interface020,
 
-  shareIconHoverFill: primitives.inkBrand,
-  shareIconHoverBorder: primitives.inkBrand,
+  shareIconHoverFill: primitives.inkBrand010,
+  shareIconHoverBorder: primitives.inkBrand010,
   shareIconHoverBackground: primitives.interface020,
 
   // Article

@@ -89,7 +89,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-3:disabled {
@@ -404,7 +404,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-3:disabled {
@@ -719,7 +719,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-3:disabled {
@@ -997,7 +997,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-3:disabled {
@@ -1348,7 +1348,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-3:disabled {

@@ -41,7 +41,7 @@ const StyledMockTab = styled.span`
   padding: ${getSizingFromTheme('sizing040')};
   border-bottom-style: solid;
   border-bottom-width: ${getBorderFromTheme('borderWidth020')};
-  border-bottom-color: ${getColorFromTheme('inkBrand')};
+  border-bottom-color: ${getColorFromTheme('inkBrand010')};
 `;
 
 const isMultiChoiceKnobConfig = (

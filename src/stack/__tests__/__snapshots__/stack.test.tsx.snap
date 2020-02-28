@@ -38,7 +38,7 @@ exports[`Stack renders stack when no properties are set 1`] = `
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -164,7 +164,7 @@ exports[`Stack renders stack with flex grow and shrink 1`] = `
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -288,7 +288,7 @@ exports[`Stack renders stack with flex grow and shrink 2`] = `
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -412,7 +412,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -561,7 +561,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -710,7 +710,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -889,7 +889,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -1064,7 +1064,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -1243,7 +1243,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -1418,7 +1418,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -1563,7 +1563,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -1708,7 +1708,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -1853,7 +1853,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -1998,7 +1998,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -2143,7 +2143,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -2294,7 +2294,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -2443,7 +2443,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -2592,7 +2592,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -2771,7 +2771,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -2946,7 +2946,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -3125,7 +3125,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -3300,7 +3300,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -3445,7 +3445,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -3590,7 +3590,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -3735,7 +3735,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -3880,7 +3880,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -4025,7 +4025,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -4176,7 +4176,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -4325,7 +4325,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -4474,7 +4474,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -4653,7 +4653,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -4828,7 +4828,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -5007,7 +5007,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -5182,7 +5182,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -5327,7 +5327,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -5472,7 +5472,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -5617,7 +5617,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -5762,7 +5762,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -5907,7 +5907,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -6058,7 +6058,7 @@ exports[`Stack renders where the stack flow is invalid 1`] = `
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -6203,7 +6203,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -6352,7 +6352,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -6501,7 +6501,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -6680,7 +6680,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -6855,7 +6855,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -7034,7 +7034,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -7209,7 +7209,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -7354,7 +7354,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -7499,7 +7499,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -7644,7 +7644,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -7789,7 +7789,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -7934,7 +7934,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -8085,7 +8085,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -8234,7 +8234,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -8383,7 +8383,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -8562,7 +8562,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -8737,7 +8737,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -8916,7 +8916,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -9091,7 +9091,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -9236,7 +9236,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -9400,7 +9400,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -9526,7 +9526,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -9671,7 +9671,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -9816,7 +9816,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -9971,7 +9971,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -10120,7 +10120,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -10269,7 +10269,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -10448,7 +10448,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -10623,7 +10623,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -10802,7 +10802,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -10977,7 +10977,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -11122,7 +11122,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -11267,7 +11267,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -11412,7 +11412,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -11560,7 +11560,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }
@@ -11705,7 +11705,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   letter-spacing: 0;
   cursor: default;
   border-style: solid;
-  border-color: #e4e4e4;
+  border-color: #535353;
   border-width: 1px;
   color: #2e2e2e;
 }

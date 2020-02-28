@@ -718,7 +718,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-48:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-48:disabled {
@@ -929,7 +929,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-62:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-62:disabled {
@@ -2437,7 +2437,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-48:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-48:disabled {
@@ -2648,7 +2648,7 @@ exports[`Live AudioPlayer onPlay / onPause renders play button with correct stat
 }
 
 .emotion-62:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-62:disabled {
@@ -4156,7 +4156,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 }
 
 .emotion-48:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-48:disabled {
@@ -4367,7 +4367,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after canPlay event fi
 }
 
 .emotion-62:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-62:disabled {
@@ -5875,7 +5875,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 }
 
 .emotion-48:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-48:disabled {
@@ -6086,7 +6086,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after pause event fire
 }
 
 .emotion-62:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-62:disabled {
@@ -7594,7 +7594,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 }
 
 .emotion-48:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-48:disabled {
@@ -7805,7 +7805,7 @@ exports[`Live AudioPlayer onPlay / onPause renders player after play event fires
 }
 
 .emotion-62:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-62:disabled {
@@ -9313,7 +9313,7 @@ exports[`Live AudioPlayer render default player 1`] = `
 }
 
 .emotion-34:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-34:disabled {
@@ -9524,7 +9524,7 @@ exports[`Live AudioPlayer render default player 1`] = `
 }
 
 .emotion-48:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-48:disabled {
@@ -10671,7 +10671,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 .emotion-48:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-48:disabled {
@@ -10882,7 +10882,7 @@ exports[`Live AudioPlayer render live player 1`] = `
 }
 
 .emotion-62:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-62:disabled {
@@ -12381,7 +12381,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
 }
 
 .emotion-48:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-48:disabled {
@@ -12592,7 +12592,7 @@ exports[`Live AudioPlayer render player with popout link 1`] = `
 }
 
 .emotion-62:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-62:disabled {
@@ -14101,7 +14101,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 }
 
 .emotion-50:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-50:disabled {
@@ -14312,7 +14312,7 @@ exports[`Live AudioPlayer render tagged player 1`] = `
 }
 
 .emotion-64:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-64:disabled {

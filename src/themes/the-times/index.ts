@@ -13,7 +13,7 @@ export const theTimesTheme = createTheme('the-times-theme', {
     interface040: '#DBDBDB',
     interface050: '#272D34',
 
-    semanticNegative010: '#C51D24',
+    semanticNegative030: '#C51D24',
   },
   fontOverrides: {
     fontFamily1: 'TimesModern-Regular',

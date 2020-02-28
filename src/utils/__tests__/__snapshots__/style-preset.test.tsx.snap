@@ -17,7 +17,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-0:disabled {
@@ -54,7 +54,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with bo
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-0:disabled {
@@ -206,7 +206,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary without
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 <div
@@ -215,7 +215,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary without
 </DocumentFragment>
 `;
 
-exports[`Surface Helper getStylePresetFromTheme with override to interactive020 1`] = `
+exports[`Surface Helper getStylePresetFromTheme with override to interactive040 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF00FF;

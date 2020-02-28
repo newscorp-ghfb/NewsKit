@@ -22,7 +22,7 @@ interface KickerProps {
 
 const Kicker = styled(Heading)<KickerProps>`
   display: inline;
-  color: ${getColorFromTheme('inkBrand', '$color')};
+  color: ${getColorFromTheme('inkBrand010', '$color')};
   text-transform: uppercase;
 `;
 

@@ -28,16 +28,16 @@ describe('Surface Helper', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('getStylePresetFromTheme with override to interactive020', () => {
+  test('getStylePresetFromTheme with override to interactive040', () => {
     const fragment = renderToFragmentWithTheme(
       OverridableTestSurface,
       {
-        stylePresetToUse: 'interactive020',
+        stylePresetToUse: 'interactive040',
       },
       createTheme('test-style-preset', {
         themeOverrider: () => ({
           stylePresets: {
-            interactive020: {
+            interactive040: {
               base: {
                 backgroundColor: '#FF00FF',
               },

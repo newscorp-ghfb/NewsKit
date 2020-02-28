@@ -40,8 +40,8 @@ export const component = () => (
             <Icon $size="iconSize030" />
             <Icon $size="iconSize040" />
             <Icon $size="iconSize050" />
-            <Icon $color="semanticNegative010" $size="iconSize050" />
-            <Icon $color="semanticPositive010" $size="iconSize050" />
+            <Icon $color="semanticNegative030" $size="iconSize050" />
+            <Icon $color="semanticPositive030" $size="iconSize050" />
             <Icon $color="semanticNotice010" $size="iconSize050" />
             <Icon $color="semanticInformative010" $size="iconSize050" />
             <Constrain>

@@ -36,17 +36,17 @@ Not all properties will style a given component, you should refer to specific co
 ```
 const iconButtonSolidPrimary: StylePresetStates = {
   base: {
-    backgroundColor: colorPrimitives.interactive010,
+    backgroundColor: colorPrimitives.interactive030,
     borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
     color: colorPrimitives.inkInverse,
     iconColor: colorPrimitives.inkInverse,
   },
   hover: {
-    backgroundColor: colorPrimitives.interactive020,
+    backgroundColor: colorPrimitives.interactive040,
     boxShadow: shadowPrimitives.shadow020,
   },
   active: {
-    backgroundColor: colorPrimitives.interactive030,
+    backgroundColor: colorPrimitives.interactive050,
   },
   disabled: {
     backgroundColor: colorPrimitives.disabled,
@@ -68,7 +68,7 @@ These can be overridden in a child theme.
 Often we will only want to update a specific instance of a component to style in a different manner, in this scenario we can pass a style preset to a component.
 Nearly all visual components will take at least one style preset. It may help to think of this as applying a class to an element in HTML.
 
-<Code>{'<Paragraph $stylePreset="interactive020" />'}</Code>
+<Code>{'<Paragraph $stylePreset="interactive040" />'}</Code>
 
 If no style preset is provided, the button will render in the default state. Configuring this is detailed above.
 

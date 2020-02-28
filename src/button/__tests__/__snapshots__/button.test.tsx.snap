@@ -2045,7 +2045,7 @@ exports[`Button renders with different style preset 1`] = `
 }
 
 .emotion-1:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #6EB2F2;
 }
 
 .emotion-1:disabled {

@@ -14,7 +14,7 @@ export const LiveTag = styled(Tag)`
   height: ${getSizingFromTheme('sizing050')};
   padding: 0;
   text-align: center;
-  background-color: ${getColorFromTheme('semanticNegative010')};
+  background-color: ${getColorFromTheme('semanticNegative030')};
   color: ${getColorFromTheme('inkInverse')};
   text-transform: uppercase;
 `;

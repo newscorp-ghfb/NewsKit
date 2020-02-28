@@ -43,7 +43,7 @@ export const StyledInput = styled.input`
 
   :focus {
     outline: none;
-    border-color: ${getColorFromTheme('inkBrand')};
+    border-color: ${getColorFromTheme('inkBrand010')};
   }
 `;
 

@@ -56,7 +56,7 @@ const PropType = styled.span`
 const PropRequiredFlag = styled.span`
   padding: ${getSizingFromTheme('sizing010')};
   border-radius: ${({theme}) => theme.borderRadius.semiRounded.sizing020};
-  background: ${getColorFromTheme('semanticNegative010')};
+  background: ${getColorFromTheme('semanticNegative030')};
   color: ${getColorFromTheme('white')};
   margin: 0 ${getSizingFromTheme('sizing030')};
 
