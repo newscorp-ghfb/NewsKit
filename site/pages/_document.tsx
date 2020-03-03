@@ -38,7 +38,12 @@ export default class MyDocument extends Document<Props> {
           </style>
           {helmet.script.toComponent()}
           <Meta />
-          <Consent accountId="259" reactHelmet={Helmet} />
+          <Consent
+            sourcePointConfig={{
+              accountId: '259',
+            }}
+            reactHelmet={Helmet}
+          />
         </Head>
         <body>
           <Tealium

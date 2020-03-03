@@ -1,7 +1,7 @@
 import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import Prop from '../../components/prop';
-import {CodeFromFile} from '../../components/code';
+import {Code, CodeFromFile} from '../../components/code';
 import {LegacyBlock} from '../../components/legacy-block';
 
 export default Layout;
@@ -23,14 +23,20 @@ To utilise this component you will need to have a [Sourcepoint](https://www.sour
 ## Props
 
 <LegacyBlock $marginTop="sizing040">
-  <Prop required name="accountId" type="string" required>
-    Your Sourcepoint account id.
+  <Prop name='sourcePointConfig' type="SourcePointConfigProps"  required>
+    The config config that initialises sourcePoint.
+    Required parameters: <b>accountId</b>.
+    optional Parameters: <b>siteHref, privacyManagerId, siteId, targetingParams, mmsDomain, waitForConsent</b>. See <a href="https://documentation.sourcepoint.com/web-implementation/sourcepoint-set-up-and-configuration-v2">Sourcepoint documentation</a> for full description of options.
+  </Prop>
+  <Prop name="accountId" type="string">
+    <b>This Prop is deprecated on the component and should be set in the sourcepoint config.</b> Your Sourcepoint account id.
   </Prop>
   <Prop
     name="mmsDomain"
     type="string"
     default="https://message{accountId}.sp-prod.net"
   >
+    <b>This Prop is deprecated on the component and should be set in the sourcepoint config. </b>
     Can be changed to a CNAMED subdomain in order to deliver 1st party cookies
     on Safari web browser (due to Safari’s ITP). Changing the mmsDomain is
     optional! More information about setting up an mmsDomain below.
@@ -41,11 +47,57 @@ To utilise this component you will need to have a [Sourcepoint](https://www.sour
   </Prop>
   <Prop name="reactHelmet" type="react-helmet Helmet Component">
     By default the Consent component will inject its scripts by rendering script
-    tags. However, if your project is using [React
-    Helmet](https://www.npmjs.com/package/react-helmet) you can pass the Helmet
+    tags. However, if your project is using &nbsp;
+    <a href="https://www.npmjs.com/package/react-helmet" target="_blank">React Helmet</a>
+    &nbsp; you can pass the Helmet
     component in and the scripts will render using that component.
   </Prop>
 </LegacyBlock>
+
+## How to run on localhost
+
+In order to run the consent component locally, you will need to edit the Hosts file.
+The steps to accomplish that depends on your OS.
+You can find more detailed information on how to do that
+[here](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/).
+
+After you open the hosts file, look for a line like that looks like this:
+
+`127.0.0.1 localhost`
+
+ It is not mandatory to have it, but if you do comment the line using `#` sign:
+
+`#127.0.0.1 localhost`
+
+Add a new line with your local address (127.0.0.1) and the domain name instead of `localhost`:
+
+`127.0.0.1 example-domain.com`
+
+In the case of the newskit site it would look like this:
+
+`127.0.0.1 newskit.co.uk`
+
+This will result in a redirect to your `localhost` when attempting to hit the said domain.
+
+Now would be a good time to start your localhost server if it is not running.
+
+*Note: if you are running your localhost on a port, then you have to add the port after the domain when you open it on the browser:*
+
+`example-domain.com:8080`
+
+**Note: Don't forget to revert your changes in the Hosts file after you are finished with running consent locally**
+
+The minimum parameters of the Consent component to run locally are a sourcePointConfig object with accountId.
+
+<Code>
+  {`<Consent
+    sourcePointConfig={{
+      accountId: accountId,
+    }}
+  />`}
+</Code>
+
+
 
 # AMP
 
@@ -58,14 +110,19 @@ Note the use of the AMP `Head` component. The `Consent` component must be used a
 ## Props With AMP
 
 <LegacyBlock $marginTop="sizing040">
-  <Prop required name="accountId" type="string">
-    Your sourcepoint account id.
+  <Prop name='sourcePointConfig' type="SourcePointConfigProps" required>
+    The config config that initialises sourcePoint.
+    Required parameters: <b>accountId, siteName</b>.
+    optional Parameters: <b>privacyManagerId, siteId and targetingParams</b>.
   </Prop>
-  <Prop required name="siteName" type="string">
-    The name of your site.
+   <Prop name="accountId" type="string">
+    <b>This Prop is deprecated on the component and should be set in the sourcepoint config. </b>Your Sourcepoint account id.
   </Prop>
-  <Prop required name="privacyManagerId" type="string">
-    This attribute corresponds to the ID of the privacy manager used for this
+  <Prop name="siteName" type="string">
+    <b>This Prop is deprecated on the component and should be set in the sourcepoint config. </b>The name of your site.
+  </Prop>
+  <Prop name="privacyManagerId" type="string">
+    <b>This Prop is deprecated on the component and should be set in the sourcepoint config. </b> This attribute corresponds to the ID of the privacy manager used for this
     site.
   </Prop>
   <Prop name="postPromptUI" type="string" default="privacy-settings-prompt">

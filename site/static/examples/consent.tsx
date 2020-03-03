@@ -1,5 +1,5 @@
 import { Consent } from 'newskit';
 
 <head>
-  <Consent accountId="12345" />
+<Consent sourcePointConfig={{ accountId: 'test-accountId' }} />
 </head>;

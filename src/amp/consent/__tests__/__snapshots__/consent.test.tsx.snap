@@ -1,5 +1,109 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Consent renders with deprecated prop accountId 1`] = `
+<DocumentFragment>
+  <amp-consent
+    id="consent"
+    layout="nodisplay"
+    type="SourcePoint"
+  >
+    <script
+      type="application/json"
+    >
+      {"clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","postPromptUI":"privacy-settings-prompt"}}
+    </script>
+    <div
+      id="privacy-settings-prompt"
+    >
+      <button
+        on="tap:consent.prompt(consent=SourcePoint)"
+        type="submit"
+      >
+        Privacy Settings
+      </button>
+    </div>
+  </amp-consent>
+</DocumentFragment>
+`;
+
+exports[`Consent renders with optional prop privacyManagerId 1`] = `
+<DocumentFragment>
+  <amp-consent
+    id="consent"
+    layout="nodisplay"
+    type="SourcePoint"
+  >
+    <script
+      type="application/json"
+    >
+      {"clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","privacyManagerId":"test-privacymanagerid","postPromptUI":"privacy-settings-prompt"}}
+    </script>
+    <div
+      id="privacy-settings-prompt"
+    >
+      <button
+        on="tap:consent.prompt(consent=SourcePoint)"
+        type="submit"
+      >
+        Privacy Settings
+      </button>
+    </div>
+  </amp-consent>
+</DocumentFragment>
+`;
+
+exports[`Consent renders with optional prop siteId 1`] = `
+<DocumentFragment>
+  <amp-consent
+    id="consent"
+    layout="nodisplay"
+    type="SourcePoint"
+  >
+    <script
+      type="application/json"
+    >
+      {"clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","postPromptUI":"privacy-settings-prompt","siteId":"test-siteId"}}
+    </script>
+    <div
+      id="privacy-settings-prompt"
+    >
+      <button
+        on="tap:consent.prompt(consent=SourcePoint)"
+        type="submit"
+      >
+        Privacy Settings
+      </button>
+    </div>
+  </amp-consent>
+</DocumentFragment>
+`;
+
+exports[`Consent renders with optional prop targetingParams 1`] = `
+<DocumentFragment>
+  <amp-consent
+    id="consent"
+    layout="nodisplay"
+    type="SourcePoint"
+  >
+    <script
+      type="application/json"
+    >
+      {"clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","postPromptUI":"privacy-settings-prompt","targetingParams":{"foo":"bar"}}}
+    </script>
+    <div
+      id="privacy-settings-prompt"
+    >
+      <button
+        on="tap:consent.prompt(consent=SourcePoint)"
+        type="submit"
+      >
+        Privacy Settings
+      </button>
+    </div>
+  </amp-consent>
+</DocumentFragment>
+`;
+
 exports[`Consent renders with postPromptUI 1`] = `
 <DocumentFragment>
   <amp-consent
@@ -10,7 +114,7 @@ exports[`Consent renders with postPromptUI 1`] = `
     <script
       type="application/json"
     >
-      {"clientConfig":{"accountId":"test","siteName":"product","privacyManagerId":"privacy","postPromptUI":"postPrompt"}}
+      {"clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","postPromptUI":"postPrompt"}}
     </script>
     <div
       id="postPrompt"
@@ -36,7 +140,7 @@ exports[`Consent renders without postPromptUI 1`] = `
     <script
       type="application/json"
     >
-      {"clientConfig":{"accountId":"test","siteName":"product","privacyManagerId":"privacy","postPromptUI":"privacy-settings-prompt"}}
+      {"clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","postPromptUI":"privacy-settings-prompt"}}
     </script>
     <div
       id="privacy-settings-prompt"
