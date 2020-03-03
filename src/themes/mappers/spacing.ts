@@ -52,18 +52,20 @@ export const createPaddingPresets = (s: Sizing) => ({
   spaceInset000Squish: s.sizing000,
   spaceInset010Squish: `${s.sizing010} ${s.sizing020}`,
   spaceInset020Squish: `${s.sizing020} ${s.sizing030}`,
-  spaceInset030Squish: `${s.sizing040} ${s.sizing050}`,
-  spaceInset040Squish: `${s.sizing050} ${s.sizing060}`,
-  spaceInset050Squish: `${s.sizing060} ${s.sizing080}`,
+  spaceInset030Squish: `${s.sizing030} ${s.sizing040}`,
+  spaceInset040Squish: `${s.sizing040} ${s.sizing050}`,
+  spaceInset050Squish: `${s.sizing050} ${s.sizing060}`,
+  spaceInset060Squish: `${s.sizing060} ${s.sizing080}`,
 
   // Stretch Inset
 
   spaceInset000Stretch: s.sizing000,
   spaceInset010Stretch: `${s.sizing020} ${s.sizing010}`,
   spaceInset020Stretch: `${s.sizing030} ${s.sizing020}`,
-  spaceInset030Stretch: `${s.sizing050} ${s.sizing040}`,
-  spaceInset040Stretch: `${s.sizing060} ${s.sizing050}`,
-  spaceInset050Stretch: `${s.sizing080} ${s.sizing060}`,
+  spaceInset030Stretch: `${s.sizing040} ${s.sizing030}`,
+  spaceInset040Stretch: `${s.sizing050} ${s.sizing040}`,
+  spaceInset050Stretch: `${s.sizing060} ${s.sizing050}`,
+  spaceInset060Stretch: `${s.sizing080} ${s.sizing060}`,
 });
 
 export type PaddingPresetKeys = keyof PaddingPreset;

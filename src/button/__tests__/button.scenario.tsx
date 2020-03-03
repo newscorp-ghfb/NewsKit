@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import {Button, IconButton} from '..';
 import {styled} from '../../utils/style';
-import {ButtonSize} from '../types';
+import {ButtonSize, RegularButtonSize} from '../types';
 import {Pause, Email, CopyLink} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
@@ -31,11 +31,12 @@ const Block = styled.div`
 `;
 
 const Label = styled.div`
-  height: 32px;
+  height: 20px;
+  padding: 8px 12px;
+  margin: 12px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
 `;
 
 const Spacer = styled.div`
@@ -54,6 +55,14 @@ enum IconButtonStyle {
   Minimal = 'iconButtonMinimalPrimary',
 }
 
+const regularButtonSizes: Array<{
+  buttonSize: RegularButtonSize;
+  iconSize: IconSizeKeys;
+}> = [
+  {buttonSize: ButtonSize.Small, iconSize: 'iconSize010'},
+  {buttonSize: ButtonSize.Large, iconSize: 'iconSize020'},
+];
+
 const states = ['Default', 'Focused', 'Disabled', 'Loading'];
 
 export const component = () => (
@@ -63,7 +72,7 @@ export const component = () => (
     <Container>
       <Stack flow="horizontal-center" space="sizing070" wrap="wrap">
         <Button>Small button</Button>
-        <Button $size={ButtonSize.Medium}>Medium button</Button>
+        <Button $size={ButtonSize.Large}>Large button</Button>
       </Stack>
     </Container>
 
@@ -114,17 +123,14 @@ export const component = () => (
       })}
     </Grid>
 
-    <h2>Icon with text</h2>
+    <h2>Icon placed before text</h2>
     <Container>
       {[Pause, Email, CopyLink].map(IconType => (
         <Spacer>
           <Stack flow="horizontal-center" space="sizing060">
-            {[
-              {buttonSize: ButtonSize.Small, iconSize: 'iconSize010'},
-              {buttonSize: ButtonSize.Medium, iconSize: 'iconSize020'},
-            ].map(button => (
+            {regularButtonSizes.map(button => (
               <Button $size={button.buttonSize}>
-                <IconType $size={button.iconSize as IconSizeKeys} />
+                <IconType $size={button.iconSize} />
                 Button
               </Button>
             ))}
@@ -138,13 +144,10 @@ export const component = () => (
       {[Pause, Email, CopyLink].map(IconType => (
         <Spacer>
           <Stack flow="horizontal-center" space="sizing060">
-            {[
-              {buttonSize: ButtonSize.Small, iconSize: 'iconSize010'},
-              {buttonSize: ButtonSize.Medium, iconSize: 'iconSize020'},
-            ].map(button => (
+            {regularButtonSizes.map(button => (
               <Button $size={button.buttonSize}>
                 Button
-                <IconType $size={button.iconSize as IconSizeKeys} />
+                <IconType $size={button.iconSize} />
               </Button>
             ))}
           </Stack>

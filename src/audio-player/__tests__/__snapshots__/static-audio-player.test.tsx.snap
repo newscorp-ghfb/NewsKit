@@ -873,7 +873,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  padding: 8px 8px;
+  padding: 8px;
   width: 32px;
   height: 32px;
   margin: 8px 0;
@@ -1098,7 +1098,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 12px 12px;
+  padding: 12px;
   width: 48px;
   height: 48px;
 }
@@ -1171,7 +1171,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 16px;
+  padding: 16px;
   width: 64px;
   height: 64px;
 }
@@ -2612,7 +2612,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  padding: 8px 8px;
+  padding: 8px;
   width: 32px;
   height: 32px;
   margin: 8px 0;
@@ -2837,7 +2837,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 12px 12px;
+  padding: 12px;
   width: 48px;
   height: 48px;
 }
@@ -2910,7 +2910,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 16px;
+  padding: 16px;
   width: 64px;
   height: 64px;
 }
@@ -4353,7 +4353,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  padding: 8px 8px;
+  padding: 8px;
   width: 32px;
   height: 32px;
   margin: 8px 0;
@@ -4583,7 +4583,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 12px 12px;
+  padding: 12px;
   width: 48px;
   height: 48px;
 }
@@ -4656,7 +4656,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 16px;
+  padding: 16px;
   width: 64px;
   height: 64px;
 }
@@ -6097,7 +6097,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  padding: 8px 8px;
+  padding: 8px;
   width: 32px;
   height: 32px;
   margin: 8px 0;
@@ -6322,7 +6322,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 12px 12px;
+  padding: 12px;
   width: 48px;
   height: 48px;
 }
@@ -6395,7 +6395,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px 16px;
+  padding: 16px;
   width: 64px;
   height: 64px;
 }

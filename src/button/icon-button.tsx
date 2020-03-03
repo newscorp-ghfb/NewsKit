@@ -1,30 +1,31 @@
 import React from 'react';
-import {ButtonProps, ButtonSizing, ButtonSize} from './types';
+import {ButtonCommonProps, ButtonSizing, ButtonSize} from './types';
 import {BaseButton} from './base-button';
+import {buttonSizeStyleTokens} from './styles';
 
 const buttonSizing: Record<ButtonSize, ButtonSizing> = {
   [ButtonSize.Small]: {
-    paddingX: 'spaceInset020',
-    paddingY: 'spaceInset020',
+    ...buttonSizeStyleTokens[ButtonSize.Small],
+    padding: 'spaceInset020',
     $width: 'sizing060',
     $height: 'sizing060',
   },
   [ButtonSize.Medium]: {
-    paddingX: 'spaceInset030',
-    paddingY: 'spaceInset030',
+    ...buttonSizeStyleTokens[ButtonSize.Medium],
+    padding: 'spaceInset030',
     $width: 'sizing080',
     $height: 'sizing080',
   },
   [ButtonSize.Large]: {
-    paddingX: 'spaceInset040',
-    paddingY: 'spaceInset040',
+    ...buttonSizeStyleTokens[ButtonSize.Large],
+    padding: 'spaceInset040',
     $width: 'sizing090',
     $height: 'sizing090',
   },
 };
 
 export const IconButton: React.FC<
-  React.ButtonHTMLAttributes<HTMLButtonElement> & ButtonProps
+  React.ButtonHTMLAttributes<HTMLButtonElement> & ButtonCommonProps
 > = ({children, $size = ButtonSize.Small, ...restOfProps}) => (
   <BaseButton
     $stylePreset="iconButtonSolidPrimary"

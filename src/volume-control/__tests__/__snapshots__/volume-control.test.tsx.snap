@@ -69,7 +69,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  padding: 8px 8px;
+  padding: 8px;
   width: 32px;
   height: 32px;
   margin: 8px 0;
@@ -397,7 +397,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  padding: 8px 8px;
+  padding: 8px;
   width: 32px;
   height: 32px;
   margin: 8px 0;
@@ -725,7 +725,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  padding: 8px 8px;
+  padding: 8px;
   width: 32px;
   height: 32px;
   margin: 8px 0;
@@ -1016,7 +1016,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  padding: 8px 8px;
+  padding: 8px;
   width: 32px;
   height: 32px;
   margin: 8px 0;
@@ -1380,7 +1380,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  padding: 8px 8px;
+  padding: 8px;
   width: 32px;
   height: 32px;
   margin: 8px 0;

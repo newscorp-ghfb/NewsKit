@@ -32,7 +32,7 @@ exports[`PopoutButton popout button opens window to href 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 12px 12px;
+  padding: 12px;
   width: 48px;
   height: 48px;
 }
@@ -171,7 +171,7 @@ exports[`PopoutButton renders popout button 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 12px 12px;
+  padding: 12px;
   width: 48px;
   height: 48px;
 }
