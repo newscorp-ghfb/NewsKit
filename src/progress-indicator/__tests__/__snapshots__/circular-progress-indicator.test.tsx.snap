@@ -15,6 +15,7 @@ exports[`Circle progress indicator renders circle progress indicator with aria l
   border-color: #f0f0f0;
   border-style: solid;
   border-width: 2px;
+  border-radius: 20rem;
   border-radius: 50%;
 }
 
@@ -71,6 +72,7 @@ exports[`Circle progress indicator renders circle progress indicator with aria l
   border-color: #0A68C1;
   border-style: solid;
   border-width: 2px;
+  border-radius: 20rem;
   border-radius: 50%;
 }
 
@@ -240,6 +242,7 @@ exports[`Circle progress indicator renders circle progress indicator with differ
   border-color: rgba(255,255,255,0.40);
   border-style: solid;
   border-width: 2px;
+  border-radius: 20rem;
   border-radius: 50%;
 }
 
@@ -247,9 +250,10 @@ exports[`Circle progress indicator renders circle progress indicator with differ
   box-sizing: border-box;
   height: 24px;
   width: 24px;
-  border-color: #FFFFFF;
+  border-color: #e6f4ff;
   border-style: solid;
   border-width: 2px;
+  border-radius: 20rem;
   border-radius: 50%;
 }
 
@@ -322,6 +326,7 @@ exports[`Circle progress indicator renders circle progress indicator with size 1
   border-color: #f0f0f0;
   border-style: solid;
   border-width: 2px;
+  border-radius: 20rem;
   border-radius: 50%;
 }
 
@@ -361,6 +366,7 @@ exports[`Circle progress indicator renders circle progress indicator with size 1
   border-color: #0A68C1;
   border-style: solid;
   border-width: 2px;
+  border-radius: 20rem;
   border-radius: 50%;
 }
 
@@ -496,6 +502,7 @@ exports[`Circle progress indicator renders circle progress indicator without tra
   border-color: #0A68C1;
   border-style: solid;
   border-width: 2px;
+  border-radius: 20rem;
   border-radius: 50%;
 }
 
@@ -582,6 +589,7 @@ exports[`Circle progress indicator renders default circle progress indicator 1`]
   border-color: #f0f0f0;
   border-style: solid;
   border-width: 2px;
+  border-radius: 20rem;
   border-radius: 50%;
 }
 
@@ -638,6 +646,7 @@ exports[`Circle progress indicator renders default circle progress indicator 1`]
   border-color: #0A68C1;
   border-style: solid;
   border-width: 2px;
+  border-radius: 20rem;
   border-radius: 50%;
 }
 

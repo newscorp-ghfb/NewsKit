@@ -16,7 +16,7 @@ import {Stack, StackProps} from '../stack';
 import {getStylePresetFromTheme} from '../utils/style-preset';
 
 export const trackStylePresetDefault = 'sliderTrack';
-export const indicatorStylePresetDefault = 'sliderIndicatorTrack';
+export const indicatorStylePresetDefault = 'sliderIndicator';
 const thumbStylePresetDefault = 'sliderThumb';
 const labelStylePresetDefault = 'sliderLabels';
 const thumbSizeDefault: SizingKeys = 'sizing060';
@@ -104,10 +104,9 @@ export const StyledTrack = styled.div<StyledTrackProps>`
   align-self: center;
   box-sizing: border-box;
 
-  ${({disabled, $trackSize = trackSizeDefault}) =>
+  ${({disabled}) =>
     getStylePresetFromTheme(trackStylePresetDefault, '$stylePreset', {
       isDisabled: disabled,
-      borderRadiusSize: $trackSize,
       filterStates: ['base', 'disabled'],
     })}
 
@@ -140,12 +139,11 @@ type StyledThumbProps = VerticalProp &
   CursorProps;
 
 export const StyledThumb = styled.div<StyledThumbProps>`
-  ${({disabled, $thumbSize = thumbSizeDefault}) =>
+  ${({disabled}) =>
     getStylePresetFromTheme(thumbStylePresetDefault, '$stylePreset', {
       isDisabled: disabled,
-      borderRadiusSize: $thumbSize,
     })}
-
+  outline: none;
   height: ${getSizingFromTheme(thumbSizeDefault, '$thumbSize')};
   width: ${getSizingFromTheme(thumbSizeDefault, '$thumbSize')};
   justify-content: center;
@@ -161,10 +159,9 @@ type StyledThumbValueProps = VerticalProp &
 export const StyledThumbValue = styled.div<StyledThumbValueProps>`
   ${getTypePresetFromTheme('caption010')};
 
-  ${({disabled, $thumbSize = thumbSizeDefault}) =>
+  ${({disabled}) =>
     getStylePresetFromTheme(labelStylePresetDefault, '$stylePreset', {
       isDisabled: disabled,
-      borderRadiusSize: $thumbSize,
       omitStates: ['focus', 'hover'],
     })};
 
@@ -224,7 +221,6 @@ export const StyledSliderLabel = styled.div<StyledSliderLabelProps>`
     isText &&
     getStylePresetFromTheme(labelStylePresetDefault, '$stylePreset', {
       isDisabled: disabled,
-      borderRadiusSize: 'sizing020',
       filterStates: ['base', 'disabled'],
     })};
 

@@ -5,6 +5,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary 1`] = `
   .emotion-0 {
   background-color: transparent;
   color: #0A68C1;
+  border-radius: 50%;
 }
 
 .emotion-0 svg {
@@ -17,44 +18,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #6EB2F2;
-}
-
-.emotion-0:disabled {
-  color: #9c9c9c;
-  background-color: transparent;
-}
-
-.emotion-0:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-<div
-    class="emotion-0"
-  />
-</DocumentFragment>
-`;
-
-exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with borderRadius 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  background-color: transparent;
-  color: #0A68C1;
-  border-radius: 100vw;
-}
-
-.emotion-0 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-0:hover:not(:disabled) {
-  background-color: #e6f4ff;
-}
-
-.emotion-0:active:not(:disabled) {
-  background-color: #6EB2F2;
+  background-color: #d5ebff;
 }
 
 .emotion-0:disabled {
@@ -78,6 +42,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with cu
   .emotion-0 {
   background-color: #00ff00;
   color: #0A68C1;
+  border-radius: 50%;
 }
 
 .emotion-0 svg {
@@ -96,6 +61,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with di
   .emotion-0 {
   background-color: #FF0000;
   color: #9c9c9c;
+  border-radius: 50%;
 }
 
 .emotion-0 svg {
@@ -114,6 +80,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with di
   .emotion-0 {
   background-color: #FF0000;
   color: #9c9c9c;
+  border-radius: 50%;
 }
 
 .emotion-0 svg {
@@ -131,7 +98,8 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with lo
 <DocumentFragment>
   .emotion-0 {
   background-color: #ffff00;
-  color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 50%;
 }
 
 .emotion-0 svg {
@@ -149,7 +117,8 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with lo
 <DocumentFragment>
   .emotion-0 {
   background-color: #ffff00;
-  color: #0A68C1;
+  color: #FFFFFF;
+  border-radius: 50%;
 }
 
 .emotion-0 svg {
@@ -167,6 +136,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary without
 <DocumentFragment>
   .emotion-0 {
   color: #0A68C1;
+  border-radius: 50%;
 }
 
 .emotion-0 svg {
@@ -194,6 +164,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary without
   .emotion-0 {
   background-color: transparent;
   color: #0A68C1;
+  border-radius: 50%;
 }
 
 .emotion-0 svg {
@@ -206,7 +177,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary without
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #6EB2F2;
+  background-color: #d5ebff;
 }
 
 <div

@@ -49,13 +49,6 @@ describe('Surface Helper', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('getStylePresetFromTheme iconButtonMinimalPrimary with borderRadius', () => {
-    const fragment = renderToFragmentWithTheme(TestSurface, {
-      borderRadiusSize: 'sizing030',
-    });
-    expect(fragment).toMatchSnapshot();
-  });
-
   test('getStylePresetFromTheme iconButtonMinimalPrimary with disabled state', () => {
     const fragment = renderToFragmentWithTheme(
       TestSurface,

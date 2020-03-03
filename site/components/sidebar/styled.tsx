@@ -29,7 +29,7 @@ export const StyledNavItem = styled.div<{
 
   :hover {
     color: ${getColorFromTheme('inkBase')};
-    background-color: ${({theme}) => theme.colors.interactive020};
+    background-color: ${({theme}) => theme.colors.interactive010};
   }
 
   :focus {

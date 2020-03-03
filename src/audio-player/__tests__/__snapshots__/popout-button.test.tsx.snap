@@ -21,8 +21,8 @@ exports[`PopoutButton popout button opens window to href 1`] = `
   cursor: pointer;
   box-sizing: border-box;
   background-color: #0A68C1;
+  border-radius: 50%;
   color: #FFFFFF;
-  border-radius: 100vw;
   min-height: 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
@@ -160,8 +160,8 @@ exports[`PopoutButton renders popout button 1`] = `
   cursor: pointer;
   box-sizing: border-box;
   background-color: #0A68C1;
+  border-radius: 50%;
   color: #FFFFFF;
-  border-radius: 100vw;
   min-height: 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;

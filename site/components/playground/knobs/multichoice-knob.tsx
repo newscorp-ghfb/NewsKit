@@ -37,7 +37,7 @@ const StyledLabel = styled.label<StyledLabelProps>`
   user-select: none;
 
   ${({theme}) => {
-    const borderRadiusSize = theme.borderRadius.rounded.sizing050;
+    const borderRadiusSize = theme.borderRadius.borderRadiusDefault;
     return css`
       :first-of-type {
         border-top-left-radius: ${borderRadiusSize};
@@ -60,7 +60,7 @@ const StyledLabel = styled.label<StyledLabelProps>`
   }
 
   :hover {
-    background-color: ${getColorFromTheme('interactive020')};
+    background-color: ${getColorFromTheme('interactive010')};
   }
 `;
 

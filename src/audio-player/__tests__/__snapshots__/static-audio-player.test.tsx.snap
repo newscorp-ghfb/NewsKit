@@ -663,18 +663,18 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   align-self: center;
   box-sizing: border-box;
   background-color: #f0f0f0;
-  border-radius: 100vw;
+  border-radius: 20rem;
   margin: calc(24px/2 - 8px/2) calc(24px/2);
   height: 8px;
   width: 100%;
 }
 
 .emotion-37 {
-  background-color: #FFFFFF;
-  border-style: solid;
+  background-color: #0A68C1;
   border-color: #0A68C1;
   border-width: 1px;
-  border-radius: 100vw;
+  border-radius: 50%;
+  outline: none;
   height: 24px;
   width: 24px;
   -webkit-box-pack: center;
@@ -695,12 +695,25 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 }
 
 .emotion-37:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #02509B;
+}
+
+.emotion-37:active:not(:disabled) {
+  background-color: #01396E;
 }
 
 .emotion-37:active:not(:disabled) svg {
   fill: #535353;
   color: #535353;
+}
+
+.emotion-37:disabled {
+  border-style: none;
+}
+
+.emotion-37:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-42 {
@@ -850,7 +863,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   box-sizing: border-box;
   background-color: transparent;
   color: #0A68C1;
-  border-radius: 100vw;
+  border-radius: 50%;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -880,7 +893,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 }
 
 .emotion-48:active:not(:disabled) {
-  background-color: #6EB2F2;
+  background-color: #d5ebff;
 }
 
 .emotion-48:disabled {
@@ -956,18 +969,18 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   align-self: center;
   box-sizing: border-box;
   background-color: #f0f0f0;
-  border-radius: 100vw;
+  border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
   width: 100%;
 }
 
 .emotion-50 {
-  background-color: #FFFFFF;
-  border-style: solid;
+  background-color: #0A68C1;
   border-color: #0A68C1;
   border-width: 1px;
-  border-radius: 100vw;
+  border-radius: 50%;
+  outline: none;
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;
@@ -988,12 +1001,25 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 }
 
 .emotion-50:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #02509B;
+}
+
+.emotion-50:active:not(:disabled) {
+  background-color: #01396E;
 }
 
 .emotion-50:active:not(:disabled) svg {
   fill: #535353;
   color: #535353;
+}
+
+.emotion-50:disabled {
+  border-style: none;
+}
+
+.emotion-50:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-56 {
@@ -1062,7 +1088,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   box-sizing: border-box;
   background-color: transparent;
   color: #0A68C1;
-  border-radius: 100vw;
+  border-radius: 50%;
   min-height: 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
@@ -1091,7 +1117,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
 }
 
 .emotion-62:active:not(:disabled) {
-  background-color: #6EB2F2;
+  background-color: #d5ebff;
 }
 
 .emotion-62:disabled {
@@ -1134,8 +1160,8 @@ exports[`Static AudioPlayer renders player with slider and all the controls 1`] 
   cursor: pointer;
   box-sizing: border-box;
   background-color: #0A68C1;
+  border-radius: 50%;
   color: #FFFFFF;
-  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -2376,18 +2402,18 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   align-self: center;
   box-sizing: border-box;
   background-color: #f0f0f0;
-  border-radius: 100vw;
+  border-radius: 20rem;
   margin: calc(24px/2 - 8px/2) calc(24px/2);
   height: 8px;
   width: 100%;
 }
 
 .emotion-37 {
-  background-color: #FFFFFF;
-  border-style: solid;
+  background-color: #0A68C1;
   border-color: #0A68C1;
   border-width: 1px;
-  border-radius: 100vw;
+  border-radius: 50%;
+  outline: none;
   height: 24px;
   width: 24px;
   -webkit-box-pack: center;
@@ -2408,12 +2434,25 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 }
 
 .emotion-37:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #02509B;
+}
+
+.emotion-37:active:not(:disabled) {
+  background-color: #01396E;
 }
 
 .emotion-37:active:not(:disabled) svg {
   fill: #535353;
   color: #535353;
+}
+
+.emotion-37:disabled {
+  border-style: none;
+}
+
+.emotion-37:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-42 {
@@ -2563,7 +2602,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   box-sizing: border-box;
   background-color: transparent;
   color: #0A68C1;
-  border-radius: 100vw;
+  border-radius: 50%;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -2593,7 +2632,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 }
 
 .emotion-48:active:not(:disabled) {
-  background-color: #6EB2F2;
+  background-color: #d5ebff;
 }
 
 .emotion-48:disabled {
@@ -2669,18 +2708,18 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   align-self: center;
   box-sizing: border-box;
   background-color: #f0f0f0;
-  border-radius: 100vw;
+  border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
   width: 100%;
 }
 
 .emotion-50 {
-  background-color: #FFFFFF;
-  border-style: solid;
+  background-color: #0A68C1;
   border-color: #0A68C1;
   border-width: 1px;
-  border-radius: 100vw;
+  border-radius: 50%;
+  outline: none;
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;
@@ -2701,12 +2740,25 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 }
 
 .emotion-50:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #02509B;
+}
+
+.emotion-50:active:not(:disabled) {
+  background-color: #01396E;
 }
 
 .emotion-50:active:not(:disabled) svg {
   fill: #535353;
   color: #535353;
+}
+
+.emotion-50:disabled {
+  border-style: none;
+}
+
+.emotion-50:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-56 {
@@ -2775,7 +2827,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   box-sizing: border-box;
   background-color: transparent;
   color: #0A68C1;
-  border-radius: 100vw;
+  border-radius: 50%;
   min-height: 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
@@ -2804,7 +2856,7 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
 }
 
 .emotion-62:active:not(:disabled) {
-  background-color: #6EB2F2;
+  background-color: #d5ebff;
 }
 
 .emotion-62:disabled {
@@ -2847,8 +2899,8 @@ exports[`Static AudioPlayer renders player with slider and all the controls, but
   cursor: pointer;
   box-sizing: border-box;
   background-color: #0A68C1;
+  border-radius: 50%;
   color: #FFFFFF;
-  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -4091,18 +4143,18 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   align-self: center;
   box-sizing: border-box;
   background-color: #f0f0f0;
-  border-radius: 100vw;
+  border-radius: 20rem;
   margin: calc(24px/2 - 8px/2) calc(24px/2);
   height: 8px;
   width: 100%;
 }
 
 .emotion-37 {
-  background-color: #FFFFFF;
-  border-style: solid;
+  background-color: #0A68C1;
   border-color: #0A68C1;
   border-width: 1px;
-  border-radius: 100vw;
+  border-radius: 50%;
+  outline: none;
   height: 24px;
   width: 24px;
   -webkit-box-pack: center;
@@ -4123,12 +4175,25 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 }
 
 .emotion-37:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #02509B;
+}
+
+.emotion-37:active:not(:disabled) {
+  background-color: #01396E;
 }
 
 .emotion-37:active:not(:disabled) svg {
   fill: #535353;
   color: #535353;
+}
+
+.emotion-37:disabled {
+  border-style: none;
+}
+
+.emotion-37:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-42 {
@@ -4278,7 +4343,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   box-sizing: border-box;
   background-color: transparent;
   color: #0A68C1;
-  border-radius: 100vw;
+  border-radius: 50%;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -4308,7 +4373,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 }
 
 .emotion-48:active:not(:disabled) {
-  background-color: #6EB2F2;
+  background-color: #d5ebff;
 }
 
 .emotion-48:disabled {
@@ -4384,18 +4449,18 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   align-self: center;
   box-sizing: border-box;
   background-color: #f0f0f0;
-  border-radius: 100vw;
+  border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
   width: 100%;
 }
 
 .emotion-50 {
-  background-color: #FFFFFF;
-  border-style: solid;
+  background-color: #0A68C1;
   border-color: #0A68C1;
   border-width: 1px;
-  border-radius: 100vw;
+  border-radius: 50%;
+  outline: none;
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;
@@ -4416,12 +4481,25 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 }
 
 .emotion-50:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #02509B;
+}
+
+.emotion-50:active:not(:disabled) {
+  background-color: #01396E;
 }
 
 .emotion-50:active:not(:disabled) svg {
   fill: #535353;
   color: #535353;
+}
+
+.emotion-50:disabled {
+  border-style: none;
+}
+
+.emotion-50:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-56 {
@@ -4495,7 +4573,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   box-sizing: border-box;
   background-color: transparent;
   color: #0A68C1;
-  border-radius: 100vw;
+  border-radius: 50%;
   min-height: 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
@@ -4524,7 +4602,7 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
 }
 
 .emotion-62:active:not(:disabled) {
-  background-color: #6EB2F2;
+  background-color: #d5ebff;
 }
 
 .emotion-62:disabled {
@@ -4567,8 +4645,8 @@ exports[`Static AudioPlayer renders player with slider set to the updated curren
   cursor: pointer;
   box-sizing: border-box;
   background-color: #0A68C1;
+  border-radius: 50%;
   color: #FFFFFF;
-  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -5809,18 +5887,18 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   align-self: center;
   box-sizing: border-box;
   background-color: #f0f0f0;
-  border-radius: 100vw;
+  border-radius: 20rem;
   margin: calc(24px/2 - 8px/2) calc(24px/2);
   height: 8px;
   width: 100%;
 }
 
 .emotion-37 {
-  background-color: #FFFFFF;
-  border-style: solid;
+  background-color: #0A68C1;
   border-color: #0A68C1;
   border-width: 1px;
-  border-radius: 100vw;
+  border-radius: 50%;
+  outline: none;
   height: 24px;
   width: 24px;
   -webkit-box-pack: center;
@@ -5841,12 +5919,25 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 }
 
 .emotion-37:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #02509B;
+}
+
+.emotion-37:active:not(:disabled) {
+  background-color: #01396E;
 }
 
 .emotion-37:active:not(:disabled) svg {
   fill: #535353;
   color: #535353;
+}
+
+.emotion-37:disabled {
+  border-style: none;
+}
+
+.emotion-37:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-42 {
@@ -5996,7 +6087,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   box-sizing: border-box;
   background-color: transparent;
   color: #0A68C1;
-  border-radius: 100vw;
+  border-radius: 50%;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -6026,7 +6117,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 }
 
 .emotion-48:active:not(:disabled) {
-  background-color: #6EB2F2;
+  background-color: #d5ebff;
 }
 
 .emotion-48:disabled {
@@ -6102,18 +6193,18 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   align-self: center;
   box-sizing: border-box;
   background-color: #f0f0f0;
-  border-radius: 100vw;
+  border-radius: 20rem;
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
   width: 100%;
 }
 
 .emotion-50 {
-  background-color: #FFFFFF;
-  border-style: solid;
+  background-color: #0A68C1;
   border-color: #0A68C1;
   border-width: 1px;
-  border-radius: 100vw;
+  border-radius: 50%;
+  outline: none;
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;
@@ -6134,12 +6225,25 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 }
 
 .emotion-50:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #02509B;
+}
+
+.emotion-50:active:not(:disabled) {
+  background-color: #01396E;
 }
 
 .emotion-50:active:not(:disabled) svg {
   fill: #535353;
   color: #535353;
+}
+
+.emotion-50:disabled {
+  border-style: none;
+}
+
+.emotion-50:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-56 {
@@ -6208,7 +6312,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   box-sizing: border-box;
   background-color: transparent;
   color: #0A68C1;
-  border-radius: 100vw;
+  border-radius: 50%;
   min-height: 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
@@ -6237,7 +6341,7 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
 }
 
 .emotion-62:active:not(:disabled) {
-  background-color: #6EB2F2;
+  background-color: #d5ebff;
 }
 
 .emotion-62:disabled {
@@ -6280,8 +6384,8 @@ exports[`Static AudioPlayer renders player with slider when metadata duration of
   cursor: pointer;
   box-sizing: border-box;
   background-color: #0A68C1;
+  border-radius: 50%;
   color: #FFFFFF;
-  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;

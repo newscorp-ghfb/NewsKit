@@ -179,7 +179,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-9:hover {
   color: #2e2e2e;
-  background-color: #6EB2F2;
+  background-color: #e6f4ff;
 }
 
 .emotion-9:focus {
@@ -792,7 +792,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-9:hover {
   color: #2e2e2e;
-  background-color: #6EB2F2;
+  background-color: #e6f4ff;
 }
 
 .emotion-9:focus {

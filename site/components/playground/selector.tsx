@@ -33,7 +33,7 @@ const StyledSelect = styled.select`
   margin-left: ${getSizingFromTheme('sizing020')};
   padding: ${getSizingFromTheme('sizing020')} ${getSizingFromTheme('sizing080')}
     ${getSizingFromTheme('sizing020')} ${getSizingFromTheme('sizing030')};
-  border-radius: ${({theme}) => theme.borderRadius.rounded.sizing050};
+  border-radius: ${({theme}) => theme.borderRadius.borderRadiusDefault};
   appearance: none;
   border: none;
   background-color: ${getColorFromTheme('interface020')};

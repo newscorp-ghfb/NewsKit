@@ -1,39 +1,7 @@
 import * as React from 'react';
 import {Image} from '..';
 import {styled} from '../../utils/style';
-import {createTheme, Theme} from '../../themes/creator';
-import {
-  BorderRadiusShape,
-  borderRadiusPrimitives,
-} from '../../themes/newskit-light/border-radius';
-import {colorPrimitives} from '../../themes/newskit-light/colors';
-import {ThemeProvider, StylePresetStates} from '../../themes';
 import {StorybookHeading} from '../../test/storybook-comps';
-
-const customTheme: Theme = createTheme('awesome-theme', {
-  themeOverrider: () => ({
-    stylePresets: {
-      myAwesomeCustomStyle: {
-        loading: {
-          backgroundColor: colorPrimitives.red020,
-          borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
-          iconColor: colorPrimitives.green010,
-          borderWidth: '3px',
-          borderStyle: 'solid',
-          borderColor: 'blue',
-        },
-        base: {
-          backgroundColor: colorPrimitives.blue040,
-          borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
-          iconColor: colorPrimitives.green040,
-          borderWidth: '3px',
-          borderStyle: 'dotted',
-          borderColor: 'red',
-        },
-      } as StylePresetStates,
-    },
-  }),
-});
 
 export const name = 'image';
 
@@ -44,7 +12,7 @@ const Container = styled.div`
 
 export const component = () => (
   <React.Fragment>
-    <StorybookHeading>Default theme</StorybookHeading>
+    <StorybookHeading>Image with sharp border-radius</StorybookHeading>
     <div>
       <Container>
         <Image
@@ -55,9 +23,7 @@ export const component = () => (
         />
       </Container>
     </div>
-    <StorybookHeading>
-      Default theme with invalid image reference
-    </StorybookHeading>
+    <StorybookHeading>Invalid image reference</StorybookHeading>
     <div>
       <Container>
         <Image
@@ -68,9 +34,7 @@ export const component = () => (
         />
       </Container>
     </div>
-    <StorybookHeading>
-      Default theme with invalid image reference hiding logo
-    </StorybookHeading>
+    <StorybookHeading>Invalid image reference hiding logo</StorybookHeading>
     <div>
       <Container>
         <Image
@@ -82,52 +46,31 @@ export const component = () => (
         />
       </Container>
     </div>
-    <StorybookHeading>Using custom style preset</StorybookHeading>
+    <StorybookHeading>Image with rounded border-radius</StorybookHeading>
     <div>
-      <ThemeProvider theme={customTheme}>
-        <Container>
-          <Image
-            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
-            aspectWidth={3}
-            aspectHeight={2}
-            alt="Example Image"
-            $stylePreset="myAwesomeCustomStyle"
-          />
-        </Container>
-      </ThemeProvider>
+      <Container>
+        <Image
+          src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
+          aspectWidth={3}
+          aspectHeight={2}
+          alt="Example Image"
+          hideLoadingIcon
+          $stylePreset="imageRounded"
+        />
+      </Container>
     </div>
-    <StorybookHeading>
-      Using custom style preset with invalid image reference
-    </StorybookHeading>
+    <StorybookHeading>Image with circle border-radius</StorybookHeading>
     <div>
-      <ThemeProvider theme={customTheme}>
-        <Container>
-          <Image
-            src="invalid-image"
-            aspectWidth={3}
-            aspectHeight={2}
-            alt="Example Image"
-            $stylePreset="myAwesomeCustomStyle"
-          />
-        </Container>
-      </ThemeProvider>
-    </div>
-    <StorybookHeading>
-      Using custom style preset with invalid image reference hiding logo
-    </StorybookHeading>
-    <div>
-      <ThemeProvider theme={customTheme}>
-        <Container>
-          <Image
-            src="invalid-image"
-            aspectWidth={3}
-            aspectHeight={2}
-            alt="Example Image"
-            $stylePreset="myAwesomeCustomStyle"
-            hideLoadingIcon
-          />
-        </Container>
-      </ThemeProvider>
+      <Container>
+        <Image
+          src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
+          aspectWidth={1}
+          aspectHeight={1}
+          alt="Example Image"
+          hideLoadingIcon
+          $stylePreset="imageCircle"
+        />
+      </Container>
     </div>
   </React.Fragment>
 );

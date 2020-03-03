@@ -37,6 +37,7 @@ exports[`Stack renders stack when no properties are set 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -48,22 +49,12 @@ exports[`Stack renders stack when no properties are set 1`] = `
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -163,6 +154,7 @@ exports[`Stack renders stack with flex grow and shrink 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -174,22 +166,12 @@ exports[`Stack renders stack with flex grow and shrink 1`] = `
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -287,6 +269,7 @@ exports[`Stack renders stack with flex grow and shrink 2`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -298,22 +281,12 @@ exports[`Stack renders stack with flex grow and shrink 2`] = `
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -411,6 +384,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -422,22 +396,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -560,6 +524,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -571,22 +536,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -709,6 +664,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -720,22 +676,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -888,6 +834,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -899,22 +846,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -1063,6 +1000,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -1074,22 +1012,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -1242,6 +1170,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -1253,22 +1182,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -1417,6 +1336,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -1428,22 +1348,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -1562,6 +1472,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -1573,22 +1484,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -1707,6 +1608,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -1718,22 +1620,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -1852,6 +1744,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -1863,22 +1756,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -1997,6 +1880,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -2008,22 +1892,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -2142,6 +2016,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -2153,22 +2028,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -2293,6 +2158,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -2304,22 +2170,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -2442,6 +2298,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -2453,22 +2310,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -2591,6 +2438,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -2602,22 +2450,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -2770,6 +2608,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -2781,22 +2620,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -2945,6 +2774,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -2956,22 +2786,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -3124,6 +2944,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -3135,22 +2956,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -3299,6 +3110,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -3310,22 +3122,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -3444,6 +3246,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -3455,22 +3258,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -3589,6 +3382,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -3600,22 +3394,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -3734,6 +3518,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -3745,22 +3530,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -3879,6 +3654,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -3890,22 +3666,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -4024,6 +3790,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -4035,22 +3802,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -4175,6 +3932,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -4186,22 +3944,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -4324,6 +4072,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -4335,22 +4084,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -4473,6 +4212,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -4484,22 +4224,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -4652,6 +4382,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -4663,22 +4394,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -4827,6 +4548,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -4838,22 +4560,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -5006,6 +4718,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -5017,22 +4730,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -5181,6 +4884,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -5192,22 +4896,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -5326,6 +5020,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -5337,22 +5032,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -5471,6 +5156,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -5482,22 +5168,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -5616,6 +5292,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -5627,22 +5304,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -5761,6 +5428,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -5772,22 +5440,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -5906,6 +5564,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -5917,22 +5576,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -6057,6 +5706,7 @@ exports[`Stack renders where the stack flow is invalid 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -6068,22 +5718,12 @@ exports[`Stack renders where the stack flow is invalid 1`] = `
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -6202,6 +5842,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -6213,22 +5854,12 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -6351,6 +5982,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -6362,22 +5994,12 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -6500,6 +6122,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -6511,22 +6134,12 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -6679,6 +6292,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -6690,22 +6304,12 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -6854,6 +6458,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -6865,22 +6470,12 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -7033,6 +6628,7 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -7044,22 +6640,12 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -7208,6 +6794,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -7219,22 +6806,12 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -7353,6 +6930,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -7364,22 +6942,12 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -7498,6 +7066,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -7509,22 +7078,12 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -7643,6 +7202,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -7654,22 +7214,12 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -7788,6 +7338,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -7799,22 +7350,12 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -7933,6 +7474,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -7944,22 +7486,12 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -8084,6 +7616,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -8095,22 +7628,12 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -8233,6 +7756,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -8244,22 +7768,12 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -8382,6 +7896,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -8393,22 +7908,12 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -8561,6 +8066,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -8572,22 +8078,12 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -8736,6 +8232,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -8747,22 +8244,12 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -8915,6 +8402,7 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -8926,22 +8414,12 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -9090,6 +8568,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -9101,22 +8580,12 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -9235,6 +8704,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -9246,22 +8716,12 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -9399,6 +8859,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -9410,22 +8871,12 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -9525,6 +8976,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -9536,22 +8988,12 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -9670,6 +9112,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -9681,22 +9124,12 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -9815,6 +9248,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -9826,22 +9260,12 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -9970,6 +9394,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -9981,22 +9406,12 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -10119,6 +9534,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -10130,22 +9546,12 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -10268,6 +9674,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -10279,22 +9686,12 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -10447,6 +9844,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -10458,22 +9856,12 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -10622,6 +10010,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -10633,22 +10022,12 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -10801,6 +10180,7 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -10812,22 +10192,12 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -10976,6 +10346,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -10987,22 +10358,12 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -11121,6 +10482,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -11132,22 +10494,12 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -11266,6 +10618,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -11277,22 +10630,12 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -11411,6 +10754,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -11422,22 +10766,12 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -11559,6 +10893,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -11570,22 +10905,12 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -11704,6 +11029,7 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -11715,22 +11041,12 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   color: #2e2e2e;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 .emotion-1 {

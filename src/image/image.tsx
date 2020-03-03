@@ -28,10 +28,9 @@ const ImageContainer = styled.div<ImageContainerProps>`
 
   ${({isLoading, ...props}) =>
     getStylePresetFromTheme(
-      'imageSquared',
+      'imageSharp',
       '$stylePreset' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
       {
-        borderRadiusSize: 'sizing060',
         isLoading,
       },
     )(props)}

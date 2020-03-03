@@ -4,8 +4,8 @@ import {
   getTypePresetFromTheme,
   getSizingFromTheme,
   getColorFromTheme,
-  Button,
   ButtonSize,
+  IconButton,
 } from 'newskit';
 import {LegacyBlock} from '../../legacy-block';
 import {KnobContainer, StyledTitle} from './common';
@@ -36,7 +36,7 @@ export const StyledInput = styled.input`
   color: ${getColorFromTheme('inkContrast')};
 
   width: 300px;
-  border-radius: ${({theme}) => theme.borderRadius.semiRounded.sizing040};
+  border-radius: ${({theme}) => theme.borderRadius.borderRadiusDefault};
   border-style: solid;
   border-width: ${({theme}) => theme.borders.borderWidth020};
   border-color: ${getColorFromTheme('interface040')};
@@ -134,25 +134,25 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
                 $alignItems="baseline"
                 $flexDirection="column-reverse"
               >
-                <Button
+                <IconButton
                   $size={ButtonSize.Small}
                   disabled={arr.length < 2}
                   onClick={remove(i)}
                   data-testid={`${TEST_ID_PREFIX}-button-remove`}
                 >
                   -
-                </Button>
+                </IconButton>
               </LegacyBlock>
             </LegacyBlock>
           ) : null;
         })}
-        <Button
+        <IconButton
           data-testid={`${TEST_ID_PREFIX}-button-add`}
           $size={ButtonSize.Small}
           onClick={add}
         >
           +
-        </Button>
+        </IconButton>
       </LegacyBlock>
     </KnobContainer>
   );

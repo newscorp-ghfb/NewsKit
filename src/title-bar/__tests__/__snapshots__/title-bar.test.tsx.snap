@@ -78,7 +78,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   box-sizing: border-box;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: calc(8px * 0.25);
+  border-radius: 8px;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;

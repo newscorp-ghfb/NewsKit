@@ -10,8 +10,7 @@ import {
 } from 'csstype';
 import {BorderPrimitives} from '../newskit-light/borders';
 import {ColorPrimitives} from '../newskit-light/colors';
-import {BorderRadiusShape, BorderRadius} from '../newskit-light/border-radius';
-import {Sizing} from '../newskit-light/spacing';
+import {BorderRadius} from './border-radius';
 import {Overlay} from '../newskit-light/overlay';
 import {Shadow} from '../newskit-light/shadow';
 
@@ -25,7 +24,7 @@ export interface StylePresetStyles {
   borderColor?: BorderColorProperty;
   borderWidth?: string;
   color?: ColorProperty;
-  borderRadius?: Sizing; // shape
+  borderRadius?: string; // shape
   iconColor?: ColorProperty;
 }
 export type StylePresetStyleKeys = keyof StylePresetStyles;
@@ -62,7 +61,7 @@ export const createStylePresets = ({
   const iconButtonSolidPrimary: StylePresetStates = {
     base: {
       backgroundColor: colorPrimitives.interactive030,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+      borderRadius: borderRadiusPrimitives.borderRadiusCircle,
       color: colorPrimitives.inkInverse,
       iconColor: colorPrimitives.inkInverse,
     },
@@ -78,6 +77,9 @@ export const createStylePresets = ({
       color: colorPrimitives.inkNonEssential,
       iconColor: colorPrimitives.inkNonEssential,
     },
+    loading: {
+      backgroundColor: colorPrimitives.interactive020,
+    },
   };
   const iconButtonOutlinedPrimary: StylePresetStates = {
     base: {
@@ -86,7 +88,7 @@ export const createStylePresets = ({
       borderWidth: borderPrimitives.borderWidth010,
       color: colorPrimitives.inkBrand010,
       iconColor: colorPrimitives.inkBrand010,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+      borderRadius: borderRadiusPrimitives.borderRadiusCircle,
       backgroundColor: colorPrimitives.transparent,
     },
     hover: {
@@ -103,13 +105,17 @@ export const createStylePresets = ({
       borderColor: colorPrimitives.disabled,
       backgroundColor: colorPrimitives.transparent,
     },
+    loading: {
+      backgroundColor: colorPrimitives.interactive020,
+      borderStyle: 'none',
+    },
   };
   const iconButtonMinimalPrimary: StylePresetStates = {
     base: {
       backgroundColor: colorPrimitives.transparent,
       color: colorPrimitives.inkBrand010,
       iconColor: colorPrimitives.inkBrand010,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+      borderRadius: borderRadiusPrimitives.borderRadiusCircle,
     },
     hover: {
       backgroundColor: colorPrimitives.interactive010,
@@ -123,36 +129,45 @@ export const createStylePresets = ({
       backgroundColor: colorPrimitives.transparent,
     },
     loading: {
-      backgroundColor: colorPrimitives.transparent,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+      backgroundColor: colorPrimitives.interactive020,
+      color: colorPrimitives.inkInverse,
     },
   };
   const audioPlayerThumb: StylePresetStates = {
     base: {
-      backgroundColor: colorPrimitives.white,
-      borderStyle: 'solid',
+      backgroundColor: colorPrimitives.interfaceBrand010,
       borderColor: colorPrimitives.interactive030,
       borderWidth: borderPrimitives.borderWidth010,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+      borderRadius: borderRadiusPrimitives.borderRadiusCircle,
       iconColor: colorPrimitives.inkNonEssential,
     },
     hover: {
-      borderWidth: borderPrimitives.borderWidth020,
+      backgroundColor: colorPrimitives.interactive040,
     },
     active: {
       iconColor: colorPrimitives.inkSubtle,
+      backgroundColor: colorPrimitives.interactive050,
+    },
+    disabled: {
+      borderStyle: 'none',
+      iconColor: colorPrimitives.inkNonEssential,
     },
   };
-  const audioPlayerTrack: StylePresetStates = {
+
+  //
+  // Audio Player
+  //
+
+  const audioPlayerSeekBarTrack: StylePresetStates = {
     base: {
       backgroundColor: colorPrimitives.interface030,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+      borderRadius: borderRadiusPrimitives.borderRadiusPill,
     },
   };
-  const audioPlayerTrackIndicator: StylePresetStates = {
+  const audioPlayerSeekBarIndicator: StylePresetStates = {
     base: {
-      backgroundColor: colorPrimitives.interactive030,
-      borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+      backgroundColor: colorPrimitives.interfaceBrand010,
+      borderRadius: borderRadiusPrimitives.borderRadiusPill,
     },
   };
   const audioPlayerLabels: StylePresetStates = {
@@ -166,7 +181,7 @@ export const createStylePresets = ({
       base: {
         backgroundColor: colorPrimitives.interactive030,
         color: colorPrimitives.inkInverse,
-        borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
+        borderRadius: borderRadiusPrimitives.borderRadiusRounded020,
         iconColor: colorPrimitives.inkInverse,
       },
       hover: {
@@ -181,7 +196,7 @@ export const createStylePresets = ({
         iconColor: colorPrimitives.inkNonEssential,
       },
       loading: {
-        iconColor: colorPrimitives.white,
+        backgroundColor: colorPrimitives.interactive020,
       },
     } as StylePresetStates,
     buttonOutlinedPrimary: {
@@ -189,16 +204,10 @@ export const createStylePresets = ({
         borderStyle: 'solid',
         borderColor: colorPrimitives.interactive030,
         borderWidth: borderPrimitives.borderWidth010,
-        borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
+        borderRadius: borderRadiusPrimitives.borderRadiusRounded020,
         color: colorPrimitives.inkBrand010,
         iconColor: colorPrimitives.inkBrand010,
         backgroundColor: colorPrimitives.transparent,
-      },
-      hover: {
-        backgroundColor: colorPrimitives.interactive010,
-      },
-      active: {
-        backgroundColor: colorPrimitives.interactive020,
       },
       disabled: {
         borderColor: colorPrimitives.disabled,
@@ -207,13 +216,14 @@ export const createStylePresets = ({
         backgroundColor: colorPrimitives.transparent,
       },
       loading: {
-        iconColor: colorPrimitives.white,
+        backgroundColor: colorPrimitives.interactive020,
+        borderStyle: 'none',
       },
     } as StylePresetStates,
     buttonMinimalPrimary: {
       base: {
         backgroundColor: colorPrimitives.transparent,
-        borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
+        borderRadius: borderRadiusPrimitives.borderRadiusRounded020,
         color: colorPrimitives.inkBrand010,
         iconColor: colorPrimitives.inkBrand010,
       },
@@ -222,21 +232,18 @@ export const createStylePresets = ({
       },
       active: {
         backgroundColor: colorPrimitives.interactive020,
-        borderColor: colorPrimitives.interactive030,
-        borderWidth: borderPrimitives.borderWidth010,
       },
       disabled: {
         color: colorPrimitives.inkNonEssential,
         iconColor: colorPrimitives.inkNonEssential,
-        backgroundColor: colorPrimitives.transparent,
       },
       loading: {
-        iconColor: colorPrimitives.white,
-        backgroundColor: colorPrimitives.transparent,
+        color: colorPrimitives.inkInverse,
       },
     } as StylePresetStates,
     tagPrimary: {
       base: {
+        backgroundColor: colorPrimitives.transparent,
         borderStyle: 'solid',
         borderColor: colorPrimitives.interactive130,
         borderWidth: borderPrimitives.borderWidth010,
@@ -244,18 +251,16 @@ export const createStylePresets = ({
         iconColor: colorPrimitives.inkBase,
       },
       hover: {
-        backgroundColor: colorPrimitives.interactive110,
+        borderWidth: borderPrimitives.borderWidth020,
       },
       active: {
-        backgroundColor: colorPrimitives.interactive120,
+        borderWidth: borderPrimitives.borderWidth010,
       },
       current: {
+        color: colorPrimitives.inkInverse,
+        iconColor: colorPrimitives.inkInverse,
         backgroundColor: colorPrimitives.interactive130,
-      },
-      disabled: {
-        backgroundColor: colorPrimitives.disabled,
-        color: colorPrimitives.inkNonEssential,
-        iconColor: colorPrimitives.inkNonEssential,
+        borderStyle: 'none',
       },
     } as StylePresetStates,
     flagSolid: {
@@ -274,6 +279,7 @@ export const createStylePresets = ({
     } as StylePresetStates,
     flagMinimal: {
       base: {
+        backgroundColor: colorPrimitives.transparent,
         color: colorPrimitives.inkInformative,
         iconColor: colorPrimitives.inkInformative,
       },
@@ -294,17 +300,17 @@ export const createStylePresets = ({
     } as StylePresetStates,
     sliderTrack: {
       base: {
-        backgroundColor: colorPrimitives.interface040,
-        borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+        backgroundColor: colorPrimitives.interface030,
+        borderRadius: borderRadiusPrimitives.borderRadiusPill,
       },
       disabled: {
         backgroundColor: colorPrimitives.disabled,
       },
     } as StylePresetStates,
-    sliderIndicatorTrack: {
+    sliderIndicator: {
       base: {
-        backgroundColor: colorPrimitives.interactive030,
-        borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+        backgroundColor: colorPrimitives.interfaceBrand010,
+        borderRadius: borderRadiusPrimitives.borderRadiusPill,
       },
       disabled: {
         backgroundColor: colorPrimitives.interface040,
@@ -321,8 +327,8 @@ export const createStylePresets = ({
     } as StylePresetStates,
     sliderLabels: {
       base: {
-        color: colorPrimitives.inkBrand010,
-        iconColor: colorPrimitives.inkBrand010,
+        color: colorPrimitives.inkSubtle,
+        iconColor: colorPrimitives.inkSubtle,
       },
       disabled: {
         color: colorPrimitives.inkNonEssential,
@@ -332,20 +338,20 @@ export const createStylePresets = ({
     iconButtonSolidPrimary,
     iconButtonOutlinedPrimary,
     iconButtonMinimalPrimary,
-    audioPlayerTrackIndicator,
+    audioPlayerSeekBarIndicator,
     audioPlayerThumb,
     audioPlayerLabels,
-    audioPlayerTrack,
-    audioPlayerTrackBuffering: {
+    audioPlayerSeekBarTrack,
+    audioPlayerSeekBarBuffering: {
       base: {
         backgroundColor: colorPrimitives.interface040,
-        borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+        borderRadius: borderRadiusPrimitives.borderRadiusPill,
       },
     } as StylePresetStates,
-    volumeControlTrackIndicator: audioPlayerTrackIndicator,
+    volumeControlTrackIndicator: audioPlayerSeekBarIndicator,
     volumeControlThumb: audioPlayerThumb,
     volumeControlLabels: audioPlayerLabels,
-    volumeControlTrack: audioPlayerTrack,
+    volumeControlTrack: audioPlayerSeekBarTrack,
     volumeControlButtons: iconButtonMinimalPrimary,
     audioPlayerPopoutButton: iconButtonMinimalPrimary,
     audioPlayerControlButton: iconButtonMinimalPrimary,
@@ -355,7 +361,7 @@ export const createStylePresets = ({
         borderColor: colorPrimitives.interfaceBrand010,
         borderStyle: 'solid',
         borderWidth: borderPrimitives.borderWidth020,
-        borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+        borderRadius: borderRadiusPrimitives.borderRadiusPill,
       },
     } as StylePresetStates,
     circularProgressIndicatorTrackPrimary: {
@@ -363,15 +369,15 @@ export const createStylePresets = ({
         borderColor: colorPrimitives.neutral020,
         borderStyle: 'solid',
         borderWidth: borderPrimitives.borderWidth020,
-        borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+        borderRadius: borderRadiusPrimitives.borderRadiusPill,
       },
     } as StylePresetStates,
     circularProgressIndicatorIndicatorInverse: {
       base: {
-        borderColor: colorPrimitives.white,
+        borderColor: colorPrimitives.interactive010,
         borderStyle: 'solid',
         borderWidth: borderPrimitives.borderWidth020,
-        borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+        borderRadius: borderRadiusPrimitives.borderRadiusPill,
       },
     } as StylePresetStates,
     circularProgressIndicatorTrackInverse: {
@@ -379,27 +385,27 @@ export const createStylePresets = ({
         borderColor: overlayPrimitives.overlayLight020,
         borderStyle: 'solid',
         borderWidth: borderPrimitives.borderWidth020,
-        borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+        borderRadius: borderRadiusPrimitives.borderRadiusPill,
       },
     } as StylePresetStates,
-    imageSquared: {
+    imageSharp: {
       loading: {
         backgroundColor: colorPrimitives.skeleton010,
         iconColor: colorPrimitives.inkNonEssential,
       },
     } as StylePresetStates,
-    imageSemiRounded: {
+    imageRounded: {
       base: {
-        borderRadius: borderRadiusPrimitives[BorderRadiusShape.SemiRounded],
+        borderRadius: borderRadiusPrimitives.borderRadiusRounded020,
       },
       loading: {
-        backgroundColor: colorPrimitives.skeleton020,
+        backgroundColor: colorPrimitives.skeleton010,
         iconColor: colorPrimitives.inkNonEssential,
       },
     } as StylePresetStates,
-    imageRounded: {
+    imageCircle: {
       base: {
-        borderRadius: borderRadiusPrimitives[BorderRadiusShape.Rounded],
+        borderRadius: borderRadiusPrimitives.borderRadiusCircle,
       },
       loading: {
         backgroundColor: colorPrimitives.skeleton010,

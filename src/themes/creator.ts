@@ -2,10 +2,6 @@ import {deepMerge} from '../utils/deep-merge';
 import {createThemeColors, Colors, ColorKeys} from './mappers/colors';
 import {colorPrimitives, ColorPrimitives} from './newskit-light/colors';
 import {Animation, animationPrimitives} from './newskit-light/animation';
-import {
-  BorderRadius,
-  borderRadiusPrimitives,
-} from './newskit-light/border-radius';
 import {borderPrimitives} from './newskit-light/borders';
 import {Breakpoints, breakpointPrimitives} from './newskit-light/breakpoints';
 import {Grid, gridPrimitives} from './newskit-light/grid';
@@ -19,6 +15,7 @@ import {
 } from './newskit-light/spacing';
 import {TypePresets, createTypePresets} from './mappers/type-presets';
 import {Borders, createBorders} from './mappers/borders';
+import {BorderRadius, createBorderRadius} from './mappers/border-radius';
 import {Shadow, shadowPrimitives} from './newskit-light/shadow';
 import {Overlay, overlayPrimitives} from './newskit-light/overlay';
 import {createStylePresets, StylePresets} from './mappers/style-preset';
@@ -28,6 +25,8 @@ import {
   createMarginPresets,
   MarginPreset,
 } from './mappers/spacing';
+
+const borderRadiusPrimitives = createBorderRadius(sizingPrimitives);
 
 type ColourableIcon = React.ComponentType<{
   $size?: IconSizeKeys;

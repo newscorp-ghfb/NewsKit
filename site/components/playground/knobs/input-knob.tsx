@@ -42,7 +42,7 @@ export const StyledInput = styled.input`
   width: 100%;
   max-width: 350px;
   box-sizing: border-box;
-  border-radius: ${({theme}) => theme.borderRadius.semiRounded.sizing040};
+  border-radius: ${({theme}) => theme.borderRadius.borderRadiusDefault};
   border-style: solid;
   border-width: ${({theme}) => theme.borders.borderWidth020};
   border-color: ${getColorFromTheme('interface040')};

@@ -5,7 +5,6 @@ import {
   StylePresetStateKeys,
 } from '../themes/mappers/style-preset';
 import {filterObject, rejectObject} from './filter-object';
-import {SizingKeys} from '../themes/newskit-light/spacing';
 import {Theme} from '../themes/creator';
 
 export interface GetStylePresetFromThemeOptions {
@@ -16,25 +15,15 @@ export interface GetStylePresetFromThemeOptions {
   filterStates?: StylePresetStateKeys[];
   omitStyles?: StylePresetStyleKeys[];
   filterStyles?: StylePresetStyleKeys[];
-  borderRadiusSize?: SizingKeys;
 }
 const getPresetStyles = (
   presetStyles: StylePresetStyles,
   options?: GetStylePresetFromThemeOptions,
 ) => {
-  const {filterStyles = null, omitStyles = [], borderRadiusSize = undefined} =
-    options || {};
-  const {borderRadius: borderRadiusSizing, ...styles} = filterStyles
+  const {filterStyles = null, omitStyles = []} = options || {};
+  return filterStyles
     ? filterObject(presetStyles, filterStyles)
     : rejectObject(presetStyles, omitStyles);
-  const borderRadius =
-    borderRadiusSizing && borderRadiusSize
-      ? borderRadiusSizing[borderRadiusSize]
-      : '';
-  return {
-    ...styles,
-    borderRadius,
-  };
 };
 const cssTmpl = (
   {iconColor = '', ...cssObject}: ReturnType<typeof getPresetStyles>,

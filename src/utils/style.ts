@@ -13,6 +13,7 @@ import {GridKeys} from '../themes/newskit-light/grid';
 import {ShadowKeys} from '../themes/newskit-light/shadow';
 import {SizingKeys, IconSizeKeys} from '../themes/newskit-light/spacing';
 import {MarginPresetKeys, PaddingPresetKeys} from '../themes/mappers/spacing';
+import {BorderRadiusKeys} from '../themes/mappers/border-radius';
 
 export {css, CSSObject} from '@emotion/core';
 
@@ -54,6 +55,10 @@ export const getSizingFromTheme = getValueFromTheme<
 >('sizing');
 
 export const getBorderFromTheme = getValueFromTheme<BorderKeys>('borders');
+
+export const getBorderRadiusFromTheme = getValueFromTheme<BorderRadiusKeys>(
+  'borderRadius',
+);
 
 export const getGridSettingFromTheme = getValueFromTheme<GridKeys>('grid');
 

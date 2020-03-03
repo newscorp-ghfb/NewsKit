@@ -18,6 +18,7 @@ exports[`Tag href renders as an anchor 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -35,21 +36,11 @@ exports[`Tag href renders as an anchor 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #fafafa;
+  border-width: 2px;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -148,11 +139,11 @@ exports[`Tag href renders in disable state as a div 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: not-allowed;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #9c9c9c;
-  background-color: #f0f0f0;
+  color: #2e2e2e;
 }
 
 .emotion-2 svg {
@@ -161,8 +152,16 @@ exports[`Tag href renders in disable state as a div 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 <div
@@ -200,6 +199,7 @@ exports[`Tag renders a tag with an icon 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -217,21 +217,11 @@ exports[`Tag renders a tag with an icon 1`] = `
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #fafafa;
+  border-width: 2px;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-4:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-4:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  border-width: 1px;
 }
 
 .emotion-3 {
@@ -352,11 +342,11 @@ exports[`Tag renders in disabled state 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: not-allowed;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #9c9c9c;
-  background-color: #f0f0f0;
+  color: #2e2e2e;
 }
 
 .emotion-2 svg {
@@ -365,8 +355,16 @@ exports[`Tag renders in disabled state 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-width: 1px;
 }
 
 <div
@@ -434,6 +432,7 @@ exports[`Tag renders with Large size 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -451,21 +450,11 @@ exports[`Tag renders with Large size 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #fafafa;
+  border-width: 2px;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  border-width: 1px;
 }
 
 <div
@@ -503,6 +492,7 @@ exports[`Tag renders with Medium size 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -520,21 +510,11 @@ exports[`Tag renders with Medium size 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #fafafa;
+  border-width: 2px;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  border-width: 1px;
 }
 
 .emotion-1 {
@@ -632,6 +612,7 @@ exports[`Tag renders with Small size 1`] = `
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -649,21 +630,11 @@ exports[`Tag renders with Small size 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #fafafa;
+  border-width: 2px;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  border-width: 1px;
 }
 
 <div
@@ -701,6 +672,7 @@ exports[`Tag renders with default styles 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: default;
+  background-color: transparent;
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
@@ -718,21 +690,11 @@ exports[`Tag renders with default styles 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #fafafa;
+  border-width: 2px;
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-2:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  border-width: 1px;
 }
 
 .emotion-1 {

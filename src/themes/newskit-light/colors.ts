@@ -112,7 +112,7 @@ export const colorPrimitives = {
   interactive040: colorPalettes.blue070,
   interactive050: colorPalettes.blue080,
   interactive010: colorPalettes.blue010,
-  interactive020: colorPalettes.blue040,
+  interactive020: colorPalettes.blue020,
   interactive110: colorPalettes.neutral010,
   interactive120: colorPalettes.neutral020,
   interactive130: colorPalettes.neutral080,

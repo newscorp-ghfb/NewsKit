@@ -5,7 +5,6 @@ export interface BaseFlagProps {
   $typePreset?: string;
   $stylePreset?: string;
   isDisabled?: boolean;
-  borderRadiusSize?: SizingKeys;
   minHeight?: SizingKeys;
   padding?: PaddingPresetKeys;
   iconSize?: IconSizeKeys;

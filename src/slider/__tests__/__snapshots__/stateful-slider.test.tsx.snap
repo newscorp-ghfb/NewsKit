@@ -39,8 +39,8 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #e4e4e4;
-  border-radius: 100vw;
+  background-color: #f0f0f0;
+  border-radius: 20rem;
   margin: calc(32px/2 - 12px/2) calc(32px/2);
   height: 12px;
   width: 100%;
@@ -51,11 +51,11 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
 }
 
 .emotion-0 {
-  background-color: #FFFFFF;
-  border-style: solid;
+  background-color: #0A68C1;
   border-color: #0A68C1;
   border-width: 1px;
-  border-radius: 100vw;
+  border-radius: 50%;
+  outline: none;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -78,12 +78,25 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #02509B;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #01396E;
 }
 
 .emotion-0:active:not(:disabled) svg {
   fill: #535353;
   color: #535353;
+}
+
+.emotion-0:disabled {
+  border-style: none;
+}
+
+.emotion-0:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div

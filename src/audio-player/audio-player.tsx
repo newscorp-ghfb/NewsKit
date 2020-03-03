@@ -78,12 +78,12 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     ...$volumePresets,
   };
   const trackPresets: Required<AudioPlayerProps['$trackPresets']> = {
-    $sliderIndicatorTrackStylePreset: 'audioPlayerTrackIndicator',
+    $sliderIndicatorTrackStylePreset: 'audioPlayerSeekBarIndicator',
     $sliderThumbStylePreset: 'audioPlayerThumb',
     $sliderLabelsStylePreset: 'audioPlayerLabels',
     $sliderThumbLabelStylePreset: 'audioPlayerLabels',
-    $sliderTrackStylePreset: 'audioPlayerTrack',
-    $bufferingStylePreset: 'audioPlayerTrackBuffering',
+    $sliderTrackStylePreset: 'audioPlayerSeekBarTrack',
+    $bufferingStylePreset: 'audioPlayerSeekBarBuffering',
     ...$trackPresets,
   };
   const controlPresets: Required<AudioPlayerProps['$controlPresets']> = {

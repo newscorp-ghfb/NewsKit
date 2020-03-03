@@ -35,7 +35,7 @@ export const TextBoxSwatch = styled.span<{
   display: inline-block;
   width: 192px;
   height: ${getSizingFromTheme('sizing060')};
-  border-radius: ${({theme}) => theme.borderRadius.semiRounded.sizing040};
+  border-radius: ${({theme}) => theme.borderRadius.borderRadiusDefault};
   background-color: ${({theme, themeColor}) => theme.colors[themeColor]};
   color: ${({theme, dark}) =>
     dark ? theme.colors.white : theme.colors.inkContrast};

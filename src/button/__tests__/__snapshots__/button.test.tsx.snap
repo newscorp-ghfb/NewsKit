@@ -139,8 +139,8 @@ exports[`Button IconButton renders Icon Button 1`] = `
   cursor: pointer;
   box-sizing: border-box;
   background-color: #0A68C1;
+  border-radius: 50%;
   color: #FFFFFF;
-  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -217,7 +217,7 @@ exports[`Button IconButton renders Icon Button 1`] = `
 
 exports[`Button IconButton renders Icon Button in loading State 1`] = `
 <DocumentFragment>
-  .emotion-10 {
+  .emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -238,7 +238,7 @@ exports[`Button IconButton renders Icon Button in loading State 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -247,7 +247,7 @@ exports[`Button IconButton renders Icon Button in loading State 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-7 {
+.emotion-6 {
   position: absolute;
   top: 0;
   left: 0;
@@ -264,23 +264,13 @@ exports[`Button IconButton renders Icon Button in loading State 1`] = `
   transform-origin: center;
 }
 
-.emotion-8 {
+.emotion-7 {
   height: 32px;
   width: 32px;
   position: relative;
 }
 
-.emotion-0 {
-  box-sizing: border-box;
-  height: 32px;
-  width: 32px;
-  border-color: #f0f0f0;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 50%;
-}
-
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   width: calc( 32px / 2 );
   height: 32px;
@@ -294,7 +284,7 @@ exports[`Button IconButton renders Icon Button in loading State 1`] = `
   position: absolute;
 }
 
-.emotion-2 {
+.emotion-1 {
   width: calc( 32px / 2 );
   height: 32px;
   -webkit-transform-origin: 100% center;
@@ -309,17 +299,18 @@ exports[`Button IconButton renders Icon Button in loading State 1`] = `
   animation: left-wobble 1.4s linear infinite;
 }
 
-.emotion-1 {
+.emotion-0 {
   box-sizing: border-box;
   height: 32px;
   width: 32px;
   border-color: #0A68C1;
   border-style: solid;
   border-width: 2px;
+  border-radius: 20rem;
   border-radius: 50%;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
   width: calc( 32px / 2 );
   height: 32px;
@@ -336,7 +327,7 @@ exports[`Button IconButton renders Icon Button in loading State 1`] = `
   transform: rotate(-90deg);
 }
 
-.emotion-5 {
+.emotion-4 {
   width: calc( 32px / 2 );
   height: 32px;
   -webkit-transform-origin: 100% center;
@@ -353,7 +344,7 @@ exports[`Button IconButton renders Icon Button in loading State 1`] = `
   animation: right-wobble 1.4s linear infinite;
 }
 
-.emotion-11 {
+.emotion-10 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -369,11 +360,11 @@ exports[`Button IconButton renders Icon Button in loading State 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
+  cursor: disabled;
   box-sizing: border-box;
-  background-color: #0A68C1;
+  background-color: #d5ebff;
+  border-radius: 50%;
   color: #FFFFFF;
-  border-radius: 100vw;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -388,78 +379,56 @@ exports[`Button IconButton renders Icon Button in loading State 1`] = `
   height: 64px;
 }
 
-.emotion-11:disabled {
+.emotion-10:disabled {
   cursor: not-allowed;
 }
 
-.emotion-11 svg {
+.emotion-10 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-11:hover:not(:disabled) {
-  background-color: #02509B;
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
-}
-
-.emotion-11:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-11:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-11:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-11 svg {
+.emotion-10 svg {
   width: 32px;
   height: 32px;
 }
 
 <button
-    class="emotion-11"
+    class="emotion-10"
     type="button"
   >
     <div
-      class="emotion-10"
+      class="emotion-9"
     >
       <div
-        class="emotion-9"
+        class="emotion-8"
       >
         <div
           aria-label="loading"
-          class="emotion-8"
+          class="emotion-7"
         >
           <div
-            class="emotion-0"
-          />
-          <div
-            class="emotion-7"
+            class="emotion-6"
           >
             <div
-              class="emotion-3"
+              class="emotion-2"
             >
               <div
-                class="emotion-2"
+                class="emotion-1"
               >
                 <div
-                  class="emotion-1"
+                  class="emotion-0"
                 />
               </div>
             </div>
             <div
-              class="emotion-6"
+              class="emotion-5"
             >
               <div
-                class="emotion-5"
+                class="emotion-4"
               >
                 <div
-                  class="emotion-1"
+                  class="emotion-0"
                 />
               </div>
             </div>
@@ -522,8 +491,8 @@ exports[`Button IconButton renders Icon Button with default size 1`] = `
   cursor: pointer;
   box-sizing: border-box;
   background-color: #0A68C1;
+  border-radius: 50%;
   color: #FFFFFF;
-  border-radius: 100vw;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -665,8 +634,8 @@ exports[`Button IconButton renders when there is an icon with a colour 1`] = `
   cursor: pointer;
   box-sizing: border-box;
   background-color: #0A68C1;
+  border-radius: 50%;
   color: #FFFFFF;
-  border-radius: 100vw;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -764,7 +733,7 @@ exports[`Button IconButton renders when there is an icon with a colour 1`] = `
 
 exports[`Button Loading Button renders Large Button 1`] = `
 <DocumentFragment>
-  .emotion-10 {
+  .emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -785,72 +754,7 @@ exports[`Button Loading Button renders Large Button 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: calc(8px * 0.25);
-  min-height: 16px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.75;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 16px 24px;
-}
-
-.emotion-11:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-11 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-11:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-11:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-11:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-11:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-11 svg {
-  width: 32px;
-  height: 32px;
-}
-
-.emotion-9 {
+.emotion-8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -859,7 +763,7 @@ exports[`Button Loading Button renders Large Button 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-7 {
+.emotion-6 {
   position: absolute;
   top: 0;
   left: 0;
@@ -876,23 +780,60 @@ exports[`Button Loading Button renders Large Button 1`] = `
   transform-origin: center;
 }
 
-.emotion-8 {
+.emotion-10 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: disabled;
+  box-sizing: border-box;
+  background-color: #d5ebff;
+  color: #FFFFFF;
+  border-radius: 8px;
+  min-height: 16px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 16px 24px;
+}
+
+.emotion-10:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-10 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-10 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-7 {
   height: 32px;
   width: 32px;
   position: relative;
 }
 
-.emotion-0 {
-  box-sizing: border-box;
-  height: 32px;
-  width: 32px;
-  border-color: #f0f0f0;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 50%;
-}
-
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   width: calc( 32px / 2 );
   height: 32px;
@@ -906,7 +847,7 @@ exports[`Button Loading Button renders Large Button 1`] = `
   position: absolute;
 }
 
-.emotion-2 {
+.emotion-1 {
   width: calc( 32px / 2 );
   height: 32px;
   -webkit-transform-origin: 100% center;
@@ -921,17 +862,18 @@ exports[`Button Loading Button renders Large Button 1`] = `
   animation: left-wobble 1.4s linear infinite;
 }
 
-.emotion-1 {
+.emotion-0 {
   box-sizing: border-box;
   height: 32px;
   width: 32px;
   border-color: #0A68C1;
   border-style: solid;
   border-width: 2px;
+  border-radius: 20rem;
   border-radius: 50%;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
   width: calc( 32px / 2 );
   height: 32px;
@@ -948,7 +890,7 @@ exports[`Button Loading Button renders Large Button 1`] = `
   transform: rotate(-90deg);
 }
 
-.emotion-5 {
+.emotion-4 {
   width: calc( 32px / 2 );
   height: 32px;
   -webkit-transform-origin: 100% center;
@@ -966,44 +908,41 @@ exports[`Button Loading Button renders Large Button 1`] = `
 }
 
 <button
-    class="emotion-11"
+    class="emotion-10"
     type="button"
   >
     <div
-      class="emotion-10"
+      class="emotion-9"
     >
       <div
-        class="emotion-9"
+        class="emotion-8"
       >
         <div
           aria-label="loading"
-          class="emotion-8"
+          class="emotion-7"
         >
           <div
-            class="emotion-0"
-          />
-          <div
-            class="emotion-7"
+            class="emotion-6"
           >
             <div
-              class="emotion-3"
+              class="emotion-2"
             >
               <div
-                class="emotion-2"
+                class="emotion-1"
               >
                 <div
-                  class="emotion-1"
+                  class="emotion-0"
                 />
               </div>
             </div>
             <div
-              class="emotion-6"
+              class="emotion-5"
             >
               <div
-                class="emotion-5"
+                class="emotion-4"
               >
                 <div
-                  class="emotion-1"
+                  class="emotion-0"
                 />
               </div>
             </div>
@@ -1017,7 +956,7 @@ exports[`Button Loading Button renders Large Button 1`] = `
 
 exports[`Button Loading Button renders Medium Button 1`] = `
 <DocumentFragment>
-  .emotion-10 {
+  .emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1038,72 +977,7 @@ exports[`Button Loading Button renders Medium Button 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: calc(8px * 0.25);
-  min-height: 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 12px 16px;
-}
-
-.emotion-11:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-11 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-11:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-11:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-11:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-11:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-11 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-9 {
+.emotion-8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1112,7 +986,7 @@ exports[`Button Loading Button renders Medium Button 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-7 {
+.emotion-6 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1129,23 +1003,60 @@ exports[`Button Loading Button renders Medium Button 1`] = `
   transform-origin: center;
 }
 
-.emotion-8 {
+.emotion-10 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: disabled;
+  box-sizing: border-box;
+  background-color: #d5ebff;
+  color: #FFFFFF;
+  border-radius: 8px;
+  min-height: 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 12px 16px;
+}
+
+.emotion-10:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-10 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-10 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-7 {
   height: 24px;
   width: 24px;
   position: relative;
 }
 
-.emotion-0 {
-  box-sizing: border-box;
-  height: 24px;
-  width: 24px;
-  border-color: #f0f0f0;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 50%;
-}
-
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   width: calc( 24px / 2 );
   height: 24px;
@@ -1159,7 +1070,7 @@ exports[`Button Loading Button renders Medium Button 1`] = `
   position: absolute;
 }
 
-.emotion-2 {
+.emotion-1 {
   width: calc( 24px / 2 );
   height: 24px;
   -webkit-transform-origin: 100% center;
@@ -1174,17 +1085,18 @@ exports[`Button Loading Button renders Medium Button 1`] = `
   animation: left-wobble 1.4s linear infinite;
 }
 
-.emotion-1 {
+.emotion-0 {
   box-sizing: border-box;
   height: 24px;
   width: 24px;
   border-color: #0A68C1;
   border-style: solid;
   border-width: 2px;
+  border-radius: 20rem;
   border-radius: 50%;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
   width: calc( 24px / 2 );
   height: 24px;
@@ -1201,7 +1113,7 @@ exports[`Button Loading Button renders Medium Button 1`] = `
   transform: rotate(-90deg);
 }
 
-.emotion-5 {
+.emotion-4 {
   width: calc( 24px / 2 );
   height: 24px;
   -webkit-transform-origin: 100% center;
@@ -1219,44 +1131,41 @@ exports[`Button Loading Button renders Medium Button 1`] = `
 }
 
 <button
-    class="emotion-11"
+    class="emotion-10"
     type="button"
   >
     <div
-      class="emotion-10"
+      class="emotion-9"
     >
       <div
-        class="emotion-9"
+        class="emotion-8"
       >
         <div
           aria-label="loading"
-          class="emotion-8"
+          class="emotion-7"
         >
           <div
-            class="emotion-0"
-          />
-          <div
-            class="emotion-7"
+            class="emotion-6"
           >
             <div
-              class="emotion-3"
+              class="emotion-2"
             >
               <div
-                class="emotion-2"
+                class="emotion-1"
               >
                 <div
-                  class="emotion-1"
+                  class="emotion-0"
                 />
               </div>
             </div>
             <div
-              class="emotion-6"
+              class="emotion-5"
             >
               <div
-                class="emotion-5"
+                class="emotion-4"
               >
                 <div
-                  class="emotion-1"
+                  class="emotion-0"
                 />
               </div>
             </div>
@@ -1270,7 +1179,7 @@ exports[`Button Loading Button renders Medium Button 1`] = `
 
 exports[`Button Loading Button renders Small Button 1`] = `
 <DocumentFragment>
-  .emotion-10 {
+  .emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1291,7 +1200,16 @@ exports[`Button Loading Button renders Small Button 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-10 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -1307,11 +1225,11 @@ exports[`Button Loading Button renders Small Button 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
+  cursor: disabled;
   box-sizing: border-box;
-  background-color: #0A68C1;
+  background-color: #d5ebff;
   color: #FFFFFF;
-  border-radius: calc(8px * 0.25);
+  border-radius: 8px;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -1325,39 +1243,21 @@ exports[`Button Loading Button renders Small Button 1`] = `
   margin: 8px 0;
 }
 
-.emotion-11:disabled {
+.emotion-10:disabled {
   cursor: not-allowed;
 }
 
-.emotion-11 svg {
+.emotion-10 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-11:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-11:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-11:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-11:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-11 svg {
+.emotion-10 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-11::before {
+.emotion-10::before {
   content: '';
   position: absolute;
   left: 0;
@@ -1366,32 +1266,13 @@ exports[`Button Loading Button renders Small Button 1`] = `
   height: 48px;
 }
 
-.emotion-9 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-8 {
+.emotion-7 {
   height: 16px;
   width: 16px;
   position: relative;
 }
 
-.emotion-0 {
-  box-sizing: border-box;
-  height: 16px;
-  width: 16px;
-  border-color: #f0f0f0;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 50%;
-}
-
-.emotion-7 {
+.emotion-6 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1408,7 +1289,7 @@ exports[`Button Loading Button renders Small Button 1`] = `
   transform-origin: center;
 }
 
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   width: calc( 16px / 2 );
   height: 16px;
@@ -1422,7 +1303,7 @@ exports[`Button Loading Button renders Small Button 1`] = `
   position: absolute;
 }
 
-.emotion-2 {
+.emotion-1 {
   width: calc( 16px / 2 );
   height: 16px;
   -webkit-transform-origin: 100% center;
@@ -1437,17 +1318,18 @@ exports[`Button Loading Button renders Small Button 1`] = `
   animation: left-wobble 1.4s linear infinite;
 }
 
-.emotion-1 {
+.emotion-0 {
   box-sizing: border-box;
   height: 16px;
   width: 16px;
   border-color: #0A68C1;
   border-style: solid;
   border-width: 2px;
+  border-radius: 20rem;
   border-radius: 50%;
 }
 
-.emotion-6 {
+.emotion-5 {
   box-sizing: border-box;
   width: calc( 16px / 2 );
   height: 16px;
@@ -1464,7 +1346,7 @@ exports[`Button Loading Button renders Small Button 1`] = `
   transform: rotate(-90deg);
 }
 
-.emotion-5 {
+.emotion-4 {
   width: calc( 16px / 2 );
   height: 16px;
   -webkit-transform-origin: 100% center;
@@ -1482,44 +1364,41 @@ exports[`Button Loading Button renders Small Button 1`] = `
 }
 
 <button
-    class="emotion-11"
+    class="emotion-10"
     type="button"
   >
     <div
-      class="emotion-10"
+      class="emotion-9"
     >
       <div
-        class="emotion-9"
+        class="emotion-8"
       >
         <div
           aria-label="loading"
-          class="emotion-8"
+          class="emotion-7"
         >
           <div
-            class="emotion-0"
-          />
-          <div
-            class="emotion-7"
+            class="emotion-6"
           >
             <div
-              class="emotion-3"
+              class="emotion-2"
             >
               <div
-                class="emotion-2"
+                class="emotion-1"
               >
                 <div
-                  class="emotion-1"
+                  class="emotion-0"
                 />
               </div>
             </div>
             <div
-              class="emotion-6"
+              class="emotion-5"
             >
               <div
-                class="emotion-5"
+                class="emotion-4"
               >
                 <div
-                  class="emotion-1"
+                  class="emotion-0"
                 />
               </div>
             </div>
@@ -1577,7 +1456,7 @@ exports[`Button renders Large Button 1`] = `
   box-sizing: border-box;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: calc(8px * 0.25);
+  border-radius: 8px;
   min-height: 16px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
@@ -1679,7 +1558,7 @@ exports[`Button renders Medium Button 1`] = `
   box-sizing: border-box;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: calc(8px * 0.25);
+  border-radius: 8px;
   min-height: 12px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
@@ -1781,7 +1660,7 @@ exports[`Button renders Small Button 1`] = `
   box-sizing: border-box;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: calc(8px * 0.25);
+  border-radius: 8px;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -1890,7 +1769,7 @@ exports[`Button renders when there is no icon 1`] = `
   box-sizing: border-box;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: calc(8px * 0.25);
+  border-radius: 8px;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -2015,9 +1894,9 @@ exports[`Button renders with different style preset 1`] = `
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
+  border-radius: 8px;
   color: #0A68C1;
   background-color: transparent;
-  border-radius: calc(8px * 0.25);
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -2038,14 +1917,6 @@ exports[`Button renders with different style preset 1`] = `
 .emotion-1 svg {
   fill: #0A68C1;
   color: #0A68C1;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #e6f4ff;
-}
-
-.emotion-1:active:not(:disabled) {
-  background-color: #6EB2F2;
 }
 
 .emotion-1:disabled {
@@ -2127,7 +1998,7 @@ exports[`Button renders with fallback formatting 1`] = `
   box-sizing: border-box;
   background-color: #0A68C1;
   color: #FFFFFF;
-  border-radius: calc(8px * 0.25);
+  border-radius: 8px;
   min-height: 8px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
