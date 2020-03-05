@@ -7,17 +7,6 @@ import {
   getFontSizingFromTheme,
 } from '../../utils/style';
 import {H1} from '../../typography';
-import {Tag} from '../../tag';
-
-export const LiveTag = styled(Tag)`
-  width: ${getSizingFromTheme('sizing080')};
-  height: ${getSizingFromTheme('sizing050')};
-  padding: 0;
-  text-align: center;
-  background-color: ${getColorFromTheme('semanticNegative030')};
-  color: ${getColorFromTheme('inkInverse')};
-  text-transform: uppercase;
-`;
 
 export interface CenterProp {
   center?: boolean;

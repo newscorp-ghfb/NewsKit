@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  LiveFlag,
   ProgrammeTime,
   ProgrammeTitle,
   ProgrammeDescription,
@@ -12,19 +11,28 @@ import {Grid, Cell} from '../../grid';
 import {Image} from '../../image';
 import {Stack, Flow, StackDistribution} from '../../stack';
 import {Block} from '../../block';
+import {Flag} from '../../flag';
 
 interface DescriptionMetaProps {
   title?: string;
   time?: string;
   description?: string;
   live?: boolean;
+  flag?: React.ComponentType | string;
   tags?: string[];
 }
+
+const renderFlag = (CustomFlag: React.ComponentType | string) =>
+  typeof CustomFlag === 'string' ? (
+    <Flag $stylePreset="flagSolidLive">{CustomFlag}</Flag>
+  ) : (
+    <CustomFlag />
+  );
 
 const DescriptionsMeta: React.FC<DescriptionMetaProps & CenterProp> = ({
   center = false,
   time,
-  live,
+  flag,
   title,
   description,
   tags,
@@ -33,7 +41,7 @@ const DescriptionsMeta: React.FC<DescriptionMetaProps & CenterProp> = ({
     flow={center ? Flow.VerticalCenter : Flow.VerticalLeft}
     stackDistribution={StackDistribution.Start}
   >
-    {(live || time) && (
+    {(flag || time) && (
       <Block $margin="spaceStack050">
         <Stack
           flow={center ? Flow.VerticalCenter : Flow.HorizontalCenter}
@@ -42,7 +50,7 @@ const DescriptionsMeta: React.FC<DescriptionMetaProps & CenterProp> = ({
           }
           space={center ? 'sizing020' : 'sizing040'}
         >
-          {live && <LiveFlag $stylePreset="flagSolidLive">Live</LiveFlag>}
+          {flag && renderFlag(flag)}
           {time && <ProgrammeTime>{time}</ProgrammeTime>}
         </Stack>
       </Block>

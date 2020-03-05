@@ -55,6 +55,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     description,
     tags = [],
     live = false,
+    flag,
     onNextTrack,
     disableNextTrack,
     onPreviousTrack,
@@ -383,6 +384,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
           imgSrc={imgSrc}
           imgAlt={imgAlt}
           live={live}
+          flag={flag}
           time={time}
           title={title}
           description={description}

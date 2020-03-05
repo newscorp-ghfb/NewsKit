@@ -1,3 +1,4 @@
+import React from 'react';
 import {fireEvent, EventType} from '@testing-library/react';
 import {
   renderToFragmentWithTheme,
@@ -6,6 +7,8 @@ import {
 } from '../../test/test-utils';
 import {AudioPlayer, AudioPlayerProps} from '../audio-player';
 import {EventTrigger} from '../../instrumentation';
+import {Flag} from '../../flag';
+import {Circle} from '../../icons/circle';
 
 const props = {
   src: 'https://radio.talkradio.co.uk/stream',
@@ -18,6 +21,13 @@ const props = {
   live: false,
 };
 
+const CustomFlag = () => (
+  <Flag>
+    <Circle />
+    Custom Flag
+  </Flag>
+);
+
 describe('Live AudioPlayer', () => {
   describe('render', () => {
     test('default player', () => {
@@ -29,6 +39,16 @@ describe('Live AudioPlayer', () => {
       const fragment = renderToFragmentWithTheme(AudioPlayer, {
         ...props,
         live: true,
+        flag: 'Live',
+      } as AudioPlayerProps);
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('with flag passed as Flag Component and Icon', () => {
+      const fragment = renderToFragmentWithTheme(AudioPlayer, {
+        ...props,
+        live: true,
+        flag: CustomFlag,
       } as AudioPlayerProps);
       expect(fragment).toMatchSnapshot();
     });

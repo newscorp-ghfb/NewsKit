@@ -38,7 +38,16 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
     Textual description of the show time e.g. 1PM - 3PM.
   </Prop>
   <Prop name="live" type="boolean">
-    If true will display a label indicating the current show is live.
+    If true will display the controls for live player.
+  </Prop>
+  <Prop name="flag" type="React.Component | string">
+    If this parameter is provided as a string, the text of the default Flag
+    component will change according to the passed value. <br />
+    If this is provided as a custom component, it will replace the current Live Flag implementation.
+    In this case it is recommended for the passed component to be a <b>Flag</b>.
+    Also you will have to provide the desired style preset and spacings to your component 
+    (the default one is <b>flagSolidLive</b>). <br />
+    If left undefined nothing will be rendered.
   </Prop>
   <Prop name="autoplay" type="boolean">
     <div>
@@ -75,8 +84,8 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
   <Prop name="$volumePresets" type="Object<SliderStylePresets>">
     <div>
       This prop is an object containing all the following volume slider style
-      presets. For more details please see the slider prop documentation
-      [here](/components/slider). The default style presets can be changed via
+      presets. For more details please see the slider prop documentation &nbsp;
+      <a href="/components/slider">here</a>. The default style presets can be changed via
       the theme.
     </div>
     <ul>
@@ -125,7 +134,9 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
 <Playground
   componentName="AudioPlayer"
   newskitPath="/audio-player"
-  component={AudioPlayer}
+  component={props => (
+      <AudioPlayer {...props} live />
+  )}
   knobs={[
     {
       name: 'Source',
@@ -148,10 +159,9 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       value: '1PM to 3PM',
     },
     {
-      name: 'Live',
-      propName: 'live',
-      type: 'boolean',
-      value: true,
+      name: 'Flag',
+      propName: 'flag',
+      value: 'Live',
     },
     {
       name: 'Auto Play',
@@ -211,10 +221,9 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       value: '1PM to 3PM',
     },
     {
-      name: 'Live',
-      propName: 'live',
-      type: 'boolean',
-      value: false,
+      name: 'Flag',
+      propName: 'flag',
+      value: 'Most Popular',
     },
     {
       name: 'Auto Play',

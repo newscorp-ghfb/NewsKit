@@ -5,16 +5,25 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {styled} from '../../utils/style';
+import {Flag} from '../../flag';
+import {SaveInactive} from '../../icons/save-inactive';
 
 const radioPlayerImage = require('./radio-player-image.png');
 
 export const name = 'audio-player';
+const CustomFlag = () => (
+  <Flag $spacing="spaceInset000Squish" $stylePreset="flagMinimal">
+    <SaveInactive />
+    Most Popular
+  </Flag>
+);
 
 const liveAudioProps = {
   src: 'https://radio.talkradio.co.uk/stream',
   imgAlt: 'Giles Coren, Presenter',
   title: 'The Breakfast Show with Giles Coren',
   live: true,
+  flag: 'Live',
   imgSrc: radioPlayerImage,
   captionSrc: 'captions.vtt',
   time: '1pm - 3pm',
@@ -56,6 +65,7 @@ export const component = () => (
         onNextTrack={alert('Next track clicked!')}
         onPreviousTrack={alert('Previous track clicked!')}
         popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
+        flag={CustomFlag}
       />
     </PlayerContainer>
 
