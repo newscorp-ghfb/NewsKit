@@ -25,9 +25,7 @@ describe('Documentation Site - header-navigation component', () => {
         .should('exist')
         .and('not.be.visible');
       cy.get(hamburgerIconTestID).click();
-      cy.get(sidebarTestID)
-        .should('be.visible')
-        .click();
+      cy.get(sidebarTestID).should('be.visible');
       cy.get('body').should('have.css', 'overflow', 'hidden');
       cy.get(overlayTestID).should('have.css', 'visibility', 'visible');
 

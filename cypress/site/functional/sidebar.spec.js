@@ -21,7 +21,6 @@ describe('Documentation Site - sidebar component', () => {
     cy.contains('Theming').should('exist');
     cy.contains('Foundations').should('exist');
     cy.contains('Components').should('exist');
-    cy.contains('Pages').should('exist');
     cy.contains('Utilities').should('exist');
     cy.contains('Feedback').should('exist');
 
@@ -54,9 +53,6 @@ describe('Documentation Site - sidebar component', () => {
     cy.contains('Tag').should('exist');
     cy.contains('Tag List').should('exist');
     cy.contains('Unordered List').should('exist');
-
-    cy.get('[data-testid="/pages"]').click();
-    cy.contains('Article').should('exist');
 
     cy.get('[data-testid="/utils"]').click();
     cy.contains('Code Helpers').should('exist');

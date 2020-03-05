@@ -41,9 +41,9 @@
     "id": "/foundations",
     "subNav": [
       {
-        "title": "Typography",
+        "title": "Animation",
         "page": true,
-        "id": "/foundations/typography"
+        "id": "/foundations/animation"
       },
       {
         "title": "Colours",
@@ -51,9 +51,9 @@
         "id": "/foundations/colours"
       },
       {
-        "title": "Animation",
+        "title": "Icons",
         "page": true,
-        "id": "/foundations/animation"
+        "id": "/foundations/icons"
       },
       {
         "title": "Spacing",
@@ -61,9 +61,9 @@
         "id": "/foundations/spacing"
       },
       {
-        "title": "Icons",
+        "title": "Typography",
         "page": true,
-        "id": "/foundations/icons"
+        "id": "/foundations/typography"
       }
     ]
   },
@@ -75,11 +75,6 @@
         "title": "Article Byline",
         "page": true,
         "id": "/components/article-byline"
-      },
-      {
-        "title": "Block",
-        "page": true,
-        "id": "/components/block"
       },
       {
         "title": "Article Headline",
@@ -95,6 +90,11 @@
         "title": "Audio Player",
         "page": true,
         "id": "/components/audio-player"
+      },
+      {
+        "title": "Block",
+        "page": true,
+        "id": "/components/block"
       },
       {
         "title": "Button",
@@ -152,24 +152,24 @@
         "id": "/components/ordered-list"
       },
       {
-        "title": "Share Bar",
-        "page": true,
-        "id": "/components/share-bar"
-      },
-      {
         "title": "Scroll",
         "page": true,
         "id": "/components/scroll"
       },
       {
-        "title": "Stack",
+        "title": "Share Bar",
         "page": true,
-        "id": "/components/stack"
+        "id": "/components/share-bar"
       },
       {
         "title": "Slider",
         "page": true,
         "id": "/components/slider"
+      },
+      {
+        "title": "Stack",
+        "page": true,
+        "id": "/components/stack"
       },
       {
         "title": "Tag",
@@ -204,17 +204,6 @@
     ]
   },
   {
-    "title": "Pages",
-    "id": "/pages",
-    "subNav": [
-      {
-        "title": "Article",
-        "page": true,
-        "id": "/pages/article"
-      }
-    ]
-  },
-  {
     "title": "Utilities",
     "id": "/utils",
     "subNav": [
@@ -228,19 +217,9 @@
             "id": "/utils/code-helpers/css"
           },
           {
-            "title": "getBuiId",
-            "page": true,
-            "id": "/utils/code-helpers/get-bui-id"
-          },
-          {
             "title": "getAnimationFromTheme",
             "page": true,
             "id": "/utils/code-helpers/get-animation-from-theme"
-          },
-          {
-            "title": "getStylePresetFromTheme",
-            "page": true,
-            "id": "/utils/code-helpers/get-style-preset-from-theme"
           },
           {
             "title": "getBorderFromTheme",
@@ -248,9 +227,9 @@
             "id": "/utils/code-helpers/get-border-from-theme"
           },
           {
-            "title": "getMediaQueryFromTheme",
+            "title": "getBuiId",
             "page": true,
-            "id": "/utils/code-helpers/get-media-query-from-theme"
+            "id": "/utils/code-helpers/get-bui-id"
           },
           {
             "title": "getColorFromTheme",
@@ -263,6 +242,11 @@
             "id": "/utils/code-helpers/get-fonts-from-theme"
           },
           {
+            "title": "getMediaQueryFromTheme",
+            "page": true,
+            "id": "/utils/code-helpers/get-media-query-from-theme"
+          },
+          {
             "title": "getShadowFromTheme",
             "page": true,
             "id": "/utils/code-helpers/get-shadow-from-theme"
@@ -271,6 +255,11 @@
             "title": "getSizingFromTheme",
             "page": true,
             "id": "/utils/code-helpers/get-sizing-from-theme"
+          },
+          {
+            "title": "getStylePresetFromTheme",
+            "page": true,
+            "id": "/utils/code-helpers/get-style-preset-from-theme"
           },
           {
             "title": "getTypePresetFromTheme",

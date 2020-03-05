@@ -122,7 +122,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   display: inline-block;
 }
 
-.emotion-30 {
+.emotion-27 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -135,7 +135,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin: 0;
 }
 
-.emotion-29 {
+.emotion-26 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
@@ -213,7 +213,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   float: right;
 }
 
-.emotion-27 {
+.emotion-24 {
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition-property: color;
@@ -225,19 +225,19 @@ exports[`Sidebar renders correctly when closed 1`] = `
   color: #2F75D7;
 }
 
-.emotion-27:hover:not(:disabled) {
+.emotion-24:hover:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-27:active:not(:disabled) {
+.emotion-24:active:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-27:visited:not(:disabled) {
+.emotion-24:visited:not(:disabled) {
   color: #903D91;
 }
 
-.emotion-31 {
+.emotion-28 {
   width: 276px;
   padding: 0 24px;
   position: fixed;
@@ -259,7 +259,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-31 {
+  .emotion-28 {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -267,7 +267,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 <div
-    class="emotion-31"
+    class="emotion-28"
     data-testid="sidebar"
     role="complementary"
   >
@@ -326,11 +326,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
     </div>
     <nav
       aria-label="Sidebar"
-      class="emotion-30"
+      class="emotion-27"
       role="navigation"
     >
       <ul
-        class="emotion-29"
+        class="emotion-26"
         role="list"
       >
         <li
@@ -474,40 +474,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
         >
           <div
             class="emotion-9"
-            data-testid="/pages"
-            tabindex="0"
-          >
-            Pages
-            <svg
-              class="emotion-8"
-              viewBox="0 0 16 16"
-            >
-              <title>
-                close icon
-              </title>
-              <g
-                fill="none"
-              >
-                <mask
-                  fill="white"
-                >
-                  <polygon
-                    points="7 10 12 15 17 10"
-                  />
-                </mask>
-                <polygon
-                  fill="#666"
-                  points="7 10 12 15 17 10"
-                />
-              </g>
-            </svg>
-          </div>
-        </li>
-        <li
-          class="emotion-10"
-        >
-          <div
-            class="emotion-9"
             data-testid="/utils"
             tabindex="0"
           >
@@ -541,7 +507,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
           class="emotion-10"
         >
           <a
-            class="emotion-27"
+            class="emotion-24"
             href="/feedback"
           >
             <div
@@ -586,7 +552,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 exports[`Sidebar renders correctly when open 1`] = `
 <DocumentFragment>
-  .emotion-31 {
+  .emotion-28 {
   width: 276px;
   padding: 0 24px;
   position: fixed;
@@ -608,7 +574,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-31 {
+  .emotion-28 {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -735,7 +701,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   display: inline-block;
 }
 
-.emotion-30 {
+.emotion-27 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -748,7 +714,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin: 0;
 }
 
-.emotion-29 {
+.emotion-26 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
@@ -826,7 +792,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   float: right;
 }
 
-.emotion-27 {
+.emotion-24 {
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition-property: color;
@@ -838,20 +804,20 @@ exports[`Sidebar renders correctly when open 1`] = `
   color: #2F75D7;
 }
 
-.emotion-27:hover:not(:disabled) {
+.emotion-24:hover:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-27:active:not(:disabled) {
+.emotion-24:active:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-27:visited:not(:disabled) {
+.emotion-24:visited:not(:disabled) {
   color: #903D91;
 }
 
 <div
-    class="emotion-31"
+    class="emotion-28"
     data-testid="sidebar"
     open=""
     role="complementary"
@@ -911,11 +877,11 @@ exports[`Sidebar renders correctly when open 1`] = `
     </div>
     <nav
       aria-label="Sidebar"
-      class="emotion-30"
+      class="emotion-27"
       role="navigation"
     >
       <ul
-        class="emotion-29"
+        class="emotion-26"
         role="list"
       >
         <li
@@ -1059,40 +1025,6 @@ exports[`Sidebar renders correctly when open 1`] = `
         >
           <div
             class="emotion-9"
-            data-testid="/pages"
-            tabindex="0"
-          >
-            Pages
-            <svg
-              class="emotion-8"
-              viewBox="0 0 16 16"
-            >
-              <title>
-                close icon
-              </title>
-              <g
-                fill="none"
-              >
-                <mask
-                  fill="white"
-                >
-                  <polygon
-                    points="7 10 12 15 17 10"
-                  />
-                </mask>
-                <polygon
-                  fill="#666"
-                  points="7 10 12 15 17 10"
-                />
-              </g>
-            </svg>
-          </div>
-        </li>
-        <li
-          class="emotion-10"
-        >
-          <div
-            class="emotion-9"
             data-testid="/utils"
             tabindex="0"
           >
@@ -1126,7 +1058,7 @@ exports[`Sidebar renders correctly when open 1`] = `
           class="emotion-10"
         >
           <a
-            class="emotion-27"
+            class="emotion-24"
             href="/feedback"
           >
             <div
