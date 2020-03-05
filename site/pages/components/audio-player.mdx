@@ -81,6 +81,18 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
     </a>
     .
   </Prop>
+  <Prop name="onPreviousTrack" type="function">
+    Will display the previous track button, provided function is executed on click.
+  </Prop>
+  <Prop name="onNextTrack" type="function">
+    Will display the next track button, provided function is executed on click.
+  </Prop>
+  <Prop name="disableNextTrack" type="boolean">
+    Disable the next track button.
+  </Prop>
+  <Prop name="disablePreviousTrack" type="boolean">
+    Disable the previous track button.
+  </Prop>
   <Prop name="$volumePresets" type="Object<SliderStylePresets>">
     <div>
       This prop is an object containing all the following volume slider style
@@ -247,10 +259,32 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       value: 'Giles Coren',
     },
     {
-      name: 'captionSrc',
+      name: 'Caption Src',
       propName: 'captionSrc',
       value: 'captionsSrc.vtt',
     },
+    {
+      name: 'Disable Previous Track',
+      propName: 'disablePreviousTrack',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'Disable Next Track',
+      propName: 'disableNextTrack',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'Skip Next Track',
+      propName: 'onNextTrack',
+      value: (() => {})
+    },
+    {
+      name: 'Skip Previous Track',
+      propName: 'onPreviousTrack',
+      value: (() => {})
+    }
   ]}
 />
 

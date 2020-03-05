@@ -427,9 +427,9 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
             />
           </ControlContainer>
           <ControlPanel
-            onNextTrack={onClickNext}
+            onNextTrack={onNextTrack ? onClickNext : undefined}
             disableNextTrack={disableNextTrack}
-            onPreviousTrack={onClickPrevious}
+            onPreviousTrack={onPreviousTrack ? onClickPrevious : undefined}
             disablePreviousTrack={disablePreviousTrack}
             showControls={showControls}
             isPlaying={isPlaying}
