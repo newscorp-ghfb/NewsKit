@@ -12,50 +12,32 @@ import {
   ControlPresets,
   PopoutButton,
 } from './controls';
-import {
-  PlayerMeta,
-  PlayerMetaProps,
-  AudioElement,
-  AudioHandler,
-  AudioElementProps,
-} from './meta';
+import {AudioElement, AudioHandler, AudioElementProps} from './audio-element';
 import {SliderStylePresets, Slider, SliderProps} from '../slider';
 import {Stack, StackDistribution, Flow} from '../stack';
 import {PlayerContainer, ControlContainer} from './styled';
 import {VolumeControl} from '../volume-control';
 import {Cell} from '../grid/cell';
 import {formatTrackTime, formatTrackData} from './utils';
-
 import {StyledTrack} from '../slider/styled';
 import {useTheme} from '../themes/emotion';
-
 import {getSingleStylePreset} from '../utils/style-preset';
-
 import {useInstrumentation, EventTrigger} from '../instrumentation';
 import {LabelPosition} from '../slider/types';
 
 type EventListener = (event: ChangeEvent<HTMLAudioElement>) => void;
 
-export interface AudioPlayerProps
-  extends AudioElementProps,
-    PlayerMetaProps,
-    TrackControlProps {
+export interface AudioPlayerProps extends AudioElementProps, TrackControlProps {
   popoutHref?: string;
   $volumePresets?: SliderStylePresets;
   $trackPresets?: SliderStylePresets & {$bufferingStylePreset?: string};
   $controlPresets?: Partial<ControlPresets>;
+  live?: boolean;
 }
 
 export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   const {
-    imgSrc,
-    imgAlt,
-    time,
     title,
-    description,
-    tags = [],
-    live = false,
-    flag,
     onNextTrack,
     disableNextTrack,
     onPreviousTrack,
@@ -65,6 +47,8 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     $trackPresets,
     $controlPresets,
     src,
+    children,
+    live = false,
     ...restProps
   } = props;
 
@@ -142,7 +126,6 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
           trigger: EventTrigger.Start,
           data: {
             src,
-            live,
             title,
           },
         });
@@ -162,7 +145,6 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
           trigger: EventTrigger.Stop,
           data: {
             src,
-            live,
             title,
           },
         });
@@ -182,7 +164,6 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
       trigger: EventTrigger.Click,
       data: {
         src,
-        live,
         title,
       },
     });
@@ -233,7 +214,6 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
         trigger: EventTrigger.Click,
         data: {
           src,
-          live,
           title,
         },
       });
@@ -243,7 +223,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
         onPreviousTrack();
       }
     }
-  }, [onPreviousTrack, fireEvent, src, live, title, onChangeAudioTime]);
+  }, [onPreviousTrack, fireEvent, src, title, onChangeAudioTime]);
 
   const onClickNext = useCallback(() => {
     if (onNextTrack) {
@@ -252,13 +232,12 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
         trigger: EventTrigger.Click,
         data: {
           src,
-          live,
           title,
         },
       });
       onNextTrack();
     }
-  }, [onNextTrack, fireEvent, src, live, title]);
+  }, [onNextTrack, fireEvent, src, title]);
 
   const onClickReplay = useCallback(() => {
     fireEvent({
@@ -266,12 +245,11 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
       trigger: EventTrigger.Click,
       data: {
         src,
-        live,
         title,
       },
     });
     onChangeAudioTime(trackPositionRef.current - 10);
-  }, [fireEvent, live, onChangeAudioTime, src, title]);
+  }, [fireEvent, onChangeAudioTime, src, title]);
 
   const onClickForward = useCallback(() => {
     fireEvent({
@@ -279,12 +257,11 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
       trigger: EventTrigger.Click,
       data: {
         src,
-        live,
         title,
       },
     });
     onChangeAudioTime(trackPositionRef.current + 10);
-  }, [fireEvent, live, onChangeAudioTime, src, title]);
+  }, [fireEvent, onChangeAudioTime, src, title]);
 
   const onEnded = useCallback(() => {
     fireEvent({
@@ -292,19 +269,18 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
       trigger: EventTrigger.End,
       data: {
         src,
-        live,
         title,
       },
     });
-  }, [fireEvent, src, live, title]);
+  }, [fireEvent, src, title]);
 
   /**
    * audio playback handlers
    */
   const theme = useTheme();
   const renderTrack: SliderProps['renderTrack'] = ({
-    props: p,
-    children,
+    props: trackProps,
+    children: trackChildren,
     isDragged,
   }) => {
     const {values, colors} = formatTrackData(
@@ -332,12 +308,12 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
 
     return (
       <StyledTrack
-        {...p}
+        {...trackProps}
         values={trackPositionArr}
         isDragged={isDragged}
         $stylePreset={trackPresets.$sliderTrackStylePreset}
         $trackSize="sizing020"
-        $thumbSize="sizing050"
+        $thumbSize="sizing040"
         style={{
           background: getTrackBackground({
             values,
@@ -348,7 +324,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
         }}
         data-testid="audio-slider-track"
       >
-        {children}
+        {trackChildren}
       </StyledTrack>
     );
   };
@@ -363,34 +339,23 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     <PlayerContainer
       xsMargin="sizing000"
       xsColumnGutter="sizing000"
-      xsRowGutter="sizing050"
+      xsRowGutter="sizing000"
     >
-      <Cell xs={12} md={8} mdOffset={2}>
-        <AudioElement
-          src={src}
-          ref={playerRef}
-          title={title}
-          onPlay={play}
-          onPause={pause}
-          onDurationChange={onDurationChange}
-          onTimeUpdate={onTimeUpdate}
-          onProgress={onProgress}
-          onVolumeChange={onVolumeChange}
-          onEnded={onEnded}
-          data-testid="audio-player"
-          {...restProps}
-        />
-        <PlayerMeta
-          imgSrc={imgSrc}
-          imgAlt={imgAlt}
-          live={live}
-          flag={flag}
-          time={time}
-          title={title}
-          description={description}
-          tags={tags}
-        />
-      </Cell>
+      <AudioElement
+        src={src}
+        ref={playerRef}
+        title={title}
+        onPlay={play}
+        onPause={pause}
+        onDurationChange={onDurationChange}
+        onTimeUpdate={onTimeUpdate}
+        onProgress={onProgress}
+        onVolumeChange={onVolumeChange}
+        onEnded={onEnded}
+        data-testid="audio-player"
+        {...restProps}
+      />
+      {children && <Cell xs={12}>{children}</Cell>}
 
       {showControls && (
         <Cell xs={12}>
@@ -401,7 +366,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
             maxLabel={formattedDuration}
             values={trackPositionArr}
             step={1}
-            $thumbSize="sizing050"
+            $thumbSize="sizing040"
             $trackSize="sizing020"
             onChange={onChangeSlider}
             renderTrack={renderTrack}

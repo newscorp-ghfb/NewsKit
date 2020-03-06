@@ -152,6 +152,11 @@
         "id": "/components/ordered-list"
       },
       {
+        "title": "Radio Player",
+        "page": true,
+        "id": "/components/radio-player"
+      },
+      {
         "title": "Scroll",
         "page": true,
         "id": "/components/scroll"

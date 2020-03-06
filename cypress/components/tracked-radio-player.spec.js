@@ -4,7 +4,7 @@ const waitForLoaded = () => {
 
 describe('skippable audio player', () => {
   beforeEach(() => {
-    cy.visit('?name=tracked-audio-player');
+    cy.visit('?name=tracked-radio-player');
     cy.fixture('podcasts.json').as('podcasts');
     cy.get('[data-testid="audio-player"]').as('player');
     cy.get('[data-testid="audio-slider-track"]').as('sliderTrack');

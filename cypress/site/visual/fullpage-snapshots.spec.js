@@ -6,6 +6,7 @@ const routes = {
   audioPlayer: '/components/audio-player',
   dateLine: '/components/date-line',
   icons: '/foundations/icons',
+  radioPlayer: '/components/radio-player',
   shareBar: '/components/share-bar',
   // TODO: Add back when https://nidigitalsolutions.jira.com/browse/PPDSC-860 is fixed
   // spacing: '/foundations/spacing',

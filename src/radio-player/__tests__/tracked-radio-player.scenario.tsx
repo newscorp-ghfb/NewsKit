@@ -1,9 +1,9 @@
 import * as React from 'react';
-import {TrackedAudioPlayer} from '..';
+import {TrackedRadioPlayer} from '..';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {styled} from '../../utils/style';
 
-export const name = 'tracked-audio-player';
+export const name = 'tracked-radio-player';
 
 const imgSrc = require('./radio-player-image.png');
 
@@ -48,8 +48,8 @@ const Container = styled.div`
 export const component = () => (
   <Container>
     <div>
-      <StorybookHeading>Skippable Player with static audio</StorybookHeading>
-      <TrackedAudioPlayer trackList={audioTrackList} />
+      <StorybookHeading>Skippable Tracked Radio Player</StorybookHeading>
+      <TrackedRadioPlayer trackList={audioTrackList} />
     </div>
   </Container>
 );

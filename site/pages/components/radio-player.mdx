@@ -2,19 +2,19 @@ import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import Prop from '../../components/prop';
 
-import {AudioPlayer, UnorderedList, Circle, Block} from 'newskit';
+import {RadioPlayer, UnorderedList, Circle, Block} from 'newskit';
 
 export default Layout;
 
-# Audio Player
+# Radio Player
 
 ## Overview
 
-The Audio Player component is a collection of custom features and elements built around the native `<audio>` element.
+The Radio Player component is a collection of custom features and elements built around the native `<audio>` element.
 
 ### Usage
 
-The Audio Player requires a source stream to be passed in as a prop. This will then be loaded into the internal `<audio>` element for playback.
+The Radio Player requires a source stream to be passed in as a prop. This will then be loaded into the internal `<audio>` element for playback.
 
 ## Props
 
@@ -22,8 +22,32 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
   <Prop name="src" type="string" required>
     URL of the audio source to be played.
   </Prop>
+  <Prop name="title" type="string" required>
+    The title of the currently playing show or track.
+  </Prop>
+  <Prop name="imgSrc" type="string" required>
+    Image to illustrate the show.
+  </Prop>
+  <Prop name="imgAlt" type="string" required>
+    Alt text for the show image, this should describe the contents of the image.
+  </Prop>
+  <Prop name="description" type="string">
+    Description text for the current show or track.
+  </Prop>
+  <Prop name="time" type="string">
+    Textual description of the show time e.g. 1PM - 3PM.
+  </Prop>
   <Prop name="live" type="boolean">
-    If true will display the controls for live player.
+    If true will display a label indicating the current show is live.
+  </Prop>
+  <Prop name="flag" type="React.Component | string">
+    If this parameter is provided as a string, the text of the default Flag
+    component will change according to the passed value. <br />
+    If this is provided as a custom component, it will replace the current Live Flag implementation.
+    In this case it is recommended for the passed component to be a <b>Flag</b>.
+    Also you will have to provide the desired style preset and spacings to your component
+    (the default one is <b>flagSolidLive</b>). <br />
+    If left undefined nothing will be rendered.
   </Prop>
   <Prop name="autoplay" type="boolean">
     <div>
@@ -57,23 +81,11 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
     </a>
     .
   </Prop>
-  <Prop name="onPreviousTrack" type="function">
-    Will display the previous track button, provided function is executed on click.
-  </Prop>
-  <Prop name="onNextTrack" type="function">
-    Will display the next track button, provided function is executed on click.
-  </Prop>
-  <Prop name="disableNextTrack" type="boolean">
-    Disable the next track button.
-  </Prop>
-  <Prop name="disablePreviousTrack" type="boolean">
-    Disable the previous track button.
-  </Prop>
   <Prop name="$volumePresets" type="Object<SliderStylePresets>">
     <div>
       This prop is an object containing all the following volume slider style
-      presets. For more details please see the slider prop documentation &nbsp;
-      <a href="/components/slider">here</a>. The default style presets can be changed via
+      presets. For more details please see the slider prop documentation
+      [here](/components/slider). The default style presets can be changed via
       the theme.
     </div>
     <ul>
@@ -120,11 +132,9 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
 ## Playground - Live Player
 
 <Playground
-  componentName="AudioPlayer"
-  newskitPath="/audio-player"
-  component={props => (
-      <AudioPlayer {...props} live />
-  )}
+  componentName="RadioPlayer"
+  newskitPath="/radio-player"
+  component={RadioPlayer}
   knobs={[
     {
       name: 'Source',
@@ -132,10 +142,51 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       value: 'https://radio.talkradio.co.uk/stream',
     },
     {
+      name: 'Flag',
+      propName: 'flag',
+      value: 'Live',
+    },
+    {
+      name: 'Title',
+      propName: 'title',
+      value: 'Talk Radio Live',
+    },
+    {
+      name: 'Description',
+      propName: 'description',
+      value: 'Live from talkRadio.',
+    },
+    {
+      name: 'Time',
+      propName: 'time',
+      value: '1PM to 3PM',
+    },
+    {
+      name: 'Live',
+      propName: 'live',
+      type: 'boolean',
+      value: true,
+    },
+    {
       name: 'Auto Play',
       propName: 'autoPlay',
       type: 'boolean',
       value: false,
+    },
+    {
+      name: 'Tags',
+      propName: 'tags',
+      value: ['News', 'Sport', 'Live'],
+    },
+    {
+      name: 'Image Source',
+      propName: 'imgSrc',
+      value: 'https://via.placeholder.com/150',
+    },
+    {
+      name: 'Image Alt Text',
+      propName: 'imgAlt',
+      value: 'Giles Coren',
     },
     {
       name: 'captionSrc',
@@ -148,9 +199,9 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
 ## Playground - Recorded Player
 
 <Playground
-  componentName="AudioPlayer"
-  newskitPath="/audio-player"
-  component={AudioPlayer}
+  componentName="RadioPlayer"
+  newskitPath="/radio-player"
+  component={RadioPlayer}
   knobs={[
     {
       name: 'Source',
@@ -159,38 +210,57 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
         'https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3',
     },
     {
+      name: 'Flag',
+      propName: 'flag',
+      value: 'Most Popular',
+    },
+    {
+      name: 'Title',
+      propName: 'title',
+      value: 'Talk Radio Live',
+    },
+    {
+      name: 'Description',
+      propName: 'description',
+      value: 'Live from talkRadio.',
+    },
+    {
+      name: 'Time',
+      propName: 'time',
+      value: '1PM to 3PM',
+    },
+    {
+      name: 'Live',
+      propName: 'live',
+      type: 'boolean',
+      value: false,
+    },
+    {
       name: 'Auto Play',
       propName: 'autoPlay',
       type: 'boolean',
       value: false,
     },
     {
-      name: 'Caption Src',
+      name: 'Tags',
+      propName: 'tags',
+      value: ['News', 'Sport', 'Live'],
+    },
+    {
+      name: 'Image Source',
+      propName: 'imgSrc',
+      value: 'https://via.placeholder.com/150',
+    },
+    {
+      name: 'Image Alt Text',
+      propName: 'imgAlt',
+      value: 'Giles Coren',
+    },
+    {
+      name: 'captionSrc',
       propName: 'captionSrc',
       value: 'captionsSrc.vtt',
     },
-    {
-      name: 'Disable Previous Track',
-      propName: 'disablePreviousTrack',
-      type: 'boolean',
-      value: false,
-    },
-    {
-      name: 'Disable Next Track',
-      propName: 'disableNextTrack',
-      type: 'boolean',
-      value: false,
-    },
-    {
-      name: 'Skip Next Track',
-      propName: 'onNextTrack',
-      value: (() => {})
-    },
-    {
-      name: 'Skip Previous Track',
-      propName: 'onPreviousTrack',
-      value: (() => {})
-    }
   ]}
 />
 
@@ -198,8 +268,8 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
 
 ### Styling
 
-The Audio Player's internal components can be styled as required.
+The Radio Player's internal components can be styled as required.
 
 ### Accessibility
 
-The controls of the Audio Player are fully accessible with the keyboard.
+The controls of the Radio Player are fully accessible with the keyboard.

@@ -5,12 +5,9 @@ import {
   getTypePresetFromTheme,
   getFontsFromTheme,
   getFontSizingFromTheme,
-} from '../../utils/style';
-import {H1} from '../../typography';
-
-export interface CenterProp {
-  center?: boolean;
-}
+} from '../utils/style';
+import {H1} from '../typography';
+import {CenterProp} from './types';
 
 export const Label = styled.span`
   color: ${getColorFromTheme('inkSubtle')};

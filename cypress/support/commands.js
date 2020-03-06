@@ -22,6 +22,7 @@ Cypress.Commands.add('checkA11yWithDefaultRules', () => {
 Cypress.Commands.add('checkA11yWithCustomRule', customRule => {
   cy.checkA11y({
     rules: {
+      'page-has-heading-one': {enabled: false},
       [customRule]: {enabled: false},
     },
   });

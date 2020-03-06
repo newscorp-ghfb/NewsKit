@@ -1,26 +1,18 @@
 import React from 'react';
+import {AudioPlayer, AudioPlayerProps} from '../audio-player';
 import {
   ProgrammeTime,
   ProgrammeTitle,
   ProgrammeDescription,
   ProgrammeTags,
   ImageContainer,
-  CenterProp,
 } from './styled';
-import {Grid, Cell} from '../../grid';
-import {Image} from '../../image';
-import {Stack, Flow, StackDistribution} from '../../stack';
-import {Block} from '../../block';
-import {Flag} from '../../flag';
-
-interface DescriptionMetaProps {
-  title?: string;
-  time?: string;
-  description?: string;
-  live?: boolean;
-  flag?: React.ComponentType | string;
-  tags?: string[];
-}
+import {DescriptionMetaProps, CenterProp, PlayerImageProps} from './types';
+import {Grid, Cell} from '../grid';
+import {Image} from '../image';
+import {Stack, Flow, StackDistribution} from '../stack';
+import {Block} from '../block';
+import {Flag} from '../flag';
 
 const renderFlag = (CustomFlag: React.ComponentType | string) =>
   typeof CustomFlag === 'string' ? (
@@ -71,11 +63,6 @@ const DescriptionsMeta: React.FC<DescriptionMetaProps & CenterProp> = ({
   </Stack>
 );
 
-interface PlayerImageProps {
-  imgSrc: string;
-  imgAlt: string;
-}
-
 const PlayerImage: React.FC<PlayerImageProps> = ({imgSrc, imgAlt}) => (
   <ImageContainer>
     <Image
@@ -88,33 +75,62 @@ const PlayerImage: React.FC<PlayerImageProps> = ({imgSrc, imgAlt}) => (
   </ImageContainer>
 );
 
-export type PlayerMetaProps = PlayerImageProps & DescriptionMetaProps;
+const PlayerMeta: React.FC<
+  PlayerImageProps & DescriptionMetaProps
+> = React.memo(({imgSrc, imgAlt, ...props}) => (
+  <Grid>
+    <Cell md={5} xsHidden smHidden>
+      <Stack
+        flow={Flow.HorizontalTop}
+        stackDistribution={StackDistribution.End}
+      >
+        <PlayerImage imgSrc={imgSrc} imgAlt={imgAlt} />
+      </Stack>
+    </Cell>
+    <Cell md={7} xsHidden smHidden>
+      <DescriptionsMeta {...props} />
+    </Cell>
+    <Cell mdHidden lgHidden xs={12}>
+      <Stack
+        flow={Flow.HorizontalCenter}
+        stackDistribution={StackDistribution.Center}
+      >
+        <PlayerImage imgSrc={imgSrc} imgAlt={imgAlt} />
+      </Stack>
+    </Cell>
+    <Cell mdHidden lgHidden xs={12}>
+      <DescriptionsMeta {...props} center />
+    </Cell>
+  </Grid>
+));
 
-export const PlayerMeta: React.FC<PlayerMetaProps> = React.memo(
-  ({imgSrc, imgAlt, ...props}) => (
-    <Grid>
-      <Cell md={5} xsHidden smHidden>
-        <Stack
-          flow={Flow.HorizontalTop}
-          stackDistribution={StackDistribution.End}
-        >
-          <PlayerImage imgSrc={imgSrc} imgAlt={imgAlt} />
-        </Stack>
-      </Cell>
-      <Cell md={7} xsHidden smHidden>
-        <DescriptionsMeta {...props} />
-      </Cell>
-      <Cell mdHidden lgHidden xs={12}>
-        <Stack
-          flow={Flow.HorizontalCenter}
-          stackDistribution={StackDistribution.Center}
-        >
-          <PlayerImage imgSrc={imgSrc} imgAlt={imgAlt} />
-        </Stack>
-      </Cell>
-      <Cell mdHidden lgHidden xs={12}>
-        <DescriptionsMeta {...props} center />
-      </Cell>
-    </Grid>
-  ),
+export type RadioPlayerProps = PlayerImageProps &
+  DescriptionMetaProps &
+  AudioPlayerProps;
+
+export const RadioPlayer: React.FC<RadioPlayerProps> = ({
+  time,
+  live,
+  title,
+  flag,
+  description,
+  tags,
+  imgSrc,
+  imgAlt,
+  ...props
+}) => (
+  <AudioPlayer {...props} live={live}>
+    <Block $margin="spaceStack050">
+      <PlayerMeta
+        time={time}
+        live={live}
+        title={title}
+        flag={flag}
+        description={description}
+        tags={tags}
+        imgSrc={imgSrc}
+        imgAlt={imgAlt}
+      />
+    </Block>
+  </AudioPlayer>
 );

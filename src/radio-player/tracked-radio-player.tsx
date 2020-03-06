@@ -1,13 +1,12 @@
 import React, {useState} from 'react';
-import {AudioPlayer} from './audio-player';
-import {AudioElementProps, PlayerMetaProps} from './meta';
+import {RadioPlayer, RadioPlayerProps} from './radio-player';
 
-export interface TrackedAudioPlayerProps {
-  trackList: Array<AudioElementProps & PlayerMetaProps>;
+export interface TrackedRadioPlayerProps {
+  trackList: Array<RadioPlayerProps>;
   trackPosition?: number;
 }
 
-export const TrackedAudioPlayer: React.FC<TrackedAudioPlayerProps> = ({
+export const TrackedRadioPlayer: React.FC<TrackedRadioPlayerProps> = ({
   trackList,
   trackPosition = 0,
 }) => {
@@ -29,7 +28,7 @@ export const TrackedAudioPlayer: React.FC<TrackedAudioPlayerProps> = ({
   };
 
   return (
-    <AudioPlayer
+    <RadioPlayer
       {...trackList[currentTrack]}
       autoPlay={autoPlay}
       onNextTrack={onNextTrack}

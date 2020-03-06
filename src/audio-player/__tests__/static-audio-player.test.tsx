@@ -6,15 +6,11 @@ import {AudioPlayer, AudioPlayerProps} from '../audio-player';
 import {EventTrigger} from '../../instrumentation';
 
 const props = {
-  imgAlt: 'test image',
   title: 'title',
-  imgSrc: 'https://via.placeholder.com/150',
-  description: 'Test Description',
-  time: '1PM to 3PM',
+  children: <div>Well hello there children!!!</div>,
   captionSrc: 'captions.vtt',
   src:
     'https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3',
-  live: false,
 };
 
 type EventListener = (event: ChangeEvent<HTMLAudioElement>) => void;
@@ -25,7 +21,7 @@ interface MockEventHandlers {
   onEnded: EventListener;
 }
 
-jest.mock('../meta/audio-element', () => ({
+jest.mock('../audio-element', () => ({
   AudioElement: jest
     .fn()
     .mockImplementation(
@@ -72,7 +68,7 @@ describe('Static AudioPlayer', () => {
   });
 
   test('renders player with slider and all the controls', () => {
-    const {src, live, title} = props;
+    const {src, title} = props;
     const onNextTrack = jest.fn();
     const onPreviousTrack = jest.fn();
     const fireEventSpy = jest.fn();
@@ -97,7 +93,6 @@ describe('Static AudioPlayer', () => {
       trigger: EventTrigger.Click,
       data: {
         src,
-        live,
         title,
       },
     });
@@ -110,7 +105,6 @@ describe('Static AudioPlayer', () => {
       trigger: EventTrigger.Click,
       data: {
         src,
-        live,
         title,
       },
     });
@@ -120,7 +114,7 @@ describe('Static AudioPlayer', () => {
   });
 
   test('renders player with slider and all the controls, but skips are disabled', () => {
-    const {src, live, title} = props;
+    const {src, title} = props;
     const onNextTrack = jest.fn();
     const onPreviousTrack = jest.fn();
     const fireEventSpy = jest.fn();
@@ -157,7 +151,6 @@ describe('Static AudioPlayer', () => {
       trigger: EventTrigger.Click,
       data: {
         src,
-        live,
         title,
       },
     });
@@ -169,7 +162,6 @@ describe('Static AudioPlayer', () => {
       trigger: EventTrigger.Click,
       data: {
         src,
-        live,
         title,
       },
     });
@@ -178,7 +170,7 @@ describe('Static AudioPlayer', () => {
   });
 
   test('renders player with slider set to the updated current time', () => {
-    const {src, live, title} = props;
+    const {src, title} = props;
     const fireEventSpy = jest.fn();
     const {getByTestId, asFragment} = renderWithImplementation(
       AudioPlayer,
@@ -196,7 +188,6 @@ describe('Static AudioPlayer', () => {
       trigger: EventTrigger.End,
       data: {
         src,
-        live,
         title,
       },
     });

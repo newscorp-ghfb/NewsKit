@@ -1,5 +1,5 @@
 import React from 'react';
-import {AudioElement, useAudioHandler} from '../meta/audio-element';
+import {AudioElement, useAudioHandler} from '../audio-element';
 import {renderToFragmentWithTheme, renderHook} from '../../test/test-utils';
 
 describe('AudioElement', () => {
