@@ -65,7 +65,7 @@ const Description = styled.span`
   display: block;
 `;
 
-const theme = {
+const newsKitDaily = createTheme('newskit-daily', {
   themeOverrider: () => ({
     grid: {
       maxWidth: 1280,
@@ -75,12 +75,12 @@ const theme = {
       },
     },
   }),
-};
+});
 
 const Article: React.FC = () => (
   <React.Fragment>
     <PageTitle title="The NewsKit Daily" />
-    <ThemeProvider theme={createTheme('newskit-daily', theme)}>
+    <ThemeProvider theme={newsKitDaily}>
       <Layout path="/pages/article" toggleTheme={() => {}}>
         <Grid>
           <Cell xs={12}>

@@ -113,13 +113,14 @@ const createDefaultTheme = (): Theme => ({
   },
 });
 
-interface PrimitiveOverrides {
+export interface PrimitiveOverrides {
   newTheme: Theme;
   colors: Colors;
   sizing: Sizing;
   borders: Borders;
   fonts: FontPrimitives;
   typePresets: TypePresets;
+  stylePresets: StylePresets;
 }
 
 interface ThemeArgs {
@@ -146,7 +147,16 @@ export const createTheme = (
     fonts: {...fontPrimitives, ...fontOverrides},
     name,
   };
-  const {colors, sizing, borders, fonts, typePresets} = newTheme;
+
+  newTheme.stylePresets = createStylePresets({
+    colorPrimitives: newTheme.colors,
+    borderPrimitives: newTheme.borders,
+    borderRadiusPrimitives: newTheme.borderRadius,
+    overlayPrimitives: newTheme.overlay,
+    shadowPrimitives: newTheme.shadow,
+  });
+
+  const {colors, sizing, borders, fonts, typePresets, stylePresets} = newTheme;
 
   return deepMerge(
     newTheme,
@@ -158,6 +168,7 @@ export const createTheme = (
         borders,
         fonts,
         typePresets,
+        stylePresets,
       }),
   );
 };
