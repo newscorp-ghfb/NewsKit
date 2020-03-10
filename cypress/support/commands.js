@@ -27,3 +27,25 @@ Cypress.Commands.add('checkA11yWithCustomRule', customRule => {
     },
   });
 });
+
+Cypress.Commands.add('acceptCookieBanner', () => {
+  cy.get('body').then(body => {
+    if (body.find("iframe[id^='sp_message_iframe']").length > 0) {
+      cy.get("iframe[id^='sp_message_iframe']").then(iframe => {
+        const innerBody = iframe.contents().find('body');
+        cy.wrap(innerBody)
+          .find('.message-component button')
+          .contains('I Accept')
+          .click({force: true});
+        cy.get('.message.type-bottom').should('not.be.visible');
+      });
+    }
+  });
+});
+
+Cypress.Commands.add('getElementInIframe', (iframe, element) => {
+  cy.get(iframe).then(result => {
+    const body = result.contents().find('body');
+    return cy.wrap(body).find(element);
+  });
+});
