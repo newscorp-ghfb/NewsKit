@@ -1,5 +1,5 @@
 {
-  "baseUrl": "https://newskit.co.uk:8081",
+  "baseUrl": "http://localhost:8081",
   "integrationFolder": "cypress/site/functional",
   "viewportWidth": 1280,
   "chromeWebSecurity":false
