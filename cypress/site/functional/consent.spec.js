@@ -1,8 +1,4 @@
 describe('Consent component', () => {
-  before(() => {
-    cy.viewport('macbook-13');
-    cy.clearCookies();
-  });
   it('should show up after 10000ms verify cookie banner does not pop up anymore once user accepts the cookie consent', () => {
     cy.visit('/');
     cy.wait(10000);
@@ -13,6 +9,7 @@ describe('Consent component', () => {
     );
     consentMessage.should('be.visible');
     cy.acceptCookieBanner();
+    cy.get(iFrame).should('not.be.visible');
     cy.reload();
     cy.wait(10000);
     cy.get(iFrame).should('not.be.visible');

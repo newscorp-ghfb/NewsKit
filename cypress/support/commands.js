@@ -37,7 +37,6 @@ Cypress.Commands.add('acceptCookieBanner', () => {
           .find('.message-component.message-button')
           .contains('I Accept')
           .click({force: true});
-        cy.get('.message.type-bottom').should('not.be.visible');
       });
     }
   });
