@@ -41,6 +41,7 @@ export default class MyDocument extends Document<Props> {
           <Consent
             sourcePointConfig={{
               accountId: '259',
+              siteHref: 'http://newskit.dev-news.co.uk/',
             }}
             reactHelmet={Helmet}
           />
