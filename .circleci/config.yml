@@ -273,6 +273,7 @@ jobs:
       - run:
           name: Run Applitools Storybook Component Tests
           command: |
+            export APPLITOOLS_BATCH_ID=`echo $CIRCLE_SHA1`
             export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}
             make comps_visual_test
 
@@ -296,6 +297,7 @@ jobs:
       - run:
           name: Run Applitools Docs Site Visual Tests
           command: |
+            export APPLITOOLS_BATCH_ID=`echo $CIRCLE_SHA1`
             export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}
             make e2e_visual_test_docs
       - store_artifacts:

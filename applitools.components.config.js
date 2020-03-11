@@ -10,4 +10,5 @@ module.exports = {
     {width: 1024, height: 768, name: 'safari'},
   ],
   concurrency: 100,
+  dontCloseBatches: true,
 };
