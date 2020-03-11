@@ -35,7 +35,7 @@ Cypress.Commands.add('acceptCookieBanner', () => {
         const innerBody = iframe.contents().find('body');
         cy.wrap(innerBody)
           .find('.message-component.message-button')
-          .contains('I Accept')
+          .contains('I Accept')
           .click({force: true});
         cy.get('.message.type-bottom').should('not.be.visible');
       });
