@@ -56,43 +56,15 @@ To utilise this component you will need to have a [Sourcepoint](https://www.sour
 
 ## How to run on localhost
 
-In order to run the consent component locally, you will need to edit the Hosts file.
-The steps to accomplish that depends on your OS.
-You can find more detailed information on how to do that
-[here](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/).
+The minimum parameters for the Consent component to run locally are a sourcePointConfig object with accountId and siteHref.
+The `siteHref` property should be an url that that exists in your account's property group. Contact your sourcepoint account manager.
 
-After you open the hosts file, look for a line like that looks like this:
-
-`127.0.0.1 localhost`
-
- It is not mandatory to have it, but if you do comment the line using `#` sign:
-
-`#127.0.0.1 localhost`
-
-Add a new line with your local address (127.0.0.1) and the domain name instead of `localhost`:
-
-`127.0.0.1 example-domain.com`
-
-In the case of the newskit site it would look like this:
-
-`127.0.0.1 newskit.co.uk`
-
-This will result in a redirect to your `localhost` when attempting to hit the said domain.
-
-Now would be a good time to start your localhost server if it is not running.
-
-*Note: if you are running your localhost on a port, then you have to add the port after the domain when you open it on the browser:*
-
-`example-domain.com:8080`
-
-**Note: Don't forget to revert your changes in the Hosts file after you are finished with running consent locally**
-
-The minimum parameters of the Consent component to run locally are a sourcePointConfig object with accountId.
-
+In our case it would look like this:
 <Code>
   {`<Consent
     sourcePointConfig={{
       accountId: accountId,
+      siteHref: 'http://newskit.co.uk/'
     }}
   />`}
 </Code>
