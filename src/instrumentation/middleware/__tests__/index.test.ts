@@ -17,17 +17,26 @@ describe('composeInstrumentationMiddleware', () => {
       return 'function3 return value';
     });
 
-    const result = composeInstrumentationMiddleware(
+    const middlewareFn = composeInstrumentationMiddleware(
       function3,
       function2,
       function1,
-    )('initial arg' as any);
+    );
+    const result = middlewareFn('initial arg' as any);
 
-    expect(function1).toHaveBeenCalledWith('initial arg');
-    expect(function2).toHaveBeenCalledWith('function1 return value');
-    expect(function3).toHaveBeenCalledWith('function2 return value');
     expect(result).toEqual('function3 return value');
     expect(calls).toEqual([
+      'function1 called',
+      'function2 called',
+      'function3 called',
+    ]);
+
+    const result2 = middlewareFn('initial arg' as any);
+    expect(result2).toEqual('function3 return value');
+    expect(calls).toEqual([
+      'function1 called',
+      'function2 called',
+      'function3 called',
       'function1 called',
       'function2 called',
       'function3 called',
