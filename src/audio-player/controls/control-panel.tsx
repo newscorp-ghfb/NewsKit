@@ -59,6 +59,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
         <ReplayButton onClick={onClickReplay} $stylePreset={replay} />
       )}
       <PlayerButton
+        canPause={showControls}
         isPlaying={isPlaying}
         onClick={togglePlay}
         $stylePreset={play}

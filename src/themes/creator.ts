@@ -50,6 +50,7 @@ export interface Icons {
   Placeholder?: NonColourableIcon;
   CopyLink?: ColourableIcon;
   Circle?: ColourableIcon;
+  Square?: ColourableIcon;
   Play?: ColourableIcon;
   Pause?: ColourableIcon;
   VolumeUp?: ColourableIcon;

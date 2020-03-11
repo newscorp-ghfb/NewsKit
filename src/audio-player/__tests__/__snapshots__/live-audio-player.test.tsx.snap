@@ -2231,10 +2231,14 @@ exports[`Live AudioPlayer renders play button with correct state when clicked 1`
                       viewBox="0 0 24 24"
                     >
                       <title>
-                        Pause
+                        Square
                       </title>
                       <path
-                        d="M6,19 L10,19 L10,5 L6,5 L6,19 Z M14,5 L14,19 L18,19 L18,5 L14,5 Z"
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M6 6h12v12H6z"
                       />
                     </svg>
                   </div>
@@ -4903,10 +4907,14 @@ exports[`Live AudioPlayer renders player after play event fires 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <title>
-                        Pause
+                        Square
                       </title>
                       <path
-                        d="M6,19 L10,19 L10,5 L6,5 L6,19 Z M14,5 L14,19 L18,19 L18,5 L14,5 Z"
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M6 6h12v12H6z"
                       />
                     </svg>
                   </div>

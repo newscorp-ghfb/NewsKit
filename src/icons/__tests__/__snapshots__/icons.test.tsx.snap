@@ -1164,6 +1164,72 @@ exports[`SkipPrevious renders the SkipPrevious icon with title override 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Square renders the Square icon from theme override 1`] = `
+<DocumentFragment>
+  <svg>
+    <path>
+      a different icon
+    </path>
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Square renders the Square icon with specified style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #535353;
+  color: #535353;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}
+
+<svg
+    class="emotion-0"
+    viewBox="0 0 24 24"
+  >
+    <title>
+      Square
+    </title>
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+    <path
+      d="M6 6h12v12H6z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Square renders the Square icon with title override 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #535353;
+  color: #535353;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}
+
+<svg
+    class="emotion-0"
+    viewBox="0 0 24 24"
+  >
+    <title>
+      override title value
+    </title>
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+    <path
+      d="M6 6h12v12H6z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
 exports[`Twitter renders the Twitter icon from theme override 1`] = `
 <DocumentFragment>
   <svg>
