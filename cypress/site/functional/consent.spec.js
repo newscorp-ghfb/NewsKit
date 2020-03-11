@@ -10,8 +10,9 @@ describe('Consent component', () => {
     consentMessage.should('be.visible');
     cy.acceptCookieBanner();
     cy.get(iFrame).should('not.be.visible');
+    cy.wait(5000);
     cy.reload();
     cy.wait(10000);
-    cy.get(iFrame).should('not.be.visible');
+    cy.get(iFrame).should('not.exist');
   });
 });
