@@ -7,12 +7,10 @@ const overlayTestID = '[data-testid="overlay"]';
 const headerNavigatioTestID = '[data-testid="header-navigation"]';
 
 describe('Documentation Site - header-navigation component', () => {
-  beforeEach(() => {
-    cy.acceptCookieBanner();
-  });
   describe('Desktop view', () => {
     it('should contain logo', () => {
       cy.visit('/');
+      cy.acceptCookieBanner();
       cy.get('[data-testid="logo-container"]').should('exist');
       cy.get(hamburgerIconTestID).should('be.hidden');
     });
@@ -21,6 +19,7 @@ describe('Documentation Site - header-navigation component', () => {
   describe('Mobile view', () => {
     before(() => {
       cy.visitViewport('iphone-5', '/');
+      cy.acceptCookieBanner();
     });
 
     it('should contain burger menu when on mobile', () => {
