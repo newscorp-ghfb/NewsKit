@@ -13,8 +13,6 @@ import {ThumbLabelWrapper} from './thumb-label-wrapper';
 import {renderLabel, getTrackBackgroundStyle} from './utils';
 import {useTheme} from '../themes/emotion';
 
-const noop = () => {};
-
 const labelFlowMap = [
   // horizontal
   {
@@ -35,7 +33,7 @@ export const Slider: React.FC<SliderProps> = ({
   max,
   step = 1,
   onChange,
-  onFinalChange = noop,
+  onFinalChange,
   disabled,
   values,
   vertical,
@@ -98,6 +96,7 @@ export const Slider: React.FC<SliderProps> = ({
         $thumbSize={$thumbSize}
         values={values}
         isDragged={isDragged}
+        data-testid={`${dataTestId}-thumb`}
       >
         <ThumbLabelWrapper
           values={values}

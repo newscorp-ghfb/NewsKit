@@ -1,74 +1,70 @@
 /* eslint-disable jsx-a11y/media-has-caption */
-import React, {
-  useRef,
-  useImperativeHandle,
-  forwardRef,
-  RefObject,
-  Ref,
-} from 'react';
+import React, {useRef, useEffect} from 'react';
 
 const getValueInRange = (value: number, [start, end]: [number, number]) =>
   Math.max(start, Math.min(end, value));
 
-export interface AudioHandler {
-  play: () => void;
-  pause: () => void;
-  setVolume: (newVolume: number) => number;
-  setCurrentTime: (newTime: number) => number;
+export interface AudioElementProps
+  extends React.AudioHTMLAttributes<HTMLAudioElement> {
+  captionSrc?: string;
+  playing: boolean;
+  volume?: number;
+  newTime?: number;
 }
 
-export const useAudioHandler = (
-  localRef: RefObject<HTMLAudioElement>,
-  parentRef: Ref<AudioHandler>,
-) => {
-  useImperativeHandle(parentRef, () => ({
-    play: () => {
-      const playerNode = localRef.current;
-      if (playerNode) {
-        playerNode.play();
+let rendered = false;
+
+export const AudioElement: React.FC<AudioElementProps> = ({
+  captionSrc,
+  playing,
+  volume = 1,
+  newTime = 0,
+  autoPlay = false,
+  ...props
+}) => {
+  const localRef = useRef<HTMLAudioElement>(null);
+
+  useEffect(() => {
+    const player = localRef.current;
+    /* istanbul ignore else */
+    if (player) {
+      if (!rendered && autoPlay) {
+        rendered = true;
+      } else if (playing) {
+        player.play();
+      } else {
+        player.pause();
       }
-    },
-    pause: () => {
-      const playerNode = localRef.current;
-      if (playerNode) {
-        playerNode.pause();
-      }
-    },
-    setCurrentTime: newTime => {
-      const playerNode = localRef.current!;
-      const timeRange = playerNode.seekable;
+    }
+  }, [playing, autoPlay]);
+
+  useEffect(() => {
+    const player = localRef.current;
+    /* istanbul ignore else */
+    if (player && newTime !== -1) {
+      const timeRange = player.seekable;
       if (timeRange.length > 0) {
         const value = getValueInRange(newTime, [
           timeRange.start(0),
           timeRange.end(timeRange.length - 1),
         ]);
-        playerNode.currentTime = value;
-        return value;
+        player.currentTime = value;
       }
-      return playerNode.currentTime;
-    },
-    setVolume: newVolume => {
-      const playerNode = localRef.current!;
-      const value = getValueInRange(newVolume, [0, 1]);
-      playerNode.volume = value;
-      return value;
-    },
-  }));
+    }
+  }, [newTime]);
+
+  useEffect(() => {
+    const player = localRef.current;
+    /* istanbul ignore else */
+    if (player) {
+      const value = getValueInRange(volume, [0, 1]);
+      player.volume = value;
+    }
+  }, [volume]);
+
+  return (
+    <audio ref={localRef} autoPlay {...props}>
+      {captionSrc && <track kind="captions" src={captionSrc} />}
+    </audio>
+  );
 };
-
-export interface AudioElementProps
-  extends React.AudioHTMLAttributes<HTMLAudioElement> {
-  captionSrc?: string;
-}
-
-export const AudioElement = forwardRef<AudioHandler, AudioElementProps>(
-  ({captionSrc, ...props}, parentRef) => {
-    const localRef = useRef<HTMLAudioElement>(null);
-    useAudioHandler(localRef, parentRef);
-    return (
-      <audio ref={localRef} {...props}>
-        {captionSrc && <track kind="captions" src={captionSrc} />}
-      </audio>
-    );
-  },
-);

@@ -18,7 +18,6 @@ export const CircularProgressIndicator: React.FC<
   hideTrack = false,
   ariaLabel = 'loading',
   $sliderTrackStylePreset,
-
   $sliderIndicatorTrackStylePreset,
 }) => (
   <StyledCircularProgressIndicator $size={$size} aria-label={ariaLabel}>

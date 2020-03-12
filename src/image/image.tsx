@@ -36,7 +36,10 @@ const ImageContainer = styled.div<ImageContainerProps>`
     )(props)}
 `;
 
-const imagePropsAreEqual = (prevProps: ImageProps, nextProps: ImageProps) =>
+export const imagePropsAreEqual = (
+  prevProps: ImageProps,
+  nextProps: ImageProps,
+) =>
   prevProps.aspectHeight === nextProps.aspectHeight &&
   prevProps.aspectWidth === nextProps.aspectWidth &&
   prevProps.hideLoadingIcon === nextProps.hideLoadingIcon &&

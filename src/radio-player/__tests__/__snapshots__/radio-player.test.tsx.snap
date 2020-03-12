@@ -981,6 +981,7 @@ exports[`Radio Player default player 1`] = `
       class="emotion-66"
     >
       <audio
+        autoplay=""
         data-testid="audio-player"
       />
       <div
@@ -1107,6 +1108,7 @@ exports[`Radio Player default player 1`] = `
               aria-valuemin="0"
               aria-valuenow="0"
               class="emotion-24"
+              data-testid="audio-slider-thumb"
               draggable="false"
               role="slider"
               style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
@@ -1194,6 +1196,7 @@ exports[`Radio Player default player 1`] = `
                   aria-valuemin="0"
                   aria-valuenow="1"
                   class="emotion-24"
+                  data-testid="volume-control-thumb"
                   draggable="false"
                   role="slider"
                   style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
@@ -2411,6 +2414,7 @@ exports[`Radio Player live player 1`] = `
       class="emotion-72"
     >
       <audio
+        autoplay=""
         data-testid="audio-player"
         src="https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3"
       >
@@ -2701,6 +2705,7 @@ exports[`Radio Player live player 1`] = `
                   aria-valuemin="0"
                   aria-valuenow="1"
                   class="emotion-53"
+                  data-testid="volume-control-thumb"
                   draggable="false"
                   role="slider"
                   style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
@@ -3946,6 +3951,7 @@ exports[`Radio Player player with popout link 1`] = `
       class="emotion-82"
     >
       <audio
+        autoplay=""
         data-testid="audio-player"
         href="https://thetimes.co.uk/"
         src="https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3"
@@ -4161,6 +4167,7 @@ exports[`Radio Player player with popout link 1`] = `
               aria-valuemin="0"
               aria-valuenow="0"
               class="emotion-40"
+              data-testid="audio-slider-thumb"
               draggable="false"
               role="slider"
               style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
@@ -4248,6 +4255,7 @@ exports[`Radio Player player with popout link 1`] = `
                   aria-valuemin="0"
                   aria-valuenow="1"
                   class="emotion-40"
+                  data-testid="volume-control-thumb"
                   draggable="false"
                   role="slider"
                   style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
@@ -5618,6 +5626,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
       class="emotion-94"
     >
       <audio
+        autoplay=""
         data-testid="audio-player"
         src="https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3"
       >
@@ -5902,6 +5911,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
               aria-valuemin="0"
               aria-valuenow="0"
               class="emotion-52"
+              data-testid="audio-slider-thumb"
               draggable="false"
               role="slider"
               style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
@@ -5989,6 +5999,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                   aria-valuemin="0"
                   aria-valuenow="1"
                   class="emotion-52"
+                  data-testid="volume-control-thumb"
                   draggable="false"
                   role="slider"
                   style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"

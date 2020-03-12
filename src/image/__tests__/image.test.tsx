@@ -5,7 +5,12 @@ import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
-import {Image, handleClientSideRender} from '..';
+import {
+  Image,
+  ImageProps,
+  imagePropsAreEqual,
+  handleClientSideRender,
+} from '..';
 
 describe('Image', () => {
   const defaultProps = {
@@ -75,6 +80,40 @@ describe('Image', () => {
       };
       const fragment = renderToFragmentWithTheme(Image, props);
       expect(fragment).toMatchSnapshot();
+    });
+  });
+});
+
+describe('Utility function', () => {
+  describe('imagePropsAreEqual', () => {
+    const imageProps: ImageProps = {
+      aspectHeight: 3,
+      aspectWidth: 2,
+      hideLoadingIcon: true,
+      src: 'test-src.jpg',
+      $stylePreset: 'testPreset',
+    };
+    const imagePropsCopy: ImageProps = {
+      aspectHeight: 3,
+      aspectWidth: 2,
+      hideLoadingIcon: true,
+      src: 'test-src.jpg',
+      $stylePreset: 'testPreset',
+    };
+    const imagePropsDifferent: ImageProps = {
+      aspectHeight: 2,
+      aspectWidth: 1,
+      hideLoadingIcon: true,
+      src: 'test-source.jpg',
+      $stylePreset: 'testPreset',
+    };
+    test('returns true if all props are equal', () => {
+      expect(imagePropsAreEqual(imageProps, imagePropsCopy)).toEqual(true);
+    });
+    test('returns false if props are different', () => {
+      expect(imagePropsAreEqual(imageProps, imagePropsDifferent)).toEqual(
+        false,
+      );
     });
   });
 });

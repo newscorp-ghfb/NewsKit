@@ -1,5 +1,236 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`slider labels should be rendered in horisontal slider with labelContainer and LabelPosition.Before 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-1 {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 0 calc(32px / 2);
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+<div
+    class="emotion-2"
+    data-testid="slider"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-0"
+      />
+    </div>
+    <div>
+      react-range
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`slider labels should be rendered in vertical slider with labelContainer and LabelPosition.After 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.emotion-1 {
+  width: 100%;
+  height: 100%;
+  margin-left: 12px;
+  padding: calc(32px / 2) 0;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+<div
+    class="emotion-2"
+    data-testid="slider"
+  >
+    <div>
+      react-range
+    </div>
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-0"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`slider labels should be rendered in vertical slider with labelContainer and LabelPosition.Before 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.emotion-1 {
+  width: 100%;
+  height: 100%;
+  margin-right: 12px;
+  padding: calc(32px / 2) 0;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+<div
+    class="emotion-2"
+    data-testid="slider"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-0"
+      />
+    </div>
+    <div>
+      react-range
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`slider labels should not render labels by default 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -517,6 +748,7 @@ exports[`slider react-range Range function props renderThumb should render custo
 <div
     aria-label="my custom aria label"
     class="emotion-0"
+    data-testid="slider-thumb"
     values="25"
   />
 </DocumentFragment>
@@ -576,9 +808,39 @@ exports[`slider react-range Range function props renderThumb should render custo
 <div
     aria-label="slider"
     class="emotion-0"
+    data-testid="slider-thumb"
     values="10,20,30"
   >
     <span />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`slider react-range Range function props renderThumb should render default StyledThumbValue with custom $thumbSize prop 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  background-color: red;
+  border-radius: borderRadiusRounded020;
+  top: -32px;
+  position: absolute;
+  background-color: transparent;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+
+<div
+    class="emotion-0"
+  >
+    test
   </div>
 </DocumentFragment>
 `;
@@ -637,6 +899,7 @@ exports[`slider react-range Range function props renderThumb should render dragg
 <div
     aria-label="slider"
     class="emotion-0"
+    data-testid="slider-thumb"
     values="25"
   />
 </DocumentFragment>
@@ -694,6 +957,7 @@ exports[`slider react-range Range function props renderThumb should render multi
 <div
     aria-label="slider"
     class="emotion-0"
+    data-testid="slider-thumb"
     values="10,20,30"
   />
 </DocumentFragment>
@@ -783,6 +1047,7 @@ exports[`slider react-range Range function props renderThumb should render range
 <div
     aria-label="slider"
     class="emotion-1"
+    data-testid="slider-thumb"
     values="25"
   >
     <div
@@ -846,6 +1111,7 @@ exports[`slider react-range Range function props renderThumb should render undra
 <div
     aria-label="slider"
     class="emotion-0"
+    data-testid="slider-thumb"
     values="25"
   />
 </DocumentFragment>
@@ -935,6 +1201,7 @@ exports[`slider react-range Range function props renderThumb should render verti
 <div
     aria-label="slider"
     class="emotion-1"
+    data-testid="slider-thumb"
     values="25"
   >
     <div

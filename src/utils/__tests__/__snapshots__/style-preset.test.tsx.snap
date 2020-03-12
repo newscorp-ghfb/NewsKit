@@ -1,34 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary 1`] = `
+exports[`getStylePresetFromTheme getStylePresetFromTheme with override to interactive040 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: transparent;
-  color: #0A68C1;
-  border-radius: 50%;
-}
-
-.emotion-0 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-0:hover:not(:disabled) {
-  background-color: #e6f4ff;
-}
-
-.emotion-0:active:not(:disabled) {
-  background-color: #d5ebff;
-}
-
-.emotion-0:disabled {
-  color: #9c9c9c;
-  background-color: transparent;
-}
-
-.emotion-0:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  background-color: #FF00FF;
 }
 
 <div
@@ -37,7 +12,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with current state 1`] = `
+exports[`getStylePresetFromTheme iconButtonMinimalPrimary with current state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #00ff00;
@@ -56,7 +31,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with cu
 </DocumentFragment>
 `;
 
-exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with disabled and loading state 1`] = `
+exports[`getStylePresetFromTheme iconButtonMinimalPrimary with disabled and loading state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
@@ -75,7 +50,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with di
 </DocumentFragment>
 `;
 
-exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with disabled state 1`] = `
+exports[`getStylePresetFromTheme iconButtonMinimalPrimary with disabled state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
@@ -94,7 +69,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with di
 </DocumentFragment>
 `;
 
-exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with loading and current state 1`] = `
+exports[`getStylePresetFromTheme iconButtonMinimalPrimary with loading and current state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #ffff00;
@@ -113,7 +88,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with lo
 </DocumentFragment>
 `;
 
-exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with loading state 1`] = `
+exports[`getStylePresetFromTheme iconButtonMinimalPrimary with loading state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #ffff00;
@@ -132,7 +107,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary with lo
 </DocumentFragment>
 `;
 
-exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary without background-color styles 1`] = `
+exports[`getStylePresetFromTheme iconButtonMinimalPrimary without background-color styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   color: #0A68C1;
@@ -159,7 +134,7 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary without
 </DocumentFragment>
 `;
 
-exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary without disabled state styles 1`] = `
+exports[`getStylePresetFromTheme iconButtonMinimalPrimary without disabled state styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: transparent;
@@ -186,10 +161,63 @@ exports[`Surface Helper getStylePresetFromTheme iconButtonMinimalPrimary without
 </DocumentFragment>
 `;
 
-exports[`Surface Helper getStylePresetFromTheme with override to interactive040 1`] = `
+exports[`getStylePresetFromTheme with default iconButtonMinimalPrimary style preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #FF00FF;
+  background-color: transparent;
+  color: #0A68C1;
+  border-radius: 50%;
+}
+
+.emotion-0 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #e6f4ff;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #d5ebff;
+}
+
+.emotion-0:disabled {
+  color: #9c9c9c;
+  background-color: transparent;
+}
+
+.emotion-0:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme with not existing style preset key returns empty fragment 1`] = `
+<DocumentFragment>
+  <div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme with not existing style preset state returns empty fragment 1`] = `
+<DocumentFragment>
+  <div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme with stateOverwrites without base state fallbacks to empty object for base and returns empty fragment 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FFFF00;
 }
 
 <div

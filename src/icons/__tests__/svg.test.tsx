@@ -52,4 +52,19 @@ describe('Svg', () => {
     );
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders a menu icon with $float property', () => {
+    const theme = {
+      colors: {
+        white: '#158acf',
+      },
+      sizing: {
+        sizing010: '4px',
+      },
+    };
+    const fragment = renderToFragment(
+      <Svg theme={theme as any} viewBox="1 2 3 4" $float="left" />,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
 });

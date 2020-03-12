@@ -12,7 +12,7 @@ import {
   ControlPresets,
   PopoutButton,
 } from './controls';
-import {AudioElement, AudioHandler, AudioElementProps} from './audio-element';
+import {AudioElement} from './audio-element';
 import {SliderStylePresets, Slider, SliderProps} from '../slider';
 import {Stack, StackDistribution, Flow} from '../stack';
 import {PlayerContainer, ControlContainer} from './styled';
@@ -27,7 +27,10 @@ import {LabelPosition} from '../slider/types';
 
 type EventListener = (event: ChangeEvent<HTMLAudioElement>) => void;
 
-export interface AudioPlayerProps extends AudioElementProps, TrackControlProps {
+export interface AudioPlayerProps
+  extends React.AudioHTMLAttributes<HTMLAudioElement>,
+    TrackControlProps {
+  captionSrc?: string;
   popoutHref?: string;
   $volumePresets?: SliderStylePresets;
   $trackPresets?: SliderStylePresets & {$bufferingStylePreset?: string};
@@ -81,22 +84,11 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     ...$controlPresets,
   };
 
-  const playerRef = useRef<AudioHandler>(null);
-
   /**
    * audio player volume controls
    */
   const [volume, setVolume] = useState(1);
   const onVolumeChange: EventListener = event => setVolume(event.target.volume);
-  const onChangeVolume = useCallback(
-    (newVolume: number) => {
-      const playerNode = playerRef.current;
-      if (playerNode) {
-        setVolume(playerNode.setVolume(newVolume));
-      }
-    },
-    [playerRef, setVolume],
-  );
 
   /**
    * audio src duration handler
@@ -116,39 +108,31 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   const [isPlaying, setPlayState] = useState(false);
   const play = () => {
     if (!isPlaying) {
-      const playerNode = playerRef.current;
-      if (playerNode) {
-        playerNode.play();
-        setPlayState(true);
+      setPlayState(true);
 
-        fireEvent({
-          originator: 'audio-player',
-          trigger: EventTrigger.Start,
-          data: {
-            src,
-            title,
-          },
-        });
-      }
+      fireEvent({
+        originator: 'audio-player',
+        trigger: EventTrigger.Start,
+        data: {
+          src,
+          title,
+        },
+      });
     }
   };
 
   const pause = () => {
     if (isPlaying) {
-      const playerNode = playerRef.current;
-      if (playerNode) {
-        playerNode.pause();
-        setPlayState(false);
+      setPlayState(false);
 
-        fireEvent({
-          originator: 'audio-player',
-          trigger: EventTrigger.Stop,
-          data: {
-            src,
-            title,
-          },
-        });
-      }
+      fireEvent({
+        originator: 'audio-player',
+        trigger: EventTrigger.Stop,
+        data: {
+          src,
+          title,
+        },
+      });
     }
   };
 
@@ -187,56 +171,80 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     setBuffered(event.target.buffered);
   };
 
+  // newTime is a prop used to force the player to change time (used to change via slider)
+  // it does not maintain the audio element current time
+  const [newTime, setNewPlayerTime] = useState(-1);
+
   const onTimeUpdate: EventListener = event => {
-    const eventTime = Number(event.target.currentTime.toFixed(2));
+    const eventTime = Math.round(event.target.currentTime);
     if (trackPositionRef.current !== eventTime) {
       setTrackPosition([eventTime]);
     }
+    // Used to reset newTime after the player changes time. Used to fix issues regarding consecutive audio time change to the same value
+    if (newTime !== -1) {
+      setNewPlayerTime(-1);
+    }
   };
+
   const onChangeAudioTime = useCallback(
-    (newTime: number) => {
-      const playerNode = playerRef.current;
-      if (playerNode) {
-        setTrackPosition([playerNode.setCurrentTime(newTime)]);
+    (playerTime: number) => {
+      let newPlayerTime = playerTime;
+
+      if (newPlayerTime < 0) {
+        newPlayerTime = 0;
       }
+      if (newPlayerTime > duration) {
+        newPlayerTime = duration;
+      }
+
+      setTrackPosition([newPlayerTime]);
+      // This sets a prop on the audio element, forcing it to a new time
+      // We let player maintain its play time state, we just control the new time to set to when changing it via slider.
+      setNewPlayerTime(newPlayerTime);
     },
-    [playerRef, setTrackPosition],
+    [setTrackPosition, duration],
   );
 
   const onChangeSlider = useCallback(
-    ([value]: number[]) => onChangeAudioTime(value),
+    ([value]: number[]) => {
+      onChangeAudioTime(value);
+    },
     [onChangeAudioTime],
   );
+
   const onClickPrevious = useCallback(() => {
-    if (onPreviousTrack) {
-      fireEvent({
-        originator: 'audio-player-skip-previous-button',
-        trigger: EventTrigger.Click,
-        data: {
-          src,
-          title,
-        },
-      });
-      if (trackPositionRef.current > 5) {
-        onChangeAudioTime(0);
-      } else if (onPreviousTrack) {
-        onPreviousTrack();
-      }
+    fireEvent({
+      originator: 'audio-player-skip-previous-button',
+      trigger: EventTrigger.Click,
+      data: {
+        src,
+        title,
+      },
+    });
+    if (trackPositionRef.current > 5) {
+      onChangeAudioTime(0);
+    } else {
+      onPreviousTrack!();
     }
-  }, [onPreviousTrack, fireEvent, src, title, onChangeAudioTime]);
+  }, [
+    onPreviousTrack,
+    fireEvent,
+    src,
+    title,
+    trackPositionRef,
+    onChangeAudioTime,
+  ]);
 
   const onClickNext = useCallback(() => {
-    if (onNextTrack) {
-      fireEvent({
-        originator: 'audio-player-skip-next-button',
-        trigger: EventTrigger.Click,
-        data: {
-          src,
-          title,
-        },
-      });
-      onNextTrack();
-    }
+    fireEvent({
+      originator: 'audio-player-skip-next-button',
+      trigger: EventTrigger.Click,
+      data: {
+        src,
+        title,
+      },
+    });
+    onNextTrack!();
   }, [onNextTrack, fireEvent, src, title]);
 
   const onClickReplay = useCallback(() => {
@@ -249,7 +257,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
       },
     });
     onChangeAudioTime(trackPositionRef.current - 10);
-  }, [fireEvent, onChangeAudioTime, src, title]);
+  }, [fireEvent, onChangeAudioTime, src, title, trackPositionRef]);
 
   const onClickForward = useCallback(() => {
     fireEvent({
@@ -261,7 +269,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
       },
     });
     onChangeAudioTime(trackPositionRef.current + 10);
-  }, [fireEvent, onChangeAudioTime, src, title]);
+  }, [fireEvent, onChangeAudioTime, src, title, trackPositionRef]);
 
   const onEnded = useCallback(() => {
     fireEvent({
@@ -343,8 +351,8 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     >
       <AudioElement
         src={src}
-        ref={playerRef}
         title={title}
+        playing={isPlaying}
         onPlay={play}
         onPause={pause}
         onDurationChange={onDurationChange}
@@ -353,8 +361,11 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
         onVolumeChange={onVolumeChange}
         onEnded={onEnded}
         data-testid="audio-player"
+        volume={volume}
+        newTime={newTime}
         {...restProps}
       />
+
       {children && <Cell xs={12}>{children}</Cell>}
 
       {showControls && (
@@ -385,7 +396,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
           <ControlContainer $playerTrackSize="sizing050" xs sm>
             <VolumeControl
               volume={volume}
-              onChange={onChangeVolume}
+              onChange={setVolume}
               $trackSize="sizing010"
               $thumbSize="sizing040"
               {...volumePresets}

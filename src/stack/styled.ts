@@ -60,7 +60,9 @@ const calculateMargins = (negative?: boolean) => ({
       margins.marginLeft = halfSpace;
       margins.marginRight = halfSpace;
     }
-  } else if (horizontalFlows.includes(flow as Flow)) {
+  } /* istanbul ignore next */ else if (
+    horizontalFlows.includes(flow as Flow)
+  ) {
     margins.marginLeft = halfSpace;
     margins.marginRight = halfSpace;
 

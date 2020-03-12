@@ -4,8 +4,9 @@ import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
-import {SliderProps} from '../types';
-import {Theme} from '../../themes';
+import {SliderProps, LabelPosition} from '../types';
+import {Theme, createTheme} from '../../themes';
+import {StyledThumbValue} from '../styled';
 
 let mockRange: jest.Mock;
 jest.mock('react-range', () => {
@@ -42,7 +43,7 @@ describe('slider', () => {
           "max": 100,
           "min": 0,
           "onChange": [Function],
-          "onFinalChange": [Function],
+          "onFinalChange": undefined,
           "renderThumb": [Function],
           "renderTrack": [Function],
           "step": 1,
@@ -79,6 +80,7 @@ describe('slider', () => {
         disabled: true,
         vertical: true,
         onChange: () => {},
+        onFinalChange: () => {},
       });
 
       expect(mockRange.mock.calls[0][0]).toMatchInlineSnapshot(`
@@ -181,6 +183,31 @@ describe('slider', () => {
             index: 0,
             isDragged: false,
           });
+          expect(fragment).toMatchSnapshot();
+        });
+
+        it('should render default StyledThumbValue with custom $thumbSize prop', () => {
+          const customTheme = createTheme('myTestTheme', {
+            themeOverrider: () => ({
+              stylePresets: {
+                presetWithBorderRadius: {
+                  base: {
+                    backgroundColor: 'red',
+                    borderRadius: 'borderRadiusRounded020',
+                  },
+                },
+              },
+            }),
+          });
+          const fragment = renderToFragmentWithTheme(
+            StyledThumbValue,
+            {
+              $stylePreset: 'presetWithBorderRadius',
+              $thumbSize: 'sizing070',
+              children: 'test',
+            },
+            customTheme,
+          );
           expect(fragment).toMatchSnapshot();
         });
 
@@ -415,6 +442,42 @@ describe('slider', () => {
         onChange: () => {},
         minLabel: () => <span>0</span>,
         maxLabel: () => <span>100</span>,
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+
+    it('should be rendered in vertical slider with labelContainer and LabelPosition.Before', () => {
+      const fragment = renderToFragmentWithTheme(Slider, {
+        values: [10],
+        min: 0,
+        max: 100,
+        vertical: true,
+        onChange: () => {},
+        labelPosition: LabelPosition.Before,
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+
+    it('should be rendered in horisontal slider with labelContainer and LabelPosition.Before', () => {
+      const fragment = renderToFragmentWithTheme(Slider, {
+        values: [10],
+        min: 0,
+        max: 100,
+        vertical: false,
+        onChange: () => {},
+        labelPosition: LabelPosition.Before,
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+
+    it('should be rendered in vertical slider with labelContainer and LabelPosition.After', () => {
+      const fragment = renderToFragmentWithTheme(Slider, {
+        values: [10],
+        min: 0,
+        max: 100,
+        vertical: true,
+        onChange: () => {},
+        labelPosition: LabelPosition.After,
       });
       expect(fragment).toMatchSnapshot();
     });

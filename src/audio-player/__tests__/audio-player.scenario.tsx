@@ -25,6 +25,9 @@ const PlayerContainer = styled.div`
   margin-right: auto;
 `;
 
+// eslint-disable-next-line no-alert
+const alert = (msg: string) => () => window.alert(msg);
+
 export const component = () => (
   <div>
     <StorybookHeading>Recorded Audio Player</StorybookHeading>
@@ -44,8 +47,8 @@ export const component = () => (
     <PlayerContainer>
       <AudioPlayer
         {...recordedAudioProps}
-        onNextTrack={() => {}}
-        onPreviousTrack={() => {}}
+        onNextTrack={alert('Next track clicked!')}
+        onPreviousTrack={alert('Previous track clicked!')}
       />
     </PlayerContainer>
 

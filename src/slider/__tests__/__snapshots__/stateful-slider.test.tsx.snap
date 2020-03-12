@@ -114,6 +114,7 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
         aria-valuemin="25"
         aria-valuenow="40"
         class="emotion-0"
+        data-testid="slider-thumb"
         draggable="false"
         role="slider"
         style="position: absolute; z-index: 0; cursor: grabbing; user-select: none; transform: translate(NaNpx, NaNpx);"

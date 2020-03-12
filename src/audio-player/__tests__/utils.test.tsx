@@ -42,4 +42,17 @@ describe('formatTrackData', () => {
       values: [32, 125, 216, 228],
     });
   });
+
+  test('when current time is bigger than buffered end position', () => {
+    expect(
+      formatTrackData('track', 'indicator', 'buffer', [130], {
+        length: 1,
+        start: (i: number) => [0][i],
+        end: (i: number) => [125][i],
+      }),
+    ).toEqual({
+      colors: ['indicator', 'track'],
+      values: [130],
+    });
+  });
 });

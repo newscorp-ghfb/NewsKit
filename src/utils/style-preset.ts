@@ -16,7 +16,8 @@ export interface GetStylePresetFromThemeOptions {
   omitStyles?: StylePresetStyleKeys[];
   filterStyles?: StylePresetStyleKeys[];
 }
-const getPresetStyles = (
+
+export const getPresetStyles = (
   presetStyles: StylePresetStyles,
   options?: GetStylePresetFromThemeOptions,
 ) => {
@@ -25,6 +26,7 @@ const getPresetStyles = (
     ? filterObject(presetStyles, filterStyles)
     : rejectObject(presetStyles, omitStyles);
 };
+
 const cssTmpl = (
   {iconColor = '', ...cssObject}: ReturnType<typeof getPresetStyles>,
   selector: string = '',
@@ -40,6 +42,7 @@ const cssTmpl = (
   `}
   ${selector && '}'}
 `;
+
 export const getStylePresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: string,
   customProp?: Exclude<keyof Props, 'theme'>,
@@ -95,5 +98,5 @@ export const getSingleStylePreset = (
 ) => {
   const preset =
     (customToken && stylePresets[customToken]) || stylePresets[defaultToken];
-  return (preset[state || 'base'] || {})[cssProp] || '';
+  return (preset[state] || {})[cssProp] || '';
 };

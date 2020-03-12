@@ -1,5 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Svg renders a menu icon with $float property 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  float: left;
+}
+
+<svg
+    class="emotion-0"
+    viewBox="1 2 3 4"
+  />
+</DocumentFragment>
+`;
+
 exports[`Svg renders a menu icon with no size 1`] = `
 <DocumentFragment>
   .emotion-0 {

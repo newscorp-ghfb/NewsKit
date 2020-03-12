@@ -5,18 +5,7 @@ module.exports = {
   name: 'site',
   displayName: 'Site',
   bail: true,
-  coveragePathIgnorePatterns: ['/node_modules/', '<rootDir>/helpers/'],
   rootDir: './',
-  coverageReporters: ['lcov', 'text-summary'],
-  coverageDirectory: '../coverage',
-  coverageThreshold: {
-    global: {
-      branches: 100,
-      functions: 100,
-      lines: 100,
-      statements: 100,
-    },
-  },
   setupFilesAfterEnv: ['<rootDir>/../src/test/test-framework-setup.ts'],
   testEnvironment: 'jsdom',
   testPathIgnorePatterns: ['/node_modules/', '/dist/'],

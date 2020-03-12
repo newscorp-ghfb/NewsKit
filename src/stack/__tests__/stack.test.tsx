@@ -34,6 +34,15 @@ describe('Stack', () => {
 
   test(`renders where the stack flow is invalid`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
+      flow: 'blahblahblah' as any,
+      children: [<Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>],
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`renders where stackDistribution is invalid`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
       stackDistribution: 'blahblahblah' as any,
       children: [<Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>],
     });

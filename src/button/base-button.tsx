@@ -35,7 +35,7 @@ const ButtonElement = styled.button<ButtonCommonProps & ButtonSizing>`
   }
 
   ${({
-    $size = ButtonSize.Small,
+    $size,
     theme,
     padding,
     $stylePreset,

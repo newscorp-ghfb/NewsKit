@@ -1,276 +1,148 @@
 import React from 'react';
-import {AudioElement, useAudioHandler} from '../audio-element';
-import {renderToFragmentWithTheme, renderHook} from '../../test/test-utils';
+import {AudioElement, AudioElementProps} from '../audio-element';
+import {
+  renderToFragmentWithTheme,
+  renderWithTheme,
+} from '../../test/test-utils';
+
+let mockUseRef: jest.Mock;
+let mockCurrentRef: any;
+jest.mock('react', () => {
+  const react = jest.requireActual('react');
+  // const ref = react.createRef();
+  mockUseRef = jest.fn().mockReturnValue({
+    get current() {
+      return mockCurrentRef;
+    },
+    set current(x) {
+      /* noop */
+    },
+  });
+  return {
+    ...react,
+    useRef: mockUseRef,
+  };
+});
 
 describe('AudioElement', () => {
-  describe('renders correctly', () => {
-    test('default <audio>', () => {
-      const fragment = renderToFragmentWithTheme(AudioElement);
-      expect(fragment).toMatchSnapshot();
+  test('renders correctly with default props', () => {
+    const fragment = renderToFragmentWithTheme(AudioElement);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with caption and src', () => {
+    const fragment = renderToFragmentWithTheme(AudioElement, {
+      src: 'https://radio.talkradio.co.uk/stream',
+      captionSrc: 'captions.vtt',
+      playing: false,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  describe('behaves correctly', () => {
+    mockCurrentRef = {
+      play: jest.fn(),
+      pause: jest.fn(),
+      seekable: {
+        length: 2,
+        start: (x: number) => {
+          if (x !== 0) {
+            throw new Error(`seekable.start called with ${x} expected 0`);
+          }
+          return 0;
+        },
+        end: (x: number) => {
+          if (x !== 1) {
+            throw new Error(`seekable.end called with ${x} expected 1`);
+          }
+          return 100;
+        },
+      },
+      currentTime: undefined,
+      volume: undefined,
+      autoPlay: undefined,
+    };
+
+    const {rerender} = renderWithTheme(AudioElement, {
+      playing: false,
+      volume: 1,
+      newTime: -1,
+    });
+    const resetAndReRender = (props: AudioElementProps) => {
+      mockCurrentRef.play.mockReset();
+      mockCurrentRef.pause.mockReset();
+      mockCurrentRef.currentTime = undefined;
+      mockCurrentRef.volume = undefined;
+      mockCurrentRef.autoPlay = undefined;
+
+      rerender(<AudioElement {...props} />);
+    };
+
+    test('on first render', () => {
+      expect(mockCurrentRef.pause).toHaveBeenCalled();
+      expect(mockCurrentRef.play).not.toHaveBeenCalled();
+      expect(mockCurrentRef.currentTime).toEqual(0);
+      expect(mockCurrentRef.volume).toEqual(1);
     });
 
-    test('<audio> with caption', () => {
-      const fragment = renderToFragmentWithTheme(AudioElement, {
-        src: 'https://radio.talkradio.co.uk/stream',
-        captionSrc: 'captions.vtt',
+    test('after updating props, now playing at 20s in, and volume to 0.6', () => {
+      resetAndReRender({
+        playing: true,
+        volume: 0.6,
+        newTime: 20,
       });
-      expect(fragment).toMatchSnapshot();
-    });
-  });
 
-  describe('useAudioHandler', () => {
-    let playerRef: any;
-    let propRef: any;
-
-    beforeEach(() => {
-      playerRef = {
-        current: {
-          play: jest.fn(),
-          pause: jest.fn(),
-        },
-      };
-      propRef = React.createRef();
+      expect(mockCurrentRef.pause).not.toHaveBeenCalled();
+      expect(mockCurrentRef.play).toHaveBeenCalled();
+      expect(mockCurrentRef.currentTime).toEqual(20);
+      expect(mockCurrentRef.volume).toEqual(0.6);
     });
 
-    describe('play', () => {
-      test('calls play method on player', () => {
-        renderHook(() => useAudioHandler(playerRef, propRef));
-        propRef.current.play();
-
-        expect(playerRef.current.play).toHaveBeenCalled();
-        expect(playerRef.current.pause).not.toHaveBeenCalled();
+    test('after updating props to invalid under-min values', () => {
+      resetAndReRender({
+        playing: true,
+        volume: -2,
+        newTime: -10,
       });
+
+      expect(mockCurrentRef.pause).not.toHaveBeenCalled();
+      expect(mockCurrentRef.currentTime).toEqual(0); // TODO : will explode heres
+      expect(mockCurrentRef.volume).toEqual(0);
     });
 
-    describe('pause', () => {
-      test('calls pause method on player', () => {
-        renderHook(() => useAudioHandler(playerRef, propRef));
-        propRef.current.pause();
-
-        expect(playerRef.current.pause).toHaveBeenCalled();
-        expect(playerRef.current.play).not.toHaveBeenCalled();
+    test('after updating props to invalid over-max values, and pause', () => {
+      resetAndReRender({
+        playing: false,
+        volume: 11,
+        newTime: 120,
       });
-    });
-  });
 
-  describe('setCurrentTime', () => {
-    test('sets passed currentTime value onto the player', () => {
-      const playerRef = {
-        current: {
-          currentTime: 0,
-          seekable: {
-            start: jest.fn().mockReturnValue(0),
-            end: jest.fn().mockReturnValue(100),
-            length: 1,
-          },
-        },
-      } as any;
-      const propRef = {
-        current: {
-          setCurrentTime: jest.fn(),
-        },
-      } as any;
-      renderHook(() => useAudioHandler(playerRef, propRef));
-      const currentTime = propRef.current.setCurrentTime(50);
-      expect(currentTime).toEqual(50);
-      expect(playerRef.current.currentTime).toEqual(50);
-      expect(playerRef.current.seekable.start).toHaveBeenCalledWith(0);
-      expect(playerRef.current.seekable.end).toHaveBeenCalledWith(0);
-    });
-    test('does not set passed currentTime if timerange length is 0', () => {
-      const playerRef = {
-        current: {
-          currentTime: 0,
-          seekable: {
-            start: jest.fn().mockReturnValue(0),
-            end: jest.fn().mockReturnValue(100),
-            length: 0,
-          },
-        },
-      } as any;
-      const propRef = {
-        current: {
-          setCurrentTime: jest.fn(),
-        },
-      } as any;
-      renderHook(() => useAudioHandler(playerRef, propRef));
-      const currentTime = propRef.current.setCurrentTime(50);
-      expect(currentTime).toEqual(0);
-      expect(playerRef.current.currentTime).toEqual(0);
-      expect(playerRef.current.seekable.start).not.toHaveBeenCalled();
-      expect(playerRef.current.seekable.end).not.toHaveBeenCalled();
+      expect(mockCurrentRef.pause).toHaveBeenCalled();
+      expect(mockCurrentRef.play).not.toHaveBeenCalled();
+      expect(mockCurrentRef.currentTime).toEqual(100);
+      expect(mockCurrentRef.volume).toEqual(1);
     });
 
-    test('sets the minimum timerange value when passed currentTime is smaller minimum', () => {
-      const playerRef = {
-        current: {
-          currentTime: 0,
-          seekable: {
-            start: jest.fn().mockReturnValue(10),
-            end: jest.fn().mockReturnValue(20),
-            length: 2,
-          },
-        },
-      } as any;
-      const propRef = {
-        current: {
-          setCurrentTime: jest.fn(),
-        },
-      } as any;
-      renderHook(() => useAudioHandler(playerRef, propRef));
-      const currentTime = propRef.current.setCurrentTime(9);
-      expect(currentTime).toEqual(10);
-      expect(playerRef.current.currentTime).toEqual(10);
-      expect(playerRef.current.seekable.start).toHaveBeenCalledWith(0);
-      expect(playerRef.current.seekable.end).toHaveBeenCalledWith(1);
+    test('and should not update time if seekable.length is 0', () => {
+      mockCurrentRef.seekable.length = 0;
+      resetAndReRender({
+        playing: false,
+        volume: 1,
+        newTime: 50,
+      });
+      expect(mockCurrentRef.currentTime).toBeUndefined();
     });
 
-    test('sets the maximum timerange value when passed currentTime is smaller maximum', () => {
-      const playerRef = {
-        current: {
-          currentTime: 0,
-          seekable: {
-            start: jest.fn().mockReturnValue(10),
-            end: jest.fn().mockReturnValue(20),
-            length: 2,
-          },
-        },
-      } as any;
-      const propRef = {
-        current: {
-          setCurrentTime: jest.fn(),
-        },
-      } as any;
-      renderHook(() => useAudioHandler(playerRef, propRef));
-      const currentTime = propRef.current.setCurrentTime(90);
-      expect(currentTime).toEqual(20);
-      expect(playerRef.current.currentTime).toEqual(20);
-      expect(playerRef.current.seekable.start).toHaveBeenCalledWith(0);
-      expect(playerRef.current.seekable.end).toHaveBeenCalledWith(1);
-    });
+    test('and should not call manually play or pause on initial render if autoPlay is true', () => {
+      resetAndReRender({
+        playing: false,
+        volume: 1,
+        newTime: 0,
+        autoPlay: true,
+      });
 
-    test('returns currentTime value if audio not seekable', () => {
-      const playerRef = {
-        current: {
-          currentTime: 12345,
-          seekable: {
-            start: jest.fn(),
-            end: jest.fn(),
-            length: 0,
-          },
-        },
-      } as any;
-      const propRef = {
-        current: {
-          setCurrentTime: jest.fn(),
-        },
-      } as any;
-      renderHook(() => useAudioHandler(playerRef, propRef));
-      const currentTime = propRef.current.setCurrentTime(50);
-      expect(currentTime).toEqual(12345);
-      expect(playerRef.current.currentTime).toEqual(12345);
-      expect(playerRef.current.seekable.start).not.toHaveBeenCalled();
-      expect(playerRef.current.seekable.end).not.toHaveBeenCalled();
-    });
-  });
-
-  describe('setVolume', () => {
-    test('sets volume to 0.5', () => {
-      const playerRef = {
-        current: {},
-      } as any;
-      const propRef = {
-        current: {},
-      } as any;
-      renderHook(() => useAudioHandler(playerRef, propRef));
-
-      const newVolume = propRef.current.setVolume(0.5);
-
-      expect(newVolume).toEqual(0.5);
-      expect(playerRef.current.volume).toEqual(0.5);
-    });
-
-    test('bounds volume to a max of 1', () => {
-      const playerRef = {
-        current: {},
-      } as any;
-      const propRef = {
-        current: {},
-      } as any;
-      renderHook(() => useAudioHandler(playerRef, propRef));
-
-      const newVolume = propRef.current.setVolume(11);
-
-      expect(newVolume).toEqual(1);
-      expect(playerRef.current.volume).toEqual(1);
-    });
-
-    test('bounds volume to a min of 0', () => {
-      const playerRef = {
-        current: {},
-      } as any;
-      const propRef = {
-        current: {},
-      } as any;
-      renderHook(() => useAudioHandler(playerRef, propRef));
-
-      const newVolume = propRef.current.setVolume(-0.4);
-
-      expect(newVolume).toEqual(0);
-      expect(playerRef.current.volume).toEqual(0);
-    });
-  });
-
-  describe('setVolume', () => {
-    test('sets passed volume value onto the player', () => {
-      const playerRef = {
-        current: {
-          volume: 1,
-        },
-      } as any;
-      const propRef = {
-        current: {
-          setVolume: jest.fn(),
-        },
-      } as any;
-      renderHook(() => useAudioHandler(playerRef, propRef));
-      const volume = propRef.current.setVolume(0.5);
-      expect(volume).toEqual(0.5);
-      expect(playerRef.current.volume).toEqual(0.5);
-    });
-
-    test('sets the minimum timerange value when passed volume is smaller minimum', () => {
-      const playerRef = {
-        current: {
-          volume: 1,
-        },
-      } as any;
-      const propRef = {
-        current: {
-          setVolume: jest.fn(),
-        },
-      } as any;
-      renderHook(() => useAudioHandler(playerRef, propRef));
-      const volume = propRef.current.setVolume(-9);
-      expect(volume).toEqual(0);
-      expect(playerRef.current.volume).toEqual(0);
-    });
-
-    test('sets the maximum timerange value when passed volume is smaller maximum', () => {
-      const playerRef = {
-        current: {
-          volume: 1,
-        },
-      } as any;
-      const propRef = {
-        current: {
-          setVolume: jest.fn(),
-        },
-      } as any;
-      renderHook(() => useAudioHandler(playerRef, propRef));
-      const volume = propRef.current.setVolume(90);
-      expect(volume).toEqual(1);
-      expect(playerRef.current.volume).toEqual(1);
+      expect(mockCurrentRef.play).not.toHaveBeenCalled();
+      expect(mockCurrentRef.pause).not.toHaveBeenCalled();
     });
   });
 });

@@ -1,8 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AudioElement renders correctly <audio> with caption 1`] = `
+exports[`AudioElement renders correctly with default props 1`] = `
 <DocumentFragment>
   <audio
+    autoplay=""
+  />
+</DocumentFragment>
+`;
+
+exports[`AudioElement renders with caption and src 1`] = `
+<DocumentFragment>
+  <audio
+    autoplay=""
     src="https://radio.talkradio.co.uk/stream"
   >
     <track
@@ -10,11 +19,5 @@ exports[`AudioElement renders correctly <audio> with caption 1`] = `
       src="captions.vtt"
     />
   </audio>
-</DocumentFragment>
-`;
-
-exports[`AudioElement renders correctly default <audio> 1`] = `
-<DocumentFragment>
-  <audio />
 </DocumentFragment>
 `;
