@@ -41,10 +41,3 @@ Cypress.Commands.add('acceptCookieBanner', () => {
     }
   });
 });
-
-Cypress.Commands.add('getElementInIframe', (iframe, element) => {
-  cy.get(iframe).then(result => {
-    const body = result.contents().find('body');
-    return cy.wrap(body).find(element);
-  });
-});
