@@ -7,6 +7,9 @@ const overlayTestID = '[data-testid="overlay"]';
 const headerNavigatioTestID = '[data-testid="header-navigation"]';
 
 describe('Documentation Site - header-navigation component', () => {
+  beforeEach(() => {
+    cy.acceptCookieBanner();
+  });
   describe('Desktop view', () => {
     it('should contain logo', () => {
       cy.visit('/');

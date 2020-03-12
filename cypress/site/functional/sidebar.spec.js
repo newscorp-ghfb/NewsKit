@@ -1,6 +1,10 @@
 // /<reference types="Cypress" />
 
 describe('Documentation Site - sidebar component', () => {
+  beforeEach(() => {
+    cy.acceptCookieBanner();
+  });
+
   before(() => {
     cy.visit('/');
   });
