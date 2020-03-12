@@ -5,6 +5,7 @@ const playgroundElement = '[data-testid="playground-element"]';
 describe('Documentation Site - playground', () => {
   beforeEach(() => {
     cy.visit('/components/tag');
+    cy.acceptCookieBanner();
   });
 
   it('Tag playground should update the content', () => {

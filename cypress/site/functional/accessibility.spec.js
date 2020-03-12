@@ -15,6 +15,10 @@ const flatRoutes = routes =>
 const pages = flatRoutes(siteRoutes);
 
 describe('Page accessibility', () => {
+  before(() => {
+    cy.visit('/');
+    cy.acceptCookieBanner();
+  });
   pages.forEach(path => {
     it(`should pass basic a11y test for ${Cypress.config(
       'baseUrl',
