@@ -90,9 +90,9 @@ push_release:
 	#We don't care about any changes on master we force the current HEAD onto master 
 	echo "Merge our release branch"
 	git merge -s ours origin/master --no-edit
-	git push --set-upstream origin $(RELEASE_BRANCH)
+	git push --tags --set-upstream origin $(RELEASE_BRANCH)
 	echo "Create PR into develop"
 	hub pull-request -p --base develop --head $(RELEASE_BRANCH) -m $(RELEASE_PR_DEVELOP_TITLE)
 	echo "Create PR into master"
 	hub pull-request --base master --head $(RELEASE_BRANCH) -m $(RELEASE_PR_MASTER_TITLE)
-	git push origin --delete "trigger-release-${INITIAL_UPDATE_TYPE}"
+	git push --tags origin --delete "trigger-release-${INITIAL_UPDATE_TYPE}"
