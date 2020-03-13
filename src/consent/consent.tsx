@@ -33,7 +33,7 @@ interface InitConfig {
 
  */
 export const Consent: React.FC<ConsentProps> = ({
-  waitForConsent = true,
+  waitForConsent = false,
   accountId,
   mmsDomain,
   reactHelmet,

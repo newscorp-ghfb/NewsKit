@@ -15,7 +15,7 @@ const flatRoutes = routes =>
 const pages = flatRoutes(siteRoutes);
 
 describe('Page accessibility', () => {
-  before(() => {
+  beforeEach(() => {
     cy.visit('/');
     cy.acceptCookieBanner();
   });

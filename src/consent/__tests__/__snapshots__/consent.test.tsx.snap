@@ -9,7 +9,7 @@ exports[`Consent with helmet renders scripts with default values 1`] = `
       "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true}}"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":false}}"
     },
     {
       "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
@@ -30,7 +30,7 @@ exports[`Consent with helmet with deprecated props renders scripts with accountI
       "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true}}"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":false}}"
     },
     {
       "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
@@ -51,7 +51,7 @@ exports[`Consent with helmet with deprecated props renders scripts with mmsDomai
       "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"test-mmsDomain\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true}}"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"test-mmsDomain\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":false}}"
     },
     {
       "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
@@ -93,7 +93,7 @@ exports[`Consent with helmet with optional props renders scripts with mmsDomain 
       "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"test-mmsdomain\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true}}"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"test-mmsdomain\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":false}}"
     },
     {
       "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
@@ -114,7 +114,7 @@ exports[`Consent with helmet with optional props renders scripts with privacyMan
       "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true,\\"privacyManagerId\\":\\"test-privacyManagerId\\"}}"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":false,\\"privacyManagerId\\":\\"test-privacyManagerId\\"}}"
     },
     {
       "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
@@ -135,7 +135,7 @@ exports[`Consent with helmet with optional props renders scripts with siteHref 1
       "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true,\\"siteHref\\":\\"test-siteHref\\"}}"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":false,\\"siteHref\\":\\"test-siteHref\\"}}"
     },
     {
       "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
@@ -156,7 +156,7 @@ exports[`Consent with helmet with optional props renders scripts with siteId 1`]
       "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true,\\"siteId\\":\\"test-siteId\\"}}"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":false,\\"siteId\\":\\"test-siteId\\"}}"
     },
     {
       "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
@@ -177,7 +177,7 @@ exports[`Consent with helmet with optional props renders scripts with targetingP
       "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true,\\"targetingParams\\":{\\"foo\\":\\"bar\\"}}}"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":false,\\"targetingParams\\":{\\"foo\\":\\"bar\\"}}}"
     },
     {
       "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
@@ -198,7 +198,7 @@ exports[`Consent without helmet renders scripts with default values 1`] = `
       "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true}}"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":false}}"
     },
     {
       "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
@@ -219,7 +219,7 @@ exports[`Consent without helmet with deprecated props renders scripts with accou
       "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true}}"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":false}}"
     },
     {
       "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
@@ -240,7 +240,7 @@ exports[`Consent without helmet with deprecated props renders scripts with mmsDo
       "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"test-mmsDomain\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true}}"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"test-mmsDomain\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":false}}"
     },
     {
       "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
@@ -282,7 +282,7 @@ exports[`Consent without helmet with optional props renders scripts with mmsDoma
       "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"test-mmsdomain\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true}}"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"test-mmsdomain\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":false}}"
     },
     {
       "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
@@ -303,7 +303,7 @@ exports[`Consent without helmet with optional props renders scripts with privacy
       "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true,\\"privacyManagerId\\":\\"test-privacyManagerId\\"}}"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":false,\\"privacyManagerId\\":\\"test-privacyManagerId\\"}}"
     },
     {
       "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
@@ -324,7 +324,7 @@ exports[`Consent without helmet with optional props renders scripts with siteHre
       "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true,\\"siteHref\\":\\"test-siteHref\\"}}"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":false,\\"siteHref\\":\\"test-siteHref\\"}}"
     },
     {
       "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
@@ -345,7 +345,7 @@ exports[`Consent without helmet with optional props renders scripts with siteId 
       "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true,\\"siteId\\":\\"test-siteId\\"}}"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":false,\\"siteId\\":\\"test-siteId\\"}}"
     },
     {
       "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
@@ -366,7 +366,7 @@ exports[`Consent without helmet with optional props renders scripts with targeti
       "content": "(function () { var e = false; var c = window; var t = document; function r() { if (!c.frames[\\"__cmpLocator\\"]) { if (t.body) { var a = t.body; var e = t.createElement(\\"iframe\\"); e.style.cssText = \\"display:none\\"; e.name = \\"__cmpLocator\\"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __cmp.a = __cmp.a || []; if (!a.length) { return __cmp.a } else if (a[0] === \\"ping\\") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __cmp.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === \\"string\\"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__cmp(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, \\"*\\") }) } } catch (a) { } } if (typeof __cmp !== \\"function\\") { c.__cmp = p; __cmp.msgHandler = l; c.addEventListener(\\"message\\", l, false) } })();"
     },
     {
-      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":true,\\"targetingParams\\":{\\"foo\\":\\"bar\\"}}}"
+      "content": "window._sp_ = {\\"config\\":{\\"accountId\\":\\"test-accountId\\",\\"mmsDomain\\":\\"https://messagetest-accountId.sp-prod.net\\",\\"cmpOrigin\\":\\"https://sourcepoint.mgr.consensu.org\\",\\"waitForConsent\\":false,\\"targetingParams\\":{\\"foo\\":\\"bar\\"}}}"
     },
     {
       "src": "https://dialogue.sp-prod.net/messagingWithoutDetection.js"
