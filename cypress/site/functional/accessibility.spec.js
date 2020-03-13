@@ -15,14 +15,11 @@ const flatRoutes = routes =>
 const pages = flatRoutes(siteRoutes);
 
 describe('Page accessibility', () => {
-  beforeEach(() => {
-    cy.visit('/');
-    cy.acceptCookieBanner();
-  });
   pages.forEach(path => {
     it(`should pass basic a11y test for ${Cypress.config(
       'baseUrl',
     )}${path}`, () => {
+      cy.mockConsentRequest();
       cy.visit(path);
       cy.injectAxe();
       if (path === `/foundations/typography` || path === `/pages/article`) {

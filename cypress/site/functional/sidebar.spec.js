@@ -1,9 +1,9 @@
 // /<reference types="Cypress" />
 
 describe('Documentation Site - sidebar component', () => {
-  beforeEach(() => {
+  before(() => {
+    cy.mockConsentRequest();
     cy.visit('/');
-    cy.acceptCookieBanner();
   });
 
   // TODO: Need to remove color-contrast as a rule here once PPDSC-785 ticket is fixed
