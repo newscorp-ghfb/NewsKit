@@ -29,11 +29,15 @@ Cypress.Commands.add('checkA11yWithCustomRule', customRule => {
 });
 
 Cypress.Commands.add('acceptCookieBanner', () => {
-  cy.get("iframe[id^='sp_message_iframe']").then(iframe => {
-    const innerBody = iframe.contents().find('body');
-    cy.wrap(innerBody)
-      .find('.message-component.message-button')
-      .contains('I Accept')
-      .click({force: true});
+  cy.get('body').then(body => {
+    if (body.find("iframe[id^='sp_message_iframe']").length > 0) {
+      cy.get("iframe[id^='sp_message_iframe']").then(iframe => {
+        const innerBody = iframe.contents().find('body');
+        cy.wrap(innerBody)
+          .find('.message-component.message-button')
+          .contains('I Accept')
+          .click({force: true});
+      });
+    }
   });
 });
