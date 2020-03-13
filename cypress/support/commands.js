@@ -30,7 +30,9 @@ Cypress.Commands.add('checkA11yWithCustomRule', customRule => {
 
 Cypress.Commands.add('acceptCookieBanner', () => {
   cy.get('body').then(body => {
-    if (body.find("iframe[id^='sp_message_iframe']").length > 0) {
+    if (
+      body.find("iframe[id^='sp_message_iframe']", {timeout: 5000}).length > 0
+    ) {
       cy.get("iframe[id^='sp_message_iframe']").then(iframe => {
         const innerBody = iframe.contents().find('body');
         cy.wrap(innerBody)
