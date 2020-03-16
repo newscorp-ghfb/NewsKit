@@ -1,5 +1,5 @@
 import React from 'react';
-import {ForwardButton, ReplayButton} from './forward-replay';
+import {ForwardButton, BackwardButton} from './forward-replay';
 import {PlayerButton} from './play-pause';
 import {SkipPreviousButton, SkipNextButton} from './skip-track';
 import {Stack, StackDistribution, Flow} from '../../stack';
@@ -24,7 +24,7 @@ export interface ControlPanelProps extends TrackControlProps {
   showControls: boolean;
   isPlaying: boolean;
   togglePlay: () => void;
-  onClickReplay?: () => void;
+  onClickBackward?: () => void;
   onClickForward?: () => void;
   $controlPresets: ControlPresets;
 }
@@ -37,7 +37,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
     disablePreviousTrack,
     showControls,
     isPlaying,
-    onClickReplay,
+    onClickBackward,
     onClickForward,
     togglePlay,
     $controlPresets: {previous, replay, play, forward, next},
@@ -55,8 +55,8 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
           $stylePreset={previous}
         />
       )}
-      {showControls && onClickReplay && (
-        <ReplayButton onClick={onClickReplay} $stylePreset={replay} />
+      {showControls && onClickBackward && (
+        <BackwardButton onClick={onClickBackward} $stylePreset={replay} />
       )}
       <PlayerButton
         canPause={showControls}

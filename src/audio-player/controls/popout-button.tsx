@@ -14,6 +14,7 @@ export const PopoutButton: React.FC<PopoutButtonProps> = React.memo(props => {
     <IconButton
       {...props}
       $size={ButtonSize.Medium}
+      data-testid="audio-player-popout"
       onClick={
         href || onClick
           ? () => {

@@ -42,3 +42,16 @@ export const formatTrackData = (
 
   return {colors, values};
 };
+
+export const getMediaSegment = (duration: number, currentPosition: number) => {
+  const currentPositionPercentage = (currentPosition / duration) * 100;
+
+  if (currentPositionPercentage > 0 && currentPositionPercentage <= 25)
+    return '0-25';
+  if (currentPositionPercentage > 25 && currentPositionPercentage <= 50)
+    return '26-50';
+  if (currentPositionPercentage > 50 && currentPositionPercentage <= 75)
+    return '51-75';
+
+  return '76-100';
+};

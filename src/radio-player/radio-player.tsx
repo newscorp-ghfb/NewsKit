@@ -7,6 +7,7 @@ import {
   ProgrammeTags,
   ImageContainer,
 } from './styled';
+import {InstrumentationProvider} from '../instrumentation/instrumentation-provider';
 import {DescriptionMetaProps, CenterProp, PlayerImageProps} from './types';
 import {Grid, Cell} from '../grid';
 import {Image} from '../image';
@@ -108,29 +109,29 @@ export type RadioPlayerProps = PlayerImageProps &
   DescriptionMetaProps &
   AudioPlayerProps;
 
-export const RadioPlayer: React.FC<RadioPlayerProps> = ({
-  time,
-  live,
-  title,
-  flag,
-  description,
-  tags,
-  imgSrc,
-  imgAlt,
-  ...props
-}) => (
-  <AudioPlayer {...props} live={live}>
-    <Block $margin="spaceStack050">
-      <PlayerMeta
-        time={time}
-        live={live}
-        title={title}
-        flag={flag}
-        description={description}
-        tags={tags}
-        imgSrc={imgSrc}
-        imgAlt={imgAlt}
-      />
-    </Block>
-  </AudioPlayer>
-);
+export const RadioPlayer: React.FC<RadioPlayerProps> = props => {
+  const {time, live, title, flag, description, tags, imgSrc, imgAlt} = props;
+
+  const contextObject = {
+    media_name: title,
+  };
+
+  return (
+    <InstrumentationProvider context={contextObject}>
+      <AudioPlayer {...props}>
+        <Block $margin="spaceStack050">
+          <PlayerMeta
+            time={time}
+            live={live}
+            flag={flag}
+            description={description}
+            tags={tags}
+            imgSrc={imgSrc}
+            imgAlt={imgAlt}
+            title={title}
+          />
+        </Block>
+      </AudioPlayer>
+    </InstrumentationProvider>
+  );
+};

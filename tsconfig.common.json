@@ -11,6 +11,6 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "preserveSymlinks": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
   }
 }

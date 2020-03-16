@@ -69,6 +69,9 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
   <Prop name="disablePreviousTrack" type="boolean">
     Disable the previous track button.
   </Prop>
+  <Prop name="popoutHref" type="string">
+    Url to player hosted by itself on page. Will open in a new window and pause current instance.
+  </Prop>
   <Prop name="$volumePresets" type="Object<SliderStylePresets>">
     <div>
       This prop is an object containing all the following volume slider style
@@ -186,10 +189,15 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       propName: 'onNextTrack',
       value: (() => {})
     },
-    {
+    { 
       name: 'Skip Previous Track',
       propName: 'onPreviousTrack',
       value: (() => {})
+    },
+    {
+      name: 'Popout',
+      propName: 'popoutHref',
+      value: 'https://newskit.co.uk'
     }
   ]}
 />

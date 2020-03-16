@@ -1248,7 +1248,7 @@ exports[`Radio Player default player 1`] = `
             >
               <button
                 class="emotion-49"
-                data-testid="audio-player-replay"
+                data-testid="audio-player-backward"
                 type="button"
               >
                 <div
@@ -2416,7 +2416,14 @@ exports[`Radio Player live player 1`] = `
       <audio
         autoplay=""
         data-testid="audio-player"
+        description="Test description"
+        flag="Live"
+        imgalt="test image 1"
+        imgsrc="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
         src="https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3"
+        tags="Tag 1,Tag 2"
+        time="1PM to 3PM"
+        title="title 1"
       >
         <track
           kind="captions"
@@ -3953,8 +3960,14 @@ exports[`Radio Player player with popout link 1`] = `
       <audio
         autoplay=""
         data-testid="audio-player"
+        description="Test description"
         href="https://thetimes.co.uk/"
+        imgalt="test image 1"
+        imgsrc="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
         src="https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3"
+        tags="Tag 1,Tag 2"
+        time="1PM to 3PM"
+        title="title 1"
       >
         <track
           kind="captions"
@@ -4307,7 +4320,7 @@ exports[`Radio Player player with popout link 1`] = `
             >
               <button
                 class="emotion-65"
-                data-testid="audio-player-replay"
+                data-testid="audio-player-backward"
                 type="button"
               >
                 <div
@@ -5628,7 +5641,13 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
       <audio
         autoplay=""
         data-testid="audio-player"
+        description="Test description"
+        imgalt="test image 1"
+        imgsrc="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
         src="https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3"
+        tags="Tag 1,Tag 2"
+        time="1PM to 3PM"
+        title="title 1"
       >
         <track
           kind="captions"
@@ -6051,7 +6070,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
             >
               <button
                 class="emotion-77"
-                data-testid="audio-player-replay"
+                data-testid="audio-player-backward"
                 type="button"
               >
                 <div

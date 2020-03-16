@@ -18,12 +18,20 @@ import {Stack, StackDistribution, Flow} from '../stack';
 import {PlayerContainer, ControlContainer} from './styled';
 import {VolumeControl} from '../volume-control';
 import {Cell} from '../grid/cell';
-import {formatTrackTime, formatTrackData} from './utils';
+import {formatTrackTime, formatTrackData, getMediaSegment} from './utils';
 import {StyledTrack} from '../slider/styled';
 import {useTheme} from '../themes/emotion';
+
+import calculateStringPercentage from '../utils/calculate-string-percentage';
 import {getSingleStylePreset} from '../utils/style-preset';
-import {useInstrumentation, EventTrigger} from '../instrumentation';
+import {
+  EventTrigger,
+  withInstrumentation,
+  InstrumentationEvent,
+} from '../instrumentation';
 import {LabelPosition} from '../slider/types';
+
+const {version} = require('../../package.json');
 
 type EventListener = (event: ChangeEvent<HTMLAudioElement>) => void;
 
@@ -35,12 +43,17 @@ export interface AudioPlayerProps
   $volumePresets?: SliderStylePresets;
   $trackPresets?: SliderStylePresets & {$bufferingStylePreset?: string};
   $controlPresets?: Partial<ControlPresets>;
+  autoplay?: boolean;
   live?: boolean;
+  time?: string;
 }
 
-export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
+export interface InstrumentedAudioPlayerProps extends AudioPlayerProps {
+  fireEvent: (event: InstrumentationEvent) => void;
+}
+
+const InternalAudioPlayer: React.FC<InstrumentedAudioPlayerProps> = props => {
   const {
-    title,
     onNextTrack,
     disableNextTrack,
     onPreviousTrack,
@@ -50,12 +63,12 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     $trackPresets,
     $controlPresets,
     src,
+    autoplay,
     children,
     live = false,
+    fireEvent,
     ...restProps
   } = props;
-
-  const {fireEvent} = useInstrumentation();
 
   const volumePresets: Required<AudioPlayerProps['$volumePresets']> = {
     $sliderIndicatorTrackStylePreset: 'volumeControlTrackIndicator',
@@ -84,73 +97,130 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     ...$controlPresets,
   };
 
+  const [volume, setVolume] = useState(1);
+  const [duration, setDuration] = useState(0);
+  const [trackPositionArr, setTrackPosition] = useState([0]);
+  const [isPlaying, setPlayState] = useState(false);
+  const [buffered, setBuffered] = useState<TimeRanges>();
+
+  const [trackPosition] = trackPositionArr;
+  const trackPositionRef = useRef(0);
+
+  useEffect(() => {
+    trackPositionRef.current = trackPosition;
+  });
+  useEffect(() => {
+    setDuration(0);
+  }, [src]);
+
+  const getTrackingInformation = useCallback(
+    (
+      originator: string,
+      eventTrigger: EventTrigger,
+      eventSpecificInfo?: object,
+    ) => {
+      const trackingInformation = {
+        originator,
+        trigger: eventTrigger,
+        media_player: `newskit-audio-player-${version}`,
+        media_type: 'audio',
+        ...eventSpecificInfo,
+      };
+
+      if (live === false) {
+        return {
+          ...trackingInformation,
+          media_duration: formatTrackTime(duration),
+          media_milestone: calculateStringPercentage(
+            trackPositionRef.current,
+            duration,
+          ),
+          media_segment: getMediaSegment(duration, trackPositionRef.current),
+          media_offset: formatTrackTime(trackPositionRef.current),
+        };
+      }
+      return trackingInformation;
+    },
+    [duration, live],
+  );
+
   /**
    * audio player volume controls
    */
-  const [volume, setVolume] = useState(1);
   const onVolumeChange: EventListener = event => setVolume(event.target.volume);
 
   /**
    * audio src duration handler
    */
-  const [duration, setDuration] = useState(0);
   const onDurationChange: EventListener = event =>
     setDuration(event.target.duration);
-
-  // When the src changes, clear the old duration (will be set again when data loads).
-  useEffect(() => {
-    setDuration(0);
-  }, [src]);
 
   /**
    * audio playback handlers
    */
-  const [isPlaying, setPlayState] = useState(false);
-  const play = () => {
+  const onPlay = () => {
+    let trackingInformation = getTrackingInformation(
+      'audio-player-audio',
+      EventTrigger.Start,
+    );
+    if (autoplay) fireEvent(trackingInformation);
+
     if (!isPlaying) {
       setPlayState(true);
 
-      fireEvent({
-        originator: 'audio-player',
-        trigger: EventTrigger.Start,
-        data: {
-          src,
-          title,
-        },
-      });
+      trackingInformation = getTrackingInformation(
+        'audio-player-play-button',
+        EventTrigger.Click,
+      );
+      fireEvent(trackingInformation);
     }
   };
 
-  const pause = () => {
-    if (isPlaying) {
-      setPlayState(false);
+  const pausePlayback = () => {
+    setPlayState(false);
+  };
 
-      fireEvent({
-        originator: 'audio-player',
-        trigger: EventTrigger.Stop,
-        data: {
-          src,
-          title,
-        },
-      });
+  const firePauseTrackingInformation = () => {
+    const originator = live
+      ? 'audio-player-stop-button'
+      : 'audio-player-pause-button';
+
+    const trackingInformation = getTrackingInformation(
+      originator,
+      EventTrigger.Click,
+    );
+    fireEvent(trackingInformation);
+  };
+
+  const onPause = () => {
+    // The following if statement is needed for avoiding edge cases with keyboard interactions
+    /* istanbul ignore if */
+    if (!isPlaying) return;
+    pausePlayback();
+    firePauseTrackingInformation();
+  };
+
+  const firePopoutTrackingInformation = () => {
+    const trackingInformation = getTrackingInformation(
+      'audio-player-popout',
+      EventTrigger.Click,
+    );
+    fireEvent(trackingInformation);
+  };
+
+  const onPopoutClick = () => {
+    if (isPlaying) {
+      pausePlayback();
     }
+    firePopoutTrackingInformation();
   };
 
   const togglePlay = () => {
     if (isPlaying) {
-      pause();
+      onPause();
     } else {
-      play();
+      onPlay();
     }
-
-    fireEvent({
-      originator: 'audio-player-play-button',
-      trigger: EventTrigger.Click,
-      data: {
-        src,
-        title,
-      },
-    });
   };
 
   /**
@@ -159,14 +229,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
    * this is to prevent recreation of all the event handlers on every audio time update
    * see https://reactjs.org/docs/hooks-faq.html#how-to-read-an-often-changing-value-from-usecallback
    */
-  const [trackPositionArr, setTrackPosition] = useState([0]);
-  const [trackPosition] = trackPositionArr;
-  const trackPositionRef = useRef(0);
-  useEffect(() => {
-    trackPositionRef.current = trackPosition;
-  });
 
-  const [buffered, setBuffered] = useState<TimeRanges>();
   const onProgress: EventListener = event => {
     setBuffered(event.target.buffered);
   };
@@ -179,6 +242,12 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     const eventTime = Math.round(event.target.currentTime);
     if (trackPositionRef.current !== eventTime) {
       setTrackPosition([eventTime]);
+
+      const trackingInformation = getTrackingInformation(
+        'audio-player-audio',
+        EventTrigger.Pulse,
+      );
+      fireEvent(trackingInformation);
     }
     // Used to reset newTime after the player changes time. Used to fix issues regarding consecutive audio time change to the same value
     if (newTime !== -1) {
@@ -213,78 +282,46 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   );
 
   const onClickPrevious = useCallback(() => {
-    fireEvent({
-      originator: 'audio-player-skip-previous-button',
-      trigger: EventTrigger.Click,
-      data: {
-        src,
-        title,
-      },
-    });
     if (trackPositionRef.current > 5) {
       onChangeAudioTime(0);
     } else {
       onPreviousTrack!();
     }
-  }, [
-    onPreviousTrack,
-    fireEvent,
-    src,
-    title,
-    trackPositionRef,
-    onChangeAudioTime,
-  ]);
+  }, [onPreviousTrack, onChangeAudioTime]);
 
   const onClickNext = useCallback(() => {
-    fireEvent({
-      originator: 'audio-player-skip-next-button',
-      trigger: EventTrigger.Click,
-      data: {
-        src,
-        title,
-      },
-    });
     onNextTrack!();
-  }, [onNextTrack, fireEvent, src, title]);
+  }, [onNextTrack]);
 
-  const onClickReplay = useCallback(() => {
-    fireEvent({
-      originator: 'audio-player-replay-button',
-      trigger: EventTrigger.Click,
-      data: {
-        src,
-        title,
-      },
-    });
+  const onClickBackward = useCallback(() => {
     onChangeAudioTime(trackPositionRef.current - 10);
-  }, [fireEvent, onChangeAudioTime, src, title, trackPositionRef]);
+    const trackingInformation = getTrackingInformation(
+      'audio-player-skip-backward',
+      EventTrigger.Click,
+      {event_navigation_name: 'backward skip'},
+    );
+    fireEvent(trackingInformation);
+  }, [fireEvent, getTrackingInformation, onChangeAudioTime]);
 
   const onClickForward = useCallback(() => {
-    fireEvent({
-      originator: 'audio-player-forward-button',
-      trigger: EventTrigger.Click,
-      data: {
-        src,
-        title,
-      },
-    });
     onChangeAudioTime(trackPositionRef.current + 10);
-  }, [fireEvent, onChangeAudioTime, src, title, trackPositionRef]);
+
+    const trackingInformation = getTrackingInformation(
+      'audio-player-skip-forward',
+      EventTrigger.Click,
+      {event_navigation_name: 'forward skip'},
+    );
+    fireEvent(trackingInformation);
+  }, [fireEvent, getTrackingInformation, onChangeAudioTime]);
 
   const onEnded = useCallback(() => {
-    fireEvent({
-      originator: 'audio-player',
-      trigger: EventTrigger.End,
-      data: {
-        src,
-        title,
-      },
-    });
-  }, [fireEvent, src, title]);
+    const trackingInformation = getTrackingInformation(
+      'audio-complete',
+      EventTrigger.End,
+    );
+    fireEvent(trackingInformation);
+  }, [getTrackingInformation, fireEvent]);
 
-  /**
-   * audio playback handlers
-   */
   const theme = useTheme();
   const renderTrack: SliderProps['renderTrack'] = ({
     props: trackProps,
@@ -351,10 +388,9 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     >
       <AudioElement
         src={src}
-        title={title}
+        onPlay={onPlay}
+        onPause={onPause}
         playing={isPlaying}
-        onPlay={play}
-        onPause={pause}
         onDurationChange={onDurationChange}
         onTimeUpdate={onTimeUpdate}
         onProgress={onProgress}
@@ -409,7 +445,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
             disablePreviousTrack={disablePreviousTrack}
             showControls={showControls}
             isPlaying={isPlaying}
-            onClickReplay={onClickReplay}
+            onClickBackward={onClickBackward}
             onClickForward={onClickForward}
             togglePlay={togglePlay}
             $controlPresets={controlPresets}
@@ -421,7 +457,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
             >
               {popoutHref && (
                 <PopoutButton
-                  onClick={pause}
+                  onClick={onPopoutClick}
                   href={popoutHref}
                   $stylePreset={controlPresets.popout}
                 />
@@ -433,3 +469,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     </PlayerContainer>
   );
 };
+
+export const AudioPlayer: React.FC<AudioPlayerProps> = withInstrumentation<
+  AudioPlayerProps
+>(props => <InternalAudioPlayer {...props} />);

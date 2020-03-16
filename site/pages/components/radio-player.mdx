@@ -81,6 +81,9 @@ The Radio Player requires a source stream to be passed in as a prop. This will t
     </a>
     .
   </Prop>
+  <Prop name="popoutHref" type="string">
+    Url to player hosted by itself on page. Will open in a new window and pause current instance. 
+  </Prop>
   <Prop name="$volumePresets" type="Object<SliderStylePresets>">
     <div>
       This prop is an object containing all the following volume slider style
@@ -261,6 +264,11 @@ The Radio Player requires a source stream to be passed in as a prop. This will t
       propName: 'captionSrc',
       value: 'captionsSrc.vtt',
     },
+    {
+      name: 'Popout',
+      propName: 'popoutHref',
+      value: 'https://newskit.co.uk'
+    }
   ]}
 />
 

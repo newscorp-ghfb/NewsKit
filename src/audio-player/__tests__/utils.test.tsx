@@ -1,4 +1,4 @@
-import {formatTrackData, formatTrackTime} from '../utils';
+import {formatTrackData, formatTrackTime, getMediaSegment} from '../utils';
 
 test('formatTrackTime', () => {
   const oneMinute = 60;
@@ -54,5 +54,20 @@ describe('formatTrackData', () => {
       colors: ['indicator', 'track'],
       values: [130],
     });
+  });
+});
+
+describe('getmediaSegment()', () => {
+  test('should return a segment of 76-100', () => {
+    expect(getMediaSegment(1000, 900)).toEqual('76-100');
+  });
+  test('should return a segment of  0-25', () => {
+    expect(getMediaSegment(1000, 100)).toEqual('0-25');
+  });
+  test('should return a segment of 26-50', () => {
+    expect(getMediaSegment(1000, 500)).toEqual('26-50');
+  });
+  test('should return a segment of 51-75', () => {
+    expect(getMediaSegment(1000, 700)).toEqual('51-75');
   });
 });

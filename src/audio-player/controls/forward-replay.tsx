@@ -17,9 +17,9 @@ export const ForwardButton: React.FC<TrackControlProps> = React.memo(props => (
   </IconButton>
 ));
 
-export const ReplayButton: React.FC<TrackControlProps> = React.memo(props => (
-  <Button
-    data-testid="audio-player-replay"
+export const BackwardButton: React.FC<TrackControlProps> = React.memo(props => (
+  <IconButton
+    data-testid="audio-player-backward"
     $size={ButtonSize.Medium}
     {...props}
   />

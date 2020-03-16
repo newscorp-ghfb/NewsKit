@@ -110,6 +110,7 @@ exports[`PopoutButton renders correctly with default props 1`] = `
 
 <button
     class="emotion-3"
+    data-testid="audio-player-popout"
     type="button"
   >
     <div

@@ -31,7 +31,7 @@ describe('skippable audio player', () => {
 
   it('should skip track forward and backward using the controls', () => {
     cy.get('[data-testid="audio-player-forward"]').as('forward');
-    cy.get('[data-testid="audio-player-replay"]').as('replay');
+    cy.get('[data-testid="audio-player-backward"]').as('replay');
     cy.get('@sliderTrack').should(slider => {
       expect(slider.attr('values')).to.equal('0');
     });

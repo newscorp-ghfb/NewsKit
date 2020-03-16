@@ -7,6 +7,7 @@ export enum EventTrigger {
   Start = 'start',
   Stop = 'stop',
   End = 'end',
+  Pulse = 'pulse',
 }
 
 export interface InstrumentationEvent {
@@ -14,6 +15,12 @@ export interface InstrumentationEvent {
   trigger: EventTrigger;
   data?: object;
   context?: EventContext;
+  media_player?: string;
+  media_name?: string;
+  media_type?: string;
+  media_duration?: string;
+  media_segment?: string;
+  media_offset?: string;
 }
 
 export type EventHandler = (

@@ -40,6 +40,7 @@ export const component = () => (
     <PlayerContainer>
       <RadioPlayer
         {...props}
+        title="Sound Helix Song"
         flag={CustomFlag}
         onNextTrack={() => {}}
         onPreviousTrack={() => {}}
