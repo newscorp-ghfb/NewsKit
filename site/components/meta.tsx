@@ -4,7 +4,7 @@ const Meta = (): JSX.Element => (
   <React.Fragment>
     <meta
       name="viewport"
-      content="initial-scale=1.0, width=device-width"
+      content="width=device-width, initial-scale=1"
       key="viewport"
     />
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
