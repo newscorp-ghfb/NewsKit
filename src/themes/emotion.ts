@@ -10,3 +10,4 @@ const useTheme = (_useTheme as unknown) as () => Theme;
 
 export {withTheme, useTheme};
 export {ThemeProvider} from 'emotion-theming';
+export {Global} from '@emotion/core';

@@ -3,37 +3,37 @@
 exports[`ArticleHeadline renders correctly with default props 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 40px;
   line-height: 1.1;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 24px 0;
   display: inline;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
 }
 
 @media screen and (min-width:960px) {
   .emotion-0 {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Noto Sans",sans-serif;
     font-size: 32px;
     line-height: 1.125;
-    font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
   }
 }
 
@@ -48,37 +48,37 @@ exports[`ArticleHeadline renders correctly with default props 1`] = `
 exports[`ArticleHeadline renders correctly with default props 2`] = `
 <DocumentFragment>
   .emotion-1 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 40px;
   line-height: 1.1;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 24px 0;
   display: inline;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
 }
 
 @media screen and (min-width:960px) {
   .emotion-1 {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Noto Sans",sans-serif;
     font-size: 32px;
     line-height: 1.125;
-    font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
   }
 }
 
@@ -87,25 +87,25 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 40px;
   line-height: 1.1;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 24px 0;
   display: inline;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   display: inline;
   color: #01396E;
   text-transform: uppercase;
@@ -113,14 +113,14 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
 
 @media screen and (min-width:960px) {
   .emotion-0 {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Noto Sans",sans-serif;
     font-size: 32px;
     line-height: 1.125;
-    font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
   }
 }
 

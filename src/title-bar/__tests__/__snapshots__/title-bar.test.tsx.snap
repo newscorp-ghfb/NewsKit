@@ -30,19 +30,19 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   -ms-flex: 1;
   flex: 1;
   text-align: left;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   color: #2e2e2e;
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 16px 0;
 }
@@ -80,14 +80,14 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   color: #FFFFFF;
   border-radius: 8px;
   min-height: 8px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   padding: 8px 12px;
   margin: 8px 0;
 }
@@ -227,19 +227,19 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   -ms-flex: 1;
   flex: 1;
   text-align: left;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   color: #2e2e2e;
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 16px 0;
 }
@@ -335,19 +335,19 @@ exports[`TitleBar should display correctly as Heading1 tag 1`] = `
   -ms-flex: 1;
   flex: 1;
   text-align: left;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   color: #2e2e2e;
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 40px;
   line-height: 1.1;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 24px 0;
 }
@@ -398,19 +398,19 @@ exports[`TitleBar should display correctly as Heading2 tag 1`] = `
   -ms-flex: 1;
   flex: 1;
   text-align: left;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   color: #2e2e2e;
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 16px 0;
 }
@@ -461,19 +461,19 @@ exports[`TitleBar should display correctly as Heading3 tag 1`] = `
   -ms-flex: 1;
   flex: 1;
   text-align: left;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   color: #2e2e2e;
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 24px;
   line-height: 1.1666666666666667;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 12px 0;
 }
@@ -524,19 +524,19 @@ exports[`TitleBar should display correctly as Heading4 tag 1`] = `
   -ms-flex: 1;
   flex: 1;
   text-align: left;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   color: #2e2e2e;
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 22px;
-  line-height: 1.0909090909090908;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 8px 0;
 }
@@ -587,19 +587,19 @@ exports[`TitleBar should display correctly as Heading5 tag 1`] = `
   -ms-flex: 1;
   flex: 1;
   text-align: left;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   color: #2e2e2e;
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.1111111111111112;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   font-size: 20px;
   line-height: 1.2;
   color: #0a0a0a;
@@ -652,19 +652,19 @@ exports[`TitleBar should display correctly as Heading6 tag 1`] = `
   -ms-flex: 1;
   flex: 1;
   text-align: left;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   color: #2e2e2e;
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
   color: #0a0a0a;
   margin: 0 0 8px 0;
 }
@@ -711,14 +711,14 @@ exports[`TitleBar should display correctly with align center 1`] = `
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 16px 0;
 }
@@ -728,7 +728,7 @@ exports[`TitleBar should display correctly with align center 1`] = `
   -ms-flex: 1;
   flex: 1;
   text-align: center;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   color: #2e2e2e;
 }
 
@@ -778,19 +778,19 @@ exports[`TitleBar should display correctly with align left 1`] = `
   -ms-flex: 1;
   flex: 1;
   text-align: left;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   color: #2e2e2e;
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 16px 0;
 }
@@ -818,19 +818,19 @@ exports[`TitleBar should display correctly with border Bottom 1`] = `
   -ms-flex: 1;
   flex: 1;
   text-align: left;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   color: #2e2e2e;
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 16px 0;
 }
@@ -904,19 +904,19 @@ exports[`TitleBar should display correctly with border None 1`] = `
   -ms-flex: 1;
   flex: 1;
   text-align: left;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   color: #2e2e2e;
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 16px 0;
 }
@@ -944,19 +944,19 @@ exports[`TitleBar should display correctly with border Top 1`] = `
   -ms-flex: 1;
   flex: 1;
   text-align: left;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   color: #2e2e2e;
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 16px 0;
 }
@@ -1007,19 +1007,19 @@ exports[`TitleBar should display correctly with border TopAndBottom 1`] = `
   -ms-flex: 1;
   flex: 1;
   text-align: left;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   color: #2e2e2e;
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 16px 0;
 }
@@ -1093,19 +1093,19 @@ exports[`TitleBar should display correctly with default styles and given title 1
   -ms-flex: 1;
   flex: 1;
   text-align: left;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   color: #2e2e2e;
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 16px 0;
 }
@@ -1133,19 +1133,19 @@ exports[`TitleBar should display correctly with padding left 1`] = `
   -ms-flex: 1;
   flex: 1;
   text-align: left;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   color: #2e2e2e;
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 16px 0;
 }
@@ -1197,19 +1197,19 @@ exports[`TitleBar should display correctly with padding right 1`] = `
   -ms-flex: 1;
   flex: 1;
   text-align: left;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   color: #2e2e2e;
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 16px 0;
 }

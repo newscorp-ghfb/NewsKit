@@ -2,6 +2,8 @@ import * as React from 'react';
 import {
   newskitLightTheme,
   ThemeProvider,
+  Global,
+  css,
   createEventInstrumentation,
   InstrumentationProvider,
   instrumentationHandlers,
@@ -178,6 +180,50 @@ export default class MyApp extends App<Props, State> {
           })}
         >
           <ThemeProvider theme={theme}>
+            <Global
+              styles={css`
+                @font-face {
+                  font-family: 'Noto Sans';
+                  src: url('/static/fonts/notosans-regular-webfont.woff2')
+                      format('woff2'),
+                    url('/static/fonts/notosans-regular-webfont.woff')
+                      format('woff');
+                  font-style: normal;
+                  font-weight: 400;
+                  font-display: swap;
+                }
+                @font-face {
+                  font-family: 'Noto Sans';
+                  src: url('/static/fonts/notosans-italic-webfont.woff2')
+                      format('woff2'),
+                    url('/static/fonts/notosans-italic-webfont.woff')
+                      format('woff');
+                  font-style: italic;
+                  font-weight: 400;
+                  font-display: swap;
+                }
+                @font-face {
+                  font-family: 'Noto Sans';
+                  src: url('/static/fonts/notosans-medium-webfont.woff2')
+                      format('woff2'),
+                    url('/static/fonts/notosans-medium-webfont.woff')
+                      format('woff');
+                  font-style: normal;
+                  font-weight: 500;
+                  font-display: swap;
+                }
+                @font-face {
+                  font-family: 'Noto Sans';
+                  src: url('/static/fonts/notosans-bold-webfont.woff2')
+                      format('woff2'),
+                    url('/static/fonts/notosans-bold-webfont.woff')
+                      format('woff');
+                  font-style: normal;
+                  font-weight: 700;
+                  font-display: swap;
+                }
+              `}
+            />
             <Component
               {...pageProps}
               path={path}

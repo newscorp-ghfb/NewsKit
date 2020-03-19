@@ -30,7 +30,7 @@ const fontWeights = {
   fontWeight010: 300,
   fontWeight020: 400,
   fontWeight030: 500,
-  fontWeight040: 600,
+  fontWeight040: 700,
 };
 
 const fontLetterSpacing = {
@@ -41,11 +41,65 @@ const fontLetterSpacing = {
   fontLetterSpacing050: 0.5,
 };
 
+const fontFamily1: FontConfig = {
+  fontFamily: '"Noto Sans", sans-serif',
+  cropConfig: {
+    top: 8,
+    bottom: 10,
+  },
+  cropAdjustments: {
+    [fontSizes.fontSize010]: {
+      top: 1,
+      bottom: -0.5,
+    },
+    [fontSizes.fontSize020]: {
+      top: 1.2,
+    },
+    [fontSizes.fontSize070]: {
+      top: 1,
+      bottom: 1,
+    },
+  },
+};
+
+const fontFamily2: FontConfig = {
+  fontFamily: '"Noto Sans", sans-serif',
+  cropConfig: {
+    top: 8,
+    bottom: 10,
+  },
+  cropAdjustments: {
+    [fontSizes.fontSize010]: {
+      top: 1,
+      bottom: -0.5,
+    },
+    [fontSizes.fontSize020]: {
+      top: 1.2,
+    },
+    [fontSizes.fontSize070]: {
+      top: 1,
+      bottom: 1,
+    },
+  },
+};
+
+const fontFamily3: FontConfig = {
+  fontFamily: 'system-ui, "Open Sans", sans-serif',
+};
+
+const fontFamily4: FontConfig = {
+  fontFamily: '"Courier", monospace',
+  cropConfig: {
+    top: 3,
+    bottom: 3,
+  },
+};
+
 export const fontPrimitives = {
-  fontFamily1: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-  fontFamily2: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-  fontFamily3: 'system-ui, "Open Sans", sans-serif',
-  fontFamily4: '"Courier", monospace',
+  fontFamily1,
+  fontFamily2,
+  fontFamily3,
+  fontFamily4,
 
   ...fontSizes,
 
@@ -55,6 +109,22 @@ export const fontPrimitives = {
 
   ...fontLetterSpacing,
 };
+
+export interface FontConfig {
+  fontFamily: string;
+  cropConfig?: {
+    top: number;
+    bottom: number;
+    fontSize?: number;
+    lineHeight?: number;
+  };
+  cropAdjustments?: {
+    [fontSize: string]: {
+      top?: number;
+      bottom?: number;
+    };
+  };
+}
 
 export type FontSizeKeys = keyof typeof fontSizes;
 export type LineHeightKeys = keyof typeof lineHeights;

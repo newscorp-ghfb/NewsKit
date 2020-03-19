@@ -123,14 +123,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-27 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
   list-style-type: none;
   margin: 0;
 }
@@ -153,14 +153,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-9 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
   line-height: 1.5rem;
   background-color: transparent;
   box-sizing: border-box;
@@ -702,14 +702,14 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-27 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
   list-style-type: none;
   margin: 0;
 }
@@ -732,14 +732,14 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-9 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
   line-height: 1.5rem;
   background-color: transparent;
   box-sizing: border-box;

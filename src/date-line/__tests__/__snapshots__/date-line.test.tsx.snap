@@ -4,14 +4,14 @@ exports[`DateLine renders with custom color 1`] = `
 <DocumentFragment>
   .emotion-0 {
   position: relative;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
   color: #535353;
 }
 
@@ -28,14 +28,14 @@ exports[`DateLine renders with fallback formatting 1`] = `
 <DocumentFragment>
   .emotion-0 {
   position: relative;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
 }
 
 <time
@@ -51,14 +51,14 @@ exports[`DateLine renders with provided date, format, prefix and suffix 1`] = `
 <DocumentFragment>
   .emotion-0 {
   position: relative;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
 }
 
 <time

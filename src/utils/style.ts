@@ -7,7 +7,11 @@ import {
   Theme,
   FontPrimitivesKeys,
 } from '../themes';
-import {FontSizeKeys, LineHeightKeys} from '../themes/newskit-light/fonts';
+import {
+  FontSizeKeys,
+  LineHeightKeys,
+  FontConfig,
+} from '../themes/newskit-light/fonts';
 import {getFontSizing} from './font-sizing';
 import {GridKeys} from '../themes/newskit-light/grid';
 import {ShadowKeys} from '../themes/newskit-light/shadow';
@@ -46,7 +50,27 @@ export const getAnimationFromTheme = getValueFromTheme<AnimationKeys>(
   'animation',
 );
 
-export const getFontsFromTheme = getValueFromTheme<FontPrimitivesKeys>('fonts');
+export const getFontsFromTheme = <Props extends ThemeProp>(
+  defaultToken?: FontPrimitivesKeys,
+  customProp?: Exclude<keyof Props, 'theme'>,
+) => (props: Props) => {
+  const section = props.theme.fonts;
+  const propKeys = (customProp && props[customProp]) || defaultToken;
+  const style = section[propKeys as FontPrimitivesKeys];
+
+  const isFontConfigObject = (
+    object: FontConfig | string | number,
+  ): object is FontConfig =>
+    typeof object !== 'number' &&
+    typeof object !== 'string' &&
+    'fontFamily' in object;
+
+  if (style && isFontConfigObject(style)) {
+    return style.fontFamily;
+  }
+
+  return propKeys ? style : '';
+};
 
 export const getColorFromTheme = getValueFromTheme<ColorKeys>('colors');
 

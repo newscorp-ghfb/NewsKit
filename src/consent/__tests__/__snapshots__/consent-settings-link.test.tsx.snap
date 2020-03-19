@@ -39,14 +39,14 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition-property: color;

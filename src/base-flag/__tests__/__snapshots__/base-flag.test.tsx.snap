@@ -2,15 +2,26 @@
 
 exports[`BaseFlag renders with default styles 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-3 {
   box-sizing: border-box;
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: default;
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -31,7 +42,7 @@ exports[`BaseFlag renders with default styles 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-0 {
+.emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -41,15 +52,19 @@ exports[`BaseFlag renders with default styles 1`] = `
 }
 
 <div
-    class="emotion-2"
+    class="emotion-3"
   >
     <div
-      class="emotion-1"
+      class="emotion-2"
     >
       <div
-        class="emotion-0"
+        class="emotion-1"
       >
-        Text
+        <span
+          class="emotion-0"
+        >
+          Text
+        </span>
       </div>
     </div>
   </div>

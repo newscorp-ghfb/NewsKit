@@ -5,6 +5,7 @@ require('dotenv').config();
 const path = require('path');
 const {resolve} = require('path');
 const Dotenv = require('dotenv-webpack');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const withImages = require('next-images');
 const withCSS = require('@zeit/next-css');
@@ -46,6 +47,13 @@ module.exports = withCSS(
             path: path.join(__dirname, '.env'),
             systemvars: true,
           }),
+
+          new CopyPlugin([
+            {
+              from: resolve(__dirname, '../fonts'),
+              to: resolve(__dirname, 'public/static/fonts'),
+            },
+          ]),
         ];
 
         return config;

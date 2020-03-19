@@ -539,10 +539,10 @@ exports[`Radio Player default player 1`] = `
 }
 
 .emotion-26 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -625,10 +625,10 @@ exports[`Radio Player default player 1`] = `
 }
 
 .emotion-36 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -658,14 +658,14 @@ exports[`Radio Player default player 1`] = `
   color: #0A68C1;
   border-radius: 50%;
   min-height: 8px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   padding: 8px;
   width: 32px;
   height: 32px;
@@ -769,10 +769,10 @@ exports[`Radio Player default player 1`] = `
 }
 
 .emotion-43 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -836,9 +836,9 @@ exports[`Radio Player default player 1`] = `
   color: #0A68C1;
   border-radius: 50%;
   min-height: 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -909,9 +909,9 @@ exports[`Radio Player default player 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   min-height: 16px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.5;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -1355,13 +1355,13 @@ exports[`Radio Player default player 1`] = `
 
 exports[`Radio Player live player 1`] = `
 <DocumentFragment>
-  .emotion-45 {
+  .emotion-47 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-72 {
+.emotion-74 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -1378,30 +1378,30 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen {
-  .emotion-72 {
+  .emotion-74 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-72 {
+  .emotion-74 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-72 {
+  .emotion-74 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-72 {
+  .emotion-74 {
     margin: -0px 0px 0 0px;
   }
 }
 
-.emotion-47 {
+.emotion-49 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -1410,7 +1410,7 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen {
-  .emotion-47 {
+  .emotion-49 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -1422,7 +1422,7 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-47 {
+  .emotion-49 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -1430,7 +1430,7 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-47 {
+  .emotion-49 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -1438,18 +1438,18 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-47 {
+  .emotion-49 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-15 {
+.emotion-16 {
   margin: 0 0 24px 0;
 }
 
-.emotion-44 {
+.emotion-46 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -1465,25 +1465,25 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen {
-  .emotion-44 {
+  .emotion-46 {
     margin: -16px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-44 {
+  .emotion-46 {
     margin: -16px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-44 {
+  .emotion-46 {
     margin: -24px 12px 0 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-44 {
+  .emotion-46 {
     margin: -24px 12px 0 12px;
   }
 }
@@ -1621,7 +1621,7 @@ exports[`Radio Player live player 1`] = `
   border-radius: inherit;
 }
 
-.emotion-21 {
+.emotion-22 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -1630,7 +1630,7 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen {
-  .emotion-21 {
+  .emotion-22 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 8.333333333333334%;
@@ -1642,7 +1642,7 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-21 {
+  .emotion-22 {
     padding: 0 8px;
     margin-top: 16px;
     display: none;
@@ -1650,7 +1650,7 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-21 {
+  .emotion-22 {
     padding: 0 12px;
     margin-top: 24px;
     -webkit-flex-basis: 58.333333333333336%;
@@ -1662,14 +1662,14 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-21 {
+  .emotion-22 {
     padding: 0 12px;
     margin-top: 24px;
     display: block;
   }
 }
 
-.emotion-20 {
+.emotion-21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1688,7 +1688,7 @@ exports[`Radio Player live player 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-29 {
+.emotion-30 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -1697,7 +1697,7 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen {
-  .emotion-29 {
+  .emotion-30 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -1709,7 +1709,7 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-29 {
+  .emotion-30 {
     padding: 0 8px;
     margin-top: 16px;
     display: block;
@@ -1717,7 +1717,7 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-29 {
+  .emotion-30 {
     padding: 0 12px;
     margin-top: 24px;
     display: none;
@@ -1725,14 +1725,14 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-29 {
+  .emotion-30 {
     padding: 0 12px;
     margin-top: 24px;
     display: none;
   }
 }
 
-.emotion-28 {
+.emotion-29 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1751,7 +1751,7 @@ exports[`Radio Player live player 1`] = `
   justify-content: center;
 }
 
-.emotion-42 {
+.emotion-44 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1770,7 +1770,7 @@ exports[`Radio Player live player 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-53 {
+.emotion-55 {
   background-color: #0A68C1;
   border-color: #0A68C1;
   border-width: 1px;
@@ -1790,34 +1790,34 @@ exports[`Radio Player live player 1`] = `
   cursor: pointer;
 }
 
-.emotion-53 svg {
+.emotion-55 svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-53:hover:not(:disabled) {
+.emotion-55:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-53:active:not(:disabled) {
+.emotion-55:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-53:active:not(:disabled) svg {
+.emotion-55:active:not(:disabled) svg {
   fill: #535353;
   color: #535353;
 }
 
-.emotion-53:disabled {
+.emotion-55:disabled {
   border-style: none;
 }
 
-.emotion-53:disabled svg {
+.emotion-55:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-70 {
+.emotion-72 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1836,37 +1836,37 @@ exports[`Radio Player live player 1`] = `
   justify-content: space-between;
 }
 
-.emotion-61 {
+.emotion-63 {
   width: 100%;
   max-width: 184px;
   padding: 0 calc(24px / 2);
 }
 
 @media screen {
-  .emotion-61 {
+  .emotion-63 {
     display: none;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-61 {
+  .emotion-63 {
     display: none;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-61 {
+  .emotion-63 {
     display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-61 {
+  .emotion-63 {
     display: block;
   }
 }
 
-.emotion-60 {
+.emotion-62 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1891,11 +1891,11 @@ exports[`Radio Player live player 1`] = `
   position: relative;
 }
 
-.emotion-52 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.emotion-54 {
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -1903,7 +1903,7 @@ exports[`Radio Player live player 1`] = `
   margin-right: 8px;
 }
 
-.emotion-51 {
+.emotion-53 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -1925,53 +1925,53 @@ exports[`Radio Player live player 1`] = `
   color: #0A68C1;
   border-radius: 50%;
   min-height: 8px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   padding: 8px;
   width: 32px;
   height: 32px;
   margin: 8px 0;
 }
 
-.emotion-51:disabled {
+.emotion-53:disabled {
   cursor: not-allowed;
 }
 
-.emotion-51 svg {
+.emotion-53 svg {
   fill: #0A68C1;
   color: #0A68C1;
 }
 
-.emotion-51:hover:not(:disabled) {
+.emotion-53:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-51:active:not(:disabled) {
+.emotion-53:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-51:disabled {
+.emotion-53:disabled {
   color: #9c9c9c;
   background-color: transparent;
 }
 
-.emotion-51:disabled svg {
+.emotion-53:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-51 svg {
+.emotion-53 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-51::before {
+.emotion-53::before {
   content: '';
   position: absolute;
   left: 0;
@@ -1980,7 +1980,7 @@ exports[`Radio Player live player 1`] = `
   height: 48px;
 }
 
-.emotion-50 {
+.emotion-52 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2001,7 +2001,7 @@ exports[`Radio Player live player 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-49 {
+.emotion-51 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2010,7 +2010,7 @@ exports[`Radio Player live player 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-48 {
+.emotion-50 {
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
@@ -2018,7 +2018,7 @@ exports[`Radio Player live player 1`] = `
   display: inline-block;
 }
 
-.emotion-54 {
+.emotion-56 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2035,11 +2035,11 @@ exports[`Radio Player live player 1`] = `
   width: 100%;
 }
 
-.emotion-59 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.emotion-61 {
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -2047,7 +2047,7 @@ exports[`Radio Player live player 1`] = `
   margin-left: 8px;
 }
 
-.emotion-67 {
+.emotion-69 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2072,7 +2072,7 @@ exports[`Radio Player live player 1`] = `
   margin-right: calc(-12px/2);
 }
 
-.emotion-66 {
+.emotion-68 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2081,13 +2081,13 @@ exports[`Radio Player live player 1`] = `
   margin-right: calc(12px/2);
 }
 
-.emotion-62 {
+.emotion-64 {
   fill: #2e2e2e;
   color: #2e2e2e;
   display: inline-block;
 }
 
-.emotion-65 {
+.emotion-67 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -2109,9 +2109,9 @@ exports[`Radio Player live player 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   min-height: 16px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.5;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -2122,40 +2122,40 @@ exports[`Radio Player live player 1`] = `
   height: 64px;
 }
 
-.emotion-65:disabled {
+.emotion-67:disabled {
   cursor: not-allowed;
 }
 
-.emotion-65 svg {
+.emotion-67 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-65:hover:not(:disabled) {
+.emotion-67:hover:not(:disabled) {
   background-color: #02509B;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
-.emotion-65:active:not(:disabled) {
+.emotion-67:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-65:disabled {
+.emotion-67:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
 
-.emotion-65:disabled svg {
+.emotion-67:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-65 svg {
+.emotion-67 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-68 {
+.emotion-70 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2174,7 +2174,7 @@ exports[`Radio Player live player 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-14 {
+.emotion-15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2195,7 +2195,7 @@ exports[`Radio Player live player 1`] = `
   margin-right: calc(-16px/2);
 }
 
-.emotion-11 {
+.emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2204,37 +2204,40 @@ exports[`Radio Player live player 1`] = `
   margin-right: calc(16px/2);
 }
 
-.emotion-10 {
+.emotion-11 {
   box-sizing: border-box;
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
   padding: 4px 8px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   cursor: default;
   background-color: #EF1703;
   color: #FFFFFF;
 }
 
-.emotion-10 svg {
+.emotion-11 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-10 svg {
+.emotion-11 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-9 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2255,7 +2258,7 @@ exports[`Radio Player live player 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-8 {
+.emotion-9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2264,13 +2267,40 @@ exports[`Radio Player live player 1`] = `
   margin-right: calc(4px/2);
 }
 
-.emotion-12 {
-  color: #535353;
-  font-weight: 300;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.emotion-8 {
+  font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
-  font-weight: 400;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
+}
+
+.emotion-8::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.4833333333333334em + 1px);
+}
+
+.emotion-8::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc(-0.5458333333333334em + -0.5px);
+}
+
+.emotion-13 {
+  color: #535353;
+  font-weight: 300;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
   -webkit-letter-spacing: 0.5px;
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
@@ -2278,57 +2308,57 @@ exports[`Radio Player live player 1`] = `
   display: inline-block;
 }
 
-.emotion-17 {
+.emotion-18 {
   margin: 0 0 16px 0;
 }
 
-.emotion-16 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.emotion-17 {
+  font-family: "Noto Sans",sans-serif;
   font-size: 40px;
   line-height: 1.1;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 24px 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 28px;
   line-height: 1.1428571428571428;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   text-align: left;
   margin: 0;
-  width: 100%;
-}
-
-.emotion-18 {
-  color: #535353;
-  font-weight: 300;
-  margin: 0 0 24px 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  text-align: left;
   width: 100%;
 }
 
 .emotion-19 {
   color: #535353;
   font-weight: 300;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0 0 24px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.emotion-20 {
+  color: #535353;
+  font-weight: 300;
+  font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0.5px;
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
@@ -2337,7 +2367,7 @@ exports[`Radio Player live player 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.emotion-36 {
+.emotion-38 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2358,7 +2388,7 @@ exports[`Radio Player live player 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-33 {
+.emotion-35 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2367,38 +2397,38 @@ exports[`Radio Player live player 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-.emotion-38 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.emotion-40 {
+  font-family: "Noto Sans",sans-serif;
   font-size: 40px;
   line-height: 1.1;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 24px 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 22px;
-  line-height: 1.0909090909090908;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   text-align: center;
   margin: 0;
   width: 100%;
 }
 
-.emotion-40 {
+.emotion-42 {
   color: #535353;
   font-weight: 300;
   margin: 0 0 24px 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -2408,10 +2438,10 @@ exports[`Radio Player live player 1`] = `
 }
 
 <div
-    class="emotion-45"
+    class="emotion-47"
   >
     <div
-      class="emotion-72"
+      class="emotion-74"
     >
       <audio
         autoplay=""
@@ -2431,16 +2461,16 @@ exports[`Radio Player live player 1`] = `
         />
       </audio>
       <div
-        class="emotion-47"
+        class="emotion-49"
       >
         <div
-          class="emotion-15"
+          class="emotion-16"
         >
           <div
-            class="emotion-45"
+            class="emotion-47"
           >
             <div
-              class="emotion-44"
+              class="emotion-46"
             >
               <div
                 class="emotion-7"
@@ -2485,40 +2515,44 @@ exports[`Radio Player live player 1`] = `
                 </div>
               </div>
               <div
-                class="emotion-21"
+                class="emotion-22"
               >
                 <div
-                  class="emotion-20"
+                  class="emotion-21"
                 >
                   <div
-                    class="emotion-15"
+                    class="emotion-16"
                   >
                     <div
-                      class="emotion-14"
+                      class="emotion-15"
                     >
                       <div
-                        class="emotion-11"
+                        class="emotion-12"
                       >
                         <div
-                          class="emotion-10"
+                          class="emotion-11"
                           data-testid="flag"
                         >
                           <div
-                            class="emotion-9"
+                            class="emotion-10"
                           >
                             <div
-                              class="emotion-8"
+                              class="emotion-9"
                             >
-                              Live
+                              <span
+                                class="emotion-8"
+                              >
+                                Live
+                              </span>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div
-                        class="emotion-11"
+                        class="emotion-12"
                       >
                         <span
-                          class="emotion-12"
+                          class="emotion-13"
                         >
                           1PM to 3PM
                         </span>
@@ -2526,31 +2560,31 @@ exports[`Radio Player live player 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-17"
+                    class="emotion-18"
                   >
                     <h1
-                      class="emotion-16"
+                      class="emotion-17"
                     >
                       title 1
                     </h1>
                   </div>
                   <span
-                    class="emotion-18"
+                    class="emotion-19"
                   >
                     Test description
                   </span>
                   <span
-                    class="emotion-19"
+                    class="emotion-20"
                   >
                     Tag 1 | Tag 2
                   </span>
                 </div>
               </div>
               <div
-                class="emotion-29"
+                class="emotion-30"
               >
                 <div
-                  class="emotion-28"
+                  class="emotion-29"
                 >
                   <div
                     class="emotion-5"
@@ -2589,40 +2623,44 @@ exports[`Radio Player live player 1`] = `
                 </div>
               </div>
               <div
-                class="emotion-29"
+                class="emotion-30"
               >
                 <div
-                  class="emotion-42"
+                  class="emotion-44"
                 >
                   <div
-                    class="emotion-15"
+                    class="emotion-16"
                   >
                     <div
-                      class="emotion-36"
+                      class="emotion-38"
                     >
                       <div
-                        class="emotion-33"
+                        class="emotion-35"
                       >
                         <div
-                          class="emotion-10"
+                          class="emotion-11"
                           data-testid="flag"
                         >
                           <div
-                            class="emotion-9"
+                            class="emotion-10"
                           >
                             <div
-                              class="emotion-8"
+                              class="emotion-9"
                             >
-                              Live
+                              <span
+                                class="emotion-8"
+                              >
+                                Live
+                              </span>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div
-                        class="emotion-33"
+                        class="emotion-35"
                       >
                         <span
-                          class="emotion-12"
+                          class="emotion-13"
                         >
                           1PM to 3PM
                         </span>
@@ -2630,21 +2668,21 @@ exports[`Radio Player live player 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-17"
+                    class="emotion-18"
                   >
                     <h1
-                      class="emotion-38"
+                      class="emotion-40"
                     >
                       title 1
                     </h1>
                   </div>
                   <span
-                    class="emotion-40"
+                    class="emotion-42"
                   >
                     Test description
                   </span>
                   <span
-                    class="emotion-19"
+                    class="emotion-20"
                   >
                     Tag 1 | Tag 2
                   </span>
@@ -2655,35 +2693,35 @@ exports[`Radio Player live player 1`] = `
         </div>
       </div>
       <div
-        class="emotion-47"
+        class="emotion-49"
       >
         <div
-          class="emotion-70"
+          class="emotion-72"
         >
           <div
-            class="emotion-61"
+            class="emotion-63"
           >
             <div
-              class="emotion-60"
+              class="emotion-62"
               data-testid="volume-control"
             >
               <div
-                class="emotion-52"
+                class="emotion-54"
                 data-testid="min-label"
               >
                 <button
-                  class="emotion-51"
+                  class="emotion-53"
                   data-testid="mute-button"
                   type="button"
                 >
                   <div
-                    class="emotion-50"
+                    class="emotion-52"
                   >
                     <div
-                      class="emotion-49"
+                      class="emotion-51"
                     >
                       <svg
-                        class="emotion-48"
+                        class="emotion-50"
                         viewBox="0 0 24 24"
                       >
                         <title>
@@ -2702,7 +2740,7 @@ exports[`Radio Player live player 1`] = `
                 </button>
               </div>
               <div
-                class="emotion-54"
+                class="emotion-56"
                 data-testid="volume-control-track"
                 values="1"
               >
@@ -2711,7 +2749,7 @@ exports[`Radio Player live player 1`] = `
                   aria-valuemax="1"
                   aria-valuemin="0"
                   aria-valuenow="1"
-                  class="emotion-53"
+                  class="emotion-55"
                   data-testid="volume-control-thumb"
                   draggable="false"
                   role="slider"
@@ -2721,22 +2759,22 @@ exports[`Radio Player live player 1`] = `
                 />
               </div>
               <div
-                class="emotion-59"
+                class="emotion-61"
                 data-testid="max-label"
               >
                 <button
-                  class="emotion-51"
+                  class="emotion-53"
                   data-testid="volumeup-button"
                   type="button"
                 >
                   <div
-                    class="emotion-50"
+                    class="emotion-52"
                   >
                     <div
-                      class="emotion-49"
+                      class="emotion-51"
                     >
                       <svg
-                        class="emotion-48"
+                        class="emotion-50"
                         viewBox="0 0 24 24"
                       >
                         <title>
@@ -2757,25 +2795,25 @@ exports[`Radio Player live player 1`] = `
             </div>
           </div>
           <div
-            class="emotion-67"
+            class="emotion-69"
           >
             <div
-              class="emotion-66"
+              class="emotion-68"
             >
               <button
                 aria-pressed="false"
-                class="emotion-65"
+                class="emotion-67"
                 data-testid="audio-player-play-button"
                 type="button"
               >
                 <div
-                  class="emotion-50"
+                  class="emotion-52"
                 >
                   <div
-                    class="emotion-49"
+                    class="emotion-51"
                   >
                     <svg
-                      class="emotion-62"
+                      class="emotion-64"
                       viewBox="0 0 24 24"
                     >
                       <title>
@@ -2791,10 +2829,10 @@ exports[`Radio Player live player 1`] = `
             </div>
           </div>
           <div
-            class="emotion-61"
+            class="emotion-63"
           >
             <div
-              class="emotion-68"
+              class="emotion-70"
             />
           </div>
         </div>
@@ -3343,10 +3381,10 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 .emotion-42 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -3429,10 +3467,10 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 .emotion-52 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -3462,14 +3500,14 @@ exports[`Radio Player player with popout link 1`] = `
   color: #0A68C1;
   border-radius: 50%;
   min-height: 8px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   padding: 8px;
   width: 32px;
   height: 32px;
@@ -3573,10 +3611,10 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 .emotion-59 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -3640,9 +3678,9 @@ exports[`Radio Player player with popout link 1`] = `
   color: #0A68C1;
   border-radius: 50%;
   min-height: 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -3713,9 +3751,9 @@ exports[`Radio Player player with popout link 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   min-height: 16px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.5;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -3811,10 +3849,10 @@ exports[`Radio Player player with popout link 1`] = `
 .emotion-8 {
   color: #535353;
   font-weight: 300;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0.5px;
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
@@ -3827,24 +3865,24 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 .emotion-12 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 40px;
   line-height: 1.1;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 24px 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 28px;
   line-height: 1.1428571428571428;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   text-align: left;
   margin: 0;
   width: 100%;
@@ -3854,10 +3892,10 @@ exports[`Radio Player player with popout link 1`] = `
   color: #535353;
   font-weight: 300;
   margin: 0 0 24px 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -3869,10 +3907,10 @@ exports[`Radio Player player with popout link 1`] = `
 .emotion-15 {
   color: #535353;
   font-weight: 300;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0.5px;
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
@@ -3912,24 +3950,24 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 .emotion-30 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 40px;
   line-height: 1.1;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 24px 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 22px;
-  line-height: 1.0909090909090908;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   text-align: center;
   margin: 0;
   width: 100%;
@@ -3939,10 +3977,10 @@ exports[`Radio Player player with popout link 1`] = `
   color: #535353;
   font-weight: 300;
   margin: 0 0 24px 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -4427,13 +4465,13 @@ exports[`Radio Player player with popout link 1`] = `
 
 exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 <DocumentFragment>
-  .emotion-49 {
+  .emotion-51 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-94 {
+.emotion-96 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -4450,30 +4488,30 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen {
-  .emotion-94 {
+  .emotion-96 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-94 {
+  .emotion-96 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-94 {
+  .emotion-96 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-94 {
+  .emotion-96 {
     margin: -0px 0px 0 0px;
   }
 }
 
-.emotion-51 {
+.emotion-53 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -4482,7 +4520,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen {
-  .emotion-51 {
+  .emotion-53 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -4494,7 +4532,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-51 {
+  .emotion-53 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -4502,7 +4540,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-51 {
+  .emotion-53 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -4510,18 +4548,18 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-51 {
+  .emotion-53 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-17 {
+.emotion-18 {
   margin: 0 0 24px 0;
 }
 
-.emotion-48 {
+.emotion-50 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -4537,25 +4575,25 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen {
-  .emotion-48 {
+  .emotion-50 {
     margin: -16px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-48 {
+  .emotion-50 {
     margin: -16px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-48 {
+  .emotion-50 {
     margin: -24px 12px 0 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-48 {
+  .emotion-50 {
     margin: -24px 12px 0 12px;
   }
 }
@@ -4693,7 +4731,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   border-radius: inherit;
 }
 
-.emotion-23 {
+.emotion-24 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -4702,7 +4740,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen {
-  .emotion-23 {
+  .emotion-24 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 8.333333333333334%;
@@ -4714,7 +4752,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-23 {
+  .emotion-24 {
     padding: 0 8px;
     margin-top: 16px;
     display: none;
@@ -4722,7 +4760,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-23 {
+  .emotion-24 {
     padding: 0 12px;
     margin-top: 24px;
     -webkit-flex-basis: 58.333333333333336%;
@@ -4734,14 +4772,14 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-23 {
+  .emotion-24 {
     padding: 0 12px;
     margin-top: 24px;
     display: block;
   }
 }
 
-.emotion-22 {
+.emotion-23 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4760,7 +4798,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-31 {
+.emotion-32 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -4769,7 +4807,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen {
-  .emotion-31 {
+  .emotion-32 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -4781,7 +4819,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-31 {
+  .emotion-32 {
     padding: 0 8px;
     margin-top: 16px;
     display: block;
@@ -4789,7 +4827,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-31 {
+  .emotion-32 {
     padding: 0 12px;
     margin-top: 24px;
     display: none;
@@ -4797,14 +4835,14 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-31 {
+  .emotion-32 {
     padding: 0 12px;
     margin-top: 24px;
     display: none;
   }
 }
 
-.emotion-30 {
+.emotion-31 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4823,7 +4861,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   justify-content: center;
 }
 
-.emotion-46 {
+.emotion-48 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4842,7 +4880,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-58 {
+.emotion-60 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4870,7 +4908,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   position: relative;
 }
 
-.emotion-53 {
+.emotion-55 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4887,7 +4925,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   width: 100%;
 }
 
-.emotion-52 {
+.emotion-54 {
   background-color: #0A68C1;
   border-color: #0A68C1;
   border-width: 1px;
@@ -4907,40 +4945,40 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   cursor: pointer;
 }
 
-.emotion-52 svg {
+.emotion-54 svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-52:hover:not(:disabled) {
+.emotion-54:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-52:active:not(:disabled) {
+.emotion-54:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-52:active:not(:disabled) svg {
+.emotion-54:active:not(:disabled) svg {
   fill: #535353;
   color: #535353;
 }
 
-.emotion-52:disabled {
+.emotion-54:disabled {
   border-style: none;
 }
 
-.emotion-52:disabled svg {
+.emotion-54:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-57 {
+.emotion-59 {
   width: 100%;
   margin-top: 12px;
   padding: 0 calc(16px / 2);
 }
 
-.emotion-56 {
+.emotion-58 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4963,11 +5001,11 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   justify-content: space-between;
 }
 
-.emotion-54 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.emotion-56 {
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -4975,7 +5013,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   color: #535353;
 }
 
-.emotion-92 {
+.emotion-94 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4994,37 +5032,37 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   justify-content: space-between;
 }
 
-.emotion-73 {
+.emotion-75 {
   width: 100%;
   max-width: 184px;
   padding: 0 calc(24px / 2);
 }
 
 @media screen {
-  .emotion-73 {
+  .emotion-75 {
     display: none;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-73 {
+  .emotion-75 {
     display: none;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-73 {
+  .emotion-75 {
     display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-73 {
+  .emotion-75 {
     display: block;
   }
 }
 
-.emotion-72 {
+.emotion-74 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5049,11 +5087,11 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   position: relative;
 }
 
-.emotion-64 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.emotion-66 {
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -5061,7 +5099,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin-right: 8px;
 }
 
-.emotion-63 {
+.emotion-65 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -5083,53 +5121,53 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   color: #0A68C1;
   border-radius: 50%;
   min-height: 8px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   padding: 8px;
   width: 32px;
   height: 32px;
   margin: 8px 0;
 }
 
-.emotion-63:disabled {
+.emotion-65:disabled {
   cursor: not-allowed;
 }
 
-.emotion-63 svg {
+.emotion-65 svg {
   fill: #0A68C1;
   color: #0A68C1;
 }
 
-.emotion-63:hover:not(:disabled) {
+.emotion-65:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-63:active:not(:disabled) {
+.emotion-65:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-63:disabled {
+.emotion-65:disabled {
   color: #9c9c9c;
   background-color: transparent;
 }
 
-.emotion-63:disabled svg {
+.emotion-65:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-63 svg {
+.emotion-65 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-63::before {
+.emotion-65::before {
   content: '';
   position: absolute;
   left: 0;
@@ -5138,7 +5176,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   height: 48px;
 }
 
-.emotion-62 {
+.emotion-64 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5159,7 +5197,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-61 {
+.emotion-63 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5168,7 +5206,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-60 {
+.emotion-62 {
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
@@ -5176,7 +5214,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   display: inline-block;
 }
 
-.emotion-66 {
+.emotion-68 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5193,11 +5231,11 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   width: 100%;
 }
 
-.emotion-71 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.emotion-73 {
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -5205,7 +5243,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin-left: 8px;
 }
 
-.emotion-89 {
+.emotion-91 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5230,7 +5268,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin-right: calc(-12px/2);
 }
 
-.emotion-78 {
+.emotion-80 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5239,7 +5277,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin-right: calc(12px/2);
 }
 
-.emotion-77 {
+.emotion-79 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -5261,9 +5299,9 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   color: #0A68C1;
   border-radius: 50%;
   min-height: 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -5274,34 +5312,34 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   height: 48px;
 }
 
-.emotion-77:disabled {
+.emotion-79:disabled {
   cursor: not-allowed;
 }
 
-.emotion-77 svg {
+.emotion-79 svg {
   fill: #0A68C1;
   color: #0A68C1;
 }
 
-.emotion-77:hover:not(:disabled) {
+.emotion-79:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-77:active:not(:disabled) {
+.emotion-79:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-77:disabled {
+.emotion-79:disabled {
   color: #9c9c9c;
   background-color: transparent;
 }
 
-.emotion-77:disabled svg {
+.emotion-79:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-77 svg {
+.emotion-79 svg {
   width: 24px;
   height: 24px;
 }
@@ -5312,7 +5350,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   display: inline-block;
 }
 
-.emotion-82 {
+.emotion-84 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -5334,9 +5372,9 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   min-height: 16px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.5;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -5347,40 +5385,40 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   height: 64px;
 }
 
-.emotion-82:disabled {
+.emotion-84:disabled {
   cursor: not-allowed;
 }
 
-.emotion-82 svg {
+.emotion-84 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-82:hover:not(:disabled) {
+.emotion-84:hover:not(:disabled) {
   background-color: #02509B;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
-.emotion-82:active:not(:disabled) {
+.emotion-84:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-82:disabled {
+.emotion-84:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
 
-.emotion-82:disabled svg {
+.emotion-84:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-82 svg {
+.emotion-84 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-90 {
+.emotion-92 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5399,7 +5437,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-16 {
+.emotion-17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5420,7 +5458,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin-right: calc(-16px/2);
 }
 
-.emotion-13 {
+.emotion-14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5429,7 +5467,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin-right: calc(16px/2);
 }
 
-.emotion-11 {
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5459,13 +5497,40 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin-right: calc(4px/2);
 }
 
-.emotion-14 {
-  color: #535353;
-  font-weight: 300;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.emotion-10 {
+  font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
-  font-weight: 400;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
+}
+
+.emotion-10::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.4833333333333334em + 1px);
+}
+
+.emotion-10::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc(-0.5458333333333334em + -0.5px);
+}
+
+.emotion-15 {
+  color: #535353;
+  font-weight: 300;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
   -webkit-letter-spacing: 0.5px;
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
@@ -5473,57 +5538,57 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   display: inline-block;
 }
 
-.emotion-19 {
+.emotion-20 {
   margin: 0 0 16px 0;
 }
 
-.emotion-18 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.emotion-19 {
+  font-family: "Noto Sans",sans-serif;
   font-size: 40px;
   line-height: 1.1;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 24px 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 28px;
   line-height: 1.1428571428571428;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   text-align: left;
   margin: 0;
-  width: 100%;
-}
-
-.emotion-20 {
-  color: #535353;
-  font-weight: 300;
-  margin: 0 0 24px 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  text-align: left;
   width: 100%;
 }
 
 .emotion-21 {
   color: #535353;
   font-weight: 300;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0 0 24px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.emotion-22 {
+  color: #535353;
+  font-weight: 300;
+  font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0.5px;
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
@@ -5532,7 +5597,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.emotion-40 {
+.emotion-42 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5553,7 +5618,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-37 {
+.emotion-39 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5562,38 +5627,38 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-.emotion-42 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.emotion-44 {
+  font-family: "Noto Sans",sans-serif;
   font-size: 40px;
   line-height: 1.1;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 24px 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 22px;
-  line-height: 1.0909090909090908;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
   text-align: center;
   margin: 0;
   width: 100%;
 }
 
-.emotion-44 {
+.emotion-46 {
   color: #535353;
   font-weight: 300;
   margin: 0 0 24px 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -5602,41 +5667,44 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   width: 100%;
 }
 
-.emotion-12 {
+.emotion-13 {
   box-sizing: border-box;
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 24px;
   padding: 4px 8px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   cursor: default;
   background-color: #471e79;
   color: #FFFFFF;
 }
 
-.emotion-12 svg {
+.emotion-13 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-12 svg {
+.emotion-13 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
 <div
-    class="emotion-49"
+    class="emotion-51"
   >
     <div
-      class="emotion-94"
+      class="emotion-96"
     >
       <audio
         autoplay=""
@@ -5655,16 +5723,16 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
         />
       </audio>
       <div
-        class="emotion-51"
+        class="emotion-53"
       >
         <div
-          class="emotion-17"
+          class="emotion-18"
         >
           <div
-            class="emotion-49"
+            class="emotion-51"
           >
             <div
-              class="emotion-48"
+              class="emotion-50"
             >
               <div
                 class="emotion-7"
@@ -5709,26 +5777,26 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                 </div>
               </div>
               <div
-                class="emotion-23"
+                class="emotion-24"
               >
                 <div
-                  class="emotion-22"
+                  class="emotion-23"
                 >
                   <div
-                    class="emotion-17"
+                    class="emotion-18"
                   >
                     <div
-                      class="emotion-16"
+                      class="emotion-17"
                     >
                       <div
-                        class="emotion-13"
+                        class="emotion-14"
                       >
                         <div
-                          class="emotion-12"
+                          class="emotion-13"
                           data-testid="flag"
                         >
                           <div
-                            class="emotion-11"
+                            class="emotion-12"
                           >
                             <div
                               class="emotion-9"
@@ -5750,16 +5818,20 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                             <div
                               class="emotion-9"
                             >
-                              Custom Flag
+                              <span
+                                class="emotion-10"
+                              >
+                                Custom Flag
+                              </span>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div
-                        class="emotion-13"
+                        class="emotion-14"
                       >
                         <span
-                          class="emotion-14"
+                          class="emotion-15"
                         >
                           1PM to 3PM
                         </span>
@@ -5767,31 +5839,31 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-19"
+                    class="emotion-20"
                   >
                     <h1
-                      class="emotion-18"
+                      class="emotion-19"
                     >
                       title 1
                     </h1>
                   </div>
                   <span
-                    class="emotion-20"
+                    class="emotion-21"
                   >
                     Test description
                   </span>
                   <span
-                    class="emotion-21"
+                    class="emotion-22"
                   >
                     Tag 1 | Tag 2
                   </span>
                 </div>
               </div>
               <div
-                class="emotion-31"
+                class="emotion-32"
               >
                 <div
-                  class="emotion-30"
+                  class="emotion-31"
                 >
                   <div
                     class="emotion-5"
@@ -5830,26 +5902,26 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                 </div>
               </div>
               <div
-                class="emotion-31"
+                class="emotion-32"
               >
                 <div
-                  class="emotion-46"
+                  class="emotion-48"
                 >
                   <div
-                    class="emotion-17"
+                    class="emotion-18"
                   >
                     <div
-                      class="emotion-40"
+                      class="emotion-42"
                     >
                       <div
-                        class="emotion-37"
+                        class="emotion-39"
                       >
                         <div
-                          class="emotion-12"
+                          class="emotion-13"
                           data-testid="flag"
                         >
                           <div
-                            class="emotion-11"
+                            class="emotion-12"
                           >
                             <div
                               class="emotion-9"
@@ -5871,16 +5943,20 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                             <div
                               class="emotion-9"
                             >
-                              Custom Flag
+                              <span
+                                class="emotion-10"
+                              >
+                                Custom Flag
+                              </span>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div
-                        class="emotion-37"
+                        class="emotion-39"
                       >
                         <span
-                          class="emotion-14"
+                          class="emotion-15"
                         >
                           1PM to 3PM
                         </span>
@@ -5888,21 +5964,21 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-19"
+                    class="emotion-20"
                   >
                     <h1
-                      class="emotion-42"
+                      class="emotion-44"
                     >
                       title 1
                     </h1>
                   </div>
                   <span
-                    class="emotion-44"
+                    class="emotion-46"
                   >
                     Test description
                   </span>
                   <span
-                    class="emotion-21"
+                    class="emotion-22"
                   >
                     Tag 1 | Tag 2
                   </span>
@@ -5913,14 +5989,14 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
         </div>
       </div>
       <div
-        class="emotion-51"
+        class="emotion-53"
       >
         <div
-          class="emotion-58"
+          class="emotion-60"
           data-testid="audio-slider"
         >
           <div
-            class="emotion-53"
+            class="emotion-55"
             data-testid="audio-slider-track"
             values="0"
           >
@@ -5929,7 +6005,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
               aria-valuemax="1"
               aria-valuemin="0"
               aria-valuenow="0"
-              class="emotion-52"
+              class="emotion-54"
               data-testid="audio-slider-thumb"
               draggable="false"
               role="slider"
@@ -5939,19 +6015,19 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
             />
           </div>
           <div
-            class="emotion-57"
+            class="emotion-59"
           >
             <div
-              class="emotion-56"
+              class="emotion-58"
             >
               <div
-                class="emotion-54"
+                class="emotion-56"
                 data-testid="min-label"
               >
                 00:00
               </div>
               <div
-                class="emotion-54"
+                class="emotion-56"
                 data-testid="max-label"
               >
                 00:00
@@ -5961,35 +6037,35 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
         </div>
       </div>
       <div
-        class="emotion-51"
+        class="emotion-53"
       >
         <div
-          class="emotion-92"
+          class="emotion-94"
         >
           <div
-            class="emotion-73"
+            class="emotion-75"
           >
             <div
-              class="emotion-72"
+              class="emotion-74"
               data-testid="volume-control"
             >
               <div
-                class="emotion-64"
+                class="emotion-66"
                 data-testid="min-label"
               >
                 <button
-                  class="emotion-63"
+                  class="emotion-65"
                   data-testid="mute-button"
                   type="button"
                 >
                   <div
-                    class="emotion-62"
+                    class="emotion-64"
                   >
                     <div
-                      class="emotion-61"
+                      class="emotion-63"
                     >
                       <svg
-                        class="emotion-60"
+                        class="emotion-62"
                         viewBox="0 0 24 24"
                       >
                         <title>
@@ -6008,7 +6084,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                 </button>
               </div>
               <div
-                class="emotion-66"
+                class="emotion-68"
                 data-testid="volume-control-track"
                 values="1"
               >
@@ -6017,7 +6093,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                   aria-valuemax="1"
                   aria-valuemin="0"
                   aria-valuenow="1"
-                  class="emotion-52"
+                  class="emotion-54"
                   data-testid="volume-control-thumb"
                   draggable="false"
                   role="slider"
@@ -6027,22 +6103,22 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                 />
               </div>
               <div
-                class="emotion-71"
+                class="emotion-73"
                 data-testid="max-label"
               >
                 <button
-                  class="emotion-63"
+                  class="emotion-65"
                   data-testid="volumeup-button"
                   type="button"
                 >
                   <div
-                    class="emotion-62"
+                    class="emotion-64"
                   >
                     <div
-                      class="emotion-61"
+                      class="emotion-63"
                     >
                       <svg
-                        class="emotion-60"
+                        class="emotion-62"
                         viewBox="0 0 24 24"
                       >
                         <title>
@@ -6063,21 +6139,21 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
             </div>
           </div>
           <div
-            class="emotion-89"
+            class="emotion-91"
           >
             <div
-              class="emotion-78"
+              class="emotion-80"
             >
               <button
-                class="emotion-77"
+                class="emotion-79"
                 data-testid="audio-player-backward"
                 type="button"
               >
                 <div
-                  class="emotion-62"
+                  class="emotion-64"
                 >
                   <div
-                    class="emotion-61"
+                    class="emotion-63"
                   >
                     <svg
                       class="emotion-8"
@@ -6095,19 +6171,19 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
               </button>
             </div>
             <div
-              class="emotion-78"
+              class="emotion-80"
             >
               <button
                 aria-pressed="false"
-                class="emotion-82"
+                class="emotion-84"
                 data-testid="audio-player-play-button"
                 type="button"
               >
                 <div
-                  class="emotion-62"
+                  class="emotion-64"
                 >
                   <div
-                    class="emotion-61"
+                    class="emotion-63"
                   >
                     <svg
                       class="emotion-8"
@@ -6125,18 +6201,18 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
               </button>
             </div>
             <div
-              class="emotion-78"
+              class="emotion-80"
             >
               <button
-                class="emotion-77"
+                class="emotion-79"
                 data-testid="audio-player-forward"
                 type="button"
               >
                 <div
-                  class="emotion-62"
+                  class="emotion-64"
                 >
                   <div
-                    class="emotion-61"
+                    class="emotion-63"
                   >
                     <svg
                       class="emotion-8"
@@ -6162,10 +6238,10 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
             </div>
           </div>
           <div
-            class="emotion-73"
+            class="emotion-75"
           >
             <div
-              class="emotion-90"
+              class="emotion-92"
             />
           </div>
         </div>

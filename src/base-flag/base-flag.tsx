@@ -11,11 +11,12 @@ import {Flow, StackDistribution} from '../stack/types';
 
 const StyledBaseFlag = styled.div<BaseFlagProps>`
   box-sizing: border-box;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   min-height: ${getSizingFromTheme(undefined, 'minHeight')};
   padding: ${getSizingFromTheme(undefined, 'padding')};
-  ${getTypePresetFromTheme(undefined, '$typePreset')}
   cursor: ${({isDisabled}) => (isDisabled ? 'not-allowed' : 'default')};
 
   svg {
@@ -28,17 +29,33 @@ const StyledBaseFlag = styled.div<BaseFlagProps>`
     getStylePresetFromTheme(undefined, '$stylePreset' as any, {
       isDisabled,
     })(props)}
-
 `;
 
-export const BaseFlag: React.FC<BaseFlagProps> = ({children, ...props}) => (
+const StyledTextCropWrapper = styled.span<Pick<BaseFlagProps, '$typePreset'>>`
+  ${getTypePresetFromTheme(undefined, '$typePreset')}
+`;
+
+export const BaseFlag: React.FC<BaseFlagProps> = ({
+  children,
+  $typePreset,
+  ...props
+}) => (
   <StyledBaseFlag {...props}>
     <Stack
       space="sizing010"
       flow={Flow.HorizontalCenter}
       stackDistribution={StackDistribution.Center}
     >
-      {children}
+      {React.Children.map(children, child => {
+        if (typeof child === 'string') {
+          return (
+            <StyledTextCropWrapper $typePreset={$typePreset}>
+              {child}
+            </StyledTextCropWrapper>
+          );
+        }
+        return child;
+      })}
     </Stack>
   </StyledBaseFlag>
 );

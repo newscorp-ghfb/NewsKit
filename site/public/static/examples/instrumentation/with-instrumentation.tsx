@@ -1,4 +1,4 @@
-import {withInstrumentation, EventTrigger} from './node_modules/newskit';
+import {withInstrumentation, EventTrigger} from 'newskit';
 
 export interface MySpecialCustomButtonProps {
   buttonText: string;

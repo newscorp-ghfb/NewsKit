@@ -2,7 +2,7 @@
 
 exports[`TagList renders as a span with custom margins 1`] = `
 <DocumentFragment>
-  .emotion-12 {
+  .emotion-15 {
   margin: 0;
   padding: 0;
   display: -webkit-inline-box;
@@ -21,38 +21,90 @@ exports[`TagList renders as a span with custom margins 1`] = `
   justify-content: center;
 }
 
-.emotion-2 {
+.emotion-3 {
   box-sizing: border-box;
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
   padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
   cursor: default;
 }
 
-.emotion-0 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+.emotion-3 svg {
+  width: 16px;
+  height: 16px;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
 }
 
-.emotion-3 {
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-4 {
   box-sizing: border-box;
   display: inline-block;
   list-style-type: none;
@@ -60,63 +112,75 @@ exports[`TagList renders as a span with custom margins 1`] = `
   margin-bottom: 4px;
 }
 
-.emotion-3:last-child {
+.emotion-4:last-child {
   margin-right: 0;
 }
 
 <ul
-    class="emotion-12"
+    class="emotion-15"
   >
     <li
-      class="emotion-3"
+      class="emotion-4"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         data-testid="tag"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <div
-            class="emotion-0"
+            class="emotion-1"
           >
-            first label
+            <span
+              class="emotion-0"
+            >
+              first label
+            </span>
           </div>
         </div>
       </div>
     </li>
     <li
-      class="emotion-3"
+      class="emotion-4"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         data-testid="tag"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <div
-            class="emotion-0"
+            class="emotion-1"
           >
-            second label
+            <span
+              class="emotion-0"
+            >
+              second label
+            </span>
           </div>
         </div>
       </div>
     </li>
     <li
-      class="emotion-3"
+      class="emotion-4"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         data-testid="tag"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <div
-            class="emotion-0"
+            class="emotion-1"
           >
-            third label
+            <span
+              class="emotion-0"
+            >
+              third label
+            </span>
           </div>
         </div>
       </div>
@@ -127,7 +191,7 @@ exports[`TagList renders as a span with custom margins 1`] = `
 
 exports[`TagList renders as a span with custom size 1`] = `
 <DocumentFragment>
-  .emotion-3 {
+  .emotion-4 {
   box-sizing: border-box;
   display: inline-block;
   list-style-type: none;
@@ -135,11 +199,11 @@ exports[`TagList renders as a span with custom size 1`] = `
   margin-bottom: 4px;
 }
 
-.emotion-3:last-child {
+.emotion-4:last-child {
   margin-right: 0;
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -160,7 +224,7 @@ exports[`TagList renders as a span with custom size 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-0 {
+.emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -169,7 +233,7 @@ exports[`TagList renders as a span with custom size 1`] = `
   margin-right: calc(4px/2);
 }
 
-.emotion-12 {
+.emotion-15 {
   margin: 0;
   padding: 0;
   display: -webkit-inline-box;
@@ -188,81 +252,124 @@ exports[`TagList renders as a span with custom size 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-2 {
+.emotion-3 {
   box-sizing: border-box;
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 40px;
   padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.75;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
   cursor: default;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
 }
 
 <ul
-    class="emotion-12"
+    class="emotion-15"
   >
     <li
-      class="emotion-3"
+      class="emotion-4"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         data-testid="tag"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <div
-            class="emotion-0"
+            class="emotion-1"
           >
-            first label
+            <span
+              class="emotion-0"
+            >
+              first label
+            </span>
           </div>
         </div>
       </div>
     </li>
     <li
-      class="emotion-3"
+      class="emotion-4"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         data-testid="tag"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <div
-            class="emotion-0"
+            class="emotion-1"
           >
-            second label
+            <span
+              class="emotion-0"
+            >
+              second label
+            </span>
           </div>
         </div>
       </div>
     </li>
     <li
-      class="emotion-3"
+      class="emotion-4"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
         data-testid="tag"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <div
-            class="emotion-0"
+            class="emotion-1"
           >
-            third label
+            <span
+              class="emotion-0"
+            >
+              third label
+            </span>
           </div>
         </div>
       </div>
@@ -273,7 +380,7 @@ exports[`TagList renders as a span with custom size 1`] = `
 
 exports[`TagList renders as a span with defaults 1`] = `
 <DocumentFragment>
-  .emotion-12 {
+  .emotion-15 {
   margin: 0;
   padding: 0;
   display: -webkit-inline-box;
@@ -292,7 +399,7 @@ exports[`TagList renders as a span with defaults 1`] = `
   justify-content: center;
 }
 
-.emotion-3 {
+.emotion-4 {
   box-sizing: border-box;
   display: inline-block;
   list-style-type: none;
@@ -300,245 +407,37 @@ exports[`TagList renders as a span with defaults 1`] = `
   margin-bottom: 4px;
 }
 
-.emotion-3:last-child {
+.emotion-4:last-child {
   margin-right: 0;
 }
 
-.emotion-2 {
+.emotion-3 {
   box-sizing: border-box;
-  display: inline-block;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 32px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  cursor: default;
-}
-
-.emotion-0 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-}
-
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-<ul
-    class="emotion-12"
-  >
-    <li
-      class="emotion-3"
-    >
-      <div
-        class="emotion-2"
-        data-testid="tag"
-      >
-        <div
-          class="emotion-1"
-        >
-          <div
-            class="emotion-0"
-          >
-            first label
-          </div>
-        </div>
-      </div>
-    </li>
-    <li
-      class="emotion-3"
-    >
-      <div
-        class="emotion-2"
-        data-testid="tag"
-      >
-        <div
-          class="emotion-1"
-        >
-          <div
-            class="emotion-0"
-          >
-            second label
-          </div>
-        </div>
-      </div>
-    </li>
-    <li
-      class="emotion-3"
-    >
-      <div
-        class="emotion-2"
-        data-testid="tag"
-      >
-        <div
-          class="emotion-1"
-        >
-          <div
-            class="emotion-0"
-          >
-            third label
-          </div>
-        </div>
-      </div>
-    </li>
-  </ul>
-</DocumentFragment>
-`;
-
-exports[`TagList renders as an anchor with custom margins 1`] = `
-<DocumentFragment>
-  .emotion-12 {
-  margin: 0;
-  padding: 0;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: inline-block;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 32px;
   padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
   cursor: default;
 }
 
-.emotion-0 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+.emotion-3 svg {
+  width: 16px;
+  height: 16px;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
-}
-
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-  display: inline-block;
-  list-style-type: none;
-  margin-right: 48px;
-  margin-bottom: 4px;
-}
-
-.emotion-3:last-child {
-  margin-right: 0;
-}
-
-<ul
-    class="emotion-12"
-  >
-    <li
-      class="emotion-3"
-    >
-      <a
-        class="emotion-2"
-        data-testid="tag"
-        href="www.url1.com"
-      >
-        <div
-          class="emotion-1"
-        >
-          <div
-            class="emotion-0"
-          >
-            first label
-          </div>
-        </div>
-      </a>
-    </li>
-    <li
-      class="emotion-3"
-    >
-      <a
-        class="emotion-2"
-        data-testid="tag"
-        href="www.url2.com"
-      >
-        <div
-          class="emotion-1"
-        >
-          <div
-            class="emotion-0"
-          >
-            second label
-          </div>
-        </div>
-      </a>
-    </li>
-    <li
-      class="emotion-3"
-    >
-      <a
-        class="emotion-2"
-        data-testid="tag"
-        href="www.url3.com"
-      >
-        <div
-          class="emotion-1"
-        >
-          <div
-            class="emotion-0"
-          >
-            third label
-          </div>
-        </div>
-      </a>
-    </li>
-  </ul>
-</DocumentFragment>
-`;
-
-exports[`TagList renders as an anchor with custom size 1`] = `
-<DocumentFragment>
-  .emotion-3 {
-  box-sizing: border-box;
-  display: inline-block;
-  list-style-type: none;
-  margin-right: 4px;
-  margin-bottom: 4px;
-}
-
-.emotion-3:last-child {
-  margin-right: 0;
-}
-
-.emotion-1 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -559,7 +458,7 @@ exports[`TagList renders as an anchor with custom size 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-0 {
+.emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -568,114 +467,109 @@ exports[`TagList renders as an anchor with custom size 1`] = `
   margin-right: calc(4px/2);
 }
 
-.emotion-12 {
-  margin: 0;
-  padding: 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: inline-block;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 40px;
-  padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.75;
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  cursor: default;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 <ul
-    class="emotion-12"
+    class="emotion-15"
   >
     <li
-      class="emotion-3"
+      class="emotion-4"
     >
-      <a
-        class="emotion-2"
+      <div
+        class="emotion-3"
         data-testid="tag"
-        href="www.url1.com"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <div
-            class="emotion-0"
+            class="emotion-1"
           >
-            first label
+            <span
+              class="emotion-0"
+            >
+              first label
+            </span>
           </div>
         </div>
-      </a>
+      </div>
     </li>
     <li
-      class="emotion-3"
+      class="emotion-4"
     >
-      <a
-        class="emotion-2"
+      <div
+        class="emotion-3"
         data-testid="tag"
-        href="www.url2.com"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <div
-            class="emotion-0"
+            class="emotion-1"
           >
-            second label
+            <span
+              class="emotion-0"
+            >
+              second label
+            </span>
           </div>
         </div>
-      </a>
+      </div>
     </li>
     <li
-      class="emotion-3"
+      class="emotion-4"
     >
-      <a
-        class="emotion-2"
+      <div
+        class="emotion-3"
         data-testid="tag"
-        href="www.url3.com"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <div
-            class="emotion-0"
+            class="emotion-1"
           >
-            third label
+            <span
+              class="emotion-0"
+            >
+              third label
+            </span>
           </div>
         </div>
-      </a>
+      </div>
     </li>
   </ul>
 </DocumentFragment>
 `;
 
-exports[`TagList renders as an anchor with defaults 1`] = `
+exports[`TagList renders as an anchor with custom margins 1`] = `
 <DocumentFragment>
-  .emotion-12 {
+  .emotion-15 {
   margin: 0;
   padding: 0;
   display: -webkit-inline-box;
@@ -696,103 +590,551 @@ exports[`TagList renders as an anchor with defaults 1`] = `
 
 .emotion-3 {
   box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  padding: 8px 12px;
+  cursor: default;
+}
+
+.emotion-3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 48px;
+  margin-bottom: 4px;
+}
+
+.emotion-4:last-child {
+  margin-right: 0;
+}
+
+<ul
+    class="emotion-15"
+  >
+    <li
+      class="emotion-4"
+    >
+      <a
+        class="emotion-3"
+        data-testid="tag"
+        href="www.url1.com"
+      >
+        <div
+          class="emotion-2"
+        >
+          <div
+            class="emotion-1"
+          >
+            <span
+              class="emotion-0"
+            >
+              first label
+            </span>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li
+      class="emotion-4"
+    >
+      <a
+        class="emotion-3"
+        data-testid="tag"
+        href="www.url2.com"
+      >
+        <div
+          class="emotion-2"
+        >
+          <div
+            class="emotion-1"
+          >
+            <span
+              class="emotion-0"
+            >
+              second label
+            </span>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li
+      class="emotion-4"
+    >
+      <a
+        class="emotion-3"
+        data-testid="tag"
+        href="www.url3.com"
+      >
+        <div
+          class="emotion-2"
+        >
+          <div
+            class="emotion-1"
+          >
+            <span
+              class="emotion-0"
+            >
+              third label
+            </span>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`TagList renders as an anchor with custom size 1`] = `
+<DocumentFragment>
+  .emotion-4 {
+  box-sizing: border-box;
   display: inline-block;
   list-style-type: none;
   margin-right: 4px;
   margin-bottom: 4px;
 }
 
-.emotion-3:last-child {
+.emotion-4:last-child {
   margin-right: 0;
 }
 
 .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-15 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.emotion-3 {
   box-sizing: border-box;
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 32px;
+  min-height: 40px;
   padding: 8px 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
   cursor: default;
 }
 
-.emotion-0 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
 }
 
-.emotion-0:hover:not(:disabled) {
-  background-color: #fafafa;
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
 }
 
-.emotion-0:active:not(:disabled) {
-  background-color: #f0f0f0;
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
 }
 
 <ul
-    class="emotion-12"
+    class="emotion-15"
   >
     <li
-      class="emotion-3"
+      class="emotion-4"
     >
       <a
-        class="emotion-2"
+        class="emotion-3"
         data-testid="tag"
         href="www.url1.com"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <div
-            class="emotion-0"
+            class="emotion-1"
           >
-            first label
+            <span
+              class="emotion-0"
+            >
+              first label
+            </span>
           </div>
         </div>
       </a>
     </li>
     <li
-      class="emotion-3"
+      class="emotion-4"
     >
       <a
-        class="emotion-2"
+        class="emotion-3"
         data-testid="tag"
         href="www.url2.com"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <div
-            class="emotion-0"
+            class="emotion-1"
           >
-            second label
+            <span
+              class="emotion-0"
+            >
+              second label
+            </span>
           </div>
         </div>
       </a>
     </li>
     <li
-      class="emotion-3"
+      class="emotion-4"
     >
       <a
-        class="emotion-2"
+        class="emotion-3"
         data-testid="tag"
         href="www.url3.com"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <div
-            class="emotion-0"
+            class="emotion-1"
           >
-            third label
+            <span
+              class="emotion-0"
+            >
+              third label
+            </span>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`TagList renders as an anchor with defaults 1`] = `
+<DocumentFragment>
+  .emotion-15 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+.emotion-4:last-child {
+  margin-right: 0;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  padding: 8px 12px;
+  cursor: default;
+}
+
+.emotion-3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<ul
+    class="emotion-15"
+  >
+    <li
+      class="emotion-4"
+    >
+      <a
+        class="emotion-3"
+        data-testid="tag"
+        href="www.url1.com"
+      >
+        <div
+          class="emotion-2"
+        >
+          <div
+            class="emotion-1"
+          >
+            <span
+              class="emotion-0"
+            >
+              first label
+            </span>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li
+      class="emotion-4"
+    >
+      <a
+        class="emotion-3"
+        data-testid="tag"
+        href="www.url2.com"
+      >
+        <div
+          class="emotion-2"
+        >
+          <div
+            class="emotion-1"
+          >
+            <span
+              class="emotion-0"
+            >
+              second label
+            </span>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li
+      class="emotion-4"
+    >
+      <a
+        class="emotion-3"
+        data-testid="tag"
+        href="www.url3.com"
+      >
+        <div
+          class="emotion-2"
+        >
+          <div
+            class="emotion-1"
+          >
+            <span
+              class="emotion-0"
+            >
+              third label
+            </span>
           </div>
         </div>
       </a>

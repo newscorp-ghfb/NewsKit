@@ -297,10 +297,10 @@ exports[`slider labels should render custom component min, max labels 1`] = `
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -309,10 +309,10 @@ exports[`slider labels should render custom component min, max labels 1`] = `
 }
 
 .emotion-1 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -375,10 +375,10 @@ exports[`slider labels should render horizontal labels 1`] = `
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -402,10 +402,10 @@ exports[`slider labels should render horizontal labels 1`] = `
 }
 
 .emotion-1 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -479,10 +479,10 @@ exports[`slider labels should render max label 1`] = `
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -550,10 +550,10 @@ exports[`slider labels should render min label 1`] = `
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -620,10 +620,10 @@ exports[`slider labels should render vertical labels 1`] = `
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -647,10 +647,10 @@ exports[`slider labels should render vertical labels 1`] = `
 }
 
 .emotion-1 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -819,10 +819,10 @@ exports[`slider react-range Range function props renderThumb should render custo
 exports[`slider react-range Range function props renderThumb should render default StyledThumbValue with custom $thumbSize prop 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -1013,10 +1013,10 @@ exports[`slider react-range Range function props renderThumb should render range
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -1167,10 +1167,10 @@ exports[`slider react-range Range function props renderThumb should render verti
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;

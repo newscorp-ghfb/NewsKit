@@ -7,6 +7,7 @@ import {
   getFontSizingFromTheme,
   getGridSettingFromTheme,
   getShadowFromTheme,
+  getFontsFromTheme,
 } from '../style';
 import {getFontSizing} from '../font-sizing';
 
@@ -349,5 +350,69 @@ describe('Style helpers', () => {
       'shadow',
     )(props);
     expect(declaration).toEqual('shadow200_shadow');
+  });
+
+  test('getFontsFromTheme("fontSize100")({theme}) returns "fontSize100_fonts"', () => {
+    const props = {
+      theme: {
+        fonts: {
+          fontSize100: 'fontSize100_fonts',
+        },
+      },
+    };
+    const declaration = getFontsFromTheme<{fonts?: string; theme: any}>(
+      'fontSize100' as any,
+    )(props);
+    expect(declaration).toEqual('fontSize100_fonts');
+  });
+
+  test('getFontsFromTheme(undefined, "font")({theme, font: "fontSize100"}) returns "fontSize100_fonts"', () => {
+    const props = {
+      theme: {
+        fonts: {
+          fontSize100: 'fontSize100_fonts',
+        },
+      },
+      font: 'fontSize100',
+    };
+    const declaration = getFontsFromTheme<{fonts?: string; theme: any}>(
+      undefined,
+      'font' as any,
+    )(props);
+    expect(declaration).toEqual('fontSize100_fonts');
+  });
+
+  test('getFontsFromTheme()({theme}) returns "fontSize100_fonts"', () => {
+    const props = {
+      theme: {
+        fonts: {
+          fontSize200: 'fontSize100_fonts',
+        },
+      },
+    };
+    const declaration = getFontsFromTheme<{fonts?: string; theme: any}>()(
+      props,
+    );
+    expect(declaration).toEqual('');
+  });
+
+  test('getFontsFromTheme("fontPrimary")({theme}) returns "system-ui, "Open Sans", sans-serif"', () => {
+    const props = {
+      theme: {
+        fonts: {
+          fontPrimary: {
+            fontFamily: 'system-ui, "Open Sans", sans-serif',
+            crop: {
+              top: 0,
+              bottom: 0,
+            },
+          },
+        },
+      },
+    };
+    const declaration = getFontsFromTheme<{fonts?: string; theme: any}>(
+      'fontPrimary' as any,
+    )(props);
+    expect(declaration).toEqual('system-ui, "Open Sans", sans-serif');
   });
 });

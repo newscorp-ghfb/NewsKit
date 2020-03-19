@@ -19,7 +19,8 @@ vrt/diff
 .cache
 site/.next
 site/posts.js
-public
+site/public/static/fonts
+/public
 .*code
 .terraform
 .webpack

@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import {Flag, FlagSize} from '..';
 import {styled} from '../../utils/style';
-import {Email} from '../../icons';
+import {Email, Bookmark, VolumeMute} from '../../icons';
 import {Stack} from '../../stack';
 
 export const name = 'flag';
@@ -68,6 +68,22 @@ export const component = () => (
           $stylePreset="flagMinimal"
         >
           <Email $size="iconSize010" />
+          Text
+        </Flag>
+        <Flag
+          $size={FlagSize.Large}
+          $spacing="spaceInset000Squish"
+          $stylePreset="flagMinimal"
+        >
+          <Bookmark $size="iconSize010" />
+          Text
+        </Flag>
+        <Flag
+          $size={FlagSize.Large}
+          $spacing="spaceInset000Squish"
+          $stylePreset="flagMinimal"
+        >
+          <VolumeMute $size="iconSize010" />
           Text
         </Flag>
       </Stack>

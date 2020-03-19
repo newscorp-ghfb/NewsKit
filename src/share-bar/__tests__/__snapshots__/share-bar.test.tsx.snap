@@ -72,10 +72,10 @@ exports[`ShareBar does not render invalid elements 1`] = `
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -759,10 +759,10 @@ exports[`ShareBar renders with custom components 1`] = `
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -1244,10 +1244,10 @@ exports[`ShareBar renders with left and right labels 1`] = `
 }
 
 .emotion-0 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;

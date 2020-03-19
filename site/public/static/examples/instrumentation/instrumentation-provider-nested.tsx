@@ -3,7 +3,7 @@ import {
   createEventInstrumentation,
   InstrumentationProvider,
   Link,
-} from './node_modules/newskit';
+} from 'newskit';
 
 const handlers = [instrumentationHandlers.createConsoleHandler()];
 const contextObject = {

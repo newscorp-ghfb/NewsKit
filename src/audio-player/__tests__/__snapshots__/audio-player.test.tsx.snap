@@ -167,10 +167,10 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -200,14 +200,14 @@ exports[`Audio Player live player renders as expected 1`] = `
   color: #0A68C1;
   border-radius: 50%;
   min-height: 8px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   padding: 8px;
   width: 32px;
   height: 32px;
@@ -358,10 +358,10 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-12 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -425,9 +425,9 @@ exports[`Audio Player live player renders as expected 1`] = `
   border-radius: 50%;
   color: #FFFFFF;
   min-height: 16px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.5;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -518,9 +518,9 @@ exports[`Audio Player live player renders as expected 1`] = `
   color: #0A68C1;
   border-radius: 50%;
   min-height: 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -946,10 +946,10 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
 }
 
 .emotion-13 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -979,14 +979,14 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
   color: #0A68C1;
   border-radius: 50%;
   min-height: 8px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 12px;
   line-height: 1.6666666666666667;
   font-weight: 500;
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   padding: 8px;
   width: 32px;
   height: 32px;
@@ -1073,10 +1073,10 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
 }
 
 .emotion-20 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -1140,9 +1140,9 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
   border-radius: 50%;
   color: #FFFFFF;
   min-height: 16px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.5;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -1233,9 +1233,9 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
   color: #0A68C1;
   border-radius: 50%;
   min-height: 12px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -1336,10 +1336,10 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
 }
 
 .emotion-3 {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;

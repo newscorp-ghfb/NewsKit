@@ -4,7 +4,7 @@ import {
   instrumentationMiddleware,
   EventTrigger,
   createEventInstrumentation,
-} from './node_modules/newskit';
+} from 'newskit';
 
 const consoleHandler1 = composeInstrumentationMiddleware(
   instrumentationHandlers.createConsoleHandler('Click event:'),

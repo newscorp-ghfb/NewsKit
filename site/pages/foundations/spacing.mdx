@@ -1,6 +1,7 @@
 import Layout from '../../components/layout';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Image} from 'newskit';
+import {Prop} from '../../components/prop';
 
 export default Layout;
 
@@ -148,3 +149,45 @@ Use inline spacing variable tokens to separate inline elements arranged horizont
 | spaceInline070 | 0 48px 0 0 |  0 3 0 0   |
 
 Apply inline spacing tokens to the margin property.
+
+## Vertical Text Crop
+
+Line-height cropping is included as part of the type presets to remove unwanted whitespace at the top and bottom of elements that contain text. The crop utility trims the margin-top and margin-bottom of an element using :before and :after pseudo-elements while preserving line-height between lines in a multi-line block of text.
+
+Line-heigh cropping requires a different setup for each font used in the theme. Once an initial setup is done, it will work with any font size.
+
+The font config object is detailed below:
+
+<LegacyBlock $marginTop="sizing040">
+  <Prop name="fontFamily" type="string" required>
+    Specifies the font for an element. Since the crop utility has a different setup per font type, it is recommended to specify a single font. If invalid string provided, the font fallbacks to the default Newskit theme font - Noto Sans.
+  </Prop>
+  <Prop name="cropConfig" type="object">
+    <span>Accepts an object with the crop configuration:</span>
+    <LegacyBlock $marginTop="sizing040" $marginLeft="sizing050">
+      <Prop name="top" type="number" required>
+          Constant value representing the desired crop amount at the top. Applied to calculate em-based bottom margin that works with any font size.
+      </Prop>
+      <Prop name="bottom" type="number" required>
+          Constant value representing the desired crop amount at the bottom. Applied to calculate em-based top margin that works with any font size.
+      </Prop>
+      <Prop name="fontSize" type="number">
+          Used as a base in the initial crop calculations. Defaults to 36px.
+      </Prop>
+      <Prop name="lineHeight" type="number">
+          Used as a base in the initial crop calculations. Defaults to 1.2.
+      </Prop>
+    </LegacyBlock>
+  </Prop>
+  <Prop name="cropAdjustments" type="object">
+    <span>Accepts an object with a key being the font size as a string. Used for additional crop adjustments per font size.</span>
+    <LegacyBlock $marginTop="sizing040" $marginLeft="sizing050">
+      <Prop name="top" type="number">
+          A value representing the adjusted crop amount at the top.
+      </Prop>
+      <Prop name="bottom" type="number">
+          A value representing the adjusted crop amount at the bottom.
+      </Prop>
+    </LegacyBlock>
+  </Prop>
+</LegacyBlock>
