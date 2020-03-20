@@ -47,7 +47,10 @@ const assertTestFolders = createAsserter(
 
 const assertKebabFileNames = createAsserter(
   path =>
-    !path.endsWith('.DS_Store') && path.includes('.') && /[A-Z]|\s/.test(path),
+    !path.endsWith('.DS_Store') &&
+    path.includes('.') &&
+    /[A-Z]|\s/.test(path) &&
+    !path.includes('.next/'),
   errors =>
     `${bgRed}${fgWhite}Invalid file path${
       errors > 1 ? 's' : ''

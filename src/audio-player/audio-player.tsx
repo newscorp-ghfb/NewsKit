@@ -97,7 +97,8 @@ const InternalAudioPlayer: React.FC<InstrumentedAudioPlayerProps> = props => {
     ...$controlPresets,
   };
 
-  const [volume, setVolume] = useState(1);
+  const [isFirstVolumeLoad, setIsFirstVolumeLoad] = useState(true);
+  const [volume, setVolume] = useState(0.7);
   const [duration, setDuration] = useState(0);
   const [trackPositionArr, setTrackPosition] = useState([0]);
   const [isPlaying, setPlayState] = useState(false);
@@ -144,10 +145,23 @@ const InternalAudioPlayer: React.FC<InstrumentedAudioPlayerProps> = props => {
     [duration, live],
   );
 
-  /**
-   * audio player volume controls
-   */
-  const onVolumeChange: EventListener = event => setVolume(event.target.volume);
+  const onVolumeChange: EventListener = event => {
+    if (
+      localStorage.getItem('newskit-audioplayer-volume') &&
+      isFirstVolumeLoad
+    ) {
+      const localStorageVolume = Number(
+        localStorage.getItem('newskit-audioplayer-volume'),
+      );
+      setVolume(localStorageVolume);
+    } else {
+      const newVolume = String(event.target.volume);
+      localStorage.setItem('newskit-audioplayer-volume', newVolume);
+    }
+
+    /* istanbul ignore next */
+    if (isFirstVolumeLoad) setIsFirstVolumeLoad(false);
+  };
 
   /**
    * audio src duration handler
