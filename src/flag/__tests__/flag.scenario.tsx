@@ -16,16 +16,18 @@ export default {
   name: 'flag',
   children: [
     {
+      name: 'solid-flag',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <h2>Solid Flag</h2>
           <Flag>Text goes here</Flag>
         </React.Fragment>
       ),
-      name: 'solid-flag',
-      type: 'story',
     },
     {
+      name: 'minimal-flag',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <h2>Minimal Flag</h2>
@@ -34,10 +36,10 @@ export default {
           </Flag>
         </React.Fragment>
       ),
-      name: 'minimal-flag',
-      type: 'story',
     },
     {
+      name: 'sizing',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <h1>Flag Sizes</h1>
@@ -48,10 +50,10 @@ export default {
           </Stack>
         </React.Fragment>
       ),
-      name: 'sizing',
-      type: 'story',
     },
     {
+      name: 'style-presets',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <h1>Style Presets</h1>
@@ -63,10 +65,10 @@ export default {
           </Block>
         </React.Fragment>
       ),
-      name: 'style-presets',
-      type: 'story',
     },
     {
+      name: 'flags-with-an-icon',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <h1>Flags with an icon</h1>
@@ -84,10 +86,10 @@ export default {
           </Container>
         </React.Fragment>
       ),
-      name: 'flags-with-an-icon',
-      type: 'story',
     },
     {
+      name: 'minimal-with-icon',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <h2>Minimal (without padding)</h2>
@@ -129,8 +131,6 @@ export default {
           </Container>
         </React.Fragment>
       ),
-      name: 'minimal-with-icon',
-      type: 'story',
     },
   ],
 };
