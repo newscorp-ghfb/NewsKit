@@ -6,10 +6,9 @@ import {newskitLightTheme} from '../../themes';
 import {Tag} from '../../tag/tag';
 import {Stack} from '../../stack/stack';
 
-export const name = 'scroll';
-
 const MainContainer = styled.div`
-  width: 800px;
+  max-height: 768px;
+  max-width: 1024px;
   margin: auto;
 `;
 
@@ -36,35 +35,64 @@ const tags = [
   'tags',
 ].map(item => <Tag>{item}</Tag>);
 
-export const component = () => (
-  <MainContainer>
-    <StorybookHeading>Scroll with default only</StorybookHeading>
-    <Container theme={newskitLightTheme}>
-      <Scroll>
-        <Block>
-          <Stack flow="horizontal-top">{tags}</Stack>
-        </Block>
-      </Scroll>
-    </Container>
-
-    {Object.values(ScrollFlow).map((flowKey: ScrollFlow) => (
-      <>
-        <StorybookHeading>Scroll flow set to {flowKey}</StorybookHeading>
-        <Container theme={newskitLightTheme}>
-          <Scroll flow={flowKey}>
-            <Block>
-              <Stack
-                flow={
-                  flowKey === 'vertical' ? 'vertical-left' : 'horizontal-center'
-                }
-                space="sizing040"
-              >
-                {tags}
-              </Stack>
-            </Block>
-          </Scroll>
-        </Container>
-      </>
-    ))}
-  </MainContainer>
-);
+export default {
+  name: 'scroll',
+  children: [
+    {
+      name: 'default',
+      type: 'story',
+      component: () => (
+        <MainContainer>
+          <StorybookHeading>Scroll with default only</StorybookHeading>
+          <Container theme={newskitLightTheme}>
+            <Scroll>
+              <Block>
+                <Stack flow="horizontal-top">{tags}</Stack>
+              </Block>
+            </Scroll>
+          </Container>
+        </MainContainer>
+      ),
+    },
+    {
+      name: 'horizontal-scroll',
+      type: 'story',
+      component: () => (
+        <MainContainer>
+          <StorybookHeading>
+            Scroll flow set to {ScrollFlow.horizontal}
+          </StorybookHeading>
+          <Container theme={newskitLightTheme}>
+            <Scroll flow={ScrollFlow.horizontal}>
+              <Block>
+                <Stack flow="horizontal-center" space="sizing040">
+                  {tags}
+                </Stack>
+              </Block>
+            </Scroll>
+          </Container>
+        </MainContainer>
+      ),
+    },
+    {
+      name: 'vertical-scroll',
+      type: 'story',
+      component: () => (
+        <MainContainer>
+          <StorybookHeading>
+            Scroll flow set to {ScrollFlow.vertical}
+          </StorybookHeading>
+          <Container theme={newskitLightTheme}>
+            <Scroll flow={ScrollFlow.vertical}>
+              <Block>
+                <Stack flow="vertical-left" space="sizing040">
+                  {tags}
+                </Stack>
+              </Block>
+            </Scroll>
+          </Container>
+        </MainContainer>
+      ),
+    },
+  ],
+};
