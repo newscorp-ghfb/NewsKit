@@ -9,8 +9,6 @@ import {TagSize} from '../../tag';
 import {TagListLayout} from '../types';
 import {styled} from '../../utils/style';
 
-export const name = 'tag-list';
-
 const tagData = (): TagData[] => [
   {
     label: `alpha tag`,
@@ -55,25 +53,63 @@ const SmallContainer = styled(Container)`
   width: 300px;
 `;
 
-export const component = () => [
-  <StorybookHeading>Tags with `href` (render as an anchor)</StorybookHeading>,
-  ...Object.entries(TagSize).map(([key, size]) => (
-    <Container>
-      <StorybookSubHeading>{key}</StorybookSubHeading>
-      <TagList $size={size} tagData={tagData()} />
-    </Container>
-  )),
-  ...Object.entries(TagListLayout).map(([key, layout]) => (
-    <SmallContainer>
-      <StorybookSubHeading>{key}</StorybookSubHeading>
-      <TagList $size={TagSize.Small} $layout={layout} tagData={tagData()} />
-    </SmallContainer>
-  )),
-  <StorybookHeading>Tags without `href` (render as a span)</StorybookHeading>,
-  ...Object.entries(TagSize).map(([key, size]) => (
-    <SmallContainer>
-      <StorybookSubHeading>{key}</StorybookSubHeading>
-      <TagList $size={size} tagData={tagDataWithoutHref()} />
-    </SmallContainer>
-  )),
-];
+export default {
+  name: 'tag-list',
+  children: [
+    {
+      name: 'tag-link-sizes',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Tags with `href` (render as an anchor)
+          </StorybookHeading>
+          {...Object.entries(TagSize).map(([key, size]) => (
+            <Container>
+              <StorybookSubHeading>{key}</StorybookSubHeading>
+              <TagList $size={size} tagData={tagData()} />
+            </Container>
+          ))}
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'tag-link-layout',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Tags with `href` (render as an anchor)
+          </StorybookHeading>
+          {...Object.entries(TagListLayout).map(([key, layout]) => (
+            <SmallContainer>
+              <StorybookSubHeading>{key}</StorybookSubHeading>
+              <TagList
+                $size={TagSize.Small}
+                $layout={layout}
+                tagData={tagData()}
+              />
+            </SmallContainer>
+          ))}
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'tag-no-link',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Tags without `href` (render as a span)
+          </StorybookHeading>
+          {...Object.entries(TagSize).map(([key, size]) => (
+            <SmallContainer>
+              <StorybookSubHeading>{key}</StorybookSubHeading>
+              <TagList $size={size} tagData={tagDataWithoutHref()} />
+            </SmallContainer>
+          ))}
+        </React.Fragment>
+      ),
+    },
+  ],
+};

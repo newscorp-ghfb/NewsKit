@@ -14,8 +14,6 @@ const CustomFlag = () => (
 
 const radioPlayerImage = require('./radio-player-image.png');
 
-export const name = 'radio-player';
-
 const props = {
   imgAlt: 'Giles Coren, Presenter',
   title: 'The Breakfast Show with Giles Coren',
@@ -34,30 +32,46 @@ const PlayerContainer = styled.div`
   margin-right: auto;
 `;
 
-export const component = () => (
-  <div>
-    <StorybookHeading>Radio Player</StorybookHeading>
-    <PlayerContainer>
-      <RadioPlayer
-        {...props}
-        title="Sound Helix Song"
-        flag={CustomFlag}
-        onNextTrack={() => {}}
-        onPreviousTrack={() => {}}
-        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-        popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
-      />
-    </PlayerContainer>
-
-    <StorybookHeading>Live Radio Player</StorybookHeading>
-    <PlayerContainer>
-      <RadioPlayer
-        {...props}
-        live
-        flag="Live"
-        src="https://radio.talkradio.co.uk/stream"
-        popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
-      />
-    </PlayerContainer>
-  </div>
-);
+export default {
+  name: 'radio-player',
+  children: [
+    {
+      name: 'recorded-radio-player',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>Radio Player</StorybookHeading>
+          <PlayerContainer>
+            <RadioPlayer
+              {...props}
+              title="Sound Helix Song"
+              flag={CustomFlag}
+              onNextTrack={() => {}}
+              onPreviousTrack={() => {}}
+              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+              popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
+            />
+          </PlayerContainer>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'live-radio-player',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>Live Radio Player</StorybookHeading>
+          <PlayerContainer>
+            <RadioPlayer
+              {...props}
+              live
+              flag="Live"
+              src="https://radio.talkradio.co.uk/stream"
+              popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
+            />
+          </PlayerContainer>
+        </React.Fragment>
+      ),
+    },
+  ],
+};
