@@ -308,6 +308,14 @@ export default {
               />
             </ThemeProvider>
           </Container>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'slider-with-custom-renders-vertical',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
           <VerticalContainer>
             <StatefulSlider values={[20]} max={50} min={0} vertical />
           </VerticalContainer>

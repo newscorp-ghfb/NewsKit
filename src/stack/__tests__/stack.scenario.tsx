@@ -7,7 +7,7 @@ import {Tag} from '../../tag/tag';
 import {newskitLightTheme} from '../../themes';
 
 const MainContainer = styled.div`
-  width: 800px;
+  max-width: 800px;
   margin: auto;
   max-height: 768px;
 `;
