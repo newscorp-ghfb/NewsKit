@@ -6,11 +6,10 @@ import {StorybookHeading} from '../../test/storybook-comps';
 import {Tag} from '../../tag/tag';
 import {newskitLightTheme} from '../../themes';
 
-export const name = 'stack';
-
 const MainContainer = styled.div`
   width: 800px;
   margin: auto;
+  max-height: 768px;
 `;
 
 const Container = styled.div`
@@ -24,43 +23,14 @@ const Block = styled.div<{isBlock?: boolean; hasHeight: boolean}>`
   border: dotted 1px ${getColorFromTheme('red040')};
 `;
 
-export const component = () => (
-  <MainContainer>
-    <StorybookHeading>Stack with defaults only</StorybookHeading>
-    <Container theme={newskitLightTheme}>
-      <Stack>
-        <Tag>Example 1</Tag>
-        <Tag>Example 2</Tag>
-        <Tag>Example 3</Tag>
-      </Stack>
-    </Container>
-    <StorybookHeading>
-      Stack vertical using design system spacing token
-    </StorybookHeading>
-    <Container theme={newskitLightTheme}>
-      <Block hasHeight>
-        <Stack space="sizing050">
-          <Tag>Example 1</Tag>
-          <Tag>Example 2</Tag>
-          <Tag>Example 3</Tag>
-        </Stack>
-      </Block>
-    </Container>
-    <StorybookHeading>
-      Stack horizontal center using design system spacing token
-    </StorybookHeading>
-    <Container theme={newskitLightTheme}>
-      <Block hasHeight>
-        <Stack space="sizing050" flow={Flow.HorizontalCenter}>
-          <Tag>Example 1</Tag>
-          <Tag>Example 2</Tag>
-          <Tag>Example 3</Tag>
-        </Stack>
-      </Block>
-    </Container>
-    {Object.values(Flow).map((flowKey: Flow) =>
-      Object.values(StackDistribution).map(stackDistributionKey => (
-        <>
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const stackDistributionSet: any = () => {
+  const sets = Object.values(Flow).map((flowKey: Flow) =>
+    Object.values(StackDistribution).map(stackDistributionKey => ({
+      name: `stack distribution set ${stackDistributionKey}, ${flowKey}`,
+      type: 'story',
+      component: () => (
+        <MainContainer>
           <StorybookHeading>
             Stack distribution set to {stackDistributionKey} when {flowKey}
           </StorybookHeading>
@@ -82,8 +52,75 @@ export const component = () => (
               </Stack>
             </Block>
           </Container>
-        </>
-      )),
-    )}
-  </MainContainer>
-);
+        </MainContainer>
+      ),
+    })),
+  );
+  return sets;
+};
+
+const stackSets = stackDistributionSet().flat(1);
+
+export default {
+  name: 'stack',
+  children: [
+    {
+      name: 'stack-with-defaults-only',
+      type: 'story',
+      component: () => (
+        <MainContainer>
+          <StorybookHeading>Stack with defaults only</StorybookHeading>
+          <Container theme={newskitLightTheme}>
+            <Stack>
+              <Tag>Example 1</Tag>
+              <Tag>Example 2</Tag>
+              <Tag>Example 3</Tag>
+            </Stack>
+          </Container>
+        </MainContainer>
+      ),
+    },
+    {
+      name: 'stack-vertical-using-design-system-spacing-token',
+      type: 'story',
+      component: () => (
+        <MainContainer>
+          <StorybookHeading>
+            {' '}
+            Stack vertical using design system spacing token
+          </StorybookHeading>
+          <Container theme={newskitLightTheme}>
+            <Block hasHeight>
+              <Stack space="sizing050">
+                <Tag>Example 1</Tag>
+                <Tag>Example 2</Tag>
+                <Tag>Example 3</Tag>
+              </Stack>
+            </Block>
+          </Container>
+        </MainContainer>
+      ),
+    },
+    {
+      name: 'stack-horizontal-center-using-design-system-spacing-token',
+      type: 'story',
+      component: () => (
+        <MainContainer>
+          <StorybookHeading>
+            Stack horizontal center using design system spacing token
+          </StorybookHeading>
+          <Container theme={newskitLightTheme}>
+            <Block hasHeight>
+              <Stack space="sizing050" flow={Flow.HorizontalCenter}>
+                <Tag>Example 1</Tag>
+                <Tag>Example 2</Tag>
+                <Tag>Example 3</Tag>
+              </Stack>
+            </Block>
+          </Container>
+        </MainContainer>
+      ),
+    },
+    ...stackSets,
+  ],
+};
