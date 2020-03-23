@@ -1,9 +1,6 @@
 import * as React from 'react';
 import {AudioPlayer} from '..';
-import {StorybookHeading} from '../../test/storybook-comps';
 import {styled} from '../../utils/style';
-
-export const name = 'audio-player';
 
 const liveAudioProps = {
   src: 'https://radio.talkradio.co.uk/stream',
@@ -28,44 +25,66 @@ const PlayerContainer = styled.div`
 // eslint-disable-next-line no-alert
 const alert = (msg: string) => () => window.alert(msg);
 
-export const component = () => (
-  <div>
-    <StorybookHeading>Recorded Audio Player</StorybookHeading>
-    <PlayerContainer>
-      <AudioPlayer {...recordedAudioProps} />
-    </PlayerContainer>
-
-    <StorybookHeading>Recorded Audio Player with popout link</StorybookHeading>
-    <PlayerContainer>
-      <AudioPlayer
-        {...recordedAudioProps}
-        popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
-      />
-    </PlayerContainer>
-
-    <StorybookHeading>Recorded Audio Player with controls</StorybookHeading>
-    <PlayerContainer>
-      <AudioPlayer
-        {...recordedAudioProps}
-        onNextTrack={alert('Next track clicked!')}
-        onPreviousTrack={alert('Previous track clicked!')}
-      />
-    </PlayerContainer>
-
-    <StorybookHeading>Audio Player with disabled controls</StorybookHeading>
-    <PlayerContainer>
-      <AudioPlayer
-        {...recordedAudioProps}
-        onNextTrack={() => {}}
-        onPreviousTrack={() => {}}
-        disableNextTrack
-        disablePreviousTrack
-      />
-    </PlayerContainer>
-
-    <StorybookHeading>Live Audio Player</StorybookHeading>
-    <PlayerContainer>
-      <AudioPlayer {...liveAudioProps} />
-    </PlayerContainer>
-  </div>
-);
+export default {
+  name: 'audio-player',
+  children: [
+    {
+      name: 'recorded-audio-player',
+      type: 'story',
+      component: () => (
+        <PlayerContainer>
+          <AudioPlayer {...recordedAudioProps} />
+        </PlayerContainer>
+      ),
+    },
+    {
+      name: 'recorded-with-popout-link',
+      type: 'story',
+      component: () => (
+        <PlayerContainer>
+          <AudioPlayer
+            {...recordedAudioProps}
+            popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
+          />
+        </PlayerContainer>
+      ),
+    },
+    {
+      name: 'recorded-with-controls',
+      type: 'story',
+      component: () => (
+        <PlayerContainer>
+          <AudioPlayer
+            {...recordedAudioProps}
+            onNextTrack={alert('Next track clicked!')}
+            onPreviousTrack={alert('Previous track clicked!')}
+          />
+        </PlayerContainer>
+      ),
+    },
+    {
+      name: 'with-disabled-controls',
+      type: 'story',
+      component: () => (
+        <PlayerContainer>
+          <AudioPlayer
+            {...recordedAudioProps}
+            onNextTrack={() => {}}
+            onPreviousTrack={() => {}}
+            disableNextTrack
+            disablePreviousTrack
+          />
+        </PlayerContainer>
+      ),
+    },
+    {
+      name: 'live-audio-player',
+      type: 'story',
+      component: () => (
+        <PlayerContainer>
+          <AudioPlayer {...liveAudioProps} />
+        </PlayerContainer>
+      ),
+    },
+  ],
+};
