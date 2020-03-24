@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {MDXProvider} from '@mdx-js/react';
+import {MDXProvider} from '@mdx-js/tag';
 import {
   Grid,
   Cell,
@@ -57,14 +57,6 @@ interface LayoutState {
   sectionNavHeight: number;
 }
 
-interface Heading {
-  children: string;
-}
-
-type PageSection = React.ReactElement<{
-  children: React.ReactElement<{children: string; name: string}>[];
-}>;
-
 class Layout extends React.Component<LayoutProps, LayoutState> {
   private headerRef: React.RefObject<HTMLElement>;
 
@@ -104,7 +96,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
 
     if (!path.startsWith('/components')) return null;
 
-    const pageSections = this.getPageSections(children as PageSection);
+    const pageSections = this.getPageSections(children);
     const filteredSections: string[] = pageSections.filter((section: string) =>
       DEFAULT_SECTIONS.some(def => def.test(section)),
     );
@@ -114,7 +106,11 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
     );
   };
 
-  getPageSections = (children: PageSection): string[] => {
+  getPageSections = (
+    children: React.ReactElement<{
+      children: React.ReactElement<{children: string; name: string}>[];
+    }>,
+  ): string[] => {
     if (!React.isValidElement(children)) {
       return [];
     }
@@ -136,7 +132,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
     const H2 = MarkdownElements.h2;
     const updatedComponents = {
       ...MarkdownElements,
-      h2: ({children}: Heading) => (
+      h2: ({children}) => (
         <H2 offset={sectionNavHeight + headerHeight}>{children}</H2>
       ),
     };

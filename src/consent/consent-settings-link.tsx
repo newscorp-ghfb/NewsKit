@@ -3,7 +3,7 @@ import {Link} from '../link';
 import {LinkProps} from '../link/types';
 
 type SPWindow = Window & {
-  _sp_?: {
+  _sp_: {
     loadPrivacyManagerModal: (siteId: string, managerId: string) => void;
   };
 };
@@ -28,7 +28,7 @@ export const ConsentSettingsLink: React.FC<ConsentSettingsLinkProps> = ({
     onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
       try {
         // eslint-disable-next-line no-underscore-dangle
-        (window as SPWindow)._sp_!.loadPrivacyManagerModal(
+        (window as SPWindow)._sp_.loadPrivacyManagerModal(
           siteId,
           privacyManagerId,
         );

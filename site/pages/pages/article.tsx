@@ -7,7 +7,6 @@ import {
   ArticleContent,
   P,
   TagList,
-  TagSize,
   Grid,
   Cell,
   Image,
@@ -112,7 +111,8 @@ const Article: React.FC = () => (
 
           <Cell xs={12}>
             <TagList
-              $size={TagSize.Small}
+              $size="small"
+              $shape="semiRounded"
               $spacing="sizing040"
               tagData={[
                 {

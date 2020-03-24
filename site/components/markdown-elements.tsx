@@ -204,7 +204,7 @@ export const H1 = ({children}: TextProps) => (
   </React.Fragment>
 );
 
-export const H2 = ({children, offset}: TextProps & {offset?: number}) => (
+export const H2 = ({children, offset}: TextProps & {offset: number}) => (
   <React.Fragment>
     <SectionLink
       id={children && children.toLowerCase().replace(/\s+/g, '-')}
@@ -255,5 +255,4 @@ export default {
   blockquote: ({children}: TextProps) => <Blockquote>{children}</Blockquote>,
   a: DocLink,
   table: ScrollableTable,
-  wrapper: undefined,
 };

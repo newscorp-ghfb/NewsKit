@@ -25,7 +25,7 @@ export const Button: React.FC<
   <BaseButton
     $stylePreset="buttonSolidPrimary"
     $size={$size}
-    {...buttonSizing[$size as RegularButtonSize]}
+    {...buttonSizing[$size]}
     {...restOfProps}
   >
     {children}

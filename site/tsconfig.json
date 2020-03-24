@@ -1,6 +1,8 @@
 {
   "extends": "../tsconfig.common.json",
   "compilerOptions": {
+    "declaration": false,
+    "declarationMap": true,
     "baseUrl": "./",
     "paths": {
       "newskit": [
@@ -32,7 +34,6 @@
   },
   "exclude": [
     "node_modules",
-    "public/static/examples",
     "src"
   ],
   "include": [
