@@ -10,7 +10,6 @@ module.exports = {
     {width: 1024, height: 768, name: 'safari'},
   ],
   concurrency: 100,
-  dontCloseBatches: true,
   viewportSize: {width: 1027, height: 768},
   waitBeforeScreenshot: 5000,
 };

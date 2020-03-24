@@ -275,6 +275,7 @@ jobs:
           command: |
             export APPLITOOLS_BATCH_ID=`echo $CIRCLE_SHA1`
             export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}
+            export APPLITOOLS_DONT_CLOSE_BATCHES=true
             make comps_visual_test
 
   test_visual_comps_pr:
@@ -299,6 +300,7 @@ jobs:
           command: |
             export APPLITOOLS_BATCH_ID=`echo $CIRCLE_SHA1`
             export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}
+            export APPLITOOLS_DONT_CLOSE_BATCHES=true
             make e2e_visual_test_docs
       - store_artifacts:
           path: cypress/screenshots

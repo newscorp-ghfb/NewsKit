@@ -11,5 +11,4 @@ module.exports = {
   ],
   matchLevel: 'Layout',
   concurrency: 20,
-  dontCloseBatches: true,
 };
