@@ -608,9 +608,7 @@ workflows:
           requires:
             - build_components
             - test_unit
-            - test_visual_comps_develop
             - test_e2e_comps
-            - test_visual_docs
             - test_e2e_docs
             - approve_publish_npm_dev
       - build_push_docker_ecr:
@@ -620,9 +618,7 @@ workflows:
             - build_docs
             - build_storybook
             - test_unit
-            - test_visual_comps_develop
             - test_e2e_comps
-            - test_visual_docs
             - test_e2e_docs
       - k8s_flux_deploy_dev:
           context: ncu-product-platforms-context
@@ -645,7 +641,6 @@ workflows:
           <<: *only_master
           requires:
             - test_unit
-            - test_visual_comps_develop
             - test_e2e_comps
             - test_e2e_docs
       - publish_npm:
@@ -654,7 +649,6 @@ workflows:
           requires:
             - build_components
             - test_unit
-            - test_visual_comps_develop
             - test_e2e_comps
             - test_e2e_docs
       - k8s_flux_deploy_prod:
