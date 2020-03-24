@@ -8,7 +8,7 @@ import {newskitLightTheme} from '../../themes';
 
 const MainContainer = styled.div`
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto;
   max-height: 768px;
 `;
 

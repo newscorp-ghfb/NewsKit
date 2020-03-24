@@ -41,8 +41,8 @@ const podcast3 = {
 const audioTrackList = [podcast1, podcast2, podcast3];
 
 const Container = styled.div`
-  width: 800px;
-  margin: auto;
+  max-width: 800px;
+  margin: 0 auto;
 `;
 
 export const component = () => (

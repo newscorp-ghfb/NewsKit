@@ -9,7 +9,7 @@ import {Stack} from '../../stack/stack';
 const MainContainer = styled.div`
   max-height: 768px;
   max-width: 1024px;
-  margin: auto;
+  margin: 0 auto;
 `;
 
 const Container = styled.div`

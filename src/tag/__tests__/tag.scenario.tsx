@@ -44,7 +44,6 @@ export const component = () => (
     </Container>
 
     <StorybookHeading>Tags with an icon</StorybookHeading>
-    <h2>Solid</h2>
     <Container>
       <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
         <Tag $size={TagSize.Small}>

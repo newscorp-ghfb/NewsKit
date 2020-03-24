@@ -60,6 +60,7 @@ const CustomThumb = styled.div`
   background: black;
   border: dashed 2px yellow;
 `;
+
 const renderCustomThumb: SliderProps['renderThumb'] = ({props}) => (
   <CustomThumb {...props} aria-label="custom slider thumb">
     <Placeholder $size="iconSize030" $color="inkNonEssential" />
@@ -156,11 +157,11 @@ export default {
       ),
     },
     {
-      name: 'slider-with-labels',
+      name: 'slider-with-text-labels',
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>with labels</StorybookHeading>
+          <StorybookHeading>with text labels</StorybookHeading>
           <Container>
             <StatefulSlider
               values={[2.5]}
@@ -206,6 +207,15 @@ export default {
               labelPosition={LabelPosition.After}
             />
           </Container>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'slider-with-custom-labels',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>with custom labels</StorybookHeading>
           <Container>
             <StatefulSlider
               values={[40]}
@@ -312,7 +322,7 @@ export default {
       ),
     },
     {
-      name: 'slider-with-custom-renders-vertical',
+      name: 'slider-renders-vertical',
       type: 'story',
       component: () => (
         <React.Fragment>
@@ -365,6 +375,14 @@ export default {
               vertical
             />
           </VerticalContainer>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'slider-with-custom-renders-vertical',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
           <VerticalContainer>
             <StatefulSlider
               values={[50]}

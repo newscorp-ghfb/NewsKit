@@ -5,8 +5,8 @@ import {styled} from '../../utils/style';
 export const name = 'auto-play-audio-player';
 
 const Container = styled.div`
-  width: 800px;
-  margin: auto;
+  max-width: 800px;
+  margin: 0 auto;
 `;
 
 export const component = () => (

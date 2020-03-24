@@ -3,7 +3,7 @@ import {withTheme} from '../themes';
 import {Svg} from './svg';
 import {SvgProps} from './types';
 
-export const defaultIcon: React.FC<SvgProps> = ({
+const defaultIcon: React.FC<SvgProps> = ({
   $size,
   $color,
   title = 'Menu icon',
