@@ -7,8 +7,9 @@ import {
   createEventInstrumentation,
   InstrumentationProvider,
   instrumentationHandlers,
+  Theme,
 } from 'newskit';
-import App, {Container} from 'next/app';
+import App, {Container, AppContext} from 'next/app';
 import '../prism-coy.css'; // light theme code highlighting
 import '../tomorrow-night.css'; // dark theme code highlighting
 
@@ -30,7 +31,8 @@ type State = {
 };
 
 export default class MyApp extends App<Props, State> {
-  constructor(props) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  constructor(props: any) {
     super(props);
     this.state = {
       theme: newskitLightTheme,
@@ -39,7 +41,7 @@ export default class MyApp extends App<Props, State> {
     this.toggleTheme = this.toggleTheme.bind(this);
   }
 
-  static async getInitialProps({Component, ctx}) {
+  static async getInitialProps({Component, ctx}: AppContext) {
     let pageProps = {};
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx);
@@ -70,7 +72,7 @@ export default class MyApp extends App<Props, State> {
     }
   }
 
-  mediaQueryListener(e) {
+  mediaQueryListener(e: MediaQueryListEvent) {
     if (e && e.matches) {
       if (e.media === DARK_MEDIA_QUERY) {
         this.setThemeStyle('dark');
@@ -139,13 +141,13 @@ export default class MyApp extends App<Props, State> {
     }
 
     this.setState({
-      theme: themes[themeName] || newskitLightTheme,
+      theme: themes[themeName as 'newskitLightTheme'] || newskitLightTheme,
     });
   }
 
   getThemeStyle = () => localStorage.getItem('docs-theme');
 
-  setThemeStyle = theme => localStorage.setItem('docs-theme', theme);
+  setThemeStyle = (theme: string) => localStorage.setItem('docs-theme', theme);
 
   toggleTheme() {
     const theme = this.getThemeStyle();

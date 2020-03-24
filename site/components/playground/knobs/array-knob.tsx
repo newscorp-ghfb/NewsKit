@@ -106,7 +106,9 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
 
   const update: UpdateFunction = (index, key) => newValue => {
     const newValues = [...values];
-    newValues[index] = key ? {...values[index], [key]: newValue} : newValue;
+    newValues[index] = key
+      ? {...(values[index] as object), [key]: newValue}
+      : newValue;
     onChange(newValues);
   };
 

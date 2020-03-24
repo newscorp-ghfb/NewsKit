@@ -7,6 +7,7 @@ import {
   ArticleContent,
   P,
   TagList,
+  TagSize,
   Grid,
   Cell,
   createTheme,
@@ -100,6 +101,8 @@ const Article: React.FC = () => (
             <AuthorContainer>
               <AuthorImageContainer>
                 <StyledImage
+                  aspectHeight={414}
+                  aspectWidth={736}
                   src="https://via.placeholder.com/736x414"
                   alt="Author image"
                 />
@@ -187,8 +190,7 @@ const Article: React.FC = () => (
           <Cell xs={12}>
             <TagListContainer>
               <TagList
-                $size="small"
-                $shape="semiRounded"
+                $size={TagSize.Small}
                 $spacing="sizing040"
                 tagData={[
                   {

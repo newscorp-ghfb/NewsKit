@@ -10,9 +10,8 @@ interface Props {
 }
 
 export default class MyDocument extends Document<Props> {
-  static getInitialProps(ctx: DocumentContext) {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const {html} = ctx.renderPage() as any;
+  static async getInitialProps(ctx: DocumentContext) {
+    const {html} = await ctx.renderPage();
     return {
       html,
       production: process.env.NODE_ENV === 'production',
