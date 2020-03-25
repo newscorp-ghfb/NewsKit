@@ -178,4 +178,27 @@ describe('skippable audio player', () => {
         });
     });
   });
+
+  it('should go to beginning if current time is bigger than 5', () => {
+    cy.get('[data-testid="audio-player-skip-previous"]').as('skipPrevious');
+    cy.get('[data-testid="audio-player-forward"]').as('forward');
+    cy.get('[data-testid="audio-slider"] [data-testid="min-label"]').as(
+      'currentTime',
+    );
+
+    cy.get('@skipPrevious').should('be.disabled');
+
+    cy.get('@forward')
+      .click()
+      .then(() => {
+        cy.get('@currentTime').should('have.text', '00:10');
+        cy.get('@skipPrevious').should('not.be.disabled');
+        cy.get('@skipPrevious')
+          .click()
+          .then(() => {
+            cy.get('@currentTime').should('have.text', '00:00');
+            cy.get('@skipPrevious').should('be.disabled');
+          });
+      });
+  });
 });

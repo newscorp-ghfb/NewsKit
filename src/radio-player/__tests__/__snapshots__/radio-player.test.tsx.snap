@@ -8,7 +8,7 @@ exports[`Radio Player default player 1`] = `
   margin: 0 auto;
 }
 
-.emotion-66 {
+.emotion-72 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -25,25 +25,25 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen {
-  .emotion-66 {
+  .emotion-72 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-66 {
+  .emotion-72 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-66 {
+  .emotion-72 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-66 {
+  .emotion-72 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -550,7 +550,7 @@ exports[`Radio Player default player 1`] = `
   color: #535353;
 }
 
-.emotion-64 {
+.emotion-70 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -780,7 +780,7 @@ exports[`Radio Player default player 1`] = `
   margin-left: 8px;
 }
 
-.emotion-61 {
+.emotion-67 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -801,8 +801,28 @@ exports[`Radio Player default player 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.emotion-66 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   margin-left: calc(-12px/2);
   margin-right: calc(-12px/2);
+  min-width: 316px;
 }
 
 .emotion-50 {
@@ -887,7 +907,7 @@ exports[`Radio Player default player 1`] = `
   display: inline-block;
 }
 
-.emotion-54 {
+.emotion-59 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -922,40 +942,40 @@ exports[`Radio Player default player 1`] = `
   height: 64px;
 }
 
-.emotion-54:disabled {
+.emotion-59:disabled {
   cursor: not-allowed;
 }
 
-.emotion-54 svg {
+.emotion-59 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-54:hover:not(:disabled) {
+.emotion-59:hover:not(:disabled) {
   background-color: #02509B;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
-.emotion-54:active:not(:disabled) {
+.emotion-59:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-54:disabled {
+.emotion-59:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
 
-.emotion-54:disabled svg {
+.emotion-59:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-54 svg {
+.emotion-59 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-62 {
+.emotion-68 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -978,7 +998,7 @@ exports[`Radio Player default player 1`] = `
     class="emotion-21"
   >
     <div
-      class="emotion-66"
+      class="emotion-72"
     >
       <audio
         autoplay=""
@@ -1142,7 +1162,7 @@ exports[`Radio Player default player 1`] = `
         class="emotion-23"
       >
         <div
-          class="emotion-64"
+          class="emotion-70"
         >
           <div
             class="emotion-45"
@@ -1241,109 +1261,147 @@ exports[`Radio Player default player 1`] = `
             </div>
           </div>
           <div
-            class="emotion-61"
+            class="emotion-67"
           >
             <div
-              class="emotion-50"
+              class="emotion-66"
             >
-              <button
-                class="emotion-49"
-                data-testid="audio-player-backward"
-                type="button"
+              <div
+                class="emotion-50"
               >
-                <div
-                  class="emotion-34"
+                <button
+                  class="emotion-49"
+                  data-testid="audio-player-skip-previous"
+                  disabled=""
+                  type="button"
                 >
                   <div
-                    class="emotion-33"
+                    class="emotion-34"
                   >
-                    <svg
-                      class="emotion-46"
-                      viewBox="0 0 24 24"
+                    <div
+                      class="emotion-33"
                     >
-                      <title>
-                        Replay10 icon
-                      </title>
-                      <path
-                        d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
-                      />
-                    </svg>
+                      <svg
+                        class="emotion-46"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          SkipPrevious icon
+                        </title>
+                        <path
+                          d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                </div>
-              </button>
-            </div>
-            <div
-              class="emotion-50"
-            >
-              <button
-                aria-pressed="false"
-                class="emotion-54"
-                data-testid="audio-player-play-button"
-                type="button"
+                </button>
+              </div>
+              <div
+                class="emotion-50"
               >
-                <div
-                  class="emotion-34"
+                <button
+                  class="emotion-49"
+                  data-testid="audio-player-backward"
+                  type="button"
                 >
                   <div
-                    class="emotion-33"
+                    class="emotion-34"
                   >
-                    <svg
-                      class="emotion-46"
-                      viewBox="0 0 24 24"
+                    <div
+                      class="emotion-33"
                     >
-                      <title>
-                        Play
-                      </title>
-                      <polygon
-                        points="8 5 8 19 19 12"
-                      />
-                    </svg>
+                      <svg
+                        class="emotion-46"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          Replay10 icon
+                        </title>
+                        <path
+                          d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                </div>
-              </button>
-            </div>
-            <div
-              class="emotion-50"
-            >
-              <button
-                class="emotion-49"
-                data-testid="audio-player-forward"
-                type="button"
+                </button>
+              </div>
+              <div
+                class="emotion-50"
               >
-                <div
-                  class="emotion-34"
+                <button
+                  aria-pressed="false"
+                  class="emotion-59"
+                  data-testid="audio-player-play-button"
+                  type="button"
                 >
                   <div
-                    class="emotion-33"
+                    class="emotion-34"
                   >
-                    <svg
-                      class="emotion-46"
-                      viewBox="0 0 24 24"
+                    <div
+                      class="emotion-33"
                     >
-                      <title>
-                        Forward10 icon
-                      </title>
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
-                      />
-                      <path
-                        d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
-                      />
-                    </svg>
+                      <svg
+                        class="emotion-46"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          Play
+                        </title>
+                        <polygon
+                          points="8 5 8 19 19 12"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                </div>
-              </button>
+                </button>
+              </div>
+              <div
+                class="emotion-50"
+              >
+                <button
+                  class="emotion-49"
+                  data-testid="audio-player-forward"
+                  type="button"
+                >
+                  <div
+                    class="emotion-34"
+                  >
+                    <div
+                      class="emotion-33"
+                    >
+                      <svg
+                        class="emotion-46"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          Forward10 icon
+                        </title>
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+                        />
+                        <path
+                          d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </div>
             </div>
           </div>
           <div
             class="emotion-45"
           >
             <div
-              class="emotion-62"
+              class="emotion-68"
             />
           </div>
         </div>
@@ -1361,7 +1419,7 @@ exports[`Radio Player live player 1`] = `
   margin: 0 auto;
 }
 
-.emotion-74 {
+.emotion-75 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -1378,25 +1436,25 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen {
-  .emotion-74 {
+  .emotion-75 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-74 {
+  .emotion-75 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-74 {
+  .emotion-75 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-74 {
+  .emotion-75 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -1817,7 +1875,7 @@ exports[`Radio Player live player 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-72 {
+.emotion-73 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2047,7 +2105,7 @@ exports[`Radio Player live player 1`] = `
   margin-left: 8px;
 }
 
-.emotion-69 {
+.emotion-70 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2068,8 +2126,6 @@ exports[`Radio Player live player 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: calc(-12px/2);
-  margin-right: calc(-12px/2);
 }
 
 .emotion-68 {
@@ -2155,7 +2211,7 @@ exports[`Radio Player live player 1`] = `
   height: 32px;
 }
 
-.emotion-70 {
+.emotion-71 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2437,11 +2493,33 @@ exports[`Radio Player live player 1`] = `
   width: 100%;
 }
 
+.emotion-69 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-12px/2);
+  margin-right: calc(-12px/2);
+  min-width: 316px;
+}
+
 <div
     class="emotion-47"
   >
     <div
-      class="emotion-74"
+      class="emotion-75"
     >
       <audio
         autoplay=""
@@ -2696,7 +2774,7 @@ exports[`Radio Player live player 1`] = `
         class="emotion-49"
       >
         <div
-          class="emotion-72"
+          class="emotion-73"
         >
           <div
             class="emotion-63"
@@ -2795,44 +2873,48 @@ exports[`Radio Player live player 1`] = `
             </div>
           </div>
           <div
-            class="emotion-69"
+            class="emotion-70"
           >
             <div
-              class="emotion-68"
+              class="emotion-69"
             >
-              <button
-                aria-pressed="false"
-                class="emotion-67"
-                data-testid="audio-player-play-button"
-                type="button"
+              <div
+                class="emotion-68"
               >
-                <div
-                  class="emotion-52"
+                <button
+                  aria-pressed="false"
+                  class="emotion-67"
+                  data-testid="audio-player-play-button"
+                  type="button"
                 >
                   <div
-                    class="emotion-51"
+                    class="emotion-52"
                   >
-                    <svg
-                      class="emotion-64"
-                      viewBox="0 0 24 24"
+                    <div
+                      class="emotion-51"
                     >
-                      <title>
-                        Play
-                      </title>
-                      <polygon
-                        points="8 5 8 19 19 12"
-                      />
-                    </svg>
+                      <svg
+                        class="emotion-64"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          Play
+                        </title>
+                        <polygon
+                          points="8 5 8 19 19 12"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                </div>
-              </button>
+                </button>
+              </div>
             </div>
           </div>
           <div
             class="emotion-63"
           >
             <div
-              class="emotion-70"
+              class="emotion-71"
             />
           </div>
         </div>
@@ -2850,7 +2932,7 @@ exports[`Radio Player player with popout link 1`] = `
   margin: 0 auto;
 }
 
-.emotion-82 {
+.emotion-88 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -2867,25 +2949,25 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 @media screen {
-  .emotion-82 {
+  .emotion-88 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-82 {
+  .emotion-88 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-82 {
+  .emotion-88 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-82 {
+  .emotion-88 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -3392,7 +3474,7 @@ exports[`Radio Player player with popout link 1`] = `
   color: #535353;
 }
 
-.emotion-80 {
+.emotion-86 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3622,7 +3704,7 @@ exports[`Radio Player player with popout link 1`] = `
   margin-left: 8px;
 }
 
-.emotion-77 {
+.emotion-83 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3643,8 +3725,28 @@ exports[`Radio Player player with popout link 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.emotion-82 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   margin-left: calc(-12px/2);
   margin-right: calc(-12px/2);
+  min-width: 316px;
 }
 
 .emotion-66 {
@@ -3729,7 +3831,7 @@ exports[`Radio Player player with popout link 1`] = `
   display: inline-block;
 }
 
-.emotion-70 {
+.emotion-75 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -3764,40 +3866,40 @@ exports[`Radio Player player with popout link 1`] = `
   height: 64px;
 }
 
-.emotion-70:disabled {
+.emotion-75:disabled {
   cursor: not-allowed;
 }
 
-.emotion-70 svg {
+.emotion-75 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-70:hover:not(:disabled) {
+.emotion-75:hover:not(:disabled) {
   background-color: #02509B;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
-.emotion-70:active:not(:disabled) {
+.emotion-75:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-70:disabled {
+.emotion-75:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
 
-.emotion-70:disabled svg {
+.emotion-75:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-70 svg {
+.emotion-75 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-78 {
+.emotion-84 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3993,7 +4095,7 @@ exports[`Radio Player player with popout link 1`] = `
     class="emotion-37"
   >
     <div
-      class="emotion-82"
+      class="emotion-88"
     >
       <audio
         autoplay=""
@@ -4252,7 +4354,7 @@ exports[`Radio Player player with popout link 1`] = `
         class="emotion-39"
       >
         <div
-          class="emotion-80"
+          class="emotion-86"
         >
           <div
             class="emotion-61"
@@ -4351,109 +4453,147 @@ exports[`Radio Player player with popout link 1`] = `
             </div>
           </div>
           <div
-            class="emotion-77"
+            class="emotion-83"
           >
             <div
-              class="emotion-66"
+              class="emotion-82"
             >
-              <button
-                class="emotion-65"
-                data-testid="audio-player-backward"
-                type="button"
+              <div
+                class="emotion-66"
               >
-                <div
-                  class="emotion-50"
+                <button
+                  class="emotion-65"
+                  data-testid="audio-player-skip-previous"
+                  disabled=""
+                  type="button"
                 >
                   <div
-                    class="emotion-49"
+                    class="emotion-50"
                   >
-                    <svg
-                      class="emotion-62"
-                      viewBox="0 0 24 24"
+                    <div
+                      class="emotion-49"
                     >
-                      <title>
-                        Replay10 icon
-                      </title>
-                      <path
-                        d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
-                      />
-                    </svg>
+                      <svg
+                        class="emotion-62"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          SkipPrevious icon
+                        </title>
+                        <path
+                          d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                </div>
-              </button>
-            </div>
-            <div
-              class="emotion-66"
-            >
-              <button
-                aria-pressed="false"
-                class="emotion-70"
-                data-testid="audio-player-play-button"
-                type="button"
+                </button>
+              </div>
+              <div
+                class="emotion-66"
               >
-                <div
-                  class="emotion-50"
+                <button
+                  class="emotion-65"
+                  data-testid="audio-player-backward"
+                  type="button"
                 >
                   <div
-                    class="emotion-49"
+                    class="emotion-50"
                   >
-                    <svg
-                      class="emotion-62"
-                      viewBox="0 0 24 24"
+                    <div
+                      class="emotion-49"
                     >
-                      <title>
-                        Play
-                      </title>
-                      <polygon
-                        points="8 5 8 19 19 12"
-                      />
-                    </svg>
+                      <svg
+                        class="emotion-62"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          Replay10 icon
+                        </title>
+                        <path
+                          d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                </div>
-              </button>
-            </div>
-            <div
-              class="emotion-66"
-            >
-              <button
-                class="emotion-65"
-                data-testid="audio-player-forward"
-                type="button"
+                </button>
+              </div>
+              <div
+                class="emotion-66"
               >
-                <div
-                  class="emotion-50"
+                <button
+                  aria-pressed="false"
+                  class="emotion-75"
+                  data-testid="audio-player-play-button"
+                  type="button"
                 >
                   <div
-                    class="emotion-49"
+                    class="emotion-50"
                   >
-                    <svg
-                      class="emotion-62"
-                      viewBox="0 0 24 24"
+                    <div
+                      class="emotion-49"
                     >
-                      <title>
-                        Forward10 icon
-                      </title>
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
-                      />
-                      <path
-                        d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
-                      />
-                    </svg>
+                      <svg
+                        class="emotion-62"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          Play
+                        </title>
+                        <polygon
+                          points="8 5 8 19 19 12"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                </div>
-              </button>
+                </button>
+              </div>
+              <div
+                class="emotion-66"
+              >
+                <button
+                  class="emotion-65"
+                  data-testid="audio-player-forward"
+                  type="button"
+                >
+                  <div
+                    class="emotion-50"
+                  >
+                    <div
+                      class="emotion-49"
+                    >
+                      <svg
+                        class="emotion-62"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          Forward10 icon
+                        </title>
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+                        />
+                        <path
+                          d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </div>
             </div>
           </div>
           <div
             class="emotion-61"
           >
             <div
-              class="emotion-78"
+              class="emotion-84"
             />
           </div>
         </div>
@@ -4471,7 +4611,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin: 0 auto;
 }
 
-.emotion-96 {
+.emotion-102 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -4488,25 +4628,25 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen {
-  .emotion-96 {
+  .emotion-102 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-96 {
+  .emotion-102 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-96 {
+  .emotion-102 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-96 {
+  .emotion-102 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -5013,7 +5153,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   color: #535353;
 }
 
-.emotion-94 {
+.emotion-100 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5243,7 +5383,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin-left: 8px;
 }
 
-.emotion-91 {
+.emotion-97 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5264,8 +5404,28 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.emotion-96 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   margin-left: calc(-12px/2);
   margin-right: calc(-12px/2);
+  min-width: 316px;
 }
 
 .emotion-80 {
@@ -5350,7 +5510,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   display: inline-block;
 }
 
-.emotion-84 {
+.emotion-89 {
   display: inline-block;
   position: relative;
   width: auto;
@@ -5385,40 +5545,40 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   height: 64px;
 }
 
-.emotion-84:disabled {
+.emotion-89:disabled {
   cursor: not-allowed;
 }
 
-.emotion-84 svg {
+.emotion-89 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-84:hover:not(:disabled) {
+.emotion-89:hover:not(:disabled) {
   background-color: #02509B;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
-.emotion-84:active:not(:disabled) {
+.emotion-89:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-84:disabled {
+.emotion-89:disabled {
   background-color: #f0f0f0;
   color: #9c9c9c;
 }
 
-.emotion-84:disabled svg {
+.emotion-89:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-84 svg {
+.emotion-89 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-92 {
+.emotion-98 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5704,7 +5864,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
     class="emotion-51"
   >
     <div
-      class="emotion-96"
+      class="emotion-102"
     >
       <audio
         autoplay=""
@@ -6040,7 +6200,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
         class="emotion-53"
       >
         <div
-          class="emotion-94"
+          class="emotion-100"
         >
           <div
             class="emotion-75"
@@ -6139,109 +6299,147 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
             </div>
           </div>
           <div
-            class="emotion-91"
+            class="emotion-97"
           >
             <div
-              class="emotion-80"
+              class="emotion-96"
             >
-              <button
-                class="emotion-79"
-                data-testid="audio-player-backward"
-                type="button"
+              <div
+                class="emotion-80"
               >
-                <div
-                  class="emotion-64"
+                <button
+                  class="emotion-79"
+                  data-testid="audio-player-skip-previous"
+                  disabled=""
+                  type="button"
                 >
                   <div
-                    class="emotion-63"
+                    class="emotion-64"
                   >
-                    <svg
-                      class="emotion-8"
-                      viewBox="0 0 24 24"
+                    <div
+                      class="emotion-63"
                     >
-                      <title>
-                        Replay10 icon
-                      </title>
-                      <path
-                        d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
-                      />
-                    </svg>
+                      <svg
+                        class="emotion-8"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          SkipPrevious icon
+                        </title>
+                        <path
+                          d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                </div>
-              </button>
-            </div>
-            <div
-              class="emotion-80"
-            >
-              <button
-                aria-pressed="false"
-                class="emotion-84"
-                data-testid="audio-player-play-button"
-                type="button"
+                </button>
+              </div>
+              <div
+                class="emotion-80"
               >
-                <div
-                  class="emotion-64"
+                <button
+                  class="emotion-79"
+                  data-testid="audio-player-backward"
+                  type="button"
                 >
                   <div
-                    class="emotion-63"
+                    class="emotion-64"
                   >
-                    <svg
-                      class="emotion-8"
-                      viewBox="0 0 24 24"
+                    <div
+                      class="emotion-63"
                     >
-                      <title>
-                        Play
-                      </title>
-                      <polygon
-                        points="8 5 8 19 19 12"
-                      />
-                    </svg>
+                      <svg
+                        class="emotion-8"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          Replay10 icon
+                        </title>
+                        <path
+                          d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                </div>
-              </button>
-            </div>
-            <div
-              class="emotion-80"
-            >
-              <button
-                class="emotion-79"
-                data-testid="audio-player-forward"
-                type="button"
+                </button>
+              </div>
+              <div
+                class="emotion-80"
               >
-                <div
-                  class="emotion-64"
+                <button
+                  aria-pressed="false"
+                  class="emotion-89"
+                  data-testid="audio-player-play-button"
+                  type="button"
                 >
                   <div
-                    class="emotion-63"
+                    class="emotion-64"
                   >
-                    <svg
-                      class="emotion-8"
-                      viewBox="0 0 24 24"
+                    <div
+                      class="emotion-63"
                     >
-                      <title>
-                        Forward10 icon
-                      </title>
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
-                      />
-                      <path
-                        d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
-                      />
-                    </svg>
+                      <svg
+                        class="emotion-8"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          Play
+                        </title>
+                        <polygon
+                          points="8 5 8 19 19 12"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                </div>
-              </button>
+                </button>
+              </div>
+              <div
+                class="emotion-80"
+              >
+                <button
+                  class="emotion-79"
+                  data-testid="audio-player-forward"
+                  type="button"
+                >
+                  <div
+                    class="emotion-64"
+                  >
+                    <div
+                      class="emotion-63"
+                    >
+                      <svg
+                        class="emotion-8"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>
+                          Forward10 icon
+                        </title>
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+                        />
+                        <path
+                          d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </div>
             </div>
           </div>
           <div
             class="emotion-75"
           >
             <div
-              class="emotion-92"
+              class="emotion-98"
             />
           </div>
         </div>

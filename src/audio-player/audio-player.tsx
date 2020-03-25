@@ -57,7 +57,7 @@ const InternalAudioPlayer: React.FC<InstrumentedAudioPlayerProps> = props => {
     onNextTrack,
     disableNextTrack,
     onPreviousTrack,
-    disablePreviousTrack,
+    disablePreviousTrack = true,
     popoutHref,
     $volumePresets,
     $trackPresets,
@@ -103,6 +103,10 @@ const InternalAudioPlayer: React.FC<InstrumentedAudioPlayerProps> = props => {
   const [trackPositionArr, setTrackPosition] = useState([0]);
   const [isPlaying, setPlayState] = useState(false);
   const [buffered, setBuffered] = useState<TimeRanges>();
+
+  const [isPrevTrackBtnDisabled, setIsPrevTrackBtnDisabled] = useState(
+    disablePreviousTrack,
+  );
 
   const [trackPosition] = trackPositionArr;
   const trackPositionRef = useRef(0);
@@ -265,6 +269,11 @@ const InternalAudioPlayer: React.FC<InstrumentedAudioPlayerProps> = props => {
       );
       fireEvent(trackingInformation);
     }
+    if (trackPositionRef.current > 5) {
+      setIsPrevTrackBtnDisabled(false);
+    } else {
+      setIsPrevTrackBtnDisabled(disablePreviousTrack);
+    }
     // Used to reset newTime after the player changes time. Used to fix issues regarding consecutive audio time change to the same value
     if (newTime !== -1) {
       setNewPlayerTime(-1);
@@ -300,9 +309,10 @@ const InternalAudioPlayer: React.FC<InstrumentedAudioPlayerProps> = props => {
   const onClickPrevious = useCallback(() => {
     if (trackPositionRef.current > 5) {
       onChangeAudioTime(0);
-    } else {
-      onPreviousTrack!();
+      return;
     }
+
+    onPreviousTrack!();
   }, [onPreviousTrack, onChangeAudioTime]);
 
   const onClickNext = useCallback(() => {
@@ -457,8 +467,9 @@ const InternalAudioPlayer: React.FC<InstrumentedAudioPlayerProps> = props => {
           <ControlPanel
             onNextTrack={onNextTrack ? onClickNext : undefined}
             disableNextTrack={disableNextTrack}
-            onPreviousTrack={onPreviousTrack ? onClickPrevious : undefined}
-            disablePreviousTrack={disablePreviousTrack}
+            onPreviousTrack={onClickPrevious}
+            disablePreviousTrack={isPrevTrackBtnDisabled}
+            live={live}
             showControls={showControls}
             isPlaying={isPlaying}
             onClickBackward={onClickBackward}

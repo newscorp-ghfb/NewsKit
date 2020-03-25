@@ -58,7 +58,12 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
     .
   </Prop>
   <Prop name="onPreviousTrack" type="function">
-    Will display the previous track button, provided function is executed on click.
+    This function defines the callback of the previous track button
+    for the first 5 secodns of the track. 
+    If onPreviousTrack is not provided, the previous track button
+    will be disabled for the first 5 seconds of the track. <b>After
+    the first 5 seconds the button's functionality is overridden
+    to go to the start of the track.</b>
   </Prop>
   <Prop name="onNextTrack" type="function">
     Will display the next track button, provided function is executed on click.
@@ -176,7 +181,7 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       name: 'Disable Previous Track',
       propName: 'disablePreviousTrack',
       type: 'boolean',
-      value: false,
+      value: true,
     },
     {
       name: 'Disable Next Track',

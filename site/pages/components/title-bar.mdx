@@ -175,7 +175,8 @@ Title bar has a number of props to facilitate a variety of uses:
     The heading tag used for the title. It should be one of the Heading Classes from fountations.
   </Prop>
   <Prop name="actionItem" type="React.ComponentType">
-    An action item, most commonly a button, related to the title.
+    An action item, most commonly a button or a link, related to the title. 
+    The actionItem is <b>hidden for extra small viewports</b> (less than 480px).
   </Prop>
   <Prop name="$titleAlignment" type="TitleAlignment" enum={TitleAlignment} default={TitleAlignment.Left}>
     The alignment of the title.
@@ -199,7 +200,6 @@ The recommended placement of items in a Title Bar is:
 - Place a title on the left or center
 - Place contextual actions to the right
 
-![Exploded isometric view](image.url 'Exploded isometric view')
 
 1. Surface
 2. Title
@@ -208,31 +208,22 @@ The recommended placement of items in a Title Bar is:
 ### Container
 
 The container takes up the full width of the grid area that's specified for example 12 column, 6 column etc.
-![Images here](image.url 'Images here')
 
 A border can be applied to the surface (a combination of top, bottom, top and bottom).
 
-![Showing border](image.url 'Showing border')
 
 ### Title
 
 The title should provide context for the content that sits below the title bar.
 
-![Do - If title text is long, wrap the title to two lines.](image.url 'Do - If title text is long, wrap the title to two lines.')
-![Don’t truncate text, hiding the full title may cause misunderstanding.](image.url 'Don’t truncate text, hiding the full title may cause misunderstanding.')
-![Don’t shrink text to fit on a single line.](image.url 'Don’t shrink text to fit on a single line.')
 
 The title can be aligned to the left or the center.
 
-![Left title](image.url 'Left title')
-![Center title](image.url 'Center title')
 
 ### Action Items
 
 Action items can include a button or a link. They are positioned to the right of the container and they vertically align to the position of the title.
 
-![Example with buttons](image.url 'Example with buttons')
-![Don’t change the vertical position of the actions](image.url 'Don’t change the vertical position of the actions')
 
 ## Behavior
 
@@ -244,7 +235,6 @@ By default the action item is hidden on small breakpoints (xs and sm). This is t
 
 Your title should be 3:1 colour ratio against a the background colour to be AA WCAG compliant.
 
-![Don't put x colour on x colour](image.url "Don't put x colour on x colour")
 
 ## SEO
 

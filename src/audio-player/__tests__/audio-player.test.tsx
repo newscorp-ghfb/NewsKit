@@ -112,7 +112,7 @@ describe('Audio Player', () => {
   test('recorded player renders and behaves as expected', () => {
     const onNextTrack = jest.fn();
     const onPreviousTrack = jest.fn();
-    const {asFragment, getByTestId} = renderWithTheme(AudioPlayer, {
+    const {asFragment, getByTestId, rerender} = renderWithTheme(AudioPlayer, {
       ...recordedAudioProps,
       onNextTrack,
       onPreviousTrack,
@@ -163,10 +163,6 @@ describe('Audio Player', () => {
         code: 39,
       });
     }
-    // Track position 5 or less, should go to previous track
-    fireEvent.click(getByTestId('audio-player-skip-previous'));
-    expect(onPreviousTrack).toHaveBeenCalled();
-
     // Pause and move slider forward 10 seconds
     fireEvent.click(getByTestId('audio-player-play-button'));
     fireEvent.keyDown(getByTestId('audio-slider-thumb'), {
@@ -191,6 +187,20 @@ describe('Audio Player', () => {
 
     // Track position greater than 5, previous track button should reset position back to 0
     onPreviousTrack.mockReset();
+    act(() => {
+      mockAudioElementFunctions.onTimeUpdate({
+        target: {
+          currentTime: 15,
+        },
+      });
+      rerender(
+        <AudioPlayer
+          {...recordedAudioProps}
+          onNextTrack={onNextTrack}
+          onPreviousTrack={onPreviousTrack}
+        />,
+      );
+    });
     fireEvent.click(getByTestId('audio-player-skip-previous'));
     expect(onPreviousTrack).not.toHaveBeenCalled();
     expect(audioElement).toMatchInlineSnapshot(`
@@ -317,7 +327,6 @@ describe('Audio Player', () => {
     // Reset time to 0 and move backwards - should not pass invalid time, should pass min time 0
     fireEvent.click(getByTestId('audio-player-skip-previous'));
     fireEvent.click(getByTestId('audio-player-backward'));
-    fireEvent.play(audioElement);
     expect(audioElement).toMatchInlineSnapshot(`
             <audio
               data-testid="mock-audio-element"
@@ -326,7 +335,7 @@ describe('Audio Player', () => {
               "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
               "captionSrc": "captions.vtt",
               "title": "The Breakfast Show with Giles Coren",
-              "playing": true,
+              "playing": false,
               "volume": 0.1,
               "newTime": 0,
               "dataTestId": "audio-player"
@@ -338,7 +347,6 @@ describe('Audio Player', () => {
     for (let i = 0; i < 7; i += 1) {
       fireEvent.click(getByTestId('audio-player-forward'));
     }
-    fireEvent.play(audioElement);
     expect(audioElement).toMatchInlineSnapshot(`
             <audio
               data-testid="mock-audio-element"
@@ -347,13 +355,28 @@ describe('Audio Player', () => {
               "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
               "captionSrc": "captions.vtt",
               "title": "The Breakfast Show with Giles Coren",
-              "playing": true,
+              "playing": false,
               "volume": 0.1,
               "newTime": 60,
               "dataTestId": "audio-player"
             }
             </audio>
         `);
+  });
+
+  test('previous track button should call onPreviousTrack when called in the first 5 seconds', () => {
+    const onPreviousTrack = jest.fn();
+    const {getByTestId} = renderWithTheme(AudioPlayer, {
+      ...recordedAudioProps,
+      disablePreviousTrack: false,
+      onPreviousTrack,
+    });
+    const audioElement = getByTestId('mock-audio-element') as HTMLAudioElement;
+
+    expect(audioElement.currentTime).toEqual(0);
+    fireEvent.click(getByTestId('audio-player-skip-previous'));
+
+    expect(onPreviousTrack).toHaveBeenCalled();
   });
 
   describe('Instrumentation tests should', () => {
@@ -556,5 +579,23 @@ describe('Audio Player', () => {
     fireEvent.timeUpdate(audioElement);
 
     expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
+  });
+
+  test('should not raise event if we call onPlay but the audio player is already playing', () => {
+    const fireEventSpy = jest.fn();
+    const {getByTestId} = renderWithImplementation(
+      AudioPlayer,
+      recordedAudioProps,
+      fireEventSpy,
+    );
+    const audioElement = getByTestId('mock-audio-element') as HTMLAudioElement;
+
+    // isPlaying state is false, so here we fireEventSpy will be called once
+    fireEvent.play(audioElement);
+    // isPlaying state will be true now, so we fire onPlay again
+    //  and then expect fireEventSpy not to have been called second time
+    fireEvent.play(audioElement);
+
+    expect(fireEventSpy).toHaveBeenCalledTimes(1);
   });
 });
