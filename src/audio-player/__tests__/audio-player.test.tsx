@@ -546,7 +546,7 @@ describe('Audio Player', () => {
       ...recordedTrackingOutputObject,
       originator: 'audio-player-audio',
       trigger: 'pulse',
-      media_duration: '00:00',
+      media_duration: '01:00',
     };
 
     const audioElement = getByTestId('mock-audio-element') as HTMLAudioElement;

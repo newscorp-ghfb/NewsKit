@@ -166,8 +166,10 @@ const InternalAudioPlayer: React.FC<InstrumentedAudioPlayerProps> = props => {
   /**
    * audio src duration handler
    */
-  const onDurationChange: EventListener = event =>
+  const onDurationChange: EventListener = event => {
     setDuration(event.target.duration);
+    setBuffered(event.target.buffered);
+  };
 
   /**
    * audio playback handlers
