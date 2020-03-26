@@ -8,13 +8,7 @@ You can pass the `--watch` parameter to continuously run the relevant tests.
 
 ## Running the Cypress component tests locally
 
-It is your responsibility to also add functional tests and visual tests (TBC) when writing a new component or making changes to existing components.
-
-To build the assets & start serving them on port <http://localhost:8082,> run `docker-compose build e2e`
-
-If you want to run the e2e tests and generate new snapshots, run `docker-compose up e2e`
-
-To update the baseline snapshots, please delete the relevant old baseline images and run `docker-compose up e2e` to generate new snapshots.
+It is your responsibility to also add Cypress functional tests and visual tests when writing a new component or making changes to existing components.
 
 To ensure that we have accessibility automated tests coverage, when creating a new component, there should be a test for checking that it passes basic accessibility checks. This can be done by calling the following Cypress commands:
 
@@ -36,6 +30,7 @@ Components
 NewsKit Site changes
 
 * [ ] Does it render correctly on IE11?
+* [ ] Is the feature's functionality working as expected on other browsers such as Safari, Firefox and IE11?
 * [ ] Does it have accessibility errors reported by WAVE?
 * [ ] Are there new console errors reported?
 * [ ] If visual test is not added, does it render OK on different browsers and mobile viewports? (Safari, Firefox, small mobile viewport, tablet)

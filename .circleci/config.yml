@@ -244,7 +244,7 @@ jobs:
       - store_test_results:
           path: unit-test-results
 
-  test_visual_comps: &test_visual_comps
+  test_visual_comps:
     working_directory: ~/project
     docker:
       - image: circleci/node:10.16
@@ -277,12 +277,6 @@ jobs:
             export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}
             export APPLITOOLS_DONT_CLOSE_BATCHES=true
             make comps_visual_test
-
-  test_visual_comps_pr:
-    <<: *test_visual_comps
-
-  test_visual_comps_develop:
-    <<: *test_visual_comps
   
   test_visual_docs:
     working_directory: ~/project
@@ -567,21 +561,16 @@ workflows:
       - test_unit:
           <<: *ignore_release
           <<: *require_dep
-      - run_visual_comps_pr:
+      - run_visual_comps:
           <<: *only_pr
           type: approval
           requires:
             - build_storybook
-      - test_visual_comps_pr:
+      - test_visual_comps:
           <<: *only_pr
           context: ncu-product-platforms-context
           requires:
-            - run_visual_comps_pr
-      - test_visual_comps_develop:
-          <<: *only_develop
-          context: ncu-product-platforms-context
-          requires:
-            - build_storybook
+            - run_visual_comps
       - test_e2e_comps:
           <<: *ignore_release
           context: ncu-product-platforms-context
