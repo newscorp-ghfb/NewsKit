@@ -13,7 +13,7 @@ const extendedWindow: ExtendedWindow | null =
   typeof window !== 'undefined' ? ((window as Window) as ExtendedWindow) : null;
 
 export function sendEventToTealium(e: InstrumentationEvent) {
-  if (extendedWindow) {
+  if (extendedWindow && extendedWindow.utag) {
     return e.trigger === EventTrigger.Load
       ? extendedWindow.utag.view(e)
       : extendedWindow.utag.link(e);
