@@ -55,7 +55,6 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
   border-color: #0A68C1;
   border-width: 1px;
   border-radius: 50%;
-  outline: none;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;

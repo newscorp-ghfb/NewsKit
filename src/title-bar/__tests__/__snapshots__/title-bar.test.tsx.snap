@@ -63,7 +63,6 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   position: relative;
   width: auto;
   border: none;
-  outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

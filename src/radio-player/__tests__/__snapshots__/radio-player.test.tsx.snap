@@ -8,7 +8,7 @@ exports[`Radio Player default player 1`] = `
   margin: 0 auto;
 }
 
-.emotion-72 {
+.emotion-81 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -25,25 +25,25 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen {
-  .emotion-72 {
+  .emotion-81 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-72 {
+  .emotion-81 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-72 {
+  .emotion-81 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-72 {
+  .emotion-81 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -417,7 +417,54 @@ exports[`Radio Player default player 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-30 {
+.emotion-72 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-72 {
+    padding: 0 0px;
+    margin-top: 0px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-72 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-72 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-72 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+.emotion-71 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -427,108 +474,6 @@ exports[`Radio Player default player 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  position: relative;
-}
-
-.emotion-25 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  box-sizing: border-box;
-  background-color: #f0f0f0;
-  border-radius: 20rem;
-  margin: calc(16px/2 - 8px/2) calc(16px/2);
-  height: 8px;
-  width: 100%;
-}
-
-.emotion-24 {
-  background-color: #0A68C1;
-  border-color: #0A68C1;
-  border-width: 1px;
-  border-radius: 50%;
-  outline: none;
-  height: 16px;
-  width: 16px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.emotion-24 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-24:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-24:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-24:active:not(:disabled) svg {
-  fill: #535353;
-  color: #535353;
-}
-
-.emotion-24:disabled {
-  border-style: none;
-}
-
-.emotion-24:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-29 {
-  width: 100%;
-  margin-top: 12px;
-  padding: 0 calc(16px / 2);
-}
-
-.emotion-28 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -538,7 +483,219 @@ exports[`Radio Player default player 1`] = `
   justify-content: space-between;
 }
 
+.emotion-34 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-51 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-50 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-12px/2);
+  margin-right: calc(-12px/2);
+  min-width: 316px;
+}
+
+.emotion-29 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.emotion-28 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-27 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #0A68C1;
+  border-radius: 50%;
+  color: #FFFFFF;
+  min-height: 16px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 16px;
+  width: 64px;
+  height: 64px;
+}
+
+.emotion-27:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-27 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-27:hover:not(:disabled) {
+  background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
+}
+
+.emotion-27:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-27:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-27:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-27 svg {
+  width: 32px;
+  height: 32px;
+}
+
 .emotion-26 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-25 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-24 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-35 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.emotion-33 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #0A68C1;
+  border-radius: 50%;
+  min-height: 12px;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -547,59 +704,118 @@ exports[`Radio Player default player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #535353;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
 }
 
-.emotion-70 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+.emotion-33:disabled {
+  cursor: not-allowed;
 }
 
-.emotion-45 {
-  width: 100%;
-  max-width: 184px;
+.emotion-33 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-33:hover:not(:disabled) {
+  background-color: #e6f4ff;
+}
+
+.emotion-33:active:not(:disabled) {
+  background-color: #d5ebff;
+}
+
+.emotion-33:disabled {
+  color: #9c9c9c;
+  background-color: transparent;
+}
+
+.emotion-33:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-33 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-47 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.emotion-46 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-49 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 5;
+  -ms-flex-order: 5;
+  order: 5;
+}
+
+.emotion-48 {
+  -webkit-order: 5;
+  -ms-flex-order: 5;
+  order: 5;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-66 {
+  box-sizing: border-box;
+  width: calc( 184px + 24px );
   padding: 0 calc(24px / 2);
 }
 
 @media screen {
-  .emotion-45 {
+  .emotion-66 {
     display: none;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-45 {
+  .emotion-66 {
     display: none;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-45 {
+  .emotion-66 {
     display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-45 {
+  .emotion-66 {
     display: block;
   }
 }
 
-.emotion-44 {
+.emotion-65 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -624,7 +840,7 @@ exports[`Radio Player default player 1`] = `
   position: relative;
 }
 
-.emotion-36 {
+.emotion-57 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -636,12 +852,11 @@ exports[`Radio Player default player 1`] = `
   margin-right: 8px;
 }
 
-.emotion-35 {
+.emotion-56 {
   display: inline-block;
   position: relative;
   width: auto;
   border: none;
-  outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -672,39 +887,39 @@ exports[`Radio Player default player 1`] = `
   margin: 8px 0;
 }
 
-.emotion-35:disabled {
+.emotion-56:disabled {
   cursor: not-allowed;
 }
 
-.emotion-35 svg {
+.emotion-56 svg {
   fill: #0A68C1;
   color: #0A68C1;
 }
 
-.emotion-35:hover:not(:disabled) {
+.emotion-56:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-35:active:not(:disabled) {
+.emotion-56:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-35:disabled {
+.emotion-56:disabled {
   color: #9c9c9c;
   background-color: transparent;
 }
 
-.emotion-35:disabled svg {
+.emotion-56:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-35 svg {
+.emotion-56 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-35::before {
+.emotion-56::before {
   content: '';
   position: absolute;
   left: 0;
@@ -713,37 +928,7 @@ exports[`Radio Player default player 1`] = `
   height: 48px;
 }
 
-.emotion-34 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-33 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-32 {
+.emotion-53 {
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
@@ -751,7 +936,7 @@ exports[`Radio Player default player 1`] = `
   display: inline-block;
 }
 
-.emotion-38 {
+.emotion-59 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -768,7 +953,53 @@ exports[`Radio Player default player 1`] = `
   width: 100%;
 }
 
-.emotion-43 {
+.emotion-58 {
+  background-color: #0A68C1;
+  border-color: #0A68C1;
+  border-width: 1px;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-58 svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-58:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-58:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-58:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
+}
+
+.emotion-58:disabled {
+  border-style: none;
+}
+
+.emotion-58:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-64 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -778,201 +1009,6 @@ exports[`Radio Player default player 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-left: 8px;
-}
-
-.emotion-67 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.emotion-66 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: calc(-12px/2);
-  margin-right: calc(-12px/2);
-  min-width: 316px;
-}
-
-.emotion-50 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(12px/2);
-  margin-right: calc(12px/2);
-}
-
-.emotion-49 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  box-sizing: border-box;
-  background-color: transparent;
-  color: #0A68C1;
-  border-radius: 50%;
-  min-height: 12px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 12px;
-  width: 48px;
-  height: 48px;
-}
-
-.emotion-49:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-49 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-49:hover:not(:disabled) {
-  background-color: #e6f4ff;
-}
-
-.emotion-49:active:not(:disabled) {
-  background-color: #d5ebff;
-}
-
-.emotion-49:disabled {
-  color: #9c9c9c;
-  background-color: transparent;
-}
-
-.emotion-49:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-49 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-46 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  display: inline-block;
-}
-
-.emotion-59 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  border-radius: 50%;
-  color: #FFFFFF;
-  min-height: 16px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 16px;
-  width: 64px;
-  height: 64px;
-}
-
-.emotion-59:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-59 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-59:hover:not(:disabled) {
-  background-color: #02509B;
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
-}
-
-.emotion-59:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-59:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-59:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-59 svg {
-  width: 32px;
-  height: 32px;
 }
 
 .emotion-68 {
@@ -994,11 +1030,144 @@ exports[`Radio Player default player 1`] = `
   justify-content: flex-end;
 }
 
+.emotion-80 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-80 {
+    padding: 0 0px;
+    margin-top: 0px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-80 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-80 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-80 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+.emotion-79 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-74 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  border-radius: 20rem;
+  margin: calc(16px/2 - 8px/2) calc(16px/2);
+  height: 8px;
+  width: 100%;
+}
+
+.emotion-78 {
+  width: 100%;
+  margin-top: 12px;
+  padding: 0 calc(16px / 2);
+}
+
+.emotion-77 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-75 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #535353;
+}
+
 <div
     class="emotion-21"
   >
     <div
-      class="emotion-72"
+      class="emotion-81"
     >
       <audio
         autoplay=""
@@ -1111,14 +1280,312 @@ exports[`Radio Player default player 1`] = `
         </div>
       </div>
       <div
-        class="emotion-23"
+        class="emotion-72"
       >
         <div
-          class="emotion-30"
+          class="emotion-71"
+        >
+          <div
+            class="emotion-34"
+            order="2"
+          >
+            <div
+              class="emotion-51"
+            >
+              <div
+                class="emotion-50"
+              >
+                <div
+                  class="emotion-29"
+                  order="3"
+                >
+                  <div
+                    class="emotion-28"
+                    order="3"
+                  >
+                    <button
+                      aria-pressed="false"
+                      class="emotion-27"
+                      data-testid="audio-player-play-button"
+                      type="button"
+                    >
+                      <div
+                        class="emotion-26"
+                      >
+                        <div
+                          class="emotion-25"
+                        >
+                          <svg
+                            class="emotion-24"
+                            viewBox="0 0 24 24"
+                          >
+                            <title>
+                              Play
+                            </title>
+                            <polygon
+                              points="8 5 8 19 19 12"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="emotion-35"
+                  order="2"
+                >
+                  <div
+                    class="emotion-34"
+                    order="2"
+                  >
+                    <button
+                      class="emotion-33"
+                      data-testid="audio-player-backward"
+                      type="button"
+                    >
+                      <div
+                        class="emotion-26"
+                      >
+                        <div
+                          class="emotion-25"
+                        >
+                          <svg
+                            class="emotion-24"
+                            viewBox="0 0 24 24"
+                          >
+                            <title>
+                              Replay10 icon
+                            </title>
+                            <path
+                              d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="emotion-29"
+                  order="3"
+                >
+                  <div
+                    class="emotion-28"
+                    order="3"
+                  >
+                    <button
+                      class="emotion-33"
+                      data-testid="audio-player-forward"
+                      type="button"
+                    >
+                      <div
+                        class="emotion-26"
+                      >
+                        <div
+                          class="emotion-25"
+                        >
+                          <svg
+                            class="emotion-24"
+                            viewBox="0 0 24 24"
+                          >
+                            <title>
+                              Forward10 icon
+                            </title>
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            />
+                            <path
+                              d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+                            />
+                            <path
+                              d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="emotion-47"
+                  order="1"
+                >
+                  <div
+                    class="emotion-46"
+                    order="1"
+                  >
+                    <button
+                      class="emotion-33"
+                      data-testid="audio-player-skip-previous"
+                      disabled=""
+                      type="button"
+                    >
+                      <div
+                        class="emotion-26"
+                      >
+                        <div
+                          class="emotion-25"
+                        >
+                          <svg
+                            class="emotion-24"
+                            viewBox="0 0 24 24"
+                          >
+                            <title>
+                              SkipPrevious icon
+                            </title>
+                            <path
+                              d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="emotion-49"
+                  order="5"
+                >
+                  <div
+                    class="emotion-48"
+                    order="5"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-46"
+            order="1"
+          >
+            <div
+              class="emotion-66"
+            >
+              <div
+                class="emotion-65"
+                data-testid="volume-control"
+              >
+                <div
+                  class="emotion-57"
+                  data-testid="min-label"
+                >
+                  <button
+                    class="emotion-56"
+                    data-testid="mute-button"
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-26"
+                    >
+                      <div
+                        class="emotion-25"
+                      >
+                        <svg
+                          class="emotion-53"
+                          viewBox="0 0 24 24"
+                        >
+                          <title>
+                            Volume down
+                          </title>
+                          <path
+                            d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+                <div
+                  class="emotion-59"
+                  data-testid="volume-control-track"
+                  values="0.7"
+                >
+                  <div
+                    aria-label="Volume Control"
+                    aria-valuemax="1"
+                    aria-valuemin="0"
+                    aria-valuenow="0.7"
+                    class="emotion-58"
+                    data-testid="volume-control-thumb"
+                    draggable="false"
+                    role="slider"
+                    style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                    tabindex="0"
+                    values="0.7"
+                  />
+                </div>
+                <div
+                  class="emotion-64"
+                  data-testid="max-label"
+                >
+                  <button
+                    class="emotion-56"
+                    data-testid="volumeup-button"
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-26"
+                    >
+                      <div
+                        class="emotion-25"
+                      >
+                        <svg
+                          class="emotion-53"
+                          viewBox="0 0 24 24"
+                        >
+                          <title>
+                            Volume up
+                          </title>
+                          <path
+                            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-28"
+            order="3"
+          >
+            <div
+              class="emotion-66"
+            >
+              <div
+                class="emotion-68"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-80"
+      >
+        <div
+          class="emotion-79"
           data-testid="audio-slider"
         >
           <div
-            class="emotion-25"
+            class="emotion-74"
             data-testid="audio-slider-track"
             values="0"
           >
@@ -1127,7 +1594,7 @@ exports[`Radio Player default player 1`] = `
               aria-valuemax="1"
               aria-valuemin="0"
               aria-valuenow="0"
-              class="emotion-24"
+              class="emotion-58"
               data-testid="audio-slider-thumb"
               draggable="false"
               role="slider"
@@ -1137,272 +1604,24 @@ exports[`Radio Player default player 1`] = `
             />
           </div>
           <div
-            class="emotion-29"
+            class="emotion-78"
           >
             <div
-              class="emotion-28"
+              class="emotion-77"
             >
               <div
-                class="emotion-26"
+                class="emotion-75"
                 data-testid="min-label"
               >
                 00:00
               </div>
               <div
-                class="emotion-26"
+                class="emotion-75"
                 data-testid="max-label"
               >
                 00:00
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="emotion-23"
-      >
-        <div
-          class="emotion-70"
-        >
-          <div
-            class="emotion-45"
-          >
-            <div
-              class="emotion-44"
-              data-testid="volume-control"
-            >
-              <div
-                class="emotion-36"
-                data-testid="min-label"
-              >
-                <button
-                  class="emotion-35"
-                  data-testid="mute-button"
-                  type="button"
-                >
-                  <div
-                    class="emotion-34"
-                  >
-                    <div
-                      class="emotion-33"
-                    >
-                      <svg
-                        class="emotion-32"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          Volume down
-                        </title>
-                        <path
-                          d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-                        />
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-              <div
-                class="emotion-38"
-                data-testid="volume-control-track"
-                values="0.7"
-              >
-                <div
-                  aria-label="Volume Control"
-                  aria-valuemax="1"
-                  aria-valuemin="0"
-                  aria-valuenow="0.7"
-                  class="emotion-24"
-                  data-testid="volume-control-thumb"
-                  draggable="false"
-                  role="slider"
-                  style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                  tabindex="0"
-                  values="0.7"
-                />
-              </div>
-              <div
-                class="emotion-43"
-                data-testid="max-label"
-              >
-                <button
-                  class="emotion-35"
-                  data-testid="volumeup-button"
-                  type="button"
-                >
-                  <div
-                    class="emotion-34"
-                  >
-                    <div
-                      class="emotion-33"
-                    >
-                      <svg
-                        class="emotion-32"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          Volume up
-                        </title>
-                        <path
-                          d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                        />
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="emotion-67"
-          >
-            <div
-              class="emotion-66"
-            >
-              <div
-                class="emotion-50"
-              >
-                <button
-                  class="emotion-49"
-                  data-testid="audio-player-skip-previous"
-                  disabled=""
-                  type="button"
-                >
-                  <div
-                    class="emotion-34"
-                  >
-                    <div
-                      class="emotion-33"
-                    >
-                      <svg
-                        class="emotion-46"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          SkipPrevious icon
-                        </title>
-                        <path
-                          d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
-                        />
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-              <div
-                class="emotion-50"
-              >
-                <button
-                  class="emotion-49"
-                  data-testid="audio-player-backward"
-                  type="button"
-                >
-                  <div
-                    class="emotion-34"
-                  >
-                    <div
-                      class="emotion-33"
-                    >
-                      <svg
-                        class="emotion-46"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          Replay10 icon
-                        </title>
-                        <path
-                          d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-              <div
-                class="emotion-50"
-              >
-                <button
-                  aria-pressed="false"
-                  class="emotion-59"
-                  data-testid="audio-player-play-button"
-                  type="button"
-                >
-                  <div
-                    class="emotion-34"
-                  >
-                    <div
-                      class="emotion-33"
-                    >
-                      <svg
-                        class="emotion-46"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          Play
-                        </title>
-                        <polygon
-                          points="8 5 8 19 19 12"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-              <div
-                class="emotion-50"
-              >
-                <button
-                  class="emotion-49"
-                  data-testid="audio-player-forward"
-                  type="button"
-                >
-                  <div
-                    class="emotion-34"
-                  >
-                    <div
-                      class="emotion-33"
-                    >
-                      <svg
-                        class="emotion-46"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          Forward10 icon
-                        </title>
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
-                        />
-                        <path
-                          d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="emotion-45"
-          >
-            <div
-              class="emotion-68"
-            />
           </div>
         </div>
       </div>
@@ -1419,7 +1638,7 @@ exports[`Radio Player live player 1`] = `
   margin: 0 auto;
 }
 
-.emotion-75 {
+.emotion-87 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -1436,25 +1655,25 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen {
-  .emotion-75 {
+  .emotion-87 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-75 {
+  .emotion-87 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-75 {
+  .emotion-87 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-75 {
+  .emotion-87 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -1828,54 +2047,54 @@ exports[`Radio Player live player 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-55 {
-  background-color: #0A68C1;
-  border-color: #0A68C1;
-  border-width: 1px;
-  border-radius: 50%;
-  outline: none;
-  height: 16px;
-  width: 16px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.emotion-86 {
   box-sizing: border-box;
-  cursor: pointer;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
-.emotion-55 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+@media screen {
+  .emotion-86 {
+    padding: 0 0px;
+    margin-top: 0px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
 }
 
-.emotion-55:hover:not(:disabled) {
-  background-color: #02509B;
+@media screen and (min-width:480px) {
+  .emotion-86 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
 }
 
-.emotion-55:active:not(:disabled) {
-  background-color: #01396E;
+@media screen and (min-width:960px) {
+  .emotion-86 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
 }
 
-.emotion-55:active:not(:disabled) svg {
-  fill: #535353;
-  color: #535353;
+@media screen and (min-width:1440px) {
+  .emotion-86 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
 }
 
-.emotion-55:disabled {
-  border-style: none;
-}
-
-.emotion-55:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-73 {
+.emotion-85 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1894,37 +2113,17 @@ exports[`Radio Player live player 1`] = `
   justify-content: space-between;
 }
 
-.emotion-63 {
-  width: 100%;
-  max-width: 184px;
-  padding: 0 calc(24px / 2);
+.emotion-56 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
-@media screen {
-  .emotion-63 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .emotion-63 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:960px) {
-  .emotion-63 {
-    display: block;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-63 {
-    display: block;
-  }
-}
-
-.emotion-62 {
+.emotion-65 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1945,20 +2144,28 @@ exports[`Radio Player live player 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 100%;
-  position: relative;
+}
+
+.emotion-55 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
 }
 
 .emotion-54 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin-right: 8px;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .emotion-53 {
@@ -1966,7 +2173,6 @@ exports[`Radio Player live player 1`] = `
   position: relative;
   width: auto;
   border: none;
-  outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1979,22 +2185,21 @@ exports[`Radio Player live player 1`] = `
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
   box-sizing: border-box;
-  background-color: transparent;
-  color: #0A68C1;
+  background-color: #0A68C1;
   border-radius: 50%;
-  min-height: 8px;
+  color: #FFFFFF;
+  min-height: 16px;
   font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 8px;
-  width: 32px;
-  height: 32px;
-  margin: 8px 0;
+  padding: 16px;
+  width: 64px;
+  height: 64px;
 }
 
 .emotion-53:disabled {
@@ -2002,21 +2207,22 @@ exports[`Radio Player live player 1`] = `
 }
 
 .emotion-53 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .emotion-53:hover:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
 .emotion-53:active:not(:disabled) {
-  background-color: #d5ebff;
+  background-color: #01396E;
 }
 
 .emotion-53:disabled {
+  background-color: #f0f0f0;
   color: #9c9c9c;
-  background-color: transparent;
 }
 
 .emotion-53:disabled svg {
@@ -2025,17 +2231,8 @@ exports[`Radio Player live player 1`] = `
 }
 
 .emotion-53 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-53::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-52 {
@@ -2071,41 +2268,96 @@ exports[`Radio Player live player 1`] = `
 .emotion-50 {
   fill: #2e2e2e;
   color: #2e2e2e;
-  width: 24px;
-  height: 24px;
   display: inline-block;
 }
 
-.emotion-56 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  box-sizing: border-box;
-  background-color: #f0f0f0;
-  border-radius: 20rem;
-  margin: calc(16px/2 - 4px/2) calc(16px/2);
-  height: 4px;
-  width: 100%;
+.emotion-57 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
 }
 
 .emotion-61 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin-left: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
 }
 
-.emotion-70 {
+.emotion-60 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-63 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 5;
+  -ms-flex-order: 5;
+  order: 5;
+}
+
+.emotion-62 {
+  -webkit-order: 5;
+  -ms-flex-order: 5;
+  order: 5;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-80 {
+  box-sizing: border-box;
+  width: calc( 184px + 24px );
+  padding: 0 calc(24px / 2);
+}
+
+@media screen {
+  .emotion-80 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-80 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-80 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-80 {
+    display: block;
+  }
+}
+
+.emotion-79 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2126,29 +2378,27 @@ exports[`Radio Player live player 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 100%;
+  position: relative;
 }
 
-.emotion-68 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(12px/2);
-  margin-right: calc(12px/2);
+.emotion-71 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-right: 8px;
 }
 
-.emotion-64 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  display: inline-block;
-}
-
-.emotion-67 {
+.emotion-70 {
   display: inline-block;
   position: relative;
   width: auto;
   border: none;
-  outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2161,57 +2411,149 @@ exports[`Radio Player live player 1`] = `
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
   box-sizing: border-box;
-  background-color: #0A68C1;
+  background-color: transparent;
+  color: #0A68C1;
   border-radius: 50%;
-  color: #FFFFFF;
-  min-height: 16px;
+  min-height: 8px;
   font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 16px;
-  width: 64px;
-  height: 64px;
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  margin: 8px 0;
 }
 
-.emotion-67:disabled {
+.emotion-70:disabled {
   cursor: not-allowed;
 }
 
-.emotion-67 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+.emotion-70 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
 }
 
-.emotion-67:hover:not(:disabled) {
-  background-color: #02509B;
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
+.emotion-70:hover:not(:disabled) {
+  background-color: #e6f4ff;
 }
 
-.emotion-67:active:not(:disabled) {
-  background-color: #01396E;
+.emotion-70:active:not(:disabled) {
+  background-color: #d5ebff;
 }
 
-.emotion-67:disabled {
-  background-color: #f0f0f0;
+.emotion-70:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
-.emotion-67:disabled svg {
+.emotion-70:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-67 svg {
-  width: 32px;
-  height: 32px;
+.emotion-70 svg {
+  width: 16px;
+  height: 16px;
 }
 
-.emotion-71 {
+.emotion-70::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 100%;
+  height: 48px;
+}
+
+.emotion-67 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+.emotion-73 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  border-radius: 20rem;
+  margin: calc(16px/2 - 4px/2) calc(16px/2);
+  height: 4px;
+  width: 100%;
+}
+
+.emotion-72 {
+  background-color: #0A68C1;
+  border-color: #0A68C1;
+  border-width: 1px;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-72 svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-72:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-72:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-72:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
+}
+
+.emotion-72:disabled {
+  border-style: none;
+}
+
+.emotion-72:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-78 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-left: 8px;
+}
+
+.emotion-82 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2493,7 +2835,7 @@ exports[`Radio Player live player 1`] = `
   width: 100%;
 }
 
-.emotion-69 {
+.emotion-64 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2519,7 +2861,7 @@ exports[`Radio Player live player 1`] = `
     class="emotion-47"
   >
     <div
-      class="emotion-75"
+      class="emotion-87"
     >
       <audio
         autoplay=""
@@ -2771,151 +3113,210 @@ exports[`Radio Player live player 1`] = `
         </div>
       </div>
       <div
-        class="emotion-49"
+        class="emotion-86"
       >
         <div
-          class="emotion-73"
+          class="emotion-85"
         >
           <div
-            class="emotion-63"
+            class="emotion-56"
+            order="2"
           >
             <div
-              class="emotion-62"
-              data-testid="volume-control"
+              class="emotion-65"
             >
               <div
-                class="emotion-54"
-                data-testid="min-label"
-              >
-                <button
-                  class="emotion-53"
-                  data-testid="mute-button"
-                  type="button"
-                >
-                  <div
-                    class="emotion-52"
-                  >
-                    <div
-                      class="emotion-51"
-                    >
-                      <svg
-                        class="emotion-50"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          Volume down
-                        </title>
-                        <path
-                          d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-                        />
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-              <div
-                class="emotion-56"
-                data-testid="volume-control-track"
-                values="0.7"
+                class="emotion-64"
               >
                 <div
-                  aria-label="Volume Control"
-                  aria-valuemax="1"
-                  aria-valuemin="0"
-                  aria-valuenow="0.7"
                   class="emotion-55"
-                  data-testid="volume-control-thumb"
-                  draggable="false"
-                  role="slider"
-                  style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                  tabindex="0"
-                  values="0.7"
-                />
-              </div>
-              <div
-                class="emotion-61"
-                data-testid="max-label"
-              >
-                <button
-                  class="emotion-53"
-                  data-testid="volumeup-button"
-                  type="button"
+                  order="3"
                 >
                   <div
-                    class="emotion-52"
+                    class="emotion-54"
+                    order="3"
                   >
-                    <div
-                      class="emotion-51"
+                    <button
+                      aria-pressed="false"
+                      class="emotion-53"
+                      data-testid="audio-player-play-button"
+                      type="button"
                     >
-                      <svg
-                        class="emotion-50"
-                        viewBox="0 0 24 24"
+                      <div
+                        class="emotion-52"
                       >
-                        <title>
-                          Volume up
-                        </title>
-                        <path
-                          d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                        />
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                      </svg>
-                    </div>
+                        <div
+                          class="emotion-51"
+                        >
+                          <svg
+                            class="emotion-50"
+                            viewBox="0 0 24 24"
+                          >
+                            <title>
+                              Play
+                            </title>
+                            <polygon
+                              points="8 5 8 19 19 12"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
                   </div>
-                </button>
+                </div>
+                <div
+                  class="emotion-57"
+                  order="2"
+                >
+                  <div
+                    class="emotion-56"
+                    order="2"
+                  />
+                </div>
+                <div
+                  class="emotion-55"
+                  order="3"
+                >
+                  <div
+                    class="emotion-54"
+                    order="3"
+                  />
+                </div>
+                <div
+                  class="emotion-61"
+                  order="1"
+                >
+                  <div
+                    class="emotion-60"
+                    order="1"
+                  />
+                </div>
+                <div
+                  class="emotion-63"
+                  order="5"
+                >
+                  <div
+                    class="emotion-62"
+                    order="5"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="emotion-70"
+            class="emotion-60"
+            order="1"
           >
             <div
-              class="emotion-69"
+              class="emotion-80"
             >
               <div
-                class="emotion-68"
+                class="emotion-79"
+                data-testid="volume-control"
               >
-                <button
-                  aria-pressed="false"
-                  class="emotion-67"
-                  data-testid="audio-player-play-button"
-                  type="button"
+                <div
+                  class="emotion-71"
+                  data-testid="min-label"
                 >
-                  <div
-                    class="emotion-52"
+                  <button
+                    class="emotion-70"
+                    data-testid="mute-button"
+                    tabindex="-1"
+                    type="button"
                   >
                     <div
-                      class="emotion-51"
+                      class="emotion-52"
                     >
-                      <svg
-                        class="emotion-64"
-                        viewBox="0 0 24 24"
+                      <div
+                        class="emotion-51"
                       >
-                        <title>
-                          Play
-                        </title>
-                        <polygon
-                          points="8 5 8 19 19 12"
-                        />
-                      </svg>
+                        <svg
+                          class="emotion-67"
+                          viewBox="0 0 24 24"
+                        >
+                          <title>
+                            Volume down
+                          </title>
+                          <path
+                            d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                        </svg>
+                      </div>
                     </div>
-                  </div>
-                </button>
+                  </button>
+                </div>
+                <div
+                  class="emotion-73"
+                  data-testid="volume-control-track"
+                  values="0.7"
+                >
+                  <div
+                    aria-label="Volume Control"
+                    aria-valuemax="1"
+                    aria-valuemin="0"
+                    aria-valuenow="0.7"
+                    class="emotion-72"
+                    data-testid="volume-control-thumb"
+                    draggable="false"
+                    role="slider"
+                    style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                    tabindex="0"
+                    values="0.7"
+                  />
+                </div>
+                <div
+                  class="emotion-78"
+                  data-testid="max-label"
+                >
+                  <button
+                    class="emotion-70"
+                    data-testid="volumeup-button"
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-52"
+                    >
+                      <div
+                        class="emotion-51"
+                      >
+                        <svg
+                          class="emotion-67"
+                          viewBox="0 0 24 24"
+                        >
+                          <title>
+                            Volume up
+                          </title>
+                          <path
+                            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="emotion-63"
+            class="emotion-54"
+            order="3"
           >
             <div
-              class="emotion-71"
-            />
+              class="emotion-80"
+            >
+              <div
+                class="emotion-82"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -2932,7 +3333,7 @@ exports[`Radio Player player with popout link 1`] = `
   margin: 0 auto;
 }
 
-.emotion-88 {
+.emotion-97 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -2949,25 +3350,25 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 @media screen {
-  .emotion-88 {
+  .emotion-97 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-88 {
+  .emotion-97 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-88 {
+  .emotion-97 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-88 {
+  .emotion-97 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -3341,7 +3742,54 @@ exports[`Radio Player player with popout link 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-46 {
+.emotion-88 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-88 {
+    padding: 0 0px;
+    margin-top: 0px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-88 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-88 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-88 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+.emotion-87 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3351,108 +3799,6 @@ exports[`Radio Player player with popout link 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  position: relative;
-}
-
-.emotion-41 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  box-sizing: border-box;
-  background-color: #f0f0f0;
-  border-radius: 20rem;
-  margin: calc(16px/2 - 8px/2) calc(16px/2);
-  height: 8px;
-  width: 100%;
-}
-
-.emotion-40 {
-  background-color: #0A68C1;
-  border-color: #0A68C1;
-  border-width: 1px;
-  border-radius: 50%;
-  outline: none;
-  height: 16px;
-  width: 16px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.emotion-40 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-40:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-40:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-40:active:not(:disabled) svg {
-  fill: #535353;
-  color: #535353;
-}
-
-.emotion-40:disabled {
-  border-style: none;
-}
-
-.emotion-40:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-45 {
-  width: 100%;
-  margin-top: 12px;
-  padding: 0 calc(16px / 2);
-}
-
-.emotion-44 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -3462,7 +3808,219 @@ exports[`Radio Player player with popout link 1`] = `
   justify-content: space-between;
 }
 
+.emotion-50 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-67 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-66 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-12px/2);
+  margin-right: calc(-12px/2);
+  min-width: 316px;
+}
+
+.emotion-45 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.emotion-44 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-43 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #0A68C1;
+  border-radius: 50%;
+  color: #FFFFFF;
+  min-height: 16px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 16px;
+  width: 64px;
+  height: 64px;
+}
+
+.emotion-43:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-43 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-43:hover:not(:disabled) {
+  background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
+}
+
+.emotion-43:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-43:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-43:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-43 svg {
+  width: 32px;
+  height: 32px;
+}
+
 .emotion-42 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-41 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-40 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-51 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.emotion-49 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #0A68C1;
+  border-radius: 50%;
+  min-height: 12px;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -3471,59 +4029,118 @@ exports[`Radio Player player with popout link 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #535353;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
 }
 
-.emotion-86 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+.emotion-49:disabled {
+  cursor: not-allowed;
 }
 
-.emotion-61 {
-  width: 100%;
-  max-width: 184px;
+.emotion-49 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-49:hover:not(:disabled) {
+  background-color: #e6f4ff;
+}
+
+.emotion-49:active:not(:disabled) {
+  background-color: #d5ebff;
+}
+
+.emotion-49:disabled {
+  color: #9c9c9c;
+  background-color: transparent;
+}
+
+.emotion-49:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-49 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-63 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.emotion-62 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-65 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 5;
+  -ms-flex-order: 5;
+  order: 5;
+}
+
+.emotion-64 {
+  -webkit-order: 5;
+  -ms-flex-order: 5;
+  order: 5;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-82 {
+  box-sizing: border-box;
+  width: calc( 184px + 24px );
   padding: 0 calc(24px / 2);
 }
 
 @media screen {
-  .emotion-61 {
+  .emotion-82 {
     display: none;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-61 {
+  .emotion-82 {
     display: none;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-61 {
+  .emotion-82 {
     display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-61 {
+  .emotion-82 {
     display: block;
   }
 }
 
-.emotion-60 {
+.emotion-81 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3548,7 +4165,7 @@ exports[`Radio Player player with popout link 1`] = `
   position: relative;
 }
 
-.emotion-52 {
+.emotion-73 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -3560,12 +4177,11 @@ exports[`Radio Player player with popout link 1`] = `
   margin-right: 8px;
 }
 
-.emotion-51 {
+.emotion-72 {
   display: inline-block;
   position: relative;
   width: auto;
   border: none;
-  outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -3596,39 +4212,39 @@ exports[`Radio Player player with popout link 1`] = `
   margin: 8px 0;
 }
 
-.emotion-51:disabled {
+.emotion-72:disabled {
   cursor: not-allowed;
 }
 
-.emotion-51 svg {
+.emotion-72 svg {
   fill: #0A68C1;
   color: #0A68C1;
 }
 
-.emotion-51:hover:not(:disabled) {
+.emotion-72:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-51:active:not(:disabled) {
+.emotion-72:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-51:disabled {
+.emotion-72:disabled {
   color: #9c9c9c;
   background-color: transparent;
 }
 
-.emotion-51:disabled svg {
+.emotion-72:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-51 svg {
+.emotion-72 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-51::before {
+.emotion-72::before {
   content: '';
   position: absolute;
   left: 0;
@@ -3637,37 +4253,7 @@ exports[`Radio Player player with popout link 1`] = `
   height: 48px;
 }
 
-.emotion-50 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-49 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-48 {
+.emotion-69 {
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
@@ -3675,7 +4261,7 @@ exports[`Radio Player player with popout link 1`] = `
   display: inline-block;
 }
 
-.emotion-54 {
+.emotion-75 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3692,7 +4278,53 @@ exports[`Radio Player player with popout link 1`] = `
   width: 100%;
 }
 
-.emotion-59 {
+.emotion-74 {
+  background-color: #0A68C1;
+  border-color: #0A68C1;
+  border-width: 1px;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-74 svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-74:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-74:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-74:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
+}
+
+.emotion-74:disabled {
+  border-style: none;
+}
+
+.emotion-74:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-80 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -3702,201 +4334,6 @@ exports[`Radio Player player with popout link 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-left: 8px;
-}
-
-.emotion-83 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.emotion-82 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: calc(-12px/2);
-  margin-right: calc(-12px/2);
-  min-width: 316px;
-}
-
-.emotion-66 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(12px/2);
-  margin-right: calc(12px/2);
-}
-
-.emotion-65 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  box-sizing: border-box;
-  background-color: transparent;
-  color: #0A68C1;
-  border-radius: 50%;
-  min-height: 12px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 12px;
-  width: 48px;
-  height: 48px;
-}
-
-.emotion-65:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-65 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-65:hover:not(:disabled) {
-  background-color: #e6f4ff;
-}
-
-.emotion-65:active:not(:disabled) {
-  background-color: #d5ebff;
-}
-
-.emotion-65:disabled {
-  color: #9c9c9c;
-  background-color: transparent;
-}
-
-.emotion-65:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-65 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-62 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  display: inline-block;
-}
-
-.emotion-75 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  border-radius: 50%;
-  color: #FFFFFF;
-  min-height: 16px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 16px;
-  width: 64px;
-  height: 64px;
-}
-
-.emotion-75:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-75 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-75:hover:not(:disabled) {
-  background-color: #02509B;
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
-}
-
-.emotion-75:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-75:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-75:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-75 svg {
-  width: 32px;
-  height: 32px;
 }
 
 .emotion-84 {
@@ -3916,6 +4353,139 @@ exports[`Radio Player player with popout link 1`] = `
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+}
+
+.emotion-96 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-96 {
+    padding: 0 0px;
+    margin-top: 0px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-96 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-96 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-96 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+.emotion-95 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-90 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  border-radius: 20rem;
+  margin: calc(16px/2 - 8px/2) calc(16px/2);
+  height: 8px;
+  width: 100%;
+}
+
+.emotion-94 {
+  width: 100%;
+  margin-top: 12px;
+  padding: 0 calc(16px / 2);
+}
+
+.emotion-93 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-91 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #535353;
 }
 
 .emotion-10 {
@@ -4095,7 +4665,7 @@ exports[`Radio Player player with popout link 1`] = `
     class="emotion-37"
   >
     <div
-      class="emotion-88"
+      class="emotion-97"
     >
       <audio
         autoplay=""
@@ -4303,14 +4873,312 @@ exports[`Radio Player player with popout link 1`] = `
         </div>
       </div>
       <div
-        class="emotion-39"
+        class="emotion-88"
       >
         <div
-          class="emotion-46"
+          class="emotion-87"
+        >
+          <div
+            class="emotion-50"
+            order="2"
+          >
+            <div
+              class="emotion-67"
+            >
+              <div
+                class="emotion-66"
+              >
+                <div
+                  class="emotion-45"
+                  order="3"
+                >
+                  <div
+                    class="emotion-44"
+                    order="3"
+                  >
+                    <button
+                      aria-pressed="false"
+                      class="emotion-43"
+                      data-testid="audio-player-play-button"
+                      type="button"
+                    >
+                      <div
+                        class="emotion-42"
+                      >
+                        <div
+                          class="emotion-41"
+                        >
+                          <svg
+                            class="emotion-40"
+                            viewBox="0 0 24 24"
+                          >
+                            <title>
+                              Play
+                            </title>
+                            <polygon
+                              points="8 5 8 19 19 12"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="emotion-51"
+                  order="2"
+                >
+                  <div
+                    class="emotion-50"
+                    order="2"
+                  >
+                    <button
+                      class="emotion-49"
+                      data-testid="audio-player-backward"
+                      type="button"
+                    >
+                      <div
+                        class="emotion-42"
+                      >
+                        <div
+                          class="emotion-41"
+                        >
+                          <svg
+                            class="emotion-40"
+                            viewBox="0 0 24 24"
+                          >
+                            <title>
+                              Replay10 icon
+                            </title>
+                            <path
+                              d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="emotion-45"
+                  order="3"
+                >
+                  <div
+                    class="emotion-44"
+                    order="3"
+                  >
+                    <button
+                      class="emotion-49"
+                      data-testid="audio-player-forward"
+                      type="button"
+                    >
+                      <div
+                        class="emotion-42"
+                      >
+                        <div
+                          class="emotion-41"
+                        >
+                          <svg
+                            class="emotion-40"
+                            viewBox="0 0 24 24"
+                          >
+                            <title>
+                              Forward10 icon
+                            </title>
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            />
+                            <path
+                              d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+                            />
+                            <path
+                              d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="emotion-63"
+                  order="1"
+                >
+                  <div
+                    class="emotion-62"
+                    order="1"
+                  >
+                    <button
+                      class="emotion-49"
+                      data-testid="audio-player-skip-previous"
+                      disabled=""
+                      type="button"
+                    >
+                      <div
+                        class="emotion-42"
+                      >
+                        <div
+                          class="emotion-41"
+                        >
+                          <svg
+                            class="emotion-40"
+                            viewBox="0 0 24 24"
+                          >
+                            <title>
+                              SkipPrevious icon
+                            </title>
+                            <path
+                              d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="emotion-65"
+                  order="5"
+                >
+                  <div
+                    class="emotion-64"
+                    order="5"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-62"
+            order="1"
+          >
+            <div
+              class="emotion-82"
+            >
+              <div
+                class="emotion-81"
+                data-testid="volume-control"
+              >
+                <div
+                  class="emotion-73"
+                  data-testid="min-label"
+                >
+                  <button
+                    class="emotion-72"
+                    data-testid="mute-button"
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-42"
+                    >
+                      <div
+                        class="emotion-41"
+                      >
+                        <svg
+                          class="emotion-69"
+                          viewBox="0 0 24 24"
+                        >
+                          <title>
+                            Volume down
+                          </title>
+                          <path
+                            d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+                <div
+                  class="emotion-75"
+                  data-testid="volume-control-track"
+                  values="0.7"
+                >
+                  <div
+                    aria-label="Volume Control"
+                    aria-valuemax="1"
+                    aria-valuemin="0"
+                    aria-valuenow="0.7"
+                    class="emotion-74"
+                    data-testid="volume-control-thumb"
+                    draggable="false"
+                    role="slider"
+                    style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                    tabindex="0"
+                    values="0.7"
+                  />
+                </div>
+                <div
+                  class="emotion-80"
+                  data-testid="max-label"
+                >
+                  <button
+                    class="emotion-72"
+                    data-testid="volumeup-button"
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-42"
+                    >
+                      <div
+                        class="emotion-41"
+                      >
+                        <svg
+                          class="emotion-69"
+                          viewBox="0 0 24 24"
+                        >
+                          <title>
+                            Volume up
+                          </title>
+                          <path
+                            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-44"
+            order="3"
+          >
+            <div
+              class="emotion-82"
+            >
+              <div
+                class="emotion-84"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-96"
+      >
+        <div
+          class="emotion-95"
           data-testid="audio-slider"
         >
           <div
-            class="emotion-41"
+            class="emotion-90"
             data-testid="audio-slider-track"
             values="0"
           >
@@ -4319,7 +5187,7 @@ exports[`Radio Player player with popout link 1`] = `
               aria-valuemax="1"
               aria-valuemin="0"
               aria-valuenow="0"
-              class="emotion-40"
+              class="emotion-74"
               data-testid="audio-slider-thumb"
               draggable="false"
               role="slider"
@@ -4329,272 +5197,24 @@ exports[`Radio Player player with popout link 1`] = `
             />
           </div>
           <div
-            class="emotion-45"
+            class="emotion-94"
           >
             <div
-              class="emotion-44"
+              class="emotion-93"
             >
               <div
-                class="emotion-42"
+                class="emotion-91"
                 data-testid="min-label"
               >
                 00:00
               </div>
               <div
-                class="emotion-42"
+                class="emotion-91"
                 data-testid="max-label"
               >
                 00:00
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="emotion-39"
-      >
-        <div
-          class="emotion-86"
-        >
-          <div
-            class="emotion-61"
-          >
-            <div
-              class="emotion-60"
-              data-testid="volume-control"
-            >
-              <div
-                class="emotion-52"
-                data-testid="min-label"
-              >
-                <button
-                  class="emotion-51"
-                  data-testid="mute-button"
-                  type="button"
-                >
-                  <div
-                    class="emotion-50"
-                  >
-                    <div
-                      class="emotion-49"
-                    >
-                      <svg
-                        class="emotion-48"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          Volume down
-                        </title>
-                        <path
-                          d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-                        />
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-              <div
-                class="emotion-54"
-                data-testid="volume-control-track"
-                values="0.7"
-              >
-                <div
-                  aria-label="Volume Control"
-                  aria-valuemax="1"
-                  aria-valuemin="0"
-                  aria-valuenow="0.7"
-                  class="emotion-40"
-                  data-testid="volume-control-thumb"
-                  draggable="false"
-                  role="slider"
-                  style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                  tabindex="0"
-                  values="0.7"
-                />
-              </div>
-              <div
-                class="emotion-59"
-                data-testid="max-label"
-              >
-                <button
-                  class="emotion-51"
-                  data-testid="volumeup-button"
-                  type="button"
-                >
-                  <div
-                    class="emotion-50"
-                  >
-                    <div
-                      class="emotion-49"
-                    >
-                      <svg
-                        class="emotion-48"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          Volume up
-                        </title>
-                        <path
-                          d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                        />
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="emotion-83"
-          >
-            <div
-              class="emotion-82"
-            >
-              <div
-                class="emotion-66"
-              >
-                <button
-                  class="emotion-65"
-                  data-testid="audio-player-skip-previous"
-                  disabled=""
-                  type="button"
-                >
-                  <div
-                    class="emotion-50"
-                  >
-                    <div
-                      class="emotion-49"
-                    >
-                      <svg
-                        class="emotion-62"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          SkipPrevious icon
-                        </title>
-                        <path
-                          d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
-                        />
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-              <div
-                class="emotion-66"
-              >
-                <button
-                  class="emotion-65"
-                  data-testid="audio-player-backward"
-                  type="button"
-                >
-                  <div
-                    class="emotion-50"
-                  >
-                    <div
-                      class="emotion-49"
-                    >
-                      <svg
-                        class="emotion-62"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          Replay10 icon
-                        </title>
-                        <path
-                          d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-              <div
-                class="emotion-66"
-              >
-                <button
-                  aria-pressed="false"
-                  class="emotion-75"
-                  data-testid="audio-player-play-button"
-                  type="button"
-                >
-                  <div
-                    class="emotion-50"
-                  >
-                    <div
-                      class="emotion-49"
-                    >
-                      <svg
-                        class="emotion-62"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          Play
-                        </title>
-                        <polygon
-                          points="8 5 8 19 19 12"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-              <div
-                class="emotion-66"
-              >
-                <button
-                  class="emotion-65"
-                  data-testid="audio-player-forward"
-                  type="button"
-                >
-                  <div
-                    class="emotion-50"
-                  >
-                    <div
-                      class="emotion-49"
-                    >
-                      <svg
-                        class="emotion-62"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          Forward10 icon
-                        </title>
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
-                        />
-                        <path
-                          d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="emotion-61"
-          >
-            <div
-              class="emotion-84"
-            />
           </div>
         </div>
       </div>
@@ -4611,7 +5231,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin: 0 auto;
 }
 
-.emotion-102 {
+.emotion-111 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -4628,25 +5248,25 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen {
-  .emotion-102 {
+  .emotion-111 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-102 {
+  .emotion-111 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-102 {
+  .emotion-111 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-102 {
+  .emotion-111 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -5020,7 +5640,54 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-60 {
+.emotion-102 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-102 {
+    padding: 0 0px;
+    margin-top: 0px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-102 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-102 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-102 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+.emotion-101 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5030,108 +5697,6 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  position: relative;
-}
-
-.emotion-55 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  box-sizing: border-box;
-  background-color: #f0f0f0;
-  border-radius: 20rem;
-  margin: calc(16px/2 - 8px/2) calc(16px/2);
-  height: 8px;
-  width: 100%;
-}
-
-.emotion-54 {
-  background-color: #0A68C1;
-  border-color: #0A68C1;
-  border-width: 1px;
-  border-radius: 50%;
-  outline: none;
-  height: 16px;
-  width: 16px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.emotion-54 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-54:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-54:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-54:active:not(:disabled) svg {
-  fill: #535353;
-  color: #535353;
-}
-
-.emotion-54:disabled {
-  border-style: none;
-}
-
-.emotion-54:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-59 {
-  width: 100%;
-  margin-top: 12px;
-  padding: 0 calc(16px / 2);
-}
-
-.emotion-58 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -5141,7 +5706,219 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   justify-content: space-between;
 }
 
+.emotion-64 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-81 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-80 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-12px/2);
+  margin-right: calc(-12px/2);
+  min-width: 316px;
+}
+
+.emotion-59 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.emotion-58 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-57 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #0A68C1;
+  border-radius: 50%;
+  color: #FFFFFF;
+  min-height: 16px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 16px;
+  width: 64px;
+  height: 64px;
+}
+
+.emotion-57:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-57 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-57:hover:not(:disabled) {
+  background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
+}
+
+.emotion-57:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-57:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-57:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-57 svg {
+  width: 32px;
+  height: 32px;
+}
+
 .emotion-56 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-55 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-8 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-65 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.emotion-63 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #0A68C1;
+  border-radius: 50%;
+  min-height: 12px;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -5150,59 +5927,118 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #535353;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
 }
 
-.emotion-100 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+.emotion-63:disabled {
+  cursor: not-allowed;
 }
 
-.emotion-75 {
-  width: 100%;
-  max-width: 184px;
+.emotion-63 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-63:hover:not(:disabled) {
+  background-color: #e6f4ff;
+}
+
+.emotion-63:active:not(:disabled) {
+  background-color: #d5ebff;
+}
+
+.emotion-63:disabled {
+  color: #9c9c9c;
+  background-color: transparent;
+}
+
+.emotion-63:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-63 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-77 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.emotion-76 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-79 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 5;
+  -ms-flex-order: 5;
+  order: 5;
+}
+
+.emotion-78 {
+  -webkit-order: 5;
+  -ms-flex-order: 5;
+  order: 5;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-96 {
+  box-sizing: border-box;
+  width: calc( 184px + 24px );
   padding: 0 calc(24px / 2);
 }
 
 @media screen {
-  .emotion-75 {
+  .emotion-96 {
     display: none;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-75 {
+  .emotion-96 {
     display: none;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-75 {
+  .emotion-96 {
     display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-75 {
+  .emotion-96 {
     display: block;
   }
 }
 
-.emotion-74 {
+.emotion-95 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5227,7 +6063,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   position: relative;
 }
 
-.emotion-66 {
+.emotion-87 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -5239,12 +6075,11 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin-right: 8px;
 }
 
-.emotion-65 {
+.emotion-86 {
   display: inline-block;
   position: relative;
   width: auto;
   border: none;
-  outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -5275,39 +6110,39 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin: 8px 0;
 }
 
-.emotion-65:disabled {
+.emotion-86:disabled {
   cursor: not-allowed;
 }
 
-.emotion-65 svg {
+.emotion-86 svg {
   fill: #0A68C1;
   color: #0A68C1;
 }
 
-.emotion-65:hover:not(:disabled) {
+.emotion-86:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-65:active:not(:disabled) {
+.emotion-86:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-65:disabled {
+.emotion-86:disabled {
   color: #9c9c9c;
   background-color: transparent;
 }
 
-.emotion-65:disabled svg {
+.emotion-86:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-65 svg {
+.emotion-86 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-65::before {
+.emotion-86::before {
   content: '';
   position: absolute;
   left: 0;
@@ -5316,37 +6151,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   height: 48px;
 }
 
-.emotion-64 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-63 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-62 {
+.emotion-83 {
   fill: #2e2e2e;
   color: #2e2e2e;
   width: 24px;
@@ -5354,7 +6159,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   display: inline-block;
 }
 
-.emotion-68 {
+.emotion-89 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5371,7 +6176,53 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   width: 100%;
 }
 
-.emotion-73 {
+.emotion-88 {
+  background-color: #0A68C1;
+  border-color: #0A68C1;
+  border-width: 1px;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-88 svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-88:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-88:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-88:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
+}
+
+.emotion-88:disabled {
+  border-style: none;
+}
+
+.emotion-88:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-94 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -5381,201 +6232,6 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   margin-left: 8px;
-}
-
-.emotion-97 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.emotion-96 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: calc(-12px/2);
-  margin-right: calc(-12px/2);
-  min-width: 316px;
-}
-
-.emotion-80 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(12px/2);
-  margin-right: calc(12px/2);
-}
-
-.emotion-79 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  box-sizing: border-box;
-  background-color: transparent;
-  color: #0A68C1;
-  border-radius: 50%;
-  min-height: 12px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 12px;
-  width: 48px;
-  height: 48px;
-}
-
-.emotion-79:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-79 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
-}
-
-.emotion-79:hover:not(:disabled) {
-  background-color: #e6f4ff;
-}
-
-.emotion-79:active:not(:disabled) {
-  background-color: #d5ebff;
-}
-
-.emotion-79:disabled {
-  color: #9c9c9c;
-  background-color: transparent;
-}
-
-.emotion-79:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-79 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-8 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  display: inline-block;
-}
-
-.emotion-89 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  border-radius: 50%;
-  color: #FFFFFF;
-  min-height: 16px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 16px;
-  width: 64px;
-  height: 64px;
-}
-
-.emotion-89:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-89 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-89:hover:not(:disabled) {
-  background-color: #02509B;
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
-}
-
-.emotion-89:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-89:disabled {
-  background-color: #f0f0f0;
-  color: #9c9c9c;
-}
-
-.emotion-89:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-89 svg {
-  width: 32px;
-  height: 32px;
 }
 
 .emotion-98 {
@@ -5595,6 +6251,139 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+}
+
+.emotion-110 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-110 {
+    padding: 0 0px;
+    margin-top: 0px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-110 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-110 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-110 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+.emotion-109 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-104 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  border-radius: 20rem;
+  margin: calc(16px/2 - 8px/2) calc(16px/2);
+  height: 8px;
+  width: 100%;
+}
+
+.emotion-108 {
+  width: 100%;
+  margin-top: 12px;
+  padding: 0 calc(16px / 2);
+}
+
+.emotion-107 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-105 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #535353;
 }
 
 .emotion-17 {
@@ -5864,7 +6653,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
     class="emotion-51"
   >
     <div
-      class="emotion-102"
+      class="emotion-111"
     >
       <audio
         autoplay=""
@@ -6149,14 +6938,312 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
         </div>
       </div>
       <div
-        class="emotion-53"
+        class="emotion-102"
       >
         <div
-          class="emotion-60"
+          class="emotion-101"
+        >
+          <div
+            class="emotion-64"
+            order="2"
+          >
+            <div
+              class="emotion-81"
+            >
+              <div
+                class="emotion-80"
+              >
+                <div
+                  class="emotion-59"
+                  order="3"
+                >
+                  <div
+                    class="emotion-58"
+                    order="3"
+                  >
+                    <button
+                      aria-pressed="false"
+                      class="emotion-57"
+                      data-testid="audio-player-play-button"
+                      type="button"
+                    >
+                      <div
+                        class="emotion-56"
+                      >
+                        <div
+                          class="emotion-55"
+                        >
+                          <svg
+                            class="emotion-8"
+                            viewBox="0 0 24 24"
+                          >
+                            <title>
+                              Play
+                            </title>
+                            <polygon
+                              points="8 5 8 19 19 12"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="emotion-65"
+                  order="2"
+                >
+                  <div
+                    class="emotion-64"
+                    order="2"
+                  >
+                    <button
+                      class="emotion-63"
+                      data-testid="audio-player-backward"
+                      type="button"
+                    >
+                      <div
+                        class="emotion-56"
+                      >
+                        <div
+                          class="emotion-55"
+                        >
+                          <svg
+                            class="emotion-8"
+                            viewBox="0 0 24 24"
+                          >
+                            <title>
+                              Replay10 icon
+                            </title>
+                            <path
+                              d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="emotion-59"
+                  order="3"
+                >
+                  <div
+                    class="emotion-58"
+                    order="3"
+                  >
+                    <button
+                      class="emotion-63"
+                      data-testid="audio-player-forward"
+                      type="button"
+                    >
+                      <div
+                        class="emotion-56"
+                      >
+                        <div
+                          class="emotion-55"
+                        >
+                          <svg
+                            class="emotion-8"
+                            viewBox="0 0 24 24"
+                          >
+                            <title>
+                              Forward10 icon
+                            </title>
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            />
+                            <path
+                              d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+                            />
+                            <path
+                              d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="emotion-77"
+                  order="1"
+                >
+                  <div
+                    class="emotion-76"
+                    order="1"
+                  >
+                    <button
+                      class="emotion-63"
+                      data-testid="audio-player-skip-previous"
+                      disabled=""
+                      type="button"
+                    >
+                      <div
+                        class="emotion-56"
+                      >
+                        <div
+                          class="emotion-55"
+                        >
+                          <svg
+                            class="emotion-8"
+                            viewBox="0 0 24 24"
+                          >
+                            <title>
+                              SkipPrevious icon
+                            </title>
+                            <path
+                              d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="emotion-79"
+                  order="5"
+                >
+                  <div
+                    class="emotion-78"
+                    order="5"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-76"
+            order="1"
+          >
+            <div
+              class="emotion-96"
+            >
+              <div
+                class="emotion-95"
+                data-testid="volume-control"
+              >
+                <div
+                  class="emotion-87"
+                  data-testid="min-label"
+                >
+                  <button
+                    class="emotion-86"
+                    data-testid="mute-button"
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-56"
+                    >
+                      <div
+                        class="emotion-55"
+                      >
+                        <svg
+                          class="emotion-83"
+                          viewBox="0 0 24 24"
+                        >
+                          <title>
+                            Volume down
+                          </title>
+                          <path
+                            d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+                <div
+                  class="emotion-89"
+                  data-testid="volume-control-track"
+                  values="0.7"
+                >
+                  <div
+                    aria-label="Volume Control"
+                    aria-valuemax="1"
+                    aria-valuemin="0"
+                    aria-valuenow="0.7"
+                    class="emotion-88"
+                    data-testid="volume-control-thumb"
+                    draggable="false"
+                    role="slider"
+                    style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                    tabindex="0"
+                    values="0.7"
+                  />
+                </div>
+                <div
+                  class="emotion-94"
+                  data-testid="max-label"
+                >
+                  <button
+                    class="emotion-86"
+                    data-testid="volumeup-button"
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <div
+                      class="emotion-56"
+                    >
+                      <div
+                        class="emotion-55"
+                      >
+                        <svg
+                          class="emotion-83"
+                          viewBox="0 0 24 24"
+                        >
+                          <title>
+                            Volume up
+                          </title>
+                          <path
+                            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-58"
+            order="3"
+          >
+            <div
+              class="emotion-96"
+            >
+              <div
+                class="emotion-98"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="emotion-110"
+      >
+        <div
+          class="emotion-109"
           data-testid="audio-slider"
         >
           <div
-            class="emotion-55"
+            class="emotion-104"
             data-testid="audio-slider-track"
             values="0"
           >
@@ -6165,7 +7252,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
               aria-valuemax="1"
               aria-valuemin="0"
               aria-valuenow="0"
-              class="emotion-54"
+              class="emotion-88"
               data-testid="audio-slider-thumb"
               draggable="false"
               role="slider"
@@ -6175,272 +7262,24 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
             />
           </div>
           <div
-            class="emotion-59"
+            class="emotion-108"
           >
             <div
-              class="emotion-58"
+              class="emotion-107"
             >
               <div
-                class="emotion-56"
+                class="emotion-105"
                 data-testid="min-label"
               >
                 00:00
               </div>
               <div
-                class="emotion-56"
+                class="emotion-105"
                 data-testid="max-label"
               >
                 00:00
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="emotion-53"
-      >
-        <div
-          class="emotion-100"
-        >
-          <div
-            class="emotion-75"
-          >
-            <div
-              class="emotion-74"
-              data-testid="volume-control"
-            >
-              <div
-                class="emotion-66"
-                data-testid="min-label"
-              >
-                <button
-                  class="emotion-65"
-                  data-testid="mute-button"
-                  type="button"
-                >
-                  <div
-                    class="emotion-64"
-                  >
-                    <div
-                      class="emotion-63"
-                    >
-                      <svg
-                        class="emotion-62"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          Volume down
-                        </title>
-                        <path
-                          d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-                        />
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-              <div
-                class="emotion-68"
-                data-testid="volume-control-track"
-                values="0.7"
-              >
-                <div
-                  aria-label="Volume Control"
-                  aria-valuemax="1"
-                  aria-valuemin="0"
-                  aria-valuenow="0.7"
-                  class="emotion-54"
-                  data-testid="volume-control-thumb"
-                  draggable="false"
-                  role="slider"
-                  style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                  tabindex="0"
-                  values="0.7"
-                />
-              </div>
-              <div
-                class="emotion-73"
-                data-testid="max-label"
-              >
-                <button
-                  class="emotion-65"
-                  data-testid="volumeup-button"
-                  type="button"
-                >
-                  <div
-                    class="emotion-64"
-                  >
-                    <div
-                      class="emotion-63"
-                    >
-                      <svg
-                        class="emotion-62"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          Volume up
-                        </title>
-                        <path
-                          d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                        />
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="emotion-97"
-          >
-            <div
-              class="emotion-96"
-            >
-              <div
-                class="emotion-80"
-              >
-                <button
-                  class="emotion-79"
-                  data-testid="audio-player-skip-previous"
-                  disabled=""
-                  type="button"
-                >
-                  <div
-                    class="emotion-64"
-                  >
-                    <div
-                      class="emotion-63"
-                    >
-                      <svg
-                        class="emotion-8"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          SkipPrevious icon
-                        </title>
-                        <path
-                          d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
-                        />
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-              <div
-                class="emotion-80"
-              >
-                <button
-                  class="emotion-79"
-                  data-testid="audio-player-backward"
-                  type="button"
-                >
-                  <div
-                    class="emotion-64"
-                  >
-                    <div
-                      class="emotion-63"
-                    >
-                      <svg
-                        class="emotion-8"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          Replay10 icon
-                        </title>
-                        <path
-                          d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-              <div
-                class="emotion-80"
-              >
-                <button
-                  aria-pressed="false"
-                  class="emotion-89"
-                  data-testid="audio-player-play-button"
-                  type="button"
-                >
-                  <div
-                    class="emotion-64"
-                  >
-                    <div
-                      class="emotion-63"
-                    >
-                      <svg
-                        class="emotion-8"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          Play
-                        </title>
-                        <polygon
-                          points="8 5 8 19 19 12"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-              <div
-                class="emotion-80"
-              >
-                <button
-                  class="emotion-79"
-                  data-testid="audio-player-forward"
-                  type="button"
-                >
-                  <div
-                    class="emotion-64"
-                  >
-                    <div
-                      class="emotion-63"
-                    >
-                      <svg
-                        class="emotion-8"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          Forward10 icon
-                        </title>
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
-                        />
-                        <path
-                          d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="emotion-75"
-          >
-            <div
-              class="emotion-98"
-            />
           </div>
         </div>
       </div>

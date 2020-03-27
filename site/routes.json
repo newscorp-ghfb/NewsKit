@@ -172,7 +172,7 @@
         "id": "/components/slider"
       },
       {
-        "title": "Stack",
+        "title": "Stack & StackChild",
         "page": true,
         "id": "/components/stack"
       },

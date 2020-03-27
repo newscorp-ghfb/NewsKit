@@ -16,8 +16,11 @@ export const PlayerContainer = styled(Grid)`
 export const ControlContainer = styled(Hidden)<{
   $playerTrackSize: SizingKeys;
 }>`
-  width: 100%;
-  max-width: 184px;
+  box-sizing: border-box;
+  width: calc(
+    184px +
+      ${({theme, $playerTrackSize}) => `${theme.sizing[$playerTrackSize]}`}
+  );
   padding: 0
     ${({theme, $playerTrackSize}) =>
       `calc(${theme.sizing[$playerTrackSize]} / 2)`};

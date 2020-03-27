@@ -21,7 +21,6 @@ const ButtonElement = styled.button<ButtonCommonProps & ButtonSizing>`
   position: relative;
   width: auto;
   border: none;
-  outline: none;
   appearance: none;
   overflow: hidden;
   transition-property: background-color;

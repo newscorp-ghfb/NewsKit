@@ -26,10 +26,19 @@ export interface StyledStackProps {
     | 'space-evenly';
 }
 
-export type StyledChildProps = Pick<
-  StyledStackProps,
-  'space' | 'flow' | 'wrap'
->;
+export interface StyledChildProps {
+  space: SizingKeys;
+  wrap: boolean | 'wrap' | 'nowrap';
+  flow:
+    | Flow
+    | 'vertical-left'
+    | 'vertical-center'
+    | 'vertical-right'
+    | 'horizontal-top'
+    | 'horizontal-center'
+    | 'horizontal-bottom';
+  order?: number;
+}
 
 export enum Flow {
   VerticalLeft = 'vertical-left',

@@ -30,6 +30,7 @@ import {
   InstrumentationEvent,
 } from '../instrumentation';
 import {LabelPosition} from '../slider/types';
+import {StackChild} from '../stack-child';
 
 const {version} = require('../../package.json');
 
@@ -430,8 +431,58 @@ const InternalAudioPlayer: React.FC<InstrumentedAudioPlayerProps> = props => {
 
       {children && <Cell xs={12}>{children}</Cell>}
 
+      <Cell xsOrder={2} xs={12}>
+        <Stack
+          flow={Flow.HorizontalCenter}
+          stackDistribution={StackDistribution.SpaceBetween}
+        >
+          <StackChild order={2}>
+            <ControlPanel
+              onNextTrack={onNextTrack ? onClickNext : undefined}
+              disableNextTrack={disableNextTrack}
+              onPreviousTrack={onClickPrevious}
+              disablePreviousTrack={isPrevTrackBtnDisabled}
+              live={live}
+              showControls={showControls}
+              isPlaying={isPlaying}
+              onClickBackward={onClickBackward}
+              onClickForward={onClickForward}
+              togglePlay={togglePlay}
+              $controlPresets={controlPresets}
+            />
+          </StackChild>
+          <StackChild order={1}>
+            <ControlContainer $playerTrackSize="sizing050" xs sm>
+              <VolumeControl
+                volume={volume}
+                onChange={setVolume}
+                $trackSize="sizing010"
+                $thumbSize="sizing040"
+                {...volumePresets}
+              />
+            </ControlContainer>
+          </StackChild>
+          <StackChild order={3}>
+            <ControlContainer $playerTrackSize="sizing050" xs sm>
+              <Stack
+                flow={Flow.VerticalRight}
+                stackDistribution={StackDistribution.End}
+              >
+                {popoutHref && (
+                  <PopoutButton
+                    onClick={onPopoutClick}
+                    href={popoutHref}
+                    $stylePreset={controlPresets.popout}
+                  />
+                )}
+              </Stack>
+            </ControlContainer>
+          </StackChild>
+        </Stack>
+      </Cell>
+
       {showControls && (
-        <Cell xs={12}>
+        <Cell xsOrder={1} xs={12}>
           <Slider
             min={0}
             minLabel={formattedTime}
@@ -449,50 +500,6 @@ const InternalAudioPlayer: React.FC<InstrumentedAudioPlayerProps> = props => {
           />
         </Cell>
       )}
-
-      <Cell xs={12}>
-        <Stack
-          flow={Flow.HorizontalCenter}
-          stackDistribution={StackDistribution.SpaceBetween}
-        >
-          <ControlContainer $playerTrackSize="sizing050" xs sm>
-            <VolumeControl
-              volume={volume}
-              onChange={setVolume}
-              $trackSize="sizing010"
-              $thumbSize="sizing040"
-              {...volumePresets}
-            />
-          </ControlContainer>
-          <ControlPanel
-            onNextTrack={onNextTrack ? onClickNext : undefined}
-            disableNextTrack={disableNextTrack}
-            onPreviousTrack={onClickPrevious}
-            disablePreviousTrack={isPrevTrackBtnDisabled}
-            live={live}
-            showControls={showControls}
-            isPlaying={isPlaying}
-            onClickBackward={onClickBackward}
-            onClickForward={onClickForward}
-            togglePlay={togglePlay}
-            $controlPresets={controlPresets}
-          />
-          <ControlContainer $playerTrackSize="sizing050" xs sm>
-            <Stack
-              flow={Flow.VerticalRight}
-              stackDistribution={StackDistribution.End}
-            >
-              {popoutHref && (
-                <PopoutButton
-                  onClick={onPopoutClick}
-                  href={popoutHref}
-                  $stylePreset={controlPresets.popout}
-                />
-              )}
-            </Stack>
-          </ControlContainer>
-        </Stack>
-      </Cell>
     </PlayerContainer>
   );
 };

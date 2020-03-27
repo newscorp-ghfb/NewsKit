@@ -4,6 +4,7 @@ import {ForwardButton, BackwardButton} from './forward-replay';
 import {PlayerButton} from './play-pause';
 import {SkipPreviousButton, SkipNextButton} from './skip-track';
 import {Stack, StackDistribution, Flow} from '../../stack';
+import {StackChild} from '../../stack-child';
 
 export interface TrackControlProps {
   onNextTrack?: () => void;
@@ -62,32 +63,44 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
           live ? StackDistribution.Center : StackDistribution.Start
         }
       >
-        {showControls && onPreviousTrack && (
-          <SkipPreviousButton
-            onClick={onPreviousTrack}
-            disabled={disablePreviousTrack}
-            $stylePreset={previous}
+        <StackChild order={3}>
+          <PlayerButton
+            canPause={showControls}
+            isPlaying={isPlaying}
+            onClick={togglePlay}
+            $stylePreset={play}
           />
-        )}
-        {showControls && onClickBackward && (
-          <BackwardButton onClick={onClickBackward} $stylePreset={replay} />
-        )}
-        <PlayerButton
-          canPause={showControls}
-          isPlaying={isPlaying}
-          onClick={togglePlay}
-          $stylePreset={play}
-        />
-        {showControls && onClickForward && (
-          <ForwardButton onClick={onClickForward} $stylePreset={forward} />
-        )}
-        {showControls && onNextTrack && (
-          <SkipNextButton
-            onClick={onNextTrack}
-            disabled={disableNextTrack}
-            $stylePreset={next}
-          />
-        )}
+        </StackChild>
+        <StackChild order={2}>
+          {showControls && onClickBackward && (
+            <BackwardButton onClick={onClickBackward} $stylePreset={replay} />
+          )}
+        </StackChild>
+        <StackChild order={3}>
+          {showControls && onClickForward && (
+            <ForwardButton onClick={onClickForward} $stylePreset={forward} />
+          )}
+        </StackChild>
+
+        <StackChild order={1}>
+          {showControls && onPreviousTrack && (
+            <SkipPreviousButton
+              onClick={onPreviousTrack}
+              disabled={disablePreviousTrack}
+              $stylePreset={previous}
+            />
+          )}
+        </StackChild>
+
+        <StackChild order={5}>
+          {showControls && onNextTrack && (
+            <SkipNextButton
+              onClick={onNextTrack}
+              disabled={disableNextTrack}
+              $stylePreset={next}
+            />
+          )}
+        </StackChild>
       </ButtonsContainer>
     </Stack>
   ),

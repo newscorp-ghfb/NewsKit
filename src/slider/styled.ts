@@ -143,7 +143,6 @@ export const StyledThumb = styled.div<StyledThumbProps>`
     getStylePresetFromTheme(thumbStylePresetDefault, '$stylePreset', {
       isDisabled: disabled,
     })}
-  outline: none;
   height: ${getSizingFromTheme(thumbSizeDefault, '$thumbSize')};
   width: ${getSizingFromTheme(thumbSizeDefault, '$thumbSize')};
   justify-content: center;

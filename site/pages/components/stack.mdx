@@ -2,20 +2,21 @@ import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Prop} from '../../components/prop';
+import {Code} from '../../components/code';
 
-import {Stack, Tag} from 'newskit';
+import {Stack, Tag, Flow, StackChild} from 'newskit';
 
 export default Layout;
 
-# Stack
+# Stack & StackChild
 
-## Overview
+## Stack Overview
 
 The Stack component is a low-level primitive used to layout items in a horizontal or vertical stack, with even spacing between the items. Distribution requires the Stacks parent to have a width and height values set.
 
-## Props
+## Stack Props
 
-Stack have a number of props to facilitate a variety of uses. Custom and required props are detailed below:
+The Stack has a number of props to facilitate a variety of uses. Custom and required props are detailed below:
 
 <LegacyBlock marginTop="sizing05">
   <Prop
@@ -127,3 +128,54 @@ Stack have a number of props to facilitate a variety of uses. Custom and require
     },
   ]}
 />
+
+
+## StackChild Overview
+
+The StackChild component is used to introduce custom order for the children of Stack.
+It is required for the component to be used within a `Stack`.
+It's behaviour is derived from the functionality of a child element in a classic `flex` container.
+
+## StackChild Props
+
+The Stack has a number of props to facilitate a variety of uses. Custom and required props are detailed below:
+<LegacyBlock marginTop="sizing05">
+  <Prop
+    name="order"
+    type="number"
+    required
+  >
+   Defines the order of the element within the stack.
+  </Prop>
+</LegacyBlock>
+
+## Usage
+
+
+<LegacyBlock marginTop="sizing05">
+    <Stack flow={Flow.HorizontalTop}>
+        <StackChild order={3}>
+        <Tag>Tag 1</Tag>
+        </StackChild>
+        <StackChild order={1}>
+        <Tag>Tag 2</Tag>
+        </StackChild>
+        <StackChild order={2}>
+        <Tag>Tag 3</Tag>
+        </StackChild>
+    </Stack>
+</LegacyBlock>
+
+<Code>
+  {`<Stack>
+    <StackChild order={3}>
+      <Tag>Tag 1</Tag>
+    </StackChild>
+    <StackChild order={1}>
+      <Tag>Tag 2</Tag>
+    </StackChild>
+    <StackChild order={2}>
+      <Tag>Tag 3</Tag>
+    </StackChild>
+</Stack>`}
+</Code>

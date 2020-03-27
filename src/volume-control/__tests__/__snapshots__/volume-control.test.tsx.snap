@@ -44,7 +44,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   position: relative;
   width: auto;
   border: none;
-  outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -180,7 +179,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   border-color: #0A68C1;
   border-width: 1px;
   border-radius: 50%;
-  outline: none;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -245,6 +243,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
       <button
         class="emotion-3"
         data-testid="mute-button"
+        tabindex="-1"
         type="button"
       >
         <div
@@ -298,6 +297,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
       <button
         class="emotion-3"
         data-testid="volumeup-button"
+        tabindex="-1"
         type="button"
       >
         <div
@@ -373,7 +373,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   position: relative;
   width: auto;
   border: none;
-  outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -509,7 +508,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   border-color: #0A68C1;
   border-width: 1px;
   border-radius: 50%;
-  outline: none;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -574,6 +572,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
       <button
         class="emotion-3"
         data-testid="mute-button"
+        tabindex="-1"
         type="button"
       >
         <div
@@ -627,6 +626,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
       <button
         class="emotion-3"
         data-testid="volumeup-button"
+        tabindex="-1"
         type="button"
       >
         <div
@@ -702,7 +702,6 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   position: relative;
   width: auto;
   border: none;
-  outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -838,7 +837,6 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   border-color: #0A68C1;
   border-width: 1px;
   border-radius: 50%;
-  outline: none;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -903,6 +901,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
       <button
         class="emotion-3"
         data-testid="mute-button"
+        tabindex="-1"
         type="button"
       >
         <div
@@ -956,6 +955,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
       <button
         class="emotion-3"
         data-testid="volumeup-button"
+        tabindex="-1"
         type="button"
       >
         <div
@@ -994,7 +994,6 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   position: relative;
   width: auto;
   border: none;
-  outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1109,7 +1108,6 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   border-color: #0A68C1;
   border-width: 1px;
   border-radius: 50%;
-  outline: none;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -1231,6 +1229,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
       <button
         class="emotion-3"
         data-testid="mute-button"
+        tabindex="-1"
         type="button"
       >
         <div
@@ -1284,6 +1283,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
       <button
         class="emotion-3"
         data-testid="volumeup-button"
+        tabindex="-1"
         type="button"
       >
         <div
@@ -1359,7 +1359,6 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   position: relative;
   width: auto;
   border: none;
-  outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1495,7 +1494,6 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   border-color: #0A68C1;
   border-width: 1px;
   border-radius: 50%;
-  outline: none;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -1560,6 +1558,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
       <button
         class="emotion-3"
         data-testid="mute-button"
+        tabindex="-1"
         type="button"
       >
         <div
@@ -1613,6 +1612,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
       <button
         class="emotion-3"
         data-testid="volumeup-button"
+        tabindex="-1"
         type="button"
       >
         <div

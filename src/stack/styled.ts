@@ -124,4 +124,5 @@ export const StyledMasterContainer = styled('div')<StyledStackProps>`
 export const StyledChildContainer = styled.div<StyledChildProps>`
   display: inline-flex;
   ${calculateMargins()}
+  order: ${({order}) => order};
 `;

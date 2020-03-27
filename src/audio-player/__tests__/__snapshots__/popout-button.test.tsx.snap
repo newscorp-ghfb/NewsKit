@@ -7,7 +7,6 @@ exports[`PopoutButton renders correctly with default props 1`] = `
   position: relative;
   width: auto;
   border: none;
-  outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

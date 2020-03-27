@@ -21,6 +21,7 @@ export * from './scroll';
 export * from './share-bar';
 export * from './slider';
 export * from './stack';
+export * from './stack-child';
 export * from './tag-list';
 export * from './tag';
 export * from './tealium';

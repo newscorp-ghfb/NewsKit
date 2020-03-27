@@ -23,6 +23,7 @@ const MuteButton: React.FC<MuteButtonProps> = ({
 }) => (
   <IconButton
     data-testid="mute-button"
+    tabIndex={-1}
     onClick={() => (volume === 0 ? onChange(unMutedVolume || 1) : onChange(0))}
     $size={ButtonSize.Small}
     $stylePreset={
@@ -70,6 +71,7 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
     () => (
       <IconButton
         data-testid="volumeup-button"
+        tabIndex={-1}
         onClick={() => onChange(1)}
         $size={ButtonSize.Small}
         $stylePreset={
