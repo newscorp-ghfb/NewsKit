@@ -20,9 +20,28 @@ export const AudioElement: React.FC<AudioElementProps> = ({
   volume = 1,
   newTime = 0,
   autoPlay = false,
+  src,
   ...props
 }) => {
   const localRef = useRef<HTMLAudioElement>(null);
+
+  // Used in the cases where the audio loading events are not being able to capture.
+  const ue = useEffect;
+  ue(() => {
+    const player = localRef.current;
+    /* istanbul ignore else */
+    if (player) {
+      player.load();
+      // Needed for the tracked player
+      if (!autoPlay) {
+        if (playing) {
+          player.play();
+        } else {
+          player.pause();
+        }
+      }
+    }
+  }, [src]);
 
   useEffect(() => {
     const player = localRef.current;
@@ -63,7 +82,7 @@ export const AudioElement: React.FC<AudioElementProps> = ({
   }, [volume]);
 
   return (
-    <audio ref={localRef} autoPlay {...props}>
+    <audio ref={localRef} src={src} autoPlay {...props}>
       {captionSrc && <track kind="captions" src={captionSrc} />}
     </audio>
   );

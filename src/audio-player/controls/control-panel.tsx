@@ -32,7 +32,6 @@ export interface ControlPanelProps extends TrackControlProps {
   $controlPresets: ControlPresets;
 }
 
-// TODO: recalculate min-width when PPDSC-999 is done.
 export const ButtonsContainer = styled(Stack)`
   min-width: 316px;
 `;

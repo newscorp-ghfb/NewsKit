@@ -41,6 +41,7 @@ describe('AudioElement', () => {
 
   describe('behaves correctly', () => {
     mockCurrentRef = {
+      load: jest.fn(),
       play: jest.fn(),
       pause: jest.fn(),
       seekable: {
@@ -68,7 +69,9 @@ describe('AudioElement', () => {
       volume: 1,
       newTime: -1,
     });
+
     const resetAndReRender = (props: AudioElementProps) => {
+      mockCurrentRef.load.mockReset();
       mockCurrentRef.play.mockReset();
       mockCurrentRef.pause.mockReset();
       mockCurrentRef.currentTime = undefined;
@@ -79,10 +82,21 @@ describe('AudioElement', () => {
     };
 
     test('on first render', () => {
+      expect(mockCurrentRef.load).toHaveBeenCalled();
       expect(mockCurrentRef.pause).toHaveBeenCalled();
       expect(mockCurrentRef.play).not.toHaveBeenCalled();
       expect(mockCurrentRef.currentTime).toEqual(0);
       expect(mockCurrentRef.volume).toEqual(1);
+    });
+
+    test('rerender but keep the same audio url', () => {
+      const src = 'random-audio-url';
+
+      resetAndReRender({playing: false, src});
+      expect(mockCurrentRef.load).toHaveBeenCalled();
+
+      resetAndReRender({playing: true, src});
+      expect(mockCurrentRef.load).not.toHaveBeenCalled();
     });
 
     test('after updating props, now playing at 20s in, and volume to 0.6', () => {
