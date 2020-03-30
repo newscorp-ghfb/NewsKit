@@ -103,6 +103,9 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
     data-testid="slider"
   >
     <div
+      aria-orientation="horizontal"
+      aria-valuemax="75"
+      aria-valuemin="25"
       class="emotion-1"
       data-testid="slider-track"
       values="40"

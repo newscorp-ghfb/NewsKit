@@ -31,6 +31,16 @@ describe('Page accessibility', () => {
             'color-contrast': {enabled: false},
           },
         });
+      } else if (
+        path === `/components/radio-player` ||
+        path === `/components/audio-player`
+      ) {
+        cy.checkA11y({
+          rules: {
+            'landmark-unique': {enabled: false},
+            'color-contrast': {enabled: false},
+          },
+        });
       } else {
         // TODO: Need to remove color-contrast as a rule here once PPDSC-785 ticket is fixed
         cy.checkA11y({

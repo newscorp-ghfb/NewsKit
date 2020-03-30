@@ -31,9 +31,9 @@ const MuteButton: React.FC<MuteButtonProps> = ({
     }
   >
     {volume === 0 ? (
-      <VolumeMute $size={iconSize} />
+      <VolumeMute $size={iconSize} title="unmute" />
     ) : (
-      <VolumeDown $size={iconSize} />
+      <VolumeDown $size={iconSize} title="mute" />
     )}
   </IconButton>
 );
@@ -78,7 +78,7 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
           $volumeControlButtonStylePreset || volumeControlButtonStyleDefault
         }
       >
-        <VolumeUp $size={iconSize} />
+        <VolumeUp $size={iconSize} title="max volume" />
       </IconButton>
     ),
     [onChange, $volumeControlButtonStylePreset],
@@ -93,6 +93,7 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
       values={volumeArr}
       onChange={onSliderChange}
       ariaLabel="Volume Control"
+      ariaValueText={`volume level ${volumeArr[0] * 10} of 10`}
       dataTestId="volume-control"
       $trackSize={$trackSize}
       $thumbSize={$thumbSize}

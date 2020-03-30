@@ -19,12 +19,17 @@ Cypress.Commands.add('checkA11yWithDefaultRules', () => {
   });
 });
 
-Cypress.Commands.add('checkA11yWithCustomRule', customRule => {
+Cypress.Commands.add('checkA11yWithCustomRule', disabledRules => {
   cy.checkA11y({
-    rules: {
-      'page-has-heading-one': {enabled: false},
-      [customRule]: {enabled: false},
-    },
+    rules: disabledRules.reduce(
+      (acc, rule) => {
+        acc[rule] = {enabled: false};
+        return acc;
+      },
+      {
+        'page-has-heading-one': {enabled: false},
+      },
+    ),
   });
 });
 

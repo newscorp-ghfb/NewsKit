@@ -38,6 +38,7 @@ export const Slider: React.FC<SliderProps> = ({
   values,
   vertical,
   ariaLabel = 'slider',
+  ariaValueText,
   minLabel,
   maxLabel,
   labelPosition = LabelPosition.Inline,
@@ -65,6 +66,9 @@ export const Slider: React.FC<SliderProps> = ({
         isDragged={isDragged}
         disabled={disabled}
         vertical={vertical}
+        aria-valuemin={min}
+        aria-valuemax={Math.floor(max)}
+        aria-orientation={vertical ? 'vertical' : 'horizontal'}
         style={getTrackBackgroundStyle(
           theme,
           $sliderTrackStylePreset,
@@ -92,6 +96,7 @@ export const Slider: React.FC<SliderProps> = ({
         {...p}
         disabled={disabled}
         aria-label={ariaLabel}
+        aria-valuetext={ariaValueText}
         $stylePreset={$sliderThumbStylePreset}
         $thumbSize={$thumbSize}
         values={values}

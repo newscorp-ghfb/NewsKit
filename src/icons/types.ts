@@ -1,16 +1,17 @@
 import {FloatProperty} from 'csstype';
 import {IconSizeKeys, ColorKeys} from '../themes';
 
-export interface SvgProps {
+export interface InternalSvgProps {
   $color?: ColorKeys;
   $float?: FloatProperty;
   $margin?: IconSizeKeys;
   $size?: IconSizeKeys;
+  viewBox?: string;
   title?: string;
-  ariaLabel?: string;
 }
 
-export type InternalSvgProps = Pick<
-  SvgProps,
-  '$color' | '$float' | '$margin' | '$size'
-> & {viewBox: string};
+export interface SvgProps extends InternalSvgProps {
+  focusable?: string;
+}
+
+export type ColoredSvgProps = Omit<SvgProps, '$color'>;

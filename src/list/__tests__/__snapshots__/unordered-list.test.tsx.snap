@@ -47,10 +47,13 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
         class="emotion-1"
       >
         <svg
+          aria-labelledby="bui-7"
           class="emotion-0"
           viewBox="0 0 400 400"
         >
-          <title>
+          <title
+            id="bui-7"
+          >
             Twitter logo
           </title>
           <g>
@@ -83,10 +86,13 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
         class="emotion-1"
       >
         <svg
+          aria-labelledby="bui-8"
           class="emotion-0"
           viewBox="0 0 400 400"
         >
-          <title>
+          <title
+            id="bui-8"
+          >
             Twitter logo
           </title>
           <g>
@@ -119,10 +125,13 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
         class="emotion-1"
       >
         <svg
+          aria-labelledby="bui-9"
           class="emotion-0"
           viewBox="0 0 400 400"
         >
-          <title>
+          <title
+            id="bui-9"
+          >
             Twitter logo
           </title>
           <g>

@@ -1,15 +1,13 @@
 import React from 'react';
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgProps} from './types';
+import {ColoredSvgProps} from './types';
 
-const defaultIcon: React.FC<SvgProps> = ({
-  $size,
+const defaultIcon: React.FC<ColoredSvgProps> = ({
   title = 'Facebook icon',
-  ariaLabel,
+  ...props
 }) => (
-  <Svg viewBox="0 0 1365.3333 1365.3333" $size={$size} aria-label={ariaLabel}>
-    <title>{title}</title>
+  <Svg viewBox="0 0 1365.3333 1365.3333" {...props} title={title}>
     <g transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)">
       <g transform="scale(0.1)">
         <path
@@ -25,7 +23,7 @@ const defaultIcon: React.FC<SvgProps> = ({
   </Svg>
 );
 
-export const Facebook = withTheme<SvgProps>(props => {
+export const Facebook = withTheme<ColoredSvgProps>(props => {
   const Icon = props.theme.icons.Facebook || defaultIcon;
   return <Icon {...props} />;
 });

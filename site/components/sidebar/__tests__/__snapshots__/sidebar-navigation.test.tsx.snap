@@ -136,10 +136,13 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
         >
           Group 1
           <svg
+            aria-labelledby="bui-23"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
-            <title>
+            <title
+              id="bui-23"
+            >
               close icon
             </title>
             <g
@@ -170,10 +173,13 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
         >
           Group 2
           <svg
+            aria-labelledby="bui-24"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
-            <title>
+            <title
+              id="bui-24"
+            >
               open icon
             </title>
             <g
@@ -239,10 +245,13 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
             >
               Group 2b
               <svg
+                aria-labelledby="bui-25"
                 class="emotion-0"
                 viewBox="0 0 16 16"
               >
-                <title>
+                <title
+                  id="bui-25"
+                >
                   close icon
                 </title>
                 <g
@@ -382,10 +391,13 @@ exports[`Sidebar navigation on group 1 page after click group1 menu collapses 1`
         >
           Group 1
           <svg
+            aria-labelledby="bui-9"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
-            <title>
+            <title
+              id="bui-9"
+            >
               close icon
             </title>
             <g
@@ -416,10 +428,13 @@ exports[`Sidebar navigation on group 1 page after click group1 menu collapses 1`
         >
           Group 2
           <svg
+            aria-labelledby="bui-10"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
-            <title>
+            <title
+              id="bui-10"
+            >
               close icon
             </title>
             <g
@@ -557,10 +572,13 @@ exports[`Sidebar navigation on group 1 page after enter key group1 menu collapse
         >
           Group 1
           <svg
+            aria-labelledby="bui-13"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
-            <title>
+            <title
+              id="bui-13"
+            >
               close icon
             </title>
             <g
@@ -591,10 +609,13 @@ exports[`Sidebar navigation on group 1 page after enter key group1 menu collapse
         >
           Group 2
           <svg
+            aria-labelledby="bui-14"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
-            <title>
+            <title
+              id="bui-14"
+            >
               close icon
             </title>
             <g
@@ -809,10 +830,13 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
         >
           Group 1
           <svg
+            aria-labelledby="bui-17"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
-            <title>
+            <title
+              id="bui-17"
+            >
               close icon
             </title>
             <g
@@ -843,10 +867,13 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
         >
           Group 2
           <svg
+            aria-labelledby="bui-18"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
-            <title>
+            <title
+              id="bui-18"
+            >
               open icon
             </title>
             <g
@@ -912,10 +939,13 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
             >
               Group 2b
               <svg
+                aria-labelledby="bui-19"
                 class="emotion-0"
                 viewBox="0 0 16 16"
               >
-                <title>
+                <title
+                  id="bui-19"
+                >
                   close icon
                 </title>
                 <g
@@ -1132,10 +1162,13 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
         >
           Group 1
           <svg
+            aria-labelledby="bui-5"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
-            <title>
+            <title
+              id="bui-5"
+            >
               open icon
             </title>
             <g
@@ -1187,10 +1220,13 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
         >
           Group 2
           <svg
+            aria-labelledby="bui-6"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
-            <title>
+            <title
+              id="bui-6"
+            >
               close icon
             </title>
             <g
@@ -1328,10 +1364,13 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
         >
           Group 1
           <svg
+            aria-labelledby="bui-1"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
-            <title>
+            <title
+              id="bui-1"
+            >
               close icon
             </title>
             <g
@@ -1362,10 +1401,13 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
         >
           Group 2
           <svg
+            aria-labelledby="bui-2"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
-            <title>
+            <title
+              id="bui-2"
+            >
               close icon
             </title>
             <g
@@ -1503,10 +1545,13 @@ exports[`Sidebar navigation on route level renders correctly without given path 
         >
           Group 1
           <svg
+            aria-labelledby="bui-3"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
-            <title>
+            <title
+              id="bui-3"
+            >
               close icon
             </title>
             <g
@@ -1537,10 +1582,13 @@ exports[`Sidebar navigation on route level renders correctly without given path 
         >
           Group 2
           <svg
+            aria-labelledby="bui-4"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
-            <title>
+            <title
+              id="bui-4"
+            >
               close icon
             </title>
             <g

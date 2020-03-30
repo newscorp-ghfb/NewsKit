@@ -337,10 +337,13 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
         class="emotion-1"
       >
         <svg
+          aria-labelledby="bui-2"
           class="emotion-0"
           viewBox="0 0 24 24"
         >
-          <title>
+          <title
+            id="bui-2"
+          >
             Email icon
           </title>
           <path
@@ -473,10 +476,13 @@ exports[`Flag renders a solid flag with an icon 1`] = `
         class="emotion-1"
       >
         <svg
+          aria-labelledby="bui-1"
           class="emotion-0"
           viewBox="0 0 24 24"
         >
-          <title>
+          <title
+            id="bui-1"
+          >
             Email icon
           </title>
           <path

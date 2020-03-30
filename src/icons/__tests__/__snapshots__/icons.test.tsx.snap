@@ -21,10 +21,13 @@ exports[`Bookmark renders the Bookmark icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-1"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-1"
+    >
       Bookmark icon
     </title>
     <path
@@ -45,10 +48,13 @@ exports[`Bookmark renders the Bookmark icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-2"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-2"
+    >
       override title value
     </title>
     <path
@@ -79,10 +85,13 @@ exports[`Circle renders the Circle icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-3"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-3"
+    >
       Circle
     </title>
     <circle
@@ -105,10 +114,13 @@ exports[`Circle renders the Circle icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-4"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-4"
+    >
       override title value
     </title>
     <circle
@@ -141,10 +153,13 @@ exports[`Comment renders the Comment icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-5"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-5"
+    >
       Comment icon
     </title>
     <path
@@ -165,10 +180,13 @@ exports[`Comment renders the Comment icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-6"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-6"
+    >
       override title value
     </title>
     <path
@@ -199,10 +217,13 @@ exports[`CopyLink renders the CopyLink icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-7"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-7"
+    >
       Copy icon
     </title>
     <path
@@ -227,10 +248,13 @@ exports[`CopyLink renders the CopyLink icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-8"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-8"
+    >
       override title value
     </title>
     <path
@@ -265,10 +289,13 @@ exports[`Email renders the Email icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-9"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-9"
+    >
       Email icon
     </title>
     <path
@@ -289,10 +316,13 @@ exports[`Email renders the Email icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-10"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-10"
+    >
       override title value
     </title>
     <path
@@ -315,18 +345,21 @@ exports[`Facebook renders the Facebook icon from theme override 1`] = `
 exports[`Facebook renders the Facebook icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
 }
 
 <svg
+    aria-labelledby="bui-11"
     class="emotion-0"
     viewBox="0 0 1365.3333 1365.3333"
   >
-    <title>
+    <title
+      id="bui-11"
+    >
       Facebook icon
     </title>
     <g
@@ -352,18 +385,21 @@ exports[`Facebook renders the Facebook icon with specified style 1`] = `
 exports[`Facebook renders the Facebook icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
 }
 
 <svg
+    aria-labelledby="bui-12"
     class="emotion-0"
     viewBox="0 0 1365.3333 1365.3333"
   >
-    <title>
+    <title
+      id="bui-12"
+    >
       override title value
     </title>
     <g
@@ -407,10 +443,13 @@ exports[`Forward10 renders the Forward10 icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-40"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-40"
+    >
       Forward10 icon
     </title>
     <path
@@ -438,10 +477,13 @@ exports[`Forward10 renders the Forward10 icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-41"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-41"
+    >
       override title value
     </title>
     <path
@@ -471,18 +513,21 @@ exports[`GitHub renders the GitHub icon from theme override 1`] = `
 exports[`GitHub renders the GitHub icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
 }
 
 <svg
+    aria-labelledby="bui-13"
     class="emotion-0"
     viewBox="0 0 16 16"
   >
-    <title>
+    <title
+      id="bui-13"
+    >
       GitHub icon
     </title>
     <path
@@ -497,18 +542,21 @@ exports[`GitHub renders the GitHub icon with specified style 1`] = `
 exports[`GitHub renders the GitHub icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
 }
 
 <svg
+    aria-labelledby="bui-14"
     class="emotion-0"
     viewBox="0 0 16 16"
   >
-    <title>
+    <title
+      id="bui-14"
+    >
       override title value
     </title>
     <path
@@ -541,10 +589,13 @@ exports[`Menu renders the Menu icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-18"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-18"
+    >
       Menu icon
     </title>
     <rect
@@ -583,10 +634,13 @@ exports[`Menu renders the Menu icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-19"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-19"
+    >
       override title value
     </title>
     <rect
@@ -635,10 +689,13 @@ exports[`Pause renders the Pause icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-26"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-26"
+    >
       Pause
     </title>
     <path
@@ -659,10 +716,13 @@ exports[`Pause renders the Pause icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-27"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-27"
+    >
       override title value
     </title>
     <path
@@ -693,10 +753,13 @@ exports[`Placeholder renders the Placeholder icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-20"
     class="emotion-0"
     viewBox="0 0 88 88"
   >
-    <title>
+    <title
+      id="bui-20"
+    >
       Placeholder
     </title>
     <path
@@ -717,10 +780,13 @@ exports[`Placeholder renders the Placeholder icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-21"
     class="emotion-0"
     viewBox="0 0 88 88"
   >
-    <title>
+    <title
+      id="bui-21"
+    >
       override title value
     </title>
     <path
@@ -751,10 +817,13 @@ exports[`Play renders the Play icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-28"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-28"
+    >
       Play
     </title>
     <polygon
@@ -775,10 +844,13 @@ exports[`Play renders the Play icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-29"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-29"
+    >
       override title value
     </title>
     <polygon
@@ -809,10 +881,13 @@ exports[`Popout renders the Popout icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-50"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-50"
+    >
       Popout
     </title>
     <path
@@ -837,10 +912,13 @@ exports[`Popout renders the Popout icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-51"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-51"
+    >
       override title value
     </title>
     <path
@@ -875,10 +953,13 @@ exports[`Replay10 renders the Replay10 icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-42"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-42"
+    >
       Replay10 icon
     </title>
     <path
@@ -899,10 +980,13 @@ exports[`Replay10 renders the Replay10 icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-43"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-43"
+    >
       override title value
     </title>
     <path
@@ -933,10 +1017,13 @@ exports[`SaveActive renders the SaveActive icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-22"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-22"
+    >
       Save active icon
     </title>
     <polygon
@@ -958,10 +1045,13 @@ exports[`SaveActive renders the SaveActive icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-23"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-23"
+    >
       override title value
     </title>
     <polygon
@@ -993,10 +1083,13 @@ exports[`SaveInactive renders the SaveInactive icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-24"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-24"
+    >
       Save inactive icon
     </title>
     <path
@@ -1018,10 +1111,13 @@ exports[`SaveInactive renders the SaveInactive icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-25"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-25"
+    >
       override title value
     </title>
     <path
@@ -1053,10 +1149,13 @@ exports[`SkipNext renders the SkipNext icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-46"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-46"
+    >
       SkipNext icon
     </title>
     <path
@@ -1081,10 +1180,13 @@ exports[`SkipNext renders the SkipNext icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-47"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-47"
+    >
       override title value
     </title>
     <path
@@ -1119,10 +1221,13 @@ exports[`SkipPrevious renders the SkipPrevious icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-48"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-48"
+    >
       SkipPrevious icon
     </title>
     <path
@@ -1147,10 +1252,13 @@ exports[`SkipPrevious renders the SkipPrevious icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-49"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-49"
+    >
       override title value
     </title>
     <path
@@ -1185,10 +1293,13 @@ exports[`Square renders the Square icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-44"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-44"
+    >
       Square
     </title>
     <path
@@ -1213,10 +1324,13 @@ exports[`Square renders the Square icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-45"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-45"
+    >
       override title value
     </title>
     <path
@@ -1251,10 +1365,13 @@ exports[`Twitter renders the Twitter icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-30"
     class="emotion-0"
     viewBox="0 0 400 400"
   >
-    <title>
+    <title
+      id="bui-30"
+    >
       Twitter logo
     </title>
     <g>
@@ -1291,10 +1408,13 @@ exports[`Twitter renders the Twitter icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-31"
     class="emotion-0"
     viewBox="0 0 400 400"
   >
-    <title>
+    <title
+      id="bui-31"
+    >
       override title value
     </title>
     <g>
@@ -1341,10 +1461,13 @@ exports[`VolumeDown renders the VolumeDown icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-32"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-32"
+    >
       Volume down
     </title>
     <path
@@ -1369,10 +1492,13 @@ exports[`VolumeDown renders the VolumeDown icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-33"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-33"
+    >
       override title value
     </title>
     <path
@@ -1407,10 +1533,13 @@ exports[`VolumeMute renders the VolumeMute icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-34"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-34"
+    >
       Volume mute
     </title>
     <path
@@ -1435,10 +1564,13 @@ exports[`VolumeMute renders the VolumeMute icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-35"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
-    <title>
+    <title
+      id="bui-35"
+    >
       override title value
     </title>
     <path
@@ -1473,9 +1605,15 @@ exports[`VolumeUp renders the VolumeUp icon with specified style 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-36"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
+    <title
+      id="bui-36"
+    >
+      Volume up
+    </title>
     <title>
       Volume up
     </title>
@@ -1501,9 +1639,15 @@ exports[`VolumeUp renders the VolumeUp icon with title override 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-37"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
+    <title
+      id="bui-37"
+    >
+      override title value
+    </title>
     <title>
       override title value
     </title>
@@ -1531,18 +1675,21 @@ exports[`WhatsApp renders the WhatsApp icon from theme override 1`] = `
 exports[`WhatsApp renders the WhatsApp icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
 }
 
 <svg
+    aria-labelledby="bui-38"
     class="emotion-0"
     viewBox="0 0 400 400"
   >
-    <title>
+    <title
+      id="bui-38"
+    >
       WhatsApp Logo
     </title>
     <g>
@@ -1570,18 +1717,21 @@ exports[`WhatsApp renders the WhatsApp icon with specified style 1`] = `
 exports[`WhatsApp renders the WhatsApp icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
 }
 
 <svg
+    aria-labelledby="bui-39"
     class="emotion-0"
     viewBox="0 0 400 400"
   >
-    <title>
+    <title
+      id="bui-39"
+    >
       override title value
     </title>
     <g>
@@ -1602,6 +1752,141 @@ exports[`WhatsApp renders the WhatsApp icon with title override 1`] = `
         />
       </g>
     </g>
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`defaultIcon renders the defaultIcon icon from theme override 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #535353;
+  color: #535353;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}
+
+<svg
+    aria-labelledby="bui-17"
+    class="emotion-0"
+    viewBox="0 0 24 24"
+  >
+    <title
+      id="bui-17"
+    >
+      Menu icon
+    </title>
+    <rect
+      height="2"
+      rx="1"
+      width="16"
+      x="4"
+      y="11"
+    />
+    <rect
+      height="2"
+      rx="1"
+      width="16"
+      x="4"
+      y="5"
+    />
+    <rect
+      height="2"
+      rx="1"
+      width="16"
+      x="4"
+      y="17"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`defaultIcon renders the defaultIcon icon with specified style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #535353;
+  color: #535353;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}
+
+<svg
+    aria-labelledby="bui-15"
+    class="emotion-0"
+    viewBox="0 0 24 24"
+  >
+    <title
+      id="bui-15"
+    >
+      Menu icon
+    </title>
+    <rect
+      height="2"
+      rx="1"
+      width="16"
+      x="4"
+      y="11"
+    />
+    <rect
+      height="2"
+      rx="1"
+      width="16"
+      x="4"
+      y="5"
+    />
+    <rect
+      height="2"
+      rx="1"
+      width="16"
+      x="4"
+      y="17"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`defaultIcon renders the defaultIcon icon with title override 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #535353;
+  color: #535353;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}
+
+<svg
+    aria-labelledby="bui-16"
+    class="emotion-0"
+    viewBox="0 0 24 24"
+  >
+    <title
+      id="bui-16"
+    >
+      override title value
+    </title>
+    <rect
+      height="2"
+      rx="1"
+      width="16"
+      x="4"
+      y="11"
+    />
+    <rect
+      height="2"
+      rx="1"
+      width="16"
+      x="4"
+      y="5"
+    />
+    <rect
+      height="2"
+      rx="1"
+      width="16"
+      x="4"
+      y="17"
+    />
   </svg>
 </DocumentFragment>
 `;

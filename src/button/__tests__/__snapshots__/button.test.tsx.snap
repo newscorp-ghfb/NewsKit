@@ -417,10 +417,13 @@ exports[`Button IconButton renders Icon Button with fallback formatting 1`] = `
         class="emotion-1"
       >
         <svg
+          aria-labelledby="bui-1"
           class="emotion-0"
           viewBox="0 0 24 24"
         >
-          <title>
+          <title
+            id="bui-1"
+          >
             Email icon
           </title>
           <path
@@ -549,10 +552,13 @@ exports[`Button IconButton renders Large Icon Button 1`] = `
         class="emotion-1"
       >
         <svg
+          aria-labelledby="bui-4"
           class="emotion-0"
           viewBox="0 0 24 24"
         >
-          <title>
+          <title
+            id="bui-4"
+          >
             Email icon
           </title>
           <path
@@ -681,10 +687,13 @@ exports[`Button IconButton renders Medium Icon Button 1`] = `
         class="emotion-1"
       >
         <svg
+          aria-labelledby="bui-3"
           class="emotion-0"
           viewBox="0 0 24 24"
         >
-          <title>
+          <title
+            id="bui-3"
+          >
             Email icon
           </title>
           <path
@@ -823,10 +832,13 @@ exports[`Button IconButton renders Small Icon Button 1`] = `
         class="emotion-1"
       >
         <svg
+          aria-labelledby="bui-2"
           class="emotion-0"
           viewBox="0 0 24 24"
         >
-          <title>
+          <title
+            id="bui-2"
+          >
             Email icon
           </title>
           <path
@@ -965,10 +977,13 @@ exports[`Button IconButton renders when there is an icon with a colour 1`] = `
         class="emotion-1"
       >
         <svg
+          aria-labelledby="bui-5"
           class="emotion-0"
           viewBox="0 0 24 24"
         >
-          <title>
+          <title
+            id="bui-5"
+          >
             Email icon
           </title>
           <path

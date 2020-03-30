@@ -12,8 +12,7 @@ import {Item} from './types';
 import {handleEnterKeyPress} from '../../helpers/a11y';
 
 const OpenIcon: React.FC = () => (
-  <Svg $size="iconSize010" $float="right" viewBox="0 0 16 16">
-    <title>open icon</title>
+  <Svg $size="iconSize010" $float="right" viewBox="0 0 16 16" title="open icon">
     <g fill="none">
       <mask fill="white">
         <polygon points="7 14 12 9 17 14" />
@@ -22,10 +21,13 @@ const OpenIcon: React.FC = () => (
     </g>
   </Svg>
 );
-
 const CloseIcon: React.FC = () => (
-  <Svg $size="iconSize010" $float="right" viewBox="0 0 16 16">
-    <title>close icon</title>
+  <Svg
+    $size="iconSize010"
+    $float="right"
+    viewBox="0 0 16 16"
+    title="close icon"
+  >
     <g fill="none">
       <mask fill="white">
         <polygon points="7 10 12 15 17 10" />

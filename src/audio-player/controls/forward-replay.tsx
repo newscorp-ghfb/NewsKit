@@ -13,7 +13,7 @@ export const ForwardButton: React.FC<TrackControlProps> = React.memo(props => (
     $size={ButtonSize.Medium}
     {...props}
   >
-    <Forward10 />
+    <Forward10 focusable="false" title="fast forward 10 seconds" />
   </IconButton>
 ));
 
@@ -22,5 +22,7 @@ export const BackwardButton: React.FC<TrackControlProps> = React.memo(props => (
     data-testid="audio-player-backward"
     $size={ButtonSize.Medium}
     {...props}
-  />
+  >
+    <Replay10 focusable="false" title="rewind 10 seconds" />
+  </IconButton>
 ));

@@ -28,7 +28,12 @@ export const PopoutButton: React.FC<PopoutButtonProps> = React.memo(props => {
           : undefined
       }
     >
-      <Popout $size="iconSize020" $color="buttonFill" />
+      <Popout
+        $size="iconSize020"
+        $color="buttonFill"
+        focusable="false"
+        title="open popout player"
+      />
     </IconButton>
   );
 });

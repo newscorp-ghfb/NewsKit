@@ -14,6 +14,7 @@ const SlackLogo: React.FC<SlackLogoProps & {theme: Theme}> = props => {
       className="slack-logo"
       viewBox="0 0 123 123"
       aria-hidden="true"
+      title="slack logo"
       {...props}
     >
       <g fill={theme.colors[$color]}>

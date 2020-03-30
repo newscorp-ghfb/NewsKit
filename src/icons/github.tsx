@@ -1,15 +1,13 @@
 import React from 'react';
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgProps} from './types';
+import {ColoredSvgProps} from './types';
 
-const defaultIcon: React.FC<SvgProps> = ({
-  $size,
+const defaultIcon: React.FC<ColoredSvgProps> = ({
   title = 'GitHub icon',
-  ariaLabel,
+  ...props
 }) => (
-  <Svg viewBox="0 0 16 16" $size={$size} aria-label={ariaLabel}>
-    <title>{title}</title>
+  <Svg viewBox="0 0 16 16" {...props} title={title}>
     <path
       fillRule="evenodd"
       fill="#000000"
@@ -18,7 +16,7 @@ const defaultIcon: React.FC<SvgProps> = ({
   </Svg>
 );
 
-export const GitHub = withTheme<SvgProps>(props => {
+export const GitHub = withTheme<ColoredSvgProps>(props => {
   const Icon = props.theme.icons.GitHub || defaultIcon;
   return <Icon {...props} />;
 });

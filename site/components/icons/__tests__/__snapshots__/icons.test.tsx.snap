@@ -11,9 +11,15 @@ exports[`Icons Close icon renders as expected 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-1"
     class="emotion-0"
     viewBox="0 0 14 14"
   >
+    <title
+      id="bui-1"
+    >
+      close icon
+    </title>
     <g
       fill="none"
       fill-rule="evenodd"
@@ -39,9 +45,15 @@ exports[`Icons Menu icon renders as expected 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-2"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
+    <title
+      id="bui-2"
+    >
+      menu icon
+    </title>
     <g
       fill="none"
       fill-rule="evenodd"
@@ -66,9 +78,15 @@ exports[`Icons Search icon renders as expected 1`] = `
 }
 
 <svg
+    aria-labelledby="bui-3"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
+    <title
+      id="bui-3"
+    >
+      search icon
+    </title>
     <g
       fill="#2E2E2E"
       fill-opacity=".87"

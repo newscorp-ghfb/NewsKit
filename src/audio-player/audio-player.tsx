@@ -15,7 +15,7 @@ import {
 import {AudioElement} from './audio-element';
 import {SliderStylePresets, Slider, SliderProps} from '../slider';
 import {Stack, StackDistribution, Flow} from '../stack';
-import {PlayerContainer, ControlContainer} from './styled';
+import {PlayerGrid, ControlContainer, PlayerContainer} from './styled';
 import {VolumeControl} from '../volume-control';
 import {Cell} from '../grid/cell';
 import {formatTrackTime, formatTrackData, getMediaSegment} from './utils';
@@ -407,99 +407,113 @@ const InternalAudioPlayer: React.FC<InstrumentedAudioPlayerProps> = props => {
     ? formatTrackTime(trackPosition, duration)
     : '';
 
+  const seekBarAriaValueText = (seekTime: number[]) => {
+    const time = new Date(seekTime[0] * 1000)
+      .toISOString()
+      .substr(11, 8)
+      .split(':');
+    return `${time[0]} hour ${time[1]} minutes ${time[2]} seconds`;
+  };
+
   return (
-    <PlayerContainer
-      xsMargin="sizing000"
-      xsColumnGutter="sizing000"
-      xsRowGutter="sizing000"
-    >
-      <AudioElement
-        src={src}
-        onPlay={onPlay}
-        onPause={onPause}
-        playing={isPlaying}
-        onDurationChange={onDurationChange}
-        onTimeUpdate={onTimeUpdate}
-        onProgress={onProgress}
-        onVolumeChange={onVolumeChange}
-        onEnded={onEnded}
-        data-testid="audio-player"
-        volume={volume}
-        newTime={newTime}
-        {...restProps}
-      />
+    <PlayerContainer aria-label="audio player">
+      <PlayerGrid
+        xsMargin="sizing000"
+        xsColumnGutter="sizing000"
+        xsRowGutter="sizing000"
+      >
+        <AudioElement
+          src={src}
+          onPlay={onPlay}
+          onPause={onPause}
+          playing={isPlaying}
+          onDurationChange={onDurationChange}
+          onTimeUpdate={onTimeUpdate}
+          onProgress={onProgress}
+          onVolumeChange={onVolumeChange}
+          onEnded={onEnded}
+          data-testid="audio-player"
+          volume={volume}
+          newTime={newTime}
+          {...restProps}
+        />
 
-      {children && <Cell xs={12}>{children}</Cell>}
+        {children && <Cell xs={12}>{children}</Cell>}
 
-      <Cell xsOrder={2} xs={12}>
-        <Stack
-          flow={Flow.HorizontalCenter}
-          stackDistribution={StackDistribution.SpaceBetween}
-        >
-          <StackChild order={2}>
-            <ControlPanel
-              onNextTrack={onNextTrack ? onClickNext : undefined}
-              disableNextTrack={disableNextTrack}
-              onPreviousTrack={onClickPrevious}
-              disablePreviousTrack={isPrevTrackBtnDisabled}
-              live={live}
-              showControls={showControls}
-              isPlaying={isPlaying}
-              onClickBackward={onClickBackward}
-              onClickForward={onClickForward}
-              togglePlay={togglePlay}
-              $controlPresets={controlPresets}
-            />
-          </StackChild>
-          <StackChild order={1}>
-            <ControlContainer $playerTrackSize="sizing050" xs sm>
-              <VolumeControl
-                volume={volume}
-                onChange={setVolume}
-                $trackSize="sizing010"
-                $thumbSize="sizing040"
-                {...volumePresets}
+        <Cell xsOrder={2} xs={12}>
+          <Stack
+            flow={Flow.HorizontalCenter}
+            stackDistribution={StackDistribution.SpaceBetween}
+          >
+            <StackChild order={2}>
+              <ControlPanel
+                onNextTrack={onNextTrack ? onClickNext : undefined}
+                disableNextTrack={disableNextTrack}
+                onPreviousTrack={onClickPrevious}
+                disablePreviousTrack={isPrevTrackBtnDisabled}
+                live={live}
+                showControls={showControls}
+                isPlaying={isPlaying}
+                onClickBackward={onClickBackward}
+                onClickForward={onClickForward}
+                togglePlay={togglePlay}
+                $controlPresets={controlPresets}
               />
-            </ControlContainer>
-          </StackChild>
-          <StackChild order={3}>
-            <ControlContainer $playerTrackSize="sizing050" xs sm>
-              <Stack
-                flow={Flow.VerticalRight}
-                stackDistribution={StackDistribution.End}
-              >
-                {popoutHref && (
-                  <PopoutButton
-                    onClick={onPopoutClick}
-                    href={popoutHref}
-                    $stylePreset={controlPresets.popout}
-                  />
-                )}
-              </Stack>
-            </ControlContainer>
-          </StackChild>
-        </Stack>
-      </Cell>
-
-      {showControls && (
-        <Cell xsOrder={1} xs={12}>
-          <Slider
-            min={0}
-            minLabel={formattedTime}
-            max={duration || 1}
-            maxLabel={formattedDuration}
-            values={trackPositionArr}
-            step={1}
-            $thumbSize="sizing040"
-            $trackSize="sizing020"
-            onChange={onChangeSlider}
-            renderTrack={renderTrack}
-            labelPosition={LabelPosition.After}
-            dataTestId="audio-slider"
-            {...trackPresets}
-          />
+            </StackChild>
+            <StackChild order={1}>
+              <ControlContainer $playerTrackSize="sizing050" xs sm>
+                <VolumeControl
+                  volume={volume}
+                  onChange={setVolume}
+                  $trackSize="sizing010"
+                  $thumbSize="sizing040"
+                  {...volumePresets}
+                />
+              </ControlContainer>
+            </StackChild>
+            <StackChild order={3}>
+              <ControlContainer $playerTrackSize="sizing050" xs sm>
+                <Stack
+                  flow={Flow.VerticalRight}
+                  stackDistribution={StackDistribution.End}
+                >
+                  {popoutHref && (
+                    <PopoutButton
+                      onClick={onPopoutClick}
+                      href={popoutHref}
+                      $stylePreset={controlPresets.popout}
+                    />
+                  )}
+                </Stack>
+              </ControlContainer>
+            </StackChild>
+          </Stack>
         </Cell>
-      )}
+
+        {showControls && (
+          <Cell xsOrder={1} xs={12}>
+            <Slider
+              min={0}
+              minLabel={formattedTime}
+              max={duration || 1}
+              maxLabel={formattedDuration}
+              values={trackPositionArr}
+              step={1}
+              ariaLabel="seek bar"
+              ariaValueText={`${seekBarAriaValueText(
+                trackPositionArr,
+              )} of ${seekBarAriaValueText([duration])}`}
+              $thumbSize="sizing040"
+              $trackSize="sizing020"
+              onChange={onChangeSlider}
+              renderTrack={renderTrack}
+              labelPosition={LabelPosition.After}
+              dataTestId="audio-slider"
+              {...trackPresets}
+            />
+          </Cell>
+        )}
+      </PlayerGrid>
     </PlayerContainer>
   );
 };

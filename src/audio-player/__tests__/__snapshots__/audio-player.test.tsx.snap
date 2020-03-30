@@ -2,7 +2,11 @@
 
 exports[`Audio Player live player renders as expected 1`] = `
 <DocumentFragment>
-  .emotion-43 {
+  .emotion-44 {
+  width: 100%;
+}
+
+.emotion-43 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
@@ -713,16 +717,20 @@ exports[`Audio Player live player renders as expected 1`] = `
   display: inline-block;
 }
 
-<div
-    class="emotion-43"
+<section
+    aria-label="audio player"
+    class="emotion-44"
   >
     <div
-      class="emotion-42"
+      class="emotion-43"
     >
-      <audio
-        data-testid="mock-audio-element"
+      <div
+        class="emotion-42"
       >
-        {
+        <audio
+          data-testid="mock-audio-element"
+        >
+          {
   "src": "https://radio.talkradio.co.uk/stream",
   "captionSrc": "captions.vtt",
   "title": "The Breakfast Show with Giles Coren",
@@ -731,42 +739,128 @@ exports[`Audio Player live player renders as expected 1`] = `
   "newTime": -1,
   "dataTestId": "audio-player"
 }
-      </audio>
-      <div
-        class="emotion-0"
-      >
-        <div>
-          Well hello there children!!!
-        </div>
-      </div>
-      <div
-        class="emotion-41"
-      >
+        </audio>
         <div
-          class="emotion-40"
+          class="emotion-0"
+        >
+          <div>
+            Well hello there children!!!
+          </div>
+        </div>
+        <div
+          class="emotion-41"
         >
           <div
-            class="emotion-7"
-            order="2"
+            class="emotion-40"
           >
             <div
-              class="emotion-16"
+              class="emotion-7"
+              order="2"
             >
               <div
-                class="emotion-15"
+                class="emotion-16"
               >
                 <div
-                  class="emotion-6"
-                  order="3"
+                  class="emotion-15"
                 >
                   <div
-                    class="emotion-5"
+                    class="emotion-6"
                     order="3"
                   >
+                    <div
+                      class="emotion-5"
+                      order="3"
+                    >
+                      <button
+                        aria-pressed="false"
+                        class="emotion-4"
+                        data-testid="audio-player-play-button"
+                        type="button"
+                      >
+                        <div
+                          class="emotion-3"
+                        >
+                          <div
+                            class="emotion-2"
+                          >
+                            <svg
+                              aria-labelledby="bui-1"
+                              class="emotion-1"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <title
+                                id="bui-1"
+                              >
+                                Play
+                              </title>
+                              <polygon
+                                points="8 5 8 19 19 12"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-8"
+                    order="2"
+                  >
+                    <div
+                      class="emotion-7"
+                      order="2"
+                    />
+                  </div>
+                  <div
+                    class="emotion-6"
+                    order="3"
+                  >
+                    <div
+                      class="emotion-5"
+                      order="3"
+                    />
+                  </div>
+                  <div
+                    class="emotion-12"
+                    order="1"
+                  >
+                    <div
+                      class="emotion-11"
+                      order="1"
+                    />
+                  </div>
+                  <div
+                    class="emotion-14"
+                    order="5"
+                  >
+                    <div
+                      class="emotion-13"
+                      order="5"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="emotion-11"
+              order="1"
+            >
+              <div
+                class="emotion-31"
+              >
+                <div
+                  class="emotion-30"
+                  data-testid="volume-control"
+                >
+                  <div
+                    class="emotion-22"
+                    data-testid="min-label"
+                  >
                     <button
-                      aria-pressed="false"
-                      class="emotion-4"
-                      data-testid="audio-player-play-button"
+                      class="emotion-21"
+                      data-testid="mute-button"
+                      tabindex="-1"
                       type="button"
                     >
                       <div
@@ -776,14 +870,86 @@ exports[`Audio Player live player renders as expected 1`] = `
                           class="emotion-2"
                         >
                           <svg
-                            class="emotion-1"
+                            aria-labelledby="bui-2"
+                            class="emotion-18"
                             viewBox="0 0 24 24"
                           >
-                            <title>
-                              Play
+                            <title
+                              id="bui-2"
+                            >
+                              mute
                             </title>
-                            <polygon
-                              points="8 5 8 19 19 12"
+                            <path
+                              d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                  <div
+                    aria-orientation="horizontal"
+                    aria-valuemax="1"
+                    aria-valuemin="0"
+                    class="emotion-24"
+                    data-testid="volume-control-track"
+                    style="background: rgb(255, 255, 0);"
+                    values="0.7"
+                  >
+                    <div
+                      aria-label="Volume Control"
+                      aria-valuemax="1"
+                      aria-valuemin="0"
+                      aria-valuenow="0.7"
+                      aria-valuetext="volume level 7 of 10"
+                      class="emotion-23"
+                      data-testid="volume-control-thumb"
+                      draggable="false"
+                      role="slider"
+                      style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                      tabindex="0"
+                      values="0.7"
+                    />
+                  </div>
+                  <div
+                    class="emotion-29"
+                    data-testid="max-label"
+                  >
+                    <button
+                      class="emotion-21"
+                      data-testid="volumeup-button"
+                      tabindex="-1"
+                      type="button"
+                    >
+                      <div
+                        class="emotion-3"
+                      >
+                        <div
+                          class="emotion-2"
+                        >
+                          <svg
+                            aria-labelledby="bui-3"
+                            class="emotion-18"
+                            viewBox="0 0 24 24"
+                          >
+                            <title
+                              id="bui-3"
+                            >
+                              max volume
+                            </title>
+                            <title>
+                              max volume
+                            </title>
+                            <path
+                              d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
                             />
                           </svg>
                         </div>
@@ -791,64 +957,22 @@ exports[`Audio Player live player renders as expected 1`] = `
                     </button>
                   </div>
                 </div>
-                <div
-                  class="emotion-8"
-                  order="2"
-                >
-                  <div
-                    class="emotion-7"
-                    order="2"
-                  />
-                </div>
-                <div
-                  class="emotion-6"
-                  order="3"
-                >
-                  <div
-                    class="emotion-5"
-                    order="3"
-                  />
-                </div>
-                <div
-                  class="emotion-12"
-                  order="1"
-                >
-                  <div
-                    class="emotion-11"
-                    order="1"
-                  />
-                </div>
-                <div
-                  class="emotion-14"
-                  order="5"
-                >
-                  <div
-                    class="emotion-13"
-                    order="5"
-                  />
-                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="emotion-11"
-            order="1"
-          >
             <div
-              class="emotion-31"
+              class="emotion-5"
+              order="3"
             >
               <div
-                class="emotion-30"
-                data-testid="volume-control"
+                class="emotion-31"
               >
                 <div
-                  class="emotion-22"
-                  data-testid="min-label"
+                  class="emotion-37"
                 >
                   <button
-                    class="emotion-21"
-                    data-testid="mute-button"
-                    tabindex="-1"
+                    class="emotion-36"
+                    data-testid="audio-player-popout"
+                    href="www.popout-player.example.com"
                     type="button"
                   >
                     <div
@@ -858,135 +982,45 @@ exports[`Audio Player live player renders as expected 1`] = `
                         class="emotion-2"
                       >
                         <svg
-                          class="emotion-18"
+                          aria-labelledby="bui-4"
+                          class="emotion-33"
+                          focusable="false"
                           viewBox="0 0 24 24"
                         >
-                          <title>
-                            Volume down
+                          <title
+                            id="bui-4"
+                          >
+                            open popout player
                           </title>
-                          <path
-                            d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-                          />
                           <path
                             d="M0 0h24v24H0z"
                             fill="none"
+                          />
+                          <path
+                            d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
                           />
                         </svg>
                       </div>
                     </div>
                   </button>
                 </div>
-                <div
-                  class="emotion-24"
-                  data-testid="volume-control-track"
-                  style="background: rgb(255, 255, 0);"
-                  values="0.7"
-                >
-                  <div
-                    aria-label="Volume Control"
-                    aria-valuemax="1"
-                    aria-valuemin="0"
-                    aria-valuenow="0.7"
-                    class="emotion-23"
-                    data-testid="volume-control-thumb"
-                    draggable="false"
-                    role="slider"
-                    style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
-                    tabindex="0"
-                    values="0.7"
-                  />
-                </div>
-                <div
-                  class="emotion-29"
-                  data-testid="max-label"
-                >
-                  <button
-                    class="emotion-21"
-                    data-testid="volumeup-button"
-                    tabindex="-1"
-                    type="button"
-                  >
-                    <div
-                      class="emotion-3"
-                    >
-                      <div
-                        class="emotion-2"
-                      >
-                        <svg
-                          class="emotion-18"
-                          viewBox="0 0 24 24"
-                        >
-                          <title>
-                            Volume up
-                          </title>
-                          <path
-                            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                          />
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="emotion-5"
-            order="3"
-          >
-            <div
-              class="emotion-31"
-            >
-              <div
-                class="emotion-37"
-              >
-                <button
-                  class="emotion-36"
-                  data-testid="audio-player-popout"
-                  href="www.popout-player.example.com"
-                  type="button"
-                >
-                  <div
-                    class="emotion-3"
-                  >
-                    <div
-                      class="emotion-2"
-                    >
-                      <svg
-                        class="emotion-33"
-                        viewBox="0 0 24 24"
-                      >
-                        <title>
-                          Popout
-                        </title>
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </DocumentFragment>
 `;
 
 exports[`Audio Player recorded player renders and behaves as expected 8`] = `
 <DocumentFragment>
-  .emotion-63 {
+  .emotion-64 {
+  width: 100%;
+}
+
+.emotion-63 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
@@ -1828,16 +1862,20 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
   width: 100%;
 }
 
-<div
-    class="emotion-63"
+<section
+    aria-label="audio player"
+    class="emotion-64"
   >
     <div
-      class="emotion-62"
+      class="emotion-63"
     >
-      <audio
-        data-testid="mock-audio-element"
+      <div
+        class="emotion-62"
       >
-        {
+        <audio
+          data-testid="mock-audio-element"
+        >
+          {
   "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
   "captionSrc": "captions.vtt",
   "title": "The Breakfast Show with Giles Coren",
@@ -1846,193 +1884,263 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
   "newTime": 10,
   "dataTestId": "audio-player"
 }
-      </audio>
-      <div
-        class="emotion-0"
-      >
-        <div>
-          Well hello there children!!!
-        </div>
-      </div>
-      <div
-        class="emotion-53"
-      >
+        </audio>
         <div
-          class="emotion-52"
+          class="emotion-0"
+        >
+          <div>
+            Well hello there children!!!
+          </div>
+        </div>
+        <div
+          class="emotion-53"
         >
           <div
-            class="emotion-11"
-            order="2"
+            class="emotion-52"
           >
             <div
-              class="emotion-32"
+              class="emotion-11"
+              order="2"
             >
               <div
-                class="emotion-31"
+                class="emotion-32"
               >
                 <div
-                  class="emotion-6"
-                  order="3"
+                  class="emotion-31"
                 >
                   <div
-                    class="emotion-5"
+                    class="emotion-6"
                     order="3"
                   >
-                    <button
-                      aria-pressed="false"
-                      class="emotion-4"
-                      data-testid="audio-player-play-button"
-                      type="button"
+                    <div
+                      class="emotion-5"
+                      order="3"
                     >
-                      <div
-                        class="emotion-3"
+                      <button
+                        aria-pressed="false"
+                        class="emotion-4"
+                        data-testid="audio-player-play-button"
+                        type="button"
                       >
                         <div
-                          class="emotion-2"
+                          class="emotion-3"
                         >
-                          <svg
-                            class="emotion-1"
-                            viewBox="0 0 24 24"
+                          <div
+                            class="emotion-2"
                           >
-                            <title>
-                              Play
-                            </title>
-                            <polygon
-                              points="8 5 8 19 19 12"
-                            />
-                          </svg>
+                            <svg
+                              aria-labelledby="bui-75"
+                              class="emotion-1"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <title
+                                id="bui-75"
+                              >
+                                Play
+                              </title>
+                              <polygon
+                                points="8 5 8 19 19 12"
+                              />
+                            </svg>
+                          </div>
                         </div>
-                      </div>
-                    </button>
+                      </button>
+                    </div>
                   </div>
-                </div>
-                <div
-                  class="emotion-12"
-                  order="2"
-                >
                   <div
-                    class="emotion-11"
+                    class="emotion-12"
                     order="2"
                   >
-                    <button
-                      class="emotion-10"
-                      data-testid="audio-player-backward"
-                      type="button"
+                    <div
+                      class="emotion-11"
+                      order="2"
                     >
-                      <div
-                        class="emotion-3"
+                      <button
+                        class="emotion-10"
+                        data-testid="audio-player-backward"
+                        type="button"
                       >
                         <div
-                          class="emotion-2"
+                          class="emotion-3"
                         >
-                          <svg
-                            class="emotion-1"
-                            viewBox="0 0 24 24"
+                          <div
+                            class="emotion-2"
                           >
-                            <title>
-                              Replay10 icon
-                            </title>
-                            <path
-                              d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
-                            />
-                          </svg>
+                            <svg
+                              aria-labelledby="bui-46"
+                              class="emotion-1"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <title
+                                id="bui-46"
+                              >
+                                rewind 10 seconds
+                              </title>
+                              <path
+                                d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
+                              />
+                            </svg>
+                          </div>
                         </div>
-                      </div>
-                    </button>
+                      </button>
+                    </div>
                   </div>
-                </div>
-                <div
-                  class="emotion-6"
-                  order="3"
-                >
                   <div
-                    class="emotion-5"
+                    class="emotion-6"
                     order="3"
                   >
-                    <button
-                      class="emotion-10"
-                      data-testid="audio-player-forward"
-                      type="button"
+                    <div
+                      class="emotion-5"
+                      order="3"
                     >
-                      <div
-                        class="emotion-3"
+                      <button
+                        class="emotion-10"
+                        data-testid="audio-player-forward"
+                        type="button"
                       >
                         <div
-                          class="emotion-2"
+                          class="emotion-3"
                         >
-                          <svg
-                            class="emotion-1"
-                            viewBox="0 0 24 24"
+                          <div
+                            class="emotion-2"
                           >
-                            <title>
-                              Forward10 icon
-                            </title>
-                            <path
-                              d="M0 0h24v24H0z"
-                              fill="none"
-                            />
-                            <path
-                              d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
-                            />
-                            <path
-                              d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
-                            />
-                          </svg>
+                            <svg
+                              aria-labelledby="bui-47"
+                              class="emotion-1"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <title
+                                id="bui-47"
+                              >
+                                fast forward 10 seconds
+                              </title>
+                              <path
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                              <path
+                                d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+                              />
+                              <path
+                                d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+                              />
+                            </svg>
+                          </div>
                         </div>
-                      </div>
-                    </button>
+                      </button>
+                    </div>
                   </div>
-                </div>
-                <div
-                  class="emotion-24"
-                  order="1"
-                >
                   <div
-                    class="emotion-23"
+                    class="emotion-24"
                     order="1"
                   >
-                    <button
-                      class="emotion-10"
-                      data-testid="audio-player-skip-previous"
-                      type="button"
+                    <div
+                      class="emotion-23"
+                      order="1"
                     >
-                      <div
-                        class="emotion-3"
+                      <button
+                        class="emotion-10"
+                        data-testid="audio-player-skip-previous"
+                        type="button"
                       >
                         <div
-                          class="emotion-2"
+                          class="emotion-3"
                         >
-                          <svg
-                            class="emotion-1"
-                            viewBox="0 0 24 24"
+                          <div
+                            class="emotion-2"
                           >
-                            <title>
-                              SkipPrevious icon
-                            </title>
-                            <path
-                              d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
-                            />
-                            <path
-                              d="M0 0h24v24H0z"
-                              fill="none"
-                            />
-                          </svg>
+                            <svg
+                              aria-labelledby="bui-48"
+                              class="emotion-1"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <title
+                                id="bui-48"
+                              >
+                                previous
+                              </title>
+                              <path
+                                d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+                              />
+                              <path
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                            </svg>
+                          </div>
                         </div>
-                      </div>
-                    </button>
+                      </button>
+                    </div>
                   </div>
-                </div>
-                <div
-                  class="emotion-30"
-                  order="5"
-                >
                   <div
-                    class="emotion-29"
+                    class="emotion-30"
                     order="5"
                   >
+                    <div
+                      class="emotion-29"
+                      order="5"
+                    >
+                      <button
+                        class="emotion-10"
+                        data-testid="audio-player-skip-next"
+                        type="button"
+                      >
+                        <div
+                          class="emotion-3"
+                        >
+                          <div
+                            class="emotion-2"
+                          >
+                            <svg
+                              aria-labelledby="bui-9"
+                              class="emotion-1"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <title
+                                id="bui-9"
+                              >
+                                next
+                              </title>
+                              <path
+                                d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
+                              />
+                              <path
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="emotion-23"
+              order="1"
+            >
+              <div
+                class="emotion-47"
+              >
+                <div
+                  class="emotion-46"
+                  data-testid="volume-control"
+                >
+                  <div
+                    class="emotion-38"
+                    data-testid="min-label"
+                  >
                     <button
-                      class="emotion-10"
-                      data-testid="audio-player-skip-next"
+                      class="emotion-37"
+                      data-testid="mute-button"
+                      tabindex="-1"
                       type="button"
                     >
                       <div
@@ -2042,14 +2150,82 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
                           class="emotion-2"
                         >
                           <svg
-                            class="emotion-1"
+                            aria-labelledby="bui-76"
+                            class="emotion-34"
                             viewBox="0 0 24 24"
                           >
-                            <title>
-                              SkipNext icon
+                            <title
+                              id="bui-76"
+                            >
+                              mute
                             </title>
                             <path
-                              d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
+                              d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                  <div
+                    aria-orientation="horizontal"
+                    aria-valuemax="1"
+                    aria-valuemin="0"
+                    class="emotion-40"
+                    data-testid="volume-control-track"
+                    style="background: rgb(255, 255, 0);"
+                    values="0.1"
+                  >
+                    <div
+                      aria-label="Volume Control"
+                      aria-valuemax="1"
+                      aria-valuemin="0"
+                      aria-valuenow="0.1"
+                      aria-valuetext="volume level 1 of 10"
+                      class="emotion-39"
+                      data-testid="volume-control-thumb"
+                      draggable="false"
+                      role="slider"
+                      style="position: absolute; z-index: 0; cursor: grabbing; user-select: none; transform: translate(NaNpx, NaNpx);"
+                      tabindex="0"
+                      values="0.1"
+                    />
+                  </div>
+                  <div
+                    class="emotion-45"
+                    data-testid="max-label"
+                  >
+                    <button
+                      class="emotion-37"
+                      data-testid="volumeup-button"
+                      tabindex="-1"
+                      type="button"
+                    >
+                      <div
+                        class="emotion-3"
+                      >
+                        <div
+                          class="emotion-2"
+                        >
+                          <svg
+                            aria-labelledby="bui-77"
+                            class="emotion-34"
+                            viewBox="0 0 24 24"
+                          >
+                            <title
+                              id="bui-77"
+                            >
+                              max volume
+                            </title>
+                            <title>
+                              max volume
+                            </title>
+                            <path
+                              d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                             />
                             <path
                               d="M0 0h24v24H0z"
@@ -2063,176 +2239,73 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class="emotion-23"
-            order="1"
-          >
             <div
-              class="emotion-47"
+              class="emotion-5"
+              order="3"
             >
               <div
-                class="emotion-46"
-                data-testid="volume-control"
+                class="emotion-47"
               >
                 <div
-                  class="emotion-38"
-                  data-testid="min-label"
-                >
-                  <button
-                    class="emotion-37"
-                    data-testid="mute-button"
-                    tabindex="-1"
-                    type="button"
-                  >
-                    <div
-                      class="emotion-3"
-                    >
-                      <div
-                        class="emotion-2"
-                      >
-                        <svg
-                          class="emotion-34"
-                          viewBox="0 0 24 24"
-                        >
-                          <title>
-                            Volume down
-                          </title>
-                          <path
-                            d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-                          />
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </button>
-                </div>
-                <div
-                  class="emotion-40"
-                  data-testid="volume-control-track"
-                  style="background: rgb(255, 255, 0);"
-                  values="0.1"
-                >
-                  <div
-                    aria-label="Volume Control"
-                    aria-valuemax="1"
-                    aria-valuemin="0"
-                    aria-valuenow="0.1"
-                    class="emotion-39"
-                    data-testid="volume-control-thumb"
-                    draggable="false"
-                    role="slider"
-                    style="position: absolute; z-index: 0; cursor: grabbing; user-select: none; transform: translate(NaNpx, NaNpx);"
-                    tabindex="0"
-                    values="0.1"
-                  />
-                </div>
-                <div
-                  class="emotion-45"
-                  data-testid="max-label"
-                >
-                  <button
-                    class="emotion-37"
-                    data-testid="volumeup-button"
-                    tabindex="-1"
-                    type="button"
-                  >
-                    <div
-                      class="emotion-3"
-                    >
-                      <div
-                        class="emotion-2"
-                      >
-                        <svg
-                          class="emotion-34"
-                          viewBox="0 0 24 24"
-                        >
-                          <title>
-                            Volume up
-                          </title>
-                          <path
-                            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                          />
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </button>
-                </div>
+                  class="emotion-49"
+                />
               </div>
-            </div>
-          </div>
-          <div
-            class="emotion-5"
-            order="3"
-          >
-            <div
-              class="emotion-47"
-            >
-              <div
-                class="emotion-49"
-              />
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="emotion-61"
-      >
         <div
-          class="emotion-60"
-          data-testid="audio-slider"
+          class="emotion-61"
         >
           <div
-            class="emotion-55"
-            data-testid="audio-slider-track"
-            style="background: rgb(255, 255, 0);"
-            values="10"
+            class="emotion-60"
+            data-testid="audio-slider"
           >
             <div
-              aria-label="slider"
-              aria-valuemax="60"
-              aria-valuemin="0"
-              aria-valuenow="10"
-              class="emotion-39"
-              data-testid="audio-slider-thumb"
-              draggable="false"
-              role="slider"
-              style="position: absolute; z-index: 0; cursor: grabbing; user-select: none; transform: translate(NaNpx, NaNpx);"
-              tabindex="0"
+              class="emotion-55"
+              data-testid="audio-slider-track"
+              style="background: rgb(255, 255, 0);"
               values="10"
-            />
-          </div>
-          <div
-            class="emotion-59"
-          >
-            <div
-              class="emotion-58"
             >
               <div
-                class="emotion-56"
-                data-testid="min-label"
-              >
-                00:10
-              </div>
+                aria-label="seek bar"
+                aria-valuemax="60"
+                aria-valuemin="0"
+                aria-valuenow="10"
+                aria-valuetext="00 hour 00 minutes 10 seconds of 00 hour 01 minutes 00 seconds"
+                class="emotion-39"
+                data-testid="audio-slider-thumb"
+                draggable="false"
+                role="slider"
+                style="position: absolute; z-index: 0; cursor: grabbing; user-select: none; transform: translate(NaNpx, NaNpx);"
+                tabindex="0"
+                values="10"
+              />
+            </div>
+            <div
+              class="emotion-59"
+            >
               <div
-                class="emotion-56"
-                data-testid="max-label"
+                class="emotion-58"
               >
-                01:00
+                <div
+                  class="emotion-56"
+                  data-testid="min-label"
+                >
+                  00:10
+                </div>
+                <div
+                  class="emotion-56"
+                  data-testid="max-label"
+                >
+                  01:00
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </DocumentFragment>
 `;
 
@@ -2286,10 +2359,11 @@ exports[`Audio Player recorded player renders and behaves as expected: after tim
 }
 
 <div
-  aria-label="slider"
+  aria-label="seek bar"
   aria-valuemax="60"
   aria-valuemin="0"
   aria-valuenow="35"
+  aria-valuetext="00 hour 00 minutes 35 seconds of 00 hour 01 minutes 00 seconds"
   class="emotion-0"
   data-testid="audio-slider-thumb"
   draggable="false"
@@ -2350,10 +2424,11 @@ exports[`Audio Player recorded player renders and behaves as expected: after tim
 }
 
 <div
-  aria-label="slider"
+  aria-label="seek bar"
   aria-valuemax="60"
   aria-valuemin="0"
   aria-valuenow="35"
+  aria-valuetext="00 hour 00 minutes 35 seconds of 00 hour 01 minutes 00 seconds"
   class="emotion-0"
   data-testid="audio-slider-thumb"
   draggable="false"

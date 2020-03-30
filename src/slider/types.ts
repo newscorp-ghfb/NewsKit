@@ -37,6 +37,7 @@ interface CommonSliderProps extends CommonProps, SliderStylePresets {
   onFinalChange?: (values: number[]) => void;
   step?: number;
   ariaLabel?: string;
+  ariaValueText?: string;
   minLabel?: string | React.ComponentType;
   maxLabel?: string | React.ComponentType;
   labelPosition?: LabelPosition;

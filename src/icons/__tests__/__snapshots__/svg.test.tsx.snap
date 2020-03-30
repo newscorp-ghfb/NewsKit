@@ -3,10 +3,13 @@
 exports[`Svg renders a menu icon with $float property 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
   float: left;
 }
 
 <svg
+    aria-labelledby="bui-4"
     class="emotion-0"
     viewBox="1 2 3 4"
   />
@@ -16,12 +19,13 @@ exports[`Svg renders a menu icon with $float property 1`] = `
 exports[`Svg renders a menu icon with no size 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #158acf;
-  color: #158acf;
+  fill: #FFFFFF;
+  color: #FFFFFF;
   display: inline-block;
 }
 
 <svg
+    aria-labelledby="bui-3"
     class="emotion-0"
     viewBox="1 2 3 4"
   />
@@ -31,14 +35,15 @@ exports[`Svg renders a menu icon with no size 1`] = `
 exports[`Svg renders a menu icon with specified size and color 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #158acf;
-  color: #158acf;
-  width: 4px;
-  height: 4px;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  width: 16px;
+  height: 16px;
   display: inline-block;
 }
 
 <svg
+    aria-labelledby="bui-2"
     class="emotion-0"
     viewBox="1 2 3 4"
   />
@@ -48,14 +53,15 @@ exports[`Svg renders a menu icon with specified size and color 1`] = `
 exports[`Svg renders a menu icon with specified size and default color 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #000000;
-  color: #000000;
-  width: 24px;
-  height: 24px;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 64px;
+  height: 64px;
   display: inline-block;
 }
 
 <svg
+    aria-labelledby="bui-1"
     class="emotion-0"
     viewBox="1 2 3 4"
   />

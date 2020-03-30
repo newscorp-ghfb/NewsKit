@@ -75,10 +75,13 @@ exports[`Image renders with defaults 1`] = `
         class="emotion-1"
       >
         <svg
+          aria-labelledby="bui-1"
           class="emotion-0"
           viewBox="0 0 88 88"
         >
-          <title>
+          <title
+            id="bui-1"
+          >
             Placeholder
           </title>
           <path
@@ -162,10 +165,13 @@ exports[`Image renders with defaults after load 1`] = `
         class="emotion-1"
       >
         <svg
+          aria-labelledby="bui-3"
           class="emotion-0"
           viewBox="0 0 88 88"
         >
-          <title>
+          <title
+            id="bui-3"
+          >
             Placeholder
           </title>
           <path
@@ -258,10 +264,13 @@ exports[`Image renders with invalidPreset 1`] = `
         class="emotion-1"
       >
         <svg
+          aria-labelledby="bui-7"
           class="emotion-0"
           viewBox="0 0 88 88"
         >
-          <title>
+          <title
+            id="bui-7"
+          >
             Placeholder
           </title>
           <path
@@ -354,10 +363,13 @@ exports[`Image renders with maskRound 1`] = `
         class="emotion-1"
       >
         <svg
+          aria-labelledby="bui-6"
           class="emotion-0"
           viewBox="0 0 88 88"
         >
-          <title>
+          <title
+            id="bui-6"
+          >
             Placeholder
           </title>
           <path
@@ -450,10 +462,13 @@ exports[`Image renders with maskSemiRounded 1`] = `
         class="emotion-1"
       >
         <svg
+          aria-labelledby="bui-5"
           class="emotion-0"
           viewBox="0 0 88 88"
         >
-          <title>
+          <title
+            id="bui-5"
+          >
             Placeholder
           </title>
           <path
@@ -546,10 +561,13 @@ exports[`Image renders without icon 1`] = `
         class="emotion-1"
       >
         <svg
+          aria-labelledby="bui-4"
           class="emotion-0"
           viewBox="0 0 88 88"
         >
-          <title>
+          <title
+            id="bui-4"
+          >
             Placeholder
           </title>
           <path

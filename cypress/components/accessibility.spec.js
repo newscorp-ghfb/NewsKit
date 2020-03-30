@@ -3,22 +3,25 @@ const a11yComponentRules = [
   {name: 'article-content'},
   {name: 'article-headline'},
   {name: 'article-standfirst'},
-  {name: 'audio-player', a11yRule: 'color-contrast'},
-  {name: 'radio-player', a11yRule: 'color-contrast'},
-  {name: 'tracked-radio-player', a11yRule: 'color-contrast'},
+  {name: 'audio-player', disabledRules: ['color-contrast', 'landmark-unique']},
+  {name: 'radio-player', disabledRules: ['color-contrast', 'landmark-unique']},
+  {
+    name: 'tracked-radio-player',
+    disabledRules: ['color-contrast'],
+  },
   {name: 'block'},
-  {name: 'button', a11yRule: 'color-contrast'},
+  {name: 'button', disabledRules: ['color-contrast']},
   {name: 'date-line'},
   {name: 'divider'},
   {name: 'icons'},
   {name: 'image'},
   {name: 'ordered-list'},
-  {name: 'scroll', a11yRule: 'color-contrast'},
+  {name: 'scroll', disabledRules: ['color-contrast']},
   {name: 'share-bar'},
-  {name: 'slider', a11yRule: 'color-contrast'},
+  {name: 'slider', disabledRules: ['color-contrast']},
   {name: 'volume-control'},
-  {name: 'tag-list', a11yRule: 'color-contrast'},
-  {name: 'tag', a11yRule: 'color-contrast'},
+  {name: 'tag-list', disabledRules: ['color-contrast']},
+  {name: 'tag', disabledRules: ['color-contrast']},
   {name: 'flag'},
   {name: 'typography/heading'},
   {name: 'typography/paragraph'},
@@ -31,10 +34,10 @@ a11yComponentRules.forEach(component => {
       cy.visit(`?name=${component.name}`);
       cy.injectAxe();
 
-      if (component.a11yRule === undefined) {
+      if (component.disabledRules === undefined) {
         cy.checkA11yWithDefaultRules();
       } else {
-        cy.checkA11yWithCustomRule(component.a11yRule);
+        cy.checkA11yWithCustomRule(component.disabledRules);
       }
     });
   });

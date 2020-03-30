@@ -1,15 +1,13 @@
 import React from 'react';
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgProps} from './types';
+import {ColoredSvgProps} from './types';
 
-const defaultIcon: React.FC<SvgProps> = ({
-  $size,
+const defaultIcon: React.FC<ColoredSvgProps> = ({
   title = 'WhatsApp Logo',
-  ariaLabel,
+  ...props
 }) => (
-  <Svg viewBox="0 0 400 400" $size={$size} aria-label={ariaLabel}>
-    <title>{title}</title>
+  <Svg viewBox="0 0 400 400" title={title} {...props}>
     <g>
       <circle fill="#25D366" cx="200" cy="200" r="200" />
     </g>
@@ -24,7 +22,7 @@ const defaultIcon: React.FC<SvgProps> = ({
   </Svg>
 );
 
-export const WhatsApp = withTheme<SvgProps>(props => {
+export const WhatsApp = withTheme<ColoredSvgProps>(props => {
   const Icon = props.theme.icons.WhatsApp || defaultIcon;
   return <Icon {...props} />;
 });

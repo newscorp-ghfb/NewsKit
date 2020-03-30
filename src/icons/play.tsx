@@ -4,14 +4,8 @@ import {SvgProps} from './types';
 
 import {withTheme} from '../themes/emotion';
 
-const defaultIcon: React.FC<SvgProps> = ({
-  $size,
-  $color,
-  title = 'Play',
-  ariaLabel,
-}) => (
-  <Svg viewBox="0 0 24 24" $size={$size} $color={$color} aria-label={ariaLabel}>
-    <title>{title}</title>
+const defaultIcon: React.FC<SvgProps> = ({title = 'Play', ...props}) => (
+  <Svg title={title} {...props}>
     <polygon points="8 5 8 19 19 12" />
   </Svg>
 );

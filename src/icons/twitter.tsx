@@ -1,15 +1,13 @@
 import React from 'react';
 import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
-import {SvgProps} from './types';
+import {ColoredSvgProps} from './types';
 
-const defaultIcon: React.FC<SvgProps> = ({
+const defaultIcon: React.FC<ColoredSvgProps> = ({
   $size,
   title = 'Twitter logo',
-  ariaLabel,
 }) => (
-  <Svg viewBox="0 0 400 400" $size={$size} aria-label={ariaLabel}>
-    <title>{title}</title>
+  <Svg viewBox="0 0 400 400" $size={$size} title={title}>
     <g>
       <circle fill="#1DA1F2" cx="200" cy="200" r="200" />
     </g>
@@ -27,7 +25,7 @@ const defaultIcon: React.FC<SvgProps> = ({
   </Svg>
 );
 
-export const Twitter = withTheme<SvgProps>(props => {
+export const Twitter = withTheme<ColoredSvgProps>(props => {
   const Icon = props.theme.icons.Twitter || defaultIcon;
   return <Icon {...props} />;
 });

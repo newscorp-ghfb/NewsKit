@@ -9,8 +9,12 @@ import {
 import {H1} from '../typography';
 import {Tag} from '../tag';
 
-export const PlayerContainer = styled(Grid)`
+export const PlayerGrid = styled(Grid)`
   box-sizing: border-box;
+`;
+
+export const PlayerContainer = styled.section`
+  width: 100%;
 `;
 
 export const ControlContainer = styled(Hidden)<{

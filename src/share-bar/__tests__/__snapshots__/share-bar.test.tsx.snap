@@ -71,6 +71,14 @@ exports[`ShareBar does not render invalid elements 1`] = `
   display: inline-block;
 }
 
+.emotion-7 {
+  fill: #535353;
+  color: #535353;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -141,10 +149,13 @@ exports[`ShareBar does not render invalid elements 1`] = `
             class="emotion-2"
           >
             <svg
+              aria-labelledby="bui-16"
               class="emotion-1"
               viewBox="0 0 400 400"
             >
-              <title>
+              <title
+                id="bui-16"
+              >
                 Twitter logo
               </title>
               <g>
@@ -191,10 +202,13 @@ exports[`ShareBar does not render invalid elements 1`] = `
             class="emotion-2"
           >
             <svg
-              class="emotion-1"
+              aria-labelledby="bui-17"
+              class="emotion-7"
               viewBox="0 0 1365.3333 1365.3333"
             >
-              <title>
+              <title
+                id="bui-17"
+              >
                 Facebook icon
               </title>
               <g
@@ -293,6 +307,14 @@ exports[`ShareBar href renders as an anchor 1`] = `
   display: inline-block;
 }
 
+.emotion-4 {
+  fill: #535353;
+  color: #535353;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
 .emotion-2 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -317,14 +339,6 @@ exports[`ShareBar href renders as an anchor 1`] = `
   color: #903D91;
 }
 
-.emotion-9 {
-  fill: #535353;
-  color: #535353;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-}
-
 <div
     class="emotion-14"
   >
@@ -343,10 +357,13 @@ exports[`ShareBar href renders as an anchor 1`] = `
             class="emotion-1"
           >
             <svg
+              aria-labelledby="bui-18"
               class="emotion-0"
               viewBox="0 0 400 400"
             >
-              <title>
+              <title
+                id="bui-18"
+              >
                 Twitter logo
               </title>
               <g>
@@ -384,10 +401,13 @@ exports[`ShareBar href renders as an anchor 1`] = `
             class="emotion-1"
           >
             <svg
-              class="emotion-0"
+              aria-labelledby="bui-19"
+              class="emotion-4"
               viewBox="0 0 1365.3333 1365.3333"
             >
-              <title>
+              <title
+                id="bui-19"
+              >
                 Facebook icon
               </title>
               <g
@@ -426,10 +446,13 @@ exports[`ShareBar href renders as an anchor 1`] = `
             class="emotion-1"
           >
             <svg
-              class="emotion-9"
+              aria-labelledby="bui-20"
+              class="emotion-4"
               viewBox="0 0 24 24"
             >
-              <title>
+              <title
+                id="bui-20"
+              >
                 Save active icon
               </title>
               <polygon
@@ -559,7 +582,7 @@ exports[`ShareBar renders with a border 1`] = `
   display: inline-block;
 }
 
-.emotion-9 {
+.emotion-4 {
   fill: #535353;
   color: #535353;
   width: 24px;
@@ -585,10 +608,13 @@ exports[`ShareBar renders with a border 1`] = `
             class="emotion-1"
           >
             <svg
+              aria-labelledby="bui-21"
               class="emotion-0"
               viewBox="0 0 400 400"
             >
-              <title>
+              <title
+                id="bui-21"
+              >
                 Twitter logo
               </title>
               <g>
@@ -626,10 +652,13 @@ exports[`ShareBar renders with a border 1`] = `
             class="emotion-1"
           >
             <svg
-              class="emotion-0"
+              aria-labelledby="bui-22"
+              class="emotion-4"
               viewBox="0 0 1365.3333 1365.3333"
             >
-              <title>
+              <title
+                id="bui-22"
+              >
                 Facebook icon
               </title>
               <g
@@ -668,10 +697,13 @@ exports[`ShareBar renders with a border 1`] = `
             class="emotion-1"
           >
             <svg
-              class="emotion-9"
+              aria-labelledby="bui-23"
+              class="emotion-4"
               viewBox="0 0 24 24"
             >
-              <title>
+              <title
+                id="bui-23"
+              >
                 Save active icon
               </title>
               <polygon
@@ -758,6 +790,14 @@ exports[`ShareBar renders with custom components 1`] = `
   display: inline-block;
 }
 
+.emotion-11 {
+  fill: #535353;
+  color: #535353;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -828,10 +868,13 @@ exports[`ShareBar renders with custom components 1`] = `
             class="emotion-2"
           >
             <svg
+              aria-labelledby="bui-14"
               class="emotion-1"
               viewBox="0 0 400 400"
             >
-              <title>
+              <title
+                id="bui-14"
+              >
                 Twitter logo
               </title>
               <g>
@@ -901,10 +944,13 @@ exports[`ShareBar renders with custom components 1`] = `
             class="emotion-2"
           >
             <svg
-              class="emotion-1"
+              aria-labelledby="bui-15"
+              class="emotion-11"
               viewBox="0 0 1365.3333 1365.3333"
             >
-              <title>
+              <title
+                id="bui-15"
+              >
                 Facebook icon
               </title>
               <g
@@ -1003,6 +1049,14 @@ exports[`ShareBar renders with left and right icons 1`] = `
   display: inline-block;
 }
 
+.emotion-3 {
+  fill: #535353;
+  color: #535353;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
 <div
     class="emotion-14"
   >
@@ -1020,10 +1074,13 @@ exports[`ShareBar renders with left and right icons 1`] = `
             class="emotion-1"
           >
             <svg
+              aria-labelledby="bui-3"
               class="emotion-0"
               viewBox="0 0 400 400"
             >
-              <title>
+              <title
+                id="bui-3"
+              >
                 Twitter logo
               </title>
               <g>
@@ -1060,10 +1117,13 @@ exports[`ShareBar renders with left and right icons 1`] = `
             class="emotion-1"
           >
             <svg
-              class="emotion-0"
+              aria-labelledby="bui-4"
+              class="emotion-3"
               viewBox="0 0 1365.3333 1365.3333"
             >
-              <title>
+              <title
+                id="bui-4"
+              >
                 Facebook icon
               </title>
               <g
@@ -1101,10 +1161,13 @@ exports[`ShareBar renders with left and right icons 1`] = `
             class="emotion-1"
           >
             <svg
+              aria-labelledby="bui-5"
               class="emotion-0"
               viewBox="0 0 400 400"
             >
-              <title>
+              <title
+                id="bui-5"
+              >
                 Twitter logo
               </title>
               <g>
@@ -1141,10 +1204,13 @@ exports[`ShareBar renders with left and right icons 1`] = `
             class="emotion-1"
           >
             <svg
-              class="emotion-0"
+              aria-labelledby="bui-6"
+              class="emotion-3"
               viewBox="0 0 1365.3333 1365.3333"
             >
-              <title>
+              <title
+                id="bui-6"
+              >
                 Facebook icon
               </title>
               <g
@@ -1243,6 +1309,14 @@ exports[`ShareBar renders with left and right labels 1`] = `
   display: inline-block;
 }
 
+.emotion-4 {
+  fill: #535353;
+  color: #535353;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -1288,10 +1362,13 @@ exports[`ShareBar renders with left and right labels 1`] = `
             class="emotion-2"
           >
             <svg
+              aria-labelledby="bui-7"
               class="emotion-1"
               viewBox="0 0 400 400"
             >
-              <title>
+              <title
+                id="bui-7"
+              >
                 Twitter logo
               </title>
               <g>
@@ -1328,10 +1405,13 @@ exports[`ShareBar renders with left and right labels 1`] = `
             class="emotion-2"
           >
             <svg
-              class="emotion-1"
+              aria-labelledby="bui-8"
+              class="emotion-4"
               viewBox="0 0 1365.3333 1365.3333"
             >
-              <title>
+              <title
+                id="bui-8"
+              >
                 Facebook icon
               </title>
               <g
@@ -1374,10 +1454,13 @@ exports[`ShareBar renders with left and right labels 1`] = `
             class="emotion-2"
           >
             <svg
+              aria-labelledby="bui-9"
               class="emotion-1"
               viewBox="0 0 400 400"
             >
-              <title>
+              <title
+                id="bui-9"
+              >
                 Twitter logo
               </title>
               <g>
@@ -1414,10 +1497,13 @@ exports[`ShareBar renders with left and right labels 1`] = `
             class="emotion-2"
           >
             <svg
-              class="emotion-1"
+              aria-labelledby="bui-10"
+              class="emotion-4"
               viewBox="0 0 1365.3333 1365.3333"
             >
-              <title>
+              <title
+                id="bui-10"
+              >
                 Facebook icon
               </title>
               <g
@@ -1516,6 +1602,14 @@ exports[`ShareBar renders with left icons 1`] = `
   display: inline-block;
 }
 
+.emotion-3 {
+  fill: #535353;
+  color: #535353;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
 <div
     class="emotion-8"
   >
@@ -1533,10 +1627,13 @@ exports[`ShareBar renders with left icons 1`] = `
             class="emotion-1"
           >
             <svg
+              aria-labelledby="bui-1"
               class="emotion-0"
               viewBox="0 0 400 400"
             >
-              <title>
+              <title
+                id="bui-1"
+              >
                 Twitter logo
               </title>
               <g>
@@ -1573,10 +1670,13 @@ exports[`ShareBar renders with left icons 1`] = `
             class="emotion-1"
           >
             <svg
-              class="emotion-0"
+              aria-labelledby="bui-2"
+              class="emotion-3"
               viewBox="0 0 1365.3333 1365.3333"
             >
-              <title>
+              <title
+                id="bui-2"
+              >
                 Facebook icon
               </title>
               <g

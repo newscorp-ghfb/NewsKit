@@ -1230,6 +1230,9 @@ exports[`slider react-range Range function props renderTrack should render defau
 }
 
 <div
+    aria-orientation="horizontal"
+    aria-valuemax="30"
+    aria-valuemin="10"
     class="emotion-0"
     data-testid="slider-track"
     values="25"
@@ -1261,6 +1264,9 @@ exports[`slider react-range Range function props renderTrack should render disab
 }
 
 <div
+    aria-orientation="horizontal"
+    aria-valuemax="30"
+    aria-valuemin="10"
     class="emotion-0"
     data-testid="slider-track"
     disabled=""
@@ -1293,6 +1299,9 @@ exports[`slider react-range Range function props renderTrack should render disab
 }
 
 <div
+    aria-orientation="horizontal"
+    aria-valuemax="30"
+    aria-valuemin="10"
     class="emotion-0"
     data-testid="slider-track"
     disabled=""
@@ -1331,6 +1340,9 @@ exports[`slider react-range Range function props renderTrack should render grabb
 }
 
 <div
+    aria-orientation="horizontal"
+    aria-valuemax="30"
+    aria-valuemin="10"
     class="emotion-0"
     data-testid="slider-track"
     values="25"
@@ -1366,6 +1378,9 @@ exports[`slider react-range Range function props renderTrack should render multi
 }
 
 <div
+    aria-orientation="horizontal"
+    aria-valuemax="30"
+    aria-valuemin="10"
     class="emotion-0"
     data-testid="slider-track"
     values="10,20"
@@ -1401,6 +1416,9 @@ exports[`slider react-range Range function props renderTrack should render verti
 }
 
 <div
+    aria-orientation="vertical"
+    aria-valuemax="30"
+    aria-valuemin="10"
     class="emotion-0"
     data-testid="slider-track"
     values="25"
