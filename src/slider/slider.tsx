@@ -34,6 +34,7 @@ export const Slider: React.FC<SliderProps> = ({
   step = 1,
   onChange,
   onFinalChange,
+  onKeyDown,
   disabled,
   values,
   vertical,
@@ -84,6 +85,7 @@ export const Slider: React.FC<SliderProps> = ({
         data-testid={`${dataTestId}-track`}
         onMouseDown={p.onMouseDown}
         onTouchStart={p.onTouchStart}
+        onKeyDown={onKeyDown}
       >
         {children}
       </StyledTrack>

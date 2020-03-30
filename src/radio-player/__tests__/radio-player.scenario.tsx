@@ -32,6 +32,9 @@ const PlayerContainer = styled.div`
   margin-right: auto;
 `;
 
+// eslint-disable-next-line no-alert
+const alert = (msg: string) => () => window.alert(msg);
+
 export default {
   name: 'radio-player',
   children: [
@@ -46,8 +49,8 @@ export default {
               {...props}
               title="Sound Helix Song"
               flag={CustomFlag}
-              onNextTrack={() => {}}
-              onPreviousTrack={() => {}}
+              onNextTrack={alert('Next track clicked!')}
+              onPreviousTrack={alert('Previous track clicked!')}
               src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
               popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
             />

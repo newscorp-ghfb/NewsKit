@@ -15,6 +15,12 @@ interface MuteButtonProps {
 const iconSize: IconSizeKeys = 'iconSize020';
 const volumeControlButtonStyleDefault = 'iconButtonMinimalPrimary';
 
+const toggleMute = (
+  volume: number,
+  unMutedVolume: number,
+  onChange: VolumeControlProps['onChange'],
+) => (volume === 0 ? onChange(unMutedVolume || 1) : onChange(0));
+
 const MuteButton: React.FC<MuteButtonProps> = ({
   volume,
   unMutedVolume,
@@ -24,7 +30,7 @@ const MuteButton: React.FC<MuteButtonProps> = ({
   <IconButton
     data-testid="mute-button"
     tabIndex={-1}
-    onClick={() => (volume === 0 ? onChange(unMutedVolume || 1) : onChange(0))}
+    onClick={() => toggleMute(volume, unMutedVolume, onChange)}
     $size={ButtonSize.Small}
     $stylePreset={
       $volumeControlButtonStylePreset || volumeControlButtonStyleDefault
@@ -67,6 +73,12 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
     [volume, unMutedVolume, onChange, $volumeControlButtonStylePreset],
   );
 
+  const toggleMuteWithKeys = (e: React.KeyboardEvent<HTMLElement>) => {
+    if (e.keyCode === 32 || e.keyCode === 13) {
+      toggleMute(volume, unMutedVolume, onChange);
+    }
+  };
+
   const maxLabel = useCallback(
     () => (
       <IconButton
@@ -99,6 +111,7 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
       $thumbSize={$thumbSize}
       minLabel={minLabel}
       maxLabel={maxLabel}
+      onKeyDown={toggleMuteWithKeys}
       {...presets}
     />
   );

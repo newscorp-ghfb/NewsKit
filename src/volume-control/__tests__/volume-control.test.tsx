@@ -132,4 +132,96 @@ describe('VolumeControl', () => {
     // Check slider props were updated as expected
     expect(volumeControl.asFragment()).toMatchSnapshot('volume at 100%');
   });
+
+  test('volume should toggle between mute and unmute if enter key is pressed', async () => {
+    const onChange = jest.fn();
+
+    // Render the volume control, starting volume at 1
+    const volumeControl = renderWithTheme(VolumeControl, {
+      volume: 0.7,
+      onChange,
+    });
+
+    // Simulate space press, muting the volume
+    const thumb = volumeControl.getByRole('slider');
+    fireEvent.keyDown(thumb, {key: 'Enter', keyCode: 13});
+
+    // Should call onChange and update slider props
+    expect(onChange).toHaveBeenCalledWith(0);
+    // Now muted, propagate volume change back to comp
+    volumeControl.rerender(<VolumeControl volume={0} onChange={onChange} />);
+    // Check slider props were updated as expected
+    expect(volumeControl.asFragment()).toMatchSnapshot('after muting');
+
+    // Second click, should unmute and return back to starting volume
+    onChange.mockClear();
+    fireEvent.keyDown(thumb, {key: 'Enter', keyCode: 13});
+
+    // Should call onChange and update slider props again
+    expect(onChange).toHaveBeenCalledWith(0.7);
+    // Now unmuted, propagate volume change back to comp
+    volumeControl.rerender(<VolumeControl volume={0.7} onChange={onChange} />);
+    expect(volumeControl.asFragment()).toMatchSnapshot('after unmuting');
+
+    // Update the volume to a new value (testing this updated unmuted volume level)
+    volumeControl.rerender(<VolumeControl volume={0.5} onChange={onChange} />);
+
+    // Mute
+    fireEvent.keyDown(thumb, {key: 'Enter', keyCode: 13});
+    volumeControl.rerender(<VolumeControl volume={0} onChange={onChange} />);
+
+    onChange.mockClear();
+
+    // Unmute
+    fireEvent.keyDown(thumb, {key: 'Enter', keyCode: 13});
+
+    // Should call onChange with the updated unmuted value
+    expect(onChange).toHaveBeenCalledWith(0.5);
+  });
+
+  test('volume should toggle between mute and unmute if space key is pressed', async () => {
+    const onChange = jest.fn();
+
+    // Render the volume control, starting volume at 1
+    const volumeControl = renderWithTheme(VolumeControl, {
+      volume: 0.7,
+      onChange,
+    });
+
+    // Simulate space press, muting the volume
+    const thumb = volumeControl.getByRole('slider');
+    fireEvent.keyDown(thumb, {key: 'Space', keyCode: 32});
+
+    // Should call onChange and update slider props
+    expect(onChange).toHaveBeenCalledWith(0);
+    // Now muted, propagate volume change back to comp
+    volumeControl.rerender(<VolumeControl volume={0} onChange={onChange} />);
+    // Check slider props were updated as expected
+    expect(volumeControl.asFragment()).toMatchSnapshot('after muting');
+
+    // Second click, should unmute and return back to starting volume
+    onChange.mockClear();
+    fireEvent.keyDown(thumb, {key: 'Space', keyCode: 32});
+
+    // Should call onChange and update slider props again
+    expect(onChange).toHaveBeenCalledWith(0.7);
+    // Now unmuted, propagate volume change back to comp
+    volumeControl.rerender(<VolumeControl volume={0.7} onChange={onChange} />);
+    expect(volumeControl.asFragment()).toMatchSnapshot('after unmuting');
+
+    // Update the volume to a new value (testing this updated unmuted volume level)
+    volumeControl.rerender(<VolumeControl volume={0.5} onChange={onChange} />);
+
+    // Mute
+    fireEvent.keyDown(thumb, {key: 'Space', keyCode: 32});
+    volumeControl.rerender(<VolumeControl volume={0} onChange={onChange} />);
+
+    onChange.mockClear();
+
+    // Unmute
+    fireEvent.keyDown(thumb, {key: 'Space', keyCode: 32});
+
+    // Should call onChange with the updated unmuted value
+    expect(onChange).toHaveBeenCalledWith(0.5);
+  });
 });

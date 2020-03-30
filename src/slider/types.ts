@@ -48,6 +48,7 @@ interface CommonSliderProps extends CommonProps, SliderStylePresets {
   $labelStackSpace?: SizingKeys;
   renderTrack?: RenderTrackFunction;
   renderThumb?: RenderThumbFunction;
+  onKeyDown?: (e: React.KeyboardEvent<HTMLElement>) => void;
 }
 
 export interface SliderProps extends CommonSliderProps {
