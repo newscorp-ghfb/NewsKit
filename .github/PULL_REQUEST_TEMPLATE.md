@@ -7,15 +7,22 @@
 3. What does the reviewers should expect
 --->
 
-**I have:**
+**I have done:**
  - [ ] Written unit tests against changes
  - [ ] Written accessibility tests against the component
  - [ ] Written functional tests against the component and/or NewsKit site
- - [ ] All the linting and tests are passing
  - [ ] Updated relevant documentation
  - [ ] Discussed with QA and/or design about any visual changes
- - [ ] Completed manual testing tasks outline [here](../docs/testing.md#manual-checks)
 
+**I have tested manually:**
+ - [ ] Renders correctly on IE11
+ - [ ] The feature's functionality is working as expected on other browsers such as Safari, Firefox and IE11
+ - [ ] There are no accessibility errors reported by WAVE
+ - [ ] The screen reader reads the expected text for the tabbable elements.
+ - [ ] There are no new errors in the browser console coming from this PR.
+ - [ ] When visual test is not added, it renders correctly on different browsers and mobile viewports (Safari, Firefox, small mobile viewport, tablet)
+ - [ ] The Playground feature is working as expected
+ 
 <!---
 Below sections are optional
 --->
