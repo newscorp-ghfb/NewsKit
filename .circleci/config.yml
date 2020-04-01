@@ -277,8 +277,8 @@ jobs:
             export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}
             export APPLITOOLS_DONT_CLOSE_BATCHES=true
             make comps_visual_test
-  
-  test_visual_docs:
+
+  install_cypress:
     working_directory: ~/project
     docker:
       - image: cypress/base:10
@@ -289,6 +289,22 @@ jobs:
       - run:
           name: install cypress
           command: make install_cypress
+      - save_cache:
+          key: cypress-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/Cypress
+
+  test_visual_docs:
+    working_directory: ~/project
+    docker:
+      - image: cypress/base:10
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - cypress-{{ checksum "yarn.lock" }}
+      - attach_workspace:
+          at: ~/project
       - run:
           name: Run Applitools Docs Site Visual Tests
           command: |
@@ -307,11 +323,11 @@ jobs:
       - image: cypress/base:10
     steps:
       - checkout
+      - restore_cache:
+          keys:
+            - cypress-{{ checksum "yarn.lock" }}
       - attach_workspace:
           at: ~/project
-      - run:
-          name: install cypress
-          command: make install_cypress
       - run:
           name: Run Component Tests
           command: make e2e_test_comps
@@ -326,11 +342,11 @@ jobs:
       - image: cypress/base:10
     steps:
       - checkout
+      - restore_cache:
+          keys:
+            - cypress-{{ checksum "yarn.lock" }}
       - attach_workspace:
           at: ~/project
-      - run:
-          name: install cypress
-          command: make install_cypress
       - run:
           name: Run Docs Site Functional Tests
           command: |
@@ -520,11 +536,11 @@ only_master: &only_master
   filters:
     branches:
       only: master
-      
+
 only_pr: &only_pr
   filters:
     branches:
-      ignore: 
+      ignore:
         - develop
         - master
         - /trigger-release-.*/
@@ -571,21 +587,26 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - run_visual_comps
+      - install_cypress:
+          <<: *ignore_release
       - test_e2e_comps:
           <<: *ignore_release
           context: ncu-product-platforms-context
           requires:
             - build_test_e2e
+            - install_cypress
       - test_visual_docs:
           <<: *only_develop
           context: ncu-product-platforms-context
           requires:
             - build_docs
+            - install_cypress
       - test_e2e_docs:
           <<: *ignore_release
           context: ncu-product-platforms-context
           requires:
             - build_docs
+            - install_cypress
       - approve_publish_npm_dev:
           type: approval
           <<: *only_develop

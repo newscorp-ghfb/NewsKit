@@ -87,7 +87,7 @@ create_release_candidate:
 push_release:
 	echo "Creating branch $(RELEASE_BRANCH)"
 	git checkout -b $(RELEASE_BRANCH)
-	#We don't care about any changes on master we force the current HEAD onto master 
+	#We don't care about any changes on master we force the current HEAD onto master
 	echo "Merge our release branch"
 	git merge -s ours origin/master --no-edit
 	git push --tags --set-upstream origin $(RELEASE_BRANCH)
