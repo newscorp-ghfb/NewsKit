@@ -91,7 +91,7 @@
     "@typescript-eslint/eslint-plugin": "^1.11.0",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-mdx": "^1.2.0",
-    "amphtml-validator": "^1.0.28",
+    "amphtml-validator": "^1.0.30",
     "axe-core": "^3.1.2",
     "babel-loader": "^8.0.6",
     "concurrently": "^4.1.1",

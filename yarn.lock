@@ -3292,9 +3292,10 @@ amphtml-validator@1.0.23:
     commander "2.9.0"
     promise "7.1.1"
 
-amphtml-validator@^1.0.28:
-  version "1.0.28"
-  resolved "https://registry.yarnpkg.com/amphtml-validator/-/amphtml-validator-1.0.28.tgz#ae32bb0e9f75a26921b98ad8922d1b449fd2e33b"
+amphtml-validator@^1.0.30:
+  version "1.0.30"
+  resolved "https://registry.yarnpkg.com/amphtml-validator/-/amphtml-validator-1.0.30.tgz#b722ea5e965d0cc028cbdc360fc76b97e669715e"
+  integrity sha512-CaEm2ivIi4M4QTiFnCE9t4MRgawCf88iAV/+VsS0zEw6T4VBU6zoXcgn4L+dt6/WZ/NYxKpc38duSoRLqZJhNQ==
   dependencies:
     colors "1.2.5"
     commander "2.15.1"
