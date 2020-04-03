@@ -34,3 +34,4 @@ cypress/screenshots/
 cypress/videos/
 __diff_output__/
 dist-storybook
+version-number.json 

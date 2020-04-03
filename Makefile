@@ -21,7 +21,7 @@ RELEASE_PR_MASTER_TITLE = release/master-${INITIAL_UPDATE_TYPE}-${PKG_VERSION}
 RELEASE_PR_DEVELOP_TITLE = release/develop-${INITIAL_UPDATE_TYPE}-${PKG_VERSION}
 
 install:
-	yarn install --frozen-lockfile;
+	yarn install --frozen-lockfile
 
 install_cypress:
 	yarn global add cypress@3.8.2;

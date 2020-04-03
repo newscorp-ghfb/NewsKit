@@ -43,6 +43,7 @@ const recordedTrackingOutputObject = {
 };
 
 jest.mock('../../utils/calculate-string-percentage', () => () => '2');
+jest.mock('../../version-number.json', () => ({version: '0.10.0'}));
 
 jest.mock('../utils', () => {
   const originalModule = jest.requireActual('../utils');

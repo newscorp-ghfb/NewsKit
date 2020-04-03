@@ -32,7 +32,7 @@ import {
 import {LabelPosition} from '../slider/types';
 import {StackChild} from '../stack-child';
 
-const {version} = require('../../package.json');
+import {version} from '../version-number.json';
 
 type EventListener = (event: ChangeEvent<HTMLAudioElement>) => void;
 

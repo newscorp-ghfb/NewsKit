@@ -88,6 +88,8 @@ docs:dev
 
 * `build:comps` -> builds the components folder ready to be published to NPM.
 
+* `build:sync-version-number` -> copies the current version number from package json into the src folder.
+
 * `build` -> runs the above builds, creating a ready to publish dist folder, as well as storybook and docs.
 
 * `serve:docs` -> starts a simple http server to serve the documentation site in public/.

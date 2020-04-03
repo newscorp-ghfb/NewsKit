@@ -165,6 +165,7 @@ jobs:
           root: ./
           paths:
             - node_modules/*
+            - src/version-number.json
 
   build_components:
     working_directory: ~/project
