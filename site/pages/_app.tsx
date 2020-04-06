@@ -8,7 +8,7 @@ import {
   InstrumentationProvider,
   instrumentationHandlers,
 } from 'newskit';
-import App, {Container} from 'next/app';
+import App from 'next/app';
 import '../prism-coy.css'; // light theme code highlighting
 import '../tomorrow-night.css'; // dark theme code highlighting
 
@@ -173,65 +173,62 @@ export default class MyApp extends App<Props, State> {
     ];
 
     return (
-      <Container>
-        <InstrumentationProvider
-          {...createEventInstrumentation(handlers, {
-            ...pageProps,
-          })}
-        >
-          <ThemeProvider theme={theme}>
-            <Global
-              styles={css`
-                @font-face {
-                  font-family: 'Noto Sans';
-                  src: url('/static/fonts/notosans-regular-webfont.woff2')
-                      format('woff2'),
-                    url('/static/fonts/notosans-regular-webfont.woff')
-                      format('woff');
-                  font-style: normal;
-                  font-weight: 400;
-                  font-display: swap;
-                }
-                @font-face {
-                  font-family: 'Noto Sans';
-                  src: url('/static/fonts/notosans-italic-webfont.woff2')
-                      format('woff2'),
-                    url('/static/fonts/notosans-italic-webfont.woff')
-                      format('woff');
-                  font-style: italic;
-                  font-weight: 400;
-                  font-display: swap;
-                }
-                @font-face {
-                  font-family: 'Noto Sans';
-                  src: url('/static/fonts/notosans-medium-webfont.woff2')
-                      format('woff2'),
-                    url('/static/fonts/notosans-medium-webfont.woff')
-                      format('woff');
-                  font-style: normal;
-                  font-weight: 500;
-                  font-display: swap;
-                }
-                @font-face {
-                  font-family: 'Noto Sans';
-                  src: url('/static/fonts/notosans-bold-webfont.woff2')
-                      format('woff2'),
-                    url('/static/fonts/notosans-bold-webfont.woff')
-                      format('woff');
-                  font-style: normal;
-                  font-weight: 700;
-                  font-display: swap;
-                }
-              `}
-            />
-            <Component
-              {...pageProps}
-              path={path}
-              toggleTheme={this.toggleTheme}
-            />
-          </ThemeProvider>
-        </InstrumentationProvider>
-      </Container>
+      <InstrumentationProvider
+        {...createEventInstrumentation(handlers, {
+          ...pageProps,
+        })}
+      >
+        <ThemeProvider theme={theme}>
+          <Global
+            styles={css`
+              @font-face {
+                font-family: 'Noto Sans';
+                src: url('/static/fonts/notosans-regular-webfont.woff2')
+                    format('woff2'),
+                  url('/static/fonts/notosans-regular-webfont.woff')
+                    format('woff');
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+              }
+              @font-face {
+                font-family: 'Noto Sans';
+                src: url('/static/fonts/notosans-italic-webfont.woff2')
+                    format('woff2'),
+                  url('/static/fonts/notosans-italic-webfont.woff')
+                    format('woff');
+                font-style: italic;
+                font-weight: 400;
+                font-display: swap;
+              }
+              @font-face {
+                font-family: 'Noto Sans';
+                src: url('/static/fonts/notosans-medium-webfont.woff2')
+                    format('woff2'),
+                  url('/static/fonts/notosans-medium-webfont.woff')
+                    format('woff');
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+              }
+              @font-face {
+                font-family: 'Noto Sans';
+                src: url('/static/fonts/notosans-bold-webfont.woff2')
+                    format('woff2'),
+                  url('/static/fonts/notosans-bold-webfont.woff') format('woff');
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+              }
+            `}
+          />
+          <Component
+            {...pageProps}
+            path={path}
+            toggleTheme={this.toggleTheme}
+          />
+        </ThemeProvider>
+      </InstrumentationProvider>
     );
   }
 }

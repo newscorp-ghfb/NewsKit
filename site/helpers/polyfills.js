@@ -1,12 +1,17 @@
-/* eslint-disable import/no-extraneous-dependencies, no-extend-native */
+/* eslint-disable import/no-extraneous-dependencies */
 
 // core-js comes with Next.js. So, you can import it like below
-import includes from 'core-js/library/fn/string/virtual/includes';
-import repeat from 'core-js/library/fn/string/virtual/repeat';
-import startsWith from 'core-js/library/fn/string/virtual/starts-with';
-import assign from 'core-js/library/fn/object/assign';
+// String
+import 'core-js/fn/string/starts-with';
+import 'core-js/fn/string/trim-right';
+import 'core-js/fn/string/repeat';
 
-String.prototype.includes = includes;
-String.prototype.repeat = repeat;
-String.prototype.startsWith = startsWith;
-Object.assign = assign;
+// Object
+import 'core-js/fn/object/values';
+import 'core-js/fn/object/entries';
+
+// Array
+import 'core-js/fn/array/find';
+import 'core-js/fn/array/from';
+import 'core-js/fn/array/fill';
+import 'core-js/fn/array/find-index';
