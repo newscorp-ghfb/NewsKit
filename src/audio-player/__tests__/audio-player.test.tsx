@@ -3,7 +3,7 @@ import {fireEvent, act} from '@testing-library/react';
 import {renderWithTheme, renderWithImplementation} from '../../test/test-utils';
 import {AudioPlayer} from '../audio-player';
 
-const {version} = require('../../../package.json');
+const version = '0.10.0';
 
 const liveAudioProps = {
   src: 'https://radio.talkradio.co.uk/stream',
