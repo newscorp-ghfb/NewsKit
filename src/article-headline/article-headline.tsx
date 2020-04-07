@@ -6,14 +6,13 @@ import {
   getColorFromTheme,
   getTypePresetFromTheme,
 } from '../utils/style';
-import {getMediaQueryFromTheme} from '../utils/responsive-helpers';
 
 const Heading = styled(H1)`
   display: inline;
-  ${getTypePresetFromTheme('headline100')}
-  ${getMediaQueryFromTheme('md')} {
-    ${getTypePresetFromTheme('headline200')}
-  }
+  ${getTypePresetFromTheme({
+    xs: 'headline100',
+    md: 'headline200',
+  })}
 `;
 
 interface KickerProps {

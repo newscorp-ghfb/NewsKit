@@ -59,7 +59,7 @@ export const getValueFromTheme = <ThemeToken extends string>(
 export const getPresetValueFromTheme = <ThemeToken extends string>(
   themeKey: keyof Theme,
 ) => <Props extends ThemeProp>(
-  defaultToken?: ThemeToken,
+  defaultToken?: MQ<ThemeToken>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => ({theme, ...props}: Props) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -99,7 +99,7 @@ export const getPresetValueFromTheme = <ThemeToken extends string>(
 };
 
 export const getTypePresetFromTheme = <Props extends ThemeProp>(
-  defaultToken?: TypePresetKeys,
+  defaultToken?: MQ<TypePresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => (props: Props) => {
   const typePreset = getPresetValueFromTheme('typePresets')(
@@ -155,7 +155,7 @@ export const getSizingFromTheme = getValueFromTheme<
 >('sizing');
 
 export const getPaddingPresetFromTheme = <Props extends ThemeProp>(
-  defaultToken?: PaddingPresetKeys,
+  defaultToken?: MQ<PaddingPresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => (props: Props) => {
   const padding = getPresetValueFromTheme('sizing')(defaultToken, customProp)(
@@ -179,7 +179,7 @@ export const getPaddingPresetFromTheme = <Props extends ThemeProp>(
 };
 
 export const getMarginPresetFromTheme = <Props extends ThemeProp>(
-  defaultToken?: MarginPresetKeys,
+  defaultToken?: MQ<MarginPresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => (props: Props) => {
   const margin = getPresetValueFromTheme('sizing')(defaultToken, customProp)(

@@ -1,4 +1,4 @@
-import {ThemeProp, CSSObject, getPresetValueFromTheme} from './style';
+import {ThemeProp, CSSObject, getPresetValueFromTheme, MQ} from './style';
 import {
   StylePresetStyles,
   StylePresetStyleKeys,
@@ -92,7 +92,7 @@ const getStylePresetValueFromTheme = (
   );
 
 export const getStylePresetFromTheme = <Props extends ThemeProp>(
-  defaultToken?: StylePresetKeys,
+  defaultToken?: MQ<StylePresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
   options?: GetStylePresetFromThemeOptions,
 ) => (props: Props) => {
