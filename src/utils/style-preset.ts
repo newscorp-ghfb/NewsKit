@@ -1,8 +1,10 @@
-import {ThemeProp, css, CSSObject} from './style';
+import {ThemeProp, CSSObject, getPresetValueFromTheme} from './style';
 import {
   StylePresetStyles,
   StylePresetStyleKeys,
   StylePresetStateKeys,
+  StylePresetStates,
+  StylePresetKeys,
 } from '../themes/mappers/style-preset';
 import {filterObject, rejectObject} from './filter-object';
 import {Theme} from '../themes/creator';
@@ -22,32 +24,26 @@ export const getPresetStyles = (
   options?: GetStylePresetFromThemeOptions,
 ) => {
   const {filterStyles = null, omitStyles = []} = options || {};
-  return filterStyles
+  const {iconColor, ...cssObject} = filterStyles
     ? filterObject(presetStyles, filterStyles)
     : rejectObject(presetStyles, omitStyles);
+  if (iconColor) {
+    return {
+      ...cssObject,
+      svg: {
+        fill: iconColor,
+        color: iconColor,
+      },
+    } as CSSObject;
+  }
+
+  return cssObject as CSSObject;
 };
 
-const cssTmpl = (
-  {iconColor = '', ...cssObject}: ReturnType<typeof getPresetStyles>,
-  selector: string = '',
-) => css`
-  ${selector && `:${selector} {`}
-  ${cssObject as CSSObject}
-  ${iconColor &&
-    `
-    svg {
-      fill: ${iconColor};
-      color: ${iconColor};
-    }
-  `}
-  ${selector && '}'}
-`;
-
-export const getStylePresetFromTheme = <Props extends ThemeProp>(
-  defaultToken?: string,
-  customProp?: Exclude<keyof Props, 'theme'>,
+const getPresetStates = (
+  stylePreset: StylePresetStates,
   options?: GetStylePresetFromThemeOptions,
-) => ({theme, ...props}: Props) => {
+) => {
   const {
     omitStates = [],
     filterStates = [],
@@ -55,13 +51,6 @@ export const getStylePresetFromTheme = <Props extends ThemeProp>(
     isLoading = false,
     isDisabled = false,
   } = options || {};
-  const stylePreset =
-    (customProp &&
-      theme.stylePresets[(props[customProp] as unknown) as string]) ||
-    (defaultToken && theme.stylePresets[defaultToken]);
-  if (!stylePreset) {
-    return '';
-  }
   const {current, loading, ...presetStates} =
     filterStates && filterStates.length
       ? filterObject(stylePreset, filterStates)
@@ -73,20 +62,59 @@ export const getStylePresetFromTheme = <Props extends ThemeProp>(
     undefined;
   if (stateOverrides) {
     const {base = {}} = presetStates;
-    return cssTmpl(getPresetStyles({...base, ...stateOverrides}, options));
+    return {base: {...base, ...stateOverrides}};
   }
-  return Object.entries(presetStates).map(([stateKey, presetState]) => {
-    if (presetState) {
-      const presetStyle = getPresetStyles(presetState, options);
-      if (stateKey === 'base') {
-        return cssTmpl(presetStyle);
+
+  return presetStates;
+};
+
+const getStylePresetValueFromTheme = (
+  stylePreset: StylePresetStates,
+  options?: GetStylePresetFromThemeOptions,
+) =>
+  Object.entries(getPresetStates(stylePreset, options)).reduce(
+    (acc, [stateKey, presetState]) => {
+      if (presetState) {
+        const selector =
+          stateKey === 'disabled'
+            ? `:${stateKey}`
+            : `:${stateKey}:not(:disabled)`;
+        const styles = getPresetStyles(presetState, options);
+        if (stateKey === 'base') {
+          return {...acc, ...styles};
+        }
+        acc[selector] = styles;
       }
-      const selector =
-        stateKey === 'disabled' ? stateKey : `${stateKey}:not(:disabled)`;
-      return cssTmpl(presetStyle, selector);
-    }
-    return '';
-  });
+
+      return acc;
+    },
+    {} as CSSObject,
+  );
+
+export const getStylePresetFromTheme = <Props extends ThemeProp>(
+  defaultToken?: StylePresetKeys,
+  customProp?: Exclude<keyof Props, 'theme'>,
+  options?: GetStylePresetFromThemeOptions,
+) => (props: Props) => {
+  const stylePreset = getPresetValueFromTheme('stylePresets')(
+    defaultToken,
+    customProp,
+  )(props) as Partial<StylePresetStates> | Array<[string, StylePresetStates]>;
+  if (Array.isArray(stylePreset)) {
+    return stylePreset.reduce(
+      (acc, [mq, preset], index) => {
+        const style = getStylePresetValueFromTheme(preset, options);
+        if (index === 0) {
+          return style;
+        }
+        acc[mq] = style;
+        return acc;
+      },
+      {} as CSSObject,
+    );
+  }
+
+  return stylePreset ? getStylePresetValueFromTheme(stylePreset, options) : '';
 };
 
 export const getSingleStylePreset = (

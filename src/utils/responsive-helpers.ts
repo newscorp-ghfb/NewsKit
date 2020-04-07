@@ -1,5 +1,8 @@
-import {Breakpoints, BreakpointKeys} from '../themes';
-import {ThemeProp} from './style';
+import {Breakpoints, BreakpointKeys, Theme} from '../themes';
+
+interface ThemeProp {
+  theme: Theme;
+}
 
 /**
  * Helper function that generates media queries based on given parameters
@@ -38,4 +41,18 @@ export const getMediaQueryFromTheme = (
     queries.push(` and (max-width: ${theme.breakpoints[maxWidth] - 1}px)`);
   }
   return queries.join('');
+};
+
+export const isResponsive = (prop: unknown, breakpoints: Breakpoints) => {
+  if (
+    typeof prop === 'object' &&
+    prop != null &&
+    Object.keys(breakpoints).some(bp =>
+      Object.prototype.hasOwnProperty.call(prop, bp),
+    )
+  ) {
+    return true;
+  }
+
+  return false;
 };

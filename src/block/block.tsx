@@ -1,15 +1,15 @@
 import React from 'react';
-import {styled, getSizingFromTheme} from '../utils/style';
+import {styled, getMarginPresetFromTheme, MQ} from '../utils/style';
 import {as as renderAs} from '../utils/component';
 import {MarginPresetKeys} from '../themes/mappers/spacing';
 
 export interface BlockProps {
-  $margin?: MarginPresetKeys;
+  $margin?: MQ<MarginPresetKeys>;
   as?: keyof JSX.IntrinsicElements;
 }
 
 const StyledDiv = styled.div<BlockProps>`
-  margin: ${getSizingFromTheme(undefined, '$margin')};
+  ${getMarginPresetFromTheme(undefined, '$margin')};
 `;
 
 export const Block: React.FC<BlockProps> = ({as, ...props}) => {

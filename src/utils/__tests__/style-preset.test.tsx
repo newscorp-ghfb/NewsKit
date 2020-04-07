@@ -5,7 +5,7 @@ import {
   GetStylePresetFromThemeOptions,
 } from '../style-preset';
 import {createTheme} from '../../themes';
-import {styled} from '../style';
+import {styled, MQ} from '../style';
 
 const TestSurface = styled.div<GetStylePresetFromThemeOptions>`
   ${options =>
@@ -13,7 +13,7 @@ const TestSurface = styled.div<GetStylePresetFromThemeOptions>`
 `;
 
 const OverridableTestSurface = styled.div<
-  GetStylePresetFromThemeOptions & {stylePresetToUse: string}
+  GetStylePresetFromThemeOptions & {stylePresetToUse: MQ<string>}
 >`
   ${options =>
     getStylePresetFromTheme(
@@ -47,6 +47,165 @@ describe('getStylePresetFromTheme', () => {
             interactive040: {
               base: {
                 backgroundColor: '#FF00FF',
+              },
+            },
+          },
+        }),
+      }),
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, and interactive030 for md breakpoints', () => {
+    const fragment = renderToFragmentWithTheme(
+      OverridableTestSurface,
+      {
+        stylePresetToUse: {
+          xs: 'interactive010',
+          sm: 'interactive020',
+          md: 'interactive030',
+        },
+      },
+      createTheme('test-style-preset', {
+        themeOverrider: () => ({
+          stylePresets: {
+            interactive010: {
+              base: {
+                backgroundColor: 'red',
+              },
+              disabled: {
+                color: 'red',
+              },
+            },
+            interactive020: {
+              base: {
+                backgroundColor: 'blue',
+              },
+            },
+            interactive030: {
+              base: {
+                backgroundColor: 'green',
+              },
+            },
+          },
+        }),
+      }),
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, and incorrect for md breakpoints', () => {
+    const fragment = renderToFragmentWithTheme(
+      OverridableTestSurface,
+      {
+        stylePresetToUse: {
+          xs: 'interactive010',
+          sm: 'interactive020',
+          md: 'incorrect',
+        },
+      },
+      createTheme('test-style-preset', {
+        themeOverrider: () => ({
+          stylePresets: {
+            interactive010: {
+              base: {
+                backgroundColor: 'red',
+              },
+              disabled: {
+                color: 'red',
+              },
+            },
+            interactive020: {
+              base: {
+                backgroundColor: 'blue',
+              },
+            },
+          },
+        }),
+      }),
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, interactive030 for md, and interactive040 for lg breakpoints', () => {
+    const fragment = renderToFragmentWithTheme(
+      OverridableTestSurface,
+      {
+        stylePresetToUse: {
+          xs: 'interactive010',
+          sm: 'interactive020',
+          md: 'interactive030',
+          lg: 'interactive040',
+        },
+      },
+      createTheme('test-style-preset', {
+        themeOverrider: () => ({
+          stylePresets: {
+            interactive010: {
+              base: {
+                backgroundColor: 'red',
+              },
+            },
+            interactive020: {
+              base: {
+                backgroundColor: 'blue',
+              },
+            },
+            interactive030: {
+              base: {
+                backgroundColor: 'green',
+              },
+            },
+            interactive040: {
+              base: {
+                backgroundColor: '#FF00FF',
+              },
+            },
+          },
+        }),
+      }),
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, interactive030 for md, interactive040 for lg breakpoints and ignore wrong prop', () => {
+    const fragment = renderToFragmentWithTheme(
+      OverridableTestSurface,
+      {
+        stylePresetToUse: {
+          xs: 'interactive010',
+          sm: 'interactive020',
+          md: 'interactive030',
+          lg: 'interactive040',
+          wrong: 'interactive050',
+        } as any,
+      },
+      createTheme('test-style-preset', {
+        themeOverrider: () => ({
+          stylePresets: {
+            interactive010: {
+              base: {
+                backgroundColor: 'red',
+              },
+            },
+            interactive020: {
+              base: {
+                backgroundColor: 'blue',
+              },
+            },
+            interactive030: {
+              base: {
+                backgroundColor: 'green',
+              },
+            },
+            interactive040: {
+              base: {
+                backgroundColor: '#FF00FF',
+              },
+            },
+            interactive050: {
+              base: {
+                backgroundColor: 'white',
               },
             },
           },

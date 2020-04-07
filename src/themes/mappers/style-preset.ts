@@ -417,3 +417,4 @@ export const createStylePresets = ({
 
 export type StylePresets = ReturnType<typeof createStylePresets> &
   Record<string, StylePresetStates>;
+export type StylePresetKeys = keyof StylePresets;

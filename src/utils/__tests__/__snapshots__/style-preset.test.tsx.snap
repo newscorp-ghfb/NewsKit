@@ -1,5 +1,115 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, and incorrect for md breakpoints 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: red;
+}
+
+.emotion-0:disabled {
+  color: red;
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    background-color: blue;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, and interactive030 for md breakpoints 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: red;
+}
+
+.emotion-0:disabled {
+  color: red;
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    background-color: blue;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    background-color: green;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, interactive030 for md, and interactive040 for lg breakpoints 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: red;
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    background-color: blue;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    background-color: green;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    background-color: #FF00FF;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, interactive030 for md, interactive040 for lg breakpoints and ignore wrong prop 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: red;
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    background-color: blue;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    background-color: green;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    background-color: #FF00FF;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
 exports[`getStylePresetFromTheme getStylePresetFromTheme with override to interactive040 1`] = `
 <DocumentFragment>
   .emotion-0 {

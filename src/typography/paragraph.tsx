@@ -1,4 +1,4 @@
-import {styled, css, getTypePresetFromTheme} from '../utils/style';
+import {styled, css, getTypePresetFromTheme, CSSObject} from '../utils/style';
 import {ColorKeys} from '../themes';
 
 export interface ParagraphProps {
@@ -9,7 +9,8 @@ export interface ParagraphProps {
 
 export const Paragraph = styled.p<ParagraphProps>`
   ${({theme}) => {
-    const typePreset = getTypePresetFromTheme('body030')({theme});
+    const typePreset = getTypePresetFromTheme('body030')({theme}) as CSSObject;
+
     return {
       ...typePreset,
       marginBottom: typePreset.fontSize,

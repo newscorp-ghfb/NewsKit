@@ -18,6 +18,18 @@ describe('Block', () => {
       expect(fragment).toMatchSnapshot();
     });
 
+    test('renders with spaceStack010 for xs, spaceStack020 for sm, and spaceStack030 for md breakpoints', () => {
+      const props: BlockProps = {
+        $margin: {
+          xs: 'spaceStack010',
+          sm: 'spaceStack020',
+          md: 'spaceStack030',
+        },
+      };
+      const fragment = renderToFragmentWithTheme(Block, props);
+      expect(fragment).toMatchSnapshot();
+    });
+
     test('renders with spaceInline020', () => {
       const props: BlockProps = {
         $margin: 'spaceInline020',

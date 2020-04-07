@@ -216,12 +216,6 @@ exports[`Radio Player default player 1`] = `
   width: 100%;
   height: 0;
   padding-top: calc(100% * (1/1));
-  background-color: #fafafa;
-}
-
-.emotion-4 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -1891,12 +1885,6 @@ exports[`Radio Player live player 1`] = `
   width: 100%;
   height: 0;
   padding-top: calc(100% * (1/1));
-  background-color: #fafafa;
-}
-
-.emotion-4 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -3618,12 +3606,6 @@ exports[`Radio Player player with popout link 1`] = `
   width: 100%;
   height: 0;
   padding-top: calc(100% * (1/1));
-  background-color: #fafafa;
-}
-
-.emotion-4 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -5561,12 +5543,6 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   width: 100%;
   height: 0;
   padding-top: calc(100% * (1/1));
-  background-color: #fafafa;
-}
-
-.emotion-4 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-2 {
