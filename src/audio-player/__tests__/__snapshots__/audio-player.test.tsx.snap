@@ -728,17 +728,14 @@ exports[`Audio Player live player renders as expected 1`] = `
         class="emotion-42"
       >
         <audio
-          data-testid="mock-audio-element"
+          data-testid="audio-element"
+          src="https://radio.talkradio.co.uk/stream"
+          title="The Breakfast Show with Giles Coren"
         >
-          {
-  "src": "https://radio.talkradio.co.uk/stream",
-  "captionSrc": "captions.vtt",
-  "title": "The Breakfast Show with Giles Coren",
-  "playing": false,
-  "volume": 0.7,
-  "newTime": -1,
-  "dataTestId": "audio-player"
-}
+          <track
+            kind="captions"
+            src="captions.vtt"
+          />
         </audio>
         <div
           class="emotion-0"
@@ -765,7 +762,6 @@ exports[`Audio Player live player renders as expected 1`] = `
                 >
                   <div
                     class="emotion-6"
-                    order="3"
                   >
                     <div
                       class="emotion-5"
@@ -784,13 +780,13 @@ exports[`Audio Player live player renders as expected 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="bui-1"
+                              aria-labelledby="mock-bui-1"
                               class="emotion-1"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="bui-1"
+                                id="mock-bui-1"
                               >
                                 Play
                               </title>
@@ -805,7 +801,6 @@ exports[`Audio Player live player renders as expected 1`] = `
                   </div>
                   <div
                     class="emotion-8"
-                    order="2"
                   >
                     <div
                       class="emotion-7"
@@ -814,7 +809,6 @@ exports[`Audio Player live player renders as expected 1`] = `
                   </div>
                   <div
                     class="emotion-6"
-                    order="3"
                   >
                     <div
                       class="emotion-5"
@@ -823,7 +817,6 @@ exports[`Audio Player live player renders as expected 1`] = `
                   </div>
                   <div
                     class="emotion-12"
-                    order="1"
                   >
                     <div
                       class="emotion-11"
@@ -832,7 +825,6 @@ exports[`Audio Player live player renders as expected 1`] = `
                   </div>
                   <div
                     class="emotion-14"
-                    order="5"
                   >
                     <div
                       class="emotion-13"
@@ -870,12 +862,12 @@ exports[`Audio Player live player renders as expected 1`] = `
                           class="emotion-2"
                         >
                           <svg
-                            aria-labelledby="bui-2"
+                            aria-labelledby="mock-bui-1"
                             class="emotion-18"
                             viewBox="0 0 24 24"
                           >
                             <title
-                              id="bui-2"
+                              id="mock-bui-1"
                             >
                               mute
                             </title>
@@ -932,12 +924,12 @@ exports[`Audio Player live player renders as expected 1`] = `
                           class="emotion-2"
                         >
                           <svg
-                            aria-labelledby="bui-3"
+                            aria-labelledby="mock-bui-1"
                             class="emotion-18"
                             viewBox="0 0 24 24"
                           >
                             <title
-                              id="bui-3"
+                              id="mock-bui-1"
                             >
                               max volume
                             </title>
@@ -982,13 +974,13 @@ exports[`Audio Player live player renders as expected 1`] = `
                         class="emotion-2"
                       >
                         <svg
-                          aria-labelledby="bui-4"
+                          aria-labelledby="mock-bui-1"
                           class="emotion-33"
                           focusable="false"
                           viewBox="0 0 24 24"
                         >
                           <title
-                            id="bui-4"
+                            id="mock-bui-1"
                           >
                             open popout player
                           </title>
@@ -1014,7 +1006,7 @@ exports[`Audio Player live player renders as expected 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Audio Player recorded player renders and behaves as expected 8`] = `
+exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 <DocumentFragment>
   .emotion-64 {
   width: 100%;
@@ -1873,17 +1865,14 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
         class="emotion-62"
       >
         <audio
-          data-testid="mock-audio-element"
+          data-testid="audio-element"
+          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          title="The Breakfast Show with Giles Coren"
         >
-          {
-  "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-  "captionSrc": "captions.vtt",
-  "title": "The Breakfast Show with Giles Coren",
-  "playing": false,
-  "volume": 0.1,
-  "newTime": 10,
-  "dataTestId": "audio-player"
-}
+          <track
+            kind="captions"
+            src="captions.vtt"
+          />
         </audio>
         <div
           class="emotion-0"
@@ -1910,7 +1899,6 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
                 >
                   <div
                     class="emotion-6"
-                    order="3"
                   >
                     <div
                       class="emotion-5"
@@ -1929,13 +1917,13 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="bui-75"
+                              aria-labelledby="mock-bui-1"
                               class="emotion-1"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="bui-75"
+                                id="mock-bui-1"
                               >
                                 Play
                               </title>
@@ -1950,7 +1938,6 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
                   </div>
                   <div
                     class="emotion-12"
-                    order="2"
                   >
                     <div
                       class="emotion-11"
@@ -1968,13 +1955,13 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="bui-46"
+                              aria-labelledby="mock-bui-1"
                               class="emotion-1"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="bui-46"
+                                id="mock-bui-1"
                               >
                                 rewind 10 seconds
                               </title>
@@ -1989,7 +1976,6 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
                   </div>
                   <div
                     class="emotion-6"
-                    order="3"
                   >
                     <div
                       class="emotion-5"
@@ -2007,13 +1993,13 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="bui-47"
+                              aria-labelledby="mock-bui-1"
                               class="emotion-1"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="bui-47"
+                                id="mock-bui-1"
                               >
                                 fast forward 10 seconds
                               </title>
@@ -2035,7 +2021,6 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
                   </div>
                   <div
                     class="emotion-24"
-                    order="1"
                   >
                     <div
                       class="emotion-23"
@@ -2053,13 +2038,13 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="bui-48"
+                              aria-labelledby="mock-bui-1"
                               class="emotion-1"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="bui-48"
+                                id="mock-bui-1"
                               >
                                 previous
                               </title>
@@ -2078,7 +2063,6 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
                   </div>
                   <div
                     class="emotion-30"
-                    order="5"
                   >
                     <div
                       class="emotion-29"
@@ -2096,13 +2080,13 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="bui-9"
+                              aria-labelledby="mock-bui-1"
                               class="emotion-1"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="bui-9"
+                                id="mock-bui-1"
                               >
                                 next
                               </title>
@@ -2150,12 +2134,12 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
                           class="emotion-2"
                         >
                           <svg
-                            aria-labelledby="bui-76"
+                            aria-labelledby="mock-bui-1"
                             class="emotion-34"
                             viewBox="0 0 24 24"
                           >
                             <title
-                              id="bui-76"
+                              id="mock-bui-1"
                             >
                               mute
                             </title>
@@ -2212,12 +2196,12 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
                           class="emotion-2"
                         >
                           <svg
-                            aria-labelledby="bui-77"
+                            aria-labelledby="mock-bui-1"
                             class="emotion-34"
                             viewBox="0 0 24 24"
                           >
                             <title
-                              id="bui-77"
+                              id="mock-bui-1"
                             >
                               max volume
                             </title>
@@ -2309,7 +2293,7 @@ exports[`Audio Player recorded player renders and behaves as expected 8`] = `
 </DocumentFragment>
 `;
 
-exports[`Audio Player recorded player renders and behaves as expected: after time update 1`] = `
+exports[`Audio Player recorded player renders and behaves as expected 2`] = `
 .emotion-0 {
   background-color: #0A68C1;
   border-color: #0A68C1;
@@ -2374,8 +2358,551 @@ exports[`Audio Player recorded player renders and behaves as expected: after tim
 />
 `;
 
-exports[`Audio Player recorded player renders and behaves as expected: after time update 2`] = `
+exports[`Audio Player recorded player renders as expected 1`] = `
+<DocumentFragment>
+  .emotion-60 {
+  width: 100%;
+}
+
+.emotion-59 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-58 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+@media screen {
+  .emotion-58 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-58 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-58 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-58 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
 .emotion-0 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-0 {
+    padding: 0 0px;
+    margin-top: 0px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+.emotion-49 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-49 {
+    padding: 0 0px;
+    margin-top: 0px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-49 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-49 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-49 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+.emotion-48 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-11 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-28 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.emotion-5 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-4 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #0A68C1;
+  border-radius: 50%;
+  color: #FFFFFF;
+  min-height: 16px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 16px;
+  width: 64px;
+  height: 64px;
+}
+
+.emotion-4:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-4 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-4:hover:not(:disabled) {
+  background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
+}
+
+.emotion-4:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-4:disabled {
+  background-color: #f0f0f0;
+  color: #9c9c9c;
+}
+
+.emotion-4:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-4 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-1 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.emotion-24 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.emotion-23 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-26 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 5;
+  -ms-flex-order: 5;
+  order: 5;
+}
+
+.emotion-25 {
+  -webkit-order: 5;
+  -ms-flex-order: 5;
+  order: 5;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-43 {
+  box-sizing: border-box;
+  width: calc( 184px + 24px );
+  padding: 0 calc(24px / 2);
+}
+
+@media screen {
+  .emotion-43 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-43 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-43 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-43 {
+    display: block;
+  }
+}
+
+.emotion-42 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-34 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-right: 8px;
+}
+
+.emotion-33 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #0A68C1;
+  border-radius: 50%;
+  min-height: 8px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  margin: 8px 0;
+}
+
+.emotion-33:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-33 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-33:hover:not(:disabled) {
+  background-color: #e6f4ff;
+}
+
+.emotion-33:active:not(:disabled) {
+  background-color: #d5ebff;
+}
+
+.emotion-33:disabled {
+  color: #9c9c9c;
+  background-color: transparent;
+}
+
+.emotion-33:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-33 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-33::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 100%;
+  height: 48px;
+}
+
+.emotion-30 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+.emotion-36 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  border-radius: 20rem;
+  margin: calc(16px/2 - 4px/2) calc(16px/2);
+  height: 4px;
+  width: 100%;
+}
+
+.emotion-35 {
   background-color: #0A68C1;
   border-color: #0A68C1;
   border-width: 1px;
@@ -2391,50 +2918,690 @@ exports[`Audio Player recorded player renders and behaves as expected: after tim
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-  cursor: grabbing;
+  cursor: pointer;
 }
 
-.emotion-0 svg {
+.emotion-35 svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-35:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-0:active:not(:disabled) {
+.emotion-35:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-0:active:not(:disabled) svg {
+.emotion-35:active:not(:disabled) svg {
   fill: #535353;
   color: #535353;
 }
 
-.emotion-0:disabled {
+.emotion-35:disabled {
   border-style: none;
 }
 
-.emotion-0:disabled svg {
+.emotion-35:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-<div
-  aria-label="seek bar"
-  aria-valuemax="60"
-  aria-valuemin="0"
-  aria-valuenow="35"
-  aria-valuetext="00 hour 00 minutes 35 seconds of 00 hour 01 minutes 00 seconds"
-  class="emotion-0"
-  data-testid="audio-slider-thumb"
-  draggable="false"
-  role="slider"
-  style="position: absolute; z-index: 0; cursor: grabbing; user-select: none; transform: translate(NaNpx, NaNpx);"
-  tabindex="0"
-  values="35"
-/>
+.emotion-41 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-left: 8px;
+}
+
+.emotion-45 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.emotion-10 {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #0A68C1;
+  border-radius: 50%;
+  min-height: 12px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-10:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-10 svg {
+  fill: #0A68C1;
+  color: #0A68C1;
+}
+
+.emotion-10:hover:not(:disabled) {
+  background-color: #e6f4ff;
+}
+
+.emotion-10:active:not(:disabled) {
+  background-color: #d5ebff;
+}
+
+.emotion-10:disabled {
+  color: #9c9c9c;
+  background-color: transparent;
+}
+
+.emotion-10:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-10 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-27 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-12px/2);
+  margin-right: calc(-12px/2);
+  min-width: 316px;
+}
+
+.emotion-57 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-57 {
+    padding: 0 0px;
+    margin-top: 0px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-57 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-57 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-57 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+.emotion-56 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.emotion-51 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  border-radius: 20rem;
+  margin: calc(16px/2 - 8px/2) calc(16px/2);
+  height: 8px;
+  width: 100%;
+}
+
+.emotion-55 {
+  width: 100%;
+  margin-top: 12px;
+  padding: 0 calc(16px / 2);
+}
+
+.emotion-54 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-52 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #535353;
+}
+
+<section
+    aria-label="audio player"
+    class="emotion-60"
+  >
+    <div
+      class="emotion-59"
+    >
+      <div
+        class="emotion-58"
+      >
+        <audio
+          data-testid="audio-element"
+          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          title="The Breakfast Show with Giles Coren"
+        >
+          <track
+            kind="captions"
+            src="captions.vtt"
+          />
+        </audio>
+        <div
+          class="emotion-0"
+        >
+          <div>
+            Well hello there children!!!
+          </div>
+        </div>
+        <div
+          class="emotion-49"
+        >
+          <div
+            class="emotion-48"
+          >
+            <div
+              class="emotion-11"
+              order="2"
+            >
+              <div
+                class="emotion-28"
+              >
+                <div
+                  class="emotion-27"
+                >
+                  <div
+                    class="emotion-6"
+                  >
+                    <div
+                      class="emotion-5"
+                      order="3"
+                    >
+                      <button
+                        aria-pressed="false"
+                        class="emotion-4"
+                        data-testid="audio-player-play-button"
+                        type="button"
+                      >
+                        <div
+                          class="emotion-3"
+                        >
+                          <div
+                            class="emotion-2"
+                          >
+                            <svg
+                              aria-labelledby="mock-bui-1"
+                              class="emotion-1"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <title
+                                id="mock-bui-1"
+                              >
+                                Play
+                              </title>
+                              <polygon
+                                points="8 5 8 19 19 12"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-12"
+                  >
+                    <div
+                      class="emotion-11"
+                      order="2"
+                    >
+                      <button
+                        class="emotion-10"
+                        data-testid="audio-player-backward"
+                        type="button"
+                      >
+                        <div
+                          class="emotion-3"
+                        >
+                          <div
+                            class="emotion-2"
+                          >
+                            <svg
+                              aria-labelledby="mock-bui-1"
+                              class="emotion-1"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <title
+                                id="mock-bui-1"
+                              >
+                                rewind 10 seconds
+                              </title>
+                              <path
+                                d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-6"
+                  >
+                    <div
+                      class="emotion-5"
+                      order="3"
+                    >
+                      <button
+                        class="emotion-10"
+                        data-testid="audio-player-forward"
+                        type="button"
+                      >
+                        <div
+                          class="emotion-3"
+                        >
+                          <div
+                            class="emotion-2"
+                          >
+                            <svg
+                              aria-labelledby="mock-bui-1"
+                              class="emotion-1"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <title
+                                id="mock-bui-1"
+                              >
+                                fast forward 10 seconds
+                              </title>
+                              <path
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                              <path
+                                d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+                              />
+                              <path
+                                d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-24"
+                  >
+                    <div
+                      class="emotion-23"
+                      order="1"
+                    >
+                      <button
+                        class="emotion-10"
+                        data-testid="audio-player-skip-previous"
+                        disabled=""
+                        type="button"
+                      >
+                        <div
+                          class="emotion-3"
+                        >
+                          <div
+                            class="emotion-2"
+                          >
+                            <svg
+                              aria-labelledby="mock-bui-1"
+                              class="emotion-1"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <title
+                                id="mock-bui-1"
+                              >
+                                previous
+                              </title>
+                              <path
+                                d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+                              />
+                              <path
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-26"
+                  >
+                    <div
+                      class="emotion-25"
+                      order="5"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="emotion-23"
+              order="1"
+            >
+              <div
+                class="emotion-43"
+              >
+                <div
+                  class="emotion-42"
+                  data-testid="volume-control"
+                >
+                  <div
+                    class="emotion-34"
+                    data-testid="min-label"
+                  >
+                    <button
+                      class="emotion-33"
+                      data-testid="mute-button"
+                      tabindex="-1"
+                      type="button"
+                    >
+                      <div
+                        class="emotion-3"
+                      >
+                        <div
+                          class="emotion-2"
+                        >
+                          <svg
+                            aria-labelledby="mock-bui-1"
+                            class="emotion-30"
+                            viewBox="0 0 24 24"
+                          >
+                            <title
+                              id="mock-bui-1"
+                            >
+                              mute
+                            </title>
+                            <path
+                              d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                  <div
+                    aria-orientation="horizontal"
+                    aria-valuemax="1"
+                    aria-valuemin="0"
+                    class="emotion-36"
+                    data-testid="volume-control-track"
+                    style="background: rgb(255, 255, 0);"
+                    values="0.7"
+                  >
+                    <div
+                      aria-label="Volume Control"
+                      aria-valuemax="1"
+                      aria-valuemin="0"
+                      aria-valuenow="0.7"
+                      aria-valuetext="volume level 7 of 10"
+                      class="emotion-35"
+                      data-testid="volume-control-thumb"
+                      draggable="false"
+                      role="slider"
+                      style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                      tabindex="0"
+                      values="0.7"
+                    />
+                  </div>
+                  <div
+                    class="emotion-41"
+                    data-testid="max-label"
+                  >
+                    <button
+                      class="emotion-33"
+                      data-testid="volumeup-button"
+                      tabindex="-1"
+                      type="button"
+                    >
+                      <div
+                        class="emotion-3"
+                      >
+                        <div
+                          class="emotion-2"
+                        >
+                          <svg
+                            aria-labelledby="mock-bui-1"
+                            class="emotion-30"
+                            viewBox="0 0 24 24"
+                          >
+                            <title
+                              id="mock-bui-1"
+                            >
+                              max volume
+                            </title>
+                            <title>
+                              max volume
+                            </title>
+                            <path
+                              d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="emotion-5"
+              order="3"
+            >
+              <div
+                class="emotion-43"
+              >
+                <div
+                  class="emotion-45"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="emotion-57"
+        >
+          <div
+            class="emotion-56"
+            data-testid="audio-slider"
+          >
+            <div
+              class="emotion-51"
+              data-testid="audio-slider-track"
+              style="background: rgb(255, 255, 0);"
+              values="0"
+            >
+              <div
+                aria-label="seek bar"
+                aria-valuemax="1"
+                aria-valuemin="0"
+                aria-valuenow="0"
+                aria-valuetext="00 hour 00 minutes 00 seconds of 00 hour 00 minutes 00 seconds"
+                class="emotion-35"
+                data-testid="audio-slider-thumb"
+                draggable="false"
+                role="slider"
+                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                tabindex="0"
+                values="0"
+              />
+            </div>
+            <div
+              class="emotion-55"
+            >
+              <div
+                class="emotion-54"
+              >
+                <div
+                  class="emotion-52"
+                  data-testid="min-label"
+                >
+                  00:00
+                </div>
+                <div
+                  class="emotion-52"
+                  data-testid="max-label"
+                >
+                  00:00
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
 `;

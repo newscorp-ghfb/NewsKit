@@ -39,20 +39,20 @@ export const hasSpacing = (theme: Theme, space: SizingKeys) =>
 
 const calculateMargins = (negative?: boolean) => ({
   theme,
-  space,
-  wrap,
-  flow,
+  $space,
+  $wrap,
+  $flow,
 }: StyledChildProps & ThemeProp) => {
-  const hasWrapping = wrap === 'wrap';
+  const hasWrapping = $wrap === 'wrap';
 
-  if (!hasSpacing(theme, space)) {
+  if (!hasSpacing(theme, $space)) {
     return undefined;
   }
 
   const margins = {} as CSSObject;
-  const halfSpace = `calc(${negative ? '-' : ''}${theme.sizing[space]}/2)`;
+  const halfSpace = `calc(${negative ? '-' : ''}${theme.sizing[$space]}/2)`;
 
-  if (verticalFlows.includes(flow as Flow)) {
+  if (verticalFlows.includes($flow as Flow)) {
     margins.marginTop = halfSpace;
     margins.marginBottom = halfSpace;
 
@@ -61,7 +61,7 @@ const calculateMargins = (negative?: boolean) => ({
       margins.marginRight = halfSpace;
     }
   } /* istanbul ignore next */ else if (
-    horizontalFlows.includes(flow as Flow)
+    horizontalFlows.includes($flow as Flow)
   ) {
     margins.marginLeft = halfSpace;
     margins.marginRight = halfSpace;
@@ -75,40 +75,40 @@ const calculateMargins = (negative?: boolean) => ({
   return margins;
 };
 
-const getFlexDirection = ({flow, flowReverse}: StyledStackProps) => {
-  const flexDir = horizontalFlows.includes(flow as Flow)
+const getFlexDirection = ({$flow, $flowReverse}: StyledStackProps) => {
+  const flexDir = horizontalFlows.includes($flow as Flow)
     ? flowDictionary.horizontal
     : flowDictionary.vertical;
-  const reverse = flowReverse ? '-reverse' : '';
+  const reverse = $flowReverse ? '-reverse' : '';
   return flexDir + reverse;
 };
 
 export const StyledMasterContainer = styled('div')<StyledStackProps>`
   display: flex;
-  height: ${({flow}) =>
+  height: ${({$flow}) =>
     [
       Flow.VerticalLeft,
       Flow.VerticalCenter,
       Flow.VerticalRight,
       Flow.HorizontalCenter,
       Flow.HorizontalBottom,
-    ].includes(flow as Flow)
+    ].includes($flow as Flow)
       ? '100%'
       : 'auto'};
 
-  align-items: ${({flow}) => alignmentDictionary[flow]};
-  flex-wrap: ${({wrap}) => (wrap === true ? 'wrap' : wrap)};
-  flex-grow: ${({flexGrow}) => (flexGrow === true ? 1 : flexGrow)};
-  flex-shrink: ${({flexShrink}) => (flexShrink === true ? 1 : flexShrink)};
+  align-items: ${({$flow}) => alignmentDictionary[$flow]};
+  flex-wrap: ${({$wrap}) => ($wrap === true ? 'wrap' : $wrap)};
+  flex-grow: ${({$flexGrow}) => ($flexGrow === true ? 1 : $flexGrow)};
+  flex-shrink: ${({$flexShrink}) => ($flexShrink === true ? 1 : $flexShrink)};
   flex-direction: ${getFlexDirection};
 
-  justify-content: ${({stackDistribution}) =>
-    stackDistribution === StackDistribution.SpaceEvenly
+  justify-content: ${({$stackDistribution}) =>
+    $stackDistribution === StackDistribution.SpaceEvenly
       ? StackDistribution.SpaceAround
-      : stackDistribution};
+      : $stackDistribution};
 
-  ${({stackDistribution}) =>
-    stackDistribution === StackDistribution.SpaceEvenly
+  ${({$stackDistribution}) =>
+    $stackDistribution === StackDistribution.SpaceEvenly
       ? css`
           &:before,
           &:after {
@@ -124,5 +124,5 @@ export const StyledMasterContainer = styled('div')<StyledStackProps>`
 export const StyledChildContainer = styled.div<StyledChildProps>`
   display: inline-flex;
   ${calculateMargins()}
-  order: ${({order}) => order};
+  order: ${({$order}) => $order};
 `;

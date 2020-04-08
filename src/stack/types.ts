@@ -1,14 +1,12 @@
 import {SizingKeys} from '../themes/newskit-light/spacing';
 
-export type StackProps = Partial<StyledStackProps>;
-
-export interface StyledStackProps {
-  space: SizingKeys;
-  wrap: boolean | 'wrap' | 'nowrap';
-  flexGrow: boolean | number;
-  flexShrink: boolean | number;
-  flowReverse: boolean;
-  flow:
+export interface StackProps {
+  space?: SizingKeys;
+  wrap?: boolean | 'wrap' | 'nowrap';
+  flexGrow?: boolean | number;
+  flexShrink?: boolean | number;
+  flowReverse?: boolean;
+  flow?:
     | Flow
     | 'vertical-left'
     | 'vertical-center'
@@ -16,7 +14,7 @@ export interface StyledStackProps {
     | 'horizontal-top'
     | 'horizontal-center'
     | 'horizontal-bottom';
-  stackDistribution:
+  stackDistribution?:
     | StackDistribution
     | 'flex-start'
     | 'center'
@@ -26,10 +24,13 @@ export interface StyledStackProps {
     | 'space-evenly';
 }
 
-export interface StyledChildProps {
-  space: SizingKeys;
-  wrap: boolean | 'wrap' | 'nowrap';
-  flow:
+export interface StyledStackProps {
+  $space: SizingKeys;
+  $wrap: boolean | 'wrap' | 'nowrap';
+  $flexGrow: boolean | number;
+  $flexShrink: boolean | number;
+  $flowReverse: boolean;
+  $flow:
     | Flow
     | 'vertical-left'
     | 'vertical-center'
@@ -37,7 +38,19 @@ export interface StyledChildProps {
     | 'horizontal-top'
     | 'horizontal-center'
     | 'horizontal-bottom';
-  order?: number;
+  $stackDistribution:
+    | StackDistribution
+    | 'flex-start'
+    | 'center'
+    | 'flex-end'
+    | 'space-around'
+    | 'space-between'
+    | 'space-evenly';
+}
+
+export interface StyledChildProps
+  extends Pick<StyledStackProps, '$space' | '$flow' | '$wrap'> {
+  $order?: number;
 }
 
 export enum Flow {

@@ -253,12 +253,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
             class="emotion-1"
           >
             <svg
-              aria-labelledby="bui-9"
+              aria-labelledby="mock-bui-1"
               class="emotion-0"
               viewBox="0 0 24 24"
             >
               <title
-                id="bui-9"
+                id="mock-bui-1"
               >
                 unmute
               </title>
@@ -314,12 +314,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
             class="emotion-1"
           >
             <svg
-              aria-labelledby="bui-10"
+              aria-labelledby="mock-bui-1"
               class="emotion-0"
               viewBox="0 0 24 24"
             >
               <title
-                id="bui-10"
+                id="mock-bui-1"
               >
                 max volume
               </title>
@@ -595,12 +595,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
             class="emotion-1"
           >
             <svg
-              aria-labelledby="bui-11"
+              aria-labelledby="mock-bui-1"
               class="emotion-0"
               viewBox="0 0 24 24"
             >
               <title
-                id="bui-11"
+                id="mock-bui-1"
               >
                 mute
               </title>
@@ -656,12 +656,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
             class="emotion-1"
           >
             <svg
-              aria-labelledby="bui-12"
+              aria-labelledby="mock-bui-1"
               class="emotion-0"
               viewBox="0 0 24 24"
             >
               <title
-                id="bui-12"
+                id="mock-bui-1"
               >
                 max volume
               </title>
@@ -937,12 +937,12 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
             class="emotion-1"
           >
             <svg
-              aria-labelledby="bui-1"
+              aria-labelledby="mock-bui-1"
               class="emotion-0"
               viewBox="0 0 24 24"
             >
               <title
-                id="bui-1"
+                id="mock-bui-1"
               >
                 mute
               </title>
@@ -998,12 +998,12 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
             class="emotion-1"
           >
             <svg
-              aria-labelledby="bui-2"
+              aria-labelledby="mock-bui-1"
               class="emotion-0"
               viewBox="0 0 24 24"
             >
               <title
-                id="bui-2"
+                id="mock-bui-1"
               >
                 max volume
               </title>
@@ -1278,12 +1278,12 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
             class="emotion-1"
           >
             <svg
-              aria-labelledby="bui-3"
+              aria-labelledby="mock-bui-1"
               class="emotion-0"
               viewBox="0 0 24 24"
             >
               <title
-                id="bui-3"
+                id="mock-bui-1"
               >
                 mute
               </title>
@@ -1339,12 +1339,12 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
             class="emotion-1"
           >
             <svg
-              aria-labelledby="bui-4"
+              aria-labelledby="mock-bui-1"
               class="emotion-0"
               viewBox="0 0 24 24"
             >
               <title
-                id="bui-4"
+                id="mock-bui-1"
               >
                 max volume
               </title>
@@ -1620,12 +1620,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
             class="emotion-1"
           >
             <svg
-              aria-labelledby="bui-25"
+              aria-labelledby="mock-bui-1"
               class="emotion-0"
               viewBox="0 0 24 24"
             >
               <title
-                id="bui-25"
+                id="mock-bui-1"
               >
                 unmute
               </title>
@@ -1681,12 +1681,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
             class="emotion-1"
           >
             <svg
-              aria-labelledby="bui-26"
+              aria-labelledby="mock-bui-1"
               class="emotion-0"
               viewBox="0 0 24 24"
             >
               <title
-                id="bui-26"
+                id="mock-bui-1"
               >
                 max volume
               </title>
@@ -1962,12 +1962,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
             class="emotion-1"
           >
             <svg
-              aria-labelledby="bui-27"
+              aria-labelledby="mock-bui-1"
               class="emotion-0"
               viewBox="0 0 24 24"
             >
               <title
-                id="bui-27"
+                id="mock-bui-1"
               >
                 mute
               </title>
@@ -2023,12 +2023,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
             class="emotion-1"
           >
             <svg
-              aria-labelledby="bui-28"
+              aria-labelledby="mock-bui-1"
               class="emotion-0"
               viewBox="0 0 24 24"
             >
               <title
-                id="bui-28"
+                id="mock-bui-1"
               >
                 max volume
               </title>
@@ -2304,12 +2304,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
             class="emotion-1"
           >
             <svg
-              aria-labelledby="bui-35"
+              aria-labelledby="mock-bui-1"
               class="emotion-0"
               viewBox="0 0 24 24"
             >
               <title
-                id="bui-35"
+                id="mock-bui-1"
               >
                 unmute
               </title>
@@ -2365,12 +2365,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
             class="emotion-1"
           >
             <svg
-              aria-labelledby="bui-36"
+              aria-labelledby="mock-bui-1"
               class="emotion-0"
               viewBox="0 0 24 24"
             >
               <title
-                id="bui-36"
+                id="mock-bui-1"
               >
                 max volume
               </title>
@@ -2646,12 +2646,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
             class="emotion-1"
           >
             <svg
-              aria-labelledby="bui-37"
+              aria-labelledby="mock-bui-1"
               class="emotion-0"
               viewBox="0 0 24 24"
             >
               <title
-                id="bui-37"
+                id="mock-bui-1"
               >
                 mute
               </title>
@@ -2707,12 +2707,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
             class="emotion-1"
           >
             <svg
-              aria-labelledby="bui-38"
+              aria-labelledby="mock-bui-1"
               class="emotion-0"
               viewBox="0 0 24 24"
             >
               <title
-                id="bui-38"
+                id="mock-bui-1"
               >
                 max volume
               </title>
@@ -2988,12 +2988,12 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
             class="emotion-1"
           >
             <svg
-              aria-labelledby="bui-21"
+              aria-labelledby="mock-bui-1"
               class="emotion-0"
               viewBox="0 0 24 24"
             >
               <title
-                id="bui-21"
+                id="mock-bui-1"
               >
                 mute
               </title>
@@ -3049,12 +3049,12 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
             class="emotion-1"
           >
             <svg
-              aria-labelledby="bui-22"
+              aria-labelledby="mock-bui-1"
               class="emotion-0"
               viewBox="0 0 24 24"
             >
               <title
-                id="bui-22"
+                id="mock-bui-1"
               >
                 max volume
               </title>

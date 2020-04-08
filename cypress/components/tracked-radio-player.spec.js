@@ -6,7 +6,7 @@ describe('skippable audio player', () => {
   beforeEach(() => {
     cy.visit('?name=tracked-radio-player');
     cy.fixture('podcasts.json').as('podcasts');
-    cy.get('[data-testid="audio-player"]').as('player');
+    cy.get('[data-testid="audio-element"]').as('player');
     cy.get('[data-testid="audio-slider-track"]').as('sliderTrack');
     cy.get('[data-testid="audio-slider"] [data-testid="max-label"]').as(
       'sliderLabel',

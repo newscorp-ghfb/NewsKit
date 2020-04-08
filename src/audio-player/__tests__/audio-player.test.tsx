@@ -1,11 +1,12 @@
 import React from 'react';
-import {fireEvent, act} from '@testing-library/react';
+import {fireEvent} from '@testing-library/react';
 import {renderWithTheme, renderWithImplementation} from '../../test/test-utils';
 import {AudioPlayer} from '../audio-player';
+import {AudioPlayerProps} from '../types';
 
 const version = '0.10.0';
 
-const liveAudioProps = {
+const liveAudioProps: AudioPlayerProps = {
   src: 'https://radio.talkradio.co.uk/stream',
   title: 'The Breakfast Show with Giles Coren',
   captionSrc: 'captions.vtt',
@@ -14,11 +15,11 @@ const liveAudioProps = {
   children: <div>Well hello there children!!!</div>,
 };
 
-const recordedAudioProps = {
+const recordedAudioProps: AudioPlayerProps = {
   src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
   title: 'The Breakfast Show with Giles Coren',
   captionSrc: 'captions.vtt',
-  autoplay: false,
+  autoPlay: false,
   children: <div>Well hello there children!!!</div>,
 };
 
@@ -63,245 +64,142 @@ jest.mock('react-range', () => {
   };
 });
 
-let mockAudioElementFunctions: any = {};
-jest.mock('../audio-element', () => ({
-  AudioElement: ({
-    captionSrc,
-    src,
-    title,
-    playing,
-    'data-testid': dataTestId,
-    volume,
-    newTime,
-    ...restProps
-  }: any) => {
-    mockAudioElementFunctions = restProps;
-
-    mockAudioElementFunctions.onDurationChange({
-      target: {
-        duration: 60,
-      },
-    });
-
-    return (
-      // eslint-disable-next-line jsx-a11y/media-has-caption
-      <audio data-testid="mock-audio-element" {...restProps}>
-        {JSON.stringify(
-          {
-            src,
-            captionSrc,
-            title,
-            playing,
-            volume,
-            newTime,
-            dataTestId,
-          },
-          null,
-          2,
-        )}
-      </audio>
-    );
-  },
-}));
-
 describe('Audio Player', () => {
+  const mediaElement = (window as any).HTMLMediaElement.prototype;
+
+  beforeAll(() => {
+    ['duration', 'seekable', 'buffered'].forEach(k => {
+      Object.defineProperty(mediaElement, k, {
+        writable: true,
+      });
+    });
+  });
+
+  beforeEach(() => {
+    ['load', 'play', 'pause'].forEach(k => {
+      mediaElement[k] = jest.fn();
+    });
+    window.open = jest.fn();
+  });
+
   test('live player renders as expected', () => {
     const {asFragment} = renderWithTheme(AudioPlayer, liveAudioProps);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('recorded player renders as expected', () => {
+    const {asFragment} = renderWithTheme(AudioPlayer, recordedAudioProps);
     expect(asFragment()).toMatchSnapshot();
   });
 
   test('recorded player renders and behaves as expected', () => {
     const onNextTrack = jest.fn();
     const onPreviousTrack = jest.fn();
-    const {asFragment, getByTestId, rerender} = renderWithTheme(AudioPlayer, {
+    const props = {
       ...recordedAudioProps,
       onNextTrack,
       onPreviousTrack,
+    };
+    const {asFragment, getByTestId} = renderWithTheme(AudioPlayer, props);
+
+    const audioElement = getByTestId('audio-element') as any;
+    fireEvent.durationChange(audioElement, {
+      target: {
+        duration: 60,
+      },
     });
 
-    const audioElement = getByTestId('mock-audio-element') as HTMLAudioElement;
-
-    // Audio element expected props
-    expect(audioElement).toMatchInlineSnapshot(`
-      <audio
-        data-testid="mock-audio-element"
-      >
-        {
-        "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-        "captionSrc": "captions.vtt",
-        "title": "The Breakfast Show with Giles Coren",
-        "playing": false,
-        "volume": 0.7,
-        "newTime": -1,
-        "dataTestId": "audio-player"
-      }
-      </audio>
-    `);
-
-    // Play and mute
+    // Play
+    audioElement.play.mockReset();
     fireEvent.click(getByTestId('audio-player-play-button'));
+    expect(audioElement.play).toHaveBeenCalled();
+
+    // Should default to 0.7
+    expect(audioElement.volume).toEqual(0.7);
+
+    // Mute
     fireEvent.click(getByTestId('mute-button'));
-    expect(audioElement).toMatchInlineSnapshot(`
-            <audio
-              data-testid="mock-audio-element"
-            >
-              {
-              "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-              "captionSrc": "captions.vtt",
-              "title": "The Breakfast Show with Giles Coren",
-              "playing": true,
-              "volume": 0,
-              "newTime": -1,
-              "dataTestId": "audio-player"
-            }
-            </audio>
-        `);
+    expect(audioElement.volume).toEqual(0);
 
-    // Move forward to 5 seconds
-    for (let i = 0; i < 5; i += 1) {
-      fireEvent.keyDown(getByTestId('audio-slider-thumb'), {
-        key: 'ArrowRight',
-        code: 39,
-      });
-    }
-    // Pause and move slider forward 10 seconds
+    // Move forward 1 second
+    fireEvent.keyDown(getByTestId('audio-slider-thumb'), {
+      key: 'ArrowRight',
+      code: 39,
+    });
+    expect(audioElement.currentTime).toEqual(1);
+
+    // Pause
+    audioElement.pause.mockReset();
     fireEvent.click(getByTestId('audio-player-play-button'));
+    expect(audioElement.pause).toHaveBeenCalled();
+
+    // Move slider forward 10 seconds
     fireEvent.keyDown(getByTestId('audio-slider-thumb'), {
       key: 'PageUp',
       code: 33,
     });
-    expect(audioElement).toMatchInlineSnapshot(`
-            <audio
-              data-testid="mock-audio-element"
-            >
-              {
-              "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-              "captionSrc": "captions.vtt",
-              "title": "The Breakfast Show with Giles Coren",
-              "playing": false,
-              "volume": 0,
-              "newTime": 15,
-              "dataTestId": "audio-player"
-            }
-            </audio>
-        `);
+    expect(audioElement.currentTime).toEqual(11);
 
     // Track position greater than 5, previous track button should reset position back to 0
+    fireEvent.timeUpdate(audioElement);
     onPreviousTrack.mockReset();
-    act(() => {
-      mockAudioElementFunctions.onTimeUpdate({
-        target: {
-          currentTime: 15,
-        },
-      });
-      rerender(
-        <AudioPlayer
-          {...recordedAudioProps}
-          onNextTrack={onNextTrack}
-          onPreviousTrack={onPreviousTrack}
-        />,
-      );
-    });
     fireEvent.click(getByTestId('audio-player-skip-previous'));
     expect(onPreviousTrack).not.toHaveBeenCalled();
-    expect(audioElement).toMatchInlineSnapshot(`
-            <audio
-              data-testid="mock-audio-element"
-            >
-              {
-              "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-              "captionSrc": "captions.vtt",
-              "title": "The Breakfast Show with Giles Coren",
-              "playing": false,
-              "volume": 0,
-              "newTime": 0,
-              "dataTestId": "audio-player"
-            }
-            </audio>
-        `);
+    expect(audioElement.currentTime).toEqual(0);
 
-    // Increase volume 0.1, and click forward 20 seconds
+    // Increase volume 0.1
     fireEvent.keyDown(getByTestId('volume-control-thumb'), {
       key: 'ArrowUp',
       code: 38,
     });
-    fireEvent.click(getByTestId('audio-player-forward'));
-    fireEvent.click(getByTestId('audio-player-forward'));
-    expect(audioElement).toMatchInlineSnapshot(`
-            <audio
-              data-testid="mock-audio-element"
-            >
-              {
-              "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-              "captionSrc": "captions.vtt",
-              "title": "The Breakfast Show with Giles Coren",
-              "playing": false,
-              "volume": 0.1,
-              "newTime": 20,
-              "dataTestId": "audio-player"
-            }
-            </audio>
-        `);
+    expect(audioElement.volume).toEqual(0.1);
 
-    // Click back 10 seconds and play from OS controls
+    // Click forward 20 seconds
+    fireEvent.click(getByTestId('audio-player-forward'));
+    fireEvent.click(getByTestId('audio-player-forward'));
+    expect(audioElement.currentTime).toEqual(20);
+
+    // Click back 10 seconds
     fireEvent.click(getByTestId('audio-player-backward'));
+    expect(audioElement.currentTime).toEqual(10);
+
+    // Play from OS controls
+    audioElement.play.mockReset();
     fireEvent.play(audioElement);
-    expect(audioElement).toMatchInlineSnapshot(`
-            <audio
-              data-testid="mock-audio-element"
-            >
-              {
-              "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-              "captionSrc": "captions.vtt",
-              "title": "The Breakfast Show with Giles Coren",
-              "playing": true,
-              "volume": 0.1,
-              "newTime": 10,
-              "dataTestId": "audio-player"
-            }
-            </audio>
-        `);
+    expect(audioElement.play).toHaveBeenCalled();
 
     // Pause from OS controls
+    audioElement.pause.mockReset();
     fireEvent.pause(audioElement);
-    expect(audioElement).toMatchInlineSnapshot(`
-            <audio
-              data-testid="mock-audio-element"
-            >
-              {
-              "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-              "captionSrc": "captions.vtt",
-              "title": "The Breakfast Show with Giles Coren",
-              "playing": false,
-              "volume": 0.1,
-              "newTime": 10,
-              "dataTestId": "audio-player"
-            }
-            </audio>
-        `);
+    expect(audioElement.pause).toHaveBeenCalled();
 
+    // Next track button click
+    onNextTrack.mockReset();
     fireEvent.click(getByTestId('audio-player-skip-next'));
     expect(onNextTrack).toHaveBeenCalled();
+
+    // Previous track button click (while track is less than 5 seconds in)
+    audioElement.currentTime = 2;
+    fireEvent.timeUpdate(audioElement);
+    onPreviousTrack.mockReset();
+    fireEvent.click(getByTestId('audio-player-skip-previous'));
+    expect(onPreviousTrack).toHaveBeenCalled();
+
+    // Set track forward for track bg tests below
+    audioElement.currentTime = 10;
+    fireEvent.timeUpdate(audioElement);
 
     // Test track background is generated as expected
     // (we can't rely on the style in a snapshot as js-dom thinks gradients
     // are invalid background colours and strips the style tag out. So we mock
     // out the getTrackBackground util to return a working mock style)
-    act(() => {
-      const bufferedStartData = [1, 9, 20];
-      const bufferedEndData = [5, 14, 20];
-      mockAudioElementFunctions.onProgress({
-        target: {
-          buffered: {
-            length: 3,
-            start: jest
-              .fn()
-              .mockImplementation(index => bufferedStartData[index]),
-            end: jest.fn().mockImplementation(index => bufferedEndData[index]),
-          },
-        },
-      });
-    });
+    audioElement.buffered = {
+      length: 3,
+      start: jest.fn().mockImplementation(index => [1, 9, 20][index]),
+      end: jest.fn().mockImplementation(index => [5, 14, 20][index]),
+    };
+    fireEvent.progress(audioElement);
+
     expect(mockGetTrackBackground).toHaveBeenCalledWith({
       colors: ['#0A68C1', '#e4e4e4', '#f0f0f0', '#e4e4e4', '#f0f0f0'],
       max: 60,
@@ -312,72 +210,82 @@ describe('Audio Player', () => {
     // Audio player snapshot last (so that buffering is included)
     expect(asFragment()).toMatchSnapshot();
 
-    // Update slider position and snapshot to check slider updated
-    audioElement.currentTime = 35.123;
-    fireEvent.timeUpdate(audioElement);
-    expect(getByTestId('audio-slider-thumb')).toMatchSnapshot(
-      'after time update',
-    );
     // Time should round to nearest second (so we don't upate slider value needlessly)
-    audioElement.currentTime = 35.45;
+    audioElement.currentTime = 35.45231;
     fireEvent.timeUpdate(audioElement);
-    expect(getByTestId('audio-slider-thumb')).toMatchSnapshot(
-      'after time update',
-    );
+    expect(getByTestId('audio-slider-thumb')).toMatchSnapshot();
 
-    // Reset time to 0 and move backwards - should not pass invalid time, should pass min time 0
-    fireEvent.click(getByTestId('audio-player-skip-previous'));
+    // Shouldn't be able to go past end of track
+    audioElement.currentTime = 60;
+    fireEvent.timeUpdate(audioElement);
+    fireEvent.click(getByTestId('audio-player-forward'));
+    expect(audioElement.currentTime).toEqual(60);
+
+    // Shouldn't be able to go lower than start of track
+    audioElement.currentTime = 0;
+    fireEvent.timeUpdate(audioElement);
     fireEvent.click(getByTestId('audio-player-backward'));
-    expect(audioElement).toMatchInlineSnapshot(`
-            <audio
-              data-testid="mock-audio-element"
-            >
-              {
-              "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-              "captionSrc": "captions.vtt",
-              "title": "The Breakfast Show with Giles Coren",
-              "playing": false,
-              "volume": 0.1,
-              "newTime": 0,
-              "dataTestId": "audio-player"
-            }
-            </audio>
-        `);
-
-    // Move forward to the end of the track - should not pass invalid time, should pass max time 60
-    for (let i = 0; i < 7; i += 1) {
-      fireEvent.click(getByTestId('audio-player-forward'));
-    }
-    expect(audioElement).toMatchInlineSnapshot(`
-            <audio
-              data-testid="mock-audio-element"
-            >
-              {
-              "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-              "captionSrc": "captions.vtt",
-              "title": "The Breakfast Show with Giles Coren",
-              "playing": false,
-              "volume": 0.1,
-              "newTime": 60,
-              "dataTestId": "audio-player"
-            }
-            </audio>
-        `);
+    expect(audioElement.currentTime).toEqual(0);
   });
 
-  test('previous track button should call onPreviousTrack when called in the first 5 seconds', () => {
+  test('disablePreviousTrack prop behaves as expected', () => {
     const onPreviousTrack = jest.fn();
-    const {getByTestId} = renderWithTheme(AudioPlayer, {
+    const props = {
       ...recordedAudioProps,
-      disablePreviousTrack: false,
       onPreviousTrack,
+      disablePreviousTrack: true,
+    };
+    const {getByTestId} = renderWithTheme(AudioPlayer, props);
+    const audioElement = getByTestId('audio-element') as any;
+
+    fireEvent.durationChange(audioElement, {
+      target: {
+        duration: 60,
+      },
     });
-    const audioElement = getByTestId('mock-audio-element') as HTMLAudioElement;
+    audioElement.currentTime = 2;
+    fireEvent.timeUpdate(audioElement);
 
-    expect(audioElement.currentTime).toEqual(0);
     fireEvent.click(getByTestId('audio-player-skip-previous'));
+    expect(onPreviousTrack).not.toHaveBeenCalled();
+  });
 
-    expect(onPreviousTrack).toHaveBeenCalled();
+  test('changing src maintains expected playback state', () => {
+    const {getByTestId, rerender} = renderWithTheme(
+      AudioPlayer,
+      recordedAudioProps,
+    );
+    let audioElement: any = getByTestId('audio-element');
+
+    const resetAndReRender = (props: Partial<AudioPlayerProps>) => {
+      audioElement.play.mockReset();
+      audioElement.pause.mockReset();
+
+      rerender(<AudioPlayer {...recordedAudioProps} {...props} />);
+      audioElement = getByTestId('audio-element');
+    };
+
+    // Not playing, no auto play, new track should be paused
+    resetAndReRender({src: 'newtrack-1'});
+    expect(audioElement.play).not.toHaveBeenCalled();
+    expect(audioElement.pause).toHaveBeenCalled();
+
+    // Playing, no auto play, new track should be played
+    fireEvent.click(getByTestId('audio-player-play-button'));
+    resetAndReRender({src: 'newtrack-2'});
+    expect(audioElement.play).toHaveBeenCalled();
+    expect(audioElement.pause).not.toHaveBeenCalled();
+
+    // Playing, with auto play, no need to call play/pause
+    fireEvent.click(getByTestId('audio-player-play-button'));
+    resetAndReRender({src: 'newtrack-3', autoPlay: true});
+    expect(audioElement.play).not.toHaveBeenCalled();
+    expect(audioElement.pause).not.toHaveBeenCalled();
+
+    fireEvent.click(getByTestId('audio-player-play-button'));
+    resetAndReRender({src: 'newtrack-4', autoPlay: true});
+    expect(audioElement.play).not.toHaveBeenCalled();
+    expect(audioElement.pause).not.toHaveBeenCalled();
   });
 
   describe('Instrumentation tests should', () => {
@@ -530,7 +438,7 @@ describe('Audio Player', () => {
       trigger: 'end',
     };
 
-    const player = getByTestId('mock-audio-element');
+    const player = getByTestId('audio-element');
     fireEvent.ended(player);
 
     expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
@@ -538,7 +446,7 @@ describe('Audio Player', () => {
 
   test('raise event when audio player autoplays', () => {
     const fireEventSpy = jest.fn();
-    recordedAudioProps.autoplay = true;
+    recordedAudioProps.autoPlay = true;
     const {getByTestId} = renderWithImplementation(
       AudioPlayer,
       recordedAudioProps,
@@ -555,7 +463,7 @@ describe('Audio Player', () => {
     fireEvent.click(play);
 
     expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
-    recordedAudioProps.autoplay = false;
+    recordedAudioProps.autoPlay = false;
   });
 
   test('raise event while the audio is being played', () => {
@@ -566,36 +474,55 @@ describe('Audio Player', () => {
       fireEventSpy,
     );
 
+    const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+    fireEvent.durationChange(audioElement, {
+      target: {
+        duration: 60,
+      },
+    });
+    audioElement.currentTime = 1;
+    fireEvent.timeUpdate(audioElement);
+
     const expectedObject = {
       ...recordedTrackingOutputObject,
       originator: 'audio-player-audio',
       trigger: 'pulse',
       media_duration: '01:00',
     };
-
-    const audioElement = getByTestId('mock-audio-element') as HTMLAudioElement;
-
-    audioElement.currentTime = 1;
-    fireEvent.durationChange(audioElement);
-    fireEvent.timeUpdate(audioElement);
-
     expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
   });
 
-  test('should not raise event if we call onPlay but the audio player is already playing', () => {
+  test('should not raise play event if play called twice', () => {
     const fireEventSpy = jest.fn();
     const {getByTestId} = renderWithImplementation(
       AudioPlayer,
       recordedAudioProps,
       fireEventSpy,
     );
-    const audioElement = getByTestId('mock-audio-element') as HTMLAudioElement;
+    const audioElement = getByTestId('audio-element') as HTMLAudioElement;
 
-    // isPlaying state is false, so here we fireEventSpy will be called once
+    // Two play calls, should cause one event
     fireEvent.play(audioElement);
-    // isPlaying state will be true now, so we fire onPlay again
-    //  and then expect fireEventSpy not to have been called second time
     fireEvent.play(audioElement);
+
+    expect(fireEventSpy).toHaveBeenCalledTimes(1);
+  });
+
+  test('should not raise pause event if play called twice', () => {
+    const fireEventSpy = jest.fn();
+    const {getByTestId} = renderWithImplementation(
+      AudioPlayer,
+      recordedAudioProps,
+      fireEventSpy,
+    );
+    const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+
+    fireEvent.play(audioElement);
+    fireEventSpy.mockReset();
+
+    // Two pause calls, should cause one event
+    fireEvent.pause(audioElement);
+    fireEvent.pause(audioElement);
 
     expect(fireEventSpy).toHaveBeenCalledTimes(1);
   });

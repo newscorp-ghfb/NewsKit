@@ -36,6 +36,7 @@ describe('Link', () => {
     fireEvent.click(link);
 
     expect(mockFireEvent).toHaveBeenCalledWith({
+      context: {},
       originator: 'link',
       trigger: EventTrigger.Click,
       data: {

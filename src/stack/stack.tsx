@@ -15,21 +15,21 @@ import {useTheme} from '../themes';
 import {isStackChild} from '../stack-child';
 
 const wrapChild = (
-  space: StyledStackProps['space'],
-  flow: StyledStackProps['flow'],
-  wrap: StyledStackProps['wrap'],
+  $space: StyledStackProps['$space'],
+  $flow: StyledStackProps['$flow'],
+  $wrap: StyledStackProps['$wrap'],
 ) => (child: React.ReactNode & {props?: {order?: number}}) => {
   const childProps: StyledChildProps = {
-    space,
-    flow,
-    wrap,
+    $space,
+    $flow,
+    $wrap,
   };
 
   if (isStackChild(child) && child.props.order) {
     const {
       props: {order},
     } = child;
-    childProps.order = order;
+    childProps.$order = order;
   }
   return (
     child && (
@@ -52,13 +52,13 @@ export const Stack: React.FC<StackProps> = ({
   const theme = useTheme();
   return (
     <StyledMasterContainer
-      space={space}
-      flow={flow}
-      wrap={wrap}
-      flexGrow={flexGrow}
-      flexShrink={flexShrink}
-      flowReverse={flowReverse}
-      stackDistribution={stackDistribution}
+      $space={space}
+      $flow={flow}
+      $wrap={wrap}
+      $flexGrow={flexGrow}
+      $flexShrink={flexShrink}
+      $flowReverse={flowReverse}
+      $stackDistribution={stackDistribution}
       {...props}
     >
       {children && hasSpacing(theme, space)

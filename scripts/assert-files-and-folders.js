@@ -2,7 +2,8 @@
 
 const {resolve} = require('path');
 const {promisify} = require('util');
-const {readdir: _readdir} = require('fs');
+const {readdir: _readdir, readFileSync} = require('fs');
+const ignore = require('ignore');
 
 const readdir = promisify(_readdir);
 
@@ -23,11 +24,14 @@ const getFiles = async dir => {
   );
   return []
     .concat(...files.filter(Boolean))
-    .map(path => path.replace(resolve(__dirname, '..'), ''));
+    .map(path => path.replace(`${resolve(__dirname, '..')}/`, ''));
 };
 
 const createAsserter = (filter, error) => paths => {
-  const badPaths = paths.filter(filter);
+  const badPaths = ignore()
+    .add(readFileSync(resolve(__dirname, '../.gitignore')).toString())
+    .filter(paths)
+    .filter(filter);
   if (badPaths.length) {
     log(error(badPaths.length));
     badPaths.forEach(path => log(`${bgRed}${fgWhite}BAD: ${reset}${path}`));
@@ -46,11 +50,7 @@ const assertTestFolders = createAsserter(
 );
 
 const assertKebabFileNames = createAsserter(
-  path =>
-    !path.endsWith('.DS_Store') &&
-    path.includes('.') &&
-    /[A-Z]|\s/.test(path) &&
-    !path.includes('.next/'),
+  path => path.includes('.') && /[A-Z]|\s/.test(path),
   errors =>
     `${bgRed}${fgWhite}Invalid file path${
       errors > 1 ? 's' : ''

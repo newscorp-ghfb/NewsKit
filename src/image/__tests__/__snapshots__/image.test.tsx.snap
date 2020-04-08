@@ -75,12 +75,12 @@ exports[`Image renders with defaults 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="bui-1"
+          aria-labelledby="mock-bui-1"
           class="emotion-0"
           viewBox="0 0 88 88"
         >
           <title
-            id="bui-1"
+            id="mock-bui-1"
           >
             Placeholder
           </title>
@@ -165,12 +165,12 @@ exports[`Image renders with defaults after load 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="bui-3"
+          aria-labelledby="mock-bui-1"
           class="emotion-0"
           viewBox="0 0 88 88"
         >
           <title
-            id="bui-3"
+            id="mock-bui-1"
           >
             Placeholder
           </title>
@@ -264,12 +264,12 @@ exports[`Image renders with invalidPreset 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="bui-7"
+          aria-labelledby="mock-bui-1"
           class="emotion-0"
           viewBox="0 0 88 88"
         >
           <title
-            id="bui-7"
+            id="mock-bui-1"
           >
             Placeholder
           </title>
@@ -363,12 +363,12 @@ exports[`Image renders with maskRound 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="bui-6"
+          aria-labelledby="mock-bui-1"
           class="emotion-0"
           viewBox="0 0 88 88"
         >
           <title
-            id="bui-6"
+            id="mock-bui-1"
           >
             Placeholder
           </title>
@@ -462,12 +462,12 @@ exports[`Image renders with maskSemiRounded 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="bui-5"
+          aria-labelledby="mock-bui-1"
           class="emotion-0"
           viewBox="0 0 88 88"
         >
           <title
-            id="bui-5"
+            id="mock-bui-1"
           >
             Placeholder
           </title>
@@ -561,12 +561,12 @@ exports[`Image renders without icon 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="bui-4"
+          aria-labelledby="mock-bui-1"
           class="emotion-0"
           viewBox="0 0 88 88"
         >
           <title
-            id="bui-4"
+            id="mock-bui-1"
           >
             Placeholder
           </title>

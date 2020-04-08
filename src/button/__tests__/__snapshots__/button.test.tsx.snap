@@ -417,12 +417,12 @@ exports[`Button IconButton renders Icon Button with fallback formatting 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="bui-1"
+          aria-labelledby="mock-bui-1"
           class="emotion-0"
           viewBox="0 0 24 24"
         >
           <title
-            id="bui-1"
+            id="mock-bui-1"
           >
             Email icon
           </title>
@@ -552,12 +552,12 @@ exports[`Button IconButton renders Large Icon Button 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="bui-4"
+          aria-labelledby="mock-bui-1"
           class="emotion-0"
           viewBox="0 0 24 24"
         >
           <title
-            id="bui-4"
+            id="mock-bui-1"
           >
             Email icon
           </title>
@@ -687,12 +687,12 @@ exports[`Button IconButton renders Medium Icon Button 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="bui-3"
+          aria-labelledby="mock-bui-1"
           class="emotion-0"
           viewBox="0 0 24 24"
         >
           <title
-            id="bui-3"
+            id="mock-bui-1"
           >
             Email icon
           </title>
@@ -832,12 +832,12 @@ exports[`Button IconButton renders Small Icon Button 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="bui-2"
+          aria-labelledby="mock-bui-1"
           class="emotion-0"
           viewBox="0 0 24 24"
         >
           <title
-            id="bui-2"
+            id="mock-bui-1"
           >
             Email icon
           </title>
@@ -977,12 +977,12 @@ exports[`Button IconButton renders when there is an icon with a colour 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="bui-5"
+          aria-labelledby="mock-bui-1"
           class="emotion-0"
           viewBox="0 0 24 24"
         >
           <title
-            id="bui-5"
+            id="mock-bui-1"
           >
             Email icon
           </title>

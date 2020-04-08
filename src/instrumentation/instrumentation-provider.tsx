@@ -1,5 +1,5 @@
-import React, {useContext} from 'react';
-import {EventInstrumentation} from './types';
+import React, {useContext, useCallback} from 'react';
+import {EventInstrumentation, InstrumentationEvent} from './types';
 
 const InstrumentationContext = React.createContext<EventInstrumentation>({
   context: {},
@@ -25,25 +25,27 @@ export const InstrumentationProvider: React.FC<
   );
 };
 
+const useFireEvent = () => {
+  // Don't expose the internal context object.
+  const {fireEvent, context} = useContext(InstrumentationContext);
+  return useCallback(
+    (event: InstrumentationEvent) => fireEvent({...event, context}),
+    [context, fireEvent],
+  );
+};
+
 export const withInstrumentation = <P extends {}>(
   Component: React.ComponentType<
     P & {fireEvent: EventInstrumentation['fireEvent']}
   >,
 ) => {
-  const ComponentWithInstrumentation = (props: P) => {
-    const {fireEvent, context} = useContext(InstrumentationContext);
-    return (
-      <Component
-        fireEvent={event => fireEvent({...event, context})}
-        {...props}
-      />
-    );
-  };
+  const ComponentWithInstrumentation = (props: P) => (
+    <Component fireEvent={useFireEvent()} {...props} />
+  );
   ComponentWithInstrumentation.displayName = Component.displayName;
   return ComponentWithInstrumentation;
 };
 
 export const useInstrumentation = () => ({
-  // Don't expose the internal context object.
-  fireEvent: useContext(InstrumentationContext).fireEvent,
+  fireEvent: useFireEvent(),
 });

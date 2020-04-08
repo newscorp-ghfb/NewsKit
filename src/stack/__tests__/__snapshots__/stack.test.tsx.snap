@@ -801,7 +801,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 
 <div
     class="emotion-12"
-    wrap="wrap"
   >
     <div
       class="emotion-3"
@@ -988,7 +987,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 
 <div
     class="emotion-12"
-    wrap="nowrap"
   >
     <div
       class="emotion-3"
@@ -1190,11 +1188,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 
 <div
     class="emotion-15"
-    wrap="wrap"
   >
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -1217,7 +1213,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -1240,7 +1235,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -1403,11 +1397,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 
 <div
     class="emotion-15"
-    wrap="nowrap"
   >
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -1430,7 +1422,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -1453,7 +1444,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -1620,11 +1610,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 
 <div
     class="emotion-15"
-    wrap="wrap"
   >
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -1647,7 +1635,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -1670,7 +1657,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -1833,11 +1819,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 
 <div
     class="emotion-15"
-    wrap="nowrap"
   >
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -1860,7 +1844,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -1883,7 +1866,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -3139,7 +3121,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 
 <div
     class="emotion-12"
-    wrap="wrap"
   >
     <div
       class="emotion-3"
@@ -3326,7 +3307,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 
 <div
     class="emotion-12"
-    wrap="nowrap"
   >
     <div
       class="emotion-3"
@@ -3528,11 +3508,9 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 
 <div
     class="emotion-15"
-    wrap="wrap"
   >
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -3555,7 +3533,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -3578,7 +3555,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -3741,11 +3717,9 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 
 <div
     class="emotion-15"
-    wrap="nowrap"
   >
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -3768,7 +3742,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -3791,7 +3764,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -3958,11 +3930,9 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 
 <div
     class="emotion-15"
-    wrap="wrap"
   >
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -3985,7 +3955,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -4008,7 +3977,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -4171,11 +4139,9 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 
 <div
     class="emotion-15"
-    wrap="nowrap"
   >
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -4198,7 +4164,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -4221,7 +4186,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -5477,7 +5441,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 
 <div
     class="emotion-12"
-    wrap="wrap"
   >
     <div
       class="emotion-3"
@@ -5664,7 +5627,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 
 <div
     class="emotion-12"
-    wrap="nowrap"
   >
     <div
       class="emotion-3"
@@ -5866,11 +5828,9 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 
 <div
     class="emotion-15"
-    wrap="wrap"
   >
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -5893,7 +5853,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -5916,7 +5875,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -6079,11 +6037,9 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 
 <div
     class="emotion-15"
-    wrap="nowrap"
   >
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -6106,7 +6062,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -6129,7 +6084,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -6296,11 +6250,9 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 
 <div
     class="emotion-15"
-    wrap="wrap"
   >
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -6323,7 +6275,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -6346,7 +6297,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -6509,11 +6459,9 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 
 <div
     class="emotion-15"
-    wrap="nowrap"
   >
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -6536,7 +6484,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -6559,7 +6506,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -7994,7 +7940,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 
 <div
     class="emotion-12"
-    wrap="wrap"
   >
     <div
       class="emotion-3"
@@ -8181,7 +8126,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 
 <div
     class="emotion-12"
-    wrap="nowrap"
   >
     <div
       class="emotion-3"
@@ -8383,11 +8327,9 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 
 <div
     class="emotion-15"
-    wrap="wrap"
   >
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -8410,7 +8352,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -8433,7 +8374,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -8596,11 +8536,9 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 
 <div
     class="emotion-15"
-    wrap="nowrap"
   >
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -8623,7 +8561,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -8646,7 +8583,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -8813,11 +8749,9 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 
 <div
     class="emotion-15"
-    wrap="wrap"
   >
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -8840,7 +8774,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -8863,7 +8796,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -9026,11 +8958,9 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 
 <div
     class="emotion-15"
-    wrap="nowrap"
   >
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -9053,7 +8983,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -9076,7 +9005,6 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -10332,7 +10260,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 
 <div
     class="emotion-12"
-    wrap="wrap"
   >
     <div
       class="emotion-3"
@@ -10519,7 +10446,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 
 <div
     class="emotion-12"
-    wrap="nowrap"
   >
     <div
       class="emotion-3"
@@ -10721,11 +10647,9 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 
 <div
     class="emotion-15"
-    wrap="wrap"
   >
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -10748,7 +10672,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -10771,7 +10694,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -10934,11 +10856,9 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 
 <div
     class="emotion-15"
-    wrap="nowrap"
   >
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -10961,7 +10881,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -10984,7 +10903,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -11151,11 +11069,9 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 
 <div
     class="emotion-15"
-    wrap="wrap"
   >
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -11178,7 +11094,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -11201,7 +11116,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -11364,11 +11278,9 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 
 <div
     class="emotion-15"
-    wrap="nowrap"
   >
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -11391,7 +11303,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -11414,7 +11325,6 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -12674,7 +12584,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 
 <div
     class="emotion-12"
-    wrap="wrap"
   >
     <div
       class="emotion-3"
@@ -12861,7 +12770,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 
 <div
     class="emotion-12"
-    wrap="nowrap"
   >
     <div
       class="emotion-3"
@@ -13063,11 +12971,9 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 
 <div
     class="emotion-15"
-    wrap="wrap"
   >
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -13090,7 +12996,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -13113,7 +13018,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -13276,11 +13180,9 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 
 <div
     class="emotion-15"
-    wrap="nowrap"
   >
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -13303,7 +13205,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -13326,7 +13227,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -13493,11 +13393,9 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 
 <div
     class="emotion-15"
-    wrap="wrap"
   >
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -13520,7 +13418,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -13543,7 +13440,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-4"
-      wrap="wrap"
     >
       <div
         class="emotion-3"
@@ -13706,11 +13602,9 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 
 <div
     class="emotion-15"
-    wrap="nowrap"
   >
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -13733,7 +13627,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"
@@ -13756,7 +13649,6 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
     </div>
     <div
       class="emotion-4"
-      wrap="nowrap"
     >
       <div
         class="emotion-3"

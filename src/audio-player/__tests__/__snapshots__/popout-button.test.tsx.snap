@@ -119,13 +119,13 @@ exports[`PopoutButton renders correctly with default props 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="bui-1"
+          aria-labelledby="mock-bui-1"
           class="emotion-0"
           focusable="false"
           viewBox="0 0 24 24"
         >
           <title
-            id="bui-1"
+            id="mock-bui-1"
           >
             open popout player
           </title>

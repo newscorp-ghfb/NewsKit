@@ -11,12 +11,12 @@ exports[`Icons Close icon renders as expected 1`] = `
 }
 
 <svg
-    aria-labelledby="bui-1"
+    aria-labelledby="mock-bui-1"
     class="emotion-0"
     viewBox="0 0 14 14"
   >
     <title
-      id="bui-1"
+      id="mock-bui-1"
     >
       close icon
     </title>
@@ -45,12 +45,12 @@ exports[`Icons Menu icon renders as expected 1`] = `
 }
 
 <svg
-    aria-labelledby="bui-2"
+    aria-labelledby="mock-bui-1"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
     <title
-      id="bui-2"
+      id="mock-bui-1"
     >
       menu icon
     </title>
@@ -78,12 +78,12 @@ exports[`Icons Search icon renders as expected 1`] = `
 }
 
 <svg
-    aria-labelledby="bui-3"
+    aria-labelledby="mock-bui-1"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
     <title
-      id="bui-3"
+      id="mock-bui-1"
     >
       search icon
     </title>

@@ -306,12 +306,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
             tabindex="0"
           >
             <svg
-              aria-labelledby="bui-7"
+              aria-labelledby="mock-bui-1"
               class="emotion-3"
               viewBox="0 0 14 14"
             >
               <title
-                id="bui-7"
+                id="mock-bui-1"
               >
                 close icon
               </title>
@@ -349,12 +349,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
           >
             Getting Started
             <svg
-              aria-labelledby="bui-8"
+              aria-labelledby="mock-bui-1"
               class="emotion-8"
               viewBox="0 0 16 16"
             >
               <title
-                id="bui-8"
+                id="mock-bui-1"
               >
                 close icon
               </title>
@@ -386,12 +386,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
           >
             Theming
             <svg
-              aria-labelledby="bui-9"
+              aria-labelledby="mock-bui-1"
               class="emotion-8"
               viewBox="0 0 16 16"
             >
               <title
-                id="bui-9"
+                id="mock-bui-1"
               >
                 close icon
               </title>
@@ -423,12 +423,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
           >
             Foundations
             <svg
-              aria-labelledby="bui-10"
+              aria-labelledby="mock-bui-1"
               class="emotion-8"
               viewBox="0 0 16 16"
             >
               <title
-                id="bui-10"
+                id="mock-bui-1"
               >
                 close icon
               </title>
@@ -460,12 +460,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
           >
             Components
             <svg
-              aria-labelledby="bui-11"
+              aria-labelledby="mock-bui-1"
               class="emotion-8"
               viewBox="0 0 16 16"
             >
               <title
-                id="bui-11"
+                id="mock-bui-1"
               >
                 close icon
               </title>
@@ -497,12 +497,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
           >
             Utilities
             <svg
-              aria-labelledby="bui-12"
+              aria-labelledby="mock-bui-1"
               class="emotion-8"
               viewBox="0 0 16 16"
             >
               <title
-                id="bui-12"
+                id="mock-bui-1"
               >
                 close icon
               </title>
@@ -878,12 +878,12 @@ exports[`Sidebar renders correctly when open 1`] = `
             tabindex="0"
           >
             <svg
-              aria-labelledby="bui-1"
+              aria-labelledby="mock-bui-1"
               class="emotion-3"
               viewBox="0 0 14 14"
             >
               <title
-                id="bui-1"
+                id="mock-bui-1"
               >
                 close icon
               </title>
@@ -921,12 +921,12 @@ exports[`Sidebar renders correctly when open 1`] = `
           >
             Getting Started
             <svg
-              aria-labelledby="bui-2"
+              aria-labelledby="mock-bui-1"
               class="emotion-8"
               viewBox="0 0 16 16"
             >
               <title
-                id="bui-2"
+                id="mock-bui-1"
               >
                 close icon
               </title>
@@ -958,12 +958,12 @@ exports[`Sidebar renders correctly when open 1`] = `
           >
             Theming
             <svg
-              aria-labelledby="bui-3"
+              aria-labelledby="mock-bui-1"
               class="emotion-8"
               viewBox="0 0 16 16"
             >
               <title
-                id="bui-3"
+                id="mock-bui-1"
               >
                 close icon
               </title>
@@ -995,12 +995,12 @@ exports[`Sidebar renders correctly when open 1`] = `
           >
             Foundations
             <svg
-              aria-labelledby="bui-4"
+              aria-labelledby="mock-bui-1"
               class="emotion-8"
               viewBox="0 0 16 16"
             >
               <title
-                id="bui-4"
+                id="mock-bui-1"
               >
                 close icon
               </title>
@@ -1032,12 +1032,12 @@ exports[`Sidebar renders correctly when open 1`] = `
           >
             Components
             <svg
-              aria-labelledby="bui-5"
+              aria-labelledby="mock-bui-1"
               class="emotion-8"
               viewBox="0 0 16 16"
             >
               <title
-                id="bui-5"
+                id="mock-bui-1"
               >
                 close icon
               </title>
@@ -1069,12 +1069,12 @@ exports[`Sidebar renders correctly when open 1`] = `
           >
             Utilities
             <svg
-              aria-labelledby="bui-6"
+              aria-labelledby="mock-bui-1"
               class="emotion-8"
               viewBox="0 0 16 16"
             >
               <title
-                id="bui-6"
+                id="mock-bui-1"
               >
                 close icon
               </title>

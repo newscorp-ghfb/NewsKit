@@ -1,73 +1,37 @@
-import React, {
-  useRef,
-  useState,
-  ChangeEvent,
-  useCallback,
-  useEffect,
-} from 'react';
+/* eslint-disable jsx-a11y/media-has-caption */
+import React, {useRef, useState, useEffect, useCallback} from 'react';
 import {getTrackBackground} from 'react-range';
-import {
-  TrackControlProps,
-  ControlPanel,
-  ControlPresets,
-  PopoutButton,
-} from './controls';
-import {AudioElement} from './audio-element';
-import {SliderStylePresets, Slider, SliderProps} from '../slider';
+import {ControlPanel, PopoutButton} from './controls';
+import {Slider, SliderProps} from '../slider';
 import {Stack, StackDistribution, Flow} from '../stack';
 import {PlayerGrid, ControlContainer, PlayerContainer} from './styled';
 import {VolumeControl} from '../volume-control';
 import {Cell} from '../grid/cell';
-import {formatTrackTime, formatTrackData, getMediaSegment} from './utils';
+import {formatTrackTime, formatTrackData} from './utils';
 import {StyledTrack} from '../slider/styled';
 import {useTheme} from '../themes/emotion';
 
-import calculateStringPercentage from '../utils/calculate-string-percentage';
 import {getSingleStylePreset} from '../utils/style-preset';
-import {
-  EventTrigger,
-  withInstrumentation,
-  InstrumentationEvent,
-} from '../instrumentation';
 import {LabelPosition} from '../slider/types';
+import {AudioPlayerProps} from './types';
+import {useAudioFunctions} from './audio-functions';
 import {StackChild} from '../stack-child';
 
-import {version} from '../version-number.json';
-
-type EventListener = (event: ChangeEvent<HTMLAudioElement>) => void;
-
-export interface AudioPlayerProps
-  extends React.AudioHTMLAttributes<HTMLAudioElement>,
-    TrackControlProps {
-  captionSrc?: string;
-  popoutHref?: string;
-  $volumePresets?: SliderStylePresets;
-  $trackPresets?: SliderStylePresets & {$bufferingStylePreset?: string};
-  $controlPresets?: Partial<ControlPresets>;
-  autoplay?: boolean;
-  live?: boolean;
-  time?: string;
-}
-
-export interface InstrumentedAudioPlayerProps extends AudioPlayerProps {
-  fireEvent: (event: InstrumentationEvent) => void;
-}
-
-const InternalAudioPlayer: React.FC<InstrumentedAudioPlayerProps> = props => {
+export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   const {
     onNextTrack,
     disableNextTrack,
     onPreviousTrack,
-    disablePreviousTrack = true,
+    disablePreviousTrack = !onPreviousTrack,
     popoutHref,
     $volumePresets,
     $trackPresets,
     $controlPresets,
     src,
-    autoplay,
+    autoPlay,
     children,
     live = false,
-    fireEvent,
+    captionSrc,
     ...restProps
   } = props;
 
@@ -98,313 +62,124 @@ const InternalAudioPlayer: React.FC<InstrumentedAudioPlayerProps> = props => {
     ...$controlPresets,
   };
 
-  const [isFirstVolumeLoad, setIsFirstVolumeLoad] = useState(true);
-  const [volume, setVolume] = useState(0.7);
+  const [volume, setVolume] = useState(0);
   const [duration, setDuration] = useState(0);
   const [trackPositionArr, setTrackPosition] = useState([0]);
   const [isPlaying, setPlayState] = useState(false);
   const [buffered, setBuffered] = useState<TimeRanges>();
-
   const [isPrevTrackBtnDisabled, setIsPrevTrackBtnDisabled] = useState(
-    disablePreviousTrack,
+    Boolean(disablePreviousTrack),
   );
 
-  const [trackPosition] = trackPositionArr;
   const trackPositionRef = useRef(0);
-
   useEffect(() => {
-    trackPositionRef.current = trackPosition;
+    [trackPositionRef.current] = trackPositionArr;
   });
+
+  const audioRef = useRef<HTMLAudioElement>(null);
+
   useEffect(() => {
     setDuration(0);
   }, [src]);
 
-  const getTrackingInformation = useCallback(
-    (
-      originator: string,
-      eventTrigger: EventTrigger,
-      eventSpecificInfo?: object,
-    ) => {
-      const trackingInformation = {
-        originator,
-        trigger: eventTrigger,
-        media_player: `newskit-audio-player-${version}`,
-        media_type: 'audio',
-        ...eventSpecificInfo,
-      };
-
-      if (live === false) {
-        return {
-          ...trackingInformation,
-          media_duration: formatTrackTime(duration),
-          media_milestone: calculateStringPercentage(
-            trackPositionRef.current,
-            duration,
-          ),
-          media_segment: getMediaSegment(duration, trackPositionRef.current),
-          media_offset: formatTrackTime(trackPositionRef.current),
-        };
-      }
-      return trackingInformation;
-    },
-    [duration, live],
-  );
-
-  const onVolumeChange: EventListener = event => {
-    if (
-      localStorage.getItem('newskit-audioplayer-volume') &&
-      isFirstVolumeLoad
-    ) {
-      const localStorageVolume = Number(
-        localStorage.getItem('newskit-audioplayer-volume'),
-      );
-      setVolume(localStorageVolume);
-    } else {
-      const newVolume = String(event.target.volume);
-      localStorage.setItem('newskit-audioplayer-volume', newVolume);
-    }
-
-    /* istanbul ignore next */
-    if (isFirstVolumeLoad) setIsFirstVolumeLoad(false);
-  };
-
-  /**
-   * audio src duration handler
-   */
-  const onDurationChange: EventListener = event => {
-    setDuration(event.target.duration);
-    setBuffered(event.target.buffered);
-  };
-
-  /**
-   * audio playback handlers
-   */
-  const onPlay = () => {
-    let trackingInformation = getTrackingInformation(
-      'audio-player-audio',
-      EventTrigger.Start,
-    );
-    if (autoplay) fireEvent(trackingInformation);
-
-    if (!isPlaying) {
-      setPlayState(true);
-
-      trackingInformation = getTrackingInformation(
-        'audio-player-play-button',
-        EventTrigger.Click,
-      );
-      fireEvent(trackingInformation);
-    }
-  };
-
-  const pausePlayback = () => {
-    setPlayState(false);
-  };
-
-  const firePauseTrackingInformation = () => {
-    const originator = live
-      ? 'audio-player-stop-button'
-      : 'audio-player-pause-button';
-
-    const trackingInformation = getTrackingInformation(
-      originator,
-      EventTrigger.Click,
-    );
-    fireEvent(trackingInformation);
-  };
-
-  const onPause = () => {
-    // The following if statement is needed for avoiding edge cases with keyboard interactions
-    /* istanbul ignore if */
-    if (!isPlaying) return;
-    pausePlayback();
-    firePauseTrackingInformation();
-  };
-
-  const firePopoutTrackingInformation = () => {
-    const trackingInformation = getTrackingInformation(
-      'audio-player-popout',
-      EventTrigger.Click,
-    );
-    fireEvent(trackingInformation);
-  };
-
-  const onPopoutClick = () => {
-    if (isPlaying) {
-      pausePlayback();
-    }
-    firePopoutTrackingInformation();
-  };
-
-  const togglePlay = () => {
-    if (isPlaying) {
-      onPause();
-    } else {
-      onPlay();
-    }
-  };
-
-  /**
-   * audio time management callbacks
-   *
-   * this is to prevent recreation of all the event handlers on every audio time update
-   * see https://reactjs.org/docs/hooks-faq.html#how-to-read-an-often-changing-value-from-usecallback
-   */
-
-  const onProgress: EventListener = event => {
-    setBuffered(event.target.buffered);
-  };
-
-  // newTime is a prop used to force the player to change time (used to change via slider)
-  // it does not maintain the audio element current time
-  const [newTime, setNewPlayerTime] = useState(-1);
-
-  const onTimeUpdate: EventListener = event => {
-    const eventTime = Math.round(event.target.currentTime);
-    if (trackPositionRef.current !== eventTime) {
-      setTrackPosition([eventTime]);
-
-      const trackingInformation = getTrackingInformation(
-        'audio-player-audio',
-        EventTrigger.Pulse,
-      );
-      fireEvent(trackingInformation);
-    }
-    if (trackPositionRef.current > 5) {
-      setIsPrevTrackBtnDisabled(false);
-    } else {
-      setIsPrevTrackBtnDisabled(disablePreviousTrack);
-    }
-    // Used to reset newTime after the player changes time. Used to fix issues regarding consecutive audio time change to the same value
-    if (newTime !== -1) {
-      setNewPlayerTime(-1);
-    }
-  };
-
-  const onChangeAudioTime = useCallback(
-    (playerTime: number) => {
-      let newPlayerTime = playerTime;
-
-      if (newPlayerTime < 0) {
-        newPlayerTime = 0;
-      }
-      if (newPlayerTime > duration) {
-        newPlayerTime = duration;
-      }
-
-      setTrackPosition([newPlayerTime]);
-      // This sets a prop on the audio element, forcing it to a new time
-      // We let player maintain its play time state, we just control the new time to set to when changing it via slider.
-      setNewPlayerTime(newPlayerTime);
-    },
-    [setTrackPosition, duration],
-  );
-
-  const onChangeSlider = useCallback(
-    ([value]: number[]) => {
-      onChangeAudioTime(value);
-    },
-    [onChangeAudioTime],
-  );
-
-  const onClickPrevious = useCallback(() => {
-    if (trackPositionRef.current > 5) {
-      onChangeAudioTime(0);
-      return;
-    }
-
-    onPreviousTrack!();
-  }, [onPreviousTrack, onChangeAudioTime]);
-
-  const onClickNext = useCallback(() => {
-    onNextTrack!();
-  }, [onNextTrack]);
-
-  const onClickBackward = useCallback(() => {
-    onChangeAudioTime(trackPositionRef.current - 10);
-    const trackingInformation = getTrackingInformation(
-      'audio-player-skip-backward',
-      EventTrigger.Click,
-      {event_navigation_name: 'backward skip'},
-    );
-    fireEvent(trackingInformation);
-  }, [fireEvent, getTrackingInformation, onChangeAudioTime]);
-
-  const onClickForward = useCallback(() => {
-    onChangeAudioTime(trackPositionRef.current + 10);
-
-    const trackingInformation = getTrackingInformation(
-      'audio-player-skip-forward',
-      EventTrigger.Click,
-      {event_navigation_name: 'forward skip'},
-    );
-    fireEvent(trackingInformation);
-  }, [fireEvent, getTrackingInformation, onChangeAudioTime]);
-
-  const onEnded = useCallback(() => {
-    const trackingInformation = getTrackingInformation(
-      'audio-complete',
-      EventTrigger.End,
-    );
-    fireEvent(trackingInformation);
-  }, [getTrackingInformation, fireEvent]);
+  const {
+    onClickPrevious,
+    onClickNext,
+    onClickBackward,
+    onClickForward,
+    onPopoutClick,
+    togglePlay,
+    onPlay,
+    onPause,
+    onProgress,
+    onDurationChange,
+    onTimeUpdate,
+    onVolumeChange,
+    onEnded,
+    onChangeSlider,
+    onChangeVolumeSlider,
+  } = useAudioFunctions({
+    onPreviousTrack,
+    onNextTrack,
+    autoPlay,
+    disablePreviousTrack,
+    src,
+    live,
+    duration,
+    isPlaying,
+    trackPositionRef,
+    audioRef,
+    setTrackPosition,
+    setPlayState,
+    setVolume,
+    setDuration,
+    setBuffered,
+    setIsPrevTrackBtnDisabled,
+  });
 
   const theme = useTheme();
-  const renderTrack: SliderProps['renderTrack'] = ({
-    props: trackProps,
-    children: trackChildren,
-    isDragged,
-  }) => {
-    const {values, colors} = formatTrackData(
-      getSingleStylePreset(
-        theme,
-        'base',
-        'backgroundColor',
-        trackPresets.$sliderTrackStylePreset,
-      ),
-      getSingleStylePreset(
-        theme,
-        'base',
-        'backgroundColor',
-        trackPresets.$sliderIndicatorTrackStylePreset,
-      ),
-      getSingleStylePreset(
-        theme,
-        'base',
-        'backgroundColor',
-        trackPresets.$bufferingStylePreset,
-      ),
-      trackPositionArr,
-      buffered,
-    );
+  const renderTrack: SliderProps['renderTrack'] = useCallback(
+    ({props: trackProps, children: trackChildren, isDragged}) => {
+      const {values, colors} = formatTrackData(
+        getSingleStylePreset(
+          theme,
+          'base',
+          'backgroundColor',
+          trackPresets.$sliderTrackStylePreset,
+        ),
+        getSingleStylePreset(
+          theme,
+          'base',
+          'backgroundColor',
+          trackPresets.$sliderIndicatorTrackStylePreset,
+        ),
+        getSingleStylePreset(
+          theme,
+          'base',
+          'backgroundColor',
+          trackPresets.$bufferingStylePreset,
+        ),
+        trackPositionArr,
+        buffered,
+      );
 
-    return (
-      <StyledTrack
-        {...trackProps}
-        values={trackPositionArr}
-        isDragged={isDragged}
-        $stylePreset={trackPresets.$sliderTrackStylePreset}
-        $trackSize="sizing020"
-        $thumbSize="sizing040"
-        style={{
-          background: getTrackBackground({
-            values,
-            colors,
-            min: 0,
-            max: duration,
-          }),
-        }}
-        data-testid="audio-slider-track"
-      >
-        {trackChildren}
-      </StyledTrack>
-    );
-  };
+      return (
+        <StyledTrack
+          {...trackProps}
+          values={trackPositionArr}
+          isDragged={isDragged}
+          $stylePreset={trackPresets.$sliderTrackStylePreset}
+          $trackSize="sizing020"
+          $thumbSize="sizing040"
+          style={{
+            background: getTrackBackground({
+              values,
+              colors,
+              min: 0,
+              max: duration,
+            }),
+          }}
+          data-testid="audio-slider-track"
+        >
+          {trackChildren}
+        </StyledTrack>
+      );
+    },
+    [
+      buffered,
+      duration,
+      theme,
+      trackPositionArr,
+      trackPresets.$bufferingStylePreset,
+      trackPresets.$sliderIndicatorTrackStylePreset,
+      trackPresets.$sliderTrackStylePreset,
+    ],
+  );
 
   const showControls = !live;
   const formattedDuration = showControls ? formatTrackTime(duration) : '';
   const formattedTime = showControls
-    ? formatTrackTime(trackPosition, duration)
+    ? formatTrackTime(trackPositionArr[0], duration)
     : '';
 
   const seekBarAriaValueText = (seekTime: number[]) => {
@@ -422,21 +197,22 @@ const InternalAudioPlayer: React.FC<InstrumentedAudioPlayerProps> = props => {
         xsColumnGutter="sizing000"
         xsRowGutter="sizing000"
       >
-        <AudioElement
+        <audio
+          ref={audioRef}
           src={src}
           onPlay={onPlay}
           onPause={onPause}
-          playing={isPlaying}
+          onVolumeChange={onVolumeChange}
           onDurationChange={onDurationChange}
           onTimeUpdate={onTimeUpdate}
           onProgress={onProgress}
-          onVolumeChange={onVolumeChange}
           onEnded={onEnded}
-          data-testid="audio-player"
-          volume={volume}
-          newTime={newTime}
+          data-testid="audio-element"
+          autoPlay={autoPlay}
           {...restProps}
-        />
+        >
+          {captionSrc && <track kind="captions" src={captionSrc} />}
+        </audio>
 
         {children && <Cell xs={12}>{children}</Cell>}
 
@@ -464,7 +240,7 @@ const InternalAudioPlayer: React.FC<InstrumentedAudioPlayerProps> = props => {
               <ControlContainer $playerTrackSize="sizing050" xs sm>
                 <VolumeControl
                   volume={volume}
-                  onChange={setVolume}
+                  onChange={onChangeVolumeSlider}
                   $trackSize="sizing010"
                   $thumbSize="sizing040"
                   {...volumePresets}
@@ -517,7 +293,3 @@ const InternalAudioPlayer: React.FC<InstrumentedAudioPlayerProps> = props => {
     </PlayerContainer>
   );
 };
-
-export const AudioPlayer: React.FC<AudioPlayerProps> = withInstrumentation<
-  AudioPlayerProps
->(props => <InternalAudioPlayer {...props} />);
