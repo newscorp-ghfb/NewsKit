@@ -1,6 +1,6 @@
 {
   "name": "newskit",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "A React Component library implementing the News design language",
   "keywords": [
     "react",
