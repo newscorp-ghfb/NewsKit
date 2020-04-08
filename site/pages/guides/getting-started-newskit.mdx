@@ -1,0 +1,57 @@
+import Colors from '../../components/theming-values/colors';
+import Layout from '../../components/layout';
+import {LegacyBlock} from '../../components/legacy-block';
+import {CodeFromFile} from '../../components/code';
+import {ThemeProvider, Tag, TagSize, theSunTheme} from 'newskit';
+import ExampleComponent from '../../public/static/examples/guides/get-started-newskit';
+
+export default Layout;
+
+# Getting Started with NewsKit
+
+## Introduction
+
+NewsKit is a design system created by News UK. Its purpose is
+to provide the foundations, components, and templates upon which
+you can build your own pages.
+
+## Get started with design
+
+NewsKit offers you the ability to theme foundations such as
+[colour](/foundations/colours), [spacing](/foundations/spacing),
+[typography](/foundations/typography), etc.
+The foundations are used globally throughout the site to populate components that align with your brand identity.
+
+## Get started for web
+
+### Pre-requisites
+To get started developing with NewsKit, you will have to install the following as pre-requisites:
+- You will need an existing **react application** or you can use [create-react-app](https://create-react-app.dev/docs/getting-started/) to create a new one.
+- [Node.js](https://nodejs.org/en/) Version 10.*. If you are using an older version of Node, it is recommended to install other versions via [NVM](https://github.com/nvm-sh/nvm).
+- [Yarn](https://classic.yarnpkg.com/en/) to install the project dependencies.  
+
+*Note: We recommend using typescript, but NewsKit will work with vanilla javascript too.*
+
+### Installing
+
+NewsKit is available as NPM package, downloadable from [here](https://www.npmjs.com/package/newskit).
+To install, simply add NewsKit to your dependencies by calling `yarn add newskit` in the terminal on the root of your project.
+
+### Using
+
+Once you have added `newskit` to your project you can simply
+add components to your react pages by importing them from `newskit`
+like in the following example:
+
+<CodeFromFile path="examples/guides/get-started-newskit.tsx"/>
+
+So here is what is happening in this example:
+- The [ThemeProvider](/theming/code) allows the user to provide a theme that is passed to all NewsKit components nested inside it.
+- For this example, we are using one of the default themes distributed with NewsKit - `theSunTheme`.
+- [Tag](/components/tag) is one of the components exported by NewsKit. In the example, the Tag component receieves two arguments:
+  - `href` - which is the URL where the tag will lead us to
+  - `$size` - NewsKit uses a convention for props that are style-related. They should start with `$` sign to be easily recognized. The supported sizes for the tag component are placed inside the `TagSize` enum object.
+
+As a result of all this you should see this component inside your page:
+
+<ExampleComponent />

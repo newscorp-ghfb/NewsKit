@@ -4,6 +4,11 @@
     "id": "/guides",
     "subNav": [
       {
+        "title": "NewsKit",
+        "page": true,
+        "id": "/guides/getting-started-newskit"
+      },
+      {
         "title": "AMP",
         "page": true,
         "id": "/guides/getting-started-amp"
