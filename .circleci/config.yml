@@ -1,8 +1,5 @@
 version: 2.1
 
-orbs:
-  aws-ecr: circleci/aws-ecr@0.0.2
-
 executors:
   # A basic image with just raw Alpine on it that you can run commands on
   base:
@@ -25,82 +22,14 @@ executors:
         auth:
           username: $DOCKER_USERNAME
           password: $DOCKER_PASSWORD
+  node:
+    docker:
+      - image: circleci/node:10.16
+  cypress:
+    docker:
+      - image: cypress/base:10
 
 commands:
-  # This one does a Flux deployment (writes to a Flux repo), using the flux-k8s tool you can find in https://github.com/newscorp-ghfb/ncu-circle-pipeline
-  flux-deploy:
-    description: "Generates a manifests and commits them to a Flux repo for deployments"
-    parameters:
-      config_values:
-        type: string
-      substitution_dir:
-        type: string
-      out_dir:
-        type: string
-      flux_repo_url:
-        type: string
-      flux_repo_name:
-        type: string
-      flux_repo_target:
-        type: string
-    steps:
-      - setup_remote_docker:
-          docker_layer_caching: true
-      - checkout
-        # We have to add the ssh key so that Circle has permissions to checkout the private repo
-      - add_ssh_keys:
-          fingerprints: "7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80"
-      - run: |
-          git config --global user.email "ncu-product-platforms@news.co.uk"
-          git config --global user.name "Product Platforms Service"
-          flux-generate "${CIRCLE_SHA1}" << parameters.config_values >> << parameters.substitution_dir >> << parameters.out_dir >>
-          flux-commit -u << parameters.flux_repo_url >> -n << parameters.flux_repo_name >> -d << parameters.out_dir >> -t << parameters.flux_repo_target >> -m "${CIRCLE_SHA1}_<< parameters.out_dir >>"
-
-  kubectl-deploy:
-    description: "deploy to eks cluster using kubectl"
-    parameters:
-      aws_region:
-        description: AWS Region
-        type: string
-      aws_access_key_id:
-        description: AWS Access Key Id
-        type: string
-      aws_secret_key:
-        description: AWS Secret Key
-        type: string
-      aws_assume_role_arn:
-        description: AWS ARN For Assume Role
-        type: string
-      cluster_name:
-        description: AWS EKS cluster name
-        type: string
-      environment:
-        description: Environment name
-        type: string
-    steps:
-      - setup_remote_docker:
-          docker_layer_caching: true
-      - add_ssh_keys:
-          fingerprints: "7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80"
-      - run: |
-          apk --no-cache add openssh git bash
-          export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
-          git config --global user.email "ncu-product-platforms@news.co.uk"
-          git config --global user.name "Product Platforms Service"
-          git clone git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git flux
-          export EKS_IAM_ROLE_DEV=<< parameters.aws_assume_role_arn >>
-          export EKS_AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
-          export EKS_AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
-          export AWS_DEFAULT_REGION=<< parameters.aws_region >>
-          export CLUSTER_NAME=<< parameters.cluster_name >>
-
-          nukubectl | grep "export AWS_" > auth.env
-          export $(egrep -v '^#' auth.env | xargs)
-          rm auth.env
-
-          cd flux/<< parameters.environment >>/eks
-          kubectl apply -f .
-
   ecr-build-push-docker:
     description: "Assume Role and Push to ECR"
     parameters:
@@ -146,8 +75,7 @@ commands:
 jobs:
   install_deps:
     working_directory: ~/project
-    docker:
-      - image: circleci/node:10.16
+    executor: node
     steps:
       - checkout
       - restore_cache:
@@ -169,8 +97,7 @@ jobs:
 
   build_components:
     working_directory: ~/project
-    docker:
-      - image: circleci/node:10.16
+    executor: node
     steps:
       - checkout
       - attach_workspace:
@@ -185,8 +112,7 @@ jobs:
 
   build_storybook:
     working_directory: ~/project
-    docker:
-      - image: circleci/node:10.16
+    executor: node
     steps:
       - checkout
       - attach_workspace:
@@ -201,8 +127,7 @@ jobs:
 
   build_docs:
     working_directory: ~/project
-    docker:
-      - image: circleci/node:10.16
+    executor: node
     steps:
       - checkout
       - attach_workspace:
@@ -217,8 +142,7 @@ jobs:
 
   build_test_e2e:
     working_directory: ~/project
-    docker:
-      - image: circleci/node:10.16
+    executor: node
     steps:
       - checkout
       - attach_workspace:
@@ -233,8 +157,7 @@ jobs:
 
   test_unit:
     working_directory: ~/project
-    docker:
-      - image: circleci/node:10.16
+    executor: node
     steps:
       - checkout
       - attach_workspace:
@@ -247,8 +170,7 @@ jobs:
 
   test_visual_comps:
     working_directory: ~/project
-    docker:
-      - image: circleci/node:10.16
+    executor: node
     steps:
       - checkout
       - attach_workspace:
@@ -281,8 +203,7 @@ jobs:
 
   install_cypress:
     working_directory: ~/project
-    docker:
-      - image: cypress/base:10
+    executor: cypress
     steps:
       - checkout
       - attach_workspace:
@@ -297,8 +218,7 @@ jobs:
 
   test_visual_docs:
     working_directory: ~/project
-    docker:
-      - image: cypress/base:10
+    executor: cypress
     steps:
       - checkout
       - restore_cache:
@@ -320,8 +240,7 @@ jobs:
 
   test_e2e_comps:
     working_directory: ~/project
-    docker:
-      - image: cypress/base:10
+    executor: cypress
     steps:
       - checkout
       - restore_cache:
@@ -339,8 +258,7 @@ jobs:
 
   test_e2e_docs:
     working_directory: ~/project
-    docker:
-      - image: cypress/base:10
+    executor: cypress
     steps:
       - checkout
       - restore_cache:
@@ -359,8 +277,7 @@ jobs:
 
   create_release_candidate:
     working_directory: ~/project
-    docker:
-      - image: circleci/node:10.16
+    executor: node
     steps:
       - checkout
       - run:
@@ -375,26 +292,11 @@ jobs:
           name: bump version
           command: make create_release_candidate
 
-  publish_npm_dev:
-    docker:
-      - image: circleci/node:10.16
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: Add NPM login credentionals
-          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
-      - run:
-          name: Set github identity
-          command: make set_git_identity
-      - run:
-          name: Publish components to NPM
-          command: make publish_npm_dev
-
   publish_npm:
-    docker:
-      - image: circleci/node:10.16
+    parameters:
+      publish_dev:
+        type: boolean 
+    executor: node
     steps:
       - checkout
       - attach_workspace:
@@ -405,9 +307,18 @@ jobs:
       - run:
           name: Set github identity
           command: make set_git_identity
-      - run:
-          name: Publish components to NPM
-          command: make publish_npm
+      - when:
+          condition: << parameters.publish_dev >>
+          steps:      
+            - run:
+                name: Publish components to NPM
+                command: make publish_npm_dev
+      - unless:
+          condition: << parameters.publish_dev >>
+          steps:
+            - run:
+                name: Publish components to NPM
+                command: make publish_npm
 
   build_push_docker_ecr:
     machine: true
@@ -424,104 +335,84 @@ jobs:
           ecr_repo: "${AWS_RESOURCE_NAME_PREFIX}"
           docker_tag: "${CIRCLE_SHA1}"
 
-  eks_flux_deploy_dev:
+  eks_flux_deploy:
+    # This one does a Flux deployment (writes to a Flux repo), using the flux-k8s tool you can find in https://github.com/newscorp-ghfb/ncu-circle-pipeline
+    parameters:
+      environment:
+        type: string
+      substitution_dir:
+        type: string
+        default: "eks/manifests"
+      flux_repo_url:
+        type: string
+        default: "git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git"
+      flux_repo_name:
+        type: string
+        default: "ncu-flux-newskit-site"
     executor: flux-deploy
     steps:
-      - flux-deploy:
-          config_values: eks/values/product-platforms-values-dev.yaml
-          substitution_dir: eks/manifests
-          out_dir: product-platforms-dev
-          flux_repo_url: git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git
-          flux_repo_name: ncu-flux-newskit-site
-          flux_repo_target: dev/eks
+      - setup_remote_docker:
+          docker_layer_caching: true
+      - checkout
+        # We have to add the ssh key so that Circle has permissions to checkout the private repo
+      - add_ssh_keys:
+          fingerprints: "7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80"
+      - run: |
+          config_values=eks/values/product-platforms-values-<< parameters.environment >>.yaml
+          out_dir=product-platforms-<< parameters.environment >>
+          flux_repo_target=<< parameters.environment >>/eks
+          git config --global user.email "ncu-product-platforms@news.co.uk"
+          git config --global user.name "Product Platforms Service"
+          flux-generate "${CIRCLE_SHA1}" $config_values << parameters.substitution_dir >> $out_dir
+          flux-commit -u << parameters.flux_repo_url >> -n << parameters.flux_repo_name >> -d $out_dir -t $flux_repo_target -m "${CIRCLE_SHA1}_$out_dir"
 
-  eks_flux_deploy_staging:
-    executor: flux-deploy
-    steps:
-      - flux-deploy:
-          config_values: eks/values/product-platforms-values-staging.yaml
-          substitution_dir: eks/manifests
-          out_dir: product-platforms-staging
-          flux_repo_url: git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git
-          flux_repo_name: ncu-flux-newskit-site
-          flux_repo_target: staging/eks
-
-  eks_flux_deploy_prod:
-    executor: flux-deploy
-    steps:
-      - flux-deploy:
-          config_values: eks/values/product-platforms-values-prod.yaml
-          substitution_dir: eks/manifests
-          out_dir: product-platforms-prod
-          flux_repo_url: git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git
-          flux_repo_name: ncu-flux-newskit-site
-          flux_repo_target: prod/eks
-
-  eks_kubectl_deploy_dev:
+  eks_kubectl_deploy:
+    parameters:
+      environment:
+        type: string
+        description: Deplyoment environment
+      aws_region:
+        description: AWS Region
+        type: string
+        default: "${AWS_DEFAULT_REGION}"
+      aws_access_key_id:
+        description: AWS Access Key Id
+        type: string
+        default: "${AWS_ACCESS_KEY_ID}"
+      aws_secret_key:
+        description: AWS Secret Key
+        type: string
+        default: "${AWS_SECRET_ACCESS_KEY}"
+      aws_assume_role_arn:
+        description: AWS ARN For Assume Role
+        type: string
+        default: "${AWS_ASSUME_ROLE_ARN}"
     executor: kubectl-deploy
     steps:
-      - kubectl-deploy:
-          aws_region: "${AWS_DEFAULT_REGION}"
-          aws_access_key_id: "${AWS_ACCESS_KEY_ID}"
-          aws_secret_key: "${AWS_SECRET_ACCESS_KEY}"
-          aws_assume_role_arn: "${AWS_ASSUME_ROLE_ARN}"
-          cluster_name: ceng-eks-dev
-          environment: dev
+      - setup_remote_docker:
+          docker_layer_caching: true
+      - add_ssh_keys:
+          fingerprints: "7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80"
+      - run: |
+          apk --no-cache add openssh git bash
+          export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
+          git config --global user.email "ncu-product-platforms@news.co.uk"
+          git config --global user.name "Product Platforms Service"
+          git clone git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git flux
+          export EKS_IAM_ROLE_DEV=<< parameters.aws_assume_role_arn >>
+          export EKS_AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
+          export EKS_AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
+          export AWS_DEFAULT_REGION=<< parameters.aws_region >>
+          export CLUSTER_NAME=ceng-eks-<< parameters.environment >>
 
-  eks_kubectl_deploy_staging:
-    executor: kubectl-deploy
-    steps:
-      - kubectl-deploy:
-          aws_region: "${AWS_DEFAULT_REGION}"
-          aws_access_key_id: "${AWS_ACCESS_KEY_ID}"
-          aws_secret_key: "${AWS_SECRET_ACCESS_KEY}"
-          aws_assume_role_arn: "${AWS_ASSUME_ROLE_ARN}"
-          cluster_name: ceng-eks-staging
-          environment: staging
+          nukubectl | grep "export AWS_" > auth.env
+          export $(egrep -v '^#' auth.env | xargs)
+          rm auth.env
 
-  eks_kubectl_deploy_prod:
-    executor: kubectl-deploy
-    steps:
-      - kubectl-deploy:
-          aws_region: "${AWS_DEFAULT_REGION}"
-          aws_access_key_id: "${AWS_ACCESS_KEY_ID}"
-          aws_secret_key: "${AWS_SECRET_ACCESS_KEY}"
-          aws_assume_role_arn: "${AWS_ASSUME_ROLE_ARN}"
-          cluster_name: ceng-eks-prod
-          environment: prod
+          cd flux/<< parameters.environment >>/eks
+          kubectl apply -f .
 
-  k8s_flux_deploy_dev:
-    executor: flux-deploy
-    steps:
-      - flux-deploy:
-          config_values: kubernetes/values/product-platforms-values-dev.yaml
-          substitution_dir: kubernetes/manifests
-          out_dir: product-platforms-dev
-          flux_repo_url: git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git
-          flux_repo_name: ncu-flux-newskit-site
-          flux_repo_target: dev/product-platforms
-
-  k8s_flux_deploy_staging:
-    executor: flux-deploy
-    steps:
-      - flux-deploy:
-          config_values: kubernetes/values/product-platforms-values-staging.yaml
-          substitution_dir: kubernetes/manifests
-          out_dir: product-platforms-staging
-          flux_repo_url: git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git
-          flux_repo_name: ncu-flux-newskit-site
-          flux_repo_target: staging/product-platforms
-
-  k8s_flux_deploy_prod:
-    executor: flux-deploy
-    steps:
-      - flux-deploy:
-          config_values: kubernetes/values/product-platforms-values-prod.yaml
-          substitution_dir: kubernetes/manifests
-          out_dir: product-platforms-prod
-          flux_repo_url: git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git
-          flux_repo_name: ncu-flux-newskit-site
-          flux_repo_target: prod/product-platforms
+# ========== FILTERS START    ==========
 
 only_develop: &only_develop
   filters:
@@ -546,38 +437,59 @@ only_pr: &only_pr
         - master
         - /trigger-release-.*/
 
-ignore_release: &ignore_release
+ignore_trigger_release: &ignore_trigger_release
   filters:
     branches:
       ignore: /trigger-release-.*/
+
+# ========== FILTERS END        ==========
+
+# ========== REQUIREMENTS START ==========
 
 require_dep: &require_dep
   requires:
     - install_deps
 
+# ========== REQUIREMENTS END   ==========
+
 workflows:
-  version: 2.1
   build_and_deploy:
     jobs:
+    # common jobs
       - install_deps:
-          <<: *ignore_release
+          <<: *ignore_trigger_release
+      - install_cypress:
+          <<: *ignore_trigger_release
       - build_components:
-          <<: *ignore_release
+          <<: *ignore_trigger_release
           <<: *require_dep
       - build_storybook:
-          <<: *ignore_release
+          <<: *ignore_trigger_release
           <<: *require_dep
       - build_docs:
-          <<: *ignore_release
+          <<: *ignore_trigger_release
           <<: *require_dep
           requires:
             - build_components
       - build_test_e2e:
-          <<: *ignore_release
+          <<: *ignore_trigger_release
           <<: *require_dep
       - test_unit:
-          <<: *ignore_release
+          <<: *ignore_trigger_release
           <<: *require_dep
+      - test_e2e_comps:
+          <<: *ignore_trigger_release
+          context: ncu-product-platforms-context
+          requires:
+            - build_test_e2e
+            - install_cypress
+      - test_e2e_docs:
+          <<: *ignore_trigger_release
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs
+            - install_cypress
+    # PR jobs
       - run_visual_comps:
           <<: *only_pr
           type: approval
@@ -588,22 +500,9 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - run_visual_comps
-      - install_cypress:
-          <<: *ignore_release
-      - test_e2e_comps:
-          <<: *ignore_release
-          context: ncu-product-platforms-context
-          requires:
-            - build_test_e2e
-            - install_cypress
+    # Starting develop jobs
       - test_visual_docs:
           <<: *only_develop
-          context: ncu-product-platforms-context
-          requires:
-            - build_docs
-            - install_cypress
-      - test_e2e_docs:
-          <<: *ignore_release
           context: ncu-product-platforms-context
           requires:
             - build_docs
@@ -611,13 +510,11 @@ workflows:
       - approve_publish_npm_dev:
           type: approval
           <<: *only_develop
-      - create_release_candidate:
-          <<: *only_release
-      - publish_npm_dev:
+      - publish_npm:
           <<: *only_develop
+          name: publish_npm_dev
           context: ncu-product-platforms-context
           requires:
-            - build_components
             - test_unit
             - test_e2e_comps
             - test_e2e_docs
@@ -626,27 +523,28 @@ workflows:
           context: ncu-product-platforms-context
           <<: *only_develop
           requires:
-            - build_docs
             - build_storybook
             - test_unit
             - test_e2e_comps
             - test_e2e_docs
-      - k8s_flux_deploy_dev:
-          context: ncu-product-platforms-context
+      - eks_flux_deploy:
+          name: eks_flux_deploy_dev
+          context: ncu-newskit-site-dev
+          environment: dev
           <<: *only_develop
           requires:
             - build_push_docker_ecr
-      - eks_flux_deploy_dev:
+      - eks_kubectl_deploy:
+          name: eks_kubectl_deploy_dev
           context: ncu-newskit-site-dev
-          <<: *only_develop
-          requires:
-            - k8s_flux_deploy_dev
-            - build_push_docker_ecr
-      - eks_kubectl_deploy_dev:
-          context: ncu-newskit-site-dev
+          envirnment: dev
           <<: *only_develop
           requires:
             - eks_flux_deploy_dev
+    # release candidate jobs
+      - create_release_candidate:
+          <<: *only_release
+    # master jobs
       - approve_deployment:
           type: approval
           <<: *only_master
@@ -662,10 +560,3 @@ workflows:
             - test_unit
             - test_e2e_comps
             - test_e2e_docs
-      - k8s_flux_deploy_prod:
-          context: ncu-product-platforms-context
-          requires:
-            - build_push_docker_ecr
-            - approve_deployment
-            - publish_npm
-          <<: *only_master

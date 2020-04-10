@@ -15,4 +15,5 @@ FQDN:
 FQDNStorybook:
   storybook.newskit.dev-news.co.uk
 SSLCertARN:
+# this cert is for *.digiend-dev.ntch.co.uk
   arn:aws:acm:eu-west-1:720262317718:certificate/9e9bed2a-8818-42e0-b6cb-ddfb1bd792cc
