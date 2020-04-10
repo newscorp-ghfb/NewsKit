@@ -539,7 +539,7 @@ workflows:
       - eks_kubectl_deploy:
           name: eks_kubectl_deploy_dev
           context: ncu-newskit-site-dev
-          envirnment: dev
+          environment: dev
           <<: *only_develop
           requires:
             - eks_flux_deploy_dev
