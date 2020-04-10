@@ -295,7 +295,8 @@ jobs:
   publish_npm:
     parameters:
       publish_dev:
-        type: boolean 
+        type: boolean
+        default: false
     executor: node
     steps:
       - checkout
@@ -514,6 +515,7 @@ workflows:
           <<: *only_develop
           name: publish_npm_dev
           context: ncu-product-platforms-context
+          publish_dev: true
           requires:
             - test_unit
             - test_e2e_comps
