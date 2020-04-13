@@ -28,50 +28,6 @@ executors:
   cypress:
     docker:
       - image: cypress/base:10
-
-commands:
-  ecr-build-push-docker:
-    description: "Assume Role and Push to ECR"
-    parameters:
-      aws_region:
-        description: AWS Region
-        type: string
-      aws_access_key_id:
-        description: AWS Access Key Id
-        type: string
-      aws_secret_key:
-        description: AWS Secret Key
-        type: string
-      aws_account_url:
-        description: AWS Account URL
-        type: string
-      aws_assume_role_arn:
-        description: AWS ARN For Assume Role
-        type: string
-      ecr_repo:
-        description: ECR REPO
-        type: string
-      docker_tag:
-        description: Docker Image Tag
-        type: string
-    steps:
-      - run:
-          command: |
-            export AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
-            export AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
-            export DOCKER_REGISTRY_URL=<< parameters.aws_account_url >>
-            export DOCKER_REPO=<< parameters.ecr_repo >>
-            export DOCKER_TAG=<< parameters.docker_tag >>
-            export temp_role=$(aws sts assume-role \
-                    --role-arn "<< parameters.aws_assume_role_arn >>" \
-                    --role-session-name "circle-ci-assume")
-            export AWS_ACCESS_KEY_ID=$(echo $temp_role | jq .Credentials.AccessKeyId | xargs)
-            export AWS_SECRET_ACCESS_KEY=$(echo $temp_role | jq .Credentials.SecretAccessKey | xargs)
-            export AWS_SESSION_TOKEN=$(echo $temp_role | jq .Credentials.SessionToken | xargs)
-            aws ecr get-login --no-include-email --region << parameters.aws_region >> | /bin/bash
-            make build_docker
-            make push_docker
-
 jobs:
   install_deps:
     working_directory: ~/project
@@ -282,7 +238,7 @@ jobs:
       - checkout
       - run:
           name: install hub
-          command: make install_hub
+          command: sudo apt install hub
       - add_ssh_keys:
           fingerprints: "7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80"
       - run:
@@ -322,19 +278,64 @@ jobs:
                 command: make publish_npm
 
   build_push_docker_ecr:
-    machine: true
+    parameters:
+      aws_region:
+        description: AWS Region
+        type: string
+        default: "${AWS_DEFAULT_REGION}"
+      aws_access_key_id:
+        description: AWS Access Key Id
+        type: string
+        default: "${AWS_ACCESS_KEY_ID}"
+      aws_secret_key:
+        description: AWS Secret Key
+        type: string
+        default: "${AWS_SECRET_ACCESS_KEY}"
+      aws_ecr_url:
+        description: AWS Account URL
+        type: string
+        default: "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com"
+      aws_assume_role_arn:
+        description: AWS ARN For Assume Role
+        type: string
+        default: "${AWS_ASSUME_ROLE_ARN}"
+      ecr_repo:
+        description: ECR REPO
+        type: string
+        default: "${AWS_RESOURCE_NAME_PREFIX}"
+      docker_tag:
+        description: Docker Image Tag
+        type: string
+        default: "${CIRCLE_SHA1}"
+    executor: node
     steps:
       - checkout
       - attach_workspace:
           at: ~/project
-      - ecr-build-push-docker:
-          aws_region: "${AWS_DEFAULT_REGION}"
-          aws_access_key_id: "${AWS_ACCESS_KEY_ID}"
-          aws_secret_key: "${AWS_SECRET_ACCESS_KEY}"
-          aws_account_url: "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com"
-          aws_assume_role_arn: "${AWS_ASSUME_ROLE_ARN}"
-          ecr_repo: "${AWS_RESOURCE_NAME_PREFIX}"
-          docker_tag: "${CIRCLE_SHA1}"
+      - setup_remote_docker:
+          docker_layer_caching: true
+      - run:
+          name: Isntall python and pip
+          command: sudo apt-get install python-pip python-dev
+      - run:
+          name: Install awscli
+          command: sudo pip install awscli
+      - run:
+          command: |
+            export AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
+            export AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
+            export DOCKER_REGISTRY_URL=<< parameters.aws_ecr_url >>
+            export DOCKER_REPO=<< parameters.ecr_repo >>
+            export DOCKER_TAG=<< parameters.docker_tag >>
+            export temp_role=$(aws sts assume-role \
+                    --role-arn "<< parameters.aws_assume_role_arn >>" \
+                    --role-session-name "circle-ci-assume")
+            export AWS_ACCESS_KEY_ID=$(echo $temp_role | jq .Credentials.AccessKeyId | xargs)
+            export AWS_SECRET_ACCESS_KEY=$(echo $temp_role | jq .Credentials.SecretAccessKey | xargs)
+            export AWS_SESSION_TOKEN=$(echo $temp_role | jq .Credentials.SessionToken | xargs)
+            aws ecr get-login --no-include-email --region << parameters.aws_region >> | /bin/bash
+            make build_docker
+            make push_docker
 
   eks_flux_deploy:
     # This one does a Flux deployment (writes to a Flux repo), using the flux-k8s tool you can find in https://github.com/newscorp-ghfb/ncu-circle-pipeline
@@ -420,10 +421,15 @@ only_develop: &only_develop
     branches:
       only: develop
 
-only_release: &only_release
+only_trigger_release: &only_trigger_release
   filters:
     branches:
       only: /trigger-release-.*/
+
+only_release: &only_release
+  filters:
+    branches:
+      only: /^release.*/
 
 only_master: &only_master
   filters:
@@ -543,9 +549,23 @@ workflows:
           <<: *only_develop
           requires:
             - eks_flux_deploy_dev
-    # release candidate jobs
+    # release jobs
       - create_release_candidate:
+          <<: *only_trigger_release
+      - eks_flux_deploy:
+          name: eks_flux_deploy_staging
+          context: ncu-newskit-site-stage
+          environment: staging
           <<: *only_release
+          requires:
+            - build_push_docker_ecr
+      - eks_kubectl_deploy:
+          name: eks_flux_deploy_staging
+          context: ncu-newskit-site-stage
+          environment: staging
+          <<: *only_release
+          requires:
+            - eks_flux_deploy_staging
     # master jobs
       - approve_deployment:
           type: approval
@@ -562,3 +582,17 @@ workflows:
             - test_unit
             - test_e2e_comps
             - test_e2e_docs
+      - eks_flux_deploy:
+          name: eks_flux_deploy_prod
+          context: ncu-newskit-site-prod
+          environment: prod
+          <<: *only_master
+          requires:
+            - approve_deployment
+      - eks_kubectl_deploy:
+          name: eks_flux_deploy_prod
+          context: ncu-newskit-site-prod
+          environment: prod
+          <<: *only_master
+          requires:
+            - eks_flux_deploy_prod
