@@ -28,7 +28,7 @@
     "test": "yarn lint && yarn test:unit",
     "test:ci": "yarn lint && yarn test:unit:ci",
     "prebuild": "rm -rf dist && rm -rf dist-storybook && rm -rf public",
-    "prepublish": "cd ..; yarn build:sync-version-number",
+    "prepublish": "yarn build:sync-version-number",
     "build:ts": "NODE_ENV=production tsc",
     "build:ts:esm": "NODE_ENV=production tsc -m es2015 --outDir dist/esm",
     "build:copy-files": "cp README_COMPONENTS.md dist/README.md; cp .npmignore dist/.npmignore",
