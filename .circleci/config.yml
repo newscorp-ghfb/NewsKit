@@ -443,12 +443,16 @@ only_pr: &only_pr
         - develop
         - master
         - /trigger-release-.*/
+        - /^release.*/
 
-ignore_trigger_release: &ignore_trigger_release
+only_pr_and_dev: &only_pr_and_dev
   filters:
     branches:
-      ignore: /trigger-release-.*/
-
+      ignore:
+        - /trigger-release-.*/
+        - master
+        - /^release.*/
+        
 # ========== FILTERS END        ==========
 
 # ========== REQUIREMENTS START ==========
@@ -464,34 +468,34 @@ workflows:
     jobs:
     # common jobs
       - install_deps:
-          <<: *ignore_trigger_release
+          <<: *only_pr_and_dev
       - install_cypress:
-          <<: *ignore_trigger_release
+          <<: *only_pr_and_dev
       - build_components:
-          <<: *ignore_trigger_release
+          <<: *only_pr_and_dev
           <<: *require_dep
       - build_storybook:
-          <<: *ignore_trigger_release
+          <<: *only_pr_and_dev
           <<: *require_dep
       - build_docs:
-          <<: *ignore_trigger_release
+          <<: *only_pr_and_dev
           <<: *require_dep
           requires:
             - build_components
       - build_test_e2e:
-          <<: *ignore_trigger_release
+          <<: *only_pr_and_dev
           <<: *require_dep
       - test_unit:
-          <<: *ignore_trigger_release
+          <<: *only_pr_and_dev
           <<: *require_dep
       - test_e2e_comps:
-          <<: *ignore_trigger_release
+          <<: *only_pr_and_dev
           context: ncu-product-platforms-context
           requires:
             - build_test_e2e
             - install_cypress
       - test_e2e_docs:
-          <<: *ignore_trigger_release
+          <<: *only_pr_and_dev
           context: ncu-product-platforms-context
           requires:
             - build_docs
@@ -507,7 +511,7 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - run_visual_comps
-    # Starting develop jobs
+    # develop jobs
       - test_visual_docs:
           <<: *only_develop
           context: ncu-product-platforms-context
@@ -557,8 +561,6 @@ workflows:
           context: ncu-newskit-site-stage
           environment: staging
           <<: *only_release
-          requires:
-            - build_push_docker_ecr
       - eks_kubectl_deploy:
           name: eks_flux_deploy_staging
           context: ncu-newskit-site-stage
@@ -570,10 +572,6 @@ workflows:
       - approve_deployment:
           type: approval
           <<: *only_master
-          requires:
-            - test_unit
-            - test_e2e_comps
-            - test_e2e_docs
       - publish_npm:
           context: ncu-product-platforms-context
           <<: *only_master
