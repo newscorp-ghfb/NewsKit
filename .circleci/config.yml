@@ -575,11 +575,6 @@ workflows:
       - publish_npm:
           context: ncu-product-platforms-context
           <<: *only_master
-          requires:
-            - build_components
-            - test_unit
-            - test_e2e_comps
-            - test_e2e_docs
       - eks_flux_deploy:
           name: eks_flux_deploy_prod
           context: ncu-newskit-site-prod
