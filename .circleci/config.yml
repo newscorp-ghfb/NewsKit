@@ -445,12 +445,11 @@ only_pr: &only_pr
         - /trigger-release-.*/
         - /^release.*/
 
-only_pr_and_dev: &only_pr_and_dev
+ignore_release: &ignore_release
   filters:
     branches:
       ignore:
         - /trigger-release-.*/
-        - master
         - /^release.*/
         
 # ========== FILTERS END        ==========
@@ -468,34 +467,34 @@ workflows:
     jobs:
     # common jobs
       - install_deps:
-          <<: *only_pr_and_dev
+          <<: *ignore_release
       - install_cypress:
-          <<: *only_pr_and_dev
+          <<: *ignore_release
       - build_components:
-          <<: *only_pr_and_dev
+          <<: *ignore_release
           <<: *require_dep
       - build_storybook:
-          <<: *only_pr_and_dev
+          <<: *ignore_release
           <<: *require_dep
       - build_docs:
-          <<: *only_pr_and_dev
+          <<: *ignore_release
           <<: *require_dep
           requires:
             - build_components
       - build_test_e2e:
-          <<: *only_pr_and_dev
+          <<: *ignore_release
           <<: *require_dep
       - test_unit:
-          <<: *only_pr_and_dev
+          <<: *ignore_release
           <<: *require_dep
       - test_e2e_comps:
-          <<: *only_pr_and_dev
+          <<: *ignore_release
           context: ncu-product-platforms-context
           requires:
             - build_test_e2e
             - install_cypress
       - test_e2e_docs:
-          <<: *only_pr_and_dev
+          <<: *ignore_release
           context: ncu-product-platforms-context
           requires:
             - build_docs
@@ -575,6 +574,10 @@ workflows:
       - publish_npm:
           context: ncu-product-platforms-context
           <<: *only_master
+          requires:
+            - test_unit
+            - test_e2e_comps
+            - test_e2e_docs
       - eks_flux_deploy:
           name: eks_flux_deploy_prod
           context: ncu-newskit-site-prod
@@ -582,6 +585,7 @@ workflows:
           <<: *only_master
           requires:
             - approve_deployment
+            - publish_npm
       - eks_kubectl_deploy:
           name: eks_flux_deploy_prod
           context: ncu-newskit-site-prod
