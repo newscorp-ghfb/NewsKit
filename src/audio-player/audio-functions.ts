@@ -26,6 +26,7 @@ export interface AudioFunctionDependencies {
   setPlayState: React.Dispatch<React.SetStateAction<boolean>>;
   setVolume: React.Dispatch<React.SetStateAction<number>>;
   setDuration: React.Dispatch<React.SetStateAction<number>>;
+  setDisplayDuration: React.Dispatch<React.SetStateAction<number>>;
   setBuffered: React.Dispatch<React.SetStateAction<TimeRanges | undefined>>;
   setIsPrevTrackBtnDisabled: React.Dispatch<React.SetStateAction<boolean>>;
 }
@@ -45,6 +46,7 @@ export const useAudioFunctions = ({
   setPlayState,
   setVolume,
   setDuration,
+  setDisplayDuration,
   setBuffered,
   setIsPrevTrackBtnDisabled,
 }: AudioFunctionDependencies) => {
@@ -163,9 +165,10 @@ export const useAudioFunctions = ({
     ({target}: SyntheticEvent<HTMLAudioElement, Event>) => {
       const tgt = target as HTMLAudioElement;
       setDuration(tgt.duration);
+      setDisplayDuration(tgt.duration);
       setBuffered(tgt.buffered);
     },
-    [setBuffered, setDuration],
+    [setBuffered, setDuration, setDisplayDuration],
   );
 
   const play = () => {

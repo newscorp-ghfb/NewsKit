@@ -6,6 +6,13 @@ export const formatTrackTime = (time: number, maxTime: number = time) => {
   return new Date(time * 1000).toISOString().substr(...args);
 };
 
+export const formatDuration = (time: number, maxTime: number = time) => {
+  if (time === 0) {
+    return '';
+  }
+  return formatTrackTime(time, maxTime);
+};
+
 export const formatTrackData = (
   trackColor: string,
   indicatorColor: string,

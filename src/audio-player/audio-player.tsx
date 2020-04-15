@@ -7,7 +7,7 @@ import {Stack, StackDistribution, Flow} from '../stack';
 import {PlayerGrid, ControlContainer, PlayerContainer} from './styled';
 import {VolumeControl} from '../volume-control';
 import {Cell} from '../grid/cell';
-import {formatTrackTime, formatTrackData} from './utils';
+import {formatTrackTime, formatTrackData, formatDuration} from './utils';
 import {StyledTrack} from '../slider/styled';
 import {useTheme} from '../themes/emotion';
 
@@ -64,6 +64,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
 
   const [volume, setVolume] = useState(0);
   const [duration, setDuration] = useState(0);
+  const [displayDuration, setDisplayDuration] = useState(0);
   const [trackPositionArr, setTrackPosition] = useState([0]);
   const [isPlaying, setPlayState] = useState(false);
   const [buffered, setBuffered] = useState<TimeRanges>();
@@ -79,7 +80,8 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
-    setDuration(0);
+    setTrackPosition([0]);
+    setDisplayDuration(0);
   }, [src]);
 
   const {
@@ -114,6 +116,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     setVolume,
     setDuration,
     setBuffered,
+    setDisplayDuration,
     setIsPrevTrackBtnDisabled,
   });
 
@@ -177,7 +180,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   );
 
   const showControls = !live;
-  const formattedDuration = showControls ? formatTrackTime(duration) : '';
+  const formattedDuration = showControls ? formatDuration(displayDuration) : '';
   const formattedTime = showControls
     ? formatTrackTime(trackPositionArr[0], duration)
     : '';

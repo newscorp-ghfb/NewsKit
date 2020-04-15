@@ -2360,17 +2360,17 @@ exports[`Audio Player recorded player renders and behaves as expected 2`] = `
 
 exports[`Audio Player recorded player renders as expected 1`] = `
 <DocumentFragment>
-  .emotion-60 {
+  .emotion-59 {
   width: 100%;
 }
 
-.emotion-59 {
+.emotion-58 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-58 {
+.emotion-57 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -2387,25 +2387,25 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 @media screen {
-  .emotion-58 {
+  .emotion-57 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-58 {
+  .emotion-57 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-58 {
+  .emotion-57 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-58 {
+  .emotion-57 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -3067,7 +3067,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   min-width: 316px;
 }
 
-.emotion-57 {
+.emotion-56 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -3076,7 +3076,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 @media screen {
-  .emotion-57 {
+  .emotion-56 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -3091,7 +3091,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-57 {
+  .emotion-56 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -3099,7 +3099,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-57 {
+  .emotion-56 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -3107,14 +3107,14 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-57 {
+  .emotion-56 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-56 {
+.emotion-55 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3159,13 +3159,13 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   width: 100%;
 }
 
-.emotion-55 {
+.emotion-54 {
   width: 100%;
   margin-top: 12px;
   padding: 0 calc(16px / 2);
 }
 
-.emotion-54 {
+.emotion-53 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3202,13 +3202,13 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 
 <section
     aria-label="audio player"
-    class="emotion-60"
+    class="emotion-59"
   >
     <div
-      class="emotion-59"
+      class="emotion-58"
     >
       <div
-        class="emotion-58"
+        class="emotion-57"
       >
         <audio
           data-testid="audio-element"
@@ -3551,10 +3551,10 @@ exports[`Audio Player recorded player renders as expected 1`] = `
           </div>
         </div>
         <div
-          class="emotion-57"
+          class="emotion-56"
         >
           <div
-            class="emotion-56"
+            class="emotion-55"
             data-testid="audio-slider"
           >
             <div
@@ -3579,20 +3579,14 @@ exports[`Audio Player recorded player renders as expected 1`] = `
               />
             </div>
             <div
-              class="emotion-55"
+              class="emotion-54"
             >
               <div
-                class="emotion-54"
+                class="emotion-53"
               >
                 <div
                   class="emotion-52"
                   data-testid="min-label"
-                >
-                  00:00
-                </div>
-                <div
-                  class="emotion-52"
-                  data-testid="max-label"
                 >
                   00:00
                 </div>

@@ -2,7 +2,7 @@
 
 exports[`Radio Player default player 1`] = `
 <DocumentFragment>
-  .emotion-83 {
+  .emotion-82 {
   width: 100%;
 }
 
@@ -12,7 +12,7 @@ exports[`Radio Player default player 1`] = `
   margin: 0 auto;
 }
 
-.emotion-81 {
+.emotion-80 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -29,25 +29,25 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen {
-  .emotion-81 {
+  .emotion-80 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-81 {
+  .emotion-80 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-81 {
+  .emotion-80 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-81 {
+  .emotion-80 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -1028,7 +1028,7 @@ exports[`Radio Player default player 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-80 {
+.emotion-79 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -1037,7 +1037,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen {
-  .emotion-80 {
+  .emotion-79 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -1052,7 +1052,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-80 {
+  .emotion-79 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -1060,7 +1060,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-80 {
+  .emotion-79 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -1068,14 +1068,14 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-80 {
+  .emotion-79 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-79 {
+.emotion-78 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1120,13 +1120,13 @@ exports[`Radio Player default player 1`] = `
   width: 100%;
 }
 
-.emotion-78 {
+.emotion-77 {
   width: 100%;
   margin-top: 12px;
   padding: 0 calc(16px / 2);
 }
 
-.emotion-77 {
+.emotion-76 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1163,13 +1163,13 @@ exports[`Radio Player default player 1`] = `
 
 <section
     aria-label="audio player"
-    class="emotion-83"
+    class="emotion-82"
   >
     <div
       class="emotion-21"
     >
       <div
-        class="emotion-81"
+        class="emotion-80"
       >
         <audio
           data-testid="audio-element"
@@ -1609,10 +1609,10 @@ exports[`Radio Player default player 1`] = `
           </div>
         </div>
         <div
-          class="emotion-80"
+          class="emotion-79"
         >
           <div
-            class="emotion-79"
+            class="emotion-78"
             data-testid="audio-slider"
           >
             <div
@@ -1636,20 +1636,14 @@ exports[`Radio Player default player 1`] = `
               />
             </div>
             <div
-              class="emotion-78"
+              class="emotion-77"
             >
               <div
-                class="emotion-77"
+                class="emotion-76"
               >
                 <div
                   class="emotion-75"
                   data-testid="min-label"
-                >
-                  00:00
-                </div>
-                <div
-                  class="emotion-75"
-                  data-testid="max-label"
                 >
                   00:00
                 </div>
@@ -3380,7 +3374,7 @@ exports[`Radio Player live player 1`] = `
 
 exports[`Radio Player player with popout link 1`] = `
 <DocumentFragment>
-  .emotion-99 {
+  .emotion-98 {
   width: 100%;
 }
 
@@ -3390,7 +3384,7 @@ exports[`Radio Player player with popout link 1`] = `
   margin: 0 auto;
 }
 
-.emotion-97 {
+.emotion-96 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -3407,25 +3401,25 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 @media screen {
-  .emotion-97 {
+  .emotion-96 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-97 {
+  .emotion-96 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-97 {
+  .emotion-96 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-97 {
+  .emotion-96 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -4406,7 +4400,7 @@ exports[`Radio Player player with popout link 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-96 {
+.emotion-95 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -4415,7 +4409,7 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 @media screen {
-  .emotion-96 {
+  .emotion-95 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -4430,7 +4424,7 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-96 {
+  .emotion-95 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -4438,7 +4432,7 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-96 {
+  .emotion-95 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -4446,14 +4440,14 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-96 {
+  .emotion-95 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-95 {
+.emotion-94 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4498,13 +4492,13 @@ exports[`Radio Player player with popout link 1`] = `
   width: 100%;
 }
 
-.emotion-94 {
+.emotion-93 {
   width: 100%;
   margin-top: 12px;
   padding: 0 calc(16px / 2);
 }
 
-.emotion-93 {
+.emotion-92 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4714,13 +4708,13 @@ exports[`Radio Player player with popout link 1`] = `
 
 <section
     aria-label="audio player"
-    class="emotion-99"
+    class="emotion-98"
   >
     <div
       class="emotion-37"
     >
       <div
-        class="emotion-97"
+        class="emotion-96"
       >
         <audio
           data-testid="audio-element"
@@ -5255,10 +5249,10 @@ exports[`Radio Player player with popout link 1`] = `
           </div>
         </div>
         <div
-          class="emotion-96"
+          class="emotion-95"
         >
           <div
-            class="emotion-95"
+            class="emotion-94"
             data-testid="audio-slider"
           >
             <div
@@ -5282,20 +5276,14 @@ exports[`Radio Player player with popout link 1`] = `
               />
             </div>
             <div
-              class="emotion-94"
+              class="emotion-93"
             >
               <div
-                class="emotion-93"
+                class="emotion-92"
               >
                 <div
                   class="emotion-91"
                   data-testid="min-label"
-                >
-                  00:00
-                </div>
-                <div
-                  class="emotion-91"
-                  data-testid="max-label"
                 >
                   00:00
                 </div>
@@ -5311,7 +5299,7 @@ exports[`Radio Player player with popout link 1`] = `
 
 exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 <DocumentFragment>
-  .emotion-113 {
+  .emotion-112 {
   width: 100%;
 }
 
@@ -5321,7 +5309,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin: 0 auto;
 }
 
-.emotion-111 {
+.emotion-110 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -5338,25 +5326,25 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen {
-  .emotion-111 {
+  .emotion-110 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-111 {
+  .emotion-110 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-111 {
+  .emotion-110 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-111 {
+  .emotion-110 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -6337,7 +6325,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-110 {
+.emotion-109 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -6346,7 +6334,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen {
-  .emotion-110 {
+  .emotion-109 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -6361,7 +6349,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-110 {
+  .emotion-109 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -6369,7 +6357,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-110 {
+  .emotion-109 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -6377,14 +6365,14 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-110 {
+  .emotion-109 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-109 {
+.emotion-108 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6429,13 +6417,13 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   width: 100%;
 }
 
-.emotion-108 {
+.emotion-107 {
   width: 100%;
   margin-top: 12px;
   padding: 0 calc(16px / 2);
 }
 
-.emotion-107 {
+.emotion-106 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6735,13 +6723,13 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 
 <section
     aria-label="audio player"
-    class="emotion-113"
+    class="emotion-112"
   >
     <div
       class="emotion-51"
     >
       <div
-        class="emotion-111"
+        class="emotion-110"
       >
         <audio
           data-testid="audio-element"
@@ -7359,10 +7347,10 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
           </div>
         </div>
         <div
-          class="emotion-110"
+          class="emotion-109"
         >
           <div
-            class="emotion-109"
+            class="emotion-108"
             data-testid="audio-slider"
           >
             <div
@@ -7386,20 +7374,14 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
               />
             </div>
             <div
-              class="emotion-108"
+              class="emotion-107"
             >
               <div
-                class="emotion-107"
+                class="emotion-106"
               >
                 <div
                   class="emotion-105"
                   data-testid="min-label"
-                >
-                  00:00
-                </div>
-                <div
-                  class="emotion-105"
-                  data-testid="max-label"
                 >
                   00:00
                 </div>

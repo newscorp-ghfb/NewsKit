@@ -1,4 +1,9 @@
-import {formatTrackData, formatTrackTime, getMediaSegment} from '../utils';
+import {
+  formatTrackData,
+  formatTrackTime,
+  formatDuration,
+  getMediaSegment,
+} from '../utils';
 
 test('formatTrackTime', () => {
   const oneMinute = 60;
@@ -12,6 +17,20 @@ test('formatTrackTime', () => {
   expect(formatTrackTime(oneHour + oneMinute + 1, oneHour)).toEqual('01:01:01');
   expect(formatTrackTime(oneHour + tenMinutes + 1)).toEqual('01:10:01');
   expect(formatTrackTime(oneHour, oneMinute)).toEqual('01:00:00');
+});
+
+test('formatDurationTime', () => {
+  const oneMinute = 60;
+  const tenMinutes = 60 * 10;
+  const oneHour = oneMinute * 60;
+
+  expect(formatDuration(0)).toEqual('');
+  expect(formatDuration(0, oneMinute)).toEqual('');
+  expect(formatDuration(oneMinute)).toEqual('01:00');
+  expect(formatDuration(oneMinute, oneHour)).toEqual('00:01:00');
+  expect(formatDuration(oneHour + oneMinute + 1, oneHour)).toEqual('01:01:01');
+  expect(formatDuration(oneHour + tenMinutes + 1)).toEqual('01:10:01');
+  expect(formatDuration(oneHour, oneMinute)).toEqual('01:00:00');
 });
 
 describe('formatTrackData', () => {
