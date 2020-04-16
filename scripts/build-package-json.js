@@ -21,12 +21,13 @@ async function run() {
   }, {});
 
   packageJson.module = modules;
+
+  delete packageJson.scripts.prepublish;
+
   fs.writeFileSync(
     path.join(__dirname, '../dist/package.json'),
     JSON.stringify(packageJson, null, 2),
   );
-
-  delete packageJson.scripts.prepublish;
 }
 
 run();
