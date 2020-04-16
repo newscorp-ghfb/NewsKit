@@ -238,7 +238,7 @@ jobs:
       - checkout
       - run:
           name: install hub
-          command: sudo apt install hub
+          command: make install_hub
       - add_ssh_keys:
           fingerprints: "7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80"
       - run:

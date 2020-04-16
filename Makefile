@@ -70,6 +70,11 @@ set_git_identity:
 	git config --global user.email "ncu-product-platforms@news.co.uk"
 	git config --global user.name "Product Platforms Service"
 
+install_hub:
+	wget https://github.com/github/hub/releases/download/v2.12.4/hub-linux-amd64-2.12.4.tgz
+	tar zxvf hub-linux-amd64-2.12.4.tgz
+	sudo cp hub-linux-amd64-2.12.4/bin/hub /usr/bin/hub
+
 # UPDATE PACKAGE VERSION BASED ON UPDATE TYPE IN BRANCH TRIGGER NAME
 create_release_candidate:
 	git fetch origin
