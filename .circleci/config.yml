@@ -315,7 +315,7 @@ jobs:
       - setup_remote_docker:
           docker_layer_caching: true
       - run:
-          name: Isntall python and pip
+          name: Install python and pip
           command: sudo apt-get install python-pip python-dev
       - run:
           name: Install awscli
