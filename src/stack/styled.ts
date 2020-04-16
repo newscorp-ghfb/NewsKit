@@ -118,7 +118,7 @@ export const StyledMasterContainer = styled('div')<StyledStackProps>`
         `
       : ''};
 
-  ${calculateMargins(true)};
+  ${calculateMargins(true)}
 `;
 
 export const StyledChildContainer = styled.div<StyledChildProps>`

@@ -32,9 +32,27 @@ describe('Stack', () => {
     expect(fragment2).toMatchSnapshot();
   });
 
+  test(`renders with valid flow`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      flow: Flow.HorizontalBottom,
+      children: [<Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>],
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
   test(`renders where the stack flow is invalid`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
       flow: 'blahblahblah' as any,
+      children: [<Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>],
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`renders with valid stackDistribution`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      stackDistribution: StackDistribution.Center,
       children: [<Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>],
     });
 
@@ -45,6 +63,19 @@ describe('Stack', () => {
     const fragment = renderToFragmentWithTheme(Stack, {
       stackDistribution: 'blahblahblah' as any,
       children: [<Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>],
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`renders where a nested stack with stackDistribution`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      stackDistribution: StackDistribution.Center,
+      children: [
+        <Stack stackDistribution={StackDistribution.Center}>
+          <Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>
+        </Stack>,
+      ],
     });
 
     expect(fragment).toMatchSnapshot();

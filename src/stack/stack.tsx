@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {ReactChildren} from 'react';
 import {
   StackProps,
   Flow,
@@ -11,31 +11,50 @@ import {
   StyledChildContainer,
   hasSpacing,
 } from './styled';
-import {useTheme} from '../themes';
+import {useTheme, Theme} from '../themes';
 import {isStackChild} from '../stack-child';
 
+export const isStack = (
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  component: any,
+) =>
+  component &&
+  component.type &&
+  // eslint-disable-next-line no-use-before-define
+  component.type.displayName === Stack.displayName;
+
 const wrapChild = (
+  $theme: Theme,
   $space: StyledStackProps['$space'],
   $flow: StyledStackProps['$flow'],
   $wrap: StyledStackProps['$wrap'],
-) => (child: React.ReactNode & {props?: {order?: number}}) => {
+) => (
+  child: React.ReactNode & {props?: {order?: number; children?: ReactChildren}},
+) => {
   const childProps: StyledChildProps = {
     $space,
     $flow,
     $wrap,
   };
 
-  if (isStackChild(child) && child.props.order) {
-    const {
-      props: {order},
-    } = child;
-    childProps.$order = order;
+  if (isStack(child)) {
+    return <Stack flexGrow {...child.props} />;
   }
-  return (
-    child && (
-      <StyledChildContainer {...childProps}>{child}</StyledChildContainer>
-    )
-  );
+
+  if (hasSpacing($theme, $space)) {
+    if (isStackChild(child) && child.props.order) {
+      const {
+        props: {order},
+      } = child;
+      childProps.$order = order;
+    }
+    return (
+      child && (
+        <StyledChildContainer {...childProps}>{child}</StyledChildContainer>
+      )
+    );
+  }
+  return child;
 };
 
 export const Stack: React.FC<StackProps> = ({
@@ -61,9 +80,10 @@ export const Stack: React.FC<StackProps> = ({
       $stackDistribution={stackDistribution}
       {...props}
     >
-      {children && hasSpacing(theme, space)
-        ? React.Children.map(children, wrapChild(space, flow, wrap))
-        : children}
+      {children &&
+        React.Children.map(children, wrapChild(theme, space, flow, wrap))}
     </StyledMasterContainer>
   );
 };
+
+Stack.displayName = 'Stack';

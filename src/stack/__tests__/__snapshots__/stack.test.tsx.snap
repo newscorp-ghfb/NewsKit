@@ -491,6 +491,218 @@ exports[`Stack renders stack with flex grow and shrink 2`] = `
 </DocumentFragment>
 `;
 
+exports[`Stack renders where a nested stack with stackDistribution 1`] = `
+<DocumentFragment>
+  .emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  padding: 8px 12px;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #535353;
+  border-width: 1px;
+  color: #2e2e2e;
+}
+
+.emotion-3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-3:hover:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-3:active:not(:disabled) {
+  border-width: 1px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<div
+    class="emotion-13"
+  >
+    <div
+      class="emotion-12"
+    >
+      <div
+        class="emotion-3"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-2"
+        >
+          <div
+            class="emotion-1"
+          >
+            <span
+              class="emotion-0"
+            >
+              child 1
+            </span>
+          </div>
+        </div>
+      </div>
+      , 
+      <div
+        class="emotion-3"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-2"
+        >
+          <div
+            class="emotion-1"
+          >
+            <span
+              class="emotion-0"
+            >
+              child 2
+            </span>
+          </div>
+        </div>
+      </div>
+      , 
+      <div
+        class="emotion-3"
+        data-testid="tag"
+      >
+        <div
+          class="emotion-2"
+        >
+          <div
+            class="emotion-1"
+          >
+            <span
+              class="emotion-0"
+            >
+              child 3
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Stack renders where stackDistribution is invalid 1`] = `
 <DocumentFragment>
   .emotion-3 {
@@ -14717,6 +14929,372 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 .emotion-12:after {
   content: '';
   display: block;
+}
+
+<div
+    class="emotion-12"
+  >
+    <div
+      class="emotion-3"
+      data-testid="tag"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            child 1
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="tag"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            child 2
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="tag"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            child 3
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders with valid flow 1`] = `
+<DocumentFragment>
+  .emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  padding: 8px 12px;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #535353;
+  border-width: 1px;
+  color: #2e2e2e;
+}
+
+.emotion-3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-3:hover:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-3:active:not(:disabled) {
+  border-width: 1px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+<div
+    class="emotion-12"
+  >
+    <div
+      class="emotion-3"
+      data-testid="tag"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            child 1
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="tag"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            child 2
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="tag"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            child 3
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Stack renders with valid stackDistribution 1`] = `
+<DocumentFragment>
+  .emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  padding: 8px 12px;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #535353;
+  border-width: 1px;
+  color: #2e2e2e;
+}
+
+.emotion-3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-3:hover:not(:disabled) {
+  border-width: 2px;
+}
+
+.emotion-3:active:not(:disabled) {
+  border-width: 1px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 <div

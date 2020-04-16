@@ -121,6 +121,34 @@ export default {
         </MainContainer>
       ),
     },
+    {
+      name: 'nested-stacks',
+      type: 'story',
+      component: () => (
+        <MainContainer>
+          <StorybookHeading>Nested Stacks</StorybookHeading>
+          <Container theme={newskitLightTheme}>
+            <Stack
+              flow={Flow.HorizontalCenter}
+              space="sizing020"
+              stackDistribution={StackDistribution.SpaceAround}
+            >
+              <Tag>Item 1</Tag>
+              <Tag>Item 2</Tag>
+              <Tag>Item 3</Tag>
+              <Stack
+                flow={Flow.HorizontalCenter}
+                stackDistribution={StackDistribution.SpaceAround}
+              >
+                <Tag>Nested Item 1</Tag>
+                <Tag>Nested Item 2</Tag>
+                <Tag>Nested Item 3</Tag>
+              </Stack>
+            </Stack>
+          </Container>
+        </MainContainer>
+      ),
+    },
     ...stackSets,
   ],
 };

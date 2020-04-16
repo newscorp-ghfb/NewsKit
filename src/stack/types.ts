@@ -22,6 +22,7 @@ export interface StackProps {
     | 'space-around'
     | 'space-between'
     | 'space-evenly';
+  nested?: boolean;
 }
 
 export interface StyledStackProps {
@@ -46,6 +47,7 @@ export interface StyledStackProps {
     | 'space-around'
     | 'space-between'
     | 'space-evenly';
+  $nested?: boolean;
 }
 
 export interface StyledChildProps
