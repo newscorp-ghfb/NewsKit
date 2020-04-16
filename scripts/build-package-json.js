@@ -25,6 +25,8 @@ async function run() {
     path.join(__dirname, '../dist/package.json'),
     JSON.stringify(packageJson, null, 2),
   );
+
+  delete packageJson.scripts.prepublish;
 }
 
 run();
