@@ -65,6 +65,7 @@ export const Stack: React.FC<StackProps> = ({
   flexGrow = false,
   flexShrink = false,
   flowReverse = false,
+  inline = false,
   children,
   ...props
 }) => {
@@ -78,6 +79,7 @@ export const Stack: React.FC<StackProps> = ({
       $flexShrink={flexShrink}
       $flowReverse={flowReverse}
       $stackDistribution={stackDistribution}
+      $inline={inline}
       {...props}
     >
       {children &&

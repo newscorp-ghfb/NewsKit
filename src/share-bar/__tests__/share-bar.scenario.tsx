@@ -2,66 +2,131 @@ import * as React from 'react';
 
 import {ShareBar} from '..';
 import {StorybookSubHeading} from '../../test/storybook-comps';
-import {Icon} from '../icon';
-import {styled} from '../../utils/style';
+import {Facebook, Twitter} from '../../icons';
+import {Button, IconButton, ButtonSize} from '../../button';
 
-export const name = 'share-bar';
-
-const CustomComponent = () => <div>hello</div>;
-
-const Container = styled.div`
-  max-width: 800px;
-  margin: 0 auto;
-`;
-
-export const component = () => (
-  <Container>
-    <StorybookSubHeading>Share bar with left aligned items</StorybookSubHeading>
-    <ShareBar
-      leftIcons={[{type: 'twitter', href: '/'}, {type: 'facebook', href: '/'}]}
-    />
-
-    <StorybookSubHeading>
-      Share bar with left and right aligned items
-    </StorybookSubHeading>
-    <ShareBar
-      leftIcons={[{type: 'twitter', href: '/'}, {type: 'facebook', href: '/'}]}
-      rightIcons={[
-        {
-          type: 'bookmark',
-          href: '/',
-          $borderEnabled: true,
-        },
-      ]}
-    />
-    <StorybookSubHeading>
-      Share bar with left and right labels
-    </StorybookSubHeading>
-    <ShareBar
-      leftLabel="Share"
-      rightLabel="Save"
-      leftIcons={[{type: 'twitter', href: '/'}, {type: 'facebook', href: '/'}]}
-      rightIcons={[
-        {
-          type: 'bookmark',
-          href: '/',
-          $borderEnabled: true,
-        },
-      ]}
-    />
-    <StorybookSubHeading>Share bar with custom components</StorybookSubHeading>
-    <ShareBar
-      leftLabel="Share"
-      rightLabel="Save"
-      leftIcons={[{type: 'twitter', href: '/'}, <CustomComponent />]}
-      rightIcons={[
-        <Icon type="save" />,
-        {
-          type: 'bookmark',
-          href: '/',
-          $borderEnabled: true,
-        },
-      ]}
-    />
-  </Container>
-);
+export default {
+  name: 'share-bar',
+  children: [
+    {
+      name: 'horizontal',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookSubHeading>
+            Share bar with horizontal items
+          </StorybookSubHeading>
+          <ShareBar>
+            <IconButton
+              $size={ButtonSize.Large}
+              $stylePreset="buttonSocialTwitter"
+            >
+              <Twitter />
+            </IconButton>
+            <IconButton
+              $size={ButtonSize.Large}
+              $stylePreset="buttonSocialFacebook"
+            >
+              <Facebook />
+            </IconButton>
+          </ShareBar>
+          <StorybookSubHeading>
+            Share bar with horizontal items and label
+          </StorybookSubHeading>
+          <ShareBar label="Share">
+            <IconButton
+              $size={ButtonSize.Large}
+              $stylePreset="buttonSocialTwitter"
+            >
+              <Twitter />
+            </IconButton>
+            <IconButton
+              $size={ButtonSize.Large}
+              $stylePreset="buttonSocialFacebook"
+            >
+              <Facebook />
+            </IconButton>
+          </ShareBar>
+          <StorybookSubHeading>
+            Share bar with horizontal items and label
+          </StorybookSubHeading>
+          <ShareBar label="Share">
+            <IconButton
+              $size={ButtonSize.Large}
+              $stylePreset="buttonSocialTwitter"
+            >
+              <Twitter />
+            </IconButton>
+            <IconButton
+              $size={ButtonSize.Large}
+              $stylePreset="buttonSocialFacebook"
+            >
+              <Facebook />
+            </IconButton>
+            <Button>More options</Button>
+          </ShareBar>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'vertical',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookSubHeading>
+            Share bar with vertical items
+          </StorybookSubHeading>
+          <ShareBar vertical>
+            <IconButton
+              $size={ButtonSize.Large}
+              $stylePreset="buttonSocialTwitter"
+            >
+              <Twitter />
+            </IconButton>
+            <IconButton
+              $size={ButtonSize.Large}
+              $stylePreset="buttonSocialFacebook"
+            >
+              <Facebook />
+            </IconButton>
+          </ShareBar>
+          <StorybookSubHeading>
+            Share bar with vertical items and label
+          </StorybookSubHeading>
+          <ShareBar vertical label="Share">
+            <IconButton
+              $size={ButtonSize.Large}
+              $stylePreset="buttonSocialTwitter"
+            >
+              <Twitter />
+            </IconButton>
+            <IconButton
+              $size={ButtonSize.Large}
+              $stylePreset="buttonSocialFacebook"
+            >
+              <Facebook />
+            </IconButton>
+          </ShareBar>
+          <StorybookSubHeading>
+            Share bar with vertical items, label and a button
+          </StorybookSubHeading>
+          <ShareBar vertical label="Share">
+            <IconButton
+              $size={ButtonSize.Large}
+              $stylePreset="buttonSocialTwitter"
+            >
+              <Twitter />
+            </IconButton>
+            <IconButton
+              $size={ButtonSize.Large}
+              $stylePreset="buttonSocialFacebook"
+            >
+              <Facebook />
+            </IconButton>
+            <Button>More options</Button>
+          </ShareBar>
+        </React.Fragment>
+      ),
+    },
+  ],
+};

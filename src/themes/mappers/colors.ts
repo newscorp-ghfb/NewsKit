@@ -34,7 +34,11 @@ export const createThemeColors = (primitives: ColorPrimitives) => ({
   tagDisabledBorder: primitives.disabled,
   tagDisabledText: primitives.inkNonEssential,
 
-  // Share bar
+  // Article
+
+  standfirstText: primitives.inkBase,
+
+  // Share Bar
 
   shareBarBackground: primitives.interface020,
   shareIconFill: primitives.inkSubtle,

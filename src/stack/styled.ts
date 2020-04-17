@@ -84,7 +84,7 @@ const getFlexDirection = ({$flow, $flowReverse}: StyledStackProps) => {
 };
 
 export const StyledMasterContainer = styled('div')<StyledStackProps>`
-  display: flex;
+  display: ${({$inline}) => ($inline ? 'inline-flex' : 'flex')};
   height: ${({$flow}) =>
     [
       Flow.VerticalLeft,

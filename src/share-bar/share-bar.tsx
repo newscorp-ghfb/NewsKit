@@ -1,82 +1,62 @@
 import React from 'react';
-import {Icon, IconProps as Item, shareBarIcons} from './icon';
 
 import {
   styled,
   getSizingFromTheme,
   getTypePresetFromTheme,
-  getColorFromTheme,
 } from '../utils/style';
-import {getMediaQueryFromTheme} from '../utils/responsive-helpers';
-import {getBuiId} from '../utils/get-bui-id';
-import {StyledUl} from '../list';
+import {SizingKeys} from '../themes/newskit-light/spacing';
+import {getStylePresetFromTheme} from '../utils/style-preset';
+import {Stack, Flow} from '../stack';
+import {MarginPresetKeys} from '../themes/mappers/spacing';
 
 export interface ShareBarProps {
-  leftLabel?: string;
-  rightLabel?: string;
-  leftIcons?: (Item | React.ComponentType)[];
-  rightIcons?: (Item | React.ComponentType)[];
+  label?: string;
+  vertical?: boolean;
+  labelStylePreset?: string;
+  labelSpacePreset?: MarginPresetKeys;
+  labelTypePreset?: string;
+  itemSpacePreset?: SizingKeys;
 }
 
-const StyledHeader = styled.span`
-  ${getTypePresetFromTheme('caption010')}
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-right: ${getSizingFromTheme('sizing040')};
+const labelStylePresetDefault = 'shareBarLabel';
+const labelTypePresetDefault = 'shareBarLabel';
+
+const StyledHeader = styled.span<
+  Omit<ShareBarProps, 'itemSpacePreset' | 'vertical'>
+>`
+  ${getStylePresetFromTheme(labelStylePresetDefault, 'labelStylePreset')};
+  ${getTypePresetFromTheme(labelTypePresetDefault, 'labelTypePreset')};
+  margin: ${getSizingFromTheme(undefined, 'labelSpacePreset')};
 `;
 
-const StyledLi = styled.li`
-  list-style-type: none;
-  margin-right: ${getSizingFromTheme('sizing040')};
-`;
+export const ShareBar: React.FC<ShareBarProps> = ({
+  label,
+  vertical,
+  labelSpacePreset = vertical ? 'spaceStack040' : 'spaceInline040',
+  itemSpacePreset = 'sizing020',
+  children,
+  ...props
+}) => {
+  const labelProps: Omit<ShareBarProps, 'itemSpacePreset' | 'vertical'> = {
+    labelSpacePreset,
+    ...props,
+  };
 
-function isValidIcon(item: Item | React.ComponentType): item is Item {
-  const validTypes = Object.keys(shareBarIcons);
-  return validTypes.includes((item as Item).type);
-}
-
-const renderItems = (items: (Item | React.ComponentType)[] = []) =>
-  items.map(item => {
-    if (isValidIcon(item)) {
-      return (
-        <StyledLi key={`${item.type}-${item.href}`}>
-          <Icon {...item} />
-        </StyledLi>
-      );
-    }
-    if (React.isValidElement(item)) {
-      return <StyledLi key={`${getBuiId()}`}>{item}</StyledLi>;
-    }
-    return '';
-  });
-
-const Wrapper = styled.div`
-  width: 100%;
-  background-color: ${getColorFromTheme('shareBarBackground')};
-  padding-top: ${getSizingFromTheme('sizing020')};
-  padding-bottom: ${getSizingFromTheme('sizing020')};
-  padding-left: ${getSizingFromTheme('sizing040')};
-  display: flex;
-  box-sizing: border-box;
-  ${getMediaQueryFromTheme(undefined, 'sm')} {
-    overflow-y: auto;
-    overflow-x: scroll;
-  }
-`;
-
-export const ShareBar = ({
-  leftLabel,
-  rightLabel,
-  leftIcons,
-  rightIcons,
-}: ShareBarProps) => (
-  <Wrapper>
-    {leftLabel && <StyledHeader>{leftLabel}</StyledHeader>}
-    <StyledUl $flexGrow={1}>{renderItems(leftIcons)}</StyledUl>
-    {rightLabel && <StyledHeader>{rightLabel}</StyledHeader>}
-    <StyledUl>{renderItems(rightIcons)}</StyledUl>
-  </Wrapper>
-);
+  return (
+    <Stack
+      inline={vertical}
+      flow={vertical ? Flow.VerticalCenter : Flow.HorizontalCenter}
+    >
+      {label && <StyledHeader {...labelProps}>{label}</StyledHeader>}
+      <Stack
+        flow={vertical ? Flow.VerticalCenter : Flow.HorizontalCenter}
+        space={itemSpacePreset}
+      >
+        {children}
+      </Stack>
+    </Stack>
+  );
+};
 
 ShareBar.displayName = 'ShareBar';

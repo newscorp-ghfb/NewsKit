@@ -1,11 +1,9 @@
 import * as React from 'react';
-import {fireEvent} from '@testing-library/react';
-import {
-  renderToFragmentWithTheme,
-  renderWithTheme,
-} from '../../test/test-utils';
-import {styled} from '../../utils/style';
+import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {ShareBar, ShareBarProps} from '..';
+import {Facebook, Twitter} from '../../icons';
+import {Link} from '../../link';
+import {Button} from '../../button';
 
 describe('ShareBar', () => {
   test('renders with no icons and labels', () => {
@@ -13,155 +11,176 @@ describe('ShareBar', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders with left icons', () => {
+  test('renders horizontally with twitter and facebook icons', () => {
     const fragment = renderToFragmentWithTheme(ShareBar, {
-      leftIcons: [{type: 'twitter'}, {type: 'facebook'}],
-    } as ShareBarProps);
-
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders with left and right icons', () => {
-    const fragment = renderToFragmentWithTheme(ShareBar, {
-      leftIcons: [{type: 'twitter'}, {type: 'facebook'}],
-      rightIcons: [{type: 'twitter'}, {type: 'facebook'}],
-    } as ShareBarProps);
-
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders with left and right labels', () => {
-    const fragment = renderToFragmentWithTheme(ShareBar, {
-      leftLabel: 'Test',
-      rightLabel: 'TestRight',
-      leftIcons: [{type: 'twitter'}, {type: 'facebook'}],
-      rightIcons: [{type: 'twitter'}, {type: 'facebook'}],
-    } as ShareBarProps);
-
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders with custom components', () => {
-    const CustomStyledComponent = styled.div``;
-    /* eslint-disable react/prefer-stateless-function */
-    class CustomClassComponent extends React.Component {
-      render() {
-        const {children} = this.props;
-        return <div>{children}</div>;
-      }
-    }
-
-    const CustomFC: React.FC = ({children}) => <div>{children}</div>;
-
-    const fragment = renderToFragmentWithTheme(ShareBar, {
-      leftLabel: 'Test',
-      rightLabel: 'TestRight',
-      leftIcons: [
-        {type: 'twitter', href: '/'},
-        <CustomStyledComponent>Styled Component</CustomStyledComponent>,
-        <CustomClassComponent>Class Component</CustomClassComponent>,
-        <CustomFC>Functional Component</CustomFC>,
+      children: [
+        <Facebook $size="iconSize040" />,
+        <Twitter $size="iconSize040" />,
       ],
-      rightIcons: [{type: 'facebook', href: '/'}],
     } as ShareBarProps);
 
     expect(fragment).toMatchSnapshot();
   });
 
-  test('does not render invalid elements', () => {
-    const stringEl = 'invalid element';
-    const objectEl = {el: 'invalid element'};
-    const arrayEl = ['invalid element'];
-    const numberEl = 0;
-    const functionEl = function anon() {};
-
-    const ShareBarAny: any = ShareBar;
-
-    const fragment = renderToFragmentWithTheme(ShareBarAny, {
-      leftLabel: 'Test',
-      rightLabel: 'TestRight',
-      leftIcons: [
-        {type: 'twitter', href: '/'},
-        {type: 'adfsgnbtrfeadwcevsbdrvseaw'},
-        {stringEl},
-        {objectEl},
-        {arrayEl},
-        {numberEl},
-        {functionEl},
-      ],
-      rightIcons: [{type: 'facebook', href: '/'}],
-    } as ShareBarProps);
-
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('href renders as an anchor', () => {
+  test('renders vertically with twitter and facebook icons', () => {
     const fragment = renderToFragmentWithTheme(ShareBar, {
-      leftIcons: [{type: 'twitter', href: '/'}, {type: 'facebook', href: '/'}],
-      rightIcons: [{type: 'save', href: '/'}],
-    } as ShareBarProps);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders with a border', () => {
-    const fragment = renderToFragmentWithTheme(ShareBar, {
-      leftIcons: [
-        {type: 'twitter', href: '/', $borderEnabled: true},
-        {type: 'facebook', href: '/', $borderEnabled: true},
+      children: [
+        <Facebook $size="iconSize040" />,
+        <Twitter $size="iconSize040" />,
       ],
-      rightIcons: [{type: 'save', href: '/', $borderEnabled: true}],
+      vertical: true,
     } as ShareBarProps);
+
     expect(fragment).toMatchSnapshot();
   });
 
-  test('onClick handler is fired', () => {
-    const onClick = jest.fn();
+  test('renders horizontally with icons and label', () => {
+    const fragment = renderToFragmentWithTheme(ShareBar, {
+      children: [
+        <Facebook $size="iconSize040" />,
+        <Twitter $size="iconSize040" />,
+      ],
+      label: 'Share',
+    } as ShareBarProps);
 
-    const {getByTestId} = renderWithTheme(ShareBar, {
-      leftIcons: [{type: 'twitter', href: '/', onClick}],
-    } as ShareBarProps) as any;
-
-    const element = getByTestId('share-bar-icon');
-
-    fireEvent.click(element, {});
-    expect(onClick).toHaveBeenCalled();
+    expect(fragment).toMatchSnapshot();
   });
 
-  test('onClick handler is fired when enter is pressed', () => {
-    const onClick = jest.fn();
+  test('renders vertically with icons and label', () => {
+    const fragment = renderToFragmentWithTheme(ShareBar, {
+      children: [
+        <Facebook $size="iconSize040" />,
+        <Twitter $size="iconSize040" />,
+      ],
+      label: 'Share',
+      vertical: true,
+    } as ShareBarProps);
 
-    const {getByTestId} = renderWithTheme(ShareBar, {
-      leftIcons: [{type: 'twitter', href: '/', onClick}],
-    } as ShareBarProps) as any;
-
-    const element = getByTestId('share-bar-icon');
-
-    fireEvent.focus(element);
-
-    fireEvent.keyDown(element, {
-      key: 'Enter',
-      keyCode: 13,
-    });
-
-    expect(onClick).toBeCalled();
+    expect(fragment).toMatchSnapshot();
   });
 
-  test('onClick handler is not fired when a different key than enter is pressed', () => {
-    const onClick = jest.fn();
+  test('renders horizontally with icons as links and label', () => {
+    const fragment = renderToFragmentWithTheme(ShareBar, {
+      children: [
+        <Link href="/">
+          <Facebook $size="iconSize040" />
+        </Link>,
+        <Link href="/">
+          <Twitter $size="iconSize040" />
+        </Link>,
+      ],
+      label: 'Share',
+    } as ShareBarProps);
 
-    const {getByTestId} = renderWithTheme(ShareBar, {
-      leftIcons: [{type: 'twitter', href: '/', onClick}],
-    } as ShareBarProps) as any;
+    expect(fragment).toMatchSnapshot();
+  });
 
-    const element = getByTestId('share-bar-icon');
+  test('renders whatever components are passed to it', () => {
+    const fragment = renderToFragmentWithTheme(ShareBar, {
+      children: [
+        <Link href="/">
+          <Facebook $size="iconSize040" />
+        </Link>,
+        <Link href="/">
+          <Twitter $size="iconSize040" />
+        </Link>,
+        <Button>more options</Button>,
+      ],
+      label: 'Share',
+    } as ShareBarProps);
 
-    fireEvent.focus(element);
+    expect(fragment).toMatchSnapshot();
+  });
 
-    fireEvent.keyDown(element, {
-      key: 'A',
-      keyCode: 65,
-    });
+  test('renders with custom stack spacing', () => {
+    const fragment = renderToFragmentWithTheme(ShareBar, {
+      children: [
+        <Link href="/">
+          <Facebook $size="iconSize040" />
+        </Link>,
+        <Link href="/">
+          <Twitter $size="iconSize040" />
+        </Link>,
+        <Button>more options</Button>,
+      ],
+      label: 'Share',
+      itemSpacePreset: 'sizing040',
+    } as ShareBarProps);
 
-    expect(onClick).not.toBeCalled();
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with custom label stylePreset', () => {
+    const fragment = renderToFragmentWithTheme(ShareBar, {
+      children: [
+        <Link href="/">
+          <Facebook $size="iconSize040" />
+        </Link>,
+        <Link href="/">
+          <Twitter $size="iconSize040" />
+        </Link>,
+        <Button>more options</Button>,
+      ],
+      label: 'Share',
+      labelStylePreset: 'buttonSolidPrimary',
+    } as ShareBarProps);
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with horizontally custom label spacing', () => {
+    const fragment = renderToFragmentWithTheme(ShareBar, {
+      children: [
+        <Link href="/">
+          <Facebook $size="iconSize040" />
+        </Link>,
+        <Link href="/">
+          <Twitter $size="iconSize040" />
+        </Link>,
+        <Button>more options</Button>,
+      ],
+      label: 'Share',
+      labelSpacePreset: 'spaceInline060',
+    } as ShareBarProps);
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with vertically custom label spacing', () => {
+    const fragment = renderToFragmentWithTheme(ShareBar, {
+      children: [
+        <Link href="/">
+          <Facebook $size="iconSize040" />
+        </Link>,
+        <Link href="/">
+          <Twitter $size="iconSize040" />
+        </Link>,
+        <Button>more options</Button>,
+      ],
+      label: 'Share',
+      vertical: true,
+      labelSpacePreset: 'spaceStack060',
+    } as ShareBarProps);
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with custom label typePreset', () => {
+    const fragment = renderToFragmentWithTheme(ShareBar, {
+      children: [
+        <Link href="/">
+          <Facebook $size="iconSize040" />
+        </Link>,
+        <Link href="/">
+          <Twitter $size="iconSize040" />
+        </Link>,
+        <Button>more options</Button>,
+      ],
+      label: 'Share',
+      vertical: true,
+      labelTypePreset: 'tag020',
+    } as ShareBarProps);
+
+    expect(fragment).toMatchSnapshot();
   });
 });

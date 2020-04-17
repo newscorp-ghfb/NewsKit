@@ -2,8 +2,9 @@ import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import Prop from '../../components/prop';
 import {LegacyBlock} from '../../components/legacy-block';
-
+import {Twitter, Facebook} from 'newskit/icons';
 import {ShareBar} from 'newskit/share-bar';
+import {IconButton, ButtonSize} from 'newskit/button';
 
 export default Layout;
 
@@ -20,17 +21,23 @@ A share bar can be used anywhere a user would like to easily share something wit
 ## Props
 
 <LegacyBlock $marginTop="sizing040">
-  <Prop name="leftIcons" type="array">
-    An array of social items that start from the left.
+  <Prop name="label" type="string">
+    If provided with text, adds a label and populates it with the string.
   </Prop>
-  <Prop name="rightIcons" type="array">
-    An array of social items that start from the right.
+  <Prop name="vertical" type="boolean" defaut="false">
+    If provided, changes the orientation of the share bar to vertical.
   </Prop>
-  <Prop name="leftLabel" type="string">
-    A label to appear before the left items.
+  <Prop name="labelStylePreset" type="string" default="shareBarLabel">
+    If provided, overwrites the style preset for the label.
   </Prop>
-  <Prop name="rightLabel" type="string">
-    A label to appear before the right items.
+  <Prop name="labelSpacePreset" type="MarginPresetKeys" default="spaceInline040">
+    If provided, overwrites the spacing preset for the label.
+  </Prop>
+  <Prop name="labelTypePreset" type="string" default="shareBarLabel">
+    If provided, overwrites the type preset for the label.
+  </Prop>
+  <Prop name="itemSpacePreset" type="MarginPresetKeys" default="sizing020">
+    If provided, overwrites the spacing preset for the stack.
   </Prop>
 </LegacyBlock>
 
@@ -39,52 +46,88 @@ A share bar can be used anywhere a user would like to easily share something wit
 <Playground
   componentName="ShareBar"
   newskitPath="/share-bar"
-  component={ShareBar}
+  component={state => (
+    <ShareBar {...state}>
+      <IconButton $size={ButtonSize.Large} $stylePreset="buttonSocialTwitter">
+              <Twitter/>
+            </IconButton>
+            <IconButton $size={ButtonSize.Large} $stylePreset="buttonSocialFacebook">
+              <Facebook />
+            </IconButton>
+    </ShareBar>
+  )}
   knobs={[
     {
-      name: 'Left Label',
-      propName: 'leftLabel',
-      value: 'Social',
+      name: 'Label',
+      propName: 'label',
+      value: '',
     },
     {
-      name: 'Right Label',
-      propName: 'rightLabel',
-      value: 'Social',
+      name: 'Vertical',
+      propName: 'vertical',
+      value: false,
     },
     {
-      name: 'Left Items',
-      propName: 'leftIcons',
-      value: [
+      name: 'Label stylePreset',
+      propName: 'labelStylePreset',
+      options: [
         {
-          type: 'twitter',
-          $borderEnabled: '',
-          href: '/components/share-bar',
+          label: 'default',
+          isDefault: true,
+          value: undefined,
         },
         {
-          type: 'facebook',
-          $borderEnabled: '',
-          href: '/components/share-bar',
-        },
-        {
-          type: 'whatsApp',
-          $borderEnabled: '',
-          href: '/components/share-bar',
+          label: 'buttonOutlinedPrimary',
+          value: 'buttonOutlinedPrimary',
         },
       ],
     },
     {
-      name: 'Right Items',
-      propName: 'rightIcons',
-      value: [
+      name: 'Label spacePreset',
+      propName: 'labelSpacePreset',
+      options: [
         {
-          type: 'comment',
-          $borderEnabled: true,
-          href: '/components/share-bar',
+          label: 'default',
+          isDefault: true,
+          value: undefined,
+        },
+         {
+          label: 'spaceInline060',
+          value: 'spaceInline060',
+        },
+         {
+          label: 'spaceStack060',
+          value: 'spaceStack060',
+        },
+      ],
+    },
+    {
+      name: 'Label typePreset',
+      propName: 'labelTypePreset',
+      options: [
+        {
+          label: 'default',
+          isDefault: true,
+          value: undefined,
         },
         {
-          type: 'bookmark',
-          $borderEnabled: true,
-          href: '/components/share-bar',
+          label: 'subhead050',
+          value: 'subhead050',
+        },
+      ],
+    },
+    {
+      name: 'Item spacePreset',
+      propName: 'itemSpacePreset',
+      options: [
+        {
+          label: 'default',
+          isDefault: true,
+          value: undefined,
+        },
+        {
+          label: 'sizing060',
+          value: 'sizing060',
         },
       ],
     },

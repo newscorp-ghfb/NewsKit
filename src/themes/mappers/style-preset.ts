@@ -133,6 +133,32 @@ export const createStylePresets = ({
       color: colorPrimitives.inkInverse,
     },
   };
+  const iconButtonMinimalSecondary: StylePresetStates = {
+    base: {
+      backgroundColor: colorPrimitives.transparent,
+      color: colorPrimitives.inkBrand010,
+      iconColor: colorPrimitives.inkBrand010,
+      borderRadius: borderRadiusPrimitives.borderRadiusCircle,
+    },
+    hover: {
+      backgroundColor: colorPrimitives.interactive110,
+    },
+    active: {
+      backgroundColor: colorPrimitives.interactive120,
+    },
+    current: {
+      backgroundColor: colorPrimitives.transparent,
+    },
+    disabled: {
+      backgroundColor: colorPrimitives.transparent,
+      color: colorPrimitives.inkNonEssential,
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+    loading: {
+      backgroundColor: colorPrimitives.interactive120,
+      color: colorPrimitives.inkInverse,
+    },
+  };
   const audioPlayerThumb: StylePresetStates = {
     base: {
       backgroundColor: colorPrimitives.interfaceBrand010,
@@ -241,6 +267,12 @@ export const createStylePresets = ({
         color: colorPrimitives.inkInverse,
       },
     } as StylePresetStates,
+    buttonSocialTwitter: iconButtonMinimalSecondary,
+    buttonSocialFacebook: iconButtonMinimalSecondary,
+    buttonSocialEmail: iconButtonMinimalSecondary,
+    buttonSocialWhatsapp: iconButtonMinimalSecondary,
+    buttonSocialLink: iconButtonMinimalSecondary,
+    buttonSocialShare: iconButtonMinimalSecondary,
     tagPrimary: {
       base: {
         backgroundColor: colorPrimitives.transparent,
@@ -338,6 +370,7 @@ export const createStylePresets = ({
     iconButtonSolidPrimary,
     iconButtonOutlinedPrimary,
     iconButtonMinimalPrimary,
+    iconButtonMinimalSecondary,
     audioPlayerSeekBarIndicator,
     audioPlayerThumb,
     audioPlayerLabels,
@@ -410,6 +443,11 @@ export const createStylePresets = ({
       loading: {
         backgroundColor: colorPrimitives.skeleton010,
         iconColor: colorPrimitives.inkNonEssential,
+      },
+    } as StylePresetStates,
+    shareBarLabel: {
+      base: {
+        color: colorPrimitives.inkBase,
       },
     } as StylePresetStates,
     articleStandfirst: {

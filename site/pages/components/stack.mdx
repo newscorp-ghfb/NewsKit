@@ -26,6 +26,9 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
   >
     If provided, defines the flow direction of the stack contents.
   </Prop>
+  <Prop name="inline" type="boolean">
+    If provided, changes the `display` to inline-flex.
+  </Prop>
   <Prop
     name="stackDistribution"
     type="StackDistribution"
@@ -41,6 +44,7 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
   <Prop name="wrap" type="wrap | nowrap">
     If provided, defines if the content of the stack wraps.
   </Prop>
+
 </LegacyBlock>
 
 ## Playground
@@ -83,6 +87,12 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
           value: flow,
           isDefault: !i,
         })))(),
+    },
+      {
+      name: 'Inline',
+      propName: 'inline',
+      type: 'boolean',
+      value: false,
     },
     {
       name: 'Stack Distribution',

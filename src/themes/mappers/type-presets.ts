@@ -323,12 +323,15 @@ export const createTypePresets = (p: FontPrimitives) => {
   return {
     ...baseTypePresets,
 
-    standfirst100: baseTypePresets.subhead030,
-    standfirst200: baseTypePresets.subhead030,
-
+    // Headline
     headline100: baseTypePresets.heading050,
     headline200: baseTypePresets.heading050,
 
+    // Share Bar
+
+    shareBarLabel: baseTypePresets.label020,
+
+    // Article Standfirst
     articleStandfirst: {
       ...baseTypePresets.subhead010,
       ...getFontProps(
