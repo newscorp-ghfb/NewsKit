@@ -13,12 +13,12 @@ import {
   IconSize,
   iconSizes,
 } from './newskit-light/spacing';
-import {TypePresets, createTypePresets} from './mappers/type-presets';
 import {Borders, createBorders} from './mappers/borders';
 import {BorderRadius, createBorderRadius} from './mappers/border-radius';
 import {Shadow, shadowPrimitives} from './newskit-light/shadow';
 import {Overlay, overlayPrimitives} from './newskit-light/overlay';
 import {createStylePresets, StylePresets} from './mappers/style-preset';
+import {createTypePresets, TypePresets} from './mappers/type-presets';
 import {
   createPaddingPresets,
   PaddingPreset,

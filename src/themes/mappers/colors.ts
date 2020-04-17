@@ -44,10 +44,6 @@ export const createThemeColors = (primitives: ColorPrimitives) => ({
   shareIconHoverFill: primitives.inkBrand010,
   shareIconHoverBorder: primitives.inkBrand010,
   shareIconHoverBackground: primitives.interface020,
-
-  // Article
-
-  standfirstText: primitives.inkBase,
 });
 
 export type ColorKeys = keyof Colors;

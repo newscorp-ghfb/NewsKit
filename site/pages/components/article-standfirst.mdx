@@ -1,6 +1,7 @@
 import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
+import {LegacyBlock} from '../../components/legacy-block';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 
 import {ArticleStandfirst} from 'newskit';
@@ -11,23 +12,28 @@ export default Layout;
 
 ## Overview
 
-The standfirst component is a simple, styled text paragraph used at the top of the article content. A standfirst is a brief introductory summary of an article, typically appearing immediately after the headline and typographically distinct from the rest of the article.
+Article Standfirst is an introductory paragraph in an article, which summarises the article content. It is often in larger or bolder type than regular paragraph text and is positioned at the top of the article content under the article headline. This is to attract the user’s attention to read more of the article.
 
 ### Usage
 
 No special requirements.
 
-### Theming
-
-The default tag component uses the following style tokens, which can be overridden:
-
-| Theme Token       | Color Primitive |  Color Value                                          |
-| ----------------- | --------------- | -------------------------------------------- |
-| standfirstText    | inkSubtle          | <TextBoxSwatch themeColor="inkSubtle"/>         |
 
 ## Props
 
-The standfirst component provides no props for customisation.
+The standfirst component provides the following props for customisation.
+<LegacyBlock marginTop="sizing040">
+  <Prop name="stylePreset" type="string" default="articleStandfirst">
+    Set the style presets of the button.
+  </Prop>
+   <Prop name="typePreset" type="string" default="articleStandfirst">
+    Set the style presets of the button.
+  </Prop>
+  <Prop name="as" type="'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span'">
+    This is a string name with one of the following html elements: h1, h2, h3, h4, h5, h6 or span, that the standfirst can be converted to.
+    Article Standfirst defaults as a h2 element, but it can be converted to another heading element or span by `as="span"` prop.
+  </Prop>
+</LegacyBlock>
 
 ## Playground
 
@@ -40,7 +46,29 @@ The standfirst component provides no props for customisation.
       name: 'Content',
       propName: 'children',
       value: 'ArticleStandfirst Content',
-    }
+    },
+    {
+      name: 'Style Preset',
+      propName: 'stylePreset',
+      options: [
+        {
+          label: 'articleStandfirst',
+          value: 'articleStandfirst',
+          isDefault: true,
+        },
+      ],
+    },
+        {
+      name: 'Type Preset',
+      propName: 'typePreset',
+      options: [
+        {
+          label: 'articleStandfirst',
+          value: 'articleStandfirst',
+          isDefault: true,
+        },
+      ],
+    },
   ]}
 />
 

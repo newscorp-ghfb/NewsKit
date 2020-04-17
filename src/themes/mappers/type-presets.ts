@@ -1,45 +1,10 @@
 import {FontWeightProperty as FontWeight} from 'csstype';
-import {
-  fontPrimitives,
-  FontPrimitives,
-  FontConfig,
-} from '../newskit-light/fonts';
+import {fontPrimitives, FontPrimitives} from '../newskit-light/fonts';
 import {getFontSizing} from '../../utils/font-sizing';
-import {textCrop} from '../../utils/text-crop';
+import {getFontProps} from '../../utils/get-font-props';
 
 const getFontWithFallback = (font: string, fallback: string) =>
   font === fallback ? font : `${font}, ${fallback}`;
-
-export const getFontProps = (
-  fontSize: string,
-  lineHeight: number,
-  fontFamily: FontConfig,
-) => {
-  const base = getFontSizing(fontSize, lineHeight);
-
-  const {
-    cropConfig: fontCropConfig,
-    cropAdjustments: fontCropAdjustments,
-  } = fontFamily;
-  const adjustment = fontCropAdjustments && fontCropAdjustments[fontSize];
-
-  const cropData = {
-    lineHeight: base.lineHeight,
-    topCrop: fontCropConfig ? fontCropConfig.top : 0,
-    bottomCrop: fontCropConfig ? fontCropConfig.bottom : 0,
-    topAdjustment: adjustment ? adjustment.top : 0,
-    bottomAdjustment: adjustment ? adjustment.bottom : 0,
-    cropFontSize: fontCropConfig && fontCropConfig.fontSize,
-    cropLineHeight: fontCropConfig && fontCropConfig.lineHeight,
-  };
-
-  const croppedTextProps = textCrop(cropData);
-
-  return {
-    ...base,
-    ...croppedTextProps,
-  };
-};
 
 const getBaseTypePresets = (p: FontPrimitives) => {
   const fontFamily1 = getFontWithFallback(
@@ -301,26 +266,46 @@ const getBaseTypePresets = (p: FontPrimitives) => {
 
     flag010: {
       ...label010,
-      ...getFontProps(p.fontSize010, p.fontLineHeight040, p.fontFamily2),
+      ...getFontProps(
+        label010.fontSize,
+        label010.lineHeight,
+        label010.fontFamily,
+      ),
     },
     flag020: {
       ...label020,
-      ...getFontProps(p.fontSize020, p.fontLineHeight040, p.fontFamily2),
+      ...getFontProps(
+        label020.fontSize,
+        label020.lineHeight,
+        label020.fontFamily,
+      ),
     },
 
     // Tag
 
     tag010: {
       ...label010,
-      ...getFontProps(p.fontSize010, p.fontLineHeight040, p.fontFamily2),
+      ...getFontProps(
+        label010.fontSize,
+        label010.lineHeight,
+        label010.fontFamily,
+      ),
     },
     tag020: {
       ...label020,
-      ...getFontProps(p.fontSize020, p.fontLineHeight040, p.fontFamily2),
+      ...getFontProps(
+        label020.fontSize,
+        label020.lineHeight,
+        label020.fontFamily,
+      ),
     },
     tag030: {
       ...label030,
-      ...getFontProps(p.fontSize030, p.fontLineHeight040, p.fontFamily2),
+      ...getFontProps(
+        label030.fontSize,
+        label030.lineHeight,
+        label030.fontFamily,
+      ),
     },
 
     font500: {
@@ -343,6 +328,15 @@ export const createTypePresets = (p: FontPrimitives) => {
 
     headline100: baseTypePresets.heading050,
     headline200: baseTypePresets.heading050,
+
+    articleStandfirst: {
+      ...baseTypePresets.subhead010,
+      ...getFontProps(
+        baseTypePresets.subhead010.fontSize,
+        baseTypePresets.subhead010.lineHeight,
+        baseTypePresets.subhead010.fontFamily,
+      ),
+    },
 
     dropCap: {
       fontSize: '5.34em',

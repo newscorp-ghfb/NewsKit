@@ -24,7 +24,7 @@ export const theSunTheme = createTheme('the-sun-theme', {
       fontFamily: 'TheSun-HeavyNarrow, TheSun',
     },
   },
-  themeOverrider: ({colors, fonts}) => ({
+  themeOverrider: ({colors}) => ({
     colors: {
       linkText: colors.inkSubtle,
       linkActive: colors.inkSubtle,
@@ -33,12 +33,6 @@ export const theSunTheme = createTheme('the-sun-theme', {
 
       tagBorder: colors.inkSubtle,
       tagHoverBorder: colors.inkSubtle,
-      standfirstText: colors.inkBase,
     } as Theme['colors'],
-    typePresets: {
-      standfirst200: {
-        fontSize: fonts.fontSize060,
-      },
-    } as Theme['typePresets'],
   }),
 });

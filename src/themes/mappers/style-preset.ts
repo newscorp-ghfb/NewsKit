@@ -412,6 +412,11 @@ export const createStylePresets = ({
         iconColor: colorPrimitives.inkNonEssential,
       },
     } as StylePresetStates,
+    articleStandfirst: {
+      base: {
+        color: colorPrimitives.inkBase,
+      },
+    } as StylePresetStates,
   };
 };
 

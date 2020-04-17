@@ -42,8 +42,6 @@ export const theTimesTheme = createTheme('the-times-theme', {
       linkActive: colors.inkLink,
       linkHover: colors.inkLink,
       linkVisited: colors.inkLink,
-
-      standfirstText: colors.inkSubtle,
     } as Theme['colors'],
   }),
 });

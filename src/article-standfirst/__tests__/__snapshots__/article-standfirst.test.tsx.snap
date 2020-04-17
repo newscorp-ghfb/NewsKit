@@ -1,45 +1,187 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ArticleStandfirst renders with default styles 1`] = `
+exports[`ArticleStandfirst renders as h4 html tag 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-  font-weight: 700;
-  -webkit-letter-spacing: -0.5px;
-  -moz-letter-spacing: -0.5px;
-  -ms-letter-spacing: -0.5px;
-  letter-spacing: -0.5px;
-  color: #0a0a0a;
-  margin: 0 0 12px 0;
   color: #2e2e2e;
   font-family: "Noto Sans",sans-serif;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
+  font-size: 16px;
+  line-height: 1.25;
   font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  padding: 1px 0;
 }
 
-@media screen and (min-width:960px) {
-  .emotion-0 {
-    font-family: "Noto Sans",sans-serif;
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-    font-weight: 400;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.275em;
 }
 
-<h3
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3375em;
+}
+
+<h4
     class="emotion-0"
-    itemprop="description"
+  />
+</DocumentFragment>
+`;
+
+exports[`ArticleStandfirst renders as span html tag 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  color: #2e2e2e;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 1px 0;
+  display: inline-block;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.275em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3375em;
+}
+
+<span
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`ArticleStandfirst renders with custom style preset 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  color: #b1dbd0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 1px 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.275em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3375em;
+}
+
+<h2
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`ArticleStandfirst renders with custom type preset 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  color: #2e2e2e;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 1px 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.21250000000000002em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.275em;
+}
+
+<h2
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`ArticleStandfirst renders with default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  color: #2e2e2e;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 1px 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.275em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3375em;
+}
+
+<h2
+    class="emotion-0"
   />
 </DocumentFragment>
 `;

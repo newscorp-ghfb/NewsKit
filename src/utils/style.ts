@@ -10,11 +10,7 @@ import {
   FontPrimitivesKeys,
   BreakpointKeys,
 } from '../themes';
-import {
-  FontSizeKeys,
-  LineHeightKeys,
-  FontConfig,
-} from '../themes/newskit-light/fonts';
+import {FontSizeKeys, LineHeightKeys} from '../themes/newskit-light/fonts';
 import {getFontSizing} from './font-sizing';
 import {GridKeys} from '../themes/newskit-light/grid';
 import {ShadowKeys} from '../themes/newskit-light/shadow';
@@ -23,6 +19,7 @@ import {MarginPresetKeys, PaddingPresetKeys} from '../themes/mappers/spacing';
 import {BorderRadiusKeys} from '../themes/mappers/border-radius';
 import {getMediaQuery, isResponsive} from './responsive-helpers';
 import {filterObject} from './filter-object';
+import {isFontConfigObject} from './guards';
 
 export {CSSObject} from '@emotion/core';
 
@@ -133,13 +130,6 @@ export const getFontsFromTheme = <Props extends ThemeProp>(
   const section = props.theme.fonts;
   const propKeys = (customProp && props[customProp]) || defaultToken;
   const style = section[propKeys as FontPrimitivesKeys];
-
-  const isFontConfigObject = (
-    object: FontConfig | string | number,
-  ): object is FontConfig =>
-    typeof object !== 'number' &&
-    typeof object !== 'string' &&
-    'fontFamily' in object;
 
   if (style && isFontConfigObject(style)) {
     return style.fontFamily;
