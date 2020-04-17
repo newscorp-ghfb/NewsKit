@@ -1,4 +1,4 @@
-# Contributing to Design System Site
+# Contributing to NewsKit
 
 ## Definition of done
 
@@ -14,15 +14,11 @@
 
 ## Running the project
 
-Once you have installed the packages via yarn, you can start the documentation site, which will contain all the available components, by running `yarn build && yarn dev:docs`
+Once you have installed the packages via yarn, to start the documentation site and storybook in watch modes, run `yarn dev`.
 
 The documentation site will run on <http://localhost:8081/>
 
-Alternatively, you can also start storybook by running `yarn dev:storybook`
-
-This will load the storybook server on <http://localhost:6006/>
-
-To start the documentation site and storybook in watch modes, run `yarn dev`.
+The storybook will run on <http://localhost:6006/>
 
 ## Branch Naming Convention
 
@@ -51,6 +47,13 @@ This does not apply to long-lived branches, such as master, development, release
 [optional footer]
 ```
 
+Examples:
+
+* feat(NUK-001): create the login screen ui
+* docs(NUK-002): update the CODEOWNERS file to reflect the tech reset structure
+* fix(NUK-003)!: the digital publishing process by changing from Methode to WordPress
+* chore(NUK-004): add test reporting to the build pipeline
+
 We are following the specification for our commit message format, with the following exceptions:
 
 The __type__ field MUST be one of the following (must be lower-case):
@@ -73,16 +76,6 @@ The __description__ field SHOULD follow the tense of "Applying this patch will _
 * Good - feat(...): add the ability to segment users in the MVT tool Bad - doc(...): deleted the reference to Chromebooks in the getting started guide
 
 The desciption, body, and footer SHOULD be in lower case, except where acronyms, proper nouns, and references to filenames are used. Single sentences SHOULD NOT end in punctuation, but punctuation SHOULD be used for multiple sentences on a single line.
-
-Examples:
-
-* feat(NUK-001): create the login screen ui
-* docs(NUK-002): update the CODEOWNERS file to reflect the tech reset structure
-* fix(NUK-003)!: the digital publishing process by changing from Methode to WordPress
-* BREAKING CHANGE: this will require everyone in editorial to have access to the new system
-* chore(NUK-004): add test reporting to the build pipeline
-* test coverage is now output in a standard format that is displayed by CircleCI
-* closes NUK-004
 
 ## Rewriting History
 
@@ -138,4 +131,4 @@ Should be squash merged to keep history on develop branch clean.
 
 ## Merging develop to master
 
-Merges to master is done as a part of the release process
+Merge to master is done as a part of the release process, should be a merge commit to preserve history.
