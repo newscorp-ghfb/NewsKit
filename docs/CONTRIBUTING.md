@@ -27,7 +27,7 @@ To contribute to our repository, please branch off from `develop`.
 Each feature branch SHOULD be named in the following format:
 `<type>/<scope>-<description>`
 
-Where __type__ follows the same conventions as the commit messages.
+Where __type__ follows the same conventions as the commit messages (fix, feat, chore, docs,style, refactor, perf, or test).
 
 The __scope__ field is the (upper case) Jira ticket number for the task being completed.
 
@@ -53,6 +53,7 @@ Examples:
 * docs(NUK-002): update the CODEOWNERS file to reflect the tech reset structure
 * fix(NUK-003)!: the digital publishing process by changing from Methode to WordPress
 * chore(NUK-004): add test reporting to the build pipeline
+* feat(NUK-005): BREAKING CHANGE this will require everyone in editorial to have access to the new system
 
 We are following the specification for our commit message format, with the following exceptions:
 
@@ -73,13 +74,14 @@ The __description__ field SHOULD follow the tense of "Applying this patch will _
 
 * Good - fix(...): the array parsing issue when multiple spaces were contained in string
 * Bad - fix(...): changed the multiple spaces parsing to get rid of the exception had a parsing issue
-* Good - feat(...): add the ability to segment users in the MVT tool Bad - doc(...): deleted the reference to Chromebooks in the getting started guide
+* Good - feat(...): add the ability to segment users in the MVT tool
+* Bad - doc(...): deleted the reference to Chromebooks in the getting started guide
 
 The desciption, body, and footer SHOULD be in lower case, except where acronyms, proper nouns, and references to filenames are used. Single sentences SHOULD NOT end in punctuation, but punctuation SHOULD be used for multiple sentences on a single line.
 
 ## Rewriting History
 
-Should be avoided where possible, especially once a PR is open and being reviewed.
+SHOULD be avoided where possible, especially once a PR is open and being reviewed.
 
 * It makes it hard to reason about change in PRs.
 
@@ -93,15 +95,15 @@ Should be avoided where possible, especially once a PR is open and being reviewe
 
 PRs to be titled as per the RFC: `<type>(<scope>): <description>` e.g. `feat(NUK-001): Created the Login Screen UI`
 
-We have a pull request template in our repo this should be filled out to the best of your ability to clearly indicate to the reviewer what has changed.
+We have a pull request template in our repo this SHOULD be filled out to the best of your ability to clearly indicate to the reviewer what has changed.
 
-The PR body should include a link to the corresponding JIRA ticket.
+The PR body SHOULD include a link to the corresponding JIRA ticket.
 
 For more information about best practices when writing your PR, please visit [Pull Request](https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/1319370846/Pull+Request) on our Confluence page.
 
 ### Conducting a code review
 
-Issues raised on a PR should only be marked as resolved by the person who raised them.
+Issues raised on a PR SHOULD only be marked as resolved by the person who raised them.
 
 Try to not to leave excess comments, if an issue is in lots of places call that out in a single message.
 
@@ -113,13 +115,13 @@ Use Slack channel to notify that it’s ready for rereview.
 
 ### Merging a PR
 
-PR’s should be merged by the owner of that ticket/work. If you believe a PR is ready to merge, let the owner know so that they can merge it - the owner may know of a reason not to merge it at that time.
+PR’s SHOULD be merged by the owner of that ticket/work. If you believe a PR is ready to merge, let the owner know so that they can merge it - the owner may know of a reason not to merge it at that time.
 
-PR owner should be responsible for bringing in latest develop changes into their branch unless ready for merge tag is present.
+PR owner SHOULD be responsible for bringing in latest develop changes into their branch unless ready for merge tag is present.
 
-PR owner should be responsible for running Aplitools changes unless ready for merge tag is present.
+PR owner SHOULD be responsible for running Aplitools changes unless ready for merge tag is present.
 
-Only the owner should close their PR, unless the PR is not inline with the specification outlined in this document.
+Only the owner SHOULD close their PR, unless the PR is not inline with the specification outlined in this document.
 
 ### Use labels to indicate state of PR
 
@@ -127,8 +129,8 @@ This will better allow the team to prioritise what to look at. [View here](https
 
 ## Merging to develop
 
-Should be squash merged to keep history on develop branch clean.
+SHOULD be squash merged to keep history on develop branch clean.
 
 ## Merging develop to master
 
-Merge to master is done as a part of the release process, should be a merge commit to preserve history.
+Merge to master is done as a part of the release process, and SHOULD be a merge commit to preserve history.
