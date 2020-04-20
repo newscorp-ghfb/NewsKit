@@ -1,5 +1,13 @@
 version: 2.1
 
+orbs:
+  slack: circleci/slack@3.4.1
+
+slack_status: &slack_status
+  channel: '#nuk-pp-newskit'
+  fail_only: true
+  only_for_branches: 'develop, master'
+
 executors:
   # A basic image with just raw Alpine on it that you can run commands on
   base:
@@ -50,6 +58,8 @@ jobs:
           paths:
             - node_modules/*
             - src/version-number.json
+      - slack/status:
+          <<: *slack_status
 
   build_components:
     working_directory: ~/project
@@ -65,6 +75,8 @@ jobs:
           root: ./
           paths:
             - dist/*
+      - slack/status:
+          <<: *slack_status
 
   build_storybook:
     working_directory: ~/project
@@ -80,6 +92,8 @@ jobs:
           root: ./
           paths:
             - dist-storybook/*
+      - slack/status:
+          <<: *slack_status
 
   build_docs:
     working_directory: ~/project
@@ -95,6 +109,8 @@ jobs:
           root: ./
           paths:
             - public/*
+      - slack/status:
+          <<: *slack_status
 
   build_test_e2e:
     working_directory: ~/project
@@ -110,6 +126,8 @@ jobs:
           root: ./
           paths:
             - e2e/dist/*
+      - slack/status:
+          <<: *slack_status
 
   test_unit:
     working_directory: ~/project
@@ -123,6 +141,8 @@ jobs:
           command: make unit_test
       - store_test_results:
           path: unit-test-results
+      - slack/status:
+          <<: *slack_status
 
   test_visual_comps:
     working_directory: ~/project
@@ -156,6 +176,8 @@ jobs:
             export APPLITOOLS_API_KEY=${APPLITOOLS_API_KEY}
             export APPLITOOLS_DONT_CLOSE_BATCHES=true
             make comps_visual_test
+      - slack/status:
+          <<: *slack_status
 
   install_cypress:
     working_directory: ~/project
@@ -171,6 +193,8 @@ jobs:
           key: cypress-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/Cypress
+      - slack/status:
+          <<: *slack_status
 
   test_visual_docs:
     working_directory: ~/project
@@ -193,6 +217,8 @@ jobs:
           path: cypress/screenshots
       - store_artifacts:
           path: cypress/videos
+      - slack/status:
+          <<: *slack_status
 
   test_e2e_comps:
     working_directory: ~/project
@@ -211,6 +237,8 @@ jobs:
           path: cypress/screenshots
       - store_artifacts:
           path: cypress/videos
+      - slack/status:
+          <<: *slack_status
 
   test_e2e_docs:
     working_directory: ~/project
@@ -230,6 +258,8 @@ jobs:
           path: cypress/screenshots
       - store_artifacts:
           path: cypress/videos
+      - slack/status:
+          <<: *slack_status
 
   create_release_candidate:
     working_directory: ~/project
@@ -247,6 +277,8 @@ jobs:
       - run:
           name: bump version
           command: make create_release_candidate
+      - slack/status:
+          <<: *slack_status
 
   publish_npm:
     parameters:
@@ -276,7 +308,9 @@ jobs:
             - run:
                 name: Publish components to NPM
                 command: make publish_npm
-
+      - slack/status:
+          <<: *slack_status
+  
   build_push_docker_ecr:
     parameters:
       aws_region:
@@ -336,6 +370,8 @@ jobs:
             aws ecr get-login --no-include-email --region << parameters.aws_region >> | /bin/bash
             make build_docker
             make push_docker
+      - slack/status:
+          <<: *slack_status
 
   eks_flux_deploy:
     # This one does a Flux deployment (writes to a Flux repo), using the flux-k8s tool you can find in https://github.com/newscorp-ghfb/ncu-circle-pipeline
@@ -367,6 +403,8 @@ jobs:
           git config --global user.name "Product Platforms Service"
           flux-generate "${CIRCLE_SHA1}" $config_values << parameters.substitution_dir >> $out_dir
           flux-commit -u << parameters.flux_repo_url >> -n << parameters.flux_repo_name >> -d $out_dir -t $flux_repo_target -m "${CIRCLE_SHA1}_$out_dir"
+      - slack/status:
+          <<: *slack_status
 
   eks_kubectl_deploy:
     parameters:
@@ -413,6 +451,8 @@ jobs:
 
           cd flux/<< parameters.environment >>/eks
           kubectl apply -f .
+      - slack/status:
+          <<: *slack_status
 
 # ========== FILTERS START    ==========
 
