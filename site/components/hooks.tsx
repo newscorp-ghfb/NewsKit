@@ -9,7 +9,7 @@ export function useHover() {
   const handleMouseOut = () => setValue(false);
 
   useEffect(() => {
-    const node = ref.current;
+    const node = ref.current as HTMLElement | null;
     if (node) {
       node.addEventListener('mouseover', handleMouseOver);
       node.addEventListener('mouseout', handleMouseOut);

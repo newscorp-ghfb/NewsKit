@@ -52,7 +52,11 @@ function Sizing(): JSX.Element {
       <Header>Sizing</Header>
       <ExampleWrapper>
         {Object.keys(sizingMap).map(sizeKey => (
-          <SizePreview key={sizeKey} name={sizeKey} size={sizingMap[sizeKey]} />
+          <SizePreview
+            key={sizeKey}
+            name={sizeKey}
+            size={sizingMap[sizeKey as keyof typeof sizingMap]}
+          />
         ))}
       </ExampleWrapper>
     </div>

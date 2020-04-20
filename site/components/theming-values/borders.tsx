@@ -37,12 +37,9 @@ function BorderPreview({name, border}: BorderPreviewProps): JSX.Element {
 
 function Borders(): JSX.Element {
   const borders = {
-    border100: newskitLightTheme.borders.border100,
-    border200: newskitLightTheme.borders.border200,
-    border300: newskitLightTheme.borders.border300,
-    border400: newskitLightTheme.borders.border400,
-    border500: newskitLightTheme.borders.border500,
-    border600: newskitLightTheme.borders.border600,
+    border100: newskitLightTheme.borders.borderWidth010,
+    border200: newskitLightTheme.borders.borderWidth020,
+    border300: newskitLightTheme.borders.borderWidth030,
   };
 
   return (
@@ -53,7 +50,11 @@ function Borders(): JSX.Element {
           <BorderPreview
             key={bordersKey}
             name={bordersKey}
-            border={borders[bordersKey]}
+            border={{
+              borderWidth: borders[bordersKey as keyof typeof borders],
+              borderStyle: 'solid',
+              borderColor: newskitLightTheme.colors.inkBase,
+            }}
           />
         ))}
       </ExampleWrapper>

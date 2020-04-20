@@ -7,10 +7,16 @@ import {
   ArticleContent,
   P,
   TagList,
+  TagSize,
   Grid,
   Cell,
   Image,
   newskitLightTheme,
+  IconButton,
+  ButtonSize,
+  Facebook,
+  Twitter,
+  WhatsApp,
 } from 'newskit';
 import {ShareBar} from 'newskit/share-bar';
 import Layout from '../../components/layout';
@@ -47,13 +53,26 @@ const Article: React.FC = () => (
           </Cell>
 
           <Cell xs={12} md={6}>
-            <ShareBar
-              rightIcons={[
-                {type: 'facebook'},
-                {type: 'twitter'},
-                {type: 'whatsApp'},
-              ]}
-            />
+            <ShareBar>
+              <IconButton
+                $size={ButtonSize.Large}
+                $stylePreset="buttonSocialTwitter"
+              >
+                <Twitter />
+              </IconButton>
+              <IconButton
+                $size={ButtonSize.Large}
+                $stylePreset="buttonSocialFacebook"
+              >
+                <Facebook />
+              </IconButton>
+              <IconButton
+                $size={ButtonSize.Large}
+                $stylePreset="buttonSocialWhatsapp"
+              >
+                <WhatsApp />
+              </IconButton>
+            </ShareBar>
           </Cell>
 
           <Cell xs={12}>
@@ -111,8 +130,7 @@ const Article: React.FC = () => (
 
           <Cell xs={12}>
             <TagList
-              $size="small"
-              $shape="semiRounded"
+              $size={TagSize.Small}
               $spacing="sizing040"
               tagData={[
                 {

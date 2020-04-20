@@ -6,7 +6,7 @@ type GoogleWindow = Window & {
 
 export const trackPageView = (url: string): void => {
   try {
-    (window as GoogleWindow).gtag('config', GA_ID, {
+    (window as GoogleWindow).gtag!('config', GA_ID, {
       page_location: url,
     });
   } catch (error) {
@@ -16,7 +16,7 @@ export const trackPageView = (url: string): void => {
 
 export const trackEvent = (eventName: string, label: string): void => {
   try {
-    (window as GoogleWindow).gtag('event', eventName, {
+    (window as GoogleWindow).gtag!('event', eventName, {
       send_to: GA_ID,
       event_category: 'general',
       event_label: label,
