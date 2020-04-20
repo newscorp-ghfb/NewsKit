@@ -49,11 +49,15 @@ This does not apply to long-lived branches, such as master, development, release
 
 Examples:
 
-* feat(NUK-001): create the login screen ui
-* docs(NUK-002): update the CODEOWNERS file to reflect the tech reset structure
-* fix(NUK-003)!: the digital publishing process by changing from Methode to WordPress
-* chore(NUK-004): add test reporting to the build pipeline
-* feat(NUK-005): BREAKING CHANGE this will require everyone in editorial to have access to the new system
+```bash
+feat(NUK-001): create the login screen ui  
+docs(NUK-002): update the CODEOWNERS file to reflect the tech reset structure  
+fix(NUK-003)!: the digital publishing process by changing from Methode to WordPress  
+chore(NUK-004): add test reporting to the build pipeline
+feat(NUK-005): allow provided config object to extend other configs
+
+BREAKING CHANGE: `extends` key in config file is now used for extending other config files
+```
 
 We are following the specification for our commit message format, with the following exceptions:
 
