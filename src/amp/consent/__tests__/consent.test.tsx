@@ -42,6 +42,20 @@ describe('Consent renders', () => {
       expect(fragment).toMatchSnapshot();
     });
 
+    it('settingsButtonText', () => {
+      const extendedConfig = {
+        privacyManagerId: 'test-privacymanagerid',
+        ...sourcePointConfigBase,
+      };
+      const fragment = renderToFragment(
+        <Consent
+          sourcePointConfig={extendedConfig}
+          settingsButtonText="Privacy Manager"
+        />,
+      );
+      expect(fragment).toMatchSnapshot();
+    });
+
     it('siteId', () => {
       const extendedConfig = {siteId: 'test-siteId', ...sourcePointConfigBase};
       const fragment = renderToFragment(

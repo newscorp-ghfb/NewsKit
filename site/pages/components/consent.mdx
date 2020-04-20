@@ -87,6 +87,15 @@ Note the use of the AMP `Head` component. The `Consent` component must be used a
     Required parameters: <b>accountId, siteName</b>.
     optional Parameters: <b>privacyManagerId, siteId and targetingParams</b>.
   </Prop>
+  <Prop name="postPromptUI" type="string" default="privacy-settings-prompt">
+    This is the reference to on-page element that will display after a user has
+    provided consent. When this element appears a user can click on it to change
+    their consent preferences.
+  </Prop>
+  <Prop name="settingsButtonText" type="string" default="Privacy Settings">
+    The value of this prop will define the text contained in the consent's button
+    that allows the user to access to the privacy settings for the cookies.
+  </Prop>
    <Prop name="accountId" type="string">
     <b>This Prop is deprecated on the component and should be set in the sourcepoint config. </b>Your Sourcepoint account id.
   </Prop>
@@ -96,10 +105,5 @@ Note the use of the AMP `Head` component. The `Consent` component must be used a
   <Prop name="privacyManagerId" type="string">
     <b>This Prop is deprecated on the component and should be set in the sourcepoint config. </b> This attribute corresponds to the ID of the privacy manager used for this
     site.
-  </Prop>
-  <Prop name="postPromptUI" type="string" default="privacy-settings-prompt">
-    This is the reference to on-page element that will display after a user has
-    provided consent. When this element appears a user can click on it to change
-    their consent preferences.
   </Prop>
 </LegacyBlock>

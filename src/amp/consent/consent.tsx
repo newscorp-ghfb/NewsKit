@@ -8,6 +8,7 @@ export interface ConsentProps {
   privacyManagerId?: string;
   postPromptUI?: string;
   sourcePointConfig: SourcePointConfigProps;
+  settingsButtonText?: string;
 }
 
 export interface SourcePointConfigProps {
@@ -18,9 +19,17 @@ export interface SourcePointConfigProps {
   targetingParams?: object;
 }
 
-const AmpConsentButton: React.FC<{on: string}> = ({children, ...props}) => (
+interface AmpConsentButton {
+  on: string;
+  settingsButtonText?: string;
+}
+
+const AmpConsentButton: React.FC<AmpConsentButton> = ({
+  settingsButtonText = 'Privacy Settings',
+  ...props
+}) => (
   <button {...props} type="submit">
-    {children}
+    {settingsButtonText}
   </button>
 );
 /**
@@ -32,6 +41,7 @@ const AmpConsentButton: React.FC<{on: string}> = ({children, ...props}) => (
  */
 export const Consent = connectAmpScript<ConsentProps>('amp-consent')(
   ({
+    settingsButtonText,
     accountId,
     siteName,
     privacyManagerId,
@@ -55,9 +65,10 @@ export const Consent = connectAmpScript<ConsentProps>('amp-consent')(
         }}
       />
       <div id={postPromptUI}>
-        <AmpConsentButton on="tap:consent.prompt(consent=SourcePoint)">
-          Privacy Settings
-        </AmpConsentButton>
+        <AmpConsentButton
+          on="tap:consent.prompt(consent=SourcePoint)"
+          settingsButtonText={settingsButtonText}
+        />
       </div>
     </amp-consent>
   ),
