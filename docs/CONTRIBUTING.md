@@ -50,10 +50,22 @@ This does not apply to long-lived branches, such as master, development, release
 Examples:
 
 ```bash
-feat(NUK-001): create the login screen ui  
-docs(NUK-002): update the CODEOWNERS file to reflect the tech reset structure  
+feat(NUK-001): create the login screen ui
+```
+
+```bash
+docs(NUK-002): update the CODEOWNERS file to reflect the tech reset structure
+```  
+
+```bash
 fix(NUK-003)!: the digital publishing process by changing from Methode to WordPress  
+```
+
+```bash
 chore(NUK-004): add test reporting to the build pipeline
+```
+
+```bash
 feat(NUK-005): allow provided config object to extend other configs
 
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
