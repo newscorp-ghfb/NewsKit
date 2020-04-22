@@ -7,6 +7,7 @@ export interface PlayerButtonProps {
   isPlaying: boolean;
   canPause: boolean;
   onClick: () => void;
+  isLoading: boolean;
   $stylePreset?: string;
 }
 
@@ -15,7 +16,7 @@ export const PlayerButton: React.FC<PlayerButtonProps> = React.memo(
     const notPlaying = canPause ? (
       <Pause focusable="false" title="Pause" />
     ) : (
-      <Square focusable="false" title="stop" />
+      <Square focusable="false" title="Stop" />
     );
     return (
       <IconButton

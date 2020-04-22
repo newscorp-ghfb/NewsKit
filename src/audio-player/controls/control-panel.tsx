@@ -26,6 +26,7 @@ export interface ControlPanelProps extends TrackControlProps {
   showControls: boolean;
   isPlaying: boolean;
   live: boolean;
+  isLoading: boolean;
   togglePlay: () => void;
   onClickBackward?: () => void;
   onClickForward?: () => void;
@@ -44,6 +45,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
     disablePreviousTrack,
     showControls,
     isPlaying,
+    isLoading,
     live,
     onClickBackward,
     onClickForward,
@@ -68,6 +70,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
             isPlaying={isPlaying}
             onClick={togglePlay}
             $stylePreset={play}
+            isLoading={isLoading}
           />
         </StackChild>
         <StackChild order={2}>

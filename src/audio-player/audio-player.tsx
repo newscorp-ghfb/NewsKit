@@ -1,5 +1,11 @@
 /* eslint-disable jsx-a11y/media-has-caption */
-import React, {useRef, useState, useEffect, useCallback} from 'react';
+import React, {
+  useRef,
+  useState,
+  useEffect,
+  useCallback,
+  MutableRefObject,
+} from 'react';
 import {getTrackBackground} from 'react-range';
 import {ControlPanel, PopoutButton} from './controls';
 import {Slider, SliderProps} from '../slider';
@@ -68,11 +74,16 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   const [trackPositionArr, setTrackPosition] = useState([0]);
   const [isPlaying, setPlayState] = useState(false);
   const [buffered, setBuffered] = useState<TimeRanges>();
+  const [isLoading, setIsLoading] = useState(true);
+
   const [isPrevTrackBtnDisabled, setIsPrevTrackBtnDisabled] = useState(
     Boolean(disablePreviousTrack),
   );
 
   const trackPositionRef = useRef(0);
+
+  const showLoaderTimeoutRef: MutableRefObject<number> = useRef(0);
+
   useEffect(() => {
     [trackPositionRef.current] = trackPositionArr;
   });
@@ -91,6 +102,8 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     onClickForward,
     onPopoutClick,
     togglePlay,
+    onCanPlay,
+    onWaiting,
     onPlay,
     onPause,
     onProgress,
@@ -108,9 +121,12 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     src,
     live,
     duration,
+    isLoading,
     isPlaying,
     trackPositionRef,
     audioRef,
+    showLoaderTimeoutRef,
+    setIsLoading,
     setTrackPosition,
     setPlayState,
     setVolume,
@@ -203,6 +219,8 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
         <audio
           ref={audioRef}
           src={src}
+          onCanPlay={onCanPlay}
+          onWaiting={onWaiting}
           onPlay={onPlay}
           onPause={onPause}
           onVolumeChange={onVolumeChange}
@@ -232,6 +250,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
                 disablePreviousTrack={isPrevTrackBtnDisabled}
                 live={live}
                 showControls={showControls}
+                isLoading={isLoading}
                 isPlaying={isPlaying}
                 onClickBackward={onClickBackward}
                 onClickForward={onClickForward}

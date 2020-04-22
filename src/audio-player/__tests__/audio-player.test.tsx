@@ -1,5 +1,5 @@
 import React from 'react';
-import {fireEvent} from '@testing-library/react';
+import {fireEvent, act} from '@testing-library/react';
 import {renderWithTheme, renderWithImplementation} from '../../test/test-utils';
 import {AudioPlayer} from '../audio-player';
 import {AudioPlayerProps} from '../types';
@@ -80,6 +80,7 @@ describe('Audio Player', () => {
       mediaElement[k] = jest.fn();
     });
     window.open = jest.fn();
+    jest.useFakeTimers();
   });
 
   test('live player renders as expected', () => {
@@ -90,6 +91,47 @@ describe('Audio Player', () => {
   test('recorded player renders as expected', () => {
     const {asFragment} = renderWithTheme(AudioPlayer, recordedAudioProps);
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('play button loading state is phasing as expected', () => {
+    const {getByTestId} = renderWithTheme(AudioPlayer, recordedAudioProps);
+
+    // playButton should be in initial loading state
+    expect(getByTestId('audio-player-play-button')).toMatchSnapshot();
+
+    fireEvent.canPlay(getByTestId('audio-element'));
+
+    // playButton should be enabled
+    expect(getByTestId('audio-player-play-button')).toMatchSnapshot();
+
+    fireEvent.waiting(getByTestId('audio-element'));
+    act(() => {
+      jest.advanceTimersByTime(750);
+    });
+
+    // playButton should go back to loading state
+    expect(getByTestId('audio-player-play-button')).toMatchSnapshot();
+  });
+
+  test('play button loading timeout is cleared when unmounting', () => {
+    const {getByTestId, unmount} = renderWithTheme(
+      AudioPlayer,
+      recordedAudioProps,
+    );
+    jest.clearAllTimers();
+    jest.clearAllMocks();
+
+    fireEvent.canPlay(getByTestId('audio-element'));
+
+    expect(clearTimeout).toHaveBeenCalledTimes(1);
+
+    fireEvent.waiting(getByTestId('audio-element'));
+
+    expect(jest.getTimerCount()).toEqual(1);
+    expect(setTimeout).toHaveBeenCalledTimes(1);
+    expect(clearTimeout).toHaveBeenCalledTimes(2);
+    unmount();
+    expect(clearTimeout).toHaveBeenCalledTimes(3);
   });
 
   test('recorded player renders and behaves as expected', () => {
@@ -111,6 +153,7 @@ describe('Audio Player', () => {
 
     // Play
     audioElement.play.mockReset();
+    fireEvent.canPlay(getByTestId('audio-element'));
     fireEvent.click(getByTestId('audio-player-play-button'));
     expect(audioElement.play).toHaveBeenCalled();
 
@@ -271,6 +314,7 @@ describe('Audio Player', () => {
     expect(audioElement.pause).toHaveBeenCalled();
 
     // Playing, no auto play, new track should be played
+    fireEvent.canPlay(getByTestId('audio-element'));
     fireEvent.click(getByTestId('audio-player-play-button'));
     resetAndReRender({src: 'newtrack-2'});
     expect(audioElement.play).toHaveBeenCalled();
@@ -303,227 +347,232 @@ describe('Audio Player', () => {
       };
 
       const playStop = getByTestId('audio-player-play-button');
+      fireEvent.canPlay(getByTestId('audio-element'));
       fireEvent.click(playStop);
       fireEvent.click(playStop);
 
       expect(fireEventSpy).toHaveBeenLastCalledWith(expectedObject);
     });
-  });
 
-  test('raise event when played', () => {
-    const fireEventSpy = jest.fn();
-    const {getByTestId} = renderWithImplementation(
-      AudioPlayer,
-      liveAudioProps,
-      fireEventSpy,
-    );
+    test('raise event when played', () => {
+      const fireEventSpy = jest.fn();
+      const {getByTestId} = renderWithImplementation(
+        AudioPlayer,
+        liveAudioProps,
+        fireEventSpy,
+      );
 
-    const playButton = getByTestId('audio-player-play-button');
-    fireEvent.click(playButton);
+      const playButton = getByTestId('audio-player-play-button');
+      fireEvent.canPlay(getByTestId('audio-element'));
+      fireEvent.click(playButton);
 
-    expect(fireEventSpy).toHaveBeenLastCalledWith(liveTrackingOutputObject);
-  });
-
-  test('raise event when popout button is clicked and audio player should pause', () => {
-    const fireEventSpy = jest.fn();
-    const {getByTestId} = renderWithImplementation(
-      AudioPlayer,
-      liveAudioProps,
-      fireEventSpy,
-    );
-
-    const expectedObject = {
-      ...liveTrackingOutputObject,
-      originator: 'audio-player-popout',
-      trigger: 'click',
-    };
-
-    const playButton = getByTestId('audio-player-play-button');
-    const popoutButton = getByTestId('audio-player-popout');
-
-    fireEvent.click(playButton);
-    fireEvent.click(popoutButton);
-    expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
-  });
-
-  test('raise event when audio player is paused and the popout button is clicked', () => {
-    const fireEventSpy = jest.fn();
-    const {getByTestId} = renderWithImplementation(
-      AudioPlayer,
-      liveAudioProps,
-      fireEventSpy,
-    );
-
-    const expectedObject = {
-      ...liveTrackingOutputObject,
-      originator: 'audio-player-popout',
-      trigger: 'click',
-    };
-
-    const popoutButton = getByTestId('audio-player-popout');
-
-    fireEvent.click(popoutButton);
-    expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
-  });
-
-  test('raise event when paused and live is true', () => {
-    const fireEventSpy = jest.fn();
-    const {getByTestId} = renderWithImplementation(
-      AudioPlayer,
-      liveAudioProps,
-      fireEventSpy,
-    );
-    const expectedObject = {
-      ...liveTrackingOutputObject,
-      originator: 'audio-player-stop-button',
-      trigger: 'click',
-    };
-
-    const playStop = getByTestId('audio-player-play-button');
-    fireEvent.click(playStop);
-    fireEvent.click(playStop);
-
-    expect(fireEventSpy).toHaveBeenLastCalledWith(expectedObject);
-  });
-
-  test('raise event when skip forward button is clicked', () => {
-    const fireEventSpy = jest.fn();
-    const {getByTestId} = renderWithImplementation(
-      AudioPlayer,
-      recordedAudioProps,
-      fireEventSpy,
-    );
-
-    const forwardButton = getByTestId('audio-player-forward');
-    fireEvent.click(forwardButton);
-
-    expect(fireEventSpy).toHaveBeenCalledWith({
-      ...recordedTrackingOutputObject,
-      originator: 'audio-player-skip-forward',
-      trigger: 'click',
-      event_navigation_name: 'forward skip',
+      expect(fireEventSpy).toHaveBeenLastCalledWith(liveTrackingOutputObject);
     });
-  });
 
-  test('raise event when backward button is clicked', () => {
-    const fireEventSpy = jest.fn();
-    const {getByTestId} = renderWithImplementation(
-      AudioPlayer,
-      recordedAudioProps,
-      fireEventSpy,
-    );
+    test('raise event when popout button is clicked and audio player should pause', () => {
+      const fireEventSpy = jest.fn();
+      const {getByTestId} = renderWithImplementation(
+        AudioPlayer,
+        liveAudioProps,
+        fireEventSpy,
+      );
 
-    const backwardButton = getByTestId('audio-player-backward');
-    fireEvent.click(backwardButton);
+      const expectedObject = {
+        ...liveTrackingOutputObject,
+        originator: 'audio-player-popout',
+        trigger: 'click',
+      };
 
-    expect(fireEventSpy).toHaveBeenCalledWith({
-      ...recordedTrackingOutputObject,
-      originator: 'audio-player-skip-backward',
-      trigger: 'click',
-      event_navigation_name: 'backward skip',
+      const playButton = getByTestId('audio-player-play-button');
+      const popoutButton = getByTestId('audio-player-popout');
+
+      fireEvent.click(playButton);
+      fireEvent.click(popoutButton);
+      expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
     });
-  });
 
-  test('raise event when the track has ended', () => {
-    const fireEventSpy = jest.fn();
-    const {getByTestId} = renderWithImplementation(
-      AudioPlayer,
-      recordedAudioProps,
-      fireEventSpy,
-    );
+    test('raise event when audio player is paused and the popout button is clicked', () => {
+      const fireEventSpy = jest.fn();
+      const {getByTestId} = renderWithImplementation(
+        AudioPlayer,
+        liveAudioProps,
+        fireEventSpy,
+      );
 
-    const expectedObject = {
-      ...recordedTrackingOutputObject,
-      originator: 'audio-complete',
-      trigger: 'end',
-    };
+      const expectedObject = {
+        ...liveTrackingOutputObject,
+        originator: 'audio-player-popout',
+        trigger: 'click',
+      };
 
-    const player = getByTestId('audio-element');
-    fireEvent.ended(player);
+      const popoutButton = getByTestId('audio-player-popout');
 
-    expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
-  });
-
-  test('raise event when audio player autoplays', () => {
-    const fireEventSpy = jest.fn();
-    recordedAudioProps.autoPlay = true;
-    const {getByTestId} = renderWithImplementation(
-      AudioPlayer,
-      recordedAudioProps,
-      fireEventSpy,
-    );
-
-    const expectedObject = {
-      ...recordedTrackingOutputObject,
-      originator: 'audio-player-audio',
-      trigger: 'start',
-    };
-
-    const play = getByTestId('audio-player-play-button');
-    fireEvent.click(play);
-
-    expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
-    recordedAudioProps.autoPlay = false;
-  });
-
-  test('raise event while the audio is being played', () => {
-    const fireEventSpy = jest.fn();
-    const {getByTestId} = renderWithImplementation(
-      AudioPlayer,
-      recordedAudioProps,
-      fireEventSpy,
-    );
-
-    const audioElement = getByTestId('audio-element') as HTMLAudioElement;
-    fireEvent.durationChange(audioElement, {
-      target: {
-        duration: 60,
-      },
+      fireEvent.click(popoutButton);
+      expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
     });
-    audioElement.currentTime = 1;
-    fireEvent.timeUpdate(audioElement);
 
-    const expectedObject = {
-      ...recordedTrackingOutputObject,
-      originator: 'audio-player-audio',
-      trigger: 'pulse',
-      media_duration: '01:00',
-    };
-    expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
-  });
+    test('raise event when paused and live is true', () => {
+      const fireEventSpy = jest.fn();
+      const {getByTestId} = renderWithImplementation(
+        AudioPlayer,
+        liveAudioProps,
+        fireEventSpy,
+      );
+      const expectedObject = {
+        ...liveTrackingOutputObject,
+        originator: 'audio-player-stop-button',
+        trigger: 'click',
+      };
 
-  test('should not raise play event if play called twice', () => {
-    const fireEventSpy = jest.fn();
-    const {getByTestId} = renderWithImplementation(
-      AudioPlayer,
-      recordedAudioProps,
-      fireEventSpy,
-    );
-    const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const playStop = getByTestId('audio-player-play-button');
+      fireEvent.canPlay(getByTestId('audio-element'));
+      fireEvent.click(playStop);
+      fireEvent.click(playStop);
 
-    // Two play calls, should cause one event
-    fireEvent.play(audioElement);
-    fireEvent.play(audioElement);
+      expect(fireEventSpy).toHaveBeenLastCalledWith(expectedObject);
+    });
 
-    expect(fireEventSpy).toHaveBeenCalledTimes(1);
-  });
+    test('raise event when skip forward button is clicked', () => {
+      const fireEventSpy = jest.fn();
+      const {getByTestId} = renderWithImplementation(
+        AudioPlayer,
+        recordedAudioProps,
+        fireEventSpy,
+      );
 
-  test('should not raise pause event if play called twice', () => {
-    const fireEventSpy = jest.fn();
-    const {getByTestId} = renderWithImplementation(
-      AudioPlayer,
-      recordedAudioProps,
-      fireEventSpy,
-    );
-    const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const forwardButton = getByTestId('audio-player-forward');
+      fireEvent.click(forwardButton);
 
-    fireEvent.play(audioElement);
-    fireEventSpy.mockReset();
+      expect(fireEventSpy).toHaveBeenCalledWith({
+        ...recordedTrackingOutputObject,
+        originator: 'audio-player-skip-forward',
+        trigger: 'click',
+        event_navigation_name: 'forward skip',
+      });
+    });
 
-    // Two pause calls, should cause one event
-    fireEvent.pause(audioElement);
-    fireEvent.pause(audioElement);
+    test('raise event when backward button is clicked', () => {
+      const fireEventSpy = jest.fn();
+      const {getByTestId} = renderWithImplementation(
+        AudioPlayer,
+        recordedAudioProps,
+        fireEventSpy,
+      );
 
-    expect(fireEventSpy).toHaveBeenCalledTimes(1);
+      const backwardButton = getByTestId('audio-player-backward');
+      fireEvent.click(backwardButton);
+
+      expect(fireEventSpy).toHaveBeenCalledWith({
+        ...recordedTrackingOutputObject,
+        originator: 'audio-player-skip-backward',
+        trigger: 'click',
+        event_navigation_name: 'backward skip',
+      });
+    });
+
+    test('raise event when the track has ended', () => {
+      const fireEventSpy = jest.fn();
+      const {getByTestId} = renderWithImplementation(
+        AudioPlayer,
+        recordedAudioProps,
+        fireEventSpy,
+      );
+
+      const expectedObject = {
+        ...recordedTrackingOutputObject,
+        originator: 'audio-complete',
+        trigger: 'end',
+      };
+
+      const player = getByTestId('audio-element');
+      fireEvent.ended(player);
+
+      expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
+    });
+
+    test('raise event when audio player autoplays', () => {
+      const fireEventSpy = jest.fn();
+      recordedAudioProps.autoPlay = true;
+      const {getByTestId} = renderWithImplementation(
+        AudioPlayer,
+        recordedAudioProps,
+        fireEventSpy,
+      );
+
+      const expectedObject = {
+        ...recordedTrackingOutputObject,
+        originator: 'audio-player-audio',
+        trigger: 'start',
+      };
+
+      const play = getByTestId('audio-player-play-button');
+      fireEvent.canPlay(getByTestId('audio-element'));
+      fireEvent.click(play);
+
+      expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
+      recordedAudioProps.autoPlay = false;
+    });
+
+    test('raise event while the audio is being played', () => {
+      const fireEventSpy = jest.fn();
+      const {getByTestId} = renderWithImplementation(
+        AudioPlayer,
+        recordedAudioProps,
+        fireEventSpy,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      fireEvent.durationChange(audioElement, {
+        target: {
+          duration: 60,
+        },
+      });
+      audioElement.currentTime = 1;
+      fireEvent.timeUpdate(audioElement);
+
+      const expectedObject = {
+        ...recordedTrackingOutputObject,
+        originator: 'audio-player-audio',
+        trigger: 'pulse',
+        media_duration: '01:00',
+      };
+      expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
+    });
+
+    test('should not raise play event if play called twice', () => {
+      const fireEventSpy = jest.fn();
+      const {getByTestId} = renderWithImplementation(
+        AudioPlayer,
+        recordedAudioProps,
+        fireEventSpy,
+      );
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+
+      // Two play calls, should cause one event
+      fireEvent.canPlay(getByTestId('audio-element'));
+      fireEvent.play(audioElement);
+      fireEvent.play(audioElement);
+
+      expect(fireEventSpy).toHaveBeenCalledTimes(1);
+    });
+
+    test('should not raise pause event if play called twice', () => {
+      const fireEventSpy = jest.fn();
+      const {getByTestId} = renderWithImplementation(
+        AudioPlayer,
+        recordedAudioProps,
+        fireEventSpy,
+      );
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+
+      fireEvent.play(audioElement);
+      fireEventSpy.mockReset();
+
+      // Two pause calls, should cause one event
+      fireEvent.pause(audioElement);
+      fireEvent.pause(audioElement);
+
+      expect(fireEventSpy).toHaveBeenCalledTimes(1);
+    });
   });
 });

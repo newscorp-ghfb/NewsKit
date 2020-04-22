@@ -16,12 +16,15 @@ export interface AudioFunctionDependencies {
   src: AudioPlayerProps['src'];
   live: NonNullable<AudioPlayerProps['live']>;
 
+  isLoading: boolean;
   duration: number;
   isPlaying: boolean;
 
+  showLoaderTimeoutRef: React.MutableRefObject<number>;
   trackPositionRef: React.MutableRefObject<number>;
   audioRef: React.RefObject<HTMLAudioElement>;
 
+  setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
   setTrackPosition: React.Dispatch<React.SetStateAction<number[]>>;
   setPlayState: React.Dispatch<React.SetStateAction<boolean>>;
   setVolume: React.Dispatch<React.SetStateAction<number>>;
@@ -39,9 +42,12 @@ export const useAudioFunctions = ({
   src,
   live,
   duration,
+  isLoading,
   isPlaying,
+  showLoaderTimeoutRef,
   trackPositionRef,
   audioRef,
+  setIsLoading,
   setTrackPosition,
   setPlayState,
   setVolume,
@@ -94,6 +100,22 @@ export const useAudioFunctions = ({
     },
     [duration, live, trackPositionRef],
   );
+
+  const onWaiting = useCallback(() => {
+    clearTimeout(showLoaderTimeoutRef.current);
+    // We are giving some extra time before setting isLoading state
+    // to avoid flickering of the play/loading button when
+    // skipping back to already buffered time.
+    showLoaderTimeoutRef.current = window.setTimeout(
+      () => setIsLoading(true),
+      700,
+    );
+  }, [setIsLoading, showLoaderTimeoutRef]);
+
+  const onCanPlay = useCallback(() => {
+    clearTimeout(showLoaderTimeoutRef.current);
+    setIsLoading(false);
+  }, [setIsLoading, showLoaderTimeoutRef]);
 
   const updateAudioTime = useCallback(
     (playerTime: number) => {
@@ -221,6 +243,10 @@ export const useAudioFunctions = ({
   };
 
   const togglePlay = () => {
+    if (isLoading) {
+      return;
+    }
+
     if (isPlaying) {
       onPause();
     } else {
@@ -284,17 +310,19 @@ export const useAudioFunctions = ({
   ue(() => {
     ifPlayer(player => {
       player.load();
-
-      if (autoPlay) {
-        return;
-      }
-
-      if (isPlaying) {
-        player.play();
-      } else {
-        player.pause();
+      onWaiting();
+      if (!autoPlay) {
+        if (isPlaying) {
+          player.play();
+        } else {
+          player.pause();
+        }
       }
     });
+
+    return () => {
+      clearTimeout(showLoaderTimeoutRef.current);
+    };
   }, [src]);
 
   // Set initial volume value on player, don't want to re-run this.
@@ -313,6 +341,8 @@ export const useAudioFunctions = ({
     onClickBackward,
     onClickForward,
     onPopoutClick,
+    onCanPlay,
+    onWaiting,
     togglePlay,
     onPlay,
     onPause,
