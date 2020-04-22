@@ -8,6 +8,8 @@ Environment:
   staging
 Namespace:
   newskit-staging
+NewsUKcidr:
+  0.0.0.0/0
 FQDN:
   newskit.staging-news.co.uk
 FQDNStorybook:

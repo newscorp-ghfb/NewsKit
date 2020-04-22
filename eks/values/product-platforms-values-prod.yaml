@@ -8,6 +8,8 @@ Environment:
   prod
 Namespace:
   newskit-prod
+NewsUKcidr:
+  0.0.0.0/0
 FQDN:
   newskit.co.uk
 FQDNStorybook:

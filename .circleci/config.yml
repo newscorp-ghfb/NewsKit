@@ -601,7 +601,7 @@ workflows:
           environment: staging
           <<: *only_release
       - eks_kubectl_deploy:
-          name: eks_flux_deploy_staging
+          name: eks_kubectl_deploy_staging
           context: ncu-newskit-site-stage
           environment: staging
           <<: *only_release
@@ -627,7 +627,7 @@ workflows:
             - approve_deployment
             - publish_npm
       - eks_kubectl_deploy:
-          name: eks_flux_deploy_prod
+          name: eks_kubectl_deploy_prod
           context: ncu-newskit-site-prod
           environment: prod
           <<: *only_master
