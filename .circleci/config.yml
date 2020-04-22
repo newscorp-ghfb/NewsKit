@@ -5,8 +5,9 @@ orbs:
 
 slack_status: &slack_status
   channel: '#nuk-pp-newskit'
+  mentions: 'newskitdevs'
   fail_only: true
-  only_for_branches: 'develop, master'
+  only_for_branches: 'develop,master'
 
 executors:
   # A basic image with just raw Alpine on it that you can run commands on
