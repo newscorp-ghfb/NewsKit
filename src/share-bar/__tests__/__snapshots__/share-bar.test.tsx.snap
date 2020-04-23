@@ -76,6 +76,22 @@ exports[`ShareBar renders horizontally with icons and label 1`] = `
   margin: 0 16px 0 0;
 }
 
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 <div
     class="emotion-6"
   >
@@ -231,6 +247,22 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
   margin: 0 16px 0 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-2 {
@@ -563,6 +595,22 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
   margin: 0 0 16px 0;
 }
 
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 <div
     class="emotion-6"
   >
@@ -857,6 +905,22 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
   margin: 0 16px 0 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-2 {
@@ -1307,6 +1371,22 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   color: #9c9c9c;
 }
 
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 <div
     class="emotion-12"
   >
@@ -1488,6 +1568,35 @@ exports[`ShareBar renders with custom label typePreset 1`] = `
   margin-bottom: calc(8px/2);
 }
 
+.emotion-0 {
+  color: #2e2e2e;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
+  margin: 0 0 16px 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 .emotion-2 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -1605,35 +1714,6 @@ exports[`ShareBar renders with custom label typePreset 1`] = `
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
-}
-
-.emotion-0 {
-  color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: -0.25px;
-  -moz-letter-spacing: -0.25px;
-  -ms-letter-spacing: -0.25px;
-  letter-spacing: -0.25px;
-  margin: 0 0 16px 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
 }
 
 <div
@@ -1794,6 +1874,22 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
   margin: 0 16px 0 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-2 {
@@ -2253,6 +2349,22 @@ exports[`ShareBar renders with horizontally custom label spacing 1`] = `
   margin: 0 32px 0 0;
 }
 
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 <div
     class="emotion-12"
   >
@@ -2620,6 +2732,22 @@ exports[`ShareBar renders with vertically custom label spacing 1`] = `
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
   margin: 0 0 32px 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 <div
