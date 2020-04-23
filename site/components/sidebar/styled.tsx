@@ -17,7 +17,7 @@ export const StyledNavItem = styled.div<{
   color: ${({theme, active}) =>
     active ? theme.colors.blue080 : theme.colors.inkSubtle};
   cursor: pointer;
-  font-weight: ${({active}) => (active ? '500' : 'normal')};
+  font-weight: normal;
   min-height: ${getSizingFromTheme('sizing070')};
   padding-left: ${({theme}) => theme.sizing.sizing030};
   padding-top: ${({theme}) => theme.sizing.sizing020};
