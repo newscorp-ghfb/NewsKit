@@ -20,7 +20,7 @@ spec:
       containers:
       - name: {{ (datasource "config").DocSiteName }}
         command: ["yarn", "serve:docs"]
-        image: {{ .Env.ECR_AWS_ACCOUNT_ID }}.dkr.ecr.{{ .Env.AWS_DEFAULT_REGION }}.amazonaws.com/ncu-newskit:{{ .Env.CIRCLE_SHA1 }}
+        image: {{ .Env.ECR_AWS_ACCOUNT_ID }}.dkr.ecr.{{ .Env.AWS_DEFAULT_REGION }}.amazonaws.com/ncu-newskit:{{ .Env.DOCKER_TAG }}
         ports:
         - containerPort: 8081
         env:

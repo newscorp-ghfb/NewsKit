@@ -338,10 +338,10 @@ jobs:
         description: ECR REPO
         type: string
         default: "${AWS_RESOURCE_NAME_PREFIX}"
-      docker_tag:
+      docker_version:
         description: Docker Image Tag
         type: string
-        default: "${CIRCLE_SHA1}"
+        default: "dev"
     executor: node
     steps:
       - checkout
@@ -357,11 +357,15 @@ jobs:
           command: sudo pip install awscli
       - run:
           command: |
+            if [ << parameters.docker_version >> = release ]; then
+              export DOCKER_TAG =$(node -p "require('./package.json').version")
+            else 
+              export DOCKER_TAG=${CIRCLE_SHA1}
+            fi
             export AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
             export AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
             export DOCKER_REGISTRY_URL=<< parameters.aws_ecr_url >>
             export DOCKER_REPO=<< parameters.ecr_repo >>
-            export DOCKER_TAG=<< parameters.docker_tag >>
             export temp_role=$(aws sts assume-role \
                     --role-arn "<< parameters.aws_assume_role_arn >>" \
                     --role-session-name "circle-ci-assume")
@@ -397,6 +401,11 @@ jobs:
       - add_ssh_keys:
           fingerprints: "7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80"
       - run: |
+          if [ << parameters.environment >> = dev ]; then
+            export DOCKER_TAG=${CIRCLE_SHA1}
+          else 
+            export DOCKER_TAG =$(node -p "require('./package.json').version")
+          fi      
           config_values=eks/values/product-platforms-values-<< parameters.environment >>.yaml
           out_dir=product-platforms-<< parameters.environment >>
           flux_repo_target=<< parameters.environment >>/eks
@@ -486,12 +495,11 @@ only_pr: &only_pr
         - /trigger-release-.*/
         - /^release.*/
 
-ignore_release: &ignore_release
+ignore_trigger_release: &ignore_trigger_release
   filters:
     branches:
       ignore:
         - /trigger-release-.*/
-        - /^release.*/
         
 # ========== FILTERS END        ==========
 
@@ -508,34 +516,34 @@ workflows:
     jobs:
     # common jobs
       - install_deps:
-          <<: *ignore_release
+          <<: *ignore_trigger_release
       - install_cypress:
-          <<: *ignore_release
+          <<: *ignore_trigger_release
       - build_components:
-          <<: *ignore_release
+          <<: *ignore_trigger_release
           <<: *require_dep
       - build_storybook:
-          <<: *ignore_release
+          <<: *ignore_trigger_release
           <<: *require_dep
       - build_docs:
-          <<: *ignore_release
+          <<: *ignore_trigger_release
           <<: *require_dep
           requires:
             - build_components
       - build_test_e2e:
-          <<: *ignore_release
+          <<: *ignore_trigger_release
           <<: *require_dep
       - test_unit:
-          <<: *ignore_release
+          <<: *ignore_trigger_release
           <<: *require_dep
       - test_e2e_comps:
-          <<: *ignore_release
+          <<: *ignore_trigger_release
           context: ncu-product-platforms-context
           requires:
             - build_test_e2e
             - install_cypress
       - test_e2e_docs:
-          <<: *ignore_release
+          <<: *ignore_trigger_release
           context: ncu-product-platforms-context
           requires:
             - build_docs
@@ -572,6 +580,7 @@ workflows:
             - test_e2e_docs
             - approve_publish_npm_dev
       - build_push_docker_ecr:
+          name: build_push_docker_ecr_dev
           context: ncu-product-platforms-context
           <<: *only_develop
           requires:
@@ -585,7 +594,7 @@ workflows:
           environment: dev
           <<: *only_develop
           requires:
-            - build_push_docker_ecr
+            - build_push_docker_ecr_dev
       - eks_kubectl_deploy:
           name: eks_kubectl_deploy_dev
           context: ncu-newskit-site-dev
@@ -596,11 +605,23 @@ workflows:
     # release jobs
       - create_release_candidate:
           <<: *only_trigger_release
+      - build_push_docker_ecr:
+          name: build_push_docker_ecr_release
+          context: ncu-product-platforms-context
+          docker_version: release
+          <<: *only_release
+          requires:
+            - build_storybook
+            - test_unit
+            - test_e2e_comps
+            - test_e2e_docs
       - eks_flux_deploy:
           name: eks_flux_deploy_staging
           context: ncu-newskit-site-stage
           environment: staging
           <<: *only_release
+          requires:
+            - build_push_docker_ecr_release          
       - eks_kubectl_deploy:
           name: eks_kubectl_deploy_staging
           context: ncu-newskit-site-stage
