@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* istanbul ignore file */
 import * as React from 'react';
 import {
@@ -9,12 +10,11 @@ import {
   getColorFromTheme,
   TypePresetKeys,
 } from 'newskit';
-import Link from 'next/link';
 import {LegacyBlock} from './legacy-block';
 import slugify from '../helpers/slugify';
 
 interface TextProps {
-  children?: string;
+  children: React.ReactNode;
 }
 
 interface DocLinkProps {
@@ -23,10 +23,9 @@ interface DocLinkProps {
 }
 
 interface TableProps {
-  children: string;
+  children: React.ReactNode;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const getText = (children: any) => {
   let label = '';
   React.Children.forEach(children, child => {
@@ -40,7 +39,6 @@ const getText = (children: any) => {
   return label;
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const cleanAnchor = (anchor: any) => slugify(getText(anchor));
 
 const Code: React.FC<TextProps> = ({children}) => (
@@ -181,44 +179,48 @@ export const DocLink: React.FC<DocLinkProps> = ({children, href}) => {
   const internal =
     (parts[0] === '' && parts[1] !== '') || !href.includes('http');
   return (
-    <Link href={href}>
-      <StyledLink href={href} {...(internal ? {} : {target: '_blank'})}>
-        {children}
-      </StyledLink>
-    </Link>
+    <StyledLink href={href} {...(internal ? {} : {target: '_blank'})}>
+      {children}
+    </StyledLink>
   );
 };
 
 export const H1 = ({children}: TextProps) => (
   <React.Fragment>
     <Heading
-      id={children && children.toLowerCase().replace(/\s+/g, '-')}
+      id={
+        (children &&
+          typeof children === 'string' &&
+          children.toLowerCase().replace(/\s+/g, '-')) as string | undefined
+      }
       size="40px"
       weight={200}
       element="h1"
       fontType="heading030"
       wrapText
     >
-      {children}
+      {children as string}
     </Heading>
   </React.Fragment>
 );
 
-export const H2 = ({children, offset}: TextProps & {offset?: number}) => (
-  <React.Fragment>
-    <SectionLink
-      id={children && children.toLowerCase().replace(/\s+/g, '-')}
-      offset={offset}
-    />
-    <Heading element="h2" fontType="heading020" weight={600} border>
-      {children}
-    </Heading>
-  </React.Fragment>
-);
+export const H2 = ({children, offset}: TextProps & {offset?: number}) => {
+  const id = (children &&
+    typeof children === 'string' &&
+    children.toLowerCase().replace(/\s+/g, '-')) as string | undefined;
+  return (
+    <React.Fragment>
+      <SectionLink id={id} offset={offset} />
+      <Heading element="h2" fontType="heading020" weight={600} border>
+        {children as string}
+      </Heading>
+    </React.Fragment>
+  );
+};
 
 export const H3 = ({children}: TextProps) => (
   <Heading weight={400} element="h3" fontType="font500" border>
-    {children}
+    {children as string}
   </Heading>
 );
 
@@ -229,23 +231,25 @@ const ScrollableTable = ({children}: TableProps) => (
 );
 
 export default {
-  code: Code,
+  code: ({children, ...props}: TextProps) => (
+    <Code {...props}>{children as string}</Code>
+  ),
   h1: H1,
   h2: H2,
   h3: H3,
   h4: ({children}: TextProps) => (
     <Heading weight={600} element="h4" fontType="heading010">
-      {children}
+      {children as string}
     </Heading>
   ),
   h5: ({children}: TextProps) => (
     <Heading element="h5" fontType="heading010">
-      {children}
+      {children as string}
     </Heading>
   ),
   h6: ({children}: TextProps) => (
     <Heading element="h6" fontType="body020">
-      {children}
+      {children as string}
     </Heading>
   ),
   li: ListItem,
@@ -253,7 +257,10 @@ export default {
   ul: UnorderedList,
   inlineCode: ({children}: TextProps) => <InlineCode>{children}</InlineCode>,
   blockquote: ({children}: TextProps) => <Blockquote>{children}</Blockquote>,
-  a: DocLink,
+  a: ({children, href, ...props}: any) => (
+    <DocLink {...props} href={href}>
+      {children as string}
+    </DocLink>
+  ),
   table: ScrollableTable,
-  wrapper: undefined,
 };

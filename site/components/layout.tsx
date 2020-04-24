@@ -13,7 +13,7 @@ import SiteHeader from './site-header';
 import SiteFooter from './site-footer';
 import Sidebar from './sidebar';
 import SectionNavigation from './section-navigation';
-import MarkdownElements from './markdown-elements';
+import markdownElements from './markdown-elements';
 import {Playground} from './playground';
 
 const LayoutWrapper = styled.div`
@@ -58,12 +58,13 @@ interface LayoutState {
 }
 
 interface Heading {
-  children: string;
+  children: React.ReactNode;
 }
 
 type PageSection = React.ReactElement<{
-  children: React.ReactElement<{children: string; name: string}>[];
-}>;
+  children: React.ReactNode;
+  mdxType: string;
+}>[];
 
 class Layout extends React.Component<LayoutProps, LayoutState> {
   private headerRef: React.RefObject<HTMLElement>;
@@ -115,27 +116,22 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
   };
 
   getPageSections = (children: PageSection): string[] => {
-    if (!React.isValidElement(children)) {
-      return [];
-    }
-
     const sections: string[] = [];
 
-    React.Children.forEach(children.props.children, child => {
-      if (React.isValidElement(child) && child.props.name === 'h2') {
-        sections.push(child.props.children);
+    React.Children.forEach(children, child => {
+      if (React.isValidElement(child) && child.props.mdxType === 'h2') {
+        sections.push(child.props.children as string);
       }
     });
-
     return sections;
   };
 
   updatePropsForMarkdownElements = () => {
     const {headerHeight, sectionNavHeight} = this.state;
 
-    const H2 = MarkdownElements.h2;
+    const H2 = markdownElements.h2;
     const updatedComponents = {
-      ...MarkdownElements,
+      ...markdownElements,
       h2: ({children}: Heading) => (
         <H2 offset={sectionNavHeight + headerHeight}>{children}</H2>
       ),

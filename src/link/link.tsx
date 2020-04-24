@@ -14,7 +14,7 @@ const StyledLink = styled.a<LinkProps>`
   transition-property: color;
   transition-duration: ${getAnimationFromTheme('animationDuration020')};
   transition-timing-function: ${getAnimationFromTheme('animationEaseOut')};
-  ${getStylePresetFromTheme('linkPrimary', '$stylePreset')}
+  ${getStylePresetFromTheme('linkPrimary', '$stylePreset')};
 `;
 
 export const Link: React.FC<LinkProps> = props => {
