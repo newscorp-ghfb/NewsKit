@@ -358,7 +358,7 @@ jobs:
       - run:
           command: |
             if [ << parameters.docker_version >> = release ]; then
-              export DOCKER_TAG =$(node -p "require('./package.json').version")
+              export DOCKER_TAG=$(node -p "require('./package.json').version")
             else 
               export DOCKER_TAG=${CIRCLE_SHA1}
             fi
