@@ -404,7 +404,7 @@ jobs:
           if [ << parameters.environment >> = dev ]; then
             export DOCKER_TAG=${CIRCLE_SHA1}
           else 
-            export DOCKER_TAG =$(node -p "require('./package.json').version")
+            export DOCKER_TAG=$(node -p "require('./package.json').version")
           fi      
           config_values=eks/values/product-platforms-values-<< parameters.environment >>.yaml
           out_dir=product-platforms-<< parameters.environment >>
