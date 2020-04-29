@@ -401,6 +401,7 @@ jobs:
       - add_ssh_keys:
           fingerprints: "7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80"
       - run: |
+          apk add --update npm
           if [ << parameters.environment >> = dev ]; then
             export DOCKER_TAG=${CIRCLE_SHA1}
           else 

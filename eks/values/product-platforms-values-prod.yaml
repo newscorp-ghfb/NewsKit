@@ -11,9 +11,9 @@ Namespace:
 NewsUKcidr:
   0.0.0.0/0
 FQDN:
-  newskit.co.uk
+  newskit.digieng-prod.ntch.co.uk
 FQDNStorybook:
-  storybook.newskit.co.uk
+  storybook.newskit.digieng-prod.ntch.co.uk
 SSLCertARN:
 # this cert is for *.digieng-prod.ntch.co.uk
   arn:aws:acm:eu-west-1:474887192380:certificate/b170a102-baab-48a4-8a55-af600246b539
