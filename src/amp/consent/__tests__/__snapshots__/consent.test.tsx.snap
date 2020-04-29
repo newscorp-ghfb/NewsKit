@@ -10,7 +10,7 @@ exports[`Consent renders with deprecated prop accountId 1`] = `
     <script
       type="application/json"
     >
-      {"clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","postPromptUI":"privacy-settings-prompt"}}
+      {"postPromptUI":"privacy-settings-prompt","clientConfig":{"accountId":"test-accountid","siteName":"test-sitename"}}
     </script>
     <div
       id="privacy-settings-prompt"
@@ -36,7 +36,7 @@ exports[`Consent renders with optional prop privacyManagerId 1`] = `
     <script
       type="application/json"
     >
-      {"clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","privacyManagerId":"test-privacymanagerid","postPromptUI":"privacy-settings-prompt"}}
+      {"postPromptUI":"privacy-settings-prompt","clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","privacyManagerId":"test-privacymanagerid"}}
     </script>
     <div
       id="privacy-settings-prompt"
@@ -62,7 +62,7 @@ exports[`Consent renders with optional prop settingsButtonText 1`] = `
     <script
       type="application/json"
     >
-      {"clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","privacyManagerId":"test-privacymanagerid","postPromptUI":"privacy-settings-prompt"}}
+      {"postPromptUI":"privacy-settings-prompt","clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","privacyManagerId":"test-privacymanagerid"}}
     </script>
     <div
       id="privacy-settings-prompt"
@@ -88,7 +88,7 @@ exports[`Consent renders with optional prop siteId 1`] = `
     <script
       type="application/json"
     >
-      {"clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","postPromptUI":"privacy-settings-prompt","siteId":"test-siteId"}}
+      {"postPromptUI":"privacy-settings-prompt","clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","siteId":"test-siteId"}}
     </script>
     <div
       id="privacy-settings-prompt"
@@ -114,7 +114,7 @@ exports[`Consent renders with optional prop targetingParams 1`] = `
     <script
       type="application/json"
     >
-      {"clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","postPromptUI":"privacy-settings-prompt","targetingParams":{"foo":"bar"}}}
+      {"postPromptUI":"privacy-settings-prompt","clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","targetingParams":{"foo":"bar"}}}
     </script>
     <div
       id="privacy-settings-prompt"
@@ -140,7 +140,7 @@ exports[`Consent renders with postPromptUI 1`] = `
     <script
       type="application/json"
     >
-      {"clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","postPromptUI":"postPrompt"}}
+      {"postPromptUI":"postPrompt","clientConfig":{"accountId":"test-accountid","siteName":"test-sitename"}}
     </script>
     <div
       id="postPrompt"
@@ -166,7 +166,7 @@ exports[`Consent renders without postPromptUI 1`] = `
     <script
       type="application/json"
     >
-      {"clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","postPromptUI":"privacy-settings-prompt"}}
+      {"postPromptUI":"privacy-settings-prompt","clientConfig":{"accountId":"test-accountid","siteName":"test-sitename"}}
     </script>
     <div
       id="privacy-settings-prompt"

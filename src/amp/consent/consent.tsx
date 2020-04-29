@@ -53,12 +53,12 @@ export const Consent = connectAmpScript<ConsentProps>('amp-consent')(
         type="application/json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
+            postPromptUI,
             clientConfig: {
               accountId: accountId || sourcePointConfig.accountId,
               siteName: siteName || sourcePointConfig.siteName,
               privacyManagerId:
                 privacyManagerId || sourcePointConfig.privacyManagerId,
-              postPromptUI,
               ...sourcePointConfig,
             },
           }),
