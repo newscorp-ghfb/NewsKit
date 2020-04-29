@@ -46,7 +46,7 @@ describe('ArticleContent', () => {
     ];
     const wrapper = renderToFragmentWithTheme(ArticleContent, {
       children,
-      $boldIntro: true,
+      boldIntro: true,
     });
     expect(wrapper).toMatchSnapshot();
   });
@@ -59,7 +59,7 @@ describe('ArticleContent', () => {
     ];
     const wrapper = renderToFragmentWithTheme(ArticleContent, {
       children,
-      $boldHeadings: true,
+      boldHeadings: true,
     });
     expect(wrapper).toMatchSnapshot();
   });
@@ -72,7 +72,7 @@ describe('ArticleContent', () => {
     ];
     const wrapper = renderToFragmentWithTheme(ArticleContent, {
       children,
-      $boldHeadings: true,
+      boldHeadings: true,
     });
     expect(wrapper).toMatchSnapshot();
   });

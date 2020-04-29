@@ -11,21 +11,21 @@ export enum TitleAlignment {
 }
 
 export type TitleContainerProps = {
-  $titleAlignment: TitleAlignment;
+  titleAlignment: TitleAlignment;
 };
 
 export type ContainerProps = {
-  $containerBorder?: TitleBarBorder;
-  $paddingLeft?: boolean;
-  $paddingRight?: boolean;
+  containerBorder?: TitleBarBorder;
+  paddingLeft?: boolean;
+  paddingRight?: boolean;
 };
 
 export type TitleBarProps = {
   children: string;
   actionItem?: React.ComponentType;
   headingComponent?: React.ComponentType;
-  $titleAlignment?: TitleAlignment;
-  $containerBorder?: TitleBarBorder;
-  $paddingLeft?: boolean;
-  $paddingRight?: boolean;
+  titleAlignment?: TitleAlignment;
+  containerBorder?: TitleBarBorder;
+  paddingLeft?: boolean;
+  paddingRight?: boolean;
 };

@@ -17,7 +17,7 @@ import {Flag} from '../flag';
 
 const renderFlag = (CustomFlag: React.ComponentType | string) =>
   typeof CustomFlag === 'string' ? (
-    <Flag $stylePreset="flagSolidLive">{CustomFlag}</Flag>
+    <Flag stylePreset="flagSolidLive">{CustomFlag}</Flag>
   ) : (
     <CustomFlag />
   );
@@ -35,7 +35,7 @@ const DescriptionsMeta: React.FC<DescriptionMetaProps & CenterProp> = ({
     stackDistribution={StackDistribution.Start}
   >
     {(flag || time) && (
-      <Block $margin="spaceStack050">
+      <Block margin="spaceStack050">
         <Stack
           flow={center ? Flow.VerticalCenter : Flow.HorizontalCenter}
           stackDistribution={
@@ -49,7 +49,7 @@ const DescriptionsMeta: React.FC<DescriptionMetaProps & CenterProp> = ({
       </Block>
     )}
     {title && (
-      <Block $margin="spaceStack040">
+      <Block margin="spaceStack040">
         <ProgrammeTitle center={center}>{title}</ProgrammeTitle>
       </Block>
     )}
@@ -71,7 +71,7 @@ const PlayerImage: React.FC<PlayerImageProps> = ({imgSrc, imgAlt}) => (
       alt={imgAlt}
       aspectHeight="1"
       aspectWidth="1"
-      $stylePreset="maskRound010"
+      stylePreset="maskRound010"
     />
   </ImageContainer>
 );
@@ -119,7 +119,7 @@ export const RadioPlayer: React.FC<RadioPlayerProps> = props => {
   return (
     <InstrumentationProvider context={contextObject}>
       <AudioPlayer {...props}>
-        <Block $margin="spaceStack050">
+        <Block margin="spaceStack050">
           <PlayerMeta
             time={time}
             live={live}

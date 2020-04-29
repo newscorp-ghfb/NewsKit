@@ -9,7 +9,7 @@ export default {
       name: 'bold-intro-and-bold-headings',
       type: 'story',
       component: () => (
-        <ArticleContent $boldIntro $boldHeadings>
+        <ArticleContent boldIntro boldHeadings>
           <P>
             The first paragraph of text will be in bold, when the boldIntro prop
             is set to true. After that the text will continue in normal

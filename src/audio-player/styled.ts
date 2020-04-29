@@ -18,14 +18,13 @@ export const PlayerContainer = styled.section`
 `;
 
 export const ControlContainer = styled(Hidden)<{
-  $playerTrackSize: SizingKeys;
+  playerTrackSize: SizingKeys;
 }>`
   box-sizing: border-box;
   width: calc(
-    184px +
-      ${({theme, $playerTrackSize}) => `${theme.sizing[$playerTrackSize]}`}
+    184px + ${({theme, playerTrackSize}) => `${theme.sizing[playerTrackSize]}`}
   );
   padding: 0
-    ${({theme, $playerTrackSize}) =>
-      `calc(${theme.sizing[$playerTrackSize]} / 2)`};
+    ${({theme, playerTrackSize}) =>
+      `calc(${theme.sizing[playerTrackSize]} / 2)`};
 `;

@@ -63,7 +63,7 @@ const CustomThumb = styled.div`
 
 const renderCustomThumb: SliderProps['renderThumb'] = ({props}) => (
   <CustomThumb {...props} aria-label="custom slider thumb">
-    <Placeholder $size="iconSize030" $color="inkNonEssential" />
+    <Placeholder size="iconSize030" color="inkNonEssential" />
   </CustomThumb>
 );
 
@@ -270,11 +270,11 @@ export default {
                 minLabel="0"
                 maxLabel="100%"
                 thumbLabel
-                $trackSize="sizing050"
-                $sliderTrackStylePreset="customTrackStylePreset"
-                $sliderIndicatorTrackStylePreset="customIndicatorStylePreset"
-                $sliderThumbStylePreset="customThumbStylePreset"
-                $sliderLabelsStylePreset="customLabelStylePreset"
+                trackSize="sizing050"
+                sliderTrackStylePreset="customTrackStylePreset"
+                sliderIndicatorTrackStylePreset="customIndicatorStylePreset"
+                sliderThumbStylePreset="customThumbStylePreset"
+                sliderLabelsStylePreset="customLabelStylePreset"
               />
             </ThemeProvider>
           </Container>

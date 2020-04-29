@@ -16,10 +16,10 @@ describe('Link', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders correctly with $noUnderline property', () => {
+  test('renders correctly with noUnderline property', () => {
     const fragment = renderToFragmentWithTheme(Link, {
       href: '#',
-      $noUnderline: true,
+      noUnderline: true,
       children: 'test link text',
     });
     expect(fragment).toMatchSnapshot();

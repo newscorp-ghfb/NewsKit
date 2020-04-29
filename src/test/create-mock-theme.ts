@@ -21,20 +21,20 @@
  * Example output:
  * {
  *   borders: {
- *     useRoundedCorners: '$theme.borders.useRoundedCorners',
- *     radius100: '$theme.borders.radius100',
- *     radius200: '$theme.borders.radius200',
- *     radius300: '$theme.borders.radius300',
+ *     useRoundedCorners: 'theme.borders.useRoundedCorners',
+ *     radius100: 'theme.borders.radius100',
+ *     radius200: 'theme.borders.radius200',
+ *     radius300: 'theme.borders.radius300',
  *   },
  *   animation: {
- *     animationDuration020: '$theme.animation.animationDuration020',
- *     animationDuration040: '$theme.animation.animationDuration040',
+ *     animationDuration020: 'theme.animation.animationDuration020',
+ *     animationDuration040: 'theme.animation.animationDuration040',
  *   }
  * }
  */
 export default function createMockTheme(
   base: Record<string, unknown>,
-  prefix: string = '$theme',
+  prefix: string = 'theme',
 ) {
   const mock: Record<string, unknown> = {};
 

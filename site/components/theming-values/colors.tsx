@@ -50,17 +50,17 @@ export const TextBoxSwatch = styled.span<{
 `;
 
 const ColorPreview = ({colors}: {colors: ColorPrimitives}): JSX.Element => (
-  <LegacyBlock $display="flex" $flexWrap>
+  <LegacyBlock display="flex" flexWrap>
     {Object.entries(colors).map(([key, value]) => (
       <LegacyBlock
         key={key + value}
-        $width="15rem"
-        $margin="sizing050"
-        $display="flex"
-        $alignItems="center"
+        width="15rem"
+        margin="sizing050"
+        display="flex"
+        alignItems="center"
       >
         <CircleSwatch color={value} />
-        <LegacyBlock $display="inline" $marginLeft="sizing030">
+        <LegacyBlock display="inline" marginLeft="sizing030">
           {key}
         </LegacyBlock>
       </LegacyBlock>
@@ -69,7 +69,7 @@ const ColorPreview = ({colors}: {colors: ColorPrimitives}): JSX.Element => (
 );
 
 const Colors = (): JSX.Element => (
-  <LegacyBlock $font="body020">
+  <LegacyBlock font="body020">
     <Header>Color Primitives</Header>
     <ExampleWrapper>
       <ColorPreview colors={colorPrimitives} />

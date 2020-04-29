@@ -157,7 +157,6 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   >
     <div
       class="emotion-4"
-      order="2"
     >
       <div
         class="emotion-3"
@@ -180,7 +179,6 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
     </div>
     <div
       class="emotion-9"
-      order="3"
     >
       <div
         class="emotion-3"
@@ -203,7 +201,6 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
     </div>
     <div
       class="emotion-14"
-      order="1"
     >
       <div
         class="emotion-3"

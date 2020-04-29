@@ -26,7 +26,7 @@ describe('DateLine', () => {
   test('renders with custom color', () => {
     const fragment = renderToFragmentWithTheme(DateLine, {
       date,
-      $color: 'inkSubtle',
+      color: 'inkSubtle',
     });
     expect(fragment).toMatchSnapshot();
   });

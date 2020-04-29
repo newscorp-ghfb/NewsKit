@@ -20,16 +20,16 @@ describe('Button', () => {
   });
 
   test('renders Small Button', () => {
-    const props: {$size: RegularButtonSize} = {
-      $size: ButtonSize.Small,
+    const props: {size: RegularButtonSize} = {
+      size: ButtonSize.Small,
     };
     const fragment = renderToFragmentWithTheme(Button, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders Large Button', () => {
-    const props: {$size: RegularButtonSize} = {
-      $size: ButtonSize.Large,
+    const props: {size: RegularButtonSize} = {
+      size: ButtonSize.Large,
     };
     const fragment = renderToFragmentWithTheme(Button, props);
     expect(fragment).toMatchSnapshot();
@@ -37,7 +37,7 @@ describe('Button', () => {
 
   test('renders with different style preset', () => {
     const props = {
-      $stylePreset: 'buttonOutlinedPrimary',
+      stylePreset: 'buttonOutlinedPrimary',
     };
 
     const fragment = renderToFragmentWithTheme(Button, props);
@@ -46,10 +46,10 @@ describe('Button', () => {
 
   test('renders when there is no icon', () => {
     const props: {
-      $size: RegularButtonSize;
+      size: RegularButtonSize;
       children: string;
     } = {
-      $size: ButtonSize.Small,
+      size: ButtonSize.Small,
       children: 'click this!',
     };
     const fragment = renderToFragmentWithTheme(Button, props);
@@ -59,10 +59,10 @@ describe('Button', () => {
   describe('Loading Button', () => {
     test('renders Small Button', () => {
       const props: {
-        $size: RegularButtonSize;
+        size: RegularButtonSize;
         isLoading: boolean;
       } = {
-        $size: ButtonSize.Small,
+        size: ButtonSize.Small,
         isLoading: true,
       };
       const fragment = renderToFragmentWithTheme(Button, props);
@@ -71,10 +71,10 @@ describe('Button', () => {
 
     test('renders Large Button', () => {
       const props: {
-        $size: RegularButtonSize;
+        size: RegularButtonSize;
         isLoading: boolean;
       } = {
-        $size: ButtonSize.Large,
+        size: ButtonSize.Large,
         isLoading: true,
       };
       const fragment = renderToFragmentWithTheme(Button, props);
@@ -93,7 +93,7 @@ describe('Button', () => {
 
     test('renders Small Icon Button', () => {
       const props = {
-        $size: ButtonSize.Small,
+        size: ButtonSize.Small,
         children: [<Email />],
       };
       const fragment = renderToFragmentWithTheme(IconButton, props);
@@ -102,7 +102,7 @@ describe('Button', () => {
 
     test('renders Medium Icon Button', () => {
       const props = {
-        $size: ButtonSize.Medium,
+        size: ButtonSize.Medium,
         children: [<Email />],
       };
       const fragment = renderToFragmentWithTheme(IconButton, props);
@@ -111,7 +111,7 @@ describe('Button', () => {
 
     test('renders Large Icon Button', () => {
       const props = {
-        $size: ButtonSize.Large,
+        size: ButtonSize.Large,
         children: [<Email />],
       };
       const fragment = renderToFragmentWithTheme(IconButton, props);
@@ -120,7 +120,7 @@ describe('Button', () => {
 
     test('renders Icon Button in loading State', () => {
       const props = {
-        $size: ButtonSize.Large,
+        size: ButtonSize.Large,
         isLoading: true,
         children: [<Email />],
       };
@@ -130,8 +130,8 @@ describe('Button', () => {
 
     test('renders when there is an icon with a colour', () => {
       const props = {
-        $size: ButtonSize.Small,
-        $iconColor: 'buttonText' as ColorKeys,
+        size: ButtonSize.Small,
+        iconColor: 'buttonText' as ColorKeys,
         children: [<Email />, 'click this!'],
       };
       const fragment = renderToFragmentWithTheme(IconButton, props);

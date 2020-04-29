@@ -2,16 +2,16 @@ import * as React from 'react';
 import {Svg, IconSizeKeys, ColorKeys, Theme, withTheme} from 'newskit';
 
 interface SlackLogoProps {
-  $size: IconSizeKeys;
-  $color: ColorKeys;
+  size: IconSizeKeys;
+  color: ColorKeys;
 }
 
 const SlackLogo: React.FC<SlackLogoProps & {theme: Theme}> = props => {
-  const {$color, theme} = props;
+  const {color, theme} = props;
 
   return (
     <Svg viewBox="0 0 123 123" aria-hidden="true" title="slack logo" {...props}>
-      <g fill={theme.colors[$color]}>
+      <g fill={theme.colors[color]}>
         <g>
           <path d="m25.657357,77.523529c0,7.1 -5.8,12.9 -12.9,12.9s-12.9,-5.8 -12.9,-12.9c0,-7.1 5.8,-12.9 12.9,-12.9l12.9,0l0,12.9z" />
           <path d="m32.157357,77.523529c0,-7.1 5.8,-12.9 12.9,-12.9s12.9,5.8 12.9,12.9l0,32.3c0,7.1 -5.8,12.9 -12.9,12.9s-12.9,-5.8 -12.9,-12.9c0,0 0,-32.3 0,-32.3z" />

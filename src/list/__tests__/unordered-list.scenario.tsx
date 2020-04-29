@@ -6,7 +6,7 @@ export const name = 'unordered-list';
 
 const listData = [
   `alpha`,
-  <Twitter $size="iconSize010" />,
+  <Twitter size="iconSize010" />,
   2,
   `delta`,
   `echo`,
@@ -15,7 +15,7 @@ const listData = [
 
 export const component = () => [
   <UnorderedList>{listData}</UnorderedList>,
-  <UnorderedList listItemMarker={() => <Twitter $size="iconSize010" />}>
+  <UnorderedList listItemMarker={() => <Twitter size="iconSize010" />}>
     {listData}
   </UnorderedList>,
 ];

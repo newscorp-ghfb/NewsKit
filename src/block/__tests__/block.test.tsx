@@ -12,7 +12,7 @@ describe('Block', () => {
   describe('with props', () => {
     test('renders with spaceStack020', () => {
       const props: BlockProps = {
-        $margin: 'spaceStack020',
+        margin: 'spaceStack020',
       };
       const fragment = renderToFragmentWithTheme(Block, props);
       expect(fragment).toMatchSnapshot();
@@ -20,7 +20,7 @@ describe('Block', () => {
 
     test('renders with spaceStack010 for xs, spaceStack020 for sm, and spaceStack030 for md breakpoints', () => {
       const props: BlockProps = {
-        $margin: {
+        margin: {
           xs: 'spaceStack010',
           sm: 'spaceStack020',
           md: 'spaceStack030',
@@ -32,7 +32,7 @@ describe('Block', () => {
 
     test('renders with spaceInline020', () => {
       const props: BlockProps = {
-        $margin: 'spaceInline020',
+        margin: 'spaceInline020',
       };
       const fragment = renderToFragmentWithTheme(Block, props);
       expect(fragment).toMatchSnapshot();

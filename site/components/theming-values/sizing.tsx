@@ -26,8 +26,8 @@ const StyledSizeBox = styled.div<StyledSizeBox>`
 
 function SizePreview({name, size}: SizePreviewProps): JSX.Element {
   return (
-    <LegacyBlock $width="250px">
-      <LegacyBlock $font="body030">
+    <LegacyBlock width="250px">
+      <LegacyBlock font="body030">
         {name} ({size})
       </LegacyBlock>
       <StyledSizeBox size={size} />

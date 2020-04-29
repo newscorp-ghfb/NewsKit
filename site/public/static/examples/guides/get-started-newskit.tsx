@@ -8,7 +8,7 @@ export default class ExampleComponent extends React.Component {
       <ThemeProvider theme={theSunTheme}>
         <Tag
           href="http://example.com"
-          $size={TagSize.Medium}>
+          size={TagSize.Medium}>
             Hello World
         </Tag>
       </ThemeProvider>

@@ -56,7 +56,7 @@ const renderRow = (
 ) => {
   if (typeof value === 'object') {
     return Object.entries(value as Record<string, string>).map(([k, v]) => (
-      <LegacyBlock $display="flex" $flexGrow={1} $maxWidth="350px">
+      <LegacyBlock display="flex" flexGrow={1} maxWidth="350px">
         <InputKnob
           key={label + k + length}
           label={k}
@@ -70,7 +70,7 @@ const renderRow = (
 
   if (typeof value === 'string' || typeof value === 'number') {
     return (
-      <LegacyBlock $display="flex" $flexGrow={1} $maxWidth="350px">
+      <LegacyBlock display="flex" flexGrow={1} maxWidth="350px">
         <InputKnob
           key={label + length}
           label={label}
@@ -117,7 +117,7 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
   return (
     <KnobContainer data-testid={`${TEST_ID_PREFIX}-${lowercaseLabel}`}>
       <StyledTitle>{label}</StyledTitle>
-      <LegacyBlock $marginLeft="sizing030">
+      <LegacyBlock marginLeft="sizing030">
         {values.map((value, i, arr) => {
           if (typeof value === 'undefined' || Array.isArray(value)) {
             // eslint-disable-next-line no-console
@@ -129,15 +129,15 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
 
           const row = renderRow(label, value, i, arr.length, update);
           return row ? (
-            <LegacyBlock $display="flex">
+            <LegacyBlock display="flex">
               {row}
               <LegacyBlock
-                $display="flex"
-                $alignItems="baseline"
-                $flexDirection="column-reverse"
+                display="flex"
+                alignItems="baseline"
+                flexDirection="column-reverse"
               >
                 <IconButton
-                  $size={ButtonSize.Small}
+                  size={ButtonSize.Small}
                   disabled={arr.length < 2}
                   onClick={remove(i)}
                   data-testid={`${TEST_ID_PREFIX}-button-remove`}
@@ -150,7 +150,7 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
         })}
         <IconButton
           data-testid={`${TEST_ID_PREFIX}-button-add`}
-          $size={ButtonSize.Small}
+          size={ButtonSize.Small}
           onClick={add}
         >
           +

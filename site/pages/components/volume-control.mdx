@@ -22,7 +22,7 @@ value to the relevant audio player instance, along with also passing the value b
 
 ## Props
 
-<LegacyBlock $marginTop="sizing05">
+<LegacyBlock marginTop="sizing05">
   <Prop name="volume" required type="number">
     The volume value, a number between 0 and 1. This value must be updated when
     onChange is called.
@@ -51,8 +51,8 @@ value to the relevant audio player instance, along with also passing the value b
     };
     return (
       <LegacyBlock
-        $width="100%"
-        $height={props.vertical ? '240px' : undefined}
+        width="100%"
+        height={props.vertical ? '240px' : undefined}
         style={{textAlign: 'center'}}
       >
         <VolumeControl {...props} volume={stateVolume} onChange={onChange} />

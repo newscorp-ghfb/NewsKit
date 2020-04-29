@@ -2,7 +2,7 @@ import * as React from 'react';
 import {Svg} from 'newskit';
 
 const MenuIcon: React.FC = () => (
-  <Svg $size="iconSize020" viewBox="0 0 24 24" title="menu icon">
+  <Svg size="iconSize020" viewBox="0 0 24 24" title="menu icon">
     <g fill="none" fillRule="evenodd">
       <path
         fill="#333"

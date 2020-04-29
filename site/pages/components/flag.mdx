@@ -21,20 +21,20 @@ A flag is used to show that a stream is live, or content has been created or upd
 
 Flags have a number of props to facilitate a variety of uses:
 
-<LegacyBlock $marginTop="sizing040">
+<LegacyBlock marginTop="sizing040">
   <Prop name="children" type="string" required>
     The content of the flag is passed as the child of the component.
   </Prop>
-  <Prop name="$size" type="FlagSize" enum={FlagSize} default="Small">
+  <Prop name="size" type="FlagSize" enum={FlagSize} default="Small">
     Optional size of the Flag.
   </Prop>
-  <Prop name="$spacing" type="PaddingPresetKeys" enum={PaddingPresetKeys} default="undefined">
+  <Prop name="spacing" type="PaddingPresetKeys" enum={PaddingPresetKeys} default="undefined">
     Optional spacing of the Flag.
   </Prop>
-  <Prop name="$stylePreset" type="string" default="flagSolid">
+  <Prop name="stylePreset" type="string" default="flagSolid">
     If provided, this overrides the style preset applied to the flag.
   </Prop>
-  <Prop name="$typePreset" type="string" default="flag010">
+  <Prop name="typePreset" type="string" default="flag010">
     If provided, this overrides the type preset applied to the flag.
   </Prop>
 </LegacyBlock>
@@ -53,7 +53,7 @@ Flags have a number of props to facilitate a variety of uses:
     },
     {
       name: 'Flag Size',
-      propName: '$size',
+      propName: 'size',
       options: [
         {
           label: 'Small',
@@ -68,7 +68,7 @@ Flags have a number of props to facilitate a variety of uses:
     },
     {
       name: 'Spacing',
-      propName: '$spacing',
+      propName: 'spacing',
       options: [
         {
           label: 'Default',
@@ -83,7 +83,7 @@ Flags have a number of props to facilitate a variety of uses:
     },
     {
       name: 'Style Preset',
-      propName: '$stylePreset',
+      propName: 'stylePreset',
       options: [
         {
           label: 'flagSolid',

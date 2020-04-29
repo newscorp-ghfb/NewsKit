@@ -2,9 +2,9 @@ import {styled, css, getTypePresetFromTheme, CSSObject} from '../utils/style';
 import {ColorKeys} from '../themes';
 
 export interface ParagraphProps {
-  $bold?: boolean;
-  $dropCap?: boolean;
-  $dropCapColor?: ColorKeys;
+  bold?: boolean;
+  dropCap?: boolean;
+  dropCapColor?: ColorKeys;
 }
 
 export const Paragraph = styled.p<ParagraphProps>`
@@ -16,17 +16,16 @@ export const Paragraph = styled.p<ParagraphProps>`
       marginBottom: typePreset.fontSize,
     };
   }}
-  font-weight: ${({theme, $bold}) =>
-    $bold ? theme.fonts.fontWeight030 : null};
+  font-weight: ${({theme, bold}) => (bold ? theme.fonts.fontWeight030 : null)};
 
-  ${({$dropCap, $dropCapColor, theme}) =>
-    $dropCap &&
+  ${({dropCap, dropCapColor, theme}) =>
+    dropCap &&
     css`
       &:first-letter {
         float: left;
         padding-right: 0.15em;
         ${getTypePresetFromTheme('dropCap')({theme})}
-        color: ${$dropCapColor ? theme.colors[$dropCapColor] : null};
+        color: ${dropCapColor ? theme.colors[dropCapColor] : null};
       }
     `}
 `;

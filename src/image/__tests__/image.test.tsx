@@ -91,21 +91,21 @@ describe('Utility function', () => {
       aspectWidth: 2,
       hideLoadingIcon: true,
       src: 'test-src.jpg',
-      $stylePreset: 'testPreset',
+      stylePreset: 'testPreset',
     };
     const imagePropsCopy: ImageProps = {
       aspectHeight: 3,
       aspectWidth: 2,
       hideLoadingIcon: true,
       src: 'test-src.jpg',
-      $stylePreset: 'testPreset',
+      stylePreset: 'testPreset',
     };
     const imagePropsDifferent: ImageProps = {
       aspectHeight: 2,
       aspectWidth: 1,
       hideLoadingIcon: true,
       src: 'test-source.jpg',
-      $stylePreset: 'testPreset',
+      stylePreset: 'testPreset',
     };
     test('returns true if all props are equal', () => {
       expect(imagePropsAreEqual(imageProps, imagePropsCopy)).toEqual(true);

@@ -82,10 +82,10 @@ const Sidebar: React.FC<SidebarProps> = ({
     >
       <SidebarHeader>
         <Link href="/">
-          <NewsKitLogo $color="inkBase" $size="sizing120" />
+          <NewsKitLogo color="inkBase" size="sizing120" />
         </Link>
         <Visible xs sm>
-          <LegacyBlock $display="flex" $height="100%">
+          <LegacyBlock display="flex" height="100%">
             <IconWrapper
               onClick={handleSidebarClick}
               onKeyDown={handleEnterKeyPress(handleSidebarClick)}

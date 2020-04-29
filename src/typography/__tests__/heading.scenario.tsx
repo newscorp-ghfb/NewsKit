@@ -25,12 +25,12 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <H1 $bold>Bold H1 - {title}</H1>
-          <H2 $bold>Bold H2 - {title}</H2>
-          <H3 $bold>Bold H3 - {title}</H3>
-          <H4 $bold>Bold H4 - {title}</H4>
-          <H5 $bold>Bold H5 - {title}</H5>
-          <H6 $bold>Bold H6 - {title}</H6>
+          <H1 bold>Bold H1 - {title}</H1>
+          <H2 bold>Bold H2 - {title}</H2>
+          <H3 bold>Bold H3 - {title}</H3>
+          <H4 bold>Bold H4 - {title}</H4>
+          <H5 bold>Bold H5 - {title}</H5>
+          <H6 bold>Bold H6 - {title}</H6>
         </React.Fragment>
       ),
     },

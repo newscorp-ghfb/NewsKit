@@ -1,11 +1,5 @@
 import React, {ReactChildren} from 'react';
-import {
-  StackProps,
-  Flow,
-  StackDistribution,
-  StyledStackProps,
-  StyledChildProps,
-} from './types';
+import {Flow, StackDistribution, StackProps, StyledChildProps} from './types';
 import {
   StyledMasterContainer,
   StyledChildContainer,
@@ -24,24 +18,24 @@ export const isStack = (
   component.type.displayName === Stack.displayName;
 
 const wrapChild = (
-  $theme: Theme,
-  $space: StyledStackProps['$space'],
-  $flow: StyledStackProps['$flow'],
-  $wrap: StyledStackProps['$wrap'],
+  theme: Theme,
+  space: StackProps['space'],
+  flow: StackProps['flow'],
+  wrap: StackProps['wrap'],
 ) => (
   child: React.ReactNode & {props?: {order?: number; children?: ReactChildren}},
 ) => {
   const childProps: StyledChildProps = {
-    $space,
-    $flow,
-    $wrap,
+    space,
+    flow,
+    $wrap: wrap,
   };
 
   if (isStack(child)) {
     return <Stack flexGrow {...child.props} />;
   }
 
-  if (hasSpacing($theme, $space)) {
+  if (hasSpacing(theme, space)) {
     if (isStackChild(child) && child.props.order) {
       const {
         props: {order},
@@ -57,7 +51,7 @@ const wrapChild = (
   return child;
 };
 
-export const Stack: React.FC<StackProps> = ({
+export const Stack: React.FC<Partial<StackProps>> = ({
   space = 'sizing000',
   flow = Flow.VerticalLeft,
   wrap = false,
@@ -72,14 +66,14 @@ export const Stack: React.FC<StackProps> = ({
   const theme = useTheme();
   return (
     <StyledMasterContainer
-      $space={space}
-      $flow={flow}
+      space={space}
+      flow={flow}
       $wrap={wrap}
-      $flexGrow={flexGrow}
-      $flexShrink={flexShrink}
-      $flowReverse={flowReverse}
-      $stackDistribution={stackDistribution}
-      $inline={inline}
+      flexGrow={flexGrow}
+      flexShrink={flexShrink}
+      flowReverse={flowReverse}
+      stackDistribution={stackDistribution}
+      inline={inline}
       {...props}
     >
       {children &&

@@ -11,7 +11,7 @@ export default Layout;
 
 Every style preset carries a meaning and purpose. Specific shapes, colours or effects are used to communicate intent or give cues about the interaction.
 
-<LegacyBlock $marginBottom="sizing05" $maxWidth="760px">
+<LegacyBlock marginBottom="sizing05" maxWidth="760px">
   <Image src="/static/examples/utils/style-preset.png" alt="stylepreset" />
 </LegacyBlock>
 
@@ -68,7 +68,7 @@ These can be overridden in a child theme.
 Often we will only want to update a specific instance of a component to style in a different manner, in this scenario we can pass a style preset to a component.
 Nearly all visual components will take at least one style preset. It may help to think of this as applying a class to an element in HTML.
 
-<Code>{'<Paragraph $stylePreset="interactive040" />'}</Code>
+<Code>{'<Paragraph stylePreset="interactive040" />'}</Code>
 
 If no style preset is provided, the button will render in the default state. Configuring this is detailed above.
 

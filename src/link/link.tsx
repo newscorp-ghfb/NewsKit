@@ -9,12 +9,12 @@ import {LinkProps} from './types';
 import {getStylePresetFromTheme} from '../utils/style-preset';
 
 const StyledLink = styled.a<LinkProps>`
-  ${getTypePresetFromTheme(undefined, '$font')};
-  text-decoration: ${({$noUnderline}) => ($noUnderline ? `none` : `underline`)};
+  ${getTypePresetFromTheme(undefined, 'font')};
+  text-decoration: ${({noUnderline}) => (noUnderline ? `none` : `underline`)};
   transition-property: color;
   transition-duration: ${getAnimationFromTheme('animationDuration020')};
   transition-timing-function: ${getAnimationFromTheme('animationEaseOut')};
-  ${getStylePresetFromTheme('linkPrimary', '$stylePreset')};
+  ${getStylePresetFromTheme('linkPrimary', 'stylePreset')}
 `;
 
 export const Link: React.FC<LinkProps> = props => {

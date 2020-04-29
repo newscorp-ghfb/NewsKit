@@ -15,7 +15,7 @@ Our system is built on a 4px baseline grid and we have spacing tokens available 
 Avoid using generic space tokens in favour of more specific options such as inset, squish, stretch, stack, and inline options described below.
 However, when established concepts don’t meet your needs – or you are overriding or extending a concept for a special case – use these recognisable, generic variables to persist spatial concepts and maintenance in code.
 
-<LegacyBlock $marginBottom="sizing05" $maxWidth="760px">
+<LegacyBlock marginBottom="sizing05" maxWidth="760px">
   <Image src="/static/examples/spacing/generic1.png" alt="Generic Spacing" />
 </LegacyBlock>
 
@@ -40,7 +40,7 @@ However, when established concepts don’t meet your needs – or you are overri
 An inset is the space within a container from which elements —typography, images, icons, and more — are separated from the edge.
 By default, a component’s inset should be equal on all four sides.
 
-<LegacyBlock $marginBottom="sizing05" $maxWidth="760px">
+<LegacyBlock marginBottom="sizing05" maxWidth="760px">
   <Image src="/static/examples/spacing/inset1.png" alt="Inset Spacing" />
 </LegacyBlock>
 
@@ -61,7 +61,7 @@ Apply a inset spacing token to the padding property.
 
 A squish inset reduces top and bottom padding relative to the default inset space.
 
-<LegacyBlock $marginBottom="sizing05" $maxWidth="760px">
+<LegacyBlock marginBottom="sizing05" maxWidth="760px">
   <Image
     src="/static/examples/spacing/squish-inset1.png"
     alt="Squish Spacing"
@@ -84,7 +84,7 @@ Apply a squish inset spacing token to the padding property.
 
 A stretched inset increases top and bottom padding relative to the default inset space.
 
-<LegacyBlock $marginBottom="sizing05" $maxWidth="760px">
+<LegacyBlock marginBottom="sizing05" maxWidth="760px">
   <Image
     src="/static/examples/spacing/stretch-inset1.png"
     alt="Stretch Spacing"
@@ -107,7 +107,7 @@ Apply a stretch inset spacing token to the padding property.
 
 Use a stacking value to separate block components arranged vertically in a column. The last component in a stack should omit this space.
 
-<LegacyBlock $marginBottom="sizing05" $maxWidth="760px">
+<LegacyBlock marginBottom="sizing05" maxWidth="760px">
   <Image src="/static/examples/spacing/stacking1.png" alt="Stacking Spacing" />
 </LegacyBlock>
 
@@ -133,7 +133,7 @@ Apply stacking spacing tokens to the margin property.
 
 Use inline spacing variable tokens to separate inline elements arranged horizontally and that may wrap on the right. The last component in an inline set should omit this space.
 
-<LegacyBlock $marginBottom="sizing05" $maxWidth="760px">
+<LegacyBlock marginBottom="sizing05" maxWidth="760px">
   <Image src="/static/examples/spacing/inline1.png" alt="Inline Spacing" />
 </LegacyBlock>
 
@@ -158,13 +158,13 @@ Line-heigh cropping requires a different setup for each font used in the theme. 
 
 The font config object is detailed below:
 
-<LegacyBlock $marginTop="sizing040">
+<LegacyBlock marginTop="sizing040">
   <Prop name="fontFamily" type="string" required>
     Specifies the font for an element. Since the crop utility has a different setup per font type, it is recommended to specify a single font. If invalid string provided, the font fallbacks to the default Newskit theme font - Noto Sans.
   </Prop>
   <Prop name="cropConfig" type="object">
     <span>Accepts an object with the crop configuration:</span>
-    <LegacyBlock $marginTop="sizing040" $marginLeft="sizing050">
+    <LegacyBlock marginTop="sizing040" marginLeft="sizing050">
       <Prop name="top" type="number" required>
           Constant value representing the desired crop amount at the top. Applied to calculate em-based bottom margin that works with any font size.
       </Prop>
@@ -181,7 +181,7 @@ The font config object is detailed below:
   </Prop>
   <Prop name="cropAdjustments" type="object">
     <span>Accepts an object with a key being the font size as a string. Used for additional crop adjustments per font size.</span>
-    <LegacyBlock $marginTop="sizing040" $marginLeft="sizing050">
+    <LegacyBlock marginTop="sizing040" marginLeft="sizing050">
       <Prop name="top" type="number">
           A value representing the adjusted crop amount at the top.
       </Prop>

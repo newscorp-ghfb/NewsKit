@@ -6,9 +6,9 @@ export interface AudioPlayerProps
     TrackControlProps {
   captionSrc?: string;
   popoutHref?: string;
-  $volumePresets?: SliderStylePresets;
-  $trackPresets?: SliderStylePresets & {$bufferingStylePreset?: string};
-  $controlPresets?: Partial<ControlPresets>;
+  volumePresets?: SliderStylePresets;
+  trackPresets?: SliderStylePresets & {bufferingStylePreset?: string};
+  controlPresets?: Partial<ControlPresets>;
   live?: boolean;
   time?: string;
 }

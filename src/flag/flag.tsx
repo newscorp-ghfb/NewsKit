@@ -7,34 +7,34 @@ import {BaseFlag} from '../base-flag';
 const flagSizeStyleTokens: Record<
   FlagSize,
   {
-    $typePreset: TypePresetKeys;
+    typePreset: TypePresetKeys;
     minHeight: SizingKeys;
     padding: PaddingPresetKeys;
   }
 > = {
   [FlagSize.Large]: {
-    $typePreset: 'flag020',
+    typePreset: 'flag020',
     minHeight: 'sizing060',
     padding: 'spaceInset020Squish',
   },
   [FlagSize.Small]: {
-    $typePreset: 'flag010',
+    typePreset: 'flag010',
     minHeight: 'sizing050',
     padding: 'spaceInset010Squish',
   },
 };
 
-export const Flag: React.FC<FlagProps> = props => {
-  const {$size = FlagSize.Small, $spacing} = props;
-  return (
-    <BaseFlag
-      data-testid="flag"
-      $stylePreset="flagSolid"
-      $size={$size}
-      iconSize="iconSize010"
-      {...flagSizeStyleTokens[$size]}
-      padding={$spacing || flagSizeStyleTokens[$size].padding}
-      {...props}
-    />
-  );
-};
+export const Flag: React.FC<FlagProps> = ({
+  size = FlagSize.Small,
+  spacing,
+  ...props
+}) => (
+  <BaseFlag
+    data-testid="flag"
+    stylePreset="flagSolid"
+    iconSize="iconSize010"
+    {...flagSizeStyleTokens[size]}
+    padding={spacing || flagSizeStyleTokens[size].padding}
+    {...props}
+  />
+);

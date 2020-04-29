@@ -21,9 +21,9 @@ const entries = Object.entries(icons)
         type: 'story',
         component: () => (
           <React.Fragment>
-            <Icon $size="iconSize030" />
-            <Icon $size="iconSize040" />
-            <Icon $size="iconSize050" />
+            <Icon size="iconSize030" />
+            <Icon size="iconSize040" />
+            <Icon size="iconSize050" />
             <Constrain>
               <Icon />
             </Constrain>
@@ -37,13 +37,13 @@ const entries = Object.entries(icons)
       type: 'story',
       component: () => (
         <React.Fragment>
-          <Icon $size="iconSize030" />
-          <Icon $size="iconSize040" />
-          <Icon $size="iconSize050" />
-          <Icon $color="semanticNegative030" $size="iconSize050" />
-          <Icon $color="semanticPositive030" $size="iconSize050" />
-          <Icon $color="semanticNotice010" $size="iconSize050" />
-          <Icon $color="semanticInformative010" $size="iconSize050" />
+          <Icon size="iconSize030" />
+          <Icon size="iconSize040" />
+          <Icon size="iconSize050" />
+          <Icon color="semanticNegative030" size="iconSize050" />
+          <Icon color="semanticPositive030" size="iconSize050" />
+          <Icon color="semanticNotice010" size="iconSize050" />
+          <Icon color="semanticInformative010" size="iconSize050" />
           <Constrain>
             <Icon />
           </Constrain>

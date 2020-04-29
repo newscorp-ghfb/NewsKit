@@ -30,7 +30,7 @@ export interface ControlPanelProps extends TrackControlProps {
   togglePlay: () => void;
   onClickBackward?: () => void;
   onClickForward?: () => void;
-  $controlPresets: ControlPresets;
+  controlPresets: ControlPresets;
 }
 
 export const ButtonsContainer = styled(Stack)`
@@ -50,7 +50,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
     onClickBackward,
     onClickForward,
     togglePlay,
-    $controlPresets: {previous, replay, play, forward, next},
+    controlPresets: {previous, replay, play, forward, next},
   }) => (
     <Stack
       flow={Flow.HorizontalCenter}
@@ -69,18 +69,18 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
             canPause={showControls}
             isPlaying={isPlaying}
             onClick={togglePlay}
-            $stylePreset={play}
+            stylePreset={play}
             isLoading={isLoading}
           />
         </StackChild>
         <StackChild order={2}>
           {showControls && onClickBackward && (
-            <BackwardButton onClick={onClickBackward} $stylePreset={replay} />
+            <BackwardButton onClick={onClickBackward} stylePreset={replay} />
           )}
         </StackChild>
         <StackChild order={3}>
           {showControls && onClickForward && (
-            <ForwardButton onClick={onClickForward} $stylePreset={forward} />
+            <ForwardButton onClick={onClickForward} stylePreset={forward} />
           )}
         </StackChild>
 
@@ -89,7 +89,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
             <SkipPreviousButton
               onClick={onPreviousTrack}
               disabled={disablePreviousTrack}
-              $stylePreset={previous}
+              stylePreset={previous}
             />
           )}
         </StackChild>
@@ -99,7 +99,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
             <SkipNextButton
               onClick={onNextTrack}
               disabled={disableNextTrack}
-              $stylePreset={next}
+              stylePreset={next}
             />
           )}
         </StackChild>

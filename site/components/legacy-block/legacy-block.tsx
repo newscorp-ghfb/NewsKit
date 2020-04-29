@@ -1,9 +1,10 @@
+import React from 'react';
 import {StyledComponent} from '@emotion/styled';
 import {styled, ColorKeys, SizingKeys, Theme} from 'newskit';
 import {build} from './style-builder';
-import {LegacyBlockProps} from './types';
+import {LegacyBlockProps, StyledBlockProps} from './types';
 
-const getStyleFromProps = (props: LegacyBlockProps & {theme: Theme}) => {
+const getStyleFromProps = (props: StyledBlockProps & {theme: Theme}) => {
   const {breakpoints, colors, typePresets, sizing} = props.theme;
 
   const getColor = (color: ColorKeys | string) =>
@@ -20,119 +21,119 @@ const getStyleFromProps = (props: LegacyBlockProps & {theme: Theme}) => {
     })
     .apply({
       property: 'backgroundColor',
-      value: props.$backgroundColor,
+      value: props.backgroundColor,
       transform: getColor,
     })
     .apply({
       property: 'fontFamily',
-      value: props.$font,
+      value: props.font,
       transform: font =>
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         typePresets[font] && (typePresets[font] as any).fontFamily,
     })
     .apply({
       property: 'fontWeight',
-      value: props.$font,
+      value: props.font,
       transform: font =>
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         typePresets[font] && (typePresets[font] as any).fontWeight,
     })
     .apply({
       property: 'fontSize',
-      value: props.$font,
+      value: props.font,
       transform: font =>
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         typePresets[font] && (typePresets[font] as any).fontSize,
     })
     .apply({
       property: 'lineHeight',
-      value: props.$font,
+      value: props.font,
       transform: font =>
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         typePresets[font] && (typePresets[font] as any).lineHeight,
     })
     .apply({
       property: 'border',
-      value: props.$border,
+      value: props.border,
     })
     .apply({
       property: 'borderTop',
-      value: props.$borderTop,
+      value: props.borderTop,
     })
     .apply({
       property: 'borderRight',
-      value: props.$borderRight,
+      value: props.borderRight,
     })
     .apply({
       property: 'borderBottom',
-      value: props.$borderBottom,
+      value: props.borderBottom,
     })
     .apply({
       property: 'borderLeft',
-      value: props.$borderLeft,
+      value: props.borderLeft,
     })
     .apply({
       property: 'borderStyle',
-      value: props.$borderStyle,
+      value: props.borderStyle,
     })
     .apply({
       property: 'borderWidth',
-      value: props.$borderWidth,
+      value: props.borderWidth,
       transform: getSize,
     })
     .apply({
       property: 'borderColor',
-      value: props.$borderColor,
+      value: props.borderColor,
       transform: getColor,
     })
     .apply({
       property: 'margin',
-      value: props.$margin,
+      value: props.margin,
       transform: getSize,
     })
     .apply({
       property: 'marginTop',
-      value: props.$marginTop,
+      value: props.marginTop,
       transform: getSize,
     })
     .apply({
       property: 'marginRight',
-      value: props.$marginRight,
+      value: props.marginRight,
       transform: getSize,
     })
     .apply({
       property: 'marginBottom',
-      value: props.$marginBottom,
+      value: props.marginBottom,
       transform: getSize,
     })
     .apply({
       property: 'marginLeft',
-      value: props.$marginLeft,
+      value: props.marginLeft,
       transform: getSize,
     })
     .apply({
       property: 'padding',
-      value: props.$padding,
+      value: props.padding,
       transform: getSize,
     })
     .apply({
       property: 'paddingTop',
-      value: props.$paddingTop,
+      value: props.paddingTop,
       transform: getSize,
     })
     .apply({
       property: 'paddingRight',
-      value: props.$paddingRight,
+      value: props.paddingRight,
       transform: getSize,
     })
     .apply({
       property: 'paddingBottom',
-      value: props.$paddingBottom,
+      value: props.paddingBottom,
       transform: getSize,
     })
     .apply({
       property: 'paddingLeft',
-      value: props.$paddingLeft,
+      value: props.paddingLeft,
       transform: getSize,
     })
     .apply({
@@ -147,22 +148,22 @@ const getStyleFromProps = (props: LegacyBlockProps & {theme: Theme}) => {
     })
     .apply({
       property: 'maxWidth',
-      value: props.$maxWidth,
+      value: props.maxWidth,
       transform: maxWidth => getSize(maxWidth as SizingKeys),
     })
     .apply({
       property: 'maxHeight',
-      value: props.$maxHeight,
+      value: props.maxHeight,
       transform: maxHeight => getSize(maxHeight as SizingKeys),
     })
     .apply({
       property: 'minWidth',
-      value: props.$minWidth,
+      value: props.minWidth,
       transform: minWidth => getSize(minWidth as SizingKeys),
     })
     .apply({
       property: 'minHeight',
-      value: props.$minHeight,
+      value: props.minHeight,
       transform: minHeight => getSize(minHeight as SizingKeys),
     })
     .apply({
@@ -171,48 +172,48 @@ const getStyleFromProps = (props: LegacyBlockProps & {theme: Theme}) => {
     })
     .apply({
       property: 'flexWrap',
-      value: props.$flexWrap,
+      value: props.flexWrap,
       transform: flexWrap => (flexWrap ? 'wrap' : undefined),
     })
     .apply({
       property: 'flexDirection',
-      value: props.$flexDirection,
+      value: props.flexDirection,
     })
     .apply({
       property: 'flexGrow',
-      value: props.$flexGrow,
+      value: props.flexGrow,
     })
     .apply({
       property: 'justifyContent',
-      value: props.$justifyContent,
+      value: props.justifyContent,
     })
     .apply({
       property: 'alignItems',
-      value: props.$alignItems,
+      value: props.alignItems,
     })
     .apply({
       property: 'alignSelf',
-      value: props.$alignSelf,
+      value: props.alignSelf,
     })
     .apply({
       property: 'position',
-      value: props.$position,
+      value: props.position,
     })
     .apply({
       property: 'top',
-      value: props.$top,
+      value: props.top,
     })
     .apply({
       property: 'right',
-      value: props.$right,
+      value: props.right,
     })
     .apply({
       property: 'bottom',
-      value: props.$bottom,
+      value: props.bottom,
     })
     .apply({
       property: 'left',
-      value: props.$left,
+      value: props.left,
     })
     .apply({
       property: 'overflow',
@@ -227,7 +228,25 @@ const getStyleFromProps = (props: LegacyBlockProps & {theme: Theme}) => {
     .value();
 };
 
-export const LegacyBlock = (styled.div(
+const StyledBlock = (styled.div(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   getStyleFromProps as any,
-) as unknown) as StyledComponent<LegacyBlockProps, {}, Theme>;
+) as unknown) as StyledComponent<StyledBlockProps, {}, Theme>;
+
+export const LegacyBlock: React.FC<LegacyBlockProps> = ({
+  height,
+  color,
+  overflow,
+  width,
+  display,
+  ...props
+}) => (
+  <StyledBlock
+    {...props}
+    $display={display}
+    $height={height}
+    $width={width}
+    $color={color}
+    $overflow={overflow}
+  />
+);

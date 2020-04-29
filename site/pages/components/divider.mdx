@@ -18,11 +18,11 @@ The purpose of this component is to visually separate elements of the content.
 <Playground
   componentName="Divider"
   newskitPath="/divider"
-  component={(state) => <LegacyBlock $width="100%"><Divider {...state} /></LegacyBlock>}
+  component={(state) => <LegacyBlock width="100%"><Divider {...state} /></LegacyBlock>}
   knobs={[
     {
       name: 'Color',
-      propName: '$color',
+      propName: 'color',
       options: [
         {
           label: 'interface030',
@@ -41,7 +41,7 @@ The purpose of this component is to visually separate elements of the content.
     },
     {
       name: 'Border',
-      propName: '$border',
+      propName: 'border',
       options: [
         {
           label: 'borderWidth010',
@@ -60,7 +60,7 @@ The purpose of this component is to visually separate elements of the content.
     },
     {
       name: 'Margin Top',
-      propName: '$marginTop',
+      propName: 'marginTop',
       options: [
         {
           label: 'undefined',
@@ -83,7 +83,7 @@ The purpose of this component is to visually separate elements of the content.
     },
     {
       name: 'Margin Right',
-      propName: '$marginRight',
+      propName: 'marginRight',
       options: [
         {
           label: 'undefined',
@@ -106,7 +106,7 @@ The purpose of this component is to visually separate elements of the content.
     },
     {
       name: 'Margin Bottom',
-      propName: '$marginBottom',
+      propName: 'marginBottom',
       options: [
         {
           label: 'undefined',
@@ -129,7 +129,7 @@ The purpose of this component is to visually separate elements of the content.
     },
     {
       name: 'Margin Left',
-      propName: '$marginLeft',
+      propName: 'marginLeft',
       options: [
         {
           label: 'undefined',
@@ -158,22 +158,22 @@ The purpose of this component is to visually separate elements of the content.
 Divider have a number of props to facilitate a variety of uses. Custom and required props are detailed below:
 
 <LegacyBlock marginTop="sizing05">
-  <Prop name="$color" type="ColorKeys">
+  <Prop name="color" type="ColorKeys">
     If provided, overrides the color of the divider.
   </Prop>
-  <Prop name="$border" type="BorderKeys">
+  <Prop name="border" type="BorderKeys">
     If provided, overrides the thickness of the divider.
   </Prop>
-  <Prop name="$marginTop" type="SizingKeys">
+  <Prop name="marginTop" type="SizingKeys">
     Specifies the top offset of the divider.
   </Prop>
-  <Prop name="$marginRight" type="SizingKeys">
+  <Prop name="marginRight" type="SizingKeys">
     Specifies the right offset of the divider.
   </Prop>
-  <Prop name="$marginBottom" type="SizingKeys">
+  <Prop name="marginBottom" type="SizingKeys">
     Specifies the bottom offset of the divider.
   </Prop>
-  <Prop name="$marginLeft" type="SizingKeys">
+  <Prop name="marginLeft" type="SizingKeys">
     Specifies the left offset of the divider.
   </Prop>
 </LegacyBlock>

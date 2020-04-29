@@ -17,7 +17,7 @@ Retrieve a font token from the current theme. Font tokens are CSS values to be t
 
 ## Parameters
 
-<LegacyBlock $marginTop='sizing040'>
+<LegacyBlock marginTop='sizing040'>
   <Prop name='defaultToken' type='ThemeToken'>
     Is the name of the font token to be retrieved. If provided, it is used as an object key on the font section of the theme to get the token value.
   </Prop>
@@ -43,6 +43,6 @@ In this example the `Paragraph` component will use the font-weight value from `f
 
 <Code>{'<Paragraph />'}</Code>
 
-However, it will include the value from `fontWeight040` if the `Paragraph` is used with the `$fontWeight` prop and the value passed in is `fontWeight040`:
+However, it will include the value from `fontWeight040` if the `Paragraph` is used with the `fontWeight` prop and the value passed in is `fontWeight040`:
 
-<Code>{'<Paragraph $fontWeight="fontWeight040" />'}</Code>
+<Code>{'<Paragraph fontWeight="fontWeight040" />'}</Code>

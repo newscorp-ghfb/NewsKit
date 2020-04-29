@@ -80,9 +80,8 @@ describe('ConsentSettingsLink', () => {
         siteId,
         privacyManagerId,
         children: 'Some Custom Link Text With Styles',
-        $noUnderline: true,
-        $color: 'inkBase',
-        $font: 'body010',
+        noUnderline: true,
+        font: 'body010',
       });
       expect(fragment).toMatchSnapshot();
     });

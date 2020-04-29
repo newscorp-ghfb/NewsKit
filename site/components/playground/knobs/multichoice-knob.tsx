@@ -88,7 +88,7 @@ export const MultiChoiceKnob: React.FC<MultiChoiceKnobProps> = ({
   const hash = getHash();
   return (
     <KnobContainer>
-      <LegacyBlock $display="inline" $position="relative">
+      <LegacyBlock display="inline" position="relative">
         <StyledFieldset>
           <StyledLegend>{name}</StyledLegend>
           {options.map(({value, label}) => {

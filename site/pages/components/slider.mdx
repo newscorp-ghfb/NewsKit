@@ -19,7 +19,7 @@ NewsKit also exports a StatefulSlider component which has the same props (except
 
 ## Props
 
-<LegacyBlock $marginTop="sizing05">
+<LegacyBlock marginTop="sizing05">
   <Prop name="min" required type="number">
     The minimum value the slider can be set to, either at the left or the bottom
     of the slider depending on orientation.
@@ -78,23 +78,23 @@ NewsKit also exports a StatefulSlider component which has the same props (except
     receives the current thumb value as its children. If left undefined or set
     falsy, no thumb label is rendered.
   </Prop>
-  <Prop name="$sliderTrackStylePreset" type="string" default="sliderTrack">
+  <Prop name="sliderTrackStylePreset" type="string" default="sliderTrack">
     If provided, this overrides the style preset applied to the slider track.
   </Prop>
-  <Prop name="$sliderIndicatorTrackStylePreset" type="string" default="sliderIndicator">
+  <Prop name="sliderIndicatorTrackStylePreset" type="string" default="sliderIndicator">
     If provided, this overrides the style preset applied to the slider
     indicator. Only the background colour of this preset is used, other
     properties such as borders are ignored and will take the style of the
-    $sliderTrackStylePreset.
+    sliderTrackStylePreset.
   </Prop>
-  <Prop name="$sliderThumbStylePreset" type="string" default="sliderThumb">
+  <Prop name="sliderThumbStylePreset" type="string" default="sliderThumb">
     If provided, this overrides the style preset applied to the slider thumb.
   </Prop>
-  <Prop name="$sliderLabelsStylePreset" type="string" default="sliderLabels">
+  <Prop name="sliderLabelsStylePreset" type="string" default="sliderLabels">
     If provided, this overrides the style preset applied to the in-built slider
     labels. This includes string min and max labels, as well as the thumb label.
     Custom label components passed in to the slider will not have the
-    $sliderLabelsStylePreset applied.
+    sliderLabelsStylePreset applied.
   </Prop>
   <Prop
     name="renderTrack"
@@ -117,10 +117,10 @@ NewsKit also exports a StatefulSlider component which has the same props (except
     to this thumb (this is useful if rendering more than one value), isDragged;
     this may affect how you wish to style your thumb.
   </Prop>
-  <Prop name="$trackSize" type="SizingKeys" default="sizing030">
+  <Prop name="trackSize" type="SizingKeys" default="sizing030">
     If provided, this overrides the size of the track rendered.
   </Prop>
-  <Prop name="$thumbSize" type="SizingKeys" default="sizing060">
+  <Prop name="thumbSize" type="SizingKeys" default="sizing060">
     If provided, this overrides the size of the thumb rendered.
   </Prop>
 </LegacyBlock>
@@ -132,8 +132,8 @@ NewsKit also exports a StatefulSlider component which has the same props (except
   newskitPath="/slider"
   component={props => (
     <LegacyBlock
-      $width="100%"
-      $height={props.vertical ? '240px' : undefined}
+      width="100%"
+      height={props.vertical ? '240px' : undefined}
       style={{textAlign: 'center'}}
     >
       <StatefulSlider {...props} />
@@ -181,7 +181,7 @@ NewsKit also exports a StatefulSlider component which has the same props (except
         },
         {
           label: 'Component',
-          value: withProps(Circle, {$size: 'sizing040'}, 'MyLabelIcon'),
+          value: withProps(Circle, {size: 'sizing040'}, 'MyLabelIcon'),
         },
       ],
     },
@@ -200,7 +200,7 @@ NewsKit also exports a StatefulSlider component which has the same props (except
         },
         {
           label: 'Component',
-          value: withProps(Circle, {$size: 'sizing040'}, 'MyLabelIcon'),
+          value: withProps(Circle, {size: 'sizing040'}, 'MyLabelIcon'),
         },
       ],
     },

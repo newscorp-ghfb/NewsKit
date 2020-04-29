@@ -44,7 +44,7 @@ describe('Tag', () => {
   test.each(tagSizeKeys)('renders with %s size', currentSize => {
     const tagSize = TagSize[currentSize];
     const fragment = renderToFragmentWithTheme(Tag, {
-      $size: tagSize,
+      size: tagSize,
       children,
     } as TagProps);
     expect(fragment).toMatchSnapshot();
@@ -52,7 +52,7 @@ describe('Tag', () => {
 
   test('renders a tag with an icon', () => {
     const fragment = renderToFragmentWithTheme(Tag, {
-      children: [<Email $size="iconSize010" />, 'Text'],
+      children: [<Email size="iconSize010" />, 'Text'],
     } as TagProps);
     expect(fragment).toMatchSnapshot();
   });

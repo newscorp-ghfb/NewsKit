@@ -8,12 +8,12 @@ describe('Divider', () => {
   });
   test('renders with props', () => {
     const fragment = renderToFragmentWithTheme(Divider, {
-      $color: 'interface050',
-      $border: 'borderWidth030',
-      $marginTop: 'sizing040',
-      $marginRight: 'sizing090',
-      $marginBottom: 'sizing040',
-      $marginLeft: 'sizing090',
+      color: 'interface050',
+      border: 'borderWidth030',
+      marginTop: 'sizing040',
+      marginRight: 'sizing090',
+      marginBottom: 'sizing040',
+      marginLeft: 'sizing090',
     });
 
     expect(fragment).toMatchSnapshot();

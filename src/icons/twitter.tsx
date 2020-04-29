@@ -4,10 +4,10 @@ import {Svg} from './svg';
 import {ColoredSvgProps} from './types';
 
 const defaultIcon: React.FC<ColoredSvgProps> = ({
-  $size,
+  size,
   title = 'Twitter logo',
 }) => (
-  <Svg viewBox="0 0 400 400" $size={$size} title={title}>
+  <Svg viewBox="0 0 400 400" size={size} title={title}>
     <g>
       <circle fill="#1DA1F2" cx="200" cy="200" r="200" />
     </g>

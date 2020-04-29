@@ -824,7 +824,6 @@ exports[`Audio Player live player renders as expected 1`] = `
           >
             <div
               class="emotion-14"
-              order="2"
             >
               <div
                 class="emotion-23"
@@ -837,7 +836,6 @@ exports[`Audio Player live player renders as expected 1`] = `
                   >
                     <div
                       class="emotion-12"
-                      order="3"
                     >
                       <button
                         aria-pressed="false"
@@ -892,7 +890,6 @@ exports[`Audio Player live player renders as expected 1`] = `
                   >
                     <div
                       class="emotion-14"
-                      order="2"
                     />
                   </div>
                   <div
@@ -900,7 +897,6 @@ exports[`Audio Player live player renders as expected 1`] = `
                   >
                     <div
                       class="emotion-12"
-                      order="3"
                     />
                   </div>
                   <div
@@ -908,7 +904,6 @@ exports[`Audio Player live player renders as expected 1`] = `
                   >
                     <div
                       class="emotion-18"
-                      order="1"
                     />
                   </div>
                   <div
@@ -916,7 +911,6 @@ exports[`Audio Player live player renders as expected 1`] = `
                   >
                     <div
                       class="emotion-20"
-                      order="5"
                     />
                   </div>
                 </div>
@@ -924,7 +918,6 @@ exports[`Audio Player live player renders as expected 1`] = `
             </div>
             <div
               class="emotion-18"
-              order="1"
             >
               <div
                 class="emotion-38"
@@ -1041,7 +1034,6 @@ exports[`Audio Player live player renders as expected 1`] = `
             </div>
             <div
               class="emotion-12"
-              order="3"
             >
               <div
                 class="emotion-38"
@@ -2373,6 +2365,20 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   color: #535353;
 }
 
+.emotion-56 svg {
+  fill: #535353;
+  color: #535353;
+}
+
+.emotion-56:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-56:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
 .emotion-4 {
   display: inline-block;
   position: relative;
@@ -2561,7 +2567,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
           >
             <div
               class="emotion-11"
-              order="2"
             >
               <div
                 class="emotion-32"
@@ -2574,7 +2579,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                   >
                     <div
                       class="emotion-5"
-                      order="3"
                     >
                       <button
                         aria-pressed="false"
@@ -2613,7 +2617,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                   >
                     <div
                       class="emotion-11"
-                      order="2"
                     >
                       <button
                         class="emotion-10"
@@ -2651,7 +2654,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                   >
                     <div
                       class="emotion-5"
-                      order="3"
                     >
                       <button
                         class="emotion-10"
@@ -2696,7 +2698,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                   >
                     <div
                       class="emotion-23"
-                      order="1"
                     >
                       <button
                         class="emotion-10"
@@ -2738,7 +2739,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                   >
                     <div
                       class="emotion-29"
-                      order="5"
                     >
                       <button
                         class="emotion-10"
@@ -2780,7 +2780,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
             </div>
             <div
               class="emotion-23"
-              order="1"
             >
               <div
                 class="emotion-47"
@@ -2897,7 +2896,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
             </div>
             <div
               class="emotion-5"
-              order="3"
             >
               <div
                 class="emotion-47"
@@ -3950,6 +3948,20 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   color: #535353;
 }
 
+.emotion-59 svg {
+  fill: #535353;
+  color: #535353;
+}
+
+.emotion-59:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-59:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
 <section
     aria-label="audio player"
     class="emotion-66"
@@ -3985,7 +3997,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
           >
             <div
               class="emotion-18"
-              order="2"
             >
               <div
                 class="emotion-35"
@@ -3998,7 +4009,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                   >
                     <div
                       class="emotion-12"
-                      order="3"
                     >
                       <button
                         aria-pressed="false"
@@ -4053,7 +4063,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                   >
                     <div
                       class="emotion-18"
-                      order="2"
                     >
                       <button
                         class="emotion-17"
@@ -4091,7 +4100,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                   >
                     <div
                       class="emotion-12"
-                      order="3"
                     >
                       <button
                         class="emotion-17"
@@ -4136,7 +4144,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                   >
                     <div
                       class="emotion-30"
-                      order="1"
                     >
                       <button
                         class="emotion-17"
@@ -4179,7 +4186,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                   >
                     <div
                       class="emotion-32"
-                      order="5"
                     />
                   </div>
                 </div>
@@ -4187,7 +4193,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
             </div>
             <div
               class="emotion-30"
-              order="1"
             >
               <div
                 class="emotion-50"
@@ -4304,7 +4309,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
             </div>
             <div
               class="emotion-12"
-              order="3"
             >
               <div
                 class="emotion-50"

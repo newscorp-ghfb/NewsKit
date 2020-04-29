@@ -12,22 +12,22 @@ interface CommonProps {
 
 export interface StyledTrackProps extends CommonProps {
   isDragged: boolean;
-  $trackSize?: SizingKeys;
-  $thumbSize?: SizingKeys;
-  $stylePreset?: string;
+  trackSize?: SizingKeys;
+  thumbSize?: SizingKeys;
+  stylePreset?: string;
 }
 
-export interface ThumbLabelProps extends Omit<StyledTrackProps, '$trackSize'> {
+export interface ThumbLabelProps extends Omit<StyledTrackProps, 'trackSize'> {
   index: number;
   children: number;
 }
 
 export interface SliderStylePresets {
-  $sliderIndicatorTrackStylePreset?: string;
-  $sliderThumbStylePreset?: string;
-  $sliderLabelsStylePreset?: string;
-  $sliderThumbLabelStylePreset?: string;
-  $sliderTrackStylePreset?: string;
+  sliderIndicatorTrackStylePreset?: string;
+  sliderThumbStylePreset?: string;
+  sliderLabelsStylePreset?: string;
+  sliderThumbLabelStylePreset?: string;
+  sliderTrackStylePreset?: string;
 }
 
 // see https://github.com/tajo/react-range#range--props
@@ -43,9 +43,9 @@ interface CommonSliderProps extends CommonProps, SliderStylePresets {
   labelPosition?: LabelPosition;
   thumbLabel?: boolean | React.ComponentType<ThumbLabelProps>;
   dataTestId?: string;
-  $trackSize?: SizingKeys;
-  $thumbSize?: SizingKeys;
-  $labelStackSpace?: SizingKeys;
+  trackSize?: SizingKeys;
+  thumbSize?: SizingKeys;
+  labelStackSpace?: SizingKeys;
   renderTrack?: RenderTrackFunction;
   renderThumb?: RenderThumbFunction;
   onKeyDown?: (e: React.KeyboardEvent<HTMLElement>) => void;

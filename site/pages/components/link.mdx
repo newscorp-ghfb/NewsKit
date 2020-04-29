@@ -41,15 +41,15 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
     Passed to the href attribute of the rendered anchor element. The provided
     URL or fragment identifier will be loaded when the link is clicked.
   </Prop>
-  <Prop name="$font" type="TypePresetKeys">
+  <Prop name="font" type="TypePresetKeys">
     If provided, uses that type preset. Without this, none is set and the
     underlying anchor element will inherit its parent font properties.
   </Prop>
-  <Prop name="$color" type="ColorKeys">
+  <Prop name="color" type="ColorKeys">
     If provided, overrides the text color of the link including psuedo
     selectors. Overriding individual pseudo selectors can be done via a theme.
   </Prop>
-  <Prop name="$noUnderline" type="boolean">
+  <Prop name="noUnderline" type="boolean">
     If provided, determines if the link will be underlined.
   </Prop>
 </LegacyBlock>
@@ -73,7 +73,7 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
     },
     {
       name: 'Color',
-      propName: '$color',
+      propName: 'color',
       options: [
         {
           label: 'undefined',
@@ -96,7 +96,7 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
     },
     {
       name: 'Font',
-      propName: '$font',
+      propName: 'font',
       options: [
         {
           label: 'undefined',
@@ -119,7 +119,7 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
     },
     {
       name: 'No Underline',
-      propName: '$noUnderline',
+      propName: 'noUnderline',
       options: [
         {
           label: 'undefined',

@@ -48,27 +48,27 @@ const Article: React.FC = () => (
             <DateLine
               date="2019-10-30T13:18:17Z"
               dateFormat="d MMMM yyyy"
-              $color="inkSubtle"
+              color="inkSubtle"
             />
           </Cell>
 
           <Cell xs={12} md={6}>
             <ShareBar>
               <IconButton
-                $size={ButtonSize.Large}
-                $stylePreset="buttonSocialTwitter"
+                size={ButtonSize.Large}
+                stylePreset="buttonSocialTwitter"
               >
                 <Twitter />
               </IconButton>
               <IconButton
-                $size={ButtonSize.Large}
-                $stylePreset="buttonSocialFacebook"
+                size={ButtonSize.Large}
+                stylePreset="buttonSocialFacebook"
               >
                 <Facebook />
               </IconButton>
               <IconButton
-                $size={ButtonSize.Large}
-                $stylePreset="buttonSocialWhatsapp"
+                size={ButtonSize.Large}
+                stylePreset="buttonSocialWhatsapp"
               >
                 <WhatsApp />
               </IconButton>
@@ -85,7 +85,7 @@ const Article: React.FC = () => (
           </Cell>
 
           <Cell xs={12}>
-            <ArticleContent $boldIntro $boldHeadings>
+            <ArticleContent boldIntro boldHeadings>
               <P>
                 Chopped, sliced or wedged, hard-cooked eggs are the basis of egg
                 salad and add protein and a happy glow to tossed and composed
@@ -130,8 +130,8 @@ const Article: React.FC = () => (
 
           <Cell xs={12}>
             <TagList
-              $size={TagSize.Small}
-              $spacing="sizing040"
+              size={TagSize.Small}
+              spacing="sizing040"
               tagData={[
                 {
                   label: 'Cooking',

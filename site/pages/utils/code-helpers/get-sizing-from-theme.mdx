@@ -17,7 +17,7 @@ Retrieve a sizing token from the current theme. Sizing tokens are CSS values to 
 
 ## Parameters
 
-<LegacyBlock $marginTop='sizing040'>
+<LegacyBlock marginTop='sizing040'>
   <Prop name='defaultToken' type='ThemeToken'>
     Is the name of the sizing token to be retrieved. If provided, it is used as an object key on the sizing section of the theme to get the token value.
   </Prop>
@@ -43,6 +43,6 @@ In this example the `Paragraph` component will use the sizing value from `sizing
 
 <Code>{'<Paragraph />'}</Code>
 
-However, it will include the value from `sizing030` if the `Paragraph` is used with the `$marginBottom` prop and the value passed in is `sizing030`:
+However, it will include the value from `sizing030` if the `Paragraph` is used with the `marginBottom` prop and the value passed in is `sizing030`:
 
-<Code>{'<Paragraph $marginBottom="sizing030" />'}</Code>
+<Code>{'<Paragraph marginBottom="sizing030" />'}</Code>

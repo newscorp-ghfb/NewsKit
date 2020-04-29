@@ -30,9 +30,9 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     onPreviousTrack,
     disablePreviousTrack = !onPreviousTrack,
     popoutHref,
-    $volumePresets,
-    $trackPresets,
-    $controlPresets,
+    volumePresets,
+    trackPresets,
+    controlPresets,
     src,
     autoPlay,
     children,
@@ -41,31 +41,31 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     ...restProps
   } = props;
 
-  const volumePresets: Required<AudioPlayerProps['$volumePresets']> = {
-    $sliderIndicatorTrackStylePreset: 'volumeControlTrackIndicator',
-    $sliderThumbStylePreset: 'volumeControlThumb',
-    $sliderLabelsStylePreset: 'volumeControlButtons',
-    $sliderThumbLabelStylePreset: 'volumeControlLabels',
-    $sliderTrackStylePreset: 'volumeControlTrack',
-    ...$volumePresets,
+  const volumePresetObj: Required<AudioPlayerProps['volumePresets']> = {
+    sliderIndicatorTrackStylePreset: 'volumeControlTrackIndicator',
+    sliderThumbStylePreset: 'volumeControlThumb',
+    sliderLabelsStylePreset: 'volumeControlButtons',
+    sliderThumbLabelStylePreset: 'volumeControlLabels',
+    sliderTrackStylePreset: 'volumeControlTrack',
+    ...volumePresets,
   };
-  const trackPresets: Required<AudioPlayerProps['$trackPresets']> = {
-    $sliderIndicatorTrackStylePreset: 'audioPlayerSeekBarIndicator',
-    $sliderThumbStylePreset: 'audioPlayerThumb',
-    $sliderLabelsStylePreset: 'audioPlayerLabels',
-    $sliderThumbLabelStylePreset: 'audioPlayerLabels',
-    $sliderTrackStylePreset: 'audioPlayerSeekBarTrack',
-    $bufferingStylePreset: 'audioPlayerSeekBarBuffering',
-    ...$trackPresets,
+  const trackPresetObj: Required<AudioPlayerProps['trackPresets']> = {
+    sliderIndicatorTrackStylePreset: 'audioPlayerSeekBarIndicator',
+    sliderThumbStylePreset: 'audioPlayerThumb',
+    sliderLabelsStylePreset: 'audioPlayerLabels',
+    sliderThumbLabelStylePreset: 'audioPlayerLabels',
+    sliderTrackStylePreset: 'audioPlayerSeekBarTrack',
+    bufferingStylePreset: 'audioPlayerSeekBarBuffering',
+    ...trackPresets,
   };
-  const controlPresets: Required<AudioPlayerProps['$controlPresets']> = {
+  const controlPresetObj: Required<AudioPlayerProps['controlPresets']> = {
     previous: 'audioPlayerControlButton',
     replay: 'audioPlayerControlButton',
     play: 'audioPlayerPlayPauseButton',
     forward: 'audioPlayerControlButton',
     next: 'audioPlayerControlButton',
     popout: 'audioPlayerControlButton',
-    ...$controlPresets,
+    ...controlPresets,
   };
 
   const [volume, setVolume] = useState(0);
@@ -144,19 +144,19 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
           theme,
           'base',
           'backgroundColor',
-          trackPresets.$sliderTrackStylePreset,
+          trackPresetObj.sliderTrackStylePreset,
         ),
         getSingleStylePreset(
           theme,
           'base',
           'backgroundColor',
-          trackPresets.$sliderIndicatorTrackStylePreset,
+          trackPresetObj.sliderIndicatorTrackStylePreset,
         ),
         getSingleStylePreset(
           theme,
           'base',
           'backgroundColor',
-          trackPresets.$bufferingStylePreset,
+          trackPresetObj.bufferingStylePreset,
         ),
         trackPositionArr,
         buffered,
@@ -167,9 +167,9 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
           {...trackProps}
           values={trackPositionArr}
           isDragged={isDragged}
-          $stylePreset={trackPresets.$sliderTrackStylePreset}
-          $trackSize="sizing020"
-          $thumbSize="sizing040"
+          stylePreset={trackPresetObj.sliderTrackStylePreset}
+          trackSize="sizing020"
+          thumbSize="sizing040"
           style={{
             background: getTrackBackground({
               values,
@@ -189,9 +189,9 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
       duration,
       theme,
       trackPositionArr,
-      trackPresets.$bufferingStylePreset,
-      trackPresets.$sliderIndicatorTrackStylePreset,
-      trackPresets.$sliderTrackStylePreset,
+      trackPresetObj.bufferingStylePreset,
+      trackPresetObj.sliderIndicatorTrackStylePreset,
+      trackPresetObj.sliderTrackStylePreset,
     ],
   );
 
@@ -255,22 +255,22 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
                 onClickBackward={onClickBackward}
                 onClickForward={onClickForward}
                 togglePlay={togglePlay}
-                $controlPresets={controlPresets}
+                controlPresets={controlPresetObj}
               />
             </StackChild>
             <StackChild order={1}>
-              <ControlContainer $playerTrackSize="sizing050" xs sm>
+              <ControlContainer playerTrackSize="sizing050" xs sm>
                 <VolumeControl
                   volume={volume}
                   onChange={onChangeVolumeSlider}
-                  $trackSize="sizing010"
-                  $thumbSize="sizing040"
-                  {...volumePresets}
+                  trackSize="sizing010"
+                  thumbSize="sizing040"
+                  {...volumePresetObj}
                 />
               </ControlContainer>
             </StackChild>
             <StackChild order={3}>
-              <ControlContainer $playerTrackSize="sizing050" xs sm>
+              <ControlContainer playerTrackSize="sizing050" xs sm>
                 <Stack
                   flow={Flow.VerticalRight}
                   stackDistribution={StackDistribution.End}
@@ -279,7 +279,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
                     <PopoutButton
                       onClick={onPopoutClick}
                       href={popoutHref}
-                      $stylePreset={controlPresets.popout}
+                      stylePreset={controlPresetObj.popout}
                     />
                   )}
                 </Stack>
@@ -301,8 +301,8 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
               ariaValueText={`${seekBarAriaValueText(
                 trackPositionArr,
               )} of ${seekBarAriaValueText([duration])}`}
-              $thumbSize="sizing040"
-              $trackSize="sizing020"
+              thumbSize="sizing040"
+              trackSize="sizing020"
               onChange={onChangeSlider}
               renderTrack={renderTrack}
               labelPosition={LabelPosition.After}

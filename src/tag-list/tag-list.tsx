@@ -30,24 +30,29 @@ const StyledLi = styled.li<{$spacing?: SizingKeys}>`
     margin-right: 0;
   }
 `;
+
+const ListItem: React.FC<{spacing?: SizingKeys}> = ({spacing, ...props}) => (
+  <StyledLi {...props} $spacing={spacing} />
+);
+
 export const TagList: React.FC<TagListProps> = ({
-  $layout,
-  $size,
-  $stylePreset,
-  $spacing,
+  layout,
+  size,
+  stylePreset,
+  spacing,
   tagData,
 }) => (
-  <StyledUl layout={$layout}>
+  <StyledUl layout={layout}>
     {tagData.map(({label, href}, i) => (
-      <StyledLi
+      <ListItem
         // eslint-disable-next-line react/no-array-index-key
-        key={`${label}-${href}-${$stylePreset}-${$size}-${i}`}
-        $spacing={$spacing}
+        key={`${label}-${href}-${stylePreset}-${size}-${i}`}
+        spacing={spacing}
       >
-        <Tag $size={$size} $stylePreset={$stylePreset} href={href}>
+        <Tag size={size} stylePreset={stylePreset} href={href}>
           {label}
         </Tag>
-      </StyledLi>
+      </ListItem>
     ))}
   </StyledUl>
 );

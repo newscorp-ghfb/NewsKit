@@ -19,16 +19,16 @@ const LogoWrapper = styled.div`
 
 interface NewsKitMobileLogo {
   viewBox?: string;
-  $color: ColorKeys;
-  $size: SizingKeys;
+  color: ColorKeys;
+  size: SizingKeys;
 }
 
 const LogoSvg = styled.svg<NewsKitMobileLogo>`
   display: inline-block;
-  fill: ${getColorFromTheme('inkBase', '$color')};
-  color: ${getColorFromTheme('inkBase', '$color')};
-  width: ${getSizingFromTheme(undefined, '$size')};
-  height: ${getSizingFromTheme(undefined, '$size')};
+  fill: ${getColorFromTheme('inkBase', 'color')};
+  color: ${getColorFromTheme('inkBase', 'color')};
+  width: ${getSizingFromTheme(undefined, 'size')};
+  height: ${getSizingFromTheme(undefined, 'size')};
 `;
 
 type LogoWrapperRef = HTMLDivElement;

@@ -20,7 +20,7 @@ A share bar can be used anywhere a user would like to easily share something wit
 
 ## Props
 
-<LegacyBlock $marginTop="sizing040">
+<LegacyBlock marginTop="sizing040">
   <Prop name="label" type="string">
     If provided with text, adds a label and populates it with the string.
   </Prop>
@@ -48,10 +48,10 @@ A share bar can be used anywhere a user would like to easily share something wit
   newskitPath="/share-bar"
   component={state => (
     <ShareBar {...state}>
-      <IconButton $size={ButtonSize.Large} $stylePreset="buttonSocialTwitter">
+      <IconButton size={ButtonSize.Large} stylePreset="buttonSocialTwitter">
               <Twitter/>
             </IconButton>
-            <IconButton $size={ButtonSize.Large} $stylePreset="buttonSocialFacebook">
+            <IconButton size={ButtonSize.Large} stylePreset="buttonSocialFacebook">
               <Facebook />
             </IconButton>
     </ShareBar>

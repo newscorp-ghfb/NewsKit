@@ -18,14 +18,14 @@ export default {
           </StorybookSubHeading>
           <ShareBar>
             <IconButton
-              $size={ButtonSize.Large}
-              $stylePreset="buttonSocialTwitter"
+              size={ButtonSize.Large}
+              stylePreset="buttonSocialTwitter"
             >
               <Twitter />
             </IconButton>
             <IconButton
-              $size={ButtonSize.Large}
-              $stylePreset="buttonSocialFacebook"
+              size={ButtonSize.Large}
+              stylePreset="buttonSocialFacebook"
             >
               <Facebook />
             </IconButton>
@@ -35,14 +35,14 @@ export default {
           </StorybookSubHeading>
           <ShareBar label="Share">
             <IconButton
-              $size={ButtonSize.Large}
-              $stylePreset="buttonSocialTwitter"
+              size={ButtonSize.Large}
+              stylePreset="buttonSocialTwitter"
             >
               <Twitter />
             </IconButton>
             <IconButton
-              $size={ButtonSize.Large}
-              $stylePreset="buttonSocialFacebook"
+              size={ButtonSize.Large}
+              stylePreset="buttonSocialFacebook"
             >
               <Facebook />
             </IconButton>
@@ -52,14 +52,14 @@ export default {
           </StorybookSubHeading>
           <ShareBar label="Share">
             <IconButton
-              $size={ButtonSize.Large}
-              $stylePreset="buttonSocialTwitter"
+              size={ButtonSize.Large}
+              stylePreset="buttonSocialTwitter"
             >
               <Twitter />
             </IconButton>
             <IconButton
-              $size={ButtonSize.Large}
-              $stylePreset="buttonSocialFacebook"
+              size={ButtonSize.Large}
+              stylePreset="buttonSocialFacebook"
             >
               <Facebook />
             </IconButton>
@@ -78,14 +78,14 @@ export default {
           </StorybookSubHeading>
           <ShareBar vertical>
             <IconButton
-              $size={ButtonSize.Large}
-              $stylePreset="buttonSocialTwitter"
+              size={ButtonSize.Large}
+              stylePreset="buttonSocialTwitter"
             >
               <Twitter />
             </IconButton>
             <IconButton
-              $size={ButtonSize.Large}
-              $stylePreset="buttonSocialFacebook"
+              size={ButtonSize.Large}
+              stylePreset="buttonSocialFacebook"
             >
               <Facebook />
             </IconButton>
@@ -95,14 +95,14 @@ export default {
           </StorybookSubHeading>
           <ShareBar vertical label="Share">
             <IconButton
-              $size={ButtonSize.Large}
-              $stylePreset="buttonSocialTwitter"
+              size={ButtonSize.Large}
+              stylePreset="buttonSocialTwitter"
             >
               <Twitter />
             </IconButton>
             <IconButton
-              $size={ButtonSize.Large}
-              $stylePreset="buttonSocialFacebook"
+              size={ButtonSize.Large}
+              stylePreset="buttonSocialFacebook"
             >
               <Facebook />
             </IconButton>
@@ -112,14 +112,14 @@ export default {
           </StorybookSubHeading>
           <ShareBar vertical label="Share">
             <IconButton
-              $size={ButtonSize.Large}
-              $stylePreset="buttonSocialTwitter"
+              size={ButtonSize.Large}
+              stylePreset="buttonSocialTwitter"
             >
               <Twitter />
             </IconButton>
             <IconButton
-              $size={ButtonSize.Large}
-              $stylePreset="buttonSocialFacebook"
+              size={ButtonSize.Large}
+              stylePreset="buttonSocialFacebook"
             >
               <Facebook />
             </IconButton>

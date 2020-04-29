@@ -8,7 +8,7 @@ describe('Visible', () => {
   });
 
   test('renders expected display override styles', () => {
-    const fragment = renderToFragmentWithTheme(Visible, {$display: 'inline'});
+    const fragment = renderToFragmentWithTheme(Visible, {display: 'inline'});
     expect(fragment).toMatchSnapshot();
   });
 
@@ -36,7 +36,7 @@ describe('Hidden', () => {
   });
 
   test('renders expected display override styles', () => {
-    const fragment = renderToFragmentWithTheme(Hidden, {$display: 'flex'});
+    const fragment = renderToFragmentWithTheme(Hidden, {display: 'flex'});
     expect(fragment).toMatchSnapshot();
   });
 

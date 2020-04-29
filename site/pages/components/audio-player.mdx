@@ -18,7 +18,7 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
 
 ## Props
 
-<Block $marginTop="sizing05">
+<Block marginTop="sizing05">
   <Prop name="src" type="string" required>
     URL of the audio source to be played.
   </Prop>
@@ -77,7 +77,7 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
   <Prop name="popoutHref" type="string">
     Url to player hosted by itself on page. Will open in a new window and pause current instance.
   </Prop>
-  <Prop name="$volumePresets" type="Object<SliderStylePresets>">
+  <Prop name="volumePresets" type="Object<SliderStylePresets>">
     <div>
       This prop is an object containing all the following volume slider style
       presets. For more details please see the slider prop documentation &nbsp;
@@ -85,20 +85,20 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       the theme.
     </div>
     <ul>
-      <li>$sliderIndicatorTrackStylePreset</li>
-      <li>$sliderThumbStylePreset</li>
-      <li>$sliderTrackStylePreset</li>
-      <li>$sliderLabelsStylePreset</li>
+      <li>sliderIndicatorTrackStylePreset</li>
+      <li>sliderThumbStylePreset</li>
+      <li>sliderTrackStylePreset</li>
+      <li>sliderLabelsStylePreset</li>
     </ul>
   </Prop>
-  <Prop name="$trackPresets" type="Object<SliderStylePresets>">
+  <Prop name="trackPresets" type="Object<SliderStylePresets>">
     This prop is for the audio track slider, it has the same keys as
-    $volumePresets, plus "$bufferingStylePreset" to allow overriding of the
+    volumePresets, plus "bufferingStylePreset" to allow overriding of the
     buffering colour. If in live mode, the track slider is not shown and so
     these presets are ignored. The default style presets can be changed via the
     theme.
   </Prop>
-  <Prop name="$controlPresets" type="Object<ControlPresets>">
+  <Prop name="controlPresets" type="Object<ControlPresets>">
     <div>
       This prop is an object containing the following optional button style
       presets. The two default style presets for the play button and the rest of

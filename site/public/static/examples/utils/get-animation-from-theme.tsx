@@ -11,5 +11,5 @@ const Paragraph = styled.p`
   }
 
   text-align: center;
-  animation-duration: ${getAnimationFromTheme('animationDuration040', $animation)};
+  animation-duration: ${getAnimationFromTheme('animationDuration040', animation)};
 `;

@@ -4,9 +4,9 @@ import {
 } from 'newskit';
 
 interface ParagraphProps {
-  $stylePreset: string;
+  stylePreset: string;
 }
 
 const Paragraph = styled.p<ParagraphProps>`
-  ${getStylePresetFromTheme('linkPrimary', '$stylePreset')}
+  ${getStylePresetFromTheme('linkPrimary', 'stylePreset')}
 `;

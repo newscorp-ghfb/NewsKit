@@ -1,7 +1,7 @@
 import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
-import {DollarPropRenderer as Icon} from '../../components/dollar-prop-renderer';
+import {PropRenderer as Icon} from '../../components/prop-renderer';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 
@@ -54,7 +54,7 @@ Icons can be used to enhance other elements and content, as well as used inside 
 
 Icons must have a size specified, and some also support an optional colour override.
 
-<LegacyBlock $marginTop="sizing040">
+<LegacyBlock marginTop="sizing040">
   <Prop name="size" type="IconSizeKeys" required>
     A sizing token must be provided.
   </Prop>
@@ -87,7 +87,7 @@ Icons must have a size specified, and some also support an optional colour overr
   knobs={[
     {
       name: 'Size',
-      propName: '$size',
+      propName: 'size',
       options: [
         {
           label: 'iconSize020',
@@ -110,7 +110,7 @@ Icons must have a size specified, and some also support an optional colour overr
     },
     {
       name: 'Color',
-      propName: '$color',
+      propName: 'color',
       options: [
         {
           label: 'inkBase',
@@ -143,7 +143,7 @@ Icons must have a size specified, and some also support an optional colour overr
   knobs={[
     {
       name: 'Size',
-      propName: '$size',
+      propName: 'size',
       options: [
         {
           label: 'iconSize020',

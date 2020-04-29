@@ -5,12 +5,12 @@ import {LinkProps} from './types';
 
 export const Link: React.FC<LinkProps> = ({
   href,
-  $noUnderline,
+  noUnderline,
   children,
   ...rest
 }) => (
   <LinkNext href={href}>
-    <LinkNewskit href={href} $noUnderline={$noUnderline} {...rest}>
+    <LinkNewskit href={href} noUnderline={noUnderline} {...rest}>
       {children}
     </LinkNewskit>
   </LinkNext>

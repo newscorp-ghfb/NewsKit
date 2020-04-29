@@ -31,7 +31,7 @@ export default {
       component: () => (
         <React.Fragment>
           <h2>Minimal Flag</h2>
-          <Flag $spacing="spaceInset000Squish" $stylePreset="flagMinimal">
+          <Flag spacing="spaceInset000Squish" stylePreset="flagMinimal">
             Text goes here
           </Flag>
         </React.Fragment>
@@ -45,8 +45,8 @@ export default {
           <h1>Flag Sizes</h1>
 
           <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
-            <Flag $size={FlagSize.Small}>Small</Flag>
-            <Flag $size={FlagSize.Large}>Large</Flag>
+            <Flag size={FlagSize.Small}>Small</Flag>
+            <Flag size={FlagSize.Large}>Large</Flag>
           </Stack>
         </React.Fragment>
       ),
@@ -61,7 +61,7 @@ export default {
             <Flag>flagSolid</Flag>
           </Block>
           <Block>
-            <Flag $stylePreset="flagMinimal">flagMinimal</Flag>
+            <Flag stylePreset="flagMinimal">flagMinimal</Flag>
           </Block>
         </React.Fragment>
       ),
@@ -74,12 +74,12 @@ export default {
           <h1>Flags with an icon</h1>
           <Container>
             <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
-              <Flag $size={FlagSize.Small}>
-                <Email $size="iconSize010" />
+              <Flag size={FlagSize.Small}>
+                <Email size="iconSize010" />
                 Text
               </Flag>
-              <Flag $size={FlagSize.Large}>
-                <Email $size="iconSize010" />
+              <Flag size={FlagSize.Large}>
+                <Email size="iconSize010" />
                 Text
               </Flag>
             </Stack>
@@ -96,35 +96,35 @@ export default {
           <Container>
             <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
               <Flag
-                $size={FlagSize.Small}
-                $spacing="spaceInset000Squish"
-                $stylePreset="flagMinimal"
+                size={FlagSize.Small}
+                spacing="spaceInset000Squish"
+                stylePreset="flagMinimal"
               >
-                <Email $size="iconSize010" />
+                <Email size="iconSize010" />
                 Text
               </Flag>
               <Flag
-                $size={FlagSize.Large}
-                $spacing="spaceInset000Squish"
-                $stylePreset="flagMinimal"
+                size={FlagSize.Large}
+                spacing="spaceInset000Squish"
+                stylePreset="flagMinimal"
               >
-                <Email $size="iconSize010" />
+                <Email size="iconSize010" />
                 Text
               </Flag>
               <Flag
-                $size={FlagSize.Large}
-                $spacing="spaceInset000Squish"
-                $stylePreset="flagMinimal"
+                size={FlagSize.Large}
+                spacing="spaceInset000Squish"
+                stylePreset="flagMinimal"
               >
-                <Bookmark $size="iconSize010" />
+                <Bookmark size="iconSize010" />
                 Text
               </Flag>
               <Flag
-                $size={FlagSize.Large}
-                $spacing="spaceInset000Squish"
-                $stylePreset="flagMinimal"
+                size={FlagSize.Large}
+                spacing="spaceInset000Squish"
+                stylePreset="flagMinimal"
               >
-                <VolumeMute $size="iconSize010" />
+                <VolumeMute size="iconSize010" />
                 Text
               </Flag>
             </Stack>

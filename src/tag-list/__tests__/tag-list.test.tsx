@@ -26,9 +26,9 @@ describe('TagList', () => {
 
     test('with custom size', () => {
       const props: TagListProps = {
-        $size: TagSize.Large,
+        size: TagSize.Large,
         tagData: tagDataWithHref,
-        $layout: TagListLayout.Right,
+        layout: TagListLayout.Right,
       };
       const fragment = renderToFragmentWithTheme(TagList, props);
       expect(fragment).toMatchSnapshot();
@@ -37,7 +37,7 @@ describe('TagList', () => {
     test('with custom margins', () => {
       const props: TagListProps = {
         tagData: tagDataWithHref,
-        $spacing: 'sizing080',
+        spacing: 'sizing080',
       };
       const fragment = renderToFragmentWithTheme(TagList, props);
       expect(fragment).toMatchSnapshot();
@@ -54,9 +54,9 @@ describe('TagList', () => {
 
     test('with custom size', () => {
       const props: TagListProps = {
-        $size: TagSize.Large,
+        size: TagSize.Large,
         tagData: tagDataWithoutHref,
-        $layout: TagListLayout.Right,
+        layout: TagListLayout.Right,
       };
       const fragment = renderToFragmentWithTheme(TagList, props);
       expect(fragment).toMatchSnapshot();
@@ -65,7 +65,7 @@ describe('TagList', () => {
     test('with custom margins', () => {
       const props: TagListProps = {
         tagData: tagDataWithoutHref,
-        $spacing: 'sizing080',
+        spacing: 'sizing080',
       };
       const fragment = renderToFragmentWithTheme(TagList, props);
       expect(fragment).toMatchSnapshot();

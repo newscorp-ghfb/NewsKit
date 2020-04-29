@@ -26,18 +26,18 @@ const StyledBaseFlag = styled.div<BaseFlagProps>`
 
   ${({isDisabled, ...props}) =>
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    getStylePresetFromTheme(undefined, '$stylePreset' as any, {
+    getStylePresetFromTheme(undefined, 'stylePreset' as any, {
       isDisabled,
     })(props)}
 `;
 
-const StyledTextCropWrapper = styled.span<Pick<BaseFlagProps, '$typePreset'>>`
-  ${getTypePresetFromTheme(undefined, '$typePreset')}
+const StyledTextCropWrapper = styled.span<Pick<BaseFlagProps, 'typePreset'>>`
+  ${getTypePresetFromTheme(undefined, 'typePreset')}
 `;
 
 export const BaseFlag: React.FC<BaseFlagProps> = ({
   children,
-  $typePreset,
+  typePreset,
   ...props
 }) => (
   <StyledBaseFlag {...props}>
@@ -49,7 +49,7 @@ export const BaseFlag: React.FC<BaseFlagProps> = ({
       {React.Children.map(children, child => {
         if (typeof child === 'string') {
           return (
-            <StyledTextCropWrapper $typePreset={$typePreset}>
+            <StyledTextCropWrapper typePreset={typePreset}>
               {child}
             </StyledTextCropWrapper>
           );

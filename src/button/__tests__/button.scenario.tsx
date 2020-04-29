@@ -73,7 +73,7 @@ export default {
           <Container>
             <Stack flow="horizontal-center" space="sizing070" wrap="wrap">
               <Button>Small button</Button>
-              <Button $size={ButtonSize.Large}>Large button</Button>
+              <Button size={ButtonSize.Large}>Large button</Button>
             </Stack>
           </Container>
         </React.Fragment>
@@ -106,23 +106,23 @@ export default {
                   >
                     <h3>{style}</h3>
                     <Block theme={newskitLightTheme} data-state="Default">
-                      <Button $stylePreset={stylePreset}>Button</Button>
+                      <Button stylePreset={stylePreset}>Button</Button>
                     </Block>
 
                     <Block theme={newskitLightTheme} data-state="Focused">
-                      <Button autoFocus $stylePreset={stylePreset}>
+                      <Button autoFocus stylePreset={stylePreset}>
                         Button
                       </Button>
                     </Block>
 
                     <Block theme={newskitLightTheme} data-state="Disabled">
-                      <Button disabled $stylePreset={stylePreset}>
+                      <Button disabled stylePreset={stylePreset}>
                         Button
                       </Button>
                     </Block>
 
                     <Block theme={newskitLightTheme} data-state="Loading">
-                      <Button $stylePreset={stylePreset} isLoading>
+                      <Button stylePreset={stylePreset} isLoading>
                         Button
                       </Button>
                     </Block>
@@ -145,8 +145,8 @@ export default {
               <Spacer>
                 <Stack flow="horizontal-center" space="sizing060">
                   {regularButtonSizes.map(button => (
-                    <Button $size={button.buttonSize}>
-                      <IconType $size={button.iconSize} />
+                    <Button size={button.buttonSize}>
+                      <IconType size={button.iconSize} />
                       Button
                     </Button>
                   ))}
@@ -168,9 +168,9 @@ export default {
               <Spacer>
                 <Stack flow="horizontal-center" space="sizing060">
                   {regularButtonSizes.map(button => (
-                    <Button $size={button.buttonSize}>
+                    <Button size={button.buttonSize}>
                       Button
-                      <IconType $size={button.iconSize} />
+                      <IconType size={button.iconSize} />
                     </Button>
                   ))}
                 </Stack>
@@ -188,13 +188,13 @@ export default {
           <h2>Icon Button Size</h2>
           <Container>
             <Stack flow="horizontal-center" space="sizing070" wrap="wrap">
-              <IconButton $size={ButtonSize.Small}>
+              <IconButton size={ButtonSize.Small}>
                 <Email />
               </IconButton>
-              <IconButton $size={ButtonSize.Medium}>
+              <IconButton size={ButtonSize.Medium}>
                 <Email />
               </IconButton>
-              <IconButton $size={ButtonSize.Large}>
+              <IconButton size={ButtonSize.Large}>
                 <Email />
               </IconButton>
             </Stack>
@@ -230,8 +230,8 @@ export default {
                     <h3>{style}</h3>
                     <Block theme={newskitLightTheme} data-state="Default">
                       <IconButton
-                        $stylePreset={stylePreset}
-                        $size={ButtonSize.Medium}
+                        stylePreset={stylePreset}
+                        size={ButtonSize.Medium}
                       >
                         <Pause />
                       </IconButton>
@@ -240,8 +240,8 @@ export default {
                     <Block theme={newskitLightTheme} data-state="Focused">
                       <IconButton
                         autoFocus
-                        $stylePreset={stylePreset}
-                        $size={ButtonSize.Medium}
+                        stylePreset={stylePreset}
+                        size={ButtonSize.Medium}
                       >
                         <CopyLink />
                       </IconButton>
@@ -250,8 +250,8 @@ export default {
                     <Block theme={newskitLightTheme} data-state="Disabled">
                       <IconButton
                         disabled
-                        $stylePreset={stylePreset}
-                        $size={ButtonSize.Medium}
+                        stylePreset={stylePreset}
+                        size={ButtonSize.Medium}
                       >
                         <Email />
                       </IconButton>
@@ -259,8 +259,8 @@ export default {
 
                     <Block theme={newskitLightTheme} data-state="Loading">
                       <IconButton
-                        $stylePreset={stylePreset}
-                        $size={ButtonSize.Medium}
+                        stylePreset={stylePreset}
+                        size={ButtonSize.Medium}
                         isLoading
                       >
                         <Email />

@@ -17,11 +17,11 @@ export const component = () => (
       <span>no padding or margin</span>
     </Block>
     <ColoredSeparators />
-    <Block $margin="spaceStack030">
+    <Block margin="spaceStack030">
       <span>with margin spaceStack030</span>
     </Block>
     <Block
-      $margin={{
+      margin={{
         xs: 'spaceStack010',
         sm: 'spaceStack020',
         md: 'spaceStack030',
@@ -34,7 +34,7 @@ export const component = () => (
       <span>with margin spaceStack040 at lg breakpoint</span>
     </Block>
     <ColoredSeparators />
-    <Block $margin="spaceInline030">
+    <Block margin="spaceInline030">
       <span>with margin spaceInline030</span>
     </Block>
     <ColoredSeparators />

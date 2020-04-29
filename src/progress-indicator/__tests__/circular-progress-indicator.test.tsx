@@ -10,7 +10,7 @@ describe('Circle progress indicator', () => {
 
   test(`renders circle progress indicator with size`, () => {
     const fragment = renderToFragmentWithTheme(CircularProgressIndicator, {
-      $size: 'iconSize040',
+      size: 'iconSize040',
     });
 
     expect(fragment).toMatchSnapshot();
@@ -26,8 +26,8 @@ describe('Circle progress indicator', () => {
 
   test(`renders circle progress indicator with different style`, () => {
     const fragment = renderToFragmentWithTheme(CircularProgressIndicator, {
-      $sliderTrackStylePreset: 'circularProgressIndicatorTrackInverse',
-      $sliderIndicatorTrackStylePreset:
+      sliderTrackStylePreset: 'circularProgressIndicatorTrackInverse',
+      sliderIndicatorTrackStylePreset:
         'circularProgressIndicatorIndicatorInverse',
     });
 

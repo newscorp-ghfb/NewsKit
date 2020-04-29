@@ -38,7 +38,7 @@ export default {
             aspectHeight={2}
             alt="Example Image"
             hideLoadingIcon
-            $stylePreset="imageRounded"
+            stylePreset="imageRounded"
           />
         </Container>
       ),
@@ -55,7 +55,7 @@ export default {
             aspectHeight={1}
             alt="Example Image"
             hideLoadingIcon
-            $stylePreset="imageCircle"
+            stylePreset="imageCircle"
           />
         </Container>
       ),

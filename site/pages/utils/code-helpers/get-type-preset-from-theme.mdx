@@ -17,7 +17,7 @@ Retrieve a type preset from the current theme. A type preset is a collection of 
 
 ## Parameters
 
-<LegacyBlock $marginTop='sizing040'>
+<LegacyBlock marginTop='sizing040'>
   <Prop name='defaultToken' type='ThemeToken'>
     Is the name of the type preset to be retrieved. If provided, it is used as an object key on the type preset theme section to get the token value.
   </Prop>
@@ -43,6 +43,6 @@ In this example the `Paragraph` component will include the typography styles fro
 
 <Code>{'<Paragraph />'}</Code>
 
-However, it will include styles from `subhead050` if the `Paragraph` is used with the `$font` prop and the value passed in is `subhead050`:
+However, it will include styles from `subhead050` if the `Paragraph` is used with the `font` prop and the value passed in is `subhead050`:
 
-<Code>{'<Paragraph $typePreset="subhead050" />'}</Code>
+<Code>{'<Paragraph typePreset="subhead050" />'}</Code>

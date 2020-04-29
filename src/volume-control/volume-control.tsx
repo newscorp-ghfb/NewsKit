@@ -9,7 +9,7 @@ interface MuteButtonProps {
   volume: number;
   unMutedVolume: number;
   onChange: VolumeControlProps['onChange'];
-  $volumeControlButtonStylePreset?: string;
+  volumeControlButtonStylePreset?: string;
 }
 
 const iconSize: IconSizeKeys = 'iconSize020';
@@ -25,21 +25,21 @@ const MuteButton: React.FC<MuteButtonProps> = ({
   volume,
   unMutedVolume,
   onChange,
-  $volumeControlButtonStylePreset,
+  volumeControlButtonStylePreset,
 }) => (
   <IconButton
     data-testid="mute-button"
     tabIndex={-1}
     onClick={() => toggleMute(volume, unMutedVolume, onChange)}
-    $size={ButtonSize.Small}
-    $stylePreset={
-      $volumeControlButtonStylePreset || volumeControlButtonStyleDefault
+    size={ButtonSize.Small}
+    stylePreset={
+      volumeControlButtonStylePreset || volumeControlButtonStyleDefault
     }
   >
     {volume === 0 ? (
-      <VolumeMute $size={iconSize} title="unmute" />
+      <VolumeMute size={iconSize} title="unmute" />
     ) : (
-      <VolumeDown $size={iconSize} title="mute" />
+      <VolumeDown size={iconSize} title="mute" />
     )}
   </IconButton>
 );
@@ -48,9 +48,9 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
   volume,
   vertical,
   onChange,
-  $trackSize,
-  $thumbSize,
-  $sliderLabelsStylePreset: $volumeControlButtonStylePreset,
+  trackSize,
+  thumbSize,
+  sliderLabelsStylePreset: volumeControlButtonStylePreset,
   ...presets
 }) => {
   const [unMutedVolume, setUnMutedVolume] = useState(volume);
@@ -67,10 +67,10 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
         volume={volume}
         unMutedVolume={unMutedVolume}
         onChange={onChange}
-        $volumeControlButtonStylePreset={$volumeControlButtonStylePreset}
+        volumeControlButtonStylePreset={volumeControlButtonStylePreset}
       />
     ),
-    [volume, unMutedVolume, onChange, $volumeControlButtonStylePreset],
+    [volume, unMutedVolume, onChange, volumeControlButtonStylePreset],
   );
 
   const toggleMuteWithKeys = (e: React.KeyboardEvent<HTMLElement>) => {
@@ -85,15 +85,15 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
         data-testid="volumeup-button"
         tabIndex={-1}
         onClick={() => onChange(1)}
-        $size={ButtonSize.Small}
-        $stylePreset={
-          $volumeControlButtonStylePreset || volumeControlButtonStyleDefault
+        size={ButtonSize.Small}
+        stylePreset={
+          volumeControlButtonStylePreset || volumeControlButtonStyleDefault
         }
       >
-        <VolumeUp $size={iconSize} title="max volume" />
+        <VolumeUp size={iconSize} title="max volume" />
       </IconButton>
     ),
-    [onChange, $volumeControlButtonStylePreset],
+    [onChange, volumeControlButtonStylePreset],
   );
 
   return (
@@ -107,8 +107,8 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
       ariaLabel="Volume Control"
       ariaValueText={`volume level ${volumeArr[0] * 10} of 10`}
       dataTestId="volume-control"
-      $trackSize={$trackSize}
-      $thumbSize={$thumbSize}
+      trackSize={trackSize}
+      thumbSize={thumbSize}
       minLabel={minLabel}
       maxLabel={maxLabel}
       onKeyDown={toggleMuteWithKeys}

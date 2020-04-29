@@ -9,8 +9,8 @@ Object.entries(icons)
     const [name, Icon] = entry as [string, React.ComponentType<any>];
     const props = {
       // n.b. color prop not supported on all icons.
-      $color: 'inkSubtle',
-      $size: 'iconSize050',
+      color: 'inkSubtle',
+      size: 'iconSize050',
     };
 
     describe(name, () => {

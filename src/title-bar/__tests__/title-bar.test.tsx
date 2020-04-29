@@ -74,7 +74,7 @@ describe('TitleBar', () => {
     test.each(borderPositionKeys)('%s', borderPosition => {
       const fragment = renderToFragmentWithTheme(TitleBar, {
         children: TITLE,
-        $containerBorder: borderPosition,
+        containerBorder: borderPosition,
       } as TitleBarProps);
       expect(fragment).toMatchSnapshot();
     });
@@ -84,14 +84,14 @@ describe('TitleBar', () => {
     test('right', () => {
       const fragment = renderToFragmentWithTheme(TitleBar, {
         children: TITLE,
-        $paddingRight: true,
+        paddingRight: true,
       } as TitleBarProps);
       expect(fragment).toMatchSnapshot();
     });
     test('left', () => {
       const fragment = renderToFragmentWithTheme(TitleBar, {
         children: TITLE,
-        $paddingLeft: true,
+        paddingLeft: true,
       } as TitleBarProps);
       expect(fragment).toMatchSnapshot();
     });
@@ -101,14 +101,14 @@ describe('TitleBar', () => {
     test('left', () => {
       const fragment = renderToFragmentWithTheme(TitleBar, {
         children: TITLE,
-        $titleAlignment: TitleAlignment.Left,
+        titleAlignment: TitleAlignment.Left,
       } as TitleBarProps);
       expect(fragment).toMatchSnapshot();
     });
     test('center', () => {
       const fragment = renderToFragmentWithTheme(TitleBar, {
         children: TITLE,
-        $titleAlignment: TitleAlignment.Center,
+        titleAlignment: TitleAlignment.Center,
       } as TitleBarProps);
       expect(fragment).toMatchSnapshot();
     });

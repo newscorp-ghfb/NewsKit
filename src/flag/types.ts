@@ -7,6 +7,6 @@ export enum FlagSize {
 }
 
 export interface FlagProps extends BaseFlagProps {
-  $size?: FlagSize;
-  $spacing?: PaddingPresetKeys;
+  size?: FlagSize;
+  spacing?: PaddingPresetKeys;
 }

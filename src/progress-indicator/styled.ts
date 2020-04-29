@@ -20,7 +20,7 @@ const getSize = (
   const size = getSizingFromTheme(
     circleProgressIndicatorSizeDefault,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    '$size' as any,
+    'size' as any,
   )(props);
   return {
     height: size,
@@ -38,10 +38,7 @@ export const StyledCircularProgressIndicator = styled.div<
 export const StyledCircularTrack = styled.div<CircularTrackProps>`
   box-sizing: border-box;
   ${getSize}
-  ${getStylePresetFromTheme(
-    trackStylePresetDefault,
-    '$sliderTrackStylePreset',
-  )};
+  ${getStylePresetFromTheme(trackStylePresetDefault, 'sliderTrackStylePreset')};
   border-radius: 50%;
 `;
 
@@ -50,7 +47,7 @@ export const StyledCircularIndicator = styled.div<CircularIndicatorProps>`
   ${getSize}
   ${getStylePresetFromTheme(
     indicatorStylePresetDefault,
-    '$sliderIndicatorTrackStylePreset',
+    'sliderIndicatorTrackStylePreset',
   )};
   border-radius: 50%;
 `;
@@ -84,9 +81,9 @@ export const StyledLeftHalfCircle = styled.div<
 >`
   box-sizing: border-box;
   width: calc(
-    ${getSizingFromTheme(circleProgressIndicatorSizeDefault, '$size')} / 2
+    ${getSizingFromTheme(circleProgressIndicatorSizeDefault, 'size')} / 2
   );
-  height: ${getSizingFromTheme(circleProgressIndicatorSizeDefault, '$size')};
+  height: ${getSizingFromTheme(circleProgressIndicatorSizeDefault, 'size')};
   transform-origin: 100% center;
   transform: rotate(90deg);
   overflow: hidden;
@@ -213,9 +210,9 @@ export const StyledLeftHalfContainer = styled.div<
   }
 
   width: calc(
-    ${getSizingFromTheme(circleProgressIndicatorSizeDefault, '$size')} / 2
+    ${getSizingFromTheme(circleProgressIndicatorSizeDefault, 'size')} / 2
   );
-  height: ${getSizingFromTheme(circleProgressIndicatorSizeDefault, '$size')};
+  height: ${getSizingFromTheme(circleProgressIndicatorSizeDefault, 'size')};
   transform-origin: 100% center;
   overflow: hidden;
 

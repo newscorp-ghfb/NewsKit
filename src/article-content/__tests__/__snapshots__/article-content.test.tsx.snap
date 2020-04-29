@@ -44,7 +44,7 @@ exports[`ArticleContent renders ArticleContent with bold intro 1`] = `
   >
     <code>
       {
-  "$bold": true
+  "bold": true
 }
     </code>
     <code>

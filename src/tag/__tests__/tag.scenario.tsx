@@ -26,13 +26,13 @@ export const component = () => (
     <StorybookHeading>Tag Sizes</StorybookHeading>
     <Container>
       <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
-        <Tag $size={TagSize.Small} href="http://example.com">
+        <Tag size={TagSize.Small} href="http://example.com">
           Small
         </Tag>
-        <Tag $size={TagSize.Medium} href="http://example.com">
+        <Tag size={TagSize.Medium} href="http://example.com">
           Medium
         </Tag>
-        <Tag $size={TagSize.Large} href="http://example.com">
+        <Tag size={TagSize.Large} href="http://example.com">
           Large
         </Tag>
       </Stack>
@@ -46,16 +46,16 @@ export const component = () => (
     <StorybookHeading>Tags with an icon</StorybookHeading>
     <Container>
       <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
-        <Tag $size={TagSize.Small}>
-          <Email $size="iconSize010" />
+        <Tag size={TagSize.Small}>
+          <Email size="iconSize010" />
           Text
         </Tag>
-        <Tag $size={TagSize.Medium}>
-          <Email $size="iconSize010" />
+        <Tag size={TagSize.Medium}>
+          <Email size="iconSize010" />
           Text
         </Tag>
-        <Tag $size={TagSize.Large}>
-          <Email $size="iconSize010" />
+        <Tag size={TagSize.Large}>
+          <Email size="iconSize010" />
           Text
         </Tag>
       </Stack>

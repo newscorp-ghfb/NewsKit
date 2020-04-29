@@ -26,16 +26,16 @@ A tag list can be used anywhere that quick links to related content could be ben
 
 ## Props
 
-<LegacyBlock $marginTop="sizing040">
+<LegacyBlock marginTop="sizing040">
   <Prop name="tagData" type="array" required>
     An array of tag data to populate the child Tag components. Tag data objects
     must contain a label, and an optional href. See playground for example.
   </Prop>
-  <Prop name="$size" type="TagSize" enum={TagSize} default="Medium">
+  <Prop name="size" type="TagSize" enum={TagSize} default="Medium">
     Optional size of the Tag components.
   </Prop>
   <Prop
-    name="$shape"
+    name="shape"
     type="BorderRadiusShape"
     enum={BorderRadiusShape}
     default="Squared"
@@ -43,7 +43,7 @@ A tag list can be used anywhere that quick links to related content could be ben
     Optional shape of the Tag components.
   </Prop>
   <Prop
-    name="$layout"
+    name="layout"
     type="TagListLayout"
     enum={TagListLayout}
     default="Center"
@@ -52,7 +52,7 @@ A tag list can be used anywhere that quick links to related content could be ben
     components appear when wrapped onto new lines. It has no effect when no
     wrapping is occurring.
   </Prop>
-  <Prop name="$spacing" type="SizingKeys">
+  <Prop name="spacing" type="SizingKeys">
     The amount of space added to the right of each tag.
   </Prop>
 </LegacyBlock>
@@ -84,7 +84,7 @@ A tag list can be used anywhere that quick links to related content could be ben
     },
     {
       name: 'Tag Size',
-      propName: '$size',
+      propName: 'size',
       options: [
         {
           label: 'Small',
@@ -103,7 +103,7 @@ A tag list can be used anywhere that quick links to related content could be ben
     },
     {
       name: 'Layout',
-      propName: '$layout',
+      propName: 'layout',
       options: [
         {
           label: 'Left',
@@ -122,7 +122,7 @@ A tag list can be used anywhere that quick links to related content could be ben
     },
     {
       name: 'Spacing',
-      propName: '$spacing',
+      propName: 'spacing',
       options: [
         {
           label: 'sizing020',

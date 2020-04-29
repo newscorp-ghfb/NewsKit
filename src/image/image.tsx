@@ -7,14 +7,14 @@ export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   aspectHeight: number | string;
   aspectWidth: number | string;
   hideLoadingIcon?: boolean;
-  $stylePreset?: string;
+  stylePreset?: string;
 }
 
 interface ImageContainerProps extends React.HtmlHTMLAttributes<HTMLElement> {
   isLoading: boolean;
   aspectHeight: number | string;
   aspectWidth: number | string;
-  $stylePreset?: string;
+  stylePreset?: string;
 }
 
 const ImageContainer = styled.div<ImageContainerProps>`
@@ -29,7 +29,7 @@ const ImageContainer = styled.div<ImageContainerProps>`
   ${({isLoading, ...props}) =>
     getStylePresetFromTheme(
       'imageSharp',
-      '$stylePreset' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+      'stylePreset' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
       {
         isLoading,
       },
@@ -44,7 +44,7 @@ export const imagePropsAreEqual = (
   prevProps.aspectWidth === nextProps.aspectWidth &&
   prevProps.hideLoadingIcon === nextProps.hideLoadingIcon &&
   prevProps.src === nextProps.src &&
-  prevProps.$stylePreset === nextProps.$stylePreset;
+  prevProps.stylePreset === nextProps.stylePreset;
 
 export const handleClientSideRender = (
   handler: () => boolean | void,
@@ -105,7 +105,7 @@ const ImageComponent = (props: ImageProps) => {
     <ImageContainer {...props} isLoading={isLoading}>
       <IconContainer>
         <InnerIconContainer>
-          <Placeholder $size="iconSize040" />
+          <Placeholder size="iconSize040" />
         </InnerIconContainer>
       </IconContainer>
       <DisplayImage {...props} ref={imageRef} onLoad={handleOnImageLoad} />

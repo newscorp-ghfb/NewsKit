@@ -1,20 +1,28 @@
+import React from 'react';
 import {DisplayProperty} from 'csstype';
 import {styled, ThemeProp, css} from '../utils/style';
 import {BreakpointKeys} from '../themes/newskit-light/breakpoints';
 import {getMediaQueryFromTheme} from '../utils/responsive-helpers';
 
-export interface VisibilityProps {
-  $display?: DisplayProperty;
+interface CommonProps {
   xs?: boolean;
   sm?: boolean;
   md?: boolean;
   lg?: boolean;
 }
 
+interface InternalProps extends CommonProps {
+  $display?: DisplayProperty;
+}
+
+export interface VisibilityProps extends CommonProps {
+  display?: DisplayProperty;
+}
+
 const generateBreakpointConfig = (
   visibleOnTrue: boolean,
   breakpoint: BreakpointKeys,
-) => ({$display = 'block', ...props}: VisibilityProps & ThemeProp) => {
+) => ({$display = 'block', ...props}: InternalProps & ThemeProp) => {
   const onTrue = visibleOnTrue ? $display : 'none';
   const onFalse = visibleOnTrue ? 'none' : $display;
   return css`
@@ -24,16 +32,24 @@ const generateBreakpointConfig = (
   `;
 };
 
-export const Visible = styled.div<VisibilityProps>`
+const StyledVisible = styled.div<InternalProps>`
   ${generateBreakpointConfig(true, 'xs')};
   ${generateBreakpointConfig(true, 'sm')};
   ${generateBreakpointConfig(true, 'md')};
   ${generateBreakpointConfig(true, 'lg')};
 `;
 
-export const Hidden = styled.div<VisibilityProps>`
+export const Visible: React.FC<VisibilityProps> = ({display, ...props}) => (
+  <StyledVisible {...props} $display={display} />
+);
+
+const StyledHidden = styled.div<InternalProps>`
   ${generateBreakpointConfig(false, 'xs')};
   ${generateBreakpointConfig(false, 'sm')};
   ${generateBreakpointConfig(false, 'md')};
   ${generateBreakpointConfig(false, 'lg')};
 `;
+
+export const Hidden: React.FC<VisibilityProps> = ({display, ...props}) => (
+  <StyledHidden {...props} $display={display} />
+);

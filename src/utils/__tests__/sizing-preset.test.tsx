@@ -11,13 +11,13 @@ import {
 } from '../../themes/mappers/spacing';
 
 interface SpacingPresetProp {
-  $margin?: MQ<MarginPresetKeys>;
-  $padding?: MQ<PaddingPresetKeys>;
+  margin?: MQ<MarginPresetKeys>;
+  padding?: MQ<PaddingPresetKeys>;
 }
 
 const TestBlock = styled.div<SpacingPresetProp>`
-  ${getMarginPresetFromTheme(undefined, '$margin')}
-  ${getPaddingPresetFromTheme(undefined, '$padding')}
+  ${getMarginPresetFromTheme(undefined, 'margin')}
+  ${getPaddingPresetFromTheme(undefined, 'padding')}
 `;
 
 describe('MarginPreset', () => {
@@ -28,14 +28,14 @@ describe('MarginPreset', () => {
 
   test('renders with override spaceStack010', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
-      $margin: 'spaceStack010',
+      margin: 'spaceStack010',
     });
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders responsive override spaceStack010 for xs, spaceStack020 for sm, and spaceStack030 for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
-      $margin: {
+      margin: {
         xs: 'spaceStack010',
         sm: 'spaceStack020',
         md: 'spaceStack030',
@@ -46,7 +46,7 @@ describe('MarginPreset', () => {
 
   test('renders responsive override spaceStack010 for xs, spaceStack020 for sm, and wrong for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
-      $margin: {
+      margin: {
         xs: 'spaceStack010',
         sm: 'spaceStack020',
         md: 'wrong',
@@ -57,7 +57,7 @@ describe('MarginPreset', () => {
 
   test('renders responsive override spaceStack010 for sm and spaceStack030 for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
-      $margin: {
+      margin: {
         sm: 'spaceStack010',
         md: 'spaceStack030',
       },
@@ -67,7 +67,7 @@ describe('MarginPreset', () => {
 
   test('renders responsive override spaceStack010 for xs, spaceStack020 for sm, spaceStack030 for md, spaceStack040 for lg breakpoings, and ignore wrong prop', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
-      $margin: {
+      margin: {
         xs: 'spaceStack010',
         sm: 'spaceStack020',
         md: 'spaceStack030',
@@ -87,14 +87,14 @@ describe('PaddingPreset', () => {
 
   test('renders with override spaceInset010Squish', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
-      $padding: 'spaceInset010Squish',
+      padding: 'spaceInset010Squish',
     });
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders with override incorrect object', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
-      $padding: {
+      padding: {
         foo: 'bar',
       } as any,
     });
@@ -103,7 +103,7 @@ describe('PaddingPreset', () => {
 
   test('renders responsive override spaceInset010Squish for xs, spaceInset020Squish for sm, and spaceInset030Squish for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
-      $padding: {
+      padding: {
         xs: 'spaceInset010Squish',
         sm: 'spaceInset020Squish',
         md: 'spaceInset030Squish',
@@ -114,7 +114,7 @@ describe('PaddingPreset', () => {
 
   test('renders responsive override spaceInset010Squish for xs, spaceInset020Squish for sm, and spaceInset030Squish for md breakpoints in reverser order', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
-      $padding: {
+      padding: {
         md: 'spaceInset030Squish',
         sm: 'spaceInset020Squish',
         xs: 'spaceInset010Squish',
@@ -125,7 +125,7 @@ describe('PaddingPreset', () => {
 
   test('renders responsive override spaceInset010Squish for xs, spaceInset020Squish for sm, and wrong for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
-      $padding: {
+      padding: {
         xs: 'spaceInset010Squish',
         sm: 'spaceInset020Squish',
         md: 'wrong',
@@ -136,7 +136,7 @@ describe('PaddingPreset', () => {
 
   test('renders responsive override spaceInset010Squish for xs, and spaceInset030Squish for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
-      $padding: {
+      padding: {
         xs: 'spaceInset010Squish',
         md: 'spaceInset030Squish',
       },
@@ -146,7 +146,7 @@ describe('PaddingPreset', () => {
 
   test('renders responsive override spaceInset010Squish for xs, spaceInset020Squish for sm, spaceInset030Squish for md, spaceInset040Squish for lg breakpoints and ignore wrong prop', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
-      $padding: {
+      padding: {
         xs: 'spaceInset010Squish',
         sm: 'spaceInset020Squish',
         md: 'spaceInset030Squish',

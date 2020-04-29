@@ -2,8 +2,8 @@ import * as React from 'react';
 import {Svg, IconSizeKeys, ColorKeys, Theme, withTheme} from 'newskit';
 
 interface TonalityProps {
-  $size: IconSizeKeys;
-  $color: ColorKeys;
+  size: IconSizeKeys;
+  color: ColorKeys;
 }
 
 const Tonality: React.FC<TonalityProps & {theme: Theme}> = props => (

@@ -21,11 +21,11 @@ const buttonSizing: Record<RegularButtonSize, ButtonSizing> = {
 
 export const Button: React.FC<
   React.ButtonHTMLAttributes<HTMLButtonElement> & ButtonProps
-> = ({children, $size = ButtonSize.Small, ...restOfProps}) => (
+> = ({children, size = ButtonSize.Small, ...restOfProps}) => (
   <BaseButton
-    $stylePreset="buttonSolidPrimary"
-    $size={$size}
-    {...buttonSizing[$size as RegularButtonSize]}
+    stylePreset="buttonSolidPrimary"
+    size={size}
+    {...buttonSizing[size as RegularButtonSize]}
     {...restOfProps}
   >
     {children}

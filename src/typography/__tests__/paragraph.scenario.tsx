@@ -14,7 +14,7 @@ export default {
       component: () => (
         <React.Fragment>
           <P>Normal - {bodyString}</P>
-          <P $bold>Bold - {bodyString}</P>
+          <P bold>Bold - {bodyString}</P>
           <P>
             Paragraph component containg a <Sub>subscript element</Sub> and a{' '}
             <Sup>superscript element</Sup>
@@ -27,8 +27,8 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <P $dropCap>{bodyString}</P>
-          <P $dropCap $dropCapColor="inkLink">
+          <P dropCap>{bodyString}</P>
+          <P dropCap dropCapColor="inkLink">
             {bodyString}
           </P>
         </React.Fragment>

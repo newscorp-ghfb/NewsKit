@@ -38,7 +38,7 @@ The default tag component uses the following style tokens, which can be overridd
 
 Tags have a number of props to facilitate a variety of uses:
 
-<LegacyBlock $marginTop="sizing040">
+<LegacyBlock marginTop="sizing040">
   <Prop name="children" type="string" required>
     The content of the tag is passed as the child of the component.
   </Prop>
@@ -50,10 +50,10 @@ Tags have a number of props to facilitate a variety of uses:
     If true, the Tag will render in a disabled state, appearing greyed out. If
     an href is also passed, the Tag will not open the provided href on click.
   </Prop>
-  <Prop name="$size" type="TagSize" enum={TagSize} default="Medium">
+  <Prop name="size" type="TagSize" enum={TagSize} default="Medium">
     Optional size of the Tag.
   </Prop>
-  <Prop name="$typePreset" type="string" default="flag010">
+  <Prop name="typePreset" type="string" default="flag010">
     If provided, this overrides the type preset applied to the tag.
   </Prop>
 </LegacyBlock>
@@ -83,7 +83,7 @@ Tags have a number of props to facilitate a variety of uses:
     },
     {
       name: 'Tag Size',
-      propName: '$size',
+      propName: 'size',
       options: [
         {
           label: 'Small',

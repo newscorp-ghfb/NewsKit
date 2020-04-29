@@ -4,6 +4,6 @@ export interface VolumeControlProps extends SliderStylePresets {
   volume: number;
   vertical?: boolean;
   onChange: (volume: number) => void;
-  $trackSize?: SliderProps['$trackSize'];
-  $thumbSize?: SliderProps['$thumbSize'];
+  trackSize?: SliderProps['trackSize'];
+  thumbSize?: SliderProps['thumbSize'];
 }

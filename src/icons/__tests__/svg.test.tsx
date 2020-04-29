@@ -5,7 +5,7 @@ describe('Svg', () => {
   test('renders a menu icon with specified size and default color', () => {
     const fragment = renderToFragmentWithTheme(Svg, {
       viewBox: '1 2 3 4',
-      $size: 'iconSize050',
+      size: 'iconSize050',
     });
     expect(fragment).toMatchSnapshot();
   });
@@ -13,8 +13,8 @@ describe('Svg', () => {
   test('renders a menu icon with specified size and color', () => {
     const fragment = renderToFragmentWithTheme(Svg, {
       viewBox: '1 2 3 4',
-      $size: 'iconSize010',
-      $color: 'white',
+      size: 'iconSize010',
+      color: 'white',
     });
     expect(fragment).toMatchSnapshot();
   });
@@ -22,15 +22,15 @@ describe('Svg', () => {
   test('renders a menu icon with no size', () => {
     const fragment = renderToFragmentWithTheme(Svg, {
       viewBox: '1 2 3 4',
-      $color: 'white',
+      color: 'white',
     });
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders a menu icon with $float property', () => {
+  test('renders a menu icon with float property', () => {
     const fragment = renderToFragmentWithTheme(Svg, {
       viewBox: '1 2 3 4',
-      $float: 'left',
+      float: 'left',
     });
     expect(fragment).toMatchSnapshot();
   });

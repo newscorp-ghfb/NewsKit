@@ -7,7 +7,7 @@ export enum TagSize {
 }
 
 export interface TagProps extends BaseFlagProps {
-  $size?: TagSize;
+  size?: TagSize;
   href?: string;
   disabled?: boolean;
 }

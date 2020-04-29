@@ -27,7 +27,7 @@ const labelStackSpaceDefault: SizingKeys = 'sizing030';
 // Utils
 //
 
-type VerticalProp = Pick<SliderProps, 'vertical'> & StackProps;
+type VerticalProp = Pick<SliderProps, 'vertical'> & Partial<StackProps>;
 const ifVertical = (value?: string, elseValue?: string) => ({
   vertical,
   theme,
@@ -64,7 +64,7 @@ export const StackContainer = styled(Stack)<VerticalProp>`
 `;
 
 export const LabelContainer = styled.div<
-  Pick<SliderProps, 'labelPosition' | '$labelStackSpace' | '$thumbSize'> &
+  Pick<SliderProps, 'labelPosition' | 'labelStackSpace' | 'thumbSize'> &
     VerticalProp
 >`
   width: 100%;
@@ -72,24 +72,24 @@ export const LabelContainer = styled.div<
 
   margin-top: ${({labelPosition, vertical}) =>
     !vertical && labelPosition === LabelPosition.After
-      ? getSizingFromTheme(labelStackSpaceDefault, '$labelStackSpace')
+      ? getSizingFromTheme(labelStackSpaceDefault, 'labelStackSpace')
       : undefined};
   margin-bottom: ${({labelPosition, vertical}) =>
     !vertical && labelPosition === LabelPosition.Before
-      ? getSizingFromTheme(labelStackSpaceDefault, '$labelStackSpace')
+      ? getSizingFromTheme(labelStackSpaceDefault, 'labelStackSpace')
       : undefined};
 
   margin-left: ${({labelPosition, vertical}) =>
     vertical && labelPosition === LabelPosition.After
-      ? getSizingFromTheme(labelStackSpaceDefault, '$labelStackSpace')
+      ? getSizingFromTheme(labelStackSpaceDefault, 'labelStackSpace')
       : undefined};
   margin-right: ${({labelPosition, vertical}) =>
     vertical && labelPosition === LabelPosition.Before
-      ? getSizingFromTheme(labelStackSpaceDefault, '$labelStackSpace')
+      ? getSizingFromTheme(labelStackSpaceDefault, 'labelStackSpace')
       : undefined};
 
-  padding: ${({theme, $thumbSize = thumbSizeDefault, vertical}) => {
-    const padding = `calc(${theme.sizing[$thumbSize]} / 2)`;
+  padding: ${({theme, thumbSize = thumbSizeDefault, vertical}) => {
+    const padding = `calc(${theme.sizing[thumbSize]} / 2)`;
     return `${vertical ? padding : '0'} ${vertical ? '0' : padding}`;
   }};
 `;
@@ -105,7 +105,7 @@ export const StyledTrack = styled.div<StyledTrackProps>`
   box-sizing: border-box;
 
   ${({disabled}) =>
-    getStylePresetFromTheme(trackStylePresetDefault, '$stylePreset', {
+    getStylePresetFromTheme(trackStylePresetDefault, 'stylePreset', {
       isDisabled: disabled,
       filterStates: ['base', 'disabled'],
     })}
@@ -113,21 +113,21 @@ export const StyledTrack = styled.div<StyledTrackProps>`
   ${({
     theme,
     vertical,
-    $thumbSize = thumbSizeDefault,
-    $trackSize = trackSizeDefault,
+    thumbSize = thumbSizeDefault,
+    trackSize = trackSizeDefault,
   }) => {
-    const halfThumb = `${theme.sizing[$thumbSize]}/2`;
-    const halfTrack = `${theme.sizing[$trackSize]}/2`;
+    const halfThumb = `${theme.sizing[thumbSize]}/2`;
+    const halfTrack = `${theme.sizing[trackSize]}/2`;
     const trackMargin = `${halfThumb} - ${halfTrack}`;
     return vertical
       ? `margin: calc(${halfThumb}) calc(${trackMargin});`
       : `margin: calc(${trackMargin}) calc(${halfThumb});`;
   }};
 
-  height: ${({theme, vertical, $trackSize = trackSizeDefault}) =>
-    vertical ? '100%' : theme.sizing[$trackSize]};
-  width: ${({theme, vertical, $trackSize = trackSizeDefault}) =>
-    vertical ? theme.sizing[$trackSize] : '100%'};
+  height: ${({theme, vertical, trackSize = trackSizeDefault}) =>
+    vertical ? '100%' : theme.sizing[trackSize]};
+  width: ${({theme, vertical, trackSize = trackSizeDefault}) =>
+    vertical ? theme.sizing[trackSize] : '100%'};
 `;
 
 //
@@ -135,16 +135,16 @@ export const StyledTrack = styled.div<StyledTrackProps>`
 //
 
 type StyledThumbProps = VerticalProp &
-  Pick<ThumbLabelProps, '$stylePreset' | '$thumbSize' | 'disabled'> &
+  Pick<ThumbLabelProps, 'stylePreset' | 'thumbSize' | 'disabled'> &
   CursorProps;
 
 export const StyledThumb = styled.div<StyledThumbProps>`
   ${({disabled}) =>
-    getStylePresetFromTheme(thumbStylePresetDefault, '$stylePreset', {
+    getStylePresetFromTheme(thumbStylePresetDefault, 'stylePreset', {
       isDisabled: disabled,
     })}
-  height: ${getSizingFromTheme(thumbSizeDefault, '$thumbSize')};
-  width: ${getSizingFromTheme(thumbSizeDefault, '$thumbSize')};
+  height: ${getSizingFromTheme(thumbSizeDefault, 'thumbSize')};
+  width: ${getSizingFromTheme(thumbSizeDefault, 'thumbSize')};
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
@@ -153,13 +153,13 @@ export const StyledThumb = styled.div<StyledThumbProps>`
 
 type StyledThumbValueProps = VerticalProp &
   Pick<SliderProps, 'disabled'> &
-  Pick<ThumbLabelProps, '$stylePreset' | '$thumbSize'>;
+  Pick<ThumbLabelProps, 'stylePreset' | 'thumbSize'>;
 
 export const StyledThumbValue = styled.div<StyledThumbValueProps>`
   ${getTypePresetFromTheme('caption010')};
 
   ${({disabled}) =>
-    getStylePresetFromTheme(labelStylePresetDefault, '$stylePreset', {
+    getStylePresetFromTheme(labelStylePresetDefault, 'stylePreset', {
       isDisabled: disabled,
       omitStates: ['focus', 'hover'],
     })};
@@ -182,7 +182,7 @@ export const StyledThumbValue = styled.div<StyledThumbValueProps>`
 
 interface StyledSliderLabelProps
   extends Pick<SliderProps, 'vertical' | 'disabled' | 'labelPosition'>,
-    Pick<ThumbLabelProps, '$stylePreset' | '$thumbSize'> {
+    Pick<ThumbLabelProps, 'stylePreset' | 'thumbSize'> {
   labelType: 'min' | 'max';
   isText: boolean;
 }
@@ -218,7 +218,7 @@ export const StyledSliderLabel = styled.div<StyledSliderLabelProps>`
 
   ${({isText, disabled}) =>
     isText &&
-    getStylePresetFromTheme(labelStylePresetDefault, '$stylePreset', {
+    getStylePresetFromTheme(labelStylePresetDefault, 'stylePreset', {
       isDisabled: disabled,
       filterStates: ['base', 'disabled'],
     })};

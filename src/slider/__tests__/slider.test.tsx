@@ -186,7 +186,7 @@ describe('slider', () => {
           expect(fragment).toMatchSnapshot();
         });
 
-        it('should render default StyledThumbValue with custom $thumbSize prop', () => {
+        it('should render default StyledThumbValue with custom thumbSize prop', () => {
           const customTheme = createTheme('myTestTheme', {
             themeOverrider: () => ({
               stylePresets: {
@@ -202,8 +202,8 @@ describe('slider', () => {
           const fragment = renderToFragmentWithTheme(
             StyledThumbValue,
             {
-              $stylePreset: 'presetWithBorderRadius',
-              $thumbSize: 'sizing070',
+              stylePreset: 'presetWithBorderRadius',
+              thumbSize: 'sizing070',
               children: 'test',
             },
             customTheme,

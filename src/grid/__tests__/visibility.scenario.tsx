@@ -4,42 +4,42 @@ import {styled} from '../../utils/style';
 
 export const name = 'visibility';
 
-const Container = styled.span<{$color: string}>`
+const Container = styled.span<{color: string}>`
   display: inline-block;
   padding: 40px;
   font-size: 48px;
-  background: ${({$color}) => $color};
+  background: ${({color}) => color};
   border: solid 1px black;
 `;
 
 export const component = () => (
   <div>
-    <Visible $display="inline-block" xs>
-      <Container $color="green">xs</Container>
+    <Visible display="inline-block" xs>
+      <Container color="green">xs</Container>
     </Visible>
-    <Hidden $display="inline-block" xs>
-      <Container $color="silver">xs</Container>
+    <Hidden display="inline-block" xs>
+      <Container color="silver">xs</Container>
     </Hidden>
 
-    <Visible $display="inline-block" sm>
-      <Container $color="green">sm</Container>
+    <Visible display="inline-block" sm>
+      <Container color="green">sm</Container>
     </Visible>
-    <Hidden $display="inline-block" sm>
-      <Container $color="silver">sm</Container>
+    <Hidden display="inline-block" sm>
+      <Container color="silver">sm</Container>
     </Hidden>
 
-    <Visible $display="inline-block" md>
-      <Container $color="green">md</Container>
+    <Visible display="inline-block" md>
+      <Container color="green">md</Container>
     </Visible>
-    <Hidden $display="inline-block" md>
-      <Container $color="silver">md</Container>
+    <Hidden display="inline-block" md>
+      <Container color="silver">md</Container>
     </Hidden>
 
-    <Visible $display="inline-block" lg>
-      <Container $color="green">lg</Container>
+    <Visible display="inline-block" lg>
+      <Container color="green">lg</Container>
     </Visible>
-    <Hidden $display="inline-block" lg>
-      <Container $color="silver">lg</Container>
+    <Hidden display="inline-block" lg>
+      <Container color="silver">lg</Container>
     </Hidden>
   </div>
 );

@@ -45,14 +45,14 @@ export const Slider: React.FC<SliderProps> = ({
   labelPosition = LabelPosition.Inline,
   thumbLabel,
   dataTestId = 'slider',
-  $sliderTrackStylePreset,
-  $sliderIndicatorTrackStylePreset,
-  $sliderThumbStylePreset,
-  $sliderThumbLabelStylePreset,
-  $sliderLabelsStylePreset,
-  $trackSize,
-  $thumbSize,
-  $labelStackSpace,
+  sliderTrackStylePreset,
+  sliderIndicatorTrackStylePreset,
+  sliderThumbStylePreset,
+  sliderThumbLabelStylePreset,
+  sliderLabelsStylePreset,
+  trackSize,
+  thumbSize,
+  labelStackSpace,
   renderTrack,
   renderThumb,
 }) => {
@@ -72,16 +72,16 @@ export const Slider: React.FC<SliderProps> = ({
         aria-orientation={vertical ? 'vertical' : 'horizontal'}
         style={getTrackBackgroundStyle(
           theme,
-          $sliderTrackStylePreset,
-          $sliderIndicatorTrackStylePreset,
+          sliderTrackStylePreset,
+          sliderIndicatorTrackStylePreset,
           values,
           min,
           max,
           vertical,
         )}
-        $stylePreset={$sliderTrackStylePreset}
-        $trackSize={$trackSize}
-        $thumbSize={$thumbSize}
+        stylePreset={sliderTrackStylePreset}
+        trackSize={trackSize}
+        thumbSize={thumbSize}
         data-testid={`${dataTestId}-track`}
         onMouseDown={p.onMouseDown}
         onTouchStart={p.onTouchStart}
@@ -99,8 +99,8 @@ export const Slider: React.FC<SliderProps> = ({
         disabled={disabled}
         aria-label={ariaLabel}
         aria-valuetext={ariaValueText}
-        $stylePreset={$sliderThumbStylePreset}
-        $thumbSize={$thumbSize}
+        stylePreset={sliderThumbStylePreset}
+        thumbSize={thumbSize}
         values={values}
         isDragged={isDragged}
         data-testid={`${dataTestId}-thumb`}
@@ -111,7 +111,7 @@ export const Slider: React.FC<SliderProps> = ({
           isDragged={isDragged}
           thumbLabel={thumbLabel}
           vertical={vertical}
-          $stylePreset={$sliderThumbLabelStylePreset}
+          stylePreset={sliderThumbLabelStylePreset}
         />
       </StyledThumb>
     ));
@@ -119,8 +119,8 @@ export const Slider: React.FC<SliderProps> = ({
   const minimumLabel = minLabel && (
     <StyledSliderLabel
       labelPosition={labelPosition}
-      $stylePreset={$sliderLabelsStylePreset}
-      $thumbSize={$thumbSize}
+      stylePreset={sliderLabelsStylePreset}
+      thumbSize={thumbSize}
       disabled={disabled}
       vertical={vertical}
       labelType="min"
@@ -134,8 +134,8 @@ export const Slider: React.FC<SliderProps> = ({
   const maximumLabel = maxLabel && (
     <StyledSliderLabel
       labelPosition={labelPosition}
-      $stylePreset={$sliderLabelsStylePreset}
-      $thumbSize={$thumbSize}
+      stylePreset={sliderLabelsStylePreset}
+      thumbSize={thumbSize}
       disabled={disabled}
       vertical={vertical}
       labelType="max"
@@ -167,8 +167,8 @@ export const Slider: React.FC<SliderProps> = ({
   ) : (
     <LabelContainer
       labelPosition={labelPosition}
-      $labelStackSpace={$labelStackSpace}
-      $thumbSize={$thumbSize}
+      labelStackSpace={labelStackSpace}
+      thumbSize={thumbSize}
       vertical={vertical}
     >
       <Stack

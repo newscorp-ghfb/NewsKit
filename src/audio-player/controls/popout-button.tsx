@@ -5,7 +5,7 @@ import {IconButton, ButtonSize} from '../../button';
 export interface PopoutButtonProps {
   onClick?: (props: PopoutButtonProps) => void;
   href?: string;
-  $stylePreset?: string;
+  stylePreset?: string;
 }
 
 export const PopoutButton: React.FC<PopoutButtonProps> = React.memo(props => {
@@ -13,7 +13,7 @@ export const PopoutButton: React.FC<PopoutButtonProps> = React.memo(props => {
   return (
     <IconButton
       {...props}
-      $size={ButtonSize.Medium}
+      size={ButtonSize.Medium}
       data-testid="audio-player-popout"
       onClick={
         href || onClick
@@ -29,8 +29,8 @@ export const PopoutButton: React.FC<PopoutButtonProps> = React.memo(props => {
       }
     >
       <Popout
-        $size="iconSize020"
-        $color="buttonFill"
+        size="iconSize020"
+        color="buttonFill"
         focusable="false"
         title="open popout player"
       />

@@ -61,7 +61,7 @@ const SearchContainer = styled.div`
 
 const MobileLogo: React.FC = () => (
   <Link href="/">
-    <NewsKitMobileLogo $color="inkBase" $size="sizing070" />
+    <NewsKitMobileLogo color="inkBase" size="sizing070" />
   </Link>
 );
 
@@ -75,7 +75,7 @@ type HeaderRef = HTMLElement;
 const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
   ({handleSidebarClick}, ref) => {
     const renderMobileNavigation = (handleClick: () => void) => (
-      <LegacyBlock $display="flex" data-testid="logo-container">
+      <LegacyBlock display="flex" data-testid="logo-container">
         <MobileMenu
           onClick={handleClick}
           onKeyDown={handleEnterKeyPress(handleClick)}
@@ -98,26 +98,26 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
           </Cell>
           <Cell xsHidden smHidden mdHidden lgHidden md={12}>
             <LegacyBlock
-              $display="flex"
-              $justifyContent="flex-end"
-              $alignItems="center"
-              $height="100%"
-              $minHeight="40px"
+              display="flex"
+              justifyContent="flex-end"
+              alignItems="center"
+              height="100%"
+              minHeight="40px"
             >
               <nav>
                 <NavigationList>
                   <li>
-                    <Link href="/components" $noUnderline $color="inkSubtle">
+                    <Link href="/components" noUnderline color="inkSubtle">
                       Components
                     </Link>
                   </li>
                   <li>
-                    <Link href="/styleguides" $noUnderline $color="inkSubtle">
+                    <Link href="/styleguides" noUnderline color="inkSubtle">
                       Styleguides
                     </Link>
                   </li>
                   <li>
-                    <Link href="/resources" $noUnderline $color="inkSubtle">
+                    <Link href="/resources" noUnderline color="inkSubtle">
                       Resources
                     </Link>
                   </li>

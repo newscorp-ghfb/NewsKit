@@ -28,13 +28,13 @@ import Layout from '../../components/layout';
 import PageTitle from '../../components/page-title';
 
 const LayoutContainer = styled.div<{
-  $marginBottom?: SizingKeys;
-  $mdMarginBottom?: SizingKeys;
+  marginBottom?: SizingKeys;
+  mdMarginBottom?: SizingKeys;
 }>`
-  margin-bottom: ${getSizingFromTheme(undefined, '$marginBottom')};
+  margin-bottom: ${getSizingFromTheme(undefined, 'marginBottom')};
 
   ${getMediaQueryFromTheme('md')} {
-    margin-bottom: ${getSizingFromTheme(undefined, '$mdMarginBottom')};
+    margin-bottom: ${getSizingFromTheme(undefined, 'mdMarginBottom')};
   }
 `;
 
@@ -95,7 +95,7 @@ const Article: React.FC = () => (
             </ArticleHeadline>
           </Cell>
           <Cell xs={12}>
-            <LayoutContainer $marginBottom="sizing020">
+            <LayoutContainer marginBottom="sizing020">
               <Description>
                 Refrigerated Treats Make For A Cool Event
               </Description>
@@ -117,30 +117,30 @@ const Article: React.FC = () => (
                 <DateLine
                   date="2019-10-30T13:18:17Z"
                   dateFormat="d MMMM yyyy"
-                  $color="inkSubtle"
+                  color="inkSubtle"
                 />
               </div>
             </AuthorContainer>
           </Cell>
 
           <Cell xs={12} md={6}>
-            <LayoutContainer $marginBottom="sizing020">
+            <LayoutContainer marginBottom="sizing020">
               <ShareBar>
                 <IconButton
-                  $size={ButtonSize.Large}
-                  $stylePreset="buttonSocialTwitter"
+                  size={ButtonSize.Large}
+                  stylePreset="buttonSocialTwitter"
                 >
                   <Twitter />
                 </IconButton>
                 <IconButton
-                  $size={ButtonSize.Large}
-                  $stylePreset="buttonSocialFacebook"
+                  size={ButtonSize.Large}
+                  stylePreset="buttonSocialFacebook"
                 >
                   <Facebook />
                 </IconButton>
                 <IconButton
-                  $size={ButtonSize.Large}
-                  $stylePreset="buttonSocialWhatsapp"
+                  size={ButtonSize.Large}
+                  stylePreset="buttonSocialWhatsapp"
                 >
                   <WhatsApp />
                 </IconButton>
@@ -149,7 +149,7 @@ const Article: React.FC = () => (
           </Cell>
 
           <Cell xs={12}>
-            <LayoutContainer $marginBottom="sizing020">
+            <LayoutContainer marginBottom="sizing020">
               <Image
                 src="https://via.placeholder.com/736x414"
                 alt="Placeholder image"
@@ -160,8 +160,8 @@ const Article: React.FC = () => (
           </Cell>
 
           <Cell xs={12}>
-            <LayoutContainer $marginBottom="sizing060">
-              <ArticleContent $boldIntro $boldHeadings>
+            <LayoutContainer marginBottom="sizing060">
+              <ArticleContent boldIntro boldHeadings>
                 <P>
                   Chopped, sliced or wedged, hard-cooked eggs are the basis of
                   egg salad and add protein and a happy glow to tossed and
@@ -208,8 +208,8 @@ const Article: React.FC = () => (
           <Cell xs={12}>
             <TagListContainer>
               <TagList
-                $size={TagSize.Small}
-                $spacing="sizing040"
+                size={TagSize.Small}
+                spacing="sizing040"
                 tagData={[
                   {
                     label: 'Cooking',

@@ -814,7 +814,7 @@ exports[`slider react-range Range function props renderThumb should render custo
 </DocumentFragment>
 `;
 
-exports[`slider react-range Range function props renderThumb should render default StyledThumbValue with custom $thumbSize prop 1`] = `
+exports[`slider react-range Range function props renderThumb should render default StyledThumbValue with custom thumbSize prop 1`] = `
 <DocumentFragment>
   .emotion-0 {
   font-family: "Noto Sans",sans-serif;

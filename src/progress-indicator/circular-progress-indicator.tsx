@@ -14,35 +14,35 @@ import {
 export const CircularProgressIndicator: React.FC<
   CircularProgressIndicatorProps
 > = ({
-  $size,
+  size,
   hideTrack = false,
   ariaLabel = 'loading',
-  $sliderTrackStylePreset,
-  $sliderIndicatorTrackStylePreset,
+  sliderTrackStylePreset,
+  sliderIndicatorTrackStylePreset,
 }) => (
-  <StyledCircularProgressIndicator $size={$size} aria-label={ariaLabel}>
+  <StyledCircularProgressIndicator size={size} aria-label={ariaLabel}>
     {!hideTrack && (
       <StyledCircularTrack
-        $size={$size}
-        $sliderTrackStylePreset={$sliderTrackStylePreset}
+        size={size}
+        sliderTrackStylePreset={sliderTrackStylePreset}
       />
     )}
 
-    <StyledCircularProgressIndicatorFills $size={$size}>
-      <StyledLeftHalfCircle $size={$size}>
-        <StyledLeftHalfContainer $size={$size}>
+    <StyledCircularProgressIndicatorFills size={size}>
+      <StyledLeftHalfCircle size={size}>
+        <StyledLeftHalfContainer size={size}>
           <StyledCircularIndicator
-            $size={$size}
-            $sliderIndicatorTrackStylePreset={$sliderIndicatorTrackStylePreset}
+            size={size}
+            sliderIndicatorTrackStylePreset={sliderIndicatorTrackStylePreset}
           />
         </StyledLeftHalfContainer>
       </StyledLeftHalfCircle>
 
-      <StyledRightHalfCircle $size={$size}>
-        <StyledRightHalfContainer $size={$size}>
+      <StyledRightHalfCircle size={size}>
+        <StyledRightHalfContainer size={size}>
           <StyledCircularIndicator
-            $size={$size}
-            $sliderIndicatorTrackStylePreset={$sliderIndicatorTrackStylePreset}
+            size={size}
+            sliderIndicatorTrackStylePreset={sliderIndicatorTrackStylePreset}
           />
         </StyledRightHalfContainer>
       </StyledRightHalfCircle>

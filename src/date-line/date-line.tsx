@@ -22,10 +22,10 @@ export const DateLine: React.FC<DateLineProps> = ({
   dateFormat = defaultDateFormat,
   prefix,
   suffix,
-  $color,
+  color,
 }) => (
   <StyledDate
-    $color={$color}
+    $color={color}
     dateTime={format(new Date(date), iso8601DateFormat)}
   >
     {prefix}

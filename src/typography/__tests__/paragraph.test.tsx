@@ -20,7 +20,7 @@ describe('Paragraph', () => {
   test('renders bold Paragraph', () => {
     const wrapper = renderToFragmentWithTheme(Paragraph, {
       children: 'paragraph component',
-      $bold: true,
+      bold: true,
     } as ParagraphProps);
     expect(wrapper).toMatchSnapshot();
   });
@@ -28,8 +28,8 @@ describe('Paragraph', () => {
   test('renders with drop cap', () => {
     const wrapper = renderToFragmentWithTheme(Paragraph, {
       children: 'paragraph component',
-      $bold: true,
-      $dropCap: true,
+      bold: true,
+      dropCap: true,
     } as ParagraphProps);
     expect(wrapper).toMatchSnapshot();
   });
@@ -37,9 +37,9 @@ describe('Paragraph', () => {
   test('renders with coloured drop cap', () => {
     const wrapper = renderToFragmentWithTheme(Paragraph, {
       children: 'paragraph component',
-      $bold: true,
-      $dropCap: true,
-      $dropCapColor: 'inkLink',
+      bold: true,
+      dropCap: true,
+      dropCapColor: 'inkLink',
     } as ParagraphProps);
     expect(wrapper).toMatchSnapshot();
   });

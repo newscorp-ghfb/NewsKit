@@ -8,26 +8,26 @@ import {BaseFlag} from '../base-flag';
 const tagSizeStyleTokens: Record<
   TagSize,
   {
-    $typePreset: TypePresetKeys;
+    typePreset: TypePresetKeys;
     minHeight: SizingKeys;
     padding: PaddingPresetKeys;
     iconSize: IconSizeKeys;
   }
 > = {
   [TagSize.Large]: {
-    $typePreset: 'tag030',
+    typePreset: 'tag030',
     minHeight: 'sizing070',
     padding: 'spaceInset020Squish',
     iconSize: 'iconSize020',
   },
   [TagSize.Medium]: {
-    $typePreset: 'tag020',
+    typePreset: 'tag020',
     minHeight: 'sizing060',
     padding: 'spaceInset020Squish',
     iconSize: 'iconSize010',
   },
   [TagSize.Small]: {
-    $typePreset: 'tag010',
+    typePreset: 'tag010',
     minHeight: 'sizing050',
     padding: 'spaceInset010Squish',
     iconSize: 'iconSize010',
@@ -36,7 +36,7 @@ const tagSizeStyleTokens: Record<
 
 export const Tag: React.FC<TagProps> = ({
   disabled,
-  $size = TagSize.Medium,
+  size = TagSize.Medium,
   href,
   ...props
 }) => (
@@ -44,9 +44,9 @@ export const Tag: React.FC<TagProps> = ({
     data-testid="tag"
     isDisabled={disabled}
     href={disabled ? undefined : href}
-    $stylePreset="tagPrimary"
+    stylePreset="tagPrimary"
     {...as(href && !disabled ? 'a' : 'div')}
-    {...tagSizeStyleTokens[$size]}
+    {...tagSizeStyleTokens[size]}
     {...props}
   />
 );

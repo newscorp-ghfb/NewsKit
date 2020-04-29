@@ -1,12 +1,11 @@
 import {SizingKeys} from '../themes/newskit-light/spacing';
 
-export interface StackProps {
-  space?: SizingKeys;
-  wrap?: boolean | 'wrap' | 'nowrap';
-  flexGrow?: boolean | number;
-  flexShrink?: boolean | number;
-  flowReverse?: boolean;
-  flow?:
+export interface CommonStackProps {
+  space: SizingKeys;
+  flexGrow: boolean | number;
+  flexShrink: boolean | number;
+  flowReverse: boolean;
+  flow:
     | Flow
     | 'vertical-left'
     | 'vertical-center'
@@ -14,7 +13,7 @@ export interface StackProps {
     | 'horizontal-top'
     | 'horizontal-center'
     | 'horizontal-bottom';
-  stackDistribution?:
+  stackDistribution:
     | StackDistribution
     | 'flex-start'
     | 'center'
@@ -22,36 +21,24 @@ export interface StackProps {
     | 'space-around'
     | 'space-between'
     | 'space-evenly';
-  inline?: boolean;
+  inline: boolean;
 }
 
-export interface StyledStackProps {
-  $space: SizingKeys;
+export interface StyledStackProps extends CommonStackProps {
   $wrap: boolean | 'wrap' | 'nowrap';
-  $flexGrow: boolean | number;
-  $flexShrink: boolean | number;
-  $flowReverse: boolean;
-  $flow:
-    | Flow
-    | 'vertical-left'
-    | 'vertical-center'
-    | 'vertical-right'
-    | 'horizontal-top'
-    | 'horizontal-center'
-    | 'horizontal-bottom';
-  $stackDistribution:
-    | StackDistribution
-    | 'flex-start'
-    | 'center'
-    | 'flex-end'
-    | 'space-around'
-    | 'space-between'
-    | 'space-evenly';
-  $inline: boolean;
+}
+
+export interface StackProps extends CommonStackProps {
+  wrap: boolean | 'wrap' | 'nowrap';
+}
+
+export interface ChildProps
+  extends Pick<StyledStackProps, 'space' | 'flow' | '$wrap'> {
+  order?: number;
 }
 
 export interface StyledChildProps
-  extends Pick<StyledStackProps, '$space' | '$flow' | '$wrap'> {
+  extends Pick<StyledStackProps, 'space' | 'flow' | '$wrap'> {
   $order?: number;
 }
 

@@ -58,6 +58,6 @@ const renderByline = ({author, href, title, location}: BylineData) => (
 
 export const ArticleByline: React.FC<ArticleBylineProps> = ({bylineData}) => (
   <div>
-    <StyledUl $display="inline">{bylineData.map(renderByline)}</StyledUl>
+    <StyledUl display="inline">{bylineData.map(renderByline)}</StyledUl>
   </div>
 );

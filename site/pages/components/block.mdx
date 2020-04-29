@@ -17,7 +17,7 @@ For more information on the spacing preset, please refer to page [here](/foundat
 ## Props
 
 <LegacyBlock marginTop="sizing040">
-  <Prop name="$margin" type="MarginPresetKeys">
+  <Prop name="margin" type="MarginPresetKeys">
     This is a margin prop that only accepts stack and inline preset tokens defined in the spacing theme.
     see https://developer.mozilla.org/en-US/docs/Web/CSS/margin
   </Prop>
@@ -34,9 +34,9 @@ For more information on the spacing preset, please refer to page [here](/foundat
   newskitPath="/block"
   component={props => (
     <div>
-      <LegacyBlock $height="sizing060" $width="sizing120" $backgroundColor="buttonFill" />
+      <LegacyBlock height="sizing060" width="sizing120" backgroundColor="buttonFill" />
       <Block {...props} />
-      <LegacyBlock $height="sizing060" $width="sizing120" $backgroundColor="buttonFill" />
+      <LegacyBlock height="sizing060" width="sizing120" backgroundColor="buttonFill" />
     </div>
   )}
   knobs={[
@@ -46,8 +46,8 @@ For more information on the spacing preset, please refer to page [here](/foundat
       value: 'This is a block',
     },
     {
-      name: '$margin',
-      propName: '$margin',
+      name: 'margin',
+      propName: 'margin',
       options: [
         {
           label: 'undefined',

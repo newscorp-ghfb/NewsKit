@@ -35,7 +35,7 @@ exports[`Link renders as expected in default state 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Link renders correctly with $noUnderline property 1`] = `
+exports[`Link renders correctly with noUnderline property 1`] = `
 <DocumentFragment>
   .emotion-0 {
   -webkit-text-decoration: none;

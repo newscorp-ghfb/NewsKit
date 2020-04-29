@@ -3,8 +3,8 @@ import {styled, getColorFromTheme} from '../utils/style';
 
 export interface ArticleContentProps {
   className?: string;
-  $boldIntro?: boolean;
-  $boldHeadings?: boolean;
+  boldIntro?: boolean;
+  boldHeadings?: boolean;
 }
 
 const headingNames = [
@@ -41,13 +41,13 @@ export const ArticleContent: React.FC<ArticleContentProps> = ({
         return child;
       }
 
-      const $bold =
-        (props.$boldIntro && index === 0) ||
-        (props.$boldHeadings && headingNames.includes(getDisplayName(child)));
+      const bold =
+        (props.boldIntro && index === 0) ||
+        (props.boldHeadings && headingNames.includes(getDisplayName(child)));
 
-      if ($bold) {
+      if (bold) {
         return React.cloneElement(child as React.ReactElement, {
-          $bold,
+          bold,
         });
       }
       return child;

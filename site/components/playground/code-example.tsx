@@ -41,16 +41,16 @@ export const CodeExample: React.FC<CodeExampleProps> = ({
   error,
 }) => (
   <LegacyBlock
-    $display="flex"
-    $flexDirection="column"
-    $alignItems="space-between"
-    $justify-content="center"
-    $height="100%"
-    $width="100%"
-    $justifyContent="space-between"
+    display="flex"
+    flexDirection="column"
+    alignItems="space-between"
+    justify-content="center"
+    height="100%"
+    width="100%"
+    justifyContent="space-between"
   >
     {source && (
-      <LegacyBlock $overflow="scrollX">
+      <LegacyBlock overflow="scrollX">
         {error && (
           <ErrorMessageContainer>Source code invalid!</ErrorMessageContainer>
         )}
@@ -70,10 +70,10 @@ export const CodeExample: React.FC<CodeExampleProps> = ({
       template="create-react-app"
     >
       {() => (
-        <LegacyBlock $alignSelf="flex-end">
+        <LegacyBlock alignSelf="flex-end">
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a>
-            <Button $size={ButtonSize.Large} data-testid="code-sandbox">
+            <Button size={ButtonSize.Large} data-testid="code-sandbox">
               Edit on CodeSandbox
             </Button>
           </a>

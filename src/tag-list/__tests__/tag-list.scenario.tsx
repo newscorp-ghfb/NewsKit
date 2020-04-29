@@ -67,7 +67,7 @@ export default {
           {...Object.entries(TagSize).map(([key, size]) => (
             <Container>
               <StorybookSubHeading>{key}</StorybookSubHeading>
-              <TagList $size={size} tagData={tagData()} />
+              <TagList size={size} tagData={tagData()} />
             </Container>
           ))}
         </React.Fragment>
@@ -85,8 +85,8 @@ export default {
             <SmallContainer>
               <StorybookSubHeading>{key}</StorybookSubHeading>
               <TagList
-                $size={TagSize.Small}
-                $layout={layout}
+                size={TagSize.Small}
+                layout={layout}
                 tagData={tagData()}
               />
             </SmallContainer>
@@ -105,7 +105,7 @@ export default {
           {...Object.entries(TagSize).map(([key, size]) => (
             <SmallContainer>
               <StorybookSubHeading>{key}</StorybookSubHeading>
-              <TagList $size={size} tagData={tagDataWithoutHref()} />
+              <TagList size={size} tagData={tagDataWithoutHref()} />
             </SmallContainer>
           ))}
         </React.Fragment>

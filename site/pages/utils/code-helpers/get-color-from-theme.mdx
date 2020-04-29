@@ -17,7 +17,7 @@ Retrieve a color token from the current theme. Color tokens are [CSS color value
 
 ## Parameters
 
-<LegacyBlock $marginTop='sizing040'>
+<LegacyBlock marginTop='sizing040'>
   <Prop name='defaultToken' type='ThemeToken'>
     Is the name of the color token to be retrieved. If provided, it is used as an object key on the color section of the theme to get the token value.
   </Prop>
@@ -43,6 +43,6 @@ In this example the `Paragraph` component will include the color value from `hig
 
 <Code>{'<Paragraph />'}</Code>
 
-However, it will include value from `focus` if the `Paragraph` is used with the `$color` prop and the value passed in is `focus`:
+However, it will include value from `focus` if the `Paragraph` is used with the `color` prop and the value passed in is `focus`:
 
-<Code>{'<Paragraph $color="focus" />'}</Code>
+<Code>{'<Paragraph color="focus" />'}</Code>

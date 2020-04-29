@@ -10,8 +10,8 @@ interface ThumbLabelWrapperProps
 }
 
 export const ThumbLabelWrapper: React.FC<ThumbLabelWrapperProps> = ({
-  $stylePreset,
-  $thumbSize,
+  stylePreset,
+  thumbSize,
   disabled,
   index,
   isDragged,
@@ -25,15 +25,15 @@ export const ThumbLabelWrapper: React.FC<ThumbLabelWrapperProps> = ({
 
   if (ThumbLabel === true) {
     return (
-      <StyledThumbValue $stylePreset={$stylePreset} vertical={vertical}>
+      <StyledThumbValue stylePreset={stylePreset} vertical={vertical}>
         {values[index]}
       </StyledThumbValue>
     );
   }
 
   const props: ThumbLabelProps = {
-    $stylePreset,
-    $thumbSize,
+    stylePreset,
+    thumbSize,
     children: values[index],
     disabled,
     index,

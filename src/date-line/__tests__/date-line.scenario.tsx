@@ -24,7 +24,7 @@ export const component = () => (
         date="2017-07-01T14:32:00.000Z"
         dateFormat="MMMM d yyyy, h:mmaaaaa'm'"
         suffix=", The Times"
-        $color="inkContrast"
+        color="inkContrast"
       />
     </div>
   </React.Fragment>

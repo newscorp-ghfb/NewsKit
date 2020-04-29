@@ -8,7 +8,7 @@ export interface PlayerButtonProps {
   canPause: boolean;
   onClick: () => void;
   isLoading: boolean;
-  $stylePreset?: string;
+  stylePreset?: string;
 }
 
 export const PlayerButton: React.FC<PlayerButtonProps> = React.memo(
@@ -22,7 +22,7 @@ export const PlayerButton: React.FC<PlayerButtonProps> = React.memo(
       <IconButton
         data-testid="audio-player-play-button"
         aria-pressed={isPlaying ? 'true' : 'false'}
-        $size={ButtonSize.Large}
+        size={ButtonSize.Large}
         {...props}
       >
         {isPlaying ? notPlaying : <Play focusable="false" title="Play" />}

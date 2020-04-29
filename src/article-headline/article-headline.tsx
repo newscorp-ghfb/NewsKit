@@ -16,14 +16,18 @@ const Heading = styled(H1)`
 `;
 
 interface KickerProps {
-  $color?: ColorKeys;
+  color?: ColorKeys;
 }
 
-const Kicker = styled(Heading)<KickerProps>`
+const StyledKicker = styled(Heading)<{$color?: ColorKeys}>`
   display: inline;
   color: ${getColorFromTheme('inkBrand010', '$color')};
   text-transform: uppercase;
 `;
+
+const Kicker: React.FC<KickerProps> = ({color, ...props}) => (
+  <StyledKicker {...props} as="span" $color={color} />
+);
 
 const Headline = styled.div`
   display: block;
@@ -41,9 +45,7 @@ export const ArticleHeadline: React.FC<ArticleHeadline> = ({
 }) =>
   kickerText ? (
     <Headline>
-      <Kicker as="span" $color={kickerColor}>
-        {kickerText}{' '}
-      </Kicker>
+      <Kicker color={kickerColor}>{kickerText} </Kicker>
       <Heading>{children}</Heading>
     </Headline>
   ) : (

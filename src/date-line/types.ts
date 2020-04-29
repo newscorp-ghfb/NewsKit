@@ -5,5 +5,5 @@ export interface DateLineProps {
   dateFormat?: string;
   prefix?: string;
   suffix?: string;
-  $color?: ColorKeys;
+  color?: ColorKeys;
 }

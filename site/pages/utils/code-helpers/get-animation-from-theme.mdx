@@ -17,7 +17,7 @@ Retrieve an animation token from the current theme. Animation tokens are CSS val
 
 ## Parameters
 
-<LegacyBlock $marginTop='sizing040'>
+<LegacyBlock marginTop='sizing040'>
   <Prop name='defaultToken' type='ThemeToken'>
     Is the name of the animation token to be retrieved. If provided, it is used as an object key on the animation section of the theme to get the token value.
   </Prop>
@@ -43,6 +43,6 @@ In this example the `Paragraph` component will include the animation timing valu
 
 <Code>{'<Paragraph />'}</Code>
 
-However, it will include styles from `animationDuration050` if the `Paragraph` is used with the `$animation` prop and the value passed in is `animationDuration050`:
+However, it will include styles from `animationDuration050` if the `Paragraph` is used with the `animation` prop and the value passed in is `animationDuration050`:
 
-<Code>{'<Paragraph $animation="animationDuration050" />'}</Code>
+<Code>{'<Paragraph animation="animationDuration050" />'}</Code>

@@ -29,7 +29,7 @@ Don't show more than one circular progress indicator as the user is likely to be
 ## Props
 
 <LegacyBlock marginTop="sizing040">
-  <Prop name="$size" type="IconSizeKeys" default="iconSize020">
+  <Prop name="size" type="IconSizeKeys" default="iconSize020">
     Set the size of the progress indicator.
   </Prop>
   <Prop name="hideTrack" type="boolean" default={false}>
@@ -38,10 +38,10 @@ Don't show more than one circular progress indicator as the user is likely to be
     <Prop name="ariaLabel" type="string" default="loading">
     Used to describe the type of progress for accessibility purposes, e.g. loading.
   </Prop>
-  <Prop name="$sliderTrackStylePreset" type="string" default='circularProgressIndicatorTrackPrimary'> 
+  <Prop name="sliderTrackStylePreset" type="string" default='circularProgressIndicatorTrackPrimary'> 
      Set the style preset of the circular track.
   </Prop>
-  <Prop name="$sliderIndicatorTrackStylePreset" type="string" default='circularProgressIndicatorIndicatorPrimary'>
+  <Prop name="sliderIndicatorTrackStylePreset" type="string" default='circularProgressIndicatorIndicatorPrimary'>
      Set the style preset of the circular indicator.
   </Prop>
 </LegacyBlock>
@@ -55,7 +55,7 @@ Don't show more than one circular progress indicator as the user is likely to be
   knobs={[
     {
       name: 'Size',
-      propName: '$size',
+      propName: 'size',
       options: [
         {
           label: 'iconSize010',
@@ -88,7 +88,7 @@ Don't show more than one circular progress indicator as the user is likely to be
     },
     {
       name: 'trackStylePreset',
-      propName: '$sliderTrackStylePreset',
+      propName: 'sliderTrackStylePreset',
       options: [
         {
           label: 'circularProgressIndicatorTrackPrimary',
@@ -103,7 +103,7 @@ Don't show more than one circular progress indicator as the user is likely to be
     },
     {
       name: 'indicatorStylePreset',
-      propName: '$sliderIndicatorTrackStylePreset',
+      propName: 'sliderIndicatorTrackStylePreset',
       options: [
         {
           label: 'circularProgressIndicatorIndicatorPrimary',

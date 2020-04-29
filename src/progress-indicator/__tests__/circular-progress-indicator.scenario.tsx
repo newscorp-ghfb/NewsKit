@@ -34,7 +34,7 @@ export default {
         <React.Fragment>
           <StorybookHeading>Sizes</StorybookHeading>
           {sizes.map(size => (
-            <CircularProgressIndicator $size={size as IconSizeKeys} />
+            <CircularProgressIndicator size={size as IconSizeKeys} />
           ))}
         </React.Fragment>
       ),
@@ -48,9 +48,9 @@ export default {
           <Container>
             {sizes.map(size => (
               <CircularProgressIndicator
-                $size={size as IconSizeKeys}
-                $sliderTrackStylePreset="circularProgressIndicatorTrackInverse"
-                $sliderIndicatorTrackStylePreset="circularProgressIndicatorIndicatorInverse"
+                size={size as IconSizeKeys}
+                sliderTrackStylePreset="circularProgressIndicatorTrackInverse"
+                sliderIndicatorTrackStylePreset="circularProgressIndicatorIndicatorInverse"
               />
             ))}
           </Container>
@@ -64,7 +64,7 @@ export default {
         <React.Fragment>
           <StorybookHeading>Without track</StorybookHeading>
           {sizes.map(size => (
-            <CircularProgressIndicator $size={size as IconSizeKeys} hideTrack />
+            <CircularProgressIndicator size={size as IconSizeKeys} hideTrack />
           ))}
         </React.Fragment>
       ),

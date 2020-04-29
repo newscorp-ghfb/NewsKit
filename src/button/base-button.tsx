@@ -10,13 +10,14 @@ import {
   ButtonSize,
   ButtonSizing,
   StylePresetAndTheme,
+  StyledButtonSizing,
 } from './types';
 import {getStylePresetFromTheme} from '../utils/style-preset';
 import {Stack} from '../stack/stack';
 import {Flow, StackDistribution} from '../stack/types';
 import {CircularProgressIndicator} from '../progress-indicator';
 
-const ButtonElement = styled.button<ButtonCommonProps & ButtonSizing>`
+const ButtonElement = styled.button<ButtonCommonProps & StyledButtonSizing>`
   display: inline-block;
   position: relative;
   width: auto;
@@ -34,33 +35,33 @@ const ButtonElement = styled.button<ButtonCommonProps & ButtonSizing>`
   }
 
   ${({
-    $size,
+    size,
     theme,
     padding,
-    $stylePreset,
+    stylePreset,
     isLoading = false,
-    $width,
-    $height,
+    $width: width,
+    $height: height,
     minHeight,
     typePreset,
     iconSize,
   }) => {
     const commonStyles = css`
         ${getStylePresetFromTheme<StylePresetAndTheme>(
-          $stylePreset,
-          '$stylePreset',
+          stylePreset,
+          'stylePreset',
           {
             isLoading,
           },
         )({
           theme,
-          $stylePreset,
+          stylePreset,
         })}
         min-height: ${theme.sizing[minHeight]};
         ${getTypePresetFromTheme(typePreset)({theme})}
         padding: ${theme.sizing[padding]}};
-        width: ${$width && theme.sizing[$width]};
-        height: ${$height && theme.sizing[$height]};
+        width: ${width && theme.sizing[width]};
+        height: ${height && theme.sizing[height]};
 
 
     svg {
@@ -68,7 +69,7 @@ const ButtonElement = styled.button<ButtonCommonProps & ButtonSizing>`
       height: ${theme.sizing[iconSize]};
     }
 
-    ${$size === ButtonSize.Small &&
+    ${size === ButtonSize.Small &&
       css`
       /* Extend touchpoint area */
       margin: ${theme.sizing.sizing020} 0;
@@ -92,14 +93,18 @@ export const BaseButton: React.FC<
   children,
   isLoading,
   iconSize,
-  $size = ButtonSize.Small,
+  size = ButtonSize.Small,
+  height,
+  width,
   ...restOfProps
 }) => (
   <ButtonElement
     type="button"
-    $size={$size}
+    size={size}
     isLoading={isLoading}
     iconSize={iconSize}
+    $height={height}
+    $width={width}
     {...restOfProps}
   >
     <Stack
@@ -108,7 +113,7 @@ export const BaseButton: React.FC<
       space="sizing020"
     >
       {isLoading ? (
-        <CircularProgressIndicator hideTrack $size={iconSize} />
+        <CircularProgressIndicator hideTrack size={iconSize} />
       ) : (
         children
       )}

@@ -17,7 +17,7 @@ Retrieve a shadow token from the current theme. Shadow tokens are CSS values to 
 
 ## Parameters
 
-<LegacyBlock $marginTop='sizing040'>
+<LegacyBlock marginTop='sizing040'>
   <Prop name='defaultToken' type='ThemeToken'>
     Is the name of the shadow token to be retrieved. If provided, it is used as an object key on the shadow section of the theme to get the token value.
   </Prop>
@@ -43,6 +43,6 @@ In this example the `Paragraph` component will include the box shadow value from
 
 <Code>{'<Paragraph />'}</Code>
 
-However, it will include styles from `shadow030` if the `Paragraph` is used with the `$boxShadow` prop and the value passed in is `shadow030`:
+However, it will include styles from `shadow030` if the `Paragraph` is used with the `boxShadow` prop and the value passed in is `shadow030`:
 
-<Code>{'<Paragraph $boxShadow="shadow030" />'}</Code>
+<Code>{'<Paragraph boxShadow="shadow030" />'}</Code>

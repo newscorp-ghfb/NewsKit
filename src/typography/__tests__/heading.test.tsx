@@ -18,7 +18,7 @@ describe('Headings', () => {
     const Component = Headings[current];
     const wrapper = renderToFragmentWithTheme(Component, {
       children: 'A Heading',
-      $bold: true,
+      bold: true,
     } as Headings.HeadingProps);
     expect(wrapper).toMatchSnapshot();
   });

@@ -23,7 +23,7 @@ export const UnorderedList: React.FC<UnorderedListProps> = ({
   children,
   listItemMarker: ListItemMarker,
 }) => (
-  <StyledUl $display="block">
+  <StyledUl display="block">
     {React.Children.map(children, node =>
       isValidNode(node) ? (
         <ListItem key={getBuiId()}>

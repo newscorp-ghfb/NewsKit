@@ -33,13 +33,13 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <TitleBar $containerBorder={TitleBarBorder.Top}>
+          <TitleBar containerBorder={TitleBarBorder.Top}>
             Title bar with border: Top
           </TitleBar>
-          <TitleBar $containerBorder={TitleBarBorder.Bottom}>
+          <TitleBar containerBorder={TitleBarBorder.Bottom}>
             Title bar with border: Bottom
           </TitleBar>
-          <TitleBar $containerBorder={TitleBarBorder.TopAndBottom}>
+          <TitleBar containerBorder={TitleBarBorder.TopAndBottom}>
             Title bar with border: TopAndBottom
           </TitleBar>
         </React.Fragment>
@@ -73,10 +73,10 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <TitleBar $titleAlignment={TitleAlignment.Center}>
+          <TitleBar titleAlignment={TitleAlignment.Center}>
             Title bar centered
           </TitleBar>
-          <TitleBar $titleAlignment={TitleAlignment.Center} actionItem={button}>
+          <TitleBar titleAlignment={TitleAlignment.Center} actionItem={button}>
             Title bar centered with button
           </TitleBar>
         </React.Fragment>
@@ -98,18 +98,18 @@ export default {
       component: () => (
         <React.Fragment>
           <TitleBar
-            $paddingLeft
-            $paddingRight
-            $containerBorder={TitleBarBorder.TopAndBottom}
+            paddingLeft
+            paddingRight
+            containerBorder={TitleBarBorder.TopAndBottom}
             actionItem={button}
           >
             Title bar with button and paddings and TopAndBottom borders
           </TitleBar>
           <TitleBar
-            $titleAlignment={TitleAlignment.Center}
-            $paddingLeft
-            $paddingRight
-            $containerBorder={TitleBarBorder.TopAndBottom}
+            titleAlignment={TitleAlignment.Center}
+            paddingLeft
+            paddingRight
+            containerBorder={TitleBarBorder.TopAndBottom}
             actionItem={button}
           >
             Title bar with button and paddings and TopAndBottom borders and

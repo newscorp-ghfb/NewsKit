@@ -59,10 +59,10 @@ export const Selector: React.FC<SelectorProps> = ({
   const id = `playground-${children}-${getBuiId()}-selector`;
   return (
     <LegacyBlock
-      $font="body030"
-      $paddingTop="sizing050"
-      $paddingBottom="sizing040"
-      $paddingLeft="sizing030"
+      font="body030"
+      paddingTop="sizing050"
+      paddingBottom="sizing040"
+      paddingLeft="sizing030"
     >
       <StyledContainer>
         <label htmlFor={id}>{children}</label>

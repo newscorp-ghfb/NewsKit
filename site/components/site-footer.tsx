@@ -86,12 +86,12 @@ const SiteFooter: React.FC = () => (
         <FooterMenu>
           <Hidden xs sm md lg>
             <FooterLink>
-              <Link href="/cookies" $noUnderline $color="inkSubtle">
+              <Link href="/cookies" noUnderline color="inkSubtle">
                 Cookies
               </Link>
             </FooterLink>
             <FooterLink>
-              <Link href="/terms" $noUnderline $color="inkSubtle">
+              <Link href="/terms" noUnderline color="inkSubtle">
                 Terms
               </Link>
             </FooterLink>
@@ -100,8 +100,8 @@ const SiteFooter: React.FC = () => (
             <ConsentSettingsLink
               siteId="5623"
               privacyManagerId="5de4e78870353615f11c8456"
-              $noUnderline
-              $color="inkSubtle"
+              noUnderline
+              color="inkSubtle"
             >
               Privacy
             </ConsentSettingsLink>
@@ -110,16 +110,16 @@ const SiteFooter: React.FC = () => (
             <Link
               href="https://www.newscareers.co.uk/"
               target="_blank"
-              $noUnderline
-              $color="inkSubtle"
+              noUnderline
+              color="inkSubtle"
             >
               Careers
             </Link>
           </FooterLink>
           <Hidden xs sm md lg>
             <FooterLink>
-              <Link href="/" $noUnderline $color="inkSubtle">
-                <GitHub $size="iconSize020" />
+              <Link href="/" noUnderline color="inkSubtle">
+                <GitHub size="iconSize020" />
               </Link>
             </FooterLink>
           </Hidden>

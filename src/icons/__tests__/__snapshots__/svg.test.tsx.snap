@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Svg renders a menu icon with $float property 1`] = `
+exports[`Svg renders a menu icon with float property 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #2e2e2e;

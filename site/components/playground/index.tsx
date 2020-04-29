@@ -159,12 +159,12 @@ export const Playground: React.FC<
     : false;
 
   const commonBlockProps: Partial<LegacyBlockProps> = {
-    $display: 'flex',
-    $justifyContent: 'center',
-    $alignItems: 'center',
-    $flexDirection: 'column',
-    $border: 'solid 1px',
-    $borderColor: 'interface030',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    border: 'solid 1px',
+    borderColor: 'interface030',
   };
 
   const source = generateSource({
@@ -182,7 +182,7 @@ export const Playground: React.FC<
       <LegacyBlock
         data-testid="playground-element"
         {...commonBlockProps}
-        $minHeight="200px"
+        minHeight="200px"
       >
         <ErrorBoundary key={errorBoundaryKey}>
           <ThemeProvider theme={theme}>
@@ -190,7 +190,7 @@ export const Playground: React.FC<
           </ThemeProvider>
         </ErrorBoundary>
       </LegacyBlock>
-      <LegacyBlock $font="body030">
+      <LegacyBlock font="body030">
         <StyledMockTab>Props</StyledMockTab>
       </LegacyBlock>
       <Selector
@@ -208,11 +208,7 @@ export const Playground: React.FC<
           Component
         </Selector>
       )}
-      <LegacyBlock
-        {...commonBlockProps}
-        $alignItems="left"
-        $padding="sizing030"
-      >
+      <LegacyBlock {...commonBlockProps} alignItems="left" padding="sizing030">
         {knobs.map(renderKnob(state, updateState))}
       </LegacyBlock>
       <LegacyBlock {...commonBlockProps}>
