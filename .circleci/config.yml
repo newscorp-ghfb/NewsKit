@@ -496,6 +496,14 @@ only_pr: &only_pr
         - /trigger-release-.*/
         - /^release.*/
 
+only_pr_and_release: &only_pr_and_release
+  filters:
+    branches:
+      ignore:
+        - develop
+        - master
+        - /trigger-release-.*/
+
 ignore_trigger_release: &ignore_trigger_release
   filters:
     branches:
@@ -551,12 +559,12 @@ workflows:
             - install_cypress
     # PR jobs
       - run_visual_comps:
-          <<: *only_pr
+          <<: *only_pr_and_release
           type: approval
           requires:
             - build_storybook
       - test_visual_comps:
-          <<: *only_pr
+          <<: *only_pr_and_release
           context: ncu-product-platforms-context
           requires:
             - run_visual_comps
