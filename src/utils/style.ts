@@ -1,5 +1,6 @@
 import baseStyled, {CreateStyled, CSSObject} from '@emotion/styled';
 import {css} from '@emotion/core';
+import get from 'lodash.get';
 import {
   TypePresets,
   TypePresetKeys,
@@ -20,6 +21,7 @@ import {BorderRadiusKeys} from '../themes/mappers/border-radius';
 import {getMediaQuery, isResponsive} from './responsive-helpers';
 import {filterObject} from './filter-object';
 import {isFontConfigObject} from './guards';
+import {getFontProps} from './get-font-props';
 
 export {CSSObject} from '@emotion/core';
 
@@ -40,6 +42,21 @@ export type MQ<T> =
       md: T;
       lg: T;
     }>;
+
+export const getDefaultPreset = <
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  FromThemeUtil extends (...args: any) => any
+>(
+  getPresetFromThemeUtil: FromThemeUtil,
+  presetType: string,
+) => <Props extends ThemeProp>(
+  presetPath: string,
+  customProp?: Exclude<keyof Props, 'theme'>,
+  option?: Parameters<FromThemeUtil>[2],
+) => (props: Props) => {
+  const defaultToken = get(props.theme.defaultPresets, presetPath)[presetType];
+  return getPresetFromThemeUtil(defaultToken, customProp, option)(props);
+};
 
 export const getValueFromTheme = <ThemeToken extends string>(
   themeKey: keyof Theme,
@@ -98,26 +115,53 @@ export const getPresetValueFromTheme = <ThemeToken extends string>(
 export const getTypePresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<TypePresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
+  options?: {withCrop: boolean},
 ) => (props: Props) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const applyCrop = (typePreset: any) => {
+    const {fontSize, lineHeight, fontFamily} = typePreset;
+    const cropProps = getFontProps(fontSize, lineHeight, fontFamily);
+    return {
+      ...typePreset,
+      ...cropProps,
+    };
+  };
+
+  const {withCrop = false} = options || {};
   const typePreset = getPresetValueFromTheme('typePresets')(
     defaultToken,
     customProp,
   )(props) as Partial<TypePresets[TypePresetKeys]> | Array<[string, CSSObject]>;
+
   if (Array.isArray(typePreset)) {
     return typePreset.reduce(
       (acc, [mq, cssObject], index) => {
-        if (index === 0) {
-          return {...acc, ...cssObject};
+        let cssObjectFinal = cssObject;
+
+        if (withCrop && !Array.isArray(cssObject)) {
+          cssObjectFinal = applyCrop(cssObject);
         }
-        acc[mq] = cssObject;
+
+        if (index === 0) {
+          return {...acc, ...cssObjectFinal};
+        }
+        acc[mq] = cssObjectFinal;
         return acc;
       },
       {} as CSSObject,
     );
   }
 
+  if (withCrop && !Array.isArray(typePreset)) {
+    return applyCrop(typePreset);
+  }
   return typePreset;
 };
+
+export const getDefaultTypePreset = getDefaultPreset(
+  getTypePresetFromTheme,
+  'typePreset',
+);
 
 export const getAnimationFromTheme = getValueFromTheme<AnimationKeys>(
   'animation',
@@ -168,6 +212,11 @@ export const getPaddingPresetFromTheme = <Props extends ThemeProp>(
   return {padding};
 };
 
+export const getDefaultPaddingPreset = getDefaultPreset(
+  getPaddingPresetFromTheme,
+  'padding',
+);
+
 export const getMarginPresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<MarginPresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
@@ -191,6 +240,11 @@ export const getMarginPresetFromTheme = <Props extends ThemeProp>(
 
   return {margin};
 };
+
+export const getDefaultMarginPreset = getDefaultPreset(
+  getMarginPresetFromTheme,
+  'margin',
+);
 
 export const getBorderFromTheme = getValueFromTheme<BorderKeys>('borders');
 

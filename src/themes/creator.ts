@@ -25,6 +25,7 @@ import {
   createMarginPresets,
   MarginPreset,
 } from './mappers/spacing';
+import {defaultPresets} from './mappers/default-presets';
 
 const borderRadiusPrimitives = createBorderRadius(sizingPrimitives);
 
@@ -78,6 +79,8 @@ export interface Theme extends Record<string, unknown> {
   overlay: Overlay;
   shadow: Shadow;
   stylePresets: StylePresets;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  defaultPresets: any;
   zIndex: {
     modal: number;
   };
@@ -108,6 +111,7 @@ const createDefaultTheme = (): Theme => ({
     overlayPrimitives,
     shadowPrimitives,
   }),
+  defaultPresets,
   icons: {},
   zIndex: {
     modal: 2000,

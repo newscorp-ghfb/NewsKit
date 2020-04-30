@@ -1,4 +1,10 @@
-import {ThemeProp, CSSObject, getPresetValueFromTheme, MQ} from './style';
+import {
+  ThemeProp,
+  CSSObject,
+  getPresetValueFromTheme,
+  MQ,
+  getDefaultPreset,
+} from './style';
 import {
   StylePresetStyles,
   StylePresetStyleKeys,
@@ -116,6 +122,11 @@ export const getStylePresetFromTheme = <Props extends ThemeProp>(
 
   return stylePreset ? getStylePresetValueFromTheme(stylePreset, options) : '';
 };
+
+export const getDefaultStylePreset = getDefaultPreset(
+  getStylePresetFromTheme,
+  'stylePreset',
+);
 
 export const getSingleStylePreset = (
   {stylePresets}: Theme,

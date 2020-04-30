@@ -455,6 +455,16 @@ export const createStylePresets = ({
         color: colorPrimitives.inkBase,
       },
     } as StylePresetStates,
+    articleHeadlineKicker: {
+      base: {
+        color: colorPrimitives.inkBrand010,
+      },
+    } as StylePresetStates,
+    articleHeadlineContent: {
+      base: {
+        color: colorPrimitives.inkContrast,
+      },
+    } as StylePresetStates,
   };
 };
 
