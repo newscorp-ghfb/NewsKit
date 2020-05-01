@@ -206,7 +206,12 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
       .toISOString()
       .substr(11, 8)
       .split(':');
-    return `${time[0]} hour ${time[1]} minutes ${time[2]} seconds`;
+
+    const hour = time[0] !== '00' ? `${time[0]} hour ` : '';
+    const min = time[1] !== '00' ? `${time[1]} minutes ` : '';
+    const sec = time[2] !== '00' ? `${time[2]} seconds` : '';
+
+    return hour + min + sec;
   };
 
   return (

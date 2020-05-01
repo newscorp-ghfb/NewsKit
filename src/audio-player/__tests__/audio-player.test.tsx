@@ -147,7 +147,7 @@ describe('Audio Player', () => {
     const audioElement = getByTestId('audio-element') as any;
     fireEvent.durationChange(audioElement, {
       target: {
-        duration: 60,
+        duration: 6610,
       },
     });
 
@@ -245,7 +245,7 @@ describe('Audio Player', () => {
 
     expect(mockGetTrackBackground).toHaveBeenCalledWith({
       colors: ['#0A68C1', '#e4e4e4', '#f0f0f0', '#e4e4e4', '#f0f0f0'],
-      max: 60,
+      max: 6610,
       min: 0,
       values: [10, 14, 20, 20],
     });
@@ -259,10 +259,10 @@ describe('Audio Player', () => {
     expect(getByTestId('audio-slider-thumb')).toMatchSnapshot();
 
     // Shouldn't be able to go past end of track
-    audioElement.currentTime = 60;
+    audioElement.currentTime = 6610;
     fireEvent.timeUpdate(audioElement);
     fireEvent.click(getByTestId('audio-player-forward'));
-    expect(audioElement.currentTime).toEqual(60);
+    expect(audioElement.currentTime).toEqual(6610);
 
     // Shouldn't be able to go lower than start of track
     audioElement.currentTime = 0;

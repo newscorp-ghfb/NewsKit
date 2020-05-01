@@ -2922,10 +2922,10 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
             >
               <div
                 aria-label="seek bar"
-                aria-valuemax="60"
+                aria-valuemax="6610"
                 aria-valuemin="0"
                 aria-valuenow="10"
-                aria-valuetext="00 hour 00 minutes 10 seconds of 00 hour 01 minutes 00 seconds"
+                aria-valuetext="10 seconds of 01 hour 50 minutes 10 seconds"
                 class="emotion-39"
                 data-testid="audio-slider-thumb"
                 draggable="false"
@@ -2945,13 +2945,13 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                   class="emotion-56"
                   data-testid="min-label"
                 >
-                  00:10
+                  00:00:10
                 </div>
                 <div
                   class="emotion-56"
                   data-testid="max-label"
                 >
-                  01:00
+                  01:50:10
                 </div>
               </div>
             </div>
@@ -3014,10 +3014,10 @@ exports[`Audio Player recorded player renders and behaves as expected 2`] = `
 
 <div
   aria-label="seek bar"
-  aria-valuemax="60"
+  aria-valuemax="6610"
   aria-valuemin="0"
   aria-valuenow="35"
-  aria-valuetext="00 hour 00 minutes 35 seconds of 00 hour 01 minutes 00 seconds"
+  aria-valuetext="35 seconds of 01 hour 50 minutes 10 seconds"
   class="emotion-0"
   data-testid="audio-slider-thumb"
   draggable="false"
@@ -4338,7 +4338,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                 aria-valuemax="1"
                 aria-valuemin="0"
                 aria-valuenow="0"
-                aria-valuetext="00 hour 00 minutes 00 seconds of 00 hour 00 minutes 00 seconds"
+                aria-valuetext=" of "
                 class="emotion-42"
                 data-testid="audio-slider-thumb"
                 draggable="false"
