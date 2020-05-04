@@ -162,6 +162,11 @@
         "id": "/components/radio-player"
       },
       {
+        "title": "Screen Reader Only",
+        "page": true,
+        "id": "/components/screen-reader-only"
+      },
+      {
         "title": "Scroll",
         "page": true,
         "id": "/components/scroll"

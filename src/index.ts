@@ -33,3 +33,4 @@ export * from './utils/responsive-helpers';
 export * from './utils/style';
 export * from './volume-control';
 export * from './utils/style-preset';
+export * from './screen-reader-only';

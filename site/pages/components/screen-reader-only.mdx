@@ -8,23 +8,20 @@ import {ScreenReaderOnly} from 'newskit';
 
 export default Layout;
 
-# ScreenReaderOnly
+# Screen Reader Only
 
 ## Overview
 
-The screen reader only component contains description of an element, which the screen reader can use.
-
-### Usage
-
-The `ScreenReaderOnly` component requires a paragraph passed as a child.
+The screen reader only component contains description of an element, which the screen reader can read.
 
 ## Props
 
 <LegacyBlock $marginTop="sizing040">
-  <Prop name="bylineData" type="array" required>
-    An array of byline data to populate the byline authors. Byline data objects
-    must contain an author string, and can contain optional href and title
-    strings. See playground for example.
+  <Prop name="children" type="string" required>
+    The description of an element is passed as the child of the component.
+  </Prop>
+  <Prop name="id" type="string" required>
+    The CSS id required for the `aria-described-by` of the described element. 
   </Prop>
 </LegacyBlock>
 
@@ -36,20 +33,14 @@ The `ScreenReaderOnly` component requires a paragraph passed as a child.
   component={ScreenReaderOnly}
   knobs={[
     {
-      name: 'Byline Data',
-      propName: 'bylineData',
-      value: [
-        {
-          author: 'Alison Beach',
-          href: 'https://en.wikipedia.org/wiki/Beach',
-          title: 'Beach Editor',
-        },
-        {
-          author: 'Charles Donkey',
-          href: 'https://en.wikipedia.org/wiki/Donkey',
-          title: 'Senior Donkey Reporter',
-        },
-      ],
+      name: 'Description',
+      propName: 'children',
+      value: 'Element description',
+    },
+    {
+      name: 'Id',
+      propName: 'id',
+      value: 'sr-only',
     },
   ]}
-/>
+/> 

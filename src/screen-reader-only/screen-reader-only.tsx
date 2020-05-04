@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { styled } from 'newskit';
+import {styled} from '../utils/style';
 
 const ScreenReader = styled.div`
   clip: rect(0 0 0 0);
@@ -9,17 +9,12 @@ const ScreenReader = styled.div`
   position: absolute;
   white-space: nowrap;
   width: 1px;
-`
+`;
 
 export interface Props {
-  id: string
+  id: string;
 }
 
-export const ScreenReaderOnly: React.FC<Props> = ({ children }) => {
-  return (
-    <ScreenReader>
-      { children }
-    </ScreenReader>
-  )
-}
-
+export const ScreenReaderOnly: React.FC<Props> = ({children}) => (
+  <ScreenReader>{children}</ScreenReader>
+);

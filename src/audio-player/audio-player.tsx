@@ -22,7 +22,7 @@ import {LabelPosition} from '../slider/types';
 import {AudioPlayerProps} from './types';
 import {useAudioFunctions} from './audio-functions';
 import {StackChild} from '../stack-child';
-import { ScreenReaderOnly } from '../screen-reader-only/screen-reader-only';
+import {ScreenReaderOnly} from '../screen-reader-only/screen-reader-only';
 
 export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   const {
@@ -270,12 +270,12 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
                   onChange={onChangeVolumeSlider}
                   trackSize="sizing010"
                   thumbSize="sizing040"
-                  aria-describedby='sr-only-volume-control'
-                  {...volumePresets}
+                  aria-describedby="sr-only-volume-control"
+                  {...volumePresetObj}
                 />
-                <ScreenReaderOnly id='sr-only-volume-control'>
-                  <p> Use the arrow keys to adjust volume </p>
-                </ScreenReaderOnly>  
+                <ScreenReaderOnly id="sr-only-volume-control">
+                  Use the arrow keys to adjust volume
+                </ScreenReaderOnly>
               </ControlContainer>
             </StackChild>
             <StackChild order={3}>
@@ -316,12 +316,12 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
               renderTrack={renderTrack}
               labelPosition={LabelPosition.After}
               dataTestId="audio-slider"
-              aria-describedby='sr-only-forward-rewind'
+              aria-describedby="sr-only-forward-rewind"
               {...trackPresets}
             />
-            <ScreenReaderOnly id='sr-only-forward-rewind'>
-              <p> Use the arrow keys to fast forward or rewind </p>
-            </ScreenReaderOnly>  
+            <ScreenReaderOnly id="sr-only-forward-rewind">
+              Use the arrow keys to fast forward or rewind
+            </ScreenReaderOnly>
           </Cell>
         )}
       </PlayerGrid>
