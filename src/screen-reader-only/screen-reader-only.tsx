@@ -15,6 +15,6 @@ export interface Props {
   id: string;
 }
 
-export const ScreenReaderOnly: React.FC<Props> = ({children}) => (
-  <ScreenReader>{children}</ScreenReader>
+export const ScreenReaderOnly: React.FC<Props> = ({children, id}) => (
+  <ScreenReader id={id}>{children}</ScreenReader>
 );

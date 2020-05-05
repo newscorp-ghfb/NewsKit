@@ -16,6 +16,7 @@ exports[`Screen reader only renders with description 1`] = `
 
 <div
     class="emotion-0"
+    id="sr-only"
   >
     Description
   </div>
