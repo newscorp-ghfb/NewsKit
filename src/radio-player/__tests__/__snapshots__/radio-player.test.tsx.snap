@@ -1707,6 +1707,7 @@ exports[`Radio Player default player 1`] = `
                 </div>
                 <div
                   class="emotion-73"
+                  id="sr-only-volume-control"
                 >
                   Use the arrow keys to adjust volume
                 </div>
@@ -1769,6 +1770,7 @@ exports[`Radio Player default player 1`] = `
           </div>
           <div
             class="emotion-73"
+            id="sr-only-forward-rewind"
           >
             Use the arrow keys to fast forward or rewind
           </div>
@@ -3567,6 +3569,7 @@ exports[`Radio Player live player 1`] = `
                 </div>
                 <div
                   class="emotion-87"
+                  id="sr-only-volume-control"
                 >
                   Use the arrow keys to adjust volume
                 </div>
@@ -5566,6 +5569,7 @@ exports[`Radio Player player with popout link 1`] = `
                 </div>
                 <div
                   class="emotion-89"
+                  id="sr-only-volume-control"
                 >
                   Use the arrow keys to adjust volume
                 </div>
@@ -5628,6 +5632,7 @@ exports[`Radio Player player with popout link 1`] = `
           </div>
           <div
             class="emotion-89"
+            id="sr-only-forward-rewind"
           >
             Use the arrow keys to fast forward or rewind
           </div>
@@ -7786,6 +7791,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                 </div>
                 <div
                   class="emotion-103"
+                  id="sr-only-volume-control"
                 >
                   Use the arrow keys to adjust volume
                 </div>
@@ -7848,6 +7854,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
           </div>
           <div
             class="emotion-103"
+            id="sr-only-forward-rewind"
           >
             Use the arrow keys to fast forward or rewind
           </div>

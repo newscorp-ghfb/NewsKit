@@ -1044,6 +1044,7 @@ exports[`Audio Player live player renders as expected 1`] = `
                 </div>
                 <div
                   class="emotion-38"
+                  id="sr-only-volume-control"
                 >
                   Use the arrow keys to adjust volume
                 </div>
@@ -2923,6 +2924,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                 </div>
                 <div
                   class="emotion-47"
+                  id="sr-only-volume-control"
                 >
                   Use the arrow keys to adjust volume
                 </div>
@@ -2992,6 +2994,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
           </div>
           <div
             class="emotion-47"
+            id="sr-only-forward-rewind"
           >
             Use the arrow keys to fast forward or rewind
           </div>
@@ -4358,6 +4361,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                 </div>
                 <div
                   class="emotion-50"
+                  id="sr-only-volume-control"
                 >
                   Use the arrow keys to adjust volume
                 </div>
@@ -4421,6 +4425,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
           </div>
           <div
             class="emotion-50"
+            id="sr-only-forward-rewind"
           >
             Use the arrow keys to fast forward or rewind
           </div>
