@@ -638,10 +638,6 @@ exports[`Audio Player live player renders as expected 1`] = `
   width: 100%;
 }
 
-.emotion-31:disabled {
-  background-color: #f0f0f0;
-}
-
 .emotion-30 {
   background-color: #0A68C1;
   border-color: #0A68C1;
@@ -2565,10 +2561,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   width: 100%;
 }
 
-.emotion-40:disabled {
-  background-color: #f0f0f0;
-}
-
 <section
     aria-label="audio player"
     class="emotion-66"
@@ -3689,10 +3681,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
   width: 100%;
-}
-
-.emotion-43:disabled {
-  background-color: #f0f0f0;
 }
 
 .emotion-42 {

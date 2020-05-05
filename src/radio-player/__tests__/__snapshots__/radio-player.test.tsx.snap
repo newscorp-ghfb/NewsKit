@@ -1029,10 +1029,6 @@ exports[`Radio Player default player 1`] = `
   width: 100%;
 }
 
-.emotion-66:disabled {
-  background-color: #f0f0f0;
-}
-
 .emotion-65 {
   background-color: #0A68C1;
   border-color: #0A68C1;
@@ -2716,10 +2712,6 @@ exports[`Radio Player live player 1`] = `
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
   width: 100%;
-}
-
-.emotion-80:disabled {
-  background-color: #f0f0f0;
 }
 
 .emotion-79 {
@@ -4626,10 +4618,6 @@ exports[`Radio Player player with popout link 1`] = `
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
   width: 100%;
-}
-
-.emotion-82:disabled {
-  background-color: #f0f0f0;
 }
 
 .emotion-81 {
@@ -6677,10 +6665,6 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
   width: 100%;
-}
-
-.emotion-96:disabled {
-  background-color: #f0f0f0;
 }
 
 .emotion-95 {
