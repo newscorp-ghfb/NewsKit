@@ -60,12 +60,7 @@ const Index: React.FC<{toggleTheme: () => void}> = ({toggleTheme}) => (
           </MainContent>
         </Cell>
         <Cell xs={12} md={4}>
-          <Image
-            src="/static/foundations.png"
-            height="400"
-            width="712"
-            alt="foundations image"
-          />
+          <Image src="/static/foundations.png" alt="foundations image" />
           <StyledH3>Foundations</StyledH3>
           <StyledSmallParagraph>
             Foundations includes a range of styles, variables and code that form
@@ -74,12 +69,7 @@ const Index: React.FC<{toggleTheme: () => void}> = ({toggleTheme}) => (
           </StyledSmallParagraph>
         </Cell>
         <Cell xs={12} md={4}>
-          <Image
-            src="/static/components.png"
-            height="400"
-            width="712"
-            alt="components image"
-          />
+          <Image src="/static/components.png" alt="components image" />
           <StyledH3>Components</StyledH3>
           <StyledSmallParagraph>
             The library of components are the building blocks of our products.
@@ -88,12 +78,7 @@ const Index: React.FC<{toggleTheme: () => void}> = ({toggleTheme}) => (
           </StyledSmallParagraph>
         </Cell>
         <Cell xs={12} md={4}>
-          <Image
-            src="/static/templates.png"
-            height="400"
-            width="712"
-            alt="templates image"
-          />
+          <Image src="/static/templates.png" alt="templates image" />
           <StyledH3>Templates</StyledH3>
           <StyledSmallParagraph>
             Templates document the layout and structure of a section or entire

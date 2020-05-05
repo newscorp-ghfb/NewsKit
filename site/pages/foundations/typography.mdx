@@ -1,4 +1,5 @@
 import Layout from '../../components/layout';
+import {LegacyBlock} from '../../components/legacy-block';
 import Playground from '../../components/playground';
 import {H1, H2, H3, H4, H5, H6, P, Image} from 'newskit';
 
@@ -14,12 +15,14 @@ Words are at the heart of our business. Use the type scale and usage guidelines 
 
 A type scale is used to provide consistency, hierarchy and rhythm, ensuring responsivity across devices. Typography sizing is based on our root font size (rem) of 16pt, which is adjusted to provide a harmonious scale.
 
-<Image
-  src="/static/examples/typography/typography.png"
-  alt="typography example"
-  width="1388"
-  height="1600"
-/>
+<LegacyBlock marginBottom="sizing05" maxWidth="760px">
+  <Image
+    src="/static/examples/typography/typography.png"
+    alt="typography example"
+    maxWidth="1388"
+    maxHeight="1600"
+  />
+</LegacyBlock>
 
 ## Applying the type scale
 
