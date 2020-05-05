@@ -18,6 +18,7 @@ import {StyledTrack} from '../slider/styled';
 import {useTheme} from '../themes/emotion';
 
 import {getSingleStylePreset} from '../utils/style-preset';
+import {getBuiId} from '../utils/get-bui-id';
 import {LabelPosition} from '../slider/types';
 import {AudioPlayerProps} from './types';
 import {useAudioFunctions} from './audio-functions';
@@ -214,6 +215,10 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
 
     return hour + min + sec;
   };
+
+  const srOnlyVolumeControl = getBuiId();
+  const srOnlyForwardRewind = getBuiId();
+
   return (
     <PlayerContainer aria-label="audio player">
       <PlayerGrid
@@ -270,10 +275,10 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
                   onChange={onChangeVolumeSlider}
                   trackSize="sizing010"
                   thumbSize="sizing040"
-                  aria-describedby="sr-only-volume-control"
+                  aria-describedby={srOnlyVolumeControl}
                   {...volumePresetObj}
                 />
-                <ScreenReaderOnly id="sr-only-volume-control">
+                <ScreenReaderOnly id={srOnlyVolumeControl}>
                   Use the arrow keys to adjust volume
                 </ScreenReaderOnly>
               </ControlContainer>
@@ -316,10 +321,10 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
               renderTrack={renderTrack}
               labelPosition={LabelPosition.After}
               dataTestId="audio-slider"
-              aria-describedby="sr-only-forward-rewind"
+              aria-describedby={srOnlyForwardRewind}
               {...trackPresets}
             />
-            <ScreenReaderOnly id="sr-only-forward-rewind">
+            <ScreenReaderOnly id={srOnlyForwardRewind}>
               Use the arrow keys to fast forward or rewind
             </ScreenReaderOnly>
           </Cell>
