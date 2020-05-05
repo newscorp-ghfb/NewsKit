@@ -7,6 +7,8 @@ import {
   BackgroundImageProperty,
   BorderColorProperty,
   ColorProperty,
+  BorderWidthProperty,
+  BorderRadiusProperty,
 } from 'csstype';
 import {BorderPrimitives} from '../newskit-light/borders';
 import {ColorPrimitives} from '../newskit-light/colors';
@@ -22,9 +24,9 @@ export interface StylePresetStyles {
   backgroundPosition?: BackgroundPositionProperty<string>;
   borderStyle?: BorderStyleProperty;
   borderColor?: BorderColorProperty;
-  borderWidth?: string;
+  borderWidth?: BorderWidthProperty<string>;
   color?: ColorProperty;
-  borderRadius?: string; // shape
+  borderRadius?: BorderRadiusProperty<string>; // shape
   iconColor?: ColorProperty;
 }
 export type StylePresetStyleKeys = keyof StylePresetStyles;

@@ -106,8 +106,8 @@ const Article: React.FC = () => (
             <AuthorContainer>
               <AuthorImageContainer>
                 <StyledImage
-                  aspectHeight={414}
-                  aspectWidth={736}
+                  height="414"
+                  width="736"
                   src="https://via.placeholder.com/736x414"
                   alt="Author image"
                 />
@@ -153,8 +153,8 @@ const Article: React.FC = () => (
               <Image
                 src="https://via.placeholder.com/736x414"
                 alt="Placeholder image"
-                aspectHeight="414"
-                aspectWidth="736"
+                height="414"
+                width="736"
               />
             </LayoutContainer>
           </Cell>

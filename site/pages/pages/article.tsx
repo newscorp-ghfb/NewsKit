@@ -41,8 +41,8 @@ const Article: React.FC = () => (
             <Image
               src="https://via.placeholder.com/736x414"
               alt="Author image"
-              aspectHeight="414"
-              aspectWidth="736"
+              height="414"
+              width="736"
             />
             <ArticleByline bylineData={[{author: 'Nick Dorman'}]} />
             <DateLine
@@ -79,8 +79,8 @@ const Article: React.FC = () => (
             <Image
               src="https://via.placeholder.com/736x414"
               alt="Placeholder image"
-              aspectHeight="414"
-              aspectWidth="736"
+              height="414"
+              width="736"
             />
           </Cell>
 

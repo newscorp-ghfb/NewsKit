@@ -214,8 +214,8 @@ exports[`Radio Player default player 1`] = `
 .emotion-4 {
   position: relative;
   width: 100%;
+  padding-top: 100.00%;
   height: 0;
-  padding-top: calc(100% * (1/1));
 }
 
 .emotion-2 {
@@ -259,8 +259,8 @@ exports[`Radio Player default player 1`] = `
 
 .emotion-3 {
   display: none;
-  width: 100%;
   height: auto;
+  width: 100%;
   -webkit-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
   border-radius: inherit;
@@ -1995,8 +1995,8 @@ exports[`Radio Player live player 1`] = `
 .emotion-4 {
   position: relative;
   width: 100%;
+  padding-top: 100.00%;
   height: 0;
-  padding-top: calc(100% * (1/1));
 }
 
 .emotion-2 {
@@ -2040,8 +2040,8 @@ exports[`Radio Player live player 1`] = `
 
 .emotion-3 {
   display: none;
-  width: 100%;
   height: auto;
+  width: 100%;
   -webkit-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
   border-radius: inherit;
@@ -3138,9 +3138,7 @@ exports[`Radio Player live player 1`] = `
                       class="emotion-5"
                     >
                       <div
-                        alt="test image 1"
                         class="emotion-4"
-                        src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
                       >
                         <div
                           class="emotion-2"
@@ -3249,9 +3247,7 @@ exports[`Radio Player live player 1`] = `
                       class="emotion-5"
                     >
                       <div
-                        alt="test image 1"
                         class="emotion-4"
-                        src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
                       >
                         <div
                           class="emotion-2"
@@ -3808,8 +3804,8 @@ exports[`Radio Player player with popout link 1`] = `
 .emotion-4 {
   position: relative;
   width: 100%;
+  padding-top: 100.00%;
   height: 0;
-  padding-top: calc(100% * (1/1));
 }
 
 .emotion-2 {
@@ -3853,8 +3849,8 @@ exports[`Radio Player player with popout link 1`] = `
 
 .emotion-3 {
   display: none;
-  width: 100%;
   height: auto;
+  width: 100%;
   -webkit-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
   border-radius: inherit;
@@ -5080,9 +5076,7 @@ exports[`Radio Player player with popout link 1`] = `
                       class="emotion-5"
                     >
                       <div
-                        alt="test image 1"
                         class="emotion-4"
-                        src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
                       >
                         <div
                           class="emotion-2"
@@ -5169,9 +5163,7 @@ exports[`Radio Player player with popout link 1`] = `
                       class="emotion-5"
                     >
                       <div
-                        alt="test image 1"
                         class="emotion-4"
-                        src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
                       >
                         <div
                           class="emotion-2"
@@ -5857,8 +5849,8 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 .emotion-4 {
   position: relative;
   width: 100%;
+  padding-top: 100.00%;
   height: 0;
-  padding-top: calc(100% * (1/1));
 }
 
 .emotion-2 {
@@ -5902,8 +5894,8 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 
 .emotion-3 {
   display: none;
-  width: 100%;
   height: auto;
+  width: 100%;
   -webkit-animation: fadeIn 300ms;
   animation: fadeIn 300ms;
   border-radius: inherit;
@@ -7218,9 +7210,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                       class="emotion-5"
                     >
                       <div
-                        alt="test image 1"
                         class="emotion-4"
-                        src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
                       >
                         <div
                           class="emotion-2"
@@ -7349,9 +7339,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                       class="emotion-5"
                     >
                       <div
-                        alt="test image 1"
                         class="emotion-4"
-                        src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
                       >
                         <div
                           class="emotion-2"

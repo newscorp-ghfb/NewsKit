@@ -26,17 +26,27 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
     Image description that is used directly in the <code>alt</code> attribute of
     the internal <code>img</code> element.
   </Prop>
-  <Prop name="aspectWidth" type="string|number">
-    Used in combination with `aspectHeight` to calculate the aspect ratio for
+  <Prop name="width" type="string" default="100%">
+    Used in combination with `height` to calculate the aspect ratio for
     the image. Generally supply the width px value if know, if not supply
-    horizontal aspect ratio. Both aspectWidth and aspectRatio should be supplied
+    horizontal aspect ratio. Both width and aspectRatio should be supplied
     in a consistent manner.
   </Prop>
-  <Prop name="aspectHeight" type="string|number">
-    Used in combination with `aspectWidth` to calculate the aspect ratio for the
+  <Prop name="maxWidth" type="string">
+    see https://developer.mozilla.org/en-US/docs/Web/CSS/max-width
+  </Prop>
+  <Prop name="height" type="string" default="auto">
+    Used in combination with `width` to calculate the aspect ratio for the
     image. Generally supply the height px value if know, if not supply vertical
-    aspect ratio. Both aspectWidth and aspectRatio should be supplied in a
+    aspect ratio. Both width and aspectRatio should be supplied in a
     consistent manner.
+  </Prop>
+  <Prop name="maxHeight" type="string">
+    see https://developer.mozilla.org/en-US/docs/Web/CSS/max-height
+  </Prop>
+  <Prop name="loadingAspectRatio" type="string">
+    This is a string interpolation of the aspect ratio of the loading container of the image.
+    This is also used to determine the height or width of the image if only one dimension is provided.
   </Prop>
   <Prop name="hideLoadingIcon" type="boolean" default={false}>
     Hide the loading icon whilst the image is loading.
@@ -69,14 +79,29 @@ The aspect width/height is only used on loading state.
       value: 'Example image',
     },
     {
-      name: 'aspect width',
-      propName: 'aspectWidth',
+      name: 'width',
+      propName: 'width',
       value: '826',
     },
     {
-      name: 'aspect height',
-      propName: 'aspectHeight',
+      name: 'max width',
+      propName: 'maxWidth',
+      value: '826',
+    },
+    {
+      name: 'height',
+      propName: 'height',
       value: '551',
+    },
+    {
+      name: 'max height',
+      propName: 'maxHeight',
+      value: '551',
+    },
+    {
+      name: 'Loading Aspect Ratio',
+      propName: 'loadingAspectRatio',
+      value: '3:2',
     },
     {
       name: 'Hide loading icon',

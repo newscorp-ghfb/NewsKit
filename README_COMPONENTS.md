@@ -35,7 +35,7 @@ export default class App extends React.Component {
       <ThemeProvider theme={theSunTheme}>
         <Tag
           href="http://example.com"
-          $size={TagSize.Medium}>
+          size={TagSize.Medium}>
             Tag Content
         </Tag>
       </ThemeProvider>

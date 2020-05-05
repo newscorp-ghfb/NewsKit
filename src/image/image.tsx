@@ -1,116 +1,116 @@
-import React, {useState, useEffect, useRef} from 'react';
-import {styled, getColorFromTheme} from '../utils/style';
+import React, {useState, useEffect, useRef, useCallback} from 'react';
+import dequal from 'dequal';
 import {Placeholder} from '../icons';
-import {getStylePresetFromTheme} from '../utils/style-preset';
+import {ImageProps, GetDimensionsProp} from './types';
+import {
+  ImageContainer,
+  LoadingContainer,
+  IconContainer,
+  StyledImage,
+} from './styled';
 
-export interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
-  aspectHeight: number | string;
-  aspectWidth: number | string;
-  hideLoadingIcon?: boolean;
-  stylePreset?: string;
-}
-
-interface ImageContainerProps extends React.HtmlHTMLAttributes<HTMLElement> {
-  isLoading: boolean;
-  aspectHeight: number | string;
-  aspectWidth: number | string;
-  stylePreset?: string;
-}
-
-const ImageContainer = styled.div<ImageContainerProps>`
-  position: relative;
-  width: 100%;
-  height: ${props => (props.isLoading ? 0 : 'auto')};
-  padding-top: ${props =>
-    props.isLoading
-      ? `calc(100% * (${props.aspectHeight}/${props.aspectWidth}))`
-      : 0};
-
-  ${({isLoading, ...props}) =>
-    getStylePresetFromTheme(
-      'imageSharp',
-      'stylePreset' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
-      {
-        isLoading,
-      },
-    )(props)}
-`;
-
-export const imagePropsAreEqual = (
-  prevProps: ImageProps,
-  nextProps: ImageProps,
-) =>
-  prevProps.aspectHeight === nextProps.aspectHeight &&
-  prevProps.aspectWidth === nextProps.aspectWidth &&
-  prevProps.hideLoadingIcon === nextProps.hideLoadingIcon &&
-  prevProps.src === nextProps.src &&
-  prevProps.stylePreset === nextProps.stylePreset;
-
-export const handleClientSideRender = (
-  handler: () => boolean | void,
+export const useClientSide = (
+  render: () => boolean | void,
   imgRef: React.RefObject<HTMLImageElement>,
 ) => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     const imageElement = imgRef.current!;
     if (imageElement && imageElement.complete) {
-      handler();
+      render();
     }
   });
 };
 
-const ImageComponent = (props: ImageProps) => {
-  const imageRef: React.RefObject<HTMLImageElement> = useRef(null);
-  const {hideLoadingIcon} = props;
-  const [isLoading, setIsLoading] = useState(true);
-  const handleOnImageLoad = () => isLoading && setIsLoading(false);
+const getUnit = (value: number, prop?: string) =>
+  (prop && prop.replace(value.toString(), '')) || 'px';
 
-  handleClientSideRender(handleOnImageLoad, imageRef);
-
-  const DisplayImage = styled.img`
-    display: ${isLoading ? 'none' : 'block'};
-    width: 100%;
-    height: auto;
-    animation: fadeIn 300ms;
-    border-radius: inherit;
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
+const getDimensions = ({
+  loadingAspectRatio,
+  height: $height,
+  width: $width,
+}: GetDimensionsProp) => {
+  const widthVal = parseFloat($width!);
+  const heightVal = parseFloat($height!);
+  if (!Number.isNaN(widthVal) && !Number.isNaN(heightVal)) {
+    return {
+      paddingTop: `${((widthVal / heightVal) * 100).toFixed(2)}%`,
+      $height: `${heightVal}${getUnit(heightVal, $height)}`,
+      $width: `${widthVal}${getUnit(widthVal, $width)}`,
+    };
+  }
+  if (loadingAspectRatio && loadingAspectRatio.includes(':')) {
+    const [x, y] = loadingAspectRatio.split(':').map(parseFloat);
+    if (!Number.isNaN(x) && !Number.isNaN(y)) {
+      const paddingTop = `${((x / y) * 100).toFixed(2)}%`;
+      if (!Number.isNaN(widthVal)) {
+        return {
+          paddingTop,
+          $width: `${widthVal}${getUnit(widthVal, $width)}`,
+          $height: `${((widthVal / x) * y).toFixed(2)}${getUnit(
+            widthVal,
+            $width,
+          )}`,
+        };
       }
-      to {
-        opacity: 1;
+      if (!Number.isNaN(heightVal)) {
+        return {
+          paddingTop,
+          $width: `${(heightVal / y) * x}${getUnit(widthVal, $width)}`,
+          $height: `${heightVal}${getUnit(heightVal, $height)}`,
+        };
       }
+      return {paddingTop, $height, $width};
     }
-  `;
+  }
+  return {$height, $width};
+};
 
-  const IconContainer = styled.div`
-    top: 0;
-    left: 0;
-    position: absolute;
-    display: ${isLoading && !hideLoadingIcon ? 'flex' : 'none'};
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-  `;
+const ImageComponent: React.FC<ImageProps> = ({
+  width,
+  height,
+  loadingAspectRatio,
+  hideLoadingIcon,
+  stylePreset,
+  ...props
+}) => {
+  const imageRef: React.RefObject<HTMLImageElement> = useRef(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const onLoad = useCallback(() => isLoading && setIsLoading(false), [
+    isLoading,
+    setIsLoading,
+  ]);
+  const {paddingTop, ...dimensions} = getDimensions({
+    loadingAspectRatio,
+    height,
+    width,
+  });
 
-  const InnerIconContainer = styled.div`
-    display: flex;
-    justify-content: center;
-  `;
+  useClientSide(onLoad, imageRef);
 
   return (
-    <ImageContainer {...props} isLoading={isLoading}>
-      <IconContainer>
-        <InnerIconContainer>
-          <Placeholder size="iconSize040" />
-        </InnerIconContainer>
-      </IconContainer>
-      <DisplayImage {...props} ref={imageRef} onLoad={handleOnImageLoad} />
+    <ImageContainer
+      isLoading={isLoading}
+      paddingTop={paddingTop}
+      stylePreset={stylePreset}
+    >
+      {isLoading && (
+        <LoadingContainer>
+          {!hideLoadingIcon && (
+            <IconContainer>
+              <Placeholder size="iconSize040" />
+            </IconContainer>
+          )}
+        </LoadingContainer>
+      )}
+      <StyledImage
+        {...props}
+        {...dimensions}
+        ref={imageRef}
+        onLoad={onLoad}
+        isLoading={isLoading}
+      />
     </ImageContainer>
   );
 };
 
-export const Image = React.memo(ImageComponent, imagePropsAreEqual);
+export const Image = React.memo(ImageComponent, dequal);

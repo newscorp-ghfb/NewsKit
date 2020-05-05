@@ -69,8 +69,7 @@ const PlayerImage: React.FC<PlayerImageProps> = ({imgSrc, imgAlt}) => (
     <Image
       src={imgSrc}
       alt={imgAlt}
-      aspectHeight="1"
-      aspectWidth="1"
+      loadingAspectRatio="1:1"
       stylePreset="maskRound010"
     />
   </ImageContainer>

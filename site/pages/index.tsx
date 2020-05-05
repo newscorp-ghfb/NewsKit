@@ -62,8 +62,8 @@ const Index: React.FC<{toggleTheme: () => void}> = ({toggleTheme}) => (
         <Cell xs={12} md={4}>
           <Image
             src="/static/foundations.png"
-            aspectHeight="400"
-            aspectWidth="712"
+            height="400"
+            width="712"
             alt="foundations image"
           />
           <StyledH3>Foundations</StyledH3>
@@ -76,8 +76,8 @@ const Index: React.FC<{toggleTheme: () => void}> = ({toggleTheme}) => (
         <Cell xs={12} md={4}>
           <Image
             src="/static/components.png"
-            aspectHeight="400"
-            aspectWidth="712"
+            height="400"
+            width="712"
             alt="components image"
           />
           <StyledH3>Components</StyledH3>
@@ -90,8 +90,8 @@ const Index: React.FC<{toggleTheme: () => void}> = ({toggleTheme}) => (
         <Cell xs={12} md={4}>
           <Image
             src="/static/templates.png"
-            aspectHeight="400"
-            aspectWidth="712"
+            height="400"
+            width="712"
             alt="templates image"
           />
           <StyledH3>Templates</StyledH3>

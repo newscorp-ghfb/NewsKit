@@ -12,6 +12,36 @@ export default {
   name: 'image',
   children: [
     {
+      name: 'fixed height and width in px',
+      type: 'story',
+      component: () => (
+        <Container>
+          <StorybookHeading>300px by 200px</StorybookHeading>
+          <Image
+            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
+            width="300px"
+            height="200px"
+            alt="Example Image"
+          />
+        </Container>
+      ),
+    },
+    {
+      name: 'fixed height and width in %',
+      type: 'story',
+      component: () => (
+        <Container>
+          <StorybookHeading>100% by 60%</StorybookHeading>
+          <Image
+            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
+            width="100%"
+            height="66%"
+            alt="Example Image"
+          />
+        </Container>
+      ),
+    },
+    {
       name: 'sharp-border-radius',
       type: 'story',
       component: () => (
@@ -19,8 +49,7 @@ export default {
           <StorybookHeading>Image with sharp border-radius</StorybookHeading>
           <Image
             src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
-            aspectWidth={3}
-            aspectHeight={2}
+            loadingAspectRatio="3:2"
             alt="Example Image"
           />
         </Container>
@@ -34,8 +63,7 @@ export default {
           <StorybookHeading>Image with rounded border-radius</StorybookHeading>
           <Image
             src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
-            aspectWidth={3}
-            aspectHeight={2}
+            loadingAspectRatio="3:2"
             alt="Example Image"
             hideLoadingIcon
             stylePreset="imageRounded"
@@ -51,8 +79,7 @@ export default {
           <StorybookHeading>Image with circle border-radius</StorybookHeading>
           <Image
             src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
-            aspectWidth={1}
-            aspectHeight={1}
+            loadingAspectRatio="1:1"
             alt="Example Image"
             hideLoadingIcon
             stylePreset="imageCircle"
@@ -68,8 +95,7 @@ export default {
           <StorybookHeading>Valid image reference</StorybookHeading>
           <Image
             src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
-            aspectWidth={3}
-            aspectHeight={2}
+            loadingAspectRatio="3:2"
             alt="Example Image"
           />
         </Container>
@@ -85,8 +111,7 @@ export default {
           </StorybookHeading>
           <Image
             src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.pngx"
-            aspectWidth={3}
-            aspectHeight={2}
+            loadingAspectRatio="3:2"
             alt="Example Image"
             hideLoadingIcon
           />
