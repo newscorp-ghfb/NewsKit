@@ -40,6 +40,7 @@ export const Slider: React.FC<SliderProps> = ({
   vertical,
   ariaLabel = 'slider',
   ariaValueText,
+  ariaDescribedBy,
   minLabel,
   maxLabel,
   labelPosition = LabelPosition.Inline,
@@ -99,6 +100,7 @@ export const Slider: React.FC<SliderProps> = ({
         disabled={disabled}
         aria-label={ariaLabel}
         aria-valuetext={ariaValueText}
+        aria-describedby={ariaDescribedBy}
         stylePreset={sliderThumbStylePreset}
         thumbSize={thumbSize}
         values={values}

@@ -4,6 +4,8 @@ import {VolumeControlProps} from './types';
 import {Slider} from '../slider';
 import {VolumeUp, VolumeDown, VolumeMute} from '../icons';
 import {IconSizeKeys} from '../themes';
+import {ScreenReaderOnly} from '../screen-reader-only/screen-reader-only';
+import {getBuiId} from '../utils/get-bui-id';
 
 interface MuteButtonProps {
   volume: number;
@@ -54,6 +56,8 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
   ...presets
 }) => {
   const [unMutedVolume, setUnMutedVolume] = useState(volume);
+  const srOnlyVolumeControl = getBuiId();
+
   if (unMutedVolume !== volume && volume > 0) {
     setUnMutedVolume(volume);
   }
@@ -97,22 +101,28 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
   );
 
   return (
-    <Slider
-      vertical={vertical}
-      min={0}
-      max={1}
-      step={0.1}
-      values={volumeArr}
-      onChange={onSliderChange}
-      ariaLabel="Volume Control"
-      ariaValueText={`volume level ${volumeArr[0] * 10} of 10`}
-      dataTestId="volume-control"
-      trackSize={trackSize}
-      thumbSize={thumbSize}
-      minLabel={minLabel}
-      maxLabel={maxLabel}
-      onKeyDown={toggleMuteWithKeys}
-      {...presets}
-    />
+    <React.Fragment>
+      <Slider
+        vertical={vertical}
+        min={0}
+        max={1}
+        step={0.1}
+        values={volumeArr}
+        onChange={onSliderChange}
+        ariaLabel="Volume Control"
+        ariaValueText={`volume level ${volumeArr[0] * 10} of 10`}
+        dataTestId="volume-control"
+        trackSize={trackSize}
+        thumbSize={thumbSize}
+        minLabel={minLabel}
+        maxLabel={maxLabel}
+        onKeyDown={toggleMuteWithKeys}
+        ariaDescribedBy={srOnlyVolumeControl}
+        {...presets}
+      />
+      <ScreenReaderOnly id={srOnlyVolumeControl}>
+        Use the arrow keys to adjust volume
+      </ScreenReaderOnly>
+    </React.Fragment>
   );
 };

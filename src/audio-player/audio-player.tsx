@@ -216,7 +216,6 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     return hour + min + sec;
   };
 
-  const srOnlyVolumeControl = getBuiId();
   const srOnlyForwardRewind = getBuiId();
 
   return (
@@ -275,12 +274,8 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
                   onChange={onChangeVolumeSlider}
                   trackSize="sizing010"
                   thumbSize="sizing040"
-                  aria-describedby={srOnlyVolumeControl}
                   {...volumePresetObj}
                 />
-                <ScreenReaderOnly id={srOnlyVolumeControl}>
-                  Use the arrow keys to adjust volume
-                </ScreenReaderOnly>
               </ControlContainer>
             </StackChild>
             <StackChild order={3}>
@@ -321,7 +316,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
               renderTrack={renderTrack}
               labelPosition={LabelPosition.After}
               dataTestId="audio-slider"
-              aria-describedby={srOnlyForwardRewind}
+              ariaDescribedBy={srOnlyForwardRewind}
               {...trackPresets}
             />
             <ScreenReaderOnly id={srOnlyForwardRewind}>
