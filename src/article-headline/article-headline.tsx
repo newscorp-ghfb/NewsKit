@@ -1,53 +1,93 @@
 import React from 'react';
-import {ColorKeys} from '../themes';
 import {H1} from '../typography';
 import {
   styled,
-  getColorFromTheme,
-  getTypePresetFromTheme,
+  getDefaultTypePreset,
+  getDefaultMarginPreset,
+  MQ,
 } from '../utils/style';
+import {getDefaultStylePreset} from '../utils/style-preset';
+import {TypePresetKeys} from '../themes/mappers/type-presets';
+import {MarginPresetKeys} from '../themes/mappers/spacing';
+import {StylePresetKeys} from '../themes/mappers/style-preset';
 
-const Heading = styled(H1)`
-  display: inline;
-  ${getTypePresetFromTheme({
-    xs: 'headline100',
-    md: 'headline200',
-  })}
-`;
-
-interface KickerProps {
-  color?: ColorKeys;
+export interface ArticleHeadline {
+  kickerText?: string;
+  renderHeadingAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
+  renderKickerAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
+  kickerStylePreset?: MQ<StylePresetKeys>;
+  headingStylePreset?: MQ<StylePresetKeys>;
+  kickerMqTypePreset?: MQ<TypePresetKeys>;
+  headingMqTypePreset?: MQ<TypePresetKeys>;
+  kickerMqInlineMarginPreset?: MQ<MarginPresetKeys>;
 }
 
-const StyledKicker = styled(Heading)<{$color?: ColorKeys}>`
-  display: inline;
-  color: ${getColorFromTheme('inkBrand010', '$color')};
-  text-transform: uppercase;
-`;
+interface HeadingProps {
+  headingStylePreset?: MQ<StylePresetKeys>;
+  headingMqTypePreset?: MQ<TypePresetKeys>;
+  as?: React.ElementType;
+}
 
-const Kicker: React.FC<KickerProps> = ({color, ...props}) => (
-  <StyledKicker {...props} as="span" $color={color} />
-);
+interface KickerProps {
+  kickerStylePreset?: MQ<StylePresetKeys>;
+  kickerMqTypePreset?: MQ<TypePresetKeys>;
+  kickerMqInlineMarginPreset?: MQ<MarginPresetKeys>;
+}
 
-const Headline = styled.div`
+const Headline = styled.section`
   display: block;
 `;
 
-export interface ArticleHeadline {
-  kickerColor?: ColorKeys;
-  kickerText?: React.ReactNode;
-}
+const Heading = styled(H1)<HeadingProps>`
+  display: inline-block;
+  ${getDefaultTypePreset('articleHeadline.heading', 'headingMqTypePreset', {
+    withCrop: true,
+  })}
+  ${getDefaultStylePreset('articleHeadline.heading', 'headingStylePreset')}
+`;
+
+const Kicker = styled(Heading)<KickerProps>`
+  display: inline-block;
+  ${getDefaultTypePreset('articleHeadline.kicker', 'kickerMqTypePreset', {
+    withCrop: true,
+  })}
+  ${getDefaultStylePreset('articleHeadline.kicker', 'kickerStylePreset')}
+  ${getDefaultMarginPreset(
+    'articleHeadline.kicker',
+    'kickerMqInlineMarginPreset',
+  )}
+  text-transform: uppercase;
+`;
 
 export const ArticleHeadline: React.FC<ArticleHeadline> = ({
   children,
-  kickerColor,
   kickerText,
+  renderHeadingAs = 'h1',
+  renderKickerAs = 'span',
+  headingStylePreset,
+  kickerStylePreset,
+  kickerMqTypePreset,
+  headingMqTypePreset,
+  kickerMqInlineMarginPreset,
 }) =>
   kickerText ? (
     <Headline>
-      <Kicker color={kickerColor}>{kickerText} </Kicker>
-      <Heading>{children}</Heading>
+      <Kicker
+        as={renderKickerAs}
+        kickerStylePreset={kickerStylePreset}
+        kickerMqTypePreset={kickerMqTypePreset}
+        kickerMqInlineMarginPreset={kickerMqInlineMarginPreset}
+      >
+        {kickerText}{' '}
+      </Kicker>
+      <Heading
+        as={renderHeadingAs}
+        headingStylePreset={headingStylePreset}
+        headingMqTypePreset={headingMqTypePreset}
+      >
+        {children}
+      </Heading>
     </Headline>
   ) : (
-    <Heading>{children}</Heading>
+    <Heading as={renderHeadingAs}>{children}</Heading>
   );

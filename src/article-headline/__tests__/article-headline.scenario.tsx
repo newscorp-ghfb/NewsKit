@@ -5,7 +5,35 @@ export const name = 'article-headline';
 
 export const component = () => (
   <React.Fragment>
-    <ArticleHeadline>headline only</ArticleHeadline>
-    <ArticleHeadline kickerText="Kicker">headline with kicker</ArticleHeadline>
+    <ArticleHeadline>Only headline text with not kicker</ArticleHeadline>
+    <br />
+    <br />
+    <ArticleHeadline kickerText="Kicker">Headline text</ArticleHeadline>
+    <br />
+    <ArticleHeadline
+      kickerText="Kicker as h5"
+      renderHeadingAs="h4"
+      renderKickerAs="h5"
+    >
+      Headline as h4
+    </ArticleHeadline>
+    <br />
+    <ArticleHeadline
+      kickerText="Kicker overwritten preset"
+      kickerStylePreset="tagPrimary"
+      headingStylePreset="linkPrimary"
+    >
+      Headline overwritten preset
+    </ArticleHeadline>
+    <br />
+    <ArticleHeadline
+      kickerText="Kicker custom mq margin preset"
+      kickerMqInlineMarginPreset={{
+        xs: 'spaceInline070',
+        md: 'spaceInline040',
+      }}
+    >
+      Heading Headline
+    </ArticleHeadline>
   </React.Fragment>
 );

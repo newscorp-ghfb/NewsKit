@@ -447,16 +447,6 @@ export const createStylePresets = ({
         iconColor: colorPrimitives.inkNonEssential,
       },
     } as StylePresetStates,
-    shareBarLabel: {
-      base: {
-        color: colorPrimitives.inkBase,
-      },
-    } as StylePresetStates,
-    articleStandfirst: {
-      base: {
-        color: colorPrimitives.inkBase,
-      },
-    } as StylePresetStates,
     articleHeadlineKicker: {
       base: {
         color: colorPrimitives.inkBrand010,
@@ -465,6 +455,16 @@ export const createStylePresets = ({
     articleHeadlineContent: {
       base: {
         color: colorPrimitives.inkContrast,
+      },
+    } as StylePresetStates,
+    shareBarLabel: {
+      base: {
+        color: colorPrimitives.inkBase,
+      },
+    } as StylePresetStates,
+    articleStandfirst: {
+      base: {
+        color: colorPrimitives.inkBase,
       },
     } as StylePresetStates,
   };

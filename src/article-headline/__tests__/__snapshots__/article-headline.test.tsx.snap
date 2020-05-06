@@ -13,7 +13,7 @@ exports[`ArticleHeadline renders correctly with default props 1`] = `
   letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 24px 0;
-  display: inline;
+  display: inline-block;
   font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
@@ -22,6 +22,23 @@ exports[`ArticleHeadline renders correctly with default props 1`] = `
   -moz-letter-spacing: -0.5px;
   -ms-letter-spacing: -0.5px;
   letter-spacing: -0.5px;
+  color: #0a0a0a;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.21250000000000002em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.275em;
 }
 
 @media screen and (min-width:960px) {
@@ -34,6 +51,22 @@ exports[`ArticleHeadline renders correctly with default props 1`] = `
     -moz-letter-spacing: -0.5px;
     -ms-letter-spacing: -0.5px;
     letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.21250000000000002em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.275em;
   }
 }
 
@@ -58,7 +91,7 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
   letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 24px 0;
-  display: inline;
+  display: inline-block;
   font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
@@ -67,6 +100,23 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
   -moz-letter-spacing: -0.5px;
   -ms-letter-spacing: -0.5px;
   letter-spacing: -0.5px;
+  color: #0a0a0a;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.21250000000000002em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.275em;
 }
 
 @media screen and (min-width:960px) {
@@ -79,6 +129,22 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
     -moz-letter-spacing: -0.5px;
     -ms-letter-spacing: -0.5px;
     letter-spacing: -0.5px;
+  }
+
+  .emotion-1::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.21250000000000002em;
+  }
+
+  .emotion-1::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.275em;
   }
 }
 
@@ -97,7 +163,7 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
   letter-spacing: -0.5px;
   color: #0a0a0a;
   margin: 0 0 24px 0;
-  display: inline;
+  display: inline-block;
   font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
@@ -106,9 +172,35 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
   -moz-letter-spacing: -0.5px;
   -ms-letter-spacing: -0.5px;
   letter-spacing: -0.5px;
-  display: inline;
-  color: #01396E;
+  color: #0a0a0a;
+  display: inline-block;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 36px;
+  line-height: 1.1111111111111112;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
+  color: #0A68C1;
+  margin: 0 12px 0 0;
   text-transform: uppercase;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.21250000000000002em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.275em;
 }
 
 @media screen and (min-width:960px) {
@@ -122,21 +214,158 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
     -ms-letter-spacing: -0.5px;
     letter-spacing: -0.5px;
   }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.21250000000000002em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.275em;
+  }
 }
 
-<div
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.2055555555555556em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.2680555555555556em;
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.20000000000000007em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.26250000000000007em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 44px;
+    line-height: 1.0909090909090908;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.19545454545454544em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.25795454545454544em;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    margin: 0 12px 0 0;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    margin: 0 16px 0 0;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    margin: 0 16px 0 0;
+  }
+}
+
+<section
     class="emotion-2"
   >
-    <span
+    <h5
       class="emotion-0"
     >
       this is kicker 
-    </span>
-    <h1
+    </h5>
+    <h4
       class="emotion-1"
     >
       test
-    </h1>
-  </div>
+    </h4>
+  </section>
 </DocumentFragment>
 `;

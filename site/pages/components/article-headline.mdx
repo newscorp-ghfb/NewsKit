@@ -9,6 +9,10 @@ import {ArticleHeadline} from 'newskit';
 export default Layout;
 
 # Article Headline
+The Article Headline is a simple component that comprises two element: a Kicker (text) and Heading (text).  
+
+The kicker is optional.  
+They can be both be rendered as different HTML elements.  
 
 ## Overview
 
@@ -22,13 +26,59 @@ No special requirements.
 
 <LegacyBlock marginTop="sizing040">
   <Prop name="children" type="string" required>
-    The content of the article headline is passed as the child of the component.
+    The Heading text of the Article Headline is passed as the child of the component.
   </Prop>
   <Prop name="kickerText" type="string">
-    The optional kicker content, which appears before the headline content.
+    The optional Kicker content, which appears before the Heading.
   </Prop>
-  <Prop name="kickerColor" type="ColorKeys">
-    The optional color of the article kicker. If passed without kickerText, this prop has no effect.
+  <Prop name="renderHeadingAs" type="string" default="h1">
+    The type of tag you want to render the Heading as.
+    Must be one of 'h1','h2','h3','h4','h5','h6','span'.
+  </Prop>
+  <Prop name="renderKickerAs" type="string" default="span">
+    The type of tag you want to render the Kicker as.
+    Must be one of 'h1','h2','h3','h4','h5','h6','span'.
+  </Prop>
+  <Prop name="headingStylePreset" type="string">
+    The name of the style preset you want to overwrite the default style with.
+    The value must be the name of another valid style preset.
+  </Prop>
+  <Prop name="headingMqTypePreset" type="object">
+    Object containing the type presets for the Heading breakpoints. They will overwrite the default ones.
+    Example object keys:
+
+      xs: 'code010',
+      sm: 'heading060',
+      md: 'code020',
+      lg: 'heading080',
+    
+    The key's value must be a type presets.
+  </Prop>
+  <Prop name="kickerMqTypePreset" type="object">
+    Object containing the type presets for the Kicker breakpoints. They will overwrite the default ones.
+    Example object keys: 
+
+      xs: 'code010',
+      sm: 'heading060',
+      md: 'heading060',
+      lg: 'heading060',
+
+    The key's value must be a type presets.
+  </Prop>
+  <Prop name="kickerMqInlineMarginPreset" type="object">
+    Object containing the inline margin presets for the Kicker breakpoints. They will overwrite the default ones.
+    Example object keys: 
+
+      xs: 'spaceInline060',
+      sm: 'spaceInline060',
+      md: 'spaceInline070',
+      lg: 'spaceInline080',
+
+    The key's value must be a spacing presets.
+  </Prop>
+  <Prop name="kickerStylePreset" type="string">
+    The name of the style preset you want to overwrite the default style with.
+    The value must be the name of another valid style preset.
   </Prop>
 </LegacyBlock>
 
@@ -42,7 +92,7 @@ No special requirements.
     {
       name: 'Content',
       propName: 'children',
-      value: 'ArticleHeadline Content',
+      value: 'Heading Content',
     },
     {
       name: 'Kicker Text',
@@ -50,25 +100,64 @@ No special requirements.
       value: 'ArticleKicker',
     },
     {
-      name: 'Kicker Color',
-      propName: 'kickerColor',
+      name: 'Render Heading as',
+      propName: 'renderHeadingAs',
       options: [
         {
-          label: 'inkContrast',
-          value: 'inkContrast',
+          label: 'h1*',
+          value: undefined,
           isDefault: true,
         },
         {
-          label: 'inkBrand010',
-          value: 'inkBrand010',
+          label: 'h2',
+          value: 'h2',
         },
         {
-          label: 'semanticNegative030',
-          value: 'semanticNegative030',
+          label: 'h3',
+          value: 'h3',
         },
         {
-          label: 'semanticPositive030',
-          value: 'semanticPositive030',
+          label: 'h4',
+          value: 'h4',
+        },
+        {
+          label: 'h5',
+          value: 'h5',
+        },
+        {
+          label: 'span',
+          value: 'span',
+        },
+      ],
+    },
+    {
+      name: 'Render Kicker as',
+      propName: 'renderKickerAs',
+      options: [
+        {
+          label: 'span*',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'h1',
+          value: 'h1',
+        },
+ {
+          label: 'h2',
+          value: 'h2',
+        },
+        {
+          label: 'h3',
+          value: 'h3',
+        },
+        {
+          label: 'h4',
+          value: 'h4',
+        },
+        {
+          label: 'h5',
+          value: 'h5',
         },
       ],
     },

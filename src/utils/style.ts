@@ -61,7 +61,7 @@ export const getDefaultPreset = <
 export const getValueFromTheme = <ThemeToken extends string>(
   themeKey: keyof Theme,
 ) => <Props extends ThemeProp>(
-  defaultToken?: ThemeToken,
+  defaultToken?: MQ<ThemeToken>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => ({theme, ...props}: Props) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -168,7 +168,7 @@ export const getAnimationFromTheme = getValueFromTheme<AnimationKeys>(
 );
 
 export const getFontsFromTheme = <Props extends ThemeProp>(
-  defaultToken?: FontPrimitivesKeys,
+  defaultToken?: MQ<FontPrimitivesKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => (props: Props) => {
   const section = props.theme.fonts;

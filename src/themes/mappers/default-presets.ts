@@ -8,6 +8,13 @@ export const defaultPresets = {
       },
     },
     kicker: {
+      stylePreset: 'articleHeadlineKicker',
+      typePreset: {
+        xs: 'heading060',
+        sm: 'heading060',
+        md: 'heading070',
+        lg: 'heading080',
+      },
       margin: {
         xs: 'spaceInline030',
         sm: 'spaceInline030',
