@@ -13,19 +13,27 @@
 You will need to install the following as pre-requisites to getting started:
 
 * [Node.js](https://nodejs.org/en/download/) Version 10.*. If you are using an older version of Node, it is recommended to install other versions via NVM
-* [Yarn](https://yarnpkg.com/en/docs/install#mac-stable) to install the project dependencies
-* [Docker](https://docs.docker.com/docker-for-mac/install/)
+* [Yarn](https://yarnpkg.com/en/docs/install) to install the project dependencies
+* (Windows Only) [Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 ## Getting Started
 
 Once you have the above installed, run the following commands:
+Note that if you are on Windows machine, you need to run the `wsl` command first to run which ever linux environment you've installed on your machine.
 
 ```sh
 git clone git@github.com:newscorp-ghfb/ncu-newskit.git
 cd ncu-newskit
-yarn
-docker-compose build
-docker-compose up
+yarn && yarn dev
+```
+
+### IE11 issue
+
+Disclaimer: when running the documentation site in development mode using `yarn dev:docs`, the site will not work as it includes devDependancy modules that does not support IE11.
+Thereore in order to work around this when developing (testing) on IE11, please run the following commands instead.
+
+```sh
+yarn build && yarn serve:docs
 ```
 
 ## Contributing
