@@ -17,6 +17,7 @@ import {Link} from './link';
 const Footer = styled.footer`
   flex-shrink: 0;
   padding: ${getSizingFromTheme('sizing050')} 0;
+  background: ${getColorFromTheme('interface010')};
   position: relative;
 
   &::before {
@@ -77,21 +78,21 @@ const year = new Date().getUTCFullYear();
 const SiteFooter: React.FC = () => (
   <Footer>
     <Grid xsRowGutter="sizing000">
-      <Cell xs={12} md={5}>
+      <Cell xs={12} md={4} mdOffset={1}>
         <FooterCopy>
           Copyright &copy; {year} News Corp. All rights reserved.
         </FooterCopy>
       </Cell>
-      <Cell xs={12} sm={6} md={7}>
+      <Cell xs={12} sm={6} md={6}>
         <FooterMenu>
           <Hidden xs sm md lg>
             <FooterLink>
-              <Link href="/cookies" noUnderline color="inkSubtle">
+              <Link href="/cookies" noUnderline>
                 Cookies
               </Link>
             </FooterLink>
             <FooterLink>
-              <Link href="/terms" noUnderline color="inkSubtle">
+              <Link href="/terms" noUnderline>
                 Terms
               </Link>
             </FooterLink>
@@ -101,7 +102,6 @@ const SiteFooter: React.FC = () => (
               siteId="5623"
               privacyManagerId="5de4e78870353615f11c8456"
               noUnderline
-              color="inkSubtle"
             >
               Privacy
             </ConsentSettingsLink>
@@ -111,14 +111,13 @@ const SiteFooter: React.FC = () => (
               href="https://www.newscareers.co.uk/"
               target="_blank"
               noUnderline
-              color="inkSubtle"
             >
               Careers
             </Link>
           </FooterLink>
           <Hidden xs sm md lg>
             <FooterLink>
-              <Link href="/" noUnderline color="inkSubtle">
+              <Link href="/" noUnderline>
                 <GitHub size="iconSize020" />
               </Link>
             </FooterLink>

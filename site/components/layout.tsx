@@ -37,7 +37,7 @@ const Container = styled.div`
 
 const BodyWrapper = styled.main`
   flex: 1 0 auto;
-  background-color: ${getColorFromTheme('interface010')};
+  background-color: ${getColorFromTheme('interfaceBackground')};
 `;
 
 const ContentWrapper = styled.div`
@@ -48,7 +48,7 @@ const ContentWrapper = styled.div`
 interface LayoutProps {
   path: string;
   toggleTheme: () => void;
-  full?: boolean;
+  themeMode: string;
 }
 
 interface LayoutState {
@@ -142,7 +142,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
 
   render() {
     const {sidebarOpen} = this.state;
-    const {path, toggleTheme, children} = this.props;
+    const {path, toggleTheme, themeMode, children} = this.props;
 
     return (
       <LayoutWrapper>
@@ -156,12 +156,13 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
           <SiteHeader
             handleSidebarClick={this.toggleSidebar}
             toggleTheme={toggleTheme}
+            themeMode={themeMode}
             ref={this.headerRef}
           />
 
           <BodyWrapper>
             <Grid>
-              <Cell xs={12}>
+              <Cell xs={12} md={10} mdOffset={1}>
                 <Playground componentName={false} />
                 <ContentWrapper>
                   {this.renderNavigation()}

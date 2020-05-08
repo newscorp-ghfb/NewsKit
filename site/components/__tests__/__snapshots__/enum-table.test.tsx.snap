@@ -2,7 +2,13 @@
 
 exports[`EnumTable renders enum as expected 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  overflow-x: auto;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.emotion-0 {
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -28,45 +34,49 @@ exports[`EnumTable renders enum as expected 1`] = `
   border-top: none;
 }
 
-<table
-    class="emotion-0"
+<div
+    class="emotion-1"
   >
-    <thead>
-      <tr>
-        <th>
-          Key
-        </th>
-        <th>
-          Value
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          Value1
-        </td>
-        <td>
-          test-value-1
-        </td>
-      </tr>
-      <tr>
-        <td>
-          Value2
-        </td>
-        <td>
-          test-value-2
-        </td>
-      </tr>
-      <tr>
-        <td>
-          Value3
-        </td>
-        <td>
-          test-value-3
-        </td>
-      </tr>
-    </tbody>
-  </table>
+    <table
+      class="emotion-0"
+    >
+      <thead>
+        <tr>
+          <th>
+            Key
+          </th>
+          <th>
+            Value
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Value1
+          </td>
+          <td>
+            test-value-1
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Value2
+          </td>
+          <td>
+            test-value-2
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Value3
+          </td>
+          <td>
+            test-value-3
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </DocumentFragment>
 `;

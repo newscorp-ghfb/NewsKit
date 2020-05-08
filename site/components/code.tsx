@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
+import {tomorrow, coy} from 'react-syntax-highlighter/dist/styles/prism';
 import {LegacyBlock} from './legacy-block';
+import {ThemeMode} from '../context';
 
 interface CodeProps {
   children: string;
@@ -14,9 +16,16 @@ interface CodeFromFileProps {
 
 export const Code: React.FC<CodeProps> = ({language = 'jsx', children}) => (
   <LegacyBlock>
-    <SyntaxHighlighter language={language} useInlineStyles={false}>
-      {children}
-    </SyntaxHighlighter>
+    <ThemeMode.Consumer>
+      {(value: string) => (
+        <SyntaxHighlighter
+          language={language}
+          style={value === 'light' ? coy : tomorrow}
+        >
+          {children}
+        </SyntaxHighlighter>
+      )}
+    </ThemeMode.Consumer>
   </LegacyBlock>
 );
 

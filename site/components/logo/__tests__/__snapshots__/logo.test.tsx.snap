@@ -74,9 +74,6 @@ exports[`Logo Mobile logo renders as expected 1`] = `
       </title>
       <path
         d="M40 0v40H0V0h40zm-9.9823608 8H24L12 19.999V8H8v24h4v-6.004L16.001 22l10.0031809 10H32L19.002 19.002 30.0176392 8z"
-        fill="#000"
-        fill-opacity=".87"
-        fill-rule="evenodd"
       />
     </svg>
   </div>

@@ -9,6 +9,7 @@ import {
   getSizingFromTheme,
   getColorFromTheme,
   TypePresetKeys,
+  ColorKeys,
 } from 'newskit';
 import {LegacyBlock} from './legacy-block';
 import slugify from '../helpers/slugify';
@@ -56,11 +57,12 @@ interface HeadingContainerProps {
   marginTop?: string;
   paddingTop?: string;
   wrapText?: boolean;
+  color?: ColorKeys;
 }
 
 const TextElement = styled.span<HeadingContainerProps>`
   ${getTypePresetFromTheme(undefined, 'font')};
-  color: ${getColorFromTheme('inkBase')};
+  color: ${getColorFromTheme('inkContrast', 'color')};
   margin-bottom: ${getSizingFromTheme('sizing050')};
   font-weight: ${({weight}) => weight || null};
   line-height: ${({lineHeight}) => lineHeight || null};
@@ -123,7 +125,7 @@ const ListItem: React.FC<TextProps> = ({children}) => (
 );
 
 const Paragraph: React.FC<TextProps> = ({children}) => (
-  <TextElement as="p" font="body030">
+  <TextElement as="p" font="body030" color="inkBase">
     {children}
   </TextElement>
 );
@@ -132,7 +134,7 @@ const UnorderedList = ({children}: TextProps) => <ul>{children}</ul>;
 
 const InlineCode = styled.code`
   background-color: rgba(27, 31, 35, 0.05);
-  color: #000;
+  color: ${getColorFromTheme('inkSubtle')};
   border-radius: 3px;
   font-size: 85%;
   margin: 0;
@@ -141,7 +143,7 @@ const InlineCode = styled.code`
 `;
 
 const Blockquote = styled.blockquote`
-  background-color: rgba(27, 31, 35, 0.03);
+  background-color: ${getColorFromTheme('inkSubtle')};
   border-radius: 3px;
   margin: 0;
   padding: 1em 3em;
@@ -165,6 +167,12 @@ export const Table = styled.table`
       ${getSizingFromTheme('sizing030')};
     border-top: none;
   }
+`;
+
+const TableWrapper = styled.div`
+  overflow-x: auto;
+  width: 100%;
+  margin-bottom: 40px;
 `;
 
 const SectionLink = styled.a<{offset?: number}>`
@@ -193,10 +201,8 @@ export const H1 = ({children}: TextProps) => (
           typeof children === 'string' &&
           children.toLowerCase().replace(/\s+/g, '-')) as string | undefined
       }
-      size="40px"
-      weight={200}
       element="h1"
-      fontType="heading030"
+      fontType="heading080"
       wrapText
     >
       {children as string}
@@ -211,7 +217,7 @@ export const H2 = ({children, offset}: TextProps & {offset?: number}) => {
   return (
     <React.Fragment>
       <SectionLink id={id} offset={offset} />
-      <Heading element="h2" fontType="heading020" weight={600} border>
+      <Heading element="h2" fontType="subhead030" border>
         {children as string}
       </Heading>
     </React.Fragment>
@@ -219,15 +225,15 @@ export const H2 = ({children, offset}: TextProps & {offset?: number}) => {
 };
 
 export const H3 = ({children}: TextProps) => (
-  <Heading weight={400} element="h3" fontType="font500" border>
+  <Heading element="h3" fontType="subhead020" border>
     {children as string}
   </Heading>
 );
 
-const ScrollableTable = ({children}: TableProps) => (
-  <div style={{overflowX: 'auto', width: '100%'}}>
+export const ScrollableTable = ({children}: TableProps) => (
+  <TableWrapper>
     <Table>{children}</Table>
-  </div>
+  </TableWrapper>
 );
 
 export default {
@@ -238,7 +244,7 @@ export default {
   h2: H2,
   h3: H3,
   h4: ({children}: TextProps) => (
-    <Heading weight={600} element="h4" fontType="heading010">
+    <Heading element="h4" fontType="subhead010">
       {children as string}
     </Heading>
   ),

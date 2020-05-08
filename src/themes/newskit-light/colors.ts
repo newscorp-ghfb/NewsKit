@@ -1,5 +1,6 @@
 export const colorPalettes = {
   white: '#FFFFFF',
+  black: '#000000',
   inkLinkVisited: '#903D91',
   inkLink: '#2F75D7',
   transparent: 'transparent',

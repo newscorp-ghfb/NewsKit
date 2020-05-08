@@ -83,11 +83,18 @@ const newsKitDaily = createTheme('newskit-daily', {
   }),
 });
 
-const Article: React.FC = () => (
+const Article: React.FC<{
+  toggleTheme: () => void;
+  themeMode: string;
+}> = ({toggleTheme, themeMode}) => (
   <React.Fragment>
     <PageTitle title="The NewsKit Daily" />
     <ThemeProvider theme={newsKitDaily}>
-      <Layout path="/pages/article" toggleTheme={() => {}}>
+      <Layout
+        path="/pages/article"
+        toggleTheme={toggleTheme}
+        themeMode={themeMode}
+      >
         <Grid>
           <Cell xs={12}>
             <ArticleHeadline>

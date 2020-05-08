@@ -123,6 +123,7 @@ export interface PrimitiveOverrides {
   colors: Colors;
   sizing: Sizing;
   borders: Borders;
+  borderRadius: BorderRadius;
   fonts: FontPrimitives;
   typePresets: TypePresets;
   stylePresets: StylePresets;
@@ -161,7 +162,15 @@ export const createTheme = (
     shadowPrimitives: newTheme.shadow,
   });
 
-  const {colors, sizing, borders, fonts, typePresets, stylePresets} = newTheme;
+  const {
+    colors,
+    sizing,
+    borders,
+    borderRadius,
+    fonts,
+    typePresets,
+    stylePresets,
+  } = newTheme;
 
   return deepMerge(
     newTheme,
@@ -171,6 +180,7 @@ export const createTheme = (
         colors,
         sizing,
         borders,
+        borderRadius,
         fonts,
         typePresets,
         stylePresets,

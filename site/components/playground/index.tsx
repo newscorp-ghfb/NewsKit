@@ -4,10 +4,7 @@ import {
   getColorFromTheme,
   getSizingFromTheme,
   getBorderFromTheme,
-  newskitLightTheme,
-  ThemeProvider,
-  theSunTheme,
-  theTimesTheme,
+  getTypePresetFromTheme,
 } from 'newskit';
 import {LegacyBlock, LegacyBlockProps} from '../legacy-block';
 import {MultiChoiceKnob} from './knobs/multichoice-knob';
@@ -42,6 +39,8 @@ const StyledMockTab = styled.span`
   border-bottom-style: solid;
   border-bottom-width: ${getBorderFromTheme('borderWidth020')};
   border-bottom-color: ${getColorFromTheme('inkBrand010')};
+  color: ${getColorFromTheme('inkBase')};
+  ${getTypePresetFromTheme('subhead020')};
 `;
 
 const isMultiChoiceKnobConfig = (
@@ -111,7 +110,6 @@ const renderKnob = (
 export const Playground: React.FC<
   PlaygroundProps | {componentName: false}
 > = props => {
-  const [theme, setTheme] = useState(newskitLightTheme);
   const [componentIndex, setComponentIndex] = useState(0);
 
   const {knobs = []} = props as PlaygroundProps;
@@ -183,26 +181,15 @@ export const Playground: React.FC<
         data-testid="playground-element"
         {...commonBlockProps}
         minHeight="200px"
+        backgroundColor="transparent"
       >
         <ErrorBoundary key={errorBoundaryKey}>
-          <ThemeProvider theme={theme}>
-            <Component {...state} />
-          </ThemeProvider>
+          <Component {...state} />
         </ErrorBoundary>
       </LegacyBlock>
       <LegacyBlock font="body030">
         <StyledMockTab>Props</StyledMockTab>
       </LegacyBlock>
-      <Selector
-        options={[
-          ['NewsKit Light', newskitLightTheme],
-          ['The Sun', theSunTheme],
-          ['The Times', theTimesTheme],
-        ]}
-        onChange={setTheme}
-      >
-        Theme
-      </Selector>
       {componentOptions && (
         <Selector options={componentOptions} onChange={setComponentIndex}>
           Component

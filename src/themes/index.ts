@@ -21,6 +21,7 @@ export {
 export {FontPrimitives, FontPrimitivesKeys} from './newskit-light/fonts';
 
 export {newskitLightTheme} from './newskit-light';
+export {newskitDarkTheme} from './newskit-dark';
 export {theSunTheme} from './the-sun';
 export {theTimesTheme} from './the-times';
 

@@ -144,7 +144,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-10 {
   list-style-type: none;
   margin: 0px;
-  padding: 0 16px;
+  padding: 0 4px;
 }
 
 .emotion-10 .emotion-10,
@@ -249,7 +249,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   background-color: #fafafa;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #f0f0f0;
+  border-right-color: #e4e4e4;
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
@@ -585,7 +585,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   background-color: #fafafa;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #f0f0f0;
+  border-right-color: #e4e4e4;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
@@ -744,7 +744,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-10 {
   list-style-type: none;
   margin: 0px;
-  padding: 0 16px;
+  padding: 0 4px;
 }
 
 .emotion-10 .emotion-10,

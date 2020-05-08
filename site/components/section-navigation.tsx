@@ -14,7 +14,7 @@ interface SectionNavigationProps {
 
 const SectionNavigationContainer = styled.nav`
   width: 100%;
-  min-height: 64px;
+  min-height: 72px;
   margin-bottom: ${getSizingFromTheme('sizing070')};
   border-bottom: 1px solid ${getColorFromTheme('interface040')};
   background-color: ${getColorFromTheme('interface010')};
@@ -31,31 +31,25 @@ const SectionNavigationContainer = styled.nav`
 const ListContainer = styled.ul`
   width: 100%;
   margin: 0;
-  padding: ${getSizingFromTheme('sizing040')};
+  padding: ${getSizingFromTheme('sizing040')} 0;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
 
   ${getMediaQueryFromTheme('sm')} {
     flex-wrap: nowrap;
-    height: ${getSizingFromTheme('sizing080')};
-    height: 64px;
+    height: 72px;
   }
 `;
 
 const ListItem = styled.li`
   list-style: none;
-  display: block;
-  margin: 0 16px;
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
 
   a {
     ${getTypePresetFromTheme('body020')};
-    font-weight: normal;
-    color: ${getColorFromTheme('inkSubtle')};
-  }
-
-  a:visited {
-    color: ${getColorFromTheme('inkSubtle')};
   }
 `;
 
@@ -72,7 +66,10 @@ const SectionNavigation = React.forwardRef<
     <ListContainer data-testid="section-navigation">
       {sections.map(section => (
         <ListItem>
-          <Link href={`#${section.toLowerCase().replace(/\s+/g, '-')}`}>
+          <Link
+            href={`#${section.toLowerCase().replace(/\s+/g, '-')}`}
+            stylePreset="linkSectionNavigation"
+          >
             {section}
           </Link>
         </ListItem>

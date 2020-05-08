@@ -37,7 +37,7 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
   background-color: ${getColorFromTheme('interface020')};
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: ${getColorFromTheme('interface030')};
+  border-right-color: ${getColorFromTheme('interface040')};
   transform: ${({open}) => (open ? 'translateX(0)' : 'translateX(-100%)')};
   transition: transform 300ms;
 

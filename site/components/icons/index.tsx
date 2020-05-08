@@ -1,3 +1,5 @@
 export {default as CloseIcon} from './close';
 export {default as MenuIcon} from './menu';
 export {default as SearchIcon} from './search';
+export {default as SunIcon} from './sun';
+export {default as MoonIcon} from './moon';

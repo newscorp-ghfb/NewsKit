@@ -60,7 +60,7 @@ const ColorPreview = ({colors}: {colors: ColorPrimitives}): JSX.Element => (
         alignItems="center"
       >
         <CircleSwatch color={value} />
-        <LegacyBlock display="inline" marginLeft="sizing030">
+        <LegacyBlock display="inline" marginLeft="sizing030" color="inkBase">
           {key}
         </LegacyBlock>
       </LegacyBlock>

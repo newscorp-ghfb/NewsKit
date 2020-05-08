@@ -15,7 +15,7 @@ export const StyledNavItem = styled.div<{
   background-color: transparent;
   box-sizing: border-box;
   color: ${({theme, active}) =>
-    active ? theme.colors.blue080 : theme.colors.inkSubtle};
+    active ? theme.colors.inkBrand010 : theme.colors.inkSubtle};
   cursor: pointer;
   font-weight: normal;
   min-height: ${getSizingFromTheme('sizing070')};
@@ -64,7 +64,7 @@ export const StyledContainer = styled.nav`
 export const NavItemContainer = styled.li`
   list-style-type: none;
   margin: 0px;
-  padding: 0 ${getSizingFromTheme('sizing040')};
+  padding: 0 ${getSizingFromTheme('sizing010')};
 
   & &,
   & & & {

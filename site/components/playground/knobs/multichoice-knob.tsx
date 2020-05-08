@@ -30,7 +30,7 @@ interface StyledLabelProps {
 const StyledLabel = styled.label<StyledLabelProps>`
   display: inline-block;
   ${getTypePresetFromTheme('body010')};
-  padding: ${getSizingFromTheme('sizing040')};
+  padding: ${getSizingFromTheme('sizing020')} ${getSizingFromTheme('sizing040')};
   background-color: ${getColorFromTheme('interface020')};
   color: ${getColorFromTheme('inkSubtle')};
   cursor: pointer;
@@ -75,6 +75,7 @@ const StyledFieldset = styled.fieldset`
   border: none;
   margin: 0;
   padding: 0;
+  margin-bottom: ${getSizingFromTheme('sizing050')};
 `;
 
 const StyledLegend = StyledTitle.withComponent('legend');

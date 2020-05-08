@@ -2,16 +2,7 @@
 
 // Note: only a subset of pages as a base for smoke tests
 const routes = {
-  articleByline: '/components/article-byline',
-  audioPlayer: '/components/audio-player',
-  dateLine: '/components/date-line',
-  icons: '/foundations/icons',
   radioPlayer: '/components/radio-player',
-  shareBar: '/components/share-bar',
-  // TODO: Add back when https://nidigitalsolutions.jira.com/browse/PPDSC-860 is fixed
-  // spacing: '/foundations/spacing',
-  typography: '/foundations/typography',
-  welcome: '/index',
 };
 
 Object.entries(routes).forEach(route => {
@@ -22,6 +13,7 @@ Object.entries(routes).forEach(route => {
       cy.eyesOpen();
       cy.mockConsentRequest();
       cy.visit(path);
+      cy.get('[data-testid="theme-switch-button"]').click();
       cy.eyesCheckWindow(`${pageName} page`);
       cy.eyesClose();
     });

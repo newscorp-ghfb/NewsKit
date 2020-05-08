@@ -17,34 +17,32 @@ const LogoWrapper = styled.div`
   overflow: hidden;
 `;
 
-interface NewsKitMobileLogo {
+interface StyledNewsKitMobileLogo {
   viewBox?: string;
-  color: ColorKeys;
+  $color: ColorKeys;
   size: SizingKeys;
 }
 
-const LogoSvg = styled.svg<NewsKitMobileLogo>`
+type NewsKitMobileLogoPorps = Omit<StyledNewsKitMobileLogo, '$color'> & {
+  color: ColorKeys;
+};
+
+const LogoSvg = styled.svg<StyledNewsKitMobileLogo>`
   display: inline-block;
-  fill: ${getColorFromTheme('inkBase', 'color')};
-  color: ${getColorFromTheme('inkBase', 'color')};
+  fill: ${getColorFromTheme('inkBase', '$color')};
+  color: ${getColorFromTheme('inkBase', '$color')};
   width: ${getSizingFromTheme(undefined, 'size')};
   height: ${getSizingFromTheme(undefined, 'size')};
 `;
 
-type LogoWrapperRef = HTMLDivElement;
-type LogoWithTheme = NewsKitMobileLogo & {theme: Theme};
+type LogoWithTheme = NewsKitMobileLogoPorps & {theme: Theme};
 
-const NewsKitMobileLogo = React.forwardRef<LogoWrapperRef, LogoWithTheme>(
-  (props, ref) => (
+const NewsKitMobileLogo = React.forwardRef<HTMLDivElement, LogoWithTheme>(
+  ({color, ...props}, ref) => (
     <LogoWrapper ref={ref}>
-      <LogoSvg viewBox="0 0 40 40" {...props}>
+      <LogoSvg viewBox="0 0 40 40" $color={color} {...props}>
         <title>NewsKit Mobile Logo</title>
-        <path
-          fill="#000"
-          fillOpacity=".87"
-          fillRule="evenodd"
-          d="M40 0v40H0V0h40zm-9.9823608 8H24L12 19.999V8H8v24h4v-6.004L16.001 22l10.0031809 10H32L19.002 19.002 30.0176392 8z"
-        />
+        <path d="M40 0v40H0V0h40zm-9.9823608 8H24L12 19.999V8H8v24h4v-6.004L16.001 22l10.0031809 10H32L19.002 19.002 30.0176392 8z" />
       </LogoSvg>
     </LogoWrapper>
   ),

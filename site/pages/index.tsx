@@ -20,17 +20,15 @@ const MainContent = styled.div`
 `;
 const StyledH1 = styled(H1)`
   ${getTypePresetFromTheme('heading080')}
-  color: ${getColorFromTheme('inkBase')};
-  /* Remove this when line height crop feature is added */
+  color: ${getColorFromTheme('inkContrast')};
   margin-bottom: 8px;
 `;
 const StyledH2 = styled(H2)`
-  color: ${getColorFromTheme('inkBase')};
+  color: ${getColorFromTheme('inkContrast')};
 `;
 const StyledH3 = styled(H3)`
   ${getTypePresetFromTheme('heading010')}
   color: ${getColorFromTheme('inkBase')};
-  /* Remove this when line height crop feature is added */
   margin: 20px 0 16px;
 `;
 
@@ -42,10 +40,13 @@ const StyledSmallParagraph = styled(StyledParagraph)`
   ${getTypePresetFromTheme('body020')}
 `;
 
-const Index: React.FC<{toggleTheme: () => void}> = ({toggleTheme}) => (
+const Index: React.FC<{
+  toggleTheme: () => void;
+  themeMode: string;
+}> = ({toggleTheme, themeMode}) => (
   <React.Fragment>
     <PageTitle title="Homepage" />
-    <Layout toggleTheme={toggleTheme} path="/">
+    <Layout toggleTheme={toggleTheme} themeMode={themeMode} path="/">
       <Grid xsRowGutter="sizing000" xsMargin="sizing000">
         <Cell xs={12}>
           <MainContent>

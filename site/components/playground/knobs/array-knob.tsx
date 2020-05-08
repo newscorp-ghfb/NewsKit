@@ -117,7 +117,7 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
   return (
     <KnobContainer data-testid={`${TEST_ID_PREFIX}-${lowercaseLabel}`}>
       <StyledTitle>{label}</StyledTitle>
-      <LegacyBlock marginLeft="sizing030">
+      <LegacyBlock>
         {values.map((value, i, arr) => {
           if (typeof value === 'undefined' || Array.isArray(value)) {
             // eslint-disable-next-line no-console

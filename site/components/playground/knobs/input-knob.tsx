@@ -28,8 +28,9 @@ export const HiddenLabel = styled.label`
 
 export const StyledLabel = styled.label`
   display: block;
-  ${getTypePresetFromTheme('body030')};
   margin: ${getSizingFromTheme('sizing040')} 0px;
+  ${getTypePresetFromTheme('label030')};
+  color: ${getColorFromTheme('inkBase')};
 `;
 
 export const StyledInput = styled.input`

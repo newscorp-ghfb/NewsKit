@@ -1,4 +1,9 @@
-import {styled, getSizingFromTheme, getTypePresetFromTheme} from 'newskit';
+import {
+  styled,
+  getSizingFromTheme,
+  getTypePresetFromTheme,
+  getColorFromTheme,
+} from 'newskit';
 
 export const KnobContainer = styled.div`
   margin-bottom: ${getSizingFromTheme('sizing020')};
@@ -8,8 +13,9 @@ export const KnobContainer = styled.div`
 
 export const StyledTitle = styled.span`
   display: block;
-  ${getTypePresetFromTheme('body030')};
   margin: ${getSizingFromTheme('sizing040')} 0px;
+  ${getTypePresetFromTheme('label030')};
+  color: ${getColorFromTheme('inkBase')};
 `;
 
 export const getHash = () =>

@@ -1,6 +1,6 @@
 import {renderToFragmentWithTheme} from 'newskit/test/test-utils';
 
-import {CloseIcon, MenuIcon, SearchIcon} from '..';
+import {CloseIcon, MenuIcon, SearchIcon, SunIcon, MoonIcon} from '..';
 
 describe('Icons', () => {
   test('Close icon renders as expected', () => {
@@ -15,6 +15,16 @@ describe('Icons', () => {
 
   test('Search icon renders as expected', () => {
     const fragment = renderToFragmentWithTheme(SearchIcon);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('Sun icon renders as expected', () => {
+    const fragment = renderToFragmentWithTheme(SunIcon);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('Moon icon renders as expected', () => {
+    const fragment = renderToFragmentWithTheme(MoonIcon);
     expect(fragment).toMatchSnapshot();
   });
 });

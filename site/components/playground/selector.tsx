@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-for */
 import React from 'react';
 import {
   styled,
@@ -27,6 +26,11 @@ const StyledContainer = styled.span`
   }
 `;
 
+const StyledSelectLabel = styled.label`
+  ${getTypePresetFromTheme('label030')};
+  color: ${getColorFromTheme('inkBase')};
+`;
+
 const StyledSelect = styled.select`
   ${getTypePresetFromTheme('body010')}
   line-height:1.5;
@@ -37,6 +41,7 @@ const StyledSelect = styled.select`
   appearance: none;
   border: none;
   background-color: ${getColorFromTheme('interface020')};
+  color: ${getColorFromTheme('inkSubtle')};
 
   ::after {
     content: '>';
@@ -65,7 +70,7 @@ export const Selector: React.FC<SelectorProps> = ({
       paddingLeft="sizing030"
     >
       <StyledContainer>
-        <label htmlFor={id}>{children}</label>
+        <StyledSelectLabel htmlFor={id}>{children}</StyledSelectLabel>
         <StyledSelect
           id={id}
           name={id}

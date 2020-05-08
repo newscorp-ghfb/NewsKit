@@ -43,13 +43,16 @@ const PropsRow = styled.div`
 const PropName = styled.span`
   padding: ${getSizingFromTheme('sizing010')};
   border-radius: ${({theme}) => theme.borderRadius.borderRadiusDefault};
-  background: ${getColorFromTheme('blue020')};
+  background: ${getColorFromTheme('semanticInformative010')};
+  color: ${getColorFromTheme('inkInverse')};
 `;
 
 const PropType = styled.span`
   padding: ${getSizingFromTheme('sizing010')};
   border-radius: ${({theme}) => theme.borderRadius.borderRadiusDefault};
   background: ${getColorFromTheme('interface030')};
+  background: ${getColorFromTheme('semanticPositive030')};
+  color: ${getColorFromTheme('inkInverse')};
   margin-left: ${getSizingFromTheme('sizing030')};
 `;
 
@@ -57,7 +60,7 @@ const PropRequiredFlag = styled.span`
   padding: ${getSizingFromTheme('sizing010')};
   border-radius: ${({theme}) => theme.borderRadius.borderRadiusDefault};
   background: ${getColorFromTheme('semanticNegative030')};
-  color: ${getColorFromTheme('white')};
+  color: ${getColorFromTheme('inkInverse')};
   margin: 0 ${getSizingFromTheme('sizing030')};
 
   ::before {

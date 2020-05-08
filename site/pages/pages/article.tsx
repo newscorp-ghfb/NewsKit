@@ -26,7 +26,7 @@ const Article: React.FC = () => (
   <React.Fragment>
     <PageTitle title="The NewsKit Daily" />
     <ThemeProvider theme={newskitLightTheme}>
-      <Layout path="/pages/article" toggleTheme={() => {}}>
+      <Layout path="/pages/article" toggleTheme={() => {}} themeMode="">
         <Grid>
           <Cell xs={12}>
             <ArticleHeadline>
