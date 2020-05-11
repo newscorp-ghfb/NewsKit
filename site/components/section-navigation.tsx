@@ -34,6 +34,7 @@ const ListContainer = styled.ul`
   padding: ${getSizingFromTheme('sizing040')} 0;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   box-sizing: border-box;
 
   ${getMediaQueryFromTheme('sm')} {

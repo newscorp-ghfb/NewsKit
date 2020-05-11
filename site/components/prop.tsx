@@ -41,22 +41,30 @@ const PropsRow = styled.div`
 `;
 
 const PropName = styled.span`
+  display: inline-block;
   padding: ${getSizingFromTheme('sizing010')};
   border-radius: ${({theme}) => theme.borderRadius.borderRadiusDefault};
   background: ${getColorFromTheme('semanticInformative010')};
   color: ${getColorFromTheme('inkInverse')};
 `;
 
+const PropColon = styled.span`
+  ::before {
+    content: ':';
+  }
+  margin-right: ${getSizingFromTheme('sizing030')};
+`;
+
 const PropType = styled.span`
+  display: inline-block;
   padding: ${getSizingFromTheme('sizing010')};
   border-radius: ${({theme}) => theme.borderRadius.borderRadiusDefault};
-  background: ${getColorFromTheme('interface030')};
   background: ${getColorFromTheme('semanticPositive030')};
   color: ${getColorFromTheme('inkInverse')};
-  margin-left: ${getSizingFromTheme('sizing030')};
 `;
 
 const PropRequiredFlag = styled.span`
+  display: inline-block;
   padding: ${getSizingFromTheme('sizing010')};
   border-radius: ${({theme}) => theme.borderRadius.borderRadiusDefault};
   background: ${getColorFromTheme('semanticNegative030')};
@@ -84,7 +92,9 @@ export const Prop: React.FC<PropProps> = ({
 }) => (
   <StyledContainer>
     <PropsRow>
-      <PropName>{name}</PropName>:<PropType>{type}</PropType>
+      <PropName>{name}</PropName>
+      <PropColon />
+      <PropType>{type}</PropType>
       {typeof defaultVal !== 'undefined' && (
         <DefaultValue value={defaultVal} type={type} enumObj={enumObj} />
       )}

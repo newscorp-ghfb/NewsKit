@@ -19,8 +19,10 @@ export const Code: React.FC<CodeProps> = ({language = 'jsx', children}) => (
     <ThemeMode.Consumer>
       {(value: string) => (
         <SyntaxHighlighter
+          tabIndex={0}
           language={language}
           style={value === 'light' ? coy : tomorrow}
+          customStyle={{overflow: 'auto', padding: '1em'}}
         >
           {children}
         </SyntaxHighlighter>
