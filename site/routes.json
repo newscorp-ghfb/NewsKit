@@ -162,11 +162,6 @@
         "id": "/components/radio-player"
       },
       {
-        "title": "Screen Reader Only",
-        "page": true,
-        "id": "/components/screen-reader-only"
-      },
-      {
         "title": "Scroll",
         "page": true,
         "id": "/components/scroll"
@@ -210,6 +205,11 @@
         "title": "Unordered List",
         "page": true,
         "id": "/components/unordered-list"
+      },
+      {
+        "title": "Visibility",
+        "page": true,
+        "id": "/components/visibility"
       },
       {
         "title": "Volume Control",
