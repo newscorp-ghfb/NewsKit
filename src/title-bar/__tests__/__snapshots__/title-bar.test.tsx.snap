@@ -109,7 +109,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 }
 
 .emotion-4:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 

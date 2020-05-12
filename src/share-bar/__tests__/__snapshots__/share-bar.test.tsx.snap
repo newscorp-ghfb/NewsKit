@@ -998,7 +998,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 }
 
 .emotion-9:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
@@ -1289,7 +1289,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 }
 
 .emotion-9:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
@@ -1362,7 +1362,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 }
 
 .emotion-0:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
@@ -1672,7 +1672,7 @@ exports[`ShareBar renders with custom label typePreset 1`] = `
 }
 
 .emotion-9:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
@@ -1967,7 +1967,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 }
 
 .emotion-9:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
@@ -2292,7 +2292,7 @@ exports[`ShareBar renders with horizontally custom label spacing 1`] = `
 }
 
 .emotion-9:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
@@ -2677,7 +2677,7 @@ exports[`ShareBar renders with vertically custom label spacing 1`] = `
 }
 
 .emotion-9:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 

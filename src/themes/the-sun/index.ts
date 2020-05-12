@@ -30,9 +30,6 @@ export const theSunTheme = createTheme('the-sun-theme', {
       linkActive: colors.inkSubtle,
       linkHover: colors.inkSubtle,
       linkVisited: colors.inkSubtle,
-
-      tagBorder: colors.inkSubtle,
-      tagHoverBorder: colors.inkSubtle,
     } as Theme['colors'],
   }),
 });

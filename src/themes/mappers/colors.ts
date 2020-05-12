@@ -3,13 +3,6 @@ import {ColorPrimitives} from '../newskit-light/colors';
 export const createThemeColors = (primitives: ColorPrimitives) => ({
   ...primitives,
 
-  // Button
-
-  buttonFill: primitives.inkBrand010,
-  buttonText: primitives.inkInverse,
-  buttonDisabledFill: primitives.disabled,
-  buttonDisabledText: primitives.inkNonEssential,
-
   // Link
 
   linkText: primitives.inkLink,
@@ -21,18 +14,6 @@ export const createThemeColors = (primitives: ColorPrimitives) => ({
 
   titleBarTextColor: primitives.inkBase,
   titleBarBorder: primitives.interface030,
-
-  // Tags
-
-  tagFill: primitives.interface020,
-  tagBorder: primitives.interface030,
-  tagText: primitives.inkSubtle,
-  tagHoverFill: primitives.interactive020,
-  tagHoverBorder: primitives.interface040,
-  tagHoverText: primitives.inkBase,
-  tagDisabledFill: primitives.disabled,
-  tagDisabledBorder: primitives.disabled,
-  tagDisabledText: primitives.inkNonEssential,
 
   // Article
 

@@ -793,14 +793,6 @@ exports[`Audio Player live player renders as expected 1`] = `
   height: 24px;
 }
 
-.emotion-41 {
-  fill: #0A68C1;
-  color: #0A68C1;
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-}
-
 <section
     aria-label="audio player"
     class="emotion-52"
@@ -1074,7 +1066,7 @@ exports[`Audio Player live player renders as expected 1`] = `
                       >
                         <svg
                           aria-labelledby="mock-bui-1"
-                          class="emotion-41"
+                          class="emotion-25"
                           focusable="false"
                           viewBox="0 0 24 24"
                         >
@@ -1419,7 +1411,7 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
 }
 
 .emotion-3:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
@@ -2463,7 +2455,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-4:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 

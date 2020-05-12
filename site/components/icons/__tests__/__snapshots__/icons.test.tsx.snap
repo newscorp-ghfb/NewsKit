@@ -34,6 +34,43 @@ exports[`Icons Close icon renders as expected 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Icons Error icon renders as expected 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+<svg
+    aria-labelledby="mock-bui-1"
+    class="emotion-0"
+    viewBox="0 0 24 24"
+  >
+    <title
+      id="mock-bui-1"
+    >
+      error
+    </title>
+    <g
+      fill="none"
+      fill-rule="evenodd"
+    >
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+        fill="#D20600"
+      />
+    </g>
+  </svg>
+</DocumentFragment>
+`;
+
 exports[`Icons Menu icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {

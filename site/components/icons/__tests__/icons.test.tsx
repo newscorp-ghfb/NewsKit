@@ -1,6 +1,13 @@
 import {renderToFragmentWithTheme} from 'newskit/test/test-utils';
 
-import {CloseIcon, MenuIcon, SearchIcon, SunIcon, MoonIcon} from '..';
+import {
+  CloseIcon,
+  ErrorIcon,
+  MenuIcon,
+  SearchIcon,
+  SunIcon,
+  MoonIcon,
+} from '..';
 
 describe('Icons', () => {
   test('Close icon renders as expected', () => {
@@ -15,6 +22,11 @@ describe('Icons', () => {
 
   test('Search icon renders as expected', () => {
     const fragment = renderToFragmentWithTheme(SearchIcon);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('Error icon renders as expected', () => {
+    const fragment = renderToFragmentWithTheme(ErrorIcon);
     expect(fragment).toMatchSnapshot();
   });
 

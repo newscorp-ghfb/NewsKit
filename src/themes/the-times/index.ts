@@ -35,9 +35,6 @@ export const theTimesTheme = createTheme('the-times-theme', {
       tagBorderWidth: borders.borderWidth010,
     } as Theme['borders'],
     colors: {
-      tagBorder: colors.interface040,
-      tagHoverBorder: colors.interface040,
-
       linkText: colors.inkLink,
       linkActive: colors.inkLink,
       linkHover: colors.inkLink,

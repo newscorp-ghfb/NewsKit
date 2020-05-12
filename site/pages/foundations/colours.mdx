@@ -1,10 +1,34 @@
-import Colors from '../../components/theming-values/colors';
+import {
+  ColorPalettes,
+  ColorPrimitives,
+} from '../../components/theming-values/colors/colors';
 import Layout from '../../components/layout';
 
 export default Layout;
 
 # Colours
 
-Themes are built from sets of primitive values defined as part of the design system. Color primitives are overridable when creating a theme, whereas others such as sizing are not. The default color primitives are light, though there is also a dark set included. Primitives are generic and are mapped to more component specific properties via the theme object. The whole theme object is also merged with any overrides. This all happens as part of the `createTheme` utility.
+## Overview
 
-<Colors />
+Colour is key to expressing brand and identity but it also plays an important role in conveying specific meaning to a user.
+The NewsKit design system applies a flexible approach to colour that allows brands to utilise bespoke palettes in an appropriate
+and systematic way while encouraging adherence to accessibility requirements.
+
+Colours are applied to NewsKit components by a set of well-defined rules at both the theme and component level. This helps to establish a visual tone,
+indicate interaction and communicate meaning. Importantly, it also allows our brands to maintain their identity and distinctive styles.
+
+Currently, for the light theme, the color contrast is calculated between the analysed color and a white background(#FFFFFF). This will be updated for the dark theme. 
+Accessible color combinations should meet WCAG 2.1 Level AA or higher for the contrast.
+
+## Palettes
+
+The extended palette is a group of colours that are not tied to a single product but are part of the growing list of colors available for use in the library.
+These colours are free to use but should be critically evaluated for the benefit of their use within a design or product.
+
+<ColorPalettes />
+
+## Primitives
+
+The colour primitives utilise the Palettes, selecting specific values and applying contextual naming.
+
+<ColorPrimitives />

@@ -377,7 +377,7 @@ exports[`Button IconButton renders Icon Button with fallback formatting 1`] = `
 }
 
 .emotion-3:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
@@ -527,7 +527,7 @@ exports[`Button IconButton renders Large Icon Button 1`] = `
 }
 
 .emotion-3:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
@@ -662,7 +662,7 @@ exports[`Button IconButton renders Medium Icon Button 1`] = `
 }
 
 .emotion-3:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
@@ -792,7 +792,7 @@ exports[`Button IconButton renders Small Icon Button 1`] = `
 }
 
 .emotion-3:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
@@ -937,7 +937,7 @@ exports[`Button IconButton renders when there is an icon with a colour 1`] = `
 }
 
 .emotion-4:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
@@ -1528,7 +1528,7 @@ exports[`Button renders Large Button 1`] = `
 }
 
 .emotion-1:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
@@ -1630,7 +1630,7 @@ exports[`Button renders Small Button 1`] = `
 }
 
 .emotion-1:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
@@ -1738,7 +1738,7 @@ exports[`Button renders when there is no icon 1`] = `
 }
 
 .emotion-2:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
@@ -1856,7 +1856,7 @@ exports[`Button renders with different style preset 1`] = `
 }
 
 .emotion-1:disabled {
-  border-color: #f0f0f0;
+  border-color: #e4e4e4;
   color: #9c9c9c;
   background-color: transparent;
 }
@@ -1965,7 +1965,7 @@ exports[`Button renders with fallback formatting 1`] = `
 }
 
 .emotion-1:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   color: #9c9c9c;
 }
 

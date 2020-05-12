@@ -1226,7 +1226,7 @@ exports[`slider react-range Range function props renderTrack should render defau
 }
 
 .emotion-0:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
 }
 
 <div
@@ -1256,7 +1256,7 @@ exports[`slider react-range Range function props renderTrack should render disab
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   border-radius: 20rem;
   margin: calc(32px/2 - 12px/2) calc(32px/2);
   height: 12px;
@@ -1291,7 +1291,7 @@ exports[`slider react-range Range function props renderTrack should render disab
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
   border-radius: 20rem;
   margin: calc(32px/2 - 12px/2) calc(32px/2);
   height: 12px;
@@ -1336,7 +1336,7 @@ exports[`slider react-range Range function props renderTrack should render grabb
 }
 
 .emotion-0:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
 }
 
 <div
@@ -1374,7 +1374,7 @@ exports[`slider react-range Range function props renderTrack should render multi
 }
 
 .emotion-0:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
 }
 
 <div
@@ -1412,7 +1412,7 @@ exports[`slider react-range Range function props renderTrack should render verti
 }
 
 .emotion-0:disabled {
-  background-color: #f0f0f0;
+  background-color: #e4e4e4;
 }
 
 <div

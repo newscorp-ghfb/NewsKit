@@ -75,7 +75,7 @@ export const createStylePresets = ({
       backgroundColor: colorPrimitives.interactive050,
     },
     disabled: {
-      backgroundColor: colorPrimitives.disabled,
+      backgroundColor: colorPrimitives.interactiveDisabled,
       color: colorPrimitives.inkNonEssential,
       iconColor: colorPrimitives.inkNonEssential,
     },
@@ -104,7 +104,7 @@ export const createStylePresets = ({
     disabled: {
       color: colorPrimitives.inkNonEssential,
       iconColor: colorPrimitives.inkNonEssential,
-      borderColor: colorPrimitives.disabled,
+      borderColor: colorPrimitives.interactiveDisabled,
       backgroundColor: colorPrimitives.transparent,
     },
     loading: {
@@ -219,7 +219,7 @@ export const createStylePresets = ({
         backgroundColor: colorPrimitives.interactive050,
       },
       disabled: {
-        backgroundColor: colorPrimitives.disabled,
+        backgroundColor: colorPrimitives.interactiveDisabled,
         color: colorPrimitives.inkNonEssential,
         iconColor: colorPrimitives.inkNonEssential,
       },
@@ -238,7 +238,7 @@ export const createStylePresets = ({
         backgroundColor: colorPrimitives.transparent,
       },
       disabled: {
-        borderColor: colorPrimitives.disabled,
+        borderColor: colorPrimitives.interactiveDisabled,
         color: colorPrimitives.inkNonEssential,
         iconColor: colorPrimitives.inkNonEssential,
         backgroundColor: colorPrimitives.transparent,
@@ -338,7 +338,7 @@ export const createStylePresets = ({
         borderRadius: borderRadiusPrimitives.borderRadiusPill,
       },
       disabled: {
-        backgroundColor: colorPrimitives.disabled,
+        backgroundColor: colorPrimitives.interactiveDisabled,
       },
     } as StylePresetStates,
     sliderIndicator: {

@@ -1,5 +1,5 @@
 import {createTheme} from '../creator';
-import {colorPalettes} from '../newskit-light/colors';
+import {colorPalettes, colorPrimitives} from '../newskit-light/colors';
 import {overlayPrimitives} from '../newskit-light/overlay';
 
 const darkThemeModifiers = {
@@ -9,18 +9,18 @@ const darkThemeModifiers = {
   inkNonEssential: colorPalettes.neutral070,
   inkInverse: colorPalettes.black,
   inkHeadingLink: colorPalettes.neutral020,
-  inkHeadingLinkHover: colorPalettes.inkLink,
-  inkHeadingLinkActive: colorPalettes.inkLink,
+  inkHeadingLinkHover: colorPrimitives.inkLink,
+  inkHeadingLinkActive: colorPrimitives.inkLink,
   inkHeadingLinkVisited: colorPalettes.neutral020,
   inkNegative: colorPalettes.red050,
   inkPositive: colorPalettes.green050,
   inkNotice: colorPalettes.amber040,
   inkInformative: colorPalettes.purple030,
   inkBrand010: colorPalettes.blue050,
-  inkLink: colorPalettes.inkLink,
-  inkLinkHover: colorPalettes.inkLink,
-  inkLinkActive: colorPalettes.inkLink,
-  inkLinkVisited: colorPalettes.inkLinkVisited,
+  inkLink: colorPrimitives.inkLink,
+  inkLinkHover: colorPrimitives.inkLink,
+  inkLinkActive: colorPrimitives.inkLink,
+  inkLinkVisited: colorPrimitives.inkLinkVisited,
   semanticNegative010: colorPalettes.red090,
   semanticNegative020: colorPalettes.red100,
   semanticNegative030: colorPalettes.red060,

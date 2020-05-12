@@ -46,7 +46,7 @@ exports[`Image loadingAspectRatio renders with height dimensions and 1:3 aspect 
   width: 100%;
   padding-top: 33.33%;
   height: 0;
-  background-color: #fafafa;
+  background-color: #f0f0f0;
 }
 
 .emotion-4 svg {
@@ -143,7 +143,7 @@ exports[`Image loadingAspectRatio renders with height dimensions in px and 1:3 a
   width: 100%;
   padding-top: 33.33%;
   height: 0;
-  background-color: #fafafa;
+  background-color: #f0f0f0;
 }
 
 .emotion-4 svg {
@@ -201,7 +201,7 @@ exports[`Image loadingAspectRatio renders with no dimensions and 1:1 aspect rati
   width: 100%;
   padding-top: 100.00%;
   height: 0;
-  background-color: #fafafa;
+  background-color: #f0f0f0;
 }
 
 .emotion-4 svg {
@@ -337,7 +337,7 @@ exports[`Image loadingAspectRatio renders with no dimensions and invalid aspect 
   width: 100%;
   padding-top: 0;
   height: 0;
-  background-color: #fafafa;
+  background-color: #f0f0f0;
 }
 
 .emotion-4 svg {
@@ -434,7 +434,7 @@ exports[`Image loadingAspectRatio renders with no dimensions or aspect ratio 1`]
   width: 100%;
   padding-top: 0;
   height: 0;
-  background-color: #fafafa;
+  background-color: #f0f0f0;
 }
 
 .emotion-4 svg {
@@ -492,7 +492,7 @@ exports[`Image loadingAspectRatio renders with number dimensions or aspect ratio
   width: 100%;
   padding-top: 100.00%;
   height: 0;
-  background-color: #fafafa;
+  background-color: #f0f0f0;
 }
 
 .emotion-4 svg {
@@ -628,7 +628,7 @@ exports[`Image loadingAspectRatio renders with string dimensions or aspect ratio
   width: 100%;
   padding-top: 0;
   height: 0;
-  background-color: #fafafa;
+  background-color: #f0f0f0;
 }
 
 .emotion-4 svg {
@@ -725,7 +725,7 @@ exports[`Image loadingAspectRatio renders with width dimensions and 1:3 aspect r
   width: 100%;
   padding-top: 33.33%;
   height: 0;
-  background-color: #fafafa;
+  background-color: #f0f0f0;
 }
 
 .emotion-4 svg {
@@ -822,7 +822,7 @@ exports[`Image loadingAspectRatio renders with width dimensions in px and 1:3 as
   width: 100%;
   padding-top: 33.33%;
   height: 0;
-  background-color: #fafafa;
+  background-color: #f0f0f0;
 }
 
 .emotion-4 svg {
@@ -880,7 +880,7 @@ exports[`Image renders with defaults 1`] = `
   width: 100%;
   padding-top: 100.00%;
   height: 0;
-  background-color: #fafafa;
+  background-color: #f0f0f0;
 }
 
 .emotion-4 svg {
@@ -1007,7 +1007,7 @@ exports[`Image renders with max height and width 1`] = `
   width: 100%;
   padding-top: 100.00%;
   height: 0;
-  background-color: #fafafa;
+  background-color: #f0f0f0;
 }
 
 .emotion-4 svg {
@@ -1106,7 +1106,7 @@ exports[`Image renders with object-fit and object-position 1`] = `
   width: 100%;
   padding-top: 100.00%;
   height: 0;
-  background-color: #fafafa;
+  background-color: #f0f0f0;
 }
 
 .emotion-4 svg {
@@ -1205,7 +1205,7 @@ exports[`Image renders without icon 1`] = `
   width: 100%;
   padding-top: 100.00%;
   height: 0;
-  background-color: #fafafa;
+  background-color: #f0f0f0;
 }
 
 .emotion-2 svg {
