@@ -288,7 +288,7 @@ jobs:
       - slack/notify:
           color: "#42e2f4"
           channel: '#nuk-pp-newskit'
-          message: "Hi all, \n We are about to deploy ${VERSION}. The release note can be found here: https://nidigitalsolutions.jira.com/projects/PPDSC?orderField=RANK&selectedItem=com.atlassian.jira.jira-projects-plugin%3Arelease-page&status=no-filter"
+          message: "Hi all, \n We are about to deploy ${VERSION}. The release note can be found here: https://nidigitalsolutions.jira.com/projects/PPDSC?orderField=RANK&selectedItem=com.atlassian.jira.jira-projects-plugin%3Arelease-page&status=no-filter&contains=${VERSION}"
 
   publish_npm:
     parameters:
@@ -447,8 +447,13 @@ jobs:
         description: AWS ARN For Assume Role
         type: string
         default: "${AWS_ASSUME_ROLE_ARN}"
+      notify:
+        description: Send slack notification
+        type: boolean
+        default: false
     executor: kubectl-deploy
     steps:
+      - checkout
       - setup_remote_docker:
           docker_layer_caching: true
       - add_ssh_keys:
@@ -475,10 +480,13 @@ jobs:
           kubectl apply -f .
       - slack/status:
           <<: *slack_status
-      - slack/notify:
-          color: "#42e2f4"
-          channel: '#newskit'
-          message: "Hi all, \n ${VERSION} has now been successfully deployed to << parameters.environment >>. The release note can be found here: https://nidigitalsolutions.jira.com/projects/PPDSC?orderField=RANK&selectedItem=com.atlassian.jira.jira-projects-plugin%3Arelease-page&status=no-filter"
+      - when:
+          condition: << parameters.notify >>
+          steps:
+            - slack/notify:
+                color: "#42e2f4"
+                channel: '#newskit'
+                message: "Hi all, \n ${VERSION} has now been successfully deployed to << parameters.environment >>. The release note can be found here: https://nidigitalsolutions.jira.com/projects/PPDSC?orderField=RANK&selectedItem=com.atlassian.jira.jira-projects-plugin%3Arelease-page&status=no-filter&contains=${VERSION}"
 
 # ========== FILTERS START    ==========
 
@@ -676,6 +684,7 @@ workflows:
           name: eks_kubectl_deploy_prod
           context: ncu-newskit-site-prod
           environment: prod
+          notify: true
           <<: *only_master
           requires:
             - eks_flux_deploy_prod
