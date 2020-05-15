@@ -278,8 +278,17 @@ jobs:
       - run:
           name: bump version
           command: make create_release_candidate
+      - run:
+          name: export version
+          command: |
+            export VERSION=$(jq -r .version package.json)
+            echo "export VERSION=${VERSION}" >> $BASH_ENV      
       - slack/status:
           <<: *slack_status
+      - slack/notify:
+          color: "#42e2f4"
+          channel: '#nuk-pp-newskit'
+          message: "Hi all, \n We are about to deploy ${VERSION}. The release note can be found here: https://nidigitalsolutions.jira.com/projects/PPDSC?orderField=RANK&selectedItem=com.atlassian.jira.jira-projects-plugin%3Arelease-page&status=no-filter"
 
   publish_npm:
     parameters:
@@ -455,6 +464,8 @@ jobs:
           export EKS_AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
           export AWS_DEFAULT_REGION=<< parameters.aws_region >>
           export CLUSTER_NAME=ceng-eks-<< parameters.environment >>
+          export VERSION=$(jq -r .version package.json)
+          echo "export VERSION=${VERSION}" >> $BASH_ENV
 
           nukubectl | grep "export AWS_" > auth.env
           export $(egrep -v '^#' auth.env | xargs)
@@ -464,6 +475,10 @@ jobs:
           kubectl apply -f .
       - slack/status:
           <<: *slack_status
+      - slack/notify:
+          color: "#42e2f4"
+          channel: '#newskit'
+          message: "Hi all, \n ${VERSION} has now been successfully deployed to << parameters.environment >>. The release note can be found here: https://nidigitalsolutions.jira.com/projects/PPDSC?orderField=RANK&selectedItem=com.atlassian.jira.jira-projects-plugin%3Arelease-page&status=no-filter"
 
 # ========== FILTERS START    ==========
 
