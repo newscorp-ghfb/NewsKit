@@ -20,17 +20,27 @@ export const component = () => (
     <br />
     <ArticleHeadline
       kickerText="Kicker overwritten preset"
-      kickerStylePreset="tagPrimary"
-      headingStylePreset="linkPrimary"
+      overrides={{
+        kicker: {
+          stylePreset: 'tagPrimary',
+        },
+        heading: {
+          stylePreset: 'linkPrimary',
+        },
+      }}
     >
       Headline overwritten preset
     </ArticleHeadline>
     <br />
     <ArticleHeadline
       kickerText="Kicker custom mq margin preset"
-      kickerMqInlineMarginPreset={{
-        xs: 'spaceInline070',
-        md: 'spaceInline040',
+      overrides={{
+        kicker: {
+          marginPreset: {
+            xs: 'spaceInline070',
+            md: 'spaceInline040',
+          },
+        },
       }}
     >
       Heading Headline

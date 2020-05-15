@@ -1,10 +1,12 @@
-import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import Prop from '../../components/prop';
 import {LegacyBlock} from '../../components/legacy-block';
+import Layout from '../../components/layout';
 import {Twitter, Facebook} from 'newskit/icons';
 import {ShareBar} from 'newskit/share-bar';
 import {IconButton, ButtonSize} from 'newskit/button';
+import {CodeFromFile} from '../../components/code';
+
 
 export default Layout;
 
@@ -27,17 +29,10 @@ A share bar can be used anywhere a user would like to easily share something wit
   <Prop name="vertical" type="boolean" defaut="false">
     If provided, changes the orientation of the share bar to vertical.
   </Prop>
-  <Prop name="labelStylePreset" type="string" default="shareBarLabel">
-    If provided, overwrites the style preset for the label.
-  </Prop>
-  <Prop name="labelSpacePreset" type="MarginPresetKeys" default="spaceInline040">
-    If provided, overwrites the spacing preset for the label.
-  </Prop>
-  <Prop name="labelTypePreset" type="string" default="shareBarLabel">
-    If provided, overwrites the type preset for the label.
-  </Prop>
-  <Prop name="itemSpacePreset" type="MarginPresetKeys" default="sizing020">
-    If provided, overwrites the spacing preset for the stack.
+  <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component and provided elements.
+    Refer to the defaults below for the object structure:
+    <CodeFromFile path="examples/share-bar/overrides.tsx" />
   </Prop>
 </LegacyBlock>
 
@@ -67,72 +62,9 @@ A share bar can be used anywhere a user would like to easily share something wit
       propName: 'vertical',
       value: false,
     },
-    {
-      name: 'Label stylePreset',
-      propName: 'labelStylePreset',
-      options: [
-        {
-          label: 'default',
-          isDefault: true,
-          value: undefined,
-        },
-        {
-          label: 'buttonOutlinedPrimary',
-          value: 'buttonOutlinedPrimary',
-        },
-      ],
-    },
-    {
-      name: 'Label spacePreset',
-      propName: 'labelSpacePreset',
-      options: [
-        {
-          label: 'default',
-          isDefault: true,
-          value: undefined,
-        },
-         {
-          label: 'spaceInline060',
-          value: 'spaceInline060',
-        },
-         {
-          label: 'spaceStack060',
-          value: 'spaceStack060',
-        },
-      ],
-    },
-    {
-      name: 'Label typePreset',
-      propName: 'labelTypePreset',
-      options: [
-        {
-          label: 'default',
-          isDefault: true,
-          value: undefined,
-        },
-        {
-          label: 'subhead050',
-          value: 'subhead050',
-        },
-      ],
-    },
-    {
-      name: 'Item spacePreset',
-      propName: 'itemSpacePreset',
-      options: [
-        {
-          label: 'default',
-          isDefault: true,
-          value: undefined,
-        },
-        {
-          label: 'sizing060',
-          value: 'sizing060',
-        },
-      ],
-    },
   ]}
 />
+
 
 ## Rationale
 

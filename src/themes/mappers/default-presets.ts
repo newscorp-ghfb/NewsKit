@@ -15,11 +15,33 @@ export const defaultPresets = {
         md: 'heading070',
         lg: 'heading080',
       },
-      margin: {
+      marginPreset: {
         xs: 'spaceInline030',
         sm: 'spaceInline030',
         md: 'spaceInline040',
         lg: 'spaceInline040',
+      },
+    },
+  },
+  shareBar: {
+    horizontal: {
+      label: {
+        typePreset: 'shareBarLabel',
+        stylePreset: 'shareBarLabel',
+        marginPreset: 'spaceInline040',
+      },
+      items: {
+        space: 'sizing020',
+      },
+    },
+    vertical: {
+      label: {
+        typePreset: 'shareBarLabel',
+        stylePreset: 'shareBarLabel',
+        marginPreset: 'spaceStack040',
+      },
+      items: {
+        space: 'sizing020',
       },
     },
   },

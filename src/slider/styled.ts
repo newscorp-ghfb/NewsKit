@@ -3,7 +3,6 @@ import {
   styled,
   getSizingFromTheme,
   getTypePresetFromTheme,
-  ThemeProp,
 } from '../utils/style';
 import {
   StyledTrackProps,
@@ -14,6 +13,7 @@ import {
 import {SizingKeys} from '../themes';
 import {Stack, StackProps} from '../stack';
 import {getStylePresetFromTheme} from '../utils/style-preset';
+import {ThemeProp} from '../utils/style-types';
 
 export const trackStylePresetDefault = 'sliderTrack';
 export const indicatorStylePresetDefault = 'sliderIndicator';

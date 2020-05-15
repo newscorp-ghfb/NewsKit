@@ -1,10 +1,11 @@
 import React from 'react';
-import {styled, getGridSettingFromTheme, css, ThemeProp} from '../utils/style';
+import {styled, getGridSettingFromTheme, css} from '../utils/style';
 import {getMediaQueryFromTheme} from '../utils/responsive-helpers';
 import {BreakpointKeys} from '../themes/newskit-light/breakpoints';
 import {GridContextProvider} from './context';
 import {GridProps} from './types';
 import {getOverridableProp, OverrideProp} from './utils';
+import {ThemeProp} from '../utils/style-types';
 
 const generateBreakpointConfig = (breakpoint: BreakpointKeys) => ({
   theme,

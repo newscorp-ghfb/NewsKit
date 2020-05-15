@@ -65,6 +65,36 @@ export default {
             </IconButton>
             <Button>More options</Button>
           </ShareBar>
+          <StorybookSubHeading>
+            Share bar with horizontal items and label, with overriden presets
+          </StorybookSubHeading>
+          <ShareBar
+            label="Share"
+            overrides={{
+              stylePreset: 'linkPrimary',
+              label: {
+                typePreset: 'tag030',
+                marginPreset: 'spaceInline030',
+              },
+              items: {
+                space: 'sizing060',
+              },
+            }}
+          >
+            <IconButton
+              size={ButtonSize.Large}
+              stylePreset="buttonSocialTwitter"
+            >
+              <Twitter />
+            </IconButton>
+            <IconButton
+              size={ButtonSize.Large}
+              stylePreset="buttonSocialFacebook"
+            >
+              <Facebook />
+            </IconButton>
+            <Button>More options</Button>
+          </ShareBar>
         </React.Fragment>
       ),
     },

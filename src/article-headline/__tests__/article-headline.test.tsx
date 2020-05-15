@@ -20,4 +20,23 @@ describe('ArticleHeadline', () => {
 
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders correctly with overriden props', () => {
+    const fragment = renderToFragmentWithTheme(ArticleHeadline, {
+      children: 'test',
+      kickerText: 'this is kicker',
+      renderHeadingAs: 'h4',
+      renderKickerAs: 'h5',
+      overrides: {
+        kicker: {
+          typePreset: 'headline200',
+        },
+        heading: {
+          stylePreset: 'linkPrimary',
+        },
+      },
+    } as any) as any;
+
+    expect(fragment).toMatchSnapshot();
+  });
 });

@@ -1,5 +1,5 @@
 describe('Consent component', () => {
-  it('should show up and verify cookie banner does not pop up anymore once user accepts the cookie consent', () => {
+  it.skip('should show up and verify cookie banner does not pop up anymore once user accepts the cookie consent', () => {
     cy.visit('/');
     const iFrame = "iframe[id^='sp_message_iframe']";
     cy.get(iFrame, {timeout: 10000}).should('be.visible');

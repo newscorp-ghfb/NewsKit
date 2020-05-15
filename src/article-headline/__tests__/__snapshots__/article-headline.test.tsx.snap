@@ -369,3 +369,232 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
   </section>
 </DocumentFragment>
 `;
+
+exports[`ArticleHeadline renders correctly with overriden props 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: block;
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
+  color: #0a0a0a;
+  margin: 0 0 24px 0;
+  display: inline-block;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
+  color: #2F75D7;
+  display: inline-block;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
+  color: #0A68C1;
+  margin: 0 12px 0 0;
+  text-transform: uppercase;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.21250000000000002em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.275em;
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.21250000000000002em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.275em;
+  }
+}
+
+.emotion-0:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-0:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-0:visited:not(:disabled) {
+  color: #903D91;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.21250000000000002em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.275em;
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    margin: 0 12px 0 0;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    margin: 0 16px 0 0;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    margin: 0 16px 0 0;
+  }
+}
+
+.emotion-1 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
+  color: #0a0a0a;
+  margin: 0 0 24px 0;
+  display: inline-block;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
+  color: #2F75D7;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.21250000000000002em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.275em;
+}
+
+@media screen and (min-width:960px) {
+  .emotion-1 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-1::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.21250000000000002em;
+  }
+
+  .emotion-1::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.275em;
+  }
+}
+
+.emotion-1:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-1:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-1:visited:not(:disabled) {
+  color: #903D91;
+}
+
+<section
+    class="emotion-2"
+  >
+    <h5
+      class="emotion-0"
+    >
+      this is kicker 
+    </h5>
+    <h4
+      class="emotion-1"
+    >
+      test
+    </h4>
+  </section>
+</DocumentFragment>
+`;

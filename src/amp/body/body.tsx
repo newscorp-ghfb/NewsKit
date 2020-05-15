@@ -1,7 +1,7 @@
 import React from 'react';
 import {AmpScriptsProvider, AmpScriptsObject} from '../scripts';
 import {ThemeProvider} from '../../themes';
-import {ThemeProp} from '../../utils/style';
+import {ThemeProp} from '../../utils/style-types';
 
 export interface BodyProps extends ThemeProp {
   ampScriptsObject?: AmpScriptsObject;

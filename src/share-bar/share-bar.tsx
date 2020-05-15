@@ -1,61 +1,94 @@
 import React from 'react';
-
 import {
   styled,
-  getSizingFromTheme,
-  getTypePresetFromTheme,
+  getTypePreset,
+  getMarginPreset,
+  getPaddingPreset,
 } from '../utils/style';
-import {SizingKeys} from '../themes/newskit-light/spacing';
-import {getStylePresetFromTheme} from '../utils/style-preset';
-import {Stack, Flow} from '../stack';
-import {MarginPresetKeys} from '../themes/mappers/spacing';
+import {Stack, Flow, StackProps} from '../stack';
+import {useTheme, SizingKeys} from '../themes';
+
+import {getStylePreset} from '../utils/style-preset';
+import {MarginPresetKeys, PaddingPresetKeys} from '../themes/mappers/spacing';
+import {getToken} from '../utils/get-token';
 
 export interface ShareBarProps {
   label?: string;
   vertical?: boolean;
-  labelStylePreset?: string;
-  labelSpacePreset?: MarginPresetKeys;
-  labelTypePreset?: string;
-  itemSpacePreset?: SizingKeys;
+  overrides?: {
+    stylePreset?: string;
+    label?: {
+      typePreset?: string;
+      stylePreset?: string;
+      marginPreset?: MarginPresetKeys;
+      paddingPreset?: PaddingPresetKeys;
+    };
+    items?: {
+      space: SizingKeys;
+    };
+  };
 }
 
-const labelStylePresetDefault = 'shareBarLabel';
-const labelTypePresetDefault = 'shareBarLabel';
+interface StyledShareBarProps extends StackProps {
+  overrides?: {stylePreset?: string};
+  orientation?: string;
+}
 
-const StyledHeader = styled.span<
-  Omit<ShareBarProps, 'itemSpacePreset' | 'vertical'>
->`
-  ${getStylePresetFromTheme(labelStylePresetDefault, 'labelStylePreset')};
-  ${getTypePresetFromTheme(labelTypePresetDefault, 'labelTypePreset')};
-  margin: ${getSizingFromTheme(undefined, 'labelSpacePreset')};
+type Label = {
+  orientation: string;
+};
+
+const StyledLabel = styled.span<Label>`
+  ${({orientation}) =>
+    getTypePreset(`shareBar.${orientation}.label`, 'label', {
+      withCrop: true,
+    })}
+
+  ${({orientation}) =>
+    getStylePreset(`shareBar.${orientation}.label`, 'label')};
+  ${({orientation}) =>
+    getPaddingPreset(`shareBar.${orientation}.label`, 'label')};
+  ${({orientation}) =>
+    getMarginPreset(`shareBar.${orientation}.label`, 'label')};
+`;
+
+const StyledShareBar = styled(Stack)<StyledShareBarProps>`
+  ${({orientation}) =>
+    getStylePreset(`shareBar.${orientation}.label`, 'label')};
 `;
 
 export const ShareBar: React.FC<ShareBarProps> = ({
   label,
   vertical,
-  labelSpacePreset = vertical ? 'spaceStack040' : 'spaceInline040',
-  itemSpacePreset = 'sizing020',
   children,
-  ...props
+  overrides = {},
 }) => {
-  const labelProps: Omit<ShareBarProps, 'itemSpacePreset' | 'vertical'> = {
-    labelSpacePreset,
-    ...props,
+  const theme = useTheme();
+  const orientation = vertical ? 'vertical' : 'horizontal';
+  const styledComponentsProps = {
+    overrides,
+    orientation,
   };
 
   return (
-    <Stack
+    <StyledShareBar
       inline={vertical}
       flow={vertical ? Flow.VerticalCenter : Flow.HorizontalCenter}
+      {...styledComponentsProps}
     >
-      {label && <StyledHeader {...labelProps}>{label}</StyledHeader>}
+      {label && <StyledLabel {...styledComponentsProps}>{label}</StyledLabel>}
       <Stack
         flow={vertical ? Flow.VerticalCenter : Flow.HorizontalCenter}
-        space={itemSpacePreset}
+        space={getToken(
+          {theme, overrides},
+          `shareBar.${orientation}.items`,
+          'items',
+          'space',
+        )}
       >
         {children}
       </Stack>
-    </Stack>
+    </StyledShareBar>
   );
 };
 

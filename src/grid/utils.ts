@@ -1,5 +1,5 @@
 import {BreakpointKeys} from '../themes';
-import {ThemeProp} from '../utils/style';
+import {ThemeProp} from '../utils/style-types';
 import {GridProps} from './types';
 import {GridKeys} from '../themes/newskit-light/grid';
 

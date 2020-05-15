@@ -104,7 +104,11 @@ describe('ShareBar', () => {
         <Button>more options</Button>,
       ],
       label: 'Share',
-      itemSpacePreset: 'sizing040',
+      overrides: {
+        label: {
+          marginPreset: 'spaceInline030',
+        },
+      },
     } as ShareBarProps);
 
     expect(fragment).toMatchSnapshot();
@@ -122,13 +126,17 @@ describe('ShareBar', () => {
         <Button>more options</Button>,
       ],
       label: 'Share',
-      labelStylePreset: 'buttonSolidPrimary',
+      overrides: {
+        label: {
+          stylePreset: 'buttonSolidPrimary',
+        },
+      },
     } as ShareBarProps);
 
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders with horizontally custom label spacing', () => {
+  test('renders with horizontally with overrides for label spacing', () => {
     const fragment = renderToFragmentWithTheme(ShareBar, {
       children: [
         <Link href="/">
@@ -140,13 +148,17 @@ describe('ShareBar', () => {
         <Button>more options</Button>,
       ],
       label: 'Share',
-      labelSpacePreset: 'spaceInline060',
+      overrides: {
+        label: {
+          marginPreset: 'spaceInline030',
+        },
+      },
     } as ShareBarProps);
 
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders with vertically custom label spacing', () => {
+  test('renders with vertically with overrides for label spacing', () => {
     const fragment = renderToFragmentWithTheme(ShareBar, {
       children: [
         <Link href="/">
@@ -159,13 +171,17 @@ describe('ShareBar', () => {
       ],
       label: 'Share',
       vertical: true,
-      labelSpacePreset: 'spaceStack060',
+      overrides: {
+        label: {
+          marginPreset: 'spaceInline030',
+        },
+      },
     } as ShareBarProps);
 
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders with custom label typePreset', () => {
+  test('renders with overrides for label typePreset', () => {
     const fragment = renderToFragmentWithTheme(ShareBar, {
       children: [
         <Link href="/">
@@ -178,7 +194,34 @@ describe('ShareBar', () => {
       ],
       label: 'Share',
       vertical: true,
-      labelTypePreset: 'tag020',
+      overrides: {
+        label: {
+          typePreset: 'tag020',
+        },
+      },
+    } as ShareBarProps);
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with overrides for item spacing', () => {
+    const fragment = renderToFragmentWithTheme(ShareBar, {
+      children: [
+        <Link href="/">
+          <Facebook size="iconSize040" />
+        </Link>,
+        <Link href="/">
+          <Twitter size="iconSize040" />
+        </Link>,
+        <Button>more options</Button>,
+      ],
+      label: 'Share',
+      vertical: true,
+      overrides: {
+        items: {
+          space: 'sizing060',
+        },
+      },
     } as ShareBarProps);
 
     expect(fragment).toMatchSnapshot();

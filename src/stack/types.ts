@@ -28,8 +28,8 @@ export interface StyledStackProps extends CommonStackProps {
   $wrap: boolean | 'wrap' | 'nowrap';
 }
 
-export interface StackProps extends CommonStackProps {
-  wrap: boolean | 'wrap' | 'nowrap';
+export interface StackProps extends Partial<CommonStackProps> {
+  wrap?: boolean | 'wrap' | 'nowrap';
 }
 
 export interface ChildProps

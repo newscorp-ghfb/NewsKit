@@ -19,9 +19,9 @@ export const isStack = (
 
 const wrapChild = (
   theme: Theme,
-  space: StackProps['space'],
-  flow: StackProps['flow'],
-  wrap: StackProps['wrap'],
+  space: NonNullable<StackProps['space']>,
+  flow: NonNullable<StackProps['flow']>,
+  wrap: NonNullable<StackProps['wrap']>,
 ) => (
   child: React.ReactNode & {props?: {order?: number; children?: ReactChildren}},
 ) => {
@@ -51,7 +51,7 @@ const wrapChild = (
   return child;
 };
 
-export const Stack: React.FC<Partial<StackProps>> = ({
+export const Stack: React.FC<StackProps> = ({
   space = 'sizing000',
   flow = Flow.VerticalLeft,
   wrap = false,

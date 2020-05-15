@@ -12,6 +12,7 @@ export const getFontProps = (
   const [fontStackPeek] = fontFamily.split(',');
 
   const fontFamilyObject: FontConfig | undefined = Object.values(
+    // TODO: PPDSC-1140 - This should not be imported, it needs to be taken from the consumers current theme.
     fontPrimitives,
   ).find(
     (fontEl): fontEl is FontConfig =>

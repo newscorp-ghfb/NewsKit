@@ -1,6 +1,5 @@
 import baseStyled, {CreateStyled, CSSObject} from '@emotion/styled';
 import {css} from '@emotion/core';
-import get from 'lodash.get';
 import {
   TypePresets,
   TypePresetKeys,
@@ -22,6 +21,8 @@ import {getMediaQuery, isResponsive} from './responsive-helpers';
 import {filterObject} from './filter-object';
 import {isFontConfigObject} from './guards';
 import {getFontProps} from './get-font-props';
+import {getToken} from './get-token';
+import {ThemeProp} from './style-types';
 
 export {CSSObject} from '@emotion/core';
 
@@ -31,9 +32,6 @@ export {css};
 export const styled = baseStyled as CreateStyled<Theme>;
 
 export type Responsive<T> = T | T[];
-export interface ThemeProp {
-  theme: Theme;
-}
 export type MQ<T> =
   | T
   | Partial<{
@@ -43,20 +41,22 @@ export type MQ<T> =
       lg: T;
     }>;
 
-export const getDefaultPreset = <
+export const getDefaultedValue = <
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   FromThemeUtil extends (...args: any) => any
 >(
   getPresetFromThemeUtil: FromThemeUtil,
   presetType: string,
 ) => <Props extends ThemeProp>(
-  presetPath: string,
-  customProp?: Exclude<keyof Props, 'theme'>,
+  defaultPath: string,
+  overridePath: string | false = '',
   option?: Parameters<FromThemeUtil>[2],
-) => (props: Props) => {
-  const defaultToken = get(props.theme.defaultPresets, presetPath)[presetType];
-  return getPresetFromThemeUtil(defaultToken, customProp, option)(props);
-};
+) => (props: Props) =>
+  getPresetFromThemeUtil(
+    getToken(props, defaultPath, overridePath, presetType),
+    undefined,
+    option,
+  )(props);
 
 export const getValueFromTheme = <ThemeToken extends string>(
   themeKey: keyof Theme,
@@ -70,7 +70,7 @@ export const getValueFromTheme = <ThemeToken extends string>(
   return (propKeys && section[propKeys]) || '';
 };
 
-export const getPresetValueFromTheme = <ThemeToken extends string>(
+export const getResponsiveValueFromTheme = <ThemeToken extends string>(
   themeKey: keyof Theme,
 ) => <Props extends ThemeProp>(
   defaultToken?: MQ<ThemeToken>,
@@ -112,6 +112,9 @@ export const getPresetValueFromTheme = <ThemeToken extends string>(
   return (propKeys && section[propKeys]) || '';
 };
 
+// TODO: (https://nidigitalsolutions.jira.com/browse/PPDSC-1143) renaming this could be a breaking change to any consumers outside NewsKit using this. Remove this and fix imports when ready to make the change.
+export const getPresetValueFromTheme = getResponsiveValueFromTheme;
+
 export const getTypePresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<TypePresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
@@ -128,7 +131,7 @@ export const getTypePresetFromTheme = <Props extends ThemeProp>(
   };
 
   const {withCrop = false} = options || {};
-  const typePreset = getPresetValueFromTheme('typePresets')(
+  const typePreset = getResponsiveValueFromTheme('typePresets')(
     defaultToken,
     customProp,
   )(props) as Partial<TypePresets[TypePresetKeys]> | Array<[string, CSSObject]>;
@@ -158,7 +161,7 @@ export const getTypePresetFromTheme = <Props extends ThemeProp>(
   return typePreset;
 };
 
-export const getDefaultTypePreset = getDefaultPreset(
+export const getTypePreset = getDefaultedValue(
   getTypePresetFromTheme,
   'typePreset',
 );
@@ -188,13 +191,16 @@ export const getSizingFromTheme = getValueFromTheme<
   SizingKeys | MarginPresetKeys | PaddingPresetKeys | IconSizeKeys
 >('sizing');
 
+export const getSizing = getDefaultedValue(getSizingFromTheme, 'sizing');
+
 export const getPaddingPresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<PaddingPresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => (props: Props) => {
-  const padding = getPresetValueFromTheme('sizing')(defaultToken, customProp)(
-    props,
-  ) as string | Array<[string, string]>;
+  const padding = getResponsiveValueFromTheme('sizing')(
+    defaultToken,
+    customProp,
+  )(props) as string | Array<[string, string]>;
   if (Array.isArray(padding)) {
     return padding.reduce(
       (acc, [mq, preset], index) => {
@@ -212,18 +218,19 @@ export const getPaddingPresetFromTheme = <Props extends ThemeProp>(
   return {padding};
 };
 
-export const getDefaultPaddingPreset = getDefaultPreset(
+export const getPaddingPreset = getDefaultedValue(
   getPaddingPresetFromTheme,
-  'padding',
+  'paddingPreset',
 );
 
 export const getMarginPresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<MarginPresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => (props: Props) => {
-  const margin = getPresetValueFromTheme('sizing')(defaultToken, customProp)(
-    props,
-  ) as string | Array<[string, string]>;
+  const margin = getResponsiveValueFromTheme('sizing')(
+    defaultToken,
+    customProp,
+  )(props) as string | Array<[string, string]>;
   if (Array.isArray(margin)) {
     return margin.reduce(
       (acc, [mq, preset], index) => {
@@ -241,9 +248,9 @@ export const getMarginPresetFromTheme = <Props extends ThemeProp>(
   return {margin};
 };
 
-export const getDefaultMarginPreset = getDefaultPreset(
+export const getMarginPreset = getDefaultedValue(
   getMarginPresetFromTheme,
-  'margin',
+  'marginPreset',
 );
 
 export const getBorderFromTheme = getValueFromTheme<BorderKeys>('borders');

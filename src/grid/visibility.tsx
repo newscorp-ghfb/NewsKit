@@ -1,8 +1,9 @@
 import React from 'react';
 import {DisplayProperty} from 'csstype';
-import {styled, ThemeProp, css} from '../utils/style';
+import {styled, css} from '../utils/style';
 import {BreakpointKeys} from '../themes/newskit-light/breakpoints';
 import {getMediaQueryFromTheme} from '../utils/responsive-helpers';
+import {ThemeProp} from '../utils/style-types';
 
 interface CommonProps {
   xs?: boolean;

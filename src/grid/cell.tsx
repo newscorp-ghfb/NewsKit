@@ -1,10 +1,11 @@
 import React, {useContext} from 'react';
-import {styled, ThemeProp, css} from '../utils/style';
+import {styled, css} from '../utils/style';
 import {BreakpointKeys} from '../themes';
 import {getMediaQueryFromTheme} from '../utils/responsive-helpers';
 import {GridContext} from './context';
 import {GridProps, CellProps} from './types';
 import {getOverridableProp, OverrideProp} from './utils';
+import {ThemeProp} from '../utils/style-types';
 
 const generateBreakpointConfig = (breakpoint: BreakpointKeys) => ({
   theme,

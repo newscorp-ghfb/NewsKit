@@ -1,4 +1,4 @@
-import {css, styled, ThemeProp, CSSObject} from '../utils/style';
+import {css, styled, CSSObject} from '../utils/style';
 
 import {
   Flow,
@@ -8,6 +8,7 @@ import {
   StyledStackProps,
 } from './types';
 import {SizingKeys, Theme} from '../themes';
+import {ThemeProp} from '../utils/style-types';
 
 export const flowDictionary = {
   vertical: 'column',

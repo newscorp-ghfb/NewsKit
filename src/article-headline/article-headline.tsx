@@ -1,12 +1,7 @@
 import React from 'react';
 import {H1} from '../typography';
-import {
-  styled,
-  getDefaultTypePreset,
-  getDefaultMarginPreset,
-  MQ,
-} from '../utils/style';
-import {getDefaultStylePreset} from '../utils/style-preset';
+import {styled, getTypePreset, getMarginPreset, MQ} from '../utils/style';
+import {getStylePreset} from '../utils/style-preset';
 import {TypePresetKeys} from '../themes/mappers/type-presets';
 import {MarginPresetKeys} from '../themes/mappers/spacing';
 import {StylePresetKeys} from '../themes/mappers/style-preset';
@@ -15,47 +10,42 @@ export interface ArticleHeadline {
   kickerText?: string;
   renderHeadingAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
   renderKickerAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
-  kickerStylePreset?: MQ<StylePresetKeys>;
-  headingStylePreset?: MQ<StylePresetKeys>;
-  kickerMqTypePreset?: MQ<TypePresetKeys>;
-  headingMqTypePreset?: MQ<TypePresetKeys>;
-  kickerMqInlineMarginPreset?: MQ<MarginPresetKeys>;
+  overrides?: {
+    kicker?: {
+      stylePreset?: MQ<StylePresetKeys>;
+      typePreset?: MQ<TypePresetKeys>;
+      marginPreset?: MQ<MarginPresetKeys>;
+    };
+    heading?: {
+      stylePreset?: MQ<StylePresetKeys>;
+      typePreset?: MQ<TypePresetKeys>;
+    };
+  };
 }
 
 interface HeadingProps {
-  headingStylePreset?: MQ<StylePresetKeys>;
-  headingMqTypePreset?: MQ<TypePresetKeys>;
   as?: React.ElementType;
-}
-
-interface KickerProps {
-  kickerStylePreset?: MQ<StylePresetKeys>;
-  kickerMqTypePreset?: MQ<TypePresetKeys>;
-  kickerMqInlineMarginPreset?: MQ<MarginPresetKeys>;
 }
 
 const Headline = styled.section`
   display: block;
 `;
 
-const Heading = styled(H1)<HeadingProps>`
+const Heading = styled(H1)<HeadingProps & ArticleHeadline>`
   display: inline-block;
-  ${getDefaultTypePreset('articleHeadline.heading', 'headingMqTypePreset', {
+  ${getTypePreset('articleHeadline.heading', 'heading', {
     withCrop: true,
   })}
-  ${getDefaultStylePreset('articleHeadline.heading', 'headingStylePreset')}
+  ${getStylePreset('articleHeadline.heading', 'heading')}
 `;
 
-const Kicker = styled(Heading)<KickerProps>`
+const Kicker = styled(Heading)<ArticleHeadline>`
   display: inline-block;
-  ${getDefaultTypePreset('articleHeadline.kicker', 'kickerMqTypePreset', {
+  ${getTypePreset('articleHeadline.kicker', 'kicker', {
     withCrop: true,
   })}
-  ${getDefaultStylePreset('articleHeadline.kicker', 'kickerStylePreset')}
-  ${getDefaultMarginPreset(
-    'articleHeadline.kicker',
-    'kickerMqInlineMarginPreset',
-  )}
+  ${getStylePreset('articleHeadline.kicker', 'kicker')}
+  ${getMarginPreset('articleHeadline.kicker', 'kicker')}
   text-transform: uppercase;
 `;
 
@@ -64,27 +54,14 @@ export const ArticleHeadline: React.FC<ArticleHeadline> = ({
   kickerText,
   renderHeadingAs = 'h1',
   renderKickerAs = 'span',
-  headingStylePreset,
-  kickerStylePreset,
-  kickerMqTypePreset,
-  headingMqTypePreset,
-  kickerMqInlineMarginPreset,
+  overrides = {},
 }) =>
   kickerText ? (
     <Headline>
-      <Kicker
-        as={renderKickerAs}
-        kickerStylePreset={kickerStylePreset}
-        kickerMqTypePreset={kickerMqTypePreset}
-        kickerMqInlineMarginPreset={kickerMqInlineMarginPreset}
-      >
+      <Kicker as={renderKickerAs} overrides={overrides}>
         {kickerText}{' '}
       </Kicker>
-      <Heading
-        as={renderHeadingAs}
-        headingStylePreset={headingStylePreset}
-        headingMqTypePreset={headingMqTypePreset}
-      >
+      <Heading as={renderHeadingAs} overrides={overrides}>
         {children}
       </Heading>
     </Headline>

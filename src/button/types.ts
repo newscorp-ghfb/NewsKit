@@ -1,6 +1,6 @@
 import {ColorKeys, TypePresetKeys} from '../themes';
 import {SizingKeys, IconSizeKeys} from '../themes/newskit-light/spacing';
-import {ThemeProp} from '../utils/style';
+import {ThemeProp} from '../utils/style-types';
 import {PaddingPresetKeys} from '../themes/mappers/spacing';
 
 export type StylePresetAndTheme = Pick<ButtonCommonProps, 'stylePreset'> &

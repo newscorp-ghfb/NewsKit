@@ -1,19 +1,19 @@
 import {
-  ThemeProp,
   CSSObject,
-  getPresetValueFromTheme,
+  getDefaultedValue,
+  getResponsiveValueFromTheme,
   MQ,
-  getDefaultPreset,
 } from './style';
-import {
-  StylePresetStyles,
-  StylePresetStyleKeys,
-  StylePresetStateKeys,
-  StylePresetStates,
-  StylePresetKeys,
-} from '../themes/mappers/style-preset';
 import {filterObject, rejectObject} from './filter-object';
 import {Theme} from '../themes/creator';
+import {
+  StylePresetStates,
+  StylePresetStateKeys,
+  StylePresetStyleKeys,
+  StylePresetStyles,
+} from '../themes';
+import {StylePresetKeys} from '../themes/mappers/style-preset';
+import {ThemeProp} from './style-types';
 
 export interface GetStylePresetFromThemeOptions {
   isLoading?: boolean;
@@ -102,7 +102,7 @@ export const getStylePresetFromTheme = <Props extends ThemeProp>(
   customProp?: Exclude<keyof Props, 'theme'>,
   options?: GetStylePresetFromThemeOptions,
 ) => (props: Props) => {
-  const stylePreset = getPresetValueFromTheme('stylePresets')(
+  const stylePreset = getResponsiveValueFromTheme('stylePresets')(
     defaultToken,
     customProp,
   )(props) as Partial<StylePresetStates> | Array<[string, StylePresetStates]>;
@@ -119,11 +119,10 @@ export const getStylePresetFromTheme = <Props extends ThemeProp>(
       {} as CSSObject,
     );
   }
-
   return stylePreset ? getStylePresetValueFromTheme(stylePreset, options) : '';
 };
 
-export const getDefaultStylePreset = getDefaultPreset(
+export const getStylePreset = getDefaultedValue(
   getStylePresetFromTheme,
   'stylePreset',
 );

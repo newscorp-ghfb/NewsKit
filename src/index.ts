@@ -31,6 +31,7 @@ export * from './typography';
 export * from './utils/get-bui-id';
 export * from './utils/responsive-helpers';
 export * from './utils/style';
+export * from './utils/style-types';
 export * from './volume-control';
 export * from './utils/style-preset';
 export * from './screen-reader-only';
