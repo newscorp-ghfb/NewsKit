@@ -140,6 +140,24 @@ describe('Style helpers', () => {
     expect(declaration).toEqual('scale200_sizing');
   });
 
+  test('getSizingFromTheme("scale100", "sizing", true)({theme, sizing: "100%"}) returns "100%"', () => {
+    const props = {
+      theme: {
+        sizing: {
+          scale100: 'scale100_sizing',
+          scale200: 'scale200_sizing',
+        },
+      },
+      sizing: '100%',
+    };
+    const declaration = getSizingFromTheme<{sizing?: string; theme: any}>(
+      'scale100' as any,
+      'sizing',
+      true,
+    )(props);
+    expect(declaration).toEqual('100%');
+  });
+
   test('getSizingFromTheme(undefined, "sizing")({theme, sizing: "scale100"}) returns "scale100_sizing"', () => {
     const props = {
       theme: {

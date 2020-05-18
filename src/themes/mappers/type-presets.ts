@@ -247,21 +247,6 @@ const getBaseTypePresets = (p: FontPrimitives) => {
       letterSpacing: p.fontLetterSpacing030,
     },
 
-    // Button
-
-    button010: {
-      ...label010,
-      letterSpacing: p.fontLetterSpacing030,
-    },
-    button020: {
-      ...label020,
-      letterSpacing: p.fontLetterSpacing030,
-    },
-    button030: {
-      ...label030,
-      letterSpacing: p.fontLetterSpacing030,
-    },
-
     // Flag
 
     flag010: {
@@ -345,6 +330,36 @@ export const createTypePresets = (p: FontPrimitives) => {
         baseTypePresets.subhead010.fontSize,
         baseTypePresets.subhead010.lineHeight,
         baseTypePresets.subhead010.fontFamily,
+      ),
+    },
+
+    // Button
+    // Use `withCrop` option in the default util in PPDSC-1120
+    buttonSmall: {
+      ...baseTypePresets.label010,
+      letterSpacing: p.fontLetterSpacing030,
+      ...getFontProps(
+        baseTypePresets.label010.fontSize,
+        baseTypePresets.label010.lineHeight,
+        baseTypePresets.label010.fontFamily,
+      ),
+    },
+    buttonMedium: {
+      ...baseTypePresets.label020,
+      letterSpacing: p.fontLetterSpacing030,
+      ...getFontProps(
+        baseTypePresets.label020.fontSize,
+        baseTypePresets.label020.lineHeight,
+        baseTypePresets.label020.fontFamily,
+      ),
+    },
+    buttonLarge: {
+      ...baseTypePresets.label030,
+      letterSpacing: p.fontLetterSpacing030,
+      ...getFontProps(
+        baseTypePresets.label030.fontSize,
+        baseTypePresets.label030.lineHeight,
+        baseTypePresets.label030.fontFamily,
       ),
     },
 

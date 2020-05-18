@@ -1,2 +1,2 @@
-export * from './flag';
-export * from './types';
+export {Flag} from './flag';
+export {FlagSize, FlagProps} from './types';

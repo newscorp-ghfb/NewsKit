@@ -1,59 +1,61 @@
 import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {TagSize, Tag, TagProps} from '..';
+import {Tag, TagSize, TagProps} from '..';
 import {Email} from '../../icons';
 
 const tagSizeKeys = (Object.keys(TagSize) as unknown) as Array<
   keyof typeof TagSize
 >;
 
-const children = 'Text';
+const renderTagWithText = (props: TagProps) => <Tag {...props}>Text</Tag>;
+const renderTagWithTextAndIcon = (props: TagProps) => (
+  <Tag {...props}>
+    <Email size="iconSize010" />
+    Text
+  </Tag>
+);
 
 describe('Tag', () => {
   test('renders with default styles', () => {
-    const fragment = renderToFragmentWithTheme(Tag, {children});
+    const fragment = renderToFragmentWithTheme(renderTagWithText);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders in disabled state', () => {
-    const fragment = renderToFragmentWithTheme(Tag, {
+    const props: TagProps = {
       disabled: true,
-      children,
-    } as TagProps);
-
+    };
+    const fragment = renderToFragmentWithTheme(renderTagWithText, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('href renders as an anchor', () => {
-    const fragment = renderToFragmentWithTheme(Tag, {
+    const props: TagProps = {
       href: '#',
-      children,
-    } as TagProps);
+    };
+    const fragment = renderToFragmentWithTheme(renderTagWithText, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('href renders in disable state as a div', () => {
-    const fragment = renderToFragmentWithTheme(Tag, {
+    const props: TagProps = {
       href: '#',
       disabled: true,
-      children,
-    } as TagProps);
+    };
+    const fragment = renderToFragmentWithTheme(renderTagWithText, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test.each(tagSizeKeys)('renders with %s size', currentSize => {
-    const tagSize = TagSize[currentSize];
-    const fragment = renderToFragmentWithTheme(Tag, {
-      size: tagSize,
-      children,
-    } as TagProps);
+    const props: TagProps = {
+      size: TagSize[currentSize],
+    };
+    const fragment = renderToFragmentWithTheme(renderTagWithText, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders a tag with an icon', () => {
-    const fragment = renderToFragmentWithTheme(Tag, {
-      children: [<Email size="iconSize010" />, 'Text'],
-    } as TagProps);
+    const fragment = renderToFragmentWithTheme(renderTagWithTextAndIcon);
     expect(fragment).toMatchSnapshot();
   });
 });

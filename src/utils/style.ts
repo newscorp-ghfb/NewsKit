@@ -41,6 +41,10 @@ export type MQ<T> =
       lg: T;
     }>;
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const isValid = (value: any): boolean =>
+  !(Number.isNaN(value) || Array.isArray(value) || typeof value === 'object');
+
 export const getDefaultedValue = <
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   FromThemeUtil extends (...args: any) => any
@@ -63,11 +67,15 @@ export const getValueFromTheme = <ThemeToken extends string>(
 ) => <Props extends ThemeProp>(
   defaultToken?: MQ<ThemeToken>,
   customProp?: Exclude<keyof Props, 'theme'>,
-) => ({theme, ...props}: Props) => {
+  allowNonThemeValue?: boolean,
+) => (props: Props) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const section = theme[themeKey] as any;
-  const propKeys = (customProp && props[customProp]) || defaultToken;
-  return (propKeys && section[propKeys]) || '';
+  const section = props.theme[themeKey] as any;
+  const token = (customProp && props[customProp]) || defaultToken;
+  return (
+    (section && section[token]) ||
+    (allowNonThemeValue && isValid(token) ? token : '')
+  );
 };
 
 export const getResponsiveValueFromTheme = <ThemeToken extends string>(

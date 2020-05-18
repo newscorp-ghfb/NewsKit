@@ -1,61 +1,65 @@
 import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {FlagSize, Flag, FlagProps} from '..';
+import {Flag, FlagSize, FlagProps} from '..';
 import {Email} from '../../icons';
 
 const flagSizeKeys = (Object.keys(FlagSize) as unknown) as Array<
   keyof typeof FlagSize
 >;
 
-const children = 'Text';
+const renderFlagWithText = (props: FlagProps) => <Flag {...props}>Text</Flag>;
+const renderFlagWithTextAndIcon = (props: FlagProps) => (
+  <Flag {...props}>
+    <Email size="iconSize010" />
+    Text
+  </Flag>
+);
 
 describe('Flag', () => {
   test('renders with default styles', () => {
-    const fragment = renderToFragmentWithTheme(Flag, {
-      children,
-    });
+    const fragment = renderToFragmentWithTheme(renderFlagWithText);
     expect(fragment).toMatchSnapshot();
   });
 
   test.each(flagSizeKeys)('renders with %s size', currentSize => {
-    const flagSize = FlagSize[currentSize];
-    const fragment = renderToFragmentWithTheme(Flag, {
-      size: flagSize,
-      children,
-    } as FlagProps);
+    const props: FlagProps = {
+      size: FlagSize[currentSize],
+    };
+    const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders a flag with a custom stylePreset', () => {
-    const fragment = renderToFragmentWithTheme(Flag, {
+    const props: FlagProps = {
       stylePreset: 'flagMinimal',
-      children,
-    } as FlagProps);
+    };
+    const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders a flag with no paddings', () => {
-    const fragment = renderToFragmentWithTheme(Flag, {
+    const props: FlagProps = {
       stylePreset: 'flagMinimal',
-      spacing: 'spaceInset000Squish',
-      children,
-    } as FlagProps);
+      padding: 'spaceInset000Squish',
+    };
+    const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders a solid flag with an icon', () => {
-    const fragment = renderToFragmentWithTheme(Flag, {
-      children: [<Email size="iconSize010" />, 'Text'],
-    } as FlagProps);
+    const fragment = renderToFragmentWithTheme(renderFlagWithTextAndIcon);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders a minimal flag with an icon', () => {
-    const fragment = renderToFragmentWithTheme(Flag, {
-      children: [<Email size="iconSize010" />, 'Text'],
+    const props: FlagProps = {
       stylePreset: 'flagMinimal',
-      spacing: 'spaceInset000Squish',
-    } as FlagProps);
+      padding: 'spaceInset000Squish',
+    };
+    const fragment = renderToFragmentWithTheme(
+      renderFlagWithTextAndIcon,
+      props,
+    );
     expect(fragment).toMatchSnapshot();
   });
 });

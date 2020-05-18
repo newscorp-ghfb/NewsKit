@@ -31,7 +31,7 @@ export default {
       component: () => (
         <React.Fragment>
           <h2>Minimal Flag</h2>
-          <Flag spacing="spaceInset000Squish" stylePreset="flagMinimal">
+          <Flag padding="spaceInset000Squish" stylePreset="flagMinimal">
             Text goes here
           </Flag>
         </React.Fragment>
@@ -97,7 +97,7 @@ export default {
             <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
               <Flag
                 size={FlagSize.Small}
-                spacing="spaceInset000Squish"
+                padding="spaceInset000Squish"
                 stylePreset="flagMinimal"
               >
                 <Email size="iconSize010" />
@@ -105,7 +105,7 @@ export default {
               </Flag>
               <Flag
                 size={FlagSize.Large}
-                spacing="spaceInset000Squish"
+                padding="spaceInset000Squish"
                 stylePreset="flagMinimal"
               >
                 <Email size="iconSize010" />
@@ -113,7 +113,7 @@ export default {
               </Flag>
               <Flag
                 size={FlagSize.Large}
-                spacing="spaceInset000Squish"
+                padding="spaceInset000Squish"
                 stylePreset="flagMinimal"
               >
                 <Bookmark size="iconSize010" />
@@ -121,7 +121,7 @@ export default {
               </Flag>
               <Flag
                 size={FlagSize.Large}
-                spacing="spaceInset000Squish"
+                padding="spaceInset000Squish"
                 stylePreset="flagMinimal"
               >
                 <VolumeMute size="iconSize010" />

@@ -6,7 +6,7 @@ import {Flag} from '../../flag';
 import {SaveInactive} from '../../icons/save-inactive';
 
 const CustomFlag = () => (
-  <Flag spacing="spaceInset000Squish" stylePreset="flagMinimal">
+  <Flag padding="spaceInset000Squish" stylePreset="flagMinimal">
     <SaveInactive />
     Most Popular
   </Flag>

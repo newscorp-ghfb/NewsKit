@@ -1,120 +1,109 @@
 import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {Button, IconButton} from '..';
-import {ButtonSize, RegularButtonSize} from '../types';
+import {Button, IconButton, ButtonProps, ButtonSize} from '..';
 import {Email} from '../../icons/email';
 import {ColorKeys} from '../../themes/mappers/colors';
-import {BaseButton} from '../base-button';
 
-describe('BaseButton', () => {
-  test('renders with fallback formatting', () => {
-    const fragment = renderToFragmentWithTheme(BaseButton);
-    expect(fragment).toMatchSnapshot();
-  });
-});
+const renderButtonWithText = (props: ButtonProps) => (
+  <Button {...props}>click this!</Button>
+);
+
+const renderButtonWithTextAndIcon = (props: ButtonProps) => (
+  <Button {...props}>
+    click this!
+    <Email />
+  </Button>
+);
+
+const renderIconButton = (props: ButtonProps) => (
+  <IconButton {...props}>
+    <Email />
+  </IconButton>
+);
 
 describe('Button', () => {
   test('renders with fallback formatting', () => {
-    const fragment = renderToFragmentWithTheme(Button);
+    const fragment = renderToFragmentWithTheme(renderButtonWithText);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders text and icon button with fallback formatting', () => {
+    const fragment = renderToFragmentWithTheme(renderButtonWithTextAndIcon);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders Small Button', () => {
-    const props: {size: RegularButtonSize} = {
+    const props: ButtonProps = {
       size: ButtonSize.Small,
     };
-    const fragment = renderToFragmentWithTheme(Button, props);
+    const fragment = renderToFragmentWithTheme(renderButtonWithText, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders Large Button', () => {
-    const props: {size: RegularButtonSize} = {
+    const props: ButtonProps = {
       size: ButtonSize.Large,
     };
-    const fragment = renderToFragmentWithTheme(Button, props);
+    const fragment = renderToFragmentWithTheme(renderButtonWithText, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders with different style preset', () => {
-    const props = {
+    const props: ButtonProps = {
       stylePreset: 'buttonOutlinedPrimary',
     };
 
-    const fragment = renderToFragmentWithTheme(Button, props);
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders when there is no icon', () => {
-    const props: {
-      size: RegularButtonSize;
-      children: string;
-    } = {
-      size: ButtonSize.Small,
-      children: 'click this!',
-    };
-    const fragment = renderToFragmentWithTheme(Button, props);
+    const fragment = renderToFragmentWithTheme(renderButtonWithText, props);
     expect(fragment).toMatchSnapshot();
   });
 
   describe('Loading Button', () => {
     test('renders Small Button', () => {
-      const props: {
-        size: RegularButtonSize;
-        isLoading: boolean;
-      } = {
+      const props: ButtonProps = {
         size: ButtonSize.Small,
         isLoading: true,
       };
-      const fragment = renderToFragmentWithTheme(Button, props);
+      const fragment = renderToFragmentWithTheme(renderButtonWithText, props);
       expect(fragment).toMatchSnapshot();
     });
 
     test('renders Large Button', () => {
-      const props: {
-        size: RegularButtonSize;
-        isLoading: boolean;
-      } = {
+      const props: ButtonProps = {
         size: ButtonSize.Large,
         isLoading: true,
       };
-      const fragment = renderToFragmentWithTheme(Button, props);
+      const fragment = renderToFragmentWithTheme(renderButtonWithText, props);
       expect(fragment).toMatchSnapshot();
     });
   });
 
   describe('IconButton', () => {
     test('renders Icon Button with fallback formatting', () => {
-      const props = {
-        children: [<Email />],
-      };
-      const fragment = renderToFragmentWithTheme(IconButton, props);
+      const fragment = renderToFragmentWithTheme(renderIconButton);
       expect(fragment).toMatchSnapshot();
     });
 
     test('renders Small Icon Button', () => {
       const props = {
         size: ButtonSize.Small,
-        children: [<Email />],
       };
-      const fragment = renderToFragmentWithTheme(IconButton, props);
+      const fragment = renderToFragmentWithTheme(renderIconButton, props);
       expect(fragment).toMatchSnapshot();
     });
 
     test('renders Medium Icon Button', () => {
       const props = {
         size: ButtonSize.Medium,
-        children: [<Email />],
       };
-      const fragment = renderToFragmentWithTheme(IconButton, props);
+      const fragment = renderToFragmentWithTheme(renderIconButton, props);
       expect(fragment).toMatchSnapshot();
     });
 
     test('renders Large Icon Button', () => {
       const props = {
         size: ButtonSize.Large,
-        children: [<Email />],
       };
-      const fragment = renderToFragmentWithTheme(IconButton, props);
+      const fragment = renderToFragmentWithTheme(renderIconButton, props);
       expect(fragment).toMatchSnapshot();
     });
 
@@ -122,9 +111,8 @@ describe('Button', () => {
       const props = {
         size: ButtonSize.Large,
         isLoading: true,
-        children: [<Email />],
       };
-      const fragment = renderToFragmentWithTheme(IconButton, props);
+      const fragment = renderToFragmentWithTheme(renderIconButton, props);
       expect(fragment).toMatchSnapshot();
     });
 
@@ -132,9 +120,8 @@ describe('Button', () => {
       const props = {
         size: ButtonSize.Small,
         iconColor: 'buttonText' as ColorKeys,
-        children: [<Email />, 'click this!'],
       };
-      const fragment = renderToFragmentWithTheme(IconButton, props);
+      const fragment = renderToFragmentWithTheme(renderIconButton, props);
       expect(fragment).toMatchSnapshot();
     });
   });

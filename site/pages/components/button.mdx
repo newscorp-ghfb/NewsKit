@@ -21,23 +21,63 @@ Buttons have a number of props to facilitate a variety of uses. Any prop valid o
 Custom props are detailed below:
 
 <LegacyBlock marginTop="sizing040">
-  <Prop
+  <Prop name="children" type="string" required>
+    The content of the Button is passed as the child of the component.
+  </Prop>
+    <Prop
     name="size"
     type="ButtonSize"
     enum={ButtonSize}
-    default={ButtonSize.Small}
+    default={ButtonSize.Medium}
   >
-    Set the size of the button. Possible values: Small and Large.
-    Default styling: Small.
+    Optional size of the Button: Small, Medium or Large.
   </Prop>
-  <Prop name="stylePreset" type="string" default="buttonSolidPrimary">
-    Set the style presets of the button.
+  <Prop name="padding" type="PaddingPresetKeys">
+    If provided, this overrides the padding of the Button. Otherwise,
+    buttonSmallInset, buttonMediumInset or buttonLargeInset is used depending on the `size`
+    prop.
   </Prop>
-  <Prop name="icon" type="React.ComponentType">
-    Defines which icon to use.
+  <Prop name="stylePreset" type="string" default="buttonDefault">
+    If provided, this overrides the style preset applied to the Button.
   </Prop>
-  <Prop name="isLoading" type="boolean">
-    boolean flag for indicating loading state of the parent component, which then displays circular progress indicator.
+  <Prop name="typePreset" type="string">
+    If provided, this overrides the type preset applied to the Button. Otherwise,
+    buttonSmall, buttonMedium or buttonLarge is used depending on the `size` prop.
+  </Prop>
+  <Prop name="space" type="SizingKeys" default="sizing020">
+    If provided, this overrides the space between multiple children in the
+    underlying Stack. If less than 2 children are passed, this prop is
+    irrelevant.
+  </Prop>
+  <Prop name="iconSize" type="IconSizeKeys">
+    If provided, this overrides the icon size of any child icons. Otherwise,
+    iconSize010, iconSize020 or iconSize030 is used depending on the `size` prop. If no icons
+    are present in the Button's children then this prop is irrelevant.
+  </Prop>
+  <Prop name="width" type="SizingKeys | string">
+    If provided, this sets a fixed width to the Button. This can be a sizing token
+    from the theme, or any valid CSS value, e.g. 100% for a full-width element.
+  </Prop>
+  <Prop name="height" type="SizingKeys | string">
+    If provided, this sets a fixed height to the Button. This can be a sizing token
+    from the theme, or any valid CSS value.
+  </Prop>
+  <Prop name="minHeight" type="SizingKeys | string">
+    If provided, this sets a minimum height to the Button. This can be a sizing
+    token from the theme, or any valid CSS value. By default, sizing060,
+    sizing080 or sizing090 is used depending on the `size` prop.
+  </Prop>
+  <Prop name="minWidth" type="SizingKeys | string">
+    If provided, this sets a minimum width to the Button. This can be a sizing
+    token from the theme, or any valid CSS value. By default, sizing090,
+    sizing100 or sizing110 is used depending on the `size` prop.
+  </Prop>
+  <Prop name="disabled" type="boolean" default={false}>
+    If true, the Button will render the disabled state of the styled preset.
+  </Prop>
+  <Prop name="isLoading" type="boolean" default="false">
+    If true, this will cause the Button to render the loading state of the style
+    preset.
   </Prop>
 </LegacyBlock>
 
@@ -60,6 +100,10 @@ Custom props are detailed below:
         {
           label: 'ButtonSize.Small',
           value: ButtonSize.Small,
+        },
+            {
+          label: 'ButtonSize.Medium',
+          value: ButtonSize.Medium,
           isDefault: true,
         },
         {
@@ -84,6 +128,44 @@ Custom props are detailed below:
         {
           label: 'buttonMinimalPrimary',
           value: 'buttonMinimalPrimary',
+        },
+      ],
+    },
+    {
+      name: 'Type Preset',
+      propName: 'typePreset',
+      options: [
+        {
+          label: 'buttonSmall',
+          value: 'buttonSmall',
+          isDefault: true,
+        },
+        {
+          label: 'buttonMedium',
+          value: 'buttonMedium',
+        },
+        {
+          label: 'buttonLarge',
+          value: 'buttonLarge',
+        },
+      ],
+    },
+    {
+      name: 'Width',
+      propName: 'width',
+      options: [
+        {
+          label: 'Default',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'Full-width',
+          value: '100%',
+        },
+            {
+          label: 'Fix-width',
+          value: '200px',
         },
       ],
     },

@@ -1,19 +1,9 @@
 import React from 'react';
 import {as} from '../utils/component';
 import {TagProps, TagSize} from './types';
-import {SizingKeys, TypePresetKeys, IconSizeKeys} from '../themes';
-import {PaddingPresetKeys} from '../themes/mappers/spacing';
-import {BaseFlag} from '../base-flag';
+import {Flag, FlagProps} from '../flag';
 
-const tagSizeStyleTokens: Record<
-  TagSize,
-  {
-    typePreset: TypePresetKeys;
-    minHeight: SizingKeys;
-    padding: PaddingPresetKeys;
-    iconSize: IconSizeKeys;
-  }
-> = {
+const tagSizeStyleTokens: Record<TagSize, Partial<FlagProps>> = {
   [TagSize.Large]: {
     typePreset: 'tag030',
     minHeight: 'sizing070',
@@ -40,11 +30,11 @@ export const Tag: React.FC<TagProps> = ({
   href,
   ...props
 }) => (
-  <BaseFlag
+  <Flag
     data-testid="tag"
-    isDisabled={disabled}
+    stylePreset="tagDefault"
+    disabled={disabled}
     href={disabled ? undefined : href}
-    stylePreset="tagPrimary"
     {...as(href && !disabled ? 'a' : 'div')}
     {...tagSizeStyleTokens[size]}
     {...props}

@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import {Button, IconButton} from '..';
 import {styled} from '../../utils/style';
-import {ButtonSize, RegularButtonSize} from '../types';
+import {ButtonSize} from '../types';
 import {Pause, Email, CopyLink} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
@@ -11,6 +11,10 @@ import {newskitLightTheme, IconSizeKeys} from '../../themes';
 
 const Container = styled.div`
   margin: 24px;
+`;
+
+const Border = styled.div`
+  border: solid 1px red;
 `;
 
 const Block = styled.div`
@@ -41,10 +45,28 @@ const Spacer = styled.div`
   margin-bottom: 20px;
 `;
 
-enum ButtonStyle {
+enum ButtonPrimaryStyles {
   Solid = 'buttonSolidPrimary',
   Outlined = 'buttonOutlinedPrimary',
   Minimal = 'buttonMinimalPrimary',
+}
+
+enum ButtonSecondaryStyles {
+  Solid = 'buttonSolidSecondary',
+  Outlined = 'buttonOutlinedSecondary',
+  Minimal = 'buttonMinimalSecondary',
+}
+
+enum ButtonNegativeStyles {
+  Solid = 'buttonSolidNegative',
+  Outlined = 'buttonOutlinedNegative',
+  Minimal = 'buttonMinimalNegative',
+}
+
+enum ButtonPositiveStyles {
+  Solid = 'buttonSolidPositive',
+  Outlined = 'buttonOutlinedPositive',
+  Minimal = 'buttonMinimalPositive',
 }
 
 enum IconButtonStyle {
@@ -53,12 +75,13 @@ enum IconButtonStyle {
   Minimal = 'iconButtonMinimalPrimary',
 }
 
-const regularButtonSizes: Array<{
-  buttonSize: RegularButtonSize;
+const buttonSizes: Array<{
+  buttonSize: ButtonSize;
   iconSize: IconSizeKeys;
 }> = [
   {buttonSize: ButtonSize.Small, iconSize: 'iconSize010'},
-  {buttonSize: ButtonSize.Large, iconSize: 'iconSize020'},
+  {buttonSize: ButtonSize.Medium, iconSize: 'iconSize020'},
+  {buttonSize: ButtonSize.Large, iconSize: 'iconSize030'},
 ];
 
 const states = ['Default', 'Focused', 'Disabled', 'Loading'];
@@ -72,7 +95,8 @@ export default {
           <h2>Button Size</h2>
           <Container>
             <Stack flow="horizontal-center" space="sizing070" wrap="wrap">
-              <Button>Small button</Button>
+              <Button size={ButtonSize.Small}>Small button</Button>
+              <Button size={ButtonSize.Medium}>Medium button</Button>
               <Button size={ButtonSize.Large}>Large button</Button>
             </Stack>
           </Container>
@@ -84,7 +108,59 @@ export default {
     {
       component: () => (
         <React.Fragment>
-          <h2>Button States</h2>
+          <h2>Full-Width Button</h2>
+          <Container>
+            <Border>
+              <Spacer>
+                <Button size={ButtonSize.Small} width="100%">
+                  Small full-width button
+                </Button>
+              </Spacer>
+              <Spacer>
+                <Button size={ButtonSize.Medium} width="100%">
+                  Medium full-width button
+                </Button>
+              </Spacer>
+              <Button size={ButtonSize.Large} width="100%">
+                Large full-width button
+              </Button>
+            </Border>
+          </Container>
+        </React.Fragment>
+      ),
+      name: 'full-width-button',
+      type: 'story',
+    },
+    {
+      component: () => (
+        <React.Fragment>
+          <h2>Fixed-Width Button</h2>
+          <Container>
+            <Border>
+              <Spacer>
+                <Button size={ButtonSize.Small} width="sizing120">
+                  Small fixed-width button
+                </Button>
+              </Spacer>
+              <Spacer>
+                <Button size={ButtonSize.Medium} width="sizing120">
+                  Medium fixed-width button
+                </Button>
+              </Spacer>
+              <Button size={ButtonSize.Large} width="sizing120">
+                Large fixed-width button
+              </Button>
+            </Border>
+          </Container>
+        </React.Fragment>
+      ),
+      name: 'fixed-width-button',
+      type: 'story',
+    },
+    {
+      component: () => (
+        <React.Fragment>
+          <h2>Button Intent Primary</h2>
           <Grid>
             <Cell xsHidden sm={3}>
               <Stack>
@@ -94,9 +170,65 @@ export default {
                 ))}
               </Stack>
             </Cell>
-            {Object.keys(ButtonStyle).map(style => {
+            {Object.keys(ButtonPrimaryStyles).map(style => {
               const stylePreset =
-                ButtonStyle[style as keyof typeof ButtonStyle];
+                ButtonPrimaryStyles[style as keyof typeof ButtonPrimaryStyles];
+              return (
+                <Cell xs={4} sm={3}>
+                  <Stack
+                    space="sizing020"
+                    stackDistribution={StackDistribution.SpaceEvenly}
+                  >
+                    <h3>{style}</h3>
+                    <Block theme={newskitLightTheme} data-state="Default">
+                      <Button stylePreset={stylePreset}>Button</Button>
+                    </Block>
+
+                    <Block theme={newskitLightTheme} data-state="Focused">
+                      <Button autoFocus stylePreset={stylePreset}>
+                        Button
+                      </Button>
+                    </Block>
+
+                    <Block theme={newskitLightTheme} data-state="Disabled">
+                      <Button disabled stylePreset={stylePreset}>
+                        Button
+                      </Button>
+                    </Block>
+
+                    <Block theme={newskitLightTheme} data-state="Loading">
+                      <Button stylePreset={stylePreset} isLoading>
+                        Button
+                      </Button>
+                    </Block>
+                  </Stack>
+                </Cell>
+              );
+            })}
+          </Grid>
+        </React.Fragment>
+      ),
+      name: 'button-intent-primary',
+      type: 'story',
+    },
+    {
+      component: () => (
+        <React.Fragment>
+          <h2>Button Intent Secondary</h2>
+          <Grid>
+            <Cell xsHidden sm={3}>
+              <Stack>
+                <h3>State</h3>
+                {states.map(state => (
+                  <Label>{state}</Label>
+                ))}
+              </Stack>
+            </Cell>
+            {Object.keys(ButtonSecondaryStyles).map(style => {
+              const stylePreset =
+                ButtonSecondaryStyles[
+                  style as keyof typeof ButtonSecondaryStyles
+                ];
 
               return (
                 <Cell xs={4} sm={3}>
@@ -133,18 +265,131 @@ export default {
           </Grid>
         </React.Fragment>
       ),
-      name: 'button-states',
+      name: 'button-intent-secondary',
       type: 'story',
     },
     {
       component: () => (
         <React.Fragment>
-          <h2>Button with icon placed before text</h2>
+          <h2>Button Intent Negative</h2>
+          <Grid>
+            <Cell xsHidden sm={3}>
+              <Stack>
+                <h3>State</h3>
+                {states.map(state => (
+                  <Label>{state}</Label>
+                ))}
+              </Stack>
+            </Cell>
+            {Object.keys(ButtonNegativeStyles).map(style => {
+              const stylePreset =
+                ButtonNegativeStyles[
+                  style as keyof typeof ButtonNegativeStyles
+                ];
+
+              return (
+                <Cell xs={4} sm={3}>
+                  <Stack
+                    space="sizing020"
+                    stackDistribution={StackDistribution.SpaceEvenly}
+                  >
+                    <h3>{style}</h3>
+                    <Block theme={newskitLightTheme} data-state="Default">
+                      <Button stylePreset={stylePreset}>Button</Button>
+                    </Block>
+
+                    <Block theme={newskitLightTheme} data-state="Focused">
+                      <Button autoFocus stylePreset={stylePreset}>
+                        Button
+                      </Button>
+                    </Block>
+
+                    <Block theme={newskitLightTheme} data-state="Disabled">
+                      <Button disabled stylePreset={stylePreset}>
+                        Button
+                      </Button>
+                    </Block>
+
+                    <Block theme={newskitLightTheme} data-state="Loading">
+                      <Button stylePreset={stylePreset} isLoading>
+                        Button
+                      </Button>
+                    </Block>
+                  </Stack>
+                </Cell>
+              );
+            })}
+          </Grid>
+        </React.Fragment>
+      ),
+      name: 'button-intent-negative',
+      type: 'story',
+    },
+    {
+      component: () => (
+        <React.Fragment>
+          <h2>Button Intent Positive</h2>
+          <Grid>
+            <Cell xsHidden sm={3}>
+              <Stack>
+                <h3>State</h3>
+                {states.map(state => (
+                  <Label>{state}</Label>
+                ))}
+              </Stack>
+            </Cell>
+            {Object.keys(ButtonPositiveStyles).map(style => {
+              const stylePreset =
+                ButtonPositiveStyles[
+                  style as keyof typeof ButtonPositiveStyles
+                ];
+              return (
+                <Cell xs={4} sm={3}>
+                  <Stack
+                    space="sizing020"
+                    stackDistribution={StackDistribution.SpaceEvenly}
+                  >
+                    <h3>{style}</h3>
+                    <Block theme={newskitLightTheme} data-state="Default">
+                      <Button stylePreset={stylePreset}>Button</Button>
+                    </Block>
+
+                    <Block theme={newskitLightTheme} data-state="Focused">
+                      <Button autoFocus stylePreset={stylePreset}>
+                        Button
+                      </Button>
+                    </Block>
+
+                    <Block theme={newskitLightTheme} data-state="Disabled">
+                      <Button disabled stylePreset={stylePreset}>
+                        Button
+                      </Button>
+                    </Block>
+
+                    <Block theme={newskitLightTheme} data-state="Loading">
+                      <Button stylePreset={stylePreset} isLoading>
+                        Button
+                      </Button>
+                    </Block>
+                  </Stack>
+                </Cell>
+              );
+            })}
+          </Grid>
+        </React.Fragment>
+      ),
+      name: 'button-intent-positive',
+      type: 'story',
+    },
+    {
+      component: () => (
+        <React.Fragment>
+          <h2>Button with leading icon</h2>
           <Container>
             {[Pause, Email, CopyLink].map(IconType => (
               <Spacer>
                 <Stack flow="horizontal-center" space="sizing060">
-                  {regularButtonSizes.map(button => (
+                  {buttonSizes.map(button => (
                     <Button size={button.buttonSize}>
                       <IconType size={button.iconSize} />
                       Button
@@ -156,18 +401,18 @@ export default {
           </Container>
         </React.Fragment>
       ),
-      name: 'button-with-icon-placed-before-text',
+      name: 'button-with-leading-icon',
       type: 'story',
     },
     {
       component: () => (
         <React.Fragment>
-          <h2>Button with icon placed after text</h2>
+          <h2>Button with trailing icon</h2>
           <Container>
             {[Pause, Email, CopyLink].map(IconType => (
               <Spacer>
                 <Stack flow="horizontal-center" space="sizing060">
-                  {regularButtonSizes.map(button => (
+                  {buttonSizes.map(button => (
                     <Button size={button.buttonSize}>
                       Button
                       <IconType size={button.iconSize} />
@@ -179,7 +424,7 @@ export default {
           </Container>
         </React.Fragment>
       ),
-      name: 'button-with-icon-placed-after-text',
+      name: 'button-with-trailing-icon',
       type: 'story',
     },
     {

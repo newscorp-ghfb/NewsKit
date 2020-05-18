@@ -2,7 +2,7 @@
 
 exports[`TagList renders as a span with custom margins 1`] = `
 <DocumentFragment>
-  .emotion-15 {
+  .emotion-18 {
   margin: 0;
   padding: 0;
   display: -webkit-inline-box;
@@ -19,6 +19,16 @@ exports[`TagList renders as a span with custom margins 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .emotion-3 {
@@ -40,6 +50,11 @@ exports[`TagList renders as a span with custom margins 1`] = `
   min-height: 32px;
   padding: 8px 12px;
   cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
 }
 
 .emotion-3 svg {
@@ -104,7 +119,7 @@ exports[`TagList renders as a span with custom margins 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-4 {
+.emotion-5 {
   box-sizing: border-box;
   display: inline-block;
   list-style-type: none;
@@ -112,75 +127,87 @@ exports[`TagList renders as a span with custom margins 1`] = `
   margin-bottom: 4px;
 }
 
-.emotion-4:last-child {
+.emotion-5:last-child {
   margin-right: 0;
 }
 
 <ul
-    class="emotion-15"
+    class="emotion-18"
   >
     <li
-      class="emotion-4"
+      class="emotion-5"
     >
       <div
-        class="emotion-3"
-        data-testid="tag"
+        class="emotion-4"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
+          data-testid="tag"
         >
           <div
-            class="emotion-1"
+            class="emotion-2"
           >
-            <span
-              class="emotion-0"
+            <div
+              class="emotion-1"
             >
-              first label
-            </span>
+              <span
+                class="emotion-0"
+              >
+                first label
+              </span>
+            </div>
           </div>
         </div>
       </div>
     </li>
     <li
-      class="emotion-4"
+      class="emotion-5"
     >
       <div
-        class="emotion-3"
-        data-testid="tag"
+        class="emotion-4"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
+          data-testid="tag"
         >
           <div
-            class="emotion-1"
+            class="emotion-2"
           >
-            <span
-              class="emotion-0"
+            <div
+              class="emotion-1"
             >
-              second label
-            </span>
+              <span
+                class="emotion-0"
+              >
+                second label
+              </span>
+            </div>
           </div>
         </div>
       </div>
     </li>
     <li
-      class="emotion-4"
+      class="emotion-5"
     >
       <div
-        class="emotion-3"
-        data-testid="tag"
+        class="emotion-4"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
+          data-testid="tag"
         >
           <div
-            class="emotion-1"
+            class="emotion-2"
           >
-            <span
-              class="emotion-0"
+            <div
+              class="emotion-1"
             >
-              third label
-            </span>
+              <span
+                class="emotion-0"
+              >
+                third label
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -191,7 +218,7 @@ exports[`TagList renders as a span with custom margins 1`] = `
 
 exports[`TagList renders as a span with custom size 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-5 {
   box-sizing: border-box;
   display: inline-block;
   list-style-type: none;
@@ -199,8 +226,18 @@ exports[`TagList renders as a span with custom size 1`] = `
   margin-bottom: 4px;
 }
 
-.emotion-4:last-child {
+.emotion-5:last-child {
   margin-right: 0;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .emotion-2 {
@@ -233,7 +270,7 @@ exports[`TagList renders as a span with custom size 1`] = `
   margin-right: calc(4px/2);
 }
 
-.emotion-15 {
+.emotion-18 {
   margin: 0;
   padding: 0;
   display: -webkit-inline-box;
@@ -271,6 +308,11 @@ exports[`TagList renders as a span with custom size 1`] = `
   min-height: 40px;
   padding: 8px 12px;
   cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
 }
 
 .emotion-3 svg {
@@ -306,70 +348,82 @@ exports[`TagList renders as a span with custom size 1`] = `
 }
 
 <ul
-    class="emotion-15"
+    class="emotion-18"
   >
     <li
-      class="emotion-4"
+      class="emotion-5"
     >
       <div
-        class="emotion-3"
-        data-testid="tag"
+        class="emotion-4"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
+          data-testid="tag"
         >
           <div
-            class="emotion-1"
+            class="emotion-2"
           >
-            <span
-              class="emotion-0"
+            <div
+              class="emotion-1"
             >
-              first label
-            </span>
+              <span
+                class="emotion-0"
+              >
+                first label
+              </span>
+            </div>
           </div>
         </div>
       </div>
     </li>
     <li
-      class="emotion-4"
+      class="emotion-5"
     >
       <div
-        class="emotion-3"
-        data-testid="tag"
+        class="emotion-4"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
+          data-testid="tag"
         >
           <div
-            class="emotion-1"
+            class="emotion-2"
           >
-            <span
-              class="emotion-0"
+            <div
+              class="emotion-1"
             >
-              second label
-            </span>
+              <span
+                class="emotion-0"
+              >
+                second label
+              </span>
+            </div>
           </div>
         </div>
       </div>
     </li>
     <li
-      class="emotion-4"
+      class="emotion-5"
     >
       <div
-        class="emotion-3"
-        data-testid="tag"
+        class="emotion-4"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
+          data-testid="tag"
         >
           <div
-            class="emotion-1"
+            class="emotion-2"
           >
-            <span
-              class="emotion-0"
+            <div
+              class="emotion-1"
             >
-              third label
-            </span>
+              <span
+                class="emotion-0"
+              >
+                third label
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -380,7 +434,7 @@ exports[`TagList renders as a span with custom size 1`] = `
 
 exports[`TagList renders as a span with defaults 1`] = `
 <DocumentFragment>
-  .emotion-15 {
+  .emotion-18 {
   margin: 0;
   padding: 0;
   display: -webkit-inline-box;
@@ -399,7 +453,7 @@ exports[`TagList renders as a span with defaults 1`] = `
   justify-content: center;
 }
 
-.emotion-4 {
+.emotion-5 {
   box-sizing: border-box;
   display: inline-block;
   list-style-type: none;
@@ -407,8 +461,18 @@ exports[`TagList renders as a span with defaults 1`] = `
   margin-bottom: 4px;
 }
 
-.emotion-4:last-child {
+.emotion-5:last-child {
   margin-right: 0;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .emotion-3 {
@@ -430,6 +494,11 @@ exports[`TagList renders as a span with defaults 1`] = `
   min-height: 32px;
   padding: 8px 12px;
   cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
 }
 
 .emotion-3 svg {
@@ -495,70 +564,82 @@ exports[`TagList renders as a span with defaults 1`] = `
 }
 
 <ul
-    class="emotion-15"
+    class="emotion-18"
   >
     <li
-      class="emotion-4"
+      class="emotion-5"
     >
       <div
-        class="emotion-3"
-        data-testid="tag"
+        class="emotion-4"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
+          data-testid="tag"
         >
           <div
-            class="emotion-1"
+            class="emotion-2"
           >
-            <span
-              class="emotion-0"
+            <div
+              class="emotion-1"
             >
-              first label
-            </span>
+              <span
+                class="emotion-0"
+              >
+                first label
+              </span>
+            </div>
           </div>
         </div>
       </div>
     </li>
     <li
-      class="emotion-4"
+      class="emotion-5"
     >
       <div
-        class="emotion-3"
-        data-testid="tag"
+        class="emotion-4"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
+          data-testid="tag"
         >
           <div
-            class="emotion-1"
+            class="emotion-2"
           >
-            <span
-              class="emotion-0"
+            <div
+              class="emotion-1"
             >
-              second label
-            </span>
+              <span
+                class="emotion-0"
+              >
+                second label
+              </span>
+            </div>
           </div>
         </div>
       </div>
     </li>
     <li
-      class="emotion-4"
+      class="emotion-5"
     >
       <div
-        class="emotion-3"
-        data-testid="tag"
+        class="emotion-4"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
+          data-testid="tag"
         >
           <div
-            class="emotion-1"
+            class="emotion-2"
           >
-            <span
-              class="emotion-0"
+            <div
+              class="emotion-1"
             >
-              third label
-            </span>
+              <span
+                class="emotion-0"
+              >
+                third label
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -569,7 +650,7 @@ exports[`TagList renders as a span with defaults 1`] = `
 
 exports[`TagList renders as an anchor with custom margins 1`] = `
 <DocumentFragment>
-  .emotion-15 {
+  .emotion-18 {
   margin: 0;
   padding: 0;
   display: -webkit-inline-box;
@@ -586,6 +667,16 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .emotion-3 {
@@ -607,6 +698,11 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
   min-height: 32px;
   padding: 8px 12px;
   cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
 }
 
 .emotion-3 svg {
@@ -671,7 +767,7 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-4 {
+.emotion-5 {
   box-sizing: border-box;
   display: inline-block;
   list-style-type: none;
@@ -679,81 +775,93 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
   margin-bottom: 4px;
 }
 
-.emotion-4:last-child {
+.emotion-5:last-child {
   margin-right: 0;
 }
 
 <ul
-    class="emotion-15"
+    class="emotion-18"
   >
     <li
-      class="emotion-4"
+      class="emotion-5"
     >
-      <a
-        class="emotion-3"
-        data-testid="tag"
-        href="www.url1.com"
+      <div
+        class="emotion-4"
       >
-        <div
-          class="emotion-2"
+        <a
+          class="emotion-3"
+          data-testid="tag"
+          href="www.url1.com"
         >
           <div
-            class="emotion-1"
+            class="emotion-2"
           >
-            <span
-              class="emotion-0"
+            <div
+              class="emotion-1"
             >
-              first label
-            </span>
+              <span
+                class="emotion-0"
+              >
+                first label
+              </span>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </li>
     <li
-      class="emotion-4"
+      class="emotion-5"
     >
-      <a
-        class="emotion-3"
-        data-testid="tag"
-        href="www.url2.com"
+      <div
+        class="emotion-4"
       >
-        <div
-          class="emotion-2"
+        <a
+          class="emotion-3"
+          data-testid="tag"
+          href="www.url2.com"
         >
           <div
-            class="emotion-1"
+            class="emotion-2"
           >
-            <span
-              class="emotion-0"
+            <div
+              class="emotion-1"
             >
-              second label
-            </span>
+              <span
+                class="emotion-0"
+              >
+                second label
+              </span>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </li>
     <li
-      class="emotion-4"
+      class="emotion-5"
     >
-      <a
-        class="emotion-3"
-        data-testid="tag"
-        href="www.url3.com"
+      <div
+        class="emotion-4"
       >
-        <div
-          class="emotion-2"
+        <a
+          class="emotion-3"
+          data-testid="tag"
+          href="www.url3.com"
         >
           <div
-            class="emotion-1"
+            class="emotion-2"
           >
-            <span
-              class="emotion-0"
+            <div
+              class="emotion-1"
             >
-              third label
-            </span>
+              <span
+                class="emotion-0"
+              >
+                third label
+              </span>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </li>
   </ul>
 </DocumentFragment>
@@ -761,7 +869,7 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
 
 exports[`TagList renders as an anchor with custom size 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-5 {
   box-sizing: border-box;
   display: inline-block;
   list-style-type: none;
@@ -769,8 +877,18 @@ exports[`TagList renders as an anchor with custom size 1`] = `
   margin-bottom: 4px;
 }
 
-.emotion-4:last-child {
+.emotion-5:last-child {
   margin-right: 0;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .emotion-2 {
@@ -803,7 +921,7 @@ exports[`TagList renders as an anchor with custom size 1`] = `
   margin-right: calc(4px/2);
 }
 
-.emotion-15 {
+.emotion-18 {
   margin: 0;
   padding: 0;
   display: -webkit-inline-box;
@@ -841,6 +959,11 @@ exports[`TagList renders as an anchor with custom size 1`] = `
   min-height: 40px;
   padding: 8px 12px;
   cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
 }
 
 .emotion-3 svg {
@@ -876,76 +999,88 @@ exports[`TagList renders as an anchor with custom size 1`] = `
 }
 
 <ul
-    class="emotion-15"
+    class="emotion-18"
   >
     <li
-      class="emotion-4"
+      class="emotion-5"
     >
-      <a
-        class="emotion-3"
-        data-testid="tag"
-        href="www.url1.com"
+      <div
+        class="emotion-4"
       >
-        <div
-          class="emotion-2"
+        <a
+          class="emotion-3"
+          data-testid="tag"
+          href="www.url1.com"
         >
           <div
-            class="emotion-1"
+            class="emotion-2"
           >
-            <span
-              class="emotion-0"
+            <div
+              class="emotion-1"
             >
-              first label
-            </span>
+              <span
+                class="emotion-0"
+              >
+                first label
+              </span>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </li>
     <li
-      class="emotion-4"
+      class="emotion-5"
     >
-      <a
-        class="emotion-3"
-        data-testid="tag"
-        href="www.url2.com"
+      <div
+        class="emotion-4"
       >
-        <div
-          class="emotion-2"
+        <a
+          class="emotion-3"
+          data-testid="tag"
+          href="www.url2.com"
         >
           <div
-            class="emotion-1"
+            class="emotion-2"
           >
-            <span
-              class="emotion-0"
+            <div
+              class="emotion-1"
             >
-              second label
-            </span>
+              <span
+                class="emotion-0"
+              >
+                second label
+              </span>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </li>
     <li
-      class="emotion-4"
+      class="emotion-5"
     >
-      <a
-        class="emotion-3"
-        data-testid="tag"
-        href="www.url3.com"
+      <div
+        class="emotion-4"
       >
-        <div
-          class="emotion-2"
+        <a
+          class="emotion-3"
+          data-testid="tag"
+          href="www.url3.com"
         >
           <div
-            class="emotion-1"
+            class="emotion-2"
           >
-            <span
-              class="emotion-0"
+            <div
+              class="emotion-1"
             >
-              third label
-            </span>
+              <span
+                class="emotion-0"
+              >
+                third label
+              </span>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </li>
   </ul>
 </DocumentFragment>
@@ -953,7 +1088,7 @@ exports[`TagList renders as an anchor with custom size 1`] = `
 
 exports[`TagList renders as an anchor with defaults 1`] = `
 <DocumentFragment>
-  .emotion-15 {
+  .emotion-18 {
   margin: 0;
   padding: 0;
   display: -webkit-inline-box;
@@ -972,7 +1107,7 @@ exports[`TagList renders as an anchor with defaults 1`] = `
   justify-content: center;
 }
 
-.emotion-4 {
+.emotion-5 {
   box-sizing: border-box;
   display: inline-block;
   list-style-type: none;
@@ -980,8 +1115,18 @@ exports[`TagList renders as an anchor with defaults 1`] = `
   margin-bottom: 4px;
 }
 
-.emotion-4:last-child {
+.emotion-5:last-child {
   margin-right: 0;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .emotion-3 {
@@ -1003,6 +1148,11 @@ exports[`TagList renders as an anchor with defaults 1`] = `
   min-height: 32px;
   padding: 8px 12px;
   cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
 }
 
 .emotion-3 svg {
@@ -1068,76 +1218,88 @@ exports[`TagList renders as an anchor with defaults 1`] = `
 }
 
 <ul
-    class="emotion-15"
+    class="emotion-18"
   >
     <li
-      class="emotion-4"
+      class="emotion-5"
     >
-      <a
-        class="emotion-3"
-        data-testid="tag"
-        href="www.url1.com"
+      <div
+        class="emotion-4"
       >
-        <div
-          class="emotion-2"
+        <a
+          class="emotion-3"
+          data-testid="tag"
+          href="www.url1.com"
         >
           <div
-            class="emotion-1"
+            class="emotion-2"
           >
-            <span
-              class="emotion-0"
+            <div
+              class="emotion-1"
             >
-              first label
-            </span>
+              <span
+                class="emotion-0"
+              >
+                first label
+              </span>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </li>
     <li
-      class="emotion-4"
+      class="emotion-5"
     >
-      <a
-        class="emotion-3"
-        data-testid="tag"
-        href="www.url2.com"
+      <div
+        class="emotion-4"
       >
-        <div
-          class="emotion-2"
+        <a
+          class="emotion-3"
+          data-testid="tag"
+          href="www.url2.com"
         >
           <div
-            class="emotion-1"
+            class="emotion-2"
           >
-            <span
-              class="emotion-0"
+            <div
+              class="emotion-1"
             >
-              second label
-            </span>
+              <span
+                class="emotion-0"
+              >
+                second label
+              </span>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </li>
     <li
-      class="emotion-4"
+      class="emotion-5"
     >
-      <a
-        class="emotion-3"
-        data-testid="tag"
-        href="www.url3.com"
+      <div
+        class="emotion-4"
       >
-        <div
-          class="emotion-2"
+        <a
+          class="emotion-3"
+          data-testid="tag"
+          href="www.url3.com"
         >
           <div
-            class="emotion-1"
+            class="emotion-2"
           >
-            <span
-              class="emotion-0"
+            <div
+              class="emotion-1"
             >
-              third label
-            </span>
+              <span
+                class="emotion-0"
+              >
+                third label
+              </span>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </li>
   </ul>
 </DocumentFragment>

@@ -1,72 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BaseButton renders with fallback formatting 1`] = `
-<DocumentFragment>
-  .emotion-1 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  box-sizing: border-box;
-  margin: 8px 0;
-}
-
-.emotion-1:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-1::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-.emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-<button
-    class="emotion-1"
-    type="button"
-  >
-    <div
-      class="emotion-0"
-    />
-  </button>
-</DocumentFragment>
-`;
-
 exports[`Button IconButton renders Icon Button in loading State 1`] = `
 <DocumentFragment>
   .emotion-9 {
@@ -116,54 +49,6 @@ exports[`Button IconButton renders Icon Button in loading State 1`] = `
   transform-origin: center;
 }
 
-.emotion-10 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: disabled;
-  box-sizing: border-box;
-  background-color: #d5ebff;
-  border-radius: 50%;
-  color: #FFFFFF;
-  min-height: 16px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 16px;
-  width: 64px;
-  height: 64px;
-}
-
-.emotion-10:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-10 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-10 svg {
-  width: 32px;
-  height: 32px;
-}
-
 .emotion-7 {
   height: 32px;
   width: 32px;
@@ -203,10 +88,10 @@ exports[`Button IconButton renders Icon Button in loading State 1`] = `
   box-sizing: border-box;
   height: 32px;
   width: 32px;
-  border-color: #0A68C1;
   border-style: solid;
   border-width: 2px;
   border-radius: 20rem;
+  border-color: #0A68C1;
   border-radius: 50%;
 }
 
@@ -244,50 +129,114 @@ exports[`Button IconButton renders Icon Button in loading State 1`] = `
   animation: right-wobble 1.4s linear infinite;
 }
 
-<button
-    class="emotion-10"
-    type="button"
+.emotion-11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 64px;
+  height: 64px;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 16px;
+  width: 64px;
+  height: 64px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #d5ebff;
+  border-radius: 50%;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: progress;
+}
+
+.emotion-10 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-10 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+<div
+    class="emotion-11"
   >
-    <div
-      class="emotion-9"
+    <button
+      class="emotion-10"
+      data-testid="button"
+      type="button"
     >
       <div
-        class="emotion-8"
+        class="emotion-9"
       >
         <div
-          aria-label="loading"
-          class="emotion-7"
+          class="emotion-8"
         >
           <div
-            class="emotion-6"
+            aria-label="loading"
+            class="emotion-7"
           >
             <div
-              class="emotion-2"
+              class="emotion-6"
             >
               <div
-                class="emotion-1"
+                class="emotion-2"
               >
                 <div
-                  class="emotion-0"
-                />
+                  class="emotion-1"
+                >
+                  <div
+                    class="emotion-0"
+                  />
+                </div>
               </div>
-            </div>
-            <div
-              class="emotion-5"
-            >
               <div
-                class="emotion-4"
+                class="emotion-5"
               >
                 <div
-                  class="emotion-0"
-                />
+                  class="emotion-4"
+                >
+                  <div
+                    class="emotion-0"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </button>
+    </button>
+  </div>
 </DocumentFragment>
 `;
 
@@ -323,15 +272,52 @@ exports[`Button IconButton renders Icon Button with fallback formatting 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-3 {
+.emotion-0 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
   display: inline-block;
-  position: relative;
-  width: auto;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  cursor: default;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 50%;
+  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -339,27 +325,11 @@ exports[`Button IconButton renders Icon Button with fallback formatting 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  border-radius: 50%;
-  color: #FFFFFF;
-  min-height: 8px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 8px;
-  width: 32px;
-  height: 32px;
-  margin: 8px 0;
 }
 
-.emotion-3:disabled {
-  cursor: not-allowed;
+.emotion-3 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-3 svg {
@@ -386,53 +356,38 @@ exports[`Button IconButton renders Icon Button with fallback formatting 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-3::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-.emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  display: inline-block;
-}
-
-<button
-    class="emotion-3"
-    type="button"
+<div
+    class="emotion-4"
   >
-    <div
-      class="emotion-2"
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
     >
       <div
-        class="emotion-1"
+        class="emotion-2"
       >
-        <svg
-          aria-labelledby="mock-bui-1"
-          class="emotion-0"
-          viewBox="0 0 24 24"
+        <div
+          class="emotion-1"
         >
-          <title
-            id="mock-bui-1"
+          <svg
+            aria-labelledby="mock-bui-1"
+            class="emotion-0"
+            viewBox="0 0 24 24"
           >
-            Email icon
-          </title>
-          <path
-            d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
-          />
-        </svg>
+            <title
+              id="mock-bui-1"
+            >
+              Email icon
+            </title>
+            <path
+              d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+            />
+          </svg>
+        </div>
       </div>
-    </div>
-  </button>
+    </button>
+  </div>
 </DocumentFragment>
 `;
 
@@ -474,15 +429,46 @@ exports[`Button IconButton renders Large Icon Button 1`] = `
   display: inline-block;
 }
 
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 64px;
+  height: 64px;
+}
+
 .emotion-3 {
-  display: inline-block;
-  position: relative;
-  width: auto;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 16px;
+  width: 64px;
+  height: 64px;
+  cursor: default;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 50%;
+  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -490,26 +476,11 @@ exports[`Button IconButton renders Large Icon Button 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  border-radius: 50%;
-  color: #FFFFFF;
-  min-height: 16px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 16px;
-  width: 64px;
-  height: 64px;
 }
 
-.emotion-3:disabled {
-  cursor: not-allowed;
+.emotion-3 svg {
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-3 svg {
@@ -536,38 +507,38 @@ exports[`Button IconButton renders Large Icon Button 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-3 svg {
-  width: 32px;
-  height: 32px;
-}
-
-<button
-    class="emotion-3"
-    type="button"
+<div
+    class="emotion-4"
   >
-    <div
-      class="emotion-2"
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
     >
       <div
-        class="emotion-1"
+        class="emotion-2"
       >
-        <svg
-          aria-labelledby="mock-bui-1"
-          class="emotion-0"
-          viewBox="0 0 24 24"
+        <div
+          class="emotion-1"
         >
-          <title
-            id="mock-bui-1"
+          <svg
+            aria-labelledby="mock-bui-1"
+            class="emotion-0"
+            viewBox="0 0 24 24"
           >
-            Email icon
-          </title>
-          <path
-            d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
-          />
-        </svg>
+            <title
+              id="mock-bui-1"
+            >
+              Email icon
+            </title>
+            <path
+              d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+            />
+          </svg>
+        </div>
       </div>
-    </div>
-  </button>
+    </button>
+  </div>
 </DocumentFragment>
 `;
 
@@ -609,15 +580,46 @@ exports[`Button IconButton renders Medium Icon Button 1`] = `
   display: inline-block;
 }
 
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 48px;
+  height: 48px;
+}
+
 .emotion-3 {
-  display: inline-block;
-  position: relative;
-  width: auto;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  cursor: default;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 50%;
+  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -625,26 +627,11 @@ exports[`Button IconButton renders Medium Icon Button 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  border-radius: 50%;
-  color: #FFFFFF;
-  min-height: 12px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 12px;
-  width: 48px;
-  height: 48px;
 }
 
-.emotion-3:disabled {
-  cursor: not-allowed;
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-3 svg {
@@ -671,38 +658,38 @@ exports[`Button IconButton renders Medium Icon Button 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-3 svg {
-  width: 24px;
-  height: 24px;
-}
-
-<button
-    class="emotion-3"
-    type="button"
+<div
+    class="emotion-4"
   >
-    <div
-      class="emotion-2"
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
     >
       <div
-        class="emotion-1"
+        class="emotion-2"
       >
-        <svg
-          aria-labelledby="mock-bui-1"
-          class="emotion-0"
-          viewBox="0 0 24 24"
+        <div
+          class="emotion-1"
         >
-          <title
-            id="mock-bui-1"
+          <svg
+            aria-labelledby="mock-bui-1"
+            class="emotion-0"
+            viewBox="0 0 24 24"
           >
-            Email icon
-          </title>
-          <path
-            d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
-          />
-        </svg>
+            <title
+              id="mock-bui-1"
+            >
+              Email icon
+            </title>
+            <path
+              d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+            />
+          </svg>
+        </div>
       </div>
-    </div>
-  </button>
+    </button>
+  </div>
 </DocumentFragment>
 `;
 
@@ -738,15 +725,52 @@ exports[`Button IconButton renders Small Icon Button 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-3 {
+.emotion-0 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
   display: inline-block;
-  position: relative;
-  width: auto;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  cursor: default;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 50%;
+  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -754,27 +778,11 @@ exports[`Button IconButton renders Small Icon Button 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  border-radius: 50%;
-  color: #FFFFFF;
-  min-height: 8px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 8px;
-  width: 32px;
-  height: 32px;
-  margin: 8px 0;
 }
 
-.emotion-3:disabled {
-  cursor: not-allowed;
+.emotion-3 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .emotion-3 svg {
@@ -801,59 +809,44 @@ exports[`Button IconButton renders Small Icon Button 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-3::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-.emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  display: inline-block;
-}
-
-<button
-    class="emotion-3"
-    type="button"
+<div
+    class="emotion-4"
   >
-    <div
-      class="emotion-2"
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
     >
       <div
-        class="emotion-1"
+        class="emotion-2"
       >
-        <svg
-          aria-labelledby="mock-bui-1"
-          class="emotion-0"
-          viewBox="0 0 24 24"
+        <div
+          class="emotion-1"
         >
-          <title
-            id="mock-bui-1"
+          <svg
+            aria-labelledby="mock-bui-1"
+            class="emotion-0"
+            viewBox="0 0 24 24"
           >
-            Email icon
-          </title>
-          <path
-            d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
-          />
-        </svg>
+            <title
+              id="mock-bui-1"
+            >
+              Email icon
+            </title>
+            <path
+              d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+            />
+          </svg>
+        </div>
       </div>
-    </div>
-  </button>
+    </button>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Button IconButton renders when there is an icon with a colour 1`] = `
 <DocumentFragment>
-  .emotion-3 {
+  .emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -881,83 +874,6 @@ exports[`Button IconButton renders when there is an icon with a colour 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
-}
-
-.emotion-4 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  border-radius: 50%;
-  color: #FFFFFF;
-  min-height: 8px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 8px;
-  width: 32px;
-  height: 32px;
-  margin: 8px 0;
-}
-
-.emotion-4:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-4 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-4:hover:not(:disabled) {
-  background-color: #02509B;
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
-}
-
-.emotion-4:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-4:disabled {
-  background-color: #e4e4e4;
-  color: #9c9c9c;
-}
-
-.emotion-4:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-4 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-4::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
 }
 
 .emotion-0 {
@@ -966,527 +882,46 @@ exports[`Button IconButton renders when there is an icon with a colour 1`] = `
   display: inline-block;
 }
 
-<button
-    class="emotion-4"
-    type="button"
-  >
-    <div
-      class="emotion-3"
-    >
-      <div
-        class="emotion-1"
-      >
-        <svg
-          aria-labelledby="mock-bui-1"
-          class="emotion-0"
-          viewBox="0 0 24 24"
-        >
-          <title
-            id="mock-bui-1"
-          >
-            Email icon
-          </title>
-          <path
-            d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
-          />
-        </svg>
-      </div>
-      <div
-        class="emotion-1"
-      >
-        click this!
-      </div>
-    </div>
-  </button>
-</DocumentFragment>
-`;
-
-exports[`Button Loading Button renders Large Button 1`] = `
-<DocumentFragment>
-  .emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-8 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 32px;
+  height: 32px;
 }
 
-.emotion-6 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
-  animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
-  -webkit-transform-origin: center;
-  -ms-transform-origin: center;
-  transform-origin: center;
-}
-
-.emotion-10 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: disabled;
+.emotion-3 {
   box-sizing: border-box;
-  background-color: #d5ebff;
-  color: #FFFFFF;
-  border-radius: 8px;
-  min-height: 12px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 12px 16px;
-}
-
-.emotion-10:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-10 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-10 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-7 {
-  height: 24px;
-  width: 24px;
-  position: relative;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  width: calc( 24px / 2 );
-  height: 24px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  overflow: hidden;
-  position: absolute;
-}
-
-.emotion-1 {
-  width: calc( 24px / 2 );
-  height: 24px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  overflow: hidden;
-  will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: left-wobble 1.4s linear infinite;
-  animation: left-wobble 1.4s linear infinite;
-}
-
-.emotion-0 {
-  box-sizing: border-box;
-  height: 24px;
-  width: 24px;
-  border-color: #0A68C1;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 20rem;
-  border-radius: 50%;
-}
-
-.emotion-5 {
-  box-sizing: border-box;
-  width: calc( 24px / 2 );
-  height: 24px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  overflow: hidden;
-  position: absolute;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
-.emotion-4 {
-  width: calc( 24px / 2 );
-  height: 24px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  overflow: hidden;
-  will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: left-wobble 1.4s linear infinite;
-  animation: left-wobble 1.4s linear infinite;
-  -webkit-animation: right-wobble 1.4s linear infinite;
-  animation: right-wobble 1.4s linear infinite;
-}
-
-<button
-    class="emotion-10"
-    type="button"
-  >
-    <div
-      class="emotion-9"
-    >
-      <div
-        class="emotion-8"
-      >
-        <div
-          aria-label="loading"
-          class="emotion-7"
-        >
-          <div
-            class="emotion-6"
-          >
-            <div
-              class="emotion-2"
-            >
-              <div
-                class="emotion-1"
-              >
-                <div
-                  class="emotion-0"
-                />
-              </div>
-            </div>
-            <div
-              class="emotion-5"
-            >
-              <div
-                class="emotion-4"
-              >
-                <div
-                  class="emotion-0"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </button>
-</DocumentFragment>
-`;
-
-exports[`Button Loading Button renders Small Button 1`] = `
-<DocumentFragment>
-  .emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-10 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: disabled;
-  box-sizing: border-box;
-  background-color: #d5ebff;
-  color: #FFFFFF;
-  border-radius: 8px;
-  min-height: 8px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 8px 12px;
-  margin: 8px 0;
-}
-
-.emotion-10:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-10 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-10 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-10::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-.emotion-7 {
-  height: 16px;
-  width: 16px;
-  position: relative;
-}
-
-.emotion-6 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
-  animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
-  -webkit-transform-origin: center;
-  -ms-transform-origin: center;
-  transform-origin: center;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  width: calc( 16px / 2 );
-  height: 16px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  overflow: hidden;
-  position: absolute;
-}
-
-.emotion-1 {
-  width: calc( 16px / 2 );
-  height: 16px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  overflow: hidden;
-  will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: left-wobble 1.4s linear infinite;
-  animation: left-wobble 1.4s linear infinite;
-}
-
-.emotion-0 {
-  box-sizing: border-box;
-  height: 16px;
-  width: 16px;
-  border-color: #0A68C1;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 20rem;
-  border-radius: 50%;
-}
-
-.emotion-5 {
-  box-sizing: border-box;
-  width: calc( 16px / 2 );
-  height: 16px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  overflow: hidden;
-  position: absolute;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
-.emotion-4 {
-  width: calc( 16px / 2 );
-  height: 16px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  overflow: hidden;
-  will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: left-wobble 1.4s linear infinite;
-  animation: left-wobble 1.4s linear infinite;
-  -webkit-animation: right-wobble 1.4s linear infinite;
-  animation: right-wobble 1.4s linear infinite;
-}
-
-<button
-    class="emotion-10"
-    type="button"
-  >
-    <div
-      class="emotion-9"
-    >
-      <div
-        class="emotion-8"
-      >
-        <div
-          aria-label="loading"
-          class="emotion-7"
-        >
-          <div
-            class="emotion-6"
-          >
-            <div
-              class="emotion-2"
-            >
-              <div
-                class="emotion-1"
-              >
-                <div
-                  class="emotion-0"
-                />
-              </div>
-            </div>
-            <div
-              class="emotion-5"
-            >
-              <div
-                class="emotion-4"
-              >
-                <div
-                  class="emotion-0"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </button>
-</DocumentFragment>
-`;
-
-exports[`Button renders Large Button 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-1 {
-  display: inline-block;
-  position: relative;
-  width: auto;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  cursor: default;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 50%;
+  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1494,68 +929,721 @@ exports[`Button renders Large Button 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
+}
+
+.emotion-3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
   color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-4"
+  >
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <svg
+            aria-labelledby="mock-bui-1"
+            class="emotion-0"
+            viewBox="0 0 24 24"
+          >
+            <title
+              id="mock-bui-1"
+            >
+              Email icon
+            </title>
+            <path
+              d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button Loading Button renders Large Button 1`] = `
+<DocumentFragment>
+  .emotion-11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
+  animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 64px;
+  min-width: 120px;
+  padding: 16px 24px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #d5ebff;
   border-radius: 8px;
-  min-height: 12px;
+  color: #0A68C1;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: progress;
+}
+
+.emotion-10 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-10 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-7 {
+  height: 32px;
+  width: 32px;
+  position: relative;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  width: calc( 32px / 2 );
+  height: 32px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  overflow: hidden;
+  position: absolute;
+}
+
+.emotion-1 {
+  width: calc( 32px / 2 );
+  height: 32px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: left-wobble 1.4s linear infinite;
+  animation: left-wobble 1.4s linear infinite;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  height: 32px;
+  width: 32px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 20rem;
+  border-color: #0A68C1;
+  border-radius: 50%;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  width: calc( 32px / 2 );
+  height: 32px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  overflow: hidden;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.emotion-4 {
+  width: calc( 32px / 2 );
+  height: 32px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: left-wobble 1.4s linear infinite;
+  animation: left-wobble 1.4s linear infinite;
+  -webkit-animation: right-wobble 1.4s linear infinite;
+  animation: right-wobble 1.4s linear infinite;
+}
+
+<div
+    class="emotion-11"
+  >
+    <button
+      class="emotion-10"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-9"
+      >
+        <div
+          class="emotion-8"
+        >
+          <div
+            aria-label="loading"
+            class="emotion-7"
+          >
+            <div
+              class="emotion-6"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <div
+                    class="emotion-0"
+                  />
+                </div>
+              </div>
+              <div
+                class="emotion-5"
+              >
+                <div
+                  class="emotion-4"
+                >
+                  <div
+                    class="emotion-0"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button Loading Button renders Small Button 1`] = `
+<DocumentFragment>
+  .emotion-11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 64px;
+  padding: 8px 12px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #d5ebff;
+  border-radius: 8px;
+  color: #0A68C1;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: progress;
+}
+
+.emotion-10 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-10 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-7 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+}
+
+.emotion-6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
+  animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  width: calc( 16px / 2 );
+  height: 16px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  overflow: hidden;
+  position: absolute;
+}
+
+.emotion-1 {
+  width: calc( 16px / 2 );
+  height: 16px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: left-wobble 1.4s linear infinite;
+  animation: left-wobble 1.4s linear infinite;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  height: 16px;
+  width: 16px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 20rem;
+  border-color: #0A68C1;
+  border-radius: 50%;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  width: calc( 16px / 2 );
+  height: 16px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  overflow: hidden;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.emotion-4 {
+  width: calc( 16px / 2 );
+  height: 16px;
+  -webkit-transform-origin: 100% center;
+  -ms-transform-origin: 100% center;
+  transform-origin: 100% center;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: left-wobble 1.4s linear infinite;
+  animation: left-wobble 1.4s linear infinite;
+  -webkit-animation: right-wobble 1.4s linear infinite;
+  animation: right-wobble 1.4s linear infinite;
+}
+
+<div
+    class="emotion-11"
+  >
+    <button
+      class="emotion-10"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-9"
+      >
+        <div
+          class="emotion-8"
+        >
+          <div
+            aria-label="loading"
+            class="emotion-7"
+          >
+            <div
+              class="emotion-6"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <div
+                    class="emotion-0"
+                  />
+                </div>
+              </div>
+              <div
+                class="emotion-5"
+              >
+                <div
+                  class="emotion-4"
+                >
+                  <div
+                    class="emotion-0"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button renders Large Button 1`] = `
+<DocumentFragment>
+  .emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 64px;
+  min-width: 120px;
+  padding: 16px 24px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-0 {
   font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 12px 16px;
 }
 
-.emotion-1:disabled {
-  cursor: not-allowed;
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
 }
 
-.emotion-1 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
 }
 
-.emotion-1:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-1:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-1:disabled {
-  background-color: #e4e4e4;
-  color: #9c9c9c;
-}
-
-.emotion-1:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-1 svg {
-  width: 24px;
-  height: 24px;
-}
-
-<button
-    class="emotion-1"
-    type="button"
+<div
+    class="emotion-4"
   >
-    <div
-      class="emotion-0"
-    />
-  </button>
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Button renders Small Button 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1580,188 +1668,6 @@ exports[`Button renders Small Button 1`] = `
 }
 
 .emotion-1 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 8px;
-  min-height: 8px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 8px 12px;
-  margin: 8px 0;
-}
-
-.emotion-1:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-1 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-1:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-1:disabled {
-  background-color: #e4e4e4;
-  color: #9c9c9c;
-}
-
-.emotion-1:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-1 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-1::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-<button
-    class="emotion-1"
-    type="button"
-  >
-    <div
-      class="emotion-0"
-    />
-  </button>
-</DocumentFragment>
-`;
-
-exports[`Button renders when there is no icon 1`] = `
-<DocumentFragment>
-  .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 8px;
-  min-height: 8px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 8px 12px;
-  margin: 8px 0;
-}
-
-.emotion-2:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-2 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-2:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-2:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-2:disabled {
-  background-color: #e4e4e4;
-  color: #9c9c9c;
-}
-
-.emotion-2:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-2 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-2::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-.emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1770,26 +1676,321 @@ exports[`Button renders when there is no icon 1`] = `
   margin-right: calc(8px/2);
 }
 
-<button
-    class="emotion-2"
-    type="button"
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 64px;
+  padding: 8px 12px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.4833333333333334em + 1px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc(-0.5458333333333334em + -0.5px);
+}
+
+<div
+    class="emotion-4"
   >
-    <div
-      class="emotion-1"
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
     >
       <div
-        class="emotion-0"
+        class="emotion-2"
       >
-        click this!
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            click this!
+          </span>
+        </div>
       </div>
-    </div>
-  </button>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button renders text and icon button with fallback formatting 1`] = `
+<DocumentFragment>
+  .emotion-6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-5 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-5 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-5:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-5:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-5:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-5:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-2 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  display: inline-block;
+}
+
+<div
+    class="emotion-6"
+  >
+    <button
+      class="emotion-5"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            click this!
+          </span>
+        </div>
+        <div
+          class="emotion-1"
+        >
+          <svg
+            aria-labelledby="mock-bui-1"
+            class="emotion-2"
+            viewBox="0 0 24 24"
+          >
+            <title
+              id="mock-bui-1"
+            >
+              Email icon
+            </title>
+            <path
+              d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Button renders with different style preset 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1811,89 +2012,215 @@ exports[`Button renders with different style preset 1`] = `
 }
 
 .emotion-1 {
-  display: inline-block;
-  position: relative;
-  width: auto;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  box-sizing: border-box;
+  background-color: transparent;
   border-style: solid;
   border-color: #0A68C1;
   border-width: 1px;
   border-radius: 8px;
   color: #0A68C1;
-  background-color: transparent;
-  min-height: 8px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 8px 12px;
-  margin: 8px 0;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
 }
 
-.emotion-1:disabled {
-  cursor: not-allowed;
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
 }
 
-.emotion-1 svg {
+.emotion-3 svg {
   fill: #0A68C1;
   color: #0A68C1;
 }
 
-.emotion-1:disabled {
-  border-color: #e4e4e4;
-  color: #9c9c9c;
-  background-color: transparent;
+.emotion-3:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  border-color: #02509B;
 }
 
-.emotion-1:disabled svg {
+.emotion-3:active:not(:disabled) {
+  background-color: #d5ebff;
+  border-color: #01396E;
+}
+
+.emotion-3:disabled {
+  border-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-1 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-1::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-<button
-    class="emotion-1"
-    type="button"
+<div
+    class="emotion-4"
   >
-    <div
-      class="emotion-0"
-    />
-  </button>
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Button renders with fallback formatting 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1915,86 +2242,63 @@ exports[`Button renders with fallback formatting 1`] = `
 }
 
 .emotion-1 {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 8px;
-  min-height: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
   font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  padding: 8px 12px;
-  margin: 8px 0;
 }
 
-.emotion-1:disabled {
-  cursor: not-allowed;
-}
-
-.emotion-1 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-1:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-1:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-1:disabled {
-  background-color: #e4e4e4;
-  color: #9c9c9c;
-}
-
-.emotion-1:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-1 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-1::before {
+.emotion-0::before {
   content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-<button
-    class="emotion-1"
-    type="button"
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-4"
   >
-    <div
-      class="emotion-0"
-    />
-  </button>
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
 </DocumentFragment>
 `;

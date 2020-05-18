@@ -2,7 +2,17 @@
 
 exports[`Flag renders a flag with a custom stylePreset 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -78,6 +88,11 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
   min-height: 24px;
   padding: 4px 8px;
   cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
   background-color: transparent;
   color: #471e79;
 }
@@ -93,20 +108,24 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
 }
 
 <div
-    class="emotion-3"
-    data-testid="flag"
+    class="emotion-4"
   >
     <div
-      class="emotion-2"
+      class="emotion-3"
+      data-testid="flag"
     >
       <div
-        class="emotion-1"
+        class="emotion-2"
       >
-        <span
-          class="emotion-0"
+        <div
+          class="emotion-1"
         >
-          Text
-        </span>
+          <span
+            class="emotion-0"
+          >
+            Text
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -115,7 +134,17 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
 
 exports[`Flag renders a flag with no paddings 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -191,6 +220,11 @@ exports[`Flag renders a flag with no paddings 1`] = `
   min-height: 24px;
   padding: 0;
   cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
   background-color: transparent;
   color: #471e79;
 }
@@ -206,20 +240,24 @@ exports[`Flag renders a flag with no paddings 1`] = `
 }
 
 <div
-    class="emotion-3"
-    data-testid="flag"
+    class="emotion-4"
   >
     <div
-      class="emotion-2"
+      class="emotion-3"
+      data-testid="flag"
     >
       <div
-        class="emotion-1"
+        class="emotion-2"
       >
-        <span
-          class="emotion-0"
+        <div
+          class="emotion-1"
         >
-          Text
-        </span>
+          <span
+            class="emotion-0"
+          >
+            Text
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -228,7 +266,17 @@ exports[`Flag renders a flag with no paddings 1`] = `
 
 exports[`Flag renders a minimal flag with an icon 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -304,6 +352,11 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
   min-height: 24px;
   padding: 0;
   cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
   background-color: transparent;
   color: #471e79;
 }
@@ -327,38 +380,42 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
 }
 
 <div
-    class="emotion-5"
-    data-testid="flag"
+    class="emotion-6"
   >
     <div
-      class="emotion-4"
+      class="emotion-5"
+      data-testid="flag"
     >
       <div
-        class="emotion-1"
+        class="emotion-4"
       >
-        <svg
-          aria-labelledby="mock-bui-1"
-          class="emotion-0"
-          viewBox="0 0 24 24"
+        <div
+          class="emotion-1"
         >
-          <title
-            id="mock-bui-1"
+          <svg
+            aria-labelledby="mock-bui-1"
+            class="emotion-0"
+            viewBox="0 0 24 24"
           >
-            Email icon
-          </title>
-          <path
-            d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
-          />
-        </svg>
-      </div>
-      <div
-        class="emotion-1"
-      >
-        <span
-          class="emotion-2"
+            <title
+              id="mock-bui-1"
+            >
+              Email icon
+            </title>
+            <path
+              d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+            />
+          </svg>
+        </div>
+        <div
+          class="emotion-1"
         >
-          Text
-        </span>
+          <span
+            class="emotion-2"
+          >
+            Text
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -367,7 +424,17 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
 
 exports[`Flag renders a solid flag with an icon 1`] = `
 <DocumentFragment>
-  .emotion-5 {
+  .emotion-6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-5 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -386,6 +453,11 @@ exports[`Flag renders a solid flag with an icon 1`] = `
   min-height: 24px;
   padding: 4px 8px;
   cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
   background-color: #471e79;
   color: #FFFFFF;
 }
@@ -466,38 +538,42 @@ exports[`Flag renders a solid flag with an icon 1`] = `
 }
 
 <div
-    class="emotion-5"
-    data-testid="flag"
+    class="emotion-6"
   >
     <div
-      class="emotion-4"
+      class="emotion-5"
+      data-testid="flag"
     >
       <div
-        class="emotion-1"
+        class="emotion-4"
       >
-        <svg
-          aria-labelledby="mock-bui-1"
-          class="emotion-0"
-          viewBox="0 0 24 24"
+        <div
+          class="emotion-1"
         >
-          <title
-            id="mock-bui-1"
+          <svg
+            aria-labelledby="mock-bui-1"
+            class="emotion-0"
+            viewBox="0 0 24 24"
           >
-            Email icon
-          </title>
-          <path
-            d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
-          />
-        </svg>
-      </div>
-      <div
-        class="emotion-1"
-      >
-        <span
-          class="emotion-2"
+            <title
+              id="mock-bui-1"
+            >
+              Email icon
+            </title>
+            <path
+              d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+            />
+          </svg>
+        </div>
+        <div
+          class="emotion-1"
         >
-          Text
-        </span>
+          <span
+            class="emotion-2"
+          >
+            Text
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -506,7 +582,17 @@ exports[`Flag renders a solid flag with an icon 1`] = `
 
 exports[`Flag renders with Large size 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -555,6 +641,11 @@ exports[`Flag renders with Large size 1`] = `
   min-height: 32px;
   padding: 8px 12px;
   cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
   background-color: #471e79;
   color: #FFFFFF;
 }
@@ -597,20 +688,24 @@ exports[`Flag renders with Large size 1`] = `
 }
 
 <div
-    class="emotion-3"
-    data-testid="flag"
+    class="emotion-4"
   >
     <div
-      class="emotion-2"
+      class="emotion-3"
+      data-testid="flag"
     >
       <div
-        class="emotion-1"
+        class="emotion-2"
       >
-        <span
-          class="emotion-0"
+        <div
+          class="emotion-1"
         >
-          Text
-        </span>
+          <span
+            class="emotion-0"
+          >
+            Text
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -619,7 +714,17 @@ exports[`Flag renders with Large size 1`] = `
 
 exports[`Flag renders with Small size 1`] = `
 <DocumentFragment>
-  .emotion-3 {
+  .emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -638,6 +743,11 @@ exports[`Flag renders with Small size 1`] = `
   min-height: 24px;
   padding: 4px 8px;
   cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
   background-color: #471e79;
   color: #FFFFFF;
 }
@@ -710,20 +820,24 @@ exports[`Flag renders with Small size 1`] = `
 }
 
 <div
-    class="emotion-3"
-    data-testid="flag"
+    class="emotion-4"
   >
     <div
-      class="emotion-2"
+      class="emotion-3"
+      data-testid="flag"
     >
       <div
-        class="emotion-1"
+        class="emotion-2"
       >
-        <span
-          class="emotion-0"
+        <div
+          class="emotion-1"
         >
-          Text
-        </span>
+          <span
+            class="emotion-0"
+          >
+            Text
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -732,7 +846,17 @@ exports[`Flag renders with Small size 1`] = `
 
 exports[`Flag renders with default styles 1`] = `
 <DocumentFragment>
-  .emotion-3 {
+  .emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -751,6 +875,11 @@ exports[`Flag renders with default styles 1`] = `
   min-height: 24px;
   padding: 4px 8px;
   cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
   background-color: #471e79;
   color: #FFFFFF;
 }
@@ -823,20 +952,24 @@ exports[`Flag renders with default styles 1`] = `
 }
 
 <div
-    class="emotion-3"
-    data-testid="flag"
+    class="emotion-4"
   >
     <div
-      class="emotion-2"
+      class="emotion-3"
+      data-testid="flag"
     >
       <div
-        class="emotion-1"
+        class="emotion-2"
       >
-        <span
-          class="emotion-0"
+        <div
+          class="emotion-1"
         >
-          Text
-        </span>
+          <span
+            class="emotion-0"
+          >
+            Text
+          </span>
+        </div>
       </div>
     </div>
   </div>

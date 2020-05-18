@@ -846,7 +846,7 @@ exports[`ShareBar renders vertically with twitter and facebook icons 1`] = `
 
 exports[`ShareBar renders whatever components are passed to it 1`] = `
 <DocumentFragment>
-  .emotion-12 {
+  .emotion-14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -866,7 +866,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   color: #2e2e2e;
 }
 
-.emotion-11 {
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -961,15 +961,44 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   color: #903D91;
 }
 
-.emotion-9 {
-  display: inline-block;
-  position: relative;
-  width: auto;
+.emotion-11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -977,65 +1006,37 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 8px;
-  min-height: 8px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 8px 12px;
-  margin: 8px 0;
 }
 
-.emotion-9:disabled {
-  cursor: not-allowed;
+.emotion-10 svg {
+  width: 24px;
+  height: 24px;
 }
 
-.emotion-9 svg {
+.emotion-10 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-9:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-9:disabled {
+.emotion-10:disabled {
   background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
-.emotion-9:disabled svg {
+.emotion-10:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-9 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-9::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-.emotion-8 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1056,8 +1057,35 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   margin-right: calc(-8px/2);
 }
 
+.emotion-7 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 <div
-    class="emotion-12"
+    class="emotion-14"
     orientation="horizontal"
   >
     <span
@@ -1067,7 +1095,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
       Share
     </span>
     <div
-      class="emotion-11"
+      class="emotion-13"
     >
       <div
         class="emotion-3"
@@ -1147,20 +1175,29 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
       <div
         class="emotion-3"
       >
-        <button
-          class="emotion-9"
-          type="button"
+        <div
+          class="emotion-11"
         >
-          <div
-            class="emotion-8"
+          <button
+            class="emotion-10"
+            data-testid="button"
+            type="button"
           >
             <div
-              class="emotion-3"
+              class="emotion-9"
             >
-              more options
+              <div
+                class="emotion-3"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  more options
+                </span>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -1169,7 +1206,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 
 exports[`ShareBar renders with custom label stylePreset 1`] = `
 <DocumentFragment>
-  .emotion-11 {
+  .emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1235,15 +1272,44 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   color: #903D91;
 }
 
-.emotion-9 {
-  display: inline-block;
-  position: relative;
-  width: auto;
+.emotion-11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1251,65 +1317,37 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 8px;
-  min-height: 8px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 8px 12px;
-  margin: 8px 0;
 }
 
-.emotion-9:disabled {
-  cursor: not-allowed;
+.emotion-10 svg {
+  width: 24px;
+  height: 24px;
 }
 
-.emotion-9 svg {
+.emotion-10 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-9:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-9:disabled {
+.emotion-10:disabled {
   background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
-.emotion-9:disabled svg {
+.emotion-10:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-9 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-9::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-.emotion-8 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1330,7 +1368,34 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-12 {
+.emotion-7 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1348,29 +1413,29 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   -ms-flex-pack: start;
   justify-content: flex-start;
   background-color: #0A68C1;
-  color: #FFFFFF;
   border-radius: 8px;
+  color: #FFFFFF;
 }
 
-.emotion-12 svg {
+.emotion-14 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-14:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-14:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-12:disabled {
+.emotion-14:disabled {
   background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
-.emotion-12:disabled svg {
+.emotion-14:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
@@ -1385,8 +1450,8 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
   background-color: #0A68C1;
-  color: #FFFFFF;
   border-radius: 8px;
+  color: #FFFFFF;
   margin: 0 16px 0 0;
 }
 
@@ -1430,7 +1495,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 }
 
 <div
-    class="emotion-12"
+    class="emotion-14"
     orientation="horizontal"
   >
     <span
@@ -1440,7 +1505,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
       Share
     </span>
     <div
-      class="emotion-11"
+      class="emotion-13"
     >
       <div
         class="emotion-3"
@@ -1520,20 +1585,29 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
       <div
         class="emotion-3"
       >
-        <button
-          class="emotion-9"
-          type="button"
+        <div
+          class="emotion-11"
         >
-          <div
-            class="emotion-8"
+          <button
+            class="emotion-10"
+            data-testid="button"
+            type="button"
           >
             <div
-              class="emotion-3"
+              class="emotion-9"
             >
-              more options
+              <div
+                class="emotion-3"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  more options
+                </span>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -1542,7 +1616,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 
 exports[`ShareBar renders with custom stack spacing 1`] = `
 <DocumentFragment>
-  .emotion-12 {
+  .emotion-14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1562,7 +1636,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   color: #2e2e2e;
 }
 
-.emotion-11 {
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1628,15 +1702,44 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   color: #903D91;
 }
 
-.emotion-9 {
-  display: inline-block;
-  position: relative;
-  width: auto;
+.emotion-11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1644,65 +1747,37 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 8px;
-  min-height: 8px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 8px 12px;
-  margin: 8px 0;
 }
 
-.emotion-9:disabled {
-  cursor: not-allowed;
+.emotion-10 svg {
+  width: 24px;
+  height: 24px;
 }
 
-.emotion-9 svg {
+.emotion-10 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-9:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-9:disabled {
+.emotion-10:disabled {
   background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
-.emotion-9:disabled svg {
+.emotion-10:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-9 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-9::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-.emotion-8 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1721,6 +1796,33 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
+}
+
+.emotion-7 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-0 {
@@ -1753,7 +1855,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 }
 
 <div
-    class="emotion-12"
+    class="emotion-14"
     orientation="horizontal"
   >
     <span
@@ -1763,7 +1865,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
       Share
     </span>
     <div
-      class="emotion-11"
+      class="emotion-13"
     >
       <div
         class="emotion-3"
@@ -1843,20 +1945,29 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
       <div
         class="emotion-3"
       >
-        <button
-          class="emotion-9"
-          type="button"
+        <div
+          class="emotion-11"
         >
-          <div
-            class="emotion-8"
+          <button
+            class="emotion-10"
+            data-testid="button"
+            type="button"
           >
             <div
-              class="emotion-3"
+              class="emotion-9"
             >
-              more options
+              <div
+                class="emotion-3"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  more options
+                </span>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -1865,7 +1976,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 
 exports[`ShareBar renders with horizontally with overrides for label spacing 1`] = `
 <DocumentFragment>
-  .emotion-12 {
+  .emotion-14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1885,7 +1996,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   color: #2e2e2e;
 }
 
-.emotion-11 {
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1951,15 +2062,44 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   color: #903D91;
 }
 
-.emotion-9 {
-  display: inline-block;
-  position: relative;
-  width: auto;
+.emotion-11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1967,65 +2107,37 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 8px;
-  min-height: 8px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 8px 12px;
-  margin: 8px 0;
 }
 
-.emotion-9:disabled {
-  cursor: not-allowed;
+.emotion-10 svg {
+  width: 24px;
+  height: 24px;
 }
 
-.emotion-9 svg {
+.emotion-10 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-9:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-9:disabled {
+.emotion-10:disabled {
   background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
-.emotion-9:disabled svg {
+.emotion-10:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-9 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-9::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-.emotion-8 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2044,6 +2156,33 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
+}
+
+.emotion-7 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-0 {
@@ -2076,7 +2215,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 }
 
 <div
-    class="emotion-12"
+    class="emotion-14"
     orientation="horizontal"
   >
     <span
@@ -2086,7 +2225,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
       Share
     </span>
     <div
-      class="emotion-11"
+      class="emotion-13"
     >
       <div
         class="emotion-3"
@@ -2166,20 +2305,29 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
       <div
         class="emotion-3"
       >
-        <button
-          class="emotion-9"
-          type="button"
+        <div
+          class="emotion-11"
         >
-          <div
-            class="emotion-8"
+          <button
+            class="emotion-10"
+            data-testid="button"
+            type="button"
           >
             <div
-              class="emotion-3"
+              class="emotion-9"
             >
-              more options
+              <div
+                class="emotion-3"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  more options
+                </span>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -2246,7 +2394,7 @@ exports[`ShareBar renders with no icons and labels 1`] = `
 
 exports[`ShareBar renders with overrides for item spacing 1`] = `
 <DocumentFragment>
-  .emotion-7 {
+  .emotion-8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2263,7 +2411,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   display: inline-block;
 }
 
-.emotion-12 {
+.emotion-14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2336,15 +2484,44 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   color: #903D91;
 }
 
-.emotion-9 {
-  display: inline-block;
-  position: relative;
-  width: auto;
+.emotion-11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -2352,65 +2529,37 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 8px;
-  min-height: 8px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 8px 12px;
-  margin: 8px 0;
 }
 
-.emotion-9:disabled {
-  cursor: not-allowed;
+.emotion-10 svg {
+  width: 24px;
+  height: 24px;
 }
 
-.emotion-9 svg {
+.emotion-10 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-9:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-9:disabled {
+.emotion-10:disabled {
   background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
-.emotion-9:disabled svg {
+.emotion-10:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-9 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-9::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-.emotion-8 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2431,7 +2580,34 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-7 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2466,7 +2642,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 }
 
 <div
-    class="emotion-12"
+    class="emotion-14"
     orientation="vertical"
   >
     <span
@@ -2476,7 +2652,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
       Share
     </span>
     <div
-      class="emotion-11"
+      class="emotion-13"
     >
       <div
         class="emotion-3"
@@ -2556,20 +2732,29 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
       <div
         class="emotion-3"
       >
-        <button
-          class="emotion-9"
-          type="button"
+        <div
+          class="emotion-11"
         >
-          <div
-            class="emotion-8"
+          <button
+            class="emotion-10"
+            data-testid="button"
+            type="button"
           >
             <div
-              class="emotion-7"
+              class="emotion-9"
             >
-              more options
+              <div
+                class="emotion-8"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  more options
+                </span>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -2578,7 +2763,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 
 exports[`ShareBar renders with overrides for label typePreset 1`] = `
 <DocumentFragment>
-  .emotion-7 {
+  .emotion-8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2595,7 +2780,7 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   display: inline-block;
 }
 
-.emotion-12 {
+.emotion-14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2615,7 +2800,7 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   color: #2e2e2e;
 }
 
-.emotion-11 {
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2702,15 +2887,44 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   color: #903D91;
 }
 
-.emotion-9 {
-  display: inline-block;
-  position: relative;
-  width: auto;
+.emotion-11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -2718,65 +2932,37 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 8px;
-  min-height: 8px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 8px 12px;
-  margin: 8px 0;
 }
 
-.emotion-9:disabled {
-  cursor: not-allowed;
+.emotion-10 svg {
+  width: 24px;
+  height: 24px;
 }
 
-.emotion-9 svg {
+.emotion-10 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-9:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-9:disabled {
+.emotion-10:disabled {
   background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
-.emotion-9:disabled svg {
+.emotion-10:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-9 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-9::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-.emotion-8 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2797,8 +2983,35 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   margin-right: calc(-8px/2);
 }
 
+.emotion-7 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
 <div
-    class="emotion-12"
+    class="emotion-14"
     orientation="vertical"
   >
     <span
@@ -2808,7 +3021,7 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
       Share
     </span>
     <div
-      class="emotion-11"
+      class="emotion-13"
     >
       <div
         class="emotion-3"
@@ -2888,20 +3101,29 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
       <div
         class="emotion-3"
       >
-        <button
-          class="emotion-9"
-          type="button"
+        <div
+          class="emotion-11"
         >
-          <div
-            class="emotion-8"
+          <button
+            class="emotion-10"
+            data-testid="button"
+            type="button"
           >
             <div
-              class="emotion-7"
+              class="emotion-9"
             >
-              more options
+              <div
+                class="emotion-8"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  more options
+                </span>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -2910,7 +3132,7 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
 
 exports[`ShareBar renders with vertically with overrides for label spacing 1`] = `
 <DocumentFragment>
-  .emotion-7 {
+  .emotion-8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2927,7 +3149,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   display: inline-block;
 }
 
-.emotion-12 {
+.emotion-14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2947,7 +3169,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   color: #2e2e2e;
 }
 
-.emotion-11 {
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3005,15 +3227,44 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   color: #903D91;
 }
 
-.emotion-9 {
-  display: inline-block;
-  position: relative;
-  width: auto;
+.emotion-11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -3021,65 +3272,37 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   cursor: pointer;
-  box-sizing: border-box;
-  background-color: #0A68C1;
-  color: #FFFFFF;
-  border-radius: 8px;
-  min-height: 8px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 12px;
-  line-height: 1.6666666666666667;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  padding: 8px 12px;
-  margin: 8px 0;
 }
 
-.emotion-9:disabled {
-  cursor: not-allowed;
+.emotion-10 svg {
+  width: 24px;
+  height: 24px;
 }
 
-.emotion-9 svg {
+.emotion-10 svg {
   fill: #FFFFFF;
   color: #FFFFFF;
 }
 
-.emotion-9:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: #02509B;
 }
 
-.emotion-9:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: #01396E;
 }
 
-.emotion-9:disabled {
+.emotion-10:disabled {
   background-color: #e4e4e4;
   color: #9c9c9c;
 }
 
-.emotion-9:disabled svg {
+.emotion-10:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-9 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-9::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 100%;
-  height: 48px;
-}
-
-.emotion-8 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3098,6 +3321,33 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   justify-content: center;
   margin-left: calc(-8px/2);
   margin-right: calc(-8px/2);
+}
+
+.emotion-7 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-0 {
@@ -3130,7 +3380,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 }
 
 <div
-    class="emotion-12"
+    class="emotion-14"
     orientation="vertical"
   >
     <span
@@ -3140,7 +3390,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
       Share
     </span>
     <div
-      class="emotion-11"
+      class="emotion-13"
     >
       <div
         class="emotion-3"
@@ -3220,20 +3470,29 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
       <div
         class="emotion-3"
       >
-        <button
-          class="emotion-9"
-          type="button"
+        <div
+          class="emotion-11"
         >
-          <div
-            class="emotion-8"
+          <button
+            class="emotion-10"
+            data-testid="button"
+            type="button"
           >
             <div
-              class="emotion-7"
+              class="emotion-9"
             >
-              more options
+              <div
+                class="emotion-8"
+              >
+                <span
+                  class="emotion-7"
+                >
+                  more options
+                </span>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   </div>
