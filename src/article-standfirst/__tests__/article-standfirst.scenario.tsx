@@ -4,7 +4,7 @@ import {createTheme, ThemeProvider} from '../../themes';
 import {getFontProps} from '../../utils/get-font-props';
 
 const myCustomTheme = createTheme('my-custom-article-standfirst-theme', {
-  themeOverrider: () => ({
+  themeOverrider: ({fonts}) => ({
     stylePresets: {
       articleStandfirstCustom: {
         base: {
@@ -15,7 +15,7 @@ const myCustomTheme = createTheme('my-custom-article-standfirst-theme', {
     typePresets: {
       articleStandfirstCustom: {
         fontFamily: '"Noto Sans", sans-serif',
-        ...getFontProps('32px', 1.125, '"Noto Sans", sans-serif'),
+        ...getFontProps('32px', 1.125, '"Noto Sans", sans-serif', fonts),
         fontWeight: 400,
         letterSpacing: 0,
       },

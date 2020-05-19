@@ -1,16 +1,14 @@
-/* eslint-disable global-require */
-/* eslint-disable no-shadow */
-import {FontConfig} from '../../themes/newskit-light/fonts';
+import {
+  FontConfig,
+  fontPrimitives,
+  FontPrimitives,
+} from '../../themes/newskit-light/fonts';
 import {getFontProps} from '../get-font-props';
 
 const fontSize = '12px';
 const lineHeight = 1.5;
 
 describe('getFontProps', () => {
-  beforeEach(() => {
-    jest.resetModules();
-  });
-
   test(`returns correct margins without additional crop adjustments`, () => {
     const fontFamilyTest: FontConfig = {
       fontFamily: 'Test Font Family',
@@ -20,26 +18,18 @@ describe('getFontProps', () => {
       },
     };
 
-    jest.doMock('../../themes/newskit-light/fonts', () => {
-      const actual = jest.requireActual('../../themes/newskit-light/fonts');
-      return {
-        fontPrimitives: {
-          ...actual.fontPrimitives,
-          fontFamilyTest,
-        },
-      };
-    });
-
-    const {getFontProps} = require('../get-font-props');
-
     const result = getFontProps(
       fontSize,
       lineHeight,
       fontFamilyTest.fontFamily,
+      {
+        ...fontPrimitives,
+        fontFamilyTest,
+      } as FontPrimitives,
     );
 
-    expect(result['::after'].marginTop).toEqual(`-0.4833333333333334em`);
-    expect(result['::before'].marginBottom).toEqual(`-0.5145833333333334em`);
+    expect(result!['::after'].marginTop).toEqual(`-0.4833333333333334em`);
+    expect(result!['::before'].marginBottom).toEqual(`-0.5145833333333334em`);
   });
 
   test(`returns correct margins with additional crop adjustments`, () => {
@@ -57,28 +47,20 @@ describe('getFontProps', () => {
       },
     };
 
-    jest.doMock('../../themes/newskit-light/fonts', () => {
-      const actual = jest.requireActual('../../themes/newskit-light/fonts');
-      return {
-        fontPrimitives: {
-          ...actual.fontPrimitives,
-          fontFamilyTest,
-        },
-      };
-    });
-
-    const {getFontProps} = require('../get-font-props');
-
     const result = getFontProps(
       fontSize,
       lineHeight,
       fontFamilyTest.fontFamily,
+      {
+        ...fontPrimitives,
+        fontFamilyTest,
+      } as FontPrimitives,
     );
 
-    expect(result['::before'].marginBottom).toEqual(
+    expect(result!['::before'].marginBottom).toEqual(
       `calc(-0.5145833333333334em + 2px)`,
     );
-    expect(result['::after'].marginTop).toEqual(
+    expect(result!['::after'].marginTop).toEqual(
       `calc(-0.4833333333333334em + 1px)`,
     );
   });
@@ -88,36 +70,25 @@ describe('getFontProps', () => {
       fontFamily: 'Test Font Family',
     };
 
-    jest.doMock('../../themes/newskit-light/fonts', () => {
-      const actual = jest.requireActual('../../themes/newskit-light/fonts');
-      return {
-        fontPrimitives: {
-          ...actual.fontPrimitives,
-          fontFamilyTest,
-        },
-      };
-    });
-
-    const {getFontProps} = require('../get-font-props');
-
     const result = getFontProps(
       fontSize,
       lineHeight,
       fontFamilyTest.fontFamily,
+      {
+        ...fontPrimitives,
+        fontFamilyTest,
+      } as FontPrimitives,
     );
 
     expect(result).toBeUndefined();
   });
 
   test(`returns undefined if font-family is not found`, () => {
-    const fontFamilyTest: FontConfig = {
-      fontFamily: 'Test Font Family',
-    };
-
     const result = getFontProps(
       fontSize,
       lineHeight,
-      fontFamilyTest.fontFamily,
+      'Test Font Family',
+      fontPrimitives,
     );
 
     expect(result).toBeUndefined();

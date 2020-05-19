@@ -40,11 +40,11 @@ describe('ArticleStandfirst', () => {
 
   test('renders with custom type preset', () => {
     const customTheme = createTheme('my-custom-article-standfirst-theme', {
-      themeOverrider: () => ({
+      themeOverrider: ({fonts}) => ({
         typePresets: {
           articleStandfirstCustom: {
             fontFamily: '"Noto Sans", sans-serif',
-            ...getFontProps('32px', 1.125, '"Noto Sans", sans-serif'),
+            ...getFontProps('32px', 1.125, '"Noto Sans", sans-serif', fonts),
             fontWeight: 400,
             letterSpacing: 0,
           },

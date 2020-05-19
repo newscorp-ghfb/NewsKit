@@ -131,7 +131,12 @@ export const getTypePresetFromTheme = <Props extends ThemeProp>(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const applyCrop = (typePreset: any) => {
     const {fontSize, lineHeight, fontFamily} = typePreset;
-    const cropProps = getFontProps(fontSize, lineHeight, fontFamily);
+    const cropProps = getFontProps(
+      fontSize,
+      lineHeight,
+      fontFamily,
+      props.theme.fonts,
+    );
     return {
       ...typePreset,
       ...cropProps,

@@ -255,6 +255,7 @@ const getBaseTypePresets = (p: FontPrimitives) => {
         label010.fontSize,
         label010.lineHeight,
         label010.fontFamily,
+        p,
       ),
     },
     flag020: {
@@ -263,6 +264,7 @@ const getBaseTypePresets = (p: FontPrimitives) => {
         label020.fontSize,
         label020.lineHeight,
         label020.fontFamily,
+        p,
       ),
     },
 
@@ -274,6 +276,7 @@ const getBaseTypePresets = (p: FontPrimitives) => {
         label010.fontSize,
         label010.lineHeight,
         label010.fontFamily,
+        p,
       ),
     },
     tag020: {
@@ -282,6 +285,7 @@ const getBaseTypePresets = (p: FontPrimitives) => {
         label020.fontSize,
         label020.lineHeight,
         label020.fontFamily,
+        p,
       ),
     },
     tag030: {
@@ -290,6 +294,7 @@ const getBaseTypePresets = (p: FontPrimitives) => {
         label030.fontSize,
         label030.lineHeight,
         label030.fontFamily,
+        p,
       ),
     },
 
@@ -320,6 +325,7 @@ export const createTypePresets = (p: FontPrimitives) => {
         baseTypePresets.label020.fontSize,
         baseTypePresets.label020.lineHeight,
         baseTypePresets.label020.fontFamily,
+        p,
       ),
     },
 
@@ -330,6 +336,7 @@ export const createTypePresets = (p: FontPrimitives) => {
         baseTypePresets.subhead010.fontSize,
         baseTypePresets.subhead010.lineHeight,
         baseTypePresets.subhead010.fontFamily,
+        p,
       ),
     },
 
@@ -342,6 +349,7 @@ export const createTypePresets = (p: FontPrimitives) => {
         baseTypePresets.label010.fontSize,
         baseTypePresets.label010.lineHeight,
         baseTypePresets.label010.fontFamily,
+        p,
       ),
     },
     buttonMedium: {
@@ -351,6 +359,7 @@ export const createTypePresets = (p: FontPrimitives) => {
         baseTypePresets.label020.fontSize,
         baseTypePresets.label020.lineHeight,
         baseTypePresets.label020.fontFamily,
+        p,
       ),
     },
     buttonLarge: {
@@ -360,6 +369,7 @@ export const createTypePresets = (p: FontPrimitives) => {
         baseTypePresets.label030.fontSize,
         baseTypePresets.label030.lineHeight,
         baseTypePresets.label030.fontFamily,
+        p,
       ),
     },
 

@@ -1,18 +1,18 @@
 import {textCrop} from './text-crop';
 import {getFontSizing} from './font-sizing';
-import {FontConfig, fontPrimitives} from '../themes/newskit-light/fonts';
+import {FontConfig, FontPrimitives} from '../themes/newskit-light/fonts';
 import {isFontConfigObject} from './guards';
 
 export const getFontProps = (
   fontSize: string,
   lineHeight: number,
   fontFamily: string,
+  fontPrimitives: FontPrimitives,
   // eslint-disable-next-line consistent-return
 ) => {
   const [fontStackPeek] = fontFamily.split(',');
 
   const fontFamilyObject: FontConfig | undefined = Object.values(
-    // TODO: PPDSC-1140 - This should not be imported, it needs to be taken from the consumers current theme.
     fontPrimitives,
   ).find(
     (fontEl): fontEl is FontConfig =>
