@@ -2,7 +2,6 @@ const a11yComponentRules = [
   {name: 'article-byline'},
   {name: 'article-content'},
   {name: 'article-headline', disabledRules: ['heading-order']},
-  {name: 'article-standfirst'},
   {name: 'audio-player', disabledRules: ['color-contrast', 'landmark-unique']},
   {name: 'radio-player', disabledRules: ['color-contrast', 'landmark-unique']},
   {
@@ -19,6 +18,7 @@ const a11yComponentRules = [
   {name: 'scroll', disabledRules: ['color-contrast']},
   {name: 'share-bar'},
   {name: 'slider', disabledRules: ['color-contrast']},
+  {name: 'standfirst'},
   {name: 'volume-control'},
   {name: 'tag-list', disabledRules: ['color-contrast']},
   {name: 'tag', disabledRules: ['color-contrast']},

@@ -40,7 +40,6 @@ describe('Documentation Site - sidebar component', () => {
     cy.get('[data-testid="/components"]').click();
     cy.contains('Article Byline').should('exist');
     cy.contains('Article Headline').should('exist');
-    cy.contains('Article Standfirst').should('exist');
     cy.contains('Audio Player').should('exist');
     cy.contains('Date Line').should('exist');
     cy.contains('Divider').should('exist');
@@ -51,6 +50,7 @@ describe('Documentation Site - sidebar component', () => {
     cy.contains('Image').should('exist');
     cy.contains('Link').should('exist');
     cy.contains('Ordered List').should('exist');
+    cy.contains('Standfirst').should('exist');
     cy.contains('Tag').should('exist');
     cy.contains('Tag List').should('exist');
     cy.contains('Unordered List').should('exist');

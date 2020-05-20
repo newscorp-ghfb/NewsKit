@@ -87,9 +87,9 @@
         "id": "/components/article-headline"
       },
       {
-        "title": "Article Standfirst",
+        "title": "Standfirst",
         "page": true,
-        "id": "/components/article-standfirst"
+        "id": "/components/standfirst"
       },
       {
         "title": "Audio Player",

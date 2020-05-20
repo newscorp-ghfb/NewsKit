@@ -313,33 +313,6 @@ export const createTypePresets = (p: FontPrimitives) => {
   return {
     ...baseTypePresets,
 
-    // Headline
-    headline100: baseTypePresets.heading050,
-    headline200: baseTypePresets.heading050,
-
-    // Share Bar
-
-    shareBarLabel: {
-      ...baseTypePresets.label020,
-      ...getFontProps(
-        baseTypePresets.label020.fontSize,
-        baseTypePresets.label020.lineHeight,
-        baseTypePresets.label020.fontFamily,
-        p,
-      ),
-    },
-
-    // Article Standfirst
-    articleStandfirst: {
-      ...baseTypePresets.subhead010,
-      ...getFontProps(
-        baseTypePresets.subhead010.fontSize,
-        baseTypePresets.subhead010.lineHeight,
-        baseTypePresets.subhead010.fontFamily,
-        p,
-      ),
-    },
-
     // Button
     // Use `withCrop` option in the default util in PPDSC-1120
     buttonSmall: {
@@ -376,6 +349,27 @@ export const createTypePresets = (p: FontPrimitives) => {
     dropCap: {
       fontSize: '5.34em',
       lineHeight: 0.85,
+    },
+
+    // Headline
+    headline100: baseTypePresets.heading050,
+    headline200: baseTypePresets.heading050,
+
+    // Share Bar
+
+    shareBarLabel: {
+      ...baseTypePresets.label020,
+      ...getFontProps(
+        baseTypePresets.label020.fontSize,
+        baseTypePresets.label020.lineHeight,
+        baseTypePresets.label020.fontFamily,
+        p,
+      ),
+    },
+
+    // Standfirst
+    standfirst: {
+      ...baseTypePresets.subhead010,
     },
   };
 };

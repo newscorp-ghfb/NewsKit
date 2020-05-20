@@ -1,7 +1,6 @@
 export * from './article-byline';
 export * from './article-content';
 export * from './article-headline';
-export * from './article-standfirst';
 export * from './audio-player';
 export * from './block';
 export * from './button';
@@ -22,6 +21,7 @@ export * from './share-bar';
 export * from './slider';
 export * from './stack';
 export * from './stack-child';
+export * from './standfirst';
 export * from './tag-list';
 export * from './tag';
 export * from './tealium';

@@ -23,6 +23,15 @@ export const defaultPresets = {
       },
     },
   },
+  standfirst: {
+    styledText: {
+      stylePreset: 'standfirst',
+      typePreset: {
+        xs: 'subhead020',
+        md: 'subhead030',
+      },
+    },
+  },
   shareBar: {
     horizontal: {
       label: {

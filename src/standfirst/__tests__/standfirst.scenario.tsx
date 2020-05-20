@@ -1,21 +1,19 @@
 import * as React from 'react';
-import {ArticleStandfirst} from '..';
+import {Standfirst} from '..';
 import {createTheme, ThemeProvider} from '../../themes';
-import {getFontProps} from '../../utils/get-font-props';
 
-const myCustomTheme = createTheme('my-custom-article-standfirst-theme', {
-  themeOverrider: ({fonts}) => ({
+const myCustomTheme = createTheme('my-custom-standfirst-theme', {
+  themeOverrider: () => ({
     stylePresets: {
-      articleStandfirstCustom: {
+      standfirstCustom: {
         base: {
           color: '#0B5999',
         },
       },
     },
     typePresets: {
-      articleStandfirstCustom: {
+      standfirstCustom: {
         fontFamily: '"Noto Sans", sans-serif',
-        ...getFontProps('32px', 1.125, '"Noto Sans", sans-serif', fonts),
         fontWeight: 400,
         letterSpacing: 0,
       },
@@ -27,14 +25,14 @@ const bodyString =
   'Telling the stories that matter, seeding ideas and stirring emotion. Capturing moments, meaning and magic. Making sense of the world. On the shoulders of giants, in the thick of it, behind the scenes and fighting the good fight. Long form and rapid-fire, pragmatic and poetic, comical and critical. Being at the biggest events with the biggest names noticing the smallest details, and sticking up for the little guy.';
 
 export default {
-  name: 'article-standfirst',
+  name: 'standfirst',
   children: [
     {
       name: 'default',
       type: 'story',
       component: () => (
         <React.Fragment>
-          <ArticleStandfirst>{bodyString}</ArticleStandfirst>
+          <Standfirst>{bodyString}</Standfirst>
         </React.Fragment>
       ),
     },
@@ -44,10 +42,10 @@ export default {
       component: () => (
         <React.Fragment>
           <h3>As h4</h3>
-          <ArticleStandfirst as="h4">{bodyString}</ArticleStandfirst>
+          <Standfirst renderStyledTextAs="h4">{bodyString}</Standfirst>
 
           <h3>As span</h3>
-          <ArticleStandfirst as="span">{bodyString}</ArticleStandfirst>
+          <Standfirst renderStyledTextAs="span">{bodyString}</Standfirst>
         </React.Fragment>
       ),
     },
@@ -57,15 +55,27 @@ export default {
       component: () => (
         <React.Fragment>
           <ThemeProvider theme={myCustomTheme}>
-            <h3>With style-preset &quot;articleStandfirstCustom&quot;</h3>
-            <ArticleStandfirst stylePreset="articleStandfirstCustom">
+            <h3>With style-preset &quot;standfirstCustom&quot;</h3>
+            <Standfirst
+              overrides={{
+                styledText: {
+                  stylePreset: 'linkPrimary',
+                },
+              }}
+            >
               {bodyString}
-            </ArticleStandfirst>
+            </Standfirst>
 
-            <h3>With type-preset &quot;articleStandfirstCustom&quot;</h3>
-            <ArticleStandfirst typePreset="articleStandfirstCustom">
+            <h3>With type-preset &quot;standfirstCustom&quot;</h3>
+            <Standfirst
+              overrides={{
+                styledText: {
+                  typePreset: 'subhead030',
+                },
+              }}
+            >
               {bodyString}
-            </ArticleStandfirst>
+            </Standfirst>
           </ThemeProvider>
         </React.Fragment>
       ),

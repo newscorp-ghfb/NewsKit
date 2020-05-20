@@ -728,10 +728,10 @@ export const createStylePresets = ({
   };
 
   //
-  // Article Standfirst
+  // Standfirst
   //
 
-  presets.articleStandfirst = {
+  presets.standfirst = {
     base: {
       color: colorPrimitives.inkBase,
     },
