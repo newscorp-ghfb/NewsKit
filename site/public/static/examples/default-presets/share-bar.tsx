@@ -7,7 +7,7 @@
         marginPreset: 'spaceInline040',
       },
       items: {
-        spacePreset: 'sizing020',
+        space: 'sizing020',
       },
     },
     vertical: {
@@ -19,6 +19,6 @@
       items: {
         space: 'sizing020',
       },
-    },
-  },
+    }
+  }
 }

@@ -3,16 +3,17 @@ import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
-
 import {ArticleHeadline} from 'newskit';
+import {CodeFromFile} from '../../components/code';
+
 
 export default Layout;
 
 # Article Headline
-The Article Headline is a simple component that comprises two element: a Kicker (text) and Heading (text).  
+The Article Headline is a simple component that comprises two element: a Kicker (text) and Heading (text).
 
-The kicker is optional.  
-They can be both be rendered as different HTML elements.  
+The kicker is optional.
+They can be both be rendered as different HTML elements.
 
 ## Overview
 
@@ -39,46 +40,10 @@ No special requirements.
     The type of tag you want to render the Kicker as.
     Must be one of 'h1','h2','h3','h4','h5','h6','span'.
   </Prop>
-  <Prop name="headingStylePreset" type="string">
-    The name of the style preset you want to overwrite the default style with.
-    The value must be the name of another valid style preset.
-  </Prop>
-  <Prop name="headingMqTypePreset" type="object">
-    Object containing the type presets for the Heading breakpoints. They will overwrite the default ones.
-    Example object keys:
-
-      xs: 'code010',
-      sm: 'heading060',
-      md: 'code020',
-      lg: 'heading080',
-    
-    The key's value must be a type presets.
-  </Prop>
-  <Prop name="kickerMqTypePreset" type="object">
-    Object containing the type presets for the Kicker breakpoints. They will overwrite the default ones.
-    Example object keys: 
-
-      xs: 'code010',
-      sm: 'heading060',
-      md: 'heading060',
-      lg: 'heading060',
-
-    The key's value must be a type presets.
-  </Prop>
-  <Prop name="kickerMqInlineMarginPreset" type="object">
-    Object containing the inline margin presets for the Kicker breakpoints. They will overwrite the default ones.
-    Example object keys: 
-
-      xs: 'spaceInline060',
-      sm: 'spaceInline060',
-      md: 'spaceInline070',
-      lg: 'spaceInline080',
-
-    The key's value must be a spacing presets.
-  </Prop>
-  <Prop name="kickerStylePreset" type="string">
-    The name of the style preset you want to overwrite the default style with.
-    The value must be the name of another valid style preset.
+  <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component and provided elements.
+    Refer to the defaults below for the object structure:
+    <CodeFromFile path="examples/default-presets/article-headline.tsx" />
   </Prop>
 </LegacyBlock>
 
