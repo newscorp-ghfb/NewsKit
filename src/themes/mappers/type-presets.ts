@@ -359,12 +359,6 @@ export const createTypePresets = (p: FontPrimitives) => {
 
     shareBarLabel: {
       ...baseTypePresets.label020,
-      ...getFontProps(
-        baseTypePresets.label020.fontSize,
-        baseTypePresets.label020.lineHeight,
-        baseTypePresets.label020.fontFamily,
-        p,
-      ),
     },
 
     // Standfirst

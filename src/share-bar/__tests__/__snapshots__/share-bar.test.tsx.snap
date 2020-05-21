@@ -19,7 +19,6 @@ exports[`ShareBar renders horizontally with icons and label 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  color: #2e2e2e;
 }
 
 .emotion-5 {
@@ -195,7 +194,6 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  color: #2e2e2e;
 }
 
 .emotion-7 {
@@ -405,7 +403,6 @@ exports[`ShareBar renders horizontally with twitter and facebook icons 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  color: #2e2e2e;
 }
 
 .emotion-4 {
@@ -554,7 +551,6 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  color: #2e2e2e;
 }
 
 .emotion-5 {
@@ -730,7 +726,6 @@ exports[`ShareBar renders vertically with twitter and facebook icons 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  color: #2e2e2e;
 }
 
 .emotion-4 {
@@ -863,7 +858,6 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  color: #2e2e2e;
 }
 
 .emotion-13 {
@@ -1206,7 +1200,26 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 
 exports[`ShareBar renders with custom label stylePreset 1`] = `
 <DocumentFragment>
-  .emotion-13 {
+  .emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1393,51 +1406,6 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   height: 0;
   width: 0;
   margin-top: -0.4267857142857143em;
-}
-
-.emotion-14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  background-color: #0A68C1;
-  border-radius: 8px;
-  color: #FFFFFF;
-}
-
-.emotion-14 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.emotion-14:hover:not(:disabled) {
-  background-color: #02509B;
-}
-
-.emotion-14:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-14:disabled {
-  background-color: #e4e4e4;
-  color: #9c9c9c;
-}
-
-.emotion-14:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0 {
@@ -1633,7 +1601,6 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  color: #2e2e2e;
 }
 
 .emotion-13 {
@@ -1993,7 +1960,6 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  color: #2e2e2e;
 }
 
 .emotion-13 {
@@ -2353,7 +2319,6 @@ exports[`ShareBar renders with no icons and labels 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  color: #2e2e2e;
 }
 
 .emotion-0 {
@@ -2428,7 +2393,6 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  color: #2e2e2e;
 }
 
 .emotion-0 {
@@ -2797,7 +2761,6 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  color: #2e2e2e;
 }
 
 .emotion-13 {
@@ -3166,7 +3129,6 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  color: #2e2e2e;
 }
 
 .emotion-13 {

@@ -53,8 +53,7 @@ const StyledLabel = styled.span<Label>`
 `;
 
 const StyledShareBar = styled(Stack)<StyledShareBarProps>`
-  ${({orientation}) =>
-    getStylePreset(`shareBar.${orientation}.label`, 'label')};
+  ${({orientation}) => getStylePreset(`shareBar.${orientation}`)}
 `;
 
 export const ShareBar: React.FC<ShareBarProps> = ({
