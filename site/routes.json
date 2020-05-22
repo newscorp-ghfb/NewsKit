@@ -87,11 +87,6 @@
         "id": "/components/article-headline"
       },
       {
-        "title": "Standfirst",
-        "page": true,
-        "id": "/components/standfirst"
-      },
-      {
         "title": "Audio Player",
         "page": true,
         "id": "/components/audio-player"
@@ -180,6 +175,11 @@
         "title": "Stack & StackChild",
         "page": true,
         "id": "/components/stack"
+      },
+      {
+        "title": "Standfirst",
+        "page": true,
+        "id": "/components/standfirst"
       },
       {
         "title": "Tag",

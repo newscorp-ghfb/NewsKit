@@ -9,6 +9,6 @@ module.exports = {
     // TODO: Add back ie11 once we have fixed the IE11 related bugs (e.g https://nidigitalsolutions.jira.com/browse/PPDSC-676)
     // {width: 1024, height: 768, name: 'ie11'},
   ],
-  matchLevel: 'Layout',
+  waitBeforeScreenshot: 5000,
   concurrency: 20,
 };

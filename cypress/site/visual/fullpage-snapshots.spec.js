@@ -8,8 +8,7 @@ const routes = {
   icons: '/foundations/icons',
   radioPlayer: '/components/radio-player',
   shareBar: '/components/share-bar',
-  // TODO: Add back when https://nidigitalsolutions.jira.com/browse/PPDSC-860 is fixed
-  // spacing: '/foundations/spacing',
+  spacing: '/foundations/spacing',
   typography: '/foundations/typography',
   welcome: '/index',
 };
