@@ -123,8 +123,23 @@ export const StyledMasterContainer = styled.div<StyledStackProps>`
   ${calculateMargins(true)}
 `;
 
+export const StyledMasterContainerList = styled(StyledMasterContainer)`
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+`.withComponent('ul');
+
+export const StyledMasterContainerListElement = styled(
+  StyledMasterContainer,
+)``.withComponent('li');
+
 export const StyledChildContainer = styled.div<StyledChildProps>`
   display: inline-flex;
   ${calculateMargins()}
   order: ${({$order}) => $order};
 `;
+
+export const StyledChildContainerListElement = styled(
+  StyledChildContainer,
+)``.withComponent('li');

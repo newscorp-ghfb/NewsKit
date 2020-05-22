@@ -14,6 +14,17 @@ describe('Stack', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test(`renders stack as list with spacing`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      list: true,
+      ariaLabel: 'Tag list',
+      space: 'sizing020',
+      children: [<Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>],
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
   test(`renders stack with flex grow and shrink`, () => {
     const fragment1 = renderToFragmentWithTheme(Stack, {
       flexGrow: true,
@@ -75,6 +86,34 @@ describe('Stack', () => {
         <Stack stackDistribution={StackDistribution.Center}>
           <Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>
         </Stack>,
+      ],
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`renders nested stack as list`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      list: true,
+      children: [
+        <Stack>
+          <Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>
+        </Stack>,
+        <Tag>child 4</Tag>,
+      ],
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`renders nested stack as list when both are list`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      list: true,
+      children: [
+        <Stack list>
+          <Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>
+        </Stack>,
+        <Tag>child 4</Tag>,
       ],
     });
 

@@ -8,7 +8,7 @@ import {Stack, Tag, Flow, StackChild} from 'newskit';
 
 export default Layout;
 
-# Stack & StackChild
+# Stack & Stack Child
 
 ## Stack Overview
 
@@ -44,7 +44,12 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
   <Prop name="wrap" type="wrap | nowrap">
     If provided, defines if the content of the stack wraps.
   </Prop>
-
+  <Prop name="list" type="boolean">
+    If provided, the stack container renders as 'ul' and every child element is wrapped inside a 'li'.
+  </Prop>
+  <Prop name="ariaLabel" type="string">
+    The aria-label attribute is recommended to be used when the stack is rendered as a list. This will allow screen readers to label the content of the list.
+  </Prop>
 </LegacyBlock>
 
 ## Playground
@@ -53,7 +58,7 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
   componentName="Stack"
   newskitPath="/stack"
   component={state => (
-    <LegacyBlock width="100%" height="300px">
+    <LegacyBlock width="100%" height="300px" overflowY="scroll">
       <Stack {...state}>
         {[
           'This',
@@ -115,7 +120,7 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
       name: 'Space',
       propName: 'space',
       options: (() =>
-        ['sizing000', 'sizing030', 'sizing060', 'sizing120'].map((size, i) => ({
+        ['sizing010', 'sizing020', 'sizing030', 'sizing040'].map((size, i) => ({
           label: size,
           value: size,
           isDefault: !i,
@@ -136,6 +141,18 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
         },
       ],
     },
+    {
+      name: 'List',
+      propName: 'list',
+      type: 'boolean',
+      value: false
+    },
+    {
+      name: 'AriaLabel',
+      propName: 'ariaLabel',
+      type: 'string',
+      value: 'list content label'
+    }
   ]}
 />
 

@@ -225,6 +225,10 @@ const getStyleFromProps = (props: StyledBlockProps & {theme: Theme}) => {
         return undefined;
       },
     })
+    .apply({
+      property: 'overflowY',
+      value: props.$overflowY,
+    })
     .value();
 };
 
@@ -239,6 +243,7 @@ export const LegacyBlock: React.FC<LegacyBlockProps> = ({
   overflow,
   width,
   display,
+  overflowY,
   ...props
 }) => (
   <StyledBlock
@@ -248,5 +253,7 @@ export const LegacyBlock: React.FC<LegacyBlockProps> = ({
     $width={width}
     $color={color}
     $overflow={overflow}
+    $overflowY={overflowY}
+    tabindex="0"
   />
 );

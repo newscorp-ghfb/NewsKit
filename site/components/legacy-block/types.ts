@@ -57,6 +57,8 @@ export interface StyledBlockProps extends CommonProps {
   $height?: Responsive<SizingKeys | string>;
   $display?: Responsive<DisplayProperty>;
   $overflow?: OverflowProperty;
+  $overflowY?: OverflowProperty;
+  tabindex?: string;
 }
 
 export interface LegacyBlockProps extends CommonProps {
@@ -65,4 +67,5 @@ export interface LegacyBlockProps extends CommonProps {
   height?: Responsive<SizingKeys | string>;
   display?: Responsive<DisplayProperty>;
   overflow?: OverflowProperty;
+  overflowY?: OverflowProperty;
 }

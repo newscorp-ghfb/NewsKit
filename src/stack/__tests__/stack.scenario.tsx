@@ -81,6 +81,22 @@ export default {
       ),
     },
     {
+      name: 'stack-as-list',
+      type: 'story',
+      component: () => (
+        <MainContainer>
+          <StorybookHeading>Stack as list</StorybookHeading>
+          <Container theme={newskitLightTheme}>
+            <Stack list ariaLabel="Tag list">
+              <Tag>Example 1</Tag>
+              <Tag>Example 2</Tag>
+              <Tag>Example 3</Tag>
+            </Stack>
+          </Container>
+        </MainContainer>
+      ),
+    },
+    {
       name: 'stack-vertical-using-design-system-spacing-token',
       type: 'story',
       component: () => (
@@ -139,6 +155,65 @@ export default {
               <Stack
                 flow={Flow.HorizontalCenter}
                 stackDistribution={StackDistribution.SpaceAround}
+              >
+                <Tag>Nested Item 1</Tag>
+                <Tag>Nested Item 2</Tag>
+                <Tag>Nested Item 3</Tag>
+              </Stack>
+            </Stack>
+          </Container>
+        </MainContainer>
+      ),
+    },
+    {
+      name: 'nested-stacks-as-list',
+      type: 'story',
+      component: () => (
+        <MainContainer>
+          <StorybookHeading>Nested stacks as list</StorybookHeading>
+          <Container theme={newskitLightTheme}>
+            <Stack
+              flow={Flow.HorizontalCenter}
+              space="sizing020"
+              stackDistribution={StackDistribution.SpaceAround}
+              list
+            >
+              <Tag>Item 1</Tag>
+              <Tag>Item 2</Tag>
+              <Tag>Item 3</Tag>
+              <Stack
+                flow={Flow.HorizontalCenter}
+                stackDistribution={StackDistribution.SpaceAround}
+              >
+                <Tag>Nested Item 1</Tag>
+                <Tag>Nested Item 2</Tag>
+                <Tag>Nested Item 3</Tag>
+              </Stack>
+            </Stack>
+          </Container>
+        </MainContainer>
+      ),
+    },
+    {
+      name: 'nested-stacks-both-as-list',
+      type: 'story',
+      component: () => (
+        <MainContainer>
+          <StorybookHeading>Nested stacks both as list</StorybookHeading>
+          <Container theme={newskitLightTheme}>
+            <Stack
+              flow={Flow.HorizontalCenter}
+              space="sizing020"
+              stackDistribution={StackDistribution.SpaceAround}
+              list
+            >
+              <Tag>Item 1</Tag>
+              <Tag>Item 2</Tag>
+              <Tag>Item 3</Tag>
+              <Stack
+                flow={Flow.HorizontalCenter}
+                stackDistribution={StackDistribution.SpaceAround}
+                list
               >
                 <Tag>Nested Item 1</Tag>
                 <Tag>Nested Item 2</Tag>

@@ -30,6 +30,8 @@ export interface StyledStackProps extends CommonStackProps {
 
 export interface StackProps extends Partial<CommonStackProps> {
   wrap?: boolean | 'wrap' | 'nowrap';
+  list?: boolean;
+  ariaLabel?: string;
 }
 
 export interface ChildProps
