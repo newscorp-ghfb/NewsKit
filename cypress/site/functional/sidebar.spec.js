@@ -2,7 +2,6 @@
 
 describe('Documentation Site - sidebar component', () => {
   before(() => {
-    cy.mockConsentRequest();
     cy.visit('/');
   });
 

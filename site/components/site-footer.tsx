@@ -98,11 +98,7 @@ const SiteFooter: React.FC = () => (
             </FooterLink>
           </Hidden>
           <FooterLink>
-            <ConsentSettingsLink
-              siteId="5623"
-              privacyManagerId="5de4e78870353615f11c8456"
-              noUnderline
-            >
+            <ConsentSettingsLink privacyManagerId="139011" noUnderline>
               Privacy
             </ConsentSettingsLink>
           </FooterLink>

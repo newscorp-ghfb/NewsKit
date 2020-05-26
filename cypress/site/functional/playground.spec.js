@@ -4,7 +4,6 @@ const playgroundElement = '[data-testid="playground-element"]';
 
 describe('Documentation Site - playground', () => {
   beforeEach(() => {
-    cy.mockConsentRequest();
     cy.visit('/components/tag');
   });
 
@@ -24,7 +23,6 @@ describe('Documentation Site - playground', () => {
 
 describe('Documentation Site - playground - Tag list', () => {
   beforeEach(() => {
-    cy.mockConsentRequest();
     cy.visit('/components/tag-list');
   });
 
@@ -64,7 +62,6 @@ describe('Documentation Site - playground - Tag list', () => {
 
 describe('Documentation Site - playground', () => {
   beforeEach(() => {
-    cy.mockConsentRequest();
     cy.visit('/components/flag');
   });
 

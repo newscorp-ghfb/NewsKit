@@ -40,16 +40,15 @@ Cypress.Commands.add('acceptCookieBanner', () => {
         const innerBody = iframe.contents().find('body');
         cy.wrap(innerBody)
           .find('.message-component.message-button')
-          .contains('I Accept')
+          .contains('Fine By Me!')
           .click({force: true});
       });
     }
   });
+  cy.setCookieConsent();
 });
 
-Cypress.Commands.add('mockConsentRequest', () => {
-  cy.server();
-  cy.route('**/consent/v2/**/*', {
-    consentedToAny: true,
-  }).as('consent');
+Cypress.Commands.add('setCookieConsent', () => {
+  cy.setCookie('euconsent-v2', 'testCookieValue');
+  cy.setCookie('consentUUID', 'testCookieValue');
 });

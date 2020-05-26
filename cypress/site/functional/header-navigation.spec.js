@@ -8,7 +8,6 @@ const headerNavigatioTestID = '[data-testid="header-navigation"]';
 
 describe('Documentation Site - header-navigation component', () => {
   before(() => {
-    cy.mockConsentRequest();
     cy.visit('/');
   });
 

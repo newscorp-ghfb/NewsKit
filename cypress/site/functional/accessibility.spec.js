@@ -19,8 +19,8 @@ describe('Page accessibility', () => {
     it(`should pass basic a11y test for ${Cypress.config(
       'baseUrl',
     )}${path}`, () => {
-      cy.mockConsentRequest();
       cy.visit(path);
+      cy.acceptCookieBanner();
       cy.injectAxe();
       if (path === `/foundations/typography` || path === `/pages/article`) {
         // The typography page is a showcase so we have disabled the heading order rule for this page.

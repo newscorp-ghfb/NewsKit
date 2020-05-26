@@ -2,14 +2,20 @@ import * as React from 'react';
 import {Link} from '../link';
 import {LinkProps} from '../link/types';
 
-type SPWindow = Window & {
+type SPWindowTCF1 = Window & {
   _sp_?: {
-    loadPrivacyManagerModal: (siteId: string, managerId: string) => void;
+    loadPrivacyManagerModal: (siteId?: string, managerId?: string) => void;
+  };
+};
+
+type SPWindowTCF2 = Window & {
+  _sp_?: {
+    loadPrivacyManagerModal: (managerId?: string) => void;
   };
 };
 
 export interface ConsentSettingsLinkProps extends Omit<LinkProps, 'href'> {
-  siteId: string;
+  siteId?: string;
   privacyManagerId: string;
   children?: string;
 }
@@ -27,11 +33,18 @@ export const ConsentSettingsLink: React.FC<ConsentSettingsLinkProps> = ({
     role="button"
     onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
       try {
-        // eslint-disable-next-line no-underscore-dangle
-        (window as SPWindow)._sp_!.loadPrivacyManagerModal(
-          siteId,
-          privacyManagerId,
-        );
+        if (!siteId) {
+          // eslint-disable-next-line no-underscore-dangle
+          (window as SPWindowTCF2)._sp_!.loadPrivacyManagerModal(
+            privacyManagerId,
+          );
+        } else {
+          // eslint-disable-next-line no-underscore-dangle
+          (window as SPWindowTCF1)._sp_!.loadPrivacyManagerModal(
+            siteId,
+            privacyManagerId,
+          );
+        }
       } catch (e) {
         // eslint-disable-next-line no-console
         console.warn(

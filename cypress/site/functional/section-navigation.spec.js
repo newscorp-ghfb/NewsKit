@@ -1,10 +1,6 @@
 // / <reference types="Cypress" />
 
 describe('section navigation', () => {
-  before(() => {
-    cy.mockConsentRequest();
-  });
-
   it('should contain the correct section navigation links', () => {
     cy.visit('/components/tag-list');
     cy.get('[data-testid="section-navigation"]')

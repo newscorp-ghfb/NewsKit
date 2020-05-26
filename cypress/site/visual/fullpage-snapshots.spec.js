@@ -19,7 +19,6 @@ Object.entries(routes).forEach(route => {
   describe(`${pageName} page`, () => {
     it(`should pass visual regression test on ${pageName}`, () => {
       cy.eyesOpen();
-      cy.mockConsentRequest();
       cy.visit(path);
       cy.eyesCheckWindow(`${pageName} page`);
       cy.eyesClose();

@@ -11,7 +11,6 @@ Object.entries(routes).forEach(route => {
   describe(`${pageName} page`, () => {
     it(`should pass visual regression test with dark theme on ${pageName}`, () => {
       cy.eyesOpen();
-      cy.mockConsentRequest();
       cy.visit(path);
       cy.get('[data-testid="theme-switch-button"]').click();
       cy.eyesCheckWindow(`${pageName} page`);

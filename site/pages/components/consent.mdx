@@ -10,25 +10,30 @@ export default Layout;
 
 ## Overview
 
-The consent component is a non-visual component for the consent of the use of 3rd party cookies. It triggers the loading of a Sourcepoint CMP (Content Management Platform) dialog to allow the user to decide what 3rd party cookies they wish to allow or disallow on their browser. Unless you are utilising React Helmet, it must be placed inside the body of the document during server-side rendering. NewsKit has both an AMP and non-AMP version of this component. The two are not interchangeable so you must ensure you use the correct one.
+The consent component is a non-visual component for the consent of the use of 3rd party cookies. It triggers the loading of a Sourcepoint CMP (Content Management Platform) dialog to allow the user to decide what 3rd party cookies they wish to allow or disallow on their browser.
+Unless you are utilising React Helmet, it must be placed inside the body of the document during server-side rendering. NewsKit has both an AMP and non-AMP version of this component. The two are not interchangeable so you must ensure you use the correct one.
+
+At the moment this component is supporting two version of the Sourcepoint config. Versions TCFV1 and TCFV2.
 
 ## Prerequisites
 
-To utilise this component you will need to have a [Sourcepoint](https://www.sourcepoint.com) account and, if required, a Sourcepoint messaging subdomain set up. For more information please see Sourcepoint [documentation](https://documentation.sourcepoint.com/web-implementation/sourcepoint-set-up-and-configuration-v2).
+To utilise this component you will need to have a [Sourcepoint](https://www.sourcepoint.com) account and, if required, a Sourcepoint messaging subdomain set up. For more information 
+please see Sourcepoint [documentation TCFV2](https://documentation.sourcepoint.com/web-implementation/sourcepoint-gdpr-and-tcf-v2-support-beta/gdpr-and-tcf-v2-setup-and-configuration) and 
+[documentation TCFV1](https://documentation.sourcepoint.com/web-implementation/sourcepoint-set-up-and-configuration-v2) for the version 1.
 
 ## Usage
 
 <CodeFromFile path="examples/consent.tsx" />
 
-## Props
+## Props V2
 
 <LegacyBlock marginTop="sizing040">
   <Prop name='sourcePointConfig' type="SourcePointConfigProps"  required>
     The config config that initialises sourcePoint.
     Required parameters: <b>accountId</b>.
-    optional Parameters: <b>siteHref, privacyManagerId, siteId, targetingParams, mmsDomain, waitForConsent</b>. See <a href="https://documentation.sourcepoint.com/web-implementation/sourcepoint-set-up-and-configuration-v2">Sourcepoint documentation</a> for full description of options.
+    optional Parameters: <b>propertyHref,privacyManagerId, siteId, targetingParams, mmsDomain, waitForConsent</b>. See <a href="https://documentation.sourcepoint.com/web-implementation/sourcepoint-set-up-and-configuration-v2">Sourcepoint documentation</a> for full description of options.
   </Prop>
-  <Prop name="accountId" type="string">
+  <Prop name="accountId" type="number">
     <b>This Prop is deprecated on the component and should be set in the sourcepoint config.</b> Your Sourcepoint account id.
   </Prop>
   <Prop
@@ -54,17 +59,27 @@ To utilise this component you will need to have a [Sourcepoint](https://www.sour
   </Prop>
 </LegacyBlock>
 
+## Props V1
+If you want to use the TCF1 version of the consent the only thing to change is 
+replace propertyHref, if you are using it, with siteHref in the sourcePointConfig object.
+<Code>
+  {`
+    accountId: accountId,
+    siteHref: 'http://newskit.co.uk/'
+  `}
+</Code>
+
 ## How to run on localhost
 
-The minimum parameters for the Consent component to run locally are a sourcePointConfig object with accountId and siteHref.
-The `siteHref` property should be an url that that exists in your account's property group. Contact your sourcepoint account manager.
+The minimum parameters for the Consent component to run locally are a sourcePointConfig object with accountId and siteHref for TCFV1 and with an accountId and propertyHref for TCFV1.
+The `siteHref` or `propertyHref` property should be an url that that exists in your account's property group. Contact your sourcepoint account manager.
 
-In our case it would look like this:
+In a V2 example it would look like this:
 <Code>
   {`<Consent
     sourcePointConfig={{
       accountId: accountId,
-      siteHref: 'http://newskit.co.uk/'
+      propertyHref: 'http://newskit.co.uk/'
     }}
   />`}
 </Code>
@@ -96,7 +111,7 @@ Note the use of the AMP `Head` component. The `Consent` component must be used a
     The value of this prop will define the text contained in the consent's button
     that allows the user to access to the privacy settings for the cookies.
   </Prop>
-   <Prop name="accountId" type="string">
+   <Prop name="accountId" type="number">
     <b>This Prop is deprecated on the component and should be set in the sourcepoint config. </b>Your Sourcepoint account id.
   </Prop>
   <Prop name="siteName" type="string">

@@ -35,8 +35,6 @@ describe('ConsentSettingsLink', () => {
       });
 
       test('calls the expected SourcePoint function', async () => {
-        expect(expectedFunction).not.toHaveBeenCalled();
-
         const link = await renderWithTheme(ConsentSettingsLink, {
           siteId,
           privacyManagerId,
@@ -44,6 +42,15 @@ describe('ConsentSettingsLink', () => {
         fireEvent.click(link);
 
         expect(expectedFunction).toHaveBeenCalledWith(siteId, privacyManagerId);
+      });
+
+      test('calls the expected SourcePoint function when siteId is undefined', async () => {
+        const link = await renderWithTheme(ConsentSettingsLink, {
+          privacyManagerId,
+        }).findByRole('button');
+        fireEvent.click(link);
+
+        expect(expectedFunction).toHaveBeenCalledWith(privacyManagerId);
       });
     });
   });
