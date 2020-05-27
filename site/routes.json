@@ -35,6 +35,11 @@
         "id": "/theming/code"
       },
       {
+        "title": "Override default presets",
+        "page": true,
+        "id": "/theming/override-default-presets"
+      },
+      {
         "title": "StylePreset",
         "page": true,
         "id": "/theming/style-preset"

@@ -1,7 +1,61 @@
 import {createTheme, newskitLightTheme} from '..';
+import {styled} from '../../utils/style';
+import {getStylePreset} from '../../utils/style-preset';
+import {renderWithTheme} from '../../test/test-utils';
 
 describe('themeing functions', () => {
   describe('createTheme', () => {
+    test('override default presets with existing preset ', () => {
+      const theme = createTheme('newskit-light-demo', {
+        baseTheme: newskitLightTheme,
+        themeOverrider: () => ({
+          defaultPresets: {
+            articleHeadline: {
+              heading: {
+                stylePreset: 'buttonSolidPrimary',
+              },
+            },
+          },
+        }),
+      });
+
+      expect(theme).not.toEqual(newskitLightTheme);
+      expect(theme.defaultPresets.articleHeadline.heading.stylePreset).toEqual(
+        'buttonSolidPrimary',
+      );
+    });
+
+    test('override default presets with newly created preset ', () => {
+      const theme = createTheme('newskit-light-demo', {
+        baseTheme: newskitLightTheme,
+        themeOverrider: primitives => ({
+          stylePresets: {
+            buttonTestStyle: {
+              base: {
+                color: primitives.colors.red100,
+                backgroundColor: primitives.colors.red100,
+              },
+            },
+          },
+          defaultPresets: {
+            articleHeadline: {
+              heading: {
+                stylePreset: 'buttonTestStyle',
+              },
+            },
+          },
+        }),
+      });
+
+      const TestSurface = styled.div`
+        display: inline-block;
+        ${getStylePreset('articleHeadline.heading', 'heading')}
+      `;
+
+      const {asFragment} = renderWithTheme(TestSurface, undefined, theme);
+      expect(asFragment()).toMatchSnapshot();
+    });
+
     test('create default Theme', () => {
       const theme = createTheme('newskit-light');
       const copy = Object.assign({}, newskitLightTheme);
@@ -36,11 +90,6 @@ describe('themeing functions', () => {
           interactive030: testColor,
         },
         baseTheme: newskitLightTheme,
-        themeOverrider: () => ({
-          colors: {
-            interactive030: testColor,
-          },
-        }),
       });
       expect(theme.colors.interactive030).toEqual(testColor);
       expect(

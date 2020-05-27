@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`themeing functions createTheme override default presets with newly created preset  1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: inline-block;
+  color: #4D0000;
+  background-color: #4D0000;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
