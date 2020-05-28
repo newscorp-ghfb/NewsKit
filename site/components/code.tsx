@@ -19,6 +19,7 @@ export const Code: React.FC<CodeProps> = ({language = 'jsx', children}) => (
     <ThemeMode.Consumer>
       {(value: string) => (
         <SyntaxHighlighter
+          data-testid="sample-code"
           tabIndex={0}
           language={language}
           style={value === 'light' ? coy : tomorrow}

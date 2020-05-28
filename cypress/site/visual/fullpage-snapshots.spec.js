@@ -20,6 +20,9 @@ Object.entries(routes).forEach(route => {
     it(`should pass visual regression test on ${pageName}`, () => {
       cy.eyesOpen();
       cy.visit(path);
+      if (!pageName.includes('spacing') || !pageName.includes('index')) {
+        cy.get('[data-testid="sample-code"]', {timeout: 5000});
+      }
       cy.eyesCheckWindow(`${pageName} page`);
       cy.eyesClose();
     });
