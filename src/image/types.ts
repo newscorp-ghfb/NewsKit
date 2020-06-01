@@ -8,6 +8,8 @@ import {
   ObjectPositionProperty,
   PaddingTopProperty,
 } from 'csstype';
+import {MQ} from '../utils/style';
+import {StylePresetKeys} from '../themes/mappers/style-preset';
 
 interface Image extends ImgHTMLAttributes<HTMLImageElement> {
   height?: HeightProperty<string>;
@@ -32,7 +34,9 @@ export interface StyledImageProps extends StyledImage, CommonProps {
 
 export interface ImageContainerProps {
   paddingTop?: PaddingTopProperty<number>;
-  stylePreset?: string;
+  overrides?: {
+    stylePreset?: MQ<StylePresetKeys>;
+  };
   isLoading: boolean;
 }
 
@@ -43,5 +47,7 @@ export interface GetDimensionsProp extends Pick<Image, 'height' | 'width'> {
 export interface ImageProps extends Image, CommonProps {
   hideLoadingIcon?: boolean;
   loadingAspectRatio?: string;
-  stylePreset?: string;
+  overrides?: {
+    stylePreset?: MQ<StylePresetKeys>;
+  };
 }

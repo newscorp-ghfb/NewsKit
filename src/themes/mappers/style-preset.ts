@@ -693,12 +693,40 @@ export const createStylePresets = ({
       iconColor: colorPrimitives.inkNonEssential,
     },
   };
-  presets.imageRounded = {
+  presets.imageRoundedSmall = {
     base: {
-      borderRadius: borderRadiusPrimitives.borderRadiusRounded020,
+      borderRadius: borderRadiusPrimitives.borderRadiusRounded010,
     },
     loading: {
       backgroundColor: colorPrimitives.skeleton010,
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+  };
+  presets.imageRoundedMedium = {
+    base: {
+      borderRadius: borderRadiusPrimitives.borderRadiusRounded030,
+    },
+    loading: {
+      backgroundColor: colorPrimitives.skeleton010,
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+  };
+  presets.imageRoundedLarge = {
+    base: {
+      borderRadius: borderRadiusPrimitives.borderRadiusRounded050,
+    },
+    loading: {
+      backgroundColor: colorPrimitives.skeleton010,
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+  };
+  presets.imageDefault = {
+    base: {
+      borderRadius: borderRadiusPrimitives.borderRadiusDefault,
+    },
+    loading: {
+      backgroundColor: colorPrimitives.skeleton010,
+      borderRadius: borderRadiusPrimitives.borderRadiusDefault,
       iconColor: colorPrimitives.inkNonEssential,
     },
   };

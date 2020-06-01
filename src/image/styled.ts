@@ -1,4 +1,4 @@
-import {getStylePresetFromTheme} from '../utils/style-preset';
+import {getStylePreset} from '../utils/style-preset';
 import {styled} from '../utils/style';
 import {StyledImageProps, ImageContainerProps} from './types';
 
@@ -7,14 +7,7 @@ export const ImageContainer = styled.div<ImageContainerProps>`
   width: 100%;
   ${({isLoading, paddingTop = 0}) =>
     isLoading ? {paddingTop, height: 0} : {height: 'auto', paddingTop: 0}}
-  ${({isLoading, ...props}) =>
-    getStylePresetFromTheme(
-      'imageSharp',
-      'stylePreset' as any, // eslint-disable-line @typescript-eslint/no-explicit-any
-      {
-        isLoading,
-      },
-    )(props)}
+  ${({isLoading, ...props}) => getStylePreset('image', '', {isLoading})(props)}
 `;
 
 export const StyledImage = styled.img<StyledImageProps>`

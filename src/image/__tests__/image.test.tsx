@@ -178,11 +178,29 @@ describe('Image', () => {
       test(`renders with ${token}`, () => {
         const props = {
           ...defaultProps,
-          stylePreset: token,
+          overrides: {
+            stylePreset: token,
+          },
         };
+
         const fragment = renderToFragmentWithTheme(Image, props);
         expect(fragment).toMatchSnapshot();
       });
+    });
+
+    test('with mq', () => {
+      const props = {
+        ...defaultProps,
+        overrides: {
+          stylePreset: {
+            md: 'imageRoundedMedium',
+            lg: 'imageRoundedLarge',
+          },
+        },
+      };
+
+      const fragment = renderToFragmentWithTheme(Image, props);
+      expect(fragment).toMatchSnapshot();
     });
   });
 });

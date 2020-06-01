@@ -1,0 +1,5 @@
+{
+  image: {
+    stylePreset: 'imageSharp'
+  }
+}

@@ -70,7 +70,9 @@ const PlayerImage: React.FC<PlayerImageProps> = ({imgSrc, imgAlt}) => (
       src={imgSrc}
       alt={imgAlt}
       loadingAspectRatio="1:1"
-      stylePreset="maskRound010"
+      overrides={{
+        stylePreset: 'maskRound010',
+      }}
     />
   </ImageContainer>
 );

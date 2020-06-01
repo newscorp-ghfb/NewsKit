@@ -66,7 +66,32 @@ export default {
             loadingAspectRatio="3:2"
             alt="Example Image"
             hideLoadingIcon
-            stylePreset="imageRounded"
+            overrides={{
+              stylePreset: 'imageRoundedMedium',
+            }}
+          />
+        </Container>
+      ),
+    },
+    {
+      name: 'rounded-border-radius-with-mq',
+      type: 'story',
+      component: () => (
+        <Container>
+          <StorybookHeading>
+            Image with rounded border-radius and mq
+          </StorybookHeading>
+          <Image
+            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
+            loadingAspectRatio="3:2"
+            alt="Example Image"
+            hideLoadingIcon
+            overrides={{
+              stylePreset: {
+                md: 'imageRoundedMedium',
+                lg: 'imageRoundedLarge',
+              },
+            }}
           />
         </Container>
       ),
@@ -82,7 +107,9 @@ export default {
             loadingAspectRatio="1:1"
             alt="Example Image"
             hideLoadingIcon
-            stylePreset="imageCircle"
+            overrides={{
+              stylePreset: 'imageCircle',
+            }}
           />
         </Container>
       ),

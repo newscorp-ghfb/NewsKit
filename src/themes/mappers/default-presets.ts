@@ -54,4 +54,7 @@ export const defaultPresets = {
       },
     },
   },
+  image: {
+    stylePreset: 'imageSharp',
+  },
 };

@@ -70,7 +70,7 @@ const ImageComponent: React.FC<ImageProps> = ({
   height,
   loadingAspectRatio,
   hideLoadingIcon,
-  stylePreset,
+  overrides = {},
   ...props
 }) => {
   const imageRef: React.RefObject<HTMLImageElement> = useRef(null);
@@ -91,7 +91,7 @@ const ImageComponent: React.FC<ImageProps> = ({
     <ImageContainer
       isLoading={isLoading}
       paddingTop={paddingTop}
-      stylePreset={stylePreset}
+      overrides={overrides}
     >
       {isLoading && (
         <LoadingContainer>
