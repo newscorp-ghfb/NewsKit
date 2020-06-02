@@ -17,8 +17,8 @@ At the moment this component is supporting two version of the Sourcepoint config
 
 ## Prerequisites
 
-To utilise this component you will need to have a [Sourcepoint](https://www.sourcepoint.com) account and, if required, a Sourcepoint messaging subdomain set up. For more information 
-please see Sourcepoint [documentation TCFV2](https://documentation.sourcepoint.com/web-implementation/sourcepoint-gdpr-and-tcf-v2-support-beta/gdpr-and-tcf-v2-setup-and-configuration) and 
+To utilise this component you will need to have a [Sourcepoint](https://www.sourcepoint.com) account and, if required, a Sourcepoint messaging subdomain set up. For more information
+please see Sourcepoint [documentation TCFV2](https://documentation.sourcepoint.com/web-implementation/sourcepoint-gdpr-and-tcf-v2-support-beta/gdpr-and-tcf-v2-setup-and-configuration) and
 [documentation TCFV1](https://documentation.sourcepoint.com/web-implementation/sourcepoint-set-up-and-configuration-v2) for the version 1.
 
 ## Usage
@@ -28,40 +28,33 @@ please see Sourcepoint [documentation TCFV2](https://documentation.sourcepoint.c
 ## Props V2
 
 <LegacyBlock marginTop="sizing040">
-  <Prop name='sourcePointConfig' type="SourcePointConfigProps"  required>
-    The config config that initialises sourcePoint.
-    Required parameters: <b>accountId</b>.
-    optional Parameters: <b>propertyHref,privacyManagerId, siteId, targetingParams, mmsDomain, waitForConsent</b>. See <a href="https://documentation.sourcepoint.com/web-implementation/sourcepoint-set-up-and-configuration-v2">Sourcepoint documentation</a> for full description of options.
-  </Prop>
-  <Prop name="accountId" type="number">
-    <b>This Prop is deprecated on the component and should be set in the sourcepoint config.</b> Your Sourcepoint account id.
-  </Prop>
-  <Prop
-    name="mmsDomain"
-    type="string"
-    default="https://message{accountId}.sp-prod.net"
-  >
-    <b>This Prop is deprecated on the component and should be set in the sourcepoint config. </b>
-    Can be changed to a CNAMED subdomain in order to deliver 1st party cookies
-    on Safari web browser (due to Safari’s ITP). Changing the mmsDomain is
-    optional! More information about setting up an mmsDomain below.
-  </Prop>
-  <Prop name="waitForConsent" type="boolean" default="true">
-    When true (the default value), the consent component will cause prebid.js to
-    wait for user consent to be provided before it initialises.
+  <Prop name="sourcePointConfig" type="SourcePointConfigProps" required>
+    The config that initialises sourcePoint. Required parameters:{' '}
+    <b>accountId</b>. optional Parameters:{' '}
+    <b>
+      propertyHref, privacyManagerId, siteId, targetingParams, mmsDomain,
+      waitForConsent
+    </b>
+    . See <a href="https://documentation.sourcepoint.com/web-implementation/sourcepoint-set-up-and-configuration-v2">
+      Sourcepoint documentation
+    </a> for full description of options.
   </Prop>
   <Prop name="reactHelmet" type="react-helmet Helmet Component">
     By default the Consent component will inject its scripts by rendering script
     tags. However, if your project is using &nbsp;
-    <a href="https://www.npmjs.com/package/react-helmet" target="_blank">React Helmet</a>
-    &nbsp; you can pass the Helmet
-    component in and the scripts will render using that component.
+    <a href="https://www.npmjs.com/package/react-helmet" target="_blank">
+      React Helmet
+    </a>
+    &nbsp; you can pass the Helmet component in and the scripts will render
+    using that component.
   </Prop>
 </LegacyBlock>
 
 ## Props V1
-If you want to use the TCF1 version of the consent the only thing to change is 
+
+If you want to use the TCF1 version of the consent the only thing to change is
 replace propertyHref, if you are using it, with siteHref in the sourcePointConfig object.
+
 <Code>
   {`
     accountId: accountId,
@@ -75,6 +68,7 @@ The minimum parameters for the Consent component to run locally are a sourcePoin
 The `siteHref` or `propertyHref` property should be an url that that exists in your account's property group. Contact your sourcepoint account manager.
 
 In a V2 example it would look like this:
+
 <Code>
   {`<Consent
     sourcePointConfig={{
@@ -83,8 +77,6 @@ In a V2 example it would look like this:
     }}
   />`}
 </Code>
-
-
 
 # AMP
 
@@ -97,28 +89,14 @@ Note the use of the AMP `Head` component. The `Consent` component must be used a
 ## Props With AMP
 
 <LegacyBlock marginTop="sizing040">
-  <Prop name='sourcePointConfig' type="SourcePointConfigProps" required>
-    The config that initialises sourcePoint.
-    Required parameters: <b>accountId, siteName</b>.
-    Optional Parameters: <b>privacyManagerId, siteId and targetingParams</b>.
+  <Prop name="sourcePointConfig" type="SourcePointConfigProps" required>
+    The config that initialises sourcePoint. Required parameters:{' '}
+    <b>accountId, siteName</b>. Optional Parameters:{' '}
+    <b>privacyManagerId, siteId, stageCampaign and targetingParams</b>.
   </Prop>
   <Prop name="postPromptUI" type="string" default="privacy-settings-prompt">
     This is the reference to on-page element that will display after a user has
     provided consent. When this element appears a user can click on it to change
     their consent preferences.
-  </Prop>
-  <Prop name="settingsButtonText" type="string" default="Privacy Settings">
-    The value of this prop will define the text contained in the consent's button
-    that allows the user to access to the privacy settings for the cookies.
-  </Prop>
-   <Prop name="accountId" type="number">
-    <b>This Prop is deprecated on the component and should be set in the sourcepoint config. </b>Your Sourcepoint account id.
-  </Prop>
-  <Prop name="siteName" type="string">
-    <b>This Prop is deprecated on the component and should be set in the sourcepoint config. </b>The name of your site.
-  </Prop>
-  <Prop name="privacyManagerId" type="string">
-    <b>This Prop is deprecated on the component and should be set in the sourcepoint config. </b> This attribute corresponds to the ID of the privacy manager used for this
-    site.
   </Prop>
 </LegacyBlock>

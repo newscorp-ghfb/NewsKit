@@ -17,6 +17,7 @@ export interface SourcePointConfigProps {
   privacyManagerId?: string;
   siteId?: string;
   targetingParams?: object;
+  stageCampaign?: boolean;
 }
 
 interface AmpConsentButton {
@@ -55,10 +56,11 @@ export const Consent = connectAmpScript<ConsentProps>('amp-consent')(
           __html: JSON.stringify({
             postPromptUI,
             clientConfig: {
-              accountId: accountId || sourcePointConfig.accountId,
-              siteName: siteName || sourcePointConfig.siteName,
-              privacyManagerId:
-                privacyManagerId || sourcePointConfig.privacyManagerId,
+              // Legacy props
+              accountId,
+              siteName,
+              privacyManagerId,
+              // New props
               ...sourcePointConfig,
             },
           }),
