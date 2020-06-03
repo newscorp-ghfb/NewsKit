@@ -28,16 +28,27 @@ please see Sourcepoint [documentation TCFV2](https://documentation.sourcepoint.c
 ## Props V2
 
 <LegacyBlock marginTop="sizing040">
-  <Prop name="sourcePointConfig" type="SourcePointConfigProps" required>
-    The config that initialises sourcePoint. Required parameters:{' '}
-    <b>accountId</b>. optional Parameters:{' '}
-    <b>
-      propertyHref, privacyManagerId, siteId, targetingParams, mmsDomain,
-      waitForConsent
-    </b>
-    . See <a href="https://documentation.sourcepoint.com/web-implementation/sourcepoint-set-up-and-configuration-v2">
-      Sourcepoint documentation
-    </a> for full description of options.
+  <Prop name='sourcePointConfigTCFV2' required>
+    The config that initialises sourcePoint.
+    Required parameters: <b>accountId</b>.
+    optional Parameters: <b>propertyHref,privacyManagerId, siteId, targetingParams, mmsDomain, waitForConsent</b>. See <a href="https://documentation.sourcepoint.com/web-implementation/sourcepoint-set-up-and-configuration-v2">Sourcepoint documentation</a> for full description of options.
+  </Prop>
+  <Prop name="accountId" type="number">
+    <b>This Prop is deprecated on the component and should be set in the sourcepoint config.</b> Your Sourcepoint account id.
+  </Prop>
+  <Prop
+    name="mmsDomain"
+    type="string"
+    default="https://message{accountId}.sp-prod.net"
+  >
+    <b>This Prop is deprecated on the component and should be set in the sourcepoint config. </b>
+    Can be changed to a CNAMED subdomain in order to deliver 1st party cookies
+    on Safari web browser (due to Safari’s ITP). Changing the mmsDomain is
+    optional! More information about setting up an mmsDomain below.
+  </Prop>
+  <Prop name="waitForConsent" type="boolean" default="false">
+    When true (the default value), the consent component will cause prebid.js to
+    wait for user consent to be provided before it initialises.
   </Prop>
   <Prop name="reactHelmet" type="react-helmet Helmet Component">
     By default the Consent component will inject its scripts by rendering script
@@ -51,15 +62,16 @@ please see Sourcepoint [documentation TCFV2](https://documentation.sourcepoint.c
 </LegacyBlock>
 
 ## Props V1
-
-If you want to use the TCF1 version of the consent the only thing to change is
-replace propertyHref, if you are using it, with siteHref in the sourcePointConfig object.
-
+If you want to use the TCF1 version of the consent rather than passing the SourcePoint config through 
+sourcePointConfigTCFV2, you have to pass them through `sourcePointConfig`. 
+Secondly pass the `accountId` as a string and rename `propertyHref` to `siteHref` if used.
 <Code>
-  {`
-    accountId: accountId,
-    siteHref: 'http://newskit.co.uk/'
-  `}
+    {`<Consent
+    sourcePointConfig={{
+      accountId: "accountId",
+      siteHref: 'http://newskit.co.uk/'
+    }}
+  />`}
 </Code>
 
 ## How to run on localhost
@@ -71,7 +83,7 @@ In a V2 example it would look like this:
 
 <Code>
   {`<Consent
-    sourcePointConfig={{
+    sourcePointConfigTCFV2={{
       accountId: accountId,
       propertyHref: 'http://newskit.co.uk/'
     }}

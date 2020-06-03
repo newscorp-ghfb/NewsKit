@@ -37,8 +37,7 @@ export default class MyDocument extends Document<Props> {
           {helmet.script.toComponent()}
           <Meta />
           <Consent
-            version="TCFv2"
-            sourcePointConfig={{
+            sourcePointConfigTCFV2={{
               accountId: 259,
               propertyHref: 'https://newskit.dev-news.co.uk',
             }}
