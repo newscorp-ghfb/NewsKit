@@ -7,7 +7,6 @@ const routes = {
   dateLine: '/components/date-line',
   icons: '/foundations/icons',
   radioPlayer: '/components/radio-player',
-  shareBar: '/components/share-bar',
   spacing: '/foundations/spacing',
   typography: '/foundations/typography',
   welcome: '/index',

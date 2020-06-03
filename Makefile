@@ -24,7 +24,7 @@ install:
 	yarn install --frozen-lockfile
 
 install_cypress:
-	yarn global add cypress@3.8.2;
+	yarn global add cypress@4.7.0;
 
 build_components:
 	yarn build:comps
