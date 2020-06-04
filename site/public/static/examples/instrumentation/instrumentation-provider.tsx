@@ -8,11 +8,12 @@ import {
 const handlers = [
   instrumentationHandlers.createConsoleHandler(),
   instrumentationHandlers.createTealiumHandler(),
-
 ];
+
 const contextObject = {
-  url: 'www.my-amazing-website.com',
-}
+  pageUrl: 'www.my-amazing-website.com',
+};
+
 const instrumentation = createEventInstrumentation(handlers, contextObject);
 
 const MyPage = (

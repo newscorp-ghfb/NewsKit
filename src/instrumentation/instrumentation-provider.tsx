@@ -1,5 +1,6 @@
 import React, {useContext, useCallback} from 'react';
 import {EventInstrumentation, InstrumentationEvent} from './types';
+import {mergeContexts} from './event-instrumentation';
 
 const InstrumentationContext = React.createContext<EventInstrumentation>({
   context: {},
@@ -8,12 +9,15 @@ const InstrumentationContext = React.createContext<EventInstrumentation>({
 
 export const InstrumentationProvider: React.FC<
   Partial<EventInstrumentation>
-> = ({context, fireEvent, children}) => {
+> = ({context = {}, fireEvent, children}) => {
   const parent = useContext(InstrumentationContext);
+
   return (
     <InstrumentationContext.Provider
       value={{
-        fireEvent: fireEvent || parent.fireEvent,
+        fireEvent:
+          fireEvent ||
+          (event => parent.fireEvent(mergeContexts(context, event))),
         context: {
           ...parent.context,
           ...context,
@@ -29,7 +33,7 @@ const useFireEvent = () => {
   // Don't expose the internal context object.
   const {fireEvent, context} = useContext(InstrumentationContext);
   return useCallback(
-    (event: InstrumentationEvent) => fireEvent({...event, context}),
+    (event: InstrumentationEvent) => fireEvent(mergeContexts(context, event)),
     [context, fireEvent],
   );
 };

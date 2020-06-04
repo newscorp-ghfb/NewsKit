@@ -40,22 +40,25 @@ describe('InstrumentationProvider & withInstrumentation', () => {
   describe('for multiple layers of contexts', () => {
     test('sends expected context via expected fireEvent function', () => {
       const fireOrder: string[] = [];
-      const MockComponent: React.FC<{originator: string}> = withInstrumentation(
-        ({originator, fireEvent}) => {
-          fireOrder.push(originator);
-          fireEvent({
-            originator,
-            trigger: EventTrigger.Click,
-          });
-          return <div />;
-        },
-      );
+      const MockComponent: React.FC<{
+        originator: string;
+        context?: any;
+      }> = withInstrumentation(({originator, context, fireEvent}) => {
+        fireOrder.push(originator);
+        fireEvent({
+          originator,
+          context,
+          trigger: EventTrigger.Click,
+        });
+        return <div />;
+      });
 
       const mockFireEvent1 = jest.fn();
       const mockFireEvent2 = jest.fn();
       const mockContext1 = {context: 'object 1', prop1: 'context'};
       const mockContext2 = {context: 'object 2', prop2: 'context'};
       const mockContext3 = {context: 'object 3', prop3: 'context'};
+      const mockContext4 = {context: 'object 4', prop4: 'context'};
 
       render(
         <InstrumentationProvider
@@ -70,6 +73,7 @@ describe('InstrumentationProvider & withInstrumentation', () => {
               fireEvent={mockFireEvent2}
             >
               <MockComponent originator="comp-3" />
+              <MockComponent originator="comp-4" context={mockContext4} />
             </InstrumentationProvider>
           </InstrumentationProvider>
         </InstrumentationProvider>,
@@ -97,7 +101,17 @@ describe('InstrumentationProvider & withInstrumentation', () => {
           ...mockContext3,
         },
       });
-      expect(fireOrder).toEqual(['comp-1', 'comp-2', 'comp-3']);
+      expect(mockFireEvent2).toHaveBeenCalledWith({
+        originator: 'comp-4',
+        trigger: EventTrigger.Click,
+        context: {
+          ...mockContext1,
+          ...mockContext2,
+          ...mockContext3,
+          ...mockContext4,
+        },
+      });
+      expect(fireOrder).toEqual(['comp-1', 'comp-2', 'comp-3', 'comp-4']);
     });
   });
 });

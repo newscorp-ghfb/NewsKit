@@ -6,7 +6,7 @@ import {
   EventTrigger,
 } from './types';
 
-const mergeContexts = (
+export const mergeContexts = (
   context: EventContext,
   event: InstrumentationEvent,
 ): InstrumentationEvent => ({

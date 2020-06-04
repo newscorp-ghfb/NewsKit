@@ -11,7 +11,7 @@ export default Layout;
 
 NewsKit components are built to emit events "out of the box" via the provided NewsKit event instrumentation system. This system requires a small amount of setup in your project to allow the emitted events to reach your desired tag manager. Events fired via the provided instrumentation system can be forwarded to as many "handlers" as desired. NewsKit provides two handlers; a console handler which outputs the fired events to the browser console, and a Tealium handler which forwards the event onto the Tealium tag manager (Tealium must be present on the page for this handler to work). You can also create your own handlers, for example if you require forwarding events to a different tag manager.
 
-As well as the above handlers, NewsKit also provided a middleware composition system to allow for operations on events before they reach a handler. For example, if you wanted to filter events to forward only a specific set to a tag manager, perform some event data tranformations, or batch the events reaching a handler.
+As well as the above handlers, NewsKit also provided a middleware composition system to allow for operations on events before they reach a handler. For example, if you wanted to filter events to forward only a specific set to a tag manager, perform some event data transformations, or batch the events reaching a handler.
 
 For more information, users with the relevant access can read the internal RFC which lead to this implementation. This can be found on [GitHub](https://github.com/newsuk/nuk-rfcs/blob/master/active/0037-user-interface-event-instrumentation.md).
 
@@ -45,13 +45,11 @@ In this example the Link component, and any other NewsKit instrumentation enable
   )}
 </Code>
 
-InstrumentationProviders can be nested if you wish to extend the context object to add extra data. This can be helpful where you wish to differentiate more generic events in certain areas, for example in a recommendation rail you may to include contextual information on what articles were recommended to the user.
-
-<CodeFromFile path="examples/instrumentation/instrumentation-provider-nested.tsx" />
+InstrumentationProvider components can be nested if you wish to extend the context object to add extra data. See the relevant section below for more information and examples.
 
 ## Middleware
 
-NewsKit also contains a middleware composition system to allow for operations on events before they reach a handler. For example, if you wanted to filter events to forward only a specific set to a tag manager, perform some event data tranformations, or batch the events reaching a handler. Instrumentation middleware functions have the same signature as handlers; they take in an array of events and must return an array of events. The returned array can be a different length or even empty if necessary, though it is recommended that middleware functions are pure and do not mutate the array or events.
+NewsKit also contains a middleware composition system to allow for operations on events before they reach a handler. For example, if you wanted to filter events to forward only a specific set to a tag manager, perform some event data transformations, or batch the events reaching a handler. Instrumentation middleware functions have the same signature as handlers; they take in an array of events and must return an array of events. The returned array can be a different length or even empty if necessary, though it is recommended that middleware functions are pure and do not mutate the array or events.
 
 In the example below, filter middleware is used to pass only specific events to specific handlers.
 
@@ -69,3 +67,56 @@ You can then call this function with your custom instrumentation event as necess
 <EnumTable>{EventTrigger}</EnumTable>
 
 <CodeFromFile path="examples/instrumentation/with-instrumentation.tsx" />
+
+## Nested Instrumentation Providers & Contexts
+
+It is possible to build up and extend an events context by nesting instances of the `InstrumentationProvider`. Each provider can take a context object which will be shallow merged onto the parent when an event is fired.
+
+This can be useful to build up event information which is specific to a particular component instance, without that component needing to know anything outside its own scope. For example, a button can fire a click event, but the layers of context can provide the information on what the button is for and where it is on the page.
+
+<CodeFromFile path="examples/instrumentation/instrumentation-provider-nested.tsx" />
+
+In this example we have a root `InstrumentationProvider` providing the page url. Inside the `Rail` component we have another `InstrumentationProvider`; this provides any child events with rail specifics, like the rail name. The `RailItem` then contains a button which fires a click event. The resulting click event would look like this:
+
+<Code>
+  {JSON.stringify(
+    {
+      context: {
+        pageUrl: 'www.my-amazing-website.com',
+        pageArea: 'rail',
+        railName: 'Some great rail',
+      },
+      originator: 'button',
+      trigger: 'click',
+    },
+    null,
+    2,
+  )}
+</Code>
+
+It is important to remember that in the example above, the `fireEvent` function is scoped to the context of the parent provider (the one which wraps the `RailItem`). This means if we wanted to add more context to the event inside the `RailItem`, in the example above, doing the following would NOT work as expected. The `railItemId` we are adding to the context would NOT appear on the event context.
+
+<CodeFromFile path="examples/instrumentation/instrumentation-provider-nested-2.tsx" />
+
+Instead, we can add context to the event directly (or we must put the button into a separate component and get the `fireEvent` function at that scope level). Passing context information via the fireEvent function is the simpler of the two options:
+
+<CodeFromFile path="examples/instrumentation/instrumentation-provider-nested-3.tsx" />
+
+This would produce the following event (for rail item 1) as expected:
+
+<Code>
+  {JSON.stringify(
+    {
+      context: {
+        pageUrl: 'www.my-amazing-website.com',
+        pageArea: 'rail',
+        railName: 'Some great rail',
+        railItemId: 1,
+      },
+      originator: 'button',
+      trigger: 'click',
+    },
+    null,
+    2,
+  )}
+</Code>

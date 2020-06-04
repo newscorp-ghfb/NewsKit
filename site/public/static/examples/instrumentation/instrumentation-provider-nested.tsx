@@ -1,27 +1,62 @@
+import React from 'react';
+
 import {
+  InstrumentationProvider,
   instrumentationHandlers,
   createEventInstrumentation,
-  InstrumentationProvider,
-  Link,
+  ThemeProvider,
+  newskitLightTheme,
+  EventTrigger,
+  useInstrumentation,
 } from 'newskit';
 
-const handlers = [instrumentationHandlers.createConsoleHandler()];
-const contextObject = {
-  url: 'www.my-amazing-website.com',
+const rootContext = {
+  pageUrl: 'www.my-amazing-website.com',
 };
-const instrumentation = createEventInstrumentation(handlers, contextObject);
 
-const MyRailSection = ({railItems}) => (
-  <InstrumentationProvider context={{showRailItems: railItems}}>
-    {railItems.map(item => (
-      <MyRailItem data={item} />
-    ))}
-  </InstrumentationProvider>
+const instrumentation = createEventInstrumentation(
+  [instrumentationHandlers.createConsoleHandler()],
+  rootContext,
 );
 
-const MyPage = (
-  <InstrumentationProvider {...instrumentation}>
-    <Link href="example.com">My Amazing Link</Link>
-    <MyRailSection railItems={railItems}/>
-  </InstrumentationProvider>
+const RailItem: React.FC<{itemId: number}> = ({itemId, ...props}) => {
+  const {fireEvent} = useInstrumentation();
+  return (
+    <button
+      {...props}
+      onClick={() => {
+        fireEvent({
+          originator: 'button',
+          trigger: EventTrigger.Click,
+        });
+      }}
+    >
+      {itemId}: A really great item!
+    </button>
+  );
+};
+
+const Rail: React.FC<{
+  railName: string;
+}> = ({railName}) => (
+  <div>
+    <InstrumentationProvider
+      context={{
+        pageArea: 'rail',
+        railName,
+      }}
+    >
+      <h3>{railName}</h3>
+      <RailItem itemId={1} />
+      <RailItem itemId={2} />
+    </InstrumentationProvider>
+  </div>
+);
+
+const App = () => (
+  <ThemeProvider theme={newskitLightTheme}>
+    <InstrumentationProvider {...instrumentation}>
+      <Rail railName="Some great rail" />
+    </InstrumentationProvider>
+  </ThemeProvider>
 );
