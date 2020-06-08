@@ -19,13 +19,17 @@ export default {
           <ShareBar>
             <IconButton
               size={ButtonSize.Large}
-              stylePreset="buttonSocialTwitter"
+              overrides={{
+                stylePreset: 'buttonSocialTwitter',
+              }}
             >
               <Twitter />
             </IconButton>
             <IconButton
               size={ButtonSize.Large}
-              stylePreset="buttonSocialFacebook"
+              overrides={{
+                stylePreset: 'buttonSocialFacebook',
+              }}
             >
               <Facebook />
             </IconButton>
@@ -36,13 +40,17 @@ export default {
           <ShareBar label="Share">
             <IconButton
               size={ButtonSize.Large}
-              stylePreset="buttonSocialTwitter"
+              overrides={{
+                stylePreset: 'buttonSocialTwitter',
+              }}
             >
               <Twitter />
             </IconButton>
             <IconButton
               size={ButtonSize.Large}
-              stylePreset="buttonSocialFacebook"
+              overrides={{
+                stylePreset: 'buttonSocialFacebook',
+              }}
             >
               <Facebook />
             </IconButton>
@@ -53,13 +61,17 @@ export default {
           <ShareBar label="Share">
             <IconButton
               size={ButtonSize.Large}
-              stylePreset="buttonSocialTwitter"
+              overrides={{
+                stylePreset: 'buttonSocialTwitter',
+              }}
             >
               <Twitter />
             </IconButton>
             <IconButton
               size={ButtonSize.Large}
-              stylePreset="buttonSocialFacebook"
+              overrides={{
+                stylePreset: 'buttonSocialFacebook',
+              }}
             >
               <Facebook />
             </IconButton>
@@ -83,13 +95,17 @@ export default {
           >
             <IconButton
               size={ButtonSize.Large}
-              stylePreset="buttonSocialTwitter"
+              overrides={{
+                stylePreset: 'buttonSocialTwitter',
+              }}
             >
               <Twitter />
             </IconButton>
             <IconButton
               size={ButtonSize.Large}
-              stylePreset="buttonSocialFacebook"
+              overrides={{
+                stylePreset: 'buttonSocialFacebook',
+              }}
             >
               <Facebook />
             </IconButton>
@@ -109,13 +125,17 @@ export default {
           <ShareBar vertical>
             <IconButton
               size={ButtonSize.Large}
-              stylePreset="buttonSocialTwitter"
+              overrides={{
+                stylePreset: 'buttonSocialTwitter',
+              }}
             >
               <Twitter />
             </IconButton>
             <IconButton
               size={ButtonSize.Large}
-              stylePreset="buttonSocialFacebook"
+              overrides={{
+                stylePreset: 'buttonSocialFacebook',
+              }}
             >
               <Facebook />
             </IconButton>
@@ -126,13 +146,17 @@ export default {
           <ShareBar vertical label="Share">
             <IconButton
               size={ButtonSize.Large}
-              stylePreset="buttonSocialTwitter"
+              overrides={{
+                stylePreset: 'buttonSocialTwitter',
+              }}
             >
               <Twitter />
             </IconButton>
             <IconButton
               size={ButtonSize.Large}
-              stylePreset="buttonSocialFacebook"
+              overrides={{
+                stylePreset: 'buttonSocialFacebook',
+              }}
             >
               <Facebook />
             </IconButton>
@@ -143,13 +167,17 @@ export default {
           <ShareBar vertical label="Share">
             <IconButton
               size={ButtonSize.Large}
-              stylePreset="buttonSocialTwitter"
+              overrides={{
+                stylePreset: 'buttonSocialTwitter',
+              }}
             >
               <Twitter />
             </IconButton>
             <IconButton
               size={ButtonSize.Large}
-              stylePreset="buttonSocialFacebook"
+              overrides={{
+                stylePreset: 'buttonSocialFacebook',
+              }}
             >
               <Facebook />
             </IconButton>

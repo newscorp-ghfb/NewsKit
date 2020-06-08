@@ -8,58 +8,48 @@ import {
   StyledTextCropWrapper,
   IE11FixContainer,
 } from './styled';
+import {useTheme} from '../themes/emotion';
+import {getToken} from '../utils/get-token';
+import {filterOutFalsyProperties} from '../utils/filter-object';
 
-const flagSizeStyleTokens: Record<FlagSize, Partial<BaseFlagProps>> = {
-  [FlagSize.Large]: {
-    typePreset: 'flag020',
-    minHeight: 'sizing060',
-    padding: 'spaceInset020Squish',
-  },
-  [FlagSize.Small]: {
-    typePreset: 'flag010',
-    minHeight: 'sizing050',
-    padding: 'spaceInset010Squish',
-  },
+const BaseFlag: React.FC<BaseFlagProps> = ({children, overrides, ...props}) => {
+  const theme = useTheme();
+
+  return (
+    <IE11FixContainer overrides={overrides}>
+      <StyledBaseFlag {...props} overrides={overrides}>
+        <Stack
+          space={getToken({theme, overrides}, '', '', 'space')}
+          flow={Flow.HorizontalCenter}
+          stackDistribution={StackDistribution.Center}
+        >
+          {React.Children.map(children, child =>
+            typeof child === 'string' ? (
+              <StyledTextCropWrapper overrides={overrides}>
+                {child}
+              </StyledTextCropWrapper>
+            ) : (
+              child
+            ),
+          )}
+        </Stack>
+      </StyledBaseFlag>
+    </IE11FixContainer>
+  );
 };
 
-const BaseFlag: React.FC<BaseFlagProps> = ({
-  children,
-  typePreset,
-  space = 'sizing010',
-  height,
-  width,
-  ...props
-}) => (
-  <IE11FixContainer $height={height} $width={width}>
-    <StyledBaseFlag {...props} $height={height} $width={width}>
-      <Stack
-        space={space}
-        flow={Flow.HorizontalCenter}
-        stackDistribution={StackDistribution.Center}
-      >
-        {React.Children.map(children, child =>
-          typeof child === 'string' ? (
-            <StyledTextCropWrapper typePreset={typePreset}>
-              {child}
-            </StyledTextCropWrapper>
-          ) : (
-            child
-          ),
-        )}
-      </Stack>
-    </StyledBaseFlag>
-  </IE11FixContainer>
-);
-
-export const Flag: React.FC<FlagProps> = props => {
+export const Flag: React.FC<FlagProps> = ({overrides = {}, ...props}) => {
+  const theme = useTheme();
   const {size = FlagSize.Small} = props;
+
   return (
     <BaseFlag
       data-testid="flag"
-      stylePreset="flagDefault"
-      iconSize="iconSize010"
-      {...flagSizeStyleTokens[size]}
       {...props}
+      overrides={{
+        ...theme.defaultPresets.flag[size],
+        ...filterOutFalsyProperties(overrides),
+      }}
     />
   );
 };

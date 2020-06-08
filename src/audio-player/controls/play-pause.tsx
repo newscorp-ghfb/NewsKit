@@ -12,7 +12,7 @@ export interface PlayerButtonProps {
 }
 
 export const PlayerButton: React.FC<PlayerButtonProps> = React.memo(
-  ({isPlaying, canPause, ...props}) => {
+  ({isPlaying, canPause, stylePreset, ...props}) => {
     const notPlaying = canPause ? (
       <Pause focusable="false" title="Pause" />
     ) : (
@@ -23,6 +23,7 @@ export const PlayerButton: React.FC<PlayerButtonProps> = React.memo(
         data-testid="audio-player-play-button"
         aria-pressed={isPlaying ? 'true' : 'false'}
         size={ButtonSize.Large}
+        overrides={{stylePreset}}
         {...props}
       >
         {isPlaying ? notPlaying : <Play focusable="false" title="Play" />}

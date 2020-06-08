@@ -67,9 +67,9 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 8px;
   width: 32px;
   height: 32px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -437,9 +437,9 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 8px;
   width: 32px;
   height: 32px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -807,9 +807,9 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 8px;
   width: 32px;
   height: 32px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -1140,9 +1140,9 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 8px;
   width: 32px;
   height: 32px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -1546,9 +1546,9 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 8px;
   width: 32px;
   height: 32px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -1916,9 +1916,9 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 8px;
   width: 32px;
   height: 32px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -2286,9 +2286,9 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 8px;
   width: 32px;
   height: 32px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -2656,9 +2656,9 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 8px;
   width: 32px;
   height: 32px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -3026,9 +3026,9 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 8px;
   width: 32px;
   height: 32px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;

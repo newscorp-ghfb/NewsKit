@@ -9,16 +9,8 @@ import {
   hasSpacing,
 } from './styled';
 import {useTheme, Theme} from '../themes';
-import {isStackChild} from '../stack-child';
-
-export const isStack = (
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  component: any,
-) =>
-  component &&
-  component.type &&
-  // eslint-disable-next-line no-use-before-define
-  component.type.displayName === Stack.displayName;
+import {StackChild} from '../stack-child';
+import {hasMatchingDisplayNameWith} from '../utils/component';
 
 const wrapChild = (
   theme: Theme,
@@ -35,7 +27,8 @@ const wrapChild = (
     $wrap: wrap,
   };
 
-  if (isStack(child)) {
+  // eslint-disable-next-line no-use-before-define
+  if (hasMatchingDisplayNameWith(child, Stack)) {
     return list ? (
       <StyledMasterContainerListElement flexGrow {...child.props}>
         <Stack flexGrow {...child.props} />
@@ -46,7 +39,7 @@ const wrapChild = (
   }
 
   if (hasSpacing(theme, space)) {
-    if (isStackChild(child) && child.props.order) {
+    if (hasMatchingDisplayNameWith(child, StackChild) && child.props.order) {
       const {
         props: {order},
       } = child;

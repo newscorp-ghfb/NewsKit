@@ -1,7 +1,6 @@
 import {FontWeightProperty as FontWeight} from 'csstype';
 import {fontPrimitives, FontPrimitives} from '../newskit-light/fonts';
 import {getFontSizing} from '../../utils/font-sizing';
-import {getFontProps} from '../../utils/get-font-props';
 
 const getFontWithFallback = (font: string, fallback: string) =>
   font === fallback ? font : `${font}, ${fallback}`;
@@ -249,54 +248,14 @@ const getBaseTypePresets = (p: FontPrimitives) => {
 
     // Flag
 
-    flag010: {
-      ...label010,
-      ...getFontProps(
-        label010.fontSize,
-        label010.lineHeight,
-        label010.fontFamily,
-        p,
-      ),
-    },
-    flag020: {
-      ...label020,
-      ...getFontProps(
-        label020.fontSize,
-        label020.lineHeight,
-        label020.fontFamily,
-        p,
-      ),
-    },
+    flag010: label010,
+    flag020: label020,
 
     // Tag
 
-    tag010: {
-      ...label010,
-      ...getFontProps(
-        label010.fontSize,
-        label010.lineHeight,
-        label010.fontFamily,
-        p,
-      ),
-    },
-    tag020: {
-      ...label020,
-      ...getFontProps(
-        label020.fontSize,
-        label020.lineHeight,
-        label020.fontFamily,
-        p,
-      ),
-    },
-    tag030: {
-      ...label030,
-      ...getFontProps(
-        label030.fontSize,
-        label030.lineHeight,
-        label030.fontFamily,
-        p,
-      ),
-    },
+    tag010: label010,
+    tag020: label020,
+    tag030: label030,
 
     font500: {
       fontFamily: fontFamily1,
@@ -314,36 +273,18 @@ export const createTypePresets = (p: FontPrimitives) => {
     ...baseTypePresets,
 
     // Button
-    // Use `withCrop` option in the default util in PPDSC-1120
+
     buttonSmall: {
       ...baseTypePresets.label010,
       letterSpacing: p.fontLetterSpacing030,
-      ...getFontProps(
-        baseTypePresets.label010.fontSize,
-        baseTypePresets.label010.lineHeight,
-        baseTypePresets.label010.fontFamily,
-        p,
-      ),
     },
     buttonMedium: {
       ...baseTypePresets.label020,
       letterSpacing: p.fontLetterSpacing030,
-      ...getFontProps(
-        baseTypePresets.label020.fontSize,
-        baseTypePresets.label020.lineHeight,
-        baseTypePresets.label020.fontFamily,
-        p,
-      ),
     },
     buttonLarge: {
       ...baseTypePresets.label030,
       letterSpacing: p.fontLetterSpacing030,
-      ...getFontProps(
-        baseTypePresets.label030.fontSize,
-        baseTypePresets.label030.lineHeight,
-        baseTypePresets.label030.fontFamily,
-        p,
-      ),
     },
 
     dropCap: {

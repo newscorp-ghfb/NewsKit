@@ -11,8 +11,9 @@ export enum TagListLayout {
   Right = 'right',
 }
 
-export interface TagListProps extends Pick<TagProps, 'size' | 'stylePreset'> {
+export interface TagListProps extends Pick<TagProps, 'size'> {
   tagData: TagData[];
   layout?: TagListLayout;
   spacing?: SizingKeys;
+  stylePreset?: string;
 }

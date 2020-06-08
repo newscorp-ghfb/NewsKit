@@ -112,16 +112,16 @@ export default {
           <Container>
             <Border>
               <Spacer>
-                <Button size={ButtonSize.Small} width="100%">
+                <Button size={ButtonSize.Small} overrides={{width: '100%'}}>
                   Small full-width button
                 </Button>
               </Spacer>
               <Spacer>
-                <Button size={ButtonSize.Medium} width="100%">
+                <Button size={ButtonSize.Medium} overrides={{width: '100%'}}>
                   Medium full-width button
                 </Button>
               </Spacer>
-              <Button size={ButtonSize.Large} width="100%">
+              <Button size={ButtonSize.Large} overrides={{width: '100%'}}>
                 Large full-width button
               </Button>
             </Border>
@@ -138,16 +138,22 @@ export default {
           <Container>
             <Border>
               <Spacer>
-                <Button size={ButtonSize.Small} width="sizing120">
+                <Button
+                  size={ButtonSize.Small}
+                  overrides={{width: 'sizing120'}}
+                >
                   Small fixed-width button
                 </Button>
               </Spacer>
               <Spacer>
-                <Button size={ButtonSize.Medium} width="sizing120">
+                <Button
+                  size={ButtonSize.Medium}
+                  overrides={{width: 'sizing120'}}
+                >
                   Medium fixed-width button
                 </Button>
               </Spacer>
-              <Button size={ButtonSize.Large} width="sizing120">
+              <Button size={ButtonSize.Large} overrides={{width: 'sizing120'}}>
                 Large fixed-width button
               </Button>
             </Border>
@@ -181,23 +187,23 @@ export default {
                   >
                     <h3>{style}</h3>
                     <Block theme={newskitLightTheme} data-state="Default">
-                      <Button stylePreset={stylePreset}>Button</Button>
+                      <Button overrides={{stylePreset}}>Button</Button>
                     </Block>
 
                     <Block theme={newskitLightTheme} data-state="Focused">
-                      <Button autoFocus stylePreset={stylePreset}>
+                      <Button autoFocus overrides={{stylePreset}}>
                         Button
                       </Button>
                     </Block>
 
                     <Block theme={newskitLightTheme} data-state="Disabled">
-                      <Button disabled stylePreset={stylePreset}>
+                      <Button disabled overrides={{stylePreset}}>
                         Button
                       </Button>
                     </Block>
 
                     <Block theme={newskitLightTheme} data-state="Loading">
-                      <Button stylePreset={stylePreset} isLoading>
+                      <Button overrides={{stylePreset}} isLoading>
                         Button
                       </Button>
                     </Block>
@@ -238,23 +244,23 @@ export default {
                   >
                     <h3>{style}</h3>
                     <Block theme={newskitLightTheme} data-state="Default">
-                      <Button stylePreset={stylePreset}>Button</Button>
+                      <Button overrides={{stylePreset}}>Button</Button>
                     </Block>
 
                     <Block theme={newskitLightTheme} data-state="Focused">
-                      <Button autoFocus stylePreset={stylePreset}>
+                      <Button autoFocus overrides={{stylePreset}}>
                         Button
                       </Button>
                     </Block>
 
                     <Block theme={newskitLightTheme} data-state="Disabled">
-                      <Button disabled stylePreset={stylePreset}>
+                      <Button disabled overrides={{stylePreset}}>
                         Button
                       </Button>
                     </Block>
 
                     <Block theme={newskitLightTheme} data-state="Loading">
-                      <Button stylePreset={stylePreset} isLoading>
+                      <Button overrides={{stylePreset}} isLoading>
                         Button
                       </Button>
                     </Block>
@@ -295,23 +301,23 @@ export default {
                   >
                     <h3>{style}</h3>
                     <Block theme={newskitLightTheme} data-state="Default">
-                      <Button stylePreset={stylePreset}>Button</Button>
+                      <Button overrides={{stylePreset}}>Button</Button>
                     </Block>
 
                     <Block theme={newskitLightTheme} data-state="Focused">
-                      <Button autoFocus stylePreset={stylePreset}>
+                      <Button autoFocus overrides={{stylePreset}}>
                         Button
                       </Button>
                     </Block>
 
                     <Block theme={newskitLightTheme} data-state="Disabled">
-                      <Button disabled stylePreset={stylePreset}>
+                      <Button disabled overrides={{stylePreset}}>
                         Button
                       </Button>
                     </Block>
 
                     <Block theme={newskitLightTheme} data-state="Loading">
-                      <Button stylePreset={stylePreset} isLoading>
+                      <Button overrides={{stylePreset}} isLoading>
                         Button
                       </Button>
                     </Block>
@@ -351,23 +357,23 @@ export default {
                   >
                     <h3>{style}</h3>
                     <Block theme={newskitLightTheme} data-state="Default">
-                      <Button stylePreset={stylePreset}>Button</Button>
+                      <Button overrides={{stylePreset}}>Button</Button>
                     </Block>
 
                     <Block theme={newskitLightTheme} data-state="Focused">
-                      <Button autoFocus stylePreset={stylePreset}>
+                      <Button autoFocus overrides={{stylePreset}}>
                         Button
                       </Button>
                     </Block>
 
                     <Block theme={newskitLightTheme} data-state="Disabled">
-                      <Button disabled stylePreset={stylePreset}>
+                      <Button disabled overrides={{stylePreset}}>
                         Button
                       </Button>
                     </Block>
 
                     <Block theme={newskitLightTheme} data-state="Loading">
-                      <Button stylePreset={stylePreset} isLoading>
+                      <Button overrides={{stylePreset}} isLoading>
                         Button
                       </Button>
                     </Block>
@@ -475,7 +481,7 @@ export default {
                     <h3>{style}</h3>
                     <Block theme={newskitLightTheme} data-state="Default">
                       <IconButton
-                        stylePreset={stylePreset}
+                        overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                       >
                         <Pause />
@@ -485,7 +491,7 @@ export default {
                     <Block theme={newskitLightTheme} data-state="Focused">
                       <IconButton
                         autoFocus
-                        stylePreset={stylePreset}
+                        overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                       >
                         <CopyLink />
@@ -495,7 +501,7 @@ export default {
                     <Block theme={newskitLightTheme} data-state="Disabled">
                       <IconButton
                         disabled
-                        stylePreset={stylePreset}
+                        overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                       >
                         <Email />
@@ -504,7 +510,7 @@ export default {
 
                     <Block theme={newskitLightTheme} data-state="Loading">
                       <IconButton
-                        stylePreset={stylePreset}
+                        overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                         isLoading
                       >

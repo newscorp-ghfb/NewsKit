@@ -1,4 +1,8 @@
-import {filterObject, rejectObject} from '../filter-object';
+import {
+  filterObject,
+  rejectObject,
+  filterOutFalsyProperties,
+} from '../filter-object';
 
 interface Target {
   a: string;
@@ -68,6 +72,45 @@ describe('filter object helper', () => {
         a: 'test',
         c: 235,
       });
+    });
+  });
+
+  describe('filterOutFalsyProperties', () => {
+    test('removes the invalid entries from an object, keeps the valid', () => {
+      const target = {
+        a: 'test',
+        b: true,
+        c: undefined,
+      };
+      const result = {
+        a: 'test',
+        b: true,
+      };
+
+      expect(filterOutFalsyProperties(target)).toEqual(result);
+    });
+
+    test('removes all values if all the entries are invalid', () => {
+      const target = {
+        a: '',
+        b: null,
+        c: undefined,
+        d: 0,
+      };
+
+      expect(filterOutFalsyProperties(target)).toEqual({});
+    });
+
+    test('keeps all values if all of the entries are valid', () => {
+      const target = {
+        a: 'test',
+        b: 1,
+        c: true,
+        d: {},
+        e: [],
+      };
+
+      expect(filterOutFalsyProperties(target)).toEqual(target);
     });
   });
 });

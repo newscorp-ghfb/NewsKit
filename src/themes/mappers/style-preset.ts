@@ -468,7 +468,6 @@ export const createStylePresets = ({
   //
   // Icons
   //
-
   presets.buttonSocialTwitter = presets.iconButtonMinimalSecondary;
   presets.buttonSocialFacebook = presets.iconButtonMinimalSecondary;
   presets.buttonSocialEmail = presets.iconButtonMinimalSecondary;

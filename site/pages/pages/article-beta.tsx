@@ -135,19 +135,25 @@ const Article: React.FC<{
               <ShareBar>
                 <IconButton
                   size={ButtonSize.Large}
-                  stylePreset="buttonSocialTwitter"
+                  overrides={{
+                    stylePreset: 'buttonSocialTwitter',
+                  }}
                 >
                   <Twitter />
                 </IconButton>
                 <IconButton
                   size={ButtonSize.Large}
-                  stylePreset="buttonSocialFacebook"
+                  overrides={{
+                    stylePreset: 'buttonSocialFacebook',
+                  }}
                 >
                   <Facebook />
                 </IconButton>
                 <IconButton
                   size={ButtonSize.Large}
-                  stylePreset="buttonSocialWhatsapp"
+                  overrides={{
+                    stylePreset: 'buttonSocialWhatsapp',
+                  }}
                 >
                   <WhatsApp />
                 </IconButton>

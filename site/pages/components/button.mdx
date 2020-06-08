@@ -4,7 +4,7 @@ import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Selector} from '../../components/playground/selector';
-
+import {CodeFromFile} from '../../components/code';
 import {Button, IconButton, ButtonSize, Email, Pause} from 'newskit';
 
 export default Layout;
@@ -32,45 +32,51 @@ Custom props are detailed below:
   >
     Optional size of the Button: Small, Medium or Large.
   </Prop>
-  <Prop name="padding" type="PaddingPresetKeys">
-    If provided, this overrides the padding of the Button. Otherwise,
-    buttonSmallInset, buttonMediumInset or buttonLargeInset is used depending on the `size`
-    prop.
-  </Prop>
-  <Prop name="stylePreset" type="string" default="buttonDefault">
-    If provided, this overrides the style preset applied to the Button.
-  </Prop>
-  <Prop name="typePreset" type="string">
-    If provided, this overrides the type preset applied to the Button. Otherwise,
-    buttonSmall, buttonMedium or buttonLarge is used depending on the `size` prop.
-  </Prop>
-  <Prop name="space" type="SizingKeys" default="sizing020">
-    If provided, this overrides the space between multiple children in the
-    underlying Stack. If less than 2 children are passed, this prop is
-    irrelevant.
-  </Prop>
-  <Prop name="iconSize" type="IconSizeKeys">
-    If provided, this overrides the icon size of any child icons. Otherwise,
-    iconSize010, iconSize020 or iconSize030 is used depending on the `size` prop. If no icons
-    are present in the Button's children then this prop is irrelevant.
-  </Prop>
-  <Prop name="width" type="SizingKeys | string">
-    If provided, this sets a fixed width to the Button. This can be a sizing token
-    from the theme, or any valid CSS value, e.g. 100% for a full-width element.
-  </Prop>
-  <Prop name="height" type="SizingKeys | string">
-    If provided, this sets a fixed height to the Button. This can be a sizing token
-    from the theme, or any valid CSS value.
-  </Prop>
-  <Prop name="minHeight" type="SizingKeys | string">
-    If provided, this sets a minimum height to the Button. This can be a sizing
-    token from the theme, or any valid CSS value. By default, sizing060,
-    sizing080 or sizing090 is used depending on the `size` prop.
-  </Prop>
-  <Prop name="minWidth" type="SizingKeys | string">
-    If provided, this sets a minimum width to the Button. This can be a sizing
-    token from the theme, or any valid CSS value. By default, sizing090,
-    sizing100 or sizing110 is used depending on the `size` prop.
+  <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component and provided elements.
+    Here are the overrides that the Button accepts:
+    <Prop name="padding" type="PaddingPresetKeys">
+      If provided, this overrides the padding of the Button. Otherwise,
+      spaceInset020Squish, spaceInset030Squish or spaceInset040Squish is used depending on the `size`
+      prop.
+    </Prop>
+    <Prop name="stylePreset" type="string" default="buttonDefault">
+      If provided, this overrides the style preset applied to the Button.
+    </Prop>
+    <Prop name="typePreset" type="string">
+      If provided, this overrides the type preset applied to the Button. Otherwise,
+      buttonSmall, buttonMedium or buttonLarge is used depending on the `size` prop.
+    </Prop>
+    <Prop name="space" type="SizingKeys" default="sizing020">
+      If provided, this overrides the space between multiple children in the
+      underlying Stack. If less than 2 children are passed, this prop is
+      irrelevant.
+    </Prop>
+    <Prop name="iconSize" type="IconSizeKeys">
+      If provided, this overrides the icon size of any child icons. Otherwise,
+      iconSize010, iconSize020 or iconSize030 is used depending on the `size` prop. If no icons
+      are present in the Button's children then this prop is irrelevant.
+    </Prop>
+    <Prop name="width" type="SizingKeys | string">
+      If provided, this sets a fixed width to the Button. This can be a sizing token
+      from the theme, or any CSS length value, e.g. 100% for a full-width element.
+    </Prop>
+    <Prop name="height" type="SizingKeys | string">
+      If provided, this sets a fixed height to the Button. This can be a sizing token
+      from the theme, or any CSS length value.
+    </Prop>
+    <Prop name="minHeight" type="SizingKeys | string">
+      If provided, this sets a minimum height to the Button. This can be a sizing
+      token from the theme, or any CSS length value. By default, sizing060,
+      sizing080 or sizing090 is used depending on the `size` prop.
+    </Prop>
+    <Prop name="minWidth" type="SizingKeys | string">
+      If provided, this sets a minimum width to the Button. This can be a sizing
+      token from the theme, or any CSS length value. By default, sizing090,
+      sizing100 or sizing110 is used depending on the `size` prop.
+    </Prop>
+    Refer to the defaults below for the object structure:
+    <CodeFromFile path="examples/default-presets/button.tsx" />
   </Prop>
   <Prop name="disabled" type="boolean" default={false}>
     If true, the Button will render the disabled state of the styled preset.

@@ -17,7 +17,7 @@ import {Flag} from '../flag';
 
 const renderFlag = (CustomFlag: React.ComponentType | string) =>
   typeof CustomFlag === 'string' ? (
-    <Flag stylePreset="flagSolidLive">{CustomFlag}</Flag>
+    <Flag overrides={{stylePreset: 'flagSolidLive'}}>{CustomFlag}</Flag>
   ) : (
     <CustomFlag />
   );

@@ -3,7 +3,7 @@ import {getAnimationFromTheme, styled} from '../utils/style';
 import {ButtonProps} from './types';
 
 export const StyledFlag = styled(Flag)<
-  Exclude<FlagProps, '$size'> & ButtonProps
+  Exclude<FlagProps, 'size'> & ButtonProps
 >`
   transition-property: background-color;
   transition-duration: ${getAnimationFromTheme('animationDuration020')};

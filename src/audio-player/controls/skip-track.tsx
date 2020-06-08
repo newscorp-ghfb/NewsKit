@@ -8,26 +8,25 @@ export interface SkipButtonProps {
   stylePreset?: string;
 }
 
-const SkipNextIcon = () => <SkipNext $size="iconSize020" $color="buttonFill" />;
-const SkipPreviousIcon = () => (
-  <SkipPrevious $size="iconSize020" $color="buttonFill" />
+export const SkipNextButton: React.FC<SkipButtonProps> = React.memo(
+  ({stylePreset, ...props}) => (
+    <IconButton
+      data-testid="audio-player-skip-next"
+      size={ButtonSize.Medium}
+      overrides={{stylePreset}}
+      {...props}
+    >
+      <SkipNext focusable="false" title="next" />
+    </IconButton>
+  ),
 );
 
-export const SkipNextButton: React.FC<SkipButtonProps> = React.memo(props => (
-  <Button
-    data-testid="audio-player-skip-next"
-    size={ButtonSize.Medium}
-    {...props}
-  >
-    <SkipNext focusable="false" title="next" />
-  </IconButton>
-));
-
 export const SkipPreviousButton: React.FC<SkipButtonProps> = React.memo(
-  props => (
-    <Button
+  ({stylePreset, ...props}) => (
+    <IconButton
       data-testid="audio-player-skip-previous"
       size={ButtonSize.Medium}
+      overrides={{stylePreset}}
       {...props}
     >
       <SkipPrevious focusable="false" title="previous" />

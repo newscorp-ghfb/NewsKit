@@ -15,6 +15,7 @@ export interface PropProps {
   enum?: any;
   default?: any;
   required?: boolean;
+  nested?: boolean;
 }
 
 export interface DefaultValueProps {
@@ -23,11 +24,13 @@ export interface DefaultValueProps {
   enumObj?: any;
 }
 
-const StyledContainer = styled.div`
+const StyledContainer = styled.div<Pick<PropProps, 'nested'>>`
   ${getTypePresetFromTheme('body020')}
   line-height: 1.3;
   margin-bottom: ${getSizingFromTheme('sizing060')};
   color: ${getColorFromTheme('inkBase')};
+  margin-top: ${({nested}) => nested && getSizingFromTheme('sizing060')};
+  margin-left: ${({nested}) => nested && getSizingFromTheme('sizing060')};
 `;
 
 const PropsRow = styled.div`
@@ -82,6 +85,14 @@ const DefaultValue: React.FC<DefaultValueProps> = ({value, type, enumObj}) => {
   return <span> = {prefixedValue}</span>;
 };
 
+const wrapChild = (child: React.ReactNode & {props?: PropProps}) => {
+  // eslint-disable-next-line no-use-before-define
+  if (child.props && child.props.mdxType === Prop.displayName) {
+    return <Prop nested {...child.props} />;
+  }
+  return child;
+};
+
 export const Prop: React.FC<PropProps> = ({
   name,
   type,
@@ -89,8 +100,9 @@ export const Prop: React.FC<PropProps> = ({
   default: defaultVal,
   required,
   children,
+  nested,
 }) => (
-  <StyledContainer>
+  <StyledContainer nested={nested}>
     <PropsRow>
       <PropName>{name}</PropName>
       <PropColon />
@@ -100,7 +112,10 @@ export const Prop: React.FC<PropProps> = ({
       )}
       {required && <PropRequiredFlag />}
     </PropsRow>
-    {children}
+    {children && React.Children.map(children, wrapChild)}
   </StyledContainer>
 );
+
 export default Prop;
+
+Prop.displayName = 'Prop';

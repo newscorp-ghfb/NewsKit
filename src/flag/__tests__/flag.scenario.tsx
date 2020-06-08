@@ -31,7 +31,12 @@ export default {
       component: () => (
         <React.Fragment>
           <h2>Minimal Flag</h2>
-          <Flag padding="spaceInset000Squish" stylePreset="flagMinimal">
+          <Flag
+            overrides={{
+              stylePreset: 'flagMinimal',
+              paddingPreset: 'spaceInset000Squish',
+            }}
+          >
             Text goes here
           </Flag>
         </React.Fragment>
@@ -61,7 +66,7 @@ export default {
             <Flag>flagSolid</Flag>
           </Block>
           <Block>
-            <Flag stylePreset="flagMinimal">flagMinimal</Flag>
+            <Flag overrides={{stylePreset: 'flagMinimal'}}>flagMinimal</Flag>
           </Block>
         </React.Fragment>
       ),
@@ -97,32 +102,40 @@ export default {
             <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
               <Flag
                 size={FlagSize.Small}
-                padding="spaceInset000Squish"
-                stylePreset="flagMinimal"
+                overrides={{
+                  stylePreset: 'flagMinimal',
+                  paddingPreset: 'spaceInset000Squish',
+                }}
               >
                 <Email size="iconSize010" />
                 Text
               </Flag>
               <Flag
                 size={FlagSize.Large}
-                padding="spaceInset000Squish"
-                stylePreset="flagMinimal"
+                overrides={{
+                  stylePreset: 'flagMinimal',
+                  paddingPreset: 'spaceInset000Squish',
+                }}
               >
                 <Email size="iconSize010" />
                 Text
               </Flag>
               <Flag
                 size={FlagSize.Large}
-                padding="spaceInset000Squish"
-                stylePreset="flagMinimal"
+                overrides={{
+                  stylePreset: 'flagMinimal',
+                  paddingPreset: 'spaceInset000Squish',
+                }}
               >
                 <Bookmark size="iconSize010" />
                 Text
               </Flag>
               <Flag
                 size={FlagSize.Large}
-                padding="spaceInset000Squish"
-                stylePreset="flagMinimal"
+                overrides={{
+                  stylePreset: 'flagMinimal',
+                  paddingPreset: 'spaceInset000Squish',
+                }}
               >
                 <VolumeMute size="iconSize010" />
                 Text

@@ -19,7 +19,9 @@ export const ThemeSwitch: React.FC<ThemeSwitchProps> = ({
       title={`${isDark() ? 'Disable' : 'Enable'} Dark Theme`}
       aria-label={`${isDark() ? 'Disable' : 'Enable'} Dark Theme`}
       aria-pressed={isDark() ? 'true' : 'false'}
-      stylePreset="buttonLightDarkToggle"
+      overrides={{
+        stylePreset: 'buttonLightDarkToggle',
+      }}
     >
       {isDark() ? <SunIcon /> : <MoonIcon />}
     </IconButton>

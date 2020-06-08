@@ -34,9 +34,10 @@ const MuteButton: React.FC<MuteButtonProps> = ({
     tabIndex={-1}
     onClick={() => toggleMute(volume, unMutedVolume, onChange)}
     size={ButtonSize.Small}
-    stylePreset={
-      volumeControlButtonStylePreset || volumeControlButtonStyleDefault
-    }
+    overrides={{
+      stylePreset:
+        volumeControlButtonStylePreset || volumeControlButtonStyleDefault,
+    }}
   >
     {volume === 0 ? (
       <VolumeMute size={iconSize} title="unmute" />
@@ -90,9 +91,10 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
         tabIndex={-1}
         onClick={() => onChange(1)}
         size={ButtonSize.Small}
-        stylePreset={
-          volumeControlButtonStylePreset || volumeControlButtonStyleDefault
-        }
+        overrides={{
+          stylePreset:
+            volumeControlButtonStylePreset || volumeControlButtonStyleDefault,
+        }}
       >
         <VolumeUp size={iconSize} title="max volume" />
       </IconButton>

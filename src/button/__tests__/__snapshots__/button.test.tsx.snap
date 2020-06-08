@@ -157,9 +157,9 @@ exports[`Button IconButton renders Icon Button in loading State 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 16px;
   width: 64px;
   height: 64px;
+  padding: 16px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -240,6 +240,308 @@ exports[`Button IconButton renders Icon Button in loading State 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Button IconButton renders Icon Button with custom iconSize 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 64px;
+  height: 64px;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 64px;
+  height: 64px;
+  padding: 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 50%;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-4"
+  >
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <svg
+            aria-labelledby="mock-bui-1"
+            class="emotion-0"
+            viewBox="0 0 24 24"
+          >
+            <title
+              id="mock-bui-1"
+            >
+              Email icon
+            </title>
+            <path
+              d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button IconButton renders Icon Button with custom spacing between elements 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 50%;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-4"
+  >
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <svg
+            aria-labelledby="mock-bui-1"
+            class="emotion-0"
+            viewBox="0 0 24 24"
+          >
+            <title
+              id="mock-bui-1"
+            >
+              Email icon
+            </title>
+            <path
+              d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Button IconButton renders Icon Button with fallback formatting 1`] = `
 <DocumentFragment>
   .emotion-2 {
@@ -306,9 +608,9 @@ exports[`Button IconButton renders Icon Button with fallback formatting 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 8px;
   width: 32px;
   height: 32px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -457,9 +759,9 @@ exports[`Button IconButton renders Large Icon Button 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 16px;
   width: 64px;
   height: 64px;
+  padding: 16px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -608,9 +910,9 @@ exports[`Button IconButton renders Medium Icon Button 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 12px;
   width: 48px;
   height: 48px;
+  padding: 12px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -759,9 +1061,9 @@ exports[`Button IconButton renders Small Icon Button 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 8px;
   width: 32px;
   height: 32px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -783,6 +1085,308 @@ exports[`Button IconButton renders Small Icon Button 1`] = `
 .emotion-3 svg {
   width: 16px;
   height: 16px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-4"
+  >
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <svg
+            aria-labelledby="mock-bui-1"
+            class="emotion-0"
+            viewBox="0 0 24 24"
+          >
+            <title
+              id="mock-bui-1"
+            >
+              Email icon
+            </title>
+            <path
+              d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button IconButton renders fixed-width Icon Button 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 160px;
+  height: 64px;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 160px;
+  height: 64px;
+  padding: 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 50%;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-4"
+  >
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <svg
+            aria-labelledby="mock-bui-1"
+            class="emotion-0"
+            viewBox="0 0 24 24"
+          >
+            <title
+              id="mock-bui-1"
+            >
+              Email icon
+            </title>
+            <path
+              d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button IconButton renders full-width Icon Button 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 64px;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+  height: 64px;
+  padding: 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 50%;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 32px;
+  height: 32px;
 }
 
 .emotion-3 svg {
@@ -910,9 +1514,9 @@ exports[`Button IconButton renders when there is an icon with a colour 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding: 8px;
   width: 32px;
   height: 32px;
+  padding: 8px;
   cursor: default;
   border: none;
   -webkit-appearance: none;
@@ -1471,6 +2075,972 @@ exports[`Button Loading Button renders Small Button 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Button Loading Button renders a button with fixed for minWidth and minHeight 1`] = `
+<DocumentFragment>
+  .emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 100px;
+  min-width: 100px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-4"
+  >
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button Loading Button renders a button with fixed for width and height 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-4"
+  >
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button Loading Button renders a button with percentage for minWidth and minHeight 1`] = `
+<DocumentFragment>
+  .emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 100%;
+  min-width: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-4"
+  >
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button Loading Button renders a button with percentage for width and height 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-4"
+  >
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button Loading Button renders a button with token set for minWidth and minHeight 1`] = `
+<DocumentFragment>
+  .emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 160px;
+  min-width: 160px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-4"
+  >
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button Loading Button renders a button with token set for width and height 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 160px;
+  height: 160px;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 160px;
+  height: 160px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-4"
+  >
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Button renders Large Button 1`] = `
 <DocumentFragment>
   .emotion-4 {
@@ -1653,9 +3223,6 @@ exports[`Button renders Small Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1766,6 +3333,331 @@ exports[`Button renders Small Button 1`] = `
   height: 0;
   width: 0;
   margin-top: calc(-0.5458333333333334em + -0.5px);
+}
+
+<div
+    class="emotion-4"
+  >
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button renders fixed-width Button 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 160px;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 64px;
+  width: 160px;
+  padding: 16px 24px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-4"
+  >
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button renders full-width Button 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 64px;
+  width: 100%;
+  padding: 16px 24px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div
@@ -1978,6 +3870,166 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Button renders with custom padding preset 1`] = `
+<DocumentFragment>
+  .emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 0;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-4"
+  >
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Button renders with different style preset 1`] = `
 <DocumentFragment>
   .emotion-4 {
@@ -2115,6 +4167,166 @@ exports[`Button renders with different style preset 1`] = `
 .emotion-3:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
+}
+
+<div
+    class="emotion-4"
+  >
+    <button
+      class="emotion-3"
+      data-testid="button"
+      type="button"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-1"
+        >
+          <span
+            class="emotion-0"
+          >
+            click this!
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Button renders with different type preset 1`] = `
+<DocumentFragment>
+  .emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0A68C1;
+  border-radius: 8px;
+  color: #FFFFFF;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #02509B;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #01396E;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
 }
 
 <div

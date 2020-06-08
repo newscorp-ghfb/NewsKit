@@ -1,31 +1,63 @@
 import {
   styled,
-  getTypePresetFromTheme,
   getSizingFromTheme,
+  getTypePreset,
+  getPaddingPreset,
 } from '../utils/style';
-import {getStylePresetFromTheme} from '../utils/style-preset';
-import {BaseFlagProps, StyledBaseFlagProps} from './types';
+import {getStylePreset} from '../utils/style-preset';
+import {BaseFlagProps} from './types';
+import {getToken} from '../utils/get-token';
 
-export const IE11FixContainer = styled.div<StyledBaseFlagProps>`
+export const IE11FixContainer = styled.div<Pick<BaseFlagProps, 'overrides'>>`
   display: inline-flex;
   flex-direction: column;
-  width: ${getSizingFromTheme(undefined, '$width', true)};
-  height: ${getSizingFromTheme(undefined, '$height', true)};
+  ${({theme, overrides}) => {
+    const widthToken = getToken({theme, overrides}, '', '', 'width');
+    const width = getSizingFromTheme(widthToken, undefined, true)({theme});
+
+    const heightToken = getToken({theme, overrides}, '', '', 'height');
+    const height = getSizingFromTheme(heightToken, undefined, true)({theme});
+
+    return {
+      width,
+      height,
+    };
+  }}
 `;
 
-export const StyledBaseFlag = styled.div<StyledBaseFlagProps>`
+export const StyledBaseFlag = styled.div<BaseFlagProps>`
   box-sizing: border-box;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  min-height: ${({$height}) =>
-    $height ? '' : getSizingFromTheme(undefined, 'minHeight', true)};
-  min-width: ${({$width}) =>
-    $width ? '' : getSizingFromTheme(undefined, 'minWidth', true)};
-  padding: ${getSizingFromTheme(undefined, 'padding')};
-  width: ${getSizingFromTheme(undefined, '$width', true)};
-  height: ${getSizingFromTheme(undefined, '$height', true)};
+  ${({theme, overrides}) => {
+    const getSizing = (tokenName: string) => {
+      const token = getToken({theme, overrides}, '', '', tokenName);
+      return getSizingFromTheme(token, undefined, true)({
+        theme,
+      });
+    };
+    const minHeight = getSizing('minHeight');
+    const minWidth = getSizing('minWidth');
+    const width = getSizing('width');
+    const height = getSizing('height');
+    const iconSize = getSizing('iconSize');
+
+    return {
+      minHeight: overrides && overrides.height ? null : minHeight,
+      minWidth: overrides && overrides.width ? null : minWidth,
+      width,
+      height,
+      svg: {
+        width: iconSize,
+        height: iconSize,
+      },
+    };
+  }}
+
+  ${getPaddingPreset('', '')}
+
   cursor: ${({disabled}) => (disabled ? 'not-allowed' : 'default')};
 
   // Button related styles
@@ -34,21 +66,17 @@ export const StyledBaseFlag = styled.div<StyledBaseFlagProps>`
   overflow: hidden;
   // End of button related styles
 
-  svg {
-    width: ${getSizingFromTheme(undefined, 'iconSize')};
-    height: ${getSizingFromTheme(undefined, 'iconSize')};
-  }
-
-  ${({disabled, isLoading, ...props}) =>
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    getStylePresetFromTheme(undefined, 'stylePreset' as any, {
+  ${({disabled, isLoading}) =>
+    getStylePreset('', '', {
       isDisabled: disabled,
       isLoading,
-    })(props)}
+    })}
 `;
 
 export const StyledTextCropWrapper = styled.span<
-  Pick<BaseFlagProps, 'typePreset'>
+  Pick<BaseFlagProps, 'overrides'>
 >`
-  ${getTypePresetFromTheme(undefined, 'typePreset')}
+  ${getTypePreset('', '', {
+    withCrop: true,
+  })}
 `;

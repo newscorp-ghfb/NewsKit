@@ -2,7 +2,7 @@ import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {Stack} from '../../stack';
 import {Tag} from '../../tag/tag';
-import {StackChild, isStackChild} from '..';
+import {StackChild} from '..';
 
 describe('StackChild', () => {
   test(`renders within a Stack with custom order`, () => {
@@ -40,19 +40,5 @@ describe('StackChild', () => {
     });
 
     expect(fragment).toMatchSnapshot();
-  });
-
-  test('isStackChild should return true for StackChild', () => {
-    const fragment = (
-      <StackChild order={2}>
-        <Tag>child</Tag>
-      </StackChild>
-    );
-    expect(isStackChild(fragment)).toBe(true);
-  });
-
-  test("isStackChild should return false for a component that isn't a StackChild", () => {
-    const fragment = <Tag>child</Tag>;
-    expect(isStackChild(fragment)).toBe(false);
   });
 });

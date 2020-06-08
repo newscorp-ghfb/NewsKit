@@ -39,17 +39,25 @@ type Label = {
 };
 
 const StyledLabel = styled.span<Label>`
-  ${({orientation}) =>
-    getTypePreset(`shareBar.${orientation}.label`, 'label', {
+  ${({orientation, ...props}) => {
+    const defaultsPath = `shareBar.${orientation}.label`;
+    const overridesPath = 'label';
+    const typePreset = getTypePreset(defaultsPath, overridesPath, {
       withCrop: true,
-    })}
+    })(props);
+    const stylePreset = getStylePreset(defaultsPath, overridesPath)(props);
+    const paddingPreset = getPaddingPreset(defaultsPath, overridesPath)(props);
+    const marginPreset = getMarginPreset(defaultsPath, overridesPath)(props);
 
-  ${({orientation}) =>
-    getStylePreset(`shareBar.${orientation}.label`, 'label')};
-  ${({orientation}) =>
-    getPaddingPreset(`shareBar.${orientation}.label`, 'label')};
-  ${({orientation}) =>
-    getMarginPreset(`shareBar.${orientation}.label`, 'label')};
+    const outputCss = {
+      typePreset,
+      stylePreset,
+      paddingPreset,
+      marginPreset,
+    };
+
+    return Object.values(outputCss);
+  }}
 `;
 
 const StyledShareBar = styled(Stack)<StyledShareBarProps>`
@@ -68,6 +76,12 @@ export const ShareBar: React.FC<ShareBarProps> = ({
     overrides,
     orientation,
   };
+  const stackSpace = getToken(
+    {theme, overrides},
+    `shareBar.${orientation}.items`,
+    'items',
+    'space',
+  );
 
   return (
     <StyledShareBar
@@ -78,12 +92,7 @@ export const ShareBar: React.FC<ShareBarProps> = ({
       {label && <StyledLabel {...styledComponentsProps}>{label}</StyledLabel>}
       <Stack
         flow={vertical ? Flow.VerticalCenter : Flow.HorizontalCenter}
-        space={getToken(
-          {theme, overrides},
-          `shareBar.${orientation}.items`,
-          'items',
-          'space',
-        )}
+        space={stackSpace}
       >
         {children}
       </Stack>

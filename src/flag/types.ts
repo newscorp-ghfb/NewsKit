@@ -7,24 +7,22 @@ export enum FlagSize {
 }
 
 export interface BaseFlagProps {
-  typePreset?: string;
-  stylePreset?: string;
-  padding?: PaddingPresetKeys;
-  space?: SizingKeys;
-  iconSize?: IconSizeKeys;
-
-  width?: SizingKeys | string;
-  height?: SizingKeys | string;
-  minHeight?: SizingKeys | string;
-  minWidth?: SizingKeys | string;
-
   disabled?: boolean;
   isLoading?: boolean;
-}
 
-export interface StyledBaseFlagProps extends BaseFlagProps {
-  $width?: SizingKeys | string;
-  $height?: SizingKeys | string;
+  overrides?: {
+    typePreset?: string;
+    stylePreset?: string;
+    paddingPreset?: PaddingPresetKeys;
+
+    width?: SizingKeys | string;
+    height?: SizingKeys | string;
+    minWidth?: SizingKeys | string;
+    minHeight?: SizingKeys | string;
+
+    iconSize?: IconSizeKeys;
+    space?: SizingKeys;
+  };
 }
 
 export interface FlagProps extends BaseFlagProps {

@@ -1,14 +1,15 @@
+import React from 'react';
+import {styled} from '../utils/style';
+
 import {StackChildProps} from './types';
-import {StackChild} from './styled';
 
-export default StackChild;
+const StyledStackChild = styled.div<{$order?: number}>`
+  order: ${({$order}) => $order};
+  display: inline-flex;
+`;
 
-export const isStackChild = (
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  component: any,
-): component is {props: StackChildProps} =>
-  component &&
-  component.type &&
-  component.type.displayName === StackChild.displayName;
+export const StackChild: React.FC<StackChildProps> = ({order, ...props}) => (
+  <StyledStackChild {...props} $order={order} />
+);
 
 StackChild.displayName = 'StackChild';

@@ -49,7 +49,7 @@ export const TagList: React.FC<TagListProps> = ({
         key={`${label}-${href}-${stylePreset}-${size}-${i}`}
         spacing={spacing}
       >
-        <Tag size={size} stylePreset={stylePreset} href={href}>
+        <Tag size={size} overrides={{stylePreset}} href={href}>
           {label}
         </Tag>
       </ListItem>

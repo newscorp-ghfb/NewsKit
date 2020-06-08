@@ -6,7 +6,12 @@ import {Flag} from '../../flag';
 import {SaveInactive} from '../../icons/save-inactive';
 
 const CustomFlag = () => (
-  <Flag padding="spaceInset000Squish" stylePreset="flagMinimal">
+  <Flag
+    overrides={{
+      paddingPreset: 'spaceInset000Squish',
+      stylePreset: 'flagMinimal',
+    }}
+  >
     <SaveInactive />
     Most Popular
   </Flag>

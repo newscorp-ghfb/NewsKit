@@ -23,13 +23,97 @@ export const defaultPresets = {
       },
     },
   },
-  standfirst: {
-    styledText: {
-      stylePreset: 'standfirst',
-      typePreset: {
-        xs: 'subhead020',
-        md: 'subhead030',
-      },
+  iconButton: {
+    small: {
+      stylePreset: 'iconButtonDefault',
+      paddingPreset: 'spaceInset020',
+      width: 'sizing060',
+      height: 'sizing060',
+    },
+    medium: {
+      stylePreset: 'iconButtonDefault',
+      paddingPreset: 'spaceInset030',
+      width: 'sizing080',
+      height: 'sizing080',
+    },
+    large: {
+      stylePreset: 'iconButtonDefault',
+      paddingPreset: 'spaceInset040',
+      width: 'sizing090',
+      height: 'sizing090',
+    },
+  },
+  button: {
+    small: {
+      typePreset: 'buttonSmall',
+      stylePreset: 'buttonDefault',
+      paddingPreset: 'spaceInset020Squish',
+      minWidth: 'sizing090',
+      minHeight: 'sizing060',
+      iconSize: 'iconSize010',
+      space: 'sizing020',
+    },
+    medium: {
+      typePreset: 'buttonMedium',
+      stylePreset: 'buttonDefault',
+      paddingPreset: 'spaceInset030Squish',
+      minWidth: 'sizing100',
+      minHeight: 'sizing080',
+      iconSize: 'iconSize020',
+      space: 'sizing020',
+    },
+    large: {
+      typePreset: 'buttonLarge',
+      stylePreset: 'buttonDefault',
+      paddingPreset: 'spaceInset040Squish',
+      minWidth: 'sizing110',
+      minHeight: 'sizing090',
+      iconSize: 'iconSize030',
+      space: 'sizing020',
+    },
+  },
+  flag: {
+    small: {
+      typePreset: 'flag010',
+      stylePreset: 'flagDefault',
+      paddingPreset: 'spaceInset010Squish',
+      minHeight: 'sizing050',
+      iconSize: 'iconSize010',
+      space: 'sizing010',
+    },
+    large: {
+      typePreset: 'flag020',
+      stylePreset: 'flagDefault',
+      paddingPreset: 'spaceInset020Squish',
+      minHeight: 'sizing060',
+      iconSize: 'iconSize010',
+      space: 'sizing010',
+    },
+  },
+  tag: {
+    small: {
+      typePreset: 'tag010',
+      stylePreset: 'tagDefault',
+      paddingPreset: 'spaceInset010Squish',
+      minHeight: 'sizing050',
+      iconSize: 'iconSize010',
+      space: 'sizing010',
+    },
+    medium: {
+      typePreset: 'tag020',
+      stylePreset: 'tagDefault',
+      paddingPreset: 'spaceInset020Squish',
+      minHeight: 'sizing060',
+      iconSize: 'iconSize010',
+      space: 'sizing010',
+    },
+    large: {
+      typePreset: 'tag030',
+      stylePreset: 'tagDefault',
+      paddingPreset: 'spaceInset020Squish',
+      minHeight: 'sizing070',
+      iconSize: 'iconSize020',
+      space: 'sizing010',
     },
   },
   shareBar: {
@@ -51,6 +135,15 @@ export const defaultPresets = {
       },
       items: {
         space: 'sizing020',
+      },
+    },
+  },
+  standfirst: {
+    styledText: {
+      stylePreset: 'standfirst',
+      typePreset: {
+        xs: 'subhead020',
+        md: 'subhead030',
       },
     },
   },

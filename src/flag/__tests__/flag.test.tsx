@@ -31,7 +31,19 @@ describe('Flag', () => {
 
   test('renders a flag with a custom stylePreset', () => {
     const props: FlagProps = {
-      stylePreset: 'flagMinimal',
+      overrides: {
+        stylePreset: 'flagMinimal',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders a flag with a custom typePreset', () => {
+    const props: FlagProps = {
+      overrides: {
+        typePreset: 'flag020',
+      },
     };
     const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
     expect(fragment).toMatchSnapshot();
@@ -39,8 +51,10 @@ describe('Flag', () => {
 
   test('renders a flag with no paddings', () => {
     const props: FlagProps = {
-      stylePreset: 'flagMinimal',
-      padding: 'spaceInset000Squish',
+      overrides: {
+        stylePreset: 'flagMinimal',
+        paddingPreset: 'spaceInset000Squish',
+      },
     };
     const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
     expect(fragment).toMatchSnapshot();
@@ -53,13 +67,117 @@ describe('Flag', () => {
 
   test('renders a minimal flag with an icon', () => {
     const props: FlagProps = {
-      stylePreset: 'flagMinimal',
-      padding: 'spaceInset000Squish',
+      overrides: {
+        stylePreset: 'flagMinimal',
+        paddingPreset: 'spaceInset000Squish',
+      },
     };
     const fragment = renderToFragmentWithTheme(
       renderFlagWithTextAndIcon,
       props,
     );
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with default stylePreset if supplied with invalid value', () => {
+    const props: FlagProps = {
+      overrides: {
+        stylePreset: undefined,
+      },
+    };
+    const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders a flag with an icon and custom iconSize', () => {
+    const props: FlagProps = {
+      overrides: {
+        iconSize: 'iconSize040',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(
+      renderFlagWithTextAndIcon,
+      props,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders a flag with an icon and custom spacing between elements', () => {
+    const props: FlagProps = {
+      overrides: {
+        space: 'sizing020',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(
+      renderFlagWithTextAndIcon,
+      props,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders a flag with token set for width and height', () => {
+    const props: FlagProps = {
+      overrides: {
+        width: 'sizing120',
+        height: 'sizing120',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders a flag with percentage for width and height', () => {
+    const props: FlagProps = {
+      overrides: {
+        width: '100%',
+        height: '100%',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders a flag with fixed for width and height', () => {
+    const props: FlagProps = {
+      overrides: {
+        width: '100px',
+        height: '100px',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders a flag with token set for minWidth and minHeight', () => {
+    const props: FlagProps = {
+      overrides: {
+        minWidth: 'sizing120',
+        minHeight: 'sizing120',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders a flag with percentage for minWidth and minHeight', () => {
+    const props: FlagProps = {
+      overrides: {
+        minWidth: '100%',
+        minHeight: '100%',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders a flag with fixed for minWidth and minHeight', () => {
+    const props: FlagProps = {
+      overrides: {
+        minWidth: '100px',
+        minHeight: '100px',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
     expect(fragment).toMatchSnapshot();
   });
 });
