@@ -1,0 +1,28 @@
+import Layout from '../../components/layout';
+import {CodeFromFile} from '../../components/code';
+import {Image} from 'newskit';
+
+export default Layout;
+
+# Getting started with  <br/><br/> NewsKit Component Generator 
+
+## Overview
+NewsKit has many components and to increase efficiency we have created a generator to scaffold project files.
+
+## Installing
+
+To run the component generator, run the command `yarn generate:component`.
+
+## Using 
+When you call the command `yarn generate:component`, you will be prompted to name your component.
+Afterwards, it will create a custom component folder within `src`. It will include the component file, index.ts and type.ts.
+It will also include a `tests` folder.
+
+This is an example of a scaffolded project file generated for a component called 'example'.
+
+Here is the directory tree of the component 'example':
+ <Image src="/static/example-generator-component.png" alt="example generator component image"  width="288" height="254"/>
+
+If you are interested in viewing the generator, you can view it in the folder "./component-generator". 
+
+

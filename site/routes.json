@@ -17,6 +17,11 @@
         "title": "Instrumentation",
         "page": true,
         "id": "/guides/getting-started-instrumentation"
+      },
+      {
+        "title": "Component Generator",
+        "page": true,
+        "id": "/guides/getting-started-generator"
       }
     ]
   },
