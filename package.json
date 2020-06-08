@@ -77,7 +77,6 @@
     "@types/jest-matcher-utils": "^21.0.2",
     "@types/jscodeshift": "^0.6.1",
     "@types/just-extend": "^1.1.0",
-    "@types/lodash.get": "^4.4.6",
     "@types/memoize-one": "^4.1.1",
     "@types/mkdirp": "^0.5.2",
     "@types/node": "10",
@@ -167,7 +166,6 @@
     "dotenv": "^8.0.0",
     "emotion": "^10.0.27",
     "emotion-theming": "^10.0.27",
-    "lodash.get": "^4.4.2",
     "react-range": "^1.5.3"
   },
   "resolutions": {

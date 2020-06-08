@@ -1,4 +1,4 @@
-import get from 'lodash.get';
+import {get} from './get';
 import {ThemeProp} from './style-types';
 import {isResponsive} from './responsive-helpers';
 import {Breakpoints} from '../themes';
