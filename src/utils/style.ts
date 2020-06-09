@@ -168,7 +168,7 @@ export const getTypePresetFromTheme = <Props extends ThemeProp>(
     );
   }
 
-  if (withCrop && !Array.isArray(typePreset)) {
+  if (typePreset && withCrop && !Array.isArray(typePreset)) {
     return applyCrop(typePreset);
   }
   return typePreset;

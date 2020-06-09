@@ -207,6 +207,11 @@
         "id": "/components/tealium"
       },
       {
+        "title": "Text Block",
+        "page": true,
+        "id": "/components/text-block"
+      },
+      {
         "title": "Title Bar",
         "page": true,
         "id": "/components/title-bar"

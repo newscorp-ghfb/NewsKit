@@ -25,6 +25,7 @@ export * from './standfirst';
 export * from './tag-list';
 export * from './tag';
 export * from './tealium';
+export * from './text-block';
 export * from './themes';
 export * from './title-bar';
 export * from './typography';

@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextBlock renders as h2 html tag 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  padding: 1px 0;
+  display: block;
+}
+
+<h2
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`TextBlock renders as span html tag 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  padding: 1px 0;
+}
+
+<span
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`TextBlock renders with custom style preset 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  padding: 1px 0;
+  color: #2F75D7;
+}
+
+.emotion-0:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-0:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-0:visited:not(:disabled) {
+  color: #903D91;
+}
+
+<p
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`TextBlock renders with custom type preset 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<p
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`TextBlock renders with default styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  padding: 1px 0;
+}
+
+<p
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
