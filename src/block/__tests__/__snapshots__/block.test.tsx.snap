@@ -3,7 +3,7 @@
 exports[`Block with no props renders an unstyled div 1`] = `
 <DocumentFragment>
   <div
-    class="css-onjqtg"
+    class="css-1j387q6"
   />
 </DocumentFragment>
 `;
@@ -56,6 +56,14 @@ exports[`Block with props renders with spaceStack020 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0 0 8px 0;
+  background-color: #471e79;
+  color: #FFFFFF;
+  padding: 0 0 12px 0;
+}
+
+.emotion-0 svg {
+  fill: #FFFFFF;
+  color: #FFFFFF;
 }
 
 <div

@@ -1,18 +1,26 @@
 import React from 'react';
-import {styled, getMarginPresetFromTheme, MQ} from '../utils/style';
+import {styled, getMarginPreset, MQ, getPaddingPreset} from '../utils/style';
 import {as as renderAs} from '../utils/component';
-import {MarginPresetKeys} from '../themes/mappers/spacing';
+import {MarginPresetKeys, PaddingPresetKeys} from '../themes/mappers/spacing';
+import {StylePresetKeys} from '../themes/mappers/style-preset';
+import {getStylePreset} from '../utils/style-preset';
 
 export interface BlockProps {
-  margin?: MQ<MarginPresetKeys>;
   as?: keyof JSX.IntrinsicElements;
+  overrides?: {
+    stylePreset?: MQ<StylePresetKeys>;
+    paddingPreset?: MQ<PaddingPresetKeys>;
+    marginPreset?: MQ<MarginPresetKeys>;
+  };
 }
 
 const StyledDiv = styled.div<BlockProps>`
-  ${getMarginPresetFromTheme(undefined, 'margin')};
+  ${getMarginPreset('')}
+  ${getStylePreset('')}
+  ${getPaddingPreset('')}
 `;
 
-export const Block: React.FC<BlockProps> = ({as, ...props}) => {
+export const Block: React.FC<BlockProps> = ({as, overrides = {}, ...props}) => {
   const asProp = as ? renderAs(as) : {};
-  return <StyledDiv {...props} {...asProp} />;
+  return <StyledDiv overrides={overrides} {...props} {...asProp} />;
 };

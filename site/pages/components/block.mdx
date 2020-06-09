@@ -2,7 +2,7 @@ import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {LegacyBlock} from '../../components/legacy-block';
-
+import {CodeFromFile} from '../../components/code';
 import {Block} from 'newskit';
 
 export default Layout;
@@ -11,19 +11,30 @@ export default Layout;
 
 ## Overview
 
-A Block component is a simple div component that only applies margin using the fixed spacing preset set in the theme.
+The Block is a simple container component that can take margin, padding and style presets. 
 For more information on the spacing preset, please refer to page [here](/foundations/spacing).
 
 ## Props
 
 <LegacyBlock marginTop="sizing040">
-  <Prop name="margin" type="MarginPresetKeys">
-    This is a margin prop that only accepts stack and inline preset tokens defined in the spacing theme.
-    see https://developer.mozilla.org/en-US/docs/Web/CSS/margin
+  <Prop name="as" type="string" default="div">
+    This is a string name of the html element that the block can be converted to.
+    Block defaults as a div element, but it can be converted to a `span` by using this prop.
   </Prop>
-  <Prop name="as" type="string">
-    This is a string name of html element that the block can be converted to.
-    Block defaults as a div element, but it can be converted to a span by `as="span"` prop.
+
+  <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component and provided elements.
+    Here are the overrides that the Block accepts:
+    <Prop name="paddingPreset" type="PaddingPresetKeys">
+      If provided, applies padding on the Block.
+    </Prop>
+    <Prop name="stylePreset" type="string">
+      If provided, applies style on the Block.
+    </Prop>
+    <Prop name="marginPreset" type="MarginPresetKeys">
+      If provided, applies margin on the Block.
+    </Prop>
+    This component does not have any default preset.
   </Prop>
 </LegacyBlock>
 
@@ -46,25 +57,6 @@ For more information on the spacing preset, please refer to page [here](/foundat
       value: 'This is a block',
     },
     {
-      name: 'margin',
-      propName: 'margin',
-      options: [
-        {
-          label: 'undefined',
-          value: undefined,
-          isDefault: true,
-        },
-        {
-          label: 'spaceStack020',
-          value: 'spaceStack020',
-        },
-        {
-          label: 'spaceInline020',
-          value: 'spaceInline020',
-        },
-      ],
-    },
-    {
       name: 'as',
       propName: 'as',
       options: [
@@ -78,6 +70,35 @@ For more information on the spacing preset, please refer to page [here](/foundat
           value: 'span',
         },
       ],
-    }
+    },
+    {
+      name: 'overrides',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'undefined',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'spaceStack020 margin',
+          value: {
+            marginPreset: 'spaceStack020',
+          }
+        },
+        {
+          label: 'spaceInset030 padding',
+          value: {
+            paddingPreset: 'spaceInset030',
+          }
+        },
+        {
+          label: 'flagSolid style',
+          value: {
+            stylePreset: 'flagSolid',
+          }
+        },
+      ],
+    },
   ]}
 />

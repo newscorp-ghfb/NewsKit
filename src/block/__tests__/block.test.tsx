@@ -12,7 +12,11 @@ describe('Block', () => {
   describe('with props', () => {
     test('renders with spaceStack020', () => {
       const props: BlockProps = {
-        margin: 'spaceStack020',
+        overrides: {
+          marginPreset: 'spaceStack020',
+          paddingPreset: 'spaceStack030',
+          stylePreset: 'flagSolid',
+        },
       };
       const fragment = renderToFragmentWithTheme(Block, props);
       expect(fragment).toMatchSnapshot();
@@ -20,10 +24,12 @@ describe('Block', () => {
 
     test('renders with spaceStack010 for xs, spaceStack020 for sm, and spaceStack030 for md breakpoints', () => {
       const props: BlockProps = {
-        margin: {
-          xs: 'spaceStack010',
-          sm: 'spaceStack020',
-          md: 'spaceStack030',
+        overrides: {
+          marginPreset: {
+            xs: 'spaceStack010',
+            sm: 'spaceStack020',
+            md: 'spaceStack030',
+          },
         },
       };
       const fragment = renderToFragmentWithTheme(Block, props);
@@ -32,7 +38,9 @@ describe('Block', () => {
 
     test('renders with spaceInline020', () => {
       const props: BlockProps = {
-        margin: 'spaceInline020',
+        overrides: {
+          marginPreset: 'spaceInline020',
+        },
       };
       const fragment = renderToFragmentWithTheme(Block, props);
       expect(fragment).toMatchSnapshot();

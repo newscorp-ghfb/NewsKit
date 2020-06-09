@@ -35,7 +35,11 @@ const DescriptionsMeta: React.FC<DescriptionMetaProps & CenterProp> = ({
     stackDistribution={StackDistribution.Start}
   >
     {(flag || time) && (
-      <Block margin="spaceStack050">
+      <Block
+        overrides={{
+          marginPreset: 'spaceStack050',
+        }}
+      >
         <Stack
           flow={center ? Flow.VerticalCenter : Flow.HorizontalCenter}
           stackDistribution={
@@ -49,7 +53,11 @@ const DescriptionsMeta: React.FC<DescriptionMetaProps & CenterProp> = ({
       </Block>
     )}
     {title && (
-      <Block margin="spaceStack040">
+      <Block
+        overrides={{
+          marginPreset: 'spaceStack040',
+        }}
+      >
         <ProgrammeTitle center={center}>{title}</ProgrammeTitle>
       </Block>
     )}
@@ -120,7 +128,11 @@ export const RadioPlayer: React.FC<RadioPlayerProps> = props => {
   return (
     <InstrumentationProvider context={contextObject}>
       <AudioPlayer {...props}>
-        <Block margin="spaceStack050">
+        <Block
+          overrides={{
+            marginPreset: 'spaceStack050',
+          }}
+        >
           <PlayerMeta
             time={time}
             live={live}
