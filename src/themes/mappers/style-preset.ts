@@ -58,7 +58,6 @@ export const createStylePresets = ({
   borderPrimitives,
   borderRadiusPrimitives,
   overlayPrimitives,
-  shadowPrimitives,
 }: CreateStylePreset) => {
   const presets: Record<string, StylePresetStates> = {};
 
@@ -372,7 +371,6 @@ export const createStylePresets = ({
     },
     hover: {
       backgroundColor: colorPrimitives.interactive040,
-      boxShadow: shadowPrimitives.shadow020,
     },
     active: {
       backgroundColor: colorPrimitives.interactive050,
@@ -384,6 +382,76 @@ export const createStylePresets = ({
     },
     loading: {
       backgroundColor: colorPrimitives.interactive020,
+      color: colorPrimitives.inkBrand010,
+    },
+  };
+  presets.iconButtonSolidSecondary = {
+    base: {
+      backgroundColor: colorPrimitives.interactive130,
+      borderRadius: borderRadiusPrimitives.borderRadiusCircle,
+      color: colorPrimitives.inkInverse,
+      iconColor: colorPrimitives.inkInverse,
+    },
+    hover: {
+      backgroundColor: colorPrimitives.interactive140,
+    },
+    active: {
+      backgroundColor: colorPrimitives.interactive150,
+    },
+    disabled: {
+      backgroundColor: colorPrimitives.interactiveDisabled,
+      color: colorPrimitives.inkNonEssential,
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+    loading: {
+      backgroundColor: colorPrimitives.interactive120,
+      color: colorPrimitives.inkBase,
+    },
+  };
+  presets.iconButtonSolidNegative = {
+    base: {
+      backgroundColor: colorPrimitives.semanticNegative030,
+      borderRadius: borderRadiusPrimitives.borderRadiusCircle,
+      color: colorPrimitives.inkInverse,
+      iconColor: colorPrimitives.inkInverse,
+    },
+    hover: {
+      backgroundColor: colorPrimitives.semanticNegative040,
+    },
+    active: {
+      backgroundColor: colorPrimitives.semanticNegative050,
+    },
+    disabled: {
+      backgroundColor: colorPrimitives.interactiveDisabled,
+      color: colorPrimitives.inkNonEssential,
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+    loading: {
+      backgroundColor: colorPrimitives.semanticNegative020,
+      color: colorPrimitives.inkNegative,
+    },
+  };
+  presets.iconButtonSolidPositive = {
+    base: {
+      backgroundColor: colorPrimitives.semanticPositive030,
+      borderRadius: borderRadiusPrimitives.borderRadiusCircle,
+      color: colorPrimitives.inkInverse,
+      iconColor: colorPrimitives.inkInverse,
+    },
+    hover: {
+      backgroundColor: colorPrimitives.semanticPositive040,
+    },
+    active: {
+      backgroundColor: colorPrimitives.semanticPositive050,
+    },
+    disabled: {
+      backgroundColor: colorPrimitives.interactiveDisabled,
+      color: colorPrimitives.inkNonEssential,
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+    loading: {
+      backgroundColor: colorPrimitives.semanticPositive020,
+      color: colorPrimitives.inkPositive,
     },
   };
   presets.iconButtonOutlinedPrimary = {
@@ -414,6 +482,90 @@ export const createStylePresets = ({
       borderStyle: 'none',
     },
   };
+  presets.iconButtonOutlinedSecondary = {
+    base: {
+      backgroundColor: colorPrimitives.transparent,
+      borderStyle: 'solid',
+      borderColor: colorPrimitives.interactive130,
+      borderWidth: borderPrimitives.borderWidth010,
+      borderRadius: borderRadiusPrimitives.borderRadiusCircle,
+      color: colorPrimitives.inkBase,
+      iconColor: colorPrimitives.inkBase,
+    },
+    hover: {
+      backgroundColor: colorPrimitives.interactive110,
+      borderColor: colorPrimitives.interactive140,
+    },
+    active: {
+      backgroundColor: colorPrimitives.interactive120,
+      borderColor: colorPrimitives.interactive150,
+    },
+    disabled: {
+      borderColor: colorPrimitives.interactiveDisabled,
+      color: colorPrimitives.inkNonEssential,
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+    loading: {
+      backgroundColor: colorPrimitives.interactive120,
+      borderStyle: 'none',
+    },
+  };
+  presets.iconButtonOutlinedNegative = {
+    base: {
+      backgroundColor: colorPrimitives.transparent,
+      borderStyle: 'solid',
+      borderColor: colorPrimitives.semanticNegative030,
+      borderWidth: borderPrimitives.borderWidth010,
+      borderRadius: borderRadiusPrimitives.borderRadiusCircle,
+      color: colorPrimitives.inkNegative,
+      iconColor: colorPrimitives.inkNegative,
+    },
+    hover: {
+      backgroundColor: colorPrimitives.semanticNegative010,
+      borderColor: colorPrimitives.semanticNegative050,
+    },
+    active: {
+      backgroundColor: colorPrimitives.semanticNegative020,
+      borderColor: colorPrimitives.semanticNegative030,
+    },
+    disabled: {
+      borderColor: colorPrimitives.interactiveDisabled,
+      color: colorPrimitives.inkNonEssential,
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+    loading: {
+      backgroundColor: colorPrimitives.semanticNegative020,
+      borderStyle: 'none',
+    },
+  };
+  presets.iconButtonOutlinedPositive = {
+    base: {
+      backgroundColor: colorPrimitives.transparent,
+      borderStyle: 'solid',
+      borderColor: colorPrimitives.semanticPositive030,
+      borderWidth: borderPrimitives.borderWidth010,
+      borderRadius: borderRadiusPrimitives.borderRadiusCircle,
+      color: colorPrimitives.inkPositive,
+      iconColor: colorPrimitives.inkPositive,
+    },
+    hover: {
+      backgroundColor: colorPrimitives.semanticPositive010,
+      borderColor: colorPrimitives.semanticPositive040,
+    },
+    active: {
+      backgroundColor: colorPrimitives.semanticPositive020,
+      borderColor: colorPrimitives.semanticPositive050,
+    },
+    disabled: {
+      borderColor: colorPrimitives.interactiveDisabled,
+      color: colorPrimitives.inkNonEssential,
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+    loading: {
+      backgroundColor: colorPrimitives.semanticPositive020,
+      borderStyle: 'none',
+    },
+  };
   presets.iconButtonMinimalPrimary = {
     base: {
       backgroundColor: colorPrimitives.transparent,
@@ -430,18 +582,16 @@ export const createStylePresets = ({
     disabled: {
       color: colorPrimitives.inkNonEssential,
       iconColor: colorPrimitives.inkNonEssential,
-      backgroundColor: colorPrimitives.transparent,
     },
     loading: {
       backgroundColor: colorPrimitives.interactive020,
-      color: colorPrimitives.inkInverse,
     },
   };
   presets.iconButtonMinimalSecondary = {
     base: {
       backgroundColor: colorPrimitives.transparent,
-      color: colorPrimitives.inkBrand010,
-      iconColor: colorPrimitives.inkBrand010,
+      color: colorPrimitives.inkBase,
+      iconColor: colorPrimitives.inkBase,
       borderRadius: borderRadiusPrimitives.borderRadiusCircle,
     },
     hover: {
@@ -450,17 +600,54 @@ export const createStylePresets = ({
     active: {
       backgroundColor: colorPrimitives.interactive120,
     },
-    current: {
-      backgroundColor: colorPrimitives.transparent,
-    },
     disabled: {
-      backgroundColor: colorPrimitives.transparent,
       color: colorPrimitives.inkNonEssential,
       iconColor: colorPrimitives.inkNonEssential,
     },
     loading: {
       backgroundColor: colorPrimitives.interactive120,
-      color: colorPrimitives.inkInverse,
+    },
+  };
+  presets.iconButtonMinimalNegative = {
+    base: {
+      backgroundColor: colorPrimitives.transparent,
+      borderRadius: borderRadiusPrimitives.borderRadiusCircle,
+      color: colorPrimitives.inkNegative,
+      iconColor: colorPrimitives.inkNegative,
+    },
+    hover: {
+      backgroundColor: colorPrimitives.semanticNegative010,
+    },
+    active: {
+      backgroundColor: colorPrimitives.semanticNegative020,
+    },
+    disabled: {
+      color: colorPrimitives.inkNonEssential,
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+    loading: {
+      backgroundColor: colorPrimitives.semanticNegative020,
+    },
+  };
+  presets.iconButtonMinimalPositive = {
+    base: {
+      backgroundColor: colorPrimitives.transparent,
+      borderRadius: borderRadiusPrimitives.borderRadiusCircle,
+      color: colorPrimitives.inkPositive,
+      iconColor: colorPrimitives.inkPositive,
+    },
+    hover: {
+      backgroundColor: colorPrimitives.semanticPositive010,
+    },
+    active: {
+      backgroundColor: colorPrimitives.semanticPositive020,
+    },
+    disabled: {
+      color: colorPrimitives.inkNonEssential,
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+    loading: {
+      backgroundColor: colorPrimitives.semanticPositive020,
     },
   };
   presets.iconButtonDefault = presets.iconButtonSolidPrimary;

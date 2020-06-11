@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {Button, IconButton} from '..';
+import {Button} from '..';
 import {styled} from '../../utils/style';
 import {ButtonSize} from '../types';
 import {Pause, Email, CopyLink} from '../../icons';
@@ -67,12 +67,6 @@ enum ButtonPositiveStyles {
   Solid = 'buttonSolidPositive',
   Outlined = 'buttonOutlinedPositive',
   Minimal = 'buttonMinimalPositive',
-}
-
-enum IconButtonStyle {
-  Solid = 'iconButtonSolidPrimary',
-  Outlined = 'iconButtonOutlinedPrimary',
-  Minimal = 'iconButtonMinimalPrimary',
 }
 
 const buttonSizes: Array<{
@@ -431,100 +425,6 @@ export default {
         </React.Fragment>
       ),
       name: 'button-with-trailing-icon',
-      type: 'story',
-    },
-    {
-      component: () => (
-        <React.Fragment>
-          <h2>Icon Button Size</h2>
-          <Container>
-            <Stack flow="horizontal-center" space="sizing070" wrap="wrap">
-              <IconButton size={ButtonSize.Small}>
-                <Email />
-              </IconButton>
-              <IconButton size={ButtonSize.Medium}>
-                <Email />
-              </IconButton>
-              <IconButton size={ButtonSize.Large}>
-                <Email />
-              </IconButton>
-            </Stack>
-          </Container>
-        </React.Fragment>
-      ),
-      name: 'icon-button-sizes',
-      type: 'story',
-    },
-    {
-      component: () => (
-        <React.Fragment>
-          <h2>Icon Button States</h2>
-          <Grid>
-            <Cell xsHidden sm={3}>
-              <Stack>
-                <h3>State</h3>
-                {states.map(state => (
-                  <Label>{state}</Label>
-                ))}
-              </Stack>
-            </Cell>
-            {Object.keys(IconButtonStyle).map(style => {
-              const stylePreset =
-                IconButtonStyle[style as keyof typeof IconButtonStyle];
-
-              return (
-                <Cell xs={4} sm={3}>
-                  <Stack
-                    space="sizing020"
-                    stackDistribution={StackDistribution.SpaceEvenly}
-                  >
-                    <h3>{style}</h3>
-                    <Block theme={newskitLightTheme} data-state="Default">
-                      <IconButton
-                        overrides={{stylePreset}}
-                        size={ButtonSize.Medium}
-                      >
-                        <Pause />
-                      </IconButton>
-                    </Block>
-
-                    <Block theme={newskitLightTheme} data-state="Focused">
-                      <IconButton
-                        autoFocus
-                        overrides={{stylePreset}}
-                        size={ButtonSize.Medium}
-                      >
-                        <CopyLink />
-                      </IconButton>
-                    </Block>
-
-                    <Block theme={newskitLightTheme} data-state="Disabled">
-                      <IconButton
-                        disabled
-                        overrides={{stylePreset}}
-                        size={ButtonSize.Medium}
-                      >
-                        <Email />
-                      </IconButton>
-                    </Block>
-
-                    <Block theme={newskitLightTheme} data-state="Loading">
-                      <IconButton
-                        overrides={{stylePreset}}
-                        size={ButtonSize.Medium}
-                        isLoading
-                      >
-                        <Email />
-                      </IconButton>
-                    </Block>
-                  </Stack>
-                </Cell>
-              );
-            })}
-          </Grid>
-        </React.Fragment>
-      ),
-      name: 'icon-button-states',
       type: 'story',
     },
   ],

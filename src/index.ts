@@ -9,6 +9,7 @@ export * from './date-line';
 export * from './divider';
 export * from './flag';
 export * from './grid';
+export * from './icon-button';
 export * from './icons';
 export * from './image';
 export * from './instrumentation';

@@ -63,7 +63,6 @@ exports[`PopoutButton renders correctly with default props 1`] = `
 
 .emotion-3:hover:not(:disabled) {
   background-color: #02509B;
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
 .emotion-3:active:not(:disabled) {

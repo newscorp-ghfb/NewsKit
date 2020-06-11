@@ -278,7 +278,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   overflow: hidden;
   background-color: #d5ebff;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #0A68C1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -617,7 +617,6 @@ exports[`Audio Player live player renders as expected 1`] = `
 
 .emotion-29:disabled {
   color: #9c9c9c;
-  background-color: transparent;
 }
 
 .emotion-29:disabled svg {
@@ -808,7 +807,6 @@ exports[`Audio Player live player renders as expected 1`] = `
 
 .emotion-47:disabled {
   color: #9c9c9c;
-  background-color: transparent;
 }
 
 .emotion-47:disabled svg {
@@ -1164,7 +1162,7 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
   overflow: hidden;
   background-color: #d5ebff;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #0A68C1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1445,7 +1443,6 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
 
 .emotion-3:hover:not(:disabled) {
   background-color: #02509B;
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1522,7 +1519,7 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
   overflow: hidden;
   background-color: #d5ebff;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #0A68C1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -2168,7 +2165,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 
 .emotion-42:disabled {
   color: #9c9c9c;
-  background-color: transparent;
 }
 
 .emotion-42:disabled svg {
@@ -2296,7 +2292,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 
 .emotion-11:disabled {
   color: #9c9c9c;
-  background-color: transparent;
 }
 
 .emotion-11:disabled svg {
@@ -2511,7 +2506,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 
 .emotion-4:hover:not(:disabled) {
   background-color: #02509B;
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.04),0 2px 4px 0 rgba(96,97,112,0.16);
 }
 
 .emotion-4:active:not(:disabled) {
@@ -3409,7 +3403,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   overflow: hidden;
   background-color: #d5ebff;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #0A68C1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -3748,7 +3742,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 
 .emotion-44:disabled {
   color: #9c9c9c;
-  background-color: transparent;
 }
 
 .emotion-44:disabled svg {
@@ -3939,7 +3932,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 
 .emotion-18:disabled {
   color: #9c9c9c;
-  background-color: transparent;
 }
 
 .emotion-18:disabled svg {

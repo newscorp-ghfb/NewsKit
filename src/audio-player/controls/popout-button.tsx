@@ -1,6 +1,7 @@
 import React from 'react';
 import {Popout} from '../../icons';
-import {IconButton, ButtonSize} from '../../button';
+import {ButtonSize} from '../../button';
+import {IconButton} from '../../icon-button';
 
 export interface PopoutButtonProps {
   onClick?: (props: PopoutButtonProps) => void;

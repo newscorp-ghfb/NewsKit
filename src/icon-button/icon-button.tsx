@@ -1,6 +1,6 @@
 import React from 'react';
-import {ButtonSize, ButtonProps} from './types';
-import {Button} from './button';
+import {Button, ButtonSize, ButtonProps} from '../button';
+
 import {useTheme} from '../themes/emotion';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 

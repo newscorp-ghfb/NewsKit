@@ -1,6 +1,7 @@
 import React from 'react';
 import {Forward10, Replay10} from '../../icons';
-import {ButtonSize, Button} from '../../button';
+import {ButtonSize} from '../../button';
+import {IconButton} from '../../icon-button';
 
 export interface TrackControlProps {
   onClick: () => void;

@@ -1,5 +1,6 @@
 import React, {useState, useCallback, useMemo} from 'react';
-import {IconButton, ButtonSize} from '../button';
+import {ButtonSize} from '../button';
+import {IconButton} from '../icon-button';
 import {VolumeControlProps} from './types';
 import {Slider} from '../slider';
 import {VolumeUp, VolumeDown, VolumeMute} from '../icons';

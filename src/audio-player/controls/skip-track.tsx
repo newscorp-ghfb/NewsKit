@@ -1,6 +1,7 @@
 import React from 'react';
 import {SkipNext, SkipPrevious} from '../../icons';
-import {ButtonSize, Button} from '../../button';
+import {ButtonSize} from '../../button';
+import {IconButton} from '../../icon-button';
 
 export interface SkipButtonProps {
   onClick: () => void;

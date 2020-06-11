@@ -3,7 +3,8 @@ import * as React from 'react';
 import {ShareBar} from '..';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {Facebook, Twitter} from '../../icons';
-import {Button, IconButton, ButtonSize} from '../../button';
+import {Button, ButtonSize} from '../../button';
+import {IconButton} from '../../icon-button';
 
 export default {
   name: 'share-bar',

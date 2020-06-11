@@ -1,5 +1,5 @@
 import React from 'react';
-import {IconButton} from '../../button/icon-button';
+import {IconButton} from '../../icon-button';
 import {ButtonSize} from '../../button/types';
 import {Play, Pause, Square} from '../../icons';
 

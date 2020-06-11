@@ -597,7 +597,7 @@ exports[`Radio Player default player 1`] = `
   overflow: hidden;
   background-color: #d5ebff;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #0A68C1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -825,7 +825,6 @@ exports[`Radio Player default player 1`] = `
 
 .emotion-41:disabled {
   color: #9c9c9c;
-  background-color: transparent;
 }
 
 .emotion-41:disabled svg {
@@ -1065,7 +1064,6 @@ exports[`Radio Player default player 1`] = `
 
 .emotion-67:disabled {
   color: #9c9c9c;
-  background-color: transparent;
 }
 
 .emotion-67:disabled svg {
@@ -2451,7 +2449,7 @@ exports[`Radio Player live player 1`] = `
   overflow: hidden;
   background-color: #d5ebff;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #0A68C1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -2790,7 +2788,6 @@ exports[`Radio Player live player 1`] = `
 
 .emotion-80:disabled {
   color: #9c9c9c;
-  background-color: transparent;
 }
 
 .emotion-80:disabled svg {
@@ -4330,7 +4327,7 @@ exports[`Radio Player player with popout link 1`] = `
   overflow: hidden;
   background-color: #d5ebff;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #0A68C1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -4558,7 +4555,6 @@ exports[`Radio Player player with popout link 1`] = `
 
 .emotion-57:disabled {
   color: #9c9c9c;
-  background-color: transparent;
 }
 
 .emotion-57:disabled svg {
@@ -4798,7 +4794,6 @@ exports[`Radio Player player with popout link 1`] = `
 
 .emotion-83:disabled {
   color: #9c9c9c;
-  background-color: transparent;
 }
 
 .emotion-83:disabled svg {
@@ -6470,7 +6465,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   overflow: hidden;
   background-color: #d5ebff;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #0A68C1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -6698,7 +6693,6 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 
 .emotion-73:disabled {
   color: #9c9c9c;
-  background-color: transparent;
 }
 
 .emotion-73:disabled svg {
@@ -6938,7 +6932,6 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 
 .emotion-99:disabled {
   color: #9c9c9c;
-  background-color: transparent;
 }
 
 .emotion-99:disabled svg {

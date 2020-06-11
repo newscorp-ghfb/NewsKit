@@ -1,6 +1,6 @@
 import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {Button, IconButton, ButtonProps, ButtonSize} from '..';
+import {Button, ButtonProps, ButtonSize} from '..';
 import {Email} from '../../icons/email';
 
 const renderButtonWithText = (props: ButtonProps) => (
@@ -12,12 +12,6 @@ const renderButtonWithTextAndIcon = (props: ButtonProps) => (
     click this!
     <Email />
   </Button>
-);
-
-const renderIconButton = (props: ButtonProps) => (
-  <IconButton {...props}>
-    <Email />
-  </IconButton>
 );
 
 describe('Button', () => {
@@ -184,97 +178,6 @@ describe('Button', () => {
         },
       };
       const fragment = renderToFragmentWithTheme(renderButtonWithText, props);
-      expect(fragment).toMatchSnapshot();
-    });
-  });
-
-  describe('IconButton', () => {
-    test('renders Icon Button with fallback formatting', () => {
-      const fragment = renderToFragmentWithTheme(renderIconButton);
-      expect(fragment).toMatchSnapshot();
-    });
-
-    test('renders Small Icon Button', () => {
-      const props = {
-        size: ButtonSize.Small,
-      };
-      const fragment = renderToFragmentWithTheme(renderIconButton, props);
-      expect(fragment).toMatchSnapshot();
-    });
-
-    test('renders Medium Icon Button', () => {
-      const props = {
-        size: ButtonSize.Medium,
-      };
-      const fragment = renderToFragmentWithTheme(renderIconButton, props);
-      expect(fragment).toMatchSnapshot();
-    });
-
-    test('renders Large Icon Button', () => {
-      const props = {
-        size: ButtonSize.Large,
-      };
-      const fragment = renderToFragmentWithTheme(renderIconButton, props);
-      expect(fragment).toMatchSnapshot();
-    });
-
-    test('renders Icon Button with custom spacing between elements', () => {
-      const props: ButtonProps = {
-        overrides: {
-          space: 'sizing020',
-        },
-      };
-      const fragment = renderToFragmentWithTheme(renderIconButton, props);
-      expect(fragment).toMatchSnapshot();
-    });
-
-    test('renders full-width Icon Button', () => {
-      const props: ButtonProps = {
-        size: ButtonSize.Large,
-        overrides: {
-          width: '100%',
-        },
-      };
-      const fragment = renderToFragmentWithTheme(renderIconButton, props);
-      expect(fragment).toMatchSnapshot();
-    });
-
-    test('renders fixed-width Icon Button', () => {
-      const props: ButtonProps = {
-        size: ButtonSize.Large,
-        overrides: {
-          width: 'sizing120',
-        },
-      };
-      const fragment = renderToFragmentWithTheme(renderIconButton, props);
-      expect(fragment).toMatchSnapshot();
-    });
-
-    test('renders Icon Button with custom iconSize', () => {
-      const props: ButtonProps = {
-        size: ButtonSize.Large,
-        overrides: {
-          iconSize: 'iconSize040',
-        },
-      };
-      const fragment = renderToFragmentWithTheme(renderIconButton, props);
-      expect(fragment).toMatchSnapshot();
-    });
-
-    test('renders Icon Button in loading State', () => {
-      const props = {
-        size: ButtonSize.Large,
-        isLoading: true,
-      };
-      const fragment = renderToFragmentWithTheme(renderIconButton, props);
-      expect(fragment).toMatchSnapshot();
-    });
-
-    test('renders when there is an icon with a colour', () => {
-      const props = {
-        size: ButtonSize.Small,
-      };
-      const fragment = renderToFragmentWithTheme(renderIconButton, props);
       expect(fragment).toMatchSnapshot();
     });
   });

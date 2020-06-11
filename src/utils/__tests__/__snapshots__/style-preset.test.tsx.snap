@@ -183,7 +183,7 @@ exports[`getStylePresetFromTheme iconButtonMinimalPrimary with loading and curre
 <DocumentFragment>
   .emotion-0 {
   background-color: #ffff00;
-  color: #FFFFFF;
+  color: #0A68C1;
   border-radius: 50%;
 }
 
@@ -202,7 +202,7 @@ exports[`getStylePresetFromTheme iconButtonMinimalPrimary with loading state 1`]
 <DocumentFragment>
   .emotion-0 {
   background-color: #ffff00;
-  color: #FFFFFF;
+  color: #0A68C1;
   border-radius: 50%;
 }
 
@@ -294,7 +294,6 @@ exports[`getStylePresetFromTheme with default iconButtonMinimalPrimary style pre
 
 .emotion-0:disabled {
   color: #9c9c9c;
-  background-color: transparent;
 }
 
 .emotion-0:disabled svg {
