@@ -3,6 +3,7 @@ import {
   formatTrackTime,
   formatDuration,
   getMediaSegment,
+  seekBarAriaValueText,
 } from '../utils';
 
 test('formatTrackTime', () => {
@@ -88,5 +89,31 @@ describe('getmediaSegment()', () => {
   });
   test('should return a segment of 51-75', () => {
     expect(getMediaSegment(1000, 700)).toEqual('51-75');
+  });
+});
+
+describe('seekBarAriaValueText()', () => {
+  test('should return string of "0 seconds"', () => {
+    expect(seekBarAriaValueText([0])).toEqual('0 seconds');
+  });
+  test('should return string of "0 seconds"', () => {
+    expect(seekBarAriaValueText([1])).toEqual('1 second');
+  });
+  test('should return string of "1 minute 0 seconds"', () => {
+    expect(seekBarAriaValueText([60])).toEqual('1 minute 0 seconds');
+  });
+  test('should return string of "1 minute 0 seconds"', () => {
+    expect(seekBarAriaValueText([80])).toEqual('1 minute 20 seconds');
+  });
+  test('should return string of "1 minute 0 seconds"', () => {
+    expect(seekBarAriaValueText([140])).toEqual('2 minutes 20 seconds');
+  });
+  test('should return string of "1 hour 0 minutes 0 seconds"', () => {
+    expect(seekBarAriaValueText([3600])).toEqual('1 hour 0 minutes 0 seconds');
+  });
+  test('should return string of "2 hours 2 minutes 15 seconds"', () => {
+    expect(seekBarAriaValueText([7335])).toEqual(
+      '2 hours 2 minutes 15 seconds',
+    );
   });
 });

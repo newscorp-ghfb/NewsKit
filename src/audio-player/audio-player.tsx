@@ -13,7 +13,12 @@ import {Stack, StackDistribution, Flow} from '../stack';
 import {PlayerGrid, ControlContainer, PlayerContainer} from './styled';
 import {VolumeControl} from '../volume-control';
 import {Cell} from '../grid/cell';
-import {formatTrackTime, formatTrackData, formatDuration} from './utils';
+import {
+  formatTrackTime,
+  formatTrackData,
+  formatDuration,
+  seekBarAriaValueText,
+} from './utils';
 import {StyledTrack} from '../slider/styled';
 import {useTheme} from '../themes/emotion';
 
@@ -177,7 +182,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
               values,
               colors,
               min: 0,
-              max: duration,
+              max: Math.floor(duration),
             }),
           }}
           data-testid="audio-slider-track"
@@ -202,19 +207,6 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   const formattedTime = showControls
     ? formatTrackTime(trackPositionArr[0], duration)
     : '';
-
-  const seekBarAriaValueText = (seekTime: number[]) => {
-    const time = new Date(seekTime[0] * 1000)
-      .toISOString()
-      .substr(11, 8)
-      .split(':');
-
-    const hour = time[0] !== '00' ? `${time[0]} hour ` : '';
-    const min = time[1] !== '00' ? `${time[1]} minutes ` : '';
-    const sec = time[2] !== '00' ? `${time[2]} seconds` : '';
-
-    return hour + min + sec;
-  };
 
   const srOnlyForwardRewind = getBuiId();
 
@@ -302,12 +294,12 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
             <Slider
               min={0}
               minLabel={formattedTime}
-              max={duration || 1}
+              max={Math.floor(duration) || 1}
               maxLabel={formattedDuration}
               values={trackPositionArr}
               step={1}
               ariaLabel="seek bar"
-              ariaValueText={`${seekBarAriaValueText(
+              ariaValueText={`Playback time: ${seekBarAriaValueText(
                 trackPositionArr,
               )} of ${seekBarAriaValueText([duration])}`}
               thumbSize="sizing040"
