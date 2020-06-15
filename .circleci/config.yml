@@ -49,6 +49,9 @@ executors:
   cypress:
     docker:
       - image: cypress/browsers:node12.16.2-chrome81-ff75
+  java:
+    docker:
+     - image: circleci/openjdk:8u252-jdk-buster
 jobs:
   install_deps:
     working_directory: ~/project
@@ -277,6 +280,19 @@ jobs:
           path: cypress/videos
       - slack/status:
           <<: *slack_status
+  
+  copy_dev_baselines_to_master:
+    working_directory: ~/project
+    executor: java
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Copy Dev Baselines to Master
+          command: |
+            curl -L "https://dl.bintray.com/applitoolseyes/generic/EyesUtilities_1.3.1.jar" -o EyesUtilities_1.3.1.jar
+            java -jar EyesUtilities_1.3.1.jar copyBaselines -s develop -t master -k ${APPLITOOLS_API_KEY_WITH_MERGE_CREDENTIALS}
 
   create_release_candidate:
     working_directory: ~/project
@@ -681,6 +697,10 @@ workflows:
       - approve_deployment:
           type: approval
           <<: *only_master
+      - copy_dev_baselines_to_master:
+          <<: *only_master
+          requires:
+            - approve_deployment
       - publish_npm:
           context: ncu-product-platforms-context
           <<: *only_master
