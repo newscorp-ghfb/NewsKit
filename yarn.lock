@@ -45,95 +45,65 @@
   dependencies:
     cross-fetch "3.0.4"
 
-"@applitools/dom-snapshot@3.2.3":
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/@applitools/dom-snapshot/-/dom-snapshot-3.2.3.tgz#8e9b56284154bd10bfdef62b11885ab6790acf9c"
+"@applitools/dom-capture@7.2.4":
+  version "7.2.4"
+  resolved "https://registry.yarnpkg.com/@applitools/dom-capture/-/dom-capture-7.2.4.tgz#1e7022ae9d91c8537728b02362b4b08497469c2d"
+  integrity sha512-GcsAe+52Fzrjc9s9opD2JNGYUmIztBF3nTUHLdFuFIkHAYuuIUixEwdiHQLW/IOI51dua6yvOs4it2XlMHFPrw==
   dependencies:
-    "@applitools/functional-commons" "^1.5.4"
-
-"@applitools/dom-snapshot@3.3.3":
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/@applitools/dom-snapshot/-/dom-snapshot-3.3.3.tgz#ee2d3269e169ed4ebf598fcdef9502021982210f"
-  dependencies:
-    "@applitools/functional-commons" "^1.5.4"
-
-"@applitools/dom-snapshot@3.3.5":
-  version "3.3.5"
-  resolved "https://registry.yarnpkg.com/@applitools/dom-snapshot/-/dom-snapshot-3.3.5.tgz#d16ee69d0e0e70329eaaa063bbee49fc42864f53"
-  dependencies:
-    "@applitools/functional-commons" "^1.5.4"
-
-"@applitools/eyes-common@3.18.3":
-  version "3.18.3"
-  resolved "https://registry.yarnpkg.com/@applitools/eyes-common/-/eyes-common-3.18.3.tgz#723b45f0c8bb79c1a9ce8f273b56b708c647bfd3"
-  dependencies:
-    cosmiconfig "^6.0.0"
-    dateformat "^3.0.3"
-    debug "^4.1.1"
-    deepmerge "^4.2.2"
-    png-async "^0.9.4"
-    stack-trace "^0.0.10"
-
-"@applitools/eyes-common@3.20.1":
-  version "3.20.1"
-  resolved "https://registry.yarnpkg.com/@applitools/eyes-common/-/eyes-common-3.20.1.tgz#8c5047fcf0359fada2a73f109f32b68f4bc84aba"
-  dependencies:
-    cosmiconfig "^6.0.0"
-    dateformat "^3.0.3"
-    debug "^4.1.1"
-    deepmerge "^4.2.2"
-    png-async "^0.9.4"
-    stack-trace "^0.0.10"
-
-"@applitools/eyes-cypress@^3.9.4":
-  version "3.9.11"
-  resolved "https://registry.yarnpkg.com/@applitools/eyes-cypress/-/eyes-cypress-3.9.11.tgz#b439bd399cdbd84dd5768d229cd1c9bdeb6f394b"
-  dependencies:
-    "@applitools/dom-snapshot" "3.2.3"
-    "@applitools/eyes-common" "3.18.3"
-    "@applitools/eyes-sdk-core" "6.0.10"
     "@applitools/functional-commons" "1.5.4"
-    "@applitools/visual-grid-client" "13.5.15"
+
+"@applitools/dom-snapshot@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/@applitools/dom-snapshot/-/dom-snapshot-3.5.3.tgz#25271f534cb37c7712a7f864de442a14ad1b3adf"
+  integrity sha512-5O+X+F5ftmTLXY8dic+XddM+29Q8U+EtF9JJCLQZBAf766vTumfnDHjJDSteE1UJoA9UmY6VsTt+hHrScaL/8w==
+  dependencies:
+    "@applitools/functional-commons" "1.5.4"
+    css-tree "^1.0.0-alpha.39"
+
+"@applitools/eyes-cypress@^3.12.0":
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/@applitools/eyes-cypress/-/eyes-cypress-3.12.0.tgz#dfa7d3b145f45cfbcecc35ec808f86ea9e7532ce"
+  integrity sha512-UE5Qj7oXDQstMBfJcwDX0ZsV4JVzVnNlQyExHPMsxDj3HF9m9T++4bzTIxE+UiJkCM0Y3P3ykTC2pqSdxLCTMw==
+  dependencies:
+    "@applitools/dom-snapshot" "3.5.3"
+    "@applitools/eyes-sdk-core" "11.0.5"
+    "@applitools/functional-commons" "1.5.4"
+    "@applitools/visual-grid-client" "14.4.4"
     body-parser "^1.19.0"
-    chalk "^2.4.2"
+    chalk "3.0.0"
     cors "^2.8.5"
     express "^4.17.1"
     lodash.flatten "^4.4.0"
 
-"@applitools/eyes-sdk-core@6.0.10":
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/@applitools/eyes-sdk-core/-/eyes-sdk-core-6.0.10.tgz#73d72d03720c6ae4473ac72d9f4f92f30f6a44d7"
+"@applitools/eyes-sdk-core@11.0.5":
+  version "11.0.5"
+  resolved "https://registry.yarnpkg.com/@applitools/eyes-sdk-core/-/eyes-sdk-core-11.0.5.tgz#88487e07aa77fc47ade18b75b9d0bcd3af9e5078"
+  integrity sha512-9yx/dCGtzk9GjPwARM19WL1Dx3nbhAynAxRAC2y2C/lqVi72iz3VMMfaaGetX3b74WOk99AYS1sriBXFTaFYSQ==
   dependencies:
-    "@applitools/eyes-common" "3.18.3"
+    "@applitools/dom-capture" "7.2.4"
     "@applitools/isomorphic-fetch" "3.0.0"
     axios "0.19.2"
     chalk "3.0.0"
-    es6-promise-pool "2.5.0"
+    cosmiconfig "^6.0.0"
+    dateformat "^3.0.3"
+    debug "^4.1.1"
+    deepmerge "^4.2.2"
+    png-async "^0.9.4"
+    stack-trace "^0.0.10"
     tunnel "0.0.6"
 
-"@applitools/eyes-sdk-core@9.0.2":
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/@applitools/eyes-sdk-core/-/eyes-sdk-core-9.0.2.tgz#1890d6d67304dc45e6a5bd0d650eae0ae427eac9"
+"@applitools/eyes-storybook@^3.8.0":
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/@applitools/eyes-storybook/-/eyes-storybook-3.8.0.tgz#c595fe4deda5bc3341082751b225736efefc5652"
+  integrity sha512-0ercteIz0q0+vJaj1ZVccPmhzJeKwsTtF1roDxrohZvCMJpQGhVfaFEEYOhWsfKgChJJIIhr2lk2UwEe8o5hwg==
   dependencies:
-    "@applitools/eyes-common" "3.20.1"
-    "@applitools/isomorphic-fetch" "3.0.0"
-    axios "0.19.2"
-    chalk "3.0.0"
-    es6-promise-pool "2.5.0"
-    tunnel "0.0.6"
-
-"@applitools/eyes-storybook@^3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@applitools/eyes-storybook/-/eyes-storybook-3.3.0.tgz#749389a9c4f268659e821848e7bf981feb9b5927"
-  dependencies:
-    "@applitools/dom-snapshot" "3.3.5"
-    "@applitools/eyes-common" "3.20.1"
-    "@applitools/eyes-sdk-core" "9.0.2"
+    "@applitools/dom-snapshot" "3.5.3"
+    "@applitools/eyes-sdk-core" "11.0.5"
     "@applitools/functional-commons" "1.5.4"
     "@applitools/monitoring-commons" "1.0.19"
-    "@applitools/visual-grid-client" "13.6.4"
+    "@applitools/visual-grid-client" "14.4.4"
     boxen "^4.2.0"
-    chalk "^2.4.2"
+    chalk "3.0.0"
     detect-port "^1.3.0"
     lodash.flatten "^4.4.0"
     lodash.pick "^4.4.0"
@@ -141,7 +111,12 @@
     puppeteer "^1.20.0"
     yargs "^12.0.5"
 
-"@applitools/functional-commons@1.5.4", "@applitools/functional-commons@^1.5.2", "@applitools/functional-commons@^1.5.4":
+"@applitools/feature-flags@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@applitools/feature-flags/-/feature-flags-2.1.1.tgz#cf784e3b7ab4f322b0ebe62a5ea45ec56738b2d4"
+  integrity sha512-bhzTHOpTmIg1KzI/kcNyDgFeKiHrX+Tjja9MtDwkOBUJ52Ff2A7nH9rm1xWww4yY4Me3yTaG8F6U75X3UdXE5g==
+
+"@applitools/functional-commons@1.5.4", "@applitools/functional-commons@^1.5.2":
   version "1.5.4"
   resolved "https://registry.yarnpkg.com/@applitools/functional-commons/-/functional-commons-1.5.4.tgz#d32f2bbc6a2598872b3a385d054fcf8e40c30a40"
 
@@ -200,35 +175,19 @@
   dependencies:
     debug "^4.1.0"
 
-"@applitools/visual-grid-client@13.5.15":
-  version "13.5.15"
-  resolved "https://registry.yarnpkg.com/@applitools/visual-grid-client/-/visual-grid-client-13.5.15.tgz#d26b8444d502e1d0258b4b266777fae9ce86ac40"
+"@applitools/visual-grid-client@14.4.4":
+  version "14.4.4"
+  resolved "https://registry.yarnpkg.com/@applitools/visual-grid-client/-/visual-grid-client-14.4.4.tgz#47d177a5e2a4ab1640aa26931e5b0d6414a2329c"
+  integrity sha512-pZCqDXFM+7Q4guwj8hakaArkfQDfrM+8Xs0nsCu3jGN5qj5TFGNNbJ7Glkl+VWy4O1h3L7FhmvCwavtVv0Jt2w==
   dependencies:
-    "@applitools/dom-snapshot" "3.2.3"
-    "@applitools/eyes-common" "3.18.3"
-    "@applitools/eyes-sdk-core" "6.0.10"
+    "@applitools/dom-snapshot" "3.5.3"
+    "@applitools/eyes-sdk-core" "11.0.5"
+    "@applitools/feature-flags" "2.1.1"
     "@applitools/functional-commons" "1.5.4"
     "@applitools/http-commons" "2.3.12"
     "@applitools/isomorphic-fetch" "3.0.0"
     "@applitools/jsdom" "1.0.2"
-    he "1.2.0"
-    lodash.mapvalues "^4.6.0"
-    mime-types "^2.1.24"
-    mkdirp "^0.5.1"
-    postcss-value-parser "^4.0.2"
-    throat "^5.0.0"
-
-"@applitools/visual-grid-client@13.6.4":
-  version "13.6.4"
-  resolved "https://registry.yarnpkg.com/@applitools/visual-grid-client/-/visual-grid-client-13.6.4.tgz#58fa8e5d699536a47a1ffe0d81007be8233394a7"
-  dependencies:
-    "@applitools/dom-snapshot" "3.3.3"
-    "@applitools/eyes-common" "3.20.1"
-    "@applitools/eyes-sdk-core" "9.0.2"
-    "@applitools/functional-commons" "1.5.4"
-    "@applitools/http-commons" "2.3.12"
-    "@applitools/isomorphic-fetch" "3.0.0"
-    "@applitools/jsdom" "1.0.2"
+    chalk "3.0.0"
     he "1.2.0"
     lodash.mapvalues "^4.6.0"
     mime-types "^2.1.24"
@@ -5911,7 +5870,7 @@ css-tree@1.0.0-alpha.37:
     mdn-data "2.0.4"
     source-map "^0.6.1"
 
-css-tree@1.0.0-alpha.39:
+css-tree@1.0.0-alpha.39, css-tree@^1.0.0-alpha.39:
   version "1.0.0-alpha.39"
   resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-1.0.0-alpha.39.tgz#2bff3ffe1bb3f776cf7eefd91ee5cba77a149eeb"
   integrity sha512-7UvkEYgBAHRG9Nt980lYxjsTrCyHFN53ky3wVsDkiMdVqylqRt+Zc+jm5qw7/qyOvN2dHSYtX0e4MbCCExSvnA==
@@ -6802,10 +6761,6 @@ es6-iterator@2.0.3, es6-iterator@~2.0.3:
     d "1"
     es5-ext "^0.10.35"
     es6-symbol "^3.1.1"
-
-es6-promise-pool@2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/es6-promise-pool/-/es6-promise-pool-2.5.0.tgz#147c612b36b47f105027f9d2bf54a598a99d9ccb"
 
 es6-promise@^4.0.3, es6-promise@^4.2.5:
   version "4.2.8"
