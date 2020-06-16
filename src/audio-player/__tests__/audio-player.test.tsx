@@ -27,20 +27,24 @@ const liveTrackingOutputObject = {
   context: {},
   originator: 'audio-player-play-button',
   trigger: 'click',
-  media_player: `newskit-audio-player-${version}`,
-  media_type: 'audio',
+  data: {
+    media_player: `newskit-audio-player-${version}`,
+    media_type: 'audio',
+  },
 };
 
 const recordedTrackingOutputObject = {
   context: {},
   originator: 'audio-player-play-button',
   trigger: 'click',
-  media_player: `newskit-audio-player-${version}`,
-  media_duration: '00:00',
-  media_type: 'audio',
-  media_milestone: '2',
-  media_offset: '00:00',
-  media_segment: 'MockMediaSegment',
+  data: {
+    media_player: `newskit-audio-player-${version}`,
+    media_duration: '00:00',
+    media_type: 'audio',
+    media_milestone: '2',
+    media_offset: '00:00',
+    media_segment: 'MockMediaSegment',
+  },
 };
 
 jest.mock('../../utils/calculate-string-percentage', () => () => '2');
@@ -445,9 +449,12 @@ describe('Audio Player', () => {
 
       expect(fireEventSpy).toHaveBeenCalledWith({
         ...recordedTrackingOutputObject,
+        data: {
+          event_navigation_name: 'forward skip',
+          ...recordedTrackingOutputObject.data,
+        },
         originator: 'audio-player-skip-forward',
         trigger: 'click',
-        event_navigation_name: 'forward skip',
       });
     });
 
@@ -464,9 +471,12 @@ describe('Audio Player', () => {
 
       expect(fireEventSpy).toHaveBeenCalledWith({
         ...recordedTrackingOutputObject,
+        data: {
+          event_navigation_name: 'backward skip',
+          ...recordedTrackingOutputObject.data,
+        },
         originator: 'audio-player-skip-backward',
         trigger: 'click',
-        event_navigation_name: 'backward skip',
       });
     });
 
@@ -534,7 +544,14 @@ describe('Audio Player', () => {
         ...recordedTrackingOutputObject,
         originator: 'audio-player-audio',
         trigger: 'pulse',
-        media_duration: '01:00',
+        data: {
+          media_duration: '01:00',
+          media_milestone: '2',
+          media_offset: '00:00',
+          media_player: 'newskit-audio-player-0.10.0',
+          media_segment: 'MockMediaSegment',
+          media_type: 'audio',
+        },
       };
       expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
     });

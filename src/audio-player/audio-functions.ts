@@ -70,23 +70,15 @@ export const useAudioFunctions = ({
     [audioRef],
   );
 
-  const getTrackingInformation = useCallback(
-    (
-      originator: string,
-      eventTrigger: EventTrigger,
-      eventSpecificInfo?: object,
-    ) => {
-      const trackingInformation = {
-        originator,
-        trigger: eventTrigger,
-        media_player: `newskit-audio-player-${version}`,
-        media_type: 'audio',
-        ...eventSpecificInfo,
-      };
-
-      if (live === false) {
-        return {
-          ...trackingInformation,
+  const buildMediaData = useCallback(() => {
+    const playerData = {
+      media_player: `newskit-audio-player-${version}`,
+      media_type: 'audio',
+    };
+    return live
+      ? playerData
+      : {
+          ...playerData,
           media_duration: formatTrackTime(duration),
           media_milestone: calculateStringPercentage(
             trackPositionRef.current,
@@ -95,10 +87,27 @@ export const useAudioFunctions = ({
           media_segment: getMediaSegment(duration, trackPositionRef.current),
           media_offset: formatTrackTime(trackPositionRef.current),
         };
-      }
+  }, [duration, live, trackPositionRef]);
+
+  const getTrackingInformation = useCallback(
+    (
+      originator: string,
+      eventTrigger: EventTrigger,
+      eventSpecificInfo?: object,
+    ) => {
+      const data = {
+        ...buildMediaData(),
+        ...eventSpecificInfo,
+      };
+      const trackingInformation = {
+        originator,
+        trigger: eventTrigger,
+        data,
+      };
+
       return trackingInformation;
     },
-    [duration, live, trackPositionRef],
+    [buildMediaData],
   );
 
   const onWaiting = useCallback(() => {
