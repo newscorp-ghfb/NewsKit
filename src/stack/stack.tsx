@@ -5,6 +5,7 @@ import {
   StyledMasterContainerList,
   StyledMasterContainerListElement,
   StyledChildContainerListElement,
+  StyledListItem,
   StyledChildContainer,
   hasSpacing,
 } from './styled';
@@ -54,7 +55,7 @@ const wrapChild = (
       return <Container {...childProps}>{child}</Container>;
     }
   }
-  return list ? <li>{child}</li> : child;
+  return list ? <StyledListItem>{child}</StyledListItem> : child;
 };
 
 export const Stack: React.FC<StackProps> = ({

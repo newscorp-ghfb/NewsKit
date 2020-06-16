@@ -380,7 +380,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-11 {
+.emotion-12 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -390,7 +390,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   display: inline-flex;
 }
 
-.emotion-17 {
+.emotion-19 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -400,7 +400,7 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   display: inline-flex;
 }
 
-.emotion-18 {
+.emotion-21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -418,15 +418,21 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   -ms-flex-pack: start;
   justify-content: flex-start;
   list-style-type: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.emotion-6 {
+  height: 100%;
 }
 
 <ul
-    class="emotion-18"
+    class="emotion-21"
   >
-    <li>
+    <li
+      class="emotion-6"
+    >
       <div
         class="emotion-5"
       >
@@ -454,9 +460,11 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
         </div>
       </div>
     </li>
-    <li>
+    <li
+      class="emotion-6"
+    >
       <div
-        class="emotion-11"
+        class="emotion-12"
       >
         <div
           class="emotion-4"
@@ -482,9 +490,11 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
         </div>
       </div>
     </li>
-    <li>
+    <li
+      class="emotion-6"
+    >
       <div
-        class="emotion-17"
+        class="emotion-19"
       >
         <div
           class="emotion-4"

@@ -125,14 +125,14 @@ export const StyledMasterContainer = styled.div<StyledStackProps>`
 
 export const StyledMasterContainerList = styled(StyledMasterContainer)`
   list-style-type: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 `.withComponent('ul');
 
-export const StyledMasterContainerListElement = styled(
-  StyledMasterContainer,
-)``.withComponent('li');
+export const StyledMasterContainerListElement = styled(StyledMasterContainer)`
+  height: 100%;
+`.withComponent('li');
 
 export const StyledChildContainer = styled.div<StyledChildProps>`
   display: inline-flex;
@@ -140,6 +140,10 @@ export const StyledChildContainer = styled.div<StyledChildProps>`
   order: ${({$order}) => $order};
 `;
 
-export const StyledChildContainerListElement = styled(
-  StyledChildContainer,
-)``.withComponent('li');
+export const StyledChildContainerListElement = styled(StyledChildContainer)`
+  height: 100%;
+`.withComponent('li');
+
+export const StyledListItem = styled.li`
+  height: 100%;
+`;

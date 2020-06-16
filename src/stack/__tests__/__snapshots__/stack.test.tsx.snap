@@ -118,7 +118,7 @@ exports[`Stack renders nested stack as list 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-22 {
+.emotion-23 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -136,9 +136,9 @@ exports[`Stack renders nested stack as list 1`] = `
   -ms-flex-pack: start;
   justify-content: flex-start;
   list-style-type: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .emotion-16 {
@@ -154,6 +154,7 @@ exports[`Stack renders nested stack as list 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  height: 100%;
 }
 
 .emotion-15 {
@@ -179,8 +180,12 @@ exports[`Stack renders nested stack as list 1`] = `
   justify-content: flex-start;
 }
 
+.emotion-22 {
+  height: 100%;
+}
+
 <ul
-    class="emotion-22"
+    class="emotion-23"
   >
     <li
       class="emotion-16"
@@ -258,7 +263,9 @@ exports[`Stack renders nested stack as list 1`] = `
         </div>
       </div>
     </li>
-    <li>
+    <li
+      class="emotion-22"
+    >
       <div
         class="emotion-4"
       >
@@ -404,7 +411,7 @@ exports[`Stack renders nested stack as list when both are list 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-22 {
+.emotion-28 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -422,12 +429,12 @@ exports[`Stack renders nested stack as list when both are list 1`] = `
   -ms-flex-pack: start;
   justify-content: flex-start;
   list-style-type: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.emotion-16 {
+.emotion-21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -440,9 +447,14 @@ exports[`Stack renders nested stack as list when both are list 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  height: 100%;
 }
 
-.emotion-15 {
+.emotion-5 {
+  height: 100%;
+}
+
+.emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -464,21 +476,23 @@ exports[`Stack renders nested stack as list when both are list 1`] = `
   -ms-flex-pack: start;
   justify-content: flex-start;
   list-style-type: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 <ul
-    class="emotion-22"
+    class="emotion-28"
   >
     <li
-      class="emotion-16"
+      class="emotion-21"
     >
       <ul
-        class="emotion-15"
+        class="emotion-20"
       >
-        <li>
+        <li
+          class="emotion-5"
+        >
           <div
             class="emotion-4"
           >
@@ -502,10 +516,14 @@ exports[`Stack renders nested stack as list when both are list 1`] = `
             </div>
           </div>
         </li>
-        <li>
+        <li
+          class="emotion-5"
+        >
           , 
         </li>
-        <li>
+        <li
+          class="emotion-5"
+        >
           <div
             class="emotion-4"
           >
@@ -529,10 +547,14 @@ exports[`Stack renders nested stack as list when both are list 1`] = `
             </div>
           </div>
         </li>
-        <li>
+        <li
+          class="emotion-5"
+        >
           , 
         </li>
-        <li>
+        <li
+          class="emotion-5"
+        >
           <div
             class="emotion-4"
           >
@@ -558,7 +580,9 @@ exports[`Stack renders nested stack as list when both are list 1`] = `
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="emotion-5"
+    >
       <div
         class="emotion-4"
       >
@@ -724,9 +748,9 @@ exports[`Stack renders stack as list with spacing 1`] = `
   margin-top: calc(-8px/2);
   margin-bottom: calc(-8px/2);
   list-style-type: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .emotion-5 {
@@ -736,6 +760,7 @@ exports[`Stack renders stack as list with spacing 1`] = `
   display: inline-flex;
   margin-top: calc(8px/2);
   margin-bottom: calc(8px/2);
+  height: 100%;
 }
 
 <ul
