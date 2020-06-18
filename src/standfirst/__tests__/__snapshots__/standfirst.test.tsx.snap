@@ -60,7 +60,7 @@ exports[`Standfirst renders as h4 html tag 1`] = `
   }
 }
 
-<h2
+<h4
     class="emotion-0"
   />
 </DocumentFragment>
@@ -127,7 +127,7 @@ exports[`Standfirst renders as span html tag 1`] = `
   }
 }
 
-<h2
+<span
     class="emotion-0"
   />
 </DocumentFragment>

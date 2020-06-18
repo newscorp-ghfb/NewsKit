@@ -13,17 +13,15 @@ const StyledText = styled.h2<StandfirstProps>`
     withCrop: true,
   })}
   padding: 1px 0;
-  ${({renderStyledTextAs}) =>
-    renderStyledTextAs &&
-    (isInlineElement(renderStyledTextAs) ? 'display: inline-block' : '')}
+  ${({as}) => as && (isInlineElement(as) ? 'display: inline-block' : '')}
 `;
 
 export const Standfirst: React.FC<StandfirstProps> = ({
   children,
-  renderStyledTextAs,
+  as,
   overrides = {},
 }) => (
-  <StyledText renderStyledTextAs={renderStyledTextAs} overrides={overrides}>
+  <StyledText as={as} overrides={overrides}>
     {children}
   </StyledText>
 );

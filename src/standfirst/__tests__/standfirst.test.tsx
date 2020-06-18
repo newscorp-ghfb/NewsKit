@@ -11,9 +11,9 @@ describe('Standfirst', () => {
     ['h4'],
     ['span'],
   ];
-  test.each(tags)('renders as %s html tag', renderStyledTextAs => {
+  test.each(tags)('renders as %s html tag', as => {
     const fragment = renderToFragmentWithTheme(Standfirst, {
-      renderStyledTextAs,
+      as,
     });
     expect(fragment).toMatchSnapshot();
   });

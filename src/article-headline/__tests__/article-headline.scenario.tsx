@@ -10,11 +10,7 @@ export const component = () => (
     <br />
     <ArticleHeadline kickerText="Kicker">Headline text</ArticleHeadline>
     <br />
-    <ArticleHeadline
-      kickerText="Kicker as h5"
-      renderHeadingAs="h4"
-      renderKickerAs="h5"
-    >
+    <ArticleHeadline kickerText="Kicker as h5" headingAs="h4" kickerAs="h5">
       Headline as h4
     </ArticleHeadline>
     <br />

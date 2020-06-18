@@ -1,6 +1,5 @@
 import React from 'react';
 import {styled, getMarginPreset, MQ, getPaddingPreset} from '../utils/style';
-import {as as renderAs} from '../utils/component';
 import {MarginPresetKeys, PaddingPresetKeys} from '../themes/mappers/spacing';
 import {StylePresetKeys} from '../themes/mappers/style-preset';
 import {getStylePreset} from '../utils/style-preset';
@@ -20,7 +19,6 @@ const StyledDiv = styled.div<BlockProps>`
   ${getPaddingPreset('')}
 `;
 
-export const Block: React.FC<BlockProps> = ({as, overrides = {}, ...props}) => {
-  const asProp = as ? renderAs(as) : {};
-  return <StyledDiv overrides={overrides} {...props} {...asProp} />;
-};
+export const Block: React.FC<BlockProps> = ({as, overrides = {}, ...props}) => (
+  <StyledDiv overrides={overrides} {...props} as={as} />
+);

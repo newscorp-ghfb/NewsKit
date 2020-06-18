@@ -11,9 +11,9 @@ describe('TextBlock', () => {
     ['h2'],
     ['span'],
   ];
-  test.each(tags)('renders as %s html tag', renderAs => {
+  test.each(tags)('renders as %s html tag', as => {
     const fragment = renderToFragmentWithTheme(TextBlock, {
-      renderAs,
+      as,
     } as TextBlockProps);
     expect(fragment).toMatchSnapshot();
   });

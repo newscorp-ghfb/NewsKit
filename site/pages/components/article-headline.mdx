@@ -32,13 +32,13 @@ No special requirements.
   <Prop name="kickerText" type="string">
     The optional Kicker content, which appears before the Heading.
   </Prop>
-  <Prop name="renderHeadingAs" type="string" default="h1">
-    The type of tag you want to render the Heading as.
-    Must be one of 'h1','h2','h3','h4','h5','h6','span'.
+  <Prop name="headingAs" type="string" default="h1">
+    This is a string name with one of the following html elements: h1, h2, h3, h4, h5, h6 or span, that the heading can be converted to.
+    Heading defaults as a h1 element, but it can be converted to another heading element or div by `as="h2"` prop.
   </Prop>
-  <Prop name="renderKickerAs" type="string" default="span">
-    The type of tag you want to render the Kicker as.
-    Must be one of 'h1','h2','h3','h4','h5','h6','span'.
+  <Prop name="kickerAs" type="string" default="span">
+    This is a string name with one of the following html elements: h1, h2, h3, h4, h5, h6 or span, that the kicker can be converted to.
+    Kicker defaults as a span element, but it can be converted to another heading element or div by `as="h2"` prop.
   </Prop>
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
@@ -66,7 +66,7 @@ No special requirements.
     },
     {
       name: 'Render Heading as',
-      propName: 'renderHeadingAs',
+      propName: 'headingAs',
       options: [
         {
           label: 'h1*',
@@ -97,7 +97,7 @@ No special requirements.
     },
     {
       name: 'Render Kicker as',
-      propName: 'renderKickerAs',
+      propName: 'kickerAs',
       options: [
         {
           label: 'span*',

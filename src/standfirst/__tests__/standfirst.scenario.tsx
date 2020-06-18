@@ -42,10 +42,10 @@ export default {
       component: () => (
         <React.Fragment>
           <h3>As h4</h3>
-          <Standfirst renderStyledTextAs="h4">{bodyString}</Standfirst>
+          <Standfirst as="h4">{bodyString}</Standfirst>
 
           <h3>As span</h3>
-          <Standfirst renderStyledTextAs="span">{bodyString}</Standfirst>
+          <Standfirst as="span">{bodyString}</Standfirst>
         </React.Fragment>
       ),
     },

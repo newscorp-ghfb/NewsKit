@@ -14,8 +14,8 @@ describe('ArticleHeadline', () => {
     const fragment = renderToFragmentWithTheme(ArticleHeadline, {
       children: 'test',
       kickerText: 'this is kicker',
-      renderHeadingAs: 'h4',
-      renderKickerAs: 'h5',
+      headingAs: 'h4',
+      kickerAs: 'h5',
     } as any) as any;
 
     expect(fragment).toMatchSnapshot();
@@ -25,8 +25,8 @@ describe('ArticleHeadline', () => {
     const fragment = renderToFragmentWithTheme(ArticleHeadline, {
       children: 'test',
       kickerText: 'this is kicker',
-      renderHeadingAs: 'h4',
-      renderKickerAs: 'h5',
+      headingAs: 'h4',
+      kickerAs: 'h5',
       overrides: {
         kicker: {
           typePreset: 'headline200',

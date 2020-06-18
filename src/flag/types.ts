@@ -9,7 +9,6 @@ export enum FlagSize {
 export interface BaseFlagProps {
   disabled?: boolean;
   isLoading?: boolean;
-
   overrides?: {
     typePreset?: string;
     stylePreset?: string;

@@ -8,8 +8,8 @@ import {StylePresetKeys} from '../themes/mappers/style-preset';
 
 export interface ArticleHeadline {
   kickerText?: string;
-  renderHeadingAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
-  renderKickerAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
+  headingAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
+  kickerAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
   overrides?: {
     kicker?: {
       stylePreset?: MQ<StylePresetKeys>;
@@ -52,19 +52,19 @@ const Kicker = styled(Heading)<ArticleHeadline>`
 export const ArticleHeadline: React.FC<ArticleHeadline> = ({
   children,
   kickerText,
-  renderHeadingAs = 'h1',
-  renderKickerAs = 'span',
+  headingAs = 'h1',
+  kickerAs = 'span',
   overrides = {},
 }) =>
   kickerText ? (
     <Headline>
-      <Kicker as={renderKickerAs} overrides={overrides}>
+      <Kicker as={kickerAs} overrides={overrides}>
         {kickerText}{' '}
       </Kicker>
-      <Heading as={renderHeadingAs} overrides={overrides}>
+      <Heading as={headingAs} overrides={overrides}>
         {children}
       </Heading>
     </Headline>
   ) : (
-    <Heading as={renderHeadingAs}>{children}</Heading>
+    <Heading as={headingAs}>{children}</Heading>
   );
