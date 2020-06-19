@@ -45,24 +45,24 @@ Returns an empty string if invalid attributes or no attributes are provided.
 
 In this example the `Paragraph` component will use the sizing value
 
-<Code>{'<Paragraph stylePreset="linkPrimary" />'}</Code>
+<Code>{'<Paragraph stylePreset="linkInline" />'}</Code>
 
-In this example the `Paragraph` component will use `linkPrimary` style preset set in the default theme.
+In this example the `Paragraph` component will use `linkInline` style preset set in the default theme.
 
-<Code>{'<Paragraph stylePreset="linkPrimary" isLoading={true} />'}</Code>
+<Code>{'<Paragraph stylePreset="linkInline" isLoading={true} />'}</Code>
 
 In this example the component has a loading state passed down from the parent component.
 If so the `loading` style presets, if present, will override the `base` style presets.
 
-<Code>{'<Paragraph stylePreset="linkPrimary" isCurrent={true} />'}</Code>
+<Code>{'<Paragraph stylePreset="linkInline" isCurrent={true} />'}</Code>
 
 In this example the component has a current state passed down from the parent component.
 If so the `current` style presets, if present, will override the `base` style presets.
 
-<Code>{'<Paragraph stylePreset="linkPrimary" omitStates={["disabled"]} />'}</Code>
+<Code>{'<Paragraph stylePreset="linkInline" omitStates={["disabled"]} />'}</Code>
 
-In this example the component is using the `linkPrimary` style preset, without using `disabled` style presets.
+In this example the component is using the `linkInline` style preset, without using `disabled` state style presets.
 
-<Code>{'<Paragraph stylePreset="linkPrimary" omitStyles={["backgroundColor"]} />'}</Code>
+<Code>{'<Paragraph stylePreset="linkInline" omitStyles={["backgroundColor"]} />'}</Code>
 
-In this example the component is using the `linkPrimary` style preset, while ignorning all `backgroundColor` across all style presets.
+In this example the component is using the `linkInline` style preset, while ignorning all `backgroundColor` across all style presets.

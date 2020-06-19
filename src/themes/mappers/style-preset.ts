@@ -720,18 +720,22 @@ export const createStylePresets = ({
   // Link
   //
 
-  presets.linkPrimary = {
+  presets.linkInline = {
     base: {
       color: colorPrimitives.inkLink,
+      iconColor: colorPrimitives.inkLink,
     },
     hover: {
       color: colorPrimitives.inkLinkHover,
+      iconColor: colorPrimitives.inkLinkHover,
     },
     active: {
       color: colorPrimitives.inkLinkActive,
+      iconColor: colorPrimitives.inkLinkActive,
     },
     visited: {
       color: colorPrimitives.inkLinkVisited,
+      iconColor: colorPrimitives.inkLinkVisited,
     },
   };
 

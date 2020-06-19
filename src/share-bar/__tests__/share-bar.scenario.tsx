@@ -84,7 +84,7 @@ export default {
           <ShareBar
             label="Share"
             overrides={{
-              stylePreset: 'linkPrimary',
+              stylePreset: 'linkInline',
               label: {
                 typePreset: 'tag030',
                 marginPreset: 'spaceInline030',

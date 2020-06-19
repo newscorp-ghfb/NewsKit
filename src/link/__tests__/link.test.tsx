@@ -25,6 +25,24 @@ describe('Link', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders the external icon even if the href is internal', () => {
+    const fragment = renderToFragmentWithTheme(Link, {
+      href: '/relative',
+      children: 'test link text',
+      external: true,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('does not render the external icon even if the href is external', () => {
+    const fragment = renderToFragmentWithTheme(Link, {
+      href: 'www.google.it',
+      children: 'test link text',
+      external: false,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('fires click event onClick', async () => {
     const mockFireEvent = jest.fn();
     const link = await renderWithTheme((() => (

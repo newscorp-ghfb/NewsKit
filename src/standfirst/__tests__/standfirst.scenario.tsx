@@ -59,7 +59,7 @@ export default {
             <Standfirst
               overrides={{
                 styledText: {
-                  stylePreset: 'linkPrimary',
+                  stylePreset: 'linkInline',
                 },
               }}
             >

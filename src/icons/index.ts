@@ -7,6 +7,7 @@ export * from './copy-link';
 export * from './email';
 export * from './facebook';
 export * from './github';
+export * from './launch';
 export * from './menu';
 export * from './placeholder';
 export * from './save-active';

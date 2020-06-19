@@ -46,7 +46,7 @@ const getAutoResolvingPath = (
  */
 export const getToken = <Props extends ThemeProp & {overrides?: unknown}>(
   props: Props,
-  defaultPath: string,
+  defaultPath?: string,
   overridePath?: string | false,
   propName?: string,
 ) => {
