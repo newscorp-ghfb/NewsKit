@@ -32,7 +32,7 @@ describe('ArticleHeadline', () => {
           typePreset: 'headline200',
         },
         heading: {
-          stylePreset: 'linkInline',
+          stylePreset: 'linkPrimary',
         },
       },
     } as any) as any;

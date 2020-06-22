@@ -21,7 +21,7 @@ describe('TextBlock', () => {
   test('renders with custom style preset', () => {
     const fragment = renderToFragmentWithTheme(TextBlock, {
       overrides: {
-        stylePreset: 'linkInline',
+        stylePreset: 'linkPrimary',
       },
     });
     expect(fragment).toMatchSnapshot();

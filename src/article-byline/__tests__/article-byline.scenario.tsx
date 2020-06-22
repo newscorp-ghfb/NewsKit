@@ -9,12 +9,12 @@ export const component = () => (
       bylineData={[
         {
           author: 'Alison Beach',
-          href: '/',
+          href: 'https://en.wikipedia.org/wiki/Beach',
           title: 'Beach Editor',
         },
         {
           author: 'Charles Donkey',
-          href: '/',
+          href: 'https://en.wikipedia.org/wiki/Donkey',
           title: 'Senior Donkey Reporter',
         },
       ]}
@@ -35,11 +35,11 @@ export const component = () => (
       bylineData={[
         {
           author: 'Alison Beach',
-          href: '/',
+          href: 'https://en.wikipedia.org/wiki/Beach',
         },
         {
           author: 'Charles Donkey',
-          href: '/',
+          href: 'https://en.wikipedia.org/wiki/Donkey',
         },
       ]}
     />

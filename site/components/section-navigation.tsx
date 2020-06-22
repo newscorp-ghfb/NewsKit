@@ -69,9 +69,7 @@ const SectionNavigation = React.forwardRef<
         <ListItem>
           <Link
             href={`#${section.toLowerCase().replace(/\s+/g, '-')}`}
-            overrides={{
-              stylePreset: 'linkSectionNavigation',
-            }}
+            stylePreset="linkSectionNavigation"
           >
             {section}
           </Link>

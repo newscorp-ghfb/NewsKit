@@ -8,5 +8,5 @@ interface ParagraphProps {
 }
 
 const Paragraph = styled.p<ParagraphProps>`
-  ${getStylePresetFromTheme('linkInline', 'stylePreset')}
+  ${getStylePresetFromTheme('linkPrimary', 'stylePreset')}
 `;

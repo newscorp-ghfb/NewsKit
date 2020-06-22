@@ -21,7 +21,7 @@ export const component = () => (
           stylePreset: 'tagPrimary',
         },
         heading: {
-          stylePreset: 'linkInline',
+          stylePreset: 'linkPrimary',
         },
       }}
     >

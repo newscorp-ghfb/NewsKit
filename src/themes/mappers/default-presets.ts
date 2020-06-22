@@ -150,11 +150,4 @@ export const defaultPresets = {
   image: {
     stylePreset: 'imageSharp',
   },
-  link: {
-    stylePreset: 'linkInline',
-    space: 'sizing010',
-    externalIcon: {
-      size: 'iconSize010',
-    },
-  },
 };

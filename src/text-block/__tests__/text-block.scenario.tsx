@@ -58,7 +58,7 @@ export default {
             <h3>With style-preset &quot;textblockCustom&quot;</h3>
             <TextBlock
               overrides={{
-                stylePreset: 'linkInline',
+                stylePreset: 'linkPrimary',
               }}
             >
               {bodyString}
