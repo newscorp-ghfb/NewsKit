@@ -19,6 +19,9 @@ export default {
           <Container>
              <<%= componentName %> />
           </Container>
+          <Container>
+             <<%= componentName %> uppercase />
+          </Container>
         </React.Fragment>
       ),
     },

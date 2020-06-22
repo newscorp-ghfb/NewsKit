@@ -58,5 +58,8 @@ module.exports = class extends Generator {
         componentFileName: componentNameLower,
       },
     );
+    this.log(`Updating files into:`);
+      this.fs.write(this.destinationPath('gary.ts'), `export * from './{componentNameLower}';`);
   }
+  
 };
