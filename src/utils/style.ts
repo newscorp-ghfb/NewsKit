@@ -15,7 +15,7 @@ import {getFontSizing} from './font-sizing';
 import {GridKeys} from '../themes/newskit-light/grid';
 import {ShadowKeys} from '../themes/newskit-light/shadow';
 import {SizingKeys, IconSizeKeys} from '../themes/newskit-light/spacing';
-import {MarginPresetKeys, PaddingPresetKeys} from '../themes/mappers/spacing';
+import {SpacingPresetKeys, PaddingPresetKeys} from '../themes/mappers/spacing';
 import {BorderRadiusKeys} from '../themes/mappers/border-radius';
 import {getMediaQuery, isResponsive} from './responsive-helpers';
 import {filterObject} from './filter-object';
@@ -51,6 +51,7 @@ export const getDefaultedValue = <
 >(
   getPresetFromThemeUtil: FromThemeUtil,
   presetType: string,
+  cssProp?: string,
 ) => <Props extends ThemeProp>(
   defaultPath: string,
   overridePath: string | false = '',
@@ -59,7 +60,7 @@ export const getDefaultedValue = <
   getPresetFromThemeUtil(
     getToken(props, defaultPath, overridePath, presetType),
     undefined,
-    option,
+    cssProp || option,
   )(props);
 
 export const getValueFromTheme = <ThemeToken extends string>(
@@ -72,6 +73,7 @@ export const getValueFromTheme = <ThemeToken extends string>(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const section = props.theme[themeKey] as any;
   const token = (customProp && props[customProp]) || defaultToken;
+
   return (
     (section && section[token]) ||
     (allowNonThemeValue && isValid(token) ? token : '')
@@ -201,8 +203,44 @@ export const getFontsFromTheme = <Props extends ThemeProp>(
 export const getColorFromTheme = getValueFromTheme<ColorKeys>('colors');
 
 export const getSizingFromTheme = getValueFromTheme<
-  SizingKeys | MarginPresetKeys | PaddingPresetKeys | IconSizeKeys
+  SizingKeys | SpacingPresetKeys | PaddingPresetKeys | IconSizeKeys
 >('sizing');
+
+export const getSpacingFromTheme = <Props extends ThemeProp>(
+  defaultToken?: MQ<SpacingPresetKeys>,
+  customProp?: Exclude<keyof Props, 'theme'>,
+  cssProp?: string,
+) => (props: Props) => {
+  const value = getResponsiveValueFromTheme('sizing')(defaultToken, customProp)(
+    props,
+  ) as string | Array<[string, string]>;
+  if (Array.isArray(value)) {
+    return value.reduce(
+      (acc, [mq, preset], index) => {
+        const style = cssProp && {[cssProp]: preset};
+        if (index === 0 && style) {
+          return style;
+        }
+        acc[mq] = style;
+        return acc;
+      },
+      {} as CSSObject,
+    );
+  }
+
+  return cssProp && {[cssProp]: value};
+};
+
+export const getSpacingInline = getDefaultedValue(
+  getSpacingFromTheme,
+  'spaceInline',
+  'marginRight',
+);
+export const getSpacingStack = getDefaultedValue(
+  getSpacingFromTheme,
+  'spaceStack',
+  'marginBottom',
+);
 
 export const getSizing = getDefaultedValue(getSizingFromTheme, 'sizing');
 
@@ -237,7 +275,7 @@ export const getPaddingPreset = getDefaultedValue(
 );
 
 export const getMarginPresetFromTheme = <Props extends ThemeProp>(
-  defaultToken?: MQ<MarginPresetKeys>,
+  defaultToken?: MQ<SpacingPresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => (props: Props) => {
   const margin = getResponsiveValueFromTheme('sizing')(

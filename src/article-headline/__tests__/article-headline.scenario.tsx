@@ -32,9 +32,9 @@ export const component = () => (
       kickerText="Kicker custom mq margin preset"
       overrides={{
         kicker: {
-          marginPreset: {
-            xs: 'spaceInline070',
-            md: 'spaceInline040',
+          spaceInline: {
+            xs: 'space080',
+            md: 'space040',
           },
         },
       }}

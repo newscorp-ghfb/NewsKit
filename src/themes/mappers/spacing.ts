@@ -1,43 +1,27 @@
 import {Sizing} from '../newskit-light/spacing';
 
-const getStackOf = (s: string) => `0 0 ${s} 0`;
-const getInlineOf = (s: string) => `0 ${s} 0 0`;
-
-export const createMarginPresets = (s: Sizing) => {
+export const createSpacingPresets = (s: Sizing) => {
   const presets: Record<string, string> = {};
 
-  // Stacking
-
-  presets.spaceStack000 = s.sizing000;
-  presets.spaceStack010 = getStackOf(s.sizing010);
-  presets.spaceStack020 = getStackOf(s.sizing020);
-  presets.spaceStack030 = getStackOf(s.sizing030);
-  presets.spaceStack040 = getStackOf(s.sizing040);
-  presets.spaceStack050 = getStackOf(s.sizing050);
-  presets.spaceStack060 = getStackOf(s.sizing060);
-  presets.spaceStack070 = getStackOf(s.sizing070);
-  presets.spaceStack080 = getStackOf(s.sizing080);
-  presets.spaceStack090 = getStackOf(s.sizing090);
-  presets.spaceStack100 = getStackOf(s.sizing100);
-  presets.spaceStack110 = getStackOf(s.sizing110);
-  presets.spaceStack120 = getStackOf(s.sizing120);
-
-  // Inline
-
-  presets.spaceInline000 = s.sizing000;
-  presets.spaceInline010 = getInlineOf(s.sizing010);
-  presets.spaceInline020 = getInlineOf(s.sizing020);
-  presets.spaceInline030 = getInlineOf(s.sizing030);
-  presets.spaceInline040 = getInlineOf(s.sizing040);
-  presets.spaceInline050 = getInlineOf(s.sizing050);
-  presets.spaceInline060 = getInlineOf(s.sizing060);
-  presets.spaceInline070 = getInlineOf(s.sizing080);
+  presets.space000 = s.sizing000;
+  presets.space010 = s.sizing010;
+  presets.space020 = s.sizing020;
+  presets.space030 = s.sizing030;
+  presets.space040 = s.sizing040;
+  presets.space050 = s.sizing050;
+  presets.space060 = s.sizing060;
+  presets.space070 = s.sizing070;
+  presets.space080 = s.sizing080;
+  presets.space090 = s.sizing090;
+  presets.space100 = s.sizing100;
+  presets.space110 = s.sizing110;
+  presets.space120 = s.sizing120;
 
   return presets;
 };
 
-export type MarginPresetKeys = keyof MarginPreset;
-export type MarginPreset = ReturnType<typeof createMarginPresets>;
+export type SpacingPresetKeys = keyof SpacingPreset;
+export type SpacingPreset = ReturnType<typeof createSpacingPresets>;
 
 export const createPaddingPresets = (s: Sizing) => {
   const presets: Record<string, string> = {};

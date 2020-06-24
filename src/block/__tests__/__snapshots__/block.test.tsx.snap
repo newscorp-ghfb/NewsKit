@@ -3,7 +3,7 @@
 exports[`Block with no props renders an unstyled div 1`] = `
 <DocumentFragment>
   <div
-    class="css-1j387q6"
+    class="css-151qm6o"
   />
 </DocumentFragment>
 `;
@@ -19,7 +19,7 @@ exports[`Block with props renders as span 1`] = `
 exports[`Block with props renders with spaceInline020 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  margin: 0 8px 0 0;
+  margin-right: 8px;
 }
 
 <div
@@ -31,18 +31,18 @@ exports[`Block with props renders with spaceInline020 1`] = `
 exports[`Block with props renders with spaceStack010 for xs, spaceStack020 for sm, and spaceStack030 for md breakpoints 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  margin: 0 0 4px 0;
+  margin-bottom: 4px;
 }
 
 @media screen and (min-width:480px) {
   .emotion-0 {
-    margin: 0 0 8px 0;
+    margin-bottom: 8px;
   }
 }
 
 @media screen and (min-width:960px) {
   .emotion-0 {
-    margin: 0 0 12px 0;
+    margin-bottom: 12px;
   }
 }
 
@@ -55,10 +55,10 @@ exports[`Block with props renders with spaceStack010 for xs, spaceStack020 for s
 exports[`Block with props renders with spaceStack020 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  margin: 0 0 8px 0;
   background-color: #471e79;
   color: #FFFFFF;
-  padding: 0 0 12px 0;
+  padding: 8px;
+  margin-bottom: 8px;
 }
 
 .emotion-0 svg {

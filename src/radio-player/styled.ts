@@ -30,7 +30,7 @@ export const ProgrammeTitle = styled(H1)<CenterProp>`
 `;
 
 export const ProgrammeDescription = styled(Label)<CenterProp>`
-  margin: ${getSizingFromTheme('spaceStack050')};
+  margin-bottom: ${getSizingFromTheme('space050')};
   ${getTypePresetFromTheme('subhead010')};
   text-align: ${({center}) => (center ? 'center' : 'left')};
   width: 100%;

@@ -21,7 +21,6 @@ For more information on the spacing preset, please refer to page [here](/foundat
     This is a string name of the html element that the block can be converted to.
     Block defaults as a div element, but it can be converted to a `span` by using this prop.
   </Prop>
-
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     Here are the overrides that the Block accepts:
@@ -31,8 +30,13 @@ For more information on the spacing preset, please refer to page [here](/foundat
     <Prop name="stylePreset" type="string">
       If provided, applies style on the Block.
     </Prop>
-    <Prop name="marginPreset" type="MarginPresetKeys">
-      If provided, applies margin on the Block.
+    <Prop name="spaceInline" type="SpacingPresetKeys">
+      This is a spacing preset token which is applied as a margin on the right of
+      the Block. Use this to space inline content across the page.
+    </Prop>
+    <Prop name="spaceStack" type="SpacingPresetKeys">
+      This is a spacing preset token which is applied as a margin on the bottom of
+      the Block. Use this to space stacking content down the page.
     </Prop>
     This component does not have any default preset.
   </Prop>
@@ -45,9 +49,9 @@ For more information on the spacing preset, please refer to page [here](/foundat
   newskitPath="/block"
   component={props => (
     <div>
-      <LegacyBlock height="sizing060" width="sizing120" backgroundColor="buttonFill" />
+      <LegacyBlock height="sizing060" width="sizing120" backgroundColor="blue080" />
       <Block {...props} />
-      <LegacyBlock height="sizing060" width="sizing120" backgroundColor="buttonFill" />
+      <LegacyBlock height="sizing060" width="sizing120" backgroundColor="blue080" />
     </div>
   )}
   knobs={[
@@ -61,7 +65,7 @@ For more information on the spacing preset, please refer to page [here](/foundat
       propName: 'as',
       options: [
         {
-          label: 'undefined',
+          label: 'default',
           value: undefined,
           isDefault: true,
         },
@@ -76,24 +80,30 @@ For more information on the spacing preset, please refer to page [here](/foundat
       propName: 'overrides',
       options: [
         {
-          label: 'undefined',
+          label: 'default',
           value: undefined,
           isDefault: true,
         },
         {
-          label: 'spaceStack020 margin',
+          label: 'space020 spaceInline',
           value: {
-            marginPreset: 'spaceStack020',
+            spaceInline: 'space020',
           }
         },
         {
-          label: 'spaceInset030 padding',
+          label: 'space020 spaceStack',
+          value: {
+            spaceStack: 'space020',
+          }
+        },
+        {
+          label: 'spaceInset030 paddingPreset',
           value: {
             paddingPreset: 'spaceInset030',
           }
         },
         {
-          label: 'flagSolid style',
+          label: 'flagSolid stylePreset',
           value: {
             stylePreset: 'flagSolid',
           }

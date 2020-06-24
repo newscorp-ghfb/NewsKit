@@ -10,102 +10,40 @@ exports[`MarginPreset renders default 1`] = `
 
 exports[`MarginPreset renders responsive override spaceStack010 for sm and spaceStack030 for md breakpoints 1`] = `
 <DocumentFragment>
-  .emotion-0 {
-  margin: 0 0 4px 0;
-}
-
-@media screen and (min-width:960px) {
-  .emotion-0 {
-    margin: 0 0 12px 0;
-  }
-}
-
-<div
-    class="emotion-0"
+  <div
+    class="css-1crnvy4"
   />
 </DocumentFragment>
 `;
 
 exports[`MarginPreset renders responsive override spaceStack010 for xs, spaceStack020 for sm, and spaceStack030 for md breakpoints 1`] = `
 <DocumentFragment>
-  .emotion-0 {
-  margin: 0 0 4px 0;
-}
-
-@media screen and (min-width:480px) {
-  .emotion-0 {
-    margin: 0 0 8px 0;
-  }
-}
-
-@media screen and (min-width:960px) {
-  .emotion-0 {
-    margin: 0 0 12px 0;
-  }
-}
-
-<div
-    class="emotion-0"
+  <div
+    class="css-1crnvy4"
   />
 </DocumentFragment>
 `;
 
 exports[`MarginPreset renders responsive override spaceStack010 for xs, spaceStack020 for sm, and wrong for md breakpoints 1`] = `
 <DocumentFragment>
-  .emotion-0 {
-  margin: 0 0 4px 0;
-}
-
-@media screen and (min-width:480px) {
-  .emotion-0 {
-    margin: 0 0 8px 0;
-  }
-}
-
-<div
-    class="emotion-0"
+  <div
+    class="css-1crnvy4"
   />
 </DocumentFragment>
 `;
 
 exports[`MarginPreset renders responsive override spaceStack010 for xs, spaceStack020 for sm, spaceStack030 for md, spaceStack040 for lg breakpoings, and ignore wrong prop 1`] = `
 <DocumentFragment>
-  .emotion-0 {
-  margin: 0 0 4px 0;
-}
-
-@media screen and (min-width:480px) {
-  .emotion-0 {
-    margin: 0 0 8px 0;
-  }
-}
-
-@media screen and (min-width:960px) {
-  .emotion-0 {
-    margin: 0 0 12px 0;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    margin: 0 0 16px 0;
-  }
-}
-
-<div
-    class="emotion-0"
+  <div
+    class="css-1crnvy4"
   />
 </DocumentFragment>
 `;
 
 exports[`MarginPreset renders with override spaceStack010 1`] = `
 <DocumentFragment>
-  .emotion-0 {
-  margin: 0 0 4px 0;
-}
-
-<div
-    class="emotion-0"
+  <div
+    class="css-1woq1di"
   />
 </DocumentFragment>
 `;
@@ -113,7 +51,7 @@ exports[`MarginPreset renders with override spaceStack010 1`] = `
 exports[`PaddingPreset renders default 1`] = `
 <DocumentFragment>
   <div
-    class="emotion-0"
+    class="css-1woq1di"
   />
 </DocumentFragment>
 `;

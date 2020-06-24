@@ -37,7 +37,7 @@ const DescriptionsMeta: React.FC<DescriptionMetaProps & CenterProp> = ({
     {(flag || time) && (
       <Block
         overrides={{
-          marginPreset: 'spaceStack050',
+          spaceStack: 'space050',
         }}
       >
         <Stack
@@ -55,7 +55,7 @@ const DescriptionsMeta: React.FC<DescriptionMetaProps & CenterProp> = ({
     {title && (
       <Block
         overrides={{
-          marginPreset: 'spaceStack040',
+          spaceStack: 'space040',
         }}
       >
         <ProgrammeTitle center={center}>{title}</ProgrammeTitle>
@@ -130,7 +130,7 @@ export const RadioPlayer: React.FC<RadioPlayerProps> = props => {
       <AudioPlayer {...props}>
         <Block
           overrides={{
-            marginPreset: 'spaceStack050',
+            spaceStack: 'space050',
           }}
         >
           <PlayerMeta

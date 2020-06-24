@@ -27,7 +27,7 @@ export default {
           <ColoredSeparators>Scenario Separator</ColoredSeparators>
           <Block
             overrides={{
-              marginPreset: 'spaceStack030',
+              spaceStack: 'space030',
               paddingPreset: 'spaceInset030',
               stylePreset: 'flagSolid',
             }}
@@ -41,11 +41,11 @@ export default {
           <ColoredSeparators>Scenario Separator</ColoredSeparators>
           <Block
             overrides={{
-              marginPreset: {
-                xs: 'spaceStack010',
-                sm: 'spaceStack020',
-                md: 'spaceStack030',
-                lg: 'spaceStack040',
+              spaceStack: {
+                xs: 'space010',
+                sm: 'space020',
+                md: 'space030',
+                lg: 'space040',
               },
             }}
           >
@@ -63,7 +63,7 @@ export default {
           <Block
             as="span"
             overrides={{
-              marginPreset: 'spaceInline030',
+              spaceInline: 'space030',
             }}
           >
             <span>Block with margin spaceInline030</span>

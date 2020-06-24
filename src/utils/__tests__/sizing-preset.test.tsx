@@ -6,12 +6,12 @@ import {
   MQ,
 } from '../style';
 import {
-  MarginPresetKeys,
+  SpacingPresetKeys,
   PaddingPresetKeys,
 } from '../../themes/mappers/spacing';
 
 interface SpacingPresetProp {
-  margin?: MQ<MarginPresetKeys>;
+  margin?: MQ<SpacingPresetKeys>;
   padding?: MQ<PaddingPresetKeys>;
 }
 

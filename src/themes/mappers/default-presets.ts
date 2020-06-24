@@ -15,11 +15,11 @@ export const defaultPresets = {
         md: 'heading070',
         lg: 'heading080',
       },
-      marginPreset: {
-        xs: 'spaceInline030',
-        sm: 'spaceInline030',
-        md: 'spaceInline040',
-        lg: 'spaceInline040',
+      spaceInline: {
+        xs: 'space030',
+        sm: 'space030',
+        md: 'space040',
+        lg: 'space040',
       },
     },
   },
@@ -117,25 +117,14 @@ export const defaultPresets = {
     },
   },
   shareBar: {
-    horizontal: {
-      label: {
-        typePreset: 'shareBarLabel',
-        stylePreset: 'shareBarLabel',
-        marginPreset: 'spaceInline040',
-      },
-      items: {
-        space: 'sizing020',
-      },
+    label: {
+      typePreset: 'shareBarLabel',
+      stylePreset: 'shareBarLabel',
+      spaceInline: 'space040',
+      spaceStack: 'space040',
     },
-    vertical: {
-      label: {
-        typePreset: 'shareBarLabel',
-        stylePreset: 'shareBarLabel',
-        marginPreset: 'spaceStack040',
-      },
-      items: {
-        space: 'sizing020',
-      },
+    items: {
+      space: 'sizing020',
     },
   },
   standfirst: {

@@ -1,9 +1,8 @@
 import React from 'react';
-import {H1} from '../typography';
-import {styled, getTypePreset, getMarginPreset, MQ} from '../utils/style';
+import {styled, getTypePreset, MQ, getSpacingInline} from '../utils/style';
 import {getStylePreset} from '../utils/style-preset';
 import {TypePresetKeys} from '../themes/mappers/type-presets';
-import {MarginPresetKeys} from '../themes/mappers/spacing';
+import {SpacingPresetKeys} from '../themes/mappers/spacing';
 import {StylePresetKeys} from '../themes/mappers/style-preset';
 
 export interface ArticleHeadline {
@@ -14,7 +13,7 @@ export interface ArticleHeadline {
     kicker?: {
       stylePreset?: MQ<StylePresetKeys>;
       typePreset?: MQ<TypePresetKeys>;
-      marginPreset?: MQ<MarginPresetKeys>;
+      spaceInline?: MQ<SpacingPresetKeys>;
     };
     heading?: {
       stylePreset?: MQ<StylePresetKeys>;
@@ -31,8 +30,9 @@ const Headline = styled.section`
   display: block;
 `;
 
-const Heading = styled(H1)<HeadingProps & ArticleHeadline>`
+const Heading = styled.h1<HeadingProps & ArticleHeadline>`
   display: inline-block;
+  margin: 0;
   ${getTypePreset('articleHeadline.heading', 'heading', {
     withCrop: true,
   })}
@@ -45,7 +45,7 @@ const Kicker = styled(Heading)<ArticleHeadline>`
     withCrop: true,
   })}
   ${getStylePreset('articleHeadline.kicker', 'kicker')}
-  ${getMarginPreset('articleHeadline.kicker', 'kicker')}
+  ${getSpacingInline('articleHeadline.kicker', 'kicker')};
   text-transform: uppercase;
 `;
 

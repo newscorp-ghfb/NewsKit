@@ -3,17 +3,8 @@
 exports[`ArticleHeadline renders correctly with default props 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 40px;
-  line-height: 1.1;
-  font-weight: 700;
-  -webkit-letter-spacing: -0.5px;
-  -moz-letter-spacing: -0.5px;
-  -ms-letter-spacing: -0.5px;
-  letter-spacing: -0.5px;
-  color: #0a0a0a;
-  margin: 0 0 24px 0;
   display: inline-block;
+  margin: 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
@@ -81,17 +72,8 @@ exports[`ArticleHeadline renders correctly with default props 1`] = `
 exports[`ArticleHeadline renders correctly with default props 2`] = `
 <DocumentFragment>
   .emotion-1 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 40px;
-  line-height: 1.1;
-  font-weight: 700;
-  -webkit-letter-spacing: -0.5px;
-  -moz-letter-spacing: -0.5px;
-  -ms-letter-spacing: -0.5px;
-  letter-spacing: -0.5px;
-  color: #0a0a0a;
-  margin: 0 0 24px 0;
   display: inline-block;
+  margin: 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
@@ -153,17 +135,8 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
 }
 
 .emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 40px;
-  line-height: 1.1;
-  font-weight: 700;
-  -webkit-letter-spacing: -0.5px;
-  -moz-letter-spacing: -0.5px;
-  -ms-letter-spacing: -0.5px;
-  letter-spacing: -0.5px;
-  color: #0a0a0a;
-  margin: 0 0 24px 0;
   display: inline-block;
+  margin: 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
@@ -183,7 +156,7 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
   -ms-letter-spacing: -0.5px;
   letter-spacing: -0.5px;
   color: #0A68C1;
-  margin: 0 12px 0 0;
+  margin-right: 12px;
   text-transform: uppercase;
 }
 
@@ -337,19 +310,19 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
 
 @media screen and (min-width:480px) {
   .emotion-0 {
-    margin: 0 12px 0 0;
+    margin-right: 12px;
   }
 }
 
 @media screen and (min-width:960px) {
   .emotion-0 {
-    margin: 0 16px 0 0;
+    margin-right: 16px;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-0 {
-    margin: 0 16px 0 0;
+    margin-right: 16px;
   }
 }
 
@@ -377,17 +350,8 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
 }
 
 .emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 40px;
-  line-height: 1.1;
-  font-weight: 700;
-  -webkit-letter-spacing: -0.5px;
-  -moz-letter-spacing: -0.5px;
-  -ms-letter-spacing: -0.5px;
-  letter-spacing: -0.5px;
-  color: #0a0a0a;
-  margin: 0 0 24px 0;
   display: inline-block;
+  margin: 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;
@@ -407,7 +371,7 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
   -ms-letter-spacing: -0.5px;
   letter-spacing: -0.5px;
   color: #0A68C1;
-  margin: 0 12px 0 0;
+  margin-right: 12px;
   text-transform: uppercase;
 }
 
@@ -486,34 +450,25 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
 
 @media screen and (min-width:480px) {
   .emotion-0 {
-    margin: 0 12px 0 0;
+    margin-right: 12px;
   }
 }
 
 @media screen and (min-width:960px) {
   .emotion-0 {
-    margin: 0 16px 0 0;
+    margin-right: 16px;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-0 {
-    margin: 0 16px 0 0;
+    margin-right: 16px;
   }
 }
 
 .emotion-1 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 40px;
-  line-height: 1.1;
-  font-weight: 700;
-  -webkit-letter-spacing: -0.5px;
-  -moz-letter-spacing: -0.5px;
-  -ms-letter-spacing: -0.5px;
-  letter-spacing: -0.5px;
-  color: #0a0a0a;
-  margin: 0 0 24px 0;
   display: inline-block;
+  margin: 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 32px;
   line-height: 1.125;

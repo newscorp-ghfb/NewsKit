@@ -1,24 +1,13 @@
 {
   shareBar: {
-    horizontal: {
-      label: {
-        typePreset: 'shareBarLabel',
-        stylePreset: 'shareBarLabel',
-        marginPreset: 'spaceInline040',
-      },
-      items: {
-        space: 'sizing020',
-      },
+    label: {
+      typePreset: 'shareBarLabel',
+      stylePreset: 'shareBarLabel',
+      spaceInline: 'space040',
+      spaceStack: 'space040',
     },
-    vertical: {
-      label: {
-        typePreset: 'shareBarLabel',
-        stylePreset: 'shareBarLabel',
-        marginPreset: 'spaceStack040',
-      },
-      items: {
-        space: 'sizing020',
-      },
-    }
+    items: {
+      space: 'sizing020',
+    },
   }
 }

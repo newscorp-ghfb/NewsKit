@@ -13,8 +13,8 @@ describe('Block', () => {
     test('renders with spaceStack020', () => {
       const props: BlockProps = {
         overrides: {
-          marginPreset: 'spaceStack020',
-          paddingPreset: 'spaceStack030',
+          spaceStack: 'space020',
+          paddingPreset: 'spaceInset020',
           stylePreset: 'flagSolid',
         },
       };
@@ -25,10 +25,10 @@ describe('Block', () => {
     test('renders with spaceStack010 for xs, spaceStack020 for sm, and spaceStack030 for md breakpoints', () => {
       const props: BlockProps = {
         overrides: {
-          marginPreset: {
-            xs: 'spaceStack010',
-            sm: 'spaceStack020',
-            md: 'spaceStack030',
+          spaceStack: {
+            xs: 'space010',
+            sm: 'space020',
+            md: 'space030',
           },
         },
       };
@@ -39,7 +39,7 @@ describe('Block', () => {
     test('renders with spaceInline020', () => {
       const props: BlockProps = {
         overrides: {
-          marginPreset: 'spaceInline020',
+          spaceInline: 'space020',
         },
       };
       const fragment = renderToFragmentWithTheme(Block, props);

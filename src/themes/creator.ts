@@ -22,8 +22,8 @@ import {createTypePresets, TypePresets} from './mappers/type-presets';
 import {
   createPaddingPresets,
   PaddingPreset,
-  createMarginPresets,
-  MarginPreset,
+  createSpacingPresets,
+  SpacingPreset,
 } from './mappers/spacing';
 import {defaultPresets} from './mappers/default-presets';
 
@@ -71,7 +71,7 @@ export interface Theme extends Record<string, unknown> {
   colors: Colors;
   typePresets: TypePresets;
   fonts: FontPrimitives;
-  sizing: PaddingPreset & IconSize & Sizing & MarginPreset;
+  sizing: PaddingPreset & IconSize & Sizing & SpacingPreset;
   borderRadius: BorderRadius;
   borders: Borders;
   animation: Animation;
@@ -97,7 +97,7 @@ const createDefaultTheme = (): Theme => ({
     ...createPaddingPresets(sizingPrimitives),
     ...iconSizes,
     ...sizingPrimitives,
-    ...createMarginPresets(sizingPrimitives),
+    ...createSpacingPresets(sizingPrimitives),
   },
   shadow: shadowPrimitives,
   borderRadius: borderRadiusPrimitives,

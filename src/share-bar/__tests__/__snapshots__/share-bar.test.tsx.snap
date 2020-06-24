@@ -73,7 +73,7 @@ exports[`ShareBar renders horizontally with icons and label 1`] = `
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
   color: #2e2e2e;
-  margin: 0 16px 0 0;
+  margin-right: 16px;
 }
 
 .emotion-0::before {
@@ -248,7 +248,7 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
   color: #2e2e2e;
-  margin: 0 16px 0 0;
+  margin-right: 16px;
 }
 
 .emotion-0::before {
@@ -597,7 +597,7 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
   color: #2e2e2e;
-  margin: 0 0 16px 0;
+  margin-bottom: 16px;
 }
 
 .emotion-0::before {
@@ -912,7 +912,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
   color: #2e2e2e;
-  margin: 0 16px 0 0;
+  margin-right: 16px;
 }
 
 .emotion-0::before {
@@ -1420,7 +1420,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   background-color: #0A68C1;
   border-radius: 8px;
   color: #FFFFFF;
-  margin: 0 16px 0 0;
+  margin-right: 16px;
 }
 
 .emotion-0::before {
@@ -1802,7 +1802,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
   color: #2e2e2e;
-  margin: 0 12px 0 0;
+  margin-right: 12px;
 }
 
 .emotion-0::before {
@@ -2161,7 +2161,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
   color: #2e2e2e;
-  margin: 0 12px 0 0;
+  margin-right: 12px;
 }
 
 .emotion-0::before {
@@ -2405,7 +2405,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
   color: #2e2e2e;
-  margin: 0 0 16px 0;
+  margin-bottom: 16px;
 }
 
 .emotion-0::before {
@@ -2807,7 +2807,7 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
   color: #2e2e2e;
-  margin: 0 0 16px 0;
+  margin-bottom: 16px;
 }
 
 .emotion-0::before {
@@ -3322,7 +3322,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
   color: #2e2e2e;
-  margin: 0 12px 0 0;
+  margin-bottom: 12px;
 }
 
 .emotion-0::before {

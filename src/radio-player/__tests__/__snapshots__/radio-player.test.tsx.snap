@@ -97,7 +97,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 .emotion-22 {
-  margin: 0 0 24px 0;
+  margin-bottom: 24px;
 }
 
 .emotion-20 {
@@ -1971,7 +1971,7 @@ exports[`Radio Player live player 1`] = `
 }
 
 .emotion-17 {
-  margin: 0 0 24px 0;
+  margin-bottom: 24px;
 }
 
 .emotion-48 {
@@ -3059,7 +3059,7 @@ exports[`Radio Player live player 1`] = `
 }
 
 .emotion-19 {
-  margin: 0 0 16px 0;
+  margin-bottom: 16px;
 }
 
 .emotion-18 {
@@ -3089,7 +3089,7 @@ exports[`Radio Player live player 1`] = `
 .emotion-20 {
   color: #535353;
   font-weight: 300;
-  margin: 0 0 24px 0;
+  margin-bottom: 24px;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -3174,7 +3174,7 @@ exports[`Radio Player live player 1`] = `
 .emotion-44 {
   color: #535353;
   font-weight: 300;
-  margin: 0 0 24px 0;
+  margin-bottom: 24px;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -3827,7 +3827,7 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 .emotion-11 {
-  margin: 0 0 24px 0;
+  margin-bottom: 24px;
 }
 
 .emotion-36 {
@@ -5107,7 +5107,7 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 .emotion-13 {
-  margin: 0 0 16px 0;
+  margin-bottom: 16px;
 }
 
 .emotion-12 {
@@ -5137,7 +5137,7 @@ exports[`Radio Player player with popout link 1`] = `
 .emotion-14 {
   color: #535353;
   font-weight: 300;
-  margin: 0 0 24px 0;
+  margin-bottom: 24px;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -5222,7 +5222,7 @@ exports[`Radio Player player with popout link 1`] = `
 .emotion-32 {
   color: #535353;
   font-weight: 300;
-  margin: 0 0 24px 0;
+  margin-bottom: 24px;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -5965,7 +5965,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 .emotion-19 {
-  margin: 0 0 24px 0;
+  margin-bottom: 24px;
 }
 
 .emotion-52 {
@@ -7312,7 +7312,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 .emotion-21 {
-  margin: 0 0 16px 0;
+  margin-bottom: 16px;
 }
 
 .emotion-20 {
@@ -7342,7 +7342,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 .emotion-22 {
   color: #535353;
   font-weight: 300;
-  margin: 0 0 24px 0;
+  margin-bottom: 24px;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -7427,7 +7427,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 .emotion-48 {
   color: #535353;
   font-weight: 300;
-  margin: 0 0 24px 0;
+  margin-bottom: 24px;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.25;

@@ -15,11 +15,11 @@
         md: 'heading070',
         lg: 'heading080',
       },
-      marginPreset: {
-        xs: 'spaceInline030',
-        sm: 'spaceInline030',
-        md: 'spaceInline040',
-        lg: 'spaceInline040',
+      spaceInline: {
+        xs: 'space030',
+        sm: 'space030',
+        md: 'space040',
+        lg: 'space040',
       },
     },
   },

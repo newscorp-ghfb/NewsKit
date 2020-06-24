@@ -87,7 +87,7 @@ export default {
               stylePreset: 'linkPrimary',
               label: {
                 typePreset: 'tag030',
-                marginPreset: 'spaceInline030',
+                spaceInline: 'space030',
               },
               items: {
                 space: 'sizing060',

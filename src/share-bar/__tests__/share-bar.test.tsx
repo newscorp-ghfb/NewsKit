@@ -106,7 +106,7 @@ describe('ShareBar', () => {
       label: 'Share',
       overrides: {
         label: {
-          marginPreset: 'spaceInline030',
+          spaceInline: 'space030',
         },
       },
     } as ShareBarProps);
@@ -150,7 +150,7 @@ describe('ShareBar', () => {
       label: 'Share',
       overrides: {
         label: {
-          marginPreset: 'spaceInline030',
+          spaceInline: 'space030',
         },
       },
     } as ShareBarProps);
@@ -173,7 +173,7 @@ describe('ShareBar', () => {
       vertical: true,
       overrides: {
         label: {
-          marginPreset: 'spaceInline030',
+          spaceStack: 'space030',
         },
       },
     } as ShareBarProps);
