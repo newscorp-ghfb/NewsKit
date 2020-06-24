@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-
   "files": [
     "generators"
   ],
-  "keywords": ["yeoman-generator"],
+  "keywords": [
+    "yeoman-generator"
+  ],
   "dependencies": {
     "yeoman-generator": "^4.10.1"
+  },
+  "devDependencies": {
+    "babel-generator": "^6.26.1",
+    "babel-traverse": "^6.26.0",
+    "babylon": "^6.18.0"
   }
 }
