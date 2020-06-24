@@ -34,8 +34,8 @@ exports[`Image loadingAspectRatio renders with height dimensions and 1:3 aspect 
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -50,8 +50,8 @@ exports[`Image loadingAspectRatio renders with height dimensions and 1:3 aspect 
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -131,8 +131,8 @@ exports[`Image loadingAspectRatio renders with height dimensions in px and 1:3 a
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -147,8 +147,8 @@ exports[`Image loadingAspectRatio renders with height dimensions in px and 1:3 a
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -205,8 +205,8 @@ exports[`Image loadingAspectRatio renders with no dimensions and 1:1 aspect rati
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -241,8 +241,8 @@ exports[`Image loadingAspectRatio renders with no dimensions and 1:1 aspect rati
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -325,8 +325,8 @@ exports[`Image loadingAspectRatio renders with no dimensions and invalid aspect 
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -341,8 +341,8 @@ exports[`Image loadingAspectRatio renders with no dimensions and invalid aspect 
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -422,8 +422,8 @@ exports[`Image loadingAspectRatio renders with no dimensions or aspect ratio 1`]
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -438,8 +438,8 @@ exports[`Image loadingAspectRatio renders with no dimensions or aspect ratio 1`]
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -496,8 +496,8 @@ exports[`Image loadingAspectRatio renders with number dimensions or aspect ratio
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -532,8 +532,8 @@ exports[`Image loadingAspectRatio renders with number dimensions or aspect ratio
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -616,8 +616,8 @@ exports[`Image loadingAspectRatio renders with string dimensions or aspect ratio
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -632,8 +632,8 @@ exports[`Image loadingAspectRatio renders with string dimensions or aspect ratio
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -713,8 +713,8 @@ exports[`Image loadingAspectRatio renders with width dimensions and 1:3 aspect r
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -729,8 +729,8 @@ exports[`Image loadingAspectRatio renders with width dimensions and 1:3 aspect r
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -810,8 +810,8 @@ exports[`Image loadingAspectRatio renders with width dimensions in px and 1:3 as
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -826,8 +826,8 @@ exports[`Image loadingAspectRatio renders with width dimensions in px and 1:3 as
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-3 {
@@ -884,8 +884,8 @@ exports[`Image renders with defaults 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -920,8 +920,8 @@ exports[`Image renders with defaults 1`] = `
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -1011,8 +1011,8 @@ exports[`Image renders with max height and width 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -1047,8 +1047,8 @@ exports[`Image renders with max height and width 1`] = `
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -1110,8 +1110,8 @@ exports[`Image renders with object-fit and object-position 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -1146,8 +1146,8 @@ exports[`Image renders with object-fit and object-position 1`] = `
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -1209,8 +1209,8 @@ exports[`Image renders without icon 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-0 {
@@ -1291,8 +1291,8 @@ exports[`Image stylePreset renders with invalidPreset 1`] = `
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -1382,8 +1382,8 @@ exports[`Image stylePreset renders with maskRound 1`] = `
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -1473,8 +1473,8 @@ exports[`Image stylePreset renders with maskSemiRounded 1`] = `
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -1564,8 +1564,8 @@ exports[`Image stylePreset with mq 1`] = `
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -1590,8 +1590,8 @@ exports[`Image stylePreset with mq 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 @media screen and (min-width:1440px) {
@@ -1601,8 +1601,8 @@ exports[`Image stylePreset with mq 1`] = `
   }
 
   .emotion-4 svg {
-    fill: #9c9c9c;
-    color: #9c9c9c;
+    fill: #c0c0c0;
+    color: #c0c0c0;
   }
 }
 

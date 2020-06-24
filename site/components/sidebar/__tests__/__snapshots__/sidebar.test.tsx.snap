@@ -70,8 +70,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-0 {
   display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 160px;
   height: 160px;
 }
@@ -115,8 +115,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-3 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -164,7 +164,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   line-height: 1.5rem;
   background-color: transparent;
   box-sizing: border-box;
-  color: #535353;
+  color: #777777;
   cursor: pointer;
   font-weight: normal;
   min-height: 40px;
@@ -178,18 +178,18 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-9:hover {
-  color: #2e2e2e;
+  color: #535353;
   background-color: #e6f4ff;
 }
 
 .emotion-9:focus {
   outline: none;
-  color: #FFFFFF;
-  background-color: #0A68C1;
+  color: #ffffff;
+  background-color: #0a68c1;
 }
 
 .emotion-9:focus svg polygon {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-9 a {
@@ -206,8 +206,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-8 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 16px;
   height: 16px;
   float: right;
@@ -670,8 +670,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-0 {
   display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 160px;
   height: 160px;
 }
@@ -715,8 +715,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-3 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -764,7 +764,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   line-height: 1.5rem;
   background-color: transparent;
   box-sizing: border-box;
-  color: #535353;
+  color: #777777;
   cursor: pointer;
   font-weight: normal;
   min-height: 40px;
@@ -778,18 +778,18 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-9:hover {
-  color: #2e2e2e;
+  color: #535353;
   background-color: #e6f4ff;
 }
 
 .emotion-9:focus {
   outline: none;
-  color: #FFFFFF;
-  background-color: #0A68C1;
+  color: #ffffff;
+  background-color: #0a68c1;
 }
 
 .emotion-9:focus svg polygon {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-9 a {
@@ -806,8 +806,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-8 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 16px;
   height: 16px;
   float: right;

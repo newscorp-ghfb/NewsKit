@@ -18,8 +18,8 @@ exports[`Logo Default logo renders as expected 1`] = `
 
 .emotion-0 {
   display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 <div
@@ -44,8 +44,8 @@ exports[`Logo Mobile logo renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: inline-block;
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-1 {

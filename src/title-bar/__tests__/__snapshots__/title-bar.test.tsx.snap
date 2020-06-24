@@ -31,7 +31,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   flex: 1;
   text-align: left;
   font-family: "Noto Sans",sans-serif;
-  color: #2e2e2e;
+  color: #535353;
 }
 
 .emotion-0 {
@@ -93,9 +93,9 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0A68C1;
+  background-color: #0a68c1;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -111,26 +111,26 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #02509b;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #01396e;
 }
 
 .emotion-5:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-5:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-4 {
@@ -264,7 +264,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   flex: 1;
   text-align: left;
   font-family: "Noto Sans",sans-serif;
-  color: #2e2e2e;
+  color: #535353;
 }
 
 .emotion-0 {
@@ -372,7 +372,7 @@ exports[`TitleBar should display correctly as Heading1 tag 1`] = `
   flex: 1;
   text-align: left;
   font-family: "Noto Sans",sans-serif;
-  color: #2e2e2e;
+  color: #535353;
 }
 
 .emotion-0 {
@@ -435,7 +435,7 @@ exports[`TitleBar should display correctly as Heading2 tag 1`] = `
   flex: 1;
   text-align: left;
   font-family: "Noto Sans",sans-serif;
-  color: #2e2e2e;
+  color: #535353;
 }
 
 .emotion-0 {
@@ -498,7 +498,7 @@ exports[`TitleBar should display correctly as Heading3 tag 1`] = `
   flex: 1;
   text-align: left;
   font-family: "Noto Sans",sans-serif;
-  color: #2e2e2e;
+  color: #535353;
 }
 
 .emotion-0 {
@@ -561,7 +561,7 @@ exports[`TitleBar should display correctly as Heading4 tag 1`] = `
   flex: 1;
   text-align: left;
   font-family: "Noto Sans",sans-serif;
-  color: #2e2e2e;
+  color: #535353;
 }
 
 .emotion-0 {
@@ -624,7 +624,7 @@ exports[`TitleBar should display correctly as Heading5 tag 1`] = `
   flex: 1;
   text-align: left;
   font-family: "Noto Sans",sans-serif;
-  color: #2e2e2e;
+  color: #535353;
 }
 
 .emotion-0 {
@@ -689,7 +689,7 @@ exports[`TitleBar should display correctly as Heading6 tag 1`] = `
   flex: 1;
   text-align: left;
   font-family: "Noto Sans",sans-serif;
-  color: #2e2e2e;
+  color: #535353;
 }
 
 .emotion-0 {
@@ -765,7 +765,7 @@ exports[`TitleBar should display correctly with align center 1`] = `
   flex: 1;
   text-align: center;
   font-family: "Noto Sans",sans-serif;
-  color: #2e2e2e;
+  color: #535353;
 }
 
 <div
@@ -815,7 +815,7 @@ exports[`TitleBar should display correctly with align left 1`] = `
   flex: 1;
   text-align: left;
   font-family: "Noto Sans",sans-serif;
-  color: #2e2e2e;
+  color: #535353;
 }
 
 .emotion-0 {
@@ -855,7 +855,7 @@ exports[`TitleBar should display correctly with border Bottom 1`] = `
   flex: 1;
   text-align: left;
   font-family: "Noto Sans",sans-serif;
-  color: #2e2e2e;
+  color: #535353;
 }
 
 .emotion-0 {
@@ -941,7 +941,7 @@ exports[`TitleBar should display correctly with border None 1`] = `
   flex: 1;
   text-align: left;
   font-family: "Noto Sans",sans-serif;
-  color: #2e2e2e;
+  color: #535353;
 }
 
 .emotion-0 {
@@ -981,7 +981,7 @@ exports[`TitleBar should display correctly with border Top 1`] = `
   flex: 1;
   text-align: left;
   font-family: "Noto Sans",sans-serif;
-  color: #2e2e2e;
+  color: #535353;
 }
 
 .emotion-0 {
@@ -1044,7 +1044,7 @@ exports[`TitleBar should display correctly with border TopAndBottom 1`] = `
   flex: 1;
   text-align: left;
   font-family: "Noto Sans",sans-serif;
-  color: #2e2e2e;
+  color: #535353;
 }
 
 .emotion-0 {
@@ -1130,7 +1130,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
   flex: 1;
   text-align: left;
   font-family: "Noto Sans",sans-serif;
-  color: #2e2e2e;
+  color: #535353;
 }
 
 .emotion-0 {
@@ -1170,7 +1170,7 @@ exports[`TitleBar should display correctly with padding left 1`] = `
   flex: 1;
   text-align: left;
   font-family: "Noto Sans",sans-serif;
-  color: #2e2e2e;
+  color: #535353;
 }
 
 .emotion-0 {
@@ -1234,7 +1234,7 @@ exports[`TitleBar should display correctly with padding right 1`] = `
   flex: 1;
   text-align: left;
   font-family: "Noto Sans",sans-serif;
-  color: #2e2e2e;
+  color: #535353;
 }
 
 .emotion-0 {

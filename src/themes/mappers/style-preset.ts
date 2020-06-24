@@ -14,7 +14,7 @@ import {BorderPrimitives} from '../newskit-light/borders';
 import {ColorPrimitives} from '../newskit-light/colors';
 import {BorderRadius} from './border-radius';
 import {Overlay} from '../newskit-light/overlay';
-import {Shadow} from '../newskit-light/shadow';
+import {Shadow, shadowPrimitives} from '../newskit-light/shadow';
 
 export interface StylePresetStyles {
   boxShadow?: BoxShadowProperty; // shadow
@@ -655,13 +655,48 @@ export const createStylePresets = ({
   //
   // Icons
   //
-  presets.buttonSocialTwitter = presets.iconButtonMinimalSecondary;
-  presets.buttonSocialFacebook = presets.iconButtonMinimalSecondary;
+  presets.buttonSocialTwitter = {
+    base: {
+      ...presets.iconButtonMinimalSecondary.base,
+    },
+    hover: {
+      ...presets.iconButtonMinimalSecondary.hover,
+      iconColor: colorPrimitives.socialTwitter,
+    },
+    active: {
+      ...presets.iconButtonMinimalSecondary.active,
+      iconColor: colorPrimitives.socialTwitter,
+    },
+  };
+  presets.buttonSocialFacebook = {
+    base: {
+      ...presets.iconButtonMinimalSecondary.base,
+    },
+    hover: {
+      ...presets.iconButtonMinimalSecondary.hover,
+      iconColor: colorPrimitives.socialFacebook,
+    },
+    active: {
+      ...presets.iconButtonMinimalSecondary.active,
+      iconColor: colorPrimitives.socialFacebook,
+    },
+  };
   presets.buttonSocialEmail = presets.iconButtonMinimalSecondary;
-  presets.buttonSocialWhatsapp = presets.iconButtonMinimalSecondary;
+  presets.buttonSocialWhatsapp = {
+    base: {
+      ...presets.iconButtonMinimalSecondary.base,
+    },
+    hover: {
+      ...presets.iconButtonMinimalSecondary.hover,
+      iconColor: colorPrimitives.socialWhatsapp,
+    },
+    active: {
+      ...presets.iconButtonMinimalSecondary.active,
+      iconColor: colorPrimitives.socialWhatsapp,
+    },
+  };
   presets.buttonSocialLink = presets.iconButtonMinimalSecondary;
   presets.buttonSocialShare = presets.iconButtonMinimalSecondary;
-
   //
   // Tag
   //
@@ -672,20 +707,22 @@ export const createStylePresets = ({
       borderStyle: 'solid',
       borderColor: colorPrimitives.interactive130,
       borderWidth: borderPrimitives.borderWidth010,
+      borderRadius: borderRadiusPrimitives.borderRadiusSharp,
       color: colorPrimitives.inkBase,
       iconColor: colorPrimitives.inkBase,
     },
     hover: {
-      borderWidth: borderPrimitives.borderWidth020,
+      backgroundColor: colorPrimitives.interactive120,
     },
     active: {
       borderWidth: borderPrimitives.borderWidth010,
     },
     current: {
+      backgroundColor: colorPrimitives.interactive130,
+      borderColor: 'none',
+      borderWidth: 'none',
       color: colorPrimitives.inkInverse,
       iconColor: colorPrimitives.inkInverse,
-      backgroundColor: colorPrimitives.interactive130,
-      borderStyle: 'none',
     },
   };
   presets.tagDefault = presets.tagPrimary;
@@ -741,13 +778,13 @@ export const createStylePresets = ({
 
   presets.audioPlayerSeekBarTrack = {
     base: {
-      backgroundColor: colorPrimitives.interface030,
+      backgroundColor: colorPrimitives.interactive210,
       borderRadius: borderRadiusPrimitives.borderRadiusPill,
     },
   };
   presets.audioPlayerSeekBarIndicator = {
     base: {
-      backgroundColor: colorPrimitives.interfaceBrand010,
+      backgroundColor: colorPrimitives.interactive230,
       borderRadius: borderRadiusPrimitives.borderRadiusPill,
     },
   };
@@ -758,27 +795,22 @@ export const createStylePresets = ({
   };
   presets.audioPlayerThumb = {
     base: {
-      backgroundColor: colorPrimitives.interfaceBrand010,
-      borderColor: colorPrimitives.interactive030,
+      backgroundColor: colorPrimitives.inverse,
+      borderColor: colorPrimitives.interactive230,
+      borderStyle: 'solid',
       borderWidth: borderPrimitives.borderWidth010,
       borderRadius: borderRadiusPrimitives.borderRadiusCircle,
+      boxShadow: shadowPrimitives.shadow010,
       iconColor: colorPrimitives.inkNonEssential,
-    },
-    hover: {
-      backgroundColor: colorPrimitives.interactive040,
     },
     active: {
       iconColor: colorPrimitives.inkSubtle,
-      backgroundColor: colorPrimitives.interactive050,
-    },
-    disabled: {
-      borderStyle: 'none',
-      iconColor: colorPrimitives.inkNonEssential,
+      backgroundColor: colorPrimitives.interactive240,
     },
   };
   presets.audioPlayerSeekBarBuffering = {
     base: {
-      backgroundColor: colorPrimitives.interface040,
+      backgroundColor: colorPrimitives.overlayDark010,
       borderRadius: borderRadiusPrimitives.borderRadiusPill,
     },
   };
@@ -792,7 +824,7 @@ export const createStylePresets = ({
 
   presets.sliderTrack = {
     base: {
-      backgroundColor: colorPrimitives.interface030,
+      backgroundColor: colorPrimitives.interactive210,
       borderRadius: borderRadiusPrimitives.borderRadiusPill,
     },
     disabled: {
@@ -801,14 +833,30 @@ export const createStylePresets = ({
   };
   presets.sliderIndicator = {
     base: {
-      backgroundColor: colorPrimitives.interfaceBrand010,
+      backgroundColor: colorPrimitives.interactive230,
       borderRadius: borderRadiusPrimitives.borderRadiusPill,
     },
     disabled: {
       backgroundColor: colorPrimitives.interface040,
     },
   };
-  presets.sliderThumb = presets.audioPlayerThumb; // Note: order matters in this file
+  presets.sliderThumb = {
+    base: {
+      ...presets.audioPlayerThumb.base,
+      iconColor: colorPrimitives.inkInverse,
+    },
+    active: {
+      backgroundColor: colorPrimitives.interactive240,
+    },
+    disabled: {
+      backgroundColor: colorPrimitives.interface040,
+      borderColor: 'none',
+      borderStyle: 'none',
+      borderWidth: 'none',
+      boxShadow: 'none',
+      iconColor: colorPrimitives.inkNonEssential,
+    },
+  };
   presets.sliderThumbLabel = {
     base: {
       color: colorPrimitives.inkBrand010,
@@ -832,10 +880,20 @@ export const createStylePresets = ({
   // Volume Control
   //
 
-  presets.volumeControlTrackIndicator = presets.audioPlayerSeekBarIndicator;
+  presets.volumeControlTrackIndicator = {
+    base: {
+      backgroundColor: colorPrimitives.interactive230,
+      borderRadius: borderRadiusPrimitives.borderRadiusPill,
+    },
+  };
   presets.volumeControlThumb = presets.audioPlayerThumb;
   presets.volumeControlLabels = presets.audioPlayerLabels;
-  presets.volumeControlTrack = presets.audioPlayerSeekBarTrack;
+  presets.volumeControlTrack = {
+    base: {
+      backgroundColor: colorPrimitives.interface030,
+      borderRadius: borderRadiusPrimitives.borderRadiusPill,
+    },
+  };
   presets.volumeControlButtons = presets.iconButtonMinimalPrimary;
 
   //
@@ -847,25 +905,25 @@ export const createStylePresets = ({
       borderStyle: 'solid',
       borderWidth: borderPrimitives.borderWidth020,
       borderRadius: borderRadiusPrimitives.borderRadiusPill,
-      borderColor: colorPrimitives.interfaceBrand010,
+      borderColor: colorPrimitives.interactive230,
     },
   };
   presets.circularProgressIndicatorTrackPrimary = {
     base: {
       ...presets.circularProgressIndicatorIndicatorPrimary.base,
-      borderColor: colorPrimitives.neutral020,
+      borderColor: colorPrimitives.interactive210,
     },
   };
   presets.circularProgressIndicatorIndicatorInverse = {
     base: {
       ...presets.circularProgressIndicatorIndicatorPrimary.base,
-      borderColor: colorPrimitives.interactive010,
+      borderColor: colorPrimitives.inverse,
     },
   };
   presets.circularProgressIndicatorTrackInverse = {
     base: {
       ...presets.circularProgressIndicatorIndicatorPrimary.base,
-      borderColor: overlayPrimitives.overlayLight020,
+      borderColor: overlayPrimitives.overlayLight010,
     },
   };
 

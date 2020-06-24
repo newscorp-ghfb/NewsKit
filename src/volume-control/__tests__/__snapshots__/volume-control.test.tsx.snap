@@ -77,7 +77,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0A68C1;
+  color: #0a68c1;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -94,8 +94,8 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-3 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -107,12 +107,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -146,8 +146,8 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -175,10 +175,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-6 {
-  background-color: #0A68C1;
-  border-color: #0A68C1;
+  background-color: #ffffff;
+  border-color: #0a68c1;
+  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -194,30 +196,25 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-6 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-6:hover:not(:disabled) {
-  background-color: #02509B;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-6:active:not(:disabled) svg {
-  fill: #535353;
-  color: #535353;
+  background-color: #e6f4ff;
 }
 
 .emotion-6:disabled {
+  background-color: #e4e4e4;
+  border-color: none;
   border-style: none;
+  border-width: none;
+  box-shadow: none;
 }
 
 .emotion-6:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-13 {
@@ -446,7 +443,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0A68C1;
+  color: #0a68c1;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -463,8 +460,8 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-3 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -476,12 +473,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -515,8 +512,8 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -544,10 +541,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-6 {
-  background-color: #0A68C1;
-  border-color: #0A68C1;
+  background-color: #ffffff;
+  border-color: #0a68c1;
+  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -563,30 +562,25 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-6 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-6:hover:not(:disabled) {
-  background-color: #02509B;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-6:active:not(:disabled) svg {
-  fill: #535353;
-  color: #535353;
+  background-color: #e6f4ff;
 }
 
 .emotion-6:disabled {
+  background-color: #e4e4e4;
+  border-color: none;
   border-style: none;
+  border-width: none;
+  box-shadow: none;
 }
 
 .emotion-6:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-13 {
@@ -815,7 +809,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0A68C1;
+  color: #0a68c1;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -832,8 +826,8 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -845,12 +839,12 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -884,8 +878,8 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -913,10 +907,12 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-6 {
-  background-color: #0A68C1;
-  border-color: #0A68C1;
+  background-color: #ffffff;
+  border-color: #0a68c1;
+  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -932,30 +928,25 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-6:hover:not(:disabled) {
-  background-color: #02509B;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-6:active:not(:disabled) svg {
-  fill: #535353;
-  color: #535353;
+  background-color: #e6f4ff;
 }
 
 .emotion-6:disabled {
+  background-color: #e4e4e4;
+  border-color: none;
   border-style: none;
+  border-width: none;
+  box-shadow: none;
 }
 
 .emotion-6:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-13 {
@@ -1147,7 +1138,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0A68C1;
+  color: #0a68c1;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -1164,8 +1155,8 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1177,12 +1168,12 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -1216,18 +1207,20 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 24px;
   height: 24px;
   display: inline-block;
 }
 
 .emotion-6 {
-  background-color: #0A68C1;
-  border-color: #0A68C1;
+  background-color: #ffffff;
+  border-color: #0a68c1;
+  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -1243,30 +1236,25 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-6:hover:not(:disabled) {
-  background-color: #02509B;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-6:active:not(:disabled) svg {
-  fill: #535353;
-  color: #535353;
+  background-color: #e6f4ff;
 }
 
 .emotion-6:disabled {
+  background-color: #e4e4e4;
+  border-color: none;
   border-style: none;
+  border-width: none;
+  box-shadow: none;
 }
 
 .emotion-6:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-14 {
@@ -1552,7 +1540,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0A68C1;
+  color: #0a68c1;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -1569,8 +1557,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-3 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1582,12 +1570,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -1621,8 +1609,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -1650,10 +1638,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-6 {
-  background-color: #0A68C1;
-  border-color: #0A68C1;
+  background-color: #ffffff;
+  border-color: #0a68c1;
+  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -1669,30 +1659,25 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-6 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-6:hover:not(:disabled) {
-  background-color: #02509B;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-6:active:not(:disabled) svg {
-  fill: #535353;
-  color: #535353;
+  background-color: #e6f4ff;
 }
 
 .emotion-6:disabled {
+  background-color: #e4e4e4;
+  border-color: none;
   border-style: none;
+  border-width: none;
+  box-shadow: none;
 }
 
 .emotion-6:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-13 {
@@ -1921,7 +1906,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0A68C1;
+  color: #0a68c1;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -1938,8 +1923,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-3 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1951,12 +1936,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -1990,8 +1975,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -2019,10 +2004,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-6 {
-  background-color: #0A68C1;
-  border-color: #0A68C1;
+  background-color: #ffffff;
+  border-color: #0a68c1;
+  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -2038,30 +2025,25 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-6 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-6:hover:not(:disabled) {
-  background-color: #02509B;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-6:active:not(:disabled) svg {
-  fill: #535353;
-  color: #535353;
+  background-color: #e6f4ff;
 }
 
 .emotion-6:disabled {
+  background-color: #e4e4e4;
+  border-color: none;
   border-style: none;
+  border-width: none;
+  box-shadow: none;
 }
 
 .emotion-6:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-13 {
@@ -2290,7 +2272,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0A68C1;
+  color: #0a68c1;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -2307,8 +2289,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-3 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2320,12 +2302,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -2359,8 +2341,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -2388,10 +2370,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-6 {
-  background-color: #0A68C1;
-  border-color: #0A68C1;
+  background-color: #ffffff;
+  border-color: #0a68c1;
+  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -2407,30 +2391,25 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-6 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-6:hover:not(:disabled) {
-  background-color: #02509B;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-6:active:not(:disabled) svg {
-  fill: #535353;
-  color: #535353;
+  background-color: #e6f4ff;
 }
 
 .emotion-6:disabled {
+  background-color: #e4e4e4;
+  border-color: none;
   border-style: none;
+  border-width: none;
+  box-shadow: none;
 }
 
 .emotion-6:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-13 {
@@ -2659,7 +2638,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0A68C1;
+  color: #0a68c1;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -2676,8 +2655,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-3 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2689,12 +2668,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -2728,8 +2707,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -2757,10 +2736,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-6 {
-  background-color: #0A68C1;
-  border-color: #0A68C1;
+  background-color: #ffffff;
+  border-color: #0a68c1;
+  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -2776,30 +2757,25 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-6 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-6:hover:not(:disabled) {
-  background-color: #02509B;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-6:active:not(:disabled) svg {
-  fill: #535353;
-  color: #535353;
+  background-color: #e6f4ff;
 }
 
 .emotion-6:disabled {
+  background-color: #e4e4e4;
+  border-color: none;
   border-style: none;
+  border-width: none;
+  box-shadow: none;
 }
 
 .emotion-6:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-13 {
@@ -3028,7 +3004,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0A68C1;
+  color: #0a68c1;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -3045,8 +3021,8 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-3 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -3058,12 +3034,12 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -3097,8 +3073,8 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -3126,10 +3102,12 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-6 {
-  background-color: #0A68C1;
-  border-color: #0A68C1;
+  background-color: #ffffff;
+  border-color: #0a68c1;
+  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -3145,30 +3123,25 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-6 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-6:hover:not(:disabled) {
-  background-color: #02509B;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-6:active:not(:disabled) svg {
-  fill: #535353;
-  color: #535353;
+  background-color: #e6f4ff;
 }
 
 .emotion-6:disabled {
+  background-color: #e4e4e4;
+  border-color: none;
   border-style: none;
+  border-width: none;
+  box-shadow: none;
 }
 
 .emotion-6:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-13 {

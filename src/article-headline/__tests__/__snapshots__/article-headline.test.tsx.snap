@@ -155,7 +155,7 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
   -moz-letter-spacing: -0.5px;
   -ms-letter-spacing: -0.5px;
   letter-spacing: -0.5px;
-  color: #0A68C1;
+  color: #0a68c1;
   margin-right: 12px;
   text-transform: uppercase;
 }
@@ -370,7 +370,7 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
   -moz-letter-spacing: -0.5px;
   -ms-letter-spacing: -0.5px;
   letter-spacing: -0.5px;
-  color: #0A68C1;
+  color: #0a68c1;
   margin-right: 12px;
   text-transform: uppercase;
 }

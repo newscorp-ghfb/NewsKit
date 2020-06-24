@@ -3,8 +3,8 @@
 exports[`Svg renders a menu icon with float property 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   float: left;
 }
 
@@ -19,8 +19,8 @@ exports[`Svg renders a menu icon with float property 1`] = `
 exports[`Svg renders a menu icon with no size 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
   display: inline-block;
 }
 
@@ -35,8 +35,8 @@ exports[`Svg renders a menu icon with no size 1`] = `
 exports[`Svg renders a menu icon with specified size and color 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -53,8 +53,8 @@ exports[`Svg renders a menu icon with specified size and color 1`] = `
 exports[`Svg renders a menu icon with specified size and default color 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;

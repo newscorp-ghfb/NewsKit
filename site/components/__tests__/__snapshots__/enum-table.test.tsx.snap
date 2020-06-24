@@ -17,7 +17,7 @@ exports[`EnumTable renders enum as expected 1`] = `
   -moz-letter-spacing: -0.25px;
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
-  box-shadow: 0 3px 4px 2px #FFFFFF;
+  box-shadow: 0 3px 4px 2px #ffffff;
 }
 
 .emotion-0,

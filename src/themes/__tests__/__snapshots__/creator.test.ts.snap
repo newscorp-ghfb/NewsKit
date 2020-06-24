@@ -4,8 +4,8 @@ exports[`themeing functions createTheme override default presets with newly crea
 <DocumentFragment>
   .emotion-0 {
   display: inline-block;
-  color: #4D0000;
-  background-color: #4D0000;
+  color: #4d0000;
+  background-color: #4d0000;
 }
 
 <div

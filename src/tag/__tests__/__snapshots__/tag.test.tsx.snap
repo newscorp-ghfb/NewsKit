@@ -40,7 +40,8 @@ exports[`Tag href renders as an anchor 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -49,12 +50,12 @@ exports[`Tag href renders as an anchor 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -241,7 +242,8 @@ exports[`Tag href renders in disable state as a div 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -250,12 +252,12 @@ exports[`Tag href renders in disable state as a div 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -328,7 +330,8 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -337,12 +340,12 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -471,7 +474,8 @@ exports[`Tag renders a tag with a custom typePreset 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -480,12 +484,12 @@ exports[`Tag renders a tag with a custom typePreset 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -614,7 +618,8 @@ exports[`Tag renders a tag with an icon 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-5 svg {
@@ -623,12 +628,12 @@ exports[`Tag renders a tag with an icon 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-5:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-5:active:not(:disabled) {
@@ -693,8 +698,8 @@ exports[`Tag renders a tag with an icon 1`] = `
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -813,8 +818,8 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -848,7 +853,8 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-5 svg {
@@ -857,12 +863,12 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-5:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-5:active:not(:disabled) {
@@ -952,7 +958,8 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-5 svg {
@@ -961,12 +968,12 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
 }
 
 .emotion-5 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-5:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-5:active:not(:disabled) {
@@ -1001,8 +1008,8 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -1179,7 +1186,8 @@ exports[`Tag renders a tag with fixed for minWidth and minHeight 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -1188,12 +1196,12 @@ exports[`Tag renders a tag with fixed for minWidth and minHeight 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1325,7 +1333,8 @@ exports[`Tag renders a tag with fixed for width and height 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -1334,12 +1343,12 @@ exports[`Tag renders a tag with fixed for width and height 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1468,7 +1477,8 @@ exports[`Tag renders a tag with no paddings 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -1477,12 +1487,12 @@ exports[`Tag renders a tag with no paddings 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1612,7 +1622,8 @@ exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -1621,12 +1632,12 @@ exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1758,7 +1769,8 @@ exports[`Tag renders a tag with percentage for width and height 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -1767,12 +1779,12 @@ exports[`Tag renders a tag with percentage for width and height 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1902,7 +1914,8 @@ exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -1911,12 +1924,12 @@ exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2048,7 +2061,8 @@ exports[`Tag renders a tag with token set for width and height 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -2057,12 +2071,12 @@ exports[`Tag renders a tag with token set for width and height 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2191,7 +2205,8 @@ exports[`Tag renders in disabled state 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -2200,12 +2215,12 @@ exports[`Tag renders in disabled state 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2335,7 +2350,8 @@ exports[`Tag renders with Large size 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -2344,12 +2360,12 @@ exports[`Tag renders with Large size 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2421,7 +2437,8 @@ exports[`Tag renders with Medium size 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -2430,12 +2447,12 @@ exports[`Tag renders with Medium size 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2594,7 +2611,8 @@ exports[`Tag renders with Small size 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -2603,12 +2621,12 @@ exports[`Tag renders with Small size 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2707,7 +2725,8 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -2716,12 +2735,12 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2850,7 +2869,8 @@ exports[`Tag renders with default styles 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -2859,12 +2879,12 @@ exports[`Tag renders with default styles 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {

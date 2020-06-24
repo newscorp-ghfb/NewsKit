@@ -40,7 +40,8 @@ exports[`Stack renders nested stack as list 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -49,12 +50,12 @@ exports[`Stack renders nested stack as list 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -333,7 +334,8 @@ exports[`Stack renders nested stack as list when both are list 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -342,12 +344,12 @@ exports[`Stack renders nested stack as list when both are list 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -650,7 +652,8 @@ exports[`Stack renders stack as list with spacing 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -659,12 +662,12 @@ exports[`Stack renders stack as list with spacing 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -908,7 +911,8 @@ exports[`Stack renders stack when no properties are set 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -917,12 +921,12 @@ exports[`Stack renders stack when no properties are set 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1099,7 +1103,8 @@ exports[`Stack renders stack with flex grow and shrink 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -1108,12 +1113,12 @@ exports[`Stack renders stack with flex grow and shrink 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1272,7 +1277,8 @@ exports[`Stack renders stack with flex grow and shrink 2`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -1281,12 +1287,12 @@ exports[`Stack renders stack with flex grow and shrink 2`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1445,7 +1451,8 @@ exports[`Stack renders where a nested stack with stackDistribution 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -1454,12 +1461,12 @@ exports[`Stack renders where a nested stack with stackDistribution 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1684,7 +1691,8 @@ exports[`Stack renders where stackDistribution is invalid 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -1693,12 +1701,12 @@ exports[`Stack renders where stackDistribution is invalid 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1894,7 +1902,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -1903,12 +1912,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2107,7 +2116,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -2116,12 +2126,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2320,7 +2330,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -2329,12 +2340,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2560,7 +2571,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -2569,12 +2581,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2796,7 +2808,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -2805,12 +2818,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -3036,7 +3049,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -3045,12 +3059,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -3272,7 +3286,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -3281,12 +3296,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -3482,7 +3497,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -3491,12 +3507,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -3692,7 +3708,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -3701,12 +3718,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -3902,7 +3919,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -3911,12 +3929,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -4112,7 +4130,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -4121,12 +4140,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -4322,7 +4341,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -4331,12 +4351,12 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -4538,7 +4558,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -4547,12 +4568,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -4751,7 +4772,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -4760,12 +4782,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -4964,7 +4986,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -4973,12 +4996,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -5204,7 +5227,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -5213,12 +5237,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -5440,7 +5464,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -5449,12 +5474,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -5680,7 +5705,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -5689,12 +5715,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -5916,7 +5942,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -5925,12 +5952,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -6126,7 +6153,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -6135,12 +6163,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -6336,7 +6364,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -6345,12 +6374,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -6546,7 +6575,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -6555,12 +6585,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -6756,7 +6786,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -6765,12 +6796,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -6966,7 +6997,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -6975,12 +7007,12 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -7182,7 +7214,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -7191,12 +7224,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -7395,7 +7428,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -7404,12 +7438,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -7608,7 +7642,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -7617,12 +7652,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -7848,7 +7883,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -7857,12 +7893,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -8084,7 +8120,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -8093,12 +8130,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -8324,7 +8361,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -8333,12 +8371,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -8560,7 +8598,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -8569,12 +8608,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -8770,7 +8809,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -8779,12 +8819,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -8980,7 +9020,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -8989,12 +9030,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -9190,7 +9231,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -9199,12 +9241,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -9400,7 +9442,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -9409,12 +9452,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -9610,7 +9653,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -9619,12 +9663,12 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -9826,7 +9870,8 @@ exports[`Stack renders where the stack flow is invalid 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -9835,12 +9880,12 @@ exports[`Stack renders where the stack flow is invalid 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -10032,7 +10077,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -10041,12 +10087,12 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -10245,7 +10291,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -10254,12 +10301,12 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -10458,7 +10505,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -10467,12 +10515,12 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -10698,7 +10746,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -10707,12 +10756,12 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -10934,7 +10983,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -10943,12 +10993,12 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -11174,7 +11224,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -11183,12 +11234,12 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -11410,7 +11461,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -11419,12 +11471,12 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -11620,7 +11672,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -11629,12 +11682,12 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -11830,7 +11883,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -11839,12 +11893,12 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -12040,7 +12094,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -12049,12 +12104,12 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -12250,7 +12305,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -12259,12 +12315,12 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -12460,7 +12516,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -12469,12 +12526,12 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -12676,7 +12733,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -12685,12 +12743,12 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -12889,7 +12947,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -12898,12 +12957,12 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -13102,7 +13161,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -13111,12 +13171,12 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -13342,7 +13402,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -13351,12 +13412,12 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -13578,7 +13639,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -13587,12 +13649,12 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -13818,7 +13880,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -13827,12 +13890,12 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -14054,7 +14117,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -14063,12 +14127,12 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -14264,7 +14328,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -14273,12 +14338,12 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -14493,7 +14558,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -14502,12 +14568,12 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -14684,7 +14750,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -14693,12 +14760,12 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -14894,7 +14961,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -14903,12 +14971,12 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -15104,7 +15172,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -15113,12 +15182,12 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -15324,7 +15393,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -15333,12 +15403,12 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -15537,7 +15607,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -15546,12 +15617,12 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -15750,7 +15821,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -15759,12 +15831,12 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -15990,7 +16062,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -15999,12 +16072,12 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -16226,7 +16299,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -16235,12 +16309,12 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -16466,7 +16540,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -16475,12 +16550,12 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -16702,7 +16777,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -16711,12 +16787,12 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -16912,7 +16988,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -16921,12 +16998,12 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -17122,7 +17199,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -17131,12 +17209,12 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -17332,7 +17410,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -17341,12 +17420,12 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -17545,7 +17624,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -17554,12 +17634,12 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -17755,7 +17835,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -17764,12 +17845,12 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -17971,7 +18052,8 @@ exports[`Stack renders with valid flow 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -17980,12 +18062,12 @@ exports[`Stack renders with valid flow 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -18181,7 +18263,8 @@ exports[`Stack renders with valid stackDistribution 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -18190,12 +18273,12 @@ exports[`Stack renders with valid stackDistribution 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {

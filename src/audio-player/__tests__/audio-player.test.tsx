@@ -248,7 +248,13 @@ describe('Audio Player', () => {
     fireEvent.progress(audioElement);
 
     expect(mockGetTrackBackground).toHaveBeenCalledWith({
-      colors: ['#0A68C1', '#e4e4e4', '#f0f0f0', '#e4e4e4', '#f0f0f0'],
+      colors: [
+        '#0a68c1',
+        'rgba(10,10,10,0.20)',
+        '#f0f0f0',
+        'rgba(10,10,10,0.20)',
+        '#f0f0f0',
+      ],
       max: 6610,
       min: 0,
       values: [10, 14, 20, 20],

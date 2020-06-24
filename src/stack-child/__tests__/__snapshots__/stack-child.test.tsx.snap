@@ -69,7 +69,8 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -78,12 +79,12 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -302,7 +303,8 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  color: #2e2e2e;
+  border-radius: 0;
+  color: #535353;
 }
 
 .emotion-3 svg {
@@ -311,12 +313,12 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
 }
 
 .emotion-3:hover:not(:disabled) {
-  border-width: 2px;
+  background-color: #f0f0f0;
 }
 
 .emotion-3:active:not(:disabled) {

@@ -86,7 +86,7 @@ exports[`Button Loading Button renders Large Button 1`] = `
   overflow: hidden;
   background-color: #d5ebff;
   border-radius: 8px;
-  color: #0A68C1;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -102,8 +102,8 @@ exports[`Button Loading Button renders Large Button 1`] = `
 }
 
 .emotion-10 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-7 {
@@ -148,7 +148,7 @@ exports[`Button Loading Button renders Large Button 1`] = `
   border-style: solid;
   border-width: 2px;
   border-radius: 20rem;
-  border-color: #0A68C1;
+  border-color: #0a68c1;
   border-radius: 50%;
 }
 
@@ -307,7 +307,7 @@ exports[`Button Loading Button renders Small Button 1`] = `
   overflow: hidden;
   background-color: #d5ebff;
   border-radius: 8px;
-  color: #0A68C1;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -323,8 +323,8 @@ exports[`Button Loading Button renders Small Button 1`] = `
 }
 
 .emotion-10 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-7 {
@@ -386,7 +386,7 @@ exports[`Button Loading Button renders Small Button 1`] = `
   border-style: solid;
   border-width: 2px;
   border-radius: 20rem;
-  border-color: #0A68C1;
+  border-color: #0a68c1;
   border-radius: 50%;
 }
 
@@ -570,9 +570,9 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0A68C1;
+  background-color: #0a68c1;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -588,26 +588,26 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
 }
 
 .emotion-3 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #02509b;
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #01396e;
 }
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 <div
@@ -732,9 +732,9 @@ exports[`Button Loading Button renders a button with fixed for width and height 
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0A68C1;
+  background-color: #0a68c1;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -750,26 +750,26 @@ exports[`Button Loading Button renders a button with fixed for width and height 
 }
 
 .emotion-3 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #02509b;
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #01396e;
 }
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 <div
@@ -892,9 +892,9 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0A68C1;
+  background-color: #0a68c1;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -910,26 +910,26 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
 }
 
 .emotion-3 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #02509b;
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #01396e;
 }
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 <div
@@ -1054,9 +1054,9 @@ exports[`Button Loading Button renders a button with percentage for width and he
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0A68C1;
+  background-color: #0a68c1;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1072,26 +1072,26 @@ exports[`Button Loading Button renders a button with percentage for width and he
 }
 
 .emotion-3 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #02509b;
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #01396e;
 }
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 <div
@@ -1214,9 +1214,9 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0A68C1;
+  background-color: #0a68c1;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1232,26 +1232,26 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
 }
 
 .emotion-3 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #02509b;
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #01396e;
 }
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 <div
@@ -1376,9 +1376,9 @@ exports[`Button Loading Button renders a button with token set for width and hei
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0A68C1;
+  background-color: #0a68c1;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1394,26 +1394,26 @@ exports[`Button Loading Button renders a button with token set for width and hei
 }
 
 .emotion-3 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #02509b;
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #01396e;
 }
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 <div
@@ -1509,9 +1509,9 @@ exports[`Button renders Large Button 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0A68C1;
+  background-color: #0a68c1;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1527,26 +1527,26 @@ exports[`Button renders Large Button 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #02509b;
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #01396e;
 }
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-0 {
@@ -1669,9 +1669,9 @@ exports[`Button renders Small Button 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0A68C1;
+  background-color: #0a68c1;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1687,26 +1687,26 @@ exports[`Button renders Small Button 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #02509b;
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #01396e;
 }
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-0 {
@@ -1857,9 +1857,9 @@ exports[`Button renders fixed-width Button 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0A68C1;
+  background-color: #0a68c1;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1875,26 +1875,26 @@ exports[`Button renders fixed-width Button 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #02509b;
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #01396e;
 }
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 <div
@@ -2021,9 +2021,9 @@ exports[`Button renders full-width Button 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0A68C1;
+  background-color: #0a68c1;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -2039,26 +2039,26 @@ exports[`Button renders full-width Button 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #02509b;
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #01396e;
 }
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 <div
@@ -2124,9 +2124,9 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0A68C1;
+  background-color: #0a68c1;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -2142,26 +2142,26 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
 }
 
 .emotion-5 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-5:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #02509b;
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #01396e;
 }
 
 .emotion-5:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-5:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-4 {
@@ -2222,8 +2222,8 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
 }
 
 .emotion-2 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   display: inline-block;
 }
 
@@ -2365,9 +2365,9 @@ exports[`Button renders with custom padding preset 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0A68C1;
+  background-color: #0a68c1;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -2383,26 +2383,26 @@ exports[`Button renders with custom padding preset 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #02509b;
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #01396e;
 }
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 <div
@@ -2527,10 +2527,10 @@ exports[`Button renders with different style preset 1`] = `
   overflow: hidden;
   background-color: transparent;
   border-style: solid;
-  border-color: #0A68C1;
+  border-color: #0a68c1;
   border-width: 1px;
   border-radius: 8px;
-  color: #0A68C1;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -2546,28 +2546,28 @@ exports[`Button renders with different style preset 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
   background-color: #e6f4ff;
-  border-color: #02509B;
+  border-color: #02509b;
 }
 
 .emotion-3:active:not(:disabled) {
   background-color: #d5ebff;
-  border-color: #01396E;
+  border-color: #01396e;
 }
 
 .emotion-3:disabled {
   border-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 <div
@@ -2633,9 +2633,9 @@ exports[`Button renders with different type preset 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0A68C1;
+  background-color: #0a68c1;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -2651,26 +2651,26 @@ exports[`Button renders with different type preset 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #02509b;
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #01396e;
 }
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -2793,9 +2793,9 @@ exports[`Button renders with fallback formatting 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0A68C1;
+  background-color: #0a68c1;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -2811,26 +2811,26 @@ exports[`Button renders with fallback formatting 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #02509b;
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #01396e;
 }
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {

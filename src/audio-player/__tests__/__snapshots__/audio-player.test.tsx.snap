@@ -278,7 +278,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   overflow: hidden;
   background-color: #d5ebff;
   border-radius: 50%;
-  color: #0A68C1;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -294,8 +294,8 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-11 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-10 {
@@ -387,7 +387,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   border-style: solid;
   border-width: 2px;
   border-radius: 20rem;
-  border-color: #0A68C1;
+  border-color: #0a68c1;
   border-radius: 50%;
 }
 
@@ -586,7 +586,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0A68C1;
+  color: #0a68c1;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -603,8 +603,8 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-29 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
 .emotion-29:hover:not(:disabled) {
@@ -616,17 +616,17 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-29:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-29:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-26 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -650,10 +650,12 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-32 {
-  background-color: #0A68C1;
-  border-color: #0A68C1;
+  background-color: #ffffff;
+  border-color: #0a68c1;
+  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;
@@ -669,30 +671,17 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-32 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-32:hover:not(:disabled) {
-  background-color: #02509B;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-32:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #e6f4ff;
 }
 
 .emotion-32:active:not(:disabled) svg {
-  fill: #535353;
-  color: #535353;
-}
-
-.emotion-32:disabled {
-  border-style: none;
-}
-
-.emotion-32:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #777777;
+  color: #777777;
 }
 
 .emotion-39 {
@@ -776,7 +765,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0A68C1;
+  color: #0a68c1;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -793,8 +782,8 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-47 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
 .emotion-47:hover:not(:disabled) {
@@ -806,12 +795,12 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-47:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-47:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 <section
@@ -1162,7 +1151,7 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
   overflow: hidden;
   background-color: #d5ebff;
   border-radius: 50%;
-  color: #0A68C1;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1178,8 +1167,8 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
 }
 
 .emotion-10 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-9 {
@@ -1271,7 +1260,7 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
   border-style: solid;
   border-width: 2px;
   border-radius: 20rem;
-  border-color: #0A68C1;
+  border-color: #0a68c1;
   border-radius: 50%;
 }
 
@@ -1389,8 +1378,8 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   display: inline-block;
 }
 
@@ -1419,9 +1408,9 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0A68C1;
+  background-color: #0a68c1;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1437,26 +1426,26 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
 }
 
 .emotion-3 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #02509b;
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #01396e;
 }
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 <button
@@ -1519,7 +1508,7 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
   overflow: hidden;
   background-color: #d5ebff;
   border-radius: 50%;
-  color: #0A68C1;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1535,8 +1524,8 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
 }
 
 .emotion-10 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-9 {
@@ -1628,7 +1617,7 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
   border-style: solid;
   border-width: 2px;
   border-radius: 20rem;
-  border-color: #0A68C1;
+  border-color: #0a68c1;
   border-radius: 50%;
 }
 
@@ -2134,7 +2123,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0A68C1;
+  color: #0a68c1;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -2151,8 +2140,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-42 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
 .emotion-42:hover:not(:disabled) {
@@ -2164,17 +2153,17 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-42:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-42:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-39 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -2261,7 +2250,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0A68C1;
+  color: #0a68c1;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -2278,8 +2267,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-11 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
 .emotion-11:hover:not(:disabled) {
@@ -2291,12 +2280,12 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-11:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-11:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-36 {
@@ -2322,8 +2311,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-1 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   display: inline-block;
 }
 
@@ -2440,21 +2429,21 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #535353;
+  color: #777777;
 }
 
 .emotion-64 svg {
-  fill: #535353;
-  color: #535353;
+  fill: #777777;
+  color: #777777;
 }
 
 .emotion-64:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-64:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-4 {
@@ -2482,9 +2471,9 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0A68C1;
+  background-color: #0a68c1;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -2500,26 +2489,26 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #02509b;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #01396e;
 }
 
 .emotion-4:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-4:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-63 {
@@ -2541,11 +2530,13 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   width: 100%;
 }
 
-.emotion-45 {
-  background-color: #0A68C1;
-  border-color: #0A68C1;
+.emotion-62 {
+  background-color: #ffffff;
+  border-color: #0a68c1;
+  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;
@@ -2562,31 +2553,26 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   cursor: grabbing;
 }
 
-.emotion-45 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-62 svg {
+  fill: #ffffff;
+  color: #ffffff;
 }
 
-.emotion-45:hover:not(:disabled) {
-  background-color: #02509B;
+.emotion-62:active:not(:disabled) {
+  background-color: #e6f4ff;
 }
 
-.emotion-45:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-45:active:not(:disabled) svg {
-  fill: #535353;
-  color: #535353;
-}
-
-.emotion-45:disabled {
+.emotion-62:disabled {
+  background-color: #e4e4e4;
+  border-color: none;
   border-style: none;
+  border-width: none;
+  box-shadow: none;
 }
 
-.emotion-45:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-62:disabled svg {
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-46 {
@@ -2606,6 +2592,43 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   margin: calc(16px/2 - 4px/2) calc(16px/2);
   height: 4px;
   width: 100%;
+}
+
+.emotion-45 {
+  background-color: #ffffff;
+  border-color: #0a68c1;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  height: 16px;
+  width: 16px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+}
+
+.emotion-45 svg {
+  fill: #c0c0c0;
+  color: #c0c0c0;
+}
+
+.emotion-45:active:not(:disabled) {
+  background-color: #e6f4ff;
+}
+
+.emotion-45:active:not(:disabled) svg {
+  fill: #777777;
+  color: #777777;
 }
 
 <section
@@ -3038,7 +3061,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                 aria-valuemin="0"
                 aria-valuenow="10"
                 aria-valuetext="Playback time: 10 seconds of 1 hour 50 minutes 10 seconds"
-                class="emotion-45"
+                class="emotion-62"
                 data-testid="audio-slider-thumb"
                 draggable="false"
                 role="slider"
@@ -3083,10 +3106,12 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 
 exports[`Audio Player recorded player renders and behaves as expected 2`] = `
 .emotion-0 {
-  background-color: #0A68C1;
-  border-color: #0A68C1;
+  background-color: #ffffff;
+  border-color: #0a68c1;
+  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;
@@ -3104,30 +3129,25 @@ exports[`Audio Player recorded player renders and behaves as expected 2`] = `
 }
 
 .emotion-0 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-0:hover:not(:disabled) {
-  background-color: #02509B;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #01396E;
-}
-
-.emotion-0:active:not(:disabled) svg {
-  fill: #535353;
-  color: #535353;
+  background-color: #e6f4ff;
 }
 
 .emotion-0:disabled {
+  background-color: #e4e4e4;
+  border-color: none;
   border-style: none;
+  border-width: none;
+  box-shadow: none;
 }
 
 .emotion-0:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 <div
@@ -3403,7 +3423,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   overflow: hidden;
   background-color: #d5ebff;
   border-radius: 50%;
-  color: #0A68C1;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -3419,8 +3439,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-11 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-10 {
@@ -3512,7 +3532,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   border-style: solid;
   border-width: 2px;
   border-radius: 20rem;
-  border-color: #0A68C1;
+  border-color: #0a68c1;
   border-radius: 50%;
 }
 
@@ -3711,7 +3731,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0A68C1;
+  color: #0a68c1;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -3728,8 +3748,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-44 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
 .emotion-44:hover:not(:disabled) {
@@ -3741,17 +3761,17 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-44:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-44:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-41 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -3775,10 +3795,12 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-47 {
-  background-color: #0A68C1;
-  border-color: #0A68C1;
+  background-color: #ffffff;
+  border-color: #0a68c1;
+  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;
@@ -3794,30 +3816,17 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-47 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-47:hover:not(:disabled) {
-  background-color: #02509B;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-47:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #e6f4ff;
 }
 
 .emotion-47:active:not(:disabled) svg {
-  fill: #535353;
-  color: #535353;
-}
-
-.emotion-47:disabled {
-  border-style: none;
-}
-
-.emotion-47:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #777777;
+  color: #777777;
 }
 
 .emotion-54 {
@@ -3901,7 +3910,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0A68C1;
+  color: #0a68c1;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -3918,8 +3927,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-18 svg {
-  fill: #0A68C1;
-  color: #0A68C1;
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
 .emotion-18:hover:not(:disabled) {
@@ -3931,12 +3940,12 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-18:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-18:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-38 {
@@ -3962,8 +3971,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-15 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   display: inline-block;
 }
 
@@ -3993,7 +4002,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #9c9c9c;
+  color: #c0c0c0;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -4009,8 +4018,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-32 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-71 {
@@ -4105,6 +4114,49 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   width: 100%;
 }
 
+.emotion-64 {
+  background-color: #ffffff;
+  border-color: #0a68c1;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  height: 16px;
+  width: 16px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.emotion-64 svg {
+  fill: #ffffff;
+  color: #ffffff;
+}
+
+.emotion-64:active:not(:disabled) {
+  background-color: #e6f4ff;
+}
+
+.emotion-64:disabled {
+  background-color: #e4e4e4;
+  border-color: none;
+  border-style: none;
+  border-width: none;
+  box-shadow: none;
+}
+
+.emotion-64:disabled svg {
+  fill: #c0c0c0;
+  color: #c0c0c0;
+}
+
 .emotion-68 {
   width: 100%;
   margin-top: 12px;
@@ -4143,21 +4195,21 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #535353;
+  color: #777777;
 }
 
 .emotion-66 svg {
-  fill: #535353;
-  color: #535353;
+  fill: #777777;
+  color: #777777;
 }
 
 .emotion-66:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-66:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 <section
@@ -4569,7 +4621,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                 aria-valuemin="0"
                 aria-valuenow="0"
                 aria-valuetext="Playback time: 0 seconds of 0 seconds"
-                class="emotion-47"
+                class="emotion-64"
                 data-testid="audio-slider-thumb"
                 draggable="false"
                 role="slider"

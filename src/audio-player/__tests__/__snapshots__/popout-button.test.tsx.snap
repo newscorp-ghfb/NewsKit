@@ -39,9 +39,9 @@ exports[`PopoutButton renders correctly with default props 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #0A68C1;
+  background-color: #0a68c1;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -57,26 +57,26 @@ exports[`PopoutButton renders correctly with default props 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #02509B;
+  background-color: #02509b;
 }
 
 .emotion-3:active:not(:disabled) {
-  background-color: #01396E;
+  background-color: #01396e;
 }
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  fill: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .emotion-2 {
@@ -110,8 +110,8 @@ exports[`PopoutButton renders correctly with default props 1`] = `
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #535353;
+  color: #535353;
   width: 24px;
   height: 24px;
   display: inline-block;

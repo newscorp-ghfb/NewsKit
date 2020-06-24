@@ -19,6 +19,7 @@ Object.entries(routes).forEach(route => {
     it(`should pass visual regression test on ${pageName}`, () => {
       cy.eyesOpen();
       cy.visit(path);
+      cy.acceptCookieBanner();
       if (!['spacing', 'welcome'].includes(pageName)) {
         cy.get('[data-testid="sample-code"]')
           .first()
