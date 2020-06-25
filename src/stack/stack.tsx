@@ -10,7 +10,7 @@ import {
   hasSpacing,
 } from './styled';
 import {useTheme, Theme} from '../themes';
-import {StackChild} from '../stack-child';
+import {StackChild, AlignSelfValues} from '../stack-child';
 import {hasMatchingDisplayNameWith} from '../utils/component';
 
 const wrapChild = (
@@ -20,7 +20,13 @@ const wrapChild = (
   wrap: NonNullable<StackProps['wrap']>,
   list: StackProps['list'],
 ) => (
-  child: React.ReactNode & {props?: {order?: number; children?: ReactChildren}},
+  child: React.ReactNode & {
+    props?: {
+      order?: number;
+      children?: ReactChildren;
+      alignSelf?: AlignSelfValues;
+    };
+  },
 ) => {
   const childProps: StyledChildProps = {
     space,
@@ -40,11 +46,20 @@ const wrapChild = (
   }
 
   if (hasSpacing(theme, space)) {
-    if (hasMatchingDisplayNameWith(child, StackChild) && child.props.order) {
-      const {
-        props: {order},
-      } = child;
-      childProps.$order = order;
+    if (hasMatchingDisplayNameWith(child, StackChild)) {
+      if (child.props.order) {
+        const {
+          props: {order},
+        } = child;
+        childProps.$order = order;
+      }
+
+      if (child.props.alignSelf) {
+        const {
+          props: {alignSelf},
+        } = child;
+        childProps.$alignSelf = alignSelf;
+      }
     }
 
     if (child) {
@@ -52,7 +67,13 @@ const wrapChild = (
         ? StyledChildContainerListElement
         : StyledChildContainer;
 
-      return <Container {...childProps}>{child}</Container>;
+      return (
+        <Container {...childProps}>
+          {hasMatchingDisplayNameWith(child, StackChild) && child.props.children
+            ? child.props.children
+            : child}
+        </Container>
+      );
     }
   }
   return list ? <StyledListItem>{child}</StyledListItem> : child;

@@ -3,6 +3,7 @@ import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {Stack} from '../../stack';
 import {Tag} from '../../tag/tag';
 import {StackChild} from '..';
+import {AlignSelfValues} from '../types';
 
 describe('StackChild', () => {
   test(`renders within a Stack with custom order`, () => {
@@ -34,6 +35,25 @@ describe('StackChild', () => {
           <Tag>child 2</Tag>
         </StackChild>,
         <StackChild order={1}>
+          <Tag>child 3</Tag>
+        </StackChild>,
+      ],
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders within a Stack, with align self property', () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      space: 'sizing020',
+      children: [
+        <StackChild alignSelf={AlignSelfValues.Stretch}>
+          <Tag>child 1</Tag>
+        </StackChild>,
+        <StackChild alignSelf={AlignSelfValues.Stretch}>
+          <Tag>child 2</Tag>
+        </StackChild>,
+        <StackChild alignSelf={AlignSelfValues.Stretch}>
           <Tag>child 3</Tag>
         </StackChild>,
       ],

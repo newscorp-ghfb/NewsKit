@@ -1019,6 +1019,20 @@ export const createStylePresets = ({
     },
   };
 
+  //
+  // Divider
+  //
+
+  presets.dividerHorizontal = {
+    base: {
+      borderStyle: 'solid',
+      borderColor: colorPrimitives.interface040,
+      borderWidth: borderPrimitives.borderWidthDefault,
+    },
+  };
+
+  presets.dividerVertical = presets.dividerHorizontal;
+
   return presets;
 };
 

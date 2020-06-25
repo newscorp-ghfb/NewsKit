@@ -127,6 +127,9 @@ export const defaultPresets = {
       space: 'sizing020',
     },
   },
+  divider: {
+    stylePreset: 'dividerHorizontal',
+  },
   standfirst: {
     styledText: {
       stylePreset: 'standfirst',

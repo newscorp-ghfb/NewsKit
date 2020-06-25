@@ -1,38 +1,37 @@
 import React from 'react';
-import {
-  getBorderFromTheme,
-  getColorFromTheme,
-  getSizingFromTheme,
-  styled,
-} from '../utils/style';
-import {BorderKeys, ColorKeys, SizingKeys} from '../themes';
+import {styled} from '../utils/style';
+import {getStylePreset} from '../utils/style-preset';
+import {StylePresetKeys} from '../themes/mappers/style-preset';
 
-interface CommonProps {
-  border?: BorderKeys;
-  marginTop?: SizingKeys;
-  marginRight?: SizingKeys;
-  marginBottom?: SizingKeys;
-  marginLeft?: SizingKeys;
+interface DividerProps {
+  vertical?: boolean;
+  overrides?: {
+    stylePreset: StylePresetKeys;
+  };
 }
 
-interface StyledDividerProps extends CommonProps {
-  $color?: ColorKeys;
-}
-
-export interface DividerProps extends CommonProps {
-  color?: ColorKeys;
-}
-
-const StyledDivider = styled.hr<StyledDividerProps>`
-  border-color: ${getColorFromTheme('interface030', '$color')};
-  border-width: ${getBorderFromTheme('borderWidth010', 'border')};
-  margin-top: ${getSizingFromTheme('sizing050', 'marginTop')};
-  margin-right: ${getSizingFromTheme('sizing000', 'marginRight')};
-  margin-bottom: ${getSizingFromTheme('sizing050', 'marginBottom')};
-  margin-left: ${getSizingFromTheme('sizing000', 'marginLeft')};
-  border-style: solid;
+const StyledDivider = styled.hr<DividerProps>`
+  ${getStylePreset('divider.stylePreset', 'stylePreset')};
+  border-width: 0px;
+  margin: 0;
 `;
 
-export const Divider: React.FC<DividerProps> = ({color, ...props}) => (
-  <StyledDivider data-testid="divider" {...props} $color={color} />
-);
+const StyledVerticalDivider = styled(StyledDivider)`
+  border-left-width: ${({...props}) =>
+    getStylePreset('divider')(props).borderWidth};
+  display: inline-block;
+  height: 100%;
+`;
+
+const StyledHorizontalDivider = styled(StyledDivider)`
+  border-top-width: ${({...props}) =>
+    getStylePreset('divider')(props).borderWidth};
+  width: 100%;
+`;
+
+export const Divider: React.FC<DividerProps> = ({vertical, ...props}) =>
+  vertical ? (
+    <StyledVerticalDivider data-testid="divider" {...props} />
+  ) : (
+    <StyledHorizontalDivider data-testid="divider" {...props} />
+  );

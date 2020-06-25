@@ -138,6 +138,7 @@ export const StyledChildContainer = styled.div<StyledChildProps>`
   display: inline-flex;
   ${calculateMargins()}
   order: ${({$order}) => $order};
+  align-self: ${({$alignSelf}) => $alignSelf};
 `;
 
 export const StyledChildContainerListElement = styled(StyledChildContainer)`

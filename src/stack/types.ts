@@ -1,4 +1,5 @@
 import {SizingKeys} from '../themes/newskit-light/spacing';
+import {AlignSelfValues} from '../stack-child';
 
 export interface CommonStackProps {
   space: SizingKeys;
@@ -42,6 +43,7 @@ export interface ChildProps
 export interface StyledChildProps
   extends Pick<StyledStackProps, 'space' | 'flow' | '$wrap'> {
   $order?: number;
+  $alignSelf?: AlignSelfValues;
 }
 
 export enum Flow {

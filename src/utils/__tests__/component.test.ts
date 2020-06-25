@@ -5,6 +5,7 @@ import {
   ComponentWithAlternativeDisplayName,
   ComponentWithoutDisplayName,
   RenderedComponentWithDisplayName,
+  MdxComponentWithDisplayName,
 } from '../__mocks__/component';
 import {isValidNode, hasMatchingDisplayNameWith} from '../component';
 
@@ -25,6 +26,7 @@ describe('hasMatchingDisplayNameWith', () => {
     ${ComponentWithDisplayName} | ${ComponentWithAlternativeDisplayName} | ${false}
     ${ComponentWithDisplayName} | ${ComponentWithoutDisplayName}         | ${false}
     ${ComponentWithDisplayName} | ${RenderedComponentWithDisplayName}    | ${true}
+    ${ComponentWithDisplayName} | ${MdxComponentWithDisplayName}         | ${true}
     ${ComponentWithDisplayName} | ${undefined}                           | ${false}
     ${undefined}                | ${ComponentWithDisplayName}            | ${false}
     ${undefined}                | ${ComponentWithAlternativeDisplayName} | ${false}

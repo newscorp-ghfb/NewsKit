@@ -2,17 +2,17 @@
 
 exports[`Audio Player live player renders as expected 1`] = `
 <DocumentFragment>
-  .emotion-56 {
+  .emotion-55 {
   width: 100%;
 }
 
-.emotion-55 {
+.emotion-54 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-54 {
+.emotion-53 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -29,25 +29,25 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 @media screen {
-  .emotion-54 {
+  .emotion-53 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-54 {
+  .emotion-53 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-54 {
+  .emotion-53 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-54 {
+  .emotion-53 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -96,7 +96,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   }
 }
 
-.emotion-53 {
+.emotion-52 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -105,7 +105,7 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 @media screen {
-  .emotion-53 {
+  .emotion-52 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -120,7 +120,7 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-53 {
+  .emotion-52 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -128,7 +128,7 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-53 {
+  .emotion-52 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -136,14 +136,14 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-53 {
+  .emotion-52 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-52 {
+.emotion-51 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -162,7 +162,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   justify-content: space-between;
 }
 
-.emotion-15 {
+.emotion-14 {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -172,7 +172,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   display: inline-flex;
 }
 
-.emotion-24 {
+.emotion-23 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -195,7 +195,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   justify-content: center;
 }
 
-.emotion-23 {
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -217,7 +217,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   min-width: 316px;
 }
 
-.emotion-14 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -227,16 +227,6 @@ exports[`Audio Player live player renders as expected 1`] = `
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
-}
-
-.emotion-13 {
-  -webkit-order: 3;
-  -ms-flex-order: 3;
-  order: 3;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .emotion-12 {
@@ -425,7 +415,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   animation: right-wobble 1.4s linear infinite;
 }
 
-.emotion-16 {
+.emotion-15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -437,19 +427,29 @@ exports[`Audio Player live player renders as expected 1`] = `
   order: 2;
 }
 
-.emotion-20 {
+.emotion-16 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-left: calc(12px/2);
-  margin-right: calc(12px/2);
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
 }
 
 .emotion-19 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.emotion-18 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -459,7 +459,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   display: inline-flex;
 }
 
-.emotion-22 {
+.emotion-21 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -471,7 +471,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   order: 5;
 }
 
-.emotion-21 {
+.emotion-20 {
   -webkit-order: 5;
   -ms-flex-order: 5;
   order: 5;
@@ -481,37 +481,37 @@ exports[`Audio Player live player renders as expected 1`] = `
   display: inline-flex;
 }
 
-.emotion-42 {
+.emotion-41 {
   box-sizing: border-box;
   width: calc( 184px + 24px );
   padding: 0 calc(24px / 2);
 }
 
 @media screen {
-  .emotion-42 {
+  .emotion-41 {
     display: none;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-42 {
+  .emotion-41 {
     display: none;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-42 {
+  .emotion-41 {
     display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-42 {
+  .emotion-41 {
     display: block;
   }
 }
 
-.emotion-40 {
+.emotion-39 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -536,7 +536,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   position: relative;
 }
 
-.emotion-31 {
+.emotion-30 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -548,7 +548,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   margin-right: 8px;
 }
 
-.emotion-30 {
+.emotion-29 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -560,7 +560,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   height: 32px;
 }
 
-.emotion-29 {
+.emotion-28 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -597,34 +597,34 @@ exports[`Audio Player live player renders as expected 1`] = `
   cursor: pointer;
 }
 
-.emotion-29 svg {
+.emotion-28 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-29 svg {
+.emotion-28 svg {
   fill: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-29:hover:not(:disabled) {
+.emotion-28:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-29:active:not(:disabled) {
+.emotion-28:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-29:disabled {
+.emotion-28:disabled {
   color: #c0c0c0;
 }
 
-.emotion-29:disabled svg {
+.emotion-28:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-26 {
+.emotion-25 {
   fill: #535353;
   color: #535353;
   width: 24px;
@@ -632,7 +632,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   display: inline-block;
 }
 
-.emotion-33 {
+.emotion-32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -649,7 +649,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   width: 100%;
 }
 
-.emotion-32 {
+.emotion-31 {
   background-color: #ffffff;
   border-color: #0a68c1;
   border-style: solid;
@@ -670,21 +670,21 @@ exports[`Audio Player live player renders as expected 1`] = `
   cursor: pointer;
 }
 
-.emotion-32 svg {
+.emotion-31 svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-32:active:not(:disabled) {
+.emotion-31:active:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-32:active:not(:disabled) svg {
+.emotion-31:active:not(:disabled) svg {
   fill: #777777;
   color: #777777;
 }
 
-.emotion-39 {
+.emotion-38 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -696,7 +696,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   margin-left: 8px;
 }
 
-.emotion-41 {
+.emotion-40 {
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -708,7 +708,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   width: 1px;
 }
 
-.emotion-49 {
+.emotion-48 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -727,7 +727,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-48 {
+.emotion-47 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -739,7 +739,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   height: 48px;
 }
 
-.emotion-47 {
+.emotion-46 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -776,42 +776,42 @@ exports[`Audio Player live player renders as expected 1`] = `
   cursor: pointer;
 }
 
-.emotion-47 svg {
+.emotion-46 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-47 svg {
+.emotion-46 svg {
   fill: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-47:hover:not(:disabled) {
+.emotion-46:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-47:active:not(:disabled) {
+.emotion-46:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-47:disabled {
+.emotion-46:disabled {
   color: #c0c0c0;
 }
 
-.emotion-47:disabled svg {
+.emotion-46:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
 <section
     aria-label="audio player"
-    class="emotion-56"
+    class="emotion-55"
   >
     <div
-      class="emotion-55"
+      class="emotion-54"
     >
       <div
-        class="emotion-54"
+        class="emotion-53"
       >
         <audio
           data-testid="audio-element"
@@ -831,128 +831,124 @@ exports[`Audio Player live player renders as expected 1`] = `
           </div>
         </div>
         <div
-          class="emotion-53"
+          class="emotion-52"
         >
           <div
-            class="emotion-52"
+            class="emotion-51"
           >
             <div
-              class="emotion-15"
+              class="emotion-14"
             >
               <div
-                class="emotion-24"
+                class="emotion-23"
               >
                 <div
-                  class="emotion-23"
+                  class="emotion-22"
                 >
                   <div
-                    class="emotion-14"
+                    class="emotion-13"
                   >
                     <div
-                      class="emotion-13"
+                      class="emotion-12"
                     >
-                      <div
-                        class="emotion-12"
+                      <button
+                        aria-pressed="false"
+                        class="emotion-11"
+                        data-testid="audio-player-play-button"
+                        type="button"
                       >
-                        <button
-                          aria-pressed="false"
-                          class="emotion-11"
-                          data-testid="audio-player-play-button"
-                          type="button"
+                        <div
+                          class="emotion-10"
                         >
                           <div
-                            class="emotion-10"
+                            class="emotion-9"
                           >
                             <div
-                              class="emotion-9"
+                              aria-label="loading"
+                              class="emotion-8"
                             >
                               <div
-                                aria-label="loading"
-                                class="emotion-8"
+                                class="emotion-7"
                               >
                                 <div
-                                  class="emotion-7"
+                                  class="emotion-3"
                                 >
                                   <div
-                                    class="emotion-3"
+                                    class="emotion-2"
                                   >
                                     <div
-                                      class="emotion-2"
-                                    >
-                                      <div
-                                        class="emotion-1"
-                                      />
-                                    </div>
+                                      class="emotion-1"
+                                    />
                                   </div>
+                                </div>
+                                <div
+                                  class="emotion-6"
+                                >
                                   <div
-                                    class="emotion-6"
+                                    class="emotion-5"
                                   >
                                     <div
-                                      class="emotion-5"
-                                    >
-                                      <div
-                                        class="emotion-1"
-                                      />
-                                    </div>
+                                      class="emotion-1"
+                                    />
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </button>
-                      </div>
+                        </div>
+                      </button>
                     </div>
                   </div>
                   <div
-                    class="emotion-16"
+                    class="emotion-15"
                   >
                     <div
-                      class="emotion-15"
+                      class="emotion-14"
                     />
                   </div>
                   <div
-                    class="emotion-14"
+                    class="emotion-13"
                   >
                     <div
-                      class="emotion-13"
+                      class="emotion-16"
                     />
                   </div>
                   <div
-                    class="emotion-20"
+                    class="emotion-19"
                   >
                     <div
-                      class="emotion-19"
+                      class="emotion-18"
                     />
                   </div>
                   <div
-                    class="emotion-22"
+                    class="emotion-21"
                   >
                     <div
-                      class="emotion-21"
+                      class="emotion-20"
                     />
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="emotion-19"
+              class="emotion-18"
             >
               <div
-                class="emotion-42"
+                class="emotion-41"
               >
                 <div
-                  class="emotion-40"
+                  class="emotion-39"
                   data-testid="volume-control"
                 >
                   <div
-                    class="emotion-31"
+                    class="emotion-30"
                     data-testid="min-label"
                   >
                     <div
-                      class="emotion-30"
+                      class="emotion-29"
                     >
                       <button
-                        class="emotion-29"
+                        class="emotion-28"
                         data-testid="mute-button"
                         tabindex="-1"
                         type="button"
@@ -965,7 +961,7 @@ exports[`Audio Player live player renders as expected 1`] = `
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-26"
+                              class="emotion-25"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -990,7 +986,7 @@ exports[`Audio Player live player renders as expected 1`] = `
                     aria-orientation="horizontal"
                     aria-valuemax="1"
                     aria-valuemin="0"
-                    class="emotion-33"
+                    class="emotion-32"
                     data-testid="volume-control-track"
                     style="background: rgb(255, 255, 0);"
                     values="0.7"
@@ -1002,7 +998,7 @@ exports[`Audio Player live player renders as expected 1`] = `
                       aria-valuemin="0"
                       aria-valuenow="0.7"
                       aria-valuetext="volume level 7 of 10"
-                      class="emotion-32"
+                      class="emotion-31"
                       data-testid="volume-control-thumb"
                       draggable="false"
                       role="slider"
@@ -1012,14 +1008,14 @@ exports[`Audio Player live player renders as expected 1`] = `
                     />
                   </div>
                   <div
-                    class="emotion-39"
+                    class="emotion-38"
                     data-testid="max-label"
                   >
                     <div
-                      class="emotion-30"
+                      class="emotion-29"
                     >
                       <button
-                        class="emotion-29"
+                        class="emotion-28"
                         data-testid="volumeup-button"
                         tabindex="-1"
                         type="button"
@@ -1032,7 +1028,7 @@ exports[`Audio Player live player renders as expected 1`] = `
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-26"
+                              class="emotion-25"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -1058,7 +1054,7 @@ exports[`Audio Player live player renders as expected 1`] = `
                   </div>
                 </div>
                 <div
-                  class="emotion-41"
+                  class="emotion-40"
                   id="mock-bui-1"
                 >
                   Use the arrow keys to adjust volume
@@ -1066,19 +1062,19 @@ exports[`Audio Player live player renders as expected 1`] = `
               </div>
             </div>
             <div
-              class="emotion-13"
+              class="emotion-16"
             >
               <div
-                class="emotion-42"
+                class="emotion-41"
               >
                 <div
-                  class="emotion-49"
+                  class="emotion-48"
                 >
                   <div
-                    class="emotion-48"
+                    class="emotion-47"
                   >
                     <button
-                      class="emotion-47"
+                      class="emotion-46"
                       data-testid="audio-player-popout"
                       href="www.popout-player.example.com"
                       type="button"
@@ -1091,7 +1087,7 @@ exports[`Audio Player live player renders as expected 1`] = `
                         >
                           <svg
                             aria-labelledby="mock-bui-1"
-                            class="emotion-26"
+                            class="emotion-25"
                             focusable="false"
                             viewBox="0 0 24 24"
                           >
@@ -1705,17 +1701,17 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
 
 exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 <DocumentFragment>
-  .emotion-73 {
+  .emotion-68 {
   width: 100%;
 }
 
-.emotion-72 {
+.emotion-67 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-71 {
+.emotion-66 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -1732,25 +1728,25 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 @media screen {
-  .emotion-71 {
+  .emotion-66 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-71 {
+  .emotion-66 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-71 {
+  .emotion-66 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-71 {
+  .emotion-66 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -1799,7 +1795,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   }
 }
 
-.emotion-61 {
+.emotion-56 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -1808,7 +1804,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 @media screen {
-  .emotion-61 {
+  .emotion-56 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -1823,7 +1819,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-61 {
+  .emotion-56 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -1831,7 +1827,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-61 {
+  .emotion-56 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -1839,14 +1835,14 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-61 {
+  .emotion-56 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-60 {
+.emotion-55 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1865,7 +1861,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   justify-content: space-between;
 }
 
-.emotion-13 {
+.emotion-33 {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1875,7 +1871,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   display: inline-flex;
 }
 
-.emotion-37 {
+.emotion-32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1898,7 +1894,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   justify-content: center;
 }
 
-.emotion-7 {
+.emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1908,16 +1904,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
-}
-
-.emotion-6 {
-  -webkit-order: 3;
-  -ms-flex-order: 3;
-  order: 3;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .emotion-5 {
@@ -1962,7 +1948,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-14 {
+.emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1974,7 +1960,17 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   order: 2;
 }
 
-.emotion-28 {
+.emotion-54 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-24 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1986,7 +1982,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   order: 1;
 }
 
-.emotion-27 {
+.emotion-51 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -1996,7 +1992,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   display: inline-flex;
 }
 
-.emotion-35 {
+.emotion-30 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2008,47 +2004,37 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   order: 5;
 }
 
-.emotion-34 {
-  -webkit-order: 5;
-  -ms-flex-order: 5;
-  order: 5;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.emotion-55 {
+.emotion-50 {
   box-sizing: border-box;
   width: calc( 184px + 24px );
   padding: 0 calc(24px / 2);
 }
 
 @media screen {
-  .emotion-55 {
+  .emotion-50 {
     display: none;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-55 {
+  .emotion-50 {
     display: none;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-55 {
+  .emotion-50 {
     display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-55 {
+  .emotion-50 {
     display: block;
   }
 }
 
-.emotion-53 {
+.emotion-48 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2073,7 +2059,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   position: relative;
 }
 
-.emotion-44 {
+.emotion-39 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2085,7 +2071,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   margin-right: 8px;
 }
 
-.emotion-43 {
+.emotion-38 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2097,7 +2083,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   height: 32px;
 }
 
-.emotion-42 {
+.emotion-37 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2134,34 +2120,34 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   cursor: pointer;
 }
 
-.emotion-42 svg {
+.emotion-37 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-42 svg {
+.emotion-37 svg {
   fill: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-42:hover:not(:disabled) {
+.emotion-37:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-42:active:not(:disabled) {
+.emotion-37:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-42:disabled {
+.emotion-37:disabled {
   color: #c0c0c0;
 }
 
-.emotion-42:disabled svg {
+.emotion-37:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-39 {
+.emotion-34 {
   fill: #535353;
   color: #535353;
   width: 24px;
@@ -2169,7 +2155,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   display: inline-block;
 }
 
-.emotion-52 {
+.emotion-47 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2181,7 +2167,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   margin-left: 8px;
 }
 
-.emotion-54 {
+.emotion-49 {
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -2193,7 +2179,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   width: 1px;
 }
 
-.emotion-57 {
+.emotion-52 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2212,7 +2198,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-12 {
+.emotion-11 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2224,7 +2210,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   height: 48px;
 }
 
-.emotion-11 {
+.emotion-10 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2261,34 +2247,34 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   cursor: pointer;
 }
 
-.emotion-11 svg {
+.emotion-10 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-11 svg {
+.emotion-10 svg {
   fill: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-11:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-11:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-11:disabled {
+.emotion-10:disabled {
   color: #c0c0c0;
 }
 
-.emotion-11:disabled svg {
+.emotion-10:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-36 {
+.emotion-31 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2316,7 +2302,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   display: inline-block;
 }
 
-.emotion-70 {
+.emotion-65 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -2325,7 +2311,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 @media screen {
-  .emotion-70 {
+  .emotion-65 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -2340,7 +2326,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-70 {
+  .emotion-65 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -2348,7 +2334,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-70 {
+  .emotion-65 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -2356,14 +2342,14 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-70 {
+  .emotion-65 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-68 {
+.emotion-63 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2391,13 +2377,13 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   position: relative;
 }
 
-.emotion-67 {
+.emotion-62 {
   width: 100%;
   margin-top: 12px;
   padding: 0 calc(16px / 2);
 }
 
-.emotion-66 {
+.emotion-61 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2420,7 +2406,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   justify-content: space-between;
 }
 
-.emotion-64 {
+.emotion-59 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2432,16 +2418,16 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   color: #777777;
 }
 
-.emotion-64 svg {
+.emotion-59 svg {
   fill: #777777;
   color: #777777;
 }
 
-.emotion-64:disabled {
+.emotion-59:disabled {
   color: #c0c0c0;
 }
 
-.emotion-64:disabled svg {
+.emotion-59:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
@@ -2511,7 +2497,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   color: #c0c0c0;
 }
 
-.emotion-63 {
+.emotion-58 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2530,7 +2516,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   width: 100%;
 }
 
-.emotion-62 {
+.emotion-57 {
   background-color: #ffffff;
   border-color: #0a68c1;
   border-style: solid;
@@ -2553,16 +2539,16 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   cursor: grabbing;
 }
 
-.emotion-62 svg {
+.emotion-57 svg {
   fill: #ffffff;
   color: #ffffff;
 }
 
-.emotion-62:active:not(:disabled) {
+.emotion-57:active:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-62:disabled {
+.emotion-57:disabled {
   background-color: #e4e4e4;
   border-color: none;
   border-style: none;
@@ -2570,12 +2556,12 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   box-shadow: none;
 }
 
-.emotion-62:disabled svg {
+.emotion-57:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-46 {
+.emotion-41 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2594,7 +2580,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   width: 100%;
 }
 
-.emotion-45 {
+.emotion-40 {
   background-color: #ffffff;
   border-color: #0a68c1;
   border-style: solid;
@@ -2617,29 +2603,29 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   cursor: grabbing;
 }
 
-.emotion-45 svg {
+.emotion-40 svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-45:active:not(:disabled) {
+.emotion-40:active:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-45:active:not(:disabled) svg {
+.emotion-40:active:not(:disabled) svg {
   fill: #777777;
   color: #777777;
 }
 
 <section
     aria-label="audio player"
-    class="emotion-73"
+    class="emotion-68"
   >
     <div
-      class="emotion-72"
+      class="emotion-67"
     >
       <div
-        class="emotion-71"
+        class="emotion-66"
       >
         <audio
           data-testid="audio-element"
@@ -2659,263 +2645,243 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
           </div>
         </div>
         <div
-          class="emotion-61"
+          class="emotion-56"
         >
           <div
-            class="emotion-60"
+            class="emotion-55"
           >
             <div
-              class="emotion-13"
+              class="emotion-33"
             >
               <div
-                class="emotion-37"
+                class="emotion-32"
               >
                 <div
-                  class="emotion-36"
+                  class="emotion-31"
                 >
                   <div
-                    class="emotion-7"
+                    class="emotion-6"
                   >
                     <div
-                      class="emotion-6"
+                      class="emotion-5"
                     >
-                      <div
-                        class="emotion-5"
+                      <button
+                        aria-pressed="false"
+                        class="emotion-4"
+                        data-testid="audio-player-play-button"
+                        type="button"
                       >
-                        <button
-                          aria-pressed="false"
-                          class="emotion-4"
-                          data-testid="audio-player-play-button"
-                          type="button"
+                        <div
+                          class="emotion-3"
                         >
                           <div
-                            class="emotion-3"
+                            class="emotion-2"
                           >
-                            <div
-                              class="emotion-2"
+                            <svg
+                              aria-labelledby="mock-bui-1"
+                              class="emotion-1"
+                              focusable="false"
+                              viewBox="0 0 24 24"
                             >
-                              <svg
-                                aria-labelledby="mock-bui-1"
-                                class="emotion-1"
-                                focusable="false"
-                                viewBox="0 0 24 24"
+                              <title
+                                id="mock-bui-1"
                               >
-                                <title
-                                  id="mock-bui-1"
-                                >
-                                  Play
-                                </title>
-                                <polygon
-                                  points="8 5 8 19 19 12"
-                                />
-                              </svg>
-                            </div>
+                                Play
+                              </title>
+                              <polygon
+                                points="8 5 8 19 19 12"
+                              />
+                            </svg>
                           </div>
-                        </button>
-                      </div>
+                        </div>
+                      </button>
                     </div>
                   </div>
                   <div
-                    class="emotion-14"
+                    class="emotion-12"
                   >
                     <div
-                      class="emotion-13"
+                      class="emotion-11"
                     >
-                      <div
-                        class="emotion-12"
+                      <button
+                        class="emotion-10"
+                        data-testid="audio-player-backward"
+                        type="button"
                       >
-                        <button
-                          class="emotion-11"
-                          data-testid="audio-player-backward"
-                          type="button"
+                        <div
+                          class="emotion-3"
                         >
                           <div
-                            class="emotion-3"
+                            class="emotion-2"
                           >
-                            <div
-                              class="emotion-2"
+                            <svg
+                              aria-labelledby="mock-bui-1"
+                              class="emotion-1"
+                              focusable="false"
+                              viewBox="0 0 24 24"
                             >
-                              <svg
-                                aria-labelledby="mock-bui-1"
-                                class="emotion-1"
-                                focusable="false"
-                                viewBox="0 0 24 24"
+                              <title
+                                id="mock-bui-1"
                               >
-                                <title
-                                  id="mock-bui-1"
-                                >
-                                  rewind 10 seconds
-                                </title>
-                                <path
-                                  d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
-                                />
-                              </svg>
-                            </div>
+                                rewind 10 seconds
+                              </title>
+                              <path
+                                d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
+                              />
+                            </svg>
                           </div>
-                        </button>
-                      </div>
+                        </div>
+                      </button>
                     </div>
                   </div>
                   <div
-                    class="emotion-7"
+                    class="emotion-6"
                   >
                     <div
-                      class="emotion-6"
+                      class="emotion-11"
                     >
-                      <div
-                        class="emotion-12"
+                      <button
+                        class="emotion-10"
+                        data-testid="audio-player-forward"
+                        type="button"
                       >
-                        <button
-                          class="emotion-11"
-                          data-testid="audio-player-forward"
-                          type="button"
+                        <div
+                          class="emotion-3"
                         >
                           <div
-                            class="emotion-3"
+                            class="emotion-2"
                           >
-                            <div
-                              class="emotion-2"
+                            <svg
+                              aria-labelledby="mock-bui-1"
+                              class="emotion-1"
+                              focusable="false"
+                              viewBox="0 0 24 24"
                             >
-                              <svg
-                                aria-labelledby="mock-bui-1"
-                                class="emotion-1"
-                                focusable="false"
-                                viewBox="0 0 24 24"
+                              <title
+                                id="mock-bui-1"
                               >
-                                <title
-                                  id="mock-bui-1"
-                                >
-                                  fast forward 10 seconds
-                                </title>
-                                <path
-                                  d="M0 0h24v24H0z"
-                                  fill="none"
-                                />
-                                <path
-                                  d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
-                                />
-                                <path
-                                  d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
-                                />
-                              </svg>
-                            </div>
+                                fast forward 10 seconds
+                              </title>
+                              <path
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                              <path
+                                d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+                              />
+                              <path
+                                d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+                              />
+                            </svg>
                           </div>
-                        </button>
-                      </div>
+                        </div>
+                      </button>
                     </div>
                   </div>
                   <div
-                    class="emotion-28"
+                    class="emotion-24"
                   >
                     <div
-                      class="emotion-27"
+                      class="emotion-11"
                     >
-                      <div
-                        class="emotion-12"
+                      <button
+                        class="emotion-10"
+                        data-testid="audio-player-skip-previous"
+                        type="button"
                       >
-                        <button
-                          class="emotion-11"
-                          data-testid="audio-player-skip-previous"
-                          type="button"
+                        <div
+                          class="emotion-3"
                         >
                           <div
-                            class="emotion-3"
+                            class="emotion-2"
                           >
-                            <div
-                              class="emotion-2"
+                            <svg
+                              aria-labelledby="mock-bui-1"
+                              class="emotion-1"
+                              focusable="false"
+                              viewBox="0 0 24 24"
                             >
-                              <svg
-                                aria-labelledby="mock-bui-1"
-                                class="emotion-1"
-                                focusable="false"
-                                viewBox="0 0 24 24"
+                              <title
+                                id="mock-bui-1"
                               >
-                                <title
-                                  id="mock-bui-1"
-                                >
-                                  previous
-                                </title>
-                                <path
-                                  d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
-                                />
-                                <path
-                                  d="M0 0h24v24H0z"
-                                  fill="none"
-                                />
-                              </svg>
-                            </div>
+                                previous
+                              </title>
+                              <path
+                                d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+                              />
+                              <path
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                            </svg>
                           </div>
-                        </button>
-                      </div>
+                        </div>
+                      </button>
                     </div>
                   </div>
                   <div
-                    class="emotion-35"
+                    class="emotion-30"
                   >
                     <div
-                      class="emotion-34"
+                      class="emotion-11"
                     >
-                      <div
-                        class="emotion-12"
+                      <button
+                        class="emotion-10"
+                        data-testid="audio-player-skip-next"
+                        type="button"
                       >
-                        <button
-                          class="emotion-11"
-                          data-testid="audio-player-skip-next"
-                          type="button"
+                        <div
+                          class="emotion-3"
                         >
                           <div
-                            class="emotion-3"
+                            class="emotion-2"
                           >
-                            <div
-                              class="emotion-2"
+                            <svg
+                              aria-labelledby="mock-bui-1"
+                              class="emotion-1"
+                              focusable="false"
+                              viewBox="0 0 24 24"
                             >
-                              <svg
-                                aria-labelledby="mock-bui-1"
-                                class="emotion-1"
-                                focusable="false"
-                                viewBox="0 0 24 24"
+                              <title
+                                id="mock-bui-1"
                               >
-                                <title
-                                  id="mock-bui-1"
-                                >
-                                  next
-                                </title>
-                                <path
-                                  d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
-                                />
-                                <path
-                                  d="M0 0h24v24H0z"
-                                  fill="none"
-                                />
-                              </svg>
-                            </div>
+                                next
+                              </title>
+                              <path
+                                d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
+                              />
+                              <path
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                            </svg>
                           </div>
-                        </button>
-                      </div>
+                        </div>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="emotion-27"
+              class="emotion-51"
             >
               <div
-                class="emotion-55"
+                class="emotion-50"
               >
                 <div
-                  class="emotion-53"
+                  class="emotion-48"
                   data-testid="volume-control"
                 >
                   <div
-                    class="emotion-44"
+                    class="emotion-39"
                     data-testid="min-label"
                   >
                     <div
-                      class="emotion-43"
+                      class="emotion-38"
                     >
                       <button
-                        class="emotion-42"
+                        class="emotion-37"
                         data-testid="mute-button"
                         tabindex="-1"
                         type="button"
@@ -2928,7 +2894,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-39"
+                              class="emotion-34"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -2953,7 +2919,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                     aria-orientation="horizontal"
                     aria-valuemax="1"
                     aria-valuemin="0"
-                    class="emotion-46"
+                    class="emotion-41"
                     data-testid="volume-control-track"
                     style="background: rgb(255, 255, 0);"
                     values="0.1"
@@ -2965,7 +2931,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                       aria-valuemin="0"
                       aria-valuenow="0.1"
                       aria-valuetext="volume level 1 of 10"
-                      class="emotion-45"
+                      class="emotion-40"
                       data-testid="volume-control-thumb"
                       draggable="false"
                       role="slider"
@@ -2975,14 +2941,14 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                     />
                   </div>
                   <div
-                    class="emotion-52"
+                    class="emotion-47"
                     data-testid="max-label"
                   >
                     <div
-                      class="emotion-43"
+                      class="emotion-38"
                     >
                       <button
-                        class="emotion-42"
+                        class="emotion-37"
                         data-testid="volumeup-button"
                         tabindex="-1"
                         type="button"
@@ -2995,7 +2961,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-39"
+                              class="emotion-34"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -3021,7 +2987,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                   </div>
                 </div>
                 <div
-                  class="emotion-54"
+                  class="emotion-49"
                   id="mock-bui-1"
                 >
                   Use the arrow keys to adjust volume
@@ -3029,27 +2995,27 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
               </div>
             </div>
             <div
-              class="emotion-6"
+              class="emotion-54"
             >
               <div
-                class="emotion-55"
+                class="emotion-50"
               >
                 <div
-                  class="emotion-57"
+                  class="emotion-52"
                 />
               </div>
             </div>
           </div>
         </div>
         <div
-          class="emotion-70"
+          class="emotion-65"
         >
           <div
-            class="emotion-68"
+            class="emotion-63"
             data-testid="audio-slider"
           >
             <div
-              class="emotion-63"
+              class="emotion-58"
               data-testid="audio-slider-track"
               style="background: rgb(255, 255, 0);"
               values="10"
@@ -3061,7 +3027,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                 aria-valuemin="0"
                 aria-valuenow="10"
                 aria-valuetext="Playback time: 10 seconds of 1 hour 50 minutes 10 seconds"
-                class="emotion-62"
+                class="emotion-57"
                 data-testid="audio-slider-thumb"
                 draggable="false"
                 role="slider"
@@ -3071,19 +3037,19 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
               />
             </div>
             <div
-              class="emotion-67"
+              class="emotion-62"
             >
               <div
-                class="emotion-66"
+                class="emotion-61"
               >
                 <div
-                  class="emotion-64"
+                  class="emotion-59"
                   data-testid="min-label"
                 >
                   00:00:10
                 </div>
                 <div
-                  class="emotion-64"
+                  class="emotion-59"
                   data-testid="max-label"
                 >
                   01:50:10
@@ -3092,7 +3058,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
             </div>
           </div>
           <div
-            class="emotion-54"
+            class="emotion-49"
             id="mock-bui-1"
           >
             Use the arrow keys to fast forward or rewind
@@ -3169,17 +3135,17 @@ exports[`Audio Player recorded player renders and behaves as expected 2`] = `
 
 exports[`Audio Player recorded player renders as expected 1`] = `
 <DocumentFragment>
-  .emotion-74 {
+  .emotion-70 {
   width: 100%;
 }
 
-.emotion-73 {
+.emotion-69 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-72 {
+.emotion-68 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -3196,25 +3162,25 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 @media screen {
-  .emotion-72 {
+  .emotion-68 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-72 {
+  .emotion-68 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-72 {
+  .emotion-68 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-72 {
+  .emotion-68 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -3263,7 +3229,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   }
 }
 
-.emotion-63 {
+.emotion-59 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -3272,7 +3238,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 @media screen {
-  .emotion-63 {
+  .emotion-59 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -3287,7 +3253,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-63 {
+  .emotion-59 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -3295,7 +3261,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-63 {
+  .emotion-59 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -3303,14 +3269,14 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-63 {
+  .emotion-59 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-62 {
+.emotion-58 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3329,7 +3295,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   justify-content: space-between;
 }
 
-.emotion-20 {
+.emotion-36 {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3339,7 +3305,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   display: inline-flex;
 }
 
-.emotion-39 {
+.emotion-35 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3362,7 +3328,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   justify-content: center;
 }
 
-.emotion-14 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3372,16 +3338,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
-}
-
-.emotion-13 {
-  -webkit-order: 3;
-  -ms-flex-order: 3;
-  order: 3;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .emotion-12 {
@@ -3570,7 +3526,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   animation: right-wobble 1.4s linear infinite;
 }
 
-.emotion-21 {
+.emotion-19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3582,81 +3538,91 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   order: 2;
 }
 
-.emotion-35 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(12px/2);
-  margin-right: calc(12px/2);
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-}
-
-.emotion-34 {
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.emotion-37 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(12px/2);
-  margin-right: calc(12px/2);
-  -webkit-order: 5;
-  -ms-flex-order: 5;
-  order: 5;
-}
-
-.emotion-36 {
-  -webkit-order: 5;
-  -ms-flex-order: 5;
-  order: 5;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .emotion-57 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-31 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.emotion-54 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-33 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(12px/2);
+  margin-right: calc(12px/2);
+  -webkit-order: 5;
+  -ms-flex-order: 5;
+  order: 5;
+}
+
+.emotion-32 {
+  -webkit-order: 5;
+  -ms-flex-order: 5;
+  order: 5;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-53 {
   box-sizing: border-box;
   width: calc( 184px + 24px );
   padding: 0 calc(24px / 2);
 }
 
 @media screen {
-  .emotion-57 {
+  .emotion-53 {
     display: none;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-57 {
+  .emotion-53 {
     display: none;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-57 {
+  .emotion-53 {
     display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-57 {
+  .emotion-53 {
     display: block;
   }
 }
 
-.emotion-55 {
+.emotion-51 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3681,7 +3647,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   position: relative;
 }
 
-.emotion-46 {
+.emotion-42 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -3693,7 +3659,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   margin-right: 8px;
 }
 
-.emotion-45 {
+.emotion-41 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3705,7 +3671,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   height: 32px;
 }
 
-.emotion-44 {
+.emotion-40 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3742,34 +3708,34 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   cursor: pointer;
 }
 
-.emotion-44 svg {
+.emotion-40 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-44 svg {
+.emotion-40 svg {
   fill: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-44:hover:not(:disabled) {
+.emotion-40:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-44:active:not(:disabled) {
+.emotion-40:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-44:disabled {
+.emotion-40:disabled {
   color: #c0c0c0;
 }
 
-.emotion-44:disabled svg {
+.emotion-40:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-41 {
+.emotion-37 {
   fill: #535353;
   color: #535353;
   width: 24px;
@@ -3777,7 +3743,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   display: inline-block;
 }
 
-.emotion-48 {
+.emotion-44 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3794,7 +3760,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   width: 100%;
 }
 
-.emotion-47 {
+.emotion-43 {
   background-color: #ffffff;
   border-color: #0a68c1;
   border-style: solid;
@@ -3815,21 +3781,21 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   cursor: pointer;
 }
 
-.emotion-47 svg {
+.emotion-43 svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-47:active:not(:disabled) {
+.emotion-43:active:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-47:active:not(:disabled) svg {
+.emotion-43:active:not(:disabled) svg {
   fill: #777777;
   color: #777777;
 }
 
-.emotion-54 {
+.emotion-50 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -3841,7 +3807,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   margin-left: 8px;
 }
 
-.emotion-56 {
+.emotion-52 {
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -3853,7 +3819,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   width: 1px;
 }
 
-.emotion-59 {
+.emotion-55 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3872,7 +3838,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-19 {
+.emotion-18 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3884,7 +3850,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   height: 48px;
 }
 
-.emotion-18 {
+.emotion-17 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3921,34 +3887,34 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   cursor: pointer;
 }
 
-.emotion-18 svg {
+.emotion-17 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-18 svg {
+.emotion-17 svg {
   fill: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-18:hover:not(:disabled) {
+.emotion-17:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-18:active:not(:disabled) {
+.emotion-17:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-18:disabled {
+.emotion-17:disabled {
   color: #c0c0c0;
 }
 
-.emotion-18:disabled svg {
+.emotion-17:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-38 {
+.emotion-34 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3970,13 +3936,13 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   min-width: 316px;
 }
 
-.emotion-15 {
+.emotion-14 {
   fill: #535353;
   color: #535353;
   display: inline-block;
 }
 
-.emotion-32 {
+.emotion-29 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4012,17 +3978,17 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
-.emotion-32 svg {
+.emotion-29 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-32 svg {
+.emotion-29 svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-71 {
+.emotion-67 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -4031,7 +3997,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 @media screen {
-  .emotion-71 {
+  .emotion-67 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -4046,7 +4012,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-71 {
+  .emotion-67 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -4054,7 +4020,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-71 {
+  .emotion-67 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -4062,14 +4028,14 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-71 {
+  .emotion-67 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-69 {
+.emotion-65 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4097,7 +4063,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   position: relative;
 }
 
-.emotion-65 {
+.emotion-61 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4114,7 +4080,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   width: 100%;
 }
 
-.emotion-64 {
+.emotion-60 {
   background-color: #ffffff;
   border-color: #0a68c1;
   border-style: solid;
@@ -4135,16 +4101,16 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   cursor: pointer;
 }
 
-.emotion-64 svg {
+.emotion-60 svg {
   fill: #ffffff;
   color: #ffffff;
 }
 
-.emotion-64:active:not(:disabled) {
+.emotion-60:active:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-64:disabled {
+.emotion-60:disabled {
   background-color: #e4e4e4;
   border-color: none;
   border-style: none;
@@ -4152,18 +4118,18 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   box-shadow: none;
 }
 
-.emotion-64:disabled svg {
+.emotion-60:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-68 {
+.emotion-64 {
   width: 100%;
   margin-top: 12px;
   padding: 0 calc(16px / 2);
 }
 
-.emotion-67 {
+.emotion-63 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4186,7 +4152,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   justify-content: space-between;
 }
 
-.emotion-66 {
+.emotion-62 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -4198,29 +4164,29 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   color: #777777;
 }
 
-.emotion-66 svg {
+.emotion-62 svg {
   fill: #777777;
   color: #777777;
 }
 
-.emotion-66:disabled {
+.emotion-62:disabled {
   color: #c0c0c0;
 }
 
-.emotion-66:disabled svg {
+.emotion-62:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
 <section
     aria-label="audio player"
-    class="emotion-74"
+    class="emotion-70"
   >
     <div
-      class="emotion-73"
+      class="emotion-69"
     >
       <div
-        class="emotion-72"
+        class="emotion-68"
       >
         <audio
           data-testid="audio-element"
@@ -4240,242 +4206,226 @@ exports[`Audio Player recorded player renders as expected 1`] = `
           </div>
         </div>
         <div
-          class="emotion-63"
+          class="emotion-59"
         >
           <div
-            class="emotion-62"
+            class="emotion-58"
           >
             <div
-              class="emotion-20"
+              class="emotion-36"
             >
               <div
-                class="emotion-39"
+                class="emotion-35"
               >
                 <div
-                  class="emotion-38"
+                  class="emotion-34"
                 >
                   <div
-                    class="emotion-14"
+                    class="emotion-13"
                   >
                     <div
-                      class="emotion-13"
+                      class="emotion-12"
                     >
-                      <div
-                        class="emotion-12"
+                      <button
+                        aria-pressed="false"
+                        class="emotion-11"
+                        data-testid="audio-player-play-button"
+                        type="button"
                       >
-                        <button
-                          aria-pressed="false"
-                          class="emotion-11"
-                          data-testid="audio-player-play-button"
-                          type="button"
+                        <div
+                          class="emotion-10"
                         >
                           <div
-                            class="emotion-10"
+                            class="emotion-9"
                           >
                             <div
-                              class="emotion-9"
+                              aria-label="loading"
+                              class="emotion-8"
                             >
                               <div
-                                aria-label="loading"
-                                class="emotion-8"
+                                class="emotion-7"
                               >
                                 <div
-                                  class="emotion-7"
+                                  class="emotion-3"
                                 >
                                   <div
-                                    class="emotion-3"
+                                    class="emotion-2"
                                   >
                                     <div
-                                      class="emotion-2"
-                                    >
-                                      <div
-                                        class="emotion-1"
-                                      />
-                                    </div>
+                                      class="emotion-1"
+                                    />
                                   </div>
+                                </div>
+                                <div
+                                  class="emotion-6"
+                                >
                                   <div
-                                    class="emotion-6"
+                                    class="emotion-5"
                                   >
                                     <div
-                                      class="emotion-5"
-                                    >
-                                      <div
-                                        class="emotion-1"
-                                      />
-                                    </div>
+                                      class="emotion-1"
+                                    />
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </button>
-                      </div>
+                        </div>
+                      </button>
                     </div>
                   </div>
                   <div
-                    class="emotion-21"
+                    class="emotion-19"
                   >
                     <div
-                      class="emotion-20"
+                      class="emotion-18"
                     >
-                      <div
-                        class="emotion-19"
+                      <button
+                        class="emotion-17"
+                        data-testid="audio-player-backward"
+                        type="button"
                       >
-                        <button
-                          class="emotion-18"
-                          data-testid="audio-player-backward"
-                          type="button"
+                        <div
+                          class="emotion-10"
                         >
                           <div
-                            class="emotion-10"
+                            class="emotion-9"
                           >
-                            <div
-                              class="emotion-9"
+                            <svg
+                              aria-labelledby="mock-bui-1"
+                              class="emotion-14"
+                              focusable="false"
+                              viewBox="0 0 24 24"
                             >
-                              <svg
-                                aria-labelledby="mock-bui-1"
-                                class="emotion-15"
-                                focusable="false"
-                                viewBox="0 0 24 24"
+                              <title
+                                id="mock-bui-1"
                               >
-                                <title
-                                  id="mock-bui-1"
-                                >
-                                  rewind 10 seconds
-                                </title>
-                                <path
-                                  d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
-                                />
-                              </svg>
-                            </div>
+                                rewind 10 seconds
+                              </title>
+                              <path
+                                d="M12 5V1L7 6l5 5V7c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6H4c0 4.4 3.6 8 8 8s8-3.6 8-8-3.6-8-8-8zm-1.1 11H10v-3.3L9 13v-.7l1.8-.6h.1V16zm4.3-1.8c0 .3 0 .6-.1.8l-.3.6s-.3.3-.5.3-.4.1-.6.1-.4 0-.6-.1-.3-.2-.5-.3-.2-.3-.3-.6-.1-.5-.1-.8v-.7c0-.3 0-.6.1-.8l.3-.6s.3-.3.5-.3.4-.1.6-.1.4 0 .6.1c.2.1.3.2.5.3s.2.3.3.6.1.5.1.8v.7zm-.9-.8v-.5s-.1-.2-.1-.3-.1-.1-.2-.2-.2-.1-.3-.1-.2 0-.3.1l-.2.2s-.1.2-.1.3v2s.1.2.1.3.1.1.2.2.2.1.3.1.2 0 .3-.1l.2-.2s.1-.2.1-.3v-1.5z"
+                              />
+                            </svg>
                           </div>
-                        </button>
-                      </div>
+                        </div>
+                      </button>
                     </div>
                   </div>
                   <div
-                    class="emotion-14"
+                    class="emotion-13"
                   >
                     <div
-                      class="emotion-13"
+                      class="emotion-18"
                     >
-                      <div
-                        class="emotion-19"
+                      <button
+                        class="emotion-17"
+                        data-testid="audio-player-forward"
+                        type="button"
                       >
-                        <button
-                          class="emotion-18"
-                          data-testid="audio-player-forward"
-                          type="button"
+                        <div
+                          class="emotion-10"
                         >
                           <div
-                            class="emotion-10"
+                            class="emotion-9"
                           >
-                            <div
-                              class="emotion-9"
+                            <svg
+                              aria-labelledby="mock-bui-1"
+                              class="emotion-14"
+                              focusable="false"
+                              viewBox="0 0 24 24"
                             >
-                              <svg
-                                aria-labelledby="mock-bui-1"
-                                class="emotion-15"
-                                focusable="false"
-                                viewBox="0 0 24 24"
+                              <title
+                                id="mock-bui-1"
                               >
-                                <title
-                                  id="mock-bui-1"
-                                >
-                                  fast forward 10 seconds
-                                </title>
-                                <path
-                                  d="M0 0h24v24H0z"
-                                  fill="none"
-                                />
-                                <path
-                                  d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
-                                />
-                                <path
-                                  d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
-                                />
-                              </svg>
-                            </div>
+                                fast forward 10 seconds
+                              </title>
+                              <path
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                              <path
+                                d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"
+                              />
+                              <path
+                                d="M10.86 15.94v-4.27h-.09L9 12.3v.69l1.01-.31v3.26zM12.25 13.44v.74c0 1.9 1.31 1.82 1.44 1.82.14 0 1.44.09 1.44-1.82v-.74c0-1.9-1.31-1.82-1.44-1.82-.14 0-1.44-.09-1.44 1.82zm2.04-.12v.97c0 .77-.21 1.03-.59 1.03s-.6-.26-.6-1.03v-.97c0-.75.22-1.01.59-1.01.38-.01.6.26.6 1.01z"
+                              />
+                            </svg>
                           </div>
-                        </button>
-                      </div>
+                        </div>
+                      </button>
                     </div>
                   </div>
                   <div
-                    class="emotion-35"
+                    class="emotion-31"
                   >
                     <div
-                      class="emotion-34"
+                      class="emotion-18"
                     >
-                      <div
-                        class="emotion-19"
+                      <button
+                        class="emotion-29"
+                        data-testid="audio-player-skip-previous"
+                        disabled=""
+                        type="button"
                       >
-                        <button
-                          class="emotion-32"
-                          data-testid="audio-player-skip-previous"
-                          disabled=""
-                          type="button"
+                        <div
+                          class="emotion-10"
                         >
                           <div
-                            class="emotion-10"
+                            class="emotion-9"
                           >
-                            <div
-                              class="emotion-9"
+                            <svg
+                              aria-labelledby="mock-bui-1"
+                              class="emotion-14"
+                              focusable="false"
+                              viewBox="0 0 24 24"
                             >
-                              <svg
-                                aria-labelledby="mock-bui-1"
-                                class="emotion-15"
-                                focusable="false"
-                                viewBox="0 0 24 24"
+                              <title
+                                id="mock-bui-1"
                               >
-                                <title
-                                  id="mock-bui-1"
-                                >
-                                  previous
-                                </title>
-                                <path
-                                  d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
-                                />
-                                <path
-                                  d="M0 0h24v24H0z"
-                                  fill="none"
-                                />
-                              </svg>
-                            </div>
+                                previous
+                              </title>
+                              <path
+                                d="M6 6h2v12H6zm3.5 6l8.5 6V6z"
+                              />
+                              <path
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                            </svg>
                           </div>
-                        </button>
-                      </div>
+                        </div>
+                      </button>
                     </div>
                   </div>
                   <div
-                    class="emotion-37"
+                    class="emotion-33"
                   >
                     <div
-                      class="emotion-36"
+                      class="emotion-32"
                     />
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="emotion-34"
+              class="emotion-54"
             >
               <div
-                class="emotion-57"
+                class="emotion-53"
               >
                 <div
-                  class="emotion-55"
+                  class="emotion-51"
                   data-testid="volume-control"
                 >
                   <div
-                    class="emotion-46"
+                    class="emotion-42"
                     data-testid="min-label"
                   >
                     <div
-                      class="emotion-45"
+                      class="emotion-41"
                     >
                       <button
-                        class="emotion-44"
+                        class="emotion-40"
                         data-testid="mute-button"
                         tabindex="-1"
                         type="button"
@@ -4488,7 +4438,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-41"
+                              class="emotion-37"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -4513,7 +4463,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                     aria-orientation="horizontal"
                     aria-valuemax="1"
                     aria-valuemin="0"
-                    class="emotion-48"
+                    class="emotion-44"
                     data-testid="volume-control-track"
                     style="background: rgb(255, 255, 0);"
                     values="0.7"
@@ -4525,7 +4475,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                       aria-valuemin="0"
                       aria-valuenow="0.7"
                       aria-valuetext="volume level 7 of 10"
-                      class="emotion-47"
+                      class="emotion-43"
                       data-testid="volume-control-thumb"
                       draggable="false"
                       role="slider"
@@ -4535,14 +4485,14 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                     />
                   </div>
                   <div
-                    class="emotion-54"
+                    class="emotion-50"
                     data-testid="max-label"
                   >
                     <div
-                      class="emotion-45"
+                      class="emotion-41"
                     >
                       <button
-                        class="emotion-44"
+                        class="emotion-40"
                         data-testid="volumeup-button"
                         tabindex="-1"
                         type="button"
@@ -4555,7 +4505,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-41"
+                              class="emotion-37"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -4581,7 +4531,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                   </div>
                 </div>
                 <div
-                  class="emotion-56"
+                  class="emotion-52"
                   id="mock-bui-1"
                 >
                   Use the arrow keys to adjust volume
@@ -4589,27 +4539,27 @@ exports[`Audio Player recorded player renders as expected 1`] = `
               </div>
             </div>
             <div
-              class="emotion-13"
+              class="emotion-57"
             >
               <div
-                class="emotion-57"
+                class="emotion-53"
               >
                 <div
-                  class="emotion-59"
+                  class="emotion-55"
                 />
               </div>
             </div>
           </div>
         </div>
         <div
-          class="emotion-71"
+          class="emotion-67"
         >
           <div
-            class="emotion-69"
+            class="emotion-65"
             data-testid="audio-slider"
           >
             <div
-              class="emotion-65"
+              class="emotion-61"
               data-testid="audio-slider-track"
               style="background: rgb(255, 255, 0);"
               values="0"
@@ -4621,7 +4571,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                 aria-valuemin="0"
                 aria-valuenow="0"
                 aria-valuetext="Playback time: 0 seconds of 0 seconds"
-                class="emotion-64"
+                class="emotion-60"
                 data-testid="audio-slider-thumb"
                 draggable="false"
                 role="slider"
@@ -4631,13 +4581,13 @@ exports[`Audio Player recorded player renders as expected 1`] = `
               />
             </div>
             <div
-              class="emotion-68"
+              class="emotion-64"
             >
               <div
-                class="emotion-67"
+                class="emotion-63"
               >
                 <div
-                  class="emotion-66"
+                  class="emotion-62"
                   data-testid="min-label"
                 >
                   00:00
@@ -4646,7 +4596,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
             </div>
           </div>
           <div
-            class="emotion-56"
+            class="emotion-52"
             id="mock-bui-1"
           >
             Use the arrow keys to fast forward or rewind

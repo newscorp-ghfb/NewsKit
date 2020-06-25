@@ -16,6 +16,15 @@ RenderedComponentWithDisplayName.type = {
   displayName: 'ComponentWithDisplayName',
 };
 
+export const MdxComponentWithDisplayName: React.FC & {
+  props: {
+    mdxType: string;
+  };
+} = () => <div />;
+MdxComponentWithDisplayName.props = {
+  mdxType: 'ComponentWithDisplayName',
+};
+
 export const ComponentWithoutDisplayName: React.FC = () => <div />;
 
 export const ValidNode = <div />;

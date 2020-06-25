@@ -1,15 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Divider renders with default styles 1`] = `
+exports[`Divider renders as vertical 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  border-color: #f0f0f0;
-  border-width: 1px;
-  margin-top: 24px;
-  margin-right: 0;
-  margin-bottom: 24px;
-  margin-left: 0;
   border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-left-width: 1px;
+  display: inline-block;
+  height: 100%;
 }
 
 <hr
@@ -19,16 +20,16 @@ exports[`Divider renders with default styles 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Divider renders with props 1`] = `
+exports[`Divider renders with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  border-color: #cccccc;
-  border-width: 4px;
-  margin-top: 16px;
-  margin-right: 64px;
-  margin-bottom: 16px;
-  margin-left: 64px;
   border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
 }
 
 <hr

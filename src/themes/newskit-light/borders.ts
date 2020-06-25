@@ -1,7 +1,13 @@
-export const borderPrimitives = {
+const borderWidths = {
   borderWidth010: '1px',
   borderWidth020: '2px',
   borderWidth030: '4px',
+};
+
+export const borderPrimitives = {
+  ...borderWidths,
+
+  borderWidthDefault: borderWidths.borderWidth010,
 };
 
 export type BorderPrimitives = typeof borderPrimitives;

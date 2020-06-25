@@ -525,3 +525,240 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   </ul>
 </DocumentFragment>
 `;
+
+exports[`StackChild renders within a Stack, with align self property 1`] = `
+<DocumentFragment>
+  .emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  padding: 8px 12px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #535353;
+  border-width: 1px;
+  border-radius: 0;
+  color: #535353;
+}
+
+.emotion-3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-3 svg {
+  fill: #535353;
+  color: #535353;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.emotion-3:active:not(:disabled) {
+  border-width: 1px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+<div
+    class="emotion-18"
+  >
+    <div
+      class="emotion-5"
+    >
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-3"
+          data-testid="tag"
+        >
+          <div
+            class="emotion-2"
+          >
+            <div
+              class="emotion-1"
+            >
+              <span
+                class="emotion-0"
+              >
+                child 1
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-5"
+    >
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-3"
+          data-testid="tag"
+        >
+          <div
+            class="emotion-2"
+          >
+            <div
+              class="emotion-1"
+            >
+              <span
+                class="emotion-0"
+              >
+                child 2
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-5"
+    >
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-3"
+          data-testid="tag"
+        >
+          <div
+            class="emotion-2"
+          >
+            <div
+              class="emotion-1"
+            >
+              <span
+                class="emotion-0"
+              >
+                child 3
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
