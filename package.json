@@ -55,8 +55,8 @@
     "generate:component": "yarn generate:install && yarn generate:run"
   },
   "devDependencies": {
-    "@applitools/eyes-cypress": "^3.12.0",
-    "@applitools/eyes-storybook": "^3.8.0",
+    "@applitools/eyes-cypress": "^3.9.4",
+    "@applitools/eyes-storybook": "^3.3.0",
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
     "@commitlint/format": "8.0.0",

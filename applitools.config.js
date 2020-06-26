@@ -8,23 +8,6 @@ module.exports = {
     {width: 2880, height: 1800, name: 'chrome'},
     // TODO: Add back ie11 once we have fixed the IE11 related bugs (e.g https://nidigitalsolutions.jira.com/browse/PPDSC-676)
     // {width: 1024, height: 768, name: 'ie11'},
-    {
-      iosDeviceInfo: {
-        deviceName: 'iPhone XR',
-        screenOrientation: 'landscapeLeft',
-      },
-    },
-    {
-      iosDeviceInfo: {
-        deviceName: 'iPhone 11 Pro Max',
-      },
-    },
-    {
-      iosDeviceInfo: {
-        deviceName: 'iPad Pro (12.9-inch) (3rd generation)',
-        screenOrientation: 'landscapeLeft',
-      },
-    },
   ],
   waitBeforeScreenshot: 5000,
   concurrency: 20,
