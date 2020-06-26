@@ -1,6 +1,7 @@
 export * from './article-byline';
 export * from './article-content';
 export * from './article-headline';
+export * from './aspect-ratio';
 export * from './audio-player';
 export * from './block';
 export * from './button';
@@ -31,6 +32,7 @@ export * from './themes';
 export * from './title-bar';
 export * from './typography';
 export * from './utils/get-bui-id';
+export * from './utils/get-aspect-ratio';
 export * from './utils/responsive-helpers';
 export * from './utils/style';
 export * from './utils/style-types';

@@ -1,0 +1,286 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Aspect Ratio renders with height dimensions and 1:3 aspect ratio 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 33%;
+}
+
+.emotion-0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100px;
+  height: 300px;
+}
+
+<div
+    class="emotion-1"
+  >
+    <div
+      class="emotion-0"
+    >
+      aspect ratio text
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Aspect Ratio renders with height dimensions in px and 1:3 aspect ratio 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 33%;
+}
+
+.emotion-0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100px;
+  height: 300px;
+}
+
+<div
+    class="emotion-1"
+  >
+    <div
+      class="emotion-0"
+    >
+      aspect ratio text
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Aspect Ratio renders with no dimensions and 1:1 aspect ratio 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.emotion-1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 100%;
+}
+
+<div
+    class="emotion-1"
+  >
+    <div
+      class="emotion-0"
+    >
+      aspect ratio text
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Aspect Ratio renders with no dimensions and invalid aspect ratio 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.emotion-0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+<div
+    class="emotion-1"
+  >
+    <div
+      class="emotion-0"
+    >
+      aspect ratio text
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Aspect Ratio renders with no dimensions or aspect ratio 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.emotion-0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+<div
+    class="emotion-1"
+  >
+    <div
+      class="emotion-0"
+    >
+      aspect ratio text
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Aspect Ratio renders with number dimensions or aspect ratio 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 100%;
+}
+
+.emotion-0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+}
+
+<div
+    class="emotion-1"
+  >
+    <div
+      class="emotion-0"
+    >
+      aspect ratio text
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Aspect Ratio renders with string dimensions or aspect ratio 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.emotion-0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+
+<div
+    class="emotion-1"
+  >
+    <div
+      class="emotion-0"
+    >
+      aspect ratio text
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Aspect Ratio renders with width dimensions and 1:3 aspect ratio 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 33%;
+}
+
+.emotion-0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100px;
+  height: 300px;
+}
+
+<div
+    class="emotion-1"
+  >
+    <div
+      class="emotion-0"
+    >
+      aspect ratio text
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Aspect Ratio renders with width dimensions in px and 1:3 aspect ratio 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 33%;
+}
+
+.emotion-0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100px;
+  height: 300px;
+}
+
+<div
+    class="emotion-1"
+  >
+    <div
+      class="emotion-0"
+    >
+      aspect ratio text
+    </div>
+  </div>
+</DocumentFragment>
+`;

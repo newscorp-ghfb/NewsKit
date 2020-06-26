@@ -40,10 +40,6 @@ export interface ImageContainerProps {
   isLoading: boolean;
 }
 
-export interface GetDimensionsProp extends Pick<Image, 'height' | 'width'> {
-  loadingAspectRatio?: string;
-}
-
 export interface ImageProps extends Image, CommonProps {
   hideLoadingIcon?: boolean;
   loadingAspectRatio?: string;

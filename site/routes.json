@@ -97,6 +97,11 @@
         "id": "/components/article-headline"
       },
       {
+        "title": "Aspect Ratio",
+        "page": true,
+        "id": "/components/aspect-ratio"
+      },
+      {
         "title": "Audio Player",
         "page": true,
         "id": "/components/audio-player"

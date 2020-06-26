@@ -214,7 +214,7 @@ exports[`Radio Player default player 1`] = `
 .emotion-4 {
   position: relative;
   width: 100%;
-  padding-top: 100.00%;
+  padding-top: 100%;
   height: 0;
 }
 
@@ -2104,7 +2104,7 @@ exports[`Radio Player live player 1`] = `
 .emotion-4 {
   position: relative;
   width: 100%;
-  padding-top: 100.00%;
+  padding-top: 100%;
   height: 0;
 }
 
@@ -3945,7 +3945,7 @@ exports[`Radio Player player with popout link 1`] = `
 .emotion-4 {
   position: relative;
   width: 100%;
-  padding-top: 100.00%;
+  padding-top: 100%;
   height: 0;
 }
 
@@ -6099,7 +6099,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 .emotion-4 {
   position: relative;
   width: 100%;
-  padding-top: 100.00%;
+  padding-top: 100%;
   height: 0;
 }
 

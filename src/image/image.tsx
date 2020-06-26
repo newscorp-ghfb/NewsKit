@@ -1,7 +1,8 @@
 import React, {useState, useEffect, useRef, useCallback} from 'react';
 import dequal from 'dequal';
 import {Placeholder} from '../icons';
-import {ImageProps, GetDimensionsProp} from './types';
+import {ImageProps} from './types';
+import {getAspectRatioStyles} from '../utils/get-aspect-ratio';
 import {
   ImageContainer,
   LoadingContainer,
@@ -21,50 +22,6 @@ export const useClientSide = (
   });
 };
 
-const getUnit = (value: number, prop?: string) =>
-  (prop && prop.replace(value.toString(), '')) || 'px';
-
-const getDimensions = ({
-  loadingAspectRatio,
-  height: $height,
-  width: $width,
-}: GetDimensionsProp) => {
-  const widthVal = parseFloat($width!);
-  const heightVal = parseFloat($height!);
-  if (!Number.isNaN(widthVal) && !Number.isNaN(heightVal)) {
-    return {
-      paddingTop: `${((widthVal / heightVal) * 100).toFixed(2)}%`,
-      $height: `${heightVal}${getUnit(heightVal, $height)}`,
-      $width: `${widthVal}${getUnit(widthVal, $width)}`,
-    };
-  }
-  if (loadingAspectRatio && loadingAspectRatio.includes(':')) {
-    const [x, y] = loadingAspectRatio.split(':').map(parseFloat);
-    if (!Number.isNaN(x) && !Number.isNaN(y)) {
-      const paddingTop = `${((x / y) * 100).toFixed(2)}%`;
-      if (!Number.isNaN(widthVal)) {
-        return {
-          paddingTop,
-          $width: `${widthVal}${getUnit(widthVal, $width)}`,
-          $height: `${((widthVal / x) * y).toFixed(2)}${getUnit(
-            widthVal,
-            $width,
-          )}`,
-        };
-      }
-      if (!Number.isNaN(heightVal)) {
-        return {
-          paddingTop,
-          $width: `${(heightVal / y) * x}${getUnit(widthVal, $width)}`,
-          $height: `${heightVal}${getUnit(heightVal, $height)}`,
-        };
-      }
-      return {paddingTop, $height, $width};
-    }
-  }
-  return {$height, $width};
-};
-
 const ImageComponent: React.FC<ImageProps> = ({
   width,
   height,
@@ -79,8 +36,8 @@ const ImageComponent: React.FC<ImageProps> = ({
     isLoading,
     setIsLoading,
   ]);
-  const {paddingTop, ...dimensions} = getDimensions({
-    loadingAspectRatio,
+  const {paddingTop, width: $width, height: $height} = getAspectRatioStyles({
+    aspectRatio: loadingAspectRatio,
     height,
     width,
   });
@@ -104,7 +61,8 @@ const ImageComponent: React.FC<ImageProps> = ({
       )}
       <StyledImage
         {...props}
-        {...dimensions}
+        $width={$width}
+        $height={$height}
         ref={imageRef}
         onLoad={onLoad}
         isLoading={isLoading}
