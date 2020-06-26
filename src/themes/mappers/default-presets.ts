@@ -23,26 +23,6 @@ export const defaultPresets = {
       },
     },
   },
-  iconButton: {
-    small: {
-      stylePreset: 'iconButtonDefault',
-      paddingPreset: 'spaceInset020',
-      width: 'sizing060',
-      height: 'sizing060',
-    },
-    medium: {
-      stylePreset: 'iconButtonDefault',
-      paddingPreset: 'spaceInset030',
-      width: 'sizing080',
-      height: 'sizing080',
-    },
-    large: {
-      stylePreset: 'iconButtonDefault',
-      paddingPreset: 'spaceInset040',
-      width: 'sizing090',
-      height: 'sizing090',
-    },
-  },
   button: {
     small: {
       typePreset: 'buttonSmall',
@@ -70,6 +50,26 @@ export const defaultPresets = {
       minHeight: 'sizing090',
       iconSize: 'iconSize030',
       space: 'sizing020',
+    },
+  },
+  iconButton: {
+    small: {
+      stylePreset: 'iconButtonDefault',
+      paddingPreset: 'spaceInset020',
+      width: 'sizing060',
+      height: 'sizing060',
+    },
+    medium: {
+      stylePreset: 'iconButtonDefault',
+      paddingPreset: 'spaceInset030',
+      width: 'sizing080',
+      height: 'sizing080',
+    },
+    large: {
+      stylePreset: 'iconButtonDefault',
+      paddingPreset: 'spaceInset040',
+      width: 'sizing090',
+      height: 'sizing090',
     },
   },
   flag: {
@@ -114,6 +114,18 @@ export const defaultPresets = {
       minHeight: 'sizing070',
       iconSize: 'iconSize020',
       space: 'sizing010',
+    },
+  },
+  unorderedList: {
+    spaceStack: 'space040',
+    content: {
+      stylePreset: 'unorderedListItemContent',
+      typePreset: 'unorderedListItemContent',
+    },
+    marker: {
+      stylePreset: 'unorderedListItemMarker',
+      spaceInline: 'space020',
+      size: 'iconSize005',
     },
   },
   shareBar: {

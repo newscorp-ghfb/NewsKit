@@ -1,4 +1,6 @@
 import * as React from 'react';
+import {SvgProps} from './types';
+import {Theme} from '../themes';
 
 export * from './bookmark';
 export * from './circle';
@@ -26,4 +28,8 @@ export * from './skip-next';
 export * from './skip-previous';
 export * from './popout';
 export * from './types';
-export type IconComponent = React.ComponentType;
+export type IconComponent = React.ComponentType<
+  SvgProps & {
+    theme?: Theme | undefined;
+  }
+>;

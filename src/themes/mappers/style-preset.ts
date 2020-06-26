@@ -1020,6 +1020,31 @@ export const createStylePresets = ({
   };
 
   //
+  // Lists
+  //
+
+  presets.listItemContent = {
+    base: {
+      color: colorPrimitives.inkBase,
+    },
+  };
+
+  presets.unorderedListItemMarker = {
+    base: {
+      iconColor: colorPrimitives.inkBase,
+    },
+  };
+
+  presets.orderedListItemNumber = {
+    base: {
+      iconColor: colorPrimitives.inkBase,
+    },
+  };
+
+  presets.unorderedListItemContent = presets.listItemContent;
+  presets.orderedListItemContent = presets.listItemContent;
+
+  //
   // Divider
   //
 

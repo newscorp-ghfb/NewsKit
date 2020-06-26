@@ -306,6 +306,11 @@ export const createTypePresets = (p: FontPrimitives) => {
     standfirst: {
       ...baseTypePresets.subhead010,
     },
+
+    // Unordered list
+    unorderedListItemContent: {
+      ...baseTypePresets.body010,
+    },
   };
 };
 

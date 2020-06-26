@@ -66,7 +66,7 @@ const SectionNavigation = React.forwardRef<
   >
     <ListContainer data-testid="section-navigation">
       {sections.map(section => (
-        <ListItem>
+        <ListItem key={section}>
           <Link
             href={`#${section.toLowerCase().replace(/\s+/g, '-')}`}
             stylePreset="linkSectionNavigation"

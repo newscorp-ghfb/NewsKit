@@ -11,6 +11,7 @@ interface StyledUlProps {
   display?: DisplayProperty;
   flexGrow?: number;
 }
+
 const InternalUl = styled.ul<InteralUlProps>`
   margin: 0;
   padding: 0;
@@ -34,5 +35,5 @@ export const StyledOl: React.FC<StyledUlProps> = ({display, ...props}) => (
 );
 
 export const StyledLi = styled.li`
-  list-style-type: none;
+  list-style: none;
 `;

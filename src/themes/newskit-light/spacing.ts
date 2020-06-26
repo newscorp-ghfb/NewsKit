@@ -18,6 +18,7 @@ export type SizingKeys = keyof Sizing;
 export type Sizing = typeof sizingPrimitives;
 
 export const iconSizes = {
+  iconSize005: sizingPrimitives.sizing020,
   iconSize010: sizingPrimitives.sizing040,
   iconSize020: sizingPrimitives.sizing050,
   iconSize030: sizingPrimitives.sizing060,

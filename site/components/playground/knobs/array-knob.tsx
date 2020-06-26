@@ -56,9 +56,13 @@ const renderRow = (
 ) => {
   if (typeof value === 'object') {
     return Object.entries(value as Record<string, string>).map(([k, v]) => (
-      <LegacyBlock display="flex" flexGrow={1} maxWidth="350px">
+      <LegacyBlock
+        display="flex"
+        flexGrow={1}
+        maxWidth="350px"
+        key={label + k + length}
+      >
         <InputKnob
-          key={label + k + length}
           label={k}
           labelVisible={!index}
           value={v}
@@ -129,7 +133,7 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
 
           const row = renderRow(label, value, i, arr.length, update);
           return row ? (
-            <LegacyBlock display="flex">
+            <LegacyBlock display="flex" key={label + value}>
               {row}
               <LegacyBlock
                 display="flex"

@@ -17,6 +17,7 @@ export interface TextBlockProps {
 }
 
 const StyledBlock = styled.p<Overrides>`
+  margin: 0;
   padding: 1px 0;
   ${getTypePresetFromTheme(undefined, 'typePreset', {withCrop: true})}
   ${getStylePresetFromTheme(undefined, 'stylePreset')}

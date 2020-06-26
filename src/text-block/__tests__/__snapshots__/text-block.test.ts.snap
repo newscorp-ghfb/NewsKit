@@ -3,6 +3,7 @@
 exports[`TextBlock renders as h2 html tag 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
   padding: 1px 0;
   display: block;
 }
@@ -16,6 +17,7 @@ exports[`TextBlock renders as h2 html tag 1`] = `
 exports[`TextBlock renders as span html tag 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
   padding: 1px 0;
 }
 
@@ -28,6 +30,7 @@ exports[`TextBlock renders as span html tag 1`] = `
 exports[`TextBlock renders with custom style preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
   padding: 1px 0;
   color: #2F75D7;
 }
@@ -53,6 +56,7 @@ exports[`TextBlock renders with custom style preset 1`] = `
 exports[`TextBlock renders with custom type preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -89,6 +93,7 @@ exports[`TextBlock renders with custom type preset 1`] = `
 exports[`TextBlock renders with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
   padding: 1px 0;
 }
 
