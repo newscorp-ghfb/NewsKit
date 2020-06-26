@@ -34,7 +34,6 @@ module.exports = class extends Generator {
     let isInserted = false;
     const exportAllDeclaration = t.exportAllDeclaration(t.stringLiteral(`./${componentNameLower}`));
 
-   
     traverse(ast, {
       ExportDeclaration(path) {
         lastExport = path;
@@ -52,6 +51,7 @@ module.exports = class extends Generator {
 
     
     });
+
     // Generate actually source code from modified AST
     const {code} = generate(ast, { /* Options */ }, source);
     // Write source back to file
@@ -93,10 +93,46 @@ module.exports = class extends Generator {
         componentFileName: componentNameLower,
       },
     );
-  /* 
-    this.log(`Updating files into:`);
-      this.fs.write(this.destinationPath('gary.ts'), `export * from './${componentNameLower}';`); */
+
+    this.log(`Writing files into: ${this.destinationRoot('../site')}`);
+    
+    this.fs.copyTpl(
+      this.templatePath('./documentation-page.mdx'),
+      this.destinationPath(
+        `./pages/components/${componentNameLower}.mdx`,
+      ),
+      {
+        componentName: componentNameCapitalized,
+        componentFileName: componentNameLower,
+      },
+    );
+
+
+    const routes = JSON.parse(this.fs.read(this.destinationPath('routes.json')));
+    const componentMenuObject = routes.filter(obj => {
+      return obj.title ===  "Components";  
+    })
+    const componentPages = componentMenuObject[0].subNav
+    const templateObject = {
+      title: componentNameCapitalized,
+      page: true,
+      id: `/components/${componentNameLower}`
+    }
+    componentPages.push(templateObject)
+
+    function compare( a, b ) {
+      if ( a.title < b.title ){
+        return -1;
+      }
+      if ( a.title > b.title ){
+        return 1;
+      }
+      return 0;
+    }
+    
+   const orderedObject = componentPages.sort( compare );
+    const resultRoutes = JSON.stringify(routes,null,"  ");
+    this.fs.write(this.destinationPath('routes.json'), resultRoutes);
   }
-  
   
 };

@@ -8,9 +8,10 @@ text-transform: ${({uppercase}) => uppercase ? `uppercase` : null };
 `;
   
 export const  <%= componentName %>: React.FC<<%= componentName %>Props>  = (props) => {
+  const {children="Hello World"} = props
   return (
     <Container {...props}>
-    <div>Hello NewsKit!</div>
+      <div>{children}</div>
     </Container>
   );
 }

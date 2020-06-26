@@ -1,0 +1,48 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {Prop} from '../../components/prop';
+import {TextBoxSwatch} from '../../components/theming-values/colors';
+import {LegacyBlock} from '../../components/legacy-block';
+
+import {<%= componentName %>} from 'newskit';
+
+export default Layout;
+
+# <%= componentName %>
+
+## Overview
+
+
+
+### Usage
+
+
+### Theming
+
+## Props
+
+<LegacyBlock marginTop="sizing040">
+  <Prop name="uppercase" type="boolean">
+    If provided, this prop will transform the text element into uppercase.
+  </Prop>
+    <Prop name="overrides" type="object">
+    If provided, this prop will  override the default preset value.
+  </Prop>
+  
+</LegacyBlock>
+
+## Playground
+
+<Playground
+  componentName="<%= componentName %>"
+  newskitPath="/<%= componentFileName %>"
+  component={<%= componentName %>}
+  knobs={[
+    {
+      name: 'Uppercase',
+      propName: 'uppercase',
+      type: 'boolean',
+      value: false,
+    },
+  ]}
+/>

@@ -15,12 +15,17 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading><%= componentName %></StorybookHeading>
+          <StorybookHeading><%= componentName  %></StorybookHeading>
           <Container>
-             <<%= componentName %> />
+             <<%= componentName %>  />
           </Container>
           <Container>
              <<%= componentName %> uppercase />
+          </Container>
+          <Container>
+             <<%= componentName %>> 
+               this is a text 
+             </<%= componentName %>>
           </Container>
         </React.Fragment>
       ),
