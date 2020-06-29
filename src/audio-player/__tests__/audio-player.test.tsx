@@ -141,8 +141,10 @@ describe('Audio Player', () => {
   test('recorded player renders and behaves as expected', () => {
     const onNextTrack = jest.fn();
     const onPreviousTrack = jest.fn();
+    const onPlay = jest.fn();
     const props = {
       ...recordedAudioProps,
+      onPlay,
       onNextTrack,
       onPreviousTrack,
     };
@@ -279,6 +281,8 @@ describe('Audio Player', () => {
     fireEvent.timeUpdate(audioElement);
     fireEvent.click(getByTestId('audio-player-backward'));
     expect(audioElement.currentTime).toEqual(0);
+
+    expect(onPlay).toHaveBeenCalled();
   });
 
   test('disablePreviousTrack prop behaves as expected', () => {

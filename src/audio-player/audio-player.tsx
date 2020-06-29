@@ -45,6 +45,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     children,
     live = false,
     captionSrc,
+    onPlay: onPlayProp,
     ...restProps
   } = props;
 
@@ -143,6 +144,13 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     setIsPrevTrackBtnDisabled,
   });
 
+  const handleOnPlay = (e: React.SyntheticEvent<HTMLAudioElement, Event>) => {
+    if (onPlayProp) {
+      onPlayProp(e);
+    }
+    onPlay();
+  };
+
   const theme = useTheme();
   const renderTrack: SliderProps['renderTrack'] = useCallback(
     ({props: trackProps, children: trackChildren, isDragged}) => {
@@ -222,7 +230,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
           src={src}
           onCanPlay={onCanPlay}
           onWaiting={onWaiting}
-          onPlay={onPlay}
+          onPlay={handleOnPlay}
           onPause={onPause}
           onVolumeChange={onVolumeChange}
           onDurationChange={onDurationChange}

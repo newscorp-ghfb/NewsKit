@@ -38,6 +38,22 @@ export default {
       ),
     },
     {
+      name: 'recorded-audio-player-with-onPlay',
+      type: 'story',
+      component: () => (
+        <PlayerContainer>
+          <AudioPlayer
+            src="https://sphinx.acast.com/storiesofourtimes/johnpienaar-istrackandtraceworking-/media.mp3"
+            autoPlay
+            preload="auto"
+            disableNextTrack
+            disablePreviousTrack
+            onPlay={() => {}}
+          />
+        </PlayerContainer>
+      ),
+    },
+    {
       name: 'recorded-with-popout-link',
       type: 'story',
       component: () => (
