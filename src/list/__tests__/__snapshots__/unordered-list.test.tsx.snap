@@ -2,7 +2,7 @@
 
 exports[`UnorderedList renders different types of children 1`] = `
 <DocumentFragment>
-  .emotion-10 {
+  .emotion-12 {
   margin: 0;
   padding: 0;
   display: block;
@@ -57,7 +57,8 @@ exports[`UnorderedList renders different types of children 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-6 {
+.emotion-8 {
+  display: inline-block;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   -webkit-transition-property: color;
@@ -69,20 +70,83 @@ exports[`UnorderedList renders different types of children 1`] = `
   color: #2F75D7;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-8 svg {
+  fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-6:visited:not(:disabled) {
+.emotion-8:hover:not(:disabled) svg {
+  fill: #2F75D7;
+  color: #2F75D7;
+}
+
+.emotion-8:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-8:active:not(:disabled) svg {
+  fill: #2F75D7;
+  color: #2F75D7;
+}
+
+.emotion-8:visited:not(:disabled) {
   color: #903D91;
 }
 
+.emotion-8:visited:not(:disabled) svg {
+  fill: #903D91;
+  color: #903D91;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-8 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+  margin-top: calc(-4px/2);
+  margin-bottom: calc(-4px/2);
+}
+
+.emotion-6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+  margin-top: calc(4px/2);
+  margin-bottom: calc(4px/2);
+}
+
 <ul
-    class="emotion-10"
+    class="emotion-12"
   >
     <li
       class="emotion-2"
@@ -120,10 +184,18 @@ exports[`UnorderedList renders different types of children 1`] = `
           class="emotion-0"
         >
           <a
-            class="emotion-6"
+            class="emotion-8"
             href="http://localhost:6006"
           >
-            Link component
+            <span
+              class="emotion-7"
+            >
+              <span
+                class="emotion-6"
+              >
+                Link component
+              </span>
+            </span>
           </a>
         </p>
       </div>

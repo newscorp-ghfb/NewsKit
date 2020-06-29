@@ -33,6 +33,11 @@ const overrideStyles = (primitives: PrimitiveOverrides) => ({
       color: primitives.colors.inkLink,
     },
   },
+  linkLogo: {
+    base: {
+      iconColor: primitives.colors.inkBase,
+    },
+  },
 });
 
 export const newsKitLight = createTheme('newskit-light', {

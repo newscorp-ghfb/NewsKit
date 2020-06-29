@@ -33,6 +33,7 @@ export interface StackProps extends Partial<CommonStackProps> {
   wrap?: boolean | 'wrap' | 'nowrap';
   list?: boolean;
   ariaLabel?: string;
+  as?: keyof JSX.IntrinsicElements;
 }
 
 export interface ChildProps

@@ -87,18 +87,22 @@ const SiteFooter: React.FC = () => (
         <FooterMenu>
           <Hidden xs sm md lg>
             <FooterLink>
-              <Link href="/cookies" noUnderline>
+              <Link href="/cookies" noUnderline external={false}>
                 Cookies
               </Link>
             </FooterLink>
             <FooterLink>
-              <Link href="/terms" noUnderline>
+              <Link href="/terms" noUnderline external={false}>
                 Terms
               </Link>
             </FooterLink>
           </Hidden>
           <FooterLink>
-            <ConsentSettingsLink privacyManagerId="139011" noUnderline>
+            <ConsentSettingsLink
+              privacyManagerId="139011"
+              noUnderline
+              external={false}
+            >
               Privacy
             </ConsentSettingsLink>
           </FooterLink>
@@ -107,13 +111,14 @@ const SiteFooter: React.FC = () => (
               href="https://www.newscareers.co.uk/"
               target="_blank"
               noUnderline
+              external={false}
             >
               Careers
             </Link>
           </FooterLink>
           <Hidden xs sm md lg>
             <FooterLink>
-              <Link href="/" noUnderline>
+              <Link href="/" noUnderline external={false}>
                 <GitHub size="iconSize020" />
               </Link>
             </FooterLink>

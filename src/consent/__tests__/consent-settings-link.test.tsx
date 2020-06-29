@@ -88,7 +88,9 @@ describe('ConsentSettingsLink', () => {
         privacyManagerId,
         children: 'Some Custom Link Text With Styles',
         noUnderline: true,
-        font: 'body010',
+        overrides: {
+          typePreset: 'body010',
+        },
       });
       expect(fragment).toMatchSnapshot();
     });

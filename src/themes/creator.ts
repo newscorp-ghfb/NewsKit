@@ -62,6 +62,7 @@ export interface Icons {
   SkipNext?: ColourableIcon;
   SkipPrevious?: ColourableIcon;
   Popout?: ColourableIcon;
+  Launch?: ColourableIcon;
 }
 
 export interface Theme extends Record<string, unknown> {

@@ -11,7 +11,14 @@ import {
 } from './styled';
 import {useTheme, Theme} from '../themes';
 import {StackChild, AlignSelfValues} from '../stack-child';
-import {hasMatchingDisplayNameWith} from '../utils/component';
+import {hasMatchingDisplayNameWith, as as asUtil} from '../utils/component';
+
+const asInline = (inline?: StackProps['inline'], as?: StackProps['as']) => {
+  if (as) {
+    return asUtil(as);
+  }
+  return inline ? asUtil(as || 'span') : null;
+};
 
 const wrapChild = (
   theme: Theme,
@@ -19,6 +26,8 @@ const wrapChild = (
   flow: NonNullable<StackProps['flow']>,
   wrap: NonNullable<StackProps['wrap']>,
   list: StackProps['list'],
+  inline: NonNullable<StackProps['inline']>,
+  as?: StackProps['as'],
 ) => (
   child: React.ReactNode & {
     props?: {
@@ -36,12 +45,13 @@ const wrapChild = (
 
   // eslint-disable-next-line no-use-before-define
   if (hasMatchingDisplayNameWith(child, Stack)) {
+    const stack = <Stack inline={inline} as={as} flexGrow {...child.props} />;
     return list ? (
       <StyledMasterContainerListElement flexGrow {...child.props}>
-        <Stack flexGrow {...child.props} />
+        {stack}
       </StyledMasterContainerListElement>
     ) : (
-      <Stack flexGrow {...child.props} />
+      stack
     );
   }
 
@@ -68,7 +78,7 @@ const wrapChild = (
         : StyledChildContainer;
 
       return (
-        <Container {...childProps}>
+        <Container {...asInline(inline, as)} {...childProps}>
           {hasMatchingDisplayNameWith(child, StackChild) && child.props.children
             ? child.props.children
             : child}
@@ -88,6 +98,7 @@ export const Stack: React.FC<StackProps> = ({
   flexShrink = false,
   flowReverse = false,
   inline = false,
+  as,
   list,
   ariaLabel,
   children,
@@ -100,6 +111,7 @@ export const Stack: React.FC<StackProps> = ({
 
   return (
     <StyledContainer
+      {...asInline(inline, as)}
       space={space}
       flow={flow}
       $wrap={wrap}
@@ -112,7 +124,10 @@ export const Stack: React.FC<StackProps> = ({
       {...props}
     >
       {children &&
-        React.Children.map(children, wrapChild(theme, space, flow, wrap, list))}
+        React.Children.map(
+          children,
+          wrapChild(theme, space, flow, wrap, list, inline, as),
+        )}
     </StyledContainer>
   );
 };

@@ -31,7 +31,6 @@ const LogoSvg = styled.svg<StyledLogoPorps>`
   fill: ${getColorFromTheme('inkBase', '$color')};
   color: ${getColorFromTheme('inkBase', '$color')};
   width: ${getSizingFromTheme(undefined, 'size')};
-  height: ${getSizingFromTheme(undefined, 'size')};
 `;
 
 const NewsKitLogo = React.forwardRef<HTMLDivElement, NewsKitLogoPorps>(

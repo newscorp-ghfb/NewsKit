@@ -235,7 +235,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 
 exports[`TitleBar Should display correctly with action item as: Link 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -280,18 +280,19 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   margin: 0 0 16px 0;
 }
 
-.emotion-3 {
+.emotion-5 {
   padding-left: 24px;
   display: none;
 }
 
 @media screen and (min-width:480px) {
-  .emotion-3 {
+  .emotion-5 {
     display: block;
   }
 }
 
-.emotion-2 {
+.emotion-4 {
+  display: inline-block;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   -webkit-transition-property: color;
@@ -303,20 +304,83 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   color: #2F75D7;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-4 svg {
+  fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-2:visited:not(:disabled) {
+.emotion-4:hover:not(:disabled) svg {
+  fill: #2F75D7;
+  color: #2F75D7;
+}
+
+.emotion-4:active:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-4:active:not(:disabled) svg {
+  fill: #2F75D7;
+  color: #2F75D7;
+}
+
+.emotion-4:visited:not(:disabled) {
   color: #903D91;
 }
 
+.emotion-4:visited:not(:disabled) svg {
+  fill: #903D91;
+  color: #903D91;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-4 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+  margin-top: calc(-4px/2);
+  margin-bottom: calc(-4px/2);
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+  margin-top: calc(4px/2);
+  margin-bottom: calc(4px/2);
+}
+
 <div
-    class="emotion-4"
+    class="emotion-6"
   >
     <div
       class="emotion-1"
@@ -328,13 +392,21 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
       </h2>
     </div>
     <div
-      class="emotion-3"
+      class="emotion-5"
     >
       <a
-        class="emotion-2"
+        class="emotion-4"
         href="/"
       >
-        Link
+        <span
+          class="emotion-3"
+        >
+          <span
+            class="emotion-2"
+          >
+            Link
+          </span>
+        </span>
       </a>
     </div>
   </div>

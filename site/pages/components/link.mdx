@@ -2,6 +2,7 @@ import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
+import {CodeFromFile} from '../../components/code';
 import {LegacyBlock} from '../../components/legacy-block';
 
 import {Link} from 'newskit';
@@ -41,17 +42,44 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
     Passed to the href attribute of the rendered anchor element. The provided
     URL or fragment identifier will be loaded when the link is clicked.
   </Prop>
-  <Prop name="font" type="TypePresetKeys">
-    If provided, uses that type preset. Without this, none is set and the
-    underlying anchor element will inherit its parent font properties.
-  </Prop>
-  <Prop name="color" type="ColorKeys">
-    If provided, overrides the text color of the link including psuedo
-    selectors. Overriding individual pseudo selectors can be done via a theme.
-  </Prop>
   <Prop name="noUnderline" type="boolean">
     If provided, determines if the link will be underlined.
   </Prop>
+  <Prop name="external" type="boolean">
+    This prop overrides the rendering of the "external" icon next to the Link body content.
+    Whenever a Link component renders, it automatically checks if the passed href is external or internal to the website where the Link is used.
+    If the href is external, an icon indicating this will be rendered to the right.
+    In order to either stop this, or to force this to happen, pass this prop with a value of true or false.
+  </Prop>
+  <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component and provided elements.
+    Refer to the defaults below for the object structure:
+    
+    <Prop name="stylePreset" type="string" default="linkInline">
+      If provided, this overrides the style preset applied to the Link.
+    </Prop>
+    <Prop name="typePreset" type="string" default="undefined">
+      If provided, this overrides the type preset applied to the Link.
+    </Prop>
+    <Prop name="space" type="SizingKeys">
+     The "space" token refers to the spacing between child items. Only applicable if the Link children contains more than one element, or the external icon is rendered.
+    </Prop>
+    <Prop name="externalIcon" type="object">
+      <Prop name="size" type="IconSizeKeys">
+        Allows you to override the default size of the External icon. The value of this prop has to be one of the icon size tokens.
+        E.g: "iconSize030". For more tokens please refer to the <Link href="/foundations/icons">foundations/icons page</Link>.
+      </Prop>
+    </Prop>
+       Refer to the defaults below for the object structure:
+       <CodeFromFile path="examples/default-presets/link.tsx" />
+      For more information about how to apply overrides to a component please refer to the <Link href="/theming/override-default-presets">Override default preset</Link> page.
+  </Prop>
+
+  ### Default HTML props 
+  All the native HTML attributes which an anchor element can take, can also be passed.
+  E.g:  ```<Link aria-label='NewsKit staging website' href="http://newskit.staging-news.co.uk/">```
+
+
 </LegacyBlock>
 
 ## Playground
@@ -72,50 +100,23 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
       value: 'http://example.com',
     },
     {
-      name: 'Color',
-      propName: 'color',
+      name: 'external',
+      propName: 'external',
       options: [
-        {
-          label: 'undefined',
-          value: undefined,
-          isDefault: true,
-        },
-        {
-          label: 'inkLink',
-          value: 'inkLink',
-        },
-        {
-          label: 'semanticNegative030',
-          value: 'semanticNegative030',
-        },
-        {
-          label: 'semanticPositive030',
-          value: 'semanticPositive030',
-        },
-      ],
-    },
-    {
-      name: 'Font',
-      propName: 'font',
-      options: [
-        {
-          label: 'undefined',
-          value: undefined,
-          isDefault: true,
-        },
-        {
-          label: 'body010',
-          value: 'body010',
-        },
-        {
-          label: 'body020',
-          value: 'body020',
-        },
-        {
-          label: 'body030',
-          value: 'body030',
-        },
-      ],
+          {
+            label: 'default',
+            value: undefined,
+            isDefault: true
+          },
+          {
+            label: 'true',
+            value: true
+          },
+          {
+            label: 'false',
+            value: false
+          }
+        ]
     },
     {
       name: 'No Underline',
@@ -140,6 +141,26 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
 ### Styling
 
 ### Accessibility
+
+#### Aria-label 
+By default there is no aria label set in the Link component and the text inside the anchor will be read by the Screen Reader
+But bear in mind that, if the text is not descriptive enough, an aria label will be necessary to understand where the link is taking the user to.
+
+E.g:
+  ```
+  <a href=* aria-label=”Films list of Harry Potter”>Harry Potter<a/> 
+  ```
+
+#### Underline styling 
+If the underline style is removed from a link, which has already a distinct color + underline combination, bear in mind some other indicator has to be added.
+This could be the case when overriding presets.
+
+WCAG 2.0 has 2 additional requirements for body text links that are not underlined by default:
+The link text must have a 3:1 contrast ratio from the surrounding non-link text.
+The link must present a "non-color designator" (typically the introduction of the underline) on both mouse hover and keyboard focus.
+These two requirements help ensure that all users can differentiate links from non-link text, even if they have low vision, color deficiency, or have overridden page colors.
+
+https://webaim.org/techniques/hypertext/link_text#underlining
 
 #### Colour
 

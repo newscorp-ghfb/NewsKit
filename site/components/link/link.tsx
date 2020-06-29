@@ -3,14 +3,9 @@ import LinkNext from 'next/link';
 import {Link as LinkNewskit} from 'newskit';
 import {LinkProps} from './types';
 
-export const Link: React.FC<LinkProps> = ({
-  href,
-  noUnderline,
-  children,
-  ...rest
-}) => (
+export const Link: React.FC<LinkProps> = ({href, children, ...rest}) => (
   <LinkNext href={href}>
-    <LinkNewskit href={href} noUnderline={noUnderline} {...rest}>
+    <LinkNewskit href={href} {...rest}>
       {children}
     </LinkNewskit>
   </LinkNext>

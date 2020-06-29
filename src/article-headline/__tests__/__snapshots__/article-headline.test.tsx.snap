@@ -420,7 +420,17 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
   }
 }
 
+.emotion-0 svg {
+  fill: #2F75D7;
+  color: #2F75D7;
+}
+
 .emotion-0:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-0:hover:not(:disabled) svg {
+  fill: #2F75D7;
   color: #2F75D7;
 }
 
@@ -428,7 +438,17 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
   color: #2F75D7;
 }
 
+.emotion-0:active:not(:disabled) svg {
+  fill: #2F75D7;
+  color: #2F75D7;
+}
+
 .emotion-0:visited:not(:disabled) {
+  color: #903D91;
+}
+
+.emotion-0:visited:not(:disabled) svg {
+  fill: #903D91;
   color: #903D91;
 }
 
@@ -525,7 +545,17 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
   }
 }
 
+.emotion-1 svg {
+  fill: #2F75D7;
+  color: #2F75D7;
+}
+
 .emotion-1:hover:not(:disabled) {
+  color: #2F75D7;
+}
+
+.emotion-1:hover:not(:disabled) svg {
+  fill: #2F75D7;
   color: #2F75D7;
 }
 
@@ -533,7 +563,17 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
   color: #2F75D7;
 }
 
+.emotion-1:active:not(:disabled) svg {
+  fill: #2F75D7;
+  color: #2F75D7;
+}
+
 .emotion-1:visited:not(:disabled) {
+  color: #903D91;
+}
+
+.emotion-1:visited:not(:disabled) svg {
+  fill: #903D91;
   color: #903D91;
 }
 

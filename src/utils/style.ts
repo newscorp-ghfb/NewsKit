@@ -53,7 +53,7 @@ export const getDefaultedValue = <
   presetType: string,
   cssProp?: string,
 ) => <Props extends ThemeProp>(
-  defaultPath: string,
+  defaultPath: string | undefined,
   overridePath: string | false = '',
   option?: Parameters<FromThemeUtil>[2],
 ) => (props: Props) =>
