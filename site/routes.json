@@ -272,6 +272,11 @@
             "id": "/utils/code-helpers/get-color-from-theme"
           },
           {
+            "title": "getDeviceQueryFromTheme",
+            "page": true,
+            "id": "/utils/code-helpers/get-device-query-from-theme"
+          },
+          {
             "title": "getFontsFromTheme",
             "page": true,
             "id": "/utils/code-helpers/get-fonts-from-theme"

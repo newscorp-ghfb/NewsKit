@@ -23,7 +23,7 @@ The ScreenReaderOnly component wraps an element making sure that it is not visib
     The description of an element is passed as the child of the component.
   </Prop>
   <Prop name="id" type="string" required>
-    The CSS id required for the `aria-described-by` of the described element. 
+    The CSS id required for the `aria-described-by` of the described element.
   </Prop>
 </LegacyBlock>
 
@@ -45,22 +45,22 @@ The ScreenReaderOnly component wraps an element making sure that it is not visib
       value: 'sr-only',
     },
   ]}
-/> 
+/>
 
-## Visible 
+## Visible
 
 ## Visible Overview
 
-The Visible is a container component. The content will only be `visible` if the screen size matches the applied breakpoint.  
+The Visible is a container component. The content will only be `visible` if the screen size matches the applied breakpoint.
 
 ## Visible Props
 
 <LegacyBlock $marginTop="sizing040">
   <Prop name="children" type="any" required>
-    Content of the visiblity container 
+    Content of the visiblity container
   </Prop>
   <Prop name="display" type="string">
-    CSS attribute for display. 
+    CSS attribute for display.
     <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/display'>More information</a>
   </Prop>
   <Prop name="xs" type="boolean">
@@ -74,6 +74,9 @@ The Visible is a container component. The content will only be `visible` if the 
   </Prop>
   <Prop name="lg" type="boolean">
     Render when in lg breakpoint
+  </Prop>
+  <Prop name="targetDevices" type="Array<Devices>">
+    Array of devices for which the content is hidden with higher priority than the above breakpoints
   </Prop>
 </LegacyBlock>
 
@@ -110,7 +113,7 @@ The Visible is a container component. The content will only be `visible` if the 
       value: false,
     }
   ]}
-/> 
+/>
 
 ## Hidden
 
@@ -122,7 +125,7 @@ The Hidden is a container component. The content will only be `hidden` if the sc
 
 <LegacyBlock $marginTop="sizing040">
   <Prop name="children" type="any" required>
-    Content of the visiblity container 
+    Content of the visiblity container
   </Prop>
   <Prop name="display" type="string">
     CSS attribute for display
@@ -139,6 +142,9 @@ The Hidden is a container component. The content will only be `hidden` if the sc
   </Prop>
   <Prop name="lg" type="boolean">
     Hidden when in xs breakpoint
+  </Prop>
+  <Prop name="targetDevices" type="Array<Devices>">
+    Array of devices for which the content is hidden with higher priority than the above breakpoints
   </Prop>
 </LegacyBlock>
 

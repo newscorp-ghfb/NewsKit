@@ -140,6 +140,44 @@ exports[`Hidden renders expected xs and md hidden styles 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Hidden renders hidden for iPad pro device breakpoint 1`] = `
+<DocumentFragment>
+  @media screen {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    display: block;
+  }
+}
+
+@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
 exports[`Visible renders expected default styles 1`] = `
 <DocumentFragment>
   @media screen {
@@ -259,6 +297,44 @@ exports[`Visible renders expected xs and md visible styles 1`] = `
 @media screen and (min-width:1440px) {
   .emotion-0 {
     display: none;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Visible renders visible for iPad pro device breakpoint 1`] = `
+<DocumentFragment>
+  @media screen {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
+  .emotion-0 {
+    display: block;
   }
 }
 

@@ -948,6 +948,18 @@ exports[`Radio Player default player 1`] = `
   }
 }
 
+@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
+  .emotion-76 {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:2) {
+  .emotion-76 {
+    display: none;
+  }
+}
+
 .emotion-74 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2685,6 +2697,18 @@ exports[`Radio Player live player 1`] = `
 @media screen and (min-width:1440px) {
   .emotion-92 {
     display: block;
+  }
+}
+
+@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
+  .emotion-92 {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:2) {
+  .emotion-92 {
+    display: none;
   }
 }
 
@@ -4676,6 +4700,18 @@ exports[`Radio Player player with popout link 1`] = `
 @media screen and (min-width:1440px) {
   .emotion-92 {
     display: block;
+  }
+}
+
+@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
+  .emotion-92 {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:2) {
+  .emotion-92 {
+    display: none;
   }
 }
 
@@ -6830,6 +6866,18 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 @media screen and (min-width:1440px) {
   .emotion-108 {
     display: block;
+  }
+}
+
+@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
+  .emotion-108 {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:2) {
+  .emotion-108 {
+    display: none;
   }
 }
 

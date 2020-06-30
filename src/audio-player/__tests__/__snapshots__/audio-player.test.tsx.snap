@@ -511,6 +511,18 @@ exports[`Audio Player live player renders as expected 1`] = `
   }
 }
 
+@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
+  .emotion-41 {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:2) {
+  .emotion-41 {
+    display: none;
+  }
+}
+
 .emotion-39 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2031,6 +2043,18 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 @media screen and (min-width:1440px) {
   .emotion-50 {
     display: block;
+  }
+}
+
+@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
+  .emotion-50 {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:2) {
+  .emotion-50 {
+    display: none;
   }
 }
 
@@ -3619,6 +3643,18 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 @media screen and (min-width:1440px) {
   .emotion-53 {
     display: block;
+  }
+}
+
+@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
+  .emotion-53 {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:2) {
+  .emotion-53 {
+    display: none;
   }
 }
 

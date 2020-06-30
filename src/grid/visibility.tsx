@@ -1,15 +1,17 @@
 import React from 'react';
 import {DisplayProperty} from 'csstype';
 import {styled, css} from '../utils/style';
-import {BreakpointKeys} from '../themes/newskit-light/breakpoints';
+import {BreakpointKeys, Devices} from '../themes/newskit-light/breakpoints';
 import {getMediaQueryFromTheme} from '../utils/responsive-helpers';
 import {ThemeProp} from '../utils/style-types';
+import {getDeviceQueryFromTheme} from '../utils/device-helpers';
 
 interface CommonProps {
   xs?: boolean;
   sm?: boolean;
   md?: boolean;
   lg?: boolean;
+  targetDevices?: Array<Devices>;
 }
 
 interface InternalProps extends CommonProps {
@@ -38,6 +40,9 @@ const StyledVisible = styled.div<InternalProps>`
   ${generateBreakpointConfig(true, 'sm')};
   ${generateBreakpointConfig(true, 'md')};
   ${generateBreakpointConfig(true, 'lg')};
+  ${({targetDevices}) =>
+    targetDevices &&
+    getDeviceQueryFromTheme(targetDevices, {display: 'block'})()};
 `;
 
 export const Visible: React.FC<VisibilityProps> = ({display, ...props}) => (
@@ -49,6 +54,9 @@ const StyledHidden = styled.div<InternalProps>`
   ${generateBreakpointConfig(false, 'sm')};
   ${generateBreakpointConfig(false, 'md')};
   ${generateBreakpointConfig(false, 'lg')};
+  ${({targetDevices}) =>
+    targetDevices &&
+    getDeviceQueryFromTheme(targetDevices, {display: 'none'})()};
 `;
 
 export const Hidden: React.FC<VisibilityProps> = ({display, ...props}) => (

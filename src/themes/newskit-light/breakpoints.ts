@@ -5,5 +5,10 @@ export const breakpointPrimitives = {
   lg: 1440,
 };
 
+export enum Devices {
+  iPad = 'iPad',
+  iPadPro = 'iPad Pro',
+}
+
 export type BreakpointKeys = keyof Breakpoints;
 export type Breakpoints = typeof breakpointPrimitives;

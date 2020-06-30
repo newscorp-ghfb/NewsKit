@@ -24,7 +24,7 @@ import {getFontProps} from './get-font-props';
 import {getToken} from './get-token';
 import {ThemeProp} from './style-types';
 
-export {CSSObject} from '@emotion/core';
+export {CSSObject, SerializedStyles} from '@emotion/core';
 
 export {css};
 

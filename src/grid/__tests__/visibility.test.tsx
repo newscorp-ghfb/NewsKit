@@ -1,5 +1,6 @@
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {Visible, Hidden} from '..';
+import {Devices} from '../../themes/newskit-light/breakpoints';
 
 describe('Visible', () => {
   test('renders expected default styles', () => {
@@ -24,6 +25,13 @@ describe('Visible', () => {
     const fragment = renderToFragmentWithTheme(Visible, {
       sm: true,
       lg: true,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders visible for iPad pro device breakpoint', () => {
+    const fragment = renderToFragmentWithTheme(Visible, {
+      targetDevices: [Devices.iPadPro],
     });
     expect(fragment).toMatchSnapshot();
   });
@@ -52,6 +60,13 @@ describe('Hidden', () => {
     const fragment = renderToFragmentWithTheme(Hidden, {
       sm: true,
       lg: true,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders hidden for iPad pro device breakpoint', () => {
+    const fragment = renderToFragmentWithTheme(Hidden, {
+      targetDevices: [Devices.iPadPro],
     });
     expect(fragment).toMatchSnapshot();
   });

@@ -29,6 +29,7 @@ import {AudioPlayerProps} from './types';
 import {useAudioFunctions} from './audio-functions';
 import {StackChild} from '../stack-child';
 import {ScreenReaderOnly} from '../screen-reader-only/screen-reader-only';
+import {Devices} from '../themes/newskit-light/breakpoints';
 
 export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   const {
@@ -268,7 +269,12 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
               />
             </StackChild>
             <StackChild order={1}>
-              <ControlContainer playerTrackSize="sizing050" xs sm>
+              <ControlContainer
+                playerTrackSize="sizing050"
+                xs
+                sm
+                targetDevices={[Devices.iPadPro, Devices.iPad]}
+              >
                 <VolumeControl
                   volume={volume}
                   onChange={onChangeVolumeSlider}
@@ -279,7 +285,12 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
               </ControlContainer>
             </StackChild>
             <StackChild order={3}>
-              <ControlContainer playerTrackSize="sizing050" xs sm>
+              <ControlContainer
+                playerTrackSize="sizing050"
+                xs
+                sm
+                targetDevices={[Devices.iPadPro, Devices.iPad]}
+              >
                 <Stack
                   flow={Flow.VerticalRight}
                   stackDistribution={StackDistribution.End}
