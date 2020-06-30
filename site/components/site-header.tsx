@@ -61,7 +61,7 @@ const SearchContainer = styled.div`
 `;
 
 const MobileLogo: React.FC = () => (
-  <Link href="/">
+  <Link href="/" overrides={{stylePreset: 'linkLogo'}}>
     <NewsKitMobileLogo color="inkBase" size="sizing070" />
   </Link>
 );
