@@ -1,13 +1,13 @@
 const Generator = require('yeoman-generator');
-// const parser = require("babylon");
-// const traverse = require("@babel/traverse").default;
-// const t = require('babel-types');
-// const generate = require('babel-generator').default;
-const indexBuilderUtil = require('./helpers/indexBuilder.ts');
+const addExportToIndex = require('./helpers/add-export-to-index.ts');
+const createFileFromTemplate = require('./helpers/create-file-from-template.ts');
+const prepareTemplateData = require('./helpers/prepare-template-data.ts');
+const addLinkToSite = require('./helpers/add-link-to-site.ts');
+
 module.exports = class extends Generator {
 
   prompting() {
-    this.log('Welcome to React/Typescript generator.');
+    this.log('Welcome to Newskit component generator.');
     const self = this;
     return this.prompt([
       {
@@ -22,93 +22,36 @@ module.exports = class extends Generator {
 
   writing() {
     const {componentNameInput} = this.answers;
-    const componentNameCapitalized =
+    const componentName =
       componentNameInput.charAt(0).toUpperCase() + componentNameInput.slice(1);
-    const componentNameLower = componentNameInput.toLowerCase();
-
+    const componentFileName = componentNameInput.toLowerCase();
+    const templatesData = prepareTemplateData(componentName, componentFileName);
+    
+    // Change root to ./src
     this.log(`Writing files into: ${this.destinationRoot('./src')}`);
+
+    // Add export for the new component in root index
     const source = this.fs.read(this.destinationPath('index.ts'));
-    console.log(indexBuilderUtil)
-    // Generate actually source code from modified AST
-    const {code} = indexBuilderUtil(source,componentNameLower);
-    // Write source back to file
+    const {code} = addExportToIndex(source,componentFileName);
     this.fs.write(this.destinationPath('index.ts'), code);
-    this.fs.copyTpl(
-      this.templatePath('index.ts'),
-      this.destinationPath(`${componentNameLower}/index.ts`),
-      {componentFileName: componentNameLower},
-    );
 
-    this.fs.copyTpl(
-      this.templatePath('types.ts'),
-      this.destinationPath(`${componentNameLower}/types.ts`),
-      {componentName: componentNameCapitalized},
-    );
+    // Creating files from templates into ./src folder
+    templatesData.paths.forEach(templateData => {
+      createFileFromTemplate(this, templateData, templatesData.names);
+    });
 
-    this.fs.copyTpl(
-      this.templatePath('component.tsx'),
-      this.destinationPath(`${componentNameLower}/${componentNameLower}.tsx`),
-      {componentName: componentNameCapitalized},
-    );
-
-    this.fs.copyTpl(
-      this.templatePath('__test__/component.test.tsx'),
-      this.destinationPath(
-        `${componentNameLower}/__tests__/${componentNameLower}.test.tsx`,
-      ),
-      {componentName: componentNameCapitalized},
-    );
-
-    this.fs.copyTpl(
-      this.templatePath('__test__/component-scenario.tsx'),
-      this.destinationPath(
-        `${componentNameLower}/__tests__/${componentNameLower}.scenario.tsx`,
-      ),
-      {
-        componentName: componentNameCapitalized,
-        componentFileName: componentNameLower,
-      },
-    );
-
+    // Change root to ./site
     this.log(`Writing files into: ${this.destinationRoot('../site')}`);
-    
-    this.fs.copyTpl(
-      this.templatePath('./documentation-page.mdx'),
-      this.destinationPath(
-        `./pages/components/${componentNameLower}.mdx`,
-      ),
-      {
-        componentName: componentNameCapitalized,
-        componentFileName: componentNameLower,
-      },
-    );
 
+    // Add documentation page in ./site
+    createFileFromTemplate(this,{
+      templatePath: './documentation-page.mdx',
+      destinationPath: `./pages/components/${componentFileName}.mdx`,
+    },templatesData.names)
 
+    // Add link to documentation site
     const routes = JSON.parse(this.fs.read(this.destinationPath('routes.json')));
-    const componentMenuObject = routes.filter(obj => {
-      return obj.title ===  "Components";  
-    })
-    const componentPages = componentMenuObject[0].subNav
-    const templateObject = {
-      title: componentNameCapitalized,
-      page: true,
-      id: `/components/${componentNameLower}`
-    }
-    componentPages.push(templateObject)
-
-    function compare( a, b ) {
-      if ( a.title < b.title ){
-        return -1;
-      }
-      if ( a.title > b.title ){
-        return 1;
-      }
-      return 0;
-    }
-    
-   const orderedObject = componentPages.sort( compare );
-    const resultRoutes = JSON.stringify(routes,null,"  ");
+    const resultRoutes = addLinkToSite(routes, templatesData.names);
     this.fs.write(this.destinationPath('routes.json'), resultRoutes);
   }
-  
 };

@@ -3,7 +3,7 @@ const traverse = require("@babel/traverse").default;
 const t = require('babel-types');
 const generate = require('babel-generator').default;
 
- const indexBuilderUtil = (source, componentName) => {
+module.exports  = (source, componentName) => {
     const ast = parser.parse(source, { sourceType: 'module' });
 
     let lastExport = null;
@@ -17,19 +17,14 @@ const generate = require('babel-generator').default;
     });
     traverse(ast, {
       // Gets called when visiting *any* node
-      enter(path) {        
+      enter(path) {
         if (lastExport && t.isExportAllDeclaration(path) && !isInserted) {
           lastExport.insertAfter(exportAllDeclaration);
           isInserted = true;
         }
-        
       },
-
-    
     });
 
     // Generate actually source code from modified AST
     return generate(ast, { /* Options */ }, source);
 };
-
-module.exports = indexBuilderUtil;
