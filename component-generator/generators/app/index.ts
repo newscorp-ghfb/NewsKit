@@ -1,9 +1,9 @@
 const Generator = require('yeoman-generator');
-const parser = require("babylon");
-const traverse = require("@babel/traverse").default;
-const t = require('babel-types');
-const generate = require('babel-generator').default;
-
+// const parser = require("babylon");
+// const traverse = require("@babel/traverse").default;
+// const t = require('babel-types');
+// const generate = require('babel-generator').default;
+const indexBuilderUtil = require('./helpers/indexBuilder.ts');
 module.exports = class extends Generator {
 
   prompting() {
@@ -28,35 +28,11 @@ module.exports = class extends Generator {
 
     this.log(`Writing files into: ${this.destinationRoot('./src')}`);
     const source = this.fs.read(this.destinationPath('index.ts'));
-    const ast = parser.parse(source, { sourceType: 'module' });
-
-    let lastExport = null;
-    let isInserted = false;
-    const exportAllDeclaration = t.exportAllDeclaration(t.stringLiteral(`./${componentNameLower}`));
-
-    traverse(ast, {
-      ExportDeclaration(path) {
-        lastExport = path;
-      },
-    });
-    traverse(ast, {
-      // Gets called when visiting *any* node
-      enter(path) {        
-        if (lastExport && t.isExportAllDeclaration(path) && !isInserted) {
-          lastExport.insertAfter(exportAllDeclaration);
-          isInserted = true;
-        }
-        
-      },
-
-    
-    });
-
+    console.log(indexBuilderUtil)
     // Generate actually source code from modified AST
-    const {code} = generate(ast, { /* Options */ }, source);
+    const {code} = indexBuilderUtil(source,componentNameLower);
     // Write source back to file
     this.fs.write(this.destinationPath('index.ts'), code);
-
     this.fs.copyTpl(
       this.templatePath('index.ts'),
       this.destinationPath(`${componentNameLower}/index.ts`),
