@@ -52,7 +52,8 @@
     "create:release": "sh ./scripts/release.sh",
     "generate:install": "cd ./component-generator && yarn && yarn link",
     "generate:run": "yo newskit-component",
-    "generate:component": "yarn generate:install && yarn generate:run"
+    "generate:component": "yarn generate:install && yarn generate:run",
+    "generate:uninstall": "cd ./component-generator && yarn && yarn unlink"
   },
   "devDependencies": {
     "@applitools/eyes-cypress": "^3.9.4",
