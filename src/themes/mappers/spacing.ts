@@ -8,6 +8,7 @@ export const createSpacingPresets = (s: Sizing) => {
   presets.space020 = s.sizing020;
   presets.space030 = s.sizing030;
   presets.space040 = s.sizing040;
+  presets.space045 = s.sizing045;
   presets.space050 = s.sizing050;
   presets.space060 = s.sizing060;
   presets.space070 = s.sizing070;

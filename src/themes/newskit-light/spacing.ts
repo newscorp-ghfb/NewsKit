@@ -4,6 +4,7 @@ export const sizingPrimitives = {
   sizing020: '8px',
   sizing030: '12px',
   sizing040: '16px',
+  sizing045: '20px',
   sizing050: '24px',
   sizing060: '32px',
   sizing070: '40px',
