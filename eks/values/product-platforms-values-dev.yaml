@@ -11,9 +11,16 @@ Namespace:
 NewsUKcidr:
   143.252.0.0/16,52.50.59.220/32,52.48.145.181/32,52.56.211.134/32,3.9.209.203/32,52.208.74.35/32,52.16.156.78/32
 FQDN:
-  newskit.dev-news.co.uk
+  origin-www.newskit.dev-news.co.uk
 FQDNStorybook:
-  storybook.newskit.dev-news.co.uk
+  origin-www.storybook.newskit.dev-news.co.uk
 SSLCertARN:
 # this cert is for *.digiend-dev.ntch.co.uk
   arn:aws:acm:eu-west-1:720262317718:certificate/9e9bed2a-8818-42e0-b6cb-ddfb1bd792cc
+resources:
+  limits:
+    cpu: "0.2"
+    memory: 256Mi
+  requests:
+    cpu: "0.2"
+    memory: 256Mi

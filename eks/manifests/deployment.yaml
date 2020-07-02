@@ -23,6 +23,13 @@ spec:
         image: {{ .Env.ECR_AWS_ACCOUNT_ID }}.dkr.ecr.{{ .Env.AWS_DEFAULT_REGION }}.amazonaws.com/ncu-newskit:{{ .Env.DOCKER_TAG }}
         ports:
         - containerPort: 8081
+        resources:
+          limits:
+            cpu: {{ (datasource "config").resources.limits.cpu }}
+            memory: {{ (datasource "config").resources.limits.memory }}
+          requests:
+            cpu: {{ (datasource "config").resources.requests.cpu }}
+            memory: {{ (datasource "config").resources.requests.memory }}
         env:
         - name: node_env
           valueFrom:
@@ -56,6 +63,13 @@ spec:
         image: {{ .Env.ECR_AWS_ACCOUNT_ID }}.dkr.ecr.{{ .Env.AWS_DEFAULT_REGION }}.amazonaws.com/ncu-newskit:{{ .Env.DOCKER_TAG }}
         ports:
         - containerPort: 6006
+        resources:
+          limits:
+            cpu: {{ (datasource "config").resources.limits.cpu }}
+            memory: {{ (datasource "config").resources.limits.memory }}
+          requests:
+            cpu: {{ (datasource "config").resources.requests.cpu }}
+            memory: {{ (datasource "config").resources.requests.memory }}
         env:
         - name: node_env
           valueFrom:

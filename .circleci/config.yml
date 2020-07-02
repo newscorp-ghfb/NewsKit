@@ -43,15 +43,71 @@ executors:
         auth:
           username: $DOCKER_USERNAME
           password: $DOCKER_PASSWORD
+
+  terraform:
+    docker:
+      - image: hashicorp/terraform:0.12.21
+
   node:
     docker:
       - image: circleci/node:10.16
+
   cypress:
     docker:
       - image: cypress/browsers:node12.16.2-chrome81-ff75
   java:
     docker:
      - image: circleci/openjdk:8u252-jdk-buster
+
+commands:
+  terraform_init:
+    description: Run Terraform Init
+    parameters:
+      package:
+        type: string
+    steps:
+      - run: |
+          source $BASH_ENV
+          cd terraform/<< parameters.package >>
+          terraform init
+
+  terraform_plan:
+    description: Run Terraform Plan
+    parameters:
+      package:
+        type: string
+      terraform_arg:
+        description: provide terraform arguments
+        type: string
+        default: ""
+    steps:
+      - run: |
+          source $BASH_ENV
+          cd terraform/<< parameters.package >>
+          terraform plan -out=tfplan -input=false << parameters.terraform_arg >>
+
+  terraform_apply:
+    description: Run Terraform Apply
+    parameters:
+      package:
+        type: string
+    steps:
+      - run: |
+          source $BASH_ENV
+          cd terraform/<< parameters.package >>
+          terraform apply -lock=false -input=false tfplan
+
+  terraform_force_apply:
+    description: Run Terraform Apply
+    parameters:
+      package:
+        type: string
+    steps:
+      - run: |
+          source $BASH_ENV
+          cd terraform/<< parameters.package >>
+          terraform apply -auto-approve
+
 jobs:
   install_deps:
     working_directory: ~/project
@@ -159,6 +215,34 @@ jobs:
           path: unit-test-results
       - slack/status:
           <<: *slack_status
+
+  deploy_terraform:
+    parameters:
+      package:
+        type: string
+    working_directory: ~/project
+    executor: terraform
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Setup akamai
+          command: |
+            echo "[default]
+            client_secret = ${AKAMAI_SECRET}
+            host = ${AKAMAI_HOST}
+            access_token = ${AKAMAI_ACCESS_TOKEN}
+            client_token = ${AKAMAI_CLIENT_TOKEN}
+            [papi]
+            client_secret = ${AKAMAI_SECRET}
+            host = ${AKAMAI_HOST}
+            access_token = ${AKAMAI_ACCESS_TOKEN}
+            client_token = ${AKAMAI_CLIENT_TOKEN}" > ~/.edgerc
+      - terraform_init:
+          package: << parameters.package >>
+      - terraform_force_apply:
+          package: << parameters.package >>
 
   test_visual_comps:
     working_directory: ~/project
@@ -280,7 +364,7 @@ jobs:
           path: cypress/videos
       - slack/status:
           <<: *slack_status
-  
+
   copy_dev_baselines_to_master:
     working_directory: ~/project
     executor: java
@@ -314,7 +398,7 @@ jobs:
           name: export version
           command: |
             export VERSION=$(jq -r .version package.json)
-            echo "export VERSION=${VERSION}" >> $BASH_ENV      
+            echo "export VERSION=${VERSION}" >> $BASH_ENV
       - slack/status:
           <<: *slack_status
       - slack/notify:
@@ -340,7 +424,7 @@ jobs:
           command: make set_git_identity
       - when:
           condition: << parameters.publish_dev >>
-          steps:      
+          steps:
             - run:
                 name: Publish components to NPM
                 command: make publish_npm_dev
@@ -352,7 +436,7 @@ jobs:
                 command: make publish_npm
       - slack/status:
           <<: *slack_status
-  
+
   build_push_docker_ecr:
     parameters:
       aws_region:
@@ -399,7 +483,7 @@ jobs:
           command: |
             if [ << parameters.docker_version >> = release ]; then
               export DOCKER_TAG=$(node -p "require('./package.json').version")
-            else 
+            else
               export DOCKER_TAG=${CIRCLE_SHA1}
             fi
             export AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
@@ -443,9 +527,9 @@ jobs:
           apk add --update npm
           if [ << parameters.environment >> = dev ]; then
             export DOCKER_TAG=${CIRCLE_SHA1}
-          else 
+          else
             export DOCKER_TAG=$(node -p "require('./package.json').version")
-          fi      
+          fi
           config_values=eks/values/product-platforms-values-<< parameters.environment >>.yaml
           out_dir=product-platforms-<< parameters.environment >>
           flux_repo_target=<< parameters.environment >>/eks
@@ -561,7 +645,7 @@ ignore_trigger_release: &ignore_trigger_release
     branches:
       ignore:
         - /trigger-release-.*/
-        
+
 # ========== FILTERS END        ==========
 
 # ========== REQUIREMENTS START ==========
@@ -682,7 +766,7 @@ workflows:
           environment: staging
           <<: *only_release
           requires:
-            - build_push_docker_ecr_release          
+            - build_push_docker_ecr_release
       - eks_kubectl_deploy:
           name: eks_kubectl_deploy_staging
           context: ncu-newskit-site-stage

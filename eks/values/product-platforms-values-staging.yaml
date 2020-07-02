@@ -11,8 +11,15 @@ Namespace:
 NewsUKcidr:
   0.0.0.0/0
 FQDN:
-  newskit.staging-news.co.uk
+  origin-www.newskit.staging-news.co.uk
 FQDNStorybook:
-  storybook.newskit.staging-news.co.uk
+  origin-www.storybook.newskit.staging-news.co.uk
 SSLCertARN:
   arn:aws:acm:eu-west-1:474887192380:certificate/b170a102-baab-48a4-8a55-af600246b539
+resources:
+  limits:
+    cpu: "0.4"
+    memory: 512Mi
+  requests:
+    cpu: "0.4"
+    memory: 512Mi
