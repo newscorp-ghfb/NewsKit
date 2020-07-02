@@ -10,11 +10,16 @@ module.exports  = (source, componentName) => {
     let isInserted = false;
     const exportAllDeclaration = t.exportAllDeclaration(t.stringLiteral(`./${componentName}`));
 
-    traverse(ast, {
+
+     const findingLastExport = () => {
+      traverse(ast, {
       ExportDeclaration(path) {
         lastExport = path;
       },
-    });
+      });
+    }
+
+    const addingNewImport = () => {
     traverse(ast, {
       // Gets called when visiting *any* node
       enter(path) {
@@ -24,7 +29,9 @@ module.exports  = (source, componentName) => {
         }
       },
     });
-
-    // Generate actually source code from modified AST
+  }
+    findingLastExport()
+    addingNewImport()
     return generate(ast, { /* Options */ }, source);
 };
+

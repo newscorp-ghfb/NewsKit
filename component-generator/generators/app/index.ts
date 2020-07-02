@@ -12,7 +12,7 @@ module.exports = class extends Generator {
     return this.prompt([
       {
         type: 'input',
-        name: 'componentNameInput',
+        name: 'componentFileName',
         message: 'Name of your component',
       },
     ]).then(answers => {
@@ -21,10 +21,11 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    const {componentNameInput} = this.answers;
-    const componentName =
-      componentNameInput.charAt(0).toUpperCase() + componentNameInput.slice(1);
-    const componentFileName = componentNameInput.toLowerCase();
+    const {componentFileName} = this.answers;
+    this.log(componentFileName)
+    const componentName = componentFileName.split('-').map(element => {
+     return element.charAt(0).toUpperCase() + element.slice(1); 
+    }).join("");
     const templatesData = prepareTemplateData(componentName, componentFileName);
     
     // Change root to ./src
