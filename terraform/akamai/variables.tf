@@ -12,6 +12,11 @@ variable "akamai_group" {
 }
 
 variable "hostname_map" {
-  type = map(string)
+  type    = map(string)
   default = {}
+}
+
+variable "contact" {
+  type    = list(string)
+  default = ["jakub.zelenka@news.co.uk", "borislav.velkov@news.co.uk"]
 }

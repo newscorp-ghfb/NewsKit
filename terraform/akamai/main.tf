@@ -7,16 +7,17 @@ provider "akamai" {
 terraform {
   backend "s3" {
     bucket = "nu-sun-terraform-state"
-    key    = "product-platforms/newskit-${var.environment}/terraform.tfstate"
+    #TODO: this should be overwriten in the pipeline
+    key    = "product-platforms/newskit-dev/terraform.tfstate"
     region = "eu-west-1"
   }
-  required_version = ">= 0.12.12"
+  required_version = ">= 0.12"
 }
 
 resource "akamai_property" "property" {
   name = "${var.environment}.newskit.co.uk"
 
-  contact = ["borislav.velkov@news.co.uk"]
+  contact = var.contact
 
   product  = "prd_Fresca"
   cp_code  = akamai_cp_code.cp_code.id
@@ -24,15 +25,15 @@ resource "akamai_property" "property" {
   group    = data.akamai_group.group.id
 
   hostnames = {
-    var.hostname_map["newskit"] = akamai_edge_hostname.hostname.edge_hostname
-    var.hostname_map["storybook"] = akamai_edge_hostname.hostname.edge_hostname
+    var.hostname_map[newskit]   = akamai_edge_hostname.hostname.edge_hostname
+    var.hostname_map[storybook] = akamai_edge_hostname.hostname.edge_hostname
   }
 
   rule_format = "latest"
 
   rules = data.akamai_property_rules.rules.json
 
-  variables = data.akamai_property_variables.origin.json
+  variables = akamai_property_variables.origin.json
 }
 
 data "akamai_contract" "contract" {
@@ -54,7 +55,7 @@ resource "akamai_edge_hostname" "hostname" {
   product       = "prd_Fresca"
   contract      = data.akamai_contract.contract.id
   group         = data.akamai_group.group.id
-  edge_hostname = "${var.environment}.newskit.co.uk.edgesuite.net"
+  edge_hostname = "${var.hostname_map[newskit]}.edgesuite.net"
   ipv4          = true
   ipv6          = true
 }
@@ -113,7 +114,7 @@ data "akamai_property_rules" "rules" {
           }
         }
         criteria_match = "all"
-        comment        = "Compresses content to improve performance of clients with slow connections. Applies Last Mile Acceleration to requests when the returned object supports gzip compression."
+        comment        = "Compresses content to improve performance of clients with slow connections."
       }
       behavior {
         name = "enhancedAkamaiProtocol"
@@ -419,85 +420,13 @@ data "akamai_property_rules" "rules" {
     }
     behavior {
       name = "setVariable"
-      option {
-        variableName   = "PMUSER_ORIGIN"
-        value = "false"
-        valueSource: "EXPRESSION"
-        variableValue: "origin-{{builtin.AK_HOST}}"
-        transform: "NONE"
+      option = {
+        variableName  = "PMUSER_ORIGIN"
+        value         = "false"
+        valueSource   = "EXPRESSION"
+        variableValue = "origin-{{builtin.AK_HOST}}"
+        transform     = "NONE"
       }
-      criteriaMustSatisfy: "all"
-      criteria: [
-        {
-          name: "matchVariable"
-          options: {
-            variableName: "AK_HOST"
-            matchWildcard: "*.staging-news.co.uk"
-          }
-        }
-      ]
-    }
-    behavior {
-      name = "setVariable"
-      option {
-        variableName   = "PMUSER_ORIGIN"
-        value = "false"
-        valueSource: "EXPRESSION"
-        variableValue: "origin-{{builtin.AK_HOST}}"
-        transform: "NONE"
-      }
-      criteriaMustSatisfy: "all"
-      criteria: [
-        {
-          name: "matchVariable"
-          options: {
-            variableName: "AK_HOST"
-            matchWildcard: "*.dev-news.co.uk"
-          }
-        }
-      ]
-    }
-    behavior {
-      name = "setVariable"
-      option {
-        variableName   = "PMUSER_ORIGIN"
-        value = "false"
-        valueSource: "EXPRESSION"
-        variableValue: "origin-newskit.digieng-prod.ntch.co.uk"
-        transform: "NONE"
-      }
-      criteriaMustSatisfy: "all"
-      criteria: [
-        {
-          name: "matchVariable"
-          options: {
-            variableName: "AK_HOST"
-            mode: "IS"
-            matchWildcard: "www.newskit.co.uk"
-          }
-        }
-      ]
-    }
-    behavior {
-      name = "setVariable"
-      option {
-        variableName   = "PMUSER_ORIGIN"
-        value = "false"
-        valueSource: "EXPRESSION"
-        variableValue: "origin-storybook.newskit.digieng-prod.ntch.co.uk"
-        transform: "NONE"
-      }
-      criteriaMustSatisfy: "all"
-      criteria: [
-        {
-          name: "matchVariable"
-          options: {
-            variableName: "AK_HOST"
-            mode: "IS"
-            matchWildcard: "storybook.newskit.co.uk"
-          }
-        }
-      ]
     }
     behavior {
       name = "origin"
@@ -621,11 +550,11 @@ data "akamai_property_rules" "rules" {
 
 resource "akamai_property_variables" "origin" {
   variables {
-     variable {
-        name        = "PMUSER_ORIGIN"
-        value       = "${var.origin_hostname}"
-        description = "Origin Hostname"
-     }
+    variable {
+      name        = "PMUSER_ORIGIN"
+      value       = ""
+      description = "Origin Hostname"
+    }
   }
 }
 
@@ -633,11 +562,11 @@ resource "akamai_property_activation" "example" {
   property = akamai_property.property.id
   network  = "PRODUCTION"
   activate = true
-  contact  = ["thomas.gardham-pallister@news.co.uk"]
+  contact  = var.contact
   version  = akamai_property.property.version
 }
 
 ## Outputs ##
-output "rule-tree" {
+output "rule_tree" {
   value = data.akamai_property_rules.rules.json
 }
