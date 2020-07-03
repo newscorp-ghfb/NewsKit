@@ -1,13 +1,12 @@
 provider "akamai" {
   edgerc       = "~/.edgerc"
   papi_section = "papi"
-  version      = "v0.5.0"
 }
 
 terraform {
   backend "s3" {
     bucket = "nu-sun-terraform-state"
-    #TODO: this should be overwriten in the pipeline
+    #TODO: this should be overwritten in the pipeline
     key    = "product-platforms/newskit-dev/terraform.tfstate"
     region = "eu-west-1"
   }
@@ -25,8 +24,8 @@ resource "akamai_property" "property" {
   group    = data.akamai_group.group.id
 
   hostnames = {
-    var.hostname_map[newskit]   = akamai_edge_hostname.hostname.edge_hostname
-    var.hostname_map[storybook] = akamai_edge_hostname.hostname.edge_hostname
+    for hostname in var.hostname_map:
+        hostname => akamai_edge_hostname.hostname.edge_hostname
   }
 
   rule_format = "latest"
@@ -55,7 +54,7 @@ resource "akamai_edge_hostname" "hostname" {
   product       = "prd_Fresca"
   contract      = data.akamai_contract.contract.id
   group         = data.akamai_group.group.id
-  edge_hostname = "${var.hostname_map[newskit]}.edgesuite.net"
+  edge_hostname = "${var.hostname_map["newskit"]}.edgesuite.net"
   ipv4          = true
   ipv6          = true
 }
@@ -420,12 +419,21 @@ data "akamai_property_rules" "rules" {
     }
     behavior {
       name = "setVariable"
-      option = {
-        variableName  = "PMUSER_ORIGIN"
-        value         = "false"
-        valueSource   = "EXPRESSION"
-        variableValue = "origin-{{builtin.AK_HOST}}"
-        transform     = "NONE"
+      option {
+        key = "valueSource"
+        value = "EXPRESSION"
+      }
+      option {
+        key = "transform"
+        value = "NONE"
+      }
+      option {
+        key = "variableName"
+        value = "PMUSER_ORIGIN"
+      }
+      option {
+        key = "variableValue"
+        value = "origin-{{builtin.AK_HOST}}"
       }
     }
     behavior {
@@ -554,6 +562,8 @@ resource "akamai_property_variables" "origin" {
       name        = "PMUSER_ORIGIN"
       value       = ""
       description = "Origin Hostname"
+      hidden      = false
+      sensitive   = false
     }
   }
 }
