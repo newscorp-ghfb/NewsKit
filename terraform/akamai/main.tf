@@ -6,8 +6,7 @@ provider "akamai" {
 terraform {
   backend "s3" {
     bucket = "nu-sun-terraform-state"
-    #TODO: this should be overwritten in the pipeline
-    key    = "product-platforms/newskit-dev/terraform.tfstate"
+    key    = "product-platforms/newskit/akamai/dev/terraform.tfstate"
     region = "eu-west-1"
   }
   required_version = ">= 0.12"
@@ -24,8 +23,8 @@ resource "akamai_property" "property" {
   group    = data.akamai_group.group.id
 
   hostnames = {
-    for hostname in var.hostname_map:
-        hostname => akamai_edge_hostname.hostname.edge_hostname
+    for hostname in var.hostname_map :
+    hostname => akamai_edge_hostname.hostname.edge_hostname
   }
 
   rule_format = "latest"
@@ -420,19 +419,19 @@ data "akamai_property_rules" "rules" {
     behavior {
       name = "setVariable"
       option {
-        key = "valueSource"
+        key   = "valueSource"
         value = "EXPRESSION"
       }
       option {
-        key = "transform"
+        key   = "transform"
         value = "NONE"
       }
       option {
-        key = "variableName"
+        key   = "variableName"
         value = "PMUSER_ORIGIN"
       }
       option {
-        key = "variableValue"
+        key   = "variableValue"
         value = "origin-{{builtin.AK_HOST}}"
       }
     }

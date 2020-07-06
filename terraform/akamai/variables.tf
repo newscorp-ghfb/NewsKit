@@ -1,5 +1,5 @@
 variable "environment" {
-  default = ""
+  description = "Environment name"
 }
 
 variable "akamai_group" {

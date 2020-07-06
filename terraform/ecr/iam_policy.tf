@@ -1,6 +1,6 @@
 resource "aws_iam_role_policy" "ncu-product-platforms-iam-role-policy" {
   name = "ncu-product-platforms-ecr-role-policy"
-  role = "${aws_iam_role.ncu-product-platforms-iam-role.id}"
+  role = aws_iam_role.ncu-product-platforms-iam-role.id
 
   policy = <<EOF
 {

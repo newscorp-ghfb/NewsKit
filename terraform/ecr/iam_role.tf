@@ -1,6 +1,7 @@
 resource "aws_iam_role" "ncu-product-platforms-iam-role" {
   name        = "ncu-product-platforms-assume-role"
   description = "Role to be consmed by kube2iam"
+  tags        = local.tags
 
   assume_role_policy = <<EOF
 {

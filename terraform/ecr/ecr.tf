@@ -1,12 +1,14 @@
 resource "aws_ecr_repository" "ecr_product_platform" {
   name = "ncu-newskit"
-}
 
+  tags = local.tags
+}
 
 resource "aws_ecr_repository_policy" "ecr_product_platform_policy" {
-  repository = "${aws_ecr_repository.ecr_product_platform.name}"
-    policy     = data.aws_iam_policy_document.ecr_cross_account.json
+  repository = aws_ecr_repository.ecr_product_platform.name
+  policy     = data.aws_iam_policy_document.ecr_cross_account.json
 }
+
 data "aws_iam_policy_document" "ecr_cross_account" {
   statement {
     sid    = "Cross-AWS-Account-ECR-Read"
