@@ -49,8 +49,14 @@ export default {
             {sizes.map(size => (
               <CircularProgressIndicator
                 size={size as IconSizeKeys}
-                sliderTrackStylePreset="circularProgressIndicatorTrackInverse"
-                sliderIndicatorTrackStylePreset="circularProgressIndicatorIndicatorInverse"
+                overrides={{
+                  track: {
+                    stylePreset: 'circularProgressIndicatorTrackInverse',
+                  },
+                  indicator: {
+                    stylePreset: 'circularProgressIndicatorIndicatorInverse',
+                  },
+                }}
               />
             ))}
           </Container>

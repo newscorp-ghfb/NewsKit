@@ -1,15 +1,11 @@
 import {styled, getSizingFromTheme} from '../utils/style';
 import {IconSizeKeys} from '../themes/newskit-light/spacing';
-import {getStylePresetFromTheme} from '../utils/style-preset';
+import {getStylePreset} from '../utils/style-preset';
 import {Theme} from '../themes/creator';
 import {
   CircularProgressIndicatorSizeProps,
-  CircularTrackProps,
-  CircularIndicatorProps,
+  CircularProgressIndicatorProps,
 } from './types';
-
-const indicatorStylePresetDefault = 'circularProgressIndicatorIndicatorPrimary';
-const trackStylePresetDefault = 'circularProgressIndicatorTrackPrimary';
 
 const animationDuration = '1.4s';
 
@@ -35,25 +31,27 @@ export const StyledCircularProgressIndicator = styled.div<
   position: relative;
 `;
 
-export const StyledCircularTrack = styled.div<CircularTrackProps>`
+export const StyledCircularTrack = styled.div<CircularProgressIndicatorProps>`
   box-sizing: border-box;
   ${getSize}
-  ${getStylePresetFromTheme(trackStylePresetDefault, 'sliderTrackStylePreset')};
+  ${getStylePreset('progressIndicator.track', 'track')}
   border-radius: 50%;
 `;
 
-export const StyledCircularIndicator = styled.div<CircularIndicatorProps>`
+export const StyledCircularIndicator = styled.div<
+  CircularProgressIndicatorProps
+>`
   box-sizing: border-box;
   ${getSize}
-  ${getStylePresetFromTheme(
-    indicatorStylePresetDefault,
-    'sliderIndicatorTrackStylePreset',
-  )};
+  ${getStylePreset(
+    'progressIndicator.indicator',
+    'indicator',
+  )}
   border-radius: 50%;
 `;
 
 export const StyledCircularProgressIndicatorFills = styled.div<
-  CircularIndicatorProps
+  CircularProgressIndicatorSizeProps
 >`
   @keyframes fills-outer-rotate {
     0% {

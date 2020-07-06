@@ -26,9 +26,14 @@ describe('Circle progress indicator', () => {
 
   test(`renders circle progress indicator with different style`, () => {
     const fragment = renderToFragmentWithTheme(CircularProgressIndicator, {
-      sliderTrackStylePreset: 'circularProgressIndicatorTrackInverse',
-      sliderIndicatorTrackStylePreset:
-        'circularProgressIndicatorIndicatorInverse',
+      overrides: {
+        track: {
+          stylePreset: 'circularProgressIndicatorTrackInverse',
+        },
+        indicator: {
+          stylePreset: 'circularProgressIndicatorIndicatorInverse',
+        },
+      },
     });
 
     expect(fragment).toMatchSnapshot();

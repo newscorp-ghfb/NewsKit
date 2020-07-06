@@ -161,4 +161,12 @@ export const defaultPresets = {
       size: 'iconSize010',
     },
   },
+  progressIndicator: {
+    track: {
+      stylePreset: 'circularProgressIndicatorTrackPrimary',
+    },
+    indicator: {
+      stylePreset: 'circularProgressIndicatorIndicatorPrimary',
+    },
+  },
 };
