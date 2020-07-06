@@ -62,7 +62,7 @@ const renderKnob = (
   if (isMultiChoiceKnobConfig(knobConfig)) {
     return (
       <MultiChoiceKnob
-        key={knobConfig.propName}
+        key={knobConfig.name}
         label={knobConfig.name}
         options={knobConfig.options}
         value={state[knobConfig.propName] as string}
@@ -73,7 +73,7 @@ const renderKnob = (
   if (Array.isArray(knobConfig.value)) {
     return (
       <ArrayKnob
-        key={knobConfig.propName}
+        key={knobConfig.name}
         label={knobConfig.name}
         value={state[knobConfig.propName] as unknown[]}
         onChange={updateState(knobConfig.propName)}
@@ -138,11 +138,24 @@ export const Playground: React.FC<
 
   const {newskitPath, component} = props as PlaygroundProps;
 
-  const updateState = (prop: string) => (value: unknown) =>
-    setState({
+  const updateState = (prop: string) => (value: unknown) => {
+    let newValue = value;
+
+    if (
+      !Array.isArray(value) &&
+      typeof value === 'object' &&
+      value !== null &&
+      typeof state[prop] === 'object' &&
+      state[prop] !== null
+    ) {
+      newValue = {...(state[prop] as object), ...value};
+    }
+
+    return setState({
       ...state,
-      [prop]: value,
+      [prop]: newValue,
     });
+  };
 
   const Component = Array.isArray(component)
     ? component[componentIndex]

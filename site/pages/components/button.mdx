@@ -120,58 +120,89 @@ Custom props are detailed below:
     },
     {
       name: 'Style Preset',
-      propName: 'stylePreset',
+      propName: 'overrides',
       options: [
+         {
+          label: 'Default',
+          value: {
+            stylePreset: undefined
+          },
+          isDefault: true,
+        },
         {
           label: 'buttonSolidPrimary',
-          value: 'buttonSolidPrimary',
+          value: {
+            stylePreset: 'buttonSolidPrimary',
+          },
           isDefault: true,
         },
         {
           label: 'buttonOutlinedPrimary',
-          value: 'buttonOutlinedPrimary',
+           value: {
+            stylePreset: 'buttonOutlinedPrimary',
+          }
         },
         {
           label: 'buttonMinimalPrimary',
-          value: 'buttonMinimalPrimary',
+          value: {
+            stylePreset: 'buttonMinimalPrimary',
+          },
         },
       ],
     },
     {
       name: 'Type Preset',
-      propName: 'typePreset',
+      propName: 'overrides',
       options: [
-        {
-          label: 'buttonSmall',
-          value: 'buttonSmall',
+         {
+          label: 'Default',
+          value: {
+            typePreset: undefined
+          },
           isDefault: true,
         },
         {
+          label: 'buttonSmall',
+          value: {
+            typePreset: 'buttonSmall'
+          },
+        },
+        {
           label: 'buttonMedium',
-          value: 'buttonMedium',
+          value: {
+            typePreset: 'buttonMedium'
+          },
         },
         {
           label: 'buttonLarge',
-          value: 'buttonLarge',
+          value: {
+            typePreset: 'buttonLarge'
+          },
         },
       ],
     },
     {
       name: 'Width',
-      propName: 'width',
+      propName: 'overrides',
       options: [
         {
           label: 'Default',
-          value: undefined,
+          value: {
+            width: undefined
+          },
           isDefault: true,
         },
         {
           label: 'Full-width',
-          value: '100%',
+          value: {
+            width: '100%'
+          }
         },
             {
           label: 'Fix-width',
-          value: '200px',
+          value: {
+            width: '200px'
+          },
         },
       ],
     },
@@ -222,20 +253,26 @@ Custom props are detailed below:
     },
     {
       name: 'Style Preset',
-      propName: 'stylePreset',
+      propName: 'overrides',
       options: [
         {
           label: 'iconButtonSolidPrimary',
-          value: 'iconButtonSolidPrimary',
+          value: {
+            stylePreset: 'iconButtonSolidPrimary'
+          },
           isDefault: true,
         },
         {
           label: 'iconButtonOutlinedPrimary',
-          value: 'iconButtonOutlinedPrimary',
+          value: {
+            stylePreset: 'iconButtonOutlinedPrimary'
+          },
         },
         {
           label: 'iconButtonMinimalPrimary',
-          value: 'iconButtonMinimalPrimary',
+          value: {
+              stylePreset: 'iconButtonMinimalPrimary'
+            }
         },
       ],
     },

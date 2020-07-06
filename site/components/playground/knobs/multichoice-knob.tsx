@@ -5,12 +5,27 @@ import {
   getSizingFromTheme,
   css,
   getColorFromTheme,
+  SizingKeys,
+  IconSizeKeys,
 } from 'newskit';
 import {LegacyBlock} from '../../legacy-block';
 import {KnobContainer, StyledTitle, getHash} from './common';
 
+export interface Overrides {
+  typePreset?: string;
+  stylePreset?: string;
+  paddingPreset?: string;
+
+  width?: SizingKeys | string;
+  height?: SizingKeys | string;
+  minWidth?: SizingKeys | string;
+  minHeight?: SizingKeys | string;
+
+  iconSize?: IconSizeKeys;
+  space?: SizingKeys;
+}
 export interface MultiChoiceKnobOptions {
-  value: string;
+  value: string | Overrides;
   label: string;
   isDefault?: boolean;
 }
@@ -19,7 +34,7 @@ export interface MultiChoiceKnobProps {
   label: string;
   options: MultiChoiceKnobOptions[];
   value: MultiChoiceKnobOptions['value'] | undefined;
-  onChange?: (selectedValue: string) => void;
+  onChange?: (selectedValue: MultiChoiceKnobOptions['value']) => void;
 }
 
 interface StyledLabelProps {
@@ -87,12 +102,25 @@ export const MultiChoiceKnob: React.FC<MultiChoiceKnobProps> = ({
   value: selectedValue,
 }) => {
   const hash = getHash();
+
   return (
     <KnobContainer>
       <LegacyBlock display="inline" position="relative">
         <StyledFieldset>
           <StyledLegend>{name}</StyledLegend>
           {options.map(({value, label}) => {
+            let checked;
+
+            if (
+              typeof selectedValue === 'object' &&
+              typeof value === 'object'
+            ) {
+              const propName = Object.keys(value)[0] as keyof Overrides;
+              checked = selectedValue[propName] === value[propName];
+            } else {
+              checked = selectedValue === value;
+            }
+
             const id = `multichoice-knob-${hash}-${label}-${value}`;
             return (
               <React.Fragment key={id}>
@@ -101,8 +129,7 @@ export const MultiChoiceKnob: React.FC<MultiChoiceKnobProps> = ({
                   id={id}
                   data-testid={value}
                   name={hash + name}
-                  value={value}
-                  defaultChecked={selectedValue === value}
+                  defaultChecked={checked}
                   onClick={() => onChange && onChange(value)}
                 />
                 <StyledLabel htmlFor={id}>{label}</StyledLabel>
