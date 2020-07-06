@@ -10,6 +10,8 @@
   "main": "index.js",
   "types": "index.d.ts",
   "repository": "",
+  "sideEffects": false,
+  "module": "./esm/index.js",
   "scripts": {
     "dev": "concurrently --names \"src,storybook,docs\" \"yarn build:ts --watch\" \"yarn dev:storybook\" \"next site -p 8081\"",
     "dev:docs": "concurrently --names \"src,docs\" \"yarn build:ts --watch\" \"next site -p 8081\"",

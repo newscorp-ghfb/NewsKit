@@ -55,3 +55,11 @@ So here is what is happening in this example:
 As a result of all this you should see this component inside your page:
 
 <ExampleComponent />
+
+### Bundling
+
+When using any javascript bundler to ship the application to production, it is vital that you should minimize the amount of javascript file size.
+This applies to every npm package that you use, not just with newskit, and one way to do this is by removing any unused code in the application bundle.
+This is known as [treeskaing](https://webpack.js.org/guides/tree-shaking/), and newskit supports this out of the box.
+However, you need to ensure that this is optimisation is enabled in the bundle configuration.
+For example for using this with webpack, you need to specify `module` resolve [mainFields](https://webpack.js.org/configuration/resolve/#resolvemainfields).
