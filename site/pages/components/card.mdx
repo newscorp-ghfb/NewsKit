@@ -1,0 +1,83 @@
+import Playground from '../../components/playground';
+import Prop from '../../components/prop';
+import {LegacyBlock} from '../../components/legacy-block';
+import Layout from '../../components/layout';
+import {Card} from 'newskit';
+import {CodeFromFile} from '../../components/code';
+
+
+export default Layout;
+
+# Card
+
+## Overview
+
+Cards group content that allows users to browse a collection of related items and actions in a modular, easy-to-read way.
+There are three main areas to the card component: Media, Content and Action area.
+
+### Usage
+
+Cards are used to display a summary of content and will reveal more details upon interaction.
+
+## Props
+
+<LegacyBlock marginTop="sizing040">
+  <Prop name="href" type="string">
+    If provided, the Card will render as an anchor with this prop value as the
+    href.
+  </Prop>
+  <Prop name="media" type="ImageProps | React.ComponentType">
+    If this parameter is provided as ImageProps, it will render the media as an image. <br />
+    If this is provided as a custom React component, it will render the React component directly.
+    <Prop name="src" type="string">
+      Image file path that is used directly in the 'src' attribute of
+      the internal 'img' element.
+    </Prop>
+    <Prop name="alt" type="string">
+      Image description that is used directly in the 'alt' attribute of
+      the internal 'img' element.
+    </Prop>
+    <Prop name="loadingAspectRatio" type="string" default="3:2">
+      This is a string interpolation of the aspect ratio of the loading container of the image.
+      This is also used to determine the height or width of the image if only one dimension is provided.
+      The default loading aspect ratio of media is 3:2, however, a user should be able to pass any ratio to the media.
+    </Prop>
+  </Prop>
+  <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component and provided elements. Refer to the defaults below for the object structure:
+    <CodeFromFile path="examples/default-presets/card.tsx" />
+  </Prop>
+</LegacyBlock>
+
+## Playground
+
+<Playground
+  componentName="Card"
+  newskitPath="/card"
+  component={props => (
+      <Card {...props}/>
+  )}
+  knobs={[
+    {
+      name: 'Href',
+      propName: 'href',
+      type: 'string',
+      value: 'http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png',
+    },
+    {
+      name: 'Media',
+      propName: 'media',
+      value: {
+        src: 'http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png',
+        alt: 'Card Media',
+      },
+    },
+  ]}
+/>
+
+### Styling
+
+### Accessibility
+- When creating a tab order for the different parts of the card, remember to put the headline before the image or media so that screen-reader users get the context before the image alt tag.
+- Add aria-label prop to allow a user to describe the action that will be performed when the user interacts with the card. By default, this could be the headline text.
+- When nesting other components of the card, always follow those components' accessibility guidelines.

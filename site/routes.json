@@ -117,6 +117,16 @@
         "id": "/components/button"
       },
       {
+        "title": "Card",
+        "page": true,
+        "id": "/components/card"
+      },
+      {
+        "title": "Card Media",
+        "page": true,
+        "id": "/components/card-media"
+      },
+      {
         "title": "Circular Progress Indicator",
         "page": true,
         "id": "/components/circular-progress-indicator"

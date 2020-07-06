@@ -1,0 +1,5 @@
+{
+  cardMedia: {
+    stylePreset: 'cardMedia',
+  },
+}
