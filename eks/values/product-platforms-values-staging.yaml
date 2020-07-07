@@ -11,11 +11,12 @@ Namespace:
 NewsUKcidr:
   0.0.0.0/0
 FQDN:
-  origin-www.newskit.staging-news.co.uk
+  newskit.staging.ceng.newsuk.tech
 FQDNStorybook:
-  origin-www.storybook.newskit.staging-news.co.uk
+  newskit-storybook.staging.ceng.newsuk.tech
 SSLCertARN:
-  arn:aws:acm:eu-west-1:474887192380:certificate/b170a102-baab-48a4-8a55-af600246b539
+  # this cert is for *.ceng.staging.newsuk.tech
+  arn:aws:acm:eu-west-1:033746730321:certificate/ba403625-cb5d-4bad-af6e-3dc1a452937
 resources:
   limits:
     cpu: "0.4"

@@ -11,12 +11,12 @@ Namespace:
 NewsUKcidr:
   0.0.0.0/0
 FQDN:
-  origin-www.newskit.dev-news.co.uk
+  newskit.ceng-dev.newsuk.tech
 FQDNStorybook:
-  origin-www.storybook.newskit.dev-news.co.uk
+  newskit-storybook.ceng-dev.newsuk.tech
 SSLCertARN:
-# this cert is for *.digiend-dev.ntch.co.uk
-  arn:aws:acm:eu-west-1:720262317718:certificate/9e9bed2a-8818-42e0-b6cb-ddfb1bd792cc
+  # this cert is for *.ceng-dev.newsuk.tech
+  arn:aws:acm:eu-west-1:720262317718:certificate/a623e847-db59-4245-abd9-7a7f68bcd59d
 resources:
   limits:
     cpu: "0.2"

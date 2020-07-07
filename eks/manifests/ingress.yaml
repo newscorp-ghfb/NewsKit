@@ -9,6 +9,7 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/inbound-cidrs: {{ (datasource "config").NewsUKcidr }}
     alb.ingress.kubernetes.io/tags: Environment={{ (datasource "config").Environment }},ServiceOwner=product-plaform,ServiceName={{ (datasource "config").DocSiteName }}
+    alb.ingress.kubernetes.io/certificate-arn: {{ (datasource "config").SSLCertARN }}
     external-dns.alpha.kubernetes.io/hostname: {{ (datasource "config").FQDN }}
   labels:
     app: {{ (datasource "config").DocSiteName }}
@@ -33,6 +34,7 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/inbound-cidrs: {{ (datasource "config").NewsUKcidr }}
     alb.ingress.kubernetes.io/tags: Environment={{ (datasource "config").Environment }},ServiceOwner=product-plaform,ServiceName={{ (datasource "config").StorybookName }}
+    alb.ingress.kubernetes.io/certificate-arn: {{ (datasource "config").SSLCertARN }}
     external-dns.alpha.kubernetes.io/hostname: {{ (datasource "config").FQDNStorybook }}
   labels:
     app: {{ (datasource "config").StorybookName }}
