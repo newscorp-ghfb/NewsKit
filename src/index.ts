@@ -5,8 +5,6 @@ export * from './aspect-ratio';
 export * from './audio-player';
 export * from './block';
 export * from './button';
-export * from './card';
-export * from './card-media';
 export * from './consent';
 export * from './date-line';
 export * from './divider';

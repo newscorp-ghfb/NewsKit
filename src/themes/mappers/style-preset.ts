@@ -936,9 +936,6 @@ export const createStylePresets = ({
   //
 
   presets.imageSharp = {
-    base: {
-      borderRadius: borderRadiusPrimitives.borderRadiusSharp,
-    },
     loading: {
       backgroundColor: colorPrimitives.skeleton010,
       iconColor: colorPrimitives.inkNonEssential,
@@ -1064,12 +1061,6 @@ export const createStylePresets = ({
   };
 
   presets.dividerVertical = presets.dividerHorizontal;
-
-  //
-  // Card
-  //
-
-  presets.cardMedia = presets.imageSharp;
 
   return presets;
 };
