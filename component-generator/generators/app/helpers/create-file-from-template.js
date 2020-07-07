@@ -1,12 +1,14 @@
-module.exports = (contextObject,{templatePath,destinationPath},{componentName,componentFileName}) => {
+module.exports = (
+  contextObject,
+  {templatePath, destinationPath},
+  {componentName, componentFileName},
+) => {
   contextObject.fs.copyTpl(
     contextObject.templatePath(templatePath),
-    contextObject.destinationPath(
-      destinationPath,
-    ),
+    contextObject.destinationPath(destinationPath),
     {
-      componentName: componentName,
-      componentFileName: componentFileName,
+      componentName,
+      componentFileName,
     },
   );
-}
+};

@@ -1,22 +1,20 @@
-const parser = require("babylon");
-const traverse = require("@babel/traverse").default;
-const t = require('babel-types');
-const generate = require('babel-generator').default;
+const parser = require('babylon');
+const traverse = require('@babel/traverse').default;
+const t = require('@babel/types');
+const generate = require('@babel/generator').default;
 
 let lastExport = null;
 let isInserted = false;
 
-
-
-const findingLastExport = (traverse,ast) => {
+const findingLastExport = ast => {
   traverse(ast, {
-  ExportDeclaration(path) {
-    lastExport = path;
-  },
+    ExportDeclaration(path) {
+      lastExport = path;
+    },
   });
-}
+};
 
-const addingNewImport = (traverse,ast,exportAllDeclaration) => {
+const addingNewImport = (ast, exportAllDeclaration) => {
   traverse(ast, {
     // Gets called when visiting *any* node
     enter(path) {
@@ -26,14 +24,15 @@ const addingNewImport = (traverse,ast,exportAllDeclaration) => {
       }
     },
   });
-}
+};
 
-module.exports  = (source, componentName) => {
-    
-    const ast = parser.parse(source, { sourceType: 'module' });
-    const exportAllDeclaration = t.exportAllDeclaration(t.stringLiteral(`./${componentName}`));
+module.exports = (source, componentName) => {
+  const ast = parser.parse(source, {sourceType: 'module'});
+  const exportAllDeclaration = t.exportAllDeclaration(
+    t.stringLiteral(`./${componentName}`),
+  );
 
-    findingLastExport(traverse,ast)
-    addingNewImport(traverse,ast,exportAllDeclaration)
-    return generate(ast, {}, source);
+  findingLastExport(ast);
+  addingNewImport(ast, exportAllDeclaration);
+  return generate(ast, {}, source);
 };

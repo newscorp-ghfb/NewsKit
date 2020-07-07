@@ -6,4 +6,4 @@ docs
 kubernetes
 public
 site/static
-component-generator
+component-generator/generators/app/templates/

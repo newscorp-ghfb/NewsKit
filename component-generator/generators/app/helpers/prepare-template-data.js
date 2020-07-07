@@ -24,5 +24,5 @@ module.exports = (componentName, componentFileName) => ({
   names: {
     componentName,
     componentFileName,
-  }
+  },
 });
