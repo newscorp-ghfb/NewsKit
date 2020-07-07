@@ -1,0 +1,6 @@
+{
+    "extends": "../jsconfig.common.json",
+    "compilerOptions": {
+        "module":"es2015",
+    } 
+}
