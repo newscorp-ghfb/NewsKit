@@ -6,7 +6,6 @@ const generate = require('babel-generator').default;
 let lastExport = null;
 let isInserted = false;
 
-const exportAllDeclaration = t.exportAllDeclaration(t.stringLiteral(`./${componentName}`));
 
 
 const findingLastExport = (traverse,ast) => {
@@ -17,7 +16,7 @@ const findingLastExport = (traverse,ast) => {
   });
 }
 
-const addingNewImport = (traverse,ast) => {
+const addingNewImport = (traverse,ast,exportAllDeclaration) => {
   traverse(ast, {
     // Gets called when visiting *any* node
     enter(path) {
@@ -32,9 +31,9 @@ const addingNewImport = (traverse,ast) => {
 module.exports  = (source, componentName) => {
     
     const ast = parser.parse(source, { sourceType: 'module' });
+    const exportAllDeclaration = t.exportAllDeclaration(t.stringLiteral(`./${componentName}`));
 
     findingLastExport(traverse,ast)
-    addingNewImport(traverse,ast)
+    addingNewImport(traverse,ast,exportAllDeclaration)
     return generate(ast, {}, source);
 };
-
