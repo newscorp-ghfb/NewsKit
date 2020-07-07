@@ -3,6 +3,24 @@ resource "aws_route53_zone" "newskit" {
   tags = local.tags
 }
 
+resource "aws_route53_record" "akamai" {
+  for_each = var.domain_mapping
+  zone_id  = aws_route53_zone.newskit.zone_id
+  name     = each.value
+  type     = "CNAME"
+  ttl      = "360"
+  records  = ["${each.key}.${var.zone_name}.edgesuite.net"]
+}
+
+resource "aws_route53_record" "origin" {
+  for_each = var.domain_mapping
+  zone_id  = aws_route53_zone.newskit.zone_id
+  name     = "origin-${each.key}"
+  type     = "CNAME"
+  ttl      = "360"
+  records  = ["${each.value}.${var.cluster_domain}"]
+}
+
 resource "aws_route53_record" "acme_challenge" {
   for_each = var.acme_challenges
   zone_id  = aws_route53_zone.newskit.zone_id
@@ -10,13 +28,4 @@ resource "aws_route53_record" "acme_challenge" {
   type     = "TXT"
   ttl      = "60"
   records  = [each.value]
-}
-
-resource "aws_route53_record" "host" {
-  for_each = var.subdomains
-  zone_id  = aws_route53_zone.newskit.zone_id
-  name     = each.value
-  type     = "CNAME"
-  ttl      = "360"
-  records  = ["${each.value}.${var.zone_name}.edgesuite.net"]
 }

@@ -6,10 +6,17 @@ variable "zone_name" {
   description = "Hosted zone name"
 }
 
-variable "subdomains" {
-  type        = set(string)
+variable "domain_mapping" {
+  type        = map(string)
   description = "Subdomains to set records for"
-  default     = ["www", "storybook"]
+  default     = {
+    "www" = "newskit"
+    "storybook" = "newskit-storybook"
+  }
+}
+
+variable "cluster_domain" {
+  description = "Top domain for EKS cluster"
 }
 
 variable "acme_challenges" {
