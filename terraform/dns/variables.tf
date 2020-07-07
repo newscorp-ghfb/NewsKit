@@ -9,8 +9,8 @@ variable "zone_name" {
 variable "domain_mapping" {
   type        = map(string)
   description = "Subdomains to set records for"
-  default     = {
-    "www" = "newskit"
+  default = {
+    "www"       = "newskit"
     "storybook" = "newskit-storybook"
   }
 }
