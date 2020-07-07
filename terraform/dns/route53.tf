@@ -6,7 +6,7 @@ resource "aws_route53_zone" "newskit" {
 resource "aws_route53_record" "akamai" {
   for_each = var.domain_mapping
   zone_id  = aws_route53_zone.newskit.zone_id
-  name     = each.value
+  name     = each.key
   type     = "CNAME"
   ttl      = "360"
   records  = ["${each.key}.${var.zone_name}.edgesuite.net"]
