@@ -108,12 +108,27 @@ commands:
           cd terraform/<< parameters.package >>
           terraform apply -auto-approve
 
+  skip_if_infra_only_pr:
+    description: Skip PR job execution if only infrastructure was changed
+    steps:
+      - run:
+          name: Skip if only infrastructure was changed
+          command: |
+            if git rev-parse --abbrev-ref HEAD | egrep -q '^(feat|fix)'; then
+              base_commit=`git merge-base origin/develop HEAD`
+              if ! git diff --name-only $base_commit | egrep -qv '^(eks|terraform)/'; then
+                echo "Skipping as only infrastructure has been changed"
+                circleci-agent step halt
+              fi
+            fi
+
 jobs:
   install_deps:
     working_directory: ~/project
     executor: node
     steps:
       - checkout
+      - skip_if_infra_only_pr
       - restore_cache:
           keys:
             - yarn-build-{{ checksum "yarn.lock" }}
@@ -138,6 +153,7 @@ jobs:
     executor: node
     steps:
       - checkout
+      - skip_if_infra_only_pr
       - attach_workspace:
           at: ~/project
       - run:
@@ -155,6 +171,7 @@ jobs:
     executor: node
     steps:
       - checkout
+      - skip_if_infra_only_pr
       - attach_workspace:
           at: ~/project
       - run:
@@ -172,6 +189,7 @@ jobs:
     executor: node
     steps:
       - checkout
+      - skip_if_infra_only_pr
       - attach_workspace:
           at: ~/project
       - run:
@@ -189,6 +207,7 @@ jobs:
     executor: node
     steps:
       - checkout
+      - skip_if_infra_only_pr
       - attach_workspace:
           at: ~/project
       - run:
@@ -206,6 +225,7 @@ jobs:
     executor: node
     steps:
       - checkout
+      - skip_if_infra_only_pr
       - attach_workspace:
           at: ~/project
       - run:
@@ -249,6 +269,7 @@ jobs:
     executor: node
     steps:
       - checkout
+      - skip_if_infra_only_pr
       - attach_workspace:
           at: ~/project
       - run:
@@ -286,6 +307,7 @@ jobs:
     executor: cypress
     steps:
       - checkout
+      - skip_if_infra_only_pr
       - attach_workspace:
           at: ~/project
       - run:
@@ -303,6 +325,7 @@ jobs:
     executor: cypress
     steps:
       - checkout
+      - skip_if_infra_only_pr
       - restore_cache:
           keys:
             - v1-cypress-{{ checksum "yarn.lock" }}
@@ -329,6 +352,7 @@ jobs:
     executor: cypress
     steps:
       - checkout
+      - skip_if_infra_only_pr
       - restore_cache:
           keys:
             - v1-cypress-{{ checksum "yarn.lock" }}
@@ -349,6 +373,7 @@ jobs:
     executor: cypress
     steps:
       - checkout
+      - skip_if_infra_only_pr
       - restore_cache:
           keys:
             - v1-cypress-{{ checksum "yarn.lock" }}
