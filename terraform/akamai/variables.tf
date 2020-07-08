@@ -3,8 +3,11 @@ variable "environment" {
 }
 
 variable "akamai_group" {
-  type    = string
   default = "News UK Ion Group - 2-7ZR3M"
+}
+
+variable "origin_cert_cn" {
+  default = "Origin certificate common or server alternative name to accept"
 }
 
 variable "hostname_map" {

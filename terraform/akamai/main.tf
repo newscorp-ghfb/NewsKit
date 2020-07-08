@@ -489,7 +489,8 @@ data "akamai_property_rules" "rules" {
         key = "customValidCnValues"
         values = [
           "{{Origin Hostname}}",
-          "{{Forward Host Header}}"
+          "{{Forward Host Header}}",
+          var.origin_cert_cn
         ]
       }
       option {

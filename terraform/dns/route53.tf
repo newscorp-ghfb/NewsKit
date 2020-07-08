@@ -9,7 +9,7 @@ resource "aws_route53_record" "akamai" {
   name     = each.key
   type     = "CNAME"
   ttl      = "360"
-  records  = ["${each.key}.${var.zone_name}.edgesuite.net"]
+  records  = ["www.${var.zone_name}.edgesuite.net"]
 }
 
 resource "aws_route53_record" "origin" {
