@@ -30,8 +30,6 @@ resource "akamai_property" "property" {
   rule_format = "latest"
 
   rules = data.akamai_property_rules.rules.json
-
-  variables = akamai_property_variables.origin.json
 }
 
 data "akamai_contract" "contract" {
@@ -162,6 +160,45 @@ data "akamai_property_rules" "rules" {
       }
       criteria_match = "all"
       comment        = "Improves the performance of delivering objects to end users. Behaviors in this rule are applied to all requests as appropriate."
+    }
+    rule {
+      name = "Redirect to HTTPS"
+      behavior {
+        name = "redirect"
+        option {
+          key = "queryString"
+          value = "APPEND"
+        }
+        option {
+          key = "responseCode"
+          value = "301"
+        }
+        option {
+          key = "destinationHostname"
+          value = "SAME_AS_REQUEST"
+        }
+        option {
+          key = "destinationPath"
+          value = "SAME_AS_REQUEST"
+        }
+        option {
+          key = "destinationProtocol"
+          value = "HTTPS"
+        }
+        option {
+          key = "mobileDefaultChoice"
+          value = "DEFAULT"
+        }
+      }
+      criteria {
+        name = "requestProtocol"
+        option {
+          key = "value"
+          value = "HTTP"
+        }
+      }
+      criteria_match = "all"
+      comment = "Redirect to the same URL on HTTPS protocol, issuing a 301 response code (Moved Permanently)"
     }
     rule {
       name = "Offload"
@@ -417,25 +454,6 @@ data "akamai_property_rules" "rules" {
       comment        = "Controls caching, which offloads traffic away from the origin. Most objects types are not cached. However, the child rules override this behavior for certain subsets of requests."
     }
     behavior {
-      name = "setVariable"
-      option {
-        key   = "valueSource"
-        value = "EXPRESSION"
-      }
-      option {
-        key   = "transform"
-        value = "NONE"
-      }
-      option {
-        key   = "variableName"
-        value = "PMUSER_ORIGIN"
-      }
-      option {
-        key   = "variableValue"
-        value = "origin-{{builtin.AK_HOST}}"
-      }
-    }
-    behavior {
       name = "origin"
       option {
         key   = "cacheKeyHostname"
@@ -455,7 +473,7 @@ data "akamai_property_rules" "rules" {
       }
       option {
         key   = "hostname"
-        value = "{{user.PMUSER_ORIGIN}}"
+        value = "origin-{{builtin.AK_HOST}}"
       }
       option {
         key   = "httpPort"
@@ -556,19 +574,7 @@ data "akamai_property_rules" "rules" {
   }
 }
 
-resource "akamai_property_variables" "origin" {
-  variables {
-    variable {
-      name        = "PMUSER_ORIGIN"
-      value       = ""
-      description = "Origin Hostname"
-      hidden      = false
-      sensitive   = false
-    }
-  }
-}
-
-resource "akamai_property_activation" "example" {
+resource "akamai_property_activation" "production" {
   property = akamai_property.property.id
   network  = "PRODUCTION"
   activate = true
@@ -579,4 +585,12 @@ resource "akamai_property_activation" "example" {
 ## Outputs ##
 output "rule_tree" {
   value = data.akamai_property_rules.rules.json
+}
+
+output "property_id" {
+  value = akamai_property.property.id
+}
+
+output "activation_status" {
+  value = akamai_property_activation.production.status
 }
