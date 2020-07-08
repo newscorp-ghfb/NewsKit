@@ -166,39 +166,39 @@ data "akamai_property_rules" "rules" {
       behavior {
         name = "redirect"
         option {
-          key = "queryString"
+          key   = "queryString"
           value = "APPEND"
         }
         option {
-          key = "responseCode"
+          key   = "responseCode"
           value = "301"
         }
         option {
-          key = "destinationHostname"
+          key   = "destinationHostname"
           value = "SAME_AS_REQUEST"
         }
         option {
-          key = "destinationPath"
+          key   = "destinationPath"
           value = "SAME_AS_REQUEST"
         }
         option {
-          key = "destinationProtocol"
+          key   = "destinationProtocol"
           value = "HTTPS"
         }
         option {
-          key = "mobileDefaultChoice"
+          key   = "mobileDefaultChoice"
           value = "DEFAULT"
         }
       }
       criteria {
         name = "requestProtocol"
         option {
-          key = "value"
+          key   = "value"
           value = "HTTP"
         }
       }
       criteria_match = "all"
-      comment = "Redirect to the same URL on HTTPS protocol, issuing a 301 response code (Moved Permanently)"
+      comment        = "Redirect to the same URL on HTTPS protocol, issuing a 301 response code (Moved Permanently)"
     }
     rule {
       name = "Offload"
