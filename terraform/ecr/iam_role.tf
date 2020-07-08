@@ -1,22 +1,25 @@
-resource "aws_iam_role" "ncu-product-platforms-iam-role" {
+resource "aws_iam_role" "ecr" {
   name        = "ncu-product-platforms-assume-role"
   description = "Role to be consmed by kube2iam"
   tags        = local.tags
 
-  assume_role_policy = <<EOF
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "DEVContentClusterRoleAccess",
-            "Action": "sts:AssumeRole",
-            "Principal": {
-                 "AWS": "arn:aws:iam::720262317718:role/devcontent-cluster.kubernetes_worker",
-                 "AWS": "arn:aws:iam::940731442544:user/svc-ncu-product-platforms"
-            },
-            "Effect": "Allow"
-        }
-    ]
+  assume_role_policy = data.aws_iam_policy_document.cluster_access.json
 }
-EOF
+
+data "aws_iam_policy_document" "cluster_access" {
+  statement {
+    sid = "DEVContentClusterRoleAccess"
+
+    actions = ["sts:AssumeRole"]
+
+    effect = "Allow"
+
+    principals {
+      type = "AWS"
+      identifiers = [
+        "arn:aws:iam::940731442544:user/svc-ncu-product-platforms",
+        "AROAJQX7CD6B563F5XNHO", #TODO: this was set manually - find out why.
+      ]
+    }
+  }
 }
