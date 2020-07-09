@@ -1,20 +1,20 @@
-const parser = require('babylon');
+const parser = require('@babel/parser');
 const traverse = require('@babel/traverse').default;
 const t = require('@babel/types');
 const generate = require('@babel/generator').default;
 
-let lastExport = null;
-let isInserted = false;
-
 const findingLastExport = ast => {
+  let lastExport = null;
   traverse(ast, {
     ExportDeclaration(path) {
       lastExport = path;
     },
   });
+  return lastExport;
 };
 
-const addingNewImport = (ast, exportAllDeclaration) => {
+const addingNewImport = (ast, exportAllDeclaration, lastExport) => {
+  let isInserted = false;
   traverse(ast, {
     // Gets called when visiting *any* node
     enter(path) {
@@ -32,7 +32,7 @@ module.exports = (source, componentName) => {
     t.stringLiteral(`./${componentName}`),
   );
 
-  findingLastExport(ast);
-  addingNewImport(ast, exportAllDeclaration);
+  const lastExport = findingLastExport(ast);
+  addingNewImport(ast, exportAllDeclaration, lastExport);
   return generate(ast, {}, source);
 };
