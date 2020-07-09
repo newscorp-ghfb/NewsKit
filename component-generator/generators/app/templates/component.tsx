@@ -4,7 +4,6 @@ import {styled, getSizingFromTheme} from '../utils/style';
 
 const Container = styled.div<<%= componentName %>Props>`
   margin: ${getSizingFromTheme('sizing050')};
-  text-transform: ${({uppercase}) => uppercase ? `uppercase` : null };
 `;
 
 export const  <%= componentName %>: React.FC<<%= componentName %>Props>  = (props) => {

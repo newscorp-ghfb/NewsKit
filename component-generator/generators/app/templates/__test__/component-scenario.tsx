@@ -20,9 +20,6 @@ export default {
              <<%= componentName %>  />
           </Container>
           <Container>
-             <<%= componentName %> uppercase />
-          </Container>
-          <Container>
              <<%= componentName %>> 
                this is a text 
              </<%= componentName %>>
