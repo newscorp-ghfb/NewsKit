@@ -52,6 +52,11 @@ export const defaultPresets = {
       space: 'sizing020',
     },
   },
+  card: {
+    media: {
+      stylePreset: 'imageSharp',
+    },
+  },
   iconButton: {
     small: {
       stylePreset: 'iconButtonDefault',

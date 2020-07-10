@@ -15,7 +15,7 @@
   "scripts": {
     "dev": "concurrently --names \"src,storybook,docs\" \"yarn build:ts --watch\" \"yarn dev:storybook\" \"next site -p 8081\"",
     "dev:docs": "concurrently --names \"src,docs\" \"yarn build:ts --watch\" \"next site -p 8081\"",
-    "dev:storybook": "start-storybook --ci -p 6006 -s ./fonts",
+    "dev:storybook": "start-storybook --ci -p 6006 -s ./fonts,./static",
     "eyes:storybook": "eyes-storybook --conf applitools.components.config.js",
     "lint:code:base": "eslint --report-unused-disable-directives --ext=.js,.ts,.jsx,.tsx --cache",
     "lint:code": "scripts/assert-files-and-folders.js && yarn lint:code:base .",

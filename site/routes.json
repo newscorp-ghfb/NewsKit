@@ -117,6 +117,11 @@
         "id": "/components/button"
       },
       {
+        "title": "Card",
+        "page": true,
+        "id": "/components/card"
+      },
+      {
         "title": "Circular Progress Indicator",
         "page": true,
         "id": "/components/circular-progress-indicator"
