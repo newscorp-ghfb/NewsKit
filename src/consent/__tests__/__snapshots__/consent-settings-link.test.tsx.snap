@@ -11,6 +11,8 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   color: #2F75D7;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-2 svg {
@@ -20,6 +22,8 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 
 .emotion-2:hover:not(:disabled) {
   color: #2F75D7;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-2:hover:not(:disabled) svg {
@@ -37,12 +41,12 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 }
 
 .emotion-2:visited:not(:disabled) {
-  color: #903D91;
+  color: #2F75D7;
 }
 
 .emotion-2:visited:not(:disabled) svg {
-  fill: #903D91;
-  color: #903D91;
+  fill: #2F75D7;
+  color: #2F75D7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -154,6 +158,8 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   color: #2F75D7;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -171,6 +177,8 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 
 .emotion-2:hover:not(:disabled) {
   color: #2F75D7;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-2:hover:not(:disabled) svg {
@@ -188,12 +196,12 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 }
 
 .emotion-2:visited:not(:disabled) {
-  color: #903D91;
+  color: #2F75D7;
 }
 
 .emotion-2:visited:not(:disabled) svg {
-  fill: #903D91;
-  color: #903D91;
+  fill: #2F75D7;
+  color: #2F75D7;
 }
 
 .emotion-2::before {
@@ -247,6 +255,8 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   color: #2F75D7;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-2 svg {
@@ -256,6 +266,8 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
 
 .emotion-2:hover:not(:disabled) {
   color: #2F75D7;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-2:hover:not(:disabled) svg {
@@ -273,12 +285,12 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
 }
 
 .emotion-2:visited:not(:disabled) {
-  color: #903D91;
+  color: #2F75D7;
 }
 
 .emotion-2:visited:not(:disabled) svg {
-  fill: #903D91;
-  color: #903D91;
+  fill: #2F75D7;
+  color: #2F75D7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Link} from '../link';
+import {LinkStandalone} from '../link';
 import {LinkProps} from '../link/types';
 
 type SPWindowTCF1 = Window & {
@@ -26,8 +26,7 @@ export const ConsentSettingsLink: React.FC<ConsentSettingsLinkProps> = ({
   children = 'Manage Consent',
   ...props
 }) => (
-  // eslint-disable-next-line jsx-a11y/anchor-is-valid
-  <Link
+  <LinkStandalone
     {...props}
     href="#"
     role="button"
@@ -59,5 +58,5 @@ export const ConsentSettingsLink: React.FC<ConsentSettingsLinkProps> = ({
     }}
   >
     {children}
-  </Link>
+  </LinkStandalone>
 );
