@@ -48,6 +48,10 @@ executors:
     docker:
       - image: hashicorp/terraform:0.12.21
 
+  python:
+    docker:
+      - image: circleci/python:3.7
+
   node:
     docker:
       - image: circleci/node:10.16
@@ -55,6 +59,7 @@ executors:
   cypress:
     docker:
       - image: cypress/browsers:node12.16.2-chrome81-ff75
+
   java:
     docker:
      - image: circleci/openjdk:8u252-jdk-buster
@@ -65,11 +70,15 @@ commands:
     parameters:
       package:
         type: string
+      terraform_arg:
+        description: provide terraform arguments
+        type: string
+        default: ""
     steps:
       - run: |
           source $BASH_ENV
           cd terraform/<< parameters.package >>
-          terraform init
+          terraform init << parameters.terraform_arg >>
 
   terraform_plan:
     description: Run Terraform Plan
@@ -108,6 +117,59 @@ commands:
           cd terraform/<< parameters.package >>
           terraform apply -auto-approve
 
+  aws_assume_role:
+    description: Assume AWS role
+    parameters:
+      aws_access_key_id:
+        description: AWS Access Key Id
+        type: string
+        default: "${AWS_ACCESS_KEY_ID}"
+      aws_secret_key:
+        description: AWS Secret Key
+        type: string
+        default: "${AWS_SECRET_ACCESS_KEY}"
+      aws_assume_role_arn:
+        description: AWS ARN For Assume Role
+        type: string
+        default: "${AWS_ASSUME_ROLE_ARN}"
+      job_type:
+        description: The job type to be used
+        type: string
+        default: "default"
+    steps:
+      - run: |
+          export AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
+          export AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
+          export temp_role=$(aws sts assume-role \
+                  --role-arn "<< parameters.aws_assume_role_arn >>" \
+                  --role-session-name "circle-ci-assume")
+          export AWS_ACCESS_KEY_ID_TEMP=$(echo $temp_role | jq .Credentials.AccessKeyId | xargs)
+          export AWS_SECRET_ACCESS_KEY_TEMP=$(echo $temp_role | jq .Credentials.SecretAccessKey | xargs)
+          export AWS_SESSION_TOKEN_TEMP=$(echo $temp_role | jq .Credentials.SessionToken | xargs)
+          echo "export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID_TEMP" >> $BASH_ENV
+          echo "export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY_TEMP" >> $BASH_ENV
+          echo "export AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN_TEMP" >> $BASH_ENV
+          source $BASH_ENV
+          cat $BASH_ENV | grep AWS_ACCESS_KEY_ID >> assume_role_creds_<< parameters.job_type >>.txt
+          cat $BASH_ENV | grep AWS_SECRET_ACCESS_KEY >> assume_role_creds_<< parameters.job_type >>.txt
+          cat $BASH_ENV | grep AWS_SESSION_TOKEN >> assume_role_creds_<< parameters.job_type >>.txt
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - assume_role_creds_<< parameters.job_type >>.txt
+
+  aws_assume_role_file:
+    description: Assume AWS role from the workspace file
+    parameters:
+      job_type:
+        description: The job type to be used
+        type: string
+        default: "default"
+    steps:
+      - run: |
+          cat assume_role_creds_<< parameters.job_type >>.txt >> $BASH_ENV
+          source $BASH_ENV
+
   skip_if_infra_only_pr:
     description: Skip PR job execution if only infrastructure was changed
     steps:
@@ -120,6 +182,22 @@ commands:
                 echo "Skipping as only infrastructure has been changed"
                 circleci-agent step halt
               fi
+            fi
+
+  run_only_on_folder_change:
+    description: checks whether there is change on the folder in last two commits.
+    parameters:
+      folder:
+        description: Path to folder
+        type: string
+    steps:
+      - run:
+          name: Skip if there are not changes to folder
+          command: |
+            export CHANGES=$(git diff << pipeline.git.base_revision >> << pipeline.git.revision >> << parameters.folder >> 2>&1)
+            if [ -n "$CHANGES" ]; then
+              echo "Skipping as there are no changes to << parameters.folder >>"
+              circleci-agent step halt
             fi
 
 jobs:
@@ -236,33 +314,67 @@ jobs:
       - slack/status:
           <<: *slack_status
 
+  init_aws:
+    parameters:
+      job_type:
+        type: string
+        default: "default"
+      update_kubeconfig:
+        type: boolean
+        default: true
+    working_directory: ~/project
+    executor: python
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run: sudo pip install awscli
+      - aws_assume_role:
+          job_type: << parameters.job_type >>
+
   deploy_terraform:
     parameters:
       package:
         type: string
+      akamai:
+        type: boolean
+        default: false
+      environment:
+        type: string
+        default: dev
     working_directory: ~/project
     executor: terraform
     steps:
       - checkout
       - attach_workspace:
           at: ~/project
-      - run:
-          name: Setup akamai
-          command: |
-            echo "[default]
-            client_secret = ${AKAMAI_SECRET}
-            host = ${AKAMAI_HOST}
-            access_token = ${AKAMAI_ACCESS_TOKEN}
-            client_token = ${AKAMAI_CLIENT_TOKEN}
-            [papi]
-            client_secret = ${AKAMAI_SECRET}
-            host = ${AKAMAI_HOST}
-            access_token = ${AKAMAI_ACCESS_TOKEN}
-            client_token = ${AKAMAI_CLIENT_TOKEN}" > ~/.edgerc
+      - run_only_on_folder_change:
+          folder: ./terraform/<< parameters.package >>
+      - when:
+          condition: << parameters.akamai >>
+          steps:
+            - run:
+                name: Setup akamai
+                command: |
+                  echo "[default]
+                  client_secret = ${AKAMAI_SECRET}
+                  host = ${AKAMAI_HOST}
+                  access_token = ${AKAMAI_ACCESS_TOKEN}
+                  client_token = ${AKAMAI_CLIENT_TOKEN}
+                  [papi]
+                  client_secret = ${AKAMAI_SECRET}
+                  host = ${AKAMAI_HOST}
+                  access_token = ${AKAMAI_ACCESS_TOKEN}
+                  client_token = ${AKAMAI_CLIENT_TOKEN}" > ~/.edgerc
+      - aws_assume_role_file
       - terraform_init:
           package: << parameters.package >>
-      - terraform_force_apply:
+          terraform_arg: -backend-config="key="product-platforms/newskit/akamai/<< parameters.environment >>/terraform.tfstate"
+      - terraform_plan:
           package: << parameters.package >>
+          terraform_arg: -var-file=<< parameters.environment >>.tfvars
+      # - terraform_apply:
+      #     package: << parameters.package >>
 
   test_visual_comps:
     working_directory: ~/project
