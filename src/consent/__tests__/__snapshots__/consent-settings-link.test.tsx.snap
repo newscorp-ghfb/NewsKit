@@ -4,8 +4,6 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 <DocumentFragment>
   .emotion-2 {
   display: inline-block;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;
@@ -149,8 +147,6 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 
 .emotion-2 {
   display: inline-block;
-  -webkit-text-decoration: none;
-  text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;
@@ -244,8 +240,6 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
 <DocumentFragment>
   .emotion-2 {
   display: inline-block;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;

@@ -32,8 +32,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-4 {
   display: inline-block;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;
@@ -245,8 +243,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-28 {
   display: inline-block;
-  -webkit-text-decoration: none;
-  text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;
@@ -254,6 +250,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   color: #2F75D7;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-28 svg {
@@ -263,6 +261,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-28:hover:not(:disabled) {
   color: #2F75D7;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-28:hover:not(:disabled) svg {
@@ -280,12 +280,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-28:visited:not(:disabled) {
-  color: #903D91;
+  color: #2F75D7;
 }
 
 .emotion-28:visited:not(:disabled) svg {
-  fill: #903D91;
-  color: #903D91;
+  fill: #2F75D7;
+  color: #2F75D7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -705,8 +705,6 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-4 {
   display: inline-block;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;
@@ -918,8 +916,6 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-28 {
   display: inline-block;
-  -webkit-text-decoration: none;
-  text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;
@@ -927,6 +923,8 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   color: #2F75D7;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-28 svg {
@@ -936,6 +934,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-28:hover:not(:disabled) {
   color: #2F75D7;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-28:hover:not(:disabled) svg {
@@ -953,12 +953,12 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-28:visited:not(:disabled) {
-  color: #903D91;
+  color: #2F75D7;
 }
 
 .emotion-28:visited:not(:disabled) svg {
-  fill: #903D91;
-  color: #903D91;
+  fill: #2F75D7;
+  color: #2F75D7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {

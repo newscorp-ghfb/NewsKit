@@ -59,8 +59,6 @@ exports[`UnorderedList renders different types of children 1`] = `
 
 .emotion-8 {
   display: inline-block;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;

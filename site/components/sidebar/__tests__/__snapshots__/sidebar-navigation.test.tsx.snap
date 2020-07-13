@@ -95,8 +95,6 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
 
 .emotion-8 {
   display: inline-block;
-  -webkit-text-decoration: none;
-  text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;
@@ -104,6 +102,8 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   color: #2F75D7;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-8 svg {
@@ -113,6 +113,8 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
 
 .emotion-8:hover:not(:disabled) {
   color: #2F75D7;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-8:hover:not(:disabled) svg {
@@ -130,12 +132,12 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
 }
 
 .emotion-8:visited:not(:disabled) {
-  color: #903D91;
+  color: #2F75D7;
 }
 
 .emotion-8:visited:not(:disabled) svg {
-  fill: #903D91;
-  color: #903D91;
+  fill: #2F75D7;
+  color: #2F75D7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -816,8 +818,6 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
 
 .emotion-8 {
   display: inline-block;
-  -webkit-text-decoration: none;
-  text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;
@@ -825,6 +825,8 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   color: #2F75D7;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-8 svg {
@@ -834,6 +836,8 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
 
 .emotion-8:hover:not(:disabled) {
   color: #2F75D7;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-8:hover:not(:disabled) svg {
@@ -851,12 +855,12 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
 }
 
 .emotion-8:visited:not(:disabled) {
-  color: #903D91;
+  color: #2F75D7;
 }
 
 .emotion-8:visited:not(:disabled) svg {
-  fill: #903D91;
-  color: #903D91;
+  fill: #2F75D7;
+  color: #2F75D7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -1228,8 +1232,6 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
 
 .emotion-5 {
   display: inline-block;
-  -webkit-text-decoration: none;
-  text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;
@@ -1237,6 +1239,8 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
   color: #2F75D7;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-5 svg {
@@ -1246,6 +1250,8 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
 
 .emotion-5:hover:not(:disabled) {
   color: #2F75D7;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-5:hover:not(:disabled) svg {
@@ -1263,12 +1269,12 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
 }
 
 .emotion-5:visited:not(:disabled) {
-  color: #903D91;
+  color: #2F75D7;
 }
 
 .emotion-5:visited:not(:disabled) svg {
-  fill: #903D91;
-  color: #903D91;
+  fill: #2F75D7;
+  color: #2F75D7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {

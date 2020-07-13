@@ -12,7 +12,6 @@ import {useHasMounted} from '../utils/use-has-mounted';
 
 const StyledLink = styled.a<LinkProps>`
   display: inline-block;
-  text-decoration: ${({noUnderline}) => (noUnderline ? `none` : `underline`)};
   transition-property: color;
   transition-duration: ${getAnimationFromTheme('animationDuration020')};
   transition-timing-function: ${getAnimationFromTheme('animationEaseOut')};

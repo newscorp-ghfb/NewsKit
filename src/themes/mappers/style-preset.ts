@@ -9,6 +9,7 @@ import {
   ColorProperty,
   BorderWidthProperty,
   BorderRadiusProperty,
+  TextDecorationProperty,
 } from 'csstype';
 import {BorderPrimitives} from '../newskit-light/borders';
 import {ColorPrimitives} from '../newskit-light/colors';
@@ -28,6 +29,7 @@ export interface StylePresetStyles {
   color?: ColorProperty;
   borderRadius?: BorderRadiusProperty<string>; // shape
   iconColor?: ColorProperty;
+  textDecoration?: TextDecorationProperty;
 }
 export type StylePresetStyleKeys = keyof StylePresetStyles;
 
@@ -773,6 +775,27 @@ export const createStylePresets = ({
     visited: {
       color: colorPrimitives.inkLinkVisited,
       iconColor: colorPrimitives.inkLinkVisited,
+    },
+  };
+
+  presets.linkStandalone = {
+    base: {
+      color: colorPrimitives.inkLink,
+      iconColor: colorPrimitives.inkLink,
+      textDecoration: 'none',
+    },
+    hover: {
+      color: colorPrimitives.inkLinkHover,
+      iconColor: colorPrimitives.inkLinkHover,
+      textDecoration: 'underline',
+    },
+    active: {
+      color: colorPrimitives.inkLinkActive,
+      iconColor: colorPrimitives.inkLinkActive,
+    },
+    visited: {
+      color: colorPrimitives.inkLink,
+      iconColor: colorPrimitives.inkLink,
     },
   };
 

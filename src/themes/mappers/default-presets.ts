@@ -166,6 +166,9 @@ export const defaultPresets = {
       size: 'iconSize010',
     },
   },
+  linkStandalone: {
+    stylePreset: 'linkStandalone',
+  },
   progressIndicator: {
     track: {
       stylePreset: 'circularProgressIndicatorTrackPrimary',

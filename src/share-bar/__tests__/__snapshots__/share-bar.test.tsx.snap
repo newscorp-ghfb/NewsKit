@@ -269,8 +269,6 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
 
 .emotion-4 {
   display: inline-block;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;
@@ -1013,8 +1011,6 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 
 .emotion-4 {
   display: inline-block;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;
@@ -1423,8 +1419,6 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 
 .emotion-4 {
   display: inline-block;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;
@@ -1887,8 +1881,6 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 
 .emotion-4 {
   display: inline-block;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;
@@ -2326,8 +2318,6 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 
 .emotion-4 {
   display: inline-block;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;
@@ -2826,8 +2816,6 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 
 .emotion-4 {
   display: inline-block;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;
@@ -3308,8 +3296,6 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
 
 .emotion-4 {
   display: inline-block;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;
@@ -3727,8 +3713,6 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 
 .emotion-4 {
   display: inline-block;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 200ms;

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Link} from '..';
+import {Link, LinkStandalone} from '..';
 import {styled} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {Email} from '../../icons/email';
@@ -81,6 +81,32 @@ export default {
           <br />
           <br />
           <Link href="tel:###">Inline telephone link</Link>
+        </Container>
+      ),
+    },
+    {
+      name: 'link-standalone',
+      type: 'story',
+      component: () => (
+        <Container>
+          <StorybookHeading>LinkStandalone component</StorybookHeading>
+          <LinkStandalone href="/">Link Standalone internal</LinkStandalone>
+          <br />
+          <br />
+          <LinkStandalone href="https://google.com">
+            Link Standalone external
+          </LinkStandalone>
+          <br />
+          <br />
+          <LinkStandalone
+            href="https://google.com"
+            overrides={{
+              typePreset: 'flag020',
+              stylePreset: 'articleHeadlineKicker',
+            }}
+          >
+            Link Standalone external with type and style Preset overrides
+          </LinkStandalone>
         </Container>
       ),
     },

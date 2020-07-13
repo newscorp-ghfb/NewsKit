@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withDefaultProps will return a component with merged props taking a function as defaultProps 1`] = `
+<DocumentFragment>
+  <div>
+    {
+  "overrides": {
+    "stylePreset": "linkStandalone"
+  },
+  "functionMock": "props",
+  "test": "props"
+}
+  </div>
+</DocumentFragment>
+`;
+
+exports[`withDefaultProps will return a component with merged props taking an object as defaultProps 1`] = `
+<DocumentFragment>
+  <div>
+    {
+  "overrides": {
+    "stylePreset": "linkStandalone"
+  },
+  "test": "prop"
+}
+  </div>
+</DocumentFragment>
+`;
+
+exports[`withDefaultProps will return a component with merged props taking undefined as defaultProps 1`] = `
+<DocumentFragment>
+  <div>
+    {
+  "overrides": {
+    "stylePreset": "linkStandalone"
+  }
+}
+  </div>
+</DocumentFragment>
+`;
