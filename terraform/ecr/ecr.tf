@@ -32,4 +32,3 @@ data "aws_iam_policy_document" "ecr_cross_account" {
     ]
   }
 }
-
