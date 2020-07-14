@@ -24,14 +24,14 @@ export const getAspectRatioStyles = ({
     };
   }
   if (aspectRatio && aspectRatio.includes(':')) {
-    const [x, y] = aspectRatio.split(':').map(parseFloat);
-    if (!Number.isNaN(x) && !Number.isNaN(y)) {
-      const paddingTop = `${Math.trunc((x / y) * 100)}%`;
+    const [wRatio, hRatio] = aspectRatio.split(':').map(parseFloat);
+    if (!Number.isNaN(wRatio) && !Number.isNaN(hRatio)) {
+      const paddingTop = `${Math.trunc((hRatio / wRatio) * 100)}%`;
       if (!Number.isNaN(widthVal)) {
         return {
           paddingTop,
           width: `${widthVal}${getUnit(widthVal, width)}`,
-          height: `${Math.trunc((widthVal / x) * y)}${getUnit(
+          height: `${Math.trunc((widthVal / wRatio) * hRatio)}${getUnit(
             widthVal,
             width,
           )}`,
@@ -40,7 +40,7 @@ export const getAspectRatioStyles = ({
       if (!Number.isNaN(heightVal)) {
         return {
           paddingTop,
-          width: `${Math.trunc((heightVal / y) * x)}${getUnit(
+          width: `${Math.trunc((heightVal / hRatio) * wRatio)}${getUnit(
             widthVal,
             width,
           )}`,

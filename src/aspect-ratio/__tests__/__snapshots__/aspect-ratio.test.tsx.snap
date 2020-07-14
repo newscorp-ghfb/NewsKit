@@ -6,7 +6,7 @@ exports[`Aspect Ratio renders with height dimensions and 1:3 aspect ratio 1`] = 
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 33%;
+  padding-top: 300%;
 }
 
 .emotion-0 {
@@ -38,7 +38,7 @@ exports[`Aspect Ratio renders with height dimensions in px and 1:3 aspect ratio 
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 33%;
+  padding-top: 300%;
 }
 
 .emotion-0 {
@@ -227,7 +227,7 @@ exports[`Aspect Ratio renders with width dimensions and 1:3 aspect ratio 1`] = `
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 33%;
+  padding-top: 300%;
 }
 
 .emotion-0 {
@@ -259,7 +259,7 @@ exports[`Aspect Ratio renders with width dimensions in px and 1:3 aspect ratio 1
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 33%;
+  padding-top: 300%;
 }
 
 .emotion-0 {

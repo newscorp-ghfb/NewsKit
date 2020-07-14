@@ -17,7 +17,7 @@ Regardless of its child's dimensions, the component will maintain the specified 
 
 <LegacyBlock marginTop="sizing040">
 <Prop name="aspectRatio" type="string">
-    This is a string interpolation of the aspect ratio of the children by `height:width`. e.g. `2:3` for 2 by 3 ratio.
+    This is a string interpolation of the aspect ratio of the children by `width:height`. e.g. `2:3` for 2 by 3 ratio.
   </Prop>
   <Prop name="height" type="string" default="auto">
     Used in combination with `width` to calculate the aspect ratio for the
@@ -75,7 +75,7 @@ Within the bounds of 600px by 600px the aspect ratio should work correctly, but 
     {
       name: 'Aspect Ratio',
       propName: 'aspectRatio',
-      value: '2:3',
+      value: '3:2',
     },
     {
       name: 'children',

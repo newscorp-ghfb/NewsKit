@@ -30,25 +30,25 @@ export default {
       ),
     },
     {
-      name: '2:3 aspect ratio',
+      name: '3:2 aspect ratio',
       type: 'story',
       component: () => (
         <Container>
-          <StorybookHeading>2:3 ratio</StorybookHeading>
-          <AspectRatio aspectRatio="2:3">
-            <ChildContainer>2 by 3 aspect ratio</ChildContainer>
+          <StorybookHeading>3:2 ratio</StorybookHeading>
+          <AspectRatio aspectRatio="3:2">
+            <ChildContainer>3 by 2 aspect ratio</ChildContainer>
           </AspectRatio>
         </Container>
       ),
     },
     {
-      name: '4:5 aspect ratio',
+      name: '5:4 aspect ratio',
       type: 'story',
       component: () => (
         <Container>
-          <StorybookHeading>4:5 aspect ratio</StorybookHeading>
-          <AspectRatio aspectRatio="4:5">
-            <ChildContainer>4 by 5 aspect ratio</ChildContainer>
+          <StorybookHeading>5:4 aspect ratio</StorybookHeading>
+          <AspectRatio aspectRatio="5:4">
+            <ChildContainer>5 by 4 aspect ratio</ChildContainer>
           </AspectRatio>
         </Container>
       ),
@@ -71,12 +71,12 @@ export default {
       ),
     },
     {
-      name: '2:3 aspect ratio with 1:1 image',
+      name: '3:2 aspect ratio with 1:1 image',
       type: 'story',
       component: () => (
         <Container>
-          <StorybookHeading>2:3 aspect ratio with 1:1 image</StorybookHeading>
-          <AspectRatio aspectRatio="2:3">
+          <StorybookHeading>3:2 aspect ratio with 1:1 image</StorybookHeading>
+          <AspectRatio aspectRatio="3:2">
             <img
               src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
               alt="1:1 test"
