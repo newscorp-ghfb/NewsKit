@@ -1,7 +1,6 @@
 interface AmpConsentAttributes {
   id: string;
   layout: string;
-  type: string;
 }
 
 declare namespace JSX {

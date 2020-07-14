@@ -9,7 +9,7 @@ import {createAmpScriptsObject} from '../../scripts/connect-amp-script';
 
 const sourcePointConfigBase = {
   accountId: 'test-accountid',
-  siteName: 'test-sitename',
+  propertyHref: 'test-propertyhref',
 };
 
 describe('Consent renders', () => {
@@ -85,7 +85,7 @@ describe('Consent renders', () => {
           <Consent
             sourcePointConfig={{
               accountId: '259',
-              siteName: 'newskit.dev-news.co.uk',
+              propertyHref: 'newskit.dev-news.co.uk',
               privacyManagerId: '5e7b730dc905f8332c044b5e',
             }}
           />
@@ -107,18 +107,6 @@ describe('Consent renders', () => {
         const result = validator.validateString(html);
         expect(result.status).toEqual('PASS');
       });
-    });
-  });
-
-  describe('with deprecated prop', () => {
-    it('accountId', () => {
-      const fragment = renderToFragment(
-        <Consent
-          sourcePointConfig={sourcePointConfigBase}
-          accountId="test-accountId"
-        />,
-      );
-      expect(fragment).toMatchSnapshot();
     });
   });
 });

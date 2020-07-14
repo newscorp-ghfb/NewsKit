@@ -1,49 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Consent renders with deprecated prop accountId 1`] = `
-<DocumentFragment>
-  <amp-consent
-    id="consent"
-    layout="nodisplay"
-    type="SourcePoint"
-  >
-    <script
-      type="application/json"
-    >
-      {"postPromptUI":"privacy-settings-prompt","clientConfig":{"accountId":"test-accountid","siteName":"test-sitename"}}
-    </script>
-    <div
-      id="privacy-settings-prompt"
-    >
-      <button
-        on="tap:consent.prompt(consent=SourcePoint)"
-        type="submit"
-      >
-        Privacy Settings
-      </button>
-    </div>
-  </amp-consent>
-</DocumentFragment>
-`;
-
 exports[`Consent renders with optional prop privacyManagerId 1`] = `
 <DocumentFragment>
   <amp-consent
     id="consent"
     layout="nodisplay"
-    type="SourcePoint"
   >
     <script
       type="application/json"
     >
-      {"postPromptUI":"privacy-settings-prompt","clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","privacyManagerId":"test-privacymanagerid"}}
+      {"consentRequired":"remote","consentInstanceId":"sourcepoint","postPromptUI":"privacy-settings-prompt","clientConfig":{"isTCFV2":true,"privacyManagerId":"test-privacymanagerid","accountId":"test-accountid","propertyHref":"test-propertyhref"}}
     </script>
     <div
       id="privacy-settings-prompt"
     >
       <button
         on="tap:consent.prompt(consent=SourcePoint)"
-        type="submit"
+        type="button"
       >
         Privacy Settings
       </button>
@@ -57,19 +30,18 @@ exports[`Consent renders with optional prop settingsButtonText 1`] = `
   <amp-consent
     id="consent"
     layout="nodisplay"
-    type="SourcePoint"
   >
     <script
       type="application/json"
     >
-      {"postPromptUI":"privacy-settings-prompt","clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","privacyManagerId":"test-privacymanagerid"}}
+      {"consentRequired":"remote","consentInstanceId":"sourcepoint","postPromptUI":"privacy-settings-prompt","clientConfig":{"isTCFV2":true,"privacyManagerId":"test-privacymanagerid","accountId":"test-accountid","propertyHref":"test-propertyhref"}}
     </script>
     <div
       id="privacy-settings-prompt"
     >
       <button
         on="tap:consent.prompt(consent=SourcePoint)"
-        type="submit"
+        type="button"
       >
         Privacy Manager
       </button>
@@ -83,19 +55,18 @@ exports[`Consent renders with optional prop siteId 1`] = `
   <amp-consent
     id="consent"
     layout="nodisplay"
-    type="SourcePoint"
   >
     <script
       type="application/json"
     >
-      {"postPromptUI":"privacy-settings-prompt","clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","siteId":"test-siteId"}}
+      {"consentRequired":"remote","consentInstanceId":"sourcepoint","postPromptUI":"privacy-settings-prompt","clientConfig":{"isTCFV2":true,"siteId":"test-siteId","accountId":"test-accountid","propertyHref":"test-propertyhref"}}
     </script>
     <div
       id="privacy-settings-prompt"
     >
       <button
         on="tap:consent.prompt(consent=SourcePoint)"
-        type="submit"
+        type="button"
       >
         Privacy Settings
       </button>
@@ -109,19 +80,18 @@ exports[`Consent renders with optional prop targetingParams 1`] = `
   <amp-consent
     id="consent"
     layout="nodisplay"
-    type="SourcePoint"
   >
     <script
       type="application/json"
     >
-      {"postPromptUI":"privacy-settings-prompt","clientConfig":{"accountId":"test-accountid","siteName":"test-sitename","targetingParams":{"foo":"bar"}}}
+      {"consentRequired":"remote","consentInstanceId":"sourcepoint","postPromptUI":"privacy-settings-prompt","clientConfig":{"isTCFV2":true,"targetingParams":{"foo":"bar"},"accountId":"test-accountid","propertyHref":"test-propertyhref"}}
     </script>
     <div
       id="privacy-settings-prompt"
     >
       <button
         on="tap:consent.prompt(consent=SourcePoint)"
-        type="submit"
+        type="button"
       >
         Privacy Settings
       </button>
@@ -135,19 +105,18 @@ exports[`Consent renders with postPromptUI 1`] = `
   <amp-consent
     id="consent"
     layout="nodisplay"
-    type="SourcePoint"
   >
     <script
       type="application/json"
     >
-      {"postPromptUI":"postPrompt","clientConfig":{"accountId":"test-accountid","siteName":"test-sitename"}}
+      {"consentRequired":"remote","consentInstanceId":"sourcepoint","postPromptUI":"postPrompt","clientConfig":{"isTCFV2":true,"accountId":"test-accountid","propertyHref":"test-propertyhref"}}
     </script>
     <div
       id="postPrompt"
     >
       <button
         on="tap:consent.prompt(consent=SourcePoint)"
-        type="submit"
+        type="button"
       >
         Privacy Settings
       </button>
@@ -161,19 +130,18 @@ exports[`Consent renders without postPromptUI 1`] = `
   <amp-consent
     id="consent"
     layout="nodisplay"
-    type="SourcePoint"
   >
     <script
       type="application/json"
     >
-      {"postPromptUI":"privacy-settings-prompt","clientConfig":{"accountId":"test-accountid","siteName":"test-sitename"}}
+      {"consentRequired":"remote","consentInstanceId":"sourcepoint","postPromptUI":"privacy-settings-prompt","clientConfig":{"isTCFV2":true,"accountId":"test-accountid","propertyHref":"test-propertyhref"}}
     </script>
     <div
       id="privacy-settings-prompt"
     >
       <button
         on="tap:consent.prompt(consent=SourcePoint)"
-        type="submit"
+        type="button"
       >
         Privacy Settings
       </button>

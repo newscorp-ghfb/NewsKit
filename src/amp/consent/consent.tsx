@@ -3,21 +3,21 @@ import React from 'react';
 import {connectAmpScript} from '../scripts';
 
 export interface ConsentProps {
-  accountId?: string;
-  siteName?: string;
-  privacyManagerId?: string;
+  settingsButtonText?: string;
+  checkConsentHref?: string;
+  promptUISrc?: string;
   postPromptUI?: string;
   sourcePointConfig: SourcePointConfigProps;
-  settingsButtonText?: string;
 }
 
 export interface SourcePointConfigProps {
   accountId: string;
-  siteName: string;
+  propertyHref?: string;
+  propertyId?: string;
   privacyManagerId?: string;
-  siteId?: string;
-  targetingParams?: object;
+  pmTab?: string;
   stageCampaign?: boolean;
+  targetingParams?: object;
 }
 
 interface AmpConsentButton {
@@ -29,40 +29,34 @@ const AmpConsentButton: React.FC<AmpConsentButton> = ({
   settingsButtonText = 'Privacy Settings',
   ...props
 }) => (
-  <button {...props} type="submit">
+  <button type="button" {...props}>
     {settingsButtonText}
   </button>
 );
 /**
- * @param {string} accountId - Will be deprecated on the component in the next version. Please add it to SourcePointConfig.
- * @param {string} siteName - Will be deprecated on the component in the next version. Please add it to SourcePointConfig.
- * @param {string} privacyManagerId - Will be deprecated on the component in the next version. Please add it to SourcePointConfig.
  * @param {SourcePointConfigProps} sourcePointConfig - The SourcePointConfig Object
  *
  */
 export const Consent = connectAmpScript<ConsentProps>('amp-consent')(
   ({
     settingsButtonText,
-    accountId,
-    siteName,
-    privacyManagerId,
     postPromptUI = 'privacy-settings-prompt',
     sourcePointConfig,
+    ...rest
   }) => (
-    <amp-consent id="consent" layout="nodisplay" type="SourcePoint">
+    <amp-consent id="consent" layout="nodisplay">
       <script
         type="application/json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
+            consentRequired: 'remote',
+            consentInstanceId: 'sourcepoint',
             postPromptUI,
             clientConfig: {
-              // Legacy props
-              accountId,
-              siteName,
-              privacyManagerId,
-              // New props
+              isTCFV2: true,
               ...sourcePointConfig,
             },
+            ...rest,
           }),
         }}
       />
