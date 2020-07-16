@@ -10,7 +10,7 @@ const a11yComponentRules = [
   },
   {name: 'block'},
   {name: 'button', disabledRules: ['color-contrast']},
-  {name: 'date-line'},
+  {name: 'date-time', disabledRules: ['color-contrast']},
   {name: 'divider'},
   {name: 'icons'},
   {name: 'image'},

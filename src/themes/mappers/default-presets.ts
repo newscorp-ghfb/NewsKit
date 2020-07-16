@@ -179,4 +179,16 @@ export const defaultPresets = {
       stylePreset: 'circularProgressIndicatorIndicatorPrimary',
     },
   },
+  dateTime: {
+    stylePreset: 'dateTime',
+    typePreset: 'meta020',
+    prefix: {
+      stylePreset: 'dateTimePrefix',
+      typePreset: 'meta020',
+    },
+    suffix: {
+      stylePreset: 'dateTimeSuffix',
+      typePreset: 'meta020',
+    },
+  },
 };

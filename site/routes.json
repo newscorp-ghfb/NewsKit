@@ -132,9 +132,9 @@
         "id": "/components/consent-settings-link"
       },
       {
-        "title": "Date Line",
+        "title": "Date Time",
         "page": true,
-        "id": "/components/date-line"
+        "id": "/components/date-time"
       },
       {
         "title": "Divider",

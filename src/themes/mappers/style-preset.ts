@@ -1088,6 +1088,19 @@ export const createStylePresets = ({
 
   presets.dividerVertical = presets.dividerHorizontal;
 
+  //
+  // DateTime
+  //
+
+  presets.dateTime = {
+    base: {
+      color: colorPrimitives.inkSubtle,
+    },
+  };
+
+  presets.dateTimePrefix = presets.dateTime;
+  presets.dateTimeSuffix = presets.dateTime;
+
   return presets;
 };
 

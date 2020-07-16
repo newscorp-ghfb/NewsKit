@@ -7,7 +7,7 @@ export * from './block';
 export * from './button';
 export * from './card';
 export * from './consent';
-export * from './date-line';
+export * from './date-time';
 export * from './divider';
 export * from './flag';
 export * from './grid';

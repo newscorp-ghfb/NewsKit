@@ -4,7 +4,7 @@
 const routes = {
   articleByline: '/components/article-byline',
   audioPlayer: '/components/audio-player',
-  dateLine: '/components/date-line',
+  dateTime: '/components/date-time',
   icons: '/foundations/icons',
   radioPlayer: '/components/radio-player',
   spacing: '/foundations/spacing',

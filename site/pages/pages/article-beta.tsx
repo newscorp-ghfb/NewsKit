@@ -2,8 +2,8 @@ import * as React from 'react';
 import {
   styled,
   ThemeProvider,
+  DateTime,
   Headline,
-  DateLine,
   ArticleContent,
   P,
   TagList,
@@ -121,10 +121,9 @@ const Article: React.FC<{
               </AuthorImageContainer>
               <div>
                 <AuthorName>Nick Dorman</AuthorName>
-                <DateLine
+                <DateTime
                   date="2019-10-30T13:18:17Z"
                   dateFormat="d MMMM yyyy"
-                  color="inkSubtle"
                 />
               </div>
             </AuthorContainer>

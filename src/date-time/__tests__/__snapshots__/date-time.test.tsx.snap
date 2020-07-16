@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateTime renders with fallback formatting 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  color: #777777;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: inline-block;
+  white-space: pre;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<time>
+    <span
+      class="emotion-0"
+    >
+      January 25 2019, 3:32pm 
+    </span>
+  </time>
+</DocumentFragment>
+`;
+
+exports[`DateTime renders with overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
+  display: inline-block;
+  white-space: pre;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-1 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
+  display: inline-block;
+  white-space: pre;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.4833333333333334em + 1px);
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc(-0.5458333333333334em + -0.5px);
+}
+
+<time>
+    <span
+      class="emotion-0"
+    >
+      Updated: 
+    </span>
+    <span
+      class="emotion-1"
+    >
+      1 Jan 2017, 4:32, 
+    </span>
+    <span
+      class="emotion-0"
+    >
+      , The Times
+    </span>
+  </time>
+</DocumentFragment>
+`;
+
+exports[`DateTime renders with provided date, format, prefix and suffix 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  color: #777777;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: inline-block;
+  white-space: pre;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<time>
+    <span
+      class="emotion-0"
+    >
+      Updated:  
+    </span>
+    <span
+      class="emotion-0"
+    >
+      25 Jan 2019, 15:32, 
+    </span>
+    <span
+      class="emotion-0"
+    >
+      , The Times
+    </span>
+  </time>
+</DocumentFragment>
+`;

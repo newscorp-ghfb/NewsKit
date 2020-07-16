@@ -2,8 +2,8 @@ import * as React from 'react';
 import {
   ArticleByline,
   ThemeProvider,
+  DateTime,
   Headline,
-  DateLine,
   ArticleContent,
   P,
   TagList,
@@ -45,11 +45,7 @@ const Article: React.FC = () => (
               width="736"
             />
             <ArticleByline bylineData={[{author: 'Nick Dorman'}]} />
-            <DateLine
-              date="2019-10-30T13:18:17Z"
-              dateFormat="d MMMM yyyy"
-              color="inkSubtle"
-            />
+            <DateTime date="2019-10-30T13:18:17Z" dateFormat="d MMMM yyyy" />
           </Cell>
 
           <Cell xs={12} md={6}>

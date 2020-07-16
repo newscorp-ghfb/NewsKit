@@ -1,38 +1,31 @@
 import React from 'react';
-import {styled, getTypePresetFromTheme, MQ} from '../utils/style';
-import {as as emotionAs} from '../utils/component';
-import {getStylePresetFromTheme} from '../utils/style-preset';
+import {styled, getTypePreset, MQ} from '../utils/style';
+import {getStylePreset} from '../utils/style-preset';
 import {StylePresetKeys} from '../themes/mappers/style-preset';
 import {isInlineElement} from '../utils/inline-tags';
-
-interface Overrides {
-  typePreset?: MQ<'body010' | 'body020' | 'body030'>;
-  stylePreset?: MQ<StylePresetKeys>;
-  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'div';
-}
+import {TypePresetKeys} from '../themes';
 
 export interface TextBlockProps {
-  overrides?: Omit<Overrides, 'as'>;
-  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'div';
+  overrides?: {
+    typePreset?: MQ<TypePresetKeys>;
+    stylePreset?: MQ<StylePresetKeys>;
+  };
+  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'div' | 'span';
 }
 
-const StyledBlock = styled.p<Overrides>`
+const StyledBlock = styled.p<TextBlockProps>`
   margin: 0;
   padding: 1px 0;
-  ${getTypePresetFromTheme(undefined, 'typePreset', {withCrop: true})}
-  ${getStylePresetFromTheme(undefined, 'stylePreset')}
-  ${({as}) => as && (isInlineElement(as) ? '' : 'display: block')}
+  ${({overrides}) => overrides && overrides.stylePreset && getStylePreset('')}
+  ${({overrides}) =>
+    overrides &&
+    overrides.typePreset &&
+    getTypePreset(undefined, '', {withCrop: true})}
+  ${({as}) => as && (isInlineElement(as) ? 'display: inline-block;' : '')}
 `;
 
 export const TextBlock: React.FC<TextBlockProps> = ({
-  overrides,
+  overrides = {},
   as,
-  children,
-}) => {
-  const asProp = as ? emotionAs(as as keyof JSX.IntrinsicElements) : {};
-  return (
-    <StyledBlock renderAs={as} {...asProp} {...overrides}>
-      {children}
-    </StyledBlock>
-  );
-};
+  ...props
+}) => <StyledBlock as={as} overrides={overrides} {...props} />;
