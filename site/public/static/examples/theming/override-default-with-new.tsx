@@ -12,7 +12,7 @@ const theme = createTheme('newskit-light-demo', {
       },
     },
     defaultPresets: {
-      articleHeadline: {
+      headline: {
         heading: {
           stylePreset: 'buttonTestStyle',
         },

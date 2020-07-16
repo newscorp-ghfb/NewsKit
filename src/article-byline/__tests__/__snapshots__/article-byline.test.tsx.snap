@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ArticleHeadline renders correctly with authors and links 1`] = `
+exports[`ArticleByline renders correctly with authors and links 1`] = `
 <DocumentFragment>
   .emotion-12 {
   margin: 0;
@@ -230,7 +230,7 @@ exports[`ArticleHeadline renders correctly with authors and links 1`] = `
 </DocumentFragment>
 `;
 
-exports[`ArticleHeadline renders correctly with authors and titles 1`] = `
+exports[`ArticleByline renders correctly with authors and titles 1`] = `
 <DocumentFragment>
   .emotion-2 {
   margin: 0;
@@ -298,7 +298,7 @@ exports[`ArticleHeadline renders correctly with authors and titles 1`] = `
 </DocumentFragment>
 `;
 
-exports[`ArticleHeadline renders correctly with authors, location, titles and links 1`] = `
+exports[`ArticleByline renders correctly with authors, location, titles and links 1`] = `
 <DocumentFragment>
   .emotion-12 {
   margin: 0;
@@ -540,7 +540,7 @@ exports[`ArticleHeadline renders correctly with authors, location, titles and li
 </DocumentFragment>
 `;
 
-exports[`ArticleHeadline renders correctly with multiple authors 1`] = `
+exports[`ArticleByline renders correctly with multiple authors 1`] = `
 <DocumentFragment>
   .emotion-3 {
   margin: 0;
@@ -609,7 +609,7 @@ exports[`ArticleHeadline renders correctly with multiple authors 1`] = `
 </DocumentFragment>
 `;
 
-exports[`ArticleHeadline renders correctly with one authors 1`] = `
+exports[`ArticleByline renders correctly with one authors 1`] = `
 <DocumentFragment>
   .emotion-1 {
   margin: 0;

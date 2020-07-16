@@ -1,7 +1,7 @@
 const a11yComponentRules = [
   {name: 'article-byline'},
   {name: 'article-content'},
-  {name: 'article-headline', disabledRules: ['heading-order']},
+  {name: 'headline', disabledRules: ['heading-order']},
   {name: 'audio-player', disabledRules: ['color-contrast', 'landmark-unique']},
   {name: 'radio-player', disabledRules: ['color-contrast', 'landmark-unique']},
   {

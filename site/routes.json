@@ -92,11 +92,6 @@
         "id": "/components/article-byline"
       },
       {
-        "title": "Article Headline",
-        "page": true,
-        "id": "/components/article-headline"
-      },
-      {
         "title": "Aspect Ratio",
         "page": true,
         "id": "/components/aspect-ratio"
@@ -155,6 +150,11 @@
         "title": "Grid & Cell",
         "page": true,
         "id": "/components/grid"
+      },
+      {
+        "title": "Headline",
+        "page": true,
+        "id": "/components/headline"
       },
       {
         "title": "Image",

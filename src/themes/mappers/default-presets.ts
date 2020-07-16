@@ -1,28 +1,4 @@
 export const defaultPresets = {
-  articleHeadline: {
-    heading: {
-      stylePreset: 'articleHeadlineContent',
-      typePreset: {
-        xs: 'headline100',
-        md: 'headline200',
-      },
-    },
-    kicker: {
-      stylePreset: 'articleHeadlineKicker',
-      typePreset: {
-        xs: 'heading060',
-        sm: 'heading060',
-        md: 'heading070',
-        lg: 'heading080',
-      },
-      spaceInline: {
-        xs: 'space030',
-        sm: 'space030',
-        md: 'space040',
-        lg: 'space040',
-      },
-    },
-  },
   button: {
     small: {
       typePreset: 'buttonSmall',
@@ -55,6 +31,32 @@ export const defaultPresets = {
   card: {
     media: {
       stylePreset: 'imageSharp',
+    },
+  },
+  headline: {
+    heading: {
+      stylePreset: 'headlineContent',
+      typePreset: {
+        xs: 'heading060',
+        sm: 'heading060',
+        md: 'heading070',
+        lg: 'heading080',
+      },
+    },
+    kicker: {
+      stylePreset: 'headlineKicker',
+      typePreset: {
+        xs: 'heading060',
+        sm: 'heading060',
+        md: 'heading070',
+        lg: 'heading080',
+      },
+      spaceInline: {
+        xs: 'space030',
+        sm: 'space030',
+        md: 'space040',
+        lg: 'space040',
+      },
     },
   },
   iconButton: {
@@ -125,7 +127,7 @@ export const defaultPresets = {
     spaceStack: 'space040',
     content: {
       stylePreset: 'unorderedListItemContent',
-      typePreset: 'unorderedListItemContent',
+      typePreset: 'body010',
     },
     marker: {
       stylePreset: 'unorderedListItemMarker',
@@ -135,7 +137,7 @@ export const defaultPresets = {
   },
   shareBar: {
     label: {
-      typePreset: 'shareBarLabel',
+      typePreset: 'label020',
       stylePreset: 'shareBarLabel',
       spaceInline: 'space040',
       spaceStack: 'space040',

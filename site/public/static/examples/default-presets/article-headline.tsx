@@ -1,14 +1,14 @@
 {
-  articleHeadline: {
+  headline: {
     heading: {
-      stylePreset: 'articleHeadlineContent',
+      stylePreset: 'headlineContent',
       typePreset: {
         xs: 'headline100',
         md: 'headline200',
       },
     },
     kicker: {
-      stylePreset: 'articleHeadlineKicker',
+      stylePreset: 'headlineKicker',
       typePreset: {
         xs: 'heading060',
         sm: 'heading060',

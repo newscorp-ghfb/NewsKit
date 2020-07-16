@@ -29,7 +29,7 @@ export default {
             href="/"
             overrides={{
               typePreset: 'flag020',
-              stylePreset: 'articleHeadlineKicker',
+              stylePreset: 'headlineKicker',
             }}
           >
             Inline Link with style and type overrides
@@ -102,7 +102,7 @@ export default {
             href="https://google.com"
             overrides={{
               typePreset: 'flag020',
-              stylePreset: 'articleHeadlineKicker',
+              stylePreset: 'headlineKicker',
             }}
           >
             Link Standalone external with type and style Preset overrides
@@ -132,7 +132,7 @@ export default {
               href="http://localhost:6006"
               overrides={{
                 typePreset: 'flag020',
-                stylePreset: 'articleHeadlineKicker',
+                stylePreset: 'headlineKicker',
               }}
             >
               Apple-Google model
@@ -160,7 +160,7 @@ export default {
               href="http://apple.com"
               overrides={{
                 typePreset: 'flag020',
-                stylePreset: 'articleHeadlineKicker',
+                stylePreset: 'headlineKicker',
               }}
             >
               Apple-Google model

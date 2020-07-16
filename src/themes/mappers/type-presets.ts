@@ -291,26 +291,6 @@ export const createTypePresets = (p: FontPrimitives) => {
       fontSize: '5.34em',
       lineHeight: 0.85,
     },
-
-    // Headline
-    headline100: baseTypePresets.heading050,
-    headline200: baseTypePresets.heading050,
-
-    // Share Bar
-
-    shareBarLabel: {
-      ...baseTypePresets.label020,
-    },
-
-    // Standfirst
-    standfirst: {
-      ...baseTypePresets.subhead010,
-    },
-
-    // Unordered list
-    unorderedListItemContent: {
-      ...baseTypePresets.body010,
-    },
   };
 };
 

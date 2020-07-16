@@ -1,9 +1,9 @@
-import {ArticleHeadline} from '../article-headline';
+import {Headline} from '../headline';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 
-describe('ArticleHeadline', () => {
+describe('headline', () => {
   test('renders correctly with default props', () => {
-    const fragment = renderToFragmentWithTheme(ArticleHeadline, {
+    const fragment = renderToFragmentWithTheme(Headline, {
       children: 'test',
     } as any) as any;
 
@@ -11,7 +11,7 @@ describe('ArticleHeadline', () => {
   });
 
   test('renders correctly with default props', () => {
-    const fragment = renderToFragmentWithTheme(ArticleHeadline, {
+    const fragment = renderToFragmentWithTheme(Headline, {
       children: 'test',
       kickerText: 'this is kicker',
       headingAs: 'h4',
@@ -22,7 +22,7 @@ describe('ArticleHeadline', () => {
   });
 
   test('renders correctly with overriden props', () => {
-    const fragment = renderToFragmentWithTheme(ArticleHeadline, {
+    const fragment = renderToFragmentWithTheme(Headline, {
       children: 'test',
       kickerText: 'this is kicker',
       headingAs: 'h4',

@@ -10,7 +10,7 @@ describe('themeing functions', () => {
         baseTheme: newskitLightTheme,
         themeOverrider: () => ({
           defaultPresets: {
-            articleHeadline: {
+            headline: {
               heading: {
                 stylePreset: 'buttonSolidPrimary',
               },
@@ -20,7 +20,7 @@ describe('themeing functions', () => {
       });
 
       expect(theme).not.toEqual(newskitLightTheme);
-      expect(theme.defaultPresets.articleHeadline.heading.stylePreset).toEqual(
+      expect(theme.defaultPresets.headline.heading.stylePreset).toEqual(
         'buttonSolidPrimary',
       );
     });
@@ -38,7 +38,7 @@ describe('themeing functions', () => {
             },
           },
           defaultPresets: {
-            articleHeadline: {
+            headline: {
               heading: {
                 stylePreset: 'buttonTestStyle',
               },
@@ -49,7 +49,7 @@ describe('themeing functions', () => {
 
       const TestSurface = styled.div`
         display: inline-block;
-        ${getStylePreset('articleHeadline.heading', 'heading')}
+        ${getStylePreset('headline.heading', 'heading')}
       `;
 
       const {asFragment} = renderWithTheme(TestSurface, undefined, theme);

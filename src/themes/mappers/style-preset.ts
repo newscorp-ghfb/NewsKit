@@ -1015,15 +1015,15 @@ export const createStylePresets = ({
   };
 
   //
-  // Article Headline
+  // Headline
   //
 
-  presets.articleHeadlineKicker = {
+  presets.headlineKicker = {
     base: {
       color: colorPrimitives.inkBrand010,
     },
   };
-  presets.articleHeadlineContent = {
+  presets.headlineContent = {
     base: {
       color: colorPrimitives.inkContrast,
     },

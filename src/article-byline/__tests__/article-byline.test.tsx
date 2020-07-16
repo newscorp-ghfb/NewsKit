@@ -1,7 +1,7 @@
 import {ArticleByline, ArticleBylineProps} from '../article-byline';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 
-describe('ArticleHeadline', () => {
+describe('ArticleByline', () => {
   test('renders correctly with one authors', () => {
     const props: ArticleBylineProps = {
       bylineData: [

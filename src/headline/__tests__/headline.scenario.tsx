@@ -1,20 +1,20 @@
 import * as React from 'react';
-import {ArticleHeadline} from '..';
+import {Headline} from '..';
 
-export const name = 'article-headline';
+export const name = 'headline';
 
 export const component = () => (
   <React.Fragment>
-    <ArticleHeadline>Only headline text with not kicker</ArticleHeadline>
+    <Headline>Only headline text with not kicker</Headline>
     <br />
     <br />
-    <ArticleHeadline kickerText="Kicker">Headline text</ArticleHeadline>
+    <Headline kickerText="Kicker">Headline text</Headline>
     <br />
-    <ArticleHeadline kickerText="Kicker as h5" headingAs="h4" kickerAs="h5">
+    <Headline kickerText="Kicker as h5" headingAs="h4" kickerAs="h5">
       Headline as h4
-    </ArticleHeadline>
+    </Headline>
     <br />
-    <ArticleHeadline
+    <Headline
       kickerText="Kicker overwritten preset"
       overrides={{
         kicker: {
@@ -26,9 +26,9 @@ export const component = () => (
       }}
     >
       Headline overwritten preset
-    </ArticleHeadline>
+    </Headline>
     <br />
-    <ArticleHeadline
+    <Headline
       kickerText="Kicker custom mq margin preset"
       overrides={{
         kicker: {
@@ -40,6 +40,6 @@ export const component = () => (
       }}
     >
       Heading Headline
-    </ArticleHeadline>
+    </Headline>
   </React.Fragment>
 );

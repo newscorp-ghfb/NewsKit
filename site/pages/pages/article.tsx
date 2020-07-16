@@ -2,7 +2,7 @@ import * as React from 'react';
 import {
   ArticleByline,
   ThemeProvider,
-  ArticleHeadline,
+  Headline,
   DateLine,
   ArticleContent,
   P,
@@ -29,9 +29,9 @@ const Article: React.FC = () => (
       <Layout path="/pages/article" toggleTheme={() => {}} themeMode="">
         <Grid>
           <Cell xs={12}>
-            <ArticleHeadline>
+            <Headline>
               Stocking A Commercial Kitchen Finding High Quality Cookware Online
-            </ArticleHeadline>
+            </Headline>
           </Cell>
           <Cell xs={12}>
             <div>Refrigerated Treats Make For A Cool Event</div>

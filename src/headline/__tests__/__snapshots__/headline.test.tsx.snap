@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ArticleHeadline renders correctly with default props 1`] = `
+exports[`headline renders correctly with default props 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: inline-block;
   margin: 0;
   font-family: "Noto Sans",sans-serif;
-  font-size: 32px;
-  line-height: 1.125;
+  font-size: 36px;
+  line-height: 1.1111111111111112;
   font-weight: 700;
   -webkit-letter-spacing: -0.5px;
   -moz-letter-spacing: -0.5px;
@@ -21,7 +21,7 @@ exports[`ArticleHeadline renders correctly with default props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.21250000000000002em;
+  margin-bottom: -0.2055555555555556em;
 }
 
 .emotion-0::after {
@@ -29,14 +29,14 @@ exports[`ArticleHeadline renders correctly with default props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.275em;
+  margin-top: -0.2680555555555556em;
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
-    font-size: 32px;
-    line-height: 1.125;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
     font-weight: 700;
     -webkit-letter-spacing: -0.5px;
     -moz-letter-spacing: -0.5px;
@@ -49,7 +49,7 @@ exports[`ArticleHeadline renders correctly with default props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-0::after {
@@ -57,7 +57,65 @@ exports[`ArticleHeadline renders correctly with default props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.20000000000000007em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.26250000000000007em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 44px;
+    line-height: 1.0909090909090908;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.19545454545454544em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.25795454545454544em;
   }
 }
 
@@ -69,14 +127,14 @@ exports[`ArticleHeadline renders correctly with default props 1`] = `
 </DocumentFragment>
 `;
 
-exports[`ArticleHeadline renders correctly with default props 2`] = `
+exports[`headline renders correctly with default props 2`] = `
 <DocumentFragment>
   .emotion-1 {
   display: inline-block;
   margin: 0;
   font-family: "Noto Sans",sans-serif;
-  font-size: 32px;
-  line-height: 1.125;
+  font-size: 36px;
+  line-height: 1.1111111111111112;
   font-weight: 700;
   -webkit-letter-spacing: -0.5px;
   -moz-letter-spacing: -0.5px;
@@ -90,7 +148,7 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.21250000000000002em;
+  margin-bottom: -0.2055555555555556em;
 }
 
 .emotion-1::after {
@@ -98,14 +156,14 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.275em;
+  margin-top: -0.2680555555555556em;
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) {
   .emotion-1 {
     font-family: "Noto Sans",sans-serif;
-    font-size: 32px;
-    line-height: 1.125;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
     font-weight: 700;
     -webkit-letter-spacing: -0.5px;
     -moz-letter-spacing: -0.5px;
@@ -118,7 +176,7 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-1::after {
@@ -126,7 +184,65 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-1 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-1::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.20000000000000007em;
+  }
+
+  .emotion-1::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.26250000000000007em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-1 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 44px;
+    line-height: 1.0909090909090908;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-1::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.19545454545454544em;
+  }
+
+  .emotion-1::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.25795454545454544em;
   }
 }
 
@@ -138,8 +254,8 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
   display: inline-block;
   margin: 0;
   font-family: "Noto Sans",sans-serif;
-  font-size: 32px;
-  line-height: 1.125;
+  font-size: 36px;
+  line-height: 1.1111111111111112;
   font-weight: 700;
   -webkit-letter-spacing: -0.5px;
   -moz-letter-spacing: -0.5px;
@@ -165,7 +281,7 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.21250000000000002em;
+  margin-bottom: -0.2055555555555556em;
 }
 
 .emotion-0::after {
@@ -173,14 +289,14 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.275em;
+  margin-top: -0.2680555555555556em;
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
-    font-size: 32px;
-    line-height: 1.125;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
     font-weight: 700;
     -webkit-letter-spacing: -0.5px;
     -moz-letter-spacing: -0.5px;
@@ -193,7 +309,7 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-0::after {
@@ -201,7 +317,65 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.20000000000000007em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.26250000000000007em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 44px;
+    line-height: 1.0909090909090908;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.19545454545454544em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.25795454545454544em;
   }
 }
 
@@ -343,7 +517,7 @@ exports[`ArticleHeadline renders correctly with default props 2`] = `
 </DocumentFragment>
 `;
 
-exports[`ArticleHeadline renders correctly with overriden props 1`] = `
+exports[`headline renders correctly with overriden props 1`] = `
 <DocumentFragment>
   .emotion-2 {
   display: block;
@@ -353,8 +527,8 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
   display: inline-block;
   margin: 0;
   font-family: "Noto Sans",sans-serif;
-  font-size: 32px;
-  line-height: 1.125;
+  font-size: 36px;
+  line-height: 1.1111111111111112;
   font-weight: 700;
   -webkit-letter-spacing: -0.5px;
   -moz-letter-spacing: -0.5px;
@@ -362,14 +536,6 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
   letter-spacing: -0.5px;
   color: #2F75D7;
   display: inline-block;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 32px;
-  line-height: 1.125;
-  font-weight: 700;
-  -webkit-letter-spacing: -0.5px;
-  -moz-letter-spacing: -0.5px;
-  -ms-letter-spacing: -0.5px;
-  letter-spacing: -0.5px;
   color: #0a68c1;
   margin-right: 12px;
   text-transform: uppercase;
@@ -380,7 +546,7 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.21250000000000002em;
+  margin-bottom: -0.2055555555555556em;
 }
 
 .emotion-0::after {
@@ -388,14 +554,14 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.275em;
+  margin-top: -0.2680555555555556em;
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
-    font-size: 32px;
-    line-height: 1.125;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
     font-weight: 700;
     -webkit-letter-spacing: -0.5px;
     -moz-letter-spacing: -0.5px;
@@ -408,7 +574,7 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-0::after {
@@ -416,7 +582,65 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.20000000000000007em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.26250000000000007em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 44px;
+    line-height: 1.0909090909090908;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.19545454545454544em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.25795454545454544em;
   }
 }
 
@@ -452,22 +676,6 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
   color: #903D91;
 }
 
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.21250000000000002em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.275em;
-}
-
 @media screen and (min-width:480px) {
   .emotion-0 {
     margin-right: 12px;
@@ -490,8 +698,8 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
   display: inline-block;
   margin: 0;
   font-family: "Noto Sans",sans-serif;
-  font-size: 32px;
-  line-height: 1.125;
+  font-size: 36px;
+  line-height: 1.1111111111111112;
   font-weight: 700;
   -webkit-letter-spacing: -0.5px;
   -moz-letter-spacing: -0.5px;
@@ -505,7 +713,7 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.21250000000000002em;
+  margin-bottom: -0.2055555555555556em;
 }
 
 .emotion-1::after {
@@ -513,14 +721,14 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.275em;
+  margin-top: -0.2680555555555556em;
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) {
   .emotion-1 {
     font-family: "Noto Sans",sans-serif;
-    font-size: 32px;
-    line-height: 1.125;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
     font-weight: 700;
     -webkit-letter-spacing: -0.5px;
     -moz-letter-spacing: -0.5px;
@@ -533,7 +741,7 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-1::after {
@@ -541,7 +749,65 @@ exports[`ArticleHeadline renders correctly with overriden props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .emotion-1 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-1::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.20000000000000007em;
+  }
+
+  .emotion-1::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.26250000000000007em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-1 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 44px;
+    line-height: 1.0909090909090908;
+    font-weight: 700;
+    -webkit-letter-spacing: -0.5px;
+    -moz-letter-spacing: -0.5px;
+    -ms-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
+  }
+
+  .emotion-1::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.19545454545454544em;
+  }
+
+  .emotion-1::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.25795454545454544em;
   }
 }
 

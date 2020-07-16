@@ -5,7 +5,7 @@ import {TypePresetKeys} from '../themes/mappers/type-presets';
 import {SpacingPresetKeys} from '../themes/mappers/spacing';
 import {StylePresetKeys} from '../themes/mappers/style-preset';
 
-export interface ArticleHeadline {
+export interface Headline {
   kickerText?: string;
   headingAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
   kickerAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
@@ -26,30 +26,30 @@ interface HeadingProps {
   as?: React.ElementType;
 }
 
-const Headline = styled.section`
+const HeadlineContainer = styled.section`
   display: block;
 `;
 
-const Heading = styled.h1<HeadingProps & ArticleHeadline>`
+const Heading = styled.h1<HeadingProps & Headline>`
   display: inline-block;
   margin: 0;
-  ${getTypePreset('articleHeadline.heading', 'heading', {
+  ${getTypePreset('headline.heading', 'heading', {
     withCrop: true,
   })}
-  ${getStylePreset('articleHeadline.heading', 'heading')}
+  ${getStylePreset('headline.heading', 'heading')}
 `;
 
-const Kicker = styled(Heading)<ArticleHeadline>`
+const Kicker = styled(Heading)<Headline>`
   display: inline-block;
-  ${getTypePreset('articleHeadline.kicker', 'kicker', {
+  ${getTypePreset('headline.kicker', 'kicker', {
     withCrop: true,
   })}
-  ${getStylePreset('articleHeadline.kicker', 'kicker')}
-  ${getSpacingInline('articleHeadline.kicker', 'kicker')};
+  ${getStylePreset('headline.kicker', 'kicker')}
+  ${getSpacingInline('headline.kicker', 'kicker')};
   text-transform: uppercase;
 `;
 
-export const ArticleHeadline: React.FC<ArticleHeadline> = ({
+export const Headline: React.FC<Headline> = ({
   children,
   kickerText,
   headingAs = 'h1',
@@ -57,14 +57,14 @@ export const ArticleHeadline: React.FC<ArticleHeadline> = ({
   overrides = {},
 }) =>
   kickerText ? (
-    <Headline>
+    <HeadlineContainer>
       <Kicker as={kickerAs} overrides={overrides}>
         {kickerText}{' '}
       </Kicker>
       <Heading as={headingAs} overrides={overrides}>
         {children}
       </Heading>
-    </Headline>
+    </HeadlineContainer>
   ) : (
     <Heading as={headingAs}>{children}</Heading>
   );
