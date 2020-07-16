@@ -45,8 +45,8 @@ Icons can be used to enhance other elements and content, as well as used inside 
 | SaveInactive | <Icon Component={SaveInactive} _size="iconSize030" /> |     👍      |
 | CopyLink     |   <Icon Component={CopyLink} _size="iconSize030" />   |     👍      |
 | Circle       |   <Icon Component={Circle} _size="iconSize030" />     |     👍      |
+| GitHub       |    <Icon Component={GitHub} _size="iconSize030" />    |     👍      |
 | Facebook     |   <Icon Component={Facebook} _size="iconSize030" />   |     👎      |
-| GitHub       |    <Icon Component={GitHub} _size="iconSize030" />    |     👎      |
 | Twitter      |   <Icon Component={Twitter} _size="iconSize030" />    |     👎      |
 | WhatsApp     |   <Icon Component={WhatsApp} _size="iconSize030" />   |     👎      |
 
@@ -77,13 +77,14 @@ Icons must have a size specified, and some also support an optional colour overr
   componentName={[
     'Comment',
     'Email',
+    'GitHub',
     'Menu',
     'SaveActive',
     'SaveInactive',
     'CopyLink',
   ]}
   newskitPath="/icons"
-  component={[Comment, Email, Menu, SaveActive, SaveInactive, CopyLink]}
+  component={[Comment, Email, GitHub, Menu, SaveActive, SaveInactive, CopyLink]}
   knobs={[
     {
       name: 'Size',
@@ -137,9 +138,9 @@ Icons must have a size specified, and some also support an optional colour overr
 ### Color Prop Not Supported
 
 <Playground
-  componentName={['Facebook', 'GitHub', 'Twitter', 'WhatsApp', 'Placeholder']}
+  componentName={['Facebook', 'Twitter', 'WhatsApp', 'Placeholder']}
   newskitPath="/icons"
-  component={[Facebook, GitHub, Twitter, WhatsApp, Placeholder]}
+  component={[Facebook, Twitter, WhatsApp, Placeholder]}
   knobs={[
     {
       name: 'Size',

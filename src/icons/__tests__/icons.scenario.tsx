@@ -15,7 +15,7 @@ const entries = Object.entries(icons)
   .map((entry: any) => {
     const [iconName, Icon] = entry as [string, React.ComponentType<SvgProps>];
 
-    if (['Facebook', 'Twitter', 'WhatsApp', 'GitHub'].includes(iconName)) {
+    if (['Facebook', 'Twitter', 'WhatsApp'].includes(iconName)) {
       return {
         name: iconName,
         type: 'story',
