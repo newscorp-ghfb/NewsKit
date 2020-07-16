@@ -1,12 +1,13 @@
 /* eslint-disable react/no-danger */
 import React from 'react';
 import {connectAmpScript} from '../scripts';
+import {AmpConsentButton} from './consent-button';
 
 export interface ConsentProps {
+  renderConsentButton?: boolean;
   settingsButtonText?: string;
   checkConsentHref?: string;
   promptUISrc?: string;
-  postPromptUI?: string;
   sourcePointConfig: SourcePointConfigProps;
 }
 
@@ -20,19 +21,6 @@ export interface SourcePointConfigProps {
   targetingParams?: object;
 }
 
-interface AmpConsentButton {
-  on: string;
-  settingsButtonText?: string;
-}
-
-const AmpConsentButton: React.FC<AmpConsentButton> = ({
-  settingsButtonText = 'Privacy Settings',
-  ...props
-}) => (
-  <button type="button" {...props}>
-    {settingsButtonText}
-  </button>
-);
 /**
  * @param {SourcePointConfigProps} sourcePointConfig - The SourcePointConfig Object
  *
@@ -40,7 +28,7 @@ const AmpConsentButton: React.FC<AmpConsentButton> = ({
 export const Consent = connectAmpScript<ConsentProps>('amp-consent')(
   ({
     settingsButtonText,
-    postPromptUI = 'privacy-settings-prompt',
+    renderConsentButton = true,
     sourcePointConfig,
     ...rest
   }) => (
@@ -51,7 +39,7 @@ export const Consent = connectAmpScript<ConsentProps>('amp-consent')(
           __html: JSON.stringify({
             consentRequired: 'remote',
             consentInstanceId: 'sourcepoint',
-            postPromptUI,
+            postPromptUI: 'privacy-settings-prompt',
             clientConfig: {
               isTCFV2: true,
               ...sourcePointConfig,
@@ -60,12 +48,12 @@ export const Consent = connectAmpScript<ConsentProps>('amp-consent')(
           }),
         }}
       />
-      <div id={postPromptUI}>
+      {renderConsentButton && (
         <AmpConsentButton
           on="tap:consent.prompt(consent=SourcePoint)"
           settingsButtonText={settingsButtonText}
         />
-      </div>
+      )}
     </amp-consent>
   ),
 );
