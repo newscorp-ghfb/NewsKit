@@ -6,7 +6,6 @@ provider "akamai" {
 terraform {
   backend "s3" {
     bucket = "nu-sun-terraform-state"
-    key    = "product-platforms/newskit/akamai/${var.environment}/terraform.tfstate"
     region = "eu-west-1"
   }
   required_version = ">= 0.12"

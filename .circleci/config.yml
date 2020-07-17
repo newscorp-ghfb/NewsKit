@@ -46,7 +46,7 @@ executors:
 
   terraform:
     docker:
-      - image: hashicorp/terraform:0.12.21
+      - image: hashicorp/terraform:0.12.28
 
   python:
     docker:
@@ -196,6 +196,8 @@ commands:
           command: |
             export CHANGES=$(git diff << pipeline.git.base_revision >> << pipeline.git.revision >> << parameters.folder >> 2>&1)
             if [ -n "$CHANGES" ]; then
+              echo "Terraform << parameters.folder >> changed"
+            else
               echo "Skipping as there are no changes to << parameters.folder >>"
               circleci-agent step halt
             fi
@@ -319,9 +321,6 @@ jobs:
       job_type:
         type: string
         default: "default"
-      update_kubeconfig:
-        type: boolean
-        default: true
     working_directory: ~/project
     executor: python
     steps:
@@ -369,7 +368,7 @@ jobs:
       - aws_assume_role_file
       - terraform_init:
           package: << parameters.package >>
-          terraform_arg: -backend-config="key="product-platforms/newskit/akamai/<< parameters.environment >>/terraform.tfstate"
+          terraform_arg: -backend-config="key=product-platforms/newskit/akamai/<< parameters.environment >>/terraform.tfstate"
       - terraform_plan:
           package: << parameters.package >>
           terraform_arg: -var-file=<< parameters.environment >>.tfvars
@@ -843,6 +842,18 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - run_visual_comps
+      - init_aws:
+          <<: *only_pr
+          context: ncu-product-platforms-context
+      - deploy_terraform:
+          <<: *only_pr
+          name: deploy_terraform_akamai
+          package: akamai
+          context: ncu-product-platforms-context
+          akamai: true
+          environment: dev
+          requires:
+            - init_aws
     # develop jobs
       - test_visual_docs:
           <<: *only_develop
