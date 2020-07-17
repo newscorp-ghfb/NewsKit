@@ -6,6 +6,7 @@ provider "akamai" {
 terraform {
   backend "s3" {
     bucket = "nu-sun-terraform-state"
+    key    = "product-platforms/newskit/akamai/dev/terraform.tfstate"
     region = "eu-west-1"
   }
   required_version = ">= 0.12"
@@ -36,7 +37,8 @@ data "akamai_contract" "contract" {
 }
 
 data "akamai_group" "group" {
-  name = var.akamai_group
+  name     = var.akamai_group
+  contract = data.akamai_contract.contract.id
 }
 
 resource "akamai_cp_code" "cp_code" {
