@@ -20,6 +20,16 @@ describe('Consent renders', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  it('without default consent button', () => {
+    const fragment = renderToFragment(
+      <Consent
+        sourcePointConfig={sourcePointConfigBase}
+        renderConsentButton={false}
+      />,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
   it('with postPromptUI', () => {
     const fragment = renderToFragment(
       <Consent

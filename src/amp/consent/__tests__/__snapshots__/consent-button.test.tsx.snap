@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`consent-button render consent-button default 1`] = `
+<DocumentFragment>
+  <div
+    id="privacy-settings-prompt"
+  >
+    <button
+      class="css-0"
+      on="tap:consent.prompt(consent=SourcePoint)"
+      type="button"
+    >
+      Privacy Settings
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`consent-button render consent-button with button label and postPromptUI 1`] = `
+<DocumentFragment>
+  <div
+    id="settings-ui"
+  >
+    <button
+      class="css-0"
+      on="tap:consent.prompt(consent=SourcePoint)"
+      type="button"
+    >
+      Settings
+    </button>
+  </div>
+</DocumentFragment>
+`;

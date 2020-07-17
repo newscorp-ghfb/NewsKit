@@ -8,14 +8,15 @@ export interface ConsentProps {
   settingsButtonText?: string;
   checkConsentHref?: string;
   promptUISrc?: string;
+  postPromptUI?: string;
   sourcePointConfig: SourcePointConfigProps;
 }
 
 export interface SourcePointConfigProps {
-  accountId: string;
+  accountId: string | number;
   propertyHref?: string;
-  propertyId?: string;
-  privacyManagerId?: string;
+  propertyId?: string | number;
+  privacyManagerId?: string | number;
   pmTab?: string;
   stageCampaign?: boolean;
   targetingParams?: object;
@@ -30,6 +31,7 @@ export const Consent = connectAmpScript<ConsentProps>('amp-consent')(
     settingsButtonText,
     renderConsentButton = true,
     sourcePointConfig,
+    postPromptUI = 'privacy-settings-prompt',
     ...rest
   }) => (
     <amp-consent id="consent" layout="nodisplay">
@@ -39,7 +41,7 @@ export const Consent = connectAmpScript<ConsentProps>('amp-consent')(
           __html: JSON.stringify({
             consentRequired: 'remote',
             consentInstanceId: 'sourcepoint',
-            postPromptUI: 'privacy-settings-prompt',
+            postPromptUI,
             clientConfig: {
               isTCFV2: true,
               ...sourcePointConfig,
@@ -50,8 +52,8 @@ export const Consent = connectAmpScript<ConsentProps>('amp-consent')(
       />
       {renderConsentButton && (
         <AmpConsentButton
-          on="tap:consent.prompt(consent=SourcePoint)"
           settingsButtonText={settingsButtonText}
+          postPromptUI={postPromptUI}
         />
       )}
     </amp-consent>

@@ -15,6 +15,7 @@ exports[`Consent renders with optional prop privacyManagerId 1`] = `
       id="privacy-settings-prompt"
     >
       <button
+        class="css-0"
         on="tap:consent.prompt(consent=SourcePoint)"
         type="button"
       >
@@ -40,6 +41,7 @@ exports[`Consent renders with optional prop settingsButtonText 1`] = `
       id="privacy-settings-prompt"
     >
       <button
+        class="css-0"
         on="tap:consent.prompt(consent=SourcePoint)"
         type="button"
       >
@@ -65,6 +67,7 @@ exports[`Consent renders with optional prop siteId 1`] = `
       id="privacy-settings-prompt"
     >
       <button
+        class="css-0"
         on="tap:consent.prompt(consent=SourcePoint)"
         type="button"
       >
@@ -90,6 +93,7 @@ exports[`Consent renders with optional prop targetingParams 1`] = `
       id="privacy-settings-prompt"
     >
       <button
+        class="css-0"
         on="tap:consent.prompt(consent=SourcePoint)"
         type="button"
       >
@@ -115,12 +119,28 @@ exports[`Consent renders with postPromptUI 1`] = `
       id="postPrompt"
     >
       <button
+        class="css-0"
         on="tap:consent.prompt(consent=SourcePoint)"
         type="button"
       >
         Privacy Settings
       </button>
     </div>
+  </amp-consent>
+</DocumentFragment>
+`;
+
+exports[`Consent renders without default consent button 1`] = `
+<DocumentFragment>
+  <amp-consent
+    id="consent"
+    layout="nodisplay"
+  >
+    <script
+      type="application/json"
+    >
+      {"consentRequired":"remote","consentInstanceId":"sourcepoint","postPromptUI":"privacy-settings-prompt","clientConfig":{"isTCFV2":true,"accountId":"test-accountid","propertyHref":"test-propertyhref"}}
+    </script>
   </amp-consent>
 </DocumentFragment>
 `;
@@ -140,6 +160,7 @@ exports[`Consent renders without postPromptUI 1`] = `
       id="privacy-settings-prompt"
     >
       <button
+        class="css-0"
         on="tap:consent.prompt(consent=SourcePoint)"
         type="button"
       >
