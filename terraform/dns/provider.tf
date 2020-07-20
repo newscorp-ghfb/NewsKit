@@ -5,7 +5,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "nu-sun-terraform-state"
-    key    = "product-platforms/newskit/dns/${var.environment}/terraform.tfstate"
+    key    = "product-platforms/newskit/dns/dev/terraform.tfstate"
     region = "eu-west-1"
   }
 }

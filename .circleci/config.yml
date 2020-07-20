@@ -370,7 +370,7 @@ jobs:
       - aws_assume_role_file
       - terraform_init:
           package: << parameters.package >>
-          terraform_arg: -backend-config="key=product-platforms/newskit/akamai/<< parameters.environment >>/terraform.tfstate"
+          terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/<< parameters.environment >>/terraform.tfstate"
       - terraform_plan:
           package: << parameters.package >>
           terraform_arg: -var-file=<< parameters.environment >>.tfvars
@@ -853,6 +853,14 @@ workflows:
           package: akamai
           context: ncu-product-platforms-context
           akamai: true
+          environment: dev
+          requires:
+            - init_aws
+      - deploy_terraform:
+          <<: *only_pr
+          name: deploy_terraform_dns
+          package: dns
+          context: ncu-product-platforms-context
           environment: dev
           requires:
             - init_aws
