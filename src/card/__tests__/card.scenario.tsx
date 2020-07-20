@@ -3,6 +3,9 @@ import {Card} from '..';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {Grid, Cell} from '../../grid';
 import {Image} from '../../image';
+import {Stack, Flow} from '../../stack';
+
+import {Tag, TagSize} from '../../tag';
 
 const customComponent = () => (
   <Image
@@ -21,23 +24,62 @@ const customComponentWithOverrides = () => (
   />
 );
 
+const smallTag = () => (
+  <Stack flow={Flow.HorizontalCenter} space="sizing040">
+    <Tag
+      size={TagSize.Small}
+      href="/"
+      overrides={{stylePreset: 'tagPrimary', typePreset: 'label010'}}
+    >
+      News
+    </Tag>
+    <Tag
+      size={TagSize.Small}
+      href="/"
+      overrides={{stylePreset: 'tagPrimary', typePreset: 'label010'}}
+    >
+      Sport
+    </Tag>
+  </Stack>
+);
+
+const mediumTag = () => (
+  <Stack flow={Flow.HorizontalCenter} space="sizing040">
+    <Tag
+      size={TagSize.Medium}
+      href="/"
+      overrides={{stylePreset: 'tagPrimary', typePreset: 'label010'}}
+    >
+      News
+    </Tag>
+    <Tag
+      size={TagSize.Medium}
+      href="/"
+      overrides={{stylePreset: 'tagPrimary', typePreset: 'label010'}}
+    >
+      Sport
+    </Tag>
+  </Stack>
+);
+
 export default {
   name: 'card',
   children: [
     {
-      name: 'card-media-12-columns',
+      name: 'card-small-without-inset',
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Card Media - 12 Columns</StorybookHeading>
+          <StorybookHeading>Card - Small - Without Inset</StorybookHeading>
           <Grid>
-            <Cell xs={12}>
+            <Cell xs={3}>
               <Card
                 href="https://newskit.co.uk/"
                 media={{
                   src: '/placeholder-3x2.png',
                   alt: 'Card Media',
                 }}
+                actions={smallTag}
               />
             </Cell>
           </Grid>
@@ -45,11 +87,11 @@ export default {
       ),
     },
     {
-      name: 'card-media-6-columns',
+      name: 'card-medium-without-inset',
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Card Media - 6 Columns</StorybookHeading>
+          <StorybookHeading>Card - Medium - Without Inset</StorybookHeading>
           <Grid>
             <Cell xs={6}>
               <Card
@@ -58,14 +100,32 @@ export default {
                   src: '/placeholder-3x2.png',
                   alt: 'Card Media',
                 }}
+                actions={smallTag}
               />
             </Cell>
-            <Cell xs={6}>
+          </Grid>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'card-large-without-inset',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>Card - Large - Without Inset</StorybookHeading>
+          <Grid>
+            <Cell xs={10}>
               <Card
                 href="https://newskit.co.uk/"
                 media={{
                   src: '/placeholder-3x2.png',
                   alt: 'Card Media',
+                }}
+                actions={mediumTag}
+                overrides={{
+                  actionsContainer: {
+                    minHeight: 'sizing090',
+                  },
                 }}
               />
             </Cell>
@@ -74,11 +134,11 @@ export default {
       ),
     },
     {
-      name: 'card-media-3-columns',
+      name: 'card-small-with-inset',
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Card Media - 3 Columns</StorybookHeading>
+          <StorybookHeading>Card - Small - With Inset</StorybookHeading>
           <Grid>
             <Cell xs={3}>
               <Card
@@ -87,23 +147,64 @@ export default {
                   src: '/placeholder-3x2.png',
                   alt: 'Card Media',
                 }}
+                actions={smallTag}
+                overrides={{
+                  actionsContainer: {
+                    paddingPreset: 'spaceInset030Squish',
+                  },
+                }}
               />
             </Cell>
-            <Cell xs={3}>
+          </Grid>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'card-medium-with-inset',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>Card - Medium - With Inset</StorybookHeading>
+          <Grid>
+            <Cell xs={6}>
               <Card
                 href="https://newskit.co.uk/"
                 media={{
                   src: '/placeholder-3x2.png',
                   alt: 'Card Media',
                 }}
+                actions={smallTag}
+                overrides={{
+                  actionsContainer: {
+                    paddingPreset: 'spaceInset040Squish',
+                  },
+                }}
               />
             </Cell>
-            <Cell xs={3}>
+          </Grid>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'card-large-with-inset',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>Card - Large - With Inset</StorybookHeading>
+          <Grid>
+            <Cell xs={10}>
               <Card
                 href="https://newskit.co.uk/"
                 media={{
                   src: '/placeholder-3x2.png',
                   alt: 'Card Media',
+                }}
+                actions={mediumTag}
+                overrides={{
+                  actionsContainer: {
+                    minHeight: 'sizing090',
+                    paddingPreset: 'spaceInset040Squish',
+                  },
                 }}
               />
             </Cell>
@@ -117,15 +218,15 @@ export default {
       component: () => (
         <React.Fragment>
           <StorybookHeading>
-            Card Media - Custom Loading Aspect Ratio - 4x5
+            Card Media - Custom Loading Aspect Ratio - 5x4
           </StorybookHeading>
           <Grid>
             <Cell xs={12}>
               <Card
                 href="https://newskit.co.uk/"
                 media={{
-                  loadingAspectRatio: '4:5',
-                  src: '/placeholder-4x5.png',
+                  loadingAspectRatio: '5:4',
+                  src: '/placeholder-5x4.png',
                   alt: 'Card Media',
                 }}
               />

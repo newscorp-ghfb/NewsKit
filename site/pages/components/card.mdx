@@ -1,9 +1,9 @@
-import Playground from '../../components/playground';
+import Playground, {withProps} from '../../components/playground';
 import Prop from '../../components/prop';
 import {LegacyBlock} from '../../components/legacy-block';
 import Layout from '../../components/layout';
-import {Card} from 'newskit';
-import {CodeFromFile} from '../../components/code';
+import {Card, Tag, TagSize, Flow, Stack, StackDistribution} from 'newskit';
+import {CodeFromFile, Code} from '../../components/code';
 
 
 export default Layout;
@@ -43,6 +43,11 @@ Cards are used to display a summary of content and will reveal more details upon
       The default loading aspect ratio of media is 3:2, however, a user should be able to pass any ratio to the media.
     </Prop>
   </Prop>
+  <Prop name="actions" type="React.ComponentType">
+    If provided, the Card will render the React component being passed to the actions. This could be buttons, tags and/or links. 
+    The actions section is typically placed at the bottom of the card and would only be clickable if the child components would be. <br />
+    If there are multiple items, it is advised to use the Stack component to display the items. Please refer to the MyTag component below.<br />
+  </Prop>
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements. Refer to the defaults below for the object structure:
     <CodeFromFile path="examples/default-presets/card.tsx" />
@@ -70,8 +75,57 @@ Cards are used to display a summary of content and will reveal more details upon
         alt: 'Card Media',
       },
     },
+    {
+      name: 'Actions',
+      propName: 'actions',
+      options: [
+        {
+          label: 'Without Actions',
+          value: undefined,
+        },
+        {
+          label: 'With Actions',
+          value: withProps(() => (
+              <Stack flow={Flow.HorizontalCenter} space='sizing040'>
+                <Tag href="https://newskit.co.uk/" size={TagSize.Small} overrides={{stylePreset: 'tagPrimary', typePreset: 'label010'}}>News</Tag>
+                <Tag href="https://newskit.co.uk/" size={TagSize.Small} overrides={{stylePreset: 'tagPrimary', typePreset: 'label010'}}>Sport</Tag>
+              </Stack>
+          ),
+          {}, 'MyTag'),
+        },
+      ],
+    },
+    {
+      name: 'Actions Inset Overrides',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Without Inset',
+          value: undefined,
+        },
+        {
+          label: 'With Inset',
+          value: {
+            actionsContainer: {
+              paddingPreset: 'spaceInset030Squish'
+            }
+          },
+        },
+      ],
+    },
   ]}
 />
+
+In the example above, MyTag component in the actions section looks like this:
+<Code>
+  {`<Stack flow={Flow.HorizontalCenter} space='sizing040'>
+  <Tag href="https://newskit.co.uk/" size={TagSize.Small} overrides={{stylePreset: 'tagPrimary', typePreset: 'label010'}}>News</Tag>
+  <Tag href="https://newskit.co.uk/" size={TagSize.Small} overrides={{stylePreset: 'tagPrimary', typePreset: 'label010'}}>Sport</Tag>
+</Stack>`}
+</Code>
+
+
+
 
 ### Styling
 

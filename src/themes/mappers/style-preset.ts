@@ -360,6 +360,18 @@ export const createStylePresets = ({
 
   presets.buttonDefault = presets.buttonSolidPrimary;
 
+  // Card
+
+  presets.cardActionsContainer = {
+    base: {
+      backgroundColor: colorPrimitives.interface010,
+      borderStyle: 'solid',
+      borderColor: colorPrimitives.interactive040,
+      borderWidth: borderPrimitives.borderWidth010,
+      borderRadius: borderRadiusPrimitives.borderRadiusSharp,
+    },
+  };
+
   //
   // Icon Button
   //

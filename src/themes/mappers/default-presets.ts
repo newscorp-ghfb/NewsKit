@@ -32,6 +32,11 @@ export const defaultPresets = {
     media: {
       stylePreset: 'imageSharp',
     },
+    actionsContainer: {
+      stylePreset: 'cardActionsContainer',
+      minHeight: 'sizing080',
+      paddingPreset: 'spaceInset000Squish',
+    },
   },
   headline: {
     heading: {

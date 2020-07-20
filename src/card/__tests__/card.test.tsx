@@ -2,11 +2,14 @@ import * as React from 'react';
 import {Card} from '..';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {Image} from '../../image';
+import {Stack} from '../../stack';
+import {Tag} from '../../tag';
+import {Button} from '../../button';
 
 const placeholder = '/placeholder-3x2.png';
 const href = 'https://newskit.co.uk/';
 
-const customComponent = () => (
+const customMediaComponent = () => (
   <Image src="/placeholder-16x9.png" alt="Card Media" />
 );
 
@@ -16,6 +19,13 @@ const customComponentWithOverrides = () => (
     overrides={{stylePreset: 'imageDefault'}}
     alt="Card Media"
   />
+);
+
+const actionsComponent = () => (
+  <Stack>
+    <Tag>Tag</Tag>
+    <Button>Button</Button>
+  </Stack>
 );
 
 describe('Card', () => {
@@ -64,7 +74,7 @@ describe('Card', () => {
   test('renders media section with overrides', () => {
     const fragment = renderToFragmentWithTheme(Card, {
       media: {
-        src: href,
+        src: placeholder,
         alt: 'Card media',
       },
       overrides: {
@@ -78,7 +88,7 @@ describe('Card', () => {
 
   test('renders media section with a custom component', () => {
     const fragment = renderToFragmentWithTheme(Card, {
-      media: customComponent,
+      media: customMediaComponent,
     });
     expect(fragment).toMatchSnapshot();
   });
@@ -86,6 +96,37 @@ describe('Card', () => {
   test('renders media section with a custom component using overrides', () => {
     const fragment = renderToFragmentWithTheme(Card, {
       media: customComponentWithOverrides,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders actions section with given component', () => {
+    const fragment = renderToFragmentWithTheme(Card, {
+      actions: actionsComponent,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders actions section with overrides for minHeight', () => {
+    const fragment = renderToFragmentWithTheme(Card, {
+      actions: actionsComponent,
+      overrides: {
+        actionsContainer: {
+          minHeight: 'sizing090',
+        },
+      },
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders actions section with overrides for paddingPreset', () => {
+    const fragment = renderToFragmentWithTheme(Card, {
+      actions: actionsComponent,
+      overrides: {
+        actionsContainer: {
+          paddingPreset: 'spaceInset030Squish',
+        },
+      },
     });
     expect(fragment).toMatchSnapshot();
   });

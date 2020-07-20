@@ -70,8 +70,8 @@ const fontFamily2: FontConfig = {
   },
   cropAdjustments: {
     [fontSizes.fontSize010]: {
-      top: 1,
-      bottom: -0.5,
+      top: 0.5,
+      bottom: 0.5,
     },
     [fontSizes.fontSize020]: {
       top: 1.2,
