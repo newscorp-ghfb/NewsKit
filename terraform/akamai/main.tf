@@ -86,7 +86,8 @@ data "akamai_property_rules" "rules" {
           }
           option {
             key = "values"
-            values = ["text/*",
+            values = [
+              "text/*",
               "application/javascript",
               "application/x-javascript",
               "application/x-javascript*",
@@ -163,6 +164,45 @@ data "akamai_property_rules" "rules" {
       comment        = "Improves the performance of delivering objects to end users. Behaviors in this rule are applied to all requests as appropriate."
     }
     rule {
+      name = "Lets Encrypt"
+      behavior {
+        name = "redirectplus"
+        option {
+          key   = "enabled"
+          value = true
+        }
+        option {
+          key   = "destination"
+          value = "{{builtin.AK_SCHEME}}://dcv.akamai.com{{builtin.AK_PATH}}"
+        }
+        option {
+          key   = "responseCode"
+          value = 302
+        }
+      }
+      criteria {
+        name = "path"
+        option {
+          key   = "matchOperator"
+          value = "MATCHES_ONE_OF"
+        }
+        option {
+          key    = "values"
+          values = ["/.well-known/acme-challenge/*"]
+        }
+        option {
+          key   = "matchCaseSensitive"
+          value = false
+        }
+        option {
+          key   = "normalize"
+          value = false
+        }
+      }
+      criteria_match = "all"
+      comment        = "Redirect ACME challenges to dcv.akamai.com"
+    }
+    rule {
       name = "Redirect to HTTPS"
       behavior {
         name = "redirect"
@@ -196,6 +236,26 @@ data "akamai_property_rules" "rules" {
         option {
           key   = "value"
           value = "HTTP"
+        }
+      }
+      criteria {
+        name = "path"
+        option {
+          key   = "matchOperator"
+          value = "DOES_NOT_MATCH_ONE_OF"
+        }
+        option {
+          key = "values"
+          values = [
+          "/.well-known/acme-challenge/*"]
+        }
+        option {
+          key   = "matchCaseSensitive"
+          value = false
+        }
+        option {
+          key   = "normalize"
+          value = false
         }
       }
       criteria_match = "all"
@@ -574,6 +634,7 @@ data "akamai_property_rules" "rules" {
     is_secure = false
   }
 }
+
 
 resource "akamai_property_activation" "production" {
   property = akamai_property.property.id
