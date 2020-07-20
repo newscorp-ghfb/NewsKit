@@ -340,7 +340,7 @@ jobs:
         default: false
       environment:
         type: string
-        default: dev
+        default: ""
     working_directory: ~/project
     executor: terraform
     steps:
@@ -862,6 +862,13 @@ workflows:
           package: dns
           context: ncu-product-platforms-context
           environment: dev
+          requires:
+            - init_aws
+      - deploy_terraform:
+          <<: *only_pr
+          name: deploy_terraform_ecr
+          package: ecr
+          context: ncu-product-platforms-context
           requires:
             - init_aws
     # develop jobs

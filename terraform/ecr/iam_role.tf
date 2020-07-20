@@ -18,7 +18,7 @@ data "aws_iam_policy_document" "cluster_access" {
       type = "AWS"
       identifiers = [
         "arn:aws:iam::940731442544:user/svc-ncu-product-platforms",
-        "AROAJQX7CD6B563F5XNHO", #TODO: this was set manually - find out why.
+        "AROAJQX7CD6B563F5XNHO", # TODO: this was set manually - find out why.
       ]
     }
   }
