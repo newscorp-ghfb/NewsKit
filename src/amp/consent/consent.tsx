@@ -13,7 +13,8 @@ export interface ConsentProps {
 }
 
 export interface SourcePointConfigProps {
-  accountId: string | number;
+  accountId: string;
+  msDomain?: string;
   propertyHref?: string;
   propertyId?: string | number;
   privacyManagerId?: string | number;
