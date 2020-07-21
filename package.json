@@ -184,8 +184,7 @@
   },
   "peerDependencies": {
     "react": ">= 16.8.0 < 17",
-    "react-dom": ">= 16.8.0 < 17",
-    "react-test-renderer": "^16.12.0"
+    "react-dom": ">= 16.8.0 < 17"
   },
   "husky": {
     "hooks": {
