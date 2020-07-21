@@ -374,8 +374,8 @@ jobs:
       - terraform_plan:
           package: << parameters.package >>
           terraform_arg: -var-file=<< parameters.environment >>.tfvars
-      # - terraform_apply:
-      #     package: << parameters.package >>
+      - terraform_apply:
+          package: << parameters.package >>
 
   test_visual_comps:
     working_directory: ~/project
