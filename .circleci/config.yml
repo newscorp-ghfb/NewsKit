@@ -338,6 +338,9 @@ jobs:
       akamai:
         type: boolean
         default: false
+      apply:
+        type: boolean
+        default: true
       environment:
         type: string
         default: ""
@@ -374,8 +377,11 @@ jobs:
       - terraform_plan:
           package: << parameters.package >>
           terraform_arg: -var-file=<< parameters.environment >>.tfvars
-      - terraform_apply:
-          package: << parameters.package >>
+      - when:
+          condition: << parameters.apply >>
+          steps:
+            - terraform_apply:
+                package: << parameters.package >>
 
   test_visual_comps:
     working_directory: ~/project
@@ -845,30 +851,33 @@ workflows:
           requires:
             - run_visual_comps
       - init_aws:
-          <<: *only_pr
+          <<: *ignore_trigger_release
           context: ncu-product-platforms-context
       - deploy_terraform:
           <<: *only_pr
-          name: deploy_terraform_akamai
+          name: deploy_terraform_akamai_pr
           package: akamai
           context: ncu-product-platforms-context
           akamai: true
+          apply: false
           environment: dev
           requires:
             - init_aws
       - deploy_terraform:
           <<: *only_pr
-          name: deploy_terraform_dns
+          name: deploy_terraform_dns_pr
           package: dns
           context: ncu-product-platforms-context
+          apply: false
           environment: dev
           requires:
             - init_aws
       - deploy_terraform:
           <<: *only_pr
-          name: deploy_terraform_ecr
+          name: deploy_terraform_ecr_pr
           package: ecr
           context: ncu-product-platforms-context
+          apply: false
           requires:
             - init_aws
     # develop jobs
@@ -914,6 +923,30 @@ workflows:
           <<: *only_develop
           requires:
             - eks_flux_deploy_dev
+      - deploy_terraform:
+          <<: *only_develop
+          name: deploy_terraform_akamai_dev
+          package: akamai
+          context: ncu-product-platforms-context
+          akamai: true
+          environment: dev
+          requires:
+            - init_aws
+      - deploy_terraform:
+          <<: *only_develop
+          name: deploy_terraform_dns_dev
+          package: dns
+          context: ncu-product-platforms-context
+          environment: dev
+          requires:
+            - init_aws
+      - deploy_terraform:
+          <<: *only_develop
+          name: deploy_terraform_ecr_dev
+          package: ecr
+          context: ncu-product-platforms-context
+          requires:
+            - init_aws
     # release jobs
       - create_release_candidate:
           <<: *only_trigger_release
@@ -941,6 +974,23 @@ workflows:
           <<: *only_release
           requires:
             - eks_flux_deploy_staging
+      - deploy_terraform:
+          <<: *only_release
+          name: deploy_terraform_akamai_staging
+          package: akamai
+          context: ncu-product-platforms-context
+          akamai: true
+          environment: staging
+          requires:
+            - init_aws
+      - deploy_terraform:
+          <<: *only_release
+          name: deploy_terraform_dns_staging
+          package: dns
+          context: ncu-product-platforms-context
+          environment: staging
+          requires:
+            - init_aws
     # master jobs
       - approve_deployment:
           type: approval
@@ -972,3 +1022,12 @@ workflows:
           <<: *only_master
           requires:
             - eks_flux_deploy_prod
+      - deploy_terraform:
+          <<: *only_release
+          name: deploy_terraform_akamai_prod
+          package: akamai
+          context: ncu-product-platforms-context
+          akamai: true
+          environment: prod
+          requires:
+            - init_aws
