@@ -75,10 +75,12 @@ commands:
         type: string
         default: ""
     steps:
-      - run: |
-          source $BASH_ENV
-          cd terraform/<< parameters.package >>
-          terraform init << parameters.terraform_arg >>
+      - run:
+          name: Terraform init
+          command: |
+            source $BASH_ENV
+            cd terraform/<< parameters.package >>
+            terraform init << parameters.terraform_arg >>
 
   terraform_plan:
     description: Run Terraform Plan
@@ -90,10 +92,12 @@ commands:
         type: string
         default: ""
     steps:
-      - run: |
-          source $BASH_ENV
-          cd terraform/<< parameters.package >>
-          terraform plan -out=tfplan -input=false << parameters.terraform_arg >>
+      - run:
+          name: Terraform plan
+          command: |
+            source $BASH_ENV
+            cd terraform/<< parameters.package >>
+            terraform plan -out=tfplan -input=false << parameters.terraform_arg >>
 
   terraform_apply:
     description: Run Terraform Apply
@@ -101,10 +105,12 @@ commands:
       package:
         type: string
     steps:
-      - run: |
-          source $BASH_ENV
-          cd terraform/<< parameters.package >>
-          terraform apply -lock=false -input=false tfplan
+      - run:
+          name: Terraform apply
+          command: |
+            source $BASH_ENV
+            cd terraform/<< parameters.package >>
+            terraform apply -lock=false -input=false tfplan
 
   terraform_force_apply:
     description: Run Terraform Apply
@@ -112,10 +118,12 @@ commands:
       package:
         type: string
     steps:
-      - run: |
-          source $BASH_ENV
-          cd terraform/<< parameters.package >>
-          terraform apply -auto-approve
+      - run:
+          name: Terraform forced apply
+          command: |
+            source $BASH_ENV
+            cd terraform/<< parameters.package >>
+            terraform apply -auto-approve
 
   aws_assume_role:
     description: Assume AWS role
@@ -137,22 +145,24 @@ commands:
         type: string
         default: "default"
     steps:
-      - run: |
-          export AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
-          export AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
-          export temp_role=$(aws sts assume-role \
-                  --role-arn "<< parameters.aws_assume_role_arn >>" \
-                  --role-session-name "circle-ci-assume")
-          export AWS_ACCESS_KEY_ID_TEMP=$(echo $temp_role | jq .Credentials.AccessKeyId | xargs)
-          export AWS_SECRET_ACCESS_KEY_TEMP=$(echo $temp_role | jq .Credentials.SecretAccessKey | xargs)
-          export AWS_SESSION_TOKEN_TEMP=$(echo $temp_role | jq .Credentials.SessionToken | xargs)
-          echo "export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID_TEMP" >> $BASH_ENV
-          echo "export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY_TEMP" >> $BASH_ENV
-          echo "export AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN_TEMP" >> $BASH_ENV
-          source $BASH_ENV
-          cat $BASH_ENV | grep AWS_ACCESS_KEY_ID >> assume_role_creds_<< parameters.job_type >>.txt
-          cat $BASH_ENV | grep AWS_SECRET_ACCESS_KEY >> assume_role_creds_<< parameters.job_type >>.txt
-          cat $BASH_ENV | grep AWS_SESSION_TOKEN >> assume_role_creds_<< parameters.job_type >>.txt
+      - run:
+          name: Assume role
+          command: |
+            export AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
+            export AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
+            export temp_role=$(aws sts assume-role \
+                    --role-arn "<< parameters.aws_assume_role_arn >>" \
+                    --role-session-name "circle-ci-assume")
+            export AWS_ACCESS_KEY_ID_TEMP=$(echo $temp_role | jq .Credentials.AccessKeyId | xargs)
+            export AWS_SECRET_ACCESS_KEY_TEMP=$(echo $temp_role | jq .Credentials.SecretAccessKey | xargs)
+            export AWS_SESSION_TOKEN_TEMP=$(echo $temp_role | jq .Credentials.SessionToken | xargs)
+            echo "export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID_TEMP" >> $BASH_ENV
+            echo "export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY_TEMP" >> $BASH_ENV
+            echo "export AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN_TEMP" >> $BASH_ENV
+            source $BASH_ENV
+            cat $BASH_ENV | grep AWS_ACCESS_KEY_ID >> assume_role_creds_<< parameters.job_type >>.txt
+            cat $BASH_ENV | grep AWS_SECRET_ACCESS_KEY >> assume_role_creds_<< parameters.job_type >>.txt
+            cat $BASH_ENV | grep AWS_SESSION_TOKEN >> assume_role_creds_<< parameters.job_type >>.txt
       - persist_to_workspace:
           root: ./
           paths:
@@ -166,9 +176,11 @@ commands:
         type: string
         default: "default"
     steps:
-      - run: |
-          cat assume_role_creds_<< parameters.job_type >>.txt >> $BASH_ENV
-          source $BASH_ENV
+      - run:
+          name: Assume role file
+          command: |
+            cat assume_role_creds_<< parameters.job_type >>.txt >> $BASH_ENV
+            source $BASH_ENV
 
   skip_if_infra_only_pr:
     description: Skip PR job execution if only infrastructure was changed
@@ -341,6 +353,9 @@ jobs:
       apply:
         type: boolean
         default: true
+      tf_env:
+        type: boolean
+        default: true
       environment:
         type: string
         default: ""
@@ -371,12 +386,23 @@ jobs:
                   access_token = ${AKAMAI_ACCESS_TOKEN}
                   client_token = ${AKAMAI_CLIENT_TOKEN}" > ~/.edgerc
       - aws_assume_role_file
-      - terraform_init:
-          package: << parameters.package >>
-          terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/<< parameters.environment >>/terraform.tfstate"
-      - terraform_plan:
-          package: << parameters.package >>
-          terraform_arg: -var-file=<< parameters.environment >>.tfvars
+      - when:
+          condition: << parameters.tf_env >>
+          steps:
+            - terraform_init:
+                package: << parameters.package >>
+                terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/<< parameters.environment >>/terraform.tfstate"
+            - terraform_plan:
+                package: << parameters.package >>
+                terraform_arg: -var-file=<< parameters.environment >>.tfvars
+      - unless:
+          condition: << parameters.tf_env >>
+          steps:
+            - terraform_init:
+                package: << parameters.package >>
+                terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/terraform.tfstate"
+            - terraform_plan:
+                package: << parameters.package >>
       - when:
           condition: << parameters.apply >>
           steps:
@@ -878,6 +904,7 @@ workflows:
           package: ecr
           context: ncu-product-platforms-context
           apply: false
+          tf_env: false
           requires:
             - init_aws
     # develop jobs
@@ -945,6 +972,7 @@ workflows:
           name: deploy_terraform_ecr_dev
           package: ecr
           context: ncu-product-platforms-context
+          tf_env: false
           requires:
             - init_aws
     # release jobs
@@ -1023,7 +1051,7 @@ workflows:
           requires:
             - eks_flux_deploy_prod
       - deploy_terraform:
-          <<: *only_release
+          <<: *only_master
           name: deploy_terraform_akamai_prod
           package: akamai
           context: ncu-product-platforms-context
