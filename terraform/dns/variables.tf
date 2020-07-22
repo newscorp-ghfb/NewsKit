@@ -18,8 +18,3 @@ variable "domain_mapping" {
 variable "cluster_domain" {
   description = "Top domain for EKS cluster"
 }
-
-variable "acme_challenges" {
-  type        = map(string)
-  description = "Challenges for ACME validation"
-}

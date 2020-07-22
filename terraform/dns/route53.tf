@@ -20,12 +20,3 @@ resource "aws_route53_record" "origin" {
   ttl      = "360"
   records  = ["${each.value}.${var.cluster_domain}"]
 }
-
-resource "aws_route53_record" "acme_challenge" {
-  for_each = var.acme_challenges
-  zone_id  = aws_route53_zone.newskit.zone_id
-  name     = each.key == "root" ? "_acme-challenge" : "_acme-challenge.${each.key}"
-  type     = "TXT"
-  ttl      = "60"
-  records  = [each.value]
-}
