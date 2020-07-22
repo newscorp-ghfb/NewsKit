@@ -2,7 +2,7 @@
 
 exports[`Sidebar navigation collapses successfully at nested level 1`] = `
 <DocumentFragment>
-  .emotion-21 {
+  .emotion-19 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -15,7 +15,7 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
   margin: 0;
 }
 
-.emotion-18 {
+.emotion-16 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
@@ -93,7 +93,7 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
   float: right;
 }
 
-.emotion-8 {
+.emotion-7 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -106,47 +106,47 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
   text-decoration: none;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   color: #2F75D7;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-8:hover:not(:disabled) svg {
+.emotion-7:hover:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-8:active:not(:disabled) svg {
+.emotion-7:active:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-8:visited:not(:disabled) {
+.emotion-7:visited:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-8:visited:not(:disabled) svg {
+.emotion-7:visited:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-8 {
+  .emotion-7 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-7 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -156,9 +156,6 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -166,30 +163,15 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-  margin-top: calc(-4px/2);
-  margin-bottom: calc(-4px/2);
-}
-
-.emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-  margin-top: calc(4px/2);
-  margin-bottom: calc(4px/2);
 }
 
 <nav
     aria-label="Sidebar"
-    class="emotion-21"
+    class="emotion-19"
     role="navigation"
   >
     <ul
-      class="emotion-18"
+      class="emotion-16"
       role="list"
     >
       <li
@@ -266,30 +248,26 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
           </svg>
         </div>
         <ul
-          class="emotion-18"
+          class="emotion-16"
           role="list"
         >
           <li
             class="emotion-2"
           >
             <a
-              class="emotion-8"
+              class="emotion-7"
               href="/group2/page1"
             >
               <span
-                class="emotion-7"
+                class="emotion-6"
               >
-                <span
-                  class="emotion-6"
+                <div
+                  class="emotion-1"
+                  data-testid="/group2/page1"
+                  tabindex="-1"
                 >
-                  <div
-                    class="emotion-1"
-                    data-testid="/group2/page1"
-                    tabindex="-1"
-                  >
-                    Group 2 Page 1
-                  </div>
-                </span>
+                  Group 2 Page 1
+                </div>
               </span>
             </a>
           </li>
@@ -297,23 +275,19 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
             class="emotion-2"
           >
             <a
-              class="emotion-8"
+              class="emotion-7"
               href="/group2/page2"
             >
               <span
-                class="emotion-7"
+                class="emotion-6"
               >
-                <span
-                  class="emotion-6"
+                <div
+                  class="emotion-1"
+                  data-testid="/group2/page2"
+                  tabindex="-1"
                 >
-                  <div
-                    class="emotion-1"
-                    data-testid="/group2/page2"
-                    tabindex="-1"
-                  >
-                    Group 2 Page 2
-                  </div>
-                </span>
+                  Group 2 Page 2
+                </div>
               </span>
             </a>
           </li>
@@ -725,7 +699,7 @@ exports[`Sidebar navigation on group 1 page after enter key group1 menu collapse
 
 exports[`Sidebar navigation on group 1 page by clicking on components menu, group1 menu collapses and group2 menu expands 1`] = `
 <DocumentFragment>
-  .emotion-21 {
+  .emotion-19 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -738,7 +712,7 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
   margin: 0;
 }
 
-.emotion-18 {
+.emotion-16 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
@@ -816,7 +790,7 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
   float: right;
 }
 
-.emotion-8 {
+.emotion-7 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -829,47 +803,47 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
   text-decoration: none;
 }
 
-.emotion-8 svg {
+.emotion-7 svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   color: #2F75D7;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-8:hover:not(:disabled) svg {
+.emotion-7:hover:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-8:active:not(:disabled) svg {
+.emotion-7:active:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-8:visited:not(:disabled) {
+.emotion-7:visited:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-8:visited:not(:disabled) svg {
+.emotion-7:visited:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-8 {
+  .emotion-7 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-7 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -879,9 +853,6 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -889,21 +860,6 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-  margin-top: calc(-4px/2);
-  margin-bottom: calc(-4px/2);
-}
-
-.emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-  margin-top: calc(4px/2);
-  margin-bottom: calc(4px/2);
 }
 
 .emotion-4 {
@@ -961,11 +917,11 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
 
 <nav
     aria-label="Sidebar"
-    class="emotion-21"
+    class="emotion-19"
     role="navigation"
   >
     <ul
-      class="emotion-18"
+      class="emotion-16"
       role="list"
     >
       <li
@@ -1042,30 +998,26 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
           </svg>
         </div>
         <ul
-          class="emotion-18"
+          class="emotion-16"
           role="list"
         >
           <li
             class="emotion-2"
           >
             <a
-              class="emotion-8"
+              class="emotion-7"
               href="/group2/page1"
             >
               <span
-                class="emotion-7"
+                class="emotion-6"
               >
-                <span
-                  class="emotion-6"
+                <div
+                  class="emotion-1"
+                  data-testid="/group2/page1"
+                  tabindex="-1"
                 >
-                  <div
-                    class="emotion-1"
-                    data-testid="/group2/page1"
-                    tabindex="-1"
-                  >
-                    Group 2 Page 1
-                  </div>
-                </span>
+                  Group 2 Page 1
+                </div>
               </span>
             </a>
           </li>
@@ -1073,23 +1025,19 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
             class="emotion-2"
           >
             <a
-              class="emotion-8"
+              class="emotion-7"
               href="/group2/page2"
             >
               <span
-                class="emotion-7"
+                class="emotion-6"
               >
-                <span
-                  class="emotion-6"
+                <div
+                  class="emotion-1"
+                  data-testid="/group2/page2"
+                  tabindex="-1"
                 >
-                  <div
-                    class="emotion-1"
-                    data-testid="/group2/page2"
-                    tabindex="-1"
-                  >
-                    Group 2 Page 2
-                  </div>
-                </span>
+                  Group 2 Page 2
+                </div>
               </span>
             </a>
           </li>
@@ -1139,7 +1087,7 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
 
 exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
 <DocumentFragment>
-  .emotion-13 {
+  .emotion-12 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -1152,20 +1100,20 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
   margin: 0;
 }
 
-.emotion-7 {
+.emotion-6 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-6 {
+.emotion-5 {
   list-style-type: none;
   margin: 0px;
   padding: 0 4px;
 }
 
-.emotion-6 .emotion-6,
-.emotion-6 .emotion-6 .emotion-6 {
+.emotion-5 .emotion-5,
+.emotion-5 .emotion-5 .emotion-5 {
   padding-right: 0;
 }
 
@@ -1230,7 +1178,7 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
   float: right;
 }
 
-.emotion-5 {
+.emotion-4 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -1243,47 +1191,47 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
   text-decoration: none;
 }
 
-.emotion-5 svg {
+.emotion-4 svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   color: #2F75D7;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-5:hover:not(:disabled) svg {
+.emotion-4:hover:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-5:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-5:active:not(:disabled) svg {
+.emotion-4:active:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-5:visited:not(:disabled) {
+.emotion-4:visited:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-5:visited:not(:disabled) svg {
+.emotion-4:visited:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-5 {
+  .emotion-4 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1293,9 +1241,6 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1303,21 +1248,6 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-  margin-top: calc(-4px/2);
-  margin-bottom: calc(-4px/2);
-}
-
-.emotion-3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-  margin-top: calc(4px/2);
-  margin-bottom: calc(4px/2);
 }
 
 .emotion-2 {
@@ -1375,15 +1305,15 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
 
 <nav
     aria-label="Sidebar"
-    class="emotion-13"
+    class="emotion-12"
     role="navigation"
   >
     <ul
-      class="emotion-7"
+      class="emotion-6"
       role="list"
     >
       <li
-        class="emotion-6"
+        class="emotion-5"
       >
         <div
           class="emotion-1"
@@ -1419,37 +1349,33 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
           </svg>
         </div>
         <ul
-          class="emotion-7"
+          class="emotion-6"
           role="list"
         >
           <li
-            class="emotion-6"
+            class="emotion-5"
           >
             <a
-              class="emotion-5"
+              class="emotion-4"
               href="/group1/page1"
             >
               <span
-                class="emotion-4"
+                class="emotion-3"
               >
-                <span
-                  class="emotion-3"
+                <div
+                  class="emotion-2"
+                  data-testid="/group1/page1"
+                  tabindex="-1"
                 >
-                  <div
-                    class="emotion-2"
-                    data-testid="/group1/page1"
-                    tabindex="-1"
-                  >
-                    Group 1 Page 1
-                  </div>
-                </span>
+                  Group 1 Page 1
+                </div>
               </span>
             </a>
           </li>
         </ul>
       </li>
       <li
-        class="emotion-6"
+        class="emotion-5"
       >
         <div
           class="emotion-1"

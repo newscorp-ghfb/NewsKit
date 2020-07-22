@@ -158,4 +158,46 @@ describe('Stack', () => {
       });
     });
   });
+
+  Object.values(Flow)
+    .filter(flow => flow.includes('horizontal'))
+    .forEach(flowKey => {
+      Object.values(['wrap', 'nowrap']).forEach(wrapType => {
+        test(`renders where the stack flow is ${flowKey} and only spaceStack is set to sizing090`, () => {
+          const fragment = renderToFragmentWithTheme(Stack, {
+            flow: flowKey,
+            spaceStack: 'sizing090',
+            wrap: wrapType as 'wrap' | 'nowrap',
+            children: [
+              <Tag>child 1</Tag>,
+              <Tag>child 2</Tag>,
+              <Tag>child 3</Tag>,
+            ],
+          });
+
+          expect(fragment).toMatchSnapshot();
+        });
+      });
+    });
+
+  Object.values(Flow)
+    .filter(flow => flow.includes('vertical'))
+    .forEach(flowKey => {
+      Object.values(['wrap', 'nowrap']).forEach(wrapType => {
+        test(`renders where the stack flow is ${flowKey} and only spaceStack is set to sizing090`, () => {
+          const fragment = renderToFragmentWithTheme(Stack, {
+            flow: flowKey,
+            spaceStack: 'sizing090',
+            wrap: wrapType as 'wrap' | 'nowrap',
+            children: [
+              <Tag>child 1</Tag>,
+              <Tag>child 2</Tag>,
+              <Tag>child 3</Tag>,
+            ],
+          });
+
+          expect(fragment).toMatchSnapshot();
+        });
+      });
+    });
 });

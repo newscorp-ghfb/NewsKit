@@ -3,6 +3,7 @@ import {AlignSelfValues} from '../stack-child';
 
 export interface CommonStackProps {
   space: SizingKeys;
+  spaceStack: SizingKeys;
   flexGrow: boolean | number;
   flexShrink: boolean | number;
   flowReverse: boolean;
@@ -23,6 +24,7 @@ export interface CommonStackProps {
     | 'space-between'
     | 'space-evenly';
   inline: boolean;
+  as?: keyof JSX.IntrinsicElements;
 }
 
 export interface StyledStackProps extends CommonStackProps {
@@ -33,16 +35,18 @@ export interface StackProps extends Partial<CommonStackProps> {
   wrap?: boolean | 'wrap' | 'nowrap';
   list?: boolean;
   ariaLabel?: string;
-  as?: keyof JSX.IntrinsicElements;
 }
 
 export interface ChildProps
-  extends Pick<StyledStackProps, 'space' | 'flow' | '$wrap'> {
+  extends Pick<StyledStackProps, 'space' | 'spaceStack' | 'flow' | '$wrap'> {
   order?: number;
 }
 
 export interface StyledChildProps
-  extends Pick<StyledStackProps, 'space' | 'flow' | '$wrap'> {
+  extends Pick<
+    StyledStackProps,
+    'space' | 'spaceStack' | 'flow' | '$wrap' | 'as'
+  > {
   $order?: number;
   $alignSelf?: AlignSelfValues;
 }

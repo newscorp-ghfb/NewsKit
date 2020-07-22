@@ -1113,6 +1113,24 @@ export const createStylePresets = ({
   presets.dateTimePrefix = presets.dateTime;
   presets.dateTimeSuffix = presets.dateTime;
 
+  //
+  // Byline
+  //
+
+  presets.byline = {
+    base: {
+      color: colorPrimitives.inkSubtle,
+    },
+  };
+
+  presets.bylineLink = presets.linkInline;
+  presets.bylineDivider = {
+    base: {
+      ...presets.dividerVertical.base,
+      borderColor: colorPrimitives.interface050,
+    },
+  };
+
   return presets;
 };
 

@@ -37,7 +37,7 @@ describe('Documentation Site - sidebar component', () => {
     cy.contains('Typography').should('exist');
 
     cy.get('[data-testid="/components"]').click();
-    cy.contains('Article Byline').should('exist');
+    cy.contains('Byline').should('exist');
     cy.contains('Headline').should('exist');
     cy.contains('Audio Player').should('exist');
     cy.contains('Date Time').should('exist');

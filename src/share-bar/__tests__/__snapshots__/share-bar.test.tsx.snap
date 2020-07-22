@@ -177,7 +177,7 @@ exports[`ShareBar renders horizontally with icons and label 1`] = `
 
 exports[`ShareBar renders horizontally with icons as links and label 1`] = `
 <DocumentFragment>
-  .emotion-12 {
+  .emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -196,7 +196,7 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-11 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -221,7 +221,7 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -267,7 +267,7 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -278,45 +278,45 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
   color: #2F75D7;
 }
 
-.emotion-4 svg {
+.emotion-3 svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-4:hover:not(:disabled) svg {
+.emotion-3:hover:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-4:active:not(:disabled) svg {
+.emotion-3:active:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:visited:not(:disabled) {
+.emotion-3:visited:not(:disabled) {
   color: #903D91;
 }
 
-.emotion-4:visited:not(:disabled) svg {
+.emotion-3:visited:not(:disabled) svg {
   fill: #903D91;
   color: #903D91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-4 {
+  .emotion-3 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -326,9 +326,6 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -336,25 +333,10 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-  margin-top: calc(-4px/2);
-  margin-bottom: calc(-4px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-  margin-top: calc(4px/2);
-  margin-bottom: calc(4px/2);
 }
 
 <div
-    class="emotion-12"
+    class="emotion-10"
     orientation="horizontal"
   >
     <span
@@ -364,96 +346,88 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
       Share
     </span>
     <div
-      class="emotion-11"
+      class="emotion-9"
     >
       <div
-        class="emotion-5"
+        class="emotion-4"
       >
         <a
-          class="emotion-4"
+          class="emotion-3"
           href="/"
         >
           <span
-            class="emotion-3"
+            class="emotion-2"
           >
-            <span
-              class="emotion-2"
+            <svg
+              aria-labelledby="mock-bui-1"
+              class="emotion-1"
+              viewBox="0 0 1365.3333 1365.3333"
             >
-              <svg
-                aria-labelledby="mock-bui-1"
-                class="emotion-1"
-                viewBox="0 0 1365.3333 1365.3333"
+              <title
+                id="mock-bui-1"
               >
-                <title
-                  id="mock-bui-1"
-                >
-                  Facebook icon
-                </title>
+                Facebook icon
+              </title>
+              <g
+                transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+              >
                 <g
-                  transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+                  transform="scale(0.1)"
                 >
-                  <g
-                    transform="scale(0.1)"
-                  >
-                    <path
-                      d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
-                      fill="#1877f2"
-                    />
-                    <path
-                      d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
-                      fill="#ffffff"
-                    />
-                  </g>
+                  <path
+                    d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
+                    fill="#1877f2"
+                  />
+                  <path
+                    d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
+                    fill="#ffffff"
+                  />
                 </g>
-              </svg>
-            </span>
+              </g>
+            </svg>
           </span>
         </a>
       </div>
       <div
-        class="emotion-5"
+        class="emotion-4"
       >
         <a
-          class="emotion-4"
+          class="emotion-3"
           href="/"
         >
           <span
-            class="emotion-3"
+            class="emotion-2"
           >
-            <span
-              class="emotion-2"
+            <svg
+              aria-labelledby="mock-bui-1"
+              class="emotion-1"
+              viewBox="0 0 400 400"
             >
-              <svg
-                aria-labelledby="mock-bui-1"
-                class="emotion-1"
-                viewBox="0 0 400 400"
+              <title
+                id="mock-bui-1"
               >
-                <title
-                  id="mock-bui-1"
-                >
-                  Twitter logo
-                </title>
-                <g>
-                  <circle
-                    cx="200"
-                    cy="200"
-                    fill="#1DA1F2"
-                    r="200"
-                  />
-                </g>
-                <g>
-                  <path
-                    d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
+                Twitter logo
+              </title>
+              <g>
+                <circle
+                  cx="200"
+                  cy="200"
+                  fill="#1DA1F2"
+                  r="200"
+                />
+              </g>
+              <g>
+                <path
+                  d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
 		c-8.6,3.8-17.9,6.4-27.7,7.6c10-6,17.6-15.4,21.2-26.7c-9.3,5.5-19.6,9.5-30.6,11.7c-8.8-9.4-21.3-15.2-35.2-15.2
 		c-26.6,0-48.2,21.6-48.2,48.2c0,3.8,0.4,7.5,1.3,11c-40.1-2-75.6-21.2-99.4-50.4c-4.1,7.1-6.5,15.4-6.5,24.2
 		c0,16.7,8.5,31.5,21.5,40.1c-7.9-0.2-15.3-2.4-21.8-6c0,0.2,0,0.4,0,0.6c0,23.4,16.6,42.8,38.7,47.3c-4,1.1-8.3,1.7-12.7,1.7
 		c-3.1,0-6.1-0.3-9.1-0.9c6.1,19.2,23.9,33.1,45,33.5c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7
 		C110.8,297.5,136.2,305.5,163.4,305.5"
-                    fill="#FFFFFF"
-                  />
-                </g>
-              </svg>
-            </span>
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
           </span>
         </a>
       </div>
@@ -694,7 +668,7 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-<span
+<div
     class="emotion-6"
     orientation="vertical"
   >
@@ -704,10 +678,10 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
     >
       Share
     </span>
-    <span
+    <div
       class="emotion-5"
     >
-      <span
+      <div
         class="emotion-2"
       >
         <svg
@@ -737,8 +711,8 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
             </g>
           </g>
         </svg>
-      </span>
-      <span
+      </div>
+      <div
         class="emotion-2"
       >
         <svg
@@ -771,9 +745,9 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
             />
           </g>
         </svg>
-      </span>
-    </span>
-  </span>
+      </div>
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -840,14 +814,14 @@ exports[`ShareBar renders vertically with twitter and facebook icons 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-<span
+<div
     class="emotion-5"
     orientation="vertical"
   >
-    <span
+    <div
       class="emotion-4"
     >
-      <span
+      <div
         class="emotion-1"
       >
         <svg
@@ -877,8 +851,8 @@ exports[`ShareBar renders vertically with twitter and facebook icons 1`] = `
             </g>
           </g>
         </svg>
-      </span>
-      <span
+      </div>
+      <div
         class="emotion-1"
       >
         <svg
@@ -911,15 +885,15 @@ exports[`ShareBar renders vertically with twitter and facebook icons 1`] = `
             />
           </g>
         </svg>
-      </span>
-    </span>
-  </span>
+      </div>
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`ShareBar renders whatever components are passed to it 1`] = `
 <DocumentFragment>
-  .emotion-18 {
+  .emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -938,7 +912,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-17 {
+.emotion-15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -963,7 +937,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1009,7 +983,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -1020,45 +994,45 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   color: #2F75D7;
 }
 
-.emotion-4 svg {
+.emotion-3 svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-4:hover:not(:disabled) svg {
+.emotion-3:hover:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-4:active:not(:disabled) svg {
+.emotion-3:active:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:visited:not(:disabled) {
+.emotion-3:visited:not(:disabled) {
   color: #903D91;
 }
 
-.emotion-4:visited:not(:disabled) svg {
+.emotion-3:visited:not(:disabled) svg {
   fill: #903D91;
   color: #903D91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-4 {
+  .emotion-3 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1068,9 +1042,6 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1078,24 +1049,9 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-  margin-top: calc(-4px/2);
-  margin-bottom: calc(-4px/2);
 }
 
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-  margin-top: calc(4px/2);
-  margin-bottom: calc(4px/2);
-}
-
-.emotion-15 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1105,7 +1061,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   flex-direction: column;
 }
 
-.emotion-14 {
+.emotion-12 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1142,35 +1098,35 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #ffffff;
   color: #ffffff;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-13 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1191,7 +1147,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-9 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1202,7 +1158,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-9::before {
   content: '';
   display: block;
   height: 0;
@@ -1210,7 +1166,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-11::after {
+.emotion-9::after {
   content: '';
   display: block;
   height: 0;
@@ -1219,7 +1175,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 }
 
 <div
-    class="emotion-18"
+    class="emotion-16"
     orientation="horizontal"
   >
     <span
@@ -1229,118 +1185,110 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
       Share
     </span>
     <div
-      class="emotion-17"
+      class="emotion-15"
     >
       <div
-        class="emotion-5"
+        class="emotion-4"
       >
         <a
-          class="emotion-4"
+          class="emotion-3"
           href="/"
         >
           <span
-            class="emotion-3"
+            class="emotion-2"
           >
-            <span
-              class="emotion-2"
+            <svg
+              aria-labelledby="mock-bui-1"
+              class="emotion-1"
+              viewBox="0 0 1365.3333 1365.3333"
             >
-              <svg
-                aria-labelledby="mock-bui-1"
-                class="emotion-1"
-                viewBox="0 0 1365.3333 1365.3333"
+              <title
+                id="mock-bui-1"
               >
-                <title
-                  id="mock-bui-1"
-                >
-                  Facebook icon
-                </title>
+                Facebook icon
+              </title>
+              <g
+                transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+              >
                 <g
-                  transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+                  transform="scale(0.1)"
                 >
-                  <g
-                    transform="scale(0.1)"
-                  >
-                    <path
-                      d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
-                      fill="#1877f2"
-                    />
-                    <path
-                      d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
-                      fill="#ffffff"
-                    />
-                  </g>
+                  <path
+                    d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
+                    fill="#1877f2"
+                  />
+                  <path
+                    d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
+                    fill="#ffffff"
+                  />
                 </g>
-              </svg>
-            </span>
+              </g>
+            </svg>
           </span>
         </a>
       </div>
       <div
-        class="emotion-5"
+        class="emotion-4"
       >
         <a
-          class="emotion-4"
+          class="emotion-3"
           href="/"
         >
           <span
-            class="emotion-3"
+            class="emotion-2"
           >
-            <span
-              class="emotion-2"
+            <svg
+              aria-labelledby="mock-bui-1"
+              class="emotion-1"
+              viewBox="0 0 400 400"
             >
-              <svg
-                aria-labelledby="mock-bui-1"
-                class="emotion-1"
-                viewBox="0 0 400 400"
+              <title
+                id="mock-bui-1"
               >
-                <title
-                  id="mock-bui-1"
-                >
-                  Twitter logo
-                </title>
-                <g>
-                  <circle
-                    cx="200"
-                    cy="200"
-                    fill="#1DA1F2"
-                    r="200"
-                  />
-                </g>
-                <g>
-                  <path
-                    d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
+                Twitter logo
+              </title>
+              <g>
+                <circle
+                  cx="200"
+                  cy="200"
+                  fill="#1DA1F2"
+                  r="200"
+                />
+              </g>
+              <g>
+                <path
+                  d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
 		c-8.6,3.8-17.9,6.4-27.7,7.6c10-6,17.6-15.4,21.2-26.7c-9.3,5.5-19.6,9.5-30.6,11.7c-8.8-9.4-21.3-15.2-35.2-15.2
 		c-26.6,0-48.2,21.6-48.2,48.2c0,3.8,0.4,7.5,1.3,11c-40.1-2-75.6-21.2-99.4-50.4c-4.1,7.1-6.5,15.4-6.5,24.2
 		c0,16.7,8.5,31.5,21.5,40.1c-7.9-0.2-15.3-2.4-21.8-6c0,0.2,0,0.4,0,0.6c0,23.4,16.6,42.8,38.7,47.3c-4,1.1-8.3,1.7-12.7,1.7
 		c-3.1,0-6.1-0.3-9.1-0.9c6.1,19.2,23.9,33.1,45,33.5c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7
 		C110.8,297.5,136.2,305.5,163.4,305.5"
-                    fill="#FFFFFF"
-                  />
-                </g>
-              </svg>
-            </span>
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
           </span>
         </a>
       </div>
       <div
-        class="emotion-5"
+        class="emotion-4"
       >
         <div
-          class="emotion-15"
+          class="emotion-13"
         >
           <button
-            class="emotion-14"
+            class="emotion-12"
             data-testid="button"
             type="button"
           >
             <div
-              class="emotion-13"
+              class="emotion-11"
             >
               <div
-                class="emotion-5"
+                class="emotion-4"
               >
                 <span
-                  class="emotion-11"
+                  class="emotion-9"
                 >
                   more options
                 </span>
@@ -1356,7 +1304,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 
 exports[`ShareBar renders with custom label stylePreset 1`] = `
 <DocumentFragment>
-  .emotion-18 {
+  .emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1375,7 +1323,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-17 {
+.emotion-15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1400,7 +1348,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1417,7 +1365,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   display: inline-block;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -1428,45 +1376,45 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   color: #2F75D7;
 }
 
-.emotion-4 svg {
+.emotion-3 svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-4:hover:not(:disabled) svg {
+.emotion-3:hover:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-4:active:not(:disabled) svg {
+.emotion-3:active:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:visited:not(:disabled) {
+.emotion-3:visited:not(:disabled) {
   color: #903D91;
 }
 
-.emotion-4:visited:not(:disabled) svg {
+.emotion-3:visited:not(:disabled) svg {
   fill: #903D91;
   color: #903D91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-4 {
+  .emotion-3 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1476,9 +1424,6 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1486,24 +1431,9 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-  margin-top: calc(-4px/2);
-  margin-bottom: calc(-4px/2);
 }
 
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-  margin-top: calc(4px/2);
-  margin-bottom: calc(4px/2);
-}
-
-.emotion-15 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1513,7 +1443,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   flex-direction: column;
 }
 
-.emotion-14 {
+.emotion-12 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1550,35 +1480,35 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #ffffff;
   color: #ffffff;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-13 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1599,7 +1529,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-9 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1610,7 +1540,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-9::before {
   content: '';
   display: block;
   height: 0;
@@ -1618,7 +1548,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-11::after {
+.emotion-9::after {
   content: '';
   display: block;
   height: 0;
@@ -1681,7 +1611,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 }
 
 <div
-    class="emotion-18"
+    class="emotion-16"
     orientation="horizontal"
   >
     <span
@@ -1691,118 +1621,110 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
       Share
     </span>
     <div
-      class="emotion-17"
+      class="emotion-15"
     >
       <div
-        class="emotion-5"
+        class="emotion-4"
       >
         <a
-          class="emotion-4"
+          class="emotion-3"
           href="/"
         >
           <span
-            class="emotion-3"
+            class="emotion-2"
           >
-            <span
-              class="emotion-2"
+            <svg
+              aria-labelledby="mock-bui-1"
+              class="emotion-1"
+              viewBox="0 0 1365.3333 1365.3333"
             >
-              <svg
-                aria-labelledby="mock-bui-1"
-                class="emotion-1"
-                viewBox="0 0 1365.3333 1365.3333"
+              <title
+                id="mock-bui-1"
               >
-                <title
-                  id="mock-bui-1"
-                >
-                  Facebook icon
-                </title>
+                Facebook icon
+              </title>
+              <g
+                transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+              >
                 <g
-                  transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+                  transform="scale(0.1)"
                 >
-                  <g
-                    transform="scale(0.1)"
-                  >
-                    <path
-                      d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
-                      fill="#1877f2"
-                    />
-                    <path
-                      d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
-                      fill="#ffffff"
-                    />
-                  </g>
+                  <path
+                    d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
+                    fill="#1877f2"
+                  />
+                  <path
+                    d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
+                    fill="#ffffff"
+                  />
                 </g>
-              </svg>
-            </span>
+              </g>
+            </svg>
           </span>
         </a>
       </div>
       <div
-        class="emotion-5"
+        class="emotion-4"
       >
         <a
-          class="emotion-4"
+          class="emotion-3"
           href="/"
         >
           <span
-            class="emotion-3"
+            class="emotion-2"
           >
-            <span
-              class="emotion-2"
+            <svg
+              aria-labelledby="mock-bui-1"
+              class="emotion-1"
+              viewBox="0 0 400 400"
             >
-              <svg
-                aria-labelledby="mock-bui-1"
-                class="emotion-1"
-                viewBox="0 0 400 400"
+              <title
+                id="mock-bui-1"
               >
-                <title
-                  id="mock-bui-1"
-                >
-                  Twitter logo
-                </title>
-                <g>
-                  <circle
-                    cx="200"
-                    cy="200"
-                    fill="#1DA1F2"
-                    r="200"
-                  />
-                </g>
-                <g>
-                  <path
-                    d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
+                Twitter logo
+              </title>
+              <g>
+                <circle
+                  cx="200"
+                  cy="200"
+                  fill="#1DA1F2"
+                  r="200"
+                />
+              </g>
+              <g>
+                <path
+                  d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
 		c-8.6,3.8-17.9,6.4-27.7,7.6c10-6,17.6-15.4,21.2-26.7c-9.3,5.5-19.6,9.5-30.6,11.7c-8.8-9.4-21.3-15.2-35.2-15.2
 		c-26.6,0-48.2,21.6-48.2,48.2c0,3.8,0.4,7.5,1.3,11c-40.1-2-75.6-21.2-99.4-50.4c-4.1,7.1-6.5,15.4-6.5,24.2
 		c0,16.7,8.5,31.5,21.5,40.1c-7.9-0.2-15.3-2.4-21.8-6c0,0.2,0,0.4,0,0.6c0,23.4,16.6,42.8,38.7,47.3c-4,1.1-8.3,1.7-12.7,1.7
 		c-3.1,0-6.1-0.3-9.1-0.9c6.1,19.2,23.9,33.1,45,33.5c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7
 		C110.8,297.5,136.2,305.5,163.4,305.5"
-                    fill="#FFFFFF"
-                  />
-                </g>
-              </svg>
-            </span>
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
           </span>
         </a>
       </div>
       <div
-        class="emotion-5"
+        class="emotion-4"
       >
         <div
-          class="emotion-15"
+          class="emotion-13"
         >
           <button
-            class="emotion-14"
+            class="emotion-12"
             data-testid="button"
             type="button"
           >
             <div
-              class="emotion-13"
+              class="emotion-11"
             >
               <div
-                class="emotion-5"
+                class="emotion-4"
               >
                 <span
-                  class="emotion-11"
+                  class="emotion-9"
                 >
                   more options
                 </span>
@@ -1818,7 +1740,7 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 
 exports[`ShareBar renders with custom stack spacing 1`] = `
 <DocumentFragment>
-  .emotion-18 {
+  .emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1837,7 +1759,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-17 {
+.emotion-15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1862,7 +1784,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1879,7 +1801,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   display: inline-block;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -1890,45 +1812,45 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   color: #2F75D7;
 }
 
-.emotion-4 svg {
+.emotion-3 svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-4:hover:not(:disabled) svg {
+.emotion-3:hover:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-4:active:not(:disabled) svg {
+.emotion-3:active:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:visited:not(:disabled) {
+.emotion-3:visited:not(:disabled) {
   color: #903D91;
 }
 
-.emotion-4:visited:not(:disabled) svg {
+.emotion-3:visited:not(:disabled) svg {
   fill: #903D91;
   color: #903D91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-4 {
+  .emotion-3 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1938,9 +1860,6 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1948,24 +1867,9 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-  margin-top: calc(-4px/2);
-  margin-bottom: calc(-4px/2);
 }
 
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-  margin-top: calc(4px/2);
-  margin-bottom: calc(4px/2);
-}
-
-.emotion-15 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1975,7 +1879,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   flex-direction: column;
 }
 
-.emotion-14 {
+.emotion-12 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2012,35 +1916,35 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #ffffff;
   color: #ffffff;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-13 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2061,7 +1965,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-9 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2072,7 +1976,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-9::before {
   content: '';
   display: block;
   height: 0;
@@ -2080,7 +1984,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-11::after {
+.emotion-9::after {
   content: '';
   display: block;
   height: 0;
@@ -2118,7 +2022,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 }
 
 <div
-    class="emotion-18"
+    class="emotion-16"
     orientation="horizontal"
   >
     <span
@@ -2128,118 +2032,110 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
       Share
     </span>
     <div
-      class="emotion-17"
+      class="emotion-15"
     >
       <div
-        class="emotion-5"
+        class="emotion-4"
       >
         <a
-          class="emotion-4"
+          class="emotion-3"
           href="/"
         >
           <span
-            class="emotion-3"
+            class="emotion-2"
           >
-            <span
-              class="emotion-2"
+            <svg
+              aria-labelledby="mock-bui-1"
+              class="emotion-1"
+              viewBox="0 0 1365.3333 1365.3333"
             >
-              <svg
-                aria-labelledby="mock-bui-1"
-                class="emotion-1"
-                viewBox="0 0 1365.3333 1365.3333"
+              <title
+                id="mock-bui-1"
               >
-                <title
-                  id="mock-bui-1"
-                >
-                  Facebook icon
-                </title>
+                Facebook icon
+              </title>
+              <g
+                transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+              >
                 <g
-                  transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+                  transform="scale(0.1)"
                 >
-                  <g
-                    transform="scale(0.1)"
-                  >
-                    <path
-                      d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
-                      fill="#1877f2"
-                    />
-                    <path
-                      d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
-                      fill="#ffffff"
-                    />
-                  </g>
+                  <path
+                    d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
+                    fill="#1877f2"
+                  />
+                  <path
+                    d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
+                    fill="#ffffff"
+                  />
                 </g>
-              </svg>
-            </span>
+              </g>
+            </svg>
           </span>
         </a>
       </div>
       <div
-        class="emotion-5"
+        class="emotion-4"
       >
         <a
-          class="emotion-4"
+          class="emotion-3"
           href="/"
         >
           <span
-            class="emotion-3"
+            class="emotion-2"
           >
-            <span
-              class="emotion-2"
+            <svg
+              aria-labelledby="mock-bui-1"
+              class="emotion-1"
+              viewBox="0 0 400 400"
             >
-              <svg
-                aria-labelledby="mock-bui-1"
-                class="emotion-1"
-                viewBox="0 0 400 400"
+              <title
+                id="mock-bui-1"
               >
-                <title
-                  id="mock-bui-1"
-                >
-                  Twitter logo
-                </title>
-                <g>
-                  <circle
-                    cx="200"
-                    cy="200"
-                    fill="#1DA1F2"
-                    r="200"
-                  />
-                </g>
-                <g>
-                  <path
-                    d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
+                Twitter logo
+              </title>
+              <g>
+                <circle
+                  cx="200"
+                  cy="200"
+                  fill="#1DA1F2"
+                  r="200"
+                />
+              </g>
+              <g>
+                <path
+                  d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
 		c-8.6,3.8-17.9,6.4-27.7,7.6c10-6,17.6-15.4,21.2-26.7c-9.3,5.5-19.6,9.5-30.6,11.7c-8.8-9.4-21.3-15.2-35.2-15.2
 		c-26.6,0-48.2,21.6-48.2,48.2c0,3.8,0.4,7.5,1.3,11c-40.1-2-75.6-21.2-99.4-50.4c-4.1,7.1-6.5,15.4-6.5,24.2
 		c0,16.7,8.5,31.5,21.5,40.1c-7.9-0.2-15.3-2.4-21.8-6c0,0.2,0,0.4,0,0.6c0,23.4,16.6,42.8,38.7,47.3c-4,1.1-8.3,1.7-12.7,1.7
 		c-3.1,0-6.1-0.3-9.1-0.9c6.1,19.2,23.9,33.1,45,33.5c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7
 		C110.8,297.5,136.2,305.5,163.4,305.5"
-                    fill="#FFFFFF"
-                  />
-                </g>
-              </svg>
-            </span>
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
           </span>
         </a>
       </div>
       <div
-        class="emotion-5"
+        class="emotion-4"
       >
         <div
-          class="emotion-15"
+          class="emotion-13"
         >
           <button
-            class="emotion-14"
+            class="emotion-12"
             data-testid="button"
             type="button"
           >
             <div
-              class="emotion-13"
+              class="emotion-11"
             >
               <div
-                class="emotion-5"
+                class="emotion-4"
               >
                 <span
-                  class="emotion-11"
+                  class="emotion-9"
                 >
                   more options
                 </span>
@@ -2255,7 +2151,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 
 exports[`ShareBar renders with horizontally with overrides for label spacing 1`] = `
 <DocumentFragment>
-  .emotion-18 {
+  .emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2274,7 +2170,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   justify-content: flex-start;
 }
 
-.emotion-17 {
+.emotion-15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2299,7 +2195,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   margin-right: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2316,7 +2212,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   display: inline-block;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -2327,45 +2223,45 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   color: #2F75D7;
 }
 
-.emotion-4 svg {
+.emotion-3 svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-4:hover:not(:disabled) svg {
+.emotion-3:hover:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-4:active:not(:disabled) svg {
+.emotion-3:active:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:visited:not(:disabled) {
+.emotion-3:visited:not(:disabled) {
   color: #903D91;
 }
 
-.emotion-4:visited:not(:disabled) svg {
+.emotion-3:visited:not(:disabled) svg {
   fill: #903D91;
   color: #903D91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-4 {
+  .emotion-3 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2375,9 +2271,6 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -2385,24 +2278,9 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-  margin-top: calc(-4px/2);
-  margin-bottom: calc(-4px/2);
 }
 
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-  margin-top: calc(4px/2);
-  margin-bottom: calc(4px/2);
-}
-
-.emotion-15 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2412,7 +2290,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   flex-direction: column;
 }
 
-.emotion-14 {
+.emotion-12 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2449,35 +2327,35 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #ffffff;
   color: #ffffff;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-13 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2498,7 +2376,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-9 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2509,7 +2387,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-9::before {
   content: '';
   display: block;
   height: 0;
@@ -2517,7 +2395,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-11::after {
+.emotion-9::after {
   content: '';
   display: block;
   height: 0;
@@ -2555,7 +2433,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 }
 
 <div
-    class="emotion-18"
+    class="emotion-16"
     orientation="horizontal"
   >
     <span
@@ -2565,118 +2443,110 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
       Share
     </span>
     <div
-      class="emotion-17"
+      class="emotion-15"
     >
       <div
-        class="emotion-5"
+        class="emotion-4"
       >
         <a
-          class="emotion-4"
+          class="emotion-3"
           href="/"
         >
           <span
-            class="emotion-3"
+            class="emotion-2"
           >
-            <span
-              class="emotion-2"
+            <svg
+              aria-labelledby="mock-bui-1"
+              class="emotion-1"
+              viewBox="0 0 1365.3333 1365.3333"
             >
-              <svg
-                aria-labelledby="mock-bui-1"
-                class="emotion-1"
-                viewBox="0 0 1365.3333 1365.3333"
+              <title
+                id="mock-bui-1"
               >
-                <title
-                  id="mock-bui-1"
-                >
-                  Facebook icon
-                </title>
+                Facebook icon
+              </title>
+              <g
+                transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+              >
                 <g
-                  transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+                  transform="scale(0.1)"
                 >
-                  <g
-                    transform="scale(0.1)"
-                  >
-                    <path
-                      d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
-                      fill="#1877f2"
-                    />
-                    <path
-                      d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
-                      fill="#ffffff"
-                    />
-                  </g>
+                  <path
+                    d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
+                    fill="#1877f2"
+                  />
+                  <path
+                    d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
+                    fill="#ffffff"
+                  />
                 </g>
-              </svg>
-            </span>
+              </g>
+            </svg>
           </span>
         </a>
       </div>
       <div
-        class="emotion-5"
+        class="emotion-4"
       >
         <a
-          class="emotion-4"
+          class="emotion-3"
           href="/"
         >
           <span
-            class="emotion-3"
+            class="emotion-2"
           >
-            <span
-              class="emotion-2"
+            <svg
+              aria-labelledby="mock-bui-1"
+              class="emotion-1"
+              viewBox="0 0 400 400"
             >
-              <svg
-                aria-labelledby="mock-bui-1"
-                class="emotion-1"
-                viewBox="0 0 400 400"
+              <title
+                id="mock-bui-1"
               >
-                <title
-                  id="mock-bui-1"
-                >
-                  Twitter logo
-                </title>
-                <g>
-                  <circle
-                    cx="200"
-                    cy="200"
-                    fill="#1DA1F2"
-                    r="200"
-                  />
-                </g>
-                <g>
-                  <path
-                    d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
+                Twitter logo
+              </title>
+              <g>
+                <circle
+                  cx="200"
+                  cy="200"
+                  fill="#1DA1F2"
+                  r="200"
+                />
+              </g>
+              <g>
+                <path
+                  d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
 		c-8.6,3.8-17.9,6.4-27.7,7.6c10-6,17.6-15.4,21.2-26.7c-9.3,5.5-19.6,9.5-30.6,11.7c-8.8-9.4-21.3-15.2-35.2-15.2
 		c-26.6,0-48.2,21.6-48.2,48.2c0,3.8,0.4,7.5,1.3,11c-40.1-2-75.6-21.2-99.4-50.4c-4.1,7.1-6.5,15.4-6.5,24.2
 		c0,16.7,8.5,31.5,21.5,40.1c-7.9-0.2-15.3-2.4-21.8-6c0,0.2,0,0.4,0,0.6c0,23.4,16.6,42.8,38.7,47.3c-4,1.1-8.3,1.7-12.7,1.7
 		c-3.1,0-6.1-0.3-9.1-0.9c6.1,19.2,23.9,33.1,45,33.5c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7
 		C110.8,297.5,136.2,305.5,163.4,305.5"
-                    fill="#FFFFFF"
-                  />
-                </g>
-              </svg>
-            </span>
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
           </span>
         </a>
       </div>
       <div
-        class="emotion-5"
+        class="emotion-4"
       >
         <div
-          class="emotion-15"
+          class="emotion-13"
         >
           <button
-            class="emotion-14"
+            class="emotion-12"
             data-testid="button"
             type="button"
           >
             <div
-              class="emotion-13"
+              class="emotion-11"
             >
               <div
-                class="emotion-5"
+                class="emotion-4"
               >
                 <span
-                  class="emotion-11"
+                  class="emotion-9"
                 >
                   more options
                 </span>
@@ -2749,7 +2619,7 @@ exports[`ShareBar renders with no icons and labels 1`] = `
 
 exports[`ShareBar renders with overrides for item spacing 1`] = `
 <DocumentFragment>
-  .emotion-12 {
+  .emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2766,7 +2636,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   display: inline-block;
 }
 
-.emotion-18 {
+.emotion-16 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2814,7 +2684,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -2825,45 +2695,45 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   color: #2F75D7;
 }
 
-.emotion-4 svg {
+.emotion-3 svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-4:hover:not(:disabled) svg {
+.emotion-3:hover:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-4:active:not(:disabled) svg {
+.emotion-3:active:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:visited:not(:disabled) {
+.emotion-3:visited:not(:disabled) {
   color: #903D91;
 }
 
-.emotion-4:visited:not(:disabled) svg {
+.emotion-3:visited:not(:disabled) svg {
   fill: #903D91;
   color: #903D91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-4 {
+  .emotion-3 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2873,9 +2743,6 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -2883,24 +2750,9 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-  margin-top: calc(-4px/2);
-  margin-bottom: calc(-4px/2);
 }
 
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-  margin-top: calc(4px/2);
-  margin-bottom: calc(4px/2);
-}
-
-.emotion-15 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2910,7 +2762,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   flex-direction: column;
 }
 
-.emotion-14 {
+.emotion-12 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2947,35 +2799,35 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #ffffff;
   color: #ffffff;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-13 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2996,7 +2848,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-9 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -3007,7 +2859,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-9::before {
   content: '';
   display: block;
   height: 0;
@@ -3015,7 +2867,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-11::after {
+.emotion-9::after {
   content: '';
   display: block;
   height: 0;
@@ -3023,7 +2875,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-17 {
+.emotion-15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3048,7 +2900,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   margin-bottom: calc(-32px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3057,8 +2909,8 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   margin-bottom: calc(32px/2);
 }
 
-<span
-    class="emotion-18"
+<div
+    class="emotion-16"
     orientation="vertical"
   >
     <span
@@ -3067,119 +2919,111 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
     >
       Share
     </span>
-    <span
-      class="emotion-17"
+    <div
+      class="emotion-15"
     >
-      <span
-        class="emotion-5"
+      <div
+        class="emotion-4"
       >
         <a
-          class="emotion-4"
+          class="emotion-3"
           href="/"
         >
           <span
-            class="emotion-3"
+            class="emotion-2"
           >
-            <span
-              class="emotion-2"
+            <svg
+              aria-labelledby="mock-bui-1"
+              class="emotion-1"
+              viewBox="0 0 1365.3333 1365.3333"
             >
-              <svg
-                aria-labelledby="mock-bui-1"
-                class="emotion-1"
-                viewBox="0 0 1365.3333 1365.3333"
+              <title
+                id="mock-bui-1"
               >
-                <title
-                  id="mock-bui-1"
-                >
-                  Facebook icon
-                </title>
+                Facebook icon
+              </title>
+              <g
+                transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+              >
                 <g
-                  transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+                  transform="scale(0.1)"
                 >
-                  <g
-                    transform="scale(0.1)"
-                  >
-                    <path
-                      d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
-                      fill="#1877f2"
-                    />
-                    <path
-                      d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
-                      fill="#ffffff"
-                    />
-                  </g>
-                </g>
-              </svg>
-            </span>
-          </span>
-        </a>
-      </span>
-      <span
-        class="emotion-5"
-      >
-        <a
-          class="emotion-4"
-          href="/"
-        >
-          <span
-            class="emotion-3"
-          >
-            <span
-              class="emotion-2"
-            >
-              <svg
-                aria-labelledby="mock-bui-1"
-                class="emotion-1"
-                viewBox="0 0 400 400"
-              >
-                <title
-                  id="mock-bui-1"
-                >
-                  Twitter logo
-                </title>
-                <g>
-                  <circle
-                    cx="200"
-                    cy="200"
-                    fill="#1DA1F2"
-                    r="200"
+                  <path
+                    d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
+                    fill="#1877f2"
+                  />
+                  <path
+                    d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
+                    fill="#ffffff"
                   />
                 </g>
-                <g>
-                  <path
-                    d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
+              </g>
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div
+        class="emotion-4"
+      >
+        <a
+          class="emotion-3"
+          href="/"
+        >
+          <span
+            class="emotion-2"
+          >
+            <svg
+              aria-labelledby="mock-bui-1"
+              class="emotion-1"
+              viewBox="0 0 400 400"
+            >
+              <title
+                id="mock-bui-1"
+              >
+                Twitter logo
+              </title>
+              <g>
+                <circle
+                  cx="200"
+                  cy="200"
+                  fill="#1DA1F2"
+                  r="200"
+                />
+              </g>
+              <g>
+                <path
+                  d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
 		c-8.6,3.8-17.9,6.4-27.7,7.6c10-6,17.6-15.4,21.2-26.7c-9.3,5.5-19.6,9.5-30.6,11.7c-8.8-9.4-21.3-15.2-35.2-15.2
 		c-26.6,0-48.2,21.6-48.2,48.2c0,3.8,0.4,7.5,1.3,11c-40.1-2-75.6-21.2-99.4-50.4c-4.1,7.1-6.5,15.4-6.5,24.2
 		c0,16.7,8.5,31.5,21.5,40.1c-7.9-0.2-15.3-2.4-21.8-6c0,0.2,0,0.4,0,0.6c0,23.4,16.6,42.8,38.7,47.3c-4,1.1-8.3,1.7-12.7,1.7
 		c-3.1,0-6.1-0.3-9.1-0.9c6.1,19.2,23.9,33.1,45,33.5c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7
 		C110.8,297.5,136.2,305.5,163.4,305.5"
-                    fill="#FFFFFF"
-                  />
-                </g>
-              </svg>
-            </span>
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
           </span>
         </a>
-      </span>
-      <span
-        class="emotion-5"
+      </div>
+      <div
+        class="emotion-4"
       >
         <div
-          class="emotion-15"
+          class="emotion-13"
         >
           <button
-            class="emotion-14"
+            class="emotion-12"
             data-testid="button"
             type="button"
           >
             <div
-              class="emotion-13"
+              class="emotion-11"
             >
               <div
-                class="emotion-12"
+                class="emotion-10"
               >
                 <span
-                  class="emotion-11"
+                  class="emotion-9"
                 >
                   more options
                 </span>
@@ -3187,15 +3031,15 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
             </div>
           </button>
         </div>
-      </span>
-    </span>
-  </span>
+      </div>
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`ShareBar renders with overrides for label typePreset 1`] = `
 <DocumentFragment>
-  .emotion-12 {
+  .emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3212,7 +3056,7 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   display: inline-block;
 }
 
-.emotion-18 {
+.emotion-16 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3231,7 +3075,7 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-17 {
+.emotion-15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3256,7 +3100,7 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3294,7 +3138,7 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -3305,45 +3149,45 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   color: #2F75D7;
 }
 
-.emotion-4 svg {
+.emotion-3 svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-4:hover:not(:disabled) svg {
+.emotion-3:hover:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-4:active:not(:disabled) svg {
+.emotion-3:active:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:visited:not(:disabled) {
+.emotion-3:visited:not(:disabled) {
   color: #903D91;
 }
 
-.emotion-4:visited:not(:disabled) svg {
+.emotion-3:visited:not(:disabled) svg {
   fill: #903D91;
   color: #903D91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-4 {
+  .emotion-3 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3353,9 +3197,6 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -3363,24 +3204,9 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-  margin-top: calc(-4px/2);
-  margin-bottom: calc(-4px/2);
 }
 
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-  margin-top: calc(4px/2);
-  margin-bottom: calc(4px/2);
-}
-
-.emotion-15 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3390,7 +3216,7 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   flex-direction: column;
 }
 
-.emotion-14 {
+.emotion-12 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3427,35 +3253,35 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #ffffff;
   color: #ffffff;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-13 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3476,7 +3302,7 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-9 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -3487,7 +3313,7 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-9::before {
   content: '';
   display: block;
   height: 0;
@@ -3495,7 +3321,7 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-11::after {
+.emotion-9::after {
   content: '';
   display: block;
   height: 0;
@@ -3503,8 +3329,8 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-<span
-    class="emotion-18"
+<div
+    class="emotion-16"
     orientation="vertical"
   >
     <span
@@ -3513,119 +3339,111 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
     >
       Share
     </span>
-    <span
-      class="emotion-17"
+    <div
+      class="emotion-15"
     >
-      <span
-        class="emotion-5"
+      <div
+        class="emotion-4"
       >
         <a
-          class="emotion-4"
+          class="emotion-3"
           href="/"
         >
           <span
-            class="emotion-3"
+            class="emotion-2"
           >
-            <span
-              class="emotion-2"
+            <svg
+              aria-labelledby="mock-bui-1"
+              class="emotion-1"
+              viewBox="0 0 1365.3333 1365.3333"
             >
-              <svg
-                aria-labelledby="mock-bui-1"
-                class="emotion-1"
-                viewBox="0 0 1365.3333 1365.3333"
+              <title
+                id="mock-bui-1"
               >
-                <title
-                  id="mock-bui-1"
-                >
-                  Facebook icon
-                </title>
+                Facebook icon
+              </title>
+              <g
+                transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+              >
                 <g
-                  transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+                  transform="scale(0.1)"
                 >
-                  <g
-                    transform="scale(0.1)"
-                  >
-                    <path
-                      d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
-                      fill="#1877f2"
-                    />
-                    <path
-                      d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
-                      fill="#ffffff"
-                    />
-                  </g>
-                </g>
-              </svg>
-            </span>
-          </span>
-        </a>
-      </span>
-      <span
-        class="emotion-5"
-      >
-        <a
-          class="emotion-4"
-          href="/"
-        >
-          <span
-            class="emotion-3"
-          >
-            <span
-              class="emotion-2"
-            >
-              <svg
-                aria-labelledby="mock-bui-1"
-                class="emotion-1"
-                viewBox="0 0 400 400"
-              >
-                <title
-                  id="mock-bui-1"
-                >
-                  Twitter logo
-                </title>
-                <g>
-                  <circle
-                    cx="200"
-                    cy="200"
-                    fill="#1DA1F2"
-                    r="200"
+                  <path
+                    d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
+                    fill="#1877f2"
+                  />
+                  <path
+                    d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
+                    fill="#ffffff"
                   />
                 </g>
-                <g>
-                  <path
-                    d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
+              </g>
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div
+        class="emotion-4"
+      >
+        <a
+          class="emotion-3"
+          href="/"
+        >
+          <span
+            class="emotion-2"
+          >
+            <svg
+              aria-labelledby="mock-bui-1"
+              class="emotion-1"
+              viewBox="0 0 400 400"
+            >
+              <title
+                id="mock-bui-1"
+              >
+                Twitter logo
+              </title>
+              <g>
+                <circle
+                  cx="200"
+                  cy="200"
+                  fill="#1DA1F2"
+                  r="200"
+                />
+              </g>
+              <g>
+                <path
+                  d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
 		c-8.6,3.8-17.9,6.4-27.7,7.6c10-6,17.6-15.4,21.2-26.7c-9.3,5.5-19.6,9.5-30.6,11.7c-8.8-9.4-21.3-15.2-35.2-15.2
 		c-26.6,0-48.2,21.6-48.2,48.2c0,3.8,0.4,7.5,1.3,11c-40.1-2-75.6-21.2-99.4-50.4c-4.1,7.1-6.5,15.4-6.5,24.2
 		c0,16.7,8.5,31.5,21.5,40.1c-7.9-0.2-15.3-2.4-21.8-6c0,0.2,0,0.4,0,0.6c0,23.4,16.6,42.8,38.7,47.3c-4,1.1-8.3,1.7-12.7,1.7
 		c-3.1,0-6.1-0.3-9.1-0.9c6.1,19.2,23.9,33.1,45,33.5c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7
 		C110.8,297.5,136.2,305.5,163.4,305.5"
-                    fill="#FFFFFF"
-                  />
-                </g>
-              </svg>
-            </span>
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
           </span>
         </a>
-      </span>
-      <span
-        class="emotion-5"
+      </div>
+      <div
+        class="emotion-4"
       >
         <div
-          class="emotion-15"
+          class="emotion-13"
         >
           <button
-            class="emotion-14"
+            class="emotion-12"
             data-testid="button"
             type="button"
           >
             <div
-              class="emotion-13"
+              class="emotion-11"
             >
               <div
-                class="emotion-12"
+                class="emotion-10"
               >
                 <span
-                  class="emotion-11"
+                  class="emotion-9"
                 >
                   more options
                 </span>
@@ -3633,15 +3451,15 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
             </div>
           </button>
         </div>
-      </span>
-    </span>
-  </span>
+      </div>
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`ShareBar renders with vertically with overrides for label spacing 1`] = `
 <DocumentFragment>
-  .emotion-12 {
+  .emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3658,7 +3476,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   display: inline-block;
 }
 
-.emotion-18 {
+.emotion-16 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3677,7 +3495,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   justify-content: flex-start;
 }
 
-.emotion-17 {
+.emotion-15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3702,7 +3520,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3711,7 +3529,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   margin-bottom: calc(8px/2);
 }
 
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -3722,45 +3540,45 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   color: #2F75D7;
 }
 
-.emotion-4 svg {
+.emotion-3 svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-4:hover:not(:disabled) svg {
+.emotion-3:hover:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-4:active:not(:disabled) svg {
+.emotion-3:active:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:visited:not(:disabled) {
+.emotion-3:visited:not(:disabled) {
   color: #903D91;
 }
 
-.emotion-4:visited:not(:disabled) svg {
+.emotion-3:visited:not(:disabled) svg {
   fill: #903D91;
   color: #903D91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-4 {
+  .emotion-3 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3770,9 +3588,6 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -3780,24 +3595,9 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-  margin-top: calc(-4px/2);
-  margin-bottom: calc(-4px/2);
 }
 
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-  margin-top: calc(4px/2);
-  margin-bottom: calc(4px/2);
-}
-
-.emotion-15 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3807,7 +3607,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   flex-direction: column;
 }
 
-.emotion-14 {
+.emotion-12 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3844,35 +3644,35 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #ffffff;
   color: #ffffff;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-13 {
+.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3893,7 +3693,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   margin-right: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-9 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -3904,7 +3704,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   letter-spacing: 0;
 }
 
-.emotion-11::before {
+.emotion-9::before {
   content: '';
   display: block;
   height: 0;
@@ -3912,7 +3712,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-11::after {
+.emotion-9::after {
   content: '';
   display: block;
   height: 0;
@@ -3949,8 +3749,8 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   margin-top: -0.4267857142857143em;
 }
 
-<span
-    class="emotion-18"
+<div
+    class="emotion-16"
     orientation="vertical"
   >
     <span
@@ -3959,119 +3759,111 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
     >
       Share
     </span>
-    <span
-      class="emotion-17"
+    <div
+      class="emotion-15"
     >
-      <span
-        class="emotion-5"
+      <div
+        class="emotion-4"
       >
         <a
-          class="emotion-4"
+          class="emotion-3"
           href="/"
         >
           <span
-            class="emotion-3"
+            class="emotion-2"
           >
-            <span
-              class="emotion-2"
+            <svg
+              aria-labelledby="mock-bui-1"
+              class="emotion-1"
+              viewBox="0 0 1365.3333 1365.3333"
             >
-              <svg
-                aria-labelledby="mock-bui-1"
-                class="emotion-1"
-                viewBox="0 0 1365.3333 1365.3333"
+              <title
+                id="mock-bui-1"
               >
-                <title
-                  id="mock-bui-1"
-                >
-                  Facebook icon
-                </title>
+                Facebook icon
+              </title>
+              <g
+                transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+              >
                 <g
-                  transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
+                  transform="scale(0.1)"
                 >
-                  <g
-                    transform="scale(0.1)"
-                  >
-                    <path
-                      d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
-                      fill="#1877f2"
-                    />
-                    <path
-                      d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
-                      fill="#ffffff"
-                    />
-                  </g>
-                </g>
-              </svg>
-            </span>
-          </span>
-        </a>
-      </span>
-      <span
-        class="emotion-5"
-      >
-        <a
-          class="emotion-4"
-          href="/"
-        >
-          <span
-            class="emotion-3"
-          >
-            <span
-              class="emotion-2"
-            >
-              <svg
-                aria-labelledby="mock-bui-1"
-                class="emotion-1"
-                viewBox="0 0 400 400"
-              >
-                <title
-                  id="mock-bui-1"
-                >
-                  Twitter logo
-                </title>
-                <g>
-                  <circle
-                    cx="200"
-                    cy="200"
-                    fill="#1DA1F2"
-                    r="200"
+                  <path
+                    d="m 10240,5120 c 0,2827.7 -2292.3,5120 -5120,5120 C 2292.3,10240 0,7947.7 0,5120 0,2564.46 1872.31,446.301 4320,62.1992 V 3640 H 3020 v 1480 h 1300 v 1128 c 0,1283.2 764.38,1992 1933.9,1992 560.17,0 1146.1,-100 1146.1,-100 V 6880 H 6754.38 C 6118.35,6880 5920,6485.33 5920,6080.43 V 5120 H 7340 L 7113,3640 H 5920 V 62.1992 C 8367.69,446.301 10240,2564.46 10240,5120"
+                    fill="#1877f2"
+                  />
+                  <path
+                    d="m 7113,3640 227,1480 H 5920 v 960.43 c 0,404.9 198.35,799.57 834.38,799.57 H 7400 v 1260 c 0,0 -585.93,100 -1146.1,100 C 5084.38,8240 4320,7531.2 4320,6248 V 5120 H 3020 V 3640 H 4320 V 62.1992 C 4580.67,21.3008 4847.84,0 5120,0 c 272.16,0 539.33,21.3008 800,62.1992 V 3640 h 1193"
+                    fill="#ffffff"
                   />
                 </g>
-                <g>
-                  <path
-                    d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
+              </g>
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div
+        class="emotion-4"
+      >
+        <a
+          class="emotion-3"
+          href="/"
+        >
+          <span
+            class="emotion-2"
+          >
+            <svg
+              aria-labelledby="mock-bui-1"
+              class="emotion-1"
+              viewBox="0 0 400 400"
+            >
+              <title
+                id="mock-bui-1"
+              >
+                Twitter logo
+              </title>
+              <g>
+                <circle
+                  cx="200"
+                  cy="200"
+                  fill="#1DA1F2"
+                  r="200"
+                />
+              </g>
+              <g>
+                <path
+                  d="M163.4,305.5c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25
 		c-8.6,3.8-17.9,6.4-27.7,7.6c10-6,17.6-15.4,21.2-26.7c-9.3,5.5-19.6,9.5-30.6,11.7c-8.8-9.4-21.3-15.2-35.2-15.2
 		c-26.6,0-48.2,21.6-48.2,48.2c0,3.8,0.4,7.5,1.3,11c-40.1-2-75.6-21.2-99.4-50.4c-4.1,7.1-6.5,15.4-6.5,24.2
 		c0,16.7,8.5,31.5,21.5,40.1c-7.9-0.2-15.3-2.4-21.8-6c0,0.2,0,0.4,0,0.6c0,23.4,16.6,42.8,38.7,47.3c-4,1.1-8.3,1.7-12.7,1.7
 		c-3.1,0-6.1-0.3-9.1-0.9c6.1,19.2,23.9,33.1,45,33.5c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7
 		C110.8,297.5,136.2,305.5,163.4,305.5"
-                    fill="#FFFFFF"
-                  />
-                </g>
-              </svg>
-            </span>
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
           </span>
         </a>
-      </span>
-      <span
-        class="emotion-5"
+      </div>
+      <div
+        class="emotion-4"
       >
         <div
-          class="emotion-15"
+          class="emotion-13"
         >
           <button
-            class="emotion-14"
+            class="emotion-12"
             data-testid="button"
             type="button"
           >
             <div
-              class="emotion-13"
+              class="emotion-11"
             >
               <div
-                class="emotion-12"
+                class="emotion-10"
               >
                 <span
-                  class="emotion-11"
+                  class="emotion-9"
                 >
                   more options
                 </span>
@@ -4079,8 +3871,8 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
             </div>
           </button>
         </div>
-      </span>
-    </span>
-  </span>
+      </div>
+    </div>
+  </div>
 </DocumentFragment>
 `;

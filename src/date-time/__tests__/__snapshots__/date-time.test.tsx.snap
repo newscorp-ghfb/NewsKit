@@ -38,7 +38,7 @@ exports[`DateTime renders with fallback formatting 1`] = `
     <span
       class="emotion-0"
     >
-      January 25 2019, 3:32pm 
+      Mock Date 
     </span>
   </time>
 </DocumentFragment>
@@ -117,7 +117,7 @@ exports[`DateTime renders with overrides 1`] = `
     <span
       class="emotion-1"
     >
-      1 Jan 2017, 4:32, 
+      Mock Date, 
     </span>
     <span
       class="emotion-0"
@@ -171,7 +171,7 @@ exports[`DateTime renders with provided date, format, prefix and suffix 1`] = `
     <span
       class="emotion-0"
     >
-      25 Jan 2019, 15:32, 
+      Mock Date, 
     </span>
     <span
       class="emotion-0"

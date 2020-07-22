@@ -23,7 +23,7 @@ TextBlock is a paragraph, which can be used to summarize any text content. It ca
   <Prop name="children" type="string" required>
     The content of the TextBlock is passed as the child of the component.
   </Prop>
-  <Prop name="as" type="'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'div'" default="p">
+  <Prop name="as" type="'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'div' | 'span'" default="p">
     This is a string name with one of the following html elements: h1, h2, h3, h4, h5, h6 or div, that the textblock can be converted to.
     TextBlock defaults as a p element, but it can be converted to another heading element or div by `as="div"` prop.
   </Prop>
@@ -75,6 +75,10 @@ TextBlock is a paragraph, which can be used to summarize any text content. It ca
         {
           label: 'div',
           value: 'div',
+        },
+        {
+          label: 'span',
+          value: 'span',
         },
       ],
     },

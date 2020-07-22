@@ -1,0 +1,175 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {Prop} from '../../components/prop';
+import {TextBoxSwatch} from '../../components/theming-values/colors';
+import {LegacyBlock} from '../../components/legacy-block';
+import {CodeFromFile} from '../../components/code';
+
+import {Byline} from 'newskit';
+
+export default Layout;
+
+# Byline
+
+## Overview
+
+The byline is a small line of text which lists the authors of an article, along with their titles if provided.
+
+### Usage
+
+The `Byline` component requires an array of bylineData. Each bylineData object in the array must contain an author. You can optionally provide a `href` property to link to that author's page and a title for that author.
+
+### Theming
+
+The byline uses a type preset of `meta02` and inherits its font color from its parent, apart from author links which use the default [Link](/components/link) theme color tokens.
+
+## Props
+
+<LegacyBlock marginTop="sizing040">
+  <Prop name="bylineData" type="array" required>
+    An array of byline data to populate the byline authors. Byline data objects
+    must contain an author string, and can contain optional href and title
+    strings.
+      <CodeFromFile path="examples/byline/data.tsx" />
+  </Prop>
+  <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component and provided elements.
+  <Prop name="stylePreset" type="string" default="byline">
+    If provided, this overrides the style preset of the component.
+  </Prop >
+  <Prop name="typePreset" type="string" default="meta020">
+    If provided, this overrides the type preset of the component..
+  </Prop >
+  <Prop name="space" type="SizingKeys" default="sizing020">
+    If provided, this overrides the vertical space between each line when the bylines items wrap onto a new line.
+  </Prop >
+  <Prop name="link" type="object">
+    <Prop name="stylePreset" type="string" default="bylineLink">
+      If provided, this overrides the style preset applied to the passed link.
+    </Prop>
+    <Prop name="typePreset" type="string" default="meta020">
+      If provided, this overrides the type preset applied to the passed link.
+    </Prop>
+  </Prop>
+   <Prop name="divider" type="object">
+    <Prop name="stylePreset" type="string" default="bylineDivider">
+      If provided, this overrides the style preset applied to the divider.
+    </Prop>
+    <Prop name="spaceInline" type="SpacingPresetKeys" default="space020">
+      If provided, this overrides the horizontal space between the divider and the text.
+    </Prop>
+  </Prop>
+
+  Refer to the defaults below for the full object structure:
+  <CodeFromFile path="examples/default-presets/byline.tsx" />
+  </Prop>
+</LegacyBlock>
+
+## Playground
+
+<Playground
+  componentName="Byline"
+  newskitPath="/byline"
+  component={Byline}
+  knobs={[
+    {
+      name: 'Byline Data',
+      propName: 'bylineData',
+      value: [
+        {
+          author: 'Francis Elliott',
+          href: 'https://www.thetimes.co.uk/profile/francis-elliott',
+          title: 'Political Editor',
+          location: 'UK'
+        },
+        {
+          author: 'Didi Tang',
+          href: 'https://www.thetimes.co.uk/profile/didi-tang',
+          title: 'Beijing Correspondent',
+          location: 'UK/Beijing'
+        },
+      ],
+    },
+    {
+      name: 'Style Preset Overrides',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'default',
+          value: {
+            stylePreset: undefined,
+            link: {
+              stylePreset: undefined,
+            },
+            divider: {
+              stylePreset: undefined,
+            }
+          },
+          isDefault: true,
+        },
+        {
+          label: 'buttonMinimalPrimary',
+          value: {
+            stylePreset: 'buttonMinimalPrimary',
+            link: {
+              stylePreset: 'buttonMinimalPrimary',
+            },
+            divider: {
+              stylePreset: 'buttonMinimalPrimary',
+            }
+          },
+        },
+      ],
+    },
+    {
+      name: 'Type Preset Overrides',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'default',
+          value: {
+            typePreset: undefined,
+            link: {
+              typePreset: undefined,
+            },
+          },
+          isDefault: true,
+        },
+        {
+          label: 'body030',
+          value: {
+            typePreset: 'body030',
+            link: {
+              typePreset: 'body030',
+            },
+          },
+        },
+      ],
+    },
+    {
+      name: 'Margin Preset Overrides',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'default',
+          value: {
+            space: undefined,
+            divider: {
+              spaceInline: undefined,
+            },
+          },
+          isDefault: true,
+        },
+        {
+          label: 'increaseSpacing',
+          value: {
+            space: 'sizing040',
+            divider: {
+              spaceInline: 'space040',
+            },
+          },
+        },
+      ],
+    },
+  ]}
+/>

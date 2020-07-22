@@ -3,8 +3,8 @@ import {Flow, StackDistribution, StackProps, StyledChildProps} from './types';
 import {
   StyledMasterContainer,
   StyledMasterContainerList,
-  StyledMasterContainerListElement,
-  StyledChildContainerListElement,
+  StyledMasterContainerListItem,
+  StyledChildContainerListItem,
   StyledListItem,
   StyledChildContainer,
   hasSpacing,
@@ -13,16 +13,14 @@ import {useTheme, Theme} from '../themes';
 import {StackChild, AlignSelfValues} from '../stack-child';
 import {hasMatchingDisplayNameWith, as as asUtil} from '../utils/component';
 
-const asInline = (inline?: StackProps['inline'], as?: StackProps['as']) => {
-  if (as) {
-    return asUtil(as);
-  }
-  return inline ? asUtil(as || 'span') : null;
-};
+const renderAs = (as: StackProps['as'], list: StackProps['list']) =>
+  // eslint-disable-next-line no-nested-ternary
+  list ? null : as ? asUtil(as) : null;
 
 const wrapChild = (
   theme: Theme,
   space: NonNullable<StackProps['space']>,
+  spaceStack: NonNullable<StackProps['spaceStack']>,
   flow: NonNullable<StackProps['flow']>,
   wrap: NonNullable<StackProps['wrap']>,
   list: StackProps['list'],
@@ -39,6 +37,7 @@ const wrapChild = (
 ) => {
   const childProps: StyledChildProps = {
     space,
+    spaceStack,
     flow,
     $wrap: wrap,
   };
@@ -46,16 +45,17 @@ const wrapChild = (
   // eslint-disable-next-line no-use-before-define
   if (hasMatchingDisplayNameWith(child, Stack)) {
     const stack = <Stack inline={inline} as={as} flexGrow {...child.props} />;
+    const {as: childAs, list: childList, ...rest} = child.props;
     return list ? (
-      <StyledMasterContainerListElement flexGrow {...child.props}>
+      <StyledMasterContainerListItem flexGrow {...rest}>
         {stack}
-      </StyledMasterContainerListElement>
+      </StyledMasterContainerListItem>
     ) : (
       stack
     );
   }
 
-  if (hasSpacing(theme, space)) {
+  if (hasSpacing(theme, space) || hasSpacing(theme, spaceStack)) {
     if (hasMatchingDisplayNameWith(child, StackChild)) {
       if (child.props.order) {
         const {
@@ -74,11 +74,11 @@ const wrapChild = (
 
     if (child) {
       const Container = list
-        ? StyledChildContainerListElement
+        ? StyledChildContainerListItem
         : StyledChildContainer;
 
       return (
-        <Container {...asInline(inline, as)} {...childProps}>
+        <Container {...renderAs(as, list)} {...childProps}>
           {hasMatchingDisplayNameWith(child, StackChild) && child.props.children
             ? child.props.children
             : child}
@@ -86,11 +86,13 @@ const wrapChild = (
       );
     }
   }
+
   return list ? <StyledListItem>{child}</StyledListItem> : child;
 };
 
 export const Stack: React.FC<StackProps> = ({
   space = 'sizing000',
+  spaceStack = 'sizing000',
   flow = Flow.VerticalLeft,
   wrap = false,
   stackDistribution = StackDistribution.Start,
@@ -111,8 +113,9 @@ export const Stack: React.FC<StackProps> = ({
 
   return (
     <StyledContainer
-      {...asInline(inline, as)}
+      {...renderAs(as, list)}
       space={space}
+      spaceStack={spaceStack}
       flow={flow}
       $wrap={wrap}
       flexGrow={flexGrow}
@@ -126,7 +129,7 @@ export const Stack: React.FC<StackProps> = ({
       {children &&
         React.Children.map(
           children,
-          wrapChild(theme, space, flow, wrap, list, inline, as),
+          wrapChild(theme, space, spaceStack, flow, wrap, list, inline, as),
         )}
     </StyledContainer>
   );

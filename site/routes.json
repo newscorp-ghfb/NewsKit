@@ -87,11 +87,6 @@
     "id": "/components",
     "subNav": [
       {
-        "title": "Article Byline",
-        "page": true,
-        "id": "/components/article-byline"
-      },
-      {
         "title": "Aspect Ratio",
         "page": true,
         "id": "/components/aspect-ratio"
@@ -110,6 +105,11 @@
         "title": "Button",
         "page": true,
         "id": "/components/button"
+      },
+      {
+        "title": "Byline",
+        "page": true,
+        "id": "/components/byline"
       },
       {
         "title": "Card",

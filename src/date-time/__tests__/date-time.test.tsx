@@ -3,6 +3,8 @@ import {DateTime} from '..';
 
 const date = '2019-01-25T15:32:00';
 
+jest.mock('date-fns/format', () => () => 'Mock Date');
+
 describe('DateTime', () => {
   test('renders with fallback formatting', () => {
     const fragment = renderToFragmentWithTheme(DateTime, {

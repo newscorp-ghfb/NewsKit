@@ -36,27 +36,41 @@ const verticalFlows = [
   Flow.VerticalRight,
 ];
 
-export const hasSpacing = (theme: Theme, space: SizingKeys) =>
-  parseInt(theme.sizing[space], 10) !== 0;
+export const hasSpacing = (theme: Theme, spaceToken: SizingKeys) =>
+  theme.sizing[spaceToken] && parseInt(theme.sizing[spaceToken], 10) !== 0;
+
+export const getSpaceInHalf = (
+  theme: Theme,
+  spaceToken: SizingKeys,
+  negative?: boolean,
+) => `calc(${negative ? '-' : ''}${theme.sizing[spaceToken]}/2)`;
 
 const calculateMargins = (negative?: boolean) => ({
   theme,
   space,
+  spaceStack,
   $wrap,
   flow,
 }: ChildProps & ThemeProp) => {
   const hasWrapping = $wrap === 'wrap';
 
-  if (!hasSpacing(theme, space)) {
+  const hasSpace = hasSpacing(theme, space);
+  const hasSpaceStack = hasSpacing(theme, spaceStack);
+
+  if (!hasSpace && !hasSpaceStack) {
     return undefined;
   }
 
   const margins = {} as CSSObject;
-  const halfSpace = `calc(${negative ? '-' : ''}${theme.sizing[space]}/2)`;
+
+  const halfSpace = hasSpace ? getSpaceInHalf(theme, space, negative) : '';
+  const halfSpaceStack = hasSpaceStack
+    ? getSpaceInHalf(theme, spaceStack, negative)
+    : '';
 
   if (verticalFlows.includes(flow as Flow)) {
-    margins.marginTop = halfSpace;
-    margins.marginBottom = halfSpace;
+    margins.marginTop = halfSpace || halfSpaceStack;
+    margins.marginBottom = halfSpace || halfSpaceStack;
 
     if (hasWrapping) {
       margins.marginLeft = halfSpace;
@@ -69,8 +83,8 @@ const calculateMargins = (negative?: boolean) => ({
     margins.marginRight = halfSpace;
 
     if (hasWrapping) {
-      margins.marginTop = halfSpace;
-      margins.marginBottom = halfSpace;
+      margins.marginTop = halfSpace || halfSpaceStack;
+      margins.marginBottom = halfSpace || halfSpaceStack;
     }
   }
 
@@ -123,17 +137,6 @@ export const StyledMasterContainer = styled.div<StyledStackProps>`
   ${calculateMargins(true)}
 `;
 
-export const StyledMasterContainerList = styled(StyledMasterContainer)`
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-`.withComponent('ul');
-
-export const StyledMasterContainerListElement = styled(StyledMasterContainer)`
-  height: 100%;
-`.withComponent('li');
-
 export const StyledChildContainer = styled.div<StyledChildProps>`
   display: inline-flex;
   ${calculateMargins()}
@@ -141,7 +144,19 @@ export const StyledChildContainer = styled.div<StyledChildProps>`
   align-self: ${({$alignSelf}) => $alignSelf};
 `;
 
-export const StyledChildContainerListElement = styled(StyledChildContainer)`
+// Stack as list
+export const StyledMasterContainerList = styled(StyledMasterContainer)`
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+`.withComponent('ul');
+
+export const StyledMasterContainerListItem = styled(StyledMasterContainer)`
+  height: 100%;
+`.withComponent('li');
+
+export const StyledChildContainerListItem = styled(StyledChildContainer)`
   height: 100%;
 `.withComponent('li');
 

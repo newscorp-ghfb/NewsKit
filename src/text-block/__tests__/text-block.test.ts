@@ -7,10 +7,9 @@ describe('TextBlock', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  const tags: Array<['h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span']> = [
-    ['h2'],
-    ['span'],
-  ];
+  const tags: Array<
+    ['h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'div' | 'span']
+  > = [['h2'], ['span']];
   test.each(tags)('renders as %s html tag', as => {
     const fragment = renderToFragmentWithTheme(TextBlock, {
       as,

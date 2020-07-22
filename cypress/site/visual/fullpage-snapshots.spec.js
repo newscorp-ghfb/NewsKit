@@ -2,7 +2,7 @@
 
 // Note: only a subset of pages as a base for smoke tests
 const routes = {
-  articleByline: '/components/article-byline',
+  articleByline: '/components/byline',
   audioPlayer: '/components/audio-player',
   dateTime: '/components/date-time',
   icons: '/foundations/icons',

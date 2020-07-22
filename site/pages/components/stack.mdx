@@ -38,8 +38,14 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
     stack.
   </Prop>
   <Prop name="space" type="SizingKeys">
-    If provided, defines the spacing value used to layout the items of the
-    stack.
+    Defines the spacing value used to layout the items of the stack. 
+    If provided it sets margins values on the Stack container or Stack items based on the specified flow.
+    In cases when the Stack items are allowed to wrap, margins will be set in all four directions. 
+    This property takes precedence over the spaceStack prop.
+  </Prop>
+  <Prop name="spaceStack" type="SizingKeys">
+    If provided it sets only vertical spacing values on the Stack container or Stack items when the flow is vertical
+    When the Stack has a horizontal flow and its items allowed to wrap this property could be used to set space between the rows.
   </Prop>
   <Prop name="wrap" type="wrap | nowrap">
     If provided, defines if the content of the stack wraps.
@@ -116,15 +122,25 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
           isDefault: !i,
         })))(),
     },
+    {	
+      name: 'Space',	
+      propName: 'space',	
+      options: (() =>	
+        [{label: 'no space', value: undefined, isDefault: true}].concat(['sizing010', 'sizing020', 'sizing030', 'sizing040',].map((size, i) => ({	
+          label: size,	
+          value: size,	
+          isDefault: false	
+        }))))(),	
+    },
     {
-      name: 'Space',
-      propName: 'space',
+      name: 'Space Stack',
+      propName: 'spaceStack',
       options: (() =>
-        ['sizing010', 'sizing020', 'sizing030', 'sizing040'].map((size, i) => ({
+        [{label: 'no space', value: undefined, isDefault: true}].concat(['sizing010', 'sizing020', 'sizing030', 'sizing040'].map((size, i) => ({
           label: size,
           value: size,
           isDefault: !i,
-        })))(),
+        }))))(),
     },
     {
       name: 'Wrap',

@@ -61,9 +61,6 @@ exports[`Link does not render the external icon even if the href is external 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -71,21 +68,13 @@ exports[`Link does not render the external icon even if the href is external 1`]
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-  margin-top: calc(-4px/2);
-  margin-bottom: calc(-4px/2);
 }
 
 .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-  margin-top: calc(4px/2);
-  margin-bottom: calc(4px/2);
+  margin: 0;
+  padding: 1px 0;
+  display: inline-block;
+  display: block;
 }
 
 <a
@@ -166,9 +155,6 @@ exports[`Link renders as expected in default state 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -176,21 +162,13 @@ exports[`Link renders as expected in default state 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-  margin-top: calc(-4px/2);
-  margin-bottom: calc(-4px/2);
 }
 
 .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-  margin-top: calc(4px/2);
-  margin-bottom: calc(4px/2);
+  margin: 0;
+  padding: 1px 0;
+  display: inline-block;
+  display: block;
 }
 
 <a
@@ -271,9 +249,6 @@ exports[`Link renders correctly with noUnderline property 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -281,21 +256,13 @@ exports[`Link renders correctly with noUnderline property 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-  margin-top: calc(-4px/2);
-  margin-bottom: calc(-4px/2);
 }
 
 .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-  margin-top: calc(4px/2);
-  margin-bottom: calc(4px/2);
+  margin: 0;
+  padding: 1px 0;
+  display: inline-block;
+  display: block;
 }
 
 <a
@@ -317,7 +284,7 @@ exports[`Link renders correctly with noUnderline property 1`] = `
 
 exports[`Link renders the external icon even if the href is internal 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-5 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -328,45 +295,52 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
   color: #2F75D7;
 }
 
-.emotion-4 svg {
+.emotion-5 svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-5:hover:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-4:hover:not(:disabled) svg {
+.emotion-5:hover:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-5:active:not(:disabled) {
   color: #2F75D7;
 }
 
-.emotion-4:active:not(:disabled) svg {
+.emotion-5:active:not(:disabled) svg {
   fill: #2F75D7;
   color: #2F75D7;
 }
 
-.emotion-4:visited:not(:disabled) {
+.emotion-5:visited:not(:disabled) {
   color: #903D91;
 }
 
-.emotion-4:visited:not(:disabled) svg {
+.emotion-5:visited:not(:disabled) svg {
   fill: #903D91;
   color: #903D91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-4 {
+  .emotion-5 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-3 {
+.emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -376,9 +350,6 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -388,22 +359,18 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
   justify-content: flex-start;
   margin-left: calc(-4px/2);
   margin-right: calc(-4px/2);
-  margin-top: calc(-4px/2);
-  margin-bottom: calc(-4px/2);
 }
 
-.emotion-0 {
+.emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: calc(4px/2);
   margin-right: calc(4px/2);
-  margin-top: calc(4px/2);
-  margin-bottom: calc(4px/2);
 }
 
-.emotion-1 {
+.emotion-2 {
   fill: #535353;
   color: #535353;
   width: 16px;
@@ -412,23 +379,27 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
 }
 
 <a
-    class="emotion-4"
+    class="emotion-5"
     href="/relative"
   >
     <span
-      class="emotion-3"
+      class="emotion-4"
     >
       <span
-        class="emotion-0"
+        class="emotion-1"
       >
-        test link text
+        <span
+          class="emotion-0"
+        >
+          test link text
+        </span>
       </span>
       <span
-        class="emotion-0"
+        class="emotion-1"
       >
         <svg
           aria-labelledby="mock-bui-1"
-          class="emotion-1"
+          class="emotion-2"
           viewBox="0 0 24 24"
         >
           <title

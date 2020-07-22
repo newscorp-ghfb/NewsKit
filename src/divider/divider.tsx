@@ -6,7 +6,7 @@ import {StylePresetKeys} from '../themes/mappers/style-preset';
 interface DividerProps {
   vertical?: boolean;
   overrides?: {
-    stylePreset: StylePresetKeys;
+    stylePreset?: StylePresetKeys;
   };
 }
 

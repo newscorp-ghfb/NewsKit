@@ -1,4 +1,17 @@
 export const defaultPresets = {
+  byline: {
+    stylePreset: 'byline',
+    typePreset: 'meta020',
+    space: 'sizing020',
+    link: {
+      stylePreset: 'bylineLink',
+      typePreset: 'meta020',
+    },
+    divider: {
+      stylePreset: 'bylineDivider',
+      spaceInline: 'space020',
+    },
+  },
   button: {
     small: {
       typePreset: 'buttonSmall',

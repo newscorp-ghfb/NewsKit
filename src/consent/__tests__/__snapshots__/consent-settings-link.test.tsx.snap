@@ -65,9 +65,6 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -75,21 +72,13 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-  margin-top: calc(-4px/2);
-  margin-bottom: calc(-4px/2);
 }
 
 .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-  margin-top: calc(4px/2);
-  margin-bottom: calc(4px/2);
+  margin: 0;
+  padding: 1px 0;
+  display: inline-block;
+  display: block;
 }
 
 <a
@@ -112,44 +101,7 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 
 exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 <DocumentFragment>
-  .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-  margin-top: calc(-4px/2);
-  margin-bottom: calc(-4px/2);
-}
-
-.emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-  margin-top: calc(4px/2);
-  margin-bottom: calc(4px/2);
-}
-
-.emotion-2 {
+  .emotion-2 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -160,14 +112,6 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
   color: #2F75D7;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: -0.25px;
-  -moz-letter-spacing: -0.25px;
-  -ms-letter-spacing: -0.25px;
-  letter-spacing: -0.25px;
 }
 
 .emotion-2 svg {
@@ -204,7 +148,47 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
   color: #2F75D7;
 }
 
-.emotion-2::before {
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-0::before {
   content: '';
   display: block;
   height: 0;
@@ -212,18 +196,12 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-2::after {
+.emotion-0::after {
   content: '';
   display: block;
   height: 0;
   width: 0;
   margin-top: -0.4267857142857143em;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
-    vertical-align: text-bottom;
-  }
 }
 
 <a
@@ -309,9 +287,6 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -319,21 +294,13 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-  margin-top: calc(-4px/2);
-  margin-bottom: calc(-4px/2);
 }
 
 .emotion-0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-  margin-top: calc(4px/2);
-  margin-bottom: calc(4px/2);
+  margin: 0;
+  padding: 1px 0;
+  display: inline-block;
+  display: block;
 }
 
 <a

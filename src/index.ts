@@ -1,4 +1,4 @@
-export * from './article-byline';
+export * from './byline';
 export * from './article-content';
 export * from './headline';
 export * from './aspect-ratio';
