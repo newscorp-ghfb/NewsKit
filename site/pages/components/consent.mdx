@@ -62,8 +62,8 @@ please see Sourcepoint [documentation TCFV2](https://documentation.sourcepoint.c
 </LegacyBlock>
 
 ## Props V1
-If you want to use the TCF1 version of the consent rather than passing the SourcePoint config through 
-sourcePointConfigTCFV2, you have to pass them through `sourcePointConfig`. 
+If you want to use the TCF1 version of the consent rather than passing the SourcePoint config through
+sourcePointConfigTCFV2, you have to pass them through `sourcePointConfig`.
 Secondly pass the `accountId` as a string and rename `propertyHref` to `siteHref` if used.
 <Code>
     {`<Consent
@@ -94,7 +94,7 @@ In a V2 example it would look like this:
 
 ## Usage With AMP
 
-Note the use of the AMP `Head` component. The `Consent` component must be used as a child of `Head`. See [Getting Started with AMP](/guides/getting-started-amp) for more information.  
+Note the use of the AMP `Head` component. The `Consent` component must be used as a child of `Head`. See [Getting Started with AMP](/guides/getting-started-amp) for more information.
 For the TCFV2 sourcePoint changes please see the [documentation](https://documentation.sourcepoint.com/mobile-implementation/amp-implementation-tcf-version-2-with-single-cname)
 
 <CodeFromFile path="examples/amp/consent.tsx" />
@@ -110,8 +110,13 @@ For the TCFV2 sourcePoint changes please see the [documentation](https://documen
     provided consent. When this element appears a user can click on it to change
     their consent preferences.
   </Prop>
+  <Prop name="policy" type="object">
+    An optional policy object can be added to the amp-consent element's JSON configuration object to customize consent blocking behaviors.
+    Right now only customizing the default policy instance is supported. The "default" behavior policy applies to every component that is blocked by consent with data-block-on-consent attribute.
+    For the structure of the policy, please visit <a href="https://amp.dev/documentation/components/amp-consent/#customize-consent-blocking-behaviors">the documentation</a>.
+  </Prop>
   <Prop name="renderConsentButton" type="boolean" default="true">
-    By setting this prop to false you can hide the default consent button.  
+    By setting this prop to false you can hide the default consent button.
   </Prop>
 </LegacyBlock>
 
@@ -121,13 +126,13 @@ For the available props see the example down below:
 
 ## Consent button
 
-By setting `renderConsentButton` to false the default consent button will be hidden. This component can be use intead. It gives the flexibilty to place anywhere on the page.  
+By setting `renderConsentButton` to false the default consent button will be hidden. This component can be use intead. It gives the flexibilty to place anywhere on the page.
 
 <LegacyBlock marginTop="sizing040">
   <Prop name="settingsButtonText" type="string" default="Privacy Settings">
     Consent button label text
   </Prop>
   <Prop name="postPromptUI" type="string" default="privacy-settings-prompt">
-    The value of this prop it has to match with value provided in the Consent component as this prop connects the button to the Consent.  
+    As this prop connects the consent button to the consent component, the value of this prop needs to match with the value provided in the consent component.
   </Prop>
 </LegacyBlock>

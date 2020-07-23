@@ -9,6 +9,7 @@ export interface ConsentProps {
   checkConsentHref?: string;
   promptUISrc?: string;
   postPromptUI?: string;
+  policy?: object;
   sourcePointConfig: SourcePointConfigProps;
 }
 
@@ -33,6 +34,7 @@ export const Consent = connectAmpScript<ConsentProps>('amp-consent')(
     renderConsentButton = true,
     sourcePointConfig,
     postPromptUI = 'privacy-settings-prompt',
+    policy,
     ...rest
   }) => (
     <amp-consent id="consent" layout="nodisplay">
@@ -43,6 +45,7 @@ export const Consent = connectAmpScript<ConsentProps>('amp-consent')(
             consentRequired: 'remote',
             consentInstanceId: 'sourcepoint',
             postPromptUI,
+            policy,
             clientConfig: {
               isTCFV2: true,
               ...sourcePointConfig,

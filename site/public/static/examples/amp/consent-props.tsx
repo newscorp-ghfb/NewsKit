@@ -4,6 +4,7 @@ ConsentProps {
   checkConsentHref?: string;
   promptUISrc?: string;
   postPromptUI?: string;
+  policy?: object;
   sourcePointConfig: SourcePointConfigProps;
 }
 

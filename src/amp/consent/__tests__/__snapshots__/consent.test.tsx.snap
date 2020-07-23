@@ -104,6 +104,32 @@ exports[`Consent renders with optional prop targetingParams 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Consent renders with policy 1`] = `
+<DocumentFragment>
+  <amp-consent
+    id="consent"
+    layout="nodisplay"
+  >
+    <script
+      type="application/json"
+    >
+      {"consentRequired":"remote","consentInstanceId":"sourcepoint","postPromptUI":"privacy-settings-prompt","policy":{"default":{"timeout":{"seconds":5,"fallbackAction":"reject"}}},"clientConfig":{"isTCFV2":true,"accountId":"test-accountid","propertyHref":"test-propertyhref"}}
+    </script>
+    <div
+      id="privacy-settings-prompt"
+    >
+      <button
+        class="css-0"
+        on="tap:consent.prompt(consent=SourcePoint)"
+        type="button"
+      >
+        Privacy Settings
+      </button>
+    </div>
+  </amp-consent>
+</DocumentFragment>
+`;
+
 exports[`Consent renders with postPromptUI 1`] = `
 <DocumentFragment>
   <amp-consent

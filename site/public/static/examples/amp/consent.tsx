@@ -8,6 +8,14 @@ const AmpBody = (
       checkConsentHref="https://sp-cdn.example.com/wrapper/tcfv2/v1/amp"
       promptUISrc="https://sp-cdn.example.com/amp/index.html"
       postPromptUI="privacy-settings-prompt"
+      policy={{
+        default:{
+          timeout:{
+            seconds: 5,
+            fallbackAction: "reject"
+          }
+        }
+      }}
       sourcePointConfig={{
         accountId: 222,
         mmsDomain: "https://sp-cdn.example.com/mms",

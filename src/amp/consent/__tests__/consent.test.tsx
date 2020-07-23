@@ -40,6 +40,23 @@ describe('Consent renders', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  it('with policy', () => {
+    const fragment = renderToFragment(
+      <Consent
+        sourcePointConfig={sourcePointConfigBase}
+        policy={{
+          default: {
+            timeout: {
+              seconds: 5,
+              fallbackAction: 'reject',
+            },
+          },
+        }}
+      />,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
   describe('with optional prop', () => {
     it('privacyManagerId', () => {
       const extendedConfig = {
