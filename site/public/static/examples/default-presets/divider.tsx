@@ -1,5 +1,0 @@
-{
-  divider: {
-    stylePreset: 'dividerHorizontal'
-  }
-}

@@ -3,7 +3,7 @@ import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
-import {CodeFromFile} from '../../components/code';
+import {CodeFromDefaultPresets} from '../../components/code';
 import {CircularProgressIndicator} from 'newskit';
 
 export default Layout;
@@ -41,7 +41,7 @@ Don't show more than one circular progress indicator as the user is likely to be
 
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements. Refer to the defaults below for the object structure:
-    <CodeFromFile path="examples/default-presets/circular-progress-indicator.tsx" />
+    <CodeFromDefaultPresets componentName="progressIndicator" />
   </Prop>
 </LegacyBlock>
 

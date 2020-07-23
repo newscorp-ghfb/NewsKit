@@ -4,7 +4,7 @@ import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Selector} from '../../components/playground/selector';
-import {CodeFromFile} from '../../components/code';
+import {CodeFromDefaultPresets} from '../../components/code';
 import {Button, IconButton, ButtonSize, Email, Pause} from 'newskit';
 
 export default Layout;
@@ -76,7 +76,7 @@ Custom props are detailed below:
       sizing100 or sizing110 is used depending on the `size` prop.
     </Prop>
     Refer to the defaults below for the object structure:
-    <CodeFromFile path="examples/default-presets/button.tsx" />
+    <CodeFromDefaultPresets componentName="button" />
   </Prop>
   <Prop name="disabled" type="boolean" default={false}>
     If true, the Button will render the disabled state of the styled preset.

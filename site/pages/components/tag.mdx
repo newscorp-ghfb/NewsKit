@@ -3,7 +3,7 @@ import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
-import {CodeFromFile} from '../../components/code';
+import {CodeFromDefaultPresets} from '../../components/code';
 import {Tag, TagSize} from 'newskit';
 
 export default Layout;
@@ -72,7 +72,7 @@ Tags have a number of props to facilitate a variety of uses:
       sizing060 or sizing070 is used depending on the `size` prop.
     </Prop>
     Refer to the defaults below for the object structure:
-    <CodeFromFile path="examples/default-presets/tag.tsx" />
+    <CodeFromDefaultPresets componentName="tag" />
   </Prop>
   <Prop name="disabled" type="boolean" default={false}>
     If true, the Tag will render the disabled state of the style preset. If an

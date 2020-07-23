@@ -6,7 +6,7 @@ import {Twitter, Facebook} from 'newskit/icons';
 import {ShareBar} from 'newskit/share-bar';
 import {ButtonSize} from 'newskit/button';
 import {IconButton} from 'newskit/icon-button'
-import {CodeFromFile} from '../../components/code';
+import {CodeFromDefaultPresets} from '../../components/code';
 
 
 export default Layout;
@@ -33,7 +33,7 @@ A share bar can be used anywhere a user would like to easily share something wit
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     Refer to the defaults below for the object structure:
-    <CodeFromFile path="examples/default-presets/share-bar.tsx" />
+    <CodeFromDefaultPresets componentName="shareBar" />
   </Prop>
 </LegacyBlock>
 

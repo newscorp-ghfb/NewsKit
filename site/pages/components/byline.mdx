@@ -3,7 +3,7 @@ import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
-import {CodeFromFile} from '../../components/code';
+import {CodeFromFile, CodeFromDefaultPresets} from '../../components/code';
 
 import {Byline} from 'newskit';
 
@@ -61,7 +61,7 @@ The byline uses a type preset of `meta02` and inherits its font color from its p
   </Prop>
 
   Refer to the defaults below for the full object structure:
-  <CodeFromFile path="examples/default-presets/byline.tsx" />
+  <CodeFromDefaultPresets componentName="byline" />
   </Prop>
 </LegacyBlock>
 

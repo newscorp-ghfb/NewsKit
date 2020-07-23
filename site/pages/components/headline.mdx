@@ -4,7 +4,7 @@ import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Headline} from 'newskit';
-import {CodeFromFile} from '../../components/code';
+import {CodeFromDefaultPresets} from '../../components/code';
 
 
 export default Layout;
@@ -43,7 +43,7 @@ No special requirements.
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     Refer to the defaults below for the object structure:
-    <CodeFromFile path="examples/default-presets/headline.tsx" />
+    <CodeFromDefaultPresets componentName="headline" />
   </Prop>
 </LegacyBlock>
 

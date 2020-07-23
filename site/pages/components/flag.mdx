@@ -4,7 +4,7 @@ import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Flag, FlagSize, PaddingPresetKeys, Sub} from 'newskit';
-import {CodeFromFile} from '../../components/code';
+import {CodeFromDefaultPresets} from '../../components/code';
 
 export default Layout;
 
@@ -68,7 +68,7 @@ Flags have a number of props to facilitate a variety of uses:
       sizing060 is used depending on the `size` prop.
     </Prop>
     Refer to the defaults below for the object structure:
-    <CodeFromFile path="examples/default-presets/flag.tsx" />
+    <CodeFromDefaultPresets componentName="flag" />
   </Prop>
   <Prop name="disabled" type="boolean" default="false">
     If true, this will cause the Flag to render the disabled state of the style

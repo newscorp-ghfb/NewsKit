@@ -3,7 +3,7 @@ import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {LegacyBlock} from '../../components/legacy-block';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
-import {CodeFromFile} from '../../components/code';
+import {CodeFromDefaultPresets} from '../../components/code';
 
 import {Standfirst} from 'newskit';
 
@@ -34,7 +34,7 @@ The Standfirst component provides the following props for customisation.
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     Refer to the defaults below for the object structure:
-    <CodeFromFile path="examples/standfirst/overrides.tsx" />
+    <CodeFromDefaultPresets componentName="standfirst" />
   </Prop>
 </LegacyBlock>
 

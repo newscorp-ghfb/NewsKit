@@ -3,7 +3,7 @@ import Prop from '../../components/prop';
 import {LegacyBlock} from '../../components/legacy-block';
 import Layout from '../../components/layout';
 import {Card, Tag, TagSize, Flow, Stack, StackDistribution} from 'newskit';
-import {CodeFromFile, Code} from '../../components/code';
+import {CodeFromDefaultPresets, Code} from '../../components/code';
 
 
 export default Layout;
@@ -50,7 +50,7 @@ Cards are used to display a summary of content and will reveal more details upon
   </Prop>
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements. Refer to the defaults below for the object structure:
-    <CodeFromFile path="examples/default-presets/card.tsx" />
+    <CodeFromDefaultPresets componentName='card' />
   </Prop>
 </LegacyBlock>
 
