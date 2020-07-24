@@ -55,7 +55,7 @@ export const Link: React.FC<LinkProps> = props => {
         fireEvent({
           originator: 'link',
           trigger: EventTrigger.Click,
-          data: {
+          context: {
             href: props.href,
           },
         });

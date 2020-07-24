@@ -34,9 +34,6 @@ describe('createEventInstrumentation', () => {
         const mockEvent: InstrumentationEvent = {
           originator: 'mock-event',
           trigger: EventTrigger.Click,
-          data: {
-            some: 'data',
-          },
           context: eventContext,
         };
 

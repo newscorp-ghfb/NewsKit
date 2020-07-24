@@ -37,7 +37,6 @@ In this example the Link component, and any other NewsKit instrumentation enable
     {
       originator: 'link',
       trigger: 'click',
-      data: {href: 'example.com'},
       context: {url: 'www.my-amazing-website.com'},
     },
     null,
@@ -62,7 +61,7 @@ You should not need to add any instrumentation event firing to NewsKit component
 - using the NewsKit HOC `withInstrumentation`. This will wrap the component argument in the instrumentation context and a `fireEvent` prop will be passed to the component.
 - using the NewsKit React hook `useInstrumentation`. This will return an object containing the `fireEvent` function.
 
-You can then call this function with your custom instrumentation event as necessary, so long as it meets event requirements. Event objects must contain an event `originator` (the name of the component firing the event) and an event `trigger` from the `EventTrigger` enum listed below (this can be used as a JS object or the direct string values in non-TS projects). Events can also contain a `data` object, which can be any JSON-serializable structure.
+You can then call this function with your custom instrumentation event as necessary, so long as it meets event requirements. Event objects must contain an event `originator` (the name of the component firing the event) and an event `trigger` from the `EventTrigger` enum listed below (this can be used as a JS object or the direct string values in non-TS projects). Events can also contain a `context` object, which can be any JSON-serializable structure.
 
 <EnumTable>{EventTrigger}</EnumTable>
 

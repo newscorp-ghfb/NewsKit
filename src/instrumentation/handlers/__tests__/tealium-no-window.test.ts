@@ -7,7 +7,7 @@ import {sendEventToTealium} from '../tealium';
 const mockEvent = {
   originator: 'link',
   trigger: EventTrigger.Click,
-  data: {href: 'href1'},
+  context: {some: 'object', prop: 'context'},
 };
 
 describe('instrumentation event handler - tealium on server side (without extendedWindow)', () => {

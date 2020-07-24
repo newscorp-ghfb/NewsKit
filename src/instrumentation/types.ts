@@ -13,7 +13,6 @@ export enum EventTrigger {
 export interface InstrumentationEvent {
   originator: string;
   trigger: EventTrigger;
-  data?: object;
   context?: EventContext;
 }
 

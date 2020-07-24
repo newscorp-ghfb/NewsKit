@@ -95,14 +95,14 @@ export const useAudioFunctions = ({
       eventTrigger: EventTrigger,
       eventSpecificInfo?: object,
     ) => {
-      const data = {
+      const context = {
         ...buildMediaData(),
         ...eventSpecificInfo,
       };
       const trackingInformation = {
         originator,
         trigger: eventTrigger,
-        data,
+        context,
       };
 
       return trackingInformation;

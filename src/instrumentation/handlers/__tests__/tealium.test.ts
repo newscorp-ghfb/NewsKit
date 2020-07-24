@@ -8,17 +8,17 @@ describe('instrumentation event handler - tealium', () => {
     {
       originator: 'link',
       trigger: EventTrigger.Click,
-      data: {href: 'href1'},
+      context: {some: 'object 1', prop1: 'context'},
     },
     {
       originator: 'link',
       trigger: EventTrigger.Swipe,
-      data: {href: 'href1'},
+      context: {some: 'object 1', prop1: 'context'},
     },
     {
       originator: 'link',
       trigger: EventTrigger.Load,
-      data: {href: 'href2'},
+      context: {some: 'object 2', prop1: 'context'},
     },
   ];
 
@@ -26,7 +26,7 @@ describe('instrumentation event handler - tealium', () => {
     {
       originator: 'link',
       trigger: EventTrigger.Load,
-      data: {href: 'href2'},
+      context: {context: 'object 2', prop1: 'context'},
     },
   ];
 
@@ -34,7 +34,7 @@ describe('instrumentation event handler - tealium', () => {
     {
       originator: 'link',
       trigger: EventTrigger.Click,
-      data: {href: 'href2'},
+      context: {context: 'object 2', prop1: 'context'},
     },
   ];
 

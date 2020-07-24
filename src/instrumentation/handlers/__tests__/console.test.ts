@@ -7,17 +7,17 @@ describe('instrumentation event handler - console', () => {
     {
       originator: 'originator1',
       trigger: EventTrigger.Click,
-      data: {some: 'data 1'},
+      context: {some: 'object 1', prop1: 'context'},
     },
     {
       originator: 'originator2',
       trigger: EventTrigger.Click,
-      data: {some: 'data 2'},
+      context: {some: 'object 2', prop2: 'context'},
     },
     {
       originator: 'originator3',
       trigger: EventTrigger.Click,
-      data: {some: 'data 3'},
+      context: {some: 'object 3', prop3: 'context'},
     },
   ];
 

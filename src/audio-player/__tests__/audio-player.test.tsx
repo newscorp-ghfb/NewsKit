@@ -24,20 +24,18 @@ const recordedAudioProps: AudioPlayerProps = {
 };
 
 const liveTrackingOutputObject = {
-  context: {},
   originator: 'audio-player-play-button',
   trigger: 'click',
-  data: {
+  context: {
     media_player: `newskit-audio-player-${version}`,
     media_type: 'audio',
   },
 };
 
 const recordedTrackingOutputObject = {
-  context: {},
   originator: 'audio-player-play-button',
   trigger: 'click',
-  data: {
+  context: {
     media_player: `newskit-audio-player-${version}`,
     media_duration: '00:00',
     media_type: 'audio',
@@ -459,9 +457,9 @@ describe('Audio Player', () => {
 
       expect(fireEventSpy).toHaveBeenCalledWith({
         ...recordedTrackingOutputObject,
-        data: {
+        context: {
           event_navigation_name: 'forward skip',
-          ...recordedTrackingOutputObject.data,
+          ...recordedTrackingOutputObject.context,
         },
         originator: 'audio-player-skip-forward',
         trigger: 'click',
@@ -481,9 +479,9 @@ describe('Audio Player', () => {
 
       expect(fireEventSpy).toHaveBeenCalledWith({
         ...recordedTrackingOutputObject,
-        data: {
+        context: {
           event_navigation_name: 'backward skip',
-          ...recordedTrackingOutputObject.data,
+          ...recordedTrackingOutputObject.context,
         },
         originator: 'audio-player-skip-backward',
         trigger: 'click',
@@ -554,7 +552,7 @@ describe('Audio Player', () => {
         ...recordedTrackingOutputObject,
         originator: 'audio-player-audio',
         trigger: 'pulse',
-        data: {
+        context: {
           media_duration: '01:00',
           media_milestone: '2',
           media_offset: '00:00',

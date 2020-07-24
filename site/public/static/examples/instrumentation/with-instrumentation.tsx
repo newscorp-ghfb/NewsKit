@@ -12,7 +12,7 @@ export const MySpecialCustomButton: React.FC<
       fireEvent({
         originator: 'my-special-custom-button',
         trigger: EventTrigger.Click,
-        data: {
+        context: {
           buttonText,
         },
       })

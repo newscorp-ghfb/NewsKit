@@ -3,10 +3,10 @@ import {EventTrigger} from '../../types';
 
 describe('instrumentation event middleware - filters', () => {
   test('filters out events by originator', () => {
-    const allowedEvent = (data?: any) => ({
+    const allowedEvent = (context?: any) => ({
       originator: 'only-this-event-originator',
       trigger: EventTrigger.Swipe,
-      data,
+      context,
     });
 
     const filter = filterByOriginator(allowedEvent().originator);
@@ -22,10 +22,10 @@ describe('instrumentation event middleware - filters', () => {
   });
 
   test('filters out events by trigger', () => {
-    const allowedEvent = (data?: any) => ({
+    const allowedEvent = (context?: any) => ({
       originator: 'only-this-event-trigger',
       trigger: EventTrigger.Swipe,
-      data,
+      context,
     });
 
     const filter = filterByTrigger(allowedEvent().trigger);

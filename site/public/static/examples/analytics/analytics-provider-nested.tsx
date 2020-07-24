@@ -14,7 +14,7 @@ const instrumentation = createEventInstrumentation(handlers, contextObject);
 const MyRailSection = ({railItems}) => (
   <InstrumentationProvider context={{showRailItems: railItems}}>
     {railItems.map(item => (
-      <MyRailItem data={item} />
+      <MyRailItem context={item} />
     ))}
   </InstrumentationProvider>
 );
