@@ -31,7 +31,7 @@ const borderRadiusPrimitives = createBorderRadius(sizingPrimitives);
 
 type ColourableIcon = React.ComponentType<{
   size?: IconSizeKeys;
-  color?: ColorKeys;
+  color?: ColorKeys | string;
 }>;
 type NonColourableIcon = React.ComponentType<{size?: IconSizeKeys}>;
 
@@ -63,6 +63,7 @@ export interface Icons {
   SkipPrevious?: ColourableIcon;
   Popout?: ColourableIcon;
   Launch?: ColourableIcon;
+  IndeterminateProgressIndicator?: ColourableIcon;
 }
 
 export interface Theme extends Record<string, unknown> {

@@ -564,6 +564,112 @@ exports[`GitHub renders the GitHub icon with title override 1`] = `
 </DocumentFragment>
 `;
 
+exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicator icon from theme override 1`] = `
+<DocumentFragment>
+  <svg>
+    <path>
+      a different icon
+    </path>
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicator icon with specified style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #535353;
+  color: #535353;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}
+
+.emotion-0 circle {
+  r: calc(50% - 2px);
+  fill: transparent;
+  stroke: #777777;
+  stroke-width: 2px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 360;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  will-change: stroke-dasharray;
+  will-change: stroke-dashoffset;
+  will-change: transform;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+
+<svg
+    aria-labelledby="mock-bui-1"
+    class="emotion-0"
+    viewBox="0 0 64 64"
+  >
+    <title
+      id="mock-bui-1"
+    >
+      Indeterminate progress indicator
+    </title>
+    <circle
+      cx="50%"
+      cy="50%"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicator icon with title override 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #535353;
+  color: #535353;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}
+
+.emotion-0 circle {
+  r: calc(50% - 2px);
+  fill: transparent;
+  stroke: #777777;
+  stroke-width: 2px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 360;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  will-change: stroke-dasharray;
+  will-change: stroke-dashoffset;
+  will-change: transform;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+
+<svg
+    aria-labelledby="mock-bui-1"
+    class="emotion-0"
+    viewBox="0 0 64 64"
+  >
+    <title
+      id="mock-bui-1"
+    >
+      override title value
+    </title>
+    <circle
+      cx="50%"
+      cy="50%"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
 exports[`Launch renders the Launch icon from theme override 1`] = `
 <DocumentFragment>
   <svg>

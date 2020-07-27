@@ -59,7 +59,6 @@ export const createStylePresets = ({
   colorPrimitives,
   borderPrimitives,
   borderRadiusPrimitives,
-  overlayPrimitives,
 }: CreateStylePreset) => {
   const presets: Record<string, StylePresetStates> = {};
 
@@ -88,6 +87,7 @@ export const createStylePresets = ({
     loading: {
       backgroundColor: colorPrimitives.interactive020,
       color: colorPrimitives.inkBrand010,
+      iconColor: colorPrimitives.inkBrand010,
     },
   };
   presets.buttonSolidSecondary = {
@@ -111,6 +111,7 @@ export const createStylePresets = ({
     loading: {
       backgroundColor: colorPrimitives.interactive120,
       color: colorPrimitives.inkBase,
+      iconColor: colorPrimitives.inkBase,
     },
   };
   presets.buttonSolidNegative = {
@@ -134,6 +135,7 @@ export const createStylePresets = ({
     loading: {
       backgroundColor: colorPrimitives.semanticNegative020,
       color: colorPrimitives.inkNegative,
+      iconColor: colorPrimitives.inkNegative,
     },
   };
   presets.buttonSolidPositive = {
@@ -157,6 +159,7 @@ export const createStylePresets = ({
     loading: {
       backgroundColor: colorPrimitives.semanticPositive020,
       color: colorPrimitives.inkPositive,
+      iconColor: colorPrimitives.inkPositive,
     },
   };
 
@@ -397,6 +400,7 @@ export const createStylePresets = ({
     loading: {
       backgroundColor: colorPrimitives.interactive020,
       color: colorPrimitives.inkBrand010,
+      iconColor: colorPrimitives.inkBrand010,
     },
   };
   presets.iconButtonSolidSecondary = {
@@ -420,6 +424,7 @@ export const createStylePresets = ({
     loading: {
       backgroundColor: colorPrimitives.interactive120,
       color: colorPrimitives.inkBase,
+      iconColor: colorPrimitives.inkBase,
     },
   };
   presets.iconButtonSolidNegative = {
@@ -443,6 +448,7 @@ export const createStylePresets = ({
     loading: {
       backgroundColor: colorPrimitives.semanticNegative020,
       color: colorPrimitives.inkNegative,
+      iconColor: colorPrimitives.inkNegative,
     },
   };
   presets.iconButtonSolidPositive = {
@@ -466,8 +472,10 @@ export const createStylePresets = ({
     loading: {
       backgroundColor: colorPrimitives.semanticPositive020,
       color: colorPrimitives.inkPositive,
+      iconColor: colorPrimitives.inkPositive,
     },
   };
+
   presets.iconButtonOutlinedPrimary = {
     base: {
       backgroundColor: colorPrimitives.transparent,
@@ -580,12 +588,13 @@ export const createStylePresets = ({
       borderStyle: 'none',
     },
   };
+
   presets.iconButtonMinimalPrimary = {
     base: {
       backgroundColor: colorPrimitives.transparent,
+      borderRadius: borderRadiusPrimitives.borderRadiusCircle,
       color: colorPrimitives.inkBrand010,
       iconColor: colorPrimitives.inkBrand010,
-      borderRadius: borderRadiusPrimitives.borderRadiusCircle,
     },
     hover: {
       backgroundColor: colorPrimitives.interactive010,
@@ -604,9 +613,9 @@ export const createStylePresets = ({
   presets.iconButtonMinimalSecondary = {
     base: {
       backgroundColor: colorPrimitives.transparent,
+      borderRadius: borderRadiusPrimitives.borderRadiusCircle,
       color: colorPrimitives.inkBase,
       iconColor: colorPrimitives.inkBase,
-      borderRadius: borderRadiusPrimitives.borderRadiusCircle,
     },
     hover: {
       backgroundColor: colorPrimitives.interactive110,
@@ -664,6 +673,7 @@ export const createStylePresets = ({
       backgroundColor: colorPrimitives.semanticPositive020,
     },
   };
+
   presets.iconButtonDefault = presets.iconButtonSolidPrimary;
 
   //
@@ -934,37 +944,6 @@ export const createStylePresets = ({
     },
   };
   presets.volumeControlButtons = presets.iconButtonMinimalPrimary;
-
-  //
-  // Progress Indicator
-  //
-
-  presets.circularProgressIndicatorIndicatorPrimary = {
-    base: {
-      borderStyle: 'solid',
-      borderWidth: borderPrimitives.borderWidth020,
-      borderRadius: borderRadiusPrimitives.borderRadiusPill,
-      borderColor: colorPrimitives.interactive230,
-    },
-  };
-  presets.circularProgressIndicatorTrackPrimary = {
-    base: {
-      ...presets.circularProgressIndicatorIndicatorPrimary.base,
-      borderColor: colorPrimitives.interactive210,
-    },
-  };
-  presets.circularProgressIndicatorIndicatorInverse = {
-    base: {
-      ...presets.circularProgressIndicatorIndicatorPrimary.base,
-      borderColor: colorPrimitives.inverse,
-    },
-  };
-  presets.circularProgressIndicatorTrackInverse = {
-    base: {
-      ...presets.circularProgressIndicatorIndicatorPrimary.base,
-      borderColor: overlayPrimitives.overlayLight010,
-    },
-  };
 
   //
   // Image

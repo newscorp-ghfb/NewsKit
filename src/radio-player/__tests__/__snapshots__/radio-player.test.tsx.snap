@@ -2,7 +2,7 @@
 
 exports[`Radio Player default player 1`] = `
 <DocumentFragment>
-  .emotion-93 {
+  .emotion-86 {
   width: 100%;
 }
 
@@ -12,7 +12,7 @@ exports[`Radio Player default player 1`] = `
   margin: 0 auto;
 }
 
-.emotion-91 {
+.emotion-84 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -29,25 +29,25 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen {
-  .emotion-91 {
+  .emotion-84 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-91 {
+  .emotion-84 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-91 {
+  .emotion-84 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-91 {
+  .emotion-84 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -415,7 +415,7 @@ exports[`Radio Player default player 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-82 {
+.emotion-75 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -424,7 +424,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen {
-  .emotion-82 {
+  .emotion-75 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -439,7 +439,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-82 {
+  .emotion-75 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -447,7 +447,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-82 {
+  .emotion-75 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -455,14 +455,14 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-82 {
+  .emotion-75 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-81 {
+.emotion-74 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -481,7 +481,7 @@ exports[`Radio Player default player 1`] = `
   justify-content: space-between;
 }
 
-.emotion-59 {
+.emotion-52 {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -491,7 +491,7 @@ exports[`Radio Player default player 1`] = `
   display: inline-flex;
 }
 
-.emotion-58 {
+.emotion-51 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -514,7 +514,7 @@ exports[`Radio Player default player 1`] = `
   justify-content: center;
 }
 
-.emotion-57 {
+.emotion-50 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -536,7 +536,7 @@ exports[`Radio Player default player 1`] = `
   min-width: 316px;
 }
 
-.emotion-36 {
+.emotion-29 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -548,7 +548,7 @@ exports[`Radio Player default player 1`] = `
   order: 3;
 }
 
-.emotion-35 {
+.emotion-28 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -560,7 +560,7 @@ exports[`Radio Player default player 1`] = `
   height: 64px;
 }
 
-.emotion-34 {
+.emotion-27 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -597,17 +597,17 @@ exports[`Radio Player default player 1`] = `
   cursor: progress;
 }
 
-.emotion-34 svg {
+.emotion-27 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-34 svg {
-  fill: #ffffff;
-  color: #ffffff;
+.emotion-27 svg {
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
-.emotion-33 {
+.emotion-26 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -628,7 +628,7 @@ exports[`Radio Player default player 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-32 {
+.emotion-25 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -637,104 +637,35 @@ exports[`Radio Player default player 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-31 {
-  height: 32px;
-  width: 32px;
-  position: relative;
-}
-
-.emotion-30 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
-  animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
-  -webkit-transform-origin: center;
-  -ms-transform-origin: center;
-  transform-origin: center;
-}
-
-.emotion-26 {
-  box-sizing: border-box;
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  overflow: hidden;
-  position: absolute;
-}
-
-.emotion-25 {
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  overflow: hidden;
-  will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: left-wobble 1.4s linear infinite;
-  animation: left-wobble 1.4s linear infinite;
-}
-
 .emotion-24 {
-  box-sizing: border-box;
-  height: 32px;
+  fill: #535353;
+  color: #535353;
   width: 32px;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 20rem;
-  border-color: #0a68c1;
-  border-radius: 50%;
+  height: 32px;
+  display: inline-block;
 }
 
-.emotion-29 {
-  box-sizing: border-box;
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  overflow: hidden;
-  position: absolute;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
-.emotion-28 {
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  overflow: hidden;
+.emotion-24 circle {
+  r: calc(50% - 2px);
+  fill: transparent;
+  stroke: #0a68c1;
+  stroke-width: 2px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 360;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  will-change: stroke-dasharray;
+  will-change: stroke-dashoffset;
   will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: left-wobble 1.4s linear infinite;
-  animation: left-wobble 1.4s linear infinite;
-  -webkit-animation: right-wobble 1.4s linear infinite;
-  animation: right-wobble 1.4s linear infinite;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
 }
 
-.emotion-42 {
+.emotion-35 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -746,7 +677,7 @@ exports[`Radio Player default player 1`] = `
   order: 2;
 }
 
-.emotion-41 {
+.emotion-34 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -758,7 +689,7 @@ exports[`Radio Player default player 1`] = `
   height: 48px;
 }
 
-.emotion-40 {
+.emotion-33 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -784,8 +715,8 @@ exports[`Radio Player default player 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -795,40 +726,40 @@ exports[`Radio Player default player 1`] = `
   cursor: pointer;
 }
 
-.emotion-40 svg {
+.emotion-33 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-40 svg {
+.emotion-33 svg {
   fill: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-40:hover:not(:disabled) {
+.emotion-33:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-40:active:not(:disabled) {
+.emotion-33:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-40:disabled {
+.emotion-33:disabled {
   color: #c0c0c0;
 }
 
-.emotion-40:disabled svg {
+.emotion-33:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-37 {
+.emotion-30 {
   fill: #535353;
   color: #535353;
   display: inline-block;
 }
 
-.emotion-54 {
+.emotion-47 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -840,7 +771,7 @@ exports[`Radio Player default player 1`] = `
   order: 1;
 }
 
-.emotion-52 {
+.emotion-45 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -866,8 +797,8 @@ exports[`Radio Player default player 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #c0c0c0;
   border-radius: 50%;
+  color: #c0c0c0;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -876,17 +807,17 @@ exports[`Radio Player default player 1`] = `
   transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
-.emotion-52 svg {
+.emotion-45 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-52 svg {
+.emotion-45 svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-56 {
+.emotion-49 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -898,7 +829,7 @@ exports[`Radio Player default player 1`] = `
   order: 5;
 }
 
-.emotion-55 {
+.emotion-48 {
   -webkit-order: 5;
   -ms-flex-order: 5;
   order: 5;
@@ -908,7 +839,7 @@ exports[`Radio Player default player 1`] = `
   display: inline-flex;
 }
 
-.emotion-77 {
+.emotion-70 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -918,49 +849,49 @@ exports[`Radio Player default player 1`] = `
   display: inline-flex;
 }
 
-.emotion-76 {
+.emotion-69 {
   box-sizing: border-box;
   width: calc( 184px + 24px );
   padding: 0 calc(24px / 2);
 }
 
 @media screen {
-  .emotion-76 {
+  .emotion-69 {
     display: none;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-76 {
+  .emotion-69 {
     display: none;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-76 {
+  .emotion-69 {
     display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-76 {
+  .emotion-69 {
     display: block;
   }
 }
 
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-76 {
+  .emotion-69 {
     display: none;
   }
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-76 {
+  .emotion-69 {
     display: none;
   }
 }
 
-.emotion-74 {
+.emotion-67 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -985,7 +916,7 @@ exports[`Radio Player default player 1`] = `
   position: relative;
 }
 
-.emotion-65 {
+.emotion-58 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -997,7 +928,7 @@ exports[`Radio Player default player 1`] = `
   margin-right: 8px;
 }
 
-.emotion-64 {
+.emotion-57 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1009,7 +940,7 @@ exports[`Radio Player default player 1`] = `
   height: 32px;
 }
 
-.emotion-63 {
+.emotion-56 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1035,8 +966,8 @@ exports[`Radio Player default player 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1046,34 +977,34 @@ exports[`Radio Player default player 1`] = `
   cursor: pointer;
 }
 
-.emotion-63 svg {
+.emotion-56 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-63 svg {
+.emotion-56 svg {
   fill: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-63:hover:not(:disabled) {
+.emotion-56:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-63:active:not(:disabled) {
+.emotion-56:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-63:disabled {
+.emotion-56:disabled {
   color: #c0c0c0;
 }
 
-.emotion-63:disabled svg {
+.emotion-56:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-60 {
+.emotion-53 {
   fill: #535353;
   color: #535353;
   width: 24px;
@@ -1081,7 +1012,7 @@ exports[`Radio Player default player 1`] = `
   display: inline-block;
 }
 
-.emotion-67 {
+.emotion-60 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1098,7 +1029,7 @@ exports[`Radio Player default player 1`] = `
   width: 100%;
 }
 
-.emotion-66 {
+.emotion-59 {
   background-color: #ffffff;
   border-color: #0a68c1;
   border-style: solid;
@@ -1119,21 +1050,21 @@ exports[`Radio Player default player 1`] = `
   cursor: pointer;
 }
 
-.emotion-66 svg {
+.emotion-59 svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-66:active:not(:disabled) {
+.emotion-59:active:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-66:active:not(:disabled) svg {
+.emotion-59:active:not(:disabled) svg {
   fill: #777777;
   color: #777777;
 }
 
-.emotion-73 {
+.emotion-66 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1145,7 +1076,7 @@ exports[`Radio Player default player 1`] = `
   margin-left: 8px;
 }
 
-.emotion-75 {
+.emotion-68 {
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -1157,7 +1088,7 @@ exports[`Radio Player default player 1`] = `
   width: 1px;
 }
 
-.emotion-80 {
+.emotion-73 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -1167,7 +1098,7 @@ exports[`Radio Player default player 1`] = `
   display: inline-flex;
 }
 
-.emotion-78 {
+.emotion-71 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1186,7 +1117,7 @@ exports[`Radio Player default player 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-90 {
+.emotion-83 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -1195,7 +1126,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen {
-  .emotion-90 {
+  .emotion-83 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -1210,7 +1141,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-90 {
+  .emotion-83 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -1218,7 +1149,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-90 {
+  .emotion-83 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -1226,14 +1157,14 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-90 {
+  .emotion-83 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-88 {
+.emotion-81 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1261,7 +1192,7 @@ exports[`Radio Player default player 1`] = `
   position: relative;
 }
 
-.emotion-84 {
+.emotion-77 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1278,7 +1209,7 @@ exports[`Radio Player default player 1`] = `
   width: 100%;
 }
 
-.emotion-83 {
+.emotion-76 {
   background-color: #ffffff;
   border-color: #0a68c1;
   border-style: solid;
@@ -1299,16 +1230,16 @@ exports[`Radio Player default player 1`] = `
   cursor: pointer;
 }
 
-.emotion-83 svg {
+.emotion-76 svg {
   fill: #ffffff;
   color: #ffffff;
 }
 
-.emotion-83:active:not(:disabled) {
+.emotion-76:active:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-83:disabled {
+.emotion-76:disabled {
   background-color: #e4e4e4;
   border-color: none;
   border-style: none;
@@ -1316,18 +1247,18 @@ exports[`Radio Player default player 1`] = `
   box-shadow: none;
 }
 
-.emotion-83:disabled svg {
+.emotion-76:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-87 {
+.emotion-80 {
   width: 100%;
   margin-top: 12px;
   padding: 0 calc(16px / 2);
 }
 
-.emotion-86 {
+.emotion-79 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1350,7 +1281,7 @@ exports[`Radio Player default player 1`] = `
   justify-content: space-between;
 }
 
-.emotion-85 {
+.emotion-78 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1362,29 +1293,29 @@ exports[`Radio Player default player 1`] = `
   color: #777777;
 }
 
-.emotion-85 svg {
+.emotion-78 svg {
   fill: #777777;
   color: #777777;
 }
 
-.emotion-85:disabled {
+.emotion-78:disabled {
   color: #c0c0c0;
 }
 
-.emotion-85:disabled svg {
+.emotion-78:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
 <section
     aria-label="audio player"
-    class="emotion-93"
+    class="emotion-86"
   >
     <div
       class="emotion-21"
     >
       <div
-        class="emotion-91"
+        class="emotion-84"
       >
         <audio
           data-testid="audio-element"
@@ -1502,94 +1433,78 @@ exports[`Radio Player default player 1`] = `
           </div>
         </div>
         <div
-          class="emotion-82"
+          class="emotion-75"
         >
           <div
-            class="emotion-81"
+            class="emotion-74"
           >
             <div
-              class="emotion-59"
+              class="emotion-52"
             >
               <div
-                class="emotion-58"
+                class="emotion-51"
               >
                 <div
-                  class="emotion-57"
+                  class="emotion-50"
                 >
                   <div
-                    class="emotion-36"
+                    class="emotion-29"
                   >
                     <div
-                      class="emotion-35"
+                      class="emotion-28"
                     >
                       <button
                         aria-pressed="false"
-                        class="emotion-34"
+                        class="emotion-27"
                         data-testid="audio-player-play-button"
                         type="button"
                       >
                         <div
-                          class="emotion-33"
+                          class="emotion-26"
                         >
                           <div
-                            class="emotion-32"
+                            class="emotion-25"
                           >
-                            <div
-                              aria-label="loading"
-                              class="emotion-31"
+                            <svg
+                              aria-labelledby="mock-bui-1"
+                              class="emotion-24"
+                              viewBox="0 0 64 64"
                             >
-                              <div
-                                class="emotion-30"
+                              <title
+                                id="mock-bui-1"
                               >
-                                <div
-                                  class="emotion-26"
-                                >
-                                  <div
-                                    class="emotion-25"
-                                  >
-                                    <div
-                                      class="emotion-24"
-                                    />
-                                  </div>
-                                </div>
-                                <div
-                                  class="emotion-29"
-                                >
-                                  <div
-                                    class="emotion-28"
-                                  >
-                                    <div
-                                      class="emotion-24"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                                Indeterminate progress indicator
+                              </title>
+                              <circle
+                                cx="50%"
+                                cy="50%"
+                              />
+                            </svg>
                           </div>
                         </div>
                       </button>
                     </div>
                   </div>
                   <div
-                    class="emotion-42"
+                    class="emotion-35"
                   >
                     <div
-                      class="emotion-41"
+                      class="emotion-34"
                     >
                       <button
-                        class="emotion-40"
+                        class="emotion-33"
                         data-testid="audio-player-backward"
                         type="button"
                       >
                         <div
-                          class="emotion-33"
+                          class="emotion-26"
                         >
                           <div
-                            class="emotion-32"
+                            class="emotion-25"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-37"
+                              class="emotion-30"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
@@ -1608,25 +1523,25 @@ exports[`Radio Player default player 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-36"
+                    class="emotion-29"
                   >
                     <div
-                      class="emotion-41"
+                      class="emotion-34"
                     >
                       <button
-                        class="emotion-40"
+                        class="emotion-33"
                         data-testid="audio-player-forward"
                         type="button"
                       >
                         <div
-                          class="emotion-33"
+                          class="emotion-26"
                         >
                           <div
-                            class="emotion-32"
+                            class="emotion-25"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-37"
+                              class="emotion-30"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
@@ -1652,26 +1567,26 @@ exports[`Radio Player default player 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-54"
+                    class="emotion-47"
                   >
                     <div
-                      class="emotion-41"
+                      class="emotion-34"
                     >
                       <button
-                        class="emotion-52"
+                        class="emotion-45"
                         data-testid="audio-player-skip-previous"
                         disabled=""
                         type="button"
                       >
                         <div
-                          class="emotion-33"
+                          class="emotion-26"
                         >
                           <div
-                            class="emotion-32"
+                            class="emotion-25"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-37"
+                              class="emotion-30"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
@@ -1694,47 +1609,47 @@ exports[`Radio Player default player 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-56"
+                    class="emotion-49"
                   >
                     <div
-                      class="emotion-55"
+                      class="emotion-48"
                     />
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="emotion-77"
+              class="emotion-70"
             >
               <div
-                class="emotion-76"
+                class="emotion-69"
               >
                 <div
-                  class="emotion-74"
+                  class="emotion-67"
                   data-testid="volume-control"
                 >
                   <div
-                    class="emotion-65"
+                    class="emotion-58"
                     data-testid="min-label"
                   >
                     <div
-                      class="emotion-64"
+                      class="emotion-57"
                     >
                       <button
-                        class="emotion-63"
+                        class="emotion-56"
                         data-testid="mute-button"
                         tabindex="-1"
                         type="button"
                       >
                         <div
-                          class="emotion-33"
+                          class="emotion-26"
                         >
                           <div
-                            class="emotion-32"
+                            class="emotion-25"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-60"
+                              class="emotion-53"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -1759,7 +1674,7 @@ exports[`Radio Player default player 1`] = `
                     aria-orientation="horizontal"
                     aria-valuemax="1"
                     aria-valuemin="0"
-                    class="emotion-67"
+                    class="emotion-60"
                     data-testid="volume-control-track"
                     values="0.7"
                   >
@@ -1770,7 +1685,7 @@ exports[`Radio Player default player 1`] = `
                       aria-valuemin="0"
                       aria-valuenow="0.7"
                       aria-valuetext="volume level 7 of 10"
-                      class="emotion-66"
+                      class="emotion-59"
                       data-testid="volume-control-thumb"
                       draggable="false"
                       role="slider"
@@ -1780,27 +1695,27 @@ exports[`Radio Player default player 1`] = `
                     />
                   </div>
                   <div
-                    class="emotion-73"
+                    class="emotion-66"
                     data-testid="max-label"
                   >
                     <div
-                      class="emotion-64"
+                      class="emotion-57"
                     >
                       <button
-                        class="emotion-63"
+                        class="emotion-56"
                         data-testid="volumeup-button"
                         tabindex="-1"
                         type="button"
                       >
                         <div
-                          class="emotion-33"
+                          class="emotion-26"
                         >
                           <div
-                            class="emotion-32"
+                            class="emotion-25"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-60"
+                              class="emotion-53"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -1826,7 +1741,7 @@ exports[`Radio Player default player 1`] = `
                   </div>
                 </div>
                 <div
-                  class="emotion-75"
+                  class="emotion-68"
                   id="mock-bui-1"
                 >
                   Use the arrow keys to adjust volume
@@ -1834,27 +1749,27 @@ exports[`Radio Player default player 1`] = `
               </div>
             </div>
             <div
-              class="emotion-80"
+              class="emotion-73"
             >
               <div
-                class="emotion-76"
+                class="emotion-69"
               >
                 <div
-                  class="emotion-78"
+                  class="emotion-71"
                 />
               </div>
             </div>
           </div>
         </div>
         <div
-          class="emotion-90"
+          class="emotion-83"
         >
           <div
-            class="emotion-88"
+            class="emotion-81"
             data-testid="audio-slider"
           >
             <div
-              class="emotion-84"
+              class="emotion-77"
               data-testid="audio-slider-track"
               values="0"
             >
@@ -1865,7 +1780,7 @@ exports[`Radio Player default player 1`] = `
                 aria-valuemin="0"
                 aria-valuenow="0"
                 aria-valuetext="Playback time: 0 seconds of 0 seconds"
-                class="emotion-83"
+                class="emotion-76"
                 data-testid="audio-slider-thumb"
                 draggable="false"
                 role="slider"
@@ -1875,13 +1790,13 @@ exports[`Radio Player default player 1`] = `
               />
             </div>
             <div
-              class="emotion-87"
+              class="emotion-80"
             >
               <div
-                class="emotion-86"
+                class="emotion-79"
               >
                 <div
-                  class="emotion-85"
+                  class="emotion-78"
                   data-testid="min-label"
                 >
                   00:00
@@ -1890,7 +1805,7 @@ exports[`Radio Player default player 1`] = `
             </div>
           </div>
           <div
-            class="emotion-75"
+            class="emotion-68"
             id="mock-bui-1"
           >
             Use the arrow keys to fast forward or rewind
@@ -1904,7 +1819,7 @@ exports[`Radio Player default player 1`] = `
 
 exports[`Radio Player live player 1`] = `
 <DocumentFragment>
-  .emotion-101 {
+  .emotion-94 {
   width: 100%;
 }
 
@@ -1914,7 +1829,7 @@ exports[`Radio Player live player 1`] = `
   margin: 0 auto;
 }
 
-.emotion-99 {
+.emotion-92 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -1931,25 +1846,25 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen {
-  .emotion-99 {
+  .emotion-92 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-99 {
+  .emotion-92 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-99 {
+  .emotion-92 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-99 {
+  .emotion-92 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -2317,7 +2232,7 @@ exports[`Radio Player live player 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-98 {
+.emotion-91 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -2326,7 +2241,7 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen {
-  .emotion-98 {
+  .emotion-91 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -2341,7 +2256,7 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-98 {
+  .emotion-91 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -2349,7 +2264,7 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-98 {
+  .emotion-91 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -2357,14 +2272,14 @@ exports[`Radio Player live player 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-98 {
+  .emotion-91 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-97 {
+.emotion-90 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2383,7 +2298,7 @@ exports[`Radio Player live player 1`] = `
   justify-content: space-between;
 }
 
-.emotion-65 {
+.emotion-58 {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2393,7 +2308,7 @@ exports[`Radio Player live player 1`] = `
   display: inline-flex;
 }
 
-.emotion-74 {
+.emotion-67 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2416,7 +2331,7 @@ exports[`Radio Player live player 1`] = `
   justify-content: center;
 }
 
-.emotion-64 {
+.emotion-57 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2428,7 +2343,7 @@ exports[`Radio Player live player 1`] = `
   order: 3;
 }
 
-.emotion-63 {
+.emotion-56 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2440,7 +2355,7 @@ exports[`Radio Player live player 1`] = `
   height: 64px;
 }
 
-.emotion-62 {
+.emotion-55 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2477,17 +2392,17 @@ exports[`Radio Player live player 1`] = `
   cursor: progress;
 }
 
-.emotion-62 svg {
+.emotion-55 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-62 svg {
-  fill: #ffffff;
-  color: #ffffff;
+.emotion-55 svg {
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
-.emotion-61 {
+.emotion-54 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2508,7 +2423,7 @@ exports[`Radio Player live player 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-60 {
+.emotion-53 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2517,104 +2432,35 @@ exports[`Radio Player live player 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-59 {
-  height: 32px;
-  width: 32px;
-  position: relative;
-}
-
-.emotion-58 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
-  animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
-  -webkit-transform-origin: center;
-  -ms-transform-origin: center;
-  transform-origin: center;
-}
-
-.emotion-54 {
-  box-sizing: border-box;
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  overflow: hidden;
-  position: absolute;
-}
-
-.emotion-53 {
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  overflow: hidden;
-  will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: left-wobble 1.4s linear infinite;
-  animation: left-wobble 1.4s linear infinite;
-}
-
 .emotion-52 {
-  box-sizing: border-box;
-  height: 32px;
+  fill: #535353;
+  color: #535353;
   width: 32px;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 20rem;
-  border-color: #0a68c1;
-  border-radius: 50%;
+  height: 32px;
+  display: inline-block;
 }
 
-.emotion-57 {
-  box-sizing: border-box;
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  overflow: hidden;
-  position: absolute;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
-.emotion-56 {
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  overflow: hidden;
+.emotion-52 circle {
+  r: calc(50% - 2px);
+  fill: transparent;
+  stroke: #0a68c1;
+  stroke-width: 2px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 360;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  will-change: stroke-dasharray;
+  will-change: stroke-dashoffset;
   will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: left-wobble 1.4s linear infinite;
-  animation: left-wobble 1.4s linear infinite;
-  -webkit-animation: right-wobble 1.4s linear infinite;
-  animation: right-wobble 1.4s linear infinite;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
 }
 
-.emotion-66 {
+.emotion-59 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2626,7 +2472,7 @@ exports[`Radio Player live player 1`] = `
   order: 2;
 }
 
-.emotion-70 {
+.emotion-63 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2638,7 +2484,7 @@ exports[`Radio Player live player 1`] = `
   order: 1;
 }
 
-.emotion-72 {
+.emotion-65 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2650,7 +2496,7 @@ exports[`Radio Player live player 1`] = `
   order: 5;
 }
 
-.emotion-71 {
+.emotion-64 {
   -webkit-order: 5;
   -ms-flex-order: 5;
   order: 5;
@@ -2660,7 +2506,7 @@ exports[`Radio Player live player 1`] = `
   display: inline-flex;
 }
 
-.emotion-69 {
+.emotion-62 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -2670,49 +2516,49 @@ exports[`Radio Player live player 1`] = `
   display: inline-flex;
 }
 
-.emotion-92 {
+.emotion-85 {
   box-sizing: border-box;
   width: calc( 184px + 24px );
   padding: 0 calc(24px / 2);
 }
 
 @media screen {
-  .emotion-92 {
+  .emotion-85 {
     display: none;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-92 {
+  .emotion-85 {
     display: none;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-92 {
+  .emotion-85 {
     display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-92 {
+  .emotion-85 {
     display: block;
   }
 }
 
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-92 {
+  .emotion-85 {
     display: none;
   }
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-92 {
+  .emotion-85 {
     display: none;
   }
 }
 
-.emotion-90 {
+.emotion-83 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2737,7 +2583,7 @@ exports[`Radio Player live player 1`] = `
   position: relative;
 }
 
-.emotion-81 {
+.emotion-74 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2749,7 +2595,7 @@ exports[`Radio Player live player 1`] = `
   margin-right: 8px;
 }
 
-.emotion-80 {
+.emotion-73 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2761,7 +2607,7 @@ exports[`Radio Player live player 1`] = `
   height: 32px;
 }
 
-.emotion-79 {
+.emotion-72 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2787,8 +2633,8 @@ exports[`Radio Player live player 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -2798,34 +2644,34 @@ exports[`Radio Player live player 1`] = `
   cursor: pointer;
 }
 
-.emotion-79 svg {
+.emotion-72 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-79 svg {
+.emotion-72 svg {
   fill: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-79:hover:not(:disabled) {
+.emotion-72:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-79:active:not(:disabled) {
+.emotion-72:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-79:disabled {
+.emotion-72:disabled {
   color: #c0c0c0;
 }
 
-.emotion-79:disabled svg {
+.emotion-72:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-76 {
+.emotion-69 {
   fill: #535353;
   color: #535353;
   width: 24px;
@@ -2833,7 +2679,7 @@ exports[`Radio Player live player 1`] = `
   display: inline-block;
 }
 
-.emotion-83 {
+.emotion-76 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2850,7 +2696,7 @@ exports[`Radio Player live player 1`] = `
   width: 100%;
 }
 
-.emotion-82 {
+.emotion-75 {
   background-color: #ffffff;
   border-color: #0a68c1;
   border-style: solid;
@@ -2871,21 +2717,21 @@ exports[`Radio Player live player 1`] = `
   cursor: pointer;
 }
 
-.emotion-82 svg {
+.emotion-75 svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-82:active:not(:disabled) {
+.emotion-75:active:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-82:active:not(:disabled) svg {
+.emotion-75:active:not(:disabled) svg {
   fill: #777777;
   color: #777777;
 }
 
-.emotion-89 {
+.emotion-82 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2897,7 +2743,7 @@ exports[`Radio Player live player 1`] = `
   margin-left: 8px;
 }
 
-.emotion-91 {
+.emotion-84 {
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -2909,7 +2755,7 @@ exports[`Radio Player live player 1`] = `
   width: 1px;
 }
 
-.emotion-67 {
+.emotion-60 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -2919,7 +2765,7 @@ exports[`Radio Player live player 1`] = `
   display: inline-flex;
 }
 
-.emotion-94 {
+.emotion-87 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3216,7 +3062,7 @@ exports[`Radio Player live player 1`] = `
   width: 100%;
 }
 
-.emotion-73 {
+.emotion-66 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3240,13 +3086,13 @@ exports[`Radio Player live player 1`] = `
 
 <section
     aria-label="audio player"
-    class="emotion-101"
+    class="emotion-94"
   >
     <div
       class="emotion-49"
     >
       <div
-        class="emotion-99"
+        class="emotion-92"
       >
         <audio
           data-testid="audio-element"
@@ -3507,137 +3353,121 @@ exports[`Radio Player live player 1`] = `
           </div>
         </div>
         <div
-          class="emotion-98"
+          class="emotion-91"
         >
           <div
-            class="emotion-97"
+            class="emotion-90"
           >
             <div
-              class="emotion-65"
+              class="emotion-58"
             >
               <div
-                class="emotion-74"
+                class="emotion-67"
               >
                 <div
-                  class="emotion-73"
+                  class="emotion-66"
                 >
                   <div
-                    class="emotion-64"
+                    class="emotion-57"
                   >
                     <div
-                      class="emotion-63"
+                      class="emotion-56"
                     >
                       <button
                         aria-pressed="false"
-                        class="emotion-62"
+                        class="emotion-55"
                         data-testid="audio-player-play-button"
                         type="button"
                       >
                         <div
-                          class="emotion-61"
+                          class="emotion-54"
                         >
                           <div
-                            class="emotion-60"
+                            class="emotion-53"
                           >
-                            <div
-                              aria-label="loading"
-                              class="emotion-59"
+                            <svg
+                              aria-labelledby="mock-bui-1"
+                              class="emotion-52"
+                              viewBox="0 0 64 64"
                             >
-                              <div
-                                class="emotion-58"
+                              <title
+                                id="mock-bui-1"
                               >
-                                <div
-                                  class="emotion-54"
-                                >
-                                  <div
-                                    class="emotion-53"
-                                  >
-                                    <div
-                                      class="emotion-52"
-                                    />
-                                  </div>
-                                </div>
-                                <div
-                                  class="emotion-57"
-                                >
-                                  <div
-                                    class="emotion-56"
-                                  >
-                                    <div
-                                      class="emotion-52"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                                Indeterminate progress indicator
+                              </title>
+                              <circle
+                                cx="50%"
+                                cy="50%"
+                              />
+                            </svg>
                           </div>
                         </div>
                       </button>
                     </div>
                   </div>
                   <div
-                    class="emotion-66"
+                    class="emotion-59"
                   >
                     <div
-                      class="emotion-65"
+                      class="emotion-58"
                     />
                   </div>
                   <div
-                    class="emotion-64"
+                    class="emotion-57"
                   >
                     <div
-                      class="emotion-67"
+                      class="emotion-60"
                     />
                   </div>
                   <div
-                    class="emotion-70"
+                    class="emotion-63"
                   >
                     <div
-                      class="emotion-69"
+                      class="emotion-62"
                     />
                   </div>
                   <div
-                    class="emotion-72"
+                    class="emotion-65"
                   >
                     <div
-                      class="emotion-71"
+                      class="emotion-64"
                     />
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="emotion-69"
+              class="emotion-62"
             >
               <div
-                class="emotion-92"
+                class="emotion-85"
               >
                 <div
-                  class="emotion-90"
+                  class="emotion-83"
                   data-testid="volume-control"
                 >
                   <div
-                    class="emotion-81"
+                    class="emotion-74"
                     data-testid="min-label"
                   >
                     <div
-                      class="emotion-80"
+                      class="emotion-73"
                     >
                       <button
-                        class="emotion-79"
+                        class="emotion-72"
                         data-testid="mute-button"
                         tabindex="-1"
                         type="button"
                       >
                         <div
-                          class="emotion-61"
+                          class="emotion-54"
                         >
                           <div
-                            class="emotion-60"
+                            class="emotion-53"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-76"
+                              class="emotion-69"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -3662,7 +3492,7 @@ exports[`Radio Player live player 1`] = `
                     aria-orientation="horizontal"
                     aria-valuemax="1"
                     aria-valuemin="0"
-                    class="emotion-83"
+                    class="emotion-76"
                     data-testid="volume-control-track"
                     values="0.7"
                   >
@@ -3673,7 +3503,7 @@ exports[`Radio Player live player 1`] = `
                       aria-valuemin="0"
                       aria-valuenow="0.7"
                       aria-valuetext="volume level 7 of 10"
-                      class="emotion-82"
+                      class="emotion-75"
                       data-testid="volume-control-thumb"
                       draggable="false"
                       role="slider"
@@ -3683,27 +3513,27 @@ exports[`Radio Player live player 1`] = `
                     />
                   </div>
                   <div
-                    class="emotion-89"
+                    class="emotion-82"
                     data-testid="max-label"
                   >
                     <div
-                      class="emotion-80"
+                      class="emotion-73"
                     >
                       <button
-                        class="emotion-79"
+                        class="emotion-72"
                         data-testid="volumeup-button"
                         tabindex="-1"
                         type="button"
                       >
                         <div
-                          class="emotion-61"
+                          class="emotion-54"
                         >
                           <div
-                            class="emotion-60"
+                            class="emotion-53"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-76"
+                              class="emotion-69"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -3729,7 +3559,7 @@ exports[`Radio Player live player 1`] = `
                   </div>
                 </div>
                 <div
-                  class="emotion-91"
+                  class="emotion-84"
                   id="mock-bui-1"
                 >
                   Use the arrow keys to adjust volume
@@ -3737,13 +3567,13 @@ exports[`Radio Player live player 1`] = `
               </div>
             </div>
             <div
-              class="emotion-67"
+              class="emotion-60"
             >
               <div
-                class="emotion-92"
+                class="emotion-85"
               >
                 <div
-                  class="emotion-94"
+                  class="emotion-87"
                 />
               </div>
             </div>
@@ -3757,7 +3587,7 @@ exports[`Radio Player live player 1`] = `
 
 exports[`Radio Player player with popout link 1`] = `
 <DocumentFragment>
-  .emotion-109 {
+  .emotion-102 {
   width: 100%;
 }
 
@@ -3767,7 +3597,7 @@ exports[`Radio Player player with popout link 1`] = `
   margin: 0 auto;
 }
 
-.emotion-107 {
+.emotion-100 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -3784,25 +3614,25 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 @media screen {
-  .emotion-107 {
+  .emotion-100 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-107 {
+  .emotion-100 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-107 {
+  .emotion-100 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-107 {
+  .emotion-100 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -4170,7 +4000,7 @@ exports[`Radio Player player with popout link 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-98 {
+.emotion-91 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -4179,7 +4009,7 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 @media screen {
-  .emotion-98 {
+  .emotion-91 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -4194,7 +4024,7 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-98 {
+  .emotion-91 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -4202,7 +4032,7 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-98 {
+  .emotion-91 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -4210,14 +4040,14 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-98 {
+  .emotion-91 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-97 {
+.emotion-90 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4236,7 +4066,7 @@ exports[`Radio Player player with popout link 1`] = `
   justify-content: space-between;
 }
 
-.emotion-75 {
+.emotion-68 {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -4246,7 +4076,7 @@ exports[`Radio Player player with popout link 1`] = `
   display: inline-flex;
 }
 
-.emotion-74 {
+.emotion-67 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4269,7 +4099,7 @@ exports[`Radio Player player with popout link 1`] = `
   justify-content: center;
 }
 
-.emotion-73 {
+.emotion-66 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4291,7 +4121,7 @@ exports[`Radio Player player with popout link 1`] = `
   min-width: 316px;
 }
 
-.emotion-52 {
+.emotion-45 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4303,7 +4133,7 @@ exports[`Radio Player player with popout link 1`] = `
   order: 3;
 }
 
-.emotion-51 {
+.emotion-44 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4315,7 +4145,7 @@ exports[`Radio Player player with popout link 1`] = `
   height: 64px;
 }
 
-.emotion-50 {
+.emotion-43 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4352,17 +4182,17 @@ exports[`Radio Player player with popout link 1`] = `
   cursor: progress;
 }
 
-.emotion-50 svg {
+.emotion-43 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-50 svg {
-  fill: #ffffff;
-  color: #ffffff;
+.emotion-43 svg {
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
-.emotion-49 {
+.emotion-42 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4383,7 +4213,7 @@ exports[`Radio Player player with popout link 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-48 {
+.emotion-41 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4392,104 +4222,35 @@ exports[`Radio Player player with popout link 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-47 {
-  height: 32px;
-  width: 32px;
-  position: relative;
-}
-
-.emotion-46 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
-  animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
-  -webkit-transform-origin: center;
-  -ms-transform-origin: center;
-  transform-origin: center;
-}
-
-.emotion-42 {
-  box-sizing: border-box;
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  overflow: hidden;
-  position: absolute;
-}
-
-.emotion-41 {
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  overflow: hidden;
-  will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: left-wobble 1.4s linear infinite;
-  animation: left-wobble 1.4s linear infinite;
-}
-
 .emotion-40 {
-  box-sizing: border-box;
-  height: 32px;
+  fill: #535353;
+  color: #535353;
   width: 32px;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 20rem;
-  border-color: #0a68c1;
-  border-radius: 50%;
+  height: 32px;
+  display: inline-block;
 }
 
-.emotion-45 {
-  box-sizing: border-box;
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  overflow: hidden;
-  position: absolute;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
-.emotion-44 {
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  overflow: hidden;
+.emotion-40 circle {
+  r: calc(50% - 2px);
+  fill: transparent;
+  stroke: #0a68c1;
+  stroke-width: 2px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 360;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  will-change: stroke-dasharray;
+  will-change: stroke-dashoffset;
   will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: left-wobble 1.4s linear infinite;
-  animation: left-wobble 1.4s linear infinite;
-  -webkit-animation: right-wobble 1.4s linear infinite;
-  animation: right-wobble 1.4s linear infinite;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
 }
 
-.emotion-58 {
+.emotion-51 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4501,7 +4262,7 @@ exports[`Radio Player player with popout link 1`] = `
   order: 2;
 }
 
-.emotion-57 {
+.emotion-50 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4513,7 +4274,7 @@ exports[`Radio Player player with popout link 1`] = `
   height: 48px;
 }
 
-.emotion-56 {
+.emotion-49 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4539,8 +4300,8 @@ exports[`Radio Player player with popout link 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -4550,40 +4311,40 @@ exports[`Radio Player player with popout link 1`] = `
   cursor: pointer;
 }
 
-.emotion-56 svg {
+.emotion-49 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-56 svg {
+.emotion-49 svg {
   fill: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-56:hover:not(:disabled) {
+.emotion-49:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-56:active:not(:disabled) {
+.emotion-49:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-56:disabled {
+.emotion-49:disabled {
   color: #c0c0c0;
 }
 
-.emotion-56:disabled svg {
+.emotion-49:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-53 {
+.emotion-46 {
   fill: #535353;
   color: #535353;
   display: inline-block;
 }
 
-.emotion-70 {
+.emotion-63 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4595,7 +4356,7 @@ exports[`Radio Player player with popout link 1`] = `
   order: 1;
 }
 
-.emotion-68 {
+.emotion-61 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4621,8 +4382,8 @@ exports[`Radio Player player with popout link 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #c0c0c0;
   border-radius: 50%;
+  color: #c0c0c0;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -4631,17 +4392,17 @@ exports[`Radio Player player with popout link 1`] = `
   transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
-.emotion-68 svg {
+.emotion-61 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-68 svg {
+.emotion-61 svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-72 {
+.emotion-65 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4653,7 +4414,7 @@ exports[`Radio Player player with popout link 1`] = `
   order: 5;
 }
 
-.emotion-71 {
+.emotion-64 {
   -webkit-order: 5;
   -ms-flex-order: 5;
   order: 5;
@@ -4663,7 +4424,7 @@ exports[`Radio Player player with popout link 1`] = `
   display: inline-flex;
 }
 
-.emotion-93 {
+.emotion-86 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -4673,49 +4434,49 @@ exports[`Radio Player player with popout link 1`] = `
   display: inline-flex;
 }
 
-.emotion-92 {
+.emotion-85 {
   box-sizing: border-box;
   width: calc( 184px + 24px );
   padding: 0 calc(24px / 2);
 }
 
 @media screen {
-  .emotion-92 {
+  .emotion-85 {
     display: none;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-92 {
+  .emotion-85 {
     display: none;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-92 {
+  .emotion-85 {
     display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-92 {
+  .emotion-85 {
     display: block;
   }
 }
 
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-92 {
+  .emotion-85 {
     display: none;
   }
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-92 {
+  .emotion-85 {
     display: none;
   }
 }
 
-.emotion-90 {
+.emotion-83 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4740,7 +4501,7 @@ exports[`Radio Player player with popout link 1`] = `
   position: relative;
 }
 
-.emotion-81 {
+.emotion-74 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -4752,7 +4513,7 @@ exports[`Radio Player player with popout link 1`] = `
   margin-right: 8px;
 }
 
-.emotion-80 {
+.emotion-73 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4764,7 +4525,7 @@ exports[`Radio Player player with popout link 1`] = `
   height: 32px;
 }
 
-.emotion-79 {
+.emotion-72 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4790,8 +4551,8 @@ exports[`Radio Player player with popout link 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -4801,34 +4562,34 @@ exports[`Radio Player player with popout link 1`] = `
   cursor: pointer;
 }
 
-.emotion-79 svg {
+.emotion-72 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-79 svg {
+.emotion-72 svg {
   fill: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-79:hover:not(:disabled) {
+.emotion-72:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-79:active:not(:disabled) {
+.emotion-72:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-79:disabled {
+.emotion-72:disabled {
   color: #c0c0c0;
 }
 
-.emotion-79:disabled svg {
+.emotion-72:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-76 {
+.emotion-69 {
   fill: #535353;
   color: #535353;
   width: 24px;
@@ -4836,7 +4597,7 @@ exports[`Radio Player player with popout link 1`] = `
   display: inline-block;
 }
 
-.emotion-83 {
+.emotion-76 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4853,7 +4614,7 @@ exports[`Radio Player player with popout link 1`] = `
   width: 100%;
 }
 
-.emotion-82 {
+.emotion-75 {
   background-color: #ffffff;
   border-color: #0a68c1;
   border-style: solid;
@@ -4874,21 +4635,21 @@ exports[`Radio Player player with popout link 1`] = `
   cursor: pointer;
 }
 
-.emotion-82 svg {
+.emotion-75 svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-82:active:not(:disabled) {
+.emotion-75:active:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-82:active:not(:disabled) svg {
+.emotion-75:active:not(:disabled) svg {
   fill: #777777;
   color: #777777;
 }
 
-.emotion-89 {
+.emotion-82 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -4900,7 +4661,7 @@ exports[`Radio Player player with popout link 1`] = `
   margin-left: 8px;
 }
 
-.emotion-91 {
+.emotion-84 {
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -4912,7 +4673,7 @@ exports[`Radio Player player with popout link 1`] = `
   width: 1px;
 }
 
-.emotion-96 {
+.emotion-89 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -4922,7 +4683,7 @@ exports[`Radio Player player with popout link 1`] = `
   display: inline-flex;
 }
 
-.emotion-94 {
+.emotion-87 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4941,7 +4702,7 @@ exports[`Radio Player player with popout link 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-106 {
+.emotion-99 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -4950,7 +4711,7 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 @media screen {
-  .emotion-106 {
+  .emotion-99 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -4965,7 +4726,7 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-106 {
+  .emotion-99 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -4973,7 +4734,7 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-106 {
+  .emotion-99 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -4981,14 +4742,14 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-106 {
+  .emotion-99 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-104 {
+.emotion-97 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5016,7 +4777,7 @@ exports[`Radio Player player with popout link 1`] = `
   position: relative;
 }
 
-.emotion-100 {
+.emotion-93 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5033,7 +4794,7 @@ exports[`Radio Player player with popout link 1`] = `
   width: 100%;
 }
 
-.emotion-99 {
+.emotion-92 {
   background-color: #ffffff;
   border-color: #0a68c1;
   border-style: solid;
@@ -5054,16 +4815,16 @@ exports[`Radio Player player with popout link 1`] = `
   cursor: pointer;
 }
 
-.emotion-99 svg {
+.emotion-92 svg {
   fill: #ffffff;
   color: #ffffff;
 }
 
-.emotion-99:active:not(:disabled) {
+.emotion-92:active:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-99:disabled {
+.emotion-92:disabled {
   background-color: #e4e4e4;
   border-color: none;
   border-style: none;
@@ -5071,18 +4832,18 @@ exports[`Radio Player player with popout link 1`] = `
   box-shadow: none;
 }
 
-.emotion-99:disabled svg {
+.emotion-92:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-103 {
+.emotion-96 {
   width: 100%;
   margin-top: 12px;
   padding: 0 calc(16px / 2);
 }
 
-.emotion-102 {
+.emotion-95 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5105,7 +4866,7 @@ exports[`Radio Player player with popout link 1`] = `
   justify-content: space-between;
 }
 
-.emotion-101 {
+.emotion-94 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -5117,16 +4878,16 @@ exports[`Radio Player player with popout link 1`] = `
   color: #777777;
 }
 
-.emotion-101 svg {
+.emotion-94 svg {
   fill: #777777;
   color: #777777;
 }
 
-.emotion-101:disabled {
+.emotion-94:disabled {
   color: #c0c0c0;
 }
 
-.emotion-101:disabled svg {
+.emotion-94:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
@@ -5306,13 +5067,13 @@ exports[`Radio Player player with popout link 1`] = `
 
 <section
     aria-label="audio player"
-    class="emotion-109"
+    class="emotion-102"
   >
     <div
       class="emotion-37"
     >
       <div
-        class="emotion-107"
+        class="emotion-100"
       >
         <audio
           data-testid="audio-element"
@@ -5521,94 +5282,78 @@ exports[`Radio Player player with popout link 1`] = `
           </div>
         </div>
         <div
-          class="emotion-98"
+          class="emotion-91"
         >
           <div
-            class="emotion-97"
+            class="emotion-90"
           >
             <div
-              class="emotion-75"
+              class="emotion-68"
             >
               <div
-                class="emotion-74"
+                class="emotion-67"
               >
                 <div
-                  class="emotion-73"
+                  class="emotion-66"
                 >
                   <div
-                    class="emotion-52"
+                    class="emotion-45"
                   >
                     <div
-                      class="emotion-51"
+                      class="emotion-44"
                     >
                       <button
                         aria-pressed="false"
-                        class="emotion-50"
+                        class="emotion-43"
                         data-testid="audio-player-play-button"
                         type="button"
                       >
                         <div
-                          class="emotion-49"
+                          class="emotion-42"
                         >
                           <div
-                            class="emotion-48"
+                            class="emotion-41"
                           >
-                            <div
-                              aria-label="loading"
-                              class="emotion-47"
+                            <svg
+                              aria-labelledby="mock-bui-1"
+                              class="emotion-40"
+                              viewBox="0 0 64 64"
                             >
-                              <div
-                                class="emotion-46"
+                              <title
+                                id="mock-bui-1"
                               >
-                                <div
-                                  class="emotion-42"
-                                >
-                                  <div
-                                    class="emotion-41"
-                                  >
-                                    <div
-                                      class="emotion-40"
-                                    />
-                                  </div>
-                                </div>
-                                <div
-                                  class="emotion-45"
-                                >
-                                  <div
-                                    class="emotion-44"
-                                  >
-                                    <div
-                                      class="emotion-40"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                                Indeterminate progress indicator
+                              </title>
+                              <circle
+                                cx="50%"
+                                cy="50%"
+                              />
+                            </svg>
                           </div>
                         </div>
                       </button>
                     </div>
                   </div>
                   <div
-                    class="emotion-58"
+                    class="emotion-51"
                   >
                     <div
-                      class="emotion-57"
+                      class="emotion-50"
                     >
                       <button
-                        class="emotion-56"
+                        class="emotion-49"
                         data-testid="audio-player-backward"
                         type="button"
                       >
                         <div
-                          class="emotion-49"
+                          class="emotion-42"
                         >
                           <div
-                            class="emotion-48"
+                            class="emotion-41"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-53"
+                              class="emotion-46"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
@@ -5627,25 +5372,25 @@ exports[`Radio Player player with popout link 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-52"
+                    class="emotion-45"
                   >
                     <div
-                      class="emotion-57"
+                      class="emotion-50"
                     >
                       <button
-                        class="emotion-56"
+                        class="emotion-49"
                         data-testid="audio-player-forward"
                         type="button"
                       >
                         <div
-                          class="emotion-49"
+                          class="emotion-42"
                         >
                           <div
-                            class="emotion-48"
+                            class="emotion-41"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-53"
+                              class="emotion-46"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
@@ -5671,26 +5416,26 @@ exports[`Radio Player player with popout link 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-70"
+                    class="emotion-63"
                   >
                     <div
-                      class="emotion-57"
+                      class="emotion-50"
                     >
                       <button
-                        class="emotion-68"
+                        class="emotion-61"
                         data-testid="audio-player-skip-previous"
                         disabled=""
                         type="button"
                       >
                         <div
-                          class="emotion-49"
+                          class="emotion-42"
                         >
                           <div
-                            class="emotion-48"
+                            class="emotion-41"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-53"
+                              class="emotion-46"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
@@ -5713,47 +5458,47 @@ exports[`Radio Player player with popout link 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-72"
+                    class="emotion-65"
                   >
                     <div
-                      class="emotion-71"
+                      class="emotion-64"
                     />
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="emotion-93"
+              class="emotion-86"
             >
               <div
-                class="emotion-92"
+                class="emotion-85"
               >
                 <div
-                  class="emotion-90"
+                  class="emotion-83"
                   data-testid="volume-control"
                 >
                   <div
-                    class="emotion-81"
+                    class="emotion-74"
                     data-testid="min-label"
                   >
                     <div
-                      class="emotion-80"
+                      class="emotion-73"
                     >
                       <button
-                        class="emotion-79"
+                        class="emotion-72"
                         data-testid="mute-button"
                         tabindex="-1"
                         type="button"
                       >
                         <div
-                          class="emotion-49"
+                          class="emotion-42"
                         >
                           <div
-                            class="emotion-48"
+                            class="emotion-41"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-76"
+                              class="emotion-69"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -5778,7 +5523,7 @@ exports[`Radio Player player with popout link 1`] = `
                     aria-orientation="horizontal"
                     aria-valuemax="1"
                     aria-valuemin="0"
-                    class="emotion-83"
+                    class="emotion-76"
                     data-testid="volume-control-track"
                     values="0.7"
                   >
@@ -5789,7 +5534,7 @@ exports[`Radio Player player with popout link 1`] = `
                       aria-valuemin="0"
                       aria-valuenow="0.7"
                       aria-valuetext="volume level 7 of 10"
-                      class="emotion-82"
+                      class="emotion-75"
                       data-testid="volume-control-thumb"
                       draggable="false"
                       role="slider"
@@ -5799,27 +5544,27 @@ exports[`Radio Player player with popout link 1`] = `
                     />
                   </div>
                   <div
-                    class="emotion-89"
+                    class="emotion-82"
                     data-testid="max-label"
                   >
                     <div
-                      class="emotion-80"
+                      class="emotion-73"
                     >
                       <button
-                        class="emotion-79"
+                        class="emotion-72"
                         data-testid="volumeup-button"
                         tabindex="-1"
                         type="button"
                       >
                         <div
-                          class="emotion-49"
+                          class="emotion-42"
                         >
                           <div
-                            class="emotion-48"
+                            class="emotion-41"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-76"
+                              class="emotion-69"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -5845,7 +5590,7 @@ exports[`Radio Player player with popout link 1`] = `
                   </div>
                 </div>
                 <div
-                  class="emotion-91"
+                  class="emotion-84"
                   id="mock-bui-1"
                 >
                   Use the arrow keys to adjust volume
@@ -5853,27 +5598,27 @@ exports[`Radio Player player with popout link 1`] = `
               </div>
             </div>
             <div
-              class="emotion-96"
+              class="emotion-89"
             >
               <div
-                class="emotion-92"
+                class="emotion-85"
               >
                 <div
-                  class="emotion-94"
+                  class="emotion-87"
                 />
               </div>
             </div>
           </div>
         </div>
         <div
-          class="emotion-106"
+          class="emotion-99"
         >
           <div
-            class="emotion-104"
+            class="emotion-97"
             data-testid="audio-slider"
           >
             <div
-              class="emotion-100"
+              class="emotion-93"
               data-testid="audio-slider-track"
               values="0"
             >
@@ -5884,7 +5629,7 @@ exports[`Radio Player player with popout link 1`] = `
                 aria-valuemin="0"
                 aria-valuenow="0"
                 aria-valuetext="Playback time: 0 seconds of 0 seconds"
-                class="emotion-99"
+                class="emotion-92"
                 data-testid="audio-slider-thumb"
                 draggable="false"
                 role="slider"
@@ -5894,13 +5639,13 @@ exports[`Radio Player player with popout link 1`] = `
               />
             </div>
             <div
-              class="emotion-103"
+              class="emotion-96"
             >
               <div
-                class="emotion-102"
+                class="emotion-95"
               >
                 <div
-                  class="emotion-101"
+                  class="emotion-94"
                   data-testid="min-label"
                 >
                   00:00
@@ -5909,7 +5654,7 @@ exports[`Radio Player player with popout link 1`] = `
             </div>
           </div>
           <div
-            class="emotion-91"
+            class="emotion-84"
             id="mock-bui-1"
           >
             Use the arrow keys to fast forward or rewind
@@ -5923,7 +5668,7 @@ exports[`Radio Player player with popout link 1`] = `
 
 exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 <DocumentFragment>
-  .emotion-125 {
+  .emotion-118 {
   width: 100%;
 }
 
@@ -5933,7 +5678,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin: 0 auto;
 }
 
-.emotion-123 {
+.emotion-116 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -5950,25 +5695,25 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen {
-  .emotion-123 {
+  .emotion-116 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-123 {
+  .emotion-116 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-123 {
+  .emotion-116 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-123 {
+  .emotion-116 {
     margin: -0px 0px 0 0px;
   }
 }
@@ -6336,7 +6081,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-114 {
+.emotion-107 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -6345,7 +6090,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen {
-  .emotion-114 {
+  .emotion-107 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -6360,7 +6105,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-114 {
+  .emotion-107 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -6368,7 +6113,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-114 {
+  .emotion-107 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -6376,14 +6121,14 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-114 {
+  .emotion-107 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-113 {
+.emotion-106 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6402,7 +6147,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   justify-content: space-between;
 }
 
-.emotion-91 {
+.emotion-84 {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -6412,7 +6157,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   display: inline-flex;
 }
 
-.emotion-90 {
+.emotion-83 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6435,7 +6180,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   justify-content: center;
 }
 
-.emotion-89 {
+.emotion-82 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6457,7 +6202,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   min-width: 316px;
 }
 
-.emotion-68 {
+.emotion-61 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6469,7 +6214,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   order: 3;
 }
 
-.emotion-67 {
+.emotion-60 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6481,7 +6226,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   height: 64px;
 }
 
-.emotion-66 {
+.emotion-59 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6518,17 +6263,17 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   cursor: progress;
 }
 
-.emotion-66 svg {
+.emotion-59 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-66 svg {
-  fill: #ffffff;
-  color: #ffffff;
+.emotion-59 svg {
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
-.emotion-65 {
+.emotion-58 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6549,7 +6294,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-64 {
+.emotion-57 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6558,104 +6303,35 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-63 {
-  height: 32px;
-  width: 32px;
-  position: relative;
-}
-
-.emotion-62 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
-  animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
-  -webkit-transform-origin: center;
-  -ms-transform-origin: center;
-  transform-origin: center;
-}
-
-.emotion-58 {
-  box-sizing: border-box;
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  overflow: hidden;
-  position: absolute;
-}
-
-.emotion-57 {
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  overflow: hidden;
-  will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: left-wobble 1.4s linear infinite;
-  animation: left-wobble 1.4s linear infinite;
-}
-
 .emotion-56 {
-  box-sizing: border-box;
-  height: 32px;
+  fill: #535353;
+  color: #535353;
   width: 32px;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 20rem;
-  border-color: #0a68c1;
-  border-radius: 50%;
+  height: 32px;
+  display: inline-block;
 }
 
-.emotion-61 {
-  box-sizing: border-box;
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  overflow: hidden;
-  position: absolute;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
-.emotion-60 {
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  overflow: hidden;
+.emotion-56 circle {
+  r: calc(50% - 2px);
+  fill: transparent;
+  stroke: #0a68c1;
+  stroke-width: 2px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 360;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  will-change: stroke-dasharray;
+  will-change: stroke-dashoffset;
   will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: left-wobble 1.4s linear infinite;
-  animation: left-wobble 1.4s linear infinite;
-  -webkit-animation: right-wobble 1.4s linear infinite;
-  animation: right-wobble 1.4s linear infinite;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
 }
 
-.emotion-74 {
+.emotion-67 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6667,7 +6343,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   order: 2;
 }
 
-.emotion-73 {
+.emotion-66 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6679,7 +6355,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   height: 48px;
 }
 
-.emotion-72 {
+.emotion-65 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6705,8 +6381,8 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -6716,29 +6392,29 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   cursor: pointer;
 }
 
-.emotion-72 svg {
+.emotion-65 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-72 svg {
+.emotion-65 svg {
   fill: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-72:hover:not(:disabled) {
+.emotion-65:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-72:active:not(:disabled) {
+.emotion-65:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-72:disabled {
+.emotion-65:disabled {
   color: #c0c0c0;
 }
 
-.emotion-72:disabled svg {
+.emotion-65:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
@@ -6749,7 +6425,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   display: inline-block;
 }
 
-.emotion-86 {
+.emotion-79 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6761,7 +6437,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   order: 1;
 }
 
-.emotion-84 {
+.emotion-77 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6787,8 +6463,8 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #c0c0c0;
   border-radius: 50%;
+  color: #c0c0c0;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -6797,17 +6473,17 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
-.emotion-84 svg {
+.emotion-77 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-84 svg {
+.emotion-77 svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-88 {
+.emotion-81 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6819,7 +6495,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   order: 5;
 }
 
-.emotion-87 {
+.emotion-80 {
   -webkit-order: 5;
   -ms-flex-order: 5;
   order: 5;
@@ -6829,7 +6505,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   display: inline-flex;
 }
 
-.emotion-109 {
+.emotion-102 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -6839,49 +6515,49 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   display: inline-flex;
 }
 
-.emotion-108 {
+.emotion-101 {
   box-sizing: border-box;
   width: calc( 184px + 24px );
   padding: 0 calc(24px / 2);
 }
 
 @media screen {
-  .emotion-108 {
+  .emotion-101 {
     display: none;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-108 {
+  .emotion-101 {
     display: none;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-108 {
+  .emotion-101 {
     display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-108 {
+  .emotion-101 {
     display: block;
   }
 }
 
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-108 {
+  .emotion-101 {
     display: none;
   }
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-108 {
+  .emotion-101 {
     display: none;
   }
 }
 
-.emotion-106 {
+.emotion-99 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6906,7 +6582,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   position: relative;
 }
 
-.emotion-97 {
+.emotion-90 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -6918,7 +6594,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin-right: 8px;
 }
 
-.emotion-96 {
+.emotion-89 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6930,7 +6606,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   height: 32px;
 }
 
-.emotion-95 {
+.emotion-88 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6956,8 +6632,8 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -6967,34 +6643,34 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   cursor: pointer;
 }
 
-.emotion-95 svg {
+.emotion-88 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-95 svg {
+.emotion-88 svg {
   fill: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-95:hover:not(:disabled) {
+.emotion-88:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-95:active:not(:disabled) {
+.emotion-88:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-95:disabled {
+.emotion-88:disabled {
   color: #c0c0c0;
 }
 
-.emotion-95:disabled svg {
+.emotion-88:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-92 {
+.emotion-85 {
   fill: #535353;
   color: #535353;
   width: 24px;
@@ -7002,7 +6678,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   display: inline-block;
 }
 
-.emotion-99 {
+.emotion-92 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7019,7 +6695,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   width: 100%;
 }
 
-.emotion-98 {
+.emotion-91 {
   background-color: #ffffff;
   border-color: #0a68c1;
   border-style: solid;
@@ -7040,21 +6716,21 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   cursor: pointer;
 }
 
-.emotion-98 svg {
+.emotion-91 svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-98:active:not(:disabled) {
+.emotion-91:active:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-98:active:not(:disabled) svg {
+.emotion-91:active:not(:disabled) svg {
   fill: #777777;
   color: #777777;
 }
 
-.emotion-105 {
+.emotion-98 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -7066,7 +6742,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   margin-left: 8px;
 }
 
-.emotion-107 {
+.emotion-100 {
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -7078,7 +6754,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   width: 1px;
 }
 
-.emotion-112 {
+.emotion-105 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -7088,7 +6764,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   display: inline-flex;
 }
 
-.emotion-110 {
+.emotion-103 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7107,7 +6783,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-122 {
+.emotion-115 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -7116,7 +6792,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen {
-  .emotion-122 {
+  .emotion-115 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -7131,7 +6807,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-122 {
+  .emotion-115 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -7139,7 +6815,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-122 {
+  .emotion-115 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -7147,14 +6823,14 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-122 {
+  .emotion-115 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-120 {
+.emotion-113 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7182,7 +6858,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   position: relative;
 }
 
-.emotion-116 {
+.emotion-109 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7199,7 +6875,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   width: 100%;
 }
 
-.emotion-115 {
+.emotion-108 {
   background-color: #ffffff;
   border-color: #0a68c1;
   border-style: solid;
@@ -7220,16 +6896,16 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   cursor: pointer;
 }
 
-.emotion-115 svg {
+.emotion-108 svg {
   fill: #ffffff;
   color: #ffffff;
 }
 
-.emotion-115:active:not(:disabled) {
+.emotion-108:active:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-115:disabled {
+.emotion-108:disabled {
   background-color: #e4e4e4;
   border-color: none;
   border-style: none;
@@ -7237,18 +6913,18 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   box-shadow: none;
 }
 
-.emotion-115:disabled svg {
+.emotion-108:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
 
-.emotion-119 {
+.emotion-112 {
   width: 100%;
   margin-top: 12px;
   padding: 0 calc(16px / 2);
 }
 
-.emotion-118 {
+.emotion-111 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7271,7 +6947,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   justify-content: space-between;
 }
 
-.emotion-117 {
+.emotion-110 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -7283,16 +6959,16 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   color: #777777;
 }
 
-.emotion-117 svg {
+.emotion-110 svg {
   fill: #777777;
   color: #777777;
 }
 
-.emotion-117:disabled {
+.emotion-110:disabled {
   color: #c0c0c0;
 }
 
-.emotion-117:disabled svg {
+.emotion-110:disabled svg {
   fill: #c0c0c0;
   color: #c0c0c0;
 }
@@ -7577,13 +7253,13 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 
 <section
     aria-label="audio player"
-    class="emotion-125"
+    class="emotion-118"
   >
     <div
       class="emotion-53"
     >
       <div
-        class="emotion-123"
+        class="emotion-116"
       >
         <audio
           data-testid="audio-element"
@@ -7883,90 +7559,74 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
           </div>
         </div>
         <div
-          class="emotion-114"
+          class="emotion-107"
         >
           <div
-            class="emotion-113"
+            class="emotion-106"
           >
             <div
-              class="emotion-91"
+              class="emotion-84"
             >
               <div
-                class="emotion-90"
+                class="emotion-83"
               >
                 <div
-                  class="emotion-89"
+                  class="emotion-82"
                 >
                   <div
-                    class="emotion-68"
+                    class="emotion-61"
                   >
                     <div
-                      class="emotion-67"
+                      class="emotion-60"
                     >
                       <button
                         aria-pressed="false"
-                        class="emotion-66"
+                        class="emotion-59"
                         data-testid="audio-player-play-button"
                         type="button"
                       >
                         <div
-                          class="emotion-65"
+                          class="emotion-58"
                         >
                           <div
-                            class="emotion-64"
+                            class="emotion-57"
                           >
-                            <div
-                              aria-label="loading"
-                              class="emotion-63"
+                            <svg
+                              aria-labelledby="mock-bui-1"
+                              class="emotion-56"
+                              viewBox="0 0 64 64"
                             >
-                              <div
-                                class="emotion-62"
+                              <title
+                                id="mock-bui-1"
                               >
-                                <div
-                                  class="emotion-58"
-                                >
-                                  <div
-                                    class="emotion-57"
-                                  >
-                                    <div
-                                      class="emotion-56"
-                                    />
-                                  </div>
-                                </div>
-                                <div
-                                  class="emotion-61"
-                                >
-                                  <div
-                                    class="emotion-60"
-                                  >
-                                    <div
-                                      class="emotion-56"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                                Indeterminate progress indicator
+                              </title>
+                              <circle
+                                cx="50%"
+                                cy="50%"
+                              />
+                            </svg>
                           </div>
                         </div>
                       </button>
                     </div>
                   </div>
                   <div
-                    class="emotion-74"
+                    class="emotion-67"
                   >
                     <div
-                      class="emotion-73"
+                      class="emotion-66"
                     >
                       <button
-                        class="emotion-72"
+                        class="emotion-65"
                         data-testid="audio-player-backward"
                         type="button"
                       >
                         <div
-                          class="emotion-65"
+                          class="emotion-58"
                         >
                           <div
-                            class="emotion-64"
+                            class="emotion-57"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
@@ -7989,21 +7649,21 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-68"
+                    class="emotion-61"
                   >
                     <div
-                      class="emotion-73"
+                      class="emotion-66"
                     >
                       <button
-                        class="emotion-72"
+                        class="emotion-65"
                         data-testid="audio-player-forward"
                         type="button"
                       >
                         <div
-                          class="emotion-65"
+                          class="emotion-58"
                         >
                           <div
-                            class="emotion-64"
+                            class="emotion-57"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
@@ -8033,22 +7693,22 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-86"
+                    class="emotion-79"
                   >
                     <div
-                      class="emotion-73"
+                      class="emotion-66"
                     >
                       <button
-                        class="emotion-84"
+                        class="emotion-77"
                         data-testid="audio-player-skip-previous"
                         disabled=""
                         type="button"
                       >
                         <div
-                          class="emotion-65"
+                          class="emotion-58"
                         >
                           <div
-                            class="emotion-64"
+                            class="emotion-57"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
@@ -8075,47 +7735,47 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-88"
+                    class="emotion-81"
                   >
                     <div
-                      class="emotion-87"
+                      class="emotion-80"
                     />
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="emotion-109"
+              class="emotion-102"
             >
               <div
-                class="emotion-108"
+                class="emotion-101"
               >
                 <div
-                  class="emotion-106"
+                  class="emotion-99"
                   data-testid="volume-control"
                 >
                   <div
-                    class="emotion-97"
+                    class="emotion-90"
                     data-testid="min-label"
                   >
                     <div
-                      class="emotion-96"
+                      class="emotion-89"
                     >
                       <button
-                        class="emotion-95"
+                        class="emotion-88"
                         data-testid="mute-button"
                         tabindex="-1"
                         type="button"
                       >
                         <div
-                          class="emotion-65"
+                          class="emotion-58"
                         >
                           <div
-                            class="emotion-64"
+                            class="emotion-57"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-92"
+                              class="emotion-85"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -8140,7 +7800,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                     aria-orientation="horizontal"
                     aria-valuemax="1"
                     aria-valuemin="0"
-                    class="emotion-99"
+                    class="emotion-92"
                     data-testid="volume-control-track"
                     values="0.7"
                   >
@@ -8151,7 +7811,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                       aria-valuemin="0"
                       aria-valuenow="0.7"
                       aria-valuetext="volume level 7 of 10"
-                      class="emotion-98"
+                      class="emotion-91"
                       data-testid="volume-control-thumb"
                       draggable="false"
                       role="slider"
@@ -8161,27 +7821,27 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                     />
                   </div>
                   <div
-                    class="emotion-105"
+                    class="emotion-98"
                     data-testid="max-label"
                   >
                     <div
-                      class="emotion-96"
+                      class="emotion-89"
                     >
                       <button
-                        class="emotion-95"
+                        class="emotion-88"
                         data-testid="volumeup-button"
                         tabindex="-1"
                         type="button"
                       >
                         <div
-                          class="emotion-65"
+                          class="emotion-58"
                         >
                           <div
-                            class="emotion-64"
+                            class="emotion-57"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-92"
+                              class="emotion-85"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -8207,7 +7867,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                   </div>
                 </div>
                 <div
-                  class="emotion-107"
+                  class="emotion-100"
                   id="mock-bui-1"
                 >
                   Use the arrow keys to adjust volume
@@ -8215,27 +7875,27 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
               </div>
             </div>
             <div
-              class="emotion-112"
+              class="emotion-105"
             >
               <div
-                class="emotion-108"
+                class="emotion-101"
               >
                 <div
-                  class="emotion-110"
+                  class="emotion-103"
                 />
               </div>
             </div>
           </div>
         </div>
         <div
-          class="emotion-122"
+          class="emotion-115"
         >
           <div
-            class="emotion-120"
+            class="emotion-113"
             data-testid="audio-slider"
           >
             <div
-              class="emotion-116"
+              class="emotion-109"
               data-testid="audio-slider-track"
               values="0"
             >
@@ -8246,7 +7906,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                 aria-valuemin="0"
                 aria-valuenow="0"
                 aria-valuetext="Playback time: 0 seconds of 0 seconds"
-                class="emotion-115"
+                class="emotion-108"
                 data-testid="audio-slider-thumb"
                 draggable="false"
                 role="slider"
@@ -8256,13 +7916,13 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
               />
             </div>
             <div
-              class="emotion-119"
+              class="emotion-112"
             >
               <div
-                class="emotion-118"
+                class="emotion-111"
               >
                 <div
-                  class="emotion-117"
+                  class="emotion-110"
                   data-testid="min-label"
                 >
                   00:00
@@ -8271,7 +7931,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
             </div>
           </div>
           <div
-            class="emotion-107"
+            class="emotion-100"
             id="mock-bui-1"
           >
             Use the arrow keys to fast forward or rewind

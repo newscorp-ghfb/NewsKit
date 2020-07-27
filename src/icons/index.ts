@@ -2,6 +2,7 @@ import * as React from 'react';
 import {SvgProps} from './types';
 import {Theme} from '../themes';
 
+export * from './indeterminate-progress-indicator';
 export * from './bookmark';
 export * from './circle';
 export * from './comment';

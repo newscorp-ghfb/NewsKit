@@ -40,7 +40,7 @@ Cypress.Commands.add('acceptCookieBanner', () => {
         const innerBody = iframe.contents().find('body');
         cy.wrap(innerBody)
           .find('.message-component.message-button')
-          .contains('Fine By Me!')
+          .contains('Yes, I agree')
           .click({force: true});
       });
     }

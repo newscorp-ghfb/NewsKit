@@ -77,8 +77,8 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -443,8 +443,8 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -809,8 +809,8 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1138,8 +1138,8 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1540,8 +1540,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1906,8 +1906,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -2272,8 +2272,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -2638,8 +2638,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -3004,8 +3004,8 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;

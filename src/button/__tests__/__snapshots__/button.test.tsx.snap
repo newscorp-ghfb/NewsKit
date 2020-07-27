@@ -2,7 +2,7 @@
 
 exports[`Button Loading Button renders Large Button 1`] = `
 <DocumentFragment>
-  .emotion-11 {
+  .emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -12,7 +12,7 @@ exports[`Button Loading Button renders Large Button 1`] = `
   flex-direction: column;
 }
 
-.emotion-9 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -33,7 +33,7 @@ exports[`Button Loading Button renders Large Button 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-8 {
+.emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -42,24 +42,7 @@ exports[`Button Loading Button renders Large Button 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-6 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
-  animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
-  -webkit-transform-origin: center;
-  -ms-transform-origin: center;
-  transform-origin: center;
-}
-
-.emotion-10 {
+.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -96,141 +79,73 @@ exports[`Button Loading Button renders Large Button 1`] = `
   cursor: progress;
 }
 
-.emotion-10 svg {
+.emotion-3 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-10 svg {
-  fill: #ffffff;
-  color: #ffffff;
-}
-
-.emotion-7 {
-  height: 32px;
-  width: 32px;
-  position: relative;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  overflow: hidden;
-  position: absolute;
-}
-
-.emotion-1 {
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  overflow: hidden;
-  will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: left-wobble 1.4s linear infinite;
-  animation: left-wobble 1.4s linear infinite;
+.emotion-3 svg {
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
 .emotion-0 {
-  box-sizing: border-box;
-  height: 32px;
+  fill: #535353;
+  color: #535353;
   width: 32px;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 20rem;
-  border-color: #0a68c1;
-  border-radius: 50%;
+  height: 32px;
+  display: inline-block;
 }
 
-.emotion-5 {
-  box-sizing: border-box;
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  overflow: hidden;
-  position: absolute;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
-.emotion-4 {
-  width: calc( 32px / 2 );
-  height: 32px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  overflow: hidden;
+.emotion-0 circle {
+  r: calc(50% - 2px);
+  fill: transparent;
+  stroke: #0a68c1;
+  stroke-width: 2px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 360;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  will-change: stroke-dasharray;
+  will-change: stroke-dashoffset;
   will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: left-wobble 1.4s linear infinite;
-  animation: left-wobble 1.4s linear infinite;
-  -webkit-animation: right-wobble 1.4s linear infinite;
-  animation: right-wobble 1.4s linear infinite;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
 }
 
 <div
-    class="emotion-11"
+    class="emotion-4"
   >
     <button
-      class="emotion-10"
+      class="emotion-3"
       data-testid="button"
       type="button"
     >
       <div
-        class="emotion-9"
+        class="emotion-2"
       >
         <div
-          class="emotion-8"
+          class="emotion-1"
         >
-          <div
-            aria-label="loading"
-            class="emotion-7"
+          <svg
+            aria-labelledby="mock-bui-1"
+            class="emotion-0"
+            viewBox="0 0 64 64"
           >
-            <div
-              class="emotion-6"
+            <title
+              id="mock-bui-1"
             >
-              <div
-                class="emotion-2"
-              >
-                <div
-                  class="emotion-1"
-                >
-                  <div
-                    class="emotion-0"
-                  />
-                </div>
-              </div>
-              <div
-                class="emotion-5"
-              >
-                <div
-                  class="emotion-4"
-                >
-                  <div
-                    class="emotion-0"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+              Indeterminate progress indicator
+            </title>
+            <circle
+              cx="50%"
+              cy="50%"
+            />
+          </svg>
         </div>
       </div>
     </button>
@@ -240,7 +155,7 @@ exports[`Button Loading Button renders Large Button 1`] = `
 
 exports[`Button Loading Button renders Small Button 1`] = `
 <DocumentFragment>
-  .emotion-11 {
+  .emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -250,7 +165,7 @@ exports[`Button Loading Button renders Small Button 1`] = `
   flex-direction: column;
 }
 
-.emotion-9 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -271,7 +186,7 @@ exports[`Button Loading Button renders Small Button 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-8 {
+.emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -280,7 +195,7 @@ exports[`Button Loading Button renders Small Button 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-10 {
+.emotion-3 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -317,158 +232,73 @@ exports[`Button Loading Button renders Small Button 1`] = `
   cursor: progress;
 }
 
-.emotion-10 svg {
+.emotion-3 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-10 svg {
-  fill: #ffffff;
-  color: #ffffff;
-}
-
-.emotion-7 {
-  height: 16px;
-  width: 16px;
-  position: relative;
-}
-
-.emotion-6 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
-  animation: fills-outer-rotate 1.4s cubic-bezier(0.25,0.78,0.48,0.89) infinite;
-  -webkit-transform-origin: center;
-  -ms-transform-origin: center;
-  transform-origin: center;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  width: calc( 16px / 2 );
-  height: 16px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  overflow: hidden;
-  position: absolute;
-}
-
-.emotion-1 {
-  width: calc( 16px / 2 );
-  height: 16px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  overflow: hidden;
-  will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: left-wobble 1.4s linear infinite;
-  animation: left-wobble 1.4s linear infinite;
+.emotion-3 svg {
+  fill: #0a68c1;
+  color: #0a68c1;
 }
 
 .emotion-0 {
-  box-sizing: border-box;
-  height: 16px;
+  fill: #535353;
+  color: #535353;
   width: 16px;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 20rem;
-  border-color: #0a68c1;
-  border-radius: 50%;
+  height: 16px;
+  display: inline-block;
 }
 
-.emotion-5 {
-  box-sizing: border-box;
-  width: calc( 16px / 2 );
-  height: 16px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  overflow: hidden;
-  position: absolute;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
-.emotion-4 {
-  width: calc( 16px / 2 );
-  height: 16px;
-  -webkit-transform-origin: 100% center;
-  -ms-transform-origin: 100% center;
-  transform-origin: 100% center;
-  overflow: hidden;
+.emotion-0 circle {
+  r: calc(50% - 2px);
+  fill: transparent;
+  stroke: #0a68c1;
+  stroke-width: 2px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 360;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  will-change: stroke-dasharray;
+  will-change: stroke-dashoffset;
   will-change: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: left-wobble 1.4s linear infinite;
-  animation: left-wobble 1.4s linear infinite;
-  -webkit-animation: right-wobble 1.4s linear infinite;
-  animation: right-wobble 1.4s linear infinite;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
 }
 
 <div
-    class="emotion-11"
+    class="emotion-4"
   >
     <button
-      class="emotion-10"
+      class="emotion-3"
       data-testid="button"
       type="button"
     >
       <div
-        class="emotion-9"
+        class="emotion-2"
       >
         <div
-          class="emotion-8"
+          class="emotion-1"
         >
-          <div
-            aria-label="loading"
-            class="emotion-7"
+          <svg
+            aria-labelledby="mock-bui-1"
+            class="emotion-0"
+            viewBox="0 0 64 64"
           >
-            <div
-              class="emotion-6"
+            <title
+              id="mock-bui-1"
             >
-              <div
-                class="emotion-2"
-              >
-                <div
-                  class="emotion-1"
-                >
-                  <div
-                    class="emotion-0"
-                  />
-                </div>
-              </div>
-              <div
-                class="emotion-5"
-              >
-                <div
-                  class="emotion-4"
-                >
-                  <div
-                    class="emotion-0"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+              Indeterminate progress indicator
+            </title>
+            <circle
+              cx="50%"
+              cy="50%"
+            />
+          </svg>
         </div>
       </div>
     </button>

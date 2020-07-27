@@ -126,8 +126,8 @@ exports[`getStylePresetFromTheme iconButtonMinimalPrimary with current state 1`]
 <DocumentFragment>
   .emotion-0 {
   background-color: #00ff00;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
 }
 
 .emotion-0 svg {
@@ -145,8 +145,8 @@ exports[`getStylePresetFromTheme iconButtonMinimalPrimary with disabled and load
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
-  color: #c0c0c0;
   border-radius: 50%;
+  color: #c0c0c0;
 }
 
 .emotion-0 svg {
@@ -164,8 +164,8 @@ exports[`getStylePresetFromTheme iconButtonMinimalPrimary with disabled state 1`
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
-  color: #c0c0c0;
   border-radius: 50%;
+  color: #c0c0c0;
 }
 
 .emotion-0 svg {
@@ -183,8 +183,8 @@ exports[`getStylePresetFromTheme iconButtonMinimalPrimary with loading and curre
 <DocumentFragment>
   .emotion-0 {
   background-color: #ffff00;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
 }
 
 .emotion-0 svg {
@@ -202,8 +202,8 @@ exports[`getStylePresetFromTheme iconButtonMinimalPrimary with loading state 1`]
 <DocumentFragment>
   .emotion-0 {
   background-color: #ffff00;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
 }
 
 .emotion-0 svg {
@@ -220,8 +220,8 @@ exports[`getStylePresetFromTheme iconButtonMinimalPrimary with loading state 1`]
 exports[`getStylePresetFromTheme iconButtonMinimalPrimary without background-color styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
 }
 
 .emotion-0 svg {
@@ -248,8 +248,8 @@ exports[`getStylePresetFromTheme iconButtonMinimalPrimary without disabled state
 <DocumentFragment>
   .emotion-0 {
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
 }
 
 .emotion-0 svg {
@@ -275,8 +275,8 @@ exports[`getStylePresetFromTheme with default iconButtonMinimalPrimary style pre
 <DocumentFragment>
   .emotion-0 {
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
 }
 
 .emotion-0 svg {
