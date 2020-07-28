@@ -57,6 +57,7 @@ export const Link: React.FC<LinkProps> = props => {
           trigger: EventTrigger.Click,
           context: {
             href: props.href,
+            ...props.eventContext,
           },
         });
         if (props.onClick) {

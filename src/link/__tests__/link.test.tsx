@@ -45,9 +45,15 @@ describe('Link', () => {
 
   test('fires click event onClick', async () => {
     const mockFireEvent = jest.fn();
+    const eventContext = {
+      event: 'other event data',
+    };
     const link = await renderWithTheme((() => (
       <InstrumentationProvider fireEvent={mockFireEvent}>
-        <Link href="the-href.com">test link text</Link>;
+        <Link href="the-href.com" eventContext={eventContext}>
+          test link text
+        </Link>
+        ;
       </InstrumentationProvider>
     )) as React.FC).findByText('test link text');
 
@@ -58,6 +64,7 @@ describe('Link', () => {
       trigger: EventTrigger.Click,
       context: {
         href: 'the-href.com',
+        event: 'other event data',
       },
     });
   });

@@ -25,6 +25,11 @@ export default {
           <Link href="/">Inline Link without overrides</Link>
           <br />
           <br />
+          <Link href="/" eventContext={{event: 'other event data'}}>
+            Inline Link with extra event data
+          </Link>
+          <br />
+          <br />
           <Link
             href="/"
             overrides={{

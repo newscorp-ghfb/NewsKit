@@ -42,6 +42,9 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
     Passed to the href attribute of the rendered anchor element. The provided
     URL or fragment identifier will be loaded when the link is clicked.
   </Prop>
+  <Prop name="eventContext" type="object">
+    This props allows users to add extra event data to links' click events.
+  </Prop>
   <Prop name="noUnderline" type="boolean">
     If provided, determines if the link will be underlined.
   </Prop>
@@ -96,14 +99,31 @@ Both the Link and LinkStandalone default stylePresets can be changed via the the
   component={[Link, LinkStandalone]}
   knobs={[
     {
-      name: 'Content',
+      name: 'content',
       propName: 'children',
       value: 'Some Link',
     },
     {
-      name: 'Link',
+      name: 'href',
       propName: 'href',
       value: 'http://example.com',
+    },
+    {
+      name: 'eventContext',
+      propName: 'eventContext',
+      options: [
+          {
+            label: 'default',
+            value: undefined,
+            isDefault: true
+          },
+          {
+            label: 'other event data',
+            value: {
+              someEvent: 'other event data'
+            }
+          },
+        ]
     },
     {
       name: 'external',
