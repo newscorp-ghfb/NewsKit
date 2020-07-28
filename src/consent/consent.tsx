@@ -1,6 +1,6 @@
 import React from 'react';
 import {RenderScripts} from '../utils/render-scripts';
-import {ConsentProps} from './consent-interfaces';
+import {ConsentProps} from './types';
 import {
   getV1Scripts,
   getV2Scripts,

@@ -19,6 +19,7 @@ export interface SourcePointConfigTCFV2 {
   waitForConsent?: boolean;
   wrapperAPIOrigin?: string;
   propertyHref?: string;
+  baseEndpoint?: string;
 }
 
 export interface BaseConsentProps {
