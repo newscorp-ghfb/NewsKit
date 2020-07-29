@@ -1,3 +1,3 @@
 # cdn
 
-This package sets up account wide cdn (Akamai) config.
+This package sets up account wide CDN (Akamai) config.

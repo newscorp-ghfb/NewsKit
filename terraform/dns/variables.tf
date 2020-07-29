@@ -16,5 +16,5 @@ variable "domain_mapping" {
 }
 
 variable "cluster_domain" {
-  description = "Top domain for EKS cluster"
+  description = "Top domain for EKS cluster."
 }

@@ -204,9 +204,18 @@ commands:
         type: string
     steps:
       - run:
-          name: Skip if there are not changes to folder
+          name: Skip if there are no changes
           command: |
-            export CHANGES=$(git diff << pipeline.git.base_revision >> << pipeline.git.revision >> << parameters.folder >> 2>&1)
+            if git rev-parse --abbrev-ref HEAD | egrep -q '^release.*'; then
+              tags=$(git tag --sort=-version:refname | head -n 2)
+              export CHANGES=$(git diff --name-only ${tags[1]} ${tags[0]} << parameters.folder >> 2>&1)
+            else
+              if [ -n "<< pipeline.git.base_revision >>" ]; then
+                export CHANGES=$(git diff --name-only << pipeline.git.base_revision >> << pipeline.git.revision >> << parameters.folder >> 2>&1)
+              else
+               export CHANGES=$(git diff --name-only HEAD~1 << pipeline.git.revision >> << parameters.folder >> 2>&1)
+              fi
+            fi
             if [ -n "$CHANGES" ]; then
               echo "Terraform << parameters.folder >> changed"
             else
@@ -339,7 +348,9 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
-      - run: sudo pip install awscli
+      - run:
+          name: Install aws cli
+          command: sudo pip install awscli
       - aws_assume_role:
           job_type: << parameters.job_type >>
 
@@ -652,6 +663,7 @@ jobs:
           name: Install awscli
           command: sudo pip install awscli
       - run:
+          name: Assume role and build docker images
           command: |
             if [ << parameters.docker_version >> = release ]; then
               export DOCKER_TAG=$(node -p "require('./package.json').version")
@@ -695,20 +707,22 @@ jobs:
         # We have to add the ssh key so that Circle has permissions to checkout the private repo
       - add_ssh_keys:
           fingerprints: "7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80"
-      - run: |
-          apk add --update npm
-          if [ << parameters.environment >> = dev ]; then
-            export DOCKER_TAG=${CIRCLE_SHA1}
-          else
-            export DOCKER_TAG=$(node -p "require('./package.json').version")
-          fi
-          config_values=eks/values/product-platforms-values-<< parameters.environment >>.yaml
-          out_dir=product-platforms-<< parameters.environment >>
-          flux_repo_target=<< parameters.environment >>/eks
-          git config --global user.email "ncu-product-platforms@news.co.uk"
-          git config --global user.name "Product Platforms Service"
-          flux-generate "${CIRCLE_SHA1}" $config_values << parameters.substitution_dir >> $out_dir
-          flux-commit -u << parameters.flux_repo_url >> -n << parameters.flux_repo_name >> -d $out_dir -t $flux_repo_target -m "${CIRCLE_SHA1}_$out_dir"
+      - run:
+          name: Push config to flux repo
+          command: |
+            apk add --update npm
+            if [ << parameters.environment >> = dev ]; then
+              export DOCKER_TAG=${CIRCLE_SHA1}
+            else
+              export DOCKER_TAG=$(node -p "require('./package.json').version")
+            fi
+            config_values=eks/values/product-platforms-values-<< parameters.environment >>.yaml
+            out_dir=product-platforms-<< parameters.environment >>
+            flux_repo_target=<< parameters.environment >>/eks
+            git config --global user.email "ncu-product-platforms@news.co.uk"
+            git config --global user.name "Product Platforms Service"
+            flux-generate "${CIRCLE_SHA1}" $config_values << parameters.substitution_dir >> $out_dir
+            flux-commit -u << parameters.flux_repo_url >> -n << parameters.flux_repo_name >> -d $out_dir -t $flux_repo_target -m "${CIRCLE_SHA1}_$out_dir"
       - slack/status:
           <<: *slack_status
 
@@ -743,26 +757,28 @@ jobs:
       - setup_remote_docker
       - add_ssh_keys:
           fingerprints: "7b:19:47:48:3c:27:a2:d2:fa:59:87:d5:7a:ce:ce:80"
-      - run: |
-          apk --no-cache add openssh git bash
-          export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
-          git config --global user.email "ncu-product-platforms@news.co.uk"
-          git config --global user.name "Product Platforms Service"
-          git clone git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git flux
-          export EKS_IAM_ROLE_DEV=<< parameters.aws_assume_role_arn >>
-          export EKS_AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
-          export EKS_AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
-          export AWS_DEFAULT_REGION=<< parameters.aws_region >>
-          export CLUSTER_NAME=ceng-eks-<< parameters.environment >>
-          export VERSION=$(jq -r .version package.json)
-          echo "export VERSION=${VERSION}" >> $BASH_ENV
+      - run:
+          name: Deploy to EKS
+          command: |
+            apk --no-cache add openssh git bash
+            export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
+            git config --global user.email "ncu-product-platforms@news.co.uk"
+            git config --global user.name "Product Platforms Service"
+            git clone git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git flux
+            export EKS_IAM_ROLE_DEV=<< parameters.aws_assume_role_arn >>
+            export EKS_AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
+            export EKS_AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
+            export AWS_DEFAULT_REGION=<< parameters.aws_region >>
+            export CLUSTER_NAME=ceng-eks-<< parameters.environment >>
+            export VERSION=$(jq -r .version package.json)
+            echo "export VERSION=${VERSION}" >> $BASH_ENV
 
-          nukubectl | grep "export AWS_" > auth.env
-          export $(egrep -v '^#' auth.env | xargs)
-          rm auth.env
+            nukubectl | grep "export AWS_" > auth.env
+            export $(egrep -v '^#' auth.env | xargs)
+            rm auth.env
 
-          cd flux/<< parameters.environment >>/eks
-          kubectl apply -f .
+            cd flux/<< parameters.environment >>/eks
+            kubectl apply -f .
       - slack/status:
           <<: *slack_status
       - when:
