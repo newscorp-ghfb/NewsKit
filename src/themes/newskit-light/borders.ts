@@ -1,4 +1,5 @@
 const borderWidths = {
+  borderWidth000: '0px',
   borderWidth010: '1px',
   borderWidth020: '2px',
   borderWidth030: '4px',

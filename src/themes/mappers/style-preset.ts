@@ -1041,6 +1041,26 @@ export const createStylePresets = ({
   };
 
   //
+  // TitleBar
+  //
+  presets.titleBar = {
+    base: {
+      backgroundColor: colorPrimitives.transparent,
+      borderStyle: 'solid',
+      borderColor: colorPrimitives.interface040,
+      borderWidth: `${borderPrimitives.borderWidth000} ${borderPrimitives.borderWidth000} ${borderPrimitives.borderWidth010} ${borderPrimitives.borderWidth000}`,
+    },
+  };
+
+  presets.titleBarButton = {
+    ...presets.buttonSolidPrimary,
+  };
+
+  presets.titleBarLink = {
+    ...presets.linkStandalone,
+  };
+
+  //
   // Lists
   //
 

@@ -47,7 +47,6 @@ module.exports = withCSS(
             path: path.join(__dirname, '.env'),
             systemvars: true,
           }),
-
           new CopyPlugin([
             {
               from: resolve(__dirname, '../fonts'),

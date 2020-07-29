@@ -141,6 +141,20 @@ export const defaultPresets = {
       space: 'sizing010',
     },
   },
+  titleBar: {
+    paddingPreset: {
+      xs: 'spaceInset030Squish',
+      md: 'spaceInset040Squish',
+    },
+    stylePreset: 'titleBar',
+    heading: {
+      typePreset: {
+        xs: 'heading040',
+        md: 'heading050',
+        lg: 'heading070',
+      },
+    },
+  },
   unorderedList: {
     spaceStack: 'space040',
     content: {

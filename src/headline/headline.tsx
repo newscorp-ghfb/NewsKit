@@ -5,7 +5,7 @@ import {TypePresetKeys} from '../themes/mappers/type-presets';
 import {SpacingPresetKeys} from '../themes/mappers/spacing';
 import {StylePresetKeys} from '../themes/mappers/style-preset';
 
-export interface Headline {
+export interface HeadlineProps {
   kickerText?: string;
   headingAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
   kickerAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
@@ -22,7 +22,7 @@ export interface Headline {
   };
 }
 
-interface HeadingProps {
+interface RenderAsProps {
   as?: React.ElementType;
 }
 
@@ -30,7 +30,7 @@ const HeadlineContainer = styled.section`
   display: block;
 `;
 
-const Heading = styled.h1<HeadingProps & Headline>`
+const Heading = styled.h1<RenderAsProps & HeadlineProps>`
   display: inline-block;
   margin: 0;
   ${getTypePreset('headline.heading', 'heading', {
@@ -39,8 +39,9 @@ const Heading = styled.h1<HeadingProps & Headline>`
   ${getStylePreset('headline.heading', 'heading')}
 `;
 
-const Kicker = styled(Heading)<Headline>`
+const Kicker = styled.span<RenderAsProps & HeadlineProps>`
   display: inline-block;
+  margin: 0;
   ${getTypePreset('headline.kicker', 'kicker', {
     withCrop: true,
   })}
@@ -49,7 +50,7 @@ const Kicker = styled(Heading)<Headline>`
   text-transform: uppercase;
 `;
 
-export const Headline: React.FC<Headline> = ({
+export const Headline: React.FC<HeadlineProps> = ({
   children,
   kickerText,
   headingAs = 'h1',
@@ -66,5 +67,7 @@ export const Headline: React.FC<Headline> = ({
       </Heading>
     </HeadlineContainer>
   ) : (
-    <Heading as={headingAs}>{children}</Heading>
+    <Heading as={headingAs} overrides={overrides}>
+      {children}
+    </Heading>
   );

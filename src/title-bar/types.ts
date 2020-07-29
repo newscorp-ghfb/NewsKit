@@ -1,31 +1,21 @@
-export enum TitleBarBorder {
-  None = 'None',
-  Top = 'Top',
-  Bottom = 'Bottom',
-  TopAndBottom = 'TopAndBottom',
-}
+import {MQ} from '../utils/style';
+import {StylePresetKeys} from '../themes/mappers/style-preset';
+import {PaddingPresetKeys} from '../themes/mappers/spacing';
+import {HeadlineProps} from '../headline';
 
-export enum TitleAlignment {
-  Left = 'left',
-  Center = 'center',
-}
-
-export type TitleContainerProps = {
-  titleAlignment: TitleAlignment;
+export type TitleBarOverrides = {
+  paddingPreset?: MQ<PaddingPresetKeys>;
+  stylePreset?: MQ<StylePresetKeys>;
+  heading?: NonNullable<HeadlineProps['overrides']>['heading'];
 };
 
 export type ContainerProps = {
-  containerBorder?: TitleBarBorder;
-  paddingLeft?: boolean;
-  paddingRight?: boolean;
+  overrides?: TitleBarOverrides;
 };
 
 export type TitleBarProps = {
   children: string;
   actionItem?: React.ComponentType;
-  headingComponent?: React.ComponentType;
-  titleAlignment?: TitleAlignment;
-  containerBorder?: TitleBarBorder;
-  paddingLeft?: boolean;
-  paddingRight?: boolean;
+  headingAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
+  overrides?: TitleBarOverrides;
 };
