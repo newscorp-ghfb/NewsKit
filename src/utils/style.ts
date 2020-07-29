@@ -80,7 +80,7 @@ export const getValueFromTheme = <ThemeToken extends string>(
   );
 };
 
-export const getResponsiveValueFromTheme = <ThemeToken extends string>(
+export const getPresetValueFromTheme = <ThemeToken extends string>(
   themeKey: keyof Theme,
 ) => <Props extends ThemeProp>(
   defaultToken?: MQ<ThemeToken>,
@@ -122,9 +122,6 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
   return (propKeys && section[propKeys]) || '';
 };
 
-// TODO: (https://nidigitalsolutions.jira.com/browse/PPDSC-1143) renaming this could be a breaking change to any consumers outside NewsKit using this. Remove this and fix imports when ready to make the change.
-export const getPresetValueFromTheme = getResponsiveValueFromTheme;
-
 export const getTypePresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<TypePresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
@@ -146,7 +143,7 @@ export const getTypePresetFromTheme = <Props extends ThemeProp>(
   };
 
   const {withCrop = false} = options || {};
-  const typePreset = getResponsiveValueFromTheme('typePresets')(
+  const typePreset = getPresetValueFromTheme('typePresets')(
     defaultToken,
     customProp,
   )(props) as Partial<TypePresets[TypePresetKeys]> | Array<[string, CSSObject]>;
@@ -211,7 +208,7 @@ export const getSpacingFromTheme = <Props extends ThemeProp>(
   customProp?: Exclude<keyof Props, 'theme'>,
   cssProp?: string,
 ) => (props: Props) => {
-  const value = getResponsiveValueFromTheme('sizing')(defaultToken, customProp)(
+  const value = getPresetValueFromTheme('sizing')(defaultToken, customProp)(
     props,
   ) as string | Array<[string, string]>;
   if (Array.isArray(value)) {
@@ -249,10 +246,9 @@ export const getPaddingPresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<PaddingPresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => (props: Props) => {
-  const padding = getResponsiveValueFromTheme('sizing')(
-    defaultToken,
-    customProp,
-  )(props) as string | Array<[string, string]>;
+  const padding = getPresetValueFromTheme('sizing')(defaultToken, customProp)(
+    props,
+  ) as string | Array<[string, string]>;
   if (Array.isArray(padding)) {
     return padding.reduce(
       (acc, [mq, preset], index) => {
@@ -279,10 +275,9 @@ export const getMarginPresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<SpacingPresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => (props: Props) => {
-  const margin = getResponsiveValueFromTheme('sizing')(
-    defaultToken,
-    customProp,
-  )(props) as string | Array<[string, string]>;
+  const margin = getPresetValueFromTheme('sizing')(defaultToken, customProp)(
+    props,
+  ) as string | Array<[string, string]>;
   if (Array.isArray(margin)) {
     return margin.reduce(
       (acc, [mq, preset], index) => {

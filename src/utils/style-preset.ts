@@ -1,7 +1,7 @@
 import {
   CSSObject,
   getDefaultedValue,
-  getResponsiveValueFromTheme,
+  getPresetValueFromTheme,
   MQ,
 } from './style';
 import {filterObject, rejectObject} from './filter-object';
@@ -102,7 +102,7 @@ export const getStylePresetFromTheme = <Props extends ThemeProp>(
   customProp?: Exclude<keyof Props, 'theme'>,
   options?: GetStylePresetFromThemeOptions,
 ) => (props: Props) => {
-  const stylePreset = getResponsiveValueFromTheme('stylePresets')(
+  const stylePreset = getPresetValueFromTheme('stylePresets')(
     defaultToken,
     customProp,
   )(props) as Partial<StylePresetStates> | Array<[string, StylePresetStates]>;
