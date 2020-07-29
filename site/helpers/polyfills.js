@@ -15,3 +15,6 @@ import 'core-js/fn/array/find';
 import 'core-js/fn/array/from';
 import 'core-js/fn/array/fill';
 import 'core-js/fn/array/find-index';
+
+// Math
+import 'core-js/fn/math/trunc';
