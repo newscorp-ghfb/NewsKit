@@ -16,7 +16,7 @@ FQDNStorybook:
   newskit-storybook.staging.ceng.newsuk.tech
 SSLCertARN:
   # this cert is for *.ceng.staging.newsuk.tech
-  arn:aws:acm:eu-west-1:033746730321:certificate/ba403625-cb5d-4bad-af6e-3dc1a452937
+  arn:aws:acm:eu-west-1:033746730321:certificate/ba403625-cb5d-4bad-af6e-3dc1a452937b
 resources:
   limits:
     cpu: "0.4"

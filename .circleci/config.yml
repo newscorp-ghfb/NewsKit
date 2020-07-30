@@ -207,8 +207,9 @@ commands:
           name: Skip if there are no changes
           command: |
             if git rev-parse --abbrev-ref HEAD | egrep -q '^release.*'; then
-              tags=$(git tag --sort=-version:refname | head -n 2)
-              export CHANGES=$(git diff --name-only ${tags[1]} ${tags[0]} << parameters.folder >> 2>&1)
+              currentTag=$(git tag --sort=-version:refname |  sed '1q;d')
+              previousTag=$(git tag --sort=-version:refname |  sed '2q;d')
+              export CHANGES=$(git diff --name-only $previousTag $currentTag << parameters.folder >> 2>&1)
             else
               if [ -n "<< pipeline.git.base_revision >>" ]; then
                 export CHANGES=$(git diff --name-only << pipeline.git.base_revision >> << pipeline.git.revision >> << parameters.folder >> 2>&1)
