@@ -61,7 +61,10 @@ export const CodeFromDefaultPresets: React.FC<CodeFromDefaultPresets> = ({
   if (componentName) {
     const presets = theme.defaultPresets[componentName];
     if (presets) {
-      const defaultPresetsExample = JSON.stringify(presets, null, 2);
+      const defaultPresetsExample = JSON.stringify(presets, null, 2).replace(
+        /"([^"]+)":/g,
+        '$1:',
+      );
       return <Code>{defaultPresetsExample}</Code>;
     }
     return <p>An error occurred loading this code example.</p>;

@@ -1,39 +1,23 @@
-headline: {
-  heading: {
-    stylePreset: 'headlineContent',
-    typePreset: {
-      xs: 'headline100',
-      md: 'headline200',
-    },
+// Default presets:
+button: {
+  medium: {
+    typePreset: 'buttonMedium',
+    stylePreset: 'buttonDefault',
+    paddingPreset: 'spaceInset030Squish',
+    minWidth: 'sizing100',
+    minHeight: 'sizing080',
+    iconSize: 'iconSize020',
+    space: 'sizing020',
   },
-  kicker: {
-    stylePreset: 'headlineKicker',
-    typePreset: {
-      xs: 'heading060',
-      sm: 'heading060',
-      md: 'heading070',
-      lg: 'heading080',
-    },
-    marginPreset: {
-      xs: 'spaceInline030',
-      sm: 'spaceInline030',
-      md: 'spaceInline040',
-      lg: 'spaceInline040',
-    },
-  },
-}
+},
 
-import { createTheme, newskitLightTheme } from "newskit";
-
-const theme = createTheme('newskit-light-demo', {
-  baseTheme: newskitLightTheme,
-  themeOverrider: () => ({
-    defaultPresets: {
-      headline: {
-        heading: {
-          stylePreset: 'buttonSolidPrimary',
-        },
-      },
-    },
-  })
-});
+// Overrides:
+<Button
+  size="medium"
+  overrides={{
+    typePreset: 'buttonMedium',
+    stylePreset: 'buttonOutlinedPrimary',
+  }}
+>
+  Content
+</Button>

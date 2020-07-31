@@ -1,9 +1,9 @@
-import Layout from '../../components/layout';
-import {CodeFromFile} from '../../components/code';
+import Layout from '../../../components/layout';
+import {CodeFromFile} from '../../../components/code';
 
 export default Layout;
 
-# Override default presets
+# Override with themeOverrider
 
 Each of the components will document the structure of its default preset on their individual document page.  
 Following the same structure, the default presets can be overridden when creating a new theme by using the `themeOverrider`. 
@@ -12,7 +12,7 @@ Following the same structure, the default presets can be overridden when creatin
 
 Let's assume we have the following structure for the `headline` default presets.
 
-<CodeFromFile path="examples/theming/override-default-presets.tsx" />
+<CodeFromFile path="examples/theming/override-default-presets-in-theme.tsx" />
 
 In the example above the `headline.heading.stylePreset` will be overridden with `buttonSolidPrimary`. Leaving the other presets untouched. Following this example the `typePrests` and the other fields can overridden in a similar way.
 

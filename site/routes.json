@@ -40,9 +40,20 @@
         "id": "/theming/code"
       },
       {
-        "title": "Override default presets",
-        "page": true,
-        "id": "/theming/override-default-presets"
+        "title": "Default Presets",
+        "id": "/theming/default-presets",
+        "subNav": [
+          {
+            "title": "Override in Theme",
+            "page": true,
+            "id": "/theming/default-presets/override-in-theme"
+          },
+          {
+            "title": "Override Individual Components",
+            "page": true,
+            "id": "/theming/default-presets/override-individual-components"
+          }
+        ]  
       },
       {
         "title": "StylePreset",
