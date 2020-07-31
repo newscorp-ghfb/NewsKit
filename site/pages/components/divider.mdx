@@ -2,7 +2,7 @@ import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Prop} from '../../components/prop';
-import {CodeFromDefaultPresets} from '../../components/code';
+import {CodeFromFile, CodeFromDefaultPresets} from '../../components/code';
 import {ExampleBlock, BlockWithBorder, StyledBlockForDivider, InlineBlock, InlineDividerContainer} from '../../components/examples/divider/styled';
 
 import {Divider, BorderKeys, ColorKeys, SizingKeys, Block, Stack, StackChild, AlignSelfValues, Circle} from 'newskit';
@@ -92,7 +92,7 @@ Here are a few examples to demonstrate the usages of a container elements to set
 
 ### Using Block component
 
-<CodeFromFile language="jsx" path="examples/divider/divider-horizontal-in-block.tsx" />
+<CodeFromFile path="examples/divider/divider-horizontal-in-block.tsx" />
 
 In this example, we are using the Block component
 to add `margin-bottom` to each element by using `spaceStack: 'space020'`.
@@ -117,7 +117,7 @@ It will provide us with the following structure:
   </Block>
 </StyledBlockForDivider>
 
-<CodeFromFile language="jsx" path="examples/divider/divider-vertical-in-block.tsx" />
+<CodeFromFile path="examples/divider/divider-vertical-in-block.tsx" />
 
 In this example we have a horizontal layout of elements separated with vertical dividers.
 Each element is wrapped inside a Block component that has a spacing preset
@@ -148,7 +148,7 @@ The example will look like this:
 
 ### Using Stack component
 
-<CodeFromFile language="jsx" path="examples/divider/divider-vertical-in-stack.tsx" />
+<CodeFromFile path="examples/divider/divider-vertical-in-stack.tsx" />
 
 In this example we are using a wrapping `Stack` component with spacing set to `sizing030`.
 When you need to use the `Divider` inside a `Stack`,

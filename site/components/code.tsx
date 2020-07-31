@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
-import {tomorrow, coy} from 'react-syntax-highlighter/dist/styles/prism';
+import jsx from 'react-syntax-highlighter/dist/cjs/languages/prism/jsx';
+import SyntaxHighlighter from 'react-syntax-highlighter/dist/cjs/prism-light';
+import {coy, tomorrow} from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import {useTheme} from 'newskit';
 import {LegacyBlock} from './legacy-block';
 import {ThemeMode} from '../context';
@@ -18,6 +19,7 @@ interface CodeFromFileProps {
 interface CodeFromDefaultPresets {
   componentName: string;
 }
+SyntaxHighlighter.registerLanguage('jsx', jsx);
 
 export const Code: React.FC<CodeProps> = ({language = 'jsx', children}) => (
   <LegacyBlock>
