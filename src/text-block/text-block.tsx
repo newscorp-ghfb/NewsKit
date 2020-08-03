@@ -16,11 +16,8 @@ export interface TextBlockProps {
 const StyledBlock = styled.p<TextBlockProps>`
   margin: 0;
   padding: 1px 0;
-  ${({overrides}) => overrides && overrides.stylePreset && getStylePreset('')}
-  ${({overrides}) =>
-    overrides &&
-    overrides.typePreset &&
-    getTypePreset(undefined, '', {withCrop: true})}
+  ${getStylePreset('textBlock')}
+  ${getTypePreset('textBlock', '', {withCrop: true})}
   ${({as}) => as && (isInlineElement(as) ? 'display: inline-block;' : '')}
 `;
 
