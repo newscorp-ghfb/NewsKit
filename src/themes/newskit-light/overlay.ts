@@ -1,8 +1,8 @@
 export const overlayPrimitives = {
   gradientDark010:
-    'linear-gradient(90deg, rgba(48, 49, 49, 0) 0%, rgba(48, 49, 49, 1) 100%)',
+    'linear-gradient(180deg, rgba(51,51,51,0.00) 0%, #0A0A0A 100%)',
   gradientLight010:
-    'linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%)',
+    'linear-gradient(180deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%)',
 
   overlayLight010: 'rgba(255,255,255,0.20)',
   overlayLight020: 'rgba(255,255,255,0.40)',

@@ -253,8 +253,8 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-1 svg,
@@ -263,8 +263,8 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 8px;
   height: 8px;
   display: inline-block;
@@ -483,8 +483,8 @@ exports[`UnorderedList renders with custom list item marker with different size 
 }
 
 .emotion-1 svg {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-1 svg,
@@ -493,8 +493,8 @@ exports[`UnorderedList renders with custom list item marker with different size 
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 16px;
   height: 16px;
   display: inline-block;

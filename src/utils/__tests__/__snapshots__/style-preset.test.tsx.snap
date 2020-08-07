@@ -146,12 +146,12 @@ exports[`getStylePresetFromTheme iconButtonMinimalPrimary with disabled and load
   .emotion-0 {
   background-color: #FF0000;
   border-radius: 50%;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div
@@ -165,12 +165,12 @@ exports[`getStylePresetFromTheme iconButtonMinimalPrimary with disabled state 1`
   .emotion-0 {
   background-color: #FF0000;
   border-radius: 50%;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-0 svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div
@@ -230,12 +230,12 @@ exports[`getStylePresetFromTheme iconButtonMinimalPrimary without background-col
 }
 
 .emotion-0:disabled {
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-0:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div
@@ -293,12 +293,12 @@ exports[`getStylePresetFromTheme with default iconButtonMinimalPrimary style pre
 }
 
 .emotion-0:disabled {
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-0:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div

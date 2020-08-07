@@ -125,7 +125,7 @@ exports[`Block with responsive style props renders a responsive styled div 1`] =
 
 @media screen and (min-width:0px) {
   .emotion-0 {
-    color: #535353;
+    color: #2e2e2e;
     background-color: #fafafa;
     font-family: "Noto Sans",sans-serif;
     font-weight: 400;
@@ -184,7 +184,7 @@ exports[`Block with responsive style props renders a responsive styled div 1`] =
 
 @media screen and (min-width:480px) {
   .emotion-0 {
-    color: #777777;
+    color: #535353;
     background-color: #f0f0f0;
     font-family: "Noto Sans",sans-serif;
     font-weight: 400;

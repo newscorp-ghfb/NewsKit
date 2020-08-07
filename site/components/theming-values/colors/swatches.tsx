@@ -45,7 +45,7 @@ export const SwatchRow: SwatchComponent = ({
 );
 
 export const SwatchCard: SwatchComponent = ({color}: SwatchRowProps) => (
-  <Cell xs={3}>
+  <Cell xs={6} lg={3}>
     <StyledSwatchCard>
       <StyledSwatchCardTop {...color}>
         <Stack flow="horizontal-top" stackDistribution="flex-end">

@@ -107,12 +107,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-3:disabled {
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -146,8 +146,8 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -213,8 +213,8 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-6:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-13 {
@@ -473,12 +473,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-3:disabled {
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -512,8 +512,8 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -579,8 +579,8 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-6:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-13 {
@@ -839,12 +839,12 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-3:disabled {
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -878,8 +878,8 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -945,8 +945,8 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-6:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-13 {
@@ -1168,12 +1168,12 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-3:disabled {
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -1207,8 +1207,8 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -1253,8 +1253,8 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-6:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-14 {
@@ -1570,12 +1570,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-3:disabled {
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -1609,8 +1609,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -1676,8 +1676,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-6:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-13 {
@@ -1936,12 +1936,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-3:disabled {
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -1975,8 +1975,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -2042,8 +2042,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-6:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-13 {
@@ -2302,12 +2302,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-3:disabled {
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -2341,8 +2341,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -2408,8 +2408,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-6:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-13 {
@@ -2668,12 +2668,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-3:disabled {
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -2707,8 +2707,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -2774,8 +2774,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-6:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-13 {
@@ -3034,12 +3034,12 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-3:disabled {
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -3073,8 +3073,8 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -3140,8 +3140,8 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-6:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-13 {

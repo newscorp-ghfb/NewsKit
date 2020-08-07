@@ -92,8 +92,8 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 32px;
   height: 32px;
   display: inline-block;
@@ -226,12 +226,12 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -265,8 +265,8 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   display: inline-block;
 }
 
@@ -338,8 +338,8 @@ exports[`IconButton renders Large Icon Button 1`] = `
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   display: inline-block;
 }
 
@@ -412,12 +412,12 @@ exports[`IconButton renders Large Icon Button 1`] = `
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div
@@ -488,8 +488,8 @@ exports[`IconButton renders Medium Icon Button 1`] = `
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   display: inline-block;
 }
 
@@ -562,12 +562,12 @@ exports[`IconButton renders Medium Icon Button 1`] = `
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div
@@ -676,12 +676,12 @@ exports[`IconButton renders Small Icon Button 1`] = `
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -715,8 +715,8 @@ exports[`IconButton renders Small Icon Button 1`] = `
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   display: inline-block;
 }
 
@@ -826,12 +826,12 @@ exports[`IconButton renders when there is an icon with a colour 1`] = `
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -865,8 +865,8 @@ exports[`IconButton renders when there is an icon with a colour 1`] = `
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   display: inline-block;
 }
 
@@ -950,8 +950,8 @@ exports[`IconButton renders with different style preset 1`] = `
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   display: inline-block;
 }
 
@@ -1017,12 +1017,12 @@ exports[`IconButton renders with different style preset 1`] = `
 
 .emotion-3:disabled {
   border-color: #e4e4e4;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-3:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div

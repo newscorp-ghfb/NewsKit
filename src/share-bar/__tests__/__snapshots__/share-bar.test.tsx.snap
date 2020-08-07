@@ -56,8 +56,8 @@ exports[`ShareBar renders horizontally with icons and label 1`] = `
 }
 
 .emotion-1 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -72,7 +72,7 @@ exports[`ShareBar renders horizontally with icons and label 1`] = `
   -moz-letter-spacing: -0.25px;
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
-  color: #535353;
+  color: #2e2e2e;
   margin-right: 16px;
 }
 
@@ -231,8 +231,8 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
 }
 
 .emotion-1 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -247,7 +247,7 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
   -moz-letter-spacing: -0.25px;
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
-  color: #535353;
+  color: #2e2e2e;
   margin-right: 16px;
 }
 
@@ -492,8 +492,8 @@ exports[`ShareBar renders horizontally with twitter and facebook icons 1`] = `
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -579,8 +579,8 @@ exports[`ShareBar renders horizontally with twitter and facebook icons 1`] = `
 exports[`ShareBar renders vertically with icons and label 1`] = `
 <DocumentFragment>
   .emotion-1 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -648,7 +648,7 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
   -moz-letter-spacing: -0.25px;
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
-  color: #535353;
+  color: #2e2e2e;
   margin-bottom: 16px;
 }
 
@@ -754,8 +754,8 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
 exports[`ShareBar renders vertically with twitter and facebook icons 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -947,8 +947,8 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 }
 
 .emotion-1 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -963,7 +963,7 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
   -moz-letter-spacing: -0.25px;
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
-  color: #535353;
+  color: #2e2e2e;
   margin-right: 16px;
 }
 
@@ -1118,12 +1118,12 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 
 .emotion-12:disabled {
   background-color: #e4e4e4;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-12:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-11 {
@@ -1358,8 +1358,8 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 }
 
 .emotion-1 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -1500,12 +1500,12 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 
 .emotion-12:disabled {
   background-color: #e4e4e4;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-12:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-11 {
@@ -1602,12 +1602,12 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 
 .emotion-0:disabled {
   background-color: #e4e4e4;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-0:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div
@@ -1794,8 +1794,8 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 }
 
 .emotion-1 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -1936,12 +1936,12 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 
 .emotion-12:disabled {
   background-color: #e4e4e4;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-12:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-11 {
@@ -2001,7 +2001,7 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
   -moz-letter-spacing: -0.25px;
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
-  color: #535353;
+  color: #2e2e2e;
   margin-right: 12px;
 }
 
@@ -2205,8 +2205,8 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 }
 
 .emotion-1 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -2347,12 +2347,12 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 
 .emotion-12:disabled {
   background-color: #e4e4e4;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-12:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-11 {
@@ -2412,7 +2412,7 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
   -moz-letter-spacing: -0.25px;
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
-  color: #535353;
+  color: #2e2e2e;
   margin-right: 12px;
 }
 
@@ -2629,8 +2629,8 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 }
 
 .emotion-1 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -2664,7 +2664,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
   -moz-letter-spacing: -0.25px;
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
-  color: #535353;
+  color: #2e2e2e;
   margin-bottom: 16px;
 }
 
@@ -2819,12 +2819,12 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 
 .emotion-12:disabled {
   background-color: #e4e4e4;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-12:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-11 {
@@ -3049,8 +3049,8 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
 }
 
 .emotion-1 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -3118,7 +3118,7 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
   -moz-letter-spacing: -0.25px;
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
-  color: #535353;
+  color: #2e2e2e;
   margin-bottom: 16px;
 }
 
@@ -3273,12 +3273,12 @@ exports[`ShareBar renders with overrides for label typePreset 1`] = `
 
 .emotion-12:disabled {
   background-color: #e4e4e4;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-12:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-11 {
@@ -3469,8 +3469,8 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 }
 
 .emotion-1 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -3664,12 +3664,12 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 
 .emotion-12:disabled {
   background-color: #e4e4e4;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-12:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-11 {
@@ -3729,7 +3729,7 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
   -moz-letter-spacing: -0.25px;
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
-  color: #535353;
+  color: #2e2e2e;
   margin-bottom: 12px;
 }
 

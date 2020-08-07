@@ -13,8 +13,8 @@ exports[`Bookmark renders the Bookmark icon from theme override 1`] = `
 exports[`Bookmark renders the Bookmark icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -40,8 +40,8 @@ exports[`Bookmark renders the Bookmark icon with specified style 1`] = `
 exports[`Bookmark renders the Bookmark icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -77,8 +77,8 @@ exports[`Circle renders the Circle icon from theme override 1`] = `
 exports[`Circle renders the Circle icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -106,8 +106,8 @@ exports[`Circle renders the Circle icon with specified style 1`] = `
 exports[`Circle renders the Circle icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -145,8 +145,8 @@ exports[`Comment renders the Comment icon from theme override 1`] = `
 exports[`Comment renders the Comment icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -172,8 +172,8 @@ exports[`Comment renders the Comment icon with specified style 1`] = `
 exports[`Comment renders the Comment icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -209,8 +209,8 @@ exports[`CopyLink renders the CopyLink icon from theme override 1`] = `
 exports[`CopyLink renders the CopyLink icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -240,8 +240,8 @@ exports[`CopyLink renders the CopyLink icon with specified style 1`] = `
 exports[`CopyLink renders the CopyLink icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -281,8 +281,8 @@ exports[`Email renders the Email icon from theme override 1`] = `
 exports[`Email renders the Email icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -308,8 +308,8 @@ exports[`Email renders the Email icon with specified style 1`] = `
 exports[`Email renders the Email icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -345,8 +345,8 @@ exports[`Facebook renders the Facebook icon from theme override 1`] = `
 exports[`Facebook renders the Facebook icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -385,8 +385,8 @@ exports[`Facebook renders the Facebook icon with specified style 1`] = `
 exports[`Facebook renders the Facebook icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -435,8 +435,8 @@ exports[`Forward10 renders the Forward10 icon from theme override 1`] = `
 exports[`Forward10 renders the Forward10 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -469,8 +469,8 @@ exports[`Forward10 renders the Forward10 icon with specified style 1`] = `
 exports[`Forward10 renders the Forward10 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -513,8 +513,8 @@ exports[`GitHub renders the GitHub icon from theme override 1`] = `
 exports[`GitHub renders the GitHub icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -540,8 +540,8 @@ exports[`GitHub renders the GitHub icon with specified style 1`] = `
 exports[`GitHub renders the GitHub icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -577,8 +577,8 @@ exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicat
 exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicator icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -587,7 +587,7 @@ exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicat
 .emotion-0 circle {
   r: calc(50% - 2px);
   fill: transparent;
-  stroke: #777777;
+  stroke: #535353;
   stroke-width: 2px;
   stroke-dasharray: 502;
   stroke-dashoffset: 360;
@@ -625,8 +625,8 @@ exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicat
 exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicator icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -635,7 +635,7 @@ exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicat
 .emotion-0 circle {
   r: calc(50% - 2px);
   fill: transparent;
-  stroke: #777777;
+  stroke: #535353;
   stroke-width: 2px;
   stroke-dasharray: 502;
   stroke-dashoffset: 360;
@@ -683,8 +683,8 @@ exports[`Launch renders the Launch icon from theme override 1`] = `
 exports[`Launch renders the Launch icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -714,8 +714,8 @@ exports[`Launch renders the Launch icon with specified style 1`] = `
 exports[`Launch renders the Launch icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -755,8 +755,8 @@ exports[`Menu renders the Menu icon from theme override 1`] = `
 exports[`Menu renders the Menu icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -800,8 +800,8 @@ exports[`Menu renders the Menu icon with specified style 1`] = `
 exports[`Menu renders the Menu icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -855,8 +855,8 @@ exports[`Pause renders the Pause icon from theme override 1`] = `
 exports[`Pause renders the Pause icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -882,8 +882,8 @@ exports[`Pause renders the Pause icon with specified style 1`] = `
 exports[`Pause renders the Pause icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -919,8 +919,8 @@ exports[`Placeholder renders the Placeholder icon from theme override 1`] = `
 exports[`Placeholder renders the Placeholder icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -946,8 +946,8 @@ exports[`Placeholder renders the Placeholder icon with specified style 1`] = `
 exports[`Placeholder renders the Placeholder icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -983,8 +983,8 @@ exports[`Play renders the Play icon from theme override 1`] = `
 exports[`Play renders the Play icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1010,8 +1010,8 @@ exports[`Play renders the Play icon with specified style 1`] = `
 exports[`Play renders the Play icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1047,8 +1047,8 @@ exports[`Popout renders the Popout icon from theme override 1`] = `
 exports[`Popout renders the Popout icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1078,8 +1078,8 @@ exports[`Popout renders the Popout icon with specified style 1`] = `
 exports[`Popout renders the Popout icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1119,8 +1119,8 @@ exports[`Replay10 renders the Replay10 icon from theme override 1`] = `
 exports[`Replay10 renders the Replay10 icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1146,8 +1146,8 @@ exports[`Replay10 renders the Replay10 icon with specified style 1`] = `
 exports[`Replay10 renders the Replay10 icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1183,8 +1183,8 @@ exports[`SaveActive renders the SaveActive icon from theme override 1`] = `
 exports[`SaveActive renders the SaveActive icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1211,8 +1211,8 @@ exports[`SaveActive renders the SaveActive icon with specified style 1`] = `
 exports[`SaveActive renders the SaveActive icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1249,8 +1249,8 @@ exports[`SaveInactive renders the SaveInactive icon from theme override 1`] = `
 exports[`SaveInactive renders the SaveInactive icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1277,8 +1277,8 @@ exports[`SaveInactive renders the SaveInactive icon with specified style 1`] = `
 exports[`SaveInactive renders the SaveInactive icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1315,8 +1315,8 @@ exports[`SkipNext renders the SkipNext icon from theme override 1`] = `
 exports[`SkipNext renders the SkipNext icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1346,8 +1346,8 @@ exports[`SkipNext renders the SkipNext icon with specified style 1`] = `
 exports[`SkipNext renders the SkipNext icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1387,8 +1387,8 @@ exports[`SkipPrevious renders the SkipPrevious icon from theme override 1`] = `
 exports[`SkipPrevious renders the SkipPrevious icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1418,8 +1418,8 @@ exports[`SkipPrevious renders the SkipPrevious icon with specified style 1`] = `
 exports[`SkipPrevious renders the SkipPrevious icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1459,8 +1459,8 @@ exports[`Square renders the Square icon from theme override 1`] = `
 exports[`Square renders the Square icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1490,8 +1490,8 @@ exports[`Square renders the Square icon with specified style 1`] = `
 exports[`Square renders the Square icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1531,8 +1531,8 @@ exports[`Twitter renders the Twitter icon from theme override 1`] = `
 exports[`Twitter renders the Twitter icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1574,8 +1574,8 @@ exports[`Twitter renders the Twitter icon with specified style 1`] = `
 exports[`Twitter renders the Twitter icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1627,8 +1627,8 @@ exports[`VolumeDown renders the VolumeDown icon from theme override 1`] = `
 exports[`VolumeDown renders the VolumeDown icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1658,8 +1658,8 @@ exports[`VolumeDown renders the VolumeDown icon with specified style 1`] = `
 exports[`VolumeDown renders the VolumeDown icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1699,8 +1699,8 @@ exports[`VolumeMute renders the VolumeMute icon from theme override 1`] = `
 exports[`VolumeMute renders the VolumeMute icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1730,8 +1730,8 @@ exports[`VolumeMute renders the VolumeMute icon with specified style 1`] = `
 exports[`VolumeMute renders the VolumeMute icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1771,8 +1771,8 @@ exports[`VolumeUp renders the VolumeUp icon from theme override 1`] = `
 exports[`VolumeUp renders the VolumeUp icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1805,8 +1805,8 @@ exports[`VolumeUp renders the VolumeUp icon with specified style 1`] = `
 exports[`VolumeUp renders the VolumeUp icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1849,8 +1849,8 @@ exports[`WhatsApp renders the WhatsApp icon from theme override 1`] = `
 exports[`WhatsApp renders the WhatsApp icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1891,8 +1891,8 @@ exports[`WhatsApp renders the WhatsApp icon with specified style 1`] = `
 exports[`WhatsApp renders the WhatsApp icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1933,8 +1933,8 @@ exports[`WhatsApp renders the WhatsApp icon with title override 1`] = `
 exports[`defaultIcon renders the defaultIcon icon from theme override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -1978,8 +1978,8 @@ exports[`defaultIcon renders the defaultIcon icon from theme override 1`] = `
 exports[`defaultIcon renders the defaultIcon icon with specified style 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;
@@ -2023,8 +2023,8 @@ exports[`defaultIcon renders the defaultIcon icon with specified style 1`] = `
 exports[`defaultIcon renders the defaultIcon icon with title override 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #777777;
-  color: #777777;
+  fill: #535353;
+  color: #535353;
   width: 64px;
   height: 64px;
   display: inline-block;

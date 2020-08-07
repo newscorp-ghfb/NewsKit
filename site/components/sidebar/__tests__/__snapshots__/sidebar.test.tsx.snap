@@ -81,8 +81,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-0 {
   display: inline-block;
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 160px;
 }
 
@@ -125,8 +125,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-4 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -174,7 +174,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   line-height: 1.5rem;
   background-color: transparent;
   box-sizing: border-box;
-  color: #777777;
+  color: #535353;
   cursor: pointer;
   font-weight: normal;
   min-height: 40px;
@@ -188,7 +188,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-10:hover {
-  color: #535353;
+  color: #2e2e2e;
   background-color: #e6f4ff;
 }
 
@@ -216,8 +216,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-9 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 16px;
   height: 16px;
   float: right;
@@ -728,8 +728,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-0 {
   display: inline-block;
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 160px;
 }
 
@@ -772,8 +772,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-4 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -821,7 +821,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   line-height: 1.5rem;
   background-color: transparent;
   box-sizing: border-box;
-  color: #777777;
+  color: #535353;
   cursor: pointer;
   font-weight: normal;
   min-height: 40px;
@@ -835,7 +835,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-10:hover {
-  color: #535353;
+  color: #2e2e2e;
   background-color: #e6f4ff;
 }
 
@@ -863,8 +863,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-9 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 16px;
   height: 16px;
   float: right;

@@ -12,7 +12,7 @@ exports[`Paragraph renders Paragraph 1`] = `
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
   margin-bottom: 18px;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 <p
@@ -36,7 +36,7 @@ exports[`Paragraph renders bold Paragraph 1`] = `
   letter-spacing: -0.25px;
   margin-bottom: 18px;
   font-weight: 500;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 <p
@@ -60,7 +60,7 @@ exports[`Paragraph renders with coloured drop cap 1`] = `
   letter-spacing: -0.25px;
   margin-bottom: 18px;
   font-weight: 500;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-0:first-letter {
@@ -92,7 +92,7 @@ exports[`Paragraph renders with drop cap 1`] = `
   letter-spacing: -0.25px;
   margin-bottom: 18px;
   font-weight: 500;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-0:first-letter {

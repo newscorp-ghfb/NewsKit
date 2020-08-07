@@ -2,6 +2,7 @@ import * as React from 'react';
 import {Grid, Cell, useTheme, Theme, GridProps, P} from 'newskit';
 import {colorPalettes as newskitLightPaletteColors} from 'newskit/themes/newskit-light/colors';
 import {H3} from '../../markdown-elements';
+import {ColorPalettesWrapper} from './styled';
 import {
   mapColorObjects,
   createPaletteColorMap,
@@ -18,7 +19,6 @@ const ColorSet: React.FC<{
   gridProps?: GridProps;
 }> = ({colors: unsortedColors, Swatch, gridProps}) => {
   const colors = unsortedColors;
-
   const groupTitle =
     colors[0].group[0].toUpperCase() + colors[0].group.substring(1);
 
@@ -65,17 +65,19 @@ export const ColorPalettes: React.FC = () => {
   const palettes = Object.values(paletteObjects);
 
   return (
-    <Grid>
-      {palettes.map(palette => (
-        <Cell xs={12} md={6}>
-          <ColorSet
-            gridProps={{xsRowGutter: 'sizing000'}}
-            Swatch={SwatchRow}
-            colors={palette}
-          />
-        </Cell>
-      ))}
-    </Grid>
+    <ColorPalettesWrapper>
+      <Grid xsMargin="sizing000">
+        {palettes.map(palette => (
+          <Cell xs={12} md={6} lg={4}>
+            <ColorSet
+              gridProps={{xsMargin: 'sizing000', xsRowGutter: 'sizing000'}}
+              Swatch={SwatchRow}
+              colors={palette}
+            />
+          </Cell>
+        ))}
+      </Grid>
+    </ColorPalettesWrapper>
   );
 };
 
@@ -103,10 +105,14 @@ export const ColorPrimitives = (): JSX.Element => {
   const palettes = Object.values(primitiveObjects);
 
   return (
-    <Grid>
+    <Grid xsMargin="sizing000">
       {palettes.map(palette => (
         <Cell xs={12}>
-          <ColorSet Swatch={SwatchCard} colors={palette} />
+          <ColorSet
+            gridProps={{xsMargin: 'sizing000'}}
+            Swatch={SwatchCard}
+            colors={palette}
+          />
         </Cell>
       ))}
     </Grid>

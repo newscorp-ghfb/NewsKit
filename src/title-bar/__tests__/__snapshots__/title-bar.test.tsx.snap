@@ -215,12 +215,12 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 
 .emotion-5:disabled {
   background-color: #e4e4e4;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-5:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-4 {
@@ -600,7 +600,7 @@ exports[`TitleBar should apply correctly the custom presets  1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 4px 8px;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-0 {

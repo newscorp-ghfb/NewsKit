@@ -334,8 +334,8 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -500,8 +500,8 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -1624,8 +1624,8 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -1782,8 +1782,8 @@ exports[`Flag renders a solid flag with an icon 1`] = `
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 16px;
   height: 16px;
   display: inline-block;

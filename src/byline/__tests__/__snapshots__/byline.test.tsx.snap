@@ -220,8 +220,8 @@ exports[`Byline renders correctly with authors and links 1`] = `
 }
 
 .emotion-2 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -457,7 +457,7 @@ exports[`Byline renders correctly with authors and titles 1`] = `
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #777777;
+  color: #535353;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -689,7 +689,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 .emotion-6 {
   margin: 0;
   padding: 1px 0;
-  color: #777777;
+  color: #535353;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -858,8 +858,8 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 }
 
 .emotion-2 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -1161,7 +1161,7 @@ exports[`Byline renders correctly with multiple authors 1`] = `
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #777777;
+  color: #535353;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1404,7 +1404,7 @@ exports[`Byline renders correctly with one author 1`] = `
 .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #777777;
+  color: #535353;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1511,8 +1511,8 @@ exports[`Byline renders correctly with overrides 1`] = `
 }
 
 .emotion-2 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 16px;
   height: 16px;
   display: inline-block;

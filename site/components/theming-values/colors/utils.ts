@@ -35,10 +35,10 @@ export const getTextColor = ({
   value,
 }: // brightness,
 {theme: Theme} & Pick<ThemeColor, 'brightness' | 'value'>) =>
-  // brightness < 0.4 ? theme.colors.white : theme.colors.inkContrast;
-  getContrast(value, theme.colors.white) <
+  // brightness < 0.4 ? theme.colors.inkInverse : theme.colors.inkContrast;
+  getContrast(value, theme.colors.inkInverse) <
   getContrast(value, theme.colors.inkContrast)
-    ? theme.colors.white
+    ? theme.colors.inkInverse
     : theme.colors.inkContrast;
 
 export const getColorGroup = (name: string) => (/[a-z]+/.exec(name) || [])[0];
@@ -48,7 +48,7 @@ export const mapColorObjects = (
   paletteColorMap?: Record<string, ThemeColor[]>,
 ) => ([name, value]: [string, string]) => {
   const brightness = getBrightness(value);
-  const contrastRatio = getContrast(value, theme.colors.white);
+  const contrastRatio = getContrast(value, theme.colors.interface010);
   const contrastRating = getContrastRating(contrastRatio);
 
   return {

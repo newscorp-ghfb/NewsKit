@@ -60,7 +60,7 @@ exports[`TagList renders as a span with custom margins 1`] = `
   border-color: #535353;
   border-width: 1px;
   border-radius: 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-3 svg {
@@ -69,8 +69,8 @@ exports[`TagList renders as a span with custom margins 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -337,7 +337,7 @@ exports[`TagList renders as a span with custom size 1`] = `
   border-color: #535353;
   border-width: 1px;
   border-radius: 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-3 svg {
@@ -346,8 +346,8 @@ exports[`TagList renders as a span with custom size 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -542,7 +542,7 @@ exports[`TagList renders as a span with defaults 1`] = `
   border-color: #535353;
   border-width: 1px;
   border-radius: 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-3 svg {
@@ -551,8 +551,8 @@ exports[`TagList renders as a span with defaults 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -765,7 +765,7 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
   border-color: #535353;
   border-width: 1px;
   border-radius: 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-3 svg {
@@ -774,8 +774,8 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1045,7 +1045,7 @@ exports[`TagList renders as an anchor with custom size 1`] = `
   border-color: #535353;
   border-width: 1px;
   border-radius: 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-3 svg {
@@ -1054,8 +1054,8 @@ exports[`TagList renders as an anchor with custom size 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1253,7 +1253,7 @@ exports[`TagList renders as an anchor with defaults 1`] = `
   border-color: #535353;
   border-width: 1px;
   border-radius: 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-3 svg {
@@ -1262,8 +1262,8 @@ exports[`TagList renders as an anchor with defaults 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {

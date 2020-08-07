@@ -5,7 +5,7 @@ exports[`DateTime renders with fallback formatting 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #777777;
+  color: #535353;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -133,7 +133,7 @@ exports[`DateTime renders with provided date, format, prefix and suffix 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #777777;
+  color: #535353;
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;

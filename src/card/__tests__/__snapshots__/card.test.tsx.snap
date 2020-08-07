@@ -114,7 +114,7 @@ exports[`Card renders actions section with given component 1`] = `
   border-color: #535353;
   border-width: 1px;
   border-radius: 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-4 svg {
@@ -123,8 +123,8 @@ exports[`Card renders actions section with given component 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-4:hover:not(:disabled) {
@@ -249,12 +249,12 @@ exports[`Card renders actions section with given component 1`] = `
 
 .emotion-9:disabled {
   background-color: #e4e4e4;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-9:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-8 {
@@ -476,7 +476,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   border-color: #535353;
   border-width: 1px;
   border-radius: 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-4 svg {
@@ -485,8 +485,8 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-4:hover:not(:disabled) {
@@ -611,12 +611,12 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 
 .emotion-9:disabled {
   background-color: #e4e4e4;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-9:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-8 {
@@ -808,7 +808,7 @@ exports[`Card renders actions section with overrides for paddingPreset 1`] = `
   border-color: #535353;
   border-width: 1px;
   border-radius: 0;
-  color: #535353;
+  color: #2e2e2e;
 }
 
 .emotion-4 svg {
@@ -817,8 +817,8 @@ exports[`Card renders actions section with overrides for paddingPreset 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .emotion-4:hover:not(:disabled) {
@@ -943,12 +943,12 @@ exports[`Card renders actions section with overrides for paddingPreset 1`] = `
 
 .emotion-9:disabled {
   background-color: #e4e4e4;
-  color: #c0c0c0;
+  color: #9c9c9c;
 }
 
 .emotion-9:disabled svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-8 {
@@ -1166,8 +1166,8 @@ exports[`Card renders media section if the media data is provided 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -1202,8 +1202,8 @@ exports[`Card renders media section if the media data is provided 1`] = `
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -1302,8 +1302,8 @@ exports[`Card renders media section with a custom component 1`] = `
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -1328,8 +1328,8 @@ exports[`Card renders media section with a custom component 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div
@@ -1416,8 +1416,8 @@ exports[`Card renders media section with a custom component using overrides 1`] 
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -1442,8 +1442,8 @@ exports[`Card renders media section with a custom component using overrides 1`] 
 }
 
 .emotion-4 svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div
@@ -1530,8 +1530,8 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -1556,8 +1556,8 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
 }
 
 .emotion-4 svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div
@@ -1644,8 +1644,8 @@ exports[`Card renders media section with overrides 1`] = `
 }
 
 .emotion-0 {
-  fill: #535353;
-  color: #535353;
+  fill: #2e2e2e;
+  color: #2e2e2e;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -1670,8 +1670,8 @@ exports[`Card renders media section with overrides 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #c0c0c0;
-  color: #c0c0c0;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 <div

@@ -13,7 +13,7 @@ import {ThemeColor} from './types';
 import {getTextColor, getBorderRadius} from './utils';
 
 export const StyledAccessibilityBadge = styled(Flag)`
-  background-color: white;
+  background-color: ${getColorFromTheme('interface010')};
   border-radius: ${getBorderRadiusFromTheme('borderRadiusRounded010')};
   color: ${getColorFromTheme('inkSubtle')};
   width: ${getSizingFromTheme('sizing070')};
@@ -49,6 +49,7 @@ export const StyledSwatchCardTop = styled.div<ThemeColor>`
 
 export const StyledSwatchCardBottom = styled.div<ThemeColor>`
   height: ${getSizingFromTheme('sizing100')};
+  background-color: ${({theme}) => theme.colors.white};
   padding: ${getSizingFromTheme('spaceInset030Squish')};
 `;
 
@@ -85,4 +86,8 @@ export const TextBoxSwatch = styled.span<{
     text-transform: ${({theme, themeColor}) =>
       theme.colors[themeColor].startsWith('#') ? 'uppercase' : null};
   }
+`;
+
+export const ColorPalettesWrapper = styled.div`
+  margin-bottom: 30px;
 `;
