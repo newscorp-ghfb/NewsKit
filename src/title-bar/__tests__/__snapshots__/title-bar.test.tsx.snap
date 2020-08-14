@@ -37,12 +37,12 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   margin: 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 1.2857142857142858;
   font-weight: 700;
-  -webkit-letter-spacing: -0.5px;
-  -moz-letter-spacing: -0.5px;
-  -ms-letter-spacing: -0.5px;
-  letter-spacing: -0.5px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   color: #0a0a0a;
 }
 
@@ -51,7 +51,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.22142857142857142em;
+  margin-bottom: -0.2928571428571429em;
 }
 
 .emotion-0::after {
@@ -59,19 +59,19 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2839285714285714em;
+  margin-top: -0.3553571428571429em;
 }
 
 @media screen and (min-width:960px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
-    line-height: 1.125;
+    line-height: 1.25;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -79,7 +79,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.275em;
   }
 
   .emotion-0::after {
@@ -87,7 +87,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.3375em;
   }
 }
 
@@ -95,12 +95,12 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 1.3;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -108,7 +108,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.30000000000000004em;
   }
 
   .emotion-0::after {
@@ -116,7 +116,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.36250000000000004em;
   }
 }
 
@@ -360,12 +360,12 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   margin: 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 1.2857142857142858;
   font-weight: 700;
-  -webkit-letter-spacing: -0.5px;
-  -moz-letter-spacing: -0.5px;
-  -ms-letter-spacing: -0.5px;
-  letter-spacing: -0.5px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   color: #0a0a0a;
 }
 
@@ -374,7 +374,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.22142857142857142em;
+  margin-bottom: -0.2928571428571429em;
 }
 
 .emotion-0::after {
@@ -382,19 +382,19 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2839285714285714em;
+  margin-top: -0.3553571428571429em;
 }
 
 @media screen and (min-width:960px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
-    line-height: 1.125;
+    line-height: 1.25;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -402,7 +402,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.275em;
   }
 
   .emotion-0::after {
@@ -410,7 +410,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.3375em;
   }
 }
 
@@ -418,12 +418,12 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 1.3;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -431,7 +431,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.30000000000000004em;
   }
 
   .emotion-0::after {
@@ -439,7 +439,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.36250000000000004em;
   }
 }
 
@@ -608,12 +608,12 @@ exports[`TitleBar should apply correctly the custom presets  1`] = `
   margin: 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
-  line-height: 1.1111111111111112;
+  line-height: 1.3333333333333333;
   font-weight: 700;
-  -webkit-letter-spacing: -0.5px;
-  -moz-letter-spacing: -0.5px;
-  -ms-letter-spacing: -0.5px;
-  letter-spacing: -0.5px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   color: #0a0a0a;
 }
 
@@ -622,7 +622,7 @@ exports[`TitleBar should apply correctly the custom presets  1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.2055555555555556em;
+  margin-bottom: -0.31666666666666665em;
 }
 
 .emotion-0::after {
@@ -630,7 +630,7 @@ exports[`TitleBar should apply correctly the custom presets  1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2680555555555556em;
+  margin-top: -0.37916666666666665em;
 }
 
 @media screen and (min-width:480px) {
@@ -639,10 +639,10 @@ exports[`TitleBar should apply correctly the custom presets  1`] = `
     font-size: 20px;
     line-height: 1.2;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -666,12 +666,12 @@ exports[`TitleBar should apply correctly the custom presets  1`] = `
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 24px;
-    line-height: 1.1666666666666667;
+    line-height: 1.3333333333333333;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -679,7 +679,7 @@ exports[`TitleBar should apply correctly the custom presets  1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.2333333333333334em + 1px);
+    margin-bottom: calc(-0.31666666666666665em + 1px);
   }
 
   .emotion-0::after {
@@ -687,7 +687,7 @@ exports[`TitleBar should apply correctly the custom presets  1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.2958333333333334em + 1px);
+    margin-top: calc(-0.37916666666666665em + 1px);
   }
 }
 
@@ -695,12 +695,12 @@ exports[`TitleBar should apply correctly the custom presets  1`] = `
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 1.2857142857142858;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -708,7 +708,7 @@ exports[`TitleBar should apply correctly the custom presets  1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.22142857142857142em;
+    margin-bottom: -0.2928571428571429em;
   }
 
   .emotion-0::after {
@@ -716,7 +716,7 @@ exports[`TitleBar should apply correctly the custom presets  1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.2839285714285714em;
+    margin-top: -0.3553571428571429em;
   }
 }
 
@@ -773,12 +773,12 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
   margin: 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 1.2857142857142858;
   font-weight: 700;
-  -webkit-letter-spacing: -0.5px;
-  -moz-letter-spacing: -0.5px;
-  -ms-letter-spacing: -0.5px;
-  letter-spacing: -0.5px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   color: #0a0a0a;
 }
 
@@ -787,7 +787,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.22142857142857142em;
+  margin-bottom: -0.2928571428571429em;
 }
 
 .emotion-0::after {
@@ -795,19 +795,19 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2839285714285714em;
+  margin-top: -0.3553571428571429em;
 }
 
 @media screen and (min-width:960px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
-    line-height: 1.125;
+    line-height: 1.25;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -815,7 +815,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.275em;
   }
 
   .emotion-0::after {
@@ -823,7 +823,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.3375em;
   }
 }
 
@@ -831,12 +831,12 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 1.3;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -844,7 +844,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.30000000000000004em;
   }
 
   .emotion-0::after {
@@ -852,7 +852,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.36250000000000004em;
   }
 }
 
@@ -909,12 +909,12 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
   margin: 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 1.2857142857142858;
   font-weight: 700;
-  -webkit-letter-spacing: -0.5px;
-  -moz-letter-spacing: -0.5px;
-  -ms-letter-spacing: -0.5px;
-  letter-spacing: -0.5px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   color: #0a0a0a;
 }
 
@@ -923,7 +923,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.22142857142857142em;
+  margin-bottom: -0.2928571428571429em;
 }
 
 .emotion-0::after {
@@ -931,19 +931,19 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2839285714285714em;
+  margin-top: -0.3553571428571429em;
 }
 
 @media screen and (min-width:960px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
-    line-height: 1.125;
+    line-height: 1.25;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -951,7 +951,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.275em;
   }
 
   .emotion-0::after {
@@ -959,7 +959,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.3375em;
   }
 }
 
@@ -967,12 +967,12 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 1.3;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -980,7 +980,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.30000000000000004em;
   }
 
   .emotion-0::after {
@@ -988,7 +988,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.36250000000000004em;
   }
 }
 
@@ -1045,12 +1045,12 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
   margin: 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 1.2857142857142858;
   font-weight: 700;
-  -webkit-letter-spacing: -0.5px;
-  -moz-letter-spacing: -0.5px;
-  -ms-letter-spacing: -0.5px;
-  letter-spacing: -0.5px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   color: #0a0a0a;
 }
 
@@ -1059,7 +1059,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.22142857142857142em;
+  margin-bottom: -0.2928571428571429em;
 }
 
 .emotion-0::after {
@@ -1067,19 +1067,19 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2839285714285714em;
+  margin-top: -0.3553571428571429em;
 }
 
 @media screen and (min-width:960px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
-    line-height: 1.125;
+    line-height: 1.25;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -1087,7 +1087,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.275em;
   }
 
   .emotion-0::after {
@@ -1095,7 +1095,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.3375em;
   }
 }
 
@@ -1103,12 +1103,12 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 1.3;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -1116,7 +1116,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.30000000000000004em;
   }
 
   .emotion-0::after {
@@ -1124,7 +1124,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.36250000000000004em;
   }
 }
 
@@ -1181,12 +1181,12 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
   margin: 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 1.2857142857142858;
   font-weight: 700;
-  -webkit-letter-spacing: -0.5px;
-  -moz-letter-spacing: -0.5px;
-  -ms-letter-spacing: -0.5px;
-  letter-spacing: -0.5px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   color: #0a0a0a;
 }
 
@@ -1195,7 +1195,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.22142857142857142em;
+  margin-bottom: -0.2928571428571429em;
 }
 
 .emotion-0::after {
@@ -1203,19 +1203,19 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2839285714285714em;
+  margin-top: -0.3553571428571429em;
 }
 
 @media screen and (min-width:960px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
-    line-height: 1.125;
+    line-height: 1.25;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -1223,7 +1223,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.275em;
   }
 
   .emotion-0::after {
@@ -1231,7 +1231,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.3375em;
   }
 }
 
@@ -1239,12 +1239,12 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 1.3;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -1252,7 +1252,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.30000000000000004em;
   }
 
   .emotion-0::after {
@@ -1260,7 +1260,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.36250000000000004em;
   }
 }
 
@@ -1317,12 +1317,12 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
   margin: 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 1.2857142857142858;
   font-weight: 700;
-  -webkit-letter-spacing: -0.5px;
-  -moz-letter-spacing: -0.5px;
-  -ms-letter-spacing: -0.5px;
-  letter-spacing: -0.5px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   color: #0a0a0a;
 }
 
@@ -1331,7 +1331,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.22142857142857142em;
+  margin-bottom: -0.2928571428571429em;
 }
 
 .emotion-0::after {
@@ -1339,19 +1339,19 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2839285714285714em;
+  margin-top: -0.3553571428571429em;
 }
 
 @media screen and (min-width:960px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
-    line-height: 1.125;
+    line-height: 1.25;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -1359,7 +1359,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.275em;
   }
 
   .emotion-0::after {
@@ -1367,7 +1367,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.3375em;
   }
 }
 
@@ -1375,12 +1375,12 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 1.3;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -1388,7 +1388,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.30000000000000004em;
   }
 
   .emotion-0::after {
@@ -1396,7 +1396,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.36250000000000004em;
   }
 }
 
@@ -1453,12 +1453,12 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
   margin: 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 1.2857142857142858;
   font-weight: 700;
-  -webkit-letter-spacing: -0.5px;
-  -moz-letter-spacing: -0.5px;
-  -ms-letter-spacing: -0.5px;
-  letter-spacing: -0.5px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   color: #0a0a0a;
 }
 
@@ -1467,7 +1467,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.22142857142857142em;
+  margin-bottom: -0.2928571428571429em;
 }
 
 .emotion-0::after {
@@ -1475,19 +1475,19 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2839285714285714em;
+  margin-top: -0.3553571428571429em;
 }
 
 @media screen and (min-width:960px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
-    line-height: 1.125;
+    line-height: 1.25;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -1495,7 +1495,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.275em;
   }
 
   .emotion-0::after {
@@ -1503,7 +1503,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.3375em;
   }
 }
 
@@ -1511,12 +1511,12 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 1.3;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -1524,7 +1524,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.30000000000000004em;
   }
 
   .emotion-0::after {
@@ -1532,7 +1532,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.36250000000000004em;
   }
 }
 
@@ -1589,12 +1589,12 @@ exports[`TitleBar should display correctly with default styles and given title 1
   margin: 0;
   font-family: "Noto Sans",sans-serif;
   font-size: 28px;
-  line-height: 1.1428571428571428;
+  line-height: 1.2857142857142858;
   font-weight: 700;
-  -webkit-letter-spacing: -0.5px;
-  -moz-letter-spacing: -0.5px;
-  -ms-letter-spacing: -0.5px;
-  letter-spacing: -0.5px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   color: #0a0a0a;
 }
 
@@ -1603,7 +1603,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.22142857142857142em;
+  margin-bottom: -0.2928571428571429em;
 }
 
 .emotion-0::after {
@@ -1611,19 +1611,19 @@ exports[`TitleBar should display correctly with default styles and given title 1
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.2839285714285714em;
+  margin-top: -0.3553571428571429em;
 }
 
 @media screen and (min-width:960px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
-    line-height: 1.125;
+    line-height: 1.25;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -1631,7 +1631,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.21250000000000002em;
+    margin-bottom: -0.275em;
   }
 
   .emotion-0::after {
@@ -1639,7 +1639,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.275em;
+    margin-top: -0.3375em;
   }
 }
 
@@ -1647,12 +1647,12 @@ exports[`TitleBar should display correctly with default styles and given title 1
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;
-    line-height: 1.1;
+    line-height: 1.3;
     font-weight: 700;
-    -webkit-letter-spacing: -0.5px;
-    -moz-letter-spacing: -0.5px;
-    -ms-letter-spacing: -0.5px;
-    letter-spacing: -0.5px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 
   .emotion-0::before {
@@ -1660,7 +1660,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.20000000000000007em;
+    margin-bottom: -0.30000000000000004em;
   }
 
   .emotion-0::after {
@@ -1668,7 +1668,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.26250000000000007em;
+    margin-top: -0.36250000000000004em;
   }
 }
 

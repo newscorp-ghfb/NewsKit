@@ -7,10 +7,10 @@ exports[`TypePreset renders default 1`] = `
   font-size: 18px;
   line-height: 1.5555555555555556;
   font-weight: 400;
-  -webkit-letter-spacing: -0.25px;
-  -moz-letter-spacing: -0.25px;
-  -ms-letter-spacing: -0.25px;
-  letter-spacing: -0.25px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 <p
@@ -26,10 +26,10 @@ exports[`TypePreset renders responsive override body010 for xs and body030 for m
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  -webkit-letter-spacing: -0.25px;
-  -moz-letter-spacing: -0.25px;
-  -ms-letter-spacing: -0.25px;
-  letter-spacing: -0.25px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 @media screen and (min-width:960px) {
@@ -38,10 +38,10 @@ exports[`TypePreset renders responsive override body010 for xs and body030 for m
     font-size: 18px;
     line-height: 1.5555555555555556;
     font-weight: 400;
-    -webkit-letter-spacing: -0.25px;
-    -moz-letter-spacing: -0.25px;
-    -ms-letter-spacing: -0.25px;
-    letter-spacing: -0.25px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 }
 
@@ -58,10 +58,10 @@ exports[`TypePreset renders responsive override body010 for xs, body020 for sm, 
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  -webkit-letter-spacing: -0.25px;
-  -moz-letter-spacing: -0.25px;
-  -ms-letter-spacing: -0.25px;
-  letter-spacing: -0.25px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 @media screen and (min-width:480px) {
@@ -70,10 +70,10 @@ exports[`TypePreset renders responsive override body010 for xs, body020 for sm, 
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    -webkit-letter-spacing: -0.25px;
-    -moz-letter-spacing: -0.25px;
-    -ms-letter-spacing: -0.25px;
-    letter-spacing: -0.25px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 }
 
@@ -83,10 +83,10 @@ exports[`TypePreset renders responsive override body010 for xs, body020 for sm, 
     font-size: 18px;
     line-height: 1.5555555555555556;
     font-weight: 400;
-    -webkit-letter-spacing: -0.25px;
-    -moz-letter-spacing: -0.25px;
-    -ms-letter-spacing: -0.25px;
-    letter-spacing: -0.25px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 }
 
@@ -103,10 +103,10 @@ exports[`TypePreset renders responsive override body010 for xs, body020 for sm, 
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  -webkit-letter-spacing: -0.25px;
-  -moz-letter-spacing: -0.25px;
-  -ms-letter-spacing: -0.25px;
-  letter-spacing: -0.25px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 @media screen and (min-width:480px) {
@@ -115,10 +115,10 @@ exports[`TypePreset renders responsive override body010 for xs, body020 for sm, 
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    -webkit-letter-spacing: -0.25px;
-    -moz-letter-spacing: -0.25px;
-    -ms-letter-spacing: -0.25px;
-    letter-spacing: -0.25px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 }
 
@@ -135,10 +135,10 @@ exports[`TypePreset renders responsive override body010 for xs, body020 for sm, 
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  -webkit-letter-spacing: -0.25px;
-  -moz-letter-spacing: -0.25px;
-  -ms-letter-spacing: -0.25px;
-  letter-spacing: -0.25px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 @media screen and (min-width:480px) {
@@ -147,10 +147,10 @@ exports[`TypePreset renders responsive override body010 for xs, body020 for sm, 
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    -webkit-letter-spacing: -0.25px;
-    -moz-letter-spacing: -0.25px;
-    -ms-letter-spacing: -0.25px;
-    letter-spacing: -0.25px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 }
 
@@ -160,10 +160,10 @@ exports[`TypePreset renders responsive override body010 for xs, body020 for sm, 
     font-size: 18px;
     line-height: 1.5555555555555556;
     font-weight: 400;
-    -webkit-letter-spacing: -0.25px;
-    -moz-letter-spacing: -0.25px;
-    -ms-letter-spacing: -0.25px;
-    letter-spacing: -0.25px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 }
 
@@ -193,10 +193,10 @@ exports[`TypePreset renders with override body010 1`] = `
   font-size: 14px;
   line-height: 1.4285714285714286;
   font-weight: 400;
-  -webkit-letter-spacing: -0.25px;
-  -moz-letter-spacing: -0.25px;
-  -ms-letter-spacing: -0.25px;
-  letter-spacing: -0.25px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 <p
