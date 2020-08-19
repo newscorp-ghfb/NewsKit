@@ -176,6 +176,7 @@ export const Playground: React.FC<
     flexDirection: 'column',
     border: 'solid 1px',
     borderColor: 'interface030',
+    color: 'inkBase',
   };
 
   const source = generateSource({
