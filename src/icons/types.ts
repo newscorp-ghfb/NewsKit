@@ -1,5 +1,5 @@
 import {FloatProperty} from 'csstype';
-import {IconSizeKeys, ColorKeys} from '../themes';
+import {IconSizeKeys, ColorKeys} from '../theme';
 
 export interface StyledSvgProps {
   $color?: ColorKeys | string;

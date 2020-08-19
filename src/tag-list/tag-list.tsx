@@ -1,6 +1,6 @@
 import React from 'react';
 import {styled, getSizingFromTheme} from '../utils/style';
-import {SizingKeys} from '../themes';
+import {SizingKeys} from '../theme';
 import {TagListProps, TagListLayout} from './types';
 import {Tag} from '../tag';
 import {StyledUl as ListStyledUl} from '../list';

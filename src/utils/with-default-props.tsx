@@ -2,7 +2,7 @@ import React from 'react';
 import {DeepPartial} from './types';
 import {deepMerge} from './deep-merge';
 import {getToken} from './get-token';
-import {useTheme} from '../themes/emotion';
+import {useTheme} from '../theme';
 
 type PropsEvalFunction<P> = (props: P) => P;
 

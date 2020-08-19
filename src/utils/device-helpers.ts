@@ -1,4 +1,4 @@
-import {Devices} from '../themes/newskit-light/breakpoints';
+import {Devices} from '../theme';
 import {css, CSSObject, SerializedStyles} from './style';
 
 export const getDeviceQueryFromTheme = (

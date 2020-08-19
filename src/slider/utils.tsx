@@ -1,6 +1,6 @@
 import React from 'react';
 import {getTrackBackground, Direction} from 'react-range';
-import {Theme} from '../themes/creator';
+import {Theme} from '../theme';
 import {trackStylePresetDefault, indicatorStylePresetDefault} from './styled';
 import {getSingleStylePreset} from '../utils/style-preset';
 

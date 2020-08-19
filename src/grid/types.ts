@@ -1,4 +1,4 @@
-import {SizingKeys} from '../themes';
+import {SizingKeys} from '../theme';
 
 export interface GridProps {
   xsMargin?: SizingKeys;

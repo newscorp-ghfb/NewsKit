@@ -1,8 +1,4 @@
-import {
-  FontConfig,
-  fontPrimitives,
-  FontPrimitives,
-} from '../../themes/newskit-light/fonts';
+import {FontConfig, fonts, Fonts} from '../../theme/primitives/fonts';
 import {getFontProps} from '../get-font-props';
 
 const fontSize = '12px';
@@ -23,9 +19,9 @@ describe('getFontProps', () => {
       lineHeight,
       fontFamilyTest.fontFamily,
       {
-        ...fontPrimitives,
+        ...fonts,
         fontFamilyTest,
-      } as FontPrimitives,
+      } as Fonts,
     );
 
     expect(result!['::after'].marginTop).toEqual(`-0.4833333333333334em`);
@@ -52,9 +48,9 @@ describe('getFontProps', () => {
       lineHeight,
       fontFamilyTest.fontFamily,
       {
-        ...fontPrimitives,
+        ...fonts,
         fontFamilyTest,
-      } as FontPrimitives,
+      } as Fonts,
     );
 
     expect(result!['::before'].marginBottom).toEqual(
@@ -75,9 +71,9 @@ describe('getFontProps', () => {
       lineHeight,
       fontFamilyTest.fontFamily,
       {
-        ...fontPrimitives,
+        ...fonts,
         fontFamilyTest,
-      } as FontPrimitives,
+      } as Fonts,
     );
 
     expect(result).toBeUndefined();
@@ -88,7 +84,7 @@ describe('getFontProps', () => {
       fontSize,
       lineHeight,
       'Test Font Family',
-      fontPrimitives,
+      fonts,
     );
 
     expect(result).toBeUndefined();

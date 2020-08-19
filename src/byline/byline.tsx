@@ -6,11 +6,14 @@ import {StackChild, AlignSelfValues} from '../stack-child';
 import {Divider} from '../divider';
 
 import {getToken} from '../utils/get-token';
-import {useTheme, TypePresetKeys} from '../themes';
-import {SpacingPresetKeys} from '../themes/mappers/spacing';
+import {
+  useTheme,
+  TypePresetKeys,
+  SpacePresetKeys,
+  StylePresetKeys,
+} from '../theme';
 import {Block} from '../block';
 import {TextBlock} from '../text-block/text-block';
-import {StylePresetKeys} from '../themes/mappers/style-preset';
 import {BylineProps, BylineData} from './types';
 
 const InlineBlock = styled(Block)`
@@ -24,7 +27,7 @@ const TextBlockWithPre = styled(TextBlock)`
 const getStyledTextBlock = (
   typePreset: TypePresetKeys,
   stylePreset: StylePresetKeys,
-  spaceInline: SpacingPresetKeys,
+  spaceInline: SpacePresetKeys,
 ) => ({
   children,
   withSpace = false,
@@ -55,7 +58,7 @@ const getStyledTextBlock = (
 
 const getStyledDivider = (
   stylePreset?: string,
-  spaceInline?: SpacingPresetKeys,
+  spaceInline?: SpacePresetKeys,
 ) => () => (
   <StackChild alignSelf={AlignSelfValues.Stretch}>
     <InlineBlock overrides={{spaceInline}}>

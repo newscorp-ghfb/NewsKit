@@ -52,7 +52,7 @@ const StyledLabel = styled.label<StyledLabelProps>`
   user-select: none;
 
   ${({theme}) => {
-    const borderRadiusSize = theme.borderRadius.borderRadiusDefault;
+    const borderRadiusSize = theme.borders.borderRadiusDefault;
     return css`
       :first-of-type {
         border-top-left-radius: ${borderRadiusSize};

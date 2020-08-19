@@ -1,7 +1,6 @@
 import {MQ} from '../utils/style';
-import {StylePresetKeys} from '../themes/mappers/style-preset';
-import {PaddingPresetKeys} from '../themes/mappers/spacing';
 import {HeadlineProps} from '../headline';
+import {PaddingPresetKeys, StylePresetKeys} from '../theme';
 
 export type TitleBarOverrides = {
   paddingPreset?: MQ<PaddingPresetKeys>;

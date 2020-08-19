@@ -7,7 +7,7 @@ import {Pause, Email, CopyLink} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
-import {newskitLightTheme, IconSizeKeys} from '../../themes';
+import {IconSizeKeys} from '../../theme';
 
 const Container = styled.div`
   margin: 24px;
@@ -180,23 +180,23 @@ export default {
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
-                    <Block theme={newskitLightTheme} data-state="Default">
+                    <Block data-state="Default">
                       <Button overrides={{stylePreset}}>Button</Button>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Focused">
+                    <Block data-state="Focused">
                       <Button autoFocus overrides={{stylePreset}}>
                         Button
                       </Button>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Disabled">
+                    <Block data-state="Disabled">
                       <Button disabled overrides={{stylePreset}}>
                         Button
                       </Button>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Loading">
+                    <Block data-state="Loading">
                       <Button overrides={{stylePreset}} isLoading>
                         Button
                       </Button>
@@ -237,23 +237,23 @@ export default {
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
-                    <Block theme={newskitLightTheme} data-state="Default">
+                    <Block data-state="Default">
                       <Button overrides={{stylePreset}}>Button</Button>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Focused">
+                    <Block data-state="Focused">
                       <Button autoFocus overrides={{stylePreset}}>
                         Button
                       </Button>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Disabled">
+                    <Block data-state="Disabled">
                       <Button disabled overrides={{stylePreset}}>
                         Button
                       </Button>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Loading">
+                    <Block data-state="Loading">
                       <Button overrides={{stylePreset}} isLoading>
                         Button
                       </Button>
@@ -294,23 +294,23 @@ export default {
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
-                    <Block theme={newskitLightTheme} data-state="Default">
+                    <Block data-state="Default">
                       <Button overrides={{stylePreset}}>Button</Button>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Focused">
+                    <Block data-state="Focused">
                       <Button autoFocus overrides={{stylePreset}}>
                         Button
                       </Button>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Disabled">
+                    <Block data-state="Disabled">
                       <Button disabled overrides={{stylePreset}}>
                         Button
                       </Button>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Loading">
+                    <Block data-state="Loading">
                       <Button overrides={{stylePreset}} isLoading>
                         Button
                       </Button>
@@ -350,23 +350,23 @@ export default {
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
-                    <Block theme={newskitLightTheme} data-state="Default">
+                    <Block data-state="Default">
                       <Button overrides={{stylePreset}}>Button</Button>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Focused">
+                    <Block data-state="Focused">
                       <Button autoFocus overrides={{stylePreset}}>
                         Button
                       </Button>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Disabled">
+                    <Block data-state="Disabled">
                       <Button disabled overrides={{stylePreset}}>
                         Button
                       </Button>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Loading">
+                    <Block data-state="Loading">
                       <Button overrides={{stylePreset}} isLoading>
                         Button
                       </Button>

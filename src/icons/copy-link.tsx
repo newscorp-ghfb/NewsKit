@@ -2,7 +2,7 @@ import React from 'react';
 import {Svg} from './svg';
 import {SvgProps} from './types';
 
-import {withTheme} from '../themes/emotion';
+import {withTheme} from '../theme';
 
 const defaultIcon: React.FC<SvgProps> = ({title = 'Copy icon', ...props}) => (
   <Svg {...props} title={title}>

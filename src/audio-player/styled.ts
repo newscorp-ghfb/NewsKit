@@ -1,13 +1,7 @@
-import {IconButton} from '../button/icon-button';
-import {
-  styled,
-  getColorFromTheme,
-  getSizingFromTheme,
-  getTypePresetFromTheme,
-  getFontsFromTheme,
-} from '../utils/style';
-import {H1} from '../typography';
-import {Tag} from '../tag';
+import {styled} from '../utils/style';
+import {Grid} from '../grid/grid';
+import {Hidden} from '../grid';
+import {SizingKeys} from '../theme';
 
 export const PlayerGrid = styled(Grid)`
   box-sizing: border-box;

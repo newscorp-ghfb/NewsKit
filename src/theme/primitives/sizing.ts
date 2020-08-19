@@ -1,0 +1,23 @@
+export const sizing = {
+  sizing000: '0',
+  sizing010: '4px',
+  sizing020: '8px',
+  sizing030: '12px',
+  sizing040: '16px',
+  sizing045: '20px',
+  sizing050: '24px',
+  sizing060: '32px',
+  sizing070: '40px',
+  sizing080: '48px',
+  sizing090: '64px',
+  sizing100: '80px',
+  sizing110: '120px',
+  sizing120: '160px',
+
+  iconSize005: '{{sizing.sizing020}}',
+  iconSize010: '{{sizing.sizing040}}',
+  iconSize020: '{{sizing.sizing050}}',
+  iconSize030: '{{sizing.sizing060}}',
+  iconSize040: '{{sizing.sizing080}}',
+  iconSize050: '{{sizing.sizing090}}',
+};

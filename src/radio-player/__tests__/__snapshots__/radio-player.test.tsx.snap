@@ -715,8 +715,8 @@ exports[`Radio Player default player 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #0a68c1;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -746,6 +746,7 @@ exports[`Radio Player default player 1`] = `
 
 .emotion-33:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-33:disabled svg {
@@ -797,8 +798,8 @@ exports[`Radio Player default player 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #9c9c9c;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -966,8 +967,8 @@ exports[`Radio Player default player 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #0a68c1;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -997,6 +998,7 @@ exports[`Radio Player default player 1`] = `
 
 .emotion-56:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-56:disabled svg {
@@ -1032,10 +1034,10 @@ exports[`Radio Player default player 1`] = `
 .emotion-59 {
   background-color: #ffffff;
   border-color: #0a68c1;
-  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  border-style: solid;
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;
@@ -1055,8 +1057,12 @@ exports[`Radio Player default player 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-59:active:not(:disabled) {
+.emotion-59:hover:not(:disabled) {
   background-color: #e6f4ff;
+}
+
+.emotion-59:active:not(:disabled) {
+  background-color: #01396e;
 }
 
 .emotion-59:active:not(:disabled) svg {
@@ -1212,10 +1218,10 @@ exports[`Radio Player default player 1`] = `
 .emotion-76 {
   background-color: #ffffff;
   border-color: #0a68c1;
-  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  border-style: solid;
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;
@@ -2633,8 +2639,8 @@ exports[`Radio Player live player 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #0a68c1;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -2664,6 +2670,7 @@ exports[`Radio Player live player 1`] = `
 
 .emotion-72:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-72:disabled svg {
@@ -2699,10 +2706,10 @@ exports[`Radio Player live player 1`] = `
 .emotion-75 {
   background-color: #ffffff;
   border-color: #0a68c1;
-  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  border-style: solid;
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;
@@ -2722,8 +2729,12 @@ exports[`Radio Player live player 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-75:active:not(:disabled) {
+.emotion-75:hover:not(:disabled) {
   background-color: #e6f4ff;
+}
+
+.emotion-75:active:not(:disabled) {
+  background-color: #01396e;
 }
 
 .emotion-75:active:not(:disabled) svg {
@@ -4300,8 +4311,8 @@ exports[`Radio Player player with popout link 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #0a68c1;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -4331,6 +4342,7 @@ exports[`Radio Player player with popout link 1`] = `
 
 .emotion-49:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-49:disabled svg {
@@ -4382,8 +4394,8 @@ exports[`Radio Player player with popout link 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #9c9c9c;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -4551,8 +4563,8 @@ exports[`Radio Player player with popout link 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #0a68c1;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -4582,6 +4594,7 @@ exports[`Radio Player player with popout link 1`] = `
 
 .emotion-72:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-72:disabled svg {
@@ -4617,10 +4630,10 @@ exports[`Radio Player player with popout link 1`] = `
 .emotion-75 {
   background-color: #ffffff;
   border-color: #0a68c1;
-  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  border-style: solid;
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;
@@ -4640,8 +4653,12 @@ exports[`Radio Player player with popout link 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-75:active:not(:disabled) {
+.emotion-75:hover:not(:disabled) {
   background-color: #e6f4ff;
+}
+
+.emotion-75:active:not(:disabled) {
+  background-color: #01396e;
 }
 
 .emotion-75:active:not(:disabled) svg {
@@ -4797,10 +4814,10 @@ exports[`Radio Player player with popout link 1`] = `
 .emotion-92 {
   background-color: #ffffff;
   border-color: #0a68c1;
-  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  border-style: solid;
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;
@@ -6381,8 +6398,8 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #0a68c1;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -6412,6 +6429,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 
 .emotion-65:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-65:disabled svg {
@@ -6463,8 +6481,8 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #9c9c9c;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -6632,8 +6650,8 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #0a68c1;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -6663,6 +6681,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 
 .emotion-88:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-88:disabled svg {
@@ -6698,10 +6717,10 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 .emotion-91 {
   background-color: #ffffff;
   border-color: #0a68c1;
-  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  border-style: solid;
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;
@@ -6721,8 +6740,12 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-91:active:not(:disabled) {
+.emotion-91:hover:not(:disabled) {
   background-color: #e6f4ff;
+}
+
+.emotion-91:active:not(:disabled) {
+  background-color: #01396e;
 }
 
 .emotion-91:active:not(:disabled) svg {
@@ -6878,10 +6901,10 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 .emotion-108 {
   background-color: #ffffff;
   border-color: #0a68c1;
-  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  border-style: solid;
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;

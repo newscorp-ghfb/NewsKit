@@ -1,4 +1,4 @@
-import {Breakpoints, BreakpointKeys, Theme} from '../themes';
+import {Breakpoints, BreakpointKeys, Theme} from '../theme';
 
 interface ThemeProp {
   theme: Theme;

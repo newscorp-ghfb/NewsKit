@@ -1,11 +1,11 @@
 import React, {useContext} from 'react';
 import {styled, css} from '../utils/style';
-import {BreakpointKeys} from '../themes';
 import {getMediaQueryFromTheme} from '../utils/responsive-helpers';
 import {GridContext} from './context';
 import {GridProps, CellProps} from './types';
 import {getOverridableProp, OverrideProp} from './utils';
 import {ThemeProp} from '../utils/style-types';
+import {BreakpointKeys} from '../theme';
 
 const generateBreakpointConfig = (breakpoint: BreakpointKeys) => ({
   theme,
@@ -21,7 +21,7 @@ const generateBreakpointConfig = (breakpoint: BreakpointKeys) => ({
 
   // Calculations
   const colSpan = props[breakpoint] || (breakpoint === 'xs' ? 1 : 0);
-  const colWidth = 100 / theme.grid.columns;
+  const colWidth = 100 / theme.componentDefaults.grid.columns;
   const width = colSpan * colWidth;
   const offsetColumnGutter = colOffset * colWidth;
   const halfColumnGutter =

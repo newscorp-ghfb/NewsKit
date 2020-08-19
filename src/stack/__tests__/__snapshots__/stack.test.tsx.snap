@@ -40,8 +40,8 @@ exports[`Stack renders nested stack as list 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -334,8 +334,8 @@ exports[`Stack renders nested stack as list when both are list 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -652,8 +652,8 @@ exports[`Stack renders stack as list with spacing 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -911,8 +911,8 @@ exports[`Stack renders stack when no properties are set 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -1103,8 +1103,8 @@ exports[`Stack renders stack with flex grow and shrink 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -1277,8 +1277,8 @@ exports[`Stack renders stack with flex grow and shrink 2`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -1451,8 +1451,8 @@ exports[`Stack renders where a nested stack with stackDistribution 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -1691,8 +1691,8 @@ exports[`Stack renders where stackDistribution is invalid 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -1902,8 +1902,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceS
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -2139,8 +2139,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceS
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -2372,8 +2372,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -2586,8 +2586,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -2800,8 +2800,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -3041,8 +3041,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -3278,8 +3278,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -3519,8 +3519,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -3756,8 +3756,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -3967,8 +3967,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -4178,8 +4178,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -4389,8 +4389,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -4600,8 +4600,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -4811,8 +4811,8 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -5028,8 +5028,8 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceS
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -5265,8 +5265,8 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceS
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -5498,8 +5498,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -5712,8 +5712,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -5926,8 +5926,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -6167,8 +6167,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -6404,8 +6404,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -6645,8 +6645,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the space i
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -6882,8 +6882,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -7093,8 +7093,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -7304,8 +7304,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -7515,8 +7515,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -7726,8 +7726,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -7937,8 +7937,8 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -8154,8 +8154,8 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceStac
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -8391,8 +8391,8 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceStac
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -8624,8 +8624,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -8838,8 +8838,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -9052,8 +9052,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -9293,8 +9293,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -9530,8 +9530,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -9771,8 +9771,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -10008,8 +10008,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -10219,8 +10219,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -10430,8 +10430,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -10641,8 +10641,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -10852,8 +10852,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -11063,8 +11063,8 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -11280,8 +11280,8 @@ exports[`Stack renders where the stack flow is invalid 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -11487,8 +11487,8 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceSta
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -11724,8 +11724,8 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceSta
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -11961,8 +11961,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -12175,8 +12175,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -12389,8 +12389,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -12630,8 +12630,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -12867,8 +12867,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -13108,8 +13108,8 @@ exports[`Stack renders where the stack flow is vertical-center and the space is 
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -13345,8 +13345,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -13556,8 +13556,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -13767,8 +13767,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -13978,8 +13978,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -14189,8 +14189,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -14400,8 +14400,8 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -14617,8 +14617,8 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceStack
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -14854,8 +14854,8 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceStack
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -15091,8 +15091,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -15305,8 +15305,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -15519,8 +15519,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -15760,8 +15760,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -15997,8 +15997,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -16238,8 +16238,8 @@ exports[`Stack renders where the stack flow is vertical-left and the space is se
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -16475,8 +16475,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -16686,8 +16686,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -16916,8 +16916,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -17108,8 +17108,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -17319,8 +17319,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -17530,8 +17530,8 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -17747,8 +17747,8 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceStac
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -17984,8 +17984,8 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceStac
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -18221,8 +18221,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -18435,8 +18435,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -18649,8 +18649,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -18890,8 +18890,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -19127,8 +19127,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -19368,8 +19368,8 @@ exports[`Stack renders where the stack flow is vertical-right and the space is s
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -19605,8 +19605,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -19816,8 +19816,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -20027,8 +20027,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -20238,8 +20238,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -20452,8 +20452,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -20663,8 +20663,8 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -20880,8 +20880,8 @@ exports[`Stack renders with valid flow 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -21091,8 +21091,8 @@ exports[`Stack renders with valid stackDistribution 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {

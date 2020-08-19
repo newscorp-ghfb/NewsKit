@@ -1,7 +1,7 @@
 import {
   styled,
   getColorFromTheme,
-  getSizingFromTheme,
+  getSpacingFromTheme,
   getTypePresetFromTheme,
   getFontsFromTheme,
   getFontSizingFromTheme,
@@ -30,7 +30,7 @@ export const ProgrammeTitle = styled(H1)<CenterProp>`
 `;
 
 export const ProgrammeDescription = styled(Label)<CenterProp>`
-  margin-bottom: ${getSizingFromTheme('space050')};
+  margin-bottom: ${getSpacingFromTheme('space050')};
   ${getTypePresetFromTheme('subhead010')};
   text-align: ${({center}) => (center ? 'center' : 'left')};
   width: 100%;

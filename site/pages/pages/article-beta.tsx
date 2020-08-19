@@ -71,16 +71,19 @@ const Description = styled.span`
   display: block;
 `;
 
-const newsKitDaily = createTheme('newskit-daily', {
-  themeOverrider: () => ({
-    grid: {
-      maxWidth: 1280,
-      rowGutters: {
-        md: 16,
-        lg: 16,
+const newsKitDaily = createTheme({
+  name: 'newskit-daily',
+  overrides: {
+    componentDefaults: {
+      grid: {
+        maxWidth: 1280,
+        rowGutters: {
+          md: 16,
+          lg: 16,
+        },
       },
     },
-  }),
+  },
 });
 
 const Article: React.FC<{

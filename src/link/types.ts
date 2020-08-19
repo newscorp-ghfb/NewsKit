@@ -1,5 +1,9 @@
-import {TypePresetKeys, IconSizeKeys, SizingKeys} from '../themes';
-import {StylePresetKeys} from '../themes/mappers/style-preset';
+import {
+  TypePresetKeys,
+  IconSizeKeys,
+  SizingKeys,
+  StylePresetKeys,
+} from '../theme';
 import {MQ} from '../utils/style';
 import {EventContext} from '../instrumentation/types';
 

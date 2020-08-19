@@ -1,5 +1,4 @@
-import {SizingKeys} from '../themes';
-import {SpacingPresetKeys} from '../themes/mappers/spacing';
+import {SizingKeys, SpacePresetKeys} from '../theme';
 
 export interface BylineData {
   author: string;
@@ -21,7 +20,7 @@ export interface BylineProps {
     };
     divider?: {
       stylePreset?: string;
-      spaceInline?: SpacingPresetKeys;
+      spaceInline?: SpacePresetKeys;
     };
   };
 }

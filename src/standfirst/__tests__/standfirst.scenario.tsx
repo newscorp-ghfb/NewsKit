@@ -1,9 +1,10 @@
 import * as React from 'react';
 import {Standfirst} from '..';
-import {createTheme, ThemeProvider} from '../../themes';
+import {createTheme, ThemeProvider} from '../../theme';
 
-const myCustomTheme = createTheme('my-custom-standfirst-theme', {
-  themeOverrider: () => ({
+const myCustomTheme = createTheme({
+  name: 'my-custom-standfirst-theme',
+  overrides: {
     stylePresets: {
       standfirstCustom: {
         base: {
@@ -18,7 +19,7 @@ const myCustomTheme = createTheme('my-custom-standfirst-theme', {
         letterSpacing: 0,
       },
     },
-  }),
+  },
 });
 
 const bodyString =

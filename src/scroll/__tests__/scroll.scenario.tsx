@@ -2,7 +2,6 @@ import * as React from 'react';
 import {Scroll, ScrollFlow} from '..';
 import {styled, getColorFromTheme} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
-import {newskitLightTheme} from '../../themes';
 import {Tag} from '../../tag/tag';
 import {Stack} from '../../stack/stack';
 
@@ -44,7 +43,7 @@ export default {
       component: () => (
         <MainContainer>
           <StorybookHeading>Scroll with default only</StorybookHeading>
-          <Container theme={newskitLightTheme}>
+          <Container>
             <Scroll>
               <Block>
                 <Stack flow="horizontal-top">{tags}</Stack>
@@ -62,7 +61,7 @@ export default {
           <StorybookHeading>
             Scroll flow set to {ScrollFlow.horizontal}
           </StorybookHeading>
-          <Container theme={newskitLightTheme}>
+          <Container>
             <Scroll flow={ScrollFlow.horizontal}>
               <Block>
                 <Stack flow="horizontal-center" space="sizing040">
@@ -82,7 +81,7 @@ export default {
           <StorybookHeading>
             Scroll flow set to {ScrollFlow.vertical}
           </StorybookHeading>
-          <Container theme={newskitLightTheme}>
+          <Container>
             <Scroll flow={ScrollFlow.vertical}>
               <Block>
                 <Stack flow="vertical-left" space="sizing040">

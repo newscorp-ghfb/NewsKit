@@ -1,5 +1,4 @@
-import {PaddingPresetKeys} from '../themes/mappers/spacing';
-import {SizingKeys, IconSizeKeys} from '../themes';
+import {SizingKeys, IconSizeKeys, PaddingPresetKeys} from '../theme';
 
 export enum FlagSize {
   Small = 'small',

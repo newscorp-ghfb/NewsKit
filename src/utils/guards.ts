@@ -1,4 +1,4 @@
-import {FontConfig} from '../themes/newskit-light/fonts';
+import {FontConfig} from '../theme/primitives/fonts';
 
 export const isFontConfigObject = (
   object: FontConfig | string | number,

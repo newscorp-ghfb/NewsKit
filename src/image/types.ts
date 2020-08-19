@@ -9,7 +9,7 @@ import {
   PaddingTopProperty,
 } from 'csstype';
 import {MQ} from '../utils/style';
-import {StylePresetKeys} from '../themes/mappers/style-preset';
+import {StylePresetKeys} from '../theme';
 
 interface Image extends ImgHTMLAttributes<HTMLImageElement> {
   height?: HeightProperty<string>;

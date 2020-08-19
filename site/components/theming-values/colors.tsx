@@ -1,11 +1,11 @@
 import * as React from 'react';
 import {
-  ColorPrimitives,
-  colorPrimitives,
   styled,
   ColorKeys,
   getSizingFromTheme,
+  Colors as ColorPrimitives,
 } from 'newskit';
+import {colors as colorPrimitives} from 'newskit/theme/primitives';
 import {LegacyBlock} from '../legacy-block';
 import {Header, ExampleWrapper} from './common';
 
@@ -35,7 +35,7 @@ export const TextBoxSwatch = styled.span<{
   display: inline-block;
   width: 192px;
   height: ${getSizingFromTheme('sizing060')};
-  border-radius: ${({theme}) => theme.borderRadius.borderRadiusDefault};
+  border-radius: ${({theme}) => theme.borders.borderRadiusDefault};
   background-color: ${({theme, themeColor}) => theme.colors[themeColor]};
   color: ${({theme, dark}) =>
     dark ? theme.colors.white : theme.colors.inkContrast};

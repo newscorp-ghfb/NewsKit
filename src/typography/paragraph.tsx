@@ -2,10 +2,10 @@ import {
   styled,
   css,
   getTypePresetFromTheme,
-  getColorFromTheme,
   CSSObject,
+  getColorFromTheme,
 } from '../utils/style';
-import {ColorKeys} from '../themes';
+import {ColorKeys} from '../theme';
 
 export interface ParagraphProps {
   bold?: boolean;
@@ -24,7 +24,7 @@ export const Paragraph = styled.p<ParagraphProps>`
   }}
   font-weight: ${({theme, bold}) => (bold ? theme.fonts.fontWeight030 : null)};
   color: ${getColorFromTheme('inkBase')};
-  
+
   ${({dropCap, dropCapColor, theme}) =>
     dropCap &&
     css`

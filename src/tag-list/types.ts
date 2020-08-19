@@ -1,5 +1,5 @@
 import {TagProps} from '../tag';
-import {SizingKeys} from '../themes';
+import {SizingKeys} from '../theme';
 
 export interface TagData extends Pick<TagProps, 'href'> {
   label: React.ReactNode;

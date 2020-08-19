@@ -1,0 +1,2261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compileTheme full theme compile 1`] = `
+Object {
+  "animations": Object {
+    "animationDuration010": "100ms",
+    "animationDuration020": "200ms",
+    "animationDuration030": "300ms",
+    "animationDuration040": "400ms",
+    "animationDuration050": "500ms",
+    "animationEaseIn": "cubic-bezier(.5, 0, 1, 1)",
+    "animationEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
+    "animationEaseOut": "cubic-bezier(0, 0, .5, 1)",
+  },
+  "borders": Object {
+    "borderRadiusCircle": "50%",
+    "borderRadiusDefault": "8px",
+    "borderRadiusPill": "20rem",
+    "borderRadiusRounded010": "4px",
+    "borderRadiusRounded020": "8px",
+    "borderRadiusRounded030": "12px",
+    "borderRadiusRounded040": "16px",
+    "borderRadiusRounded050": "24px",
+    "borderRadiusSharp": "0",
+    "borderWidth000": "0",
+    "borderWidth010": "1px",
+    "borderWidth020": "2px",
+    "borderWidth030": "4px",
+    "borderWidthDefault": "1px",
+  },
+  "breakpoints": Object {
+    "lg": 1440,
+    "md": 960,
+    "sm": 480,
+    "xs": 0,
+  },
+  "colors": Object {
+    "accessible010": "#2F75D7",
+    "accessible020": "#903D91",
+    "amber010": "#ffe3b0",
+    "amber020": "#ffd284",
+    "amber030": "#ffc058",
+    "amber040": "#ffad2c",
+    "amber050": "#ff9900",
+    "amber060": "#ff8f00",
+    "amber070": "#ff8200",
+    "amber080": "#ff7200",
+    "amber090": "#ff6000",
+    "amber100": "#ff4b00",
+    "black": "#000000",
+    "blue010": "#e6f4ff",
+    "blue020": "#d5ebff",
+    "blue030": "#abd5fc",
+    "blue040": "#6eb2f2",
+    "blue050": "#358cde",
+    "blue060": "#0a68c1",
+    "blue070": "#02509b",
+    "blue080": "#01396e",
+    "blue090": "#002141",
+    "blue100": "#000a14",
+    "green010": "#e6faeb",
+    "green020": "#b8efc8",
+    "green030": "#8ee1a6",
+    "green040": "#67cf86",
+    "green050": "#42ba67",
+    "green060": "#23a248",
+    "green070": "#148f39",
+    "green080": "#0a782a",
+    "green090": "#005d1c",
+    "green100": "#003e11",
+    "inkBase": "#2e2e2e",
+    "inkBrand010": "#0a68c1",
+    "inkContrast": "#0a0a0a",
+    "inkHeadingLink": "#2e2e2e",
+    "inkHeadingLinkActive": "#2F75D7",
+    "inkHeadingLinkHover": "#2F75D7",
+    "inkHeadingLinkVisited": "#2e2e2e",
+    "inkInformative": "#471e79",
+    "inkInverse": "#ffffff",
+    "inkLink": "#2f75d7",
+    "inkLinkActive": "#2f75d7",
+    "inkLinkHover": "#2f75d7",
+    "inkLinkVisited": "#903d91",
+    "inkNegative": "#d20600",
+    "inkNonEssential": "#9c9c9c",
+    "inkNotice": "#ff8f00",
+    "inkPositive": "#0a782a",
+    "inkSubtle": "#535353",
+    "interactive010": "#e6f4ff",
+    "interactive020": "#d5ebff",
+    "interactive030": "#0a68c1",
+    "interactive040": "#02509b",
+    "interactive050": "#01396e",
+    "interactive110": "#fafafa",
+    "interactive120": "#f0f0f0",
+    "interactive130": "#535353",
+    "interactive140": "#2e2e2e",
+    "interactive150": "#0a0a0a",
+    "interactive210": "#f0f0f0",
+    "interactive220": "#c0c0c0",
+    "interactive230": "#0a68c1",
+    "interactive240": "#e6f4ff",
+    "interactive250": "#d5ebff",
+    "interactiveDisabled": "#e4e4e4",
+    "interface010": "#ffffff",
+    "interface020": "#fafafa",
+    "interface030": "#f0f0f0",
+    "interface040": "#e4e4e4",
+    "interface050": "#cccccc",
+    "interface060": "#0a0a0a",
+    "interfaceBackground": "#ffffff",
+    "interfaceBrand010": "#0a68c1",
+    "interfaceBrand020": "#d5ebff",
+    "inverse": "#000000",
+    "neutral010": "#fafafa",
+    "neutral020": "#f0f0f0",
+    "neutral030": "#e4e4e4",
+    "neutral040": "#cccccc",
+    "neutral050": "#c0c0c0",
+    "neutral060": "#9c9c9c",
+    "neutral070": "#777777",
+    "neutral080": "#535353",
+    "neutral090": "#2e2e2e",
+    "neutral100": "#0a0a0a",
+    "purple010": "#b2c3d5",
+    "purple020": "#93a1c3",
+    "purple030": "#757cb1",
+    "purple040": "#5d589f",
+    "purple050": "#503b8c",
+    "purple060": "#471e79",
+    "purple070": "#50196b",
+    "purple080": "#54145d",
+    "purple090": "#4f1049",
+    "purple100": "#400c30",
+    "red010": "#ffe6e5",
+    "red020": "#ffb8b8",
+    "red030": "#ff8a8a",
+    "red040": "#ff5c5c",
+    "red050": "#ff362e",
+    "red060": "#ef1703",
+    "red070": "#d20600",
+    "red080": "#a60100",
+    "red090": "#790101",
+    "red100": "#4d0000",
+    "semanticInformative010": "#471e79",
+    "semanticNegative010": "#ffb8b8",
+    "semanticNegative020": "#ff5c5c",
+    "semanticNegative030": "#ef1703",
+    "semanticNegative040": "#d20600",
+    "semanticNegative050": "#a60100",
+    "semanticNotice010": "#ff8f00",
+    "semanticPositive010": "#b8efc8",
+    "semanticPositive020": "#67cf86",
+    "semanticPositive030": "#23a248",
+    "semanticPositive040": "#148f39",
+    "semanticPositive050": "#0a782a",
+    "skeleton010": "#f0f0f0",
+    "skeleton020": "#e4e4e4",
+    "socialFacebook": "#1877f2",
+    "socialInstagram": "#c32aa3",
+    "socialReddit": "#ff4500",
+    "socialTwitter": "#1da1f2",
+    "socialWhatsapp": "#25d366",
+    "socialYoutube": "#ff0000",
+    "transparent": "transparent",
+    "white": "#ffffff",
+  },
+  "compiled": true,
+  "componentDefaults": Object {
+    "button": Object {
+      "large": Object {
+        "iconSize": "iconSize030",
+        "minHeight": "sizing090",
+        "minWidth": "sizing110",
+        "paddingPreset": "spaceInset040Squish",
+        "space": "sizing020",
+        "stylePreset": "buttonDefault",
+        "typePreset": "buttonLarge",
+      },
+      "medium": Object {
+        "iconSize": "iconSize020",
+        "minHeight": "sizing080",
+        "minWidth": "sizing100",
+        "paddingPreset": "spaceInset030Squish",
+        "space": "sizing020",
+        "stylePreset": "buttonDefault",
+        "typePreset": "buttonMedium",
+      },
+      "small": Object {
+        "iconSize": "iconSize010",
+        "minHeight": "sizing060",
+        "minWidth": "sizing090",
+        "paddingPreset": "spaceInset020Squish",
+        "space": "sizing020",
+        "stylePreset": "buttonDefault",
+        "typePreset": "buttonSmall",
+      },
+    },
+    "byline": Object {
+      "divider": Object {
+        "spaceInline": "space020",
+        "stylePreset": "bylineDivider",
+      },
+      "link": Object {
+        "stylePreset": "bylineLink",
+        "typePreset": "meta020",
+      },
+      "space": "sizing020",
+      "stylePreset": "byline",
+      "typePreset": "meta020",
+    },
+    "card": Object {
+      "actionsContainer": Object {
+        "minHeight": "sizing080",
+        "paddingPreset": "spaceInset000Squish",
+        "stylePreset": "cardActionsContainer",
+      },
+      "media": Object {
+        "stylePreset": "imageSharp",
+      },
+    },
+    "dateTime": Object {
+      "prefix": Object {
+        "stylePreset": "dateTimePrefix",
+        "typePreset": "meta020",
+      },
+      "stylePreset": "dateTime",
+      "suffix": Object {
+        "stylePreset": "dateTimeSuffix",
+        "typePreset": "meta020",
+      },
+      "typePreset": "meta020",
+    },
+    "divider": Object {
+      "stylePreset": "dividerHorizontal",
+    },
+    "flag": Object {
+      "large": Object {
+        "iconSize": "iconSize010",
+        "minHeight": "sizing060",
+        "paddingPreset": "spaceInset020Squish",
+        "space": "sizing010",
+        "stylePreset": "flagDefault",
+        "typePreset": "flag020",
+      },
+      "small": Object {
+        "iconSize": "iconSize010",
+        "minHeight": "sizing050",
+        "paddingPreset": "spaceInset010Squish",
+        "space": "sizing010",
+        "stylePreset": "flagDefault",
+        "typePreset": "flag010",
+      },
+    },
+    "grid": Object {
+      "columnGutters": Object {
+        "lg": 24,
+        "md": 24,
+        "sm": 16,
+        "xs": 16,
+      },
+      "columns": 12,
+      "containerMargin": Object {
+        "lg": 24,
+        "md": 24,
+        "sm": 16,
+        "xs": 16,
+      },
+      "maxWidth": 1920,
+      "rowGutters": Object {
+        "lg": 24,
+        "md": 24,
+        "sm": 16,
+        "xs": 16,
+      },
+    },
+    "headline": Object {
+      "heading": Object {
+        "stylePreset": "headlineContent",
+        "typePreset": Object {
+          "lg": "heading080",
+          "md": "heading070",
+          "sm": "heading060",
+          "xs": "heading060",
+        },
+      },
+      "kicker": Object {
+        "spaceInline": Object {
+          "lg": "space040",
+          "md": "space040",
+          "sm": "space030",
+          "xs": "space030",
+        },
+        "stylePreset": "headlineKicker",
+        "typePreset": Object {
+          "lg": "heading080",
+          "md": "heading070",
+          "sm": "heading060",
+          "xs": "heading060",
+        },
+      },
+    },
+    "iconButton": Object {
+      "large": Object {
+        "height": "sizing090",
+        "paddingPreset": "spaceInset040",
+        "stylePreset": "iconButtonDefault",
+        "width": "sizing090",
+      },
+      "medium": Object {
+        "height": "sizing080",
+        "paddingPreset": "spaceInset030",
+        "stylePreset": "iconButtonDefault",
+        "width": "sizing080",
+      },
+      "small": Object {
+        "height": "sizing060",
+        "paddingPreset": "spaceInset020",
+        "stylePreset": "iconButtonDefault",
+        "width": "sizing060",
+      },
+    },
+    "image": Object {
+      "stylePreset": "imageSharp",
+    },
+    "link": Object {
+      "externalIcon": Object {
+        "size": "iconSize010",
+      },
+      "space": "sizing010",
+      "stylePreset": "linkInline",
+    },
+    "linkStandalone": Object {
+      "stylePreset": "linkStandalone",
+    },
+    "shareBar": Object {
+      "items": Object {
+        "space": "sizing020",
+      },
+      "label": Object {
+        "spaceInline": "space040",
+        "spaceStack": "space040",
+        "stylePreset": "shareBarLabel",
+        "typePreset": "label020",
+      },
+    },
+    "standfirst": Object {
+      "styledText": Object {
+        "stylePreset": "standfirst",
+        "typePreset": Object {
+          "md": "subhead030",
+          "xs": "subhead020",
+        },
+      },
+    },
+    "tag": Object {
+      "large": Object {
+        "iconSize": "iconSize020",
+        "minHeight": "sizing070",
+        "paddingPreset": "spaceInset020Squish",
+        "space": "sizing010",
+        "stylePreset": "tagDefault",
+        "typePreset": "tag030",
+      },
+      "medium": Object {
+        "iconSize": "iconSize010",
+        "minHeight": "sizing060",
+        "paddingPreset": "spaceInset020Squish",
+        "space": "sizing010",
+        "stylePreset": "tagDefault",
+        "typePreset": "tag020",
+      },
+      "small": Object {
+        "iconSize": "iconSize010",
+        "minHeight": "sizing050",
+        "paddingPreset": "spaceInset010Squish",
+        "space": "sizing010",
+        "stylePreset": "tagDefault",
+        "typePreset": "tag010",
+      },
+    },
+    "titleBar": Object {
+      "heading": Object {
+        "typePreset": Object {
+          "lg": "heading070",
+          "md": "heading050",
+          "xs": "heading040",
+        },
+      },
+      "paddingPreset": Object {
+        "md": "spaceInset040Squish",
+        "xs": "spaceInset030Squish",
+      },
+      "stylePreset": "titleBar",
+    },
+    "unorderedList": Object {
+      "content": Object {
+        "stylePreset": "unorderedListItemContent",
+        "typePreset": "body010",
+      },
+      "marker": Object {
+        "size": "iconSize005",
+        "spaceInline": "space020",
+        "stylePreset": "unorderedListItemMarker",
+      },
+      "spaceStack": "space040",
+    },
+  },
+  "fonts": Object {
+    "fontFamily1": Object {
+      "cropAdjustments": Object {
+        "12px": Object {
+          "bottom": -0.5,
+          "top": 1,
+        },
+        "14px": Object {
+          "top": 1.2,
+        },
+        "24px": Object {
+          "bottom": 1,
+          "top": 1,
+        },
+      },
+      "cropConfig": Object {
+        "bottom": 10,
+        "top": 8,
+      },
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+    },
+    "fontFamily2": Object {
+      "cropAdjustments": Object {
+        "12px": Object {
+          "bottom": -0.5,
+          "top": 1,
+        },
+        "14px": Object {
+          "top": 1.2,
+        },
+        "24px": Object {
+          "bottom": 1,
+          "top": 1,
+        },
+      },
+      "cropConfig": Object {
+        "bottom": 10,
+        "top": 8,
+      },
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+    },
+    "fontFamily3": Object {
+      "fontFamily": "system-ui, \\"Open Sans\\", sans-serif",
+    },
+    "fontFamily4": Object {
+      "cropConfig": Object {
+        "bottom": 3,
+        "top": 3,
+      },
+      "fontFamily": "\\"Courier\\", monospace",
+    },
+    "fontLetterSpacing010": "-0.5px",
+    "fontLetterSpacing020": "-0.25px",
+    "fontLetterSpacing030": "0",
+    "fontLetterSpacing040": "0.25px",
+    "fontLetterSpacing050": "0.5px",
+    "fontLineHeight010": 1,
+    "fontLineHeight020": 1.125,
+    "fontLineHeight030": 1.25,
+    "fontLineHeight040": 1.5,
+    "fontLineHeight050": 1.75,
+    "fontLineHeight060": 2,
+    "fontSize010": "12px",
+    "fontSize020": "14px",
+    "fontSize030": "16px",
+    "fontSize040": "18px",
+    "fontSize050": "20px",
+    "fontSize060": "22px",
+    "fontSize070": "24px",
+    "fontSize080": "28px",
+    "fontSize090": "32px",
+    "fontSize100": "36px",
+    "fontSize110": "40px",
+    "fontSize120": "44px",
+    "fontSize130": "48px",
+    "fontSize140": "56px",
+    "fontSize150": "64px",
+    "fontSize160": "80px",
+    "fontWeight010": 300,
+    "fontWeight020": 400,
+    "fontWeight030": 500,
+    "fontWeight040": 700,
+  },
+  "icons": Object {},
+  "name": "my theme",
+  "overlays": Object {
+    "gradientDark010": "linear-gradient(180deg, rgba(255,255,255,0.00) 0%, rgba(255, 255, 255, 1) 100%)",
+    "gradientLight010": "linear-gradient(180deg, rgba(51,51,51,0.00) 0%, #0A0A0A  100%)",
+    "overlayDark010": "rgba(10,10,10,0.20)",
+    "overlayDark020": "rgba(10,10,10,0.40)",
+    "overlayDark030": "rgba(10,10,10,0.60)",
+    "overlayDark040": "rgba(10,10,10,0.80)",
+    "overlayLight010": "rgba(255,255,255,0.20)",
+    "overlayLight020": "rgba(255,255,255,0.40)",
+    "overlayLight030": "rgba(255,255,255,0.60)",
+    "overlayLight040": "rgba(255,255,255,0.80)",
+  },
+  "shadows": Object {
+    "shadow010": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
+    "shadow020": "0 0 1px 0 rgba(40,41,61,0.04), 0 2px 4px 0 rgba(96,97,112,0.16)",
+    "shadow030": "0 0 2px 0 rgba(40,41,61,0.04), 0 4px 8px 0 rgba(96,97,112,0.16)",
+    "shadow040": "0 2px 4px 0 rgba(40,41,61,0.04), 0 8px 16px 0 rgba(96,97,112,0.16)",
+    "shadow050": "0 2px 8px 0 rgba(40,41,61,0.04), 0 16px 24px 0 rgba(96,97,112,0.16)",
+    "shadow060": "0 2px 8px 0 rgba(40,41,61,0.08), 0 20px 32px 0 rgba(96,97,112,0.24)",
+  },
+  "sizing": Object {
+    "iconSize005": "8px",
+    "iconSize010": "16px",
+    "iconSize020": "24px",
+    "iconSize030": "32px",
+    "iconSize040": "48px",
+    "iconSize050": "64px",
+    "sizing000": "0",
+    "sizing010": "4px",
+    "sizing020": "8px",
+    "sizing030": "12px",
+    "sizing040": "16px",
+    "sizing045": "20px",
+    "sizing050": "24px",
+    "sizing060": "32px",
+    "sizing070": "40px",
+    "sizing080": "48px",
+    "sizing090": "64px",
+    "sizing100": "80px",
+    "sizing110": "120px",
+    "sizing120": "160px",
+  },
+  "spacePresets": Object {
+    "space000": "0",
+    "space010": "4px",
+    "space020": "8px",
+    "space030": "12px",
+    "space040": "16px",
+    "space050": "24px",
+    "space060": "32px",
+    "space070": "40px",
+    "space080": "48px",
+    "space090": "64px",
+    "space100": "80px",
+    "space110": "120px",
+    "space120": "160px",
+    "spaceInset000": "0",
+    "spaceInset000Squish": "0",
+    "spaceInset000Stretch": "0",
+    "spaceInset010": "4px",
+    "spaceInset010Squish": "4px 8px",
+    "spaceInset010Stretch": "8px 4px",
+    "spaceInset020": "8px",
+    "spaceInset020Squish": "8px 12px",
+    "spaceInset020Stretch": "12px 8px",
+    "spaceInset030": "12px",
+    "spaceInset030Squish": "12px 16px",
+    "spaceInset030Stretch": "16px 12px",
+    "spaceInset040": "16px",
+    "spaceInset040Squish": "16px 24px",
+    "spaceInset040Stretch": "24px 16px",
+    "spaceInset050": "24px",
+    "spaceInset050Squish": "24px 32px",
+    "spaceInset050Stretch": "32px 24px",
+    "spaceInset060": "32px",
+    "spaceInset060Squish": "32px 48px",
+    "spaceInset060Stretch": "48px 32px",
+    "spaceInset070": "48px",
+  },
+  "stylePresets": Object {
+    "audioPlayerControlButton": Object {
+      "active": Object {
+        "backgroundColor": "#d5ebff",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "50%",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+      "disabled": Object {
+        "backgroundColor": "transparent",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#e6f4ff",
+      },
+      "loading": Object {
+        "backgroundColor": "#d5ebff",
+        "color": "#0a68c1",
+      },
+    },
+    "audioPlayerLabels": Object {
+      "base": Object {
+        "color": "#535353",
+      },
+    },
+    "audioPlayerPlayPauseButton": Object {
+      "active": Object {
+        "backgroundColor": "#01396e",
+      },
+      "base": Object {
+        "backgroundColor": "#0a68c1",
+        "borderRadius": "50%",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "disabled": Object {
+        "backgroundColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#02509b",
+      },
+      "loading": Object {
+        "backgroundColor": "#d5ebff",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+    },
+    "audioPlayerPopoutButton": Object {
+      "active": Object {
+        "backgroundColor": "#d5ebff",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "50%",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+      "disabled": Object {
+        "backgroundColor": "transparent",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#e6f4ff",
+      },
+      "loading": Object {
+        "backgroundColor": "#d5ebff",
+        "color": "#0a68c1",
+      },
+    },
+    "audioPlayerSeekBarBuffering": Object {
+      "base": Object {
+        "backgroundColor": "rgba(10,10,10,0.20)",
+        "borderRadius": "20rem",
+      },
+    },
+    "audioPlayerSeekBarIndicator": Object {
+      "base": Object {
+        "backgroundColor": "#0a68c1",
+        "borderRadius": "20rem",
+      },
+    },
+    "audioPlayerSeekBarTrack": Object {
+      "base": Object {
+        "backgroundColor": "#f0f0f0",
+        "borderRadius": "20rem",
+      },
+    },
+    "audioPlayerThumb": Object {
+      "active": Object {
+        "backgroundColor": "#01396e",
+        "iconColor": "#535353",
+      },
+      "base": Object {
+        "backgroundColor": "#ffffff",
+        "borderColor": "#0a68c1",
+        "borderRadius": "50%",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "boxShadow": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#e6f4ff",
+      },
+    },
+    "buttonDefault": Object {
+      "active": Object {
+        "backgroundColor": "#01396e",
+      },
+      "base": Object {
+        "backgroundColor": "#0a68c1",
+        "borderRadius": "8px",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "disabled": Object {
+        "backgroundColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#02509b",
+      },
+      "loading": Object {
+        "backgroundColor": "#d5ebff",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+    },
+    "buttonMinimalNegative": Object {
+      "active": Object {
+        "backgroundColor": "#ff5c5c",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "8px",
+        "color": "#d20600",
+        "iconColor": "#d20600",
+      },
+      "disabled": Object {
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#ffb8b8",
+      },
+      "loading": Object {
+        "backgroundColor": "#ff5c5c",
+      },
+    },
+    "buttonMinimalPositive": Object {
+      "active": Object {
+        "backgroundColor": "#67cf86",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "8px",
+        "color": "#0a782a",
+        "iconColor": "#0a782a",
+      },
+      "disabled": Object {
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#b8efc8",
+      },
+      "loading": Object {
+        "backgroundColor": "#67cf86",
+      },
+    },
+    "buttonMinimalPrimary": Object {
+      "active": Object {
+        "backgroundColor": "#d5ebff",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "8px",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+      "disabled": Object {
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#e6f4ff",
+      },
+      "loading": Object {
+        "backgroundColor": "#d5ebff",
+      },
+    },
+    "buttonMinimalSecondary": Object {
+      "active": Object {
+        "backgroundColor": "#f0f0f0",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "8px",
+        "color": "#2e2e2e",
+        "iconColor": "#2e2e2e",
+      },
+      "disabled": Object {
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#fafafa",
+      },
+      "loading": Object {
+        "backgroundColor": "#f0f0f0",
+      },
+    },
+    "buttonOutlinedNegative": Object {
+      "active": Object {
+        "backgroundColor": "#ff5c5c",
+        "borderColor": "#a60100",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#ef1703",
+        "borderRadius": "8px",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "color": "#d20600",
+        "iconColor": "#d20600",
+      },
+      "disabled": Object {
+        "borderColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#ffb8b8",
+        "borderColor": "#d20600",
+      },
+      "loading": Object {
+        "backgroundColor": "#ff5c5c",
+        "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedPositive": Object {
+      "active": Object {
+        "backgroundColor": "#67cf86",
+        "borderColor": "#0a782a",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#23a248",
+        "borderRadius": "8px",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "color": "#0a782a",
+        "iconColor": "#0a782a",
+      },
+      "disabled": Object {
+        "borderColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#b8efc8",
+        "borderColor": "#148f39",
+      },
+      "loading": Object {
+        "backgroundColor": "#67cf86",
+        "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedPrimary": Object {
+      "active": Object {
+        "backgroundColor": "#d5ebff",
+        "borderColor": "#01396e",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#0a68c1",
+        "borderRadius": "8px",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+      "disabled": Object {
+        "borderColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#e6f4ff",
+        "borderColor": "#02509b",
+      },
+      "loading": Object {
+        "backgroundColor": "#d5ebff",
+        "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedSecondary": Object {
+      "active": Object {
+        "backgroundColor": "#f0f0f0",
+        "borderColor": "#0a0a0a",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#535353",
+        "borderRadius": "8px",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "color": "#2e2e2e",
+        "iconColor": "#2e2e2e",
+      },
+      "disabled": Object {
+        "borderColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#fafafa",
+        "borderColor": "#2e2e2e",
+      },
+      "loading": Object {
+        "backgroundColor": "#f0f0f0",
+        "borderStyle": "none",
+      },
+    },
+    "buttonSocialEmail": Object {
+      "active": Object {
+        "backgroundColor": "#f0f0f0",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "50%",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+      "current": Object {
+        "backgroundColor": "transparent",
+      },
+      "disabled": Object {
+        "backgroundColor": "transparent",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#fafafa",
+      },
+      "loading": Object {
+        "backgroundColor": "#f0f0f0",
+        "color": "#ffffff",
+      },
+    },
+    "buttonSocialFacebook": Object {
+      "active": Object {
+        "backgroundColor": "#f0f0f0",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "50%",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+      "current": Object {
+        "backgroundColor": "transparent",
+      },
+      "disabled": Object {
+        "backgroundColor": "transparent",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#fafafa",
+      },
+      "loading": Object {
+        "backgroundColor": "#f0f0f0",
+        "color": "#ffffff",
+      },
+    },
+    "buttonSocialLink": Object {
+      "active": Object {
+        "backgroundColor": "#f0f0f0",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "50%",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+      "current": Object {
+        "backgroundColor": "transparent",
+      },
+      "disabled": Object {
+        "backgroundColor": "transparent",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#fafafa",
+      },
+      "loading": Object {
+        "backgroundColor": "#f0f0f0",
+        "color": "#ffffff",
+      },
+    },
+    "buttonSocialShare": Object {
+      "active": Object {
+        "backgroundColor": "#f0f0f0",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "50%",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+      "current": Object {
+        "backgroundColor": "transparent",
+      },
+      "disabled": Object {
+        "backgroundColor": "transparent",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#fafafa",
+      },
+      "loading": Object {
+        "backgroundColor": "#f0f0f0",
+        "color": "#ffffff",
+      },
+    },
+    "buttonSocialTwitter": Object {
+      "active": Object {
+        "backgroundColor": "#f0f0f0",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "50%",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+      "current": Object {
+        "backgroundColor": "transparent",
+      },
+      "disabled": Object {
+        "backgroundColor": "transparent",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#fafafa",
+      },
+      "loading": Object {
+        "backgroundColor": "#f0f0f0",
+        "color": "#ffffff",
+      },
+    },
+    "buttonSocialWhatsapp": Object {
+      "active": Object {
+        "backgroundColor": "#f0f0f0",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "50%",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+      "current": Object {
+        "backgroundColor": "transparent",
+      },
+      "disabled": Object {
+        "backgroundColor": "transparent",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#fafafa",
+      },
+      "loading": Object {
+        "backgroundColor": "#f0f0f0",
+        "color": "#ffffff",
+      },
+    },
+    "buttonSolidNegative": Object {
+      "active": Object {
+        "backgroundColor": "#a60100",
+      },
+      "base": Object {
+        "backgroundColor": "#ef1703",
+        "borderRadius": "8px",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "disabled": Object {
+        "backgroundColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#d20600",
+      },
+      "loading": Object {
+        "backgroundColor": "#ff5c5c",
+        "color": "#d20600",
+        "iconColor": "#d20600",
+      },
+    },
+    "buttonSolidPositive": Object {
+      "active": Object {
+        "backgroundColor": "#0a782a",
+      },
+      "base": Object {
+        "backgroundColor": "#23a248",
+        "borderRadius": "8px",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "disabled": Object {
+        "backgroundColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#148f39",
+      },
+      "loading": Object {
+        "backgroundColor": "#67cf86",
+        "color": "#0a782a",
+        "iconColor": "#0a782a",
+      },
+    },
+    "buttonSolidPrimary": Object {
+      "active": Object {
+        "backgroundColor": "#01396e",
+      },
+      "base": Object {
+        "backgroundColor": "#0a68c1",
+        "borderRadius": "8px",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "disabled": Object {
+        "backgroundColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#02509b",
+      },
+      "loading": Object {
+        "backgroundColor": "#d5ebff",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+    },
+    "buttonSolidSecondary": Object {
+      "active": Object {
+        "backgroundColor": "#0a0a0a",
+      },
+      "base": Object {
+        "backgroundColor": "#535353",
+        "borderRadius": "8px",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "disabled": Object {
+        "backgroundColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#2e2e2e",
+      },
+      "loading": Object {
+        "backgroundColor": "#f0f0f0",
+        "color": "#2e2e2e",
+        "iconColor": "#2e2e2e",
+      },
+    },
+    "byline": Object {
+      "base": Object {
+        "color": "#535353",
+      },
+    },
+    "bylineDivider": Object {
+      "base": Object {
+        "borderColor": "#cccccc",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+      },
+    },
+    "bylineLink": Object {
+      "active": Object {
+        "color": "#2f75d7",
+        "iconColor": "#2f75d7",
+      },
+      "base": Object {
+        "color": "#2f75d7",
+        "iconColor": "#2f75d7",
+      },
+      "hover": Object {
+        "color": "#2f75d7",
+        "iconColor": "#2f75d7",
+      },
+      "visited": Object {
+        "color": "#903d91",
+        "iconColor": "#903d91",
+      },
+    },
+    "cardActionsContainer": Object {
+      "base": Object {
+        "backgroundColor": "#ffffff",
+        "borderColor": "#02509b",
+        "borderRadius": "0",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+      },
+    },
+    "dateTime": Object {
+      "base": Object {
+        "color": "#535353",
+      },
+    },
+    "dateTimePrefix": Object {
+      "base": Object {
+        "color": "#535353",
+      },
+    },
+    "dateTimeSuffix": Object {
+      "base": Object {
+        "color": "#535353",
+      },
+    },
+    "dividerHorizontal": Object {
+      "base": Object {
+        "borderColor": "#e4e4e4",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+      },
+    },
+    "dividerVertical": Object {
+      "base": Object {
+        "borderColor": "#e4e4e4",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+      },
+    },
+    "flagDefault": Object {
+      "base": Object {
+        "backgroundColor": "#471e79",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+    },
+    "flagMinimal": Object {
+      "base": Object {
+        "backgroundColor": "transparent",
+        "color": "#471e79",
+        "iconColor": "#471e79",
+      },
+    },
+    "flagSolid": Object {
+      "base": Object {
+        "backgroundColor": "#471e79",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+    },
+    "flagSolidLive": Object {
+      "base": Object {
+        "backgroundColor": "#ef1703",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+    },
+    "headlineContent": Object {
+      "base": Object {
+        "color": "#0a0a0a",
+      },
+    },
+    "headlineKicker": Object {
+      "base": Object {
+        "color": "#0a68c1",
+      },
+    },
+    "iconButtonDefault": Object {
+      "active": Object {
+        "backgroundColor": "#01396e",
+      },
+      "base": Object {
+        "backgroundColor": "#0a68c1",
+        "borderRadius": "50%",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "disabled": Object {
+        "backgroundColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#02509b",
+      },
+      "loading": Object {
+        "backgroundColor": "#d5ebff",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+    },
+    "iconButtonMinimalNegative": Object {
+      "active": Object {
+        "backgroundColor": "#ff5c5c",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "{borders.borderRadiusCircle}}",
+        "color": "#d20600",
+        "iconColor": "#d20600",
+      },
+      "disabled": Object {
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#ffb8b8",
+      },
+      "loading": Object {
+        "backgroundColor": "#ff5c5c",
+      },
+    },
+    "iconButtonMinimalPositive": Object {
+      "active": Object {
+        "backgroundColor": "#67cf86",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "50%",
+        "color": "#0a782a",
+        "iconColor": "#0a782a",
+      },
+      "disabled": Object {
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#b8efc8",
+      },
+      "loading": Object {
+        "backgroundColor": "#67cf86",
+      },
+    },
+    "iconButtonMinimalPrimary": Object {
+      "active": Object {
+        "backgroundColor": "#d5ebff",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "50%",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+      "disabled": Object {
+        "backgroundColor": "transparent",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#e6f4ff",
+      },
+      "loading": Object {
+        "backgroundColor": "#d5ebff",
+        "color": "#0a68c1",
+      },
+    },
+    "iconButtonMinimalSecondary": Object {
+      "active": Object {
+        "backgroundColor": "#f0f0f0",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "50%",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+      "current": Object {
+        "backgroundColor": "transparent",
+      },
+      "disabled": Object {
+        "backgroundColor": "transparent",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#fafafa",
+      },
+      "loading": Object {
+        "backgroundColor": "#f0f0f0",
+        "color": "#ffffff",
+      },
+    },
+    "iconButtonOutlinedNegative": Object {
+      "active": Object {
+        "backgroundColor": "#ff5c5c",
+        "borderColor": "#ef1703",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#ef1703",
+        "borderRadius": "50%",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "color": "#d20600",
+        "iconColor": "#d20600",
+      },
+      "disabled": Object {
+        "borderColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#ffb8b8",
+        "borderColor": "#a60100",
+      },
+      "loading": Object {
+        "backgroundColor": "#ff5c5c",
+        "borderStyle": "none",
+      },
+    },
+    "iconButtonOutlinedPositive": Object {
+      "active": Object {
+        "backgroundColor": "#67cf86",
+        "borderColor": "#0a782a",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#23a248",
+        "borderRadius": "50%",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "color": "#0a782a",
+        "iconColor": "#0a782a",
+      },
+      "disabled": Object {
+        "borderColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#b8efc8",
+        "borderColor": "#148f39",
+      },
+      "loading": Object {
+        "backgroundColor": "#67cf86",
+        "borderStyle": "none",
+      },
+    },
+    "iconButtonOutlinedPrimary": Object {
+      "active": Object {
+        "backgroundColor": "#d5ebff",
+        "borderColor": "#01396e",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#0a68c1",
+        "borderRadius": "50%",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+      "disabled": Object {
+        "borderColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#e6f4ff",
+        "borderColor": "#02509b",
+      },
+      "loading": Object {
+        "backgroundColor": "#d5ebff",
+        "borderStyle": "none",
+      },
+    },
+    "iconButtonOutlinedSecondary": Object {
+      "active": Object {
+        "backgroundColor": "#f0f0f0",
+        "borderColor": "#0a0a0a",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#535353",
+        "borderRadius": "50%",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "color": "#2e2e2e",
+        "iconColor": "#2e2e2e",
+      },
+      "disabled": Object {
+        "borderColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#fafafa",
+        "borderColor": "#2e2e2e",
+      },
+      "loading": Object {
+        "backgroundColor": "#f0f0f0",
+        "borderStyle": "none",
+      },
+    },
+    "iconButtonSolidNegative": Object {
+      "active": Object {
+        "backgroundColor": "#a60100",
+      },
+      "base": Object {
+        "backgroundColor": "#ef1703",
+        "borderRadius": "50%",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "disabled": Object {
+        "backgroundColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#d20600",
+      },
+      "loading": Object {
+        "backgroundColor": "#ff5c5c",
+        "color": "#d20600",
+        "iconColor": "#d20600",
+      },
+    },
+    "iconButtonSolidPositive": Object {
+      "active": Object {
+        "backgroundColor": "#0a782a",
+      },
+      "base": Object {
+        "backgroundColor": "#23a248",
+        "borderRadius": "50%",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "disabled": Object {
+        "backgroundColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#148f39",
+      },
+      "loading": Object {
+        "backgroundColor": "#67cf86",
+        "color": "#0a782a",
+        "iconColor": "#0a782a",
+      },
+    },
+    "iconButtonSolidPrimary": Object {
+      "active": Object {
+        "backgroundColor": "#01396e",
+      },
+      "base": Object {
+        "backgroundColor": "#0a68c1",
+        "borderRadius": "50%",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "disabled": Object {
+        "backgroundColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#02509b",
+      },
+      "loading": Object {
+        "backgroundColor": "#d5ebff",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+    },
+    "iconButtonSolidSecondary": Object {
+      "active": Object {
+        "backgroundColor": "#0a0a0a",
+      },
+      "base": Object {
+        "backgroundColor": "#535353",
+        "borderRadius": "50%",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "disabled": Object {
+        "backgroundColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#2e2e2e",
+      },
+      "loading": Object {
+        "backgroundColor": "#f0f0f0",
+        "color": "#2e2e2e",
+        "iconColor": "#2e2e2e",
+      },
+    },
+    "imageCircle": Object {
+      "base": Object {
+        "borderRadius": "50%",
+      },
+      "loading": Object {
+        "backgroundColor": "#f0f0f0",
+        "iconColor": "#9c9c9c",
+      },
+    },
+    "imageDefault": Object {
+      "base": Object {
+        "borderRadius": "8px",
+      },
+      "loading": Object {
+        "backgroundColor": "#f0f0f0",
+        "borderRadius": "8px",
+        "iconColor": "#9c9c9c",
+      },
+    },
+    "imageRoundedLarge": Object {
+      "base": Object {
+        "borderRadius": "24px",
+      },
+      "loading": Object {
+        "backgroundColor": "#f0f0f0",
+        "iconColor": "#9c9c9c",
+      },
+    },
+    "imageRoundedMedium": Object {
+      "base": Object {
+        "borderRadius": "12px",
+      },
+      "loading": Object {
+        "backgroundColor": "#f0f0f0",
+        "iconColor": "#9c9c9c",
+      },
+    },
+    "imageRoundedSmall": Object {
+      "base": Object {
+        "borderRadius": "4px",
+      },
+      "loading": Object {
+        "backgroundColor": "#f0f0f0",
+        "iconColor": "#9c9c9c",
+      },
+    },
+    "imageSharp": Object {
+      "base": Object {
+        "borderRadius": "0",
+      },
+      "loading": Object {
+        "backgroundColor": "#f0f0f0",
+        "iconColor": "#9c9c9c",
+      },
+    },
+    "linkInline": Object {
+      "active": Object {
+        "color": "#2f75d7",
+        "iconColor": "#2f75d7",
+      },
+      "base": Object {
+        "color": "#2f75d7",
+        "iconColor": "#2f75d7",
+      },
+      "hover": Object {
+        "color": "#2f75d7",
+        "iconColor": "#2f75d7",
+      },
+      "visited": Object {
+        "color": "#903d91",
+        "iconColor": "#903d91",
+      },
+    },
+    "linkStandalone": Object {
+      "active": Object {
+        "color": "#2f75d7",
+        "iconColor": "#2f75d7",
+      },
+      "base": Object {
+        "color": "#2f75d7",
+        "iconColor": "#2f75d7",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "#2f75d7",
+        "iconColor": "#2f75d7",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "#2f75d7",
+        "iconColor": "#2f75d7",
+      },
+    },
+    "listItemContent": Object {
+      "base": Object {
+        "color": "#2e2e2e",
+      },
+    },
+    "orderedListItemContent": Object {
+      "base": Object {
+        "color": "#2e2e2e",
+      },
+    },
+    "orderedListItemNumber": Object {
+      "base": Object {
+        "iconColor": "#2e2e2e",
+      },
+    },
+    "shareBarLabel": Object {
+      "base": Object {
+        "color": "#2e2e2e",
+      },
+    },
+    "sliderIndicator": Object {
+      "base": Object {
+        "backgroundColor": "#0a68c1",
+        "borderRadius": "20rem",
+      },
+      "disabled": Object {
+        "backgroundColor": "#e4e4e4",
+      },
+    },
+    "sliderLabels": Object {
+      "base": Object {
+        "color": "#535353",
+        "iconColor": "#535353",
+      },
+      "disabled": Object {
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+    },
+    "sliderThumb": Object {
+      "active": Object {
+        "backgroundColor": "#e6f4ff",
+      },
+      "base": Object {
+        "backgroundColor": "#ffffff",
+        "borderColor": "#0a68c1",
+        "borderRadius": "50%",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "boxShadow": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
+        "iconColor": "#ffffff",
+      },
+      "disabled": Object {
+        "backgroundColor": "#e4e4e4",
+        "borderColor": "none",
+        "borderStyle": "none",
+        "borderWidth": "none",
+        "boxShadow": "none",
+        "iconColor": "#9c9c9c",
+      },
+    },
+    "sliderThumbLabel": Object {
+      "base": Object {
+        "color": "#0a68c1",
+      },
+      "disabled": Object {
+        "color": "#9c9c9c",
+      },
+    },
+    "sliderTrack": Object {
+      "base": Object {
+        "backgroundColor": "#f0f0f0",
+        "borderRadius": "20rem",
+      },
+      "disabled": Object {
+        "backgroundColor": "#e4e4e4",
+      },
+    },
+    "standfirst": Object {
+      "base": Object {
+        "color": "#2e2e2e",
+      },
+    },
+    "tagDefault": Object {
+      "active": Object {
+        "borderWidth": "1px",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#535353",
+        "borderRadius": "0",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "color": "#2e2e2e",
+        "iconColor": "#2e2e2e",
+      },
+      "current": Object {
+        "backgroundColor": "#535353",
+        "borderStyle": "none",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "hover": Object {
+        "backgroundColor": "#f0f0f0",
+      },
+    },
+    "tagPrimary": Object {
+      "active": Object {
+        "borderWidth": "1px",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#535353",
+        "borderRadius": "0",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "color": "#2e2e2e",
+        "iconColor": "#2e2e2e",
+      },
+      "current": Object {
+        "backgroundColor": "#535353",
+        "borderStyle": "none",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "hover": Object {
+        "backgroundColor": "#f0f0f0",
+      },
+    },
+    "titleBar": Object {
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#e4e4e4",
+        "borderStyle": "solid",
+        "borderWidth": "0 0 1px 0",
+      },
+    },
+    "titleBarButton": Object {
+      "active": Object {
+        "backgroundColor": "#01396e",
+      },
+      "base": Object {
+        "backgroundColor": "#0a68c1",
+        "borderRadius": "8px",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "disabled": Object {
+        "backgroundColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#02509b",
+      },
+      "loading": Object {
+        "backgroundColor": "#d5ebff",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+    },
+    "titleBarLink": Object {
+      "active": Object {
+        "color": "#2f75d7",
+        "iconColor": "#2f75d7",
+      },
+      "base": Object {
+        "color": "#2f75d7",
+        "iconColor": "#2f75d7",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "#2f75d7",
+        "iconColor": "#2f75d7",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "#2f75d7",
+        "iconColor": "#2f75d7",
+      },
+    },
+    "unorderedListItemContent": Object {
+      "base": Object {
+        "color": "#2e2e2e",
+      },
+    },
+    "unorderedListItemMarker": Object {
+      "base": Object {
+        "iconColor": "#2e2e2e",
+      },
+    },
+    "volumeControlButtons": Object {
+      "active": Object {
+        "backgroundColor": "#d5ebff",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "50%",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+      "disabled": Object {
+        "backgroundColor": "transparent",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#e6f4ff",
+      },
+      "loading": Object {
+        "backgroundColor": "#d5ebff",
+        "color": "#0a68c1",
+      },
+    },
+    "volumeControlLabels": Object {
+      "base": Object {
+        "color": "#535353",
+      },
+    },
+    "volumeControlThumb": Object {
+      "active": Object {
+        "backgroundColor": "#01396e",
+        "iconColor": "#535353",
+      },
+      "base": Object {
+        "backgroundColor": "#ffffff",
+        "borderColor": "#0a68c1",
+        "borderRadius": "50%",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "boxShadow": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#e6f4ff",
+      },
+    },
+    "volumeControlTrack": Object {
+      "base": Object {
+        "backgroundColor": "#f0f0f0",
+        "borderRadius": "20rem",
+      },
+    },
+    "volumeControlTrackIndicator": Object {
+      "base": Object {
+        "backgroundColor": "#0a68c1",
+        "borderRadius": "20rem",
+      },
+    },
+  },
+  "themeVersion": 1,
+  "typePresets": Object {
+    "body010": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "letterSpacing": "0",
+      "lineHeight": 1.4285714285714286,
+    },
+    "body020": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "letterSpacing": "0",
+      "lineHeight": 1.5,
+    },
+    "body030": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "letterSpacing": "0",
+      "lineHeight": 1.5555555555555556,
+    },
+    "buttonLarge": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.5,
+    },
+    "buttonMedium": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.4285714285714286,
+    },
+    "buttonSmall": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.6666666666666667,
+    },
+    "caption010": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.4285714285714286,
+    },
+    "code010": Object {
+      "fontFamily": "system-ui, \\"Open Sans\\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "letterSpacing": "0",
+      "lineHeight": 1.4285714285714286,
+    },
+    "code020": Object {
+      "fontFamily": "system-ui, \\"Open Sans\\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "letterSpacing": "0",
+      "lineHeight": 1.5,
+    },
+    "display010": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "48px",
+      "fontWeight": "700",
+      "letterSpacing": "0",
+      "lineHeight": 1.5,
+    },
+    "display020": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "56px",
+      "fontWeight": "700",
+      "letterSpacing": "0",
+      "lineHeight": 1.5,
+    },
+    "display030": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "64px",
+      "fontWeight": "700",
+      "letterSpacing": "0",
+      "lineHeight": 1.5,
+    },
+    "display040": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "80px",
+      "fontWeight": "700",
+      "letterSpacing": "0",
+      "lineHeight": 1.5,
+    },
+    "dropCap": Object {
+      "fontSize": "5.34em",
+      "lineHeight": 0.85,
+    },
+    "flag010": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.6666666666666667,
+    },
+    "flag020": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.4285714285714286,
+    },
+    "font500": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "20px",
+      "fontWeight": "400",
+      "letterSpacing": "0",
+      "lineHeight": 1.6,
+    },
+    "heading010": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "700",
+      "letterSpacing": "0",
+      "lineHeight": 1.3333333333333333,
+    },
+    "heading020": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "20px",
+      "fontWeight": "700",
+      "letterSpacing": "0",
+      "lineHeight": 1.2,
+    },
+    "heading030": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "letterSpacing": "0",
+      "lineHeight": 1.3333333333333333,
+    },
+    "heading040": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "28px",
+      "fontWeight": "700",
+      "letterSpacing": "0",
+      "lineHeight": 1.2857142857142858,
+    },
+    "heading050": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "32px",
+      "fontWeight": "700",
+      "letterSpacing": "0",
+      "lineHeight": 1.25,
+    },
+    "heading060": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "36px",
+      "fontWeight": "700",
+      "letterSpacing": "0",
+      "lineHeight": 1.2222222222222223,
+    },
+    "heading070": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "40px",
+      "fontWeight": "700",
+      "letterSpacing": "0",
+      "lineHeight": 1.3,
+    },
+    "heading080": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "44px",
+      "fontWeight": "700",
+      "letterSpacing": "0",
+      "lineHeight": 1.2727272727272727,
+    },
+    "heading090": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "48px",
+      "fontWeight": "700",
+      "letterSpacing": "0",
+      "lineHeight": 1.25,
+    },
+    "headline100": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "32px",
+      "fontWeight": "700",
+      "letterSpacing": "0",
+      "lineHeight": 1.25,
+    },
+    "headline200": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "32px",
+      "fontWeight": "700",
+      "letterSpacing": "0",
+      "lineHeight": 1.25,
+    },
+    "label010": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.6666666666666667,
+    },
+    "label020": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.4285714285714286,
+    },
+    "label030": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.5,
+    },
+    "label040": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.5555555555555556,
+    },
+    "meta010": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "500",
+      "letterSpacing": "0.5px",
+      "lineHeight": 1.6666666666666667,
+    },
+    "meta020": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.4285714285714286,
+    },
+    "quote010": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "24px",
+      "fontStyle": "italic",
+      "fontWeight": "400",
+      "letterSpacing": "0",
+      "lineHeight": 1.5,
+    },
+    "quote020": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "32px",
+      "fontStyle": "italic",
+      "fontWeight": "400",
+      "letterSpacing": "0",
+      "lineHeight": 1.5,
+    },
+    "shareBarLabel": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.4285714285714286,
+    },
+    "standfirst": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.5,
+    },
+    "subhead010": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.5,
+    },
+    "subhead015": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.5555555555555556,
+    },
+    "subhead020": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "20px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.6,
+    },
+    "subhead030": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "24px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.5,
+    },
+    "subhead040": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "28px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.5714285714285714,
+    },
+    "subhead050": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "32px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.5,
+    },
+    "tag010": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.6666666666666667,
+    },
+    "tag020": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.4285714285714286,
+    },
+    "tag030": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "letterSpacing": "0",
+      "lineHeight": 1.5,
+    },
+  },
+}
+`;

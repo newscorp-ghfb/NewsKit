@@ -7,10 +7,13 @@ import {
   getSpacingStack,
 } from '../utils/style';
 import {Stack, Flow, StackProps} from '../stack';
-import {useTheme, SizingKeys} from '../themes';
-
+import {
+  useTheme,
+  SizingKeys,
+  SpacePresetKeys,
+  PaddingPresetKeys,
+} from '../theme';
 import {getStylePreset} from '../utils/style-preset';
-import {SpacingPresetKeys, PaddingPresetKeys} from '../themes/mappers/spacing';
 import {getToken} from '../utils/get-token';
 
 export interface ShareBarProps {
@@ -21,8 +24,8 @@ export interface ShareBarProps {
     label?: {
       typePreset?: string;
       stylePreset?: string;
-      spaceInline?: SpacingPresetKeys;
-      spaceStack?: SpacingPresetKeys;
+      spaceInline?: SpacePresetKeys;
+      spaceStack?: SpacePresetKeys;
       paddingPreset?: PaddingPresetKeys;
     };
     items?: {

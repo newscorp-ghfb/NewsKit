@@ -6,8 +6,7 @@ import {
   getSpacingInline,
   getSpacingStack,
 } from '../utils/style';
-import {SpacingPresetKeys, PaddingPresetKeys} from '../themes/mappers/spacing';
-import {StylePresetKeys} from '../themes/mappers/style-preset';
+import {SpacePresetKeys, PaddingPresetKeys, StylePresetKeys} from '../theme';
 import {getStylePreset} from '../utils/style-preset';
 
 export interface BlockProps {
@@ -15,8 +14,8 @@ export interface BlockProps {
   overrides?: {
     stylePreset?: MQ<StylePresetKeys>;
     paddingPreset?: MQ<PaddingPresetKeys>;
-    spaceInline?: MQ<SpacingPresetKeys>;
-    spaceStack?: MQ<SpacingPresetKeys>;
+    spaceInline?: MQ<SpacePresetKeys>;
+    spaceStack?: MQ<SpacePresetKeys>;
   };
 }
 

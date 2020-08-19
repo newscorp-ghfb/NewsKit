@@ -1,4 +1,4 @@
-import {SizingKeys} from '../themes/newskit-light/spacing';
+import {SizingKeys} from '../theme';
 import {AlignSelfValues} from '../stack-child';
 
 export interface CommonStackProps {

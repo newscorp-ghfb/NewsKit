@@ -1,8 +1,8 @@
 import React from 'react';
-import {withTheme} from '../themes/emotion';
 import {Svg} from './svg';
 import {SvgProps, StyledSvgProps} from './types';
 import {styled, getColorFromTheme} from '../utils/style';
+import {withTheme} from '../theme';
 
 const AnimatedSvg = styled(Svg)<StyledSvgProps>`
   @keyframes rotate {

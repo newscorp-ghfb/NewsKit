@@ -7,7 +7,6 @@ import {Pause, Email, CopyLink} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
-import {newskitLightTheme} from '../../themes';
 
 const Container = styled.div`
   margin: 24px;
@@ -114,7 +113,7 @@ export default {
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
-                    <Block theme={newskitLightTheme} data-state="Default">
+                    <Block data-state="Default">
                       <IconButton
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
@@ -123,7 +122,7 @@ export default {
                       </IconButton>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Focused">
+                    <Block data-state="Focused">
                       <IconButton
                         autoFocus
                         overrides={{stylePreset}}
@@ -133,7 +132,7 @@ export default {
                       </IconButton>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Disabled">
+                    <Block data-state="Disabled">
                       <IconButton
                         disabled
                         overrides={{stylePreset}}
@@ -143,7 +142,7 @@ export default {
                       </IconButton>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Loading">
+                    <Block data-state="Loading">
                       <IconButton
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
@@ -188,7 +187,7 @@ export default {
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
-                    <Block theme={newskitLightTheme} data-state="Default">
+                    <Block data-state="Default">
                       <IconButton
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
@@ -197,7 +196,7 @@ export default {
                       </IconButton>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Focused">
+                    <Block data-state="Focused">
                       <IconButton
                         autoFocus
                         overrides={{stylePreset}}
@@ -207,7 +206,7 @@ export default {
                       </IconButton>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Disabled">
+                    <Block data-state="Disabled">
                       <IconButton
                         disabled
                         overrides={{stylePreset}}
@@ -217,7 +216,7 @@ export default {
                       </IconButton>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Loading">
+                    <Block data-state="Loading">
                       <IconButton
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
@@ -262,7 +261,7 @@ export default {
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
-                    <Block theme={newskitLightTheme} data-state="Default">
+                    <Block data-state="Default">
                       <IconButton
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
@@ -271,7 +270,7 @@ export default {
                       </IconButton>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Focused">
+                    <Block data-state="Focused">
                       <IconButton
                         autoFocus
                         overrides={{stylePreset}}
@@ -281,7 +280,7 @@ export default {
                       </IconButton>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Disabled">
+                    <Block data-state="Disabled">
                       <IconButton
                         disabled
                         overrides={{stylePreset}}
@@ -291,7 +290,7 @@ export default {
                       </IconButton>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Loading">
+                    <Block data-state="Loading">
                       <IconButton
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
@@ -336,7 +335,7 @@ export default {
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
-                    <Block theme={newskitLightTheme} data-state="Default">
+                    <Block data-state="Default">
                       <IconButton
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
@@ -345,7 +344,7 @@ export default {
                       </IconButton>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Focused">
+                    <Block data-state="Focused">
                       <IconButton
                         autoFocus
                         overrides={{stylePreset}}
@@ -355,7 +354,7 @@ export default {
                       </IconButton>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Disabled">
+                    <Block data-state="Disabled">
                       <IconButton
                         disabled
                         overrides={{stylePreset}}
@@ -365,7 +364,7 @@ export default {
                       </IconButton>
                     </Block>
 
-                    <Block theme={newskitLightTheme} data-state="Loading">
+                    <Block data-state="Loading">
                       <IconButton
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}

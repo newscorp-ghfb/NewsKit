@@ -1,7 +1,7 @@
 import React from 'react';
 import {styled} from '../utils/style';
 import {getStylePreset} from '../utils/style-preset';
-import {StylePresetKeys} from '../themes/mappers/style-preset';
+import {StylePresetKeys} from '../theme';
 
 interface DividerProps {
   vertical?: boolean;

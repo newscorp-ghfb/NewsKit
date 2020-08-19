@@ -23,7 +23,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   background-color: transparent;
   border-style: solid;
   border-color: #e4e4e4;
-  border-width: 0px 0px 1px 0px;
+  border-width: 0 0 1px 0;
 }
 
 @media screen and (min-width:960px) {
@@ -346,7 +346,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   background-color: transparent;
   border-style: solid;
   border-color: #e4e4e4;
-  border-width: 0px 0px 1px 0px;
+  border-width: 0 0 1px 0;
 }
 
 @media screen and (min-width:960px) {
@@ -479,39 +479,39 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 .emotion-4 svg {
-  fill: #2F75D7;
-  color: #2F75D7;
+  fill: #2f75d7;
+  color: #2f75d7;
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #2F75D7;
-  color: #2F75D7;
+  fill: #2f75d7;
+  color: #2f75d7;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #2F75D7;
-  color: #2F75D7;
+  fill: #2f75d7;
+  color: #2f75d7;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #903D91;
+  color: #903d91;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #903D91;
-  color: #903D91;
+  fill: #903d91;
+  color: #903d91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -759,7 +759,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
   background-color: transparent;
   border-style: solid;
   border-color: #e4e4e4;
-  border-width: 0px 0px 1px 0px;
+  border-width: 0 0 1px 0;
 }
 
 @media screen and (min-width:960px) {
@@ -895,7 +895,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
   background-color: transparent;
   border-style: solid;
   border-color: #e4e4e4;
-  border-width: 0px 0px 1px 0px;
+  border-width: 0 0 1px 0;
 }
 
 @media screen and (min-width:960px) {
@@ -1031,7 +1031,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
   background-color: transparent;
   border-style: solid;
   border-color: #e4e4e4;
-  border-width: 0px 0px 1px 0px;
+  border-width: 0 0 1px 0;
 }
 
 @media screen and (min-width:960px) {
@@ -1167,7 +1167,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
   background-color: transparent;
   border-style: solid;
   border-color: #e4e4e4;
-  border-width: 0px 0px 1px 0px;
+  border-width: 0 0 1px 0;
 }
 
 @media screen and (min-width:960px) {
@@ -1303,7 +1303,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
   background-color: transparent;
   border-style: solid;
   border-color: #e4e4e4;
-  border-width: 0px 0px 1px 0px;
+  border-width: 0 0 1px 0;
 }
 
 @media screen and (min-width:960px) {
@@ -1439,7 +1439,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
   background-color: transparent;
   border-style: solid;
   border-color: #e4e4e4;
-  border-width: 0px 0px 1px 0px;
+  border-width: 0 0 1px 0;
 }
 
 @media screen and (min-width:960px) {
@@ -1575,7 +1575,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
   background-color: transparent;
   border-style: solid;
   border-color: #e4e4e4;
-  border-width: 0px 0px 1px 0px;
+  border-width: 0 0 1px 0;
 }
 
 @media screen and (min-width:960px) {

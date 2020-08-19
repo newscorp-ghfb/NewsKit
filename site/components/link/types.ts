@@ -1,11 +1,11 @@
 import {
+  StylePresetKeys,
   TypePresetKeys,
   MQ,
   SizingKeys,
   IconSizeKeys,
   EventContext,
 } from 'newskit';
-import {StylePresetKeys} from 'newskit/themes/mappers/style-preset';
 
 export interface LinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement> {

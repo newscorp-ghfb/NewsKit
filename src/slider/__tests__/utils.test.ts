@@ -1,27 +1,30 @@
-import {createTheme} from '../../themes';
+import {createTheme, compileTheme} from '../../theme';
 import {getFillColor} from '../utils';
 
 describe('slider util getFillColour', () => {
-  const theme = createTheme('myTestTheme', {
-    themeOverrider: () => ({
-      stylePresets: {
-        presetRed: {
-          base: {
-            backgroundColor: 'red',
+  const theme = compileTheme(
+    createTheme({
+      name: 'myTestTheme',
+      overrides: {
+        stylePresets: {
+          presetRed: {
+            base: {
+              backgroundColor: 'red',
+            },
           },
-        },
-        presetYellow: {
-          base: {
-            backgroundColor: 'yellow',
+          presetYellow: {
+            base: {
+              backgroundColor: 'yellow',
+            },
           },
-        },
-        presetNoBaseState: {},
-        presetNoBackground: {
-          base: {},
+          presetNoBaseState: {},
+          presetNoBackground: {
+            base: {},
+          },
         },
       },
     }),
-  });
+  );
 
   test('returns fallback background', () => {
     expect(getFillColor(theme, 'presetRed', undefined)).toEqual('red');

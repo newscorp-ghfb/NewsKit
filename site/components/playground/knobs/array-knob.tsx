@@ -36,7 +36,7 @@ export const StyledInput = styled.input`
   color: ${getColorFromTheme('inkContrast')};
 
   width: 300px;
-  border-radius: ${({theme}) => theme.borderRadius.borderRadiusDefault};
+  border-radius: ${({theme}) => theme.borders.borderRadiusDefault};
   border-style: solid;
   border-width: ${({theme}) => theme.borders.borderWidth020};
   border-color: ${getColorFromTheme('interface040')};

@@ -69,8 +69,8 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -303,8 +303,8 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -566,8 +566,8 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {

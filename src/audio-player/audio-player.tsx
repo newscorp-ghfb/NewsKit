@@ -20,8 +20,7 @@ import {
   seekBarAriaValueText,
 } from './utils';
 import {StyledTrack} from '../slider/styled';
-import {useTheme} from '../themes/emotion';
-
+import {useTheme, Devices} from '../theme';
 import {getSingleStylePreset} from '../utils/style-preset';
 import {getBuiId} from '../utils/get-bui-id';
 import {LabelPosition} from '../slider/types';
@@ -29,7 +28,6 @@ import {AudioPlayerProps} from './types';
 import {useAudioFunctions} from './audio-functions';
 import {StackChild} from '../stack-child';
 import {ScreenReaderOnly} from '../screen-reader-only/screen-reader-only';
-import {Devices} from '../themes/newskit-light/breakpoints';
 
 export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   const {

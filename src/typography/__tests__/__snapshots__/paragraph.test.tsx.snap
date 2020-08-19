@@ -68,7 +68,7 @@ exports[`Paragraph renders with coloured drop cap 1`] = `
   padding-right: 0.15em;
   font-size: 5.34em;
   line-height: 0.85;
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 <p

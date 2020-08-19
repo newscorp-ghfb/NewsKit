@@ -113,8 +113,8 @@ exports[`Card renders actions section with given component 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-4 svg {
@@ -448,8 +448,8 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-4 svg {
@@ -753,8 +753,8 @@ exports[`Card renders actions section with overrides for paddingPreset 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-4 svg {

@@ -4,7 +4,6 @@ import {Flow, StackDistribution, Stack} from '../../stack';
 import {styled, getColorFromTheme} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {Tag} from '../../tag/tag';
-import {newskitLightTheme} from '../../themes';
 import {StackChild} from '..';
 
 const MainContainer = styled.div`
@@ -33,7 +32,7 @@ export default {
       component: () => (
         <MainContainer>
           <StorybookHeading>StackChild with custom order</StorybookHeading>
-          <Container theme={newskitLightTheme}>
+          <Container>
             <Block hasHeight={false}>
               <Stack
                 space="sizing050"
@@ -61,7 +60,7 @@ export default {
       component: () => (
         <MainContainer>
           <StorybookHeading>StackChild with stack list</StorybookHeading>
-          <Container theme={newskitLightTheme}>
+          <Container>
             <Block hasHeight={false}>
               <Stack
                 space="sizing050"

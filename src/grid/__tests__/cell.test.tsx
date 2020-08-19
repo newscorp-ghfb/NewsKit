@@ -1,7 +1,7 @@
 import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {Cell} from '..';
-import {newskitLightTheme} from '../../themes';
+import {newskitLightTheme} from '../../theme';
 import {GridContextProvider} from '../context';
 
 describe('Cell Container', () => {

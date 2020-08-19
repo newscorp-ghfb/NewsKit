@@ -1,10 +1,11 @@
 import * as React from 'react';
 import {Byline} from '..';
 import {StorybookHeading} from '../../test/storybook-comps';
-import {createTheme, ThemeProvider} from '../../themes';
+import {createTheme, ThemeProvider} from '../../theme';
 
-const myCustomTheme = createTheme('my-custom-byline-theme', {
-  themeOverrider: primitives => ({
+const myCustomTheme = createTheme({
+  name: 'my-custom-byline-theme',
+  overrides: {
     stylePresets: {
       bylineCustom: {
         base: {
@@ -24,11 +25,7 @@ const myCustomTheme = createTheme('my-custom-byline-theme', {
         },
       },
     },
-    typePresets: {
-      bylineCustom: primitives.typePresets.label030,
-      bylineLinkCustom: primitives.typePresets.label030,
-    },
-  }),
+  },
 });
 
 export default {
@@ -157,11 +154,11 @@ export default {
             <Byline
               overrides={{
                 stylePreset: 'bylineCustom',
-                typePreset: 'bylineCustom',
+                typePreset: 'label040',
                 space: 'sizing030',
                 link: {
                   stylePreset: 'bylineLinkCustom',
-                  typePreset: 'bylineLinkCustom',
+                  typePreset: 'label040',
                 },
                 divider: {
                   stylePreset: 'bylineDividerCustom',

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {Grid, Cell, useTheme, Theme, GridProps, P} from 'newskit';
-import {colorPalettes as newskitLightPaletteColors} from 'newskit/themes/newskit-light/colors';
+import {palettes as newskitLightPaletteColors} from 'newskit/theme/primitives/colors';
+import {overlays} from 'newskit/theme/primitives/overlays';
 import {H3} from '../../markdown-elements';
 import {ColorPalettesWrapper} from './styled';
 import {
@@ -93,7 +94,7 @@ export const ColorPrimitives = (): JSX.Element => {
     {} as Record<string, string>,
   );
 
-  const primitiveObjects = Object.entries(colorPrimitives)
+  const primitiveObjects = Object.entries({...colorPrimitives, ...overlays})
     .map(
       mapColorObjects(
         theme,

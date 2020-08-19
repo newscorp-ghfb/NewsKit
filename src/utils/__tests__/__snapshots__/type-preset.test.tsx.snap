@@ -169,7 +169,7 @@ exports[`TypePreset renders responsive override body010 for xs, body020 for sm, 
 
 @media screen and (min-width:1440px) {
   .emotion-0 {
-    font-family: "Courier",monospace;
+    font-family: system-ui,"Open Sans",sans-serif;
     font-size: 14px;
     line-height: 1.4285714285714286;
     font-weight: 400;

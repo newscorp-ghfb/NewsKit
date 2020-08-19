@@ -6,7 +6,7 @@ import {getStylePreset} from '../utils/style-preset';
 import {Launch} from '../icons/launch';
 import {Stack} from '../stack/stack';
 import {getToken} from '../utils/get-token';
-import {useTheme} from '../themes';
+import {useTheme} from '../theme';
 import {isLinkExternal} from './utils';
 import {useHasMounted} from '../utils/use-has-mounted';
 import {TextBlock} from '../text-block';

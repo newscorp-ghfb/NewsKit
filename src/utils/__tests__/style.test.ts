@@ -5,7 +5,6 @@ import {
   getBorderFromTheme,
   getTypePresetFromTheme,
   getFontSizingFromTheme,
-  getGridSettingFromTheme,
   getShadowFromTheme,
   getFontsFromTheme,
 } from '../style';
@@ -239,7 +238,7 @@ describe('Style helpers', () => {
   test('getAnimationFromTheme("animationDuration020")({theme}) returns "animationDuration020_timing"', () => {
     const props = {
       theme: {
-        animation: {
+        animations: {
           animationDuration020: 'animationDuration020_timing',
         },
       },
@@ -251,13 +250,15 @@ describe('Style helpers', () => {
   });
 
   test('getAnimationFromTheme("animationDuration020", "animation")({theme, animation: "animationDuration040"}) returns "animationDuration040_timing"', () => {
-    const props = {
-      theme: {
-        animation: {
-          animationDuration020: 'animationDuration020_timing',
-          animationDuration040: 'animationDuration040_timing',
-        },
+    const theme = {
+      animations: {
+        animationDuration020: 'animationDuration020_timing',
+        animationDuration040: 'animationDuration040_timing',
       },
+    };
+
+    const props = {
+      theme,
       animation: 'animationDuration040',
     };
     const declaration = getAnimationFromTheme<{animation?: string; theme: any}>(
@@ -327,22 +328,10 @@ describe('Style helpers', () => {
     expect(fontSizing).toEqual(mockFontSizing);
   });
 
-  test('getGridSettingFromTheme with token returns expected grid setting', () => {
-    const props = {
-      theme: {
-        grid: {
-          maxWidth: '123px',
-        },
-      },
-    } as any;
-
-    expect(getGridSettingFromTheme('maxWidth')(props)).toEqual('123px');
-  });
-
   test('getShadowFromTheme("shadow100")({theme}) returns "shadow100_shadow"', () => {
     const props = {
       theme: {
-        shadow: {
+        shadows: {
           shadow100: 'shadow100_shadow',
         },
       },
@@ -356,7 +345,7 @@ describe('Style helpers', () => {
   test('getShadowFromTheme("shadow100", "shadow")({theme, shadow: "shadow200"}) returns "shadow200_shadow"', () => {
     const props = {
       theme: {
-        shadow: {
+        shadows: {
           shadow100: 'shadow100_shadow',
           shadow200: 'shadow200_shadow',
         },

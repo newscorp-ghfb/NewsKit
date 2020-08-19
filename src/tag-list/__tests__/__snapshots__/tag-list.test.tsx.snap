@@ -59,8 +59,8 @@ exports[`TagList renders as a span with custom margins 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -336,8 +336,8 @@ exports[`TagList renders as a span with custom size 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -541,8 +541,8 @@ exports[`TagList renders as a span with defaults 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -764,8 +764,8 @@ exports[`TagList renders as an anchor with custom margins 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -1044,8 +1044,8 @@ exports[`TagList renders as an anchor with custom size 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {
@@ -1252,8 +1252,8 @@ exports[`TagList renders as an anchor with defaults 1`] = `
   border-style: solid;
   border-color: #535353;
   border-width: 1px;
-  border-radius: 0;
   color: #2e2e2e;
+  border-radius: 0;
 }
 
 .emotion-3 svg {

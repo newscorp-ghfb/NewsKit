@@ -1,7 +1,6 @@
-import {BreakpointKeys} from '../themes';
+import {BreakpointKeys, GridKeys} from '../theme';
 import {ThemeProp} from '../utils/style-types';
 import {GridProps} from './types';
-import {GridKeys} from '../themes/newskit-light/grid';
 
 export enum OverrideProp {
   Margin = 'Margin',
@@ -32,5 +31,8 @@ export const getOverridableProp = (
   // Gutter from theme is a px number, but override is a string token, so convert it to px number.
   return gutterOverrideToken
     ? parseInt(theme.sizing[gutterOverrideToken], 10)
-    : (theme.grid[themeKey] as Record<BreakpointKeys, number>)[breakpoint];
+    : (theme.componentDefaults.grid[themeKey] as Record<
+        BreakpointKeys,
+        number
+      >)[breakpoint];
 };

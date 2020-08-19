@@ -2,8 +2,18 @@
 
 exports[`MarginPreset renders default 1`] = `
 <DocumentFragment>
-  <div
-    class="css-1woq1di"
+  .emotion-0 {
+  margin: 16px;
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    margin: 8px;
+  }
+}
+
+<div
+    class="emotion-0"
   />
 </DocumentFragment>
 `;
@@ -11,7 +21,7 @@ exports[`MarginPreset renders default 1`] = `
 exports[`MarginPreset renders responsive override spaceStack010 for sm and spaceStack030 for md breakpoints 1`] = `
 <DocumentFragment>
   <div
-    class="css-1crnvy4"
+    class="emotion-0"
   />
 </DocumentFragment>
 `;
@@ -19,7 +29,7 @@ exports[`MarginPreset renders responsive override spaceStack010 for sm and space
 exports[`MarginPreset renders responsive override spaceStack010 for xs, spaceStack020 for sm, and spaceStack030 for md breakpoints 1`] = `
 <DocumentFragment>
   <div
-    class="css-1crnvy4"
+    class="emotion-0"
   />
 </DocumentFragment>
 `;
@@ -27,7 +37,7 @@ exports[`MarginPreset renders responsive override spaceStack010 for xs, spaceSta
 exports[`MarginPreset renders responsive override spaceStack010 for xs, spaceStack020 for sm, and wrong for md breakpoints 1`] = `
 <DocumentFragment>
   <div
-    class="css-1crnvy4"
+    class="emotion-0"
   />
 </DocumentFragment>
 `;
@@ -35,7 +45,15 @@ exports[`MarginPreset renders responsive override spaceStack010 for xs, spaceSta
 exports[`MarginPreset renders responsive override spaceStack010 for xs, spaceStack020 for sm, spaceStack030 for md, spaceStack040 for lg breakpoings, and ignore wrong prop 1`] = `
 <DocumentFragment>
   <div
-    class="css-1crnvy4"
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`MarginPreset renders with override incorrect object 1`] = `
+<DocumentFragment>
+  <div
+    class="emotion-0"
   />
 </DocumentFragment>
 `;
@@ -43,15 +61,25 @@ exports[`MarginPreset renders responsive override spaceStack010 for xs, spaceSta
 exports[`MarginPreset renders with override spaceStack010 1`] = `
 <DocumentFragment>
   <div
-    class="css-1woq1di"
+    class="emotion-0"
   />
 </DocumentFragment>
 `;
 
 exports[`PaddingPreset renders default 1`] = `
 <DocumentFragment>
-  <div
-    class="css-1woq1di"
+  .emotion-0 {
+  margin: 16px;
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    margin: 8px;
+  }
+}
+
+<div
+    class="emotion-0"
   />
 </DocumentFragment>
 `;
@@ -59,7 +87,14 @@ exports[`PaddingPreset renders default 1`] = `
 exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, and spaceInset030Squish for md breakpoints 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 16px;
   padding: 4px 8px;
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    margin: 8px;
+  }
 }
 
 @media screen and (min-width:960px) {
@@ -77,7 +112,14 @@ exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, a
 exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, spaceInset020Squish for sm, and spaceInset030Squish for md breakpoints 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 16px;
   padding: 4px 8px;
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    margin: 8px;
+  }
 }
 
 @media screen and (min-width:480px) {
@@ -101,7 +143,14 @@ exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, s
 exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, spaceInset020Squish for sm, and spaceInset030Squish for md breakpoints in reverser order 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 16px;
   padding: 4px 8px;
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    margin: 8px;
+  }
 }
 
 @media screen and (min-width:480px) {
@@ -125,7 +174,14 @@ exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, s
 exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, spaceInset020Squish for sm, and wrong for md breakpoints 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 16px;
   padding: 4px 8px;
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    margin: 8px;
+  }
 }
 
 @media screen and (min-width:480px) {
@@ -143,7 +199,14 @@ exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, s
 exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, spaceInset020Squish for sm, spaceInset030Squish for md, spaceInset040Squish for lg breakpoints and ignore wrong prop 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 16px;
   padding: 4px 8px;
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    margin: 8px;
+  }
 }
 
 @media screen and (min-width:480px) {
@@ -172,7 +235,17 @@ exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, s
 
 exports[`PaddingPreset renders with override incorrect object 1`] = `
 <DocumentFragment>
-  <div
+  .emotion-0 {
+  margin: 16px;
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    margin: 8px;
+  }
+}
+
+<div
     class="emotion-0"
   />
 </DocumentFragment>
@@ -181,7 +254,14 @@ exports[`PaddingPreset renders with override incorrect object 1`] = `
 exports[`PaddingPreset renders with override spaceInset010Squish 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 16px;
   padding: 4px 8px;
+}
+
+@media screen and (min-width:960px) {
+  .emotion-0 {
+    margin: 8px;
+  }
 }
 
 <div

@@ -1,6 +1,6 @@
 import React from 'react';
 import {render as renderer, RenderOptions} from '@testing-library/react';
-import {Theme, newskitLightTheme, ThemeProvider} from '../themes';
+import {newskitLightTheme, ThemeProvider, ThemeProviderProps} from '../theme';
 import {
   InstrumentationProvider,
   InstrumentationEvent,
@@ -29,7 +29,7 @@ export const renderWithImplementation = <T extends {}>(
 export const renderWithTheme = <T extends {}>(
   Component: React.ComponentType<T>,
   props?: T & {children?: React.ReactNode},
-  theme: Theme = newskitLightTheme,
+  theme: ThemeProviderProps['theme'] = newskitLightTheme,
   options?: Omit<RenderOptions, 'wrapper'>,
 ) =>
   renderer(<Component {...(props as T)} />, {
@@ -42,7 +42,7 @@ export const renderWithTheme = <T extends {}>(
 export const renderToFragmentWithTheme = <T extends {}>(
   Component: React.ComponentType<T>,
   props?: T & {children?: React.ReactNode},
-  theme: Theme = newskitLightTheme,
+  theme: ThemeProviderProps['theme'] = newskitLightTheme,
   options?: RenderOptions,
 ) => renderWithTheme(Component, props, theme, options).asFragment();
 

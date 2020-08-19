@@ -10,39 +10,39 @@ exports[`Link does not render the external icon even if the href is external 1`]
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 .emotion-2 svg {
-  fill: #2F75D7;
-  color: #2F75D7;
+  fill: #2f75d7;
+  color: #2f75d7;
 }
 
 .emotion-2:hover:not(:disabled) {
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #2F75D7;
-  color: #2F75D7;
+  fill: #2f75d7;
+  color: #2f75d7;
 }
 
 .emotion-2:active:not(:disabled) {
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #2F75D7;
-  color: #2F75D7;
+  fill: #2f75d7;
+  color: #2f75d7;
 }
 
 .emotion-2:visited:not(:disabled) {
-  color: #903D91;
+  color: #903d91;
 }
 
 .emotion-2:visited:not(:disabled) svg {
-  fill: #903D91;
-  color: #903D91;
+  fill: #903d91;
+  color: #903d91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -104,39 +104,39 @@ exports[`Link renders as expected in default state 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 .emotion-2 svg {
-  fill: #2F75D7;
-  color: #2F75D7;
+  fill: #2f75d7;
+  color: #2f75d7;
 }
 
 .emotion-2:hover:not(:disabled) {
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #2F75D7;
-  color: #2F75D7;
+  fill: #2f75d7;
+  color: #2f75d7;
 }
 
 .emotion-2:active:not(:disabled) {
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #2F75D7;
-  color: #2F75D7;
+  fill: #2f75d7;
+  color: #2f75d7;
 }
 
 .emotion-2:visited:not(:disabled) {
-  color: #903D91;
+  color: #903d91;
 }
 
 .emotion-2:visited:not(:disabled) svg {
-  fill: #903D91;
-  color: #903D91;
+  fill: #903d91;
+  color: #903d91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -198,39 +198,39 @@ exports[`Link renders correctly with noUnderline property 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 .emotion-2 svg {
-  fill: #2F75D7;
-  color: #2F75D7;
+  fill: #2f75d7;
+  color: #2f75d7;
 }
 
 .emotion-2:hover:not(:disabled) {
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 .emotion-2:hover:not(:disabled) svg {
-  fill: #2F75D7;
-  color: #2F75D7;
+  fill: #2f75d7;
+  color: #2f75d7;
 }
 
 .emotion-2:active:not(:disabled) {
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 .emotion-2:active:not(:disabled) svg {
-  fill: #2F75D7;
-  color: #2F75D7;
+  fill: #2f75d7;
+  color: #2f75d7;
 }
 
 .emotion-2:visited:not(:disabled) {
-  color: #903D91;
+  color: #903d91;
 }
 
 .emotion-2:visited:not(:disabled) svg {
-  fill: #903D91;
-  color: #903D91;
+  fill: #903d91;
+  color: #903d91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -292,39 +292,39 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 .emotion-5 svg {
-  fill: #2F75D7;
-  color: #2F75D7;
+  fill: #2f75d7;
+  color: #2f75d7;
 }
 
 .emotion-5:hover:not(:disabled) {
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 .emotion-5:hover:not(:disabled) svg {
-  fill: #2F75D7;
-  color: #2F75D7;
+  fill: #2f75d7;
+  color: #2f75d7;
 }
 
 .emotion-5:active:not(:disabled) {
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 .emotion-5:active:not(:disabled) svg {
-  fill: #2F75D7;
-  color: #2F75D7;
+  fill: #2f75d7;
+  color: #2f75d7;
 }
 
 .emotion-5:visited:not(:disabled) {
-  color: #903D91;
+  color: #903d91;
 }
 
 .emotion-5:visited:not(:disabled) svg {
-  fill: #903D91;
-  color: #903D91;
+  fill: #903d91;
+  color: #903d91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {

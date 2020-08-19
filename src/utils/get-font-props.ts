@@ -1,13 +1,14 @@
+import {FontConfig} from '../theme/primitives/fonts';
 import {textCrop} from './text-crop';
 import {getFontSizing} from './font-sizing';
-import {FontConfig, FontPrimitives} from '../themes/newskit-light/fonts';
 import {isFontConfigObject} from './guards';
 
 export const getFontProps = (
   fontSize: string,
   lineHeight: number,
   fontFamily: string,
-  fontPrimitives: FontPrimitives,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  fontPrimitives: Record<string, any>,
   // eslint-disable-next-line consistent-return
 ) => {
   const [fontStackPeek] = fontFamily.split(',');

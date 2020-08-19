@@ -3,11 +3,11 @@ import {styled, getPaddingPreset} from '../utils/style';
 import {TitleBarProps, ContainerProps} from './types';
 import {getStylePreset} from '../utils/style-preset';
 import {Headline} from '../headline';
-import {useTheme} from '../themes/emotion';
 import {Stack} from '../stack/stack';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {Block} from '../block';
 import {Hidden} from '../grid/visibility';
+import {useTheme} from '../theme';
 
 const StackContainer = styled(Stack)<ContainerProps>`
   ${getPaddingPreset('titleBar')};
@@ -28,7 +28,7 @@ export const TitleBar: React.FC<TitleBarProps> = props => {
 
   const headlineOverrides = {
     heading: {
-      ...theme.defaultPresets.titleBar.heading,
+      ...theme.componentDefaults.titleBar.heading,
       ...(overrides.heading ? filterOutFalsyProperties(overrides.heading) : {}),
     },
   };

@@ -413,9 +413,33 @@ exports[`headline renders correctly with overriden props 1`] = `
 .emotion-0 {
   display: inline-block;
   margin: 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   color: #0a68c1;
   margin-right: 12px;
   text-transform: uppercase;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.275em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3375em;
 }
 
 @media screen and (min-width:480px) {
@@ -447,7 +471,7 @@ exports[`headline renders correctly with overriden props 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 .emotion-1::before {
@@ -554,35 +578,35 @@ exports[`headline renders correctly with overriden props 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #2F75D7;
-  color: #2F75D7;
+  fill: #2f75d7;
+  color: #2f75d7;
 }
 
 .emotion-1:hover:not(:disabled) {
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 .emotion-1:hover:not(:disabled) svg {
-  fill: #2F75D7;
-  color: #2F75D7;
+  fill: #2f75d7;
+  color: #2f75d7;
 }
 
 .emotion-1:active:not(:disabled) {
-  color: #2F75D7;
+  color: #2f75d7;
 }
 
 .emotion-1:active:not(:disabled) svg {
-  fill: #2F75D7;
-  color: #2F75D7;
+  fill: #2f75d7;
+  color: #2f75d7;
 }
 
 .emotion-1:visited:not(:disabled) {
-  color: #903D91;
+  color: #903d91;
 }
 
 .emotion-1:visited:not(:disabled) svg {
-  fill: #903D91;
-  color: #903D91;
+  fill: #903d91;
+  color: #903d91;
 }
 
 <section

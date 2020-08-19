@@ -8,6 +8,7 @@ import {
   getColorFromTheme,
   getSizingFromTheme,
   getShadowFromTheme,
+  getSpacingFromTheme,
 } from 'newskit';
 import {ThemeColor} from './types';
 import {getTextColor, getBorderRadius} from './utils';
@@ -24,7 +25,7 @@ export const StyledSwatchRow = styled.span<
 >`
   display: inline-block;
   ${getTypePresetFromTheme('subhead010')};
-  padding: ${getSizingFromTheme('spaceInset030Squish')};
+  padding: ${getSpacingFromTheme('spaceInset030Squish')};
   width: 100%;
   border-radius: ${getBorderRadius as any};
   background-color: ${({theme, name}) => theme.colors[name as ColorKeys]};
@@ -44,13 +45,13 @@ export const StyledSwatchCard = styled.div`
 export const StyledSwatchCardTop = styled.div<ThemeColor>`
   height: ${getSizingFromTheme('sizing100')};
   background-color: ${({theme, name}) => theme.colors[name as ColorKeys]};
-  padding: ${getSizingFromTheme('spaceInset020')};
+  padding: ${getSpacingFromTheme('spaceInset020')};
 `;
 
 export const StyledSwatchCardBottom = styled.div<ThemeColor>`
   height: ${getSizingFromTheme('sizing100')};
   background-color: ${({theme}) => theme.colors.white};
-  padding: ${getSizingFromTheme('spaceInset030Squish')};
+  padding: ${getSpacingFromTheme('spaceInset030Squish')};
 `;
 
 export const StyledSwatchCardTitle = styled.div`
@@ -74,7 +75,7 @@ export const TextBoxSwatch = styled.span<{
   display: inline-block;
   width: 192px;
   height: ${getSizingFromTheme('sizing060')};
-  border-radius: ${({theme}) => theme.borderRadius.borderRadiusDefault};
+  border-radius: ${({theme}) => theme.borders.borderRadiusDefault};
   background-color: ${({theme, themeColor}) => theme.colors[themeColor]};
   color: ${({theme, dark}) =>
     dark ? theme.colors.white : theme.colors.inkContrast};

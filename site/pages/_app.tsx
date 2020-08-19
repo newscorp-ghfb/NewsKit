@@ -6,7 +6,7 @@ import {
   createEventInstrumentation,
   InstrumentationProvider,
   instrumentationHandlers,
-  Theme,
+  UncompiledTheme,
 } from 'newskit';
 import App, {AppContext} from 'next/app';
 import {ThemeMode} from '../context';
@@ -23,7 +23,7 @@ interface Props {
 
 interface State {
   themeMode: string;
-  theme: Theme;
+  theme: UncompiledTheme;
 }
 
 export default class MyApp extends App<Props, State> {

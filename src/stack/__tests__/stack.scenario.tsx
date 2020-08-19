@@ -4,7 +4,6 @@ import {Flow, StackDistribution, Stack} from '..';
 import {styled, getColorFromTheme} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {Tag} from '../../tag/tag';
-import {newskitLightTheme} from '../../themes';
 
 const MainContainer = styled.div`
   max-width: 800px;
@@ -34,7 +33,7 @@ const stackDistributionSet: any = () => {
           <StorybookHeading>
             Stack distribution set to {stackDistributionKey} when {flowKey}
           </StorybookHeading>
-          <Container theme={newskitLightTheme}>
+          <Container>
             <Block
               isBlock={[
                 'vertical-center',
@@ -70,7 +69,7 @@ export default {
       component: () => (
         <MainContainer>
           <StorybookHeading>Stack with defaults only</StorybookHeading>
-          <Container theme={newskitLightTheme}>
+          <Container>
             <Stack>
               <Tag>Example 1</Tag>
               <Tag>Example 2</Tag>
@@ -86,7 +85,7 @@ export default {
       component: () => (
         <MainContainer>
           <StorybookHeading>Stack as list</StorybookHeading>
-          <Container theme={newskitLightTheme}>
+          <Container>
             <Stack list ariaLabel="Tag list">
               <Tag>Example 1</Tag>
               <Tag>Example 2</Tag>
@@ -105,7 +104,7 @@ export default {
             {' '}
             Stack vertical using design system spacing token
           </StorybookHeading>
-          <Container theme={newskitLightTheme}>
+          <Container>
             <Block hasHeight>
               <Stack space="sizing050">
                 <Tag>Example 1</Tag>
@@ -125,7 +124,7 @@ export default {
           <StorybookHeading>
             Stack horizontal center using design system spacing token
           </StorybookHeading>
-          <Container theme={newskitLightTheme}>
+          <Container>
             <Block hasHeight>
               <Stack space="sizing050" flow={Flow.HorizontalCenter}>
                 <Tag>Example 1</Tag>
@@ -143,7 +142,7 @@ export default {
       component: () => (
         <MainContainer>
           <StorybookHeading>Nested Stacks</StorybookHeading>
-          <Container theme={newskitLightTheme}>
+          <Container>
             <Stack
               flow={Flow.HorizontalCenter}
               space="sizing020"
@@ -171,7 +170,7 @@ export default {
       component: () => (
         <MainContainer>
           <StorybookHeading>Nested stacks as list</StorybookHeading>
-          <Container theme={newskitLightTheme}>
+          <Container>
             <Stack
               flow={Flow.HorizontalCenter}
               space="sizing020"
@@ -200,7 +199,7 @@ export default {
       component: () => (
         <MainContainer>
           <StorybookHeading>Nested stacks both as list</StorybookHeading>
-          <Container theme={newskitLightTheme}>
+          <Container>
             <Stack
               flow={Flow.HorizontalCenter}
               space="sizing020"

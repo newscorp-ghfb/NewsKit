@@ -8,7 +8,7 @@ import {
   StyledTextCropWrapper,
   IE11FixContainer,
 } from './styled';
-import {useTheme} from '../themes/emotion';
+import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 
@@ -47,7 +47,7 @@ export const Flag: React.FC<FlagProps> = ({overrides = {}, ...props}) => {
       data-testid="flag"
       {...props}
       overrides={{
-        ...theme.defaultPresets.flag[size],
+        ...theme.componentDefaults.flag[size],
         ...filterOutFalsyProperties(overrides),
       }}
     />

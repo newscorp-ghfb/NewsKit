@@ -1,55 +1,50 @@
-import {
-  createTheme,
-  newskitLightTheme,
-  newskitDarkTheme,
-  PrimitiveOverrides,
-} from 'newskit';
+import {createTheme, newskitLightTheme, newskitDarkTheme} from 'newskit';
 
-const overrideStyles = (primitives: PrimitiveOverrides) => ({
+const stylePresets = {
   buttonLightDarkToggle: {
     base: {
-      backgroundColor: primitives.colors.interactive010,
-      borderRadius: primitives.borderRadius.borderRadiusCircle,
-      iconColor: primitives.colors.inkBrand010,
+      backgroundColor: '{{colors.interactive010}}',
+      borderRadius: '{{borders.borderRadiusCircle}}',
+      iconColor: '{{colors.inkBrand010}}',
     },
     hover: {
-      backgroundColor: primitives.colors.interactive020,
+      backgroundColor: '{{colors.interactive020}}',
     },
     active: {
-      backgroundColor: primitives.colors.interactive020,
+      backgroundColor: '{{colors.interactive020}}',
     },
   },
   linkSectionNavigation: {
     base: {
-      color: primitives.colors.inkLink,
+      color: '{{colors.inkLink}}',
     },
     hover: {
-      color: primitives.colors.inkLinkHover,
+      color: '{{colors.inkLinkHover}}',
     },
     active: {
-      color: primitives.colors.inkLinkActive,
+      color: '{{colors.inkLinkActive}}',
     },
     visited: {
-      color: primitives.colors.inkLink,
+      color: '{{colors.inkLink}}',
     },
   },
   linkLogo: {
     base: {
-      iconColor: primitives.colors.inkBase,
+      iconColor: '{{colors.inkBase}}',
     },
   },
-});
-
-export const newsKitLight = createTheme('newskit-light', {
+};
+export const newsKitLight = createTheme({
+  name: 'newskit-light',
   baseTheme: newskitLightTheme,
-  themeOverrider: primitives => ({
-    stylePresets: overrideStyles(primitives),
-  }),
+  overrides: {
+    stylePresets,
+  },
 });
-
-export const newsKitDark = createTheme('newskit-dark', {
+export const newsKitDark = createTheme({
+  name: 'newskit-dark',
   baseTheme: newskitDarkTheme,
-  themeOverrider: primitives => ({
-    stylePresets: overrideStyles(primitives),
-  }),
+  overrides: {
+    stylePresets,
+  },
 });

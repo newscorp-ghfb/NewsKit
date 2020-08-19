@@ -11,7 +11,7 @@ import {
 } from './styled';
 import {ThumbLabelWrapper} from './thumb-label-wrapper';
 import {renderLabel, getTrackBackgroundStyle} from './utils';
-import {useTheme} from '../themes/emotion';
+import {useTheme} from '../theme';
 
 const labelFlowMap = [
   // horizontal

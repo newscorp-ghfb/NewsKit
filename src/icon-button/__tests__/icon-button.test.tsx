@@ -3,7 +3,7 @@ import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {IconButton} from '..';
 import {ButtonProps, ButtonSize} from '../../button';
 import {Email} from '../../icons/email';
-import {ColorKeys} from '../../themes/mappers/colors';
+import {ColorKeys} from '../../theme';
 
 const renderIconButton = (props: ButtonProps) => (
   <IconButton {...props}>

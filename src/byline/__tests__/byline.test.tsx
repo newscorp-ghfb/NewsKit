@@ -1,7 +1,7 @@
 import {Byline} from '../byline';
 import {BylineProps} from '../types';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {createTheme} from '../../themes';
+import {createTheme, compileTheme} from '../../theme';
 
 describe('Byline', () => {
   test('renders correctly with one author', () => {
@@ -95,8 +95,9 @@ describe('Byline', () => {
   });
 
   test('renders correctly with overrides', () => {
-    const myCustomTheme = createTheme('my-custom-byline-theme', {
-      themeOverrider: primitives => ({
+    const myCustomTheme = createTheme({
+      name: 'my-custom-byline-theme',
+      overrides: {
         stylePresets: {
           bylineCustom: {
             base: {
@@ -116,21 +117,17 @@ describe('Byline', () => {
             },
           },
         },
-        typePresets: {
-          bylineCustom: primitives.typePresets.label030,
-          bylineLinkCustom: primitives.typePresets.label030,
-        },
-      }),
+      },
     });
 
     const props: BylineProps = {
       overrides: {
         stylePreset: 'bylineCustom',
-        typePreset: 'bylineCustom',
+        typePreset: 'label040',
         space: 'sizing030',
         link: {
           stylePreset: 'bylineLinkCustom',
-          typePreset: 'bylineLinkCustom',
+          typePreset: 'label040',
         },
         divider: {
           stylePreset: 'bylineDividerCustom',
@@ -155,7 +152,7 @@ describe('Byline', () => {
     const fragment = renderToFragmentWithTheme(
       Byline,
       props,
-      myCustomTheme,
+      compileTheme(myCustomTheme),
     ) as any;
 
     expect(fragment).toMatchSnapshot();

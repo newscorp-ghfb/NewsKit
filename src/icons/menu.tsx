@@ -1,5 +1,5 @@
 import React from 'react';
-import {withTheme} from '../themes';
+import {withTheme} from '../theme';
 import {Svg} from './svg';
 import {SvgProps} from './types';
 

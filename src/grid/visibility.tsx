@@ -1,7 +1,7 @@
 import React from 'react';
 import {DisplayProperty} from 'csstype';
 import {styled, css} from '../utils/style';
-import {BreakpointKeys, Devices} from '../themes/newskit-light/breakpoints';
+import {BreakpointKeys, Devices} from '../theme';
 import {getMediaQueryFromTheme} from '../utils/responsive-helpers';
 import {ThemeProp} from '../utils/style-types';
 import {getDeviceQueryFromTheme} from '../utils/device-helpers';

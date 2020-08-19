@@ -1,6 +1,5 @@
 import {ImageProps} from '../image/types';
-import {SizingKeys} from '../themes';
-import {PaddingPresetKeys} from '../themes/mappers/spacing';
+import {SizingKeys, PaddingPresetKeys} from '../theme';
 
 export interface CardProps {
   href?: string;

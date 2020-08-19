@@ -1,6 +1,6 @@
 import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {SizingKeys} from '../../themes/newskit-light/spacing';
+import {SizingKeys} from '../../theme';
 import {Stack} from '../stack';
 import {Tag} from '../../tag/tag';
 import {Flow, StackDistribution} from '../types';

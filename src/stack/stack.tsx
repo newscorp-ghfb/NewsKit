@@ -9,7 +9,7 @@ import {
   StyledChildContainer,
   hasSpacing,
 } from './styled';
-import {useTheme, Theme} from '../themes';
+import {useTheme, Theme} from '../theme';
 import {StackChild, AlignSelfValues} from '../stack-child';
 import {hasMatchingDisplayNameWith, as as asUtil} from '../utils/component';
 

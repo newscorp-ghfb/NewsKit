@@ -25,14 +25,14 @@ yarn add newskit
 Then on your react application, you can simply import the components like so:
 
 ```typescript
-import {ThemeProvider, Tag, TagSize, theSunTheme} from 'newskit';
+import {ThemeProvider, Tag, TagSize, newskitLightTheme} from 'newskit';
 import React from 'react';
 
 export default class App extends React.Component {
 
   render() {
     return (
-      <ThemeProvider theme={theSunTheme}>
+      <ThemeProvider theme={newskitLightTheme}>
         <Tag
           href="http://example.com"
           size={TagSize.Medium}>

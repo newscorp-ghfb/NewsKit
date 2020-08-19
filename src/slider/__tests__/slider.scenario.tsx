@@ -4,11 +4,12 @@ import {StatefulSlider} from '..';
 import {styled} from '../../utils/style';
 import {ThumbLabelProps, SliderProps, LabelPosition} from '../types';
 import {StorybookHeading} from '../../test/storybook-comps';
-import {createTheme, ThemeProvider} from '../../themes';
+import {createTheme, ThemeProvider} from '../../theme';
 import {Placeholder} from '../../icons';
 
-const myCustomTheme = createTheme('my-custom-slider-theme', {
-  themeOverrider: () => ({
+const myCustomTheme = createTheme({
+  name: 'my-custom-slider-theme',
+  overrides: {
     stylePresets: {
       customTrackStylePreset: {
         base: {
@@ -41,7 +42,7 @@ const myCustomTheme = createTheme('my-custom-slider-theme', {
         },
       },
     },
-  }),
+  },
 });
 
 const CustomTrack = styled.div`

@@ -10,7 +10,7 @@ import {
   ThumbLabelProps,
   LabelPosition,
 } from './types';
-import {SizingKeys} from '../themes';
+import {SizingKeys} from '../theme';
 import {Stack, StackProps} from '../stack';
 import {getStylePresetFromTheme} from '../utils/style-preset';
 import {ThemeProp} from '../utils/style-types';

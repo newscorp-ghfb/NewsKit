@@ -3,7 +3,7 @@ import format from 'date-fns/format';
 import {styled} from '../utils/style';
 import {DateTimeProps} from './types';
 import {TextBlock} from '../text-block';
-import {useTheme} from '../themes';
+import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 
 const StyledDateText = styled(TextBlock)`

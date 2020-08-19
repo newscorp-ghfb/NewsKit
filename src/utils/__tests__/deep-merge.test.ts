@@ -5,8 +5,7 @@ describe('deepMerge', () => {
     const target = {foo: {bar: {baz: true, quux: true}}} as any;
     const source = {foo: {bar: {baz: false}}} as any;
     const ret = deepMerge(target, source);
-    expect(ret).toBe(target);
-    expect(target).toEqual({foo: {bar: {baz: false, quux: true}}});
+    expect(ret).toEqual({foo: {bar: {baz: false, quux: true}}});
   });
 
   test('can handle three way merge', () => {

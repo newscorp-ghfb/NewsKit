@@ -3,13 +3,16 @@ import {
   getSizing,
   getPaddingPreset,
   getMarginPreset,
+  getSpacingStack,
+  getSpacingInline,
 } from '../style';
 import {getStylePreset} from '../style-preset';
-import {createTheme} from '../../themes';
+import {createTheme} from '../../theme';
 
 describe('get default presets functions', () => {
-  const theme: any = createTheme('test-theme', {
-    themeOverrider: () => ({
+  const theme: any = createTheme({
+    name: 'test-theme',
+    overrides: {
       typePresets: {
         theDefaultToken: {
           fontFamily: 'theDefaultToken-value-typePresets',
@@ -19,12 +22,6 @@ describe('get default presets functions', () => {
         },
         theNestedOverrideToken: {
           fontFamily: 'theNestedOverrideToken-value-typePresets',
-        },
-        realTypePreset: {
-          typePreset: {
-            xs: 'headline100',
-            md: 'headline200',
-          },
         },
       },
       stylePresets: {
@@ -49,13 +46,20 @@ describe('get default presets functions', () => {
         theOverrideToken: 'theOverrideToken-value-sizing',
         theNestedOverrideToken: 'theNestedOverrideToken-value-sizing',
       },
-      defaultPresets: {
+      spacePresets: {
+        theDefaultToken: 'theDefaultToken-value-space',
+        theOverrideToken: 'theOverrideToken-value-space',
+        theNestedOverrideToken: 'theNestedOverrideToken-value-space',
+      },
+      componentDefaults: {
         basicTestComponent: {
           typePreset: 'theDefaultToken',
           stylePreset: 'theDefaultToken',
           paddingPreset: 'theDefaultToken',
           marginPreset: 'theDefaultToken',
-          spacePreset: 'theDefaultToken',
+          spacePresets: 'theDefaultToken',
+          spaceInline: 'theDefaultToken',
+          spaceStack: 'theDefaultToken',
         },
         responsiveTestComponent: {
           typePreset: {
@@ -72,7 +76,7 @@ describe('get default presets functions', () => {
           },
         },
       },
-    }),
+    },
   });
 
   // For new utils, add a test case to this array.
@@ -94,7 +98,7 @@ describe('get default presets functions', () => {
     {
       fnName: 'getSizing',
       fn: getSizing as any,
-      tokenPathEnd: 'spacePreset',
+      tokenPathEnd: 'spacePresets',
       themeSection: 'sizing',
       tokenPathEndRequired: true,
     },
@@ -102,7 +106,7 @@ describe('get default presets functions', () => {
       fnName: 'getPaddingPreset',
       fn: getPaddingPreset as any,
       tokenPathEnd: 'paddingPreset',
-      themeSection: 'sizing',
+      themeSection: 'spacePresets',
       expectedResultFormatter: (expected: any) => ({padding: expected}),
       responsive: true,
     },
@@ -110,8 +114,25 @@ describe('get default presets functions', () => {
       fnName: 'getMarginPreset',
       fn: getMarginPreset as any,
       tokenPathEnd: 'marginPreset',
-      themeSection: 'sizing',
+      themeSection: 'spacePresets',
       expectedResultFormatter: (expected: any) => ({margin: expected}),
+      responsive: true,
+      tokenPathEndRequired: false,
+    },
+    {
+      fnName: 'getSpacingStack',
+      fn: getSpacingStack as any,
+      tokenPathEnd: 'spaceStack',
+      themeSection: 'spacePresets',
+      expectedResultFormatter: (expected: any) => ({marginBottom: expected}),
+      responsive: true,
+    },
+    {
+      fnName: 'getSpacingInline',
+      fn: getSpacingInline as any,
+      tokenPathEnd: 'spaceInline',
+      themeSection: 'spacePresets',
+      expectedResultFormatter: (expected: any) => ({marginRight: expected}),
       responsive: true,
     },
   ].forEach(

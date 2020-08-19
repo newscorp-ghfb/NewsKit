@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {SvgProps} from './types';
-import {Theme} from '../themes';
+import {Theme} from '../theme';
 
 export * from './indeterminate-progress-indicator';
 export * from './bookmark';

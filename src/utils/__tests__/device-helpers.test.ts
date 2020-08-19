@@ -1,4 +1,4 @@
-import {Devices} from '../../themes/newskit-light/breakpoints';
+import {Devices} from '../../theme';
 import {getDeviceQueryFromTheme} from '../device-helpers';
 import {css} from '../style';
 
@@ -7,35 +7,35 @@ describe('getDeviceQueryFromTheme', () => {
     test('display: block and to target iPadPro', () => {
       expect(getDeviceQueryFromTheme([Devices.iPadPro], {display: 'block'})())
         .toMatchInlineSnapshot(`
-                                    "
-                                              @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-                                                display:block;
-                                              }
                                             "
-                            `);
+                                                      @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+                                                        display:block;
+                                                      }
+                                                    "
+                                  `);
     });
 
     test('display: inline-block and to target iPadPro', () => {
       expect(
         getDeviceQueryFromTheme([Devices.iPadPro], {display: 'inline-block'})(),
       ).toMatchInlineSnapshot(`
-                                    "
-                                              @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-                                                display:inline-block;
-                                              }
                                             "
-                            `);
+                                                      @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+                                                        display:inline-block;
+                                                      }
+                                                    "
+                                  `);
     });
 
     test('display: none and to target iPadPro', () => {
       expect(getDeviceQueryFromTheme([Devices.iPadPro], {display: 'none'})())
         .toMatchInlineSnapshot(`
-                                    "
-                                              @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-                                                display:none;
-                                              }
                                             "
-                            `);
+                                                      @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+                                                        display:none;
+                                                      }
+                                                    "
+                                  `);
     });
 
     test('display: block and to target multiple devices', () => {
@@ -44,16 +44,16 @@ describe('getDeviceQueryFromTheme', () => {
           display: 'none',
         })(),
       ).toMatchInlineSnapshot(`
+        "
+                  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+                    display:none;
+                  }
+                
+                  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+                    display:none;
+                  }
                 "
-                          @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-                            display:none;
-                          }
-                        
-                          @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-                            display:none;
-                          }
-                        "
-            `);
+      `);
     });
 
     test('to return empty string if the target device is not supported', () => {

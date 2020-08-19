@@ -53,10 +53,10 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
 .emotion-0 {
   background-color: #ffffff;
   border-color: #0a68c1;
-  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  border-style: solid;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;

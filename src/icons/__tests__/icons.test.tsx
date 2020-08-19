@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as icons from '..';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {createTheme} from '../../themes';
+import {createTheme} from '../../theme';
 
 Object.entries(icons)
   .filter(icon => icon[0] !== 'Svg')
@@ -28,21 +28,20 @@ Object.entries(icons)
       });
 
       test(`renders the ${name} icon from theme override`, () => {
-        const fragment = renderToFragmentWithTheme(
-          Icon,
-          props,
-          createTheme('icon-test-theme', {
-            themeOverrider: () => ({
-              icons: {
-                [name]: () => (
-                  <svg>
-                    <path>a different icon</path>
-                  </svg>
-                ),
-              },
-            }),
-          }),
+        const DiffIcon: React.FC = () => (
+          <svg>
+            <path>a different icon</path>
+          </svg>
         );
+        const theme = createTheme({
+          name: 'icon-test-theme',
+          overrides: {
+            icons: {
+              [name]: DiffIcon,
+            },
+          },
+        });
+        const fragment = renderToFragmentWithTheme(Icon, props, theme);
         expect(fragment).toMatchSnapshot();
       });
     });

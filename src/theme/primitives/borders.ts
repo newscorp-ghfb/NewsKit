@@ -1,0 +1,16 @@
+export const borders = {
+  borderWidth000: '0',
+  borderWidth010: '1px',
+  borderWidthDefault: '1px',
+  borderWidth020: '2px',
+  borderWidth030: '4px',
+  borderRadiusSharp: '{{sizing.sizing000}}',
+  borderRadiusCircle: '50%',
+  borderRadiusPill: '20rem',
+  borderRadiusDefault: '{{sizing.sizing020}}',
+  borderRadiusRounded010: '{{sizing.sizing010}}',
+  borderRadiusRounded020: '{{sizing.sizing020}}',
+  borderRadiusRounded030: '{{sizing.sizing030}}',
+  borderRadiusRounded040: '{{sizing.sizing040}}',
+  borderRadiusRounded050: '{{sizing.sizing050}}',
+};

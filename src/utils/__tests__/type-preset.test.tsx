@@ -1,6 +1,6 @@
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {getTypePresetFromTheme, styled, MQ} from '../style';
-import {TypePresetKeys} from '../../themes';
+import {TypePresetKeys} from '../../theme';
 
 interface TestTextProp {
   typePreset: MQ<TypePresetKeys>;

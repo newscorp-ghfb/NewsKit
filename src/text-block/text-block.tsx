@@ -1,9 +1,8 @@
 import React from 'react';
 import {styled, getTypePreset, MQ} from '../utils/style';
 import {getStylePreset} from '../utils/style-preset';
-import {StylePresetKeys} from '../themes/mappers/style-preset';
+import {StylePresetKeys, TypePresetKeys} from '../theme';
 import {isInlineElement} from '../utils/inline-tags';
-import {TypePresetKeys} from '../themes';
 
 export interface TextBlockProps {
   overrides?: {

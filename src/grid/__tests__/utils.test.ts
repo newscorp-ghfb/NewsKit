@@ -1,13 +1,10 @@
+import {breakpoints} from '../../theme/primitives/breakpoints';
 import {OverrideProp, getOverridableProp} from '../utils';
-import {GridKeys} from '../../themes/newskit-light/grid';
-import {
-  breakpointPrimitives,
-  BreakpointKeys,
-} from '../../themes/newskit-light/breakpoints';
+import {GridKeys, BreakpointKeys} from '../../theme';
 
 type Test = [OverrideProp, GridKeys];
 
-const breakpointKeys = Object.keys(breakpointPrimitives);
+const breakpointKeys = Object.keys(breakpoints);
 
 describe('Grid utils', () => {
   ([
@@ -21,13 +18,15 @@ describe('Grid utils', () => {
           const mockSizingTokenPixels = 123;
           const mockProps: any = {
             theme: {
-              breakpoints: breakpointPrimitives,
-              grid: {
-                [themeKey]: {
-                  xs: `xs-theme-value`,
-                  sm: `sm-theme-value`,
-                  md: `md-theme-value`,
-                  lg: `lg-theme-value`,
+              breakpoints,
+              componentDefaults: {
+                grid: {
+                  [themeKey]: {
+                    xs: `xs-theme-value`,
+                    sm: `sm-theme-value`,
+                    md: `md-theme-value`,
+                    lg: `lg-theme-value`,
+                  },
                 },
               },
               sizing: {
@@ -49,7 +48,11 @@ describe('Grid utils', () => {
                   currentBreakpoint as BreakpointKeys,
                   mockProps,
                 ),
-              ).toEqual(mockProps.theme.grid[themeKey][currentBreakpoint]);
+              ).toEqual(
+                mockProps.theme.componentDefaults.grid[themeKey][
+                  currentBreakpoint
+                ],
+              );
             });
           } else {
             it(`should use the ${propOverrideBreakpoint} override token value`, () => {

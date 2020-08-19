@@ -1,6 +1,6 @@
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {Visible, Hidden} from '..';
-import {Devices} from '../../themes/newskit-light/breakpoints';
+import {Devices} from '../../theme';
 
 describe('Visible', () => {
   test('renders expected default styles', () => {

@@ -1,26 +1,27 @@
+import {StylePresetKeys} from '../theme/types';
+import {
+  Theme,
+  StylePresetStates,
+  StylePresetStyleKeys,
+  StylePresetStyles,
+  StylePreset,
+} from '../theme';
 import {
   CSSObject,
   getDefaultedValue,
-  getPresetValueFromTheme,
   MQ,
+  getResponsiveValueFromTheme,
 } from './style';
 import {filterObject, rejectObject} from './filter-object';
-import {Theme} from '../themes/creator';
-import {
-  StylePresetStates,
-  StylePresetStateKeys,
-  StylePresetStyleKeys,
-  StylePresetStyles,
-} from '../themes';
-import {StylePresetKeys} from '../themes/mappers/style-preset';
+
 import {ThemeProp} from './style-types';
 
 export interface GetStylePresetFromThemeOptions {
   isLoading?: boolean;
   isCurrent?: boolean;
   isDisabled?: boolean;
-  omitStates?: StylePresetStateKeys[];
-  filterStates?: StylePresetStateKeys[];
+  omitStates?: StylePresetStates[];
+  filterStates?: StylePresetStates[];
   omitStyles?: StylePresetStyleKeys[];
   filterStyles?: StylePresetStyleKeys[];
 }
@@ -47,7 +48,7 @@ export const getPresetStyles = (
 };
 
 const getPresetStates = (
-  stylePreset: StylePresetStates,
+  stylePreset: StylePreset,
   options?: GetStylePresetFromThemeOptions,
 ) => {
   const {
@@ -75,7 +76,7 @@ const getPresetStates = (
 };
 
 const getStylePresetValueFromTheme = (
-  stylePreset: StylePresetStates,
+  stylePreset: StylePreset,
   options?: GetStylePresetFromThemeOptions,
 ) =>
   Object.entries(getPresetStates(stylePreset, options)).reduce(
@@ -102,10 +103,10 @@ export const getStylePresetFromTheme = <Props extends ThemeProp>(
   customProp?: Exclude<keyof Props, 'theme'>,
   options?: GetStylePresetFromThemeOptions,
 ) => (props: Props) => {
-  const stylePreset = getPresetValueFromTheme('stylePresets')(
+  const stylePreset = getResponsiveValueFromTheme('stylePresets')(
     defaultToken,
     customProp,
-  )(props) as Partial<StylePresetStates> | Array<[string, StylePresetStates]>;
+  )(props) as Partial<StylePreset> | Array<[string, StylePreset]>;
   if (Array.isArray(stylePreset)) {
     return stylePreset.reduce(
       (acc, [mq, preset], index) => {
@@ -129,7 +130,7 @@ export const getStylePreset = getDefaultedValue(
 
 export const getSingleStylePreset = (
   {stylePresets}: Theme,
-  state: StylePresetStateKeys,
+  state: StylePresetStates,
   cssProp: Exclude<StylePresetStyleKeys, 'borderRadius'>,
   defaultToken: string,
   customToken?: string,

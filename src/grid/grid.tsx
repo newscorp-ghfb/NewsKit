@@ -1,7 +1,7 @@
 import React from 'react';
-import {styled, getGridSettingFromTheme, css} from '../utils/style';
+import {styled, css} from '../utils/style';
 import {getMediaQueryFromTheme} from '../utils/responsive-helpers';
-import {BreakpointKeys} from '../themes/newskit-light/breakpoints';
+import {BreakpointKeys, componentDefaults} from '../theme';
 import {GridContextProvider} from './context';
 import {GridProps} from './types';
 import {getOverridableProp, OverrideProp} from './utils';
@@ -35,7 +35,7 @@ const generateBreakpointConfig = (breakpoint: BreakpointKeys) => ({
 
 const StyledGridContainer = styled.div<GridProps>`
   width: 100%;
-  max-width: ${getGridSettingFromTheme('maxWidth')}px;
+  max-width: ${componentDefaults.grid.maxWidth}px;
   margin: 0 auto;
 `;
 

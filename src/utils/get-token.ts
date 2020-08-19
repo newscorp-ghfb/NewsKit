@@ -1,7 +1,7 @@
 import {get} from './get';
 import {ThemeProp} from './style-types';
 import {isResponsive} from './responsive-helpers';
-import {Breakpoints} from '../themes';
+import {Breakpoints} from '../theme';
 
 /**
  *  Allows the user to leave the token type off  Resolves token type. Optionally a type can be appended
@@ -51,7 +51,7 @@ export const getToken = <Props extends ThemeProp & {overrides?: unknown}>(
   propName?: string,
 ) => {
   const defaultToken = getAutoResolvingPath(
-    props.theme.defaultPresets,
+    props.theme.componentDefaults,
     props.theme.breakpoints,
     `${defaultPath}`,
     propName,

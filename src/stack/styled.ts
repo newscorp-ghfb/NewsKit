@@ -7,7 +7,7 @@ import {
   StackDistribution,
   StyledStackProps,
 } from './types';
-import {SizingKeys, Theme} from '../themes';
+import {SizingKeys, Theme} from '../theme';
 import {ThemeProp} from '../utils/style-types';
 
 export const flowDictionary = {

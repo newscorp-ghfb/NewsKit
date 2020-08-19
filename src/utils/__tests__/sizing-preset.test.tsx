@@ -5,18 +5,15 @@ import {
   styled,
   MQ,
 } from '../style';
-import {
-  SpacingPresetKeys,
-  PaddingPresetKeys,
-} from '../../themes/mappers/spacing';
+import {SpacePresetKeys, PaddingPresetKeys} from '../../theme';
 
 interface SpacingPresetProp {
-  margin?: MQ<SpacingPresetKeys>;
+  margin?: MQ<SpacePresetKeys>;
   padding?: MQ<PaddingPresetKeys>;
 }
 
 const TestBlock = styled.div<SpacingPresetProp>`
-  ${getMarginPresetFromTheme(undefined, 'margin')}
+  ${getMarginPresetFromTheme({sm: 'space040', md: 'space020'}, 'margin')}
   ${getPaddingPresetFromTheme(undefined, 'padding')}
 `;
 
@@ -29,6 +26,15 @@ describe('MarginPreset', () => {
   test('renders with override spaceStack010', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
       margin: 'spaceStack010',
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with override incorrect object', () => {
+    const fragment = renderToFragmentWithTheme(TestBlock, {
+      margin: {
+        foo: 'bar',
+      } as any,
     });
     expect(fragment).toMatchSnapshot();
   });

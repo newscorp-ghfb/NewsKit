@@ -1,22 +1,23 @@
 import baseStyled, {CreateStyled, CSSObject} from '@emotion/styled';
 import {css} from '@emotion/core';
+import {getFontSizing} from './font-sizing';
 import {
-  TypePresets,
+  SpacePresetKeys,
+  PaddingPresetKeys,
+  SizingKeys,
+  BorderRadiusKeys,
+  ShadowKeys,
+  TypePreset,
   TypePresetKeys,
   ColorKeys,
   AnimationKeys,
   BorderKeys,
   Theme,
-  FontPrimitivesKeys,
   BreakpointKeys,
-} from '../themes';
-import {FontSizeKeys, LineHeightKeys} from '../themes/newskit-light/fonts';
-import {getFontSizing} from './font-sizing';
-import {GridKeys} from '../themes/newskit-light/grid';
-import {ShadowKeys} from '../themes/newskit-light/shadow';
-import {SizingKeys, IconSizeKeys} from '../themes/newskit-light/spacing';
-import {SpacingPresetKeys, PaddingPresetKeys} from '../themes/mappers/spacing';
-import {BorderRadiusKeys} from '../themes/mappers/border-radius';
+  FontPrimitivesKeys,
+  LineHeightKeys,
+  FontSizeKeys,
+} from '../theme';
 import {getMediaQuery, isResponsive} from './responsive-helpers';
 import {filterObject} from './filter-object';
 import {isFontConfigObject} from './guards';
@@ -80,7 +81,7 @@ export const getValueFromTheme = <ThemeToken extends string>(
   );
 };
 
-export const getPresetValueFromTheme = <ThemeToken extends string>(
+export const getResponsiveValueFromTheme = <ThemeToken extends string>(
   themeKey: keyof Theme,
 ) => <Props extends ThemeProp>(
   defaultToken?: MQ<ThemeToken>,
@@ -143,10 +144,10 @@ export const getTypePresetFromTheme = <Props extends ThemeProp>(
   };
 
   const {withCrop = false} = options || {};
-  const typePreset = getPresetValueFromTheme('typePresets')(
+  const typePreset = getResponsiveValueFromTheme('typePresets')(
     defaultToken,
     customProp,
-  )(props) as Partial<TypePresets[TypePresetKeys]> | Array<[string, CSSObject]>;
+  )(props) as Partial<TypePreset> | Array<[string, CSSObject]>;
 
   if (Array.isArray(typePreset)) {
     return typePreset.reduce(
@@ -179,7 +180,7 @@ export const getTypePreset = getDefaultedValue(
 );
 
 export const getAnimationFromTheme = getValueFromTheme<AnimationKeys>(
-  'animation',
+  'animations',
 );
 
 export const getFontsFromTheme = <Props extends ThemeProp>(
@@ -199,18 +200,17 @@ export const getFontsFromTheme = <Props extends ThemeProp>(
 
 export const getColorFromTheme = getValueFromTheme<ColorKeys>('colors');
 
-export const getSizingFromTheme = getValueFromTheme<
-  SizingKeys | SpacingPresetKeys | PaddingPresetKeys | IconSizeKeys
->('sizing');
+export const getSizingFromTheme = getValueFromTheme<SizingKeys>('sizing');
 
 export const getSpacingFromTheme = <Props extends ThemeProp>(
-  defaultToken?: MQ<SpacingPresetKeys>,
+  defaultToken?: MQ<SpacePresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
   cssProp?: string,
 ) => (props: Props) => {
-  const value = getPresetValueFromTheme('sizing')(defaultToken, customProp)(
-    props,
-  ) as string | Array<[string, string]>;
+  const value = getResponsiveValueFromTheme('spacePresets')(
+    defaultToken,
+    customProp,
+  )(props) as string | Array<[string, string]>;
   if (Array.isArray(value)) {
     return value.reduce(
       (acc, [mq, preset], index) => {
@@ -225,7 +225,7 @@ export const getSpacingFromTheme = <Props extends ThemeProp>(
     );
   }
 
-  return cssProp && {[cssProp]: value};
+  return cssProp ? {[cssProp]: value} : value;
 };
 
 export const getSpacingInline = getDefaultedValue(
@@ -246,9 +246,10 @@ export const getPaddingPresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<PaddingPresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => (props: Props) => {
-  const padding = getPresetValueFromTheme('sizing')(defaultToken, customProp)(
-    props,
-  ) as string | Array<[string, string]>;
+  const padding = getResponsiveValueFromTheme('spacePresets')(
+    defaultToken,
+    customProp,
+  )(props) as string | Array<[string, string]>;
   if (Array.isArray(padding)) {
     return padding.reduce(
       (acc, [mq, preset], index) => {
@@ -272,12 +273,13 @@ export const getPaddingPreset = getDefaultedValue(
 );
 
 export const getMarginPresetFromTheme = <Props extends ThemeProp>(
-  defaultToken?: MQ<SpacingPresetKeys>,
+  defaultToken?: MQ<SpacePresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => (props: Props) => {
-  const margin = getPresetValueFromTheme('sizing')(defaultToken, customProp)(
-    props,
-  ) as string | Array<[string, string]>;
+  const margin = getResponsiveValueFromTheme('spacePresets')(
+    defaultToken,
+    customProp,
+  )(props) as string | Array<[string, string]>;
   if (Array.isArray(margin)) {
     return margin.reduce(
       (acc, [mq, preset], index) => {
@@ -303,12 +305,10 @@ export const getMarginPreset = getDefaultedValue(
 export const getBorderFromTheme = getValueFromTheme<BorderKeys>('borders');
 
 export const getBorderRadiusFromTheme = getValueFromTheme<BorderRadiusKeys>(
-  'borderRadius',
+  'borders',
 );
 
-export const getGridSettingFromTheme = getValueFromTheme<GridKeys>('grid');
-
-export const getShadowFromTheme = getValueFromTheme<ShadowKeys>('shadow');
+export const getShadowFromTheme = getValueFromTheme<ShadowKeys>('shadows');
 
 export const getFontSizingFromTheme = (
   fontSizeKey: TypePresetKeys | FontSizeKeys,

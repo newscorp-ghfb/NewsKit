@@ -2,12 +2,11 @@ import React from 'react';
 import {CSSObject} from '@emotion/core';
 import {ButtonProps, ButtonSize} from './types';
 import {StyledFlag} from './styled';
-import {useTheme} from '../themes/emotion';
+import {useTheme, Theme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {as as emotionAs} from '../utils/component';
 import {IndeterminateProgressIndicator} from '../icons/indeterminate-progress-indicator';
 import {getStylePresetFromTheme} from '../utils/style-preset';
-import {Theme} from '../themes';
 
 const getIconColourValue = (theme: Theme, stylePreset: string) => {
   const buttonStylePresets = getStylePresetFromTheme(stylePreset, undefined, {
@@ -28,7 +27,7 @@ export const Button: React.FC<ButtonProps> = ({
   const {disabled, isLoading} = props;
 
   const buttonSettings: typeof overrides = {
-    ...theme.defaultPresets.button[size],
+    ...theme.componentDefaults.button[size],
     ...filterOutFalsyProperties(overrides),
   };
 

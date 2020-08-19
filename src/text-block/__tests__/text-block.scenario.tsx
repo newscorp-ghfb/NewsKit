@@ -1,9 +1,10 @@
 import * as React from 'react';
 import {TextBlock} from '..';
-import {createTheme, ThemeProvider} from '../../themes';
+import {createTheme, ThemeProvider} from '../../theme';
 
-const myCustomTheme = createTheme('my-custom-textblock-theme', {
-  themeOverrider: () => ({
+const myCustomTheme = createTheme({
+  name: 'my-custom-textblock-theme',
+  overrides: {
     stylePresets: {
       textblockCustom: {
         base: {
@@ -18,7 +19,7 @@ const myCustomTheme = createTheme('my-custom-textblock-theme', {
         letterSpacing: 0,
       },
     },
-  }),
+  },
 });
 
 const bodyString =

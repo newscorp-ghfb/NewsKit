@@ -13,7 +13,7 @@ export const getBorderRadius = ({
 }) => {
   const fn = ({
     theme: {
-      borderRadius: {borderRadiusRounded020: radius},
+      borders: {borderRadiusRounded020: radius},
     },
   }: ThemeProp) =>
     [

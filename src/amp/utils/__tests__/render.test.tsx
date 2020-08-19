@@ -3,7 +3,7 @@ import amphtmlValidator from 'amphtml-validator';
 import {Head} from '../../head';
 import {Body} from '../../body';
 import {renderToStaticMarkup} from '../render';
-import {newskitLightTheme} from '../../../themes';
+import {newskitLightTheme, compileTheme} from '../../../theme';
 
 describe('amp renderToStaticMarkup test suite', () => {
   let html: string;
@@ -11,7 +11,7 @@ describe('amp renderToStaticMarkup test suite', () => {
   beforeAll(() => {
     // This should use a styled component but the styles aren't rendering... :S
     html = renderToStaticMarkup(
-      <Body theme={newskitLightTheme}>
+      <Body theme={compileTheme(newskitLightTheme)}>
         <div>
           <style>{`h1 {background: red; color: green; border: solid 5px blue;}`}</style>
           <h1>One Damn Ugly Heading</h1>

@@ -1,5 +1,5 @@
 import {Range} from 'react-range';
-import {SizingKeys} from '../themes';
+import {SizingKeys} from '../theme';
 
 type RenderTrackFunction = Range['props']['renderTrack'];
 type RenderThumbFunction = Range['props']['renderThumb'];

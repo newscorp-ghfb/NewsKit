@@ -77,8 +77,8 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #0a68c1;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -108,6 +108,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 
 .emotion-3:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-3:disabled svg {
@@ -177,10 +178,10 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 .emotion-6 {
   background-color: #ffffff;
   border-color: #0a68c1;
-  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  border-style: solid;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -443,8 +444,8 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #0a68c1;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -474,6 +475,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 
 .emotion-3:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-3:disabled svg {
@@ -543,10 +545,10 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 .emotion-6 {
   background-color: #ffffff;
   border-color: #0a68c1;
-  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  border-style: solid;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -809,8 +811,8 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #0a68c1;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -840,6 +842,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 
 .emotion-3:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-3:disabled svg {
@@ -909,10 +912,10 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 .emotion-6 {
   background-color: #ffffff;
   border-color: #0a68c1;
-  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  border-style: solid;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -1138,8 +1141,8 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #0a68c1;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1169,6 +1172,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 
 .emotion-3:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-3:disabled svg {
@@ -1217,10 +1221,10 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 .emotion-6 {
   background-color: #ffffff;
   border-color: #0a68c1;
-  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  border-style: solid;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -1540,8 +1544,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #0a68c1;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1571,6 +1575,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 .emotion-3:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-3:disabled svg {
@@ -1640,10 +1645,10 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 .emotion-6 {
   background-color: #ffffff;
   border-color: #0a68c1;
-  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  border-style: solid;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -1906,8 +1911,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #0a68c1;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -1937,6 +1942,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 .emotion-3:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-3:disabled svg {
@@ -2006,10 +2012,10 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 .emotion-6 {
   background-color: #ffffff;
   border-color: #0a68c1;
-  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  border-style: solid;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -2272,8 +2278,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #0a68c1;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -2303,6 +2309,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 
 .emotion-3:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-3:disabled svg {
@@ -2372,10 +2379,10 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 .emotion-6 {
   background-color: #ffffff;
   border-color: #0a68c1;
-  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  border-style: solid;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -2638,8 +2645,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #0a68c1;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -2669,6 +2676,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 
 .emotion-3:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-3:disabled svg {
@@ -2738,10 +2746,10 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 .emotion-6 {
   background-color: #ffffff;
   border-color: #0a68c1;
-  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  border-style: solid;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;
@@ -3004,8 +3012,8 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  border-radius: 50%;
   color: #0a68c1;
+  border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -3035,6 +3043,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 
 .emotion-3:disabled {
   color: #9c9c9c;
+  background-color: transparent;
 }
 
 .emotion-3:disabled svg {
@@ -3104,10 +3113,10 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 .emotion-6 {
   background-color: #ffffff;
   border-color: #0a68c1;
-  border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  border-style: solid;
   height: 32px;
   width: 32px;
   -webkit-box-pack: center;

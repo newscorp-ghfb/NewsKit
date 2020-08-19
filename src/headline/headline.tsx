@@ -1,9 +1,7 @@
 import React from 'react';
 import {styled, getTypePreset, MQ, getSpacingInline} from '../utils/style';
 import {getStylePreset} from '../utils/style-preset';
-import {TypePresetKeys} from '../themes/mappers/type-presets';
-import {SpacingPresetKeys} from '../themes/mappers/spacing';
-import {StylePresetKeys} from '../themes/mappers/style-preset';
+import {TypePresetKeys, StylePresetKeys, SpacePresetKeys} from '../theme';
 
 export interface HeadlineProps {
   kickerText?: string;
@@ -13,7 +11,7 @@ export interface HeadlineProps {
     kicker?: {
       stylePreset?: MQ<StylePresetKeys>;
       typePreset?: MQ<TypePresetKeys>;
-      spaceInline?: MQ<SpacingPresetKeys>;
+      spaceInline?: MQ<SpacePresetKeys>;
     };
     heading?: {
       stylePreset?: MQ<StylePresetKeys>;

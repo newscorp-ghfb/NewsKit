@@ -5,7 +5,7 @@ import {
   renderWithTheme,
 } from '../../test/test-utils';
 import {SliderProps, LabelPosition} from '../types';
-import {Theme, createTheme} from '../../themes';
+import {Theme, createTheme} from '../../theme';
 import {StyledThumbValue} from '../styled';
 
 let mockRange: jest.Mock;
@@ -187,8 +187,9 @@ describe('slider', () => {
         });
 
         it('should render default StyledThumbValue with custom thumbSize prop', () => {
-          const customTheme = createTheme('myTestTheme', {
-            themeOverrider: () => ({
+          const customTheme = createTheme({
+            name: 'myTestTheme',
+            overrides: {
               stylePresets: {
                 presetWithBorderRadius: {
                   base: {
@@ -197,7 +198,7 @@ describe('slider', () => {
                   },
                 },
               },
-            }),
+            },
           });
           const fragment = renderToFragmentWithTheme(
             StyledThumbValue,

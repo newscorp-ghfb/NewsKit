@@ -3,7 +3,7 @@ import {
   getMediaQuery,
   getMediaQueryFromTheme,
 } from '../responsive-helpers';
-import {Theme} from '../../themes';
+import {Theme} from '../../theme';
 
 describe('Helpers - ResponsiveHelpers', () => {
   test('getMediaQuery', () => {

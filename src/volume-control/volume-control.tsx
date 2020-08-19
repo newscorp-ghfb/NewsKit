@@ -4,7 +4,7 @@ import {IconButton} from '../icon-button';
 import {VolumeControlProps} from './types';
 import {Slider} from '../slider';
 import {VolumeUp, VolumeDown, VolumeMute} from '../icons';
-import {IconSizeKeys} from '../themes';
+import {IconSizeKeys} from '../theme';
 import {ScreenReaderOnly} from '../screen-reader-only/screen-reader-only';
 import {getBuiId} from '../utils/get-bui-id';
 
