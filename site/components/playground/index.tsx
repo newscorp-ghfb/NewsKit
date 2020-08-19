@@ -172,7 +172,7 @@ export const Playground: React.FC<
   const commonBlockProps: Partial<LegacyBlockProps> = {
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'stretch',
     flexDirection: 'column',
     border: 'solid 1px',
     borderColor: 'interface030',
