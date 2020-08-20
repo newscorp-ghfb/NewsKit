@@ -5,13 +5,13 @@ import {
   StylePresetKeys,
 } from '../theme';
 import {MQ} from '../utils/style';
-import {EventContext} from '../instrumentation/types';
+import {EventData} from '../instrumentation';
 
 export interface LinkProps
-  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
+    EventData {
   // href is optional on AnchorHTMLAttributes, here we make it required.
   href: string;
-  eventContext?: EventContext;
   external?: boolean;
   noUnderline?: boolean;
   overrides?: {

@@ -7,6 +7,7 @@ import {filterOutFalsyProperties} from '../utils/filter-object';
 import {as as emotionAs} from '../utils/component';
 import {IndeterminateProgressIndicator} from '../icons/indeterminate-progress-indicator';
 import {getStylePresetFromTheme} from '../utils/style-preset';
+import {useInstrumentation, EventTrigger} from '../instrumentation';
 
 const getIconColourValue = (theme: Theme, stylePreset: string) => {
   const buttonStylePresets = getStylePresetFromTheme(stylePreset, undefined, {
@@ -23,8 +24,9 @@ export const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const theme = useTheme();
+  const {fireEvent} = useInstrumentation();
   const {size = ButtonSize.Medium} = props;
-  const {disabled, isLoading} = props;
+  const {disabled, isLoading, eventContext, eventOriginator = 'button'} = props;
 
   const buttonSettings: typeof overrides = {
     ...theme.componentDefaults.button[size],
@@ -39,6 +41,18 @@ export const Button: React.FC<ButtonProps> = ({
       isLoading={isLoading}
       {...emotionAs('button')}
       {...props}
+      onClick={(...args) => {
+        fireEvent({
+          originator: eventOriginator,
+          trigger: EventTrigger.Click,
+          context: {
+            ...eventContext,
+          },
+        });
+        if (props.onClick) {
+          props.onClick(...args);
+        }
+      }}
       overrides={buttonSettings}
     >
       {isLoading ? (

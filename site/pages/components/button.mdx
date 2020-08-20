@@ -32,6 +32,12 @@ Custom props are detailed below:
   >
     Optional size of the Button: Small, Medium or Large.
   </Prop>
+  <Prop name="eventContext" type="object">
+    This props allows users to add extra event data to buttons' click events.
+  </Prop>
+  <Prop name="eventOriginator" type="string" default='button'>
+    This props allows users to add event originator custom name. e.x.: 'play-button'.
+  </Prop>
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     Here are the overrides that the Button accepts:

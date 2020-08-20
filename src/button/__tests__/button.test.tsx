@@ -1,7 +1,12 @@
 import React from 'react';
-import {renderToFragmentWithTheme} from '../../test/test-utils';
+import {fireEvent} from '@testing-library/react';
+import {
+  renderToFragmentWithTheme,
+  renderWithTheme,
+} from '../../test/test-utils';
 import {Button, ButtonProps, ButtonSize} from '..';
 import {Email} from '../../icons/email';
+import {InstrumentationProvider, EventTrigger} from '../../instrumentation';
 
 const renderButtonWithText = (props: ButtonProps) => (
   <Button {...props}>click this!</Button>
@@ -179,6 +184,57 @@ describe('Button', () => {
       };
       const fragment = renderToFragmentWithTheme(renderButtonWithText, props);
       expect(fragment).toMatchSnapshot();
+    });
+  });
+
+  test('fires click event onClick', async () => {
+    const mockFireEvent = jest.fn();
+    const eventContext = {
+      event: 'other event data',
+    };
+    const props: ButtonProps = {
+      eventContext,
+    };
+    const button = await renderWithTheme((() => (
+      <InstrumentationProvider fireEvent={mockFireEvent}>
+        <Button {...props}>test link text</Button>
+      </InstrumentationProvider>
+    )) as React.FC).findByText('test link text');
+
+    fireEvent.click(button);
+
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'button',
+      trigger: EventTrigger.Click,
+      context: {
+        event: 'other event data',
+      },
+    });
+  });
+
+  test('fires click event onClick with custom originator', async () => {
+    const mockFireEvent = jest.fn();
+    const eventContext = {
+      event: 'other event data',
+    };
+    const props: ButtonProps = {
+      eventContext,
+      eventOriginator: 'custom-originator',
+    };
+    const button = await renderWithTheme((() => (
+      <InstrumentationProvider fireEvent={mockFireEvent}>
+        <Button {...props}>test link text</Button>
+      </InstrumentationProvider>
+    )) as React.FC).findByText('test link text');
+
+    fireEvent.click(button);
+
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'custom-originator',
+      trigger: EventTrigger.Click,
+      context: {
+        event: 'other event data',
+      },
     });
   });
 });

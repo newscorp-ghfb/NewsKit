@@ -1,3 +1,4 @@
+import {EventData} from '../instrumentation/types';
 import {FlagProps} from '../flag';
 
 export enum ButtonSize {
@@ -8,7 +9,8 @@ export enum ButtonSize {
 
 export interface ButtonProps
   extends Omit<FlagProps, 'size'>,
-    React.ButtonHTMLAttributes<HTMLButtonElement> {
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    EventData {
   size?: ButtonSize;
   isLoading?: boolean;
 }

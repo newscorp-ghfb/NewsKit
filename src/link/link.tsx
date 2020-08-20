@@ -30,7 +30,14 @@ const StyledTextBlock = styled(TextBlock)`
 `;
 
 export const Link: React.FC<LinkProps> = props => {
-  const {href, external, children, overrides} = props;
+  const {
+    href,
+    external,
+    children,
+    overrides,
+    eventContext,
+    eventOriginator = 'link',
+  } = props;
   const {fireEvent} = useInstrumentation();
 
   const theme = useTheme();
@@ -53,11 +60,11 @@ export const Link: React.FC<LinkProps> = props => {
       {...props}
       onClick={(...args) => {
         fireEvent({
-          originator: 'link',
+          originator: eventOriginator,
           trigger: EventTrigger.Click,
           context: {
             href: props.href,
-            ...props.eventContext,
+            ...eventContext,
           },
         });
         if (props.onClick) {

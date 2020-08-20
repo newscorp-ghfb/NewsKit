@@ -45,6 +45,9 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
   <Prop name="eventContext" type="object">
     This props allows users to add extra event data to links' click events.
   </Prop>
+  <Prop name="eventOriginator" type="string" default='link'>
+    This props allows users to add event originator custom name. e.x.: 'newskit-link'.
+  </Prop>
   <Prop name="noUnderline" type="boolean">
     If provided, determines if the link will be underlined.
   </Prop>
@@ -57,7 +60,7 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     Refer to the defaults below for the object structure:
-    
+
     <Prop name="stylePreset" type="string" default="linkInline">
       If provided, this overrides the style preset applied to the Link.
     </Prop>
@@ -78,7 +81,7 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
       For more information about how to apply overrides to a component please refer to the <Link href="/theming/override-default-presets">Override default preset</Link> page.
   </Prop>
 
-  ### Default HTML props 
+  ### Default HTML props
   All the native HTML attributes which an anchor element can take, can also be passed.
   E.g:  ```<Link aria-label='NewsKit staging website' href="http://newskit.staging-news.co.uk/">```
 
@@ -90,7 +93,7 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
 Here you can play with the <b>Link</b> component and the <b>LinkStandalone</b> component.
 
 LinkStandalone is an alternative export of the Link.
-All of the above applies to it, however the <b>LinkStandalone</b> uses a different default stylePreset which does not include the underline. 
+All of the above applies to it, however the <b>LinkStandalone</b> uses a different default stylePreset which does not include the underline.
 Both the Link and LinkStandalone default stylePresets can be changed via the theme.
 
 <Playground
@@ -155,16 +158,16 @@ For more information on how to override default presets, see docs [overrides def
 
 ### Accessibility
 
-#### Aria-label 
+#### Aria-label
 By default there is no aria label set in the Link component and the text inside the anchor will be read by the Screen Reader
 But bear in mind that, if the text is not descriptive enough, an aria label will be necessary to understand where the link is taking the user to.
 
 E.g:
   ```
-  <a href=* aria-label=”Films list of Harry Potter”>Harry Potter<a/> 
+  <a href=* aria-label=”Films list of Harry Potter”>Harry Potter<a/>
   ```
 
-#### Underline styling 
+#### Underline styling
 If the underline style is removed from a link, which has already a distinct color + underline combination, bear in mind some other indicator has to be added.
 This could be the case when overriding presets.
 

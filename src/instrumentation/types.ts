@@ -24,3 +24,8 @@ export interface EventInstrumentation {
   context: EventContext;
   fireEvent: (event: InstrumentationEvent) => void;
 }
+
+export interface EventData {
+  eventContext?: EventContext;
+  eventOriginator?: string;
+}

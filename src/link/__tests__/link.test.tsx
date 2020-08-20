@@ -68,4 +68,34 @@ describe('Link', () => {
       },
     });
   });
+
+  test('fires click event onClick with custom originator', async () => {
+    const mockFireEvent = jest.fn();
+    const eventContext = {
+      event: 'other event data',
+    };
+    const link = await renderWithTheme((() => (
+      <InstrumentationProvider fireEvent={mockFireEvent}>
+        <Link
+          href="the-href.com"
+          eventContext={eventContext}
+          eventOriginator="custom-originator"
+        >
+          test link text
+        </Link>
+        ;
+      </InstrumentationProvider>
+    )) as React.FC).findByText('test link text');
+
+    fireEvent.click(link);
+
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'custom-originator',
+      trigger: EventTrigger.Click,
+      context: {
+        href: 'the-href.com',
+        event: 'other event data',
+      },
+    });
+  });
 });
