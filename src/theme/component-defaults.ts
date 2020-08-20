@@ -119,6 +119,32 @@ export const componentDefaults = {
       space: 'sizing010',
     },
   },
+  tab: {
+    small: {
+      stylePreset: 'tab',
+      typePreset: 'label020',
+      paddingPreset: 'spaceInset020Squish',
+      minHeight: 'sizing060',
+      iconSize: 'iconSize010',
+      space: 'sizing020',
+    },
+    medium: {
+      stylePreset: 'tab',
+      typePreset: 'label020',
+      paddingPreset: 'spaceInset030Squish',
+      minHeight: 'sizing080',
+      iconSize: 'iconSize020',
+      space: 'sizing020',
+    },
+    large: {
+      stylePreset: 'tab',
+      typePreset: 'label030',
+      paddingPreset: 'spaceInset030Squish',
+      minHeight: 'sizing090',
+      iconSize: 'iconSize030',
+      space: 'sizing020',
+    },
+  },
 
   unorderedList: {
     spaceStack: 'space040',

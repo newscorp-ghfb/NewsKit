@@ -53,7 +53,7 @@
             "page": true,
             "id": "/theming/default-presets/override-individual-components"
           }
-        ]  
+        ]
       },
       {
         "title": "StylePreset",
@@ -201,6 +201,11 @@
         "title": "Standfirst",
         "page": true,
         "id": "/components/standfirst"
+      },
+      {
+        "title": "Tab",
+        "page": true,
+        "id": "/components/tab"
       },
       {
         "title": "Tag",

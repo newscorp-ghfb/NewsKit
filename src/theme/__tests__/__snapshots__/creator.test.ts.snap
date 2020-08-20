@@ -352,6 +352,32 @@ Object {
         },
       },
     },
+    "tab": Object {
+      "large": Object {
+        "iconSize": "iconSize030",
+        "minHeight": "sizing090",
+        "paddingPreset": "spaceInset030Squish",
+        "space": "sizing020",
+        "stylePreset": "tab",
+        "typePreset": "label030",
+      },
+      "medium": Object {
+        "iconSize": "iconSize020",
+        "minHeight": "sizing080",
+        "paddingPreset": "spaceInset030Squish",
+        "space": "sizing020",
+        "stylePreset": "tab",
+        "typePreset": "label020",
+      },
+      "small": Object {
+        "iconSize": "iconSize010",
+        "minHeight": "sizing060",
+        "paddingPreset": "spaceInset020Squish",
+        "space": "sizing020",
+        "stylePreset": "tab",
+        "typePreset": "label020",
+      },
+    },
     "tag": Object {
       "large": Object {
         "iconSize": "iconSize020",
@@ -911,9 +937,6 @@ Object {
         "color": "{{colors.inkBrand010}}",
         "iconColor": "{{colors.inkBrand010}}",
       },
-      "current": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
       "disabled": Object {
         "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkNonEssential}}",
@@ -925,6 +948,9 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactive120}}",
         "color": "{{colors.inkInverse}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.transparent}}",
       },
     },
     "buttonSocialFacebook": Object {
@@ -937,9 +963,6 @@ Object {
         "color": "{{colors.inkBrand010}}",
         "iconColor": "{{colors.inkBrand010}}",
       },
-      "current": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
       "disabled": Object {
         "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkNonEssential}}",
@@ -951,6 +974,9 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactive120}}",
         "color": "{{colors.inkInverse}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.transparent}}",
       },
     },
     "buttonSocialLink": Object {
@@ -963,9 +989,6 @@ Object {
         "color": "{{colors.inkBrand010}}",
         "iconColor": "{{colors.inkBrand010}}",
       },
-      "current": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
       "disabled": Object {
         "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkNonEssential}}",
@@ -977,6 +1000,9 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactive120}}",
         "color": "{{colors.inkInverse}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.transparent}}",
       },
     },
     "buttonSocialShare": Object {
@@ -989,9 +1015,6 @@ Object {
         "color": "{{colors.inkBrand010}}",
         "iconColor": "{{colors.inkBrand010}}",
       },
-      "current": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
       "disabled": Object {
         "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkNonEssential}}",
@@ -1003,6 +1026,9 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactive120}}",
         "color": "{{colors.inkInverse}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.transparent}}",
       },
     },
     "buttonSocialTwitter": Object {
@@ -1015,9 +1041,6 @@ Object {
         "color": "{{colors.inkBrand010}}",
         "iconColor": "{{colors.inkBrand010}}",
       },
-      "current": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
       "disabled": Object {
         "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkNonEssential}}",
@@ -1029,6 +1052,9 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactive120}}",
         "color": "{{colors.inkInverse}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.transparent}}",
       },
     },
     "buttonSocialWhatsapp": Object {
@@ -1041,9 +1067,6 @@ Object {
         "color": "{{colors.inkBrand010}}",
         "iconColor": "{{colors.inkBrand010}}",
       },
-      "current": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
       "disabled": Object {
         "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkNonEssential}}",
@@ -1055,6 +1078,9 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactive120}}",
         "color": "{{colors.inkInverse}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.transparent}}",
       },
     },
     "buttonSolidNegative": Object {
@@ -1358,9 +1384,6 @@ Object {
         "color": "{{colors.inkBrand010}}",
         "iconColor": "{{colors.inkBrand010}}",
       },
-      "current": Object {
-        "backgroundColor": "{{colors.transparent}}",
-      },
       "disabled": Object {
         "backgroundColor": "{{colors.transparent}}",
         "color": "{{colors.inkNonEssential}}",
@@ -1372,6 +1395,9 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interactive120}}",
         "color": "{{colors.inkInverse}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.transparent}}",
       },
     },
     "iconButtonOutlinedNegative": Object {
@@ -1758,6 +1784,31 @@ Object {
         "color": "{{colors.inkBase}}",
       },
     },
+    "tab": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactive020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveDisabled}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactive010}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "selected": Object {
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
     "tagDefault": Object {
       "active": Object {
         "borderWidth": "{{borders.borderWidth010}}",
@@ -1771,14 +1822,14 @@ Object {
         "color": "{{colors.inkBase}}",
         "iconColor": "{{colors.inkBase}}",
       },
-      "current": Object {
+      "hover": Object {
+        "backgroundColor": "{{colors.interactive120}}",
+      },
+      "selected": Object {
         "backgroundColor": "{{colors.interactive130}}",
         "borderStyle": "none",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactive120}}",
       },
     },
     "tagPrimary": Object {
@@ -1794,14 +1845,14 @@ Object {
         "color": "{{colors.inkBase}}",
         "iconColor": "{{colors.inkBase}}",
       },
-      "current": Object {
+      "hover": Object {
+        "backgroundColor": "{{colors.interactive120}}",
+      },
+      "selected": Object {
         "backgroundColor": "{{colors.interactive130}}",
         "borderStyle": "none",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactive120}}",
       },
     },
     "titleBar": Object {

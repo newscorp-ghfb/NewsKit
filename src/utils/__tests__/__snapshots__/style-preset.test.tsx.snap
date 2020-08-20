@@ -122,25 +122,6 @@ exports[`getStylePresetFromTheme getStylePresetFromTheme with override to intera
 </DocumentFragment>
 `;
 
-exports[`getStylePresetFromTheme iconButtonMinimalPrimary with current state 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  background-color: #00ff00;
-  color: #0a68c1;
-  border-radius: 50%;
-}
-
-.emotion-0 svg {
-  fill: #0a68c1;
-  color: #0a68c1;
-}
-
-<div
-    class="emotion-0"
-  />
-</DocumentFragment>
-`;
-
 exports[`getStylePresetFromTheme iconButtonMinimalPrimary with disabled and loading state 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -179,7 +160,7 @@ exports[`getStylePresetFromTheme iconButtonMinimalPrimary with disabled state 1`
 </DocumentFragment>
 `;
 
-exports[`getStylePresetFromTheme iconButtonMinimalPrimary with loading and current state 1`] = `
+exports[`getStylePresetFromTheme iconButtonMinimalPrimary with loading and selected state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #ffff00;
@@ -202,6 +183,25 @@ exports[`getStylePresetFromTheme iconButtonMinimalPrimary with loading state 1`]
 <DocumentFragment>
   .emotion-0 {
   background-color: #ffff00;
+  color: #0a68c1;
+  border-radius: 50%;
+}
+
+.emotion-0 svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme iconButtonMinimalPrimary with selected state 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #00ff00;
   color: #0a68c1;
   border-radius: 50%;
 }

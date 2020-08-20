@@ -18,7 +18,7 @@ import {ThemeProp} from './style-types';
 
 export interface GetStylePresetFromThemeOptions {
   isLoading?: boolean;
-  isCurrent?: boolean;
+  isSelected?: boolean;
   isDisabled?: boolean;
   omitStates?: StylePresetStates[];
   filterStates?: StylePresetStates[];
@@ -54,18 +54,18 @@ const getPresetStates = (
   const {
     omitStates = [],
     filterStates = [],
-    isCurrent = false,
+    isSelected = false,
     isLoading = false,
     isDisabled = false,
   } = options || {};
-  const {current, loading, ...presetStates} =
+  const {selected, loading, ...presetStates} =
     filterStates && filterStates.length
       ? filterObject(stylePreset, filterStates)
       : rejectObject(stylePreset, omitStates);
   const stateOverrides =
     (isDisabled && presetStates.disabled) ||
     (isLoading && loading) ||
-    (isCurrent && current) ||
+    (isSelected && selected) ||
     undefined;
   if (stateOverrides) {
     const {base = {}} = presetStates;

@@ -19,7 +19,6 @@ export type StylePresetStyleKeys = keyof StylePresetStyles;
 
 export interface StylePreset {
   // component states
-  current?: StylePresetStyles;
   loading?: StylePresetStyles;
   // baseline css
   base?: StylePresetStyles;
@@ -29,6 +28,7 @@ export interface StylePreset {
   active?: StylePresetStyles;
   visited?: StylePresetStyles;
   disabled?: StylePresetStyles;
+  selected?: StylePresetStyles;
 }
 export type StylePresetStates = keyof StylePreset;
 

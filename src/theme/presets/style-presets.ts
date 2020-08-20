@@ -567,7 +567,7 @@ stylePresets.iconButtonMinimalSecondary = {
   active: {
     backgroundColor: '{{colors.interactive120}}',
   },
-  current: {
+  selected: {
     backgroundColor: '{{colors.transparent}}',
   },
   disabled: {
@@ -656,7 +656,7 @@ stylePresets.tagPrimary = {
   active: {
     borderWidth: '{{borders.borderWidth010}}',
   },
-  current: {
+  selected: {
     color: '{{colors.inkInverse}}',
     iconColor: '{{colors.inkInverse}}',
     backgroundColor: '{{colors.interactive130}}',
@@ -664,6 +664,34 @@ stylePresets.tagPrimary = {
   },
 };
 stylePresets.tagDefault = stylePresets.tagPrimary;
+
+// Tab
+
+stylePresets.tab = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    color: '{{colors.inkBase}}',
+    iconColor: '{{colors.inkBase}}',
+  },
+  selected: {
+    iconColor: '{{colors.inkBase}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interactive010}}',
+    color: '{{colors.inkBrand010}}',
+    iconColor: '{{colors.inkBrand010}}',
+  },
+  active: {
+    backgroundColor: '{{colors.interactive020}}',
+    color: '{{colors.inkBrand010}}',
+    iconColor: '{{colors.inkBrand010}}',
+  },
+  disabled: {
+    backgroundColor: '{{colors.interactiveDisabled}}',
+    color: '{{colors.inkNonEssential}}',
+    iconColor: '{{colors.inkNonEssential}}',
+  },
+};
 
 //
 // Flag

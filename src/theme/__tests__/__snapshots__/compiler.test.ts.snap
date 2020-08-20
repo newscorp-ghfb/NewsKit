@@ -353,6 +353,32 @@ Object {
         },
       },
     },
+    "tab": Object {
+      "large": Object {
+        "iconSize": "iconSize030",
+        "minHeight": "sizing090",
+        "paddingPreset": "spaceInset030Squish",
+        "space": "sizing020",
+        "stylePreset": "tab",
+        "typePreset": "label030",
+      },
+      "medium": Object {
+        "iconSize": "iconSize020",
+        "minHeight": "sizing080",
+        "paddingPreset": "spaceInset030Squish",
+        "space": "sizing020",
+        "stylePreset": "tab",
+        "typePreset": "label020",
+      },
+      "small": Object {
+        "iconSize": "iconSize010",
+        "minHeight": "sizing060",
+        "paddingPreset": "spaceInset020Squish",
+        "space": "sizing020",
+        "stylePreset": "tab",
+        "typePreset": "label020",
+      },
+    },
     "tag": Object {
       "large": Object {
         "iconSize": "iconSize020",
@@ -912,9 +938,6 @@ Object {
         "color": "#0a68c1",
         "iconColor": "#0a68c1",
       },
-      "current": Object {
-        "backgroundColor": "transparent",
-      },
       "disabled": Object {
         "backgroundColor": "transparent",
         "color": "#9c9c9c",
@@ -926,6 +949,9 @@ Object {
       "loading": Object {
         "backgroundColor": "#f0f0f0",
         "color": "#ffffff",
+      },
+      "selected": Object {
+        "backgroundColor": "transparent",
       },
     },
     "buttonSocialFacebook": Object {
@@ -938,9 +964,6 @@ Object {
         "color": "#0a68c1",
         "iconColor": "#0a68c1",
       },
-      "current": Object {
-        "backgroundColor": "transparent",
-      },
       "disabled": Object {
         "backgroundColor": "transparent",
         "color": "#9c9c9c",
@@ -952,6 +975,9 @@ Object {
       "loading": Object {
         "backgroundColor": "#f0f0f0",
         "color": "#ffffff",
+      },
+      "selected": Object {
+        "backgroundColor": "transparent",
       },
     },
     "buttonSocialLink": Object {
@@ -964,9 +990,6 @@ Object {
         "color": "#0a68c1",
         "iconColor": "#0a68c1",
       },
-      "current": Object {
-        "backgroundColor": "transparent",
-      },
       "disabled": Object {
         "backgroundColor": "transparent",
         "color": "#9c9c9c",
@@ -978,6 +1001,9 @@ Object {
       "loading": Object {
         "backgroundColor": "#f0f0f0",
         "color": "#ffffff",
+      },
+      "selected": Object {
+        "backgroundColor": "transparent",
       },
     },
     "buttonSocialShare": Object {
@@ -990,9 +1016,6 @@ Object {
         "color": "#0a68c1",
         "iconColor": "#0a68c1",
       },
-      "current": Object {
-        "backgroundColor": "transparent",
-      },
       "disabled": Object {
         "backgroundColor": "transparent",
         "color": "#9c9c9c",
@@ -1004,6 +1027,9 @@ Object {
       "loading": Object {
         "backgroundColor": "#f0f0f0",
         "color": "#ffffff",
+      },
+      "selected": Object {
+        "backgroundColor": "transparent",
       },
     },
     "buttonSocialTwitter": Object {
@@ -1016,9 +1042,6 @@ Object {
         "color": "#0a68c1",
         "iconColor": "#0a68c1",
       },
-      "current": Object {
-        "backgroundColor": "transparent",
-      },
       "disabled": Object {
         "backgroundColor": "transparent",
         "color": "#9c9c9c",
@@ -1030,6 +1053,9 @@ Object {
       "loading": Object {
         "backgroundColor": "#f0f0f0",
         "color": "#ffffff",
+      },
+      "selected": Object {
+        "backgroundColor": "transparent",
       },
     },
     "buttonSocialWhatsapp": Object {
@@ -1042,9 +1068,6 @@ Object {
         "color": "#0a68c1",
         "iconColor": "#0a68c1",
       },
-      "current": Object {
-        "backgroundColor": "transparent",
-      },
       "disabled": Object {
         "backgroundColor": "transparent",
         "color": "#9c9c9c",
@@ -1056,6 +1079,9 @@ Object {
       "loading": Object {
         "backgroundColor": "#f0f0f0",
         "color": "#ffffff",
+      },
+      "selected": Object {
+        "backgroundColor": "transparent",
       },
     },
     "buttonSolidNegative": Object {
@@ -1359,9 +1385,6 @@ Object {
         "color": "#0a68c1",
         "iconColor": "#0a68c1",
       },
-      "current": Object {
-        "backgroundColor": "transparent",
-      },
       "disabled": Object {
         "backgroundColor": "transparent",
         "color": "#9c9c9c",
@@ -1373,6 +1396,9 @@ Object {
       "loading": Object {
         "backgroundColor": "#f0f0f0",
         "color": "#ffffff",
+      },
+      "selected": Object {
+        "backgroundColor": "transparent",
       },
     },
     "iconButtonOutlinedNegative": Object {
@@ -1759,6 +1785,31 @@ Object {
         "color": "#2e2e2e",
       },
     },
+    "tab": Object {
+      "active": Object {
+        "backgroundColor": "#d5ebff",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "color": "#2e2e2e",
+        "iconColor": "#2e2e2e",
+      },
+      "disabled": Object {
+        "backgroundColor": "#e4e4e4",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#e6f4ff",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+      "selected": Object {
+        "iconColor": "#2e2e2e",
+      },
+    },
     "tagDefault": Object {
       "active": Object {
         "borderWidth": "1px",
@@ -1772,14 +1823,14 @@ Object {
         "color": "#2e2e2e",
         "iconColor": "#2e2e2e",
       },
-      "current": Object {
+      "hover": Object {
+        "backgroundColor": "#f0f0f0",
+      },
+      "selected": Object {
         "backgroundColor": "#535353",
         "borderStyle": "none",
         "color": "#ffffff",
         "iconColor": "#ffffff",
-      },
-      "hover": Object {
-        "backgroundColor": "#f0f0f0",
       },
     },
     "tagPrimary": Object {
@@ -1795,14 +1846,14 @@ Object {
         "color": "#2e2e2e",
         "iconColor": "#2e2e2e",
       },
-      "current": Object {
+      "hover": Object {
+        "backgroundColor": "#f0f0f0",
+      },
+      "selected": Object {
         "backgroundColor": "#535353",
         "borderStyle": "none",
         "color": "#ffffff",
         "iconColor": "#ffffff",
-      },
-      "hover": Object {
-        "backgroundColor": "#f0f0f0",
       },
     },
     "titleBar": Object {

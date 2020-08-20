@@ -354,11 +354,11 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('iconButtonMinimalPrimary with current state', () => {
+  test('iconButtonMinimalPrimary with selected state', () => {
     const fragment = renderToFragmentWithTheme(
       TestSurface,
       {
-        isCurrent: true,
+        isSelected: true,
       },
 
       compileTheme(
@@ -367,7 +367,7 @@ describe('getStylePresetFromTheme', () => {
           overrides: {
             stylePresets: {
               iconButtonMinimalPrimary: {
-                current: {
+                selected: {
                   backgroundColor: '#00ff00',
                 },
               },
@@ -379,11 +379,11 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('iconButtonMinimalPrimary with loading and current state', () => {
+  test('iconButtonMinimalPrimary with loading and selected state', () => {
     const fragment = renderToFragmentWithTheme(
       TestSurface,
       {
-        isCurrent: true,
+        isSelected: true,
         isLoading: true,
       },
 
@@ -393,7 +393,7 @@ describe('getStylePresetFromTheme', () => {
           overrides: {
             stylePresets: {
               iconButtonMinimalPrimary: {
-                current: {
+                selected: {
                   backgroundColor: '#00ff00',
                 },
                 loading: {
@@ -422,7 +422,7 @@ describe('getStylePresetFromTheme', () => {
           overrides: {
             stylePresets: {
               iconButtonMinimalPrimary: {
-                current: {
+                loading: {
                   backgroundColor: '#00ff00',
                 },
                 disabled: {

@@ -19,6 +19,7 @@ const a11yComponentRules = [
   {name: 'share-bar'},
   {name: 'slider', disabledRules: ['color-contrast']},
   {name: 'standfirst'},
+  {name: 'tab', disabledRules: ['color-contrast']},
   {name: 'text-block'},
   {name: 'volume-control'},
   {name: 'tag-list', disabledRules: ['color-contrast']},

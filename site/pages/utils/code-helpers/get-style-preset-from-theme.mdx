@@ -26,7 +26,7 @@ For more information on what consists of style preset see doc [here](/theming/st
     Is the name of the component prop in which a style preset token name can be provided by the end-user of the component. If provided, the style preset to be retrieved will come from the component prop.
   </Prop>
   <Prop name='options' type="GetStylePresetFromThemeOptions">
-    This prop consists of isLoading, isCurrent, omitStates and omitStyles options. These are component specific behaviours that can be controlled via either state or passed down from parent as prop.
+    This prop consists of isLoading, isSelected, omitStates and omitStyles options. These are component specific behaviours that can be controlled via either state or passed down from parent as prop.
   </Prop>
   <Prop name='props' type='Props'>
     Is the props of the component including the theme. If the function is used inside a styled component template literal, or a css block, Emotion.js will call the function first with the component props passed in.
@@ -54,10 +54,10 @@ In this example the `Paragraph` component will use `linkInline` style preset set
 In this example the component has a loading state passed down from the parent component.
 If so the `loading` style presets, if present, will override the `base` style presets.
 
-<Code>{'<Paragraph stylePreset="linkInline" isCurrent={true} />'}</Code>
+<Code>{'<Paragraph stylePreset="linkInline" isSelected={true} />'}</Code>
 
 In this example the component has a current state passed down from the parent component.
-If so the `current` style presets, if present, will override the `base` style presets.
+If so the `selected` style presets, if present, will override the `base` style presets.
 
 <Code>{'<Paragraph stylePreset="linkInline" omitStates={["disabled"]} />'}</Code>
 
