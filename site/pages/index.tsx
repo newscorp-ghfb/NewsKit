@@ -25,6 +25,7 @@ const StyledH1 = styled(H1)`
 `;
 const StyledH2 = styled(H2)`
   color: ${getColorFromTheme('inkContrast')};
+  margin-bottom: 16px;
 `;
 const StyledH3 = styled(H3)`
   ${getTypePresetFromTheme('heading010')}

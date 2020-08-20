@@ -12,7 +12,6 @@ export const componentDefaults = {
       spaceInline: 'space020',
     },
   },
-
   button: {
     small: {
       typePreset: 'buttonSmall',
@@ -42,7 +41,6 @@ export const componentDefaults = {
       space: 'sizing020',
     },
   },
-
   card: {
     media: {
       stylePreset: 'imageSharp',
@@ -53,7 +51,43 @@ export const componentDefaults = {
       paddingPreset: 'spaceInset000Squish',
     },
   },
-
+  headlineH1: {
+    stylePreset: 'headlineH1',
+    typePreset: {
+      xs: 'heading050',
+      md: 'heading070',
+      lg: 'heading090',
+    },
+  },
+  headlineH2: {
+    stylePreset: 'headlineH2',
+    typePreset: {
+      xs: 'heading030',
+      md: 'heading040',
+    },
+  },
+  headlineH3: {
+    stylePreset: 'headlineH3',
+    typePreset: {
+      xs: 'heading020',
+      md: 'heading030',
+    },
+  },
+  headlineH4: {
+    stylePreset: 'headlineH4',
+    typePreset: {
+      xs: 'heading010',
+      md: 'heading020',
+    },
+  },
+  headlineH5: {
+    stylePreset: 'headlineH5',
+    typePreset: 'subhead015',
+  },
+  headlineH6: {
+    stylePreset: 'headlineH6',
+    typePreset: 'subhead010',
+  },
   headline: {
     heading: {
       stylePreset: 'headlineContent',
@@ -158,7 +192,6 @@ export const componentDefaults = {
       size: 'iconSize005',
     },
   },
-
   tag: {
     small: {
       typePreset: 'tag010',
@@ -199,7 +232,6 @@ export const componentDefaults = {
       },
     },
   },
-
   shareBar: {
     label: {
       typePreset: 'label020',
@@ -236,6 +268,15 @@ export const componentDefaults = {
   linkStandalone: {
     stylePreset: 'linkStandalone',
   },
+  paragraph: {
+    stylePreset: 'paragraph',
+    typePreset: 'body020',
+    dropCap: {
+      stylePreset: 'paragraphDropCap',
+      typePreset: 'display040',
+      space: 'space020',
+    },
+  },
   dateTime: {
     stylePreset: 'dateTime',
     typePreset: 'meta020',
@@ -248,7 +289,6 @@ export const componentDefaults = {
       typePreset: 'meta020',
     },
   },
-
   grid: {
     maxWidth: 1920,
     columns: 12,

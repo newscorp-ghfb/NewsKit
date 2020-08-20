@@ -276,11 +276,6 @@ typePresets.buttonLarge = {
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 
-typePresets.dropCap = {
-  fontSize: '5.34em',
-  lineHeight: 0.85,
-};
-
 // Headline
 typePresets.headline100 = typePresets.heading050;
 typePresets.headline200 = typePresets.heading050;

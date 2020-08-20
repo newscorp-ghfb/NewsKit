@@ -242,6 +242,8 @@ export const getSpacingStack = getDefaultedValue(
 export const getSizing = getDefaultedValue(getSizingFromTheme, 'sizing');
 export const getMinHeight = getDefaultedValue(getSizingFromTheme, 'minHeight');
 
+export const getSpace = getDefaultedValue(getSpacingFromTheme, 'space');
+
 export const getPaddingPresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<PaddingPresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,

@@ -17,29 +17,28 @@ describe('Paragraph', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  test('renders bold Paragraph', () => {
+  test('renders Paragraph with overrides', () => {
     const wrapper = renderToFragmentWithTheme(Paragraph, {
       children: 'paragraph component',
-      bold: true,
-    } as ParagraphProps);
+      overrides: {
+        stylePreset: 'linkInline',
+      },
+    });
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  test('renders empty Paragraph with dropCap without crashing ', () => {
+    const wrapper = renderToFragmentWithTheme(Paragraph, {
+      children: undefined,
+      dropCap: true,
+    });
     expect(wrapper).toMatchSnapshot();
   });
 
   test('renders with drop cap', () => {
     const wrapper = renderToFragmentWithTheme(Paragraph, {
       children: 'paragraph component',
-      bold: true,
       dropCap: true,
-    } as ParagraphProps);
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  test('renders with coloured drop cap', () => {
-    const wrapper = renderToFragmentWithTheme(Paragraph, {
-      children: 'paragraph component',
-      bold: true,
-      dropCap: true,
-      dropCapColor: 'inkLink',
     } as ParagraphProps);
     expect(wrapper).toMatchSnapshot();
   });

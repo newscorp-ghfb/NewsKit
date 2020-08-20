@@ -12,7 +12,7 @@ const ScreenReader = styled.div`
 `;
 
 export interface Props {
-  id: string;
+  id?: string;
 }
 
 export const ScreenReaderOnly: React.FC<Props> = ({children, id}) => (

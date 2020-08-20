@@ -22,8 +22,8 @@ The ScreenReaderOnly component wraps an element making sure that it is not visib
   <Prop name="children" type="string" required>
     The description of an element is passed as the child of the component.
   </Prop>
-  <Prop name="id" type="string" required>
-    The CSS id required for the `aria-described-by` of the described element.
+  <Prop name="id" type="string">
+   When provided the id can be used to reference this element, for example from a `aria-describedby` attribute.
   </Prop>
 </LegacyBlock>
 

@@ -13,23 +13,64 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <P>Normal - {bodyString}</P>
-          <P bold>Bold - {bodyString}</P>
+          <P>{bodyString}</P>
+          <br />
           <P>
-            Paragraph component containg a <Sub>subscript element</Sub> and a{' '}
+            Paragraph component containing a <Sub>subscript element</Sub> and a{' '}
             <Sup>superscript element</Sup>
           </P>
         </React.Fragment>
       ),
     },
     {
-      name: 'paragraph-with-dropcap',
+      name: 'paragraph-with-props',
       type: 'story',
       component: () => (
         <React.Fragment>
-          <P dropCap>{bodyString}</P>
-          <P dropCap dropCapColor="inkLink">
-            {bodyString}
+          <h3>
+            <b>PARAGRAPH WITH DROPCAP</b>
+          </h3>
+          <br />
+          <P dropCap>
+            This being Black History Month, last week was Politicians In Search
+            Of An Eye-Catching Race-Related Policy Week. Both Theresa May and
+            Jeremy Corbyn had their own announcement, each seemingly benign and
+            right-on, each actually destructive and wrong-headed. This being
+            Black History Month, last week was Politicians In Search Of An
+            Eye-Catching Race-Related Policy Week. Both Theresa May and Jeremy
+            Corbyn had their own announcement, each seemingly benign and
+            right-on, each actually destructive and wrong-headed.
+          </P>
+          <br />
+          <br />
+          <h3>PARAGRAPH WITH OVERRIDES</h3>
+          <br />
+          <P overrides={{stylePreset: 'linkInline', typePreset: 'heading020'}}>
+            This being Black History Month, last week was Politicians In Search
+            Of An Eye-Catching Race-Related Policy Week. Both Theresa May and
+            Jeremy Corbyn had their own announcement, each seemingly benign and
+            right-on, each actually destructive and wrong-headed.
+          </P>
+          <br />
+          <br />
+          <P
+            dropCap
+            overrides={{
+              dropCap: {
+                stylePreset: 'linkInline',
+                typePreset: 'heading070',
+                space: 'space040',
+              },
+            }}
+          >
+            This being Black History Month, last week was Politicians In Search
+            Of An Eye-Catching Race-Related Policy Week. Both Theresa May and
+            Jeremy Corbyn had their own announcement, each seemingly benign and
+            right-on, each actually destructive and wrong-headed. This being
+            Black History Month, last week was Politicians In Search Of An
+            Eye-Catching Race-Related Policy Week. Both Theresa May and Jeremy
+            Corbyn had their own announcement, each seemingly benign and
+            right-on, each actually destructive and wrong-headed.
           </P>
         </React.Fragment>
       ),

@@ -3,16 +3,33 @@
 exports[`Paragraph renders Paragraph 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  color: #2e2e2e;
   font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-bottom: 18px;
-  color: #2e2e2e;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
 }
 
 <p
@@ -23,90 +40,220 @@ exports[`Paragraph renders Paragraph 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Paragraph renders bold Paragraph 1`] = `
+exports[`Paragraph renders Paragraph with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  color: #2f75d7;
   font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-bottom: 18px;
-  font-weight: 500;
-  color: #2e2e2e;
 }
 
-<p
-    class="emotion-0"
-  >
-    paragraph component
-  </p>
-</DocumentFragment>
-`;
-
-exports[`Paragraph renders with coloured drop cap 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin-bottom: 18px;
-  font-weight: 500;
-  color: #2e2e2e;
-}
-
-.emotion-0:first-letter {
-  float: left;
-  padding-right: 0.15em;
-  font-size: 5.34em;
-  line-height: 0.85;
+.emotion-0 svg {
+  fill: #2f75d7;
   color: #2f75d7;
 }
 
+.emotion-0:hover:not(:disabled) {
+  color: #2f75d7;
+}
+
+.emotion-0:hover:not(:disabled) svg {
+  fill: #2f75d7;
+  color: #2f75d7;
+}
+
+.emotion-0:active:not(:disabled) {
+  color: #2f75d7;
+}
+
+.emotion-0:active:not(:disabled) svg {
+  fill: #2f75d7;
+  color: #2f75d7;
+}
+
+.emotion-0:visited:not(:disabled) {
+  color: #903d91;
+}
+
+.emotion-0:visited:not(:disabled) svg {
+  fill: #903d91;
+  color: #903d91;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
 <p
     class="emotion-0"
   >
     paragraph component
   </p>
+</DocumentFragment>
+`;
+
+exports[`Paragraph renders empty Paragraph with dropCap without crashing  1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  color: #2e2e2e;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<p
+    class="emotion-0"
+  />
 </DocumentFragment>
 `;
 
 exports[`Paragraph renders with drop cap 1`] = `
 <DocumentFragment>
-  .emotion-0 {
+  .emotion-1 {
+  margin: 0;
+  padding: 1px 0;
+  color: #2e2e2e;
   font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-bottom: 18px;
-  font-weight: 500;
-  color: #2e2e2e;
 }
 
-.emotion-0:first-letter {
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 1px 0;
   float: left;
-  padding-right: 0.15em;
-  font-size: 5.34em;
-  line-height: 0.85;
+  margin-right: 0.15em;
+  margin-top: 8px;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 80px;
+  line-height: 1.5;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0a0a0a;
 }
 
-<p
-    class="emotion-0"
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-2 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<div
+    class="emotion-3"
   >
-    paragraph component
-  </p>
+    <p
+      aria-hidden="true"
+      class="emotion-1"
+    >
+      <span
+        class="emotion-0"
+      >
+        p
+      </span>
+      aragraph component
+    </p>
+    <div
+      class="emotion-2"
+    >
+      paragraph component
+    </div>
+  </div>
 </DocumentFragment>
 `;
 

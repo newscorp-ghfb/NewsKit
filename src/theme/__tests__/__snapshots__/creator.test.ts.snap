@@ -299,6 +299,43 @@ Object {
         },
       },
     },
+    "headlineH1": Object {
+      "stylePreset": "headlineH1",
+      "typePreset": Object {
+        "lg": "heading090",
+        "md": "heading070",
+        "xs": "heading050",
+      },
+    },
+    "headlineH2": Object {
+      "stylePreset": "headlineH2",
+      "typePreset": Object {
+        "md": "heading040",
+        "xs": "heading030",
+      },
+    },
+    "headlineH3": Object {
+      "stylePreset": "headlineH3",
+      "typePreset": Object {
+        "md": "heading030",
+        "xs": "heading020",
+      },
+    },
+    "headlineH4": Object {
+      "stylePreset": "headlineH4",
+      "typePreset": Object {
+        "md": "heading020",
+        "xs": "heading010",
+      },
+    },
+    "headlineH5": Object {
+      "stylePreset": "headlineH5",
+      "typePreset": "subhead015",
+    },
+    "headlineH6": Object {
+      "stylePreset": "headlineH6",
+      "typePreset": "subhead010",
+    },
     "iconButton": Object {
       "large": Object {
         "height": "sizing090",
@@ -331,6 +368,15 @@ Object {
     },
     "linkStandalone": Object {
       "stylePreset": "linkStandalone",
+    },
+    "paragraph": Object {
+      "dropCap": Object {
+        "space": "space020",
+        "stylePreset": "paragraphDropCap",
+        "typePreset": "display040",
+      },
+      "stylePreset": "paragraph",
+      "typePreset": "body020",
     },
     "shareBar": Object {
       "items": Object {
@@ -1280,6 +1326,36 @@ Object {
         "color": "{{colors.inkContrast}}",
       },
     },
+    "headlineH1": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "headlineH2": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "headlineH3": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "headlineH4": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "headlineH5": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+    },
+    "headlineH6": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "headlineKicker": Object {
       "base": Object {
         "color": "{{colors.inkBrand010}}",
@@ -1716,6 +1792,16 @@ Object {
         "iconColor": "{{colors.inkBase}}",
       },
     },
+    "paragraph": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
+      },
+    },
+    "paragraphDropCap": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "shareBarLabel": Object {
       "base": Object {
         "color": "{{colors.inkBase}}",
@@ -2068,10 +2154,6 @@ Object {
       "fontWeight": "{{fonts.fontWeight040}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": [Function],
-    },
-    "dropCap": Object {
-      "fontSize": "5.34em",
-      "lineHeight": 0.85,
     },
     "flag010": Object {
       "fontFamily": "{{fonts.fontFamily2.fontFamily}}",

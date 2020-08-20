@@ -14,12 +14,15 @@ describe('Headings', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  test.each(HeadingsKeys)('renders %s in bold style', current => {
+  test.each(HeadingsKeys)('renders %s correctly with overrides', current => {
     const Component = Headings[current];
     const wrapper = renderToFragmentWithTheme(Component, {
       children: 'A Heading',
-      bold: true,
-    } as Headings.HeadingProps);
+      overrides: {
+        typePreset: 'headline200',
+        stylePreset: 'linkInline',
+      },
+    } as Headings.HeadingOverrides);
     expect(wrapper).toMatchSnapshot();
   });
 });

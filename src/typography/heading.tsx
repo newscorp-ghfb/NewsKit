@@ -1,67 +1,64 @@
-import {
-  getTypePresetFromTheme,
-  getColorFromTheme,
-  styled,
-  getSizingFromTheme,
-  getFontSizingFromTheme,
-} from '../utils/style';
+import {styled, getTypePreset, MQ} from '../utils/style';
+import {getStylePreset} from '../utils/style-preset';
+import {StylePresetKeys, TypePresetKeys} from '../theme';
 
-export interface HeadingProps {
-  as?: React.ElementType;
-  bold?: boolean;
-}
+export type HeadingOverrides = {
+  overrides?: {
+    stylePreset?: MQ<StylePresetKeys>;
+    typePreset?: MQ<TypePresetKeys>;
+  };
+};
 
-export const Heading1 = styled.h1<HeadingProps>`
-  ${getTypePresetFromTheme('heading070')};
-  color: ${getColorFromTheme('inkContrast')};
-  margin: 0 0 ${getSizingFromTheme('sizing050')} 0;
-  font-weight: ${({theme, bold}) => (bold ? theme.fonts.fontWeight040 : null)};
+export const Heading1 = styled.h1<HeadingOverrides>`
+  margin: 0;
+  padding: 1px 0;
+  ${getTypePreset('headlineH1', '', {withCrop: true})}
+  ${getStylePreset('headlineH1', '')}
 `;
 Heading1.displayName = 'Heading1';
 export const H1 = Heading1;
 
-export const Heading2 = styled.h2<HeadingProps>`
-  ${getTypePresetFromTheme('heading050')};
-  color: ${getColorFromTheme('inkContrast')};
-  margin: 0 0 ${getSizingFromTheme('sizing040')} 0;
-  font-weight: ${({theme, bold}) => (bold ? theme.fonts.fontWeight040 : null)};
+export const Heading2 = styled.h2<HeadingOverrides>`
+  margin: 0;
+  padding: 1px 0;
+  ${getTypePreset('headlineH2', '', {withCrop: true})}
+  ${getStylePreset('headlineH2', '')}
 `;
 Heading2.displayName = 'Heading2';
 export const H2 = Heading2;
 
-export const Heading3 = styled.h3<HeadingProps>`
-  ${getTypePresetFromTheme('heading030')};
-  color: ${getColorFromTheme('inkContrast')};
-  margin: 0 0 ${getSizingFromTheme('sizing030')} 0;
-  font-weight: ${({theme, bold}) => (bold ? theme.fonts.fontWeight040 : null)};
+export const Heading3 = styled.h3<HeadingOverrides>`
+  margin: 0;
+  padding: 1px 0;
+  ${getTypePreset('headlineH3', '', {withCrop: true})}
+  ${getStylePreset('headlineH3', '')}
 `;
 Heading3.displayName = 'Heading3';
 export const H3 = Heading3;
 
-export const Heading4 = styled.h4<HeadingProps>`
-  ${getTypePresetFromTheme('heading020')};
-  color: ${getColorFromTheme('inkContrast')};
-  margin: 0 0 ${getSizingFromTheme('sizing020')} 0;
-  font-weight: ${({theme, bold}) => (bold ? theme.fonts.fontWeight040 : null)};
+export const Heading4 = styled.h4<HeadingOverrides>`
+  margin: 0;
+  padding: 1px 0;
+  ${getTypePreset('headlineH4', '', {withCrop: true})}
+  ${getStylePreset('headlineH4', '')}
 `;
 Heading4.displayName = 'Heading4';
 export const H4 = Heading4;
 
-export const Heading5 = styled.h5<HeadingProps>`
-  ${getTypePresetFromTheme('heading010')};
-  ${getFontSizingFromTheme('font500', 'fontLineHeight020')};
-  color: ${getColorFromTheme('inkContrast')};
-  margin: 0 0 ${getSizingFromTheme('sizing020')} 0;
-  font-weight: ${({theme, bold}) => (bold ? theme.fonts.fontWeight040 : null)};
+export const Heading5 = styled.h5<HeadingOverrides>`
+  margin: 0;
+  padding: 1px 0;
+  ${getTypePreset('headlineH5', '', {withCrop: true})}
+  ${getStylePreset('headlineH5', '')}
 `;
 Heading5.displayName = 'Heading5';
 export const H5 = Heading5;
 
-export const Heading6 = styled.h6<HeadingProps>`
-  ${getTypePresetFromTheme('label010')};
-  color: ${getColorFromTheme('inkContrast')};
-  margin: 0 0 ${getSizingFromTheme('sizing020')} 0;
-  font-weight: ${({theme, bold}) => (bold ? theme.fonts.fontWeight040 : null)};
+export const Heading6 = styled.h6<HeadingOverrides>`
+  margin: 0;
+  padding: 1px 0;
+  ${getTypePreset('headlineH6', '', {withCrop: true})}
+  ${getStylePreset('headlineH6', '')}
 `;
 Heading6.displayName = 'Heading6';
 export const H6 = Heading6;

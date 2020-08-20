@@ -11,26 +11,49 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <H1>Normal H1 - {title}</H1>
-          <H2>Normal H2 - {title}</H2>
-          <H3>Normal H3 - {title}</H3>
-          <H4>Normal H4 - {title}</H4>
-          <H5>Normal H5 - {title}</H5>
-          <H6>Normal H6 - {title}</H6>
+          <br />
+          <H1>Default H1 - {title}</H1>
+          <br />
+          <H2>Default H2 - {title}</H2>
+          <br />
+          <H3>Default H3 - {title}</H3>
+          <br />
+          <H4>Default H4 - {title}</H4>
+          <br />
+          <H5>Default H5 - {title}</H5>
+          <br />
+          <H6>Default H6 - {title}</H6>
         </React.Fragment>
       ),
     },
     {
-      name: 'heading-bold',
+      name: 'heading-overrides',
       type: 'story',
       component: () => (
         <React.Fragment>
-          <H1 bold>Bold H1 - {title}</H1>
-          <H2 bold>Bold H2 - {title}</H2>
-          <H3 bold>Bold H3 - {title}</H3>
-          <H4 bold>Bold H4 - {title}</H4>
-          <H5 bold>Bold H5 - {title}</H5>
-          <H6 bold>Bold H6 - {title}</H6>
+          <H1 overrides={{stylePreset: 'linkInline', typePreset: 'body010'}}>
+            H1 with override
+          </H1>
+          <br />
+          <H2 overrides={{stylePreset: 'linkInline', typePreset: 'body020'}}>
+            H2 with override
+          </H2>
+          <br />
+          <H3 overrides={{stylePreset: 'linkInline', typePreset: 'body030'}}>
+            H3 with override
+          </H3>
+          <br />
+          <H4 overrides={{stylePreset: 'linkInline', typePreset: 'body010'}}>
+            H4 with override
+          </H4>
+          <br />
+          <H5 overrides={{stylePreset: 'linkInline', typePreset: 'body020'}}>
+            H5 with override
+          </H5>
+          <br />
+          <H6 overrides={{stylePreset: 'linkInline', typePreset: 'body030'}}>
+            H6 with override
+          </H6>
         </React.Fragment>
       ),
     },

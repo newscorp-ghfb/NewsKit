@@ -1069,3 +1069,51 @@ stylePresets.bylineDivider = {
     borderColor: '{{colors.interface050}}',
   },
 };
+
+//
+//  Paragraph
+//
+stylePresets.paragraph = {
+  base: {
+    color: '{{colors.inkBase}}',
+  },
+};
+
+stylePresets.paragraphDropCap = {
+  base: {
+    color: '{{colors.inkContrast}}',
+  },
+};
+
+// H Headings
+
+stylePresets.headlineH1 = {
+  base: {
+    color: '{{colors.inkContrast}}',
+  },
+};
+stylePresets.headlineH2 = {
+  base: {
+    color: '{{colors.inkContrast}}',
+  },
+};
+stylePresets.headlineH3 = {
+  base: {
+    color: '{{colors.inkContrast}}',
+  },
+};
+stylePresets.headlineH4 = {
+  base: {
+    color: '{{colors.inkContrast}}',
+  },
+};
+stylePresets.headlineH5 = {
+  base: {
+    color: '{{colors.inkContrast}}',
+  },
+};
+stylePresets.headlineH6 = {
+  base: {
+    color: '{{colors.inkContrast}}',
+  },
+};

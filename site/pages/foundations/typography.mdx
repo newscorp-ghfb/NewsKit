@@ -2,6 +2,10 @@ import Layout from '../../components/layout';
 import {LegacyBlock} from '../../components/legacy-block';
 import Playground from '../../components/playground';
 import {H1, H2, H3, H4, H5, H6, P, Image} from 'newskit';
+import {CodeFromDefaultPresets} from '../../components/code';
+import {Prop} from '../../components/prop';
+import {Link} from 'newskit';
+
 
 export default Layout;
 
@@ -32,7 +36,52 @@ Although the scale should remain consistent, type attributes can use custom valu
 
 ## Headlines
 
-In the type scale, headlines span from a range of 1 through 6. Headlines are the largest text on the screen, reserved for short, important text or numerals.
+In the type scale, headlines range from 1 to 6. Headlines are the largest text on the screen, reserved for short, important text or numerals.
+The components for rendering Headlines are `H1`, `H2`, `H3`, `H4`, `H5`, `H6`.
+
+These components can accept overrides for the style and type presets.
+All heading components follow a consistent prop and override structure. The default style presets for these map to from `headlineH1` - `headlineH6`
+
+##### Props
+<LegacyBlock marginTop="sizing040">
+  <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component and provided elements.
+    Refer to the defaults below for the object structure:
+    
+    <Prop name="stylePreset" type="string">
+      If provided, this overrides the style preset applied to the Headline.
+    </Prop>
+    <Prop name="typePreset" type="string">
+      If provided, this overrides the type preset applied to the Headline.
+    </Prop>
+      Refer to the defaults below for the overrides object structure:
+      <CodeFromDefaultPresets componentName="headlineH1" />
+      <CodeFromDefaultPresets componentName="headlineH2" />
+      <CodeFromDefaultPresets componentName="headlineH3" />
+      <CodeFromDefaultPresets componentName="headlineH4" />
+      <CodeFromDefaultPresets componentName="headlineH5" />
+      <CodeFromDefaultPresets componentName="headlineH6" />
+      For more information about how to apply overrides to a component please refer 
+      to the <Link href="/theming/override-default-presets">Override default preset</Link> page.
+  </Prop>
+</LegacyBlock>
+
+## Playground
+
+### Headlines
+
+<Playground
+  componentName={['H1', 'H2', 'H3', 'H4', 'H5', 'H6']}
+  newskitPath="/typography"
+  component={[H1, H2, H3, H4, H5, H6]}
+  knobs={[
+    {
+      name: 'Content',
+      propName: 'children',
+      value: 'We tell the stories that matter.',
+    },
+  ]}
+/>
 
 ## Subtitles
 
@@ -41,33 +90,40 @@ Subtitles are smaller than headlines. They are typically reserved for medium-emp
 ## Body
 
 Body text comes in three sizes. It’s typically used for long-form writing as it works well for smaller text sizes.
+It can be rendered using the P component, shorter for Paragraph.
 
-## Captions
-
-Captions are the smallest font sizes. They are generally used to annotate imagery or to introduce a headline.
-
-## Playground
-
-### Short Text
-
-<Playground
-  componentName={['H1', 'H2', 'H3', 'H4', 'H5', 'H6']}
-  newskitPath="/typography"
-  component={[H1, H2, H3, H4, H5, H6]}
-  knobs={[
-    {
-      name: 'Bold',
-      propName: 'bold',
-      type: 'boolean',
-      value: false,
-    },
-    {
-      name: 'Content',
-      propName: 'children',
-      value: 'We tell the stories that matter.',
-    },
-  ]}
-/>
+##### Props
+<LegacyBlock marginTop="sizing040">
+  <Prop name="dropCap" type="boolean" default="false">
+    If set to true the first letter of the Paragraph text will have an unique style. Note that children should start with string for the drop cap to function correctly.
+    Becoming the drop cap of the paragraph.
+  </Prop>
+  <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component and provided elements.
+    Refer to the defaults below for the object structure:
+    <Prop name="stylePreset" type="string" default="paragraph">
+      If provided, this overrides the style preset applied to the Paragraph.
+    </Prop>
+     <Prop name="typePreset" type="string" default="body020">
+      If provided, this overrides the type preset applied to the Paragraph.
+    </Prop>
+    <Prop name="dropCap" type="object">
+       <Prop name="stylePreset" type="string" default="paragraphDropCap">
+        If provided, this overrides the style preset applied to the Paragraph's dropCap.
+      </Prop>
+      <Prop name="typePreset" type="string" default="display040">
+        If provided, this overrides the type preset applied to the Paragraph's dropCap.
+      </Prop>
+      <Prop name="space" type="string" default="space20">
+        If provided, overrides the vertical space above the drop cap, use to align the drop cap to the first line of the paragraph.
+      </Prop>
+    </Prop>
+     Refer to the defaults below for the  overrides object structure:
+      <CodeFromDefaultPresets componentName="paragraph" />
+      For more information about how to apply overrides to a component please refer 
+      to the <Link href="/theming/override-default-presets">Override default preset</Link> page.
+  </Prop>
+</LegacyBlock>
 
 ### Body Text
 
@@ -77,39 +133,10 @@ Captions are the smallest font sizes. They are generally used to annotate imager
   component={P}
   knobs={[
     {
-      name: 'Bold',
-      propName: 'bold',
-      type: 'boolean',
-      value: false,
-    },
-    {
       name: 'Drop Cap',
       propName: 'dropCap',
       type: 'boolean',
       value: true,
-    },
-    {
-      name: 'Drop Cap Color',
-      propName: 'dropCapColor',
-      options: [
-        {
-          label: 'inkContrast',
-          value: 'inkContrast',
-          isDefault: true,
-        },
-        {
-          label: 'inkBrand010',
-          value: 'inkBrand010',
-        },
-        {
-          label: 'semanticNegative030',
-          value: 'semanticNegative030',
-        },
-        {
-          label: 'semanticPositive030',
-          value: 'semanticPositive030',
-        },
-      ],
     },
     {
       name: 'Content',
@@ -119,3 +146,13 @@ Captions are the smallest font sizes. They are generally used to annotate imager
     },
   ]}
 />
+
+
+## Captions
+
+Captions are the smallest font sizes. They are generally used to annotate imagery or to introduce a headline.
+
+## Accessibility
+
+The P component, even with a drop cap, is fully accessible. Infact the drop cap and the rest of the paragraph's text will 
+be read as unique text by the screen reader.
