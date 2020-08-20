@@ -7,6 +7,8 @@ import {
   SearchIcon,
   SunIcon,
   MoonIcon,
+  AddIcon,
+  RemoveIcon,
 } from '..';
 
 describe('Icons', () => {
@@ -37,6 +39,16 @@ describe('Icons', () => {
 
   test('Moon icon renders as expected', () => {
     const fragment = renderToFragmentWithTheme(MoonIcon);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('Add icon renders as expected', () => {
+    const fragment = renderToFragmentWithTheme(AddIcon);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('Remove icon renders as expected', () => {
+    const fragment = renderToFragmentWithTheme(RemoveIcon);
     expect(fragment).toMatchSnapshot();
   });
 });

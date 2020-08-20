@@ -6,15 +6,22 @@ import {
   getColorFromTheme,
   ButtonSize,
   IconButton,
+  Stack,
+  Flow,
 } from 'newskit';
 import {LegacyBlock} from '../../legacy-block';
 import {KnobContainer, StyledTitle} from './common';
 import {InputKnob} from './input-knob';
+import {AddIcon, RemoveIcon} from '../../icons';
 
 type UpdateFunction = (
   index: number,
   key?: string,
 ) => (newValue: unknown) => void;
+
+const ButtonContainer = styled.div`
+  margin-bottom: 10px;
+`;
 
 export interface ArrayKnobProps {
   label: string;
@@ -133,23 +140,23 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
 
           const row = renderRow(label, value, i, arr.length, update);
           return row ? (
-            <LegacyBlock display="flex" key={label + value}>
+            <Stack
+              flow={Flow.HorizontalBottom}
+              space="sizing020"
+              key={label + value}
+            >
               {row}
-              <LegacyBlock
-                display="flex"
-                alignItems="baseline"
-                flexDirection="column-reverse"
-              >
+              <ButtonContainer>
                 <IconButton
                   size={ButtonSize.Small}
                   disabled={arr.length < 2}
                   onClick={remove(i)}
                   data-testid={`${TEST_ID_PREFIX}-button-remove`}
                 >
-                  -
+                  <RemoveIcon />
                 </IconButton>
-              </LegacyBlock>
-            </LegacyBlock>
+              </ButtonContainer>
+            </Stack>
           ) : null;
         })}
         <IconButton
@@ -157,7 +164,7 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
           size={ButtonSize.Small}
           onClick={add}
         >
-          +
+          <AddIcon />
         </IconButton>
       </LegacyBlock>
     </KnobContainer>
