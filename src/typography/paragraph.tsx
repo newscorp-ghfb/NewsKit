@@ -40,6 +40,7 @@ export const ParagraphDropCap = styled.span<ParagraphProps>`
 
 const ParagraphContainer = styled.div`
   display: inline-flex;
+  max-width: 100%;
 `;
 
 export const Paragraph: React.FC<ParagraphProps> = ({

@@ -187,6 +187,7 @@ exports[`Paragraph renders with drop cap 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  max-width: 100%;
 }
 
 .emotion-0 {
