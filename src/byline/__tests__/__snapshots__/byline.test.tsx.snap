@@ -2,7 +2,7 @@
 
 exports[`Byline renders correctly with authors and links 1`] = `
 <DocumentFragment>
-  .emotion-25 {
+  .emotion-19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -30,7 +30,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
   margin-bottom: 0;
 }
 
-.emotion-13 {
+.emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -40,7 +40,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
   height: 100%;
 }
 
-.emotion-12 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -64,7 +64,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-11 {
+.emotion-8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -73,14 +73,14 @@ exports[`Byline renders correctly with authors and links 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-.emotion-10 {
+.emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.emotion-6 {
+.emotion-3 {
   margin-right: 8px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -88,7 +88,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
   display: inline-flex;
 }
 
-.emotion-9 {
+.emotion-6 {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -98,7 +98,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
   display: inline-flex;
 }
 
-.emotion-7 {
+.emotion-4 {
   border-style: solid;
   border-color: #cccccc;
   border-width: 1px;
@@ -109,7 +109,7 @@ exports[`Byline renders correctly with authors and links 1`] = `
   height: 100%;
 }
 
-.emotion-5 {
+.emotion-2 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -120,42 +120,61 @@ exports[`Byline renders correctly with authors and links 1`] = `
   color: #2f75d7;
 }
 
-.emotion-5 svg {
+.emotion-2 svg {
   fill: #2f75d7;
   color: #2f75d7;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #2f75d7;
 }
 
-.emotion-5:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #2f75d7;
   color: #2f75d7;
 }
 
-.emotion-5:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #2f75d7;
 }
 
-.emotion-5:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #2f75d7;
   color: #2f75d7;
 }
 
-.emotion-5:visited:not(:disabled) {
+.emotion-2:visited:not(:disabled) {
   color: #903d91;
 }
 
-.emotion-5:visited:not(:disabled) svg {
+.emotion-2:visited:not(:disabled) svg {
   fill: #903d91;
   color: #903d91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-5 {
+  .emotion-2 {
     vertical-align: text-bottom;
   }
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .emotion-0 {
@@ -189,115 +208,51 @@ exports[`Byline renders correctly with authors and links 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-2 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-}
-
 <ul
-    class="emotion-25"
+    class="emotion-19"
   >
     <li
-      class="emotion-13"
+      class="emotion-10"
     >
       <div
-        class="emotion-12"
+        class="emotion-9"
       >
         <div
-          class="emotion-11"
+          class="emotion-8"
         >
           <div
-            class="emotion-10"
+            class="emotion-7"
           >
             <div
-              class="emotion-6"
+              class="emotion-3"
             >
               <a
                 aria-label="more by Jane Smith"
-                class="emotion-5"
+                class="emotion-2"
                 data-author="Jane Smith"
                 href="www.example.com"
                 rel="author"
                 title="more by Jane Smith"
               >
                 <span
-                  class="emotion-4"
+                  class="emotion-1"
                 >
                   <span
-                    class="emotion-1"
+                    class="emotion-0"
                   >
-                    <span
-                      class="emotion-0"
-                    >
-                      Jane Smith
-                    </span>
-                  </span>
-                  <span
-                    class="emotion-1"
-                  >
-                    <svg
-                      aria-labelledby="mock-bui-1"
-                      class="emotion-2"
-                      viewBox="0 0 24 24"
-                    >
-                      <title
-                        id="mock-bui-1"
-                      >
-                        External link
-                      </title>
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-                      />
-                    </svg>
+                    Jane Smith
                   </span>
                 </span>
               </a>
             </div>
             <div
-              class="emotion-9"
+              class="emotion-6"
             >
               <div
-                class="emotion-6"
+                class="emotion-3"
               >
                 <hr
-                  class="emotion-7"
+                  class="emotion-4"
                   data-testid="divider"
                 />
               </div>
@@ -307,61 +262,35 @@ exports[`Byline renders correctly with authors and links 1`] = `
       </div>
     </li>
     <li
-      class="emotion-13"
+      class="emotion-10"
     >
       <div
-        class="emotion-12"
+        class="emotion-9"
       >
         <div
-          class="emotion-11"
+          class="emotion-8"
         >
           <div
-            class="emotion-10"
+            class="emotion-7"
           >
             <div
-              class="emotion-10"
+              class="emotion-7"
             >
               <a
                 aria-label="more by John Smith"
-                class="emotion-5"
+                class="emotion-2"
                 data-author="John Smith"
                 href="www.example.com"
                 rel="author"
                 title="more by John Smith"
               >
                 <span
-                  class="emotion-4"
+                  class="emotion-1"
                 >
                   <span
-                    class="emotion-1"
+                    class="emotion-0"
                   >
-                    <span
-                      class="emotion-0"
-                    >
-                      John Smith
-                    </span>
-                  </span>
-                  <span
-                    class="emotion-1"
-                  >
-                    <svg
-                      aria-labelledby="mock-bui-1"
-                      class="emotion-2"
-                      viewBox="0 0 24 24"
-                    >
-                      <title
-                        id="mock-bui-1"
-                      >
-                        External link
-                      </title>
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-                      />
-                    </svg>
+                    John Smith
                   </span>
                 </span>
               </a>
@@ -608,7 +537,7 @@ exports[`Byline renders correctly with authors and titles 1`] = `
 
 exports[`Byline renders correctly with authors, location, titles and links 1`] = `
 <DocumentFragment>
-  .emotion-40 {
+  .emotion-34 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -636,7 +565,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   margin-bottom: 0;
 }
 
-.emotion-21 {
+.emotion-18 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -646,7 +575,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   height: 100%;
 }
 
-.emotion-20 {
+.emotion-17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -670,7 +599,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-9 {
+.emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -679,14 +608,14 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   margin-bottom: calc(8px/2);
 }
 
-.emotion-7 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.emotion-6 {
+.emotion-3 {
   margin: 0;
   padding: 1px 0;
   color: #535353;
@@ -702,7 +631,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   white-space: pre;
 }
 
-.emotion-6::before {
+.emotion-3::before {
   content: '';
   display: block;
   height: 0;
@@ -710,7 +639,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-6::after {
+.emotion-3::after {
   content: '';
   display: block;
   height: 0;
@@ -718,7 +647,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-14 {
+.emotion-11 {
   margin-right: 8px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -726,7 +655,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   display: inline-flex;
 }
 
-.emotion-17 {
+.emotion-14 {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -736,7 +665,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   display: inline-flex;
 }
 
-.emotion-15 {
+.emotion-12 {
   border-style: solid;
   border-color: #cccccc;
   border-width: 1px;
@@ -747,7 +676,7 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   height: 100%;
 }
 
-.emotion-5 {
+.emotion-2 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -758,42 +687,61 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   color: #2f75d7;
 }
 
-.emotion-5 svg {
+.emotion-2 svg {
   fill: #2f75d7;
   color: #2f75d7;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #2f75d7;
 }
 
-.emotion-5:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #2f75d7;
   color: #2f75d7;
 }
 
-.emotion-5:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #2f75d7;
 }
 
-.emotion-5:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #2f75d7;
   color: #2f75d7;
 }
 
-.emotion-5:visited:not(:disabled) {
+.emotion-2:visited:not(:disabled) {
   color: #903d91;
 }
 
-.emotion-5:visited:not(:disabled) svg {
+.emotion-2:visited:not(:disabled) svg {
   fill: #903d91;
   color: #903d91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-5 {
+  .emotion-2 {
     vertical-align: text-bottom;
   }
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .emotion-0 {
@@ -827,108 +775,44 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-2 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-}
-
 <ul
-    class="emotion-40"
+    class="emotion-34"
   >
     <li
-      class="emotion-21"
+      class="emotion-18"
     >
       <div
-        class="emotion-20"
+        class="emotion-17"
       >
         <div
-          class="emotion-9"
+          class="emotion-6"
         >
           <div
-            class="emotion-7"
+            class="emotion-4"
           >
             <div
-              class="emotion-7"
+              class="emotion-4"
             >
               <a
                 aria-label="more by Jane Smith"
-                class="emotion-5"
+                class="emotion-2"
                 data-author="Jane Smith"
                 href="www.example.com"
                 rel="author"
                 title="Author"
               >
                 <span
-                  class="emotion-4"
+                  class="emotion-1"
                 >
                   <span
-                    class="emotion-1"
+                    class="emotion-0"
                   >
-                    <span
-                      class="emotion-0"
-                    >
-                      Jane Smith
-                    </span>
-                  </span>
-                  <span
-                    class="emotion-1"
-                  >
-                    <svg
-                      aria-labelledby="mock-bui-1"
-                      class="emotion-2"
-                      viewBox="0 0 24 24"
-                    >
-                      <title
-                        id="mock-bui-1"
-                      >
-                        External link
-                      </title>
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-                      />
-                    </svg>
+                    Jane Smith
                   </span>
                 </span>
               </a>
               <span
-                class="emotion-6"
+                class="emotion-3"
               >
                 , 
               </span>
@@ -936,41 +820,41 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
           </div>
         </div>
         <div
-          class="emotion-9"
+          class="emotion-6"
         >
           <div
-            class="emotion-7"
+            class="emotion-4"
           >
             <span
-              class="emotion-6"
+              class="emotion-3"
             >
               Author, 
             </span>
           </div>
         </div>
         <div
-          class="emotion-9"
+          class="emotion-6"
         >
           <div
-            class="emotion-7"
+            class="emotion-4"
           >
             <div
-              class="emotion-14"
+              class="emotion-11"
             >
               <span
-                class="emotion-6"
+                class="emotion-3"
               >
                 London
               </span>
             </div>
             <div
-              class="emotion-17"
+              class="emotion-14"
             >
               <div
-                class="emotion-14"
+                class="emotion-11"
               >
                 <hr
-                  class="emotion-15"
+                  class="emotion-12"
                   data-testid="divider"
                 />
               </div>
@@ -980,66 +864,40 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
       </div>
     </li>
     <li
-      class="emotion-21"
+      class="emotion-18"
     >
       <div
-        class="emotion-20"
+        class="emotion-17"
       >
         <div
-          class="emotion-9"
+          class="emotion-6"
         >
           <div
-            class="emotion-7"
+            class="emotion-4"
           >
             <div
-              class="emotion-7"
+              class="emotion-4"
             >
               <a
                 aria-label="more by John Smith"
-                class="emotion-5"
+                class="emotion-2"
                 data-author="John Smith"
                 href="www.example.com"
                 rel="author"
                 title="Other Author"
               >
                 <span
-                  class="emotion-4"
+                  class="emotion-1"
                 >
                   <span
-                    class="emotion-1"
+                    class="emotion-0"
                   >
-                    <span
-                      class="emotion-0"
-                    >
-                      John Smith
-                    </span>
-                  </span>
-                  <span
-                    class="emotion-1"
-                  >
-                    <svg
-                      aria-labelledby="mock-bui-1"
-                      class="emotion-2"
-                      viewBox="0 0 24 24"
-                    >
-                      <title
-                        id="mock-bui-1"
-                      >
-                        External link
-                      </title>
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-                      />
-                    </svg>
+                    John Smith
                   </span>
                 </span>
               </a>
               <span
-                class="emotion-6"
+                class="emotion-3"
               >
                 , 
               </span>
@@ -1047,26 +905,26 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
           </div>
         </div>
         <div
-          class="emotion-9"
+          class="emotion-6"
         >
           <div
-            class="emotion-7"
+            class="emotion-4"
           >
             <span
-              class="emotion-6"
+              class="emotion-3"
             >
               Other Author, 
             </span>
           </div>
         </div>
         <div
-          class="emotion-9"
+          class="emotion-6"
         >
           <div
-            class="emotion-7"
+            class="emotion-4"
           >
             <span
-              class="emotion-6"
+              class="emotion-3"
             >
               London
             </span>
@@ -1463,14 +1321,14 @@ exports[`Byline renders correctly with one author 1`] = `
 
 exports[`Byline renders correctly with overrides 1`] = `
 <DocumentFragment>
-  .emotion-7 {
+  .emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.emotion-17 {
+.emotion-14 {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -1480,7 +1338,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   display: inline-flex;
 }
 
-.emotion-4 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1497,28 +1355,9 @@ exports[`Byline renders correctly with overrides 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
-}
-
-.emotion-2 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-}
-
-.emotion-40 {
+.emotion-34 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1546,7 +1385,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   margin-bottom: 0;
 }
 
-.emotion-21 {
+.emotion-18 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1556,7 +1395,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   height: 100%;
 }
 
-.emotion-20 {
+.emotion-17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1580,7 +1419,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   margin-bottom: calc(-12px/2);
 }
 
-.emotion-9 {
+.emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1589,7 +1428,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   margin-bottom: calc(12px/2);
 }
 
-.emotion-5 {
+.emotion-2 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -1601,7 +1440,7 @@ exports[`Byline renders correctly with overrides 1`] = `
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-5 {
+  .emotion-2 {
     vertical-align: text-bottom;
   }
 }
@@ -1637,7 +1476,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   margin-top: -0.4902777777777778em;
 }
 
-.emotion-6 {
+.emotion-3 {
   margin: 0;
   padding: 1px 0;
   color: #f000dc;
@@ -1653,7 +1492,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   white-space: pre;
 }
 
-.emotion-6::before {
+.emotion-3::before {
   content: '';
   display: block;
   height: 0;
@@ -1661,7 +1500,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   margin-bottom: -0.4277777777777778em;
 }
 
-.emotion-6::after {
+.emotion-3::after {
   content: '';
   display: block;
   height: 0;
@@ -1669,7 +1508,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   margin-top: -0.4902777777777778em;
 }
 
-.emotion-14 {
+.emotion-11 {
   margin-right: 12px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1677,7 +1516,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   display: inline-flex;
 }
 
-.emotion-15 {
+.emotion-12 {
   border-style: solid;
   border-color: #de7818;
   border-width: 2px;
@@ -1689,69 +1528,43 @@ exports[`Byline renders correctly with overrides 1`] = `
 }
 
 <ul
-    class="emotion-40"
+    class="emotion-34"
   >
     <li
-      class="emotion-21"
+      class="emotion-18"
     >
       <div
-        class="emotion-20"
+        class="emotion-17"
       >
         <div
-          class="emotion-9"
+          class="emotion-6"
         >
           <div
-            class="emotion-7"
+            class="emotion-4"
           >
             <div
-              class="emotion-7"
+              class="emotion-4"
             >
               <a
                 aria-label="more by Jane Smith"
-                class="emotion-5"
+                class="emotion-2"
                 data-author="Jane Smith"
                 href="www.example.com"
                 rel="author"
                 title="Author"
               >
                 <span
-                  class="emotion-4"
+                  class="emotion-1"
                 >
                   <span
-                    class="emotion-1"
+                    class="emotion-0"
                   >
-                    <span
-                      class="emotion-0"
-                    >
-                      Jane Smith
-                    </span>
-                  </span>
-                  <span
-                    class="emotion-1"
-                  >
-                    <svg
-                      aria-labelledby="mock-bui-1"
-                      class="emotion-2"
-                      viewBox="0 0 24 24"
-                    >
-                      <title
-                        id="mock-bui-1"
-                      >
-                        External link
-                      </title>
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-                      />
-                    </svg>
+                    Jane Smith
                   </span>
                 </span>
               </a>
               <span
-                class="emotion-6"
+                class="emotion-3"
               >
                 , 
               </span>
@@ -1759,41 +1572,41 @@ exports[`Byline renders correctly with overrides 1`] = `
           </div>
         </div>
         <div
-          class="emotion-9"
+          class="emotion-6"
         >
           <div
-            class="emotion-7"
+            class="emotion-4"
           >
             <span
-              class="emotion-6"
+              class="emotion-3"
             >
               Author, 
             </span>
           </div>
         </div>
         <div
-          class="emotion-9"
+          class="emotion-6"
         >
           <div
-            class="emotion-7"
+            class="emotion-4"
           >
             <div
-              class="emotion-14"
+              class="emotion-11"
             >
               <span
-                class="emotion-6"
+                class="emotion-3"
               >
                 London
               </span>
             </div>
             <div
-              class="emotion-17"
+              class="emotion-14"
             >
               <div
-                class="emotion-14"
+                class="emotion-11"
               >
                 <hr
-                  class="emotion-15"
+                  class="emotion-12"
                   data-testid="divider"
                 />
               </div>
@@ -1803,66 +1616,40 @@ exports[`Byline renders correctly with overrides 1`] = `
       </div>
     </li>
     <li
-      class="emotion-21"
+      class="emotion-18"
     >
       <div
-        class="emotion-20"
+        class="emotion-17"
       >
         <div
-          class="emotion-9"
+          class="emotion-6"
         >
           <div
-            class="emotion-7"
+            class="emotion-4"
           >
             <div
-              class="emotion-7"
+              class="emotion-4"
             >
               <a
                 aria-label="more by John Smith"
-                class="emotion-5"
+                class="emotion-2"
                 data-author="John Smith"
                 href="www.example.com"
                 rel="author"
                 title="Other Author"
               >
                 <span
-                  class="emotion-4"
+                  class="emotion-1"
                 >
                   <span
-                    class="emotion-1"
+                    class="emotion-0"
                   >
-                    <span
-                      class="emotion-0"
-                    >
-                      John Smith
-                    </span>
-                  </span>
-                  <span
-                    class="emotion-1"
-                  >
-                    <svg
-                      aria-labelledby="mock-bui-1"
-                      class="emotion-2"
-                      viewBox="0 0 24 24"
-                    >
-                      <title
-                        id="mock-bui-1"
-                      >
-                        External link
-                      </title>
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-                      />
-                    </svg>
+                    John Smith
                   </span>
                 </span>
               </a>
               <span
-                class="emotion-6"
+                class="emotion-3"
               >
                 , 
               </span>
@@ -1870,26 +1657,26 @@ exports[`Byline renders correctly with overrides 1`] = `
           </div>
         </div>
         <div
-          class="emotion-9"
+          class="emotion-6"
         >
           <div
-            class="emotion-7"
+            class="emotion-4"
           >
             <span
-              class="emotion-6"
+              class="emotion-3"
             >
               Other Author, 
             </span>
           </div>
         </div>
         <div
-          class="emotion-9"
+          class="emotion-6"
         >
           <div
-            class="emotion-7"
+            class="emotion-4"
           >
             <span
-              class="emotion-6"
+              class="emotion-3"
             >
               London
             </span>

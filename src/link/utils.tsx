@@ -1,14 +1,11 @@
 export const isLinkExternal = (href: string) => {
-  if (typeof window !== 'undefined') {
-    const hostLocation = window.location.host;
+  const hostName = href.match(/^https?:\/\/(?:www\.)?([^/?#]+)(?:[/?#]|$)/i);
 
-    return !(
-      href.includes(hostLocation) ||
-      href[0] === '/' ||
-      href[0] === '#' ||
-      href.startsWith('mailto') ||
-      href.startsWith('tel')
-    );
+  if (hostName && typeof window !== 'undefined') {
+    const hostLocation = window.location.host;
+    if (hostName[1] !== hostLocation.replace('www.', '')) {
+      return true;
+    }
   }
   return false;
 };

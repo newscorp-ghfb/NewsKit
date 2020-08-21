@@ -2,7 +2,7 @@
 
 exports[`UnorderedList renders different types of children 1`] = `
 <DocumentFragment>
-  .emotion-12 {
+  .emotion-15 {
   margin: 0;
   padding: 0;
   display: block;
@@ -58,6 +58,14 @@ exports[`UnorderedList renders different types of children 1`] = `
 }
 
 .emotion-8 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.emotion-11 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -68,45 +76,52 @@ exports[`UnorderedList renders different types of children 1`] = `
   color: #2f75d7;
 }
 
-.emotion-8 svg {
+.emotion-11 svg {
   fill: #2f75d7;
   color: #2f75d7;
 }
 
-.emotion-8:hover:not(:disabled) {
+.emotion-11:hover:not(:disabled) {
   color: #2f75d7;
 }
 
-.emotion-8:hover:not(:disabled) svg {
+.emotion-11:hover:not(:disabled) svg {
   fill: #2f75d7;
   color: #2f75d7;
 }
 
-.emotion-8:active:not(:disabled) {
+.emotion-11:active:not(:disabled) {
   color: #2f75d7;
 }
 
-.emotion-8:active:not(:disabled) svg {
+.emotion-11:active:not(:disabled) svg {
   fill: #2f75d7;
   color: #2f75d7;
 }
 
-.emotion-8:visited:not(:disabled) {
+.emotion-11:visited:not(:disabled) {
   color: #903d91;
 }
 
-.emotion-8:visited:not(:disabled) svg {
+.emotion-11:visited:not(:disabled) svg {
   fill: #903d91;
   color: #903d91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-8 {
+  .emotion-11 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-7 {
+.emotion-6 {
+  margin: 0;
+  padding: 1px 0;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -123,17 +138,21 @@ exports[`UnorderedList renders different types of children 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
 }
 
-.emotion-6 {
-  margin: 0;
-  padding: 1px 0;
-  display: inline-block;
-  display: block;
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
 }
 
 <ul
-    class="emotion-12"
+    class="emotion-15"
   >
     <li
       class="emotion-2"
@@ -171,16 +190,42 @@ exports[`UnorderedList renders different types of children 1`] = `
           class="emotion-0"
         >
           <a
-            class="emotion-8"
+            class="emotion-11"
             href="http://localhost:6006"
           >
             <span
-              class="emotion-7"
+              class="emotion-10"
             >
               <span
-                class="emotion-6"
+                class="emotion-7"
               >
-                Link component
+                <span
+                  class="emotion-6"
+                >
+                  Link component
+                </span>
+              </span>
+              <span
+                class="emotion-7"
+              >
+                <svg
+                  aria-labelledby="mock-bui-1"
+                  class="emotion-8"
+                  viewBox="0 0 24 24"
+                >
+                  <title
+                    id="mock-bui-1"
+                  >
+                    External link
+                  </title>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                  />
+                </svg>
               </span>
             </span>
           </a>
