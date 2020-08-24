@@ -4,7 +4,7 @@ import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
-import {Link} from '..';
+import {Link, LinkStandalone} from '..';
 import {EventTrigger, InstrumentationProvider} from '../../instrumentation';
 
 describe('Link', () => {
@@ -113,5 +113,15 @@ describe('Link', () => {
         event: 'other event data',
       },
     });
+  });
+});
+
+describe('LinkStandalone', () => {
+  test('renders as expected in default state', () => {
+    const fragment = renderToFragmentWithTheme(LinkStandalone, {
+      href: '#',
+      children: 'test link test',
+    });
+    expect(fragment).toMatchSnapshot();
   });
 });

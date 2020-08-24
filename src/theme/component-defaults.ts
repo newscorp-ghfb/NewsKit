@@ -42,13 +42,56 @@ export const componentDefaults = {
     },
   },
   card: {
-    media: {
-      stylePreset: 'imageSharp',
+    stylePreset: 'cardContainer',
+    mediaContainer: {
+      stylePreset: 'cardContainerMedia',
+      spaceStack: {
+        xs: 'space040',
+        sm: 'space040',
+        md: 'space050',
+        lg: 'space050',
+      },
+    },
+    contentAndActionsContainer: {
+      stylePreset: 'cardContainerTeaserAndActions',
+    },
+    teaserContainer: {
+      stylePreset: 'cardContainerTeaser',
+      paddingPreset: 'spaceInset000Squish',
     },
     actionsContainer: {
-      stylePreset: 'cardActionsContainer',
+      stylePreset: 'cardContainerActions',
       minHeight: 'sizing080',
       paddingPreset: 'spaceInset000Squish',
+    },
+  },
+  cardInset: {
+    stylePreset: 'cardContainer',
+    mediaContainer: {
+      stylePreset: 'cardContainerMedia',
+      spaceStack: 'space000',
+    },
+    contentAndActionsContainer: {
+      stylePreset: 'cardContainerTeaserAndActions',
+    },
+    teaserContainer: {
+      stylePreset: 'cardContainerTeaser',
+      paddingPreset: {
+        xs: 'spaceInset040',
+        sm: 'spaceInset040',
+        md: 'spaceInset050',
+        lg: 'spaceInset050',
+      },
+    },
+    actionsContainer: {
+      stylePreset: 'cardContainerActions',
+      minHeight: 'sizing000',
+      paddingPreset: {
+        xs: 'spaceInset030Squish',
+        sm: 'spaceInset030Squish',
+        md: 'spaceInset040Squish',
+        lg: 'spaceInset040Squish',
+      },
     },
   },
   headlineH1: {

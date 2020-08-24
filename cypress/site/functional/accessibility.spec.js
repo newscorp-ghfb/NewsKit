@@ -22,7 +22,11 @@ describe('Page accessibility', () => {
       cy.visit(path);
       cy.acceptCookieBanner();
       cy.injectAxe();
-      if (path === `/foundations/typography` || path === `/pages/article`) {
+      if (
+        path === `/foundations/typography` ||
+        path === `/pages/article` ||
+        path === `/components/card`
+      ) {
         // The typography page is a showcase so we have disabled the heading order rule for this page.
         // More info on the rule here: https://www.w3.org/WAI/tutorials/page-structure/headings/
         cy.checkA11y({

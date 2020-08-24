@@ -906,6 +906,78 @@ exports[`Pause renders the Pause icon with title override 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Picture renders the Picture icon from theme override 1`] = `
+<DocumentFragment>
+  <svg>
+    <path>
+      a different icon
+    </path>
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Picture renders the Picture icon with specified style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #535353;
+  color: #535353;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}
+
+<svg
+    aria-labelledby="mock-bui-1"
+    class="emotion-0"
+    viewBox="0 0 24 24"
+  >
+    <title
+      id="mock-bui-1"
+    >
+      Picture
+    </title>
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+    <path
+      d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Picture renders the Picture icon with title override 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #535353;
+  color: #535353;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}
+
+<svg
+    aria-labelledby="mock-bui-1"
+    class="emotion-0"
+    viewBox="0 0 24 24"
+  >
+    <title
+      id="mock-bui-1"
+    >
+      override title value
+    </title>
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+    <path
+      d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
 exports[`Placeholder renders the Placeholder icon from theme override 1`] = `
 <DocumentFragment>
   <svg>

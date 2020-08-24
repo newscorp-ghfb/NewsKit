@@ -3,7 +3,9 @@ import Prop from '../../components/prop';
 import {LegacyBlock} from '../../components/legacy-block';
 import Layout from '../../components/layout';
 import {Card, Tag, TagSize, Flow, Stack, StackDistribution} from 'newskit';
-import {CodeFromDefaultPresets, Code} from '../../components/code';
+import {CodeFromDefaultPresets, CodeFromFile} from '../../components/code';
+import {CardMediumWithoutInset} from '../../demo-components/card/card-medium-without-inset.tsx';
+import {CardSmallWithInset} from '../../demo-components/card/card-small-with-inset.tsx';
 
 
 export default Layout;
@@ -18,6 +20,10 @@ There are three main areas to the card component: Media, Content and Action area
 ### Usage
 
 Cards are used to display a summary of content and will reveal more details upon interaction.
+
+### Variants
+
+There are two card variants - card without inset `<Card/>` card with inset `<CardInset/>`
 
 ## Props
 
@@ -43,10 +49,15 @@ Cards are used to display a summary of content and will reveal more details upon
       The default loading aspect ratio of media is 3:2, however, a user should be able to pass any ratio to the media.
     </Prop>
   </Prop>
+  <Prop name="children" type="Exclude<React.ReactNode, 'undefined'>" required>
+    This is the body of the Card. A card requires to have at least a heading. Each element of the body content should be wrapped within a <b>Block</b> component
+    which is responsible for the spacing between the elements. Refer to the examples below.
+  </Prop>
+
   <Prop name="actions" type="React.ComponentType">
     If provided, the Card will render the React component being passed to the actions. This could be buttons, tags and/or links. 
-    The actions section is typically placed at the bottom of the card and would only be clickable if the child components would be. <br />
-    If there are multiple items, it is advised to use the Stack component to display the items. Please refer to the MyTag component below.<br />
+    The actions section is typically placed at the bottom of the card and would only be clickable if the child components would be.<br />
+    If there are multiple items, it is advised to use the Stack component to display the items. Refer to the examples below.<br />
   </Prop>
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements. Refer to the defaults below for the object structure:
@@ -54,79 +65,20 @@ Cards are used to display a summary of content and will reveal more details upon
   </Prop>
 </LegacyBlock>
 
-## Playground
+### Examples
 
-<Playground
-  componentName="Card"
-  newskitPath="/card"
-  component={Card}
-  knobs={[
-    {
-      name: 'Href',
-      propName: 'href',
-      type: 'string',
-      value: 'https://newskit.co.uk/',
-    },
-    {
-      name: 'Media',
-      propName: 'media',
-      value: {
-        src: '/static/placeholder-3x2.png',
-        alt: 'Card Media',
-      },
-    },
-    {
-      name: 'Actions',
-      propName: 'actions',
-      options: [
-        {
-          label: 'Without Actions',
-          value: undefined,
-        },
-        {
-          label: 'With Actions',
-          value: withProps(() => (
-              <Stack flow={Flow.HorizontalCenter} space='sizing040'>
-                <Tag href="https://newskit.co.uk/" size={TagSize.Small} overrides={{stylePreset: 'tagPrimary', typePreset: 'label010'}}>News</Tag>
-                <Tag href="https://newskit.co.uk/" size={TagSize.Small} overrides={{stylePreset: 'tagPrimary', typePreset: 'label010'}}>Sport</Tag>
-              </Stack>
-          ),
-          {}, 'MyTag'),
-        },
-      ],
-    },
-    {
-      name: 'Actions Inset Overrides',
-      propName: 'overrides',
-      options: [
-        {
-          label: 'Without Inset',
-          value: undefined,
-        },
-        {
-          label: 'With Inset',
-          value: {
-            actionsContainer: {
-              paddingPreset: 'spaceInset030Squish'
-            }
-          },
-        },
-      ],
-    },
-  ]}
-/>
+#### Prerequisites
+<CodeFromFile path="examples/card/common.tsx" />
 
-In the example above, MyTag component in the actions section looks like this:
-<Code>
-  {`<Stack flow={Flow.HorizontalCenter} space='sizing040'>
-  <Tag href="https://newskit.co.uk/" size={TagSize.Small} overrides={{stylePreset: 'tagPrimary', typePreset: 'label010'}}>News</Tag>
-  <Tag href="https://newskit.co.uk/" size={TagSize.Small} overrides={{stylePreset: 'tagPrimary', typePreset: 'label010'}}>Sport</Tag>
-</Stack>`}
-</Code>
+#### Card without inset
 
-For more information on how to override default presets, see docs [overrides default presets](/theming/default-presets/override-individual-components).
+<CardMediumWithoutInset/>
+<CodeFromFile path="examples/card/card-medium-without-inset.tsx" />
 
+#### Card with inset
 
+<CardSmallWithInset/>
+<CodeFromFile path="examples/card/card-small-with-inset.tsx" />
 
 ### Styling
 

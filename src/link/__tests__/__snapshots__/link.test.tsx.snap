@@ -608,3 +608,101 @@ exports[`Link renders the external icon if the href is external 1`] = `
   </a>
 </DocumentFragment>
 `;
+
+exports[`LinkStandalone renders as expected in default state 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-2 {
+  display: inline-block;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2f75d7;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2 svg {
+  fill: #2f75d7;
+  color: #2f75d7;
+}
+
+.emotion-2:hover:not(:disabled) {
+  color: #2f75d7;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #2f75d7;
+  color: #2f75d7;
+}
+
+.emotion-2:active:not(:disabled) {
+  color: #2f75d7;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #2f75d7;
+  color: #2f75d7;
+}
+
+.emotion-2:visited:not(:disabled) {
+  color: #2f75d7;
+}
+
+.emotion-2:visited:not(:disabled) svg {
+  fill: #2f75d7;
+  color: #2f75d7;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    vertical-align: text-bottom;
+  }
+}
+
+<a
+    class="emotion-2"
+    href="#"
+  >
+    <span
+      class="emotion-1"
+    >
+      <span
+        class="emotion-0"
+      >
+        test link test
+      </span>
+    </span>
+  </a>
+</DocumentFragment>
+`;

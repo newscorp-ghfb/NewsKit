@@ -2,10 +2,11 @@ import React from 'react';
 import {CardProps} from './types';
 import {Image, ImageProps} from '../image';
 import {
-  StyledCard,
-  StyledCardMedia,
-  StyledCardContentAndActions,
-  StyledCardActionsContainer,
+  StyledCardContainer,
+  StyledCardContainerMedia,
+  StyledCardContainerTeaserAndActions,
+  StyledCardContainerTeaser,
+  StyledCardContainerActions,
 } from './styled';
 import {Flow, StackDistribution} from '../stack';
 
@@ -32,25 +33,32 @@ export const Card: React.FC<CardProps> = ({
   media,
   href = '#',
   actions,
+  children,
   overrides = {},
 }) => (
-  <StyledCard overrides={overrides}>
-    <StyledCardMedia href={href}>
-      {media && renderMedia(media, overrides.media)}
-    </StyledCardMedia>
-    <StyledCardContentAndActions>
+  <StyledCardContainer overrides={overrides}>
+    {media && (
+      <StyledCardContainerMedia href={href} overrides={overrides}>
+        {renderMedia(media, overrides.mediaContainer)}
+      </StyledCardContainerMedia>
+    )}
+
+    <StyledCardContainerTeaserAndActions>
+      <StyledCardContainerTeaser overrides={overrides}>
+        {children}
+      </StyledCardContainerTeaser>
       {actions && (
-        <StyledCardActionsContainer
+        <StyledCardContainerActions
           flow={Flow.HorizontalCenter}
           stackDistribution={StackDistribution.Start}
           wrap="nowrap"
           overrides={overrides}
         >
           {renderActions(actions)}
-        </StyledCardActionsContainer>
+        </StyledCardContainerActions>
       )}
-    </StyledCardContentAndActions>
-  </StyledCard>
+    </StyledCardContainerTeaserAndActions>
+  </StyledCardContainer>
 );
 
 Card.displayName = 'Card';

@@ -212,10 +212,53 @@ Object {
       "actionsContainer": Object {
         "minHeight": "sizing080",
         "paddingPreset": "spaceInset000Squish",
-        "stylePreset": "cardActionsContainer",
+        "stylePreset": "cardContainerActions",
       },
-      "media": Object {
-        "stylePreset": "imageSharp",
+      "contentAndActionsContainer": Object {
+        "stylePreset": "cardContainerTeaserAndActions",
+      },
+      "mediaContainer": Object {
+        "spaceStack": Object {
+          "lg": "space050",
+          "md": "space050",
+          "sm": "space040",
+          "xs": "space040",
+        },
+        "stylePreset": "cardContainerMedia",
+      },
+      "stylePreset": "cardContainer",
+      "teaserContainer": Object {
+        "paddingPreset": "spaceInset000Squish",
+        "stylePreset": "cardContainerTeaser",
+      },
+    },
+    "cardInset": Object {
+      "actionsContainer": Object {
+        "minHeight": "sizing000",
+        "paddingPreset": Object {
+          "lg": "spaceInset040Squish",
+          "md": "spaceInset040Squish",
+          "sm": "spaceInset030Squish",
+          "xs": "spaceInset030Squish",
+        },
+        "stylePreset": "cardContainerActions",
+      },
+      "contentAndActionsContainer": Object {
+        "stylePreset": "cardContainerTeaserAndActions",
+      },
+      "mediaContainer": Object {
+        "spaceStack": "space000",
+        "stylePreset": "cardContainerMedia",
+      },
+      "stylePreset": "cardContainer",
+      "teaserContainer": Object {
+        "paddingPreset": Object {
+          "lg": "spaceInset050",
+          "md": "spaceInset050",
+          "sm": "spaceInset040",
+          "xs": "spaceInset040",
+        },
+        "stylePreset": "cardContainerTeaser",
       },
     },
     "dateTime": Object {
@@ -1278,13 +1321,43 @@ Object {
         "iconColor": "{{colors.inkLinkVisited}}",
       },
     },
-    "cardActionsContainer": Object {
+    "cardContainer": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interface020}}",
+      },
       "base": Object {
         "backgroundColor": "{{colors.interface010}}",
-        "borderColor": "{{colors.interactive040}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
+      },
+    },
+    "cardContainerActions": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+      },
+    },
+    "cardContainerMedia": Object {
+      "base": Object {
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.skeleton010}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+    },
+    "cardContainerTeaser": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkBase}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactive020}}",
+      },
+    },
+    "cardContainerTeaserAndActions": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
       },
     },
     "dateTime": Object {
@@ -1760,6 +1833,12 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.skeleton010}}",
         "iconColor": "{{colors.inkNonEssential}}",
+      },
+    },
+    "labelDefault": Object {
+      "base": Object {
+        "color": "{{colors.inkSubtle}}",
+        "iconColor": "{{colors.inkSubtle}}",
       },
     },
     "linkInline": Object {

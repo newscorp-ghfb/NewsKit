@@ -303,18 +303,6 @@ stylePresets.buttonMinimalPositive = {
 
 stylePresets.buttonDefault = stylePresets.buttonSolidPrimary;
 
-// Card
-
-stylePresets.cardActionsContainer = {
-  base: {
-    backgroundColor: '{{colors.interface010}}',
-    borderStyle: 'solid',
-    borderColor: '{{colors.interactive040}}',
-    borderWidth: '{{borders.borderWidth010}}',
-    borderRadius: '{{borders.borderRadiusSharp}}',
-  },
-};
-
 //
 // Icon Button
 //
@@ -947,6 +935,53 @@ stylePresets.imageCircle = {
   loading: {
     backgroundColor: '{{colors.skeleton010}}',
     iconColor: '{{colors.inkNonEssential}}',
+  },
+};
+
+// Label
+
+stylePresets.labelDefault = {
+  base: {
+    color: '{{colors.inkSubtle}}',
+    iconColor: '{{colors.inkSubtle}}',
+  },
+};
+
+// // Card
+
+stylePresets.cardContainer = {
+  base: {
+    backgroundColor: '{{colors.interface010}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
+  },
+  active: {
+    backgroundColor: '{{colors.interface020}}',
+  },
+};
+
+stylePresets.cardContainerMedia = stylePresets.imageSharp;
+
+stylePresets.cardContainerTeaserAndActions = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+  },
+};
+
+stylePresets.cardContainerTeaser = {
+  base: {
+    backgroundColor: '{{colors.interface010}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
+    color: '{{colors.inkBase}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interactive020}}',
+  },
+};
+
+stylePresets.cardContainerActions = {
+  base: {
+    backgroundColor: '{{colors.interface010}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
   },
 };
 

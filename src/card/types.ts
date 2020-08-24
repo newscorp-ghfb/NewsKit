@@ -1,17 +1,31 @@
 import {ImageProps} from '../image/types';
-import {SizingKeys, PaddingPresetKeys} from '../theme';
+import {MQ} from '../utils/style';
+import {
+  SizingKeys,
+  PaddingPresetKeys,
+  StylePresetKeys,
+  SpacePresetKeys,
+} from '../theme';
 
 export interface CardProps {
   href?: string;
   media?: ImageProps | React.ComponentType;
+  children: Exclude<React.ReactNode, 'undefined'>;
   actions?: React.ComponentType;
+
   overrides?: {
-    stylePreset?: string;
-    media?: {
-      stylePreset?: string;
+    stylePreset?: StylePresetKeys;
+    mediaContainer?: {
+      stylePreset?: StylePresetKeys;
+      spaceStack?: MQ<SpacePresetKeys>;
+    };
+    teaserContainer?: {
+      stylePreset?: StylePresetKeys;
+      paddingPreset?: MQ<PaddingPresetKeys>;
     };
     actionsContainer?: {
-      paddingPreset?: PaddingPresetKeys;
+      stylePreset?: StylePresetKeys;
+      paddingPreset?: MQ<PaddingPresetKeys>;
       minHeight?: SizingKeys | string;
     };
   };

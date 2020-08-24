@@ -5,15 +5,50 @@ import {Image} from '../../image';
 import {Stack} from '../../stack';
 import {Tag} from '../../tag';
 import {Button} from '../../button';
+import {Block} from '../../block';
+import {TextBlock} from '../../text-block';
+import {CardInset} from '../card-inset';
+import {createTheme} from '../../theme';
 
 const placeholder = '/placeholder-3x2.png';
 const href = 'https://newskit.co.uk/';
+
+const myCustomCardTheme = createTheme({
+  name: 'my-custom-card-theme',
+  overrides: {
+    stylePresets: {
+      // mocked card Containers
+      cardContainerMock: {
+        base: {
+          borderStyle: 'solid',
+          borderColor: '{{colors.purple020}}',
+          borderWidth: '{{borders.borderWidth010}}',
+        },
+      },
+      cardContainerMediaMock: {
+        base: {
+          backgroundColor: '{{colors.red020}}',
+        },
+      },
+      cardContainerTeaserMock: {
+        base: {
+          backgroundColor: '{{colors.amber020}}',
+        },
+      },
+      cardContainerActionsMock: {
+        base: {
+          backgroundColor: '{{colors.green020}}',
+        },
+      },
+    },
+  },
+});
 
 const customMediaComponent = () => (
   <Image src="/placeholder-16x9.png" alt="Card Media" />
 );
 
-const customComponentWithOverrides = () => (
+const customMediaComponentWithOverrides = () => (
   <Image
     src="/placeholder-16x9.png"
     overrides={{stylePreset: 'imageDefault'}}
@@ -28,17 +63,23 @@ const actionsComponent = () => (
   </Stack>
 );
 
+const cardBody = (
+  <Block overrides={{spaceStack: 'space010'}}>
+    <TextBlock overrides={{typePreset: 'body010'}}>Example Card text</TextBlock>
+  </Block>
+);
+
 describe('Card', () => {
-  test('renders correctly', () => {
+  test('renders without card items', () => {
     const fragment = renderToFragmentWithTheme(Card);
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders card with overrides', () => {
+  test('renders with card items', () => {
     const fragment = renderToFragmentWithTheme(Card, {
-      overrides: {
-        stylePreset: 'imageDefault',
-      },
+      media: customMediaComponent,
+      children: cardBody,
+      actions: actionsComponent,
     });
     expect(fragment).toMatchSnapshot();
   });
@@ -49,6 +90,7 @@ describe('Card', () => {
         src: placeholder,
         alt: 'Card Media',
       },
+      children: cardBody,
     });
     expect(fragment).toMatchSnapshot();
   });
@@ -56,6 +98,7 @@ describe('Card', () => {
   test('adds a href to the anchor containing the media', () => {
     const fragment = renderToFragmentWithTheme(Card, {
       href,
+      children: cardBody,
     });
     expect(fragment).toMatchSnapshot();
   });
@@ -67,6 +110,7 @@ describe('Card', () => {
         src: placeholder,
         alt: 'Card media',
       },
+      children: cardBody,
     });
     expect(fragment).toMatchSnapshot();
   });
@@ -77,8 +121,9 @@ describe('Card', () => {
         src: placeholder,
         alt: 'Card media',
       },
+      children: cardBody,
       overrides: {
-        media: {
+        mediaContainer: {
           stylePreset: 'imageDefault',
         },
       },
@@ -89,19 +134,22 @@ describe('Card', () => {
   test('renders media section with a custom component', () => {
     const fragment = renderToFragmentWithTheme(Card, {
       media: customMediaComponent,
+      children: cardBody,
     });
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders media section with a custom component using overrides', () => {
     const fragment = renderToFragmentWithTheme(Card, {
-      media: customComponentWithOverrides,
+      media: customMediaComponentWithOverrides,
+      children: cardBody,
     });
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders actions section with given component', () => {
     const fragment = renderToFragmentWithTheme(Card, {
+      children: cardBody,
       actions: actionsComponent,
     });
     expect(fragment).toMatchSnapshot();
@@ -109,6 +157,7 @@ describe('Card', () => {
 
   test('renders actions section with overrides for minHeight', () => {
     const fragment = renderToFragmentWithTheme(Card, {
+      children: cardBody,
       actions: actionsComponent,
       overrides: {
         actionsContainer: {
@@ -122,12 +171,97 @@ describe('Card', () => {
   test('renders actions section with overrides for paddingPreset', () => {
     const fragment = renderToFragmentWithTheme(Card, {
       actions: actionsComponent,
+      children: cardBody,
       overrides: {
         actionsContainer: {
           paddingPreset: 'spaceInset030Squish',
         },
       },
     });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders card with overrides', () => {
+    const fragment = renderToFragmentWithTheme(
+      Card,
+      {
+        children: cardBody,
+        overrides: {
+          stylePreset: 'cardContainerMock',
+          mediaContainer: {
+            stylePreset: 'cardContainerMediaMock',
+            spaceStack: {
+              xs: 'space050',
+              sm: 'space050',
+              md: 'space060',
+              lg: 'space060',
+            },
+          },
+          teaserContainer: {
+            stylePreset: 'cardContainerTeaserMock',
+            paddingPreset: 'spaceInset010Squish',
+          },
+          actionsContainer: {
+            stylePreset: 'cardContainerActionsMock',
+            paddingPreset: 'spaceInset010Squish',
+            minHeight: 'sizing090',
+          },
+        },
+      },
+      myCustomCardTheme,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+});
+
+describe('CardInset', () => {
+  test('renders without card items', () => {
+    const fragment = renderToFragmentWithTheme(CardInset);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with card items', () => {
+    const fragment = renderToFragmentWithTheme(CardInset, {
+      media: customMediaComponent,
+      children: cardBody,
+      actions: actionsComponent,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders card with overrides', () => {
+    const fragment = renderToFragmentWithTheme(
+      CardInset,
+      {
+        children: cardBody,
+        overrides: {
+          stylePreset: 'cardContainerMock',
+          mediaContainer: {
+            stylePreset: 'cardContainerMediaMock',
+            spaceStack: 'space000',
+          },
+          teaserContainer: {
+            stylePreset: 'cardContainerTeaserMock',
+            paddingPreset: {
+              xs: 'spaceInset050',
+              sm: 'spaceInset050',
+              md: 'spaceInset060',
+              lg: 'spaceInset060',
+            },
+          },
+          actionsContainer: {
+            stylePreset: 'cardContainerActionsMock',
+            paddingPreset: {
+              xs: 'spaceInset040Squish',
+              sm: 'spaceInset040Squish',
+              md: 'spaceInset050Squish',
+              lg: 'spaceInset050Squish',
+            },
+          },
+        },
+      },
+      myCustomCardTheme,
+    );
     expect(fragment).toMatchSnapshot();
   });
 });
