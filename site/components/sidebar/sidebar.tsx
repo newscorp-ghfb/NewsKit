@@ -5,13 +5,13 @@ import {
   getColorFromTheme,
   getMediaQueryFromTheme,
   styled,
+  Close,
 } from 'newskit';
 
 import {LegacyBlock} from '../legacy-block';
 
 import {Overlay} from '../overlay';
 import {SidebarNav} from './sidebar-navigation';
-import {CloseIcon} from '../icons';
 import {handleEnterKeyPress} from '../../helpers/a11y';
 import {NewsKitLogo} from '../logo';
 import {Link} from '../link';
@@ -92,7 +92,7 @@ const Sidebar: React.FC<SidebarProps> = ({
               tabIndex={0}
               data-testid="close-icon"
             >
-              <CloseIcon />
+              <Close color="interactive140" size="iconSize010" />
             </IconWrapper>
           </LegacyBlock>
         </Visible>

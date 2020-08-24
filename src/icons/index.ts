@@ -5,8 +5,10 @@ import {Theme} from '../theme';
 export * from './indeterminate-progress-indicator';
 export * from './bookmark';
 export * from './circle';
+export * from './close';
 export * from './comment';
 export * from './copy-link';
+export * from './create';
 export * from './email';
 export * from './facebook';
 export * from './github';
@@ -31,6 +33,7 @@ export * from './skip-next';
 export * from './skip-previous';
 export * from './popout';
 export * from './types';
+
 export type IconComponent = React.ComponentType<
   SvgProps & {
     theme?: Theme | undefined;
