@@ -399,33 +399,31 @@ export default {
       component: () => <React.Fragment>{renderCard()}</React.Fragment>,
     },
     {
-      name: 'card-without-inset',
-      type: 'story',
-      parameters: {disable: true},
-      component: () => <React.Fragment>{renderCard()}</React.Fragment>,
-    },
-    {
       name: 'card-small-with-inset',
       type: 'story',
-      parameters: {viewport: 'iphone6'},
+      parameters: {viewport: 'iphone6', eyes: {include: false}},
       component: () => <React.Fragment>{renderCardInset()}</React.Fragment>,
     },
     {
       name: 'card-medium-with-inset',
       type: 'story',
-      parameters: {viewport: 'ipad'},
+      parameters: {viewport: 'ipad', eyes: {include: false}},
       component: () => <React.Fragment>{renderCardInset()}</React.Fragment>,
     },
     {
       name: 'card-large-with-inset',
       type: 'story',
-      parameters: {viewport: 'ipad12p'},
+      parameters: {viewport: 'ipad12p', eyes: {include: false}},
       component: () => <React.Fragment>{renderCardInset()}</React.Fragment>,
+    },
+    {
+      name: 'card-without-inset',
+      type: 'story',
+      component: () => <React.Fragment>{renderCard()}</React.Fragment>,
     },
     {
       name: 'card-with-inset',
       type: 'story',
-      parameters: {disable: true},
       component: () => <React.Fragment>{renderCardInset()}</React.Fragment>,
     },
     {
@@ -438,7 +436,7 @@ export default {
           </StorybookHeading>
           <ContainerWithBackground>
             <Grid>
-              <Cell xs={4}>
+              <Cell xs={12} sm={4}>
                 <ThemeProvider theme={myCustomCardTheme}>
                   <Card
                     href="https://newskit.co.uk/"
@@ -480,7 +478,7 @@ export default {
           </StorybookHeading>
           <ContainerWithBackground>
             <Grid>
-              <Cell xs={4}>
+              <Cell xs={12} sm={4}>
                 <ThemeProvider theme={myCustomCardTheme}>
                   <CardInset
                     href="https://newskit.co.uk/"
