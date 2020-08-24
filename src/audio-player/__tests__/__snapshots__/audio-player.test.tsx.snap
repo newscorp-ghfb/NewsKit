@@ -488,7 +488,23 @@ exports[`Audio Player live player renders as expected 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-right: 8px;
+  margin-right: 12px;
+}
+
+.emotion-23::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-23::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-22 {
@@ -641,7 +657,23 @@ exports[`Audio Player live player renders as expected 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-left: 8px;
+  margin-left: 12px;
+}
+
+.emotion-31::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-31::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-33 {
@@ -1843,7 +1875,23 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-right: 8px;
+  margin-right: 12px;
+}
+
+.emotion-39::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-39::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-38 {
@@ -1940,7 +1988,23 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-left: 8px;
+  margin-left: 12px;
+}
+
+.emotion-47::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-47::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-49 {
@@ -2195,18 +2259,20 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   color: #535353;
 }
 
-.emotion-59 svg {
-  fill: #535353;
-  color: #535353;
+.emotion-59::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-59:disabled {
-  color: #9c9c9c;
-}
-
-.emotion-59:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-59::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-4 {
@@ -2293,70 +2359,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   width: 100%;
 }
 
-.emotion-57 {
-  background-color: #ffffff;
-  border-color: #0a68c1;
-  border-width: 1px;
-  border-radius: 50%;
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  border-style: solid;
-  height: 16px;
-  width: 16px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-  cursor: grabbing;
-}
-
-.emotion-57 svg {
-  fill: #ffffff;
-  color: #ffffff;
-}
-
-.emotion-57:active:not(:disabled) {
-  background-color: #e6f4ff;
-}
-
-.emotion-57:disabled {
-  background-color: #e4e4e4;
-  border-color: none;
-  border-style: none;
-  border-width: none;
-  box-shadow: none;
-}
-
-.emotion-57:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-.emotion-41 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-  cursor: grabbing;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  box-sizing: border-box;
-  background-color: #f0f0f0;
-  border-radius: 20rem;
-  margin: calc(16px/2 - 4px/2) calc(16px/2);
-  height: 4px;
-  width: 100%;
-}
-
 .emotion-40 {
   background-color: #ffffff;
   border-color: #0a68c1;
@@ -2396,6 +2398,25 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 .emotion-40:active:not(:disabled) svg {
   fill: #535353;
   color: #535353;
+}
+
+.emotion-41 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  border-radius: 20rem;
+  margin: calc(16px/2 - 4px/2) calc(16px/2);
+  height: 4px;
+  width: 100%;
 }
 
 <section
@@ -2808,7 +2829,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                 aria-valuemin="0"
                 aria-valuenow="10"
                 aria-valuetext="Playback time: 10 seconds of 1 hour 50 minutes 10 seconds"
-                class="emotion-57"
+                class="emotion-40"
                 data-testid="audio-slider-thumb"
                 draggable="false"
                 role="slider"
@@ -2876,25 +2897,21 @@ exports[`Audio Player recorded player renders and behaves as expected 2`] = `
 }
 
 .emotion-0 svg {
-  fill: #ffffff;
-  color: #ffffff;
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
-.emotion-0:active:not(:disabled) {
+.emotion-0:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-0:disabled {
-  background-color: #e4e4e4;
-  border-color: none;
-  border-style: none;
-  border-width: none;
-  box-shadow: none;
+.emotion-0:active:not(:disabled) {
+  background-color: #01396e;
 }
 
-.emotion-0:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-0:active:not(:disabled) svg {
+  fill: #535353;
+  color: #535353;
 }
 
 <div
@@ -3380,7 +3397,23 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-right: 8px;
+  margin-right: 12px;
+}
+
+.emotion-35::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-35::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-34 {
@@ -3533,7 +3566,23 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-left: 8px;
+  margin-left: 12px;
+}
+
+.emotion-43::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-43::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-45 {
@@ -3810,49 +3859,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   width: 100%;
 }
 
-.emotion-53 {
-  background-color: #ffffff;
-  border-color: #0a68c1;
-  border-width: 1px;
-  border-radius: 50%;
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  border-style: solid;
-  height: 16px;
-  width: 16px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.emotion-53 svg {
-  fill: #ffffff;
-  color: #ffffff;
-}
-
-.emotion-53:active:not(:disabled) {
-  background-color: #e6f4ff;
-}
-
-.emotion-53:disabled {
-  background-color: #e4e4e4;
-  border-color: none;
-  border-style: none;
-  border-width: none;
-  box-shadow: none;
-}
-
-.emotion-53:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
 .emotion-57 {
   width: 100%;
   margin-top: 12px;
@@ -3894,18 +3900,20 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   color: #535353;
 }
 
-.emotion-55 svg {
-  fill: #535353;
-  color: #535353;
+.emotion-55::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-55:disabled {
-  color: #9c9c9c;
-}
-
-.emotion-55:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-55::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 <section
@@ -4285,7 +4293,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                 aria-valuemin="0"
                 aria-valuenow="0"
                 aria-valuetext="Playback time: 0 seconds of 0 seconds"
-                class="emotion-53"
+                class="emotion-36"
                 data-testid="audio-slider-thumb"
                 draggable="false"
                 role="slider"

@@ -1,5 +1,5 @@
 import {Range} from 'react-range';
-import {SizingKeys} from '../theme';
+import {SizingKeys, StylePresetKeys, TypePresetKeys} from '../theme';
 
 type RenderTrackFunction = Range['props']['renderTrack'];
 type RenderThumbFunction = Range['props']['renderThumb'];
@@ -8,30 +8,42 @@ interface CommonProps {
   disabled?: boolean;
   vertical?: boolean;
   values: number[];
+  overrides?: {
+    track?: {
+      stylePreset?: StylePresetKeys;
+      size?: SizingKeys;
+    };
+    indicator?: {
+      stylePreset?: StylePresetKeys;
+    };
+    thumb?: {
+      stylePreset?: StylePresetKeys;
+      size?: SizingKeys;
+    };
+    thumbLabel?: {
+      stylePreset?: StylePresetKeys;
+      typePreset?: TypePresetKeys;
+      space?: SizingKeys;
+    };
+    labels?: {
+      stylePreset?: StylePresetKeys;
+      typePreset?: TypePresetKeys;
+      space?: SizingKeys;
+    };
+  };
 }
 
 export interface StyledTrackProps extends CommonProps {
   isDragged: boolean;
-  trackSize?: SizingKeys;
-  thumbSize?: SizingKeys;
-  stylePreset?: string;
 }
 
-export interface ThumbLabelProps extends Omit<StyledTrackProps, 'trackSize'> {
+export interface ThumbLabelProps extends StyledTrackProps {
   index: number;
   children: number;
 }
 
-export interface SliderStylePresets {
-  sliderIndicatorTrackStylePreset?: string;
-  sliderThumbStylePreset?: string;
-  sliderLabelsStylePreset?: string;
-  sliderThumbLabelStylePreset?: string;
-  sliderTrackStylePreset?: string;
-}
-
 // see https://github.com/tajo/react-range#range--props
-interface CommonSliderProps extends CommonProps, SliderStylePresets {
+interface CommonSliderProps extends CommonProps {
   min: number;
   max: number;
   onFinalChange?: (values: number[]) => void;
@@ -44,9 +56,6 @@ interface CommonSliderProps extends CommonProps, SliderStylePresets {
   labelPosition?: LabelPosition;
   thumbLabel?: boolean | React.ComponentType<ThumbLabelProps>;
   dataTestId?: string;
-  trackSize?: SizingKeys;
-  thumbSize?: SizingKeys;
-  labelStackSpace?: SizingKeys;
   renderTrack?: RenderTrackFunction;
   renderThumb?: RenderThumbFunction;
   onKeyDown?: (e: React.KeyboardEvent<HTMLElement>) => void;

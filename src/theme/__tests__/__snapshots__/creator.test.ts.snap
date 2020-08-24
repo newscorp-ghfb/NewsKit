@@ -389,6 +389,29 @@ Object {
         "typePreset": "label020",
       },
     },
+    "slider": Object {
+      "indicator": Object {
+        "stylePreset": "sliderIndicator",
+      },
+      "labels": Object {
+        "space": "space030",
+        "stylePreset": "sliderLabels",
+        "typePreset": "label020",
+      },
+      "thumb": Object {
+        "size": "sizing060",
+        "stylePreset": "sliderThumb",
+      },
+      "thumbLabel": Object {
+        "space": "space060",
+        "stylePreset": "sliderThumbLabel",
+        "typePreset": "label030",
+      },
+      "track": Object {
+        "size": "sizing030",
+        "stylePreset": "sliderTrack",
+      },
+    },
     "standfirst": Object {
       "styledText": Object {
         "stylePreset": "standfirst",

@@ -181,9 +181,6 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
           {...trackProps}
           values={trackPositionArr}
           isDragged={isDragged}
-          stylePreset={trackPresetObj.sliderTrackStylePreset}
-          trackSize="sizing020"
-          thumbSize="sizing040"
           style={{
             background: getTrackBackground({
               values,
@@ -193,6 +190,16 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
             }),
           }}
           data-testid="audio-slider-track"
+          overrides={{
+            track: {
+              stylePreset: trackPresetObj.sliderTrackStylePreset,
+              size: 'sizing020',
+            },
+            thumb: {
+              stylePreset: trackPresetObj.sliderThumbStylePreset,
+              size: 'sizing040',
+            },
+          }}
         >
           {trackChildren}
         </StyledTrack>
@@ -205,6 +212,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
       trackPositionArr,
       trackPresetObj.bufferingStylePreset,
       trackPresetObj.sliderIndicatorTrackStylePreset,
+      trackPresetObj.sliderThumbStylePreset,
       trackPresetObj.sliderTrackStylePreset,
     ],
   );
@@ -319,14 +327,30 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
               ariaValueText={`Playback time: ${seekBarAriaValueText(
                 trackPositionArr,
               )} of ${seekBarAriaValueText([duration])}`}
-              thumbSize="sizing040"
-              trackSize="sizing020"
               onChange={onChangeSlider}
               renderTrack={renderTrack}
               labelPosition={LabelPosition.After}
               dataTestId="audio-slider"
               ariaDescribedBy={srOnlyForwardRewind}
-              {...trackPresets}
+              overrides={{
+                track: {
+                  stylePreset: trackPresetObj.sliderTrackStylePreset,
+                  size: 'sizing020',
+                },
+                indicator: {
+                  stylePreset: trackPresetObj.sliderIndicatorTrackStylePreset,
+                },
+                thumb: {
+                  stylePreset: trackPresetObj.sliderThumbStylePreset,
+                  size: 'sizing040',
+                },
+                thumbLabel: {
+                  stylePreset: trackPresetObj.sliderThumbStylePreset,
+                },
+                labels: {
+                  stylePreset: trackPresetObj.sliderLabelsStylePreset,
+                },
+              }}
             />
             <ScreenReaderOnly id={srOnlyForwardRewind}>
               Use the arrow keys to fast forward or rewind

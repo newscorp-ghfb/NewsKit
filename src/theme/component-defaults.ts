@@ -289,6 +289,29 @@ export const componentDefaults = {
       typePreset: 'meta020',
     },
   },
+  slider: {
+    track: {
+      stylePreset: 'sliderTrack',
+      size: 'sizing030',
+    },
+    indicator: {
+      stylePreset: 'sliderIndicator',
+    },
+    thumb: {
+      stylePreset: 'sliderThumb',
+      size: 'sizing060',
+    },
+    thumbLabel: {
+      stylePreset: 'sliderThumbLabel',
+      typePreset: 'label030',
+      space: 'space060',
+    },
+    labels: {
+      stylePreset: 'sliderLabels',
+      typePreset: 'label020',
+      space: 'space030',
+    },
+  },
   grid: {
     maxWidth: 1920,
     columns: 12,

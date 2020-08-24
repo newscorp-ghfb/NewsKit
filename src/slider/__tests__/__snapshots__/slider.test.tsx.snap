@@ -80,10 +80,10 @@ exports[`slider labels should be rendered in horisontal slider with labelContain
 exports[`slider labels should be rendered in vertical slider with labelContainer and LabelPosition.After 1`] = `
 <DocumentFragment>
   .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   height: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -107,7 +107,6 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
 }
 
 .emotion-1 {
-  width: 100%;
   height: 100%;
   margin-left: 12px;
   padding: calc(32px / 2) 0;
@@ -157,10 +156,10 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
 exports[`slider labels should be rendered in vertical slider with labelContainer and LabelPosition.Before 1`] = `
 <DocumentFragment>
   .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   height: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -184,7 +183,6 @@ exports[`slider labels should be rendered in vertical slider with labelContainer
 }
 
 .emotion-1 {
-  width: 100%;
   height: 100%;
   margin-right: 12px;
   padding: calc(32px / 2) 0;
@@ -305,7 +303,23 @@ exports[`slider labels should render custom component min, max labels 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-right: 8px;
+  margin-right: 12px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-1 {
@@ -317,7 +331,23 @@ exports[`slider labels should render custom component min, max labels 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-left: 8px;
+  margin-left: 12px;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 <div
@@ -384,7 +414,23 @@ exports[`slider labels should render horizontal labels 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #535353;
-  margin-right: 8px;
+  margin-right: 12px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-0 svg {
@@ -411,7 +457,23 @@ exports[`slider labels should render horizontal labels 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #535353;
-  margin-left: 8px;
+  margin-left: 12px;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-1 svg {
@@ -488,7 +550,23 @@ exports[`slider labels should render max label 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #535353;
-  margin-left: 8px;
+  margin-left: 12px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-0 svg {
@@ -559,7 +637,23 @@ exports[`slider labels should render min label 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #535353;
-  margin-right: 8px;
+  margin-right: 12px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-0 svg {
@@ -596,10 +690,10 @@ exports[`slider labels should render min label 1`] = `
 exports[`slider labels should render vertical labels 1`] = `
 <DocumentFragment>
   .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   height: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -629,7 +723,23 @@ exports[`slider labels should render vertical labels 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #535353;
-  margin-top: 8px;
+  margin-top: 12px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-0 svg {
@@ -656,7 +766,23 @@ exports[`slider labels should render vertical labels 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #535353;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-1 svg {
@@ -812,21 +938,40 @@ exports[`slider react-range Range function props renderThumb should render defau
 <DocumentFragment>
   .emotion-0 {
   font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  background-color: red;
-  border-radius: borderRadiusRounded020;
+  color: #0a68c1;
   top: -32px;
   position: absolute;
   background-color: transparent;
   white-space: nowrap;
   width: 100%;
   text-align: center;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-0:disabled {
+  color: #9c9c9c;
 }
 
 <div
@@ -994,14 +1139,14 @@ exports[`slider react-range Range function props renderThumb should render range
 
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #535353;
+  color: #0a68c1;
   top: -32px;
   position: absolute;
   background-color: transparent;
@@ -1010,17 +1155,23 @@ exports[`slider react-range Range function props renderThumb should render range
   text-align: center;
 }
 
-.emotion-0 svg {
-  fill: #535353;
-  color: #535353;
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
 }
 
 .emotion-0:disabled {
-  color: #9c9c9c;
-}
-
-.emotion-0:disabled svg {
-  fill: #9c9c9c;
   color: #9c9c9c;
 }
 
@@ -1140,15 +1291,15 @@ exports[`slider react-range Range function props renderThumb should render verti
 
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #535353;
-  right: -40px;
+  color: #0a68c1;
+  right: -32px;
   position: absolute;
   background-color: transparent;
   white-space: nowrap;
@@ -1156,17 +1307,23 @@ exports[`slider react-range Range function props renderThumb should render verti
   text-align: center;
 }
 
-.emotion-0 svg {
-  fill: #535353;
-  color: #535353;
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
 }
 
 .emotion-0:disabled {
-  color: #9c9c9c;
-}
-
-.emotion-0:disabled svg {
-  fill: #9c9c9c;
   color: #9c9c9c;
 }
 

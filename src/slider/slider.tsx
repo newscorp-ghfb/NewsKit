@@ -12,6 +12,7 @@ import {
 import {ThumbLabelWrapper} from './thumb-label-wrapper';
 import {renderLabel, getTrackBackgroundStyle} from './utils';
 import {useTheme} from '../theme';
+import {getToken} from '../utils/get-token';
 
 const labelFlowMap = [
   // horizontal
@@ -46,18 +47,23 @@ export const Slider: React.FC<SliderProps> = ({
   labelPosition = LabelPosition.Inline,
   thumbLabel,
   dataTestId = 'slider',
-  sliderTrackStylePreset,
-  sliderIndicatorTrackStylePreset,
-  sliderThumbStylePreset,
-  sliderThumbLabelStylePreset,
-  sliderLabelsStylePreset,
-  trackSize,
-  thumbSize,
-  labelStackSpace,
+  overrides = {},
   renderTrack,
   renderThumb,
 }) => {
   const theme = useTheme();
+  const sliderTrackToken = getToken(
+    {theme, overrides},
+    'slider.track',
+    'track',
+    'stylePreset',
+  );
+  const sliderIndicatorToken = getToken(
+    {theme, overrides},
+    'slider.indicator',
+    'indicator',
+    'stylePreset',
+  );
 
   const renderTrackFn =
     renderTrack ||
@@ -73,20 +79,18 @@ export const Slider: React.FC<SliderProps> = ({
         aria-orientation={vertical ? 'vertical' : 'horizontal'}
         style={getTrackBackgroundStyle(
           theme,
-          sliderTrackStylePreset,
-          sliderIndicatorTrackStylePreset,
+          sliderTrackToken,
+          sliderIndicatorToken,
           values,
           min,
           max,
           vertical,
         )}
-        stylePreset={sliderTrackStylePreset}
-        trackSize={trackSize}
-        thumbSize={thumbSize}
         data-testid={`${dataTestId}-track`}
         onMouseDown={p.onMouseDown}
         onTouchStart={p.onTouchStart}
         onKeyDown={onKeyDown}
+        overrides={overrides}
       >
         {children}
       </StyledTrack>
@@ -101,11 +105,10 @@ export const Slider: React.FC<SliderProps> = ({
         aria-label={ariaLabel}
         aria-valuetext={ariaValueText}
         aria-describedby={ariaDescribedBy}
-        stylePreset={sliderThumbStylePreset}
-        thumbSize={thumbSize}
         values={values}
         isDragged={isDragged}
         data-testid={`${dataTestId}-thumb`}
+        overrides={overrides}
       >
         <ThumbLabelWrapper
           values={values}
@@ -113,7 +116,7 @@ export const Slider: React.FC<SliderProps> = ({
           isDragged={isDragged}
           thumbLabel={thumbLabel}
           vertical={vertical}
-          stylePreset={sliderThumbLabelStylePreset}
+          overrides={overrides}
         />
       </StyledThumb>
     ));
@@ -121,13 +124,12 @@ export const Slider: React.FC<SliderProps> = ({
   const minimumLabel = minLabel && (
     <StyledSliderLabel
       labelPosition={labelPosition}
-      stylePreset={sliderLabelsStylePreset}
-      thumbSize={thumbSize}
       disabled={disabled}
       vertical={vertical}
       labelType="min"
       data-testid="min-label"
       isText={typeof minLabel === 'string'}
+      overrides={overrides}
     >
       {renderLabel(minLabel)}
     </StyledSliderLabel>
@@ -136,13 +138,12 @@ export const Slider: React.FC<SliderProps> = ({
   const maximumLabel = maxLabel && (
     <StyledSliderLabel
       labelPosition={labelPosition}
-      stylePreset={sliderLabelsStylePreset}
-      thumbSize={thumbSize}
       disabled={disabled}
       vertical={vertical}
       labelType="max"
       data-testid="max-label"
       isText={typeof maxLabel === 'string'}
+      overrides={overrides}
     >
       {renderLabel(maxLabel)}
     </StyledSliderLabel>
@@ -169,9 +170,8 @@ export const Slider: React.FC<SliderProps> = ({
   ) : (
     <LabelContainer
       labelPosition={labelPosition}
-      labelStackSpace={labelStackSpace}
-      thumbSize={thumbSize}
       vertical={vertical}
+      overrides={overrides}
     >
       <Stack
         flow={labelFlowMap[vertical ? 1 : 0][labelPosition]}
@@ -187,6 +187,7 @@ export const Slider: React.FC<SliderProps> = ({
   return (
     <StackContainer
       vertical={vertical}
+      inline={vertical}
       flow={vertical ? Flow.VerticalCenter : Flow.HorizontalCenter}
       stackDistribution={StackDistribution.Center}
       flowReverse={vertical}

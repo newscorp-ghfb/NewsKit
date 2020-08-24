@@ -926,7 +926,23 @@ exports[`Radio Player default player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-right: 8px;
+  margin-right: 12px;
+}
+
+.emotion-58::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-58::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-57 {
@@ -1079,7 +1095,23 @@ exports[`Radio Player default player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-left: 8px;
+  margin-left: 12px;
+}
+
+.emotion-66::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-66::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-68 {
@@ -1215,49 +1247,6 @@ exports[`Radio Player default player 1`] = `
   width: 100%;
 }
 
-.emotion-76 {
-  background-color: #ffffff;
-  border-color: #0a68c1;
-  border-width: 1px;
-  border-radius: 50%;
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  border-style: solid;
-  height: 16px;
-  width: 16px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.emotion-76 svg {
-  fill: #ffffff;
-  color: #ffffff;
-}
-
-.emotion-76:active:not(:disabled) {
-  background-color: #e6f4ff;
-}
-
-.emotion-76:disabled {
-  background-color: #e4e4e4;
-  border-color: none;
-  border-style: none;
-  border-width: none;
-  box-shadow: none;
-}
-
-.emotion-76:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
 .emotion-80 {
   width: 100%;
   margin-top: 12px;
@@ -1299,18 +1288,20 @@ exports[`Radio Player default player 1`] = `
   color: #535353;
 }
 
-.emotion-78 svg {
-  fill: #535353;
-  color: #535353;
+.emotion-78::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-78:disabled {
-  color: #9c9c9c;
-}
-
-.emotion-78:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-78::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 <section
@@ -1786,7 +1777,7 @@ exports[`Radio Player default player 1`] = `
                 aria-valuemin="0"
                 aria-valuenow="0"
                 aria-valuetext="Playback time: 0 seconds of 0 seconds"
-                class="emotion-76"
+                class="emotion-59"
                 data-testid="audio-slider-thumb"
                 draggable="false"
                 role="slider"
@@ -2598,7 +2589,23 @@ exports[`Radio Player live player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-right: 8px;
+  margin-right: 12px;
+}
+
+.emotion-74::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-74::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-73 {
@@ -2751,7 +2758,23 @@ exports[`Radio Player live player 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-left: 8px;
+  margin-left: 12px;
+}
+
+.emotion-82::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-82::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-84 {
@@ -4672,7 +4695,23 @@ exports[`Radio Player player with popout link 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-right: 8px;
+  margin-right: 12px;
+}
+
+.emotion-74::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-74::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-73 {
@@ -4825,7 +4864,23 @@ exports[`Radio Player player with popout link 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-left: 8px;
+  margin-left: 12px;
+}
+
+.emotion-82::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-82::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-84 {
@@ -4961,49 +5016,6 @@ exports[`Radio Player player with popout link 1`] = `
   width: 100%;
 }
 
-.emotion-92 {
-  background-color: #ffffff;
-  border-color: #0a68c1;
-  border-width: 1px;
-  border-radius: 50%;
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  border-style: solid;
-  height: 16px;
-  width: 16px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.emotion-92 svg {
-  fill: #ffffff;
-  color: #ffffff;
-}
-
-.emotion-92:active:not(:disabled) {
-  background-color: #e6f4ff;
-}
-
-.emotion-92:disabled {
-  background-color: #e4e4e4;
-  border-color: none;
-  border-style: none;
-  border-width: none;
-  box-shadow: none;
-}
-
-.emotion-92:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
 .emotion-96 {
   width: 100%;
   margin-top: 12px;
@@ -5045,18 +5057,20 @@ exports[`Radio Player player with popout link 1`] = `
   color: #535353;
 }
 
-.emotion-94 svg {
-  fill: #535353;
-  color: #535353;
+.emotion-94::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-94:disabled {
-  color: #9c9c9c;
-}
-
-.emotion-94:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-94::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-10 {
@@ -5946,7 +5960,7 @@ exports[`Radio Player player with popout link 1`] = `
                 aria-valuemin="0"
                 aria-valuenow="0"
                 aria-valuetext="Playback time: 0 seconds of 0 seconds"
-                class="emotion-92"
+                class="emotion-75"
                 data-testid="audio-slider-thumb"
                 draggable="false"
                 role="slider"
@@ -6909,7 +6923,23 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-right: 8px;
+  margin-right: 12px;
+}
+
+.emotion-90::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-90::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-89 {
@@ -7062,7 +7092,23 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  margin-left: 8px;
+  margin-left: 12px;
+}
+
+.emotion-98::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-98::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-100 {
@@ -7198,49 +7244,6 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   width: 100%;
 }
 
-.emotion-108 {
-  background-color: #ffffff;
-  border-color: #0a68c1;
-  border-width: 1px;
-  border-radius: 50%;
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  border-style: solid;
-  height: 16px;
-  width: 16px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.emotion-108 svg {
-  fill: #ffffff;
-  color: #ffffff;
-}
-
-.emotion-108:active:not(:disabled) {
-  background-color: #e6f4ff;
-}
-
-.emotion-108:disabled {
-  background-color: #e4e4e4;
-  border-color: none;
-  border-style: none;
-  border-width: none;
-  box-shadow: none;
-}
-
-.emotion-108:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
 .emotion-112 {
   width: 100%;
   margin-top: 12px;
@@ -7282,18 +7285,20 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   color: #535353;
 }
 
-.emotion-110 svg {
-  fill: #535353;
-  color: #535353;
+.emotion-110::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-110:disabled {
-  color: #9c9c9c;
-}
-
-.emotion-110:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+.emotion-110::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
 }
 
 .emotion-18 {
@@ -8379,7 +8384,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                 aria-valuemin="0"
                 aria-valuenow="0"
                 aria-valuetext="Playback time: 0 seconds of 0 seconds"
-                class="emotion-108"
+                class="emotion-91"
                 data-testid="audio-slider-thumb"
                 draggable="false"
                 role="slider"

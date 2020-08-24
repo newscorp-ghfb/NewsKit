@@ -1,7 +1,6 @@
 import React from 'react';
 import {getTrackBackground, Direction} from 'react-range';
 import {Theme} from '../theme';
-import {trackStylePresetDefault, indicatorStylePresetDefault} from './styled';
 import {getSingleStylePreset} from '../utils/style-preset';
 
 export const renderLabel = (Label: string | React.ComponentType) => {
@@ -16,8 +15,8 @@ export const getFillColor = (theme: Theme, fallback: string, token?: string) =>
 
 export const getTrackBackgroundStyle = (
   theme: Theme,
-  trackStylePreset: string | undefined,
-  indicatorStylePreset: string | undefined,
+  sliderTrackToken: string,
+  indicatorFillToken: string,
   values: number[],
   min: number,
   max: number,
@@ -27,15 +26,14 @@ export const getTrackBackgroundStyle = (
     theme,
     'base',
     'backgroundColor',
-    trackStylePresetDefault,
-    trackStylePreset,
+    sliderTrackToken,
   );
+
   const indicatorFill = getSingleStylePreset(
     theme,
     'base',
     'backgroundColor',
-    indicatorStylePresetDefault,
-    indicatorStylePreset,
+    indicatorFillToken,
   );
   return {
     background: getTrackBackground({

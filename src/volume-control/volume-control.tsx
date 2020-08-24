@@ -55,7 +55,10 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
   trackSize,
   thumbSize,
   sliderLabelsStylePreset: volumeControlButtonStylePreset,
-  ...presets
+  sliderIndicatorTrackStylePreset,
+  sliderThumbStylePreset,
+  sliderThumbLabelStylePreset,
+  sliderTrackStylePreset,
 }) => {
   const [unMutedVolume, setUnMutedVolume] = useState(volume);
   const srOnlyVolumeControl = getBuiId();
@@ -115,13 +118,26 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
         ariaLabel="Volume Control"
         ariaValueText={`volume level ${volumeArr[0] * 10} of 10`}
         dataTestId="volume-control"
-        trackSize={trackSize}
-        thumbSize={thumbSize}
         minLabel={minLabel}
         maxLabel={maxLabel}
         onKeyDown={toggleMuteWithKeys}
         ariaDescribedBy={srOnlyVolumeControl}
-        {...presets}
+        overrides={{
+          track: {
+            stylePreset: sliderTrackStylePreset,
+            size: trackSize,
+          },
+          indicator: {
+            stylePreset: sliderIndicatorTrackStylePreset,
+          },
+          thumb: {
+            stylePreset: sliderThumbStylePreset,
+            size: thumbSize,
+          },
+          thumbLabel: {
+            stylePreset: sliderThumbLabelStylePreset,
+          },
+        }}
       />
       <ScreenReaderOnly id={srOnlyVolumeControl}>
         Use the arrow keys to adjust volume

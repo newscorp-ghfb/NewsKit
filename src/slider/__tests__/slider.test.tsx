@@ -106,7 +106,10 @@ describe('slider', () => {
       let onFinalChange: jest.Mock;
       let rangeProps: any;
 
-      const renderRange = (props: Partial<SliderProps> = {}, theme?: Theme) => {
+      const renderSlider = (
+        props: Partial<SliderProps> = {},
+        theme?: Theme,
+      ) => {
         mockRange.mockClear();
 
         onChange = jest.fn();
@@ -129,7 +132,7 @@ describe('slider', () => {
         [[rangeProps]] = mockRange.mock.calls;
       };
 
-      beforeEach(() => renderRange());
+      beforeEach(() => renderSlider());
 
       test('onChange should call the passed onChange function', () => {
         rangeProps.onChange([22.5, 27.5]);
@@ -155,7 +158,7 @@ describe('slider', () => {
         });
 
         it('should render custom aria-label slider thumb', () => {
-          renderRange({
+          renderSlider({
             ariaLabel: 'my custom aria label',
           });
           const fragment = renderToFragmentWithTheme(rangeProps.renderThumb, {
@@ -170,7 +173,7 @@ describe('slider', () => {
         });
 
         it('should render vertical slider thumb', () => {
-          renderRange({
+          renderSlider({
             vertical: true,
             thumbLabel: true,
           });
@@ -203,8 +206,12 @@ describe('slider', () => {
           const fragment = renderToFragmentWithTheme(
             StyledThumbValue,
             {
-              stylePreset: 'presetWithBorderRadius',
-              thumbSize: 'sizing070',
+              overrides: {
+                thumb: {
+                  stylePreset: 'presetWithBorderRadius',
+                  size: 'sizing070',
+                },
+              },
               children: 'test',
             },
             customTheme,
@@ -225,7 +232,7 @@ describe('slider', () => {
         });
 
         it('should render multiple index slider thumb', () => {
-          renderRange({
+          renderSlider({
             values: [10, 20, 30],
           });
 
@@ -241,7 +248,7 @@ describe('slider', () => {
         });
 
         it('should render range label slider thumb', () => {
-          renderRange({
+          renderSlider({
             thumbLabel: true,
           });
 
@@ -258,7 +265,7 @@ describe('slider', () => {
 
         it('should render custom label component slider thumb', () => {
           const thumbLabel = jest.fn().mockReturnValue(<span />);
-          renderRange({
+          renderSlider({
             thumbLabel,
             values: [10, 20, 30],
           });
@@ -277,6 +284,7 @@ describe('slider', () => {
               children: 20,
               index: 1,
               isDragged: true,
+              overrides: {},
               values: [10, 20, 30],
               vertical: undefined,
             },
@@ -299,7 +307,7 @@ describe('slider', () => {
         });
 
         it('should render disabled slider track', () => {
-          renderRange({
+          renderSlider({
             disabled: true,
           });
 
@@ -315,7 +323,7 @@ describe('slider', () => {
         });
 
         it('should render disabled slider track', () => {
-          renderRange({
+          renderSlider({
             disabled: true,
           });
 
@@ -343,7 +351,7 @@ describe('slider', () => {
         });
 
         it('should render vertical slider track', () => {
-          renderRange({
+          renderSlider({
             vertical: true,
           });
 
@@ -359,7 +367,7 @@ describe('slider', () => {
         });
 
         it('should render multi-thumb slider track', () => {
-          renderRange({
+          renderSlider({
             values: [10, 20],
           });
 

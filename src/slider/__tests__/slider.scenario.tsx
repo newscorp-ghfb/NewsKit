@@ -32,6 +32,15 @@ const myCustomTheme = createTheme({
           borderStyle: 'solid',
         },
       },
+      customThumbLabelStylePreset: {
+        base: {
+          borderColor: 'black',
+          borderWidth: '1px',
+          borderRadius: '999px',
+          borderStyle: 'dashed',
+          color: 'green',
+        },
+      },
       customLabelStylePreset: {
         base: {
           borderColor: 'purple',
@@ -103,13 +112,18 @@ class CustomMaxLabel extends React.Component {
   }
 }
 
-const Container = styled.div`
+const FlexContainer = styled.div`
+  margin: 48px 0;
+  display: flex;
+`;
+
+const ContainerWhitBorder = styled.div`
   border: solid 1px red;
   margin: 48px 0;
   display: flex;
 `;
 
-const VerticalContainer = styled.div`
+const VerticalContainerWithBorder = styled.div`
   border: solid 1px red;
   display: inline-flex;
   height: 300px;
@@ -136,9 +150,9 @@ export default {
       component: () => (
         <React.Fragment>
           <StorybookHeading>1 thumb slider</StorybookHeading>
-          <Container>
+          <ContainerWhitBorder>
             <StatefulSlider values={[50]} max={100} min={0} />
-          </Container>
+          </ContainerWhitBorder>
         </React.Fragment>
       ),
     },
@@ -148,12 +162,12 @@ export default {
       component: () => (
         <React.Fragment>
           <StorybookHeading>2 thumb slider</StorybookHeading>
-          <Container>
+          <ContainerWhitBorder>
             <StatefulSlider values={[30, 60]} max={100} min={0} />
-          </Container>
-          <Container>
+          </ContainerWhitBorder>
+          <ContainerWhitBorder>
             <StatefulSlider values={[0, 100]} max={100} min={0} />
-          </Container>
+          </ContainerWhitBorder>
         </React.Fragment>
       ),
     },
@@ -163,7 +177,7 @@ export default {
       component: () => (
         <React.Fragment>
           <StorybookHeading>with text labels</StorybookHeading>
-          <Container>
+          <ContainerWhitBorder>
             <StatefulSlider
               values={[2.5]}
               max={10}
@@ -171,14 +185,14 @@ export default {
               step={0.5}
               thumbLabel
             />
-          </Container>
-          <Container>
+          </ContainerWhitBorder>
+          <ContainerWhitBorder>
             <StatefulSlider values={[10]} max={20} min={0} minLabel="0" />
-          </Container>
-          <Container>
+          </ContainerWhitBorder>
+          <ContainerWhitBorder>
             <StatefulSlider values={[20]} max={30} min={0} maxLabel="30" />
-          </Container>
-          <Container>
+          </ContainerWhitBorder>
+          <ContainerWhitBorder>
             <StatefulSlider
               values={[30]}
               max={40}
@@ -187,8 +201,8 @@ export default {
               maxLabel="40"
               thumbLabel
             />
-          </Container>
-          <Container>
+          </ContainerWhitBorder>
+          <ContainerWhitBorder>
             <StatefulSlider
               values={[150]}
               max={200}
@@ -197,8 +211,8 @@ export default {
               maxLabel="200"
               labelPosition={LabelPosition.Before}
             />
-          </Container>
-          <Container>
+          </ContainerWhitBorder>
+          <ContainerWhitBorder>
             <StatefulSlider
               values={[150]}
               max={200}
@@ -207,7 +221,7 @@ export default {
               maxLabel="200"
               labelPosition={LabelPosition.After}
             />
-          </Container>
+          </ContainerWhitBorder>
         </React.Fragment>
       ),
     },
@@ -217,23 +231,23 @@ export default {
       component: () => (
         <React.Fragment>
           <StorybookHeading>with custom labels</StorybookHeading>
-          <Container>
+          <ContainerWhitBorder>
             <StatefulSlider
               values={[40]}
               max={50}
               min={0}
               minLabel={CustomMinLabel}
             />
-          </Container>
-          <Container>
+          </ContainerWhitBorder>
+          <ContainerWhitBorder>
             <StatefulSlider
               values={[60]}
               max={70}
               min={0}
               maxLabel={CustomMaxLabel}
             />
-          </Container>
-          <Container>
+          </ContainerWhitBorder>
+          <ContainerWhitBorder>
             <StatefulSlider
               values={[33]}
               max={80}
@@ -242,8 +256,8 @@ export default {
               maxLabel={CustomMaxLabel}
               thumbLabel={CustomThumbLabel}
             />
-          </Container>
-          <Container>
+          </ContainerWhitBorder>
+          <ContainerWhitBorder>
             <StatefulSlider
               values={[80, 90]}
               max={100}
@@ -252,7 +266,7 @@ export default {
               maxLabel={CustomMaxLabel}
               thumbLabel={CustomThumbLabel}
             />
-          </Container>
+          </ContainerWhitBorder>
         </React.Fragment>
       ),
     },
@@ -262,7 +276,7 @@ export default {
       component: () => (
         <React.Fragment>
           <StorybookHeading>Custom style presets</StorybookHeading>
-          <Container>
+          <ContainerWhitBorder>
             <ThemeProvider theme={myCustomTheme}>
               <StatefulSlider
                 values={[50]}
@@ -271,14 +285,32 @@ export default {
                 minLabel="0"
                 maxLabel="100%"
                 thumbLabel
-                trackSize="sizing050"
-                sliderTrackStylePreset="customTrackStylePreset"
-                sliderIndicatorTrackStylePreset="customIndicatorStylePreset"
-                sliderThumbStylePreset="customThumbStylePreset"
-                sliderLabelsStylePreset="customLabelStylePreset"
+                overrides={{
+                  track: {
+                    stylePreset: 'customTrackStylePreset',
+                    size: 'sizing050',
+                  },
+                  indicator: {
+                    stylePreset: 'customIndicatorStylePreset',
+                  },
+                  thumb: {
+                    stylePreset: 'customThumbStylePreset',
+                    size: 'sizing070',
+                  },
+                  thumbLabel: {
+                    stylePreset: 'customThumbLabelStylePreset',
+                    typePreset: 'label040',
+                    space: 'space060',
+                  },
+                  labels: {
+                    stylePreset: 'customLabelStylePreset',
+                    typePreset: 'label030',
+                    space: 'space040',
+                  },
+                }}
               />
             </ThemeProvider>
-          </Container>
+          </ContainerWhitBorder>
         </React.Fragment>
       ),
     },
@@ -288,7 +320,7 @@ export default {
       component: () => (
         <React.Fragment>
           <StorybookHeading>Custom renderers</StorybookHeading>
-          <Container>
+          <ContainerWhitBorder>
             <ThemeProvider theme={myCustomTheme}>
               <StatefulSlider
                 values={[40]}
@@ -297,8 +329,8 @@ export default {
                 renderTrack={renderCustomTrack}
               />
             </ThemeProvider>
-          </Container>
-          <Container>
+          </ContainerWhitBorder>
+          <ContainerWhitBorder>
             <ThemeProvider theme={myCustomTheme}>
               <StatefulSlider
                 values={[50]}
@@ -307,8 +339,8 @@ export default {
                 renderThumb={renderCustomThumb}
               />
             </ThemeProvider>
-          </Container>
-          <Container>
+          </ContainerWhitBorder>
+          <ContainerWhitBorder>
             <ThemeProvider theme={myCustomTheme}>
               <StatefulSlider
                 values={[60]}
@@ -318,7 +350,7 @@ export default {
                 renderThumb={renderCustomThumb}
               />
             </ThemeProvider>
-          </Container>
+          </ContainerWhitBorder>
         </React.Fragment>
       ),
     },
@@ -327,87 +359,95 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <VerticalContainer>
-            <StatefulSlider values={[20]} max={50} min={0} vertical />
-          </VerticalContainer>
-          <VerticalContainer>
-            <StatefulSlider values={[0, 50]} max={50} min={0} vertical />
-          </VerticalContainer>
-          <VerticalContainer>
-            <StatefulSlider
-              values={[50]}
-              max={100}
-              min={0}
-              minLabel="0"
-              maxLabel="%"
-              vertical
-              thumbLabel
-            />
-          </VerticalContainer>
-          <VerticalContainer>
-            <StatefulSlider
-              values={[50]}
-              max={100}
-              min={0}
-              minLabel="0%"
-              maxLabel="100%"
-              vertical
-              thumbLabel
-            />
-          </VerticalContainer>
-          <VerticalContainer>
-            <StatefulSlider
-              values={[50]}
-              max={100}
-              min={0}
-              minLabel={CustomMinLabel}
-              maxLabel={CustomMaxLabel}
-              vertical
-            />
-          </VerticalContainer>
-          <VerticalContainer>
-            <StatefulSlider
-              values={[50]}
-              max={100}
-              min={0}
-              minLabel={CustomMinLabel}
-              maxLabel={CustomMaxLabel}
-              thumbLabel={CustomThumbLabel}
-              vertical
-            />
-          </VerticalContainer>
+          <StorybookHeading>Vertical Slider examples</StorybookHeading>
+          <FlexContainer>
+            <VerticalContainerWithBorder>
+              <StatefulSlider values={[20]} max={50} min={0} vertical />
+            </VerticalContainerWithBorder>
+            <VerticalContainerWithBorder>
+              <StatefulSlider values={[0, 50]} max={50} min={0} vertical />
+            </VerticalContainerWithBorder>
+            <VerticalContainerWithBorder>
+              <StatefulSlider
+                values={[50]}
+                max={100}
+                min={0}
+                minLabel="0"
+                maxLabel="%"
+                vertical
+                thumbLabel
+              />
+            </VerticalContainerWithBorder>
+            <VerticalContainerWithBorder>
+              <StatefulSlider
+                values={[50]}
+                max={100}
+                min={0}
+                minLabel="0%"
+                maxLabel="100%"
+                vertical
+                thumbLabel
+              />
+            </VerticalContainerWithBorder>
+            <VerticalContainerWithBorder>
+              <StatefulSlider
+                values={[50]}
+                max={100}
+                min={0}
+                minLabel={CustomMinLabel}
+                maxLabel={CustomMaxLabel}
+                vertical
+              />
+            </VerticalContainerWithBorder>
+            <VerticalContainerWithBorder>
+              <StatefulSlider
+                values={[50]}
+                max={100}
+                min={0}
+                minLabel={CustomMinLabel}
+                maxLabel={CustomMaxLabel}
+                thumbLabel={CustomThumbLabel}
+                vertical
+              />
+            </VerticalContainerWithBorder>
+          </FlexContainer>
         </React.Fragment>
       ),
     },
     {
-      name: 'slider-with-custom-renders-vertical',
+      name: 'slider-with-labels-before-and-after',
       type: 'story',
       component: () => (
         <React.Fragment>
-          <VerticalContainer>
-            <StatefulSlider
-              values={[50]}
-              max={100}
-              min={0}
-              minLabel="0%"
-              maxLabel="100%"
-              vertical
-              thumbLabel
-              labelPosition={LabelPosition.Before}
-            />
-          </VerticalContainer>
-          <VerticalContainer>
-            <StatefulSlider
-              values={[50]}
-              max={100}
-              min={0}
-              minLabel="0%"
-              maxLabel="100%"
-              vertical
-              thumbLabel
-              labelPosition={LabelPosition.After}
-            />
-          </VerticalContainer>
+          <StorybookHeading>
+            Vertical Slider with labels before and after
+          </StorybookHeading>
+          <FlexContainer>
+            <VerticalContainerWithBorder>
+              <StatefulSlider
+                values={[50]}
+                max={100}
+                min={0}
+                minLabel="0%"
+                maxLabel="100%"
+                vertical
+                thumbLabel
+                labelPosition={LabelPosition.Before}
+              />
+            </VerticalContainerWithBorder>
+            <VerticalContainerWithBorder>
+              <StatefulSlider
+                values={[50]}
+                max={100}
+                min={0}
+                minLabel="0%"
+                maxLabel="100%"
+                vertical
+                thumbLabel
+                labelPosition={LabelPosition.After}
+              />
+            </VerticalContainerWithBorder>
+          </FlexContainer>
         </React.Fragment>
       ),
     },
