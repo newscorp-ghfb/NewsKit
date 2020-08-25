@@ -106,7 +106,7 @@ export const Prop: React.FC<PropProps> = ({
     <PropsRow>
       <PropName>{name}</PropName>
       <PropColon />
-      <PropType>{type}</PropType>
+      {type && <PropType>{type}</PropType>}
       {typeof defaultVal !== 'undefined' && (
         <DefaultValue value={defaultVal} type={type} enumObj={enumObj} />
       )}
