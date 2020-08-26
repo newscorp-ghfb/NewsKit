@@ -245,48 +245,16 @@ typePresets.code020 = {
   fontWeight: '{{fonts.fontWeight020}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-// Flag
-typePresets.flag010 = typePresets.label010;
-typePresets.flag020 = typePresets.label020;
-// Tag
-typePresets.tag010 = typePresets.label010;
-typePresets.tag020 = typePresets.label020;
-typePresets.tag030 = typePresets.label030;
-
-typePresets.font500 = {
-  fontFamily: '{{fonts.fontFamily1.fontFamily}}',
-  fontSize: '{{fonts.fontSize050}}',
-  lineHeight: getLineHeight('fontSize050', 'fontLineHeight040'),
-  fontWeight: '{{fonts.fontWeight020}}',
-  letterSpacing: '{{fonts.fontLetterSpacing030}}',
-};
-
 // Button
-
-typePresets.buttonSmall = {
+typePresets.button010 = {
   ...typePresets.label010,
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.buttonMedium = {
+typePresets.button020 = {
   ...typePresets.label020,
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.buttonLarge = {
+typePresets.button030 = {
   ...typePresets.label030,
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
-};
-
-// Headline
-typePresets.headline100 = typePresets.heading050;
-typePresets.headline200 = typePresets.heading050;
-
-// Share Bar
-
-typePresets.shareBarLabel = {
-  ...typePresets.label020,
-};
-
-// Standfirst
-typePresets.standfirst = {
-  ...typePresets.subhead010,
 };

@@ -196,7 +196,7 @@ describe('ShareBar', () => {
       vertical: true,
       overrides: {
         label: {
-          typePreset: 'tag020',
+          typePreset: 'label020',
         },
       },
     } as ShareBarProps);

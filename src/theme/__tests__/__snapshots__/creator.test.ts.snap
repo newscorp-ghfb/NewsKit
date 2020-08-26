@@ -174,7 +174,7 @@ Object {
         "paddingPreset": "spaceInset040Squish",
         "space": "sizing020",
         "stylePreset": "buttonDefault",
-        "typePreset": "buttonLarge",
+        "typePreset": "button030",
       },
       "medium": Object {
         "iconSize": "iconSize020",
@@ -183,7 +183,7 @@ Object {
         "paddingPreset": "spaceInset030Squish",
         "space": "sizing020",
         "stylePreset": "buttonDefault",
-        "typePreset": "buttonMedium",
+        "typePreset": "button020",
       },
       "small": Object {
         "iconSize": "iconSize010",
@@ -192,7 +192,7 @@ Object {
         "paddingPreset": "spaceInset020Squish",
         "space": "sizing020",
         "stylePreset": "buttonDefault",
-        "typePreset": "buttonSmall",
+        "typePreset": "button010",
       },
     },
     "byline": Object {
@@ -283,7 +283,7 @@ Object {
         "paddingPreset": "spaceInset020Squish",
         "space": "sizing010",
         "stylePreset": "flagDefault",
-        "typePreset": "flag020",
+        "typePreset": "label020",
       },
       "small": Object {
         "iconSize": "iconSize010",
@@ -291,7 +291,7 @@ Object {
         "paddingPreset": "spaceInset010Squish",
         "space": "sizing010",
         "stylePreset": "flagDefault",
-        "typePreset": "flag010",
+        "typePreset": "label010",
       },
     },
     "grid": Object {
@@ -497,7 +497,7 @@ Object {
         "paddingPreset": "spaceInset020Squish",
         "space": "sizing010",
         "stylePreset": "tagDefault",
-        "typePreset": "tag030",
+        "typePreset": "label030",
       },
       "medium": Object {
         "iconSize": "iconSize010",
@@ -505,7 +505,7 @@ Object {
         "paddingPreset": "spaceInset020Squish",
         "space": "sizing010",
         "stylePreset": "tagDefault",
-        "typePreset": "tag020",
+        "typePreset": "label020",
       },
       "small": Object {
         "iconSize": "iconSize010",
@@ -513,7 +513,7 @@ Object {
         "paddingPreset": "spaceInset010Squish",
         "space": "sizing010",
         "stylePreset": "tagDefault",
-        "typePreset": "tag010",
+        "typePreset": "label010",
       },
     },
     "titleBar": Object {
@@ -2187,23 +2187,23 @@ Object {
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": [Function],
     },
-    "buttonLarge": Object {
+    "button010": Object {
       "fontFamily": "{{fonts.fontFamily2.fontFamily}}",
-      "fontSize": "{{fonts.fontSize030}}",
+      "fontSize": "{{fonts.fontSize010}}",
       "fontWeight": "{{fonts.fontWeight030}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": [Function],
     },
-    "buttonMedium": Object {
+    "button020": Object {
       "fontFamily": "{{fonts.fontFamily2.fontFamily}}",
       "fontSize": "{{fonts.fontSize020}}",
       "fontWeight": "{{fonts.fontWeight030}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": [Function],
     },
-    "buttonSmall": Object {
+    "button030": Object {
       "fontFamily": "{{fonts.fontFamily2.fontFamily}}",
-      "fontSize": "{{fonts.fontSize010}}",
+      "fontSize": "{{fonts.fontSize030}}",
       "fontWeight": "{{fonts.fontWeight030}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": [Function],
@@ -2254,27 +2254,6 @@ Object {
       "fontFamily": "{{fonts.fontFamily1.fontFamily}}",
       "fontSize": "{{fonts.fontSize160}}",
       "fontWeight": "{{fonts.fontWeight040}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": [Function],
-    },
-    "flag010": Object {
-      "fontFamily": "{{fonts.fontFamily2.fontFamily}}",
-      "fontSize": "{{fonts.fontSize010}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": [Function],
-    },
-    "flag020": Object {
-      "fontFamily": "{{fonts.fontFamily2.fontFamily}}",
-      "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": [Function],
-    },
-    "font500": Object {
-      "fontFamily": "{{fonts.fontFamily1.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": [Function],
     },
@@ -2341,20 +2320,6 @@ Object {
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": [Function],
     },
-    "headline100": Object {
-      "fontFamily": "{{fonts.fontFamily1.fontFamily}}",
-      "fontSize": "{{fonts.fontSize090}}",
-      "fontWeight": "{{fonts.fontWeight040}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": [Function],
-    },
-    "headline200": Object {
-      "fontFamily": "{{fonts.fontFamily1.fontFamily}}",
-      "fontSize": "{{fonts.fontSize090}}",
-      "fontWeight": "{{fonts.fontWeight040}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": [Function],
-    },
     "label010": Object {
       "fontFamily": "{{fonts.fontFamily2.fontFamily}}",
       "fontSize": "{{fonts.fontSize010}}",
@@ -2413,20 +2378,6 @@ Object {
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": [Function],
     },
-    "shareBarLabel": Object {
-      "fontFamily": "{{fonts.fontFamily2.fontFamily}}",
-      "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": [Function],
-    },
-    "standfirst": Object {
-      "fontFamily": "{{fonts.fontFamily2.fontFamily}}",
-      "fontSize": "{{fonts.fontSize030}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": [Function],
-    },
     "subhead010": Object {
       "fontFamily": "{{fonts.fontFamily2.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
@@ -2465,27 +2416,6 @@ Object {
     "subhead050": Object {
       "fontFamily": "{{fonts.fontFamily2.fontFamily}}",
       "fontSize": "{{fonts.fontSize090}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": [Function],
-    },
-    "tag010": Object {
-      "fontFamily": "{{fonts.fontFamily2.fontFamily}}",
-      "fontSize": "{{fonts.fontSize010}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": [Function],
-    },
-    "tag020": Object {
-      "fontFamily": "{{fonts.fontFamily2.fontFamily}}",
-      "fontSize": "{{fonts.fontSize020}}",
-      "fontWeight": "{{fonts.fontWeight030}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": [Function],
-    },
-    "tag030": Object {
-      "fontFamily": "{{fonts.fontFamily2.fontFamily}}",
-      "fontSize": "{{fonts.fontSize030}}",
       "fontWeight": "{{fonts.fontWeight030}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": [Function],

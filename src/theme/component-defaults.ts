@@ -14,7 +14,7 @@ export const componentDefaults = {
   },
   button: {
     small: {
-      typePreset: 'buttonSmall',
+      typePreset: 'button010',
       stylePreset: 'buttonDefault',
       paddingPreset: 'spaceInset020Squish',
       minWidth: 'sizing090',
@@ -23,7 +23,7 @@ export const componentDefaults = {
       space: 'sizing020',
     },
     medium: {
-      typePreset: 'buttonMedium',
+      typePreset: 'button020',
       stylePreset: 'buttonDefault',
       paddingPreset: 'spaceInset030Squish',
       minWidth: 'sizing100',
@@ -32,7 +32,7 @@ export const componentDefaults = {
       space: 'sizing020',
     },
     large: {
-      typePreset: 'buttonLarge',
+      typePreset: 'button030',
       stylePreset: 'buttonDefault',
       paddingPreset: 'spaceInset040Squish',
       minWidth: 'sizing110',
@@ -94,6 +94,87 @@ export const componentDefaults = {
       },
     },
   },
+  dateTime: {
+    stylePreset: 'dateTime',
+    typePreset: 'meta020',
+    prefix: {
+      stylePreset: 'dateTimePrefix',
+      typePreset: 'meta020',
+    },
+    suffix: {
+      stylePreset: 'dateTimeSuffix',
+      typePreset: 'meta020',
+    },
+  },
+  divider: {
+    stylePreset: 'dividerHorizontal',
+  },
+  flag: {
+    small: {
+      typePreset: 'label010',
+      stylePreset: 'flagDefault',
+      paddingPreset: 'spaceInset010Squish',
+      minHeight: 'sizing050',
+      iconSize: 'iconSize010',
+      space: 'sizing010',
+    },
+    large: {
+      typePreset: 'label020',
+      stylePreset: 'flagDefault',
+      paddingPreset: 'spaceInset020Squish',
+      minHeight: 'sizing060',
+      iconSize: 'iconSize010',
+      space: 'sizing010',
+    },
+  },
+  grid: {
+    maxWidth: 1920,
+    columns: 12,
+    containerMargin: {
+      xs: 16,
+      sm: 16,
+      md: 24,
+      lg: 24,
+    },
+    columnGutters: {
+      xs: 16,
+      sm: 16,
+      md: 24,
+      lg: 24,
+    },
+    rowGutters: {
+      xs: 16,
+      sm: 16,
+      md: 24,
+      lg: 24,
+    },
+  },
+  headline: {
+    heading: {
+      stylePreset: 'headlineContent',
+      typePreset: {
+        xs: 'heading060',
+        sm: 'heading060',
+        md: 'heading070',
+        lg: 'heading080',
+      },
+    },
+    kicker: {
+      stylePreset: 'headlineKicker',
+      typePreset: {
+        xs: 'heading060',
+        sm: 'heading060',
+        md: 'heading070',
+        lg: 'heading080',
+      },
+      spaceInline: {
+        xs: 'space030',
+        sm: 'space030',
+        md: 'space040',
+        lg: 'space040',
+      },
+    },
+  },
   headlineH1: {
     stylePreset: 'headlineH1',
     typePreset: {
@@ -131,32 +212,6 @@ export const componentDefaults = {
     stylePreset: 'headlineH6',
     typePreset: 'subhead010',
   },
-  headline: {
-    heading: {
-      stylePreset: 'headlineContent',
-      typePreset: {
-        xs: 'heading060',
-        sm: 'heading060',
-        md: 'heading070',
-        lg: 'heading080',
-      },
-    },
-    kicker: {
-      stylePreset: 'headlineKicker',
-      typePreset: {
-        xs: 'heading060',
-        sm: 'heading060',
-        md: 'heading070',
-        lg: 'heading080',
-      },
-      spaceInline: {
-        xs: 'space030',
-        sm: 'space030',
-        md: 'space040',
-        lg: 'space040',
-      },
-    },
-  },
   iconButton: {
     small: {
       stylePreset: 'iconButtonDefault',
@@ -177,23 +232,69 @@ export const componentDefaults = {
       height: 'sizing090',
     },
   },
-
-  flag: {
-    small: {
-      typePreset: 'flag010',
-      stylePreset: 'flagDefault',
-      paddingPreset: 'spaceInset010Squish',
-      minHeight: 'sizing050',
-      iconSize: 'iconSize010',
-      space: 'sizing010',
+  image: {
+    stylePreset: 'imageSharp',
+  },
+  link: {
+    stylePreset: 'linkInline',
+    space: 'sizing010',
+    externalIcon: {
+      size: 'iconSize010',
     },
-    large: {
-      typePreset: 'flag020',
-      stylePreset: 'flagDefault',
-      paddingPreset: 'spaceInset020Squish',
-      minHeight: 'sizing060',
-      iconSize: 'iconSize010',
-      space: 'sizing010',
+  },
+  linkStandalone: {
+    stylePreset: 'linkStandalone',
+  },
+  paragraph: {
+    stylePreset: 'paragraph',
+    typePreset: 'body020',
+    dropCap: {
+      stylePreset: 'paragraphDropCap',
+      typePreset: 'display040',
+      space: 'space020',
+    },
+  },
+  shareBar: {
+    label: {
+      typePreset: 'label020',
+      stylePreset: 'shareBarLabel',
+      spaceInline: 'space040',
+      spaceStack: 'space040',
+    },
+    items: {
+      space: 'sizing020',
+    },
+  },
+  slider: {
+    track: {
+      stylePreset: 'sliderTrack',
+      size: 'sizing030',
+    },
+    indicator: {
+      stylePreset: 'sliderIndicator',
+    },
+    thumb: {
+      stylePreset: 'sliderThumb',
+      size: 'sizing060',
+    },
+    thumbLabel: {
+      stylePreset: 'sliderThumbLabel',
+      typePreset: 'label030',
+      space: 'space060',
+    },
+    labels: {
+      stylePreset: 'sliderLabels',
+      typePreset: 'label020',
+      space: 'space030',
+    },
+  },
+  standfirst: {
+    styledText: {
+      stylePreset: 'standfirst',
+      typePreset: {
+        xs: 'subhead020',
+        md: 'subhead030',
+      },
     },
   },
   tab: {
@@ -222,22 +323,9 @@ export const componentDefaults = {
       space: 'sizing020',
     },
   },
-
-  unorderedList: {
-    spaceStack: 'space040',
-    content: {
-      stylePreset: 'unorderedListItemContent',
-      typePreset: 'body010',
-    },
-    marker: {
-      stylePreset: 'unorderedListItemMarker',
-      spaceInline: 'space020',
-      size: 'iconSize005',
-    },
-  },
   tag: {
     small: {
-      typePreset: 'tag010',
+      typePreset: 'label010',
       stylePreset: 'tagDefault',
       paddingPreset: 'spaceInset010Squish',
       minHeight: 'sizing050',
@@ -245,7 +333,7 @@ export const componentDefaults = {
       space: 'sizing010',
     },
     medium: {
-      typePreset: 'tag020',
+      typePreset: 'label020',
       stylePreset: 'tagDefault',
       paddingPreset: 'spaceInset020Squish',
       minHeight: 'sizing060',
@@ -253,7 +341,7 @@ export const componentDefaults = {
       space: 'sizing010',
     },
     large: {
-      typePreset: 'tag030',
+      typePreset: 'label030',
       stylePreset: 'tagDefault',
       paddingPreset: 'spaceInset020Squish',
       minHeight: 'sizing070',
@@ -275,106 +363,16 @@ export const componentDefaults = {
       },
     },
   },
-  shareBar: {
-    label: {
-      typePreset: 'label020',
-      stylePreset: 'shareBarLabel',
-      spaceInline: 'space040',
-      spaceStack: 'space040',
+  unorderedList: {
+    spaceStack: 'space040',
+    content: {
+      stylePreset: 'unorderedListItemContent',
+      typePreset: 'body010',
     },
-    items: {
-      space: 'sizing020',
-    },
-  },
-  divider: {
-    stylePreset: 'dividerHorizontal',
-  },
-  standfirst: {
-    styledText: {
-      stylePreset: 'standfirst',
-      typePreset: {
-        xs: 'subhead020',
-        md: 'subhead030',
-      },
-    },
-  },
-  image: {
-    stylePreset: 'imageSharp',
-  },
-  link: {
-    stylePreset: 'linkInline',
-    space: 'sizing010',
-    externalIcon: {
-      size: 'iconSize010',
-    },
-  },
-  linkStandalone: {
-    stylePreset: 'linkStandalone',
-  },
-  paragraph: {
-    stylePreset: 'paragraph',
-    typePreset: 'body020',
-    dropCap: {
-      stylePreset: 'paragraphDropCap',
-      typePreset: 'display040',
-      space: 'space020',
-    },
-  },
-  dateTime: {
-    stylePreset: 'dateTime',
-    typePreset: 'meta020',
-    prefix: {
-      stylePreset: 'dateTimePrefix',
-      typePreset: 'meta020',
-    },
-    suffix: {
-      stylePreset: 'dateTimeSuffix',
-      typePreset: 'meta020',
-    },
-  },
-  slider: {
-    track: {
-      stylePreset: 'sliderTrack',
-      size: 'sizing030',
-    },
-    indicator: {
-      stylePreset: 'sliderIndicator',
-    },
-    thumb: {
-      stylePreset: 'sliderThumb',
-      size: 'sizing060',
-    },
-    thumbLabel: {
-      stylePreset: 'sliderThumbLabel',
-      typePreset: 'label030',
-      space: 'space060',
-    },
-    labels: {
-      stylePreset: 'sliderLabels',
-      typePreset: 'label020',
-      space: 'space030',
-    },
-  },
-  grid: {
-    maxWidth: 1920,
-    columns: 12,
-    containerMargin: {
-      xs: 16,
-      sm: 16,
-      md: 24,
-      lg: 24,
-    },
-    columnGutters: {
-      xs: 16,
-      sm: 16,
-      md: 24,
-      lg: 24,
-    },
-    rowGutters: {
-      xs: 16,
-      sm: 16,
-      md: 24,
-      lg: 24,
+    marker: {
+      stylePreset: 'unorderedListItemMarker',
+      spaceInline: 'space020',
+      size: 'iconSize005',
     },
   },
 };

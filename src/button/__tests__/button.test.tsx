@@ -71,7 +71,7 @@ describe('Button', () => {
   test('renders with different type preset', () => {
     const props: ButtonProps = {
       overrides: {
-        typePreset: 'buttonLarge',
+        typePreset: 'button030',
       },
     };
 

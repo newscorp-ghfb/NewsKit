@@ -1,7 +1,7 @@
 // Default presets:
 button: {
   medium: {
-    typePreset: 'buttonMedium',
+    typePreset: 'button020',
     stylePreset: 'buttonDefault',
     paddingPreset: 'spaceInset030Squish',
     minWidth: 'sizing100',
@@ -15,7 +15,7 @@ button: {
 <Button
   size="medium"
   overrides={{
-    typePreset: 'buttonMedium',
+    typePreset: 'button020',
     stylePreset: 'buttonOutlinedPrimary',
   }}
 >

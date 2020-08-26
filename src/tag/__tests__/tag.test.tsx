@@ -42,7 +42,7 @@ describe('Tag', () => {
   test('renders a tag with a custom typePreset', () => {
     const props: TagProps = {
       overrides: {
-        typePreset: 'tag030',
+        typePreset: 'label030',
       },
     };
     const fragment = renderToFragmentWithTheme(renderTagWithText, props);

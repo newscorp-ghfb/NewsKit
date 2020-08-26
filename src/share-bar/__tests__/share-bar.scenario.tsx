@@ -86,7 +86,7 @@ export default {
             overrides={{
               stylePreset: 'linkInline',
               label: {
-                typePreset: 'tag030',
+                typePreset: 'label030',
                 spaceInline: 'space030',
               },
               items: {

@@ -175,7 +175,7 @@ Object {
         "paddingPreset": "spaceInset040Squish",
         "space": "sizing020",
         "stylePreset": "buttonDefault",
-        "typePreset": "buttonLarge",
+        "typePreset": "button030",
       },
       "medium": Object {
         "iconSize": "iconSize020",
@@ -184,7 +184,7 @@ Object {
         "paddingPreset": "spaceInset030Squish",
         "space": "sizing020",
         "stylePreset": "buttonDefault",
-        "typePreset": "buttonMedium",
+        "typePreset": "button020",
       },
       "small": Object {
         "iconSize": "iconSize010",
@@ -193,7 +193,7 @@ Object {
         "paddingPreset": "spaceInset020Squish",
         "space": "sizing020",
         "stylePreset": "buttonDefault",
-        "typePreset": "buttonSmall",
+        "typePreset": "button010",
       },
     },
     "byline": Object {
@@ -284,7 +284,7 @@ Object {
         "paddingPreset": "spaceInset020Squish",
         "space": "sizing010",
         "stylePreset": "flagDefault",
-        "typePreset": "flag020",
+        "typePreset": "label020",
       },
       "small": Object {
         "iconSize": "iconSize010",
@@ -292,7 +292,7 @@ Object {
         "paddingPreset": "spaceInset010Squish",
         "space": "sizing010",
         "stylePreset": "flagDefault",
-        "typePreset": "flag010",
+        "typePreset": "label010",
       },
     },
     "grid": Object {
@@ -498,7 +498,7 @@ Object {
         "paddingPreset": "spaceInset020Squish",
         "space": "sizing010",
         "stylePreset": "tagDefault",
-        "typePreset": "tag030",
+        "typePreset": "label030",
       },
       "medium": Object {
         "iconSize": "iconSize010",
@@ -506,7 +506,7 @@ Object {
         "paddingPreset": "spaceInset020Squish",
         "space": "sizing010",
         "stylePreset": "tagDefault",
-        "typePreset": "tag020",
+        "typePreset": "label020",
       },
       "small": Object {
         "iconSize": "iconSize010",
@@ -514,7 +514,7 @@ Object {
         "paddingPreset": "spaceInset010Squish",
         "space": "sizing010",
         "stylePreset": "tagDefault",
-        "typePreset": "tag010",
+        "typePreset": "label010",
       },
     },
     "titleBar": Object {
@@ -2188,26 +2188,26 @@ Object {
       "letterSpacing": "0",
       "lineHeight": 1.5555555555555556,
     },
-    "buttonLarge": Object {
+    "button010": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "16px",
+      "fontSize": "12px",
       "fontWeight": "500",
       "letterSpacing": "0",
-      "lineHeight": 1.5,
+      "lineHeight": 1.6666666666666667,
     },
-    "buttonMedium": Object {
+    "button020": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "14px",
       "fontWeight": "500",
       "letterSpacing": "0",
       "lineHeight": 1.4285714285714286,
     },
-    "buttonSmall": Object {
+    "button030": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "12px",
+      "fontSize": "16px",
       "fontWeight": "500",
       "letterSpacing": "0",
-      "lineHeight": 1.6666666666666667,
+      "lineHeight": 1.5,
     },
     "caption010": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
@@ -2257,27 +2257,6 @@ Object {
       "fontWeight": "700",
       "letterSpacing": "0",
       "lineHeight": 1.5,
-    },
-    "flag010": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "12px",
-      "fontWeight": "500",
-      "letterSpacing": "0",
-      "lineHeight": 1.6666666666666667,
-    },
-    "flag020": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "14px",
-      "fontWeight": "500",
-      "letterSpacing": "0",
-      "lineHeight": 1.4285714285714286,
-    },
-    "font500": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "20px",
-      "fontWeight": "400",
-      "letterSpacing": "0",
-      "lineHeight": 1.6,
     },
     "heading010": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
@@ -2342,20 +2321,6 @@ Object {
       "letterSpacing": "0",
       "lineHeight": 1.25,
     },
-    "headline100": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "32px",
-      "fontWeight": "700",
-      "letterSpacing": "0",
-      "lineHeight": 1.25,
-    },
-    "headline200": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "32px",
-      "fontWeight": "700",
-      "letterSpacing": "0",
-      "lineHeight": 1.25,
-    },
     "label010": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "12px",
@@ -2414,20 +2379,6 @@ Object {
       "letterSpacing": "0",
       "lineHeight": 1.5,
     },
-    "shareBarLabel": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "14px",
-      "fontWeight": "500",
-      "letterSpacing": "0",
-      "lineHeight": 1.4285714285714286,
-    },
-    "standfirst": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "16px",
-      "fontWeight": "500",
-      "letterSpacing": "0",
-      "lineHeight": 1.5,
-    },
     "subhead010": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "16px",
@@ -2466,27 +2417,6 @@ Object {
     "subhead050": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "32px",
-      "fontWeight": "500",
-      "letterSpacing": "0",
-      "lineHeight": 1.5,
-    },
-    "tag010": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "12px",
-      "fontWeight": "500",
-      "letterSpacing": "0",
-      "lineHeight": 1.6666666666666667,
-    },
-    "tag020": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "14px",
-      "fontWeight": "500",
-      "letterSpacing": "0",
-      "lineHeight": 1.4285714285714286,
-    },
-    "tag030": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "16px",
       "fontWeight": "500",
       "letterSpacing": "0",
       "lineHeight": 1.5,
