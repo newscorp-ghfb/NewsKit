@@ -1,5 +1,4 @@
 export * from './byline';
-export * from './article-content';
 export * from './aspect-ratio';
 export * from './audio-player';
 export * from './block';

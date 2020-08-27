@@ -1,6 +1,5 @@
 const a11yComponentRules = [
   {name: 'byline', disabledRules: ['color-contrast']},
-  {name: 'article-content'},
   {name: 'headline', disabledRules: ['heading-order']},
   {name: 'audio-player', disabledRules: ['color-contrast', 'landmark-unique']},
   {name: 'radio-player', disabledRules: ['color-contrast', 'landmark-unique']},

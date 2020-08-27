@@ -4,7 +4,7 @@ import {
   ThemeProvider,
   DateTime,
   Headline,
-  ArticleContent,
+  TextBlock,
   P,
   TagList,
   TagSize,
@@ -87,7 +87,7 @@ const Article: React.FC = () => (
           </Cell>
 
           <Cell xs={12}>
-            <ArticleContent boldIntro boldHeadings>
+            <TextBlock>
               <P>
                 Chopped, sliced or wedged, hard-cooked eggs are the basis of egg
                 salad and add protein and a happy glow to tossed and composed
@@ -127,7 +127,7 @@ const Article: React.FC = () => (
                 the hot water about 15 minutes for large eggs (12 minutes for
                 medium, 18 for extra large).
               </P>
-            </ArticleContent>
+            </TextBlock>
           </Cell>
 
           <Cell xs={12}>
