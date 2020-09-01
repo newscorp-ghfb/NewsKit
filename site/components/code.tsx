@@ -1,10 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import jsx from 'react-syntax-highlighter/dist/cjs/languages/prism/jsx';
 import SyntaxHighlighter from 'react-syntax-highlighter/dist/cjs/prism-light';
-import {coy, tomorrow} from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import {useTheme} from 'newskit';
 import {LegacyBlock} from './legacy-block';
-import {ThemeMode} from '../context';
+import {generateCodeHighlighterTheme} from './code-highlighter-theme';
 
 interface CodeProps {
   children: string;
@@ -21,23 +20,25 @@ interface CodeFromDefaultPresets {
 }
 SyntaxHighlighter.registerLanguage('jsx', jsx);
 
-export const Code: React.FC<CodeProps> = ({language = 'jsx', children}) => (
-  <LegacyBlock>
-    <ThemeMode.Consumer>
-      {(value: string) => (
-        <SyntaxHighlighter
-          data-testid="sample-code"
-          tabIndex={0}
-          language={language}
-          style={value === 'light' ? coy : tomorrow}
-          customStyle={{overflow: 'auto', padding: '1em'}}
-        >
-          {children}
-        </SyntaxHighlighter>
-      )}
-    </ThemeMode.Consumer>
-  </LegacyBlock>
-);
+export const Code: React.FC<CodeProps> = ({language = 'jsx', children}) => {
+  const {colors} = useTheme();
+  const highlighterTheme = generateCodeHighlighterTheme(colors);
+
+  return (
+    <LegacyBlock>
+      <SyntaxHighlighter
+        data-testid="sample-code"
+        tabIndex={0}
+        language={language}
+        style={highlighterTheme}
+        customStyle={{overflow: 'auto', padding: '1em'}}
+      >
+        {children}
+      </SyntaxHighlighter>
+    </LegacyBlock>
+  );
+};
+
 export const CodeFromFile: React.FC<CodeFromFileProps> = ({language, path}) => {
   const [source, setSource] = useState('');
 
