@@ -1488,7 +1488,7 @@ Object {
       },
       "base": Object {
         "backgroundColor": "transparent",
-        "borderRadius": "{borders.borderRadiusCircle}}",
+        "borderRadius": "50%",
         "color": "#d20600",
         "iconColor": "#d20600",
       },

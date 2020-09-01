@@ -572,7 +572,7 @@ stylePresets.iconButtonMinimalSecondary = {
 stylePresets.iconButtonMinimalNegative = {
   base: {
     backgroundColor: '{{colors.transparent}}',
-    borderRadius: '{borders.borderRadiusCircle}}',
+    borderRadius: '{{borders.borderRadiusCircle}}',
     color: '{{colors.inkNegative}}',
     iconColor: '{{colors.inkNegative}}',
   },
