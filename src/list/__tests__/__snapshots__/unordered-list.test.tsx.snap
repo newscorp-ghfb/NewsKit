@@ -1,5 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`UnorderedList renders StyledUl with given display prop 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+<ul
+    class="emotion-0"
+  >
+    first nodesecond nodethird node
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`UnorderedList renders default StyledUl 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+<ul
+    class="emotion-0"
+  >
+    first nodesecond nodethird node
+  </ul>
+</DocumentFragment>
+`;
+
 exports[`UnorderedList renders different types of children 1`] = `
 <DocumentFragment>
   .emotion-15 {

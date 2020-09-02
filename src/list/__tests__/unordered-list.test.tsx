@@ -1,6 +1,6 @@
 import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {UnorderedList, UnorderedListProps} from '..';
+import {UnorderedList, UnorderedListProps, StyledUl} from '..';
 import {Twitter} from '../../icons';
 import {Link} from '../../link/link';
 
@@ -8,6 +8,10 @@ const renderUnorderedListWithItems = (props: UnorderedListProps) => (
   <UnorderedList {...props}>
     {['first node', 'second node', 'third node']}
   </UnorderedList>
+);
+
+const renderStyledUlWithItems = (props: any) => (
+  <StyledUl {...props}>{['first node', 'second node', 'third node']}</StyledUl>
 );
 
 describe('UnorderedList', () => {
@@ -62,6 +66,18 @@ describe('UnorderedList', () => {
       ],
     };
     const fragment = renderToFragmentWithTheme(UnorderedList, props);
+    expect(fragment).toMatchSnapshot();
+  });
+  test('renders default StyledUl', () => {
+    const fragment = renderToFragmentWithTheme(renderStyledUlWithItems);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders StyledUl with given display prop', () => {
+    const props = {
+      display: 'inline-block',
+    };
+    const fragment = renderToFragmentWithTheme(renderStyledUlWithItems, props);
     expect(fragment).toMatchSnapshot();
   });
 });

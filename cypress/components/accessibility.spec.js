@@ -21,7 +21,6 @@ const a11yComponentRules = [
   {name: 'tab', disabledRules: ['color-contrast']},
   {name: 'text-block'},
   {name: 'volume-control'},
-  {name: 'tag-list', disabledRules: ['color-contrast']},
   {name: 'tag', disabledRules: ['color-contrast']},
   {name: 'flag'},
   {name: 'typography/heading'},

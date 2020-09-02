@@ -21,41 +21,27 @@ describe('Documentation Site - playground', () => {
   });
 });
 
-describe('Documentation Site - playground - Tag list', () => {
+describe('Documentation Site - playground - Unordered List', () => {
   beforeEach(() => {
-    cy.visit('/components/tag-list');
+    cy.visit('/components/unordered-list');
   });
 
-  const tagsArrayKnob = '[data-testid="array-knob-tags"]';
+  const ulArrayKnob = '[data-testid="array-knob-list-data"]';
   const buttonAdd = '[data-testid="array-knob-button-add"]';
   const buttonRemove = '[data-testid="array-knob-button-remove"]';
-  const textKnobLabel = '[data-testid="input-knob-label"]';
-  const textKnobHref = '[data-testid="input-knob-href"]';
-  const testTagText = 'Test Tag';
-  const testTagUrl = 'http://www.test-tag.com';
+  const textKnobLabel = '[data-testid="input-knob-list-data"]';
+  const testTagText = 'T'; // https://github.com/cypress-io/cypress/issues/5480 - the reason why it's a single character
 
   it('Create a new tag, populate it with data and remove it', () => {
     cy.get(`${playgroundElement} ul>li`).should('have.length', 3);
-    cy.get(`${tagsArrayKnob} ${buttonAdd}`).click();
+    cy.get(`${ulArrayKnob} ${buttonAdd}`).click();
     cy.get(`${playgroundElement} ul>li`).should('have.length', 4);
 
-    cy.get(`${textKnobLabel}:last`)
-      .clear()
-      .type(testTagText);
-    cy.get(`${playgroundElement} ul>li:last a`).should(
-      'have.text',
-      testTagText,
-    );
-    cy.get(`${textKnobHref}:last`)
-      .clear()
-      .type(testTagUrl);
-    cy.get(`${playgroundElement} ul>li:last a`).should(
-      'have.attr',
-      'href',
-      testTagUrl,
-    );
+    cy.get(`${textKnobLabel}:last`).clear();
+    cy.get(`${textKnobLabel}:last`).type(testTagText);
+    cy.get(`${playgroundElement} ul>li:last`).should('have.text', testTagText);
 
-    cy.get(`${tagsArrayKnob} ${buttonRemove}:last`).click();
+    cy.get(`${ulArrayKnob} ${buttonRemove}:last`).click();
     cy.get(`${playgroundElement} ul>li`).should('have.length', 3);
   });
 });

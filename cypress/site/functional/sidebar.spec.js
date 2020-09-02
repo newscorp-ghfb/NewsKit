@@ -51,7 +51,6 @@ describe('Documentation Site - sidebar component', () => {
     cy.contains('Ordered List').should('exist');
     cy.contains('Standfirst').should('exist');
     cy.contains('Tag').should('exist');
-    cy.contains('Tag List').should('exist');
     cy.contains('Unordered List').should('exist');
 
     cy.get('[data-testid="/utils"]').click();

@@ -6,7 +6,6 @@ import {
   Headline,
   TextBlock,
   P,
-  TagList,
   TagSize,
   Grid,
   Cell,
@@ -17,6 +16,9 @@ import {
   Facebook,
   Twitter,
   WhatsApp,
+  Stack,
+  Flow,
+  Tag,
 } from 'newskit';
 import {ShareBar} from 'newskit/share-bar';
 import Layout from '../../components/layout';
@@ -131,24 +133,20 @@ const Article: React.FC = () => (
           </Cell>
 
           <Cell xs={12}>
-            <TagList
-              size={TagSize.Small}
-              spacing="sizing040"
-              tagData={[
-                {
-                  label: 'Cooking',
-                },
-                {
-                  label: 'Recipe',
-                },
-                {
-                  label: 'Eggs',
-                },
-                {
-                  label: 'Kitchen',
-                },
-              ]}
-            />
+            <Stack flow={Flow.HorizontalCenter} space="sizing040">
+              <Tag size={TagSize.Small} href="/">
+                Cooking
+              </Tag>
+              <Tag size={TagSize.Small} href="/">
+                Recipe
+              </Tag>
+              <Tag size={TagSize.Small} href="/">
+                Eggs
+              </Tag>
+              <Tag size={TagSize.Small} href="/">
+                Kitchen
+              </Tag>
+            </Stack>
           </Cell>
         </Grid>
       </Layout>

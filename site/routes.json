@@ -213,11 +213,6 @@
         "id": "/components/tag"
       },
       {
-        "title": "Tag List",
-        "page": true,
-        "id": "/components/tag-list"
-      },
-      {
         "title": "Tealium",
         "page": true,
         "id": "/components/tealium"
