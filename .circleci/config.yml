@@ -426,7 +426,6 @@ jobs:
     executor: node
     steps:
       - checkout
-      - skip_if_infra_only_pr
       - attach_workspace:
           at: ~/project
       - run:
