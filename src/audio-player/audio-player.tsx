@@ -181,6 +181,11 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
           {...trackProps}
           values={trackPositionArr}
           isDragged={isDragged}
+          onKeyDown={e => {
+            const spaceKeyCode = 32;
+            /* istanbul ignore next */
+            if (e.keyCode === spaceKeyCode) e.preventDefault();
+          }}
           style={{
             background: getTrackBackground({
               values,

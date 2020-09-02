@@ -89,7 +89,11 @@ export const Slider: React.FC<SliderProps> = ({
         data-testid={`${dataTestId}-track`}
         onMouseDown={p.onMouseDown}
         onTouchStart={p.onTouchStart}
-        onKeyDown={onKeyDown}
+        onKeyDown={e => {
+          const spaceKeyCode = 32;
+          if (e.keyCode === spaceKeyCode) e.preventDefault();
+          return onKeyDown && onKeyDown(e);
+        }}
         overrides={overrides}
       >
         {children}
