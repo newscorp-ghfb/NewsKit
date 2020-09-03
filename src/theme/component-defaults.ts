@@ -375,4 +375,22 @@ export const componentDefaults = {
       size: 'iconSize005',
     },
   },
+  volumeControl: {
+    slider: {
+      track: {
+        stylePreset: 'volumeControlTrack',
+      },
+      indicator: {
+        stylePreset: 'volumeControlIndicator',
+      },
+      thumb: {
+        stylePreset: 'volumeControlThumb',
+      },
+    },
+    button: {
+      stylePreset: 'volumeControlButtons',
+      iconSize: 'iconSize010',
+      size: 'small',
+    },
+  },
 };

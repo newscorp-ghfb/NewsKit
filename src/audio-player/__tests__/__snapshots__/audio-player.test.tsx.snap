@@ -587,8 +587,6 @@ exports[`Audio Player live player renders as expected 1`] = `
 .emotion-18 {
   fill: #2e2e2e;
   color: #2e2e2e;
-  width: 24px;
-  height: 24px;
   display: inline-block;
 }
 
@@ -610,12 +608,12 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-24 {
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   background-color: #ffffff;
+  border-style: solid;
   border-color: #0a68c1;
   border-width: 1px;
   border-radius: 50%;
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  border-style: solid;
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;
@@ -636,11 +634,16 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-24:hover:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #ffffff;
+}
+
+.emotion-24:hover:not(:disabled) svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-24:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #e6f4ff;
 }
 
 .emotion-24:active:not(:disabled) svg {
@@ -782,6 +785,14 @@ exports[`Audio Player live player renders as expected 1`] = `
 .emotion-39:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
+}
+
+.emotion-36 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
 }
 
 <section
@@ -1052,7 +1063,7 @@ exports[`Audio Player live player renders as expected 1`] = `
                         >
                           <svg
                             aria-labelledby="mock-bui-1"
-                            class="emotion-18"
+                            class="emotion-36"
                             focusable="false"
                             viewBox="0 0 24 24"
                           >
@@ -1971,11 +1982,9 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-34 {
+.emotion-1 {
   fill: #2e2e2e;
   color: #2e2e2e;
-  width: 24px;
-  height: 24px;
   display: inline-block;
 }
 
@@ -2135,12 +2144,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   margin-left: calc(-12px/2);
   margin-right: calc(-12px/2);
   min-width: 316px;
-}
-
-.emotion-1 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  display: inline-block;
 }
 
 .emotion-65 {
@@ -2360,12 +2363,12 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-40 {
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   background-color: #ffffff;
+  border-style: solid;
   border-color: #0a68c1;
   border-width: 1px;
   border-radius: 50%;
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  border-style: solid;
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;
@@ -2388,11 +2391,16 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-40:hover:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #ffffff;
+}
+
+.emotion-40:hover:not(:disabled) svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-40:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #e6f4ff;
 }
 
 .emotion-40:active:not(:disabled) svg {
@@ -2696,7 +2704,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-34"
+                              class="emotion-1"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -2763,7 +2771,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-34"
+                              class="emotion-1"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -2874,12 +2882,12 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 
 exports[`Audio Player recorded player renders and behaves as expected 2`] = `
 .emotion-0 {
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   background-color: #ffffff;
+  border-style: solid;
   border-color: #0a68c1;
   border-width: 1px;
   border-radius: 50%;
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  border-style: solid;
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;
@@ -2902,11 +2910,16 @@ exports[`Audio Player recorded player renders and behaves as expected 2`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #ffffff;
+}
+
+.emotion-0:hover:not(:disabled) svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #e6f4ff;
 }
 
 .emotion-0:active:not(:disabled) svg {
@@ -3493,11 +3506,9 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   color: #9c9c9c;
 }
 
-.emotion-30 {
+.emotion-7 {
   fill: #2e2e2e;
   color: #2e2e2e;
-  width: 24px;
-  height: 24px;
   display: inline-block;
 }
 
@@ -3519,12 +3530,12 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-36 {
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   background-color: #ffffff;
+  border-style: solid;
   border-color: #0a68c1;
   border-width: 1px;
   border-radius: 50%;
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  border-style: solid;
   height: 16px;
   width: 16px;
   -webkit-box-pack: center;
@@ -3545,11 +3556,16 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-36:hover:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #ffffff;
+}
+
+.emotion-36:hover:not(:disabled) svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
 }
 
 .emotion-36:active:not(:disabled) {
-  background-color: #01396e;
+  background-color: #e6f4ff;
 }
 
 .emotion-36:active:not(:disabled) svg {
@@ -3713,12 +3729,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   margin-left: calc(-12px/2);
   margin-right: calc(-12px/2);
   min-width: 316px;
-}
-
-.emotion-7 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  display: inline-block;
 }
 
 .emotion-22 {
@@ -4160,7 +4170,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-30"
+                              class="emotion-7"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -4227,7 +4237,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-30"
+                              class="emotion-7"
                               viewBox="0 0 24 24"
                             >
                               <title

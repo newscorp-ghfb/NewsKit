@@ -46,19 +46,20 @@ export const Slider: React.FC<SliderProps> = ({
   maxLabel,
   labelPosition = LabelPosition.Inline,
   thumbLabel,
+  thumbIcon: ThumbIcon,
   dataTestId = 'slider',
   overrides = {},
   renderTrack,
   renderThumb,
 }) => {
   const theme = useTheme();
-  const sliderTrackToken = getToken(
+  const sliderTrackStylePreset = getToken(
     {theme, overrides},
     'slider.track',
     'track',
     'stylePreset',
   );
-  const sliderIndicatorToken = getToken(
+  const sliderIndicatorStylePreset = getToken(
     {theme, overrides},
     'slider.indicator',
     'indicator',
@@ -79,8 +80,8 @@ export const Slider: React.FC<SliderProps> = ({
         aria-orientation={vertical ? 'vertical' : 'horizontal'}
         style={getTrackBackgroundStyle(
           theme,
-          sliderTrackToken,
-          sliderIndicatorToken,
+          sliderTrackStylePreset,
+          sliderIndicatorStylePreset,
           values,
           min,
           max,
@@ -114,6 +115,7 @@ export const Slider: React.FC<SliderProps> = ({
         data-testid={`${dataTestId}-thumb`}
         overrides={overrides}
       >
+        {ThumbIcon && <ThumbIcon />}
         <ThumbLabelWrapper
           values={values}
           index={index}

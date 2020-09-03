@@ -4,19 +4,19 @@ import {IconButton} from '../icon-button';
 import {VolumeControlProps} from './types';
 import {Slider} from '../slider';
 import {VolumeUp, VolumeDown, VolumeMute} from '../icons';
-import {IconSizeKeys} from '../theme';
+import {IconSizeKeys, useTheme} from '../theme';
 import {ScreenReaderOnly} from '../screen-reader-only/screen-reader-only';
 import {getBuiId} from '../utils/get-bui-id';
+import {getTokensForVolumeControl} from './utils';
 
 interface MuteButtonProps {
   volume: number;
   unMutedVolume: number;
   onChange: VolumeControlProps['onChange'];
   volumeControlButtonStylePreset?: string;
+  iconSize: IconSizeKeys;
+  size: ButtonSize;
 }
-
-const iconSize: IconSizeKeys = 'iconSize020';
-const volumeControlButtonStyleDefault = 'iconButtonMinimalPrimary';
 
 const toggleMute = (
   volume: number,
@@ -29,22 +29,20 @@ const MuteButton: React.FC<MuteButtonProps> = ({
   unMutedVolume,
   onChange,
   volumeControlButtonStylePreset,
+  iconSize,
+  size,
 }) => (
   <IconButton
     data-testid="mute-button"
     tabIndex={-1}
     onClick={() => toggleMute(volume, unMutedVolume, onChange)}
-    size={ButtonSize.Small}
+    size={size}
     overrides={{
-      stylePreset:
-        volumeControlButtonStylePreset || volumeControlButtonStyleDefault,
+      stylePreset: volumeControlButtonStylePreset,
+      iconSize,
     }}
   >
-    {volume === 0 ? (
-      <VolumeMute size={iconSize} title="unmute" />
-    ) : (
-      <VolumeDown size={iconSize} title="mute" />
-    )}
+    {volume === 0 ? <VolumeMute title="unmute" /> : <VolumeDown title="mute" />}
   </IconButton>
 );
 
@@ -52,16 +50,22 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
   volume,
   vertical,
   onChange,
-  trackSize,
-  thumbSize,
-  sliderLabelsStylePreset: volumeControlButtonStylePreset,
-  sliderIndicatorTrackStylePreset,
-  sliderThumbStylePreset,
-  sliderThumbLabelStylePreset,
-  sliderTrackStylePreset,
+  overrides = {},
 }) => {
+  const theme = useTheme();
   const [unMutedVolume, setUnMutedVolume] = useState(volume);
   const srOnlyVolumeControl = getBuiId();
+  const {
+    sliderTrackStylePreset,
+    trackSize,
+    sliderIndicatorTrackStylePreset,
+    sliderThumbStylePreset,
+    thumbSize,
+    sliderThumbLabelStylePreset,
+    volumeControlButtonStylePreset,
+    iconSize,
+    buttonSize,
+  } = getTokensForVolumeControl(theme, overrides);
 
   if (unMutedVolume !== volume && volume > 0) {
     setUnMutedVolume(volume);
@@ -77,9 +81,18 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
         unMutedVolume={unMutedVolume}
         onChange={onChange}
         volumeControlButtonStylePreset={volumeControlButtonStylePreset}
+        iconSize={iconSize}
+        size={buttonSize}
       />
     ),
-    [volume, unMutedVolume, onChange, volumeControlButtonStylePreset],
+    [
+      volume,
+      unMutedVolume,
+      onChange,
+      volumeControlButtonStylePreset,
+      iconSize,
+      buttonSize,
+    ],
   );
 
   const toggleMuteWithKeys = (e: React.KeyboardEvent<HTMLElement>) => {
@@ -94,16 +107,16 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
         data-testid="volumeup-button"
         tabIndex={-1}
         onClick={() => onChange(1)}
-        size={ButtonSize.Small}
+        size={buttonSize}
         overrides={{
-          stylePreset:
-            volumeControlButtonStylePreset || volumeControlButtonStyleDefault,
+          stylePreset: volumeControlButtonStylePreset,
+          iconSize,
         }}
       >
-        <VolumeUp size={iconSize} title="max volume" />
+        <VolumeUp title="max volume" />
       </IconButton>
     ),
-    [onChange, volumeControlButtonStylePreset],
+    [buttonSize, iconSize, onChange, volumeControlButtonStylePreset],
   );
 
   return (

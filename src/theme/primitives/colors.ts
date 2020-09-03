@@ -148,5 +148,5 @@ export const colors = {
   skeleton010: '{{colors.neutral020}}',
   skeleton020: '{{colors.neutral030}}',
 
-  inverse: '{{colors.black}}',
+  inverse: '{{colors.white}}',
 };

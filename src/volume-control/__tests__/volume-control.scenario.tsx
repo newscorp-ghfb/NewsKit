@@ -2,8 +2,66 @@ import React from 'react';
 
 import {StatefulVolumeControl} from './stateful-volume-control';
 import {styled} from '../../utils/style';
+import {ButtonSize} from '../../button';
+import {StorybookHeading} from '../../test/storybook-comps';
+import {createTheme, ThemeProvider} from '../../theme';
 
-export const name = 'volume-control';
+const myCustomTheme = createTheme({
+  name: 'my-custom-slider-theme',
+  overrides: {
+    stylePresets: {
+      customTrackStylePreset: {
+        base: {
+          backgroundColor: 'red',
+          borderColor: 'blue',
+          borderWidth: '1px',
+          borderStyle: 'solid',
+        },
+      },
+      customIndicatorStylePreset: {
+        base: {
+          backgroundColor: 'yellow',
+        },
+      },
+      customThumbStylePreset: {
+        base: {
+          backgroundColor: 'green',
+          borderColor: 'black',
+          borderWidth: '2px',
+          borderStyle: 'solid',
+        },
+      },
+      customThumbLabelStylePreset: {
+        base: {
+          borderColor: 'black',
+          borderWidth: '1px',
+          borderRadius: '999px',
+          borderStyle: 'dashed',
+          color: 'green',
+        },
+      },
+      customLabelStylePreset: {
+        base: {
+          borderColor: 'purple',
+          borderWidth: '2px',
+          borderRadius: '999px',
+          borderStyle: 'dashed',
+          color: 'purple',
+        },
+      },
+      customButtonStylePreset: {
+        base: {
+          borderColor: 'purple',
+          borderWidth: '2px',
+          borderRadius: '999px',
+          borderStyle: 'dashed',
+          iconColor: 'purple',
+          backgroundColor: '{{colors.inverse}}',
+        },
+      },
+    },
+  },
+});
 
 const HorizontalContainer = styled.div`
   display: inline-flex;
@@ -19,29 +77,85 @@ const VerticalContainer = styled.div`
   height: 250px;
 `;
 
-export const component = () => (
-  <React.Fragment>
-    <div>
-      <HorizontalContainer>
-        <StatefulVolumeControl volume={1} />
-      </HorizontalContainer>
-      <HorizontalContainer>
-        <StatefulVolumeControl volume={0.5} />
-      </HorizontalContainer>
-      <HorizontalContainer>
-        <StatefulVolumeControl volume={0} />
-      </HorizontalContainer>
-    </div>
-    <div>
-      <VerticalContainer>
-        <StatefulVolumeControl vertical volume={1} />
-      </VerticalContainer>
-      <VerticalContainer>
-        <StatefulVolumeControl vertical volume={0.5} />
-      </VerticalContainer>
-      <VerticalContainer>
-        <StatefulVolumeControl vertical volume={0} />
-      </VerticalContainer>
-    </div>
-  </React.Fragment>
-);
+export default {
+  name: 'volume-control',
+  children: [
+    {
+      name: 'volume-control',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            VolumeControl - horizontal and vertical
+          </StorybookHeading>
+          <div>
+            <HorizontalContainer>
+              <StatefulVolumeControl volume={1} />
+            </HorizontalContainer>
+            <HorizontalContainer>
+              <StatefulVolumeControl volume={0.5} />
+            </HorizontalContainer>
+            <HorizontalContainer>
+              <StatefulVolumeControl volume={0} />
+            </HorizontalContainer>
+          </div>
+          <div>
+            <VerticalContainer>
+              <StatefulVolumeControl vertical volume={1} />
+            </VerticalContainer>
+            <VerticalContainer>
+              <StatefulVolumeControl vertical volume={0.5} />
+            </VerticalContainer>
+            <VerticalContainer>
+              <StatefulVolumeControl vertical volume={0} />
+            </VerticalContainer>
+          </div>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'volume-control-with-overrides',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>VolumeControl with overrides</StorybookHeading>
+          <VerticalContainer>
+            <ThemeProvider theme={myCustomTheme}>
+              <StatefulVolumeControl
+                vertical
+                volume={0.5}
+                overrides={{
+                  slider: {
+                    track: {
+                      stylePreset: 'customTrackStylePreset',
+                      size: 'sizing020',
+                    },
+                    indicator: {
+                      stylePreset: 'customIndicatorStylePreset',
+                    },
+                    thumb: {
+                      stylePreset: 'customThumbStylePreset',
+                      size: 'sizing040',
+                    },
+                    labels: {
+                      stylePreset: 'customLabelStylePreset',
+                      space: 'spacing060',
+                    },
+                    thumbLabel: {
+                      stylePreset: 'customThumbLabelStylePreset',
+                    },
+                  },
+                  button: {
+                    stylePreset: 'customButtonStylePreset',
+                    iconSize: 'iconSize020',
+                    size: ButtonSize.Small,
+                  },
+                }}
+              />
+            </ThemeProvider>
+          </VerticalContainer>
+        </React.Fragment>
+      ),
+    },
+  ],
+};

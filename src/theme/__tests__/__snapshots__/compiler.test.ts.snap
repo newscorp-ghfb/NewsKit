@@ -111,7 +111,7 @@ Object {
     "interfaceBackground": "#ffffff",
     "interfaceBrand010": "#0a68c1",
     "interfaceBrand020": "#d5ebff",
-    "inverse": "#000000",
+    "inverse": "#ffffff",
     "neutral010": "#fafafa",
     "neutral020": "#f0f0f0",
     "neutral030": "#e4e4e4",
@@ -543,6 +543,24 @@ Object {
       },
       "spaceStack": "space040",
     },
+    "volumeControl": Object {
+      "button": Object {
+        "iconSize": "iconSize010",
+        "size": "small",
+        "stylePreset": "volumeControlButtons",
+      },
+      "slider": Object {
+        "indicator": Object {
+          "stylePreset": "volumeControlIndicator",
+        },
+        "thumb": Object {
+          "stylePreset": "volumeControlThumb",
+        },
+        "track": Object {
+          "stylePreset": "volumeControlTrack",
+        },
+      },
+    },
   },
   "fonts": Object {
     "fontFamily1": Object {
@@ -804,7 +822,7 @@ Object {
     },
     "audioPlayerThumb": Object {
       "active": Object {
-        "backgroundColor": "#01396e",
+        "backgroundColor": "#e6f4ff",
         "iconColor": "#535353",
       },
       "base": Object {
@@ -817,7 +835,8 @@ Object {
         "iconColor": "#9c9c9c",
       },
       "hover": Object {
-        "backgroundColor": "#e6f4ff",
+        "backgroundColor": "#ffffff",
+        "iconColor": "#9c9c9c",
       },
     },
     "buttonDefault": Object {
@@ -1932,6 +1951,7 @@ Object {
     "sliderThumb": Object {
       "active": Object {
         "backgroundColor": "#e6f4ff",
+        "iconColor": "#535353",
       },
       "base": Object {
         "backgroundColor": "#ffffff",
@@ -1940,7 +1960,7 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "1px",
         "boxShadow": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
-        "iconColor": "#ffffff",
+        "iconColor": "#9c9c9c",
       },
       "disabled": Object {
         "backgroundColor": "#e4e4e4",
@@ -1948,6 +1968,10 @@ Object {
         "borderStyle": "none",
         "borderWidth": "none",
         "boxShadow": "none",
+        "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#ffffff",
         "iconColor": "#9c9c9c",
       },
     },
@@ -2129,6 +2153,12 @@ Object {
         "color": "#0a68c1",
       },
     },
+    "volumeControlIndicator": Object {
+      "base": Object {
+        "backgroundColor": "#0a68c1",
+        "borderRadius": "20rem",
+      },
+    },
     "volumeControlLabels": Object {
       "base": Object {
         "color": "#535353",
@@ -2136,7 +2166,7 @@ Object {
     },
     "volumeControlThumb": Object {
       "active": Object {
-        "backgroundColor": "#01396e",
+        "backgroundColor": "#e6f4ff",
         "iconColor": "#535353",
       },
       "base": Object {
@@ -2149,18 +2179,13 @@ Object {
         "iconColor": "#9c9c9c",
       },
       "hover": Object {
-        "backgroundColor": "#e6f4ff",
+        "backgroundColor": "#ffffff",
+        "iconColor": "#9c9c9c",
       },
     },
     "volumeControlTrack": Object {
       "base": Object {
         "backgroundColor": "#f0f0f0",
-        "borderRadius": "20rem",
-      },
-    },
-    "volumeControlTrackIndicator": Object {
-      "base": Object {
-        "backgroundColor": "#0a68c1",
         "borderRadius": "20rem",
       },
     },

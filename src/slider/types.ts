@@ -1,36 +1,39 @@
 import {Range} from 'react-range';
 import {SizingKeys, StylePresetKeys, TypePresetKeys} from '../theme';
+import {IconComponent} from '../icons';
 
 type RenderTrackFunction = Range['props']['renderTrack'];
 type RenderThumbFunction = Range['props']['renderThumb'];
+
+export interface SliderOverrideProps {
+  track?: {
+    stylePreset?: StylePresetKeys;
+    size?: SizingKeys;
+  };
+  indicator?: {
+    stylePreset?: StylePresetKeys;
+  };
+  thumb?: {
+    stylePreset?: StylePresetKeys;
+    size?: SizingKeys;
+  };
+  thumbLabel?: {
+    stylePreset?: StylePresetKeys;
+    typePreset?: TypePresetKeys;
+    space?: SizingKeys;
+  };
+  labels?: {
+    stylePreset?: StylePresetKeys;
+    typePreset?: TypePresetKeys;
+    space?: SizingKeys;
+  };
+}
 
 interface CommonProps {
   disabled?: boolean;
   vertical?: boolean;
   values: number[];
-  overrides?: {
-    track?: {
-      stylePreset?: StylePresetKeys;
-      size?: SizingKeys;
-    };
-    indicator?: {
-      stylePreset?: StylePresetKeys;
-    };
-    thumb?: {
-      stylePreset?: StylePresetKeys;
-      size?: SizingKeys;
-    };
-    thumbLabel?: {
-      stylePreset?: StylePresetKeys;
-      typePreset?: TypePresetKeys;
-      space?: SizingKeys;
-    };
-    labels?: {
-      stylePreset?: StylePresetKeys;
-      typePreset?: TypePresetKeys;
-      space?: SizingKeys;
-    };
-  };
+  overrides?: SliderOverrideProps;
 }
 
 export interface StyledTrackProps extends CommonProps {
@@ -55,6 +58,7 @@ interface CommonSliderProps extends CommonProps {
   maxLabel?: string | React.ComponentType;
   labelPosition?: LabelPosition;
   thumbLabel?: boolean | React.ComponentType<ThumbLabelProps>;
+  thumbIcon?: IconComponent;
   dataTestId?: string;
   renderTrack?: RenderTrackFunction;
   renderThumb?: RenderThumbFunction;

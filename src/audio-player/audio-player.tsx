@@ -49,7 +49,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   } = props;
 
   const volumePresetObj: Required<AudioPlayerProps['volumePresets']> = {
-    sliderIndicatorTrackStylePreset: 'volumeControlTrackIndicator',
+    sliderIndicatorTrackStylePreset: 'volumeControlIndicator',
     sliderThumbStylePreset: 'volumeControlThumb',
     sliderLabelsStylePreset: 'volumeControlButtons',
     sliderThumbLabelStylePreset: 'volumeControlLabels',
@@ -289,9 +289,29 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
                 <VolumeControl
                   volume={volume}
                   onChange={onChangeVolumeSlider}
-                  trackSize="sizing010"
-                  thumbSize="sizing040"
-                  {...volumePresetObj}
+                  overrides={{
+                    slider: {
+                      track: {
+                        stylePreset: volumePresetObj.sliderTrackStylePreset,
+                        size: 'sizing010',
+                      },
+                      indicator: {
+                        stylePreset:
+                          volumePresetObj.sliderIndicatorTrackStylePreset,
+                      },
+                      thumb: {
+                        stylePreset: volumePresetObj.sliderThumbStylePreset,
+                        size: 'sizing040',
+                      },
+                      labels: {
+                        stylePreset: volumePresetObj.sliderLabelsStylePreset,
+                      },
+                      thumbLabel: {
+                        stylePreset:
+                          volumePresetObj.sliderThumbLabelStylePreset,
+                      },
+                    },
+                  }}
                 />
               </ControlContainer>
             </StackChild>

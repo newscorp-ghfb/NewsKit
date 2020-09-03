@@ -100,6 +100,9 @@ NewsKit also exports a StatefulSlider component which has the same props (except
     receives the current thumb value as its children. If left undefined or set
     falsy, no thumb label is rendered.
   </Prop>
+  <Prop name="thumbIcon" type="IconComponent">
+    If provided places the passed icon inside the slider thumb.
+  </Prop>
   <Prop
     name="renderTrack"
     type="(params: { props, children, isDragged, disabled }) => React.ReactNode"
@@ -121,7 +124,7 @@ NewsKit also exports a StatefulSlider component which has the same props (except
     to this thumb (this is useful if rendering more than one value), isDragged;
     this may affect how you wish to style your thumb.
   </Prop>
-  <Prop name="overrides" type="object">
+  <Prop name="overrides" type="SliderOverrideProps">
     If provided, overrides the respective presets for the component and provided elements.
     Here are the overrides that the Slider accepts:
     <Prop name="track" type="object">

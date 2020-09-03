@@ -111,7 +111,7 @@ Object {
     "interfaceBackground": "{{colors.white}}",
     "interfaceBrand010": "{{colors.blue060}}",
     "interfaceBrand020": "{{colors.blue020}}",
-    "inverse": "{{colors.black}}",
+    "inverse": "{{colors.white}}",
     "neutral010": "#fafafa",
     "neutral020": "#f0f0f0",
     "neutral030": "#e4e4e4",
@@ -542,6 +542,24 @@ Object {
       },
       "spaceStack": "space040",
     },
+    "volumeControl": Object {
+      "button": Object {
+        "iconSize": "iconSize010",
+        "size": "small",
+        "stylePreset": "volumeControlButtons",
+      },
+      "slider": Object {
+        "indicator": Object {
+          "stylePreset": "volumeControlIndicator",
+        },
+        "thumb": Object {
+          "stylePreset": "volumeControlThumb",
+        },
+        "track": Object {
+          "stylePreset": "volumeControlTrack",
+        },
+      },
+    },
   },
   "fonts": Object {
     "fontFamily1": Object {
@@ -803,11 +821,11 @@ Object {
     },
     "audioPlayerThumb": Object {
       "active": Object {
-        "backgroundColor": "{{colors.interactive050}}",
+        "backgroundColor": "{{colors.interactive240}}",
         "iconColor": "{{colors.inkSubtle}}",
       },
       "base": Object {
-        "backgroundColor": "{{colors.inkInverse}}",
+        "backgroundColor": "{{colors.inverse}}",
         "borderColor": "{{colors.interactive230}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
         "borderStyle": "solid",
@@ -816,7 +834,8 @@ Object {
         "iconColor": "{{colors.inkNonEssential}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactive240}}",
+        "backgroundColor": "{{colors.inverse}}",
+        "iconColor": "{{colors.inkNonEssential}}",
       },
     },
     "buttonDefault": Object {
@@ -1931,15 +1950,16 @@ Object {
     "sliderThumb": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactive240}}",
+        "iconColor": "{{colors.inkSubtle}}",
       },
       "base": Object {
-        "backgroundColor": "{{colors.inkInverse}}",
+        "backgroundColor": "{{colors.inverse}}",
         "borderColor": "{{colors.interactive230}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
         "boxShadow": "{{shadows.shadow010}}",
-        "iconColor": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkNonEssential}}",
       },
       "disabled": Object {
         "backgroundColor": "{{colors.interface040}}",
@@ -1947,6 +1967,10 @@ Object {
         "borderStyle": "none",
         "borderWidth": "none",
         "boxShadow": "none",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.inverse}}",
         "iconColor": "{{colors.inkNonEssential}}",
       },
     },
@@ -2128,6 +2152,12 @@ Object {
         "color": "{{colors.inkBrand010}}",
       },
     },
+    "volumeControlIndicator": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactive230}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+      },
+    },
     "volumeControlLabels": Object {
       "base": Object {
         "color": "{{colors.inkSubtle}}",
@@ -2135,11 +2165,11 @@ Object {
     },
     "volumeControlThumb": Object {
       "active": Object {
-        "backgroundColor": "{{colors.interactive050}}",
+        "backgroundColor": "{{colors.interactive240}}",
         "iconColor": "{{colors.inkSubtle}}",
       },
       "base": Object {
-        "backgroundColor": "{{colors.inkInverse}}",
+        "backgroundColor": "{{colors.inverse}}",
         "borderColor": "{{colors.interactive230}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
         "borderStyle": "solid",
@@ -2148,18 +2178,13 @@ Object {
         "iconColor": "{{colors.inkNonEssential}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.interactive240}}",
+        "backgroundColor": "{{colors.inverse}}",
+        "iconColor": "{{colors.inkNonEssential}}",
       },
     },
     "volumeControlTrack": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface030}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-      },
-    },
-    "volumeControlTrackIndicator": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interactive230}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
       },
     },

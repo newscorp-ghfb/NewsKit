@@ -7,6 +7,7 @@ import {
 import {SliderProps, LabelPosition} from '../types';
 import {Theme, createTheme} from '../../theme';
 import {StyledThumbValue} from '../styled';
+import {Placeholder} from '../../icons';
 
 let mockRange: jest.Mock;
 jest.mock('react-range', () => {
@@ -176,6 +177,22 @@ describe('slider', () => {
           renderSlider({
             vertical: true,
             thumbLabel: true,
+          });
+
+          const fragment = renderToFragmentWithTheme(rangeProps.renderThumb, {
+            props: {
+              one: 'prop',
+              two: 'props',
+            },
+            index: 0,
+            isDragged: false,
+          });
+          expect(fragment).toMatchSnapshot();
+        });
+
+        it('should render slider thumb with an icon', () => {
+          renderSlider({
+            thumbIcon: Placeholder,
           });
 
           const fragment = renderToFragmentWithTheme(rangeProps.renderThumb, {
