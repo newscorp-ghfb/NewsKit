@@ -1,4 +1,4 @@
-export {animations} from './animations';
+export {motions} from './motions';
 export {borders} from './borders';
 export {breakpoints} from './breakpoints';
 export {colors} from './colors';

@@ -8,7 +8,7 @@ import {Divider} from '../divider';
 import {getToken} from '../utils/get-token';
 import {
   useTheme,
-  TypePresetKeys,
+  TypographyPresetKeys,
   SpacePresetKeys,
   StylePresetKeys,
 } from '../theme';
@@ -25,7 +25,7 @@ const TextBlockWithPre = styled(TextBlock)`
 `;
 
 const getStyledTextBlock = (
-  typePreset: TypePresetKeys,
+  typographyPreset: TypographyPresetKeys,
   stylePreset: StylePresetKeys,
   spaceInline: SpacePresetKeys,
 ) => ({
@@ -39,7 +39,7 @@ const getStyledTextBlock = (
     <TextBlockWithPre
       as="span"
       overrides={{
-        typePreset,
+        typographyPreset,
         stylePreset,
       }}
     >
@@ -89,7 +89,7 @@ export const Byline: React.FC<BylineProps> = ({bylineData, overrides}) => {
     {theme, overrides},
     'byline.link',
     'link',
-    'typePreset',
+    'typographyPreset',
   );
 
   const textStyles = getToken(
@@ -102,7 +102,7 @@ export const Byline: React.FC<BylineProps> = ({bylineData, overrides}) => {
     {theme, overrides},
     'byline',
     'link',
-    'typePreset',
+    'typographyPreset',
   );
 
   const dividerStyles = getToken(
@@ -148,7 +148,7 @@ export const Byline: React.FC<BylineProps> = ({bylineData, overrides}) => {
                       <Link
                         overrides={{
                           stylePreset: linkStyles,
-                          typePreset: linkTypes,
+                          typographyPreset: linkTypes,
                         }}
                         href={href}
                         rel="author"

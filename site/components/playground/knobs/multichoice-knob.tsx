@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   styled,
-  getTypePresetFromTheme,
+  getTypographyPresetFromTheme,
   getSizingFromTheme,
   css,
   getColorFromTheme,
@@ -12,7 +12,7 @@ import {LegacyBlock} from '../../legacy-block';
 import {KnobContainer, StyledTitle, getHash} from './common';
 
 export interface Overrides {
-  typePreset?: string;
+  typographyPreset?: string;
   stylePreset?: string;
   paddingPreset?: string;
 
@@ -44,7 +44,7 @@ interface StyledLabelProps {
 
 const StyledLabel = styled.label<StyledLabelProps>`
   display: inline-block;
-  ${getTypePresetFromTheme('body010')};
+  ${getTypographyPresetFromTheme('body010')};
   padding: ${getSizingFromTheme('sizing020')} ${getSizingFromTheme('sizing040')};
   background-color: ${getColorFromTheme('interface020')};
   color: ${getColorFromTheme('inkSubtle')};

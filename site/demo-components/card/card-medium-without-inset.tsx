@@ -21,11 +21,11 @@ import {
   cardTeaserKickerSpaceInline,
   cardTeaserLeadSpaceStack,
   cardActionsSpace,
-  cardTeaserKickerMediumTypePreset,
-  cardTeaserHeadlineMediumTypePreset,
-  cardTeaserLeadMediumTypePreset,
-  cardLabelMediumTypePreset,
-  cardTagMediumTypePreset,
+  cardTeaserKickerMediumTypographyPreset,
+  cardTeaserHeadlineMediumTypographyPreset,
+  cardTeaserLeadMediumTypographyPreset,
+  cardLabelMediumTypographyPreset,
+  cardTagMediumTypographyPreset,
 } from './common';
 
 const cardMediumTags = () => (
@@ -33,14 +33,20 @@ const cardMediumTags = () => (
     <Tag
       size={TagSize.Small}
       href="/"
-      overrides={{stylePreset: 'cardTag', typePreset: cardTagMediumTypePreset}}
+      overrides={{
+        stylePreset: 'cardTag',
+        typographyPreset: cardTagMediumTypographyPreset,
+      }}
     >
       News
     </Tag>
     <Tag
       size={TagSize.Small}
       href="/"
-      overrides={{stylePreset: 'cardTag', typePreset: cardTagMediumTypePreset}}
+      overrides={{
+        stylePreset: 'cardTag',
+        typographyPreset: cardTagMediumTypographyPreset,
+      }}
     >
       Sport
     </Tag>
@@ -67,7 +73,7 @@ export const CardMediumWithoutInset = () => (
               overrides={{
                 paddingPreset: 'spaceInset000Squish',
                 stylePreset: 'cardLabel',
-                typePreset: cardLabelMediumTypePreset,
+                typographyPreset: cardLabelMediumTypographyPreset,
               }}
             >
               <Picture />
@@ -85,12 +91,12 @@ export const CardMediumWithoutInset = () => (
               overrides={{
                 heading: {
                   stylePreset: 'cardTeaserHeadline',
-                  typePreset: cardTeaserHeadlineMediumTypePreset,
+                  typographyPreset: cardTeaserHeadlineMediumTypographyPreset,
                 },
                 kicker: {
                   spaceInline: cardTeaserKickerSpaceInline,
                   stylePreset: 'cardTeaserKicker',
-                  typePreset: cardTeaserKickerMediumTypePreset,
+                  typographyPreset: cardTeaserKickerMediumTypographyPreset,
                 },
               }}
             >
@@ -106,7 +112,7 @@ export const CardMediumWithoutInset = () => (
             <TextBlock
               overrides={{
                 stylePreset: 'cardTeaserLead',
-                typePreset: cardTeaserLeadMediumTypePreset,
+                typographyPreset: cardTeaserLeadMediumTypographyPreset,
               }}
             >
               The bank holiday weekend has seen some mixed weather, but as the

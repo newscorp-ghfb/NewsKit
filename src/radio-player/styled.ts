@@ -2,7 +2,7 @@ import {
   styled,
   getColorFromTheme,
   getSpacingFromTheme,
-  getTypePresetFromTheme,
+  getTypographyPresetFromTheme,
   getFontsFromTheme,
   getFontSizingFromTheme,
 } from '../utils/style';
@@ -15,15 +15,15 @@ export const Label = styled.span`
 `;
 
 export const ProgrammeTime = styled(Label)`
-  ${getTypePresetFromTheme('meta010')};
+  ${getTypographyPresetFromTheme('meta010')};
   display: inline-block;
 `;
 
 export const ProgrammeTitle = styled(H1)<CenterProp>`
   ${({center}) =>
     center
-      ? getTypePresetFromTheme('heading020')
-      : getTypePresetFromTheme('heading040')};
+      ? getTypographyPresetFromTheme('heading020')
+      : getTypographyPresetFromTheme('heading040')};
   text-align: ${({center}) => (center ? 'center' : 'left')};
   margin: 0;
   width: 100%;
@@ -31,13 +31,13 @@ export const ProgrammeTitle = styled(H1)<CenterProp>`
 
 export const ProgrammeDescription = styled(Label)<CenterProp>`
   margin-bottom: ${getSpacingFromTheme('space050')};
-  ${getTypePresetFromTheme('subhead010')};
+  ${getTypographyPresetFromTheme('subhead010')};
   text-align: ${({center}) => (center ? 'center' : 'left')};
   width: 100%;
 `;
 
 export const ProgrammeTags = styled(Label)`
-  ${getTypePresetFromTheme('meta010')};
+  ${getTypographyPresetFromTheme('meta010')};
   ${getFontSizingFromTheme('fontSize020', 'fontLineHeight040')};
 `;
 

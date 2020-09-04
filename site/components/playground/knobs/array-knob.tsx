@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   styled,
-  getTypePresetFromTheme,
+  getTypographyPresetFromTheme,
   getSizingFromTheme,
   getColorFromTheme,
   ButtonSize,
@@ -31,12 +31,12 @@ export interface ArrayKnobProps {
 
 export const StyledLabel = styled.label`
   display: block;
-  ${getTypePresetFromTheme('body030')};
+  ${getTypographyPresetFromTheme('body030')};
   margin: ${getSizingFromTheme('sizing040')} 0px;
 `;
 
 export const StyledInput = styled.input`
-  ${getTypePresetFromTheme('body010')};
+  ${getTypographyPresetFromTheme('body010')};
   display: block;
   padding: ${getSizingFromTheme('sizing020')};
   background-color: ${getColorFromTheme('interface020')};

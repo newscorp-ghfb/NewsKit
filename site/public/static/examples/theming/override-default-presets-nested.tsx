@@ -1,11 +1,11 @@
 // Default presets:
 byline: {
   stylePreset: 'byline',
-  typePreset: 'meta020',
+  typographyPreset: 'meta020',
   space: 'sizing020',
   link: {
     stylePreset: 'bylineLink',
-    typePreset: 'meta020',
+    typographyPreset: 'meta020',
   },
   divider: {
     stylePreset: 'bylineDivider',
@@ -17,11 +17,11 @@ byline: {
 <Byline
   overrides={{
     stylePreset: 'bylineCustom',
-    typePreset: 'bylineCustom',
+    typographyPreset: 'bylineCustom',
     space: 'sizing030',
     link: {
       stylePreset: 'bylineLinkCustom',
-      typePreset: 'bylineLinkCustom',
+      typographyPreset: 'bylineLinkCustom',
     },
     divider: {
       stylePreset: 'bylineDividerCustom',

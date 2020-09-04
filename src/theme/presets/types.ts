@@ -1,4 +1,4 @@
-import {Fonts} from '../primitives/fonts';
+import {Fonts} from '../foundations/fonts';
 
 //
 // Style Presets
@@ -33,10 +33,10 @@ export interface StylePreset {
 export type StylePresetStates = keyof StylePreset;
 
 //
-// Type Presets
+// Typography Presets
 //
 
-export interface TypePreset {
+export interface TypographyPreset {
   // TODO: after theme refactor - create type for these generic interpolation style functions and differentiate
   // between functions allowed in uncompiled theme vs not allowed in compiled theme.
   fontFamily?: string | Function;
@@ -46,5 +46,5 @@ export interface TypePreset {
   letterSpacing?: string | number | Function;
   fontStyle?: string | Function;
 }
-export type TypePresetKeys = keyof TypePreset;
+export type TypographyPresetKeys = keyof TypographyPreset;
 export type FontKeys = keyof Fonts;

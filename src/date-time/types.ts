@@ -5,14 +5,14 @@ export interface DateTimeProps {
   suffix?: string;
   overrides?: {
     stylePreset?: string;
-    typePreset?: string;
+    typographyPreset?: string;
     prefix?: {
       stylePreset?: string;
-      typePreset?: string;
+      typographyPreset?: string;
     };
     suffix?: {
       stylePreset?: string;
-      typePreset?: string;
+      typographyPreset?: string;
     };
   };
 }

@@ -1,4 +1,4 @@
-import {FontConfig, fonts, Fonts} from '../../theme/primitives/fonts';
+import {FontConfig, fonts, Fonts} from '../../theme/foundations/fonts';
 import {getFontProps} from '../get-font-props';
 
 const fontSize = '12px';

@@ -1,6 +1,6 @@
 import {
   styled,
-  getTypePresetFromTheme,
+  getTypographyPresetFromTheme,
   getSizingFromTheme,
   getColorFromTheme,
 } from 'newskit';
@@ -10,7 +10,7 @@ export const StyledNavItem = styled.div<{
   hasActiveChild: boolean;
   level: number;
 }>`
-  ${getTypePresetFromTheme('body020')};
+  ${getTypographyPresetFromTheme('body020')};
   line-height: 1.5rem;
   background-color: transparent;
   box-sizing: border-box;
@@ -56,7 +56,7 @@ export const StyledNavItem = styled.div<{
 `;
 
 export const StyledContainer = styled.nav`
-  ${getTypePresetFromTheme('body030')};
+  ${getTypographyPresetFromTheme('body030')};
   list-style-type: none;
   margin: 0;
 `;

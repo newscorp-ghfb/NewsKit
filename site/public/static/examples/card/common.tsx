@@ -25,17 +25,17 @@ const cardTeaserLeadSpaceStack = {
 const cardTeaserLeadInsetVariantSpaceStack = 'space000';
 const cardActionsSpace = 'sizing040';
 
-const cardTeaserKickerSmallTypePreset = 'heading010';
-const cardTeaserHeadlineSmallTypePreset = 'heading010';
-const cardTeaserLeadSmallTypePreset = 'body010';
-const cardLabelSmallTypePreset = 'label010';
-const cardTagSmallTypePreset = 'label010';
+const cardTeaserKickerSmallTypographyPreset = 'heading010';
+const cardTeaserHeadlineSmallTypographyPreset = 'heading010';
+const cardTeaserLeadSmallTypographyPreset = 'body010';
+const cardLabelSmallTypographyPreset = 'label010';
+const cardTagSmallTypographyPreset = 'label010';
 
-const cardTeaserKickerMediumTypePreset = 'heading030';
-const cardTeaserHeadlineMediumTypePreset = 'heading030';
-const cardTeaserLeadMediumTypePreset = 'body010';
-const cardLabelMediumTypePreset = 'label010';
-const cardTagMediumTypePreset = 'label010';
+const cardTeaserKickerMediumTypographyPreset = 'heading030';
+const cardTeaserHeadlineMediumTypographyPreset = 'heading030';
+const cardTeaserLeadMediumTypographyPreset = 'body010';
+const cardLabelMediumTypographyPreset = 'label010';
+const cardTagMediumTypographyPreset = 'label010';
 
 const labelDefault = {
   base: {
@@ -111,14 +111,14 @@ export {
   cardTeaserLeadSpaceStack,
   cardTeaserLeadInsetVariantSpaceStack,
   cardActionsSpace,
-  cardTeaserKickerSmallTypePreset,
-  cardTeaserHeadlineSmallTypePreset,
-  cardTeaserLeadSmallTypePreset,
-  cardLabelSmallTypePreset,
-  cardTagSmallTypePreset,
-  cardTeaserKickerMediumTypePreset,
-  cardTeaserHeadlineMediumTypePreset,
-  cardTeaserLeadMediumTypePreset,
-  cardLabelMediumTypePreset,
-  cardTagMediumTypePreset,
+  cardTeaserKickerSmallTypographyPreset,
+  cardTeaserHeadlineSmallTypographyPreset,
+  cardTeaserLeadSmallTypographyPreset,
+  cardLabelSmallTypographyPreset,
+  cardTagSmallTypographyPreset,
+  cardTeaserKickerMediumTypographyPreset,
+  cardTeaserHeadlineMediumTypographyPreset,
+  cardTeaserLeadMediumTypographyPreset,
+  cardLabelMediumTypographyPreset,
+  cardTagMediumTypographyPreset,
 };

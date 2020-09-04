@@ -1,7 +1,7 @@
 import {
   styled,
   getSizingFromTheme,
-  getTypePresetFromTheme,
+  getTypographyPresetFromTheme,
   getColorFromTheme,
 } from 'newskit';
 
@@ -14,7 +14,7 @@ export const KnobContainer = styled.div`
 export const StyledTitle = styled.span`
   display: block;
   margin: ${getSizingFromTheme('sizing040')} 0px;
-  ${getTypePresetFromTheme('label030')};
+  ${getTypographyPresetFromTheme('label030')};
   color: ${getColorFromTheme('inkBase')};
 `;
 

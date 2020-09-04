@@ -2,7 +2,7 @@ import * as React from 'react';
 import {
   Link,
   getMediaQueryFromTheme,
-  getTypePresetFromTheme,
+  getTypographyPresetFromTheme,
   getColorFromTheme,
   getSizingFromTheme,
   styled,
@@ -50,7 +50,7 @@ const ListItem = styled.li`
   margin-right: 16px;
 
   a {
-    ${getTypePresetFromTheme('body020')};
+    ${getTypographyPresetFromTheme('body020')};
   }
 `;
 

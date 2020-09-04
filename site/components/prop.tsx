@@ -3,7 +3,7 @@
 import React from 'react';
 import {
   styled,
-  getTypePresetFromTheme,
+  getTypographyPresetFromTheme,
   getSizingFromTheme,
   getBorderFromTheme,
   getColorFromTheme,
@@ -25,7 +25,7 @@ export interface DefaultValueProps {
 }
 
 const StyledContainer = styled.div<Pick<PropProps, 'nested'>>`
-  ${getTypePresetFromTheme('body020')}
+  ${getTypographyPresetFromTheme('body020')}
   line-height: 1.3;
   margin-bottom: ${getSizingFromTheme('sizing060')};
   color: ${getColorFromTheme('inkBase')};
@@ -34,7 +34,7 @@ const StyledContainer = styled.div<Pick<PropProps, 'nested'>>`
 `;
 
 const PropsRow = styled.div`
-  ${getTypePresetFromTheme('body020')};
+  ${getTypographyPresetFromTheme('body020')};
   font-family: monospace;
   padding-bottom: ${getSizingFromTheme('sizing020')};
   border-bottom-style: solid;

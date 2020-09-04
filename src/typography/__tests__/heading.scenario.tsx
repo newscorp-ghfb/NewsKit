@@ -31,27 +31,39 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <H1 overrides={{stylePreset: 'linkInline', typePreset: 'body010'}}>
+          <H1
+            overrides={{stylePreset: 'linkInline', typographyPreset: 'body010'}}
+          >
             H1 with override
           </H1>
           <br />
-          <H2 overrides={{stylePreset: 'linkInline', typePreset: 'body020'}}>
+          <H2
+            overrides={{stylePreset: 'linkInline', typographyPreset: 'body020'}}
+          >
             H2 with override
           </H2>
           <br />
-          <H3 overrides={{stylePreset: 'linkInline', typePreset: 'body030'}}>
+          <H3
+            overrides={{stylePreset: 'linkInline', typographyPreset: 'body030'}}
+          >
             H3 with override
           </H3>
           <br />
-          <H4 overrides={{stylePreset: 'linkInline', typePreset: 'body010'}}>
+          <H4
+            overrides={{stylePreset: 'linkInline', typographyPreset: 'body010'}}
+          >
             H4 with override
           </H4>
           <br />
-          <H5 overrides={{stylePreset: 'linkInline', typePreset: 'body020'}}>
+          <H5
+            overrides={{stylePreset: 'linkInline', typographyPreset: 'body020'}}
+          >
             H5 with override
           </H5>
           <br />
-          <H6 overrides={{stylePreset: 'linkInline', typePreset: 'body030'}}>
+          <H6
+            overrides={{stylePreset: 'linkInline', typographyPreset: 'body030'}}
+          >
             H6 with override
           </H6>
         </React.Fragment>

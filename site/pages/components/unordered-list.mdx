@@ -39,8 +39,8 @@ An unordered list can be used to produce a list of related content prefixed with
     <Prop name="stylePreset" type="string" default="unorderedListItemContent">
       If provided, this overrides the style preset applied to content.
     </Prop>
-    <Prop name="typePreset" type="string" default="unorderedListItemContent">
-      If provided, this overrides the type preset applied to content.
+    <Prop name="typographyPreset" type="string" default="unorderedListItemContent">
+      If provided, this overrides the typography preset applied to content.
     </Prop>
   </Prop>
    <Prop name="marker">
@@ -156,14 +156,14 @@ An unordered list can be used to produce a list of related content prefixed with
       ],
     },
     {
-      name: 'Type Preset Overrides',
+      name: 'Typography Preset Overrides',
       propName: 'overrides',
       options: [
         {
           label: 'default',
           value: {
             content: {
-              typePreset: 'unorderedListItemContent'
+              typographyPreset: 'unorderedListItemContent'
             },
           },
           isDefault: true,
@@ -172,7 +172,7 @@ An unordered list can be used to produce a list of related content prefixed with
           label: 'button020',
           value: {
             content: {
-              typePreset: 'button020'
+              typographyPreset: 'button020'
             },
           },
         },

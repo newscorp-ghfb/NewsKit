@@ -39,7 +39,7 @@ Although the scale should remain consistent, type attributes can use custom valu
 In the type scale, headlines range from 1 to 6. Headlines are the largest text on the screen, reserved for short, important text or numerals.
 The components for rendering Headlines are `H1`, `H2`, `H3`, `H4`, `H5`, `H6`.
 
-These components can accept overrides for the style and type presets.
+These components can accept overrides for the style and typography presets.
 All heading components follow a consistent prop and override structure. The default style presets for these map to from `headlineH1` - `headlineH6`
 
 ##### Props
@@ -51,8 +51,8 @@ All heading components follow a consistent prop and override structure. The defa
     <Prop name="stylePreset" type="string">
       If provided, this overrides the style preset applied to the Headline.
     </Prop>
-    <Prop name="typePreset" type="string">
-      If provided, this overrides the type preset applied to the Headline.
+    <Prop name="typographyPreset" type="string">
+      If provided, this overrides the typography preset applied to the Headline.
     </Prop>
       Refer to the defaults below for the overrides object structure:
       <CodeFromDefaultPresets componentName="headlineH1" />
@@ -104,15 +104,15 @@ It can be rendered using the P component, shorter for Paragraph.
     <Prop name="stylePreset" type="string" default="paragraph">
       If provided, this overrides the style preset applied to the Paragraph.
     </Prop>
-     <Prop name="typePreset" type="string" default="body020">
-      If provided, this overrides the type preset applied to the Paragraph.
+     <Prop name="typographyPreset" type="string" default="body020">
+      If provided, this overrides the typography preset applied to the Paragraph.
     </Prop>
     <Prop name="dropCap" type="object">
        <Prop name="stylePreset" type="string" default="paragraphDropCap">
         If provided, this overrides the style preset applied to the Paragraph's dropCap.
       </Prop>
-      <Prop name="typePreset" type="string" default="display040">
-        If provided, this overrides the type preset applied to the Paragraph's dropCap.
+      <Prop name="typographyPreset" type="string" default="display040">
+        If provided, this overrides the typography preset applied to the Paragraph's dropCap.
       </Prop>
       <Prop name="space" type="string" default="space20">
         If provided, overrides the vertical space above the drop cap, use to align the drop cap to the first line of the paragraph.

@@ -1,9 +1,9 @@
 import {
   getColorFromTheme,
-  getAnimationFromTheme,
+  getMotionFromTheme,
   getSizingFromTheme,
   getBorderFromTheme,
-  getTypePresetFromTheme,
+  getTypographyPresetFromTheme,
   getFontSizingFromTheme,
   getShadowFromTheme,
   getFontsFromTheme,
@@ -13,70 +13,72 @@ import {getFontSizing} from '../font-sizing';
 jest.mock('../font-sizing');
 
 describe('Style helpers', () => {
-  test('getTypePresetFromTheme()({theme}) returns {}', () => {
+  test('getTypographyPresetFromTheme()({theme}) returns {}', () => {
     const props = {
       theme: {},
     };
-    const font = getTypePresetFromTheme<{font?: string; theme: any}>()(props);
+    const font = getTypographyPresetFromTheme<{font?: string; theme: any}>()(
+      props,
+    );
     expect(font).toEqual('');
   });
 
-  test('getTypePresetFromTheme("font100")({theme}) returns "font100_font"', () => {
+  test('getTypographyPresetFromTheme("font100")({theme}) returns "font100_font"', () => {
     const props = {
       theme: {
-        typePresets: {
+        typographyPresets: {
           font100: 'font100_font',
         },
       },
     };
-    const font = getTypePresetFromTheme<{font?: string; theme: any}>(
+    const font = getTypographyPresetFromTheme<{font?: string; theme: any}>(
       'font100' as any,
     )(props);
     expect(font).toBe('font100_font');
   });
 
-  test('getTypePresetFromTheme("font100", "font")({theme}) returns "font100_font"', () => {
+  test('getTypographyPresetFromTheme("font100", "font")({theme}) returns "font100_font"', () => {
     const props = {
       theme: {
-        typePresets: {
+        typographyPresets: {
           font100: 'font100_font',
         },
       },
     };
-    const font = getTypePresetFromTheme<{font?: string; theme: any}>(
+    const font = getTypographyPresetFromTheme<{font?: string; theme: any}>(
       'font100' as any,
       'font',
     )(props);
     expect(font).toBe('font100_font');
   });
 
-  test('getTypePresetFromTheme("font100", "font")({theme, font: "font200"}) returns "font200_font"', () => {
+  test('getTypographyPresetFromTheme("font100", "font")({theme, font: "font200"}) returns "font200_font"', () => {
     const props = {
       theme: {
-        typePresets: {
+        typographyPresets: {
           font100: 'font100_font',
           font200: 'font200_font',
         },
       },
       font: 'font200',
     };
-    const font = getTypePresetFromTheme<{font?: string; theme: any}>(
+    const font = getTypographyPresetFromTheme<{font?: string; theme: any}>(
       'font100' as any,
       'font',
     )(props);
     expect(font).toBe('font200_font');
   });
 
-  test('getTypePresetFromTheme(undefined, "font")({theme, font: "font100"}) returns "font100_font"', () => {
+  test('getTypographyPresetFromTheme(undefined, "font")({theme, font: "font100"}) returns "font100_font"', () => {
     const props = {
       theme: {
-        typePresets: {
+        typographyPresets: {
           font100: 'font100_font',
         },
       },
       font: 'font100',
     };
-    const font = getTypePresetFromTheme<{font?: string; theme: any}>(
+    const font = getTypographyPresetFromTheme<{font?: string; theme: any}>(
       undefined,
       'font',
     )(props);
@@ -235,40 +237,40 @@ describe('Style helpers', () => {
     expect(declaration).toEqual('radius200_border');
   });
 
-  test('getAnimationFromTheme("animationDuration020")({theme}) returns "animationDuration020_timing"', () => {
+  test('getMotionFromTheme("motionDuration020")({theme}) returns "motionDuration020_timing"', () => {
     const props = {
       theme: {
-        animations: {
-          animationDuration020: 'animationDuration020_timing',
+        motions: {
+          motionDuration020: 'motionDuration020_timing',
         },
       },
     };
-    const declaration = getAnimationFromTheme<{animation?: string; theme: any}>(
-      'animationDuration020' as any,
+    const declaration = getMotionFromTheme<{motion?: string; theme: any}>(
+      'motionDuration020' as any,
     )(props);
-    expect(declaration).toEqual('animationDuration020_timing');
+    expect(declaration).toEqual('motionDuration020_timing');
   });
 
-  test('getAnimationFromTheme("animationDuration020", "animation")({theme, animation: "animationDuration040"}) returns "animationDuration040_timing"', () => {
+  test('getMotionFromTheme("motionDuration020", "motion")({theme, motion: "motionDuration040"}) returns "motionDuration040_timing"', () => {
     const theme = {
-      animations: {
-        animationDuration020: 'animationDuration020_timing',
-        animationDuration040: 'animationDuration040_timing',
+      motions: {
+        motionDuration020: 'motionDuration020_timing',
+        motionDuration040: 'motionDuration040_timing',
       },
     };
 
     const props = {
       theme,
-      animation: 'animationDuration040',
+      motion: 'motionDuration040',
     };
-    const declaration = getAnimationFromTheme<{animation?: string; theme: any}>(
-      'animationDuration020' as any,
-      'animation',
+    const declaration = getMotionFromTheme<{motion?: string; theme: any}>(
+      'motionDuration020' as any,
+      'motion',
     )(props);
-    expect(declaration).toEqual('animationDuration040_timing');
+    expect(declaration).toEqual('motionDuration040_timing');
   });
 
-  test('getFontSizingFromTheme with font size primitive returns expected font sizing object', () => {
+  test('getFontSizingFromTheme with font size foundations returns expected font sizing object', () => {
     const mockFontSizing = {
       fontSize: '1234px',
       lineHeight: 25.5,
@@ -277,7 +279,7 @@ describe('Style helpers', () => {
 
     const props = {
       theme: {
-        typePresets: {},
+        typographyPresets: {},
         fonts: {
           fontSize030: '16px',
           fontLineHeight030: 1.5,
@@ -297,7 +299,7 @@ describe('Style helpers', () => {
     expect(fontSizing).toEqual(mockFontSizing);
   });
 
-  test('getFontSizingFromTheme with typePresets token returns expected font sizing object', () => {
+  test('getFontSizingFromTheme with typographyPresets token returns expected font sizing object', () => {
     const mockFontSizing = {
       fontSize: '1234px',
       lineHeight: 25.5,
@@ -306,7 +308,7 @@ describe('Style helpers', () => {
 
     const props = {
       theme: {
-        typePresets: {
+        typographyPresets: {
           body010: {
             fontSize: '32px',
           },
@@ -322,7 +324,7 @@ describe('Style helpers', () => {
     );
 
     expect(getFontSizing).toHaveBeenCalledWith(
-      props.theme.typePresets.body010.fontSize,
+      props.theme.typographyPresets.body010.fontSize,
       props.theme.fonts.fontLineHeight030,
     );
     expect(fontSizing).toEqual(mockFontSizing);

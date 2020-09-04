@@ -1,6 +1,6 @@
-import {StylePreset, TypePreset} from './presets/types';
+import {StylePreset, TypographyPreset} from './presets/types';
 import {DeepPartial} from '../utils/types';
-import {colors} from './primitives';
+import {colors} from './foundations';
 
 export type Breakpoints = Record<'xs' | 'sm' | 'md' | 'lg', number>;
 export enum Devices {
@@ -9,8 +9,8 @@ export enum Devices {
 }
 
 export interface ThemeBase {
-  // primitives
-  animations: Record<string, string>;
+  // foundations
+  motions: Record<string, string>;
   borders: Record<string, string>;
   breakpoints: Breakpoints;
   colors: Record<string, string>;
@@ -23,7 +23,7 @@ export interface ThemeBase {
   // presets
   spacePresets: Record<string, string>;
   stylePresets: Record<string, StylePreset>;
-  typePresets: Record<string, TypePreset>;
+  typographyPresets: Record<string, TypographyPreset>;
 
   // defaults
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -46,7 +46,7 @@ export interface Theme extends ThemeBase, ThemeIdentifier {
   compiled: true;
 }
 
-export type AnimationKeys = string;
+export type MotionKeys = string;
 export type BorderKeys = string;
 export type BorderRadiusKeys = string;
 export type BreakpointKeys = keyof Breakpoints;
@@ -54,12 +54,12 @@ export type ColorKeys = string;
 export type IconSizeKeys = string;
 export type SizingKeys = string;
 export type StylePresetKeys = string;
-export type TypePresetKeys = string;
+export type TypographyPresetKeys = string;
 export type SpacePresetKeys = string;
 export type PaddingPresetKeys = string;
 export type ShadowKeys = string;
 export type GridKeys = string;
-export type FontPrimitivesKeys = string;
+export type FontKeys = string;
 export type FontSizeKeys = string;
 export type LineHeightKeys = string;
 export type Colors = typeof colors;

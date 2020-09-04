@@ -16,7 +16,7 @@ export interface UnorderedListProps {
     spaceStack?: SpacePresetKeys;
     content?: {
       stylePreset?: string;
-      typePreset?: string;
+      typographyPreset?: string;
     };
     marker?: {
       stylePreset?: string;
@@ -70,11 +70,11 @@ export const UnorderedList: React.FC<UnorderedListProps> = ({
     'marker',
     'size',
   );
-  const contentTypePresetToken = getToken(
+  const contentTypographyPresetToken = getToken(
     {theme, overrides},
     'unorderedList.content',
     'content',
-    'typePreset',
+    'typographyPreset',
   );
 
   return (
@@ -93,7 +93,9 @@ export const UnorderedList: React.FC<UnorderedListProps> = ({
                   <ListItemMarker size={markerSizeToken} />
                 </MarkerBlock>
               )}
-              <TextBlock overrides={{typePreset: contentTypePresetToken}}>
+              <TextBlock
+                overrides={{typographyPreset: contentTypographyPresetToken}}
+              >
                 {node}
               </TextBlock>
             </StyledBlock>

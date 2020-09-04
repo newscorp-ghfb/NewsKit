@@ -5,10 +5,10 @@ import {
   Link as StyledLink,
   styled,
   css,
-  getTypePresetFromTheme,
+  getTypographyPresetFromTheme,
   getSizingFromTheme,
   getColorFromTheme,
-  TypePresetKeys,
+  TypographyPresetKeys,
   ColorKeys,
 } from 'newskit';
 import {LegacyBlock} from './legacy-block';
@@ -48,7 +48,7 @@ const Code: React.FC<TextProps> = ({children}) => (
 
 interface HeadingContainerProps {
   as: React.ElementType;
-  font: TypePresetKeys;
+  font: TypographyPresetKeys;
   weight?: number;
   lineHeight?: number;
   size?: string;
@@ -61,7 +61,7 @@ interface HeadingContainerProps {
 }
 
 const TextElement = styled.span<HeadingContainerProps>`
-  ${getTypePresetFromTheme(undefined, 'font')};
+  ${getTypographyPresetFromTheme(undefined, 'font')};
   color: ${getColorFromTheme('inkContrast', 'color')};
   margin-bottom: ${getSizingFromTheme('sizing050')};
   font-weight: ${({weight}) => weight || null};
@@ -94,7 +94,7 @@ export const Heading = ({
   wrapText,
 }: {
   element: React.ElementType;
-  fontType: TypePresetKeys;
+  fontType: TypographyPresetKeys;
   children?: React.ReactChild;
   weight?: number;
   size?: string;
@@ -150,7 +150,7 @@ const Blockquote = styled.blockquote`
 `;
 
 export const Table = styled.table`
-  ${getTypePresetFromTheme('body020')}
+  ${getTypographyPresetFromTheme('body020')}
   box-shadow: 0 3px 4px 2px ${getColorFromTheme('interface010')};
 
   &,

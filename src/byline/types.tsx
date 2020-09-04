@@ -12,11 +12,11 @@ export interface BylineProps {
   bylineData: BylineData[];
   overrides?: {
     stylePreset?: string;
-    typePreset?: string;
+    typographyPreset?: string;
     space?: SizingKeys;
     link?: {
       stylePreset?: string;
-      typePreset?: string;
+      typographyPreset?: string;
     };
     divider?: {
       stylePreset?: string;

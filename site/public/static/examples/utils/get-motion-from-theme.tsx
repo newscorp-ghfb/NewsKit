@@ -1,4 +1,4 @@
-import {getAnimationFromTheme, styled, getColorFromTheme} from 'newskit';
+import {getMotionFromTheme, styled, getColorFromTheme} from 'newskit';
 
 const Paragraph = styled.p`
   @keyframes rotating {
@@ -11,5 +11,5 @@ const Paragraph = styled.p`
   }
 
   text-align: center;
-  animation-duration: ${getAnimationFromTheme('animationDuration040', animation)};
+  animation-duration: ${getMotionFromTheme('motionDuration040', motion)};
 `;

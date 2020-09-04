@@ -2,7 +2,7 @@ import React from 'react';
 import {
   styled,
   getSizingFromTheme,
-  getTypePresetFromTheme,
+  getTypographyPresetFromTheme,
   getColorFromTheme,
   getBuiId,
 } from 'newskit';
@@ -27,12 +27,12 @@ const StyledContainer = styled.span`
 `;
 
 const StyledSelectLabel = styled.label`
-  ${getTypePresetFromTheme('label030')};
+  ${getTypographyPresetFromTheme('label030')};
   color: ${getColorFromTheme('inkBase')};
 `;
 
 const StyledSelect = styled.select`
-  ${getTypePresetFromTheme('body010')}
+  ${getTypographyPresetFromTheme('body010')}
   line-height:1.5;
   margin-left: ${getSizingFromTheme('sizing020')};
   padding: ${getSizingFromTheme('sizing020')} ${getSizingFromTheme('sizing080')}

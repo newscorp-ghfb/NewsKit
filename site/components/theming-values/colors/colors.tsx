@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Grid, Cell, useTheme, Theme, GridProps, P} from 'newskit';
-import {palettes as newskitLightPaletteColors} from 'newskit/theme/primitives/colors';
-import {overlays} from 'newskit/theme/primitives/overlays';
+import {palettes as newskitLightPaletteColors} from 'newskit/theme/foundations/colors';
+import {overlays} from 'newskit/theme/foundations/overlays';
 import {H3} from '../../markdown-elements';
 import {ColorPalettesWrapper} from './styled';
 import {
@@ -82,9 +82,9 @@ export const ColorPalettes: React.FC = () => {
   );
 };
 
-export const ColorPrimitives = (): JSX.Element => {
+export const ColorFoundations = (): JSX.Element => {
   const theme = useTheme();
-  const colorPrimitives = Object.entries(theme.colors).reduce(
+  const colorFoundations = Object.entries(theme.colors).reduce(
     (acc, [key, value]) => {
       if (!paletteColorNames.includes(key)) {
         acc[key] = value;
@@ -94,7 +94,7 @@ export const ColorPrimitives = (): JSX.Element => {
     {} as Record<string, string>,
   );
 
-  const primitiveObjects = Object.entries({...colorPrimitives, ...overlays})
+  const foundationObjects = Object.entries({...colorFoundations, ...overlays})
     .map(
       mapColorObjects(
         theme,
@@ -103,7 +103,7 @@ export const ColorPrimitives = (): JSX.Element => {
     )
     .reduce(groupColorObjects, {} as Record<string, ThemeColor[]>);
 
-  const palettes = Object.values(primitiveObjects);
+  const palettes = Object.values(foundationObjects);
 
   return (
     <Grid xsMargin="sizing000">

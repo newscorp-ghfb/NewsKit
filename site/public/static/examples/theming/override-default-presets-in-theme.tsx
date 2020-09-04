@@ -1,14 +1,14 @@
 headline: {
   heading: {
     stylePreset: 'headlineContent',
-    typePreset: {
+    typographyPreset: {
       xs: 'headline100',
       md: 'headline200',
     },
   },
   kicker: {
     stylePreset: 'headlineKicker',
-    typePreset: {
+    typographyPreset: {
       xs: 'heading060',
       sm: 'heading060',
       md: 'heading070',

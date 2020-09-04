@@ -23,7 +23,7 @@ A link requires a href property to be passed in.
 
 The default link component uses the following style tokens, which can be overridden:
 
-| Theme Token | Color Primitive | Color Value                               |
+| Theme Token | Contextual Color | Color Value                               |
 | ----------- | --------------- | ----------------------------------------- |
 | linkText    | inkLink          | <TextBoxSwatch themeColor="inkLink"/>      |
 | linkVisited | inkLinkVisited     | <TextBoxSwatch themeColor="inkLinkVisited"/> |
@@ -64,8 +64,8 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
     <Prop name="stylePreset" type="string" default="linkInline">
       If provided, this overrides the style preset applied to the Link.
     </Prop>
-    <Prop name="typePreset" type="string" default="undefined">
-      If provided, this overrides the type preset applied to the Link.
+    <Prop name="typographyPreset" type="string" default="undefined">
+      If provided, this overrides the typography preset applied to the Link.
     </Prop>
     <Prop name="space" type="SizingKeys">
      The "space" token refers to the spacing between child items. Only applicable if the Link children contains more than one element, or the external icon is rendered.

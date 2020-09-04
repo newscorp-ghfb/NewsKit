@@ -39,10 +39,10 @@ describe('Tag', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders a tag with a custom typePreset', () => {
+  test('renders a tag with a custom typographyPreset', () => {
     const props: TagProps = {
       overrides: {
-        typePreset: 'label030',
+        typographyPreset: 'label030',
       },
     };
     const fragment = renderToFragmentWithTheme(renderTagWithText, props);

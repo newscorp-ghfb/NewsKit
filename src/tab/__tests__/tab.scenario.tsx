@@ -219,7 +219,7 @@ export default {
                   ariaLabel="tab label"
                   overrides={{
                     stylePreset: 'tabCustom',
-                    typePreset: 'label030',
+                    typographyPreset: 'label030',
                     space: 'sizing030',
                   }}
                 >

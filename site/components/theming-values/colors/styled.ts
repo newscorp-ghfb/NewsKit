@@ -3,7 +3,7 @@ import {
   styled,
   Flag,
   ColorKeys,
-  getTypePresetFromTheme,
+  getTypographyPresetFromTheme,
   getBorderRadiusFromTheme,
   getColorFromTheme,
   getSizingFromTheme,
@@ -24,7 +24,7 @@ export const StyledSwatchRow = styled.span<
   ThemeColor & {first: boolean; last: boolean}
 >`
   display: inline-block;
-  ${getTypePresetFromTheme('subhead010')};
+  ${getTypographyPresetFromTheme('subhead010')};
   padding: ${getSpacingFromTheme('spaceInset030Squish')};
   width: 100%;
   border-radius: ${getBorderRadius as any};
@@ -36,7 +36,7 @@ export const StyledSwatchRow = styled.span<
 
 export const StyledSwatchCard = styled.div`
   width: 100%;
-  ${getTypePresetFromTheme('subhead010')};
+  ${getTypographyPresetFromTheme('subhead010')};
   box-shadow: ${getShadowFromTheme('shadow030')};
   border-radius: ${getBorderRadius({first: true, last: true})};
   overflow: hidden;
@@ -55,7 +55,7 @@ export const StyledSwatchCardBottom = styled.div<ThemeColor>`
 `;
 
 export const StyledSwatchCardTitle = styled.div`
-  ${getTypePresetFromTheme('heading010')};
+  ${getTypographyPresetFromTheme('heading010')};
 `;
 
 export const StyledSwatchCardDot = styled.div<{backgroundColor: string}>`

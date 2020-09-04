@@ -10,12 +10,12 @@ import {
   AlignSelfProperty,
   PositionProperty,
 } from 'csstype';
-import {ColorKeys, TypePresetKeys, SizingKeys, Responsive} from 'newskit';
+import {ColorKeys, TypographyPresetKeys, SizingKeys, Responsive} from 'newskit';
 
 interface CommonProps {
   as?: React.ElementType;
   backgroundColor?: Responsive<ColorKeys | ColorProperty>;
-  font?: Responsive<TypePresetKeys>;
+  font?: Responsive<TypographyPresetKeys>;
   border?: Responsive<SizingKeys | string>;
   borderTop?: Responsive<SizingKeys | string>;
   borderRight?: Responsive<SizingKeys | string>;

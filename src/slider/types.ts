@@ -1,5 +1,5 @@
 import {Range} from 'react-range';
-import {SizingKeys, StylePresetKeys, TypePresetKeys} from '../theme';
+import {SizingKeys, StylePresetKeys, TypographyPresetKeys} from '../theme';
 import {IconComponent} from '../icons';
 
 type RenderTrackFunction = Range['props']['renderTrack'];
@@ -19,12 +19,12 @@ export interface SliderOverrideProps {
   };
   thumbLabel?: {
     stylePreset?: StylePresetKeys;
-    typePreset?: TypePresetKeys;
+    typographyPreset?: TypographyPresetKeys;
     space?: SizingKeys;
   };
   labels?: {
     stylePreset?: StylePresetKeys;
-    typePreset?: TypePresetKeys;
+    typographyPreset?: TypographyPresetKeys;
     space?: SizingKeys;
   };
 }

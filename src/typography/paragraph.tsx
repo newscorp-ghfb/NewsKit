@@ -1,9 +1,9 @@
 import React from 'react';
-import {styled, getTypePreset, MQ, getSpace} from '../utils/style';
+import {styled, getTypographyPreset, MQ, getSpace} from '../utils/style';
 import {getStylePreset} from '../utils/style-preset';
 import {ScreenReaderOnly} from '../screen-reader-only';
 
-import {StylePresetKeys, TypePresetKeys, SpacePresetKeys} from '../theme';
+import {StylePresetKeys, TypographyPresetKeys, SpacePresetKeys} from '../theme';
 
 export interface ParagraphProps {
   // eslint-disable-next-line
@@ -11,10 +11,10 @@ export interface ParagraphProps {
   dropCap?: boolean;
   overrides?: {
     stylePreset?: MQ<StylePresetKeys>;
-    typePreset?: MQ<TypePresetKeys>;
+    typographyPreset?: MQ<TypographyPresetKeys>;
     dropCap?: {
       stylePreset?: MQ<StylePresetKeys>;
-      typePreset?: MQ<TypePresetKeys>;
+      typographyPreset?: MQ<TypographyPresetKeys>;
       space?: MQ<SpacePresetKeys>;
     };
   };
@@ -24,7 +24,7 @@ export const ParagraphText = styled.p<ParagraphProps>`
   margin: 0;
   padding: 1px 0;
   ${getStylePreset('paragraph', '')};
-  ${getTypePreset('paragraph', '', {withCrop: true})};
+  ${getTypographyPreset('paragraph', '', {withCrop: true})};
 `;
 
 export const ParagraphDropCap = styled.span<ParagraphProps>`
@@ -34,7 +34,7 @@ export const ParagraphDropCap = styled.span<ParagraphProps>`
   margin-right: 0.15em;
 
   margin-top: ${getSpace('paragraph.dropCap', 'dropCap')};
-  ${getTypePreset('paragraph.dropCap', 'dropCap', {withCrop: true})};
+  ${getTypographyPreset('paragraph.dropCap', 'dropCap', {withCrop: true})};
   ${getStylePreset('paragraph.dropCap', 'dropCap')};
 `;
 

@@ -49,8 +49,8 @@ Custom props are detailed below:
     <Prop name="stylePreset" type="string" default="buttonDefault">
       If provided, this overrides the style preset applied to the Button.
     </Prop>
-    <Prop name="typePreset" type="string">
-      If provided, this overrides the type preset applied to the Button. Otherwise,
+    <Prop name="typographyPreset" type="string">
+      If provided, this overrides the typography preset applied to the Button. Otherwise,
       button010, button020 or button030 is used depending on the `size` prop.
     </Prop>
     <Prop name="space" type="SizingKeys" default="sizing020">
@@ -157,32 +157,32 @@ Custom props are detailed below:
       ],
     },
     {
-      name: 'Type Preset',
+      name: 'Typography Preset',
       propName: 'overrides',
       options: [
          {
           label: 'Default',
           value: {
-            typePreset: undefined
+            typographyPreset: undefined
           },
           isDefault: true,
         },
         {
           label: 'button010',
           value: {
-            typePreset: 'button010'
+            typographyPreset: 'button010'
           },
         },
         {
           label: 'button020',
           value: {
-            typePreset: 'button020'
+            typographyPreset: 'button020'
           },
         },
         {
           label: 'button030',
           value: {
-            typePreset: 'button030'
+            typographyPreset: 'button030'
           },
         },
       ],

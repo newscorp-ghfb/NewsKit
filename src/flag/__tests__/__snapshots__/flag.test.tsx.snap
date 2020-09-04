@@ -132,7 +132,7 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Flag renders a flag with a custom typePreset 1`] = `
+exports[`Flag renders a flag with a custom typographyPreset 1`] = `
 <DocumentFragment>
   .emotion-4 {
   display: -webkit-inline-box;

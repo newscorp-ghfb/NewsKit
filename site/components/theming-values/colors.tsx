@@ -3,9 +3,9 @@ import {
   styled,
   ColorKeys,
   getSizingFromTheme,
-  Colors as ColorPrimitives,
+  Colors as ColorFoundations,
 } from 'newskit';
-import {colors as colorPrimitives} from 'newskit/theme/primitives';
+import {colors as colorFoundations} from 'newskit/theme/foundations';
 import {LegacyBlock} from '../legacy-block';
 import {Header, ExampleWrapper} from './common';
 
@@ -49,7 +49,7 @@ export const TextBoxSwatch = styled.span<{
   }
 `;
 
-const ColorPreview = ({colors}: {colors: ColorPrimitives}): JSX.Element => (
+const ColorPreview = ({colors}: {colors: ColorFoundations}): JSX.Element => (
   <LegacyBlock display="flex" flexWrap>
     {Object.entries(colors).map(([key, value]) => (
       <LegacyBlock
@@ -70,9 +70,9 @@ const ColorPreview = ({colors}: {colors: ColorPrimitives}): JSX.Element => (
 
 const Colors = (): JSX.Element => (
   <LegacyBlock font="body020">
-    <Header>Color Primitives</Header>
+    <Header>Color Foundations</Header>
     <ExampleWrapper>
-      <ColorPreview colors={colorPrimitives} />
+      <ColorPreview colors={colorFoundations} />
     </ExampleWrapper>
   </LegacyBlock>
 );

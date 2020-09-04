@@ -1,7 +1,12 @@
 import React from 'react';
-import {styled, getTypePreset, MQ, getSpacingInline} from '../utils/style';
+import {
+  styled,
+  getTypographyPreset,
+  MQ,
+  getSpacingInline,
+} from '../utils/style';
 import {getStylePreset} from '../utils/style-preset';
-import {TypePresetKeys, StylePresetKeys, SpacePresetKeys} from '../theme';
+import {TypographyPresetKeys, StylePresetKeys, SpacePresetKeys} from '../theme';
 
 export interface HeadlineProps {
   kickerText?: string;
@@ -10,12 +15,12 @@ export interface HeadlineProps {
   overrides?: {
     kicker?: {
       stylePreset?: MQ<StylePresetKeys>;
-      typePreset?: MQ<TypePresetKeys>;
+      typographyPreset?: MQ<TypographyPresetKeys>;
       spaceInline?: MQ<SpacePresetKeys>;
     };
     heading?: {
       stylePreset?: MQ<StylePresetKeys>;
-      typePreset?: MQ<TypePresetKeys>;
+      typographyPreset?: MQ<TypographyPresetKeys>;
     };
   };
 }
@@ -31,7 +36,7 @@ const HeadlineContainer = styled.section`
 const Heading = styled.h1<RenderAsProps & HeadlineProps>`
   display: inline-block;
   margin: 0;
-  ${getTypePreset('headline.heading', 'heading', {
+  ${getTypographyPreset('headline.heading', 'heading', {
     withCrop: true,
   })}
   ${getStylePreset('headline.heading', 'heading')}
@@ -40,7 +45,7 @@ const Heading = styled.h1<RenderAsProps & HeadlineProps>`
 const Kicker = styled.span<RenderAsProps & HeadlineProps>`
   display: inline-block;
   margin: 0;
-  ${getTypePreset('headline.kicker', 'kicker', {
+  ${getTypographyPreset('headline.kicker', 'kicker', {
     withCrop: true,
   })}
   ${getStylePreset('headline.kicker', 'kicker')}

@@ -26,10 +26,10 @@ describe('TextBlock', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders with custom type preset', () => {
+  test('renders with custom typography preset', () => {
     const fragment = renderToFragmentWithTheme(TextBlock, {
       overrides: {
-        typePreset: 'body010',
+        typographyPreset: 'body010',
       },
     });
     expect(fragment).toMatchSnapshot();

@@ -1,5 +1,5 @@
 import {CursorProperty} from 'csstype';
-import {styled, getTypePreset, getSize, getSpace} from '../utils/style';
+import {styled, getTypographyPreset, getSize, getSpace} from '../utils/style';
 import {
   StyledTrackProps,
   SliderProps,
@@ -140,7 +140,7 @@ type StyledThumbValueProps = VerticalProp &
   Pick<ThumbLabelProps, 'overrides'>;
 
 export const StyledThumbValue = styled.div<StyledThumbValueProps>`
-  ${getTypePreset('slider.thumbLabel', 'thumbLabel', {
+  ${getTypographyPreset('slider.thumbLabel', 'thumbLabel', {
     withCrop: true,
   })}
 
@@ -206,7 +206,7 @@ const getLabelMargin = ({
 };
 
 export const StyledSliderLabel = styled.div<StyledSliderLabelProps>`
-  ${getTypePreset('slider.labels', 'labels', {
+  ${getTypographyPreset('slider.labels', 'labels', {
     withCrop: true,
   })}
 

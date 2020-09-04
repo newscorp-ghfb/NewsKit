@@ -41,8 +41,8 @@ Flags have a number of props to facilitate a variety of uses:
     <Prop name="stylePreset" type="string" default="flagDefault">
       If provided, this overrides the style preset applied to the Flag.
     </Prop>
-    <Prop name="typePreset" type="string">
-      If provided, this overrides the type preset applied to the Flag. Otherwise,
+    <Prop name="typographyPreset" type="string">
+      If provided, this overrides the typography preset applied to the Flag. Otherwise,
       label010 or label020 is used depending on the `size` prop.
     </Prop>
     <Prop name="space" type="SizingKeys">
@@ -152,26 +152,26 @@ Flags have a number of props to facilitate a variety of uses:
       ],
     },
     {
-      name: 'Type Preset',
+      name: 'Typography Preset',
       propName: 'overrides',
       options: [
         {
           label: 'Default',
           value: {
-            typePreset: undefined,
+            typographyPreset: undefined,
           },
           isDefault: true,
         },
         {
           label: 'label010',
           value: {
-            typePreset: 'label010'
+            typographyPreset: 'label010'
           },
         },
         {
           label: 'label020',
           value: {
-            typePreset: 'label020'
+            typographyPreset: 'label020'
           },
         }
       ]

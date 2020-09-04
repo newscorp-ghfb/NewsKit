@@ -9,7 +9,7 @@ export interface BaseFlagProps {
   disabled?: boolean;
   isLoading?: boolean;
   overrides?: {
-    typePreset?: string;
+    typographyPreset?: string;
     stylePreset?: string;
     paddingPreset?: PaddingPresetKeys;
 

@@ -84,7 +84,7 @@ NewsKit also exports a StatefulSlider component which has the same props (except
     <br/>
     <UnorderedList overrides={{
       content: {
-        typePreset: 'body020',
+        typographyPreset: 'body020',
       }
     }} listItemMarker={Circle} children={[`LabelPosition.Inline - places the slider between the min/max labels`,
       `LabelPosition.Before - places the min/max labels before the slider`,
@@ -155,8 +155,8 @@ NewsKit also exports a StatefulSlider component which has the same props (except
         If provided, this overrides the style preset applied to the in-built slider thumb label.
         Custom thumb label component passed in to the slider will not have style preset applied out of the box.
       </Prop>
-      <Prop name="typePreset" type="TypePresetKeys" default="label030">
-        If provided, this overrides the type preset applied to the in-built slider thumb label.
+      <Prop name="typographyPreset" type="TypographyPresetKeys" default="label030">
+        If provided, this overrides the typography preset applied to the in-built slider thumb label.
       </Prop>
       <Prop name="space" type="SizingKeys" default="sizing060">
         If provided, this overrides the space between the thumb label baseline and the center of the slider thumb element.
@@ -168,8 +168,8 @@ NewsKit also exports a StatefulSlider component which has the same props (except
         This includes the min and max labels.
         Custom label components passed in to the slider will not have style preset applied out of the box.
       </Prop>
-      <Prop name="typePreset" type="TypePresetKeys" default="label020">
-        If provided, this overrides the type preset applied to the in-built min/max labels.
+      <Prop name="typographyPreset" type="TypographyPresetKeys" default="label020">
+        If provided, this overrides the typography preset applied to the in-built min/max labels.
       </Prop>
       <Prop name="space" type="SizingKeys" default="sizing030">
         If provided, this overrides the space between the min/max labels and the slider track.

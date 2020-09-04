@@ -13,7 +13,7 @@ import {
   Image,
   getMediaQueryFromTheme,
   getSizingFromTheme,
-  getTypePresetFromTheme,
+  getTypographyPresetFromTheme,
   SizingKeys,
   getColorFromTheme,
   IconButton,
@@ -64,12 +64,12 @@ const AuthorImageContainer = styled.div`
 `;
 
 const AuthorName = styled.span`
-  ${getTypePresetFromTheme('body010')};
+  ${getTypographyPresetFromTheme('body010')};
   display: block;
 `;
 
 const Description = styled.span`
-  ${getTypePresetFromTheme('subhead040')};
+  ${getTypographyPresetFromTheme('subhead040')};
   display: block;
 `;
 

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TypePreset renders default 1`] = `
+exports[`TypographyPreset renders default 1`] = `
 <DocumentFragment>
   .emotion-0 {
   font-family: "Noto Sans",sans-serif;
@@ -19,7 +19,7 @@ exports[`TypePreset renders default 1`] = `
 </DocumentFragment>
 `;
 
-exports[`TypePreset renders responsive override body010 for xs and body030 for md breakpoints 1`] = `
+exports[`TypographyPreset renders responsive override body010 for xs and body030 for md breakpoints 1`] = `
 <DocumentFragment>
   .emotion-0 {
   font-family: "Noto Sans",sans-serif;
@@ -51,7 +51,7 @@ exports[`TypePreset renders responsive override body010 for xs and body030 for m
 </DocumentFragment>
 `;
 
-exports[`TypePreset renders responsive override body010 for xs, body020 for sm, and body030 for md breakpoints 1`] = `
+exports[`TypographyPreset renders responsive override body010 for xs, body020 for sm, and body030 for md breakpoints 1`] = `
 <DocumentFragment>
   .emotion-0 {
   font-family: "Noto Sans",sans-serif;
@@ -96,7 +96,7 @@ exports[`TypePreset renders responsive override body010 for xs, body020 for sm, 
 </DocumentFragment>
 `;
 
-exports[`TypePreset renders responsive override body010 for xs, body020 for sm, and wrong for md breakpoints 1`] = `
+exports[`TypographyPreset renders responsive override body010 for xs, body020 for sm, and wrong for md breakpoints 1`] = `
 <DocumentFragment>
   .emotion-0 {
   font-family: "Noto Sans",sans-serif;
@@ -128,7 +128,7 @@ exports[`TypePreset renders responsive override body010 for xs, body020 for sm, 
 </DocumentFragment>
 `;
 
-exports[`TypePreset renders responsive override body010 for xs, body020 for sm, body030 for md, code010 for lg breakpoints and ignore wrong prop 1`] = `
+exports[`TypographyPreset renders responsive override body010 for xs, body020 for sm, body030 for md, code010 for lg breakpoints and ignore wrong prop 1`] = `
 <DocumentFragment>
   .emotion-0 {
   font-family: "Noto Sans",sans-serif;
@@ -186,7 +186,7 @@ exports[`TypePreset renders responsive override body010 for xs, body020 for sm, 
 </DocumentFragment>
 `;
 
-exports[`TypePreset renders with override body010 1`] = `
+exports[`TypographyPreset renders with override body010 1`] = `
 <DocumentFragment>
   .emotion-0 {
   font-family: "Noto Sans",sans-serif;

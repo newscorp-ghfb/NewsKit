@@ -3,14 +3,14 @@ const cardSmallTags = () => (
     <Tag
       size={TagSize.Small}
       href="/"
-      overrides={{stylePreset: 'cardTag', typePreset: cardTagSmallTypePreset}}
+      overrides={{stylePreset: 'cardTag', typographyPreset: cardTagSmallTypographyPreset}}
     >
       News
     </Tag>
     <Tag
       size={TagSize.Small}
       href="/"
-      overrides={{stylePreset: 'cardTag', typePreset: cardTagSmallTypePreset}}
+      overrides={{stylePreset: 'cardTag', typographyPreset: cardTagSmallTypographyPreset}}
     >
       Sport
     </Tag>
@@ -37,7 +37,7 @@ export const CardSmallWithInset = () => (
                 minHeight: '0',
                 paddingPreset: 'spaceInset000Squish',
                 stylePreset: 'cardLabel',
-                typePreset: cardLabelSmallTypePreset,
+                typographyPreset: cardLabelSmallTypographyPreset,
               }}
             >
               <Picture />
@@ -55,12 +55,12 @@ export const CardSmallWithInset = () => (
               overrides={{
                 heading: {
                   stylePreset: 'cardTeaserHeadline',
-                  typePreset: cardTeaserHeadlineSmallTypePreset,
+                  typographyPreset: cardTeaserHeadlineSmallTypographyPreset,
                 },
                 kicker: {
                   spaceInline: cardTeaserKickerSpaceInline,
                   stylePreset: 'cardTeaserKicker',
-                  typePreset: cardTeaserKickerSmallTypePreset,
+                  typographyPreset: cardTeaserKickerSmallTypographyPreset,
                 },
               }}
             >
@@ -76,7 +76,7 @@ export const CardSmallWithInset = () => (
             <TextBlock
               overrides={{
                 stylePreset: 'cardTeaserLead',
-                typePreset: cardTeaserLeadSmallTypePreset,
+                typographyPreset: cardTeaserLeadSmallTypographyPreset,
               }}
             >
               The bank holiday weekend has seen some mixed weather, but as the

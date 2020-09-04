@@ -21,7 +21,7 @@ export default {
           <TitleBar
             overrides={{
               heading: {
-                typePreset: {
+                typographyPreset: {
                   xs: 'heading010',
                   sm: 'heading020',
                   md: 'heading030',
@@ -30,7 +30,7 @@ export default {
               },
             }}
           >
-            Title bar with overwritten heading typePreset
+            Title bar with overwritten heading typographyPreset
           </TitleBar>
           <br />
           <br />

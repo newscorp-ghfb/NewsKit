@@ -12,7 +12,7 @@ const myCustomTheme = createTheme({
         },
       },
     },
-    typePresets: {
+    typographyPresets: {
       standfirstCustom: {
         fontFamily: '"Noto Sans", sans-serif',
         fontWeight: 400,
@@ -67,11 +67,11 @@ export default {
               {bodyString}
             </Standfirst>
 
-            <h3>With type-preset &quot;standfirstCustom&quot;</h3>
+            <h3>With typography-preset &quot;standfirstCustom&quot;</h3>
             <Standfirst
               overrides={{
                 styledText: {
-                  typePreset: 'subhead030',
+                  typographyPreset: 'subhead030',
                 },
               }}
             >

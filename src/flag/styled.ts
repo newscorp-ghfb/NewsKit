@@ -1,7 +1,7 @@
 import {
   styled,
   getSizingFromTheme,
-  getTypePreset,
+  getTypographyPreset,
   getPaddingPreset,
 } from '../utils/style';
 import {getStylePreset} from '../utils/style-preset';
@@ -76,7 +76,7 @@ export const StyledBaseFlag = styled.div<BaseFlagProps>`
 export const StyledTextCropWrapper = styled.span<
   Pick<BaseFlagProps, 'overrides'>
 >`
-  ${getTypePreset('', '', {
+  ${getTypographyPreset('', '', {
     withCrop: true,
   })}
 `;

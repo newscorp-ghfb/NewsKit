@@ -1,4 +1,4 @@
-import {FontConfig} from '../theme/primitives/fonts';
+import {FontConfig} from '../theme/foundations/fonts';
 
 export const isFontConfigObject = (
   object: FontConfig | string | number,

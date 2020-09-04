@@ -1,5 +1,5 @@
 import {
-  TypePresetKeys,
+  TypographyPresetKeys,
   IconSizeKeys,
   SizingKeys,
   StylePresetKeys,
@@ -16,7 +16,7 @@ export interface LinkProps
   noUnderline?: boolean;
   overrides?: {
     stylePreset?: MQ<StylePresetKeys>;
-    typePreset?: MQ<TypePresetKeys>;
+    typographyPreset?: MQ<TypographyPresetKeys>;
     space?: SizingKeys;
     externalIcon?: {
       size?: IconSizeKeys;

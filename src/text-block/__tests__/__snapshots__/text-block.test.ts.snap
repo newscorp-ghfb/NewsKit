@@ -73,7 +73,7 @@ exports[`TextBlock renders with custom style preset 1`] = `
 </DocumentFragment>
 `;
 
-exports[`TextBlock renders with custom type preset 1`] = `
+exports[`TextBlock renders with custom typography preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;

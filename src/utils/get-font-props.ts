@@ -1,4 +1,4 @@
-import {FontConfig} from '../theme/primitives/fonts';
+import {FontConfig} from '../theme/foundations/fonts';
 import {textCrop} from './text-crop';
 import {getFontSizing} from './font-sizing';
 import {isFontConfigObject} from './guards';
@@ -8,14 +8,12 @@ export const getFontProps = (
   lineHeight: number,
   fontFamily: string,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  fontPrimitives: Record<string, any>,
+  fonts: Record<string, any>,
   // eslint-disable-next-line consistent-return
 ) => {
   const [fontStackPeek] = fontFamily.split(',');
 
-  const fontFamilyObject: FontConfig | undefined = Object.values(
-    fontPrimitives,
-  ).find(
+  const fontFamilyObject: FontConfig | undefined = Object.values(fonts).find(
     (fontEl): fontEl is FontConfig =>
       isFontConfigObject(fontEl) &&
       (fontEl as FontConfig).fontFamily.split(',')[0] === fontStackPeek,

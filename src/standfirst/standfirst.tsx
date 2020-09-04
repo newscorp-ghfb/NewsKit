@@ -1,5 +1,5 @@
 import React from 'react';
-import {styled, getTypePreset} from '../utils/style';
+import {styled, getTypographyPreset} from '../utils/style';
 import {getStylePreset} from '../utils/style-preset';
 import {isInlineElement} from '../utils/inline-tags';
 import {StandfirstProps} from './types';
@@ -9,7 +9,7 @@ const StyledText = styled.h2<StandfirstProps>`
     filterStates: ['base'],
     filterStyles: ['color'],
   })};
-  ${getTypePreset('standfirst.styledText', 'styledText', {
+  ${getTypographyPreset('standfirst.styledText', 'styledText', {
     withCrop: true,
   })}
   padding: 1px 0;

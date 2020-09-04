@@ -7,14 +7,14 @@ import {
   SizingKeys,
   BorderRadiusKeys,
   ShadowKeys,
-  TypePreset,
-  TypePresetKeys,
+  TypographyPreset,
+  TypographyPresetKeys,
   ColorKeys,
-  AnimationKeys,
+  MotionKeys,
   BorderKeys,
   Theme,
   BreakpointKeys,
-  FontPrimitivesKeys,
+  FontKeys,
   LineHeightKeys,
   FontSizeKeys,
 } from '../theme';
@@ -123,14 +123,14 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
   return (propKeys && section[propKeys]) || '';
 };
 
-export const getTypePresetFromTheme = <Props extends ThemeProp>(
-  defaultToken?: MQ<TypePresetKeys>,
+export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
+  defaultToken?: MQ<TypographyPresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
   options?: {withCrop: boolean},
 ) => (props: Props) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const applyCrop = (typePreset: any) => {
-    const {fontSize, lineHeight, fontFamily} = typePreset;
+  const applyCrop = (typographyPreset: any) => {
+    const {fontSize, lineHeight, fontFamily} = typographyPreset;
     const cropProps = getFontProps(
       fontSize,
       lineHeight,
@@ -138,19 +138,19 @@ export const getTypePresetFromTheme = <Props extends ThemeProp>(
       props.theme.fonts,
     );
     return {
-      ...typePreset,
+      ...typographyPreset,
       ...cropProps,
     };
   };
 
   const {withCrop = false} = options || {};
-  const typePreset = getResponsiveValueFromTheme('typePresets')(
+  const typographyPreset = getResponsiveValueFromTheme('typographyPresets')(
     defaultToken,
     customProp,
-  )(props) as Partial<TypePreset> | Array<[string, CSSObject]>;
+  )(props) as Partial<TypographyPreset> | Array<[string, CSSObject]>;
 
-  if (Array.isArray(typePreset)) {
-    return typePreset.reduce(
+  if (Array.isArray(typographyPreset)) {
+    return typographyPreset.reduce(
       (acc, [mq, cssObject], index) => {
         let cssObjectFinal = cssObject;
 
@@ -168,28 +168,26 @@ export const getTypePresetFromTheme = <Props extends ThemeProp>(
     );
   }
 
-  if (typePreset && withCrop && !Array.isArray(typePreset)) {
-    return applyCrop(typePreset);
+  if (typographyPreset && withCrop && !Array.isArray(typographyPreset)) {
+    return applyCrop(typographyPreset);
   }
-  return typePreset;
+  return typographyPreset;
 };
 
-export const getTypePreset = getDefaultedValue(
-  getTypePresetFromTheme,
-  'typePreset',
+export const getTypographyPreset = getDefaultedValue(
+  getTypographyPresetFromTheme,
+  'typographyPreset',
 );
 
-export const getAnimationFromTheme = getValueFromTheme<AnimationKeys>(
-  'animations',
-);
+export const getMotionFromTheme = getValueFromTheme<MotionKeys>('motions');
 
 export const getFontsFromTheme = <Props extends ThemeProp>(
-  defaultToken?: MQ<FontPrimitivesKeys>,
+  defaultToken?: MQ<FontKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => (props: Props) => {
   const section = props.theme.fonts;
   const propKeys = (customProp && props[customProp]) || defaultToken;
-  const style = section[propKeys as FontPrimitivesKeys];
+  const style = section[propKeys as FontKeys];
 
   if (style && isFontConfigObject(style)) {
     return style.fontFamily;
@@ -315,12 +313,13 @@ export const getBorderRadiusFromTheme = getValueFromTheme<BorderRadiusKeys>(
 export const getShadowFromTheme = getValueFromTheme<ShadowKeys>('shadows');
 
 export const getFontSizingFromTheme = (
-  fontSizeKey: TypePresetKeys | FontSizeKeys,
+  fontSizeKey: TypographyPresetKeys | FontSizeKeys,
   lineHeightKey: LineHeightKeys,
 ) => ({theme}: ThemeProp) => {
-  const typePresets = theme.typePresets[fontSizeKey as TypePresetKeys];
-  const fontSize = typePresets
-    ? typePresets.fontSize
+  const typographyPresets =
+    theme.typographyPresets[fontSizeKey as TypographyPresetKeys];
+  const fontSize = typographyPresets
+    ? typographyPresets.fontSize
     : theme.fonts[fontSizeKey as FontSizeKeys];
   return getFontSizing(fontSize, theme.fonts[lineHeightKey]);
 };

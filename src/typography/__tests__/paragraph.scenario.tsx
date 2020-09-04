@@ -45,7 +45,12 @@ export default {
           <br />
           <h3>PARAGRAPH WITH OVERRIDES</h3>
           <br />
-          <P overrides={{stylePreset: 'linkInline', typePreset: 'heading020'}}>
+          <P
+            overrides={{
+              stylePreset: 'linkInline',
+              typographyPreset: 'heading020',
+            }}
+          >
             This being Black History Month, last week was Politicians In Search
             Of An Eye-Catching Race-Related Policy Week. Both Theresa May and
             Jeremy Corbyn had their own announcement, each seemingly benign and
@@ -58,7 +63,7 @@ export default {
             overrides={{
               dropCap: {
                 stylePreset: 'linkInline',
-                typePreset: 'heading070',
+                typographyPreset: 'heading070',
                 space: 'space040',
               },
             }}

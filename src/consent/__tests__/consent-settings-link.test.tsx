@@ -89,7 +89,7 @@ describe('ConsentSettingsLink', () => {
         children: 'Some Custom Link Text With Styles',
         noUnderline: true,
         overrides: {
-          typePreset: 'body010',
+          typographyPreset: 'body010',
         },
       });
       expect(fragment).toMatchSnapshot();

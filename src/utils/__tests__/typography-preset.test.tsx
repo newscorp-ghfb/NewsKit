@@ -1,16 +1,16 @@
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {getTypePresetFromTheme, styled, MQ} from '../style';
-import {TypePresetKeys} from '../../theme';
+import {getTypographyPresetFromTheme, styled, MQ} from '../style';
+import {TypographyPresetKeys} from '../../theme';
 
 interface TestTextProp {
-  typePreset: MQ<TypePresetKeys>;
+  typographyPreset: MQ<TypographyPresetKeys>;
 }
 
 const TestText = styled.p<TestTextProp>`
-  ${getTypePresetFromTheme('body030', 'typePreset')}
+  ${getTypographyPresetFromTheme('body030', 'typographyPreset')}
 `;
 
-describe('TypePreset', () => {
+describe('TypographyPreset', () => {
   test('renders default', () => {
     const fragment = renderToFragmentWithTheme(TestText);
     expect(fragment).toMatchSnapshot();
@@ -18,14 +18,14 @@ describe('TypePreset', () => {
 
   test('renders with override body010', () => {
     const fragment = renderToFragmentWithTheme(TestText, {
-      typePreset: 'body010',
+      typographyPreset: 'body010',
     });
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders responsive override body010 for xs, body020 for sm, and body030 for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(TestText, {
-      typePreset: {
+      typographyPreset: {
         xs: 'body010',
         sm: 'body020',
         md: 'body030',
@@ -36,7 +36,7 @@ describe('TypePreset', () => {
 
   test('renders responsive override body010 for xs, body020 for sm, and wrong for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(TestText, {
-      typePreset: {
+      typographyPreset: {
         xs: 'body010',
         sm: 'body020',
         md: 'wrong',
@@ -47,7 +47,7 @@ describe('TypePreset', () => {
 
   test('renders responsive override body010 for xs and body030 for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(TestText, {
-      typePreset: {
+      typographyPreset: {
         xs: 'body010',
         md: 'body030',
       },
@@ -57,7 +57,7 @@ describe('TypePreset', () => {
 
   test('renders responsive override body010 for xs, body020 for sm, body030 for md, code010 for lg breakpoints and ignore wrong prop', () => {
     const fragment = renderToFragmentWithTheme(TestText, {
-      typePreset: {
+      typographyPreset: {
         xs: 'body010',
         sm: 'body020',
         md: 'body030',

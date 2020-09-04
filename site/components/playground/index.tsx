@@ -4,7 +4,7 @@ import {
   getColorFromTheme,
   getSizingFromTheme,
   getBorderFromTheme,
-  getTypePresetFromTheme,
+  getTypographyPresetFromTheme,
 } from 'newskit';
 import {LegacyBlock, LegacyBlockProps} from '../legacy-block';
 import {MultiChoiceKnob} from './knobs/multichoice-knob';
@@ -40,7 +40,7 @@ const StyledMockTab = styled.span`
   border-bottom-width: ${getBorderFromTheme('borderWidth020')};
   border-bottom-color: ${getColorFromTheme('inkBrand010')};
   color: ${getColorFromTheme('inkBase')};
-  ${getTypePresetFromTheme('subhead020')};
+  ${getTypographyPresetFromTheme('subhead020')};
 `;
 
 const isMultiChoiceKnobConfig = (

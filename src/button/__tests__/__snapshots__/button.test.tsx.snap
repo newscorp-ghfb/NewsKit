@@ -2426,7 +2426,7 @@ exports[`Button renders with different style preset 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Button renders with different type preset 1`] = `
+exports[`Button renders with different typography preset 1`] = `
 <DocumentFragment>
   .emotion-4 {
   display: -webkit-inline-box;

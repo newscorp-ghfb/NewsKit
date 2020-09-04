@@ -1,4 +1,4 @@
-import {breakpoints} from '../../theme/primitives/breakpoints';
+import {breakpoints} from '../../theme/foundations/breakpoints';
 import {OverrideProp, getOverridableProp} from '../utils';
 import {GridKeys, BreakpointKeys} from '../../theme';
 

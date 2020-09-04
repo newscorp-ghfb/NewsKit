@@ -21,7 +21,7 @@ The `Byline` component requires an array of bylineData. Each bylineData object i
 
 ### Theming
 
-The byline uses a type preset of `meta02` and inherits its font color from its parent, apart from author links which use the default [Link](/components/link) theme color tokens.
+The byline uses a typography preset `meta02` and inherits its font color from its parent, apart from author links which use the default [Link](/components/link) theme color tokens.
 
 ## Props
 
@@ -37,8 +37,8 @@ The byline uses a type preset of `meta02` and inherits its font color from its p
   <Prop name="stylePreset" type="string" default="byline">
     If provided, this overrides the style preset of the component.
   </Prop >
-  <Prop name="typePreset" type="string" default="meta020">
-    If provided, this overrides the type preset of the component..
+  <Prop name="typographyPreset" type="string" default="meta020">
+    If provided, this overrides the typography preset of the component..
   </Prop >
   <Prop name="space" type="SizingKeys" default="sizing020">
     If provided, this overrides the vertical space between each line when the bylines items wrap onto a new line.
@@ -47,8 +47,8 @@ The byline uses a type preset of `meta02` and inherits its font color from its p
     <Prop name="stylePreset" type="string" default="bylineLink">
       If provided, this overrides the style preset applied to the passed link.
     </Prop>
-    <Prop name="typePreset" type="string" default="meta020">
-      If provided, this overrides the type preset applied to the passed link.
+    <Prop name="typographyPreset" type="string" default="meta020">
+      If provided, this overrides the typography preset applied to the passed link.
     </Prop>
   </Prop>
    <Prop name="divider" type="object">
@@ -122,15 +122,15 @@ The byline uses a type preset of `meta02` and inherits its font color from its p
       ],
     },
     {
-      name: 'Type Preset Overrides',
+      name: 'Typography Preset Overrides',
       propName: 'overrides',
       options: [
         {
           label: 'default',
           value: {
-            typePreset: undefined,
+            typographyPreset: undefined,
             link: {
-              typePreset: undefined,
+              typographyPreset: undefined,
             },
           },
           isDefault: true,
@@ -138,9 +138,9 @@ The byline uses a type preset of `meta02` and inherits its font color from its p
         {
           label: 'body030',
           value: {
-            typePreset: 'body030',
+            typographyPreset: 'body030',
             link: {
-              typePreset: 'body030',
+              typographyPreset: 'body030',
             },
           },
         },

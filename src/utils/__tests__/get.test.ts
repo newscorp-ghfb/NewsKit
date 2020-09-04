@@ -7,7 +7,7 @@ describe('get', () => {
       shareBar: {
         horizontal: {
           label: {
-            typePreset: 'label020',
+            typographyPreset: 'label020',
             stylePreset: 'shareBarLabel',
             marginPreset: 'spaceInline040',
           },

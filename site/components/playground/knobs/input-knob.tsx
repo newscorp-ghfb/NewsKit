@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   styled,
-  getTypePresetFromTheme,
+  getTypographyPresetFromTheme,
   getSizingFromTheme,
   getColorFromTheme,
 } from 'newskit';
@@ -29,12 +29,12 @@ export const HiddenLabel = styled.label`
 export const StyledLabel = styled.label`
   display: block;
   margin: ${getSizingFromTheme('sizing040')} 0px;
-  ${getTypePresetFromTheme('label030')};
+  ${getTypographyPresetFromTheme('label030')};
   color: ${getColorFromTheme('inkBase')};
 `;
 
 export const StyledInput = styled.input`
-  ${getTypePresetFromTheme('body010')};
+  ${getTypographyPresetFromTheme('body010')};
   display: block;
   padding: ${getSizingFromTheme('sizing020')};
   background-color: ${getColorFromTheme('interface020')};

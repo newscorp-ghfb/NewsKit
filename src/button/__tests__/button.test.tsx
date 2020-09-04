@@ -68,10 +68,10 @@ describe('Button', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders with different type preset', () => {
+  test('renders with different typography preset', () => {
     const props: ButtonProps = {
       overrides: {
-        typePreset: 'button030',
+        typographyPreset: 'button030',
       },
     };
 

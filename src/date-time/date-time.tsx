@@ -25,11 +25,11 @@ export const DateTime: React.FC<DateTimeProps> = ({
   const theme = useTheme();
 
   const getOverrides = (path: string) => ({
-    typePreset: getToken(
+    typographyPreset: getToken(
       {theme, overrides},
       `dateTime.${path}`,
       `${path}`,
-      'typePreset',
+      'typographyPreset',
     ),
     stylePreset: getToken(
       {theme, overrides},

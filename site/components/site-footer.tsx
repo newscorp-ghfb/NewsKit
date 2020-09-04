@@ -5,7 +5,7 @@ import {
   Hidden,
   ConsentSettingsLink,
   GitHub,
-  getTypePresetFromTheme,
+  getTypographyPresetFromTheme,
   getColorFromTheme,
   getSizingFromTheme,
   getBorderFromTheme,
@@ -45,7 +45,7 @@ const FooterCopy = styled.div`
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  ${getTypePresetFromTheme('body010')};
+  ${getTypographyPresetFromTheme('body010')};
   color: ${getColorFromTheme('inkSubtle')};
 `;
 
@@ -64,7 +64,7 @@ const FooterMenu = styled.div`
 const FooterLink = styled.span`
   flex-basis: 50%;
   padding-top: ${getSizingFromTheme('sizing050')};
-  ${getTypePresetFromTheme('label020')};
+  ${getTypographyPresetFromTheme('label020')};
 
   ${getMediaQueryFromTheme('md')} {
     flex-basis: auto;

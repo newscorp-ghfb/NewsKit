@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   styled,
-  getTypePreset,
+  getTypographyPreset,
   getPaddingPreset,
   getSpacingInline,
   getSpacingStack,
@@ -22,7 +22,7 @@ export interface ShareBarProps {
   overrides?: {
     stylePreset?: string;
     label?: {
-      typePreset?: string;
+      typographyPreset?: string;
       stylePreset?: string;
       spaceInline?: SpacePresetKeys;
       spaceStack?: SpacePresetKeys;
@@ -44,7 +44,7 @@ type Label = {
 };
 
 const StyledLabel = styled.span<Label>`
-  ${getTypePreset(`shareBar.label`, 'label', {withCrop: true})};
+  ${getTypographyPreset(`shareBar.label`, 'label', {withCrop: true})};
   ${getStylePreset(`shareBar.label`, 'label')};
   ${getPaddingPreset(`shareBar.label`, 'label')};
   ${({orientation}) =>

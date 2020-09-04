@@ -20,7 +20,7 @@ describe('TitleBar', () => {
         stylePreset: 'standfirst',
         paddingPreset: 'spaceInset010Squish',
         heading: {
-          typePreset: {
+          typographyPreset: {
             xs: 'heading010',
             sm: 'heading020',
             md: 'heading030',

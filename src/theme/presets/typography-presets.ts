@@ -1,31 +1,31 @@
 import {getLineHeight} from '../../utils/font-sizing';
-import {TypePreset} from './types';
+import {TypographyPreset} from './types';
 
-export const typePresets: Record<string, TypePreset> = {};
+export const typographyPresets: Record<string, TypographyPreset> = {};
 
 // Label
-typePresets.label010 = {
+typographyPresets.label010 = {
   fontFamily: '{{fonts.fontFamily2.fontFamily}}',
   fontSize: '{{fonts.fontSize010}}',
   lineHeight: getLineHeight('fontSize010', 'fontLineHeight040'),
   fontWeight: '{{fonts.fontWeight030}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.label020 = {
+typographyPresets.label020 = {
   fontFamily: '{{fonts.fontFamily2.fontFamily}}',
   fontSize: '{{fonts.fontSize020}}',
   lineHeight: getLineHeight('fontSize020', 'fontLineHeight040'),
   fontWeight: '{{fonts.fontWeight030}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.label030 = {
+typographyPresets.label030 = {
   fontFamily: '{{fonts.fontFamily2.fontFamily}}',
   fontSize: '{{fonts.fontSize030}}',
   lineHeight: getLineHeight('fontSize030', 'fontLineHeight040'),
   fontWeight: '{{fonts.fontWeight030}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.label040 = {
+typographyPresets.label040 = {
   fontFamily: '{{fonts.fontFamily2.fontFamily}}',
   fontSize: '{{fonts.fontSize040}}',
   lineHeight: getLineHeight('fontSize040', 'fontLineHeight040'),
@@ -33,28 +33,28 @@ typePresets.label040 = {
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 // Display
-typePresets.display010 = {
+typographyPresets.display010 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize130}}',
   lineHeight: getLineHeight('fontSize130', 'fontLineHeight040'),
   fontWeight: '{{fonts.fontWeight040}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.display020 = {
+typographyPresets.display020 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize140}}',
   lineHeight: getLineHeight('fontSize140', 'fontLineHeight040'),
   fontWeight: '{{fonts.fontWeight040}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.display030 = {
+typographyPresets.display030 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize150}}',
   lineHeight: getLineHeight('fontSize150', 'fontLineHeight040'),
   fontWeight: '{{fonts.fontWeight040}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.display040 = {
+typographyPresets.display040 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize160}}',
   lineHeight: getLineHeight('fontSize160', 'fontLineHeight040'),
@@ -62,63 +62,63 @@ typePresets.display040 = {
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 // Heading
-typePresets.heading010 = {
+typographyPresets.heading010 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize040}}',
   lineHeight: getLineHeight('fontSize040', 'fontLineHeight030'),
   fontWeight: '{{fonts.fontWeight040}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.heading020 = {
+typographyPresets.heading020 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize050}}',
   lineHeight: getLineHeight('fontSize050', 'fontLineHeight030'),
   fontWeight: '{{fonts.fontWeight040}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.heading030 = {
+typographyPresets.heading030 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize070}}',
   lineHeight: getLineHeight('fontSize070', 'fontLineHeight030'),
   fontWeight: '{{fonts.fontWeight040}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.heading040 = {
+typographyPresets.heading040 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize080}}',
   lineHeight: getLineHeight('fontSize080', 'fontLineHeight030'),
   fontWeight: '{{fonts.fontWeight040}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.heading050 = {
+typographyPresets.heading050 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize090}}',
   lineHeight: getLineHeight('fontSize090', 'fontLineHeight030'),
   fontWeight: '{{fonts.fontWeight040}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.heading060 = {
+typographyPresets.heading060 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize100}}',
   lineHeight: getLineHeight('fontSize100', 'fontLineHeight030'),
   fontWeight: '{{fonts.fontWeight040}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.heading070 = {
+typographyPresets.heading070 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize110}}',
   lineHeight: getLineHeight('fontSize110', 'fontLineHeight030'),
   fontWeight: '{{fonts.fontWeight040}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.heading080 = {
+typographyPresets.heading080 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize120}}',
   lineHeight: getLineHeight('fontSize120', 'fontLineHeight030'),
   fontWeight: '{{fonts.fontWeight040}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.heading090 = {
+typographyPresets.heading090 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize130}}',
   lineHeight: getLineHeight('fontSize130', 'fontLineHeight030'),
@@ -126,42 +126,42 @@ typePresets.heading090 = {
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 // Subheading
-typePresets.subhead010 = {
+typographyPresets.subhead010 = {
   fontFamily: '{{fonts.fontFamily2.fontFamily}}',
   fontSize: '{{fonts.fontSize030}}',
   lineHeight: getLineHeight('fontSize030', 'fontLineHeight040'),
   fontWeight: '{{fonts.fontWeight030}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.subhead015 = {
+typographyPresets.subhead015 = {
   fontFamily: '{{fonts.fontFamily2.fontFamily}}',
   fontSize: '{{fonts.fontSize040}}',
   lineHeight: getLineHeight('fontSize040', 'fontLineHeight040'),
   fontWeight: '{{fonts.fontWeight030}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.subhead020 = {
+typographyPresets.subhead020 = {
   fontFamily: '{{fonts.fontFamily2.fontFamily}}',
   fontSize: '{{fonts.fontSize050}}',
   lineHeight: getLineHeight('fontSize050', 'fontLineHeight040'),
   fontWeight: '{{fonts.fontWeight030}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.subhead030 = {
+typographyPresets.subhead030 = {
   fontFamily: '{{fonts.fontFamily2.fontFamily}}',
   fontSize: '{{fonts.fontSize070}}',
   lineHeight: getLineHeight('fontSize070', 'fontLineHeight040'),
   fontWeight: '{{fonts.fontWeight030}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.subhead040 = {
+typographyPresets.subhead040 = {
   fontFamily: '{{fonts.fontFamily2.fontFamily}}',
   fontSize: '{{fonts.fontSize080}}',
   lineHeight: getLineHeight('fontSize080', 'fontLineHeight040'),
   fontWeight: '{{fonts.fontWeight030}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.subhead050 = {
+typographyPresets.subhead050 = {
   fontFamily: '{{fonts.fontFamily2.fontFamily}}',
   fontSize: '{{fonts.fontSize090}}',
   lineHeight: getLineHeight('fontSize090', 'fontLineHeight040'),
@@ -169,21 +169,21 @@ typePresets.subhead050 = {
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 // Body
-typePresets.body010 = {
+typographyPresets.body010 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize020}}',
   lineHeight: getLineHeight('fontSize020', 'fontLineHeight040'),
   fontWeight: '{{fonts.fontWeight020}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.body020 = {
+typographyPresets.body020 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize030}}',
   lineHeight: getLineHeight('fontSize030', 'fontLineHeight040'),
   fontWeight: '{{fonts.fontWeight020}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.body030 = {
+typographyPresets.body030 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize040}}',
   lineHeight: getLineHeight('fontSize040', 'fontLineHeight040'),
@@ -191,7 +191,7 @@ typePresets.body030 = {
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 // Quote
-typePresets.quote010 = {
+typographyPresets.quote010 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize070}}',
   lineHeight: getLineHeight('fontSize070', 'fontLineHeight040'),
@@ -199,7 +199,7 @@ typePresets.quote010 = {
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
   fontStyle: 'italic',
 };
-typePresets.quote020 = {
+typographyPresets.quote020 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize090}}',
   lineHeight: getLineHeight('fontSize090', 'fontLineHeight040'),
@@ -208,7 +208,7 @@ typePresets.quote020 = {
   fontStyle: 'italic',
 };
 // Caption
-typePresets.caption010 = {
+typographyPresets.caption010 = {
   fontFamily: '{{fonts.fontFamily1.fontFamily}}',
   fontSize: '{{fonts.fontSize020}}',
   lineHeight: getLineHeight('fontSize020', 'fontLineHeight040'),
@@ -216,14 +216,14 @@ typePresets.caption010 = {
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 // Meta
-typePresets.meta010 = {
+typographyPresets.meta010 = {
   fontFamily: '{{fonts.fontFamily2.fontFamily}}',
   fontSize: '{{fonts.fontSize010}}',
   lineHeight: getLineHeight('fontSize010', 'fontLineHeight040'),
   fontWeight: '{{fonts.fontWeight030}}',
   letterSpacing: '{{fonts.fontLetterSpacing050}}',
 };
-typePresets.meta020 = {
+typographyPresets.meta020 = {
   fontFamily: '{{fonts.fontFamily2.fontFamily}}',
   fontSize: '{{fonts.fontSize020}}',
   lineHeight: getLineHeight('fontSize020', 'fontLineHeight040'),
@@ -231,14 +231,14 @@ typePresets.meta020 = {
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 // Code
-typePresets.code010 = {
+typographyPresets.code010 = {
   fontFamily: '{{fonts.fontFamily3.fontFamily}}',
   fontSize: '{{fonts.fontSize020}}',
   lineHeight: getLineHeight('fontSize020', 'fontLineHeight040'),
   fontWeight: '{{fonts.fontWeight020}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.code020 = {
+typographyPresets.code020 = {
   fontFamily: '{{fonts.fontFamily3.fontFamily}}',
   fontSize: '{{fonts.fontSize030}}',
   lineHeight: getLineHeight('fontSize030', 'fontLineHeight040'),
@@ -246,15 +246,15 @@ typePresets.code020 = {
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 // Button
-typePresets.button010 = {
-  ...typePresets.label010,
+typographyPresets.button010 = {
+  ...typographyPresets.label010,
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.button020 = {
-  ...typePresets.label020,
+typographyPresets.button020 = {
+  ...typographyPresets.label020,
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
-typePresets.button030 = {
-  ...typePresets.label030,
+typographyPresets.button030 = {
+  ...typographyPresets.label030,
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };

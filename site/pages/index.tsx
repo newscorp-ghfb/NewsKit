@@ -9,7 +9,7 @@ import {
   Cell,
   Image,
   getSizingFromTheme,
-  getTypePresetFromTheme,
+  getTypographyPresetFromTheme,
   getColorFromTheme,
 } from 'newskit';
 import PageTitle from '../components/page-title';
@@ -19,7 +19,7 @@ const MainContent = styled.div`
   margin-bottom: ${getSizingFromTheme('sizing090')};
 `;
 const StyledH1 = styled(H1)`
-  ${getTypePresetFromTheme('heading080')}
+  ${getTypographyPresetFromTheme('heading080')}
   color: ${getColorFromTheme('inkContrast')};
   margin-bottom: 8px;
 `;
@@ -28,7 +28,7 @@ const StyledH2 = styled(H2)`
   margin-bottom: 16px;
 `;
 const StyledH3 = styled(H3)`
-  ${getTypePresetFromTheme('heading010')}
+  ${getTypographyPresetFromTheme('heading010')}
   color: ${getColorFromTheme('inkBase')};
   margin: 20px 0 16px;
 `;
@@ -38,7 +38,7 @@ const StyledParagraph = styled(Paragraph)`
 `;
 
 const StyledSmallParagraph = styled(StyledParagraph)`
-  ${getTypePresetFromTheme('body020')}
+  ${getTypographyPresetFromTheme('body020')}
 `;
 
 const Index: React.FC<{

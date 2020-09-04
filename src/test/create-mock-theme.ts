@@ -12,9 +12,9 @@
  *     radius200: '4px',
  *     radius300: '8px',
  *   },
- *   animation: {
- *     animationDuration020: '0.25s',
- *     animationDuration040: '0.4s',
+ *   motion: {
+ *     motionDuration020: '0.25s',
+ *     motionDuration040: '0.4s',
  *   }
  * }
  *
@@ -26,9 +26,9 @@
  *     radius200: 'theme.borders.radius200',
  *     radius300: 'theme.borders.radius300',
  *   },
- *   animation: {
- *     animationDuration020: 'theme.animation.animationDuration020',
- *     animationDuration040: 'theme.animation.animationDuration040',
+ *   motion: {
+ *     motionDuration020: 'theme.motion.motionDuration020',
+ *     motionDuration040: 'theme.motion.motionDuration040',
  *   }
  * }
  */

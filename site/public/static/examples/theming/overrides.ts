@@ -5,9 +5,9 @@ const borders = {
   tagBorderWidth: '1px',
 };
 
-// Overrides existing typePresets(collection of font primitives). 
-// Full set of presets not required: match fontPrimitive values of existing typepresets.
-const typePresets = {
+// Overrides existing typographyPresets(collection of font foundations). 
+// Full set of presets not required: match fonts values of existing typography presets.
+const typographyPresets = {
   font100: {
     fontFamily: string,
     fontWeight: FontWeight,
@@ -22,7 +22,7 @@ const overrides = {
   sizing, // same as sizing above
   borders,
   fonts, // same as fonts above
-  typePresets: TypePresets,
+  typographyPresets: TypographyPresets,
 };
 
 themeOverrider(override);

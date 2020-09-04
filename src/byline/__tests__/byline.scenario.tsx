@@ -154,11 +154,11 @@ export default {
             <Byline
               overrides={{
                 stylePreset: 'bylineCustom',
-                typePreset: 'label040',
+                typographyPreset: 'label040',
                 space: 'sizing030',
                 link: {
                   stylePreset: 'bylineLinkCustom',
-                  typePreset: 'label040',
+                  typographyPreset: 'label040',
                 },
                 divider: {
                   stylePreset: 'bylineDividerCustom',

@@ -181,7 +181,7 @@ describe('ShareBar', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders with overrides for label typePreset', () => {
+  test('renders with overrides for label typographyPreset', () => {
     const fragment = renderToFragmentWithTheme(ShareBar, {
       children: [
         <Link href="/">
@@ -196,7 +196,7 @@ describe('ShareBar', () => {
       vertical: true,
       overrides: {
         label: {
-          typePreset: 'label020',
+          typographyPreset: 'label020',
         },
       },
     } as ShareBarProps);

@@ -39,10 +39,10 @@ describe('Flag', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders a flag with a custom typePreset', () => {
+  test('renders a flag with a custom typographyPreset', () => {
     const props: FlagProps = {
       overrides: {
-        typePreset: 'label020',
+        typographyPreset: 'label020',
       },
     };
     const fragment = renderToFragmentWithTheme(renderFlagWithText, props);

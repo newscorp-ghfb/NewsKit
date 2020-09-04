@@ -3037,7 +3037,7 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 </DocumentFragment>
 `;
 
-exports[`ShareBar renders with overrides for label typePreset 1`] = `
+exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 <DocumentFragment>
   .emotion-10 {
   display: -webkit-inline-box;

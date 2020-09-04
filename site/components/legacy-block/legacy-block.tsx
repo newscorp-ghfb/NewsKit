@@ -5,7 +5,7 @@ import {build} from './style-builder';
 import {LegacyBlockProps, StyledBlockProps} from './types';
 
 const getStyleFromProps = (props: StyledBlockProps & {theme: Theme}) => {
-  const {breakpoints, colors, typePresets, sizing} = props.theme;
+  const {breakpoints, colors, typographyPresets, sizing} = props.theme;
 
   const getColor = (color: ColorKeys | string) =>
     colors[color as ColorKeys] || color;
@@ -29,28 +29,28 @@ const getStyleFromProps = (props: StyledBlockProps & {theme: Theme}) => {
       value: props.font,
       transform: font =>
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        typePresets[font] && (typePresets[font] as any).fontFamily,
+        typographyPresets[font] && (typographyPresets[font] as any).fontFamily,
     })
     .apply({
       property: 'fontWeight',
       value: props.font,
       transform: font =>
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        typePresets[font] && (typePresets[font] as any).fontWeight,
+        typographyPresets[font] && (typographyPresets[font] as any).fontWeight,
     })
     .apply({
       property: 'fontSize',
       value: props.font,
       transform: font =>
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        typePresets[font] && (typePresets[font] as any).fontSize,
+        typographyPresets[font] && (typographyPresets[font] as any).fontSize,
     })
     .apply({
       property: 'lineHeight',
       value: props.font,
       transform: font =>
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        typePresets[font] && (typePresets[font] as any).lineHeight,
+        typographyPresets[font] && (typographyPresets[font] as any).lineHeight,
     })
     .apply({
       property: 'border',

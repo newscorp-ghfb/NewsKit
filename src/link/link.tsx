@@ -1,5 +1,5 @@
 import React from 'react';
-import {getAnimationFromTheme, styled} from '../utils/style';
+import {getMotionFromTheme, styled} from '../utils/style';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
 import {LinkProps} from './types';
 import {getStylePreset} from '../utils/style-preset';
@@ -14,8 +14,8 @@ import {TextBlock} from '../text-block';
 const StyledLink = styled.a<LinkProps>`
   display: inline-block;
   transition-property: color;
-  transition-duration: ${getAnimationFromTheme('animationDuration020')};
-  transition-timing-function: ${getAnimationFromTheme('animationEaseOut')};
+  transition-duration: ${getMotionFromTheme('motionDuration020')};
+  transition-timing-function: ${getMotionFromTheme('motionEaseOut')};
   ${getStylePreset('link', '')}
 
   /* Needed for IE  vertical alignment */
@@ -50,7 +50,12 @@ export const Link: React.FC<LinkProps> = props => {
     'size',
   );
   const spaceInBetween = getToken({theme, overrides}, 'link', '', 'space');
-  const typePreset = getToken({theme, overrides}, 'link', '', 'typePreset');
+  const typographyPreset = getToken(
+    {theme, overrides},
+    'link',
+    '',
+    'typographyPreset',
+  );
 
   const willRenderExternalIcon =
     external === undefined ? hasMounted && isLinkExternal(href) : external;
@@ -83,7 +88,7 @@ export const Link: React.FC<LinkProps> = props => {
       >
         {React.Children.map(children, child =>
           typeof child === 'string' ? (
-            <StyledTextBlock as="span" overrides={{typePreset}}>
+            <StyledTextBlock as="span" overrides={{typographyPreset}}>
               {child}
             </StyledTextBlock>
           ) : (

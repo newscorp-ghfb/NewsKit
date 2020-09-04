@@ -86,7 +86,7 @@ export default {
             overrides={{
               stylePreset: 'linkInline',
               label: {
-                typePreset: 'label030',
+                typographyPreset: 'label030',
                 spaceInline: 'space030',
               },
               items: {

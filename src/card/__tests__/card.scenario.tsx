@@ -15,7 +15,7 @@ import {
   createTheme,
   StylePresetKeys,
   ThemeProvider,
-  TypePresetKeys,
+  TypographyPresetKeys,
 } from '../../theme';
 
 const ContainerWithBackground = styled.div`
@@ -50,8 +50,8 @@ const cardTeaserLead = {
 const cardTeaserLeadInsetVariant = 'space000';
 const cardActions = 'sizing040';
 
-// Type presets
-const cardTypePresets: {[index: string]: TypePresetKeys} = {
+// Typography Presets
+const cardTypographyPresets: {[index: string]: TypographyPresetKeys} = {
   cardTeaserKickerLarge: 'heading050',
   cardTeaserKickerMedium: 'heading030',
   cardTeaserKickerSmall: 'heading010',
@@ -186,7 +186,7 @@ const cardTags = (size: TagSize) => ({cardSize}: {cardSize: string}) => () => (
       href="/"
       overrides={{
         stylePreset: 'cardTag',
-        typePreset: cardTypePresets[`cardTag${cardSize}`],
+        typographyPreset: cardTypographyPresets[`cardTag${cardSize}`],
       }}
     >
       News
@@ -196,7 +196,7 @@ const cardTags = (size: TagSize) => ({cardSize}: {cardSize: string}) => () => (
       href="/"
       overrides={{
         stylePreset: 'cardTag',
-        typePreset: cardTypePresets[`cardTag${cardSize}`],
+        typographyPreset: cardTypographyPresets[`cardTag${cardSize}`],
       }}
     >
       Sport
@@ -219,7 +219,7 @@ const cardBodyBase = ({inset}: {inset: boolean}) => ({
         overrides={{
           paddingPreset: 'spaceInset000Squish',
           stylePreset: 'cardLabel',
-          typePreset: cardTypePresets[`cardLabel${cardSize}`],
+          typographyPreset: cardTypographyPresets[`cardLabel${cardSize}`],
           minHeight: 'sizing000',
         }}
       >
@@ -238,12 +238,14 @@ const cardBodyBase = ({inset}: {inset: boolean}) => ({
         overrides={{
           heading: {
             stylePreset: 'cardTeaserHeadline',
-            typePreset: cardTypePresets[`cardTeaserHeadline${cardSize}`],
+            typographyPreset:
+              cardTypographyPresets[`cardTeaserHeadline${cardSize}`],
           },
           kicker: {
             spaceInline: cardTeaserKicker,
             stylePreset: 'cardTeaserKicker',
-            typePreset: cardTypePresets[`cardTeaserKicker${cardSize}`],
+            typographyPreset:
+              cardTypographyPresets[`cardTeaserKicker${cardSize}`],
           },
         }}
       >
@@ -259,7 +261,7 @@ const cardBodyBase = ({inset}: {inset: boolean}) => ({
       <TextBlock
         overrides={{
           stylePreset: 'cardTeaserLead',
-          typePreset: cardTypePresets[`cardTeaserLead${cardSize}`],
+          typographyPreset: cardTypographyPresets[`cardTeaserLead${cardSize}`],
         }}
       >
         The bank holiday weekend has seen some mixed weather, but as the sun

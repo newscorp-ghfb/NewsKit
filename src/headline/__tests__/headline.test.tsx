@@ -29,7 +29,7 @@ describe('headline', () => {
       kickerAs: 'h5',
       overrides: {
         kicker: {
-          typePreset: 'heading050',
+          typographyPreset: 'heading050',
         },
         heading: {
           stylePreset: 'linkInline',

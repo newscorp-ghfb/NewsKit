@@ -1,5 +1,5 @@
 import {
-  getTypePreset,
+  getTypographyPreset,
   getSizing,
   getPaddingPreset,
   getMarginPreset,
@@ -13,15 +13,15 @@ describe('get default presets functions', () => {
   const theme: any = createTheme({
     name: 'test-theme',
     overrides: {
-      typePresets: {
+      typographyPresets: {
         theDefaultToken: {
-          fontFamily: 'theDefaultToken-value-typePresets',
+          fontFamily: 'theDefaultToken-value-typographyPresets',
         },
         theOverrideToken: {
-          fontFamily: 'theOverrideToken-value-typePresets',
+          fontFamily: 'theOverrideToken-value-typographyPresets',
         },
         theNestedOverrideToken: {
-          fontFamily: 'theNestedOverrideToken-value-typePresets',
+          fontFamily: 'theNestedOverrideToken-value-typographyPresets',
         },
       },
       stylePresets: {
@@ -53,7 +53,7 @@ describe('get default presets functions', () => {
       },
       componentDefaults: {
         basicTestComponent: {
-          typePreset: 'theDefaultToken',
+          typographyPreset: 'theDefaultToken',
           stylePreset: 'theDefaultToken',
           paddingPreset: 'theDefaultToken',
           marginPreset: 'theDefaultToken',
@@ -62,7 +62,7 @@ describe('get default presets functions', () => {
           spaceStack: 'theDefaultToken',
         },
         responsiveTestComponent: {
-          typePreset: {
+          typographyPreset: {
             xs: 'theDefaultToken',
             md: 'theDefaultToken',
           },
@@ -82,10 +82,10 @@ describe('get default presets functions', () => {
   // For new utils, add a test case to this array.
   [
     {
-      fnName: 'getTypePreset',
-      fn: getTypePreset as any,
-      tokenPathEnd: 'typePreset',
-      themeSection: 'typePresets',
+      fnName: 'getTypographyPreset',
+      fn: getTypographyPreset as any,
+      tokenPathEnd: 'typographyPreset',
+      themeSection: 'typographyPresets',
       responsive: true,
     },
     {

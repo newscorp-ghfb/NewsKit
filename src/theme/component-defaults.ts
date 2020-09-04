@@ -1,11 +1,11 @@
 export const componentDefaults = {
   byline: {
     stylePreset: 'byline',
-    typePreset: 'meta020',
+    typographyPreset: 'meta020',
     space: 'sizing020',
     link: {
       stylePreset: 'bylineLink',
-      typePreset: 'meta020',
+      typographyPreset: 'meta020',
     },
     divider: {
       stylePreset: 'bylineDivider',
@@ -14,7 +14,7 @@ export const componentDefaults = {
   },
   button: {
     small: {
-      typePreset: 'button010',
+      typographyPreset: 'button010',
       stylePreset: 'buttonDefault',
       paddingPreset: 'spaceInset020Squish',
       minWidth: 'sizing090',
@@ -23,7 +23,7 @@ export const componentDefaults = {
       space: 'sizing020',
     },
     medium: {
-      typePreset: 'button020',
+      typographyPreset: 'button020',
       stylePreset: 'buttonDefault',
       paddingPreset: 'spaceInset030Squish',
       minWidth: 'sizing100',
@@ -32,7 +32,7 @@ export const componentDefaults = {
       space: 'sizing020',
     },
     large: {
-      typePreset: 'button030',
+      typographyPreset: 'button030',
       stylePreset: 'buttonDefault',
       paddingPreset: 'spaceInset040Squish',
       minWidth: 'sizing110',
@@ -96,14 +96,14 @@ export const componentDefaults = {
   },
   dateTime: {
     stylePreset: 'dateTime',
-    typePreset: 'meta020',
+    typographyPreset: 'meta020',
     prefix: {
       stylePreset: 'dateTimePrefix',
-      typePreset: 'meta020',
+      typographyPreset: 'meta020',
     },
     suffix: {
       stylePreset: 'dateTimeSuffix',
-      typePreset: 'meta020',
+      typographyPreset: 'meta020',
     },
   },
   divider: {
@@ -111,7 +111,7 @@ export const componentDefaults = {
   },
   flag: {
     small: {
-      typePreset: 'label010',
+      typographyPreset: 'label010',
       stylePreset: 'flagDefault',
       paddingPreset: 'spaceInset010Squish',
       minHeight: 'sizing050',
@@ -119,7 +119,7 @@ export const componentDefaults = {
       space: 'sizing010',
     },
     large: {
-      typePreset: 'label020',
+      typographyPreset: 'label020',
       stylePreset: 'flagDefault',
       paddingPreset: 'spaceInset020Squish',
       minHeight: 'sizing060',
@@ -152,7 +152,7 @@ export const componentDefaults = {
   headline: {
     heading: {
       stylePreset: 'headlineContent',
-      typePreset: {
+      typographyPreset: {
         xs: 'heading060',
         sm: 'heading060',
         md: 'heading070',
@@ -161,7 +161,7 @@ export const componentDefaults = {
     },
     kicker: {
       stylePreset: 'headlineKicker',
-      typePreset: {
+      typographyPreset: {
         xs: 'heading060',
         sm: 'heading060',
         md: 'heading070',
@@ -177,7 +177,7 @@ export const componentDefaults = {
   },
   headlineH1: {
     stylePreset: 'headlineH1',
-    typePreset: {
+    typographyPreset: {
       xs: 'heading050',
       md: 'heading070',
       lg: 'heading090',
@@ -185,32 +185,32 @@ export const componentDefaults = {
   },
   headlineH2: {
     stylePreset: 'headlineH2',
-    typePreset: {
+    typographyPreset: {
       xs: 'heading030',
       md: 'heading040',
     },
   },
   headlineH3: {
     stylePreset: 'headlineH3',
-    typePreset: {
+    typographyPreset: {
       xs: 'heading020',
       md: 'heading030',
     },
   },
   headlineH4: {
     stylePreset: 'headlineH4',
-    typePreset: {
+    typographyPreset: {
       xs: 'heading010',
       md: 'heading020',
     },
   },
   headlineH5: {
     stylePreset: 'headlineH5',
-    typePreset: 'subhead015',
+    typographyPreset: 'subhead015',
   },
   headlineH6: {
     stylePreset: 'headlineH6',
-    typePreset: 'subhead010',
+    typographyPreset: 'subhead010',
   },
   iconButton: {
     small: {
@@ -247,16 +247,16 @@ export const componentDefaults = {
   },
   paragraph: {
     stylePreset: 'paragraph',
-    typePreset: 'body020',
+    typographyPreset: 'body020',
     dropCap: {
       stylePreset: 'paragraphDropCap',
-      typePreset: 'display040',
+      typographyPreset: 'display040',
       space: 'space020',
     },
   },
   shareBar: {
     label: {
-      typePreset: 'label020',
+      typographyPreset: 'label020',
       stylePreset: 'shareBarLabel',
       spaceInline: 'space040',
       spaceStack: 'space040',
@@ -279,19 +279,19 @@ export const componentDefaults = {
     },
     thumbLabel: {
       stylePreset: 'sliderThumbLabel',
-      typePreset: 'label030',
+      typographyPreset: 'label030',
       space: 'space060',
     },
     labels: {
       stylePreset: 'sliderLabels',
-      typePreset: 'label020',
+      typographyPreset: 'label020',
       space: 'space030',
     },
   },
   standfirst: {
     styledText: {
       stylePreset: 'standfirst',
-      typePreset: {
+      typographyPreset: {
         xs: 'subhead020',
         md: 'subhead030',
       },
@@ -300,7 +300,7 @@ export const componentDefaults = {
   tab: {
     small: {
       stylePreset: 'tab',
-      typePreset: 'label020',
+      typographyPreset: 'label020',
       paddingPreset: 'spaceInset020Squish',
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
@@ -308,7 +308,7 @@ export const componentDefaults = {
     },
     medium: {
       stylePreset: 'tab',
-      typePreset: 'label020',
+      typographyPreset: 'label020',
       paddingPreset: 'spaceInset030Squish',
       minHeight: 'sizing080',
       iconSize: 'iconSize020',
@@ -316,7 +316,7 @@ export const componentDefaults = {
     },
     large: {
       stylePreset: 'tab',
-      typePreset: 'label030',
+      typographyPreset: 'label030',
       paddingPreset: 'spaceInset030Squish',
       minHeight: 'sizing090',
       iconSize: 'iconSize030',
@@ -325,7 +325,7 @@ export const componentDefaults = {
   },
   tag: {
     small: {
-      typePreset: 'label010',
+      typographyPreset: 'label010',
       stylePreset: 'tagDefault',
       paddingPreset: 'spaceInset010Squish',
       minHeight: 'sizing050',
@@ -333,7 +333,7 @@ export const componentDefaults = {
       space: 'sizing010',
     },
     medium: {
-      typePreset: 'label020',
+      typographyPreset: 'label020',
       stylePreset: 'tagDefault',
       paddingPreset: 'spaceInset020Squish',
       minHeight: 'sizing060',
@@ -341,7 +341,7 @@ export const componentDefaults = {
       space: 'sizing010',
     },
     large: {
-      typePreset: 'label030',
+      typographyPreset: 'label030',
       stylePreset: 'tagDefault',
       paddingPreset: 'spaceInset020Squish',
       minHeight: 'sizing070',
@@ -356,7 +356,7 @@ export const componentDefaults = {
     },
     stylePreset: 'titleBar',
     heading: {
-      typePreset: {
+      typographyPreset: {
         xs: 'heading040',
         md: 'heading050',
         lg: 'heading070',
@@ -367,7 +367,7 @@ export const componentDefaults = {
     spaceStack: 'space040',
     content: {
       stylePreset: 'unorderedListItemContent',
-      typePreset: 'body010',
+      typographyPreset: 'body010',
     },
     marker: {
       stylePreset: 'unorderedListItemMarker',

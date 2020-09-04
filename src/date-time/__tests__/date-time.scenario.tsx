@@ -45,10 +45,10 @@ export default {
             date="2017-01-01T04:32:00.000Z"
             prefix="Updated:"
             overrides={{
-              typePreset: 'label010',
+              typographyPreset: 'label010',
               stylePreset: 'articleHeadlineKicker',
               prefix: {
-                typePreset: 'label020',
+                typographyPreset: 'label020',
                 stylePreset: 'articleHeadlineKicker',
               },
             }}
@@ -58,10 +58,10 @@ export default {
             date="2017-01-01T04:32:00.000Z"
             suffix="The Times"
             overrides={{
-              typePreset: 'label010',
+              typographyPreset: 'label010',
               stylePreset: 'articleHeadlineKicker',
               suffix: {
-                typePreset: 'label020',
+                typographyPreset: 'label020',
                 stylePreset: 'articleHeadlineKicker',
               },
             }}
@@ -72,14 +72,14 @@ export default {
             suffix="The Times"
             prefix="Updated:"
             overrides={{
-              typePreset: 'label010',
+              typographyPreset: 'label010',
               stylePreset: 'articleHeadlineKicker',
               prefix: {
-                typePreset: 'label020',
+                typographyPreset: 'label020',
                 stylePreset: 'articleHeadlineKicker',
               },
               suffix: {
-                typePreset: 'label020',
+                typographyPreset: 'label020',
                 stylePreset: 'articleHeadlineKicker',
               },
             }}

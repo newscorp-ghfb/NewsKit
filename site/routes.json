@@ -67,11 +67,6 @@
     "id": "/foundations",
     "subNav": [
       {
-        "title": "Animation",
-        "page": true,
-        "id": "/foundations/animation"
-      },
-      {
         "title": "Colours",
         "page": true,
         "id": "/foundations/colours"
@@ -80,6 +75,11 @@
         "title": "Icons",
         "page": true,
         "id": "/foundations/icons"
+      },
+      {
+        "title": "Motion",
+        "page": true,
+        "id": "/foundations/motion"
       },
       {
         "title": "Spacing",
@@ -258,11 +258,6 @@
             "id": "/utils/code-helpers/css"
           },
           {
-            "title": "getAnimationFromTheme",
-            "page": true,
-            "id": "/utils/code-helpers/get-animation-from-theme"
-          },
-          {
             "title": "getBorderFromTheme",
             "page": true,
             "id": "/utils/code-helpers/get-border-from-theme"
@@ -293,6 +288,11 @@
             "id": "/utils/code-helpers/get-media-query-from-theme"
           },
           {
+            "title": "getMotionFromTheme",
+            "page": true,
+            "id": "/utils/code-helpers/get-motion-from-theme"
+          },
+          {
             "title": "getShadowFromTheme",
             "page": true,
             "id": "/utils/code-helpers/get-shadow-from-theme"
@@ -308,9 +308,9 @@
             "id": "/utils/code-helpers/get-style-preset-from-theme"
           },
           {
-            "title": "getTypePresetFromTheme",
+            "title": "getTypographyPresetFromTheme",
             "page": true,
-            "id": "/utils/code-helpers/get-type-preset-from-theme"
+            "id": "/utils/code-helpers/get-typography-preset-from-theme"
           }
         ]
       }

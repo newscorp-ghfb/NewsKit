@@ -1,23 +1,24 @@
 const iconButtonSolidPrimary: StylePresetStates = {
   base: {
-    backgroundColor: colorPrimitives.interactive030,
-    borderRadius: borderRadiusPrimitives.borderRadiusDefault,
-    color: colorPrimitives.inkInverse,
-    iconColor: colorPrimitives.inkInverse,
+    backgroundColor: '{{colors.interactive030}}',
+    borderRadius: '{{borders.borderRadiusCircle}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
   },
   hover: {
-    backgroundColor: colorPrimitives.interactive040,
-    boxShadow: shadowPrimitives.shadow020,
+    backgroundColor: '{{colors.interactive040}}',
   },
   active: {
-    backgroundColor: colorPrimitives.interactive050,
+    backgroundColor: '{{colors.interactive050}}',
   },
   disabled: {
-    backgroundColor: colorPrimitives.disabled,
-    color: colorPrimitives.inkNonEssential,
-    iconColor: colorPrimitives.inkNonEssential,
+    backgroundColor: '{{colors.interactiveDisabled}}',
+    color: '{{colors.inkNonEssential}}',
+    iconColor: '{{colors.inkNonEssential}}',
   },
   loading: {
-    iconColor: colorPrimitives.white,
+    backgroundColor: '{{colors.interactive020}}',
+    color: '{{colors.inkBrand010}}',
+    iconColor: '{{colors.inkBrand010}}',
   },
 };

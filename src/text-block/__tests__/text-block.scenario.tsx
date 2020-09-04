@@ -12,7 +12,7 @@ const myCustomTheme = createTheme({
         },
       },
     },
-    typePresets: {
+    typographyPresets: {
       textblockCustom: {
         fontFamily: '"Noto Sans", sans-serif',
         fontWeight: 400,
@@ -65,10 +65,10 @@ export default {
               {bodyString}
             </TextBlock>
 
-            <h3>With type-preset &quot;textblockCustom&quot;</h3>
+            <h3>With typography-preset &quot;textblockCustom&quot;</h3>
             <TextBlock
               overrides={{
-                typePreset: 'body030',
+                typographyPreset: 'body030',
               }}
             >
               {bodyString}

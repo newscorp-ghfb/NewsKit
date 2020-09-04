@@ -6,7 +6,7 @@ export default Layout;
 # Override individual components
 
 Each of the components will document the structure of its default preset on their individual document page.  
-You can override default presets by passing the new preset as stylePreset, typePreset, paddingPreset, sizePreset or spaceInline/spaceStack.
+You can override default presets by passing the new preset as stylePreset, typographyPreset, paddingPreset, sizePreset or spaceInline/spaceStack.
 
 ## Example
 
@@ -14,11 +14,11 @@ Here is an example of overriding the default presets for medium size `button`.
 
 <CodeFromFile path="examples/theming/override-default-presets.tsx" />
 
-In the example above, the `typePreset` will be overridden with `button020` and `stylePreset` will be replaced with `buttonOutlinedPrimary`, leaving the other presets untouched. Following this example, the other fields can overridden in a similar way. <br/>
+In the example above, the `typographyPreset` will be overridden with `button020` and `stylePreset` will be replaced with `buttonOutlinedPrimary`, leaving the other presets untouched. Following this example, the other fields can overridden in a similar way. <br/>
 
 The rule of thumb is to make sure the structure of the `overrides` object aligns with the object structure in the `default presets`.
 Even for more complicated components that contains nested elements, this rule still applies. 
 
 <CodeFromFile path="examples/theming/override-default-presets-nested.tsx" />
 
-In the example above, not only did the style preset, type preset and space of `byline` get overriden, `byline.link.stylePreset`, `byline.link.typePreset`, `byline.divider.stylePreset` and `byline.divider.spaceInline` can also be overridden with new preset values.
+In the example above, not only did the style preset, typography preset and space of `byline` get overriden, `byline.link.stylePreset`, `byline.link.typographyPreset`, `byline.divider.stylePreset` and `byline.divider.spaceInline` can also be overridden with new preset values.

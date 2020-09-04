@@ -2,16 +2,6 @@
 
 exports[`compileTheme full theme compile 1`] = `
 Object {
-  "animations": Object {
-    "animationDuration010": "100ms",
-    "animationDuration020": "200ms",
-    "animationDuration030": "300ms",
-    "animationDuration040": "400ms",
-    "animationDuration050": "500ms",
-    "animationEaseIn": "cubic-bezier(.5, 0, 1, 1)",
-    "animationEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
-    "animationEaseOut": "cubic-bezier(0, 0, .5, 1)",
-  },
   "borders": Object {
     "borderRadiusCircle": "50%",
     "borderRadiusDefault": "8px",
@@ -175,7 +165,7 @@ Object {
         "paddingPreset": "spaceInset040Squish",
         "space": "sizing020",
         "stylePreset": "buttonDefault",
-        "typePreset": "button030",
+        "typographyPreset": "button030",
       },
       "medium": Object {
         "iconSize": "iconSize020",
@@ -184,7 +174,7 @@ Object {
         "paddingPreset": "spaceInset030Squish",
         "space": "sizing020",
         "stylePreset": "buttonDefault",
-        "typePreset": "button020",
+        "typographyPreset": "button020",
       },
       "small": Object {
         "iconSize": "iconSize010",
@@ -193,7 +183,7 @@ Object {
         "paddingPreset": "spaceInset020Squish",
         "space": "sizing020",
         "stylePreset": "buttonDefault",
-        "typePreset": "button010",
+        "typographyPreset": "button010",
       },
     },
     "byline": Object {
@@ -203,11 +193,11 @@ Object {
       },
       "link": Object {
         "stylePreset": "bylineLink",
-        "typePreset": "meta020",
+        "typographyPreset": "meta020",
       },
       "space": "sizing020",
       "stylePreset": "byline",
-      "typePreset": "meta020",
+      "typographyPreset": "meta020",
     },
     "card": Object {
       "actionsContainer": Object {
@@ -265,14 +255,14 @@ Object {
     "dateTime": Object {
       "prefix": Object {
         "stylePreset": "dateTimePrefix",
-        "typePreset": "meta020",
+        "typographyPreset": "meta020",
       },
       "stylePreset": "dateTime",
       "suffix": Object {
         "stylePreset": "dateTimeSuffix",
-        "typePreset": "meta020",
+        "typographyPreset": "meta020",
       },
-      "typePreset": "meta020",
+      "typographyPreset": "meta020",
     },
     "divider": Object {
       "stylePreset": "dividerHorizontal",
@@ -284,7 +274,7 @@ Object {
         "paddingPreset": "spaceInset020Squish",
         "space": "sizing010",
         "stylePreset": "flagDefault",
-        "typePreset": "label020",
+        "typographyPreset": "label020",
       },
       "small": Object {
         "iconSize": "iconSize010",
@@ -292,7 +282,7 @@ Object {
         "paddingPreset": "spaceInset010Squish",
         "space": "sizing010",
         "stylePreset": "flagDefault",
-        "typePreset": "label010",
+        "typographyPreset": "label010",
       },
     },
     "grid": Object {
@@ -320,7 +310,7 @@ Object {
     "headline": Object {
       "heading": Object {
         "stylePreset": "headlineContent",
-        "typePreset": Object {
+        "typographyPreset": Object {
           "lg": "heading080",
           "md": "heading070",
           "sm": "heading060",
@@ -335,7 +325,7 @@ Object {
           "xs": "space030",
         },
         "stylePreset": "headlineKicker",
-        "typePreset": Object {
+        "typographyPreset": Object {
           "lg": "heading080",
           "md": "heading070",
           "sm": "heading060",
@@ -345,7 +335,7 @@ Object {
     },
     "headlineH1": Object {
       "stylePreset": "headlineH1",
-      "typePreset": Object {
+      "typographyPreset": Object {
         "lg": "heading090",
         "md": "heading070",
         "xs": "heading050",
@@ -353,32 +343,32 @@ Object {
     },
     "headlineH2": Object {
       "stylePreset": "headlineH2",
-      "typePreset": Object {
+      "typographyPreset": Object {
         "md": "heading040",
         "xs": "heading030",
       },
     },
     "headlineH3": Object {
       "stylePreset": "headlineH3",
-      "typePreset": Object {
+      "typographyPreset": Object {
         "md": "heading030",
         "xs": "heading020",
       },
     },
     "headlineH4": Object {
       "stylePreset": "headlineH4",
-      "typePreset": Object {
+      "typographyPreset": Object {
         "md": "heading020",
         "xs": "heading010",
       },
     },
     "headlineH5": Object {
       "stylePreset": "headlineH5",
-      "typePreset": "subhead015",
+      "typographyPreset": "subhead015",
     },
     "headlineH6": Object {
       "stylePreset": "headlineH6",
-      "typePreset": "subhead010",
+      "typographyPreset": "subhead010",
     },
     "iconButton": Object {
       "large": Object {
@@ -417,10 +407,10 @@ Object {
       "dropCap": Object {
         "space": "space020",
         "stylePreset": "paragraphDropCap",
-        "typePreset": "display040",
+        "typographyPreset": "display040",
       },
       "stylePreset": "paragraph",
-      "typePreset": "body020",
+      "typographyPreset": "body020",
     },
     "shareBar": Object {
       "items": Object {
@@ -430,7 +420,7 @@ Object {
         "spaceInline": "space040",
         "spaceStack": "space040",
         "stylePreset": "shareBarLabel",
-        "typePreset": "label020",
+        "typographyPreset": "label020",
       },
     },
     "slider": Object {
@@ -440,7 +430,7 @@ Object {
       "labels": Object {
         "space": "space030",
         "stylePreset": "sliderLabels",
-        "typePreset": "label020",
+        "typographyPreset": "label020",
       },
       "thumb": Object {
         "size": "sizing060",
@@ -449,7 +439,7 @@ Object {
       "thumbLabel": Object {
         "space": "space060",
         "stylePreset": "sliderThumbLabel",
-        "typePreset": "label030",
+        "typographyPreset": "label030",
       },
       "track": Object {
         "size": "sizing030",
@@ -459,7 +449,7 @@ Object {
     "standfirst": Object {
       "styledText": Object {
         "stylePreset": "standfirst",
-        "typePreset": Object {
+        "typographyPreset": Object {
           "md": "subhead030",
           "xs": "subhead020",
         },
@@ -472,7 +462,7 @@ Object {
         "paddingPreset": "spaceInset030Squish",
         "space": "sizing020",
         "stylePreset": "tab",
-        "typePreset": "label030",
+        "typographyPreset": "label030",
       },
       "medium": Object {
         "iconSize": "iconSize020",
@@ -480,7 +470,7 @@ Object {
         "paddingPreset": "spaceInset030Squish",
         "space": "sizing020",
         "stylePreset": "tab",
-        "typePreset": "label020",
+        "typographyPreset": "label020",
       },
       "small": Object {
         "iconSize": "iconSize010",
@@ -488,7 +478,7 @@ Object {
         "paddingPreset": "spaceInset020Squish",
         "space": "sizing020",
         "stylePreset": "tab",
-        "typePreset": "label020",
+        "typographyPreset": "label020",
       },
     },
     "tag": Object {
@@ -498,7 +488,7 @@ Object {
         "paddingPreset": "spaceInset020Squish",
         "space": "sizing010",
         "stylePreset": "tagDefault",
-        "typePreset": "label030",
+        "typographyPreset": "label030",
       },
       "medium": Object {
         "iconSize": "iconSize010",
@@ -506,7 +496,7 @@ Object {
         "paddingPreset": "spaceInset020Squish",
         "space": "sizing010",
         "stylePreset": "tagDefault",
-        "typePreset": "label020",
+        "typographyPreset": "label020",
       },
       "small": Object {
         "iconSize": "iconSize010",
@@ -514,12 +504,12 @@ Object {
         "paddingPreset": "spaceInset010Squish",
         "space": "sizing010",
         "stylePreset": "tagDefault",
-        "typePreset": "label010",
+        "typographyPreset": "label010",
       },
     },
     "titleBar": Object {
       "heading": Object {
-        "typePreset": Object {
+        "typographyPreset": Object {
           "lg": "heading070",
           "md": "heading050",
           "xs": "heading040",
@@ -534,7 +524,7 @@ Object {
     "unorderedList": Object {
       "content": Object {
         "stylePreset": "unorderedListItemContent",
-        "typePreset": "body010",
+        "typographyPreset": "body010",
       },
       "marker": Object {
         "size": "iconSize005",
@@ -646,6 +636,16 @@ Object {
     "fontWeight040": 700,
   },
   "icons": Object {},
+  "motions": Object {
+    "motionDuration010": "100ms",
+    "motionDuration020": "200ms",
+    "motionDuration030": "300ms",
+    "motionDuration040": "400ms",
+    "motionDuration050": "500ms",
+    "motionEaseIn": "cubic-bezier(.5, 0, 1, 1)",
+    "motionEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
+    "motionEaseOut": "cubic-bezier(0, 0, .5, 1)",
+  },
   "name": "my theme",
   "overlays": Object {
     "gradientDark010": "linear-gradient(180deg, rgba(255,255,255,0.00) 0%, rgba(255, 255, 255, 1) 100%)",
@@ -2191,7 +2191,7 @@ Object {
     },
   },
   "themeVersion": 1,
-  "typePresets": Object {
+  "typographyPresets": Object {
     "body010": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "14px",

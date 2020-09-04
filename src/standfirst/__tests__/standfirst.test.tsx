@@ -29,11 +29,11 @@ describe('Standfirst', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders with custom type preset', () => {
+  test('renders with custom typography preset', () => {
     const fragment = renderToFragmentWithTheme(Standfirst, {
       overrides: {
         styledText: {
-          typePreset: 'subhead010',
+          typographyPreset: 'subhead010',
         },
       },
     });
