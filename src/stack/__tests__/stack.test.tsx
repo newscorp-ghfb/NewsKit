@@ -18,7 +18,7 @@ describe('Stack', () => {
     const fragment = renderToFragmentWithTheme(Stack, {
       list: true,
       ariaLabel: 'Tag list',
-      space: 'sizing020',
+      spaceInline: 'sizing020',
       children: [<Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>],
     });
 
@@ -141,10 +141,11 @@ describe('Stack', () => {
   Object.values(Flow).forEach(flowKey => {
     (['sizing000', 'sizing090', 'sizing120'] as SizingKeys[]).forEach(size => {
       Object.values(['wrap', 'nowrap']).forEach(wrapType => {
-        test(`renders where the stack flow is ${flowKey} and the space is set to ${size}`, () => {
+        test(`renders where the stack flow is ${flowKey} and the spaceInline & spaceStack is set to ${size}`, () => {
           const fragment = renderToFragmentWithTheme(Stack, {
             flow: flowKey,
-            space: size,
+            spaceInline: size,
+            spaceStack: size,
             wrap: wrapType as 'wrap' | 'nowrap',
             children: [
               <Tag>child 1</Tag>,
@@ -159,45 +160,41 @@ describe('Stack', () => {
     });
   });
 
-  Object.values(Flow)
-    .filter(flow => flow.includes('horizontal'))
-    .forEach(flowKey => {
-      Object.values(['wrap', 'nowrap']).forEach(wrapType => {
-        test(`renders where the stack flow is ${flowKey} and only spaceStack is set to sizing090`, () => {
-          const fragment = renderToFragmentWithTheme(Stack, {
-            flow: flowKey,
-            spaceStack: 'sizing090',
-            wrap: wrapType as 'wrap' | 'nowrap',
-            children: [
-              <Tag>child 1</Tag>,
-              <Tag>child 2</Tag>,
-              <Tag>child 3</Tag>,
-            ],
-          });
-
-          expect(fragment).toMatchSnapshot();
+  Object.values(Flow).forEach(flowKey => {
+    Object.values(['wrap', 'nowrap']).forEach(wrapType => {
+      test(`renders where the stack flow is ${flowKey} and only spaceStack is set to sizing090`, () => {
+        const fragment = renderToFragmentWithTheme(Stack, {
+          flow: flowKey,
+          spaceStack: 'sizing090',
+          wrap: wrapType as 'wrap' | 'nowrap',
+          children: [
+            <Tag>child 1</Tag>,
+            <Tag>child 2</Tag>,
+            <Tag>child 3</Tag>,
+          ],
         });
+
+        expect(fragment).toMatchSnapshot();
       });
     });
+  });
 
-  Object.values(Flow)
-    .filter(flow => flow.includes('vertical'))
-    .forEach(flowKey => {
-      Object.values(['wrap', 'nowrap']).forEach(wrapType => {
-        test(`renders where the stack flow is ${flowKey} and only spaceStack is set to sizing090`, () => {
-          const fragment = renderToFragmentWithTheme(Stack, {
-            flow: flowKey,
-            spaceStack: 'sizing090',
-            wrap: wrapType as 'wrap' | 'nowrap',
-            children: [
-              <Tag>child 1</Tag>,
-              <Tag>child 2</Tag>,
-              <Tag>child 3</Tag>,
-            ],
-          });
-
-          expect(fragment).toMatchSnapshot();
+  Object.values(Flow).forEach(flowKey => {
+    Object.values(['wrap', 'nowrap']).forEach(wrapType => {
+      test(`renders where the stack flow is ${flowKey} and only spaceInline is set to sizing090`, () => {
+        const fragment = renderToFragmentWithTheme(Stack, {
+          flow: flowKey,
+          spaceInline: 'sizing090',
+          wrap: wrapType as 'wrap' | 'nowrap',
+          children: [
+            <Tag>child 1</Tag>,
+            <Tag>child 2</Tag>,
+            <Tag>child 3</Tag>,
+          ],
         });
+
+        expect(fragment).toMatchSnapshot();
       });
     });
+  });
 });

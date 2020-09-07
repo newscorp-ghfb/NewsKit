@@ -133,7 +133,7 @@ const Article: React.FC = () => (
           </Cell>
 
           <Cell xs={12}>
-            <Stack flow={Flow.HorizontalCenter} space="sizing040">
+            <Stack flow={Flow.HorizontalCenter} spaceInline="sizing040">
               <Tag size={TagSize.Small} href="/">
                 Cooking
               </Tag>

@@ -45,7 +45,7 @@ describe('StackChild', () => {
 
   test('renders within a Stack, with align self property', () => {
     const fragment = renderToFragmentWithTheme(Stack, {
-      space: 'sizing020',
+      spaceInline: 'sizing020',
       children: [
         <StackChild alignSelf={AlignSelfValues.Stretch}>
           <Tag>child 1</Tag>

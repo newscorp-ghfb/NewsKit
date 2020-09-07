@@ -88,7 +88,12 @@ export default {
         <React.Fragment>
           <h2>Button Size</h2>
           <Container>
-            <Stack flow="horizontal-center" space="sizing070" wrap="wrap">
+            <Stack
+              flow="horizontal-center"
+              spaceInline="sizing070"
+              spaceStack="sizing070"
+              wrap="wrap"
+            >
               <Button size={ButtonSize.Small}>Small button</Button>
               <Button size={ButtonSize.Medium}>Medium button</Button>
               <Button size={ButtonSize.Large}>Large button</Button>
@@ -176,7 +181,7 @@ export default {
               return (
                 <Cell xs={4} sm={3}>
                   <Stack
-                    space="sizing020"
+                    spaceInline="sizing020"
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
@@ -233,7 +238,7 @@ export default {
               return (
                 <Cell xs={4} sm={3}>
                   <Stack
-                    space="sizing020"
+                    spaceInline="sizing020"
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
@@ -290,7 +295,7 @@ export default {
               return (
                 <Cell xs={4} sm={3}>
                   <Stack
-                    space="sizing020"
+                    spaceInline="sizing020"
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
@@ -346,7 +351,7 @@ export default {
               return (
                 <Cell xs={4} sm={3}>
                   <Stack
-                    space="sizing020"
+                    spaceInline="sizing020"
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
@@ -388,7 +393,7 @@ export default {
           <Container>
             {[Pause, Email, CopyLink].map(IconType => (
               <Spacer>
-                <Stack flow="horizontal-center" space="sizing060">
+                <Stack flow="horizontal-center" spaceInline="sizing060">
                   {buttonSizes.map(button => (
                     <Button size={button.buttonSize}>
                       <IconType size={button.iconSize} />
@@ -411,7 +416,7 @@ export default {
           <Container>
             {[Pause, Email, CopyLink].map(IconType => (
               <Spacer>
-                <Stack flow="horizontal-center" space="sizing060">
+                <Stack flow="horizontal-center" spaceInline="sizing060">
                   {buttonSizes.map(button => (
                     <Button size={button.buttonSize}>
                       Button

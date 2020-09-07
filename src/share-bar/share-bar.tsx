@@ -79,7 +79,12 @@ export const ShareBar: React.FC<ShareBarProps> = ({
       {label && <StyledLabel {...styledComponentsProps}>{label}</StyledLabel>}
       <Stack
         flow={vertical ? Flow.VerticalCenter : Flow.HorizontalCenter}
-        space={getToken({theme, overrides}, `shareBar.items`, 'items', 'space')}
+        spaceInline={getToken(
+          {theme, overrides},
+          `shareBar.items`,
+          'items',
+          'space',
+        )}
       >
         {children}
       </Stack>

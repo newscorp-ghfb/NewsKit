@@ -16,9 +16,14 @@ const Container = styled.div`
   background-color: ${getColorFromTheme('neutral020')};
 `;
 
-const Block = styled.div<{isBlock?: boolean; hasHeight: boolean}>`
+const Block = styled.div<{
+  isBlock?: boolean;
+  hasHeight: boolean;
+  hasWidth?: boolean;
+}>`
   display: ${({isBlock}) => (isBlock ? 'block' : 'inline-block')};
   height: ${({hasHeight}) => (hasHeight ? '200px' : 'auto')};
+  width: ${({hasWidth}) => (hasWidth ? '400px' : 'auto')};
   border: dotted 1px ${getColorFromTheme('red040')};
 `;
 
@@ -106,7 +111,7 @@ export default {
           </StorybookHeading>
           <Container>
             <Block hasHeight>
-              <Stack space="sizing050">
+              <Stack spaceInline="sizing050">
                 <Tag>Example 1</Tag>
                 <Tag>Example 2</Tag>
                 <Tag>Example 3</Tag>
@@ -126,10 +131,62 @@ export default {
           </StorybookHeading>
           <Container>
             <Block hasHeight>
-              <Stack space="sizing050" flow={Flow.HorizontalCenter}>
+              <Stack spaceInline="sizing050" flow={Flow.HorizontalCenter}>
                 <Tag>Example 1</Tag>
                 <Tag>Example 2</Tag>
                 <Tag>Example 3</Tag>
+              </Stack>
+            </Block>
+          </Container>
+        </MainContainer>
+      ),
+    },
+    {
+      name: 'stack-vertical-using-design-system-spacInline-spaceStack-token',
+      type: 'story',
+      component: () => (
+        <MainContainer>
+          <StorybookHeading>
+            Stack vertical using design system spacing token
+          </StorybookHeading>
+          <Container>
+            <Block hasHeight>
+              <Stack spaceInline="sizing050" spaceStack="sizing060" wrap="wrap">
+                <Tag>Example 1</Tag>
+                <Tag>Example 2</Tag>
+                <Tag>Example 3</Tag>
+                <Tag>Example 4</Tag>
+                <Tag>Example 5</Tag>
+                <Tag>Example 6</Tag>
+              </Stack>
+            </Block>
+          </Container>
+        </MainContainer>
+      ),
+    },
+    {
+      name:
+        'stack-horizontal-center-using-design-system-spaceInline-spaceStack-token',
+      type: 'story',
+      component: () => (
+        <MainContainer>
+          <StorybookHeading>
+            Stack horizontal center using design system spacing token
+          </StorybookHeading>
+          <Container>
+            <Block hasHeight hasWidth>
+              <Stack
+                spaceInline="sizing050"
+                spaceStack="sizing050"
+                wrap="wrap"
+                flow={Flow.HorizontalCenter}
+              >
+                <Tag>Example 1</Tag>
+                <Tag>Example 2</Tag>
+                <Tag>Example 3</Tag>
+                <Tag>Example 4</Tag>
+                <Tag>Example 5</Tag>
+                <Tag>Example 6</Tag>
               </Stack>
             </Block>
           </Container>
@@ -145,7 +202,7 @@ export default {
           <Container>
             <Stack
               flow={Flow.HorizontalCenter}
-              space="sizing020"
+              spaceInline="sizing020"
               stackDistribution={StackDistribution.SpaceAround}
             >
               <Tag>Item 1</Tag>
@@ -173,7 +230,7 @@ export default {
           <Container>
             <Stack
               flow={Flow.HorizontalCenter}
-              space="sizing020"
+              spaceInline="sizing020"
               stackDistribution={StackDistribution.SpaceAround}
               list
             >
@@ -202,7 +259,7 @@ export default {
           <Container>
             <Stack
               flow={Flow.HorizontalCenter}
-              space="sizing020"
+              spaceInline="sizing020"
               stackDistribution={StackDistribution.SpaceAround}
               list
             >

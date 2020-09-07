@@ -49,7 +49,12 @@ export default {
         <React.Fragment>
           <h1>Flag Sizes</h1>
 
-          <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
+          <Stack
+            flow="horizontal-center"
+            spaceStack="sizing020"
+            spaceInline="sizing020"
+            wrap="wrap"
+          >
             <Flag size={FlagSize.Small}>Small</Flag>
             <Flag size={FlagSize.Large}>Large</Flag>
           </Stack>
@@ -78,7 +83,12 @@ export default {
         <React.Fragment>
           <h1>Flags with an icon</h1>
           <Container>
-            <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
+            <Stack
+              flow="horizontal-center"
+              spaceInline="sizing020"
+              spaceStack="sizing020"
+              wrap="wrap"
+            >
               <Flag size={FlagSize.Small}>
                 <Email size="iconSize010" />
                 Text
@@ -99,7 +109,12 @@ export default {
         <React.Fragment>
           <h2>Minimal (without padding)</h2>
           <Container>
-            <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
+            <Stack
+              flow="horizontal-center"
+              spaceStack="sizing020"
+              spaceInline="sizing020"
+              wrap="wrap"
+            >
               <Flag
                 size={FlagSize.Small}
                 overrides={{

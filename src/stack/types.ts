@@ -2,8 +2,8 @@ import {SizingKeys} from '../theme';
 import {AlignSelfValues} from '../stack-child';
 
 export interface CommonStackProps {
-  space: SizingKeys;
   spaceStack: SizingKeys;
+  spaceInline: SizingKeys;
   flexGrow: boolean | number;
   flexShrink: boolean | number;
   flowReverse: boolean;
@@ -38,14 +38,17 @@ export interface StackProps extends Partial<CommonStackProps> {
 }
 
 export interface ChildProps
-  extends Pick<StyledStackProps, 'space' | 'spaceStack' | 'flow' | '$wrap'> {
+  extends Pick<
+    StyledStackProps,
+    'spaceInline' | 'spaceStack' | 'flow' | '$wrap'
+  > {
   order?: number;
 }
 
 export interface StyledChildProps
   extends Pick<
     StyledStackProps,
-    'space' | 'spaceStack' | 'flow' | '$wrap' | 'as'
+    'spaceInline' | 'spaceStack' | 'flow' | '$wrap' | 'as'
   > {
   $order?: number;
   $alignSelf?: AlignSelfValues;

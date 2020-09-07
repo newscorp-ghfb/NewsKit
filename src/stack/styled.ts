@@ -47,44 +47,46 @@ export const getSpaceInHalf = (
 
 const calculateMargins = (negative?: boolean) => ({
   theme,
-  space,
   spaceStack,
+  spaceInline,
   $wrap,
   flow,
 }: ChildProps & ThemeProp) => {
   const hasWrapping = $wrap === 'wrap';
 
-  const hasSpace = hasSpacing(theme, space);
   const hasSpaceStack = hasSpacing(theme, spaceStack);
+  const hasSpaceInline = hasSpacing(theme, spaceInline);
 
-  if (!hasSpace && !hasSpaceStack) {
+  if (!hasSpaceStack && !hasSpaceInline) {
     return undefined;
   }
 
   const margins = {} as CSSObject;
 
-  const halfSpace = hasSpace ? getSpaceInHalf(theme, space, negative) : '';
   const halfSpaceStack = hasSpaceStack
     ? getSpaceInHalf(theme, spaceStack, negative)
     : '';
+  const halfSpaceInline = hasSpaceInline
+    ? getSpaceInHalf(theme, spaceInline, negative)
+    : '';
 
   if (verticalFlows.includes(flow as Flow)) {
-    margins.marginTop = halfSpace || halfSpaceStack;
-    margins.marginBottom = halfSpace || halfSpaceStack;
+    margins.marginTop = halfSpaceInline;
+    margins.marginBottom = halfSpaceInline;
 
-    if (hasWrapping) {
-      margins.marginLeft = halfSpace;
-      margins.marginRight = halfSpace;
+    if (hasWrapping && hasSpaceStack) {
+      margins.marginLeft = halfSpaceStack;
+      margins.marginRight = halfSpaceStack;
     }
   } /* istanbul ignore next */ else if (
     horizontalFlows.includes(flow as Flow)
   ) {
-    margins.marginLeft = halfSpace;
-    margins.marginRight = halfSpace;
+    margins.marginLeft = halfSpaceInline;
+    margins.marginRight = halfSpaceInline;
 
-    if (hasWrapping) {
-      margins.marginTop = halfSpace || halfSpaceStack;
-      margins.marginBottom = halfSpace || halfSpaceStack;
+    if (hasWrapping && hasSpaceStack) {
+      margins.marginTop = halfSpaceStack;
+      margins.marginBottom = halfSpaceStack;
     }
   }
 

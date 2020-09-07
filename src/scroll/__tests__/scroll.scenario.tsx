@@ -64,7 +64,7 @@ export default {
           <Container>
             <Scroll flow={ScrollFlow.horizontal}>
               <Block>
-                <Stack flow="horizontal-center" space="sizing040">
+                <Stack flow="horizontal-center" spaceInline="sizing040">
                   {tags}
                 </Stack>
               </Block>
@@ -84,7 +84,7 @@ export default {
           <Container>
             <Scroll flow={ScrollFlow.vertical}>
               <Block>
-                <Stack flow="vertical-left" space="sizing040">
+                <Stack flow="vertical-left" spaceInline="sizing040">
                   {tags}
                 </Stack>
               </Block>

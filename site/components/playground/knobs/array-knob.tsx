@@ -142,7 +142,7 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
           return row ? (
             <Stack
               flow={Flow.HorizontalBottom}
-              space="sizing020"
+              spaceInline="sizing020"
               key={label + value}
             >
               {row}

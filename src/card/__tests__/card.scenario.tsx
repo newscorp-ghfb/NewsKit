@@ -180,7 +180,7 @@ const customCardMediaWithOverrides = () => (
 );
 
 const cardTags = (size: TagSize) => ({cardSize}: {cardSize: string}) => () => (
-  <Stack flow={Flow.HorizontalCenter} space={cardActions}>
+  <Stack flow={Flow.HorizontalCenter} spaceInline={cardActions}>
     <Tag
       size={size}
       href="/"

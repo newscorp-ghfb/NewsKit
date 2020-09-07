@@ -15,7 +15,12 @@ export const component = () => (
   <React.Fragment>
     <StorybookHeading>Enabled/Disbaled Tag</StorybookHeading>
     <Container>
-      <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
+      <Stack
+        flow="horizontal-center"
+        spaceStack="sizing020"
+        spaceInline="sizing020"
+        wrap="wrap"
+      >
         <Tag href="http://example.com">Enabled</Tag>
         <Tag href="http://example.com" disabled>
           Disabled
@@ -25,7 +30,12 @@ export const component = () => (
 
     <StorybookHeading>Tag Sizes</StorybookHeading>
     <Container>
-      <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
+      <Stack
+        flow="horizontal-center"
+        spaceStack="sizing020"
+        spaceInline="sizing020"
+        wrap="wrap"
+      >
         <Tag size={TagSize.Small} href="http://example.com">
           Small
         </Tag>
@@ -45,7 +55,12 @@ export const component = () => (
 
     <StorybookHeading>Tags with an icon</StorybookHeading>
     <Container>
-      <Stack flow="horizontal-center" space="sizing020" wrap="wrap">
+      <Stack
+        flow="horizontal-center"
+        spaceStack="sizing020"
+        spaceInline="sizing020"
+        wrap="wrap"
+      >
         <Tag size={TagSize.Small}>
           <Email size="iconSize010" />
           Text

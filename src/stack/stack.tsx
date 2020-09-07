@@ -19,8 +19,8 @@ const renderAs = (as: StackProps['as'], list: StackProps['list']) =>
 
 const wrapChild = (
   theme: Theme,
-  space: NonNullable<StackProps['space']>,
   spaceStack: NonNullable<StackProps['spaceStack']>,
+  spaceInline: NonNullable<StackProps['spaceInline']>,
   flow: NonNullable<StackProps['flow']>,
   wrap: NonNullable<StackProps['wrap']>,
   list: StackProps['list'],
@@ -36,8 +36,8 @@ const wrapChild = (
   },
 ) => {
   const childProps: StyledChildProps = {
-    space,
     spaceStack,
+    spaceInline,
     flow,
     $wrap: wrap,
   };
@@ -55,7 +55,7 @@ const wrapChild = (
     );
   }
 
-  if (hasSpacing(theme, space) || hasSpacing(theme, spaceStack)) {
+  if (hasSpacing(theme, spaceStack) || hasSpacing(theme, spaceInline)) {
     if (hasMatchingDisplayNameWith(child, StackChild)) {
       if (child.props.order) {
         const {
@@ -91,8 +91,8 @@ const wrapChild = (
 };
 
 export const Stack: React.FC<StackProps> = ({
-  space = 'sizing000',
   spaceStack = 'sizing000',
+  spaceInline = 'sizing000',
   flow = Flow.VerticalLeft,
   wrap = false,
   stackDistribution = StackDistribution.Start,
@@ -114,8 +114,8 @@ export const Stack: React.FC<StackProps> = ({
   return (
     <StyledContainer
       {...renderAs(as, list)}
-      space={space}
       spaceStack={spaceStack}
+      spaceInline={spaceInline}
       flow={flow}
       $wrap={wrap}
       flexGrow={flexGrow}
@@ -129,7 +129,16 @@ export const Stack: React.FC<StackProps> = ({
       {children &&
         React.Children.map(
           children,
-          wrapChild(theme, space, spaceStack, flow, wrap, list, inline, as),
+          wrapChild(
+            theme,
+            spaceStack,
+            spaceInline,
+            flow,
+            wrap,
+            list,
+            inline,
+            as,
+          ),
         )}
     </StyledContainer>
   );

@@ -70,7 +70,12 @@ export default {
         <React.Fragment>
           <h2>Icon Button Size</h2>
           <Container>
-            <Stack flow="horizontal-center" space="sizing070" wrap="wrap">
+            <Stack
+              flow="horizontal-center"
+              spaceStack="sizing070"
+              spaceInline="sizing070"
+              wrap="wrap"
+            >
               <IconButton size={ButtonSize.Small}>
                 <Email />
               </IconButton>
@@ -109,7 +114,7 @@ export default {
               return (
                 <Cell xs={4} sm={3}>
                   <Stack
-                    space="sizing020"
+                    spaceInline="sizing020"
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
@@ -183,7 +188,7 @@ export default {
               return (
                 <Cell xs={4} sm={3}>
                   <Stack
-                    space="sizing020"
+                    spaceInline="sizing020"
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
@@ -257,7 +262,7 @@ export default {
               return (
                 <Cell xs={4} sm={3}>
                   <Stack
-                    space="sizing020"
+                    spaceInline="sizing020"
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
@@ -331,7 +336,7 @@ export default {
               return (
                 <Cell xs={4} sm={3}>
                   <Stack
-                    space="sizing020"
+                    spaceInline="sizing020"
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>

@@ -59,7 +59,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
     >
       <ButtonsContainer
         flow={Flow.HorizontalCenter}
-        space="sizing030"
+        spaceInline="sizing030"
         stackDistribution={
           live ? StackDistribution.Center : StackDistribution.Start
         }

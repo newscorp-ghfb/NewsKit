@@ -73,7 +73,12 @@ export default {
         <React.Fragment>
           <StorybookHeading>Tab Size</StorybookHeading>
           <Container>
-            <Stack flow="horizontal-center" space="sizing070" wrap="wrap">
+            <Stack
+              flow="horizontal-center"
+              spaceStack="sizing070"
+              spaceInline="sizing070"
+              wrap="wrap"
+            >
               <Tab size={TabSize.Small} ariaLabel="small tab">
                 Small tab
               </Tab>
@@ -106,7 +111,7 @@ export default {
             {
               <Cell xs={4} sm={3}>
                 <Stack
-                  space="sizing020"
+                  spaceInline="sizing020"
                   stackDistribution={StackDistribution.SpaceEvenly}
                 >
                   <h2>Tab</h2>
@@ -169,7 +174,7 @@ export default {
           <Container>
             {[Pause, Email, CopyLink].map(IconType => (
               <Spacer>
-                <Stack flow="horizontal-center" space="sizing060">
+                <Stack flow="horizontal-center" spaceInline="sizing060">
                   {tabSizes.map(tab => (
                     <Tab size={tab.tabSize} ariaLabel="icon tab">
                       <IconType size={tab.iconSize} />
@@ -191,7 +196,7 @@ export default {
           <Container>
             {[Pause, Email, CopyLink].map(IconType => (
               <Spacer>
-                <Stack flow="horizontal-center" space="sizing060">
+                <Stack flow="horizontal-center" spaceInline="sizing060">
                   {tabSizes.map(tab => (
                     <Tab size={tab.tabSize} ariaLabel="tab label">
                       <IconType size={tab.iconSize} />
@@ -213,7 +218,7 @@ export default {
           <StorybookHeading>Tab With Overrides</StorybookHeading>
           <Container>
             <ThemeProvider theme={myCustomTheme}>
-              <Stack flow="horizontal-center" space="sizing060">
+              <Stack flow="horizontal-center" spaceInline="sizing060">
                 <Tab
                   isSelected
                   ariaLabel="tab label"

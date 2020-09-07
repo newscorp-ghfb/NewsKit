@@ -79,7 +79,7 @@ export const Link: React.FC<LinkProps> = props => {
     >
       <Stack
         flow="horizontal-center"
-        space={
+        spaceInline={
           willRenderExternalIcon || React.Children.count(children) !== 1
             ? spaceInBetween
             : null

@@ -29,7 +29,7 @@ import {
 } from './common';
 
 const cardSmallTags = () => (
-  <Stack flow={Flow.HorizontalCenter} space={cardActionsSpace}>
+  <Stack flow={Flow.HorizontalCenter} spaceInline={cardActionsSpace}>
     <Tag
       size={TagSize.Small}
       href="/"

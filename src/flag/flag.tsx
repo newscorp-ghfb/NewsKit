@@ -19,7 +19,7 @@ const BaseFlag: React.FC<BaseFlagProps> = ({children, overrides, ...props}) => {
     <IE11FixContainer overrides={overrides}>
       <StyledBaseFlag {...props} overrides={overrides}>
         <Stack
-          space={getToken({theme, overrides}, '', '', 'space')}
+          spaceInline={getToken({theme, overrides}, '', '', 'space')}
           flow={Flow.HorizontalCenter}
           stackDistribution={StackDistribution.Center}
         >

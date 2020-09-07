@@ -35,7 +35,7 @@ export default {
           <Container>
             <Block hasHeight={false}>
               <Stack
-                space="sizing050"
+                spaceInline="sizing050"
                 flow={Flow.HorizontalTop}
                 stackDistribution={StackDistribution.Center}
               >
@@ -63,7 +63,7 @@ export default {
           <Container>
             <Block hasHeight={false}>
               <Stack
-                space="sizing050"
+                spaceInline="sizing050"
                 flow={Flow.HorizontalTop}
                 stackDistribution={StackDistribution.Center}
                 list

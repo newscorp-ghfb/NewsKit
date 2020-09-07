@@ -117,7 +117,7 @@ export default {
           </StorybookHeading>
           <BlockWithBorder>
             <StackForHorizontalDivider
-              space="sizing040"
+              spaceInline="sizing040"
               stackDistribution="center"
               flow="vertical-center"
             >
@@ -211,7 +211,7 @@ export default {
             <Stack
               flow="horizontal-center"
               stackDistribution="center"
-              space="sizing030"
+              spaceInline="sizing030"
             >
               <Facebook size="iconSize040" />
               <StackChild alignSelf={AlignSelfValues.Stretch}>

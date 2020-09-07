@@ -224,7 +224,7 @@ const Article: React.FC<{
 
           <Cell xs={12}>
             <TagListContainer>
-              <Stack flow={Flow.HorizontalCenter} space="sizing040">
+              <Stack flow={Flow.HorizontalCenter} spaceInline="sizing040">
                 <Tag size={TagSize.Small} href="/">
                   Cooking
                 </Tag>
