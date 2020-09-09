@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Byline renders correctly with authors and links 1`] = `
+exports[`Byline renders correctly multiple authors with link only 1`] = `
 <DocumentFragment>
-  .emotion-19 {
+  .emotion-12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -24,47 +24,9 @@ exports[`Byline renders correctly with authors and links 1`] = `
   justify-content: flex-start;
   margin-top: calc(-8px/2);
   margin-bottom: calc(-8px/2);
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: calc(8px/2);
-  margin-bottom: calc(8px/2);
-  height: 100%;
-}
-
-.emotion-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-top: calc(-8px/2);
-  margin-bottom: calc(-8px/2);
-}
-
-.emotion-8 {
+.emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -73,14 +35,38 @@ exports[`Byline renders correctly with authors and links 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-.emotion-7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-4 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: inline-block;
 }
 
-.emotion-3 {
+.emotion-4::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-4::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-5 {
   margin-right: 8px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -88,25 +74,13 @@ exports[`Byline renders correctly with authors and links 1`] = `
   display: inline-flex;
 }
 
-.emotion-6 {
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.emotion-4 {
-  border-style: solid;
-  border-color: #cccccc;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-left-width: 1px;
-  display: inline-block;
-  height: 100%;
+.emotion-3 {
+  margin-left: 8px;
+  color: #9c9c9c;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .emotion-2 {
@@ -208,891 +182,26 @@ exports[`Byline renders correctly with authors and links 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-<ul
-    class="emotion-19"
+<div
+    class="emotion-12"
   >
-    <li
-      class="emotion-10"
+    <div
+      class="emotion-6"
     >
       <div
-        class="emotion-9"
+        class="emotion-5"
       >
-        <div
-          class="emotion-8"
+        <span
+          class="emotion-4"
         >
-          <div
-            class="emotion-7"
-          >
-            <div
-              class="emotion-3"
-            >
-              <a
-                aria-label="more by Jane Smith"
-                class="emotion-2"
-                data-author="Jane Smith"
-                href="www.example.com"
-                rel="author"
-                title="more by Jane Smith"
-              >
-                <span
-                  class="emotion-1"
-                >
-                  <span
-                    class="emotion-0"
-                  >
-                    Jane Smith
-                  </span>
-                </span>
-              </a>
-            </div>
-            <div
-              class="emotion-6"
-            >
-              <div
-                class="emotion-3"
-              >
-                <hr
-                  class="emotion-4"
-                  data-testid="divider"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li>
-    <li
-      class="emotion-10"
-    >
-      <div
-        class="emotion-9"
-      >
-        <div
-          class="emotion-8"
-        >
-          <div
-            class="emotion-7"
-          >
-            <div
-              class="emotion-7"
-            >
-              <a
-                aria-label="more by John Smith"
-                class="emotion-2"
-                data-author="John Smith"
-                href="www.example.com"
-                rel="author"
-                title="more by John Smith"
-              >
-                <span
-                  class="emotion-1"
-                >
-                  <span
-                    class="emotion-0"
-                  >
-                    John Smith
-                  </span>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li>
-  </ul>
-</DocumentFragment>
-`;
-
-exports[`Byline renders correctly with authors and titles 1`] = `
-<DocumentFragment>
-  .emotion-20 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-top: calc(-8px/2);
-  margin-bottom: calc(-8px/2);
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.emotion-11 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: calc(8px/2);
-  margin-bottom: calc(8px/2);
-  height: 100%;
-}
-
-.emotion-10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-top: calc(-8px/2);
-  margin-bottom: calc(-8px/2);
-}
-
-.emotion-2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: calc(8px/2);
-  margin-bottom: calc(8px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.emotion-0 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: inline-block;
-  white-space: pre;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-4 {
-  margin-right: 8px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.emotion-7 {
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.emotion-5 {
-  border-style: solid;
-  border-color: #cccccc;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-left-width: 1px;
-  display: inline-block;
-  height: 100%;
-}
-
-<ul
-    class="emotion-20"
-  >
-    <li
-      class="emotion-11"
-    >
-      <div
-        class="emotion-10"
-      >
-        <div
-          class="emotion-2"
-        >
-          <div
-            class="emotion-1"
+          <a
+            aria-label="more by Jane Smith"
+            class="emotion-2"
+            data-author="Jane Smith"
+            href="www.example.com"
+            rel="author"
           >
             <span
-              class="emotion-0"
-            >
-              Jane Smith, 
-            </span>
-          </div>
-        </div>
-        <div
-          class="emotion-2"
-        >
-          <div
-            class="emotion-1"
-          >
-            <div
-              class="emotion-4"
-            >
-              <span
-                class="emotion-0"
-              >
-                Author
-              </span>
-            </div>
-            <div
-              class="emotion-7"
-            >
-              <div
-                class="emotion-4"
-              >
-                <hr
-                  class="emotion-5"
-                  data-testid="divider"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li>
-    <li
-      class="emotion-11"
-    >
-      <div
-        class="emotion-10"
-      >
-        <div
-          class="emotion-2"
-        >
-          <div
-            class="emotion-1"
-          >
-            <span
-              class="emotion-0"
-            >
-              John Smith, 
-            </span>
-          </div>
-        </div>
-        <div
-          class="emotion-2"
-        >
-          <div
-            class="emotion-1"
-          >
-            <span
-              class="emotion-0"
-            >
-              Other Author
-            </span>
-          </div>
-        </div>
-      </div>
-    </li>
-  </ul>
-</DocumentFragment>
-`;
-
-exports[`Byline renders correctly with authors, location, titles and links 1`] = `
-<DocumentFragment>
-  .emotion-34 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-top: calc(-8px/2);
-  margin-bottom: calc(-8px/2);
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.emotion-18 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: calc(8px/2);
-  margin-bottom: calc(8px/2);
-  height: 100%;
-}
-
-.emotion-17 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-top: calc(-8px/2);
-  margin-bottom: calc(-8px/2);
-}
-
-.emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: calc(8px/2);
-  margin-bottom: calc(8px/2);
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.emotion-3 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: inline-block;
-  white-space: pre;
-}
-
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-11 {
-  margin-right: 8px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.emotion-14 {
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.emotion-12 {
-  border-style: solid;
-  border-color: #cccccc;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-left-width: 1px;
-  display: inline-block;
-  height: 100%;
-}
-
-.emotion-2 {
-  display: inline-block;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #2f75d7;
-}
-
-.emotion-2 svg {
-  fill: #2f75d7;
-  color: #2f75d7;
-}
-
-.emotion-2:hover:not(:disabled) {
-  color: #2f75d7;
-}
-
-.emotion-2:hover:not(:disabled) svg {
-  fill: #2f75d7;
-  color: #2f75d7;
-}
-
-.emotion-2:active:not(:disabled) {
-  color: #2f75d7;
-}
-
-.emotion-2:active:not(:disabled) svg {
-  fill: #2f75d7;
-  color: #2f75d7;
-}
-
-.emotion-2:visited:not(:disabled) {
-  color: #903d91;
-}
-
-.emotion-2:visited:not(:disabled) svg {
-  fill: #903d91;
-  color: #903d91;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
-    vertical-align: text-bottom;
-  }
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-.emotion-0 {
-  margin: 0;
-  padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: inline-block;
-  display: block;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-<ul
-    class="emotion-34"
-  >
-    <li
-      class="emotion-18"
-    >
-      <div
-        class="emotion-17"
-      >
-        <div
-          class="emotion-6"
-        >
-          <div
-            class="emotion-4"
-          >
-            <div
-              class="emotion-4"
-            >
-              <a
-                aria-label="more by Jane Smith"
-                class="emotion-2"
-                data-author="Jane Smith"
-                href="www.example.com"
-                rel="author"
-                title="Author"
-              >
-                <span
-                  class="emotion-1"
-                >
-                  <span
-                    class="emotion-0"
-                  >
-                    Jane Smith
-                  </span>
-                </span>
-              </a>
-              <span
-                class="emotion-3"
-              >
-                , 
-              </span>
-            </div>
-          </div>
-        </div>
-        <div
-          class="emotion-6"
-        >
-          <div
-            class="emotion-4"
-          >
-            <span
-              class="emotion-3"
-            >
-              Author, 
-            </span>
-          </div>
-        </div>
-        <div
-          class="emotion-6"
-        >
-          <div
-            class="emotion-4"
-          >
-            <div
-              class="emotion-11"
-            >
-              <span
-                class="emotion-3"
-              >
-                London
-              </span>
-            </div>
-            <div
-              class="emotion-14"
-            >
-              <div
-                class="emotion-11"
-              >
-                <hr
-                  class="emotion-12"
-                  data-testid="divider"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li>
-    <li
-      class="emotion-18"
-    >
-      <div
-        class="emotion-17"
-      >
-        <div
-          class="emotion-6"
-        >
-          <div
-            class="emotion-4"
-          >
-            <div
-              class="emotion-4"
-            >
-              <a
-                aria-label="more by John Smith"
-                class="emotion-2"
-                data-author="John Smith"
-                href="www.example.com"
-                rel="author"
-                title="Other Author"
-              >
-                <span
-                  class="emotion-1"
-                >
-                  <span
-                    class="emotion-0"
-                  >
-                    John Smith
-                  </span>
-                </span>
-              </a>
-              <span
-                class="emotion-3"
-              >
-                , 
-              </span>
-            </div>
-          </div>
-        </div>
-        <div
-          class="emotion-6"
-        >
-          <div
-            class="emotion-4"
-          >
-            <span
-              class="emotion-3"
-            >
-              Other Author, 
-            </span>
-          </div>
-        </div>
-        <div
-          class="emotion-6"
-        >
-          <div
-            class="emotion-4"
-          >
-            <span
-              class="emotion-3"
-            >
-              London
-            </span>
-          </div>
-        </div>
-      </div>
-    </li>
-  </ul>
-</DocumentFragment>
-`;
-
-exports[`Byline renders correctly with multiple authors 1`] = `
-<DocumentFragment>
-  .emotion-23 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-top: calc(-8px/2);
-  margin-bottom: calc(-8px/2);
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.emotion-8 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: calc(8px/2);
-  margin-bottom: calc(8px/2);
-  height: 100%;
-}
-
-.emotion-7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-top: calc(-8px/2);
-  margin-bottom: calc(-8px/2);
-}
-
-.emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: calc(8px/2);
-  margin-bottom: calc(8px/2);
-}
-
-.emotion-5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.emotion-0 {
-  margin: 0;
-  padding: 1px 0;
-  color: #535353;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: inline-block;
-  white-space: pre;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-1 {
-  margin-right: 8px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.emotion-4 {
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.emotion-2 {
-  border-style: solid;
-  border-color: #cccccc;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-left-width: 1px;
-  display: inline-block;
-  height: 100%;
-}
-
-<ul
-    class="emotion-23"
-  >
-    <li
-      class="emotion-8"
-    >
-      <div
-        class="emotion-7"
-      >
-        <div
-          class="emotion-6"
-        >
-          <div
-            class="emotion-5"
-          >
-            <div
               class="emotion-1"
             >
               <span
@@ -1100,88 +209,48 @@ exports[`Byline renders correctly with multiple authors 1`] = `
               >
                 Jane Smith
               </span>
-            </div>
-            <div
-              class="emotion-4"
-            >
-              <div
-                class="emotion-1"
-              >
-                <hr
-                  class="emotion-2"
-                  data-testid="divider"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li>
-    <li
-      class="emotion-8"
-    >
-      <div
-        class="emotion-7"
-      >
-        <div
-          class="emotion-6"
-        >
-          <div
-            class="emotion-5"
+            </span>
+          </a>
+          <span
+            class="emotion-3"
           >
-            <div
-              class="emotion-1"
-            >
-              <span
-                class="emotion-0"
-              >
-                John Smith
-              </span>
-            </div>
-            <div
-              class="emotion-4"
-            >
-              <div
-                class="emotion-1"
-              >
-                <hr
-                  class="emotion-2"
-                  data-testid="divider"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+            |
+          </span>
+        </span>
       </div>
-    </li>
-    <li
-      class="emotion-8"
+    </div>
+    <div
+      class="emotion-6"
     >
-      <div
-        class="emotion-7"
+      <span
+        class="emotion-4"
       >
-        <div
-          class="emotion-6"
+        <a
+          aria-label="more by John Smith"
+          class="emotion-2"
+          data-author="John Smith"
+          href="www.example.com"
+          rel="author"
         >
-          <div
-            class="emotion-5"
+          <span
+            class="emotion-1"
           >
             <span
               class="emotion-0"
             >
-              Sam Smith
+              John Smith
             </span>
-          </div>
-        </div>
-      </div>
-    </li>
-  </ul>
+          </span>
+        </a>
+      </span>
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
-exports[`Byline renders correctly with one author 1`] = `
+exports[`Byline renders correctly with author's name, author's information and no href provided 1`] = `
 <DocumentFragment>
-  .emotion-5 {
+  .emotion-6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1203,47 +272,9 @@ exports[`Byline renders correctly with one author 1`] = `
   justify-content: flex-start;
   margin-top: calc(-8px/2);
   margin-bottom: calc(-8px/2);
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: calc(8px/2);
-  margin-bottom: calc(8px/2);
-  height: 100%;
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-top: calc(-8px/2);
-  margin-bottom: calc(-8px/2);
-}
-
-.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1253,13 +284,6 @@ exports[`Byline renders correctly with one author 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.emotion-0 {
   margin: 0;
   padding: 1px 0;
   color: #535353;
@@ -1272,7 +296,239 @@ exports[`Byline renders correctly with one author 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
-  white-space: pre;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-2 {
+  margin-right: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
+  margin-left: 8px;
+  color: #9c9c9c;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+<div
+    class="emotion-6"
+  >
+    <div
+      class="emotion-3"
+    >
+      <div
+        class="emotion-2"
+      >
+        <span
+          class="emotion-1"
+        >
+          Jane Smith, Author
+          <span
+            class="emotion-0"
+          >
+            |
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="emotion-3"
+    >
+      <span
+        class="emotion-1"
+      >
+        John Smith, Milan
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Byline renders correctly with authors and links 1`] = `
+<DocumentFragment>
+  .emotion-21 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: inline-block;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-6 {
+  margin-right: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-4 {
+  margin-left: 8px;
+  color: #9c9c9c;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-2 {
+  display: inline-block;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2f75d7;
+}
+
+.emotion-2 svg {
+  fill: #2f75d7;
+  color: #2f75d7;
+}
+
+.emotion-2:hover:not(:disabled) {
+  color: #2f75d7;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #2f75d7;
+  color: #2f75d7;
+}
+
+.emotion-2:active:not(:disabled) {
+  color: #2f75d7;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #2f75d7;
+  color: #2f75d7;
+}
+
+.emotion-2:visited:not(:disabled) {
+  color: #903d91;
+}
+
+.emotion-2:visited:not(:disabled) svg {
+  fill: #903d91;
+  color: #903d91;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: inline-block;
+  display: block;
 }
 
 .emotion-0::before {
@@ -1291,51 +547,250 @@ exports[`Byline renders correctly with one author 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-<ul
-    class="emotion-5"
+<div
+    class="emotion-21"
   >
-    <li
-      class="emotion-4"
+    <div
+      class="emotion-7"
     >
       <div
+        class="emotion-6"
+      >
+        <span
+          class="emotion-3"
+        >
+          <a
+            aria-label="more by Jane Smith"
+            class="emotion-2"
+            data-author="Jane Smith"
+            href="www.example.com"
+            rel="author"
+          >
+            <span
+              class="emotion-1"
+            >
+              <span
+                class="emotion-0"
+              >
+                Jane Smith
+              </span>
+            </span>
+          </a>
+          <span
+            aria-hidden="true"
+            class="emotion-3"
+          >
+            , 
+          </span>
+          London
+          <span
+            class="emotion-4"
+          >
+            |
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="emotion-7"
+    >
+      <div
+        class="emotion-6"
+      >
+        <span
+          class="emotion-3"
+        >
+          <a
+            aria-label="more by John Smith"
+            class="emotion-2"
+            data-author="John Smith"
+            href="www.example.com"
+            rel="author"
+          >
+            <span
+              class="emotion-1"
+            >
+              <span
+                class="emotion-0"
+              >
+                John Smith
+              </span>
+            </span>
+          </a>
+          <span
+            class="emotion-4"
+          >
+            |
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="emotion-7"
+    >
+      <span
         class="emotion-3"
       >
-        <div
+        <a
+          aria-label="more by John Smith"
           class="emotion-2"
+          data-author="John Smith"
+          href="www.example.com"
+          rel="author"
         >
-          <div
+          <span
             class="emotion-1"
           >
             <span
               class="emotion-0"
             >
-              Jane Smith
+              John Smith
             </span>
-          </div>
-        </div>
-      </div>
-    </li>
-  </ul>
+          </span>
+        </a>
+        <span
+          aria-hidden="true"
+          class="emotion-3"
+        >
+          , 
+        </span>
+        Developer manager
+      </span>
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
-exports[`Byline renders correctly with overrides 1`] = `
+exports[`Byline renders correctly with authors, location, titles and links 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-14 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: inline-block;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-6 {
+  margin-right: 8px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.emotion-14 {
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-4 {
+  margin-left: 8px;
+  color: #9c9c9c;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-2 {
+  display: inline-block;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #2f75d7;
+}
+
+.emotion-2 svg {
+  fill: #2f75d7;
+  color: #2f75d7;
+}
+
+.emotion-2:hover:not(:disabled) {
+  color: #2f75d7;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #2f75d7;
+  color: #2f75d7;
+}
+
+.emotion-2:active:not(:disabled) {
+  color: #2f75d7;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #2f75d7;
+  color: #2f75d7;
+}
+
+.emotion-2:visited:not(:disabled) {
+  color: #903d91;
+}
+
+.emotion-2:visited:not(:disabled) svg {
+  fill: #903d91;
+  color: #903d91;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    vertical-align: text-bottom;
+  }
 }
 
 .emotion-1 {
@@ -1357,7 +812,120 @@ exports[`Byline renders correctly with overrides 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-34 {
+.emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-14"
+  >
+    <div
+      class="emotion-7"
+    >
+      <div
+        class="emotion-6"
+      >
+        <span
+          class="emotion-3"
+        >
+          <a
+            aria-label="more by Jane Smith"
+            class="emotion-2"
+            data-author="Jane Smith"
+            href="www.example.com"
+            rel="author"
+          >
+            <span
+              class="emotion-1"
+            >
+              <span
+                class="emotion-0"
+              >
+                Jane Smith
+              </span>
+            </span>
+          </a>
+          <span
+            aria-hidden="true"
+            class="emotion-3"
+          >
+            , 
+          </span>
+          Author, London
+          <span
+            class="emotion-4"
+          >
+            |
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="emotion-7"
+    >
+      <span
+        class="emotion-3"
+      >
+        <a
+          aria-label="more by John Smith"
+          class="emotion-2"
+          data-author="John Smith"
+          href="www.example.com"
+          rel="author"
+        >
+          <span
+            class="emotion-1"
+          >
+            <span
+              class="emotion-0"
+            >
+              John Smith
+            </span>
+          </span>
+        </a>
+        <span
+          aria-hidden="true"
+          class="emotion-3"
+        >
+          , 
+        </span>
+        Other Author, London
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Byline renders correctly with multiple authors 1`] = `
+<DocumentFragment>
+  .emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1377,25 +945,204 @@ exports[`Byline renders correctly with overrides 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: calc(-12px/2);
-  margin-bottom: calc(-12px/2);
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
 }
 
-.emotion-18 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-top: calc(12px/2);
-  margin-bottom: calc(12px/2);
-  height: 100%;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
 }
 
-.emotion-17 {
+.emotion-1 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: inline-block;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-2 {
+  margin-right: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0 {
+  margin-left: 8px;
+  color: #9c9c9c;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+<div
+    class="emotion-10"
+  >
+    <div
+      class="emotion-3"
+    >
+      <div
+        class="emotion-2"
+      >
+        <span
+          class="emotion-1"
+        >
+          Jane Smith
+          <span
+            class="emotion-0"
+          >
+            |
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="emotion-3"
+    >
+      <div
+        class="emotion-2"
+      >
+        <span
+          class="emotion-1"
+        >
+          John Smith
+          <span
+            class="emotion-0"
+          >
+            |
+          </span>
+        </span>
+      </div>
+    </div>
+    <div
+      class="emotion-3"
+    >
+      <span
+        class="emotion-1"
+      >
+        Sam Smith
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Byline renders correctly with one author 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: inline-block;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <span
+        class="emotion-0"
+      >
+        Jane Smith
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Byline renders correctly with overrides 1`] = `
+<DocumentFragment>
+  .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1405,6 +1152,25 @@ exports[`Byline renders correctly with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-14 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1419,13 +1185,52 @@ exports[`Byline renders correctly with overrides 1`] = `
   margin-bottom: calc(-12px/2);
 }
 
-.emotion-6 {
+.emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-top: calc(12px/2);
   margin-bottom: calc(12px/2);
+}
+
+.emotion-6 {
+  margin-right: 12px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+  color: #f000dc;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: inline-block;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
 }
 
 .emotion-2 {
@@ -1436,7 +1241,7 @@ exports[`Byline renders correctly with overrides 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #f000dc;
+  color: #d82059;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -1476,214 +1281,91 @@ exports[`Byline renders correctly with overrides 1`] = `
   margin-top: -0.4902777777777778em;
 }
 
-.emotion-3 {
-  margin: 0;
-  padding: 1px 0;
-  color: #f000dc;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: inline-block;
-  white-space: pre;
+.emotion-4 {
+  margin-left: 12px;
+  color: #27a727;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.emotion-3::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4277777777777778em;
-}
-
-.emotion-3::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4902777777777778em;
-}
-
-.emotion-11 {
-  margin-right: 12px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.emotion-12 {
-  border-style: solid;
-  border-color: #de7818;
-  border-width: 2px;
-  border-width: 0px;
-  margin: 0;
-  border-left-width: 2px;
-  display: inline-block;
-  height: 100%;
-}
-
-<ul
-    class="emotion-34"
+<div
+    class="emotion-14"
   >
-    <li
-      class="emotion-18"
+    <div
+      class="emotion-7"
     >
       <div
-        class="emotion-17"
+        class="emotion-6"
       >
-        <div
-          class="emotion-6"
+        <span
+          class="emotion-3"
         >
-          <div
-            class="emotion-4"
-          >
-            <div
-              class="emotion-4"
-            >
-              <a
-                aria-label="more by Jane Smith"
-                class="emotion-2"
-                data-author="Jane Smith"
-                href="www.example.com"
-                rel="author"
-                title="Author"
-              >
-                <span
-                  class="emotion-1"
-                >
-                  <span
-                    class="emotion-0"
-                  >
-                    Jane Smith
-                  </span>
-                </span>
-              </a>
-              <span
-                class="emotion-3"
-              >
-                , 
-              </span>
-            </div>
-          </div>
-        </div>
-        <div
-          class="emotion-6"
-        >
-          <div
-            class="emotion-4"
+          <a
+            aria-label="more by Jane Smith"
+            class="emotion-2"
+            data-author="Jane Smith"
+            href="www.example.com"
+            rel="author"
           >
             <span
-              class="emotion-3"
-            >
-              Author, 
-            </span>
-          </div>
-        </div>
-        <div
-          class="emotion-6"
-        >
-          <div
-            class="emotion-4"
-          >
-            <div
-              class="emotion-11"
+              class="emotion-1"
             >
               <span
-                class="emotion-3"
+                class="emotion-0"
               >
-                London
+                Jane Smith
               </span>
-            </div>
-            <div
-              class="emotion-14"
-            >
-              <div
-                class="emotion-11"
-              >
-                <hr
-                  class="emotion-12"
-                  data-testid="divider"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+            </span>
+          </a>
+          <span
+            aria-hidden="true"
+            class="emotion-3"
+          >
+            , 
+          </span>
+          Author, London
+          <span
+            class="emotion-4"
+          >
+            |
+          </span>
+        </span>
       </div>
-    </li>
-    <li
-      class="emotion-18"
+    </div>
+    <div
+      class="emotion-7"
     >
-      <div
-        class="emotion-17"
+      <span
+        class="emotion-3"
       >
-        <div
-          class="emotion-6"
+        <a
+          aria-label="more by John Smith"
+          class="emotion-2"
+          data-author="John Smith"
+          href="www.example.com"
+          rel="author"
         >
-          <div
-            class="emotion-4"
-          >
-            <div
-              class="emotion-4"
-            >
-              <a
-                aria-label="more by John Smith"
-                class="emotion-2"
-                data-author="John Smith"
-                href="www.example.com"
-                rel="author"
-                title="Other Author"
-              >
-                <span
-                  class="emotion-1"
-                >
-                  <span
-                    class="emotion-0"
-                  >
-                    John Smith
-                  </span>
-                </span>
-              </a>
-              <span
-                class="emotion-3"
-              >
-                , 
-              </span>
-            </div>
-          </div>
-        </div>
-        <div
-          class="emotion-6"
-        >
-          <div
-            class="emotion-4"
+          <span
+            class="emotion-1"
           >
             <span
-              class="emotion-3"
+              class="emotion-0"
             >
-              Other Author, 
+              John Smith
             </span>
-          </div>
-        </div>
-        <div
-          class="emotion-6"
+          </span>
+        </a>
+        <span
+          aria-hidden="true"
+          class="emotion-3"
         >
-          <div
-            class="emotion-4"
-          >
-            <span
-              class="emotion-3"
-            >
-              London
-            </span>
-          </div>
-        </div>
-      </div>
-    </li>
-  </ul>
+          , 
+        </span>
+        Other Author, London
+      </span>
+    </div>
+  </div>
 </DocumentFragment>
 `;

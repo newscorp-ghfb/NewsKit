@@ -1,9 +1,7 @@
 import React from 'react';
-import {styled} from '../utils/style';
+import {styled, getSpacingFromTheme} from '../utils/style';
 import {Link} from '../link';
 import {Stack} from '../stack';
-import {StackChild, AlignSelfValues} from '../stack-child';
-import {Divider} from '../divider';
 
 import {getToken} from '../utils/get-token';
 import {
@@ -15,13 +13,10 @@ import {
 import {Block} from '../block';
 import {TextBlock} from '../text-block/text-block';
 import {BylineProps, BylineData} from './types';
+import {getStylePreset} from '../utils/style-preset';
 
 const InlineBlock = styled(Block)`
   display: inline-flex;
-`;
-
-const TextBlockWithPre = styled(TextBlock)`
-  white-space: pre;
 `;
 
 const getStyledTextBlock = (
@@ -31,12 +26,15 @@ const getStyledTextBlock = (
 ) => ({
   children,
   withSpace = false,
+  ariaHidden,
 }: {
   children: React.ReactNode;
   withSpace?: boolean;
+  ariaHidden?: boolean;
 }) => {
   const StyledTextBlock = (
-    <TextBlockWithPre
+    <TextBlock
+      aria-hidden={ariaHidden}
       as="span"
       overrides={{
         typographyPreset,
@@ -44,7 +42,7 @@ const getStyledTextBlock = (
       }}
     >
       {children}
-    </TextBlockWithPre>
+    </TextBlock>
   );
 
   if (withSpace) {
@@ -56,20 +54,22 @@ const getStyledTextBlock = (
   return StyledTextBlock;
 };
 
-const getStyledDivider = (
-  stylePreset?: string,
-  spaceInline?: SpacePresetKeys,
-) => () => (
-  <StackChild alignSelf={AlignSelfValues.Stretch}>
-    <InlineBlock overrides={{spaceInline}}>
-      <Divider
-        vertical
-        overrides={{
-          stylePreset,
-        }}
-      />
-    </InlineBlock>
-  </StackChild>
+const renderLink = (
+  {href, author, ariaLabel}: Partial<BylineData>,
+  overrides: {
+    stylePreset: StylePresetKeys;
+    typographyPreset: TypographyPresetKeys;
+  },
+) => (
+  <Link
+    overrides={overrides}
+    href={href!}
+    rel="author"
+    aria-label={ariaLabel || `more by ${author}`}
+    data-author={author}
+  >
+    {author}
+  </Link>
 );
 
 const isLastItem = (currentIndex: number, length: number) =>
@@ -92,25 +92,14 @@ export const Byline: React.FC<BylineProps> = ({bylineData, overrides}) => {
     'typographyPreset',
   );
 
-  const textStyles = getToken(
-    {theme, overrides},
-    'byline',
-    'link',
-    'stylePreset',
-  );
+  const textStyles = getToken({theme, overrides}, 'byline', '', 'stylePreset');
   const textTypes = getToken(
     {theme, overrides},
     'byline',
-    'link',
+    '',
     'typographyPreset',
   );
 
-  const dividerStyles = getToken(
-    {theme, overrides},
-    'byline.divider',
-    'divider',
-    'stylePreset',
-  );
   const dividerSpace = getToken(
     {theme, overrides},
     'byline.divider',
@@ -118,80 +107,80 @@ export const Byline: React.FC<BylineProps> = ({bylineData, overrides}) => {
     'spaceInline',
   );
 
+  const PipeContainer = styled.span<{overrides: BylineProps['overrides']}>`
+    margin-left: ${getSpacingFromTheme(dividerSpace)};
+    ${getStylePreset('byline.divider', 'divider')}
+    user-select: none;
+  `;
+
   const StyledTextBlockWithSpace = getStyledTextBlock(
     textTypes,
     textStyles,
     dividerSpace,
   );
 
-  const StyledDividerWithSpace = getStyledDivider(dividerStyles, dividerSpace);
+  interface bylineItemProps {
+    children?: Array<JSX.Element | string | undefined> | JSX.Element | string;
+    lastItem: boolean;
+  }
+
+  const BylineItem = ({lastItem, children}: bylineItemProps) => (
+    <StyledTextBlockWithSpace withSpace={!lastItem}>
+      {children}
+      {!lastItem && <PipeContainer overrides={overrides}>|</PipeContainer>}
+    </StyledTextBlockWithSpace>
+  );
+
+  const byLineAuthorInfo = (title?: string, location?: string) => {
+    if (location && title) {
+      return `${title}, ${location}`;
+    }
+    if (title) {
+      return title;
+    }
+    return location;
+  };
 
   return (
-    <Stack flow="horizontal-center" list inline wrap="wrap" spaceStack={space}>
+    <Stack flow="horizontal-center" inline wrap="wrap" spaceStack={space}>
       {bylineData.map(
         ({author, href, title, location, ariaLabel}: BylineData, i) => {
           const lastItem = isLastItem(i, bylineData.length);
-          const isAuthorLastItem = !lastItem && !title && !location;
-          const isTitleLastItem = !lastItem && !location;
-          const isLocationLastItem = !lastItem;
+          const hasLinkOnly = href && (!title && !location);
+          const hasLinkAndAuthorInfo = href && (title || location);
+          const hasNoLink = !href;
+          const authorNameLink = renderLink(
+            {author, href, ariaLabel},
+            {
+              stylePreset: linkStyles,
+              typographyPreset: linkTypes,
+            },
+          );
 
           return (
             <>
-              <Stack flow="horizontal-center" wrap="wrap" spaceStack={space}>
-                <InlineBlock>
-                  {href ? (
-                    <InlineBlock
-                      overrides={{
-                        spaceInline: isAuthorLastItem ? dividerSpace : '',
-                      }}
-                    >
-                      <Link
-                        overrides={{
-                          stylePreset: linkStyles,
-                          typographyPreset: linkTypes,
-                        }}
-                        href={href}
-                        rel="author"
-                        aria-label={ariaLabel || `more by ${author}`}
-                        title={title || `more by ${author}`}
-                        data-author={author}
-                      >
-                        {author}
-                      </Link>
-                      {(title || location) && (
-                        <StyledTextBlockWithSpace>
-                          {', '}
-                        </StyledTextBlockWithSpace>
-                      )}
-                    </InlineBlock>
-                  ) : (
-                    <StyledTextBlockWithSpace withSpace={isAuthorLastItem}>
-                      {author}
-                      {title || location ? ', ' : ''}
-                    </StyledTextBlockWithSpace>
-                  )}
-                  {isAuthorLastItem && <StyledDividerWithSpace />}
-                </InlineBlock>
+              {hasLinkOnly && (
+                <BylineItem lastItem={lastItem}>{authorNameLink}</BylineItem>
+              )}
 
-                {title && (
-                  <InlineBlock>
-                    <StyledTextBlockWithSpace withSpace={isTitleLastItem}>
-                      {title}
-                      {location ? ', ' : ''}
-                    </StyledTextBlockWithSpace>
-                    {isTitleLastItem && <StyledDividerWithSpace />}
-                  </InlineBlock>
-                )}
+              {hasLinkAndAuthorInfo && (
+                <BylineItem lastItem={lastItem}>
+                  {authorNameLink}
 
-                {location && (
-                  <InlineBlock>
-                    <StyledTextBlockWithSpace withSpace={isLocationLastItem}>
-                      {location}
-                    </StyledTextBlockWithSpace>
-                    {isLocationLastItem && <StyledDividerWithSpace />}
-                  </InlineBlock>
-                )}
-              </Stack>
+                  <StyledTextBlockWithSpace ariaHidden>
+                    {`,${'\u00A0'}`}
+                  </StyledTextBlockWithSpace>
+                  {byLineAuthorInfo(title, location)}
+                </BylineItem>
+              )}
+
+              {hasNoLink && (
+                <BylineItem lastItem={lastItem}>
+                  {author}
+                  {title && `, ${title}`}
+                  {location && `, ${location}`}
+                </BylineItem>
+              )}
             </>
           );
         },

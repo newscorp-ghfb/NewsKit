@@ -1108,10 +1108,10 @@ stylePresets.byline = {
 };
 
 stylePresets.bylineLink = stylePresets.linkInline;
+
 stylePresets.bylineDivider = {
   base: {
-    ...stylePresets.dividerVertical.base,
-    borderColor: '{{colors.interface050}}',
+    color: '{{colors.inkNonEssential}}',
   },
 };
 

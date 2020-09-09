@@ -31,7 +31,7 @@ const StyledHorizontalDivider = styled(StyledDivider)`
 
 export const Divider: React.FC<DividerProps> = ({vertical, ...props}) =>
   vertical ? (
-    <StyledVerticalDivider data-testid="divider" {...props} />
+    <StyledVerticalDivider data-testid="divider" aria-hidden {...props} />
   ) : (
-    <StyledHorizontalDivider data-testid="divider" {...props} />
+    <StyledHorizontalDivider data-testid="divider" aria-hidden {...props} />
   );

@@ -1317,9 +1317,7 @@ Object {
     },
     "bylineDivider": Object {
       "base": Object {
-        "borderColor": "{{colors.interface050}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidthDefault}}",
+        "color": "{{colors.inkNonEssential}}",
       },
     },
     "bylineLink": Object {

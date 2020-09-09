@@ -14,14 +14,12 @@ const myCustomTheme = createTheme({
       },
       bylineLinkCustom: {
         base: {
-          color: '#f000dc',
+          color: '#d82059',
         },
       },
       bylineDividerCustom: {
         base: {
-          borderStyle: 'solid',
-          borderColor: '#de7818',
-          borderWidth: '2px',
+          color: '#27a727',
         },
       },
     },
@@ -48,6 +46,12 @@ export default {
                 author: 'Tom Knowles',
                 href: 'https://www.thetimes.co.uk/profile/tom-knowles',
                 title: 'West Coast Technology Reporter',
+                location: 'London',
+              },
+              {
+                author: 'Oliver Wright',
+                href: 'https://www.thetimes.co.uk/profile/oliver-wright',
+                location: 'London',
               },
               {
                 author: 'David Aaronovitch',
@@ -58,6 +62,7 @@ export default {
                 author: 'Catherine Philp',
                 href: 'https://www.thetimes.co.uk/profile/catherine-philp',
                 title: 'Diplomatic Correspondent',
+                location: 'London',
               },
             ]}
           />
@@ -84,6 +89,14 @@ export default {
               {
                 author: 'Callum Jones',
                 title: 'Trade Correspondent',
+              },
+              {
+                author: 'Oliver Wright',
+                location: 'London',
+              },
+              {
+                author: 'David Aaronovitch',
+                location: 'London',
               },
             ]}
           />
@@ -154,7 +167,7 @@ export default {
             <Byline
               overrides={{
                 stylePreset: 'bylineCustom',
-                typographyPreset: 'label040',
+                typographyPreset: 'label030',
                 space: 'sizing030',
                 link: {
                   stylePreset: 'bylineLinkCustom',

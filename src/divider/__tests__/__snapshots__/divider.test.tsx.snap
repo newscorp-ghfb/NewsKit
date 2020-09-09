@@ -14,6 +14,7 @@ exports[`Divider renders as vertical 1`] = `
 }
 
 <hr
+    aria-hidden="true"
     class="emotion-0"
     data-testid="divider"
   />
@@ -33,6 +34,7 @@ exports[`Divider renders with default styles 1`] = `
 }
 
 <hr
+    aria-hidden="true"
     class="emotion-0"
     data-testid="divider"
   />

@@ -42,6 +42,30 @@ describe('Byline', () => {
         {
           author: 'Jane Smith',
           href: 'www.example.com',
+          location: 'London',
+        },
+        {
+          author: 'John Smith',
+          href: 'www.example.com',
+        },
+        {
+          author: 'John Smith',
+          href: 'www.example.com',
+          title: 'Developer manager',
+        },
+      ],
+    };
+    const fragment = renderToFragmentWithTheme(Byline, props) as any;
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders correctly multiple authors with link only', () => {
+    const props: BylineProps = {
+      bylineData: [
+        {
+          author: 'Jane Smith',
+          href: 'www.example.com',
         },
         {
           author: 'John Smith',
@@ -54,7 +78,7 @@ describe('Byline', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders correctly with authors and titles', () => {
+  test("renders correctly with author's name, author's information and no href provided", () => {
     const props: BylineProps = {
       bylineData: [
         {
@@ -63,7 +87,7 @@ describe('Byline', () => {
         },
         {
           author: 'John Smith',
-          title: 'Other Author',
+          location: 'Milan',
         },
       ],
     };
@@ -106,14 +130,12 @@ describe('Byline', () => {
           },
           bylineLinkCustom: {
             base: {
-              color: '#f000dc',
+              color: '#d82059',
             },
           },
           bylineDividerCustom: {
             base: {
-              borderStyle: 'solid',
-              borderColor: '#de7818',
-              borderWidth: '2px',
+              color: '#27a727',
             },
           },
         },
