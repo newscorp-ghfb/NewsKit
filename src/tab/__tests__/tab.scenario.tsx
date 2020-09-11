@@ -3,8 +3,11 @@ import {Tab, TabSize} from '..';
 import {styled, getSizingFromTheme} from '../../utils/style';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
-import {StorybookHeading} from '../../test/storybook-comps';
-import {IconSizeKeys, createTheme, ThemeProvider} from '../../theme';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
+import {createTheme, ThemeProvider} from '../../theme';
 import {Pause, Email, CopyLink} from '../../icons';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
 
@@ -14,11 +17,10 @@ const Container = styled.div`
 
 const tabSizes: Array<{
   tabSize: TabSize;
-  iconSize: IconSizeKeys;
 }> = [
-  {tabSize: TabSize.Small, iconSize: 'iconSize010'},
-  {tabSize: TabSize.Medium, iconSize: 'iconSize020'},
-  {tabSize: TabSize.Large, iconSize: 'iconSize030'},
+  {tabSize: TabSize.Small},
+  {tabSize: TabSize.Medium},
+  {tabSize: TabSize.Large},
 ];
 
 const Label = styled.div`
@@ -177,7 +179,7 @@ export default {
                 <Stack flow="horizontal-center" spaceInline="sizing060">
                   {tabSizes.map(tab => (
                     <Tab size={tab.tabSize} ariaLabel="icon tab">
-                      <IconType size={tab.iconSize} />
+                      <IconType />
                     </Tab>
                   ))}
                 </Stack>
@@ -199,7 +201,7 @@ export default {
                 <Stack flow="horizontal-center" spaceInline="sizing060">
                   {tabSizes.map(tab => (
                     <Tab size={tab.tabSize} ariaLabel="tab label">
-                      <IconType size={tab.iconSize} />
+                      <IconType />
                       Tab Label
                     </Tab>
                   ))}
@@ -230,7 +232,7 @@ export default {
                 >
                   <Email />
                   Tab Label
-                  <Email />
+                  <Email size="iconSize040" />
                 </Tab>
               </Stack>
             </ThemeProvider>
@@ -238,6 +240,48 @@ export default {
         </React.Fragment>
       ),
       name: 'tab-with-overrides',
+      type: 'story',
+    },
+    {
+      component: () => (
+        <React.Fragment>
+          <StorybookSubHeading>
+            Tab With default IconSize and inline overridden icon size
+          </StorybookSubHeading>
+          <Container>
+            <ThemeProvider theme={myCustomTheme}>
+              <Stack flow="horizontal-center" spaceInline="sizing060">
+                <Tab isSelected ariaLabel="tab label">
+                  <Email />
+                  Tab Label
+                  <Email size="iconSize040" />
+                </Tab>
+              </Stack>
+            </ThemeProvider>
+          </Container>
+          <StorybookSubHeading>
+            Tab With overrides for IconSize and inline overridden icon size
+          </StorybookSubHeading>
+          <Container>
+            <ThemeProvider theme={myCustomTheme}>
+              <Stack flow="horizontal-center" spaceInline="sizing060">
+                <Tab
+                  isSelected
+                  ariaLabel="tab label"
+                  overrides={{
+                    iconSize: 'iconSize030',
+                  }}
+                >
+                  <Email />
+                  Tab Label
+                  <Email size="iconSize040" />
+                </Tab>
+              </Stack>
+            </ThemeProvider>
+          </Container>
+        </React.Fragment>
+      ),
+      name: 'tab-with-icon-size-overrides',
       type: 'story',
     },
   ],

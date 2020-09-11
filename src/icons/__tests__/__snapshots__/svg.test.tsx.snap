@@ -37,9 +37,12 @@ exports[`Svg renders a menu icon with specified size and color 1`] = `
   .emotion-0 {
   fill: #ffffff;
   color: #ffffff;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 16px;
   height: 16px;
-  display: inline-block;
 }
 
 <svg
@@ -55,9 +58,12 @@ exports[`Svg renders a menu icon with specified size and default color 1`] = `
   .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 64px;
   height: 64px;
-  display: inline-block;
 }
 
 <svg

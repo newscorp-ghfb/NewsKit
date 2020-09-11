@@ -467,9 +467,12 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
 .emotion-2 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-2.emotion-2 {
   width: 16px;
   height: 16px;
-  display: inline-block;
 }
 
 <a

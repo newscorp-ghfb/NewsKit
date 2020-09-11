@@ -92,9 +92,12 @@ exports[`Button Loading Button renders Large Button 1`] = `
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 32px;
   height: 32px;
-  display: inline-block;
 }
 
 .emotion-0 circle {
@@ -245,9 +248,12 @@ exports[`Button Loading Button renders Small Button 1`] = `
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 16px;
   height: 16px;
-  display: inline-block;
 }
 
 .emotion-0 circle {

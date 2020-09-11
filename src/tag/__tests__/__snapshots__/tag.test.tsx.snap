@@ -700,9 +700,12 @@ exports[`Tag renders a tag with an icon 1`] = `
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 16px;
   height: 16px;
-  display: inline-block;
 }
 
 <div
@@ -820,9 +823,12 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 16px;
   height: 16px;
-  display: inline-block;
 }
 
 .emotion-5 {
@@ -1010,9 +1016,12 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 16px;
   height: 16px;
-  display: inline-block;
 }
 
 .emotion-4 {

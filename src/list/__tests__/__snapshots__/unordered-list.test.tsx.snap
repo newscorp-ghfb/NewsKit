@@ -95,9 +95,12 @@ exports[`UnorderedList renders different types of children 1`] = `
 .emotion-8 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-8.emotion-8 {
   width: 16px;
   height: 16px;
-  display: inline-block;
 }
 
 .emotion-11 {
@@ -345,9 +348,12 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 8px;
   height: 8px;
-  display: inline-block;
 }
 
 <ul
@@ -575,9 +581,12 @@ exports[`UnorderedList renders with custom list item marker with different size 
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 16px;
   height: 16px;
-  display: inline-block;
 }
 
 <ul

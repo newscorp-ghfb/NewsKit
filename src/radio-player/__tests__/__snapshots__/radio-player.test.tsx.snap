@@ -252,9 +252,12 @@ exports[`Radio Player default player 1`] = `
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-3 {
@@ -640,9 +643,12 @@ exports[`Radio Player default player 1`] = `
 .emotion-24 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-24.emotion-24 {
   width: 32px;
   height: 32px;
-  display: inline-block;
 }
 
 .emotion-24 circle {
@@ -2063,9 +2069,12 @@ exports[`Radio Player live player 1`] = `
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-3 {
@@ -2429,9 +2438,12 @@ exports[`Radio Player live player 1`] = `
 .emotion-52 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-52.emotion-52 {
   width: 32px;
   height: 32px;
-  display: inline-block;
 }
 
 .emotion-52 circle {
@@ -4021,9 +4033,12 @@ exports[`Radio Player player with popout link 1`] = `
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-3 {
@@ -4409,9 +4424,12 @@ exports[`Radio Player player with popout link 1`] = `
 .emotion-40 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-40.emotion-40 {
   width: 32px;
   height: 32px;
-  display: inline-block;
 }
 
 .emotion-40 circle {
@@ -6246,9 +6264,12 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-3 {
@@ -6634,9 +6655,12 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 .emotion-56 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-56.emotion-56 {
   width: 32px;
   height: 32px;
-  display: inline-block;
 }
 
 .emotion-56 circle {

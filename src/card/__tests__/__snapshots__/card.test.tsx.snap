@@ -1420,9 +1420,12 @@ exports[`Card renders media section if the media data is provided 1`] = `
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-3 {
@@ -1635,9 +1638,12 @@ exports[`Card renders media section with a custom component 1`] = `
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-3 {
@@ -1822,9 +1828,12 @@ exports[`Card renders media section with a custom component using overrides 1`] 
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-3 {
@@ -2023,9 +2032,12 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-3 {
@@ -2199,9 +2211,12 @@ exports[`Card renders media section with overrides 1`] = `
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-3 {
@@ -2439,9 +2454,12 @@ exports[`Card renders with card items 1`] = `
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-3 {
@@ -3054,9 +3072,12 @@ exports[`CardInset renders with card items 1`] = `
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-3 {

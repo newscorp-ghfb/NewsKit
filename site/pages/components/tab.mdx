@@ -64,6 +64,12 @@ Tabs have a number of props to facilitate a variety of uses:
       If provided, this overrides the icon size of any child icons. Otherwise,
       iconSize010, iconSize020 or iconSize030 is used depending on the `size` prop. If no icons
       are present in the Tab's children then this prop is irrelevant.
+      <br />
+      <br />
+      <i>Note: You can also set the icon size by passing it directly as a size prop to the icon,
+      but by doing this you will override the iconSize passed from overrides.
+      We discourage this approach but we will keep the functionality
+      in case it is needed.</i>
     </Prop>
     <Prop name="minHeight" type="SizingKeys | string">
       If provided, this sets a minimum height to the Tab. This can be a sizing

@@ -58,9 +58,12 @@ exports[`ShareBar renders horizontally with icons and label 1`] = `
 .emotion-1 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-1.emotion-1 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-0 {
@@ -233,9 +236,12 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
 .emotion-1 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-1.emotion-1 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-0 {
@@ -494,9 +500,12 @@ exports[`ShareBar renders horizontally with twitter and facebook icons 1`] = `
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 <div
@@ -581,9 +590,12 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
   .emotion-1 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-1.emotion-1 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-6 {
@@ -756,9 +768,12 @@ exports[`ShareBar renders vertically with twitter and facebook icons 1`] = `
   .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-5 {
@@ -949,9 +964,12 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 .emotion-1 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-1.emotion-1 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-0 {
@@ -1360,9 +1378,12 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 .emotion-1 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-1.emotion-1 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-3 {
@@ -1796,9 +1817,12 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 .emotion-1 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-1.emotion-1 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-3 {
@@ -2207,9 +2231,12 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 .emotion-1 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-1.emotion-1 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-3 {
@@ -2631,9 +2658,12 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 .emotion-1 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-1.emotion-1 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-16 {
@@ -3051,9 +3081,12 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 .emotion-1 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-1.emotion-1 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-16 {
@@ -3471,9 +3504,12 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 .emotion-1 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-1.emotion-1 {
   width: 48px;
   height: 48px;
-  display: inline-block;
 }
 
 .emotion-16 {

@@ -81,7 +81,7 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <h1>Flags with an icon</h1>
+          <h2>Flags with an icon</h2>
           <Container>
             <Stack
               flow="horizontal-center"
@@ -90,12 +90,57 @@ export default {
               wrap="wrap"
             >
               <Flag size={FlagSize.Small}>
-                <Email size="iconSize010" />
+                <Email />
                 Text
               </Flag>
               <Flag size={FlagSize.Large}>
-                <Email size="iconSize010" />
+                <Email />
                 Text
+              </Flag>
+            </Stack>
+          </Container>
+          <h2>
+            Flags with leading and trailing icon and overridden default sizes
+          </h2>
+          <Container>
+            <Stack
+              flow="horizontal-center"
+              spaceInline="sizing020"
+              spaceStack="sizing020"
+              wrap="wrap"
+            >
+              <Flag size={FlagSize.Small}>
+                <Email />
+                Text
+                <Email size="iconSize030" />
+              </Flag>
+              <Flag size={FlagSize.Large}>
+                <Email />
+                Text
+                <Email size="iconSize040" />
+              </Flag>
+            </Stack>
+          </Container>
+          <h2>
+            Flags with leading and trailing icon and overridden sizes with
+            overrides and inline prop
+          </h2>
+          <Container>
+            <Stack
+              flow="horizontal-center"
+              spaceInline="sizing020"
+              spaceStack="sizing020"
+              wrap="wrap"
+            >
+              <Flag size={FlagSize.Small} overrides={{iconSize: 'iconSize020'}}>
+                <Email />
+                Text
+                <Email size="iconSize030" />
+              </Flag>
+              <Flag size={FlagSize.Large} overrides={{iconSize: 'iconSize020'}}>
+                <Email />
+                Text
+                <Email size="iconSize040" />
               </Flag>
             </Stack>
           </Container>
@@ -122,7 +167,7 @@ export default {
                   paddingPreset: 'spaceInset000Squish',
                 }}
               >
-                <Email size="iconSize010" />
+                <Email />
                 Text
               </Flag>
               <Flag
@@ -132,7 +177,7 @@ export default {
                   paddingPreset: 'spaceInset000Squish',
                 }}
               >
-                <Email size="iconSize010" />
+                <Email />
                 Text
               </Flag>
               <Flag
@@ -142,7 +187,7 @@ export default {
                   paddingPreset: 'spaceInset000Squish',
                 }}
               >
-                <Bookmark size="iconSize010" />
+                <Bookmark />
                 Text
               </Flag>
               <Flag
@@ -152,7 +197,7 @@ export default {
                   paddingPreset: 'spaceInset000Squish',
                 }}
               >
-                <VolumeMute size="iconSize010" />
+                <VolumeMute />
                 Text
               </Flag>
             </Stack>

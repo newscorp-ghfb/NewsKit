@@ -94,9 +94,12 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 32px;
   height: 32px;
-  display: inline-block;
 }
 
 .emotion-0 circle {

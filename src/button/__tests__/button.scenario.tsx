@@ -73,9 +73,9 @@ const buttonSizes: Array<{
   buttonSize: ButtonSize;
   iconSize: IconSizeKeys;
 }> = [
-  {buttonSize: ButtonSize.Small, iconSize: 'iconSize010'},
-  {buttonSize: ButtonSize.Medium, iconSize: 'iconSize020'},
-  {buttonSize: ButtonSize.Large, iconSize: 'iconSize030'},
+  {buttonSize: ButtonSize.Small, iconSize: 'iconSize040'},
+  {buttonSize: ButtonSize.Medium, iconSize: 'iconSize050'},
+  {buttonSize: ButtonSize.Large, iconSize: 'iconSize050'},
 ];
 
 const states = ['Default', 'Focused', 'Disabled', 'Loading'];
@@ -396,7 +396,7 @@ export default {
                 <Stack flow="horizontal-center" spaceInline="sizing060">
                   {buttonSizes.map(button => (
                     <Button size={button.buttonSize}>
-                      <IconType size={button.iconSize} />
+                      <IconType />
                       Button
                     </Button>
                   ))}
@@ -420,7 +420,7 @@ export default {
                   {buttonSizes.map(button => (
                     <Button size={button.buttonSize}>
                       Button
-                      <IconType size={button.iconSize} />
+                      <IconType />
                     </Button>
                   ))}
                 </Stack>
@@ -430,6 +430,53 @@ export default {
         </React.Fragment>
       ),
       name: 'button-with-trailing-icon',
+      type: 'story',
+    },
+    {
+      component: () => (
+        <React.Fragment>
+          <h2>Button with icon and inline overridden default size</h2>
+          <Container>
+            {[Pause, Email, CopyLink].map(IconType => (
+              <Spacer>
+                <Stack flow="horizontal-center" spaceInline="sizing060">
+                  <Button size={buttonSizes[0].buttonSize}>
+                    <IconType />
+                    Button
+                    <IconType size={buttonSizes[0].iconSize} />
+                  </Button>
+                </Stack>
+              </Spacer>
+            ))}
+          </Container>
+        </React.Fragment>
+      ),
+      name: 'button-with-icon-inline-overridden-default-size',
+      type: 'story',
+    },
+    {
+      component: () => (
+        <React.Fragment>
+          <h2>Button with icon and inline overridden size from overrides</h2>
+          <Container>
+            {[Pause, Email, CopyLink].map(IconType => (
+              <Spacer>
+                <Stack flow="horizontal-center" spaceInline="sizing060">
+                  <Button
+                    size={buttonSizes[0].buttonSize}
+                    overrides={{iconSize: 'iconSize030'}}
+                  >
+                    <IconType />
+                    Button
+                    <IconType size={buttonSizes[0].iconSize} />
+                  </Button>
+                </Stack>
+              </Spacer>
+            ))}
+          </Container>
+        </React.Fragment>
+      ),
+      name: 'button-with-icon-and-inline-overridden-overrides-size',
       type: 'story',
     },
   ],

@@ -321,9 +321,12 @@ exports[`Audio Player live player renders as expected 1`] = `
 .emotion-1 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-1.emotion-1 {
   width: 32px;
   height: 32px;
-  display: inline-block;
 }
 
 .emotion-1 circle {
@@ -790,9 +793,12 @@ exports[`Audio Player live player renders as expected 1`] = `
 .emotion-36 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-36.emotion-36 {
   width: 24px;
   height: 24px;
-  display: inline-block;
 }
 
 <section
@@ -1176,9 +1182,12 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 32px;
   height: 32px;
-  display: inline-block;
 }
 
 .emotion-0 circle {
@@ -1448,9 +1457,12 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
 .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 32px;
   height: 32px;
-  display: inline-block;
 }
 
 .emotion-0 circle {
@@ -3243,9 +3255,12 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 .emotion-1 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-1.emotion-1 {
   width: 32px;
   height: 32px;
-  display: inline-block;
 }
 
 .emotion-1 circle {
@@ -4639,9 +4654,12 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 .emotion-1 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-1.emotion-1 {
   width: 32px;
   height: 32px;
-  display: inline-block;
 }
 
 .emotion-1 circle {

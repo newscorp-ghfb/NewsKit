@@ -6,10 +6,15 @@ import {getBuiId} from '../utils/get-bui-id';
 const SvgElement = styled.svg<StyledSvgProps>`
   fill: ${getColorFromTheme('inkBase', '$color')};
   color: ${getColorFromTheme('inkBase', '$color')};
-  width: ${getSizingFromTheme(undefined, 'size')};
-  height: ${getSizingFromTheme(undefined, 'size')};
   margin: ${getSizingFromTheme(undefined, 'margin')};
   ${({float}) => (float ? `float: ${float}` : `display: inline-block;`)};
+
+  // more info on why do we have two ampersands:
+  // https://css-tricks.com/the-sass-ampersand/#doubling-up-specificity
+  && {
+    width: ${getSizingFromTheme(undefined, 'size')};
+    height: ${getSizingFromTheme(undefined, 'size')};
+  }
 `;
 
 export const Svg: React.FC<SvgProps> = ({children, title, color, ...props}) => {

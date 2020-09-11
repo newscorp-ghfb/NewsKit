@@ -5,9 +5,12 @@ exports[`Icons Add icon renders as expected 1`] = `
   .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 16px;
   height: 16px;
-  display: inline-block;
 }
 
 <svg
@@ -36,9 +39,12 @@ exports[`Icons Error icon renders as expected 1`] = `
   .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 24px;
   height: 24px;
-  display: inline-block;
 }
 
 <svg
@@ -73,9 +79,12 @@ exports[`Icons Menu icon renders as expected 1`] = `
   .emotion-0 {
   fill: #0a0a0a;
   color: #0a0a0a;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 24px;
   height: 24px;
-  display: inline-block;
 }
 
 <svg
@@ -102,9 +111,12 @@ exports[`Icons Moon icon renders as expected 1`] = `
   .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 24px;
   height: 24px;
-  display: inline-block;
 }
 
 <svg
@@ -131,9 +143,12 @@ exports[`Icons Remove icon renders as expected 1`] = `
   .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 16px;
   height: 16px;
-  display: inline-block;
 }
 
 <svg
@@ -162,9 +177,12 @@ exports[`Icons Search icon renders as expected 1`] = `
   .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 24px;
   height: 24px;
-  display: inline-block;
 }
 
 <svg
@@ -195,9 +213,12 @@ exports[`Icons Sun icon renders as expected 1`] = `
   .emotion-0 {
   fill: #2e2e2e;
   color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
   width: 24px;
   height: 24px;
-  display: inline-block;
 }
 
 <svg
