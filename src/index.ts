@@ -28,6 +28,7 @@ export * from './tab';
 export * from './tag';
 export * from './tealium';
 export * from './text-block';
+export * from './text-input';
 export * from './theme';
 export * from './title-bar';
 export * from './typography';

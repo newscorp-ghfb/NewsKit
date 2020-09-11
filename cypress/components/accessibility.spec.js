@@ -18,6 +18,7 @@ const a11yComponentRules = [
   {name: 'standfirst'},
   {name: 'tab', disabledRules: ['color-contrast']},
   {name: 'text-block'},
+  {name: 'text-input', disabledRules: ['color-contrast']},
   {name: 'volume-control'},
   {name: 'tag'},
   {name: 'flag'},

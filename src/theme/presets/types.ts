@@ -14,6 +14,7 @@ export interface StylePresetStyles {
   color?: string;
   iconColor?: string;
   textDecoration?: string;
+  textOverflow?: string;
 }
 export type StylePresetStyleKeys = keyof StylePresetStyles;
 

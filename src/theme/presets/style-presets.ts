@@ -681,6 +681,45 @@ stylePresets.tab = {
   },
 };
 
+// Text Input
+stylePresets.textInput = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.interface040}}',
+    borderWidth: '{{borders.borderWidthDefault}}',
+    borderRadius: '{{borders.borderRadiusDefault}}',
+    color: '{{colors.inkBase}}',
+    textOverflow: 'ellipsis',
+  },
+  focus: {
+    backgroundColor: '{{colors.interface020}}',
+    borderColor: '{{colors.interfaceBrand010}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interface020}}',
+  },
+  disabled: {
+    borderColor: '{{colors.interactiveDisabled}}',
+    color: '{{colors.inkNonEssential}}',
+  },
+};
+
+stylePresets.textInputLabel = {
+  base: {
+    color: '{{colors.inkContrast}}',
+  },
+};
+
+stylePresets.textInputAssistiveText = {
+  base: {
+    color: '{{colors.inkSubtle}}',
+  },
+  disabled: {
+    color: '{{colors.inkNonEssential}}',
+  },
+};
+
 //
 // Flag
 //

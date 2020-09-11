@@ -1,0 +1,294 @@
+import Layout from '../../components/layout';
+import Playground from '../../components/playground';
+import {Prop} from '../../components/prop';
+import {TextBoxSwatch} from '../../components/theming-values/colors';
+import {LegacyBlock} from '../../components/legacy-block';
+import {CodeFromDefaultPresets} from '../../components/code';
+import {TextInput, TextInputSize} from 'newskit';
+
+export default Layout;
+
+# Text Input
+
+## Overview
+
+The Text Input component consists of a label, input and assistive text.
+
+## Usage
+
+Text Input allows users to enter text into a UI. They typically appear in forms and dialogs.
+
+
+## Props
+
+Text Input has a number of props to facilitate a variety of uses:
+
+<LegacyBlock marginTop="sizing040">
+  <Prop name="size" type="TextInputSize" enum={TextInputSize}
+    default={TextInputSize.Medium}>
+    Optional size of the Text Input: Small, Medium or Large.
+  </Prop>
+  <Prop name="label" type="string" required>
+    Label text is used to inform users as to what information is requested for a text input. Every text input field should have a label.
+  </Prop>
+  <Prop name="hideLabel" type="boolean" default={false}>
+    A prop can be set on the Text Input component to visually hide the label. 
+    The label should remain readable by screen readers by setting the arial label attribute on the input to the value of the label text.
+  </Prop>
+  <Prop name="assistiveText" type="string">
+    Assistive text gives context about a field’s input, such as how the input will be used. It will be displayed beneath the text input. 
+  </Prop>
+  <Prop name="disabled" type="boolean" default={false}>
+    If true, the Text Input will render the disabled state of the style preset.
+  </Prop>
+  <Prop name="readOnly" type="boolean" default={false}>
+    If true, the Text Input will render the read only state of the style preset.
+  </Prop>
+  <Prop name="ariaLabel" type="string">
+    The aria-label attribute for the text input. 
+    As stated above, if the label is hidden, the label text will be placed into the aria label attribute of the input
+    However, this can be overridden if the consumer sets aria-label prop.
+  </Prop>
+  <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component and provided elements.
+    <Prop name="width" type="SizingKeys | string">
+      If provided, this sets a fixed width to the text input. This can be a sizing token
+      from the theme, or any CSS length value, e.g. 100% for a full-width element.
+    </Prop>
+    <Prop name="input" type="object">
+      <Prop name="placeholder" type="string" default="Placeholder">
+        If provided, this overrides the placeholder text applied to the text input.
+      </Prop>
+      <Prop name="stylePreset" type="string" default="textInput">
+        If provided, this overrides the style preset applied to the text input.
+      </Prop>
+      <Prop name="padding" type="PaddingPresetKeys">
+        If provided, this overrides the padding of the Text Input. Otherwise,
+        spaceInset010Squish or spaceInset030 is used depending on the `size`
+        prop.
+      </Prop>
+      <Prop name="typographyPreset" type="string">
+        If provided, this overrides the type preset applied to the text input. Otherwise,
+        body020 or body030 is used depending on the `size` prop.
+      </Prop>
+      <Prop name="spaceStack" type="SpacingPresetKeys">
+        This is a spacing preset token which is applied as a margin on the bottom of
+        the Block. Use this to space stacking content down the page.
+      </Prop>
+      <Prop name="minHeight" type="SizingKeys | string">
+        If provided, this sets a minimum height to the Text Input. This can be a sizing
+        token from the theme, or any CSS length value. By default, sizing060,
+        sizing080 or sizing090 is used depending on the `size` prop.
+      </Prop>
+    </Prop>
+    <Prop name="inputLabel" type="object">
+      <Prop name="stylePreset" type="string" default="textinputLabel">
+        If provided, this overrides the style preset applied to the text input label.
+      </Prop>
+      <Prop name="typographyPreset" type="string">
+        If provided, this overrides the type preset applied to the text input label. Otherwise,
+        label030 or label040 is used depending on the `size` prop.
+      </Prop>
+      <Prop name="spaceInline" type="SpacingPresetKeys">
+        This is a spacing preset token which is applied as a margin on the right of
+        the text input label. Use this to space inline content across the page.
+      </Prop>
+      <Prop name="spaceStack" type="SpacingPresetKeys">
+        This is a spacing preset token which is applied as a margin on the bottom of
+        the text input label. Use this to space stacking content down the page.
+      </Prop>
+    </Prop>
+    <Prop name="assistiveText" type="object">
+      <Prop name="stylePreset" type="string">
+        If provided, this overrides the style preset applied to the assistive text.
+      </Prop>
+      <Prop name="typographyPreset" type="string">
+        If provided, this overrides the type preset applied to the text input. Otherwise,
+        label020 or label030 is used depending on the `size` prop.
+      </Prop>
+    </Prop>
+    Refer to the defaults below for the object structure:
+    <CodeFromDefaultPresets componentName="textInput" />
+  </Prop>
+</LegacyBlock>
+
+## Playground
+
+<Playground
+  componentName="TextInput"
+  newskitPath="/text-input"
+  component={state => (
+    <TextInput label="Label" {...state} />
+  )}
+  knobs={[
+    {
+      name: 'Size',
+      propName: 'size',
+      options: [
+        {
+          label: 'TextInputSize.Small',
+          value: TextInputSize.Small,
+        },
+        {
+          label: 'TextInputSize.Medium',
+          value: TextInputSize.Medium,
+          isDefault: true,
+        },
+        {
+          label: 'TextInputSize.Large',
+          value: TextInputSize.Large,
+        },
+      ],
+    },
+    {
+      name: 'Style Preset',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            label: {
+              stylePreset: undefined
+            },
+            input: {
+              stylePreset: undefined
+            },
+            assistiveText: {
+              stylePreset: undefined
+            },
+          },
+          isDefault: true,
+        },
+      ],
+    }, 
+    {
+      name: 'Typography Preset',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            label: {
+              typographyPreset: undefined,
+            },
+            input: {
+              typographyPreset: undefined,
+            },
+            assistiveText: {
+              typographyPreset: undefined,
+            },
+          },
+          isDefault: true,
+        },
+        {
+          label: 'Diffierent presets',
+          value: {
+            label:{
+              typographyPreset: 'label050',
+            },
+            assistiveText: {
+              typographyPreset: 'label050',
+            },
+          },
+        },
+      ],
+    },
+    {
+      name: 'Spacing Preset',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            label:{
+              spaceStack: undefined,
+            },
+            input: {
+              spaceStack: undefined,
+            },
+          },
+          isDefault: true,
+        },
+        {
+          label: 'Diffierent presets',
+          value: {
+            input: {
+              spaceStack: 'space040',
+            },
+          },
+        },
+      ],
+    },
+    {
+      name: 'Assistive Text',
+      propName: 'assistiveText',
+      options: [
+        {
+          label: 'No Assistive Text',
+          isDefault: true,
+        },
+        {
+          label: 'With Assistive Text',
+          value: 'Assistive text'
+        },
+      ],
+    },
+    {
+      name: 'Placeholder',
+      propName: 'placeholder',
+      options: [
+        {
+          label: 'Default',
+          isDefault: true,
+        },
+        {
+          label: 'Custom Placeholder',
+          value: 'This is some text'
+        },
+      ],
+    },
+    {
+      name: 'Hide Label',
+      propName: 'hideLabel',
+      type: 'boolean',
+      value: false
+    },
+    {
+      name: 'Width',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            width: undefined,
+          },
+          isDefault: true,
+        },
+        {
+          label: 'Full-width',
+          value: {
+            width: '100%',
+          }
+        },
+        {
+          label: 'Fix-width',
+          value: {
+            width: '200px',
+          },
+        },
+      ],
+    },
+    {
+      name: 'Disabled',
+      propName: 'disabled',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'Read-only',
+      propName: 'readOnly',
+      type: 'boolean',
+      value: false,
+    },
+  ]}
+/>

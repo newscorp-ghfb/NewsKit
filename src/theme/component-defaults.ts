@@ -323,6 +323,65 @@ export const componentDefaults = {
       space: 'sizing020',
     },
   },
+  textInput: {
+    small: {
+      label: {
+        stylePreset: 'textInputLabel',
+        typographyPreset: 'label030',
+        spaceStack: 'space040',
+        spaceInline: 'space010',
+      },
+      input: {
+        stylePreset: 'textInput',
+        paddingPreset: 'spaceInset010Squish',
+        minHeight: 'sizing060',
+        typographyPreset: 'body020',
+        spaceStack: 'space020',
+      },
+      assistiveText: {
+        stylePreset: 'textInputAssistiveText',
+        typographyPreset: 'label020',
+      },
+    },
+    medium: {
+      label: {
+        stylePreset: 'textInputLabel',
+        typographyPreset: 'label040',
+        spaceStack: 'space040',
+        spaceInline: 'space010',
+      },
+      input: {
+        stylePreset: 'textInput',
+        paddingPreset: 'spaceInset030',
+        minHeight: 'sizing080',
+        typographyPreset: 'body020',
+        spaceStack: 'space020',
+      },
+      assistiveText: {
+        stylePreset: 'textInputAssistiveText',
+        typographyPreset: 'label020',
+      },
+    },
+    large: {
+      label: {
+        stylePreset: 'textInputLabel',
+        typographyPreset: 'label040',
+        spaceStack: 'space040',
+        spaceInline: 'space010',
+      },
+      input: {
+        stylePreset: 'textInput',
+        paddingPreset: 'spaceInset030',
+        minHeight: 'sizing090',
+        typographyPreset: 'body030',
+        spaceStack: 'space020',
+      },
+      assistiveText: {
+        stylePreset: 'textInputAssistiveText',
+        typographyPreset: 'label030',
+      },
+    },
+  },
   tag: {
     small: {
       typographyPreset: 'label010',

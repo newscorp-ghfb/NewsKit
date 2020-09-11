@@ -223,6 +223,11 @@
         "id": "/components/text-block"
       },
       {
+        "title": "Text Input",
+        "page": true,
+        "id": "/components/text-input"
+      },
+      {
         "title": "Title Bar",
         "page": true,
         "id": "/components/title-bar"

@@ -507,6 +507,65 @@ Object {
         "typographyPreset": "label010",
       },
     },
+    "textInput": Object {
+      "large": Object {
+        "assistiveText": Object {
+          "stylePreset": "textInputAssistiveText",
+          "typographyPreset": "label030",
+        },
+        "input": Object {
+          "minHeight": "sizing090",
+          "paddingPreset": "spaceInset030",
+          "spaceStack": "space020",
+          "stylePreset": "textInput",
+          "typographyPreset": "body030",
+        },
+        "label": Object {
+          "spaceInline": "space010",
+          "spaceStack": "space040",
+          "stylePreset": "textInputLabel",
+          "typographyPreset": "label040",
+        },
+      },
+      "medium": Object {
+        "assistiveText": Object {
+          "stylePreset": "textInputAssistiveText",
+          "typographyPreset": "label020",
+        },
+        "input": Object {
+          "minHeight": "sizing080",
+          "paddingPreset": "spaceInset030",
+          "spaceStack": "space020",
+          "stylePreset": "textInput",
+          "typographyPreset": "body020",
+        },
+        "label": Object {
+          "spaceInline": "space010",
+          "spaceStack": "space040",
+          "stylePreset": "textInputLabel",
+          "typographyPreset": "label040",
+        },
+      },
+      "small": Object {
+        "assistiveText": Object {
+          "stylePreset": "textInputAssistiveText",
+          "typographyPreset": "label020",
+        },
+        "input": Object {
+          "minHeight": "sizing060",
+          "paddingPreset": "spaceInset010Squish",
+          "spaceStack": "space020",
+          "stylePreset": "textInput",
+          "typographyPreset": "body020",
+        },
+        "label": Object {
+          "spaceInline": "space010",
+          "spaceStack": "space040",
+          "stylePreset": "textInputLabel",
+          "typographyPreset": "label030",
+        },
+      },
+    },
     "titleBar": Object {
       "heading": Object {
         "typographyPreset": Object {
@@ -2064,6 +2123,41 @@ Object {
         "borderStyle": "none",
         "color": "#ffffff",
         "iconColor": "#ffffff",
+      },
+    },
+    "textInput": Object {
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#e4e4e4",
+        "borderRadius": "8px",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "color": "#2e2e2e",
+        "textOverflow": "ellipsis",
+      },
+      "disabled": Object {
+        "borderColor": "#e4e4e4",
+        "color": "#9c9c9c",
+      },
+      "focus": Object {
+        "backgroundColor": "#fafafa",
+        "borderColor": "#0a68c1",
+      },
+      "hover": Object {
+        "backgroundColor": "#fafafa",
+      },
+    },
+    "textInputAssistiveText": Object {
+      "base": Object {
+        "color": "#535353",
+      },
+      "disabled": Object {
+        "color": "#9c9c9c",
+      },
+    },
+    "textInputLabel": Object {
+      "base": Object {
+        "color": "#0a0a0a",
       },
     },
     "titleBar": Object {

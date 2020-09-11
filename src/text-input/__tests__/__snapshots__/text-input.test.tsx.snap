@@ -1,0 +1,1903 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput renders correctly with label and assistive text 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:disabled {
+  border-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-3"
+    label="label"
+  >
+    <label
+      class="emotion-0"
+      for="mock-bui-1"
+    >
+      label
+    </label>
+    <input
+      aria-describedby="mock-bui-1-assistive-text"
+      class="emotion-1"
+      id="mock-bui-1"
+      placeholder="Placeholder"
+      type="text"
+    />
+    <p
+      class="emotion-2"
+      id="mock-bui-1-assistive-text"
+    >
+      assistiveText
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextInput renders correctly with label hidden 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:disabled {
+  border-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-3"
+    label="label"
+  >
+    <label
+      class="emotion-0"
+      for="mock-bui-1"
+    />
+    <input
+      aria-describedby="mock-bui-1-assistive-text"
+      aria-label="label"
+      class="emotion-1"
+      id="mock-bui-1"
+      placeholder="Placeholder"
+      type="text"
+    />
+    <p
+      class="emotion-2"
+      id="mock-bui-1-assistive-text"
+    >
+      assistiveText
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextInput renders correctly without asistive text 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:disabled {
+  border-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-2"
+    label="label"
+  >
+    <label
+      class="emotion-0"
+      for="mock-bui-1"
+    >
+      label
+    </label>
+    <input
+      class="emotion-1"
+      id="mock-bui-1"
+      placeholder="Placeholder"
+      type="text"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextInput renders disabled text input 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: not-allowed;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:disabled {
+  border-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  color: #9c9c9c;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-3"
+    label="label"
+  >
+    <label
+      class="emotion-0"
+      for="mock-bui-1"
+    >
+      label
+    </label>
+    <input
+      aria-describedby="mock-bui-1-assistive-text"
+      class="emotion-1"
+      disabled=""
+      id="mock-bui-1"
+      placeholder="Placeholder"
+      type="text"
+    />
+    <p
+      class="emotion-2"
+      disabled=""
+      id="mock-bui-1-assistive-text"
+    >
+      assistiveText
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextInput renders large text input 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 64px;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:disabled {
+  border-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-3"
+    label="label"
+  >
+    <label
+      class="emotion-0"
+      for="mock-bui-1"
+    >
+      label
+    </label>
+    <input
+      aria-describedby="mock-bui-1-assistive-text"
+      class="emotion-1"
+      id="mock-bui-1"
+      placeholder="Placeholder"
+      type="text"
+    />
+    <p
+      class="emotion-2"
+      id="mock-bui-1-assistive-text"
+    >
+      assistiveText
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextInput renders readonly text input 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:disabled {
+  border-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-3"
+    label="label"
+  >
+    <label
+      class="emotion-0"
+      for="mock-bui-1"
+    >
+      label
+    </label>
+    <input
+      aria-describedby="mock-bui-1-assistive-text"
+      class="emotion-1"
+      id="mock-bui-1"
+      placeholder="Placeholder"
+      readonly=""
+      type="text"
+    />
+    <p
+      class="emotion-2"
+      id="mock-bui-1-assistive-text"
+    >
+      assistiveText
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextInput renders small text input 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  min-height: 32px;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:disabled {
+  border-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-3"
+    label="label"
+  >
+    <label
+      class="emotion-0"
+      for="mock-bui-1"
+    >
+      label
+    </label>
+    <input
+      aria-describedby="mock-bui-1-assistive-text"
+      class="emotion-1"
+      id="mock-bui-1"
+      placeholder="Placeholder"
+      type="text"
+    />
+    <p
+      class="emotion-2"
+      id="mock-bui-1-assistive-text"
+    >
+      assistiveText
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextInput renders text input with overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #f000dc;
+  margin-bottom: 24px;
+  margin-right: 8px;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  border-color: #D20600;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 8px;
+  margin-bottom: 16px;
+  min-height: 64px;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  color: #f000dc;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-3"
+    label="label"
+  >
+    <label
+      class="emotion-0"
+      for="mock-bui-1"
+    >
+      label
+    </label>
+    <input
+      aria-describedby="mock-bui-1-assistive-text"
+      class="emotion-1"
+      id="mock-bui-1"
+      placeholder="Placeholder"
+      type="text"
+    />
+    <p
+      class="emotion-2"
+      id="mock-bui-1-assistive-text"
+    >
+      Assistive Text
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextInput renders with different minHeight 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 64px;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:disabled {
+  border-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-3"
+    label="label"
+  >
+    <label
+      class="emotion-0"
+      for="mock-bui-1"
+    >
+      label
+    </label>
+    <input
+      aria-describedby="mock-bui-1-assistive-text"
+      class="emotion-1"
+      id="mock-bui-1"
+      placeholder="Placeholder"
+      type="text"
+    />
+    <p
+      class="emotion-2"
+      id="mock-bui-1-assistive-text"
+    >
+      assistiveText
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextInput renders with fixed width 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:disabled {
+  border-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-3 {
+  width: 160px;
+}
+
+<div
+    class="emotion-3"
+    label="label"
+  >
+    <label
+      class="emotion-0"
+      for="mock-bui-1"
+    >
+      label
+    </label>
+    <input
+      aria-describedby="mock-bui-1-assistive-text"
+      class="emotion-1"
+      id="mock-bui-1"
+      placeholder="Placeholder"
+      type="text"
+    />
+    <p
+      class="emotion-2"
+      id="mock-bui-1-assistive-text"
+    >
+      assistiveText
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextInput renders with full width 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:disabled {
+  border-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-3 {
+  width: 100%;
+}
+
+<div
+    class="emotion-3"
+    label="label"
+  >
+    <label
+      class="emotion-0"
+      for="mock-bui-1"
+    >
+      label
+    </label>
+    <input
+      aria-describedby="mock-bui-1-assistive-text"
+      class="emotion-1"
+      id="mock-bui-1"
+      placeholder="Placeholder"
+      type="text"
+    />
+    <p
+      class="emotion-2"
+      id="mock-bui-1-assistive-text"
+    >
+      assistiveText
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextInput should render custom aria-label 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:disabled {
+  border-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-3"
+    label="label"
+  >
+    <label
+      class="emotion-0"
+      for="mock-bui-1"
+    >
+      label
+    </label>
+    <input
+      aria-describedby="mock-bui-1-assistive-text"
+      aria-label="my custom aria label"
+      class="emotion-1"
+      id="mock-bui-1"
+      placeholder="Placeholder"
+      type="text"
+    />
+    <p
+      class="emotion-2"
+      id="mock-bui-1-assistive-text"
+    >
+      assistiveText
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextInput should render custom placeholder 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:disabled {
+  border-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-3"
+    label="label"
+  >
+    <label
+      class="emotion-0"
+      for="mock-bui-1"
+    >
+      label
+    </label>
+    <input
+      aria-describedby="mock-bui-1-assistive-text"
+      class="emotion-1"
+      id="mock-bui-1"
+      placeholder="This is some text"
+      type="text"
+    />
+    <p
+      class="emotion-2"
+      id="mock-bui-1-assistive-text"
+    >
+      assistiveText
+    </p>
+  </div>
+</DocumentFragment>
+`;
