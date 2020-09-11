@@ -29,6 +29,7 @@ describe('Page accessibility', () => {
       ) {
         // The typography page is a showcase so we have disabled the heading order rule for this page.
         // More info on the rule here: https://www.w3.org/WAI/tutorials/page-structure/headings/
+        // TODO: Need to revisit the below color contrast rule while working on the newskit site remake project
         cy.checkA11y({
           rules: {
             'heading-order': {enabled: false},
@@ -41,12 +42,11 @@ describe('Page accessibility', () => {
       ) {
         cy.checkA11y({
           rules: {
-            'landmark-unique': {enabled: false},
             'color-contrast': {enabled: false},
           },
         });
       } else {
-        // TODO: Need to remove color-contrast as a rule here once PPDSC-785 ticket is fixed
+        // TODO: Need to revisit this rule while working on the newskit site remake project
         cy.checkA11y({
           rules: {
             'color-contrast': {enabled: false},

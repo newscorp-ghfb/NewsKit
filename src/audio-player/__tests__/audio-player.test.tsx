@@ -95,6 +95,14 @@ describe('Audio Player', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  test('recorded player renders with custom ariaLandmark', () => {
+    const {asFragment} = renderWithTheme(AudioPlayer, {
+      ...recordedAudioProps,
+      ariaLandmark: 'audio player one',
+    });
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   test('play button loading state is phasing as expected', () => {
     const {getByTestId} = renderWithTheme(AudioPlayer, recordedAudioProps);
 

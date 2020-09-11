@@ -40,6 +40,11 @@ The Radio Player requires a source stream to be passed in as a prop. This will t
   <Prop name="live" type="boolean">
     If true will display a label indicating the current show is live.
   </Prop>
+  <Prop name="ariaLandmark" type="string">
+    The aria-label attribute for the radio player. It is recommended that you set this
+    for screen readers to be able to explain the radio player purpose. ariaLandmark should be unique, 
+    so the same value should not appear on the same page more than once.
+  </Prop>
   <Prop name="flag" type="React.Component | string">
     If this parameter is provided as a string, the text of the default Flag
     component will change according to the passed value. <br />
@@ -196,6 +201,11 @@ The Radio Player requires a source stream to be passed in as a prop. This will t
       propName: 'captionSrc',
       value: 'captionsSrc.vtt',
     },
+    {
+      name: 'ariaLandmark',
+      propName: 'ariaLandmark',
+      value: 'live radio player',
+    },
   ]}
 />
 
@@ -268,7 +278,12 @@ The Radio Player requires a source stream to be passed in as a prop. This will t
       name: 'Popout',
       propName: 'popoutHref',
       value: 'https://newskit.co.uk'
-    }
+    },
+    {
+      name: 'ariaLandmark',
+      propName: 'ariaLandmark',
+      value: 'recorded radio player',
+    },
   ]}
 />
 

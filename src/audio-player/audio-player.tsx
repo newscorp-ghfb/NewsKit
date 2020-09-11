@@ -40,6 +40,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     trackPresets,
     controlPresets,
     src,
+    ariaLandmark = 'audio player',
     autoPlay,
     children,
     live = false,
@@ -231,7 +232,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   const srOnlyForwardRewind = getBuiId();
 
   return (
-    <PlayerContainer aria-label="audio player">
+    <PlayerContainer aria-label={ariaLandmark}>
       <PlayerGrid
         xsMargin="sizing000"
         xsColumnGutter="sizing000"

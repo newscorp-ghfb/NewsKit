@@ -15,7 +15,7 @@ const recordedAudioProps = {
   captionSrc: 'captions.vtt',
 };
 
-const PlayerContainer = styled.div`
+const AudioPlayerContainer = styled.div`
   border: solid 1px red;
   max-width: 1156px;
   margin-left: auto;
@@ -32,74 +32,81 @@ export default {
       name: 'recorded-audio-player',
       type: 'story',
       component: () => (
-        <PlayerContainer>
-          <AudioPlayer {...recordedAudioProps} />
-        </PlayerContainer>
+        <AudioPlayerContainer>
+          <AudioPlayer
+            {...recordedAudioProps}
+            ariaLandmark="audio player one"
+          />
+        </AudioPlayerContainer>
       ),
     },
     {
       name: 'recorded-audio-player-with-onPlay',
       type: 'story',
       component: () => (
-        <PlayerContainer>
+        <AudioPlayerContainer>
           <AudioPlayer
             src="https://sphinx.acast.com/storiesofourtimes/johnpienaar-istrackandtraceworking-/media.mp3"
             autoPlay
             preload="auto"
             disableNextTrack
             disablePreviousTrack
+            ariaLandmark="audio player two"
             onPlay={() => {}}
           />
-        </PlayerContainer>
+        </AudioPlayerContainer>
       ),
     },
     {
       name: 'recorded-with-popout-link',
       type: 'story',
       component: () => (
-        <PlayerContainer>
+        <AudioPlayerContainer>
           <AudioPlayer
             {...recordedAudioProps}
+            ariaLandmark="audio player three"
             popoutHref="https://talkradio.co.uk/radioplayer/live/talkradio.html?popup=1"
           />
-        </PlayerContainer>
+        </AudioPlayerContainer>
       ),
     },
     {
       name: 'recorded-with-controls',
       type: 'story',
       component: () => (
-        <PlayerContainer>
+        <AudioPlayerContainer>
           <AudioPlayer
             {...recordedAudioProps}
             onNextTrack={alert('Next track clicked!')}
             onPreviousTrack={alert('Previous track clicked!')}
+            ariaLandmark="audio player four"
           />
-        </PlayerContainer>
+        </AudioPlayerContainer>
       ),
     },
     {
       name: 'with-disabled-controls',
       type: 'story',
       component: () => (
-        <PlayerContainer>
+        <AudioPlayerContainer>
           <AudioPlayer
             {...recordedAudioProps}
             onNextTrack={() => {}}
             onPreviousTrack={() => {}}
             disableNextTrack
             disablePreviousTrack
+            ariaLandmark="audio player five"
           />
-        </PlayerContainer>
+        </AudioPlayerContainer>
       ),
     },
     {
       name: 'live-audio-player',
       type: 'story',
       component: () => (
-        <PlayerContainer>
-          <AudioPlayer {...liveAudioProps} />
-        </PlayerContainer>
+        <AudioPlayerContainer>
+          <AudioPlayer {...liveAudioProps} ariaLandmark="audio player six" />
+        </AudioPlayerContainer>
       ),
     },
   ],

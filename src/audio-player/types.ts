@@ -21,4 +21,5 @@ export interface AudioPlayerProps
   controlPresets?: Partial<ControlPresets>;
   live?: boolean;
   time?: string;
+  ariaLandmark?: string;
 }

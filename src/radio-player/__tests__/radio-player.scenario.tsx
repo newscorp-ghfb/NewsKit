@@ -52,6 +52,7 @@ export default {
           <PlayerContainer>
             <RadioPlayer
               {...props}
+              ariaLandmark="radio player one"
               title="Sound Helix Song"
               flag={CustomFlag}
               onNextTrack={alert('Next track clicked!')}
@@ -72,6 +73,7 @@ export default {
           <PlayerContainer>
             <RadioPlayer
               {...props}
+              ariaLandmark="radio player two"
               live
               flag="Live"
               src="https://radio.talkradio.co.uk/stream"

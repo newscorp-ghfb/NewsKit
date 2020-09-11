@@ -9,7 +9,7 @@ const myCustomTheme = createTheme({
     stylePresets: {
       bylineCustom: {
         base: {
-          color: '#f000dc',
+          color: '#D20600',
         },
       },
       bylineLinkCustom: {

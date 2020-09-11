@@ -123,6 +123,12 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       </li>
     </ul>
   </Prop>
+  <Prop name="ariaLandmark" type="string" default="audio-player">
+    The aria-label attribute for the audio player. It is recommended that you set this
+    for screen readers to be able to explain the audio player purpose. If left
+    undefined it is simply set to "audio-player". ariaLandmark should be unique, so
+    the same value should not appear on the same page more than once.
+  </Prop>
 </Block>
 
 ## Playground - Live Player
@@ -150,6 +156,11 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       propName: 'captionSrc',
       value: 'captionsSrc.vtt',
     },
+    {
+      name: 'ariaLandmark',
+      propName: 'ariaLandmark',
+      value: 'live audio player',
+    },
   ]}
 />
 
@@ -176,6 +187,11 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       name: 'Caption Src',
       propName: 'captionSrc',
       value: 'captionsSrc.vtt',
+    },
+    {
+      name: 'ariaLandmark',
+      propName: 'ariaLandmark',
+      value: 'recorded audio player',
     },
     {
       name: 'Disable Previous Track',
