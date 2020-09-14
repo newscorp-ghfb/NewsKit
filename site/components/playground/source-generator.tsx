@@ -3,7 +3,6 @@ import parser from 'prettier/parser-flow';
 import {isComponent} from './utils';
 
 export interface GenerateArgs {
-  newskitPath: string;
   componentName: string;
   state: Record<string, unknown>;
 }
@@ -43,11 +42,7 @@ const formatChildren = (value: unknown) => {
   return value;
 };
 
-export const generateSource = ({
-  newskitPath,
-  componentName,
-  state,
-}: GenerateArgs) => {
+export const generateSource = ({componentName, state}: GenerateArgs) => {
   const entries = Object.entries(state);
   const compProps = entries.reduce((acc, [key, value]) => {
     if (key === 'children') {
@@ -68,7 +63,7 @@ export const generateSource = ({
       code: prettier.format(
         `
   import React from 'react';
-  import {${componentName}} from 'newskit${newskitPath}';
+  import {${componentName}} from 'newskit';
 
   export default () => ${exportedComp}
   `,

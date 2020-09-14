@@ -59,8 +59,6 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
   </Prop>
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
-    Refer to the defaults below for the object structure:
-
     <Prop name="stylePreset" type="string" default="linkInline">
       If provided, this overrides the style preset applied to the Link.
     </Prop>
@@ -104,7 +102,6 @@ Both the Link and LinkStandalone default stylePresets can be changed via the the
 
 <Playground
   componentName={["Link", "LinkStandalone"]}
-  newskitPath="/link"
   component={[Link, LinkStandalone]}
   knobs={[
     {

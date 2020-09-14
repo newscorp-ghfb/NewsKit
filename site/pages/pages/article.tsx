@@ -19,8 +19,8 @@ import {
   Stack,
   Flow,
   Tag,
+  ShareBar,
 } from 'newskit';
-import {ShareBar} from 'newskit/share-bar';
 import Layout from '../../components/layout';
 import PageTitle from '../../components/page-title';
 

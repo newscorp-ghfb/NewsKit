@@ -2,10 +2,7 @@ import Playground from '../../components/playground';
 import Prop from '../../components/prop';
 import {LegacyBlock} from '../../components/legacy-block';
 import Layout from '../../components/layout';
-import {Twitter, Facebook} from 'newskit/icons';
-import {ShareBar} from 'newskit/share-bar';
-import {ButtonSize} from 'newskit/button';
-import {IconButton} from 'newskit/icon-button'
+import {Twitter, Facebook, ShareBar, ButtonSize, IconButton} from 'newskit';
 import {CodeFromDefaultPresets} from '../../components/code';
 
 
@@ -41,7 +38,6 @@ A share bar can be used anywhere a user would like to easily share something wit
 
 <Playground
   componentName="ShareBar"
-  newskitPath="/share-bar"
   component={state => (
     <ShareBar {...state}>
       <IconButton size={ButtonSize.Large} overrides={{stylePreset: "buttonSocialTwitter"}}>

@@ -38,7 +38,6 @@ export type KnobsConfig =
 
 export interface PlaygroundProps {
   componentName: string | string[];
-  newskitPath: string;
   component: React.ComponentType | React.ComponentType[];
   knobs: KnobsConfig[];
 }

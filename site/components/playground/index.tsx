@@ -136,7 +136,7 @@ export const Playground: React.FC<
     return null;
   }
 
-  const {newskitPath, component} = props as PlaygroundProps;
+  const {component} = props as PlaygroundProps;
 
   const updateState = (prop: string) => (value: unknown) => {
     let newValue = value;
@@ -181,7 +181,6 @@ export const Playground: React.FC<
 
   const source = generateSource({
     componentName: selectedCompName,
-    newskitPath,
     state,
   });
 
