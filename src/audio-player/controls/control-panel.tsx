@@ -5,6 +5,8 @@ import {PlayerButton} from './play-pause';
 import {SkipPreviousButton, SkipNextButton} from './skip-track';
 import {Stack, StackDistribution, Flow} from '../../stack';
 import {StackChild} from '../../stack-child';
+import {StylePresetKeys, SizingKeys, useTheme} from '../../theme';
+import {getToken} from '../../utils/get-token';
 
 export interface TrackControlProps {
   onNextTrack?: () => void;
@@ -13,14 +15,27 @@ export interface TrackControlProps {
   disablePreviousTrack?: boolean;
 }
 
-export type ControlPresets = {
-  previous: string;
-  replay: string;
-  play: string;
-  forward: string;
-  next: string;
-  popout: string;
-};
+export interface ControlsOverrideProps {
+  space?: SizingKeys;
+  previousButton?: {
+    stylePreset?: StylePresetKeys;
+  };
+  replayButton?: {
+    stylePreset?: StylePresetKeys;
+  };
+  playPauseButton?: {
+    stylePreset?: StylePresetKeys;
+  };
+  forwardButton?: {
+    stylePreset?: StylePresetKeys;
+  };
+  nextButton?: {
+    stylePreset?: StylePresetKeys;
+  };
+  popoutButton?: {
+    stylePreset?: StylePresetKeys;
+  };
+}
 
 export interface ControlPanelProps extends TrackControlProps {
   showControls: boolean;
@@ -30,7 +45,7 @@ export interface ControlPanelProps extends TrackControlProps {
   togglePlay: () => void;
   onClickBackward?: () => void;
   onClickForward?: () => void;
-  controlPresets: ControlPresets;
+  overrides?: Omit<ControlsOverrideProps, 'popoutButton'>;
 }
 
 export const ButtonsContainer = styled(Stack)`
@@ -50,7 +65,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
     onClickBackward,
     onClickForward,
     togglePlay,
-    controlPresets: {previous, replay, play, forward, next},
+    overrides,
   }) => (
     <Stack
       flow={Flow.HorizontalCenter}
@@ -59,7 +74,12 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
     >
       <ButtonsContainer
         flow={Flow.HorizontalCenter}
-        spaceInline="sizing030"
+        spaceInline={getToken(
+          {theme: useTheme(), overrides},
+          'audioPlayer.controls',
+          '',
+          'space',
+        )}
         stackDistribution={
           live ? StackDistribution.Center : StackDistribution.Start
         }
@@ -69,18 +89,24 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
             canPause={showControls}
             isPlaying={isPlaying}
             onClick={togglePlay}
-            stylePreset={play}
+            overrides={overrides && overrides.playPauseButton}
             isLoading={isLoading}
           />
         </StackChild>
         <StackChild order={2}>
           {showControls && onClickBackward && (
-            <BackwardButton onClick={onClickBackward} stylePreset={replay} />
+            <BackwardButton
+              onClick={onClickBackward}
+              overrides={overrides && overrides.replayButton}
+            />
           )}
         </StackChild>
         <StackChild order={3}>
           {showControls && onClickForward && (
-            <ForwardButton onClick={onClickForward} stylePreset={forward} />
+            <ForwardButton
+              onClick={onClickForward}
+              overrides={overrides && overrides.forwardButton}
+            />
           )}
         </StackChild>
 
@@ -89,7 +115,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
             <SkipPreviousButton
               onClick={onPreviousTrack}
               disabled={disablePreviousTrack}
-              stylePreset={previous}
+              overrides={overrides && overrides.previousButton}
             />
           )}
         </StackChild>
@@ -99,7 +125,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
             <SkipNextButton
               onClick={onNextTrack}
               disabled={disableNextTrack}
-              stylePreset={next}
+              overrides={overrides && overrides.nextButton}
             />
           )}
         </StackChild>

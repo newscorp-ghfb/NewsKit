@@ -3,6 +3,7 @@ import {fireEvent, act} from '@testing-library/react';
 import {renderWithTheme, renderWithImplementation} from '../../test/test-utils';
 import {AudioPlayer} from '../audio-player';
 import {AudioPlayerProps} from '../types';
+import {createTheme} from '../../theme';
 
 const version = '0.10.0';
 
@@ -350,6 +351,184 @@ describe('Audio Player', () => {
     resetAndReRender({src: 'newtrack-4', autoPlay: true});
     expect(audioElement.play).not.toHaveBeenCalled();
     expect(audioElement.pause).not.toHaveBeenCalled();
+  });
+
+  test('recorded player renders with overrides', () => {
+    const myCustomTheme = createTheme({
+      name: 'my-custom-audio-player-theme',
+      overrides: {
+        stylePresets: {
+          customAudioPlayPauseButton: {
+            base: {
+              backgroundColor: 'transparent',
+              borderRadius: '50%',
+              iconColor: '#fff',
+              borderWidth: '2px',
+              borderStyle: 'solid',
+              borderColor: '#243c46',
+            },
+            hover: {
+              backgroundColor: '#243c46',
+              borderStyle: 'none',
+            },
+            active: {
+              backgroundColor: '#818f94',
+              borderStyle: 'none',
+            },
+          },
+          customAudioForwardButton: {
+            base: {
+              backgroundColor: 'transparent',
+              iconColor: '#fff',
+            },
+          },
+          customAudioPlayerReplayButton: {
+            base: {
+              backgroundColor: 'transparent',
+              iconColor: '#fff',
+            },
+          },
+          customAudioNextButton: {
+            base: {
+              backgroundColor: 'transparent',
+              iconColor: '#fff',
+            },
+          },
+          customAudioPlayerPreviousButton: {
+            base: {
+              backgroundColor: 'transparent',
+            },
+            active: {
+              color: 'white',
+              iconColor: 'white',
+            },
+            disabled: {
+              iconColor: '#9EA9AC',
+            },
+          },
+          customAudioPopoutButton: {
+            base: {
+              backgroundColor: 'transparent',
+              iconColor: '#fff',
+            },
+          },
+          customAudioPlayerThumb: {
+            base: {
+              backgroundColor: '#f6807e',
+              borderRadius: '50%',
+            },
+          },
+          customAudioPlayerSeekBarTrack: {
+            base: {
+              backgroundColor: '#243c46',
+            },
+          },
+          customAudioPlayerSeekBarIndicator: {
+            base: {
+              backgroundColor: '#0c2731',
+            },
+          },
+          customAudioPlayerLabels: {
+            base: {
+              backgroundColor: 'transparent',
+              iconColor: '#fff',
+              color: '#fff',
+            },
+          },
+          customAudioPlayerSeekBarBuffering: {
+            base: {
+              backgroundColor: 'rgb(51, 51, 51)',
+            },
+          },
+          customVolumeControlButton: {
+            base: {
+              backgroundColor: 'transparent',
+              iconColor: '#fff',
+            },
+          },
+        },
+      },
+    });
+
+    const {asFragment} = renderWithTheme(
+      AudioPlayer,
+      {
+        ...recordedAudioProps,
+        overrides: {
+          seekBar: {
+            slider: {
+              track: {
+                stylePreset: 'customAudioPlayerSeekBarTrack',
+                size: 'sizing030',
+              },
+              indicator: {
+                stylePreset: 'customAudioPlayerSeekBarIndicator',
+              },
+              thumb: {
+                stylePreset: 'customAudioPlayerThumb',
+                size: 'sizing050',
+              },
+              thumbLabel: {
+                stylePreset: 'customAudioPlayerLabels',
+              },
+              labels: {
+                stylePreset: 'customAudioPlayerLabels',
+              },
+            },
+            buffering: {
+              stylePreset: 'customAudioPlayerSeekBarBuffering',
+            },
+          },
+          controls: {
+            space: 'sizing040',
+            previousButton: {
+              stylePreset: 'customAudioPlayerPreviousButton',
+            },
+            replayButton: {
+              stylePreset: 'customAudioPlayerReplayButton',
+            },
+            playPauseButton: {
+              stylePreset: 'customAudioPlayPauseButton',
+            },
+            forwardButton: {
+              stylePreset: 'customAudioForwardButton',
+            },
+            nextButton: {
+              stylePreset: 'customAudioNextButton',
+            },
+            popoutButton: {
+              stylePreset: 'customAudioPopoutButton',
+            },
+          },
+          volumeControl: {
+            slider: {
+              track: {
+                stylePreset: 'customAudioPlayerSeekBarTrack',
+                size: 'sizing010',
+              },
+              indicator: {
+                stylePreset: 'customAudioPlayerSeekBarIndicator',
+              },
+              thumb: {
+                stylePreset: 'customAudioPlayerThumb',
+                size: 'sizing040',
+              },
+              thumbLabel: {
+                stylePreset: 'customAudioPlayerLabels',
+              },
+              labels: {
+                stylePreset: 'customAudioPlayerLabels',
+              },
+            },
+            button: {
+              stylePreset: 'customVolumeControlButton',
+            },
+          },
+        },
+      },
+      myCustomTheme,
+    );
+    expect(asFragment()).toMatchSnapshot();
   });
 
   describe('Instrumentation tests should', () => {

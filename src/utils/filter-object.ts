@@ -28,4 +28,4 @@ export const rejectObject = <T>(
     : target;
 
 export const filterOutFalsyProperties = <T>(target: T) =>
-  filter(target, entry => !!entry[entry.length - 1]);
+  target ? filter(target, entry => !!entry[entry.length - 1]) : {};

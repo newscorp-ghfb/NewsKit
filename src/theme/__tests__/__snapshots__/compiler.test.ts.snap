@@ -157,6 +157,74 @@ Object {
   },
   "compiled": true,
   "componentDefaults": Object {
+    "audioPlayer": Object {
+      "controls": Object {
+        "forwardButton": Object {
+          "stylePreset": "audioPlayerControlButton",
+        },
+        "nextButton": Object {
+          "stylePreset": "audioPlayerControlButton",
+        },
+        "playPauseButton": Object {
+          "stylePreset": "audioPlayerPlayPauseButton",
+        },
+        "popoutButton": Object {
+          "stylePreset": "audioPlayerControlButton",
+        },
+        "previousButton": Object {
+          "stylePreset": "audioPlayerControlButton",
+        },
+        "replayButton": Object {
+          "stylePreset": "audioPlayerControlButton",
+        },
+        "space": "sizing030",
+      },
+      "seekBar": Object {
+        "buffering": Object {
+          "stylePreset": "audioPlayerSeekBarBuffering",
+        },
+        "slider": Object {
+          "indicator": Object {
+            "stylePreset": "audioPlayerSeekBarIndicator",
+          },
+          "labels": Object {
+            "stylePreset": "audioPlayerLabels",
+          },
+          "thumb": Object {
+            "size": "sizing040",
+            "stylePreset": "audioPlayerThumb",
+          },
+          "thumbLabel": Object {
+            "stylePreset": "audioPlayerLabels",
+          },
+          "track": Object {
+            "size": "sizing020",
+            "stylePreset": "audioPlayerSeekBarTrack",
+          },
+        },
+      },
+      "volumeControl": Object {
+        "slider": Object {
+          "indicator": Object {
+            "stylePreset": "volumeControlIndicator",
+          },
+          "labels": Object {
+            "stylePreset": "volumeControlButtons",
+          },
+          "thumb": Object {
+            "size": "sizing040",
+            "stylePreset": "volumeControlThumb",
+          },
+          "thumbLabel": Object {
+            "stylePreset": "volumeControlLabels",
+          },
+          "track": Object {
+            "size": "sizing010",
+            "stylePreset": "volumeControlTrack",
+          },
+        },
+      },
+    },
     "button": Object {
       "large": Object {
         "iconSize": "iconSize030",

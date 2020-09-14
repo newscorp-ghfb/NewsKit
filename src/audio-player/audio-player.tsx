@@ -28,6 +28,8 @@ import {AudioPlayerProps} from './types';
 import {useAudioFunctions} from './audio-functions';
 import {StackChild} from '../stack-child';
 import {ScreenReaderOnly} from '../screen-reader-only/screen-reader-only';
+import {getToken} from '../utils/get-token';
+import {filterOutFalsyProperties} from '../utils/filter-object';
 
 export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   const {
@@ -36,9 +38,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     onPreviousTrack,
     disablePreviousTrack = !onPreviousTrack,
     popoutHref,
-    volumePresets,
-    trackPresets,
-    controlPresets,
+    overrides = {},
     src,
     ariaLandmark = 'audio player',
     autoPlay,
@@ -49,32 +49,21 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     ...restProps
   } = props;
 
-  const volumePresetObj: Required<AudioPlayerProps['volumePresets']> = {
-    sliderIndicatorTrackStylePreset: 'volumeControlIndicator',
-    sliderThumbStylePreset: 'volumeControlThumb',
-    sliderLabelsStylePreset: 'volumeControlButtons',
-    sliderThumbLabelStylePreset: 'volumeControlLabels',
-    sliderTrackStylePreset: 'volumeControlTrack',
-    ...volumePresets,
-  };
-  const trackPresetObj: Required<AudioPlayerProps['trackPresets']> = {
-    sliderIndicatorTrackStylePreset: 'audioPlayerSeekBarIndicator',
-    sliderThumbStylePreset: 'audioPlayerThumb',
-    sliderLabelsStylePreset: 'audioPlayerLabels',
-    sliderThumbLabelStylePreset: 'audioPlayerLabels',
-    sliderTrackStylePreset: 'audioPlayerSeekBarTrack',
-    bufferingStylePreset: 'audioPlayerSeekBarBuffering',
-    ...trackPresets,
-  };
-  const controlPresetObj: Required<AudioPlayerProps['controlPresets']> = {
-    previous: 'audioPlayerControlButton',
-    replay: 'audioPlayerControlButton',
-    play: 'audioPlayerPlayPauseButton',
-    forward: 'audioPlayerControlButton',
-    next: 'audioPlayerControlButton',
-    popout: 'audioPlayerControlButton',
-    ...controlPresets,
-  };
+  const {
+    seekBar: {slider: seekBarSliderOverrides} = {},
+    controls: {
+      popoutButton: popoutButtonOverrides,
+      ...controlButtonsOverrides
+    } = {},
+    volumeControl: volumeControlOverrides,
+  } = overrides;
+
+  const theme = useTheme();
+  const {
+    seekBar: {slider: seekBarSliderDefaults},
+    controls: {popoutButton: popoutButtonDefaults, ...controlButtonsDefaults},
+    volumeControl: volumeControlDefaults,
+  } = theme.componentDefaults.audioPlayer;
 
   const [volume, setVolume] = useState(0);
   const [duration, setDuration] = useState(0);
@@ -151,27 +140,45 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     onPlay();
   };
 
-  const theme = useTheme();
   const renderTrack: SliderProps['renderTrack'] = useCallback(
     ({props: trackProps, children: trackChildren, isDragged}) => {
+      const sliderTrackStylePreset = getToken(
+        {theme, overrides},
+        'audioPlayer.seekBar.slider.track',
+        'seekBar.slider.track',
+        'stylePreset',
+      );
+      const sliderIndicatorTrackStylePreset = getToken(
+        {theme, overrides},
+        'audioPlayer.seekBar.slider.indicator',
+        'seekBar.slider.indicator',
+        'stylePreset',
+      );
+      const bufferingStylePreset = getToken(
+        {theme, overrides},
+        'audioPlayer.seekBar.buffering',
+        'seekBar.buffering',
+        'stylePreset',
+      );
+
       const {values, colors} = formatTrackData(
         getSingleStylePreset(
           theme,
           'base',
           'backgroundColor',
-          trackPresetObj.sliderTrackStylePreset,
+          sliderTrackStylePreset,
         ),
         getSingleStylePreset(
           theme,
           'base',
           'backgroundColor',
-          trackPresetObj.sliderIndicatorTrackStylePreset,
+          sliderIndicatorTrackStylePreset,
         ),
         getSingleStylePreset(
           theme,
           'base',
           'backgroundColor',
-          trackPresetObj.bufferingStylePreset,
+          bufferingStylePreset,
         ),
         trackPositionArr,
         buffered,
@@ -197,14 +204,8 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
           }}
           data-testid="audio-slider-track"
           overrides={{
-            track: {
-              stylePreset: trackPresetObj.sliderTrackStylePreset,
-              size: 'sizing020',
-            },
-            thumb: {
-              stylePreset: trackPresetObj.sliderThumbStylePreset,
-              size: 'sizing040',
-            },
+            ...seekBarSliderDefaults,
+            ...filterOutFalsyProperties(seekBarSliderOverrides),
           }}
         >
           {trackChildren}
@@ -214,12 +215,11 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     [
       buffered,
       duration,
+      overrides,
+      seekBarSliderDefaults,
+      seekBarSliderOverrides,
       theme,
       trackPositionArr,
-      trackPresetObj.bufferingStylePreset,
-      trackPresetObj.sliderIndicatorTrackStylePreset,
-      trackPresetObj.sliderThumbStylePreset,
-      trackPresetObj.sliderTrackStylePreset,
     ],
   );
 
@@ -277,7 +277,10 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
                 onClickBackward={onClickBackward}
                 onClickForward={onClickForward}
                 togglePlay={togglePlay}
-                controlPresets={controlPresetObj}
+                overrides={{
+                  ...controlButtonsDefaults,
+                  ...filterOutFalsyProperties(controlButtonsOverrides),
+                }}
               />
             </StackChild>
             <StackChild order={1}>
@@ -291,27 +294,8 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
                   volume={volume}
                   onChange={onChangeVolumeSlider}
                   overrides={{
-                    slider: {
-                      track: {
-                        stylePreset: volumePresetObj.sliderTrackStylePreset,
-                        size: 'sizing010',
-                      },
-                      indicator: {
-                        stylePreset:
-                          volumePresetObj.sliderIndicatorTrackStylePreset,
-                      },
-                      thumb: {
-                        stylePreset: volumePresetObj.sliderThumbStylePreset,
-                        size: 'sizing040',
-                      },
-                      labels: {
-                        stylePreset: volumePresetObj.sliderLabelsStylePreset,
-                      },
-                      thumbLabel: {
-                        stylePreset:
-                          volumePresetObj.sliderThumbLabelStylePreset,
-                      },
-                    },
+                    ...volumeControlDefaults,
+                    ...filterOutFalsyProperties(volumeControlOverrides),
                   }}
                 />
               </ControlContainer>
@@ -331,7 +315,10 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
                     <PopoutButton
                       onClick={onPopoutClick}
                       href={popoutHref}
-                      stylePreset={controlPresetObj.popout}
+                      overrides={{
+                        ...popoutButtonDefaults,
+                        ...filterOutFalsyProperties(popoutButtonOverrides),
+                      }}
                     />
                   )}
                 </Stack>
@@ -359,23 +346,8 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
               dataTestId="audio-slider"
               ariaDescribedBy={srOnlyForwardRewind}
               overrides={{
-                track: {
-                  stylePreset: trackPresetObj.sliderTrackStylePreset,
-                  size: 'sizing020',
-                },
-                indicator: {
-                  stylePreset: trackPresetObj.sliderIndicatorTrackStylePreset,
-                },
-                thumb: {
-                  stylePreset: trackPresetObj.sliderThumbStylePreset,
-                  size: 'sizing040',
-                },
-                thumbLabel: {
-                  stylePreset: trackPresetObj.sliderThumbStylePreset,
-                },
-                labels: {
-                  stylePreset: trackPresetObj.sliderLabelsStylePreset,
-                },
+                ...seekBarSliderDefaults,
+                ...filterOutFalsyProperties(seekBarSliderOverrides),
               }}
             />
             <ScreenReaderOnly id={srOnlyForwardRewind}>

@@ -1,6 +1,7 @@
 import Layout from '../../components/layout';
 import Playground from '../../components/playground';
 import Prop from '../../components/prop';
+import {CodeFromDefaultPresets} from '../../components/code';
 
 import {AudioPlayer, UnorderedList, Circle, Block} from 'newskit';
 
@@ -47,15 +48,11 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       automatically if it's acceptable from a usability perspective
     </div>
   </Prop>
-  <Prop name="tags" type="Array<string>">
-    List of tags to describe the current show, e.g. comedy, politics
-  </Prop>
   <Prop name="captionSrc" type="string">
     Source for audio transcription generally provided in{' '}
     <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API">
       web vtt format
-    </a>
-    .
+    </a>.
   </Prop>
   <Prop name="onPreviousTrack" type="function">
     This function defines the callback of the previous track button
@@ -77,51 +74,64 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
   <Prop name="popoutHref" type="string">
     Url to player hosted by itself on page. Will open in a new window and pause current instance.
   </Prop>
-  <Prop name="volumePresets" type="Object<SliderStylePresets>">
-    <div>
-      This prop is an object containing all the following volume slider style
-      presets. For more details please see the slider prop documentation &nbsp;
-      <a href="/components/slider">here</a>. The default style presets can be changed via
-      the theme.
-    </div>
-    <ul>
-      <li>sliderIndicatorTrackStylePreset</li>
-      <li>sliderThumbStylePreset</li>
-      <li>sliderTrackStylePreset</li>
-      <li>sliderLabelsStylePreset</li>
-    </ul>
-  </Prop>
-  <Prop name="trackPresets" type="Object<SliderStylePresets>">
-    This prop is for the audio track slider, it has the same keys as
-    volumePresets, plus "bufferingStylePreset" to allow overriding of the
-    buffering colour. If in live mode, the track slider is not shown and so
-    these presets are ignored. The default style presets can be changed via the
-    theme.
-  </Prop>
-  <Prop name="controlPresets" type="Object<ControlPresets>">
-    <div>
-      This prop is an object containing the following optional button style
-      presets. The two default style presets for the play button and the rest of
-      the buttons can be changed via the theme, but more granuality is only
-      currently possible via these props.
-    </div>
-    <ul>
-      <li>
-        previous: preset for previous track button, defaults to
-        iconButtonMinimalPrimary
-      </li>
-      <li>
-        replay: preset for skip replay button, defaults to iconButtonMinimalPrimary
-      </li>
-      <li>play: preset for play / pause button, defaults to iconButtonSolidPrimary</li>
-      <li>
-        forward: preset for skip forward button, defaults to
-        iconButtonMinimalPrimary
-      </li>
-      <li>
-        next: preset for next track button, defaults to iconButtonMinimalPrimary
-      </li>
-    </ul>
+    <Prop name="overrides" type="object">
+    <Prop name="seekBar" type="object">
+        If provided overrides the seek Bar, If in live mode, the track slider is not shown and so
+        these presets are ignored.
+      <Prop name="slider" type="SliderOverrideProps">
+        If provided overrides the styles of the slider that builds the VolumeControl.
+        The slider overrides structure can be found in the <a href="./slider">slider documentation page</a>.
+      </Prop>
+      <Prop name="buffering" type="object">
+        <Prop name="stylePreset" type="string" default="volumeControlButtons">
+          Overrides the stylePreset of the min (mute) and max control buttons.
+        </Prop>
+      </Prop>
+    </Prop>
+    <Prop name="controls" type="ControlsOverrideProps">
+      <div>
+        This prop is an object containing the following optional button style
+        presets.
+      </div>
+      <Prop name="space" type="string" default="SizingKeys">
+        Setting the space between the control buttons.
+      </Prop>
+      <Prop name="previousButton" type="object" >
+        <Prop name="stylePreset" type="StylePresetKeys" >
+          Preset for previous track button.
+        </Prop>
+      </Prop>
+      <Prop name="replayButton" type="object" >
+        <Prop name="stylePreset" type="StylePresetKeys">
+          Preset for skip replay button.
+        </Prop>
+      </Prop>
+      <Prop name="playPauseButton" type="object" >
+        <Prop name="stylePreset" type="StylePresetKeys" >
+          Preset for play / pause button.
+        </Prop>
+      </Prop>
+      <Prop name="forwardButton" type="object" >
+        <Prop name="stylePreset" type="StylePresetKeys" >
+          Preset for skip forward button.
+        </Prop>
+      </Prop>
+      <Prop name="nextButton" type="object" >
+        <Prop name="stylePreset" type="StylePresetKeys" >
+          Preset for next track button.
+        </Prop>
+      </Prop>
+      <Prop name="popoutButton" type="object" >
+        <Prop name="stylePreset" type="StylePresetKeys" >
+          Preset for popout button.
+        </Prop>
+      </Prop>
+    </Prop>
+    <Prop name="volumeControl" type="VolumeControlOverrideProps">
+      If provided overrides the styles of the slider that builds the VolumeControl.
+      The volume control overrides structure can be found in the <a href="./volume-control">volume control documentation page</a>.
+   </Prop>
+   <CodeFromDefaultPresets componentName="audioPlayer" />
   </Prop>
   <Prop name="ariaLandmark" type="string" default="audio-player">
     The aria-label attribute for the audio player. It is recommended that you set this

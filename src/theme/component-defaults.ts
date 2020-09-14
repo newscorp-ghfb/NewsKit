@@ -1,4 +1,72 @@
 export const componentDefaults = {
+  audioPlayer: {
+    seekBar: {
+      slider: {
+        track: {
+          stylePreset: 'audioPlayerSeekBarTrack',
+          size: 'sizing020',
+        },
+        indicator: {
+          stylePreset: 'audioPlayerSeekBarIndicator',
+        },
+        thumb: {
+          stylePreset: 'audioPlayerThumb',
+          size: 'sizing040',
+        },
+        thumbLabel: {
+          stylePreset: 'audioPlayerLabels',
+        },
+        labels: {
+          stylePreset: 'audioPlayerLabels',
+        },
+      },
+      buffering: {
+        stylePreset: 'audioPlayerSeekBarBuffering',
+      },
+    },
+    controls: {
+      space: 'sizing030',
+      previousButton: {
+        stylePreset: 'audioPlayerControlButton',
+      },
+      replayButton: {
+        stylePreset: 'audioPlayerControlButton',
+      },
+      playPauseButton: {
+        stylePreset: 'audioPlayerPlayPauseButton',
+      },
+      forwardButton: {
+        stylePreset: 'audioPlayerControlButton',
+      },
+      nextButton: {
+        stylePreset: 'audioPlayerControlButton',
+      },
+      popoutButton: {
+        stylePreset: 'audioPlayerControlButton',
+      },
+    },
+    volumeControl: {
+      slider: {
+        track: {
+          stylePreset: 'volumeControlTrack',
+          size: 'sizing010',
+        },
+        indicator: {
+          stylePreset: 'volumeControlIndicator',
+        },
+        thumb: {
+          stylePreset: 'volumeControlThumb',
+          size: 'sizing040',
+        },
+        thumbLabel: {
+          stylePreset: 'volumeControlLabels',
+        },
+        labels: {
+          stylePreset: 'volumeControlButtons',
+        },
+      },
+    },
+  },
   byline: {
     stylePreset: 'byline',
     typographyPreset: 'meta020',

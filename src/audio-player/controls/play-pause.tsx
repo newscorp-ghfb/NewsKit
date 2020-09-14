@@ -1,6 +1,6 @@
 import React from 'react';
 import {IconButton} from '../../icon-button';
-import {ButtonSize} from '../../button/types';
+import {ButtonSize, ButtonProps} from '../../button/types';
 import {Play, Pause, Square} from '../../icons';
 
 export interface PlayerButtonProps {
@@ -8,11 +8,11 @@ export interface PlayerButtonProps {
   canPause: boolean;
   onClick: () => void;
   isLoading: boolean;
-  stylePreset?: string;
+  overrides?: ButtonProps['overrides'];
 }
 
 export const PlayerButton: React.FC<PlayerButtonProps> = React.memo(
-  ({isPlaying, canPause, stylePreset, ...props}) => {
+  ({isPlaying, canPause, ...props}) => {
     const notPlaying = canPause ? (
       <Pause focusable="false" title="Pause" />
     ) : (
@@ -23,7 +23,6 @@ export const PlayerButton: React.FC<PlayerButtonProps> = React.memo(
         data-testid="audio-player-play-button"
         aria-pressed={isPlaying ? 'true' : 'false'}
         size={ButtonSize.Large}
-        overrides={{stylePreset}}
         {...props}
       >
         {isPlaying ? notPlaying : <Play focusable="false" title="Play" />}

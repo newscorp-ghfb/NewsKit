@@ -1,25 +1,23 @@
-import {TrackControlProps, ControlPresets} from './controls';
-
-// TODO: delete this interface when aligning the audio-player with defaults and overrides
-interface SliderPresetOverrides {
-  sliderIndicatorTrackStylePreset?: string;
-  sliderThumbStylePreset?: string;
-  sliderLabelsStylePreset?: string;
-  sliderThumbLabelStylePreset?: string;
-  sliderTrackStylePreset?: string;
-}
+import {TrackControlProps, ControlsOverrideProps} from './controls';
+import {SliderOverrideProps} from '../slider';
+import {VolumeControlOverrideProps} from '../volume-control';
+import {StylePresetKeys} from '../theme';
 
 export interface AudioPlayerProps
-  extends React.AudioHTMLAttributes<HTMLAudioElement>,
+  extends Omit<React.AudioHTMLAttributes<HTMLAudioElement>, 'controls'>,
     TrackControlProps {
   captionSrc?: string;
   popoutHref?: string;
-  volumePresets?: SliderPresetOverrides;
-  trackPresets?: SliderPresetOverrides & {
-    bufferingStylePreset?: string;
-  };
-  controlPresets?: Partial<ControlPresets>;
   live?: boolean;
-  time?: string;
   ariaLandmark?: string;
+  overrides?: {
+    seekBar?: {
+      slider?: SliderOverrideProps;
+      buffering?: {
+        stylePreset?: StylePresetKeys;
+      };
+    };
+    controls?: ControlsOverrideProps;
+    volumeControl?: VolumeControlOverrideProps;
+  };
 }

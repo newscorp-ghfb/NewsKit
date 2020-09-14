@@ -1,22 +1,21 @@
 import React from 'react';
 import {Popout} from '../../icons';
-import {ButtonSize} from '../../button';
+import {ButtonSize, ButtonProps} from '../../button';
 import {IconButton} from '../../icon-button';
 
 export interface PopoutButtonProps {
   onClick?: (props: PopoutButtonProps) => void;
   href?: string;
-  stylePreset?: string;
+  overrides?: ButtonProps['overrides'];
 }
 
 export const PopoutButton: React.FC<PopoutButtonProps> = React.memo(props => {
-  const {href, stylePreset, onClick} = props;
+  const {href, onClick} = props;
   return (
     <IconButton
       {...props}
       size={ButtonSize.Medium}
       data-testid="audio-player-popout"
-      overrides={{stylePreset}}
       onClick={
         href || onClick
           ? () => {
