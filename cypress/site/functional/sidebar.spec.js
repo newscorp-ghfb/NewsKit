@@ -5,15 +5,9 @@ describe('Documentation Site - sidebar component', () => {
     cy.visit('/');
   });
 
-  // TODO: Need to remove color-contrast as a rule here once PPDSC-785 ticket is fixed
-  // TODO: Re-enable; this was passing locally (passed WAVE too) but failing on circle.
-  it.skip('should pass basic a11y test', () => {
+  it('should pass basic a11y test', () => {
     cy.injectAxe();
-    cy.checkA11y({
-      rules: {
-        'color-contrast': {enabled: false},
-      },
-    });
+    cy.checkA11y();
   });
 
   it('should contain the correct links', () => {
