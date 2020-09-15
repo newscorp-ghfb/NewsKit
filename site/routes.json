@@ -173,6 +173,11 @@
         "id": "/components/link"
       },
       {
+        "title": "Optimizely Web",
+        "page": true,
+        "id": "/components/optimizely-web"
+      },
+      {
         "title": "Ordered List",
         "page": true,
         "id": "/components/ordered-list"

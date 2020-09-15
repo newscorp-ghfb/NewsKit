@@ -16,6 +16,7 @@ export * from './image';
 export * from './instrumentation';
 export * from './link';
 export * from './list';
+export * from './optimizely-web';
 export * from './radio-player';
 export * from './screen-reader-only';
 export * from './scroll';
