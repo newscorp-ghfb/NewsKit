@@ -104,6 +104,7 @@ export const Stack: React.FC<StackProps> = ({
   list,
   ariaLabel,
   children,
+  role,
   ...props
 }) => {
   const theme = useTheme();
@@ -124,6 +125,7 @@ export const Stack: React.FC<StackProps> = ({
       stackDistribution={stackDistribution}
       inline={inline}
       aria-label={ariaLabel}
+      role={role}
       {...props}
     >
       {children &&

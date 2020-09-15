@@ -2,7 +2,7 @@ import React from 'react';
 import {TabProps, TabSize} from './types';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {useTheme} from '../theme/emotion';
-import {StyledFlag} from './styled';
+import {StyledButton} from './styled';
 
 export const Tab: React.FC<TabProps> = ({
   children,
@@ -17,14 +17,15 @@ export const Tab: React.FC<TabProps> = ({
     ...filterOutFalsyProperties(overrides),
   };
   return (
-    <StyledFlag
+    <StyledButton
       data-testid="tab"
+      role="tab"
       aria-label={ariaLabel}
       {...props}
       overrides={tabSettings}
     >
       {children}
-    </StyledFlag>
+    </StyledButton>
   );
 };
 

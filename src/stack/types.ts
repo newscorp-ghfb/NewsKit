@@ -35,6 +35,7 @@ export interface StackProps extends Partial<CommonStackProps> {
   wrap?: boolean | 'wrap' | 'nowrap';
   list?: boolean;
   ariaLabel?: string;
+  role?: string;
 }
 
 export interface ChildProps

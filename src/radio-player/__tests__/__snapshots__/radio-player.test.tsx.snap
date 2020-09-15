@@ -2,17 +2,17 @@
 
 exports[`Radio Player default player 1`] = `
 <DocumentFragment>
-  .emotion-86 {
+  .emotion-80 {
   width: 100%;
 }
 
-.emotion-21 {
+.emotion-15 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.emotion-84 {
+.emotion-78 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -29,30 +29,30 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen {
-  .emotion-84 {
+  .emotion-78 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-84 {
+  .emotion-78 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-84 {
+  .emotion-78 {
     margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-84 {
+  .emotion-78 {
     margin: -0px 0px 0 0px;
   }
 }
 
-.emotion-23 {
+.emotion-17 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -61,7 +61,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen {
-  .emotion-23 {
+  .emotion-17 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -73,7 +73,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-23 {
+  .emotion-17 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -81,7 +81,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-23 {
+  .emotion-17 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -89,18 +89,18 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-23 {
+  .emotion-17 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-22 {
+.emotion-16 {
   margin-bottom: 24px;
 }
 
-.emotion-20 {
+.emotion-14 {
   box-sizing: border-box;
   background-clip: padding-box;
   display: -webkit-box;
@@ -116,30 +116,30 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen {
-  .emotion-20 {
+  .emotion-14 {
     margin: -16px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-20 {
+  .emotion-14 {
     margin: -16px 8px 0 8px;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-20 {
+  .emotion-14 {
     margin: -24px 12px 0 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-20 {
+  .emotion-14 {
     margin: -24px 12px 0 12px;
   }
 }
 
-.emotion-7 {
+.emotion-4 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -148,7 +148,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen {
-  .emotion-7 {
+  .emotion-4 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 8.333333333333334%;
@@ -160,7 +160,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-7 {
+  .emotion-4 {
     padding: 0 8px;
     margin-top: 16px;
     display: none;
@@ -168,7 +168,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-7 {
+  .emotion-4 {
     padding: 0 12px;
     margin-top: 24px;
     -webkit-flex-basis: 41.66666666666667%;
@@ -180,14 +180,14 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-7 {
+  .emotion-4 {
     padding: 0 12px;
     margin-top: 24px;
     display: block;
   }
 }
 
-.emotion-6 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -206,70 +206,12 @@ exports[`Radio Player default player 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-5 {
+.emotion-2 {
   max-width: 212px;
   max-height: 212px;
 }
 
-.emotion-4 {
-  position: relative;
-  width: 100%;
-  padding-top: 100%;
-  height: 0;
-}
-
-.emotion-2 {
-  top: 0;
-  left: 0;
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 48px;
-  height: 48px;
-}
-
-.emotion-3 {
-  display: none;
-  height: auto;
-  width: 100%;
-  -webkit-animation: fadeIn 300ms;
-  animation: fadeIn 300ms;
-  border-radius: inherit;
-}
-
-.emotion-9 {
+.emotion-6 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -278,7 +220,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen {
-  .emotion-9 {
+  .emotion-6 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 8.333333333333334%;
@@ -290,7 +232,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-9 {
+  .emotion-6 {
     padding: 0 8px;
     margin-top: 16px;
     display: none;
@@ -298,7 +240,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-9 {
+  .emotion-6 {
     padding: 0 12px;
     margin-top: 24px;
     -webkit-flex-basis: 58.333333333333336%;
@@ -310,14 +252,14 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-9 {
+  .emotion-6 {
     padding: 0 12px;
     margin-top: 24px;
     display: block;
   }
 }
 
-.emotion-8 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -336,7 +278,7 @@ exports[`Radio Player default player 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-17 {
+.emotion-11 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -345,7 +287,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen {
-  .emotion-17 {
+  .emotion-11 {
     padding: 0 8px;
     margin-top: 16px;
     -webkit-flex-basis: 100%;
@@ -357,7 +299,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-17 {
+  .emotion-11 {
     padding: 0 8px;
     margin-top: 16px;
     display: block;
@@ -365,7 +307,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-17 {
+  .emotion-11 {
     padding: 0 12px;
     margin-top: 24px;
     display: none;
@@ -373,14 +315,14 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-17 {
+  .emotion-11 {
     padding: 0 12px;
     margin-top: 24px;
     display: none;
   }
 }
 
-.emotion-16 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -399,7 +341,7 @@ exports[`Radio Player default player 1`] = `
   justify-content: center;
 }
 
-.emotion-18 {
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -418,7 +360,7 @@ exports[`Radio Player default player 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-75 {
+.emotion-69 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -427,7 +369,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen {
-  .emotion-75 {
+  .emotion-69 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -442,7 +384,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-75 {
+  .emotion-69 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -450,7 +392,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-75 {
+  .emotion-69 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -458,14 +400,14 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-75 {
+  .emotion-69 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-74 {
+.emotion-68 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -484,7 +426,7 @@ exports[`Radio Player default player 1`] = `
   justify-content: space-between;
 }
 
-.emotion-52 {
+.emotion-46 {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -494,7 +436,7 @@ exports[`Radio Player default player 1`] = `
   display: inline-flex;
 }
 
-.emotion-51 {
+.emotion-45 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -517,7 +459,7 @@ exports[`Radio Player default player 1`] = `
   justify-content: center;
 }
 
-.emotion-50 {
+.emotion-44 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -539,7 +481,7 @@ exports[`Radio Player default player 1`] = `
   min-width: 316px;
 }
 
-.emotion-29 {
+.emotion-23 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -551,7 +493,7 @@ exports[`Radio Player default player 1`] = `
   order: 3;
 }
 
-.emotion-28 {
+.emotion-22 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -563,7 +505,7 @@ exports[`Radio Player default player 1`] = `
   height: 64px;
 }
 
-.emotion-27 {
+.emotion-21 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -600,17 +542,17 @@ exports[`Radio Player default player 1`] = `
   cursor: progress;
 }
 
-.emotion-27 svg {
+.emotion-21 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-27 svg {
+.emotion-21 svg {
   fill: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-26 {
+.emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -631,7 +573,7 @@ exports[`Radio Player default player 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-25 {
+.emotion-19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -640,18 +582,18 @@ exports[`Radio Player default player 1`] = `
   margin-right: calc(8px/2);
 }
 
-.emotion-24 {
+.emotion-18 {
   fill: #2e2e2e;
   color: #2e2e2e;
   display: inline-block;
 }
 
-.emotion-24.emotion-24 {
+.emotion-18.emotion-18 {
   width: 32px;
   height: 32px;
 }
 
-.emotion-24 circle {
+.emotion-18 circle {
   r: calc(50% - 2px);
   fill: transparent;
   stroke: #0a68c1;
@@ -671,7 +613,7 @@ exports[`Radio Player default player 1`] = `
   animation: rotate 1s linear infinite;
 }
 
-.emotion-35 {
+.emotion-29 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -683,7 +625,7 @@ exports[`Radio Player default player 1`] = `
   order: 2;
 }
 
-.emotion-34 {
+.emotion-28 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -695,7 +637,7 @@ exports[`Radio Player default player 1`] = `
   height: 48px;
 }
 
-.emotion-33 {
+.emotion-27 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -732,41 +674,41 @@ exports[`Radio Player default player 1`] = `
   cursor: pointer;
 }
 
-.emotion-33 svg {
+.emotion-27 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-33 svg {
+.emotion-27 svg {
   fill: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-33:hover:not(:disabled) {
+.emotion-27:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-33:active:not(:disabled) {
+.emotion-27:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-33:disabled {
+.emotion-27:disabled {
   color: #9c9c9c;
   background-color: transparent;
 }
 
-.emotion-33:disabled svg {
+.emotion-27:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-30 {
+.emotion-24 {
   fill: #2e2e2e;
   color: #2e2e2e;
   display: inline-block;
 }
 
-.emotion-47 {
+.emotion-41 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -778,7 +720,7 @@ exports[`Radio Player default player 1`] = `
   order: 1;
 }
 
-.emotion-45 {
+.emotion-39 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -814,17 +756,17 @@ exports[`Radio Player default player 1`] = `
   transition-timing-function: cubic-bezier(0,0,.5,1);
 }
 
-.emotion-45 svg {
+.emotion-39 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-45 svg {
+.emotion-39 svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-49 {
+.emotion-43 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -836,7 +778,7 @@ exports[`Radio Player default player 1`] = `
   order: 5;
 }
 
-.emotion-48 {
+.emotion-42 {
   -webkit-order: 5;
   -ms-flex-order: 5;
   order: 5;
@@ -846,7 +788,7 @@ exports[`Radio Player default player 1`] = `
   display: inline-flex;
 }
 
-.emotion-70 {
+.emotion-64 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -856,49 +798,49 @@ exports[`Radio Player default player 1`] = `
   display: inline-flex;
 }
 
-.emotion-69 {
+.emotion-63 {
   box-sizing: border-box;
   width: calc( 184px + 24px );
   padding: 0 calc(24px / 2);
 }
 
 @media screen {
-  .emotion-69 {
+  .emotion-63 {
     display: none;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-69 {
+  .emotion-63 {
     display: none;
   }
 }
 
 @media screen and (min-width:960px) {
-  .emotion-69 {
+  .emotion-63 {
     display: block;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-69 {
+  .emotion-63 {
     display: block;
   }
 }
 
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-69 {
+  .emotion-63 {
     display: none;
   }
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-69 {
+  .emotion-63 {
     display: none;
   }
 }
 
-.emotion-67 {
+.emotion-61 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -923,7 +865,7 @@ exports[`Radio Player default player 1`] = `
   position: relative;
 }
 
-.emotion-58 {
+.emotion-52 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -935,7 +877,7 @@ exports[`Radio Player default player 1`] = `
   margin-right: 12px;
 }
 
-.emotion-58::before {
+.emotion-52::before {
   content: '';
   display: block;
   height: 0;
@@ -943,7 +885,7 @@ exports[`Radio Player default player 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-58::after {
+.emotion-52::after {
   content: '';
   display: block;
   height: 0;
@@ -951,7 +893,7 @@ exports[`Radio Player default player 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-57 {
+.emotion-51 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -963,7 +905,7 @@ exports[`Radio Player default player 1`] = `
   height: 32px;
 }
 
-.emotion-56 {
+.emotion-50 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1000,35 +942,35 @@ exports[`Radio Player default player 1`] = `
   cursor: pointer;
 }
 
-.emotion-56 svg {
+.emotion-50 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-56 svg {
+.emotion-50 svg {
   fill: #0a68c1;
   color: #0a68c1;
 }
 
-.emotion-56:hover:not(:disabled) {
+.emotion-50:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-56:active:not(:disabled) {
+.emotion-50:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-56:disabled {
+.emotion-50:disabled {
   color: #9c9c9c;
   background-color: transparent;
 }
 
-.emotion-56:disabled svg {
+.emotion-50:disabled svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-60 {
+.emotion-54 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1045,7 +987,7 @@ exports[`Radio Player default player 1`] = `
   width: 100%;
 }
 
-.emotion-59 {
+.emotion-53 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   background-color: #ffffff;
   border-style: solid;
@@ -1066,30 +1008,30 @@ exports[`Radio Player default player 1`] = `
   cursor: pointer;
 }
 
-.emotion-59 svg {
+.emotion-53 svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-59:hover:not(:disabled) {
+.emotion-53:hover:not(:disabled) {
   background-color: #ffffff;
 }
 
-.emotion-59:hover:not(:disabled) svg {
+.emotion-53:hover:not(:disabled) svg {
   fill: #9c9c9c;
   color: #9c9c9c;
 }
 
-.emotion-59:active:not(:disabled) {
+.emotion-53:active:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-59:active:not(:disabled) svg {
+.emotion-53:active:not(:disabled) svg {
   fill: #535353;
   color: #535353;
 }
 
-.emotion-66 {
+.emotion-60 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1101,7 +1043,7 @@ exports[`Radio Player default player 1`] = `
   margin-left: 12px;
 }
 
-.emotion-66::before {
+.emotion-60::before {
   content: '';
   display: block;
   height: 0;
@@ -1109,7 +1051,7 @@ exports[`Radio Player default player 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-66::after {
+.emotion-60::after {
   content: '';
   display: block;
   height: 0;
@@ -1117,7 +1059,7 @@ exports[`Radio Player default player 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-68 {
+.emotion-62 {
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
@@ -1129,7 +1071,7 @@ exports[`Radio Player default player 1`] = `
   width: 1px;
 }
 
-.emotion-73 {
+.emotion-67 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -1139,7 +1081,7 @@ exports[`Radio Player default player 1`] = `
   display: inline-flex;
 }
 
-.emotion-71 {
+.emotion-65 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1158,7 +1100,7 @@ exports[`Radio Player default player 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-83 {
+.emotion-77 {
   box-sizing: border-box;
   background-clip: padding-box;
   -webkit-flex: 1 0 auto;
@@ -1167,7 +1109,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen {
-  .emotion-83 {
+  .emotion-77 {
     padding: 0 0px;
     margin-top: 0px;
     -webkit-flex-basis: 100%;
@@ -1182,7 +1124,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .emotion-83 {
+  .emotion-77 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -1190,7 +1132,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-83 {
+  .emotion-77 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
@@ -1198,14 +1140,14 @@ exports[`Radio Player default player 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-83 {
+  .emotion-77 {
     padding: 0 0px;
     margin-top: 0px;
     display: block;
   }
 }
 
-.emotion-81 {
+.emotion-75 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1233,7 +1175,7 @@ exports[`Radio Player default player 1`] = `
   position: relative;
 }
 
-.emotion-77 {
+.emotion-71 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1250,13 +1192,13 @@ exports[`Radio Player default player 1`] = `
   width: 100%;
 }
 
-.emotion-80 {
+.emotion-74 {
   width: 100%;
   margin-top: 12px;
   padding: 0 calc(16px / 2);
 }
 
-.emotion-79 {
+.emotion-73 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1279,7 +1221,7 @@ exports[`Radio Player default player 1`] = `
   justify-content: space-between;
 }
 
-.emotion-78 {
+.emotion-72 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1291,7 +1233,7 @@ exports[`Radio Player default player 1`] = `
   color: #535353;
 }
 
-.emotion-78::before {
+.emotion-72::before {
   content: '';
   display: block;
   height: 0;
@@ -1299,7 +1241,7 @@ exports[`Radio Player default player 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-78::after {
+.emotion-72::after {
   content: '';
   display: block;
   height: 0;
@@ -1307,125 +1249,97 @@ exports[`Radio Player default player 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
+.emotion-1 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 0;
+}
+
+.emotion-0 {
+  display: block;
+  height: auto;
+  width: 100%;
+  -webkit-animation: fadeIn 300ms;
+  animation: fadeIn 300ms;
+  border-radius: inherit;
+}
+
 <section
     aria-label="audio player"
-    class="emotion-86"
+    class="emotion-80"
   >
     <div
-      class="emotion-21"
+      class="emotion-15"
     >
       <div
-        class="emotion-84"
+        class="emotion-78"
       >
         <audio
           data-testid="audio-element"
         />
         <div
-          class="emotion-23"
+          class="emotion-17"
         >
           <div
-            class="emotion-22"
+            class="emotion-16"
           >
             <div
-              class="emotion-21"
+              class="emotion-15"
             >
               <div
-                class="emotion-20"
+                class="emotion-14"
               >
                 <div
-                  class="emotion-7"
+                  class="emotion-4"
                 >
                   <div
-                    class="emotion-6"
+                    class="emotion-3"
                   >
                     <div
-                      class="emotion-5"
+                      class="emotion-2"
                     >
                       <div
-                        class="emotion-4"
+                        class="emotion-1"
                       >
-                        <div
-                          class="emotion-2"
-                        >
-                          <div
-                            class="emotion-1"
-                          >
-                            <svg
-                              aria-labelledby="mock-bui-1"
-                              class="emotion-0"
-                              viewBox="0 0 88 88"
-                            >
-                              <title
-                                id="mock-bui-1"
-                              >
-                                Placeholder
-                              </title>
-                              <path
-                                d="M 88 40 L 88 80 L 0 80 L 0 40 L 88 40 L 88 40 Z  M 47 48 L 43 48 L 43 72 L 47 72 L 47 48 L 47 48 Z  M 13 48 L 9 48 L 9 72 L 13 72 L 13 66 L 17 62 L 27 72 L 33 72 L 20 59 L 31 48 L 25 48 L 13 60 L 13 48 L 13 48 Z  M 79 48 L 59 48 L 59 52 L 67 52 L 67 72 L 71 72 L 71 52 L 79 52 L 79 48 L 79 48 Z M 78.402 19.096 C 78.668 19.136 78.935 19.234 79.179 19.355 C 79.77 19.644 80.06 20.151 79.99 20.702 C 79.902 21.371 79.378 21.978 78.751 22.04 C 78.377 22.076 77.994 21.987 77.614 21.959 C 76.942 21.91 76.267 21.791 75.602 21.832 C 74.663 21.891 74.199 22.465 74.325 23.431 C 74.399 23.995 74.575 24.612 74.894 25.058 C 75.747 26.26 76.691 27.394 77.621 28.534 C 78.318 29.387 78.49 30.103 78.116 30.855 C 77.676 31.741 76.923 32.098 75.87 31.977 C 73.709 31.724 71.547 31.48 69.383 31.259 C 67.983 31.115 67.619 30.373 68.414 29.167 C 68.594 28.893 68.849 28.659 69.099 28.446 C 69.419 28.173 69.712 28.172 70.133 28.39 C 70.741 28.704 71.432 28.894 72.108 29.003 C 72.952 29.143 73.818 29.151 74.673 29.206 C 74.812 29.215 74.953 29.17 75.21 29.137 C 74.588 28.338 73.999 27.661 73.502 26.92 C 72.951 26.103 72.366 25.274 72.008 24.362 C 71.319 22.61 71.971 20.861 73.571 19.951 C 75.075 19.097 76.704 18.837 78.402 19.096 Z  M 38.897 18.002 C 39.863 18.023 40.726 18.329 41.188 19.285 C 41.663 20.267 41.375 21.185 40.784 22.015 C 39.919 23.23 38.744 24.081 37.506 24.806 C 36.152 25.597 34.736 26.275 33.287 27.035 C 33.415 28.221 34.284 29.143 35.612 29.436 C 37.116 29.768 38.562 29.489 39.96 28.91 C 42.021 28.058 43.901 26.872 45.573 25.358 C 46.072 24.906 46.64 24.447 46.618 23.62 C 46.615 23.524 46.801 23.385 46.925 23.333 C 48.235 22.792 49.452 23.586 49.568 25.042 C 49.624 25.748 49.678 26.453 49.745 27.157 C 49.76 27.315 49.812 27.474 49.865 27.624 C 50.177 28.51 50.633 28.678 51.209 27.983 C 52.257 26.715 53.246 25.39 54.189 24.033 C 54.67 23.339 54.972 23.068 55.645 23.202 C 56.25 23.322 56.623 23.779 56.689 24.558 C 56.772 25.547 56.777 26.544 56.9 27.524 C 56.954 27.93 57.228 28.305 57.399 28.693 C 57.756 28.478 58.192 28.336 58.454 28.032 C 59.347 26.989 60.184 25.894 61.03 24.811 C 62.132 23.4 62.533 23.276 64.195 23.806 C 65.596 24.255 66.947 24.103 68.284 23.469 C 68.704 23.272 69.223 23.207 69.688 23.233 C 70.383 23.276 70.877 23.803 70.982 24.439 C 71.08 25.025 70.769 25.641 70.111 25.936 C 68.391 26.704 66.595 27.087 64.758 26.542 C 63.89 26.285 63.294 26.483 62.743 27.143 C 62.027 27.998 61.351 28.896 60.568 29.682 C 59.846 30.405 59.061 31.099 58.204 31.633 C 57.101 32.317 56.007 32.026 55.295 30.915 C 54.839 30.206 54.554 29.38 54.2 28.624 C 53.67 29.219 53.133 29.911 52.506 30.504 C 52.008 30.974 51.441 31.405 50.836 31.704 C 49.674 32.278 48.778 32.004 48.163 30.829 C 47.742 30.023 47.517 29.105 47.209 28.235 C 47.156 28.087 47.126 27.933 47.075 27.745 C 46.108 28.35 45.195 28.959 44.246 29.505 C 42.224 30.667 40.129 31.643 37.802 31.919 C 36.454 32.081 35.114 32.01 33.814 31.572 C 32.062 30.982 30.916 29.804 30.553 27.881 C 30.531 27.762 30.49 27.648 30.456 27.534 C 29.89 27.484 29.313 27.51 28.781 27.363 C 28.313 27.231 27.827 26.982 27.468 26.645 C 26.764 25.985 26.881 24.793 27.638 24.191 C 27.914 23.97 28.132 23.989 28.506 24.127 C 29.156 24.365 29.896 24.351 30.602 24.38 C 30.712 24.384 30.868 24.073 30.946 23.881 C 31.828 21.702 33.133 19.915 35.224 18.854 C 36.381 18.266 37.608 17.973 38.897 18.002 Z  M 33.875 8 C 35.123 8.639 35.317 9.319 34.535 10.516 C 34.192 11.04 33.79 11.53 33.376 12.004 C 30.968 14.755 29.131 17.885 27.446 21.093 C 25.844 24.146 24.402 27.281 22.916 30.395 C 22.329 31.626 20.985 31.969 19.946 31.055 C 19.742 30.874 19.574 30.528 19.576 30.26 C 19.596 28.475 18.924 26.825 18.63 25.107 C 18.235 22.785 18.004 20.435 17.708 18.154 C 17.721 18.137 17.625 18.234 17.566 18.351 C 15.818 21.718 14.065 25.083 12.337 28.462 C 11.976 29.169 11.683 29.906 11.739 30.753 C 11.756 31.009 11.487 31.386 11.242 31.533 C 10.851 31.77 10.376 31.978 9.928 31.996 C 8.105 32.064 7.526 31.196 8.4 29.615 C 9.811 27.062 11.346 24.577 12.759 22.025 C 13.866 20.023 14.911 17.985 15.893 15.921 C 16.279 15.109 16.452 14.191 16.661 13.309 C 16.741 12.979 16.832 12.771 17.186 12.78 C 17.682 12.795 18.185 12.77 18.669 12.858 C 19.572 13.021 20.028 13.543 20.094 14.47 C 20.223 16.312 20.343 18.157 20.431 20.003 C 20.541 22.303 21.037 24.525 21.752 26.841 C 21.882 26.613 21.97 26.485 22.034 26.344 C 24.55 20.861 27.446 15.581 30.647 10.463 C 31.253 9.495 31.878 8.536 32.955 8 L 33.875 8 L 33.875 8 Z  M 37.226 21.05 C 36.447 21.515 35.67 22.009 34.958 22.595 C 34.572 22.912 34.315 23.436 34 23.866 C 34.033 23.909 34.068 23.955 34.101 24 C 34.437 23.852 34.789 23.743 35.103 23.551 C 35.959 23.027 36.814 22.496 37.633 21.901 C 37.829 21.761 37.882 21.359 38 21.077 C 37.739 21.061 37.426 20.93 37.226 21.05 Z"
-                              />
-                            </svg>
-                          </div>
-                        </div>
                         <img
-                          class="emotion-3"
+                          class="emotion-0"
                         />
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="emotion-9"
+                  class="emotion-6"
                 >
                   <div
-                    class="emotion-8"
+                    class="emotion-5"
                   />
                 </div>
                 <div
-                  class="emotion-17"
+                  class="emotion-11"
                 >
                   <div
-                    class="emotion-16"
+                    class="emotion-10"
                   >
                     <div
-                      class="emotion-5"
+                      class="emotion-2"
                     >
                       <div
-                        class="emotion-4"
+                        class="emotion-1"
                       >
-                        <div
-                          class="emotion-2"
-                        >
-                          <div
-                            class="emotion-1"
-                          >
-                            <svg
-                              aria-labelledby="mock-bui-1"
-                              class="emotion-0"
-                              viewBox="0 0 88 88"
-                            >
-                              <title
-                                id="mock-bui-1"
-                              >
-                                Placeholder
-                              </title>
-                              <path
-                                d="M 88 40 L 88 80 L 0 80 L 0 40 L 88 40 L 88 40 Z  M 47 48 L 43 48 L 43 72 L 47 72 L 47 48 L 47 48 Z  M 13 48 L 9 48 L 9 72 L 13 72 L 13 66 L 17 62 L 27 72 L 33 72 L 20 59 L 31 48 L 25 48 L 13 60 L 13 48 L 13 48 Z  M 79 48 L 59 48 L 59 52 L 67 52 L 67 72 L 71 72 L 71 52 L 79 52 L 79 48 L 79 48 Z M 78.402 19.096 C 78.668 19.136 78.935 19.234 79.179 19.355 C 79.77 19.644 80.06 20.151 79.99 20.702 C 79.902 21.371 79.378 21.978 78.751 22.04 C 78.377 22.076 77.994 21.987 77.614 21.959 C 76.942 21.91 76.267 21.791 75.602 21.832 C 74.663 21.891 74.199 22.465 74.325 23.431 C 74.399 23.995 74.575 24.612 74.894 25.058 C 75.747 26.26 76.691 27.394 77.621 28.534 C 78.318 29.387 78.49 30.103 78.116 30.855 C 77.676 31.741 76.923 32.098 75.87 31.977 C 73.709 31.724 71.547 31.48 69.383 31.259 C 67.983 31.115 67.619 30.373 68.414 29.167 C 68.594 28.893 68.849 28.659 69.099 28.446 C 69.419 28.173 69.712 28.172 70.133 28.39 C 70.741 28.704 71.432 28.894 72.108 29.003 C 72.952 29.143 73.818 29.151 74.673 29.206 C 74.812 29.215 74.953 29.17 75.21 29.137 C 74.588 28.338 73.999 27.661 73.502 26.92 C 72.951 26.103 72.366 25.274 72.008 24.362 C 71.319 22.61 71.971 20.861 73.571 19.951 C 75.075 19.097 76.704 18.837 78.402 19.096 Z  M 38.897 18.002 C 39.863 18.023 40.726 18.329 41.188 19.285 C 41.663 20.267 41.375 21.185 40.784 22.015 C 39.919 23.23 38.744 24.081 37.506 24.806 C 36.152 25.597 34.736 26.275 33.287 27.035 C 33.415 28.221 34.284 29.143 35.612 29.436 C 37.116 29.768 38.562 29.489 39.96 28.91 C 42.021 28.058 43.901 26.872 45.573 25.358 C 46.072 24.906 46.64 24.447 46.618 23.62 C 46.615 23.524 46.801 23.385 46.925 23.333 C 48.235 22.792 49.452 23.586 49.568 25.042 C 49.624 25.748 49.678 26.453 49.745 27.157 C 49.76 27.315 49.812 27.474 49.865 27.624 C 50.177 28.51 50.633 28.678 51.209 27.983 C 52.257 26.715 53.246 25.39 54.189 24.033 C 54.67 23.339 54.972 23.068 55.645 23.202 C 56.25 23.322 56.623 23.779 56.689 24.558 C 56.772 25.547 56.777 26.544 56.9 27.524 C 56.954 27.93 57.228 28.305 57.399 28.693 C 57.756 28.478 58.192 28.336 58.454 28.032 C 59.347 26.989 60.184 25.894 61.03 24.811 C 62.132 23.4 62.533 23.276 64.195 23.806 C 65.596 24.255 66.947 24.103 68.284 23.469 C 68.704 23.272 69.223 23.207 69.688 23.233 C 70.383 23.276 70.877 23.803 70.982 24.439 C 71.08 25.025 70.769 25.641 70.111 25.936 C 68.391 26.704 66.595 27.087 64.758 26.542 C 63.89 26.285 63.294 26.483 62.743 27.143 C 62.027 27.998 61.351 28.896 60.568 29.682 C 59.846 30.405 59.061 31.099 58.204 31.633 C 57.101 32.317 56.007 32.026 55.295 30.915 C 54.839 30.206 54.554 29.38 54.2 28.624 C 53.67 29.219 53.133 29.911 52.506 30.504 C 52.008 30.974 51.441 31.405 50.836 31.704 C 49.674 32.278 48.778 32.004 48.163 30.829 C 47.742 30.023 47.517 29.105 47.209 28.235 C 47.156 28.087 47.126 27.933 47.075 27.745 C 46.108 28.35 45.195 28.959 44.246 29.505 C 42.224 30.667 40.129 31.643 37.802 31.919 C 36.454 32.081 35.114 32.01 33.814 31.572 C 32.062 30.982 30.916 29.804 30.553 27.881 C 30.531 27.762 30.49 27.648 30.456 27.534 C 29.89 27.484 29.313 27.51 28.781 27.363 C 28.313 27.231 27.827 26.982 27.468 26.645 C 26.764 25.985 26.881 24.793 27.638 24.191 C 27.914 23.97 28.132 23.989 28.506 24.127 C 29.156 24.365 29.896 24.351 30.602 24.38 C 30.712 24.384 30.868 24.073 30.946 23.881 C 31.828 21.702 33.133 19.915 35.224 18.854 C 36.381 18.266 37.608 17.973 38.897 18.002 Z  M 33.875 8 C 35.123 8.639 35.317 9.319 34.535 10.516 C 34.192 11.04 33.79 11.53 33.376 12.004 C 30.968 14.755 29.131 17.885 27.446 21.093 C 25.844 24.146 24.402 27.281 22.916 30.395 C 22.329 31.626 20.985 31.969 19.946 31.055 C 19.742 30.874 19.574 30.528 19.576 30.26 C 19.596 28.475 18.924 26.825 18.63 25.107 C 18.235 22.785 18.004 20.435 17.708 18.154 C 17.721 18.137 17.625 18.234 17.566 18.351 C 15.818 21.718 14.065 25.083 12.337 28.462 C 11.976 29.169 11.683 29.906 11.739 30.753 C 11.756 31.009 11.487 31.386 11.242 31.533 C 10.851 31.77 10.376 31.978 9.928 31.996 C 8.105 32.064 7.526 31.196 8.4 29.615 C 9.811 27.062 11.346 24.577 12.759 22.025 C 13.866 20.023 14.911 17.985 15.893 15.921 C 16.279 15.109 16.452 14.191 16.661 13.309 C 16.741 12.979 16.832 12.771 17.186 12.78 C 17.682 12.795 18.185 12.77 18.669 12.858 C 19.572 13.021 20.028 13.543 20.094 14.47 C 20.223 16.312 20.343 18.157 20.431 20.003 C 20.541 22.303 21.037 24.525 21.752 26.841 C 21.882 26.613 21.97 26.485 22.034 26.344 C 24.55 20.861 27.446 15.581 30.647 10.463 C 31.253 9.495 31.878 8.536 32.955 8 L 33.875 8 L 33.875 8 Z  M 37.226 21.05 C 36.447 21.515 35.67 22.009 34.958 22.595 C 34.572 22.912 34.315 23.436 34 23.866 C 34.033 23.909 34.068 23.955 34.101 24 C 34.437 23.852 34.789 23.743 35.103 23.551 C 35.959 23.027 36.814 22.496 37.633 21.901 C 37.829 21.761 37.882 21.359 38 21.077 C 37.739 21.061 37.426 20.93 37.226 21.05 Z"
-                              />
-                            </svg>
-                          </div>
-                        </div>
                         <img
-                          class="emotion-3"
+                          class="emotion-0"
                         />
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="emotion-17"
+                  class="emotion-11"
                 >
                   <div
-                    class="emotion-18"
+                    class="emotion-12"
                   />
                 </div>
               </div>
@@ -1433,41 +1347,41 @@ exports[`Radio Player default player 1`] = `
           </div>
         </div>
         <div
-          class="emotion-75"
+          class="emotion-69"
         >
           <div
-            class="emotion-74"
+            class="emotion-68"
           >
             <div
-              class="emotion-52"
+              class="emotion-46"
             >
               <div
-                class="emotion-51"
+                class="emotion-45"
               >
                 <div
-                  class="emotion-50"
+                  class="emotion-44"
                 >
                   <div
-                    class="emotion-29"
+                    class="emotion-23"
                   >
                     <div
-                      class="emotion-28"
+                      class="emotion-22"
                     >
                       <button
                         aria-pressed="false"
-                        class="emotion-27"
+                        class="emotion-21"
                         data-testid="audio-player-play-button"
                         type="button"
                       >
                         <div
-                          class="emotion-26"
+                          class="emotion-20"
                         >
                           <div
-                            class="emotion-25"
+                            class="emotion-19"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-24"
+                              class="emotion-18"
                               viewBox="0 0 64 64"
                             >
                               <title
@@ -1486,25 +1400,25 @@ exports[`Radio Player default player 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-35"
+                    class="emotion-29"
                   >
                     <div
-                      class="emotion-34"
+                      class="emotion-28"
                     >
                       <button
-                        class="emotion-33"
+                        class="emotion-27"
                         data-testid="audio-player-backward"
                         type="button"
                       >
                         <div
-                          class="emotion-26"
+                          class="emotion-20"
                         >
                           <div
-                            class="emotion-25"
+                            class="emotion-19"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-30"
+                              class="emotion-24"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
@@ -1523,25 +1437,25 @@ exports[`Radio Player default player 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-29"
+                    class="emotion-23"
                   >
                     <div
-                      class="emotion-34"
+                      class="emotion-28"
                     >
                       <button
-                        class="emotion-33"
+                        class="emotion-27"
                         data-testid="audio-player-forward"
                         type="button"
                       >
                         <div
-                          class="emotion-26"
+                          class="emotion-20"
                         >
                           <div
-                            class="emotion-25"
+                            class="emotion-19"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-30"
+                              class="emotion-24"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
@@ -1567,26 +1481,26 @@ exports[`Radio Player default player 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-47"
+                    class="emotion-41"
                   >
                     <div
-                      class="emotion-34"
+                      class="emotion-28"
                     >
                       <button
-                        class="emotion-45"
+                        class="emotion-39"
                         data-testid="audio-player-skip-previous"
                         disabled=""
                         type="button"
                       >
                         <div
-                          class="emotion-26"
+                          class="emotion-20"
                         >
                           <div
-                            class="emotion-25"
+                            class="emotion-19"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-30"
+                              class="emotion-24"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
@@ -1609,47 +1523,47 @@ exports[`Radio Player default player 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-49"
+                    class="emotion-43"
                   >
                     <div
-                      class="emotion-48"
+                      class="emotion-42"
                     />
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="emotion-70"
+              class="emotion-64"
             >
               <div
-                class="emotion-69"
+                class="emotion-63"
               >
                 <div
-                  class="emotion-67"
+                  class="emotion-61"
                   data-testid="volume-control"
                 >
                   <div
-                    class="emotion-58"
+                    class="emotion-52"
                     data-testid="min-label"
                   >
                     <div
-                      class="emotion-57"
+                      class="emotion-51"
                     >
                       <button
-                        class="emotion-56"
+                        class="emotion-50"
                         data-testid="mute-button"
                         tabindex="-1"
                         type="button"
                       >
                         <div
-                          class="emotion-26"
+                          class="emotion-20"
                         >
                           <div
-                            class="emotion-25"
+                            class="emotion-19"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-30"
+                              class="emotion-24"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -1674,7 +1588,7 @@ exports[`Radio Player default player 1`] = `
                     aria-orientation="horizontal"
                     aria-valuemax="1"
                     aria-valuemin="0"
-                    class="emotion-60"
+                    class="emotion-54"
                     data-testid="volume-control-track"
                     values="0.7"
                   >
@@ -1685,7 +1599,7 @@ exports[`Radio Player default player 1`] = `
                       aria-valuemin="0"
                       aria-valuenow="0.7"
                       aria-valuetext="volume level 7 of 10"
-                      class="emotion-59"
+                      class="emotion-53"
                       data-testid="volume-control-thumb"
                       draggable="false"
                       role="slider"
@@ -1695,27 +1609,27 @@ exports[`Radio Player default player 1`] = `
                     />
                   </div>
                   <div
-                    class="emotion-66"
+                    class="emotion-60"
                     data-testid="max-label"
                   >
                     <div
-                      class="emotion-57"
+                      class="emotion-51"
                     >
                       <button
-                        class="emotion-56"
+                        class="emotion-50"
                         data-testid="volumeup-button"
                         tabindex="-1"
                         type="button"
                       >
                         <div
-                          class="emotion-26"
+                          class="emotion-20"
                         >
                           <div
-                            class="emotion-25"
+                            class="emotion-19"
                           >
                             <svg
                               aria-labelledby="mock-bui-1"
-                              class="emotion-30"
+                              class="emotion-24"
                               viewBox="0 0 24 24"
                             >
                               <title
@@ -1741,7 +1655,7 @@ exports[`Radio Player default player 1`] = `
                   </div>
                 </div>
                 <div
-                  class="emotion-68"
+                  class="emotion-62"
                   id="mock-bui-1"
                 >
                   Use the arrow keys to adjust volume
@@ -1749,27 +1663,27 @@ exports[`Radio Player default player 1`] = `
               </div>
             </div>
             <div
-              class="emotion-73"
+              class="emotion-67"
             >
               <div
-                class="emotion-69"
+                class="emotion-63"
               >
                 <div
-                  class="emotion-71"
+                  class="emotion-65"
                 />
               </div>
             </div>
           </div>
         </div>
         <div
-          class="emotion-83"
+          class="emotion-77"
         >
           <div
-            class="emotion-81"
+            class="emotion-75"
             data-testid="audio-slider"
           >
             <div
-              class="emotion-77"
+              class="emotion-71"
               data-testid="audio-slider-track"
               values="0"
             >
@@ -1780,7 +1694,7 @@ exports[`Radio Player default player 1`] = `
                 aria-valuemin="0"
                 aria-valuenow="0"
                 aria-valuetext="Playback time: 0 seconds of 0 seconds"
-                class="emotion-59"
+                class="emotion-53"
                 data-testid="audio-slider-thumb"
                 draggable="false"
                 role="slider"
@@ -1790,13 +1704,13 @@ exports[`Radio Player default player 1`] = `
               />
             </div>
             <div
-              class="emotion-80"
+              class="emotion-74"
             >
               <div
-                class="emotion-79"
+                class="emotion-73"
               >
                 <div
-                  class="emotion-78"
+                  class="emotion-72"
                   data-testid="min-label"
                 >
                   00:00
@@ -1805,7 +1719,7 @@ exports[`Radio Player default player 1`] = `
             </div>
           </div>
           <div
-            class="emotion-68"
+            class="emotion-62"
             id="mock-bui-1"
           >
             Use the arrow keys to fast forward or rewind

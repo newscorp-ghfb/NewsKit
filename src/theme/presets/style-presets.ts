@@ -663,6 +663,7 @@ stylePresets.tab = {
   },
   selected: {
     iconColor: '{{colors.inkBase}}',
+    color: '{{colors.inkBrand010}}',
   },
   hover: {
     backgroundColor: '{{colors.interactive010}}',
@@ -678,6 +679,16 @@ stylePresets.tab = {
     backgroundColor: '{{colors.interactiveDisabled}}',
     color: '{{colors.inkNonEssential}}',
     iconColor: '{{colors.inkNonEssential}}',
+  },
+};
+
+stylePresets.tabGroup = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.interface050}}',
+    borderWidth: '{{borders.borderWidth020}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
   },
 };
 

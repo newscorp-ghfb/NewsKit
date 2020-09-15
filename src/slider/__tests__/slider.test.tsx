@@ -13,7 +13,7 @@ let mockRange: jest.Mock;
 jest.mock('react-range', () => {
   mockRange = jest.fn().mockImplementation(() => <div>react-range</div>);
   return {
-    ...require.requireActual('react-range'),
+    ...(jest.requireActual('react-range') as {}),
     Range: mockRange,
   };
 });

@@ -530,7 +530,7 @@ Object {
         "paddingPreset": "spaceInset030Squish",
         "space": "sizing020",
         "stylePreset": "tab",
-        "typographyPreset": "label030",
+        "typographyPreset": "button030",
       },
       "medium": Object {
         "iconSize": "iconSize020",
@@ -538,7 +538,7 @@ Object {
         "paddingPreset": "spaceInset030Squish",
         "space": "sizing020",
         "stylePreset": "tab",
-        "typographyPreset": "label020",
+        "typographyPreset": "button020",
       },
       "small": Object {
         "iconSize": "iconSize010",
@@ -546,8 +546,11 @@ Object {
         "paddingPreset": "spaceInset020Squish",
         "space": "sizing020",
         "stylePreset": "tab",
-        "typographyPreset": "label020",
+        "typographyPreset": "button010",
       },
+    },
+    "tabGroup": Object {
+      "stylePreset": "tabGroup",
     },
     "tag": Object {
       "large": Object {
@@ -2144,7 +2147,17 @@ Object {
         "iconColor": "#0a68c1",
       },
       "selected": Object {
+        "color": "#0a68c1",
         "iconColor": "#2e2e2e",
+      },
+    },
+    "tabGroup": Object {
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#cccccc",
+        "borderRadius": "0",
+        "borderStyle": "solid",
+        "borderWidth": "2px",
       },
     },
     "tagDefault": Object {

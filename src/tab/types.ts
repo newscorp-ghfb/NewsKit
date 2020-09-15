@@ -10,4 +10,5 @@ export interface TabProps extends Omit<FlagProps, 'isLoading' | 'size'> {
   size?: TabSize;
   isSelected?: boolean;
   ariaLabel?: string;
+  tabKey?: number;
 }

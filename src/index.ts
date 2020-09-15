@@ -25,6 +25,7 @@ export * from './stack-child';
 export * from './stack';
 export * from './standfirst';
 export * from './tab';
+export * from './tab-group';
 export * from './tag';
 export * from './tealium';
 export * from './text-block';

@@ -10,6 +10,8 @@ import {
 import {createTheme, ThemeProvider} from '../../theme';
 import {Pause, Email, CopyLink} from '../../icons';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
+import {TabGroup, TabPane} from '../../tab-group';
+import {getBuiId} from '../../utils/get-bui-id';
 
 const Container = styled.div`
   margin: ${getSizingFromTheme('sizing050')};
@@ -80,6 +82,7 @@ export default {
               spaceStack="sizing070"
               spaceInline="sizing070"
               wrap="wrap"
+              role="tablist"
             >
               <Tab size={TabSize.Small} ariaLabel="small tab">
                 Small tab
@@ -106,7 +109,7 @@ export default {
               <Stack>
                 <h2>State</h2>
                 {states.map(state => (
-                  <Label>{state}</Label>
+                  <Label key={getBuiId()}>{state}</Label>
                 ))}
               </Stack>
             </Cell>
@@ -115,15 +118,16 @@ export default {
                 <Stack
                   spaceInline="sizing020"
                   stackDistribution={StackDistribution.SpaceEvenly}
+                  role="tablist"
                 >
                   <h2>Tab</h2>
-                  <Block data-state="Default">
+                  <Block role="tablist" data-state="Default">
                     <Tab ariaLabel="tab label" overrides={{stylePreset: 'tab'}}>
                       Tab Label
                     </Tab>
                   </Block>
 
-                  <Block data-state="Selected">
+                  <Block data-state="Selected" role="tablist">
                     <Tab
                       ariaLabel="tab label"
                       isSelected
@@ -175,10 +179,18 @@ export default {
           <StorybookHeading>Tab - Icon</StorybookHeading>
           <Container>
             {[Pause, Email, CopyLink].map(IconType => (
-              <Spacer>
-                <Stack flow="horizontal-center" spaceInline="sizing060">
+              <Spacer key={getBuiId()}>
+                <Stack
+                  flow="horizontal-center"
+                  spaceInline="sizing060"
+                  role="tablist"
+                >
                   {tabSizes.map(tab => (
-                    <Tab size={tab.tabSize} ariaLabel="icon tab">
+                    <Tab
+                      key={getBuiId()}
+                      size={tab.tabSize}
+                      ariaLabel="icon tab"
+                    >
                       <IconType />
                     </Tab>
                   ))}
@@ -197,10 +209,18 @@ export default {
           <StorybookHeading>Tab - Icon and Label</StorybookHeading>
           <Container>
             {[Pause, Email, CopyLink].map(IconType => (
-              <Spacer>
-                <Stack flow="horizontal-center" spaceInline="sizing060">
+              <Spacer key={getBuiId()}>
+                <Stack
+                  flow="horizontal-center"
+                  spaceInline="sizing060"
+                  role="tablist"
+                >
                   {tabSizes.map(tab => (
-                    <Tab size={tab.tabSize} ariaLabel="tab label">
+                    <Tab
+                      key={getBuiId()}
+                      size={tab.tabSize}
+                      ariaLabel="tab label"
+                    >
                       <IconType />
                       Tab Label
                     </Tab>
@@ -220,7 +240,11 @@ export default {
           <StorybookHeading>Tab With Overrides</StorybookHeading>
           <Container>
             <ThemeProvider theme={myCustomTheme}>
-              <Stack flow="horizontal-center" spaceInline="sizing060">
+              <Stack
+                flow="horizontal-center"
+                spaceInline="sizing060"
+                role="tablist"
+              >
                 <Tab
                   isSelected
                   ariaLabel="tab label"
@@ -250,7 +274,11 @@ export default {
           </StorybookSubHeading>
           <Container>
             <ThemeProvider theme={myCustomTheme}>
-              <Stack flow="horizontal-center" spaceInline="sizing060">
+              <Stack
+                role="tablist"
+                flow="horizontal-center"
+                spaceInline="sizing060"
+              >
                 <Tab isSelected ariaLabel="tab label">
                   <Email />
                   Tab Label
@@ -264,7 +292,11 @@ export default {
           </StorybookSubHeading>
           <Container>
             <ThemeProvider theme={myCustomTheme}>
-              <Stack flow="horizontal-center" spaceInline="sizing060">
+              <Stack
+                role="tablist"
+                flow="horizontal-center"
+                spaceInline="sizing060"
+              >
                 <Tab
                   isSelected
                   ariaLabel="tab label"
@@ -282,6 +314,124 @@ export default {
         </React.Fragment>
       ),
       name: 'tab-with-icon-size-overrides',
+      type: 'story',
+    },
+    {
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>Tab Group without divider</StorybookHeading>
+          <StorybookSubHeading>Small</StorybookSubHeading>
+          <TabGroup size={TabSize.Small}>
+            <Tab tabKey={1}>Small tab</Tab>
+            <Tab tabKey={2}>Small tab</Tab>
+            <Tab tabKey={3}>Small tab</Tab>
+          </TabGroup>
+          <StorybookSubHeading>Medium</StorybookSubHeading>
+          <TabGroup size={TabSize.Medium}>
+            <Tab tabKey={1}>Medium tab</Tab>
+            <Tab tabKey={2}>Medium tab</Tab>
+            <Tab tabKey={3}>Medium tab</Tab>
+          </TabGroup>
+          <StorybookSubHeading>Large</StorybookSubHeading>
+          <TabGroup size={TabSize.Large}>
+            <Tab tabKey={1}>Large tab</Tab>
+            <Tab tabKey={2}>Large tab</Tab>
+            <Tab tabKey={3}>Large tab</Tab>
+          </TabGroup>
+        </React.Fragment>
+      ),
+      name: 'tab-group-basic',
+      type: 'story',
+    },
+    {
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>Tab Group with divider</StorybookHeading>
+          <StorybookSubHeading>Small</StorybookSubHeading>
+          <TabGroup size={TabSize.Small} divider>
+            <Tab tabKey={1}>Small tab</Tab>
+            <Tab tabKey={2}>Small tab</Tab>
+            <Tab tabKey={3}>Small tab</Tab>
+          </TabGroup>
+          <StorybookSubHeading>Medium</StorybookSubHeading>
+          <TabGroup size={TabSize.Medium} divider>
+            <Tab tabKey={1}>Medium tab</Tab>
+            <Tab tabKey={2}>Medium tab</Tab>
+            <Tab tabKey={3}>Medium tab</Tab>
+          </TabGroup>
+          <StorybookSubHeading>Large</StorybookSubHeading>
+          <TabGroup size={TabSize.Large} divider>
+            <Tab tabKey={1}>Large tab</Tab>
+            <Tab tabKey={2}>Large tab</Tab>
+            <Tab tabKey={3}>Large tab</Tab>
+          </TabGroup>
+        </React.Fragment>
+      ),
+      name: 'tab-group-divider',
+      type: 'story',
+    },
+    {
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>Tab Group Variants</StorybookHeading>
+          <StorybookSubHeading>Label Only</StorybookSubHeading>
+          <TabGroup size={TabSize.Medium} divider>
+            <Tab tabKey={1}>Medium tab</Tab>
+            <Tab tabKey={2}>Medium tab</Tab>
+            <Tab tabKey={3}>Medium tab</Tab>
+          </TabGroup>
+          <StorybookSubHeading>Icon Only</StorybookSubHeading>
+          <TabGroup size={TabSize.Medium} divider>
+            <Tab tabKey={1}>
+              <Email />
+            </Tab>
+            <Tab tabKey={2}>
+              <Email />
+            </Tab>
+            <Tab tabKey={3}>
+              <Email />
+            </Tab>
+          </TabGroup>
+          <StorybookSubHeading>Icon and Label</StorybookSubHeading>
+          <TabGroup size={TabSize.Medium} divider>
+            <Tab tabKey={1}>
+              <Email />
+              Medium tab
+            </Tab>
+            <Tab tabKey={2}>
+              <Email />
+              Medium tab
+            </Tab>
+            <Tab tabKey={3}>
+              <Email />
+              Medium tab
+            </Tab>
+          </TabGroup>
+        </React.Fragment>
+      ),
+      name: 'tab-group-variants',
+      type: 'story',
+    },
+    {
+      component: () => (
+        <React.Fragment>
+          <StorybookSubHeading>Tab with content</StorybookSubHeading>
+          <TabGroup
+            size={TabSize.Medium}
+            divider
+            tabPanes={[
+              <TabPane tabKey={1}>First tab content</TabPane>,
+              <TabPane tabKey={2}>Second tab content</TabPane>,
+              <TabPane tabKey={3}>Third tab content</TabPane>,
+            ]}
+          >
+            <Tab tabKey={1}>Medium tab</Tab>
+            <Tab tabKey={2}>Medium tab</Tab>
+            <Tab tabKey={3}>Medium tab</Tab>
+          </TabGroup>
+        </React.Fragment>
+      ),
+      name: 'tab-group-content',
       type: 'story',
     },
   ],

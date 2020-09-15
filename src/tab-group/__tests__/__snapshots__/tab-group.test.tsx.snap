@@ -1,0 +1,6379 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tab Group changes focus and sets first to be active on right arrow when on the last tab 1`] = `
+<DocumentFragment>
+  .emotion-20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-16 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-8 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-8 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-8:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-8:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-8:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-18 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-18::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-18::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-20"
+  >
+    <div
+      class="emotion-17"
+    >
+      <div
+        class="emotion-16"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-15"
+          role="tablist"
+        >
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-3"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-17"
+    >
+      <p
+        class="emotion-18"
+        data-testid="tab-pane"
+      >
+        First tab content
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group changes focus and sets last to be active on left arrow when on the first tab 1`] = `
+<DocumentFragment>
+  .emotion-20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-16 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-13 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-13 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-13 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-13:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-13:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-13:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-13:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-13:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-13:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-13 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-18 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-18::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-18::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-20"
+  >
+    <div
+      class="emotion-17"
+    >
+      <div
+        class="emotion-16"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-15"
+          role="tablist"
+        >
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-3"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-3"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-13"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-17"
+    >
+      <p
+        class="emotion-18"
+        data-testid="tab-pane"
+      >
+        Third tab content
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group changes focus and sets next to be active on right arrow 1`] = `
+<DocumentFragment>
+  .emotion-20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-16 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-8 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-8 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-8:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-8:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-8:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-8 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-18 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-18::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-18::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-20"
+  >
+    <div
+      class="emotion-17"
+    >
+      <div
+        class="emotion-16"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-15"
+          role="tablist"
+        >
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-3"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-3"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-17"
+    >
+      <p
+        class="emotion-18"
+        data-testid="tab-pane"
+      >
+        Second tab content
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group changes focus and sets previous to be active on left arrow 1`] = `
+<DocumentFragment>
+  .emotion-20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-16 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-8 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-8 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-8:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-8:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-8:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-18 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-18::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-18::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-20"
+  >
+    <div
+      class="emotion-17"
+    >
+      <div
+        class="emotion-16"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-15"
+          role="tablist"
+        >
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-3"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-17"
+    >
+      <p
+        class="emotion-18"
+        data-testid="tab-pane"
+      >
+        First tab content
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group changes focus on tab 1`] = `
+<DocumentFragment>
+  .emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-16 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-8 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-8 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-8:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-8:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-8:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-18"
+  >
+    <div
+      class="emotion-17"
+    >
+      <div
+        class="emotion-16"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-15"
+          role="tablist"
+        >
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-3"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group clears focus onMouseDown 1`] = `
+<DocumentFragment>
+  .emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-16 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-8 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-8 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-8:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-8:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-8:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-18"
+  >
+    <div
+      class="emotion-17"
+    >
+      <div
+        class="emotion-16"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-15"
+          role="tablist"
+        >
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-3"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group doesnt change focus if no other available tabs 1`] = `
+<DocumentFragment>
+  .emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-16 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: not-allowed;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+.emotion-8 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-8 svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-18"
+  >
+    <div
+      class="emotion-17"
+    >
+      <div
+        class="emotion-16"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-15"
+          role="tablist"
+        >
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-3"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              disabled=""
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              disabled=""
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
+<DocumentFragment>
+  .emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-16 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-8 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-8 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-8:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-8:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-8:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-18"
+  >
+    <div
+      class="emotion-17"
+    >
+      <div
+        class="emotion-16"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-15"
+          role="tablist"
+        >
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-3"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group renders with default styles 1`] = `
+<DocumentFragment>
+  .emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-16 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-8 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-8 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-8:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-8:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-8:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-18"
+  >
+    <div
+      class="emotion-17"
+    >
+      <div
+        class="emotion-16"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-15"
+          role="tablist"
+        >
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-3"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group renders with default styles and divider 1`] = `
+<DocumentFragment>
+  .emotion-22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-21 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-20 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-19 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-10 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-10 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-10:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-10:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-10:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-10:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-10:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-10:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-6 {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-5 {
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-left-width: 1px;
+  display: inline-block;
+  height: 100%;
+}
+
+<div
+    class="emotion-22"
+  >
+    <div
+      class="emotion-21"
+    >
+      <div
+        class="emotion-20"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-19"
+          role="tablist"
+        >
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-3"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-6"
+          >
+            <hr
+              aria-hidden="true"
+              class="emotion-5"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-10"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-6"
+          >
+            <hr
+              aria-hidden="true"
+              class="emotion-5"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-10"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group renders with icons and label for tabs 1`] = `
+<DocumentFragment>
+  .emotion-24 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-23 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-22 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-21 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 64px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-5 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-5 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-5:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-5:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-5:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-5:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-5:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-5:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-5 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-2 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-12 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 64px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-12 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-12 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-12:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-12:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-12:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-12:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-12:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-12:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-0 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  display: inline-block;
+}
+
+<div
+    class="emotion-24"
+  >
+    <div
+      class="emotion-23"
+    >
+      <div
+        class="emotion-22"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-21"
+          role="tablist"
+        >
+          <div
+            class="emotion-6"
+          >
+            <button
+              class="emotion-5"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-4"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <svg
+                    aria-labelledby="mock-bui-1"
+                    class="emotion-0"
+                    viewBox="0 0 24 24"
+                  >
+                    <title
+                      id="mock-bui-1"
+                    >
+                      Email icon
+                    </title>
+                    <path
+                      d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-6"
+          >
+            <button
+              class="emotion-12"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-4"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <svg
+                    aria-labelledby="mock-bui-1"
+                    class="emotion-0"
+                    viewBox="0 0 24 24"
+                  >
+                    <title
+                      id="mock-bui-1"
+                    >
+                      Email icon
+                    </title>
+                    <path
+                      d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-6"
+          >
+            <button
+              class="emotion-12"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-4"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <svg
+                    aria-labelledby="mock-bui-1"
+                    class="emotion-0"
+                    viewBox="0 0 24 24"
+                  >
+                    <title
+                      id="mock-bui-1"
+                    >
+                      Email icon
+                    </title>
+                    <path
+                      d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group renders with icons for tabs 1`] = `
+<DocumentFragment>
+  .emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-16 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 64px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-3 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 64px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-8 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-8 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-8:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-8:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-8:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-0 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  display: inline-block;
+}
+
+<div
+    class="emotion-18"
+  >
+    <div
+      class="emotion-17"
+    >
+      <div
+        class="emotion-16"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-15"
+          role="tablist"
+        >
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-3"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <svg
+                    aria-labelledby="mock-bui-1"
+                    class="emotion-0"
+                    viewBox="0 0 24 24"
+                  >
+                    <title
+                      id="mock-bui-1"
+                    >
+                      Email icon
+                    </title>
+                    <path
+                      d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <svg
+                    aria-labelledby="mock-bui-1"
+                    class="emotion-0"
+                    viewBox="0 0 24 24"
+                  >
+                    <title
+                      id="mock-bui-1"
+                    >
+                      Email icon
+                    </title>
+                    <path
+                      d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <svg
+                    aria-labelledby="mock-bui-1"
+                    class="emotion-0"
+                    viewBox="0 0 24 24"
+                  >
+                    <title
+                      id="mock-bui-1"
+                    >
+                      Email icon
+                    </title>
+                    <path
+                      d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group renders with overrides 1`] = `
+<DocumentFragment>
+  .emotion-24 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-23 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-22 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 64px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-5 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-5 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-5:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-5:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-5:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-5:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-5:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-5:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-5 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-2 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-12 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 64px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-12 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-12 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-12:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-12:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-12:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-12:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-12:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-12:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-0 {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  display: inline-block;
+}
+
+.emotion-21 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+<div
+    class="emotion-24"
+  >
+    <div
+      class="emotion-23"
+    >
+      <div
+        class="emotion-22"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-21"
+          role="tablist"
+        >
+          <div
+            class="emotion-6"
+          >
+            <button
+              class="emotion-5"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-4"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <svg
+                    aria-labelledby="mock-bui-1"
+                    class="emotion-0"
+                    viewBox="0 0 24 24"
+                  >
+                    <title
+                      id="mock-bui-1"
+                    >
+                      Email icon
+                    </title>
+                    <path
+                      d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-6"
+          >
+            <button
+              class="emotion-12"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-4"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <svg
+                    aria-labelledby="mock-bui-1"
+                    class="emotion-0"
+                    viewBox="0 0 24 24"
+                  >
+                    <title
+                      id="mock-bui-1"
+                    >
+                      Email icon
+                    </title>
+                    <path
+                      d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-6"
+          >
+            <button
+              class="emotion-12"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-4"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <svg
+                    aria-labelledby="mock-bui-1"
+                    class="emotion-0"
+                    viewBox="0 0 24 24"
+                  >
+                    <title
+                      id="mock-bui-1"
+                    >
+                      Email icon
+                    </title>
+                    <path
+                      d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group renders with sizing 1`] = `
+<DocumentFragment>
+  .emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-16 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 64px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-3 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 64px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-8 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-8 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-8:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-8:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-8:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-18"
+  >
+    <div
+      class="emotion-17"
+    >
+      <div
+        class="emotion-16"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-15"
+          role="tablist"
+        >
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-3"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group sets active on click 1`] = `
+<DocumentFragment>
+  .emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-16 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-3:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-8 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-8 svg {
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.emotion-8:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-8:hover:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) svg {
+  fill: #0a68c1;
+  color: #0a68c1;
+}
+
+.emotion-8:disabled {
+  background-color: #e4e4e4;
+  color: #9c9c9c;
+}
+
+.emotion-8:disabled svg {
+  fill: #9c9c9c;
+  color: #9c9c9c;
+}
+
+<div
+    class="emotion-18"
+  >
+    <div
+      class="emotion-17"
+    >
+      <div
+        class="emotion-16"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-15"
+          role="tablist"
+        >
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-3"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

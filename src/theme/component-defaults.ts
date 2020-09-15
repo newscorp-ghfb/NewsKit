@@ -368,7 +368,7 @@ export const componentDefaults = {
   tab: {
     small: {
       stylePreset: 'tab',
-      typographyPreset: 'label020',
+      typographyPreset: 'button010',
       paddingPreset: 'spaceInset020Squish',
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
@@ -376,7 +376,7 @@ export const componentDefaults = {
     },
     medium: {
       stylePreset: 'tab',
-      typographyPreset: 'label020',
+      typographyPreset: 'button020',
       paddingPreset: 'spaceInset030Squish',
       minHeight: 'sizing080',
       iconSize: 'iconSize020',
@@ -384,12 +384,15 @@ export const componentDefaults = {
     },
     large: {
       stylePreset: 'tab',
-      typographyPreset: 'label030',
+      typographyPreset: 'button030',
       paddingPreset: 'spaceInset030Squish',
       minHeight: 'sizing090',
       iconSize: 'iconSize030',
       space: 'sizing020',
     },
+  },
+  tabGroup: {
+    stylePreset: 'tabGroup',
   },
   textInput: {
     small: {
