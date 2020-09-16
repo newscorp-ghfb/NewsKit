@@ -148,6 +148,11 @@
         "id": "/components/divider"
       },
       {
+        "title": "Experimentation Web",
+        "page": true,
+        "id": "/components/experimentation-web"
+      },
+      {
         "title": "Flag",
         "page": true,
         "id": "/components/flag"
@@ -171,11 +176,6 @@
         "title": "Link",
         "page": true,
         "id": "/components/link"
-      },
-      {
-        "title": "Optimizely Web",
-        "page": true,
-        "id": "/components/optimizely-web"
       },
       {
         "title": "Ordered List",

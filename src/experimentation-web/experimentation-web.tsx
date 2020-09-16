@@ -4,11 +4,11 @@ import {
   RenderScripts,
 } from '../utils/render-scripts';
 
-export interface OptimizelyWebProps extends RenderScriptsReactHelmetProp {
+export interface ExperimentationWebProps extends RenderScriptsReactHelmetProp {
   optimizelyCdn: string;
 }
 
-export const OptimizelyWeb: React.FC<OptimizelyWebProps> = ({
+export const ExperimentationWeb: React.FC<ExperimentationWebProps> = ({
   optimizelyCdn,
   reactHelmet,
 }) => (
@@ -16,9 +16,9 @@ export const OptimizelyWeb: React.FC<OptimizelyWebProps> = ({
     scripts={[
       {
         content: `(function() {
-            window["optimizely_cdn"] = "${optimizelyCdn}";
-
             if (window.location === window.parent.location) {
+              window["optimizely_cdn"] = "${optimizelyCdn}";
+
               window['optimizely'] = window['optimizely'] || [];
               if (document.cookie.indexOf('nuk-consent-personalisation=1') === -1) {
                 window['optimizely'].push({
