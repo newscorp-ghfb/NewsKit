@@ -3,9 +3,10 @@ import {
   getPresetStyles,
   getStylePresetFromTheme,
   GetStylePresetFromThemeOptions,
-} from '../style-preset';
-import {createTheme, compileTheme} from '../../theme';
-import {styled, MQ} from '../style';
+  styled,
+  MQ,
+} from '../style';
+import {createTheme} from '../../theme';
 
 const TestSurface = styled.div<GetStylePresetFromThemeOptions>`
   ${options =>
@@ -41,20 +42,18 @@ describe('getStylePresetFromTheme', () => {
       {
         stylePresetToUse: 'interactive040',
       },
-      compileTheme(
-        createTheme({
-          name: 'test-style-preset',
-          overrides: {
-            stylePresets: {
-              interactive040: {
-                base: {
-                  backgroundColor: '#FF00FF',
-                },
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            interactive040: {
+              base: {
+                backgroundColor: '#FF00FF',
               },
             },
           },
-        }),
-      ),
+        },
+      }),
     );
     expect(fragment).toMatchSnapshot();
   });
@@ -69,33 +68,31 @@ describe('getStylePresetFromTheme', () => {
           md: 'interactive030',
         },
       },
-      compileTheme(
-        createTheme({
-          name: 'test-style-preset',
-          overrides: {
-            stylePresets: {
-              interactive010: {
-                base: {
-                  backgroundColor: 'red',
-                },
-                disabled: {
-                  color: 'red',
-                },
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            interactive010: {
+              base: {
+                backgroundColor: 'red',
               },
-              interactive020: {
-                base: {
-                  backgroundColor: 'blue',
-                },
+              disabled: {
+                color: 'red',
               },
-              interactive030: {
-                base: {
-                  backgroundColor: 'green',
-                },
+            },
+            interactive020: {
+              base: {
+                backgroundColor: 'blue',
+              },
+            },
+            interactive030: {
+              base: {
+                backgroundColor: 'green',
               },
             },
           },
-        }),
-      ),
+        },
+      }),
     );
     expect(fragment).toMatchSnapshot();
   });
@@ -110,28 +107,26 @@ describe('getStylePresetFromTheme', () => {
           md: 'incorrect',
         },
       },
-      compileTheme(
-        createTheme({
-          name: 'test-style-preset',
-          overrides: {
-            stylePresets: {
-              interactive010: {
-                base: {
-                  backgroundColor: 'red',
-                },
-                disabled: {
-                  color: 'red',
-                },
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            interactive010: {
+              base: {
+                backgroundColor: 'red',
               },
-              interactive020: {
-                base: {
-                  backgroundColor: 'blue',
-                },
+              disabled: {
+                color: 'red',
+              },
+            },
+            interactive020: {
+              base: {
+                backgroundColor: 'blue',
               },
             },
           },
-        }),
-      ),
+        },
+      }),
     );
     expect(fragment).toMatchSnapshot();
   });
@@ -147,35 +142,33 @@ describe('getStylePresetFromTheme', () => {
           lg: 'interactive040',
         },
       },
-      compileTheme(
-        createTheme({
-          name: 'test-style-preset',
-          overrides: {
-            stylePresets: {
-              interactive010: {
-                base: {
-                  backgroundColor: 'red',
-                },
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            interactive010: {
+              base: {
+                backgroundColor: 'red',
               },
-              interactive020: {
-                base: {
-                  backgroundColor: 'blue',
-                },
+            },
+            interactive020: {
+              base: {
+                backgroundColor: 'blue',
               },
-              interactive030: {
-                base: {
-                  backgroundColor: 'green',
-                },
+            },
+            interactive030: {
+              base: {
+                backgroundColor: 'green',
               },
-              interactive040: {
-                base: {
-                  backgroundColor: '#FF00FF',
-                },
+            },
+            interactive040: {
+              base: {
+                backgroundColor: '#FF00FF',
               },
             },
           },
-        }),
-      ),
+        },
+      }),
     );
     expect(fragment).toMatchSnapshot();
   });
@@ -192,40 +185,38 @@ describe('getStylePresetFromTheme', () => {
           wrong: 'interactive050',
         } as any,
       },
-      compileTheme(
-        createTheme({
-          name: 'test-style-preset',
-          overrides: {
-            stylePresets: {
-              interactive010: {
-                base: {
-                  backgroundColor: 'red',
-                },
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            interactive010: {
+              base: {
+                backgroundColor: 'red',
               },
-              interactive020: {
-                base: {
-                  backgroundColor: 'blue',
-                },
+            },
+            interactive020: {
+              base: {
+                backgroundColor: 'blue',
               },
-              interactive030: {
-                base: {
-                  backgroundColor: 'green',
-                },
+            },
+            interactive030: {
+              base: {
+                backgroundColor: 'green',
               },
-              interactive040: {
-                base: {
-                  backgroundColor: '#FF00FF',
-                },
+            },
+            interactive040: {
+              base: {
+                backgroundColor: '#FF00FF',
               },
-              interactive050: {
-                base: {
-                  backgroundColor: 'white',
-                },
+            },
+            interactive050: {
+              base: {
+                backgroundColor: 'white',
               },
             },
           },
-        }),
-      ),
+        },
+      }),
     );
     expect(fragment).toMatchSnapshot();
   });
@@ -236,20 +227,18 @@ describe('getStylePresetFromTheme', () => {
       {
         stylePresetToUse: 'NotExistingStylePreset',
       },
-      compileTheme(
-        createTheme({
-          name: 'test-style-preset',
-          overrides: {
-            stylePresets: {
-              interactives020: {
-                base: {
-                  backgroundColor: '#FF00FF',
-                },
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            interactives020: {
+              base: {
+                backgroundColor: '#FF00FF',
               },
             },
           },
-        }),
-      ),
+        },
+      }),
     );
     expect(fragment).toMatchSnapshot();
   });
@@ -261,18 +250,16 @@ describe('getStylePresetFromTheme', () => {
         stylePresetToUse: 'testPreset',
         isLoading: true,
       },
-      compileTheme(
-        createTheme({
-          name: 'test-style-preset',
-          overrides: {
-            stylePresets: {
-              testPreset: {
-                base: undefined,
-              },
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            testPreset: {
+              base: undefined,
             },
           },
-        }),
-      ),
+        },
+      }),
     );
     expect(fragment).toMatchSnapshot();
   });
@@ -284,22 +271,19 @@ describe('getStylePresetFromTheme', () => {
         stylePresetToUse: 'testPreset',
         isDisabled: true,
       },
-
-      compileTheme(
-        createTheme({
-          name: 'test-style-preset',
-          overrides: {
-            stylePresets: {
-              testPreset: {
-                base: undefined,
-                disabled: {
-                  backgroundColor: '#FFFF00',
-                },
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            testPreset: {
+              base: undefined,
+              disabled: {
+                backgroundColor: '#FFFF00',
               },
             },
           },
-        }),
-      ),
+        },
+      }),
     );
     expect(fragment).toMatchSnapshot();
   });
@@ -310,21 +294,18 @@ describe('getStylePresetFromTheme', () => {
       {
         isDisabled: true,
       },
-
-      compileTheme(
-        createTheme({
-          name: 'test-style-preset',
-          overrides: {
-            stylePresets: {
-              iconButtonMinimalPrimary: {
-                disabled: {
-                  backgroundColor: '#FF0000',
-                },
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            iconButtonMinimalPrimary: {
+              disabled: {
+                backgroundColor: '#FF0000',
               },
             },
           },
-        }),
-      ),
+        },
+      }),
     );
     expect(fragment).toMatchSnapshot();
   });
@@ -335,21 +316,18 @@ describe('getStylePresetFromTheme', () => {
       {
         isLoading: true,
       },
-
-      compileTheme(
-        createTheme({
-          name: 'test-style-preset',
-          overrides: {
-            stylePresets: {
-              iconButtonMinimalPrimary: {
-                loading: {
-                  backgroundColor: '#ffff00',
-                },
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            iconButtonMinimalPrimary: {
+              loading: {
+                backgroundColor: '#ffff00',
               },
             },
           },
-        }),
-      ),
+        },
+      }),
     );
     expect(fragment).toMatchSnapshot();
   });
@@ -360,21 +338,18 @@ describe('getStylePresetFromTheme', () => {
       {
         isSelected: true,
       },
-
-      compileTheme(
-        createTheme({
-          name: 'test-style-preset',
-          overrides: {
-            stylePresets: {
-              iconButtonMinimalPrimary: {
-                selected: {
-                  backgroundColor: '#00ff00',
-                },
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            iconButtonMinimalPrimary: {
+              selected: {
+                backgroundColor: '#00ff00',
               },
             },
           },
-        }),
-      ),
+        },
+      }),
     );
     expect(fragment).toMatchSnapshot();
   });
@@ -386,24 +361,21 @@ describe('getStylePresetFromTheme', () => {
         isSelected: true,
         isLoading: true,
       },
-
-      compileTheme(
-        createTheme({
-          name: 'test-style-preset',
-          overrides: {
-            stylePresets: {
-              iconButtonMinimalPrimary: {
-                selected: {
-                  backgroundColor: '#00ff00',
-                },
-                loading: {
-                  backgroundColor: '#ffff00',
-                },
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            iconButtonMinimalPrimary: {
+              selected: {
+                backgroundColor: '#00ff00',
+              },
+              loading: {
+                backgroundColor: '#ffff00',
               },
             },
           },
-        }),
-      ),
+        },
+      }),
     );
     expect(fragment).toMatchSnapshot();
   });
@@ -415,24 +387,21 @@ describe('getStylePresetFromTheme', () => {
         isDisabled: true,
         isLoading: true,
       },
-
-      compileTheme(
-        createTheme({
-          name: 'test-style-preset',
-          overrides: {
-            stylePresets: {
-              iconButtonMinimalPrimary: {
-                loading: {
-                  backgroundColor: '#00ff00',
-                },
-                disabled: {
-                  backgroundColor: '#FF0000',
-                },
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            iconButtonMinimalPrimary: {
+              loading: {
+                backgroundColor: '#00ff00',
+              },
+              disabled: {
+                backgroundColor: '#FF0000',
               },
             },
           },
-        }),
-      ),
+        },
+      }),
     );
     expect(fragment).toMatchSnapshot();
   });

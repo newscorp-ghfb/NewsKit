@@ -5,9 +5,9 @@ import {
   getPaddingPreset,
   getSpacingInline,
   getSpacingStack,
+  getStylePreset,
 } from '../utils/style';
 import {SpacePresetKeys, PaddingPresetKeys, StylePresetKeys} from '../theme';
-import {getStylePreset} from '../utils/style-preset';
 
 export interface BlockProps {
   as?: keyof JSX.IntrinsicElements;

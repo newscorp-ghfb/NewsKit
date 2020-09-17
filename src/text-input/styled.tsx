@@ -6,10 +6,11 @@ import {
   getMinHeight,
   getPaddingPreset,
   getSizingFromTheme,
+  getStylePreset,
+  getStylePresetFromTheme,
 } from '../utils/style';
 import {TextInputProps, TextInputSize} from './types';
 import {TextBlock, TextBlockProps} from '../text-block/text-block';
-import {getStylePreset, getStylePresetFromTheme} from '../utils/style-preset';
 import {getToken} from '../utils/get-token';
 
 export const StyledTextInputContainer = styled.div<TextInputProps>`
@@ -45,8 +46,8 @@ export const StyledInput = styled.input<InputContainer>`
     })}
   ${({$size}) => getPaddingPreset(`textInput.${$size}.input`, 'input')}
   ${({$size}) => getSpacingStack(`textInput.${$size}.input`, 'input')}
-  ${({$size}) => getSpacingInline(`textInput.${$size}.input`, 'input')} 
-  min-height: ${({$size}) => getMinHeight(`textInput.${$size}.input`, 'input')} 
+  ${({$size}) => getSpacingInline(`textInput.${$size}.input`, 'input')}
+  min-height: ${({$size}) => getMinHeight(`textInput.${$size}.input`, 'input')}
 `;
 
 export const StyledLabel = styled.label<InputContainer>`

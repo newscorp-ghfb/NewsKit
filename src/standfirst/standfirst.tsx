@@ -1,6 +1,6 @@
 import React from 'react';
-import {styled, getTypographyPreset} from '../utils/style';
-import {getStylePreset} from '../utils/style-preset';
+import {styled, getTypographyPreset, getStylePreset} from '../utils/style';
+
 import {isInlineElement} from '../utils/inline-tags';
 import {StandfirstProps} from './types';
 

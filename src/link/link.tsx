@@ -1,8 +1,8 @@
 import React from 'react';
-import {getMotionFromTheme, styled} from '../utils/style';
+import {getMotionFromTheme, styled, getStylePreset} from '../utils/style';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
 import {LinkProps} from './types';
-import {getStylePreset} from '../utils/style-preset';
+
 import {Launch} from '../icons/launch';
 import {Stack} from '../stack/stack';
 import {getToken} from '../utils/get-token';

@@ -10,7 +10,9 @@ import {
   AlignSelfProperty,
   PositionProperty,
 } from 'csstype';
-import {ColorKeys, TypographyPresetKeys, SizingKeys, Responsive} from 'newskit';
+import {ColorKeys, TypographyPresetKeys, SizingKeys} from 'newskit';
+
+export type Responsive<T> = T | T[];
 
 interface CommonProps {
   as?: React.ElementType;

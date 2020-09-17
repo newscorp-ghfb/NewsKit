@@ -4,31 +4,36 @@ exports[`Standfirst renders as h4 html tag 1`] = `
 <DocumentFragment>
   .emotion-0 {
   color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 20px;
-  line-height: 1.6;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
   padding: 1px 0;
 }
 
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.45000000000000007em;
-}
+@media screen and (max-width:959px) {
+  .emotion-0 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 500;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
 
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5125000000000001em;
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.45000000000000007em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.5125000000000001em;
+  }
 }
 
 @media screen and (min-width:960px) {
@@ -70,32 +75,37 @@ exports[`Standfirst renders as span html tag 1`] = `
 <DocumentFragment>
   .emotion-0 {
   color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 20px;
-  line-height: 1.6;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
   padding: 1px 0;
   display: inline-block;
 }
 
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.45000000000000007em;
-}
+@media screen and (max-width:959px) {
+  .emotion-0 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 500;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
 
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5125000000000001em;
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.45000000000000007em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.5125000000000001em;
+  }
 }
 
 @media screen and (min-width:960px) {
@@ -137,31 +147,36 @@ exports[`Standfirst renders with custom style preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
   color: #2f75d7;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 20px;
-  line-height: 1.6;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
   padding: 1px 0;
 }
 
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.45000000000000007em;
-}
+@media screen and (max-width:959px) {
+  .emotion-0 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 500;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
 
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5125000000000001em;
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.45000000000000007em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.5125000000000001em;
+  }
 }
 
 @media screen and (min-width:960px) {
@@ -240,31 +255,36 @@ exports[`Standfirst renders with default styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 20px;
-  line-height: 1.6;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
   padding: 1px 0;
 }
 
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.45000000000000007em;
-}
+@media screen and (max-width:959px) {
+  .emotion-0 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 500;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
 
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.5125000000000001em;
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.45000000000000007em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.5125000000000001em;
+  }
 }
 
 @media screen and (min-width:960px) {

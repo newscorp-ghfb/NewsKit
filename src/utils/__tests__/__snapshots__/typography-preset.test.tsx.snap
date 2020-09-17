@@ -21,15 +21,17 @@ exports[`TypographyPreset renders default 1`] = `
 
 exports[`TypographyPreset renders responsive override body010 for xs and body030 for md breakpoints 1`] = `
 <DocumentFragment>
+  @media screen and (max-width:959px) {
   .emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+    font-family: "Noto Sans",sans-serif;
+    font-size: 14px;
+    line-height: 1.4285714285714286;
+    font-weight: 400;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
 }
 
 @media screen and (min-width:960px) {
@@ -53,18 +55,20 @@ exports[`TypographyPreset renders responsive override body010 for xs and body030
 
 exports[`TypographyPreset renders responsive override body010 for xs, body020 for sm, and body030 for md breakpoints 1`] = `
 <DocumentFragment>
+  @media screen and (max-width:479px) {
   .emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+    font-family: "Noto Sans",sans-serif;
+    font-size: 14px;
+    line-height: 1.4285714285714286;
+    font-weight: 400;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:480px) and (max-width:959px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 16px;
@@ -98,15 +102,17 @@ exports[`TypographyPreset renders responsive override body010 for xs, body020 fo
 
 exports[`TypographyPreset renders responsive override body010 for xs, body020 for sm, and wrong for md breakpoints 1`] = `
 <DocumentFragment>
+  @media screen and (max-width:479px) {
   .emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+    font-family: "Noto Sans",sans-serif;
+    font-size: 14px;
+    line-height: 1.4285714285714286;
+    font-weight: 400;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
 }
 
 @media screen and (min-width:480px) {
@@ -130,18 +136,20 @@ exports[`TypographyPreset renders responsive override body010 for xs, body020 fo
 
 exports[`TypographyPreset renders responsive override body010 for xs, body020 for sm, body030 for md, code010 for lg breakpoints and ignore wrong prop 1`] = `
 <DocumentFragment>
+  @media screen and (max-width:479px) {
   .emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+    font-family: "Noto Sans",sans-serif;
+    font-size: 14px;
+    line-height: 1.4285714285714286;
+    font-weight: 400;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:480px) and (max-width:959px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 16px;
@@ -154,7 +162,7 @@ exports[`TypographyPreset renders responsive override body010 for xs, body020 fo
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 18px;

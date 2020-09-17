@@ -5,6 +5,7 @@ import {
   getPaddingPreset,
   getSpacingInline,
   getSpacingStack,
+  getStylePreset,
 } from '../utils/style';
 import {Stack, Flow, StackProps} from '../stack';
 import {
@@ -13,7 +14,7 @@ import {
   SpacePresetKeys,
   PaddingPresetKeys,
 } from '../theme';
-import {getStylePreset} from '../utils/style-preset';
+
 import {getToken} from '../utils/get-token';
 
 export interface ShareBarProps {

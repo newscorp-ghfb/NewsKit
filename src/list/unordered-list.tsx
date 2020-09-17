@@ -1,11 +1,11 @@
 import React from 'react';
-import {styled} from '../utils/style';
+import {styled, getStylePreset} from '../utils/style';
 import {isValidNode} from '../utils/component';
 import {getBuiId} from '../utils/get-bui-id';
 import {StyledLi, StyledUl} from './styled';
 import {TextBlock} from '../text-block';
 import {Block} from '../block';
-import {getStylePreset} from '../utils/style-preset';
+
 import {useTheme, IconSizeKeys, SpacePresetKeys} from '../theme';
 import {getToken} from '../utils/get-token';
 import {IconComponent} from '../icons';

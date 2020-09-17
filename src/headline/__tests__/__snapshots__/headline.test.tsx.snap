@@ -5,34 +5,10 @@ exports[`headline renders correctly with default props 1`] = `
   .emotion-0 {
   display: inline-block;
   margin: 0;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 36px;
-  line-height: 1.2222222222222223;
-  font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
   color: #0a0a0a;
 }
 
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.2611111111111112em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3236111111111112em;
-}
-
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 36px;
@@ -61,7 +37,36 @@ exports[`headline renders correctly with default props 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) and (max-width:959px) {
+  .emotion-0 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 36px;
+    line-height: 1.2222222222222223;
+    font-weight: 700;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2611111111111112em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3236111111111112em;
+  }
+}
+
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;
@@ -132,34 +137,10 @@ exports[`headline renders correctly with default props 2`] = `
   .emotion-1 {
   display: inline-block;
   margin: 0;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 36px;
-  line-height: 1.2222222222222223;
-  font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
   color: #0a0a0a;
 }
 
-.emotion-1::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.2611111111111112em;
-}
-
-.emotion-1::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3236111111111112em;
-}
-
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
   .emotion-1 {
     font-family: "Noto Sans",sans-serif;
     font-size: 36px;
@@ -188,7 +169,36 @@ exports[`headline renders correctly with default props 2`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) and (max-width:959px) {
+  .emotion-1 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 36px;
+    line-height: 1.2222222222222223;
+    font-weight: 700;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-1::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2611111111111112em;
+  }
+
+  .emotion-1::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3236111111111112em;
+  }
+}
+
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-1 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;
@@ -253,36 +263,11 @@ exports[`headline renders correctly with default props 2`] = `
 .emotion-0 {
   display: inline-block;
   margin: 0;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 36px;
-  line-height: 1.2222222222222223;
-  font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
   color: #0a68c1;
-  margin-right: 12px;
   text-transform: uppercase;
 }
 
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.2611111111111112em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3236111111111112em;
-}
-
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 36px;
@@ -311,7 +296,36 @@ exports[`headline renders correctly with default props 2`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) and (max-width:959px) {
+  .emotion-0 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 36px;
+    line-height: 1.2222222222222223;
+    font-weight: 700;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-0::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2611111111111112em;
+  }
+
+  .emotion-0::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3236111111111112em;
+  }
+}
+
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;
@@ -369,13 +383,19 @@ exports[`headline renders correctly with default props 2`] = `
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
   .emotion-0 {
     margin-right: 12px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) and (max-width:959px) {
+  .emotion-0 {
+    margin-right: 12px;
+  }
+}
+
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-0 {
     margin-right: 16px;
   }
@@ -422,7 +442,6 @@ exports[`headline renders correctly with overriden props 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #0a68c1;
-  margin-right: 12px;
   text-transform: uppercase;
 }
 
@@ -442,13 +461,19 @@ exports[`headline renders correctly with overriden props 1`] = `
   margin-top: -0.3375em;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
   .emotion-0 {
     margin-right: 12px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) and (max-width:959px) {
+  .emotion-0 {
+    margin-right: 12px;
+  }
+}
+
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-0 {
     margin-right: 16px;
   }
@@ -463,34 +488,10 @@ exports[`headline renders correctly with overriden props 1`] = `
 .emotion-1 {
   display: inline-block;
   margin: 0;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 36px;
-  line-height: 1.2222222222222223;
-  font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
   color: #2f75d7;
 }
 
-.emotion-1::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.2611111111111112em;
-}
-
-.emotion-1::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3236111111111112em;
-}
-
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
   .emotion-1 {
     font-family: "Noto Sans",sans-serif;
     font-size: 36px;
@@ -519,7 +520,36 @@ exports[`headline renders correctly with overriden props 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) and (max-width:959px) {
+  .emotion-1 {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 36px;
+    line-height: 1.2222222222222223;
+    font-weight: 700;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-1::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2611111111111112em;
+  }
+
+  .emotion-1::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3236111111111112em;
+  }
+}
+
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-1 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;

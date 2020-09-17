@@ -43,16 +43,12 @@ export const getMediaQueryFromTheme = (
   return queries.join('');
 };
 
-export const isResponsive = (prop: unknown, breakpoints: Breakpoints) => {
-  if (
-    typeof prop === 'object' &&
-    prop != null &&
-    Object.keys(breakpoints).some(bp =>
-      Object.prototype.hasOwnProperty.call(prop, bp),
-    )
-  ) {
-    return true;
-  }
-
-  return false;
-};
+export const isResponsive = (
+  prop: unknown,
+  breakpoints: Breakpoints,
+): prop is Record<keyof Breakpoints, unknown> =>
+  prop &&
+  typeof prop === 'object' &&
+  Object.keys(breakpoints).some(bp =>
+    Object.prototype.hasOwnProperty.call(prop, bp),
+  );

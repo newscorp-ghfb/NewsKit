@@ -30,11 +30,13 @@ exports[`Block with props renders with spaceInline020 1`] = `
 
 exports[`Block with props renders with spaceStack010 for xs, spaceStack020 for sm, and spaceStack030 for md breakpoints 1`] = `
 <DocumentFragment>
+  @media screen and (max-width:479px) {
   .emotion-0 {
-  margin-bottom: 4px;
+    margin-bottom: 4px;
+  }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:480px) and (max-width:959px) {
   .emotion-0 {
     margin-bottom: 8px;
   }

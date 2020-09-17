@@ -1,5 +1,4 @@
-import {styled, getPaddingPreset} from '../utils/style';
-import {getStylePreset} from '../utils/style-preset';
+import {styled, getPaddingPreset, getStylePreset} from '../utils/style';
 import {TabGroupProps} from './types';
 import {Stack} from '../stack';
 

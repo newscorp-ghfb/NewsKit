@@ -1,6 +1,6 @@
 import React from 'react';
-import {styled} from '../utils/style';
-import {getStylePreset} from '../utils/style-preset';
+import {styled, getStylePreset} from '../utils/style';
+
 import {StylePresetKeys} from '../theme';
 
 interface DividerProps {

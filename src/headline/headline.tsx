@@ -4,8 +4,9 @@ import {
   getTypographyPreset,
   MQ,
   getSpacingInline,
+  getStylePreset,
 } from '../utils/style';
-import {getStylePreset} from '../utils/style-preset';
+
 import {TypographyPresetKeys, StylePresetKeys, SpacePresetKeys} from '../theme';
 
 export interface HeadlineProps {

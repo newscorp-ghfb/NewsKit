@@ -1,8 +1,7 @@
 import React from 'react';
-import {styled, getSpacingFromTheme} from '../utils/style';
+import {styled, getSpacingFromTheme, getStylePreset} from '../utils/style';
 import {Link} from '../link';
 import {Stack} from '../stack';
-
 import {getToken} from '../utils/get-token';
 import {
   useTheme,
@@ -13,7 +12,6 @@ import {
 import {Block} from '../block';
 import {TextBlock} from '../text-block/text-block';
 import {BylineProps, BylineData} from './types';
-import {getStylePreset} from '../utils/style-preset';
 
 const InlineBlock = styled(Block)`
   display: inline-flex;

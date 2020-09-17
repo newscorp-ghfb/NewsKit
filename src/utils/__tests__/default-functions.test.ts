@@ -5,8 +5,8 @@ import {
   getMarginPreset,
   getSpacingStack,
   getSpacingInline,
+  getStylePreset,
 } from '../style';
-import {getStylePreset} from '../style-preset';
 import {createTheme} from '../../theme';
 
 describe('get default presets functions', () => {
@@ -64,15 +64,15 @@ describe('get default presets functions', () => {
         responsiveTestComponent: {
           typographyPreset: {
             xs: 'theDefaultToken',
-            md: 'theDefaultToken',
+            md: 'theOverrideToken',
           },
           marginPreset: {
             xs: 'theDefaultToken',
-            md: 'theDefaultToken',
+            md: 'theOverrideToken',
           },
           paddingPreset: {
             xs: 'theDefaultToken',
-            md: 'theDefaultToken',
+            md: 'theOverrideToken',
           },
         },
       },

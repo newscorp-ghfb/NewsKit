@@ -1,20 +1,16 @@
-import {StylePresetKeys} from '../theme/types';
 import {
+  StylePresetKeys,
   Theme,
   StylePresetStates,
   StylePresetStyleKeys,
   StylePresetStyles,
   StylePreset,
-} from '../theme';
-import {
-  CSSObject,
-  getDefaultedValue,
-  MQ,
-  getResponsiveValueFromTheme,
-} from './style';
-import {filterObject, rejectObject} from './filter-object';
-
-import {ThemeProp} from './style-types';
+} from '../../theme';
+import {filterObject, rejectObject} from '../filter-object';
+import {ThemeProp} from '../style-types';
+import {getDefaultedValue, getResponsiveValueFromTheme} from './base';
+import {CSSObject} from './emotion';
+import {MQ} from './types';
 
 export interface GetStylePresetFromThemeOptions {
   isLoading?: boolean;
@@ -109,12 +105,8 @@ export const getStylePresetFromTheme = <Props extends ThemeProp>(
   )(props) as Partial<StylePreset> | Array<[string, StylePreset]>;
   if (Array.isArray(stylePreset)) {
     return stylePreset.reduce(
-      (acc, [mq, preset], index) => {
-        const style = getStylePresetValueFromTheme(preset, options);
-        if (index === 0) {
-          return style;
-        }
-        acc[mq] = style;
+      (acc, [mq, preset]) => {
+        acc[mq] = getStylePresetValueFromTheme(preset, options);
         return acc;
       },
       {} as CSSObject,

@@ -1,6 +1,12 @@
 import React from 'react';
-import {styled, getTypographyPreset, MQ, getSpace} from '../utils/style';
-import {getStylePreset} from '../utils/style-preset';
+import {
+  styled,
+  getTypographyPreset,
+  MQ,
+  getSpace,
+  getStylePreset,
+} from '../utils/style';
+
 import {ScreenReaderOnly} from '../screen-reader-only';
 
 import {StylePresetKeys, TypographyPresetKeys, SpacePresetKeys} from '../theme';

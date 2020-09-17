@@ -1,5 +1,6 @@
-import {Responsive, Breakpoints} from 'newskit';
+import {Breakpoints} from 'newskit';
 import {getMediaQueries} from 'newskit/utils/responsive-helpers';
+import {Responsive} from './types';
 
 interface ApplyParams<T> {
   property: string;

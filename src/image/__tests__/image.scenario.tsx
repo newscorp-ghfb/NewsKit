@@ -88,7 +88,7 @@ export default {
             hideLoadingIcon
             overrides={{
               stylePreset: {
-                md: 'imageRoundedMedium',
+                xs: 'imageRoundedMedium',
                 lg: 'imageRoundedLarge',
               },
             }}

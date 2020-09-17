@@ -1,7 +1,7 @@
 import React from 'react';
 import {getTrackBackground, Direction} from 'react-range';
 import {Theme} from '../theme';
-import {getSingleStylePreset} from '../utils/style-preset';
+import {getSingleStylePreset} from '../utils/style';
 
 export const renderLabel = (Label: string | React.ComponentType) => {
   if (typeof Label === 'string') {

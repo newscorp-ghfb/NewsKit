@@ -2,12 +2,14 @@
 
 exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, and incorrect for md breakpoints 1`] = `
 <DocumentFragment>
+  @media screen and (max-width:479px) {
   .emotion-0 {
-  background-color: red;
-}
+    background-color: red;
+  }
 
-.emotion-0:disabled {
-  color: red;
+  .emotion-0:disabled {
+    color: red;
+  }
 }
 
 @media screen and (min-width:480px) {
@@ -24,15 +26,17 @@ exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for
 
 exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, and interactive030 for md breakpoints 1`] = `
 <DocumentFragment>
+  @media screen and (max-width:479px) {
   .emotion-0 {
-  background-color: red;
+    background-color: red;
+  }
+
+  .emotion-0:disabled {
+    color: red;
+  }
 }
 
-.emotion-0:disabled {
-  color: red;
-}
-
-@media screen and (min-width:480px) {
+@media screen and (min-width:480px) and (max-width:959px) {
   .emotion-0 {
     background-color: blue;
   }
@@ -52,17 +56,19 @@ exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for
 
 exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, interactive030 for md, and interactive040 for lg breakpoints 1`] = `
 <DocumentFragment>
+  @media screen and (max-width:479px) {
   .emotion-0 {
-  background-color: red;
+    background-color: red;
+  }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:480px) and (max-width:959px) {
   .emotion-0 {
     background-color: blue;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-0 {
     background-color: green;
   }
@@ -82,17 +88,19 @@ exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for
 
 exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, interactive030 for md, interactive040 for lg breakpoints and ignore wrong prop 1`] = `
 <DocumentFragment>
+  @media screen and (max-width:479px) {
   .emotion-0 {
-  background-color: red;
+    background-color: red;
+  }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:480px) and (max-width:959px) {
   .emotion-0 {
     background-color: blue;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-0 {
     background-color: green;
   }

@@ -1,5 +1,11 @@
 import {CursorProperty} from 'csstype';
-import {styled, getTypographyPreset, getSize, getSpace} from '../utils/style';
+import {
+  styled,
+  getTypographyPreset,
+  getSize,
+  getSpace,
+  getStylePreset,
+} from '../utils/style';
 import {
   StyledTrackProps,
   SliderProps,
@@ -8,7 +14,7 @@ import {
 } from './types';
 import {SizingKeys} from '../theme';
 import {Stack, StackProps} from '../stack';
-import {getStylePreset} from '../utils/style-preset';
+
 import {ThemeProp} from '../utils/style-types';
 
 //

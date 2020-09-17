@@ -21,7 +21,7 @@ import {
 } from './utils';
 import {StyledTrack} from '../slider/styled';
 import {useTheme, Devices} from '../theme';
-import {getSingleStylePreset} from '../utils/style-preset';
+import {getSingleStylePreset} from '../utils/style';
 import {getBuiId} from '../utils/get-bui-id';
 import {LabelPosition} from '../slider/types';
 import {AudioPlayerProps} from './types';

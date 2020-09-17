@@ -4,8 +4,9 @@ import {
   getPaddingPreset,
   getMinHeight,
   getSpacingStack,
+  getStylePreset,
 } from '../utils/style';
-import {getStylePreset} from '../utils/style-preset';
+
 import {Stack} from '../stack';
 
 // TODO: remove filterStates for Card v2. v1 does not need hover/active states

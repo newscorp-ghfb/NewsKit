@@ -1,6 +1,5 @@
 import React from 'react';
-import {styled, getTypographyPreset, MQ} from '../utils/style';
-import {getStylePreset} from '../utils/style-preset';
+import {styled, getTypographyPreset, MQ, getStylePreset} from '../utils/style';
 import {StylePresetKeys, TypographyPresetKeys} from '../theme';
 import {isInlineElement} from '../utils/inline-tags';
 

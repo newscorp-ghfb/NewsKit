@@ -1,5 +1,5 @@
-import {getStylePreset} from '../utils/style-preset';
-import {styled} from '../utils/style';
+import {getStylePreset, styled} from '../utils/style';
+
 import {StyledImageProps, ImageContainerProps} from './types';
 
 export const ImageContainer = styled.div<ImageContainerProps>`

@@ -1,7 +1,7 @@
 import React from 'react';
-import {styled, getPaddingPreset} from '../utils/style';
+import {styled, getPaddingPreset, getStylePreset} from '../utils/style';
 import {TitleBarProps, ContainerProps} from './types';
-import {getStylePreset} from '../utils/style-preset';
+
 import {Headline} from '../headline';
 import {Stack} from '../stack/stack';
 import {filterOutFalsyProperties} from '../utils/filter-object';

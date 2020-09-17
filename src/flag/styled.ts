@@ -3,8 +3,9 @@ import {
   getSizingFromTheme,
   getTypographyPreset,
   getPaddingPreset,
+  getStylePreset,
 } from '../utils/style';
-import {getStylePreset} from '../utils/style-preset';
+
 import {BaseFlagProps} from './types';
 import {getToken} from '../utils/get-token';
 

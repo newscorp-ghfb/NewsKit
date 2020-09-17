@@ -479,5 +479,27 @@ export default {
       name: 'button-with-icon-and-inline-overridden-overrides-size',
       type: 'story',
     },
+    {
+      component: () => (
+        <React.Fragment>
+          <h2>Button style at breakpoints</h2>
+          <Container>
+            <Button
+              overrides={{
+                stylePreset: {
+                  xs: 'buttonOutlinedNegative',
+                  md: 'buttonSolidPositive',
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                } as any,
+              }}
+            >
+              Negative XS - Postive MD
+            </Button>
+          </Container>
+        </React.Fragment>
+      ),
+      name: 'button-style-at-breakpoints',
+      type: 'story',
+    },
   ],
 };

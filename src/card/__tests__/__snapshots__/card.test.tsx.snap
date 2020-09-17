@@ -1365,16 +1365,21 @@ exports[`Card renders media section if the media data is provided 1`] = `
   box-sizing: border-box;
   display: block;
   border-radius: 0;
-  margin-bottom: 16px;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
   .emotion-5 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) and (max-width:959px) {
+  .emotion-5 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-5 {
     margin-bottom: 24px;
   }
@@ -1569,16 +1574,21 @@ exports[`Card renders media section with a custom component 1`] = `
   box-sizing: border-box;
   display: block;
   border-radius: 0;
-  margin-bottom: 16px;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
   .emotion-5 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) and (max-width:959px) {
+  .emotion-5 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-5 {
     margin-bottom: 24px;
   }
@@ -1773,16 +1783,21 @@ exports[`Card renders media section with a custom component using overrides 1`] 
   box-sizing: border-box;
   display: block;
   border-radius: 0;
-  margin-bottom: 16px;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
   .emotion-5 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) and (max-width:959px) {
+  .emotion-5 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-5 {
     margin-bottom: 24px;
   }
@@ -1977,16 +1992,21 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
   box-sizing: border-box;
   display: block;
   border-radius: 0;
-  margin-bottom: 16px;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
   .emotion-5 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) and (max-width:959px) {
+  .emotion-5 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-5 {
     margin-bottom: 24px;
   }
@@ -2265,16 +2285,21 @@ exports[`Card renders media section with overrides 1`] = `
   box-sizing: border-box;
   display: block;
   border-radius: 8px;
-  margin-bottom: 16px;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
   .emotion-5 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) and (max-width:959px) {
+  .emotion-5 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-5 {
     margin-bottom: 24px;
   }
@@ -2385,16 +2410,21 @@ exports[`Card renders with card items 1`] = `
   box-sizing: border-box;
   display: block;
   border-radius: 0;
-  margin-bottom: 16px;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
   .emotion-5 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) and (max-width:959px) {
+  .emotion-5 {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-5 {
     margin-bottom: 24px;
   }
@@ -2966,16 +2996,21 @@ exports[`CardInset renders card with overrides 1`] = `
 .emotion-2 {
   box-sizing: border-box;
   background-color: #ffd284;
-  padding: 24px;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
   .emotion-2 {
     padding: 24px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) and (max-width:959px) {
+  .emotion-2 {
+    padding: 24px;
+  }
+}
+
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-2 {
     padding: 32px;
   }
@@ -3358,16 +3393,21 @@ exports[`CardInset renders with card items 1`] = `
   background-color: #ffffff;
   border-radius: 0;
   color: #2e2e2e;
-  padding: 16px;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
   .emotion-8 {
     padding: 16px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) and (max-width:959px) {
+  .emotion-8 {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-8 {
     padding: 24px;
   }
@@ -3407,19 +3447,24 @@ exports[`CardInset renders with card items 1`] = `
   -ms-flex-pack: start;
   justify-content: flex-start;
   box-sizing: border-box;
-  padding: 12px 16px;
   background-color: #ffffff;
   border-radius: 0;
   min-height: 0;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
   .emotion-20 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) and (max-width:959px) {
+  .emotion-20 {
+    padding: 12px 16px;
+  }
+}
+
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-20 {
     padding: 16px 24px;
   }
@@ -3568,16 +3613,21 @@ exports[`CardInset renders without card items 1`] = `
   background-color: #ffffff;
   border-radius: 0;
   color: #2e2e2e;
-  padding: 16px;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
   .emotion-0 {
     padding: 16px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:480px) and (max-width:959px) {
+  .emotion-0 {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-0 {
     padding: 24px;
   }

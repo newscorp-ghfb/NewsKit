@@ -2,8 +2,10 @@
 
 exports[`MarginPreset renders default 1`] = `
 <DocumentFragment>
+  @media screen and (min-width:480px) and (max-width:959px) {
   .emotion-0 {
-  margin: 16px;
+    margin: 16px;
+  }
 }
 
 @media screen and (min-width:960px) {
@@ -68,8 +70,10 @@ exports[`MarginPreset renders with override spaceStack010 1`] = `
 
 exports[`PaddingPreset renders default 1`] = `
 <DocumentFragment>
+  @media screen and (min-width:480px) and (max-width:959px) {
   .emotion-0 {
-  margin: 16px;
+    margin: 16px;
+  }
 }
 
 @media screen and (min-width:960px) {
@@ -86,14 +90,21 @@ exports[`PaddingPreset renders default 1`] = `
 
 exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, and spaceInset030Squish for md breakpoints 1`] = `
 <DocumentFragment>
+  @media screen and (min-width:480px) and (max-width:959px) {
   .emotion-0 {
-  margin: 16px;
-  padding: 4px 8px;
+    margin: 16px;
+  }
 }
 
 @media screen and (min-width:960px) {
   .emotion-0 {
     margin: 8px;
+  }
+}
+
+@media screen and (max-width:959px) {
+  .emotion-0 {
+    padding: 4px 8px;
   }
 }
 
@@ -111,9 +122,10 @@ exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, a
 
 exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, spaceInset020Squish for sm, and spaceInset030Squish for md breakpoints 1`] = `
 <DocumentFragment>
+  @media screen and (min-width:480px) and (max-width:959px) {
   .emotion-0 {
-  margin: 16px;
-  padding: 4px 8px;
+    margin: 16px;
+  }
 }
 
 @media screen and (min-width:960px) {
@@ -122,7 +134,13 @@ exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, s
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
+  .emotion-0 {
+    padding: 4px 8px;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:959px) {
   .emotion-0 {
     padding: 8px 12px;
   }
@@ -142,9 +160,10 @@ exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, s
 
 exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, spaceInset020Squish for sm, and spaceInset030Squish for md breakpoints in reverser order 1`] = `
 <DocumentFragment>
+  @media screen and (min-width:480px) and (max-width:959px) {
   .emotion-0 {
-  margin: 16px;
-  padding: 4px 8px;
+    margin: 16px;
+  }
 }
 
 @media screen and (min-width:960px) {
@@ -153,7 +172,13 @@ exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, s
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
+  .emotion-0 {
+    padding: 4px 8px;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:959px) {
   .emotion-0 {
     padding: 8px 12px;
   }
@@ -173,14 +198,21 @@ exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, s
 
 exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, spaceInset020Squish for sm, and wrong for md breakpoints 1`] = `
 <DocumentFragment>
+  @media screen and (min-width:480px) and (max-width:959px) {
   .emotion-0 {
-  margin: 16px;
-  padding: 4px 8px;
+    margin: 16px;
+  }
 }
 
 @media screen and (min-width:960px) {
   .emotion-0 {
     margin: 8px;
+  }
+}
+
+@media screen and (max-width:479px) {
+  .emotion-0 {
+    padding: 4px 8px;
   }
 }
 
@@ -198,9 +230,10 @@ exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, s
 
 exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, spaceInset020Squish for sm, spaceInset030Squish for md, spaceInset040Squish for lg breakpoints and ignore wrong prop 1`] = `
 <DocumentFragment>
+  @media screen and (min-width:480px) and (max-width:959px) {
   .emotion-0 {
-  margin: 16px;
-  padding: 4px 8px;
+    margin: 16px;
+  }
 }
 
 @media screen and (min-width:960px) {
@@ -209,13 +242,19 @@ exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, s
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (max-width:479px) {
+  .emotion-0 {
+    padding: 4px 8px;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:959px) {
   .emotion-0 {
     padding: 8px 12px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:960px) and (max-width:1439px) {
   .emotion-0 {
     padding: 12px 16px;
   }
@@ -235,8 +274,10 @@ exports[`PaddingPreset renders responsive override spaceInset010Squish for xs, s
 
 exports[`PaddingPreset renders with override incorrect object 1`] = `
 <DocumentFragment>
+  @media screen and (min-width:480px) and (max-width:959px) {
   .emotion-0 {
-  margin: 16px;
+    margin: 16px;
+  }
 }
 
 @media screen and (min-width:960px) {
@@ -254,8 +295,13 @@ exports[`PaddingPreset renders with override incorrect object 1`] = `
 exports[`PaddingPreset renders with override spaceInset010Squish 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  margin: 16px;
   padding: 4px 8px;
+}
+
+@media screen and (min-width:480px) and (max-width:959px) {
+  .emotion-0 {
+    margin: 16px;
+  }
 }
 
 @media screen and (min-width:960px) {
