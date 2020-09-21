@@ -10,7 +10,9 @@ describe('ExperimentationWeb', () => {
     test('renders optimizely scripts', () => {
       const fragment = renderToFragment(
         <ExperimentationWeb
-          optimizelyCdn="https://cdn.optimizely.com/js/123456789.js"
+          optimizelyWebConfig={{
+            scriptCdn: 'https://cdn.optimizely.com/js/123456789.js',
+          }}
           reactHelmet={helmet}
         />,
       );

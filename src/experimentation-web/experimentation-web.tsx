@@ -1,23 +1,20 @@
 import * as React from 'react';
-import {
-  RenderScriptsReactHelmetProp,
-  RenderScripts,
-} from '../utils/render-scripts';
-
-export interface ExperimentationWebProps extends RenderScriptsReactHelmetProp {
-  optimizelyCdn: string;
-}
+import {RenderScripts} from '../utils/render-scripts';
+import {ExperimentationWebProps} from './types';
 
 export const ExperimentationWeb: React.FC<ExperimentationWebProps> = ({
-  optimizelyCdn,
   reactHelmet,
-}) => (
-  <RenderScripts
-    scripts={[
-      {
-        content: `(function() {
+  ...props
+}) => {
+  const {optimizelyWebConfig} = props;
+
+  return (
+    <RenderScripts
+      scripts={[
+        {
+          content: `(function() {
             if (window.location === window.parent.location) {
-              window["optimizely_cdn"] = "${optimizelyCdn}";
+              window["optimizely_cdn"] = "${optimizelyWebConfig.scriptCdn}";
 
               window['optimizely'] = window['optimizely'] || [];
               if (document.cookie.indexOf('nuk-consent-personalisation=1') === -1) {
@@ -27,11 +24,12 @@ export const ExperimentationWeb: React.FC<ExperimentationWebProps> = ({
               }
             }
           })();`,
-      },
-      {
-        src: optimizelyCdn,
-      },
-    ]}
-    reactHelmet={reactHelmet}
-  />
-);
+        },
+        {
+          src: optimizelyWebConfig.scriptCdn,
+        },
+      ]}
+      reactHelmet={reactHelmet}
+    />
+  );
+};

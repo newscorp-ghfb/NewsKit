@@ -26,7 +26,11 @@ and Optimizely script CDN URL.
 ## Props
 
 <LegacyBlock marginTop="sizing040">
-  <Prop required name="optimizelyCdn" type="string" required>
+  <Prop name="optimizelyWebConfig" required>
+    The config object that initialises Optimizely Web. Required parameters:{' '}
+    <b>scriptCdn</b>.
+  </Prop>
+  <Prop required name="scriptCdn" type="string" required>
     Optimizely script CDN URL.
     The URL can be found in <i>Settings -> Implementation</i> for every web project in the Optimizely platform.
     More information on how to retrieve the script can be found{' '}
