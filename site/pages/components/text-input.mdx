@@ -129,7 +129,7 @@ Text Input has a number of props to facilitate a variety of uses:
           value: TextInputSize.Small,
         },
         {
-          label: 'TextInputSize.Medium',
+          label: 'Default (TextInputSize.Medium)',
           value: TextInputSize.Medium,
           isDefault: true,
         },
@@ -223,7 +223,8 @@ Text Input has a number of props to facilitate a variety of uses:
       propName: 'assistiveText',
       options: [
         {
-          label: 'No Assistive Text',
+          label: 'Unset',
+          value: undefined,
           isDefault: true,
         },
         {
@@ -238,6 +239,7 @@ Text Input has a number of props to facilitate a variety of uses:
       options: [
         {
           label: 'Default',
+          value: 'Placeholder',
           isDefault: true,
         },
         {

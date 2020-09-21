@@ -123,7 +123,7 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
       name: 'spaceInline',	
       propName: 'spaceInline',	
       options: (() =>	
-        [{label: 'no spaceInline', value: undefined, isDefault: true}].concat(['sizing010', 'sizing020', 'sizing030', 'sizing040',].map((size, i) => ({	
+        [{label: 'Unset', value: undefined, isDefault: true}].concat(['sizing010', 'sizing020', 'sizing030', 'sizing040',].map((size, i) => ({	
           label: size,	
           value: size,	
           isDefault: false	
@@ -133,7 +133,7 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
       name: 'Space Stack',
       propName: 'spaceStack',
       options: (() =>
-        [{label: 'no space', value: undefined, isDefault: true}].concat(['sizing010', 'sizing020', 'sizing030', 'sizing040'].map((size, i) => ({
+        [{label: 'Unset', value: undefined, isDefault: true}].concat(['sizing010', 'sizing020', 'sizing030', 'sizing040'].map((size, i) => ({
           label: size,
           value: size,
           isDefault: !i,
@@ -148,7 +148,7 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
           value: 'wrap',
         },
         {
-          label: 'nowrap',
+          label: 'Default (nowrap)',
           value: 'nowrap',
           isDefault: true,
         },
