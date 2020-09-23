@@ -9,7 +9,11 @@ const Constrain = styled.div`
   display: inline-block;
 `;
 
-const entries = Object.entries(icons)
+// Removing IndeterminateProgressIndicator from storybook
+// because it's visual test is failing on applitools
+const {IndeterminateProgressIndicator, ...restIcons} = icons;
+
+const entries = Object.entries(restIcons)
   .filter(icon => icon[0] !== 'Svg')
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   .map((entry: any) => {
