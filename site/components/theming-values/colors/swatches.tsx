@@ -9,6 +9,7 @@ import {
   StyledSwatchCardBottom,
   StyledSwatchCardTitle,
   StyledSwatchCardDot,
+  BadgeContainer,
 } from './styled';
 
 export type SwatchComponent = React.FC<SwatchRowProps>;
@@ -17,6 +18,7 @@ interface SwatchRowProps {
   color: ThemeColor;
   index: number;
   length: number;
+  isOverlay?: boolean;
 }
 
 export const SwatchRow: SwatchComponent = ({
@@ -32,11 +34,11 @@ export const SwatchRow: SwatchComponent = ({
           <Stack flow="horizontal-center" spaceInline="sizing050">
             {color.parentColor && <span>({color.parentColor.name})</span>}
             <span>{color.value.toUpperCase()}</span>
-            <span>
+            <BadgeContainer>
               <StyledAccessibilityBadge>
                 {color.contrastRating}
               </StyledAccessibilityBadge>
-            </span>
+            </BadgeContainer>
           </Stack>
         </span>
       </Stack>
@@ -44,21 +46,23 @@ export const SwatchRow: SwatchComponent = ({
   </Cell>
 );
 
-export const SwatchCard: SwatchComponent = ({color}: SwatchRowProps) => (
+export const SwatchCard: SwatchComponent = ({color, isOverlay}) => (
   <Cell xs={6} lg={3}>
     <StyledSwatchCard>
-      <StyledSwatchCardTop {...color}>
+      <StyledSwatchCardTop {...color} isOverlay={isOverlay}>
         <Stack flow="horizontal-top" stackDistribution="flex-end">
-          <StyledAccessibilityBadge>
-            {color.contrastRating}
-          </StyledAccessibilityBadge>
+          {!isOverlay && (
+            <StyledAccessibilityBadge>
+              {color.contrastRating}
+            </StyledAccessibilityBadge>
+          )}
         </Stack>
       </StyledSwatchCardTop>
 
-      <StyledSwatchCardBottom {...color}>
+      <StyledSwatchCardBottom isOverlay={isOverlay} {...color}>
         <StyledSwatchCardTitle>{color.name}</StyledSwatchCardTitle>
         <Stack flow="horizontal-center" stackDistribution="space-between">
-          {color.parentColor && (
+          {color.parentColor && !isOverlay && (
             <span>
               <StyledSwatchCardDot backgroundColor={color.parentColor.value} />
               {color.parentColor.name}

@@ -82,6 +82,11 @@
         "id": "/foundations/motion"
       },
       {
+        "title": "Overlays",
+        "page": true,
+        "id": "/foundations/overlays"
+      },
+      {
         "title": "Spacing",
         "page": true,
         "id": "/foundations/spacing"

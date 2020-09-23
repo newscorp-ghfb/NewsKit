@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Grid, Cell, useTheme, Theme, GridProps, P} from 'newskit';
+import {Grid, Cell, useTheme, Theme, GridProps, P, Block} from 'newskit';
 import {palettes as newskitLightPaletteColors} from 'newskit/theme/foundations/colors';
 import {overlays} from 'newskit/theme/foundations/overlays';
 import {H3} from '../../markdown-elements';
@@ -18,7 +18,8 @@ const ColorSet: React.FC<{
   colors: ThemeColor[];
   Swatch: SwatchComponent;
   gridProps?: GridProps;
-}> = ({colors: unsortedColors, Swatch, gridProps}) => {
+  isOverlay?: boolean;
+}> = ({colors: unsortedColors, Swatch, gridProps, isOverlay}) => {
   const colors = unsortedColors;
   const groupTitle =
     colors[0].group[0].toUpperCase() + colors[0].group.substring(1);
@@ -40,11 +41,30 @@ const ColorSet: React.FC<{
 
   return (
     <div>
-      <H3>{groupTitle}</H3>
-      <P>{description[groupTitle.toLowerCase() as keyof typeof description]}</P>
+      <Block
+        overrides={{
+          spaceStack: 'space050',
+        }}
+      >
+        <H3>{groupTitle}</H3>
+      </Block>
+      <Block
+        overrides={{
+          spaceStack: 'space050',
+        }}
+      >
+        <P>
+          {description[groupTitle.toLowerCase() as keyof typeof description]}
+        </P>
+      </Block>
       <Grid {...gridProps}>
         {colors.map((color, index, {length}) => (
-          <Swatch color={color} index={index} length={length} />
+          <Swatch
+            color={color}
+            index={index}
+            length={length}
+            isOverlay={isOverlay}
+          />
         ))}
       </Grid>
     </div>
@@ -55,6 +75,9 @@ const getPaletteColorObjects = (theme: Theme) =>
   Object.entries(theme.colors)
     .filter(([name]) => paletteColorNames.includes(name))
     .map(mapColorObjects(theme));
+
+const getPaletteOverlayObjects = (theme: Theme) =>
+  Object.entries(theme.overlays).map(mapColorObjects(theme));
 
 export const ColorPalettes: React.FC = () => {
   const theme = useTheme();
@@ -82,7 +105,11 @@ export const ColorPalettes: React.FC = () => {
   );
 };
 
-export const ColorFoundations = (): JSX.Element => {
+export const ColorFoundations = ({
+  isOverlay,
+}: {
+  isOverlay: boolean;
+}): JSX.Element => {
   const theme = useTheme();
   const colorFoundations = Object.entries(theme.colors).reduce(
     (acc, [key, value]) => {
@@ -94,11 +121,16 @@ export const ColorFoundations = (): JSX.Element => {
     {} as Record<string, string>,
   );
 
-  const foundationObjects = Object.entries({...colorFoundations, ...overlays})
+  const foundations = isOverlay ? overlays : colorFoundations;
+  const foundationObjects = Object.entries({...foundations})
     .map(
       mapColorObjects(
         theme,
-        createPaletteColorMap(getPaletteColorObjects(theme)),
+        createPaletteColorMap(
+          isOverlay
+            ? getPaletteOverlayObjects(theme)
+            : getPaletteColorObjects(theme),
+        ),
       ),
     )
     .reduce(groupColorObjects, {} as Record<string, ThemeColor[]>);
@@ -113,6 +145,7 @@ export const ColorFoundations = (): JSX.Element => {
             gridProps={{xsMargin: 'sizing000'}}
             Swatch={SwatchCard}
             colors={palette}
+            isOverlay={isOverlay}
           />
         </Cell>
       ))}

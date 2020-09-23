@@ -13,11 +13,16 @@ import {
 import {ThemeColor} from './types';
 import {getTextColor, getBorderRadius} from './utils';
 
+export const BadgeContainer = styled.span`
+  height: ${getSizingFromTheme('sizing060')};
+`;
+
 export const StyledAccessibilityBadge = styled(Flag)`
   background-color: ${getColorFromTheme('interface010')};
   border-radius: ${getBorderRadiusFromTheme('borderRadiusRounded010')};
   color: ${getColorFromTheme('inkSubtle')};
   width: ${getSizingFromTheme('sizing070')};
+  height: ${getSizingFromTheme('sizing060')};
 `;
 
 export const StyledSwatchRow = styled.span<
@@ -42,14 +47,22 @@ export const StyledSwatchCard = styled.div`
   overflow: hidden;
 `;
 
-export const StyledSwatchCardTop = styled.div<ThemeColor>`
+export const StyledSwatchCardTop = styled.div<
+  ThemeColor & {isOverlay?: boolean}
+>`
   height: ${getSizingFromTheme('sizing100')};
-  background-color: ${({theme, name}) => theme.colors[name as ColorKeys]};
+  background: ${({theme, name, isOverlay}) =>
+    isOverlay
+      ? theme.overlays[name as ColorKeys]
+      : theme.colors[name as ColorKeys]};
   padding: ${getSpacingFromTheme('spaceInset020')};
 `;
 
-export const StyledSwatchCardBottom = styled.div<ThemeColor>`
-  height: ${getSizingFromTheme('sizing100')};
+export const StyledSwatchCardBottom = styled.div<
+  ThemeColor & {isOverlay?: boolean}
+>`
+  height: ${({isOverlay}) =>
+    getSizingFromTheme(isOverlay ? 'sizing110' : 'sizing100')};
   background-color: ${({theme}) => theme.colors.white};
   padding: ${getSpacingFromTheme('spaceInset030Squish')};
 `;
@@ -62,7 +75,7 @@ export const StyledSwatchCardDot = styled.div<{backgroundColor: string}>`
   display: inline-block;
   width: ${getSizingFromTheme('sizing030')};
   height: ${getSizingFromTheme('sizing030')};
-  background-color: ${({backgroundColor}) => backgroundColor};
+  background: ${({backgroundColor}) => backgroundColor};
   box-shadow: ${getShadowFromTheme('shadow030')};
   border-radius: ${getBorderRadiusFromTheme('borderRadiusCircle')};
   margin-right: ${getSizingFromTheme('sizing020')};
