@@ -57,6 +57,22 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
   min-height: 48px;
 }
 
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
+}
+
 .emotion-1:focus:not(:disabled) {
   background-color: #fafafa;
   border-color: #0a68c1;
@@ -208,6 +224,22 @@ exports[`TextInput renders correctly with label hidden 1`] = `
   padding: 12px;
   margin-bottom: 8px;
   min-height: 48px;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
 }
 
 .emotion-1:focus:not(:disabled) {
@@ -362,6 +394,22 @@ exports[`TextInput renders correctly without asistive text 1`] = `
   min-height: 48px;
 }
 
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
+}
+
 .emotion-1:focus:not(:disabled) {
   background-color: #fafafa;
   border-color: #0a68c1;
@@ -467,6 +515,22 @@ exports[`TextInput renders disabled text input 1`] = `
   padding: 12px;
   margin-bottom: 8px;
   min-height: 48px;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
 }
 
 .emotion-1:focus:not(:disabled) {
@@ -620,6 +684,22 @@ exports[`TextInput renders large text input 1`] = `
   min-height: 64px;
 }
 
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
+}
+
 .emotion-1:focus:not(:disabled) {
   background-color: #fafafa;
   border-color: #0a68c1;
@@ -771,6 +851,22 @@ exports[`TextInput renders readonly text input 1`] = `
   padding: 12px;
   margin-bottom: 8px;
   min-height: 48px;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
 }
 
 .emotion-1:focus:not(:disabled) {
@@ -964,6 +1060,22 @@ exports[`TextInput renders small text input 1`] = `
   padding: 4px 8px;
   margin-bottom: 8px;
   min-height: 32px;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
 }
 
 .emotion-1:focus:not(:disabled) {
@@ -1224,6 +1336,22 @@ exports[`TextInput renders with different minHeight 1`] = `
   min-height: 64px;
 }
 
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
+}
+
 .emotion-1:focus:not(:disabled) {
   background-color: #fafafa;
   border-color: #0a68c1;
@@ -1336,6 +1464,22 @@ exports[`TextInput renders with fixed width 1`] = `
   padding: 12px;
   margin-bottom: 8px;
   min-height: 48px;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
 }
 
 .emotion-1:focus:not(:disabled) {
@@ -1495,6 +1639,22 @@ exports[`TextInput renders with full width 1`] = `
   min-height: 48px;
 }
 
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
+}
+
 .emotion-1:focus:not(:disabled) {
   background-color: #fafafa;
   border-color: #0a68c1;
@@ -1652,6 +1812,22 @@ exports[`TextInput should render custom aria-label 1`] = `
   min-height: 48px;
 }
 
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
+}
+
 .emotion-1:focus:not(:disabled) {
   background-color: #fafafa;
   border-color: #0a68c1;
@@ -1804,6 +1980,22 @@ exports[`TextInput should render custom placeholder 1`] = `
   padding: 12px;
   margin-bottom: 8px;
   min-height: 48px;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
 }
 
 .emotion-1:focus:not(:disabled) {

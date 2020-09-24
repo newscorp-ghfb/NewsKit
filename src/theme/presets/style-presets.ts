@@ -702,6 +702,7 @@ stylePresets.textInput = {
     borderRadius: '{{borders.borderRadiusDefault}}',
     color: '{{colors.inkBase}}',
     textOverflow: 'ellipsis',
+    placeholderColor: '{{colors.inkSubtle}}',
   },
   focus: {
     backgroundColor: '{{colors.interface020}}',

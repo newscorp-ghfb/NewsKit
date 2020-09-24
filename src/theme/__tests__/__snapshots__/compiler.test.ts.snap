@@ -2214,6 +2214,7 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "1px",
         "color": "#2e2e2e",
+        "placeholderColor": "#535353",
         "textOverflow": "ellipsis",
       },
       "disabled": Object {

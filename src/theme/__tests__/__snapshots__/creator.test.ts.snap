@@ -2213,6 +2213,7 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidthDefault}}",
         "color": "{{colors.inkBase}}",
+        "placeholderColor": "{{colors.inkSubtle}}",
         "textOverflow": "ellipsis",
       },
       "disabled": Object {

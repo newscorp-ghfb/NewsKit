@@ -13,6 +13,7 @@ export interface StylePresetStyles {
   boxShadow?: string;
   color?: string;
   iconColor?: string;
+  placeholderColor?: string;
   textDecoration?: string;
   textOverflow?: string;
 }

@@ -27,7 +27,7 @@ export const getPresetStyles = (
   options?: GetStylePresetFromThemeOptions,
 ) => {
   const {filterStyles = null, omitStyles = []} = options || {};
-  const {iconColor, ...cssObject} = filterStyles
+  const {iconColor, placeholderColor, ...cssObject} = filterStyles
     ? filterObject(presetStyles, filterStyles)
     : rejectObject(presetStyles, omitStyles);
   if (iconColor) {
@@ -36,6 +36,15 @@ export const getPresetStyles = (
       svg: {
         fill: iconColor,
         color: iconColor,
+      },
+    } as CSSObject;
+  }
+
+  if (placeholderColor) {
+    return {
+      ...cssObject,
+      '::placeholder': {
+        color: placeholderColor,
       },
     } as CSSObject;
   }
