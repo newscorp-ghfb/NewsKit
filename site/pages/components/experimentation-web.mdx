@@ -26,7 +26,7 @@ and Optimizely script CDN URL.
 ## Props
 
 <LegacyBlock marginTop="sizing040">
-  <Prop name="optimizelyWebConfig" required>
+  <Prop name="optimizelyWebConfig" type="object" required>
     The config object that initialises Optimizely Web. Required parameters:{' '}
     <b>scriptCdn</b>.
     <Prop required name="scriptCdn" type="string" required>
@@ -38,7 +38,7 @@ and Optimizely script CDN URL.
       </a>{' '}.
     </Prop>
   </Prop>
-  <Prop name="reactHelmet" type="react-helmet Helmet Component">
+  <Prop name="reactHelmet" type="React.ComponentType<{script?: Array<any>}>">
     By default the Experimentation Web component will inject its scripts by rendering script
     tags. However, if your project is using{' '}
     <a href="https://www.npmjs.com/package/react-helmet" target="_blank">
