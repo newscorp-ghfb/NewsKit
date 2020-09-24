@@ -13,7 +13,7 @@ export interface BylineProps {
   overrides?: {
     stylePreset?: string;
     typographyPreset?: string;
-    space?: SizingKeys;
+    spaceStack?: SizingKeys;
     link?: {
       stylePreset?: string;
       typographyPreset?: string;

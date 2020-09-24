@@ -170,13 +170,13 @@ describe('Card', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders actions section with overrides for paddingPreset', () => {
+  test('renders actions section with overrides for spaceInset', () => {
     const fragment = renderToFragmentWithTheme(Card, {
       actions: actionsComponent,
       children: cardBody,
       overrides: {
         actionsContainer: {
-          paddingPreset: 'spaceInset030Squish',
+          spaceInset: 'spaceInset030Squish',
         },
       },
     });
@@ -192,7 +192,7 @@ describe('Card', () => {
           stylePreset: 'cardContainerMock',
           mediaContainer: {
             stylePreset: 'cardContainerMediaMock',
-            spaceStack: {
+            spaceInline: {
               xs: 'space050',
               sm: 'space050',
               md: 'space060',
@@ -201,11 +201,11 @@ describe('Card', () => {
           },
           teaserContainer: {
             stylePreset: 'cardContainerTeaserMock',
-            paddingPreset: 'spaceInset010Squish',
+            spaceInset: 'spaceInset010Squish',
           },
           actionsContainer: {
             stylePreset: 'cardContainerActionsMock',
-            paddingPreset: 'spaceInset010Squish',
+            spaceInset: 'spaceInset010Squish',
             minHeight: 'sizing090',
           },
         },
@@ -240,11 +240,11 @@ describe('CardInset', () => {
           stylePreset: 'cardContainerMock',
           mediaContainer: {
             stylePreset: 'cardContainerMediaMock',
-            spaceStack: 'space000',
+            spaceInline: 'space000',
           },
           teaserContainer: {
             stylePreset: 'cardContainerTeaserMock',
-            paddingPreset: {
+            spaceInset: {
               xs: 'spaceInset050',
               sm: 'spaceInset050',
               md: 'spaceInset060',
@@ -253,7 +253,7 @@ describe('CardInset', () => {
           },
           actionsContainer: {
             stylePreset: 'cardContainerActionsMock',
-            paddingPreset: {
+            spaceInset: {
               xs: 'spaceInset040Squish',
               sm: 'spaceInset040Squish',
               md: 'spaceInset050Squish',

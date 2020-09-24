@@ -90,10 +90,10 @@ describe('Button', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders with custom padding preset', () => {
+  test('renders with custom spaceInset preset', () => {
     const props: ButtonProps = {
       overrides: {
-        paddingPreset: 'spaceInset000Squish',
+        spaceInset: 'spaceInset000Squish',
       },
     };
 

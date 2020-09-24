@@ -197,7 +197,7 @@ describe('TextInput', () => {
         },
         input: {
           stylePreset: 'textInputContainerCustom',
-          paddingPreset: 'spaceInset020',
+          spaceInset: 'spaceInset020',
           minHeight: 'sizing090',
           typographyPreset: 'body030',
           spaceStack: 'space040',

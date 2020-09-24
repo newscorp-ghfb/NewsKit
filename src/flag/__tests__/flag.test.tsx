@@ -53,7 +53,7 @@ describe('Flag', () => {
     const props: FlagProps = {
       overrides: {
         stylePreset: 'flagMinimal',
-        paddingPreset: 'spaceInset000Squish',
+        spaceInset: 'spaceInset000Squish',
       },
     };
     const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
@@ -69,7 +69,7 @@ describe('Flag', () => {
     const props: FlagProps = {
       overrides: {
         stylePreset: 'flagMinimal',
-        paddingPreset: 'spaceInset000Squish',
+        spaceInset: 'spaceInset000Squish',
       },
     };
     const fragment = renderToFragmentWithTheme(
@@ -105,7 +105,7 @@ describe('Flag', () => {
   test('renders a flag with an icon and custom spacing between elements', () => {
     const props: FlagProps = {
       overrides: {
-        space: 'sizing020',
+        spaceInline: 'sizing020',
       },
     };
     const fragment = renderToFragmentWithTheme(

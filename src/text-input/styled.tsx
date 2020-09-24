@@ -1,10 +1,10 @@
 import {
   styled,
   getTypographyPreset,
-  getSpacingStack,
-  getSpacingInline,
+  getSpacingStackHorizontal,
+  getSpacingInlineHorizontal,
   getMinHeight,
-  getPaddingPreset,
+  getSpacingInset,
   getSizingFromTheme,
   getStylePreset,
   getStylePresetFromTheme,
@@ -44,10 +44,11 @@ export const StyledInput = styled.input<InputContainer>`
     getTypographyPreset(`textInput.${$size}.input`, 'input', {
       withCrop: true,
     })}
-  ${({$size}) => getPaddingPreset(`textInput.${$size}.input`, 'input')}
-  ${({$size}) => getSpacingStack(`textInput.${$size}.input`, 'input')}
-  ${({$size}) => getSpacingInline(`textInput.${$size}.input`, 'input')}
-  min-height: ${({$size}) => getMinHeight(`textInput.${$size}.input`, 'input')}
+  ${({$size}) => getSpacingInset(`textInput.${$size}.input`, 'input')}
+  ${({$size}) => getSpacingStackHorizontal(`textInput.${$size}.input`, 'input')}
+  ${({$size}) =>
+    getSpacingInlineHorizontal(`textInput.${$size}.input`, 'input')} 
+  min-height: ${({$size}) => getMinHeight(`textInput.${$size}.input`, 'input')} 
 `;
 
 export const StyledLabel = styled.label<InputContainer>`
@@ -57,8 +58,10 @@ export const StyledLabel = styled.label<InputContainer>`
       getTypographyPreset(`textInput.${$size}.label`, 'label', {
         withCrop: true,
       })}
-    ${({$size}) => getSpacingStack(`textInput.${$size}.label`, 'label')}
-    ${({$size}) => getSpacingInline(`textInput.${$size}.label`, 'label')};
+    ${({$size}) =>
+      getSpacingStackHorizontal(`textInput.${$size}.label`, 'label')}
+    ${({$size}) =>
+      getSpacingInlineHorizontal(`textInput.${$size}.label`, 'label')};
  `;
 
 export const StyledAssistiveText = styled(TextBlock)<

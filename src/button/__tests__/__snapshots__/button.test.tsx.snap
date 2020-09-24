@@ -2107,7 +2107,7 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Button renders with custom padding preset 1`] = `
+exports[`Button renders with custom spaceInset preset 1`] = `
 <DocumentFragment>
   .emotion-4 {
   display: -webkit-inline-box;

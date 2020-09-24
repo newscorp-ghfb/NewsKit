@@ -3,7 +3,7 @@ import {HeadlineProps} from '../headline';
 import {PaddingPresetKeys, StylePresetKeys} from '../theme';
 
 export type TitleBarOverrides = {
-  paddingPreset?: MQ<PaddingPresetKeys>;
+  spaceInset?: MQ<PaddingPresetKeys>;
   stylePreset?: MQ<StylePresetKeys>;
   heading?: NonNullable<HeadlineProps['overrides']>['heading'];
 };

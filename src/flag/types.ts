@@ -11,7 +11,7 @@ export interface BaseFlagProps {
   overrides?: {
     typographyPreset?: string;
     stylePreset?: string;
-    paddingPreset?: PaddingPresetKeys;
+    spaceInset?: PaddingPresetKeys;
 
     width?: SizingKeys | string;
     height?: SizingKeys | string;
@@ -19,7 +19,7 @@ export interface BaseFlagProps {
     minHeight?: SizingKeys | string;
 
     iconSize?: IconSizeKeys;
-    space?: SizingKeys;
+    spaceInline?: SizingKeys;
   };
 }
 

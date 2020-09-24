@@ -73,7 +73,7 @@ export default {
           <Link
             href="/"
             overrides={{
-              space: 'sizing030',
+              spaceInline: 'sizing030',
             }}
           >
             <Email size="iconSize010" />

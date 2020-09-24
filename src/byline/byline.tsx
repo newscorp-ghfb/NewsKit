@@ -75,7 +75,7 @@ const isLastItem = (currentIndex: number, length: number) =>
 
 export const Byline: React.FC<BylineProps> = ({bylineData, overrides}) => {
   const theme = useTheme();
-  const space = getToken({theme, overrides}, 'byline', '', 'space');
+  const spaceStack = getToken({theme, overrides}, 'byline', '', 'spaceStack');
 
   const linkStyles = getToken(
     {theme, overrides},
@@ -140,7 +140,7 @@ export const Byline: React.FC<BylineProps> = ({bylineData, overrides}) => {
   };
 
   return (
-    <Stack flow="horizontal-center" inline wrap="wrap" spaceStack={space}>
+    <Stack flow="horizontal-center" inline wrap="wrap" spaceStack={spaceStack}>
       {bylineData.map(
         ({author, href, title, location, ariaLabel}: BylineData, i) => {
           const lastItem = isLastItem(i, bylineData.length);

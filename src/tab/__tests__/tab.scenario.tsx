@@ -251,7 +251,7 @@ export default {
                   overrides={{
                     stylePreset: 'tabCustom',
                     typographyPreset: 'label030',
-                    space: 'sizing030',
+                    spaceInline: 'sizing030',
                   }}
                 >
                   <Email />

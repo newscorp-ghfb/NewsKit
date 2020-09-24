@@ -17,7 +17,7 @@ export interface LinkProps
   overrides?: {
     stylePreset?: MQ<StylePresetKeys>;
     typographyPreset?: MQ<TypographyPresetKeys>;
-    space?: SizingKeys;
+    spaceInline?: SizingKeys;
     externalIcon?: {
       size?: IconSizeKeys;
     };

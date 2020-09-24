@@ -52,7 +52,7 @@ describe('Tag', () => {
   test('renders a tag with no paddings', () => {
     const props: TagProps = {
       overrides: {
-        paddingPreset: 'spaceInset000Squish',
+        spaceInset: 'spaceInset000Squish',
       },
     };
     const fragment = renderToFragmentWithTheme(renderTagWithText, props);
@@ -112,7 +112,7 @@ describe('Tag', () => {
   test('renders a tag with an icon and custom spacing between elements', () => {
     const props: TagProps = {
       overrides: {
-        space: 'sizing020',
+        spaceInline: 'sizing020',
       },
     };
     const fragment = renderToFragmentWithTheme(renderTagWithTextAndIcon, props);

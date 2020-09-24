@@ -14,7 +14,7 @@ import {KnobContainer, StyledTitle, getHash} from './common';
 export interface Overrides {
   typographyPreset?: string;
   stylePreset?: string;
-  paddingPreset?: string;
+  spaceInset?: string;
 
   width?: SizingKeys | string;
   height?: SizingKeys | string;

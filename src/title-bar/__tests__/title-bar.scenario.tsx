@@ -38,7 +38,7 @@ export default {
             headingAs="h6"
             overrides={{
               stylePreset: 'standfirst',
-              paddingPreset: 'spaceInset010Squish',
+              spaceInset: 'spaceInset010Squish',
             }}
           >
             h6 with overwritten style and padding preset

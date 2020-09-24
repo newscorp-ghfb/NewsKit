@@ -17,15 +17,15 @@ export interface CardProps {
     stylePreset?: StylePresetKeys;
     mediaContainer?: {
       stylePreset?: StylePresetKeys;
-      spaceStack?: MQ<SpacePresetKeys>;
+      spaceInline?: MQ<SpacePresetKeys>;
     };
     teaserContainer?: {
       stylePreset?: StylePresetKeys;
-      paddingPreset?: MQ<PaddingPresetKeys>;
+      spaceInset?: MQ<PaddingPresetKeys>;
     };
     actionsContainer?: {
       stylePreset?: StylePresetKeys;
-      paddingPreset?: MQ<PaddingPresetKeys>;
+      spaceInset?: MQ<PaddingPresetKeys>;
       minHeight?: SizingKeys | string;
     };
   };

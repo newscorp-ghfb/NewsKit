@@ -121,15 +121,27 @@ export const getSpacingFromTheme = <Props extends ThemeProp>(
   return cssProp ? {[cssProp]: value} : value;
 };
 
-export const getSpacingInline = getDefaultedValue(
+export const getSpacingInlineHorizontal = getDefaultedValue(
   getSpacingFromTheme,
   'spaceInline',
   'marginRight',
 );
-export const getSpacingStack = getDefaultedValue(
+
+export const getSpacingInlineVertical = getDefaultedValue(
+  getSpacingFromTheme,
+  'spaceInline',
+  'marginBottom',
+);
+export const getSpacingStackHorizontal = getDefaultedValue(
   getSpacingFromTheme,
   'spaceStack',
   'marginBottom',
+);
+
+export const getSpacingStackVertical = getDefaultedValue(
+  getSpacingFromTheme,
+  'spaceStack',
+  'marginRight',
 );
 
 export const getSizing = getDefaultedValue(getSizingFromTheme, 'sizing');
@@ -139,7 +151,7 @@ export const getSize = getDefaultedValue(getSizingFromTheme, 'size');
 
 export const getSpace = getDefaultedValue(getSpacingFromTheme, 'space');
 
-export const getPaddingPresetFromTheme = <Props extends ThemeProp>(
+export const getSpacingInsetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<PaddingPresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => (props: Props) => {
@@ -160,9 +172,9 @@ export const getPaddingPresetFromTheme = <Props extends ThemeProp>(
   return {padding};
 };
 
-export const getPaddingPreset = getDefaultedValue(
-  getPaddingPresetFromTheme,
-  'paddingPreset',
+export const getSpacingInset = getDefaultedValue(
+  getSpacingInsetFromTheme,
+  'spaceInset',
 );
 
 export const getMarginPresetFromTheme = <Props extends ThemeProp>(
@@ -185,11 +197,6 @@ export const getMarginPresetFromTheme = <Props extends ThemeProp>(
 
   return {margin};
 };
-
-export const getMarginPreset = getDefaultedValue(
-  getMarginPresetFromTheme,
-  'marginPreset',
-);
 
 export const getBorderFromTheme = getValueFromTheme<BorderKeys>('borders');
 

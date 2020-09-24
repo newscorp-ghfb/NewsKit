@@ -14,7 +14,7 @@ describe('Block', () => {
       const props: BlockProps = {
         overrides: {
           spaceStack: 'space020',
-          paddingPreset: 'spaceInset020',
+          spaceInset: 'spaceInset020',
           stylePreset: 'flagSolid',
         },
       };

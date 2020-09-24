@@ -18,7 +18,7 @@ export interface TextInputProps
     width?: SizingKeys | string;
     input?: {
       stylePreset?: string;
-      paddingPreset?: string;
+      spaceInset?: string;
       minHeight?: SizingKeys | string;
       typographyPreset?: string;
       spaceStack?: SpacePresetKeys;

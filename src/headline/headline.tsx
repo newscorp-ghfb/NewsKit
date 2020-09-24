@@ -3,7 +3,7 @@ import {
   styled,
   getTypographyPreset,
   MQ,
-  getSpacingInline,
+  getSpacingInlineHorizontal,
   getStylePreset,
 } from '../utils/style';
 
@@ -50,7 +50,7 @@ const Kicker = styled.span<RenderAsProps & HeadlineProps>`
     withCrop: true,
   })}
   ${getStylePreset('headline.kicker', 'kicker')}
-  ${getSpacingInline('headline.kicker', 'kicker')};
+  ${getSpacingInlineHorizontal('headline.kicker', 'kicker')};
   text-transform: uppercase;
 `;
 

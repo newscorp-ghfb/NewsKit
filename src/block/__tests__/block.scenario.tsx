@@ -28,7 +28,7 @@ export default {
           <Block
             overrides={{
               spaceStack: 'space030',
-              paddingPreset: 'spaceInset030',
+              spaceInset: 'spaceInset030',
               stylePreset: 'flagSolid',
             }}
           >

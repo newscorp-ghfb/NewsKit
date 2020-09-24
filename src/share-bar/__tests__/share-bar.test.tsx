@@ -173,7 +173,7 @@ describe('ShareBar', () => {
       vertical: true,
       overrides: {
         label: {
-          spaceStack: 'space030',
+          spaceInline: 'space030',
         },
       },
     } as ShareBarProps);
@@ -219,7 +219,7 @@ describe('ShareBar', () => {
       vertical: true,
       overrides: {
         items: {
-          space: 'sizing060',
+          spaceInline: 'sizing060',
         },
       },
     } as ShareBarProps);

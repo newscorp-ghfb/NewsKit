@@ -2,9 +2,9 @@ import React from 'react';
 import {
   styled,
   getTypographyPreset,
-  getPaddingPreset,
-  getSpacingInline,
-  getSpacingStack,
+  getSpacingInset,
+  getSpacingInlineHorizontal,
+  getSpacingInlineVertical,
   getStylePreset,
 } from '../utils/style';
 import {Stack, Flow, StackProps} from '../stack';
@@ -26,11 +26,10 @@ export interface ShareBarProps {
       typographyPreset?: string;
       stylePreset?: string;
       spaceInline?: SpacePresetKeys;
-      spaceStack?: SpacePresetKeys;
-      paddingPreset?: PaddingPresetKeys;
+      spaceInset?: PaddingPresetKeys;
     };
     items?: {
-      space: SizingKeys;
+      spaceInline: SizingKeys;
     };
   };
 }
@@ -41,17 +40,17 @@ interface StyledShareBarProps extends StackProps {
 }
 
 type Label = {
-  orientation: string;
+  orientation?: string;
 };
 
 const StyledLabel = styled.span<Label>`
   ${getTypographyPreset(`shareBar.label`, 'label', {withCrop: true})};
   ${getStylePreset(`shareBar.label`, 'label')};
-  ${getPaddingPreset(`shareBar.label`, 'label')};
+  ${getSpacingInset(`shareBar.label`, 'label')};
   ${({orientation}) =>
-    orientation === 'vertical'
-      ? getSpacingStack('shareBar.label', 'label')
-      : getSpacingInline('shareBar.label', 'label')};
+    (orientation === 'vertical'
+      ? getSpacingInlineVertical
+      : getSpacingInlineHorizontal)('shareBar.label', 'label')};
 `;
 
 const StyledShareBar = styled(Stack)<StyledShareBarProps>`
@@ -84,7 +83,7 @@ export const ShareBar: React.FC<ShareBarProps> = ({
           {theme, overrides},
           `shareBar.items`,
           'items',
-          'space',
+          'spaceInline',
         )}
       >
         {children}

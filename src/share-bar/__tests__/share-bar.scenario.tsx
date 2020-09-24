@@ -90,7 +90,7 @@ export default {
                 spaceInline: 'space030',
               },
               items: {
-                space: 'sizing060',
+                spaceInline: 'sizing060',
               },
             }}
           >

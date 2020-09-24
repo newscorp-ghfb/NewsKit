@@ -49,7 +49,12 @@ export const Link: React.FC<LinkProps> = props => {
     'externalIcon',
     'size',
   );
-  const spaceInBetween = getToken({theme, overrides}, 'link', '', 'space');
+  const spaceInBetween = getToken(
+    {theme, overrides},
+    'link',
+    '',
+    'spaceInline',
+  );
   const typographyPreset = getToken(
     {theme, overrides},
     'link',

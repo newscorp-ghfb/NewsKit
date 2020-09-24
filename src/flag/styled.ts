@@ -2,7 +2,7 @@ import {
   styled,
   getSizingFromTheme,
   getTypographyPreset,
-  getPaddingPreset,
+  getSpacingInset,
   getStylePreset,
 } from '../utils/style';
 
@@ -57,7 +57,7 @@ export const StyledBaseFlag = styled.div<BaseFlagProps>`
     };
   }}
 
-  ${getPaddingPreset('', '')}
+  ${getSpacingInset('', '')}
 
   cursor: ${({disabled}) => (disabled ? 'not-allowed' : 'default')};
 

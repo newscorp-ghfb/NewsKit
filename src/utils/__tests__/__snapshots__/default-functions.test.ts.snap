@@ -1,94 +1,162 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`get default presets functions getMarginPreset for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:no-path-end 1`] = `
+exports[`get default presets functions getSpacingInlineHorizontal for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:no-path-end 1`] = `
 Object {
   "@media screen and (min-width: 1440px)": Object {
-    "margin": "theOverrideToken-value-space",
+    "marginRight": "theOverrideToken-value-space",
   },
   "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
-    "margin": "theOverrideToken-value-space",
+    "marginRight": "theOverrideToken-value-space",
   },
 }
 `;
 
-exports[`get default presets functions getMarginPreset for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:with-path-end 1`] = `
+exports[`get default presets functions getSpacingInlineHorizontal for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:with-path-end 1`] = `
 Object {
   "@media screen and (min-width: 1440px)": Object {
-    "margin": "theOverrideToken-value-space",
+    "marginRight": "theOverrideToken-value-space",
   },
   "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
-    "margin": "theOverrideToken-value-space",
+    "marginRight": "theOverrideToken-value-space",
   },
 }
 `;
 
-exports[`get default presets functions getMarginPreset for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:no-path-end 1`] = `
+exports[`get default presets functions getSpacingInlineHorizontal for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:no-path-end 1`] = `
 Object {
   "@media screen and (min-width: 1440px)": Object {
-    "margin": "theOverrideToken-value-space",
+    "marginRight": "theOverrideToken-value-space",
   },
   "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
-    "margin": "theOverrideToken-value-space",
+    "marginRight": "theOverrideToken-value-space",
   },
 }
 `;
 
-exports[`get default presets functions getMarginPreset for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 1`] = `
+exports[`get default presets functions getSpacingInlineHorizontal for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 1`] = `
 Object {
   "@media screen and (min-width: 1440px)": Object {
-    "margin": "theOverrideToken-value-space",
+    "marginRight": "theOverrideToken-value-space",
   },
   "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
-    "margin": "theOverrideToken-value-space",
+    "marginRight": "theOverrideToken-value-space",
   },
 }
 `;
 
-exports[`get default presets functions getMarginPreset for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 2`] = `
+exports[`get default presets functions getSpacingInlineHorizontal for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 2`] = `
 Object {
   "@media screen and (min-width: 1440px)": Object {
-    "margin": "theOverrideToken-value-space",
+    "marginRight": "theOverrideToken-value-space",
   },
   "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
-    "margin": "theOverrideToken-value-space",
+    "marginRight": "theOverrideToken-value-space",
   },
 }
 `;
 
-exports[`get default presets functions getMarginPreset for responsive tokens when props.overrides is set with breakpoint object with override path: breakpoint-override-object:with-path-end 1`] = `
+exports[`get default presets functions getSpacingInlineHorizontal for responsive tokens when props.overrides is set with breakpoint object with override path: breakpoint-override-object:with-path-end 1`] = `
 Object {
   "@media screen and (min-width: 1440px)": Object {
-    "margin": "theOverrideToken-value-space",
+    "marginRight": "theOverrideToken-value-space",
   },
   "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
-    "margin": "theOverrideToken-value-space",
+    "marginRight": "theOverrideToken-value-space",
   },
 }
 `;
 
-exports[`get default presets functions getMarginPreset for responsive tokens with no override path provided, with and without token type at the end: default:no-path-end 1`] = `
+exports[`get default presets functions getSpacingInlineHorizontal for responsive tokens with no override path provided, with and without token type at the end: default:no-path-end 1`] = `
 Object {
-  "@media screen and (max-width: 959px)": Object {
-    "margin": "theDefaultToken-value-space",
-  },
-  "@media screen and (min-width: 960px)": Object {
-    "margin": "theOverrideToken-value-space",
-  },
+  "marginRight": "",
 }
 `;
 
-exports[`get default presets functions getMarginPreset for responsive tokens with no override path provided, with and without token type at the end: default:with-path-end 1`] = `
+exports[`get default presets functions getSpacingInlineHorizontal for responsive tokens with no override path provided, with and without token type at the end: default:with-path-end 1`] = `
 Object {
-  "@media screen and (max-width: 959px)": Object {
-    "margin": "theDefaultToken-value-space",
+  "marginRight": "",
+}
+`;
+
+exports[`get default presets functions getSpacingInlineVertical for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:no-path-end 1`] = `
+Object {
+  "@media screen and (min-width: 1440px)": Object {
+    "marginBottom": "theOverrideToken-value-space",
   },
-  "@media screen and (min-width: 960px)": Object {
-    "margin": "theOverrideToken-value-space",
+  "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
+    "marginBottom": "theOverrideToken-value-space",
   },
 }
 `;
 
-exports[`get default presets functions getPaddingPreset for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:no-path-end 1`] = `
+exports[`get default presets functions getSpacingInlineVertical for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:with-path-end 1`] = `
+Object {
+  "@media screen and (min-width: 1440px)": Object {
+    "marginBottom": "theOverrideToken-value-space",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
+    "marginBottom": "theOverrideToken-value-space",
+  },
+}
+`;
+
+exports[`get default presets functions getSpacingInlineVertical for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:no-path-end 1`] = `
+Object {
+  "@media screen and (min-width: 1440px)": Object {
+    "marginBottom": "theOverrideToken-value-space",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
+    "marginBottom": "theOverrideToken-value-space",
+  },
+}
+`;
+
+exports[`get default presets functions getSpacingInlineVertical for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 1`] = `
+Object {
+  "@media screen and (min-width: 1440px)": Object {
+    "marginBottom": "theOverrideToken-value-space",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
+    "marginBottom": "theOverrideToken-value-space",
+  },
+}
+`;
+
+exports[`get default presets functions getSpacingInlineVertical for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 2`] = `
+Object {
+  "@media screen and (min-width: 1440px)": Object {
+    "marginBottom": "theOverrideToken-value-space",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
+    "marginBottom": "theOverrideToken-value-space",
+  },
+}
+`;
+
+exports[`get default presets functions getSpacingInlineVertical for responsive tokens when props.overrides is set with breakpoint object with override path: breakpoint-override-object:with-path-end 1`] = `
+Object {
+  "@media screen and (min-width: 1440px)": Object {
+    "marginBottom": "theOverrideToken-value-space",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
+    "marginBottom": "theOverrideToken-value-space",
+  },
+}
+`;
+
+exports[`get default presets functions getSpacingInlineVertical for responsive tokens with no override path provided, with and without token type at the end: default:no-path-end 1`] = `
+Object {
+  "marginBottom": "",
+}
+`;
+
+exports[`get default presets functions getSpacingInlineVertical for responsive tokens with no override path provided, with and without token type at the end: default:with-path-end 1`] = `
+Object {
+  "marginBottom": "",
+}
+`;
+
+exports[`get default presets functions getSpacingInset for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:no-path-end 1`] = `
 Object {
   "@media screen and (min-width: 1440px)": Object {
     "padding": "theOverrideToken-value-space",
@@ -99,7 +167,7 @@ Object {
 }
 `;
 
-exports[`get default presets functions getPaddingPreset for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:with-path-end 1`] = `
+exports[`get default presets functions getSpacingInset for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:with-path-end 1`] = `
 Object {
   "@media screen and (min-width: 1440px)": Object {
     "padding": "theOverrideToken-value-space",
@@ -110,7 +178,7 @@ Object {
 }
 `;
 
-exports[`get default presets functions getPaddingPreset for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:no-path-end 1`] = `
+exports[`get default presets functions getSpacingInset for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:no-path-end 1`] = `
 Object {
   "@media screen and (min-width: 1440px)": Object {
     "padding": "theOverrideToken-value-space",
@@ -121,7 +189,7 @@ Object {
 }
 `;
 
-exports[`get default presets functions getPaddingPreset for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 1`] = `
+exports[`get default presets functions getSpacingInset for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 1`] = `
 Object {
   "@media screen and (min-width: 1440px)": Object {
     "padding": "theOverrideToken-value-space",
@@ -132,7 +200,7 @@ Object {
 }
 `;
 
-exports[`get default presets functions getPaddingPreset for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 2`] = `
+exports[`get default presets functions getSpacingInset for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 2`] = `
 Object {
   "@media screen and (min-width: 1440px)": Object {
     "padding": "theOverrideToken-value-space",
@@ -143,7 +211,7 @@ Object {
 }
 `;
 
-exports[`get default presets functions getPaddingPreset for responsive tokens when props.overrides is set with breakpoint object with override path: breakpoint-override-object:with-path-end 1`] = `
+exports[`get default presets functions getSpacingInset for responsive tokens when props.overrides is set with breakpoint object with override path: breakpoint-override-object:with-path-end 1`] = `
 Object {
   "@media screen and (min-width: 1440px)": Object {
     "padding": "theOverrideToken-value-space",
@@ -154,7 +222,7 @@ Object {
 }
 `;
 
-exports[`get default presets functions getPaddingPreset for responsive tokens with no override path provided, with and without token type at the end: default:no-path-end 1`] = `
+exports[`get default presets functions getSpacingInset for responsive tokens with no override path provided, with and without token type at the end: default:no-path-end 1`] = `
 Object {
   "@media screen and (max-width: 959px)": Object {
     "padding": "theDefaultToken-value-space",
@@ -165,7 +233,7 @@ Object {
 }
 `;
 
-exports[`get default presets functions getPaddingPreset for responsive tokens with no override path provided, with and without token type at the end: default:with-path-end 1`] = `
+exports[`get default presets functions getSpacingInset for responsive tokens with no override path provided, with and without token type at the end: default:with-path-end 1`] = `
 Object {
   "@media screen and (max-width: 959px)": Object {
     "padding": "theDefaultToken-value-space",
@@ -176,85 +244,7 @@ Object {
 }
 `;
 
-exports[`get default presets functions getSpacingInline for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:no-path-end 1`] = `
-Object {
-  "@media screen and (min-width: 1440px)": Object {
-    "marginRight": "theOverrideToken-value-space",
-  },
-  "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
-    "marginRight": "theOverrideToken-value-space",
-  },
-}
-`;
-
-exports[`get default presets functions getSpacingInline for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:with-path-end 1`] = `
-Object {
-  "@media screen and (min-width: 1440px)": Object {
-    "marginRight": "theOverrideToken-value-space",
-  },
-  "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
-    "marginRight": "theOverrideToken-value-space",
-  },
-}
-`;
-
-exports[`get default presets functions getSpacingInline for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:no-path-end 1`] = `
-Object {
-  "@media screen and (min-width: 1440px)": Object {
-    "marginRight": "theOverrideToken-value-space",
-  },
-  "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
-    "marginRight": "theOverrideToken-value-space",
-  },
-}
-`;
-
-exports[`get default presets functions getSpacingInline for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 1`] = `
-Object {
-  "@media screen and (min-width: 1440px)": Object {
-    "marginRight": "theOverrideToken-value-space",
-  },
-  "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
-    "marginRight": "theOverrideToken-value-space",
-  },
-}
-`;
-
-exports[`get default presets functions getSpacingInline for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 2`] = `
-Object {
-  "@media screen and (min-width: 1440px)": Object {
-    "marginRight": "theOverrideToken-value-space",
-  },
-  "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
-    "marginRight": "theOverrideToken-value-space",
-  },
-}
-`;
-
-exports[`get default presets functions getSpacingInline for responsive tokens when props.overrides is set with breakpoint object with override path: breakpoint-override-object:with-path-end 1`] = `
-Object {
-  "@media screen and (min-width: 1440px)": Object {
-    "marginRight": "theOverrideToken-value-space",
-  },
-  "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
-    "marginRight": "theOverrideToken-value-space",
-  },
-}
-`;
-
-exports[`get default presets functions getSpacingInline for responsive tokens with no override path provided, with and without token type at the end: default:no-path-end 1`] = `
-Object {
-  "marginRight": "",
-}
-`;
-
-exports[`get default presets functions getSpacingInline for responsive tokens with no override path provided, with and without token type at the end: default:with-path-end 1`] = `
-Object {
-  "marginRight": "",
-}
-`;
-
-exports[`get default presets functions getSpacingStack for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:no-path-end 1`] = `
+exports[`get default presets functions getSpacingStackHorizontal for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:no-path-end 1`] = `
 Object {
   "@media screen and (min-width: 1440px)": Object {
     "marginBottom": "theOverrideToken-value-space",
@@ -265,7 +255,7 @@ Object {
 }
 `;
 
-exports[`get default presets functions getSpacingStack for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:with-path-end 1`] = `
+exports[`get default presets functions getSpacingStackHorizontal for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:with-path-end 1`] = `
 Object {
   "@media screen and (min-width: 1440px)": Object {
     "marginBottom": "theOverrideToken-value-space",
@@ -276,7 +266,7 @@ Object {
 }
 `;
 
-exports[`get default presets functions getSpacingStack for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:no-path-end 1`] = `
+exports[`get default presets functions getSpacingStackHorizontal for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:no-path-end 1`] = `
 Object {
   "@media screen and (min-width: 1440px)": Object {
     "marginBottom": "theOverrideToken-value-space",
@@ -287,7 +277,7 @@ Object {
 }
 `;
 
-exports[`get default presets functions getSpacingStack for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 1`] = `
+exports[`get default presets functions getSpacingStackHorizontal for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 1`] = `
 Object {
   "@media screen and (min-width: 1440px)": Object {
     "marginBottom": "theOverrideToken-value-space",
@@ -298,7 +288,7 @@ Object {
 }
 `;
 
-exports[`get default presets functions getSpacingStack for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 2`] = `
+exports[`get default presets functions getSpacingStackHorizontal for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 2`] = `
 Object {
   "@media screen and (min-width: 1440px)": Object {
     "marginBottom": "theOverrideToken-value-space",
@@ -309,7 +299,7 @@ Object {
 }
 `;
 
-exports[`get default presets functions getSpacingStack for responsive tokens when props.overrides is set with breakpoint object with override path: breakpoint-override-object:with-path-end 1`] = `
+exports[`get default presets functions getSpacingStackHorizontal for responsive tokens when props.overrides is set with breakpoint object with override path: breakpoint-override-object:with-path-end 1`] = `
 Object {
   "@media screen and (min-width: 1440px)": Object {
     "marginBottom": "theOverrideToken-value-space",
@@ -320,15 +310,93 @@ Object {
 }
 `;
 
-exports[`get default presets functions getSpacingStack for responsive tokens with no override path provided, with and without token type at the end: default:no-path-end 1`] = `
+exports[`get default presets functions getSpacingStackHorizontal for responsive tokens with no override path provided, with and without token type at the end: default:no-path-end 1`] = `
 Object {
   "marginBottom": "",
 }
 `;
 
-exports[`get default presets functions getSpacingStack for responsive tokens with no override path provided, with and without token type at the end: default:with-path-end 1`] = `
+exports[`get default presets functions getSpacingStackHorizontal for responsive tokens with no override path provided, with and without token type at the end: default:with-path-end 1`] = `
 Object {
   "marginBottom": "",
+}
+`;
+
+exports[`get default presets functions getSpacingStackVertical for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:no-path-end 1`] = `
+Object {
+  "@media screen and (min-width: 1440px)": Object {
+    "marginRight": "theOverrideToken-value-space",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
+    "marginRight": "theOverrideToken-value-space",
+  },
+}
+`;
+
+exports[`get default presets functions getSpacingStackVertical for responsive tokens when props.overrides is set with breakpoint object with no override path provided: breakpoint-override-object:with-path-end 1`] = `
+Object {
+  "@media screen and (min-width: 1440px)": Object {
+    "marginRight": "theOverrideToken-value-space",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
+    "marginRight": "theOverrideToken-value-space",
+  },
+}
+`;
+
+exports[`get default presets functions getSpacingStackVertical for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:no-path-end 1`] = `
+Object {
+  "@media screen and (min-width: 1440px)": Object {
+    "marginRight": "theOverrideToken-value-space",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
+    "marginRight": "theOverrideToken-value-space",
+  },
+}
+`;
+
+exports[`get default presets functions getSpacingStackVertical for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 1`] = `
+Object {
+  "@media screen and (min-width: 1440px)": Object {
+    "marginRight": "theOverrideToken-value-space",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
+    "marginRight": "theOverrideToken-value-space",
+  },
+}
+`;
+
+exports[`get default presets functions getSpacingStackVertical for responsive tokens when props.overrides is set with breakpoint object with override path as empty string: breakpoint-override-object:with-path-end 2`] = `
+Object {
+  "@media screen and (min-width: 1440px)": Object {
+    "marginRight": "theOverrideToken-value-space",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
+    "marginRight": "theOverrideToken-value-space",
+  },
+}
+`;
+
+exports[`get default presets functions getSpacingStackVertical for responsive tokens when props.overrides is set with breakpoint object with override path: breakpoint-override-object:with-path-end 1`] = `
+Object {
+  "@media screen and (min-width: 1440px)": Object {
+    "marginRight": "theOverrideToken-value-space",
+  },
+  "@media screen and (min-width: 480px) and (max-width: 1439px)": Object {
+    "marginRight": "theOverrideToken-value-space",
+  },
+}
+`;
+
+exports[`get default presets functions getSpacingStackVertical for responsive tokens with no override path provided, with and without token type at the end: default:no-path-end 1`] = `
+Object {
+  "marginRight": "",
+}
+`;
+
+exports[`get default presets functions getSpacingStackVertical for responsive tokens with no override path provided, with and without token type at the end: default:with-path-end 1`] = `
+Object {
+  "marginRight": "",
 }
 `;
 

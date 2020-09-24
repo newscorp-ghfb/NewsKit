@@ -71,7 +71,7 @@ export const CardSmallWithInset = () => (
             <Flag
               overrides={{
                 minHeight: '0',
-                paddingPreset: 'spaceInset000Squish',
+                spaceInset: 'spaceInset000Squish',
                 stylePreset: 'cardLabel',
                 typographyPreset: cardLabelSmallTypographyPreset,
               }}

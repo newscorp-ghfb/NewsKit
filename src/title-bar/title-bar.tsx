@@ -1,7 +1,6 @@
 import React from 'react';
-import {styled, getPaddingPreset, getStylePreset} from '../utils/style';
+import {styled, getSpacingInset, getStylePreset} from '../utils/style';
 import {TitleBarProps, ContainerProps} from './types';
-
 import {Headline} from '../headline';
 import {Stack} from '../stack/stack';
 import {filterOutFalsyProperties} from '../utils/filter-object';
@@ -10,7 +9,7 @@ import {Hidden} from '../grid/visibility';
 import {useTheme} from '../theme';
 
 const StackContainer = styled(Stack)<ContainerProps>`
-  ${getPaddingPreset('titleBar')};
+  ${getSpacingInset('titleBar')};
   ${getStylePreset('titleBar')};
 `;
 

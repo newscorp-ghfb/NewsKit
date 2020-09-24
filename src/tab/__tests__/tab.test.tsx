@@ -75,7 +75,7 @@ describe('Tab', () => {
       overrides: {
         stylePreset: 'tabCustom',
         typographyPreset: 'label030',
-        space: 'sizing030',
+        spaceInline: 'sizing030',
       },
     };
     const fragment = renderToFragmentWithTheme(
@@ -113,7 +113,7 @@ describe('Tab', () => {
   test('renders with a trailing icon and custom spacing between elements', () => {
     const props: TabProps = {
       overrides: {
-        space: 'sizing030',
+        spaceInline: 'sizing030',
       },
     };
     const fragment = renderToFragmentWithTheme(

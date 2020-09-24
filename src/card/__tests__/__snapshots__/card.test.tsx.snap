@@ -868,7 +868,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Card renders actions section with overrides for paddingPreset 1`] = `
+exports[`Card renders actions section with overrides for spaceInset 1`] = `
 <DocumentFragment>
   .emotion-16 {
   box-sizing: border-box;

@@ -1,7 +1,7 @@
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {
   getMarginPresetFromTheme,
-  getPaddingPresetFromTheme,
+  getSpacingInsetFromTheme,
   styled,
   MQ,
 } from '../style';
@@ -14,7 +14,7 @@ interface SpacingPresetProp {
 
 const TestBlock = styled.div<SpacingPresetProp>`
   ${getMarginPresetFromTheme({sm: 'space040', md: 'space020'}, 'margin')}
-  ${getPaddingPresetFromTheme(undefined, 'padding')}
+  ${getSpacingInsetFromTheme(undefined, 'padding')}
 `;
 
 describe('MarginPreset', () => {
@@ -85,7 +85,7 @@ describe('MarginPreset', () => {
   });
 });
 
-describe('PaddingPreset', () => {
+describe('SpaceInset', () => {
   test('renders default', () => {
     const fragment = renderToFragmentWithTheme(TestBlock);
     expect(fragment).toMatchSnapshot();

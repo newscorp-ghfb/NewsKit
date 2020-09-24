@@ -217,7 +217,7 @@ const cardBodyBase = ({inset}: {inset: boolean}) => ({
     <FlexBlock overrides={{spaceStack: cardLabel}}>
       <Flag
         overrides={{
-          paddingPreset: 'spaceInset000Squish',
+          spaceInset: 'spaceInset000Squish',
           stylePreset: 'cardLabel',
           typographyPreset: cardTypographyPresets[`cardLabel${cardSize}`],
           minHeight: 'sizing000',

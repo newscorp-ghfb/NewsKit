@@ -1,9 +1,9 @@
 import {CardProps} from './types';
 import {
   styled,
-  getPaddingPreset,
+  getSpacingInset,
   getMinHeight,
-  getSpacingStack,
+  getSpacingInlineVertical,
   getStylePreset,
 } from '../utils/style';
 
@@ -24,7 +24,7 @@ export const StyledCardContainerMedia = styled.a<Pick<CardProps, 'overrides'>>`
   ${getStylePreset('card.mediaContainer', 'mediaContainer', {
     filterStates: ['base'],
   })}
-  ${getSpacingStack('card.mediaContainer', 'mediaContainer')}
+  ${getSpacingInlineVertical('card.mediaContainer', 'mediaContainer')}
 `;
 
 export const StyledCardContainerTeaserAndActions = styled.div<
@@ -45,14 +45,14 @@ export const StyledCardContainerTeaser = styled.div<
   ${getStylePreset('card.teaserContainer', 'teaserContainer', {
     filterStates: ['base'],
   })}
-  ${getPaddingPreset('card.teaserContainer', 'teaserContainer')}
+  ${getSpacingInset('card.teaserContainer', 'teaserContainer')}
 `;
 
 export const StyledCardContainerActions = styled(Stack)<
   Pick<CardProps, 'overrides'>
 >`
   box-sizing: border-box;
-  ${getPaddingPreset('card.actionsContainer', 'actionsContainer')}
+  ${getSpacingInset('card.actionsContainer', 'actionsContainer')}
   ${getStylePreset('card.actionsContainer', 'actionsContainer', {
     filterStates: ['base'],
   })}
