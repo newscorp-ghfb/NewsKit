@@ -3,6 +3,35 @@ import {StylePreset} from './types';
 export const stylePresets: Record<string, StylePreset> = {};
 
 //
+// Text & Icon Colors
+//
+
+stylePresets.inkBrand010 = {
+  base: {
+    color: '{{colors.inkBrand010}}',
+    iconColor: '{{colors.inkBrand010}}',
+  },
+};
+stylePresets.inkContrast = {
+  base: {
+    color: '{{colors.inkContrast}}',
+    iconColor: '{{colors.inkContrast}}',
+  },
+};
+stylePresets.inkBase = {
+  base: {
+    color: '{{colors.inkBase}}',
+    iconColor: '{{colors.inkBase}}',
+  },
+};
+stylePresets.inkSubtle = {
+  base: {
+    color: '{{colors.inkSubtle}}',
+    iconColor: '{{colors.inkSubtle}}',
+  },
+};
+
+//
 // Button
 //
 

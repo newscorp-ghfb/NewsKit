@@ -824,6 +824,7 @@ Object {
     "space020": "8px",
     "space030": "12px",
     "space040": "16px",
+    "space045": "20px",
     "space050": "24px",
     "space060": "32px",
     "space070": "40px",
@@ -847,6 +848,7 @@ Object {
     "spaceInset040": "16px",
     "spaceInset040Squish": "16px 24px",
     "spaceInset040Stretch": "24px 16px",
+    "spaceInset045": "20px",
     "spaceInset050": "24px",
     "spaceInset050Squish": "24px 32px",
     "spaceInset050Stretch": "32px 24px",
@@ -1980,6 +1982,30 @@ Object {
       "loading": Object {
         "backgroundColor": "#f0f0f0",
         "iconColor": "#9c9c9c",
+      },
+    },
+    "inkBase": Object {
+      "base": Object {
+        "color": "#2e2e2e",
+        "iconColor": "#2e2e2e",
+      },
+    },
+    "inkBrand010": Object {
+      "base": Object {
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+      },
+    },
+    "inkContrast": Object {
+      "base": Object {
+        "color": "#0a0a0a",
+        "iconColor": "#0a0a0a",
+      },
+    },
+    "inkSubtle": Object {
+      "base": Object {
+        "color": "#535353",
+        "iconColor": "#535353",
       },
     },
     "labelDefault": Object {

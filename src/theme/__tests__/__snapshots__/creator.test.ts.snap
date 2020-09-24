@@ -823,6 +823,7 @@ Object {
     "space020": "{{sizing.sizing020}}",
     "space030": "{{sizing.sizing030}}",
     "space040": "{{sizing.sizing040}}",
+    "space045": "{{sizing.sizing045}}",
     "space050": "{{sizing.sizing050}}",
     "space060": "{{sizing.sizing060}}",
     "space070": "{{sizing.sizing070}}",
@@ -846,6 +847,7 @@ Object {
     "spaceInset040": "{{sizing.sizing040}}",
     "spaceInset040Squish": "{{sizing.sizing040}} {{sizing.sizing050}}",
     "spaceInset040Stretch": "{{sizing.sizing050}} {{sizing.sizing040}}",
+    "spaceInset045": "{{sizing.sizing045}}",
     "spaceInset050": "{{sizing.sizing050}}",
     "spaceInset050Squish": "{{sizing.sizing050}} {{sizing.sizing060}}",
     "spaceInset050Stretch": "{{sizing.sizing060}} {{sizing.sizing050}}",
@@ -1979,6 +1981,30 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.skeleton010}}",
         "iconColor": "{{colors.inkNonEssential}}",
+      },
+    },
+    "inkBase": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "inkBrand010": Object {
+      "base": Object {
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "inkContrast": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+      },
+    },
+    "inkSubtle": Object {
+      "base": Object {
+        "color": "{{colors.inkSubtle}}",
+        "iconColor": "{{colors.inkSubtle}}",
       },
     },
     "labelDefault": Object {
