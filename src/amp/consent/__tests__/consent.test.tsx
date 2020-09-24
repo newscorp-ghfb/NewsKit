@@ -103,6 +103,23 @@ describe('Consent renders', () => {
       expect(fragment).toMatchSnapshot();
     });
 
+    it('consentRequired', () => {
+      const fragment = renderToFragment(
+        <Consent sourcePointConfig={sourcePointConfigBase} consentRequired />,
+      );
+      expect(fragment).toMatchSnapshot();
+    });
+
+    it('consentInstanceId', () => {
+      const fragment = renderToFragment(
+        <Consent
+          sourcePointConfig={sourcePointConfigBase}
+          consentInstanceId="my-consent"
+        />,
+      );
+      expect(fragment).toMatchSnapshot();
+    });
+
     it('should be a valid AMP component', () => {
       const ampScriptsObject = createAmpScriptsObject();
 

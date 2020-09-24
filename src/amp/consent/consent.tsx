@@ -11,6 +11,8 @@ export interface ConsentProps {
   postPromptUI?: string;
   policy?: object;
   sourcePointConfig: SourcePointConfigProps;
+  consentRequired?: boolean | string;
+  consentInstanceId?: string;
 }
 
 export interface SourcePointConfigProps {

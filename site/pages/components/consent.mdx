@@ -138,6 +138,17 @@ For the TCFV2 sourcePoint changes please see the [documentation](https://documen
     </a>
     .
   </Prop>
+  <Prop name="consentRequired" type="boolean | string" default="remote">
+    Whether consent is required from the user.
+    It accepts a boolean value or 'remote', indicating if a consent is required. If not found, AMP will unblock content as consent is not required.
+    For more information about the prop, please visit
+     <a href="https://amp.dev/documentation/components/amp-consent/#consentrequired">
+      the documentation
+    </a>
+  </Prop>
+  <Prop name="consentInstanceId" type="string">
+    The identifier of a consent configuration.
+  </Prop>
   <Prop name="renderConsentButton" type="boolean" default="true">
     By setting this prop to false you can hide the default consent button.
   </Prop>

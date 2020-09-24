@@ -1,5 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Consent renders with optional prop consentInstanceId 1`] = `
+<DocumentFragment>
+  <amp-consent
+    id="consent"
+    layout="nodisplay"
+  >
+    <script
+      type="application/json"
+    >
+      {"consentRequired":"remote","consentInstanceId":"my-consent","postPromptUI":"privacy-settings-prompt","clientConfig":{"isTCFV2":true,"accountId":"test-accountid","propertyHref":"test-propertyhref"}}
+    </script>
+    <div
+      id="privacy-settings-prompt"
+    >
+      <button
+        class="css-0"
+        on="tap:consent.prompt(consent=SourcePoint)"
+        type="button"
+      >
+        Privacy Settings
+      </button>
+    </div>
+  </amp-consent>
+</DocumentFragment>
+`;
+
+exports[`Consent renders with optional prop consentRequired 1`] = `
+<DocumentFragment>
+  <amp-consent
+    id="consent"
+    layout="nodisplay"
+  >
+    <script
+      type="application/json"
+    >
+      {"consentRequired":true,"consentInstanceId":"sourcepoint","postPromptUI":"privacy-settings-prompt","clientConfig":{"isTCFV2":true,"accountId":"test-accountid","propertyHref":"test-propertyhref"}}
+    </script>
+    <div
+      id="privacy-settings-prompt"
+    >
+      <button
+        class="css-0"
+        on="tap:consent.prompt(consent=SourcePoint)"
+        type="button"
+      >
+        Privacy Settings
+      </button>
+    </div>
+  </amp-consent>
+</DocumentFragment>
+`;
+
 exports[`Consent renders with optional prop privacyManagerId 1`] = `
 <DocumentFragment>
   <amp-consent
