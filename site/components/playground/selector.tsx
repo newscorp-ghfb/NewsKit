@@ -4,7 +4,7 @@ import {
   getSizingFromTheme,
   getTypographyPresetFromTheme,
   getColorFromTheme,
-  getBuiId,
+  getSSRId,
 } from 'newskit';
 import {LegacyBlock} from '../legacy-block';
 
@@ -61,7 +61,7 @@ export const Selector: React.FC<SelectorProps> = ({
   options,
   onChange,
 }) => {
-  const id = `playground-${children}-${getBuiId()}-selector`;
+  const id = `playground-${children}-${getSSRId()}-selector`;
   return (
     <LegacyBlock
       font="body030"

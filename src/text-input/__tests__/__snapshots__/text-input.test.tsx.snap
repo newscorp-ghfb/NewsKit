@@ -148,20 +148,20 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
   >
     <label
       class="emotion-0"
-      for="mock-bui-1"
+      for="mock-nk-1"
     >
       label
     </label>
     <input
-      aria-describedby="mock-bui-1-assistive-text"
+      aria-describedby="mock-nk-1-assistive-text"
       class="emotion-1"
-      id="mock-bui-1"
+      id="mock-nk-1"
       placeholder="Placeholder"
       type="text"
     />
     <p
       class="emotion-2"
-      id="mock-bui-1-assistive-text"
+      id="mock-nk-1-assistive-text"
     >
       assistiveText
     </p>
@@ -317,19 +317,19 @@ exports[`TextInput renders correctly with label hidden 1`] = `
   >
     <label
       class="emotion-0"
-      for="mock-bui-1"
+      for="mock-nk-1"
     />
     <input
-      aria-describedby="mock-bui-1-assistive-text"
+      aria-describedby="mock-nk-1-assistive-text"
       aria-label="label"
       class="emotion-1"
-      id="mock-bui-1"
+      id="mock-nk-1"
       placeholder="Placeholder"
       type="text"
     />
     <p
       class="emotion-2"
-      id="mock-bui-1-assistive-text"
+      id="mock-nk-1-assistive-text"
     >
       assistiveText
     </p>
@@ -446,13 +446,13 @@ exports[`TextInput renders correctly without asistive text 1`] = `
   >
     <label
       class="emotion-0"
-      for="mock-bui-1"
+      for="mock-nk-1"
     >
       label
     </label>
     <input
       class="emotion-1"
-      id="mock-bui-1"
+      id="mock-nk-1"
       placeholder="Placeholder"
       type="text"
     />
@@ -604,22 +604,22 @@ exports[`TextInput renders disabled text input 1`] = `
   >
     <label
       class="emotion-0"
-      for="mock-bui-1"
+      for="mock-nk-1"
     >
       label
     </label>
     <input
-      aria-describedby="mock-bui-1-assistive-text"
+      aria-describedby="mock-nk-1-assistive-text"
       class="emotion-1"
       disabled=""
-      id="mock-bui-1"
+      id="mock-nk-1"
       placeholder="Placeholder"
       type="text"
     />
     <p
       class="emotion-2"
       disabled=""
-      id="mock-bui-1-assistive-text"
+      id="mock-nk-1-assistive-text"
     >
       assistiveText
     </p>
@@ -775,20 +775,20 @@ exports[`TextInput renders large text input 1`] = `
   >
     <label
       class="emotion-0"
-      for="mock-bui-1"
+      for="mock-nk-1"
     >
       label
     </label>
     <input
-      aria-describedby="mock-bui-1-assistive-text"
+      aria-describedby="mock-nk-1-assistive-text"
       class="emotion-1"
-      id="mock-bui-1"
+      id="mock-nk-1"
       placeholder="Placeholder"
       type="text"
     />
     <p
       class="emotion-2"
-      id="mock-bui-1-assistive-text"
+      id="mock-nk-1-assistive-text"
     >
       assistiveText
     </p>
@@ -944,21 +944,21 @@ exports[`TextInput renders readonly text input 1`] = `
   >
     <label
       class="emotion-0"
-      for="mock-bui-1"
+      for="mock-nk-1"
     >
       label
     </label>
     <input
-      aria-describedby="mock-bui-1-assistive-text"
+      aria-describedby="mock-nk-1-assistive-text"
       class="emotion-1"
-      id="mock-bui-1"
+      id="mock-nk-1"
       placeholder="Placeholder"
       readonly=""
       type="text"
     />
     <p
       class="emotion-2"
-      id="mock-bui-1-assistive-text"
+      id="mock-nk-1-assistive-text"
     >
       assistiveText
     </p>
@@ -1114,20 +1114,20 @@ exports[`TextInput renders small text input 1`] = `
   >
     <label
       class="emotion-0"
-      for="mock-bui-1"
+      for="mock-nk-1"
     >
       label
     </label>
     <input
-      aria-describedby="mock-bui-1-assistive-text"
+      aria-describedby="mock-nk-1-assistive-text"
       class="emotion-1"
-      id="mock-bui-1"
+      id="mock-nk-1"
       placeholder="Placeholder"
       type="text"
     />
     <p
       class="emotion-2"
-      id="mock-bui-1-assistive-text"
+      id="mock-nk-1-assistive-text"
     >
       assistiveText
     </p>
@@ -1219,20 +1219,20 @@ exports[`TextInput renders text input with overrides 1`] = `
   >
     <label
       class="emotion-0"
-      for="mock-bui-1"
+      for="mock-nk-1"
     >
       label
     </label>
     <input
-      aria-describedby="mock-bui-1-assistive-text"
+      aria-describedby="mock-nk-1-assistive-text"
       class="emotion-1"
-      id="mock-bui-1"
+      id="mock-nk-1"
       placeholder="Placeholder"
       type="text"
     />
     <p
       class="emotion-2"
-      id="mock-bui-1-assistive-text"
+      id="mock-nk-1-assistive-text"
     >
       Assistive Text
     </p>
@@ -1388,20 +1388,20 @@ exports[`TextInput renders with different minHeight 1`] = `
   >
     <label
       class="emotion-0"
-      for="mock-bui-1"
+      for="mock-nk-1"
     >
       label
     </label>
     <input
-      aria-describedby="mock-bui-1-assistive-text"
+      aria-describedby="mock-nk-1-assistive-text"
       class="emotion-1"
-      id="mock-bui-1"
+      id="mock-nk-1"
       placeholder="Placeholder"
       type="text"
     />
     <p
       class="emotion-2"
-      id="mock-bui-1-assistive-text"
+      id="mock-nk-1-assistive-text"
     >
       assistiveText
     </p>
@@ -1561,20 +1561,20 @@ exports[`TextInput renders with fixed width 1`] = `
   >
     <label
       class="emotion-0"
-      for="mock-bui-1"
+      for="mock-nk-1"
     >
       label
     </label>
     <input
-      aria-describedby="mock-bui-1-assistive-text"
+      aria-describedby="mock-nk-1-assistive-text"
       class="emotion-1"
-      id="mock-bui-1"
+      id="mock-nk-1"
       placeholder="Placeholder"
       type="text"
     />
     <p
       class="emotion-2"
-      id="mock-bui-1-assistive-text"
+      id="mock-nk-1-assistive-text"
     >
       assistiveText
     </p>
@@ -1734,20 +1734,20 @@ exports[`TextInput renders with full width 1`] = `
   >
     <label
       class="emotion-0"
-      for="mock-bui-1"
+      for="mock-nk-1"
     >
       label
     </label>
     <input
-      aria-describedby="mock-bui-1-assistive-text"
+      aria-describedby="mock-nk-1-assistive-text"
       class="emotion-1"
-      id="mock-bui-1"
+      id="mock-nk-1"
       placeholder="Placeholder"
       type="text"
     />
     <p
       class="emotion-2"
-      id="mock-bui-1-assistive-text"
+      id="mock-nk-1-assistive-text"
     >
       assistiveText
     </p>
@@ -1903,21 +1903,21 @@ exports[`TextInput should render custom aria-label 1`] = `
   >
     <label
       class="emotion-0"
-      for="mock-bui-1"
+      for="mock-nk-1"
     >
       label
     </label>
     <input
-      aria-describedby="mock-bui-1-assistive-text"
+      aria-describedby="mock-nk-1-assistive-text"
       aria-label="my custom aria label"
       class="emotion-1"
-      id="mock-bui-1"
+      id="mock-nk-1"
       placeholder="Placeholder"
       type="text"
     />
     <p
       class="emotion-2"
-      id="mock-bui-1-assistive-text"
+      id="mock-nk-1-assistive-text"
     >
       assistiveText
     </p>
@@ -2073,20 +2073,20 @@ exports[`TextInput should render custom placeholder 1`] = `
   >
     <label
       class="emotion-0"
-      for="mock-bui-1"
+      for="mock-nk-1"
     >
       label
     </label>
     <input
-      aria-describedby="mock-bui-1-assistive-text"
+      aria-describedby="mock-nk-1-assistive-text"
       class="emotion-1"
-      id="mock-bui-1"
+      id="mock-nk-1"
       placeholder="This is some text"
       type="text"
     />
     <p
       class="emotion-2"
-      id="mock-bui-1-assistive-text"
+      id="mock-nk-1-assistive-text"
     >
       assistiveText
     </p>

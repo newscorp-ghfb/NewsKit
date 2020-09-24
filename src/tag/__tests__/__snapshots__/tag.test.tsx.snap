@@ -722,12 +722,12 @@ exports[`Tag renders a tag with an icon 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 24 24"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Email icon
             </title>
@@ -895,12 +895,12 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 24 24"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Email icon
             </title>
@@ -1068,12 +1068,12 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 24 24"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Email icon
             </title>

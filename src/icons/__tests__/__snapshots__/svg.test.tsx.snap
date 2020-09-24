@@ -9,7 +9,7 @@ exports[`Svg renders a menu icon with float property 1`] = `
 }
 
 <svg
-    aria-labelledby="mock-bui-1"
+    aria-labelledby="mock-nk-1"
     class="emotion-0"
     viewBox="1 2 3 4"
   />
@@ -25,7 +25,7 @@ exports[`Svg renders a menu icon with no size 1`] = `
 }
 
 <svg
-    aria-labelledby="mock-bui-1"
+    aria-labelledby="mock-nk-1"
     class="emotion-0"
     viewBox="1 2 3 4"
   />
@@ -46,7 +46,7 @@ exports[`Svg renders a menu icon with specified size and color 1`] = `
 }
 
 <svg
-    aria-labelledby="mock-bui-1"
+    aria-labelledby="mock-nk-1"
     class="emotion-0"
     viewBox="1 2 3 4"
   />
@@ -67,7 +67,7 @@ exports[`Svg renders a menu icon with specified size and default color 1`] = `
 }
 
 <svg
-    aria-labelledby="mock-bui-1"
+    aria-labelledby="mock-nk-1"
     class="emotion-0"
     viewBox="1 2 3 4"
   />

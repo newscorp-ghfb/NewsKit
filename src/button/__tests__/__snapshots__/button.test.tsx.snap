@@ -135,12 +135,12 @@ exports[`Button Loading Button renders Large Button 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 64 64"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Indeterminate progress indicator
             </title>
@@ -291,12 +291,12 @@ exports[`Button Loading Button renders Small Button 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 64 64"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Indeterminate progress indicator
             </title>
@@ -2087,12 +2087,12 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-2"
             viewBox="0 0 24 24"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Email icon
             </title>

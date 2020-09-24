@@ -1,7 +1,7 @@
 import React from 'react';
 import {styled, getStylePreset} from '../utils/style';
 import {isValidNode} from '../utils/component';
-import {getBuiId} from '../utils/get-bui-id';
+import {getSSRId} from '../utils/get-ssr-id';
 import {StyledLi, StyledUl} from './styled';
 import {TextBlock} from '../text-block';
 import {Block} from '../block';
@@ -83,7 +83,7 @@ export const UnorderedList: React.FC<UnorderedListProps> = ({
         if (!isValidNode(node)) return null;
 
         return (
-          <ListItem key={getBuiId()}>
+          <ListItem key={getSSRId()}>
             <StyledBlock overrides={{spaceStack: itemSpaceToken}}>
               {ListItemMarker && (
                 <MarkerBlock

@@ -14,12 +14,12 @@ exports[`Icons Add icon renders as expected 1`] = `
 }
 
 <svg
-    aria-labelledby="mock-bui-1"
+    aria-labelledby="mock-nk-1"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
     <title
-      id="mock-bui-1"
+      id="mock-nk-1"
     >
       add
     </title>
@@ -48,12 +48,12 @@ exports[`Icons Error icon renders as expected 1`] = `
 }
 
 <svg
-    aria-labelledby="mock-bui-1"
+    aria-labelledby="mock-nk-1"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
     <title
-      id="mock-bui-1"
+      id="mock-nk-1"
     >
       error
     </title>
@@ -88,12 +88,12 @@ exports[`Icons Menu icon renders as expected 1`] = `
 }
 
 <svg
-    aria-labelledby="mock-bui-1"
+    aria-labelledby="mock-nk-1"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
     <title
-      id="mock-bui-1"
+      id="mock-nk-1"
     >
       menu icon
     </title>
@@ -120,12 +120,12 @@ exports[`Icons Moon icon renders as expected 1`] = `
 }
 
 <svg
-    aria-labelledby="mock-bui-1"
+    aria-labelledby="mock-nk-1"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
     <title
-      id="mock-bui-1"
+      id="mock-nk-1"
     >
       moon icon
     </title>
@@ -152,12 +152,12 @@ exports[`Icons Remove icon renders as expected 1`] = `
 }
 
 <svg
-    aria-labelledby="mock-bui-1"
+    aria-labelledby="mock-nk-1"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
     <title
-      id="mock-bui-1"
+      id="mock-nk-1"
     >
       remove
     </title>
@@ -186,12 +186,12 @@ exports[`Icons Search icon renders as expected 1`] = `
 }
 
 <svg
-    aria-labelledby="mock-bui-1"
+    aria-labelledby="mock-nk-1"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
     <title
-      id="mock-bui-1"
+      id="mock-nk-1"
     >
       search icon
     </title>
@@ -222,12 +222,12 @@ exports[`Icons Sun icon renders as expected 1`] = `
 }
 
 <svg
-    aria-labelledby="mock-bui-1"
+    aria-labelledby="mock-nk-1"
     class="emotion-0"
     viewBox="0 0 24 24"
   >
     <title
-      id="mock-bui-1"
+      id="mock-nk-1"
     >
       sun icon
     </title>

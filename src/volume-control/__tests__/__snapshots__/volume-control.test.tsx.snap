@@ -281,12 +281,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
               class="emotion-1"
             >
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 24 24"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   unmute
                 </title>
@@ -312,7 +312,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
       values="0"
     >
       <div
-        aria-describedby="mock-bui-1"
+        aria-describedby="mock-nk-1"
         aria-label="Volume Control"
         aria-valuemax="1"
         aria-valuemin="0"
@@ -347,12 +347,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
               class="emotion-1"
             >
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 24 24"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   max volume
                 </title>
@@ -387,7 +387,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 
 <div
     class="emotion-0"
-    id="mock-bui-1"
+    id="mock-nk-1"
   >
     Use the arrow keys to adjust volume
   </div>
@@ -675,12 +675,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
               class="emotion-1"
             >
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 24 24"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   mute
                 </title>
@@ -706,7 +706,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
       values="0.8"
     >
       <div
-        aria-describedby="mock-bui-1"
+        aria-describedby="mock-nk-1"
         aria-label="Volume Control"
         aria-valuemax="1"
         aria-valuemin="0"
@@ -741,12 +741,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
               class="emotion-1"
             >
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 24 24"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   max volume
                 </title>
@@ -781,7 +781,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 
 <div
     class="emotion-0"
-    id="mock-bui-1"
+    id="mock-nk-1"
   >
     Use the arrow keys to adjust volume
   </div>
@@ -1069,12 +1069,12 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
               class="emotion-1"
             >
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 24 24"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   mute
                 </title>
@@ -1100,7 +1100,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
       values="1"
     >
       <div
-        aria-describedby="mock-bui-1"
+        aria-describedby="mock-nk-1"
         aria-label="Volume Control"
         aria-valuemax="1"
         aria-valuemin="0"
@@ -1135,12 +1135,12 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
               class="emotion-1"
             >
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 24 24"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   max volume
                 </title>
@@ -1175,7 +1175,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 
 <div
     class="emotion-0"
-    id="mock-bui-1"
+    id="mock-nk-1"
   >
     Use the arrow keys to adjust volume
   </div>
@@ -1462,12 +1462,12 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
               class="emotion-1"
             >
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 24 24"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   mute
                 </title>
@@ -1493,7 +1493,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
       values="1"
     >
       <div
-        aria-describedby="mock-bui-1"
+        aria-describedby="mock-nk-1"
         aria-label="Volume Control"
         aria-valuemax="1"
         aria-valuemin="0"
@@ -1528,12 +1528,12 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
               class="emotion-1"
             >
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 24 24"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   max volume
                 </title>
@@ -1568,7 +1568,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 
 <div
     class="emotion-0"
-    id="mock-bui-1"
+    id="mock-nk-1"
   >
     Use the arrow keys to adjust volume
   </div>
@@ -1856,12 +1856,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
               class="emotion-1"
             >
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 24 24"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   unmute
                 </title>
@@ -1887,7 +1887,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
       values="0"
     >
       <div
-        aria-describedby="mock-bui-1"
+        aria-describedby="mock-nk-1"
         aria-label="Volume Control"
         aria-valuemax="1"
         aria-valuemin="0"
@@ -1922,12 +1922,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
               class="emotion-1"
             >
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 24 24"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   max volume
                 </title>
@@ -1962,7 +1962,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 <div
     class="emotion-0"
-    id="mock-bui-1"
+    id="mock-nk-1"
   >
     Use the arrow keys to adjust volume
   </div>
@@ -2250,12 +2250,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
               class="emotion-1"
             >
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 24 24"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   mute
                 </title>
@@ -2281,7 +2281,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
       values="0.7"
     >
       <div
-        aria-describedby="mock-bui-1"
+        aria-describedby="mock-nk-1"
         aria-label="Volume Control"
         aria-valuemax="1"
         aria-valuemin="0"
@@ -2316,12 +2316,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
               class="emotion-1"
             >
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 24 24"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   max volume
                 </title>
@@ -2356,7 +2356,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 <div
     class="emotion-0"
-    id="mock-bui-1"
+    id="mock-nk-1"
   >
     Use the arrow keys to adjust volume
   </div>
@@ -2644,12 +2644,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
               class="emotion-1"
             >
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 24 24"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   unmute
                 </title>
@@ -2675,7 +2675,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
       values="0"
     >
       <div
-        aria-describedby="mock-bui-1"
+        aria-describedby="mock-nk-1"
         aria-label="Volume Control"
         aria-valuemax="1"
         aria-valuemin="0"
@@ -2710,12 +2710,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
               class="emotion-1"
             >
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 24 24"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   max volume
                 </title>
@@ -2750,7 +2750,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 
 <div
     class="emotion-0"
-    id="mock-bui-1"
+    id="mock-nk-1"
   >
     Use the arrow keys to adjust volume
   </div>
@@ -3038,12 +3038,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
               class="emotion-1"
             >
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 24 24"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   mute
                 </title>
@@ -3069,7 +3069,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
       values="0.7"
     >
       <div
-        aria-describedby="mock-bui-1"
+        aria-describedby="mock-nk-1"
         aria-label="Volume Control"
         aria-valuemax="1"
         aria-valuemin="0"
@@ -3104,12 +3104,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
               class="emotion-1"
             >
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 24 24"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   max volume
                 </title>
@@ -3144,7 +3144,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 
 <div
     class="emotion-0"
-    id="mock-bui-1"
+    id="mock-nk-1"
   >
     Use the arrow keys to adjust volume
   </div>
@@ -3432,12 +3432,12 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
               class="emotion-1"
             >
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 24 24"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   mute
                 </title>
@@ -3463,7 +3463,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
       values="1"
     >
       <div
-        aria-describedby="mock-bui-1"
+        aria-describedby="mock-nk-1"
         aria-label="Volume Control"
         aria-valuemax="1"
         aria-valuemin="0"
@@ -3498,12 +3498,12 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
               class="emotion-1"
             >
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 24 24"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   max volume
                 </title>
@@ -3538,7 +3538,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 
 <div
     class="emotion-0"
-    id="mock-bui-1"
+    id="mock-nk-1"
   >
     Use the arrow keys to adjust volume
   </div>

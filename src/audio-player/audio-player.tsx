@@ -22,7 +22,7 @@ import {
 import {StyledTrack} from '../slider/styled';
 import {useTheme, Devices} from '../theme';
 import {getSingleStylePreset} from '../utils/style';
-import {getBuiId} from '../utils/get-bui-id';
+import {getSSRId} from '../utils/get-ssr-id';
 import {LabelPosition} from '../slider/types';
 import {AudioPlayerProps} from './types';
 import {useAudioFunctions} from './audio-functions';
@@ -229,7 +229,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     ? formatTrackTime(trackPositionArr[0], duration)
     : '';
 
-  const srOnlyForwardRewind = getBuiId();
+  const srOnlyForwardRewind = getSSRId();
 
   return (
     <PlayerContainer aria-label={ariaLandmark}>

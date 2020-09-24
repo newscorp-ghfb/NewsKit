@@ -278,9 +278,9 @@
             "id": "/utils/code-helpers/get-border-from-theme"
           },
           {
-            "title": "getBuiId",
+            "title": "getSSRId",
             "page": true,
-            "id": "/utils/code-helpers/get-bui-id"
+            "id": "/utils/code-helpers/get-ssr-id"
           },
           {
             "title": "getColorFromTheme",

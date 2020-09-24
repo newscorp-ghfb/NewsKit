@@ -35,7 +35,7 @@ export * from './theme';
 export * from './title-bar';
 export * from './typography';
 export * from './utils/get-aspect-ratio';
-export * from './utils/get-bui-id';
+export * from './utils/get-ssr-id';
 export * from './utils/responsive-helpers';
 export * from './utils/style-types';
 export * from './utils/style';

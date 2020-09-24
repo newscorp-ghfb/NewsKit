@@ -112,12 +112,12 @@ exports[`ShareBar renders horizontally with icons and label 1`] = `
         class="emotion-2"
       >
         <svg
-          aria-labelledby="mock-bui-1"
+          aria-labelledby="mock-nk-1"
           class="emotion-1"
           viewBox="0 0 1365.3333 1365.3333"
         >
           <title
-            id="mock-bui-1"
+            id="mock-nk-1"
           >
             Facebook icon
           </title>
@@ -143,12 +143,12 @@ exports[`ShareBar renders horizontally with icons and label 1`] = `
         class="emotion-2"
       >
         <svg
-          aria-labelledby="mock-bui-1"
+          aria-labelledby="mock-nk-1"
           class="emotion-1"
           viewBox="0 0 400 400"
         >
           <title
-            id="mock-bui-1"
+            id="mock-nk-1"
           >
             Twitter logo
           </title>
@@ -365,12 +365,12 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-1"
               viewBox="0 0 1365.3333 1365.3333"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Facebook icon
               </title>
@@ -405,12 +405,12 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-1"
               viewBox="0 0 400 400"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Twitter logo
               </title>
@@ -519,12 +519,12 @@ exports[`ShareBar renders horizontally with twitter and facebook icons 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="mock-bui-1"
+          aria-labelledby="mock-nk-1"
           class="emotion-0"
           viewBox="0 0 1365.3333 1365.3333"
         >
           <title
-            id="mock-bui-1"
+            id="mock-nk-1"
           >
             Facebook icon
           </title>
@@ -550,12 +550,12 @@ exports[`ShareBar renders horizontally with twitter and facebook icons 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="mock-bui-1"
+          aria-labelledby="mock-nk-1"
           class="emotion-0"
           viewBox="0 0 400 400"
         >
           <title
-            id="mock-bui-1"
+            id="mock-nk-1"
           >
             Twitter logo
           </title>
@@ -697,12 +697,12 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
         class="emotion-2"
       >
         <svg
-          aria-labelledby="mock-bui-1"
+          aria-labelledby="mock-nk-1"
           class="emotion-1"
           viewBox="0 0 1365.3333 1365.3333"
         >
           <title
-            id="mock-bui-1"
+            id="mock-nk-1"
           >
             Facebook icon
           </title>
@@ -728,12 +728,12 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
         class="emotion-2"
       >
         <svg
-          aria-labelledby="mock-bui-1"
+          aria-labelledby="mock-nk-1"
           class="emotion-1"
           viewBox="0 0 400 400"
         >
           <title
-            id="mock-bui-1"
+            id="mock-nk-1"
           >
             Twitter logo
           </title>
@@ -840,12 +840,12 @@ exports[`ShareBar renders vertically with twitter and facebook icons 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="mock-bui-1"
+          aria-labelledby="mock-nk-1"
           class="emotion-0"
           viewBox="0 0 1365.3333 1365.3333"
         >
           <title
-            id="mock-bui-1"
+            id="mock-nk-1"
           >
             Facebook icon
           </title>
@@ -871,12 +871,12 @@ exports[`ShareBar renders vertically with twitter and facebook icons 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="mock-bui-1"
+          aria-labelledby="mock-nk-1"
           class="emotion-0"
           viewBox="0 0 400 400"
         >
           <title
-            id="mock-bui-1"
+            id="mock-nk-1"
           >
             Twitter logo
           </title>
@@ -1216,12 +1216,12 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-1"
               viewBox="0 0 1365.3333 1365.3333"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Facebook icon
               </title>
@@ -1256,12 +1256,12 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-1"
               viewBox="0 0 400 400"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Twitter logo
               </title>
@@ -1655,12 +1655,12 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-1"
               viewBox="0 0 1365.3333 1365.3333"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Facebook icon
               </title>
@@ -1695,12 +1695,12 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-1"
               viewBox="0 0 400 400"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Twitter logo
               </title>
@@ -2069,12 +2069,12 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-1"
               viewBox="0 0 1365.3333 1365.3333"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Facebook icon
               </title>
@@ -2109,12 +2109,12 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-1"
               viewBox="0 0 400 400"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Twitter logo
               </title>
@@ -2483,12 +2483,12 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-1"
               viewBox="0 0 1365.3333 1365.3333"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Facebook icon
               </title>
@@ -2523,12 +2523,12 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-1"
               viewBox="0 0 400 400"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Twitter logo
               </title>
@@ -2963,12 +2963,12 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-1"
               viewBox="0 0 1365.3333 1365.3333"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Facebook icon
               </title>
@@ -3003,12 +3003,12 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-1"
               viewBox="0 0 400 400"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Twitter logo
               </title>
@@ -3386,12 +3386,12 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-1"
               viewBox="0 0 1365.3333 1365.3333"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Facebook icon
               </title>
@@ -3426,12 +3426,12 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-1"
               viewBox="0 0 400 400"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Twitter logo
               </title>
@@ -3809,12 +3809,12 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-1"
               viewBox="0 0 1365.3333 1365.3333"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Facebook icon
               </title>
@@ -3849,12 +3849,12 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-1"
               viewBox="0 0 400 400"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Twitter logo
               </title>

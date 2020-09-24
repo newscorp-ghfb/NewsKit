@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {styled, getBuiId} from 'newskit';
+import {styled, getSSRId} from 'newskit';
 
 interface WrapperProps {
   visible: boolean;
@@ -30,7 +30,7 @@ type Props = {
 };
 
 const Anchor: React.FC<Props> = ({visible, slug, element}) => {
-  const ariaId = getBuiId();
+  const ariaId = getSSRId();
   return (
     <Wrapper visible={visible} href={`#${slug}`}>
       <svg

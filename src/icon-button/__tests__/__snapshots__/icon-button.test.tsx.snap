@@ -137,12 +137,12 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 64 64"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Indeterminate progress indicator
             </title>
@@ -288,12 +288,12 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 24 24"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Email icon
             </title>
@@ -438,12 +438,12 @@ exports[`IconButton renders Large Icon Button 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 24 24"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Email icon
             </title>
@@ -588,12 +588,12 @@ exports[`IconButton renders Medium Icon Button 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 24 24"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Email icon
             </title>
@@ -738,12 +738,12 @@ exports[`IconButton renders Small Icon Button 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 24 24"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Email icon
             </title>
@@ -888,12 +888,12 @@ exports[`IconButton renders when there is an icon with a colour 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 24 24"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Email icon
             </title>
@@ -1043,12 +1043,12 @@ exports[`IconButton renders with different style preset 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 24 24"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Email icon
             </title>

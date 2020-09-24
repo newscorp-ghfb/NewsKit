@@ -6,6 +6,6 @@ expect.addSnapshotSerializer(emotionSerializer);
 
 expect.extend(matchers);
 
-jest.mock('../utils/get-bui-id', () => ({
-  getBuiId: () => `mock-bui-1`,
+jest.mock('../utils/get-ssr-id', () => ({
+  getSSRId: () => `mock-nk-1`,
 }));

@@ -1,6 +1,6 @@
-import {getBuiId} from 'newskit';
+import {getSSRId} from 'newskit';
 
-const uniqueId = getBuiId();
+const uniqueId = getSSRId();
 const jsxFieldset = (
   <fieldset>
     <input type="text" id={uniqueId} />

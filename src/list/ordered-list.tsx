@@ -1,6 +1,6 @@
 import React from 'react';
 import {styled, getSizingFromTheme} from '../utils/style';
-import {getBuiId} from '../utils/get-bui-id';
+import {getSSRId} from '../utils/get-ssr-id';
 import {isValidNode} from '../utils/component';
 import {StyledOl} from './styled';
 
@@ -17,7 +17,7 @@ const List = styled(StyledOl)`
 export const OrderedList: React.FC<{}> = ({children}) => (
   <List>
     {React.Children.map(children, node =>
-      isValidNode(node) ? <ListItem key={getBuiId()}>{node}</ListItem> : null,
+      isValidNode(node) ? <ListItem key={getSSRId()}>{node}</ListItem> : null,
     )}
   </List>
 );

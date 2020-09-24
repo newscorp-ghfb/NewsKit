@@ -22,7 +22,7 @@
  */
 let id = 0;
 
-export function getBuiId() {
+export function getSSRId() {
   // eslint-disable-next-line no-plusplus
-  return `bui-${++id}`;
+  return `nk-${++id}`;
 }

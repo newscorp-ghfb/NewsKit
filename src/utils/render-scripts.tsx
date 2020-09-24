@@ -1,5 +1,5 @@
 import React from 'react';
-import {getBuiId} from './get-bui-id';
+import {getSSRId} from './get-ssr-id';
 
 interface ExternalScriptData {
   src: string;
@@ -64,7 +64,7 @@ export const RenderScripts: React.FC<RenderScriptsProps> = ({
               src: scriptData.src,
             }
           : {
-              key: getBuiId(),
+              key: getSSRId(),
               dangerouslySetInnerHTML: {
                 __html: scriptData.content,
               },

@@ -1,6 +1,6 @@
 import React from 'react';
 import {TextInputProps, TextInputSize} from './types';
-import {getBuiId} from '../utils/get-bui-id';
+import {getSSRId} from '../utils/get-ssr-id';
 import {
   StyledTextInputContainer,
   StyledInput,
@@ -19,7 +19,7 @@ export const TextInput: React.FC<TextInputProps> = ({
   assistiveText,
   ...props
 }) => {
-  const id = getBuiId();
+  const id = getSSRId();
   const assistiveTextId = assistiveText ? `${id}-assistive-text` : undefined;
 
   return (

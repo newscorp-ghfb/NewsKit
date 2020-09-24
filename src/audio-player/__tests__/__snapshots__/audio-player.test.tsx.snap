@@ -862,12 +862,12 @@ exports[`Audio Player live player renders as expected 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-1"
                               viewBox="0 0 64 64"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 Indeterminate progress indicator
                               </title>
@@ -942,12 +942,12 @@ exports[`Audio Player live player renders as expected 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-18"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 mute
                               </title>
@@ -974,7 +974,7 @@ exports[`Audio Player live player renders as expected 1`] = `
                     values="0.7"
                   >
                     <div
-                      aria-describedby="mock-bui-1"
+                      aria-describedby="mock-nk-1"
                       aria-label="Volume Control"
                       aria-valuemax="1"
                       aria-valuemin="0"
@@ -1009,12 +1009,12 @@ exports[`Audio Player live player renders as expected 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-18"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 max volume
                               </title>
@@ -1037,7 +1037,7 @@ exports[`Audio Player live player renders as expected 1`] = `
                 </div>
                 <div
                   class="emotion-33"
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   Use the arrow keys to adjust volume
                 </div>
@@ -1068,13 +1068,13 @@ exports[`Audio Player live player renders as expected 1`] = `
                           class="emotion-2"
                         >
                           <svg
-                            aria-labelledby="mock-bui-1"
+                            aria-labelledby="mock-nk-1"
                             class="emotion-36"
                             focusable="false"
                             viewBox="0 0 24 24"
                           >
                             <title
-                              id="mock-bui-1"
+                              id="mock-nk-1"
                             >
                               open popout player
                             </title>
@@ -1223,12 +1223,12 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
       class="emotion-1"
     >
       <svg
-        aria-labelledby="mock-bui-1"
+        aria-labelledby="mock-nk-1"
         class="emotion-0"
         viewBox="0 0 64 64"
       >
         <title
-          id="mock-bui-1"
+          id="mock-nk-1"
         >
           Indeterminate progress indicator
         </title>
@@ -1357,13 +1357,13 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
       class="emotion-1"
     >
       <svg
-        aria-labelledby="mock-bui-1"
+        aria-labelledby="mock-nk-1"
         class="emotion-0"
         focusable="false"
         viewBox="0 0 24 24"
       >
         <title
-          id="mock-bui-1"
+          id="mock-nk-1"
         >
           Play
         </title>
@@ -1498,12 +1498,12 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
       class="emotion-1"
     >
       <svg
-        aria-labelledby="mock-bui-1"
+        aria-labelledby="mock-nk-1"
         class="emotion-0"
         viewBox="0 0 64 64"
       >
         <title
-          id="mock-bui-1"
+          id="mock-nk-1"
         >
           Indeterminate progress indicator
         </title>
@@ -2500,13 +2500,13 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-1"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 Play
                               </title>
@@ -2537,13 +2537,13 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-1"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 rewind 10 seconds
                               </title>
@@ -2574,13 +2574,13 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-1"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 fast forward 10 seconds
                               </title>
@@ -2618,13 +2618,13 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-1"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 previous
                               </title>
@@ -2659,13 +2659,13 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-1"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 next
                               </title>
@@ -2715,12 +2715,12 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-1"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 mute
                               </title>
@@ -2747,7 +2747,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                     values="0.1"
                   >
                     <div
-                      aria-describedby="mock-bui-1"
+                      aria-describedby="mock-nk-1"
                       aria-label="Volume Control"
                       aria-valuemax="1"
                       aria-valuemin="0"
@@ -2782,12 +2782,12 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-1"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 max volume
                               </title>
@@ -2810,7 +2810,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                 </div>
                 <div
                   class="emotion-49"
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   Use the arrow keys to adjust volume
                 </div>
@@ -2843,7 +2843,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
               values="10"
             >
               <div
-                aria-describedby="mock-bui-1"
+                aria-describedby="mock-nk-1"
                 aria-label="seek bar"
                 aria-valuemax="6610"
                 aria-valuemin="0"
@@ -2881,7 +2881,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
           </div>
           <div
             class="emotion-49"
-            id="mock-bui-1"
+            id="mock-nk-1"
           >
             Use the arrow keys to fast forward or rewind
           </div>
@@ -2940,7 +2940,7 @@ exports[`Audio Player recorded player renders and behaves as expected 2`] = `
 }
 
 <div
-  aria-describedby="mock-bui-1"
+  aria-describedby="mock-nk-1"
   aria-label="seek bar"
   aria-valuemax="6610"
   aria-valuemin="0"
@@ -4002,12 +4002,12 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-1"
                               viewBox="0 0 64 64"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 Indeterminate progress indicator
                               </title>
@@ -4039,13 +4039,13 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-7"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 rewind 10 seconds
                               </title>
@@ -4076,13 +4076,13 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-7"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 fast forward 10 seconds
                               </title>
@@ -4121,13 +4121,13 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-7"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 previous
                               </title>
@@ -4184,12 +4184,12 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-7"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 mute
                               </title>
@@ -4216,7 +4216,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                     values="0.7"
                   >
                     <div
-                      aria-describedby="mock-bui-1"
+                      aria-describedby="mock-nk-1"
                       aria-label="Volume Control"
                       aria-valuemax="1"
                       aria-valuemin="0"
@@ -4251,12 +4251,12 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-7"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 max volume
                               </title>
@@ -4279,7 +4279,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                 </div>
                 <div
                   class="emotion-45"
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   Use the arrow keys to adjust volume
                 </div>
@@ -4312,7 +4312,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
               values="0"
             >
               <div
-                aria-describedby="mock-bui-1"
+                aria-describedby="mock-nk-1"
                 aria-label="seek bar"
                 aria-valuemax="1"
                 aria-valuemin="0"
@@ -4344,7 +4344,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
           </div>
           <div
             class="emotion-45"
-            id="mock-bui-1"
+            id="mock-nk-1"
           >
             Use the arrow keys to fast forward or rewind
           </div>
@@ -5401,12 +5401,12 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-1"
                               viewBox="0 0 64 64"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 Indeterminate progress indicator
                               </title>
@@ -5438,13 +5438,13 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-7"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 rewind 10 seconds
                               </title>
@@ -5475,13 +5475,13 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-7"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 fast forward 10 seconds
                               </title>
@@ -5520,13 +5520,13 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-7"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 previous
                               </title>
@@ -5583,12 +5583,12 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-7"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 mute
                               </title>
@@ -5615,7 +5615,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                     values="0.7"
                   >
                     <div
-                      aria-describedby="mock-bui-1"
+                      aria-describedby="mock-nk-1"
                       aria-label="Volume Control"
                       aria-valuemax="1"
                       aria-valuemin="0"
@@ -5650,12 +5650,12 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-7"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 max volume
                               </title>
@@ -5678,7 +5678,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                 </div>
                 <div
                   class="emotion-45"
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   Use the arrow keys to adjust volume
                 </div>
@@ -5711,7 +5711,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
               values="0"
             >
               <div
-                aria-describedby="mock-bui-1"
+                aria-describedby="mock-nk-1"
                 aria-label="seek bar"
                 aria-valuemax="1"
                 aria-valuemin="0"
@@ -5743,7 +5743,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
           </div>
           <div
             class="emotion-45"
-            id="mock-bui-1"
+            id="mock-nk-1"
           >
             Use the arrow keys to fast forward or rewind
           </div>
@@ -6764,12 +6764,12 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-1"
                               viewBox="0 0 64 64"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 Indeterminate progress indicator
                               </title>
@@ -6801,13 +6801,13 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-7"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 rewind 10 seconds
                               </title>
@@ -6838,13 +6838,13 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-7"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 fast forward 10 seconds
                               </title>
@@ -6883,13 +6883,13 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-7"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 previous
                               </title>
@@ -6946,12 +6946,12 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-7"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 mute
                               </title>
@@ -6978,7 +6978,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                     values="0.1"
                   >
                     <div
-                      aria-describedby="mock-bui-1"
+                      aria-describedby="mock-nk-1"
                       aria-label="Volume Control"
                       aria-valuemax="1"
                       aria-valuemin="0"
@@ -7013,12 +7013,12 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                             class="emotion-2"
                           >
                             <svg
-                              aria-labelledby="mock-bui-1"
+                              aria-labelledby="mock-nk-1"
                               class="emotion-7"
                               viewBox="0 0 24 24"
                             >
                               <title
-                                id="mock-bui-1"
+                                id="mock-nk-1"
                               >
                                 max volume
                               </title>
@@ -7041,7 +7041,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                 </div>
                 <div
                   class="emotion-45"
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   Use the arrow keys to adjust volume
                 </div>
@@ -7074,7 +7074,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
               values="0"
             >
               <div
-                aria-describedby="mock-bui-1"
+                aria-describedby="mock-nk-1"
                 aria-label="seek bar"
                 aria-valuemax="1"
                 aria-valuemin="0"
@@ -7106,7 +7106,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
           </div>
           <div
             class="emotion-45"
-            id="mock-bui-1"
+            id="mock-nk-1"
           >
             Use the arrow keys to fast forward or rewind
           </div>

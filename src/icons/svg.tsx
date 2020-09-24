@@ -1,7 +1,7 @@
 import React from 'react';
 import {styled, getColorFromTheme, getSizingFromTheme} from '../utils/style';
 import {StyledSvgProps, SvgProps} from './types';
-import {getBuiId} from '../utils/get-bui-id';
+import {getSSRId} from '../utils/get-ssr-id';
 
 const SvgElement = styled.svg<StyledSvgProps>`
   fill: ${getColorFromTheme('inkBase', '$color')};
@@ -18,7 +18,7 @@ const SvgElement = styled.svg<StyledSvgProps>`
 `;
 
 export const Svg: React.FC<SvgProps> = ({children, title, color, ...props}) => {
-  const id = getBuiId();
+  const id = getSSRId();
   return (
     <SvgElement
       viewBox="0 0 24 24"

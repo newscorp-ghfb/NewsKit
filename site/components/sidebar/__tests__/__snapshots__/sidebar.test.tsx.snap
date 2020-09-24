@@ -355,12 +355,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
             tabindex="0"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-4"
               viewBox="0 0 24 24"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Close
               </title>
@@ -395,12 +395,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
           >
             Getting Started
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-9"
               viewBox="0 0 16 16"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 close icon
               </title>
@@ -432,12 +432,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
           >
             Theming
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-9"
               viewBox="0 0 16 16"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 close icon
               </title>
@@ -469,12 +469,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
           >
             Foundations
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-9"
               viewBox="0 0 16 16"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 close icon
               </title>
@@ -506,12 +506,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
           >
             Components
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-9"
               viewBox="0 0 16 16"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 close icon
               </title>
@@ -543,12 +543,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
           >
             Utilities
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-9"
               viewBox="0 0 16 16"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 close icon
               </title>
@@ -977,12 +977,12 @@ exports[`Sidebar renders correctly when open 1`] = `
             tabindex="0"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-4"
               viewBox="0 0 24 24"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Close
               </title>
@@ -1017,12 +1017,12 @@ exports[`Sidebar renders correctly when open 1`] = `
           >
             Getting Started
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-9"
               viewBox="0 0 16 16"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 close icon
               </title>
@@ -1054,12 +1054,12 @@ exports[`Sidebar renders correctly when open 1`] = `
           >
             Theming
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-9"
               viewBox="0 0 16 16"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 close icon
               </title>
@@ -1091,12 +1091,12 @@ exports[`Sidebar renders correctly when open 1`] = `
           >
             Foundations
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-9"
               viewBox="0 0 16 16"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 close icon
               </title>
@@ -1128,12 +1128,12 @@ exports[`Sidebar renders correctly when open 1`] = `
           >
             Components
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-9"
               viewBox="0 0 16 16"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 close icon
               </title>
@@ -1165,12 +1165,12 @@ exports[`Sidebar renders correctly when open 1`] = `
           >
             Utilities
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-9"
               viewBox="0 0 16 16"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 close icon
               </title>

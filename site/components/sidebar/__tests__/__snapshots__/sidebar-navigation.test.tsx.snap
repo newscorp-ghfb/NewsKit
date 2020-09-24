@@ -187,12 +187,12 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
         >
           Group 1
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               close icon
             </title>
@@ -224,12 +224,12 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
         >
           Group 2
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               open icon
             </title>
@@ -304,12 +304,12 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
             >
               Group 2b
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 16 16"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   close icon
                 </title>
@@ -453,12 +453,12 @@ exports[`Sidebar navigation on group 1 page after click group1 menu collapses 1`
         >
           Group 1
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               close icon
             </title>
@@ -490,12 +490,12 @@ exports[`Sidebar navigation on group 1 page after click group1 menu collapses 1`
         >
           Group 2
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               close icon
             </title>
@@ -637,12 +637,12 @@ exports[`Sidebar navigation on group 1 page after enter key group1 menu collapse
         >
           Group 1
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               close icon
             </title>
@@ -674,12 +674,12 @@ exports[`Sidebar navigation on group 1 page after enter key group1 menu collapse
         >
           Group 2
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               close icon
             </title>
@@ -946,12 +946,12 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
         >
           Group 1
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               close icon
             </title>
@@ -983,12 +983,12 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
         >
           Group 2
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               open icon
             </title>
@@ -1063,12 +1063,12 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
             >
               Group 2b
               <svg
-                aria-labelledby="mock-bui-1"
+                aria-labelledby="mock-nk-1"
                 class="emotion-0"
                 viewBox="0 0 16 16"
               >
                 <title
-                  id="mock-bui-1"
+                  id="mock-nk-1"
                 >
                   close icon
                 </title>
@@ -1337,12 +1337,12 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
         >
           Group 1
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               open icon
             </title>
@@ -1399,12 +1399,12 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
         >
           Group 2
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               close icon
             </title>
@@ -1546,12 +1546,12 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
         >
           Group 1
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               close icon
             </title>
@@ -1583,12 +1583,12 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
         >
           Group 2
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               close icon
             </title>
@@ -1730,12 +1730,12 @@ exports[`Sidebar navigation on route level renders correctly without given path 
         >
           Group 1
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               close icon
             </title>
@@ -1767,12 +1767,12 @@ exports[`Sidebar navigation on route level renders correctly without given path 
         >
           Group 2
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 16 16"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               close icon
             </title>

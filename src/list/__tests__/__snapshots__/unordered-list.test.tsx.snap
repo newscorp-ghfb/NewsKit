@@ -247,12 +247,12 @@ exports[`UnorderedList renders different types of children 1`] = `
                 class="emotion-7"
               >
                 <svg
-                  aria-labelledby="mock-bui-1"
+                  aria-labelledby="mock-nk-1"
                   class="emotion-8"
                   viewBox="0 0 24 24"
                 >
                   <title
-                    id="mock-bui-1"
+                    id="mock-nk-1"
                   >
                     External link
                   </title>
@@ -370,12 +370,12 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 400 400"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Twitter logo
             </title>
@@ -418,12 +418,12 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 400 400"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Twitter logo
             </title>
@@ -466,12 +466,12 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 400 400"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Twitter logo
             </title>
@@ -603,12 +603,12 @@ exports[`UnorderedList renders with custom list item marker with different size 
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 400 400"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Twitter logo
             </title>
@@ -651,12 +651,12 @@ exports[`UnorderedList renders with custom list item marker with different size 
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 400 400"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Twitter logo
             </title>
@@ -699,12 +699,12 @@ exports[`UnorderedList renders with custom list item marker with different size 
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 400 400"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Twitter logo
             </title>

@@ -1332,12 +1332,12 @@ exports[`slider react-range Range function props renderThumb should render slide
     values="25"
   >
     <svg
-      aria-labelledby="mock-bui-1"
+      aria-labelledby="mock-nk-1"
       class="emotion-0"
       viewBox="0 0 88 88"
     >
       <title
-        id="mock-bui-1"
+        id="mock-nk-1"
       >
         Placeholder
       </title>

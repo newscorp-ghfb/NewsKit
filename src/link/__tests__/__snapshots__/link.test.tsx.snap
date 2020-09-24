@@ -495,12 +495,12 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="mock-bui-1"
+          aria-labelledby="mock-nk-1"
           class="emotion-2"
           viewBox="0 0 24 24"
         >
           <title
-            id="mock-bui-1"
+            id="mock-nk-1"
           >
             External link
           </title>

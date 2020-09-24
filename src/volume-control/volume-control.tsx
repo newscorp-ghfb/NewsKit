@@ -6,7 +6,7 @@ import {Slider} from '../slider';
 import {VolumeUp, VolumeDown, VolumeMute} from '../icons';
 import {IconSizeKeys, useTheme} from '../theme';
 import {ScreenReaderOnly} from '../screen-reader-only/screen-reader-only';
-import {getBuiId} from '../utils/get-bui-id';
+import {getSSRId} from '../utils/get-ssr-id';
 import {getTokensForVolumeControl} from './utils';
 
 interface MuteButtonProps {
@@ -54,7 +54,7 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
 }) => {
   const theme = useTheme();
   const [unMutedVolume, setUnMutedVolume] = useState(volume);
-  const srOnlyVolumeControl = getBuiId();
+  const srOnlyVolumeControl = getSSRId();
   const {
     sliderTrackStylePreset,
     trackSize,

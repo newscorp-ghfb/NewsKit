@@ -1506,12 +1506,12 @@ exports[`Card renders media section if the media data is provided 1`] = `
             class="emotion-1"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-0"
               viewBox="0 0 88 88"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Placeholder
               </title>
@@ -1715,12 +1715,12 @@ exports[`Card renders media section with a custom component 1`] = `
             class="emotion-1"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-0"
               viewBox="0 0 88 88"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Placeholder
               </title>
@@ -1924,12 +1924,12 @@ exports[`Card renders media section with a custom component using overrides 1`] 
             class="emotion-1"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-0"
               viewBox="0 0 88 88"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Placeholder
               </title>
@@ -2133,12 +2133,12 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
             class="emotion-1"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-0"
               viewBox="0 0 88 88"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Placeholder
               </title>
@@ -2342,12 +2342,12 @@ exports[`Card renders media section with overrides 1`] = `
             class="emotion-1"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-0"
               viewBox="0 0 88 88"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Placeholder
               </title>
@@ -2815,12 +2815,12 @@ exports[`Card renders with card items 1`] = `
             class="emotion-1"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-0"
               viewBox="0 0 88 88"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Placeholder
               </title>
@@ -3499,12 +3499,12 @@ exports[`CardInset renders with card items 1`] = `
             class="emotion-1"
           >
             <svg
-              aria-labelledby="mock-bui-1"
+              aria-labelledby="mock-nk-1"
               class="emotion-0"
               viewBox="0 0 88 88"
             >
               <title
-                id="mock-bui-1"
+                id="mock-nk-1"
               >
                 Placeholder
               </title>

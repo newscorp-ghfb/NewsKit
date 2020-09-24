@@ -11,7 +11,7 @@ import {createTheme, ThemeProvider} from '../../theme';
 import {Pause, Email, CopyLink} from '../../icons';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
 import {TabGroup, TabPane} from '../../tab-group';
-import {getBuiId} from '../../utils/get-bui-id';
+import {getSSRId} from '../../utils/get-ssr-id';
 
 const Container = styled.div`
   margin: ${getSizingFromTheme('sizing050')};
@@ -109,7 +109,7 @@ export default {
               <Stack>
                 <h2>State</h2>
                 {states.map(state => (
-                  <Label key={getBuiId()}>{state}</Label>
+                  <Label key={getSSRId()}>{state}</Label>
                 ))}
               </Stack>
             </Cell>
@@ -179,7 +179,7 @@ export default {
           <StorybookHeading>Tab - Icon</StorybookHeading>
           <Container>
             {[Pause, Email, CopyLink].map(IconType => (
-              <Spacer key={getBuiId()}>
+              <Spacer key={getSSRId()}>
                 <Stack
                   flow="horizontal-center"
                   spaceInline="sizing060"
@@ -187,7 +187,7 @@ export default {
                 >
                   {tabSizes.map(tab => (
                     <Tab
-                      key={getBuiId()}
+                      key={getSSRId()}
                       size={tab.tabSize}
                       ariaLabel="icon tab"
                     >
@@ -209,7 +209,7 @@ export default {
           <StorybookHeading>Tab - Icon and Label</StorybookHeading>
           <Container>
             {[Pause, Email, CopyLink].map(IconType => (
-              <Spacer key={getBuiId()}>
+              <Spacer key={getSSRId()}>
                 <Stack
                   flow="horizontal-center"
                   spaceInline="sizing060"
@@ -217,7 +217,7 @@ export default {
                 >
                   {tabSizes.map(tab => (
                     <Tab
-                      key={getBuiId()}
+                      key={getSSRId()}
                       size={tab.tabSize}
                       ariaLabel="tab label"
                     >

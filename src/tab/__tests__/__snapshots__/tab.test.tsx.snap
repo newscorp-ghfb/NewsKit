@@ -400,12 +400,12 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 24 24"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Circle
             </title>
@@ -1114,12 +1114,12 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-0"
             viewBox="0 0 24 24"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Circle
             </title>
@@ -1321,12 +1321,12 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-2"
             viewBox="0 0 24 24"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Circle
             </title>
@@ -1692,12 +1692,12 @@ exports[`Tab should render custom aria-label tab 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-bui-1"
+            aria-labelledby="mock-nk-1"
             class="emotion-2"
             viewBox="0 0 24 24"
           >
             <title
-              id="mock-bui-1"
+              id="mock-nk-1"
             >
               Circle
             </title>

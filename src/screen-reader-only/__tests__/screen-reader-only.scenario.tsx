@@ -1,9 +1,9 @@
 import * as React from 'react';
 import {ScreenReaderOnly} from '../screen-reader-only';
 import {StorybookHeading} from '../../test/storybook-comps';
-import {getBuiId} from '../../utils/get-bui-id';
+import {getSSRId} from '../../utils/get-ssr-id';
 
-const srOnly = getBuiId();
+const srOnly = getSSRId();
 
 export default {
   name: 'screen-reader-only',

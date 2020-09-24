@@ -4575,12 +4575,12 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
                   class="emotion-1"
                 >
                   <svg
-                    aria-labelledby="mock-bui-1"
+                    aria-labelledby="mock-nk-1"
                     class="emotion-0"
                     viewBox="0 0 24 24"
                   >
                     <title
-                      id="mock-bui-1"
+                      id="mock-nk-1"
                     >
                       Email icon
                     </title>
@@ -4617,12 +4617,12 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
                   class="emotion-1"
                 >
                   <svg
-                    aria-labelledby="mock-bui-1"
+                    aria-labelledby="mock-nk-1"
                     class="emotion-0"
                     viewBox="0 0 24 24"
                   >
                     <title
-                      id="mock-bui-1"
+                      id="mock-nk-1"
                     >
                       Email icon
                     </title>
@@ -4659,12 +4659,12 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
                   class="emotion-1"
                 >
                   <svg
-                    aria-labelledby="mock-bui-1"
+                    aria-labelledby="mock-nk-1"
                     class="emotion-0"
                     viewBox="0 0 24 24"
                   >
                     <title
-                      id="mock-bui-1"
+                      id="mock-nk-1"
                     >
                       Email icon
                     </title>
@@ -5014,12 +5014,12 @@ exports[`Tab Group renders with icons for tabs 1`] = `
                   class="emotion-1"
                 >
                   <svg
-                    aria-labelledby="mock-bui-1"
+                    aria-labelledby="mock-nk-1"
                     class="emotion-0"
                     viewBox="0 0 24 24"
                   >
                     <title
-                      id="mock-bui-1"
+                      id="mock-nk-1"
                     >
                       Email icon
                     </title>
@@ -5047,12 +5047,12 @@ exports[`Tab Group renders with icons for tabs 1`] = `
                   class="emotion-1"
                 >
                   <svg
-                    aria-labelledby="mock-bui-1"
+                    aria-labelledby="mock-nk-1"
                     class="emotion-0"
                     viewBox="0 0 24 24"
                   >
                     <title
-                      id="mock-bui-1"
+                      id="mock-nk-1"
                     >
                       Email icon
                     </title>
@@ -5080,12 +5080,12 @@ exports[`Tab Group renders with icons for tabs 1`] = `
                   class="emotion-1"
                 >
                   <svg
-                    aria-labelledby="mock-bui-1"
+                    aria-labelledby="mock-nk-1"
                     class="emotion-0"
                     viewBox="0 0 24 24"
                   >
                     <title
-                      id="mock-bui-1"
+                      id="mock-nk-1"
                     >
                       Email icon
                     </title>
@@ -5449,12 +5449,12 @@ exports[`Tab Group renders with overrides 1`] = `
                   class="emotion-1"
                 >
                   <svg
-                    aria-labelledby="mock-bui-1"
+                    aria-labelledby="mock-nk-1"
                     class="emotion-0"
                     viewBox="0 0 24 24"
                   >
                     <title
-                      id="mock-bui-1"
+                      id="mock-nk-1"
                     >
                       Email icon
                     </title>
@@ -5491,12 +5491,12 @@ exports[`Tab Group renders with overrides 1`] = `
                   class="emotion-1"
                 >
                   <svg
-                    aria-labelledby="mock-bui-1"
+                    aria-labelledby="mock-nk-1"
                     class="emotion-0"
                     viewBox="0 0 24 24"
                   >
                     <title
-                      id="mock-bui-1"
+                      id="mock-nk-1"
                     >
                       Email icon
                     </title>
@@ -5533,12 +5533,12 @@ exports[`Tab Group renders with overrides 1`] = `
                   class="emotion-1"
                 >
                   <svg
-                    aria-labelledby="mock-bui-1"
+                    aria-labelledby="mock-nk-1"
                     class="emotion-0"
                     viewBox="0 0 24 24"
                   >
                     <title
-                      id="mock-bui-1"
+                      id="mock-nk-1"
                     >
                       Email icon
                     </title>
