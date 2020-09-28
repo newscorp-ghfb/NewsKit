@@ -32,7 +32,7 @@ describe('compileTheme', () => {
         "compiled": true,
         "icons": Object {},
         "mySizing00": "",
-        "mySizing000": "0",
+        "mySizing000": 0,
         "sizing00": "",
         "sizing000": 0,
       }
@@ -55,6 +55,156 @@ describe('compileTheme', () => {
         },
         "compiled": true,
         "icons": Object {},
+      }
+    `);
+  });
+
+  test('preserves number types', () => {
+    const theme: any = {
+      fonts: {
+        fontLineHeight000: 0,
+        fontLineHeight010: 1,
+        fontLineHeight020: 1.125,
+        fontLineHeight000Copy: '{{fonts.fontLineHeight000}}',
+        fontLineHeight010Copy: '{{fonts.fontLineHeight010}}',
+        fontLineHeight020Copy: '{{fonts.fontLineHeight020}}',
+      },
+    };
+
+    expect(compileTheme(theme)).toMatchInlineSnapshot(`
+      Object {
+        "compiled": true,
+        "fonts": Object {
+          "fontLineHeight000": 0,
+          "fontLineHeight000Copy": 0,
+          "fontLineHeight010": 1,
+          "fontLineHeight010Copy": 1,
+          "fontLineHeight020": 1.125,
+          "fontLineHeight020Copy": 1.125,
+        },
+        "icons": Object {},
+      }
+    `);
+  });
+
+  test('preserves object types and compiles', () => {
+    const theme: any = {
+      colors: {
+        red010: '#ff0000',
+        blue010: '#0000ff',
+      },
+      stylePresets: {
+        myStylePreset: {
+          base: {
+            backgroundColor: '{{colors.red010}}',
+          },
+        },
+        myStylePresetWithHover: {
+          base: '{{stylePresets.myStylePreset.base}}',
+          hover: {
+            backgroundColor: '{{colors.blue010}}',
+          },
+        },
+      },
+    };
+
+    expect(compileTheme(theme)).toMatchInlineSnapshot(`
+      Object {
+        "colors": Object {
+          "blue010": "#0000ff",
+          "red010": "#ff0000",
+        },
+        "compiled": true,
+        "icons": Object {},
+        "stylePresets": Object {
+          "myStylePreset": Object {
+            "base": Object {
+              "backgroundColor": "#ff0000",
+            },
+          },
+          "myStylePresetWithHover": Object {
+            "base": Object {
+              "backgroundColor": "#ff0000",
+            },
+            "hover": Object {
+              "backgroundColor": "#0000ff",
+            },
+          },
+        },
+      }
+    `);
+  });
+
+  test('preserves object types from functions and compiles', () => {
+    const theme: any = {
+      stylePresets: {
+        myStylePresetWithHover: {
+          base: () => ({
+            backgroundColor: '{{colors.red010}}',
+          }),
+          hover: {
+            backgroundColor: '{{colors.blue010}}',
+          },
+        },
+      },
+      colors: {
+        red010: '#ff0000',
+        blue010: '#0000ff',
+      },
+    };
+
+    expect(compileTheme(theme)).toMatchInlineSnapshot(`
+      Object {
+        "colors": Object {
+          "blue010": "#0000ff",
+          "red010": "#ff0000",
+        },
+        "compiled": true,
+        "icons": Object {},
+        "stylePresets": Object {
+          "myStylePresetWithHover": Object {
+            "base": Object {
+              "backgroundColor": "#ff0000",
+            },
+            "hover": Object {
+              "backgroundColor": "#0000ff",
+            },
+          },
+        },
+      }
+    `);
+  });
+
+  test('compiles tokens from functions', () => {
+    const theme: any = {
+      colors: {
+        red010: '#ff0000',
+        myRedColor: '{{colors.red010}}',
+      },
+      stylePresets: {
+        myStylePreset: {
+          base: {
+            backgroundColor: ({colors}: any) => colors.myRedColor,
+          },
+        },
+      },
+    };
+
+    expect(compileTheme(theme)).toMatchInlineSnapshot(`
+      Object {
+        "colors": Object {
+          "myRedColor": "#ff0000",
+          "red010": "#ff0000",
+        },
+        "compiled": true,
+        "icons": Object {},
+        "stylePresets": Object {
+          "myStylePreset": Object {
+            "base": Object {
+              "backgroundColor": "#ff0000",
+            },
+          },
+        },
       }
     `);
   });
@@ -197,7 +347,7 @@ describe('compileTheme', () => {
       Object {
         "compiled": true,
         "icons": Object {},
-        "myColour": "undefined",
+        "myColour": undefined,
       }
     `);
   });
