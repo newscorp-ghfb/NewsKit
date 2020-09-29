@@ -36,13 +36,13 @@ exports[`Block with props renders with spaceStack010 for xs, spaceStack020 for s
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-0 {
     margin-bottom: 8px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
   .emotion-0 {
     margin-bottom: 12px;
   }

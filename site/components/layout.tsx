@@ -30,7 +30,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  ${getMediaQueryFromTheme('md')} {
+  ${getMediaQueryFromTheme('lg')} {
     padding-left: 276px;
   }
 `;
@@ -162,7 +162,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
 
           <BodyWrapper>
             <Grid>
-              <Cell xs={12} md={10} mdOffset={1}>
+              <Cell xs={12} lg={10} lgOffset={1}>
                 <Playground componentName={false} />
                 <ContentWrapper>
                   {this.renderNavigation()}

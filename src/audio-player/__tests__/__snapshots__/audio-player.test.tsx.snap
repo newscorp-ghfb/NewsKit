@@ -40,13 +40,13 @@ exports[`Audio Player live player renders as expected 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
   .emotion-46 {
     margin: -0px 0px 0 0px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-46 {
     margin: -0px 0px 0 0px;
   }
@@ -80,7 +80,15 @@ exports[`Audio Player live player renders as expected 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-0 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-0 {
     padding: 0 0px;
     margin-top: 0px;
@@ -127,7 +135,15 @@ exports[`Audio Player live player renders as expected 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-45 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-45 {
     padding: 0 0px;
     margin-top: 0px;
@@ -433,7 +449,13 @@ exports[`Audio Player live player renders as expected 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-34 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-34 {
     display: block;
   }
@@ -1552,13 +1574,13 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
   .emotion-66 {
     margin: -0px 0px 0 0px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-66 {
     margin: -0px 0px 0 0px;
   }
@@ -1592,7 +1614,15 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-0 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-0 {
     padding: 0 0px;
     margin-top: 0px;
@@ -1639,7 +1669,15 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-56 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-56 {
     padding: 0 0px;
     margin-top: 0px;
@@ -1835,7 +1873,13 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-50 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-50 {
     display: block;
   }
@@ -2184,7 +2228,15 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-65 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-65 {
     padding: 0 0px;
     margin-top: 0px;
@@ -2981,13 +3033,13 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
   .emotion-61 {
     margin: -0px 0px 0 0px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-61 {
     margin: -0px 0px 0 0px;
   }
@@ -3021,7 +3073,15 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-0 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-0 {
     padding: 0 0px;
     margin-top: 0px;
@@ -3068,7 +3128,15 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-52 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-52 {
     padding: 0 0px;
     margin-top: 0px;
@@ -3352,7 +3420,13 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-46 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-46 {
     display: block;
   }
@@ -3803,7 +3877,15 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-60 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-60 {
     padding: 0 0px;
     margin-top: 0px;
@@ -4375,13 +4457,13 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
   .emotion-61 {
     margin: -0px 0px 0 0px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-61 {
     margin: -0px 0px 0 0px;
   }
@@ -4415,7 +4497,15 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-0 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-0 {
     padding: 0 0px;
     margin-top: 0px;
@@ -4462,7 +4552,15 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-52 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-52 {
     padding: 0 0px;
     margin-top: 0px;
@@ -4746,7 +4844,13 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-46 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-46 {
     display: block;
   }
@@ -5197,7 +5301,15 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-60 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-60 {
     padding: 0 0px;
     margin-top: 0px;
@@ -5769,13 +5881,13 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
   .emotion-61 {
     margin: -0px 0px 0 0px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-61 {
     margin: -0px 0px 0 0px;
   }
@@ -5809,7 +5921,15 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-0 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-0 {
     padding: 0 0px;
     margin-top: 0px;
@@ -5856,7 +5976,15 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-52 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-52 {
     padding: 0 0px;
     margin-top: 0px;
@@ -6014,7 +6142,13 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-46 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-46 {
     display: block;
   }
@@ -6211,7 +6345,15 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-60 {
+    padding: 0 0px;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-60 {
     padding: 0 0px;
     margin-top: 0px;

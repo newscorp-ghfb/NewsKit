@@ -11,6 +11,7 @@ interface CommonProps {
   sm?: boolean;
   md?: boolean;
   lg?: boolean;
+  xl?: boolean;
   targetDevices?: Array<Devices>;
 }
 
@@ -40,6 +41,7 @@ const StyledVisible = styled.div<InternalProps>`
   ${generateBreakpointConfig(true, 'sm')};
   ${generateBreakpointConfig(true, 'md')};
   ${generateBreakpointConfig(true, 'lg')};
+  ${generateBreakpointConfig(true, 'xl')};
   ${({targetDevices}) =>
     targetDevices &&
     getDeviceQueryFromTheme(targetDevices, {display: 'block'})()};
@@ -54,6 +56,7 @@ const StyledHidden = styled.div<InternalProps>`
   ${generateBreakpointConfig(false, 'sm')};
   ${generateBreakpointConfig(false, 'md')};
   ${generateBreakpointConfig(false, 'lg')};
+  ${generateBreakpointConfig(false, 'xl')};
   ${({targetDevices}) =>
     targetDevices &&
     getDeviceQueryFromTheme(targetDevices, {display: 'none'})()};

@@ -21,7 +21,7 @@ exports[`TypographyPreset renders default 1`] = `
 
 exports[`TypographyPreset renders responsive override body010 for xs and body030 for md breakpoints 1`] = `
 <DocumentFragment>
-  @media screen and (max-width:959px) {
+  @media screen and (max-width:767px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 14px;
@@ -34,7 +34,7 @@ exports[`TypographyPreset renders responsive override body010 for xs and body030
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 18px;
@@ -68,7 +68,7 @@ exports[`TypographyPreset renders responsive override body010 for xs, body020 fo
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 16px;
@@ -81,7 +81,7 @@ exports[`TypographyPreset renders responsive override body010 for xs, body020 fo
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 18px;
@@ -149,7 +149,7 @@ exports[`TypographyPreset renders responsive override body010 for xs, body020 fo
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 16px;
@@ -162,7 +162,7 @@ exports[`TypographyPreset renders responsive override body010 for xs, body020 fo
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 18px;
@@ -175,7 +175,7 @@ exports[`TypographyPreset renders responsive override body010 for xs, body020 fo
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-0 {
     font-family: system-ui,"Open Sans",sans-serif;
     font-size: 14px;

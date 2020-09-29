@@ -56,6 +56,7 @@ const StyledCell = styled.div<CellProps & GridProps>`
   ${generateBreakpointConfig('sm')};
   ${generateBreakpointConfig('md')};
   ${generateBreakpointConfig('lg')};
+  ${generateBreakpointConfig('xl')};
 `;
 
 const filterGridOverrides = (

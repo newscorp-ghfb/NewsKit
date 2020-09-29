@@ -36,13 +36,13 @@ exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-0 {
     background-color: blue;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
   .emotion-0 {
     background-color: green;
   }
@@ -62,19 +62,19 @@ exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-0 {
     background-color: blue;
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-0 {
     background-color: green;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-0 {
     background-color: #FF00FF;
   }
@@ -94,19 +94,19 @@ exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-0 {
     background-color: blue;
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-0 {
     background-color: green;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-0 {
     background-color: #FF00FF;
   }

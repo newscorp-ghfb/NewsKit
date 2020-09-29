@@ -46,8 +46,11 @@ export const SwatchRow: SwatchComponent = ({
   </Cell>
 );
 
-export const SwatchCard: SwatchComponent = ({color, isOverlay}) => (
-  <Cell xs={6} lg={3}>
+export const SwatchCard: SwatchComponent = ({
+  color,
+  isOverlay,
+}: SwatchRowProps) => (
+  <Cell xs={6} xl={3}>
     <StyledSwatchCard>
       <StyledSwatchCardTop {...color} isOverlay={isOverlay}>
         <Stack flow="horizontal-top" stackDistribution="flex-end">

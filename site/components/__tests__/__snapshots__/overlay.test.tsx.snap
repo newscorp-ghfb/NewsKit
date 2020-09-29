@@ -39,7 +39,7 @@ exports[`Overlay when hidden at breakpoint 1`] = `
   transition: opacity 0.6s,right 0.3s;
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
   .emotion-0 {
     display: none;
   }

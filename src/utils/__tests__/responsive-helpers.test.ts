@@ -27,13 +27,15 @@ describe('Helpers - ResponsiveHelpers', () => {
         xs: 320,
         sm: 480,
         md: 960,
-        lg: 1440,
+        lg: 1220,
+        xl: 1440,
       }),
     ).toMatchInlineSnapshot(`
       Array [
         "@media screen and (min-width: 320px)",
         "@media screen and (min-width: 480px)",
         "@media screen and (min-width: 960px)",
+        "@media screen and (min-width: 1220px)",
         "@media screen and (min-width: 1440px)",
       ]
     `);
@@ -43,15 +45,17 @@ describe('Helpers - ResponsiveHelpers', () => {
     expect(
       getMediaQueries({
         sm: 480,
-        lg: 1440,
+        lg: 1220,
         xs: 320,
         md: 960,
+        xl: 1440,
       }),
     ).toMatchInlineSnapshot(`
       Array [
         "@media screen and (min-width: 320px)",
         "@media screen and (min-width: 480px)",
         "@media screen and (min-width: 960px)",
+        "@media screen and (min-width: 1220px)",
         "@media screen and (min-width: 1440px)",
       ]
     `);

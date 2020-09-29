@@ -37,7 +37,7 @@ exports[`headline renders correctly with default props 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 36px;
@@ -66,7 +66,7 @@ exports[`headline renders correctly with default props 1`] = `
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;
@@ -169,7 +169,7 @@ exports[`headline renders correctly with default props 2`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-1 {
     font-family: "Noto Sans",sans-serif;
     font-size: 36px;
@@ -198,7 +198,7 @@ exports[`headline renders correctly with default props 2`] = `
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-1 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;
@@ -296,7 +296,7 @@ exports[`headline renders correctly with default props 2`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 36px;
@@ -325,7 +325,7 @@ exports[`headline renders correctly with default props 2`] = `
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;
@@ -389,13 +389,13 @@ exports[`headline renders correctly with default props 2`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-0 {
     margin-right: 12px;
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-0 {
     margin-right: 16px;
   }
@@ -467,13 +467,13 @@ exports[`headline renders correctly with overriden props 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-0 {
     margin-right: 12px;
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-0 {
     margin-right: 16px;
   }
@@ -520,7 +520,7 @@ exports[`headline renders correctly with overriden props 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-1 {
     font-family: "Noto Sans",sans-serif;
     font-size: 36px;
@@ -549,7 +549,7 @@ exports[`headline renders correctly with overriden props 1`] = `
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-1 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;

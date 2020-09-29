@@ -30,7 +30,7 @@ const Header = styled.header`
   padding: ${getSizingFromTheme('sizing030')} 0;
   box-shadow: ${getShadowFromTheme('shadow030')};
 
-  ${getMediaQueryFromTheme('md')} {
+  ${getMediaQueryFromTheme('lg')} {
     min-height: 72px;
     box-shadow: none; // Remove this line when header links are displayed
   }
@@ -100,7 +100,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
               height="100%"
               minHeight="40px"
             >
-              <Hidden md lg>
+              <Hidden lg xl>
                 {renderMobileNavigation(handleSidebarClick)}
               </Hidden>
 
@@ -109,7 +109,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                 flexGrow={1}
                 justifyContent="flex-end"
               >
-                <Hidden xs sm md lg>
+                <Hidden xs sm md lg xl>
                   <nav>
                     <NavigationList>
                       <li>
@@ -131,7 +131,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                   </nav>
                 </Hidden>
 
-                <Hidden xs sm md lg>
+                <Hidden xs sm md lg xl>
                   <SearchContainer data-testid="search">
                     <SearchIcon />
                   </SearchContainer>

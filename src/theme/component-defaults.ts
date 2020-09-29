@@ -116,8 +116,8 @@ export const componentDefaults = {
       spaceInline: {
         xs: 'space040',
         sm: 'space040',
-        md: 'space050',
         lg: 'space050',
+        xl: 'space050',
       },
     },
     contentAndActionsContainer: {
@@ -147,8 +147,8 @@ export const componentDefaults = {
       spaceInset: {
         xs: 'spaceInset040',
         sm: 'spaceInset040',
-        md: 'spaceInset050',
         lg: 'spaceInset050',
+        xl: 'spaceInset050',
       },
     },
     actionsContainer: {
@@ -157,8 +157,8 @@ export const componentDefaults = {
       spaceInset: {
         xs: 'spaceInset030Squish',
         sm: 'spaceInset030Squish',
-        md: 'spaceInset040Squish',
         lg: 'spaceInset040Squish',
+        xl: 'spaceInset040Squish',
       },
     },
   },
@@ -201,20 +201,20 @@ export const componentDefaults = {
     containerMargin: {
       xs: 16,
       sm: 16,
-      md: 24,
       lg: 24,
+      xl: 24,
     },
     columnGutters: {
       xs: 16,
       sm: 16,
-      md: 24,
       lg: 24,
+      xl: 24,
     },
     rowGutters: {
       xs: 16,
       sm: 16,
-      md: 24,
       lg: 24,
+      xl: 24,
     },
   },
   headline: {
@@ -223,8 +223,8 @@ export const componentDefaults = {
       typographyPreset: {
         xs: 'heading060',
         sm: 'heading060',
-        md: 'heading070',
-        lg: 'heading080',
+        lg: 'heading070',
+        xl: 'heading080',
       },
     },
     kicker: {
@@ -232,14 +232,14 @@ export const componentDefaults = {
       typographyPreset: {
         xs: 'heading060',
         sm: 'heading060',
-        md: 'heading070',
-        lg: 'heading080',
+        lg: 'heading070',
+        xl: 'heading080',
       },
       spaceInline: {
         xs: 'space030',
         sm: 'space030',
-        md: 'space040',
         lg: 'space040',
+        xl: 'space040',
       },
     },
   },
@@ -247,29 +247,29 @@ export const componentDefaults = {
     stylePreset: 'headlineH1',
     typographyPreset: {
       xs: 'heading050',
-      md: 'heading070',
-      lg: 'heading090',
+      lg: 'heading070',
+      xl: 'heading090',
     },
   },
   headlineH2: {
     stylePreset: 'headlineH2',
     typographyPreset: {
       xs: 'heading030',
-      md: 'heading040',
+      lg: 'heading040',
     },
   },
   headlineH3: {
     stylePreset: 'headlineH3',
     typographyPreset: {
       xs: 'heading020',
-      md: 'heading030',
+      lg: 'heading030',
     },
   },
   headlineH4: {
     stylePreset: 'headlineH4',
     typographyPreset: {
       xs: 'heading010',
-      md: 'heading020',
+      lg: 'heading020',
     },
   },
   headlineH5: {
@@ -360,7 +360,7 @@ export const componentDefaults = {
       stylePreset: 'standfirst',
       typographyPreset: {
         xs: 'subhead020',
-        md: 'subhead030',
+        lg: 'subhead030',
       },
     },
   },
@@ -481,14 +481,14 @@ export const componentDefaults = {
   titleBar: {
     spaceInset: {
       xs: 'spaceInset030Squish',
-      md: 'spaceInset040Squish',
+      lg: 'spaceInset040Squish',
     },
     stylePreset: 'titleBar',
     heading: {
       typographyPreset: {
         xs: 'heading040',
-        md: 'heading050',
-        lg: 'heading070',
+        lg: 'heading050',
+        xl: 'heading070',
       },
     },
   },

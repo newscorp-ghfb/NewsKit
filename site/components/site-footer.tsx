@@ -85,7 +85,7 @@ const SiteFooter: React.FC = () => (
       </Cell>
       <Cell xs={12} sm={6} md={6}>
         <FooterMenu>
-          <Hidden xs sm md lg>
+          <Hidden xs sm md lg xl>
             <FooterLink>
               <Link href="/cookies" noUnderline external={false}>
                 Cookies
@@ -116,7 +116,7 @@ const SiteFooter: React.FC = () => (
               Careers
             </Link>
           </FooterLink>
-          <Hidden xs sm md lg>
+          <Hidden xs sm md lg xl>
             <FooterLink>
               <Link href="/" noUnderline external={false}>
                 <GitHub size="iconSize020" />

@@ -19,9 +19,10 @@ Object {
     "borderWidthDefault": "1px",
   },
   "breakpoints": Object {
-    "lg": 1440,
-    "md": 960,
+    "lg": 1024,
+    "md": 768,
     "sm": 480,
+    "xl": 1440,
     "xs": 0,
   },
   "colors": Object {
@@ -279,8 +280,8 @@ Object {
       "mediaContainer": Object {
         "spaceInline": Object {
           "lg": "space050",
-          "md": "space050",
           "sm": "space040",
+          "xl": "space050",
           "xs": "space040",
         },
         "stylePreset": "cardContainerMedia",
@@ -296,8 +297,8 @@ Object {
         "minHeight": "sizing000",
         "spaceInset": Object {
           "lg": "spaceInset040Squish",
-          "md": "spaceInset040Squish",
           "sm": "spaceInset030Squish",
+          "xl": "spaceInset040Squish",
           "xs": "spaceInset030Squish",
         },
         "stylePreset": "cardContainerActions",
@@ -313,8 +314,8 @@ Object {
       "teaserContainer": Object {
         "spaceInset": Object {
           "lg": "spaceInset050",
-          "md": "spaceInset050",
           "sm": "spaceInset040",
+          "xl": "spaceInset050",
           "xs": "spaceInset040",
         },
         "stylePreset": "cardContainerTeaser",
@@ -356,22 +357,22 @@ Object {
     "grid": Object {
       "columnGutters": Object {
         "lg": 24,
-        "md": 24,
         "sm": 16,
+        "xl": 24,
         "xs": 16,
       },
       "columns": 12,
       "containerMargin": Object {
         "lg": 24,
-        "md": 24,
         "sm": 16,
+        "xl": 24,
         "xs": 16,
       },
       "maxWidth": 1920,
       "rowGutters": Object {
         "lg": 24,
-        "md": 24,
         "sm": 16,
+        "xl": 24,
         "xs": 16,
       },
     },
@@ -379,24 +380,24 @@ Object {
       "heading": Object {
         "stylePreset": "headlineContent",
         "typographyPreset": Object {
-          "lg": "heading080",
-          "md": "heading070",
+          "lg": "heading070",
           "sm": "heading060",
+          "xl": "heading080",
           "xs": "heading060",
         },
       },
       "kicker": Object {
         "spaceInline": Object {
           "lg": "space040",
-          "md": "space040",
           "sm": "space030",
+          "xl": "space040",
           "xs": "space030",
         },
         "stylePreset": "headlineKicker",
         "typographyPreset": Object {
-          "lg": "heading080",
-          "md": "heading070",
+          "lg": "heading070",
           "sm": "heading060",
+          "xl": "heading080",
           "xs": "heading060",
         },
       },
@@ -404,29 +405,29 @@ Object {
     "headlineH1": Object {
       "stylePreset": "headlineH1",
       "typographyPreset": Object {
-        "lg": "heading090",
-        "md": "heading070",
+        "lg": "heading070",
+        "xl": "heading090",
         "xs": "heading050",
       },
     },
     "headlineH2": Object {
       "stylePreset": "headlineH2",
       "typographyPreset": Object {
-        "md": "heading040",
+        "lg": "heading040",
         "xs": "heading030",
       },
     },
     "headlineH3": Object {
       "stylePreset": "headlineH3",
       "typographyPreset": Object {
-        "md": "heading030",
+        "lg": "heading030",
         "xs": "heading020",
       },
     },
     "headlineH4": Object {
       "stylePreset": "headlineH4",
       "typographyPreset": Object {
-        "md": "heading020",
+        "lg": "heading020",
         "xs": "heading010",
       },
     },
@@ -517,7 +518,7 @@ Object {
       "styledText": Object {
         "stylePreset": "standfirst",
         "typographyPreset": Object {
-          "md": "subhead030",
+          "lg": "subhead030",
           "xs": "subhead020",
         },
       },
@@ -639,13 +640,13 @@ Object {
     "titleBar": Object {
       "heading": Object {
         "typographyPreset": Object {
-          "lg": "heading070",
-          "md": "heading050",
+          "lg": "heading050",
+          "xl": "heading070",
           "xs": "heading040",
         },
       },
       "spaceInset": Object {
-        "md": "spaceInset040Squish",
+        "lg": "spaceInset040Squish",
         "xs": "spaceInset030Squish",
       },
       "stylePreset": "titleBar",

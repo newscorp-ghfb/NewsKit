@@ -1373,13 +1373,13 @@ exports[`Card renders media section if the media data is provided 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-5 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-5 {
     margin-bottom: 24px;
   }
@@ -1582,13 +1582,13 @@ exports[`Card renders media section with a custom component 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-5 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-5 {
     margin-bottom: 24px;
   }
@@ -1791,13 +1791,13 @@ exports[`Card renders media section with a custom component using overrides 1`] 
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-5 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-5 {
     margin-bottom: 24px;
   }
@@ -2000,13 +2000,13 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-5 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-5 {
     margin-bottom: 24px;
   }
@@ -2293,13 +2293,13 @@ exports[`Card renders media section with overrides 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-5 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-5 {
     margin-bottom: 24px;
   }
@@ -2418,13 +2418,13 @@ exports[`Card renders with card items 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-5 {
     margin-bottom: 16px;
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-5 {
     margin-bottom: 24px;
   }
@@ -3004,13 +3004,19 @@ exports[`CardInset renders card with overrides 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-2 {
     padding: 24px;
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-2 {
+    padding: 32px;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-2 {
     padding: 32px;
   }
@@ -3018,7 +3024,7 @@ exports[`CardInset renders card with overrides 1`] = `
 
 @media screen and (min-width:1440px) {
   .emotion-2 {
-    padding: 32px;
+    padding: 24px;
   }
 }
 
@@ -3401,13 +3407,13 @@ exports[`CardInset renders with card items 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-8 {
     padding: 16px;
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-8 {
     padding: 24px;
   }
@@ -3458,13 +3464,13 @@ exports[`CardInset renders with card items 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-20 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-20 {
     padding: 16px 24px;
   }
@@ -3621,13 +3627,13 @@ exports[`CardInset renders without card items 1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-0 {
     padding: 16px;
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-0 {
     padding: 24px;
   }

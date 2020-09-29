@@ -2,7 +2,7 @@ import {StylePreset, TypographyPreset} from './presets/types';
 import {DeepPartial} from '../utils/types';
 import {colors} from './foundations';
 
-export type Breakpoints = Record<'xs' | 'sm' | 'md' | 'lg', number>;
+export type Breakpoints = Record<'xs' | 'sm' | 'md' | 'lg' | 'xl', number>;
 export enum Devices {
   iPad = 'iPad',
   iPadPro = 'iPad Pro',

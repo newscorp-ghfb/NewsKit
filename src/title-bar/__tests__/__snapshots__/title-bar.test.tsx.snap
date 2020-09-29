@@ -25,13 +25,13 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   border-width: 0 0 1px 0;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-8 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-8 {
     padding: 16px 24px;
   }
@@ -43,7 +43,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 28px;
@@ -72,7 +72,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
@@ -146,7 +146,13 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-7 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-7 {
     display: block;
   }
@@ -358,13 +364,13 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   border-width: 0 0 1px 0;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-6 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-6 {
     padding: 16px 24px;
   }
@@ -376,7 +382,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 28px;
@@ -405,7 +411,7 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
@@ -479,7 +485,13 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-5 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-5 {
     display: block;
   }
@@ -658,7 +670,7 @@ exports[`TitleBar should apply correctly the custom presets  1`] = `
   }
 }
 
-@media screen and (min-width:480px) and (max-width:959px) {
+@media screen and (min-width:480px) and (max-width:767px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 20px;
@@ -687,7 +699,7 @@ exports[`TitleBar should apply correctly the custom presets  1`] = `
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 24px;
@@ -716,7 +728,7 @@ exports[`TitleBar should apply correctly the custom presets  1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 28px;
@@ -786,13 +798,13 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
   border-width: 0 0 1px 0;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-2 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-2 {
     padding: 16px 24px;
   }
@@ -804,7 +816,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 28px;
@@ -833,7 +845,7 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
@@ -932,13 +944,13 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
   border-width: 0 0 1px 0;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-2 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-2 {
     padding: 16px 24px;
   }
@@ -950,7 +962,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 28px;
@@ -979,7 +991,7 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
@@ -1078,13 +1090,13 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
   border-width: 0 0 1px 0;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-2 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-2 {
     padding: 16px 24px;
   }
@@ -1096,7 +1108,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 28px;
@@ -1125,7 +1137,7 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
@@ -1224,13 +1236,13 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
   border-width: 0 0 1px 0;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-2 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-2 {
     padding: 16px 24px;
   }
@@ -1242,7 +1254,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 28px;
@@ -1271,7 +1283,7 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
@@ -1370,13 +1382,13 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
   border-width: 0 0 1px 0;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-2 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-2 {
     padding: 16px 24px;
   }
@@ -1388,7 +1400,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 28px;
@@ -1417,7 +1429,7 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
@@ -1516,13 +1528,13 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
   border-width: 0 0 1px 0;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-2 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-2 {
     padding: 16px 24px;
   }
@@ -1534,7 +1546,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 28px;
@@ -1563,7 +1575,7 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
@@ -1662,13 +1674,13 @@ exports[`TitleBar should display correctly with default styles and given title 1
   border-width: 0 0 1px 0;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-2 {
     padding: 12px 16px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-2 {
     padding: 16px 24px;
   }
@@ -1680,7 +1692,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
   color: #0a0a0a;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 28px;
@@ -1709,7 +1721,7 @@ exports[`TitleBar should display correctly with default styles and given title 1
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;

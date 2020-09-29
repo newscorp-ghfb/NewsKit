@@ -74,6 +74,9 @@ The Visible is a container component. The content will only be `visible` if the 
   <Prop name="lg" type="boolean">
     Render when in lg breakpoint
   </Prop>
+  <Prop name="xl" type="boolean">
+    Render when in xl breakpoint
+  </Prop>
   <Prop name="targetDevices" type="Array<Devices>">
     Array of devices for which the content is hidden with higher priority than the above breakpoints
   </Prop>
@@ -109,7 +112,12 @@ The Visible is a container component. The content will only be `visible` if the 
       name: 'Lg',
       propName: 'lg',
       value: false,
-    }
+    },
+    {
+      name: 'Xl',
+      propName: 'xl',
+      value: false,
+    },
   ]}
 />
 
@@ -140,6 +148,9 @@ The Hidden is a container component. The content will only be `hidden` if the sc
   </Prop>
   <Prop name="lg" type="boolean">
     Hidden when in xs breakpoint
+  </Prop>
+  <Prop name="xl" type="boolean">
+    Render when in xl breakpoint
   </Prop>
   <Prop name="targetDevices" type="Array<Devices>">
     Array of devices for which the content is hidden with higher priority than the above breakpoints
@@ -175,6 +186,11 @@ The Hidden is a container component. The content will only be `hidden` if the sc
     {
       name: 'Lg',
       propName: 'lg',
+      value: false,
+    },
+    {
+      name: 'Xl',
+      propName: 'xl',
       value: false,
     }
   ]}

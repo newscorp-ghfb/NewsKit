@@ -80,7 +80,7 @@ exports[`Headings renders H1 with default styles 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
@@ -109,7 +109,7 @@ exports[`Headings renders H1 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;
@@ -255,7 +255,7 @@ exports[`Headings renders H2 with default styles 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 24px;
@@ -284,7 +284,7 @@ exports[`Headings renders H2 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 28px;
@@ -401,7 +401,7 @@ exports[`Headings renders H3 with default styles 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 20px;
@@ -430,7 +430,7 @@ exports[`Headings renders H3 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 24px;
@@ -547,7 +547,7 @@ exports[`Headings renders H4 with default styles 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 18px;
@@ -576,7 +576,7 @@ exports[`Headings renders H4 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 20px;
@@ -917,7 +917,7 @@ exports[`Headings renders Heading1 with default styles 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 32px;
@@ -946,7 +946,7 @@ exports[`Headings renders Heading1 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 40px;
@@ -1092,7 +1092,7 @@ exports[`Headings renders Heading2 with default styles 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 24px;
@@ -1121,7 +1121,7 @@ exports[`Headings renders Heading2 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 28px;
@@ -1238,7 +1238,7 @@ exports[`Headings renders Heading3 with default styles 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 20px;
@@ -1267,7 +1267,7 @@ exports[`Headings renders Heading3 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 24px;
@@ -1384,7 +1384,7 @@ exports[`Headings renders Heading4 with default styles 1`] = `
   color: #0a0a0a;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1023px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 18px;
@@ -1413,7 +1413,7 @@ exports[`Headings renders Heading4 with default styles 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-0 {
     font-family: "Noto Sans",sans-serif;
     font-size: 20px;

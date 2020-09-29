@@ -288,6 +288,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
                 playerTrackSize="sizing050"
                 xs
                 sm
+                md
                 targetDevices={[Devices.iPadPro, Devices.iPad]}
               >
                 <VolumeControl
@@ -305,6 +306,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
                 playerTrackSize="sizing050"
                 xs
                 sm
+                md
                 targetDevices={[Devices.iPadPro, Devices.iPad]}
               >
                 <Stack

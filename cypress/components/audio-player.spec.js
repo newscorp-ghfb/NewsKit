@@ -11,7 +11,7 @@ describe('audio player', () => {
   it('should update slider volume when audio player is muted and persisted when reloaded', () => {
     cy.get('[data-testid="mute-button"]')
       .first()
-      .click()
+      .click({force: true})
       .window()
       .then(win =>
         expect(win.localStorage.getItem('newskit-audioplayer-volume')).to.eq(
@@ -28,7 +28,7 @@ describe('audio player', () => {
   it('should update slider volume when audio player is set to max volume', () => {
     cy.get('[data-testid="volumeup-button"]')
       .first()
-      .click()
+      .click({force: true})
       .window()
       .then(win =>
         expect(win.localStorage.getItem('newskit-audioplayer-volume')).to.eq(

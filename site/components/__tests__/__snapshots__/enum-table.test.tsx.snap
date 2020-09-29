@@ -34,6 +34,10 @@ exports[`EnumTable renders enum as expected 1`] = `
   border-top: none;
 }
 
+.emotion-0 th {
+  text-align: left;
+}
+
 <div
     class="emotion-1"
   >

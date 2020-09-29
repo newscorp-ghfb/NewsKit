@@ -22,7 +22,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   top: 0;
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
   .emotion-8 {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -98,7 +98,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-7 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-7 {
     display: none;
   }
@@ -303,7 +309,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   transition: transform 300ms;
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-27 {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -571,7 +577,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   z-index: 2;
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-0 {
     display: none;
   }
@@ -607,7 +613,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   transition: transform 300ms;
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-27 {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -635,7 +641,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   top: 0;
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
   .emotion-8 {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -711,7 +717,13 @@ exports[`Sidebar renders correctly when open 1`] = `
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:768px) {
+  .emotion-7 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
   .emotion-7 {
     display: none;
   }
@@ -1156,7 +1168,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   z-index: 2;
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width:1024px) {
   .emotion-0 {
     display: none;
   }

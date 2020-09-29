@@ -1649,7 +1649,7 @@ exports[`Image stylePreset with mq 1`] = `
   height: 0;
 }
 
-@media screen and (min-width:960px) and (max-width:1439px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
   .emotion-4 {
     border-radius: 12px;
     background-color: #f0f0f0;
@@ -1661,7 +1661,7 @@ exports[`Image stylePreset with mq 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
   .emotion-4 {
     border-radius: 24px;
     background-color: #f0f0f0;

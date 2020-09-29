@@ -92,7 +92,7 @@ export const ColorPalettes: React.FC = () => {
     <ColorPalettesWrapper>
       <Grid xsMargin="sizing000">
         {palettes.map(palette => (
-          <Cell xs={12} md={6} lg={4}>
+          <Cell xs={12} lg={6} xl={4}>
             <ColorSet
               gridProps={{xsMargin: 'sizing000', xsRowGutter: 'sizing000'}}
               Swatch={SwatchRow}

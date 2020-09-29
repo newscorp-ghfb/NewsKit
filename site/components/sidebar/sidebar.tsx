@@ -41,7 +41,7 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
   transform: ${({open}) => (open ? 'translateX(0)' : 'translateX(-100%)')};
   transition: transform 300ms;
 
-  ${getMediaQueryFromTheme('md')} {
+  ${getMediaQueryFromTheme('lg')} {
     transform: translateX(0);
   }
 `;
@@ -84,7 +84,7 @@ const Sidebar: React.FC<SidebarProps> = ({
         <Link href="/" overrides={{stylePreset: 'linkLogo'}}>
           <NewsKitLogo color="inkBase" size="sizing120" />
         </Link>
-        <Visible xs sm>
+        <Visible xs sm md>
           <LegacyBlock display="flex" height="100%">
             <IconWrapper
               onClick={handleSidebarClick}
@@ -105,7 +105,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       handleSidebarClick={handleSidebarClick}
       zIndex={2}
       lockScroll={sidebarOpen}
-      hideAtBreakpoint="md"
+      hideAtBreakpoint="lg"
     />
   </React.Fragment>
 );

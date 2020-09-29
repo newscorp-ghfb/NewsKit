@@ -167,6 +167,10 @@ export const Table = styled.table`
       ${getSizingFromTheme('sizing030')};
     border-top: none;
   }
+
+  th {
+    text-align: left;
+  }
 `;
 
 const TableWrapper = styled.div`
