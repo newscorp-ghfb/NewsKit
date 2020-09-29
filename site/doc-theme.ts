@@ -1,4 +1,4 @@
-import {createTheme, newskitLightTheme, newskitDarkTheme} from 'newskit';
+import {createTheme, newskitDarkTheme} from 'newskit';
 
 const stylePresets = {
   buttonLightDarkToggle: {
@@ -36,7 +36,6 @@ const stylePresets = {
 };
 export const newsKitLight = createTheme({
   name: 'newskit-light',
-  baseTheme: newskitLightTheme,
   overrides: {
     stylePresets,
   },

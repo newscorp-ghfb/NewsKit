@@ -1,4 +1,4 @@
-import {Divider, Block, Circle, getSizingFromTheme, styled} from "newskit";
+import {Divider, Block, Circle, getSizingFromTheme, styled} from 'newskit';
 
 const StyledBlock = styled(Block)`
   width: ${getSizingFromTheme('iconSize040')};
@@ -20,4 +20,4 @@ const StyledBlock = styled(Block)`
   <Block>
     <Circle size="iconSize040" />
   </Block>
-</StyledBlock>
+</StyledBlock>;

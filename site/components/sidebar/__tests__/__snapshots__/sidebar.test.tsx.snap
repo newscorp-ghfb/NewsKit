@@ -135,7 +135,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   height: 16px;
 }
 
-.emotion-29 {
+.emotion-26 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -148,7 +148,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin: 0;
 }
 
-.emotion-28 {
+.emotion-25 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
@@ -229,7 +229,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   height: 16px;
 }
 
-.emotion-26 {
+.emotion-23 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -242,47 +242,47 @@ exports[`Sidebar renders correctly when closed 1`] = `
   text-decoration: none;
 }
 
-.emotion-26 svg {
+.emotion-23 svg {
   fill: #2f75d7;
   color: #2f75d7;
 }
 
-.emotion-26:hover:not(:disabled) {
+.emotion-23:hover:not(:disabled) {
   color: #2f75d7;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-26:hover:not(:disabled) svg {
+.emotion-23:hover:not(:disabled) svg {
   fill: #2f75d7;
   color: #2f75d7;
 }
 
-.emotion-26:active:not(:disabled) {
+.emotion-23:active:not(:disabled) {
   color: #2f75d7;
 }
 
-.emotion-26:active:not(:disabled) svg {
+.emotion-23:active:not(:disabled) svg {
   fill: #2f75d7;
   color: #2f75d7;
 }
 
-.emotion-26:visited:not(:disabled) {
+.emotion-23:visited:not(:disabled) {
   color: #2f75d7;
 }
 
-.emotion-26:visited:not(:disabled) svg {
+.emotion-23:visited:not(:disabled) svg {
   fill: #2f75d7;
   color: #2f75d7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-26 {
+  .emotion-23 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-30 {
+.emotion-27 {
   width: 276px;
   padding: 0 24px;
   position: fixed;
@@ -304,7 +304,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-30 {
+  .emotion-27 {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -312,7 +312,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 <div
-    class="emotion-30"
+    class="emotion-27"
     data-testid="sidebar"
     role="complementary"
   >
@@ -378,11 +378,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
     </div>
     <nav
       aria-label="Sidebar"
-      class="emotion-29"
+      class="emotion-26"
       role="navigation"
     >
       <ul
-        class="emotion-28"
+        class="emotion-25"
         role="list"
       >
         <li
@@ -431,43 +431,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
             tabindex="0"
           >
             Theming
-            <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-9"
-              viewBox="0 0 16 16"
-            >
-              <title
-                id="mock-nk-1"
-              >
-                close icon
-              </title>
-              <g
-                fill="none"
-              >
-                <mask
-                  fill="white"
-                >
-                  <polygon
-                    points="7 10 12 15 17 10"
-                  />
-                </mask>
-                <polygon
-                  fill="#666"
-                  points="7 10 12 15 17 10"
-                />
-              </g>
-            </svg>
-          </div>
-        </li>
-        <li
-          class="emotion-11"
-        >
-          <div
-            class="emotion-10"
-            data-testid="/foundations"
-            tabindex="0"
-          >
-            Foundations
             <svg
               aria-labelledby="mock-nk-1"
               class="emotion-9"
@@ -574,7 +537,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
           class="emotion-11"
         >
           <a
-            class="emotion-26"
+            class="emotion-23"
             href="/feedback"
           >
             <span
@@ -623,7 +586,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 exports[`Sidebar renders correctly when open 1`] = `
 <DocumentFragment>
-  .emotion-30 {
+  .emotion-27 {
   width: 276px;
   padding: 0 24px;
   position: fixed;
@@ -645,7 +608,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (min-width:960px) {
-  .emotion-30 {
+  .emotion-27 {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -785,7 +748,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   height: 16px;
 }
 
-.emotion-29 {
+.emotion-26 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -798,7 +761,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin: 0;
 }
 
-.emotion-28 {
+.emotion-25 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
@@ -879,7 +842,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   height: 16px;
 }
 
-.emotion-26 {
+.emotion-23 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -892,48 +855,48 @@ exports[`Sidebar renders correctly when open 1`] = `
   text-decoration: none;
 }
 
-.emotion-26 svg {
+.emotion-23 svg {
   fill: #2f75d7;
   color: #2f75d7;
 }
 
-.emotion-26:hover:not(:disabled) {
+.emotion-23:hover:not(:disabled) {
   color: #2f75d7;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-26:hover:not(:disabled) svg {
+.emotion-23:hover:not(:disabled) svg {
   fill: #2f75d7;
   color: #2f75d7;
 }
 
-.emotion-26:active:not(:disabled) {
+.emotion-23:active:not(:disabled) {
   color: #2f75d7;
 }
 
-.emotion-26:active:not(:disabled) svg {
+.emotion-23:active:not(:disabled) svg {
   fill: #2f75d7;
   color: #2f75d7;
 }
 
-.emotion-26:visited:not(:disabled) {
+.emotion-23:visited:not(:disabled) {
   color: #2f75d7;
 }
 
-.emotion-26:visited:not(:disabled) svg {
+.emotion-23:visited:not(:disabled) svg {
   fill: #2f75d7;
   color: #2f75d7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-26 {
+  .emotion-23 {
     vertical-align: text-bottom;
   }
 }
 
 <div
-    class="emotion-30"
+    class="emotion-27"
     data-testid="sidebar"
     open=""
     role="complementary"
@@ -1000,11 +963,11 @@ exports[`Sidebar renders correctly when open 1`] = `
     </div>
     <nav
       aria-label="Sidebar"
-      class="emotion-29"
+      class="emotion-26"
       role="navigation"
     >
       <ul
-        class="emotion-28"
+        class="emotion-25"
         role="list"
       >
         <li
@@ -1053,43 +1016,6 @@ exports[`Sidebar renders correctly when open 1`] = `
             tabindex="0"
           >
             Theming
-            <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-9"
-              viewBox="0 0 16 16"
-            >
-              <title
-                id="mock-nk-1"
-              >
-                close icon
-              </title>
-              <g
-                fill="none"
-              >
-                <mask
-                  fill="white"
-                >
-                  <polygon
-                    points="7 10 12 15 17 10"
-                  />
-                </mask>
-                <polygon
-                  fill="#666"
-                  points="7 10 12 15 17 10"
-                />
-              </g>
-            </svg>
-          </div>
-        </li>
-        <li
-          class="emotion-11"
-        >
-          <div
-            class="emotion-10"
-            data-testid="/foundations"
-            tabindex="0"
-          >
-            Foundations
             <svg
               aria-labelledby="mock-nk-1"
               class="emotion-9"
@@ -1196,7 +1122,7 @@ exports[`Sidebar renders correctly when open 1`] = `
           class="emotion-11"
         >
           <a
-            class="emotion-26"
+            class="emotion-23"
             href="/feedback"
           >
             <span

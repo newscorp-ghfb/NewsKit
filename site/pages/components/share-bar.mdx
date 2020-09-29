@@ -5,14 +5,13 @@ import Layout from '../../components/layout';
 import {Twitter, Facebook, ShareBar, ButtonSize, IconButton} from 'newskit';
 import {CodeFromDefaultPresets} from '../../components/code';
 
-
 export default Layout;
 
 # Share Bar
 
 ## Overview
 
-The share bar uses [icons](/foundations/icons) to allow users to share.
+The share bar uses [icons](/components/icons) to allow users to share.
 
 ### Usage
 
@@ -25,11 +24,13 @@ A share bar can be used anywhere a user would like to easily share something wit
     If provided with text, adds a label and populates it with the string.
   </Prop>
   <Prop name="vertical" type="boolean" defaut="false">
-    If provided, changes the orientation of the share bar to vertical, and the 'spaceStack' will apply for margin bottom between the label and the icons, otherwise 'spaceInline' is applied for margin right.
+    If provided, changes the orientation of the share bar to vertical, and the
+    'spaceStack' will apply for margin bottom between the label and the icons,
+    otherwise 'spaceInline' is applied for margin right.
   </Prop>
   <Prop name="overrides" type="object">
-    If provided, overrides the respective presets for the component and provided elements.
-    Refer to the defaults below for the object structure:
+    If provided, overrides the respective presets for the component and provided
+    elements. Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="shareBar" />
   </Prop>
 </LegacyBlock>
@@ -40,12 +41,18 @@ A share bar can be used anywhere a user would like to easily share something wit
   componentName="ShareBar"
   component={state => (
     <ShareBar {...state}>
-      <IconButton size={ButtonSize.Large} overrides={{stylePreset: "buttonSocialTwitter"}}>
-              <Twitter/>
-            </IconButton>
-            <IconButton size={ButtonSize.Large} overrides={{stylePreset: "buttonSocialFacebook"}}>
-              <Facebook />
-            </IconButton>
+      <IconButton
+        size={ButtonSize.Large}
+        overrides={{stylePreset: 'buttonSocialTwitter'}}
+      >
+        <Twitter />
+      </IconButton>
+      <IconButton
+        size={ButtonSize.Large}
+        overrides={{stylePreset: 'buttonSocialFacebook'}}
+      >
+        <Facebook />
+      </IconButton>
     </ShareBar>
   )}
   knobs={[
@@ -62,7 +69,7 @@ A share bar can be used anywhere a user would like to easily share something wit
   ]}
 />
 
-For more information on how to override default presets, see docs [overrides default presets](/theming/default-presets/override-individual-components).
+For more information on overriding component defaults, see the docs [here](/theming/component-defaults).
 
 ## Rationale
 

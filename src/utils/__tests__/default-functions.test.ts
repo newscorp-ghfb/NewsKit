@@ -10,7 +10,7 @@ import {
 } from '../style';
 import {createTheme} from '../../theme';
 
-describe('get default presets functions', () => {
+describe('get component defaults functions', () => {
   const theme: any = createTheme({
     name: 'test-theme',
     overrides: {

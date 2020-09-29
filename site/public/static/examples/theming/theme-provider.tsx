@@ -1,5 +1,4 @@
-...
-import { ThemeProvider, newskitLightTheme } from "newskit";
+import { ThemeProvider, newskitLightTheme } from 'newskit';
 
 render() {
     return (

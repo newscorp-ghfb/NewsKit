@@ -1,7 +1,7 @@
-import Layout from '../../components/layout';
-import {LegacyBlock} from '../../components/legacy-block';
+import Layout from '../../../components/layout';
+import {LegacyBlock} from '../../../components/legacy-block';
 import {Image} from 'newskit';
-import {Prop} from '../../components/prop';
+import {Prop} from '../../../components/prop';
 
 export default Layout;
 
@@ -10,14 +10,16 @@ export default Layout;
 Whitespace is the space between UI elements on a screen. Good use of whitespace helps to de-clutter content so that users can focus on the important elements and read content more easily.
 Our system is built on a 4px baseline grid and we have spacing tokens available to ensure consistency of UI elements.
 
-## Generic Spacing Tokens
+## Generic Sizing Tokens
 
-Avoid using generic space tokens in favour of more specific options such as inset, squish, stretch, stack, and inline options described below.
+Sizing tokens are used to build spacing presets. Avoid using generic sizing tokens directly, in favour of more specific options such as inset, squish, stretch, and space options described below.
 However, when established concepts don’t meet your needs – or you are overriding or extending a concept for a special case – use these recognisable, generic variables to persist spatial concepts and maintenance in code.
 
-<LegacyBlock marginBottom="sizing050" maxWidth="760px">
+<LegacyBlock marginBottom="sizing050" maxWidth="760px" backgroundColor="white">
   <Image src="/static/examples/spacing/generic1.png" alt="Generic Spacing" />
 </LegacyBlock>
+
+### Values
 
 | Token     | Px Value | Rem Value |
 | --------- | :------: | :-------: |
@@ -41,9 +43,11 @@ However, when established concepts don’t meet your needs – or you are overri
 An inset is the space within a container from which elements —typography, images, icons, and more — are separated from the edge.
 By default, a component’s inset should be equal on all four sides.
 
-<LegacyBlock marginBottom="sizing050" maxWidth="760px">
+<LegacyBlock marginBottom="sizing050" maxWidth="360px" backgroundColor="white">
   <Image src="/static/examples/spacing/inset1.png" alt="Inset Spacing" />
 </LegacyBlock>
+
+### Values
 
 | Token         | Px Value |      Rem Value      |
 | ------------- | :------: | :-----------------: |
@@ -62,12 +66,14 @@ Apply a inset spacing token to the padding property.
 
 A squish inset reduces top and bottom padding relative to the default inset space.
 
-<LegacyBlock marginBottom="sizing050" maxWidth="760px">
+<LegacyBlock marginBottom="sizing050" maxWidth="360px" backgroundColor="white">
   <Image
     src="/static/examples/spacing/squish-inset1.png"
     alt="Squish Spacing"
   />
 </LegacyBlock>
+
+### Values
 
 | Token               |      Px Value       |     Rem Value     |
 | ------------------- | :-----------------: | :---------------: |
@@ -85,12 +91,14 @@ Apply a squish inset spacing token to the padding property.
 
 A stretched inset increases top and bottom padding relative to the default inset space.
 
-<LegacyBlock marginBottom="sizing050" maxWidth="760px">
+<LegacyBlock marginBottom="sizing050" maxWidth="360px" backgroundColor="white">
   <Image
     src="/static/examples/spacing/stretch-inset1.png"
     alt="Stretch Spacing"
   />
 </LegacyBlock>
+
+### Values
 
 | Token                |      Px Value       |     Rem Value     |
 | -------------------- | :-----------------: | :---------------: |
@@ -104,52 +112,42 @@ A stretched inset increases top and bottom padding relative to the default inset
 
 Apply a stretch inset spacing token to the padding property.
 
-## Stacking Spacing Tokens
+## Spacing Tokens
 
-Use a stacking value to separate block components arranged vertically in a column. The last component in a stack should omit this space.
+For applying the space between items, you use space tokens. These can be applied as both spaceInline and spaceStack. Where and how this space is applied will depend on the component.
 
-<LegacyBlock marginBottom="sizing050" maxWidth="760px">
+### Stack spacing
+
+<LegacyBlock marginBottom="sizing050" maxWidth="360px" backgroundColor="white">
   <Image src="/static/examples/spacing/stacking1.png" alt="Stacking Spacing" />
 </LegacyBlock>
 
-| Token         |  Px Value   | Rem Value  |
-| ------------- | :---------: | :--------: |
-| spaceStack000 |  0 0 0px 0  |  0 0 0 0   |
-| spaceStack010 |  0 0 4px 0  | 0 0 0.25 0 |
-| spaceStack020 |  0 0 8px 0  | 0 0 0.5 0  |
-| spaceStack030 | 0 0 12px 0  | 0 0 0.75 0 |
-| spaceStack040 | 0 0 16px 0  |  0 0 1 0   |
-| spaceStack050 | 0 0 24px 0  | 0 0 1.5 0  |
-| spaceStack060 | 0 0 32px 0  |  0 0 2 0   |
-| spaceStack070 | 0 0 40px 0  | 0 0 2.5 0  |
-| spaceStack080 | 0 0 48px 0  |  0 0 3 0   |
-| spaceStack090 | 0 0 64px 0  |  0 0 4 0   |
-| spaceStack100 | 0 0 80px 0  |  0 0 5 0   |
-| spaceStack110 | 0 0 120px 0 | 0 0 7.5 0  |
-| spaceStack120 | 0 0 160px 0 |  0 0 10 0  |
+### Inline spacing
 
-Apply stacking spacing tokens to the margin property.
-
-## Inline Spacing Tokens
-
-Use inline spacing variable tokens to separate inline elements arranged horizontally and that may wrap on the right. The last component in an inline set should omit this space.
-
-<LegacyBlock marginBottom="sizing050" maxWidth="760px">
+<LegacyBlock marginBottom="sizing050" maxWidth="360px" backgroundColor="white">
   <Image src="/static/examples/spacing/inline1.png" alt="Inline Spacing" />
 </LegacyBlock>
 
-| Token          |  Px Value  | Rem Value  |
-| -------------- | :--------: | :--------: |
-| spaceInline000 | 0 0px 0 0  |  0 0 0 0   |
-| spaceInline010 | 0 4px 0 0  | 0 0.25 0 0 |
-| spaceInline020 | 0 8px 0 0  | 0 0.5 0 0  |
-| spaceInline030 | 0 12px 0 0 | 0 0.75 0 0 |
-| spaceInline040 | 0 16px 0 0 |  0 1 0 0   |
-| spaceInline050 | 0 24px 0 0 | 0 1.5 0 0  |
-| spaceInline060 | 0 32px 0 0 |  0 2 0 0   |
-| spaceInline070 | 0 48px 0 0 |  0 3 0 0   |
+### Values
 
-Apply inline spacing tokens to the margin property.
+| Token    | Px Value | Rem Value |
+| -------- | :------: | :-------: |
+| space000 |   0px    |     0     |
+| space010 |   4px    |   0.25    |
+| space020 |   8px    |    0.5    |
+| space030 |   12px   |   0.75    |
+| space040 |   16px   |     1     |
+| space045 |   20px   |   1.25    |
+| space050 |   24px   |    1.5    |
+| space060 |   32px   |     2     |
+| space070 |   40px   |    2.5    |
+| space080 |   48px   |     3     |
+| space090 |   64px   |     4     |
+| space100 |   80px   |     5     |
+| space110 |  120px   |    7.5    |
+| space120 |  160px   |    10     |
+
+Apply stacking spacing tokens to the margin property.
 
 ## Vertical Text Crop
 
@@ -161,33 +159,41 @@ The font config object is detailed below:
 
 <LegacyBlock marginTop="sizing040">
   <Prop name="fontFamily" type="string" required>
-    Specifies the font for an element. Since the crop utility has a different setup per font type, it is recommended to specify a single font. If invalid string provided, the font fallbacks to the default Newskit theme font - Noto Sans.
+    Specifies the font for an element. Since the crop utility has a different
+    setup per font type, it is recommended to specify a single font. If invalid
+    string provided, the font fallbacks to the default Newskit theme font - Noto
+    Sans.
   </Prop>
   <Prop name="cropConfig" type="object">
     <span>Accepts an object with the crop configuration:</span>
     <LegacyBlock marginTop="sizing040" marginLeft="sizing050">
       <Prop name="top" type="number" required>
-          Constant value representing the desired crop amount at the top. Applied to calculate em-based bottom margin that works with any font size.
+        Constant value representing the desired crop amount at the top. Applied
+        to calculate em-based bottom margin that works with any font size.
       </Prop>
       <Prop name="bottom" type="number" required>
-          Constant value representing the desired crop amount at the bottom. Applied to calculate em-based top margin that works with any font size.
+        Constant value representing the desired crop amount at the bottom.
+        Applied to calculate em-based top margin that works with any font size.
       </Prop>
       <Prop name="fontSize" type="number">
-          Used as a base in the initial crop calculations. Defaults to 36px.
+        Used as a base in the initial crop calculations. Defaults to 36px.
       </Prop>
       <Prop name="lineHeight" type="number">
-          Used as a base in the initial crop calculations. Defaults to 1.2.
+        Used as a base in the initial crop calculations. Defaults to 1.2.
       </Prop>
     </LegacyBlock>
   </Prop>
   <Prop name="cropAdjustments" type="object">
-    <span>Accepts an object with a key being the font size as a string. Used for additional crop adjustments per font size.</span>
+    <span>
+      Accepts an object with a key being the font size as a string. Used for
+      additional crop adjustments per font size.
+    </span>
     <LegacyBlock marginTop="sizing040" marginLeft="sizing050">
       <Prop name="top" type="number">
-          A value representing the adjusted crop amount at the top.
+        A value representing the adjusted crop amount at the top.
       </Prop>
       <Prop name="bottom" type="number">
-          A value representing the adjusted crop amount at the bottom.
+        A value representing the adjusted crop amount at the bottom.
       </Prop>
     </LegacyBlock>
   </Prop>

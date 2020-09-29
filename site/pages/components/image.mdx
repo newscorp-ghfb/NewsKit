@@ -19,18 +19,18 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
 
 <LegacyBlock marginTop="sizing040">
   <Prop name="src" type="string">
-    Image file path that is used directly in the 'src' attribute of
-    the internal 'img' element.
+    Image file path that is used directly in the 'src' attribute of the internal
+    'img' element.
   </Prop>
   <Prop name="alt" type="string">
-    Image description that is used directly in the 'alt' attribute of
-    the internal 'img' element.
+    Image description that is used directly in the 'alt' attribute of the
+    internal 'img' element.
   </Prop>
   <Prop name="width" type="string" default="100%">
-    Used in combination with `height` to calculate the aspect ratio for
-    the image. Generally supply the width px value if know, if not supply
-    horizontal aspect ratio. Both width and aspectRatio should be supplied
-    in a consistent manner.
+    Used in combination with `height` to calculate the aspect ratio for the
+    image. Generally supply the width px value if know, if not supply horizontal
+    aspect ratio. Both width and aspectRatio should be supplied in a consistent
+    manner.
   </Prop>
   <Prop name="maxWidth" type="string">
     see https://developer.mozilla.org/en-US/docs/Web/CSS/max-width
@@ -38,22 +38,23 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
   <Prop name="height" type="string" default="auto">
     Used in combination with `width` to calculate the aspect ratio for the
     image. Generally supply the height px value if know, if not supply vertical
-    aspect ratio. Both width and aspectRatio should be supplied in a
-    consistent manner.
+    aspect ratio. Both width and aspectRatio should be supplied in a consistent
+    manner.
   </Prop>
   <Prop name="maxHeight" type="string">
     see https://developer.mozilla.org/en-US/docs/Web/CSS/max-height
   </Prop>
   <Prop name="loadingAspectRatio" type="string">
-    This is a string interpolation of the aspect ratio of the loading container of the image.
-    This is also used to determine the height or width of the image if only one dimension is provided.
+    This is a string interpolation of the aspect ratio of the loading container
+    of the image. This is also used to determine the height or width of the
+    image if only one dimension is provided.
   </Prop>
   <Prop name="hideLoadingIcon" type="boolean" default={false}>
     Hide the loading icon whilst the image is loading.
   </Prop>
   <Prop name="overrides" type="object">
-    If provided, overrides the respective presets for the component and provided elements.
-    Refer to the defaults below for the object structure:
+    If provided, overrides the respective presets for the component and provided
+    elements. Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="image" />
   </Prop>
 </LegacyBlock>
@@ -126,20 +127,20 @@ The aspect width/height is only used on loading state.
         {
           label: 'imageSharp',
           value: {
-            stylePreset: 'imageSharp'
+            stylePreset: 'imageSharp',
           },
           isDefault: true,
         },
         {
           label: 'imageRoundedMedium',
           value: {
-            stylePreset: 'imageRoundedMedium'
+            stylePreset: 'imageRoundedMedium',
           },
         },
         {
           label: 'imageCircle',
           value: {
-            stylePreset: 'imageCircle'
+            stylePreset: 'imageCircle',
           },
         },
       ],
@@ -147,7 +148,7 @@ The aspect width/height is only used on loading state.
   ]}
 />
 
-For more information on how to override default presets, see docs [overrides default presets](/theming/default-presets/override-individual-components).
+For more information on overriding component defaults, see the docs [here](/theming/component-defaults).
 
 ### Styling
 

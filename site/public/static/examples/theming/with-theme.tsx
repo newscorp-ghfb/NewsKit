@@ -1,9 +1,5 @@
-...
-import { withTheme } from "newskit";
+import {withTheme} from 'newskit';
 
-const MyThemedComponent = withTheme(props => {
-
-    const { theme: { sizing: { sizing010 } } } = props;
-
-    return <div>Sizing from theme: {sizing010}</div>
-})
+const MyThemedComponent = withTheme(props => (
+  <div>sizing010 from theme = {props.theme.sizing.sizing010}</div>
+));

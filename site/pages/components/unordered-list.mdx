@@ -4,11 +4,7 @@ import Prop from '../../components/prop';
 import {LegacyBlock} from '../../components/legacy-block';
 import {CodeFromDefaultPresets} from '../../components/code';
 
-import {
-  UnorderedList,
-  Twitter,
-  Facebook,
-} from 'newskit';
+import {UnorderedList, Twitter, Facebook} from 'newskit';
 
 export default Layout;
 
@@ -24,7 +20,7 @@ An unordered list can be used to produce a list of related content prefixed with
 
 <LegacyBlock marginTop="sizing040">
     <Prop name="children" type="Array<React.ReactNode>" required>
-    An array of react nodes to populate the list components. 
+    An array of react nodes to populate the list components.
     If the node is a react element an unique key must be given to each element within the array.
   </Prop>
   <Prop name="listItemMarker" type="IconComponent">
@@ -61,7 +57,8 @@ An unordered list can be used to produce a list of related content prefixed with
     </Prop>
   </Prop>
 
-  Refer to the defaults below for the full object structure:
+Refer to the defaults below for the full object structure:
+
   <CodeFromDefaultPresets componentName="unorderedList" />
   </Prop>
 
@@ -76,11 +73,7 @@ An unordered list can be used to produce a list of related content prefixed with
     {
       name: 'List Data',
       propName: 'children',
-      value: [
-        'Prince Harry',
-        'Meghan Markle',
-        'Royal Family',
-      ],
+      value: ['Prince Harry', 'Meghan Markle', 'Royal Family'],
     },
     {
       name: 'List Item Marker',
@@ -108,8 +101,8 @@ An unordered list can be used to produce a list of related content prefixed with
           label: 'Default (iconSize005)',
           value: {
             marker: {
-              size: 'iconSize005'
-            }
+              size: 'iconSize005',
+            },
           },
           isDefault: true,
         },
@@ -117,16 +110,16 @@ An unordered list can be used to produce a list of related content prefixed with
           label: 'iconSize010',
           value: {
             marker: {
-              size: 'iconSize010'
-            }
+              size: 'iconSize010',
+            },
           },
         },
-                {
+        {
           label: 'iconSize020',
           value: {
             marker: {
-              size: 'iconSize020'
-            }
+              size: 'iconSize020',
+            },
           },
         },
       ],
@@ -139,11 +132,11 @@ An unordered list can be used to produce a list of related content prefixed with
           label: 'Default',
           value: {
             content: {
-              stylePreset: 'unorderedListItemContent'
+              stylePreset: 'unorderedListItemContent',
             },
             marker: {
-              stylePreset: 'unorderedListItemMarker'
-            }
+              stylePreset: 'unorderedListItemMarker',
+            },
           },
           isDefault: true,
         },
@@ -151,11 +144,11 @@ An unordered list can be used to produce a list of related content prefixed with
           label: 'buttonSolidPrimary',
           value: {
             content: {
-              stylePreset: 'buttonSolidPrimary'
+              stylePreset: 'buttonSolidPrimary',
             },
             marker: {
-              stylePreset: 'buttonSolidPrimary'
-            }
+              stylePreset: 'buttonSolidPrimary',
+            },
           },
         },
       ],
@@ -168,7 +161,7 @@ An unordered list can be used to produce a list of related content prefixed with
           label: 'Default',
           value: {
             content: {
-              typographyPreset: 'unorderedListItemContent'
+              typographyPreset: 'unorderedListItemContent',
             },
           },
           isDefault: true,
@@ -177,7 +170,7 @@ An unordered list can be used to produce a list of related content prefixed with
           label: 'button020',
           value: {
             content: {
-              typographyPreset: 'button020'
+              typographyPreset: 'button020',
             },
           },
         },
@@ -211,4 +204,4 @@ An unordered list can be used to produce a list of related content prefixed with
   ]}
 />
 
-For more information on how to override default presets, see docs [overrides default presets](/theming/default-presets/override-individual-components).
+For more information on overriding component defaults, see the docs [here](/theming/component-defaults).

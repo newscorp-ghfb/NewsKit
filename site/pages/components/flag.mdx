@@ -33,7 +33,7 @@ Flags have a number of props to facilitate a variety of uses:
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     Here are the overrides that the Flag accepts:
-    <Prop name="padding" type="PaddingPresetKeys">
+    <Prop name="spaceInset" type="PaddingPresetKeys">
       If provided, this overrides the padding of the Flag. Otherwise,
       spaceInset010Squish or spaceInset020Squish is used depending on the `size`
       prop.
@@ -119,15 +119,15 @@ Flags have a number of props to facilitate a variety of uses:
         {
           label: 'Default',
           value: {
-            paddingPreset: undefined,
+            spaceInset: undefined,
           },
           isDefault: true,
         },
         {
           label: 'spaceInset000Squish',
           value: {
-            paddingPreset: 'spaceInset000Squish',
-          }
+            spaceInset: 'spaceInset000Squish',
+          },
         },
       ],
     },
@@ -135,7 +135,7 @@ Flags have a number of props to facilitate a variety of uses:
       name: 'Style Preset',
       propName: 'overrides',
       options: [
-         {
+        {
           label: 'Default',
           value: {
             stylePreset: undefined,
@@ -170,21 +170,21 @@ Flags have a number of props to facilitate a variety of uses:
         {
           label: 'label010',
           value: {
-            typographyPreset: 'label010'
+            typographyPreset: 'label010',
           },
         },
         {
           label: 'label020',
           value: {
-            typographyPreset: 'label020'
+            typographyPreset: 'label020',
           },
-        }
-      ]
-    }
+        },
+      ],
+    },
   ]}
 />
 
-For more information on how to override default presets, see docs [overrides default presets](/theming/default-presets/override-individual-components).
+For more information on overriding component defaults, see the docs [here](/theming/component-defaults).
 
 ## Rationale
 

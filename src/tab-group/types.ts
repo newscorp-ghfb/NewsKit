@@ -7,7 +7,7 @@ export interface TabGroupProps {
   tabPanes?: Array<React.ReactElement>;
   overrides?: {
     stylePreset?: string;
-    paddingPreset?: string;
+    spaceInset?: string;
   };
 }
 

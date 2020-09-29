@@ -21,10 +21,17 @@ Date formatting is powered by the [date-fns](https://date-fns.org/v2.6.0/docs/fo
 
 <LegacyBlock marginTop="sizing040">
   <Prop name="date" type="string | number" required>
-    Timestamp string of the date to be displayed. Provide this in the ISO8601 format that is understood by the native <Link href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">Date object</Link>.
+    Timestamp string of the date to be displayed. Provide this in the ISO8601
+    format that is understood by the native{' '}
+    <Link href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">
+      Date object
+    </Link>
+    .
   </Prop>
   <Prop name="dateFormat" type="string">
-    Date and time formatting setting. Refer to the <Link href="https://date-fns.org/v2.6.0/docs/format">date-fns docs</Link> for all available settings.
+    Date and time formatting setting. Refer to the{' '}
+    <Link href="https://date-fns.org/v2.6.0/docs/format">date-fns docs</Link>{' '}
+    for all available settings.
   </Prop>
   <Prop name="prefix" type="string">
     Adds the provided string before the date.
@@ -33,8 +40,8 @@ Date formatting is powered by the [date-fns](https://date-fns.org/v2.6.0/docs/fo
     Adds the provided string after the date.
   </Prop>
   <Prop name="overrides" type="object">
-    If provided, overrides the respective presets for the component and provided elements.
-    Refer to the defaults below for the object structure:
+    If provided, overrides the respective presets for the component and provided
+    elements. Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="dateTime" />
   </Prop>
 </LegacyBlock>
@@ -72,20 +79,20 @@ Date formatting is powered by the [date-fns](https://date-fns.org/v2.6.0/docs/fo
         {
           label: 'Default',
           value: {
-            stylePreset: undefined
+            stylePreset: undefined,
           },
-          isDefault: true
+          isDefault: true,
         },
         {
           label: 'articleHeadlineKicker',
           value: {
-            stylePreset: 'articleHeadlineKicker'
+            stylePreset: 'articleHeadlineKicker',
           },
         },
         {
           label: 'linkInline',
           value: {
-            stylePreset: 'linkInline'
+            stylePreset: 'linkInline',
           },
         },
       ],
@@ -97,20 +104,20 @@ Date formatting is powered by the [date-fns](https://date-fns.org/v2.6.0/docs/fo
         {
           label: 'Default',
           value: {
-            typographyPreset: undefined
+            typographyPreset: undefined,
           },
-          isDefault: true
+          isDefault: true,
         },
         {
           label: 'meta010',
           value: {
-            typographyPreset: 'meta010'
+            typographyPreset: 'meta010',
           },
         },
         {
           label: 'meta020',
           value: {
-            typographyPreset: 'meta020'
+            typographyPreset: 'meta020',
           },
         },
       ],
@@ -123,25 +130,25 @@ Date formatting is powered by the [date-fns](https://date-fns.org/v2.6.0/docs/fo
           label: 'Default',
           value: {
             prefix: {
-              stylePreset: undefined
-            }
+              stylePreset: undefined,
+            },
           },
-          isDefault: true
+          isDefault: true,
         },
         {
           label: 'articleHeadlineKicker',
           value: {
             prefix: {
-              stylePreset: 'articleHeadlineKicker'
-            }
+              stylePreset: 'articleHeadlineKicker',
+            },
           },
         },
         {
           label: 'linkInline',
           value: {
             prefix: {
-              stylePreset: 'linkInline'
-            }
+              stylePreset: 'linkInline',
+            },
           },
         },
       ],
@@ -154,56 +161,56 @@ Date formatting is powered by the [date-fns](https://date-fns.org/v2.6.0/docs/fo
           label: 'Default',
           value: {
             prefix: {
-              typographyPreset: undefined
-            }
+              typographyPreset: undefined,
+            },
           },
-          isDefault: true
+          isDefault: true,
         },
         {
           label: 'meta010',
           value: {
             prefix: {
-              typographyPreset: 'meta010'
-            }
+              typographyPreset: 'meta010',
+            },
           },
         },
         {
           label: 'meta020',
           value: {
             prefix: {
-              typographyPreset: 'meta020'
-            }
+              typographyPreset: 'meta020',
+            },
           },
         },
       ],
     },
     {
-        name: 'Suffix StylePreset',
-        propName: 'overrides',
-        options: [
+      name: 'Suffix StylePreset',
+      propName: 'overrides',
+      options: [
         {
           label: 'Default',
           value: {
             suffix: {
-              stylePreset: undefined
-            }
+              stylePreset: undefined,
+            },
           },
-          isDefault: true
+          isDefault: true,
         },
         {
           label: 'articleHeadlineKicker',
           value: {
             suffix: {
-              stylePreset: 'articleHeadlineKicker'
-            }
+              stylePreset: 'articleHeadlineKicker',
+            },
           },
         },
         {
           label: 'linkInline',
           value: {
             suffix: {
-              stylePreset: 'linkInline'
-            }
+              stylePreset: 'linkInline',
+            },
           },
         },
       ],
@@ -216,25 +223,25 @@ Date formatting is powered by the [date-fns](https://date-fns.org/v2.6.0/docs/fo
           label: 'Default',
           value: {
             suffix: {
-              typographyPreset: undefined
-            }
+              typographyPreset: undefined,
+            },
           },
-          isDefault: true
+          isDefault: true,
         },
         {
           label: 'meta010',
           value: {
             suffix: {
-              typographyPreset: 'meta010'
-            }
+              typographyPreset: 'meta010',
+            },
           },
         },
         {
           label: 'meta020',
           value: {
             suffix: {
-              typographyPreset: 'meta020'
-            }
+              typographyPreset: 'meta020',
+            },
           },
         },
       ],
@@ -242,7 +249,7 @@ Date formatting is powered by the [date-fns](https://date-fns.org/v2.6.0/docs/fo
   ]}
 />
 
-For more information on how to override default presets, see docs [overrides default presets](/theming/default-presets/override-individual-components).
+For more information on overriding component defaults, see the docs [here](/theming/component-defaults).
 
 ## Rationale
 

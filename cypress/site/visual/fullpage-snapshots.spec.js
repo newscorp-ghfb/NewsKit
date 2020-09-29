@@ -5,10 +5,10 @@ const routes = {
   articleByline: '/components/byline',
   audioPlayer: '/components/audio-player',
   dateTime: '/components/date-time',
-  icons: '/foundations/icons',
+  icons: '/components/icons',
   radioPlayer: '/components/radio-player',
-  spacing: '/foundations/spacing',
-  typography: '/foundations/typography',
+  spacing: '/theming/foundations/spacing',
+  typography: '/theming/typography-presets',
   welcome: '/index',
 };
 

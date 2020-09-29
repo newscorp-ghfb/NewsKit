@@ -37,7 +37,7 @@ Tags have a number of props to facilitate a variety of uses:
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     Here are the overrides that the Tag accepts:
-    <Prop name="padding" type="PaddingPresetKeys">
+    <Prop name="spaceInset" type="PaddingPresetKeys">
       If provided, this overrides the padding of the Tag. Otherwise,
       spaceInset010Squish or spaceInset020Squish is used depending on the `size`
       prop.
@@ -145,9 +145,9 @@ Tags have a number of props to facilitate a variety of uses:
         {
           label: 'tagPrimary',
           value: {
-            stylePreset: 'tagPrimary'
+            stylePreset: 'tagPrimary',
           },
-        }
+        },
       ],
     },
     {
@@ -164,27 +164,27 @@ Tags have a number of props to facilitate a variety of uses:
         {
           label: 'label010',
           value: {
-            typographyPreset: 'label010'
-          },
-        },
-         {
-          label: 'label020',
-          value: {
-            typographyPreset: 'label020'
+            typographyPreset: 'label010',
           },
         },
         {
-        label: 'label030',
-        value: {
-          typographyPreset: 'label030'
+          label: 'label020',
+          value: {
+            typographyPreset: 'label020',
+          },
         },
-      }
+        {
+          label: 'label030',
+          value: {
+            typographyPreset: 'label030',
+          },
+        },
       ],
     },
   ]}
 />
 
-For more information on how to override default presets, see docs [overrides default presets](/theming/default-presets/override-individual-components).
+For more information on overriding component defaults, see the docs [here](/theming/component-defaults).
 
 ## Rationale
 

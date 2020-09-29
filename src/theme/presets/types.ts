@@ -6,6 +6,9 @@ import {Fonts} from '../foundations/fonts';
 
 export interface StylePresetStyles {
   backgroundColor?: string;
+  backgroundImage?: string;
+  backgroundRepeat?: string;
+  backgroundPosition?: string;
   borderColor?: string;
   borderRadius?: string;
   borderStyle?: string;

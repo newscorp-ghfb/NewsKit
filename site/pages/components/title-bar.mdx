@@ -5,12 +5,7 @@ import {LegacyBlock} from '../../components/legacy-block';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {CodeFromDefaultPresets} from '../../components/code';
 
-import {
-  TitleBar,
-  Button,
-  Link,
-  Headline,
-} from 'newskit';
+import {TitleBar, Button, Link, Headline} from 'newskit';
 
 export default Layout;
 
@@ -33,17 +28,17 @@ Title bar has a number of props to facilitate a variety of uses:
     'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span'.
   </Prop>
   <Prop name="actionItem" type="React.ComponentType">
-    An action item, most commonly a button or a link, related to the title. 
+    An action item, most commonly a button or a link, related to the title.
     The actionItem is <b>hidden for extra small viewports</b> (less than 480px).
   </Prop>
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     Refer to the defaults below for the object structure:
-    
+
     <Prop name="stylePreset" type="string" default="titleBar">
       If provided, this overrides the style preset applied to the TitleBar.
     </Prop>
-    <Prop name="paddingPreset" type="object" default="{
+    <Prop name="spaceInset" type="object" default="{
         xs: 'spaceInset030Squish',
         lg: 'spaceInset040Squish'
       }">
@@ -63,7 +58,8 @@ Title bar has a number of props to facilitate a variety of uses:
     </Prop>
        Refer to the defaults below for the object structure:
        <CodeFromDefaultPresets componentName="titleBar" />
-       For more information about how to apply overrides to a component please refer to the <Link href="/theming/override-default-presets">Override default preset</Link> page.
+       For more information about how to apply overrides to a component please refer to the <Link href="/theming/component-defaults">Override component defaults</Link> page.
+
   </Prop>
 </LegacyBlock>
 
@@ -97,7 +93,7 @@ Title bar has a number of props to facilitate a variety of uses:
         {
           label: 'Default (h3)',
           value: 'h3',
-          isDefault: true
+          isDefault: true,
         },
         {
           label: 'h4',
@@ -135,9 +131,7 @@ Title bar has a number of props to facilitate a variety of uses:
   ]}
 />
 
-
-
-For more information on how to override default presets, see docs [overrides default presets](/theming/default-presets/override-individual-components).
+For more information on overriding component defaults, see the docs [here](/theming/component-defaults).
 
 ## Anatomy
 
@@ -150,7 +144,6 @@ The container takes up the full width of the grid area that's specified for exam
 
 A border is applied at the bottom.
 
-
 ### Title
 
 The title should provide context for the content that sits below the title bar.
@@ -160,7 +153,6 @@ The title should provide context for the content that sits below the title bar.
 Action items can include a button or a link. They are positioned to the right of the container and they vertically align to the position of the title.
 If you are using one of our components you can style the Button or the Link as you like from their overrides.
 We suggest you to use the style preset `titleBarButton` and `titleBarLink` respectively for a Button and a Link action.
-
 
 ## Behavior
 

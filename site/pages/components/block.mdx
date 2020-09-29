@@ -12,18 +12,19 @@ export default Layout;
 ## Overview
 
 The Block is a simple container component that can take margin, padding and style presets.
-For more information on the spacing preset, please refer to page [here](/foundations/spacing).
+For more information on the spacing preset, please refer to page [here](/theming/foundations/spacing).
 
 ## Props
 
 <LegacyBlock marginTop="sizing040">
   <Prop name="as" type="string" default="div">
-    This is a string name of the html element that the block can be converted to.
-    Block defaults as a div element, but it can be converted to a `span` by using this prop.
+    This is a string name of the html element that the block can be converted
+    to. Block defaults as a div element, but it can be converted to a `span` by
+    using this prop.
   </Prop>
   <Prop name="overrides" type="object">
-    If provided, overrides the respective presets for the component and provided elements.
-    Here are the overrides that the Block accepts:
+    If provided, overrides the respective presets for the component and provided
+    elements. Here are the overrides that the Block accepts:
     <Prop name="spaceInset" type="PaddingPresetKeys">
       If provided, applies padding on the Block.
     </Prop>
@@ -31,14 +32,14 @@ For more information on the spacing preset, please refer to page [here](/foundat
       If provided, applies style on the Block.
     </Prop>
     <Prop name="spaceInline" type="SpacingPresetKeys">
-      This is a spacing preset token which is applied as a margin on the right of
-      the Block. Use this to space inline content across the page.
+      This is a spacing preset token which is applied as a margin on the right
+      of the Block. Use this to space inline content across the page.
     </Prop>
     <Prop name="spaceStack" type="SpacingPresetKeys">
-      This is a spacing preset token which is applied as a margin on the bottom of
-      the Block. Use this to space stacking content down the page.
+      This is a spacing preset token which is applied as a margin on the bottom
+      of the Block. Use this to space stacking content down the page.
     </Prop>
-    This component does not have any default preset.
+    This component does not have any component defaults.
   </Prop>
 </LegacyBlock>
 
@@ -48,9 +49,17 @@ For more information on the spacing preset, please refer to page [here](/foundat
   componentName="Block"
   component={props => (
     <div>
-      <LegacyBlock height="sizing060" width="sizing120" backgroundColor="blue080" />
+      <LegacyBlock
+        height="sizing060"
+        width="sizing120"
+        backgroundColor="blue080"
+      />
       <Block {...props} />
-      <LegacyBlock height="sizing060" width="sizing120" backgroundColor="blue080" />
+      <LegacyBlock
+        height="sizing060"
+        width="sizing120"
+        backgroundColor="blue080"
+      />
     </div>
   )}
   knobs={[
@@ -87,25 +96,25 @@ For more information on the spacing preset, please refer to page [here](/foundat
           label: 'space020 spaceInline',
           value: {
             spaceInline: 'space020',
-          }
+          },
         },
         {
           label: 'space020 spaceStack',
           value: {
             spaceStack: 'space020',
-          }
+          },
         },
         {
           label: 'spaceInset030 spaceInset',
           value: {
             spaceInset: 'spaceInset030',
-          }
+          },
         },
         {
           label: 'flagSolid stylePreset',
           value: {
             stylePreset: 'flagSolid',
-          }
+          },
         },
       ],
     },

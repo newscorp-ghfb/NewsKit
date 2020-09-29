@@ -8,19 +8,23 @@ import * as presets from './presets';
 import {componentDefaults} from './component-defaults';
 
 interface CreateThemeArgs {
-  name: string;
+  name?: string;
   baseTheme?: UncompiledTheme;
   overrides?: ThemeOverrides;
 }
 
 export const createTheme = ({
-  name,
+  name = 'unnamed-newskit-theme',
   baseTheme,
   overrides = {},
-}: CreateThemeArgs): UncompiledTheme =>
-  deepMerge(
+}: CreateThemeArgs): UncompiledTheme => {
+  if (baseTheme && baseTheme.compiled) {
+    throw new Error(
+      'createTheme received a compiled baseTheme. Base themes must be uncompiled.',
+    );
+  }
+  return deepMerge(
     {
-      name,
       themeVersion: 1,
       ...foundations,
       ...presets,
@@ -29,4 +33,6 @@ export const createTheme = ({
     } as ThemeBase,
     baseTheme,
     overrides,
+    {name},
   );
+};

@@ -9,7 +9,13 @@ const flatRoutes = routes =>
       return acc;
     }
 
-    return acc.concat(flatRoutes(route.subNav));
+    if (route.subNav) {
+      return acc.concat(flatRoutes(route.subNav));
+    }
+
+    throw new Error(
+      `Route object has no page or subNav property! ${JSON.stringify(route)}`,
+    );
   }, []);
 
 const pages = flatRoutes(siteRoutes);
@@ -23,7 +29,7 @@ describe('Page accessibility', () => {
       cy.acceptCookieBanner();
       cy.injectAxe();
       if (
-        path === `/foundations/typography` ||
+        path === `/theming/typography-presets` ||
         path === `/pages/article` ||
         path === `/components/card`
       ) {

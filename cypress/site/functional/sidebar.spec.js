@@ -23,12 +23,14 @@ describe('Documentation Site - sidebar component', () => {
 
     cy.get('[data-testid="/theming"]').click();
     cy.contains('Overview').should('exist');
-    cy.contains('Code').should('exist');
+    cy.contains('Creating a theme').should('exist');
+    cy.contains('Using a theme').should('exist');
 
-    cy.get('[data-testid="/foundations"]').click();
+    cy.get('[data-testid="/theming/foundations"]').click();
     cy.contains('Colours').should('exist');
-    cy.contains('Icons').should('exist');
-    cy.contains('Typography').should('exist');
+    cy.contains('Overlays').should('exist');
+    cy.contains('Motion').should('exist');
+    cy.contains('Spacing').should('exist');
 
     cy.get('[data-testid="/components"]').click();
     cy.contains('Byline').should('exist');

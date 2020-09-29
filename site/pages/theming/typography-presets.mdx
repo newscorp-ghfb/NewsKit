@@ -6,7 +6,6 @@ import {CodeFromDefaultPresets} from '../../components/code';
 import {Prop} from '../../components/prop';
 import {Link} from 'newskit';
 
-
 export default Layout;
 
 # Typography
@@ -43,11 +42,11 @@ These components can accept overrides for the style and typography presets.
 All heading components follow a consistent prop and override structure. The default style presets for these map to from `headlineH1` - `headlineH6`
 
 ##### Props
+
 <LegacyBlock marginTop="sizing040">
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     Refer to the defaults below for the object structure:
-    
     <Prop name="stylePreset" type="string">
       If provided, this overrides the style preset applied to the Headline.
     </Prop>
@@ -61,8 +60,9 @@ All heading components follow a consistent prop and override structure. The defa
       <CodeFromDefaultPresets componentName="headlineH4" />
       <CodeFromDefaultPresets componentName="headlineH5" />
       <CodeFromDefaultPresets componentName="headlineH6" />
-      For more information about how to apply overrides to a component please refer 
-      to the <Link href="/theming/override-default-presets">Override default preset</Link> page.
+      For more information about how to apply overrides to a component please refer
+      to the <Link href="/theming/component-defaults">Override component defaults</Link> page.
+
   </Prop>
 </LegacyBlock>
 
@@ -92,35 +92,45 @@ Body text comes in three sizes. It’s typically used for long-form writing as i
 It can be rendered using the P component, shorter for Paragraph.
 
 ##### Props
+
 <LegacyBlock marginTop="sizing040">
   <Prop name="dropCap" type="boolean" default="false">
-    If set to true the first letter of the Paragraph text will have an unique style. Note that children should start with string for the drop cap to function correctly.
-    Becoming the drop cap of the paragraph.
+    If set to true the first letter of the Paragraph text will have an unique
+    style. Note that children should start with string for the drop cap to
+    function correctly. Becoming the drop cap of the paragraph.
   </Prop>
   <Prop name="overrides" type="object">
-    If provided, overrides the respective presets for the component and provided elements.
-    Refer to the defaults below for the object structure:
+    If provided, overrides the respective presets for the component and provided
+    elements. Refer to the defaults below for the object structure:
     <Prop name="stylePreset" type="string" default="paragraph">
       If provided, this overrides the style preset applied to the Paragraph.
     </Prop>
-     <Prop name="typographyPreset" type="string" default="body020">
-      If provided, this overrides the typography preset applied to the Paragraph.
+    <Prop name="typographyPreset" type="string" default="body020">
+      If provided, this overrides the typography preset applied to the
+      Paragraph.
     </Prop>
     <Prop name="dropCap" type="object">
-       <Prop name="stylePreset" type="string" default="paragraphDropCap">
-        If provided, this overrides the style preset applied to the Paragraph's dropCap.
+      <Prop name="stylePreset" type="string" default="paragraphDropCap">
+        If provided, this overrides the style preset applied to the Paragraph's
+        dropCap.
       </Prop>
       <Prop name="typographyPreset" type="string" default="display040">
-        If provided, this overrides the typography preset applied to the Paragraph's dropCap.
+        If provided, this overrides the typography preset applied to the
+        Paragraph's dropCap.
       </Prop>
       <Prop name="space" type="string" default="space20">
-        If provided, overrides the vertical space above the drop cap, use to align the drop cap to the first line of the paragraph.
+        If provided, overrides the vertical space above the drop cap, use to
+        align the drop cap to the first line of the paragraph.
       </Prop>
     </Prop>
-     Refer to the defaults below for the  overrides object structure:
-      <CodeFromDefaultPresets componentName="paragraph" />
-      For more information about how to apply overrides to a component please refer 
-      to the <Link href="/theming/override-default-presets">Override default preset</Link> page.
+    Refer to the defaults below for the overrides object structure:
+    <CodeFromDefaultPresets componentName="paragraph" />
+    For more information about how to apply overrides to a component please
+    refer to the{' '}
+    <Link href="/theming/component-defaults">
+      Override component defaults
+    </Link>{' '}
+    page.
   </Prop>
 </LegacyBlock>
 
@@ -145,12 +155,11 @@ It can be rendered using the P component, shorter for Paragraph.
   ]}
 />
 
-
 ## Captions
 
 Captions are the smallest font sizes. They are generally used to annotate imagery or to introduce a headline.
 
 ## Accessibility
 
-The P component, even with a drop cap, is fully accessible. Infact the drop cap and the rest of the paragraph's text will 
+The P component, even with a drop cap, is fully accessible. Infact the drop cap and the rest of the paragraph's text will
 be read as unique text by the screen reader.

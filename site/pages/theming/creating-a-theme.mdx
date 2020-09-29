@@ -1,0 +1,98 @@
+import Layout from '../../components/layout';
+import {Code, CodeFromFile} from '../../components/code';
+import {LegacyBlock} from '../../components/legacy-block';
+import {Prop} from '../../components/prop';
+export default Layout;
+
+# Creating Themes
+
+## Overview
+
+Themes represent the brand's identity, controlling the appearance of all NewsKit components. They are Javascript objects that contain the foundations, presets, and component defaults. NewsKit's theme creator provides
+sensible defaults so the consumer can override as much or as little as they wish. Currently the NewsKit component library houses 2 themes:
+
+- NewsKit Light - the default which all themes inherit from.
+- NewsKit Dark - an inverse of the light theme.
+
+You can switch between these two themes on this documentation site by clicking the button in the top right. Details on how to use a theme in your project can be found [here](/theming/using-a-theme).
+
+## createTheme Function
+
+To create a theme you use the `createTheme` function exported from NewsKit. The createTheme function returns an `UncompiledTheme` object which can be passed to the `ThemeProvider` component. When the ThemeProvider is passed an uncompiled theme object, it will compile it automatically. If you wish to pre-compile your theme, you can do this by passing your theme to the `compileTheme` function exported from NewsKit. It is recommended you let the ThemeProvider compile your theme automatically - you should not need to compile your theme yourself. More information on theme compilation is below.
+
+`createTheme` takes one argument - an object - with the following properties:
+
+<LegacyBlock marginTop="sizing040">
+  <Prop name="name" type="string">
+    This is the optional name of your theme.
+  </Prop>
+  <Prop name="baseTheme" type="UncompiledTheme" default="NewsKit light theme">
+    This is the theme which your new theme will inherit from - by default this
+    is the NewsKit light theme. You can use the baseTheme functionality to
+    create sub-themes. More information on this can be found below.
+  </Prop>
+  <Prop name="overrides" type="Partial<UncompiledTheme>" default="{}">
+    This is where you put all your custom theme values to create your theme,
+    e.g. colours, font config, style presets, e.t.c. The overrides object
+    structure matches the theme, think of this as being deep merged over the
+    baseTheme.
+  </Prop>
+</LegacyBlock>
+
+### Sub-themes
+
+Sub-themes can be used to style sub-brands or sections on a website. For example, your website might contain a sports section which uses the same theme, except the brand and interface colours change from blue to green. Creating sub-themes is simple. You use the `createTheme` function as you would normally except you also pass a base theme. Your base theme would be your main theme (e.g. the one with blue interface colours), and the overrides you provide would then change the elements where appropriate (e.g. changing those interface colours to green). This allows you to take advantage of the existing main theme - keeping things consistent - while still maintaining the ability to tweak elements for specific branding identities. You can use a sub-theme the same as any other regular theme. Sub-themes can even be used as base themes if desired - there is no limit to the depth of nesting themes and sub-themes.
+
+Note that base themes passed to the theme creation function must be uncompiled. Passing a compiled theme will result in an error.
+
+### Theme Compiling
+
+Theme compilation is something performed automatically by the ThemeProvider. You can optionally compile a theme yourself and pass it to the ThemeProvider, but there are limited reasons you may want to do this. We recommend letting the ThemeProvider automatically compile the theme for you.
+
+Theme compilation is an essential part of the theme process as it allows the theoretical design level "layers", e.g. colour palettes to foundations to style presets, to be overridden and customised as desired. For example, when passing overrides to the theme creator to override some colours, you could override a palette colour - say `red070` to a new hex value. This would change all uses of the `red070` token to your new value, whether used by an existing token in NewsKit light, or your own base theme. It does not matter in what theme or where it is used in a theme, the change would be reflected in all references to that token. This is why your overrides should reference tokens using a double curly bracket syntax, similar to Mustache templates, like so: `{{colors.red070}}`. All tokens inside those brackets are looked up at compile time and replaced with the final value, in this case a hex colour.
+
+Tokens can also be used as object keys as well as values, this is how you can set font crop config adjustments. There is an example of this further down the page. As well as this, multiple tokens can be specified in a single field, this is how the spacing presets are created for example - `spaceInset030Squish: '{{sizing.sizing030}} {{sizing.sizing040}}',`
+
+To make this system as flexible as reasonably possible the compilation lookup process is recursive. This is utilised in NewsKit for example by a button style preset `buttonOutlinedNegative` using `{{colors.inkNegative}}` which in turn uses `{{colors.red070}}` which evaluates to a hex code colour. A recursion depth limit of 5 is in place to avoid recursive loops, if a loop should occur an error will be logged to console and the values will be set to empty strings.
+
+As well as recursion protection the compiler will also log warnings when you reference tokens which it cannot find.
+
+### Functions as theme values
+
+In certain use cases you may find the need to create a theme value by utilising other parts of the theme. This can be done by setting the value of a theme token to a function. This function will be called with the theme object when it is encountered during compilation. Please note that the compiler will call the functions as they are found, so other token values could still be functions, uncompiled token references (e.g. `{{colors.red070}}`), or compiled values (e.g. `#ff0000`).
+
+### Examples
+
+#### Changing the blue colour palette
+
+Shifting all the blue colours used by NewsKit could be done like so:
+
+<CodeFromFile path="examples/theming/blue-shift.tsx" />
+
+#### Adding and updating a colour
+
+Adding a new red palette colour and updating a reference to it could be done like so:
+
+<CodeFromFile path="examples/theming/ink-negative-change.tsx" />
+
+#### Changing the default border radius
+
+Changing the default border radius of NewsKit elements, such as buttons, to sharp corners could be done like so:
+
+<CodeFromFile path="examples/theming/border-radius-change.tsx" />
+
+#### Setting custom font cropping config
+
+<CodeFromFile path="examples/theming/font-crop-config.tsx" />
+
+#### Using a function as a value
+
+<CodeFromFile path="examples/theming/function-as-a-value.tsx" />
+
+#### Adding a style preset
+
+<CodeFromFile path="examples/theming/adding-style-preset.tsx" />
+
+#### Adding a typography preset
+
+<CodeFromFile path="examples/theming/adding-typography-preset.tsx" />

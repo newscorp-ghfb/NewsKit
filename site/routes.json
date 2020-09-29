@@ -35,66 +35,55 @@
         "id": "/theming/overview"
       },
       {
-        "title": "Code",
+        "title": "Creating a theme",
         "page": true,
-        "id": "/theming/code"
+        "id": "/theming/creating-a-theme"
       },
       {
-        "title": "Default Presets",
-        "id": "/theming/default-presets",
+        "title": "Using a theme",
+        "page": true,
+        "id": "/theming/using-a-theme"
+      },
+      {
+        "title": "Foundations",
+        "id": "/theming/foundations",
         "subNav": [
           {
-            "title": "Override in Theme",
+            "title": "Colours",
             "page": true,
-            "id": "/theming/default-presets/override-in-theme"
+            "id": "/theming/foundations/colours"
           },
           {
-            "title": "Override Individual Components",
+            "title": "Overlays",
             "page": true,
-            "id": "/theming/default-presets/override-individual-components"
+            "id": "/theming/foundations/overlays"
+          },
+          {
+            "title": "Motion",
+            "page": true,
+            "id": "/theming/foundations/motion"
+          },
+          {
+            "title": "Spacing",
+            "page": true,
+            "id": "/theming/foundations/spacing"
           }
         ]
       },
       {
-        "title": "StylePreset",
+        "title": "Typography Presets",
         "page": true,
-        "id": "/theming/style-preset"
-      }
-    ]
-  },
-  {
-    "title": "Foundations",
-    "id": "/foundations",
-    "subNav": [
-      {
-        "title": "Colours",
-        "page": true,
-        "id": "/foundations/colours"
+        "id": "/theming/typography-presets"
       },
       {
-        "title": "Icons",
+        "title": "Style Presets",
         "page": true,
-        "id": "/foundations/icons"
+        "id": "/theming/style-presets"
       },
       {
-        "title": "Motion",
+        "title": "Component Defaults",
         "page": true,
-        "id": "/foundations/motion"
-      },
-      {
-        "title": "Overlays",
-        "page": true,
-        "id": "/foundations/overlays"
-      },
-      {
-        "title": "Spacing",
-        "page": true,
-        "id": "/foundations/spacing"
-      },
-      {
-        "title": "Typography",
-        "page": true,
-        "id": "/foundations/typography"
+        "id": "/theming/component-defaults"
       }
     ]
   },
@@ -171,6 +160,11 @@
         "title": "Headline",
         "page": true,
         "id": "/components/headline"
+      },
+      {
+        "title": "Icons",
+        "page": true,
+        "id": "/components/icons"
       },
       {
         "title": "Image",

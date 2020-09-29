@@ -23,12 +23,12 @@ A link requires a href property to be passed in.
 
 The default link component uses the following style tokens, which can be overridden:
 
-| Theme Token | Contextual Color | Color Value                               |
-| ----------- | --------------- | ----------------------------------------- |
-| linkText    | inkLink          | <TextBoxSwatch themeColor="inkLink"/>      |
-| linkVisited | inkLinkVisited     | <TextBoxSwatch themeColor="inkLinkVisited"/> |
-| linkHover   | inkLink         | <TextBoxSwatch themeColor="inkLink"/>     |
-| linkActive  | inkLink        | <TextBoxSwatch themeColor="inkLink"/>    |
+| Theme Token | Contextual Color | Color Value                                  |
+| ----------- | ---------------- | -------------------------------------------- |
+| linkText    | inkLink          | <TextBoxSwatch themeColor="inkLink"/>        |
+| linkVisited | inkLinkVisited   | <TextBoxSwatch themeColor="inkLinkVisited"/> |
+| linkHover   | inkLink          | <TextBoxSwatch themeColor="inkLink"/>        |
+| linkActive  | inkLink          | <TextBoxSwatch themeColor="inkLink"/>        |
 
 ## Props
 
@@ -71,7 +71,7 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
     <Prop name="externalIcon" type="object">
       <Prop name="size" type="IconSizeKeys">
         Allows you to override the default size of the External icon. The value of this prop has to be one of the icon size tokens.
-        E.g: "iconSize030". For more tokens please refer to the <Link href="/foundations/icons">foundations/icons page</Link>.
+        E.g: "iconSize030". For more tokens please refer to the <Link href="/components/icons">/components/icons page</Link>.
         <br />
         <br />
         <i>Note: You can also set the icon size by passing it directly as a size prop to the icon,
@@ -82,13 +82,14 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
     </Prop>
        Refer to the defaults below for the object structure:
        <CodeFromDefaultPresets componentName="link" />
-      For more information about how to apply overrides to a component please refer to the <Link href="/theming/override-default-presets">Override default preset</Link> page.
+      For more information about how to apply overrides to a component please refer to the <Link href="/theming/component-defaults">Override component defaults</Link> page.
+
   </Prop>
 
-  ### Default HTML props
-  All the native HTML attributes which an anchor element can take, can also be passed.
-  E.g:  ```<Link aria-label='NewsKit staging website' href="http://newskit.staging-news.co.uk/">```
+### Default HTML props
 
+All the native HTML attributes which an anchor element can take, can also be passed.
+E.g: `<Link aria-label='NewsKit staging website' href="http://newskit.staging-news.co.uk/">`
 
 </LegacyBlock>
 
@@ -101,7 +102,7 @@ All of the above applies to it, however the <b>LinkStandalone</b> uses a differe
 Both the Link and LinkStandalone default stylePresets can be changed via the theme.
 
 <Playground
-  componentName={["Link", "LinkStandalone"]}
+  componentName={['Link', 'LinkStandalone']}
   component={[Link, LinkStandalone]}
   knobs={[
     {
@@ -118,42 +119,42 @@ Both the Link and LinkStandalone default stylePresets can be changed via the the
       name: 'eventContext',
       propName: 'eventContext',
       options: [
-          {
-            label: 'Unset',
-            value: undefined,
-            isDefault: true
+        {
+          label: 'Unset',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'other event data',
+          value: {
+            someEvent: 'other event data',
           },
-          {
-            label: 'other event data',
-            value: {
-              someEvent: 'other event data'
-            }
-          },
-        ]
+        },
+      ],
     },
     {
       name: 'external',
       propName: 'external',
       options: [
-          {
-            label: 'Unset',
-            value: undefined,
-            isDefault: true
-          },
-          {
-            label: 'true',
-            value: true
-          },
-          {
-            label: 'false',
-            value: false
-          }
-        ]
-    }
+        {
+          label: 'Unset',
+          value: undefined,
+          isDefault: true,
+        },
+        {
+          label: 'true',
+          value: true,
+        },
+        {
+          label: 'false',
+          value: false,
+        },
+      ],
+    },
   ]}
 />
 
-For more information on how to override default presets, see docs [overrides default presets](/theming/default-presets/override-individual-components).
+For more information on overriding component defaults, see the docs [here](/theming/component-defaults).
 
 ## Rationale
 
@@ -162,15 +163,18 @@ For more information on how to override default presets, see docs [overrides def
 ### Accessibility
 
 #### Aria-label
+
 By default there is no aria label set in the Link component and the text inside the anchor will be read by the Screen Reader
 But bear in mind that, if the text is not descriptive enough, an aria label will be necessary to understand where the link is taking the user to.
 
 E.g:
-  ```
-  <a href=* aria-label=”Films list of Harry Potter”>Harry Potter<a/>
-  ```
+
+```
+<a href="..." aria-label="Films list of Harry Potter">Harry Potter<a/>
+```
 
 #### Underline styling
+
 If the underline style is removed from a link, which has already a distinct color + underline combination, bear in mind some other indicator has to be added.
 This could be the case when overriding presets.
 

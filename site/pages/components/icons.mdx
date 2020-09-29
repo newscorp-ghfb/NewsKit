@@ -18,7 +18,7 @@ import {
   Bookmark,
   CopyLink,
   Circle,
-  Placeholder
+  Placeholder,
 } from 'newskit';
 
 export default Layout;
@@ -35,8 +35,8 @@ Icons can be used to enhance other elements and content, as well as used inside 
 
 ### Available Icons
 
-| Name         |                      Preview                       | Color prop? |
-| ------------ | :------------------------------------------------: | :---------: |
+| Name         |                        Preview                        | Color prop? |
+| ------------ | :---------------------------------------------------: | :---------: |
 | Bookmark     |   <Icon Component={Bookmark} _size="iconSize030" />   |     👍      |
 | Comment      |   <Icon Component={Comment} _size="iconSize030" />    |     👍      |
 | Email        |    <Icon Component={Email} _size="iconSize030" />     |     👍      |
@@ -44,7 +44,7 @@ Icons can be used to enhance other elements and content, as well as used inside 
 | SaveActive   |  <Icon Component={SaveActive} _size="iconSize030" />  |     👍      |
 | SaveInactive | <Icon Component={SaveInactive} _size="iconSize030" /> |     👍      |
 | CopyLink     |   <Icon Component={CopyLink} _size="iconSize030" />   |     👍      |
-| Circle       |   <Icon Component={Circle} _size="iconSize030" />     |     👍      |
+| Circle       |    <Icon Component={Circle} _size="iconSize030" />    |     👍      |
 | GitHub       |    <Icon Component={GitHub} _size="iconSize030" />    |     👍      |
 | Facebook     |   <Icon Component={Facebook} _size="iconSize030" />   |     👎      |
 | Twitter      |   <Icon Component={Twitter} _size="iconSize030" />    |     👎      |
@@ -65,7 +65,8 @@ Icons must have a size specified, and some also support an optional colour overr
     This optional aira property that is set to improve accessibility.
   </Prop>
   <Prop name="title" type="string">
-    This is an optional title property to override the existing svg title, set in each icon.
+    This is an optional title property to override the existing svg title, set
+    in each icon.
   </Prop>
 </LegacyBlock>
 
