@@ -55,7 +55,7 @@ export const componentDefaults = {
           stylePreset: 'volumeControlIndicator',
         },
         thumb: {
-          stylePreset: 'volumeControlThumb',
+          stylePreset: 'audioPlayerVolumeControlThumb',
           size: 'sizing040',
         },
         thumbLabel: {

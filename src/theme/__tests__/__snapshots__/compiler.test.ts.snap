@@ -213,7 +213,7 @@ Object {
           },
           "thumb": Object {
             "size": "sizing040",
-            "stylePreset": "volumeControlThumb",
+            "stylePreset": "audioPlayerVolumeControlThumb",
           },
           "thumbLabel": Object {
             "stylePreset": "volumeControlLabels",
@@ -935,7 +935,7 @@ Object {
     },
     "audioPlayerSeekBarBuffering": Object {
       "base": Object {
-        "backgroundColor": "rgba(10,10,10,0.20)",
+        "backgroundColor": "#f0f0f0",
         "borderRadius": "20rem",
       },
     },
@@ -947,18 +947,18 @@ Object {
     },
     "audioPlayerSeekBarTrack": Object {
       "base": Object {
-        "backgroundColor": "#f0f0f0",
+        "backgroundColor": "#fafafa",
         "borderRadius": "20rem",
       },
     },
     "audioPlayerThumb": Object {
       "active": Object {
-        "backgroundColor": "#e6f4ff",
+        "backgroundColor": "#01396e",
         "iconColor": "#535353",
       },
       "base": Object {
-        "backgroundColor": "#ffffff",
-        "borderColor": "#0a68c1",
+        "backgroundColor": "#0a68c1",
+        "borderColor": "#ffffff",
         "borderRadius": "50%",
         "borderStyle": "solid",
         "borderWidth": "1px",
@@ -966,8 +966,25 @@ Object {
         "iconColor": "#9c9c9c",
       },
       "hover": Object {
-        "backgroundColor": "#ffffff",
+        "backgroundColor": "#02509b",
+      },
+    },
+    "audioPlayerVolumeControlThumb": Object {
+      "active": Object {
+        "backgroundColor": "#01396e",
+        "iconColor": "#535353",
+      },
+      "base": Object {
+        "backgroundColor": "#0a68c1",
+        "borderColor": "#ffffff",
+        "borderRadius": "50%",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "boxShadow": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
         "iconColor": "#9c9c9c",
+      },
+      "hover": Object {
+        "backgroundColor": "#02509b",
       },
     },
     "buttonDefault": Object {

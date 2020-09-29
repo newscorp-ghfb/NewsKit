@@ -941,13 +941,13 @@ stylePresets.volumeControlButtons = stylePresets.iconButtonMinimalPrimary;
 
 stylePresets.audioPlayerSeekBarTrack = {
   base: {
-    backgroundColor: '{{colors.interactive210}}',
+    backgroundColor: '{{colors.interface020}}',
     borderRadius: '{{borders.borderRadiusPill}}',
   },
 };
 stylePresets.audioPlayerSeekBarIndicator = {
   base: {
-    backgroundColor: '{{colors.interactive230}}',
+    backgroundColor: '{{colors.interactive030}}',
     borderRadius: '{{borders.borderRadiusPill}}',
   },
 };
@@ -958,12 +958,27 @@ stylePresets.audioPlayerLabels = {
 };
 stylePresets.audioPlayerSeekBarBuffering = {
   base: {
-    backgroundColor: '{{overlays.overlayDark010}}',
+    backgroundColor: '{{colors.interface030}}',
     borderRadius: '{{borders.borderRadiusPill}}',
   },
 };
 
-stylePresets.audioPlayerThumb = stylePresets.volumeControlThumb;
+stylePresets.audioPlayerThumb = {
+  base: {
+    ...stylePresets.sliderThumb.base,
+    backgroundColor: '{{colors.interactive030}}',
+    borderColor: '{{colors.interfaceBackground}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interactive040}}',
+  },
+  active: {
+    backgroundColor: '{{colors.interactive050}}',
+    iconColor: '{{colors.inkSubtle}}',
+  },
+};
+
+stylePresets.audioPlayerVolumeControlThumb = stylePresets.audioPlayerThumb;
 stylePresets.audioPlayerPopoutButton = stylePresets.iconButtonMinimalPrimary;
 stylePresets.audioPlayerControlButton = stylePresets.iconButtonMinimalPrimary;
 stylePresets.audioPlayerPlayPauseButton = stylePresets.iconButtonSolidPrimary;

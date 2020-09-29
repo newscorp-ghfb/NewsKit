@@ -989,9 +989,9 @@ exports[`Radio Player default player 1`] = `
 
 .emotion-53 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #ffffff;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -1014,16 +1014,11 @@ exports[`Radio Player default player 1`] = `
 }
 
 .emotion-53:hover:not(:disabled) {
-  background-color: #ffffff;
-}
-
-.emotion-53:hover:not(:disabled) svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  background-color: #02509b;
 }
 
 .emotion-53:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-53:active:not(:disabled) svg {
@@ -1185,7 +1180,7 @@ exports[`Radio Player default player 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #f0f0f0;
+  background-color: #fafafa;
   border-radius: 20rem;
   margin: calc(16px/2 - 8px/2) calc(16px/2);
   height: 8px;
@@ -2633,9 +2628,9 @@ exports[`Radio Player live player 1`] = `
 
 .emotion-75 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #ffffff;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -2658,16 +2653,11 @@ exports[`Radio Player live player 1`] = `
 }
 
 .emotion-75:hover:not(:disabled) {
-  background-color: #ffffff;
-}
-
-.emotion-75:hover:not(:disabled) svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  background-color: #02509b;
 }
 
 .emotion-75:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-75:active:not(:disabled) svg {
@@ -4752,9 +4742,9 @@ exports[`Radio Player player with popout link 1`] = `
 
 .emotion-75 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #ffffff;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -4777,16 +4767,11 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 .emotion-75:hover:not(:disabled) {
-  background-color: #ffffff;
-}
-
-.emotion-75:hover:not(:disabled) svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  background-color: #02509b;
 }
 
 .emotion-75:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-75:active:not(:disabled) svg {
@@ -4948,7 +4933,7 @@ exports[`Radio Player player with popout link 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #f0f0f0;
+  background-color: #fafafa;
   border-radius: 20rem;
   margin: calc(16px/2 - 8px/2) calc(16px/2);
   height: 8px;
@@ -6993,9 +6978,9 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 
 .emotion-91 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #ffffff;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -7018,16 +7003,11 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 .emotion-91:hover:not(:disabled) {
-  background-color: #ffffff;
-}
-
-.emotion-91:hover:not(:disabled) svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
+  background-color: #02509b;
 }
 
 .emotion-91:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-91:active:not(:disabled) svg {
@@ -7189,7 +7169,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   box-sizing: border-box;
-  background-color: #f0f0f0;
+  background-color: #fafafa;
   border-radius: 20rem;
   margin: calc(16px/2 - 8px/2) calc(16px/2);
   height: 8px;

@@ -258,11 +258,11 @@ describe('Audio Player', () => {
 
     expect(mockGetTrackBackground).toHaveBeenCalledWith({
       colors: [
-        '#0a68c1',
-        'rgba(10,10,10,0.20)',
-        '#f0f0f0',
-        'rgba(10,10,10,0.20)',
-        '#f0f0f0',
+        '#0a68c1', // indicator
+        '#f0f0f0', // buffered
+        '#fafafa', // track background
+        '#f0f0f0', // buffered
+        '#fafafa', // track background
       ],
       max: 6610,
       min: 0,
@@ -272,7 +272,7 @@ describe('Audio Player', () => {
     // Audio player snapshot last (so that buffering is included)
     expect(asFragment()).toMatchSnapshot();
 
-    // Time should round to nearest second (so we don't upate slider value needlessly)
+    // Time should round to nearest second (so we don't update slider value needlessly)
     audioElement.currentTime = 35.45231;
     fireEvent.timeUpdate(audioElement);
     expect(getByTestId('audio-slider-thumb')).toMatchSnapshot();

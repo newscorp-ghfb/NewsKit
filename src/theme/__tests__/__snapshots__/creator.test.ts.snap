@@ -212,7 +212,7 @@ Object {
           },
           "thumb": Object {
             "size": "sizing040",
-            "stylePreset": "volumeControlThumb",
+            "stylePreset": "audioPlayerVolumeControlThumb",
           },
           "thumbLabel": Object {
             "stylePreset": "volumeControlLabels",
@@ -934,30 +934,30 @@ Object {
     },
     "audioPlayerSeekBarBuffering": Object {
       "base": Object {
-        "backgroundColor": "{{overlays.overlayDark010}}",
+        "backgroundColor": "{{colors.interface030}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
       },
     },
     "audioPlayerSeekBarIndicator": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interactive230}}",
+        "backgroundColor": "{{colors.interactive030}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
       },
     },
     "audioPlayerSeekBarTrack": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interactive210}}",
+        "backgroundColor": "{{colors.interface020}}",
         "borderRadius": "{{borders.borderRadiusPill}}",
       },
     },
     "audioPlayerThumb": Object {
       "active": Object {
-        "backgroundColor": "{{colors.interactive240}}",
+        "backgroundColor": "{{colors.interactive050}}",
         "iconColor": "{{colors.inkSubtle}}",
       },
       "base": Object {
-        "backgroundColor": "{{colors.inverse}}",
-        "borderColor": "{{colors.interactive230}}",
+        "backgroundColor": "{{colors.interactive030}}",
+        "borderColor": "{{colors.interfaceBackground}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
         "borderStyle": "solid",
         "borderWidth": "{{borders.borderWidth010}}",
@@ -965,8 +965,25 @@ Object {
         "iconColor": "{{colors.inkNonEssential}}",
       },
       "hover": Object {
-        "backgroundColor": "{{colors.inverse}}",
+        "backgroundColor": "{{colors.interactive040}}",
+      },
+    },
+    "audioPlayerVolumeControlThumb": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactive050}}",
+        "iconColor": "{{colors.inkSubtle}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactive030}}",
+        "borderColor": "{{colors.interfaceBackground}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "boxShadow": "{{shadows.shadow010}}",
         "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactive040}}",
       },
     },
     "buttonDefault": Object {
