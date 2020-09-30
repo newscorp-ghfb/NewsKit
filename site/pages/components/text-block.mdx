@@ -34,8 +34,13 @@ TextBlock is a paragraph, which can be used to summarize any text content. It ca
     or div by `as="div"` prop.
   </Prop>
   <Prop name="overrides" type="object">
-    If provided, overrides the respective presets for the component and provided
-    elements.
+    If provided, overrides the respective presets for the component and provided elements.
+    <Prop name="stylePreset" type="MQ<StylePresetKeys>">
+      If provided, this overrides the style preset applied to the TextBlock.
+    </Prop>
+    <Prop name="typographyPreset" type="MQ<TypographyPresetKeys>">
+      If provided, this overrides the typography preset applied to the TextBlock.
+    </Prop>
   </Prop>
 </LegacyBlock>
 

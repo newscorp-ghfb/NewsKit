@@ -43,19 +43,19 @@ Tabs have a number of props to facilitate a variety of uses:
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     Here are the overrides that the Tab accepts:
-    <Prop name="spaceInset" type="PaddingPresetKeys">
+    <Prop name="spaceInset" type="MQ<PaddingPresetKeys>">
       If provided, this overrides the padding of the Tab. Otherwise,
       spaceInset020Squish or spaceInset030Squish is used depending on the `size`
       prop.
     </Prop>
-    <Prop name="stylePreset" type="string" default="tab">
+    <Prop name="stylePreset" type="MQ<StylePresetKeys>">
       If provided, this overrides the style preset applied to the Tab.
     </Prop>
-    <Prop name="typographyPreset" type="string">
+    <Prop name="typographyPreset" type="MQ<TypographyPresetKeys>">
       If provided, this overrides the typography preset applied to the Tab. Otherwise,
       label020 or label030 is used depending on the `size` prop.
     </Prop>
-    <Prop name="spaceInline" type="SizingKeys">
+    <Prop name="spaceInline" type="MQ<SizingKeys>">
       If provided, this overrides the space between multiple children in the
       underlying Stack. If less than 2 children are passed, this prop is
       irrelevant.
@@ -168,7 +168,7 @@ Tabs have a number of props to facilitate a variety of uses:
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     Here are the overrides that the Tab Group accepts:
-    <Prop name="stylePreset" type="string" default="tabGroup">
+    <Prop name="stylePreset" type="MQ<StylePresetKeys>">
       If provided, this overrides the style preset applied to the Tab Group.
     </Prop>
     Refer to the defaults below for the object structure:

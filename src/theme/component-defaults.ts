@@ -324,8 +324,8 @@ export const componentDefaults = {
   },
   shareBar: {
     label: {
-      typographyPreset: 'label020',
       stylePreset: 'shareBarLabel',
+      typographyPreset: 'label020',
       spaceInline: 'space040',
     },
     items: {
@@ -479,11 +479,11 @@ export const componentDefaults = {
     },
   },
   titleBar: {
+    stylePreset: 'titleBar',
     spaceInset: {
       xs: 'spaceInset030Squish',
       lg: 'spaceInset040Squish',
     },
-    stylePreset: 'titleBar',
     heading: {
       typographyPreset: {
         xs: 'heading040',

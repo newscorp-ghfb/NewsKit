@@ -42,19 +42,19 @@ Tags have a number of props to facilitate a variety of uses:
       spaceInset010Squish or spaceInset020Squish is used depending on the `size`
       prop.
     </Prop>
-    <Prop name="stylePreset" type="string" default="tagDefault">
+    <Prop name="stylePreset" type="MQ<StylePresetKeys>">
       If provided, this overrides the style preset applied to the Tag.
     </Prop>
-    <Prop name="typographyPreset" type="string">
+    <Prop name="typographyPreset" type="MQ<TypographyPresetKeys>">
       If provided, this overrides the typography preset applied to the Tag. Otherwise,
       label010, label020 or label030 is used depending on the `size` prop.
     </Prop>
-    <Prop name="space" type="SizingKeys">
+    <Prop name="spaceInline" type="MQ<SizingKeys>">
       If provided, this overrides the space between multiple children in the
       underlying Stack. If less than 2 children are passed, this prop is
       irrelevant.
     </Prop>
-    <Prop name="iconSize" type="IconSizeKeys" default="iconSize010">
+    <Prop name="iconSize" type="IconSizeKeys">
       If provided, this overrides the icon size of any child icons. If no icons
       are present in the Tag's children then this prop is irrelevant.
       <br />

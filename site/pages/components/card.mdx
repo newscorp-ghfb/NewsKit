@@ -55,20 +55,56 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
   </Prop>
 
   <Prop name="actions" type="React.ComponentType">
-    If provided, the Card will render the React component being passed to the actions. This could be buttons, tags and/or links. 
+    If provided, the Card will render the React component being passed to the actions. This could be buttons, tags and/or links.
     The actions section is typically placed at the bottom of the card and would only be clickable if the child components would be.<br />
     If there are multiple items, it is advised to use the Stack component to display the items. Refer to the examples below.<br />
   </Prop>
   <Prop name="overrides" type="object">
-    If provided, overrides the respective presets for the component and provided elements. Refer to the defaults below for the object structure:
+    If provided, overrides the respective presets for the component and provided elements.
+    <Prop name="stylePreset" type="MQ<StylePresetKeys>">
+      If provided, this overrides the style preset of the card.
+    </Prop>
+    <Prop name="mediaContainer" type="object">
+      <Prop name="stylePreset" type="MQ<StylePresetKeys>">
+        If provided, this overrides the style preset applied to the passed media container.
+      </Prop>
+      <Prop name="spaceInline" type="MQ<SpacingPresetKeys>">
+        If provided, this overrides the horizontal space between the media container and the next element.
+      </Prop>
+    </Prop>
+    <Prop name="contentAndActionsContainer" type="object">
+      <Prop name="stylePreset" type="MQ<StylePresetKeys>" >
+        If provided, this overrides the style preset applied to the content and actions container.
+      </Prop>
+    </Prop>
+    <Prop name="teaserContainer" type="object">
+      <Prop name="stylePreset" type="MQ<StylePresetKeys>" >
+        If provided, this overrides the style preset applied to the teaser container.
+      </Prop>
+      <Prop name="spaceInset" type="MQ<PaddingPresetKeys>">
+        If provided, applies padding to the teaser container.
+      </Prop>
+    </Prop>
+    <Prop name="actionsContainer" type="object">
+      <Prop name="stylePreset" type="MQ<StylePresetKeys>" >
+        If provided, this overrides the style preset applied to the actions container.
+      </Prop>
+      <Prop name="minHeight" type="SizingKeys | string">
+        If provided, this sets a minimum height to the actions container. This can be a sizing
+        token from the theme, or any CSS length value.
+      </Prop>
+      <Prop name="spaceInset" type="MQ<PaddingPresetKeys>">
+        If provided, applies padding to the actions container.
+      </Prop>
+    </Prop>
+    Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName='card' />
   </Prop>
 </LegacyBlock>
 
 ### Examples
 
-#### Prerequisites
-<CodeFromFile path="examples/card/common.tsx" />
+#### Prerequisites<CodeFromFile path="examples/card/common.tsx" />
 
 #### Card without inset
 

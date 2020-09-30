@@ -46,11 +46,10 @@ The divider has a number of props to facilitate a variety of uses. Custom and re
     If provided changes the flow of the divider to be vertical.
   </Prop>
   <Prop name="overrides" type="object">
-    If provided, overrides the respective presets for the component. Here are
-    the overrides that the Divider accepts:
-    <Prop name="stylePreset" type="StylePresetKey" default="dividerHorizontal">
-      If provided, overrides the style preset applied to the Divider. The style
-      preset can modify the borderStyle, borderColor and borderWidth.
+    If provided, overrides the respective presets for the component. Here are the overrides that the Divider accepts:
+    <Prop name="stylePreset" type="MQ<StylePresetKeys>">
+      If provided, overrides the style preset applied to the Divider. The style preset can modify the borderStyle,
+      borderColor and borderWidth.
     </Prop>
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="divider" />
