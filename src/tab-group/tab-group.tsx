@@ -5,7 +5,6 @@ import {Flow, Stack} from '../stack';
 import {Divider} from '../divider';
 import {AlignSelfValues, StackChild} from '../stack-child';
 import {TabSize} from '../tab';
-import {getSSRId} from '../utils/get-ssr-id';
 
 export const TabGroup: React.FC<TabGroupProps> = ({
   children,
@@ -88,7 +87,7 @@ export const TabGroup: React.FC<TabGroupProps> = ({
 
   const renderChildren = () =>
     children.map((tab: React.ReactElement, i, array) => (
-      <React.Fragment key={getSSRId()}>
+      <React.Fragment key={tab.props.tabKey}>
         {React.cloneElement(tab, {
           onClick: () => setActiveTab(tab.props.tabKey),
           onMouseDown: (e: React.MouseEvent) => e.preventDefault(),
