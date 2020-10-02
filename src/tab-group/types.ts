@@ -1,4 +1,6 @@
 import {TabSize} from '../tab';
+import {MQ} from '../utils/style';
+import {PaddingPresetKeys} from '../theme';
 
 export interface TabGroupProps {
   size?: TabSize;
@@ -6,8 +8,8 @@ export interface TabGroupProps {
   divider?: boolean;
   tabPanes?: Array<React.ReactElement>;
   overrides?: {
-    stylePreset?: string;
-    spaceInset?: string;
+    stylePreset?: MQ<string>;
+    spaceInset?: MQ<PaddingPresetKeys>;
   };
 }
 

@@ -1,18 +1,20 @@
+import {MQ} from '../utils/style';
+
 export interface DateTimeProps {
   date: string | number;
   dateFormat?: string;
   prefix?: string;
   suffix?: string;
   overrides?: {
-    stylePreset?: string;
-    typographyPreset?: string;
+    stylePreset?: MQ<string>;
+    typographyPreset?: MQ<string>;
     prefix?: {
-      stylePreset?: string;
-      typographyPreset?: string;
+      stylePreset?: MQ<string>;
+      typographyPreset?: MQ<string>;
     };
     suffix?: {
-      stylePreset?: string;
-      typographyPreset?: string;
+      stylePreset?: MQ<string>;
+      typographyPreset?: MQ<string>;
     };
   };
 }

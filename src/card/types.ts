@@ -14,17 +14,17 @@ export interface CardProps {
   actions?: React.ComponentType;
 
   overrides?: {
-    stylePreset?: StylePresetKeys;
+    stylePreset?: MQ<StylePresetKeys>;
     mediaContainer?: {
-      stylePreset?: StylePresetKeys;
+      stylePreset?: MQ<StylePresetKeys>;
       spaceInline?: MQ<SpacePresetKeys>;
     };
     teaserContainer?: {
-      stylePreset?: StylePresetKeys;
+      stylePreset?: MQ<StylePresetKeys>;
       spaceInset?: MQ<PaddingPresetKeys>;
     };
     actionsContainer?: {
-      stylePreset?: StylePresetKeys;
+      stylePreset?: MQ<StylePresetKeys>;
       spaceInset?: MQ<PaddingPresetKeys>;
       minHeight?: SizingKeys | string;
     };

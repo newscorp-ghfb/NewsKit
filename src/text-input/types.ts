@@ -1,4 +1,5 @@
-import {SizingKeys, SpacePresetKeys} from '../theme';
+import {SizingKeys, SpacePresetKeys, PaddingPresetKeys} from '../theme';
+import {MQ} from '../utils/style';
 
 export enum TextInputSize {
   Small = 'small',
@@ -17,22 +18,22 @@ export interface TextInputProps
   overrides?: {
     width?: SizingKeys | string;
     input?: {
-      stylePreset?: string;
-      spaceInset?: string;
+      stylePreset?: MQ<string>;
+      spaceInset?: MQ<PaddingPresetKeys>;
       minHeight?: SizingKeys | string;
-      typographyPreset?: string;
-      spaceStack?: SpacePresetKeys;
-      spaceInline?: SpacePresetKeys;
+      typographyPreset?: MQ<string>;
+      spaceStack?: MQ<SpacePresetKeys>;
+      spaceInline?: MQ<SpacePresetKeys>;
     };
     label?: {
-      stylePreset?: string;
-      typographyPreset?: string;
-      spaceStack?: SpacePresetKeys;
-      spaceInline?: SpacePresetKeys;
+      stylePreset?: MQ<string>;
+      typographyPreset?: MQ<string>;
+      spaceStack?: MQ<SpacePresetKeys>;
+      spaceInline?: MQ<SpacePresetKeys>;
     };
     assistiveText?: {
-      stylePreset?: string;
-      typographyPreset?: string;
+      stylePreset?: MQ<string>;
+      typographyPreset?: MQ<string>;
     };
   };
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {styled} from '../../utils/style';
+import {styled, MQ} from '../../utils/style';
 import {ForwardButton, BackwardButton} from './forward-replay';
 import {PlayerButton} from './play-pause';
 import {SkipPreviousButton, SkipNextButton} from './skip-track';
@@ -16,24 +16,24 @@ export interface TrackControlProps {
 }
 
 export interface ControlsOverrideProps {
-  space?: SizingKeys;
+  space?: MQ<SizingKeys>;
   previousButton?: {
-    stylePreset?: StylePresetKeys;
+    stylePreset?: MQ<StylePresetKeys>;
   };
   replayButton?: {
-    stylePreset?: StylePresetKeys;
+    stylePreset?: MQ<StylePresetKeys>;
   };
   playPauseButton?: {
-    stylePreset?: StylePresetKeys;
+    stylePreset?: MQ<StylePresetKeys>;
   };
   forwardButton?: {
-    stylePreset?: StylePresetKeys;
+    stylePreset?: MQ<StylePresetKeys>;
   };
   nextButton?: {
-    stylePreset?: StylePresetKeys;
+    stylePreset?: MQ<StylePresetKeys>;
   };
   popoutButton?: {
-    stylePreset?: StylePresetKeys;
+    stylePreset?: MQ<StylePresetKeys>;
   };
 }
 

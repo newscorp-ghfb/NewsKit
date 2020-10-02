@@ -1,5 +1,5 @@
 import React from 'react';
-import {styled, getSpacingFromTheme, getStylePreset} from '../utils/style';
+import {styled, getSpacingFromTheme, getStylePreset, MQ} from '../utils/style';
 import {Link} from '../link';
 import {Stack} from '../stack';
 import {getToken} from '../utils/get-token';
@@ -18,9 +18,9 @@ const InlineBlock = styled(Block)`
 `;
 
 const getStyledTextBlock = (
-  typographyPreset: TypographyPresetKeys,
-  stylePreset: StylePresetKeys,
-  spaceInline: SpacePresetKeys,
+  typographyPreset: MQ<TypographyPresetKeys>,
+  stylePreset: MQ<StylePresetKeys>,
+  spaceInline: MQ<SpacePresetKeys>,
 ) => ({
   children,
   withSpace = false,
@@ -55,8 +55,8 @@ const getStyledTextBlock = (
 const renderLink = (
   {href, author, ariaLabel}: Partial<BylineData>,
   overrides: {
-    stylePreset: StylePresetKeys;
-    typographyPreset: TypographyPresetKeys;
+    stylePreset: MQ<StylePresetKeys>;
+    typographyPreset: MQ<TypographyPresetKeys>;
   },
 ) => (
   <Link

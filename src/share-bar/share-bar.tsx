@@ -6,14 +6,10 @@ import {
   getSpacingInlineHorizontal,
   getSpacingInlineVertical,
   getStylePreset,
+  MQ,
 } from '../utils/style';
 import {Stack, Flow, StackProps} from '../stack';
-import {
-  useTheme,
-  SizingKeys,
-  SpacePresetKeys,
-  PaddingPresetKeys,
-} from '../theme';
+import {useTheme, SpacePresetKeys, PaddingPresetKeys} from '../theme';
 
 import {getToken} from '../utils/get-token';
 
@@ -21,21 +17,21 @@ export interface ShareBarProps {
   label?: string;
   vertical?: boolean;
   overrides?: {
-    stylePreset?: string;
+    stylePreset?: MQ<string>;
     label?: {
-      typographyPreset?: string;
-      stylePreset?: string;
-      spaceInline?: SpacePresetKeys;
-      spaceInset?: PaddingPresetKeys;
+      typographyPreset?: MQ<string>;
+      stylePreset?: MQ<string>;
+      spaceInline?: MQ<SpacePresetKeys>;
+      spaceInset?: MQ<PaddingPresetKeys>;
     };
     items?: {
-      spaceInline: SizingKeys;
+      spaceInline?: MQ<SpacePresetKeys>;
     };
   };
 }
 
 interface StyledShareBarProps extends StackProps {
-  overrides?: {stylePreset?: string};
+  overrides?: {stylePreset?: MQ<string>};
   orientation?: string;
 }
 

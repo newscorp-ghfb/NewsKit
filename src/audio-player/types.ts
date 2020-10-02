@@ -2,6 +2,7 @@ import {TrackControlProps, ControlsOverrideProps} from './controls';
 import {SliderOverrideProps} from '../slider';
 import {VolumeControlOverrideProps} from '../volume-control';
 import {StylePresetKeys} from '../theme';
+import {MQ} from '../utils/style';
 
 export interface AudioPlayerProps
   extends Omit<React.AudioHTMLAttributes<HTMLAudioElement>, 'controls'>,
@@ -14,7 +15,7 @@ export interface AudioPlayerProps
     seekBar?: {
       slider?: SliderOverrideProps;
       buffering?: {
-        stylePreset?: StylePresetKeys;
+        stylePreset?: MQ<StylePresetKeys>;
       };
     };
     controls?: ControlsOverrideProps;

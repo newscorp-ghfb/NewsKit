@@ -9,7 +9,7 @@ import {
 
 import {ScreenReaderOnly} from '../screen-reader-only';
 
-import {StylePresetKeys, TypographyPresetKeys, SpacePresetKeys} from '../theme';
+import {StylePresetKeys, TypographyPresetKeys, SizingKeys} from '../theme';
 
 export interface ParagraphProps {
   // eslint-disable-next-line
@@ -21,7 +21,7 @@ export interface ParagraphProps {
     dropCap?: {
       stylePreset?: MQ<StylePresetKeys>;
       typographyPreset?: MQ<TypographyPresetKeys>;
-      space?: MQ<SpacePresetKeys>;
+      space?: MQ<SizingKeys>;
     };
   };
 }

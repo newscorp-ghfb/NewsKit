@@ -6,10 +6,10 @@ import {useTheme, Theme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {as as emotionAs} from '../utils/component';
 import {IndeterminateProgressIndicator} from '../icons/filled/custom/indeterminate-progress-indicator';
-import {getStylePresetFromTheme} from '../utils/style';
+import {getStylePresetFromTheme, MQ} from '../utils/style';
 import {useInstrumentation, EventTrigger} from '../instrumentation';
 
-const getIconColourValue = (theme: Theme, stylePreset: string) => {
+const getIconColourValue = (theme: Theme, stylePreset: MQ<string>) => {
   const buttonStylePresets = getStylePresetFromTheme(stylePreset, undefined, {
     isLoading: true,
   })({theme});

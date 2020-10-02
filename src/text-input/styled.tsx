@@ -8,6 +8,7 @@ import {
   getSizingFromTheme,
   getStylePreset,
   getStylePresetFromTheme,
+  MQ,
 } from '../utils/style';
 import {TextInputProps, TextInputSize} from './types';
 import {TextBlock, TextBlockProps} from '../text-block/text-block';
@@ -31,7 +32,7 @@ export const StyledTextInputContainer = styled.div<TextInputProps>`
 interface InputContainer
   extends Pick<TextInputProps, 'overrides' | 'disabled'> {
   $size: TextInputSize;
-  stylePreset?: string;
+  stylePreset?: MQ<string>;
   id?: string;
 }
 

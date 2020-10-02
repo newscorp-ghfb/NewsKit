@@ -8,12 +8,13 @@ import {IconSizeKeys, useTheme} from '../theme';
 import {ScreenReaderOnly} from '../screen-reader-only/screen-reader-only';
 import {getSSRId} from '../utils/get-ssr-id';
 import {getTokensForVolumeControl} from './utils';
+import {MQ} from '../utils/style';
 
 interface MuteButtonProps {
   volume: number;
   unMutedVolume: number;
   onChange: VolumeControlProps['onChange'];
-  volumeControlButtonStylePreset?: string;
+  volumeControlButtonStylePreset?: MQ<string>;
   iconSize: IconSizeKeys;
   size: ButtonSize;
 }

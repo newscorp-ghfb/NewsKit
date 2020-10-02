@@ -1,5 +1,5 @@
 import React from 'react';
-import {styled, getStylePreset} from '../utils/style';
+import {styled, getStylePreset, MQ} from '../utils/style';
 import {isValidNode} from '../utils/component';
 import {getSSRId} from '../utils/get-ssr-id';
 import {StyledLi, StyledUl} from './styled';
@@ -13,14 +13,14 @@ import {IconComponent} from '../icons';
 export interface UnorderedListProps {
   listItemMarker?: IconComponent;
   overrides?: {
-    spaceStack?: SpacePresetKeys;
+    spaceStack?: MQ<SpacePresetKeys>;
     content?: {
-      stylePreset?: string;
-      typographyPreset?: string;
+      stylePreset?: MQ<string>;
+      typographyPreset?: MQ<string>;
     };
     marker?: {
-      stylePreset?: string;
-      spaceInline?: SpacePresetKeys;
+      stylePreset?: MQ<string>;
+      spaceInline?: MQ<SpacePresetKeys>;
       size?: IconSizeKeys;
     };
   };

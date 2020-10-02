@@ -7,14 +7,15 @@ import {
   getColorFromTheme,
   SizingKeys,
   IconSizeKeys,
+  MQ,
 } from 'newskit';
 import {LegacyBlock} from '../../legacy-block';
 import {KnobContainer, StyledTitle, getHash} from './common';
 
 export interface Overrides {
-  typographyPreset?: string;
-  stylePreset?: string;
-  spaceInset?: string;
+  typographyPreset?: MQ<string>;
+  stylePreset?: MQ<string>;
+  spaceInset?: MQ<string>;
 
   width?: SizingKeys | string;
   height?: SizingKeys | string;
@@ -22,7 +23,7 @@ export interface Overrides {
   minHeight?: SizingKeys | string;
 
   iconSize?: IconSizeKeys;
-  space?: SizingKeys;
+  space?: MQ<SizingKeys>;
 }
 export interface MultiChoiceKnobOptions {
   value: string | Overrides;

@@ -1,4 +1,5 @@
-import {SizingKeys, SpacePresetKeys} from '../theme';
+import {SpacePresetKeys} from '../theme';
+import {MQ} from '../utils/style';
 
 export interface BylineData {
   author: string;
@@ -11,16 +12,16 @@ export interface BylineData {
 export interface BylineProps {
   bylineData: BylineData[];
   overrides?: {
-    stylePreset?: string;
-    typographyPreset?: string;
-    spaceStack?: SizingKeys;
+    stylePreset?: MQ<string>;
+    typographyPreset?: MQ<string>;
+    spaceStack?: MQ<SpacePresetKeys>;
     link?: {
-      stylePreset?: string;
-      typographyPreset?: string;
+      stylePreset?: MQ<string>;
+      typographyPreset?: MQ<string>;
     };
     divider?: {
-      stylePreset?: string;
-      spaceInline?: SpacePresetKeys;
+      stylePreset?: MQ<string>;
+      spaceInline?: MQ<SpacePresetKeys>;
     };
   };
 }
