@@ -218,7 +218,6 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 
 .emotion-5 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-5:hover:not(:disabled) {
@@ -236,7 +235,6 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 
 .emotion-5:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-4 {
@@ -516,7 +514,6 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
 
 .emotion-4 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-4:hover:not(:disabled) {
@@ -525,7 +522,6 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
 
 .emotion-4:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-4:active:not(:disabled) {
@@ -534,7 +530,6 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
 
 .emotion-4:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-4:visited:not(:disabled) {
@@ -543,7 +538,6 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
 
 .emotion-4:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {

@@ -51,7 +51,6 @@ exports[`Stack renders nested stack as list 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -345,7 +344,6 @@ exports[`Stack renders nested stack as list when both are list 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -663,7 +661,6 @@ exports[`Stack renders stack as list with spacing 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -922,7 +919,6 @@ exports[`Stack renders stack when no properties are set 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1114,7 +1110,6 @@ exports[`Stack renders stack with flex grow and shrink 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1288,7 +1283,6 @@ exports[`Stack renders stack with flex grow and shrink 2`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1462,7 +1456,6 @@ exports[`Stack renders where a nested stack with stackDistribution 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1702,7 +1695,6 @@ exports[`Stack renders where stackDistribution is invalid 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1913,7 +1905,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceI
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2150,7 +2141,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceI
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2387,7 +2377,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceS
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2624,7 +2613,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceS
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2857,7 +2845,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -3071,7 +3058,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -3285,7 +3271,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -3526,7 +3511,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -3763,7 +3747,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -4004,7 +3987,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -4241,7 +4223,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -4452,7 +4433,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -4663,7 +4643,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -4874,7 +4853,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -5085,7 +5063,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -5296,7 +5273,6 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -5513,7 +5489,6 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceI
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -5750,7 +5725,6 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceI
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -5987,7 +5961,6 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceS
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -6224,7 +6197,6 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceS
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -6457,7 +6429,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -6671,7 +6642,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -6885,7 +6855,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -7126,7 +7095,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -7363,7 +7331,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -7604,7 +7571,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -7841,7 +7807,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -8052,7 +8017,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -8263,7 +8227,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -8474,7 +8437,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -8685,7 +8647,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -8896,7 +8857,6 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -9113,7 +9073,6 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceInli
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -9350,7 +9309,6 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceInli
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -9587,7 +9545,6 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceStac
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -9824,7 +9781,6 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceStac
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -10057,7 +10013,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -10271,7 +10226,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -10485,7 +10439,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -10726,7 +10679,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -10963,7 +10915,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -11204,7 +11155,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -11441,7 +11391,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -11652,7 +11601,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -11863,7 +11811,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -12074,7 +12021,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -12285,7 +12231,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -12496,7 +12441,6 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -12713,7 +12657,6 @@ exports[`Stack renders where the stack flow is invalid 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -12920,7 +12863,6 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceInl
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -13157,7 +13099,6 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceInl
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -13394,7 +13335,6 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceSta
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -13631,7 +13571,6 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceSta
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -13864,7 +13803,6 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -14078,7 +14016,6 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -14292,7 +14229,6 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -14533,7 +14469,6 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -14770,7 +14705,6 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -15011,7 +14945,6 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -15248,7 +15181,6 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -15459,7 +15391,6 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -15670,7 +15601,6 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -15881,7 +15811,6 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -16092,7 +16021,6 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -16303,7 +16231,6 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -16520,7 +16447,6 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceInlin
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -16757,7 +16683,6 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceInlin
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -16994,7 +16919,6 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceStack
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -17231,7 +17155,6 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceStack
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -17464,7 +17387,6 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -17678,7 +17600,6 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -17892,7 +17813,6 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -18133,7 +18053,6 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -18370,7 +18289,6 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -18611,7 +18529,6 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -18848,7 +18765,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -19059,7 +18975,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -19289,7 +19204,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -19481,7 +19395,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -19692,7 +19605,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -19903,7 +19815,6 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -20120,7 +20031,6 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceInli
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -20357,7 +20267,6 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceInli
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -20594,7 +20503,6 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceStac
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -20831,7 +20739,6 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceStac
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -21064,7 +20971,6 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -21278,7 +21184,6 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -21492,7 +21397,6 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -21733,7 +21637,6 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -21970,7 +21873,6 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -22211,7 +22113,6 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -22448,7 +22349,6 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -22659,7 +22559,6 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -22870,7 +22769,6 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -23081,7 +22979,6 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -23295,7 +23192,6 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -23506,7 +23402,6 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -23723,7 +23618,6 @@ exports[`Stack renders with valid flow 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -23934,7 +23828,6 @@ exports[`Stack renders with valid stackDistribution 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {

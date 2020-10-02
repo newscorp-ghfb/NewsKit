@@ -459,6 +459,9 @@ Object {
         "width": "sizing060",
       },
     },
+    "icons": Object {
+      "stylePreset": "iconDefault",
+    },
     "image": Object {
       "stylePreset": "imageSharp",
     },
@@ -1944,6 +1947,11 @@ Object {
       "loading": Object {
         "backgroundColor": "#f0f0f0",
         "color": "#2e2e2e",
+        "iconColor": "#2e2e2e",
+      },
+    },
+    "iconDefault": Object {
+      "base": Object {
         "iconColor": "#2e2e2e",
       },
     },

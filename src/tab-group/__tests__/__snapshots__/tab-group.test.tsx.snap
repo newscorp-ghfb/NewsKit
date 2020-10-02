@@ -142,7 +142,6 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -152,7 +151,6 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -162,7 +160,6 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
 
 .emotion-3:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:disabled {
@@ -172,12 +169,10 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-2 {
@@ -280,7 +275,6 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
 
 .emotion-8 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-8:hover:not(:disabled) {
@@ -290,7 +284,6 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
 
 .emotion-8:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:active:not(:disabled) {
@@ -300,7 +293,6 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
 
 .emotion-8:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:disabled {
@@ -310,7 +302,6 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
 
 .emotion-8:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-18 {
@@ -587,7 +578,6 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
 
 .emotion-13 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-13:hover:not(:disabled) {
@@ -597,7 +587,6 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
 
 .emotion-13:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-13:active:not(:disabled) {
@@ -607,7 +596,6 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
 
 .emotion-13:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-13:disabled {
@@ -617,12 +605,10 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
 
 .emotion-13:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-13 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-2 {
@@ -725,7 +711,6 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -735,7 +720,6 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -745,7 +729,6 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
 
 .emotion-3:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:disabled {
@@ -755,7 +738,6 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-18 {
@@ -1032,7 +1014,6 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
 
 .emotion-8 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-8:hover:not(:disabled) {
@@ -1042,7 +1023,6 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
 
 .emotion-8:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:active:not(:disabled) {
@@ -1052,7 +1032,6 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
 
 .emotion-8:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:disabled {
@@ -1062,12 +1041,10 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
 
 .emotion-8:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-8 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-2 {
@@ -1170,7 +1147,6 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1180,7 +1156,6 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1190,7 +1165,6 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
 
 .emotion-3:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:disabled {
@@ -1200,7 +1174,6 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-18 {
@@ -1477,7 +1450,6 @@ exports[`Tab Group changes focus and sets previous to be active on left arrow 1`
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1487,7 +1459,6 @@ exports[`Tab Group changes focus and sets previous to be active on left arrow 1`
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1497,7 +1468,6 @@ exports[`Tab Group changes focus and sets previous to be active on left arrow 1`
 
 .emotion-3:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:disabled {
@@ -1507,12 +1477,10 @@ exports[`Tab Group changes focus and sets previous to be active on left arrow 1`
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-2 {
@@ -1615,7 +1583,6 @@ exports[`Tab Group changes focus and sets previous to be active on left arrow 1`
 
 .emotion-8 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-8:hover:not(:disabled) {
@@ -1625,7 +1592,6 @@ exports[`Tab Group changes focus and sets previous to be active on left arrow 1`
 
 .emotion-8:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:active:not(:disabled) {
@@ -1635,7 +1601,6 @@ exports[`Tab Group changes focus and sets previous to be active on left arrow 1`
 
 .emotion-8:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:disabled {
@@ -1645,7 +1610,6 @@ exports[`Tab Group changes focus and sets previous to be active on left arrow 1`
 
 .emotion-8:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-18 {
@@ -1922,7 +1886,6 @@ exports[`Tab Group changes focus on tab 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1932,7 +1895,6 @@ exports[`Tab Group changes focus on tab 1`] = `
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1942,7 +1904,6 @@ exports[`Tab Group changes focus on tab 1`] = `
 
 .emotion-3:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:disabled {
@@ -1952,12 +1913,10 @@ exports[`Tab Group changes focus on tab 1`] = `
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-2 {
@@ -2060,7 +2019,6 @@ exports[`Tab Group changes focus on tab 1`] = `
 
 .emotion-8 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-8:hover:not(:disabled) {
@@ -2070,7 +2028,6 @@ exports[`Tab Group changes focus on tab 1`] = `
 
 .emotion-8:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:active:not(:disabled) {
@@ -2080,7 +2037,6 @@ exports[`Tab Group changes focus on tab 1`] = `
 
 .emotion-8:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:disabled {
@@ -2090,7 +2046,6 @@ exports[`Tab Group changes focus on tab 1`] = `
 
 .emotion-8:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div
@@ -2328,7 +2283,6 @@ exports[`Tab Group clears focus onMouseDown 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2338,7 +2292,6 @@ exports[`Tab Group clears focus onMouseDown 1`] = `
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2348,7 +2301,6 @@ exports[`Tab Group clears focus onMouseDown 1`] = `
 
 .emotion-3:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:disabled {
@@ -2358,12 +2310,10 @@ exports[`Tab Group clears focus onMouseDown 1`] = `
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-2 {
@@ -2466,7 +2416,6 @@ exports[`Tab Group clears focus onMouseDown 1`] = `
 
 .emotion-8 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-8:hover:not(:disabled) {
@@ -2476,7 +2425,6 @@ exports[`Tab Group clears focus onMouseDown 1`] = `
 
 .emotion-8:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:active:not(:disabled) {
@@ -2486,7 +2434,6 @@ exports[`Tab Group clears focus onMouseDown 1`] = `
 
 .emotion-8:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:disabled {
@@ -2496,7 +2443,6 @@ exports[`Tab Group clears focus onMouseDown 1`] = `
 
 .emotion-8:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div
@@ -2734,7 +2680,6 @@ exports[`Tab Group doesnt change focus if no other available tabs 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2744,7 +2689,6 @@ exports[`Tab Group doesnt change focus if no other available tabs 1`] = `
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2754,7 +2698,6 @@ exports[`Tab Group doesnt change focus if no other available tabs 1`] = `
 
 .emotion-3:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:disabled {
@@ -2764,12 +2707,10 @@ exports[`Tab Group doesnt change focus if no other available tabs 1`] = `
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-2 {
@@ -2871,7 +2812,6 @@ exports[`Tab Group doesnt change focus if no other available tabs 1`] = `
 
 .emotion-8 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div
@@ -3111,7 +3051,6 @@ exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -3121,7 +3060,6 @@ exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -3131,7 +3069,6 @@ exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
 
 .emotion-3:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:disabled {
@@ -3141,12 +3078,10 @@ exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-2 {
@@ -3249,7 +3184,6 @@ exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
 
 .emotion-8 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-8:hover:not(:disabled) {
@@ -3259,7 +3193,6 @@ exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
 
 .emotion-8:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:active:not(:disabled) {
@@ -3269,7 +3202,6 @@ exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
 
 .emotion-8:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:disabled {
@@ -3279,7 +3211,6 @@ exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
 
 .emotion-8:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div
@@ -3517,7 +3448,6 @@ exports[`Tab Group renders with default styles 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -3527,7 +3457,6 @@ exports[`Tab Group renders with default styles 1`] = `
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -3537,7 +3466,6 @@ exports[`Tab Group renders with default styles 1`] = `
 
 .emotion-3:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:disabled {
@@ -3547,12 +3475,10 @@ exports[`Tab Group renders with default styles 1`] = `
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-2 {
@@ -3655,7 +3581,6 @@ exports[`Tab Group renders with default styles 1`] = `
 
 .emotion-8 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-8:hover:not(:disabled) {
@@ -3665,7 +3590,6 @@ exports[`Tab Group renders with default styles 1`] = `
 
 .emotion-8:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:active:not(:disabled) {
@@ -3675,7 +3599,6 @@ exports[`Tab Group renders with default styles 1`] = `
 
 .emotion-8:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:disabled {
@@ -3685,7 +3608,6 @@ exports[`Tab Group renders with default styles 1`] = `
 
 .emotion-8:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div
@@ -3923,7 +3845,6 @@ exports[`Tab Group renders with default styles and divider 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -3933,7 +3854,6 @@ exports[`Tab Group renders with default styles and divider 1`] = `
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -3943,7 +3863,6 @@ exports[`Tab Group renders with default styles and divider 1`] = `
 
 .emotion-3:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:disabled {
@@ -3953,12 +3872,10 @@ exports[`Tab Group renders with default styles and divider 1`] = `
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-2 {
@@ -4061,7 +3978,6 @@ exports[`Tab Group renders with default styles and divider 1`] = `
 
 .emotion-10 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-10:hover:not(:disabled) {
@@ -4071,7 +3987,6 @@ exports[`Tab Group renders with default styles and divider 1`] = `
 
 .emotion-10:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-10:active:not(:disabled) {
@@ -4081,7 +3996,6 @@ exports[`Tab Group renders with default styles and divider 1`] = `
 
 .emotion-10:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-10:disabled {
@@ -4091,7 +4005,6 @@ exports[`Tab Group renders with default styles and divider 1`] = `
 
 .emotion-10:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6 {
@@ -4398,7 +4311,6 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
 
 .emotion-5 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-5:hover:not(:disabled) {
@@ -4408,7 +4320,6 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
 
 .emotion-5:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-5:active:not(:disabled) {
@@ -4418,7 +4329,6 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
 
 .emotion-5:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-5:disabled {
@@ -4428,12 +4338,10 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
 
 .emotion-5:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-5 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-2 {
@@ -4506,7 +4414,6 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
 
 .emotion-12 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-12:hover:not(:disabled) {
@@ -4516,7 +4423,6 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
 
 .emotion-12:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-12:active:not(:disabled) {
@@ -4526,7 +4432,6 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
 
 .emotion-12:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-12:disabled {
@@ -4536,7 +4441,6 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
 
 .emotion-12:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0 {
@@ -4864,7 +4768,6 @@ exports[`Tab Group renders with icons for tabs 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -4874,7 +4777,6 @@ exports[`Tab Group renders with icons for tabs 1`] = `
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -4884,7 +4786,6 @@ exports[`Tab Group renders with icons for tabs 1`] = `
 
 .emotion-3:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:disabled {
@@ -4894,12 +4795,10 @@ exports[`Tab Group renders with icons for tabs 1`] = `
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-8 {
@@ -4945,7 +4844,6 @@ exports[`Tab Group renders with icons for tabs 1`] = `
 
 .emotion-8 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-8:hover:not(:disabled) {
@@ -4955,7 +4853,6 @@ exports[`Tab Group renders with icons for tabs 1`] = `
 
 .emotion-8:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:active:not(:disabled) {
@@ -4965,7 +4862,6 @@ exports[`Tab Group renders with icons for tabs 1`] = `
 
 .emotion-8:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:disabled {
@@ -4975,7 +4871,6 @@ exports[`Tab Group renders with icons for tabs 1`] = `
 
 .emotion-8:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0 {
@@ -5250,7 +5145,6 @@ exports[`Tab Group renders with overrides 1`] = `
 
 .emotion-5 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-5:hover:not(:disabled) {
@@ -5260,7 +5154,6 @@ exports[`Tab Group renders with overrides 1`] = `
 
 .emotion-5:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-5:active:not(:disabled) {
@@ -5270,7 +5163,6 @@ exports[`Tab Group renders with overrides 1`] = `
 
 .emotion-5:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-5:disabled {
@@ -5280,12 +5172,10 @@ exports[`Tab Group renders with overrides 1`] = `
 
 .emotion-5:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-5 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-2 {
@@ -5358,7 +5248,6 @@ exports[`Tab Group renders with overrides 1`] = `
 
 .emotion-12 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-12:hover:not(:disabled) {
@@ -5368,7 +5257,6 @@ exports[`Tab Group renders with overrides 1`] = `
 
 .emotion-12:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-12:active:not(:disabled) {
@@ -5378,7 +5266,6 @@ exports[`Tab Group renders with overrides 1`] = `
 
 .emotion-12:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-12:disabled {
@@ -5388,7 +5275,6 @@ exports[`Tab Group renders with overrides 1`] = `
 
 .emotion-12:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0 {
@@ -5738,7 +5624,6 @@ exports[`Tab Group renders with sizing 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -5748,7 +5633,6 @@ exports[`Tab Group renders with sizing 1`] = `
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -5758,7 +5642,6 @@ exports[`Tab Group renders with sizing 1`] = `
 
 .emotion-3:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:disabled {
@@ -5768,12 +5651,10 @@ exports[`Tab Group renders with sizing 1`] = `
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-0 {
@@ -5846,7 +5727,6 @@ exports[`Tab Group renders with sizing 1`] = `
 
 .emotion-8 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-8:hover:not(:disabled) {
@@ -5856,7 +5736,6 @@ exports[`Tab Group renders with sizing 1`] = `
 
 .emotion-8:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:active:not(:disabled) {
@@ -5866,7 +5745,6 @@ exports[`Tab Group renders with sizing 1`] = `
 
 .emotion-8:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:disabled {
@@ -5876,7 +5754,6 @@ exports[`Tab Group renders with sizing 1`] = `
 
 .emotion-8:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div
@@ -6114,7 +5991,6 @@ exports[`Tab Group sets active on click 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -6124,7 +6000,6 @@ exports[`Tab Group sets active on click 1`] = `
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -6134,7 +6009,6 @@ exports[`Tab Group sets active on click 1`] = `
 
 .emotion-3:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:disabled {
@@ -6144,12 +6018,10 @@ exports[`Tab Group sets active on click 1`] = `
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-2 {
@@ -6252,7 +6124,6 @@ exports[`Tab Group sets active on click 1`] = `
 
 .emotion-8 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-8:hover:not(:disabled) {
@@ -6262,7 +6133,6 @@ exports[`Tab Group sets active on click 1`] = `
 
 .emotion-8:hover:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:active:not(:disabled) {
@@ -6272,7 +6142,6 @@ exports[`Tab Group sets active on click 1`] = `
 
 .emotion-8:active:not(:disabled) svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-8:disabled {
@@ -6282,7 +6151,6 @@ exports[`Tab Group sets active on click 1`] = `
 
 .emotion-8:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div

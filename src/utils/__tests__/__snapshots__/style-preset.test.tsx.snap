@@ -1,6 +1,77 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, and incorrect for md breakpoints 1`] = `
+exports[`getStylePresetFromTheme with default iconButtonMinimalPrimary style preset 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: transparent;
+  color: #0a68c1;
+  border-radius: 50%;
+}
+
+.emotion-0 svg {
+  fill: #0a68c1;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #e6f4ff;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #d5ebff;
+}
+
+.emotion-0:disabled {
+  color: #9c9c9c;
+  background-color: transparent;
+}
+
+.emotion-0:disabled svg {
+  fill: #9c9c9c;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme with disabled and loading state 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FF0000;
+  color: #9c9c9c;
+  border-radius: 50%;
+}
+
+.emotion-0 svg {
+  fill: #9c9c9c;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme with disabled state 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #FF0000;
+  color: #9c9c9c;
+  border-radius: 50%;
+}
+
+.emotion-0 svg {
+  fill: #9c9c9c;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, and incorrect for md breakpoints 1`] = `
 <DocumentFragment>
   @media screen and (max-width:479px) {
   .emotion-0 {
@@ -24,7 +95,7 @@ exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for
 </DocumentFragment>
 `;
 
-exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, and interactive030 for md breakpoints 1`] = `
+exports[`getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, and interactive030 for md breakpoints 1`] = `
 <DocumentFragment>
   @media screen and (max-width:479px) {
   .emotion-0 {
@@ -54,7 +125,7 @@ exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for
 </DocumentFragment>
 `;
 
-exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, interactive030 for md, and interactive040 for lg breakpoints 1`] = `
+exports[`getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, interactive030 for md, and interactive040 for lg breakpoints 1`] = `
 <DocumentFragment>
   @media screen and (max-width:479px) {
   .emotion-0 {
@@ -86,7 +157,7 @@ exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for
 </DocumentFragment>
 `;
 
-exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, interactive030 for md, interactive040 for lg breakpoints and ignore wrong prop 1`] = `
+exports[`getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, interactive030 for md, interactive040 for lg breakpoints and ignore wrong prop 1`] = `
 <DocumentFragment>
   @media screen and (max-width:479px) {
   .emotion-0 {
@@ -118,7 +189,89 @@ exports[`getStylePresetFromTheme getStylePresetFromTheme with interactive010 for
 </DocumentFragment>
 `;
 
-exports[`getStylePresetFromTheme getStylePresetFromTheme with override to interactive040 1`] = `
+exports[`getStylePresetFromTheme with isSvg  1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: transparent;
+  color: #0a68c1;
+  border-radius: 50%;
+  fill: #00ff00;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  fill: #FF0000;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #d5ebff;
+}
+
+.emotion-0:disabled {
+  color: #9c9c9c;
+  background-color: transparent;
+  fill: #9c9c9c;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme with loading and selected state 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #ffff00;
+  color: #0a68c1;
+  border-radius: 50%;
+}
+
+.emotion-0 svg {
+  fill: #0a68c1;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme with loading state 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: #ffff00;
+  color: #0a68c1;
+  border-radius: 50%;
+}
+
+.emotion-0 svg {
+  fill: #0a68c1;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme with no existing style preset key returns empty fragment 1`] = `
+<DocumentFragment>
+  <div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme with no existing style preset state returns empty fragment 1`] = `
+<DocumentFragment>
+  <div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme with override to interactive040 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF00FF;
@@ -130,83 +283,7 @@ exports[`getStylePresetFromTheme getStylePresetFromTheme with override to intera
 </DocumentFragment>
 `;
 
-exports[`getStylePresetFromTheme iconButtonMinimalPrimary with disabled and loading state 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  background-color: #FF0000;
-  color: #9c9c9c;
-  border-radius: 50%;
-}
-
-.emotion-0 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-<div
-    class="emotion-0"
-  />
-</DocumentFragment>
-`;
-
-exports[`getStylePresetFromTheme iconButtonMinimalPrimary with disabled state 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  background-color: #FF0000;
-  color: #9c9c9c;
-  border-radius: 50%;
-}
-
-.emotion-0 svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-<div
-    class="emotion-0"
-  />
-</DocumentFragment>
-`;
-
-exports[`getStylePresetFromTheme iconButtonMinimalPrimary with loading and selected state 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  background-color: #ffff00;
-  color: #0a68c1;
-  border-radius: 50%;
-}
-
-.emotion-0 svg {
-  fill: #0a68c1;
-  color: #0a68c1;
-}
-
-<div
-    class="emotion-0"
-  />
-</DocumentFragment>
-`;
-
-exports[`getStylePresetFromTheme iconButtonMinimalPrimary with loading state 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  background-color: #ffff00;
-  color: #0a68c1;
-  border-radius: 50%;
-}
-
-.emotion-0 svg {
-  fill: #0a68c1;
-  color: #0a68c1;
-}
-
-<div
-    class="emotion-0"
-  />
-</DocumentFragment>
-`;
-
-exports[`getStylePresetFromTheme iconButtonMinimalPrimary with selected state 1`] = `
+exports[`getStylePresetFromTheme with selected state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #00ff00;
@@ -216,117 +293,9 @@ exports[`getStylePresetFromTheme iconButtonMinimalPrimary with selected state 1`
 
 .emotion-0 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 <div
-    class="emotion-0"
-  />
-</DocumentFragment>
-`;
-
-exports[`getStylePresetFromTheme iconButtonMinimalPrimary without background-color styles 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  color: #0a68c1;
-  border-radius: 50%;
-}
-
-.emotion-0 svg {
-  fill: #0a68c1;
-  color: #0a68c1;
-}
-
-.emotion-0:disabled {
-  color: #9c9c9c;
-}
-
-.emotion-0:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-<div
-    class="emotion-0"
-  />
-</DocumentFragment>
-`;
-
-exports[`getStylePresetFromTheme iconButtonMinimalPrimary without disabled state styles 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  background-color: transparent;
-  color: #0a68c1;
-  border-radius: 50%;
-}
-
-.emotion-0 svg {
-  fill: #0a68c1;
-  color: #0a68c1;
-}
-
-.emotion-0:hover:not(:disabled) {
-  background-color: #e6f4ff;
-}
-
-.emotion-0:active:not(:disabled) {
-  background-color: #d5ebff;
-}
-
-<div
-    class="emotion-0"
-  />
-</DocumentFragment>
-`;
-
-exports[`getStylePresetFromTheme with default iconButtonMinimalPrimary style preset 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  background-color: transparent;
-  color: #0a68c1;
-  border-radius: 50%;
-}
-
-.emotion-0 svg {
-  fill: #0a68c1;
-  color: #0a68c1;
-}
-
-.emotion-0:hover:not(:disabled) {
-  background-color: #e6f4ff;
-}
-
-.emotion-0:active:not(:disabled) {
-  background-color: #d5ebff;
-}
-
-.emotion-0:disabled {
-  color: #9c9c9c;
-  background-color: transparent;
-}
-
-.emotion-0:disabled svg {
-  fill: #9c9c9c;
-  color: #9c9c9c;
-}
-
-<div
-    class="emotion-0"
-  />
-</DocumentFragment>
-`;
-
-exports[`getStylePresetFromTheme with not existing style preset key returns empty fragment 1`] = `
-<DocumentFragment>
-  <div
-    class="emotion-0"
-  />
-</DocumentFragment>
-`;
-
-exports[`getStylePresetFromTheme with not existing style preset state returns empty fragment 1`] = `
-<DocumentFragment>
-  <div
     class="emotion-0"
   />
 </DocumentFragment>
@@ -336,6 +305,57 @@ exports[`getStylePresetFromTheme with stateOverwrites without base state fallbac
 <DocumentFragment>
   .emotion-0 {
   background-color: #FFFF00;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme without background-color styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  color: #0a68c1;
+  border-radius: 50%;
+}
+
+.emotion-0 svg {
+  fill: #0a68c1;
+}
+
+.emotion-0:disabled {
+  color: #9c9c9c;
+}
+
+.emotion-0:disabled svg {
+  fill: #9c9c9c;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`getStylePresetFromTheme without disabled state styles 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background-color: transparent;
+  color: #0a68c1;
+  border-radius: 50%;
+}
+
+.emotion-0 svg {
+  fill: #0a68c1;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #e6f4ff;
+}
+
+.emotion-0:active:not(:disabled) {
+  background-color: #d5ebff;
 }
 
 <div

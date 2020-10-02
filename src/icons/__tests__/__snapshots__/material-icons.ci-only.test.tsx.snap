@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Material icons should render icons with no props IconFilledAccountBalance 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+}
+
+<svg
+    aria-hidden="true"
+    class="emotion-0 emotion-1"
+    fill="currentColor"
+    focusable="false"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      fill="none"
+      height="24"
+      width="24"
+    />
+    <rect
+      height="7"
+      width="3"
+      x="4"
+      y="10"
+    />
+    <rect
+      height="7"
+      width="3"
+      x="10.5"
+      y="10"
+    />
+    <rect
+      height="3"
+      width="20"
+      x="2"
+      y="19"
+    />
+    <rect
+      height="7"
+      width="3"
+      x="17"
+      y="10"
+    />
+    <polygon
+      points="12,1 2,6 2,8 22,8 22,6"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Material icons should render icons with no props IconOutlinedAccountTree 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+}
+
+<svg
+    aria-hidden="true"
+    class="emotion-0 emotion-1"
+    fill="currentColor"
+    focusable="false"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+    <path
+      d="M22 11V3h-7v3H9V3H2v8h7V8h2v10h4v3h7v-8h-7v3h-2V8h2v3z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Material icons should render icons with props IconFilledAccountBalance 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #0a0a0a;
+  vertical-align: unset;
+}
+
+.emotion-0.emotion-0 {
+  width: 4px;
+  height: 4px;
+}
+
+<svg
+    class="emotion-0 emotion-1"
+    fill="currentColor"
+    focusable="false"
+    role="img"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      title of the icon
+    </title>
+    <rect
+      fill="none"
+      height="24"
+      width="24"
+    />
+    <rect
+      height="7"
+      width="3"
+      x="4"
+      y="10"
+    />
+    <rect
+      height="7"
+      width="3"
+      x="10.5"
+      y="10"
+    />
+    <rect
+      height="3"
+      width="20"
+      x="2"
+      y="19"
+    />
+    <rect
+      height="7"
+      width="3"
+      x="17"
+      y="10"
+    />
+    <polygon
+      points="12,1 2,6 2,8 22,8 22,6"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Material icons should render icons with props IconOutlinedAccountTree 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #0a0a0a;
+  vertical-align: unset;
+}
+
+.emotion-0.emotion-0 {
+  width: 4px;
+  height: 4px;
+}
+
+<svg
+    class="emotion-0 emotion-1"
+    fill="currentColor"
+    focusable="false"
+    role="img"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      title of the icon
+    </title>
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+    <path
+      d="M22 11V3h-7v3H9V3H2v8h7V8h2v10h4v3h7v-8h-7v3h-2V8h2v3z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Material icons should render yellowCircle instead of the emotion icon  IconFilledAccountBalance 1`] = `
+<DocumentFragment>
+  <svg
+    height="100"
+    width="100"
+  >
+    <circle
+      cx="50"
+      cy="50"
+      fill="yellow"
+      r="40"
+      stroke="green"
+      stroke-width="4"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Material icons should render yellowCircle instead of the emotion icon  IconOutlinedAccountTree 1`] = `
+<DocumentFragment>
+  <svg
+    height="100"
+    width="100"
+  >
+    <circle
+      cx="50"
+      cy="50"
+      fill="yellow"
+      r="40"
+      stroke="green"
+      stroke-width="4"
+    />
+  </svg>
+</DocumentFragment>
+`;

@@ -38,13 +38,11 @@ docs:dev
 
 ## Testing
 
-* `test` -> runs lint and test:unit scripts.
+* `test` -> runs lint and test:unit:dev scripts, ignores ci-only tests.
 
-* `test:ci` -> runs lint and test:unit:ci scripts.
+* `test:unit:run` -> used by other commands to call jest with correct base arguments. Use to generate snapshots for ci-only tests.
 
-* `test:unit` -> runs the unit tests on the number of threads available in the environment.
-
-* `test:unit:ci` -> runs the unit tests on a single thread (needed for build pipeline).
+* `test:unit:ci` -> runs all the unit tests with CircleCI optimised config.
 
 * `test:unit:comps` -> runs the unit tests on the src folder.
 
@@ -76,11 +74,11 @@ docs:dev
 
 * `build:copy-files` -> copies over README to components dist folder.
 
-* `build:package-json` -> builds a package json for component library dist, adding module definitions (dist/esm files).
+* `build:package-json` -> builds a package json for component library dist, adding module definitions.
 
-* `build:ts` -> builds the Typescript components using (default) commonjs module format, into dist/.
+* `build:ts` -> builds the Typescript components using es2015 module format, into dist/.
 
-* `build:ts:esm` -> builds the Typescript components using es2015 module format, into dist/esm/.
+* `build:ts-common-js` -> builds the Typescript components using commonJs module format, into dist/common/.
 
 * `build:storybook` -> builds storybook.
 

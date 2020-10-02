@@ -2,7 +2,7 @@ import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {RadioPlayer, RadioPlayerProps} from '../radio-player';
 import {Flag} from '../../flag';
-import {Circle} from '../../icons/circle';
+import {Circle} from '../../icons/filled/custom/circle';
 
 const CustomFlag = () => (
   <Flag>

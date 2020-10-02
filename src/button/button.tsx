@@ -5,7 +5,7 @@ import {StyledFlag} from './styled';
 import {useTheme, Theme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {as as emotionAs} from '../utils/component';
-import {IndeterminateProgressIndicator} from '../icons/indeterminate-progress-indicator';
+import {IndeterminateProgressIndicator} from '../icons/filled/custom/indeterminate-progress-indicator';
 import {getStylePresetFromTheme} from '../utils/style';
 import {useInstrumentation, EventTrigger} from '../instrumentation';
 

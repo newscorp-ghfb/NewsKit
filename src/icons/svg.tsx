@@ -1,9 +1,9 @@
 import React from 'react';
 import {styled, getColorFromTheme, getSizingFromTheme} from '../utils/style';
-import {StyledSvgProps, SvgProps} from './types';
+import {LegacyStyledSvgProps, LegacySvgProps} from './types';
 import {getSSRId} from '../utils/get-ssr-id';
 
-const SvgElement = styled.svg<StyledSvgProps>`
+const SvgElement = styled.svg<LegacyStyledSvgProps>`
   fill: ${getColorFromTheme('inkBase', '$color')};
   color: ${getColorFromTheme('inkBase', '$color')};
   margin: ${getSizingFromTheme(undefined, 'margin')};
@@ -17,7 +17,12 @@ const SvgElement = styled.svg<StyledSvgProps>`
   }
 `;
 
-export const Svg: React.FC<SvgProps> = ({children, title, color, ...props}) => {
+export const Svg: React.FC<LegacySvgProps> = ({
+  children,
+  title,
+  color,
+  ...props
+}) => {
   const id = getSSRId();
   return (
     <SvgElement

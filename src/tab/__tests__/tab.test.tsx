@@ -1,7 +1,7 @@
 import React from 'react';
 import {Tab, TabProps, TabSize} from '..';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {Circle} from '../../icons/circle';
+import {Circle} from '../../icons/filled/custom/circle';
 import {createTheme, compileTheme} from '../../theme';
 
 const renderTabWithLabel = (props: TabProps) => <Tab {...props}>Tab Label</Tab>;

@@ -111,7 +111,6 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
 
 .emotion-7 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-7:hover:not(:disabled) {
@@ -122,7 +121,6 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-7:active:not(:disabled) {
@@ -131,7 +129,6 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
 
 .emotion-7:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-7:visited:not(:disabled) {
@@ -140,7 +137,6 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
 
 .emotion-7:visited:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -817,7 +813,6 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
 
 .emotion-7 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-7:hover:not(:disabled) {
@@ -828,7 +823,6 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
 
 .emotion-7:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-7:active:not(:disabled) {
@@ -837,7 +831,6 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
 
 .emotion-7:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-7:visited:not(:disabled) {
@@ -846,7 +839,6 @@ exports[`Sidebar navigation on group 1 page by clicking on components menu, grou
 
 .emotion-7:visited:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -1208,7 +1200,6 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
 
 .emotion-4 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-4:hover:not(:disabled) {
@@ -1219,7 +1210,6 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
 
 .emotion-4:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-4:active:not(:disabled) {
@@ -1228,7 +1218,6 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
 
 .emotion-4:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-4:visited:not(:disabled) {
@@ -1237,7 +1226,6 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
 
 .emotion-4:visited:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {

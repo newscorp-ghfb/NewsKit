@@ -16,27 +16,39 @@ export interface GetStylePresetFromThemeOptions {
   isLoading?: boolean;
   isSelected?: boolean;
   isDisabled?: boolean;
+  isSvg?: boolean;
   omitStates?: StylePresetStates[];
   filterStates?: StylePresetStates[];
   omitStyles?: StylePresetStyleKeys[];
   filterStyles?: StylePresetStyleKeys[];
 }
 
+/* When we are not on directly on a svg we need to add an 
+  additional css selector to increase the specificity, allowing
+  us to overrule the default color. Icon button is an example 
+  of this in action */
+const getCssSvgFillObject = (iconColor: string, isSvg: boolean): object =>
+  isSvg
+    ? {fill: iconColor}
+    : {
+        svg: {
+          fill: iconColor,
+        },
+      };
+
 export const getPresetStyles = (
   presetStyles: StylePresetStyles,
   options?: GetStylePresetFromThemeOptions,
 ) => {
-  const {filterStyles = null, omitStyles = []} = options || {};
+  const {filterStyles = null, omitStyles = [], isSvg: isSvg = false} =
+    options || {};
   const {iconColor, placeholderColor, ...cssObject} = filterStyles
     ? filterObject(presetStyles, filterStyles)
     : rejectObject(presetStyles, omitStyles);
   if (iconColor) {
     return {
       ...cssObject,
-      svg: {
-        fill: iconColor,
-        color: iconColor,
-      },
+      ...getCssSvgFillObject(iconColor, isSvg),
     } as CSSObject;
   }
 

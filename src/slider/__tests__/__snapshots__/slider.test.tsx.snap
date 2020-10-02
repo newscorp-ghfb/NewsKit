@@ -435,7 +435,6 @@ exports[`slider labels should render horizontal labels 1`] = `
 
 .emotion-0 svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -444,7 +443,6 @@ exports[`slider labels should render horizontal labels 1`] = `
 
 .emotion-0:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -478,7 +476,6 @@ exports[`slider labels should render horizontal labels 1`] = `
 
 .emotion-1 svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-1:disabled {
@@ -487,7 +484,6 @@ exports[`slider labels should render horizontal labels 1`] = `
 
 .emotion-1:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div
@@ -571,7 +567,6 @@ exports[`slider labels should render max label 1`] = `
 
 .emotion-0 svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -580,7 +575,6 @@ exports[`slider labels should render max label 1`] = `
 
 .emotion-0:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div
@@ -658,7 +652,6 @@ exports[`slider labels should render min label 1`] = `
 
 .emotion-0 svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -667,7 +660,6 @@ exports[`slider labels should render min label 1`] = `
 
 .emotion-0:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div
@@ -744,7 +736,6 @@ exports[`slider labels should render vertical labels 1`] = `
 
 .emotion-0 svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -753,7 +744,6 @@ exports[`slider labels should render vertical labels 1`] = `
 
 .emotion-0:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-1 {
@@ -787,7 +777,6 @@ exports[`slider labels should render vertical labels 1`] = `
 
 .emotion-1 svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-1:disabled {
@@ -796,7 +785,6 @@ exports[`slider labels should render vertical labels 1`] = `
 
 .emotion-1:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div
@@ -847,7 +835,6 @@ exports[`slider react-range Range function props renderThumb should render custo
 
 .emotion-0 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -856,7 +843,6 @@ exports[`slider react-range Range function props renderThumb should render custo
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -865,7 +851,6 @@ exports[`slider react-range Range function props renderThumb should render custo
 
 .emotion-0:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -878,7 +863,6 @@ exports[`slider react-range Range function props renderThumb should render custo
 
 .emotion-0:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div
@@ -917,7 +901,6 @@ exports[`slider react-range Range function props renderThumb should render custo
 
 .emotion-0 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -926,7 +909,6 @@ exports[`slider react-range Range function props renderThumb should render custo
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -935,7 +917,6 @@ exports[`slider react-range Range function props renderThumb should render custo
 
 .emotion-0:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -948,7 +929,6 @@ exports[`slider react-range Range function props renderThumb should render custo
 
 .emotion-0:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div
@@ -1037,7 +1017,6 @@ exports[`slider react-range Range function props renderThumb should render dragg
 
 .emotion-0 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -1046,7 +1025,6 @@ exports[`slider react-range Range function props renderThumb should render dragg
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -1055,7 +1033,6 @@ exports[`slider react-range Range function props renderThumb should render dragg
 
 .emotion-0:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -1068,7 +1045,6 @@ exports[`slider react-range Range function props renderThumb should render dragg
 
 .emotion-0:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div
@@ -1105,7 +1081,6 @@ exports[`slider react-range Range function props renderThumb should render multi
 
 .emotion-0 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -1114,7 +1089,6 @@ exports[`slider react-range Range function props renderThumb should render multi
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -1123,7 +1097,6 @@ exports[`slider react-range Range function props renderThumb should render multi
 
 .emotion-0:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -1136,7 +1109,6 @@ exports[`slider react-range Range function props renderThumb should render multi
 
 .emotion-0:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div
@@ -1173,7 +1145,6 @@ exports[`slider react-range Range function props renderThumb should render range
 
 .emotion-1 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-1:hover:not(:disabled) {
@@ -1182,7 +1153,6 @@ exports[`slider react-range Range function props renderThumb should render range
 
 .emotion-1:hover:not(:disabled) svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-1:active:not(:disabled) {
@@ -1191,7 +1161,6 @@ exports[`slider react-range Range function props renderThumb should render range
 
 .emotion-1:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-1:disabled {
@@ -1204,7 +1173,6 @@ exports[`slider react-range Range function props renderThumb should render range
 
 .emotion-1:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0 {
@@ -1285,7 +1253,6 @@ exports[`slider react-range Range function props renderThumb should render slide
 
 .emotion-1 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-1:hover:not(:disabled) {
@@ -1294,7 +1261,6 @@ exports[`slider react-range Range function props renderThumb should render slide
 
 .emotion-1:hover:not(:disabled) svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-1:active:not(:disabled) {
@@ -1303,7 +1269,6 @@ exports[`slider react-range Range function props renderThumb should render slide
 
 .emotion-1:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-1:disabled {
@@ -1316,7 +1281,6 @@ exports[`slider react-range Range function props renderThumb should render slide
 
 .emotion-1:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0 {
@@ -1374,7 +1338,6 @@ exports[`slider react-range Range function props renderThumb should render undra
 
 .emotion-0 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -1383,7 +1346,6 @@ exports[`slider react-range Range function props renderThumb should render undra
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -1392,7 +1354,6 @@ exports[`slider react-range Range function props renderThumb should render undra
 
 .emotion-0:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -1405,7 +1366,6 @@ exports[`slider react-range Range function props renderThumb should render undra
 
 .emotion-0:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div
@@ -1442,7 +1402,6 @@ exports[`slider react-range Range function props renderThumb should render verti
 
 .emotion-1 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-1:hover:not(:disabled) {
@@ -1451,7 +1410,6 @@ exports[`slider react-range Range function props renderThumb should render verti
 
 .emotion-1:hover:not(:disabled) svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-1:active:not(:disabled) {
@@ -1460,7 +1418,6 @@ exports[`slider react-range Range function props renderThumb should render verti
 
 .emotion-1:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-1:disabled {
@@ -1473,7 +1430,6 @@ exports[`slider react-range Range function props renderThumb should render verti
 
 .emotion-1:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0 {

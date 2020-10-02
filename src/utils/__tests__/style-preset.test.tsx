@@ -1,10 +1,10 @@
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {
-  getPresetStyles,
-  getStylePresetFromTheme,
-  GetStylePresetFromThemeOptions,
   styled,
   MQ,
+  getStylePresetFromTheme,
+  GetStylePresetFromThemeOptions,
+  getPresetStyles,
 } from '../style';
 import {createTheme} from '../../theme';
 
@@ -36,7 +36,7 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('getStylePresetFromTheme with override to interactive040', () => {
+  test('with override to interactive040', () => {
     const fragment = renderToFragmentWithTheme(
       OverridableTestSurface,
       {
@@ -58,7 +58,7 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, and interactive030 for md breakpoints', () => {
+  test('with interactive010 for xs, interactive020 for sm, and interactive030 for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(
       OverridableTestSurface,
       {
@@ -97,7 +97,7 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, and incorrect for md breakpoints', () => {
+  test('with interactive010 for xs, interactive020 for sm, and incorrect for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(
       OverridableTestSurface,
       {
@@ -131,7 +131,7 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, interactive030 for md, and interactive040 for lg breakpoints', () => {
+  test('with interactive010 for xs, interactive020 for sm, interactive030 for md, and interactive040 for lg breakpoints', () => {
     const fragment = renderToFragmentWithTheme(
       OverridableTestSurface,
       {
@@ -173,7 +173,7 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, interactive030 for md, interactive040 for lg breakpoints and ignore wrong prop', () => {
+  test('with interactive010 for xs, interactive020 for sm, interactive030 for md, interactive040 for lg breakpoints and ignore wrong prop', () => {
     const fragment = renderToFragmentWithTheme(
       OverridableTestSurface,
       {
@@ -221,7 +221,7 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('with not existing style preset key returns empty fragment', () => {
+  test('with no existing style preset key returns empty fragment', () => {
     const fragment = renderToFragmentWithTheme(
       OverridableTestSurfaceWithNoDefault,
       {
@@ -243,7 +243,7 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('with not existing style preset state returns empty fragment', () => {
+  test('with no existing style preset state returns empty fragment', () => {
     const fragment = renderToFragmentWithTheme(
       OverridableTestSurfaceWithNoDefault,
       {
@@ -288,7 +288,7 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('iconButtonMinimalPrimary with disabled state', () => {
+  test('with disabled state', () => {
     const fragment = renderToFragmentWithTheme(
       TestSurface,
       {
@@ -310,7 +310,7 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('iconButtonMinimalPrimary with loading state', () => {
+  test('with loading state', () => {
     const fragment = renderToFragmentWithTheme(
       TestSurface,
       {
@@ -332,7 +332,7 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('iconButtonMinimalPrimary with selected state', () => {
+  test('with selected state', () => {
     const fragment = renderToFragmentWithTheme(
       TestSurface,
       {
@@ -354,7 +354,7 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('iconButtonMinimalPrimary with loading and selected state', () => {
+  test('with loading and selected state', () => {
     const fragment = renderToFragmentWithTheme(
       TestSurface,
       {
@@ -380,7 +380,7 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('iconButtonMinimalPrimary with disabled and loading state', () => {
+  test('with disabled and loading state', () => {
     const fragment = renderToFragmentWithTheme(
       TestSurface,
       {
@@ -406,14 +406,39 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('iconButtonMinimalPrimary without background-color styles', () => {
+  test('with isSvg ', () => {
+    const fragment = renderToFragmentWithTheme(
+      TestSurface,
+      {
+        isSvg: true,
+      },
+      createTheme({
+        name: 'test-style-preset',
+        overrides: {
+          stylePresets: {
+            iconButtonMinimalPrimary: {
+              base: {
+                iconColor: '#00ff00',
+              },
+              hover: {
+                iconColor: '#FF0000',
+              },
+            },
+          },
+        },
+      }),
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('without background-color styles', () => {
     const fragment = renderToFragmentWithTheme(TestSurface, {
       omitStyles: ['backgroundColor'],
     });
     expect(fragment).toMatchSnapshot();
   });
 
-  test('iconButtonMinimalPrimary without disabled state styles', () => {
+  test('without disabled state styles', () => {
     const fragment = renderToFragmentWithTheme(TestSurface, {
       omitStates: ['disabled'],
     });

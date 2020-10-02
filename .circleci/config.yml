@@ -54,7 +54,12 @@ executors:
 
   node:
     docker:
-      - image: circleci/node:10.16
+      - image: circleci/node:12
+  
+  node-large:
+    docker:
+      - image: circleci/node:12
+    resource_class: large
 
   cypress:
     docker:
@@ -322,7 +327,47 @@ jobs:
       - slack/status:
           <<: *slack_status
 
-  test_unit:
+  test_unit_comps:
+    working_directory: ~/project
+    executor: node-large
+    steps:
+      - checkout
+      - skip_if_infra_only_pr
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Unit Testing
+          command: make unit_test_comps
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
+      - store_test_results:
+          path: ./reports/junit/
+      - store_artifacts:
+          path: ./reports/junit
+      - slack/status:
+          <<: *slack_status
+
+  test_unit_docs:
+    working_directory: ~/project
+    executor: node-large
+    steps:
+      - checkout
+      - skip_if_infra_only_pr
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Unit Testing
+          command: make unit_test_docs
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
+      - store_test_results:
+          path: ./reports/junit/
+      - store_artifacts:
+          path: ./reports/junit
+      - slack/status:
+          <<: *slack_status
+
+  lint:
     working_directory: ~/project
     executor: node
     steps:
@@ -331,10 +376,8 @@ jobs:
       - attach_workspace:
           at: ~/project
       - run:
-          name: Unit Testing
-          command: make unit_test
-      - store_test_results:
-          path: unit-test-results
+          name: Lint
+          command: make lint
       - slack/status:
           <<: *slack_status
 
@@ -423,7 +466,7 @@ jobs:
 
   test_visual_comps:
     working_directory: ~/project
-    executor: node
+    executor: node-large
     steps:
       - checkout
       - attach_workspace:
@@ -866,7 +909,13 @@ workflows:
       - build_test_e2e:
           <<: *ignore_trigger_release
           <<: *require_dep
-      - test_unit:
+      - lint:
+          <<: *ignore_trigger_release
+          <<: *require_dep
+      - test_unit_comps:
+          <<: *ignore_trigger_release
+          <<: *require_dep
+      - test_unit_docs:
           <<: *ignore_trigger_release
           <<: *require_dep
       - test_e2e_comps:
@@ -939,7 +988,9 @@ workflows:
           context: ncu-product-platforms-context
           publish_dev: true
           requires:
-            - test_unit
+            - lint
+            - test_unit_comps
+            - test_unit_docs
             - test_e2e_comps
             - test_e2e_docs
             - approve_publish_npm_dev
@@ -949,7 +1000,9 @@ workflows:
           <<: *only_develop
           requires:
             - build_storybook
-            - test_unit
+            - lint
+            - test_unit_comps
+            - test_unit_docs
             - test_e2e_comps
             - test_e2e_docs
       - eks_flux_deploy:
@@ -1001,7 +1054,9 @@ workflows:
           <<: *only_release
           requires:
             - build_storybook
-            - test_unit
+            - lint
+            - test_unit_comps
+            - test_unit_docs
             - test_e2e_comps
             - test_e2e_docs
       - eks_flux_deploy:
@@ -1047,7 +1102,9 @@ workflows:
           context: ncu-product-platforms-context
           <<: *only_master
           requires:
-            - test_unit
+            - lint
+            - test_unit_comps
+            - test_unit_docs
             - test_e2e_comps
             - test_e2e_docs
       - eks_flux_deploy:

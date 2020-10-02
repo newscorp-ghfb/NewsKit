@@ -19,6 +19,12 @@ cy.checkA11y();
 
 Any accessibility violations will be reported on the Cypress test runner.
 
+To run the e2e tests locally:
+
+build and serve with `yarn e2e:build; yarn e2e:serve`
+
+whilst the server is running, run tests with either `yarn e2e:comps` or `yarn e2e:docs`
+
 ## [Manual Checks in PR](#manual-checks)
 
 Please use the guidelines below to verify that your PR does not introduce new issues when merged.

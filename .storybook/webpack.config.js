@@ -1,5 +1,5 @@
 const path = require('path');
-
+ 
 module.exports = {
   optimization: {
     minimize: false,
@@ -12,12 +12,18 @@ module.exports = {
       {
         test: /\.tsx?$/,
         loader: 'ts-loader',
+        exclude: [
+          /src\/icons\/(filled|outlined)\/material\/\.*/
+        ]
       },
       {
         test: /\.js$/,
         enforce: 'pre',
         loader: 'import-glob',
         include: [path.resolve(__dirname)],
+        exclude: [
+          /src\/icons\/(filled|outlined)\/material\/\.*/
+        ]
       },
       {
         test: /\.(png|jpe?g|gif)$/,

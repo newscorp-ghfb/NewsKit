@@ -2,7 +2,7 @@ import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {IconButton} from '..';
 import {ButtonProps, ButtonSize} from '../../button';
-import {Email} from '../../icons/email';
+import {Email} from '../../icons/filled/custom/email';
 import {ColorKeys} from '../../theme';
 
 const renderIconButton = (props: ButtonProps) => (

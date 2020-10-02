@@ -34,7 +34,6 @@ exports[`Headings renders H1 correctly with overrides 1`] = `
 
 .emotion-0 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -43,7 +42,6 @@ exports[`Headings renders H1 correctly with overrides 1`] = `
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -52,7 +50,6 @@ exports[`Headings renders H1 correctly with overrides 1`] = `
 
 .emotion-0:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -61,7 +58,6 @@ exports[`Headings renders H1 correctly with overrides 1`] = `
 
 .emotion-0:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 <h1
@@ -209,7 +205,6 @@ exports[`Headings renders H2 correctly with overrides 1`] = `
 
 .emotion-0 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -218,7 +213,6 @@ exports[`Headings renders H2 correctly with overrides 1`] = `
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -227,7 +221,6 @@ exports[`Headings renders H2 correctly with overrides 1`] = `
 
 .emotion-0:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -236,7 +229,6 @@ exports[`Headings renders H2 correctly with overrides 1`] = `
 
 .emotion-0:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 <h2
@@ -355,7 +347,6 @@ exports[`Headings renders H3 correctly with overrides 1`] = `
 
 .emotion-0 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -364,7 +355,6 @@ exports[`Headings renders H3 correctly with overrides 1`] = `
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -373,7 +363,6 @@ exports[`Headings renders H3 correctly with overrides 1`] = `
 
 .emotion-0:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -382,7 +371,6 @@ exports[`Headings renders H3 correctly with overrides 1`] = `
 
 .emotion-0:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 <h3
@@ -501,7 +489,6 @@ exports[`Headings renders H4 correctly with overrides 1`] = `
 
 .emotion-0 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -510,7 +497,6 @@ exports[`Headings renders H4 correctly with overrides 1`] = `
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -519,7 +505,6 @@ exports[`Headings renders H4 correctly with overrides 1`] = `
 
 .emotion-0:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -528,7 +513,6 @@ exports[`Headings renders H4 correctly with overrides 1`] = `
 
 .emotion-0:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 <h4
@@ -647,7 +631,6 @@ exports[`Headings renders H5 correctly with overrides 1`] = `
 
 .emotion-0 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -656,7 +639,6 @@ exports[`Headings renders H5 correctly with overrides 1`] = `
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -665,7 +647,6 @@ exports[`Headings renders H5 correctly with overrides 1`] = `
 
 .emotion-0:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -674,7 +655,6 @@ exports[`Headings renders H5 correctly with overrides 1`] = `
 
 .emotion-0:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 <h5
@@ -759,7 +739,6 @@ exports[`Headings renders H6 correctly with overrides 1`] = `
 
 .emotion-0 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -768,7 +747,6 @@ exports[`Headings renders H6 correctly with overrides 1`] = `
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -777,7 +755,6 @@ exports[`Headings renders H6 correctly with overrides 1`] = `
 
 .emotion-0:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -786,7 +763,6 @@ exports[`Headings renders H6 correctly with overrides 1`] = `
 
 .emotion-0:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 <h6
@@ -871,7 +847,6 @@ exports[`Headings renders Heading1 correctly with overrides 1`] = `
 
 .emotion-0 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -880,7 +855,6 @@ exports[`Headings renders Heading1 correctly with overrides 1`] = `
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -889,7 +863,6 @@ exports[`Headings renders Heading1 correctly with overrides 1`] = `
 
 .emotion-0:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -898,7 +871,6 @@ exports[`Headings renders Heading1 correctly with overrides 1`] = `
 
 .emotion-0:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 <h1
@@ -1046,7 +1018,6 @@ exports[`Headings renders Heading2 correctly with overrides 1`] = `
 
 .emotion-0 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -1055,7 +1026,6 @@ exports[`Headings renders Heading2 correctly with overrides 1`] = `
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -1064,7 +1034,6 @@ exports[`Headings renders Heading2 correctly with overrides 1`] = `
 
 .emotion-0:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -1073,7 +1042,6 @@ exports[`Headings renders Heading2 correctly with overrides 1`] = `
 
 .emotion-0:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 <h2
@@ -1192,7 +1160,6 @@ exports[`Headings renders Heading3 correctly with overrides 1`] = `
 
 .emotion-0 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -1201,7 +1168,6 @@ exports[`Headings renders Heading3 correctly with overrides 1`] = `
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -1210,7 +1176,6 @@ exports[`Headings renders Heading3 correctly with overrides 1`] = `
 
 .emotion-0:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -1219,7 +1184,6 @@ exports[`Headings renders Heading3 correctly with overrides 1`] = `
 
 .emotion-0:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 <h3
@@ -1338,7 +1302,6 @@ exports[`Headings renders Heading4 correctly with overrides 1`] = `
 
 .emotion-0 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -1347,7 +1310,6 @@ exports[`Headings renders Heading4 correctly with overrides 1`] = `
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -1356,7 +1318,6 @@ exports[`Headings renders Heading4 correctly with overrides 1`] = `
 
 .emotion-0:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -1365,7 +1326,6 @@ exports[`Headings renders Heading4 correctly with overrides 1`] = `
 
 .emotion-0:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 <h4
@@ -1484,7 +1444,6 @@ exports[`Headings renders Heading5 correctly with overrides 1`] = `
 
 .emotion-0 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -1493,7 +1452,6 @@ exports[`Headings renders Heading5 correctly with overrides 1`] = `
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -1502,7 +1460,6 @@ exports[`Headings renders Heading5 correctly with overrides 1`] = `
 
 .emotion-0:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -1511,7 +1468,6 @@ exports[`Headings renders Heading5 correctly with overrides 1`] = `
 
 .emotion-0:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 <h5
@@ -1596,7 +1552,6 @@ exports[`Headings renders Heading6 correctly with overrides 1`] = `
 
 .emotion-0 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -1605,7 +1560,6 @@ exports[`Headings renders Heading6 correctly with overrides 1`] = `
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -1614,7 +1568,6 @@ exports[`Headings renders Heading6 correctly with overrides 1`] = `
 
 .emotion-0:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -1623,7 +1576,6 @@ exports[`Headings renders Heading6 correctly with overrides 1`] = `
 
 .emotion-0:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 <h6

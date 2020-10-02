@@ -80,7 +80,6 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -314,7 +313,6 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -577,7 +575,6 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {

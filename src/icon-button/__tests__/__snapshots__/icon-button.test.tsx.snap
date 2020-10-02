@@ -88,7 +88,6 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
 
 .emotion-3 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-0 {
@@ -216,7 +215,6 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
 
 .emotion-3 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -234,7 +232,6 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -402,7 +399,6 @@ exports[`IconButton renders Large Icon Button 1`] = `
 
 .emotion-3 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -420,7 +416,6 @@ exports[`IconButton renders Large Icon Button 1`] = `
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div
@@ -552,7 +547,6 @@ exports[`IconButton renders Medium Icon Button 1`] = `
 
 .emotion-3 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -570,7 +564,6 @@ exports[`IconButton renders Medium Icon Button 1`] = `
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div
@@ -666,7 +659,6 @@ exports[`IconButton renders Small Icon Button 1`] = `
 
 .emotion-3 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -684,7 +676,6 @@ exports[`IconButton renders Small Icon Button 1`] = `
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -816,7 +807,6 @@ exports[`IconButton renders when there is an icon with a colour 1`] = `
 
 .emotion-3 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -834,7 +824,6 @@ exports[`IconButton renders when there is an icon with a colour 1`] = `
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -1005,7 +994,6 @@ exports[`IconButton renders with different style preset 1`] = `
 
 .emotion-3 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1025,7 +1013,6 @@ exports[`IconButton renders with different style preset 1`] = `
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div

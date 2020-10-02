@@ -35,8 +35,14 @@ build_storybook:
 build_docs:
 	yarn build:docs
 
-unit_test:
-	yarn test:ci
+unit_test_docs:
+	yarn test:unit:ci --projects=site
+
+unit_test_comps:
+	yarn test:unit:ci --projects=src
+
+lint:
+	yarn lint
 
 comps_visual_test:
 	yarn test:visual:comps:ci

@@ -250,7 +250,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-23 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-23:hover:not(:disabled) {
@@ -261,7 +260,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-23:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-23:active:not(:disabled) {
@@ -270,7 +268,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-23:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-23:visited:not(:disabled) {
@@ -279,7 +276,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-23:visited:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -869,7 +865,6 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-23 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-23:hover:not(:disabled) {
@@ -880,7 +875,6 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-23:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-23:active:not(:disabled) {
@@ -889,7 +883,6 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-23:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-23:visited:not(:disabled) {
@@ -898,7 +891,6 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-23:visited:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {

@@ -116,7 +116,6 @@ exports[`UnorderedList renders different types of children 1`] = `
 
 .emotion-11 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-11:hover:not(:disabled) {
@@ -125,7 +124,6 @@ exports[`UnorderedList renders different types of children 1`] = `
 
 .emotion-11:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-11:active:not(:disabled) {
@@ -134,7 +132,6 @@ exports[`UnorderedList renders different types of children 1`] = `
 
 .emotion-11:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-11:visited:not(:disabled) {
@@ -143,7 +140,6 @@ exports[`UnorderedList renders different types of children 1`] = `
 
 .emotion-11:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -337,7 +333,6 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
 
 .emotion-1 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-1 svg,
@@ -570,7 +565,6 @@ exports[`UnorderedList renders with custom list item marker with different size 
 
 .emotion-1 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-1 svg,

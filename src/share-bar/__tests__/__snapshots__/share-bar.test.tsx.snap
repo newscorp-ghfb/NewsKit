@@ -286,7 +286,6 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
 
 .emotion-3 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -295,7 +294,6 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -304,7 +302,6 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
 
 .emotion-3:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:visited:not(:disabled) {
@@ -313,7 +310,6 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
 
 .emotion-3:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -1014,7 +1010,6 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 
 .emotion-3 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1023,7 +1018,6 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1032,7 +1026,6 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 
 .emotion-3:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:visited:not(:disabled) {
@@ -1041,7 +1034,6 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 
 .emotion-3:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -1123,7 +1115,6 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 
 .emotion-12 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-12:hover:not(:disabled) {
@@ -1141,7 +1132,6 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 
 .emotion-12:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-11 {
@@ -1399,7 +1389,6 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 
 .emotion-3 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1408,7 +1397,6 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1417,7 +1405,6 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 
 .emotion-3:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:visited:not(:disabled) {
@@ -1426,7 +1413,6 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 
 .emotion-3:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -1508,7 +1494,6 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 
 .emotion-12 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-12:hover:not(:disabled) {
@@ -1526,7 +1511,6 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 
 .emotion-12:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-11 {
@@ -1610,7 +1594,6 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 
 .emotion-0 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -1628,7 +1611,6 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 
 .emotion-0:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div
@@ -1838,7 +1820,6 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 
 .emotion-3 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1847,7 +1828,6 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -1856,7 +1836,6 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 
 .emotion-3:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:visited:not(:disabled) {
@@ -1865,7 +1844,6 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 
 .emotion-3:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -1947,7 +1925,6 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 
 .emotion-12 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-12:hover:not(:disabled) {
@@ -1965,7 +1942,6 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 
 .emotion-12:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-11 {
@@ -2252,7 +2228,6 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 
 .emotion-3 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2261,7 +2236,6 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2270,7 +2244,6 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 
 .emotion-3:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:visited:not(:disabled) {
@@ -2279,7 +2252,6 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 
 .emotion-3:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -2361,7 +2333,6 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 
 .emotion-12 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-12:hover:not(:disabled) {
@@ -2379,7 +2350,6 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 
 .emotion-12:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-11 {
@@ -2727,7 +2697,6 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 
 .emotion-3 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2736,7 +2705,6 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -2745,7 +2713,6 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 
 .emotion-3:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:visited:not(:disabled) {
@@ -2754,7 +2721,6 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 
 .emotion-3:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -2836,7 +2802,6 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 
 .emotion-12 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-12:hover:not(:disabled) {
@@ -2854,7 +2819,6 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 
 .emotion-12:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-11 {
@@ -3184,7 +3148,6 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 
 .emotion-3 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -3193,7 +3156,6 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -3202,7 +3164,6 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 
 .emotion-3:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:visited:not(:disabled) {
@@ -3211,7 +3172,6 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 
 .emotion-3:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -3293,7 +3253,6 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 
 .emotion-12 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-12:hover:not(:disabled) {
@@ -3311,7 +3270,6 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 
 .emotion-12:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-11 {
@@ -3578,7 +3536,6 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 
 .emotion-3 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -3587,7 +3544,6 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 
 .emotion-3:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:active:not(:disabled) {
@@ -3596,7 +3552,6 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 
 .emotion-3:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-3:visited:not(:disabled) {
@@ -3605,7 +3560,6 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 
 .emotion-3:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -3687,7 +3641,6 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 
 .emotion-12 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-12:hover:not(:disabled) {
@@ -3705,7 +3658,6 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 
 .emotion-12:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-11 {

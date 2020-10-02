@@ -522,4 +522,7 @@ export const componentDefaults = {
       size: 'small',
     },
   },
+  icons: {
+    stylePreset: 'iconDefault',
+  },
 };

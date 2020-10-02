@@ -104,7 +104,6 @@ exports[`Flag renders a flag with a custom stylePreset 1`] = `
 
 .emotion-3 svg {
   fill: #471e79;
-  color: #471e79;
 }
 
 <div
@@ -179,7 +178,6 @@ exports[`Flag renders a flag with a custom typographyPreset 1`] = `
 
 .emotion-3 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-2 {
@@ -379,7 +377,6 @@ exports[`Flag renders a flag with an icon and custom iconSize 1`] = `
 
 .emotion-5 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 <div
@@ -472,7 +469,6 @@ exports[`Flag renders a flag with an icon and custom spacing between elements 1`
 
 .emotion-5 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-2 {
@@ -691,7 +687,6 @@ exports[`Flag renders a flag with fixed for minWidth and minHeight 1`] = `
 
 .emotion-3 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 <div
@@ -826,7 +821,6 @@ exports[`Flag renders a flag with fixed for width and height 1`] = `
 
 .emotion-3 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 <div
@@ -958,7 +952,6 @@ exports[`Flag renders a flag with no paddings 1`] = `
 
 .emotion-3 svg {
   fill: #471e79;
-  color: #471e79;
 }
 
 <div
@@ -1091,7 +1084,6 @@ exports[`Flag renders a flag with percentage for minWidth and minHeight 1`] = `
 
 .emotion-3 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 <div
@@ -1226,7 +1218,6 @@ exports[`Flag renders a flag with percentage for width and height 1`] = `
 
 .emotion-3 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 <div
@@ -1359,7 +1350,6 @@ exports[`Flag renders a flag with token set for minWidth and minHeight 1`] = `
 
 .emotion-3 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 <div
@@ -1494,7 +1484,6 @@ exports[`Flag renders a flag with token set for width and height 1`] = `
 
 .emotion-3 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 <div
@@ -1626,7 +1615,6 @@ exports[`Flag renders a minimal flag with an icon 1`] = `
 
 .emotion-5 svg {
   fill: #471e79;
-  color: #471e79;
 }
 
 .emotion-0 {
@@ -1730,7 +1718,6 @@ exports[`Flag renders a solid flag with an icon 1`] = `
 
 .emotion-5 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-4 {
@@ -1921,7 +1908,6 @@ exports[`Flag renders with Large size 1`] = `
 
 .emotion-3 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-0 {
@@ -2023,7 +2009,6 @@ exports[`Flag renders with Small size 1`] = `
 
 .emotion-3 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-2 {
@@ -2155,7 +2140,6 @@ exports[`Flag renders with default stylePreset if supplied with invalid value 1`
 
 .emotion-3 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-2 {
@@ -2287,7 +2271,6 @@ exports[`Flag renders with default styles 1`] = `
 
 .emotion-3 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-2 {

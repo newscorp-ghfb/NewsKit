@@ -1,7 +1,7 @@
 import {FloatProperty} from 'csstype';
-import {IconSizeKeys, ColorKeys} from '../theme';
+import {IconSizeKeys, ColorKeys, StylePresetKeys} from '../theme';
 
-export interface StyledSvgProps {
+export interface LegacyStyledSvgProps {
   $color?: ColorKeys | string;
   float?: FloatProperty;
   margin?: IconSizeKeys;
@@ -10,9 +10,17 @@ export interface StyledSvgProps {
   title?: string;
 }
 
-export interface SvgProps extends Omit<StyledSvgProps, '$color'> {
+export interface LegacySvgProps extends Omit<LegacyStyledSvgProps, '$color'> {
   color?: ColorKeys | string;
   focusable?: string;
 }
 
-export type ColoredSvgProps = Omit<SvgProps, 'color'>;
+export type LegacyColoredSvgProps = Omit<LegacySvgProps, 'color'>;
+
+export interface SvgProps extends React.SVGAttributes<SVGElement> {
+  title?: string;
+  overrides?: {
+    stylePreset?: StylePresetKeys;
+    size?: IconSizeKeys;
+  };
+}

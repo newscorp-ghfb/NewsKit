@@ -65,7 +65,6 @@ exports[`Block with props renders with spaceStack020 1`] = `
 
 .emotion-0 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 <div

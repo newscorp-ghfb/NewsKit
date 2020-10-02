@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Flag, FlagSize} from '..';
 import {styled} from '../../utils/style';
-import {Email, Bookmark, VolumeMute} from '../../icons';
+import {Email, Bookmark, IconFilledVolumeOff} from '../../icons';
 import {Stack} from '../../stack';
 
 const Block = styled.div`
@@ -197,7 +197,7 @@ export default {
                   spaceInset: 'spaceInset000Squish',
                 }}
               >
-                <VolumeMute />
+                <IconFilledVolumeOff />
                 Text
               </Flag>
             </Stack>

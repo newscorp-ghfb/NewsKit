@@ -17,7 +17,6 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 
 .emotion-2 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -28,7 +27,6 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 
 .emotion-2:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-2:active:not(:disabled) {
@@ -37,7 +35,6 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 
 .emotion-2:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-2:visited:not(:disabled) {
@@ -46,7 +43,6 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 
 .emotion-2:visited:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -116,7 +112,6 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 
 .emotion-2 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -127,7 +122,6 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 
 .emotion-2:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-2:active:not(:disabled) {
@@ -136,7 +130,6 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 
 .emotion-2:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-2:visited:not(:disabled) {
@@ -145,7 +138,6 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 
 .emotion-2:visited:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -239,7 +231,6 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
 
 .emotion-2 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -250,7 +241,6 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
 
 .emotion-2:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-2:active:not(:disabled) {
@@ -259,7 +249,6 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
 
 .emotion-2:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-2:visited:not(:disabled) {
@@ -268,7 +257,6 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
 
 .emotion-2:visited:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {

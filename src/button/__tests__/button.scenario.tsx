@@ -3,7 +3,7 @@ import * as React from 'react';
 import {Button} from '..';
 import {styled} from '../../utils/style';
 import {ButtonSize} from '../types';
-import {Pause, Email, CopyLink} from '../../icons';
+import {Pause, Email, IconFilledLink} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
@@ -391,7 +391,7 @@ export default {
         <React.Fragment>
           <h2>Button with leading icon</h2>
           <Container>
-            {[Pause, Email, CopyLink].map(IconType => (
+            {[Pause, Email, IconFilledLink].map(IconType => (
               <Spacer>
                 <Stack flow="horizontal-center" spaceInline="sizing060">
                   {buttonSizes.map(button => (
@@ -414,7 +414,7 @@ export default {
         <React.Fragment>
           <h2>Button with trailing icon</h2>
           <Container>
-            {[Pause, Email, CopyLink].map(IconType => (
+            {[Pause, Email, IconFilledLink].map(IconType => (
               <Spacer>
                 <Stack flow="horizontal-center" spaceInline="sizing060">
                   {buttonSizes.map(button => (
@@ -437,13 +437,17 @@ export default {
         <React.Fragment>
           <h2>Button with icon and inline overridden default size</h2>
           <Container>
-            {[Pause, Email, CopyLink].map(IconType => (
+            {[Pause, Email, IconFilledLink].map(IconType => (
               <Spacer>
                 <Stack flow="horizontal-center" spaceInline="sizing060">
                   <Button size={buttonSizes[0].buttonSize}>
                     <IconType />
                     Button
-                    <IconType size={buttonSizes[0].iconSize} />
+                    {/* size to be removed as part of PPDSC-1341 */}
+                    <IconType
+                      size={buttonSizes[0].iconSize}
+                      overrides={{size: buttonSizes[0].iconSize}}
+                    />
                   </Button>
                 </Stack>
               </Spacer>
@@ -459,7 +463,7 @@ export default {
         <React.Fragment>
           <h2>Button with icon and inline overridden size from overrides</h2>
           <Container>
-            {[Pause, Email, CopyLink].map(IconType => (
+            {[Pause, Email, IconFilledLink].map(IconType => (
               <Spacer>
                 <Stack flow="horizontal-center" spaceInline="sizing060">
                   <Button
@@ -468,7 +472,11 @@ export default {
                   >
                     <IconType />
                     Button
-                    <IconType size={buttonSizes[0].iconSize} />
+                    {/* size to be removed as part of PPDSC-1341 */}
+                    <IconType
+                      size={buttonSizes[0].iconSize}
+                      overrides={{size: buttonSizes[0].iconSize}}
+                    />
                   </Button>
                 </Stack>
               </Spacer>

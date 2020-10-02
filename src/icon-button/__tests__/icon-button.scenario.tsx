@@ -3,7 +3,7 @@ import * as React from 'react';
 import {ButtonSize} from '../../button';
 import {IconButton} from '..';
 import {styled} from '../../utils/style';
-import {Pause, Email, CopyLink} from '../../icons';
+import {Pause, Email, IconFilledLink} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
@@ -133,7 +133,7 @@ export default {
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                       >
-                        <CopyLink />
+                        <IconFilledLink />
                       </IconButton>
                     </Block>
 
@@ -207,7 +207,7 @@ export default {
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                       >
-                        <CopyLink />
+                        <IconFilledLink />
                       </IconButton>
                     </Block>
 
@@ -281,7 +281,7 @@ export default {
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                       >
-                        <CopyLink />
+                        <IconFilledLink />
                       </IconButton>
                     </Block>
 
@@ -355,7 +355,7 @@ export default {
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                       >
-                        <CopyLink />
+                        <IconFilledLink />
                       </IconButton>
                     </Block>
 

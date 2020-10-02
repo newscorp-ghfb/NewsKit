@@ -51,7 +51,6 @@ exports[`Tag href renders as an anchor 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -253,7 +252,6 @@ exports[`Tag href renders in disable state as a div 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -341,7 +339,6 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -485,7 +482,6 @@ exports[`Tag renders a tag with a custom typographyPreset 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -629,7 +625,6 @@ exports[`Tag renders a tag with an icon 1`] = `
 
 .emotion-5 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-5:hover:not(:disabled) {
@@ -870,7 +865,6 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
 
 .emotion-5 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-5:hover:not(:disabled) {
@@ -975,7 +969,6 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
 
 .emotion-5 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-5:hover:not(:disabled) {
@@ -1206,7 +1199,6 @@ exports[`Tag renders a tag with fixed for minWidth and minHeight 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1353,7 +1345,6 @@ exports[`Tag renders a tag with fixed for width and height 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1497,7 +1488,6 @@ exports[`Tag renders a tag with no paddings 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1642,7 +1632,6 @@ exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1789,7 +1778,6 @@ exports[`Tag renders a tag with percentage for width and height 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1934,7 +1922,6 @@ exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2081,7 +2068,6 @@ exports[`Tag renders a tag with token set for width and height 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2225,7 +2211,6 @@ exports[`Tag renders in disabled state 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2370,7 +2355,6 @@ exports[`Tag renders with Large size 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2457,7 +2441,6 @@ exports[`Tag renders with Medium size 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2631,7 +2614,6 @@ exports[`Tag renders with Small size 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2745,7 +2727,6 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2889,7 +2870,6 @@ exports[`Tag renders with default styles 1`] = `
 
 .emotion-3 svg {
   fill: #2e2e2e;
-  color: #2e2e2e;
 }
 
 .emotion-3:hover:not(:disabled) {

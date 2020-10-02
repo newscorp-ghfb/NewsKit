@@ -58,7 +58,6 @@ exports[`PopoutButton renders correctly with default props 1`] = `
 
 .emotion-3 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -76,7 +75,6 @@ exports[`PopoutButton renders correctly with default props 1`] = `
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-2 {

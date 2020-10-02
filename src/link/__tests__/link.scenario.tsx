@@ -2,7 +2,7 @@ import * as React from 'react';
 import {Link, LinkStandalone} from '..';
 import {styled} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
-import {Email} from '../../icons/email';
+import {Email} from '../../icons/filled/custom/email';
 
 const Container = styled.div`
   max-width: 600px;

@@ -589,7 +589,6 @@ exports[`Radio Player default player 1`] = `
 
 .emotion-21 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-20 {
@@ -721,7 +720,6 @@ exports[`Radio Player default player 1`] = `
 
 .emotion-27 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-27:hover:not(:disabled) {
@@ -739,7 +737,6 @@ exports[`Radio Player default player 1`] = `
 
 .emotion-27:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-24 {
@@ -803,7 +800,6 @@ exports[`Radio Player default player 1`] = `
 
 .emotion-39 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-43 {
@@ -995,7 +991,6 @@ exports[`Radio Player default player 1`] = `
 
 .emotion-50 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-50:hover:not(:disabled) {
@@ -1013,7 +1008,6 @@ exports[`Radio Player default player 1`] = `
 
 .emotion-50:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-54 {
@@ -1056,7 +1050,6 @@ exports[`Radio Player default player 1`] = `
 
 .emotion-53 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-53:hover:not(:disabled) {
@@ -1069,7 +1062,6 @@ exports[`Radio Player default player 1`] = `
 
 .emotion-53:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-60 {
@@ -2405,7 +2397,6 @@ exports[`Radio Player live player 1`] = `
 
 .emotion-55 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-54 {
@@ -2688,7 +2679,6 @@ exports[`Radio Player live player 1`] = `
 
 .emotion-72 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-72:hover:not(:disabled) {
@@ -2706,7 +2696,6 @@ exports[`Radio Player live player 1`] = `
 
 .emotion-72:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-76 {
@@ -2749,7 +2738,6 @@ exports[`Radio Player live player 1`] = `
 
 .emotion-75 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-75:hover:not(:disabled) {
@@ -2762,7 +2750,6 @@ exports[`Radio Player live player 1`] = `
 
 .emotion-75:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-82 {
@@ -2909,7 +2896,6 @@ exports[`Radio Player live player 1`] = `
 
 .emotion-11 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 .emotion-10 {
@@ -4442,7 +4428,6 @@ exports[`Radio Player player with popout link 1`] = `
 
 .emotion-43 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-42 {
@@ -4574,7 +4559,6 @@ exports[`Radio Player player with popout link 1`] = `
 
 .emotion-49 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-49:hover:not(:disabled) {
@@ -4592,7 +4576,6 @@ exports[`Radio Player player with popout link 1`] = `
 
 .emotion-49:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-46 {
@@ -4656,7 +4639,6 @@ exports[`Radio Player player with popout link 1`] = `
 
 .emotion-61 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-65 {
@@ -4848,7 +4830,6 @@ exports[`Radio Player player with popout link 1`] = `
 
 .emotion-72 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-72:hover:not(:disabled) {
@@ -4866,7 +4847,6 @@ exports[`Radio Player player with popout link 1`] = `
 
 .emotion-72:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-76 {
@@ -4909,7 +4889,6 @@ exports[`Radio Player player with popout link 1`] = `
 
 .emotion-75 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-75:hover:not(:disabled) {
@@ -4922,7 +4901,6 @@ exports[`Radio Player player with popout link 1`] = `
 
 .emotion-75:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-82 {
@@ -6732,7 +6710,6 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 
 .emotion-59 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-58 {
@@ -6864,7 +6841,6 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 
 .emotion-65 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-65:hover:not(:disabled) {
@@ -6882,7 +6858,6 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 
 .emotion-65:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-8 {
@@ -6946,7 +6921,6 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 
 .emotion-77 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-81 {
@@ -7138,7 +7112,6 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 
 .emotion-88 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-88:hover:not(:disabled) {
@@ -7156,7 +7129,6 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 
 .emotion-88:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-92 {
@@ -7199,7 +7171,6 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 
 .emotion-91 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-91:hover:not(:disabled) {
@@ -7212,7 +7183,6 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 
 .emotion-91:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-98 {
@@ -7876,7 +7846,6 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 
 .emotion-13 svg {
   fill: #ffffff;
-  color: #ffffff;
 }
 
 <section

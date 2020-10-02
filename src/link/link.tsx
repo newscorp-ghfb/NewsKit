@@ -2,8 +2,7 @@ import React from 'react';
 import {getMotionFromTheme, styled, getStylePreset} from '../utils/style';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
 import {LinkProps} from './types';
-
-import {Launch} from '../icons/launch';
+import {Launch} from '../icons/filled/custom/launch';
 import {Stack} from '../stack/stack';
 import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';

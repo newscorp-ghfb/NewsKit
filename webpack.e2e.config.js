@@ -21,11 +21,13 @@ module.exports = {
         options: {
           configFile: 'e2e/tsconfig.json',
         },
+        exclude: [/src\/icons\/(filled|outlined)\/material\/\.*/],
       },
       {
         test: /\.js$/,
         enforce: 'pre',
         loader: 'import-glob',
+        exclude: [/src\/icons\/(filled|outlined)\/material\/\.*/],
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/,

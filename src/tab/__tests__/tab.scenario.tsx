@@ -8,7 +8,7 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
-import {Pause, Email, CopyLink} from '../../icons';
+import {Pause, Email, IconFilledLink} from '../../icons';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
 import {TabGroup, TabPane} from '../../tab-group';
 import {getSSRId} from '../../utils/get-ssr-id';
@@ -178,7 +178,7 @@ export default {
         <React.Fragment>
           <StorybookHeading>Tab - Icon</StorybookHeading>
           <Container>
-            {[Pause, Email, CopyLink].map(IconType => (
+            {[Pause, Email, IconFilledLink].map(IconType => (
               <Spacer key={getSSRId()}>
                 <Stack
                   flow="horizontal-center"
@@ -208,7 +208,7 @@ export default {
         <React.Fragment>
           <StorybookHeading>Tab - Icon and Label</StorybookHeading>
           <Container>
-            {[Pause, Email, CopyLink].map(IconType => (
+            {[Pause, Email, IconFilledLink].map(IconType => (
               <Spacer key={getSSRId()}>
                 <Stack
                   flow="horizontal-center"

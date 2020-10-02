@@ -646,6 +646,12 @@ stylePresets.iconButtonDefault = stylePresets.iconButtonSolidPrimary;
 //
 // Icons
 //
+stylePresets.iconDefault = {
+  base: {
+    iconColor: '{{colors.inkBase}}',
+  },
+};
+
 stylePresets.buttonSocialTwitter = stylePresets.iconButtonMinimalSecondary;
 stylePresets.buttonSocialFacebook = stylePresets.iconButtonMinimalSecondary;
 stylePresets.buttonSocialEmail = stylePresets.iconButtonMinimalSecondary;

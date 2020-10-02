@@ -37,7 +37,6 @@ exports[`TextBlock renders with custom style preset 1`] = `
 
 .emotion-0 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -46,7 +45,6 @@ exports[`TextBlock renders with custom style preset 1`] = `
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -55,7 +53,6 @@ exports[`TextBlock renders with custom style preset 1`] = `
 
 .emotion-0:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -64,7 +61,6 @@ exports[`TextBlock renders with custom style preset 1`] = `
 
 .emotion-0:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 <p

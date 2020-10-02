@@ -5,7 +5,7 @@ import {
   renderWithTheme,
 } from '../../test/test-utils';
 import {Button, ButtonProps, ButtonSize} from '..';
-import {Email} from '../../icons/email';
+import {Email} from '../../icons/filled/custom/email';
 import {InstrumentationProvider, EventTrigger} from '../../instrumentation';
 
 const renderButtonWithText = (props: ButtonProps) => (

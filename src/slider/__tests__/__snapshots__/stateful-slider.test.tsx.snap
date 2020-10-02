@@ -75,7 +75,6 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
 
 .emotion-0 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -84,7 +83,6 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
 
 .emotion-0:hover:not(:disabled) svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-0:active:not(:disabled) {
@@ -93,7 +91,6 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
 
 .emotion-0:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-0:disabled {
@@ -106,7 +103,6 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
 
 .emotion-0:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 <div

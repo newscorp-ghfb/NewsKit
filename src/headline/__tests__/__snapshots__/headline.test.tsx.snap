@@ -609,7 +609,6 @@ exports[`headline renders correctly with overriden props 1`] = `
 
 .emotion-1 svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-1:hover:not(:disabled) {
@@ -618,7 +617,6 @@ exports[`headline renders correctly with overriden props 1`] = `
 
 .emotion-1:hover:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-1:active:not(:disabled) {
@@ -627,7 +625,6 @@ exports[`headline renders correctly with overriden props 1`] = `
 
 .emotion-1:active:not(:disabled) svg {
   fill: #2f75d7;
-  color: #2f75d7;
 }
 
 .emotion-1:visited:not(:disabled) {
@@ -636,7 +633,6 @@ exports[`headline renders correctly with overriden props 1`] = `
 
 .emotion-1:visited:not(:disabled) svg {
   fill: #903d91;
-  color: #903d91;
 }
 
 <section

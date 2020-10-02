@@ -111,7 +111,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 
 .emotion-3 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -129,7 +128,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -208,7 +206,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 
 .emotion-6 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6:hover:not(:disabled) {
@@ -217,7 +214,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 
 .emotion-6:hover:not(:disabled) svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6:active:not(:disabled) {
@@ -226,7 +222,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 
 .emotion-6:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-13 {
@@ -505,7 +500,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 
 .emotion-3 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -523,7 +517,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -602,7 +595,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 
 .emotion-6 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6:hover:not(:disabled) {
@@ -611,7 +603,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 
 .emotion-6:hover:not(:disabled) svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6:active:not(:disabled) {
@@ -620,7 +611,6 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 
 .emotion-6:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-13 {
@@ -899,7 +889,6 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 
 .emotion-3 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -917,7 +906,6 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -996,7 +984,6 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 
 .emotion-6 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6:hover:not(:disabled) {
@@ -1005,7 +992,6 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 
 .emotion-6:hover:not(:disabled) svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6:active:not(:disabled) {
@@ -1014,7 +1000,6 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 
 .emotion-6:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-13 {
@@ -1240,7 +1225,6 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 
 .emotion-3 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1258,7 +1242,6 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -1320,7 +1303,6 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 
 .emotion-6 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6:hover:not(:disabled) {
@@ -1329,7 +1311,6 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 
 .emotion-6:hover:not(:disabled) svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6:active:not(:disabled) {
@@ -1338,7 +1319,6 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 
 .emotion-6:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-14 {
@@ -1686,7 +1666,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 .emotion-3 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -1704,7 +1683,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -1783,7 +1761,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 .emotion-6 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6:hover:not(:disabled) {
@@ -1792,7 +1769,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 .emotion-6:hover:not(:disabled) svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6:active:not(:disabled) {
@@ -1801,7 +1777,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 .emotion-6:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-13 {
@@ -2080,7 +2055,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 .emotion-3 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2098,7 +2072,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -2177,7 +2150,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 .emotion-6 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6:hover:not(:disabled) {
@@ -2186,7 +2158,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 .emotion-6:hover:not(:disabled) svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6:active:not(:disabled) {
@@ -2195,7 +2166,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 .emotion-6:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-13 {
@@ -2474,7 +2444,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 
 .emotion-3 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2492,7 +2461,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -2571,7 +2539,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 
 .emotion-6 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6:hover:not(:disabled) {
@@ -2580,7 +2547,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 
 .emotion-6:hover:not(:disabled) svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6:active:not(:disabled) {
@@ -2589,7 +2555,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 
 .emotion-6:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-13 {
@@ -2868,7 +2833,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 
 .emotion-3 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -2886,7 +2850,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -2965,7 +2928,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 
 .emotion-6 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6:hover:not(:disabled) {
@@ -2974,7 +2936,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 
 .emotion-6:hover:not(:disabled) svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6:active:not(:disabled) {
@@ -2983,7 +2944,6 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 
 .emotion-6:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-13 {
@@ -3262,7 +3222,6 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 
 .emotion-3 svg {
   fill: #0a68c1;
-  color: #0a68c1;
 }
 
 .emotion-3:hover:not(:disabled) {
@@ -3280,7 +3239,6 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 
 .emotion-3:disabled svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-2 {
@@ -3359,7 +3317,6 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 
 .emotion-6 svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6:hover:not(:disabled) {
@@ -3368,7 +3325,6 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 
 .emotion-6:hover:not(:disabled) svg {
   fill: #9c9c9c;
-  color: #9c9c9c;
 }
 
 .emotion-6:active:not(:disabled) {
@@ -3377,7 +3333,6 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 
 .emotion-6:active:not(:disabled) svg {
   fill: #535353;
-  color: #535353;
 }
 
 .emotion-13 {
