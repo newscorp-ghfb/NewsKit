@@ -163,6 +163,10 @@ exports[`Headings renders H1 with default styles 1`] = `
   }
 }
 
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
 <h1
     class="emotion-0"
   >
@@ -303,6 +307,10 @@ exports[`Headings renders H2 with default styles 1`] = `
     width: 0;
     margin-top: -0.3553571428571429em;
   }
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
 }
 
 <h2
@@ -447,6 +455,10 @@ exports[`Headings renders H3 with default styles 1`] = `
   }
 }
 
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
 <h3
     class="emotion-0"
   >
@@ -589,6 +601,10 @@ exports[`Headings renders H4 with default styles 1`] = `
   }
 }
 
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
 <h4
     class="emotion-0"
   >
@@ -697,6 +713,10 @@ exports[`Headings renders H5 with default styles 1`] = `
   margin-top: -0.4902777777777778em;
 }
 
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
 <h5
     class="emotion-0"
   >
@@ -803,6 +823,10 @@ exports[`Headings renders H6 with default styles 1`] = `
   height: 0;
   width: 0;
   margin-top: -0.4625em;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
 }
 
 <h6
@@ -976,6 +1000,10 @@ exports[`Headings renders Heading1 with default styles 1`] = `
   }
 }
 
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
 <h1
     class="emotion-0"
   >
@@ -1116,6 +1144,10 @@ exports[`Headings renders Heading2 with default styles 1`] = `
     width: 0;
     margin-top: -0.3553571428571429em;
   }
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
 }
 
 <h2
@@ -1260,6 +1292,10 @@ exports[`Headings renders Heading3 with default styles 1`] = `
   }
 }
 
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
 <h3
     class="emotion-0"
   >
@@ -1402,6 +1438,10 @@ exports[`Headings renders Heading4 with default styles 1`] = `
   }
 }
 
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
 <h4
     class="emotion-0"
   >
@@ -1510,6 +1550,10 @@ exports[`Headings renders Heading5 with default styles 1`] = `
   margin-top: -0.4902777777777778em;
 }
 
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
 <h5
     class="emotion-0"
   >
@@ -1616,6 +1660,10 @@ exports[`Headings renders Heading6 with default styles 1`] = `
   height: 0;
   width: 0;
   margin-top: -0.4625em;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
 }
 
 <h6

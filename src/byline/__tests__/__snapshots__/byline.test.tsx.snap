@@ -50,6 +50,10 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   display: inline-block;
 }
 
+.emotion-4 svg {
+  fill: #535353;
+}
+
 .emotion-4::before {
   content: '';
   display: block;
@@ -81,6 +85,10 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.emotion-3 svg {
+  fill: #9c9c9c;
 }
 
 .emotion-2 {
@@ -294,6 +302,10 @@ exports[`Byline renders correctly with author's name, author's information and n
   display: inline-block;
 }
 
+.emotion-1 svg {
+  fill: #535353;
+}
+
 .emotion-1::before {
   content: '';
   display: block;
@@ -325,6 +337,10 @@ exports[`Byline renders correctly with author's name, author's information and n
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.emotion-0 svg {
+  fill: #9c9c9c;
 }
 
 <div
@@ -411,6 +427,10 @@ exports[`Byline renders correctly with authors and links 1`] = `
   display: inline-block;
 }
 
+.emotion-3 svg {
+  fill: #535353;
+}
+
 .emotion-3::before {
   content: '';
   display: block;
@@ -442,6 +462,10 @@ exports[`Byline renders correctly with authors and links 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.emotion-4 svg {
+  fill: #9c9c9c;
 }
 
 .emotion-2 {
@@ -703,6 +727,10 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   display: inline-block;
 }
 
+.emotion-3 svg {
+  fill: #535353;
+}
+
 .emotion-3::before {
   content: '';
   display: block;
@@ -734,6 +762,10 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.emotion-4 svg {
+  fill: #9c9c9c;
 }
 
 .emotion-2 {
@@ -961,6 +993,10 @@ exports[`Byline renders correctly with multiple authors 1`] = `
   display: inline-block;
 }
 
+.emotion-1 svg {
+  fill: #535353;
+}
+
 .emotion-1::before {
   content: '';
   display: block;
@@ -992,6 +1028,10 @@ exports[`Byline renders correctly with multiple authors 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.emotion-0 svg {
+  fill: #9c9c9c;
 }
 
 <div
@@ -1094,6 +1134,10 @@ exports[`Byline renders correctly with one author 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   display: inline-block;
+}
+
+.emotion-0 svg {
+  fill: #535353;
 }
 
 .emotion-0::before {

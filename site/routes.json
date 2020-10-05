@@ -117,6 +117,11 @@
         "id": "/components/byline"
       },
       {
+        "title": "Caption",
+        "page": true,
+        "id": "/components/caption"
+      },
+      {
         "title": "Card",
         "page": true,
         "id": "/components/card"

@@ -124,6 +124,10 @@ exports[`headline renders correctly with default props 1`] = `
   }
 }
 
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
 <h1
     class="emotion-0"
   >
@@ -256,6 +260,10 @@ exports[`headline renders correctly with default props 2`] = `
   }
 }
 
+.emotion-1 svg {
+  fill: #0a0a0a;
+}
+
 .emotion-2 {
   display: block;
 }
@@ -383,6 +391,10 @@ exports[`headline renders correctly with default props 2`] = `
   }
 }
 
+.emotion-0 svg {
+  fill: #0a68c1;
+}
+
 @media screen and (max-width:479px) {
   .emotion-0 {
     margin-right: 12px;
@@ -459,6 +471,10 @@ exports[`headline renders correctly with overriden props 1`] = `
   height: 0;
   width: 0;
   margin-top: -0.3375em;
+}
+
+.emotion-0 svg {
+  fill: #0a68c1;
 }
 
 @media screen and (max-width:479px) {

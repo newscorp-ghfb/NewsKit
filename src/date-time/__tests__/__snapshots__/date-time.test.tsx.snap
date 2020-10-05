@@ -18,6 +18,10 @@ exports[`DateTime renders with fallback formatting 1`] = `
   white-space: pre;
 }
 
+.emotion-0 svg {
+  fill: #535353;
+}
+
 .emotion-0::before {
   content: '';
   display: block;
@@ -144,6 +148,10 @@ exports[`DateTime renders with provided date, format, prefix and suffix 1`] = `
   letter-spacing: 0;
   display: inline-block;
   white-space: pre;
+}
+
+.emotion-0 svg {
+  fill: #535353;
 }
 
 .emotion-0::before {

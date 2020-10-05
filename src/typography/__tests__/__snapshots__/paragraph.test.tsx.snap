@@ -16,6 +16,10 @@ exports[`Paragraph renders Paragraph 1`] = `
   letter-spacing: 0;
 }
 
+.emotion-0 svg {
+  fill: #2e2e2e;
+}
+
 .emotion-0::before {
   content: '';
   display: block;
@@ -124,6 +128,10 @@ exports[`Paragraph renders empty Paragraph with dropCap without crashing  1`] = 
   letter-spacing: 0;
 }
 
+.emotion-0 svg {
+  fill: #2e2e2e;
+}
+
 .emotion-0::before {
   content: '';
   display: block;
@@ -160,6 +168,10 @@ exports[`Paragraph renders with drop cap 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+}
+
+.emotion-1 svg {
+  fill: #2e2e2e;
 }
 
 .emotion-1::before {
@@ -217,6 +229,10 @@ exports[`Paragraph renders with drop cap 1`] = `
   height: 0;
   width: 0;
   margin-top: -0.4625em;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
 }
 
 .emotion-2 {

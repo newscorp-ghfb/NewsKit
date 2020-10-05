@@ -1,6 +1,6 @@
 // Component Defaults:
 byline: {
-  stylePreset: 'byline',
+  stylePreset: 'inkSubtle',
   typographyPreset: 'meta020',
   space: 'sizing020',
   link: {
@@ -29,6 +29,3 @@ byline: {
     },
   }}
 />
-
-
-

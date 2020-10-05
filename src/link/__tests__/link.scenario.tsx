@@ -34,7 +34,7 @@ export default {
             href="/"
             overrides={{
               typographyPreset: 'label020',
-              stylePreset: 'headlineKicker',
+              stylePreset: 'inkBrand010',
             }}
           >
             Inline Link with style and type overrides
@@ -107,7 +107,7 @@ export default {
             href="https://google.com"
             overrides={{
               typographyPreset: 'label020',
-              stylePreset: 'headlineKicker',
+              stylePreset: 'inkBrand010',
             }}
           >
             Link Standalone external with type and style Preset overrides
@@ -137,7 +137,7 @@ export default {
               href="http://localhost:6006"
               overrides={{
                 typographyPreset: 'label020',
-                stylePreset: 'headlineKicker',
+                stylePreset: 'inkBrand010',
               }}
             >
               Apple-Google model
@@ -165,7 +165,7 @@ export default {
               href="http://apple.com"
               overrides={{
                 typographyPreset: 'label020',
-                stylePreset: 'headlineKicker',
+                stylePreset: 'inkBrand010',
               }}
             >
               Apple-Google model

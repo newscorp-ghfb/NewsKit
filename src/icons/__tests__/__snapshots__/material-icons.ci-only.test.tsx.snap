@@ -89,7 +89,6 @@ exports[`Material icons should render icons with props IconFilledAccountBalance 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #0a0a0a;
   vertical-align: unset;
 }
 
@@ -151,7 +150,6 @@ exports[`Material icons should render icons with props IconOutlinedAccountTree 1
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #0a0a0a;
   vertical-align: unset;
 }
 

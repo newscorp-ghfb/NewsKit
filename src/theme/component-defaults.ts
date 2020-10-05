@@ -68,15 +68,15 @@ export const componentDefaults = {
     },
   },
   byline: {
-    stylePreset: 'byline',
+    stylePreset: 'inkSubtle',
     typographyPreset: 'meta020',
     spaceStack: 'sizing020',
     link: {
-      stylePreset: 'bylineLink',
+      stylePreset: 'linkInline',
       typographyPreset: 'meta020',
     },
     divider: {
-      stylePreset: 'bylineDivider',
+      stylePreset: 'inkNonEssential',
       spaceInline: 'space020',
     },
   },
@@ -107,6 +107,28 @@ export const componentDefaults = {
       minHeight: 'sizing090',
       iconSize: 'iconSize030',
       spaceInline: 'sizing020',
+    },
+  },
+  caption: {
+    typographyPreset: 'caption010',
+    stylePreset: 'inkBase',
+    spaceStack: 'space040',
+    credit: {
+      typographyPreset: 'meta010',
+      stylePreset: 'inkSubtle',
+    },
+  },
+  captionInset: {
+    typographyPreset: 'caption010',
+    stylePreset: 'inkBase',
+    spaceStack: 'space040',
+    spaceInset: {
+      xs: 'spaceInset040',
+      md: 'spaceInset050',
+    },
+    credit: {
+      typographyPreset: 'meta010',
+      stylePreset: 'inkSubtle',
     },
   },
   card: {
@@ -163,14 +185,14 @@ export const componentDefaults = {
     },
   },
   dateTime: {
-    stylePreset: 'dateTime',
+    stylePreset: 'inkSubtle',
     typographyPreset: 'meta020',
     prefix: {
-      stylePreset: 'dateTimePrefix',
+      stylePreset: 'inkSubtle',
       typographyPreset: 'meta020',
     },
     suffix: {
-      stylePreset: 'dateTimeSuffix',
+      stylePreset: 'inkSubtle',
       typographyPreset: 'meta020',
     },
   },
@@ -219,7 +241,7 @@ export const componentDefaults = {
   },
   headline: {
     heading: {
-      stylePreset: 'headlineContent',
+      stylePreset: 'inkContrast',
       typographyPreset: {
         xs: 'heading060',
         sm: 'heading060',
@@ -228,7 +250,7 @@ export const componentDefaults = {
       },
     },
     kicker: {
-      stylePreset: 'headlineKicker',
+      stylePreset: 'inkBrand010',
       typographyPreset: {
         xs: 'heading060',
         sm: 'heading060',
@@ -244,7 +266,7 @@ export const componentDefaults = {
     },
   },
   headlineH1: {
-    stylePreset: 'headlineH1',
+    stylePreset: 'inkContrast',
     typographyPreset: {
       xs: 'heading050',
       lg: 'heading070',
@@ -252,32 +274,32 @@ export const componentDefaults = {
     },
   },
   headlineH2: {
-    stylePreset: 'headlineH2',
+    stylePreset: 'inkContrast',
     typographyPreset: {
       xs: 'heading030',
       lg: 'heading040',
     },
   },
   headlineH3: {
-    stylePreset: 'headlineH3',
+    stylePreset: 'inkContrast',
     typographyPreset: {
       xs: 'heading020',
       lg: 'heading030',
     },
   },
   headlineH4: {
-    stylePreset: 'headlineH4',
+    stylePreset: 'inkContrast',
     typographyPreset: {
       xs: 'heading010',
       lg: 'heading020',
     },
   },
   headlineH5: {
-    stylePreset: 'headlineH5',
+    stylePreset: 'inkContrast',
     typographyPreset: 'subhead015',
   },
   headlineH6: {
-    stylePreset: 'headlineH6',
+    stylePreset: 'inkContrast',
     typographyPreset: 'subhead010',
   },
   iconButton: {
@@ -314,10 +336,10 @@ export const componentDefaults = {
     stylePreset: 'linkStandalone',
   },
   paragraph: {
-    stylePreset: 'paragraph',
+    stylePreset: 'inkBase',
     typographyPreset: 'body020',
     dropCap: {
-      stylePreset: 'paragraphDropCap',
+      stylePreset: 'inkContrast',
       typographyPreset: 'display040',
       space: 'space020',
     },
@@ -357,7 +379,7 @@ export const componentDefaults = {
   },
   standfirst: {
     styledText: {
-      stylePreset: 'standfirst',
+      stylePreset: 'inkBase',
       typographyPreset: {
         xs: 'subhead020',
         lg: 'subhead030',
@@ -396,7 +418,7 @@ export const componentDefaults = {
   textInput: {
     small: {
       label: {
-        stylePreset: 'textInputLabel',
+        stylePreset: 'inkContrast',
         typographyPreset: 'label030',
         spaceStack: 'space040',
         spaceInline: 'space010',
@@ -415,7 +437,7 @@ export const componentDefaults = {
     },
     medium: {
       label: {
-        stylePreset: 'textInputLabel',
+        stylePreset: 'inkContrast',
         typographyPreset: 'label040',
         spaceStack: 'space040',
         spaceInline: 'space010',
@@ -434,7 +456,7 @@ export const componentDefaults = {
     },
     large: {
       label: {
-        stylePreset: 'textInputLabel',
+        stylePreset: 'inkContrast',
         typographyPreset: 'label040',
         spaceStack: 'space040',
         spaceInline: 'space010',
@@ -495,11 +517,11 @@ export const componentDefaults = {
   unorderedList: {
     spaceStack: 'space040',
     content: {
-      stylePreset: 'unorderedListItemContent',
+      stylePreset: 'inkBase',
       typographyPreset: 'body010',
     },
     marker: {
-      stylePreset: 'unorderedListItemMarker',
+      stylePreset: 'inkBase',
       spaceInline: 'space020',
       size: 'iconSize005',
     },

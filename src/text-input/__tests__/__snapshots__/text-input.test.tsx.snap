@@ -17,6 +17,10 @@ exports[`TextInput renders correctly with label and assistive text 1`] = `
   margin-right: 4px;
 }
 
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
 .emotion-0::before {
   content: '';
   display: block;
@@ -184,6 +188,10 @@ exports[`TextInput renders correctly with label hidden 1`] = `
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
 }
 
 .emotion-0::before {
@@ -354,6 +362,10 @@ exports[`TextInput renders correctly without asistive text 1`] = `
   margin-right: 4px;
 }
 
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
 .emotion-0::before {
   content: '';
   display: block;
@@ -475,6 +487,10 @@ exports[`TextInput renders disabled text input 1`] = `
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
 }
 
 .emotion-0::before {
@@ -644,6 +660,10 @@ exports[`TextInput renders large text input 1`] = `
   margin-right: 4px;
 }
 
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
 .emotion-0::before {
   content: '';
   display: block;
@@ -811,6 +831,10 @@ exports[`TextInput renders readonly text input 1`] = `
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
 }
 
 .emotion-0::before {
@@ -1020,6 +1044,10 @@ exports[`TextInput renders small text input 1`] = `
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
 }
 
 .emotion-0::before {
@@ -1257,6 +1285,10 @@ exports[`TextInput renders with different minHeight 1`] = `
   margin-right: 4px;
 }
 
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
 .emotion-0::before {
   content: '';
   display: block;
@@ -1424,6 +1456,10 @@ exports[`TextInput renders with fixed width 1`] = `
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
 }
 
 .emotion-0::before {
@@ -1599,6 +1635,10 @@ exports[`TextInput renders with full width 1`] = `
   margin-right: 4px;
 }
 
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
 .emotion-0::before {
   content: '';
   display: block;
@@ -1772,6 +1812,10 @@ exports[`TextInput should render custom aria-label 1`] = `
   margin-right: 4px;
 }
 
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
 .emotion-0::before {
   content: '';
   display: block;
@@ -1940,6 +1984,10 @@ exports[`TextInput should render custom placeholder 1`] = `
   letter-spacing: 0;
   margin-bottom: 16px;
   margin-right: 4px;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
 }
 
 .emotion-0::before {

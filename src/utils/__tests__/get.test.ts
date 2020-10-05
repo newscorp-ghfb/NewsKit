@@ -8,7 +8,7 @@ describe('get', () => {
         horizontal: {
           label: {
             typographyPreset: 'label020',
-            stylePreset: 'shareBarLabel',
+            stylePreset: 'inkBase',
             marginPreset: 'spaceInline040',
           },
           items: {

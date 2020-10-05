@@ -2303,7 +2303,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #535353;
 }
 
 .emotion-59::before {
@@ -3955,7 +3954,6 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #535353;
 }
 
 .emotion-55::before {
@@ -5371,7 +5369,6 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #535353;
 }
 
 .emotion-55::before {

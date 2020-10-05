@@ -30,6 +30,12 @@ stylePresets.inkSubtle = {
     iconColor: '{{colors.inkSubtle}}',
   },
 };
+stylePresets.inkNonEssential = {
+  base: {
+    color: '{{colors.inkNonEssential}}',
+    iconColor: '{{colors.inkNonEssential}}',
+  },
+};
 
 //
 // Button
@@ -752,12 +758,6 @@ stylePresets.textInput = {
   },
 };
 
-stylePresets.textInputLabel = {
-  base: {
-    color: '{{colors.inkContrast}}',
-  },
-};
-
 stylePresets.textInputAssistiveText = {
   base: {
     color: '{{colors.inkSubtle}}',
@@ -928,11 +928,6 @@ stylePresets.volumeControlThumb = {
   },
 };
 
-stylePresets.volumeControlLabels = {
-  base: {
-    color: '{{colors.inkSubtle}}',
-  },
-};
 stylePresets.volumeControlTrack = {
   base: {
     backgroundColor: '{{colors.interface030}}',
@@ -955,11 +950,6 @@ stylePresets.audioPlayerSeekBarIndicator = {
   base: {
     backgroundColor: '{{colors.interactive030}}',
     borderRadius: '{{borders.borderRadiusPill}}',
-  },
-};
-stylePresets.audioPlayerLabels = {
-  base: {
-    color: '{{colors.inkSubtle}}',
   },
 };
 stylePresets.audioPlayerSeekBarBuffering = {
@@ -1049,15 +1039,6 @@ stylePresets.imageCircle = {
   },
 };
 
-// Label
-
-stylePresets.labelDefault = {
-  base: {
-    color: '{{colors.inkSubtle}}',
-    iconColor: '{{colors.inkSubtle}}',
-  },
-};
-
 // // Card
 
 stylePresets.cardContainer = {
@@ -1097,41 +1078,6 @@ stylePresets.cardContainerActions = {
 };
 
 //
-// Headline
-//
-
-stylePresets.headlineKicker = {
-  base: {
-    color: '{{colors.inkBrand010}}',
-  },
-};
-stylePresets.headlineContent = {
-  base: {
-    color: '{{colors.inkContrast}}',
-  },
-};
-
-//
-// Standfirst
-//
-
-stylePresets.standfirst = {
-  base: {
-    color: '{{colors.inkBase}}',
-  },
-};
-
-//
-// Share Bar
-//
-
-stylePresets.shareBarLabel = {
-  base: {
-    color: '{{colors.inkBase}}',
-  },
-};
-
-//
 // TitleBar
 //
 stylePresets.titleBar = {
@@ -1146,30 +1092,6 @@ stylePresets.titleBar = {
 
 stylePresets.titleBarButton = stylePresets.buttonSolidPrimary;
 stylePresets.titleBarLink = stylePresets.linkStandalone;
-//
-// Lists
-//
-
-stylePresets.listItemContent = {
-  base: {
-    color: '{{colors.inkBase}}',
-  },
-};
-
-stylePresets.unorderedListItemMarker = {
-  base: {
-    iconColor: '{{colors.inkBase}}',
-  },
-};
-
-stylePresets.orderedListItemNumber = {
-  base: {
-    iconColor: '{{colors.inkBase}}',
-  },
-};
-
-stylePresets.unorderedListItemContent = stylePresets.listItemContent;
-stylePresets.orderedListItemContent = stylePresets.listItemContent;
 
 //
 // Divider
@@ -1184,82 +1106,3 @@ stylePresets.dividerHorizontal = {
 };
 
 stylePresets.dividerVertical = stylePresets.dividerHorizontal;
-
-//
-// DateTime
-//
-
-stylePresets.dateTime = {
-  base: {
-    color: '{{colors.inkSubtle}}',
-  },
-};
-
-stylePresets.dateTimePrefix = stylePresets.dateTime;
-stylePresets.dateTimeSuffix = stylePresets.dateTime;
-
-//
-// Byline
-//
-
-stylePresets.byline = {
-  base: {
-    color: '{{colors.inkSubtle}}',
-  },
-};
-
-stylePresets.bylineLink = stylePresets.linkInline;
-
-stylePresets.bylineDivider = {
-  base: {
-    color: '{{colors.inkNonEssential}}',
-  },
-};
-
-//
-//  Paragraph
-//
-stylePresets.paragraph = {
-  base: {
-    color: '{{colors.inkBase}}',
-  },
-};
-
-stylePresets.paragraphDropCap = {
-  base: {
-    color: '{{colors.inkContrast}}',
-  },
-};
-
-// H Headings
-
-stylePresets.headlineH1 = {
-  base: {
-    color: '{{colors.inkContrast}}',
-  },
-};
-stylePresets.headlineH2 = {
-  base: {
-    color: '{{colors.inkContrast}}',
-  },
-};
-stylePresets.headlineH3 = {
-  base: {
-    color: '{{colors.inkContrast}}',
-  },
-};
-stylePresets.headlineH4 = {
-  base: {
-    color: '{{colors.inkContrast}}',
-  },
-};
-stylePresets.headlineH5 = {
-  base: {
-    color: '{{colors.inkContrast}}',
-  },
-};
-stylePresets.headlineH6 = {
-  base: {
-    color: '{{colors.inkContrast}}',
-  },
-};

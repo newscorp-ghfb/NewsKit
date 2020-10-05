@@ -258,15 +258,37 @@ Object {
     "byline": Object {
       "divider": Object {
         "spaceInline": "space020",
-        "stylePreset": "bylineDivider",
+        "stylePreset": "inkNonEssential",
       },
       "link": Object {
-        "stylePreset": "bylineLink",
+        "stylePreset": "linkInline",
         "typographyPreset": "meta020",
       },
       "spaceStack": "sizing020",
-      "stylePreset": "byline",
+      "stylePreset": "inkSubtle",
       "typographyPreset": "meta020",
+    },
+    "caption": Object {
+      "credit": Object {
+        "stylePreset": "inkSubtle",
+        "typographyPreset": "meta010",
+      },
+      "spaceStack": "space040",
+      "stylePreset": "inkBase",
+      "typographyPreset": "caption010",
+    },
+    "captionInset": Object {
+      "credit": Object {
+        "stylePreset": "inkSubtle",
+        "typographyPreset": "meta010",
+      },
+      "spaceInset": Object {
+        "md": "spaceInset050",
+        "xs": "spaceInset040",
+      },
+      "spaceStack": "space040",
+      "stylePreset": "inkBase",
+      "typographyPreset": "caption010",
     },
     "card": Object {
       "actionsContainer": Object {
@@ -323,12 +345,12 @@ Object {
     },
     "dateTime": Object {
       "prefix": Object {
-        "stylePreset": "dateTimePrefix",
+        "stylePreset": "inkSubtle",
         "typographyPreset": "meta020",
       },
-      "stylePreset": "dateTime",
+      "stylePreset": "inkSubtle",
       "suffix": Object {
-        "stylePreset": "dateTimeSuffix",
+        "stylePreset": "inkSubtle",
         "typographyPreset": "meta020",
       },
       "typographyPreset": "meta020",
@@ -378,7 +400,7 @@ Object {
     },
     "headline": Object {
       "heading": Object {
-        "stylePreset": "headlineContent",
+        "stylePreset": "inkContrast",
         "typographyPreset": Object {
           "lg": "heading070",
           "sm": "heading060",
@@ -393,7 +415,7 @@ Object {
           "xl": "space040",
           "xs": "space030",
         },
-        "stylePreset": "headlineKicker",
+        "stylePreset": "inkBrand010",
         "typographyPreset": Object {
           "lg": "heading070",
           "sm": "heading060",
@@ -403,7 +425,7 @@ Object {
       },
     },
     "headlineH1": Object {
-      "stylePreset": "headlineH1",
+      "stylePreset": "inkContrast",
       "typographyPreset": Object {
         "lg": "heading070",
         "xl": "heading090",
@@ -411,32 +433,32 @@ Object {
       },
     },
     "headlineH2": Object {
-      "stylePreset": "headlineH2",
+      "stylePreset": "inkContrast",
       "typographyPreset": Object {
         "lg": "heading040",
         "xs": "heading030",
       },
     },
     "headlineH3": Object {
-      "stylePreset": "headlineH3",
+      "stylePreset": "inkContrast",
       "typographyPreset": Object {
         "lg": "heading030",
         "xs": "heading020",
       },
     },
     "headlineH4": Object {
-      "stylePreset": "headlineH4",
+      "stylePreset": "inkContrast",
       "typographyPreset": Object {
         "lg": "heading020",
         "xs": "heading010",
       },
     },
     "headlineH5": Object {
-      "stylePreset": "headlineH5",
+      "stylePreset": "inkContrast",
       "typographyPreset": "subhead015",
     },
     "headlineH6": Object {
-      "stylePreset": "headlineH6",
+      "stylePreset": "inkContrast",
       "typographyPreset": "subhead010",
     },
     "iconButton": Object {
@@ -478,10 +500,10 @@ Object {
     "paragraph": Object {
       "dropCap": Object {
         "space": "space020",
-        "stylePreset": "paragraphDropCap",
+        "stylePreset": "inkContrast",
         "typographyPreset": "display040",
       },
-      "stylePreset": "paragraph",
+      "stylePreset": "inkBase",
       "typographyPreset": "body020",
     },
     "shareBar": Object {
@@ -519,7 +541,7 @@ Object {
     },
     "standfirst": Object {
       "styledText": Object {
-        "stylePreset": "standfirst",
+        "stylePreset": "inkBase",
         "typographyPreset": Object {
           "lg": "subhead030",
           "xs": "subhead020",
@@ -597,7 +619,7 @@ Object {
         "label": Object {
           "spaceInline": "space010",
           "spaceStack": "space040",
-          "stylePreset": "textInputLabel",
+          "stylePreset": "inkContrast",
           "typographyPreset": "label040",
         },
       },
@@ -616,7 +638,7 @@ Object {
         "label": Object {
           "spaceInline": "space010",
           "spaceStack": "space040",
-          "stylePreset": "textInputLabel",
+          "stylePreset": "inkContrast",
           "typographyPreset": "label040",
         },
       },
@@ -635,7 +657,7 @@ Object {
         "label": Object {
           "spaceInline": "space010",
           "spaceStack": "space040",
-          "stylePreset": "textInputLabel",
+          "stylePreset": "inkContrast",
           "typographyPreset": "label030",
         },
       },
@@ -656,13 +678,13 @@ Object {
     },
     "unorderedList": Object {
       "content": Object {
-        "stylePreset": "unorderedListItemContent",
+        "stylePreset": "inkBase",
         "typographyPreset": "body010",
       },
       "marker": Object {
         "size": "iconSize005",
         "spaceInline": "space020",
-        "stylePreset": "unorderedListItemMarker",
+        "stylePreset": "inkBase",
       },
       "spaceStack": "space040",
     },
@@ -883,11 +905,6 @@ Object {
       "loading": Object {
         "backgroundColor": "#d5ebff",
         "color": "#0a68c1",
-      },
-    },
-    "audioPlayerLabels": Object {
-      "base": Object {
-        "color": "#535353",
       },
     },
     "audioPlayerPlayPauseButton": Object {
@@ -1463,34 +1480,6 @@ Object {
         "iconColor": "#2e2e2e",
       },
     },
-    "byline": Object {
-      "base": Object {
-        "color": "#535353",
-      },
-    },
-    "bylineDivider": Object {
-      "base": Object {
-        "color": "#9c9c9c",
-      },
-    },
-    "bylineLink": Object {
-      "active": Object {
-        "color": "#2f75d7",
-        "iconColor": "#2f75d7",
-      },
-      "base": Object {
-        "color": "#2f75d7",
-        "iconColor": "#2f75d7",
-      },
-      "hover": Object {
-        "color": "#2f75d7",
-        "iconColor": "#2f75d7",
-      },
-      "visited": Object {
-        "color": "#903d91",
-        "iconColor": "#903d91",
-      },
-    },
     "cardContainer": Object {
       "active": Object {
         "backgroundColor": "#fafafa",
@@ -1528,21 +1517,6 @@ Object {
     "cardContainerTeaserAndActions": Object {
       "base": Object {
         "backgroundColor": "transparent",
-      },
-    },
-    "dateTime": Object {
-      "base": Object {
-        "color": "#535353",
-      },
-    },
-    "dateTimePrefix": Object {
-      "base": Object {
-        "color": "#535353",
-      },
-    },
-    "dateTimeSuffix": Object {
-      "base": Object {
-        "color": "#535353",
       },
     },
     "dividerHorizontal": Object {
@@ -1585,46 +1559,6 @@ Object {
         "backgroundColor": "#ef1703",
         "color": "#ffffff",
         "iconColor": "#ffffff",
-      },
-    },
-    "headlineContent": Object {
-      "base": Object {
-        "color": "#0a0a0a",
-      },
-    },
-    "headlineH1": Object {
-      "base": Object {
-        "color": "#0a0a0a",
-      },
-    },
-    "headlineH2": Object {
-      "base": Object {
-        "color": "#0a0a0a",
-      },
-    },
-    "headlineH3": Object {
-      "base": Object {
-        "color": "#0a0a0a",
-      },
-    },
-    "headlineH4": Object {
-      "base": Object {
-        "color": "#0a0a0a",
-      },
-    },
-    "headlineH5": Object {
-      "base": Object {
-        "color": "#0a0a0a",
-      },
-    },
-    "headlineH6": Object {
-      "base": Object {
-        "color": "#0a0a0a",
-      },
-    },
-    "headlineKicker": Object {
-      "base": Object {
-        "color": "#0a68c1",
       },
     },
     "iconButtonDefault": Object {
@@ -2028,13 +1962,13 @@ Object {
         "iconColor": "#0a0a0a",
       },
     },
-    "inkSubtle": Object {
+    "inkNonEssential": Object {
       "base": Object {
-        "color": "#535353",
-        "iconColor": "#535353",
+        "color": "#9c9c9c",
+        "iconColor": "#9c9c9c",
       },
     },
-    "labelDefault": Object {
+    "inkSubtle": Object {
       "base": Object {
         "color": "#535353",
         "iconColor": "#535353",
@@ -2076,36 +2010,6 @@ Object {
       "visited": Object {
         "color": "#2f75d7",
         "iconColor": "#2f75d7",
-      },
-    },
-    "listItemContent": Object {
-      "base": Object {
-        "color": "#2e2e2e",
-      },
-    },
-    "orderedListItemContent": Object {
-      "base": Object {
-        "color": "#2e2e2e",
-      },
-    },
-    "orderedListItemNumber": Object {
-      "base": Object {
-        "iconColor": "#2e2e2e",
-      },
-    },
-    "paragraph": Object {
-      "base": Object {
-        "color": "#2e2e2e",
-      },
-    },
-    "paragraphDropCap": Object {
-      "base": Object {
-        "color": "#0a0a0a",
-      },
-    },
-    "shareBarLabel": Object {
-      "base": Object {
-        "color": "#2e2e2e",
       },
     },
     "sliderIndicator": Object {
@@ -2169,11 +2073,6 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "#e4e4e4",
-      },
-    },
-    "standfirst": Object {
-      "base": Object {
-        "color": "#2e2e2e",
       },
     },
     "tab": Object {
@@ -2288,11 +2187,6 @@ Object {
         "color": "#9c9c9c",
       },
     },
-    "textInputLabel": Object {
-      "base": Object {
-        "color": "#0a0a0a",
-      },
-    },
     "titleBar": Object {
       "base": Object {
         "backgroundColor": "transparent",
@@ -2345,16 +2239,6 @@ Object {
         "iconColor": "#2f75d7",
       },
     },
-    "unorderedListItemContent": Object {
-      "base": Object {
-        "color": "#2e2e2e",
-      },
-    },
-    "unorderedListItemMarker": Object {
-      "base": Object {
-        "iconColor": "#2e2e2e",
-      },
-    },
     "volumeControlButtons": Object {
       "active": Object {
         "backgroundColor": "#d5ebff",
@@ -2382,11 +2266,6 @@ Object {
       "base": Object {
         "backgroundColor": "#0a68c1",
         "borderRadius": "20rem",
-      },
-    },
-    "volumeControlLabels": Object {
-      "base": Object {
-        "color": "#535353",
       },
     },
     "volumeControlThumb": Object {
