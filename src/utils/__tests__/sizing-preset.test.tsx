@@ -91,9 +91,9 @@ describe('SpaceInset', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders with override spaceInset010Squish', () => {
+  test('renders with override spaceInsetSquish010', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
-      padding: 'spaceInset010Squish',
+      padding: 'spaceInsetSquish010',
     });
     expect(fragment).toMatchSnapshot();
   });
@@ -107,57 +107,57 @@ describe('SpaceInset', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders responsive override spaceInset010Squish for xs, spaceInset020Squish for sm, and spaceInset030Squish for md breakpoints', () => {
+  test('renders responsive override spaceInsetSquish010 for xs, spaceInsetSquish020 for sm, and spaceInsetSquish030 for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
       padding: {
-        xs: 'spaceInset010Squish',
-        sm: 'spaceInset020Squish',
-        md: 'spaceInset030Squish',
+        xs: 'spaceInsetSquish010',
+        sm: 'spaceInsetSquish020',
+        md: 'spaceInsetSquish030',
       },
     });
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders responsive override spaceInset010Squish for xs, spaceInset020Squish for sm, and spaceInset030Squish for md breakpoints in reverser order', () => {
+  test('renders responsive override spaceInsetSquish010 for xs, spaceInsetSquish020 for sm, and spaceInsetSquish030 for md breakpoints in reverser order', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
       padding: {
-        md: 'spaceInset030Squish',
-        sm: 'spaceInset020Squish',
-        xs: 'spaceInset010Squish',
+        md: 'spaceInsetSquish030',
+        sm: 'spaceInsetSquish020',
+        xs: 'spaceInsetSquish010',
       },
     });
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders responsive override spaceInset010Squish for xs, spaceInset020Squish for sm, and wrong for md breakpoints', () => {
+  test('renders responsive override spaceInsetSquish010 for xs, spaceInsetSquish020 for sm, and wrong for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
       padding: {
-        xs: 'spaceInset010Squish',
-        sm: 'spaceInset020Squish',
+        xs: 'spaceInsetSquish010',
+        sm: 'spaceInsetSquish020',
         md: 'wrong',
       } as any,
     });
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders responsive override spaceInset010Squish for xs, and spaceInset030Squish for md breakpoints', () => {
+  test('renders responsive override spaceInsetSquish010 for xs, and spaceInsetSquish030 for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
       padding: {
-        xs: 'spaceInset010Squish',
-        md: 'spaceInset030Squish',
+        xs: 'spaceInsetSquish010',
+        md: 'spaceInsetSquish030',
       },
     });
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders responsive override spaceInset010Squish for xs, spaceInset020Squish for sm, spaceInset030Squish for md, spaceInset040Squish for lg breakpoints and ignore wrong prop', () => {
+  test('renders responsive override spaceInsetSquish010 for xs, spaceInsetSquish020 for sm, spaceInsetSquish030 for md, spaceInsetSquish040 for lg breakpoints and ignore wrong prop', () => {
     const fragment = renderToFragmentWithTheme(TestBlock, {
       padding: {
-        xs: 'spaceInset010Squish',
-        sm: 'spaceInset020Squish',
-        md: 'spaceInset030Squish',
-        lg: 'spaceInset040Squish',
-        wrong: 'spaceInset050Squish',
+        xs: 'spaceInsetSquish010',
+        sm: 'spaceInsetSquish020',
+        md: 'spaceInsetSquish030',
+        lg: 'spaceInsetSquish040',
+        wrong: 'spaceInsetSquish050',
       } as any,
     });
     expect(fragment).toMatchSnapshot();

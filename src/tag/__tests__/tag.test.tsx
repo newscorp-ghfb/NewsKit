@@ -52,7 +52,7 @@ describe('Tag', () => {
   test('renders a tag with no paddings', () => {
     const props: TagProps = {
       overrides: {
-        spaceInset: 'spaceInset000Squish',
+        spaceInset: 'spaceInsetSquish000',
       },
     };
     const fragment = renderToFragmentWithTheme(renderTagWithText, props);

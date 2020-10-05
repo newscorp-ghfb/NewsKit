@@ -8,7 +8,7 @@ import {SaveInactive} from '../../icons/filled/custom/save-inactive';
 const CustomFlag = () => (
   <Flag
     overrides={{
-      spaceInset: 'spaceInset000Squish',
+      spaceInset: 'spaceInsetSquish000',
       stylePreset: 'flagMinimal',
     }}
   >

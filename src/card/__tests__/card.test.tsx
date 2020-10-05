@@ -176,7 +176,7 @@ describe('Card', () => {
       children: cardBody,
       overrides: {
         actionsContainer: {
-          spaceInset: 'spaceInset030Squish',
+          spaceInset: 'spaceInsetSquish030',
         },
       },
     });
@@ -201,11 +201,11 @@ describe('Card', () => {
           },
           teaserContainer: {
             stylePreset: 'cardContainerTeaserMock',
-            spaceInset: 'spaceInset010Squish',
+            spaceInset: 'spaceInsetSquish010',
           },
           actionsContainer: {
             stylePreset: 'cardContainerActionsMock',
-            spaceInset: 'spaceInset010Squish',
+            spaceInset: 'spaceInsetSquish010',
             minHeight: 'sizing090',
           },
         },
@@ -254,10 +254,10 @@ describe('CardInset', () => {
           actionsContainer: {
             stylePreset: 'cardContainerActionsMock',
             spaceInset: {
-              xs: 'spaceInset040Squish',
-              sm: 'spaceInset040Squish',
-              md: 'spaceInset050Squish',
-              lg: 'spaceInset050Squish',
+              xs: 'spaceInsetSquish040',
+              sm: 'spaceInsetSquish040',
+              md: 'spaceInsetSquish050',
+              lg: 'spaceInsetSquish050',
             },
           },
         },

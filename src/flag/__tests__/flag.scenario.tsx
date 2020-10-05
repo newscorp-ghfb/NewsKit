@@ -34,7 +34,7 @@ export default {
           <Flag
             overrides={{
               stylePreset: 'flagMinimal',
-              spaceInset: 'spaceInset000Squish',
+              spaceInset: 'spaceInsetSquish000',
             }}
           >
             Text goes here
@@ -164,7 +164,7 @@ export default {
                 size={FlagSize.Small}
                 overrides={{
                   stylePreset: 'flagMinimal',
-                  spaceInset: 'spaceInset000Squish',
+                  spaceInset: 'spaceInsetSquish000',
                 }}
               >
                 <Email />
@@ -174,7 +174,7 @@ export default {
                 size={FlagSize.Large}
                 overrides={{
                   stylePreset: 'flagMinimal',
-                  spaceInset: 'spaceInset000Squish',
+                  spaceInset: 'spaceInsetSquish000',
                 }}
               >
                 <Email />
@@ -184,7 +184,7 @@ export default {
                 size={FlagSize.Large}
                 overrides={{
                   stylePreset: 'flagMinimal',
-                  spaceInset: 'spaceInset000Squish',
+                  spaceInset: 'spaceInsetSquish000',
                 }}
               >
                 <Bookmark />
@@ -194,7 +194,7 @@ export default {
                 size={FlagSize.Large}
                 overrides={{
                   stylePreset: 'flagMinimal',
-                  spaceInset: 'spaceInset000Squish',
+                  spaceInset: 'spaceInsetSquish000',
                 }}
               >
                 <IconFilledVolumeOff />

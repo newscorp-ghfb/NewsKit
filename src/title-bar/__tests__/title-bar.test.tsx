@@ -18,7 +18,7 @@ describe('TitleBar', () => {
       children: TITLE,
       overrides: {
         stylePreset: 'standfirst',
-        spaceInset: 'spaceInset010Squish',
+        spaceInset: 'spaceInsetSquish010',
         heading: {
           typographyPreset: {
             xs: 'heading010',

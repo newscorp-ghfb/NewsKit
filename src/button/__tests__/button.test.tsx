@@ -93,7 +93,7 @@ describe('Button', () => {
   test('renders with custom spaceInset preset', () => {
     const props: ButtonProps = {
       overrides: {
-        spaceInset: 'spaceInset000Squish',
+        spaceInset: 'spaceInsetSquish000',
       },
     };
 

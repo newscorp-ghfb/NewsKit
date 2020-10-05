@@ -71,7 +71,7 @@ export const CardMediumWithoutInset = () => (
           <Block overrides={{spaceStack: cardLabelSpaceStack}}>
             <Flag
               overrides={{
-                spaceInset: 'spaceInset000Squish',
+                spaceInset: 'spaceInsetSquish000',
                 stylePreset: 'cardLabel',
                 typographyPreset: cardLabelMediumTypographyPreset,
               }}

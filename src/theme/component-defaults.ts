@@ -84,7 +84,7 @@ export const componentDefaults = {
     small: {
       typographyPreset: 'button010',
       stylePreset: 'buttonDefault',
-      spaceInset: 'spaceInset020Squish',
+      spaceInset: 'spaceInsetSquish020',
       minWidth: 'sizing090',
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
@@ -93,7 +93,7 @@ export const componentDefaults = {
     medium: {
       typographyPreset: 'button020',
       stylePreset: 'buttonDefault',
-      spaceInset: 'spaceInset030Squish',
+      spaceInset: 'spaceInsetSquish030',
       minWidth: 'sizing100',
       minHeight: 'sizing080',
       iconSize: 'iconSize020',
@@ -102,7 +102,7 @@ export const componentDefaults = {
     large: {
       typographyPreset: 'button030',
       stylePreset: 'buttonDefault',
-      spaceInset: 'spaceInset040Squish',
+      spaceInset: 'spaceInsetSquish040',
       minWidth: 'sizing110',
       minHeight: 'sizing090',
       iconSize: 'iconSize030',
@@ -147,12 +147,12 @@ export const componentDefaults = {
     },
     teaserContainer: {
       stylePreset: 'cardContainerTeaser',
-      spaceInset: 'spaceInset000Squish',
+      spaceInset: 'spaceInsetSquish000',
     },
     actionsContainer: {
       stylePreset: 'cardContainerActions',
       minHeight: 'sizing080',
-      spaceInset: 'spaceInset000Squish',
+      spaceInset: 'spaceInsetSquish000',
     },
   },
   cardInset: {
@@ -177,10 +177,10 @@ export const componentDefaults = {
       stylePreset: 'cardContainerActions',
       minHeight: 'sizing000',
       spaceInset: {
-        xs: 'spaceInset030Squish',
-        sm: 'spaceInset030Squish',
-        lg: 'spaceInset040Squish',
-        xl: 'spaceInset040Squish',
+        xs: 'spaceInsetSquish030',
+        sm: 'spaceInsetSquish030',
+        lg: 'spaceInsetSquish040',
+        xl: 'spaceInsetSquish040',
       },
     },
   },
@@ -203,7 +203,7 @@ export const componentDefaults = {
     small: {
       typographyPreset: 'label010',
       stylePreset: 'flagDefault',
-      spaceInset: 'spaceInset010Squish',
+      spaceInset: 'spaceInsetSquish010',
       minHeight: 'sizing050',
       iconSize: 'iconSize010',
       spaceInline: 'sizing010',
@@ -211,7 +211,7 @@ export const componentDefaults = {
     large: {
       typographyPreset: 'label020',
       stylePreset: 'flagDefault',
-      spaceInset: 'spaceInset020Squish',
+      spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
       spaceInline: 'sizing010',
@@ -390,7 +390,7 @@ export const componentDefaults = {
     small: {
       stylePreset: 'tab',
       typographyPreset: 'button010',
-      spaceInset: 'spaceInset020Squish',
+      spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
       spaceInline: 'sizing020',
@@ -398,7 +398,7 @@ export const componentDefaults = {
     medium: {
       stylePreset: 'tab',
       typographyPreset: 'button020',
-      spaceInset: 'spaceInset030Squish',
+      spaceInset: 'spaceInsetSquish030',
       minHeight: 'sizing080',
       iconSize: 'iconSize020',
       spaceInline: 'sizing020',
@@ -406,7 +406,7 @@ export const componentDefaults = {
     large: {
       stylePreset: 'tab',
       typographyPreset: 'button030',
-      spaceInset: 'spaceInset030Squish',
+      spaceInset: 'spaceInsetSquish030',
       minHeight: 'sizing090',
       iconSize: 'iconSize030',
       spaceInline: 'sizing020',
@@ -425,7 +425,7 @@ export const componentDefaults = {
       },
       input: {
         stylePreset: 'textInput',
-        spaceInset: 'spaceInset010Squish',
+        spaceInset: 'spaceInsetSquish010',
         minHeight: 'sizing060',
         typographyPreset: 'body020',
         spaceStack: 'space020',
@@ -478,7 +478,7 @@ export const componentDefaults = {
     small: {
       typographyPreset: 'label010',
       stylePreset: 'tagDefault',
-      spaceInset: 'spaceInset010Squish',
+      spaceInset: 'spaceInsetSquish010',
       minHeight: 'sizing050',
       iconSize: 'iconSize010',
       spaceInline: 'sizing010',
@@ -486,7 +486,7 @@ export const componentDefaults = {
     medium: {
       typographyPreset: 'label020',
       stylePreset: 'tagDefault',
-      spaceInset: 'spaceInset020Squish',
+      spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
       spaceInline: 'sizing010',
@@ -494,7 +494,7 @@ export const componentDefaults = {
     large: {
       typographyPreset: 'label030',
       stylePreset: 'tagDefault',
-      spaceInset: 'spaceInset020Squish',
+      spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing070',
       iconSize: 'iconSize020',
       spaceInline: 'sizing010',
@@ -503,8 +503,8 @@ export const componentDefaults = {
   titleBar: {
     stylePreset: 'titleBar',
     spaceInset: {
-      xs: 'spaceInset030Squish',
-      lg: 'spaceInset040Squish',
+      xs: 'spaceInsetSquish030',
+      lg: 'spaceInsetSquish040',
     },
     heading: {
       typographyPreset: {

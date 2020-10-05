@@ -30,7 +30,7 @@ export const StyledSwatchRow = styled.span<
 >`
   display: inline-block;
   ${getTypographyPresetFromTheme('subhead010')};
-  padding: ${getSpacingFromTheme('spaceInset030Squish')};
+  padding: ${getSpacingFromTheme('spaceInsetSquish030')};
   width: 100%;
   border-radius: ${getBorderRadius as any};
   background-color: ${({theme, name}) => theme.colors[name as ColorKeys]};
@@ -64,7 +64,7 @@ export const StyledSwatchCardBottom = styled.div<
   height: ${({isOverlay}) =>
     getSizingFromTheme(isOverlay ? 'sizing110' : 'sizing100')};
   background-color: ${({theme}) => theme.colors.white};
-  padding: ${getSpacingFromTheme('spaceInset030Squish')};
+  padding: ${getSpacingFromTheme('spaceInsetSquish030')};
 `;
 
 export const StyledSwatchCardTitle = styled.div`

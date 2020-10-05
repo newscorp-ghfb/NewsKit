@@ -53,7 +53,7 @@ describe('Flag', () => {
     const props: FlagProps = {
       overrides: {
         stylePreset: 'flagMinimal',
-        spaceInset: 'spaceInset000Squish',
+        spaceInset: 'spaceInsetSquish000',
       },
     };
     const fragment = renderToFragmentWithTheme(renderFlagWithText, props);
@@ -69,7 +69,7 @@ describe('Flag', () => {
     const props: FlagProps = {
       overrides: {
         stylePreset: 'flagMinimal',
-        spaceInset: 'spaceInset000Squish',
+        spaceInset: 'spaceInsetSquish000',
       },
     };
     const fragment = renderToFragmentWithTheme(
