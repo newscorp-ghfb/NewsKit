@@ -2,34 +2,68 @@ import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {SizingKeys} from '../../theme';
 import {Stack} from '../stack';
-import {Tag} from '../../tag/tag';
 import {Flow, StackDistribution} from '../types';
+import {getColorFromTheme, styled} from '../../utils/style';
+
+const Box = styled.div`
+  width: 150px;
+  height: 150px;
+  background-color: ${getColorFromTheme('green030')};
+  border: 1px solid ${getColorFromTheme('red030')};
+`;
+
+const children = [<Box>child 1</Box>, <Box>child 2</Box>, <Box>child 3</Box>];
 
 describe('Stack', () => {
-  test(`renders stack when no properties are set`, () => {
+  test(`renders with defaults only`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
-      children: [<Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>],
+      children,
     });
 
     expect(fragment).toMatchSnapshot();
   });
 
-  test(`renders stack as list with spacing`, () => {
+  test(`renders with valid stack flow`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
-      list: true,
-      ariaLabel: 'Tag list',
-      spaceInline: 'sizing020',
-      children: [<Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>],
+      flow: Flow.HorizontalBottom,
+      children,
     });
 
     expect(fragment).toMatchSnapshot();
   });
 
-  test(`renders stack with flex grow and shrink`, () => {
+  test(`renders with invalid stack flow`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      flow: 'blahblahblah' as any,
+      children,
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`renders with valid stack distribution`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      stackDistribution: StackDistribution.Center,
+      children,
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`renders with invalid stack distribution`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      stackDistribution: 'blahblahblah' as any,
+      children,
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`renders with flex grow and shrink`, () => {
     const fragment1 = renderToFragmentWithTheme(Stack, {
       flexGrow: true,
       flexShrink: true,
-      children: [<Tag>child 1</Tag>],
+      children,
     });
 
     expect(fragment1).toMatchSnapshot();
@@ -37,84 +71,44 @@ describe('Stack', () => {
     const fragment2 = renderToFragmentWithTheme(Stack, {
       flexGrow: 10,
       flexShrink: 20,
-      children: [<Tag>child 1</Tag>],
+      children,
     });
 
     expect(fragment2).toMatchSnapshot();
   });
 
-  test(`renders with valid flow`, () => {
+  test(`renders as span`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
-      flow: Flow.HorizontalBottom,
-      children: [<Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>],
+      children,
+      as: 'span',
     });
 
     expect(fragment).toMatchSnapshot();
   });
 
-  test(`renders where the stack flow is invalid`, () => {
+  test(`renders as span with space`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
-      flow: 'blahblahblah' as any,
-      children: [<Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>],
+      children,
+      as: 'span',
+      spaceInline: 'sizing030',
     });
 
     expect(fragment).toMatchSnapshot();
   });
 
-  test(`renders with valid stackDistribution`, () => {
+  test(`renders inline stack`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
-      stackDistribution: StackDistribution.Center,
-      children: [<Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>],
+      children,
+      inline: true,
     });
 
     expect(fragment).toMatchSnapshot();
   });
 
-  test(`renders where stackDistribution is invalid`, () => {
+  test(`renders reverse stack`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
-      stackDistribution: 'blahblahblah' as any,
-      children: [<Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>],
-    });
-
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test(`renders where a nested stack with stackDistribution`, () => {
-    const fragment = renderToFragmentWithTheme(Stack, {
-      stackDistribution: StackDistribution.Center,
-      children: [
-        <Stack stackDistribution={StackDistribution.Center}>
-          <Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>
-        </Stack>,
-      ],
-    });
-
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test(`renders nested stack as list`, () => {
-    const fragment = renderToFragmentWithTheme(Stack, {
-      list: true,
-      children: [
-        <Stack>
-          <Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>
-        </Stack>,
-        <Tag>child 4</Tag>,
-      ],
-    });
-
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test(`renders nested stack as list when both are list`, () => {
-    const fragment = renderToFragmentWithTheme(Stack, {
-      list: true,
-      children: [
-        <Stack list>
-          <Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>
-        </Stack>,
-        <Tag>child 4</Tag>,
-      ],
+      children,
+      flowReverse: true,
     });
 
     expect(fragment).toMatchSnapshot();
@@ -127,9 +121,9 @@ describe('Stack', () => {
           flow: flowKey,
           stackDistribution: stackDistributionKey,
           children: [
-            <Tag>child 1</Tag>,
-            <Tag>child 2</Tag>,
-            <Tag>child 3</Tag>,
+            <Box>child 1</Box>,
+            <Box>child 2</Box>,
+            <Box>child 3</Box>,
           ],
         });
 
@@ -148,9 +142,9 @@ describe('Stack', () => {
             spaceStack: size,
             wrap: wrapType as 'wrap' | 'nowrap',
             children: [
-              <Tag>child 1</Tag>,
-              <Tag>child 2</Tag>,
-              <Tag>child 3</Tag>,
+              <Box>child 1</Box>,
+              <Box>child 2</Box>,
+              <Box>child 3</Box>,
             ],
           });
 
@@ -168,9 +162,9 @@ describe('Stack', () => {
           spaceStack: 'sizing090',
           wrap: wrapType as 'wrap' | 'nowrap',
           children: [
-            <Tag>child 1</Tag>,
-            <Tag>child 2</Tag>,
-            <Tag>child 3</Tag>,
+            <Box>child 1</Box>,
+            <Box>child 2</Box>,
+            <Box>child 3</Box>,
           ],
         });
 
@@ -187,14 +181,234 @@ describe('Stack', () => {
           spaceInline: 'sizing090',
           wrap: wrapType as 'wrap' | 'nowrap',
           children: [
-            <Tag>child 1</Tag>,
-            <Tag>child 2</Tag>,
-            <Tag>child 3</Tag>,
+            <Box>child 1</Box>,
+            <Box>child 2</Box>,
+            <Box>child 3</Box>,
           ],
         });
 
         expect(fragment).toMatchSnapshot();
       });
     });
+  });
+});
+
+describe('Nested stacks', () => {
+  test(`render in vertical flow`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      children: [
+        <Stack>
+          <Box>child 1</Box>, <Box>child 2</Box>, <Box>child 3</Box>
+        </Stack>,
+        <Stack>
+          <Box>child 4</Box>, <Box>child 5</Box>, <Box>child 6</Box>
+        </Stack>,
+        <Stack>
+          <Box>child 7</Box>, <Box>child 8</Box>, <Box>child 9</Box>
+        </Stack>,
+      ],
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`render in vertical flow with space`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      spaceInline: 'sizing030',
+      children: [
+        <Stack>
+          <Box>child 1</Box>, <Box>child 2</Box>, <Box>child 3</Box>
+        </Stack>,
+        <Stack>
+          <Box>child 4</Box>, <Box>child 5</Box>, <Box>child 6</Box>
+        </Stack>,
+        <Stack>
+          <Box>child 7</Box>, <Box>child 8</Box>, <Box>child 9</Box>
+        </Stack>,
+      ],
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`render in horizontal flow`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      flow: Flow.HorizontalTop,
+      children: [
+        <Stack flow={Flow.HorizontalTop}>
+          <Box>child 1</Box>, <Box>child 2</Box>, <Box>child 3</Box>
+        </Stack>,
+        <Stack flow={Flow.HorizontalTop}>
+          <Box>child 4</Box>, <Box>child 5</Box>, <Box>child 6</Box>
+        </Stack>,
+        <Stack flow={Flow.HorizontalTop}>
+          <Box>child 7</Box>, <Box>child 8</Box>, <Box>child 9</Box>
+        </Stack>,
+      ],
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`render in horizontal flow with space`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      spaceInline: 'sizing030',
+      flow: Flow.HorizontalTop,
+      children: [
+        <Stack flow={Flow.HorizontalTop}>
+          <Box>child 1</Box>, <Box>child 2</Box>, <Box>child 3</Box>
+        </Stack>,
+        <Stack flow={Flow.HorizontalTop}>
+          <Box>child 4</Box>, <Box>child 5</Box>, <Box>child 6</Box>
+        </Stack>,
+        <Stack flow={Flow.HorizontalTop}>
+          <Box>child 7</Box>, <Box>child 8</Box>, <Box>child 9</Box>
+        </Stack>,
+      ],
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`render with stackDistribution`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      stackDistribution: StackDistribution.Center,
+      children: [
+        <Stack>
+          <Box>child 1</Box>, <Box>child 2</Box>, <Box>child 3</Box>
+        </Stack>,
+        <Stack>
+          <Box>child 4</Box>, <Box>child 5</Box>, <Box>child 6</Box>
+        </Stack>,
+        <Stack>
+          <Box>child 7</Box>, <Box>child 8</Box>, <Box>child 9</Box>
+        </Stack>,
+      ],
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`render mixed content`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      flow: Flow.HorizontalTop,
+      children: [
+        <Box>child 1</Box>,
+        <Box>child 2</Box>,
+        <Box>child 3</Box>,
+        <Stack flow={Flow.HorizontalTop}>
+          <Box>child 4</Box>, <Box>child 5</Box>, <Box>child 6</Box>
+        </Stack>,
+      ],
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+});
+
+describe('Stack as list', () => {
+  test(`renders correctly`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      children,
+      list: true,
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`renders with spacing`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      list: true,
+      ariaLabel: 'Tag list',
+      spaceInline: 'sizing020',
+      children,
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`renders with spacing and wrap`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      list: true,
+      ariaLabel: 'Tag list',
+      spaceInline: 'sizing020',
+      spaceStack: 'sizing020',
+      wrap: 'wrap',
+      children,
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`renders horizontally`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      children,
+      list: true,
+      flow: Flow.HorizontalTop,
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`renders horizontally with spacing`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      list: true,
+      ariaLabel: 'Tag list',
+      spaceInline: 'sizing020',
+      flow: Flow.HorizontalTop,
+      children,
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`renders horizontally with spacing and wrap`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      list: true,
+      ariaLabel: 'Tag list',
+      spaceInline: 'sizing020',
+      spaceStack: 'sizing020',
+      wrap: 'wrap',
+      flow: Flow.HorizontalTop,
+      children,
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`renders nested stack`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      list: true,
+      children: [
+        <Stack>
+          <Box>child 1</Box>, <Box>child 2</Box>, <Box>child 3</Box>
+        </Stack>,
+        <Stack>
+          <Box>child 4</Box>, <Box>child 5</Box>, <Box>child 6</Box>
+        </Stack>,
+        <Stack>
+          <Box>child 7</Box>, <Box>child 8</Box>, <Box>child 9</Box>
+        </Stack>,
+        <Box>child 10</Box>,
+      ],
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test(`renders nested stack as list`, () => {
+    const fragment = renderToFragmentWithTheme(Stack, {
+      list: true,
+      children: [
+        <Stack list>
+          <Box>child 1</Box>, <Box>child 2</Box>, <Box>child 3</Box>
+        </Stack>,
+        <Stack list>
+          <Box>child 4</Box>, <Box>child 5</Box>, <Box>child 6</Box>
+        </Stack>,
+      ],
+    });
+
+    expect(fragment).toMatchSnapshot();
   });
 });

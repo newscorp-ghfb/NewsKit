@@ -3,19 +3,16 @@ import {Flow, StackDistribution, StackProps, StyledChildProps} from './types';
 import {
   StyledMasterContainer,
   StyledMasterContainerList,
-  StyledMasterContainerListItem,
-  StyledChildContainerListItem,
-  StyledListItem,
   StyledChildContainer,
+  StyledChildContainerListItem,
   hasSpacing,
 } from './styled';
 import {useTheme, Theme} from '../theme';
 import {StackChild, AlignSelfValues} from '../stack-child';
 import {hasMatchingDisplayNameWith, as as asUtil} from '../utils/component';
 
-const renderAs = (as: StackProps['as'], list: StackProps['list']) =>
-  // eslint-disable-next-line no-nested-ternary
-  list ? null : as ? asUtil(as) : null;
+const getAsProp = (as: StackProps['as'], list: StackProps['list']) =>
+  !list && as ? asUtil(as) : null;
 
 const wrapChild = (
   theme: Theme,
@@ -35,59 +32,62 @@ const wrapChild = (
     };
   },
 ) => {
+  if (!child) return null;
+
   const childProps: StyledChildProps = {
     spaceStack,
     spaceInline,
     flow,
     $wrap: wrap,
   };
+  const hasSpace =
+    hasSpacing(theme, spaceStack) || hasSpacing(theme, spaceInline);
 
+  const renderAs = getAsProp(as, list);
+
+  const ChildContainer = list
+    ? StyledChildContainerListItem
+    : StyledChildContainer;
+
+  // If child is a Stack component
   // eslint-disable-next-line no-use-before-define
   if (hasMatchingDisplayNameWith(child, Stack)) {
-    const stack = <Stack inline={inline} as={as} flexGrow {...child.props} />;
-    const {as: childAs, list: childList, ...rest} = child.props;
-    return list ? (
-      <StyledMasterContainerListItem flexGrow {...rest}>
+    const stack = <Stack inline={inline} as={as} {...child.props} />;
+
+    return list || hasSpace ? (
+      <ChildContainer {...renderAs} {...childProps}>
         {stack}
-      </StyledMasterContainerListItem>
+      </ChildContainer>
     ) : (
       stack
     );
   }
 
-  if (hasSpacing(theme, spaceStack) || hasSpacing(theme, spaceInline)) {
-    if (hasMatchingDisplayNameWith(child, StackChild)) {
-      if (child.props.order) {
-        const {
-          props: {order},
-        } = child;
-        childProps.$order = order;
-      }
-
-      if (child.props.alignSelf) {
-        const {
-          props: {alignSelf},
-        } = child;
-        childProps.$alignSelf = alignSelf;
-      }
+  // If child is a StackChild component
+  if (hasMatchingDisplayNameWith(child, StackChild)) {
+    if (child.props.order) {
+      childProps.$order = child.props.order;
     }
 
-    if (child) {
-      const Container = list
-        ? StyledChildContainerListItem
-        : StyledChildContainer;
-
-      return (
-        <Container {...renderAs(as, list)} {...childProps}>
-          {hasMatchingDisplayNameWith(child, StackChild) && child.props.children
-            ? child.props.children
-            : child}
-        </Container>
-      );
+    if (child.props.alignSelf) {
+      childProps.$alignSelf = child.props.alignSelf;
     }
+
+    return (
+      <ChildContainer {...renderAs} {...childProps}>
+        {child.props.children}
+      </ChildContainer>
+    );
   }
 
-  return list ? <StyledListItem>{child}</StyledListItem> : child;
+  // If child is anything else
+  return list || hasSpace ? (
+    <ChildContainer {...renderAs} {...childProps}>
+      {child}
+    </ChildContainer>
+  ) : (
+    child
+  );
 };
 
 export const Stack: React.FC<StackProps> = ({
@@ -108,13 +108,13 @@ export const Stack: React.FC<StackProps> = ({
   ...props
 }) => {
   const theme = useTheme();
-  const StyledContainer = list
+  const MasterContainer = list
     ? StyledMasterContainerList
     : StyledMasterContainer;
 
   return (
-    <StyledContainer
-      {...renderAs(as, list)}
+    <MasterContainer
+      {...getAsProp(as, list)}
       spaceStack={spaceStack}
       spaceInline={spaceInline}
       flow={flow}
@@ -142,7 +142,7 @@ export const Stack: React.FC<StackProps> = ({
             as,
           ),
         )}
-    </StyledContainer>
+    </MasterContainer>
   );
 };
 

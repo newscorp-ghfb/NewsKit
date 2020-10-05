@@ -6,6 +6,15 @@ import {StackChild} from '..';
 import {AlignSelfValues} from '../types';
 
 describe('StackChild', () => {
+  test(`renders null`, () => {
+    const fragment = renderToFragmentWithTheme(StackChild, {
+      children: [<Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>],
+      order: 1,
+    });
+
+    expect(fragment).toMatchSnapshot();
+  });
+
   test(`renders within a Stack with custom order`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
       children: [

@@ -103,17 +103,8 @@ const getFlexDirection = ({flow, flowReverse}: StyledStackProps) => {
 
 export const StyledMasterContainer = styled.div<StyledStackProps>`
   display: ${({inline}) => (inline ? 'inline-flex' : 'flex')};
-  height: ${({flow}) =>
-    [
-      Flow.VerticalLeft,
-      Flow.VerticalCenter,
-      Flow.VerticalRight,
-      Flow.HorizontalCenter,
-      Flow.HorizontalBottom,
-    ].includes(flow as Flow)
-      ? '100%'
-      : 'auto'};
 
+  height: 100%;
   align-items: ${({flow}) => alignmentDictionary[flow]};
   flex-wrap: ${({$wrap}) => ($wrap === true ? 'wrap' : $wrap)};
   flex-grow: ${({flexGrow}) => (flexGrow === true ? 1 : flexGrow)};
@@ -150,18 +141,32 @@ export const StyledChildContainer = styled.div<StyledChildProps>`
 export const StyledMasterContainerList = styled(StyledMasterContainer)`
   list-style-type: none;
   padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+
+  ${({theme, spaceStack, spaceInline, flow}) => {
+    const isVertical = [
+      Flow.VerticalLeft,
+      Flow.VerticalCenter,
+      Flow.VerticalRight,
+    ].includes(flow as Flow);
+
+    const isHorizontal = [
+      Flow.HorizontalTop,
+      Flow.HorizontalCenter,
+      Flow.HorizontalBottom,
+    ].includes(flow as Flow);
+
+    const marginReset =
+      (isVertical && hasSpacing(theme, spaceInline)) ||
+      (isHorizontal && hasSpacing(theme, spaceStack))
+        ? null
+        : {
+            marginTop: 0,
+            marginBottom: 0,
+          };
+    return marginReset;
+  }}
 `.withComponent('ul');
 
-export const StyledMasterContainerListItem = styled(StyledMasterContainer)`
-  height: 100%;
-`.withComponent('li');
-
-export const StyledChildContainerListItem = styled(StyledChildContainer)`
-  height: 100%;
-`.withComponent('li');
-
-export const StyledListItem = styled.li`
-  height: 100%;
-`;
+export const StyledChildContainerListItem = styled(
+  StyledChildContainer,
+)``.withComponent('li');

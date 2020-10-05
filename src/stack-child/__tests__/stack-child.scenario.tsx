@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Flow, StackDistribution, Stack} from '../../stack';
+import {Flow, Stack} from '../../stack';
 
 import {styled, getColorFromTheme} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
@@ -7,20 +7,19 @@ import {Tag} from '../../tag/tag';
 import {StackChild} from '..';
 
 const MainContainer = styled.div`
+  margin: 0 auto;
   max-width: 800px;
-  margin: auto;
   max-height: 768px;
 `;
 
-const Container = styled.div`
+const Container = styled.div<{
+  hasHeight?: boolean;
+  hasWidth?: boolean;
+}>`
   border: solid 1px red;
   background-color: ${getColorFromTheme('neutral020')};
-`;
-
-const Block = styled.div<{isBlock?: boolean; hasHeight: boolean}>`
-  display: ${({isBlock}) => (isBlock ? 'block' : 'inline-block')};
   height: ${({hasHeight}) => (hasHeight ? '200px' : 'auto')};
-  border: dotted 1px ${getColorFromTheme('red040')};
+  width: ${({hasWidth}) => (hasWidth ? '400px' : 'auto')};
 `;
 
 export default {
@@ -33,23 +32,17 @@ export default {
         <MainContainer>
           <StorybookHeading>StackChild with custom order</StorybookHeading>
           <Container>
-            <Block hasHeight={false}>
-              <Stack
-                spaceInline="sizing050"
-                flow={Flow.HorizontalTop}
-                stackDistribution={StackDistribution.Center}
-              >
-                <StackChild order={3}>
-                  <Tag>Child 1</Tag>
-                </StackChild>
-                <StackChild order={1}>
-                  <Tag>Child 2</Tag>
-                </StackChild>
-                <StackChild order={1}>
-                  <Tag>Child 3</Tag>
-                </StackChild>
-              </Stack>
-            </Block>
+            <Stack spaceInline="sizing050" flow={Flow.HorizontalTop}>
+              <StackChild order={3}>
+                <Tag>Child 1</Tag>
+              </StackChild>
+              <StackChild order={1}>
+                <Tag>Child 2</Tag>
+              </StackChild>
+              <StackChild order={1}>
+                <Tag>Child 3</Tag>
+              </StackChild>
+            </Stack>
           </Container>
         </MainContainer>
       ),
@@ -61,24 +54,17 @@ export default {
         <MainContainer>
           <StorybookHeading>StackChild with stack list</StorybookHeading>
           <Container>
-            <Block hasHeight={false}>
-              <Stack
-                spaceInline="sizing050"
-                flow={Flow.HorizontalTop}
-                stackDistribution={StackDistribution.Center}
-                list
-              >
-                <StackChild order={3}>
-                  <Tag>Child 1</Tag>
-                </StackChild>
-                <StackChild order={1}>
-                  <Tag>Child 2</Tag>
-                </StackChild>
-                <StackChild order={1}>
-                  <Tag>Child 3</Tag>
-                </StackChild>
-              </Stack>
-            </Block>
+            <Stack spaceInline="sizing050" flow={Flow.HorizontalTop} list>
+              <StackChild order={3}>
+                <Tag>Child 1</Tag>
+              </StackChild>
+              <StackChild order={1}>
+                <Tag>Child 2</Tag>
+              </StackChild>
+              <StackChild order={1}>
+                <Tag>Child 3</Tag>
+              </StackChild>
+            </Stack>
           </Container>
         </MainContainer>
       ),

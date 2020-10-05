@@ -86,22 +86,30 @@ export const TabGroup: React.FC<TabGroupProps> = ({
     );
 
   const renderChildren = () =>
-    children.map((tab: React.ReactElement, i, array) => (
-      <React.Fragment key={tab.props.tabKey}>
-        {React.cloneElement(tab, {
+    React.Children.toArray(children).reduce(
+      (acc, tab: React.ReactElement, i, array) => {
+        const TabClone = React.cloneElement(tab, {
           onClick: () => setActiveTab(tab.props.tabKey),
           onMouseDown: (e: React.MouseEvent) => e.preventDefault(),
           onKeyDown: (e: React.KeyboardEvent<HTMLElement>) => handleKeyDown(e),
           isSelected: activeTab === tab.props.tabKey,
           size,
-        })}
-        {divider && i < array.length - 1 && (
-          <StackChild alignSelf={AlignSelfValues.Stretch}>
-            <Divider vertical />
-          </StackChild>
-        )}
-      </React.Fragment>
-    ));
+        });
+
+        acc.push(TabClone);
+
+        if (divider && i < array.length - 1) {
+          acc.push(
+            <StackChild alignSelf={AlignSelfValues.Stretch}>
+              <Divider vertical />
+            </StackChild>,
+          );
+        }
+
+        return acc;
+      },
+      [] as React.ReactElement[],
+    );
 
   return (
     <Stack flow={Flow.VerticalLeft} spaceInline="sizing020" wrap="wrap">
@@ -112,7 +120,7 @@ export const TabGroup: React.FC<TabGroupProps> = ({
           inline
           role="tablist"
         >
-          {children && renderChildren()}
+          {renderChildren()}
         </StyledInnerTabGroup>
       </StyledOuterTabGroup>
       {tabContent}

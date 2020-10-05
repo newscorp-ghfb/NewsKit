@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`StackChild renders null 1`] = `<DocumentFragment />`;
+
 exports[`StackChild renders within a Stack with custom order 1`] = `
 <DocumentFragment>
   .emotion-18 {
@@ -22,13 +24,13 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
 }
 
 .emotion-5 {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
 }
 
 .emotion-4 {
@@ -148,23 +150,23 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
 }
 
 .emotion-11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .emotion-17 {
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
 }
 
 <div
@@ -255,13 +257,13 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
 exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
 <DocumentFragment>
   .emotion-5 {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
 }
 
 .emotion-4 {
@@ -380,27 +382,27 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-12 {
+.emotion-11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
+}
+
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-}
-
-.emotion-19 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
-.emotion-21 {
+.emotion-18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -423,98 +425,82 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
   margin-bottom: 0;
 }
 
-.emotion-6 {
-  height: 100%;
-}
-
 <ul
-    class="emotion-21"
+    class="emotion-18"
   >
     <li
-      class="emotion-6"
+      class="emotion-5"
     >
       <div
-        class="emotion-5"
+        class="emotion-4"
       >
         <div
-          class="emotion-4"
+          class="emotion-3"
+          data-testid="tag"
         >
           <div
-            class="emotion-3"
-            data-testid="tag"
+            class="emotion-2"
           >
             <div
-              class="emotion-2"
+              class="emotion-1"
             >
-              <div
-                class="emotion-1"
+              <span
+                class="emotion-0"
               >
-                <span
-                  class="emotion-0"
-                >
-                  child 1
-                </span>
-              </div>
+                child 1
+              </span>
             </div>
           </div>
         </div>
       </div>
     </li>
     <li
-      class="emotion-6"
+      class="emotion-11"
     >
       <div
-        class="emotion-12"
+        class="emotion-4"
       >
         <div
-          class="emotion-4"
+          class="emotion-3"
+          data-testid="tag"
         >
           <div
-            class="emotion-3"
-            data-testid="tag"
+            class="emotion-2"
           >
             <div
-              class="emotion-2"
+              class="emotion-1"
             >
-              <div
-                class="emotion-1"
+              <span
+                class="emotion-0"
               >
-                <span
-                  class="emotion-0"
-                >
-                  child 2
-                </span>
-              </div>
+                child 2
+              </span>
             </div>
           </div>
         </div>
       </div>
     </li>
     <li
-      class="emotion-6"
+      class="emotion-17"
     >
       <div
-        class="emotion-19"
+        class="emotion-4"
       >
         <div
-          class="emotion-4"
+          class="emotion-3"
+          data-testid="tag"
         >
           <div
-            class="emotion-3"
-            data-testid="tag"
+            class="emotion-2"
           >
             <div
-              class="emotion-2"
+              class="emotion-1"
             >
-              <div
-                class="emotion-1"
+              <span
+                class="emotion-0"
               >
-                <span
-                  class="emotion-0"
-                >
-                  child 3
-                </span>
-              </div>
+                child 3
+              </span>
             </div>
           </div>
         </div>

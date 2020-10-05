@@ -53,6 +53,7 @@ export interface StyledChildProps
   > {
   $order?: number;
   $alignSelf?: AlignSelfValues;
+  flexGrow?: boolean | number;
 }
 
 export enum Flow {
