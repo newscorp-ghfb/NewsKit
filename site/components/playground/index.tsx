@@ -5,6 +5,7 @@ import {
   getSizingFromTheme,
   getBorderFromTheme,
   getTypographyPresetFromTheme,
+  deepMerge,
 } from 'newskit';
 import {LegacyBlock, LegacyBlockProps} from '../legacy-block';
 import {MultiChoiceKnob} from './knobs/multichoice-knob';
@@ -148,7 +149,7 @@ export const Playground: React.FC<
       typeof state[prop] === 'object' &&
       state[prop] !== null
     ) {
-      newValue = {...(state[prop] as object), ...value};
+      newValue = deepMerge(state[prop] as object, value);
     }
 
     return setState({
