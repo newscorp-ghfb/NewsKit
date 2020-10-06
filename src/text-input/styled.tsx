@@ -7,12 +7,13 @@ import {
   getSpacingInset,
   getSizingFromTheme,
   getStylePreset,
-  getStylePresetFromTheme,
+  getSpacingFromTheme,
   MQ,
 } from '../utils/style';
 import {TextInputProps, TextInputSize} from './types';
 import {TextBlock, TextBlockProps} from '../text-block/text-block';
 import {getToken} from '../utils/get-token';
+import {Block, BlockProps} from '../block';
 
 export const StyledTextInputContainer = styled.div<TextInputProps>`
   ${({theme, overrides}) => {
@@ -29,18 +30,40 @@ export const StyledTextInputContainer = styled.div<TextInputProps>`
   }}
 `;
 
-interface InputContainer
+interface StyledTextInputProps
   extends Pick<TextInputProps, 'overrides' | 'disabled'> {
   $size: TextInputSize;
   stylePreset?: MQ<string>;
   id?: string;
+  isInvalid?: boolean;
+  isValid?: boolean;
+  role?: string;
+  dataTestId?: string;
+  spaceInsetRight?: string;
 }
 
-export const StyledInput = styled.input<InputContainer>`
+export const InputIconContainer = styled.div`
+  position: relative;
+`;
+
+export const IconContainer = styled.span<{iconSpace: string}>`
+  display: flex;
+  position: absolute;
+  right: ${({iconSpace}) => getSpacingFromTheme(iconSpace)};
+  top: 50%;
+  transform: translate(0, -65%);
+`;
+
+export const StyledInput = styled.input<StyledTextInputProps>`
+  &{
+    padding-right: ${({spaceInsetRight, isValid, isInvalid}) =>
+      (isValid || isInvalid) && getSpacingFromTheme(spaceInsetRight)};
+  }
   box-sizing: border-box;
   width: 100%;
   cursor: ${({disabled}) => (disabled ? 'not-allowed' : 'default')};
-  ${({$size}) => getStylePreset(`textInput.${$size}.input`, 'input')}
+  ${({$size, isInvalid, isValid}) =>
+    getStylePreset(`textInput.${$size}.input`, 'input', {isInvalid, isValid})}
   ${({$size}) =>
     getTypographyPreset(`textInput.${$size}.input`, 'input', {
       withCrop: true,
@@ -49,10 +72,10 @@ export const StyledInput = styled.input<InputContainer>`
   ${({$size}) => getSpacingStackHorizontal(`textInput.${$size}.input`, 'input')}
   ${({$size}) =>
     getSpacingInlineHorizontal(`textInput.${$size}.input`, 'input')} 
-  min-height: ${({$size}) => getMinHeight(`textInput.${$size}.input`, 'input')} 
+  min-height: ${({$size}) => getMinHeight(`textInput.${$size}.input`, 'input')}
 `;
 
-export const StyledLabel = styled.label<InputContainer>`
+export const StyledLabel = styled.label<StyledTextInputProps>`
     display: block;
     ${({$size}) => getStylePreset(`textInput.${$size}.label`, 'label')}
     ${({$size}) =>
@@ -66,16 +89,24 @@ export const StyledLabel = styled.label<InputContainer>`
  `;
 
 export const StyledAssistiveText = styled(TextBlock)<
-  Omit<TextBlockProps, 'overrides'> & InputContainer
+  Omit<TextBlockProps, 'overrides'> & StyledTextInputProps
 >`
-  ${({$size}) =>
-    getStylePreset(`textInput.${$size}.assistiveText`, 'assistiveText')}
-  ${({disabled}) =>
-    getStylePresetFromTheme('textInputAssistiveText', 'stylePreset', {
+  ${({$size, isInvalid, isValid, disabled}) =>
+    getStylePreset(`textInput.${$size}.assistiveText`, 'assistiveText', {
+      isInvalid,
+      isValid,
       isDisabled: disabled,
     })}
+
   ${({$size}) =>
     getTypographyPreset(`textInput.${$size}.assistiveText`, 'assistiveText', {
       withCrop: true,
     })}
+`;
+
+export const StyledAssistiveTextContainer = styled(Block)<
+  Omit<BlockProps, 'overrides'> & StyledTextInputProps
+>`
+  min-height: ${({$size}) =>
+    getMinHeight(`textInput.${$size}.assistiveText`, 'assistiveText')};
 `;

@@ -14,6 +14,7 @@ export interface StylePresetStyles {
   borderStyle?: string;
   borderWidth?: string;
   boxShadow?: string;
+  caretColor?: string;
   color?: string;
   iconColor?: string;
   placeholderColor?: string;
@@ -34,6 +35,8 @@ export interface StylePreset {
   visited?: StylePresetStyles;
   disabled?: StylePresetStyles;
   selected?: StylePresetStyles;
+  invalid?: StylePresetStyles;
+  valid?: StylePresetStyles;
 }
 export type StylePresetStates = keyof StylePreset;
 

@@ -180,6 +180,7 @@
     "dotenv": "^8.0.0",
     "emotion": "^10.0.27",
     "emotion-theming": "^10.0.27",
+    "react-hook-form": "^6.8.2",
     "react-range": "^1.5.3"
   },
   "resolutions": {

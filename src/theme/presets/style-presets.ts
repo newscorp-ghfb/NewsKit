@@ -756,6 +756,14 @@ stylePresets.textInput = {
     borderColor: '{{colors.interactiveDisabled}}',
     color: '{{colors.inkNonEssential}}',
   },
+  invalid: {
+    caretColor: '{{colors.inkNegative}}',
+    borderColor: '{{colors.semanticNegative030}}',
+  },
+  valid: {
+    caretColor: '{{colors.inkPositive}}',
+    borderColor: '{{colors.semanticPositive030}}',
+  },
 };
 
 stylePresets.textInputAssistiveText = {
@@ -764,6 +772,24 @@ stylePresets.textInputAssistiveText = {
   },
   disabled: {
     color: '{{colors.inkNonEssential}}',
+  },
+  invalid: {
+    color: '{{colors.inkNegative}}',
+  },
+  valid: {
+    color: '{{colors.inkPositive}}',
+  },
+};
+
+stylePresets.iconPositive = {
+  base: {
+    iconColor: '{{colors.inkPositive}}',
+  },
+};
+
+stylePresets.iconNegative = {
+  base: {
+    iconColor: '{{colors.inkNegative}}',
   },
 };
 

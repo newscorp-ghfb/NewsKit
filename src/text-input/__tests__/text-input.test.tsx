@@ -9,7 +9,7 @@ const renderTextInputWithLabelAndAssistiveText = (props: TextInputProps) => (
 );
 
 const renderTextInputWithoutAssistiveText = (props: TextInputProps) => (
-  <TextInput label="label" {...props} />
+  <TextInput label="label" {...props} spellCheck />
 );
 
 const renderTextInputWithLabelHidden = (props: TextInputProps) => (

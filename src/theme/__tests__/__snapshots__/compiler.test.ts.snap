@@ -606,15 +606,19 @@ Object {
     "textInput": Object {
       "large": Object {
         "assistiveText": Object {
+          "minHeight": "sizing030",
           "stylePreset": "textInputAssistiveText",
           "typographyPreset": "label030",
         },
         "input": Object {
+          "iconSize": "iconSize030",
+          "iconSpace": "space030",
           "minHeight": "sizing090",
           "spaceInset": "spaceInset030",
+          "spaceInsetRight": "space080",
           "spaceStack": "space020",
           "stylePreset": "textInput",
-          "typographyPreset": "body030",
+          "typographyPreset": "label030",
         },
         "label": Object {
           "spaceInline": "space010",
@@ -625,15 +629,19 @@ Object {
       },
       "medium": Object {
         "assistiveText": Object {
+          "minHeight": "sizing030",
           "stylePreset": "textInputAssistiveText",
           "typographyPreset": "label020",
         },
         "input": Object {
+          "iconSize": "iconSize020",
+          "iconSpace": "space030",
           "minHeight": "sizing080",
           "spaceInset": "spaceInset030",
+          "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
-          "typographyPreset": "body020",
+          "typographyPreset": "label020",
         },
         "label": Object {
           "spaceInline": "space010",
@@ -644,15 +652,19 @@ Object {
       },
       "small": Object {
         "assistiveText": Object {
+          "minHeight": "sizing030",
           "stylePreset": "textInputAssistiveText",
           "typographyPreset": "label020",
         },
         "input": Object {
+          "iconSize": "iconSize020",
+          "iconSpace": "space030",
           "minHeight": "sizing060",
-          "spaceInset": "spaceInsetSquish010",
+          "spaceInset": "spaceInset020",
+          "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
-          "typographyPreset": "body020",
+          "typographyPreset": "label020",
         },
         "label": Object {
           "spaceInline": "space010",
@@ -1889,6 +1901,16 @@ Object {
         "iconColor": "#2e2e2e",
       },
     },
+    "iconNegative": Object {
+      "base": Object {
+        "iconColor": "#d20600",
+      },
+    },
+    "iconPositive": Object {
+      "base": Object {
+        "iconColor": "#0a782a",
+      },
+    },
     "imageCircle": Object {
       "base": Object {
         "borderRadius": "50%",
@@ -2178,6 +2200,14 @@ Object {
       "hover": Object {
         "backgroundColor": "#fafafa",
       },
+      "invalid": Object {
+        "borderColor": "#ef1703",
+        "caretColor": "#d20600",
+      },
+      "valid": Object {
+        "borderColor": "#23a248",
+        "caretColor": "#0a782a",
+      },
     },
     "textInputAssistiveText": Object {
       "base": Object {
@@ -2185,6 +2215,12 @@ Object {
       },
       "disabled": Object {
         "color": "#9c9c9c",
+      },
+      "invalid": Object {
+        "color": "#d20600",
+      },
+      "valid": Object {
+        "color": "#0a782a",
       },
     },
     "titleBar": Object {

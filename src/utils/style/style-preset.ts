@@ -16,6 +16,8 @@ export interface GetStylePresetFromThemeOptions {
   isLoading?: boolean;
   isSelected?: boolean;
   isDisabled?: boolean;
+  isInvalid?: boolean;
+  isValid?: boolean;
   isSvg?: boolean;
   omitStates?: StylePresetStates[];
   filterStates?: StylePresetStates[];
@@ -74,8 +76,10 @@ const getPresetStates = (
     isSelected = false,
     isLoading = false,
     isDisabled = false,
+    isInvalid = false,
+    isValid = false,
   } = options || {};
-  const {selected, loading, ...presetStates} =
+  const {selected, loading, invalid, valid, ...presetStates} =
     filterStates && filterStates.length
       ? filterObject(stylePreset, filterStates)
       : rejectObject(stylePreset, omitStates);
@@ -83,6 +87,8 @@ const getPresetStates = (
     (isDisabled && presetStates.disabled) ||
     (isLoading && loading) ||
     (isSelected && selected) ||
+    (isInvalid && invalid) ||
+    (isValid && valid) ||
     undefined;
   if (stateOverrides) {
     const {base = {}} = presetStates;

@@ -40,4 +40,5 @@ export * from './utils/responsive-helpers';
 export * from './utils/style-types';
 export * from './utils/style';
 export * from './volume-control';
+export * from './form';
 export * from './caption';

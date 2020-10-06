@@ -157,6 +157,11 @@
         "id": "/components/flag"
       },
       {
+        "title": "Form",
+        "page": true,
+        "id": "/components/form"
+      },
+      {
         "title": "Grid & Cell",
         "page": true,
         "id": "/components/grid"

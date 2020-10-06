@@ -196,6 +196,7 @@ export const Playground: React.FC<
         {...commonBlockProps}
         minHeight="200px"
         backgroundColor="transparent"
+        padding="sizing080"
       >
         <ErrorBoundary key={errorBoundaryKey}>
           <Component {...state} />

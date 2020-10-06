@@ -15,6 +15,8 @@ export interface TextInputProps
   hideLabel?: boolean;
   assistiveText?: string;
   ariaLabel?: string;
+  rules?: Record<string, string | object>;
+  dataTestId?: string;
   overrides?: {
     width?: SizingKeys | string;
     input?: {
