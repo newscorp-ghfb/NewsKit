@@ -701,7 +701,7 @@ Object {
     },
     "volumeControl": Object {
       "button": Object {
-        "iconSize": "iconSize010",
+        "iconSize": "iconSize020",
         "size": "small",
         "stylePreset": "volumeControlButtons",
       },

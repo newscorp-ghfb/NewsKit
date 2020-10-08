@@ -561,8 +561,8 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-17 svg {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-17 svg {
@@ -1959,8 +1959,8 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-37 svg {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-37 svg {
@@ -3484,8 +3484,8 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-32 svg {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-32 svg {
@@ -4885,8 +4885,8 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 }
 
 .emotion-32 svg {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-32 svg {
@@ -6598,8 +6598,8 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
 }
 
 .emotion-32 svg {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-32 svg {

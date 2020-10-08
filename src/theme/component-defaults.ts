@@ -552,7 +552,7 @@ export const componentDefaults = {
     },
     button: {
       stylePreset: 'volumeControlButtons',
-      iconSize: 'iconSize010',
+      iconSize: 'iconSize020',
       size: 'small',
     },
   },

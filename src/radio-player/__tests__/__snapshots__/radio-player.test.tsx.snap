@@ -975,8 +975,8 @@ exports[`Radio Player default player 1`] = `
 }
 
 .emotion-49 svg {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-49 svg {
@@ -2648,8 +2648,8 @@ exports[`Radio Player live player 1`] = `
 }
 
 .emotion-68 svg {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-68 svg {
@@ -4781,8 +4781,8 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 .emotion-71 svg {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-71 svg {
@@ -7056,8 +7056,8 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 .emotion-87 svg {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-87 svg {
