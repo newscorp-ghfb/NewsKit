@@ -6,17 +6,17 @@ describe('compileTheme', () => {
   test('compiles flat sibling tokens', () => {
     const theme: any = {
       red010: '#ff0000',
-      semanticNegative010: '{{red010}}',
+      interactiveNegative010: '{{red010}}',
     };
 
     expect(compileTheme(theme)).toMatchInlineSnapshot(`
-            Object {
-              "compiled": true,
-              "icons": Object {},
-              "red010": "#ff0000",
-              "semanticNegative010": "#ff0000",
-            }
-        `);
+      Object {
+        "compiled": true,
+        "icons": Object {},
+        "interactiveNegative010": "#ff0000",
+        "red010": "#ff0000",
+      }
+    `);
   });
 
   test('compiles falsy value tokens', () => {
@@ -43,20 +43,20 @@ describe('compileTheme', () => {
     const theme: any = {
       colors: {
         red010: '#ff0000',
-        semanticNegative010: '{{colors.red010}}',
+        interactiveNegative010: '{{colors.red010}}',
       },
     };
 
     expect(compileTheme(theme)).toMatchInlineSnapshot(`
-            Object {
-              "colors": Object {
-                "red010": "#ff0000",
-                "semanticNegative010": "#ff0000",
-              },
-              "compiled": true,
-              "icons": Object {},
-            }
-        `);
+      Object {
+        "colors": Object {
+          "interactiveNegative010": "#ff0000",
+          "red010": "#ff0000",
+        },
+        "compiled": true,
+        "icons": Object {},
+      }
+    `);
   });
 
   test('preserves number types', () => {
@@ -213,34 +213,34 @@ describe('compileTheme', () => {
     const theme: any = {
       colors: {
         red010: '#ff0000',
-        semanticNegative010: '{{colors.red010}}',
+        interactiveNegative010: '{{colors.red010}}',
       },
       stylePresets: {
         myPreset: {
           base: {
-            backgroundColor: '{{colors.semanticNegative010}}',
+            backgroundColor: '{{colors.interactiveNegative010}}',
           },
         },
       },
     };
 
     expect(compileTheme(theme)).toMatchInlineSnapshot(`
-            Object {
-              "colors": Object {
-                "red010": "#ff0000",
-                "semanticNegative010": "#ff0000",
-              },
-              "compiled": true,
-              "icons": Object {},
-              "stylePresets": Object {
-                "myPreset": Object {
-                  "base": Object {
-                    "backgroundColor": "#ff0000",
-                  },
-                },
-              },
-            }
-        `);
+      Object {
+        "colors": Object {
+          "interactiveNegative010": "#ff0000",
+          "red010": "#ff0000",
+        },
+        "compiled": true,
+        "icons": Object {},
+        "stylePresets": Object {
+          "myPreset": Object {
+            "base": Object {
+              "backgroundColor": "#ff0000",
+            },
+          },
+        },
+      }
+    `);
   });
 
   test('compiles tokens in keys', () => {

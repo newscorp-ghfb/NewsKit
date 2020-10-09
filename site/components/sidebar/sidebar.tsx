@@ -92,7 +92,7 @@ const Sidebar: React.FC<SidebarProps> = ({
               tabIndex={0}
               data-testid="close-icon"
             >
-              <Close color="interactive140" size="iconSize010" />
+              <Close color="interactiveSecondary040" size="iconSize010" />
             </IconWrapper>
           </LegacyBlock>
         </Visible>

@@ -57,7 +57,7 @@ exports[`Block with props renders with spaceStack010 for xs, spaceStack020 for s
 exports[`Block with props renders with spaceStack020 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  background-color: #471e79;
+  background-color: #128293;
   color: #ffffff;
   padding: 8px;
   margin-bottom: 8px;

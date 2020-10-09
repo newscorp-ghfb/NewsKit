@@ -45,7 +45,7 @@ const parseAndGet = (
           );
         } else {
           // We recurse down with that token value to support things like colors
-          // e.g. (border color = semanticNegative010 = red010 = #ff0000).
+          // e.g. (border color = interactiveNegative010 = red010 = #ff0000).
           tokenValue = parseAndGet(theme, tokenValue, [tokenPath, ...stack]);
         }
 

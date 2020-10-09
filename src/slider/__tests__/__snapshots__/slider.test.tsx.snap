@@ -438,11 +438,11 @@ exports[`slider labels should render horizontal labels 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-0:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-1 {
@@ -479,11 +479,11 @@ exports[`slider labels should render horizontal labels 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-1:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -570,11 +570,11 @@ exports[`slider labels should render max label 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-0:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -655,11 +655,11 @@ exports[`slider labels should render min label 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-0:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -739,11 +739,11 @@ exports[`slider labels should render vertical labels 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-0:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-1 {
@@ -780,11 +780,11 @@ exports[`slider labels should render vertical labels 1`] = `
 }
 
 .emotion-1:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-1:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -814,9 +814,9 @@ exports[`slider react-range Range function props renderThumb should render custo
 <DocumentFragment>
   .emotion-0 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #e6f4ff;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -834,19 +834,19 @@ exports[`slider react-range Range function props renderThumb should render custo
 }
 
 .emotion-0 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #ffffff;
+  background-color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
@@ -862,7 +862,7 @@ exports[`slider react-range Range function props renderThumb should render custo
 }
 
 .emotion-0:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -878,9 +878,9 @@ exports[`slider react-range Range function props renderThumb should render custo
 <DocumentFragment>
   .emotion-0 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #e6f4ff;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -900,19 +900,19 @@ exports[`slider react-range Range function props renderThumb should render custo
 }
 
 .emotion-0 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #ffffff;
+  background-color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
@@ -928,7 +928,7 @@ exports[`slider react-range Range function props renderThumb should render custo
 }
 
 .emotion-0:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -979,7 +979,7 @@ exports[`slider react-range Range function props renderThumb should render defau
 }
 
 .emotion-0:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 <div
@@ -994,9 +994,9 @@ exports[`slider react-range Range function props renderThumb should render dragg
 <DocumentFragment>
   .emotion-0 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #e6f4ff;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -1016,19 +1016,19 @@ exports[`slider react-range Range function props renderThumb should render dragg
 }
 
 .emotion-0 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #ffffff;
+  background-color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
@@ -1044,7 +1044,7 @@ exports[`slider react-range Range function props renderThumb should render dragg
 }
 
 .emotion-0:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -1060,9 +1060,9 @@ exports[`slider react-range Range function props renderThumb should render multi
 <DocumentFragment>
   .emotion-0 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #e6f4ff;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -1080,19 +1080,19 @@ exports[`slider react-range Range function props renderThumb should render multi
 }
 
 .emotion-0 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #ffffff;
+  background-color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
@@ -1108,7 +1108,7 @@ exports[`slider react-range Range function props renderThumb should render multi
 }
 
 .emotion-0:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -1124,9 +1124,9 @@ exports[`slider react-range Range function props renderThumb should render range
 <DocumentFragment>
   .emotion-1 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #e6f4ff;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -1144,19 +1144,19 @@ exports[`slider react-range Range function props renderThumb should render range
 }
 
 .emotion-1 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #ffffff;
+  background-color: #02509b;
 }
 
 .emotion-1:hover:not(:disabled) svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-1:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-1:active:not(:disabled) svg {
@@ -1172,7 +1172,7 @@ exports[`slider react-range Range function props renderThumb should render range
 }
 
 .emotion-1:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-0 {
@@ -1210,7 +1210,7 @@ exports[`slider react-range Range function props renderThumb should render range
 }
 
 .emotion-0:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 <div
@@ -1232,9 +1232,9 @@ exports[`slider react-range Range function props renderThumb should render slide
 <DocumentFragment>
   .emotion-1 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #e6f4ff;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -1252,19 +1252,19 @@ exports[`slider react-range Range function props renderThumb should render slide
 }
 
 .emotion-1 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #ffffff;
+  background-color: #02509b;
 }
 
 .emotion-1:hover:not(:disabled) svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-1:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-1:active:not(:disabled) svg {
@@ -1280,7 +1280,7 @@ exports[`slider react-range Range function props renderThumb should render slide
 }
 
 .emotion-1:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-0 {
@@ -1317,9 +1317,9 @@ exports[`slider react-range Range function props renderThumb should render undra
 <DocumentFragment>
   .emotion-0 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #e6f4ff;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -1337,19 +1337,19 @@ exports[`slider react-range Range function props renderThumb should render undra
 }
 
 .emotion-0 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #ffffff;
+  background-color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
@@ -1365,7 +1365,7 @@ exports[`slider react-range Range function props renderThumb should render undra
 }
 
 .emotion-0:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -1381,9 +1381,9 @@ exports[`slider react-range Range function props renderThumb should render verti
 <DocumentFragment>
   .emotion-1 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #e6f4ff;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -1401,19 +1401,19 @@ exports[`slider react-range Range function props renderThumb should render verti
 }
 
 .emotion-1 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #ffffff;
+  background-color: #02509b;
 }
 
 .emotion-1:hover:not(:disabled) svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-1:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-1:active:not(:disabled) svg {
@@ -1429,7 +1429,7 @@ exports[`slider react-range Range function props renderThumb should render verti
 }
 
 .emotion-1:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-0 {
@@ -1467,7 +1467,7 @@ exports[`slider react-range Range function props renderThumb should render verti
 }
 
 .emotion-0:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 <div

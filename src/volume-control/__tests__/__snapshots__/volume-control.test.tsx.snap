@@ -122,12 +122,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
   background-color: transparent;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-2 {
@@ -185,9 +185,9 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 
 .emotion-6 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #e6f4ff;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -205,19 +205,19 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-6 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #ffffff;
+  background-color: #02509b;
 }
 
 .emotion-6:hover:not(:disabled) svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-6:active:not(:disabled) svg {
@@ -511,12 +511,12 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
   background-color: transparent;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-2 {
@@ -574,9 +574,9 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 
 .emotion-6 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #e6f4ff;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -594,19 +594,19 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-6 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #ffffff;
+  background-color: #02509b;
 }
 
 .emotion-6:hover:not(:disabled) svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-6:active:not(:disabled) svg {
@@ -900,12 +900,12 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
   background-color: transparent;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-2 {
@@ -963,9 +963,9 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 
 .emotion-6 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #e6f4ff;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -983,19 +983,19 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #ffffff;
+  background-color: #02509b;
 }
 
 .emotion-6:hover:not(:disabled) svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-6:active:not(:disabled) svg {
@@ -1236,12 +1236,12 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
   background-color: transparent;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-2 {
@@ -1282,9 +1282,9 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 
 .emotion-6 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #e6f4ff;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -1302,19 +1302,19 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #ffffff;
+  background-color: #02509b;
 }
 
 .emotion-6:hover:not(:disabled) svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-6:active:not(:disabled) svg {
@@ -1677,12 +1677,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
   background-color: transparent;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-2 {
@@ -1740,9 +1740,9 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 .emotion-6 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #e6f4ff;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -1760,19 +1760,19 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-6 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #ffffff;
+  background-color: #02509b;
 }
 
 .emotion-6:hover:not(:disabled) svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-6:active:not(:disabled) svg {
@@ -2066,12 +2066,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
   background-color: transparent;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-2 {
@@ -2129,9 +2129,9 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 .emotion-6 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #e6f4ff;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -2149,19 +2149,19 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-6 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #ffffff;
+  background-color: #02509b;
 }
 
 .emotion-6:hover:not(:disabled) svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-6:active:not(:disabled) svg {
@@ -2455,12 +2455,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
   background-color: transparent;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-2 {
@@ -2518,9 +2518,9 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 
 .emotion-6 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #e6f4ff;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -2538,19 +2538,19 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-6 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #ffffff;
+  background-color: #02509b;
 }
 
 .emotion-6:hover:not(:disabled) svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-6:active:not(:disabled) svg {
@@ -2844,12 +2844,12 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
   background-color: transparent;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-2 {
@@ -2907,9 +2907,9 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 
 .emotion-6 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #e6f4ff;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -2927,19 +2927,19 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-6 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #ffffff;
+  background-color: #02509b;
 }
 
 .emotion-6:hover:not(:disabled) svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-6:active:not(:disabled) svg {
@@ -3233,12 +3233,12 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
   background-color: transparent;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-2 {
@@ -3296,9 +3296,9 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 
 .emotion-6 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #e6f4ff;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -3316,19 +3316,19 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-6 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6:hover:not(:disabled) {
-  background-color: #ffffff;
+  background-color: #02509b;
 }
 
 .emotion-6:hover:not(:disabled) svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-6:active:not(:disabled) svg {

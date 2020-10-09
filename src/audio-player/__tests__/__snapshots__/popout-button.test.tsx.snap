@@ -70,11 +70,11 @@ exports[`PopoutButton renders correctly with default props 1`] = `
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-2 {

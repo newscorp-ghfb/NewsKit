@@ -94,14 +94,14 @@ const tagPrimary = {
   base: {
     backgroundColor: '{{colors.transparent}}',
     borderStyle: 'solid',
-    borderColor: '{{colors.interactive130}}',
+    borderColor: '{{colors.interactiveSecondary030}}',
     borderWidth: '{{borders.borderWidth010}}',
     color: '{{colors.inkBase}}',
     iconColor: '{{colors.inkBase}}',
     borderRadius: '{{borders.borderRadiusSharp}}',
   },
   hover: {
-    backgroundColor: '{{colors.interactive120}}',
+    backgroundColor: '{{colors.interactiveSecondary020}}',
   },
   active: {
     borderWidth: '{{borders.borderWidth010}}',
@@ -109,7 +109,7 @@ const tagPrimary = {
   current: {
     color: '{{colors.inkInverse}}',
     iconColor: '{{colors.inkInverse}}',
-    backgroundColor: '{{colors.interactive130}}',
+    backgroundColor: '{{colors.interactiveSecondary030}}',
     borderStyle: 'none',
   },
 };

@@ -356,11 +356,11 @@ exports[`Card renders actions section with given component 1`] = `
 
 .emotion-11:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-11:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-10 {
@@ -715,11 +715,11 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 
 .emotion-11:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-11:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-10 {
@@ -1107,11 +1107,11 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 
 .emotion-11:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-11:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-10 {
@@ -1297,13 +1297,13 @@ exports[`Card renders card with overrides 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border-style: solid;
-  border-color: #93a1c3;
+  border-color: #b399cc;
   border-width: 1px;
 }
 
 .emotion-2 {
   box-sizing: border-box;
-  background-color: #ffd284;
+  background-color: #ffdb89;
   padding: 4px 8px;
 }
 
@@ -1472,11 +1472,11 @@ exports[`Card renders media section if the media data is provided 1`] = `
   padding-top: 66%;
   height: 0;
   border-radius: 0;
-  background-color: #f0f0f0;
+  background-color: #fafafa;
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -1596,11 +1596,11 @@ exports[`Card renders media section with a custom component 1`] = `
   padding-top: 0;
   height: 0;
   border-radius: 0;
-  background-color: #f0f0f0;
+  background-color: #fafafa;
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-2 {
@@ -1888,11 +1888,11 @@ exports[`Card renders media section with a custom component using overrides 1`] 
   padding-top: 0;
   height: 0;
   border-radius: 8px;
-  background-color: #f0f0f0;
+  background-color: #fafafa;
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -2096,11 +2096,11 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
   padding-top: 28%;
   height: 0;
   border-radius: 0;
-  background-color: #f0f0f0;
+  background-color: #fafafa;
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -2304,11 +2304,11 @@ exports[`Card renders media section with overrides 1`] = `
   padding-top: 66%;
   height: 0;
   border-radius: 8px;
-  background-color: #f0f0f0;
+  background-color: #fafafa;
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -2428,11 +2428,11 @@ exports[`Card renders with card items 1`] = `
   padding-top: 0;
   height: 0;
   border-radius: 0;
-  background-color: #f0f0f0;
+  background-color: #fafafa;
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-2 {
@@ -2743,11 +2743,11 @@ exports[`Card renders with card items 1`] = `
 
 .emotion-17:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-17:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-16 {
@@ -2971,13 +2971,13 @@ exports[`CardInset renders card with overrides 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border-style: solid;
-  border-color: #93a1c3;
+  border-color: #b399cc;
   border-width: 1px;
 }
 
 .emotion-2 {
   box-sizing: border-box;
-  background-color: #ffd284;
+  background-color: #ffdb89;
 }
 
 @media screen and (max-width:479px) {
@@ -3053,11 +3053,11 @@ exports[`CardInset renders with card items 1`] = `
   padding-top: 0;
   height: 0;
   border-radius: 0;
-  background-color: #f0f0f0;
+  background-color: #fafafa;
 }
 
 .emotion-4 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-2 {
@@ -3335,11 +3335,11 @@ exports[`CardInset renders with card items 1`] = `
 
 .emotion-17:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-17:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-16 {

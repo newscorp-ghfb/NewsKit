@@ -731,12 +731,12 @@ exports[`Radio Player default player 1`] = `
 }
 
 .emotion-27:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
   background-color: transparent;
 }
 
 .emotion-27:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-24 {
@@ -783,7 +783,7 @@ exports[`Radio Player default player 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #9c9c9c;
+  color: #c0c0c0;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -799,7 +799,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 .emotion-39 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-42 {
@@ -992,12 +992,12 @@ exports[`Radio Player default player 1`] = `
 }
 
 .emotion-49:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
   background-color: transparent;
 }
 
 .emotion-49:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-53 {
@@ -1039,7 +1039,7 @@ exports[`Radio Player default player 1`] = `
 }
 
 .emotion-52 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-52:hover:not(:disabled) {
@@ -2665,12 +2665,12 @@ exports[`Radio Player live player 1`] = `
 }
 
 .emotion-68:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
   background-color: transparent;
 }
 
 .emotion-68:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-72 {
@@ -2712,7 +2712,7 @@ exports[`Radio Player live player 1`] = `
 }
 
 .emotion-71 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-71:hover:not(:disabled) {
@@ -4537,12 +4537,12 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 .emotion-49:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
   background-color: transparent;
 }
 
 .emotion-49:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-46 {
@@ -4589,7 +4589,7 @@ exports[`Radio Player player with popout link 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #9c9c9c;
+  color: #c0c0c0;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -4605,7 +4605,7 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 .emotion-61 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-64 {
@@ -4798,12 +4798,12 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 .emotion-71:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
   background-color: transparent;
 }
 
 .emotion-71:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-75 {
@@ -4845,7 +4845,7 @@ exports[`Radio Player player with popout link 1`] = `
 }
 
 .emotion-74 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-74:hover:not(:disabled) {
@@ -6812,12 +6812,12 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 .emotion-65:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
   background-color: transparent;
 }
 
 .emotion-65:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-8 {
@@ -6864,7 +6864,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: transparent;
-  color: #9c9c9c;
+  color: #c0c0c0;
   border-radius: 50%;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -6880,7 +6880,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 .emotion-77 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-80 {
@@ -7073,12 +7073,12 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 .emotion-87:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
   background-color: transparent;
 }
 
 .emotion-87:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-91 {
@@ -7120,7 +7120,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
 }
 
 .emotion-90 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-90:hover:not(:disabled) {
@@ -7792,7 +7792,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
   -moz-appearance: none;
   appearance: none;
   overflow: hidden;
-  background-color: #471e79;
+  background-color: #128293;
   color: #ffffff;
 }
 

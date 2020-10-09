@@ -3,29 +3,26 @@ import {createTheme, newskitDarkTheme} from 'newskit';
 const stylePresets = {
   buttonLightDarkToggle: {
     base: {
-      backgroundColor: '{{colors.interactive010}}',
+      backgroundColor: '{{colors.interactivePrimary010}}',
       borderRadius: '{{borders.borderRadiusCircle}}',
       iconColor: '{{colors.inkBrand010}}',
     },
     hover: {
-      backgroundColor: '{{colors.interactive020}}',
+      backgroundColor: '{{colors.interactivePrimary020}}',
     },
     active: {
-      backgroundColor: '{{colors.interactive020}}',
+      backgroundColor: '{{colors.interactivePrimary020}}',
     },
   },
   linkSectionNavigation: {
     base: {
-      color: '{{colors.inkLink}}',
+      color: '{{colors.interactivePrimary030}}',
     },
     hover: {
-      color: '{{colors.inkLinkHover}}',
+      color: '{{colors.interactivePrimary040}}',
     },
     active: {
-      color: '{{colors.inkLinkActive}}',
-    },
-    visited: {
-      color: '{{colors.inkLink}}',
+      color: '{{colors.interactivePrimary050}}',
     },
   },
   linkLogo: {

@@ -227,11 +227,11 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-2 {
@@ -411,11 +411,11 @@ exports[`IconButton renders Large Icon Button 1`] = `
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -559,11 +559,11 @@ exports[`IconButton renders Medium Icon Button 1`] = `
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -671,11 +671,11 @@ exports[`IconButton renders Small Icon Button 1`] = `
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-2 {
@@ -819,11 +819,11 @@ exports[`IconButton renders when there is an icon with a colour 1`] = `
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-2 {
@@ -1008,11 +1008,11 @@ exports[`IconButton renders with different style preset 1`] = `
 
 .emotion-3:disabled {
   border-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div

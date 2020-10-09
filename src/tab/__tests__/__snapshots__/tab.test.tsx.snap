@@ -186,7 +186,7 @@ exports[`Tab renders disabled tab 1`] = `
   appearance: none;
   overflow: hidden;
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 200ms;
@@ -201,7 +201,7 @@ exports[`Tab renders disabled tab 1`] = `
 }
 
 .emotion-3 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -309,11 +309,11 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
 
 .emotion-5:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-5:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-4 {
@@ -503,11 +503,11 @@ exports[`Tab renders label with fallback formatting 1`] = `
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-2 {
@@ -701,11 +701,11 @@ exports[`Tab renders large tab 1`] = `
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-0 {
@@ -869,11 +869,11 @@ exports[`Tab renders small tab 1`] = `
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-0 {
@@ -1070,11 +1070,11 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
 
 .emotion-5:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-5:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -1201,11 +1201,11 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
 
 .emotion-5:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-5:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-0 {
@@ -1452,11 +1452,11 @@ exports[`Tab renders with different minHeight 1`] = `
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -1563,11 +1563,11 @@ exports[`Tab should render custom aria-label tab 1`] = `
 
 .emotion-5:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-5:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-4 {

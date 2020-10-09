@@ -13,7 +13,7 @@ exports[`Headings renders H1 correctly with overrides 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2f75d7;
+  color: #0a68c1;
 }
 
 .emotion-0::before {
@@ -33,31 +33,31 @@ exports[`Headings renders H1 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2f75d7;
+  fill: #0a68c1;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #2f75d7;
+  color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #02509b;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #2f75d7;
+  color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #01396e;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #903d91;
+  color: #7547a3;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #903d91;
+  fill: #7547a3;
 }
 
 <h1
@@ -188,7 +188,7 @@ exports[`Headings renders H2 correctly with overrides 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2f75d7;
+  color: #0a68c1;
 }
 
 .emotion-0::before {
@@ -208,31 +208,31 @@ exports[`Headings renders H2 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2f75d7;
+  fill: #0a68c1;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #2f75d7;
+  color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #02509b;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #2f75d7;
+  color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #01396e;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #903d91;
+  color: #7547a3;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #903d91;
+  fill: #7547a3;
 }
 
 <h2
@@ -334,7 +334,7 @@ exports[`Headings renders H3 correctly with overrides 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2f75d7;
+  color: #0a68c1;
 }
 
 .emotion-0::before {
@@ -354,31 +354,31 @@ exports[`Headings renders H3 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2f75d7;
+  fill: #0a68c1;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #2f75d7;
+  color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #02509b;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #2f75d7;
+  color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #01396e;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #903d91;
+  color: #7547a3;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #903d91;
+  fill: #7547a3;
 }
 
 <h3
@@ -480,7 +480,7 @@ exports[`Headings renders H4 correctly with overrides 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2f75d7;
+  color: #0a68c1;
 }
 
 .emotion-0::before {
@@ -500,31 +500,31 @@ exports[`Headings renders H4 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2f75d7;
+  fill: #0a68c1;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #2f75d7;
+  color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #02509b;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #2f75d7;
+  color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #01396e;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #903d91;
+  color: #7547a3;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #903d91;
+  fill: #7547a3;
 }
 
 <h4
@@ -626,7 +626,7 @@ exports[`Headings renders H5 correctly with overrides 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2f75d7;
+  color: #0a68c1;
 }
 
 .emotion-0::before {
@@ -646,31 +646,31 @@ exports[`Headings renders H5 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2f75d7;
+  fill: #0a68c1;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #2f75d7;
+  color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #02509b;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #2f75d7;
+  color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #01396e;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #903d91;
+  color: #7547a3;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #903d91;
+  fill: #7547a3;
 }
 
 <h5
@@ -738,7 +738,7 @@ exports[`Headings renders H6 correctly with overrides 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2f75d7;
+  color: #0a68c1;
 }
 
 .emotion-0::before {
@@ -758,31 +758,31 @@ exports[`Headings renders H6 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2f75d7;
+  fill: #0a68c1;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #2f75d7;
+  color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #02509b;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #2f75d7;
+  color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #01396e;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #903d91;
+  color: #7547a3;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #903d91;
+  fill: #7547a3;
 }
 
 <h6
@@ -850,7 +850,7 @@ exports[`Headings renders Heading1 correctly with overrides 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2f75d7;
+  color: #0a68c1;
 }
 
 .emotion-0::before {
@@ -870,31 +870,31 @@ exports[`Headings renders Heading1 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2f75d7;
+  fill: #0a68c1;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #2f75d7;
+  color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #02509b;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #2f75d7;
+  color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #01396e;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #903d91;
+  color: #7547a3;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #903d91;
+  fill: #7547a3;
 }
 
 <h1
@@ -1025,7 +1025,7 @@ exports[`Headings renders Heading2 correctly with overrides 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2f75d7;
+  color: #0a68c1;
 }
 
 .emotion-0::before {
@@ -1045,31 +1045,31 @@ exports[`Headings renders Heading2 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2f75d7;
+  fill: #0a68c1;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #2f75d7;
+  color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #02509b;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #2f75d7;
+  color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #01396e;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #903d91;
+  color: #7547a3;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #903d91;
+  fill: #7547a3;
 }
 
 <h2
@@ -1171,7 +1171,7 @@ exports[`Headings renders Heading3 correctly with overrides 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2f75d7;
+  color: #0a68c1;
 }
 
 .emotion-0::before {
@@ -1191,31 +1191,31 @@ exports[`Headings renders Heading3 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2f75d7;
+  fill: #0a68c1;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #2f75d7;
+  color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #02509b;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #2f75d7;
+  color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #01396e;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #903d91;
+  color: #7547a3;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #903d91;
+  fill: #7547a3;
 }
 
 <h3
@@ -1317,7 +1317,7 @@ exports[`Headings renders Heading4 correctly with overrides 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2f75d7;
+  color: #0a68c1;
 }
 
 .emotion-0::before {
@@ -1337,31 +1337,31 @@ exports[`Headings renders Heading4 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2f75d7;
+  fill: #0a68c1;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #2f75d7;
+  color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #02509b;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #2f75d7;
+  color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #01396e;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #903d91;
+  color: #7547a3;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #903d91;
+  fill: #7547a3;
 }
 
 <h4
@@ -1463,7 +1463,7 @@ exports[`Headings renders Heading5 correctly with overrides 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2f75d7;
+  color: #0a68c1;
 }
 
 .emotion-0::before {
@@ -1483,31 +1483,31 @@ exports[`Headings renders Heading5 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2f75d7;
+  fill: #0a68c1;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #2f75d7;
+  color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #02509b;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #2f75d7;
+  color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #01396e;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #903d91;
+  color: #7547a3;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #903d91;
+  fill: #7547a3;
 }
 
 <h5
@@ -1575,7 +1575,7 @@ exports[`Headings renders Heading6 correctly with overrides 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2f75d7;
+  color: #0a68c1;
 }
 
 .emotion-0::before {
@@ -1595,31 +1595,31 @@ exports[`Headings renders Heading6 correctly with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2f75d7;
+  fill: #0a68c1;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #2f75d7;
+  color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #02509b;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #2f75d7;
+  color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #01396e;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #903d91;
+  color: #7547a3;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #903d91;
+  fill: #7547a3;
 }
 
 <h6

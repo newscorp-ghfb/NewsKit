@@ -52,9 +52,9 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
 
 .emotion-0 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #ffffff;
+  background-color: #0a68c1;
   border-style: solid;
-  border-color: #0a68c1;
+  border-color: #e6f4ff;
   border-width: 1px;
   border-radius: 50%;
   height: 32px;
@@ -74,19 +74,19 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #ffffff;
+  background-color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #e6f4ff;
+  background-color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
@@ -102,7 +102,7 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
 }
 
 .emotion-0:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div

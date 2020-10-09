@@ -21,12 +21,12 @@ exports[`getStylePresetFromTheme with default iconButtonMinimalPrimary style pre
 }
 
 .emotion-0:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
   background-color: transparent;
 }
 
 .emotion-0:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -39,12 +39,12 @@ exports[`getStylePresetFromTheme with disabled and loading state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
-  color: #9c9c9c;
+  color: #c0c0c0;
   border-radius: 50%;
 }
 
 .emotion-0 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -57,12 +57,12 @@ exports[`getStylePresetFromTheme with disabled state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
-  color: #9c9c9c;
+  color: #c0c0c0;
   border-radius: 50%;
 }
 
 .emotion-0 svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -71,7 +71,7 @@ exports[`getStylePresetFromTheme with disabled state 1`] = `
 </DocumentFragment>
 `;
 
-exports[`getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, and incorrect for md breakpoints 1`] = `
+exports[`getStylePresetFromTheme with interactivePrimary010 for xs, interactivePrimary020 for sm, and incorrect for md breakpoints 1`] = `
 <DocumentFragment>
   @media screen and (max-width:479px) {
   .emotion-0 {
@@ -95,7 +95,7 @@ exports[`getStylePresetFromTheme with interactive010 for xs, interactive020 for 
 </DocumentFragment>
 `;
 
-exports[`getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, and interactive030 for md breakpoints 1`] = `
+exports[`getStylePresetFromTheme with interactivePrimary010 for xs, interactivePrimary020 for sm, and interactivePrimary030 for md breakpoints 1`] = `
 <DocumentFragment>
   @media screen and (max-width:479px) {
   .emotion-0 {
@@ -125,7 +125,7 @@ exports[`getStylePresetFromTheme with interactive010 for xs, interactive020 for 
 </DocumentFragment>
 `;
 
-exports[`getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, interactive030 for md, and interactive040 for lg breakpoints 1`] = `
+exports[`getStylePresetFromTheme with interactivePrimary010 for xs, interactivePrimary020 for sm, interactivePrimary030 for md, and interactivePrimary040 for lg breakpoints 1`] = `
 <DocumentFragment>
   @media screen and (max-width:479px) {
   .emotion-0 {
@@ -157,7 +157,7 @@ exports[`getStylePresetFromTheme with interactive010 for xs, interactive020 for 
 </DocumentFragment>
 `;
 
-exports[`getStylePresetFromTheme with interactive010 for xs, interactive020 for sm, interactive030 for md, interactive040 for lg breakpoints and ignore wrong prop 1`] = `
+exports[`getStylePresetFromTheme with interactivePrimary010 for xs, interactivePrimary020 for sm, interactivePrimary030 for md, interactivePrimary040 for lg breakpoints and ignore wrong prop 1`] = `
 <DocumentFragment>
   @media screen and (max-width:479px) {
   .emotion-0 {
@@ -208,9 +208,9 @@ exports[`getStylePresetFromTheme with isSvg  1`] = `
 }
 
 .emotion-0:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
   background-color: transparent;
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -271,7 +271,7 @@ exports[`getStylePresetFromTheme with no existing style preset state returns emp
 </DocumentFragment>
 `;
 
-exports[`getStylePresetFromTheme with override to interactive040 1`] = `
+exports[`getStylePresetFromTheme with override to interactivePrimary040 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF00FF;
@@ -325,11 +325,11 @@ exports[`getStylePresetFromTheme without background-color styles 1`] = `
 }
 
 .emotion-0:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-0:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div

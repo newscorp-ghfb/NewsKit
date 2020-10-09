@@ -10,7 +10,7 @@ const theme = createTheme({
           boxShadow: '{{shadows.shadow030}}',
         },
         hover: {
-          backgroundColor: '{{colors.interactive050}}',
+          backgroundColor: '{{colors.interactivePrimary050}}',
         },
       },
     },

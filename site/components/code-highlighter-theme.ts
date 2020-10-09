@@ -54,11 +54,11 @@ export const generateCodeHighlighterTheme = (
     color: colors.blue040,
   },
   'attr-value': {
-    color: colors.semanticNotice010,
+    color: colors.interfaceNotice010,
   },
   variable: {
     ...coy.variable,
-    color: colors.semanticNotice010,
+    color: colors.interfaceNotice010,
   },
   function: {
     color: colors.inkNegative,

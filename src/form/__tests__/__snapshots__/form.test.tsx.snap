@@ -115,11 +115,11 @@ exports[`Form renders with error and with submit validation and revalidation mod
 
 .emotion-23:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-23:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-22 {
@@ -538,7 +538,7 @@ exports[`Form renders with error on blur 1`] = `
 
 .emotion-11:disabled {
   border-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-11::before {
@@ -576,7 +576,7 @@ exports[`Form renders with error on blur 1`] = `
 }
 
 .emotion-13:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-13::before {
@@ -665,11 +665,11 @@ exports[`Form renders with error on blur 1`] = `
 
 .emotion-20:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-20:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-19 {
@@ -1089,11 +1089,11 @@ exports[`Form renders with error on submit 1`] = `
 
 .emotion-23:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-23:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-22 {
@@ -1512,7 +1512,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 
 .emotion-11:disabled {
   border-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-11::before {
@@ -1550,7 +1550,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 }
 
 .emotion-13:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-13::before {
@@ -1639,11 +1639,11 @@ exports[`Form renders with error with 2 onBlur 1`] = `
 
 .emotion-20:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-20:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-19 {
@@ -2040,7 +2040,7 @@ exports[`Form renders with inputs 1`] = `
 
 .emotion-1:disabled {
   border-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-1::before {
@@ -2078,7 +2078,7 @@ exports[`Form renders with inputs 1`] = `
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3::before {
@@ -2262,7 +2262,7 @@ exports[`Form renders with nested inputs 1`] = `
 
 .emotion-1:disabled {
   border-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-1::before {
@@ -2300,7 +2300,7 @@ exports[`Form renders with nested inputs 1`] = `
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3::before {
@@ -2389,11 +2389,11 @@ exports[`Form renders with nested inputs 1`] = `
 
 .emotion-17:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-17:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-16 {
@@ -2651,7 +2651,7 @@ exports[`Form renders with onBlur validation 1`] = `
 
 .emotion-1:disabled {
   border-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-1::before {
@@ -2689,7 +2689,7 @@ exports[`Form renders with onBlur validation 1`] = `
 }
 
 .emotion-3:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3::before {
@@ -2778,11 +2778,11 @@ exports[`Form renders with onBlur validation 1`] = `
 
 .emotion-17:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-17:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-16 {
@@ -3040,7 +3040,7 @@ exports[`Form renders with valid state 1`] = `
 
 .emotion-10:disabled {
   border-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-10::before {
@@ -3078,7 +3078,7 @@ exports[`Form renders with valid state 1`] = `
 }
 
 .emotion-12:disabled {
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-12::before {
@@ -3167,11 +3167,11 @@ exports[`Form renders with valid state 1`] = `
 
 .emotion-19:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-19:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-18 {

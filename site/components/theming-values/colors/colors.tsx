@@ -26,17 +26,11 @@ const ColorSet: React.FC<{
 
   const description = {
     ink:
-      'Ink is a colour applied to typography and iconography. As a default within the NewsKit design system, there are several variations of ink that are available, each associated with a specific purpose within the design system. NOTE: Remember to update the text styles if making changes to the ink colours.',
-    semantic:
-      'Semantic colours have an assigned meaning and are used in the UI as a method of communicating with the user. Used sparingly and intentionally, as a way of reinforcing hierarchies and creating clear modes of communication with our users. Too much colour can create cognitive overload, affecting users’ ability to interact with our products efficiently.',
+      'Ink is a colour applied to typography and iconography. As a default within the NewsKit design system, there are several variations of ink that are available, each associated with a specific purpose within the design system.',
     interface:
-      'Interface background colours applied to fills and borders on background UI elements including screen background and card background. As a default within the NewsKit design system, there are 9 variations of interface background colours.',
+      'Interface background colours applied to fills and borders on background UI elements including screen background and card background.',
     interactive:
-      'Interactive colours are used to indicate and display interactions of certain elements in the UI. Each set of interactive colours are used in combination to apply all the differing states needed for an interactive UI element.',
-    skeleton:
-      'The skeleton colours are used as a loading state for UI elements before the page has fully loaded.',
-    inverse:
-      'The inverse colour token is used on elements which need to be placed on a darker background (in the light theme) or lighter background (in the dark theme). An example of this would be an inverse progress bar where you need a white track indicator.',
+      'Interactive colours are used to indicate and display interactions of certain components such as buttons, links and switches. Each set of interactive colours are used in combination to apply the differing states needed. The base (resting) state uses the 030, the hover 040 and the active 050. The 010 and 020 are used for loading/progress states.',
   };
 
   return (

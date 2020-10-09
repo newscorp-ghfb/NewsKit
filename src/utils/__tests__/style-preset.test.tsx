@@ -36,17 +36,17 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('with override to interactive040', () => {
+  test('with override to interactivePrimary040', () => {
     const fragment = renderToFragmentWithTheme(
       OverridableTestSurface,
       {
-        stylePresetToUse: 'interactive040',
+        stylePresetToUse: 'interactivePrimary040',
       },
       createTheme({
         name: 'test-style-preset',
         overrides: {
           stylePresets: {
-            interactive040: {
+            interactivePrimary040: {
               base: {
                 backgroundColor: '#FF00FF',
               },
@@ -58,21 +58,21 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('with interactive010 for xs, interactive020 for sm, and interactive030 for md breakpoints', () => {
+  test('with interactivePrimary010 for xs, interactivePrimary020 for sm, and interactivePrimary030 for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(
       OverridableTestSurface,
       {
         stylePresetToUse: {
-          xs: 'interactive010',
-          sm: 'interactive020',
-          md: 'interactive030',
+          xs: 'interactivePrimary010',
+          sm: 'interactivePrimary020',
+          md: 'interactivePrimary030',
         },
       },
       createTheme({
         name: 'test-style-preset',
         overrides: {
           stylePresets: {
-            interactive010: {
+            interactivePrimary010: {
               base: {
                 backgroundColor: 'red',
               },
@@ -80,12 +80,12 @@ describe('getStylePresetFromTheme', () => {
                 color: 'red',
               },
             },
-            interactive020: {
+            interactivePrimary020: {
               base: {
                 backgroundColor: 'blue',
               },
             },
-            interactive030: {
+            interactivePrimary030: {
               base: {
                 backgroundColor: 'green',
               },
@@ -97,13 +97,13 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('with interactive010 for xs, interactive020 for sm, and incorrect for md breakpoints', () => {
+  test('with interactivePrimary010 for xs, interactivePrimary020 for sm, and incorrect for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(
       OverridableTestSurface,
       {
         stylePresetToUse: {
-          xs: 'interactive010',
-          sm: 'interactive020',
+          xs: 'interactivePrimary010',
+          sm: 'interactivePrimary020',
           md: 'incorrect',
         },
       },
@@ -111,7 +111,7 @@ describe('getStylePresetFromTheme', () => {
         name: 'test-style-preset',
         overrides: {
           stylePresets: {
-            interactive010: {
+            interactivePrimary010: {
               base: {
                 backgroundColor: 'red',
               },
@@ -119,7 +119,7 @@ describe('getStylePresetFromTheme', () => {
                 color: 'red',
               },
             },
-            interactive020: {
+            interactivePrimary020: {
               base: {
                 backgroundColor: 'blue',
               },
@@ -131,37 +131,37 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('with interactive010 for xs, interactive020 for sm, interactive030 for md, and interactive040 for lg breakpoints', () => {
+  test('with interactivePrimary010 for xs, interactivePrimary020 for sm, interactivePrimary030 for md, and interactivePrimary040 for lg breakpoints', () => {
     const fragment = renderToFragmentWithTheme(
       OverridableTestSurface,
       {
         stylePresetToUse: {
-          xs: 'interactive010',
-          sm: 'interactive020',
-          md: 'interactive030',
-          lg: 'interactive040',
+          xs: 'interactivePrimary010',
+          sm: 'interactivePrimary020',
+          md: 'interactivePrimary030',
+          lg: 'interactivePrimary040',
         },
       },
       createTheme({
         name: 'test-style-preset',
         overrides: {
           stylePresets: {
-            interactive010: {
+            interactivePrimary010: {
               base: {
                 backgroundColor: 'red',
               },
             },
-            interactive020: {
+            interactivePrimary020: {
               base: {
                 backgroundColor: 'blue',
               },
             },
-            interactive030: {
+            interactivePrimary030: {
               base: {
                 backgroundColor: 'green',
               },
             },
-            interactive040: {
+            interactivePrimary040: {
               base: {
                 backgroundColor: '#FF00FF',
               },
@@ -173,43 +173,43 @@ describe('getStylePresetFromTheme', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('with interactive010 for xs, interactive020 for sm, interactive030 for md, interactive040 for lg breakpoints and ignore wrong prop', () => {
+  test('with interactivePrimary010 for xs, interactivePrimary020 for sm, interactivePrimary030 for md, interactivePrimary040 for lg breakpoints and ignore wrong prop', () => {
     const fragment = renderToFragmentWithTheme(
       OverridableTestSurface,
       {
         stylePresetToUse: {
-          xs: 'interactive010',
-          sm: 'interactive020',
-          md: 'interactive030',
-          lg: 'interactive040',
-          wrong: 'interactive050',
+          xs: 'interactivePrimary010',
+          sm: 'interactivePrimary020',
+          md: 'interactivePrimary030',
+          lg: 'interactivePrimary040',
+          wrong: 'interactivePrimary050',
         } as any,
       },
       createTheme({
         name: 'test-style-preset',
         overrides: {
           stylePresets: {
-            interactive010: {
+            interactivePrimary010: {
               base: {
                 backgroundColor: 'red',
               },
             },
-            interactive020: {
+            interactivePrimary020: {
               base: {
                 backgroundColor: 'blue',
               },
             },
-            interactive030: {
+            interactivePrimary030: {
               base: {
                 backgroundColor: 'green',
               },
             },
-            interactive040: {
+            interactivePrimary040: {
               base: {
                 backgroundColor: '#FF00FF',
               },
             },
-            interactive050: {
+            interactivePrimary050: {
               base: {
                 backgroundColor: 'white',
               },

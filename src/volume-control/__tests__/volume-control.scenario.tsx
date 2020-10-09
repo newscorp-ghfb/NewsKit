@@ -56,7 +56,7 @@ const myCustomTheme = createTheme({
           borderRadius: '999px',
           borderStyle: 'dashed',
           iconColor: 'purple',
-          backgroundColor: '{{colors.inverse}}',
+          backgroundColor: '{{colors.interface010}}',
         },
       },
     },

@@ -146,7 +146,7 @@ exports[`Standfirst renders as span html tag 1`] = `
 exports[`Standfirst renders with custom style preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #2f75d7;
+  color: #0a68c1;
   padding: 1px 0;
 }
 

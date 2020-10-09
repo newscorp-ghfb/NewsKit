@@ -234,11 +234,11 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 
 .emotion-5:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-5:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-4 {
@@ -517,35 +517,35 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #2f75d7;
+  color: #0a68c1;
 }
 
 .emotion-4 svg {
-  fill: #2f75d7;
+  fill: #0a68c1;
 }
 
 .emotion-4:hover:not(:disabled) {
-  color: #2f75d7;
+  color: #02509b;
 }
 
 .emotion-4:hover:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #02509b;
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #2f75d7;
+  color: #01396e;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #01396e;
 }
 
 .emotion-4:visited:not(:disabled) {
-  color: #903d91;
+  color: #7547a3;
 }
 
 .emotion-4:visited:not(:disabled) svg {
-  fill: #903d91;
+  fill: #7547a3;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {

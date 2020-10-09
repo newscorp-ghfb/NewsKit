@@ -243,39 +243,39 @@ exports[`Sidebar renders correctly when closed 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #2f75d7;
+  color: #0a68c1;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-23 svg {
-  fill: #2f75d7;
+  fill: #0a68c1;
 }
 
 .emotion-23:hover:not(:disabled) {
-  color: #2f75d7;
+  color: #02509b;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-23:hover:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #02509b;
 }
 
 .emotion-23:active:not(:disabled) {
-  color: #2f75d7;
+  color: #01396e;
 }
 
 .emotion-23:active:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #01396e;
 }
 
 .emotion-23:visited:not(:disabled) {
-  color: #2f75d7;
+  color: #0a68c1;
 }
 
 .emotion-23:visited:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #0a68c1;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -858,39 +858,39 @@ exports[`Sidebar renders correctly when open 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #2f75d7;
+  color: #0a68c1;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-23 svg {
-  fill: #2f75d7;
+  fill: #0a68c1;
 }
 
 .emotion-23:hover:not(:disabled) {
-  color: #2f75d7;
+  color: #02509b;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-23:hover:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #02509b;
 }
 
 .emotion-23:active:not(:disabled) {
-  color: #2f75d7;
+  color: #01396e;
 }
 
 .emotion-23:active:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #01396e;
 }
 
 .emotion-23:visited:not(:disabled) {
-  color: #2f75d7;
+  color: #0a68c1;
 }
 
 .emotion-23:visited:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #0a68c1;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {

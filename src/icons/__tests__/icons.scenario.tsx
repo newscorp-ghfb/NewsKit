@@ -50,10 +50,10 @@ const customIconEntries = Object.entries(remainingCustomIcons)
           <Icon size="iconSize030" />
           <Icon size="iconSize040" />
           <Icon size="iconSize050" />
-          <Icon color="semanticNegative030" size="iconSize050" />
-          <Icon color="semanticPositive030" size="iconSize050" />
-          <Icon color="semanticNotice010" size="iconSize050" />
-          <Icon color="semanticInformative010" size="iconSize050" />
+          <Icon color="inkNegative" size="iconSize050" />
+          <Icon color="inkPositive" size="iconSize050" />
+          <Icon color="inkNotice" size="iconSize050" />
+          <Icon color="inkInformative" size="iconSize050" />
           <Constrain>
             <Icon />
           </Constrain>
@@ -68,27 +68,27 @@ const materialIconsSample = {
 };
 
 const myCustomTheme = createTheme({
-  name: 'my-custom-audio-player-theme',
+  name: 'my-custom-icons-theme',
   overrides: {
     stylePresets: {
       iconPositive: {
         base: {
-          iconColor: '{{colors.semanticNegative030}}',
+          iconColor: '{{colors.inkNegative}}',
         },
       },
       iconNegative: {
         base: {
-          iconColor: '{{colors.semanticPositive030}}',
+          iconColor: '{{colors.inkPositive}}',
         },
       },
       iconInformative: {
         base: {
-          iconColor: '{{colors.semanticNotice010}}',
+          iconColor: '{{colors.inkNotice}}',
         },
       },
       iconNotice: {
         base: {
-          iconColor: '{{colors.semanticInformative010}}',
+          iconColor: '{{colors.inkInformative}}',
         },
       },
     },

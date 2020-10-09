@@ -26,10 +26,8 @@ Object {
     "xs": 0,
   },
   "colors": Object {
-    "accessible010": "#2F75D7",
-    "accessible020": "#903D91",
-    "amber010": "#ffe3b0",
-    "amber020": "#ffd284",
+    "amber010": "#ffeecf",
+    "amber020": "#ffdb89",
     "amber030": "#ffc058",
     "amber040": "#ffad2c",
     "amber050": "#ff9900",
@@ -61,38 +59,41 @@ Object {
     "green100": "#003e11",
     "inkBase": "#2e2e2e",
     "inkBrand010": "#0a68c1",
+    "inkBrand020": "#d5ebff",
     "inkContrast": "#0a0a0a",
-    "inkHeadingLink": "#2e2e2e",
+    "inkHeadingLink": "#0a0a0a",
     "inkHeadingLinkActive": "#2F75D7",
     "inkHeadingLinkHover": "#2F75D7",
-    "inkHeadingLinkVisited": "#2e2e2e",
-    "inkInformative": "#471e79",
+    "inkHeadingLinkVisited": "#0a0a0a",
+    "inkInformative": "#128293",
     "inkInverse": "#ffffff",
-    "inkLink": "#2f75d7",
-    "inkLinkActive": "#2f75d7",
-    "inkLinkHover": "#2f75d7",
-    "inkLinkVisited": "#903d91",
     "inkNegative": "#d20600",
-    "inkNonEssential": "#9c9c9c",
-    "inkNotice": "#ff8f00",
+    "inkNonEssential": "#c0c0c0",
+    "inkNotice": "#ff7200",
     "inkPositive": "#0a782a",
     "inkSubtle": "#535353",
-    "interactive010": "#e6f4ff",
-    "interactive020": "#d5ebff",
-    "interactive030": "#0a68c1",
-    "interactive040": "#02509b",
-    "interactive050": "#01396e",
-    "interactive110": "#fafafa",
-    "interactive120": "#f0f0f0",
-    "interactive130": "#535353",
-    "interactive140": "#2e2e2e",
-    "interactive150": "#0a0a0a",
-    "interactive210": "#f0f0f0",
-    "interactive220": "#c0c0c0",
-    "interactive230": "#0a68c1",
-    "interactive240": "#e6f4ff",
-    "interactive250": "#d5ebff",
-    "interactiveDisabled": "#e4e4e4",
+    "interactiveDisabled010": "#e4e4e4",
+    "interactiveNegative010": "#ffe6e5",
+    "interactiveNegative020": "#ffb8b8",
+    "interactiveNegative030": "#ef1703",
+    "interactiveNegative040": "#d20600",
+    "interactiveNegative050": "#a60100",
+    "interactivePositive010": "#e6faeb",
+    "interactivePositive020": "#b8efc8",
+    "interactivePositive030": "#23a248",
+    "interactivePositive040": "#148f39",
+    "interactivePositive050": "#0a782a",
+    "interactivePrimary010": "#e6f4ff",
+    "interactivePrimary020": "#d5ebff",
+    "interactivePrimary030": "#0a68c1",
+    "interactivePrimary040": "#02509b",
+    "interactivePrimary050": "#01396e",
+    "interactiveSecondary010": "#fafafa",
+    "interactiveSecondary020": "#f0f0f0",
+    "interactiveSecondary030": "#535353",
+    "interactiveSecondary040": "#2e2e2e",
+    "interactiveSecondary050": "#0a0a0a",
+    "interactiveVisited010": "#7547a3",
     "interface010": "#ffffff",
     "interface020": "#fafafa",
     "interface030": "#f0f0f0",
@@ -102,7 +103,17 @@ Object {
     "interfaceBackground": "#ffffff",
     "interfaceBrand010": "#0a68c1",
     "interfaceBrand020": "#d5ebff",
-    "inverse": "#ffffff",
+    "interfaceInformative010": "#128293",
+    "interfaceInformative020": "#e8f6f8",
+    "interfaceNegative010": "#d20600",
+    "interfaceNegative020": "#ffe6e5",
+    "interfaceNeutral010": "#535353",
+    "interfaceNotice010": "#ff7200",
+    "interfaceNotice020": "#ffeecf",
+    "interfacePositive010": "#0a782a",
+    "interfacePositive020": "#e6faeb",
+    "interfaceSkeleton010": "#fafafa",
+    "interfaceSkeleton020": "#e4e4e4",
     "neutral010": "#fafafa",
     "neutral020": "#f0f0f0",
     "neutral030": "#e4e4e4",
@@ -113,16 +124,16 @@ Object {
     "neutral080": "#535353",
     "neutral090": "#2e2e2e",
     "neutral100": "#0a0a0a",
-    "purple010": "#b2c3d5",
-    "purple020": "#93a1c3",
-    "purple030": "#757cb1",
-    "purple040": "#5d589f",
-    "purple050": "#503b8c",
-    "purple060": "#471e79",
-    "purple070": "#50196b",
-    "purple080": "#54145d",
-    "purple090": "#4f1049",
-    "purple100": "#400c30",
+    "purple010": "#d1c2e0",
+    "purple020": "#b399cc",
+    "purple030": "#9470b8",
+    "purple040": "#855cad",
+    "purple050": "#7547a3",
+    "purple060": "#663399",
+    "purple070": "#52297a",
+    "purple080": "#47246b",
+    "purple090": "#3d1f5c",
+    "purple100": "#29143d",
     "red010": "#ffe6e5",
     "red020": "#ffb8b8",
     "red030": "#ff8a8a",
@@ -133,26 +144,22 @@ Object {
     "red080": "#a60100",
     "red090": "#790101",
     "red100": "#4d0000",
-    "semanticInformative010": "#471e79",
-    "semanticNegative010": "#ffb8b8",
-    "semanticNegative020": "#ff5c5c",
-    "semanticNegative030": "#ef1703",
-    "semanticNegative040": "#d20600",
-    "semanticNegative050": "#a60100",
-    "semanticNotice010": "#ff8f00",
-    "semanticPositive010": "#b8efc8",
-    "semanticPositive020": "#67cf86",
-    "semanticPositive030": "#23a248",
-    "semanticPositive040": "#148f39",
-    "semanticPositive050": "#0a782a",
-    "skeleton010": "#f0f0f0",
-    "skeleton020": "#e4e4e4",
     "socialFacebook": "#1877f2",
     "socialInstagram": "#c32aa3",
     "socialReddit": "#ff4500",
     "socialTwitter": "#1da1f2",
     "socialWhatsapp": "#25d366",
     "socialYoutube": "#ff0000",
+    "teal010": "#e8f6f8",
+    "teal020": "#d1ecf1",
+    "teal030": "#a2dae3",
+    "teal040": "#74c7d4",
+    "teal050": "#45b5c6",
+    "teal060": "#17a2b8",
+    "teal070": "#128293",
+    "teal080": "#0e616e",
+    "teal090": "#09414a",
+    "teal100": "#073137",
     "transparent": "transparent",
     "white": "#ffffff",
   },
@@ -815,16 +822,16 @@ Object {
   },
   "name": "my theme",
   "overlays": Object {
-    "gradientDark010": "linear-gradient(180deg, rgba(255,255,255,0.00) 0%, rgba(255, 255, 255, 1) 100%)",
-    "gradientLight010": "linear-gradient(180deg, rgba(51,51,51,0.00) 0%, #0A0A0A  100%)",
     "overlayDark010": "rgba(10,10,10,0.20)",
     "overlayDark020": "rgba(10,10,10,0.40)",
     "overlayDark030": "rgba(10,10,10,0.60)",
     "overlayDark040": "rgba(10,10,10,0.80)",
+    "overlayDarkGradient010": "linear-gradient(180deg, rgba(51,51,51,0.00) 0%, #0A0A0A 100%)",
     "overlayLight010": "rgba(255,255,255,0.20)",
     "overlayLight020": "rgba(255,255,255,0.40)",
     "overlayLight030": "rgba(255,255,255,0.60)",
     "overlayLight040": "rgba(255,255,255,0.80)",
+    "overlayLightGradient010": "linear-gradient(180deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%)",
   },
   "shadows": Object {
     "shadow010": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
@@ -908,8 +915,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "transparent",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#e6f4ff",
@@ -931,8 +938,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#02509b",
@@ -955,8 +962,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "transparent",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#e6f4ff",
@@ -996,7 +1003,7 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "1px",
         "boxShadow": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
-        "iconColor": "#9c9c9c",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#02509b",
@@ -1014,7 +1021,7 @@ Object {
         "borderStyle": "solid",
         "borderWidth": "1px",
         "boxShadow": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
-        "iconColor": "#9c9c9c",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#02509b",
@@ -1032,8 +1039,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#02509b",
@@ -1046,7 +1053,7 @@ Object {
     },
     "buttonMinimalNegative": Object {
       "active": Object {
-        "backgroundColor": "#ff5c5c",
+        "backgroundColor": "#ffb8b8",
       },
       "base": Object {
         "backgroundColor": "transparent",
@@ -1055,19 +1062,19 @@ Object {
         "iconColor": "#d20600",
       },
       "disabled": Object {
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
-        "backgroundColor": "#ffb8b8",
+        "backgroundColor": "#ffe6e5",
       },
       "loading": Object {
-        "backgroundColor": "#ff5c5c",
+        "backgroundColor": "#ffb8b8",
       },
     },
     "buttonMinimalPositive": Object {
       "active": Object {
-        "backgroundColor": "#67cf86",
+        "backgroundColor": "#b8efc8",
       },
       "base": Object {
         "backgroundColor": "transparent",
@@ -1076,14 +1083,14 @@ Object {
         "iconColor": "#0a782a",
       },
       "disabled": Object {
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
-        "backgroundColor": "#b8efc8",
+        "backgroundColor": "#e6faeb",
       },
       "loading": Object {
-        "backgroundColor": "#67cf86",
+        "backgroundColor": "#b8efc8",
       },
     },
     "buttonMinimalPrimary": Object {
@@ -1097,8 +1104,8 @@ Object {
         "iconColor": "#0a68c1",
       },
       "disabled": Object {
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#e6f4ff",
@@ -1118,8 +1125,8 @@ Object {
         "iconColor": "#2e2e2e",
       },
       "disabled": Object {
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#fafafa",
@@ -1130,7 +1137,7 @@ Object {
     },
     "buttonOutlinedNegative": Object {
       "active": Object {
-        "backgroundColor": "#ff5c5c",
+        "backgroundColor": "#ffb8b8",
         "borderColor": "#a60100",
       },
       "base": Object {
@@ -1144,21 +1151,21 @@ Object {
       },
       "disabled": Object {
         "borderColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
-        "backgroundColor": "#ffb8b8",
+        "backgroundColor": "#ffe6e5",
         "borderColor": "#d20600",
       },
       "loading": Object {
-        "backgroundColor": "#ff5c5c",
+        "backgroundColor": "#ffb8b8",
         "borderStyle": "none",
       },
     },
     "buttonOutlinedPositive": Object {
       "active": Object {
-        "backgroundColor": "#67cf86",
+        "backgroundColor": "#b8efc8",
         "borderColor": "#0a782a",
       },
       "base": Object {
@@ -1172,15 +1179,15 @@ Object {
       },
       "disabled": Object {
         "borderColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
-        "backgroundColor": "#b8efc8",
+        "backgroundColor": "#e6faeb",
         "borderColor": "#148f39",
       },
       "loading": Object {
-        "backgroundColor": "#67cf86",
+        "backgroundColor": "#b8efc8",
         "borderStyle": "none",
       },
     },
@@ -1200,8 +1207,8 @@ Object {
       },
       "disabled": Object {
         "borderColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#e6f4ff",
@@ -1228,8 +1235,8 @@ Object {
       },
       "disabled": Object {
         "borderColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#fafafa",
@@ -1252,8 +1259,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "transparent",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#fafafa",
@@ -1278,8 +1285,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "transparent",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#fafafa",
@@ -1304,8 +1311,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "transparent",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#fafafa",
@@ -1330,8 +1337,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "transparent",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#fafafa",
@@ -1356,8 +1363,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "transparent",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#fafafa",
@@ -1382,8 +1389,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "transparent",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#fafafa",
@@ -1408,14 +1415,14 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#d20600",
       },
       "loading": Object {
-        "backgroundColor": "#ff5c5c",
+        "backgroundColor": "#ffb8b8",
         "color": "#d20600",
         "iconColor": "#d20600",
       },
@@ -1432,14 +1439,14 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#148f39",
       },
       "loading": Object {
-        "backgroundColor": "#67cf86",
+        "backgroundColor": "#b8efc8",
         "color": "#0a782a",
         "iconColor": "#0a782a",
       },
@@ -1456,8 +1463,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#02509b",
@@ -1480,8 +1487,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#2e2e2e",
@@ -1512,8 +1519,8 @@ Object {
         "borderRadius": "0",
       },
       "loading": Object {
-        "backgroundColor": "#f0f0f0",
-        "iconColor": "#9c9c9c",
+        "backgroundColor": "#fafafa",
+        "iconColor": "#c0c0c0",
       },
     },
     "cardContainerTeaser": Object {
@@ -1547,7 +1554,7 @@ Object {
     },
     "flagDefault": Object {
       "base": Object {
-        "backgroundColor": "#471e79",
+        "backgroundColor": "#128293",
         "color": "#ffffff",
         "iconColor": "#ffffff",
       },
@@ -1555,13 +1562,13 @@ Object {
     "flagMinimal": Object {
       "base": Object {
         "backgroundColor": "transparent",
-        "color": "#471e79",
-        "iconColor": "#471e79",
+        "color": "#128293",
+        "iconColor": "#128293",
       },
     },
     "flagSolid": Object {
       "base": Object {
-        "backgroundColor": "#471e79",
+        "backgroundColor": "#128293",
         "color": "#ffffff",
         "iconColor": "#ffffff",
       },
@@ -1585,8 +1592,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#02509b",
@@ -1599,7 +1606,7 @@ Object {
     },
     "iconButtonMinimalNegative": Object {
       "active": Object {
-        "backgroundColor": "#ff5c5c",
+        "backgroundColor": "#ffb8b8",
       },
       "base": Object {
         "backgroundColor": "transparent",
@@ -1608,19 +1615,19 @@ Object {
         "iconColor": "#d20600",
       },
       "disabled": Object {
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
-        "backgroundColor": "#ffb8b8",
+        "backgroundColor": "#ffe6e5",
       },
       "loading": Object {
-        "backgroundColor": "#ff5c5c",
+        "backgroundColor": "#ffb8b8",
       },
     },
     "iconButtonMinimalPositive": Object {
       "active": Object {
-        "backgroundColor": "#67cf86",
+        "backgroundColor": "#b8efc8",
       },
       "base": Object {
         "backgroundColor": "transparent",
@@ -1629,14 +1636,14 @@ Object {
         "iconColor": "#0a782a",
       },
       "disabled": Object {
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
-        "backgroundColor": "#b8efc8",
+        "backgroundColor": "#e6faeb",
       },
       "loading": Object {
-        "backgroundColor": "#67cf86",
+        "backgroundColor": "#b8efc8",
       },
     },
     "iconButtonMinimalPrimary": Object {
@@ -1651,8 +1658,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "transparent",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#e6f4ff",
@@ -1674,8 +1681,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "transparent",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#fafafa",
@@ -1690,7 +1697,7 @@ Object {
     },
     "iconButtonOutlinedNegative": Object {
       "active": Object {
-        "backgroundColor": "#ff5c5c",
+        "backgroundColor": "#ffb8b8",
         "borderColor": "#ef1703",
       },
       "base": Object {
@@ -1704,21 +1711,21 @@ Object {
       },
       "disabled": Object {
         "borderColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
-        "backgroundColor": "#ffb8b8",
+        "backgroundColor": "#ffe6e5",
         "borderColor": "#a60100",
       },
       "loading": Object {
-        "backgroundColor": "#ff5c5c",
+        "backgroundColor": "#ffb8b8",
         "borderStyle": "none",
       },
     },
     "iconButtonOutlinedPositive": Object {
       "active": Object {
-        "backgroundColor": "#67cf86",
+        "backgroundColor": "#b8efc8",
         "borderColor": "#0a782a",
       },
       "base": Object {
@@ -1732,15 +1739,15 @@ Object {
       },
       "disabled": Object {
         "borderColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
-        "backgroundColor": "#b8efc8",
+        "backgroundColor": "#e6faeb",
         "borderColor": "#148f39",
       },
       "loading": Object {
-        "backgroundColor": "#67cf86",
+        "backgroundColor": "#b8efc8",
         "borderStyle": "none",
       },
     },
@@ -1760,8 +1767,8 @@ Object {
       },
       "disabled": Object {
         "borderColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#e6f4ff",
@@ -1788,8 +1795,8 @@ Object {
       },
       "disabled": Object {
         "borderColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#fafafa",
@@ -1812,14 +1819,14 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#d20600",
       },
       "loading": Object {
-        "backgroundColor": "#ff5c5c",
+        "backgroundColor": "#ffb8b8",
         "color": "#d20600",
         "iconColor": "#d20600",
       },
@@ -1836,14 +1843,14 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#148f39",
       },
       "loading": Object {
-        "backgroundColor": "#67cf86",
+        "backgroundColor": "#b8efc8",
         "color": "#0a782a",
         "iconColor": "#0a782a",
       },
@@ -1860,8 +1867,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#02509b",
@@ -1884,8 +1891,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#2e2e2e",
@@ -1916,8 +1923,8 @@ Object {
         "borderRadius": "50%",
       },
       "loading": Object {
-        "backgroundColor": "#f0f0f0",
-        "iconColor": "#9c9c9c",
+        "backgroundColor": "#fafafa",
+        "iconColor": "#c0c0c0",
       },
     },
     "imageDefault": Object {
@@ -1925,9 +1932,9 @@ Object {
         "borderRadius": "8px",
       },
       "loading": Object {
-        "backgroundColor": "#f0f0f0",
+        "backgroundColor": "#fafafa",
         "borderRadius": "8px",
-        "iconColor": "#9c9c9c",
+        "iconColor": "#c0c0c0",
       },
     },
     "imageRoundedLarge": Object {
@@ -1935,8 +1942,8 @@ Object {
         "borderRadius": "24px",
       },
       "loading": Object {
-        "backgroundColor": "#f0f0f0",
-        "iconColor": "#9c9c9c",
+        "backgroundColor": "#fafafa",
+        "iconColor": "#c0c0c0",
       },
     },
     "imageRoundedMedium": Object {
@@ -1944,8 +1951,8 @@ Object {
         "borderRadius": "12px",
       },
       "loading": Object {
-        "backgroundColor": "#f0f0f0",
-        "iconColor": "#9c9c9c",
+        "backgroundColor": "#fafafa",
+        "iconColor": "#c0c0c0",
       },
     },
     "imageRoundedSmall": Object {
@@ -1953,8 +1960,8 @@ Object {
         "borderRadius": "4px",
       },
       "loading": Object {
-        "backgroundColor": "#f0f0f0",
-        "iconColor": "#9c9c9c",
+        "backgroundColor": "#fafafa",
+        "iconColor": "#c0c0c0",
       },
     },
     "imageSharp": Object {
@@ -1962,8 +1969,8 @@ Object {
         "borderRadius": "0",
       },
       "loading": Object {
-        "backgroundColor": "#f0f0f0",
-        "iconColor": "#9c9c9c",
+        "backgroundColor": "#fafafa",
+        "iconColor": "#c0c0c0",
       },
     },
     "inkBase": Object {
@@ -1986,8 +1993,8 @@ Object {
     },
     "inkNonEssential": Object {
       "base": Object {
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
     },
     "inkSubtle": Object {
@@ -1998,40 +2005,40 @@ Object {
     },
     "linkInline": Object {
       "active": Object {
-        "color": "#2f75d7",
-        "iconColor": "#2f75d7",
+        "color": "#01396e",
+        "iconColor": "#01396e",
       },
       "base": Object {
-        "color": "#2f75d7",
-        "iconColor": "#2f75d7",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
       },
       "hover": Object {
-        "color": "#2f75d7",
-        "iconColor": "#2f75d7",
+        "color": "#02509b",
+        "iconColor": "#02509b",
       },
       "visited": Object {
-        "color": "#903d91",
-        "iconColor": "#903d91",
+        "color": "#7547a3",
+        "iconColor": "#7547a3",
       },
     },
     "linkStandalone": Object {
       "active": Object {
-        "color": "#2f75d7",
-        "iconColor": "#2f75d7",
+        "color": "#01396e",
+        "iconColor": "#01396e",
       },
       "base": Object {
-        "color": "#2f75d7",
-        "iconColor": "#2f75d7",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
         "textDecoration": "none",
       },
       "hover": Object {
-        "color": "#2f75d7",
-        "iconColor": "#2f75d7",
+        "color": "#02509b",
+        "iconColor": "#02509b",
         "textDecoration": "underline",
       },
       "visited": Object {
-        "color": "#2f75d7",
-        "iconColor": "#2f75d7",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
       },
     },
     "sliderIndicator": Object {
@@ -2049,23 +2056,23 @@ Object {
         "iconColor": "#535353",
       },
       "disabled": Object {
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
     },
     "sliderThumb": Object {
       "active": Object {
-        "backgroundColor": "#e6f4ff",
+        "backgroundColor": "#01396e",
         "iconColor": "#535353",
       },
       "base": Object {
-        "backgroundColor": "#ffffff",
-        "borderColor": "#0a68c1",
+        "backgroundColor": "#0a68c1",
+        "borderColor": "#e6f4ff",
         "borderRadius": "50%",
         "borderStyle": "solid",
         "borderWidth": "1px",
         "boxShadow": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
-        "iconColor": "#9c9c9c",
+        "iconColor": "#c0c0c0",
       },
       "disabled": Object {
         "backgroundColor": "#e4e4e4",
@@ -2073,11 +2080,11 @@ Object {
         "borderStyle": "none",
         "borderWidth": "none",
         "boxShadow": "none",
-        "iconColor": "#9c9c9c",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
-        "backgroundColor": "#ffffff",
-        "iconColor": "#9c9c9c",
+        "backgroundColor": "#02509b",
+        "iconColor": "#c0c0c0",
       },
     },
     "sliderThumbLabel": Object {
@@ -2085,7 +2092,7 @@ Object {
         "color": "#0a68c1",
       },
       "disabled": Object {
-        "color": "#9c9c9c",
+        "color": "#c0c0c0",
       },
     },
     "sliderTrack": Object {
@@ -2110,8 +2117,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#e6f4ff",
@@ -2191,7 +2198,7 @@ Object {
       },
       "disabled": Object {
         "borderColor": "#e4e4e4",
-        "color": "#9c9c9c",
+        "color": "#c0c0c0",
       },
       "focus": Object {
         "backgroundColor": "#fafafa",
@@ -2214,7 +2221,7 @@ Object {
         "color": "#535353",
       },
       "disabled": Object {
-        "color": "#9c9c9c",
+        "color": "#c0c0c0",
       },
       "invalid": Object {
         "color": "#d20600",
@@ -2243,8 +2250,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "#e4e4e4",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#02509b",
@@ -2257,22 +2264,22 @@ Object {
     },
     "titleBarLink": Object {
       "active": Object {
-        "color": "#2f75d7",
-        "iconColor": "#2f75d7",
+        "color": "#01396e",
+        "iconColor": "#01396e",
       },
       "base": Object {
-        "color": "#2f75d7",
-        "iconColor": "#2f75d7",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
         "textDecoration": "none",
       },
       "hover": Object {
-        "color": "#2f75d7",
-        "iconColor": "#2f75d7",
+        "color": "#02509b",
+        "iconColor": "#02509b",
         "textDecoration": "underline",
       },
       "visited": Object {
-        "color": "#2f75d7",
-        "iconColor": "#2f75d7",
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
       },
     },
     "volumeControlButtons": Object {
@@ -2287,8 +2294,8 @@ Object {
       },
       "disabled": Object {
         "backgroundColor": "transparent",
-        "color": "#9c9c9c",
-        "iconColor": "#9c9c9c",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
         "backgroundColor": "#e6f4ff",
@@ -2306,21 +2313,21 @@ Object {
     },
     "volumeControlThumb": Object {
       "active": Object {
-        "backgroundColor": "#e6f4ff",
+        "backgroundColor": "#01396e",
         "iconColor": "#535353",
       },
       "base": Object {
-        "backgroundColor": "#ffffff",
-        "borderColor": "#0a68c1",
+        "backgroundColor": "#0a68c1",
+        "borderColor": "#e6f4ff",
         "borderRadius": "50%",
         "borderStyle": "solid",
         "borderWidth": "1px",
         "boxShadow": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
-        "iconColor": "#9c9c9c",
+        "iconColor": "#c0c0c0",
       },
       "hover": Object {
-        "backgroundColor": "#ffffff",
-        "iconColor": "#9c9c9c",
+        "backgroundColor": "#02509b",
+        "iconColor": "#c0c0c0",
       },
     },
     "volumeControlTrack": Object {

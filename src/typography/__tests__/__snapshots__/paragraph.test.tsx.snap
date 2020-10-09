@@ -49,7 +49,7 @@ exports[`Paragraph renders Paragraph with overrides 1`] = `
   .emotion-0 {
   margin: 0;
   padding: 1px 0;
-  color: #2f75d7;
+  color: #0a68c1;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -61,31 +61,31 @@ exports[`Paragraph renders Paragraph with overrides 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #2f75d7;
+  fill: #0a68c1;
 }
 
 .emotion-0:hover:not(:disabled) {
-  color: #2f75d7;
+  color: #02509b;
 }
 
 .emotion-0:hover:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #02509b;
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #2f75d7;
+  color: #01396e;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #2f75d7;
+  fill: #01396e;
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #903d91;
+  color: #7547a3;
 }
 
 .emotion-0:visited:not(:disabled) svg {
-  fill: #903d91;
+  fill: #7547a3;
 }
 
 .emotion-0::before {
