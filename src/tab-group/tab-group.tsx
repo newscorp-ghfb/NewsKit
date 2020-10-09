@@ -12,6 +12,7 @@ export const TabGroup: React.FC<TabGroupProps> = ({
   size = TabSize.Medium,
   divider,
   tabPanes,
+  orientation,
 }) => {
   const [activeTab, setActiveTab] = useState(1);
 
@@ -101,7 +102,7 @@ export const TabGroup: React.FC<TabGroupProps> = ({
         if (divider && i < array.length - 1) {
           acc.push(
             <StackChild alignSelf={AlignSelfValues.Stretch}>
-              <Divider vertical />
+              {orientation === 'vertical' ? <Divider /> : <Divider vertical />}
             </StackChild>,
           );
         }
@@ -116,7 +117,11 @@ export const TabGroup: React.FC<TabGroupProps> = ({
       <StyledOuterTabGroup data-testid="tab-group" inline>
         <StyledInnerTabGroup
           overrides={overrides}
-          flow={Flow.HorizontalCenter}
+          flow={
+            orientation === 'vertical'
+              ? Flow.VerticalCenter
+              : Flow.HorizontalCenter
+          }
           inline
           role="tablist"
         >
