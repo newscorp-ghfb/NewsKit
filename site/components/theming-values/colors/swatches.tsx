@@ -21,6 +21,9 @@ interface SwatchRowProps {
   isOverlay?: boolean;
 }
 
+const colorTokenToUpperCase = (colorToken: string) =>
+  colorToken.startsWith('#') ? colorToken.toUpperCase() : colorToken;
+
 export const SwatchRow: SwatchComponent = ({
   color,
   index,
@@ -33,7 +36,7 @@ export const SwatchRow: SwatchComponent = ({
         <span>
           <Stack flow="horizontal-center" spaceInline="sizing050">
             {color.parentColor && <span>({color.parentColor.name})</span>}
-            <span>{color.value.toUpperCase()}</span>
+            <span>{colorTokenToUpperCase(color.value)}</span>
             <BadgeContainer>
               <StyledAccessibilityBadge>
                 {color.contrastRating}
@@ -71,7 +74,7 @@ export const SwatchCard: SwatchComponent = ({
               {color.parentColor.name}
             </span>
           )}
-          <span>{color.value.toUpperCase()}</span>
+          <span>{colorTokenToUpperCase(color.value)}</span>
         </Stack>
       </StyledSwatchCardBottom>
     </StyledSwatchCard>
