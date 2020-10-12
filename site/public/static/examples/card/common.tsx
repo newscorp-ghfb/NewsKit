@@ -25,17 +25,17 @@ const cardTeaserLeadSpaceStack = {
 const cardTeaserLeadInsetVariantSpaceStack = 'space000';
 const cardActionsSpace = 'sizing040';
 
-const cardTeaserKickerSmallTypographyPreset = 'heading010';
-const cardTeaserHeadlineSmallTypographyPreset = 'heading010';
-const cardTeaserLeadSmallTypographyPreset = 'body010';
-const cardLabelSmallTypographyPreset = 'label010';
-const cardTagSmallTypographyPreset = 'label010';
+const cardTeaserKickerSmallTypographyPreset = 'editorialHeading010';
+const cardTeaserHeadlineSmallTypographyPreset = 'editorialHeading010';
+const cardTeaserLeadSmallTypographyPreset = 'editorialParagraph010';
+const cardLabelSmallTypographyPreset = 'utilityLabel010';
+const cardTagSmallTypographyPreset = 'utilityLabel010';
 
-const cardTeaserKickerMediumTypographyPreset = 'heading030';
-const cardTeaserHeadlineMediumTypographyPreset = 'heading030';
-const cardTeaserLeadMediumTypographyPreset = 'body010';
-const cardLabelMediumTypographyPreset = 'label010';
-const cardTagMediumTypographyPreset = 'label010';
+const cardTeaserKickerMediumTypographyPreset = 'editorialHeading030';
+const cardTeaserHeadlineMediumTypographyPreset = 'editorialHeading030';
+const cardTeaserLeadMediumTypographyPreset = 'editorialParagraph010';
+const cardLabelMediumTypographyPreset = 'utilityLabel010';
+const cardTagMediumTypographyPreset = 'utilityLabel010';
 
 const labelDefault = {
   base: {

@@ -68,7 +68,7 @@ export default {
             <h3>With typography-preset &quot;textblockCustom&quot;</h3>
             <TextBlock
               overrides={{
-                typographyPreset: 'body030',
+                typographyPreset: 'editorialParagraph010',
               }}
             >
               {bodyString}

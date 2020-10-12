@@ -50,7 +50,7 @@ const ListItem = styled.li`
   margin-right: 16px;
 
   a {
-    ${getTypographyPresetFromTheme('body020')};
+    ${getTypographyPresetFromTheme('utilityBody020')};
   }
 `;
 

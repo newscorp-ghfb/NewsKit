@@ -74,7 +74,7 @@ describe('Tab', () => {
       isSelected: true,
       overrides: {
         stylePreset: 'tabCustom',
-        typographyPreset: 'label030',
+        typographyPreset: 'utilityLabel030',
         spaceInline: 'sizing030',
       },
     };

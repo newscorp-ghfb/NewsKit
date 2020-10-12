@@ -41,7 +41,7 @@ const StyledMockTab = styled.span`
   border-bottom-width: ${getBorderFromTheme('borderWidth020')};
   border-bottom-color: ${getColorFromTheme('inkBrand010')};
   color: ${getColorFromTheme('inkBase')};
-  ${getTypographyPresetFromTheme('subhead020')};
+  ${getTypographyPresetFromTheme('utilitySubheading020')};
 `;
 
 const isMultiChoiceKnobConfig = (
@@ -202,7 +202,7 @@ export const Playground: React.FC<
           <Component {...state} />
         </ErrorBoundary>
       </LegacyBlock>
-      <LegacyBlock font="body030">
+      <LegacyBlock font="utilityBody030">
         <StyledMockTab>Props</StyledMockTab>
       </LegacyBlock>
       {componentOptions && (

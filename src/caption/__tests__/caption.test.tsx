@@ -25,11 +25,11 @@ test('renders correctly with overriden props and caption and credit text', () =>
     children: 'test',
     creditText: 'this is credit text',
     overrides: {
-      typographyPreset: 'caption050',
+      typographyPreset: 'utilitySubheading050',
       stylePreset: 'inkContrast',
       spaceStack: 'space090',
       credit: {
-        typographyPreset: 'meta030',
+        typographyPreset: 'utilityMeta010',
         stylePreset: 'inkContrast',
       },
     },
@@ -66,11 +66,11 @@ describe('CaptionInset', () => {
       children: 'test',
       creditText: 'this is credit text',
       overrides: {
-        typographyPreset: 'caption050',
+        typographyPreset: 'utilitySubheading050',
         stylePreset: 'inkContrast',
         spaceStack: 'space090',
         credit: {
-          typographyPreset: 'meta030',
+          typographyPreset: 'utilityMeta010',
           stylePreset: 'inkContrast',
         },
       },

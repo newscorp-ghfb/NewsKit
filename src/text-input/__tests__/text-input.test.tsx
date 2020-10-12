@@ -191,7 +191,7 @@ describe('TextInput', () => {
       overrides: {
         label: {
           stylePreset: 'textInputLabelCustom',
-          typographyPreset: 'label050',
+          typographyPreset: 'utilityLabel010',
           spaceStack: 'space050',
           spaceInline: 'space020',
         },
@@ -199,12 +199,12 @@ describe('TextInput', () => {
           stylePreset: 'textInputContainerCustom',
           spaceInset: 'spaceInset020',
           minHeight: 'sizing090',
-          typographyPreset: 'body030',
+          typographyPreset: 'utilityBody030',
           spaceStack: 'space040',
         },
         assistiveText: {
           stylePreset: 'assistiveTextCustom',
-          typographyPreset: 'label030',
+          typographyPreset: 'utilityLabel030',
         },
       },
     };

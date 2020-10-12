@@ -27,12 +27,12 @@ const StyledContainer = styled.span`
 `;
 
 const StyledSelectLabel = styled.label`
-  ${getTypographyPresetFromTheme('label030')};
+  ${getTypographyPresetFromTheme('utilityLabel030')};
   color: ${getColorFromTheme('inkBase')};
 `;
 
 const StyledSelect = styled.select`
-  ${getTypographyPresetFromTheme('body010')}
+  ${getTypographyPresetFromTheme('utilityBody010')}
   line-height:1.5;
   margin-left: ${getSizingFromTheme('sizing020')};
   padding: ${getSizingFromTheme('sizing020')} ${getSizingFromTheme('sizing080')}
@@ -64,7 +64,7 @@ export const Selector: React.FC<SelectorProps> = ({
   const id = `playground-${children}-${getSSRId()}-selector`;
   return (
     <LegacyBlock
-      font="body030"
+      font="utilityBody030"
       paddingTop="sizing050"
       paddingBottom="sizing040"
       paddingLeft="sizing030"

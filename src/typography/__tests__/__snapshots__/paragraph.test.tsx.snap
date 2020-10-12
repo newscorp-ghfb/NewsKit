@@ -6,10 +6,10 @@ exports[`Paragraph renders Paragraph 1`] = `
   margin: 0;
   padding: 1px 0;
   color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: "Source Serif Pro",serif;
+  font-size: 24px;
+  line-height: 1.3333333333333333;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -25,7 +25,7 @@ exports[`Paragraph renders Paragraph 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: calc(-0.31666666666666665em + 1px);
 }
 
 .emotion-0::after {
@@ -33,7 +33,7 @@ exports[`Paragraph renders Paragraph 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: calc(-0.37916666666666665em + 1px);
 }
 
 <p
@@ -50,10 +50,10 @@ exports[`Paragraph renders Paragraph with overrides 1`] = `
   margin: 0;
   padding: 1px 0;
   color: #0a68c1;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: "Source Serif Pro",serif;
+  font-size: 24px;
+  line-height: 1.3333333333333333;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -93,7 +93,7 @@ exports[`Paragraph renders Paragraph with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: calc(-0.31666666666666665em + 1px);
 }
 
 .emotion-0::after {
@@ -101,7 +101,7 @@ exports[`Paragraph renders Paragraph with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: calc(-0.37916666666666665em + 1px);
 }
 
 <p
@@ -118,10 +118,10 @@ exports[`Paragraph renders empty Paragraph with dropCap without crashing  1`] = 
   margin: 0;
   padding: 1px 0;
   color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: "Source Serif Pro",serif;
+  font-size: 24px;
+  line-height: 1.3333333333333333;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -137,7 +137,7 @@ exports[`Paragraph renders empty Paragraph with dropCap without crashing  1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: calc(-0.31666666666666665em + 1px);
 }
 
 .emotion-0::after {
@@ -145,7 +145,7 @@ exports[`Paragraph renders empty Paragraph with dropCap without crashing  1`] = 
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: calc(-0.37916666666666665em + 1px);
 }
 
 <p
@@ -160,10 +160,10 @@ exports[`Paragraph renders with drop cap 1`] = `
   margin: 0;
   padding: 1px 0;
   color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: "Source Serif Pro",serif;
+  font-size: 24px;
+  line-height: 1.3333333333333333;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -179,7 +179,7 @@ exports[`Paragraph renders with drop cap 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: calc(-0.31666666666666665em + 1px);
 }
 
 .emotion-1::after {
@@ -187,7 +187,7 @@ exports[`Paragraph renders with drop cap 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: calc(-0.37916666666666665em + 1px);
 }
 
 .emotion-3 {
@@ -204,31 +204,28 @@ exports[`Paragraph renders with drop cap 1`] = `
   float: left;
   margin-right: 0.15em;
   margin-top: 8px;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 80px;
-  line-height: 1.5;
-  font-weight: 700;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
   color: #0a0a0a;
 }
 
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
+@media screen and (max-width:767px) {
+  .emotion-0 {
+    font-size: 5.625em;
+    line-height: 0.85;
+  }
 }
 
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .emotion-0 {
+    font-size: 5.875em;
+    line-height: 0.85;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-0 {
+    font-size: 6em;
+    line-height: 0.85;
+  }
 }
 
 .emotion-0 svg {

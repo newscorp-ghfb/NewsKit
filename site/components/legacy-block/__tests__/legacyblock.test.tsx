@@ -15,7 +15,7 @@ describe('Block', () => {
       const blockProps: LegacyBlockProps = {
         color: 'inkContrast',
         backgroundColor: 'blue080',
-        font: 'body010',
+        font: 'editorialParagraph010',
         border: '1px solid black',
         borderTop: 'sizing010',
         borderRight: 'sizing010',
@@ -65,7 +65,11 @@ describe('Block', () => {
       const blockProps: LegacyBlockProps = {
         color: ['inkContrast', 'inkBase', 'inkSubtle'],
         backgroundColor: ['interface010', 'interface020', 'interface030'],
-        font: ['body010', 'body020', 'body030'],
+        font: [
+          'editorialParagraph010',
+          'editorialParagraph020',
+          'editorialParagraph030',
+        ],
         border: ['1px solid black', '2px dashed blue', '3px dotted green'],
         borderTop: ['sizing010', 'sizing010', 'sizing020'],
         borderRight: ['sizing010', 'sizing020', 'sizing030'],

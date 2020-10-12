@@ -69,11 +69,11 @@ export const componentDefaults = {
   },
   byline: {
     stylePreset: 'inkSubtle',
-    typographyPreset: 'meta020',
+    typographyPreset: 'utilityMeta020',
     spaceStack: 'sizing020',
     link: {
       stylePreset: 'linkInline',
-      typographyPreset: 'meta020',
+      typographyPreset: 'utilityMeta020',
     },
     divider: {
       stylePreset: 'inkNonEssential',
@@ -82,7 +82,7 @@ export const componentDefaults = {
   },
   button: {
     small: {
-      typographyPreset: 'button010',
+      typographyPreset: 'utilityButton010',
       stylePreset: 'buttonDefault',
       spaceInset: 'spaceInsetSquish020',
       minWidth: 'sizing090',
@@ -91,7 +91,7 @@ export const componentDefaults = {
       spaceInline: 'sizing020',
     },
     medium: {
-      typographyPreset: 'button020',
+      typographyPreset: 'utilityButton020',
       stylePreset: 'buttonDefault',
       spaceInset: 'spaceInsetSquish030',
       minWidth: 'sizing100',
@@ -100,7 +100,7 @@ export const componentDefaults = {
       spaceInline: 'sizing020',
     },
     large: {
-      typographyPreset: 'button030',
+      typographyPreset: 'utilityButton030',
       stylePreset: 'buttonDefault',
       spaceInset: 'spaceInsetSquish040',
       minWidth: 'sizing110',
@@ -110,16 +110,16 @@ export const componentDefaults = {
     },
   },
   caption: {
-    typographyPreset: 'caption010',
+    typographyPreset: 'editorialCaption010',
     stylePreset: 'inkBase',
     spaceStack: 'space040',
     credit: {
-      typographyPreset: 'meta010',
+      typographyPreset: 'utilityMeta010',
       stylePreset: 'inkSubtle',
     },
   },
   captionInset: {
-    typographyPreset: 'caption010',
+    typographyPreset: 'editorialCaption010',
     stylePreset: 'inkBase',
     spaceStack: 'space040',
     spaceInset: {
@@ -127,7 +127,7 @@ export const componentDefaults = {
       md: 'spaceInset050',
     },
     credit: {
-      typographyPreset: 'meta010',
+      typographyPreset: 'utilityMeta010',
       stylePreset: 'inkSubtle',
     },
   },
@@ -186,14 +186,14 @@ export const componentDefaults = {
   },
   dateTime: {
     stylePreset: 'inkSubtle',
-    typographyPreset: 'meta020',
+    typographyPreset: 'utilityMeta020',
     prefix: {
       stylePreset: 'inkSubtle',
-      typographyPreset: 'meta020',
+      typographyPreset: 'utilityMeta020',
     },
     suffix: {
       stylePreset: 'inkSubtle',
-      typographyPreset: 'meta020',
+      typographyPreset: 'utilityMeta020',
     },
   },
   divider: {
@@ -201,7 +201,7 @@ export const componentDefaults = {
   },
   flag: {
     small: {
-      typographyPreset: 'label010',
+      typographyPreset: 'utilityLabel010',
       stylePreset: 'flagDefault',
       spaceInset: 'spaceInsetSquish010',
       minHeight: 'sizing050',
@@ -209,7 +209,7 @@ export const componentDefaults = {
       spaceInline: 'sizing010',
     },
     large: {
-      typographyPreset: 'label020',
+      typographyPreset: 'utilityLabel030',
       stylePreset: 'flagDefault',
       spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing060',
@@ -243,19 +243,19 @@ export const componentDefaults = {
     heading: {
       stylePreset: 'inkContrast',
       typographyPreset: {
-        xs: 'heading060',
-        sm: 'heading060',
-        lg: 'heading070',
-        xl: 'heading080',
+        xs: 'editorialHeading060',
+        sm: 'editorialHeading060',
+        lg: 'editorialHeading070',
+        xl: 'editorialHeading080',
       },
     },
     kicker: {
       stylePreset: 'inkBrand010',
       typographyPreset: {
-        xs: 'heading060',
-        sm: 'heading060',
-        lg: 'heading070',
-        xl: 'heading080',
+        xs: 'editorialHeading060',
+        sm: 'editorialHeading060',
+        lg: 'editorialHeading070',
+        xl: 'editorialHeading080',
       },
       spaceInline: {
         xs: 'space030',
@@ -268,39 +268,39 @@ export const componentDefaults = {
   headlineH1: {
     stylePreset: 'inkContrast',
     typographyPreset: {
-      xs: 'heading050',
-      lg: 'heading070',
-      xl: 'heading090',
+      xs: 'editorialHeading050',
+      lg: 'editorialHeading070',
+      xl: 'editorialHeading080',
     },
   },
   headlineH2: {
     stylePreset: 'inkContrast',
     typographyPreset: {
-      xs: 'heading030',
-      lg: 'heading040',
+      xs: 'editorialHeading030',
+      md: 'editorialHeading040',
     },
   },
   headlineH3: {
     stylePreset: 'inkContrast',
     typographyPreset: {
-      xs: 'heading020',
-      lg: 'heading030',
+      xs: 'editorialHeading020',
+      md: 'editorialHeading030',
     },
   },
   headlineH4: {
     stylePreset: 'inkContrast',
     typographyPreset: {
-      xs: 'heading010',
-      lg: 'heading020',
+      xs: 'editorialHeading010',
+      md: 'editorialHeading020',
     },
   },
   headlineH5: {
     stylePreset: 'inkContrast',
-    typographyPreset: 'subhead015',
+    typographyPreset: 'editorialSubheading020',
   },
   headlineH6: {
     stylePreset: 'inkContrast',
-    typographyPreset: 'subhead010',
+    typographyPreset: 'editorialSubheading010',
   },
   iconButton: {
     small: {
@@ -334,20 +334,25 @@ export const componentDefaults = {
   },
   linkStandalone: {
     stylePreset: 'linkStandalone',
+    typographyPreset: 'utilityButton020',
   },
   paragraph: {
     stylePreset: 'inkBase',
-    typographyPreset: 'body020',
+    typographyPreset: 'editorialSubheading020',
     dropCap: {
       stylePreset: 'inkContrast',
-      typographyPreset: 'display040',
+      typographyPreset: {
+        xs: 'editorialDropCap010',
+        md: 'editorialDropCap020',
+        lg: 'editorialDropCap030',
+      },
       space: 'space020',
     },
   },
   shareBar: {
     label: {
       stylePreset: 'shareBarLabel',
-      typographyPreset: 'label020',
+      typographyPreset: 'utilityLabel020',
       spaceInline: 'space040',
     },
     items: {
@@ -368,12 +373,12 @@ export const componentDefaults = {
     },
     thumbLabel: {
       stylePreset: 'sliderThumbLabel',
-      typographyPreset: 'label030',
+      typographyPreset: 'utilityLabel030',
       space: 'space060',
     },
     labels: {
       stylePreset: 'sliderLabels',
-      typographyPreset: 'label020',
+      typographyPreset: 'utilityLabel020',
       space: 'space030',
     },
   },
@@ -381,15 +386,15 @@ export const componentDefaults = {
     styledText: {
       stylePreset: 'inkBase',
       typographyPreset: {
-        xs: 'subhead020',
-        lg: 'subhead030',
+        xs: 'editorialSubheading010',
+        lg: 'editorialSubheading020',
       },
     },
   },
   tab: {
     small: {
       stylePreset: 'tab',
-      typographyPreset: 'button010',
+      typographyPreset: 'utilityLabel010',
       spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
@@ -397,7 +402,7 @@ export const componentDefaults = {
     },
     medium: {
       stylePreset: 'tab',
-      typographyPreset: 'button020',
+      typographyPreset: 'utilityLabel020',
       spaceInset: 'spaceInsetSquish030',
       minHeight: 'sizing080',
       iconSize: 'iconSize020',
@@ -405,7 +410,7 @@ export const componentDefaults = {
     },
     large: {
       stylePreset: 'tab',
-      typographyPreset: 'button030',
+      typographyPreset: 'utilityLabel030',
       spaceInset: 'spaceInsetSquish030',
       minHeight: 'sizing090',
       iconSize: 'iconSize030',
@@ -419,7 +424,7 @@ export const componentDefaults = {
     small: {
       label: {
         stylePreset: 'inkContrast',
-        typographyPreset: 'label030',
+        typographyPreset: 'utilityLabel030',
         spaceStack: 'space040',
         spaceInline: 'space010',
       },
@@ -427,7 +432,7 @@ export const componentDefaults = {
         stylePreset: 'textInput',
         spaceInset: 'spaceInset020',
         minHeight: 'sizing060',
-        typographyPreset: 'label020',
+        typographyPreset: 'utilityBody020',
         spaceStack: 'space020',
         iconSize: 'iconSize020',
         iconSpace: 'space030',
@@ -435,14 +440,14 @@ export const componentDefaults = {
       },
       assistiveText: {
         stylePreset: 'textInputAssistiveText',
-        typographyPreset: 'label020',
+        typographyPreset: 'utilityLabel020',
         minHeight: 'sizing030',
       },
     },
     medium: {
       label: {
         stylePreset: 'inkContrast',
-        typographyPreset: 'label040',
+        typographyPreset: 'utilityLabel030',
         spaceStack: 'space040',
         spaceInline: 'space010',
       },
@@ -450,7 +455,7 @@ export const componentDefaults = {
         stylePreset: 'textInput',
         spaceInset: 'spaceInset030',
         minHeight: 'sizing080',
-        typographyPreset: 'label020',
+        typographyPreset: 'utilityBody020',
         spaceStack: 'space020',
         iconSize: 'iconSize020',
         iconSpace: 'space030',
@@ -458,14 +463,14 @@ export const componentDefaults = {
       },
       assistiveText: {
         stylePreset: 'textInputAssistiveText',
-        typographyPreset: 'label020',
+        typographyPreset: 'utilityLabel020',
         minHeight: 'sizing030',
       },
     },
     large: {
       label: {
         stylePreset: 'inkContrast',
-        typographyPreset: 'label040',
+        typographyPreset: 'utilityLabel030',
         spaceStack: 'space040',
         spaceInline: 'space010',
       },
@@ -473,7 +478,7 @@ export const componentDefaults = {
         stylePreset: 'textInput',
         spaceInset: 'spaceInset030',
         minHeight: 'sizing090',
-        typographyPreset: 'label030',
+        typographyPreset: 'utilityBody030',
         spaceStack: 'space020',
         iconSize: 'iconSize030',
         iconSpace: 'space030',
@@ -481,14 +486,14 @@ export const componentDefaults = {
       },
       assistiveText: {
         stylePreset: 'textInputAssistiveText',
-        typographyPreset: 'label030',
+        typographyPreset: 'utilityLabel030',
         minHeight: 'sizing030',
       },
     },
   },
   tag: {
     small: {
-      typographyPreset: 'label010',
+      typographyPreset: 'utilityLabel010',
       stylePreset: 'tagDefault',
       spaceInset: 'spaceInsetSquish010',
       minHeight: 'sizing050',
@@ -496,7 +501,7 @@ export const componentDefaults = {
       spaceInline: 'sizing010',
     },
     medium: {
-      typographyPreset: 'label020',
+      typographyPreset: 'utilityLabel020',
       stylePreset: 'tagDefault',
       spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing060',
@@ -504,7 +509,7 @@ export const componentDefaults = {
       spaceInline: 'sizing010',
     },
     large: {
-      typographyPreset: 'label030',
+      typographyPreset: 'utilityLabel030',
       stylePreset: 'tagDefault',
       spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing070',
@@ -520,9 +525,9 @@ export const componentDefaults = {
     },
     heading: {
       typographyPreset: {
-        xs: 'heading040',
-        lg: 'heading050',
-        xl: 'heading070',
+        xs: 'editorialHeading050',
+        md: 'editorialHeading070',
+        lg: 'editorialHeading080',
       },
     },
   },
@@ -530,7 +535,7 @@ export const componentDefaults = {
     spaceStack: 'space040',
     content: {
       stylePreset: 'inkBase',
-      typographyPreset: 'body010',
+      typographyPreset: 'editorialParagraph010',
     },
     marker: {
       stylePreset: 'inkBase',

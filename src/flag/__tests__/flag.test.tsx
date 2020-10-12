@@ -42,7 +42,7 @@ describe('Flag', () => {
   test('renders a flag with a custom typographyPreset', () => {
     const props: FlagProps = {
       overrides: {
-        typographyPreset: 'label020',
+        typographyPreset: 'utilityLabel020',
       },
     };
     const fragment = renderToFragmentWithTheme(renderFlagWithText, props);

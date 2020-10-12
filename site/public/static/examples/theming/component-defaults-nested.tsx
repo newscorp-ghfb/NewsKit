@@ -1,11 +1,11 @@
 // Component Defaults:
 byline: {
   stylePreset: 'inkSubtle',
-  typographyPreset: 'meta020',
+  typographyPreset: 'utilityMeta020',
   space: 'sizing020',
   link: {
     stylePreset: 'bylineLink',
-    typographyPreset: 'meta020',
+    typographyPreset: 'utilityMeta020',
   },
   divider: {
     stylePreset: 'bylineDivider',

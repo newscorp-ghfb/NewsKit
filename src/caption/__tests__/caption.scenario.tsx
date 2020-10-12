@@ -35,11 +35,11 @@ export default {
           <StyledDiv>
             <Caption
               overrides={{
-                typographyPreset: 'body030',
+                typographyPreset: 'editorialParagraph030',
                 stylePreset: 'inkContrast',
                 spaceStack: 'space090',
                 credit: {
-                  typographyPreset: 'meta030',
+                  typographyPreset: 'utilityMeta030',
                   stylePreset: 'inkContrast',
                 },
               }}
@@ -72,7 +72,7 @@ export default {
           <StyledDiv>
             <CaptionInset
               overrides={{
-                typographyPreset: 'body030',
+                typographyPreset: 'editorialParagraph030',
                 stylePreset: 'inkInformative',
                 spaceStack: 'space090',
                 spaceInset: {
@@ -80,7 +80,7 @@ export default {
                   md: 'spaceInset070',
                 },
                 credit: {
-                  typographyPreset: 'meta030',
+                  typographyPreset: 'utilityMeta030',
                   stylePreset: 'inkInformative',
                 },
               }}

@@ -10,7 +10,7 @@ export const StyledNavItem = styled.div<{
   hasActiveChild: boolean;
   level: number;
 }>`
-  ${getTypographyPresetFromTheme('body020')};
+  ${getTypographyPresetFromTheme('utilityBody020')};
   line-height: 1.5rem;
   background-color: transparent;
   box-sizing: border-box;
@@ -56,7 +56,7 @@ export const StyledNavItem = styled.div<{
 `;
 
 export const StyledContainer = styled.nav`
-  ${getTypographyPresetFromTheme('body030')};
+  ${getTypographyPresetFromTheme('utilityBody030')};
   list-style-type: none;
   margin: 0;
 `;

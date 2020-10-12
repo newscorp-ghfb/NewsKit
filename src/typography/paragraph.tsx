@@ -40,7 +40,7 @@ export const ParagraphDropCap = styled.span<ParagraphProps>`
   margin-right: 0.15em;
 
   margin-top: ${getSpace('paragraph.dropCap', 'dropCap')};
-  ${getTypographyPreset('paragraph.dropCap', 'dropCap', {withCrop: true})};
+  ${getTypographyPreset('paragraph.dropCap', 'dropCap')};
   ${getStylePreset('paragraph.dropCap', 'dropCap')};
 `;
 

@@ -32,37 +32,55 @@ export default {
       component: () => (
         <React.Fragment>
           <H1
-            overrides={{stylePreset: 'linkInline', typographyPreset: 'body010'}}
+            overrides={{
+              stylePreset: 'linkInline',
+              typographyPreset: 'editorialParagraph010',
+            }}
           >
             H1 with override
           </H1>
           <br />
           <H2
-            overrides={{stylePreset: 'linkInline', typographyPreset: 'body020'}}
+            overrides={{
+              stylePreset: 'linkInline',
+              typographyPreset: 'editorialParagraph020',
+            }}
           >
             H2 with override
           </H2>
           <br />
           <H3
-            overrides={{stylePreset: 'linkInline', typographyPreset: 'body030'}}
+            overrides={{
+              stylePreset: 'linkInline',
+              typographyPreset: 'editorialParagraph030',
+            }}
           >
             H3 with override
           </H3>
           <br />
           <H4
-            overrides={{stylePreset: 'linkInline', typographyPreset: 'body010'}}
+            overrides={{
+              stylePreset: 'linkInline',
+              typographyPreset: 'editorialParagraph010',
+            }}
           >
             H4 with override
           </H4>
           <br />
           <H5
-            overrides={{stylePreset: 'linkInline', typographyPreset: 'body020'}}
+            overrides={{
+              stylePreset: 'linkInline',
+              typographyPreset: 'editorialParagraph020',
+            }}
           >
             H5 with override
           </H5>
           <br />
           <H6
-            overrides={{stylePreset: 'linkInline', typographyPreset: 'body030'}}
+            overrides={{
+              stylePreset: 'linkInline',
+              typographyPreset: 'editorialParagraph030',
+            }}
           >
             H6 with override
           </H6>

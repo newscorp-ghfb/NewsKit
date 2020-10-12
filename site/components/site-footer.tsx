@@ -45,7 +45,7 @@ const FooterCopy = styled.div`
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  ${getTypographyPresetFromTheme('body010')};
+  ${getTypographyPresetFromTheme('utilityBody010')};
   color: ${getColorFromTheme('inkSubtle')};
 `;
 
@@ -64,7 +64,7 @@ const FooterMenu = styled.div`
 const FooterLink = styled.span`
   flex-basis: 50%;
   padding-top: ${getSizingFromTheme('sizing050')};
-  ${getTypographyPresetFromTheme('label020')};
+  ${getTypographyPresetFromTheme('utilityLabel020')};
 
   ${getMediaQueryFromTheme('md')} {
     flex-basis: auto;

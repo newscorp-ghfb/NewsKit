@@ -25,7 +25,7 @@ export interface DefaultValueProps {
 }
 
 const StyledContainer = styled.div<Pick<PropProps, 'nested'>>`
-  ${getTypographyPresetFromTheme('body020')}
+  ${getTypographyPresetFromTheme('utilityBody020')}
   line-height: 1.3;
   margin-bottom: ${getSizingFromTheme('sizing060')};
   color: ${getColorFromTheme('inkBase')};
@@ -34,7 +34,7 @@ const StyledContainer = styled.div<Pick<PropProps, 'nested'>>`
 `;
 
 const PropsRow = styled.div`
-  ${getTypographyPresetFromTheme('body020')};
+  ${getTypographyPresetFromTheme('utilityBody020')};
   font-family: monospace;
   padding-bottom: ${getSizingFromTheme('sizing020')};
   border-bottom-style: solid;

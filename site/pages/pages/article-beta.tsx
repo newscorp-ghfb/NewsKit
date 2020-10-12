@@ -65,12 +65,12 @@ const AuthorImageContainer = styled.div`
 `;
 
 const AuthorName = styled.span`
-  ${getTypographyPresetFromTheme('body010')};
+  ${getTypographyPresetFromTheme('utilityBody010')};
   display: block;
 `;
 
 const Description = styled.span`
-  ${getTypographyPresetFromTheme('subhead040')};
+  ${getTypographyPresetFromTheme('utilitySubheading050')};
   display: block;
 `;
 

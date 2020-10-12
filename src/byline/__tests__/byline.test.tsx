@@ -145,11 +145,11 @@ describe('Byline', () => {
     const props: BylineProps = {
       overrides: {
         stylePreset: 'bylineCustom',
-        typographyPreset: 'label040',
+        typographyPreset: 'utilityLabel030',
         spaceStack: 'sizing030',
         link: {
           stylePreset: 'bylineLinkCustom',
-          typographyPreset: 'label040',
+          typographyPreset: 'utilityLabel030',
         },
         divider: {
           stylePreset: 'bylineDividerCustom',

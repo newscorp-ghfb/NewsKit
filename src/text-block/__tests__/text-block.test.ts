@@ -29,7 +29,7 @@ describe('TextBlock', () => {
   test('renders with custom typography preset', () => {
     const fragment = renderToFragmentWithTheme(TextBlock, {
       overrides: {
-        typographyPreset: 'body010',
+        typographyPreset: 'editorialParagraph010',
       },
     });
     expect(fragment).toMatchSnapshot();

@@ -19,7 +19,7 @@ exports[`TypographyPreset renders default 1`] = `
 </DocumentFragment>
 `;
 
-exports[`TypographyPreset renders responsive override body010 for xs and body030 for md breakpoints 1`] = `
+exports[`TypographyPreset renders responsive override editorialParagraph010 for xs and editorialParagraph030 for md breakpoints 1`] = `
 <DocumentFragment>
   @media screen and (max-width:767px) {
   .emotion-0 {
@@ -53,7 +53,7 @@ exports[`TypographyPreset renders responsive override body010 for xs and body030
 </DocumentFragment>
 `;
 
-exports[`TypographyPreset renders responsive override body010 for xs, body020 for sm, and body030 for md breakpoints 1`] = `
+exports[`TypographyPreset renders responsive override editorialParagraph010 for xs, editorialParagraph020 for sm, and editorialParagraph030 for md breakpoints 1`] = `
 <DocumentFragment>
   @media screen and (max-width:479px) {
   .emotion-0 {
@@ -100,7 +100,7 @@ exports[`TypographyPreset renders responsive override body010 for xs, body020 fo
 </DocumentFragment>
 `;
 
-exports[`TypographyPreset renders responsive override body010 for xs, body020 for sm, and wrong for md breakpoints 1`] = `
+exports[`TypographyPreset renders responsive override editorialParagraph010 for xs, editorialParagraph020 for sm, and wrong for md breakpoints 1`] = `
 <DocumentFragment>
   @media screen and (max-width:479px) {
   .emotion-0 {
@@ -134,7 +134,7 @@ exports[`TypographyPreset renders responsive override body010 for xs, body020 fo
 </DocumentFragment>
 `;
 
-exports[`TypographyPreset renders responsive override body010 for xs, body020 for sm, body030 for md, code010 for lg breakpoints and ignore wrong prop 1`] = `
+exports[`TypographyPreset renders responsive override editorialParagraph010 for xs, editorialParagraph020 for sm, editorialParagraph030 for md, editorialHeading010 for lg breakpoints and ignore wrong prop 1`] = `
 <DocumentFragment>
   @media screen and (max-width:479px) {
   .emotion-0 {
@@ -177,10 +177,10 @@ exports[`TypographyPreset renders responsive override body010 for xs, body020 fo
 
 @media screen and (min-width:1024px) {
   .emotion-0 {
-    font-family: system-ui,"Open Sans",sans-serif;
-    font-size: 14px;
-    line-height: 1.4285714285714286;
-    font-weight: 400;
+    font-family: "Source Serif Pro",serif;
+    font-size: 18px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -194,7 +194,7 @@ exports[`TypographyPreset renders responsive override body010 for xs, body020 fo
 </DocumentFragment>
 `;
 
-exports[`TypographyPreset renders with override body010 1`] = `
+exports[`TypographyPreset renders with override editorialParagraph010 1`] = `
 <DocumentFragment>
   .emotion-0 {
   font-family: "Noto Sans",sans-serif;

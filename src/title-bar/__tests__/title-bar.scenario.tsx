@@ -22,10 +22,10 @@ export default {
             overrides={{
               heading: {
                 typographyPreset: {
-                  xs: 'heading010',
-                  sm: 'heading020',
-                  md: 'heading030',
-                  lg: 'heading040',
+                  xs: 'editorialHeading010',
+                  sm: 'editorialHeading020',
+                  md: 'editorialHeading030',
+                  lg: 'editorialHeading040',
                 },
               },
             }}

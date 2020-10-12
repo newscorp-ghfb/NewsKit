@@ -5,7 +5,8 @@ exports[`withDefaultProps will return a component with merged props taking a fun
   <div>
     {
   "overrides": {
-    "stylePreset": "linkStandalone"
+    "stylePreset": "linkStandalone",
+    "typographyPreset": "utilityButton020"
   },
   "functionMock": "props",
   "test": "props"
@@ -19,7 +20,8 @@ exports[`withDefaultProps will return a component with merged props taking an ob
   <div>
     {
   "overrides": {
-    "stylePreset": "linkStandalone"
+    "stylePreset": "linkStandalone",
+    "typographyPreset": "utilityButton020"
   },
   "test": "prop"
 }
@@ -32,7 +34,8 @@ exports[`withDefaultProps will return a component with merged props taking undef
   <div>
     {
   "overrides": {
-    "stylePreset": "linkStandalone"
+    "stylePreset": "linkStandalone",
+    "typographyPreset": "utilityButton020"
   }
 }
   </div>

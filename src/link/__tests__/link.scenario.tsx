@@ -33,7 +33,7 @@ export default {
           <Link
             href="/"
             overrides={{
-              typographyPreset: 'label020',
+              typographyPreset: 'utilityLabel020',
               stylePreset: 'inkBrand010',
             }}
           >
@@ -106,7 +106,7 @@ export default {
           <LinkStandalone
             href="https://google.com"
             overrides={{
-              typographyPreset: 'label020',
+              typographyPreset: 'utilityLabel020',
               stylePreset: 'inkBrand010',
             }}
           >
@@ -136,7 +136,7 @@ export default {
             <Link
               href="http://localhost:6006"
               overrides={{
-                typographyPreset: 'label020',
+                typographyPreset: 'utilityLabel020',
                 stylePreset: 'inkBrand010',
               }}
             >
@@ -164,7 +164,7 @@ export default {
             <Link
               href="http://apple.com"
               overrides={{
-                typographyPreset: 'label020',
+                typographyPreset: 'utilityLabel020',
                 stylePreset: 'inkBrand010',
               }}
             >

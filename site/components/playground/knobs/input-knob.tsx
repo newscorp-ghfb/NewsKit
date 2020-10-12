@@ -29,12 +29,12 @@ export const HiddenLabel = styled.label`
 export const StyledLabel = styled.label`
   display: block;
   margin: ${getSizingFromTheme('sizing040')} 0px;
-  ${getTypographyPresetFromTheme('label030')};
+  ${getTypographyPresetFromTheme('utilityLabel030')};
   color: ${getColorFromTheme('inkBase')};
 `;
 
 export const StyledInput = styled.input`
-  ${getTypographyPresetFromTheme('body010')};
+  ${getTypographyPresetFromTheme('utilityBody010')};
   display: block;
   padding: ${getSizingFromTheme('sizing020')};
   background-color: ${getColorFromTheme('interface020')};

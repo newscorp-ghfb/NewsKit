@@ -307,15 +307,15 @@ export default {
                 overrides={{
                   label: {
                     stylePreset: 'inputContainerCustom',
-                    typographyPreset: 'label030',
+                    typographyPreset: 'utilityLabel030',
                   },
                   input: {
                     stylePreset: 'inputContainerCustom',
-                    typographyPreset: 'body030',
+                    typographyPreset: 'utilityBody030',
                   },
                   assistiveText: {
                     stylePreset: 'inputContainerCustom',
-                    typographyPreset: 'label030',
+                    typographyPreset: 'utilityLabel030',
                   },
                 }}
               />

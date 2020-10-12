@@ -42,7 +42,7 @@ describe('Tag', () => {
   test('renders a tag with a custom typographyPreset', () => {
     const props: TagProps = {
       overrides: {
-        typographyPreset: 'label030',
+        typographyPreset: 'utilityLabel030',
       },
     };
     const fragment = renderToFragmentWithTheme(renderTagWithText, props);

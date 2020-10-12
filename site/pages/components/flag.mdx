@@ -43,7 +43,7 @@ Flags have a number of props to facilitate a variety of uses:
     </Prop>
     <Prop name="typographyPreset" type="MQ<TypographyPresetKeys>">
       If provided, this overrides the typography preset applied to the Flag. Otherwise,
-      label010 or label020 is used depending on the `size` prop.
+      utilityLabel010 or utilityLabel030 is used depending on the `size` prop.
     </Prop>
     <Prop name="spaceInline" type="MQ<SizingKeys>">
       If provided, this overrides the space between multiple children in the
@@ -168,9 +168,9 @@ Flags have a number of props to facilitate a variety of uses:
           isDefault: true,
         },
         {
-          label: 'label010',
+          label: 'utilityLabel010',
           value: {
-            typographyPreset: 'label010',
+            typographyPreset: 'utilityLabel010',
           },
         },
         {

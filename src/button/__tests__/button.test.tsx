@@ -71,7 +71,7 @@ describe('Button', () => {
   test('renders with different typography preset', () => {
     const props: ButtonProps = {
       overrides: {
-        typographyPreset: 'button030',
+        typographyPreset: 'utilityButton030',
       },
     };
 

@@ -30,14 +30,14 @@ describe('DateTime', () => {
       suffix: ', The Times',
       prefix: 'Updated:',
       overrides: {
-        typographyPreset: 'label010',
+        typographyPreset: 'utilityLabel010',
         stylePreset: 'articleHeadlineKicker',
         prefix: {
-          typographyPreset: 'label020',
+          typographyPreset: 'utilityLabel020',
           stylePreset: 'articleHeadlineKicker',
         },
         suffix: {
-          typographyPreset: 'label020',
+          typographyPreset: 'utilityLabel020',
           stylePreset: 'articleHeadlineKicker',
         },
       },

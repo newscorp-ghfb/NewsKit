@@ -48,7 +48,7 @@ export default {
           <P
             overrides={{
               stylePreset: 'linkInline',
-              typographyPreset: 'heading020',
+              typographyPreset: 'editorialHeading020',
             }}
           >
             This being Black History Month, last week was Politicians In Search
@@ -63,7 +63,7 @@ export default {
             overrides={{
               dropCap: {
                 stylePreset: 'linkInline',
-                typographyPreset: 'heading070',
+                typographyPreset: 'editorialHeading070',
                 space: 'space040',
               },
             }}

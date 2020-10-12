@@ -19,7 +19,7 @@ describe('Headings', () => {
     const wrapper = renderToFragmentWithTheme(Component, {
       children: 'A Heading',
       overrides: {
-        typographyPreset: 'heading050',
+        typographyPreset: 'editorialHeading050',
         stylePreset: 'linkInline',
       },
     } as Headings.HeadingOverrides);

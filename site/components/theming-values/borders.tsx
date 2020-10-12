@@ -27,7 +27,7 @@ const StyledBorderBox = styled.div<StyledBorderBoxProps>`
 function BorderPreview({name, border}: BorderPreviewProps): JSX.Element {
   return (
     <LegacyBlock width="250px" margin="sizing070">
-      <LegacyBlock font="body030">
+      <LegacyBlock font="utilityBody030">
         {name} ({border.borderWidth} {border.borderStyle} {border.borderColor})
       </LegacyBlock>
       <StyledBorderBox {...border} />

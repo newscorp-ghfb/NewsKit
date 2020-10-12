@@ -14,12 +14,21 @@ const Index: React.FC<{
         <Cell xs={12}>
           <Block overrides={{spaceStack: 'space070'}}>
             <Block overrides={{spaceStack: 'space040'}}>
-              <H1 overrides={{typographyPreset: 'heading080'}}>NewsKit,</H1>
+              <H1 overrides={{typographyPreset: 'utilityHeading050'}}>
+                NewsKit,
+              </H1>
             </Block>
             <Block overrides={{spaceStack: 'space060'}}>
-              <H2>News Corp&apos;s design system</H2>
+              <H2 overrides={{typographyPreset: 'utilitySubheading040'}}>
+                News Corp&apos;s design system
+              </H2>
             </Block>
-            <Paragraph overrides={{stylePreset: 'inkSubtle'}}>
+            <Paragraph
+              overrides={{
+                stylePreset: 'inkSubtle',
+                typographyPreset: 'utilityBody020',
+              }}
+            >
               The NewsKit Design provides interactive building blocks and
               guiding principles for creating digital products. There are three
               categories within the NewsKit design system: Foundations,
@@ -38,15 +47,18 @@ const Index: React.FC<{
           <Block overrides={{spaceStack: 'space040'}}>
             <H3
               overrides={{
-                typographyPreset: 'heading010',
                 stylePreset: 'inkBase',
+                typographyPreset: 'utilitySubheading020',
               }}
             >
               Foundations
             </H3>
           </Block>
           <Paragraph
-            overrides={{stylePreset: 'inkSubtle', typographyPreset: 'body020'}}
+            overrides={{
+              stylePreset: 'inkSubtle',
+              typographyPreset: 'utilityBody020',
+            }}
           >
             Foundations includes a range of styles, variables and code that form
             the core of how the Design System works, including colour,
@@ -64,15 +76,18 @@ const Index: React.FC<{
           <Block overrides={{spaceStack: 'space040'}}>
             <H3
               overrides={{
-                typographyPreset: 'heading010',
                 stylePreset: 'inkBase',
+                typographyPreset: 'utilitySubheading020',
               }}
             >
               Components
             </H3>
           </Block>
           <Paragraph
-            overrides={{stylePreset: 'inkSubtle', typographyPreset: 'body020'}}
+            overrides={{
+              stylePreset: 'inkSubtle',
+              typographyPreset: 'utilityBody020',
+            }}
           >
             The library of components are the building blocks of our products.
             They are reusable interface patterns from simple buttons to complex
@@ -90,15 +105,18 @@ const Index: React.FC<{
           <Block overrides={{spaceStack: 'space040'}}>
             <H3
               overrides={{
-                typographyPreset: 'heading010',
                 stylePreset: 'inkBase',
+                typographyPreset: 'utilitySubheading020',
               }}
             >
               Templates
             </H3>
           </Block>
           <Paragraph
-            overrides={{stylePreset: 'inkSubtle', typographyPreset: 'body020'}}
+            overrides={{
+              stylePreset: 'inkSubtle',
+              typographyPreset: 'utilityBody020',
+            }}
           >
             Templates document the layout and structure of a section or entire
             page of an interface and how these are arranged and adapt across

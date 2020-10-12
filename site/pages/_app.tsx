@@ -173,6 +173,54 @@ export default class MyApp extends App<Props, State> {
                   font-weight: 700;
                   font-display: swap;
                 }
+                @font-face {
+                  font-family: 'Source Serif Pro';
+                  src: url('source-serif-pro-regular.woff2') format('woff2'),
+                    url('source-serif-pro-regular.woff') format('woff');
+                  font-style: normal;
+                  font-weight: 400;
+                  font-display: swap;
+                }
+                @font-face {
+                  font-family: 'Source Serif Pro';
+                  src: url('source-serif-pro-italic.woff2') format('woff2'),
+                    url('source-serif-pro-italic.woff') format('woff');
+                  font-style: italic;
+                  font-weight: 400;
+                  font-display: swap;
+                }
+                @font-face {
+                  font-family: 'Source Serif Pro';
+                  src: url('source-serif-pro-600.woff2') format('woff2'),
+                    url('source-serif-pro-600.woff') format('woff');
+                  font-style: normal;
+                  font-weight: 600;
+                  font-display: swap;
+                }
+                @font-face {
+                  font-family: 'Source Serif Pro';
+                  src: url('source-serif-pro-600italic.woff2') format('woff2'),
+                    url('source-serif-pro-600italic.woff') format('woff');
+                  font-style: italic;
+                  font-weight: 600;
+                  font-display: swap;
+                }
+                @font-face {
+                  font-family: 'Source Serif Pro';
+                  src: url('source-serif-pro-700.woff2') format('woff2'),
+                    url('source-serif-pro-700.woff') format('woff');
+                  font-style: normal;
+                  font-weight: 700;
+                  font-display: swap;
+                }
+                @font-face {
+                  font-family: 'Source Serif Pro';
+                  src: url('source-serif-pro-700italic.woff2') format('woff2'),
+                    url('source-serif-pro-700italic.woff') format('woff');
+                  font-style: italic;
+                  font-weight: 700;
+                  font-display: swap;
+                }
               `}
             />
 

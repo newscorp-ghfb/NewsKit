@@ -71,7 +71,7 @@ export default {
             <Standfirst
               overrides={{
                 styledText: {
-                  typographyPreset: 'subhead030',
+                  typographyPreset: 'editorialSubheading030',
                 },
               }}
             >

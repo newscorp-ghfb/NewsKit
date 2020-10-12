@@ -26,7 +26,8 @@ export const fonts = {
   fontWeight010: 300,
   fontWeight020: 400,
   fontWeight030: 500,
-  fontWeight040: 700,
+  fontWeight040: 600,
+  fontWeight050: 700,
 
   fontLetterSpacing010: '-0.5px',
   fontLetterSpacing020: '-0.25px',
@@ -34,7 +35,7 @@ export const fonts = {
   fontLetterSpacing040: '0.25px',
   fontLetterSpacing050: '0.5px',
 
-  fontFamily1: {
+  fontFamily010: {
     fontFamily: '"Noto Sans", sans-serif',
     cropConfig: {
       top: 8,
@@ -54,8 +55,8 @@ export const fonts = {
       },
     },
   } as FontConfig,
-  fontFamily2: {
-    fontFamily: '"Noto Sans", sans-serif',
+  fontFamily020: {
+    fontFamily: '"Source Serif Pro", serif',
     cropConfig: {
       top: 8,
       bottom: 10,
@@ -74,10 +75,7 @@ export const fonts = {
       },
     },
   } as FontConfig,
-  fontFamily3: {
-    fontFamily: 'system-ui, "Open Sans", sans-serif',
-  },
-  fontFamily4: {
+  fontFamily030: {
     fontFamily: '"Courier", monospace',
     cropConfig: {
       top: 3,

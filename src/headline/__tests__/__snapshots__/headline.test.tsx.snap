@@ -10,10 +10,10 @@ exports[`headline renders correctly with default props 1`] = `
 
 @media screen and (max-width:479px) {
   .emotion-0 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 36px;
-    line-height: 1.2222222222222223;
-    font-weight: 700;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -25,7 +25,7 @@ exports[`headline renders correctly with default props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2611111111111112em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-0::after {
@@ -33,16 +33,16 @@ exports[`headline renders correctly with default props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3236111111111112em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-0 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 36px;
-    line-height: 1.2222222222222223;
-    font-weight: 700;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -54,7 +54,7 @@ exports[`headline renders correctly with default props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2611111111111112em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-0::after {
@@ -62,16 +62,16 @@ exports[`headline renders correctly with default props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3236111111111112em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-0 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 40px;
-    line-height: 1.3;
-    font-weight: 700;
+    line-height: 1.1;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -83,7 +83,7 @@ exports[`headline renders correctly with default props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.30000000000000004em;
+    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-0::after {
@@ -91,16 +91,16 @@ exports[`headline renders correctly with default props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.36250000000000004em;
+    margin-top: -0.26250000000000007em;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-0 {
-    font-family: "Noto Sans",sans-serif;
-    font-size: 44px;
-    line-height: 1.2727272727272727;
-    font-weight: 700;
+    font-family: "Source Serif Pro",serif;
+    font-size: 48px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -112,7 +112,7 @@ exports[`headline renders correctly with default props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2863636363636364em;
+    margin-bottom: -0.2333333333333334em;
   }
 
   .emotion-0::after {
@@ -120,7 +120,7 @@ exports[`headline renders correctly with default props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3488636363636364em;
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -146,10 +146,10 @@ exports[`headline renders correctly with default props 2`] = `
 
 @media screen and (max-width:479px) {
   .emotion-1 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 36px;
-    line-height: 1.2222222222222223;
-    font-weight: 700;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -161,7 +161,7 @@ exports[`headline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2611111111111112em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-1::after {
@@ -169,16 +169,16 @@ exports[`headline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3236111111111112em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-1 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 36px;
-    line-height: 1.2222222222222223;
-    font-weight: 700;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -190,7 +190,7 @@ exports[`headline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2611111111111112em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-1::after {
@@ -198,16 +198,16 @@ exports[`headline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3236111111111112em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-1 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 40px;
-    line-height: 1.3;
-    font-weight: 700;
+    line-height: 1.1;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -219,7 +219,7 @@ exports[`headline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.30000000000000004em;
+    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-1::after {
@@ -227,16 +227,16 @@ exports[`headline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.36250000000000004em;
+    margin-top: -0.26250000000000007em;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-1 {
-    font-family: "Noto Sans",sans-serif;
-    font-size: 44px;
-    line-height: 1.2727272727272727;
-    font-weight: 700;
+    font-family: "Source Serif Pro",serif;
+    font-size: 48px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -248,7 +248,7 @@ exports[`headline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2863636363636364em;
+    margin-bottom: -0.2333333333333334em;
   }
 
   .emotion-1::after {
@@ -256,7 +256,7 @@ exports[`headline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3488636363636364em;
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -277,10 +277,10 @@ exports[`headline renders correctly with default props 2`] = `
 
 @media screen and (max-width:479px) {
   .emotion-0 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 36px;
-    line-height: 1.2222222222222223;
-    font-weight: 700;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -292,7 +292,7 @@ exports[`headline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2611111111111112em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-0::after {
@@ -300,16 +300,16 @@ exports[`headline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3236111111111112em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-0 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 36px;
-    line-height: 1.2222222222222223;
-    font-weight: 700;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -321,7 +321,7 @@ exports[`headline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2611111111111112em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-0::after {
@@ -329,16 +329,16 @@ exports[`headline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3236111111111112em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-0 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 40px;
-    line-height: 1.3;
-    font-weight: 700;
+    line-height: 1.1;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -350,7 +350,7 @@ exports[`headline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.30000000000000004em;
+    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-0::after {
@@ -358,16 +358,16 @@ exports[`headline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.36250000000000004em;
+    margin-top: -0.26250000000000007em;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-0 {
-    font-family: "Noto Sans",sans-serif;
-    font-size: 44px;
-    line-height: 1.2727272727272727;
-    font-weight: 700;
+    font-family: "Source Serif Pro",serif;
+    font-size: 48px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -379,7 +379,7 @@ exports[`headline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2863636363636364em;
+    margin-bottom: -0.2333333333333334em;
   }
 
   .emotion-0::after {
@@ -387,7 +387,7 @@ exports[`headline renders correctly with default props 2`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3488636363636364em;
+    margin-top: -0.2958333333333334em;
   }
 }
 
@@ -445,10 +445,10 @@ exports[`headline renders correctly with overriden props 1`] = `
 .emotion-0 {
   display: inline-block;
   margin: 0;
-  font-family: "Noto Sans",sans-serif;
+  font-family: "Source Serif Pro",serif;
   font-size: 32px;
-  line-height: 1.25;
-  font-weight: 700;
+  line-height: 1.125;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -462,7 +462,7 @@ exports[`headline renders correctly with overriden props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.275em;
+  margin-bottom: -0.21250000000000002em;
 }
 
 .emotion-0::after {
@@ -470,7 +470,7 @@ exports[`headline renders correctly with overriden props 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.3375em;
+  margin-top: -0.275em;
 }
 
 .emotion-0 svg {
@@ -509,10 +509,10 @@ exports[`headline renders correctly with overriden props 1`] = `
 
 @media screen and (max-width:479px) {
   .emotion-1 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 36px;
-    line-height: 1.2222222222222223;
-    font-weight: 700;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -524,7 +524,7 @@ exports[`headline renders correctly with overriden props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2611111111111112em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-1::after {
@@ -532,16 +532,16 @@ exports[`headline renders correctly with overriden props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3236111111111112em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width:480px) and (max-width:1023px) {
   .emotion-1 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 36px;
-    line-height: 1.2222222222222223;
-    font-weight: 700;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -553,7 +553,7 @@ exports[`headline renders correctly with overriden props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2611111111111112em;
+    margin-bottom: -0.2055555555555556em;
   }
 
   .emotion-1::after {
@@ -561,16 +561,16 @@ exports[`headline renders correctly with overriden props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3236111111111112em;
+    margin-top: -0.2680555555555556em;
   }
 }
 
 @media screen and (min-width:1024px) and (max-width:1439px) {
   .emotion-1 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 40px;
-    line-height: 1.3;
-    font-weight: 700;
+    line-height: 1.1;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -582,7 +582,7 @@ exports[`headline renders correctly with overriden props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.30000000000000004em;
+    margin-bottom: -0.20000000000000007em;
   }
 
   .emotion-1::after {
@@ -590,16 +590,16 @@ exports[`headline renders correctly with overriden props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.36250000000000004em;
+    margin-top: -0.26250000000000007em;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-1 {
-    font-family: "Noto Sans",sans-serif;
-    font-size: 44px;
-    line-height: 1.2727272727272727;
-    font-weight: 700;
+    font-family: "Source Serif Pro",serif;
+    font-size: 48px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -611,7 +611,7 @@ exports[`headline renders correctly with overriden props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.2863636363636364em;
+    margin-bottom: -0.2333333333333334em;
   }
 
   .emotion-1::after {
@@ -619,7 +619,7 @@ exports[`headline renders correctly with overriden props 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.3488636363636364em;
+    margin-top: -0.2958333333333334em;
   }
 }
 

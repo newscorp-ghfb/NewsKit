@@ -5,7 +5,7 @@ const theme = createTheme({
   overrides: {
     typographyPresets: {
       customHeading: {
-        fontFamily: '{{fonts.fontFamily1.fontFamily}}',
+        fontFamily: '{{fonts.fontFamily010.fontFamily}}',
         fontSize: '{{fonts.fontSize160}}',
         lineHeight: '{{fonts.fontLineHeight040}}',
         fontWeight: '{{fonts.fontWeight040}}',

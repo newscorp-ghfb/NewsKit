@@ -1912,8 +1912,8 @@ exports[`Flag renders with Large size 1`] = `
 
 .emotion-0 {
   font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -1926,7 +1926,7 @@ exports[`Flag renders with Large size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: -0.4em;
 }
 
 .emotion-0::after {
@@ -1934,7 +1934,7 @@ exports[`Flag renders with Large size 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: -0.4625em;
 }
 
 <div

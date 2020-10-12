@@ -119,13 +119,13 @@ export const Heading = ({
 );
 
 const ListItem: React.FC<TextProps> = ({children}) => (
-  <TextElement as="li" font="body030" marginBottom="0">
+  <TextElement as="li" font="utilityBody020" marginBottom="0">
     {children}
   </TextElement>
 );
 
 const Paragraph: React.FC<TextProps> = ({children}) => (
-  <TextElement as="p" font="body030" color="inkBase">
+  <TextElement as="p" font="utilityBody020" color="inkBase">
     {children}
   </TextElement>
 );
@@ -150,7 +150,7 @@ const Blockquote = styled.blockquote`
 `;
 
 export const Table = styled.table`
-  ${getTypographyPresetFromTheme('body020')}
+  ${getTypographyPresetFromTheme('utilityBody020')}
   box-shadow: 0 3px 4px 2px ${getColorFromTheme('interface010')};
 
   &,
@@ -206,7 +206,7 @@ export const H1 = ({children}: TextProps) => (
           children.toLowerCase().replace(/\s+/g, '-')) as string | undefined
       }
       element="h1"
-      fontType="heading080"
+      fontType="utilityHeading050"
       wrapText
     >
       {children as string}
@@ -221,7 +221,7 @@ export const H2 = ({children, offset}: TextProps & {offset?: number}) => {
   return (
     <React.Fragment>
       <SectionLink id={id} offset={offset} />
-      <Heading element="h2" fontType="subhead030" border>
+      <Heading element="h2" fontType="utilitySubheading040" border>
         {children as string}
       </Heading>
     </React.Fragment>
@@ -229,7 +229,7 @@ export const H2 = ({children, offset}: TextProps & {offset?: number}) => {
 };
 
 export const H3 = ({children}: TextProps) => (
-  <Heading element="h3" fontType="subhead020" border>
+  <Heading element="h3" fontType="utilitySubheading020" border>
     {children as string}
   </Heading>
 );
@@ -248,17 +248,17 @@ export default {
   h2: H2,
   h3: H3,
   h4: ({children}: TextProps) => (
-    <Heading element="h4" fontType="subhead010">
+    <Heading element="h4" fontType="utilitySubheading010">
       {children as string}
     </Heading>
   ),
   h5: ({children}: TextProps) => (
-    <Heading element="h5" fontType="heading010">
+    <Heading element="h5" fontType="utilityBody020">
       {children as string}
     </Heading>
   ),
   h6: ({children}: TextProps) => (
-    <Heading element="h6" fontType="body020">
+    <Heading element="h6" fontType="utilityBody010">
       {children as string}
     </Heading>
   ),

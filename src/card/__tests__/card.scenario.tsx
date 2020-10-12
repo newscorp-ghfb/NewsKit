@@ -52,25 +52,25 @@ const cardActions = 'sizing040';
 
 // Typography Presets
 const cardTypographyPresets: {[index: string]: TypographyPresetKeys} = {
-  cardTeaserKickerLarge: 'heading050',
-  cardTeaserKickerMedium: 'heading030',
-  cardTeaserKickerSmall: 'heading010',
+  cardTeaserKickerLarge: 'editorialHeading050',
+  cardTeaserKickerMedium: 'editorialHeading030',
+  cardTeaserKickerSmall: 'editorialHeading010',
 
-  cardTeaserHeadlineLarge: 'heading050',
-  cardTeaserHeadlineMedium: 'heading030',
-  cardTeaserHeadlineSmall: 'heading010',
+  cardTeaserHeadlineLarge: 'editorialHeading050',
+  cardTeaserHeadlineMedium: 'editorialHeading030',
+  cardTeaserHeadlineSmall: 'editorialHeading010',
 
-  cardTeaserLeadLarge: 'body030',
-  cardTeaserLeadMedium: 'body010',
-  cardTeaserLeadSmall: 'body010',
+  cardTeaserLeadLarge: 'editorialParagraph030',
+  cardTeaserLeadMedium: 'editorialParagraph020',
+  cardTeaserLeadSmall: 'editorialParagraph010',
 
-  cardLabelLarge: 'label020',
-  cardLabelMedium: 'label010',
-  cardLabelSmall: 'label010',
+  cardLabelLarge: 'utilityLabel020',
+  cardLabelMedium: 'utilityLabel010',
+  cardLabelSmall: 'utilityLabel010',
 
-  cardTagLarge: 'label020',
-  cardTagMedium: 'label010',
-  cardTagSmall: 'label010',
+  cardTagLarge: 'utilityLabel020',
+  cardTagMedium: 'utilityLabel010',
+  cardTagSmall: 'utilityLabel010',
 };
 
 // Style presets (Taken from style-presets.ts;)

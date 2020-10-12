@@ -15,15 +15,15 @@ export const Label = styled.span`
 `;
 
 export const ProgrammeTime = styled(Label)`
-  ${getTypographyPresetFromTheme('meta010')};
+  ${getTypographyPresetFromTheme('utilityMeta010')};
   display: inline-block;
 `;
 
 export const ProgrammeTitle = styled(H1)<CenterProp>`
   ${({center}) =>
     center
-      ? getTypographyPresetFromTheme('heading020')
-      : getTypographyPresetFromTheme('heading040')};
+      ? getTypographyPresetFromTheme('utilityHeading030')
+      : getTypographyPresetFromTheme('utilityHeading050')};
   text-align: ${({center}) => (center ? 'center' : 'left')};
   margin: 0;
   width: 100%;
@@ -31,13 +31,13 @@ export const ProgrammeTitle = styled(H1)<CenterProp>`
 
 export const ProgrammeDescription = styled(Label)<CenterProp>`
   margin-bottom: ${getSpacingFromTheme('space050')};
-  ${getTypographyPresetFromTheme('subhead010')};
+  ${getTypographyPresetFromTheme('utilitySubheading030')};
   text-align: ${({center}) => (center ? 'center' : 'left')};
   width: 100%;
 `;
 
 export const ProgrammeTags = styled(Label)`
-  ${getTypographyPresetFromTheme('meta010')};
+  ${getTypographyPresetFromTheme('utilityMeta010')};
   ${getFontSizingFromTheme('fontSize020', 'fontLineHeight040')};
 `;
 

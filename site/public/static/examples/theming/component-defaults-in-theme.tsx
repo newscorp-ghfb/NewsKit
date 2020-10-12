@@ -5,7 +5,7 @@ const theme = createTheme({
   overrides: {
     button: {
       medium: {
-        typographyPreset: 'button010',
+        typographyPreset: 'utilityButton010',
         stylePreset: 'buttonOutlinedPrimary',
       },
     },

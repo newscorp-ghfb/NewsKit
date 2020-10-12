@@ -241,7 +241,7 @@ Object {
         "spaceInline": "sizing020",
         "spaceInset": "spaceInsetSquish040",
         "stylePreset": "buttonDefault",
-        "typographyPreset": "button030",
+        "typographyPreset": "utilityButton030",
       },
       "medium": Object {
         "iconSize": "iconSize020",
@@ -250,7 +250,7 @@ Object {
         "spaceInline": "sizing020",
         "spaceInset": "spaceInsetSquish030",
         "stylePreset": "buttonDefault",
-        "typographyPreset": "button020",
+        "typographyPreset": "utilityButton020",
       },
       "small": Object {
         "iconSize": "iconSize010",
@@ -259,7 +259,7 @@ Object {
         "spaceInline": "sizing020",
         "spaceInset": "spaceInsetSquish020",
         "stylePreset": "buttonDefault",
-        "typographyPreset": "button010",
+        "typographyPreset": "utilityButton010",
       },
     },
     "byline": Object {
@@ -269,25 +269,25 @@ Object {
       },
       "link": Object {
         "stylePreset": "linkInline",
-        "typographyPreset": "meta020",
+        "typographyPreset": "utilityMeta020",
       },
       "spaceStack": "sizing020",
       "stylePreset": "inkSubtle",
-      "typographyPreset": "meta020",
+      "typographyPreset": "utilityMeta020",
     },
     "caption": Object {
       "credit": Object {
         "stylePreset": "inkSubtle",
-        "typographyPreset": "meta010",
+        "typographyPreset": "utilityMeta010",
       },
       "spaceStack": "space040",
       "stylePreset": "inkBase",
-      "typographyPreset": "caption010",
+      "typographyPreset": "editorialCaption010",
     },
     "captionInset": Object {
       "credit": Object {
         "stylePreset": "inkSubtle",
-        "typographyPreset": "meta010",
+        "typographyPreset": "utilityMeta010",
       },
       "spaceInset": Object {
         "md": "spaceInset050",
@@ -295,7 +295,7 @@ Object {
       },
       "spaceStack": "space040",
       "stylePreset": "inkBase",
-      "typographyPreset": "caption010",
+      "typographyPreset": "editorialCaption010",
     },
     "card": Object {
       "actionsContainer": Object {
@@ -353,14 +353,14 @@ Object {
     "dateTime": Object {
       "prefix": Object {
         "stylePreset": "inkSubtle",
-        "typographyPreset": "meta020",
+        "typographyPreset": "utilityMeta020",
       },
       "stylePreset": "inkSubtle",
       "suffix": Object {
         "stylePreset": "inkSubtle",
-        "typographyPreset": "meta020",
+        "typographyPreset": "utilityMeta020",
       },
-      "typographyPreset": "meta020",
+      "typographyPreset": "utilityMeta020",
     },
     "divider": Object {
       "stylePreset": "dividerHorizontal",
@@ -372,7 +372,7 @@ Object {
         "spaceInline": "sizing010",
         "spaceInset": "spaceInsetSquish020",
         "stylePreset": "flagDefault",
-        "typographyPreset": "label020",
+        "typographyPreset": "utilityLabel030",
       },
       "small": Object {
         "iconSize": "iconSize010",
@@ -380,7 +380,7 @@ Object {
         "spaceInline": "sizing010",
         "spaceInset": "spaceInsetSquish010",
         "stylePreset": "flagDefault",
-        "typographyPreset": "label010",
+        "typographyPreset": "utilityLabel010",
       },
     },
     "grid": Object {
@@ -409,10 +409,10 @@ Object {
       "heading": Object {
         "stylePreset": "inkContrast",
         "typographyPreset": Object {
-          "lg": "heading070",
-          "sm": "heading060",
-          "xl": "heading080",
-          "xs": "heading060",
+          "lg": "editorialHeading070",
+          "sm": "editorialHeading060",
+          "xl": "editorialHeading080",
+          "xs": "editorialHeading060",
         },
       },
       "kicker": Object {
@@ -424,49 +424,49 @@ Object {
         },
         "stylePreset": "inkBrand010",
         "typographyPreset": Object {
-          "lg": "heading070",
-          "sm": "heading060",
-          "xl": "heading080",
-          "xs": "heading060",
+          "lg": "editorialHeading070",
+          "sm": "editorialHeading060",
+          "xl": "editorialHeading080",
+          "xs": "editorialHeading060",
         },
       },
     },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
-        "lg": "heading070",
-        "xl": "heading090",
-        "xs": "heading050",
+        "lg": "editorialHeading070",
+        "xl": "editorialHeading080",
+        "xs": "editorialHeading050",
       },
     },
     "headlineH2": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
-        "lg": "heading040",
-        "xs": "heading030",
+        "md": "editorialHeading040",
+        "xs": "editorialHeading030",
       },
     },
     "headlineH3": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
-        "lg": "heading030",
-        "xs": "heading020",
+        "md": "editorialHeading030",
+        "xs": "editorialHeading020",
       },
     },
     "headlineH4": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
-        "lg": "heading020",
-        "xs": "heading010",
+        "md": "editorialHeading020",
+        "xs": "editorialHeading010",
       },
     },
     "headlineH5": Object {
       "stylePreset": "inkContrast",
-      "typographyPreset": "subhead015",
+      "typographyPreset": "editorialSubheading020",
     },
     "headlineH6": Object {
       "stylePreset": "inkContrast",
-      "typographyPreset": "subhead010",
+      "typographyPreset": "editorialSubheading010",
     },
     "iconButton": Object {
       "large": Object {
@@ -503,15 +503,20 @@ Object {
     },
     "linkStandalone": Object {
       "stylePreset": "linkStandalone",
+      "typographyPreset": "utilityButton020",
     },
     "paragraph": Object {
       "dropCap": Object {
         "space": "space020",
         "stylePreset": "inkContrast",
-        "typographyPreset": "display040",
+        "typographyPreset": Object {
+          "lg": "editorialDropCap030",
+          "md": "editorialDropCap020",
+          "xs": "editorialDropCap010",
+        },
       },
       "stylePreset": "inkBase",
-      "typographyPreset": "body020",
+      "typographyPreset": "editorialSubheading020",
     },
     "shareBar": Object {
       "items": Object {
@@ -520,7 +525,7 @@ Object {
       "label": Object {
         "spaceInline": "space040",
         "stylePreset": "shareBarLabel",
-        "typographyPreset": "label020",
+        "typographyPreset": "utilityLabel020",
       },
     },
     "slider": Object {
@@ -530,7 +535,7 @@ Object {
       "labels": Object {
         "space": "space030",
         "stylePreset": "sliderLabels",
-        "typographyPreset": "label020",
+        "typographyPreset": "utilityLabel020",
       },
       "thumb": Object {
         "size": "sizing060",
@@ -539,7 +544,7 @@ Object {
       "thumbLabel": Object {
         "space": "space060",
         "stylePreset": "sliderThumbLabel",
-        "typographyPreset": "label030",
+        "typographyPreset": "utilityLabel030",
       },
       "track": Object {
         "size": "sizing030",
@@ -550,8 +555,8 @@ Object {
       "styledText": Object {
         "stylePreset": "inkBase",
         "typographyPreset": Object {
-          "lg": "subhead030",
-          "xs": "subhead020",
+          "lg": "editorialSubheading020",
+          "xs": "editorialSubheading010",
         },
       },
     },
@@ -562,7 +567,7 @@ Object {
         "spaceInline": "sizing020",
         "spaceInset": "spaceInsetSquish030",
         "stylePreset": "tab",
-        "typographyPreset": "button030",
+        "typographyPreset": "utilityLabel030",
       },
       "medium": Object {
         "iconSize": "iconSize020",
@@ -570,7 +575,7 @@ Object {
         "spaceInline": "sizing020",
         "spaceInset": "spaceInsetSquish030",
         "stylePreset": "tab",
-        "typographyPreset": "button020",
+        "typographyPreset": "utilityLabel020",
       },
       "small": Object {
         "iconSize": "iconSize010",
@@ -578,7 +583,7 @@ Object {
         "spaceInline": "sizing020",
         "spaceInset": "spaceInsetSquish020",
         "stylePreset": "tab",
-        "typographyPreset": "button010",
+        "typographyPreset": "utilityLabel010",
       },
     },
     "tabGroup": Object {
@@ -591,7 +596,7 @@ Object {
         "spaceInline": "sizing010",
         "spaceInset": "spaceInsetSquish020",
         "stylePreset": "tagDefault",
-        "typographyPreset": "label030",
+        "typographyPreset": "utilityLabel030",
       },
       "medium": Object {
         "iconSize": "iconSize010",
@@ -599,7 +604,7 @@ Object {
         "spaceInline": "sizing010",
         "spaceInset": "spaceInsetSquish020",
         "stylePreset": "tagDefault",
-        "typographyPreset": "label020",
+        "typographyPreset": "utilityLabel020",
       },
       "small": Object {
         "iconSize": "iconSize010",
@@ -607,7 +612,7 @@ Object {
         "spaceInline": "sizing010",
         "spaceInset": "spaceInsetSquish010",
         "stylePreset": "tagDefault",
-        "typographyPreset": "label010",
+        "typographyPreset": "utilityLabel010",
       },
     },
     "textInput": Object {
@@ -615,7 +620,7 @@ Object {
         "assistiveText": Object {
           "minHeight": "sizing030",
           "stylePreset": "textInputAssistiveText",
-          "typographyPreset": "label030",
+          "typographyPreset": "utilityLabel030",
         },
         "input": Object {
           "iconSize": "iconSize030",
@@ -625,20 +630,20 @@ Object {
           "spaceInsetRight": "space080",
           "spaceStack": "space020",
           "stylePreset": "textInput",
-          "typographyPreset": "label030",
+          "typographyPreset": "utilityBody030",
         },
         "label": Object {
           "spaceInline": "space010",
           "spaceStack": "space040",
           "stylePreset": "inkContrast",
-          "typographyPreset": "label040",
+          "typographyPreset": "utilityLabel030",
         },
       },
       "medium": Object {
         "assistiveText": Object {
           "minHeight": "sizing030",
           "stylePreset": "textInputAssistiveText",
-          "typographyPreset": "label020",
+          "typographyPreset": "utilityLabel020",
         },
         "input": Object {
           "iconSize": "iconSize020",
@@ -648,20 +653,20 @@ Object {
           "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
-          "typographyPreset": "label020",
+          "typographyPreset": "utilityBody020",
         },
         "label": Object {
           "spaceInline": "space010",
           "spaceStack": "space040",
           "stylePreset": "inkContrast",
-          "typographyPreset": "label040",
+          "typographyPreset": "utilityLabel030",
         },
       },
       "small": Object {
         "assistiveText": Object {
           "minHeight": "sizing030",
           "stylePreset": "textInputAssistiveText",
-          "typographyPreset": "label020",
+          "typographyPreset": "utilityLabel020",
         },
         "input": Object {
           "iconSize": "iconSize020",
@@ -671,22 +676,22 @@ Object {
           "spaceInsetRight": "space070",
           "spaceStack": "space020",
           "stylePreset": "textInput",
-          "typographyPreset": "label020",
+          "typographyPreset": "utilityBody020",
         },
         "label": Object {
           "spaceInline": "space010",
           "spaceStack": "space040",
           "stylePreset": "inkContrast",
-          "typographyPreset": "label030",
+          "typographyPreset": "utilityLabel030",
         },
       },
     },
     "titleBar": Object {
       "heading": Object {
         "typographyPreset": Object {
-          "lg": "heading050",
-          "xl": "heading070",
-          "xs": "heading040",
+          "lg": "editorialHeading080",
+          "md": "editorialHeading070",
+          "xs": "editorialHeading050",
         },
       },
       "spaceInset": Object {
@@ -698,7 +703,7 @@ Object {
     "unorderedList": Object {
       "content": Object {
         "stylePreset": "inkBase",
-        "typographyPreset": "body010",
+        "typographyPreset": "editorialParagraph010",
       },
       "marker": Object {
         "size": "iconSize005",
@@ -727,7 +732,7 @@ Object {
     },
   },
   "fonts": Object {
-    "fontFamily1": Object {
+    "fontFamily010": Object {
       "cropAdjustments": Object {
         "12px": Object {
           "bottom": -0.5,
@@ -747,7 +752,7 @@ Object {
       },
       "fontFamily": "\\"Noto Sans\\", sans-serif",
     },
-    "fontFamily2": Object {
+    "fontFamily020": Object {
       "cropAdjustments": Object {
         "12px": Object {
           "bottom": -0.5,
@@ -765,12 +770,9 @@ Object {
         "bottom": 10,
         "top": 8,
       },
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontFamily": "\\"Source Serif Pro\\", serif",
     },
-    "fontFamily3": Object {
-      "fontFamily": "system-ui, \\"Open Sans\\", sans-serif",
-    },
-    "fontFamily4": Object {
+    "fontFamily030": Object {
       "cropConfig": Object {
         "bottom": 3,
         "top": 3,
@@ -807,7 +809,8 @@ Object {
     "fontWeight010": 300,
     "fontWeight020": 400,
     "fontWeight030": 500,
-    "fontWeight040": 700,
+    "fontWeight040": 600,
+    "fontWeight050": 700,
   },
   "icons": Object {},
   "motions": Object {
@@ -2339,259 +2342,297 @@ Object {
   },
   "themeVersion": 1,
   "typographyPresets": Object {
-    "body010": Object {
+    "editorialCaption010": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "14px",
       "fontWeight": 400,
       "letterSpacing": "0",
       "lineHeight": 1.4285714285714286,
     },
-    "body020": Object {
+    "editorialDropCap010": Object {
+      "fontSize": "5.625em",
+      "lineHeight": 0.85,
+    },
+    "editorialDropCap020": Object {
+      "fontSize": "5.875em",
+      "lineHeight": 0.85,
+    },
+    "editorialDropCap030": Object {
+      "fontSize": "6em",
+      "lineHeight": 0.85,
+    },
+    "editorialHeading010": Object {
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+      "fontSize": "18px",
+      "fontWeight": 600,
+      "letterSpacing": "0",
+      "lineHeight": 1.1111111111111112,
+    },
+    "editorialHeading020": Object {
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+      "fontSize": "20px",
+      "fontWeight": 600,
+      "letterSpacing": "0",
+      "lineHeight": 1.2,
+    },
+    "editorialHeading030": Object {
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+      "fontSize": "24px",
+      "fontWeight": 600,
+      "letterSpacing": "0",
+      "lineHeight": 1.1666666666666667,
+    },
+    "editorialHeading040": Object {
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+      "fontSize": "28px",
+      "fontWeight": 600,
+      "letterSpacing": "0",
+      "lineHeight": 1.1428571428571428,
+    },
+    "editorialHeading050": Object {
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+      "fontSize": "32px",
+      "fontWeight": 600,
+      "letterSpacing": "0",
+      "lineHeight": 1.125,
+    },
+    "editorialHeading060": Object {
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+      "fontSize": "36px",
+      "fontWeight": 600,
+      "letterSpacing": "0",
+      "lineHeight": 1.1111111111111112,
+    },
+    "editorialHeading070": Object {
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+      "fontSize": "40px",
+      "fontWeight": 600,
+      "letterSpacing": "0",
+      "lineHeight": 1.1,
+    },
+    "editorialHeading080": Object {
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+      "fontSize": "48px",
+      "fontWeight": 600,
+      "letterSpacing": "0",
+      "lineHeight": 1.1666666666666667,
+    },
+    "editorialParagraph010": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": 400,
+      "letterSpacing": "0",
+      "lineHeight": 1.4285714285714286,
+    },
+    "editorialParagraph020": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "16px",
       "fontWeight": 400,
       "letterSpacing": "0",
       "lineHeight": 1.5,
     },
-    "body030": Object {
+    "editorialParagraph030": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "18px",
       "fontWeight": 400,
       "letterSpacing": "0",
       "lineHeight": 1.5555555555555556,
     },
-    "button010": Object {
+    "editorialQuote010": Object {
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+      "fontSize": "24px",
+      "fontWeight": 400,
+      "letterSpacing": "0",
+      "lineHeight": 1.3333333333333333,
+    },
+    "editorialQuote020": Object {
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+      "fontSize": "32px",
+      "fontWeight": 400,
+      "letterSpacing": "0",
+      "lineHeight": 1.25,
+    },
+    "editorialSubheading010": Object {
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+      "fontSize": "20px",
+      "fontWeight": 600,
+      "letterSpacing": "0",
+      "lineHeight": 1.2,
+    },
+    "editorialSubheading020": Object {
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+      "fontSize": "24px",
+      "fontWeight": 600,
+      "letterSpacing": "0",
+      "lineHeight": 1.3333333333333333,
+    },
+    "editorialSubheading030": Object {
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+      "fontSize": "28px",
+      "fontWeight": 600,
+      "letterSpacing": "0",
+      "lineHeight": 1.2857142857142858,
+    },
+    "editorialSubheading040": Object {
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+      "fontSize": "32px",
+      "fontWeight": 600,
+      "letterSpacing": "0",
+      "lineHeight": 1.25,
+    },
+    "editorialSubheading050": Object {
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+      "fontSize": "36px",
+      "fontWeight": 600,
+      "letterSpacing": "0",
+      "lineHeight": 1.2222222222222223,
+    },
+    "utilityBody010": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": 400,
+      "letterSpacing": "0",
+      "lineHeight": 1.4285714285714286,
+    },
+    "utilityBody020": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": 400,
+      "letterSpacing": "0",
+      "lineHeight": 1.5,
+    },
+    "utilityBody030": Object {
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+      "fontSize": "18px",
+      "fontWeight": 400,
+      "letterSpacing": "0",
+      "lineHeight": 1.5555555555555556,
+    },
+    "utilityButton010": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "12px",
       "fontWeight": 500,
       "letterSpacing": "0",
       "lineHeight": 1.6666666666666667,
     },
-    "button020": Object {
+    "utilityButton020": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "14px",
       "fontWeight": 500,
       "letterSpacing": "0",
       "lineHeight": 1.4285714285714286,
     },
-    "button030": Object {
+    "utilityButton030": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "16px",
       "fontWeight": 500,
       "letterSpacing": "0",
       "lineHeight": 1.5,
     },
-    "caption010": Object {
+    "utilityHeading010": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "14px",
-      "fontWeight": 500,
-      "letterSpacing": "0",
-      "lineHeight": 1.4285714285714286,
-    },
-    "code010": Object {
-      "fontFamily": "system-ui, \\"Open Sans\\", sans-serif",
-      "fontSize": "14px",
-      "fontWeight": 400,
-      "letterSpacing": "0",
-      "lineHeight": 1.4285714285714286,
-    },
-    "code020": Object {
-      "fontFamily": "system-ui, \\"Open Sans\\", sans-serif",
       "fontSize": "16px",
-      "fontWeight": 400,
-      "letterSpacing": "0",
-      "lineHeight": 1.5,
-    },
-    "display010": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "48px",
       "fontWeight": 700,
       "letterSpacing": "0",
-      "lineHeight": 1.5,
+      "lineHeight": 1.25,
     },
-    "display020": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "56px",
-      "fontWeight": 700,
-      "letterSpacing": "0",
-      "lineHeight": 1.5,
-    },
-    "display030": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "64px",
-      "fontWeight": 700,
-      "letterSpacing": "0",
-      "lineHeight": 1.5,
-    },
-    "display040": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "80px",
-      "fontWeight": 700,
-      "letterSpacing": "0",
-      "lineHeight": 1.5,
-    },
-    "heading010": Object {
+    "utilityHeading020": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "18px",
       "fontWeight": 700,
       "letterSpacing": "0",
-      "lineHeight": 1.3333333333333333,
+      "lineHeight": 1.1111111111111112,
     },
-    "heading020": Object {
+    "utilityHeading030": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "20px",
       "fontWeight": 700,
       "letterSpacing": "0",
       "lineHeight": 1.2,
     },
-    "heading030": Object {
+    "utilityHeading040": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "24px",
       "fontWeight": 700,
       "letterSpacing": "0",
-      "lineHeight": 1.3333333333333333,
+      "lineHeight": 1.1666666666666667,
     },
-    "heading040": Object {
+    "utilityHeading050": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "28px",
       "fontWeight": 700,
       "letterSpacing": "0",
-      "lineHeight": 1.2857142857142858,
+      "lineHeight": 1.1428571428571428,
     },
-    "heading050": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "32px",
-      "fontWeight": 700,
-      "letterSpacing": "0",
-      "lineHeight": 1.25,
-    },
-    "heading060": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "36px",
-      "fontWeight": 700,
-      "letterSpacing": "0",
-      "lineHeight": 1.2222222222222223,
-    },
-    "heading070": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "40px",
-      "fontWeight": 700,
-      "letterSpacing": "0",
-      "lineHeight": 1.3,
-    },
-    "heading080": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "44px",
-      "fontWeight": 700,
-      "letterSpacing": "0",
-      "lineHeight": 1.2727272727272727,
-    },
-    "heading090": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "48px",
-      "fontWeight": 700,
-      "letterSpacing": "0",
-      "lineHeight": 1.25,
-    },
-    "label010": Object {
+    "utilityLabel010": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "12px",
       "fontWeight": 500,
       "letterSpacing": "0",
       "lineHeight": 1.6666666666666667,
     },
-    "label020": Object {
+    "utilityLabel020": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "14px",
       "fontWeight": 500,
       "letterSpacing": "0",
       "lineHeight": 1.4285714285714286,
     },
-    "label030": Object {
+    "utilityLabel030": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "16px",
       "fontWeight": 500,
       "letterSpacing": "0",
       "lineHeight": 1.5,
     },
-    "label040": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "18px",
-      "fontWeight": 500,
-      "letterSpacing": "0",
-      "lineHeight": 1.5555555555555556,
-    },
-    "meta010": Object {
+    "utilityMeta010": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "12px",
       "fontWeight": 500,
       "letterSpacing": "0.5px",
       "lineHeight": 1.6666666666666667,
     },
-    "meta020": Object {
+    "utilityMeta020": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "14px",
       "fontWeight": 500,
       "letterSpacing": "0",
       "lineHeight": 1.4285714285714286,
     },
-    "quote010": Object {
+    "utilitySubheading010": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "24px",
-      "fontStyle": "italic",
+      "fontSize": "14px",
       "fontWeight": 400,
       "letterSpacing": "0",
-      "lineHeight": 1.5,
+      "lineHeight": 1.1428571428571428,
     },
-    "quote020": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "32px",
-      "fontStyle": "italic",
-      "fontWeight": 400,
-      "letterSpacing": "0",
-      "lineHeight": 1.5,
-    },
-    "subhead010": Object {
+    "utilitySubheading020": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "16px",
-      "fontWeight": 500,
+      "fontWeight": 400,
       "letterSpacing": "0",
-      "lineHeight": 1.5,
+      "lineHeight": 1.25,
     },
-    "subhead015": Object {
+    "utilitySubheading030": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "18px",
-      "fontWeight": 500,
+      "fontWeight": 400,
       "letterSpacing": "0",
-      "lineHeight": 1.5555555555555556,
+      "lineHeight": 1.1111111111111112,
     },
-    "subhead020": Object {
+    "utilitySubheading040": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "20px",
-      "fontWeight": 500,
+      "fontWeight": 400,
       "letterSpacing": "0",
-      "lineHeight": 1.6,
+      "lineHeight": 1.2,
     },
-    "subhead030": Object {
+    "utilitySubheading050": Object {
       "fontFamily": "\\"Noto Sans\\", sans-serif",
       "fontSize": "24px",
-      "fontWeight": 500,
+      "fontWeight": 400,
       "letterSpacing": "0",
-      "lineHeight": 1.5,
-    },
-    "subhead040": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "28px",
-      "fontWeight": 500,
-      "letterSpacing": "0",
-      "lineHeight": 1.5714285714285714,
-    },
-    "subhead050": Object {
-      "fontFamily": "\\"Noto Sans\\", sans-serif",
-      "fontSize": "32px",
-      "fontWeight": 500,
-      "letterSpacing": "0",
-      "lineHeight": 1.5,
+      "lineHeight": 1.1666666666666667,
     },
   },
 }

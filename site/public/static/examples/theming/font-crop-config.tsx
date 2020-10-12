@@ -4,7 +4,7 @@ const theme = createTheme({
   name: 'newskit-font-crop-config',
   overrides: {
     fonts: {
-      fontFamily1: {
+      fontFamily010: {
         fontFamily: '"Times New Roman", Times, serif',
         cropConfig: {
           top: 8,

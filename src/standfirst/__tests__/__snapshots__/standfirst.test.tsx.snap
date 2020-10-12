@@ -9,10 +9,10 @@ exports[`Standfirst renders as h4 html tag 1`] = `
 
 @media screen and (max-width:1023px) {
   .emotion-0 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 20px;
-    line-height: 1.6;
-    font-weight: 500;
+    line-height: 1.2;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -24,7 +24,7 @@ exports[`Standfirst renders as h4 html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.45000000000000007em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
@@ -32,16 +32,16 @@ exports[`Standfirst renders as h4 html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.5125000000000001em;
+    margin-top: -0.3125em;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-0 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 24px;
-    line-height: 1.5;
-    font-weight: 500;
+    line-height: 1.3333333333333333;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -53,7 +53,7 @@ exports[`Standfirst renders as h4 html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.4em + 1px);
+    margin-bottom: calc(-0.31666666666666665em + 1px);
   }
 
   .emotion-0::after {
@@ -61,7 +61,7 @@ exports[`Standfirst renders as h4 html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.4625em + 1px);
+    margin-top: calc(-0.37916666666666665em + 1px);
   }
 }
 
@@ -81,10 +81,10 @@ exports[`Standfirst renders as span html tag 1`] = `
 
 @media screen and (max-width:1023px) {
   .emotion-0 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 20px;
-    line-height: 1.6;
-    font-weight: 500;
+    line-height: 1.2;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -96,7 +96,7 @@ exports[`Standfirst renders as span html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.45000000000000007em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
@@ -104,16 +104,16 @@ exports[`Standfirst renders as span html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.5125000000000001em;
+    margin-top: -0.3125em;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-0 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 24px;
-    line-height: 1.5;
-    font-weight: 500;
+    line-height: 1.3333333333333333;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -125,7 +125,7 @@ exports[`Standfirst renders as span html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.4em + 1px);
+    margin-bottom: calc(-0.31666666666666665em + 1px);
   }
 
   .emotion-0::after {
@@ -133,7 +133,7 @@ exports[`Standfirst renders as span html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.4625em + 1px);
+    margin-top: calc(-0.37916666666666665em + 1px);
   }
 }
 
@@ -152,10 +152,10 @@ exports[`Standfirst renders with custom style preset 1`] = `
 
 @media screen and (max-width:1023px) {
   .emotion-0 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 20px;
-    line-height: 1.6;
-    font-weight: 500;
+    line-height: 1.2;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -167,7 +167,7 @@ exports[`Standfirst renders with custom style preset 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.45000000000000007em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
@@ -175,16 +175,16 @@ exports[`Standfirst renders with custom style preset 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.5125000000000001em;
+    margin-top: -0.3125em;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-0 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 24px;
-    line-height: 1.5;
-    font-weight: 500;
+    line-height: 1.3333333333333333;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -196,7 +196,7 @@ exports[`Standfirst renders with custom style preset 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.4em + 1px);
+    margin-bottom: calc(-0.31666666666666665em + 1px);
   }
 
   .emotion-0::after {
@@ -204,7 +204,7 @@ exports[`Standfirst renders with custom style preset 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.4625em + 1px);
+    margin-top: calc(-0.37916666666666665em + 1px);
   }
 }
 
@@ -218,10 +218,10 @@ exports[`Standfirst renders with custom typography preset 1`] = `
 <DocumentFragment>
   .emotion-0 {
   color: #2e2e2e;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
+  font-family: "Source Serif Pro",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -234,7 +234,7 @@ exports[`Standfirst renders with custom typography preset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.25em;
 }
 
 .emotion-0::after {
@@ -242,7 +242,7 @@ exports[`Standfirst renders with custom typography preset 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4625em;
+  margin-top: -0.3125em;
 }
 
 <h2
@@ -260,10 +260,10 @@ exports[`Standfirst renders with default styles 1`] = `
 
 @media screen and (max-width:1023px) {
   .emotion-0 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 20px;
-    line-height: 1.6;
-    font-weight: 500;
+    line-height: 1.2;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -275,7 +275,7 @@ exports[`Standfirst renders with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: -0.45000000000000007em;
+    margin-bottom: -0.25em;
   }
 
   .emotion-0::after {
@@ -283,16 +283,16 @@ exports[`Standfirst renders with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: -0.5125000000000001em;
+    margin-top: -0.3125em;
   }
 }
 
 @media screen and (min-width:1024px) {
   .emotion-0 {
-    font-family: "Noto Sans",sans-serif;
+    font-family: "Source Serif Pro",serif;
     font-size: 24px;
-    line-height: 1.5;
-    font-weight: 500;
+    line-height: 1.3333333333333333;
+    font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
     -ms-letter-spacing: 0;
@@ -304,7 +304,7 @@ exports[`Standfirst renders with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.4em + 1px);
+    margin-bottom: calc(-0.31666666666666665em + 1px);
   }
 
   .emotion-0::after {
@@ -312,7 +312,7 @@ exports[`Standfirst renders with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.4625em + 1px);
+    margin-top: calc(-0.37916666666666665em + 1px);
   }
 }
 

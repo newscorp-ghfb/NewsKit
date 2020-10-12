@@ -7,7 +7,7 @@ interface TestTextProp {
 }
 
 const TestText = styled.p<TestTextProp>`
-  ${getTypographyPresetFromTheme('body030', 'typographyPreset')}
+  ${getTypographyPresetFromTheme('editorialParagraph030', 'typographyPreset')}
 `;
 
 describe('TypographyPreset', () => {
@@ -16,53 +16,53 @@ describe('TypographyPreset', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders with override body010', () => {
+  test('renders with override editorialParagraph010', () => {
     const fragment = renderToFragmentWithTheme(TestText, {
-      typographyPreset: 'body010',
+      typographyPreset: 'editorialParagraph010',
     });
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders responsive override body010 for xs, body020 for sm, and body030 for md breakpoints', () => {
+  test('renders responsive override editorialParagraph010 for xs, editorialParagraph020 for sm, and editorialParagraph030 for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(TestText, {
       typographyPreset: {
-        xs: 'body010',
-        sm: 'body020',
-        md: 'body030',
+        xs: 'editorialParagraph010',
+        sm: 'editorialParagraph020',
+        md: 'editorialParagraph030',
       },
     });
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders responsive override body010 for xs, body020 for sm, and wrong for md breakpoints', () => {
+  test('renders responsive override editorialParagraph010 for xs, editorialParagraph020 for sm, and wrong for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(TestText, {
       typographyPreset: {
-        xs: 'body010',
-        sm: 'body020',
+        xs: 'editorialParagraph010',
+        sm: 'editorialParagraph020',
         md: 'wrong',
       } as any,
     });
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders responsive override body010 for xs and body030 for md breakpoints', () => {
+  test('renders responsive override editorialParagraph010 for xs and editorialParagraph030 for md breakpoints', () => {
     const fragment = renderToFragmentWithTheme(TestText, {
       typographyPreset: {
-        xs: 'body010',
-        md: 'body030',
+        xs: 'editorialParagraph010',
+        md: 'editorialParagraph030',
       },
     });
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders responsive override body010 for xs, body020 for sm, body030 for md, code010 for lg breakpoints and ignore wrong prop', () => {
+  test('renders responsive override editorialParagraph010 for xs, editorialParagraph020 for sm, editorialParagraph030 for md, editorialHeading010 for lg breakpoints and ignore wrong prop', () => {
     const fragment = renderToFragmentWithTheme(TestText, {
       typographyPreset: {
-        xs: 'body010',
-        sm: 'body020',
-        md: 'body030',
-        lg: 'code010',
-        wrong: 'code020',
+        xs: 'editorialParagraph010',
+        sm: 'editorialParagraph020',
+        md: 'editorialParagraph030',
+        lg: 'editorialHeading010',
+        wrong: 'editorialHeading020',
       } as any,
     });
     expect(fragment).toMatchSnapshot();

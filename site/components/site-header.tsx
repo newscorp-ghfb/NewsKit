@@ -26,7 +26,7 @@ const Header = styled.header`
   z-index: 1;
   min-height: 72px;
   background-color: ${getColorFromTheme('interface010')};
-  ${getTypographyPresetFromTheme('label020')}
+  ${getTypographyPresetFromTheme('utilityLabel020')}
   padding: ${getSizingFromTheme('sizing030')} 0;
   box-shadow: ${getShadowFromTheme('shadow030')};
 

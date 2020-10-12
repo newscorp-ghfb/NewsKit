@@ -65,7 +65,7 @@ const actionsComponent = () => (
 
 const cardBody = (
   <Block overrides={{spaceStack: 'space010'}}>
-    <TextBlock overrides={{typographyPreset: 'body010'}}>
+    <TextBlock overrides={{typographyPreset: 'editorialParagraph010'}}>
       Example Card text
     </TextBlock>
   </Block>

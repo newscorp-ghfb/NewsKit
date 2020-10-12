@@ -13,7 +13,7 @@ exports[`Caption renders correctly with default props and caption and credit tex
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -116,7 +116,7 @@ exports[`CaptionInset renders correctly with border 1`] = `
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -239,7 +239,7 @@ exports[`CaptionInset renders correctly with default props and caption and credi
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -350,7 +350,7 @@ exports[`CaptionInset renders correctly with default props and only caption text
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -419,10 +419,68 @@ exports[`CaptionInset renders correctly with overriden props and caption and cre
   margin: 0;
   padding: 1px 0;
   color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 .emotion-0 svg {
   fill: #0a0a0a;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.2333333333333334em + 1px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc(-0.2958333333333334em + 1px);
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+}
+
+.emotion-3 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.4833333333333334em + 1px);
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc(-0.5458333333333334em + -0.5px);
 }
 
 @media screen and (max-width:767px) {
@@ -450,7 +508,7 @@ exports[`CaptionInset renders correctly with overriden props and caption and cre
       </p>
     </div>
     <p
-      class="emotion-0"
+      class="emotion-3"
     >
       <span
         class="emotion-2"
@@ -471,7 +529,7 @@ exports[`renders correctly with default props and only caption text 1`] = `
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -528,10 +586,68 @@ exports[`renders correctly with overriden props and caption and credit text 1`] 
   margin: 0;
   padding: 1px 0;
   color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 .emotion-0 svg {
   fill: #0a0a0a;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.2333333333333334em + 1px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc(-0.2958333333333334em + 1px);
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+}
+
+.emotion-3 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.4833333333333334em + 1px);
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc(-0.5458333333333334em + -0.5px);
 }
 
 <div
@@ -547,7 +663,7 @@ exports[`renders correctly with overriden props and caption and credit text 1`] 
       </p>
     </div>
     <p
-      class="emotion-0"
+      class="emotion-3"
     >
       <span
         class="emotion-2"

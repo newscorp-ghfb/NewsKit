@@ -14,7 +14,7 @@ export const KnobContainer = styled.div`
 export const StyledTitle = styled.span`
   display: block;
   margin: ${getSizingFromTheme('sizing040')} 0px;
-  ${getTypographyPresetFromTheme('label030')};
+  ${getTypographyPresetFromTheme('utilityLabel030')};
   color: ${getColorFromTheme('inkBase')};
 `;
 

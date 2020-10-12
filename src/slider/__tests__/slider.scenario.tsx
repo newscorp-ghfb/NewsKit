@@ -299,12 +299,12 @@ export default {
                   },
                   thumbLabel: {
                     stylePreset: 'customThumbLabelStylePreset',
-                    typographyPreset: 'label040',
+                    typographyPreset: 'utilityLabel020',
                     space: 'space060',
                   },
                   labels: {
                     stylePreset: 'customLabelStylePreset',
-                    typographyPreset: 'label030',
+                    typographyPreset: 'utilityLabel030',
                     space: 'space040',
                   },
                 }}

@@ -45,10 +45,10 @@ export default {
             date="2017-01-01T04:32:00.000Z"
             prefix="Updated:"
             overrides={{
-              typographyPreset: 'label010',
+              typographyPreset: 'utilityLabel010',
               stylePreset: 'inkBrand010',
               prefix: {
-                typographyPreset: 'label020',
+                typographyPreset: 'utilityLabel020',
                 stylePreset: 'inkBrand010',
               },
             }}
@@ -58,10 +58,10 @@ export default {
             date="2017-01-01T04:32:00.000Z"
             suffix="The Times"
             overrides={{
-              typographyPreset: 'label010',
+              typographyPreset: 'utilityLabel010',
               stylePreset: 'inkBrand010',
               suffix: {
-                typographyPreset: 'label020',
+                typographyPreset: 'utilityLabel020',
                 stylePreset: 'inkBrand010',
               },
             }}
@@ -72,14 +72,14 @@ export default {
             suffix="The Times"
             prefix="Updated:"
             overrides={{
-              typographyPreset: 'label010',
+              typographyPreset: 'utilityLabel010',
               stylePreset: 'inkBrand010',
               prefix: {
-                typographyPreset: 'label020',
+                typographyPreset: 'utilityLabel020',
                 stylePreset: 'inkBrand010',
               },
               suffix: {
-                typographyPreset: 'label020',
+                typographyPreset: 'utilityLabel020',
                 stylePreset: 'inkBrand010',
               },
             }}

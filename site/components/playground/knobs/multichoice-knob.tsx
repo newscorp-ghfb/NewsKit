@@ -45,7 +45,7 @@ interface StyledLabelProps {
 
 const StyledLabel = styled.label<StyledLabelProps>`
   display: inline-block;
-  ${getTypographyPresetFromTheme('body010')};
+  ${getTypographyPresetFromTheme('utilityBody010')};
   padding: ${getSizingFromTheme('sizing020')} ${getSizingFromTheme('sizing040')};
   background-color: ${getColorFromTheme('interface020')};
   color: ${getColorFromTheme('inkSubtle')};

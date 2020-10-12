@@ -309,7 +309,7 @@ describe('Style helpers', () => {
     const props = {
       theme: {
         typographyPresets: {
-          body010: {
+          editorialParagraph010: {
             fontSize: '32px',
           },
         },
@@ -319,12 +319,13 @@ describe('Style helpers', () => {
       },
     };
 
-    const fontSizing = getFontSizingFromTheme('body010', 'fontLineHeight030')(
-      props as any,
-    );
+    const fontSizing = getFontSizingFromTheme(
+      'editorialParagraph010',
+      'fontLineHeight030',
+    )(props as any);
 
     expect(getFontSizing).toHaveBeenCalledWith(
-      props.theme.typographyPresets.body010.fontSize,
+      props.theme.typographyPresets.editorialParagraph010.fontSize,
       props.theme.fonts.fontLineHeight030,
     );
     expect(fontSizing).toEqual(mockFontSizing);

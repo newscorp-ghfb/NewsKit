@@ -196,7 +196,7 @@ describe('ShareBar', () => {
       vertical: true,
       overrides: {
         label: {
-          typographyPreset: 'label020',
+          typographyPreset: 'utilityLabel030',
         },
       },
     } as ShareBarProps);

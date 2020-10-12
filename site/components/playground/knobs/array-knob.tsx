@@ -31,12 +31,12 @@ export interface ArrayKnobProps {
 
 export const StyledLabel = styled.label`
   display: block;
-  ${getTypographyPresetFromTheme('body030')};
+  ${getTypographyPresetFromTheme('utilityBody030')};
   margin: ${getSizingFromTheme('sizing040')} 0px;
 `;
 
 export const StyledInput = styled.input`
-  ${getTypographyPresetFromTheme('body010')};
+  ${getTypographyPresetFromTheme('utilityBody010')};
   display: block;
   padding: ${getSizingFromTheme('sizing020')};
   background-color: ${getColorFromTheme('interface020')};

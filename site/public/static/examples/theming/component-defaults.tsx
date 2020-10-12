@@ -4,7 +4,7 @@ import {Button} from 'newskit';
 <Button
   size="medium"
   overrides={{
-    typographyPreset: 'button010',
+    typographyPreset: 'utilityButton010',
     stylePreset: 'buttonOutlinedPrimary',
   }}
 >
