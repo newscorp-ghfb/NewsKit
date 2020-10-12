@@ -272,6 +272,11 @@
         "id": "/utils/code-helpers",
         "subNav": [
           {
+            "title": "Component Defaults",
+            "page": true,
+            "id": "/utils/code-helpers/get-defaults"
+          },
+          {
             "title": "css",
             "page": true,
             "id": "/utils/code-helpers/css"

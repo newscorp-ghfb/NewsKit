@@ -1,0 +1,114 @@
+import {LegacyBlock} from '../../../components/legacy-block';
+import Layout from '../../../components/layout';
+import {Code, CodeFromFile} from '../../../components/code';
+import Prop from '../../../components/prop';
+import {Image} from 'newskit';
+import {Link, LinkStandalone} from 'newskit';
+
+export default Layout;
+
+# Component Defaults Utils
+
+A group of functions used to retrieve values from the <Link href="/theming/component-defaults">component defaults or overrides objects.</Link>
+
+## Overview
+
+Each component has its own component defaults object as well as overrides prop.
+Component defaults map foundation and preset tokens to the component, describing the default look and feel. As well as being able to override these defaults in the theme, component overrides allow you to change these tokens as desired when rendering individual instances.<br/>
+
+The provided functions, specified below, are used to retrieve the CSS values and objects sitting behind the theme tokens. These functions don't access the theme directly themselves, they just orchestrate the process of fetching theme values, utilising the other _get from theme_ functions.
+
+## Parameters
+
+<LegacyBlock marginTop='sizing040'>
+  <Prop name='defaultPath' type='string | undefined'>
+    It is an object-path used to access deep properties in the component defaults. <br/>
+    Component defaults objects can have a nested structure that mirrors the structure of the component. Root level key of this object is always the name of the component. <br/>
+    Example: "headline.kicker", "byline.divider", "shareBar"
+    If not provided (undefined or false passed) desired value is looked up only in the respective overrides object.
+  </Prop>
+  <Prop name='overridePath' type='string | false' default='""'>
+    It is an object-path used to access deep properties in the overrides. <br/>
+    Overrides objects can have as well a nested structure that mirrors the structure of the component. <br/>
+    Example: "kicker", "divider", "" (empty string)
+  </Prop>
+  <Prop name='options' type='Parameters<FromThemeUtil>[2]'>
+    This prop consists of different options used to control component-specific behaviours.
+  </Prop>
+  <Prop name='props' type='Props'>
+    Is the props of the component including the theme. If the function is used inside a styled component template literal, or a CSS block, Emotion.js will call the function first with the component props passed in.
+  </Prop>
+</LegacyBlock>
+
+## Syntax
+<Code>{
+  `
+  getStylePreset(defaultPath, overridePath, options)(props)
+  
+  options: {
+    isLoading?: boolean;
+    isSelected?: boolean;
+    isDisabled?: boolean;
+    isInvalid?: boolean;
+    isValid?: boolean;
+    isSvg?: boolean;
+    omitStates?: StylePresetStates[];
+    filterStates?: StylePresetStates[];
+    omitStyles?: StylePresetStyleKeys[];
+    filterStyles?: StylePresetStyleKeys[];
+  };
+  `
+}</Code>
+
+Used to retrieve values mapped to the stylePreset key in the component defaults/overrides.
+
+<Code>{
+  `
+  getTypographyPreset(defaultPath, overridePath, options)(props)
+  
+  options: {
+    withCrop?: boolean;
+  };
+  `
+}</Code>
+
+Used to retrieve values mapped to the typographyPreset key in the component defaults/overrides.
+
+<Code>{'getSpacingInlineHorizontal(defaultPath, overridePath, options)(props)'}</Code>
+
+Used to retrieve value mapped to the <Link href="/theming/foundations/spacing">spaceInline</Link> key in the component defaults/overrides 
+and places it as margin-right CSS property when the text or itmes flow is horizontal.
+
+<Code>{'getSpacingInlineVertical(defaultPath, overridePath, options)(props)'}</Code>
+
+Used to retrieve value mapped to the <Link href="/theming/foundations/spacing">spaceInline</Link> key in the component defaults/overrides 
+and places it as margin-bottom CSS property when the text or itmes flow is vertical.
+
+<Code>{'getSpacingStackHorizontal(defaultPath, overridePath, options)(props)'}</Code>
+
+Used to retrieve value mapped to the <Link href="/theming/foundations/spacing">spaceStack</Link> key in the component defaults/overrides 
+and places it as margin-bottom CSS property when the text or itmes flow is horizontal.
+
+<Code>{'getSpacingStackVertical(defaultPath, overridePath, options)(props)'}</Code>
+
+Used to retrieve value mapped to the <Link href="/theming/foundations/spacing">spaceStack</Link> key in the component defaults/overrides 
+and places it as margin-right CSS property when the text or itmes flow is vertical.
+
+<Code>{'getSpacingInset(defaultPath, overridePath, options)(props)'}</Code>
+
+Used to retrieve value mapped to the spaceInsite key in the component defaults/overrides 
+and applies it as padding CSS property to an element.
+
+
+## Return value
+
+Returns a CSS value, or object, mapped to a theme token (mapped to a key in the component defaults/overrides) if valid attributes are received.
+
+Returns an empty string if invalid attributes or no attributes are provided.
+
+## Example
+
+Here is an example of using the different functions:
+
+<CodeFromFile path="examples/utils/get-defaults.tsx"/>
+

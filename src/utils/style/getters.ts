@@ -19,11 +19,7 @@ import {isFontConfigObject} from '../guards';
 import {getFontProps} from '../get-font-props';
 import {ThemeProp} from '../style-types';
 import {MQ} from './types';
-import {
-  getResponsiveValueFromTheme,
-  getDefaultedValue,
-  getValueFromTheme,
-} from './base';
+import {getResponsiveValueFromTheme, getValueFromTheme} from './base';
 
 export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<TypographyPresetKeys>,
@@ -73,11 +69,6 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
   return typographyPreset;
 };
 
-export const getTypographyPreset = getDefaultedValue(
-  getTypographyPresetFromTheme,
-  'typographyPreset',
-);
-
 export const getMotionFromTheme = getValueFromTheme<MotionKeys>('motions');
 
 export const getFontsFromTheme = <Props extends ThemeProp>(
@@ -121,36 +112,6 @@ export const getSpacingFromTheme = <Props extends ThemeProp>(
   return cssProp ? {[cssProp]: value} : value;
 };
 
-export const getSpacingInlineHorizontal = getDefaultedValue(
-  getSpacingFromTheme,
-  'spaceInline',
-  'marginRight',
-);
-
-export const getSpacingInlineVertical = getDefaultedValue(
-  getSpacingFromTheme,
-  'spaceInline',
-  'marginBottom',
-);
-export const getSpacingStackHorizontal = getDefaultedValue(
-  getSpacingFromTheme,
-  'spaceStack',
-  'marginBottom',
-);
-
-export const getSpacingStackVertical = getDefaultedValue(
-  getSpacingFromTheme,
-  'spaceStack',
-  'marginRight',
-);
-
-export const getSizing = getDefaultedValue(getSizingFromTheme, 'sizing');
-export const getMinHeight = getDefaultedValue(getSizingFromTheme, 'minHeight');
-
-export const getSize = getDefaultedValue(getSizingFromTheme, 'size');
-
-export const getSpace = getDefaultedValue(getSpacingFromTheme, 'space');
-
 export const getSpacingInsetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<PaddingPresetKeys>,
   customProp?: Exclude<keyof Props, 'theme'>,
@@ -171,11 +132,6 @@ export const getSpacingInsetFromTheme = <Props extends ThemeProp>(
 
   return {padding};
 };
-
-export const getSpacingInset = getDefaultedValue(
-  getSpacingInsetFromTheme,
-  'spaceInset',
-);
 
 export const getMarginPresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<SpacePresetKeys>,
