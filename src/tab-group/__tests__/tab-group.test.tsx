@@ -103,6 +103,25 @@ describe('Tab Group', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders correctly when orientation is vertical', () => {
+    const props: TabGroupProps = {
+      children: tabsWithLabel,
+      orientation: 'vertical',
+    };
+    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders dividers correctly when orientation is vertical', () => {
+    const props: TabGroupProps = {
+      children: tabsWithLabel,
+      orientation: 'vertical',
+      divider: true,
+    };
+    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('renders with overrides', () => {
     const myCustomTheme = createTheme({
       name: 'my-custom-tab-group-theme',
