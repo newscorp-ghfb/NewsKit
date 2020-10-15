@@ -3,7 +3,7 @@ import {GraphicEq} from '@emotion-icons/material/GraphicEq';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-GraphicEq.displayName = 'IconFilledGraphicEq';
+// "to-newskit-icon.tsx", if it gets overridden
+GraphicEq['displayName'] = "IconFilledGraphicEq";
 
 export const IconFilledGraphicEq = toNewsKitIcon(GraphicEq);

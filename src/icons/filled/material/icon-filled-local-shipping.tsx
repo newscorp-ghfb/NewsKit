@@ -3,7 +3,7 @@ import {LocalShipping} from '@emotion-icons/material/LocalShipping';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-LocalShipping.displayName = 'IconFilledLocalShipping';
+// "to-newskit-icon.tsx", if it gets overridden
+LocalShipping['displayName'] = "IconFilledLocalShipping";
 
 export const IconFilledLocalShipping = toNewsKitIcon(LocalShipping);

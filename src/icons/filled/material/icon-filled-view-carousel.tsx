@@ -3,7 +3,7 @@ import {ViewCarousel} from '@emotion-icons/material/ViewCarousel';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ViewCarousel.displayName = 'IconFilledViewCarousel';
+// "to-newskit-icon.tsx", if it gets overridden
+ViewCarousel['displayName'] = "IconFilledViewCarousel";
 
 export const IconFilledViewCarousel = toNewsKitIcon(ViewCarousel);

@@ -3,9 +3,7 @@ import {ControlPointDuplicate} from '@emotion-icons/material/ControlPointDuplica
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ControlPointDuplicate.displayName = 'IconFilledControlPointDuplicate';
+// "to-newskit-icon.tsx", if it gets overridden
+ControlPointDuplicate['displayName'] = "IconFilledControlPointDuplicate";
 
-export const IconFilledControlPointDuplicate = toNewsKitIcon(
-  ControlPointDuplicate,
-);
+export const IconFilledControlPointDuplicate = toNewsKitIcon(ControlPointDuplicate);

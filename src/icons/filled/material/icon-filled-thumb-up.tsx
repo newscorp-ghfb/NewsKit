@@ -3,7 +3,7 @@ import {ThumbUp} from '@emotion-icons/material/ThumbUp';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ThumbUp.displayName = 'IconFilledThumbUp';
+// "to-newskit-icon.tsx", if it gets overridden
+ThumbUp['displayName'] = "IconFilledThumbUp";
 
 export const IconFilledThumbUp = toNewsKitIcon(ThumbUp);

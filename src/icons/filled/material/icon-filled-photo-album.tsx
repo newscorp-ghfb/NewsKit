@@ -3,7 +3,7 @@ import {PhotoAlbum} from '@emotion-icons/material/PhotoAlbum';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-PhotoAlbum.displayName = 'IconFilledPhotoAlbum';
+// "to-newskit-icon.tsx", if it gets overridden
+PhotoAlbum['displayName'] = "IconFilledPhotoAlbum";
 
 export const IconFilledPhotoAlbum = toNewsKitIcon(PhotoAlbum);

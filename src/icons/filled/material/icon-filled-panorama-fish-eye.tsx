@@ -3,7 +3,7 @@ import {PanoramaFishEye} from '@emotion-icons/material/PanoramaFishEye';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-PanoramaFishEye.displayName = 'IconFilledPanoramaFishEye';
+// "to-newskit-icon.tsx", if it gets overridden
+PanoramaFishEye['displayName'] = "IconFilledPanoramaFishEye";
 
 export const IconFilledPanoramaFishEye = toNewsKitIcon(PanoramaFishEye);

@@ -3,7 +3,7 @@ import {HowToVote} from '@emotion-icons/material/HowToVote';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-HowToVote.displayName = 'IconFilledHowToVote';
+// "to-newskit-icon.tsx", if it gets overridden
+HowToVote['displayName'] = "IconFilledHowToVote";
 
 export const IconFilledHowToVote = toNewsKitIcon(HowToVote);

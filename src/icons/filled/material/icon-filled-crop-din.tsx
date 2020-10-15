@@ -3,7 +3,7 @@ import {CropDin} from '@emotion-icons/material/CropDin';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-CropDin.displayName = 'IconFilledCropDin';
+// "to-newskit-icon.tsx", if it gets overridden
+CropDin['displayName'] = "IconFilledCropDin";
 
 export const IconFilledCropDin = toNewsKitIcon(CropDin);

@@ -3,7 +3,7 @@ import {FormatPaint} from '@emotion-icons/material/FormatPaint';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FormatPaint.displayName = 'IconFilledFormatPaint';
+// "to-newskit-icon.tsx", if it gets overridden
+FormatPaint['displayName'] = "IconFilledFormatPaint";
 
 export const IconFilledFormatPaint = toNewsKitIcon(FormatPaint);

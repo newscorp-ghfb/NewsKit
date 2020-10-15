@@ -3,7 +3,7 @@ import {PermIdentity} from '@emotion-icons/material/PermIdentity';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-PermIdentity.displayName = 'IconFilledPermIdentity';
+// "to-newskit-icon.tsx", if it gets overridden
+PermIdentity['displayName'] = "IconFilledPermIdentity";
 
 export const IconFilledPermIdentity = toNewsKitIcon(PermIdentity);

@@ -3,7 +3,7 @@ import {CallSplit} from '@emotion-icons/material/CallSplit';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-CallSplit.displayName = 'IconFilledCallSplit';
+// "to-newskit-icon.tsx", if it gets overridden
+CallSplit['displayName'] = "IconFilledCallSplit";
 
 export const IconFilledCallSplit = toNewsKitIcon(CallSplit);

@@ -3,7 +3,7 @@ import {Vibration} from '@emotion-icons/material/Vibration';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Vibration.displayName = 'IconFilledVibration';
+// "to-newskit-icon.tsx", if it gets overridden
+Vibration['displayName'] = "IconFilledVibration";
 
 export const IconFilledVibration = toNewsKitIcon(Vibration);

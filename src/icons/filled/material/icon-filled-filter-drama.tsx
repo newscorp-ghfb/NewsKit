@@ -3,7 +3,7 @@ import {FilterDrama} from '@emotion-icons/material/FilterDrama';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FilterDrama.displayName = 'IconFilledFilterDrama';
+// "to-newskit-icon.tsx", if it gets overridden
+FilterDrama['displayName'] = "IconFilledFilterDrama";
 
 export const IconFilledFilterDrama = toNewsKitIcon(FilterDrama);

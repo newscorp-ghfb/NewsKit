@@ -3,7 +3,7 @@ import {Mouse} from '@emotion-icons/material/Mouse';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Mouse.displayName = 'IconFilledMouse';
+// "to-newskit-icon.tsx", if it gets overridden
+Mouse['displayName'] = "IconFilledMouse";
 
 export const IconFilledMouse = toNewsKitIcon(Mouse);

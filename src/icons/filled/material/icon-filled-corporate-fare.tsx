@@ -3,7 +3,7 @@ import {CorporateFare} from '@emotion-icons/material/CorporateFare';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-CorporateFare.displayName = 'IconFilledCorporateFare';
+// "to-newskit-icon.tsx", if it gets overridden
+CorporateFare['displayName'] = "IconFilledCorporateFare";
 
 export const IconFilledCorporateFare = toNewsKitIcon(CorporateFare);

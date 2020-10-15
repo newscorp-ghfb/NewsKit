@@ -3,9 +3,7 @@ import {IndeterminateCheckBox} from '@emotion-icons/material/IndeterminateCheckB
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-IndeterminateCheckBox.displayName = 'IconFilledIndeterminateCheckBox';
+// "to-newskit-icon.tsx", if it gets overridden
+IndeterminateCheckBox['displayName'] = "IconFilledIndeterminateCheckBox";
 
-export const IconFilledIndeterminateCheckBox = toNewsKitIcon(
-  IndeterminateCheckBox,
-);
+export const IconFilledIndeterminateCheckBox = toNewsKitIcon(IndeterminateCheckBox);

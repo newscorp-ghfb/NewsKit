@@ -3,7 +3,7 @@ import {ImageNotSupported} from '@emotion-icons/material/ImageNotSupported';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ImageNotSupported.displayName = 'IconFilledImageNotSupported';
+// "to-newskit-icon.tsx", if it gets overridden
+ImageNotSupported['displayName'] = "IconFilledImageNotSupported";
 
 export const IconFilledImageNotSupported = toNewsKitIcon(ImageNotSupported);

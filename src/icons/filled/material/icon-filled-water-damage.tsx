@@ -3,7 +3,7 @@ import {WaterDamage} from '@emotion-icons/material/WaterDamage';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-WaterDamage.displayName = 'IconFilledWaterDamage';
+// "to-newskit-icon.tsx", if it gets overridden
+WaterDamage['displayName'] = "IconFilledWaterDamage";
 
 export const IconFilledWaterDamage = toNewsKitIcon(WaterDamage);

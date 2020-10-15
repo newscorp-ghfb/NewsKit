@@ -3,7 +3,7 @@ import {Queue} from '@emotion-icons/material/Queue';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Queue.displayName = 'IconFilledQueue';
+// "to-newskit-icon.tsx", if it gets overridden
+Queue['displayName'] = "IconFilledQueue";
 
 export const IconFilledQueue = toNewsKitIcon(Queue);

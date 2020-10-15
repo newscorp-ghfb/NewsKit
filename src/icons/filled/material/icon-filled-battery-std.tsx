@@ -3,7 +3,7 @@ import {BatteryStd} from '@emotion-icons/material/BatteryStd';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-BatteryStd.displayName = 'IconFilledBatteryStd';
+// "to-newskit-icon.tsx", if it gets overridden
+BatteryStd['displayName'] = "IconFilledBatteryStd";
 
 export const IconFilledBatteryStd = toNewsKitIcon(BatteryStd);

@@ -3,7 +3,7 @@ import {NavigateNext} from '@emotion-icons/material/NavigateNext';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-NavigateNext.displayName = 'IconFilledNavigateNext';
+// "to-newskit-icon.tsx", if it gets overridden
+NavigateNext['displayName'] = "IconFilledNavigateNext";
 
 export const IconFilledNavigateNext = toNewsKitIcon(NavigateNext);

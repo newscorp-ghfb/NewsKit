@@ -3,7 +3,7 @@ import {PlayArrow} from '@emotion-icons/material/PlayArrow';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-PlayArrow.displayName = 'IconFilledPlayArrow';
+// "to-newskit-icon.tsx", if it gets overridden
+PlayArrow['displayName'] = "IconFilledPlayArrow";
 
 export const IconFilledPlayArrow = toNewsKitIcon(PlayArrow);

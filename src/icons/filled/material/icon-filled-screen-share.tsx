@@ -3,7 +3,7 @@ import {ScreenShare} from '@emotion-icons/material/ScreenShare';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ScreenShare.displayName = 'IconFilledScreenShare';
+// "to-newskit-icon.tsx", if it gets overridden
+ScreenShare['displayName'] = "IconFilledScreenShare";
 
 export const IconFilledScreenShare = toNewsKitIcon(ScreenShare);

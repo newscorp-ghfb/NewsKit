@@ -4,6 +4,6 @@ import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
 // "to-newskit-icon.tsx", if it gets overridden
-Rotate90DegreesCcw.displayName = 'IconOutlinedRotate90DegreesCcw';
+Rotate90DegreesCcw['displayName'] = "IconOutlinedRotate90DegreesCcw";
 
 export const IconOutlinedRotate90DegreesCcw = toNewsKitIcon(Rotate90DegreesCcw);

@@ -3,7 +3,7 @@ import {WifiProtectedSetup} from '@emotion-icons/material/WifiProtectedSetup';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-WifiProtectedSetup.displayName = 'IconFilledWifiProtectedSetup';
+// "to-newskit-icon.tsx", if it gets overridden
+WifiProtectedSetup['displayName'] = "IconFilledWifiProtectedSetup";
 
 export const IconFilledWifiProtectedSetup = toNewsKitIcon(WifiProtectedSetup);

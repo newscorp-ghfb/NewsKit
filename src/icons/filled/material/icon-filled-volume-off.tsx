@@ -3,7 +3,7 @@ import {VolumeOff} from '@emotion-icons/material/VolumeOff';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-VolumeOff.displayName = 'IconFilledVolumeOff';
+// "to-newskit-icon.tsx", if it gets overridden
+VolumeOff['displayName'] = "IconFilledVolumeOff";
 
 export const IconFilledVolumeOff = toNewsKitIcon(VolumeOff);

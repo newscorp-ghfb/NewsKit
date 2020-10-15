@@ -3,7 +3,7 @@ import {ReplyAll} from '@emotion-icons/material/ReplyAll';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ReplyAll.displayName = 'IconFilledReplyAll';
+// "to-newskit-icon.tsx", if it gets overridden
+ReplyAll['displayName'] = "IconFilledReplyAll";
 
 export const IconFilledReplyAll = toNewsKitIcon(ReplyAll);

@@ -4,8 +4,6 @@ import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
 // "to-newskit-icon.tsx", if it gets overridden
-AirlineSeatFlatAngled.displayName = 'IconOutlinedAirlineSeatFlatAngled';
+AirlineSeatFlatAngled['displayName'] = "IconOutlinedAirlineSeatFlatAngled";
 
-export const IconOutlinedAirlineSeatFlatAngled = toNewsKitIcon(
-  AirlineSeatFlatAngled,
-);
+export const IconOutlinedAirlineSeatFlatAngled = toNewsKitIcon(AirlineSeatFlatAngled);

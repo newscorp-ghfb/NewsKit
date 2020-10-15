@@ -3,7 +3,7 @@ import {Timer3} from '@emotion-icons/material/Timer3';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Timer3.displayName = 'IconFilledTimer3';
+// "to-newskit-icon.tsx", if it gets overridden
+Timer3['displayName'] = "IconFilledTimer3";
 
 export const IconFilledTimer3 = toNewsKitIcon(Timer3);

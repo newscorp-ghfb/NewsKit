@@ -3,7 +3,7 @@ import {SaveAlt} from '@emotion-icons/material/SaveAlt';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SaveAlt.displayName = 'IconFilledSaveAlt';
+// "to-newskit-icon.tsx", if it gets overridden
+SaveAlt['displayName'] = "IconFilledSaveAlt";
 
 export const IconFilledSaveAlt = toNewsKitIcon(SaveAlt);

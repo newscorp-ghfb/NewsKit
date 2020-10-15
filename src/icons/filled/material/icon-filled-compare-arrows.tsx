@@ -3,7 +3,7 @@ import {CompareArrows} from '@emotion-icons/material/CompareArrows';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-CompareArrows.displayName = 'IconFilledCompareArrows';
+// "to-newskit-icon.tsx", if it gets overridden
+CompareArrows['displayName'] = "IconFilledCompareArrows";
 
 export const IconFilledCompareArrows = toNewsKitIcon(CompareArrows);

@@ -3,7 +3,7 @@ import {Wc} from '@emotion-icons/material/Wc';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Wc.displayName = 'IconFilledWc';
+// "to-newskit-icon.tsx", if it gets overridden
+Wc['displayName'] = "IconFilledWc";
 
 export const IconFilledWc = toNewsKitIcon(Wc);

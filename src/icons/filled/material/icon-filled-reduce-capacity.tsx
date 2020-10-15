@@ -3,7 +3,7 @@ import {ReduceCapacity} from '@emotion-icons/material/ReduceCapacity';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ReduceCapacity.displayName = 'IconFilledReduceCapacity';
+// "to-newskit-icon.tsx", if it gets overridden
+ReduceCapacity['displayName'] = "IconFilledReduceCapacity";
 
 export const IconFilledReduceCapacity = toNewsKitIcon(ReduceCapacity);

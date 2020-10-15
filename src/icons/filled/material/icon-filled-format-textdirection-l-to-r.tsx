@@ -3,9 +3,7 @@ import {FormatTextdirectionLToR} from '@emotion-icons/material/FormatTextdirecti
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FormatTextdirectionLToR.displayName = 'IconFilledFormatTextdirectionLToR';
+// "to-newskit-icon.tsx", if it gets overridden
+FormatTextdirectionLToR['displayName'] = "IconFilledFormatTextdirectionLToR";
 
-export const IconFilledFormatTextdirectionLToR = toNewsKitIcon(
-  FormatTextdirectionLToR,
-);
+export const IconFilledFormatTextdirectionLToR = toNewsKitIcon(FormatTextdirectionLToR);

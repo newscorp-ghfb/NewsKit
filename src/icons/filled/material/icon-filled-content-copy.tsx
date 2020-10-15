@@ -3,7 +3,7 @@ import {ContentCopy} from '@emotion-icons/material/ContentCopy';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ContentCopy.displayName = 'IconFilledContentCopy';
+// "to-newskit-icon.tsx", if it gets overridden
+ContentCopy['displayName'] = "IconFilledContentCopy";
 
 export const IconFilledContentCopy = toNewsKitIcon(ContentCopy);

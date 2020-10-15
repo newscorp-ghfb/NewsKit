@@ -3,7 +3,7 @@ import {NotAccessible} from '@emotion-icons/material/NotAccessible';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-NotAccessible.displayName = 'IconFilledNotAccessible';
+// "to-newskit-icon.tsx", if it gets overridden
+NotAccessible['displayName'] = "IconFilledNotAccessible";
 
 export const IconFilledNotAccessible = toNewsKitIcon(NotAccessible);

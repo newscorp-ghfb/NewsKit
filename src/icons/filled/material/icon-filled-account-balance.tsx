@@ -3,7 +3,7 @@ import {AccountBalance} from '@emotion-icons/material/AccountBalance';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-AccountBalance.displayName = 'IconFilledAccountBalance';
+// "to-newskit-icon.tsx", if it gets overridden
+AccountBalance['displayName'] = "IconFilledAccountBalance";
 
 export const IconFilledAccountBalance = toNewsKitIcon(AccountBalance);

@@ -3,7 +3,7 @@ import {AccessAlarm} from '@emotion-icons/material/AccessAlarm';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-AccessAlarm.displayName = 'IconFilledAccessAlarm';
+// "to-newskit-icon.tsx", if it gets overridden
+AccessAlarm['displayName'] = "IconFilledAccessAlarm";
 
 export const IconFilledAccessAlarm = toNewsKitIcon(AccessAlarm);

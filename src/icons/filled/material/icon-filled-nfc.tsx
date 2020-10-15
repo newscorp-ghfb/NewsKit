@@ -3,7 +3,7 @@ import {Nfc} from '@emotion-icons/material/Nfc';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Nfc.displayName = 'IconFilledNfc';
+// "to-newskit-icon.tsx", if it gets overridden
+Nfc['displayName'] = "IconFilledNfc";
 
 export const IconFilledNfc = toNewsKitIcon(Nfc);

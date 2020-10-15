@@ -3,7 +3,7 @@ import {SignalCellularAlt} from '@emotion-icons/material/SignalCellularAlt';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SignalCellularAlt.displayName = 'IconFilledSignalCellularAlt';
+// "to-newskit-icon.tsx", if it gets overridden
+SignalCellularAlt['displayName'] = "IconFilledSignalCellularAlt";
 
 export const IconFilledSignalCellularAlt = toNewsKitIcon(SignalCellularAlt);

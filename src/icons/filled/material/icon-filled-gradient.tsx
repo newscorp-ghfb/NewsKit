@@ -3,7 +3,7 @@ import {Gradient} from '@emotion-icons/material/Gradient';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Gradient.displayName = 'IconFilledGradient';
+// "to-newskit-icon.tsx", if it gets overridden
+Gradient['displayName'] = "IconFilledGradient";
 
 export const IconFilledGradient = toNewsKitIcon(Gradient);

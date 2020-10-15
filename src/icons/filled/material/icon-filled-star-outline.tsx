@@ -3,7 +3,7 @@ import {StarOutline} from '@emotion-icons/material/StarOutline';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-StarOutline.displayName = 'IconFilledStarOutline';
+// "to-newskit-icon.tsx", if it gets overridden
+StarOutline['displayName'] = "IconFilledStarOutline";
 
 export const IconFilledStarOutline = toNewsKitIcon(StarOutline);

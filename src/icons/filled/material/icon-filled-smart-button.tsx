@@ -3,7 +3,7 @@ import {SmartButton} from '@emotion-icons/material/SmartButton';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SmartButton.displayName = 'IconFilledSmartButton';
+// "to-newskit-icon.tsx", if it gets overridden
+SmartButton['displayName'] = "IconFilledSmartButton";
 
 export const IconFilledSmartButton = toNewsKitIcon(SmartButton);

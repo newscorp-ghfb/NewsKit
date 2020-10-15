@@ -3,7 +3,7 @@ import {Stroller} from '@emotion-icons/material/Stroller';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Stroller.displayName = 'IconFilledStroller';
+// "to-newskit-icon.tsx", if it gets overridden
+Stroller['displayName'] = "IconFilledStroller";
 
 export const IconFilledStroller = toNewsKitIcon(Stroller);

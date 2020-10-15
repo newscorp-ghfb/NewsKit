@@ -3,7 +3,7 @@ import {ViewComfy} from '@emotion-icons/material/ViewComfy';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ViewComfy.displayName = 'IconFilledViewComfy';
+// "to-newskit-icon.tsx", if it gets overridden
+ViewComfy['displayName'] = "IconFilledViewComfy";
 
 export const IconFilledViewComfy = toNewsKitIcon(ViewComfy);

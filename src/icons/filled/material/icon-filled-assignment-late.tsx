@@ -3,7 +3,7 @@ import {AssignmentLate} from '@emotion-icons/material/AssignmentLate';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-AssignmentLate.displayName = 'IconFilledAssignmentLate';
+// "to-newskit-icon.tsx", if it gets overridden
+AssignmentLate['displayName'] = "IconFilledAssignmentLate";
 
 export const IconFilledAssignmentLate = toNewsKitIcon(AssignmentLate);

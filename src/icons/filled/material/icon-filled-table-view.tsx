@@ -3,7 +3,7 @@ import {TableView} from '@emotion-icons/material/TableView';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-TableView.displayName = 'IconFilledTableView';
+// "to-newskit-icon.tsx", if it gets overridden
+TableView['displayName'] = "IconFilledTableView";
 
 export const IconFilledTableView = toNewsKitIcon(TableView);

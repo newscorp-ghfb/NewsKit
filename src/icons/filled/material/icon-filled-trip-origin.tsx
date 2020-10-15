@@ -3,7 +3,7 @@ import {TripOrigin} from '@emotion-icons/material/TripOrigin';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-TripOrigin.displayName = 'IconFilledTripOrigin';
+// "to-newskit-icon.tsx", if it gets overridden
+TripOrigin['displayName'] = "IconFilledTripOrigin";
 
 export const IconFilledTripOrigin = toNewsKitIcon(TripOrigin);

@@ -3,7 +3,7 @@ import {Wifi} from '@emotion-icons/material/Wifi';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Wifi.displayName = 'IconFilledWifi';
+// "to-newskit-icon.tsx", if it gets overridden
+Wifi['displayName'] = "IconFilledWifi";
 
 export const IconFilledWifi = toNewsKitIcon(Wifi);

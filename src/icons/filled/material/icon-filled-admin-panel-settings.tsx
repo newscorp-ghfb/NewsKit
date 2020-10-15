@@ -3,7 +3,7 @@ import {AdminPanelSettings} from '@emotion-icons/material/AdminPanelSettings';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-AdminPanelSettings.displayName = 'IconFilledAdminPanelSettings';
+// "to-newskit-icon.tsx", if it gets overridden
+AdminPanelSettings['displayName'] = "IconFilledAdminPanelSettings";
 
 export const IconFilledAdminPanelSettings = toNewsKitIcon(AdminPanelSettings);

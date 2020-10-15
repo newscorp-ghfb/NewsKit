@@ -3,7 +3,7 @@ import {PermContactCalendar} from '@emotion-icons/material/PermContactCalendar';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-PermContactCalendar.displayName = 'IconFilledPermContactCalendar';
+// "to-newskit-icon.tsx", if it gets overridden
+PermContactCalendar['displayName'] = "IconFilledPermContactCalendar";
 
 export const IconFilledPermContactCalendar = toNewsKitIcon(PermContactCalendar);

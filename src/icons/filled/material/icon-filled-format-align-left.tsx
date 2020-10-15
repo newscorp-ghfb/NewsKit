@@ -3,7 +3,7 @@ import {FormatAlignLeft} from '@emotion-icons/material/FormatAlignLeft';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FormatAlignLeft.displayName = 'IconFilledFormatAlignLeft';
+// "to-newskit-icon.tsx", if it gets overridden
+FormatAlignLeft['displayName'] = "IconFilledFormatAlignLeft";
 
 export const IconFilledFormatAlignLeft = toNewsKitIcon(FormatAlignLeft);

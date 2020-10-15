@@ -3,9 +3,7 @@ import {PhotoSizeSelectSmall} from '@emotion-icons/material/PhotoSizeSelectSmall
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-PhotoSizeSelectSmall.displayName = 'IconFilledPhotoSizeSelectSmall';
+// "to-newskit-icon.tsx", if it gets overridden
+PhotoSizeSelectSmall['displayName'] = "IconFilledPhotoSizeSelectSmall";
 
-export const IconFilledPhotoSizeSelectSmall = toNewsKitIcon(
-  PhotoSizeSelectSmall,
-);
+export const IconFilledPhotoSizeSelectSmall = toNewsKitIcon(PhotoSizeSelectSmall);

@@ -3,7 +3,7 @@ import {Cached} from '@emotion-icons/material/Cached';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Cached.displayName = 'IconFilledCached';
+// "to-newskit-icon.tsx", if it gets overridden
+Cached['displayName'] = "IconFilledCached";
 
 export const IconFilledCached = toNewsKitIcon(Cached);

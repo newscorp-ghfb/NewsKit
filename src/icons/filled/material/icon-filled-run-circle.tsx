@@ -3,7 +3,7 @@ import {RunCircle} from '@emotion-icons/material/RunCircle';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-RunCircle.displayName = 'IconFilledRunCircle';
+// "to-newskit-icon.tsx", if it gets overridden
+RunCircle['displayName'] = "IconFilledRunCircle";
 
 export const IconFilledRunCircle = toNewsKitIcon(RunCircle);

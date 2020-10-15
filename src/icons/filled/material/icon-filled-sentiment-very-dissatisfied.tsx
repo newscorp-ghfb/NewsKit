@@ -3,9 +3,7 @@ import {SentimentVeryDissatisfied} from '@emotion-icons/material/SentimentVeryDi
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SentimentVeryDissatisfied.displayName = 'IconFilledSentimentVeryDissatisfied';
+// "to-newskit-icon.tsx", if it gets overridden
+SentimentVeryDissatisfied['displayName'] = "IconFilledSentimentVeryDissatisfied";
 
-export const IconFilledSentimentVeryDissatisfied = toNewsKitIcon(
-  SentimentVeryDissatisfied,
-);
+export const IconFilledSentimentVeryDissatisfied = toNewsKitIcon(SentimentVeryDissatisfied);

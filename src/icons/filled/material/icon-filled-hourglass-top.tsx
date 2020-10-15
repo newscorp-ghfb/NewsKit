@@ -3,7 +3,7 @@ import {HourglassTop} from '@emotion-icons/material/HourglassTop';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-HourglassTop.displayName = 'IconFilledHourglassTop';
+// "to-newskit-icon.tsx", if it gets overridden
+HourglassTop['displayName'] = "IconFilledHourglassTop";
 
 export const IconFilledHourglassTop = toNewsKitIcon(HourglassTop);

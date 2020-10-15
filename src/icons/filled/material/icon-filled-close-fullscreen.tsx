@@ -3,7 +3,7 @@ import {CloseFullscreen} from '@emotion-icons/material/CloseFullscreen';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-CloseFullscreen.displayName = 'IconFilledCloseFullscreen';
+// "to-newskit-icon.tsx", if it gets overridden
+CloseFullscreen['displayName'] = "IconFilledCloseFullscreen";
 
 export const IconFilledCloseFullscreen = toNewsKitIcon(CloseFullscreen);

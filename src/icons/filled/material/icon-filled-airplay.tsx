@@ -3,7 +3,7 @@ import {Airplay} from '@emotion-icons/material/Airplay';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Airplay.displayName = 'IconFilledAirplay';
+// "to-newskit-icon.tsx", if it gets overridden
+Airplay['displayName'] = "IconFilledAirplay";
 
 export const IconFilledAirplay = toNewsKitIcon(Airplay);

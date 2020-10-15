@@ -3,7 +3,7 @@ import {ScreenRotation} from '@emotion-icons/material/ScreenRotation';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ScreenRotation.displayName = 'IconFilledScreenRotation';
+// "to-newskit-icon.tsx", if it gets overridden
+ScreenRotation['displayName'] = "IconFilledScreenRotation";
 
 export const IconFilledScreenRotation = toNewsKitIcon(ScreenRotation);

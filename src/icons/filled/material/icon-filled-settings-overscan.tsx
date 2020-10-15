@@ -3,7 +3,7 @@ import {SettingsOverscan} from '@emotion-icons/material/SettingsOverscan';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SettingsOverscan.displayName = 'IconFilledSettingsOverscan';
+// "to-newskit-icon.tsx", if it gets overridden
+SettingsOverscan['displayName'] = "IconFilledSettingsOverscan";
 
 export const IconFilledSettingsOverscan = toNewsKitIcon(SettingsOverscan);

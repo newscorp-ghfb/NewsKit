@@ -3,7 +3,7 @@ import {People} from '@emotion-icons/material/People';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-People.displayName = 'IconFilledPeople';
+// "to-newskit-icon.tsx", if it gets overridden
+People['displayName'] = "IconFilledPeople";
 
 export const IconFilledPeople = toNewsKitIcon(People);

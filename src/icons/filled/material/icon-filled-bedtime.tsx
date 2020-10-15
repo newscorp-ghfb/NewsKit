@@ -3,7 +3,7 @@ import {Bedtime} from '@emotion-icons/material/Bedtime';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Bedtime.displayName = 'IconFilledBedtime';
+// "to-newskit-icon.tsx", if it gets overridden
+Bedtime['displayName'] = "IconFilledBedtime";
 
 export const IconFilledBedtime = toNewsKitIcon(Bedtime);

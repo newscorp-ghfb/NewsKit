@@ -3,7 +3,7 @@ import {BookOnline} from '@emotion-icons/material/BookOnline';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-BookOnline.displayName = 'IconFilledBookOnline';
+// "to-newskit-icon.tsx", if it gets overridden
+BookOnline['displayName'] = "IconFilledBookOnline";
 
 export const IconFilledBookOnline = toNewsKitIcon(BookOnline);

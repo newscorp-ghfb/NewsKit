@@ -3,7 +3,7 @@ import {VideocamOff} from '@emotion-icons/material/VideocamOff';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-VideocamOff.displayName = 'IconFilledVideocamOff';
+// "to-newskit-icon.tsx", if it gets overridden
+VideocamOff['displayName'] = "IconFilledVideocamOff";
 
 export const IconFilledVideocamOff = toNewsKitIcon(VideocamOff);

@@ -3,7 +3,7 @@ import {SportsTennis} from '@emotion-icons/material/SportsTennis';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SportsTennis.displayName = 'IconFilledSportsTennis';
+// "to-newskit-icon.tsx", if it gets overridden
+SportsTennis['displayName'] = "IconFilledSportsTennis";
 
 export const IconFilledSportsTennis = toNewsKitIcon(SportsTennis);

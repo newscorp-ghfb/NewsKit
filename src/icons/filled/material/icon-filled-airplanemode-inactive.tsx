@@ -3,9 +3,7 @@ import {AirplanemodeInactive} from '@emotion-icons/material/AirplanemodeInactive
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-AirplanemodeInactive.displayName = 'IconFilledAirplanemodeInactive';
+// "to-newskit-icon.tsx", if it gets overridden
+AirplanemodeInactive['displayName'] = "IconFilledAirplanemodeInactive";
 
-export const IconFilledAirplanemodeInactive = toNewsKitIcon(
-  AirplanemodeInactive,
-);
+export const IconFilledAirplanemodeInactive = toNewsKitIcon(AirplanemodeInactive);

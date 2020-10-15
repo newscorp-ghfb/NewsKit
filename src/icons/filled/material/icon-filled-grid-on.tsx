@@ -3,7 +3,7 @@ import {GridOn} from '@emotion-icons/material/GridOn';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-GridOn.displayName = 'IconFilledGridOn';
+// "to-newskit-icon.tsx", if it gets overridden
+GridOn['displayName'] = "IconFilledGridOn";
 
 export const IconFilledGridOn = toNewsKitIcon(GridOn);

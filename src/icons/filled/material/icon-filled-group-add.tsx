@@ -3,7 +3,7 @@ import {GroupAdd} from '@emotion-icons/material/GroupAdd';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-GroupAdd.displayName = 'IconFilledGroupAdd';
+// "to-newskit-icon.tsx", if it gets overridden
+GroupAdd['displayName'] = "IconFilledGroupAdd";
 
 export const IconFilledGroupAdd = toNewsKitIcon(GroupAdd);

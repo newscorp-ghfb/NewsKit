@@ -3,7 +3,7 @@ import {Contactless} from '@emotion-icons/material/Contactless';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Contactless.displayName = 'IconFilledContactless';
+// "to-newskit-icon.tsx", if it gets overridden
+Contactless['displayName'] = "IconFilledContactless";
 
 export const IconFilledContactless = toNewsKitIcon(Contactless);

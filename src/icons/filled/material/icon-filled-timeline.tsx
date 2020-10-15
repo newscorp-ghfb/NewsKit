@@ -3,7 +3,7 @@ import {Timeline} from '@emotion-icons/material/Timeline';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Timeline.displayName = 'IconFilledTimeline';
+// "to-newskit-icon.tsx", if it gets overridden
+Timeline['displayName'] = "IconFilledTimeline";
 
 export const IconFilledTimeline = toNewsKitIcon(Timeline);

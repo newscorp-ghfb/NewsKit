@@ -3,7 +3,7 @@ import {BlurCircular} from '@emotion-icons/material/BlurCircular';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-BlurCircular.displayName = 'IconFilledBlurCircular';
+// "to-newskit-icon.tsx", if it gets overridden
+BlurCircular['displayName'] = "IconFilledBlurCircular";
 
 export const IconFilledBlurCircular = toNewsKitIcon(BlurCircular);

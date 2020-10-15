@@ -3,9 +3,7 @@ import {SentimentSatisfiedAlt} from '@emotion-icons/material/SentimentSatisfiedA
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SentimentSatisfiedAlt.displayName = 'IconFilledSentimentSatisfiedAlt';
+// "to-newskit-icon.tsx", if it gets overridden
+SentimentSatisfiedAlt['displayName'] = "IconFilledSentimentSatisfiedAlt";
 
-export const IconFilledSentimentSatisfiedAlt = toNewsKitIcon(
-  SentimentSatisfiedAlt,
-);
+export const IconFilledSentimentSatisfiedAlt = toNewsKitIcon(SentimentSatisfiedAlt);

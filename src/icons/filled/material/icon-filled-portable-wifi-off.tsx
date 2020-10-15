@@ -3,7 +3,7 @@ import {PortableWifiOff} from '@emotion-icons/material/PortableWifiOff';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-PortableWifiOff.displayName = 'IconFilledPortableWifiOff';
+// "to-newskit-icon.tsx", if it gets overridden
+PortableWifiOff['displayName'] = "IconFilledPortableWifiOff";
 
 export const IconFilledPortableWifiOff = toNewsKitIcon(PortableWifiOff);

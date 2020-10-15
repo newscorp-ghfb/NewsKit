@@ -3,7 +3,7 @@ import {Rule} from '@emotion-icons/material/Rule';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Rule.displayName = 'IconFilledRule';
+// "to-newskit-icon.tsx", if it gets overridden
+Rule['displayName'] = "IconFilledRule";
 
 export const IconFilledRule = toNewsKitIcon(Rule);

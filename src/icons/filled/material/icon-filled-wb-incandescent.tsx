@@ -3,7 +3,7 @@ import {WbIncandescent} from '@emotion-icons/material/WbIncandescent';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-WbIncandescent.displayName = 'IconFilledWbIncandescent';
+// "to-newskit-icon.tsx", if it gets overridden
+WbIncandescent['displayName'] = "IconFilledWbIncandescent";
 
 export const IconFilledWbIncandescent = toNewsKitIcon(WbIncandescent);

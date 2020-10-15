@@ -3,7 +3,7 @@ import {FindInPage} from '@emotion-icons/material/FindInPage';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FindInPage.displayName = 'IconFilledFindInPage';
+// "to-newskit-icon.tsx", if it gets overridden
+FindInPage['displayName'] = "IconFilledFindInPage";
 
 export const IconFilledFindInPage = toNewsKitIcon(FindInPage);

@@ -3,7 +3,7 @@ import {LocalDrink} from '@emotion-icons/material/LocalDrink';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-LocalDrink.displayName = 'IconFilledLocalDrink';
+// "to-newskit-icon.tsx", if it gets overridden
+LocalDrink['displayName'] = "IconFilledLocalDrink";
 
 export const IconFilledLocalDrink = toNewsKitIcon(LocalDrink);

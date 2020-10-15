@@ -3,7 +3,7 @@ import {ConfirmationNumber} from '@emotion-icons/material/ConfirmationNumber';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ConfirmationNumber.displayName = 'IconFilledConfirmationNumber';
+// "to-newskit-icon.tsx", if it gets overridden
+ConfirmationNumber['displayName'] = "IconFilledConfirmationNumber";
 
 export const IconFilledConfirmationNumber = toNewsKitIcon(ConfirmationNumber);

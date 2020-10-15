@@ -3,7 +3,7 @@ import {Lock} from '@emotion-icons/material/Lock';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Lock.displayName = 'IconFilledLock';
+// "to-newskit-icon.tsx", if it gets overridden
+Lock['displayName'] = "IconFilledLock";
 
 export const IconFilledLock = toNewsKitIcon(Lock);

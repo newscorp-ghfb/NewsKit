@@ -3,7 +3,7 @@ import {Brush} from '@emotion-icons/material/Brush';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Brush.displayName = 'IconFilledBrush';
+// "to-newskit-icon.tsx", if it gets overridden
+Brush['displayName'] = "IconFilledBrush";
 
 export const IconFilledBrush = toNewsKitIcon(Brush);

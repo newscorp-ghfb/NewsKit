@@ -3,9 +3,7 @@ import {StayPrimaryLandscape} from '@emotion-icons/material/StayPrimaryLandscape
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-StayPrimaryLandscape.displayName = 'IconFilledStayPrimaryLandscape';
+// "to-newskit-icon.tsx", if it gets overridden
+StayPrimaryLandscape['displayName'] = "IconFilledStayPrimaryLandscape";
 
-export const IconFilledStayPrimaryLandscape = toNewsKitIcon(
-  StayPrimaryLandscape,
-);
+export const IconFilledStayPrimaryLandscape = toNewsKitIcon(StayPrimaryLandscape);

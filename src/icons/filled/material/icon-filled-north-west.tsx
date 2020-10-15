@@ -3,7 +3,7 @@ import {NorthWest} from '@emotion-icons/material/NorthWest';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-NorthWest.displayName = 'IconFilledNorthWest';
+// "to-newskit-icon.tsx", if it gets overridden
+NorthWest['displayName'] = "IconFilledNorthWest";
 
 export const IconFilledNorthWest = toNewsKitIcon(NorthWest);

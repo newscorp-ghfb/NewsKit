@@ -3,7 +3,7 @@ import {EventNote} from '@emotion-icons/material/EventNote';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-EventNote.displayName = 'IconFilledEventNote';
+// "to-newskit-icon.tsx", if it gets overridden
+EventNote['displayName'] = "IconFilledEventNote";
 
 export const IconFilledEventNote = toNewsKitIcon(EventNote);

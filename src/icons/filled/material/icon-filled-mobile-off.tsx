@@ -3,7 +3,7 @@ import {MobileOff} from '@emotion-icons/material/MobileOff';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-MobileOff.displayName = 'IconFilledMobileOff';
+// "to-newskit-icon.tsx", if it gets overridden
+MobileOff['displayName'] = "IconFilledMobileOff";
 
 export const IconFilledMobileOff = toNewsKitIcon(MobileOff);

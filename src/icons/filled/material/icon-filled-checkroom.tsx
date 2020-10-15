@@ -3,7 +3,7 @@ import {Checkroom} from '@emotion-icons/material/Checkroom';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Checkroom.displayName = 'IconFilledCheckroom';
+// "to-newskit-icon.tsx", if it gets overridden
+Checkroom['displayName'] = "IconFilledCheckroom";
 
 export const IconFilledCheckroom = toNewsKitIcon(Checkroom);

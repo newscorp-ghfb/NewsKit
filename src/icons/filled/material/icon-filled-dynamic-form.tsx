@@ -3,7 +3,7 @@ import {DynamicForm} from '@emotion-icons/material/DynamicForm';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-DynamicForm.displayName = 'IconFilledDynamicForm';
+// "to-newskit-icon.tsx", if it gets overridden
+DynamicForm['displayName'] = "IconFilledDynamicForm";
 
 export const IconFilledDynamicForm = toNewsKitIcon(DynamicForm);

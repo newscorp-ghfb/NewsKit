@@ -3,7 +3,7 @@ import {ArrowCircleDown} from '@emotion-icons/material/ArrowCircleDown';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ArrowCircleDown.displayName = 'IconFilledArrowCircleDown';
+// "to-newskit-icon.tsx", if it gets overridden
+ArrowCircleDown['displayName'] = "IconFilledArrowCircleDown";
 
 export const IconFilledArrowCircleDown = toNewsKitIcon(ArrowCircleDown);

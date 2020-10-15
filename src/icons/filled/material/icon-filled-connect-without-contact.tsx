@@ -3,9 +3,7 @@ import {ConnectWithoutContact} from '@emotion-icons/material/ConnectWithoutConta
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ConnectWithoutContact.displayName = 'IconFilledConnectWithoutContact';
+// "to-newskit-icon.tsx", if it gets overridden
+ConnectWithoutContact['displayName'] = "IconFilledConnectWithoutContact";
 
-export const IconFilledConnectWithoutContact = toNewsKitIcon(
-  ConnectWithoutContact,
-);
+export const IconFilledConnectWithoutContact = toNewsKitIcon(ConnectWithoutContact);

@@ -3,7 +3,7 @@ import {Language} from '@emotion-icons/material/Language';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Language.displayName = 'IconFilledLanguage';
+// "to-newskit-icon.tsx", if it gets overridden
+Language['displayName'] = "IconFilledLanguage";
 
 export const IconFilledLanguage = toNewsKitIcon(Language);

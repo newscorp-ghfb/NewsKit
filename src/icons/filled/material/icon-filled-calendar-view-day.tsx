@@ -3,7 +3,7 @@ import {CalendarViewDay} from '@emotion-icons/material/CalendarViewDay';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-CalendarViewDay.displayName = 'IconFilledCalendarViewDay';
+// "to-newskit-icon.tsx", if it gets overridden
+CalendarViewDay['displayName'] = "IconFilledCalendarViewDay";
 
 export const IconFilledCalendarViewDay = toNewsKitIcon(CalendarViewDay);

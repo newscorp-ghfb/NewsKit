@@ -3,9 +3,7 @@ import {SubdirectoryArrowRight} from '@emotion-icons/material/SubdirectoryArrowR
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SubdirectoryArrowRight.displayName = 'IconFilledSubdirectoryArrowRight';
+// "to-newskit-icon.tsx", if it gets overridden
+SubdirectoryArrowRight['displayName'] = "IconFilledSubdirectoryArrowRight";
 
-export const IconFilledSubdirectoryArrowRight = toNewsKitIcon(
-  SubdirectoryArrowRight,
-);
+export const IconFilledSubdirectoryArrowRight = toNewsKitIcon(SubdirectoryArrowRight);

@@ -3,7 +3,7 @@ import {ChevronLeft} from '@emotion-icons/material/ChevronLeft';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ChevronLeft.displayName = 'IconFilledChevronLeft';
+// "to-newskit-icon.tsx", if it gets overridden
+ChevronLeft['displayName'] = "IconFilledChevronLeft";
 
 export const IconFilledChevronLeft = toNewsKitIcon(ChevronLeft);

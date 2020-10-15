@@ -3,7 +3,7 @@ import {SimCard} from '@emotion-icons/material/SimCard';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SimCard.displayName = 'IconFilledSimCard';
+// "to-newskit-icon.tsx", if it gets overridden
+SimCard['displayName'] = "IconFilledSimCard";
 
 export const IconFilledSimCard = toNewsKitIcon(SimCard);

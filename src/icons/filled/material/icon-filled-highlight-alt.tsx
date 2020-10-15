@@ -3,7 +3,7 @@ import {HighlightAlt} from '@emotion-icons/material/HighlightAlt';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-HighlightAlt.displayName = 'IconFilledHighlightAlt';
+// "to-newskit-icon.tsx", if it gets overridden
+HighlightAlt['displayName'] = "IconFilledHighlightAlt";
 
 export const IconFilledHighlightAlt = toNewsKitIcon(HighlightAlt);

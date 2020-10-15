@@ -3,7 +3,7 @@ import {EmojiFoodBeverage} from '@emotion-icons/material/EmojiFoodBeverage';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-EmojiFoodBeverage.displayName = 'IconFilledEmojiFoodBeverage';
+// "to-newskit-icon.tsx", if it gets overridden
+EmojiFoodBeverage['displayName'] = "IconFilledEmojiFoodBeverage";
 
 export const IconFilledEmojiFoodBeverage = toNewsKitIcon(EmojiFoodBeverage);

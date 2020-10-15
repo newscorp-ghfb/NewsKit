@@ -3,7 +3,7 @@ import {PrivacyTip} from '@emotion-icons/material/PrivacyTip';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-PrivacyTip.displayName = 'IconFilledPrivacyTip';
+// "to-newskit-icon.tsx", if it gets overridden
+PrivacyTip['displayName'] = "IconFilledPrivacyTip";
 
 export const IconFilledPrivacyTip = toNewsKitIcon(PrivacyTip);

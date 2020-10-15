@@ -3,7 +3,7 @@ import {NoLuggage} from '@emotion-icons/material/NoLuggage';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-NoLuggage.displayName = 'IconFilledNoLuggage';
+// "to-newskit-icon.tsx", if it gets overridden
+NoLuggage['displayName'] = "IconFilledNoLuggage";
 
 export const IconFilledNoLuggage = toNewsKitIcon(NoLuggage);

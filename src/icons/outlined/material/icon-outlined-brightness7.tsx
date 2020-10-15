@@ -4,6 +4,6 @@ import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
 // "to-newskit-icon.tsx", if it gets overridden
-Brightness7.displayName = 'IconOutlinedBrightness7';
+Brightness7['displayName'] = "IconOutlinedBrightness7";
 
 export const IconOutlinedBrightness7 = toNewsKitIcon(Brightness7);

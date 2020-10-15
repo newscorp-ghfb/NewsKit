@@ -3,9 +3,7 @@ import {DesktopAccessDisabled} from '@emotion-icons/material/DesktopAccessDisabl
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-DesktopAccessDisabled.displayName = 'IconFilledDesktopAccessDisabled';
+// "to-newskit-icon.tsx", if it gets overridden
+DesktopAccessDisabled['displayName'] = "IconFilledDesktopAccessDisabled";
 
-export const IconFilledDesktopAccessDisabled = toNewsKitIcon(
-  DesktopAccessDisabled,
-);
+export const IconFilledDesktopAccessDisabled = toNewsKitIcon(DesktopAccessDisabled);

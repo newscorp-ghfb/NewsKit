@@ -3,10 +3,7 @@ import {SignalCellularConnectedNoInternet4Bar} from '@emotion-icons/material/Sig
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SignalCellularConnectedNoInternet4Bar.displayName =
-  'IconFilledSignalCellularConnectedNoInternet4Bar';
+// "to-newskit-icon.tsx", if it gets overridden
+SignalCellularConnectedNoInternet4Bar['displayName'] = "IconFilledSignalCellularConnectedNoInternet4Bar";
 
-export const IconFilledSignalCellularConnectedNoInternet4Bar = toNewsKitIcon(
-  SignalCellularConnectedNoInternet4Bar,
-);
+export const IconFilledSignalCellularConnectedNoInternet4Bar = toNewsKitIcon(SignalCellularConnectedNoInternet4Bar);

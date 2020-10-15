@@ -3,9 +3,7 @@ import {FormatIndentDecrease} from '@emotion-icons/material/FormatIndentDecrease
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FormatIndentDecrease.displayName = 'IconFilledFormatIndentDecrease';
+// "to-newskit-icon.tsx", if it gets overridden
+FormatIndentDecrease['displayName'] = "IconFilledFormatIndentDecrease";
 
-export const IconFilledFormatIndentDecrease = toNewsKitIcon(
-  FormatIndentDecrease,
-);
+export const IconFilledFormatIndentDecrease = toNewsKitIcon(FormatIndentDecrease);

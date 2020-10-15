@@ -3,7 +3,7 @@ import {Spa} from '@emotion-icons/material/Spa';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Spa.displayName = 'IconFilledSpa';
+// "to-newskit-icon.tsx", if it gets overridden
+Spa['displayName'] = "IconFilledSpa";
 
 export const IconFilledSpa = toNewsKitIcon(Spa);

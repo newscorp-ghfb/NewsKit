@@ -3,7 +3,7 @@ import {CreditCard} from '@emotion-icons/material/CreditCard';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-CreditCard.displayName = 'IconFilledCreditCard';
+// "to-newskit-icon.tsx", if it gets overridden
+CreditCard['displayName'] = "IconFilledCreditCard";
 
 export const IconFilledCreditCard = toNewsKitIcon(CreditCard);

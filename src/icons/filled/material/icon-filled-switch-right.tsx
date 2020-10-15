@@ -3,7 +3,7 @@ import {SwitchRight} from '@emotion-icons/material/SwitchRight';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SwitchRight.displayName = 'IconFilledSwitchRight';
+// "to-newskit-icon.tsx", if it gets overridden
+SwitchRight['displayName'] = "IconFilledSwitchRight";
 
 export const IconFilledSwitchRight = toNewsKitIcon(SwitchRight);

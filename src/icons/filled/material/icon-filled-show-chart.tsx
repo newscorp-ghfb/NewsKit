@@ -3,7 +3,7 @@ import {ShowChart} from '@emotion-icons/material/ShowChart';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ShowChart.displayName = 'IconFilledShowChart';
+// "to-newskit-icon.tsx", if it gets overridden
+ShowChart['displayName'] = "IconFilledShowChart";
 
 export const IconFilledShowChart = toNewsKitIcon(ShowChart);

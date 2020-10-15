@@ -3,7 +3,7 @@ import {NightsStay} from '@emotion-icons/material/NightsStay';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-NightsStay.displayName = 'IconFilledNightsStay';
+// "to-newskit-icon.tsx", if it gets overridden
+NightsStay['displayName'] = "IconFilledNightsStay";
 
 export const IconFilledNightsStay = toNewsKitIcon(NightsStay);

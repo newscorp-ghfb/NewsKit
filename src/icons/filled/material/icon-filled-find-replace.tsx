@@ -3,7 +3,7 @@ import {FindReplace} from '@emotion-icons/material/FindReplace';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FindReplace.displayName = 'IconFilledFindReplace';
+// "to-newskit-icon.tsx", if it gets overridden
+FindReplace['displayName'] = "IconFilledFindReplace";
 
 export const IconFilledFindReplace = toNewsKitIcon(FindReplace);

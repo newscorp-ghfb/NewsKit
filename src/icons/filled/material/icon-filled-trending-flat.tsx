@@ -3,7 +3,7 @@ import {TrendingFlat} from '@emotion-icons/material/TrendingFlat';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-TrendingFlat.displayName = 'IconFilledTrendingFlat';
+// "to-newskit-icon.tsx", if it gets overridden
+TrendingFlat['displayName'] = "IconFilledTrendingFlat";
 
 export const IconFilledTrendingFlat = toNewsKitIcon(TrendingFlat);

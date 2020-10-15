@@ -3,7 +3,7 @@ import {StayCurrentPortrait} from '@emotion-icons/material/StayCurrentPortrait';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-StayCurrentPortrait.displayName = 'IconFilledStayCurrentPortrait';
+// "to-newskit-icon.tsx", if it gets overridden
+StayCurrentPortrait['displayName'] = "IconFilledStayCurrentPortrait";
 
 export const IconFilledStayCurrentPortrait = toNewsKitIcon(StayCurrentPortrait);

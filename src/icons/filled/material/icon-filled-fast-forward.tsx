@@ -3,7 +3,7 @@ import {FastForward} from '@emotion-icons/material/FastForward';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FastForward.displayName = 'IconFilledFastForward';
+// "to-newskit-icon.tsx", if it gets overridden
+FastForward['displayName'] = "IconFilledFastForward";
 
 export const IconFilledFastForward = toNewsKitIcon(FastForward);

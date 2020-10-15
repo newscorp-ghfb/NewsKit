@@ -3,7 +3,7 @@ import {EmojiTransportation} from '@emotion-icons/material/EmojiTransportation';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-EmojiTransportation.displayName = 'IconFilledEmojiTransportation';
+// "to-newskit-icon.tsx", if it gets overridden
+EmojiTransportation['displayName'] = "IconFilledEmojiTransportation";
 
 export const IconFilledEmojiTransportation = toNewsKitIcon(EmojiTransportation);

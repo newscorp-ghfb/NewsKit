@@ -3,7 +3,7 @@ import {SwapCalls} from '@emotion-icons/material/SwapCalls';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SwapCalls.displayName = 'IconFilledSwapCalls';
+// "to-newskit-icon.tsx", if it gets overridden
+SwapCalls['displayName'] = "IconFilledSwapCalls";
 
 export const IconFilledSwapCalls = toNewsKitIcon(SwapCalls);

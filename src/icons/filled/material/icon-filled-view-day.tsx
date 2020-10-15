@@ -3,7 +3,7 @@ import {ViewDay} from '@emotion-icons/material/ViewDay';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ViewDay.displayName = 'IconFilledViewDay';
+// "to-newskit-icon.tsx", if it gets overridden
+ViewDay['displayName'] = "IconFilledViewDay";
 
 export const IconFilledViewDay = toNewsKitIcon(ViewDay);

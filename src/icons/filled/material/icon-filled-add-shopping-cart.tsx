@@ -3,7 +3,7 @@ import {AddShoppingCart} from '@emotion-icons/material/AddShoppingCart';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-AddShoppingCart.displayName = 'IconFilledAddShoppingCart';
+// "to-newskit-icon.tsx", if it gets overridden
+AddShoppingCart['displayName'] = "IconFilledAddShoppingCart";
 
 export const IconFilledAddShoppingCart = toNewsKitIcon(AddShoppingCart);

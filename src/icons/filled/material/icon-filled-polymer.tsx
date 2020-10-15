@@ -3,7 +3,7 @@ import {Polymer} from '@emotion-icons/material/Polymer';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Polymer.displayName = 'IconFilledPolymer';
+// "to-newskit-icon.tsx", if it gets overridden
+Polymer['displayName'] = "IconFilledPolymer";
 
 export const IconFilledPolymer = toNewsKitIcon(Polymer);

@@ -3,7 +3,7 @@ import {LeakRemove} from '@emotion-icons/material/LeakRemove';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-LeakRemove.displayName = 'IconFilledLeakRemove';
+// "to-newskit-icon.tsx", if it gets overridden
+LeakRemove['displayName'] = "IconFilledLeakRemove";
 
 export const IconFilledLeakRemove = toNewsKitIcon(LeakRemove);

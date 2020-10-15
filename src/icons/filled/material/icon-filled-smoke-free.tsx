@@ -3,7 +3,7 @@ import {SmokeFree} from '@emotion-icons/material/SmokeFree';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SmokeFree.displayName = 'IconFilledSmokeFree';
+// "to-newskit-icon.tsx", if it gets overridden
+SmokeFree['displayName'] = "IconFilledSmokeFree";
 
 export const IconFilledSmokeFree = toNewsKitIcon(SmokeFree);

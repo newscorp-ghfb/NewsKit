@@ -3,9 +3,7 @@ import {FormatListNumberedRtl} from '@emotion-icons/material/FormatListNumberedR
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FormatListNumberedRtl.displayName = 'IconFilledFormatListNumberedRtl';
+// "to-newskit-icon.tsx", if it gets overridden
+FormatListNumberedRtl['displayName'] = "IconFilledFormatListNumberedRtl";
 
-export const IconFilledFormatListNumberedRtl = toNewsKitIcon(
-  FormatListNumberedRtl,
-);
+export const IconFilledFormatListNumberedRtl = toNewsKitIcon(FormatListNumberedRtl);

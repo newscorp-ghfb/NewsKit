@@ -3,7 +3,7 @@ import {Opacity} from '@emotion-icons/material/Opacity';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Opacity.displayName = 'IconFilledOpacity';
+// "to-newskit-icon.tsx", if it gets overridden
+Opacity['displayName'] = "IconFilledOpacity";
 
 export const IconFilledOpacity = toNewsKitIcon(Opacity);

@@ -3,7 +3,7 @@ import {SquareFoot} from '@emotion-icons/material/SquareFoot';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SquareFoot.displayName = 'IconFilledSquareFoot';
+// "to-newskit-icon.tsx", if it gets overridden
+SquareFoot['displayName'] = "IconFilledSquareFoot";
 
 export const IconFilledSquareFoot = toNewsKitIcon(SquareFoot);

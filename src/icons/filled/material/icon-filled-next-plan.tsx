@@ -3,7 +3,7 @@ import {NextPlan} from '@emotion-icons/material/NextPlan';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-NextPlan.displayName = 'IconFilledNextPlan';
+// "to-newskit-icon.tsx", if it gets overridden
+NextPlan['displayName'] = "IconFilledNextPlan";
 
 export const IconFilledNextPlan = toNewsKitIcon(NextPlan);

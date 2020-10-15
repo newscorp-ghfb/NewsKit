@@ -3,7 +3,7 @@ import {Gesture} from '@emotion-icons/material/Gesture';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Gesture.displayName = 'IconFilledGesture';
+// "to-newskit-icon.tsx", if it gets overridden
+Gesture['displayName'] = "IconFilledGesture";
 
 export const IconFilledGesture = toNewsKitIcon(Gesture);

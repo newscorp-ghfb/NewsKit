@@ -3,7 +3,7 @@ import {SurroundSound} from '@emotion-icons/material/SurroundSound';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SurroundSound.displayName = 'IconFilledSurroundSound';
+// "to-newskit-icon.tsx", if it gets overridden
+SurroundSound['displayName'] = "IconFilledSurroundSound";
 
 export const IconFilledSurroundSound = toNewsKitIcon(SurroundSound);

@@ -3,7 +3,7 @@ import {Voicemail} from '@emotion-icons/material/Voicemail';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Voicemail.displayName = 'IconFilledVoicemail';
+// "to-newskit-icon.tsx", if it gets overridden
+Voicemail['displayName'] = "IconFilledVoicemail";
 
 export const IconFilledVoicemail = toNewsKitIcon(Voicemail);

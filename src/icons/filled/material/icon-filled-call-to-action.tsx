@@ -3,7 +3,7 @@ import {CallToAction} from '@emotion-icons/material/CallToAction';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-CallToAction.displayName = 'IconFilledCallToAction';
+// "to-newskit-icon.tsx", if it gets overridden
+CallToAction['displayName'] = "IconFilledCallToAction";
 
 export const IconFilledCallToAction = toNewsKitIcon(CallToAction);

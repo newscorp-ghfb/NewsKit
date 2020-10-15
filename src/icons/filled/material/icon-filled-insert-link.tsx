@@ -3,7 +3,7 @@ import {InsertLink} from '@emotion-icons/material/InsertLink';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-InsertLink.displayName = 'IconFilledInsertLink';
+// "to-newskit-icon.tsx", if it gets overridden
+InsertLink['displayName'] = "IconFilledInsertLink";
 
 export const IconFilledInsertLink = toNewsKitIcon(InsertLink);

@@ -3,7 +3,7 @@ import {CloudCircle} from '@emotion-icons/material/CloudCircle';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-CloudCircle.displayName = 'IconFilledCloudCircle';
+// "to-newskit-icon.tsx", if it gets overridden
+CloudCircle['displayName'] = "IconFilledCloudCircle";
 
 export const IconFilledCloudCircle = toNewsKitIcon(CloudCircle);

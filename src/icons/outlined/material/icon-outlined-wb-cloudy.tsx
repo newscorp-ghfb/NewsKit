@@ -4,6 +4,6 @@ import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
 // "to-newskit-icon.tsx", if it gets overridden
-WbCloudy.displayName = 'IconOutlinedWbCloudy';
+WbCloudy['displayName'] = "IconOutlinedWbCloudy";
 
 export const IconOutlinedWbCloudy = toNewsKitIcon(WbCloudy);

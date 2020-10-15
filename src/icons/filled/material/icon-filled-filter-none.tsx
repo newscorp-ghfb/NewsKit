@@ -3,7 +3,7 @@ import {FilterNone} from '@emotion-icons/material/FilterNone';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FilterNone.displayName = 'IconFilledFilterNone';
+// "to-newskit-icon.tsx", if it gets overridden
+FilterNone['displayName'] = "IconFilledFilterNone";
 
 export const IconFilledFilterNone = toNewsKitIcon(FilterNone);

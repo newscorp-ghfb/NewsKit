@@ -3,7 +3,7 @@ import {VideogameAsset} from '@emotion-icons/material/VideogameAsset';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-VideogameAsset.displayName = 'IconFilledVideogameAsset';
+// "to-newskit-icon.tsx", if it gets overridden
+VideogameAsset['displayName'] = "IconFilledVideogameAsset";
 
 export const IconFilledVideogameAsset = toNewsKitIcon(VideogameAsset);

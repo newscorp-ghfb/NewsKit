@@ -3,7 +3,7 @@ import {TouchApp} from '@emotion-icons/material/TouchApp';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-TouchApp.displayName = 'IconFilledTouchApp';
+// "to-newskit-icon.tsx", if it gets overridden
+TouchApp['displayName'] = "IconFilledTouchApp";
 
 export const IconFilledTouchApp = toNewsKitIcon(TouchApp);

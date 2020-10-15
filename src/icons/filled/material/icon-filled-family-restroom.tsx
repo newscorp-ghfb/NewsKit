@@ -3,7 +3,7 @@ import {FamilyRestroom} from '@emotion-icons/material/FamilyRestroom';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FamilyRestroom.displayName = 'IconFilledFamilyRestroom';
+// "to-newskit-icon.tsx", if it gets overridden
+FamilyRestroom['displayName'] = "IconFilledFamilyRestroom";
 
 export const IconFilledFamilyRestroom = toNewsKitIcon(FamilyRestroom);

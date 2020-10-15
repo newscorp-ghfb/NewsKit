@@ -3,7 +3,7 @@ import {BrightnessMedium} from '@emotion-icons/material/BrightnessMedium';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-BrightnessMedium.displayName = 'IconFilledBrightnessMedium';
+// "to-newskit-icon.tsx", if it gets overridden
+BrightnessMedium['displayName'] = "IconFilledBrightnessMedium";
 
 export const IconFilledBrightnessMedium = toNewsKitIcon(BrightnessMedium);

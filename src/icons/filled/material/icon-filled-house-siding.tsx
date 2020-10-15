@@ -3,7 +3,7 @@ import {HouseSiding} from '@emotion-icons/material/HouseSiding';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-HouseSiding.displayName = 'IconFilledHouseSiding';
+// "to-newskit-icon.tsx", if it gets overridden
+HouseSiding['displayName'] = "IconFilledHouseSiding";
 
 export const IconFilledHouseSiding = toNewsKitIcon(HouseSiding);

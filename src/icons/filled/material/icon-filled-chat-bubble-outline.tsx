@@ -3,7 +3,7 @@ import {ChatBubbleOutline} from '@emotion-icons/material/ChatBubbleOutline';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ChatBubbleOutline.displayName = 'IconFilledChatBubbleOutline';
+// "to-newskit-icon.tsx", if it gets overridden
+ChatBubbleOutline['displayName'] = "IconFilledChatBubbleOutline";
 
 export const IconFilledChatBubbleOutline = toNewsKitIcon(ChatBubbleOutline);

@@ -3,7 +3,7 @@ import {LocationOn} from '@emotion-icons/material/LocationOn';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-LocationOn.displayName = 'IconFilledLocationOn';
+// "to-newskit-icon.tsx", if it gets overridden
+LocationOn['displayName'] = "IconFilledLocationOn";
 
 export const IconFilledLocationOn = toNewsKitIcon(LocationOn);

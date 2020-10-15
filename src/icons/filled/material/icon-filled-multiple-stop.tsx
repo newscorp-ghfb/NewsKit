@@ -3,7 +3,7 @@ import {MultipleStop} from '@emotion-icons/material/MultipleStop';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-MultipleStop.displayName = 'IconFilledMultipleStop';
+// "to-newskit-icon.tsx", if it gets overridden
+MultipleStop['displayName'] = "IconFilledMultipleStop";
 
 export const IconFilledMultipleStop = toNewsKitIcon(MultipleStop);

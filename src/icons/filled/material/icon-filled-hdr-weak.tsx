@@ -3,7 +3,7 @@ import {HdrWeak} from '@emotion-icons/material/HdrWeak';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-HdrWeak.displayName = 'IconFilledHdrWeak';
+// "to-newskit-icon.tsx", if it gets overridden
+HdrWeak['displayName'] = "IconFilledHdrWeak";
 
 export const IconFilledHdrWeak = toNewsKitIcon(HdrWeak);

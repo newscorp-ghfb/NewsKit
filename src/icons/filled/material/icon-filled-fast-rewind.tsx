@@ -3,7 +3,7 @@ import {FastRewind} from '@emotion-icons/material/FastRewind';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FastRewind.displayName = 'IconFilledFastRewind';
+// "to-newskit-icon.tsx", if it gets overridden
+FastRewind['displayName'] = "IconFilledFastRewind";
 
 export const IconFilledFastRewind = toNewsKitIcon(FastRewind);

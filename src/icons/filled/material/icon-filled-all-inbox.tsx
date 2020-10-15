@@ -3,7 +3,7 @@ import {AllInbox} from '@emotion-icons/material/AllInbox';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-AllInbox.displayName = 'IconFilledAllInbox';
+// "to-newskit-icon.tsx", if it gets overridden
+AllInbox['displayName'] = "IconFilledAllInbox";
 
 export const IconFilledAllInbox = toNewsKitIcon(AllInbox);

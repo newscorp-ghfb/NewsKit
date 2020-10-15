@@ -3,7 +3,7 @@ import {QueryBuilder} from '@emotion-icons/material/QueryBuilder';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-QueryBuilder.displayName = 'IconFilledQueryBuilder';
+// "to-newskit-icon.tsx", if it gets overridden
+QueryBuilder['displayName'] = "IconFilledQueryBuilder";
 
 export const IconFilledQueryBuilder = toNewsKitIcon(QueryBuilder);

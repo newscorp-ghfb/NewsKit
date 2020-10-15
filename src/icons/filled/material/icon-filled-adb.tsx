@@ -3,7 +3,7 @@ import {Adb} from '@emotion-icons/material/Adb';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Adb.displayName = 'IconFilledAdb';
+// "to-newskit-icon.tsx", if it gets overridden
+Adb['displayName'] = "IconFilledAdb";
 
 export const IconFilledAdb = toNewsKitIcon(Adb);

@@ -3,7 +3,7 @@ import {LocalPlay} from '@emotion-icons/material/LocalPlay';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-LocalPlay.displayName = 'IconFilledLocalPlay';
+// "to-newskit-icon.tsx", if it gets overridden
+LocalPlay['displayName'] = "IconFilledLocalPlay";
 
 export const IconFilledLocalPlay = toNewsKitIcon(LocalPlay);

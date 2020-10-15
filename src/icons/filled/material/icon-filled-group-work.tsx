@@ -3,7 +3,7 @@ import {GroupWork} from '@emotion-icons/material/GroupWork';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-GroupWork.displayName = 'IconFilledGroupWork';
+// "to-newskit-icon.tsx", if it gets overridden
+GroupWork['displayName'] = "IconFilledGroupWork";
 
 export const IconFilledGroupWork = toNewsKitIcon(GroupWork);

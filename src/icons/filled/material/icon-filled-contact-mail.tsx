@@ -3,7 +3,7 @@ import {ContactMail} from '@emotion-icons/material/ContactMail';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ContactMail.displayName = 'IconFilledContactMail';
+// "to-newskit-icon.tsx", if it gets overridden
+ContactMail['displayName'] = "IconFilledContactMail";
 
 export const IconFilledContactMail = toNewsKitIcon(ContactMail);

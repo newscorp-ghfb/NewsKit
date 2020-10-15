@@ -3,7 +3,7 @@ import {MergeType} from '@emotion-icons/material/MergeType';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-MergeType.displayName = 'IconFilledMergeType';
+// "to-newskit-icon.tsx", if it gets overridden
+MergeType['displayName'] = "IconFilledMergeType";
 
 export const IconFilledMergeType = toNewsKitIcon(MergeType);

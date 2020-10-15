@@ -3,7 +3,7 @@ import {LocalFireDepartment} from '@emotion-icons/material/LocalFireDepartment';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-LocalFireDepartment.displayName = 'IconFilledLocalFireDepartment';
+// "to-newskit-icon.tsx", if it gets overridden
+LocalFireDepartment['displayName'] = "IconFilledLocalFireDepartment";
 
 export const IconFilledLocalFireDepartment = toNewsKitIcon(LocalFireDepartment);

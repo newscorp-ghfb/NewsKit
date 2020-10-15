@@ -3,7 +3,7 @@ import {DeveloperMode} from '@emotion-icons/material/DeveloperMode';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-DeveloperMode.displayName = 'IconFilledDeveloperMode';
+// "to-newskit-icon.tsx", if it gets overridden
+DeveloperMode['displayName'] = "IconFilledDeveloperMode";
 
 export const IconFilledDeveloperMode = toNewsKitIcon(DeveloperMode);

@@ -3,7 +3,7 @@ import {PostAdd} from '@emotion-icons/material/PostAdd';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-PostAdd.displayName = 'IconFilledPostAdd';
+// "to-newskit-icon.tsx", if it gets overridden
+PostAdd['displayName'] = "IconFilledPostAdd";
 
 export const IconFilledPostAdd = toNewsKitIcon(PostAdd);

@@ -3,7 +3,7 @@ import {BrokenImage} from '@emotion-icons/material/BrokenImage';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-BrokenImage.displayName = 'IconFilledBrokenImage';
+// "to-newskit-icon.tsx", if it gets overridden
+BrokenImage['displayName'] = "IconFilledBrokenImage";
 
 export const IconFilledBrokenImage = toNewsKitIcon(BrokenImage);

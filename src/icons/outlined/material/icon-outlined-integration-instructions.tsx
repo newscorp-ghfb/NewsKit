@@ -4,8 +4,6 @@ import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
 // "to-newskit-icon.tsx", if it gets overridden
-IntegrationInstructions.displayName = 'IconOutlinedIntegrationInstructions';
+IntegrationInstructions['displayName'] = "IconOutlinedIntegrationInstructions";
 
-export const IconOutlinedIntegrationInstructions = toNewsKitIcon(
-  IntegrationInstructions,
-);
+export const IconOutlinedIntegrationInstructions = toNewsKitIcon(IntegrationInstructions);

@@ -3,7 +3,7 @@ import {QrCodeScanner} from '@emotion-icons/material/QrCodeScanner';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-QrCodeScanner.displayName = 'IconFilledQrCodeScanner';
+// "to-newskit-icon.tsx", if it gets overridden
+QrCodeScanner['displayName'] = "IconFilledQrCodeScanner";
 
 export const IconFilledQrCodeScanner = toNewsKitIcon(QrCodeScanner);

@@ -3,7 +3,7 @@ import {WhereToVote} from '@emotion-icons/material/WhereToVote';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-WhereToVote.displayName = 'IconFilledWhereToVote';
+// "to-newskit-icon.tsx", if it gets overridden
+WhereToVote['displayName'] = "IconFilledWhereToVote";
 
 export const IconFilledWhereToVote = toNewsKitIcon(WhereToVote);

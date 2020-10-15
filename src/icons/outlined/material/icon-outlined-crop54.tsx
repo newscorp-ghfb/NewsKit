@@ -4,6 +4,6 @@ import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
 // "to-newskit-icon.tsx", if it gets overridden
-Crop54.displayName = 'IconOutlinedCrop54';
+Crop54['displayName'] = "IconOutlinedCrop54";
 
 export const IconOutlinedCrop54 = toNewsKitIcon(Crop54);

@@ -3,7 +3,7 @@ import {CloudOff} from '@emotion-icons/material/CloudOff';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-CloudOff.displayName = 'IconFilledCloudOff';
+// "to-newskit-icon.tsx", if it gets overridden
+CloudOff['displayName'] = "IconFilledCloudOff";
 
 export const IconFilledCloudOff = toNewsKitIcon(CloudOff);

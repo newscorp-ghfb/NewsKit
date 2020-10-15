@@ -3,7 +3,7 @@ import {RoomPreferences} from '@emotion-icons/material/RoomPreferences';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-RoomPreferences.displayName = 'IconFilledRoomPreferences';
+// "to-newskit-icon.tsx", if it gets overridden
+RoomPreferences['displayName'] = "IconFilledRoomPreferences";
 
 export const IconFilledRoomPreferences = toNewsKitIcon(RoomPreferences);

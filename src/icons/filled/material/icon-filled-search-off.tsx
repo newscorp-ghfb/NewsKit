@@ -3,7 +3,7 @@ import {SearchOff} from '@emotion-icons/material/SearchOff';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SearchOff.displayName = 'IconFilledSearchOff';
+// "to-newskit-icon.tsx", if it gets overridden
+SearchOff['displayName'] = "IconFilledSearchOff";
 
 export const IconFilledSearchOff = toNewsKitIcon(SearchOff);

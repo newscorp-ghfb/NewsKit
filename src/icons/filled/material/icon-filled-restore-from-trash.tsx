@@ -3,7 +3,7 @@ import {RestoreFromTrash} from '@emotion-icons/material/RestoreFromTrash';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-RestoreFromTrash.displayName = 'IconFilledRestoreFromTrash';
+// "to-newskit-icon.tsx", if it gets overridden
+RestoreFromTrash['displayName'] = "IconFilledRestoreFromTrash";
 
 export const IconFilledRestoreFromTrash = toNewsKitIcon(RestoreFromTrash);

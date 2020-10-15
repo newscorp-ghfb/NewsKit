@@ -3,7 +3,7 @@ import {TextRotationNone} from '@emotion-icons/material/TextRotationNone';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-TextRotationNone.displayName = 'IconFilledTextRotationNone';
+// "to-newskit-icon.tsx", if it gets overridden
+TextRotationNone['displayName'] = "IconFilledTextRotationNone";
 
 export const IconFilledTextRotationNone = toNewsKitIcon(TextRotationNone);

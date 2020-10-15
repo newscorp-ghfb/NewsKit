@@ -3,7 +3,7 @@ import {UnfoldLess} from '@emotion-icons/material/UnfoldLess';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-UnfoldLess.displayName = 'IconFilledUnfoldLess';
+// "to-newskit-icon.tsx", if it gets overridden
+UnfoldLess['displayName'] = "IconFilledUnfoldLess";
 
 export const IconFilledUnfoldLess = toNewsKitIcon(UnfoldLess);

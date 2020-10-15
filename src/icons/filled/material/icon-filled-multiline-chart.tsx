@@ -3,7 +3,7 @@ import {MultilineChart} from '@emotion-icons/material/MultilineChart';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-MultilineChart.displayName = 'IconFilledMultilineChart';
+// "to-newskit-icon.tsx", if it gets overridden
+MultilineChart['displayName'] = "IconFilledMultilineChart";
 
 export const IconFilledMultilineChart = toNewsKitIcon(MultilineChart);

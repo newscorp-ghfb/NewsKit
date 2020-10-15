@@ -3,7 +3,7 @@ import {Satellite} from '@emotion-icons/material/Satellite';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Satellite.displayName = 'IconFilledSatellite';
+// "to-newskit-icon.tsx", if it gets overridden
+Satellite['displayName'] = "IconFilledSatellite";
 
 export const IconFilledSatellite = toNewsKitIcon(Satellite);

@@ -3,7 +3,7 @@ import {Poll} from '@emotion-icons/material/Poll';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Poll.displayName = 'IconFilledPoll';
+// "to-newskit-icon.tsx", if it gets overridden
+Poll['displayName'] = "IconFilledPoll";
 
 export const IconFilledPoll = toNewsKitIcon(Poll);

@@ -3,7 +3,7 @@ import {FolderShared} from '@emotion-icons/material/FolderShared';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FolderShared.displayName = 'IconFilledFolderShared';
+// "to-newskit-icon.tsx", if it gets overridden
+FolderShared['displayName'] = "IconFilledFolderShared";
 
 export const IconFilledFolderShared = toNewsKitIcon(FolderShared);

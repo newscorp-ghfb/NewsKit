@@ -3,7 +3,7 @@ import {RadioButtonChecked} from '@emotion-icons/material/RadioButtonChecked';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-RadioButtonChecked.displayName = 'IconFilledRadioButtonChecked';
+// "to-newskit-icon.tsx", if it gets overridden
+RadioButtonChecked['displayName'] = "IconFilledRadioButtonChecked";
 
 export const IconFilledRadioButtonChecked = toNewsKitIcon(RadioButtonChecked);

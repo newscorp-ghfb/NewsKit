@@ -3,7 +3,7 @@ import {FlashAuto} from '@emotion-icons/material/FlashAuto';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FlashAuto.displayName = 'IconFilledFlashAuto';
+// "to-newskit-icon.tsx", if it gets overridden
+FlashAuto['displayName'] = "IconFilledFlashAuto";
 
 export const IconFilledFlashAuto = toNewsKitIcon(FlashAuto);

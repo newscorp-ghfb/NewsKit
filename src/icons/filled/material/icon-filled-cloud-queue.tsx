@@ -3,7 +3,7 @@ import {CloudQueue} from '@emotion-icons/material/CloudQueue';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-CloudQueue.displayName = 'IconFilledCloudQueue';
+// "to-newskit-icon.tsx", if it gets overridden
+CloudQueue['displayName'] = "IconFilledCloudQueue";
 
 export const IconFilledCloudQueue = toNewsKitIcon(CloudQueue);

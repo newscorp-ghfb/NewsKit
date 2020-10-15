@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import {useFormContext} from 'react-hook-form';
+import {useFormContext} from 'react-hook-form/dist/index.ie11';
 import {TextInputProps, TextInputSize} from './types';
 import {getSSRId} from '../utils/get-ssr-id';
 import {FormValidationContext} from '../form/context'
@@ -32,7 +32,7 @@ export const TextInput: React.FC<TextInputProps> = ({
   spellCheck = false,
   ...props
 }) => {
- 
+
   const theme = useTheme();
   const validationMode = useContext(FormValidationContext);
   const formContext = useFormContext();
@@ -45,7 +45,7 @@ export const TextInput: React.FC<TextInputProps> = ({
     formContext.errors[name].message;
 
   const [hadError, setHadError] = useState(errorText)
-  
+
   useEffect(() => {
     if (!hadError && errorText) {
       setHadError(true)
@@ -53,16 +53,16 @@ export const TextInput: React.FC<TextInputProps> = ({
   }, [errorText, hadError]);
 
   const id = getSSRId();
-  const assistiveTextId = errorText && `${id}-error-text` || assistiveText && `${id}-assistive-text`  
-  
+  const assistiveTextId = errorText && `${id}-error-text` || assistiveText && `${id}-assistive-text`
+
   const handleOnBlur = ({target: { value }}: {target: {value: string}}) => {
-    if (validationMode === 'onBlur' && 
-      !hadError && 
+    if (validationMode === 'onBlur' &&
+      !hadError &&
       (errorText || value)
       ) {
       setHadError(true)
     }
-  } 
+  }
 
   const spaceInsetRight = getToken(
     {theme, overrides},

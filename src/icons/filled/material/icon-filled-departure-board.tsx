@@ -3,7 +3,7 @@ import {DepartureBoard} from '@emotion-icons/material/DepartureBoard';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-DepartureBoard.displayName = 'IconFilledDepartureBoard';
+// "to-newskit-icon.tsx", if it gets overridden
+DepartureBoard['displayName'] = "IconFilledDepartureBoard";
 
 export const IconFilledDepartureBoard = toNewsKitIcon(DepartureBoard);

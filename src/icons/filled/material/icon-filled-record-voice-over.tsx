@@ -3,7 +3,7 @@ import {RecordVoiceOver} from '@emotion-icons/material/RecordVoiceOver';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-RecordVoiceOver.displayName = 'IconFilledRecordVoiceOver';
+// "to-newskit-icon.tsx", if it gets overridden
+RecordVoiceOver['displayName'] = "IconFilledRecordVoiceOver";
 
 export const IconFilledRecordVoiceOver = toNewsKitIcon(RecordVoiceOver);

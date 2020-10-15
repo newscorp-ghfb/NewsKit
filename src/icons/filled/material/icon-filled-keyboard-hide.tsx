@@ -3,7 +3,7 @@ import {KeyboardHide} from '@emotion-icons/material/KeyboardHide';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-KeyboardHide.displayName = 'IconFilledKeyboardHide';
+// "to-newskit-icon.tsx", if it gets overridden
+KeyboardHide['displayName'] = "IconFilledKeyboardHide";
 
 export const IconFilledKeyboardHide = toNewsKitIcon(KeyboardHide);

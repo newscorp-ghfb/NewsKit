@@ -3,9 +3,7 @@ import {RadioButtonUnchecked} from '@emotion-icons/material/RadioButtonUnchecked
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-RadioButtonUnchecked.displayName = 'IconFilledRadioButtonUnchecked';
+// "to-newskit-icon.tsx", if it gets overridden
+RadioButtonUnchecked['displayName'] = "IconFilledRadioButtonUnchecked";
 
-export const IconFilledRadioButtonUnchecked = toNewsKitIcon(
-  RadioButtonUnchecked,
-);
+export const IconFilledRadioButtonUnchecked = toNewsKitIcon(RadioButtonUnchecked);

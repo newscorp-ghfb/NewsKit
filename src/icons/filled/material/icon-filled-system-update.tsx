@@ -3,7 +3,7 @@ import {SystemUpdate} from '@emotion-icons/material/SystemUpdate';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SystemUpdate.displayName = 'IconFilledSystemUpdate';
+// "to-newskit-icon.tsx", if it gets overridden
+SystemUpdate['displayName'] = "IconFilledSystemUpdate";
 
 export const IconFilledSystemUpdate = toNewsKitIcon(SystemUpdate);

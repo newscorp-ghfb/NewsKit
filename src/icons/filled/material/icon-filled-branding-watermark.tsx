@@ -3,7 +3,7 @@ import {BrandingWatermark} from '@emotion-icons/material/BrandingWatermark';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-BrandingWatermark.displayName = 'IconFilledBrandingWatermark';
+// "to-newskit-icon.tsx", if it gets overridden
+BrandingWatermark['displayName'] = "IconFilledBrandingWatermark";
 
 export const IconFilledBrandingWatermark = toNewsKitIcon(BrandingWatermark);

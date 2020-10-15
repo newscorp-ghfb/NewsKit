@@ -3,7 +3,7 @@ import {CallMissed} from '@emotion-icons/material/CallMissed';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-CallMissed.displayName = 'IconFilledCallMissed';
+// "to-newskit-icon.tsx", if it gets overridden
+CallMissed['displayName'] = "IconFilledCallMissed";
 
 export const IconFilledCallMissed = toNewsKitIcon(CallMissed);

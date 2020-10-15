@@ -3,7 +3,7 @@ import {Colorize} from '@emotion-icons/material/Colorize';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Colorize.displayName = 'IconFilledColorize';
+// "to-newskit-icon.tsx", if it gets overridden
+Colorize['displayName'] = "IconFilledColorize";
 
 export const IconFilledColorize = toNewsKitIcon(Colorize);

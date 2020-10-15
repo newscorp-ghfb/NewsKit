@@ -3,7 +3,7 @@ import {AllInclusive} from '@emotion-icons/material/AllInclusive';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-AllInclusive.displayName = 'IconFilledAllInclusive';
+// "to-newskit-icon.tsx", if it gets overridden
+AllInclusive['displayName'] = "IconFilledAllInclusive";
 
 export const IconFilledAllInclusive = toNewsKitIcon(AllInclusive);

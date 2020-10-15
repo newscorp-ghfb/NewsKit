@@ -3,7 +3,7 @@ import {LocalLaundryService} from '@emotion-icons/material/LocalLaundryService';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-LocalLaundryService.displayName = 'IconFilledLocalLaundryService';
+// "to-newskit-icon.tsx", if it gets overridden
+LocalLaundryService['displayName'] = "IconFilledLocalLaundryService";
 
 export const IconFilledLocalLaundryService = toNewsKitIcon(LocalLaundryService);

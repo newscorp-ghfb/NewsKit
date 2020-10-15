@@ -3,7 +3,7 @@ import {Pageview} from '@emotion-icons/material/Pageview';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Pageview.displayName = 'IconFilledPageview';
+// "to-newskit-icon.tsx", if it gets overridden
+Pageview['displayName'] = "IconFilledPageview";
 
 export const IconFilledPageview = toNewsKitIcon(Pageview);

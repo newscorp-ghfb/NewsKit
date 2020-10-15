@@ -3,7 +3,7 @@ import {LineWeight} from '@emotion-icons/material/LineWeight';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-LineWeight.displayName = 'IconFilledLineWeight';
+// "to-newskit-icon.tsx", if it gets overridden
+LineWeight['displayName'] = "IconFilledLineWeight";
 
 export const IconFilledLineWeight = toNewsKitIcon(LineWeight);

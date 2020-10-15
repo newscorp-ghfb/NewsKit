@@ -3,7 +3,7 @@ import {HorizontalSplit} from '@emotion-icons/material/HorizontalSplit';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-HorizontalSplit.displayName = 'IconFilledHorizontalSplit';
+// "to-newskit-icon.tsx", if it gets overridden
+HorizontalSplit['displayName'] = "IconFilledHorizontalSplit";
 
 export const IconFilledHorizontalSplit = toNewsKitIcon(HorizontalSplit);

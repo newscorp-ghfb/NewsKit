@@ -3,7 +3,7 @@ import {OutlinedFlag} from '@emotion-icons/material/OutlinedFlag';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-OutlinedFlag.displayName = 'IconFilledOutlinedFlag';
+// "to-newskit-icon.tsx", if it gets overridden
+OutlinedFlag['displayName'] = "IconFilledOutlinedFlag";
 
 export const IconFilledOutlinedFlag = toNewsKitIcon(OutlinedFlag);

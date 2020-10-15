@@ -3,7 +3,7 @@ import {MoreTime} from '@emotion-icons/material/MoreTime';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-MoreTime.displayName = 'IconFilledMoreTime';
+// "to-newskit-icon.tsx", if it gets overridden
+MoreTime['displayName'] = "IconFilledMoreTime";
 
 export const IconFilledMoreTime = toNewsKitIcon(MoreTime);

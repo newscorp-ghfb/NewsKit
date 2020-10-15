@@ -3,7 +3,7 @@ import {DirectionsRailway} from '@emotion-icons/material/DirectionsRailway';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-DirectionsRailway.displayName = 'IconFilledDirectionsRailway';
+// "to-newskit-icon.tsx", if it gets overridden
+DirectionsRailway['displayName'] = "IconFilledDirectionsRailway";
 
 export const IconFilledDirectionsRailway = toNewsKitIcon(DirectionsRailway);

@@ -3,7 +3,7 @@ import {BorderAll} from '@emotion-icons/material/BorderAll';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-BorderAll.displayName = 'IconFilledBorderAll';
+// "to-newskit-icon.tsx", if it gets overridden
+BorderAll['displayName'] = "IconFilledBorderAll";
 
 export const IconFilledBorderAll = toNewsKitIcon(BorderAll);

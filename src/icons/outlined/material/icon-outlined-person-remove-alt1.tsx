@@ -4,6 +4,6 @@ import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
 // "to-newskit-icon.tsx", if it gets overridden
-PersonRemoveAlt1.displayName = 'IconOutlinedPersonRemoveAlt1';
+PersonRemoveAlt1['displayName'] = "IconOutlinedPersonRemoveAlt1";
 
 export const IconOutlinedPersonRemoveAlt1 = toNewsKitIcon(PersonRemoveAlt1);

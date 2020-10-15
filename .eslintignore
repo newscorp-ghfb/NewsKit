@@ -7,3 +7,5 @@ kubernetes
 public
 site/static
 component-generator/generators/app/templates/
+src/icons/filled/material
+src/icons/outlined/material

@@ -3,7 +3,7 @@ import {HotTub} from '@emotion-icons/material/HotTub';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-HotTub.displayName = 'IconFilledHotTub';
+// "to-newskit-icon.tsx", if it gets overridden
+HotTub['displayName'] = "IconFilledHotTub";
 
 export const IconFilledHotTub = toNewsKitIcon(HotTub);

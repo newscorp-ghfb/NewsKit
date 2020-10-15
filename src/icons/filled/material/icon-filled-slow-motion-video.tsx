@@ -3,7 +3,7 @@ import {SlowMotionVideo} from '@emotion-icons/material/SlowMotionVideo';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SlowMotionVideo.displayName = 'IconFilledSlowMotionVideo';
+// "to-newskit-icon.tsx", if it gets overridden
+SlowMotionVideo['displayName'] = "IconFilledSlowMotionVideo";
 
 export const IconFilledSlowMotionVideo = toNewsKitIcon(SlowMotionVideo);

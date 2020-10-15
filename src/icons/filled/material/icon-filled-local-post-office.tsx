@@ -3,7 +3,7 @@ import {LocalPostOffice} from '@emotion-icons/material/LocalPostOffice';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-LocalPostOffice.displayName = 'IconFilledLocalPostOffice';
+// "to-newskit-icon.tsx", if it gets overridden
+LocalPostOffice['displayName'] = "IconFilledLocalPostOffice";
 
 export const IconFilledLocalPostOffice = toNewsKitIcon(LocalPostOffice);

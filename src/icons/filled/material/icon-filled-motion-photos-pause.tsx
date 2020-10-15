@@ -3,7 +3,7 @@ import {MotionPhotosPause} from '@emotion-icons/material/MotionPhotosPause';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-MotionPhotosPause.displayName = 'IconFilledMotionPhotosPause';
+// "to-newskit-icon.tsx", if it gets overridden
+MotionPhotosPause['displayName'] = "IconFilledMotionPhotosPause";
 
 export const IconFilledMotionPhotosPause = toNewsKitIcon(MotionPhotosPause);

@@ -3,7 +3,7 @@ import {DomainDisabled} from '@emotion-icons/material/DomainDisabled';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-DomainDisabled.displayName = 'IconFilledDomainDisabled';
+// "to-newskit-icon.tsx", if it gets overridden
+DomainDisabled['displayName'] = "IconFilledDomainDisabled";
 
 export const IconFilledDomainDisabled = toNewsKitIcon(DomainDisabled);

@@ -3,7 +3,7 @@ import {BatchPrediction} from '@emotion-icons/material/BatchPrediction';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-BatchPrediction.displayName = 'IconFilledBatchPrediction';
+// "to-newskit-icon.tsx", if it gets overridden
+BatchPrediction['displayName'] = "IconFilledBatchPrediction";
 
 export const IconFilledBatchPrediction = toNewsKitIcon(BatchPrediction);

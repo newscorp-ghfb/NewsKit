@@ -3,7 +3,7 @@ import {FormatStrikethrough} from '@emotion-icons/material/FormatStrikethrough';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FormatStrikethrough.displayName = 'IconFilledFormatStrikethrough';
+// "to-newskit-icon.tsx", if it gets overridden
+FormatStrikethrough['displayName'] = "IconFilledFormatStrikethrough";
 
 export const IconFilledFormatStrikethrough = toNewsKitIcon(FormatStrikethrough);

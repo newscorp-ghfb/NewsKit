@@ -3,7 +3,7 @@ import {RemoveFromQueue} from '@emotion-icons/material/RemoveFromQueue';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-RemoveFromQueue.displayName = 'IconFilledRemoveFromQueue';
+// "to-newskit-icon.tsx", if it gets overridden
+RemoveFromQueue['displayName'] = "IconFilledRemoveFromQueue";
 
 export const IconFilledRemoveFromQueue = toNewsKitIcon(RemoveFromQueue);

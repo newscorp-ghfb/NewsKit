@@ -3,7 +3,7 @@ import {ChromeReaderMode} from '@emotion-icons/material/ChromeReaderMode';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ChromeReaderMode.displayName = 'IconFilledChromeReaderMode';
+// "to-newskit-icon.tsx", if it gets overridden
+ChromeReaderMode['displayName'] = "IconFilledChromeReaderMode";
 
 export const IconFilledChromeReaderMode = toNewsKitIcon(ChromeReaderMode);

@@ -3,7 +3,7 @@ import {Grass} from '@emotion-icons/material/Grass';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Grass.displayName = 'IconFilledGrass';
+// "to-newskit-icon.tsx", if it gets overridden
+Grass['displayName'] = "IconFilledGrass";
 
 export const IconFilledGrass = toNewsKitIcon(Grass);

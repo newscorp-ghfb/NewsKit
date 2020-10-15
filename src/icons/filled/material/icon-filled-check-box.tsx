@@ -3,7 +3,7 @@ import {CheckBox} from '@emotion-icons/material/CheckBox';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-CheckBox.displayName = 'IconFilledCheckBox';
+// "to-newskit-icon.tsx", if it gets overridden
+CheckBox['displayName'] = "IconFilledCheckBox";
 
 export const IconFilledCheckBox = toNewsKitIcon(CheckBox);

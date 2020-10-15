@@ -3,7 +3,7 @@ import {LinkedCamera} from '@emotion-icons/material/LinkedCamera';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-LinkedCamera.displayName = 'IconFilledLinkedCamera';
+// "to-newskit-icon.tsx", if it gets overridden
+LinkedCamera['displayName'] = "IconFilledLinkedCamera";
 
 export const IconFilledLinkedCamera = toNewsKitIcon(LinkedCamera);

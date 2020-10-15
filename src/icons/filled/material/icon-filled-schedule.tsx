@@ -3,7 +3,7 @@ import {Schedule} from '@emotion-icons/material/Schedule';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Schedule.displayName = 'IconFilledSchedule';
+// "to-newskit-icon.tsx", if it gets overridden
+Schedule['displayName'] = "IconFilledSchedule";
 
 export const IconFilledSchedule = toNewsKitIcon(Schedule);

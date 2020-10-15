@@ -3,7 +3,7 @@ import {NoSim} from '@emotion-icons/material/NoSim';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-NoSim.displayName = 'IconFilledNoSim';
+// "to-newskit-icon.tsx", if it gets overridden
+NoSim['displayName'] = "IconFilledNoSim";
 
 export const IconFilledNoSim = toNewsKitIcon(NoSim);

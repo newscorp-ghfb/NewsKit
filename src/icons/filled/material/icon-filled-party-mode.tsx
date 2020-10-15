@@ -3,7 +3,7 @@ import {PartyMode} from '@emotion-icons/material/PartyMode';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-PartyMode.displayName = 'IconFilledPartyMode';
+// "to-newskit-icon.tsx", if it gets overridden
+PartyMode['displayName'] = "IconFilledPartyMode";
 
 export const IconFilledPartyMode = toNewsKitIcon(PartyMode);

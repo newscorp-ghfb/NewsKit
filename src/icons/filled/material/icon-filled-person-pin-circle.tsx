@@ -3,7 +3,7 @@ import {PersonPinCircle} from '@emotion-icons/material/PersonPinCircle';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-PersonPinCircle.displayName = 'IconFilledPersonPinCircle';
+// "to-newskit-icon.tsx", if it gets overridden
+PersonPinCircle['displayName'] = "IconFilledPersonPinCircle";
 
 export const IconFilledPersonPinCircle = toNewsKitIcon(PersonPinCircle);

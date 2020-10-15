@@ -3,7 +3,7 @@ import {FormatItalic} from '@emotion-icons/material/FormatItalic';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FormatItalic.displayName = 'IconFilledFormatItalic';
+// "to-newskit-icon.tsx", if it gets overridden
+FormatItalic['displayName'] = "IconFilledFormatItalic";
 
 export const IconFilledFormatItalic = toNewsKitIcon(FormatItalic);

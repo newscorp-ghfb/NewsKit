@@ -3,7 +3,7 @@ import {Fireplace} from '@emotion-icons/material/Fireplace';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Fireplace.displayName = 'IconFilledFireplace';
+// "to-newskit-icon.tsx", if it gets overridden
+Fireplace['displayName'] = "IconFilledFireplace";
 
 export const IconFilledFireplace = toNewsKitIcon(Fireplace);

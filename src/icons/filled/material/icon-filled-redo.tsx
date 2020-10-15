@@ -3,7 +3,7 @@ import {Redo} from '@emotion-icons/material/Redo';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Redo.displayName = 'IconFilledRedo';
+// "to-newskit-icon.tsx", if it gets overridden
+Redo['displayName'] = "IconFilledRedo";
 
 export const IconFilledRedo = toNewsKitIcon(Redo);

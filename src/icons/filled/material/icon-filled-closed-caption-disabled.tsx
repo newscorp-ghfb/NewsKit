@@ -3,9 +3,7 @@ import {ClosedCaptionDisabled} from '@emotion-icons/material/ClosedCaptionDisabl
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ClosedCaptionDisabled.displayName = 'IconFilledClosedCaptionDisabled';
+// "to-newskit-icon.tsx", if it gets overridden
+ClosedCaptionDisabled['displayName'] = "IconFilledClosedCaptionDisabled";
 
-export const IconFilledClosedCaptionDisabled = toNewsKitIcon(
-  ClosedCaptionDisabled,
-);
+export const IconFilledClosedCaptionDisabled = toNewsKitIcon(ClosedCaptionDisabled);

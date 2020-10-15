@@ -3,7 +3,7 @@ import {LocalPrintshop} from '@emotion-icons/material/LocalPrintshop';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-LocalPrintshop.displayName = 'IconFilledLocalPrintshop';
+// "to-newskit-icon.tsx", if it gets overridden
+LocalPrintshop['displayName'] = "IconFilledLocalPrintshop";
 
 export const IconFilledLocalPrintshop = toNewsKitIcon(LocalPrintshop);

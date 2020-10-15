@@ -3,9 +3,7 @@ import {SupervisedUserCircle} from '@emotion-icons/material/SupervisedUserCircle
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SupervisedUserCircle.displayName = 'IconFilledSupervisedUserCircle';
+// "to-newskit-icon.tsx", if it gets overridden
+SupervisedUserCircle['displayName'] = "IconFilledSupervisedUserCircle";
 
-export const IconFilledSupervisedUserCircle = toNewsKitIcon(
-  SupervisedUserCircle,
-);
+export const IconFilledSupervisedUserCircle = toNewsKitIcon(SupervisedUserCircle);

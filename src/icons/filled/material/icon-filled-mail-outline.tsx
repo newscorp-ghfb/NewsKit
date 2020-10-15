@@ -3,7 +3,7 @@ import {MailOutline} from '@emotion-icons/material/MailOutline';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-MailOutline.displayName = 'IconFilledMailOutline';
+// "to-newskit-icon.tsx", if it gets overridden
+MailOutline['displayName'] = "IconFilledMailOutline";
 
 export const IconFilledMailOutline = toNewsKitIcon(MailOutline);

@@ -3,7 +3,7 @@ import {CastConnected} from '@emotion-icons/material/CastConnected';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-CastConnected.displayName = 'IconFilledCastConnected';
+// "to-newskit-icon.tsx", if it gets overridden
+CastConnected['displayName'] = "IconFilledCastConnected";
 
 export const IconFilledCastConnected = toNewsKitIcon(CastConnected);

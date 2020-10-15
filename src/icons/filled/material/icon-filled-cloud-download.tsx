@@ -3,7 +3,7 @@ import {CloudDownload} from '@emotion-icons/material/CloudDownload';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-CloudDownload.displayName = 'IconFilledCloudDownload';
+// "to-newskit-icon.tsx", if it gets overridden
+CloudDownload['displayName'] = "IconFilledCloudDownload";
 
 export const IconFilledCloudDownload = toNewsKitIcon(CloudDownload);

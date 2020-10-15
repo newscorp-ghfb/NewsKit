@@ -3,7 +3,7 @@ import {Dashboard} from '@emotion-icons/material/Dashboard';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Dashboard.displayName = 'IconFilledDashboard';
+// "to-newskit-icon.tsx", if it gets overridden
+Dashboard['displayName'] = "IconFilledDashboard";
 
 export const IconFilledDashboard = toNewsKitIcon(Dashboard);

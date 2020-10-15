@@ -3,7 +3,7 @@ import {Maximize} from '@emotion-icons/material/Maximize';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Maximize.displayName = 'IconFilledMaximize';
+// "to-newskit-icon.tsx", if it gets overridden
+Maximize['displayName'] = "IconFilledMaximize";
 
 export const IconFilledMaximize = toNewsKitIcon(Maximize);

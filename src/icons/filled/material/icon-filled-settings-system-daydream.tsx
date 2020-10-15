@@ -3,9 +3,7 @@ import {SettingsSystemDaydream} from '@emotion-icons/material/SettingsSystemDayd
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SettingsSystemDaydream.displayName = 'IconFilledSettingsSystemDaydream';
+// "to-newskit-icon.tsx", if it gets overridden
+SettingsSystemDaydream['displayName'] = "IconFilledSettingsSystemDaydream";
 
-export const IconFilledSettingsSystemDaydream = toNewsKitIcon(
-  SettingsSystemDaydream,
-);
+export const IconFilledSettingsSystemDaydream = toNewsKitIcon(SettingsSystemDaydream);

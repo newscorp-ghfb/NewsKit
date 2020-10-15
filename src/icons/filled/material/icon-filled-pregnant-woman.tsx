@@ -3,7 +3,7 @@ import {PregnantWoman} from '@emotion-icons/material/PregnantWoman';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-PregnantWoman.displayName = 'IconFilledPregnantWoman';
+// "to-newskit-icon.tsx", if it gets overridden
+PregnantWoman['displayName'] = "IconFilledPregnantWoman";
 
 export const IconFilledPregnantWoman = toNewsKitIcon(PregnantWoman);

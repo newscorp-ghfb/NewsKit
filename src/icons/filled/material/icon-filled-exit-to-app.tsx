@@ -3,7 +3,7 @@ import {ExitToApp} from '@emotion-icons/material/ExitToApp';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ExitToApp.displayName = 'IconFilledExitToApp';
+// "to-newskit-icon.tsx", if it gets overridden
+ExitToApp['displayName'] = "IconFilledExitToApp";
 
 export const IconFilledExitToApp = toNewsKitIcon(ExitToApp);

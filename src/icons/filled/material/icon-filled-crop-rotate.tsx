@@ -3,7 +3,7 @@ import {CropRotate} from '@emotion-icons/material/CropRotate';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-CropRotate.displayName = 'IconFilledCropRotate';
+// "to-newskit-icon.tsx", if it gets overridden
+CropRotate['displayName'] = "IconFilledCropRotate";
 
 export const IconFilledCropRotate = toNewsKitIcon(CropRotate);

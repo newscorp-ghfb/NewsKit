@@ -4,8 +4,6 @@ import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
 // "to-newskit-icon.tsx", if it gets overridden
-SettingsApplications.displayName = 'IconOutlinedSettingsApplications';
+SettingsApplications['displayName'] = "IconOutlinedSettingsApplications";
 
-export const IconOutlinedSettingsApplications = toNewsKitIcon(
-  SettingsApplications,
-);
+export const IconOutlinedSettingsApplications = toNewsKitIcon(SettingsApplications);

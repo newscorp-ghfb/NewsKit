@@ -3,7 +3,7 @@ import {CropLandscape} from '@emotion-icons/material/CropLandscape';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-CropLandscape.displayName = 'IconFilledCropLandscape';
+// "to-newskit-icon.tsx", if it gets overridden
+CropLandscape['displayName'] = "IconFilledCropLandscape";
 
 export const IconFilledCropLandscape = toNewsKitIcon(CropLandscape);

@@ -3,7 +3,7 @@ import {ElectricCar} from '@emotion-icons/material/ElectricCar';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ElectricCar.displayName = 'IconFilledElectricCar';
+// "to-newskit-icon.tsx", if it gets overridden
+ElectricCar['displayName'] = "IconFilledElectricCar";
 
 export const IconFilledElectricCar = toNewsKitIcon(ElectricCar);

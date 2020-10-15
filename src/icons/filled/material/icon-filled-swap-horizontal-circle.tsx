@@ -3,9 +3,7 @@ import {SwapHorizontalCircle} from '@emotion-icons/material/SwapHorizontalCircle
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SwapHorizontalCircle.displayName = 'IconFilledSwapHorizontalCircle';
+// "to-newskit-icon.tsx", if it gets overridden
+SwapHorizontalCircle['displayName'] = "IconFilledSwapHorizontalCircle";
 
-export const IconFilledSwapHorizontalCircle = toNewsKitIcon(
-  SwapHorizontalCircle,
-);
+export const IconFilledSwapHorizontalCircle = toNewsKitIcon(SwapHorizontalCircle);

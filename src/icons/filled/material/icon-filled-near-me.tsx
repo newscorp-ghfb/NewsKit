@@ -3,7 +3,7 @@ import {NearMe} from '@emotion-icons/material/NearMe';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-NearMe.displayName = 'IconFilledNearMe';
+// "to-newskit-icon.tsx", if it gets overridden
+NearMe['displayName'] = "IconFilledNearMe";
 
 export const IconFilledNearMe = toNewsKitIcon(NearMe);

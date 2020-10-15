@@ -3,7 +3,7 @@ import {MoreVert} from '@emotion-icons/material/MoreVert';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-MoreVert.displayName = 'IconFilledMoreVert';
+// "to-newskit-icon.tsx", if it gets overridden
+MoreVert['displayName'] = "IconFilledMoreVert";
 
 export const IconFilledMoreVert = toNewsKitIcon(MoreVert);

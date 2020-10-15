@@ -196,8 +196,9 @@ commands:
             if git rev-parse --abbrev-ref HEAD | egrep -q '^(feat|fix)'; then
               base_commit=`git merge-base origin/develop HEAD`
               if ! git diff --name-only $base_commit | egrep -qv '^(eks|terraform)/'; then
-                echo "Skipping as only infrastructure has been changed"
-                circleci-agent step halt
+                echo "I think I should skip as only infrastructure has been changed - but I am an untrustworthy scoundrel and have had my powers stripped of me!"
+                # echo "Skipping as only infrastructure has been changed"
+                # circleci-agent step halt
               fi
             fi
 

@@ -3,7 +3,7 @@ import {HdrOn} from '@emotion-icons/material/HdrOn';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-HdrOn.displayName = 'IconFilledHdrOn';
+// "to-newskit-icon.tsx", if it gets overridden
+HdrOn['displayName'] = "IconFilledHdrOn";
 
 export const IconFilledHdrOn = toNewsKitIcon(HdrOn);

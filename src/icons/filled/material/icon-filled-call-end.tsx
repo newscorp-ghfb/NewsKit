@@ -3,7 +3,7 @@ import {CallEnd} from '@emotion-icons/material/CallEnd';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-CallEnd.displayName = 'IconFilledCallEnd';
+// "to-newskit-icon.tsx", if it gets overridden
+CallEnd['displayName'] = "IconFilledCallEnd";
 
 export const IconFilledCallEnd = toNewsKitIcon(CallEnd);

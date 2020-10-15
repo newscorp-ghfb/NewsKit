@@ -3,7 +3,7 @@ import {NoFlash} from '@emotion-icons/material/NoFlash';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-NoFlash.displayName = 'IconFilledNoFlash';
+// "to-newskit-icon.tsx", if it gets overridden
+NoFlash['displayName'] = "IconFilledNoFlash";
 
 export const IconFilledNoFlash = toNewsKitIcon(NoFlash);

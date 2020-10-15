@@ -3,7 +3,7 @@ import {BluetoothDisabled} from '@emotion-icons/material/BluetoothDisabled';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-BluetoothDisabled.displayName = 'IconFilledBluetoothDisabled';
+// "to-newskit-icon.tsx", if it gets overridden
+BluetoothDisabled['displayName'] = "IconFilledBluetoothDisabled";
 
 export const IconFilledBluetoothDisabled = toNewsKitIcon(BluetoothDisabled);

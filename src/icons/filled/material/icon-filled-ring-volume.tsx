@@ -3,7 +3,7 @@ import {RingVolume} from '@emotion-icons/material/RingVolume';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-RingVolume.displayName = 'IconFilledRingVolume';
+// "to-newskit-icon.tsx", if it gets overridden
+RingVolume['displayName'] = "IconFilledRingVolume";
 
 export const IconFilledRingVolume = toNewsKitIcon(RingVolume);

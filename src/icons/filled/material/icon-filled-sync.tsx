@@ -3,7 +3,7 @@ import {Sync} from '@emotion-icons/material/Sync';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Sync.displayName = 'IconFilledSync';
+// "to-newskit-icon.tsx", if it gets overridden
+Sync['displayName'] = "IconFilledSync";
 
 export const IconFilledSync = toNewsKitIcon(Sync);

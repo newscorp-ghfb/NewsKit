@@ -3,7 +3,7 @@ import {Reorder} from '@emotion-icons/material/Reorder';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Reorder.displayName = 'IconFilledReorder';
+// "to-newskit-icon.tsx", if it gets overridden
+Reorder['displayName'] = "IconFilledReorder";
 
 export const IconFilledReorder = toNewsKitIcon(Reorder);

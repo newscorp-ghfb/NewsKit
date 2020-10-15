@@ -3,7 +3,7 @@ import {NightShelter} from '@emotion-icons/material/NightShelter';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-NightShelter.displayName = 'IconFilledNightShelter';
+// "to-newskit-icon.tsx", if it gets overridden
+NightShelter['displayName'] = "IconFilledNightShelter";
 
 export const IconFilledNightShelter = toNewsKitIcon(NightShelter);

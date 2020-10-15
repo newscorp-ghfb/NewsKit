@@ -3,7 +3,7 @@ import {PermMedia} from '@emotion-icons/material/PermMedia';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-PermMedia.displayName = 'IconFilledPermMedia';
+// "to-newskit-icon.tsx", if it gets overridden
+PermMedia['displayName'] = "IconFilledPermMedia";
 
 export const IconFilledPermMedia = toNewsKitIcon(PermMedia);

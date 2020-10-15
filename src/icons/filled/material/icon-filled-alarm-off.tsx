@@ -3,7 +3,7 @@ import {AlarmOff} from '@emotion-icons/material/AlarmOff';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-AlarmOff.displayName = 'IconFilledAlarmOff';
+// "to-newskit-icon.tsx", if it gets overridden
+AlarmOff['displayName'] = "IconFilledAlarmOff";
 
 export const IconFilledAlarmOff = toNewsKitIcon(AlarmOff);

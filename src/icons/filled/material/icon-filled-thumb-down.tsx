@@ -3,7 +3,7 @@ import {ThumbDown} from '@emotion-icons/material/ThumbDown';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ThumbDown.displayName = 'IconFilledThumbDown';
+// "to-newskit-icon.tsx", if it gets overridden
+ThumbDown['displayName'] = "IconFilledThumbDown";
 
 export const IconFilledThumbDown = toNewsKitIcon(ThumbDown);

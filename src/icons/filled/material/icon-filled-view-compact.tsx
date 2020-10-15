@@ -3,7 +3,7 @@ import {ViewCompact} from '@emotion-icons/material/ViewCompact';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ViewCompact.displayName = 'IconFilledViewCompact';
+// "to-newskit-icon.tsx", if it gets overridden
+ViewCompact['displayName'] = "IconFilledViewCompact";
 
 export const IconFilledViewCompact = toNewsKitIcon(ViewCompact);

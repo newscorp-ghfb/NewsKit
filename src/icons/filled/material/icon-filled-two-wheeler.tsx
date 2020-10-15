@@ -3,7 +3,7 @@ import {TwoWheeler} from '@emotion-icons/material/TwoWheeler';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-TwoWheeler.displayName = 'IconFilledTwoWheeler';
+// "to-newskit-icon.tsx", if it gets overridden
+TwoWheeler['displayName'] = "IconFilledTwoWheeler";
 
 export const IconFilledTwoWheeler = toNewsKitIcon(TwoWheeler);

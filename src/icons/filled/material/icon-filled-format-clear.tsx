@@ -3,7 +3,7 @@ import {FormatClear} from '@emotion-icons/material/FormatClear';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FormatClear.displayName = 'IconFilledFormatClear';
+// "to-newskit-icon.tsx", if it gets overridden
+FormatClear['displayName'] = "IconFilledFormatClear";
 
 export const IconFilledFormatClear = toNewsKitIcon(FormatClear);

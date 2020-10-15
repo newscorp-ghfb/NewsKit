@@ -3,7 +3,7 @@ import {AirlineSeatFlat} from '@emotion-icons/material/AirlineSeatFlat';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-AirlineSeatFlat.displayName = 'IconFilledAirlineSeatFlat';
+// "to-newskit-icon.tsx", if it gets overridden
+AirlineSeatFlat['displayName'] = "IconFilledAirlineSeatFlat";
 
 export const IconFilledAirlineSeatFlat = toNewsKitIcon(AirlineSeatFlat);

@@ -3,7 +3,7 @@ import {ToggleOff} from '@emotion-icons/material/ToggleOff';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ToggleOff.displayName = 'IconFilledToggleOff';
+// "to-newskit-icon.tsx", if it gets overridden
+ToggleOff['displayName'] = "IconFilledToggleOff";
 
 export const IconFilledToggleOff = toNewsKitIcon(ToggleOff);

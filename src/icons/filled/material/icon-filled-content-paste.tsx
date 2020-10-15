@@ -3,7 +3,7 @@ import {ContentPaste} from '@emotion-icons/material/ContentPaste';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ContentPaste.displayName = 'IconFilledContentPaste';
+// "to-newskit-icon.tsx", if it gets overridden
+ContentPaste['displayName'] = "IconFilledContentPaste";
 
 export const IconFilledContentPaste = toNewsKitIcon(ContentPaste);

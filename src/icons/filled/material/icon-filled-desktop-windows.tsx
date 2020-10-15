@@ -3,7 +3,7 @@ import {DesktopWindows} from '@emotion-icons/material/DesktopWindows';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-DesktopWindows.displayName = 'IconFilledDesktopWindows';
+// "to-newskit-icon.tsx", if it gets overridden
+DesktopWindows['displayName'] = "IconFilledDesktopWindows";
 
 export const IconFilledDesktopWindows = toNewsKitIcon(DesktopWindows);

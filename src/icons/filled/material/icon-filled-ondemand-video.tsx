@@ -3,7 +3,7 @@ import {OndemandVideo} from '@emotion-icons/material/OndemandVideo';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-OndemandVideo.displayName = 'IconFilledOndemandVideo';
+// "to-newskit-icon.tsx", if it gets overridden
+OndemandVideo['displayName'] = "IconFilledOndemandVideo";
 
 export const IconFilledOndemandVideo = toNewsKitIcon(OndemandVideo);

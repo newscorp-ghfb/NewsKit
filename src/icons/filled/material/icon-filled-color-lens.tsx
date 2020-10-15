@@ -3,7 +3,7 @@ import {ColorLens} from '@emotion-icons/material/ColorLens';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ColorLens.displayName = 'IconFilledColorLens';
+// "to-newskit-icon.tsx", if it gets overridden
+ColorLens['displayName'] = "IconFilledColorLens";
 
 export const IconFilledColorLens = toNewsKitIcon(ColorLens);

@@ -3,7 +3,7 @@ import {ArtTrack} from '@emotion-icons/material/ArtTrack';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ArtTrack.displayName = 'IconFilledArtTrack';
+// "to-newskit-icon.tsx", if it gets overridden
+ArtTrack['displayName'] = "IconFilledArtTrack";
 
 export const IconFilledArtTrack = toNewsKitIcon(ArtTrack);

@@ -3,7 +3,7 @@ import {LocalLibrary} from '@emotion-icons/material/LocalLibrary';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-LocalLibrary.displayName = 'IconFilledLocalLibrary';
+// "to-newskit-icon.tsx", if it gets overridden
+LocalLibrary['displayName'] = "IconFilledLocalLibrary";
 
 export const IconFilledLocalLibrary = toNewsKitIcon(LocalLibrary);

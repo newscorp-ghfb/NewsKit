@@ -3,7 +3,7 @@ import {AddCircleOutline} from '@emotion-icons/material/AddCircleOutline';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-AddCircleOutline.displayName = 'IconFilledAddCircleOutline';
+// "to-newskit-icon.tsx", if it gets overridden
+AddCircleOutline['displayName'] = "IconFilledAddCircleOutline";
 
 export const IconFilledAddCircleOutline = toNewsKitIcon(AddCircleOutline);

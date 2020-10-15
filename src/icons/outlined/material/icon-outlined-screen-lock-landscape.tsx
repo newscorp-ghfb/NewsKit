@@ -4,8 +4,6 @@ import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
 // "to-newskit-icon.tsx", if it gets overridden
-ScreenLockLandscape.displayName = 'IconOutlinedScreenLockLandscape';
+ScreenLockLandscape['displayName'] = "IconOutlinedScreenLockLandscape";
 
-export const IconOutlinedScreenLockLandscape = toNewsKitIcon(
-  ScreenLockLandscape,
-);
+export const IconOutlinedScreenLockLandscape = toNewsKitIcon(ScreenLockLandscape);

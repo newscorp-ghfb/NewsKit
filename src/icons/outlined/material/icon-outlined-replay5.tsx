@@ -4,6 +4,6 @@ import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
 // "to-newskit-icon.tsx", if it gets overridden
-Replay5.displayName = 'IconOutlinedReplay5';
+Replay5['displayName'] = "IconOutlinedReplay5";
 
 export const IconOutlinedReplay5 = toNewsKitIcon(Replay5);

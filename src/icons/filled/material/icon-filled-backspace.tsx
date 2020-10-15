@@ -3,7 +3,7 @@ import {Backspace} from '@emotion-icons/material/Backspace';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Backspace.displayName = 'IconFilledBackspace';
+// "to-newskit-icon.tsx", if it gets overridden
+Backspace['displayName'] = "IconFilledBackspace";
 
 export const IconFilledBackspace = toNewsKitIcon(Backspace);

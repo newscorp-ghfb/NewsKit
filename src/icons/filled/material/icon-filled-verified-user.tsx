@@ -3,7 +3,7 @@ import {VerifiedUser} from '@emotion-icons/material/VerifiedUser';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-VerifiedUser.displayName = 'IconFilledVerifiedUser';
+// "to-newskit-icon.tsx", if it gets overridden
+VerifiedUser['displayName'] = "IconFilledVerifiedUser";
 
 export const IconFilledVerifiedUser = toNewsKitIcon(VerifiedUser);

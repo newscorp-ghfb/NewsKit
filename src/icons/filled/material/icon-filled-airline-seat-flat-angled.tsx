@@ -3,9 +3,7 @@ import {AirlineSeatFlatAngled} from '@emotion-icons/material/AirlineSeatFlatAngl
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-AirlineSeatFlatAngled.displayName = 'IconFilledAirlineSeatFlatAngled';
+// "to-newskit-icon.tsx", if it gets overridden
+AirlineSeatFlatAngled['displayName'] = "IconFilledAirlineSeatFlatAngled";
 
-export const IconFilledAirlineSeatFlatAngled = toNewsKitIcon(
-  AirlineSeatFlatAngled,
-);
+export const IconFilledAirlineSeatFlatAngled = toNewsKitIcon(AirlineSeatFlatAngled);

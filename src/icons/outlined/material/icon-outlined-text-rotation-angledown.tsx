@@ -4,8 +4,6 @@ import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
 // "to-newskit-icon.tsx", if it gets overridden
-TextRotationAngledown.displayName = 'IconOutlinedTextRotationAngledown';
+TextRotationAngledown['displayName'] = "IconOutlinedTextRotationAngledown";
 
-export const IconOutlinedTextRotationAngledown = toNewsKitIcon(
-  TextRotationAngledown,
-);
+export const IconOutlinedTextRotationAngledown = toNewsKitIcon(TextRotationAngledown);

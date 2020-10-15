@@ -3,7 +3,7 @@ import {SdCard} from '@emotion-icons/material/SdCard';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SdCard.displayName = 'IconFilledSdCard';
+// "to-newskit-icon.tsx", if it gets overridden
+SdCard['displayName'] = "IconFilledSdCard";
 
 export const IconFilledSdCard = toNewsKitIcon(SdCard);

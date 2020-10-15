@@ -4,8 +4,6 @@ import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
 // "to-newskit-icon.tsx", if it gets overridden
-PhotoSizeSelectLarge.displayName = 'IconOutlinedPhotoSizeSelectLarge';
+PhotoSizeSelectLarge['displayName'] = "IconOutlinedPhotoSizeSelectLarge";
 
-export const IconOutlinedPhotoSizeSelectLarge = toNewsKitIcon(
-  PhotoSizeSelectLarge,
-);
+export const IconOutlinedPhotoSizeSelectLarge = toNewsKitIcon(PhotoSizeSelectLarge);

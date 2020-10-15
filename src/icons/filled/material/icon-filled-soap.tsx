@@ -3,7 +3,7 @@ import {Soap} from '@emotion-icons/material/Soap';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Soap.displayName = 'IconFilledSoap';
+// "to-newskit-icon.tsx", if it gets overridden
+Soap['displayName'] = "IconFilledSoap";
 
 export const IconFilledSoap = toNewsKitIcon(Soap);

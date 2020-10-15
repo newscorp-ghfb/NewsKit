@@ -3,7 +3,7 @@ import {BluetoothSearching} from '@emotion-icons/material/BluetoothSearching';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-BluetoothSearching.displayName = 'IconFilledBluetoothSearching';
+// "to-newskit-icon.tsx", if it gets overridden
+BluetoothSearching['displayName'] = "IconFilledBluetoothSearching";
 
 export const IconFilledBluetoothSearching = toNewsKitIcon(BluetoothSearching);

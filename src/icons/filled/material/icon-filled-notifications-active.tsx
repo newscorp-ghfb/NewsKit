@@ -3,7 +3,7 @@ import {NotificationsActive} from '@emotion-icons/material/NotificationsActive';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-NotificationsActive.displayName = 'IconFilledNotificationsActive';
+// "to-newskit-icon.tsx", if it gets overridden
+NotificationsActive['displayName'] = "IconFilledNotificationsActive";
 
 export const IconFilledNotificationsActive = toNewsKitIcon(NotificationsActive);

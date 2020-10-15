@@ -3,7 +3,7 @@ import {FilterAlt} from '@emotion-icons/material/FilterAlt';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FilterAlt.displayName = 'IconFilledFilterAlt';
+// "to-newskit-icon.tsx", if it gets overridden
+FilterAlt['displayName'] = "IconFilledFilterAlt";
 
 export const IconFilledFilterAlt = toNewsKitIcon(FilterAlt);

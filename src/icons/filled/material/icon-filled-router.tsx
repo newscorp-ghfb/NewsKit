@@ -3,7 +3,7 @@ import {Router} from '@emotion-icons/material/Router';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Router.displayName = 'IconFilledRouter';
+// "to-newskit-icon.tsx", if it gets overridden
+Router['displayName'] = "IconFilledRouter";
 
 export const IconFilledRouter = toNewsKitIcon(Router);

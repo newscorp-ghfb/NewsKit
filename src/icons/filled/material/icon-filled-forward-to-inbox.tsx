@@ -3,7 +3,7 @@ import {ForwardToInbox} from '@emotion-icons/material/ForwardToInbox';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ForwardToInbox.displayName = 'IconFilledForwardToInbox';
+// "to-newskit-icon.tsx", if it gets overridden
+ForwardToInbox['displayName'] = "IconFilledForwardToInbox";
 
 export const IconFilledForwardToInbox = toNewsKitIcon(ForwardToInbox);

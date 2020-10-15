@@ -3,7 +3,7 @@ import {BrowserNotSupported} from '@emotion-icons/material/BrowserNotSupported';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-BrowserNotSupported.displayName = 'IconFilledBrowserNotSupported';
+// "to-newskit-icon.tsx", if it gets overridden
+BrowserNotSupported['displayName'] = "IconFilledBrowserNotSupported";
 
 export const IconFilledBrowserNotSupported = toNewsKitIcon(BrowserNotSupported);

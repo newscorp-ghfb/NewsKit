@@ -3,7 +3,7 @@ import {LocalActivity} from '@emotion-icons/material/LocalActivity';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-LocalActivity.displayName = 'IconFilledLocalActivity';
+// "to-newskit-icon.tsx", if it gets overridden
+LocalActivity['displayName'] = "IconFilledLocalActivity";
 
 export const IconFilledLocalActivity = toNewsKitIcon(LocalActivity);

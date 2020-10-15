@@ -3,7 +3,7 @@ import {NotStarted} from '@emotion-icons/material/NotStarted';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-NotStarted.displayName = 'IconFilledNotStarted';
+// "to-newskit-icon.tsx", if it gets overridden
+NotStarted['displayName'] = "IconFilledNotStarted";
 
 export const IconFilledNotStarted = toNewsKitIcon(NotStarted);

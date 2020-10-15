@@ -3,7 +3,7 @@ import {FormatAlignJustify} from '@emotion-icons/material/FormatAlignJustify';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-FormatAlignJustify.displayName = 'IconFilledFormatAlignJustify';
+// "to-newskit-icon.tsx", if it gets overridden
+FormatAlignJustify['displayName'] = "IconFilledFormatAlignJustify";
 
 export const IconFilledFormatAlignJustify = toNewsKitIcon(FormatAlignJustify);

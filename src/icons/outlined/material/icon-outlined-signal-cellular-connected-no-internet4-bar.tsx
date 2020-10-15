@@ -4,9 +4,6 @@ import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
 // "to-newskit-icon.tsx", if it gets overridden
-SignalCellularConnectedNoInternet4Bar.displayName =
-  'IconOutlinedSignalCellularConnectedNoInternet4Bar';
+SignalCellularConnectedNoInternet4Bar['displayName'] = "IconOutlinedSignalCellularConnectedNoInternet4Bar";
 
-export const IconOutlinedSignalCellularConnectedNoInternet4Bar = toNewsKitIcon(
-  SignalCellularConnectedNoInternet4Bar,
-);
+export const IconOutlinedSignalCellularConnectedNoInternet4Bar = toNewsKitIcon(SignalCellularConnectedNoInternet4Bar);

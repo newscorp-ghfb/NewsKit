@@ -3,7 +3,7 @@ import {SpaceBar} from '@emotion-icons/material/SpaceBar';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SpaceBar.displayName = 'IconFilledSpaceBar';
+// "to-newskit-icon.tsx", if it gets overridden
+SpaceBar['displayName'] = "IconFilledSpaceBar";
 
 export const IconFilledSpaceBar = toNewsKitIcon(SpaceBar);

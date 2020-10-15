@@ -3,7 +3,7 @@ import {AssistantPhoto} from '@emotion-icons/material/AssistantPhoto';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-AssistantPhoto.displayName = 'IconFilledAssistantPhoto';
+// "to-newskit-icon.tsx", if it gets overridden
+AssistantPhoto['displayName'] = "IconFilledAssistantPhoto";
 
 export const IconFilledAssistantPhoto = toNewsKitIcon(AssistantPhoto);

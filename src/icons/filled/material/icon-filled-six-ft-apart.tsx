@@ -3,7 +3,7 @@ import {SixFtApart} from '@emotion-icons/material/SixFtApart';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SixFtApart.displayName = 'IconFilledSixFtApart';
+// "to-newskit-icon.tsx", if it gets overridden
+SixFtApart['displayName'] = "IconFilledSixFtApart";
 
 export const IconFilledSixFtApart = toNewsKitIcon(SixFtApart);

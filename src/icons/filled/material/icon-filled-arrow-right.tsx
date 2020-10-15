@@ -3,7 +3,7 @@ import {ArrowRight} from '@emotion-icons/material/ArrowRight';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ArrowRight.displayName = 'IconFilledArrowRight';
+// "to-newskit-icon.tsx", if it gets overridden
+ArrowRight['displayName'] = "IconFilledArrowRight";
 
 export const IconFilledArrowRight = toNewsKitIcon(ArrowRight);

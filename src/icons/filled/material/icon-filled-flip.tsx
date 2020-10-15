@@ -3,7 +3,7 @@ import {Flip} from '@emotion-icons/material/Flip';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Flip.displayName = 'IconFilledFlip';
+// "to-newskit-icon.tsx", if it gets overridden
+Flip['displayName'] = "IconFilledFlip";
 
 export const IconFilledFlip = toNewsKitIcon(Flip);

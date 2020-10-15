@@ -3,7 +3,7 @@ import {OpenInFull} from '@emotion-icons/material/OpenInFull';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-OpenInFull.displayName = 'IconFilledOpenInFull';
+// "to-newskit-icon.tsx", if it gets overridden
+OpenInFull['displayName'] = "IconFilledOpenInFull";
 
 export const IconFilledOpenInFull = toNewsKitIcon(OpenInFull);

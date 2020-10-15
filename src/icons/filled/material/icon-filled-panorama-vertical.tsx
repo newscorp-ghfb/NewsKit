@@ -3,7 +3,7 @@ import {PanoramaVertical} from '@emotion-icons/material/PanoramaVertical';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-PanoramaVertical.displayName = 'IconFilledPanoramaVertical';
+// "to-newskit-icon.tsx", if it gets overridden
+PanoramaVertical['displayName'] = "IconFilledPanoramaVertical";
 
 export const IconFilledPanoramaVertical = toNewsKitIcon(PanoramaVertical);

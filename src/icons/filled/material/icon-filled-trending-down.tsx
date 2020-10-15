@@ -3,7 +3,7 @@ import {TrendingDown} from '@emotion-icons/material/TrendingDown';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-TrendingDown.displayName = 'IconFilledTrendingDown';
+// "to-newskit-icon.tsx", if it gets overridden
+TrendingDown['displayName'] = "IconFilledTrendingDown";
 
 export const IconFilledTrendingDown = toNewsKitIcon(TrendingDown);

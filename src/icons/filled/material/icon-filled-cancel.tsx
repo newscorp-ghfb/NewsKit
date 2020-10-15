@@ -3,7 +3,7 @@ import {Cancel} from '@emotion-icons/material/Cancel';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Cancel.displayName = 'IconFilledCancel';
+// "to-newskit-icon.tsx", if it gets overridden
+Cancel['displayName'] = "IconFilledCancel";
 
 export const IconFilledCancel = toNewsKitIcon(Cancel);

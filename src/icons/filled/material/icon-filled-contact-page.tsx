@@ -3,7 +3,7 @@ import {ContactPage} from '@emotion-icons/material/ContactPage';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ContactPage.displayName = 'IconFilledContactPage';
+// "to-newskit-icon.tsx", if it gets overridden
+ContactPage['displayName'] = "IconFilledContactPage";
 
 export const IconFilledContactPage = toNewsKitIcon(ContactPage);

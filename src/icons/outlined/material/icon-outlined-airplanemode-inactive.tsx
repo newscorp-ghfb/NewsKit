@@ -4,8 +4,6 @@ import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
 // "to-newskit-icon.tsx", if it gets overridden
-AirplanemodeInactive.displayName = 'IconOutlinedAirplanemodeInactive';
+AirplanemodeInactive['displayName'] = "IconOutlinedAirplanemodeInactive";
 
-export const IconOutlinedAirplanemodeInactive = toNewsKitIcon(
-  AirplanemodeInactive,
-);
+export const IconOutlinedAirplanemodeInactive = toNewsKitIcon(AirplanemodeInactive);

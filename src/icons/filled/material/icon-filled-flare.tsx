@@ -3,7 +3,7 @@ import {Flare} from '@emotion-icons/material/Flare';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Flare.displayName = 'IconFilledFlare';
+// "to-newskit-icon.tsx", if it gets overridden
+Flare['displayName'] = "IconFilledFlare";
 
 export const IconFilledFlare = toNewsKitIcon(Flare);

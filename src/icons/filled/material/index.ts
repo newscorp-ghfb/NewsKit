@@ -5,9 +5,7 @@ export {IconFilledAccessibilityNew} from './icon-filled-accessibility-new';
 export {IconFilledAccessible} from './icon-filled-accessible';
 export {IconFilledAccessibleForward} from './icon-filled-accessible-forward';
 export {IconFilledAccountBalance} from './icon-filled-account-balance';
-export {
-  IconFilledAccountBalanceWallet,
-} from './icon-filled-account-balance-wallet';
+export {IconFilledAccountBalanceWallet} from './icon-filled-account-balance-wallet';
 export {IconFilledAccountBox} from './icon-filled-account-box';
 export {IconFilledAccountCircle} from './icon-filled-account-circle';
 export {IconFilledAddShoppingCart} from './icon-filled-add-shopping-cart';
@@ -132,9 +130,7 @@ export {IconFilledHttps} from './icon-filled-https';
 export {IconFilledImportantDevices} from './icon-filled-important-devices';
 export {IconFilledInfo} from './icon-filled-info';
 export {IconFilledInput} from './icon-filled-input';
-export {
-  IconFilledIntegrationInstructions,
-} from './icon-filled-integration-instructions';
+export {IconFilledIntegrationInstructions} from './icon-filled-integration-instructions';
 export {IconFilledInvertColors} from './icon-filled-invert-colors';
 export {IconFilledLabel} from './icon-filled-label';
 export {IconFilledLabelImportant} from './icon-filled-label-important';
@@ -173,22 +169,16 @@ export {IconFilledPayment} from './icon-filled-payment';
 export {IconFilledPending} from './icon-filled-pending';
 export {IconFilledPendingActions} from './icon-filled-pending-actions';
 export {IconFilledPermCameraMic} from './icon-filled-perm-camera-mic';
-export {
-  IconFilledPermContactCalendar,
-} from './icon-filled-perm-contact-calendar';
+export {IconFilledPermContactCalendar} from './icon-filled-perm-contact-calendar';
 export {IconFilledPermDataSetting} from './icon-filled-perm-data-setting';
-export {
-  IconFilledPermDeviceInformation,
-} from './icon-filled-perm-device-information';
+export {IconFilledPermDeviceInformation} from './icon-filled-perm-device-information';
 export {IconFilledPermIdentity} from './icon-filled-perm-identity';
 export {IconFilledPermMedia} from './icon-filled-perm-media';
 export {IconFilledPermPhoneMsg} from './icon-filled-perm-phone-msg';
 export {IconFilledPermScanWifi} from './icon-filled-perm-scan-wifi';
 export {IconFilledPets} from './icon-filled-pets';
 export {IconFilledPictureInPicture} from './icon-filled-picture-in-picture';
-export {
-  IconFilledPictureInPictureAlt,
-} from './icon-filled-picture-in-picture-alt';
+export {IconFilledPictureInPictureAlt} from './icon-filled-picture-in-picture-alt';
 export {IconFilledPlagiarism} from './icon-filled-plagiarism';
 export {IconFilledPlayForWork} from './icon-filled-play-for-work';
 export {IconFilledPolymer} from './icon-filled-polymer';
@@ -197,9 +187,7 @@ export {IconFilledPregnantWoman} from './icon-filled-pregnant-woman';
 export {IconFilledPreview} from './icon-filled-preview';
 export {IconFilledPrint} from './icon-filled-print';
 export {IconFilledPrivacyTip} from './icon-filled-privacy-tip';
-export {
-  IconFilledPublishedWithChanges,
-} from './icon-filled-published-with-changes';
+export {IconFilledPublishedWithChanges} from './icon-filled-published-with-changes';
 export {IconFilledQueryBuilder} from './icon-filled-query-builder';
 export {IconFilledQuestionAnswer} from './icon-filled-question-answer';
 export {IconFilledQuickreply} from './icon-filled-quickreply';
@@ -221,29 +209,17 @@ export {IconFilledSchedule} from './icon-filled-schedule';
 export {IconFilledSearch} from './icon-filled-search';
 export {IconFilledSearchOff} from './icon-filled-search-off';
 export {IconFilledSettings} from './icon-filled-settings';
-export {
-  IconFilledSettingsApplications,
-} from './icon-filled-settings-applications';
-export {
-  IconFilledSettingsBackupRestore,
-} from './icon-filled-settings-backup-restore';
+export {IconFilledSettingsApplications} from './icon-filled-settings-applications';
+export {IconFilledSettingsBackupRestore} from './icon-filled-settings-backup-restore';
 export {IconFilledSettingsBluetooth} from './icon-filled-settings-bluetooth';
 export {IconFilledSettingsBrightness} from './icon-filled-settings-brightness';
 export {IconFilledSettingsCell} from './icon-filled-settings-cell';
 export {IconFilledSettingsEthernet} from './icon-filled-settings-ethernet';
-export {
-  IconFilledSettingsInputAntenna,
-} from './icon-filled-settings-input-antenna';
-export {
-  IconFilledSettingsInputComponent,
-} from './icon-filled-settings-input-component';
-export {
-  IconFilledSettingsInputComposite,
-} from './icon-filled-settings-input-composite';
+export {IconFilledSettingsInputAntenna} from './icon-filled-settings-input-antenna';
+export {IconFilledSettingsInputComponent} from './icon-filled-settings-input-component';
+export {IconFilledSettingsInputComposite} from './icon-filled-settings-input-composite';
 export {IconFilledSettingsInputHdmi} from './icon-filled-settings-input-hdmi';
-export {
-  IconFilledSettingsInputSvideo,
-} from './icon-filled-settings-input-svideo';
+export {IconFilledSettingsInputSvideo} from './icon-filled-settings-input-svideo';
 export {IconFilledSettingsOverscan} from './icon-filled-settings-overscan';
 export {IconFilledSettingsPhone} from './icon-filled-settings-phone';
 export {IconFilledSettingsPower} from './icon-filled-settings-power';
@@ -265,15 +241,11 @@ export {IconFilledStickyNote2} from './icon-filled-sticky-note2';
 export {IconFilledStore} from './icon-filled-store';
 export {IconFilledSubject} from './icon-filled-subject';
 export {IconFilledSubtitlesOff} from './icon-filled-subtitles-off';
-export {
-  IconFilledSupervisedUserCircle,
-} from './icon-filled-supervised-user-circle';
+export {IconFilledSupervisedUserCircle} from './icon-filled-supervised-user-circle';
 export {IconFilledSupervisorAccount} from './icon-filled-supervisor-account';
 export {IconFilledSupport} from './icon-filled-support';
 export {IconFilledSwapHoriz} from './icon-filled-swap-horiz';
-export {
-  IconFilledSwapHorizontalCircle,
-} from './icon-filled-swap-horizontal-circle';
+export {IconFilledSwapHorizontalCircle} from './icon-filled-swap-horizontal-circle';
 export {IconFilledSwapVert} from './icon-filled-swap-vert';
 export {IconFilledSwapVerticalCircle} from './icon-filled-swap-vertical-circle';
 export {IconFilledSyncAlt} from './icon-filled-sync-alt';
@@ -283,12 +255,8 @@ export {IconFilledTabUnselected} from './icon-filled-tab-unselected';
 export {IconFilledTableView} from './icon-filled-table-view';
 export {IconFilledTextRotateUp} from './icon-filled-text-rotate-up';
 export {IconFilledTextRotateVertical} from './icon-filled-text-rotate-vertical';
-export {
-  IconFilledTextRotationAngledown,
-} from './icon-filled-text-rotation-angledown';
-export {
-  IconFilledTextRotationAngleup,
-} from './icon-filled-text-rotation-angleup';
+export {IconFilledTextRotationAngledown} from './icon-filled-text-rotation-angledown';
+export {IconFilledTextRotationAngleup} from './icon-filled-text-rotation-angleup';
 export {IconFilledTextRotationDown} from './icon-filled-text-rotation-down';
 export {IconFilledTextRotationNone} from './icon-filled-text-rotation-none';
 export {IconFilledTheaters} from './icon-filled-theaters';
@@ -342,9 +310,7 @@ export {IconFilledAddAlert} from './icon-filled-add-alert';
 export {IconFilledAutoDelete} from './icon-filled-auto-delete';
 export {IconFilledError} from './icon-filled-error';
 export {IconFilledErrorOutline} from './icon-filled-error-outline';
-export {
-  IconFilledNotificationImportant,
-} from './icon-filled-notification-important';
+export {IconFilledNotificationImportant} from './icon-filled-notification-important';
 export {IconFilledWarning} from './icon-filled-warning';
 export {IconFilledFourK} from './icon-filled-four-k';
 export {IconFilledFiveG} from './icon-filled-five-g';
@@ -356,9 +322,7 @@ export {IconFilledAvTimer} from './icon-filled-av-timer';
 export {IconFilledBrandingWatermark} from './icon-filled-branding-watermark';
 export {IconFilledCallToAction} from './icon-filled-call-to-action';
 export {IconFilledClosedCaption} from './icon-filled-closed-caption';
-export {
-  IconFilledClosedCaptionDisabled,
-} from './icon-filled-closed-caption-disabled';
+export {IconFilledClosedCaptionDisabled} from './icon-filled-closed-caption-disabled';
 export {IconFilledControlCamera} from './icon-filled-control-camera';
 export {IconFilledEqualizer} from './icon-filled-equalizer';
 export {IconFilledExplicit} from './icon-filled-explicit';
@@ -459,9 +423,7 @@ export {IconFilledComment} from './icon-filled-comment';
 export {IconFilledContactMail} from './icon-filled-contact-mail';
 export {IconFilledContactPhone} from './icon-filled-contact-phone';
 export {IconFilledContacts} from './icon-filled-contacts';
-export {
-  IconFilledDesktopAccessDisabled,
-} from './icon-filled-desktop-access-disabled';
+export {IconFilledDesktopAccessDisabled} from './icon-filled-desktop-access-disabled';
 export {IconFilledDialerSip} from './icon-filled-dialer-sip';
 export {IconFilledDialpad} from './icon-filled-dialpad';
 export {IconFilledDomainDisabled} from './icon-filled-domain-disabled';
@@ -508,22 +470,12 @@ export {IconFilledReadMore} from './icon-filled-read-more';
 export {IconFilledRingVolume} from './icon-filled-ring-volume';
 export {IconFilledRssFeed} from './icon-filled-rss-feed';
 export {IconFilledScreenShare} from './icon-filled-screen-share';
-export {
-  IconFilledSentimentSatisfiedAlt,
-} from './icon-filled-sentiment-satisfied-alt';
+export {IconFilledSentimentSatisfiedAlt} from './icon-filled-sentiment-satisfied-alt';
 export {IconFilledSpeakerPhone} from './icon-filled-speaker-phone';
-export {
-  IconFilledStayCurrentLandscape,
-} from './icon-filled-stay-current-landscape';
-export {
-  IconFilledStayCurrentPortrait,
-} from './icon-filled-stay-current-portrait';
-export {
-  IconFilledStayPrimaryLandscape,
-} from './icon-filled-stay-primary-landscape';
-export {
-  IconFilledStayPrimaryPortrait,
-} from './icon-filled-stay-primary-portrait';
+export {IconFilledStayCurrentLandscape} from './icon-filled-stay-current-landscape';
+export {IconFilledStayCurrentPortrait} from './icon-filled-stay-current-portrait';
+export {IconFilledStayPrimaryLandscape} from './icon-filled-stay-primary-landscape';
+export {IconFilledStayPrimaryPortrait} from './icon-filled-stay-primary-portrait';
 export {IconFilledStopScreenShare} from './icon-filled-stop-screen-share';
 export {IconFilledSwapCalls} from './icon-filled-swap-calls';
 export {IconFilledTextsms} from './icon-filled-textsms';
@@ -573,9 +525,7 @@ export {IconFilledPushPin} from './icon-filled-push-pin';
 export {IconFilledRedo} from './icon-filled-redo';
 export {IconFilledRemove} from './icon-filled-remove';
 export {IconFilledRemoveCircle} from './icon-filled-remove-circle';
-export {
-  IconFilledRemoveCircleOutline,
-} from './icon-filled-remove-circle-outline';
+export {IconFilledRemoveCircleOutline} from './icon-filled-remove-circle-outline';
 export {IconFilledReply} from './icon-filled-reply';
 export {IconFilledReplyAll} from './icon-filled-reply-all';
 export {IconFilledReport} from './icon-filled-report';
@@ -599,13 +549,9 @@ export {IconFilledAdUnits} from './icon-filled-ad-units';
 export {IconFilledAddAlarm} from './icon-filled-add-alarm';
 export {IconFilledAddToHomeScreen} from './icon-filled-add-to-home-screen';
 export {IconFilledAirplanemodeActive} from './icon-filled-airplanemode-active';
-export {
-  IconFilledAirplanemodeInactive,
-} from './icon-filled-airplanemode-inactive';
+export {IconFilledAirplanemodeInactive} from './icon-filled-airplanemode-inactive';
 export {IconFilledBatteryAlert} from './icon-filled-battery-alert';
-export {
-  IconFilledBatteryChargingFull,
-} from './icon-filled-battery-charging-full';
+export {IconFilledBatteryChargingFull} from './icon-filled-battery-charging-full';
 export {IconFilledBatteryFull} from './icon-filled-battery-full';
 export {IconFilledBatteryStd} from './icon-filled-battery-std';
 export {IconFilledBatteryUnknown} from './icon-filled-battery-unknown';
@@ -630,30 +576,20 @@ export {IconFilledLocationSearching} from './icon-filled-location-searching';
 export {IconFilledMobileFriendly} from './icon-filled-mobile-friendly';
 export {IconFilledMobileOff} from './icon-filled-mobile-off';
 export {IconFilledNfc} from './icon-filled-nfc';
-export {
-  IconFilledScreenLockLandscape,
-} from './icon-filled-screen-lock-landscape';
+export {IconFilledScreenLockLandscape} from './icon-filled-screen-lock-landscape';
 export {IconFilledScreenLockPortrait} from './icon-filled-screen-lock-portrait';
 export {IconFilledScreenLockRotation} from './icon-filled-screen-lock-rotation';
 export {IconFilledScreenRotation} from './icon-filled-screen-rotation';
 export {IconFilledSdStorage} from './icon-filled-sd-storage';
-export {
-  IconFilledSettingsSystemDaydream,
-} from './icon-filled-settings-system-daydream';
+export {IconFilledSettingsSystemDaydream} from './icon-filled-settings-system-daydream';
 export {IconFilledSignalCellular4Bar} from './icon-filled-signal-cellular4-bar';
 export {IconFilledSignalCellularAlt} from './icon-filled-signal-cellular-alt';
-export {
-  IconFilledSignalCellularConnectedNoInternet4Bar,
-} from './icon-filled-signal-cellular-connected-no-internet4-bar';
-export {
-  IconFilledSignalCellularNoSim,
-} from './icon-filled-signal-cellular-no-sim';
+export {IconFilledSignalCellularConnectedNoInternet4Bar} from './icon-filled-signal-cellular-connected-no-internet4-bar';
+export {IconFilledSignalCellularNoSim} from './icon-filled-signal-cellular-no-sim';
 export {IconFilledSignalCellularNull} from './icon-filled-signal-cellular-null';
 export {IconFilledSignalCellularOff} from './icon-filled-signal-cellular-off';
 export {IconFilledSignalWifi4Bar} from './icon-filled-signal-wifi4-bar';
-export {
-  IconFilledSignalWifi4BarLock,
-} from './icon-filled-signal-wifi4-bar-lock';
+export {IconFilledSignalWifi4BarLock} from './icon-filled-signal-wifi4-bar-lock';
 export {IconFilledSignalWifiOff} from './icon-filled-signal-wifi-off';
 export {IconFilledStorage} from './icon-filled-storage';
 export {IconFilledUsb} from './icon-filled-usb';
@@ -685,41 +621,27 @@ export {IconFilledFormatAlignRight} from './icon-filled-format-align-right';
 export {IconFilledFormatBold} from './icon-filled-format-bold';
 export {IconFilledFormatClear} from './icon-filled-format-clear';
 export {IconFilledFormatColorReset} from './icon-filled-format-color-reset';
-export {
-  IconFilledFormatIndentDecrease,
-} from './icon-filled-format-indent-decrease';
-export {
-  IconFilledFormatIndentIncrease,
-} from './icon-filled-format-indent-increase';
+export {IconFilledFormatIndentDecrease} from './icon-filled-format-indent-decrease';
+export {IconFilledFormatIndentIncrease} from './icon-filled-format-indent-increase';
 export {IconFilledFormatItalic} from './icon-filled-format-italic';
 export {IconFilledFormatLineSpacing} from './icon-filled-format-line-spacing';
 export {IconFilledFormatListBulleted} from './icon-filled-format-list-bulleted';
 export {IconFilledFormatListNumbered} from './icon-filled-format-list-numbered';
-export {
-  IconFilledFormatListNumberedRtl,
-} from './icon-filled-format-list-numbered-rtl';
+export {IconFilledFormatListNumberedRtl} from './icon-filled-format-list-numbered-rtl';
 export {IconFilledFormatPaint} from './icon-filled-format-paint';
 export {IconFilledFormatQuote} from './icon-filled-format-quote';
 export {IconFilledFormatShapes} from './icon-filled-format-shapes';
 export {IconFilledFormatSize} from './icon-filled-format-size';
-export {
-  IconFilledFormatStrikethrough,
-} from './icon-filled-format-strikethrough';
-export {
-  IconFilledFormatTextdirectionLToR,
-} from './icon-filled-format-textdirection-l-to-r';
-export {
-  IconFilledFormatTextdirectionRToL,
-} from './icon-filled-format-textdirection-r-to-l';
+export {IconFilledFormatStrikethrough} from './icon-filled-format-strikethrough';
+export {IconFilledFormatTextdirectionLToR} from './icon-filled-format-textdirection-l-to-r';
+export {IconFilledFormatTextdirectionRToL} from './icon-filled-format-textdirection-r-to-l';
 export {IconFilledFormatUnderlined} from './icon-filled-format-underlined';
 export {IconFilledFunctions} from './icon-filled-functions';
 export {IconFilledHeight} from './icon-filled-height';
 export {IconFilledHighlight} from './icon-filled-highlight';
 export {IconFilledHorizontalRule} from './icon-filled-horizontal-rule';
 export {IconFilledInsertChart} from './icon-filled-insert-chart';
-export {
-  IconFilledInsertChartOutlined,
-} from './icon-filled-insert-chart-outlined';
+export {IconFilledInsertChartOutlined} from './icon-filled-insert-chart-outlined';
 export {IconFilledInsertComment} from './icon-filled-insert-comment';
 export {IconFilledInsertDriveFile} from './icon-filled-insert-drive-file';
 export {IconFilledInsertEmoticon} from './icon-filled-insert-emoticon';
@@ -749,12 +671,8 @@ export {IconFilledTableChart} from './icon-filled-table-chart';
 export {IconFilledTableRows} from './icon-filled-table-rows';
 export {IconFilledTextFields} from './icon-filled-text-fields';
 export {IconFilledTitle} from './icon-filled-title';
-export {
-  IconFilledVerticalAlignBottom,
-} from './icon-filled-vertical-align-bottom';
-export {
-  IconFilledVerticalAlignCenter,
-} from './icon-filled-vertical-align-center';
+export {IconFilledVerticalAlignBottom} from './icon-filled-vertical-align-bottom';
+export {IconFilledVerticalAlignCenter} from './icon-filled-vertical-align-center';
 export {IconFilledVerticalAlignTop} from './icon-filled-vertical-align-top';
 export {IconFilledWrapText} from './icon-filled-wrap-text';
 export {IconFilledAttachEmail} from './icon-filled-attach-email';
@@ -775,9 +693,7 @@ export {IconFilledRuleFolder} from './icon-filled-rule-folder';
 export {IconFilledSnippetFolder} from './icon-filled-snippet-folder';
 export {IconFilledTextSnippet} from './icon-filled-text-snippet';
 export {IconFilledTopic} from './icon-filled-topic';
-export {
-  IconFilledBrowserNotSupported,
-} from './icon-filled-browser-not-supported';
+export {IconFilledBrowserNotSupported} from './icon-filled-browser-not-supported';
 export {IconFilledCast} from './icon-filled-cast';
 export {IconFilledCastConnected} from './icon-filled-cast-connected';
 export {IconFilledCastForEducation} from './icon-filled-cast-for-education';
@@ -861,16 +777,12 @@ export {IconFilledCameraRoll} from './icon-filled-camera-roll';
 export {IconFilledCenterFocusStrong} from './icon-filled-center-focus-strong';
 export {IconFilledCenterFocusWeak} from './icon-filled-center-focus-weak';
 export {IconFilledCollections} from './icon-filled-collections';
-export {
-  IconFilledCollectionsBookmark,
-} from './icon-filled-collections-bookmark';
+export {IconFilledCollectionsBookmark} from './icon-filled-collections-bookmark';
 export {IconFilledColorLens} from './icon-filled-color-lens';
 export {IconFilledColorize} from './icon-filled-colorize';
 export {IconFilledCompare} from './icon-filled-compare';
 export {IconFilledControlPoint} from './icon-filled-control-point';
-export {
-  IconFilledControlPointDuplicate,
-} from './icon-filled-control-point-duplicate';
+export {IconFilledControlPointDuplicate} from './icon-filled-control-point-duplicate';
 export {IconFilledCrop169} from './icon-filled-crop169';
 export {IconFilledCrop} from './icon-filled-crop';
 export {IconFilledCrop32} from './icon-filled-crop32';
@@ -969,15 +881,9 @@ export {IconFilledPhotoAlbum} from './icon-filled-photo-album';
 export {IconFilledPhotoCamera} from './icon-filled-photo-camera';
 export {IconFilledPhotoFilter} from './icon-filled-photo-filter';
 export {IconFilledPhotoLibrary} from './icon-filled-photo-library';
-export {
-  IconFilledPhotoSizeSelectActual,
-} from './icon-filled-photo-size-select-actual';
-export {
-  IconFilledPhotoSizeSelectLarge,
-} from './icon-filled-photo-size-select-large';
-export {
-  IconFilledPhotoSizeSelectSmall,
-} from './icon-filled-photo-size-select-small';
+export {IconFilledPhotoSizeSelectActual} from './icon-filled-photo-size-select-actual';
+export {IconFilledPhotoSizeSelectLarge} from './icon-filled-photo-size-select-large';
+export {IconFilledPhotoSizeSelectSmall} from './icon-filled-photo-size-select-small';
 export {IconFilledPictureAsPdf} from './icon-filled-picture-as-pdf';
 export {IconFilledPortrait} from './icon-filled-portrait';
 export {IconFilledReceiptLong} from './icon-filled-receipt-long';
@@ -1057,22 +963,16 @@ export {IconFilledLocalAtm} from './icon-filled-local-atm';
 export {IconFilledLocalBar} from './icon-filled-local-bar';
 export {IconFilledLocalCafe} from './icon-filled-local-cafe';
 export {IconFilledLocalCarWash} from './icon-filled-local-car-wash';
-export {
-  IconFilledLocalConvenienceStore,
-} from './icon-filled-local-convenience-store';
+export {IconFilledLocalConvenienceStore} from './icon-filled-local-convenience-store';
 export {IconFilledLocalDining} from './icon-filled-local-dining';
 export {IconFilledLocalDrink} from './icon-filled-local-drink';
-export {
-  IconFilledLocalFireDepartment,
-} from './icon-filled-local-fire-department';
+export {IconFilledLocalFireDepartment} from './icon-filled-local-fire-department';
 export {IconFilledLocalFlorist} from './icon-filled-local-florist';
 export {IconFilledLocalGasStation} from './icon-filled-local-gas-station';
 export {IconFilledLocalGroceryStore} from './icon-filled-local-grocery-store';
 export {IconFilledLocalHospital} from './icon-filled-local-hospital';
 export {IconFilledLocalHotel} from './icon-filled-local-hotel';
-export {
-  IconFilledLocalLaundryService,
-} from './icon-filled-local-laundry-service';
+export {IconFilledLocalLaundryService} from './icon-filled-local-laundry-service';
 export {IconFilledLocalLibrary} from './icon-filled-local-library';
 export {IconFilledLocalMall} from './icon-filled-local-mall';
 export {IconFilledLocalMovies} from './icon-filled-local-movies';
@@ -1092,9 +992,7 @@ export {IconFilledMap} from './icon-filled-map';
 export {IconFilledMapsUgc} from './icon-filled-maps-ugc';
 export {IconFilledMedicalServices} from './icon-filled-medical-services';
 export {IconFilledMenuBook} from './icon-filled-menu-book';
-export {
-  IconFilledMiscellaneousServices,
-} from './icon-filled-miscellaneous-services';
+export {IconFilledMiscellaneousServices} from './icon-filled-miscellaneous-services';
 export {IconFilledMoney} from './icon-filled-money';
 export {IconFilledMoped} from './icon-filled-moped';
 export {IconFilledMultipleStop} from './icon-filled-multiple-stop';
@@ -1127,9 +1025,7 @@ export {IconFilledTerrain} from './icon-filled-terrain';
 export {IconFilledTraffic} from './icon-filled-traffic';
 export {IconFilledTrain} from './icon-filled-train';
 export {IconFilledTram} from './icon-filled-tram';
-export {
-  IconFilledTransferWithinAStation,
-} from './icon-filled-transfer-within-a-station';
+export {IconFilledTransferWithinAStation} from './icon-filled-transfer-within-a-station';
 export {IconFilledTransitEnterexit} from './icon-filled-transit-enterexit';
 export {IconFilledTripOrigin} from './icon-filled-trip-origin';
 export {IconFilledTwoWheeler} from './icon-filled-two-wheeler';
@@ -1142,9 +1038,7 @@ export {IconFilledArrowBack} from './icon-filled-arrow-back';
 export {IconFilledArrowBackIos} from './icon-filled-arrow-back-ios';
 export {IconFilledArrowDownward} from './icon-filled-arrow-downward';
 export {IconFilledArrowDropDown} from './icon-filled-arrow-drop-down';
-export {
-  IconFilledArrowDropDownCircle,
-} from './icon-filled-arrow-drop-down-circle';
+export {IconFilledArrowDropDownCircle} from './icon-filled-arrow-drop-down-circle';
 export {IconFilledArrowDropUp} from './icon-filled-arrow-drop-up';
 export {IconFilledArrowForward} from './icon-filled-arrow-forward';
 export {IconFilledArrowForwardIos} from './icon-filled-arrow-forward-ios';
@@ -1179,12 +1073,8 @@ export {IconFilledRefresh} from './icon-filled-refresh';
 export {IconFilledSouth} from './icon-filled-south';
 export {IconFilledSouthEast} from './icon-filled-south-east';
 export {IconFilledSouthWest} from './icon-filled-south-west';
-export {
-  IconFilledSubdirectoryArrowLeft,
-} from './icon-filled-subdirectory-arrow-left';
-export {
-  IconFilledSubdirectoryArrowRight,
-} from './icon-filled-subdirectory-arrow-right';
+export {IconFilledSubdirectoryArrowLeft} from './icon-filled-subdirectory-arrow-left';
+export {IconFilledSubdirectoryArrowRight} from './icon-filled-subdirectory-arrow-right';
 export {IconFilledSwitchLeft} from './icon-filled-switch-left';
 export {IconFilledSwitchRight} from './icon-filled-switch-right';
 export {IconFilledUnfoldLess} from './icon-filled-unfold-less';
@@ -1193,27 +1083,13 @@ export {IconFilledWest} from './icon-filled-west';
 export {IconFilledAccountTree} from './icon-filled-account-tree';
 export {IconFilledAdb} from './icon-filled-adb';
 export {IconFilledAirlineSeatFlat} from './icon-filled-airline-seat-flat';
-export {
-  IconFilledAirlineSeatFlatAngled,
-} from './icon-filled-airline-seat-flat-angled';
-export {
-  IconFilledAirlineSeatIndividualSuite,
-} from './icon-filled-airline-seat-individual-suite';
-export {
-  IconFilledAirlineSeatLegroomExtra,
-} from './icon-filled-airline-seat-legroom-extra';
-export {
-  IconFilledAirlineSeatLegroomNormal,
-} from './icon-filled-airline-seat-legroom-normal';
-export {
-  IconFilledAirlineSeatLegroomReduced,
-} from './icon-filled-airline-seat-legroom-reduced';
-export {
-  IconFilledAirlineSeatReclineExtra,
-} from './icon-filled-airline-seat-recline-extra';
-export {
-  IconFilledAirlineSeatReclineNormal,
-} from './icon-filled-airline-seat-recline-normal';
+export {IconFilledAirlineSeatFlatAngled} from './icon-filled-airline-seat-flat-angled';
+export {IconFilledAirlineSeatIndividualSuite} from './icon-filled-airline-seat-individual-suite';
+export {IconFilledAirlineSeatLegroomExtra} from './icon-filled-airline-seat-legroom-extra';
+export {IconFilledAirlineSeatLegroomNormal} from './icon-filled-airline-seat-legroom-normal';
+export {IconFilledAirlineSeatLegroomReduced} from './icon-filled-airline-seat-legroom-reduced';
+export {IconFilledAirlineSeatReclineExtra} from './icon-filled-airline-seat-recline-extra';
+export {IconFilledAirlineSeatReclineNormal} from './icon-filled-airline-seat-recline-normal';
 export {IconFilledBluetoothAudio} from './icon-filled-bluetooth-audio';
 export {IconFilledConfirmationNumber} from './icon-filled-confirmation-number';
 export {IconFilledDirectionsOff} from './icon-filled-directions-off';
@@ -1232,9 +1108,7 @@ export {IconFilledNetworkLocked} from './icon-filled-network-locked';
 export {IconFilledNoEncryption} from './icon-filled-no-encryption';
 export {IconFilledOndemandVideo} from './icon-filled-ondemand-video';
 export {IconFilledPersonalVideo} from './icon-filled-personal-video';
-export {
-  IconFilledPhoneBluetoothSpeaker,
-} from './icon-filled-phone-bluetooth-speaker';
+export {IconFilledPhoneBluetoothSpeaker} from './icon-filled-phone-bluetooth-speaker';
 export {IconFilledPhoneCallback} from './icon-filled-phone-callback';
 export {IconFilledPhoneForwarded} from './icon-filled-phone-forwarded';
 export {IconFilledPhoneInTalk} from './icon-filled-phone-in-talk';
@@ -1265,9 +1139,7 @@ export {IconFilledAcUnit} from './icon-filled-ac-unit';
 export {IconFilledAirportShuttle} from './icon-filled-airport-shuttle';
 export {IconFilledAllInclusive} from './icon-filled-all-inclusive';
 export {IconFilledApartment} from './icon-filled-apartment';
-export {
-  IconFilledBabyChangingStation,
-} from './icon-filled-baby-changing-station';
+export {IconFilledBabyChangingStation} from './icon-filled-baby-changing-station';
 export {IconFilledBackpack} from './icon-filled-backpack';
 export {IconFilledBathtub} from './icon-filled-bathtub';
 export {IconFilledBeachAccess} from './icon-filled-beach-access';
@@ -1335,9 +1207,7 @@ export {IconFilledSixFtApart} from './icon-filled-six-ft-apart';
 export {IconFilledArchitecture} from './icon-filled-architecture';
 export {IconFilledCake} from './icon-filled-cake';
 export {IconFilledCleanHands} from './icon-filled-clean-hands';
-export {
-  IconFilledConnectWithoutContact,
-} from './icon-filled-connect-without-contact';
+export {IconFilledConnectWithoutContact} from './icon-filled-connect-without-contact';
 export {IconFilledConstruction} from './icon-filled-construction';
 export {IconFilledCoronavirus} from './icon-filled-coronavirus';
 export {IconFilledDeck} from './icon-filled-deck';
@@ -1351,9 +1221,7 @@ export {IconFilledEmojiNature} from './icon-filled-emoji-nature';
 export {IconFilledEmojiObjects} from './icon-filled-emoji-objects';
 export {IconFilledEmojiPeople} from './icon-filled-emoji-people';
 export {IconFilledEmojiSymbols} from './icon-filled-emoji-symbols';
-export {
-  IconFilledEmojiTransportation,
-} from './icon-filled-emoji-transportation';
+export {IconFilledEmojiTransportation} from './icon-filled-emoji-transportation';
 export {IconFilledEngineering} from './icon-filled-engineering';
 export {IconFilledFacebook} from './icon-filled-facebook';
 export {IconFilledFireplace} from './icon-filled-fireplace';
@@ -1372,14 +1240,10 @@ export {IconFilledMoodBad} from './icon-filled-mood-bad';
 export {IconFilledNightsStay} from './icon-filled-nights-stay';
 export {IconFilledNoLuggage} from './icon-filled-no-luggage';
 export {IconFilledNotifications} from './icon-filled-notifications';
-export {
-  IconFilledNotificationsActive,
-} from './icon-filled-notifications-active';
+export {IconFilledNotificationsActive} from './icon-filled-notifications-active';
 export {IconFilledNotificationsNone} from './icon-filled-notifications-none';
 export {IconFilledNotificationsOff} from './icon-filled-notifications-off';
-export {
-  IconFilledNotificationsPaused,
-} from './icon-filled-notifications-paused';
+export {IconFilledNotificationsPaused} from './icon-filled-notifications-paused';
 export {IconFilledOutdoorGrill} from './icon-filled-outdoor-grill';
 export {IconFilledPages} from './icon-filled-pages';
 export {IconFilledPartyMode} from './icon-filled-party-mode';
@@ -1402,16 +1266,10 @@ export {IconFilledSanitizer} from './icon-filled-sanitizer';
 export {IconFilledSchool} from './icon-filled-school';
 export {IconFilledScience} from './icon-filled-science';
 export {IconFilledSelfImprovement} from './icon-filled-self-improvement';
-export {
-  IconFilledSentimentDissatisfied,
-} from './icon-filled-sentiment-dissatisfied';
+export {IconFilledSentimentDissatisfied} from './icon-filled-sentiment-dissatisfied';
 export {IconFilledSentimentSatisfied} from './icon-filled-sentiment-satisfied';
-export {
-  IconFilledSentimentVeryDissatisfied,
-} from './icon-filled-sentiment-very-dissatisfied';
-export {
-  IconFilledSentimentVerySatisfied,
-} from './icon-filled-sentiment-very-satisfied';
+export {IconFilledSentimentVeryDissatisfied} from './icon-filled-sentiment-very-dissatisfied';
+export {IconFilledSentimentVerySatisfied} from './icon-filled-sentiment-very-satisfied';
 export {IconFilledShare} from './icon-filled-share';
 export {IconFilledSick} from './icon-filled-sick';
 export {IconFilledSingleBed} from './icon-filled-single-bed';
@@ -1435,16 +1293,10 @@ export {IconFilledThumbDownAlt} from './icon-filled-thumb-down-alt';
 export {IconFilledThumbUpAlt} from './icon-filled-thumb-up-alt';
 export {IconFilledWhatshot} from './icon-filled-whatshot';
 export {IconFilledCheckBox} from './icon-filled-check-box';
-export {
-  IconFilledCheckBoxOutlineBlank,
-} from './icon-filled-check-box-outline-blank';
-export {
-  IconFilledIndeterminateCheckBox,
-} from './icon-filled-indeterminate-check-box';
+export {IconFilledCheckBoxOutlineBlank} from './icon-filled-check-box-outline-blank';
+export {IconFilledIndeterminateCheckBox} from './icon-filled-indeterminate-check-box';
 export {IconFilledRadioButtonChecked} from './icon-filled-radio-button-checked';
-export {
-  IconFilledRadioButtonUnchecked,
-} from './icon-filled-radio-button-unchecked';
+export {IconFilledRadioButtonUnchecked} from './icon-filled-radio-button-unchecked';
 export {IconFilledStar} from './icon-filled-star';
 export {IconFilledStarBorder} from './icon-filled-star-border';
 export {IconFilledStarHalf} from './icon-filled-star-half';

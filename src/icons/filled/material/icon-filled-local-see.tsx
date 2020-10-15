@@ -3,7 +3,7 @@ import {LocalSee} from '@emotion-icons/material/LocalSee';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-LocalSee.displayName = 'IconFilledLocalSee';
+// "to-newskit-icon.tsx", if it gets overridden
+LocalSee['displayName'] = "IconFilledLocalSee";
 
 export const IconFilledLocalSee = toNewsKitIcon(LocalSee);

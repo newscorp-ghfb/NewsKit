@@ -3,7 +3,7 @@ import {LayersClear} from '@emotion-icons/material/LayersClear';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-LayersClear.displayName = 'IconFilledLayersClear';
+// "to-newskit-icon.tsx", if it gets overridden
+LayersClear['displayName'] = "IconFilledLayersClear";
 
 export const IconFilledLayersClear = toNewsKitIcon(LayersClear);

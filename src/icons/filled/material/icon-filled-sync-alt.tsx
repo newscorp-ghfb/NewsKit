@@ -3,7 +3,7 @@ import {SyncAlt} from '@emotion-icons/material/SyncAlt';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-SyncAlt.displayName = 'IconFilledSyncAlt';
+// "to-newskit-icon.tsx", if it gets overridden
+SyncAlt['displayName'] = "IconFilledSyncAlt";
 
 export const IconFilledSyncAlt = toNewsKitIcon(SyncAlt);

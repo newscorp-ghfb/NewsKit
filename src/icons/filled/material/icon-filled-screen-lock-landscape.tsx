@@ -3,7 +3,7 @@ import {ScreenLockLandscape} from '@emotion-icons/material/ScreenLockLandscape';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ScreenLockLandscape.displayName = 'IconFilledScreenLockLandscape';
+// "to-newskit-icon.tsx", if it gets overridden
+ScreenLockLandscape['displayName'] = "IconFilledScreenLockLandscape";
 
 export const IconFilledScreenLockLandscape = toNewsKitIcon(ScreenLockLandscape);

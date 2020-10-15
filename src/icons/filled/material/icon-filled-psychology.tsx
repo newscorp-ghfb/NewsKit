@@ -3,7 +3,7 @@ import {Psychology} from '@emotion-icons/material/Psychology';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-Psychology.displayName = 'IconFilledPsychology';
+// "to-newskit-icon.tsx", if it gets overridden
+Psychology['displayName'] = "IconFilledPsychology";
 
 export const IconFilledPsychology = toNewsKitIcon(Psychology);

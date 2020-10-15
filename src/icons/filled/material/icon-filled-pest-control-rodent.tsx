@@ -3,7 +3,7 @@ import {PestControlRodent} from '@emotion-icons/material/PestControlRodent';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-PestControlRodent.displayName = 'IconFilledPestControlRodent';
+// "to-newskit-icon.tsx", if it gets overridden
+PestControlRodent['displayName'] = "IconFilledPestControlRodent";
 
 export const IconFilledPestControlRodent = toNewsKitIcon(PestControlRodent);

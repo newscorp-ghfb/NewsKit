@@ -3,7 +3,7 @@ import {RemoveRedEye} from '@emotion-icons/material/RemoveRedEye';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-RemoveRedEye.displayName = 'IconFilledRemoveRedEye';
+// "to-newskit-icon.tsx", if it gets overridden
+RemoveRedEye['displayName'] = "IconFilledRemoveRedEye";
 
 export const IconFilledRemoveRedEye = toNewsKitIcon(RemoveRedEye);

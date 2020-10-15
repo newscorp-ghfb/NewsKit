@@ -3,7 +3,7 @@ import {ContentCut} from '@emotion-icons/material/ContentCut';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
-// "to-newskit-icon.tsx", if it gets overritten
-ContentCut.displayName = 'IconFilledContentCut';
+// "to-newskit-icon.tsx", if it gets overridden
+ContentCut['displayName'] = "IconFilledContentCut";
 
 export const IconFilledContentCut = toNewsKitIcon(ContentCut);
