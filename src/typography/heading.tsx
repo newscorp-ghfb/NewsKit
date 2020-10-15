@@ -1,10 +1,9 @@
 import {styled, getTypographyPreset, MQ, getStylePreset} from '../utils/style';
-import {StylePresetKeys, TypographyPresetKeys} from '../theme';
 
 export type HeadingOverrides = {
   overrides?: {
-    stylePreset?: MQ<StylePresetKeys>;
-    typographyPreset?: MQ<TypographyPresetKeys>;
+    stylePreset?: MQ<string>;
+    typographyPreset?: MQ<string>;
   };
 };
 

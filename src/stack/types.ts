@@ -1,9 +1,8 @@
-import {SizingKeys} from '../theme';
 import {AlignSelfValues} from '../stack-child';
 
 export interface CommonStackProps {
-  spaceStack: SizingKeys;
-  spaceInline: SizingKeys;
+  spaceStack: string;
+  spaceInline: string;
   flexGrow: boolean | number;
   flexShrink: boolean | number;
   flowReverse: boolean;

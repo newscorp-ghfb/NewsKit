@@ -1,4 +1,3 @@
-import {SizingKeys, SpacePresetKeys, PaddingPresetKeys} from '../theme';
 import {MQ} from '../utils/style';
 
 export enum TextInputSize {
@@ -18,20 +17,20 @@ export interface TextInputProps
   rules?: Record<string, string | object>;
   dataTestId?: string;
   overrides?: {
-    width?: SizingKeys | string;
+    width?: string;
     input?: {
       stylePreset?: MQ<string>;
-      spaceInset?: MQ<PaddingPresetKeys>;
-      minHeight?: SizingKeys | string;
+      spaceInset?: MQ<string>;
+      minHeight?: string;
       typographyPreset?: MQ<string>;
-      spaceStack?: MQ<SpacePresetKeys>;
-      spaceInline?: MQ<SpacePresetKeys>;
+      spaceStack?: MQ<string>;
+      spaceInline?: MQ<string>;
     };
     label?: {
       stylePreset?: MQ<string>;
       typographyPreset?: MQ<string>;
-      spaceStack?: MQ<SpacePresetKeys>;
-      spaceInline?: MQ<SpacePresetKeys>;
+      spaceStack?: MQ<string>;
+      spaceInline?: MQ<string>;
     };
     assistiveText?: {
       stylePreset?: MQ<string>;

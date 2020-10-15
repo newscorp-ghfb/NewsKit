@@ -9,7 +9,7 @@ import {
   MQ,
 } from '../utils/style';
 import {Stack, Flow, StackProps} from '../stack';
-import {useTheme, SpacePresetKeys, PaddingPresetKeys} from '../theme';
+import {useTheme} from '../theme';
 
 import {getToken} from '../utils/get-token';
 
@@ -21,11 +21,11 @@ export interface ShareBarProps {
     label?: {
       typographyPreset?: MQ<string>;
       stylePreset?: MQ<string>;
-      spaceInline?: MQ<SpacePresetKeys>;
-      spaceInset?: MQ<PaddingPresetKeys>;
+      spaceInline?: MQ<string>;
+      spaceInset?: MQ<string>;
     };
     items?: {
-      spaceInline?: MQ<SpacePresetKeys>;
+      spaceInline?: MQ<string>;
     };
   };
 }

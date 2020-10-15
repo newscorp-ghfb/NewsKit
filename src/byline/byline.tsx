@@ -3,12 +3,7 @@ import {styled, getSpacingFromTheme, getStylePreset, MQ} from '../utils/style';
 import {Link} from '../link';
 import {Stack} from '../stack';
 import {getToken} from '../utils/get-token';
-import {
-  useTheme,
-  TypographyPresetKeys,
-  SpacePresetKeys,
-  StylePresetKeys,
-} from '../theme';
+import {useTheme} from '../theme';
 import {Block} from '../block';
 import {TextBlock} from '../text-block/text-block';
 import {BylineProps, BylineData} from './types';
@@ -18,9 +13,9 @@ const InlineBlock = styled(Block)`
 `;
 
 const getStyledTextBlock = (
-  typographyPreset: MQ<TypographyPresetKeys>,
-  stylePreset: MQ<StylePresetKeys>,
-  spaceInline: MQ<SpacePresetKeys>,
+  typographyPreset: MQ<string>,
+  stylePreset: MQ<string>,
+  spaceInline: MQ<string>,
 ) => ({
   children,
   withSpace = false,
@@ -55,8 +50,8 @@ const getStyledTextBlock = (
 const renderLink = (
   {href, author, ariaLabel}: Partial<BylineData>,
   overrides: {
-    stylePreset: MQ<StylePresetKeys>;
-    typographyPreset: MQ<TypographyPresetKeys>;
+    stylePreset: MQ<string>;
+    typographyPreset: MQ<string>;
   },
 ) => (
   <Link

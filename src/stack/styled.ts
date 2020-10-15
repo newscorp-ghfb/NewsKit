@@ -7,7 +7,7 @@ import {
   StackDistribution,
   StyledStackProps,
 } from './types';
-import {SizingKeys, Theme} from '../theme';
+import {Theme} from '../theme';
 import {ThemeProp} from '../utils/style-types';
 
 export const flowDictionary = {
@@ -36,12 +36,12 @@ const verticalFlows = [
   Flow.VerticalRight,
 ];
 
-export const hasSpacing = (theme: Theme, spaceToken: SizingKeys) =>
+export const hasSpacing = (theme: Theme, spaceToken: string) =>
   theme.sizing[spaceToken] && parseInt(theme.sizing[spaceToken], 10) !== 0;
 
 export const getSpaceInHalf = (
   theme: Theme,
-  spaceToken: SizingKeys,
+  spaceToken: string,
   negative?: boolean,
 ) => `calc(${negative ? '-' : ''}${theme.sizing[spaceToken]}/2)`;
 

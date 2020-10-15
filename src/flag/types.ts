@@ -1,9 +1,3 @@
-import {
-  SizingKeys,
-  IconSizeKeys,
-  PaddingPresetKeys,
-  SpacePresetKeys,
-} from '../theme';
 import {MQ} from '../utils/style';
 
 export enum FlagSize {
@@ -17,15 +11,15 @@ export interface BaseFlagProps {
   overrides?: {
     typographyPreset?: MQ<string>;
     stylePreset?: MQ<string>;
-    spaceInset?: MQ<PaddingPresetKeys>;
+    spaceInset?: MQ<string>;
 
-    width?: SizingKeys | string;
-    height?: SizingKeys | string;
-    minWidth?: SizingKeys | string;
-    minHeight?: SizingKeys | string;
+    width?: string;
+    height?: string;
+    minWidth?: string;
+    minHeight?: string;
 
-    iconSize?: IconSizeKeys;
-    spaceInline?: MQ<SpacePresetKeys>;
+    iconSize?: string;
+    spaceInline?: MQ<string>;
   };
 }
 

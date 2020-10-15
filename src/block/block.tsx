@@ -7,15 +7,14 @@ import {
   getSpacingStackHorizontal,
   getStylePreset,
 } from '../utils/style';
-import {SpacePresetKeys, PaddingPresetKeys, StylePresetKeys} from '../theme';
 
 export interface BlockProps {
   as?: keyof JSX.IntrinsicElements;
   overrides?: {
-    stylePreset?: MQ<StylePresetKeys>;
-    spaceInset?: MQ<PaddingPresetKeys>;
-    spaceInline?: MQ<SpacePresetKeys>;
-    spaceStack?: MQ<SpacePresetKeys>;
+    stylePreset?: MQ<string>;
+    spaceInset?: MQ<string>;
+    spaceInline?: MQ<string>;
+    spaceStack?: MQ<string>;
   };
 }
 

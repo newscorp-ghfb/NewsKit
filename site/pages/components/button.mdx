@@ -42,24 +42,24 @@ Custom props are detailed below:
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     Here are the overrides that the Button accepts:
-    <Prop name="spaceInset" type="MQ<PaddingPresetKeys>">
+    <Prop name="spaceInset" type="MQ<string>">
       If provided, this overrides the padding of the Button. Otherwise,
       spaceInsetSquish020, spaceInsetSquish030 or spaceInsetSquish040 is used
       depending on the `size` prop.
     </Prop>
-    <Prop name="stylePreset" type="MQ<StylePresetKeys>">
+    <Prop name="stylePreset" type="MQ<string>">
       If provided, this overrides the style preset applied to the Button.
     </Prop>
-    <Prop name="typographyPreset" type="MQ<TypographyPresetKeys>">
+    <Prop name="typographyPreset" type="MQ<string>">
       If provided, this overrides the typography preset applied to the Button.
       Otherwise, utilityButton010, utilityButton020 or utilityButton030 is used depending on the
       `size` prop.
     </Prop>
-    <Prop name="spaceInline" type="MQ<SizingKeys>">
+    <Prop name="spaceInline" type="MQ<string>">
       If provided, this overrides the space between multiple children in the
       underlying Stack. If less than 2 children are passed, this prop is irrelevant.
     </Prop>
-    <Prop name="iconSize" type="IconSizeKeys">
+    <Prop name="iconSize" type="string">
       If provided, this overrides the icon size of any child icons. Otherwise,
       iconSize010, iconSize020 or iconSize030 is used depending on the `size`
       prop. If no icons are present in the Button's children then this prop is
@@ -73,21 +73,21 @@ Custom props are detailed below:
         functionality in case it is needed.
       </i>
     </Prop>
-    <Prop name="width" type="SizingKeys | string">
+    <Prop name="width" type="string">
       If provided, this sets a fixed width to the Button. This can be a sizing
       token from the theme, or any CSS length value, e.g. 100% for a full-width
       element.
     </Prop>
-    <Prop name="height" type="SizingKeys | string">
+    <Prop name="height" type="string">
       If provided, this sets a fixed height to the Button. This can be a sizing
       token from the theme, or any CSS length value.
     </Prop>
-    <Prop name="minHeight" type="SizingKeys | string">
+    <Prop name="minHeight" type="string">
       If provided, this sets a minimum height to the Button. This can be a
       sizing token from the theme, or any CSS length value. By default,
       sizing060, sizing080 or sizing090 is used depending on the `size` prop.
     </Prop>
-    <Prop name="minWidth" type="SizingKeys | string">
+    <Prop name="minWidth" type="string">
       If provided, this sets a minimum width to the Button. This can be a sizing
       token from the theme, or any CSS length value. By default, sizing090,
       sizing100 or sizing110 is used depending on the `size` prop.

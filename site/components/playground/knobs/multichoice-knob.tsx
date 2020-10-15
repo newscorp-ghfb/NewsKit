@@ -5,8 +5,6 @@ import {
   getSizingFromTheme,
   css,
   getColorFromTheme,
-  SizingKeys,
-  IconSizeKeys,
   MQ,
 } from 'newskit';
 import {LegacyBlock} from '../../legacy-block';
@@ -17,13 +15,13 @@ export interface Overrides {
   stylePreset?: MQ<string>;
   spaceInset?: MQ<string>;
 
-  width?: SizingKeys | string;
-  height?: SizingKeys | string;
-  minWidth?: SizingKeys | string;
-  minHeight?: SizingKeys | string;
+  width?: string;
+  height?: string;
+  minWidth?: string;
+  minHeight?: string;
 
-  iconSize?: IconSizeKeys;
-  space?: MQ<SizingKeys>;
+  iconSize?: string;
+  space?: MQ<string>;
 }
 export interface MultiChoiceKnobOptions {
   value: string | Overrides;

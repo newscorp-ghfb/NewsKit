@@ -1,20 +1,6 @@
 import {CSSObject} from '@emotion/styled';
 import {getFontSizing} from '../font-sizing';
-import {
-  SpacePresetKeys,
-  PaddingPresetKeys,
-  SizingKeys,
-  BorderRadiusKeys,
-  ShadowKeys,
-  TypographyPreset,
-  TypographyPresetKeys,
-  ColorKeys,
-  MotionKeys,
-  BorderKeys,
-  FontKeys,
-  LineHeightKeys,
-  FontSizeKeys,
-} from '../../theme';
+import {TypographyPreset} from '../../theme';
 import {isFontConfigObject} from '../guards';
 import {getFontProps} from '../get-font-props';
 import {ThemeProp} from '../style-types';
@@ -22,7 +8,7 @@ import {MQ} from './types';
 import {getResponsiveValueFromTheme, getValueFromTheme} from './base';
 
 export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
-  defaultToken?: MQ<TypographyPresetKeys>,
+  defaultToken?: MQ<string>,
   customProp?: Exclude<keyof Props, 'theme'>,
   options?: {withCrop: boolean},
 ) => (props: Props) => {
@@ -69,15 +55,15 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
   return typographyPreset;
 };
 
-export const getMotionFromTheme = getValueFromTheme<MotionKeys>('motions');
+export const getMotionFromTheme = getValueFromTheme<string>('motions');
 
 export const getFontsFromTheme = <Props extends ThemeProp>(
-  defaultToken?: MQ<FontKeys>,
+  defaultToken?: MQ<string>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => (props: Props) => {
   const section = props.theme.fonts;
   const propKeys = (customProp && props[customProp]) || defaultToken;
-  const style = section[propKeys as FontKeys];
+  const style = section[propKeys as string];
 
   if (style && isFontConfigObject(style)) {
     return style.fontFamily;
@@ -86,12 +72,12 @@ export const getFontsFromTheme = <Props extends ThemeProp>(
   return propKeys ? style : '';
 };
 
-export const getColorFromTheme = getValueFromTheme<ColorKeys>('colors');
+export const getColorFromTheme = getValueFromTheme<string>('colors');
 
-export const getSizingFromTheme = getValueFromTheme<SizingKeys>('sizing');
+export const getSizingFromTheme = getValueFromTheme<string>('sizing');
 
 export const getSpacingFromTheme = <Props extends ThemeProp>(
-  defaultToken?: MQ<SpacePresetKeys>,
+  defaultToken?: MQ<string>,
   customProp?: Exclude<keyof Props, 'theme'>,
   cssProp?: string,
 ) => (props: Props) => {
@@ -113,7 +99,7 @@ export const getSpacingFromTheme = <Props extends ThemeProp>(
 };
 
 export const getSpacingInsetFromTheme = <Props extends ThemeProp>(
-  defaultToken?: MQ<PaddingPresetKeys>,
+  defaultToken?: MQ<string>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => (props: Props) => {
   const padding = getResponsiveValueFromTheme('spacePresets')(
@@ -134,7 +120,7 @@ export const getSpacingInsetFromTheme = <Props extends ThemeProp>(
 };
 
 export const getMarginPresetFromTheme = <Props extends ThemeProp>(
-  defaultToken?: MQ<SpacePresetKeys>,
+  defaultToken?: MQ<string>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => (props: Props) => {
   const margin = getResponsiveValueFromTheme('spacePresets')(
@@ -154,22 +140,19 @@ export const getMarginPresetFromTheme = <Props extends ThemeProp>(
   return {margin};
 };
 
-export const getBorderFromTheme = getValueFromTheme<BorderKeys>('borders');
+export const getBorderFromTheme = getValueFromTheme<string>('borders');
 
-export const getBorderRadiusFromTheme = getValueFromTheme<BorderRadiusKeys>(
-  'borders',
-);
+export const getBorderRadiusFromTheme = getValueFromTheme<string>('borders');
 
-export const getShadowFromTheme = getValueFromTheme<ShadowKeys>('shadows');
+export const getShadowFromTheme = getValueFromTheme<string>('shadows');
 
 export const getFontSizingFromTheme = (
-  fontSizeKey: TypographyPresetKeys | FontSizeKeys,
-  lineHeightKey: LineHeightKeys,
+  fontSizeKey: string,
+  lineHeightKey: string,
 ) => ({theme}: ThemeProp) => {
-  const typographyPresets =
-    theme.typographyPresets[fontSizeKey as TypographyPresetKeys];
+  const typographyPresets = theme.typographyPresets[fontSizeKey as string];
   const fontSize = typographyPresets
     ? typographyPresets.fontSize
-    : theme.fonts[fontSizeKey as FontSizeKeys];
+    : theme.fonts[fontSizeKey as string];
   return getFontSizing(fontSize, theme.fonts[lineHeightKey]);
 };

@@ -3,7 +3,6 @@ import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {IconButton} from '..';
 import {ButtonProps, ButtonSize} from '../../button';
 import {Email} from '../../icons/filled/custom/email';
-import {ColorKeys} from '../../theme';
 
 const renderIconButton = (props: ButtonProps) => (
   <IconButton {...props}>
@@ -64,7 +63,7 @@ describe('IconButton', () => {
   test('renders when there is an icon with a colour', () => {
     const props = {
       size: ButtonSize.Small,
-      iconColor: 'buttonText' as ColorKeys,
+      iconColor: 'buttonText' as string,
     };
     const fragment = renderToFragmentWithTheme(renderIconButton, props);
     expect(fragment).toMatchSnapshot();

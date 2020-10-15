@@ -1,17 +1,15 @@
 import React from 'react';
 import {StyledComponent} from '@emotion/styled';
-import {styled, ColorKeys, SizingKeys, Theme} from 'newskit';
+import {styled, Theme} from 'newskit';
 import {build} from './style-builder';
 import {LegacyBlockProps, StyledBlockProps} from './types';
 
 const getStyleFromProps = (props: StyledBlockProps & {theme: Theme}) => {
   const {breakpoints, colors, typographyPresets, sizing} = props.theme;
 
-  const getColor = (color: ColorKeys | string) =>
-    colors[color as ColorKeys] || color;
+  const getColor = (color: string) => colors[color as string] || color;
 
-  const getSize = (size: SizingKeys | string) =>
-    sizing[size as SizingKeys] || size;
+  const getSize = (size: string) => sizing[size as string] || size;
 
   return build(breakpoints)
     .apply({
@@ -139,32 +137,32 @@ const getStyleFromProps = (props: StyledBlockProps & {theme: Theme}) => {
     .apply({
       property: 'width',
       value: props.$width,
-      transform: width => getSize(width as SizingKeys),
+      transform: width => getSize(width as string),
     })
     .apply({
       property: 'height',
       value: props.$height,
-      transform: height => getSize(height as SizingKeys),
+      transform: height => getSize(height as string),
     })
     .apply({
       property: 'maxWidth',
       value: props.maxWidth,
-      transform: maxWidth => getSize(maxWidth as SizingKeys),
+      transform: maxWidth => getSize(maxWidth as string),
     })
     .apply({
       property: 'maxHeight',
       value: props.maxHeight,
-      transform: maxHeight => getSize(maxHeight as SizingKeys),
+      transform: maxHeight => getSize(maxHeight as string),
     })
     .apply({
       property: 'minWidth',
       value: props.minWidth,
-      transform: minWidth => getSize(minWidth as SizingKeys),
+      transform: minWidth => getSize(minWidth as string),
     })
     .apply({
       property: 'minHeight',
       value: props.minHeight,
-      transform: minHeight => getSize(minHeight as SizingKeys),
+      transform: minHeight => getSize(minHeight as string),
     })
     .apply({
       property: 'display',

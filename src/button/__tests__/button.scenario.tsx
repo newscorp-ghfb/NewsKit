@@ -7,7 +7,6 @@ import {Pause, Email, IconFilledLink} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
-import {IconSizeKeys} from '../../theme';
 
 const Container = styled.div`
   margin: 24px;
@@ -71,7 +70,7 @@ enum ButtonPositiveStyles {
 
 const buttonSizes: Array<{
   buttonSize: ButtonSize;
-  iconSize: IconSizeKeys;
+  iconSize: string;
 }> = [
   {buttonSize: ButtonSize.Small, iconSize: 'iconSize040'},
   {buttonSize: ButtonSize.Medium, iconSize: 'iconSize050'},

@@ -1,12 +1,10 @@
 import React from 'react';
 import {styled, getStylePreset, MQ} from '../utils/style';
 
-import {StylePresetKeys} from '../theme';
-
 interface DividerProps {
   vertical?: boolean;
   overrides?: {
-    stylePreset?: MQ<StylePresetKeys>;
+    stylePreset?: MQ<string>;
   };
 }
 

@@ -1,23 +1,21 @@
-import {SizingKeys} from '../theme';
-
 export interface GridProps {
-  xsMargin?: SizingKeys;
-  smMargin?: SizingKeys;
-  mdMargin?: SizingKeys;
-  lgMargin?: SizingKeys;
-  xlMargin?: SizingKeys;
+  xsMargin?: string;
+  smMargin?: string;
+  mdMargin?: string;
+  lgMargin?: string;
+  xlMargin?: string;
 
-  xsColumnGutter?: SizingKeys;
-  smColumnGutter?: SizingKeys;
-  mdColumnGutter?: SizingKeys;
-  lgColumnGutter?: SizingKeys;
-  xlColumnGutter?: SizingKeys;
+  xsColumnGutter?: string;
+  smColumnGutter?: string;
+  mdColumnGutter?: string;
+  lgColumnGutter?: string;
+  xlColumnGutter?: string;
 
-  xsRowGutter?: SizingKeys;
-  smRowGutter?: SizingKeys;
-  mdRowGutter?: SizingKeys;
-  lgRowGutter?: SizingKeys;
-  xlRowGutter?: SizingKeys;
+  xsRowGutter?: string;
+  smRowGutter?: string;
+  mdRowGutter?: string;
+  lgRowGutter?: string;
+  xlRowGutter?: string;
 }
 
 export interface CellProps {

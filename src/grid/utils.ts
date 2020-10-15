@@ -1,4 +1,4 @@
-import {BreakpointKeys, GridKeys} from '../theme';
+import {BreakpointKeys} from '../theme';
 import {ThemeProp} from '../utils/style-types';
 import {GridProps} from './types';
 
@@ -26,7 +26,7 @@ export const getOverridableProp = (
     .map(bkp => props[`${bkp}${prop}` as keyof GridProps])
     .filter(Boolean)[0];
 
-  const themeKey = propThemeMap[prop] as GridKeys;
+  const themeKey = propThemeMap[prop] as string;
 
   // Gutter from theme is a px number, but override is a string token, so convert it to px number.
   return gutterOverrideToken

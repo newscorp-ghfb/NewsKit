@@ -1,9 +1,9 @@
 import * as React from 'react';
-import {Svg, IconSizeKeys, ColorKeys, Theme, withTheme} from 'newskit';
+import {Svg, Theme, withTheme} from 'newskit';
 
 interface SlackLogoProps {
-  size: IconSizeKeys;
-  color: ColorKeys;
+  size: string;
+  color: string;
 }
 
 const SlackLogo: React.FC<SlackLogoProps & {theme: Theme}> = props => {

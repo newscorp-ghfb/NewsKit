@@ -1,8 +1,8 @@
 import {breakpoints} from '../../theme/foundations/breakpoints';
 import {OverrideProp, getOverridableProp} from '../utils';
-import {GridKeys, BreakpointKeys} from '../../theme';
+import {BreakpointKeys} from '../../theme';
 
-type Test = [OverrideProp, GridKeys];
+type Test = [OverrideProp, string];
 
 const breakpointKeys = Object.keys(breakpoints);
 

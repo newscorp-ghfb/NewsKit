@@ -43,24 +43,24 @@ Tabs have a number of props to facilitate a variety of uses:
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     Here are the overrides that the Tab accepts:
-    <Prop name="spaceInset" type="MQ<PaddingPresetKeys>">
+    <Prop name="spaceInset" type="MQ<string>">
       If provided, this overrides the padding of the Tab. Otherwise,
       spaceInsetSquish020 or spaceInsetSquish030 is used depending on the `size`
       prop.
     </Prop>
-    <Prop name="stylePreset" type="MQ<StylePresetKeys>">
+    <Prop name="stylePreset" type="MQ<string>">
       If provided, this overrides the style preset applied to the Tab.
     </Prop>
-    <Prop name="typographyPreset" type="MQ<TypographyPresetKeys>">
+    <Prop name="typographyPreset" type="MQ<string>">
       If provided, this overrides the typography preset applied to the Tab. Otherwise,
       label020 or label030 is used depending on the `size` prop.
     </Prop>
-    <Prop name="spaceInline" type="MQ<SizingKeys>">
+    <Prop name="spaceInline" type="MQ<string>">
       If provided, this overrides the space between multiple children in the
       underlying Stack. If less than 2 children are passed, this prop is
       irrelevant.
     </Prop>
-    <Prop name="iconSize" type="IconSizeKeys">
+    <Prop name="iconSize" type="string">
       If provided, this overrides the icon size of any child icons. Otherwise,
       iconSize010, iconSize020 or iconSize030 is used depending on the `size` prop. If no icons
       are present in the Tab's children then this prop is irrelevant.
@@ -71,7 +71,7 @@ Tabs have a number of props to facilitate a variety of uses:
       We discourage this approach but we will keep the functionality
       in case it is needed.</i>
     </Prop>
-    <Prop name="minHeight" type="SizingKeys | string">
+    <Prop name="minHeight" type="string">
       If provided, this sets a minimum height to the Tab. This can be a sizing
       token from the theme, or any CSS length value. By default, sizing060,
       sizing080 or sizing090 is used depending on the `size` prop.
@@ -168,7 +168,7 @@ Tabs have a number of props to facilitate a variety of uses:
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     Here are the overrides that the Tab Group accepts:
-    <Prop name="stylePreset" type="MQ<StylePresetKeys>">
+    <Prop name="stylePreset" type="MQ<string>">
       If provided, this overrides the style preset applied to the Tab Group.
     </Prop>
     Refer to the defaults below for the object structure:

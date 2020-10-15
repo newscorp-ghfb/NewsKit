@@ -6,22 +6,22 @@ import {StyledLi, StyledUl} from './styled';
 import {TextBlock} from '../text-block';
 import {Block} from '../block';
 
-import {useTheme, IconSizeKeys, SpacePresetKeys} from '../theme';
+import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 import {IconComponent} from '../icons';
 
 export interface UnorderedListProps {
   listItemMarker?: IconComponent;
   overrides?: {
-    spaceStack?: MQ<SpacePresetKeys>;
+    spaceStack?: MQ<string>;
     content?: {
       stylePreset?: MQ<string>;
       typographyPreset?: MQ<string>;
     };
     marker?: {
       stylePreset?: MQ<string>;
-      spaceInline?: MQ<SpacePresetKeys>;
-      size?: IconSizeKeys;
+      spaceInline?: MQ<string>;
+      size?: string;
     };
   };
 }

@@ -1,7 +1,6 @@
 import {styled} from '../utils/style';
 import {Grid} from '../grid/grid';
 import {Hidden} from '../grid';
-import {SizingKeys} from '../theme';
 
 export const PlayerGrid = styled(Grid)`
   box-sizing: border-box;
@@ -12,7 +11,7 @@ export const PlayerContainer = styled.section`
 `;
 
 export const ControlContainer = styled(Hidden)<{
-  playerTrackSize: SizingKeys;
+  playerTrackSize: string;
 }>`
   box-sizing: border-box;
   width: calc(

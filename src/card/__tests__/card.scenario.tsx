@@ -11,12 +11,7 @@ import {TextBlock} from '../../text-block';
 import {Block} from '../../block';
 import {Picture} from '../../icons';
 import {styled} from '../../utils/style';
-import {
-  createTheme,
-  StylePresetKeys,
-  ThemeProvider,
-  TypographyPresetKeys,
-} from '../../theme';
+import {createTheme, ThemeProvider} from '../../theme';
 
 const ContainerWithBackground = styled.div`
   background: ${({theme}) => theme.colors.interface040};
@@ -51,7 +46,7 @@ const cardTeaserLeadInsetVariant = 'space000';
 const cardActions = 'sizing040';
 
 // Typography Presets
-const cardTypographyPresets: {[index: string]: TypographyPresetKeys} = {
+const cardTypographyPresets: {[index: string]: string} = {
   cardTeaserKickerLarge: 'editorialHeading050',
   cardTeaserKickerMedium: 'editorialHeading030',
   cardTeaserKickerSmall: 'editorialHeading010',
@@ -448,15 +443,15 @@ export default {
                     }}
                     actions={cardSmallTags}
                     overrides={{
-                      stylePreset: 'cardContainerMock' as StylePresetKeys,
+                      stylePreset: 'cardContainerMock' as string,
                       mediaContainer: {
-                        stylePreset: 'cardContainerMediaMock' as StylePresetKeys,
+                        stylePreset: 'cardContainerMediaMock' as string,
                       },
                       teaserContainer: {
-                        stylePreset: 'cardContainerTeaserMock' as StylePresetKeys,
+                        stylePreset: 'cardContainerTeaserMock' as string,
                       },
                       actionsContainer: {
-                        stylePreset: 'cardContainerActionsMock' as StylePresetKeys,
+                        stylePreset: 'cardContainerActionsMock' as string,
                         minHeight: 'sizing090',
                       },
                     }}
@@ -490,15 +485,15 @@ export default {
                     }}
                     actions={cardSmallTags}
                     overrides={{
-                      stylePreset: 'cardContainerMock' as StylePresetKeys,
+                      stylePreset: 'cardContainerMock' as string,
                       mediaContainer: {
-                        stylePreset: 'cardContainerMediaMock' as StylePresetKeys,
+                        stylePreset: 'cardContainerMediaMock' as string,
                       },
                       teaserContainer: {
-                        stylePreset: 'cardContainerTeaserMock' as StylePresetKeys,
+                        stylePreset: 'cardContainerTeaserMock' as string,
                       },
                       actionsContainer: {
-                        stylePreset: 'cardContainerActionsMock' as StylePresetKeys,
+                        stylePreset: 'cardContainerActionsMock' as string,
                       },
                     }}
                   >

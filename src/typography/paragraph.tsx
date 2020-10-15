@@ -9,19 +9,17 @@ import {
 
 import {ScreenReaderOnly} from '../screen-reader-only';
 
-import {StylePresetKeys, TypographyPresetKeys, SizingKeys} from '../theme';
-
 export interface ParagraphProps {
   // eslint-disable-next-line
   children: any;
   dropCap?: boolean;
   overrides?: {
-    stylePreset?: MQ<StylePresetKeys>;
-    typographyPreset?: MQ<TypographyPresetKeys>;
+    stylePreset?: MQ<string>;
+    typographyPreset?: MQ<string>;
     dropCap?: {
-      stylePreset?: MQ<StylePresetKeys>;
-      typographyPreset?: MQ<TypographyPresetKeys>;
-      space?: MQ<SizingKeys>;
+      stylePreset?: MQ<string>;
+      typographyPreset?: MQ<string>;
+      space?: MQ<string>;
     };
   };
 }

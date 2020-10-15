@@ -8,8 +8,6 @@ import {
   getTypographyPresetFromTheme,
   getSizingFromTheme,
   getColorFromTheme,
-  TypographyPresetKeys,
-  ColorKeys,
 } from 'newskit';
 import {LegacyBlock} from './legacy-block';
 import slugify from '../helpers/slugify';
@@ -48,7 +46,7 @@ const Code: React.FC<TextProps> = ({children}) => (
 
 interface HeadingContainerProps {
   as: React.ElementType;
-  font: TypographyPresetKeys;
+  font: string;
   weight?: number;
   lineHeight?: number;
   size?: string;
@@ -57,7 +55,7 @@ interface HeadingContainerProps {
   marginTop?: string;
   paddingTop?: string;
   wrapText?: boolean;
-  color?: ColorKeys;
+  color?: string;
 }
 
 const TextElement = styled.span<HeadingContainerProps>`
@@ -94,7 +92,7 @@ export const Heading = ({
   wrapText,
 }: {
   element: React.ElementType;
-  fontType: TypographyPresetKeys;
+  fontType: string;
   children?: React.ReactChild;
   weight?: number;
   size?: string;

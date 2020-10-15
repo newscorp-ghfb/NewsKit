@@ -1,9 +1,7 @@
 import * as React from 'react';
 import {
-  ColorKeys,
   withTheme,
   Theme,
-  SizingKeys,
   styled,
   getSizingFromTheme,
   getColorFromTheme,
@@ -19,12 +17,12 @@ const LogoWrapper = styled.div`
 
 interface StyledNewsKitMobileLogo {
   viewBox?: string;
-  $color: ColorKeys;
-  size: SizingKeys;
+  $color: string;
+  size: string;
 }
 
 type NewsKitMobileLogoPorps = Omit<StyledNewsKitMobileLogo, '$color'> & {
-  color: ColorKeys;
+  color: string;
 };
 
 const LogoSvg = styled.svg<StyledNewsKitMobileLogo>`

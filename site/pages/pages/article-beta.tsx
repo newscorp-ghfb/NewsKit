@@ -14,7 +14,6 @@ import {
   getMediaQueryFromTheme,
   getSizingFromTheme,
   getTypographyPresetFromTheme,
-  SizingKeys,
   getColorFromTheme,
   IconButton,
   ButtonSize,
@@ -31,8 +30,8 @@ import Layout from '../../components/layout';
 import PageTitle from '../../components/page-title';
 
 const LayoutContainer = styled.div<{
-  marginBottom?: SizingKeys;
-  mdMarginBottom?: SizingKeys;
+  marginBottom?: string;
+  mdMarginBottom?: string;
 }>`
   margin-bottom: ${getSizingFromTheme(undefined, 'marginBottom')};
 

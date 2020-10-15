@@ -3,8 +3,6 @@ import {
   createTheme, 
   newskitLightTheme, 
   StylePresetStyleKeys,
-  TypographyPresetKeys,
-  SpacePresetKeys,
   MQ,
   styled,
   getStylePreset,
@@ -42,17 +40,17 @@ const customTheme = createTheme('newskit-light-custom', {
 export interface CustomComponentProps {
   overrides?: {
     stylePreset?: MQ<StylePresetStyleKeys>,
-    typographyPreset?: MQ<TypographyPresetKeys>,
-    spaceInline?: MQ<SpacePresetKeys>,
-    spaceInset?: MQ<SpacePresetKeys>,
+    typographyPreset?: MQ<string>,
+    spaceInline?: MQ<string>,
+    spaceInset?: MQ<string>,
     nkComponent1: {
       stylePreset?: MQ<StylePresetStyleKeys>,
-      spaceInline?: MQ<SpacePresetKeys>,
-      spaceStack?: MQ<SpacePresetKeys>,
+      spaceInline?: MQ<string>,
+      spaceStack?: MQ<string>,
     },
     nkComponent2: {
       stylePreset?: MQ<StylePresetStyleKeys>,
-      spaceStack?: MQ<SpacePresetKeys>,
+      spaceStack?: MQ<string>,
     },
   };
 }

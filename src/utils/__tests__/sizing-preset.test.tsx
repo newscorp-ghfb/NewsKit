@@ -5,11 +5,10 @@ import {
   styled,
   MQ,
 } from '../style';
-import {SpacePresetKeys, PaddingPresetKeys} from '../../theme';
 
 interface SpacingPresetProp {
-  margin?: MQ<SpacePresetKeys>;
-  padding?: MQ<PaddingPresetKeys>;
+  margin?: MQ<string>;
+  padding?: MQ<string>;
 }
 
 const TestBlock = styled.div<SpacingPresetProp>`

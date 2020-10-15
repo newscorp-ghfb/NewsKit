@@ -57,7 +57,7 @@ Text Input has a number of props to facilitate a variety of uses:
   </Prop>
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
-    <Prop name="width" type="SizingKeys | string">
+    <Prop name="width" type="string">
       If provided, this sets a fixed width to the text input. This can be a sizing token
       from the theme, or any CSS length value, e.g. 100% for a full-width element.
     </Prop>
@@ -65,23 +65,23 @@ Text Input has a number of props to facilitate a variety of uses:
       <Prop name="placeholder" type="string">
         If provided, this overrides the placeholder text applied to the text input.
       </Prop>
-      <Prop name="stylePreset" type="MQ<StylePresetKeys>">
+      <Prop name="stylePreset" type="MQ<string>">
         If provided, this overrides the style preset applied to the text input.
       </Prop>
-      <Prop name="spaceInset" type="MQ<PaddingPresetKeys>">
+      <Prop name="spaceInset" type="MQ<string>">
         If provided, this overrides the padding of the Text Input. Otherwise,
         spaceInsetSquish010 or spaceInset030 is used depending on the `size`
         prop.
       </Prop>
-      <Prop name="typographyPreset" type="MQ<TypographyPresetKeys>">
+      <Prop name="typographyPreset" type="MQ<string>">
         If provided, this overrides the type preset applied to the text input. Otherwise,
         utilityBody020 or utilityBody030 is used depending on the `size` prop.
       </Prop>
-      <Prop name="spaceStack" type="MQ<SpacePresetKeys>">
+      <Prop name="spaceStack" type="MQ<string>">
         This is a spacing preset token which is applied as a margin on the bottom of
         the Block. Use this to space stacking content down the page.
       </Prop>
-      <Prop name="minHeight" type="SizingKeys | string">
+      <Prop name="minHeight" type="string">
         If provided, this sets a minimum height to the Text Input. This can be a sizing
         token from the theme, or any CSS length value. By default, sizing060,
         sizing080 or sizing090 is used depending on the `size` prop.
@@ -97,31 +97,31 @@ Text Input has a number of props to facilitate a variety of uses:
       </Prop>
     </Prop>
     <Prop name="inputLabel" type="object">
-      <Prop name="stylePreset" type="MQ<StylePresetKeys>">
+      <Prop name="stylePreset" type="MQ<string>">
         If provided, this overrides the style preset applied to the text input label.
       </Prop>
-      <Prop name="typographyPreset" type="MQ<TypographyPresetKeys>">
+      <Prop name="typographyPreset" type="MQ<string>">
         If provided, this overrides the type preset applied to the text input label. Otherwise,
         label030 or label040 is used depending on the `size` prop.
       </Prop>
-      <Prop name="spaceInline" type="MQ<SpacePresetKeys>">
+      <Prop name="spaceInline" type="MQ<string>">
         This is a spacing preset token which is applied as a margin on the right of
         the text input label. Use this to space inline content across the page.
       </Prop>
-      <Prop name="spaceStack" type="MQ<SpacePresetKeys>">
+      <Prop name="spaceStack" type="MQ<string>">
         This is a spacing preset token which is applied as a margin on the bottom of
         the text input label. Use this to space stacking content down the page.
       </Prop>
     </Prop>
     <Prop name="assistiveText" type="object">
-      <Prop name="stylePreset" type="MQ<StylePresetKeys>">
+      <Prop name="stylePreset" type="MQ<string>">
         If provided, this overrides the style preset applied to the assistive text.
       </Prop>
-      <Prop name="typographyPreset" type="MQ<TypographyPresetKeys>">
+      <Prop name="typographyPreset" type="MQ<string>">
         If provided, this overrides the type preset applied to the text input. Otherwise,
         utilityLabel020 or utilityLabel030 is used depending on the `size` prop.
       </Prop>
-      <Prop name="minHeight" type="SizingKeys | string">
+      <Prop name="minHeight" type="string">
         If provided, this sets a minimum height to the assistive text container.
         This is used to prevent the layout shift in page when the assistive text shows and hides.
       </Prop>

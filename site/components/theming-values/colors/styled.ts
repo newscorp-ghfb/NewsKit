@@ -2,7 +2,6 @@
 import {
   styled,
   Flag,
-  ColorKeys,
   getTypographyPresetFromTheme,
   getBorderRadiusFromTheme,
   getColorFromTheme,
@@ -33,7 +32,7 @@ export const StyledSwatchRow = styled.span<
   padding: ${getSpacingFromTheme('spaceInsetSquish030')};
   width: 100%;
   border-radius: ${getBorderRadius as any};
-  background-color: ${({theme, name}) => theme.colors[name as ColorKeys]};
+  background-color: ${({theme, name}) => theme.colors[name as string]};
   border: ${({brightness, value}) =>
     brightness > 0.99 || value === 'transparent' ? `solid 1px black` : null};
   color: ${getTextColor};
@@ -52,9 +51,7 @@ export const StyledSwatchCardTop = styled.div<
 >`
   height: ${getSizingFromTheme('sizing100')};
   background: ${({theme, name, isOverlay}) =>
-    isOverlay
-      ? theme.overlays[name as ColorKeys]
-      : theme.colors[name as ColorKeys]};
+    isOverlay ? theme.overlays[name as string] : theme.colors[name as string]};
   padding: ${getSpacingFromTheme('spaceInset020')};
 `;
 
@@ -82,7 +79,7 @@ export const StyledSwatchCardDot = styled.div<{backgroundColor: string}>`
 `;
 
 export const TextBoxSwatch = styled.span<{
-  themeColor: ColorKeys;
+  themeColor: string;
   dark?: boolean;
 }>`
   display: inline-block;

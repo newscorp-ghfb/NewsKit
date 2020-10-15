@@ -1,6 +1,5 @@
 import {StylePreset, TypographyPreset} from './presets/types';
 import {DeepPartial} from '../utils/types';
-import {colors} from './foundations';
 
 export type Breakpoints = Record<'xs' | 'sm' | 'md' | 'lg' | 'xl', number>;
 export enum Devices {
@@ -46,22 +45,5 @@ export interface Theme extends ThemeBase, ThemeIdentifier {
   compiled: true;
 }
 
-export type MotionKeys = string;
-export type BorderKeys = string;
-export type BorderRadiusKeys = string;
 export type BreakpointKeys = keyof Breakpoints;
-export type ColorKeys = string;
-export type IconSizeKeys = string;
-export type SizingKeys = string;
-export type StylePresetKeys = string;
-export type TypographyPresetKeys = string;
-export type SpacePresetKeys = string;
-export type PaddingPresetKeys = string;
-export type ShadowKeys = string;
-export type GridKeys = string;
-export type FontKeys = string;
-export type FontSizeKeys = string;
-export type LineHeightKeys = string;
-export type Colors = typeof colors;
-
 export * from './presets/types';

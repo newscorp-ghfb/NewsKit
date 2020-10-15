@@ -7,21 +7,19 @@ import {
   getStylePreset,
 } from '../utils/style';
 
-import {TypographyPresetKeys, StylePresetKeys, SpacePresetKeys} from '../theme';
-
 export interface HeadlineProps {
   kickerText?: string;
   headingAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
   kickerAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
   overrides?: {
     kicker?: {
-      stylePreset?: MQ<StylePresetKeys>;
-      typographyPreset?: MQ<TypographyPresetKeys>;
-      spaceInline?: MQ<SpacePresetKeys>;
+      stylePreset?: MQ<string>;
+      typographyPreset?: MQ<string>;
+      spaceInline?: MQ<string>;
     };
     heading?: {
-      stylePreset?: MQ<StylePresetKeys>;
-      typographyPreset?: MQ<TypographyPresetKeys>;
+      stylePreset?: MQ<string>;
+      typographyPreset?: MQ<string>;
     };
   };
 }

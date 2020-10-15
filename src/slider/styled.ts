@@ -12,7 +12,6 @@ import {
   ThumbLabelProps,
   LabelPosition,
 } from './types';
-import {SizingKeys} from '../theme';
 import {Stack, StackProps} from '../stack';
 
 import {ThemeProp} from '../utils/style-types';
@@ -27,7 +26,7 @@ const ifVertical = (value?: string, elseValue?: string) => ({
   theme,
 }: VerticalProp & ThemeProp) => {
   const maybeToken = vertical ? value : elseValue;
-  return theme.sizing[maybeToken as SizingKeys] || maybeToken;
+  return theme.sizing[maybeToken as string] || maybeToken;
 };
 
 type CursorProps = Pick<StyledTrackProps, 'disabled' | 'isDragged' | 'values'>;

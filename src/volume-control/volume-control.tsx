@@ -4,7 +4,7 @@ import {IconButton} from '../icon-button';
 import {VolumeControlProps} from './types';
 import {Slider} from '../slider';
 import {VolumeUp, VolumeDown, VolumeMute} from '../icons';
-import {IconSizeKeys, useTheme} from '../theme';
+import {useTheme} from '../theme';
 import {ScreenReaderOnly} from '../screen-reader-only/screen-reader-only';
 import {getSSRId} from '../utils/get-ssr-id';
 import {getTokensForVolumeControl} from './utils';
@@ -15,7 +15,7 @@ interface MuteButtonProps {
   unMutedVolume: number;
   onChange: VolumeControlProps['onChange'];
   volumeControlButtonStylePreset?: MQ<string>;
-  iconSize: IconSizeKeys;
+  iconSize: string;
   size: ButtonSize;
 }
 

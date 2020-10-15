@@ -1,11 +1,5 @@
 import {ImageProps} from '../image/types';
 import {MQ} from '../utils/style';
-import {
-  SizingKeys,
-  PaddingPresetKeys,
-  StylePresetKeys,
-  SpacePresetKeys,
-} from '../theme';
 
 export interface CardProps {
   href?: string;
@@ -14,19 +8,19 @@ export interface CardProps {
   actions?: React.ComponentType;
 
   overrides?: {
-    stylePreset?: MQ<StylePresetKeys>;
+    stylePreset?: MQ<string>;
     mediaContainer?: {
-      stylePreset?: MQ<StylePresetKeys>;
-      spaceInline?: MQ<SpacePresetKeys>;
+      stylePreset?: MQ<string>;
+      spaceInline?: MQ<string>;
     };
     teaserContainer?: {
-      stylePreset?: MQ<StylePresetKeys>;
-      spaceInset?: MQ<PaddingPresetKeys>;
+      stylePreset?: MQ<string>;
+      spaceInset?: MQ<string>;
     };
     actionsContainer?: {
-      stylePreset?: MQ<StylePresetKeys>;
-      spaceInset?: MQ<PaddingPresetKeys>;
-      minHeight?: SizingKeys | string;
+      stylePreset?: MQ<string>;
+      spaceInset?: MQ<string>;
+      minHeight?: string;
     };
   };
 }

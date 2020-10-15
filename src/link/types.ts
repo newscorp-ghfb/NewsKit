@@ -1,9 +1,3 @@
-import {
-  TypographyPresetKeys,
-  IconSizeKeys,
-  StylePresetKeys,
-  SpacePresetKeys,
-} from '../theme';
 import {MQ} from '../utils/style';
 import {EventData} from '../instrumentation';
 
@@ -15,11 +9,11 @@ export interface LinkProps
   external?: boolean;
   noUnderline?: boolean;
   overrides?: {
-    stylePreset?: MQ<StylePresetKeys>;
-    typographyPreset?: MQ<TypographyPresetKeys>;
-    spaceInline?: MQ<SpacePresetKeys>;
+    stylePreset?: MQ<string>;
+    typographyPreset?: MQ<string>;
+    spaceInline?: MQ<string>;
     externalIcon?: {
-      size?: IconSizeKeys;
+      size?: string;
     };
   };
 }

@@ -1,9 +1,8 @@
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {getTypographyPresetFromTheme, styled, MQ} from '../style';
-import {TypographyPresetKeys} from '../../theme';
 
 interface TestTextProp {
-  typographyPreset: MQ<TypographyPresetKeys>;
+  typographyPreset: MQ<string>;
 }
 
 const TestText = styled.p<TestTextProp>`

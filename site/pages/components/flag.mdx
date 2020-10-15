@@ -3,7 +3,7 @@ import Playground from '../../components/playground';
 import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
-import {Flag, FlagSize, PaddingPresetKeys, Sub} from 'newskit';
+import {Flag, FlagSize, Sub} from 'newskit';
 import {CodeFromDefaultPresets} from '../../components/code';
 
 export default Layout;
@@ -33,23 +33,23 @@ Flags have a number of props to facilitate a variety of uses:
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     Here are the overrides that the Flag accepts:
-    <Prop name="spaceInset" type="MQ<PaddingPresetKeys>">
+    <Prop name="spaceInset" type="MQ<string>">
       If provided, this overrides the padding of the Flag. Otherwise,
       spaceInsetSquish010 or spaceInsetSquish020 is used depending on the `size`
       prop.
     </Prop>
-    <Prop name="stylePreset" type="MQ<StylePresetKeys>">
+    <Prop name="stylePreset" type="MQ<string>">
       If provided, this overrides the style preset applied to the Flag.
     </Prop>
-    <Prop name="typographyPreset" type="MQ<TypographyPresetKeys>">
+    <Prop name="typographyPreset" type="MQ<string>">
       If provided, this overrides the typography preset applied to the Flag. Otherwise,
       utilityLabel010 or utilityLabel030 is used depending on the `size` prop.
     </Prop>
-    <Prop name="spaceInline" type="MQ<SizingKeys>">
+    <Prop name="spaceInline" type="MQ<string>">
       If provided, this overrides the space between multiple children in the
       underlying Stack. If less than 2 children are passed, this prop is irrelevant. 
     </Prop>
-    <Prop name="iconSize" type="IconSizeKeys">
+    <Prop name="iconSize" type="string">
       If provided, this overrides the icon size of any child icons. If no icons
       are present in the Flag's children then this prop is irrelevant.
       <br />
@@ -59,15 +59,15 @@ Flags have a number of props to facilitate a variety of uses:
       We discourage this approach but we will keep the functionality
       in case it is needed.</i>
     </Prop>
-    <Prop name="width" type="SizingKeys | string">
+    <Prop name="width" type="string">
       If provided, this sets a fixed width to the Flag. This can be a sizing token
       from the theme, or any CSS length value, e.g. 100% for a full-width element.
     </Prop>
-    <Prop name="height" type="SizingKeys | string">
+    <Prop name="height" type="string">
       If provided, this sets a fixed height to the Flag. This can be a sizing
       token from the theme, or any CSS length value.
     </Prop>
-    <Prop name="minHeight" type="SizingKeys | string">
+    <Prop name="minHeight" type="string">
       If provided, this sets a minimum height to the Flag. This can be a sizing
       token from the theme, or any CSS length value. By default, sizing050 or
       sizing060 is used depending on the `size` prop.

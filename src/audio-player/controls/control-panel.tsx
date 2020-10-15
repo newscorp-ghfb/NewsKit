@@ -5,7 +5,7 @@ import {PlayerButton} from './play-pause';
 import {SkipPreviousButton, SkipNextButton} from './skip-track';
 import {Stack, StackDistribution, Flow} from '../../stack';
 import {StackChild} from '../../stack-child';
-import {StylePresetKeys, SizingKeys, useTheme} from '../../theme';
+import {useTheme} from '../../theme';
 import {getToken} from '../../utils/get-token';
 
 export interface TrackControlProps {
@@ -16,24 +16,24 @@ export interface TrackControlProps {
 }
 
 export interface ControlsOverrideProps {
-  space?: MQ<SizingKeys>;
+  space?: MQ<string>;
   previousButton?: {
-    stylePreset?: MQ<StylePresetKeys>;
+    stylePreset?: MQ<string>;
   };
   replayButton?: {
-    stylePreset?: MQ<StylePresetKeys>;
+    stylePreset?: MQ<string>;
   };
   playPauseButton?: {
-    stylePreset?: MQ<StylePresetKeys>;
+    stylePreset?: MQ<string>;
   };
   forwardButton?: {
-    stylePreset?: MQ<StylePresetKeys>;
+    stylePreset?: MQ<string>;
   };
   nextButton?: {
-    stylePreset?: MQ<StylePresetKeys>;
+    stylePreset?: MQ<string>;
   };
   popoutButton?: {
-    stylePreset?: MQ<StylePresetKeys>;
+    stylePreset?: MQ<string>;
   };
 }
 

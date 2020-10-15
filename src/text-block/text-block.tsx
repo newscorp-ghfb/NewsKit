@@ -1,12 +1,11 @@
 import React from 'react';
 import {styled, getTypographyPreset, MQ, getStylePreset} from '../utils/style';
-import {StylePresetKeys, TypographyPresetKeys} from '../theme';
 import {isInlineElement} from '../utils/inline-tags';
 
 export interface TextBlockProps {
   overrides?: {
-    typographyPreset?: MQ<TypographyPresetKeys>;
-    stylePreset?: MQ<StylePresetKeys>;
+    typographyPreset?: MQ<string>;
+    stylePreset?: MQ<string>;
   };
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'div' | 'span';
 }

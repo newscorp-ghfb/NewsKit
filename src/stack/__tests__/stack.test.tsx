@@ -1,6 +1,5 @@
 import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {SizingKeys} from '../../theme';
 import {Stack} from '../stack';
 import {Flow, StackDistribution} from '../types';
 import {getColorFromTheme, styled} from '../../utils/style';
@@ -133,7 +132,7 @@ describe('Stack', () => {
   });
 
   Object.values(Flow).forEach(flowKey => {
-    (['sizing000', 'sizing090', 'sizing120'] as SizingKeys[]).forEach(size => {
+    (['sizing000', 'sizing090', 'sizing120'] as string[]).forEach(size => {
       Object.values(['wrap', 'nowrap']).forEach(wrapType => {
         test(`renders where the stack flow is ${flowKey} and the spaceInline & spaceStack is set to ${size}`, () => {
           const fragment = renderToFragmentWithTheme(Stack, {

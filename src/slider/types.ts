@@ -1,5 +1,4 @@
 import {Range} from 'react-range';
-import {SizingKeys, StylePresetKeys, TypographyPresetKeys} from '../theme';
 import {IconComponent} from '../icons';
 import {MQ} from '../utils/style';
 
@@ -8,25 +7,25 @@ type RenderThumbFunction = Range['props']['renderThumb'];
 
 export interface SliderOverrideProps {
   track?: {
-    stylePreset?: MQ<StylePresetKeys>;
-    size?: SizingKeys;
+    stylePreset?: MQ<string>;
+    size?: string;
   };
   indicator?: {
-    stylePreset?: MQ<StylePresetKeys>;
+    stylePreset?: MQ<string>;
   };
   thumb?: {
-    stylePreset?: MQ<StylePresetKeys>;
-    size?: SizingKeys;
+    stylePreset?: MQ<string>;
+    size?: string;
   };
   thumbLabel?: {
-    stylePreset?: MQ<StylePresetKeys>;
-    typographyPreset?: MQ<TypographyPresetKeys>;
-    space?: MQ<SizingKeys>;
+    stylePreset?: MQ<string>;
+    typographyPreset?: MQ<string>;
+    space?: MQ<string>;
   };
   labels?: {
-    stylePreset?: MQ<StylePresetKeys>;
-    typographyPreset?: MQ<TypographyPresetKeys>;
-    space?: MQ<SizingKeys>;
+    stylePreset?: MQ<string>;
+    typographyPreset?: MQ<string>;
+    space?: MQ<string>;
   };
 }
 

@@ -1,11 +1,4 @@
-import {
-  StylePresetKeys,
-  TypographyPresetKeys,
-  MQ,
-  SizingKeys,
-  IconSizeKeys,
-  EventContext,
-} from 'newskit';
+import {MQ, EventContext} from 'newskit';
 
 export interface LinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
@@ -14,11 +7,11 @@ export interface LinkProps
   external?: boolean;
   noUnderline?: boolean;
   overrides?: {
-    stylePreset?: MQ<StylePresetKeys>;
-    typographyPreset?: MQ<TypographyPresetKeys>;
-    space?: MQ<SizingKeys>;
+    stylePreset?: MQ<string>;
+    typographyPreset?: MQ<string>;
+    space?: MQ<string>;
     externalIcon?: {
-      size?: IconSizeKeys;
+      size?: string;
     };
   };
 }

@@ -1,6 +1,5 @@
 import {TabSize} from '../tab';
 import {MQ} from '../utils/style';
-import {PaddingPresetKeys} from '../theme';
 
 export interface TabGroupProps {
   size?: TabSize;
@@ -10,7 +9,7 @@ export interface TabGroupProps {
   orientation?: 'vertical' | 'horizontal';
   overrides?: {
     stylePreset?: MQ<string>;
-    spaceInset?: MQ<PaddingPresetKeys>;
+    spaceInset?: MQ<string>;
   };
 }
 

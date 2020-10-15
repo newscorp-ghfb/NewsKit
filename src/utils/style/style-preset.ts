@@ -1,5 +1,4 @@
 import {
-  StylePresetKeys,
   Theme,
   StylePresetStates,
   StylePresetStyleKeys,
@@ -122,7 +121,7 @@ const getStylePresetValueFromTheme = (
   );
 
 export const getStylePresetFromTheme = <Props extends ThemeProp>(
-  defaultToken?: MQ<StylePresetKeys>,
+  defaultToken?: MQ<string>,
   customProp?: Exclude<keyof Props, 'theme'>,
   options?: GetStylePresetFromThemeOptions,
 ) => (props: Props) => {
