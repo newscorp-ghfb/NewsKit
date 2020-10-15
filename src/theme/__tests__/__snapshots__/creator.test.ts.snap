@@ -515,7 +515,7 @@ Object {
         },
       },
       "stylePreset": "inkBase",
-      "typographyPreset": "editorialSubheading020",
+      "typographyPreset": "editorialParagraph020",
     },
     "shareBar": Object {
       "items": Object {

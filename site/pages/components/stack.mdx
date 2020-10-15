@@ -108,7 +108,7 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
           isDefault: !i,
         })))(),
     },
-      {
+    {
       name: 'Inline',
       propName: 'inline',
       type: 'boolean',
@@ -131,25 +131,29 @@ The Stack has a number of props to facilitate a variety of uses. Custom and requ
           isDefault: !i,
         })))(),
     },
-    {	
-      name: 'spaceInline',	
-      propName: 'spaceInline',	
-      options: (() =>	
-        [{label: 'Unset', value: undefined, isDefault: true}].concat(['sizing010', 'sizing020', 'sizing030', 'sizing040',].map((size, i) => ({	
-          label: size,	
-          value: size,	
-          isDefault: false	
-        }))))(),	
+    {
+      name: 'spaceInline',
+      propName: 'spaceInline',
+      options: (() =>
+        [{label: 'Unset', value: undefined, isDefault: true}].concat(
+          ['space010', 'space020', 'space030', 'space040'].map((size, i) => ({
+            label: size,
+            value: size,
+            isDefault: false,
+          })),
+        ))(),
     },
     {
       name: 'Space Stack',
       propName: 'spaceStack',
       options: (() =>
-        [{label: 'Unset', value: undefined, isDefault: true}].concat(['sizing010', 'sizing020', 'sizing030', 'sizing040'].map((size, i) => ({
-          label: size,
-          value: size,
-          isDefault: !i,
-        }))))(),
+        [{label: 'Unset', value: undefined, isDefault: true}].concat(
+          ['space010', 'space020', 'space030', 'space040'].map((size, i) => ({
+            label: size,
+            value: size,
+            isDefault: !i,
+          })),
+        ))(),
     },
     {
       name: 'Wrap',

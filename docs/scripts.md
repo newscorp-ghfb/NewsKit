@@ -78,7 +78,7 @@ docs:dev
 
 * `build:ts` -> builds the Typescript components using es2015 module format, into dist/.
 
-* `build:ts-common-js` -> builds the Typescript components using commonJs module format, into dist/common/.
+* `build:ts:cjs` -> builds the Typescript components using commonJs module format, into dist/common/.
 
 * `build:storybook` -> builds storybook.
 

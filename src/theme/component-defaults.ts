@@ -338,7 +338,7 @@ export const componentDefaults = {
   },
   paragraph: {
     stylePreset: 'inkBase',
-    typographyPreset: 'editorialSubheading020',
+    typographyPreset: 'editorialParagraph020',
     dropCap: {
       stylePreset: 'inkContrast',
       typographyPreset: {
