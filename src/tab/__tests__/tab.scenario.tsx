@@ -160,7 +160,11 @@ export default {
                   </Block>
 
                   <Block data-state="Focus">
-                    <Tab ariaLabel="tab label" overrides={{stylePreset: 'tab'}}>
+                    <Tab
+                      autoFocus
+                      ariaLabel="tab label"
+                      overrides={{stylePreset: 'tab'}}
+                    >
                       Tab Label
                     </Tab>
                   </Block>
