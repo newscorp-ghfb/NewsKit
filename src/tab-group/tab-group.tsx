@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {TabGroupProps, TabPaneProps} from './types';
 import {StyledOuterTabGroup, StyledInnerTabGroup} from './styled';
-import {Flow, Stack} from '../stack';
+import {Flow, Stack, StackDistribution} from '../stack';
 import {Divider} from '../divider';
 import {AlignSelfValues, StackChild} from '../stack-child';
 import {TabSize} from '../tab';
@@ -12,7 +12,7 @@ export const TabGroup: React.FC<TabGroupProps> = ({
   size = TabSize.Medium,
   divider,
   tabPanes,
-  orientation,
+  vertical = false,
 }) => {
   const [activeTab, setActiveTab] = useState(1);
 
@@ -102,7 +102,7 @@ export const TabGroup: React.FC<TabGroupProps> = ({
         if (divider && i < array.length - 1) {
           acc.push(
             <StackChild alignSelf={AlignSelfValues.Stretch}>
-              {orientation === 'vertical' ? <Divider /> : <Divider vertical />}
+              <Divider vertical={!vertical} />
             </StackChild>,
           );
         }
@@ -113,16 +113,17 @@ export const TabGroup: React.FC<TabGroupProps> = ({
     );
 
   return (
-    <Stack flow={Flow.VerticalLeft} spaceInline="sizing020" wrap="wrap">
+    <Stack
+      flow={Flow.VerticalLeft}
+      stackDistribution={StackDistribution.End}
+      spaceInline="sizing020"
+      wrap="wrap"
+    >
       <StyledOuterTabGroup data-testid="tab-group" inline>
         <StyledInnerTabGroup
           overrides={overrides}
-          flow={
-            orientation === 'vertical'
-              ? Flow.VerticalCenter
-              : Flow.HorizontalCenter
-          }
-          inline
+          flow={vertical ? Flow.VerticalLeft : Flow.HorizontalCenter}
+          inline={!vertical}
           role="tablist"
         >
           {renderChildren()}

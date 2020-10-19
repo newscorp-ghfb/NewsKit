@@ -443,19 +443,19 @@ export default {
         <React.Fragment>
           <StorybookHeading>Tab Group VERTICAL</StorybookHeading>
           <StorybookSubHeading>Small</StorybookSubHeading>
-          <TabGroup size={TabSize.Small} orientation="vertical">
-            <Tab tabKey={1}>Small tab</Tab>
+          <TabGroup size={TabSize.Small} vertical>
+            <Tab tabKey={1}>Small tabxxxxxxxxxxxx</Tab>
             <Tab tabKey={2}>Small tab</Tab>
             <Tab tabKey={3}>Small tab</Tab>
           </TabGroup>
           <StorybookSubHeading>Medium</StorybookSubHeading>
-          <TabGroup size={TabSize.Medium} orientation="vertical">
+          <TabGroup size={TabSize.Medium} vertical>
             <Tab tabKey={1}>Medium tab</Tab>
             <Tab tabKey={2}>Medium tab</Tab>
             <Tab tabKey={3}>Medium tab</Tab>
           </TabGroup>
           <StorybookSubHeading>Large</StorybookSubHeading>
-          <TabGroup size={TabSize.Large} orientation="vertical">
+          <TabGroup size={TabSize.Large} vertical>
             <Tab tabKey={1}>Large tab</Tab>
             <Tab tabKey={2}>Large tab</Tab>
             <Tab tabKey={3}>Large tab</Tab>
@@ -470,19 +470,19 @@ export default {
         <React.Fragment>
           <StorybookHeading>Tab Group VERTICAL with divider</StorybookHeading>
           <StorybookSubHeading>Small</StorybookSubHeading>
-          <TabGroup size={TabSize.Small} orientation="vertical" divider>
+          <TabGroup size={TabSize.Small} vertical divider>
             <Tab tabKey={1}>Small tab</Tab>
             <Tab tabKey={2}>Small tab</Tab>
             <Tab tabKey={3}>Small tab</Tab>
           </TabGroup>
           <StorybookSubHeading>Medium</StorybookSubHeading>
-          <TabGroup size={TabSize.Medium} orientation="vertical" divider>
+          <TabGroup size={TabSize.Medium} vertical divider>
             <Tab tabKey={1}>Medium tab</Tab>
             <Tab tabKey={2}>Medium tab</Tab>
             <Tab tabKey={3}>Medium tab</Tab>
           </TabGroup>
           <StorybookSubHeading>Large</StorybookSubHeading>
-          <TabGroup size={TabSize.Large} orientation="vertical" divider>
+          <TabGroup size={TabSize.Large} vertical divider>
             <Tab tabKey={1}>Large tab</Tab>
             <Tab tabKey={2}>Large tab</Tab>
             <Tab tabKey={3}>Large tab</Tab>
@@ -490,6 +490,35 @@ export default {
         </React.Fragment>
       ),
       name: 'tab-group-vertical-with-divider',
+      type: 'story',
+    },
+    {
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Tab Group HORIZONTAL with divider and FLEX-START
+          </StorybookHeading>
+          <StorybookSubHeading>Small</StorybookSubHeading>
+          <TabGroup size={TabSize.Small} divider>
+            <Tab tabKey={1}>Small tab THIS IS ONE VERY LONG TAB</Tab>
+            <Tab tabKey={2}>Small tab</Tab>
+            <Tab tabKey={3}>Small tab</Tab>
+          </TabGroup>
+          <StorybookSubHeading>Medium</StorybookSubHeading>
+          <TabGroup size={TabSize.Medium} divider>
+            <Tab tabKey={1}>Medium tab</Tab>
+            <Tab tabKey={2}>Medium tab</Tab>
+            <Tab tabKey={3}>Medium tab</Tab>
+          </TabGroup>
+          <StorybookSubHeading>Large</StorybookSubHeading>
+          <TabGroup size={TabSize.Large} divider>
+            <Tab tabKey={1}>Large tab</Tab>
+            <Tab tabKey={2}>Large tab</Tab>
+            <Tab tabKey={3}>Large tab</Tab>
+          </TabGroup>
+        </React.Fragment>
+      ),
+      name: 'tab-group-horizontal-with-flexstart',
       type: 'story',
     },
   ],

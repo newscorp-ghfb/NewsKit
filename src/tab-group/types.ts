@@ -6,7 +6,7 @@ export interface TabGroupProps {
   children: Array<React.ReactElement>;
   divider?: boolean;
   tabPanes?: Array<React.ReactElement>;
-  orientation?: 'vertical' | 'horizontal';
+  vertical?: boolean;
   overrides?: {
     stylePreset?: MQ<string>;
     spaceInset?: MQ<string>;
