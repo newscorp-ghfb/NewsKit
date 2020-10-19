@@ -5,11 +5,12 @@ import {
   StyledSwatchRow,
   StyledAccessibilityBadge,
   StyledSwatchCard,
-  StyledSwatchCardTop,
   StyledSwatchCardBottom,
   StyledSwatchCardTitle,
   StyledSwatchCardDot,
   BadgeContainer,
+  StyledSwatchCardTop,
+  StyledSwatchCardTopOverlay,
 } from './styled';
 
 export type SwatchComponent = React.FC<SwatchRowProps>;
@@ -55,16 +56,19 @@ export const SwatchCard: SwatchComponent = ({
 }: SwatchRowProps) => (
   <Cell xs={6} xl={3}>
     <StyledSwatchCard>
-      <StyledSwatchCardTop {...color} isOverlay={isOverlay}>
-        <Stack flow="horizontal-top" stackDistribution="flex-end">
-          {!isOverlay && (
-            <StyledAccessibilityBadge>
-              {color.contrastRating}
-            </StyledAccessibilityBadge>
-          )}
-        </Stack>
-      </StyledSwatchCardTop>
-
+      {isOverlay ? (
+        <StyledSwatchCardTopOverlay {...color} />
+      ) : (
+        <StyledSwatchCardTop {...color}>
+          <Stack flow="horizontal-top" stackDistribution="flex-end">
+            {!isOverlay && (
+              <StyledAccessibilityBadge>
+                {color.contrastRating}
+              </StyledAccessibilityBadge>
+            )}
+          </Stack>
+        </StyledSwatchCardTop>
+      )}
       <StyledSwatchCardBottom isOverlay={isOverlay} {...color}>
         <StyledSwatchCardTitle>{color.name}</StyledSwatchCardTitle>
         <Stack flow="horizontal-center" stackDistribution="space-between">
