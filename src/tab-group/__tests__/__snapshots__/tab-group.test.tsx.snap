@@ -3306,7 +3306,7 @@ exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Tab Group renders correctly when orientation is vertical 1`] = `
+exports[`Tab Group renders correctly when orientation is horizontal 1`] = `
 <DocumentFragment>
   .emotion-18 {
   display: -webkit-box;
@@ -3354,6 +3354,32 @@ exports[`Tab Group renders correctly when orientation is vertical 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 0.5px;
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -3582,32 +3608,6 @@ exports[`Tab Group renders correctly when orientation is vertical 1`] = `
 
 .emotion-8:disabled svg {
   fill: #9c9c9c;
-}
-
-.emotion-15 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #cccccc;
-  border-width: 2px;
-  border-radius: 0;
-  border-width: 0;
-  border-bottom-width: 0.5px;
 }
 
 <div
@@ -3992,15 +3992,15 @@ exports[`Tab Group renders dividers correctly when orientation is vertical 1`] =
 }
 
 .emotion-19 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
