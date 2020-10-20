@@ -377,7 +377,7 @@ export default {
     {
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Tab Group Variants</StorybookHeading>
+          <StorybookHeading>Tab Group Variants Horizontal</StorybookHeading>
           <StorybookSubHeading>Label Only</StorybookSubHeading>
           <TabGroup size={TabSize.Medium} divider>
             <Tab tabKey={1}>Medium tab</Tab>
@@ -396,7 +396,7 @@ export default {
               <Email />
             </Tab>
           </TabGroup>
-          <StorybookSubHeading>Icon and Label</StorybookSubHeading>
+          <StorybookSubHeading>Leading Icon and Label</StorybookSubHeading>
           <TabGroup size={TabSize.Medium} divider>
             <Tab tabKey={1}>
               <Email />
@@ -411,9 +411,134 @@ export default {
               Medium tab
             </Tab>
           </TabGroup>
+          <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
+          <TabGroup size={TabSize.Medium} divider>
+            <Tab tabKey={1}>
+              Medium tab
+              <Email />
+            </Tab>
+            <Tab tabKey={2}>
+              Medium tab
+              <Email />
+            </Tab>
+            <Tab tabKey={3}>
+              Medium tab
+              <Email />
+            </Tab>
+          </TabGroup>
+          <StorybookSubHeading>
+            Leading and Trailing Icon and Label
+          </StorybookSubHeading>
+          <TabGroup size={TabSize.Medium} divider>
+            <Tab tabKey={1}>
+              <Email />
+              Medium tab
+              <Email />
+            </Tab>
+            <Tab tabKey={2}>
+              <Email />
+              Medium tab
+              <Email />
+            </Tab>
+            <Tab tabKey={3}>
+              <Email />
+              Medium tab
+              <Email />
+            </Tab>
+          </TabGroup>
         </React.Fragment>
       ),
-      name: 'tab-group-variants',
+      name: 'tab-group-variants-horizontal',
+      type: 'story',
+    },
+    {
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Tab Group Variants Vertical (Label or Icon)
+          </StorybookHeading>
+          <StorybookSubHeading>Label Only</StorybookSubHeading>
+          <TabGroup size={TabSize.Medium} vertical divider>
+            <Tab tabKey={1}>Medium tab</Tab>
+            <Tab tabKey={2}>Medium tab</Tab>
+            <Tab tabKey={3}>Medium tab</Tab>
+          </TabGroup>
+          <StorybookSubHeading>Icon Only</StorybookSubHeading>
+          <TabGroup size={TabSize.Medium} vertical divider>
+            <Tab tabKey={1}>
+              <Email />
+            </Tab>
+            <Tab tabKey={2}>
+              <Email />
+            </Tab>
+            <Tab tabKey={3}>
+              <Email />
+            </Tab>
+          </TabGroup>
+        </React.Fragment>
+      ),
+      name: 'tab-group-variants-vertical-label-or-icon',
+      type: 'story',
+    },
+    {
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Tab Group Variants Vertical (Icon Placement)
+          </StorybookHeading>
+          <StorybookSubHeading>Leading Icon and Label</StorybookSubHeading>
+          <TabGroup size={TabSize.Medium} vertical divider>
+            <Tab tabKey={1}>
+              <Email />
+              Medium tab
+            </Tab>
+            <Tab tabKey={2}>
+              <Email />
+              Medium tab
+            </Tab>
+            <Tab tabKey={3}>
+              <Email />
+              Medium tab
+            </Tab>
+          </TabGroup>
+          <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
+          <TabGroup size={TabSize.Medium} vertical divider>
+            <Tab tabKey={1}>
+              Medium tab
+              <Email />
+            </Tab>
+            <Tab tabKey={2}>
+              Medium tab
+              <Email />
+            </Tab>
+            <Tab tabKey={3}>
+              Medium tab
+              <Email />
+            </Tab>
+          </TabGroup>
+          <StorybookSubHeading>
+            Leading and Trailing Icon and Label
+          </StorybookSubHeading>
+          <TabGroup size={TabSize.Medium} vertical divider>
+            <Tab tabKey={1}>
+              <Email />
+              Medium tab
+              <Email />
+            </Tab>
+            <Tab tabKey={2}>
+              <Email />
+              Medium tab
+              <Email />
+            </Tab>
+            <Tab tabKey={3}>
+              <Email />
+              Medium tab
+              <Email />
+            </Tab>
+          </TabGroup>
+        </React.Fragment>
+      ),
+      name: 'tab-group-variants-vertical-icon-placement',
       type: 'story',
     },
     {
@@ -441,10 +566,12 @@ export default {
     {
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Tab Group VERTICAL</StorybookHeading>
+          <StorybookHeading>Tab Group Vertical</StorybookHeading>
           <StorybookSubHeading>Small</StorybookSubHeading>
           <TabGroup size={TabSize.Small} vertical>
-            <Tab tabKey={1}>Small tabxxxxxxxxxxxx</Tab>
+            <Tab tabKey={1}>
+              Small tab with long label so left align visible
+            </Tab>
             <Tab tabKey={2}>Small tab</Tab>
             <Tab tabKey={3}>Small tab</Tab>
           </TabGroup>
@@ -468,7 +595,7 @@ export default {
     {
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Tab Group VERTICAL with divider</StorybookHeading>
+          <StorybookHeading>Tab Group Vertical with divider</StorybookHeading>
           <StorybookSubHeading>Small</StorybookSubHeading>
           <TabGroup size={TabSize.Small} vertical divider>
             <Tab tabKey={1}>Small tab</Tab>
@@ -490,35 +617,6 @@ export default {
         </React.Fragment>
       ),
       name: 'tab-group-vertical-with-divider',
-      type: 'story',
-    },
-    {
-      component: () => (
-        <React.Fragment>
-          <StorybookHeading>
-            Tab Group HORIZONTAL with divider and FLEX-START
-          </StorybookHeading>
-          <StorybookSubHeading>Small</StorybookSubHeading>
-          <TabGroup size={TabSize.Small} divider>
-            <Tab tabKey={1}>Small tab THIS IS ONE VERY LONG TAB</Tab>
-            <Tab tabKey={2}>Small tab</Tab>
-            <Tab tabKey={3}>Small tab</Tab>
-          </TabGroup>
-          <StorybookSubHeading>Medium</StorybookSubHeading>
-          <TabGroup size={TabSize.Medium} divider>
-            <Tab tabKey={1}>Medium tab</Tab>
-            <Tab tabKey={2}>Medium tab</Tab>
-            <Tab tabKey={3}>Medium tab</Tab>
-          </TabGroup>
-          <StorybookSubHeading>Large</StorybookSubHeading>
-          <TabGroup size={TabSize.Large} divider>
-            <Tab tabKey={1}>Large tab</Tab>
-            <Tab tabKey={2}>Large tab</Tab>
-            <Tab tabKey={3}>Large tab</Tab>
-          </TabGroup>
-        </React.Fragment>
-      ),
-      name: 'tab-group-horizontal-with-flexstart',
       type: 'story',
     },
   ],

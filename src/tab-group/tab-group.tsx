@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {TabGroupProps, TabPaneProps} from './types';
 import {StyledOuterTabGroup, StyledInnerTabGroup} from './styled';
-import {Flow, Stack, StackDistribution} from '../stack';
+import {Flow, Stack} from '../stack';
 import {Divider} from '../divider';
 import {AlignSelfValues, StackChild} from '../stack-child';
 import {TabSize} from '../tab';
@@ -113,12 +113,7 @@ export const TabGroup: React.FC<TabGroupProps> = ({
     );
 
   return (
-    <Stack
-      flow={Flow.VerticalLeft}
-      stackDistribution={StackDistribution.End}
-      spaceInline="sizing020"
-      wrap="wrap"
-    >
+    <Stack flow={Flow.VerticalLeft} spaceInline="sizing020" wrap="wrap">
       <StyledOuterTabGroup data-testid="tab-group" inline>
         <StyledInnerTabGroup
           overrides={overrides}

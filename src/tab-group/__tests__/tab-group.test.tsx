@@ -103,10 +103,10 @@ describe('Tab Group', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders correctly when orientation is vertical', () => {
+  test('renders correctly when orientation is horizontal', () => {
     const props: TabGroupProps = {
       children: tabsWithLabel,
-      orientation: 'vertical',
+      vertical: false,
     };
     const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
     expect(fragment).toMatchSnapshot();
@@ -115,7 +115,7 @@ describe('Tab Group', () => {
   test('renders dividers correctly when orientation is vertical', () => {
     const props: TabGroupProps = {
       children: tabsWithLabel,
-      orientation: 'vertical',
+      vertical: true,
       divider: true,
     };
     const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
