@@ -3470,11 +3470,11 @@ exports[`Tab Group renders correctly when orientation is horizontal 1`] = `
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-3 svg {
@@ -3603,11 +3603,11 @@ exports[`Tab Group renders correctly when orientation is horizontal 1`] = `
 
 .emotion-8:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-8:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 <div
@@ -3841,11 +3841,11 @@ exports[`Tab Group renders dividers correctly when orientation is vertical 1`] =
 
 .emotion-3:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-3:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-3 svg {
@@ -3974,11 +3974,11 @@ exports[`Tab Group renders dividers correctly when orientation is vertical 1`] =
 
 .emotion-10:disabled {
   background-color: #e4e4e4;
-  color: #9c9c9c;
+  color: #c0c0c0;
 }
 
 .emotion-10:disabled svg {
-  fill: #9c9c9c;
+  fill: #c0c0c0;
 }
 
 .emotion-6 {
