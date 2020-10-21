@@ -21,7 +21,7 @@ export const getLineHeight = (
   fontSizeToken: string,
   lineHeightToken: string,
 ) => (theme: Theme) => {
-  const fontSize = theme.fonts[fontSizeToken.replace('fonts.', '')] as string;
+  const fontSize = theme.fonts[fontSizeToken.replace('fonts.', '')];
   const lineHeight = theme.fonts[
     lineHeightToken.replace('fonts.', '')
   ] as number;

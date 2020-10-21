@@ -443,15 +443,15 @@ export default {
                     }}
                     actions={cardSmallTags}
                     overrides={{
-                      stylePreset: 'cardContainerMock' as string,
+                      stylePreset: 'cardContainerMock',
                       mediaContainer: {
-                        stylePreset: 'cardContainerMediaMock' as string,
+                        stylePreset: 'cardContainerMediaMock',
                       },
                       teaserContainer: {
-                        stylePreset: 'cardContainerTeaserMock' as string,
+                        stylePreset: 'cardContainerTeaserMock',
                       },
                       actionsContainer: {
-                        stylePreset: 'cardContainerActionsMock' as string,
+                        stylePreset: 'cardContainerActionsMock',
                         minHeight: 'sizing090',
                       },
                     }}
@@ -485,15 +485,15 @@ export default {
                     }}
                     actions={cardSmallTags}
                     overrides={{
-                      stylePreset: 'cardContainerMock' as string,
+                      stylePreset: 'cardContainerMock',
                       mediaContainer: {
-                        stylePreset: 'cardContainerMediaMock' as string,
+                        stylePreset: 'cardContainerMediaMock',
                       },
                       teaserContainer: {
-                        stylePreset: 'cardContainerTeaserMock' as string,
+                        stylePreset: 'cardContainerTeaserMock',
                       },
                       actionsContainer: {
-                        stylePreset: 'cardContainerActionsMock' as string,
+                        stylePreset: 'cardContainerActionsMock',
                       },
                     }}
                   >

@@ -132,7 +132,7 @@ describe('Stack', () => {
   });
 
   Object.values(Flow).forEach(flowKey => {
-    (['sizing000', 'sizing090', 'sizing120'] as string[]).forEach(size => {
+    ['sizing000', 'sizing090', 'sizing120'].forEach(size => {
       Object.values(['wrap', 'nowrap']).forEach(wrapType => {
         test(`renders where the stack flow is ${flowKey} and the spaceInline & spaceStack is set to ${size}`, () => {
           const fragment = renderToFragmentWithTheme(Stack, {

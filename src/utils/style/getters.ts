@@ -150,9 +150,9 @@ export const getFontSizingFromTheme = (
   fontSizeKey: string,
   lineHeightKey: string,
 ) => ({theme}: ThemeProp) => {
-  const typographyPresets = theme.typographyPresets[fontSizeKey as string];
+  const typographyPresets = theme.typographyPresets[fontSizeKey];
   const fontSize = typographyPresets
     ? typographyPresets.fontSize
-    : theme.fonts[fontSizeKey as string];
+    : theme.fonts[fontSizeKey];
   return getFontSizing(fontSize, theme.fonts[lineHeightKey]);
 };

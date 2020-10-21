@@ -7,9 +7,9 @@ import {LegacyBlockProps, StyledBlockProps} from './types';
 const getStyleFromProps = (props: StyledBlockProps & {theme: Theme}) => {
   const {breakpoints, colors, typographyPresets, sizing} = props.theme;
 
-  const getColor = (color: string) => colors[color as string] || color;
+  const getColor = (color: string) => colors[color] || color;
 
-  const getSize = (size: string) => sizing[size as string] || size;
+  const getSize = (size: string) => sizing[size] || size;
 
   return build(breakpoints)
     .apply({
@@ -137,32 +137,32 @@ const getStyleFromProps = (props: StyledBlockProps & {theme: Theme}) => {
     .apply({
       property: 'width',
       value: props.$width,
-      transform: width => getSize(width as string),
+      transform: width => getSize(width),
     })
     .apply({
       property: 'height',
       value: props.$height,
-      transform: height => getSize(height as string),
+      transform: height => getSize(height),
     })
     .apply({
       property: 'maxWidth',
       value: props.maxWidth,
-      transform: maxWidth => getSize(maxWidth as string),
+      transform: maxWidth => getSize(maxWidth),
     })
     .apply({
       property: 'maxHeight',
       value: props.maxHeight,
-      transform: maxHeight => getSize(maxHeight as string),
+      transform: maxHeight => getSize(maxHeight),
     })
     .apply({
       property: 'minWidth',
       value: props.minWidth,
-      transform: minWidth => getSize(minWidth as string),
+      transform: minWidth => getSize(minWidth),
     })
     .apply({
       property: 'minHeight',
       value: props.minHeight,
-      transform: minHeight => getSize(minHeight as string),
+      transform: minHeight => getSize(minHeight),
     })
     .apply({
       property: 'display',
@@ -218,7 +218,7 @@ const getStyleFromProps = (props: StyledBlockProps & {theme: Theme}) => {
       value: props.$overflow,
       transform: overflow => {
         if (overflow !== 'scrollX' && overflow !== 'scrollY') {
-          return overflow as string;
+          return overflow;
         }
         return undefined;
       },

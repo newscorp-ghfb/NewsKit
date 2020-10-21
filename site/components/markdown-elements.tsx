@@ -12,7 +12,7 @@ import {
 import {LegacyBlock} from './legacy-block';
 import slugify from '../helpers/slugify';
 
-interface TextProps {
+export interface TextProps {
   children: React.ReactNode;
 }
 
@@ -21,7 +21,7 @@ interface DocLinkProps {
   href: string;
 }
 
-interface TableProps {
+export interface TableProps {
   children: React.ReactNode;
 }
 

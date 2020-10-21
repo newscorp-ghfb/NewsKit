@@ -37,7 +37,7 @@ export type KnobsConfig =
   | MultiChoiceKnobConfig;
 
 export interface PlaygroundProps {
-  componentName: string[];
+  componentName: string | string[];
   component: React.ComponentType | React.ComponentType[];
   knobs: KnobsConfig[];
 }

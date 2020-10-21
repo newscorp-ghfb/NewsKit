@@ -26,7 +26,7 @@ export const getOverridableProp = (
     .map(bkp => props[`${bkp}${prop}` as keyof GridProps])
     .filter(Boolean)[0];
 
-  const themeKey = propThemeMap[prop] as string;
+  const themeKey = propThemeMap[prop];
 
   // Gutter from theme is a px number, but override is a string token, so convert it to px number.
   return gutterOverrideToken

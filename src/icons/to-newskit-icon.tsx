@@ -11,7 +11,7 @@ export const toNewsKitIcon = (
     const emotionIconName = EmotionIcon.displayName;
     const size =
       props.overrides && props.overrides.size
-        ? props.theme.sizing[props.overrides.size as string]
+        ? props.theme.sizing[props.overrides.size]
         : null;
 
     const StyledIcon = styled(EmotionIcon)`

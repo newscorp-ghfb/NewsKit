@@ -32,7 +32,7 @@ export const StyledSwatchRow = styled.span<
   padding: ${getSpacingFromTheme('spaceInsetSquish030')};
   width: 100%;
   border-radius: ${getBorderRadius as any};
-  background-color: ${({theme, name}) => theme.colors[name as string]};
+  background-color: ${({theme, name}) => theme.colors[name]};
   border: ${({brightness, value}) =>
     brightness > 0.99 || value === 'transparent' ? `solid 1px black` : null};
   color: ${getTextColor};
@@ -48,7 +48,7 @@ export const StyledSwatchCard = styled.div`
 
 export const StyledSwatchCardTop = styled.div<ThemeColor>`
   height: ${getSizingFromTheme('sizing100')};
-  background: ${({theme, name}) => theme.colors[name as ColorKeys]};
+  background: ${({theme, name}) => theme.colors[name]};
   padding: ${getSpacingFromTheme('spaceInset020')};
 `;
 
@@ -80,7 +80,7 @@ export const StyledSwatchCardTopOverlay = styled.div<ThemeColor>`
 
   ::before {
     content: '';
-    background: ${({theme, name}) => theme.overlays[name as ColorKeys]};
+    background: ${({theme, name}) => theme.overlays[name]};
     height: 100%;
     display: block;
   }

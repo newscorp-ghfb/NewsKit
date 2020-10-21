@@ -63,7 +63,7 @@ describe('IconButton', () => {
   test('renders when there is an icon with a colour', () => {
     const props = {
       size: ButtonSize.Small,
-      iconColor: 'buttonText' as string,
+      iconColor: 'buttonText',
     };
     const fragment = renderToFragmentWithTheme(renderIconButton, props);
     expect(fragment).toMatchSnapshot();
