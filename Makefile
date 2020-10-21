@@ -26,6 +26,9 @@ install:
 install_cypress:
 	yarn global add cypress@4.7.0;
 
+build_icons:
+	yarn build:icons:ci
+
 build_components:
 	yarn build:comps
 

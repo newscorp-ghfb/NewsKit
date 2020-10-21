@@ -84,6 +84,10 @@ docs:dev
 
 * `build:docs` -> builds documentation site, into public/.
 
+* `build:icons:dev` -> generates only the icons that are used within newskit.
+
+* `build:icons:ci` -> generates all 2600+ icons.
+
 * `build:comps` -> builds the components folder ready to be published to NPM.
 
 * `build:sync-version-number` -> copies the current version number from package json into the src folder.

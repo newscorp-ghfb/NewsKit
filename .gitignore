@@ -36,3 +36,5 @@ __diff_output__/
 dist-storybook
 version-number.json
 junit.xml
+/src/icons/filled/material
+/src/icons/outlined/material

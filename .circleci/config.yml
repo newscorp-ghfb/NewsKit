@@ -240,6 +240,23 @@ jobs:
       - slack/status:
           <<: *slack_status
 
+  build_icons:
+    working_directory: ~/project
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Build
+          command: make build_icons
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - src/icons/*
+      - slack/status:
+          <<: *slack_status
+
   build_components:
     working_directory: ~/project
     executor: node
@@ -869,12 +886,19 @@ workflows:
           <<: *ignore_trigger_release
       - install_cypress:
           <<: *ignore_trigger_release
+      - build_icons:
+          <<: *ignore_trigger_release
+          <<: *require_dep
       - build_components:
           <<: *ignore_trigger_release
           <<: *require_dep
+          requires:
+            - build_icons
       - build_storybook:
           <<: *ignore_trigger_release
           <<: *require_dep
+          requires:
+            - build_icons
       - build_docs:
           <<: *ignore_trigger_release
           <<: *require_dep
@@ -883,15 +907,23 @@ workflows:
       - build_test_e2e:
           <<: *ignore_trigger_release
           <<: *require_dep
+          requires:
+            - build_icons
       - lint:
           <<: *ignore_trigger_release
           <<: *require_dep
+          requires:
+            - build_icons
       - test_unit_comps:
           <<: *ignore_trigger_release
           <<: *require_dep
+          requires:
+            - build_icons
       - test_unit_docs:
           <<: *ignore_trigger_release
           <<: *require_dep
+          requires:
+            - build_icons
       - test_e2e_comps:
           <<: *ignore_trigger_release
           context: ncu-product-platforms-context
