@@ -353,7 +353,7 @@ export default {
           <StorybookHeading>Tab Group with divider</StorybookHeading>
           <StorybookSubHeading>Small</StorybookSubHeading>
           <TabGroup size={TabSize.Small} divider>
-            <Tab tabKey={1}>Small tabxxxxxxxxxxx</Tab>
+            <Tab tabKey={1}>Small tab</Tab>
             <Tab tabKey={2}>Small tab</Tab>
             <Tab tabKey={3}>Small tab</Tab>
           </TabGroup>
