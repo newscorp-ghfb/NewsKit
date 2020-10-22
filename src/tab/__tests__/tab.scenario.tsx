@@ -73,6 +73,8 @@ export default {
   name: 'tab',
   children: [
     {
+      name: 'tab-size',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>Tab Size</StorybookHeading>
@@ -97,10 +99,10 @@ export default {
           </Container>
         </React.Fragment>
       ),
-      name: 'tab-size',
-      type: 'story',
     },
     {
+      name: 'tab-states',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>Tab States</StorybookHeading>
@@ -174,10 +176,10 @@ export default {
           </Grid>
         </React.Fragment>
       ),
-      name: 'tab-states',
-      type: 'story',
     },
     {
+      name: 'tab-icon',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>Tab - Icon</StorybookHeading>
@@ -204,10 +206,10 @@ export default {
           </Container>
         </React.Fragment>
       ),
-      name: 'tab-icon',
-      type: 'story',
     },
     {
+      name: 'tab-icon & label',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>Tab - Icon and Label</StorybookHeading>
@@ -235,10 +237,10 @@ export default {
           </Container>
         </React.Fragment>
       ),
-      name: 'tab-icon & label',
-      type: 'story',
     },
     {
+      name: 'tab-with-overrides',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>Tab With Overrides</StorybookHeading>
@@ -267,10 +269,10 @@ export default {
           </Container>
         </React.Fragment>
       ),
-      name: 'tab-with-overrides',
-      type: 'story',
     },
     {
+      name: 'tab-with-icon-size-overrides',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookSubHeading>
@@ -317,10 +319,10 @@ export default {
           </Container>
         </React.Fragment>
       ),
-      name: 'tab-with-icon-size-overrides',
-      type: 'story',
     },
     {
+      name: 'tab-group-basic',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>Tab Group without divider</StorybookHeading>
@@ -344,10 +346,10 @@ export default {
           </TabGroup>
         </React.Fragment>
       ),
-      name: 'tab-group-basic',
-      type: 'story',
     },
     {
+      name: 'tab-group-divider',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>Tab Group with divider</StorybookHeading>
@@ -371,10 +373,10 @@ export default {
           </TabGroup>
         </React.Fragment>
       ),
-      name: 'tab-group-divider',
-      type: 'story',
     },
     {
+      name: 'tab-group-variants-horizontal',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>Tab Group Variants Horizontal</StorybookHeading>
@@ -448,10 +450,39 @@ export default {
           </TabGroup>
         </React.Fragment>
       ),
-      name: 'tab-group-variants-horizontal',
-      type: 'story',
     },
     {
+      name: 'tab-group-vertical',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>Tab Group Vertical</StorybookHeading>
+          <StorybookSubHeading>Small</StorybookSubHeading>
+          <TabGroup size={TabSize.Small} vertical>
+            <Tab tabKey={1}>
+              Small tab with long label so left align visible
+            </Tab>
+            <Tab tabKey={2}>Small tab</Tab>
+            <Tab tabKey={3}>Small tab</Tab>
+          </TabGroup>
+          <StorybookSubHeading>Medium</StorybookSubHeading>
+          <TabGroup size={TabSize.Medium} vertical>
+            <Tab tabKey={1}>Medium tab</Tab>
+            <Tab tabKey={2}>Medium tab</Tab>
+            <Tab tabKey={3}>Medium tab</Tab>
+          </TabGroup>
+          <StorybookSubHeading>Large</StorybookSubHeading>
+          <TabGroup size={TabSize.Large} vertical>
+            <Tab tabKey={1}>Large tab</Tab>
+            <Tab tabKey={2}>Large tab</Tab>
+            <Tab tabKey={3}>Large tab</Tab>
+          </TabGroup>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'tab-group-variants-vertical-label-or-icon',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>
@@ -477,10 +508,10 @@ export default {
           </TabGroup>
         </React.Fragment>
       ),
-      name: 'tab-group-variants-vertical-label-or-icon',
-      type: 'story',
     },
     {
+      name: 'tab-group-variants-vertical-icon-placement',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>
@@ -538,10 +569,10 @@ export default {
           </TabGroup>
         </React.Fragment>
       ),
-      name: 'tab-group-variants-vertical-icon-placement',
-      type: 'story',
     },
     {
+      name: 'tab-group-content',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookSubHeading>Tab with content</StorybookSubHeading>
@@ -560,64 +591,6 @@ export default {
           </TabGroup>
         </React.Fragment>
       ),
-      name: 'tab-group-content',
-      type: 'story',
-    },
-    {
-      component: () => (
-        <React.Fragment>
-          <StorybookHeading>Tab Group Vertical</StorybookHeading>
-          <StorybookSubHeading>Small</StorybookSubHeading>
-          <TabGroup size={TabSize.Small} vertical>
-            <Tab tabKey={1}>
-              Small tab with long label so left align visible
-            </Tab>
-            <Tab tabKey={2}>Small tab</Tab>
-            <Tab tabKey={3}>Small tab</Tab>
-          </TabGroup>
-          <StorybookSubHeading>Medium</StorybookSubHeading>
-          <TabGroup size={TabSize.Medium} vertical>
-            <Tab tabKey={1}>Medium tab</Tab>
-            <Tab tabKey={2}>Medium tab</Tab>
-            <Tab tabKey={3}>Medium tab</Tab>
-          </TabGroup>
-          <StorybookSubHeading>Large</StorybookSubHeading>
-          <TabGroup size={TabSize.Large} vertical>
-            <Tab tabKey={1}>Large tab</Tab>
-            <Tab tabKey={2}>Large tab</Tab>
-            <Tab tabKey={3}>Large tab</Tab>
-          </TabGroup>
-        </React.Fragment>
-      ),
-      name: 'tab-group-vertical',
-      type: 'story',
-    },
-    {
-      component: () => (
-        <React.Fragment>
-          <StorybookHeading>Tab Group Vertical with divider</StorybookHeading>
-          <StorybookSubHeading>Small</StorybookSubHeading>
-          <TabGroup size={TabSize.Small} vertical divider>
-            <Tab tabKey={1}>Small tab</Tab>
-            <Tab tabKey={2}>Small tab</Tab>
-            <Tab tabKey={3}>Small tab</Tab>
-          </TabGroup>
-          <StorybookSubHeading>Medium</StorybookSubHeading>
-          <TabGroup size={TabSize.Medium} vertical divider>
-            <Tab tabKey={1}>Medium tab</Tab>
-            <Tab tabKey={2}>Medium tab</Tab>
-            <Tab tabKey={3}>Medium tab</Tab>
-          </TabGroup>
-          <StorybookSubHeading>Large</StorybookSubHeading>
-          <TabGroup size={TabSize.Large} vertical divider>
-            <Tab tabKey={1}>Large tab</Tab>
-            <Tab tabKey={2}>Large tab</Tab>
-            <Tab tabKey={3}>Large tab</Tab>
-          </TabGroup>
-        </React.Fragment>
-      ),
-      name: 'tab-group-vertical-with-divider',
-      type: 'story',
     },
   ],
 };
