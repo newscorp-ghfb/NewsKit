@@ -321,11 +321,11 @@ export default {
       ),
     },
     {
-      name: 'tab-group-basic',
+      name: 'tab-group-horizontal',
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Tab Group without divider</StorybookHeading>
+          <StorybookHeading>Tab Group Horizontal</StorybookHeading>
           <StorybookSubHeading>Small</StorybookSubHeading>
           <TabGroup size={TabSize.Small}>
             <Tab tabKey={1}>Small tab</Tab>
@@ -348,38 +348,11 @@ export default {
       ),
     },
     {
-      name: 'tab-group-divider',
+      name: 'tab-group-horizontal-variants',
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Tab Group with divider</StorybookHeading>
-          <StorybookSubHeading>Small</StorybookSubHeading>
-          <TabGroup size={TabSize.Small} divider>
-            <Tab tabKey={1}>Small tab</Tab>
-            <Tab tabKey={2}>Small tab</Tab>
-            <Tab tabKey={3}>Small tab</Tab>
-          </TabGroup>
-          <StorybookSubHeading>Medium</StorybookSubHeading>
-          <TabGroup size={TabSize.Medium} divider>
-            <Tab tabKey={1}>Medium tab</Tab>
-            <Tab tabKey={2}>Medium tab</Tab>
-            <Tab tabKey={3}>Medium tab</Tab>
-          </TabGroup>
-          <StorybookSubHeading>Large</StorybookSubHeading>
-          <TabGroup size={TabSize.Large} divider>
-            <Tab tabKey={1}>Large tab</Tab>
-            <Tab tabKey={2}>Large tab</Tab>
-            <Tab tabKey={3}>Large tab</Tab>
-          </TabGroup>
-        </React.Fragment>
-      ),
-    },
-    {
-      name: 'tab-group-variants-horizontal',
-      type: 'story',
-      component: () => (
-        <React.Fragment>
-          <StorybookHeading>Tab Group Variants Horizontal</StorybookHeading>
+          <StorybookHeading>Tab Group Horizontal Variants</StorybookHeading>
           <StorybookSubHeading>Label Only</StorybookSubHeading>
           <TabGroup size={TabSize.Medium} divider>
             <Tab tabKey={1}>Medium tab</Tab>
@@ -481,12 +454,12 @@ export default {
       ),
     },
     {
-      name: 'tab-group-variants-vertical-label-or-icon',
+      name: 'tab-group-vertical-variants-label-or-icon',
       type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>
-            Tab Group Variants Vertical (Label or Icon)
+            Tab Group Vertical Variants (Label or Icon)
           </StorybookHeading>
           <StorybookSubHeading>Label Only</StorybookSubHeading>
           <TabGroup size={TabSize.Medium} vertical divider>
@@ -510,12 +483,12 @@ export default {
       ),
     },
     {
-      name: 'tab-group-variants-vertical-icon-placement',
+      name: 'tab-group-vertical-variants-icon-placement',
       type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>
-            Tab Group Variants Vertical (Icon Placement)
+            Tab Group Vertical Variants (Icon Placement)
           </StorybookHeading>
           <StorybookSubHeading>Leading Icon and Label</StorybookSubHeading>
           <TabGroup size={TabSize.Medium} vertical divider>
