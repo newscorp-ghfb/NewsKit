@@ -52,10 +52,42 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
   <Prop name="hideLoadingIcon" type="boolean" default={false}>
     Hide the loading icon whilst the image is loading.
   </Prop>
+  <Prop name="captionText" type="string">
+    If provided, supplies the caption component. captionText is the text of the caption.
+  </Prop>
+  <Prop name="creditText" type="string">
+    If provided, supplies the credit text of the caption component.
+  </Prop>
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     <Prop name="stylePreset" type="MQ<string>">
       If provided, this overrides the style preset applied to the image.
+    </Prop>
+    <Prop name="caption" type="object" >
+      If provided, this overrides the styling of the caption component.
+      <Prop name="typographyPreset" type="MQ<string>">
+        If provided, this overrides the typography preset of the caption component.
+      </Prop>
+      <Prop name="stylePreset" type="MQ<string>">
+        If provided, this overrides the style preset of the caption component.
+      </Prop>
+      <Prop name="spaceStack" type="MQ<string>">
+        If provided, this overrides the spacing between the caption and the
+        credit.
+      </Prop>
+      <Prop name="spaceInset" type="MQ<string>">
+       If provided, this overrides the padding of the Caption. This override should only be used
+       with CaptionInset. Otherwise, spaceInset040 or spaceInset050  is used depending on the `size` prop.
+      </Prop>
+      <Prop name="credit" type="object" >
+        If provided, this overrides the styling of the credit portion of the caption component.
+          <Prop name="typographyPreset" type="MQ<string>">
+            If provided, this overrides the typography preset of the credit text.
+          </Prop>
+          <Prop name="stylePreset" type="MQ<string>">
+            If provided, this overrides the style preset of the credit text.
+          </Prop>
+      </Prop>
     </Prop>
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="image" />
@@ -109,6 +141,16 @@ The aspect width/height is only used on loading state.
       value: '3:2',
     },
     {
+      name: 'Caption',
+      propName: 'captionText',
+      value: 'This is the caption text within the caption of the image component',
+    },
+    {
+      name: 'Credit',
+      propName: 'creditText',
+      value: 'This is the credit text within the caption of the image component',
+    },
+    {
       name: 'Hide loading icon',
       propName: 'hideLoadingIcon',
       options: [
@@ -124,7 +166,7 @@ The aspect width/height is only used on loading state.
       ],
     },
     {
-      name: 'Style Preset',
+      name: 'Image Style Preset',
       propName: 'overrides',
       options: [
         {
@@ -144,6 +186,154 @@ The aspect width/height is only used on loading state.
           label: 'imageCircle',
           value: {
             stylePreset: 'imageCircle',
+          },
+        },
+      ],
+    },
+    {
+      name: 'Caption Style Preset',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            caption: {
+              stylePreset: undefined,
+            }
+          },
+          isDefault: true,
+        },
+        {
+          label: 'inkBrand010',
+          value: {
+            caption: {
+              stylePreset: 'inkBrand010',
+            }
+          },
+        },
+      ],
+    },
+    {
+      name: 'Caption Typography Preset',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            caption: {
+              typographyPreset: undefined,
+            }
+          },
+          isDefault: true,
+        },
+        {
+          label: 'meta030',
+          value: {
+            caption: {
+              typographyPreset: 'meta030',
+            }
+          },
+        },
+      ],
+    },
+    {
+      name: 'Caption SpaceStack',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            caption: {
+              spaceStack: undefined,
+            }
+          },
+          isDefault: true,
+        },
+        {
+          label: 'space090',
+          value: {
+            caption: {
+              spaceStack: 'space090',
+            }
+          },
+        },
+      ],
+    },
+    {
+      name: 'Caption Inset',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            caption: {
+              spaceInset: undefined,
+            }
+          },
+          isDefault: true,
+        },
+        {
+          label: 'spaceInset070',
+          value: {
+            caption: {
+              spaceInset: {
+                xs: "spaceInset070",
+              },
+            }
+          },
+        },
+      ],
+    },
+    {
+      name: 'Credit Style Preset',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            caption: {
+              credit: {
+                stylePreset: undefined,
+              },
+            },
+          },
+          isDefault: true,
+        },
+        {
+          label: 'inkContrast',
+          value: {
+            caption: {
+              credit: {
+                stylePreset: 'inkContrast',
+              },
+            },
+          },
+        },
+      ],
+    },
+    {
+      name: 'Credit Typography Preset',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            caption: {
+              credit: {
+                typographyPreset: undefined,
+              },
+            },
+          },
+          isDefault: true,
+        },
+        {
+          label: 'utilityMeta020',
+          value: {
+            caption: {
+              credit: {
+                typographyPreset: 'utilityMeta020',
+              },
+            },
           },
         },
       ],

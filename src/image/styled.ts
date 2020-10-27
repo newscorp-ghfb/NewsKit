@@ -1,8 +1,15 @@
+import {Block} from '../block';
 import {getStylePreset, styled} from '../utils/style';
 
 import {StyledImageProps, ImageContainerProps} from './types';
 
-export const ImageContainer = styled.div<ImageContainerProps>`
+export const StyledImageAndCaptionContainer = styled.div<
+  Pick<StyledImageProps, '$width'>
+>`
+  ${({$width: width = '100%'}) => ({width})}
+`;
+
+export const ImageContainer = styled(Block)<ImageContainerProps>`
   position: relative;
   width: 100%;
   ${({isLoading, paddingTop = 0}) =>

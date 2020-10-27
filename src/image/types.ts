@@ -42,7 +42,19 @@ export interface ImageContainerProps {
 export interface ImageProps extends Image, CommonProps {
   hideLoadingIcon?: boolean;
   loadingAspectRatio?: string;
+  captionText?: string;
+  creditText?: string;
   overrides?: {
-    stylePreset?: MQ<string>;
+    stylePreset?: MQ<StylePresetKeys>;
+    caption?: {
+      typographyPreset?: MQ<string>;
+      stylePreset?: MQ<string>;
+      spaceStack?: MQ<string>;
+      spaceInset?: MQ<string>;
+      credit?: {
+        typographyPreset?: MQ<string>;
+        stylePreset?: MQ<string>;
+      };
+    };
   };
 }

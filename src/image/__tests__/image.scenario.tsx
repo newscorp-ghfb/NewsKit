@@ -145,5 +145,103 @@ export default {
         </Container>
       ),
     },
+    {
+      name: 'image-with-caption',
+      type: 'story',
+      component: () => (
+        <Container>
+          <StorybookHeading>Image With Caption</StorybookHeading>
+          <Image
+            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.pngx"
+            loadingAspectRatio="3:2"
+            alt="Example Image"
+            captionText="Caption component with both caption and credit text"
+            creditText="Credit text"
+          />
+        </Container>
+      ),
+    },
+    {
+      name: 'image-with-caption-inset',
+      type: 'story',
+      component: () => (
+        <Container>
+          <StorybookHeading>Image With Caption Inset</StorybookHeading>
+          <Image
+            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.pngx"
+            loadingAspectRatio="3:2"
+            alt="Example Image"
+            captionText="Caption component with both caption and credit text"
+            creditText="Credit text"
+            overrides={{
+              caption: {
+                spaceInset: {
+                  xs: 'spaceInset060',
+                  md: 'spaceInset070',
+                },
+              },
+            }}
+          />
+        </Container>
+      ),
+    },
+    {
+      name: 'image-with-caption-and-overrides',
+      type: 'story',
+      component: () => (
+        <Container>
+          <StorybookHeading>Image With Caption and Overrides</StorybookHeading>
+          <Image
+            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.pngx"
+            loadingAspectRatio="3:2"
+            alt="Example Image"
+            captionText="Caption component with both caption and credit text"
+            creditText="Credit text"
+            overrides={{
+              caption: {
+                stylePreset: 'inkBrand010',
+                typographyPreset: 'editorialCaption010',
+                credit: {
+                  stylePreset: 'inkBrand010',
+                  typographyPreset: 'utilityMeta030',
+                },
+              },
+            }}
+          />
+        </Container>
+      ),
+    },
+    {
+      name: 'image-with-caption-inset-and-overrides',
+      type: 'story',
+      component: () => (
+        <Container>
+          <StorybookHeading>
+            Image With Caption Inset and Overrides
+          </StorybookHeading>
+          <Image
+            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.pngx"
+            loadingAspectRatio="3:2"
+            alt="Example Image"
+            captionText="Caption component with both caption and credit text"
+            creditText="Credit text"
+            overrides={{
+              caption: {
+                stylePreset: 'inkBrand010',
+                typographyPreset: 'editorialCaption010',
+                spaceInset: {
+                  xs: 'spaceInset060',
+                  md: 'spaceInset070',
+                },
+                credit: {
+                  stylePreset: 'inkBrand010',
+                  typographyPreset: 'utilityMeta030',
+                },
+              },
+            }}
+          />
+        </Container>
+      ),
+    },
   ],
 };

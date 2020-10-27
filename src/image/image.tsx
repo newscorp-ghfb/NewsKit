@@ -8,7 +8,12 @@ import {
   LoadingContainer,
   IconContainer,
   StyledImage,
+  StyledImageAndCaptionContainer,
 } from './styled';
+import {Caption} from '../caption';
+import {MQ} from '../utils/style';
+import {useTheme} from '../theme';
+import {getToken} from '../utils/get-token';
 
 export const useClientSide = (
   render: () => boolean | void,
@@ -22,9 +27,40 @@ export const useClientSide = (
   });
 };
 
+const renderCaption = (
+  captionText: string,
+  creditText?: string,
+  overrides?: {
+    stylePreset?: MQ<string>;
+    typographyPreset?: MQ<string>;
+    spaceStack?: MQ<string>;
+    spaceInset?: MQ<string>;
+    credit?: {
+      stylePreset?: MQ<string>;
+      typographyPreset?: MQ<string>;
+    };
+  },
+) => (
+  <Caption creditText={creditText} overrides={overrides}>
+    {captionText}
+  </Caption>
+);
+
+const getSpaceStackValue = (
+  captionText?: string,
+  captionSpaceInset?: object,
+) => {
+  if (captionText && !captionSpaceInset) {
+    return 'space020';
+  }
+  return '';
+};
+
 const ImageComponent: React.FC<ImageProps> = ({
   width,
   height,
+  captionText,
+  creditText,
   loadingAspectRatio,
   hideLoadingIcon,
   overrides = {},
@@ -44,30 +80,86 @@ const ImageComponent: React.FC<ImageProps> = ({
 
   useClientSide(onLoad, imageRef);
 
+  const theme = useTheme();
+  const captionSpaceStack =
+    creditText &&
+    getToken({theme, overrides}, 'image', 'caption', 'spaceStack');
+
+  const captionSpaceInset = getToken(
+    {theme, overrides},
+    'image',
+    'caption',
+    'spaceInset',
+  );
+
+  const captionStylePreset = getToken(
+    {theme, overrides},
+    'image',
+    'caption',
+    'stylePreset',
+  );
+
+  const captionTypographyPreset = getToken(
+    {theme, overrides},
+    'image',
+    'caption',
+    'typographyPreset',
+  );
+
+  const creditStylePreset = getToken(
+    {theme, overrides},
+    'image.caption.credit',
+    'caption.credit',
+    'stylePreset',
+  );
+
+  const creditTypographyPreset = getToken(
+    {theme, overrides},
+    'image.caption.credit',
+    'caption.credit',
+    'typographyPreset',
+  );
+
   return (
-    <ImageContainer
-      isLoading={isLoading}
-      paddingTop={paddingTop}
-      overrides={overrides}
-    >
-      {isLoading && (
-        <LoadingContainer>
-          {!hideLoadingIcon && (
-            <IconContainer>
-              <Placeholder size="iconSize040" />
-            </IconContainer>
-          )}
-        </LoadingContainer>
-      )}
-      <StyledImage
-        {...props}
-        $width={$width}
-        $height={$height}
-        ref={imageRef}
-        onLoad={onLoad}
+    <StyledImageAndCaptionContainer $width={$width}>
+      <ImageContainer
         isLoading={isLoading}
-      />
-    </ImageContainer>
+        paddingTop={paddingTop}
+        overrides={{
+          ...overrides,
+          ...{spaceStack: getSpaceStackValue(captionText, captionSpaceInset)},
+        }}
+      >
+        {isLoading && (
+          <LoadingContainer>
+            {!hideLoadingIcon && (
+              <IconContainer>
+                <Placeholder size="iconSize040" />
+              </IconContainer>
+            )}
+          </LoadingContainer>
+        )}
+        <StyledImage
+          {...props}
+          $width={$width}
+          $height={$height}
+          ref={imageRef}
+          onLoad={onLoad}
+          isLoading={isLoading}
+        />
+      </ImageContainer>
+      {captionText &&
+        renderCaption(captionText, creditText, {
+          stylePreset: captionStylePreset,
+          typographyPreset: captionTypographyPreset,
+          spaceInset: captionSpaceInset,
+          spaceStack: captionSpaceStack,
+          credit: {
+            stylePreset: creditStylePreset,
+            typographyPreset: creditTypographyPreset,
+          },
+        })}
+    </StyledImageAndCaptionContainer>
   );
 };
 

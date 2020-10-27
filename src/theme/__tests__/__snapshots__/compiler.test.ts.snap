@@ -492,6 +492,19 @@ Object {
       "stylePreset": "iconDefault",
     },
     "image": Object {
+      "caption": Object {
+        "credit": Object {
+          "stylePreset": "inkSubtle",
+          "typographyPreset": "utilityMeta010",
+        },
+        "spaceInset": Object {
+          "md": "spaceInset050",
+          "xs": "spaceInset040",
+        },
+        "spaceStack": "space040",
+        "stylePreset": "inkBase",
+        "typographyPreset": "editorialCaption010",
+      },
       "stylePreset": "imageSharp",
     },
     "link": Object {

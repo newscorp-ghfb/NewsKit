@@ -139,6 +139,77 @@ describe('Image', () => {
     });
   });
 
+  describe('Image with caption', () => {
+    const imageWithCaptionProps = {
+      src:
+        'http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png',
+      alt: 'Example Image',
+      captionText: 'Caption component with both caption and credit text',
+      creditText: 'Credit text',
+    };
+
+    test('renders with caption component', () => {
+      const fragment = renderToFragmentWithTheme(Image, {
+        ...imageWithCaptionProps,
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders with caption and overrides', () => {
+      const fragment = renderToFragmentWithTheme(Image, {
+        ...imageWithCaptionProps,
+        overrides: {
+          caption: {
+            typographyPreset: 'utilitySubheading050',
+            stylePreset: 'inkContrast',
+            spaceStack: 'space090',
+            credit: {
+              typographyPreset: 'utilityMeta010',
+              stylePreset: 'inkContrast',
+            },
+          },
+        },
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders with caption inset', () => {
+      const fragment = renderToFragmentWithTheme(Image, {
+        ...imageWithCaptionProps,
+        overrides: {
+          caption: {
+            spaceInset: {
+              xs: 'spaceInset060',
+              md: 'spaceInset070',
+            },
+          },
+        },
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders with caption inset and overrides', () => {
+      const fragment = renderToFragmentWithTheme(Image, {
+        ...imageWithCaptionProps,
+        overrides: {
+          caption: {
+            stylePreset: 'inkBrand010',
+            typographyPreset: 'editorialCaption010',
+            spaceInset: {
+              xs: 'spaceInset060',
+              md: 'spaceInset070',
+            },
+            credit: {
+              stylePreset: 'inkBrand010',
+              typographyPreset: 'utilityMeta030',
+            },
+          },
+        },
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+  });
+
   describe('client side hook', () => {
     test('manually call onload handler if rendered on server side', () => {
       const imageRef = {
