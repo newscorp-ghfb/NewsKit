@@ -18,7 +18,7 @@ export default {
         <Container>
           <StorybookHeading>300px by 200px</StorybookHeading>
           <Image
-            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
+            src="/placeholder-3x2.png"
             width="300px"
             height="200px"
             alt="Example Image"
@@ -33,7 +33,7 @@ export default {
         <Container>
           <StorybookHeading>100% by 60%</StorybookHeading>
           <Image
-            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
+            src="/placeholder-3x2.png"
             width="100%"
             height="66%"
             alt="Example Image"
@@ -48,7 +48,7 @@ export default {
         <Container>
           <StorybookHeading>Image with sharp border-radius</StorybookHeading>
           <Image
-            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
+            src="/placeholder-3x2.png"
             loadingAspectRatio="3:2"
             alt="Example Image"
           />
@@ -62,7 +62,7 @@ export default {
         <Container>
           <StorybookHeading>Image with rounded border-radius</StorybookHeading>
           <Image
-            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
+            src="/placeholder-3x2.png"
             loadingAspectRatio="3:2"
             alt="Example Image"
             hideLoadingIcon
@@ -82,7 +82,7 @@ export default {
             Image with rounded border-radius and mq
           </StorybookHeading>
           <Image
-            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
+            src="/placeholder-3x2.png"
             loadingAspectRatio="3:2"
             alt="Example Image"
             hideLoadingIcon
@@ -103,7 +103,7 @@ export default {
         <Container>
           <StorybookHeading>Image with circle border-radius</StorybookHeading>
           <Image
-            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
+            src="/placeholder-1x1.png"
             loadingAspectRatio="1:1"
             alt="Example Image"
             hideLoadingIcon
@@ -121,7 +121,7 @@ export default {
         <Container>
           <StorybookHeading>Valid image reference</StorybookHeading>
           <Image
-            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
+            src="/placeholder-3x2.png"
             loadingAspectRatio="3:2"
             alt="Example Image"
           />
@@ -137,7 +137,7 @@ export default {
             Invalid image reference hiding logo
           </StorybookHeading>
           <Image
-            src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.pngx"
+            src="/placeholder-3x2.png"
             loadingAspectRatio="3:2"
             alt="Example Image"
             hideLoadingIcon

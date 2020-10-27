@@ -10,8 +10,7 @@ import {Image, useClientSide} from '..';
 
 describe('Image', () => {
   const defaultProps = {
-    src:
-      'http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png',
+    src: '/placeholder-3x2.png',
     width: '3',
     height: '3',
     alt: 'Example Image',
@@ -60,8 +59,7 @@ describe('Image', () => {
 
   describe('loadingAspectRatio', () => {
     const props = {
-      src:
-        'http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png',
+      src: '/placeholder-3x2.png',
       alt: 'Example Image',
     };
 

@@ -3278,7 +3278,7 @@ exports[`Radio Player live player 1`] = `
           description="Test description"
           flag="Live"
           imgalt="test image 1"
-          imgsrc="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
+          imgsrc="/placeholder-1x1.png"
           src="https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3"
           tags="Tag 1,Tag 2"
           time="1PM to 3PM"
@@ -3338,7 +3338,7 @@ exports[`Radio Player live player 1`] = `
                         <img
                           alt="test image 1"
                           class="emotion-3"
-                          src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
+                          src="/placeholder-1x1.png"
                         />
                       </div>
                     </div>
@@ -3451,7 +3451,7 @@ exports[`Radio Player live player 1`] = `
                         <img
                           alt="test image 1"
                           class="emotion-3"
-                          src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
+                          src="/placeholder-1x1.png"
                         />
                       </div>
                     </div>
@@ -5441,7 +5441,7 @@ exports[`Radio Player player with popout link 1`] = `
           description="Test description"
           href="https://thetimes.co.uk/"
           imgalt="test image 1"
-          imgsrc="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
+          imgsrc="/placeholder-1x1.png"
           src="https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3"
           tags="Tag 1,Tag 2"
           time="1PM to 3PM"
@@ -5501,7 +5501,7 @@ exports[`Radio Player player with popout link 1`] = `
                         <img
                           alt="test image 1"
                           class="emotion-3"
-                          src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
+                          src="/placeholder-1x1.png"
                         />
                       </div>
                     </div>
@@ -5588,7 +5588,7 @@ exports[`Radio Player player with popout link 1`] = `
                         <img
                           alt="test image 1"
                           class="emotion-3"
-                          src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
+                          src="/placeholder-1x1.png"
                         />
                       </div>
                     </div>
@@ -7819,7 +7819,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
           data-testid="audio-element"
           description="Test description"
           imgalt="test image 1"
-          imgsrc="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
+          imgsrc="/placeholder-1x1.png"
           src="https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3"
           tags="Tag 1,Tag 2"
           time="1PM to 3PM"
@@ -7879,7 +7879,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                         <img
                           alt="test image 1"
                           class="emotion-3"
-                          src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
+                          src="/placeholder-1x1.png"
                         />
                       </div>
                     </div>
@@ -8012,7 +8012,7 @@ exports[`Radio Player with flag passed as Flag Component and Icon 1`] = `
                         <img
                           alt="test image 1"
                           class="emotion-3"
-                          src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
+                          src="/placeholder-1x1.png"
                         />
                       </div>
                     </div>

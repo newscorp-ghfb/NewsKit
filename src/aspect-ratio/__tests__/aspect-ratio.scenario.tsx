@@ -61,7 +61,7 @@ export default {
           <StorybookHeading>1:1 aspect ratio with 3:2 image</StorybookHeading>
           <AspectRatio aspectRatio="1:1">
             <img
-              src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-3-2.png"
+              src="/placeholder-3x2.png"
               alt="3:2 test"
               height="400px"
               width="600px"
@@ -78,7 +78,7 @@ export default {
           <StorybookHeading>3:2 aspect ratio with 1:1 image</StorybookHeading>
           <AspectRatio aspectRatio="3:2">
             <img
-              src="http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png"
+              src="/placeholder-1x1.png"
               alt="1:1 test"
               height="600px"
               width="600px"

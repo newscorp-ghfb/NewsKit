@@ -17,8 +17,7 @@ const props = {
   imgAlt: 'test image 1',
   title: 'title 1',
   live: false,
-  imgSrc:
-    'http://webstyle.unicomm.fsu.edu/3.2/img/placeholders/ratio-pref-1-1.png',
+  imgSrc: '/placeholder-1x1.png',
   captionSrc: 'captions.vtt',
   time: '1PM to 3PM',
   description: 'Test description',
