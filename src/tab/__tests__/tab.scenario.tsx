@@ -67,7 +67,7 @@ const myCustomTheme = createTheme({
   },
 });
 
-const states = ['Default', 'Selected', 'Hover', 'Active', 'Disabled', 'Focus'];
+const states = ['Default', 'Selected', 'Disabled', 'Focus'];
 
 export default {
   name: 'tab',
@@ -107,22 +107,22 @@ export default {
         <React.Fragment>
           <StorybookHeading>Tab States</StorybookHeading>
           <Grid>
-            <Cell xsHidden sm={3}>
+            <Cell xs={6} sm={3}>
               <Stack>
-                <h2>State</h2>
+                <StorybookSubHeading>State</StorybookSubHeading>
                 {states.map(state => (
                   <Label key={getSSRId()}>{state}</Label>
                 ))}
               </Stack>
             </Cell>
             {
-              <Cell xs={4} sm={3}>
+              <Cell xs={6} sm={3}>
                 <Stack
                   spaceInline="sizing020"
                   stackDistribution={StackDistribution.SpaceEvenly}
                   role="tablist"
                 >
-                  <h2>Tab</h2>
+                  <StorybookSubHeading>Tab</StorybookSubHeading>
                   <Block role="tablist" data-state="Default">
                     <Tab ariaLabel="tab label" overrides={{stylePreset: 'tab'}}>
                       Tab Label
@@ -135,18 +135,6 @@ export default {
                       isSelected
                       overrides={{stylePreset: 'tab'}}
                     >
-                      Tab Label
-                    </Tab>
-                  </Block>
-
-                  <Block data-state="Hover">
-                    <Tab ariaLabel="tab label" overrides={{stylePreset: 'tab'}}>
-                      Tab Label
-                    </Tab>
-                  </Block>
-
-                  <Block data-state="Active">
-                    <Tab ariaLabel="tab label" overrides={{stylePreset: 'tab'}}>
                       Tab Label
                     </Tab>
                   </Block>
@@ -183,27 +171,21 @@ export default {
       component: () => (
         <React.Fragment>
           <StorybookHeading>Tab - Icon</StorybookHeading>
-          <Container>
-            {[Pause, Email, IconFilledLink].map(IconType => (
-              <Spacer key={getSSRId()}>
-                <Stack
-                  flow="horizontal-center"
-                  spaceInline="sizing060"
-                  role="tablist"
-                >
-                  {tabSizes.map(tab => (
-                    <Tab
-                      key={getSSRId()}
-                      size={tab.tabSize}
-                      ariaLabel="icon tab"
-                    >
-                      <IconType />
-                    </Tab>
-                  ))}
-                </Stack>
-              </Spacer>
-            ))}
-          </Container>
+          {[Pause, Email, IconFilledLink].map(IconType => (
+            <Spacer key={getSSRId()}>
+              <Stack
+                flow="horizontal-center"
+                spaceInline="sizing050"
+                role="tablist"
+              >
+                {tabSizes.map(tab => (
+                  <Tab key={getSSRId()} size={tab.tabSize} ariaLabel="icon tab">
+                    <IconType />
+                  </Tab>
+                ))}
+              </Stack>
+            </Spacer>
+          ))}
         </React.Fragment>
       ),
     },
@@ -213,28 +195,26 @@ export default {
       component: () => (
         <React.Fragment>
           <StorybookHeading>Tab - Icon and Label</StorybookHeading>
-          <Container>
-            {[Pause, Email, IconFilledLink].map(IconType => (
-              <Spacer key={getSSRId()}>
-                <Stack
-                  flow="horizontal-center"
-                  spaceInline="sizing060"
-                  role="tablist"
-                >
-                  {tabSizes.map(tab => (
-                    <Tab
-                      key={getSSRId()}
-                      size={tab.tabSize}
-                      ariaLabel="tab label"
-                    >
-                      <IconType />
-                      Tab Label
-                    </Tab>
-                  ))}
-                </Stack>
-              </Spacer>
-            ))}
-          </Container>
+          {[Pause, Email, IconFilledLink].map(IconType => (
+            <Spacer key={getSSRId()}>
+              <Stack
+                flow="horizontal-center"
+                spaceInline="sizing010"
+                role="tablist"
+              >
+                {tabSizes.map(tab => (
+                  <Tab
+                    key={getSSRId()}
+                    size={tab.tabSize}
+                    ariaLabel="tab label"
+                  >
+                    <IconType />
+                    Tab Label
+                  </Tab>
+                ))}
+              </Stack>
+            </Spacer>
+          ))}
         </React.Fragment>
       ),
     },

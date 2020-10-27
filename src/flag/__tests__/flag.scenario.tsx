@@ -3,6 +3,10 @@ import {Flag, FlagSize} from '..';
 import {styled} from '../../utils/style';
 import {Email, Bookmark, IconFilledVolumeOff} from '../../icons';
 import {Stack} from '../../stack';
+import {
+  StorybookSubHeading,
+  StorybookHeading,
+} from '../../test/storybook-comps';
 
 const Block = styled.div`
   margin: 10px;
@@ -16,21 +20,15 @@ export default {
   name: 'flag',
   children: [
     {
-      name: 'solid-flag',
+      name: 'flag',
       type: 'story',
       component: () => (
         <React.Fragment>
-          <h2>Solid Flag</h2>
+          <StorybookHeading>Flag</StorybookHeading>
+          <StorybookSubHeading>Solid</StorybookSubHeading>
           <Flag>Text goes here</Flag>
-        </React.Fragment>
-      ),
-    },
-    {
-      name: 'minimal-flag',
-      type: 'story',
-      component: () => (
-        <React.Fragment>
-          <h2>Minimal Flag</h2>
+
+          <StorybookSubHeading>Minimal</StorybookSubHeading>
           <Flag
             overrides={{
               stylePreset: 'flagMinimal',
@@ -39,16 +37,57 @@ export default {
           >
             Text goes here
           </Flag>
-        </React.Fragment>
-      ),
-    },
-    {
-      name: 'sizing',
-      type: 'story',
-      component: () => (
-        <React.Fragment>
-          <h1>Flag Sizes</h1>
 
+          <StorybookSubHeading>Minimal with icons</StorybookSubHeading>
+          <Stack
+            flow="horizontal-center"
+            spaceStack="sizing020"
+            spaceInline="sizing020"
+            wrap="wrap"
+          >
+            <Flag
+              size={FlagSize.Small}
+              overrides={{
+                stylePreset: 'flagMinimal',
+                spaceInset: 'spaceInset000Squish',
+              }}
+            >
+              <Email />
+              Text
+            </Flag>
+            <Flag
+              size={FlagSize.Large}
+              overrides={{
+                stylePreset: 'flagMinimal',
+                spaceInset: 'spaceInset000Squish',
+              }}
+            >
+              <Email />
+              Text
+            </Flag>
+            <Flag
+              size={FlagSize.Large}
+              overrides={{
+                stylePreset: 'flagMinimal',
+                spaceInset: 'spaceInset000Squish',
+              }}
+            >
+              <Bookmark />
+              Text
+            </Flag>
+            <Flag
+              size={FlagSize.Large}
+              overrides={{
+                stylePreset: 'flagMinimal',
+                spaceInset: 'spaceInset000Squish',
+              }}
+            >
+              <IconFilledVolumeOff />
+              Text
+            </Flag>
+          </Stack>
+
+          <StorybookSubHeading>Flag Sizes</StorybookSubHeading>
           <Stack
             flow="horizontal-center"
             spaceStack="sizing020"
@@ -58,30 +97,23 @@ export default {
             <Flag size={FlagSize.Small}>Small</Flag>
             <Flag size={FlagSize.Large}>Large</Flag>
           </Stack>
-        </React.Fragment>
-      ),
-    },
-    {
-      name: 'style-presets',
-      type: 'story',
-      component: () => (
-        <React.Fragment>
-          <h1>Style Presets</h1>
+
+          <StorybookSubHeading>
+            with Typography Preset override
+          </StorybookSubHeading>
           <Block>
-            <Flag>flagSolid</Flag>
-          </Block>
-          <Block>
-            <Flag overrides={{stylePreset: 'flagMinimal'}}>flagMinimal</Flag>
+            <Flag overrides={{typographyPreset: 'meta020'}}>Text</Flag>
           </Block>
         </React.Fragment>
       ),
     },
     {
-      name: 'flags-with-an-icon',
+      name: 'flag-with-icons',
       type: 'story',
       component: () => (
         <React.Fragment>
-          <h2>Flags with an icon</h2>
+          <StorybookHeading>Flag</StorybookHeading>
+          <StorybookSubHeading>with leading icon</StorybookSubHeading>
           <Container>
             <Stack
               flow="horizontal-center"
@@ -99,9 +131,29 @@ export default {
               </Flag>
             </Stack>
           </Container>
-          <h2>
-            Flags with leading and trailing icon and overridden default sizes
-          </h2>
+
+          <StorybookSubHeading>with trailing icon</StorybookSubHeading>
+          <Container>
+            <Stack
+              flow="horizontal-center"
+              spaceInline="sizing020"
+              spaceStack="sizing020"
+              wrap="wrap"
+            >
+              <Flag size={FlagSize.Small}>
+                Text
+                <Email />
+              </Flag>
+              <Flag size={FlagSize.Large}>
+                Text
+                <Email />
+              </Flag>
+            </Stack>
+          </Container>
+
+          <StorybookSubHeading>
+            with leading and trailing icon
+          </StorybookSubHeading>
           <Container>
             <Stack
               flow="horizontal-center"
@@ -112,19 +164,44 @@ export default {
               <Flag size={FlagSize.Small}>
                 <Email />
                 Text
+                <Email />
+              </Flag>
+              <Flag size={FlagSize.Large}>
+                <Email />
+                Text
+                <Email />
+              </Flag>
+            </Stack>
+          </Container>
+
+          <StorybookSubHeading>
+            with icon and inline overridden size
+          </StorybookSubHeading>
+          <Container>
+            <Stack
+              flow="horizontal-center"
+              spaceInline="sizing020"
+              spaceStack="sizing020"
+              wrap="wrap"
+            >
+              <Flag size={FlagSize.Small}>
+                <Email />
+                Text
+                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
                 <Email size="iconSize030" />
               </Flag>
               <Flag size={FlagSize.Large}>
                 <Email />
                 Text
+                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
                 <Email size="iconSize040" />
               </Flag>
             </Stack>
           </Container>
-          <h2>
-            Flags with leading and trailing icon and overridden sizes with
-            overrides and inline prop
-          </h2>
+
+          <StorybookSubHeading>
+            with icon and inline overridden size from overrides
+          </StorybookSubHeading>
           <Container>
             <Stack
               flow="horizontal-center"
@@ -135,70 +212,14 @@ export default {
               <Flag size={FlagSize.Small} overrides={{iconSize: 'iconSize020'}}>
                 <Email />
                 Text
+                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
                 <Email size="iconSize030" />
               </Flag>
               <Flag size={FlagSize.Large} overrides={{iconSize: 'iconSize020'}}>
                 <Email />
                 Text
+                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
                 <Email size="iconSize040" />
-              </Flag>
-            </Stack>
-          </Container>
-        </React.Fragment>
-      ),
-    },
-    {
-      name: 'minimal-with-icon',
-      type: 'story',
-      component: () => (
-        <React.Fragment>
-          <h2>Minimal (without padding)</h2>
-          <Container>
-            <Stack
-              flow="horizontal-center"
-              spaceStack="sizing020"
-              spaceInline="sizing020"
-              wrap="wrap"
-            >
-              <Flag
-                size={FlagSize.Small}
-                overrides={{
-                  stylePreset: 'flagMinimal',
-                  spaceInset: 'spaceInsetSquish000',
-                }}
-              >
-                <Email />
-                Text
-              </Flag>
-              <Flag
-                size={FlagSize.Large}
-                overrides={{
-                  stylePreset: 'flagMinimal',
-                  spaceInset: 'spaceInsetSquish000',
-                }}
-              >
-                <Email />
-                Text
-              </Flag>
-              <Flag
-                size={FlagSize.Large}
-                overrides={{
-                  stylePreset: 'flagMinimal',
-                  spaceInset: 'spaceInsetSquish000',
-                }}
-              >
-                <Bookmark />
-                Text
-              </Flag>
-              <Flag
-                size={FlagSize.Large}
-                overrides={{
-                  stylePreset: 'flagMinimal',
-                  spaceInset: 'spaceInsetSquish000',
-                }}
-              >
-                <IconFilledVolumeOff />
-                Text
               </Flag>
             </Stack>
           </Container>

@@ -1,8 +1,7 @@
 import * as React from 'react';
 import {Visible, Hidden} from '..';
+import {StorybookHeading} from '../../test/storybook-comps';
 import {styled} from '../../utils/style';
-
-export const name = 'visibility';
 
 const Container = styled.span<{color: string}>`
   display: inline-block;
@@ -12,34 +11,44 @@ const Container = styled.span<{color: string}>`
   border: solid 1px black;
 `;
 
-export const component = () => (
-  <div>
-    <Visible display="inline-block" xs>
-      <Container color="green">xs</Container>
-    </Visible>
-    <Hidden display="inline-block" xs>
-      <Container color="silver">xs</Container>
-    </Hidden>
+export default {
+  name: 'visibility',
+  children: [
+    {
+      name: 'visibility-component',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>Visibility component</StorybookHeading>
+          <Visible display="inline-block" xs>
+            <Container color="green">xs</Container>
+          </Visible>
+          <Hidden display="inline-block" xs>
+            <Container color="silver">xs</Container>
+          </Hidden>
 
-    <Visible display="inline-block" sm>
-      <Container color="green">sm</Container>
-    </Visible>
-    <Hidden display="inline-block" sm>
-      <Container color="silver">sm</Container>
-    </Hidden>
+          <Visible display="inline-block" sm>
+            <Container color="green">sm</Container>
+          </Visible>
+          <Hidden display="inline-block" sm>
+            <Container color="silver">sm</Container>
+          </Hidden>
 
-    <Visible display="inline-block" md>
-      <Container color="green">md</Container>
-    </Visible>
-    <Hidden display="inline-block" md>
-      <Container color="silver">md</Container>
-    </Hidden>
+          <Visible display="inline-block" md>
+            <Container color="green">md</Container>
+          </Visible>
+          <Hidden display="inline-block" md>
+            <Container color="silver">md</Container>
+          </Hidden>
 
-    <Visible display="inline-block" lg>
-      <Container color="green">lg</Container>
-    </Visible>
-    <Hidden display="inline-block" lg>
-      <Container color="silver">lg</Container>
-    </Hidden>
-  </div>
-);
+          <Visible display="inline-block" lg>
+            <Container color="green">lg</Container>
+          </Visible>
+          <Hidden display="inline-block" lg>
+            <Container color="silver">lg</Container>
+          </Hidden>
+        </React.Fragment>
+      ),
+    },
+  ],
+};

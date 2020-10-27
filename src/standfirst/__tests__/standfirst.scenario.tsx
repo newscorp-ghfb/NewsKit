@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {Standfirst} from '..';
 import {createTheme, ThemeProvider} from '../../theme';
+import {StorybookSubHeading} from '../../test/storybook-comps';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-standfirst-theme',
@@ -8,22 +9,24 @@ const myCustomTheme = createTheme({
     stylePresets: {
       standfirstCustom: {
         base: {
-          color: '#0B5999',
+          color: '{{colors.blue060}}',
         },
       },
     },
     typographyPresets: {
       standfirstCustom: {
-        fontFamily: '"Noto Sans", sans-serif',
-        fontWeight: 400,
-        letterSpacing: 0,
+        fontFamily: '{{fonts.fontFamily1.fontFamily}}',
+        fontSize: '{{fonts.fontSize060}}',
+        lineHeight: '{{fonts.fontLineHeight030}}',
+        fontWeight: '{{fonts.fontWeight020}}',
+        letterSpacing: '{{fonts.fontLetterSpacing030}}',
       },
     },
   },
 });
 
 const bodyString =
-  'Telling the stories that matter, seeding ideas and stirring emotion. Capturing moments, meaning and magic. Making sense of the world. On the shoulders of giants, in the thick of it, behind the scenes and fighting the good fight. Long form and rapid-fire, pragmatic and poetic, comical and critical. Being at the biggest events with the biggest names noticing the smallest details, and sticking up for the little guy.';
+  'Telling the stories that matter, seeding ideas and stirring emotion. Capturing moments, meaning and magic. Making sense of the world. On the shoulders of giants, in the thick of it, behind the scenes and fighting the good fight.';
 
 export default {
   name: 'standfirst',
@@ -33,45 +36,49 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
+          <StorybookSubHeading>Standfirst - default</StorybookSubHeading>
           <Standfirst>{bodyString}</Standfirst>
         </React.Fragment>
       ),
     },
     {
-      name: 'as different html tag',
+      name: 'with-as-prop',
       type: 'story',
       component: () => (
         <React.Fragment>
-          <h3>As h4</h3>
-          <Standfirst as="h4">{bodyString}</Standfirst>
+          <StorybookSubHeading>Standfirst - as h3</StorybookSubHeading>
+          <Standfirst as="h3">{bodyString}</Standfirst>
 
-          <h3>As span</h3>
+          <StorybookSubHeading>Standfirst - as span</StorybookSubHeading>
           <Standfirst as="span">{bodyString}</Standfirst>
         </React.Fragment>
       ),
     },
     {
-      name: 'with overridden presets',
+      name: 'with-overrides',
       type: 'story',
       component: () => (
         <React.Fragment>
           <ThemeProvider theme={myCustomTheme}>
-            <h3>With style-preset &quot;standfirstCustom&quot;</h3>
+            <StorybookSubHeading>
+              Standfirst - with style-preset override
+            </StorybookSubHeading>
             <Standfirst
               overrides={{
                 styledText: {
-                  stylePreset: 'linkInline',
+                  stylePreset: 'standfirstCustom',
                 },
               }}
             >
               {bodyString}
             </Standfirst>
-
-            <h3>With typography-preset &quot;standfirstCustom&quot;</h3>
+            <StorybookSubHeading>
+              Standfirst - with typography-preset override
+            </StorybookSubHeading>
             <Standfirst
               overrides={{
                 styledText: {
-                  typographyPreset: 'editorialSubheading030',
+                  typographyPreset: 'editorialSubheading020',
                 },
               }}
             >

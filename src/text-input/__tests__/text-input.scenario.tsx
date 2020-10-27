@@ -1,14 +1,20 @@
 import * as React from 'react';
 import {TextInput, TextInputSize} from '..';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 import {styled, getSizingFromTheme} from '../../utils/style';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
+import {Block} from '../../block';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
 import {ThemeProvider, createTheme} from '../../theme';
 
 const Container = styled.div`
-  margin: ${getSizingFromTheme('sizing100')};
+  ${getMediaQueryFromTheme('md')} {
+    margin: ${getSizingFromTheme('sizing100')};
+  }
 `;
 
 const Spacer = styled.div`
@@ -28,7 +34,7 @@ const Label = styled.div`
   justify-content: center;
 `;
 
-const Block = styled.div`
+const CustomBlock = styled.div`
   display: flex;
   align-items: center;
   &::before {
@@ -57,40 +63,56 @@ const myCustomTheme = createTheme({
   },
 });
 
-const states = ['Default', 'Focus', 'Hover', 'Disabled', 'Read-Only'];
+const states = ['Default', 'Focus', 'Disabled', 'Read-Only'];
 
 export default {
   name: 'text-input',
   children: [
     {
+      name: 'text-input-size',
+      type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Text Input Size</StorybookHeading>
+          <StorybookHeading>Text Input Sizes</StorybookHeading>
           <Container>
-            <Stack flow="horizontal-center" spaceInline="sizing070" wrap="wrap">
-              <TextInput
-                size={TextInputSize.Small}
-                label="Label"
-                assistiveText="Assistive text"
-              />
-              <TextInput
-                size={TextInputSize.Medium}
-                label="Label"
-                assistiveText="Assistive text"
-              />
-              <TextInput
-                size={TextInputSize.Large}
-                label="Label"
-                assistiveText="Assistive text"
-              />
+            <Stack
+              flow="horizontal-center"
+              spaceInline="sizing070"
+              spaceStack="sizing050"
+              wrap="wrap"
+            >
+              <Block>
+                <StorybookSubHeading>Small</StorybookSubHeading>
+                <TextInput
+                  size={TextInputSize.Small}
+                  label="Label"
+                  assistiveText="Assistive text"
+                />
+              </Block>
+              <Block>
+                <StorybookSubHeading>Medium</StorybookSubHeading>
+                <TextInput
+                  size={TextInputSize.Medium}
+                  label="Label"
+                  assistiveText="Assistive text"
+                />
+              </Block>
+              <Block>
+                <StorybookSubHeading>Large</StorybookSubHeading>
+                <TextInput
+                  size={TextInputSize.Large}
+                  label="Label"
+                  assistiveText="Assistive text"
+                />
+              </Block>
             </Stack>
           </Container>
         </React.Fragment>
       ),
-      name: 'text-input-size',
-      type: 'story',
     },
     {
+      name: 'full-width-text-input',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>Full-Width Text Input</StorybookHeading>
@@ -128,10 +150,10 @@ export default {
           </Container>
         </React.Fragment>
       ),
-      name: 'full-width-text-input',
-      type: 'story',
     },
     {
+      name: 'fixed-width-text-input',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>Fixed-Width Text Input</StorybookHeading>
@@ -169,39 +191,22 @@ export default {
           </Container>
         </React.Fragment>
       ),
-      name: 'fixed-width-text-input',
-      type: 'story',
     },
     {
+      name: 'text-input-variations',
+      type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Text Input Hidden Label</StorybookHeading>
+          <StorybookHeading>Text Input Variations</StorybookHeading>
+          <StorybookSubHeading>With Hidden Label</StorybookSubHeading>
           <Container>
             <TextInput hideLabel label="Label" assistiveText="Assistive text" />
           </Container>
-        </React.Fragment>
-      ),
-      name: 'text-input-hidden-label',
-      type: 'story',
-    },
-    {
-      component: () => (
-        <React.Fragment>
-          <StorybookHeading>Text Input Without Assistive Text</StorybookHeading>
+          <StorybookSubHeading>Without Assistive Text</StorybookSubHeading>
           <Container>
             <TextInput label="Label" />
           </Container>
-        </React.Fragment>
-      ),
-      name: 'text-input-without-assistive-text',
-      type: 'story',
-    },
-    {
-      component: () => (
-        <React.Fragment>
-          <StorybookHeading>
-            Text Input With Custom Placeholder
-          </StorybookHeading>
+          <StorybookSubHeading>With Custom Placeholder</StorybookSubHeading>
           <Container>
             <TextInput
               label="Label"
@@ -211,15 +216,15 @@ export default {
           </Container>
         </React.Fragment>
       ),
-      name: 'text-input-with-custom-placeholder',
-      type: 'story',
     },
     {
+      name: 'text-input-states',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>Text Input States</StorybookHeading>
           <Grid>
-            <Cell xsHidden sm={4}>
+            <Cell xs={4} sm={4}>
               <Stack
                 spaceInline="sizing100"
                 stackDistribution={StackDistribution.Start}
@@ -230,17 +235,18 @@ export default {
               </Stack>
             </Cell>
             {
-              <Cell xs={4} sm={4}>
+              <Cell xs={8} sm={4}>
                 <Stack
                   spaceInline="sizing070"
                   stackDistribution={StackDistribution.Start}
                 >
-                  <Block data-state="Default">
+                  <CustomBlock data-state="Default">
                     <TextInput label="Label" assistiveText="Assistive text" />
-                  </Block>
+                  </CustomBlock>
 
-                  <Block data-state="Focus">
+                  <CustomBlock data-state="Focus">
                     <TextInput
+                      autoFocus
                       label="Label"
                       assistiveText="Assistive text"
                       overrides={{
@@ -249,21 +255,9 @@ export default {
                         },
                       }}
                     />
-                  </Block>
+                  </CustomBlock>
 
-                  <Block data-state="Hover">
-                    <TextInput
-                      label="Label"
-                      assistiveText="Assistive text"
-                      overrides={{
-                        input: {
-                          stylePreset: 'textInput',
-                        },
-                      }}
-                    />
-                  </Block>
-
-                  <Block data-state="Disabled">
+                  <CustomBlock data-state="Disabled">
                     <TextInput
                       disabled
                       label="Label"
@@ -277,25 +271,25 @@ export default {
                         },
                       }}
                     />
-                  </Block>
+                  </CustomBlock>
 
-                  <Block data-state="Read-Only">
+                  <CustomBlock data-state="Read-Only">
                     <TextInput
                       readOnly
                       label="Label"
                       assistiveText="Assistive text"
                     />
-                  </Block>
+                  </CustomBlock>
                 </Stack>
               </Cell>
             }
           </Grid>
         </React.Fragment>
       ),
-      name: 'text-input-states',
-      type: 'story',
     },
     {
+      name: 'text-input-with-overrides',
+      type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>Text Input With Overrides</StorybookHeading>
@@ -323,8 +317,6 @@ export default {
           </Container>
         </React.Fragment>
       ),
-      name: 'text-input-with-overrides',
-      type: 'story',
     },
   ],
 };

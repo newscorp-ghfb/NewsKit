@@ -1,6 +1,9 @@
 import * as React from 'react';
 import {Card, CardInset} from '..';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 import {Grid, Cell, Visible} from '../../grid';
 import {Image} from '../../image';
 import {Stack, Flow} from '../../stack';
@@ -278,7 +281,7 @@ const cardInsetLargeBody = cardBodyBase({inset: true})({cardSize: 'Large'});
 const renderCard = () => (
   <ThemeProvider theme={myCustomCardTheme}>
     <Visible xs sm>
-      <h3>Card - small - Without Inset</h3>
+      <StorybookSubHeading>Card - small - Without Inset</StorybookSubHeading>
       <ContainerWithBackground>
         <Card
           href="https://newskit.co.uk/"
@@ -293,7 +296,7 @@ const renderCard = () => (
       </ContainerWithBackground>
     </Visible>
     <Visible md>
-      <h3>Card - Medium - Without Inset</h3>
+      <StorybookSubHeading>Card - Medium - Without Inset</StorybookSubHeading>
       <ContainerWithBackground>
         <Card
           href="https://newskit.co.uk/"
@@ -308,7 +311,7 @@ const renderCard = () => (
       </ContainerWithBackground>
     </Visible>
     <Visible lg>
-      <h3>Card - Large - Without Inset</h3>
+      <StorybookSubHeading>Card - Large - Without Inset</StorybookSubHeading>
       <ContainerWithBackground>
         <Card
           href="https://newskit.co.uk/"
@@ -327,7 +330,7 @@ const renderCard = () => (
 const renderCardInset = () => (
   <ThemeProvider theme={myCustomCardTheme}>
     <Visible xs sm>
-      <h3>Card - small - With Inset</h3>
+      <StorybookSubHeading>Card - small - With Inset</StorybookSubHeading>
       <ContainerWithBackground>
         <CardInset
           href="https://newskit.co.uk/"
@@ -342,7 +345,7 @@ const renderCardInset = () => (
       </ContainerWithBackground>
     </Visible>
     <Visible md>
-      <h3>Card - Medium - With Inset</h3>
+      <StorybookSubHeading>Card - Medium - With Inset</StorybookSubHeading>
       <ContainerWithBackground>
         <CardInset
           href="https://newskit.co.uk/"
@@ -357,7 +360,7 @@ const renderCardInset = () => (
       </ContainerWithBackground>
     </Visible>
     <Visible lg>
-      <h3>Card - Large - With Inset</h3>
+      <StorybookSubHeading>Card - Large - With Inset</StorybookSubHeading>
       <ContainerWithBackground>
         <CardInset
           href="https://newskit.co.uk/"
@@ -380,7 +383,7 @@ export default {
     {
       name: 'card-small-without-inset',
       type: 'story',
-      parameters: {viewport: 'iphone6', eyes: {include: false}},
+      parameters: {viewport: 'iphone5', eyes: {include: false}},
       component: () => <React.Fragment>{renderCard()}</React.Fragment>,
     },
     {
@@ -398,7 +401,7 @@ export default {
     {
       name: 'card-small-with-inset',
       type: 'story',
-      parameters: {viewport: 'iphone6', eyes: {include: false}},
+      parameters: {viewport: 'iphone5', eyes: {include: false}},
       component: () => <React.Fragment>{renderCardInset()}</React.Fragment>,
     },
     {

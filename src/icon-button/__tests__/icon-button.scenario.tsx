@@ -7,6 +7,7 @@ import {Pause, Email, IconFilledLink} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
+import {StorybookSubHeading} from '../../test/storybook-comps';
 
 const Container = styled.div`
   margin: 24px;
@@ -66,9 +67,11 @@ export default {
   name: 'icon-button',
   children: [
     {
+      name: 'icon-button-sizes',
+      type: 'story',
       component: () => (
         <React.Fragment>
-          <h2>Icon Button Size</h2>
+          <StorybookSubHeading>Icon Button Size</StorybookSubHeading>
           <Container>
             <Stack
               flow="horizontal-center"
@@ -89,13 +92,13 @@ export default {
           </Container>
         </React.Fragment>
       ),
-      name: 'icon-button-sizes',
-      type: 'story',
     },
     {
+      name: 'icon-button-intent-primary',
+      type: 'story',
       component: () => (
         <React.Fragment>
-          <h2>Icon Button Intent Primary</h2>
+          <StorybookSubHeading>Icon Button Intent Primary</StorybookSubHeading>
           <Grid>
             <Cell xsHidden sm={3}>
               <Stack>
@@ -163,13 +166,15 @@ export default {
           </Grid>
         </React.Fragment>
       ),
-      name: 'icon-button-intent-primary',
-      type: 'story',
     },
     {
+      name: 'icon-button-intent-secondary',
+      type: 'story',
       component: () => (
         <React.Fragment>
-          <h2>Icon Button Intent Secondary</h2>
+          <StorybookSubHeading>
+            Icon Button Intent Secondary
+          </StorybookSubHeading>
           <Grid>
             <Cell xsHidden sm={3}>
               <Stack>
@@ -237,13 +242,13 @@ export default {
           </Grid>
         </React.Fragment>
       ),
-      name: 'icon-button-intent-secondary',
-      type: 'story',
     },
     {
+      name: 'icon-button-intent-negative',
+      type: 'story',
       component: () => (
         <React.Fragment>
-          <h2>Icon Button Intent Negative</h2>
+          <StorybookSubHeading>Icon Button Intent Negative</StorybookSubHeading>
           <Grid>
             <Cell xsHidden sm={3}>
               <Stack>
@@ -311,13 +316,13 @@ export default {
           </Grid>
         </React.Fragment>
       ),
-      name: 'icon-button-intent-negative',
-      type: 'story',
     },
     {
+      name: 'icon-button-intent-positive',
+      type: 'story',
       component: () => (
         <React.Fragment>
-          <h2>Icon Button Intent Positive</h2>
+          <StorybookSubHeading>Icon Button Intent Positive</StorybookSubHeading>
           <Grid>
             <Cell xsHidden sm={3}>
               <Stack>
@@ -385,8 +390,6 @@ export default {
           </Grid>
         </React.Fragment>
       ),
-      name: 'icon-button-intent-positive',
-      type: 'story',
     },
   ],
 };

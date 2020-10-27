@@ -1,6 +1,9 @@
 import * as React from 'react';
 import {Byline} from '..';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
 
 const myCustomTheme = createTheme({
@@ -30,11 +33,12 @@ export default {
   name: 'byline',
   children: [
     {
-      name: 'byline-default',
+      name: 'byline',
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Byline defaults</StorybookHeading>
+          <StorybookHeading>Byline</StorybookHeading>
+          <StorybookSubHeading>default style variations</StorybookSubHeading>
           <Byline
             bylineData={[
               {
@@ -154,24 +158,16 @@ export default {
               },
             ]}
           />
-        </React.Fragment>
-      ),
-    },
-    {
-      name: 'byline-with-overrides',
-      type: 'story',
-      component: () => (
-        <React.Fragment>
-          <StorybookHeading>Byline with overrides</StorybookHeading>
+          <StorybookHeading>with overrides</StorybookHeading>
           <ThemeProvider theme={myCustomTheme}>
             <Byline
               overrides={{
                 stylePreset: 'bylineCustom',
-                typographyPreset: 'utilityLabel030',
+                typographyPreset: 'utilityLabel010',
                 spaceStack: 'sizing030',
                 link: {
                   stylePreset: 'bylineLinkCustom',
-                  typographyPreset: 'utilityLabel030',
+                  typographyPreset: 'utilityLabel010',
                 },
                 divider: {
                   stylePreset: 'bylineDividerCustom',

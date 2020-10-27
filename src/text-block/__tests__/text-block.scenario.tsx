@@ -1,6 +1,10 @@
 import * as React from 'react';
 import {TextBlock} from '..';
 import {createTheme, ThemeProvider} from '../../theme';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-textblock-theme',
@@ -8,15 +12,19 @@ const myCustomTheme = createTheme({
     stylePresets: {
       textblockCustom: {
         base: {
-          color: '#0B5999',
+          color: '{{colors.blue060}}',
+          borderStyle: 'solid',
+          borderWidth: '{{borders.borderWidth010}}',
         },
       },
     },
     typographyPresets: {
       textblockCustom: {
-        fontFamily: '"Noto Sans", sans-serif',
-        fontWeight: 400,
-        letterSpacing: 0,
+        fontFamily: '{{fonts.fontFamily1.fontFamily}}',
+        fontSize: '{{fonts.fontSize030}}',
+        lineHeight: '{{fonts.fontLineHeight030}}',
+        fontWeight: '{{fonts.fontWeight020}}',
+        letterSpacing: '{{fonts.fontLetterSpacing030}}',
       },
     },
   },
@@ -33,6 +41,7 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
+          <StorybookHeading>TextBlock default</StorybookHeading>
           <TextBlock>{bodyString}</TextBlock>
         </React.Fragment>
       ),
@@ -42,10 +51,11 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <h3>As h4</h3>
-          <TextBlock as="h4">{bodyString}</TextBlock>
+          <StorybookHeading>TextBlock</StorybookHeading>
+          <StorybookSubHeading>As h3</StorybookSubHeading>
+          <TextBlock as="h3">{bodyString}</TextBlock>
 
-          <h3>As div</h3>
+          <StorybookSubHeading>As div</StorybookSubHeading>
           <TextBlock as="div">{bodyString}</TextBlock>
         </React.Fragment>
       ),
@@ -56,16 +66,21 @@ export default {
       component: () => (
         <React.Fragment>
           <ThemeProvider theme={myCustomTheme}>
-            <h3>With style-preset &quot;textblockCustom&quot;</h3>
+            <StorybookHeading>TextBlock</StorybookHeading>
+            <StorybookSubHeading>
+              With style-preset override
+            </StorybookSubHeading>
             <TextBlock
               overrides={{
-                stylePreset: 'linkInline',
+                stylePreset: 'textblockCustom',
               }}
             >
               {bodyString}
             </TextBlock>
 
-            <h3>With typography-preset &quot;textblockCustom&quot;</h3>
+            <StorybookSubHeading>
+              With typography-preset override
+            </StorybookSubHeading>
             <TextBlock
               overrides={{
                 typographyPreset: 'editorialParagraph010',

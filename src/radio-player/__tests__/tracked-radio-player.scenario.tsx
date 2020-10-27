@@ -3,8 +3,6 @@ import {TrackedRadioPlayer} from '..';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {styled} from '../../utils/style';
 
-export const name = 'tracked-radio-player';
-
 const imgSrc = require('./radio-player-image.png');
 
 const podcast1 = {
@@ -45,11 +43,20 @@ const Container = styled.div`
   margin: 0 auto;
 `;
 
-export const component = () => (
-  <Container>
-    <div>
-      <StorybookHeading>Skippable Tracked Radio Player</StorybookHeading>
-      <TrackedRadioPlayer trackList={audioTrackList} />
-    </div>
-  </Container>
-);
+export default {
+  name: 'tracked-radio-player',
+  children: [
+    {
+      name: 'tracked-radio-player',
+      type: 'story',
+      component: () => (
+        <Container>
+          <div>
+            <StorybookHeading>Skippable Tracked Radio Player</StorybookHeading>
+            <TrackedRadioPlayer trackList={audioTrackList} />
+          </div>
+        </Container>
+      ),
+    },
+  ],
+};

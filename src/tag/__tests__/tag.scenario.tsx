@@ -1,13 +1,32 @@
 import * as React from 'react';
 import {Tag, TagSize} from '..';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 import {styled} from '../../utils/style';
 import {Email} from '../../icons';
 import {Stack} from '../../stack';
+import {createTheme, ThemeProvider} from '../../theme';
 
 const Container = styled.div`
   margin: 24px;
 `;
+
+const myCustomTheme = createTheme({
+  name: 'my-custom-tag-theme',
+  overrides: {
+    stylePresets: {
+      tagCustom: {
+        base: {
+          borderStyle: 'dashed',
+          borderColor: '{{colors.blue060}}',
+          backgroundColor: '{{colors.red020}}',
+        },
+      },
+    },
+  },
+});
 
 export default {
   name: 'tag',
@@ -17,7 +36,8 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Enabled/Disbaled Tag</StorybookHeading>
+          <StorybookHeading>Tag</StorybookHeading>
+          <StorybookSubHeading>Enabled/Disbaled</StorybookSubHeading>
           <Container>
             <Stack
               flow="horizontal-center"
@@ -31,7 +51,7 @@ export default {
               </Tag>
             </Stack>
           </Container>
-          <StorybookHeading>Tag Sizes</StorybookHeading>
+          <StorybookSubHeading>Sizes</StorybookSubHeading>
           <Container>
             <Stack
               flow="horizontal-center"
@@ -50,11 +70,33 @@ export default {
               </Tag>
             </Stack>
           </Container>
-          <StorybookHeading>Style Presets</StorybookHeading>
+          <StorybookSubHeading>
+            with Style Presets overrides
+          </StorybookSubHeading>
           <Container>
-            <Tag href="http://example.com">tagPrimary</Tag>
+            <ThemeProvider theme={myCustomTheme}>
+              <Tag
+                href="http://example.com"
+                overrides={{stylePreset: 'tagCustom'}}
+              >
+                Text
+              </Tag>
+            </ThemeProvider>
           </Container>
-          <StorybookHeading>Tags with an icon</StorybookHeading>
+          <StorybookSubHeading>
+            with Typography Presets overrides
+          </StorybookSubHeading>
+          <Container>
+            <ThemeProvider theme={myCustomTheme}>
+              <Tag
+                href="http://example.com"
+                overrides={{typographyPreset: 'meta020'}}
+              >
+                Text
+              </Tag>
+            </ThemeProvider>
+          </Container>
+          <StorybookSubHeading>with an icon</StorybookSubHeading>
           <Container>
             <Stack
               flow="horizontal-center"
@@ -84,9 +126,9 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <h2>
-            Tags with leading and trailing icon and overridden default sizes
-          </h2>
+          <StorybookSubHeading>
+            With icon and inline overridden size
+          </StorybookSubHeading>
           <Container>
             <Stack
               flow="horizontal-center"
@@ -97,24 +139,26 @@ export default {
               <Tag size={TagSize.Small}>
                 <Email />
                 Text
+                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
                 <Email size="iconSize030" />
               </Tag>
               <Tag size={TagSize.Medium}>
                 <Email />
                 Text
+                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
                 <Email size="iconSize040" />
               </Tag>
               <Tag size={TagSize.Large}>
                 <Email />
                 Text
+                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
                 <Email size="iconSize050" />
               </Tag>
             </Stack>
           </Container>
-          <h2>
-            Tags with leading and trailing icon and overridden sizes with
-            overrides and inline prop
-          </h2>
+          <StorybookSubHeading>
+            with icon and inline overridden size from overrides
+          </StorybookSubHeading>
           <Container>
             <Stack
               flow="horizontal-center"
@@ -125,16 +169,19 @@ export default {
               <Tag size={TagSize.Small} overrides={{iconSize: 'iconSize020'}}>
                 <Email />
                 Text
+                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
                 <Email size="iconSize030" />
               </Tag>
               <Tag size={TagSize.Medium} overrides={{iconSize: 'iconSize020'}}>
                 <Email />
                 Text
+                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
                 <Email size="iconSize040" />
               </Tag>
               <Tag size={TagSize.Large} overrides={{iconSize: 'iconSize020'}}>
                 <Email />
                 Text
+                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
                 <Email size="iconSize050" />
               </Tag>
             </Stack>

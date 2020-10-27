@@ -1,9 +1,11 @@
 import React from 'react';
-
 import {StatefulVolumeControl} from './stateful-volume-control';
 import {styled} from '../../utils/style';
 import {ButtonSize} from '../../button';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
 
 const myCustomTheme = createTheme({
@@ -85,31 +87,28 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>
-            VolumeControl - horizontal and vertical
-          </StorybookHeading>
-          <div>
-            <HorizontalContainer>
-              <StatefulVolumeControl volume={1} />
-            </HorizontalContainer>
-            <HorizontalContainer>
-              <StatefulVolumeControl volume={0.5} />
-            </HorizontalContainer>
-            <HorizontalContainer>
-              <StatefulVolumeControl volume={0} />
-            </HorizontalContainer>
-          </div>
-          <div>
-            <VerticalContainer>
-              <StatefulVolumeControl vertical volume={1} />
-            </VerticalContainer>
-            <VerticalContainer>
-              <StatefulVolumeControl vertical volume={0.5} />
-            </VerticalContainer>
-            <VerticalContainer>
-              <StatefulVolumeControl vertical volume={0} />
-            </VerticalContainer>
-          </div>
+          <StorybookHeading>VolumeControl</StorybookHeading>
+          <StorybookSubHeading>horizontal</StorybookSubHeading>
+          <HorizontalContainer>
+            <StatefulVolumeControl volume={1} />
+          </HorizontalContainer>
+          <HorizontalContainer>
+            <StatefulVolumeControl volume={0.5} />
+          </HorizontalContainer>
+          <HorizontalContainer>
+            <StatefulVolumeControl volume={0} />
+          </HorizontalContainer>
+          <br />
+          <StorybookSubHeading>vertical</StorybookSubHeading>
+          <VerticalContainer>
+            <StatefulVolumeControl vertical volume={1} />
+          </VerticalContainer>
+          <VerticalContainer>
+            <StatefulVolumeControl vertical volume={0.5} />
+          </VerticalContainer>
+          <VerticalContainer>
+            <StatefulVolumeControl vertical volume={0} />
+          </VerticalContainer>
         </React.Fragment>
       ),
     },

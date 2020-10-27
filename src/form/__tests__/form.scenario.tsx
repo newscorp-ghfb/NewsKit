@@ -1,15 +1,13 @@
 import * as React from 'react';
 import {Form} from '..';
-import {StorybookHeading} from '../../test/storybook-comps';
-import {styled, getSizingFromTheme} from '../../utils/style';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 import {Button} from '../../button';
 import {TextInput, TextInputSize} from '../../text-input';
 import {Block} from '../../block';
 import {Stack} from '../../stack';
-
-const Container = styled.div`
-  margin: ${getSizingFromTheme('sizing050')};
-`;
 
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -34,8 +32,10 @@ export default {
       component: () => (
         <React.Fragment>
           <StorybookHeading>Form</StorybookHeading>
-          <Container>
-            <h3>Input validation mode: onSubmit</h3>
+          <Block>
+            <StorybookSubHeading>
+              Input validation mode: onSubmit
+            </StorybookSubHeading>
             <Form onSubmit={onSubmit}>
               <Block overrides={{spaceStack: 'space050'}}>
                 <TextInput
@@ -67,7 +67,7 @@ export default {
               </Block>
               <Button type="submit">Submit</Button>
             </Form>
-          </Container>
+          </Block>
         </React.Fragment>
       ),
     },
@@ -76,8 +76,11 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <Container>
-            <h3>Input validation mode: onSubmit</h3>
+          <StorybookHeading>Form</StorybookHeading>
+          <Block>
+            <StorybookSubHeading>
+              onSubmit validation and assistive text
+            </StorybookSubHeading>
             <Form onSubmit={onSubmit}>
               <Block overrides={{spaceStack: 'space050'}}>
                 <TextInput
@@ -111,7 +114,7 @@ export default {
               </Block>
               <Button type="submit">Submit</Button>
             </Form>
-          </Container>
+          </Block>
         </React.Fragment>
       ),
     },
@@ -120,14 +123,15 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <Container>
+          <StorybookHeading>Form with</StorybookHeading>
+          <Block>
             <Stack
               flow="horizontal-center"
               stackDistribution="space-between"
-              spaceInline="sizing070"
+              spaceInline="sizing030"
             >
               <Form onSubmit={onSubmit} validationMode="onBlur">
-                <h3>Form with large text input</h3>
+                <StorybookSubHeading>large text input</StorybookSubHeading>
                 <Block overrides={{spaceStack: 'space050'}}>
                   <TextInput
                     size={TextInputSize.Large}
@@ -163,7 +167,7 @@ export default {
                 <Button type="submit">Submit</Button>
               </Form>
               <Form onSubmit={onSubmit} validationMode="onBlur">
-                <h3>Form with medium text input</h3>
+                <StorybookSubHeading>medium text input</StorybookSubHeading>
                 <Block overrides={{spaceStack: 'space050'}}>
                   <TextInput
                     size={TextInputSize.Medium}
@@ -198,9 +202,8 @@ export default {
                 </Block>
                 <Button type="submit">Submit</Button>
               </Form>
-
               <Form onSubmit={onSubmit} validationMode="onBlur">
-                <h3>Form with small text input</h3>
+                <StorybookSubHeading>small text input</StorybookSubHeading>
                 <Block overrides={{spaceStack: 'space050'}}>
                   <TextInput
                     size={TextInputSize.Small}
@@ -236,7 +239,7 @@ export default {
                 <Button type="submit">Submit</Button>
               </Form>
             </Stack>
-          </Container>
+          </Block>
         </React.Fragment>
       ),
     },

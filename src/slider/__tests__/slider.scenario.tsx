@@ -115,6 +115,7 @@ class CustomMaxLabel extends React.Component {
 const FlexContainer = styled.div`
   margin: 48px 0;
   display: flex;
+  flex-wrap: wrap;
 `;
 
 const ContainerWithBorder = styled.div`
@@ -145,7 +146,7 @@ export default {
   name: 'slider',
   children: [
     {
-      name: '1-thumb-slider',
+      name: 'slider-1-and-2-thumbs',
       type: 'story',
       component: () => (
         <React.Fragment>
@@ -153,14 +154,6 @@ export default {
           <ContainerWithBorder>
             <StatefulSlider values={[50]} max={100} min={0} />
           </ContainerWithBorder>
-        </React.Fragment>
-      ),
-    },
-    {
-      name: '2-thumb-slider',
-      type: 'story',
-      component: () => (
-        <React.Fragment>
           <StorybookHeading>2 thumb slider</StorybookHeading>
           <ContainerWithBorder>
             <StatefulSlider values={[30, 60]} max={100} min={0} />
@@ -176,7 +169,7 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>with text labels</StorybookHeading>
+          <StorybookHeading>Slider with text labels</StorybookHeading>
           <ContainerWithBorder>
             <StatefulSlider
               values={[2.5]}
@@ -230,7 +223,7 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>with custom labels</StorybookHeading>
+          <StorybookHeading>Slider with custom labels</StorybookHeading>
           <ContainerWithBorder>
             <StatefulSlider
               values={[40]}
@@ -259,7 +252,7 @@ export default {
           </ContainerWithBorder>
           <ContainerWithBorder>
             <StatefulSlider
-              values={[80, 90]}
+              values={[40, 90]}
               max={100}
               min={0}
               minLabel={CustomMinLabel}
@@ -275,7 +268,7 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Custom style presets</StorybookHeading>
+          <StorybookHeading>Slider with custom style presets</StorybookHeading>
           <ContainerWithBorder>
             <ThemeProvider theme={myCustomTheme}>
               <StatefulSlider
@@ -319,7 +312,7 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Custom renderers</StorybookHeading>
+          <StorybookHeading>Slider with custom renderers</StorybookHeading>
           <ContainerWithBorder>
             <ThemeProvider theme={myCustomTheme}>
               <StatefulSlider

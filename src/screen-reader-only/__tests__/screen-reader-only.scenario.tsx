@@ -9,6 +9,9 @@ export default {
   name: 'screen-reader-only',
   children: [
     {
+      name: 'screen-reader-only',
+      parameters: {eyes: {include: false}},
+      type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>Screen reader only</StorybookHeading>
@@ -20,8 +23,6 @@ export default {
           </ScreenReaderOnly>
         </React.Fragment>
       ),
-      name: 'screen-reader-only',
-      type: 'story',
     },
   ],
 };

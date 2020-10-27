@@ -1,12 +1,13 @@
 import * as React from 'react';
-
 import {Button} from '..';
 import {styled} from '../../utils/style';
 import {ButtonSize} from '../types';
-import {Pause, Email, IconFilledLink} from '../../icons';
+import {Email} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
+import {IconSizeKeys} from '../../theme';
+import {StorybookSubHeading} from '../../test/storybook-comps';
 
 const Container = styled.div`
   margin: 24px;
@@ -83,9 +84,11 @@ export default {
   name: 'button',
   children: [
     {
+      name: 'button-size',
+      type: 'story',
       component: () => (
         <React.Fragment>
-          <h2>Button Size</h2>
+          <StorybookSubHeading>Button Size</StorybookSubHeading>
           <Container>
             <Stack
               flow="horizontal-center"
@@ -100,13 +103,13 @@ export default {
           </Container>
         </React.Fragment>
       ),
-      name: 'button-size',
-      type: 'story',
     },
     {
+      name: 'full-and-fixed-width-button',
+      type: 'story',
       component: () => (
         <React.Fragment>
-          <h2>Full-Width Button</h2>
+          <StorybookSubHeading>Full-Width Button</StorybookSubHeading>
           <Container>
             <Border>
               <Spacer>
@@ -124,15 +127,7 @@ export default {
               </Button>
             </Border>
           </Container>
-        </React.Fragment>
-      ),
-      name: 'full-width-button',
-      type: 'story',
-    },
-    {
-      component: () => (
-        <React.Fragment>
-          <h2>Fixed-Width Button</h2>
+          <StorybookSubHeading>Fixed-Width Button</StorybookSubHeading>
           <Container>
             <Border>
               <Spacer>
@@ -158,13 +153,13 @@ export default {
           </Container>
         </React.Fragment>
       ),
-      name: 'fixed-width-button',
-      type: 'story',
     },
     {
+      name: 'button-intent-primary',
+      type: 'story',
       component: () => (
         <React.Fragment>
-          <h2>Button Intent Primary</h2>
+          <StorybookSubHeading>Button Intent Primary</StorybookSubHeading>
           <Grid>
             <Cell xsHidden sm={3}>
               <Stack>
@@ -212,13 +207,13 @@ export default {
           </Grid>
         </React.Fragment>
       ),
-      name: 'button-intent-primary',
-      type: 'story',
     },
     {
+      name: 'button-intent-secondary',
+      type: 'story',
       component: () => (
         <React.Fragment>
-          <h2>Button Intent Secondary</h2>
+          <StorybookSubHeading>Button Intent Secondary</StorybookSubHeading>
           <Grid>
             <Cell xsHidden sm={3}>
               <Stack>
@@ -269,13 +264,13 @@ export default {
           </Grid>
         </React.Fragment>
       ),
-      name: 'button-intent-secondary',
-      type: 'story',
     },
     {
+      name: 'button-intent-negative',
+      type: 'story',
       component: () => (
         <React.Fragment>
-          <h2>Button Intent Negative</h2>
+          <StorybookSubHeading>Button Intent Negative</StorybookSubHeading>
           <Grid>
             <Cell xsHidden sm={3}>
               <Stack>
@@ -326,13 +321,13 @@ export default {
           </Grid>
         </React.Fragment>
       ),
-      name: 'button-intent-negative',
-      type: 'story',
     },
     {
+      name: 'button-intent-positive',
+      type: 'story',
       component: () => (
         <React.Fragment>
-          <h2>Button Intent Positive</h2>
+          <StorybookSubHeading>Button Intent Positive</StorybookSubHeading>
           <Grid>
             <Cell xsHidden sm={3}>
               <Stack>
@@ -382,114 +377,109 @@ export default {
           </Grid>
         </React.Fragment>
       ),
-      name: 'button-intent-positive',
-      type: 'story',
     },
     {
+      name: 'button-with-icons',
+      type: 'story',
       component: () => (
         <React.Fragment>
-          <h2>Button with leading icon</h2>
+          <StorybookSubHeading>Button with leading icon</StorybookSubHeading>
           <Container>
-            {[Pause, Email, IconFilledLink].map(IconType => (
-              <Spacer>
-                <Stack flow="horizontal-center" spaceInline="sizing060">
-                  {buttonSizes.map(button => (
-                    <Button size={button.buttonSize}>
-                      <IconType />
-                      Button
-                    </Button>
-                  ))}
-                </Stack>
-              </Spacer>
-            ))}
+            <Stack
+              flow="horizontal-center"
+              wrap="wrap"
+              spaceInline="sizing040"
+              spaceStack="sizing020"
+            >
+              {buttonSizes.map(button => (
+                <Button size={button.buttonSize}>
+                  <Email />
+                  Button
+                </Button>
+              ))}
+            </Stack>
+          </Container>
+          <StorybookSubHeading>Button with trailing icon</StorybookSubHeading>
+          <Container>
+            <Stack
+              flow="horizontal-center"
+              wrap="wrap"
+              spaceInline="sizing040"
+              spaceStack="sizing020"
+            >
+              {buttonSizes.map(button => (
+                <Button size={button.buttonSize}>
+                  Button
+                  <Email />
+                </Button>
+              ))}
+            </Stack>
+          </Container>
+          <StorybookSubHeading>
+            Button with leading and trailing icon
+          </StorybookSubHeading>
+          <Container>
+            <Stack
+              flow="horizontal-center"
+              wrap="wrap"
+              spaceInline="sizing040"
+              spaceStack="sizing020"
+            >
+              {buttonSizes.map(button => (
+                <Button size={button.buttonSize}>
+                  <Email />
+                  Button
+                  <Email />
+                </Button>
+              ))}
+            </Stack>
           </Container>
         </React.Fragment>
       ),
-      name: 'button-with-leading-icon',
-      type: 'story',
     },
     {
+      name: 'button-with-icon-size-overrides',
+      type: 'story',
       component: () => (
         <React.Fragment>
-          <h2>Button with trailing icon</h2>
+          <StorybookSubHeading>
+            Button with icon and inline overridden size
+          </StorybookSubHeading>
           <Container>
-            {[Pause, Email, IconFilledLink].map(IconType => (
-              <Spacer>
-                <Stack flow="horizontal-center" spaceInline="sizing060">
-                  {buttonSizes.map(button => (
-                    <Button size={button.buttonSize}>
-                      Button
-                      <IconType />
-                    </Button>
-                  ))}
-                </Stack>
-              </Spacer>
-            ))}
+            <Stack flow="horizontal-center" spaceInline="sizing060">
+              <Button size={buttonSizes[0].buttonSize}>
+                <Email />
+                Button
+                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
+                <Email size={buttonSizes[0].iconSize} />
+              </Button>
+            </Stack>
+          </Container>
+          <StorybookSubHeading>
+            Button with icon and inline overridden size from overrides
+          </StorybookSubHeading>
+          <Container>
+            <Stack flow="horizontal-center" spaceInline="sizing060">
+              <Button
+                size={buttonSizes[0].buttonSize}
+                overrides={{iconSize: 'iconSize030'}}
+              >
+                <Email />
+                Button
+                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
+                <Email size={buttonSizes[0].iconSize} />
+              </Button>
+            </Stack>
           </Container>
         </React.Fragment>
       ),
-      name: 'button-with-trailing-icon',
-      type: 'story',
     },
     {
-      component: () => (
-        <React.Fragment>
-          <h2>Button with icon and inline overridden default size</h2>
-          <Container>
-            {[Pause, Email, IconFilledLink].map(IconType => (
-              <Spacer>
-                <Stack flow="horizontal-center" spaceInline="sizing060">
-                  <Button size={buttonSizes[0].buttonSize}>
-                    <IconType />
-                    Button
-                    {/* size to be removed as part of PPDSC-1341 */}
-                    <IconType
-                      size={buttonSizes[0].iconSize}
-                      overrides={{size: buttonSizes[0].iconSize}}
-                    />
-                  </Button>
-                </Stack>
-              </Spacer>
-            ))}
-          </Container>
-        </React.Fragment>
-      ),
-      name: 'button-with-icon-inline-overridden-default-size',
+      name: 'button-style-at-breakpoints',
       type: 'story',
-    },
-    {
       component: () => (
         <React.Fragment>
-          <h2>Button with icon and inline overridden size from overrides</h2>
-          <Container>
-            {[Pause, Email, IconFilledLink].map(IconType => (
-              <Spacer>
-                <Stack flow="horizontal-center" spaceInline="sizing060">
-                  <Button
-                    size={buttonSizes[0].buttonSize}
-                    overrides={{iconSize: 'iconSize030'}}
-                  >
-                    <IconType />
-                    Button
-                    {/* size to be removed as part of PPDSC-1341 */}
-                    <IconType
-                      size={buttonSizes[0].iconSize}
-                      overrides={{size: buttonSizes[0].iconSize}}
-                    />
-                  </Button>
-                </Stack>
-              </Spacer>
-            ))}
-          </Container>
-        </React.Fragment>
-      ),
-      name: 'button-with-icon-and-inline-overridden-overrides-size',
-      type: 'story',
-    },
-    {
-      component: () => (
-        <React.Fragment>
-          <h2>Button style at breakpoints</h2>
+          <StorybookSubHeading>Button style at breakpoints</StorybookSubHeading>
           <Container>
             <Button
               overrides={{
@@ -505,8 +495,6 @@ export default {
           </Container>
         </React.Fragment>
       ),
-      name: 'button-style-at-breakpoints',
-      type: 'story',
     },
   ],
 };

@@ -1,6 +1,9 @@
 import * as React from 'react';
 import {UnorderedList} from '..';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 import {Twitter, Circle} from '../../icons';
 import {Link} from '../../link';
 
@@ -8,13 +11,10 @@ const listData = [
   `alpha`,
   <Twitter key="uniqueIconKey" size="iconSize010" />,
   2,
-  `delta`,
+  `Lorem ipsum dolor sit amet...`,
   <Link key="uniqueLinkKey" href="http://localhost:6006">
     Click me!
   </Link>,
-  `
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et est in diam finibus sagittis. Phasellus iaculis mattis ante vitae.`,
-  `foxtrot`,
 ];
 
 export default {
@@ -35,10 +35,13 @@ export default {
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Unordered list with markers</StorybookHeading>
+          <StorybookHeading>Unordered list</StorybookHeading>
+          <StorybookSubHeading>with markers</StorybookSubHeading>
           <UnorderedList listItemMarker={Circle}>{listData}</UnorderedList>
           <br />
-          <br />
+          <StorybookSubHeading>
+            with markers and overridden marker iconSize
+          </StorybookSubHeading>
           <UnorderedList
             overrides={{marker: {size: 'iconSize020'}}}
             listItemMarker={Circle}

@@ -5,6 +5,34 @@ import {StorybookSubHeading} from '../../test/storybook-comps';
 import {Facebook, Twitter} from '../../icons';
 import {Button, ButtonSize} from '../../button';
 import {IconButton} from '../../icon-button';
+import {createTheme, ThemeProvider} from '../../theme';
+
+const myCustomTheme = createTheme({
+  name: 'my-custom-share-bar-theme',
+  overrides: {
+    stylePresets: {
+      customShareBarContainerPreset: {
+        base: {
+          backgroundColor: '{{colors.amber010}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.blue060}}',
+        },
+      },
+      customShareBarLabelPreset: {
+        base: {
+          color: '{{colors.blue070}}',
+        },
+      },
+      customIconButtonPreset: {
+        base: {
+          backgroundColor: '{{colors.red060}}',
+          borderRadius: '{{borders.borderRadiusSharp}}',
+        },
+      },
+    },
+  },
+});
 
 export default {
   name: 'share-bar',
@@ -57,7 +85,7 @@ export default {
             </IconButton>
           </ShareBar>
           <StorybookSubHeading>
-            Share bar with horizontal items and label
+            Share bar with horizontal items label and button
           </StorybookSubHeading>
           <ShareBar label="Share">
             <IconButton
@@ -81,37 +109,41 @@ export default {
           <StorybookSubHeading>
             Share bar with horizontal items and label, with overriden presets
           </StorybookSubHeading>
-          <ShareBar
-            label="Share"
-            overrides={{
-              stylePreset: 'linkInline',
-              label: {
-                typographyPreset: 'utilityLabel030',
-                spaceInline: 'space030',
-              },
-              items: {
-                spaceInline: 'sizing060',
-              },
-            }}
-          >
-            <IconButton
-              size={ButtonSize.Large}
+          <ThemeProvider theme={myCustomTheme}>
+            <ShareBar
+              label="Share"
               overrides={{
-                stylePreset: 'buttonSocialTwitter',
+                stylePreset: 'customShareBarContainerPreset',
+                label: {
+                  stylePreset: 'customShareBarLabelPreset',
+                  typographyPreset: 'utilityLabel030',
+                  spaceInline: 'space010',
+                  spaceInset: 'space020',
+                },
+                items: {
+                  spaceInline: 'sizing010',
+                },
               }}
             >
-              <Twitter />
-            </IconButton>
-            <IconButton
-              size={ButtonSize.Large}
-              overrides={{
-                stylePreset: 'buttonSocialFacebook',
-              }}
-            >
-              <Facebook />
-            </IconButton>
-            <Button>More options</Button>
-          </ShareBar>
+              <IconButton
+                size={ButtonSize.Large}
+                overrides={{
+                  stylePreset: 'customIconButtonPreset',
+                }}
+              >
+                <Twitter />
+              </IconButton>
+              <IconButton
+                size={ButtonSize.Large}
+                overrides={{
+                  stylePreset: 'customIconButtonPreset',
+                }}
+              >
+                <Facebook />
+              </IconButton>
+              <Button>More options</Button>
+            </ShareBar>
+          </ThemeProvider>
         </React.Fragment>
       ),
     },

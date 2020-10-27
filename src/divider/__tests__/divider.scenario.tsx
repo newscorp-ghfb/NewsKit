@@ -1,18 +1,24 @@
 import * as React from 'react';
 import styled from '@emotion/styled';
 import {Divider} from '..';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 import {Stack} from '../../stack';
 import {Block} from '../../block';
 import {StackChild, AlignSelfValues} from '../../stack-child';
-import {Facebook, WhatsApp, Twitter} from '../../icons';
+import {Facebook, WhatsApp} from '../../icons';
 import {getSizingFromTheme} from '../../utils/style';
 
 const Box = styled.div`
   display: inline-block;
-  width: 200px;
-  height: 200px;
-  margin: 24px 0;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  margin: 12px;
+  padding-left: 11px;
+  border: 1px solid lime;
 `;
 
 const BlockWithBorder = styled(Block)`
@@ -47,23 +53,15 @@ export default {
   name: 'divider',
   children: [
     {
-      name: 'horizontal-default',
+      name: 'horizontal',
       type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>Divider - Horizontal</StorybookHeading>
+          <StorybookSubHeading>default</StorybookSubHeading>
           <Divider />
-        </React.Fragment>
-      ),
-    },
-    {
-      name: 'horizontal-in-block',
-      type: 'story',
-      component: () => (
-        <React.Fragment>
-          <StorybookHeading>
-            Divider - Horizontal in vertical block
-          </StorybookHeading>
+          <br />
+          <StorybookSubHeading>in vertical block</StorybookSubHeading>
           <BlockForHorizontalDivider>
             <IconContainer overrides={{spaceStack: 'space020'}}>
               <Facebook size="iconSize040" />
@@ -71,27 +69,14 @@ export default {
             <Block overrides={{spaceStack: 'space020'}}>
               <Divider />
             </Block>
-            <IconContainer overrides={{spaceStack: 'space020'}}>
+            <IconContainer>
               <WhatsApp size="iconSize040" />
             </IconContainer>
-            <Block overrides={{spaceStack: 'space020'}}>
-              <Divider />
-            </Block>
-            <IconContainer>
-              <Twitter size="iconSize040" />
-            </IconContainer>
           </BlockForHorizontalDivider>
-        </React.Fragment>
-      ),
-    },
-    {
-      name: 'horizontal-in-stack-without-spacing',
-      type: 'story',
-      component: () => (
-        <React.Fragment>
-          <StorybookHeading>
-            Divider - Horizontal in vertical stack without spacing
-          </StorybookHeading>
+          <br />
+          <StorybookSubHeading>
+            in vertical stack without spacing
+          </StorybookSubHeading>
           <BlockWithBorder>
             <StackForHorizontalDivider
               stackDistribution="center"
@@ -100,21 +85,12 @@ export default {
               <Facebook size="iconSize040" />
               <Divider />
               <WhatsApp size="iconSize040" />
-              <Divider />
-              <Twitter size="iconSize040" />
             </StackForHorizontalDivider>
           </BlockWithBorder>
-        </React.Fragment>
-      ),
-    },
-    {
-      name: 'horizontal-in-stack-with-spacing',
-      type: 'story',
-      component: () => (
-        <React.Fragment>
-          <StorybookHeading>
+          <br />
+          <StorybookSubHeading>
             Divider - Horizontal in vertical stack with spacing
-          </StorybookHeading>
+          </StorybookSubHeading>
           <BlockWithBorder>
             <StackForHorizontalDivider
               spaceInline="sizing040"
@@ -126,35 +102,23 @@ export default {
                 <Divider />
               </StackChild>
               <WhatsApp size="iconSize040" />
-              <StackChild alignSelf={AlignSelfValues.Stretch}>
-                <Divider />
-              </StackChild>
-              <Twitter size="iconSize040" />
             </StackForHorizontalDivider>
           </BlockWithBorder>
         </React.Fragment>
       ),
     },
     {
-      name: 'vertical-default',
+      name: 'vertical',
       type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>Divider - Vertical</StorybookHeading>
+          <StorybookSubHeading>default</StorybookSubHeading>
           <Box>
             <Divider vertical />
           </Box>
-        </React.Fragment>
-      ),
-    },
-    {
-      name: 'vertical-in-inline-block',
-      type: 'story',
-      component: () => (
-        <React.Fragment>
-          <StorybookHeading>
-            Divider - Vertical in horizontal Inline Block
-          </StorybookHeading>
+          <br />
+          <StorybookSubHeading>in horizontal Inline Block</StorybookSubHeading>
           <Block>
             <IconContainerInline overrides={{spaceInline: 'space020'}}>
               <Facebook size="iconSize040" />
@@ -162,27 +126,14 @@ export default {
             <InlineDividerContainer overrides={{spaceInline: 'space020'}}>
               <Divider vertical />
             </InlineDividerContainer>
-            <IconContainerInline overrides={{spaceInline: 'space020'}}>
+            <IconContainerInline>
               <WhatsApp size="iconSize040" />
             </IconContainerInline>
-            <InlineDividerContainer overrides={{spaceInline: 'space020'}}>
-              <Divider vertical />
-            </InlineDividerContainer>
-            <IconContainerInline>
-              <Twitter size="iconSize040" />
-            </IconContainerInline>
           </Block>
-        </React.Fragment>
-      ),
-    },
-    {
-      name: 'vertical-in-stack-without-spacing',
-      type: 'story',
-      component: () => (
-        <React.Fragment>
-          <StorybookHeading>
-            Divider - Vertical in horizontal Stack without spacing
-          </StorybookHeading>
+          <br />
+          <StorybookSubHeading>
+            in horizontal Stack without spacing
+          </StorybookSubHeading>
           <BlockWithBorder>
             <Stack flow="horizontal-center" stackDistribution="center">
               <Facebook size="iconSize040" />
@@ -190,23 +141,12 @@ export default {
                 <Divider vertical />
               </StackChild>
               <WhatsApp size="iconSize040" />
-              <StackChild alignSelf={AlignSelfValues.Stretch}>
-                <Divider vertical />
-              </StackChild>
-              <Twitter size="iconSize040" />
             </Stack>
           </BlockWithBorder>
-        </React.Fragment>
-      ),
-    },
-    {
-      name: 'vertical-in-stack-with-spacing',
-      type: 'story',
-      component: () => (
-        <React.Fragment>
-          <StorybookHeading>
-            Divider - Vertical in horizontal Stack with spacing
-          </StorybookHeading>
+          <br />
+          <StorybookSubHeading>
+            in horizontal Stack with spacing
+          </StorybookSubHeading>
           <BlockWithBorder>
             <Stack
               flow="horizontal-center"
@@ -218,12 +158,16 @@ export default {
                 <Divider vertical />
               </StackChild>
               <WhatsApp size="iconSize040" />
-              <StackChild alignSelf={AlignSelfValues.Stretch}>
-                <Divider vertical />
-              </StackChild>
-              <Twitter size="iconSize040" />
             </Stack>
           </BlockWithBorder>
+          <br />
+          <StorybookSubHeading>with overrides</StorybookSubHeading>
+          <Box>
+            <Divider
+              vertical
+              overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+            />
+          </Box>
         </React.Fragment>
       ),
     },
