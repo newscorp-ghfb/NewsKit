@@ -21,7 +21,7 @@ interface StyledNewsKitMobileLogo {
   size: string;
 }
 
-type NewsKitMobileLogoPorps = Omit<StyledNewsKitMobileLogo, '$color'> & {
+type NewsKitMobileLogoProps = Omit<StyledNewsKitMobileLogo, '$color'> & {
   color: string;
 };
 
@@ -33,7 +33,7 @@ const LogoSvg = styled.svg<StyledNewsKitMobileLogo>`
   height: ${getSizingFromTheme(undefined, 'size')};
 `;
 
-type LogoWithTheme = NewsKitMobileLogoPorps & {theme: Theme};
+type LogoWithTheme = NewsKitMobileLogoProps & {theme: Theme};
 
 const NewsKitMobileLogo = React.forwardRef<HTMLDivElement, LogoWithTheme>(
   ({color, ...props}, ref) => (

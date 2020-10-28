@@ -20,7 +20,7 @@ interface StyledLogoPorps {
   size: string;
 }
 
-type NewsKitLogoPorps = Omit<StyledLogoPorps, '$color'> & {
+type NewsKitLogoProps = Omit<StyledLogoPorps, '$color'> & {
   color: string;
 };
 
@@ -31,7 +31,7 @@ const LogoSvg = styled.svg<StyledLogoPorps>`
   width: ${getSizingFromTheme(undefined, 'size')};
 `;
 
-const NewsKitLogo = React.forwardRef<HTMLDivElement, NewsKitLogoPorps>(
+const NewsKitLogo = React.forwardRef<HTMLDivElement, NewsKitLogoProps>(
   ({color, ...props}, ref) => (
     <LogoWrapper ref={ref}>
       <LogoSvg viewBox="0 0 168 40" $color={color} {...props}>
