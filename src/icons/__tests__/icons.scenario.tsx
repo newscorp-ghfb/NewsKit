@@ -2,7 +2,13 @@ import * as React from 'react';
 
 import {LegacySvgProps} from '../types';
 import {styled} from '../../utils/style';
-import {IconFilledAccountBalance, IconOutlinedAccountTree, SvgProps} from '..';
+import {
+  IconFilledAccountBalance,
+  IconOutlinedAccountBalance,
+  IconFilledAccountTree,
+  IconOutlinedAccountTree,
+  SvgProps,
+} from '..';
 import {createTheme, ThemeProvider} from '../../theme';
 
 import * as customIcons from '../filled/custom';
@@ -64,6 +70,8 @@ const customIconEntries = Object.entries(remainingCustomIcons)
 
 const materialIconsSample = {
   IconFilledAccountBalance,
+  IconOutlinedAccountBalance,
+  IconFilledAccountTree,
   IconOutlinedAccountTree,
 };
 

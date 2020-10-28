@@ -1,6 +1,5 @@
 const fse = require('fs-extra');
-const filledIcons = require('./filled-icons-list');
-const outlinedIcons = require('./outlined-icons-list');
+const iconsList = require('./icons-full-list');
 const {usedIcons} = require('./used-icons-list');
 
 const warning =
@@ -13,11 +12,11 @@ const toKebabCase = str =>
     .map(x => x.toLowerCase())
     .join('-');
 
-const toFileData = (iconSet, iconName) => {
+const toFileData = (iconSet, iconName, fromSubfolder) => {
   const componentName = iconSet + iconName;
   const fileName = toKebabCase(componentName);
   const fileBody = `${warning}
-import {${iconName}} from '@emotion-icons/material/${iconName}';
+import {${iconName}} from '@emotion-icons/${fromSubfolder}/${iconName}';
 import {toNewsKitIcon} from '../../to-newskit-icon';
 
 // The updated display name will be used to return the right icon in
@@ -58,20 +57,37 @@ const generateIndexFile = (filesData, iconSubfolder) => {
   );
 };
 
-const generateFiles = (icons, iconSubfolder, namingPrefix = 'Icon') => {
-  const filesData = icons.map(iconName => toFileData(namingPrefix, iconName));
-  wipeFolder(iconSubfolder);
-  generateIconFiles(filesData, iconSubfolder);
-  generateIndexFile(filesData, iconSubfolder);
+const generateFiles = (
+  icons,
+  fromSubfolder,
+  toSubfolder,
+  namingPrefix = 'Icon',
+) => {
+  const filesData = icons.map(iconName =>
+    toFileData(namingPrefix, iconName, fromSubfolder),
+  );
+  wipeFolder(toSubfolder);
+  generateIconFiles(filesData, toSubfolder);
+  generateIndexFile(filesData, toSubfolder);
 };
 
 const generateIcons = env => {
   if (env === 'ci') {
-    generateFiles(filledIcons, 'filled/material', 'IconFilled');
-    generateFiles(outlinedIcons, 'outlined/material', 'IconOutlined');
+    generateFiles(iconsList, 'material', 'filled/material', 'IconFilled');
+    generateFiles(
+      iconsList,
+      'material-outlined',
+      'outlined/material',
+      'IconOutlined',
+    );
   } else if (env === 'dev') {
-    generateFiles(usedIcons, 'filled/material', 'IconFilled');
-    generateFiles(usedIcons, 'outlined/material', 'IconOutlined');
+    generateFiles(usedIcons, 'material', 'filled/material', 'IconFilled');
+    generateFiles(
+      usedIcons,
+      'material-outlined',
+      'outlined/material',
+      'IconOutlined',
+    );
   }
 };
 
