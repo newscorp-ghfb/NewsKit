@@ -50,10 +50,6 @@ const cardActions = 'sizing040';
 
 // Typography Presets
 const cardTypographyPresets: {[index: string]: string} = {
-  cardTeaserKickerLarge: 'editorialHeading050',
-  cardTeaserKickerMedium: 'editorialHeading030',
-  cardTeaserKickerSmall: 'editorialHeading010',
-
   cardTeaserHeadlineLarge: 'editorialHeading050',
   cardTeaserHeadlineMedium: 'editorialHeading030',
   cardTeaserHeadlineSmall: 'editorialHeading010',
@@ -234,16 +230,14 @@ const cardBodyBase = ({inset}: {inset: boolean}) => ({
       <Headline
         kickerText="CROWDS HEAD"
         overrides={{
+          typographyPreset:
+            cardTypographyPresets[`cardTeaserHeadline${cardSize}`],
           heading: {
             stylePreset: 'cardTeaserHeadline',
-            typographyPreset:
-              cardTypographyPresets[`cardTeaserHeadline${cardSize}`],
           },
           kicker: {
             spaceInline: cardTeaserKicker,
             stylePreset: 'cardTeaserKicker',
-            typographyPreset:
-              cardTypographyPresets[`cardTeaserKicker${cardSize}`],
           },
         }}
       >

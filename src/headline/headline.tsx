@@ -2,54 +2,35 @@ import React from 'react';
 import {
   styled,
   getTypographyPreset,
-  MQ,
   getSpacingInlineHorizontal,
   getStylePreset,
+  css,
 } from '../utils/style';
+import {HeadlineProps, HeadlinePropsWithRenderAs} from './types';
 
-export interface HeadlineProps {
-  kickerText?: string;
-  headingAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
-  kickerAs?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
-  overrides?: {
-    kicker?: {
-      stylePreset?: MQ<string>;
-      typographyPreset?: MQ<string>;
-      spaceInline?: MQ<string>;
-    };
-    heading?: {
-      stylePreset?: MQ<string>;
-      typographyPreset?: MQ<string>;
-    };
-  };
-}
-
-interface RenderAsProps {
-  as?: React.ElementType;
-}
-
-const HeadlineContainer = styled.section`
-  display: block;
-`;
-
-const Heading = styled.h1<RenderAsProps & HeadlineProps>`
-  display: inline-block;
-  margin: 0;
-  ${getTypographyPreset('headline.heading', 'heading', {
+const HeadlineContainer = styled.section<Pick<HeadlineProps, 'overrides'>>`
+  ${getTypographyPreset('headline', '', {
     withCrop: true,
   })}
+  /* Necessary for a proper section cropping */
+  padding: 1px 0px;
+`;
+
+const cssReset = css`
+  display: inline;
+  font: inherit;
+  margin: 0;
+`;
+
+const Heading = styled.h1<HeadlinePropsWithRenderAs>`
+  ${cssReset}
   ${getStylePreset('headline.heading', 'heading')}
 `;
 
-const Kicker = styled.span<RenderAsProps & HeadlineProps>`
-  display: inline-block;
-  margin: 0;
-  ${getTypographyPreset('headline.kicker', 'kicker', {
-    withCrop: true,
-  })}
+const Kicker = styled.span<HeadlinePropsWithRenderAs>`
+  ${({as}) => (as !== 'span' ? cssReset : null)}
   ${getStylePreset('headline.kicker', 'kicker')}
   ${getSpacingInlineHorizontal('headline.kicker', 'kicker')};
-  text-transform: uppercase;
 `;
 
 export const Headline: React.FC<HeadlineProps> = ({
@@ -58,18 +39,15 @@ export const Headline: React.FC<HeadlineProps> = ({
   headingAs = 'h1',
   kickerAs = 'span',
   overrides = {},
-}) =>
-  kickerText ? (
-    <HeadlineContainer>
+}) => (
+  <HeadlineContainer overrides={overrides}>
+    {kickerText && (
       <Kicker as={kickerAs} overrides={overrides}>
         {kickerText}{' '}
       </Kicker>
-      <Heading as={headingAs} overrides={overrides}>
-        {children}
-      </Heading>
-    </HeadlineContainer>
-  ) : (
+    )}
     <Heading as={headingAs} overrides={overrides}>
       {children}
     </Heading>
-  );
+  </HeadlineContainer>
+);

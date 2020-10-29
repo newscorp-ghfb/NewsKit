@@ -30,7 +30,7 @@ test('renders correctly with overriden props and caption and credit text', () =>
       spaceStack: 'space090',
       credit: {
         typographyPreset: 'utilityMeta010',
-        stylePreset: 'inkContrast',
+        stylePreset: 'uppercaseInkContrast',
       },
     },
   });
@@ -71,7 +71,7 @@ describe('CaptionInset', () => {
         spaceStack: 'space090',
         credit: {
           typographyPreset: 'utilityMeta010',
-          stylePreset: 'inkContrast',
+          stylePreset: 'uppercaseInkContrast',
         },
       },
     });

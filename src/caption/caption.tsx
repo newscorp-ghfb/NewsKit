@@ -1,14 +1,9 @@
 import React from 'react';
 import {CaptionProps} from './types';
-import {styled} from '../utils/style';
 import {Block} from '../block';
 import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';
 import {TextBlock} from '../text-block';
-
-const Credit = styled.span`
-  text-transform: uppercase;
-`;
 
 export const Caption: React.FC<CaptionProps> = ({
   overrides,
@@ -71,7 +66,7 @@ export const Caption: React.FC<CaptionProps> = ({
             typographyPreset: creditTypographyPreset,
           }}
         >
-          <Credit>{creditText}</Credit>
+          {creditText}
         </TextBlock>
       )}
     </Block>

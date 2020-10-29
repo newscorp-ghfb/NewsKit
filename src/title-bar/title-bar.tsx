@@ -3,10 +3,10 @@ import {styled, getSpacingInset, getStylePreset} from '../utils/style';
 import {TitleBarProps, ContainerProps} from './types';
 import {Headline} from '../headline';
 import {Stack} from '../stack/stack';
-import {filterOutFalsyProperties} from '../utils/filter-object';
 import {Block} from '../block';
 import {Hidden} from '../grid/visibility';
 import {useTheme} from '../theme';
+import {HeadlineOverrides} from '../headline/types';
 
 const StackContainer = styled(Stack)<ContainerProps>`
   ${getSpacingInset('titleBar')};
@@ -25,11 +25,29 @@ export const TitleBar: React.FC<TitleBarProps> = props => {
 
   const hasActions = !!ActionItem;
 
+  const addTitleBarHeadingOverrides = () => {
+    const headingOverrides: Omit<HeadlineOverrides, 'kicker'> = {};
+    if (!overrides.heading) {
+      return headingOverrides;
+    }
+    if (overrides.heading.typographyPreset) {
+      headingOverrides.typographyPreset = overrides.heading.typographyPreset;
+    }
+    if (overrides.heading.stylePreset) {
+      headingOverrides.heading = {stylePreset: overrides.heading.stylePreset};
+    }
+    return headingOverrides;
+  };
+
   const headlineOverrides = {
-    heading: {
-      ...theme.componentDefaults.titleBar.heading,
-      ...(overrides.heading ? filterOutFalsyProperties(overrides.heading) : {}),
+    typographyPreset: {
+      ...theme.componentDefaults.titleBar.heading.typographyPreset,
     },
+    heading: {
+      stylePreset: theme.componentDefaults.titleBar.heading.stylePreset,
+    },
+
+    ...addTitleBarHeadingOverrides(),
   };
 
   const blockOverrides = {spaceInline: hasActions ? 'space040' : ''};

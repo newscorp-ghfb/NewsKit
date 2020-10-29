@@ -202,7 +202,7 @@ export default {
                 stylePreset: 'inkBrand010',
                 typographyPreset: 'editorialCaption010',
                 credit: {
-                  stylePreset: 'inkBrand010',
+                  stylePreset: 'uppercaseInkBrand010',
                   typographyPreset: 'utilityMeta030',
                 },
               },
@@ -234,7 +234,7 @@ export default {
                   md: 'spaceInset070',
                 },
                 credit: {
-                  stylePreset: 'inkBrand010',
+                  stylePreset: 'uppercaseInkBrand010',
                   typographyPreset: 'utilityMeta030',
                 },
               },

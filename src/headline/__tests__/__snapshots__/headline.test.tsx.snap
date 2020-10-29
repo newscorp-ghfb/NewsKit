@@ -1,15 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`headline renders correctly with default props 1`] = `
+exports[`headline renders correctly with custom props 1`] = `
 <DocumentFragment>
-  .emotion-0 {
-  display: inline-block;
-  margin: 0;
-  color: #0a0a0a;
+  .emotion-2 {
+  padding: 1px 0px;
 }
 
 @media screen and (max-width:479px) {
-  .emotion-0 {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 36px;
     line-height: 1.1111111111111112;
@@ -20,7 +18,7 @@ exports[`headline renders correctly with default props 1`] = `
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -28,7 +26,7 @@ exports[`headline renders correctly with default props 1`] = `
     margin-bottom: -0.2055555555555556em;
   }
 
-  .emotion-0::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -38,7 +36,7 @@ exports[`headline renders correctly with default props 1`] = `
 }
 
 @media screen and (min-width:480px) and (max-width:1023px) {
-  .emotion-0 {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 36px;
     line-height: 1.1111111111111112;
@@ -49,7 +47,7 @@ exports[`headline renders correctly with default props 1`] = `
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -57,7 +55,7 @@ exports[`headline renders correctly with default props 1`] = `
     margin-bottom: -0.2055555555555556em;
   }
 
-  .emotion-0::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -67,7 +65,7 @@ exports[`headline renders correctly with default props 1`] = `
 }
 
 @media screen and (min-width:1024px) and (max-width:1439px) {
-  .emotion-0 {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 40px;
     line-height: 1.1;
@@ -78,7 +76,7 @@ exports[`headline renders correctly with default props 1`] = `
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -86,7 +84,7 @@ exports[`headline renders correctly with default props 1`] = `
     margin-bottom: -0.20000000000000007em;
   }
 
-  .emotion-0::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -96,7 +94,7 @@ exports[`headline renders correctly with default props 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-0 {
+  .emotion-2 {
     font-family: "Source Serif Pro",serif;
     font-size: 48px;
     line-height: 1.1666666666666667;
@@ -107,7 +105,7 @@ exports[`headline renders correctly with default props 1`] = `
     letter-spacing: 0;
   }
 
-  .emotion-0::before {
+  .emotion-2::before {
     content: '';
     display: block;
     height: 0;
@@ -115,7 +113,7 @@ exports[`headline renders correctly with default props 1`] = `
     margin-bottom: -0.2333333333333334em;
   }
 
-  .emotion-0::after {
+  .emotion-2::after {
     content: '';
     display: block;
     height: 0;
@@ -124,271 +122,23 @@ exports[`headline renders correctly with default props 1`] = `
   }
 }
 
-.emotion-0 svg {
-  fill: #0a0a0a;
-}
-
-<h1
-    class="emotion-0"
-  >
-    test
-  </h1>
-</DocumentFragment>
-`;
-
-exports[`headline renders correctly with default props 2`] = `
-<DocumentFragment>
-  .emotion-1 {
-  display: inline-block;
+.emotion-1 {
+  display: inline;
+  font: inherit;
   margin: 0;
   color: #0a0a0a;
-}
-
-@media screen and (max-width:479px) {
-  .emotion-1 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
-    font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-1::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
-  }
-
-  .emotion-1::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
-  }
-}
-
-@media screen and (min-width:480px) and (max-width:1023px) {
-  .emotion-1 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
-    font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-1::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
-  }
-
-  .emotion-1::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
-  }
-}
-
-@media screen and (min-width:1024px) and (max-width:1439px) {
-  .emotion-1 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-1::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
-  }
-
-  .emotion-1::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-1 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-1::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2333333333333334em;
-  }
-
-  .emotion-1::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2958333333333334em;
-  }
 }
 
 .emotion-1 svg {
   fill: #0a0a0a;
 }
 
-.emotion-2 {
-  display: block;
-}
-
 .emotion-0 {
-  display: inline-block;
+  display: inline;
+  font: inherit;
   margin: 0;
   color: #0a68c1;
   text-transform: uppercase;
-}
-
-@media screen and (max-width:479px) {
-  .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
-    font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-0::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
-  }
-
-  .emotion-0::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
-  }
-}
-
-@media screen and (min-width:480px) and (max-width:1023px) {
-  .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 36px;
-    line-height: 1.1111111111111112;
-    font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-0::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2055555555555556em;
-  }
-
-  .emotion-0::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2680555555555556em;
-  }
-}
-
-@media screen and (min-width:1024px) and (max-width:1439px) {
-  .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-0::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.20000000000000007em;
-  }
-
-  .emotion-0::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.26250000000000007em;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    font-family: "Source Serif Pro",serif;
-    font-size: 48px;
-    line-height: 1.1666666666666667;
-    font-weight: 600;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-
-  .emotion-0::before {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-bottom: -0.2333333333333334em;
-  }
-
-  .emotion-0::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: -0.2958333333333334em;
-  }
 }
 
 .emotion-0 svg {
@@ -436,75 +186,10 @@ exports[`headline renders correctly with default props 2`] = `
 </DocumentFragment>
 `;
 
-exports[`headline renders correctly with overriden props 1`] = `
+exports[`headline renders correctly with default props, just heading 1`] = `
 <DocumentFragment>
-  .emotion-2 {
-  display: block;
-}
-
-.emotion-0 {
-  display: inline-block;
-  margin: 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 32px;
-  line-height: 1.125;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: #0a68c1;
-  text-transform: uppercase;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.21250000000000002em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.275em;
-}
-
-.emotion-0 svg {
-  fill: #0a68c1;
-}
-
-@media screen and (max-width:479px) {
-  .emotion-0 {
-    margin-right: 12px;
-  }
-}
-
-@media screen and (min-width:480px) and (max-width:1023px) {
-  .emotion-0 {
-    margin-right: 12px;
-  }
-}
-
-@media screen and (min-width:1024px) and (max-width:1439px) {
-  .emotion-0 {
-    margin-right: 16px;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .emotion-0 {
-    margin-right: 16px;
-  }
-}
-
-.emotion-1 {
-  display: inline-block;
-  margin: 0;
-  color: #0a68c1;
+  .emotion-1 {
+  padding: 1px 0px;
 }
 
 @media screen and (max-width:479px) {
@@ -623,47 +308,281 @@ exports[`headline renders correctly with overriden props 1`] = `
   }
 }
 
+.emotion-0 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #0a0a0a;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
+<section
+    class="emotion-1"
+  >
+    <h1
+      class="emotion-0"
+    >
+      test
+    </h1>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`headline renders correctly with default props, with heading and kicker 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  padding: 1px 0px;
+}
+
+@media screen and (max-width:479px) {
+  .emotion-2 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-2::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-2::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:1023px) {
+  .emotion-2 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-2::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2055555555555556em;
+  }
+
+  .emotion-2::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2680555555555556em;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .emotion-2 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-2::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.20000000000000007em;
+  }
+
+  .emotion-2::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.26250000000000007em;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-2 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 48px;
+    line-height: 1.1666666666666667;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-2::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.2333333333333334em;
+  }
+
+  .emotion-2::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.2958333333333334em;
+  }
+}
+
+.emotion-1 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #0a0a0a;
+}
+
 .emotion-1 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-0 {
+  color: #0a68c1;
+  text-transform: uppercase;
+}
+
+.emotion-0 svg {
   fill: #0a68c1;
 }
 
-.emotion-1:hover:not(:disabled) {
-  color: #02509b;
+@media screen and (max-width:479px) {
+  .emotion-0 {
+    margin-right: 12px;
+  }
 }
 
-.emotion-1:hover:not(:disabled) svg {
-  fill: #02509b;
+@media screen and (min-width:480px) and (max-width:1023px) {
+  .emotion-0 {
+    margin-right: 12px;
+  }
 }
 
-.emotion-1:active:not(:disabled) {
-  color: #01396e;
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .emotion-0 {
+    margin-right: 16px;
+  }
 }
 
-.emotion-1:active:not(:disabled) svg {
-  fill: #01396e;
-}
-
-.emotion-1:visited:not(:disabled) {
-  color: #7547a3;
-}
-
-.emotion-1:visited:not(:disabled) svg {
-  fill: #7547a3;
+@media screen and (min-width:1440px) {
+  .emotion-0 {
+    margin-right: 16px;
+  }
 }
 
 <section
     class="emotion-2"
   >
-    <h5
+    <span
       class="emotion-0"
     >
       this is kicker 
-    </h5>
-    <h4
+    </span>
+    <h1
       class="emotion-1"
-    >
-      test
-    </h4>
+    />
+  </section>
+</DocumentFragment>
+`;
+
+exports[`headline renders correctly with overriden props 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  font-family: "Source Serif Pro",serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 1px 0px;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.21250000000000002em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.275em;
+}
+
+.emotion-0 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #0a68c1;
+}
+
+.emotion-0 svg {
+  fill: #0a68c1;
+}
+
+.emotion-0:hover:not(:disabled) {
+  color: #02509b;
+}
+
+.emotion-0:hover:not(:disabled) svg {
+  fill: #02509b;
+}
+
+.emotion-0:active:not(:disabled) {
+  color: #01396e;
+}
+
+.emotion-0:active:not(:disabled) svg {
+  fill: #01396e;
+}
+
+.emotion-0:visited:not(:disabled) {
+  color: #7547a3;
+}
+
+.emotion-0:visited:not(:disabled) svg {
+  fill: #7547a3;
+}
+
+<section
+    class="emotion-1"
+  >
+    <h1
+      class="emotion-0"
+    />
   </section>
 </DocumentFragment>
 `;

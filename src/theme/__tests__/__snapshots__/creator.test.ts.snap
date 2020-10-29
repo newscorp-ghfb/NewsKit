@@ -276,7 +276,7 @@ Object {
     },
     "caption": Object {
       "credit": Object {
-        "stylePreset": "inkSubtle",
+        "stylePreset": "uppercaseInkSubtle",
         "typographyPreset": "utilityMeta010",
       },
       "spaceStack": "space040",
@@ -285,7 +285,7 @@ Object {
     },
     "captionInset": Object {
       "credit": Object {
-        "stylePreset": "inkSubtle",
+        "stylePreset": "uppercaseInkSubtle",
         "typographyPreset": "utilityMeta010",
       },
       "spaceInset": Object {
@@ -407,12 +407,6 @@ Object {
     "headline": Object {
       "heading": Object {
         "stylePreset": "inkContrast",
-        "typographyPreset": Object {
-          "lg": "editorialHeading070",
-          "sm": "editorialHeading060",
-          "xl": "editorialHeading080",
-          "xs": "editorialHeading060",
-        },
       },
       "kicker": Object {
         "spaceInline": Object {
@@ -421,13 +415,13 @@ Object {
           "xl": "space040",
           "xs": "space030",
         },
-        "stylePreset": "inkBrand010",
-        "typographyPreset": Object {
-          "lg": "editorialHeading070",
-          "sm": "editorialHeading060",
-          "xl": "editorialHeading080",
-          "xs": "editorialHeading060",
-        },
+        "stylePreset": "uppercaseInkBrand010",
+      },
+      "typographyPreset": Object {
+        "lg": "editorialHeading070",
+        "sm": "editorialHeading060",
+        "xl": "editorialHeading080",
+        "xs": "editorialHeading060",
       },
     },
     "headlineH1": Object {
@@ -493,7 +487,7 @@ Object {
     "image": Object {
       "caption": Object {
         "credit": Object {
-          "stylePreset": "inkSubtle",
+          "stylePreset": "uppercaseInkSubtle",
           "typographyPreset": "utilityMeta010",
         },
         "spaceInset": Object {
@@ -2295,6 +2289,41 @@ Object {
       "visited": Object {
         "color": "{{colors.interactivePrimary030}}",
         "iconColor": "{{colors.interactivePrimary030}}",
+      },
+    },
+    "uppercaseInkBase": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+        "textTransform": "uppercase",
+      },
+    },
+    "uppercaseInkBrand010": Object {
+      "base": Object {
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+        "textTransform": "uppercase",
+      },
+    },
+    "uppercaseInkContrast": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textTransform": "uppercase",
+      },
+    },
+    "uppercaseInkNonEssential": Object {
+      "base": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+        "textTransform": "uppercase",
+      },
+    },
+    "uppercaseInkSubtle": Object {
+      "base": Object {
+        "color": "{{colors.inkSubtle}}",
+        "iconColor": "{{colors.inkSubtle}}",
+        "textTransform": "uppercase",
       },
     },
     "volumeControlButtons": Object {

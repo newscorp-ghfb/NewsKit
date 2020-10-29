@@ -115,7 +115,7 @@ export const componentDefaults = {
     spaceStack: 'space040',
     credit: {
       typographyPreset: 'utilityMeta010',
-      stylePreset: 'inkSubtle',
+      stylePreset: 'uppercaseInkSubtle',
     },
   },
   captionInset: {
@@ -128,7 +128,7 @@ export const componentDefaults = {
     },
     credit: {
       typographyPreset: 'utilityMeta010',
-      stylePreset: 'inkSubtle',
+      stylePreset: 'uppercaseInkSubtle',
     },
   },
   card: {
@@ -240,23 +240,17 @@ export const componentDefaults = {
     },
   },
   headline: {
+    typographyPreset: {
+      xs: 'editorialHeading060',
+      sm: 'editorialHeading060',
+      lg: 'editorialHeading070',
+      xl: 'editorialHeading080',
+    },
     heading: {
       stylePreset: 'inkContrast',
-      typographyPreset: {
-        xs: 'editorialHeading060',
-        sm: 'editorialHeading060',
-        lg: 'editorialHeading070',
-        xl: 'editorialHeading080',
-      },
     },
     kicker: {
-      stylePreset: 'inkBrand010',
-      typographyPreset: {
-        xs: 'editorialHeading060',
-        sm: 'editorialHeading060',
-        lg: 'editorialHeading070',
-        xl: 'editorialHeading080',
-      },
+      stylePreset: 'uppercaseInkBrand010',
       spaceInline: {
         xs: 'space030',
         sm: 'space030',
@@ -334,7 +328,7 @@ export const componentDefaults = {
       },
       credit: {
         typographyPreset: 'utilityMeta010',
-        stylePreset: 'inkSubtle',
+        stylePreset: 'uppercaseInkSubtle',
       },
     },
   },

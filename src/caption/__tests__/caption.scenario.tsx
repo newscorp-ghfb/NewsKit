@@ -40,7 +40,7 @@ export default {
                 spaceStack: 'space090',
                 credit: {
                   typographyPreset: 'utilityMeta030',
-                  stylePreset: 'inkContrast',
+                  stylePreset: 'uppercaseInkContrast',
                 },
               }}
               creditText="Credit text with overrides"
@@ -73,7 +73,7 @@ export default {
             <CaptionInset
               overrides={{
                 typographyPreset: 'editorialParagraph030',
-                stylePreset: 'inkInformative',
+                stylePreset: 'inkBrand010',
                 spaceStack: 'space090',
                 spaceInset: {
                   xs: 'spaceInset060',
@@ -81,7 +81,7 @@ export default {
                 },
                 credit: {
                   typographyPreset: 'utilityMeta030',
-                  stylePreset: 'inkInformative',
+                  stylePreset: 'uppercaseInkBrand010',
                 },
               }}
               creditText="Credit text"

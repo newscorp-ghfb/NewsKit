@@ -40,6 +40,7 @@ export default {
                   md: 'editorialHeading030',
                   lg: 'editorialHeading040',
                 },
+                stylePreset: 'linkInline',
               },
             }}
           >

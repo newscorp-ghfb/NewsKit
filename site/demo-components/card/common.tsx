@@ -23,13 +23,11 @@ const cardTeaserLeadSpaceStack = {
 const cardTeaserLeadInsetVariantSpaceStack = 'space000';
 const cardActionsSpace = 'sizing040';
 
-const cardTeaserKickerSmallTypographyPreset = 'editorialHeading010';
 const cardTeaserHeadlineSmallTypographyPreset = 'editorialHeading010';
 const cardTeaserLeadSmallTypographyPreset = 'editorialParagraph010';
 const cardLabelSmallTypographyPreset = 'utilityLabel010';
 const cardTagSmallTypographyPreset = 'utilityLabel010';
 
-const cardTeaserKickerMediumTypographyPreset = 'editorialHeading030';
 const cardTeaserHeadlineMediumTypographyPreset = 'editorialHeading030';
 const cardTeaserLeadMediumTypographyPreset = 'editorialParagraph010';
 const cardLabelMediumTypographyPreset = 'utilityLabel010';
@@ -109,12 +107,10 @@ export {
   cardTeaserLeadSpaceStack,
   cardTeaserLeadInsetVariantSpaceStack,
   cardActionsSpace,
-  cardTeaserKickerSmallTypographyPreset,
   cardTeaserHeadlineSmallTypographyPreset,
   cardTeaserLeadSmallTypographyPreset,
   cardLabelSmallTypographyPreset,
   cardTagSmallTypographyPreset,
-  cardTeaserKickerMediumTypographyPreset,
   cardTeaserHeadlineMediumTypographyPreset,
   cardTeaserLeadMediumTypographyPreset,
   cardLabelMediumTypographyPreset,

@@ -13,12 +13,42 @@ describe('TitleBar', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('should apply correctly the custom presets ', () => {
+  test('should apply correctly the props and overrides', () => {
     const fragment = renderToFragmentWithTheme(TitleBar, {
       children: TITLE,
       overrides: {
         stylePreset: 'standfirst',
         spaceInset: 'spaceInsetSquish010',
+        heading: {
+          typographyPreset: {
+            xs: 'editorialHeading010',
+            sm: 'editorialHeading020',
+            md: 'editorialHeading030',
+            lg: 'editorialHeading040',
+          },
+          stylePreset: 'linkInline',
+        },
+      },
+    } as TitleBarProps);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('should apply correctly only stylePreset for the heading', () => {
+    const fragment = renderToFragmentWithTheme(TitleBar, {
+      children: TITLE,
+      overrides: {
+        heading: {
+          stylePreset: 'linkInline',
+        },
+      },
+    } as TitleBarProps);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('should apply correctly only typographyPreset for the heading', () => {
+    const fragment = renderToFragmentWithTheme(TitleBar, {
+      children: TITLE,
+      overrides: {
         heading: {
           typographyPreset: {
             xs: 'editorialHeading010',

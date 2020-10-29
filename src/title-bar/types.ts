@@ -1,10 +1,12 @@
 import {MQ} from '../utils/style';
-import {HeadlineProps} from '../headline';
 
 export type TitleBarOverrides = {
   spaceInset?: MQ<string>;
   stylePreset?: MQ<string>;
-  heading?: NonNullable<HeadlineProps['overrides']>['heading'];
+  heading?: {
+    stylePreset?: MQ<string>;
+    typographyPreset?: MQ<string>;
+  };
 };
 
 export type ContainerProps = {

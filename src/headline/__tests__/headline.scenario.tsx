@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {Headline} from '..';
 
-// TODO: refactor headline scenarios with PPDSC-1334
 export default {
   name: 'headline',
   children: [

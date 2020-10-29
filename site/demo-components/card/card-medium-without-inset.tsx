@@ -21,7 +21,6 @@ import {
   cardTeaserKickerSpaceInline,
   cardTeaserLeadSpaceStack,
   cardActionsSpace,
-  cardTeaserKickerMediumTypographyPreset,
   cardTeaserHeadlineMediumTypographyPreset,
   cardTeaserLeadMediumTypographyPreset,
   cardLabelMediumTypographyPreset,
@@ -89,14 +88,13 @@ export const CardMediumWithoutInset = () => (
             <Headline
               kickerText="CROWDS HEAD"
               overrides={{
+                typographyPreset: cardTeaserHeadlineMediumTypographyPreset,
                 heading: {
                   stylePreset: 'cardTeaserHeadline',
-                  typographyPreset: cardTeaserHeadlineMediumTypographyPreset,
                 },
                 kicker: {
                   spaceInline: cardTeaserKickerSpaceInline,
                   stylePreset: 'cardTeaserKicker',
-                  typographyPreset: cardTeaserKickerMediumTypographyPreset,
                 },
               }}
             >

@@ -20,6 +20,7 @@ export interface StylePresetStyles {
   placeholderColor?: string;
   textDecoration?: string;
   textOverflow?: string;
+  textTransform?: string;
 }
 export type StylePresetStyleKeys = keyof StylePresetStyles;
 

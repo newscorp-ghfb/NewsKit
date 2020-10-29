@@ -21,7 +21,6 @@ import {
   cardTeaserKickerSpaceInline,
   cardTeaserLeadInsetVariantSpaceStack,
   cardActionsSpace,
-  cardTeaserKickerSmallTypographyPreset,
   cardTeaserHeadlineSmallTypographyPreset,
   cardTeaserLeadSmallTypographyPreset,
   cardLabelSmallTypographyPreset,
@@ -89,14 +88,13 @@ export const CardSmallWithInset = () => (
             <Headline
               kickerText="CROWDS HEAD"
               overrides={{
+                typographyPreset: cardTeaserHeadlineSmallTypographyPreset,
                 heading: {
                   stylePreset: 'cardTeaserHeadline',
-                  typographyPreset: cardTeaserHeadlineSmallTypographyPreset,
                 },
                 kicker: {
                   spaceInline: cardTeaserKickerSpaceInline,
                   stylePreset: 'cardTeaserKicker',
-                  typographyPreset: cardTeaserKickerSmallTypographyPreset,
                 },
               }}
             >

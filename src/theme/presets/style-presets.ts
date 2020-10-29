@@ -12,10 +12,22 @@ stylePresets.inkBrand010 = {
     iconColor: '{{colors.inkBrand010}}',
   },
 };
+stylePresets.uppercaseInkBrand010 = {
+  base: {
+    ...stylePresets.inkBrand010.base,
+    textTransform: 'uppercase',
+  },
+};
 stylePresets.inkContrast = {
   base: {
     color: '{{colors.inkContrast}}',
     iconColor: '{{colors.inkContrast}}',
+  },
+};
+stylePresets.uppercaseInkContrast = {
+  base: {
+    ...stylePresets.inkContrast.base,
+    textTransform: 'uppercase',
   },
 };
 stylePresets.inkBase = {
@@ -24,16 +36,34 @@ stylePresets.inkBase = {
     iconColor: '{{colors.inkBase}}',
   },
 };
+stylePresets.uppercaseInkBase = {
+  base: {
+    ...stylePresets.inkBase.base,
+    textTransform: 'uppercase',
+  },
+};
 stylePresets.inkSubtle = {
   base: {
     color: '{{colors.inkSubtle}}',
     iconColor: '{{colors.inkSubtle}}',
   },
 };
+stylePresets.uppercaseInkSubtle = {
+  base: {
+    ...stylePresets.inkSubtle.base,
+    textTransform: 'uppercase',
+  },
+};
 stylePresets.inkNonEssential = {
   base: {
     color: '{{colors.inkNonEssential}}',
     iconColor: '{{colors.inkNonEssential}}',
+  },
+};
+stylePresets.uppercaseInkNonEssential = {
+  base: {
+    ...stylePresets.inkNonEssential.base,
+    textTransform: 'uppercase',
   },
 };
 

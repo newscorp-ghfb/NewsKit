@@ -165,7 +165,7 @@ describe('Image', () => {
             spaceStack: 'space090',
             credit: {
               typographyPreset: 'utilityMeta010',
-              stylePreset: 'inkContrast',
+              stylePreset: 'uppercaseInkContrast',
             },
           },
         },
@@ -200,7 +200,7 @@ describe('Image', () => {
               md: 'spaceInset070',
             },
             credit: {
-              stylePreset: 'inkBrand010',
+              stylePreset: 'uppercaseInkBrand010',
               typographyPreset: 'utilityMeta030',
             },
           },
