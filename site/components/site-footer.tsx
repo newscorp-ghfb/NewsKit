@@ -4,7 +4,7 @@ import {
   Cell,
   Hidden,
   ConsentSettingsLink,
-  GitHub,
+  IconFilledGitHub,
   getTypographyPresetFromTheme,
   getColorFromTheme,
   getSizingFromTheme,
@@ -119,7 +119,7 @@ const SiteFooter: React.FC = () => (
           <Hidden xs sm md lg xl>
             <FooterLink>
               <Link href="/" noUnderline external={false}>
-                <GitHub size="iconSize020" />
+                <IconFilledGitHub overrides={{size: 'iconSize020'}} />
               </Link>
             </FooterLink>
           </Hidden>

@@ -1,38 +1,28 @@
 import React from 'react';
-import {styled, getColorFromTheme, getSizingFromTheme} from '../utils/style';
-import {LegacyStyledSvgProps, LegacySvgProps} from './types';
-import {getSSRId} from '../utils/get-ssr-id';
+import {SvgProps} from './types';
 
-const SvgElement = styled.svg<LegacyStyledSvgProps>`
-  fill: ${getColorFromTheme('inkBase', '$color')};
-  color: ${getColorFromTheme('inkBase', '$color')};
-  margin: ${getSizingFromTheme(undefined, 'margin')};
-  ${({float}) => (float ? `float: ${float}` : `display: inline-block;`)};
+const modeProps = {
+  decorative: {
+    'aria-hidden': true,
+  },
+  standalone: {
+    role: 'img',
+  },
+};
 
-  // more info on why do we have two ampersands:
-  // https://css-tricks.com/the-sass-ampersand/#doubling-up-specificity
-  && {
-    width: ${getSizingFromTheme(undefined, 'size')};
-    height: ${getSizingFromTheme(undefined, 'size')};
-  }
-`;
-
-export const Svg: React.FC<LegacySvgProps> = ({
+export const Svg: React.FC<SvgProps & React.SVGProps<SVGSVGElement>> = ({
   children,
   title,
-  color,
+  overrides,
   ...props
-}) => {
-  const id = getSSRId();
-  return (
-    <SvgElement
-      viewBox="0 0 24 24"
-      {...props}
-      aria-labelledby={id}
-      $color={color}
-    >
-      {title && <title id={id}>{title}</title>}
-      {children}
-    </SvgElement>
-  );
-};
+}) => (
+  <svg
+    {...props}
+    {...modeProps[title ? 'standalone' : 'decorative']}
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {title && <title>{title}</title>}
+    {children}
+  </svg>
+);

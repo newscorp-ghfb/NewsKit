@@ -1,4 +1,4 @@
-import {Divider, Block, Circle, getSizingFromTheme, styled} from "newskit";
+import {Divider, Block, IconFilledCircle, getSizingFromTheme, styled} from "newskit";
 
 const InlineIconContainer = styled(Block)`
   display: inline-block;
@@ -11,7 +11,7 @@ const InlineDividerContainer = styled(Block)`
 
 <Block>
   <InlineIconContainer overrides={{marginPreset: 'spaceInline020'}}>
-    <Circle size="iconSize040" />
+    <IconFilledCircle overrides={{size: 'iconSize040'}} />
   </InlineIconContainer>
   <InlineDividerContainer
     overrides={{marginPreset: 'spaceInline020'}}
@@ -19,7 +19,7 @@ const InlineDividerContainer = styled(Block)`
     <Divider vertical />
   </InlineDividerContainer>
   <InlineIconContainer overrides={{marginPreset: 'spaceInline020'}}>
-    <Circle size="iconSize040" />
+    <IconFilledCircle overrides={{size: 'iconSize040'}} />
   </InlineIconContainer>
   <InlineDividerContainer
     overrides={{marginPreset: 'spaceInline020'}}
@@ -27,6 +27,6 @@ const InlineDividerContainer = styled(Block)`
     <Divider vertical />
   </InlineDividerContainer>
   <InlineIconContainer>
-    <Circle size="iconSize040" />
+    <IconFilledCircle overrides={{size: 'iconSize040'}} />
   </InlineIconContainer>
 </Block>

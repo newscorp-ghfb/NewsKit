@@ -1,22 +1,11 @@
 import React from 'react';
-import {CSSObject} from '@emotion/core';
 import {ButtonProps, ButtonSize} from './types';
 import {StyledFlag} from './styled';
-import {useTheme, Theme} from '../theme';
+import {useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 import {as as emotionAs} from '../utils/component';
 import {IndeterminateProgressIndicator} from '../icons/filled/custom/indeterminate-progress-indicator';
-import {getStylePresetFromTheme, MQ} from '../utils/style';
 import {useInstrumentation, EventTrigger} from '../instrumentation';
-
-const getIconColourValue = (theme: Theme, stylePreset: MQ<string>) => {
-  const buttonStylePresets = getStylePresetFromTheme(stylePreset, undefined, {
-    isLoading: true,
-  })({theme});
-  return (buttonStylePresets &&
-    buttonStylePresets.svg &&
-    (buttonStylePresets.svg as CSSObject).fill) as string;
-};
 
 export const Button: React.FC<ButtonProps> = ({
   children,
@@ -57,8 +46,10 @@ export const Button: React.FC<ButtonProps> = ({
     >
       {isLoading ? (
         <IndeterminateProgressIndicator
-          size={buttonSettings!.iconSize}
-          color={getIconColourValue(theme, buttonSettings.stylePreset!)}
+          overrides={{
+            size: buttonSettings!.iconSize,
+            stylePreset: buttonSettings.stylePreset as string,
+          }}
         />
       ) : (
         children

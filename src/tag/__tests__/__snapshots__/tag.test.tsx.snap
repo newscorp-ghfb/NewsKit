@@ -576,7 +576,7 @@ exports[`Tag renders a tag with a custom typographyPreset 1`] = `
 
 exports[`Tag renders a tag with an icon 1`] = `
 <DocumentFragment>
-  .emotion-6 {
+  .emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -586,7 +586,7 @@ exports[`Tag renders a tag with an icon 1`] = `
   flex-direction: column;
 }
 
-.emotion-5 {
+.emotion-6 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -618,24 +618,24 @@ exports[`Tag renders a tag with an icon 1`] = `
   border-radius: 0;
 }
 
-.emotion-5 svg {
+.emotion-6 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-5 svg {
+.emotion-6 svg {
   fill: #2e2e2e;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-5:active:not(:disabled) {
+.emotion-6:active:not(:disabled) {
   border-width: 1px;
 }
 
-.emotion-4 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -656,7 +656,7 @@ exports[`Tag renders a tag with an icon 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -665,7 +665,7 @@ exports[`Tag renders a tag with an icon 1`] = `
   margin-right: calc(4px/2);
 }
 
-.emotion-2 {
+.emotion-3 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -676,7 +676,7 @@ exports[`Tag renders a tag with an icon 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-2::before {
+.emotion-3::before {
   content: '';
   display: block;
   height: 0;
@@ -684,7 +684,7 @@ exports[`Tag renders a tag with an icon 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-2::after {
+.emotion-3::after {
   content: '';
   display: block;
   height: 0;
@@ -693,8 +693,11 @@ exports[`Tag renders a tag with an icon 1`] = `
 }
 
 .emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
 }
 
@@ -704,38 +707,40 @@ exports[`Tag renders a tag with an icon 1`] = `
 }
 
 <div
-    class="emotion-6"
+    class="emotion-7"
   >
     <div
-      class="emotion-5"
+      class="emotion-6"
       data-testid="tag"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <svg
-            aria-labelledby="mock-nk-1"
-            class="emotion-0"
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
             viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <title
-              id="mock-nk-1"
-            >
-              Email icon
-            </title>
             <path
-              d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
             />
           </svg>
         </div>
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <span
-            class="emotion-2"
+            class="emotion-3"
           >
             Text
           </span>
@@ -748,7 +753,7 @@ exports[`Tag renders a tag with an icon 1`] = `
 
 exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
 <DocumentFragment>
-  .emotion-6 {
+  .emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -758,7 +763,7 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
   flex-direction: column;
 }
 
-.emotion-4 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -779,7 +784,7 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -788,7 +793,7 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
   margin-right: calc(4px/2);
 }
 
-.emotion-2 {
+.emotion-3 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -799,7 +804,7 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-2::before {
+.emotion-3::before {
   content: '';
   display: block;
   height: 0;
@@ -807,7 +812,7 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-2::after {
+.emotion-3::after {
   content: '';
   display: block;
   height: 0;
@@ -816,8 +821,11 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
 }
 
 .emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
 }
 
@@ -826,7 +834,7 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
   height: 16px;
 }
 
-.emotion-5 {
+.emotion-6 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -858,56 +866,58 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
   border-radius: 0;
 }
 
-.emotion-5 svg {
+.emotion-6 svg {
   width: 48px;
   height: 48px;
 }
 
-.emotion-5 svg {
+.emotion-6 svg {
   fill: #2e2e2e;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-5:active:not(:disabled) {
+.emotion-6:active:not(:disabled) {
   border-width: 1px;
 }
 
 <div
-    class="emotion-6"
+    class="emotion-7"
   >
     <div
-      class="emotion-5"
+      class="emotion-6"
       data-testid="tag"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <svg
-            aria-labelledby="mock-nk-1"
-            class="emotion-0"
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
             viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <title
-              id="mock-nk-1"
-            >
-              Email icon
-            </title>
             <path
-              d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
             />
           </svg>
         </div>
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <span
-            class="emotion-2"
+            class="emotion-3"
           >
             Text
           </span>
@@ -920,7 +930,7 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
 
 exports[`Tag renders a tag with an icon and custom spacing between elements 1`] = `
 <DocumentFragment>
-  .emotion-6 {
+  .emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -930,7 +940,7 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   flex-direction: column;
 }
 
-.emotion-5 {
+.emotion-6 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -962,24 +972,24 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   border-radius: 0;
 }
 
-.emotion-5 svg {
+.emotion-6 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-5 svg {
+.emotion-6 svg {
   fill: #2e2e2e;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   background-color: #f0f0f0;
 }
 
-.emotion-5:active:not(:disabled) {
+.emotion-6:active:not(:disabled) {
   border-width: 1px;
 }
 
-.emotion-2 {
+.emotion-3 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -990,7 +1000,7 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   letter-spacing: 0;
 }
 
-.emotion-2::before {
+.emotion-3::before {
   content: '';
   display: block;
   height: 0;
@@ -998,7 +1008,7 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-2::after {
+.emotion-3::after {
   content: '';
   display: block;
   height: 0;
@@ -1007,8 +1017,11 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
 }
 
 .emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
 }
 
@@ -1017,7 +1030,7 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   height: 16px;
 }
 
-.emotion-4 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1038,7 +1051,7 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1048,38 +1061,40 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
 }
 
 <div
-    class="emotion-6"
+    class="emotion-7"
   >
     <div
-      class="emotion-5"
+      class="emotion-6"
       data-testid="tag"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <svg
-            aria-labelledby="mock-nk-1"
-            class="emotion-0"
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
             viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <title
-              id="mock-nk-1"
-            >
-              Email icon
-            </title>
             <path
-              d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 L20,4 Z M20,8 L12,13 L4,8 L4,6 L12,11 L20,6 L20,8 L20,8 Z"
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
             />
           </svg>
         </div>
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <span
-            class="emotion-2"
+            class="emotion-3"
           >
             Text
           </span>

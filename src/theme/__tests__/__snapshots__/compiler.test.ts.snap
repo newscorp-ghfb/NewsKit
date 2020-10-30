@@ -1928,6 +1928,36 @@ Object {
         "iconColor": "#0a782a",
       },
     },
+    "iconSocialFacebook": Object {
+      "base": Object {
+        "iconColor": "#1877f2",
+      },
+    },
+    "iconSocialInstagram": Object {
+      "base": Object {
+        "iconColor": "#c32aa3",
+      },
+    },
+    "iconSocialReddit": Object {
+      "base": Object {
+        "iconColor": "#ff4500",
+      },
+    },
+    "iconSocialTwitter": Object {
+      "base": Object {
+        "iconColor": "#1da1f2",
+      },
+    },
+    "iconSocialWhatsapp": Object {
+      "base": Object {
+        "iconColor": "#25d366",
+      },
+    },
+    "iconSocialYoutube": Object {
+      "base": Object {
+        "iconColor": "#ff0000",
+      },
+    },
     "imageCircle": Object {
       "base": Object {
         "borderRadius": "50%",

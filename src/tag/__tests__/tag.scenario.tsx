@@ -5,7 +5,7 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {styled} from '../../utils/style';
-import {Email} from '../../icons';
+import {IconFilledEmail} from '../../icons';
 import {Stack} from '../../stack';
 import {createTheme, ThemeProvider} from '../../theme';
 
@@ -105,15 +105,15 @@ export default {
               wrap="wrap"
             >
               <Tag size={TagSize.Small}>
-                <Email />
+                <IconFilledEmail />
                 Text
               </Tag>
               <Tag size={TagSize.Medium}>
-                <Email />
+                <IconFilledEmail />
                 Text
               </Tag>
               <Tag size={TagSize.Large}>
-                <Email />
+                <IconFilledEmail />
                 Text
               </Tag>
             </Stack>
@@ -137,22 +137,19 @@ export default {
               wrap="wrap"
             >
               <Tag size={TagSize.Small}>
-                <Email />
+                <IconFilledEmail />
                 Text
-                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
-                <Email size="iconSize030" />
+                <IconFilledEmail overrides={{size: 'iconSize030'}} />
               </Tag>
               <Tag size={TagSize.Medium}>
-                <Email />
+                <IconFilledEmail />
                 Text
-                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
-                <Email size="iconSize040" />
+                <IconFilledEmail overrides={{size: 'iconSize040'}} />
               </Tag>
               <Tag size={TagSize.Large}>
-                <Email />
+                <IconFilledEmail />
                 Text
-                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
-                <Email size="iconSize050" />
+                <IconFilledEmail overrides={{size: 'iconSize050'}} />
               </Tag>
             </Stack>
           </Container>
@@ -167,22 +164,19 @@ export default {
               wrap="wrap"
             >
               <Tag size={TagSize.Small} overrides={{iconSize: 'iconSize020'}}>
-                <Email />
+                <IconFilledEmail />
                 Text
-                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
-                <Email size="iconSize030" />
+                <IconFilledEmail overrides={{size: 'iconSize030'}} />
               </Tag>
               <Tag size={TagSize.Medium} overrides={{iconSize: 'iconSize020'}}>
-                <Email />
+                <IconFilledEmail />
                 Text
-                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
-                <Email size="iconSize040" />
+                <IconFilledEmail overrides={{size: 'iconSize040'}} />
               </Tag>
               <Tag size={TagSize.Large} overrides={{iconSize: 'iconSize020'}}>
-                <Email />
+                <IconFilledEmail />
                 Text
-                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
-                <Email size="iconSize050" />
+                <IconFilledEmail overrides={{size: 'iconSize050'}} />
               </Tag>
             </Stack>
           </Container>

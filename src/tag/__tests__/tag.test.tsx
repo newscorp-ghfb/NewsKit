@@ -1,7 +1,7 @@
 import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {Tag, TagSize, TagProps} from '..';
-import {Email} from '../../icons';
+import {IconFilledEmail} from '../../icons';
 
 const tagSizeKeys = (Object.keys(TagSize) as unknown) as Array<
   keyof typeof TagSize
@@ -10,7 +10,7 @@ const tagSizeKeys = (Object.keys(TagSize) as unknown) as Array<
 const renderTagWithText = (props: TagProps) => <Tag {...props}>Text</Tag>;
 const renderTagWithTextAndIcon = (props: TagProps) => (
   <Tag {...props}>
-    <Email size="iconSize010" />
+    <IconFilledEmail overrides={{size: 'iconSize010'}} />
     Text
   </Tag>
 );

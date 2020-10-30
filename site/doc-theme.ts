@@ -30,6 +30,24 @@ const stylePresets = {
       iconColor: '{{colors.inkBase}}',
     },
   },
+  closeIcon: {
+    base: {
+      iconColor: '{{colors.interactiveSecondary040}}',
+    },
+  },
+  arrowIcon: {
+    base: {
+      iconColor: '{{colors.inkBase}}',
+    },
+  },
+  swatchBadge: {
+    base: {
+      backgroundColor: '{{colors.interface010}}',
+      color: '{{colors.inkSubtle}}',
+      borderRadius: '{{borders.borderRadiusRounded010}}',
+      iconColor: '{{colors.red070}}',
+    },
+  },
 };
 export const newsKitLight = createTheme({
   name: 'newskit-light',

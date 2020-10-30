@@ -2,7 +2,7 @@
 
 exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = `
 <DocumentFragment>
-  .emotion-14 {
+  .emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -27,7 +27,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   position: relative;
 }
 
-.emotion-5 {
+.emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -39,7 +39,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   margin-right: 12px;
 }
 
-.emotion-5::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -47,7 +47,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-5::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -55,7 +55,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-4 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -67,7 +67,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   height: 32px;
 }
 
-.emotion-3 {
+.emotion-4 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -104,33 +104,33 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   fill: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-3:disabled {
+.emotion-4:disabled {
   color: #c0c0c0;
   background-color: transparent;
 }
 
-.emotion-3:disabled svg {
+.emotion-4:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -151,7 +151,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -161,12 +161,15 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 .emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-7 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -183,7 +186,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   width: 100%;
 }
 
-.emotion-6 {
+.emotion-7 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   background-color: #0a68c1;
   border-style: solid;
@@ -204,27 +207,27 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   cursor: pointer;
 }
 
-.emotion-6 svg {
+.emotion-7 svg {
   fill: #c0c0c0;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-6:hover:not(:disabled) svg {
+.emotion-7:hover:not(:disabled) svg {
   fill: #c0c0c0;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-6:active:not(:disabled) svg {
+.emotion-7:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-13 {
+.emotion-15 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -236,7 +239,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   margin-left: 12px;
 }
 
-.emotion-13::before {
+.emotion-15::before {
   content: '';
   display: block;
   height: 0;
@@ -244,7 +247,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-13::after {
+.emotion-15::after {
   content: '';
   display: block;
   height: 0;
@@ -253,44 +256,43 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 }
 
 <div
-    class="emotion-14"
+    class="emotion-16"
     data-testid="volume-control"
   >
     <div
-      class="emotion-5"
+      class="emotion-6"
       data-testid="min-label"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <button
-          class="emotion-3"
+          aria-label="Unmute"
+          class="emotion-4"
           data-testid="mute-button"
           tabindex="-1"
           type="button"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
           >
             <div
-              class="emotion-1"
+              class="emotion-2"
             >
               <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <title
-                  id="mock-nk-1"
-                >
-                  unmute
-                </title>
-                <path
-                  d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"
-                />
                 <path
                   d="M0 0h24v24H0z"
                   fill="none"
+                />
+                <path
+                  d="M16.5 12A4.5 4.5 0 0014 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0021 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 003.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"
                 />
               </svg>
             </div>
@@ -302,7 +304,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
       aria-orientation="horizontal"
       aria-valuemax="1"
       aria-valuemin="0"
-      class="emotion-7"
+      class="emotion-8"
       data-testid="volume-control-track"
       values="0"
     >
@@ -313,7 +315,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
         aria-valuemin="0"
         aria-valuenow="0"
         aria-valuetext="volume level 0 of 10"
-        class="emotion-6"
+        class="emotion-7"
         data-testid="volume-control-thumb"
         draggable="false"
         role="slider"
@@ -323,43 +325,39 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
       />
     </div>
     <div
-      class="emotion-13"
+      class="emotion-15"
       data-testid="max-label"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <button
-          class="emotion-3"
+          aria-label="Volume up"
+          class="emotion-4"
           data-testid="volumeup-button"
           tabindex="-1"
           type="button"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
           >
             <div
-              class="emotion-1"
+              class="emotion-2"
             >
               <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <title
-                  id="mock-nk-1"
-                >
-                  max volume
-                </title>
-                <title>
-                  max volume
-                </title>
-                <path
-                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                />
                 <path
                   d="M0 0h24v24H0z"
                   fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
             </div>
@@ -391,7 +389,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 
 exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] = `
 <DocumentFragment>
-  .emotion-14 {
+  .emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -416,7 +414,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   position: relative;
 }
 
-.emotion-5 {
+.emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -428,7 +426,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   margin-right: 12px;
 }
 
-.emotion-5::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -436,7 +434,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-5::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -444,7 +442,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-4 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -456,7 +454,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   height: 32px;
 }
 
-.emotion-3 {
+.emotion-4 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -493,33 +491,33 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   fill: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-3:disabled {
+.emotion-4:disabled {
   color: #c0c0c0;
   background-color: transparent;
 }
 
-.emotion-3:disabled svg {
+.emotion-4:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -540,7 +538,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -550,12 +548,15 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 .emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-7 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -572,7 +573,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   width: 100%;
 }
 
-.emotion-6 {
+.emotion-7 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   background-color: #0a68c1;
   border-style: solid;
@@ -593,27 +594,27 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   cursor: pointer;
 }
 
-.emotion-6 svg {
+.emotion-7 svg {
   fill: #c0c0c0;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-6:hover:not(:disabled) svg {
+.emotion-7:hover:not(:disabled) svg {
   fill: #c0c0c0;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-6:active:not(:disabled) svg {
+.emotion-7:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-13 {
+.emotion-15 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -625,7 +626,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   margin-left: 12px;
 }
 
-.emotion-13::before {
+.emotion-15::before {
   content: '';
   display: block;
   height: 0;
@@ -633,7 +634,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-13::after {
+.emotion-15::after {
   content: '';
   display: block;
   height: 0;
@@ -642,44 +643,43 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 }
 
 <div
-    class="emotion-14"
+    class="emotion-16"
     data-testid="volume-control"
   >
     <div
-      class="emotion-5"
+      class="emotion-6"
       data-testid="min-label"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <button
-          class="emotion-3"
+          aria-label="Mute"
+          class="emotion-4"
           data-testid="mute-button"
           tabindex="-1"
           type="button"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
           >
             <div
-              class="emotion-1"
+              class="emotion-2"
             >
               <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <title
-                  id="mock-nk-1"
-                >
-                  mute
-                </title>
-                <path
-                  d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-                />
                 <path
                   d="M0 0h24v24H0z"
                   fill="none"
+                />
+                <path
+                  d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                 />
               </svg>
             </div>
@@ -691,7 +691,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
       aria-orientation="horizontal"
       aria-valuemax="1"
       aria-valuemin="0"
-      class="emotion-7"
+      class="emotion-8"
       data-testid="volume-control-track"
       values="0.8"
     >
@@ -702,7 +702,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
         aria-valuemin="0"
         aria-valuenow="0.8"
         aria-valuetext="volume level 8 of 10"
-        class="emotion-6"
+        class="emotion-7"
         data-testid="volume-control-thumb"
         draggable="false"
         role="slider"
@@ -712,43 +712,39 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
       />
     </div>
     <div
-      class="emotion-13"
+      class="emotion-15"
       data-testid="max-label"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <button
-          class="emotion-3"
+          aria-label="Volume up"
+          class="emotion-4"
           data-testid="volumeup-button"
           tabindex="-1"
           type="button"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
           >
             <div
-              class="emotion-1"
+              class="emotion-2"
             >
               <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <title
-                  id="mock-nk-1"
-                >
-                  max volume
-                </title>
-                <title>
-                  max volume
-                </title>
-                <path
-                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                />
                 <path
                   d="M0 0h24v24H0z"
                   fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
             </div>
@@ -780,7 +776,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 
 exports[`VolumeControl renders horizontal volume control by default 1`] = `
 <DocumentFragment>
-  .emotion-14 {
+  .emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -805,7 +801,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   position: relative;
 }
 
-.emotion-5 {
+.emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -817,7 +813,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   margin-right: 12px;
 }
 
-.emotion-5::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -825,7 +821,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-5::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -833,7 +829,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-4 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -845,7 +841,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   height: 32px;
 }
 
-.emotion-3 {
+.emotion-4 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -882,33 +878,33 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   fill: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-3:disabled {
+.emotion-4:disabled {
   color: #c0c0c0;
   background-color: transparent;
 }
 
-.emotion-3:disabled svg {
+.emotion-4:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -929,7 +925,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -939,12 +935,15 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 .emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-7 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -961,7 +960,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   width: 100%;
 }
 
-.emotion-6 {
+.emotion-7 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   background-color: #0a68c1;
   border-style: solid;
@@ -982,27 +981,27 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   cursor: pointer;
 }
 
-.emotion-6 svg {
+.emotion-7 svg {
   fill: #c0c0c0;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-6:hover:not(:disabled) svg {
+.emotion-7:hover:not(:disabled) svg {
   fill: #c0c0c0;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-6:active:not(:disabled) svg {
+.emotion-7:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-13 {
+.emotion-15 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1014,7 +1013,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   margin-left: 12px;
 }
 
-.emotion-13::before {
+.emotion-15::before {
   content: '';
   display: block;
   height: 0;
@@ -1022,7 +1021,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-13::after {
+.emotion-15::after {
   content: '';
   display: block;
   height: 0;
@@ -1031,44 +1030,43 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 }
 
 <div
-    class="emotion-14"
+    class="emotion-16"
     data-testid="volume-control"
   >
     <div
-      class="emotion-5"
+      class="emotion-6"
       data-testid="min-label"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <button
-          class="emotion-3"
+          aria-label="Mute"
+          class="emotion-4"
           data-testid="mute-button"
           tabindex="-1"
           type="button"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
           >
             <div
-              class="emotion-1"
+              class="emotion-2"
             >
               <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <title
-                  id="mock-nk-1"
-                >
-                  mute
-                </title>
-                <path
-                  d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-                />
                 <path
                   d="M0 0h24v24H0z"
                   fill="none"
+                />
+                <path
+                  d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                 />
               </svg>
             </div>
@@ -1080,7 +1078,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
       aria-orientation="horizontal"
       aria-valuemax="1"
       aria-valuemin="0"
-      class="emotion-7"
+      class="emotion-8"
       data-testid="volume-control-track"
       values="1"
     >
@@ -1091,7 +1089,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
         aria-valuemin="0"
         aria-valuenow="1"
         aria-valuetext="volume level 10 of 10"
-        class="emotion-6"
+        class="emotion-7"
         data-testid="volume-control-thumb"
         draggable="false"
         role="slider"
@@ -1101,43 +1099,39 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
       />
     </div>
     <div
-      class="emotion-13"
+      class="emotion-15"
       data-testid="max-label"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <button
-          class="emotion-3"
+          aria-label="Volume up"
+          class="emotion-4"
           data-testid="volumeup-button"
           tabindex="-1"
           type="button"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
           >
             <div
-              class="emotion-1"
+              class="emotion-2"
             >
               <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <title
-                  id="mock-nk-1"
-                >
-                  max volume
-                </title>
-                <title>
-                  max volume
-                </title>
-                <path
-                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                />
                 <path
                   d="M0 0h24v24H0z"
                   fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
             </div>
@@ -1169,7 +1163,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
 
 exports[`VolumeControl renders vertical volume control by default 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1181,7 +1175,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   height: 32px;
 }
 
-.emotion-3 {
+.emotion-4 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1218,33 +1212,33 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   fill: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-3:disabled {
+.emotion-4:disabled {
   color: #c0c0c0;
   background-color: transparent;
 }
 
-.emotion-3:disabled svg {
+.emotion-4:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1265,7 +1259,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1275,12 +1269,15 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 .emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-6 {
+.emotion-7 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   background-color: #0a68c1;
   border-style: solid;
@@ -1301,27 +1298,27 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   cursor: pointer;
 }
 
-.emotion-6 svg {
+.emotion-7 svg {
   fill: #c0c0c0;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-6:hover:not(:disabled) svg {
+.emotion-7:hover:not(:disabled) svg {
   fill: #c0c0c0;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-6:active:not(:disabled) svg {
+.emotion-7:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-14 {
+.emotion-16 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1345,7 +1342,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   position: relative;
 }
 
-.emotion-5 {
+.emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1357,7 +1354,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   margin-top: 12px;
 }
 
-.emotion-5::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -1365,7 +1362,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-5::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -1373,7 +1370,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-7 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1390,7 +1387,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   width: 12px;
 }
 
-.emotion-13 {
+.emotion-15 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1402,7 +1399,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   margin-bottom: 12px;
 }
 
-.emotion-13::before {
+.emotion-15::before {
   content: '';
   display: block;
   height: 0;
@@ -1410,7 +1407,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-13::after {
+.emotion-15::after {
   content: '';
   display: block;
   height: 0;
@@ -1419,44 +1416,43 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 }
 
 <div
-    class="emotion-14"
+    class="emotion-16"
     data-testid="volume-control"
   >
     <div
-      class="emotion-5"
+      class="emotion-6"
       data-testid="min-label"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <button
-          class="emotion-3"
+          aria-label="Mute"
+          class="emotion-4"
           data-testid="mute-button"
           tabindex="-1"
           type="button"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
           >
             <div
-              class="emotion-1"
+              class="emotion-2"
             >
               <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <title
-                  id="mock-nk-1"
-                >
-                  mute
-                </title>
-                <path
-                  d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-                />
                 <path
                   d="M0 0h24v24H0z"
                   fill="none"
+                />
+                <path
+                  d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                 />
               </svg>
             </div>
@@ -1468,7 +1464,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
       aria-orientation="vertical"
       aria-valuemax="1"
       aria-valuemin="0"
-      class="emotion-7"
+      class="emotion-8"
       data-testid="volume-control-track"
       values="1"
     >
@@ -1479,7 +1475,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
         aria-valuemin="0"
         aria-valuenow="1"
         aria-valuetext="volume level 10 of 10"
-        class="emotion-6"
+        class="emotion-7"
         data-testid="volume-control-thumb"
         draggable="false"
         role="slider"
@@ -1489,43 +1485,39 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
       />
     </div>
     <div
-      class="emotion-13"
+      class="emotion-15"
       data-testid="max-label"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <button
-          class="emotion-3"
+          aria-label="Volume up"
+          class="emotion-4"
           data-testid="volumeup-button"
           tabindex="-1"
           type="button"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
           >
             <div
-              class="emotion-1"
+              class="emotion-2"
             >
               <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <title
-                  id="mock-nk-1"
-                >
-                  max volume
-                </title>
-                <title>
-                  max volume
-                </title>
-                <path
-                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                />
                 <path
                   d="M0 0h24v24H0z"
                   fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
             </div>
@@ -1557,7 +1549,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 
 exports[`VolumeControl volume should toggle between mute and unmute if enter key is pressed: after muting 1`] = `
 <DocumentFragment>
-  .emotion-14 {
+  .emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1582,7 +1574,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   position: relative;
 }
 
-.emotion-5 {
+.emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1594,7 +1586,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   margin-right: 12px;
 }
 
-.emotion-5::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -1602,7 +1594,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-5::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -1610,7 +1602,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-4 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1622,7 +1614,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   height: 32px;
 }
 
-.emotion-3 {
+.emotion-4 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1659,33 +1651,33 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   fill: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-3:disabled {
+.emotion-4:disabled {
   color: #c0c0c0;
   background-color: transparent;
 }
 
-.emotion-3:disabled svg {
+.emotion-4:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1706,7 +1698,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1716,12 +1708,15 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-7 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1738,7 +1733,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   width: 100%;
 }
 
-.emotion-6 {
+.emotion-7 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   background-color: #0a68c1;
   border-style: solid;
@@ -1759,27 +1754,27 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   cursor: pointer;
 }
 
-.emotion-6 svg {
+.emotion-7 svg {
   fill: #c0c0c0;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-6:hover:not(:disabled) svg {
+.emotion-7:hover:not(:disabled) svg {
   fill: #c0c0c0;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-6:active:not(:disabled) svg {
+.emotion-7:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-13 {
+.emotion-15 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1791,7 +1786,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   margin-left: 12px;
 }
 
-.emotion-13::before {
+.emotion-15::before {
   content: '';
   display: block;
   height: 0;
@@ -1799,7 +1794,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-13::after {
+.emotion-15::after {
   content: '';
   display: block;
   height: 0;
@@ -1808,44 +1803,43 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 <div
-    class="emotion-14"
+    class="emotion-16"
     data-testid="volume-control"
   >
     <div
-      class="emotion-5"
+      class="emotion-6"
       data-testid="min-label"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <button
-          class="emotion-3"
+          aria-label="Unmute"
+          class="emotion-4"
           data-testid="mute-button"
           tabindex="-1"
           type="button"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
           >
             <div
-              class="emotion-1"
+              class="emotion-2"
             >
               <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <title
-                  id="mock-nk-1"
-                >
-                  unmute
-                </title>
-                <path
-                  d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"
-                />
                 <path
                   d="M0 0h24v24H0z"
                   fill="none"
+                />
+                <path
+                  d="M16.5 12A4.5 4.5 0 0014 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0021 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 003.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"
                 />
               </svg>
             </div>
@@ -1857,7 +1851,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
       aria-orientation="horizontal"
       aria-valuemax="1"
       aria-valuemin="0"
-      class="emotion-7"
+      class="emotion-8"
       data-testid="volume-control-track"
       values="0"
     >
@@ -1868,7 +1862,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
         aria-valuemin="0"
         aria-valuenow="0"
         aria-valuetext="volume level 0 of 10"
-        class="emotion-6"
+        class="emotion-7"
         data-testid="volume-control-thumb"
         draggable="false"
         role="slider"
@@ -1878,43 +1872,39 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
       />
     </div>
     <div
-      class="emotion-13"
+      class="emotion-15"
       data-testid="max-label"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <button
-          class="emotion-3"
+          aria-label="Volume up"
+          class="emotion-4"
           data-testid="volumeup-button"
           tabindex="-1"
           type="button"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
           >
             <div
-              class="emotion-1"
+              class="emotion-2"
             >
               <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <title
-                  id="mock-nk-1"
-                >
-                  max volume
-                </title>
-                <title>
-                  max volume
-                </title>
-                <path
-                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                />
                 <path
                   d="M0 0h24v24H0z"
                   fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
             </div>
@@ -1946,7 +1936,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 exports[`VolumeControl volume should toggle between mute and unmute if enter key is pressed: after unmuting 1`] = `
 <DocumentFragment>
-  .emotion-14 {
+  .emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1971,7 +1961,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   position: relative;
 }
 
-.emotion-5 {
+.emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -1983,7 +1973,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   margin-right: 12px;
 }
 
-.emotion-5::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -1991,7 +1981,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-5::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -1999,7 +1989,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-4 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2011,7 +2001,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   height: 32px;
 }
 
-.emotion-3 {
+.emotion-4 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2048,33 +2038,33 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   fill: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-3:disabled {
+.emotion-4:disabled {
   color: #c0c0c0;
   background-color: transparent;
 }
 
-.emotion-3:disabled svg {
+.emotion-4:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2095,7 +2085,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2105,12 +2095,15 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 .emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-7 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2127,7 +2120,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   width: 100%;
 }
 
-.emotion-6 {
+.emotion-7 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   background-color: #0a68c1;
   border-style: solid;
@@ -2148,27 +2141,27 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   cursor: pointer;
 }
 
-.emotion-6 svg {
+.emotion-7 svg {
   fill: #c0c0c0;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-6:hover:not(:disabled) svg {
+.emotion-7:hover:not(:disabled) svg {
   fill: #c0c0c0;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-6:active:not(:disabled) svg {
+.emotion-7:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-13 {
+.emotion-15 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2180,7 +2173,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   margin-left: 12px;
 }
 
-.emotion-13::before {
+.emotion-15::before {
   content: '';
   display: block;
   height: 0;
@@ -2188,7 +2181,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-13::after {
+.emotion-15::after {
   content: '';
   display: block;
   height: 0;
@@ -2197,44 +2190,43 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 }
 
 <div
-    class="emotion-14"
+    class="emotion-16"
     data-testid="volume-control"
   >
     <div
-      class="emotion-5"
+      class="emotion-6"
       data-testid="min-label"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <button
-          class="emotion-3"
+          aria-label="Mute"
+          class="emotion-4"
           data-testid="mute-button"
           tabindex="-1"
           type="button"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
           >
             <div
-              class="emotion-1"
+              class="emotion-2"
             >
               <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <title
-                  id="mock-nk-1"
-                >
-                  mute
-                </title>
-                <path
-                  d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-                />
                 <path
                   d="M0 0h24v24H0z"
                   fill="none"
+                />
+                <path
+                  d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                 />
               </svg>
             </div>
@@ -2246,7 +2238,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
       aria-orientation="horizontal"
       aria-valuemax="1"
       aria-valuemin="0"
-      class="emotion-7"
+      class="emotion-8"
       data-testid="volume-control-track"
       values="0.7"
     >
@@ -2257,7 +2249,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
         aria-valuemin="0"
         aria-valuenow="0.7"
         aria-valuetext="volume level 7 of 10"
-        class="emotion-6"
+        class="emotion-7"
         data-testid="volume-control-thumb"
         draggable="false"
         role="slider"
@@ -2267,43 +2259,39 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
       />
     </div>
     <div
-      class="emotion-13"
+      class="emotion-15"
       data-testid="max-label"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <button
-          class="emotion-3"
+          aria-label="Volume up"
+          class="emotion-4"
           data-testid="volumeup-button"
           tabindex="-1"
           type="button"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
           >
             <div
-              class="emotion-1"
+              class="emotion-2"
             >
               <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <title
-                  id="mock-nk-1"
-                >
-                  max volume
-                </title>
-                <title>
-                  max volume
-                </title>
-                <path
-                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                />
                 <path
                   d="M0 0h24v24H0z"
                   fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
             </div>
@@ -2335,7 +2323,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 
 exports[`VolumeControl volume should toggle between mute and unmute if space key is pressed: after muting 1`] = `
 <DocumentFragment>
-  .emotion-14 {
+  .emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2360,7 +2348,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   position: relative;
 }
 
-.emotion-5 {
+.emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2372,7 +2360,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   margin-right: 12px;
 }
 
-.emotion-5::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -2380,7 +2368,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-5::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -2388,7 +2376,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-4 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2400,7 +2388,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   height: 32px;
 }
 
-.emotion-3 {
+.emotion-4 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2437,33 +2425,33 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   fill: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-3:disabled {
+.emotion-4:disabled {
   color: #c0c0c0;
   background-color: transparent;
 }
 
-.emotion-3:disabled svg {
+.emotion-4:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2484,7 +2472,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2494,12 +2482,15 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-7 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2516,7 +2507,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   width: 100%;
 }
 
-.emotion-6 {
+.emotion-7 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   background-color: #0a68c1;
   border-style: solid;
@@ -2537,27 +2528,27 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   cursor: pointer;
 }
 
-.emotion-6 svg {
+.emotion-7 svg {
   fill: #c0c0c0;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-6:hover:not(:disabled) svg {
+.emotion-7:hover:not(:disabled) svg {
   fill: #c0c0c0;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-6:active:not(:disabled) svg {
+.emotion-7:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-13 {
+.emotion-15 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2569,7 +2560,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   margin-left: 12px;
 }
 
-.emotion-13::before {
+.emotion-15::before {
   content: '';
   display: block;
   height: 0;
@@ -2577,7 +2568,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-13::after {
+.emotion-15::after {
   content: '';
   display: block;
   height: 0;
@@ -2586,44 +2577,43 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 <div
-    class="emotion-14"
+    class="emotion-16"
     data-testid="volume-control"
   >
     <div
-      class="emotion-5"
+      class="emotion-6"
       data-testid="min-label"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <button
-          class="emotion-3"
+          aria-label="Unmute"
+          class="emotion-4"
           data-testid="mute-button"
           tabindex="-1"
           type="button"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
           >
             <div
-              class="emotion-1"
+              class="emotion-2"
             >
               <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <title
-                  id="mock-nk-1"
-                >
-                  unmute
-                </title>
-                <path
-                  d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"
-                />
                 <path
                   d="M0 0h24v24H0z"
                   fill="none"
+                />
+                <path
+                  d="M16.5 12A4.5 4.5 0 0014 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0021 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 003.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"
                 />
               </svg>
             </div>
@@ -2635,7 +2625,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
       aria-orientation="horizontal"
       aria-valuemax="1"
       aria-valuemin="0"
-      class="emotion-7"
+      class="emotion-8"
       data-testid="volume-control-track"
       values="0"
     >
@@ -2646,7 +2636,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
         aria-valuemin="0"
         aria-valuenow="0"
         aria-valuetext="volume level 0 of 10"
-        class="emotion-6"
+        class="emotion-7"
         data-testid="volume-control-thumb"
         draggable="false"
         role="slider"
@@ -2656,43 +2646,39 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
       />
     </div>
     <div
-      class="emotion-13"
+      class="emotion-15"
       data-testid="max-label"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <button
-          class="emotion-3"
+          aria-label="Volume up"
+          class="emotion-4"
           data-testid="volumeup-button"
           tabindex="-1"
           type="button"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
           >
             <div
-              class="emotion-1"
+              class="emotion-2"
             >
               <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <title
-                  id="mock-nk-1"
-                >
-                  max volume
-                </title>
-                <title>
-                  max volume
-                </title>
-                <path
-                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                />
                 <path
                   d="M0 0h24v24H0z"
                   fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
             </div>
@@ -2724,7 +2710,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 
 exports[`VolumeControl volume should toggle between mute and unmute if space key is pressed: after unmuting 1`] = `
 <DocumentFragment>
-  .emotion-14 {
+  .emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2749,7 +2735,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   position: relative;
 }
 
-.emotion-5 {
+.emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2761,7 +2747,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   margin-right: 12px;
 }
 
-.emotion-5::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -2769,7 +2755,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-5::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -2777,7 +2763,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-4 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2789,7 +2775,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   height: 32px;
 }
 
-.emotion-3 {
+.emotion-4 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2826,33 +2812,33 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   fill: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-3:disabled {
+.emotion-4:disabled {
   color: #c0c0c0;
   background-color: transparent;
 }
 
-.emotion-3:disabled svg {
+.emotion-4:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2873,7 +2859,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2883,12 +2869,15 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 .emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-7 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2905,7 +2894,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   width: 100%;
 }
 
-.emotion-6 {
+.emotion-7 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   background-color: #0a68c1;
   border-style: solid;
@@ -2926,27 +2915,27 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   cursor: pointer;
 }
 
-.emotion-6 svg {
+.emotion-7 svg {
   fill: #c0c0c0;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-6:hover:not(:disabled) svg {
+.emotion-7:hover:not(:disabled) svg {
   fill: #c0c0c0;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-6:active:not(:disabled) svg {
+.emotion-7:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-13 {
+.emotion-15 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -2958,7 +2947,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   margin-left: 12px;
 }
 
-.emotion-13::before {
+.emotion-15::before {
   content: '';
   display: block;
   height: 0;
@@ -2966,7 +2955,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-13::after {
+.emotion-15::after {
   content: '';
   display: block;
   height: 0;
@@ -2975,44 +2964,43 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 }
 
 <div
-    class="emotion-14"
+    class="emotion-16"
     data-testid="volume-control"
   >
     <div
-      class="emotion-5"
+      class="emotion-6"
       data-testid="min-label"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <button
-          class="emotion-3"
+          aria-label="Mute"
+          class="emotion-4"
           data-testid="mute-button"
           tabindex="-1"
           type="button"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
           >
             <div
-              class="emotion-1"
+              class="emotion-2"
             >
               <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <title
-                  id="mock-nk-1"
-                >
-                  mute
-                </title>
-                <path
-                  d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-                />
                 <path
                   d="M0 0h24v24H0z"
                   fill="none"
+                />
+                <path
+                  d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                 />
               </svg>
             </div>
@@ -3024,7 +3012,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
       aria-orientation="horizontal"
       aria-valuemax="1"
       aria-valuemin="0"
-      class="emotion-7"
+      class="emotion-8"
       data-testid="volume-control-track"
       values="0.7"
     >
@@ -3035,7 +3023,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
         aria-valuemin="0"
         aria-valuenow="0.7"
         aria-valuetext="volume level 7 of 10"
-        class="emotion-6"
+        class="emotion-7"
         data-testid="volume-control-thumb"
         draggable="false"
         role="slider"
@@ -3045,43 +3033,39 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
       />
     </div>
     <div
-      class="emotion-13"
+      class="emotion-15"
       data-testid="max-label"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <button
-          class="emotion-3"
+          aria-label="Volume up"
+          class="emotion-4"
           data-testid="volumeup-button"
           tabindex="-1"
           type="button"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
           >
             <div
-              class="emotion-1"
+              class="emotion-2"
             >
               <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <title
-                  id="mock-nk-1"
-                >
-                  max volume
-                </title>
-                <title>
-                  max volume
-                </title>
-                <path
-                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                />
                 <path
                   d="M0 0h24v24H0z"
                   fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
             </div>
@@ -3113,7 +3097,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 
 exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`] = `
 <DocumentFragment>
-  .emotion-14 {
+  .emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3138,7 +3122,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   position: relative;
 }
 
-.emotion-5 {
+.emotion-6 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -3150,7 +3134,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   margin-right: 12px;
 }
 
-.emotion-5::before {
+.emotion-6::before {
   content: '';
   display: block;
   height: 0;
@@ -3158,7 +3142,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-5::after {
+.emotion-6::after {
   content: '';
   display: block;
   height: 0;
@@ -3166,7 +3150,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   margin-top: -0.4267857142857143em;
 }
 
-.emotion-4 {
+.emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3178,7 +3162,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   height: 32px;
 }
 
-.emotion-3 {
+.emotion-4 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3215,33 +3199,33 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   fill: #0a68c1;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   background-color: #e6f4ff;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   background-color: #d5ebff;
 }
 
-.emotion-3:disabled {
+.emotion-4:disabled {
   color: #c0c0c0;
   background-color: transparent;
 }
 
-.emotion-3:disabled svg {
+.emotion-4:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3262,7 +3246,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3272,12 +3256,15 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 .emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
 }
 
-.emotion-7 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3294,7 +3281,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   width: 100%;
 }
 
-.emotion-6 {
+.emotion-7 {
   box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
   background-color: #0a68c1;
   border-style: solid;
@@ -3315,27 +3302,27 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   cursor: pointer;
 }
 
-.emotion-6 svg {
+.emotion-7 svg {
   fill: #c0c0c0;
 }
 
-.emotion-6:hover:not(:disabled) {
+.emotion-7:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-6:hover:not(:disabled) svg {
+.emotion-7:hover:not(:disabled) svg {
   fill: #c0c0c0;
 }
 
-.emotion-6:active:not(:disabled) {
+.emotion-7:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-6:active:not(:disabled) svg {
+.emotion-7:active:not(:disabled) svg {
   fill: #535353;
 }
 
-.emotion-13 {
+.emotion-15 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
   line-height: 1.4285714285714286;
@@ -3347,7 +3334,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   margin-left: 12px;
 }
 
-.emotion-13::before {
+.emotion-15::before {
   content: '';
   display: block;
   height: 0;
@@ -3355,7 +3342,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   margin-bottom: calc(-0.3642857142857143em + 1.2px);
 }
 
-.emotion-13::after {
+.emotion-15::after {
   content: '';
   display: block;
   height: 0;
@@ -3364,44 +3351,43 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 }
 
 <div
-    class="emotion-14"
+    class="emotion-16"
     data-testid="volume-control"
   >
     <div
-      class="emotion-5"
+      class="emotion-6"
       data-testid="min-label"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <button
-          class="emotion-3"
+          aria-label="Mute"
+          class="emotion-4"
           data-testid="mute-button"
           tabindex="-1"
           type="button"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
           >
             <div
-              class="emotion-1"
+              class="emotion-2"
             >
               <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <title
-                  id="mock-nk-1"
-                >
-                  mute
-                </title>
-                <path
-                  d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
-                />
                 <path
                   d="M0 0h24v24H0z"
                   fill="none"
+                />
+                <path
+                  d="M18.5 12A4.5 4.5 0 0016 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
                 />
               </svg>
             </div>
@@ -3413,7 +3399,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
       aria-orientation="horizontal"
       aria-valuemax="1"
       aria-valuemin="0"
-      class="emotion-7"
+      class="emotion-8"
       data-testid="volume-control-track"
       values="1"
     >
@@ -3424,7 +3410,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
         aria-valuemin="0"
         aria-valuenow="1"
         aria-valuetext="volume level 10 of 10"
-        class="emotion-6"
+        class="emotion-7"
         data-testid="volume-control-thumb"
         draggable="false"
         role="slider"
@@ -3434,43 +3420,39 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
       />
     </div>
     <div
-      class="emotion-13"
+      class="emotion-15"
       data-testid="max-label"
     >
       <div
-        class="emotion-4"
+        class="emotion-5"
       >
         <button
-          class="emotion-3"
+          aria-label="Volume up"
+          class="emotion-4"
           data-testid="volumeup-button"
           tabindex="-1"
           type="button"
         >
           <div
-            class="emotion-2"
+            class="emotion-3"
           >
             <div
-              class="emotion-1"
+              class="emotion-2"
             >
               <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <title
-                  id="mock-nk-1"
-                >
-                  max volume
-                </title>
-                <title>
-                  max volume
-                </title>
-                <path
-                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-                />
                 <path
                   d="M0 0h24v24H0z"
                   fill="none"
+                />
+                <path
+                  d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
                 />
               </svg>
             </div>

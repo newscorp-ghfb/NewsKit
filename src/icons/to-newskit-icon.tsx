@@ -5,21 +5,23 @@ import {SvgProps} from './types';
 import {getStylePreset, styled} from '../utils/style';
 
 export const toNewsKitIcon = (
-  EmotionIcon: React.ComponentType<EmotionIconProps>,
+  PassedIcon:
+    | React.ComponentType<EmotionIconProps>
+    | React.ComponentType<SvgProps>,
 ) =>
   withTheme<SvgProps>(props => {
-    const emotionIconName = EmotionIcon.displayName;
+    const emotionIconName = PassedIcon.displayName;
     const size =
       props.overrides && props.overrides.size
         ? props.theme.sizing[props.overrides.size]
         : null;
 
-    const StyledIcon = styled(EmotionIcon)`
+    const StyledIcon = styled(PassedIcon)`
       ${getStylePreset('icons', '', {isSvg: true})};
       vertical-align: unset;
+      display: inline-block;
       ${size &&
         `
-      // more info on why do we have two ampersands:
       // https://css-tricks.com/the-sass-ampersand/#doubling-up-specificity
       && {
         width: ${size};

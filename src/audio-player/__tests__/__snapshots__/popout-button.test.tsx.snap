@@ -2,7 +2,7 @@
 
 exports[`PopoutButton renders correctly with default props 1`] = `
 <DocumentFragment>
-  .emotion-4 {
+  .emotion-5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -14,7 +14,7 @@ exports[`PopoutButton renders correctly with default props 1`] = `
   height: 48px;
 }
 
-.emotion-3 {
+.emotion-4 {
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -51,33 +51,33 @@ exports[`PopoutButton renders correctly with default props 1`] = `
   cursor: pointer;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-4 svg {
   fill: #ffffff;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   background-color: #02509b;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   background-color: #01396e;
 }
 
-.emotion-3:disabled {
+.emotion-4:disabled {
   background-color: #e4e4e4;
   color: #c0c0c0;
 }
 
-.emotion-3:disabled svg {
+.emotion-4:disabled svg {
   fill: #c0c0c0;
 }
 
-.emotion-2 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -98,7 +98,7 @@ exports[`PopoutButton renders correctly with default props 1`] = `
   margin-right: calc(-8px/2);
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -108,8 +108,11 @@ exports[`PopoutButton renders correctly with default props 1`] = `
 }
 
 .emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
 }
 
@@ -119,30 +122,28 @@ exports[`PopoutButton renders correctly with default props 1`] = `
 }
 
 <div
-    class="emotion-4"
+    class="emotion-5"
   >
     <button
-      class="emotion-3"
+      aria-label="Open popout player"
+      class="emotion-4"
       data-testid="audio-player-popout"
       type="button"
     >
       <div
-        class="emotion-2"
+        class="emotion-3"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <svg
-            aria-labelledby="mock-nk-1"
-            class="emotion-0"
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <title
-              id="mock-nk-1"
-            >
-              open popout player
-            </title>
             <path
               d="M0 0h24v24H0z"
               fill="none"

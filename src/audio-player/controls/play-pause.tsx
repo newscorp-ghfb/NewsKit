@@ -1,7 +1,11 @@
 import React from 'react';
 import {IconButton} from '../../icon-button';
 import {ButtonSize, ButtonProps} from '../../button/types';
-import {Play, Pause, Square} from '../../icons';
+import {
+  IconFilledPlayArrow,
+  IconFilledPause,
+  IconFilledStop,
+} from '../../icons';
 
 export interface PlayerButtonProps {
   isPlaying: boolean;
@@ -13,19 +17,30 @@ export interface PlayerButtonProps {
 
 export const PlayerButton: React.FC<PlayerButtonProps> = React.memo(
   ({isPlaying, canPause, ...props}) => {
-    const notPlaying = canPause ? (
-      <Pause focusable="false" title="Pause" />
-    ) : (
-      <Square focusable="false" title="Stop" />
-    );
+    let playStateIcon = <IconFilledPlayArrow />;
+    let ariaLabel = 'Play';
+    let ariaPressed = false;
+
+    if (isPlaying) {
+      ariaPressed = true;
+      if (canPause) {
+        playStateIcon = <IconFilledPause />;
+        ariaLabel = 'Pause';
+      } else {
+        playStateIcon = <IconFilledStop />;
+        ariaLabel = 'Stop';
+      }
+    }
+
     return (
       <IconButton
         data-testid="audio-player-play-button"
-        aria-pressed={isPlaying ? 'true' : 'false'}
+        aria-pressed={ariaPressed}
+        aria-label={ariaLabel}
         size={ButtonSize.Large}
         {...props}
       >
-        {isPlaying ? notPlaying : <Play focusable="false" title="Play" />}
+        {playStateIcon}
       </IconButton>
     );
   },

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Svg} from 'newskit';
+import {IconFilledArrowDropDown, IconFilledArrowDropUp} from 'newskit';
 import {Link} from '../link';
 import routes from '../../routes.json';
 import {
@@ -10,27 +10,6 @@ import {
 } from './styled';
 import {Item} from './types';
 import {handleEnterKeyPress} from '../../helpers/a11y';
-
-const OpenIcon: React.FC = () => (
-  <Svg size="iconSize010" float="right" viewBox="0 0 16 16" title="open icon">
-    <g fill="none">
-      <mask fill="white">
-        <polygon points="7 14 12 9 17 14" />
-      </mask>
-      <polygon points="7 14 12 9 17 14" fill="#666" />
-    </g>
-  </Svg>
-);
-const CloseIcon: React.FC = () => (
-  <Svg size="iconSize010" float="right" viewBox="0 0 16 16" title="close icon">
-    <g fill="none">
-      <mask fill="white">
-        <polygon points="7 10 12 15 17 10" />
-      </mask>
-      <polygon points="7 10 12 15 17 10" fill="#666" />
-    </g>
-  </Svg>
-);
 
 const renderIcon = ({
   active,
@@ -43,7 +22,15 @@ const renderIcon = ({
     return null;
   }
 
-  return active ? <CloseIcon /> : <OpenIcon />;
+  return active ? (
+    <IconFilledArrowDropDown
+      overrides={{size: 'iconSize010', stylePreset: 'arrowIcon'}}
+    />
+  ) : (
+    <IconFilledArrowDropUp
+      overrides={{size: 'iconSize010', stylePreset: 'arrowIcon'}}
+    />
+  );
 };
 
 const getToggledId = (path: string, id: string, level: number) => {

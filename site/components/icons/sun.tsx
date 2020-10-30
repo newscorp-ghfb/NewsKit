@@ -1,8 +1,8 @@
-import * as React from 'react';
-import {Svg} from 'newskit';
+import React from 'react';
+import {Svg, SvgProps, toNewsKitIcon, withDefaultProps} from 'newskit';
 
-const SunIcon: React.FC = () => (
-  <Svg size="iconSize020" viewBox="0 0 24 24" title="sun icon">
+const Sun: React.FC<SvgProps> = props => (
+  <Svg {...props} viewBox="0 0 24 24">
     <path
       fill="#0A68C1"
       fillRule="nonzero"
@@ -11,4 +11,9 @@ const SunIcon: React.FC = () => (
   </Svg>
 );
 
-export default SunIcon;
+Sun.displayName = 'SunIcon';
+
+export const SunIcon = withDefaultProps(toNewsKitIcon(Sun), {
+  title: 'Sun icon',
+  overrides: {size: 'iconSize020'},
+});

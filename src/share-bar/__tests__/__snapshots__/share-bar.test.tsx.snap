@@ -52,12 +52,23 @@ exports[`ShareBar renders horizontally with icons and label 1`] = `
 }
 
 .emotion-1 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #1877f2;
+  vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-1.emotion-1 {
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-3 {
+  fill: #1da1f2;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-3.emotion-3 {
   width: 48px;
   height: 48px;
 }
@@ -107,15 +118,12 @@ exports[`ShareBar renders horizontally with icons and label 1`] = `
         class="emotion-2"
       >
         <svg
-          aria-labelledby="mock-nk-1"
+          aria-hidden="true"
           class="emotion-1"
+          fill="currentColor"
           viewBox="0 0 1365.3333 1365.3333"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <title
-            id="mock-nk-1"
-          >
-            Facebook icon
-          </title>
           <g
             transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
           >
@@ -138,15 +146,12 @@ exports[`ShareBar renders horizontally with icons and label 1`] = `
         class="emotion-2"
       >
         <svg
-          aria-labelledby="mock-nk-1"
-          class="emotion-1"
+          aria-hidden="true"
+          class="emotion-3"
+          fill="currentColor"
           viewBox="0 0 400 400"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <title
-            id="mock-nk-1"
-          >
-            Twitter logo
-          </title>
           <g>
             <circle
               cx="200"
@@ -225,12 +230,23 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
 }
 
 .emotion-1 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #1877f2;
+  vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-1.emotion-1 {
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-5 {
+  fill: #1da1f2;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-5.emotion-5 {
   width: 48px;
   height: 48px;
 }
@@ -351,15 +367,12 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-nk-1"
+              aria-hidden="true"
               class="emotion-1"
+              fill="currentColor"
               viewBox="0 0 1365.3333 1365.3333"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                Facebook icon
-              </title>
               <g
                 transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
               >
@@ -391,15 +404,12 @@ exports[`ShareBar renders horizontally with icons as links and label 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-1"
+              aria-hidden="true"
+              class="emotion-5"
+              fill="currentColor"
               viewBox="0 0 400 400"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                Twitter logo
-              </title>
               <g>
                 <circle
                   cx="200"
@@ -480,12 +490,23 @@ exports[`ShareBar renders horizontally with twitter and facebook icons 1`] = `
 }
 
 .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #1877f2;
+  vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-0.emotion-0 {
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-2 {
+  fill: #1da1f2;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-2.emotion-2 {
   width: 48px;
   height: 48px;
 }
@@ -501,15 +522,12 @@ exports[`ShareBar renders horizontally with twitter and facebook icons 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="mock-nk-1"
+          aria-hidden="true"
           class="emotion-0"
+          fill="currentColor"
           viewBox="0 0 1365.3333 1365.3333"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <title
-            id="mock-nk-1"
-          >
-            Facebook icon
-          </title>
           <g
             transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
           >
@@ -532,15 +550,12 @@ exports[`ShareBar renders horizontally with twitter and facebook icons 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="mock-nk-1"
-          class="emotion-0"
+          aria-hidden="true"
+          class="emotion-2"
+          fill="currentColor"
           viewBox="0 0 400 400"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <title
-            id="mock-nk-1"
-          >
-            Twitter logo
-          </title>
           <g>
             <circle
               cx="200"
@@ -570,12 +585,23 @@ exports[`ShareBar renders horizontally with twitter and facebook icons 1`] = `
 exports[`ShareBar renders vertically with icons and label 1`] = `
 <DocumentFragment>
   .emotion-1 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #1877f2;
+  vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-1.emotion-1 {
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-3 {
+  fill: #1da1f2;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-3.emotion-3 {
   width: 48px;
   height: 48px;
 }
@@ -674,15 +700,12 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
         class="emotion-2"
       >
         <svg
-          aria-labelledby="mock-nk-1"
+          aria-hidden="true"
           class="emotion-1"
+          fill="currentColor"
           viewBox="0 0 1365.3333 1365.3333"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <title
-            id="mock-nk-1"
-          >
-            Facebook icon
-          </title>
           <g
             transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
           >
@@ -705,15 +728,12 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
         class="emotion-2"
       >
         <svg
-          aria-labelledby="mock-nk-1"
-          class="emotion-1"
+          aria-hidden="true"
+          class="emotion-3"
+          fill="currentColor"
           viewBox="0 0 400 400"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <title
-            id="mock-nk-1"
-          >
-            Twitter logo
-          </title>
           <g>
             <circle
               cx="200"
@@ -743,12 +763,23 @@ exports[`ShareBar renders vertically with icons and label 1`] = `
 exports[`ShareBar renders vertically with twitter and facebook icons 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #1877f2;
+  vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-0.emotion-0 {
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-2 {
+  fill: #1da1f2;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-2.emotion-2 {
   width: 48px;
   height: 48px;
 }
@@ -813,15 +844,12 @@ exports[`ShareBar renders vertically with twitter and facebook icons 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="mock-nk-1"
+          aria-hidden="true"
           class="emotion-0"
+          fill="currentColor"
           viewBox="0 0 1365.3333 1365.3333"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <title
-            id="mock-nk-1"
-          >
-            Facebook icon
-          </title>
           <g
             transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
           >
@@ -844,15 +872,12 @@ exports[`ShareBar renders vertically with twitter and facebook icons 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="mock-nk-1"
-          class="emotion-0"
+          aria-hidden="true"
+          class="emotion-2"
+          fill="currentColor"
           viewBox="0 0 400 400"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <title
-            id="mock-nk-1"
-          >
-            Twitter logo
-          </title>
           <g>
             <circle
               cx="200"
@@ -931,12 +956,23 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 }
 
 .emotion-1 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #1877f2;
+  vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-1.emotion-1 {
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-5 {
+  fill: #1da1f2;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-5.emotion-5 {
   width: 48px;
   height: 48px;
 }
@@ -1178,15 +1214,12 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-nk-1"
+              aria-hidden="true"
               class="emotion-1"
+              fill="currentColor"
               viewBox="0 0 1365.3333 1365.3333"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                Facebook icon
-              </title>
               <g
                 transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
               >
@@ -1218,15 +1251,12 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-1"
+              aria-hidden="true"
+              class="emotion-5"
+              fill="currentColor"
               viewBox="0 0 400 400"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                Twitter logo
-              </title>
               <g>
                 <circle
                   cx="200"
@@ -1334,12 +1364,23 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 }
 
 .emotion-1 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #1877f2;
+  vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-1.emotion-1 {
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-5 {
+  fill: #1da1f2;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-5.emotion-5 {
   width: 48px;
   height: 48px;
 }
@@ -1605,15 +1646,12 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-nk-1"
+              aria-hidden="true"
               class="emotion-1"
+              fill="currentColor"
               viewBox="0 0 1365.3333 1365.3333"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                Facebook icon
-              </title>
               <g
                 transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
               >
@@ -1645,15 +1683,12 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-1"
+              aria-hidden="true"
+              class="emotion-5"
+              fill="currentColor"
               viewBox="0 0 400 400"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                Twitter logo
-              </title>
               <g>
                 <circle
                   cx="200"
@@ -1761,12 +1796,23 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 }
 
 .emotion-1 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #1877f2;
+  vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-1.emotion-1 {
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-5 {
+  fill: #1da1f2;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-5.emotion-5 {
   width: 48px;
   height: 48px;
 }
@@ -2008,15 +2054,12 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-nk-1"
+              aria-hidden="true"
               class="emotion-1"
+              fill="currentColor"
               viewBox="0 0 1365.3333 1365.3333"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                Facebook icon
-              </title>
               <g
                 transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
               >
@@ -2048,15 +2091,12 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-1"
+              aria-hidden="true"
+              class="emotion-5"
+              fill="currentColor"
               viewBox="0 0 400 400"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                Twitter logo
-              </title>
               <g>
                 <circle
                   cx="200"
@@ -2164,12 +2204,23 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 }
 
 .emotion-1 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #1877f2;
+  vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-1.emotion-1 {
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-5 {
+  fill: #1da1f2;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-5.emotion-5 {
   width: 48px;
   height: 48px;
 }
@@ -2411,15 +2462,12 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-nk-1"
+              aria-hidden="true"
               class="emotion-1"
+              fill="currentColor"
               viewBox="0 0 1365.3333 1365.3333"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                Facebook icon
-              </title>
               <g
                 transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
               >
@@ -2451,15 +2499,12 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-1"
+              aria-hidden="true"
+              class="emotion-5"
+              fill="currentColor"
               viewBox="0 0 400 400"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                Twitter logo
-              </title>
               <g>
                 <circle
                   cx="200"
@@ -2580,12 +2625,23 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 }
 
 .emotion-1 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #1877f2;
+  vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-1.emotion-1 {
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-5 {
+  fill: #1da1f2;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-5.emotion-5 {
   width: 48px;
   height: 48px;
 }
@@ -2876,15 +2932,12 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-nk-1"
+              aria-hidden="true"
               class="emotion-1"
+              fill="currentColor"
               viewBox="0 0 1365.3333 1365.3333"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                Facebook icon
-              </title>
               <g
                 transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
               >
@@ -2916,15 +2969,12 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-1"
+              aria-hidden="true"
+              class="emotion-5"
+              fill="currentColor"
               viewBox="0 0 400 400"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                Twitter logo
-              </title>
               <g>
                 <circle
                   cx="200"
@@ -2992,12 +3042,23 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 }
 
 .emotion-1 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #1877f2;
+  vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-1.emotion-1 {
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-5 {
+  fill: #1da1f2;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-5.emotion-5 {
   width: 48px;
   height: 48px;
 }
@@ -3288,15 +3349,12 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-nk-1"
+              aria-hidden="true"
               class="emotion-1"
+              fill="currentColor"
               viewBox="0 0 1365.3333 1365.3333"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                Facebook icon
-              </title>
               <g
                 transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
               >
@@ -3328,15 +3386,12 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-1"
+              aria-hidden="true"
+              class="emotion-5"
+              fill="currentColor"
               viewBox="0 0 400 400"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                Twitter logo
-              </title>
               <g>
                 <circle
                   cx="200"
@@ -3404,12 +3459,23 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 }
 
 .emotion-1 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  fill: #1877f2;
+  vertical-align: unset;
   display: inline-block;
 }
 
 .emotion-1.emotion-1 {
+  width: 48px;
+  height: 48px;
+}
+
+.emotion-5 {
+  fill: #1da1f2;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-5.emotion-5 {
   width: 48px;
   height: 48px;
 }
@@ -3700,15 +3766,12 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-nk-1"
+              aria-hidden="true"
               class="emotion-1"
+              fill="currentColor"
               viewBox="0 0 1365.3333 1365.3333"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                Facebook icon
-              </title>
               <g
                 transform="matrix(1.3333333,0,0,-1.3333333,0,1365.3333)"
               >
@@ -3740,15 +3803,12 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
             class="emotion-2"
           >
             <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-1"
+              aria-hidden="true"
+              class="emotion-5"
+              fill="currentColor"
               viewBox="0 0 400 400"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                Twitter logo
-              </title>
               <g>
                 <circle
                   cx="200"

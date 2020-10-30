@@ -1,10 +1,10 @@
 import React from 'react';
-import {Button, ButtonSize, ButtonProps} from '../button';
+import {Button, ButtonSize, IconButtonProps} from '../button';
 
 import {useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 
-export const IconButton: React.FC<ButtonProps> = ({
+export const IconButton: React.FC<IconButtonProps> = ({
   overrides = {},
   ...props
 }) => {

@@ -2,7 +2,7 @@ import React from 'react';
 import {getMotionFromTheme, styled, getStylePreset} from '../utils/style';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
 import {LinkProps} from './types';
-import {Launch} from '../icons/filled/custom/launch';
+import {IconFilledLaunch} from '../icons';
 import {Stack} from '../stack/stack';
 import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';
@@ -101,7 +101,10 @@ export const Link: React.FC<LinkProps> = props => {
         )}
 
         {willRenderExternalIcon && (
-          <Launch size={externalIconSize} title="External link" />
+          <IconFilledLaunch
+            title="External link"
+            overrides={{size: externalIconSize}}
+          />
         )}
       </Stack>
     </StyledLink>

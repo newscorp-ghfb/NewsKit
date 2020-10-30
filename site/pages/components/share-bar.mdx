@@ -2,7 +2,7 @@ import Playground from '../../components/playground';
 import Prop from '../../components/prop';
 import {LegacyBlock} from '../../components/legacy-block';
 import Layout from '../../components/layout';
-import {Twitter, Facebook, ShareBar, ButtonSize, IconButton} from 'newskit';
+import {IconFilledTwitter, IconFilledFacebook, ShareBar, ButtonSize, IconButton} from 'newskit';
 import {CodeFromDefaultPresets} from '../../components/code';
 
 export default Layout;
@@ -56,14 +56,16 @@ A share bar can be used anywhere a user would like to easily share something wit
       <IconButton
         size={ButtonSize.Large}
         overrides={{stylePreset: 'buttonSocialTwitter'}}
+        aria-label="Share on Twitter"
       >
-        <Twitter />
+        <IconFilledTwitter />
       </IconButton>
       <IconButton
         size={ButtonSize.Large}
         overrides={{stylePreset: 'buttonSocialFacebook'}}
+        aria-label="Share on Facebook"
       >
-        <Facebook />
+        <IconFilledFacebook />
       </IconButton>
     </ShareBar>
   )}

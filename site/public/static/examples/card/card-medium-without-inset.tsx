@@ -40,7 +40,7 @@ export const CardMediumWithoutInset = () => (
                 typographyPreset: cardLabelMediumTypographyPreset,
               }}
             >
-              <Picture />
+              <IconFilledImage />
               IMAGE
             </Flag>
           </Block>

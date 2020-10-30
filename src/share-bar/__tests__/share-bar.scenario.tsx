@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import {ShareBar} from '..';
 import {StorybookSubHeading} from '../../test/storybook-comps';
-import {Facebook, Twitter} from '../../icons';
+import {IconFilledFacebook, IconFilledTwitter} from '../../icons';
 import {Button, ButtonSize} from '../../button';
 import {IconButton} from '../../icon-button';
 import {createTheme, ThemeProvider} from '../../theme';
@@ -34,6 +34,30 @@ const myCustomTheme = createTheme({
   },
 });
 
+const ShareOnTwitterBtn = () => (
+  <IconButton
+    aria-label="Share on Twitter"
+    size={ButtonSize.Large}
+    overrides={{
+      stylePreset: 'buttonSocialTwitter',
+    }}
+  >
+    <IconFilledTwitter />
+  </IconButton>
+);
+
+const ShareOnFacebookBtn = () => (
+  <IconButton
+    aria-label="Share on Facebook"
+    size={ButtonSize.Large}
+    overrides={{
+      stylePreset: 'buttonSocialFacebook',
+    }}
+  >
+    <IconFilledFacebook />
+  </IconButton>
+);
+
 export default {
   name: 'share-bar',
   children: [
@@ -46,64 +70,22 @@ export default {
             Share bar with horizontal items
           </StorybookSubHeading>
           <ShareBar>
-            <IconButton
-              size={ButtonSize.Large}
-              overrides={{
-                stylePreset: 'buttonSocialTwitter',
-              }}
-            >
-              <Twitter />
-            </IconButton>
-            <IconButton
-              size={ButtonSize.Large}
-              overrides={{
-                stylePreset: 'buttonSocialFacebook',
-              }}
-            >
-              <Facebook />
-            </IconButton>
+            <ShareOnTwitterBtn />
+            <ShareOnFacebookBtn />
           </ShareBar>
           <StorybookSubHeading>
             Share bar with horizontal items and label
           </StorybookSubHeading>
           <ShareBar label="Share">
-            <IconButton
-              size={ButtonSize.Large}
-              overrides={{
-                stylePreset: 'buttonSocialTwitter',
-              }}
-            >
-              <Twitter />
-            </IconButton>
-            <IconButton
-              size={ButtonSize.Large}
-              overrides={{
-                stylePreset: 'buttonSocialFacebook',
-              }}
-            >
-              <Facebook />
-            </IconButton>
+            <ShareOnTwitterBtn />
+            <ShareOnFacebookBtn />
           </ShareBar>
           <StorybookSubHeading>
             Share bar with horizontal items label and button
           </StorybookSubHeading>
           <ShareBar label="Share">
-            <IconButton
-              size={ButtonSize.Large}
-              overrides={{
-                stylePreset: 'buttonSocialTwitter',
-              }}
-            >
-              <Twitter />
-            </IconButton>
-            <IconButton
-              size={ButtonSize.Large}
-              overrides={{
-                stylePreset: 'buttonSocialFacebook',
-              }}
-            >
-              <Facebook />
-            </IconButton>
+            <ShareOnTwitterBtn />
+            <ShareOnFacebookBtn />
             <Button>More options</Button>
           </ShareBar>
           <StorybookSubHeading>
@@ -126,20 +108,22 @@ export default {
               }}
             >
               <IconButton
+                aria-label="Share on Twitter"
                 size={ButtonSize.Large}
                 overrides={{
                   stylePreset: 'customIconButtonPreset',
                 }}
               >
-                <Twitter />
+                <IconFilledTwitter />
               </IconButton>
               <IconButton
+                aria-label="Share on Facebook"
                 size={ButtonSize.Large}
                 overrides={{
                   stylePreset: 'customIconButtonPreset',
                 }}
               >
-                <Facebook />
+                <IconFilledFacebook />
               </IconButton>
               <Button>More options</Button>
             </ShareBar>
@@ -156,64 +140,22 @@ export default {
             Share bar with vertical items
           </StorybookSubHeading>
           <ShareBar vertical>
-            <IconButton
-              size={ButtonSize.Large}
-              overrides={{
-                stylePreset: 'buttonSocialTwitter',
-              }}
-            >
-              <Twitter />
-            </IconButton>
-            <IconButton
-              size={ButtonSize.Large}
-              overrides={{
-                stylePreset: 'buttonSocialFacebook',
-              }}
-            >
-              <Facebook />
-            </IconButton>
+            <ShareOnTwitterBtn />
+            <ShareOnFacebookBtn />
           </ShareBar>
           <StorybookSubHeading>
             Share bar with vertical items and label
           </StorybookSubHeading>
           <ShareBar vertical label="Share">
-            <IconButton
-              size={ButtonSize.Large}
-              overrides={{
-                stylePreset: 'buttonSocialTwitter',
-              }}
-            >
-              <Twitter />
-            </IconButton>
-            <IconButton
-              size={ButtonSize.Large}
-              overrides={{
-                stylePreset: 'buttonSocialFacebook',
-              }}
-            >
-              <Facebook />
-            </IconButton>
+            <ShareOnTwitterBtn />
+            <ShareOnFacebookBtn />
           </ShareBar>
           <StorybookSubHeading>
             Share bar with vertical items, label and a button
           </StorybookSubHeading>
           <ShareBar vertical label="Share">
-            <IconButton
-              size={ButtonSize.Large}
-              overrides={{
-                stylePreset: 'buttonSocialTwitter',
-              }}
-            >
-              <Twitter />
-            </IconButton>
-            <IconButton
-              size={ButtonSize.Large}
-              overrides={{
-                stylePreset: 'buttonSocialFacebook',
-              }}
-            >
-              <Facebook />
-            </IconButton>
+            <ShareOnTwitterBtn />
+            <ShareOnFacebookBtn />
             <Button>More options</Button>
           </ShareBar>
         </React.Fragment>

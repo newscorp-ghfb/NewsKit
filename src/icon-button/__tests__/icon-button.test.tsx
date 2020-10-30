@@ -2,11 +2,11 @@ import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {IconButton} from '..';
 import {ButtonProps, ButtonSize} from '../../button';
-import {Email} from '../../icons/filled/custom/email';
+import {IconFilledEmail} from '../../icons';
 
 const renderIconButton = (props: ButtonProps) => (
-  <IconButton {...props}>
-    <Email />
+  <IconButton aria-label="Test icon button" {...props}>
+    <IconFilledEmail />
   </IconButton>
 );
 

@@ -14,3 +14,7 @@ export interface ButtonProps
   size?: ButtonSize;
   isLoading?: boolean;
 }
+
+export interface IconButtonProps extends ButtonProps {
+  'aria-label': string;
+}

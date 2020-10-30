@@ -17,7 +17,7 @@ import {
   Stack,
   StackChild,
   AlignSelfValues,
-  Circle,
+  IconFilledCircle,
 } from 'newskit';
 
 export default Layout;
@@ -111,19 +111,19 @@ It will provide us with the following structure:
 
 <StyledBlockForDivider>
   <Block overrides={{spaceStack: 'space020'}}>
-    <Circle size="iconSize040" />
+    <IconFilledCircle overrides={{size: 'iconSize040'}} />
   </Block>
   <Block overrides={{spaceStack: 'space020'}}>
     <Divider />
   </Block>
   <Block overrides={{spaceStack: 'space020'}}>
-    <Circle size="iconSize040" />
+    <IconFilledCircle overrides={{size: 'iconSize040'}} />
   </Block>
   <Block overrides={{spaceStack: 'space020'}}>
     <Divider />
   </Block>
   <Block>
-    <Circle size="iconSize040" />
+    <IconFilledCircle overrides={{size: 'iconSize040'}} />
   </Block>
 </StyledBlockForDivider>
 
@@ -136,19 +136,19 @@ The example will look like this:
 
 <Block>
   <InlineBlock overrides={{spaceInline: 'space020'}}>
-    <Circle size="iconSize040" />
+    <IconFilledCircle overrides={{size: 'iconSize040'}} />
   </InlineBlock>
   <InlineDividerContainer overrides={{spaceInline: 'space020'}}>
     <Divider vertical />
   </InlineDividerContainer>
   <InlineBlock overrides={{spaceInline: 'space020'}}>
-    <Circle size="iconSize040" />
+    <IconFilledCircle overrides={{size: 'iconSize040'}} />
   </InlineBlock>
   <InlineDividerContainer overrides={{spaceInline: 'space020'}}>
     <Divider vertical />
   </InlineDividerContainer>
   <InlineBlock>
-    <Circle size="iconSize040" />
+    <IconFilledCircle overrides={{size: 'iconSize040'}} />
   </InlineBlock>
 </Block>
 
@@ -163,15 +163,15 @@ that has a property `alignSelf={AlignSelfValues.Stretch}` passed to it.
 This way the divider will automatically stretch to the size of the Stack container.
 
 <Stack flow="horizontal-center" stackDistribution="center" space="sizing030">
-  <Circle size="iconSize040" />
+  <IconFilledCircle overrides={{size: 'iconSize040'}} />
   <StackChild alignSelf={AlignSelfValues.Stretch}>
     <Divider vertical />
   </StackChild>
-  <Circle size="iconSize040" />
+  <IconFilledCircle overrides={{size: 'iconSize040'}} />
   <StackChild alignSelf={AlignSelfValues.Stretch}>
     <Divider vertical />
   </StackChild>
-  <Circle size="iconSize040" />
+  <IconFilledCircle overrides={{size: 'iconSize040'}} />
 </Stack>
 
 The same approach can be applied when using a horizontal `Divider` inside a vertical `Stack` layout.

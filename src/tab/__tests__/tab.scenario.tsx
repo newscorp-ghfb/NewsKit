@@ -8,7 +8,7 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
-import {Pause, Email, IconFilledLink} from '../../icons';
+import {IconFilledPause, IconFilledEmail, IconFilledLink} from '../../icons';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
 import {TabGroup, TabPane} from '../../tab-group';
 import {getSSRId} from '../../utils/get-ssr-id';
@@ -171,7 +171,7 @@ export default {
       component: () => (
         <React.Fragment>
           <StorybookHeading>Tab - Icon</StorybookHeading>
-          {[Pause, Email, IconFilledLink].map(IconType => (
+          {[IconFilledPause, IconFilledEmail, IconFilledLink].map(IconType => (
             <Spacer key={getSSRId()}>
               <Stack
                 flow="horizontal-center"
@@ -195,7 +195,7 @@ export default {
       component: () => (
         <React.Fragment>
           <StorybookHeading>Tab - Icon and Label</StorybookHeading>
-          {[Pause, Email, IconFilledLink].map(IconType => (
+          {[IconFilledPause, IconFilledEmail, IconFilledLink].map(IconType => (
             <Spacer key={getSSRId()}>
               <Stack
                 flow="horizontal-center"
@@ -240,9 +240,9 @@ export default {
                     spaceInline: 'sizing030',
                   }}
                 >
-                  <Email />
+                  <IconFilledEmail />
                   Tab Label
-                  <Email size="iconSize040" />
+                  <IconFilledEmail overrides={{size: 'iconSize040'}} />
                 </Tab>
               </Stack>
             </ThemeProvider>
@@ -266,9 +266,9 @@ export default {
                 spaceInline="sizing060"
               >
                 <Tab isSelected ariaLabel="tab label">
-                  <Email />
+                  <IconFilledEmail />
                   Tab Label
-                  <Email size="iconSize040" />
+                  <IconFilledEmail overrides={{size: 'iconSize040'}} />
                 </Tab>
               </Stack>
             </ThemeProvider>
@@ -290,9 +290,9 @@ export default {
                     iconSize: 'iconSize030',
                   }}
                 >
-                  <Email />
+                  <IconFilledEmail />
                   Tab Label
-                  <Email size="iconSize040" />
+                  <IconFilledEmail overrides={{size: 'iconSize040'}} />
                 </Tab>
               </Stack>
             </ThemeProvider>
@@ -341,64 +341,64 @@ export default {
           </TabGroup>
           <StorybookSubHeading>Icon Only</StorybookSubHeading>
           <TabGroup size={TabSize.Medium} divider>
-            <Tab tabKey={1}>
-              <Email />
+            <Tab aria-label="tab label" tabKey={1}>
+              <IconFilledEmail />
             </Tab>
-            <Tab tabKey={2}>
-              <Email />
+            <Tab aria-label="tab label" tabKey={2}>
+              <IconFilledEmail />
             </Tab>
-            <Tab tabKey={3}>
-              <Email />
+            <Tab aria-label="tab label" tabKey={3}>
+              <IconFilledEmail />
             </Tab>
           </TabGroup>
           <StorybookSubHeading>Leading Icon and Label</StorybookSubHeading>
           <TabGroup size={TabSize.Medium} divider>
-            <Tab tabKey={1}>
-              <Email />
+            <Tab aria-label="tab label" tabKey={1}>
+              <IconFilledEmail />
               Medium tab
             </Tab>
-            <Tab tabKey={2}>
-              <Email />
+            <Tab aria-label="tab label" tabKey={2}>
+              <IconFilledEmail />
               Medium tab
             </Tab>
-            <Tab tabKey={3}>
-              <Email />
+            <Tab aria-label="tab label" tabKey={3}>
+              <IconFilledEmail />
               Medium tab
             </Tab>
           </TabGroup>
           <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
           <TabGroup size={TabSize.Medium} divider>
-            <Tab tabKey={1}>
+            <Tab aria-label="tab label" tabKey={1}>
               Medium tab
-              <Email />
+              <IconFilledEmail />
             </Tab>
-            <Tab tabKey={2}>
+            <Tab aria-label="tab label" tabKey={2}>
               Medium tab
-              <Email />
+              <IconFilledEmail />
             </Tab>
-            <Tab tabKey={3}>
+            <Tab aria-label="tab label" tabKey={3}>
               Medium tab
-              <Email />
+              <IconFilledEmail />
             </Tab>
           </TabGroup>
           <StorybookSubHeading>
             Leading and Trailing Icon and Label
           </StorybookSubHeading>
           <TabGroup size={TabSize.Medium} divider>
-            <Tab tabKey={1}>
-              <Email />
+            <Tab aria-label="tab label" tabKey={1}>
+              <IconFilledEmail />
               Medium tab
-              <Email />
+              <IconFilledEmail />
             </Tab>
-            <Tab tabKey={2}>
-              <Email />
+            <Tab aria-label="tab label" tabKey={2}>
+              <IconFilledEmail />
               Medium tab
-              <Email />
+              <IconFilledEmail />
             </Tab>
-            <Tab tabKey={3}>
-              <Email />
+            <Tab aria-label="tab label" tabKey={3}>
+              <IconFilledEmail />
               Medium tab
-              <Email />
+              <IconFilledEmail />
             </Tab>
           </TabGroup>
         </React.Fragment>
@@ -449,14 +449,14 @@ export default {
           </TabGroup>
           <StorybookSubHeading>Icon Only</StorybookSubHeading>
           <TabGroup size={TabSize.Medium} vertical divider>
-            <Tab tabKey={1}>
-              <Email />
+            <Tab ariaLabel="tab label" tabKey={1}>
+              <IconFilledEmail />
             </Tab>
-            <Tab tabKey={2}>
-              <Email />
+            <Tab ariaLabel="tab label" tabKey={2}>
+              <IconFilledEmail />
             </Tab>
-            <Tab tabKey={3}>
-              <Email />
+            <Tab ariaLabel="tab label" tabKey={3}>
+              <IconFilledEmail />
             </Tab>
           </TabGroup>
         </React.Fragment>
@@ -473,51 +473,51 @@ export default {
           <StorybookSubHeading>Leading Icon and Label</StorybookSubHeading>
           <TabGroup size={TabSize.Medium} vertical divider>
             <Tab tabKey={1}>
-              <Email />
+              <IconFilledEmail />
               Medium tab
             </Tab>
             <Tab tabKey={2}>
-              <Email />
+              <IconFilledEmail />
               Medium tab
             </Tab>
             <Tab tabKey={3}>
-              <Email />
+              <IconFilledEmail />
               Medium tab
             </Tab>
           </TabGroup>
           <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
           <TabGroup size={TabSize.Medium} vertical divider>
-            <Tab tabKey={1}>
+            <Tab aria-label="tab label" tabKey={1}>
               Medium tab
-              <Email />
+              <IconFilledEmail />
             </Tab>
-            <Tab tabKey={2}>
+            <Tab aria-label="tab label" tabKey={2}>
               Medium tab
-              <Email />
+              <IconFilledEmail />
             </Tab>
-            <Tab tabKey={3}>
+            <Tab aria-label="tab label" tabKey={3}>
               Medium tab
-              <Email />
+              <IconFilledEmail />
             </Tab>
           </TabGroup>
           <StorybookSubHeading>
             Leading and Trailing Icon and Label
           </StorybookSubHeading>
           <TabGroup size={TabSize.Medium} vertical divider>
-            <Tab tabKey={1}>
-              <Email />
+            <Tab aria-label="tab label" tabKey={1}>
+              <IconFilledEmail />
               Medium tab
-              <Email />
+              <IconFilledEmail />
             </Tab>
-            <Tab tabKey={2}>
-              <Email />
+            <Tab aria-label="tab label" tabKey={2}>
+              <IconFilledEmail />
               Medium tab
-              <Email />
+              <IconFilledEmail />
             </Tab>
-            <Tab tabKey={3}>
-              <Email />
+            <Tab aria-label="tab label" tabKey={3}>
+              <IconFilledEmail />
               Medium tab
-              <Email />
+              <IconFilledEmail />
             </Tab>
           </TabGroup>
         </React.Fragment>

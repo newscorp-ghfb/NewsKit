@@ -40,7 +40,7 @@ export const CardSmallWithInset = () => (
                 typographyPreset: cardLabelSmallTypographyPreset,
               }}
             >
-              <Picture />
+              <IconFilledImage />
               IMAGE
             </Flag>
           </Block>

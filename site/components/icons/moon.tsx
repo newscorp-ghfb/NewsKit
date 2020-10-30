@@ -1,8 +1,8 @@
-import * as React from 'react';
-import {Svg} from 'newskit';
+import React from 'react';
+import {Svg, SvgProps, toNewsKitIcon, withDefaultProps} from 'newskit';
 
-const MoonIcon: React.FC = () => (
-  <Svg size="iconSize020" viewBox="0 0 24 24" title="moon icon">
+const Moon: React.FC<SvgProps> = props => (
+  <Svg {...props} viewBox="0 0 24 24">
     <path
       fill="#358CDE"
       fillRule="nonzero"
@@ -11,4 +11,9 @@ const MoonIcon: React.FC = () => (
   </Svg>
 );
 
-export default MoonIcon;
+Moon.displayName = 'MoonIcon';
+
+export const MoonIcon = withDefaultProps(toNewsKitIcon(Moon), {
+  title: 'Moon icon',
+  overrides: {size: 'iconSize020'},
+});

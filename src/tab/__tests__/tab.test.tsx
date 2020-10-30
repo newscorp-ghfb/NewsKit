@@ -1,14 +1,14 @@
 import React from 'react';
 import {Tab, TabProps, TabSize} from '..';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {Circle} from '../../icons/filled/custom/circle';
+import {IconFilledCircle} from '../../icons';
 import {createTheme, compileTheme} from '../../theme';
 
 const renderTabWithLabel = (props: TabProps) => <Tab {...props}>Tab Label</Tab>;
 
 const renderTabWithLabelAndIcon = (props: TabProps) => (
   <Tab {...props}>
-    <Circle />
+    <IconFilledCircle />
     Tab Label
   </Tab>
 );
@@ -16,7 +16,7 @@ const renderTabWithLabelAndIcon = (props: TabProps) => (
 const renderTabWithLabelAndTrailingIcon = (props: TabProps) => (
   <Tab {...props}>
     Tab Label
-    <Circle />
+    <IconFilledCircle />
   </Tab>
 );
 

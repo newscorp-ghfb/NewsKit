@@ -5,7 +5,7 @@ import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {Email} from '../../icons/filled/custom/email';
+import {IconFilledEmail} from '../../icons';
 import {createTheme, ThemeProvider} from '../../theme';
 
 const myCustomTheme = createTheme({
@@ -118,9 +118,9 @@ export default {
           <br />
           <br />
           <Link href="/">
-            <Email size="iconSize010" />
+            <IconFilledEmail overrides={{size: 'iconSize010'}} />
             Inline Link with leading and trailing icons
-            <Email size="iconSize010" />
+            <IconFilledEmail overrides={{size: 'iconSize010'}} />
           </Link>
           <br />
           <br />
@@ -130,9 +130,9 @@ export default {
               spaceInline: 'sizing030',
             }}
           >
-            <Email size="iconSize010" />
+            <IconFilledEmail overrides={{size: 'iconSize010'}} />
             Inline Link with leading and trailing icons and custom space
-            <Email size="iconSize010" />
+            <IconFilledEmail overrides={{size: 'iconSize010'}} />
           </Link>
           <br />
           <br />

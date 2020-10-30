@@ -5,7 +5,7 @@ import {
   renderWithTheme,
 } from '../../test/test-utils';
 import {Button, ButtonProps, ButtonSize} from '..';
-import {Email} from '../../icons/filled/custom/email';
+import {IconFilledEmail} from '../../icons';
 import {InstrumentationProvider, EventTrigger} from '../../instrumentation';
 
 const renderButtonWithText = (props: ButtonProps) => (
@@ -15,7 +15,7 @@ const renderButtonWithText = (props: ButtonProps) => (
 const renderButtonWithTextAndIcon = (props: ButtonProps) => (
   <Button {...props}>
     click this!
-    <Email />
+    <IconFilledEmail />
   </Button>
 );
 

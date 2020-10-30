@@ -3,7 +3,7 @@ import {RadioPlayer} from '..';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {styled} from '../../utils/style';
 import {Flag} from '../../flag';
-import {SaveInactive} from '../../icons/filled/custom/save-inactive';
+import {IconOutlinedStarOutline} from '../../icons';
 
 const CustomFlag = () => (
   <Flag
@@ -12,7 +12,7 @@ const CustomFlag = () => (
       stylePreset: 'flagMinimal',
     }}
   >
-    <SaveInactive />
+    <IconOutlinedStarOutline />
     Most Popular
   </Flag>
 );

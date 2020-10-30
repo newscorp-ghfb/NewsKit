@@ -8,20 +8,19 @@ import {
   getSizingFromTheme,
   getShadowFromTheme,
   getSpacingFromTheme,
+  getStylePresetFromTheme,
 } from 'newskit';
 import {ThemeColor} from './types';
 import {getTextColor, getBorderRadius} from './utils';
 
-export const BadgeContainer = styled.span`
+export const StyledBadgeContainer = styled.span`
   height: ${getSizingFromTheme('sizing060')};
 `;
 
 export const StyledAccessibilityBadge = styled(Flag)`
-  background-color: ${getColorFromTheme('interface010')};
-  border-radius: ${getBorderRadiusFromTheme('borderRadiusRounded010')};
-  color: ${getColorFromTheme('inkSubtle')};
   width: ${getSizingFromTheme('sizing070')};
   height: ${getSizingFromTheme('sizing060')};
+  ${getStylePresetFromTheme('swatchBadge')};
 `;
 
 export const StyledSwatchRow = styled.span<

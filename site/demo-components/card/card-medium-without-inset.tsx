@@ -9,7 +9,7 @@ import {
   Block,
   Headline,
   Flag,
-  Picture,
+  IconFilledImage,
   Tag,
   Stack,
   Flow,
@@ -75,7 +75,7 @@ export const CardMediumWithoutInset = () => (
                 typographyPreset: cardLabelMediumTypographyPreset,
               }}
             >
-              <Picture />
+              <IconFilledImage />
               IMAGE
             </Flag>
           </Block>

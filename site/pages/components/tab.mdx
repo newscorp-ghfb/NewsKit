@@ -4,7 +4,7 @@ import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {CodeFromDefaultPresets} from '../../components/code';
-import {Tab, TabSize, Email, Block, TabGroup, TabPane} from 'newskit';
+import {Tab, TabSize, IconFilledEmail, Block, TabGroup, TabPane} from 'newskit';
 
 export default Layout;
 
@@ -92,7 +92,7 @@ Tabs have a number of props to facilitate a variety of uses:
   component={state => (
     <Block role="tablist">
       <Tab {...state}>
-        <Email />
+        <IconFilledEmail />
         Item One
       </Tab>
     </Block>

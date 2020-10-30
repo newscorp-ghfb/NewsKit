@@ -9,7 +9,7 @@ import {
 import {Tab, TabSize} from '../../tab';
 import {TabGroup, TabPane} from '..';
 import {TabGroupProps} from '../types';
-import {Email} from '../../icons';
+import {IconFilledEmail} from '../../icons';
 
 import {createTheme, compileTheme} from '../../theme';
 
@@ -23,27 +23,27 @@ const tabsWithLabel = [
 
 const tabsWithIcons = [
   <Tab tabKey={1}>
-    <Email />
+    <IconFilledEmail />
   </Tab>,
   <Tab tabKey={2}>
-    <Email />
+    <IconFilledEmail />
   </Tab>,
   <Tab tabKey={3}>
-    <Email />
+    <IconFilledEmail />
   </Tab>,
 ];
 
 const tabsWithLabelAndIcons = [
   <Tab tabKey={1}>
-    <Email />
+    <IconFilledEmail />
     Medium tab
   </Tab>,
   <Tab tabKey={2}>
-    <Email />
+    <IconFilledEmail />
     Medium tab
   </Tab>,
   <Tab tabKey={3}>
-    <Email />
+    <IconFilledEmail />
     Medium tab
   </Tab>,
 ];

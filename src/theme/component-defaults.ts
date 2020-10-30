@@ -316,6 +316,9 @@ export const componentDefaults = {
       height: 'sizing090',
     },
   },
+  icons: {
+    stylePreset: 'iconDefault',
+  },
   image: {
     stylePreset: 'imageSharp',
     caption: {
@@ -567,8 +570,5 @@ export const componentDefaults = {
       iconSize: 'iconSize020',
       size: 'small',
     },
-  },
-  icons: {
-    stylePreset: 'iconDefault',
   },
 };

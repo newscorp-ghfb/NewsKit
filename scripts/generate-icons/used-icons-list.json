@@ -3,9 +3,31 @@
     "CheckCircle",
     "Error",
     "Link",
+    "Email",
+    "StarOutline",
+    "Mood",
+    "Launch",
+    "BookmarkBorder",
+    "Image",
+    "SkipPrevious",
+    "SkipNext",
     "VolumeOff",
+    "VolumeDown",
+    "VolumeUp",
+    "Pause",
+    "Stop",
+    "PlayArrow",
+    "Forward10",
+    "Replay10",
     "AccountBalance",
-    "AccountTree"
+    "AccountTree",
+    "Add",
+    "Remove",
+    "Menu",
+    "Search",
+    "Close",
+    "ArrowDropDown",
+    "ArrowDropUp"
   ]
 }
 

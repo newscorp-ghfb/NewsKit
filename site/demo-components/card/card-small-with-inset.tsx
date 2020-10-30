@@ -9,7 +9,7 @@ import {
   TextBlock,
   Headline,
   Flag,
-  Picture,
+  IconFilledImage,
   Stack,
   Flow,
   Tag,
@@ -75,7 +75,7 @@ export const CardSmallWithInset = () => (
                 typographyPreset: cardLabelSmallTypographyPreset,
               }}
             >
-              <Picture />
+              <IconFilledImage />
               IMAGE
             </Flag>
           </Block>

@@ -1927,6 +1927,36 @@ Object {
         "iconColor": "{{colors.inkPositive}}",
       },
     },
+    "iconSocialFacebook": Object {
+      "base": Object {
+        "iconColor": "{{colors.socialFacebook}}",
+      },
+    },
+    "iconSocialInstagram": Object {
+      "base": Object {
+        "iconColor": "{{colors.socialInstagram}}",
+      },
+    },
+    "iconSocialReddit": Object {
+      "base": Object {
+        "iconColor": "{{colors.socialReddit}}",
+      },
+    },
+    "iconSocialTwitter": Object {
+      "base": Object {
+        "iconColor": "{{colors.socialTwitter}}",
+      },
+    },
+    "iconSocialWhatsapp": Object {
+      "base": Object {
+        "iconColor": "{{colors.socialWhatsapp}}",
+      },
+    },
+    "iconSocialYoutube": Object {
+      "base": Object {
+        "iconColor": "{{colors.socialYoutube}}",
+      },
+    },
     "imageCircle": Object {
       "base": Object {
         "borderRadius": "{{borders.borderRadiusCircle}}",

@@ -80,7 +80,7 @@ const generateIcons = env => {
       'outlined/material',
       'IconOutlined',
     );
-  } else if (env === 'dev') {
+  } else {
     generateFiles(usedIcons, 'material', 'filled/material', 'IconFilled');
     generateFiles(
       usedIcons,
@@ -91,4 +91,4 @@ const generateIcons = env => {
   }
 };
 
-generateIcons(process.argv[2].replace('--', ''));
+generateIcons(process.argv[2] && process.argv[2].replace('--', ''));

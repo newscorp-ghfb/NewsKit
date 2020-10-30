@@ -259,6 +259,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
   overflow: hidden;
   fill: #d20600;
   vertical-align: unset;
+  display: inline-block;
 }
 
 .emotion-2.emotion-2 {
@@ -809,6 +810,7 @@ exports[`Form renders with error on blur 1`] = `
   overflow: hidden;
   fill: #d20600;
   vertical-align: unset;
+  display: inline-block;
 }
 
 .emotion-2.emotion-2 {
@@ -1233,6 +1235,7 @@ exports[`Form renders with error on submit 1`] = `
   overflow: hidden;
   fill: #d20600;
   vertical-align: unset;
+  display: inline-block;
 }
 
 .emotion-2.emotion-2 {
@@ -1783,6 +1786,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   overflow: hidden;
   fill: #d20600;
   vertical-align: unset;
+  display: inline-block;
 }
 
 .emotion-2.emotion-2 {
@@ -3311,6 +3315,7 @@ exports[`Form renders with valid state 1`] = `
   overflow: hidden;
   fill: #0a782a;
   vertical-align: unset;
+  display: inline-block;
 }
 
 .emotion-2.emotion-2 {

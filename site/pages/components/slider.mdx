@@ -6,7 +6,7 @@ import {CodeFromDefaultPresets} from '../../components/code';
 
 import {
   StatefulSlider,
-  Circle,
+  IconFilledCircle,
   styled,
   Heading1,
   LabelPosition,
@@ -86,7 +86,7 @@ NewsKit also exports a StatefulSlider component which has the same props (except
       content: {
         typographyPreset: 'editorialParagraph020',
       }
-    }} listItemMarker={Circle} children={[`LabelPosition.Inline - places the slider between the min/max labels`,
+    }} listItemMarker={IconFilledCircle} children={[`LabelPosition.Inline - places the slider between the min/max labels`,
       `LabelPosition.Before - places the min/max labels before the slider`,
       `LabelPosition.After - places the labels after the slider element.`]}>
     </UnorderedList>
@@ -237,7 +237,7 @@ Refer to the defaults below for the full object structure:
         },
         {
           label: 'Component',
-          value: withProps(Circle, {size: 'sizing040'}, 'MyLabelIcon'),
+          value: withProps(IconFilledCircle, {overrides:{size: 'sizing040'}}, 'MyLabelIcon'),
         },
       ],
     },
@@ -256,7 +256,7 @@ Refer to the defaults below for the full object structure:
         },
         {
           label: 'Component',
-          value: withProps(Circle, {size: 'sizing040'}, 'MyLabelIcon'),
+          value: withProps(IconFilledCircle, {overrides:{size: 'sizing040'}}, 'MyLabelIcon'),
         },
       ],
     },

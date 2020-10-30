@@ -2,7 +2,7 @@ import * as React from 'react';
 import {Button} from '..';
 import {styled} from '../../utils/style';
 import {ButtonSize} from '../types';
-import {Email} from '../../icons';
+import {IconFilledEmail} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
@@ -196,7 +196,11 @@ export default {
                     </Block>
 
                     <Block data-state="Loading">
-                      <Button overrides={{stylePreset}} isLoading>
+                      <Button
+                        aria-label="Loading"
+                        overrides={{stylePreset}}
+                        isLoading
+                      >
                         Button
                       </Button>
                     </Block>
@@ -253,7 +257,11 @@ export default {
                     </Block>
 
                     <Block data-state="Loading">
-                      <Button overrides={{stylePreset}} isLoading>
+                      <Button
+                        aria-label="Loading icon"
+                        overrides={{stylePreset}}
+                        isLoading
+                      >
                         Button
                       </Button>
                     </Block>
@@ -310,7 +318,11 @@ export default {
                     </Block>
 
                     <Block data-state="Loading">
-                      <Button overrides={{stylePreset}} isLoading>
+                      <Button
+                        aria-label="Loading icon"
+                        overrides={{stylePreset}}
+                        isLoading
+                      >
                         Button
                       </Button>
                     </Block>
@@ -366,7 +378,11 @@ export default {
                     </Block>
 
                     <Block data-state="Loading">
-                      <Button overrides={{stylePreset}} isLoading>
+                      <Button
+                        aria-label="Loading icon"
+                        overrides={{stylePreset}}
+                        isLoading
+                      >
                         Button
                       </Button>
                     </Block>
@@ -393,7 +409,7 @@ export default {
             >
               {buttonSizes.map(button => (
                 <Button size={button.buttonSize}>
-                  <Email />
+                  <IconFilledEmail />
                   Button
                 </Button>
               ))}
@@ -410,7 +426,7 @@ export default {
               {buttonSizes.map(button => (
                 <Button size={button.buttonSize}>
                   Button
-                  <Email />
+                  <IconFilledEmail />
                 </Button>
               ))}
             </Stack>
@@ -427,9 +443,9 @@ export default {
             >
               {buttonSizes.map(button => (
                 <Button size={button.buttonSize}>
-                  <Email />
+                  <IconFilledEmail />
                   Button
-                  <Email />
+                  <IconFilledEmail />
                 </Button>
               ))}
             </Stack>
@@ -448,10 +464,9 @@ export default {
           <Container>
             <Stack flow="horizontal-center" spaceInline="sizing060">
               <Button size={buttonSizes[0].buttonSize}>
-                <Email />
+                <IconFilledEmail />
                 Button
-                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
-                <Email size={buttonSizes[0].iconSize} />
+                <IconFilledEmail overrides={{size: buttonSizes[0].iconSize}} />
               </Button>
             </Stack>
           </Container>
@@ -464,10 +479,9 @@ export default {
                 size={buttonSizes[0].buttonSize}
                 overrides={{iconSize: 'iconSize030'}}
               >
-                <Email />
+                <IconFilledEmail />
                 Button
-                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
-                <Email size={buttonSizes[0].iconSize} />
+                <IconFilledEmail overrides={{size: buttonSizes[0].iconSize}} />
               </Button>
             </Stack>
           </Container>
@@ -490,7 +504,7 @@ export default {
                 } as any,
               }}
             >
-              Negative XS - Postive MD
+              Negative XS - Positive MD
             </Button>
           </Container>
         </React.Fragment>

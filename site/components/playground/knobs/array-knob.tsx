@@ -8,11 +8,12 @@ import {
   IconButton,
   Stack,
   Flow,
+  IconFilledRemove,
+  IconFilledAdd,
 } from 'newskit';
 import {LegacyBlock} from '../../legacy-block';
 import {KnobContainer, StyledTitle} from './common';
 import {InputKnob} from './input-knob';
-import {AddIcon, RemoveIcon} from '../../icons';
 
 type UpdateFunction = (
   index: number,
@@ -152,19 +153,21 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
                   disabled={arr.length < 2}
                   onClick={remove(i)}
                   data-testid={`${TEST_ID_PREFIX}-button-remove`}
+                  aria-label="Remove"
                 >
-                  <RemoveIcon />
+                  <IconFilledRemove />
                 </IconButton>
               </ButtonContainer>
             </Stack>
           ) : null;
         })}
         <IconButton
-          data-testid={`${TEST_ID_PREFIX}-button-add`}
           size={ButtonSize.Small}
           onClick={add}
+          data-testid={`${TEST_ID_PREFIX}-button-add`}
+          aria-label="Add"
         >
-          <AddIcon />
+          <IconFilledAdd />
         </IconButton>
       </LegacyBlock>
     </KnobContainer>

@@ -3,7 +3,11 @@ import {ButtonSize} from '../button';
 import {IconButton} from '../icon-button';
 import {VolumeControlProps} from './types';
 import {Slider} from '../slider';
-import {VolumeUp, VolumeDown, VolumeMute} from '../icons';
+import {
+  IconFilledVolumeUp,
+  IconFilledVolumeDown,
+  IconFilledVolumeOff,
+} from '../icons';
 import {useTheme} from '../theme';
 import {ScreenReaderOnly} from '../screen-reader-only/screen-reader-only';
 import {getSSRId} from '../utils/get-ssr-id';
@@ -35,6 +39,7 @@ const MuteButton: React.FC<MuteButtonProps> = ({
 }) => (
   <IconButton
     data-testid="mute-button"
+    aria-label={volume === 0 ? 'Unmute' : 'Mute'}
     tabIndex={-1}
     onClick={() => toggleMute(volume, unMutedVolume, onChange)}
     size={size}
@@ -43,7 +48,7 @@ const MuteButton: React.FC<MuteButtonProps> = ({
       iconSize,
     }}
   >
-    {volume === 0 ? <VolumeMute title="unmute" /> : <VolumeDown title="mute" />}
+    {volume === 0 ? <IconFilledVolumeOff /> : <IconFilledVolumeDown />}
   </IconButton>
 );
 
@@ -106,6 +111,7 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
     () => (
       <IconButton
         data-testid="volumeup-button"
+        aria-label="Volume up"
         tabIndex={-1}
         onClick={() => onChange(1)}
         size={buttonSize}
@@ -114,7 +120,7 @@ export const VolumeControl: React.FC<VolumeControlProps> = ({
           iconSize,
         }}
       >
-        <VolumeUp title="max volume" />
+        <IconFilledVolumeUp />
       </IconButton>
     ),
     [buttonSize, iconSize, onChange, volumeControlButtonStylePreset],

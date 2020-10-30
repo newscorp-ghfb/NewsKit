@@ -1,5 +1,5 @@
 import React from 'react';
-import {Popout} from '../../icons';
+import {IconFilledLaunch} from '../../icons';
 import {ButtonSize, ButtonProps} from '../../button';
 import {IconButton} from '../../icon-button';
 
@@ -16,6 +16,7 @@ export const PopoutButton: React.FC<PopoutButtonProps> = React.memo(props => {
       {...props}
       size={ButtonSize.Medium}
       data-testid="audio-player-popout"
+      aria-label="Open popout player"
       onClick={
         href || onClick
           ? () => {
@@ -29,7 +30,7 @@ export const PopoutButton: React.FC<PopoutButtonProps> = React.memo(props => {
           : undefined
       }
     >
-      <Popout size="iconSize020" focusable="false" title="open popout player" />
+      <IconFilledLaunch overrides={{size: 'iconSize020'}} />
     </IconButton>
   );
 });

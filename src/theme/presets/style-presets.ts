@@ -688,10 +688,41 @@ stylePresets.iconDefault = {
   },
 };
 
+stylePresets.iconSocialTwitter = {
+  base: {
+    iconColor: '{{colors.socialTwitter}}',
+  },
+};
+stylePresets.iconSocialFacebook = {
+  base: {
+    iconColor: '{{colors.socialFacebook}}',
+  },
+};
+stylePresets.iconSocialInstagram = {
+  base: {
+    iconColor: '{{colors.socialInstagram}}',
+  },
+};
+stylePresets.iconSocialYoutube = {
+  base: {
+    iconColor: '{{colors.socialYoutube}}',
+  },
+};
+stylePresets.iconSocialWhatsapp = {
+  base: {
+    iconColor: '{{colors.socialWhatsapp}}',
+  },
+};
+stylePresets.iconSocialReddit = {
+  base: {
+    iconColor: '{{colors.socialReddit}}',
+  },
+};
+
 stylePresets.buttonSocialTwitter = stylePresets.iconButtonMinimalSecondary;
 stylePresets.buttonSocialFacebook = stylePresets.iconButtonMinimalSecondary;
-stylePresets.buttonSocialEmail = stylePresets.iconButtonMinimalSecondary;
 stylePresets.buttonSocialWhatsapp = stylePresets.iconButtonMinimalSecondary;
+stylePresets.buttonSocialEmail = stylePresets.iconButtonMinimalSecondary;
 stylePresets.buttonSocialLink = stylePresets.iconButtonMinimalSecondary;
 stylePresets.buttonSocialShare = stylePresets.iconButtonMinimalSecondary;
 

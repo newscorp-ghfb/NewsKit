@@ -2,7 +2,7 @@
 
 exports[`Sidebar navigation collapses successfully at nested level 1`] = `
 <DocumentFragment>
-  .emotion-19 {
+  .emotion-22 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -15,1242 +15,21 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
   margin: 0;
 }
 
-.emotion-16 {
+.emotion-19 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
-}
-
-.emotion-2 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0 4px;
-}
-
-.emotion-2 .emotion-2,
-.emotion-2 .emotion-2 .emotion-2 {
-  padding-right: 0;
-}
-
-.emotion-1 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
-  box-sizing: border-box;
-  color: #535353;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.emotion-1:hover {
-  color: #2e2e2e;
-  background-color: #e6f4ff;
-}
-
-.emotion-1:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #0a68c1;
-}
-
-.emotion-1:focus svg polygon {
-  fill: #ffffff;
-}
-
-.emotion-1 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-1 a:visited {
-  color: #0a0a0a;
-}
-
-.emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  float: right;
-}
-
-.emotion-0.emotion-0 {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-7 {
-  display: inline-block;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #0a68c1;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-7 svg {
-  fill: #0a68c1;
-}
-
-.emotion-7:hover:not(:disabled) {
-  color: #02509b;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #02509b;
-}
-
-.emotion-7:active:not(:disabled) {
-  color: #01396e;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #01396e;
-}
-
-.emotion-7:visited:not(:disabled) {
-  color: #0a68c1;
-}
-
-.emotion-7:visited:not(:disabled) svg {
-  fill: #0a68c1;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-7 {
-    vertical-align: text-bottom;
-  }
-}
-
-.emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-<nav
-    aria-label="Sidebar"
-    class="emotion-19"
-    role="navigation"
-  >
-    <ul
-      class="emotion-16"
-      role="list"
-    >
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/group1"
-          tabindex="0"
-        >
-          Group 1
-          <svg
-            aria-labelledby="mock-nk-1"
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title
-              id="mock-nk-1"
-            >
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/group2"
-          tabindex="0"
-        >
-          Group 2
-          <svg
-            aria-labelledby="mock-nk-1"
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title
-              id="mock-nk-1"
-            >
-              open icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 14 12 9 17 14"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 14 12 9 17 14"
-              />
-            </g>
-          </svg>
-        </div>
-        <ul
-          class="emotion-16"
-          role="list"
-        >
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-7"
-              href="/group2/page1"
-            >
-              <span
-                class="emotion-6"
-              >
-                <div
-                  class="emotion-1"
-                  data-testid="/group2/page1"
-                  tabindex="-1"
-                >
-                  Group 2 Page 1
-                </div>
-              </span>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-7"
-              href="/group2/page2"
-            >
-              <span
-                class="emotion-6"
-              >
-                <div
-                  class="emotion-1"
-                  data-testid="/group2/page2"
-                  tabindex="-1"
-                >
-                  Group 2 Page 2
-                </div>
-              </span>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <div
-              class="emotion-1"
-              data-testid="/group2/group2b"
-              tabindex="0"
-            >
-              Group 2b
-              <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
-                viewBox="0 0 16 16"
-              >
-                <title
-                  id="mock-nk-1"
-                >
-                  close icon
-                </title>
-                <g
-                  fill="none"
-                >
-                  <mask
-                    fill="white"
-                  >
-                    <polygon
-                      points="7 10 12 15 17 10"
-                    />
-                  </mask>
-                  <polygon
-                    fill="#666"
-                    points="7 10 12 15 17 10"
-                  />
-                </g>
-              </svg>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</DocumentFragment>
-`;
-
-exports[`Sidebar navigation on group 1 page after click group1 menu collapses 1`] = `
-<DocumentFragment>
-  .emotion-7 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  list-style-type: none;
-  margin: 0;
-}
-
-.emotion-6 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0;
-}
-
-.emotion-2 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0 4px;
-}
-
-.emotion-2 .emotion-2,
-.emotion-2 .emotion-2 .emotion-2 {
-  padding-right: 0;
-}
-
-.emotion-1 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
-  box-sizing: border-box;
-  color: #535353;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.emotion-1:hover {
-  color: #2e2e2e;
-  background-color: #e6f4ff;
-}
-
-.emotion-1:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #0a68c1;
-}
-
-.emotion-1:focus svg polygon {
-  fill: #ffffff;
-}
-
-.emotion-1 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-1 a:visited {
-  color: #0a0a0a;
-}
-
-.emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  float: right;
-}
-
-.emotion-0.emotion-0 {
-  width: 16px;
-  height: 16px;
-}
-
-<nav
-    aria-label="Sidebar"
-    class="emotion-7"
-    role="navigation"
-  >
-    <ul
-      class="emotion-6"
-      role="list"
-    >
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/group1"
-          tabindex="0"
-        >
-          Group 1
-          <svg
-            aria-labelledby="mock-nk-1"
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title
-              id="mock-nk-1"
-            >
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/group2"
-          tabindex="0"
-        >
-          Group 2
-          <svg
-            aria-labelledby="mock-nk-1"
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title
-              id="mock-nk-1"
-            >
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-    </ul>
-  </nav>
-</DocumentFragment>
-`;
-
-exports[`Sidebar navigation on group 1 page after enter key group1 menu collapses 1`] = `
-<DocumentFragment>
-  .emotion-7 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  list-style-type: none;
-  margin: 0;
-}
-
-.emotion-6 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0;
-}
-
-.emotion-2 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0 4px;
-}
-
-.emotion-2 .emotion-2,
-.emotion-2 .emotion-2 .emotion-2 {
-  padding-right: 0;
-}
-
-.emotion-1 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
-  box-sizing: border-box;
-  color: #535353;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.emotion-1:hover {
-  color: #2e2e2e;
-  background-color: #e6f4ff;
-}
-
-.emotion-1:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #0a68c1;
-}
-
-.emotion-1:focus svg polygon {
-  fill: #ffffff;
-}
-
-.emotion-1 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-1 a:visited {
-  color: #0a0a0a;
-}
-
-.emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  float: right;
-}
-
-.emotion-0.emotion-0 {
-  width: 16px;
-  height: 16px;
-}
-
-<nav
-    aria-label="Sidebar"
-    class="emotion-7"
-    role="navigation"
-  >
-    <ul
-      class="emotion-6"
-      role="list"
-    >
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/group1"
-          tabindex="0"
-        >
-          Group 1
-          <svg
-            aria-labelledby="mock-nk-1"
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title
-              id="mock-nk-1"
-            >
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/group2"
-          tabindex="0"
-        >
-          Group 2
-          <svg
-            aria-labelledby="mock-nk-1"
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title
-              id="mock-nk-1"
-            >
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-    </ul>
-  </nav>
-</DocumentFragment>
-`;
-
-exports[`Sidebar navigation on group 1 page by clicking on components menu, group1 menu collapses and group2 menu expands 1`] = `
-<DocumentFragment>
-  .emotion-19 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  list-style-type: none;
-  margin: 0;
-}
-
-.emotion-16 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0;
-}
-
-.emotion-2 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0 4px;
-}
-
-.emotion-2 .emotion-2,
-.emotion-2 .emotion-2 .emotion-2 {
-  padding-right: 0;
-}
-
-.emotion-1 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
-  box-sizing: border-box;
-  color: #535353;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.emotion-1:hover {
-  color: #2e2e2e;
-  background-color: #e6f4ff;
-}
-
-.emotion-1:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #0a68c1;
-}
-
-.emotion-1:focus svg polygon {
-  fill: #ffffff;
-}
-
-.emotion-1 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-1 a:visited {
-  color: #0a0a0a;
-}
-
-.emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  float: right;
-}
-
-.emotion-0.emotion-0 {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-7 {
-  display: inline-block;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #0a68c1;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-7 svg {
-  fill: #0a68c1;
-}
-
-.emotion-7:hover:not(:disabled) {
-  color: #02509b;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #02509b;
-}
-
-.emotion-7:active:not(:disabled) {
-  color: #01396e;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #01396e;
-}
-
-.emotion-7:visited:not(:disabled) {
-  color: #0a68c1;
-}
-
-.emotion-7:visited:not(:disabled) svg {
-  fill: #0a68c1;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-7 {
-    vertical-align: text-bottom;
-  }
-}
-
-.emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-.emotion-4 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
-  box-sizing: border-box;
-  color: #0a68c1;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.emotion-4:hover {
-  color: #2e2e2e;
-  background-color: #e6f4ff;
-}
-
-.emotion-4:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #0a68c1;
-}
-
-.emotion-4:focus svg polygon {
-  fill: #ffffff;
-}
-
-.emotion-4 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-4 a:visited {
-  color: #0a0a0a;
-}
-
-<nav
-    aria-label="Sidebar"
-    class="emotion-19"
-    role="navigation"
-  >
-    <ul
-      class="emotion-16"
-      role="list"
-    >
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-1"
-          data-testid="/group1"
-          tabindex="0"
-        >
-          Group 1
-          <svg
-            aria-labelledby="mock-nk-1"
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title
-              id="mock-nk-1"
-            >
-              close icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-2"
-      >
-        <div
-          class="emotion-4"
-          data-testid="/group2"
-          tabindex="0"
-        >
-          Group 2
-          <svg
-            aria-labelledby="mock-nk-1"
-            class="emotion-0"
-            viewBox="0 0 16 16"
-          >
-            <title
-              id="mock-nk-1"
-            >
-              open icon
-            </title>
-            <g
-              fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 14 12 9 17 14"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 14 12 9 17 14"
-              />
-            </g>
-          </svg>
-        </div>
-        <ul
-          class="emotion-16"
-          role="list"
-        >
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-7"
-              href="/group2/page1"
-            >
-              <span
-                class="emotion-6"
-              >
-                <div
-                  class="emotion-1"
-                  data-testid="/group2/page1"
-                  tabindex="-1"
-                >
-                  Group 2 Page 1
-                </div>
-              </span>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <a
-              class="emotion-7"
-              href="/group2/page2"
-            >
-              <span
-                class="emotion-6"
-              >
-                <div
-                  class="emotion-1"
-                  data-testid="/group2/page2"
-                  tabindex="-1"
-                >
-                  Group 2 Page 2
-                </div>
-              </span>
-            </a>
-          </li>
-          <li
-            class="emotion-2"
-          >
-            <div
-              class="emotion-1"
-              data-testid="/group2/group2b"
-              tabindex="0"
-            >
-              Group 2b
-              <svg
-                aria-labelledby="mock-nk-1"
-                class="emotion-0"
-                viewBox="0 0 16 16"
-              >
-                <title
-                  id="mock-nk-1"
-                >
-                  close icon
-                </title>
-                <g
-                  fill="none"
-                >
-                  <mask
-                    fill="white"
-                  >
-                    <polygon
-                      points="7 10 12 15 17 10"
-                    />
-                  </mask>
-                  <polygon
-                    fill="#666"
-                    points="7 10 12 15 17 10"
-                  />
-                </g>
-              </svg>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</DocumentFragment>
-`;
-
-exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
-<DocumentFragment>
-  .emotion-12 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  list-style-type: none;
-  margin: 0;
-}
-
-.emotion-6 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0;
-}
-
-.emotion-5 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0 4px;
-}
-
-.emotion-5 .emotion-5,
-.emotion-5 .emotion-5 .emotion-5 {
-  padding-right: 0;
-}
-
-.emotion-1 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
-  box-sizing: border-box;
-  color: #535353;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.emotion-1:hover {
-  color: #2e2e2e;
-  background-color: #e6f4ff;
-}
-
-.emotion-1:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #0a68c1;
-}
-
-.emotion-1:focus svg polygon {
-  fill: #ffffff;
-}
-
-.emotion-1 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-1 a:visited {
-  color: #0a0a0a;
-}
-
-.emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  float: right;
-}
-
-.emotion-0.emotion-0 {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-4 {
-  display: inline-block;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #0a68c1;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-4 svg {
-  fill: #0a68c1;
-}
-
-.emotion-4:hover:not(:disabled) {
-  color: #02509b;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-4:hover:not(:disabled) svg {
-  fill: #02509b;
-}
-
-.emotion-4:active:not(:disabled) {
-  color: #01396e;
-}
-
-.emotion-4:active:not(:disabled) svg {
-  fill: #01396e;
-}
-
-.emotion-4:visited:not(:disabled) {
-  color: #0a68c1;
-}
-
-.emotion-4:visited:not(:disabled) svg {
-  fill: #0a68c1;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-4 {
-    vertical-align: text-bottom;
-  }
 }
 
 .emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0 4px;
+}
+
+.emotion-3 .emotion-3,
+.emotion-3 .emotion-3 .emotion-3 {
+  padding-right: 0;
 }
 
 .emotion-2 {
@@ -1265,7 +44,7 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
   line-height: 1.5rem;
   background-color: transparent;
   box-sizing: border-box;
-  color: #0a68c1;
+  color: #535353;
   cursor: pointer;
   font-weight: normal;
   min-height: 40px;
@@ -1306,67 +85,1216 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
   color: #0a0a0a;
 }
 
+.emotion-2 svg {
+  float: right;
+}
+
+.emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-9 {
+  display: inline-block;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #0a68c1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-9 svg {
+  fill: #0a68c1;
+}
+
+.emotion-9:hover:not(:disabled) {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-9:hover:not(:disabled) svg {
+  fill: #02509b;
+}
+
+.emotion-9:active:not(:disabled) {
+  color: #01396e;
+}
+
+.emotion-9:active:not(:disabled) svg {
+  fill: #01396e;
+}
+
+.emotion-9:visited:not(:disabled) {
+  color: #0a68c1;
+}
+
+.emotion-9:visited:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-9 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
 <nav
     aria-label="Sidebar"
-    class="emotion-12"
+    class="emotion-22"
     role="navigation"
   >
     <ul
-      class="emotion-6"
+      class="emotion-19"
       role="list"
     >
       <li
-        class="emotion-5"
+        class="emotion-3"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
           data-testid="/group1"
           tabindex="0"
         >
           Group 1
           <svg
-            aria-labelledby="mock-nk-1"
-            class="emotion-0"
-            viewBox="0 0 16 16"
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <title
-              id="mock-nk-1"
-            >
-              open icon
-            </title>
-            <g
+            <path
+              d="M0 0h24v24H0z"
               fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 14 12 9 17 14"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 14 12 9 17 14"
-              />
-            </g>
+            />
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </div>
+      </li>
+      <li
+        class="emotion-3"
+      >
+        <div
+          class="emotion-2"
+          data-testid="/group2"
+          tabindex="0"
+        >
+          Group 2
+          <svg
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M7 14l5-5 5 5z"
+            />
           </svg>
         </div>
         <ul
-          class="emotion-6"
+          class="emotion-19"
           role="list"
         >
           <li
-            class="emotion-5"
+            class="emotion-3"
           >
             <a
-              class="emotion-4"
-              href="/group1/page1"
+              class="emotion-9"
+              href="/group2/page1"
             >
               <span
-                class="emotion-3"
+                class="emotion-8"
               >
                 <div
                   class="emotion-2"
+                  data-testid="/group2/page1"
+                  tabindex="-1"
+                >
+                  Group 2 Page 1
+                </div>
+              </span>
+            </a>
+          </li>
+          <li
+            class="emotion-3"
+          >
+            <a
+              class="emotion-9"
+              href="/group2/page2"
+            >
+              <span
+                class="emotion-8"
+              >
+                <div
+                  class="emotion-2"
+                  data-testid="/group2/page2"
+                  tabindex="-1"
+                >
+                  Group 2 Page 2
+                </div>
+              </span>
+            </a>
+          </li>
+          <li
+            class="emotion-3"
+          >
+            <div
+              class="emotion-2"
+              data-testid="/group2/group2b"
+              tabindex="0"
+            >
+              Group 2b
+              <svg
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Sidebar navigation on group 1 page after click group1 menu collapses 1`] = `
+<DocumentFragment>
+  .emotion-9 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.emotion-8 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+}
+
+.emotion-3 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0 4px;
+}
+
+.emotion-3 .emotion-3,
+.emotion-3 .emotion-3 .emotion-3 {
+  padding-right: 0;
+}
+
+.emotion-2 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 1.5rem;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #535353;
+  cursor: pointer;
+  font-weight: normal;
+  min-height: 40px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 24px;
+  border-radius: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.emotion-2:hover {
+  color: #2e2e2e;
+  background-color: #e6f4ff;
+}
+
+.emotion-2:focus {
+  outline: none;
+  color: #ffffff;
+  background-color: #0a68c1;
+}
+
+.emotion-2:focus svg polygon {
+  fill: #ffffff;
+}
+
+.emotion-2 a {
+  color: #0a0a0a;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-2 a:visited {
+  color: #0a0a0a;
+}
+
+.emotion-2 svg {
+  float: right;
+}
+
+.emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
+  width: 16px;
+  height: 16px;
+}
+
+<nav
+    aria-label="Sidebar"
+    class="emotion-9"
+    role="navigation"
+  >
+    <ul
+      class="emotion-8"
+      role="list"
+    >
+      <li
+        class="emotion-3"
+      >
+        <div
+          class="emotion-2"
+          data-testid="/group1"
+          tabindex="0"
+        >
+          Group 1
+          <svg
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </div>
+      </li>
+      <li
+        class="emotion-3"
+      >
+        <div
+          class="emotion-2"
+          data-testid="/group2"
+          tabindex="0"
+        >
+          Group 2
+          <svg
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Sidebar navigation on group 1 page after enter key group1 menu collapses 1`] = `
+<DocumentFragment>
+  .emotion-9 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.emotion-8 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+}
+
+.emotion-3 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0 4px;
+}
+
+.emotion-3 .emotion-3,
+.emotion-3 .emotion-3 .emotion-3 {
+  padding-right: 0;
+}
+
+.emotion-2 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 1.5rem;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #535353;
+  cursor: pointer;
+  font-weight: normal;
+  min-height: 40px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 24px;
+  border-radius: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.emotion-2:hover {
+  color: #2e2e2e;
+  background-color: #e6f4ff;
+}
+
+.emotion-2:focus {
+  outline: none;
+  color: #ffffff;
+  background-color: #0a68c1;
+}
+
+.emotion-2:focus svg polygon {
+  fill: #ffffff;
+}
+
+.emotion-2 a {
+  color: #0a0a0a;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-2 a:visited {
+  color: #0a0a0a;
+}
+
+.emotion-2 svg {
+  float: right;
+}
+
+.emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
+  width: 16px;
+  height: 16px;
+}
+
+<nav
+    aria-label="Sidebar"
+    class="emotion-9"
+    role="navigation"
+  >
+    <ul
+      class="emotion-8"
+      role="list"
+    >
+      <li
+        class="emotion-3"
+      >
+        <div
+          class="emotion-2"
+          data-testid="/group1"
+          tabindex="0"
+        >
+          Group 1
+          <svg
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </div>
+      </li>
+      <li
+        class="emotion-3"
+      >
+        <div
+          class="emotion-2"
+          data-testid="/group2"
+          tabindex="0"
+        >
+          Group 2
+          <svg
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Sidebar navigation on group 1 page by clicking on components menu, group1 menu collapses and group2 menu expands 1`] = `
+<DocumentFragment>
+  .emotion-22 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.emotion-19 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+}
+
+.emotion-3 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0 4px;
+}
+
+.emotion-3 .emotion-3,
+.emotion-3 .emotion-3 .emotion-3 {
+  padding-right: 0;
+}
+
+.emotion-2 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 1.5rem;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #535353;
+  cursor: pointer;
+  font-weight: normal;
+  min-height: 40px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 24px;
+  border-radius: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.emotion-2:hover {
+  color: #2e2e2e;
+  background-color: #e6f4ff;
+}
+
+.emotion-2:focus {
+  outline: none;
+  color: #ffffff;
+  background-color: #0a68c1;
+}
+
+.emotion-2:focus svg polygon {
+  fill: #ffffff;
+}
+
+.emotion-2 a {
+  color: #0a0a0a;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-2 a:visited {
+  color: #0a0a0a;
+}
+
+.emotion-2 svg {
+  float: right;
+}
+
+.emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-9 {
+  display: inline-block;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #0a68c1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-9 svg {
+  fill: #0a68c1;
+}
+
+.emotion-9:hover:not(:disabled) {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-9:hover:not(:disabled) svg {
+  fill: #02509b;
+}
+
+.emotion-9:active:not(:disabled) {
+  color: #01396e;
+}
+
+.emotion-9:active:not(:disabled) svg {
+  fill: #01396e;
+}
+
+.emotion-9:visited:not(:disabled) {
+  color: #0a68c1;
+}
+
+.emotion-9:visited:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-9 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-6 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 1.5rem;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #0a68c1;
+  cursor: pointer;
+  font-weight: normal;
+  min-height: 40px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 24px;
+  border-radius: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.emotion-6:hover {
+  color: #2e2e2e;
+  background-color: #e6f4ff;
+}
+
+.emotion-6:focus {
+  outline: none;
+  color: #ffffff;
+  background-color: #0a68c1;
+}
+
+.emotion-6:focus svg polygon {
+  fill: #ffffff;
+}
+
+.emotion-6 a {
+  color: #0a0a0a;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-6 a:visited {
+  color: #0a0a0a;
+}
+
+.emotion-6 svg {
+  float: right;
+}
+
+<nav
+    aria-label="Sidebar"
+    class="emotion-22"
+    role="navigation"
+  >
+    <ul
+      class="emotion-19"
+      role="list"
+    >
+      <li
+        class="emotion-3"
+      >
+        <div
+          class="emotion-2"
+          data-testid="/group1"
+          tabindex="0"
+        >
+          Group 1
+          <svg
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </div>
+      </li>
+      <li
+        class="emotion-3"
+      >
+        <div
+          class="emotion-6"
+          data-testid="/group2"
+          tabindex="0"
+        >
+          Group 2
+          <svg
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M7 14l5-5 5 5z"
+            />
+          </svg>
+        </div>
+        <ul
+          class="emotion-19"
+          role="list"
+        >
+          <li
+            class="emotion-3"
+          >
+            <a
+              class="emotion-9"
+              href="/group2/page1"
+            >
+              <span
+                class="emotion-8"
+              >
+                <div
+                  class="emotion-2"
+                  data-testid="/group2/page1"
+                  tabindex="-1"
+                >
+                  Group 2 Page 1
+                </div>
+              </span>
+            </a>
+          </li>
+          <li
+            class="emotion-3"
+          >
+            <a
+              class="emotion-9"
+              href="/group2/page2"
+            >
+              <span
+                class="emotion-8"
+              >
+                <div
+                  class="emotion-2"
+                  data-testid="/group2/page2"
+                  tabindex="-1"
+                >
+                  Group 2 Page 2
+                </div>
+              </span>
+            </a>
+          </li>
+          <li
+            class="emotion-3"
+          >
+            <div
+              class="emotion-2"
+              data-testid="/group2/group2b"
+              tabindex="0"
+            >
+              Group 2b
+              <svg
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
+<DocumentFragment>
+  .emotion-14 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.emotion-7 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+}
+
+.emotion-6 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0 4px;
+}
+
+.emotion-6 .emotion-6,
+.emotion-6 .emotion-6 .emotion-6 {
+  padding-right: 0;
+}
+
+.emotion-2 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 1.5rem;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #535353;
+  cursor: pointer;
+  font-weight: normal;
+  min-height: 40px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 24px;
+  border-radius: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.emotion-2:hover {
+  color: #2e2e2e;
+  background-color: #e6f4ff;
+}
+
+.emotion-2:focus {
+  outline: none;
+  color: #ffffff;
+  background-color: #0a68c1;
+}
+
+.emotion-2:focus svg polygon {
+  fill: #ffffff;
+}
+
+.emotion-2 a {
+  color: #0a0a0a;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-2 a:visited {
+  color: #0a0a0a;
+}
+
+.emotion-2 svg {
+  float: right;
+}
+
+.emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-0.emotion-0 {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-5 {
+  display: inline-block;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #0a68c1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-5 svg {
+  fill: #0a68c1;
+}
+
+.emotion-5:hover:not(:disabled) {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-5:hover:not(:disabled) svg {
+  fill: #02509b;
+}
+
+.emotion-5:active:not(:disabled) {
+  color: #01396e;
+}
+
+.emotion-5:active:not(:disabled) svg {
+  fill: #01396e;
+}
+
+.emotion-5:visited:not(:disabled) {
+  color: #0a68c1;
+}
+
+.emotion-5:visited:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-5 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-3 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 1.5rem;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #0a68c1;
+  cursor: pointer;
+  font-weight: normal;
+  min-height: 40px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 24px;
+  border-radius: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.emotion-3:hover {
+  color: #2e2e2e;
+  background-color: #e6f4ff;
+}
+
+.emotion-3:focus {
+  outline: none;
+  color: #ffffff;
+  background-color: #0a68c1;
+}
+
+.emotion-3:focus svg polygon {
+  fill: #ffffff;
+}
+
+.emotion-3 a {
+  color: #0a0a0a;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-3 a:visited {
+  color: #0a0a0a;
+}
+
+.emotion-3 svg {
+  float: right;
+}
+
+<nav
+    aria-label="Sidebar"
+    class="emotion-14"
+    role="navigation"
+  >
+    <ul
+      class="emotion-7"
+      role="list"
+    >
+      <li
+        class="emotion-6"
+      >
+        <div
+          class="emotion-2"
+          data-testid="/group1"
+          tabindex="0"
+        >
+          Group 1
+          <svg
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M7 14l5-5 5 5z"
+            />
+          </svg>
+        </div>
+        <ul
+          class="emotion-7"
+          role="list"
+        >
+          <li
+            class="emotion-6"
+          >
+            <a
+              class="emotion-5"
+              href="/group1/page1"
+            >
+              <span
+                class="emotion-4"
+              >
+                <div
+                  class="emotion-3"
                   data-testid="/group1/page1"
                   tabindex="-1"
                 >
@@ -1378,39 +1306,29 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
         </ul>
       </li>
       <li
-        class="emotion-5"
+        class="emotion-6"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
           data-testid="/group2"
           tabindex="0"
         >
           Group 2
           <svg
-            aria-labelledby="mock-nk-1"
-            class="emotion-0"
-            viewBox="0 0 16 16"
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <title
-              id="mock-nk-1"
-            >
-              close icon
-            </title>
-            <g
+            <path
+              d="M0 0h24v24H0z"
               fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
+            />
+            <path
+              d="M7 10l5 5 5-5z"
+            />
           </svg>
         </div>
       </li>
@@ -1421,7 +1339,7 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
 
 exports[`Sidebar navigation on route level renders as expected 1`] = `
 <DocumentFragment>
-  .emotion-7 {
+  .emotion-9 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -1434,24 +1352,24 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
   margin: 0;
 }
 
-.emotion-6 {
+.emotion-8 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-2 {
+.emotion-3 {
   list-style-type: none;
   margin: 0px;
   padding: 0 4px;
 }
 
-.emotion-2 .emotion-2,
-.emotion-2 .emotion-2 .emotion-2 {
+.emotion-3 .emotion-3,
+.emotion-3 .emotion-3 .emotion-3 {
   padding-right: 0;
 }
 
-.emotion-1 {
+.emotion-2 {
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -1476,22 +1394,22 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
   overflow: hidden;
 }
 
-.emotion-1:hover {
+.emotion-2:hover {
   color: #2e2e2e;
   background-color: #e6f4ff;
 }
 
-.emotion-1:focus {
+.emotion-2:focus {
   outline: none;
   color: #ffffff;
   background-color: #0a68c1;
 }
 
-.emotion-1:focus svg polygon {
+.emotion-2:focus svg polygon {
   fill: #ffffff;
 }
 
-.emotion-1 a {
+.emotion-2 a {
   color: #0a0a0a;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1500,14 +1418,20 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
   height: 100%;
 }
 
-.emotion-1 a:visited {
+.emotion-2 a:visited {
   color: #0a0a0a;
 }
 
-.emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+.emotion-2 svg {
   float: right;
+}
+
+.emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  vertical-align: unset;
+  display: inline-block;
 }
 
 .emotion-0.emotion-0 {
@@ -1517,84 +1441,64 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
 
 <nav
     aria-label="Sidebar"
-    class="emotion-7"
+    class="emotion-9"
     role="navigation"
   >
     <ul
-      class="emotion-6"
+      class="emotion-8"
       role="list"
     >
       <li
-        class="emotion-2"
+        class="emotion-3"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
           data-testid="/group1"
           tabindex="0"
         >
           Group 1
           <svg
-            aria-labelledby="mock-nk-1"
-            class="emotion-0"
-            viewBox="0 0 16 16"
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <title
-              id="mock-nk-1"
-            >
-              close icon
-            </title>
-            <g
+            <path
+              d="M0 0h24v24H0z"
               fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
+            />
+            <path
+              d="M7 10l5 5 5-5z"
+            />
           </svg>
         </div>
       </li>
       <li
-        class="emotion-2"
+        class="emotion-3"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
           data-testid="/group2"
           tabindex="0"
         >
           Group 2
           <svg
-            aria-labelledby="mock-nk-1"
-            class="emotion-0"
-            viewBox="0 0 16 16"
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <title
-              id="mock-nk-1"
-            >
-              close icon
-            </title>
-            <g
+            <path
+              d="M0 0h24v24H0z"
               fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
+            />
+            <path
+              d="M7 10l5 5 5-5z"
+            />
           </svg>
         </div>
       </li>
@@ -1605,7 +1509,7 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
 
 exports[`Sidebar navigation on route level renders correctly without given path 1`] = `
 <DocumentFragment>
-  .emotion-7 {
+  .emotion-9 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -1618,24 +1522,24 @@ exports[`Sidebar navigation on route level renders correctly without given path 
   margin: 0;
 }
 
-.emotion-6 {
+.emotion-8 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-2 {
+.emotion-3 {
   list-style-type: none;
   margin: 0px;
   padding: 0 4px;
 }
 
-.emotion-2 .emotion-2,
-.emotion-2 .emotion-2 .emotion-2 {
+.emotion-3 .emotion-3,
+.emotion-3 .emotion-3 .emotion-3 {
   padding-right: 0;
 }
 
-.emotion-1 {
+.emotion-2 {
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -1660,22 +1564,22 @@ exports[`Sidebar navigation on route level renders correctly without given path 
   overflow: hidden;
 }
 
-.emotion-1:hover {
+.emotion-2:hover {
   color: #2e2e2e;
   background-color: #e6f4ff;
 }
 
-.emotion-1:focus {
+.emotion-2:focus {
   outline: none;
   color: #ffffff;
   background-color: #0a68c1;
 }
 
-.emotion-1:focus svg polygon {
+.emotion-2:focus svg polygon {
   fill: #ffffff;
 }
 
-.emotion-1 a {
+.emotion-2 a {
   color: #0a0a0a;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1684,14 +1588,20 @@ exports[`Sidebar navigation on route level renders correctly without given path 
   height: 100%;
 }
 
-.emotion-1 a:visited {
+.emotion-2 a:visited {
   color: #0a0a0a;
 }
 
-.emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+.emotion-2 svg {
   float: right;
+}
+
+.emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  vertical-align: unset;
+  display: inline-block;
 }
 
 .emotion-0.emotion-0 {
@@ -1701,84 +1611,64 @@ exports[`Sidebar navigation on route level renders correctly without given path 
 
 <nav
     aria-label="Sidebar"
-    class="emotion-7"
+    class="emotion-9"
     role="navigation"
   >
     <ul
-      class="emotion-6"
+      class="emotion-8"
       role="list"
     >
       <li
-        class="emotion-2"
+        class="emotion-3"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
           data-testid="/group1"
           tabindex="0"
         >
           Group 1
           <svg
-            aria-labelledby="mock-nk-1"
-            class="emotion-0"
-            viewBox="0 0 16 16"
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <title
-              id="mock-nk-1"
-            >
-              close icon
-            </title>
-            <g
+            <path
+              d="M0 0h24v24H0z"
               fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
+            />
+            <path
+              d="M7 10l5 5 5-5z"
+            />
           </svg>
         </div>
       </li>
       <li
-        class="emotion-2"
+        class="emotion-3"
       >
         <div
-          class="emotion-1"
+          class="emotion-2"
           data-testid="/group2"
           tabindex="0"
         >
           Group 2
           <svg
-            aria-labelledby="mock-nk-1"
-            class="emotion-0"
-            viewBox="0 0 16 16"
+            aria-hidden="true"
+            class="emotion-0 emotion-1"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <title
-              id="mock-nk-1"
-            >
-              close icon
-            </title>
-            <g
+            <path
+              d="M0 0h24v24H0z"
               fill="none"
-            >
-              <mask
-                fill="white"
-              >
-                <polygon
-                  points="7 10 12 15 17 10"
-                />
-              </mask>
-              <polygon
-                fill="#666"
-                points="7 10 12 15 17 10"
-              />
-            </g>
+            />
+            <path
+              d="M7 10l5 5 5-5z"
+            />
           </svg>
         </div>
       </li>

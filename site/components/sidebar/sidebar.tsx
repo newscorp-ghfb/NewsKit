@@ -5,7 +5,7 @@ import {
   getColorFromTheme,
   getMediaQueryFromTheme,
   styled,
-  Close,
+  IconFilledClose,
 } from 'newskit';
 
 import {LegacyBlock} from '../legacy-block';
@@ -92,7 +92,12 @@ const Sidebar: React.FC<SidebarProps> = ({
               tabIndex={0}
               data-testid="close-icon"
             >
-              <Close color="interactiveSecondary040" size="iconSize010" />
+              <IconFilledClose
+                overrides={{
+                  stylePreset: 'closeIcon',
+                  size: 'iconSize010',
+                }}
+              />
             </IconWrapper>
           </LegacyBlock>
         </Visible>

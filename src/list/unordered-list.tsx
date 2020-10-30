@@ -8,10 +8,10 @@ import {Block} from '../block';
 
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
-import {IconComponent} from '../icons';
+import {SvgProps} from '../icons';
 
 export interface UnorderedListProps {
-  listItemMarker?: IconComponent;
+  listItemMarker?: React.ComponentType<SvgProps>;
   overrides?: {
     spaceStack?: MQ<string>;
     content?: {
@@ -90,7 +90,7 @@ export const UnorderedList: React.FC<UnorderedListProps> = ({
                   overrides={{spaceInline: markerSpaceToken}}
                   aria-hidden="true"
                 >
-                  <ListItemMarker size={markerSizeToken} />
+                  <ListItemMarker overrides={{size: markerSizeToken}} />
                 </MarkerBlock>
               )}
               <TextBlock

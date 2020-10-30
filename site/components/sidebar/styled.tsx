@@ -53,7 +53,12 @@ export const StyledNavItem = styled.div<{
   & a:visited {
     color: ${getColorFromTheme('inkContrast')};
   }
+
+  & svg {
+    float: right;
+  }
 `;
+// TODO: Use flex instead of float
 
 export const StyledContainer = styled.nav`
   ${getTypographyPresetFromTheme('utilityBody030')};

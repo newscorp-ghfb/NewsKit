@@ -1,116 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Icons Add icon renders as expected 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 16px;
-  height: 16px;
-}
-
-<svg
-    aria-labelledby="mock-nk-1"
-    class="emotion-0"
-    viewBox="0 0 24 24"
-  >
-    <title
-      id="mock-nk-1"
-    >
-      add
-    </title>
-    <path
-      d="M0 0h24v24H0z"
-      fill="none"
-    />
-    <path
-      d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-    />
-  </svg>
-</DocumentFragment>
-`;
-
-exports[`Icons Error icon renders as expected 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 24px;
-  height: 24px;
-}
-
-<svg
-    aria-labelledby="mock-nk-1"
-    class="emotion-0"
-    viewBox="0 0 24 24"
-  >
-    <title
-      id="mock-nk-1"
-    >
-      error
-    </title>
-    <g
-      fill="none"
-      fill-rule="evenodd"
-    >
-      <path
-        d="M0 0h24v24H0z"
-        fill="none"
-      />
-      <path
-        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
-        fill="#D20600"
-      />
-    </g>
-  </svg>
-</DocumentFragment>
-`;
-
-exports[`Icons Menu icon renders as expected 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  fill: #0a0a0a;
-  color: #0a0a0a;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 24px;
-  height: 24px;
-}
-
-<svg
-    aria-labelledby="mock-nk-1"
-    class="emotion-0"
-    viewBox="0 0 24 24"
-  >
-    <title
-      id="mock-nk-1"
-    >
-      menu icon
-    </title>
-    <g>
-      <path
-        d="M3,18 L21,18 L21,16 L3,16 L3,18 L3,18 Z M3,13 L21,13 L21,11 L3,11 L3,13 L3,13 Z M3,6 L3,8 L21,8 L21,6 L3,6 L3,6 Z"
-      />
-    </g>
-  </svg>
-</DocumentFragment>
-`;
-
 exports[`Icons Moon icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
 }
 
@@ -120,14 +14,14 @@ exports[`Icons Moon icon renders as expected 1`] = `
 }
 
 <svg
-    aria-labelledby="mock-nk-1"
     class="emotion-0"
+    fill="currentColor"
+    role="img"
     viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    <title
-      id="mock-nk-1"
-    >
-      moon icon
+    <title>
+      Moon icon
     </title>
     <path
       d="M10 2c-1.82 0-3.53.5-5 1.35C7.99 5.08 10 8.3 10 12s-2.01 6.92-5 8.65C6.47 21.5 8.18 22 10 22c5.52 0 10-4.48 10-10S15.52 2 10 2z"
@@ -138,81 +32,11 @@ exports[`Icons Moon icon renders as expected 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Icons Remove icon renders as expected 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 16px;
-  height: 16px;
-}
-
-<svg
-    aria-labelledby="mock-nk-1"
-    class="emotion-0"
-    viewBox="0 0 24 24"
-  >
-    <title
-      id="mock-nk-1"
-    >
-      remove
-    </title>
-    <path
-      d="M0 0h24v24H0z"
-      fill="none"
-    />
-    <path
-      d="M19 13H5v-2h14v2z"
-    />
-  </svg>
-</DocumentFragment>
-`;
-
-exports[`Icons Search icon renders as expected 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 24px;
-  height: 24px;
-}
-
-<svg
-    aria-labelledby="mock-nk-1"
-    class="emotion-0"
-    viewBox="0 0 24 24"
-  >
-    <title
-      id="mock-nk-1"
-    >
-      search icon
-    </title>
-    <g
-      fill="#2E2E2E"
-      fill-opacity=".87"
-      fill-rule="evenodd"
-    >
-      <path
-        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-      />
-    </g>
-  </svg>
-</DocumentFragment>
-`;
-
 exports[`Icons Sun icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
 }
 
@@ -222,14 +46,14 @@ exports[`Icons Sun icon renders as expected 1`] = `
 }
 
 <svg
-    aria-labelledby="mock-nk-1"
     class="emotion-0"
+    fill="currentColor"
+    role="img"
     viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    <title
-      id="mock-nk-1"
-    >
-      sun icon
+    <title>
+      Sun icon
     </title>
     <path
       d="M6.76 5.309589l-1.8-1.798173-1.41 1.416438 1.79 1.798173L6.76 5.30959zM4 10.995434H1v2.009132h3v-2.009132zM13 1h-2v2.96347h2V1zm7.45 3.927854l-1.41-1.416438-1.79 1.798173 1.41 1.416438 1.79-1.798173zM17.24 18.69041l1.79 1.80822 1.41-1.41644-1.8-1.798173-1.4 1.406393zM20 10.995434v2.009132h3v-2.009132h-3zm-8-5.022831c-3.31 0-6 2.702283-6 6.027397 0 3.325114 2.69 6.027397 6 6.027397S18 15.325114 18 12c0-3.325114-2.69-6.027397-6-6.027397zM11 23h2v-2.96347h-2V23zm-7.45-3.927854l1.41 1.416439 1.79-1.80822-1.41-1.416438-1.79 1.80822z"

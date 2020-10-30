@@ -399,7 +399,7 @@ const iconsList = [
   'ExposureZero',
   'Extension',
   'Face',
-  'Facebook',
+  // 'Facebook',
   'FactCheck',
   'FamilyRestroom',
   'FastForward',

@@ -1,7 +1,11 @@
 import * as React from 'react';
 import {Flag, FlagSize} from '..';
 import {styled} from '../../utils/style';
-import {Email, Bookmark, IconFilledVolumeOff} from '../../icons';
+import {
+  IconFilledEmail,
+  IconFilledBookmarkBorder,
+  IconFilledVolumeOff,
+} from '../../icons';
 import {Stack} from '../../stack';
 import {
   StorybookSubHeading,
@@ -52,7 +56,7 @@ export default {
                 spaceInset: 'spaceInset000Squish',
               }}
             >
-              <Email />
+              <IconFilledEmail />
               Text
             </Flag>
             <Flag
@@ -62,7 +66,7 @@ export default {
                 spaceInset: 'spaceInset000Squish',
               }}
             >
-              <Email />
+              <IconFilledEmail />
               Text
             </Flag>
             <Flag
@@ -72,7 +76,7 @@ export default {
                 spaceInset: 'spaceInset000Squish',
               }}
             >
-              <Bookmark />
+              <IconFilledBookmarkBorder />
               Text
             </Flag>
             <Flag
@@ -122,11 +126,11 @@ export default {
               wrap="wrap"
             >
               <Flag size={FlagSize.Small}>
-                <Email />
+                <IconFilledEmail />
                 Text
               </Flag>
               <Flag size={FlagSize.Large}>
-                <Email />
+                <IconFilledEmail />
                 Text
               </Flag>
             </Stack>
@@ -142,11 +146,11 @@ export default {
             >
               <Flag size={FlagSize.Small}>
                 Text
-                <Email />
+                <IconFilledEmail />
               </Flag>
               <Flag size={FlagSize.Large}>
                 Text
-                <Email />
+                <IconFilledEmail />
               </Flag>
             </Stack>
           </Container>
@@ -162,14 +166,14 @@ export default {
               wrap="wrap"
             >
               <Flag size={FlagSize.Small}>
-                <Email />
+                <IconFilledEmail />
                 Text
-                <Email />
+                <IconFilledEmail />
               </Flag>
               <Flag size={FlagSize.Large}>
-                <Email />
+                <IconFilledEmail />
                 Text
-                <Email />
+                <IconFilledEmail />
               </Flag>
             </Stack>
           </Container>
@@ -185,16 +189,15 @@ export default {
               wrap="wrap"
             >
               <Flag size={FlagSize.Small}>
-                <Email />
+                <IconFilledEmail />
                 Text
-                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
-                <Email size="iconSize030" />
+                <IconFilledEmail overrides={{size: 'iconSize030'}} />
               </Flag>
               <Flag size={FlagSize.Large}>
-                <Email />
+                <IconFilledEmail />
                 Text
                 {/* size to be moved in icon overrides as part of PPDSC-1341 */}
-                <Email size="iconSize040" />
+                <IconFilledEmail overrides={{size: 'iconSize040'}} />
               </Flag>
             </Stack>
           </Container>
@@ -210,16 +213,14 @@ export default {
               wrap="wrap"
             >
               <Flag size={FlagSize.Small} overrides={{iconSize: 'iconSize020'}}>
-                <Email />
+                <IconFilledEmail />
                 Text
-                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
-                <Email size="iconSize030" />
+                <IconFilledEmail overrides={{size: 'iconSize030'}} />
               </Flag>
               <Flag size={FlagSize.Large} overrides={{iconSize: 'iconSize020'}}>
-                <Email />
+                <IconFilledEmail />
                 Text
-                {/* size to be moved in icon overrides as part of PPDSC-1341 */}
-                <Email size="iconSize040" />
+                <IconFilledEmail overrides={{size: 'iconSize040'}} />
               </Flag>
             </Stack>
           </Container>

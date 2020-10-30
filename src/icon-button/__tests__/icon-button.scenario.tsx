@@ -3,7 +3,7 @@ import * as React from 'react';
 import {ButtonSize} from '../../button';
 import {IconButton} from '..';
 import {styled} from '../../utils/style';
-import {Pause, Email, IconFilledLink} from '../../icons';
+import {IconFilledPause, IconFilledEmail, IconFilledLink} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
 import {getMediaQueryFromTheme} from '../../utils/responsive-helpers';
@@ -79,14 +79,14 @@ export default {
               spaceInline="sizing070"
               wrap="wrap"
             >
-              <IconButton size={ButtonSize.Small}>
-                <Email />
+              <IconButton aria-label="Email icon" size={ButtonSize.Small}>
+                <IconFilledEmail />
               </IconButton>
-              <IconButton size={ButtonSize.Medium}>
-                <Email />
+              <IconButton aria-label="Email icon" size={ButtonSize.Medium}>
+                <IconFilledEmail />
               </IconButton>
-              <IconButton size={ButtonSize.Large}>
-                <Email />
+              <IconButton aria-label="Email icon" size={ButtonSize.Large}>
+                <IconFilledEmail />
               </IconButton>
             </Stack>
           </Container>
@@ -123,15 +123,17 @@ export default {
                     <h3>{style}</h3>
                     <Block data-state="Default">
                       <IconButton
+                        aria-label="Pause icon"
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                       >
-                        <Pause />
+                        <IconFilledPause />
                       </IconButton>
                     </Block>
 
                     <Block data-state="Focused">
                       <IconButton
+                        aria-label="Link icon"
                         autoFocus
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
@@ -142,22 +144,22 @@ export default {
 
                     <Block data-state="Disabled">
                       <IconButton
+                        aria-label="Email icon"
                         disabled
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                       >
-                        <Email />
+                        <IconFilledEmail />
                       </IconButton>
                     </Block>
 
                     <Block data-state="Loading">
                       <IconButton
+                        aria-label="Loading indicator"
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                         isLoading
-                      >
-                        <Email />
-                      </IconButton>
+                      />
                     </Block>
                   </Stack>
                 </Cell>
@@ -199,15 +201,17 @@ export default {
                     <h3>{style}</h3>
                     <Block data-state="Default">
                       <IconButton
+                        aria-label="Pause icon"
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                       >
-                        <Pause />
+                        <IconFilledPause />
                       </IconButton>
                     </Block>
 
                     <Block data-state="Focused">
                       <IconButton
+                        aria-label="Link icon"
                         autoFocus
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
@@ -218,22 +222,22 @@ export default {
 
                     <Block data-state="Disabled">
                       <IconButton
+                        aria-label="Email icon"
                         disabled
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                       >
-                        <Email />
+                        <IconFilledEmail />
                       </IconButton>
                     </Block>
 
                     <Block data-state="Loading">
                       <IconButton
+                        aria-label="Loading indicator"
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                         isLoading
-                      >
-                        <Email />
-                      </IconButton>
+                      />
                     </Block>
                   </Stack>
                 </Cell>
@@ -273,15 +277,17 @@ export default {
                     <h3>{style}</h3>
                     <Block data-state="Default">
                       <IconButton
+                        aria-label="Pause icon"
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                       >
-                        <Pause />
+                        <IconFilledPause />
                       </IconButton>
                     </Block>
 
                     <Block data-state="Focused">
                       <IconButton
+                        aria-label="Link icon"
                         autoFocus
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
@@ -292,22 +298,22 @@ export default {
 
                     <Block data-state="Disabled">
                       <IconButton
+                        aria-label="Email icon"
                         disabled
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                       >
-                        <Email />
+                        <IconFilledEmail />
                       </IconButton>
                     </Block>
 
                     <Block data-state="Loading">
                       <IconButton
+                        aria-label="Loading indicator"
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                         isLoading
-                      >
-                        <Email />
-                      </IconButton>
+                      />
                     </Block>
                   </Stack>
                 </Cell>
@@ -347,15 +353,17 @@ export default {
                     <h3>{style}</h3>
                     <Block data-state="Default">
                       <IconButton
+                        aria-label="Pause icon"
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                       >
-                        <Pause />
+                        <IconFilledPause />
                       </IconButton>
                     </Block>
 
                     <Block data-state="Focused">
                       <IconButton
+                        aria-label="Link icon"
                         autoFocus
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
@@ -366,21 +374,23 @@ export default {
 
                     <Block data-state="Disabled">
                       <IconButton
+                        aria-label="Email icon"
                         disabled
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                       >
-                        <Email />
+                        <IconFilledEmail />
                       </IconButton>
                     </Block>
 
                     <Block data-state="Loading">
                       <IconButton
+                        aria-label="Loading indicator"
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
                         isLoading
                       >
-                        <Email />
+                        <IconFilledEmail />
                       </IconButton>
                     </Block>
                   </Stack>

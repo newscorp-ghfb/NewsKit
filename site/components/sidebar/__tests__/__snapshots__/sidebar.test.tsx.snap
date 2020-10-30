@@ -2,7 +2,7 @@
 
 exports[`Sidebar renders correctly when closed 1`] = `
 <DocumentFragment>
-  .emotion-8 {
+  .emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -23,7 +23,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .emotion-8 {
+  .emotion-9 {
     padding-top: 12px;
     padding-bottom: 12px;
     margin-bottom: 32px;
@@ -87,36 +87,36 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen {
-  .emotion-7 {
+  .emotion-8 {
     display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-7 {
+  .emotion-8 {
     display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-7 {
+  .emotion-8 {
     display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-7 {
+  .emotion-8 {
     display: none;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-7 {
+  .emotion-8 {
     display: none;
   }
 }
 
-.emotion-6 {
+.emotion-7 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -124,15 +124,17 @@ exports[`Sidebar renders correctly when closed 1`] = `
   display: flex;
 }
 
-.emotion-5 {
+.emotion-6 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
 .emotion-4 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  vertical-align: unset;
   display: inline-block;
 }
 
@@ -141,7 +143,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   height: 16px;
 }
 
-.emotion-26 {
+.emotion-31 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -154,24 +156,24 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin: 0;
 }
 
-.emotion-25 {
+.emotion-30 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-11 {
+.emotion-13 {
   list-style-type: none;
   margin: 0px;
   padding: 0 4px;
 }
 
-.emotion-11 .emotion-11,
-.emotion-11 .emotion-11 .emotion-11 {
+.emotion-13 .emotion-13,
+.emotion-13 .emotion-13 .emotion-13 {
   padding-right: 0;
 }
 
-.emotion-10 {
+.emotion-12 {
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -196,22 +198,22 @@ exports[`Sidebar renders correctly when closed 1`] = `
   overflow: hidden;
 }
 
-.emotion-10:hover {
+.emotion-12:hover {
   color: #2e2e2e;
   background-color: #e6f4ff;
 }
 
-.emotion-10:focus {
+.emotion-12:focus {
   outline: none;
   color: #ffffff;
   background-color: #0a68c1;
 }
 
-.emotion-10:focus svg polygon {
+.emotion-12:focus svg polygon {
   fill: #ffffff;
 }
 
-.emotion-10 a {
+.emotion-12 a {
   color: #0a0a0a;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -220,22 +222,15 @@ exports[`Sidebar renders correctly when closed 1`] = `
   height: 100%;
 }
 
-.emotion-10 a:visited {
+.emotion-12 a:visited {
   color: #0a0a0a;
 }
 
-.emotion-9 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+.emotion-12 svg {
   float: right;
 }
 
-.emotion-9.emotion-9 {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-23 {
+.emotion-28 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -248,43 +243,43 @@ exports[`Sidebar renders correctly when closed 1`] = `
   text-decoration: none;
 }
 
-.emotion-23 svg {
+.emotion-28 svg {
   fill: #0a68c1;
 }
 
-.emotion-23:hover:not(:disabled) {
+.emotion-28:hover:not(:disabled) {
   color: #02509b;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-23:hover:not(:disabled) svg {
+.emotion-28:hover:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-23:active:not(:disabled) {
+.emotion-28:active:not(:disabled) {
   color: #01396e;
 }
 
-.emotion-23:active:not(:disabled) svg {
+.emotion-28:active:not(:disabled) svg {
   fill: #01396e;
 }
 
-.emotion-23:visited:not(:disabled) {
+.emotion-28:visited:not(:disabled) {
   color: #0a68c1;
 }
 
-.emotion-23:visited:not(:disabled) svg {
+.emotion-28:visited:not(:disabled) svg {
   fill: #0a68c1;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-23 {
+  .emotion-28 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-27 {
+.emotion-32 {
   width: 276px;
   padding: 0 24px;
   position: fixed;
@@ -306,7 +301,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-27 {
+  .emotion-32 {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -314,12 +309,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 <div
-    class="emotion-27"
+    class="emotion-32"
     data-testid="sidebar"
     role="complementary"
   >
     <div
-      class="emotion-8"
+      class="emotion-9"
     >
       <a
         class="emotion-3"
@@ -346,26 +341,24 @@ exports[`Sidebar renders correctly when closed 1`] = `
         </span>
       </a>
       <div
-        class="emotion-7"
+        class="emotion-8"
       >
         <div
-          class="emotion-6"
+          class="emotion-7"
         >
           <div
-            class="emotion-5"
+            class="emotion-6"
             data-testid="close-icon"
             tabindex="0"
           >
             <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-4"
+              aria-hidden="true"
+              class="emotion-4 emotion-5"
+              fill="currentColor"
+              focusable="false"
               viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                Close
-              </title>
               <path
                 d="M0 0h24v24H0z"
                 fill="none"
@@ -380,173 +373,133 @@ exports[`Sidebar renders correctly when closed 1`] = `
     </div>
     <nav
       aria-label="Sidebar"
-      class="emotion-26"
+      class="emotion-31"
       role="navigation"
     >
       <ul
-        class="emotion-25"
+        class="emotion-30"
         role="list"
       >
         <li
-          class="emotion-11"
+          class="emotion-13"
         >
           <div
-            class="emotion-10"
+            class="emotion-12"
             data-testid="/guides"
             tabindex="0"
           >
             Getting Started
             <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-9"
-              viewBox="0 0 16 16"
+              aria-hidden="true"
+              class="emotion-4 emotion-5"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                close icon
-              </title>
-              <g
+              <path
+                d="M0 0h24v24H0z"
                 fill="none"
-              >
-                <mask
-                  fill="white"
-                >
-                  <polygon
-                    points="7 10 12 15 17 10"
-                  />
-                </mask>
-                <polygon
-                  fill="#666"
-                  points="7 10 12 15 17 10"
-                />
-              </g>
+              />
+              <path
+                d="M7 10l5 5 5-5z"
+              />
             </svg>
           </div>
         </li>
         <li
-          class="emotion-11"
+          class="emotion-13"
         >
           <div
-            class="emotion-10"
+            class="emotion-12"
             data-testid="/theming"
             tabindex="0"
           >
             Theming
             <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-9"
-              viewBox="0 0 16 16"
+              aria-hidden="true"
+              class="emotion-4 emotion-5"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                close icon
-              </title>
-              <g
+              <path
+                d="M0 0h24v24H0z"
                 fill="none"
-              >
-                <mask
-                  fill="white"
-                >
-                  <polygon
-                    points="7 10 12 15 17 10"
-                  />
-                </mask>
-                <polygon
-                  fill="#666"
-                  points="7 10 12 15 17 10"
-                />
-              </g>
+              />
+              <path
+                d="M7 10l5 5 5-5z"
+              />
             </svg>
           </div>
         </li>
         <li
-          class="emotion-11"
+          class="emotion-13"
         >
           <div
-            class="emotion-10"
+            class="emotion-12"
             data-testid="/components"
             tabindex="0"
           >
             Components
             <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-9"
-              viewBox="0 0 16 16"
+              aria-hidden="true"
+              class="emotion-4 emotion-5"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                close icon
-              </title>
-              <g
+              <path
+                d="M0 0h24v24H0z"
                 fill="none"
-              >
-                <mask
-                  fill="white"
-                >
-                  <polygon
-                    points="7 10 12 15 17 10"
-                  />
-                </mask>
-                <polygon
-                  fill="#666"
-                  points="7 10 12 15 17 10"
-                />
-              </g>
+              />
+              <path
+                d="M7 10l5 5 5-5z"
+              />
             </svg>
           </div>
         </li>
         <li
-          class="emotion-11"
+          class="emotion-13"
         >
           <div
-            class="emotion-10"
+            class="emotion-12"
             data-testid="/utils"
             tabindex="0"
           >
             Utilities
             <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-9"
-              viewBox="0 0 16 16"
+              aria-hidden="true"
+              class="emotion-4 emotion-5"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                close icon
-              </title>
-              <g
+              <path
+                d="M0 0h24v24H0z"
                 fill="none"
-              >
-                <mask
-                  fill="white"
-                >
-                  <polygon
-                    points="7 10 12 15 17 10"
-                  />
-                </mask>
-                <polygon
-                  fill="#666"
-                  points="7 10 12 15 17 10"
-                />
-              </g>
+              />
+              <path
+                d="M7 10l5 5 5-5z"
+              />
             </svg>
           </div>
         </li>
         <li
-          class="emotion-11"
+          class="emotion-13"
         >
           <a
-            class="emotion-23"
+            class="emotion-28"
             href="/feedback"
           >
             <span
               class="emotion-2"
             >
               <div
-                class="emotion-10"
+                class="emotion-12"
                 data-testid="/feedback"
                 tabindex="-1"
               >
@@ -588,7 +541,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 exports[`Sidebar renders correctly when open 1`] = `
 <DocumentFragment>
-  .emotion-27 {
+  .emotion-32 {
   width: 276px;
   padding: 0 24px;
   position: fixed;
@@ -610,14 +563,14 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-27 {
+  .emotion-32 {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
 }
 
-.emotion-8 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -638,7 +591,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .emotion-8 {
+  .emotion-9 {
     padding-top: 12px;
     padding-bottom: 12px;
     margin-bottom: 32px;
@@ -702,36 +655,36 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen {
-  .emotion-7 {
+  .emotion-8 {
     display: block;
   }
 }
 
 @media screen and (min-width:480px) {
-  .emotion-7 {
+  .emotion-8 {
     display: block;
   }
 }
 
 @media screen and (min-width:768px) {
-  .emotion-7 {
+  .emotion-8 {
     display: block;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-7 {
+  .emotion-8 {
     display: none;
   }
 }
 
 @media screen and (min-width:1440px) {
-  .emotion-7 {
+  .emotion-8 {
     display: none;
   }
 }
 
-.emotion-6 {
+.emotion-7 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -739,15 +692,17 @@ exports[`Sidebar renders correctly when open 1`] = `
   display: flex;
 }
 
-.emotion-5 {
+.emotion-6 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
 .emotion-4 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  vertical-align: unset;
   display: inline-block;
 }
 
@@ -756,7 +711,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   height: 16px;
 }
 
-.emotion-26 {
+.emotion-31 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -769,24 +724,24 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin: 0;
 }
 
-.emotion-25 {
+.emotion-30 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-11 {
+.emotion-13 {
   list-style-type: none;
   margin: 0px;
   padding: 0 4px;
 }
 
-.emotion-11 .emotion-11,
-.emotion-11 .emotion-11 .emotion-11 {
+.emotion-13 .emotion-13,
+.emotion-13 .emotion-13 .emotion-13 {
   padding-right: 0;
 }
 
-.emotion-10 {
+.emotion-12 {
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -811,22 +766,22 @@ exports[`Sidebar renders correctly when open 1`] = `
   overflow: hidden;
 }
 
-.emotion-10:hover {
+.emotion-12:hover {
   color: #2e2e2e;
   background-color: #e6f4ff;
 }
 
-.emotion-10:focus {
+.emotion-12:focus {
   outline: none;
   color: #ffffff;
   background-color: #0a68c1;
 }
 
-.emotion-10:focus svg polygon {
+.emotion-12:focus svg polygon {
   fill: #ffffff;
 }
 
-.emotion-10 a {
+.emotion-12 a {
   color: #0a0a0a;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -835,22 +790,15 @@ exports[`Sidebar renders correctly when open 1`] = `
   height: 100%;
 }
 
-.emotion-10 a:visited {
+.emotion-12 a:visited {
   color: #0a0a0a;
 }
 
-.emotion-9 {
-  fill: #2e2e2e;
-  color: #2e2e2e;
+.emotion-12 svg {
   float: right;
 }
 
-.emotion-9.emotion-9 {
-  width: 16px;
-  height: 16px;
-}
-
-.emotion-23 {
+.emotion-28 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -863,50 +811,50 @@ exports[`Sidebar renders correctly when open 1`] = `
   text-decoration: none;
 }
 
-.emotion-23 svg {
+.emotion-28 svg {
   fill: #0a68c1;
 }
 
-.emotion-23:hover:not(:disabled) {
+.emotion-28:hover:not(:disabled) {
   color: #02509b;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-23:hover:not(:disabled) svg {
+.emotion-28:hover:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-23:active:not(:disabled) {
+.emotion-28:active:not(:disabled) {
   color: #01396e;
 }
 
-.emotion-23:active:not(:disabled) svg {
+.emotion-28:active:not(:disabled) svg {
   fill: #01396e;
 }
 
-.emotion-23:visited:not(:disabled) {
+.emotion-28:visited:not(:disabled) {
   color: #0a68c1;
 }
 
-.emotion-23:visited:not(:disabled) svg {
+.emotion-28:visited:not(:disabled) svg {
   fill: #0a68c1;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-23 {
+  .emotion-28 {
     vertical-align: text-bottom;
   }
 }
 
 <div
-    class="emotion-27"
+    class="emotion-32"
     data-testid="sidebar"
     open=""
     role="complementary"
   >
     <div
-      class="emotion-8"
+      class="emotion-9"
     >
       <a
         class="emotion-3"
@@ -933,26 +881,24 @@ exports[`Sidebar renders correctly when open 1`] = `
         </span>
       </a>
       <div
-        class="emotion-7"
+        class="emotion-8"
       >
         <div
-          class="emotion-6"
+          class="emotion-7"
         >
           <div
-            class="emotion-5"
+            class="emotion-6"
             data-testid="close-icon"
             tabindex="0"
           >
             <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-4"
+              aria-hidden="true"
+              class="emotion-4 emotion-5"
+              fill="currentColor"
+              focusable="false"
               viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                Close
-              </title>
               <path
                 d="M0 0h24v24H0z"
                 fill="none"
@@ -967,173 +913,133 @@ exports[`Sidebar renders correctly when open 1`] = `
     </div>
     <nav
       aria-label="Sidebar"
-      class="emotion-26"
+      class="emotion-31"
       role="navigation"
     >
       <ul
-        class="emotion-25"
+        class="emotion-30"
         role="list"
       >
         <li
-          class="emotion-11"
+          class="emotion-13"
         >
           <div
-            class="emotion-10"
+            class="emotion-12"
             data-testid="/guides"
             tabindex="0"
           >
             Getting Started
             <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-9"
-              viewBox="0 0 16 16"
+              aria-hidden="true"
+              class="emotion-4 emotion-5"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                close icon
-              </title>
-              <g
+              <path
+                d="M0 0h24v24H0z"
                 fill="none"
-              >
-                <mask
-                  fill="white"
-                >
-                  <polygon
-                    points="7 10 12 15 17 10"
-                  />
-                </mask>
-                <polygon
-                  fill="#666"
-                  points="7 10 12 15 17 10"
-                />
-              </g>
+              />
+              <path
+                d="M7 10l5 5 5-5z"
+              />
             </svg>
           </div>
         </li>
         <li
-          class="emotion-11"
+          class="emotion-13"
         >
           <div
-            class="emotion-10"
+            class="emotion-12"
             data-testid="/theming"
             tabindex="0"
           >
             Theming
             <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-9"
-              viewBox="0 0 16 16"
+              aria-hidden="true"
+              class="emotion-4 emotion-5"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                close icon
-              </title>
-              <g
+              <path
+                d="M0 0h24v24H0z"
                 fill="none"
-              >
-                <mask
-                  fill="white"
-                >
-                  <polygon
-                    points="7 10 12 15 17 10"
-                  />
-                </mask>
-                <polygon
-                  fill="#666"
-                  points="7 10 12 15 17 10"
-                />
-              </g>
+              />
+              <path
+                d="M7 10l5 5 5-5z"
+              />
             </svg>
           </div>
         </li>
         <li
-          class="emotion-11"
+          class="emotion-13"
         >
           <div
-            class="emotion-10"
+            class="emotion-12"
             data-testid="/components"
             tabindex="0"
           >
             Components
             <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-9"
-              viewBox="0 0 16 16"
+              aria-hidden="true"
+              class="emotion-4 emotion-5"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                close icon
-              </title>
-              <g
+              <path
+                d="M0 0h24v24H0z"
                 fill="none"
-              >
-                <mask
-                  fill="white"
-                >
-                  <polygon
-                    points="7 10 12 15 17 10"
-                  />
-                </mask>
-                <polygon
-                  fill="#666"
-                  points="7 10 12 15 17 10"
-                />
-              </g>
+              />
+              <path
+                d="M7 10l5 5 5-5z"
+              />
             </svg>
           </div>
         </li>
         <li
-          class="emotion-11"
+          class="emotion-13"
         >
           <div
-            class="emotion-10"
+            class="emotion-12"
             data-testid="/utils"
             tabindex="0"
           >
             Utilities
             <svg
-              aria-labelledby="mock-nk-1"
-              class="emotion-9"
-              viewBox="0 0 16 16"
+              aria-hidden="true"
+              class="emotion-4 emotion-5"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <title
-                id="mock-nk-1"
-              >
-                close icon
-              </title>
-              <g
+              <path
+                d="M0 0h24v24H0z"
                 fill="none"
-              >
-                <mask
-                  fill="white"
-                >
-                  <polygon
-                    points="7 10 12 15 17 10"
-                  />
-                </mask>
-                <polygon
-                  fill="#666"
-                  points="7 10 12 15 17 10"
-                />
-              </g>
+              />
+              <path
+                d="M7 10l5 5 5-5z"
+              />
             </svg>
           </div>
         </li>
         <li
-          class="emotion-11"
+          class="emotion-13"
         >
           <a
-            class="emotion-23"
+            class="emotion-28"
             href="/feedback"
           >
             <span
               class="emotion-2"
             >
               <div
-                class="emotion-10"
+                class="emotion-12"
                 data-testid="/feedback"
                 tabindex="-1"
               >

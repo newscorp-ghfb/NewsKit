@@ -39,6 +39,7 @@ export * from './utils/get-ssr-id';
 export * from './utils/responsive-helpers';
 export * from './utils/style-types';
 export * from './utils/style';
+export * from './utils/with-default-props';
 export * from './volume-control';
 export * from './form';
 export * from './caption';

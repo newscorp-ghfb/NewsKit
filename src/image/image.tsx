@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef, useCallback} from 'react';
 import dequal from 'dequal';
-import {Placeholder} from '../icons';
+import {IconFilledPlaceholder} from '../icons';
 import {ImageProps} from './types';
 import {getAspectRatioStyles} from '../utils/get-aspect-ratio';
 import {
@@ -134,7 +134,7 @@ const ImageComponent: React.FC<ImageProps> = ({
           <LoadingContainer>
             {!hideLoadingIcon && (
               <IconContainer>
-                <Placeholder size="iconSize040" />
+                <IconFilledPlaceholder overrides={{size: 'iconSize040'}} />
               </IconContainer>
             )}
           </LoadingContainer>

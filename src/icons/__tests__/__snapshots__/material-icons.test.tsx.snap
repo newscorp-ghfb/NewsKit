@@ -8,6 +8,7 @@ exports[`Material icons should render icons with no props IconFilledAccountBalan
   overflow: hidden;
   fill: #2e2e2e;
   vertical-align: unset;
+  display: inline-block;
 }
 
 <svg
@@ -62,6 +63,7 @@ exports[`Material icons should render icons with no props IconFilledAccountTree 
   overflow: hidden;
   fill: #2e2e2e;
   vertical-align: unset;
+  display: inline-block;
 }
 
 <svg
@@ -91,6 +93,7 @@ exports[`Material icons should render icons with no props IconOutlinedAccountBal
   overflow: hidden;
   fill: #2e2e2e;
   vertical-align: unset;
+  display: inline-block;
 }
 
 <svg
@@ -120,6 +123,7 @@ exports[`Material icons should render icons with no props IconOutlinedAccountTre
   overflow: hidden;
   fill: #2e2e2e;
   vertical-align: unset;
+  display: inline-block;
 }
 
 <svg
@@ -149,6 +153,7 @@ exports[`Material icons should render icons with props IconFilledAccountBalance 
   vertical-align: middle;
   overflow: hidden;
   vertical-align: unset;
+  display: inline-block;
 }
 
 .emotion-0.emotion-0 {
@@ -210,6 +215,7 @@ exports[`Material icons should render icons with props IconFilledAccountTree 1`]
   vertical-align: middle;
   overflow: hidden;
   vertical-align: unset;
+  display: inline-block;
 }
 
 .emotion-0.emotion-0 {
@@ -246,6 +252,7 @@ exports[`Material icons should render icons with props IconOutlinedAccountBalanc
   vertical-align: middle;
   overflow: hidden;
   vertical-align: unset;
+  display: inline-block;
 }
 
 .emotion-0.emotion-0 {
@@ -282,6 +289,7 @@ exports[`Material icons should render icons with props IconOutlinedAccountTree 1
   vertical-align: middle;
   overflow: hidden;
   vertical-align: unset;
+  display: inline-block;
 }
 
 .emotion-0.emotion-0 {

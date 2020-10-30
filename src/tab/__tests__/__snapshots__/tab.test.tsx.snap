@@ -375,8 +375,13 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
 
 .emotion-0 {
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
+}
+
+.emotion-0.emotion-0 {
+  width: 48px;
+  height: 48px;
 }
 
 <div
@@ -395,15 +400,12 @@ exports[`Tab renders label and icon with fallback formatting 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-nk-1"
+            aria-hidden="true"
             class="emotion-0"
+            fill="currentColor"
             viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <title
-              id="mock-nk-1"
-            >
-              Circle
-            </title>
             <circle
               cx="12"
               cy="12"
@@ -1001,8 +1003,13 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
 
 .emotion-0 {
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
+}
+
+.emotion-0.emotion-0 {
+  width: 48px;
+  height: 48px;
 }
 
 .emotion-5 {
@@ -1093,15 +1100,12 @@ exports[`Tab renders with a leading icon and custom iconSize 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-nk-1"
+            aria-hidden="true"
             class="emotion-0"
+            fill="currentColor"
             viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <title
-              id="mock-nk-1"
-            >
-              Circle
-            </title>
             <circle
               cx="12"
               cy="12"
@@ -1237,8 +1241,13 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
 
 .emotion-2 {
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
+}
+
+.emotion-2.emotion-2 {
+  width: 48px;
+  height: 48px;
 }
 
 .emotion-4 {
@@ -1296,15 +1305,12 @@ exports[`Tab renders with a trailing icon and custom spacing between elements 1`
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-nk-1"
+            aria-hidden="true"
             class="emotion-2"
+            fill="currentColor"
             viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <title
-              id="mock-nk-1"
-            >
-              Circle
-            </title>
             <circle
               cx="12"
               cy="12"
@@ -1629,8 +1635,13 @@ exports[`Tab should render custom aria-label tab 1`] = `
 
 .emotion-2 {
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
+}
+
+.emotion-2.emotion-2 {
+  width: 48px;
+  height: 48px;
 }
 
 <div
@@ -1659,15 +1670,12 @@ exports[`Tab should render custom aria-label tab 1`] = `
           class="emotion-1"
         >
           <svg
-            aria-labelledby="mock-nk-1"
+            aria-hidden="true"
             class="emotion-2"
+            fill="currentColor"
             viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <title
-              id="mock-nk-1"
-            >
-              Circle
-            </title>
             <circle
               cx="12"
               cy="12"

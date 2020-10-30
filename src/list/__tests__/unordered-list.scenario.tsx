@@ -4,12 +4,12 @@ import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {Twitter, Circle} from '../../icons';
+import {IconFilledTwitter, IconFilledMood} from '../../icons';
 import {Link} from '../../link';
 
 const listData = [
   `alpha`,
-  <Twitter key="uniqueIconKey" size="iconSize010" />,
+  <IconFilledTwitter key="uniqueIconKey" overrides={{size: 'iconSize010'}} />,
   2,
   `Lorem ipsum dolor sit amet...`,
   <Link key="uniqueLinkKey" href="http://localhost:6006">
@@ -37,14 +37,16 @@ export default {
         <React.Fragment>
           <StorybookHeading>Unordered list</StorybookHeading>
           <StorybookSubHeading>with markers</StorybookSubHeading>
-          <UnorderedList listItemMarker={Circle}>{listData}</UnorderedList>
+          <UnorderedList listItemMarker={IconFilledMood}>
+            {listData}
+          </UnorderedList>
           <br />
           <StorybookSubHeading>
             with markers and overridden marker iconSize
           </StorybookSubHeading>
           <UnorderedList
             overrides={{marker: {size: 'iconSize020'}}}
-            listItemMarker={Circle}
+            listItemMarker={IconFilledMood}
           >
             {listData}
           </UnorderedList>

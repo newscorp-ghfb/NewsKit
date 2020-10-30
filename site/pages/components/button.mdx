@@ -5,7 +5,7 @@ import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Selector} from '../../components/playground/selector';
 import {CodeFromDefaultPresets} from '../../components/code';
-import {Button, IconButton, ButtonSize, Email, Pause} from 'newskit';
+import {Button, IconButton, ButtonSize, IconFilledEmail} from 'newskit';
 
 export default Layout;
 
@@ -110,7 +110,7 @@ Custom props are detailed below:
   componentName="Button"
   component={state => (
     <Button {...state}>
-      <Email />
+      <IconFilledEmail />
       Click me!
     </Button>
   )}
@@ -242,8 +242,8 @@ Custom props are detailed below:
 <Playground
   componentName="IconButton"
   component={state => (
-    <IconButton {...state}>
-      <Email />
+    <IconButton {...state} aria-label="Email icon">
+      <IconFilledEmail />
     </IconButton>
   )}
   knobs={[

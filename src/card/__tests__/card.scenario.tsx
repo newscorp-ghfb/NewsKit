@@ -12,7 +12,7 @@ import {Flag} from '../../flag';
 import {Headline} from '../../headline';
 import {TextBlock} from '../../text-block';
 import {Block} from '../../block';
-import {Picture} from '../../icons';
+import {IconFilledImage} from '../../icons';
 import {styled} from '../../utils/style';
 import {createTheme, ThemeProvider} from '../../theme';
 
@@ -217,7 +217,7 @@ const cardBodyBase = ({inset}: {inset: boolean}) => ({
           minHeight: 'sizing000',
         }}
       >
-        <Picture />
+        <IconFilledImage />
         IMAGE
       </Flag>
     </FlexBlock>

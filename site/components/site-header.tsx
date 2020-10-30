@@ -10,12 +10,13 @@ import {
   getShadowFromTheme,
   getTypographyPresetFromTheme,
   styled,
+  IconFilledMenu,
+  IconFilledSearch,
 } from 'newskit';
 
 import {LegacyBlock} from './legacy-block';
 import {Link} from './link';
 import {NewsKitMobileLogo} from './logo';
-import {MenuIcon, SearchIcon} from './icons';
 import {ThemeSwitch} from './theme-switch';
 import {handleEnterKeyPress} from '../helpers/a11y';
 
@@ -84,7 +85,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
           tabIndex={0}
           data-testid="mobile-menu-icon"
         >
-          <MenuIcon />
+          <IconFilledMenu overrides={{size: 'iconSize020'}} />
         </MobileMenu>
         <MobileLogo />
       </LegacyBlock>
@@ -133,7 +134,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
 
                 <Hidden xs sm md lg xl>
                   <SearchContainer data-testid="search">
-                    <SearchIcon />
+                    <IconFilledSearch />
                   </SearchContainer>
                 </Hidden>
                 <ThemeSwitch toggle={toggleTheme} themeMode={themeMode} />

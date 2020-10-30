@@ -1,7 +1,7 @@
 import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {UnorderedList, UnorderedListProps, StyledUl} from '..';
-import {Twitter} from '../../icons';
+import {IconFilledMood} from '../../icons';
 import {Link} from '../../link/link';
 
 const renderUnorderedListWithItems = (props: UnorderedListProps) => (
@@ -22,7 +22,7 @@ describe('UnorderedList', () => {
 
   test('renders with custom list item marker', () => {
     const props: UnorderedListProps = {
-      listItemMarker: Twitter,
+      listItemMarker: IconFilledMood,
     };
     const fragment = renderToFragmentWithTheme(
       renderUnorderedListWithItems,
@@ -34,7 +34,7 @@ describe('UnorderedList', () => {
   test('renders with custom list item marker with different size', () => {
     const props: UnorderedListProps = {
       overrides: {marker: {size: 'iconSize010'}},
-      listItemMarker: Twitter,
+      listItemMarker: IconFilledMood,
     };
     const fragment = renderToFragmentWithTheme(
       renderUnorderedListWithItems,

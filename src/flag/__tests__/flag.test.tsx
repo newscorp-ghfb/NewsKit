@@ -1,7 +1,7 @@
 import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {Flag, FlagSize, FlagProps} from '..';
-import {Email} from '../../icons';
+import {IconFilledEmail} from '../../icons';
 
 const flagSizeKeys = (Object.keys(FlagSize) as unknown) as Array<
   keyof typeof FlagSize
@@ -10,7 +10,7 @@ const flagSizeKeys = (Object.keys(FlagSize) as unknown) as Array<
 const renderFlagWithText = (props: FlagProps) => <Flag {...props}>Text</Flag>;
 const renderFlagWithTextAndIcon = (props: FlagProps) => (
   <Flag {...props}>
-    <Email size="iconSize010" />
+    <IconFilledEmail overrides={{size: 'iconSize010'}} />
     Text
   </Flag>
 );

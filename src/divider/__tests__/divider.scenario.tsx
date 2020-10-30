@@ -8,7 +8,7 @@ import {
 import {Stack} from '../../stack';
 import {Block} from '../../block';
 import {StackChild, AlignSelfValues} from '../../stack-child';
-import {Facebook, WhatsApp} from '../../icons';
+import {IconFilledFacebook, IconFilledWhatsApp} from '../../icons';
 import {getSizingFromTheme} from '../../utils/style';
 
 const Box = styled.div`
@@ -64,13 +64,13 @@ export default {
           <StorybookSubHeading>in vertical block</StorybookSubHeading>
           <BlockForHorizontalDivider>
             <IconContainer overrides={{spaceStack: 'space020'}}>
-              <Facebook size="iconSize040" />
+              <IconFilledFacebook overrides={{size: 'iconSize040'}} />
             </IconContainer>
             <Block overrides={{spaceStack: 'space020'}}>
               <Divider />
             </Block>
             <IconContainer>
-              <WhatsApp size="iconSize040" />
+              <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
             </IconContainer>
           </BlockForHorizontalDivider>
           <br />
@@ -82,9 +82,9 @@ export default {
               stackDistribution="center"
               flow="vertical-center"
             >
-              <Facebook size="iconSize040" />
+              <IconFilledFacebook overrides={{size: 'iconSize040'}} />
               <Divider />
-              <WhatsApp size="iconSize040" />
+              <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
             </StackForHorizontalDivider>
           </BlockWithBorder>
           <br />
@@ -97,11 +97,11 @@ export default {
               stackDistribution="center"
               flow="vertical-center"
             >
-              <Facebook size="iconSize040" />
+              <IconFilledFacebook overrides={{size: 'iconSize040'}} />
               <StackChild alignSelf={AlignSelfValues.Stretch}>
                 <Divider />
               </StackChild>
-              <WhatsApp size="iconSize040" />
+              <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
             </StackForHorizontalDivider>
           </BlockWithBorder>
         </React.Fragment>
@@ -121,13 +121,13 @@ export default {
           <StorybookSubHeading>in horizontal Inline Block</StorybookSubHeading>
           <Block>
             <IconContainerInline overrides={{spaceInline: 'space020'}}>
-              <Facebook size="iconSize040" />
+              <IconFilledFacebook overrides={{size: 'iconSize040'}} />
             </IconContainerInline>
             <InlineDividerContainer overrides={{spaceInline: 'space020'}}>
               <Divider vertical />
             </InlineDividerContainer>
             <IconContainerInline>
-              <WhatsApp size="iconSize040" />
+              <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
             </IconContainerInline>
           </Block>
           <br />
@@ -136,11 +136,11 @@ export default {
           </StorybookSubHeading>
           <BlockWithBorder>
             <Stack flow="horizontal-center" stackDistribution="center">
-              <Facebook size="iconSize040" />
+              <IconFilledFacebook overrides={{size: 'iconSize040'}} />
               <StackChild alignSelf={AlignSelfValues.Stretch}>
                 <Divider vertical />
               </StackChild>
-              <WhatsApp size="iconSize040" />
+              <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
             </Stack>
           </BlockWithBorder>
           <br />
@@ -153,11 +153,11 @@ export default {
               stackDistribution="center"
               spaceInline="sizing030"
             >
-              <Facebook size="iconSize040" />
+              <IconFilledFacebook overrides={{size: 'iconSize040'}} />
               <StackChild alignSelf={AlignSelfValues.Stretch}>
                 <Divider vertical />
               </StackChild>
-              <WhatsApp size="iconSize040" />
+              <IconFilledWhatsApp overrides={{size: 'iconSize040'}} />
             </Stack>
           </BlockWithBorder>
           <br />

@@ -8,7 +8,7 @@ import {
   StyledSwatchCardBottom,
   StyledSwatchCardTitle,
   StyledSwatchCardDot,
-  BadgeContainer,
+  StyledBadgeContainer,
   StyledSwatchCardTop,
   StyledSwatchCardTopOverlay,
 } from './styled';
@@ -38,11 +38,17 @@ export const SwatchRow: SwatchComponent = ({
           <Stack flow="horizontal-center" spaceInline="sizing050">
             {color.parentColor && <span>({color.parentColor.name})</span>}
             <span>{colorTokenToUpperCase(color.value)}</span>
-            <BadgeContainer>
-              <StyledAccessibilityBadge>
+            <StyledBadgeContainer>
+              <StyledAccessibilityBadge
+                overrides={{
+                  stylePreset: 'swatchBadge',
+                  width: 'sizing070',
+                  height: 'sizing060',
+                }}
+              >
                 {color.contrastRating}
               </StyledAccessibilityBadge>
-            </BadgeContainer>
+            </StyledBadgeContainer>
           </Stack>
         </span>
       </Stack>

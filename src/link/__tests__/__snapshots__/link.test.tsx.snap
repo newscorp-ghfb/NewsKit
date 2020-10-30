@@ -362,7 +362,7 @@ exports[`Link renders correctly with noUnderline property 1`] = `
 
 exports[`Link renders the external icon even if the href is internal 1`] = `
 <DocumentFragment>
-  .emotion-5 {
+  .emotion-6 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -373,36 +373,36 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
   color: #0a68c1;
 }
 
-.emotion-5 svg {
+.emotion-6 svg {
   fill: #0a68c1;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-6:hover:not(:disabled) {
   color: #02509b;
 }
 
-.emotion-5:hover:not(:disabled) svg {
+.emotion-6:hover:not(:disabled) svg {
   fill: #02509b;
 }
 
-.emotion-5:active:not(:disabled) {
+.emotion-6:active:not(:disabled) {
   color: #01396e;
 }
 
-.emotion-5:active:not(:disabled) svg {
+.emotion-6:active:not(:disabled) svg {
   fill: #01396e;
 }
 
-.emotion-5:visited:not(:disabled) {
+.emotion-6:visited:not(:disabled) {
   color: #7547a3;
 }
 
-.emotion-5:visited:not(:disabled) svg {
+.emotion-6:visited:not(:disabled) svg {
   fill: #7547a3;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-5 {
+  .emotion-6 {
     vertical-align: text-bottom;
   }
 }
@@ -414,7 +414,7 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
   display: block;
 }
 
-.emotion-4 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -445,8 +445,11 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
 }
 
 .emotion-2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
   fill: #2e2e2e;
-  color: #2e2e2e;
+  vertical-align: unset;
   display: inline-block;
 }
 
@@ -456,11 +459,11 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
 }
 
 <a
-    class="emotion-5"
+    class="emotion-6"
     href="/relative"
   >
     <span
-      class="emotion-4"
+      class="emotion-5"
     >
       <span
         class="emotion-1"
@@ -475,13 +478,14 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
         class="emotion-1"
       >
         <svg
-          aria-labelledby="mock-nk-1"
-          class="emotion-2"
+          class="emotion-2 emotion-3"
+          fill="currentColor"
+          focusable="false"
+          role="img"
           viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <title
-            id="mock-nk-1"
-          >
+          <title>
             External link
           </title>
           <path
@@ -489,7 +493,7 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
             fill="none"
           />
           <path
-            d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+            d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
           />
         </svg>
       </span>

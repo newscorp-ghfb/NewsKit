@@ -13,9 +13,9 @@ import {
   newskitLightTheme,
   IconButton,
   ButtonSize,
-  Facebook,
-  Twitter,
-  WhatsApp,
+  IconFilledFacebook,
+  IconFilledTwitter,
+  IconFilledWhatsApp,
   Stack,
   Flow,
   Tag,
@@ -57,24 +57,27 @@ const Article: React.FC = () => (
                 overrides={{
                   stylePreset: 'buttonSocialTwitter',
                 }}
+                aria-label="Share on Twitter"
               >
-                <Twitter />
+                <IconFilledTwitter />
               </IconButton>
               <IconButton
                 size={ButtonSize.Large}
                 overrides={{
                   stylePreset: 'buttonSocialFacebook',
                 }}
+                aria-label="Share on Facebook"
               >
-                <Facebook />
+                <IconFilledFacebook />
               </IconButton>
               <IconButton
                 size={ButtonSize.Large}
                 overrides={{
                   stylePreset: 'buttonSocialWhatsapp',
                 }}
+                aria-label="Share on Whatsapp"
               >
-                <WhatsApp />
+                <IconFilledWhatsApp />
               </IconButton>
             </ShareBar>
           </Cell>

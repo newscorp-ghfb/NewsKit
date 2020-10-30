@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {ShareBar, ShareBarProps} from '..';
-import {Facebook, Twitter} from '../../icons';
+import {IconFilledFacebook, IconFilledTwitter} from '../../icons';
 import {Link} from '../../link';
 import {Button} from '../../button';
 
@@ -14,8 +14,8 @@ describe('ShareBar', () => {
   test('renders horizontally with twitter and facebook icons', () => {
     const fragment = renderToFragmentWithTheme(ShareBar, {
       children: [
-        <Facebook size="iconSize040" />,
-        <Twitter size="iconSize040" />,
+        <IconFilledFacebook overrides={{size: 'iconSize040'}} />,
+        <IconFilledTwitter overrides={{size: 'iconSize040'}} />,
       ],
     } as ShareBarProps);
 
@@ -25,8 +25,8 @@ describe('ShareBar', () => {
   test('renders vertically with twitter and facebook icons', () => {
     const fragment = renderToFragmentWithTheme(ShareBar, {
       children: [
-        <Facebook size="iconSize040" />,
-        <Twitter size="iconSize040" />,
+        <IconFilledFacebook overrides={{size: 'iconSize040'}} />,
+        <IconFilledTwitter overrides={{size: 'iconSize040'}} />,
       ],
       vertical: true,
     } as ShareBarProps);
@@ -37,8 +37,8 @@ describe('ShareBar', () => {
   test('renders horizontally with icons and label', () => {
     const fragment = renderToFragmentWithTheme(ShareBar, {
       children: [
-        <Facebook size="iconSize040" />,
-        <Twitter size="iconSize040" />,
+        <IconFilledFacebook overrides={{size: 'iconSize040'}} />,
+        <IconFilledTwitter overrides={{size: 'iconSize040'}} />,
       ],
       label: 'Share',
     } as ShareBarProps);
@@ -49,8 +49,8 @@ describe('ShareBar', () => {
   test('renders vertically with icons and label', () => {
     const fragment = renderToFragmentWithTheme(ShareBar, {
       children: [
-        <Facebook size="iconSize040" />,
-        <Twitter size="iconSize040" />,
+        <IconFilledFacebook overrides={{size: 'iconSize040'}} />,
+        <IconFilledTwitter overrides={{size: 'iconSize040'}} />,
       ],
       label: 'Share',
       vertical: true,
@@ -63,10 +63,10 @@ describe('ShareBar', () => {
     const fragment = renderToFragmentWithTheme(ShareBar, {
       children: [
         <Link href="/">
-          <Facebook size="iconSize040" />
+          <IconFilledFacebook overrides={{size: 'iconSize040'}} />
         </Link>,
         <Link href="/">
-          <Twitter size="iconSize040" />
+          <IconFilledTwitter overrides={{size: 'iconSize040'}} />
         </Link>,
       ],
       label: 'Share',
@@ -79,10 +79,10 @@ describe('ShareBar', () => {
     const fragment = renderToFragmentWithTheme(ShareBar, {
       children: [
         <Link href="/">
-          <Facebook size="iconSize040" />
+          <IconFilledFacebook overrides={{size: 'iconSize040'}} />
         </Link>,
         <Link href="/">
-          <Twitter size="iconSize040" />
+          <IconFilledTwitter overrides={{size: 'iconSize040'}} />
         </Link>,
         <Button>more options</Button>,
       ],
@@ -96,10 +96,10 @@ describe('ShareBar', () => {
     const fragment = renderToFragmentWithTheme(ShareBar, {
       children: [
         <Link href="/">
-          <Facebook size="iconSize040" />
+          <IconFilledFacebook overrides={{size: 'iconSize040'}} />
         </Link>,
         <Link href="/">
-          <Twitter size="iconSize040" />
+          <IconFilledTwitter overrides={{size: 'iconSize040'}} />
         </Link>,
         <Button>more options</Button>,
       ],
@@ -118,10 +118,10 @@ describe('ShareBar', () => {
     const fragment = renderToFragmentWithTheme(ShareBar, {
       children: [
         <Link href="/">
-          <Facebook size="iconSize040" />
+          <IconFilledFacebook overrides={{size: 'iconSize040'}} />
         </Link>,
         <Link href="/">
-          <Twitter size="iconSize040" />
+          <IconFilledTwitter overrides={{size: 'iconSize040'}} />
         </Link>,
         <Button>more options</Button>,
       ],
@@ -140,10 +140,10 @@ describe('ShareBar', () => {
     const fragment = renderToFragmentWithTheme(ShareBar, {
       children: [
         <Link href="/">
-          <Facebook size="iconSize040" />
+          <IconFilledFacebook overrides={{size: 'iconSize040'}} />
         </Link>,
         <Link href="/">
-          <Twitter size="iconSize040" />
+          <IconFilledTwitter overrides={{size: 'iconSize040'}} />
         </Link>,
         <Button>more options</Button>,
       ],
@@ -162,10 +162,10 @@ describe('ShareBar', () => {
     const fragment = renderToFragmentWithTheme(ShareBar, {
       children: [
         <Link href="/">
-          <Facebook size="iconSize040" />
+          <IconFilledFacebook overrides={{size: 'iconSize040'}} />
         </Link>,
         <Link href="/">
-          <Twitter size="iconSize040" />
+          <IconFilledTwitter overrides={{size: 'iconSize040'}} />
         </Link>,
         <Button>more options</Button>,
       ],
@@ -185,10 +185,10 @@ describe('ShareBar', () => {
     const fragment = renderToFragmentWithTheme(ShareBar, {
       children: [
         <Link href="/">
-          <Facebook size="iconSize040" />
+          <IconFilledFacebook overrides={{size: 'iconSize040'}} />
         </Link>,
         <Link href="/">
-          <Twitter size="iconSize040" />
+          <IconFilledTwitter overrides={{size: 'iconSize040'}} />
         </Link>,
         <Button>more options</Button>,
       ],
@@ -208,10 +208,10 @@ describe('ShareBar', () => {
     const fragment = renderToFragmentWithTheme(ShareBar, {
       children: [
         <Link href="/">
-          <Facebook size="iconSize040" />
+          <IconFilledFacebook overrides={{size: 'iconSize040'}} />
         </Link>,
         <Link href="/">
-          <Twitter size="iconSize040" />
+          <IconFilledTwitter overrides={{size: 'iconSize040'}} />
         </Link>,
         <Button>more options</Button>,
       ],
