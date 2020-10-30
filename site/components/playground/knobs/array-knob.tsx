@@ -83,7 +83,6 @@ const renderRow = (
     return (
       <LegacyBlock display="flex" flexGrow={1} maxWidth="350px">
         <InputKnob
-          key={label + length}
           label={label}
           labelVisible={false}
           value={value}
@@ -143,7 +142,8 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
             <Stack
               flow={Flow.HorizontalBottom}
               spaceInline="sizing020"
-              key={label + value}
+              /* eslint-disable-next-line react/no-array-index-key */
+              key={label + i}
             >
               {row}
               <ButtonContainer>
