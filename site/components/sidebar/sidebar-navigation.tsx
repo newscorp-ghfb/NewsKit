@@ -24,11 +24,11 @@ const renderIcon = ({
 
   return active ? (
     <IconFilledArrowDropDown
-      overrides={{size: 'iconSize010', stylePreset: 'arrowIcon'}}
+      overrides={{size: 'iconSize020', stylePreset: 'arrowIcon'}}
     />
   ) : (
     <IconFilledArrowDropUp
-      overrides={{size: 'iconSize010', stylePreset: 'arrowIcon'}}
+      overrides={{size: 'iconSize020', stylePreset: 'arrowIcon'}}
     />
   );
 };

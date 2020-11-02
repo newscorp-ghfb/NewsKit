@@ -230,6 +230,19 @@ exports[`Sidebar renders correctly when closed 1`] = `
   float: right;
 }
 
+.emotion-10 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-10.emotion-10 {
+  width: 24px;
+  height: 24px;
+}
+
 .emotion-28 {
   display: inline-block;
   -webkit-transition-property: color;
@@ -391,7 +404,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
             Getting Started
             <svg
               aria-hidden="true"
-              class="emotion-4 emotion-5"
+              class="emotion-10 emotion-5"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -418,7 +431,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
             Theming
             <svg
               aria-hidden="true"
-              class="emotion-4 emotion-5"
+              class="emotion-10 emotion-5"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -445,7 +458,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
             Components
             <svg
               aria-hidden="true"
-              class="emotion-4 emotion-5"
+              class="emotion-10 emotion-5"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -472,7 +485,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
             Utilities
             <svg
               aria-hidden="true"
-              class="emotion-4 emotion-5"
+              class="emotion-10 emotion-5"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -798,6 +811,19 @@ exports[`Sidebar renders correctly when open 1`] = `
   float: right;
 }
 
+.emotion-10 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-10.emotion-10 {
+  width: 24px;
+  height: 24px;
+}
+
 .emotion-28 {
   display: inline-block;
   -webkit-transition-property: color;
@@ -931,7 +957,7 @@ exports[`Sidebar renders correctly when open 1`] = `
             Getting Started
             <svg
               aria-hidden="true"
-              class="emotion-4 emotion-5"
+              class="emotion-10 emotion-5"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -958,7 +984,7 @@ exports[`Sidebar renders correctly when open 1`] = `
             Theming
             <svg
               aria-hidden="true"
-              class="emotion-4 emotion-5"
+              class="emotion-10 emotion-5"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -985,7 +1011,7 @@ exports[`Sidebar renders correctly when open 1`] = `
             Components
             <svg
               aria-hidden="true"
-              class="emotion-4 emotion-5"
+              class="emotion-10 emotion-5"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -1012,7 +1038,7 @@ exports[`Sidebar renders correctly when open 1`] = `
             Utilities
             <svg
               aria-hidden="true"
-              class="emotion-4 emotion-5"
+              class="emotion-10 emotion-5"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
