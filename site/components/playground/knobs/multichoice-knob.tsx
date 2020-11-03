@@ -94,6 +94,19 @@ const StyledFieldset = styled.fieldset`
 
 const StyledLegend = StyledTitle.withComponent('legend');
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const setChecked = (selectedValue: any, value: any): boolean => {
+  if (typeof value === 'object' && typeof selectedValue === 'object') {
+    return Object.keys(value).every(element => {
+      if (typeof value[element] === 'object') {
+        return setChecked(selectedValue[element], value[element]);
+      }
+      return value[element] === selectedValue[element];
+    });
+  }
+  return selectedValue === value;
+};
+
 export const MultiChoiceKnob: React.FC<MultiChoiceKnobProps> = ({
   label: name,
   options,
@@ -108,17 +121,7 @@ export const MultiChoiceKnob: React.FC<MultiChoiceKnobProps> = ({
         <StyledFieldset>
           <StyledLegend>{name}</StyledLegend>
           {options.map(({value, label}) => {
-            let checked;
-
-            if (
-              typeof selectedValue === 'object' &&
-              typeof value === 'object'
-            ) {
-              const propName = Object.keys(value)[0] as keyof Overrides;
-              checked = selectedValue[propName] === value[propName];
-            } else {
-              checked = selectedValue === value;
-            }
+            const checked = setChecked(selectedValue, value);
 
             const id = `multichoice-knob-${hash}-${label}-${value}`;
             return (

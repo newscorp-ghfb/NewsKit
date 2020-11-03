@@ -124,7 +124,11 @@ export const Playground: React.FC<
 
         return {
           ...acc,
-          [knobConfig.propName]: defaultOption && defaultOption.value,
+          [knobConfig.propName]:
+            defaultOption &&
+            (acc[knobConfig.propName] !== undefined
+              ? deepMerge(acc[knobConfig.propName], defaultOption.value)
+              : defaultOption.value),
         };
       },
       {} as Record<string, unknown>,
@@ -151,7 +155,6 @@ export const Playground: React.FC<
     ) {
       newValue = deepMerge(state[prop] as object, value);
     }
-
     return setState({
       ...state,
       [prop]: newValue,
