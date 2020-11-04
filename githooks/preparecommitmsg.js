@@ -45,7 +45,7 @@ const createPrompts = ({type, scope}) => {
       transformer: input => input.toUpperCase(),
       type: 'input',
       validate: input =>
-        SCOPE_REGEX.test(input.toUpperCase()) || 'e.g. SEN-608',
+        SCOPE_REGEX.test(input.toUpperCase()) || 'e.g. PPDSC-1608',
       when: !scope,
     },
   ];
@@ -69,7 +69,7 @@ const createPrompts = ({type, scope}) => {
 
 const getBranchData = ({type, scope}) =>
   new Promise((resolve, reject) => {
-    const branchNameRegex = /^(?:(\w*)\/)?([a-z]{2,4}-\d{1,5})?/i;
+    const branchNameRegex = /^(?:(\w*)\/)?([a-z]{2,5}-\d{1,5})?/i;
     exec('git rev-parse --abbrev-ref HEAD', (err, stdout, stderr) => {
       if (stdout && typeof stdout === 'string') {
         const matches = stdout.trim().match(branchNameRegex);
