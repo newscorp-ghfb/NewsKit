@@ -75,8 +75,8 @@ export default {
           <Container>
             <Stack
               flow="horizontal-center"
-              spaceStack="sizing070"
-              spaceInline="sizing070"
+              spaceStack="space070"
+              spaceInline="space070"
               wrap="wrap"
             >
               <IconButton aria-label="Email icon" size={ButtonSize.Small}>
@@ -117,7 +117,7 @@ export default {
               return (
                 <Cell xs={4} sm={3}>
                   <Stack
-                    spaceInline="sizing020"
+                    spaceInline="space020"
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
@@ -195,7 +195,7 @@ export default {
               return (
                 <Cell xs={4} sm={3}>
                   <Stack
-                    spaceInline="sizing020"
+                    spaceInline="space020"
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
@@ -271,7 +271,7 @@ export default {
               return (
                 <Cell xs={4} sm={3}>
                   <Stack
-                    spaceInline="sizing020"
+                    spaceInline="space020"
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
@@ -347,7 +347,7 @@ export default {
               return (
                 <Cell xs={4} sm={3}>
                   <Stack
-                    spaceInline="sizing020"
+                    spaceInline="space020"
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>

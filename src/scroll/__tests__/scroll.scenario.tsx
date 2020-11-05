@@ -48,9 +48,11 @@ export default {
           </StorybookSubHeading>
           <Container>
             <Scroll flow={ScrollFlow.horizontal}>
-              <Stack flow="horizontal-center" spaceInline="sizing040">
-                {tags}
-              </Stack>
+              <Block>
+                <Stack flow="horizontal-center" spaceInline="space040">
+                  {tags}
+                </Stack>
+              </Block>
             </Scroll>
           </Container>
           <StorybookSubHeading>
@@ -58,9 +60,11 @@ export default {
           </StorybookSubHeading>
           <Container>
             <Scroll flow={ScrollFlow.vertical}>
-              <Stack flow="vertical-left" spaceInline="sizing040">
-                {tags}
-              </Stack>
+              <Block>
+                <Stack flow="vertical-left" spaceInline="space040">
+                  {tags}
+                </Stack>
+              </Block>
             </Scroll>
           </Container>
         </MainContainer>

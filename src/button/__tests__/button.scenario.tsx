@@ -92,8 +92,8 @@ export default {
           <Container>
             <Stack
               flow="horizontal-center"
-              spaceInline="sizing070"
-              spaceStack="sizing070"
+              spaceInline="space070"
+              spaceStack="space070"
               wrap="wrap"
             >
               <Button size={ButtonSize.Small}>Small button</Button>
@@ -175,7 +175,7 @@ export default {
               return (
                 <Cell xs={4} sm={3}>
                   <Stack
-                    spaceInline="sizing020"
+                    spaceInline="space020"
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
@@ -236,7 +236,7 @@ export default {
               return (
                 <Cell xs={4} sm={3}>
                   <Stack
-                    spaceInline="sizing020"
+                    spaceInline="space020"
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
@@ -297,7 +297,7 @@ export default {
               return (
                 <Cell xs={4} sm={3}>
                   <Stack
-                    spaceInline="sizing020"
+                    spaceInline="space020"
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
@@ -357,7 +357,7 @@ export default {
               return (
                 <Cell xs={4} sm={3}>
                   <Stack
-                    spaceInline="sizing020"
+                    spaceInline="space020"
                     stackDistribution={StackDistribution.SpaceEvenly}
                   >
                     <h3>{style}</h3>
@@ -401,54 +401,53 @@ export default {
         <React.Fragment>
           <StorybookSubHeading>Button with leading icon</StorybookSubHeading>
           <Container>
-            <Stack
-              flow="horizontal-center"
-              wrap="wrap"
-              spaceInline="sizing040"
-              spaceStack="sizing020"
-            >
-              {buttonSizes.map(button => (
-                <Button size={button.buttonSize}>
-                  <IconFilledEmail />
-                  Button
-                </Button>
-              ))}
-            </Stack>
+            {[Pause, Email, IconFilledLink].map(IconType => (
+              <Spacer>
+                <Stack flow="horizontal-center" spaceInline="space060">
+                  {buttonSizes.map(button => (
+                    <Button size={button.buttonSize}>
+                      <IconType />
+                      Button
+                    </Button>
+                  ))}
+                </Stack>
+              </Spacer>
+            ))}
           </Container>
           <StorybookSubHeading>Button with trailing icon</StorybookSubHeading>
           <Container>
-            <Stack
-              flow="horizontal-center"
-              wrap="wrap"
-              spaceInline="sizing040"
-              spaceStack="sizing020"
-            >
-              {buttonSizes.map(button => (
-                <Button size={button.buttonSize}>
-                  Button
-                  <IconFilledEmail />
-                </Button>
-              ))}
-            </Stack>
+            {[Pause, Email, IconFilledLink].map(IconType => (
+              <Spacer>
+                <Stack flow="horizontal-center" spaceInline="space060">
+                  {buttonSizes.map(button => (
+                    <Button size={button.buttonSize}>
+                      Button
+                      <IconType />
+                    </Button>
+                  ))}
+                </Stack>
+              </Spacer>
+            ))}
           </Container>
           <StorybookSubHeading>
             Button with leading and trailing icon
           </StorybookSubHeading>
           <Container>
-            <Stack
-              flow="horizontal-center"
-              wrap="wrap"
-              spaceInline="sizing040"
-              spaceStack="sizing020"
-            >
-              {buttonSizes.map(button => (
-                <Button size={button.buttonSize}>
-                  <IconFilledEmail />
-                  Button
-                  <IconFilledEmail />
-                </Button>
-              ))}
-            </Stack>
+            {[Pause, Email, IconFilledLink].map(IconType => (
+              <Spacer>
+                <Stack flow="horizontal-center" spaceInline="space060">
+                  <Button size={buttonSizes[0].buttonSize}>
+                    <IconType />
+                    Button
+                    {/* size to be removed as part of PPDSC-1341 */}
+                    <IconType
+                      size={buttonSizes[0].iconSize}
+                      overrides={{size: buttonSizes[0].iconSize}}
+                    />
+                  </Button>
+                </Stack>
+              </Spacer>
+            ))}
           </Container>
         </React.Fragment>
       ),
@@ -462,28 +461,24 @@ export default {
             Button with icon and inline overridden size
           </StorybookSubHeading>
           <Container>
-            <Stack flow="horizontal-center" spaceInline="sizing060">
-              <Button size={buttonSizes[0].buttonSize}>
-                <IconFilledEmail />
-                Button
-                <IconFilledEmail overrides={{size: buttonSizes[0].iconSize}} />
-              </Button>
-            </Stack>
-          </Container>
-          <StorybookSubHeading>
-            Button with icon and inline overridden size from overrides
-          </StorybookSubHeading>
-          <Container>
-            <Stack flow="horizontal-center" spaceInline="sizing060">
-              <Button
-                size={buttonSizes[0].buttonSize}
-                overrides={{iconSize: 'iconSize030'}}
-              >
-                <IconFilledEmail />
-                Button
-                <IconFilledEmail overrides={{size: buttonSizes[0].iconSize}} />
-              </Button>
-            </Stack>
+            {[Pause, Email, IconFilledLink].map(IconType => (
+              <Spacer>
+                <Stack flow="horizontal-center" spaceInline="space060">
+                  <Button
+                    size={buttonSizes[0].buttonSize}
+                    overrides={{iconSize: 'iconSize030'}}
+                  >
+                    <IconType />
+                    Button
+                    {/* size to be removed as part of PPDSC-1341 */}
+                    <IconType
+                      size={buttonSizes[0].iconSize}
+                      overrides={{size: buttonSizes[0].iconSize}}
+                    />
+                  </Button>
+                </Stack>
+              </Spacer>
+            ))}
           </Container>
         </React.Fragment>
       ),

@@ -81,8 +81,8 @@ export default {
           <Container>
             <Stack
               flow="horizontal-center"
-              spaceStack="sizing070"
-              spaceInline="sizing070"
+              spaceStack="space070"
+              spaceInline="space070"
               wrap="wrap"
               role="tablist"
             >
@@ -118,7 +118,7 @@ export default {
             {
               <Cell xs={6} sm={3}>
                 <Stack
-                  spaceInline="sizing020"
+                  spaceInline="space020"
                   stackDistribution={StackDistribution.SpaceEvenly}
                   role="tablist"
                 >
@@ -171,21 +171,27 @@ export default {
       component: () => (
         <React.Fragment>
           <StorybookHeading>Tab - Icon</StorybookHeading>
-          {[IconFilledPause, IconFilledEmail, IconFilledLink].map(IconType => (
-            <Spacer key={getSSRId()}>
-              <Stack
-                flow="horizontal-center"
-                spaceInline="sizing050"
-                role="tablist"
-              >
-                {tabSizes.map(tab => (
-                  <Tab key={getSSRId()} size={tab.tabSize} ariaLabel="icon tab">
-                    <IconType />
-                  </Tab>
-                ))}
-              </Stack>
-            </Spacer>
-          ))}
+          <Container>
+            {[Pause, Email, IconFilledLink].map(IconType => (
+              <Spacer key={getSSRId()}>
+                <Stack
+                  flow="horizontal-center"
+                  spaceInline="space060"
+                  role="tablist"
+                >
+                  {tabSizes.map(tab => (
+                    <Tab
+                      key={getSSRId()}
+                      size={tab.tabSize}
+                      ariaLabel="icon tab"
+                    >
+                      <IconType />
+                    </Tab>
+                  ))}
+                </Stack>
+              </Spacer>
+            ))}
+          </Container>
         </React.Fragment>
       ),
     },
@@ -195,26 +201,28 @@ export default {
       component: () => (
         <React.Fragment>
           <StorybookHeading>Tab - Icon and Label</StorybookHeading>
-          {[IconFilledPause, IconFilledEmail, IconFilledLink].map(IconType => (
-            <Spacer key={getSSRId()}>
-              <Stack
-                flow="horizontal-center"
-                spaceInline="sizing010"
-                role="tablist"
-              >
-                {tabSizes.map(tab => (
-                  <Tab
-                    key={getSSRId()}
-                    size={tab.tabSize}
-                    ariaLabel="tab label"
-                  >
-                    <IconType />
-                    Tab Label
-                  </Tab>
-                ))}
-              </Stack>
-            </Spacer>
-          ))}
+          <Container>
+            {[Pause, Email, IconFilledLink].map(IconType => (
+              <Spacer key={getSSRId()}>
+                <Stack
+                  flow="horizontal-center"
+                  spaceInline="space060"
+                  role="tablist"
+                >
+                  {tabSizes.map(tab => (
+                    <Tab
+                      key={getSSRId()}
+                      size={tab.tabSize}
+                      ariaLabel="tab label"
+                    >
+                      <IconType />
+                      Tab Label
+                    </Tab>
+                  ))}
+                </Stack>
+              </Spacer>
+            ))}
+          </Container>
         </React.Fragment>
       ),
     },
@@ -228,7 +236,7 @@ export default {
             <ThemeProvider theme={myCustomTheme}>
               <Stack
                 flow="horizontal-center"
-                spaceInline="sizing060"
+                spaceInline="space060"
                 role="tablist"
               >
                 <Tab
@@ -263,7 +271,7 @@ export default {
               <Stack
                 role="tablist"
                 flow="horizontal-center"
-                spaceInline="sizing060"
+                spaceInline="space060"
               >
                 <Tab isSelected ariaLabel="tab label">
                   <IconFilledEmail />
@@ -281,7 +289,7 @@ export default {
               <Stack
                 role="tablist"
                 flow="horizontal-center"
-                spaceInline="sizing060"
+                spaceInline="space060"
               >
                 <Tab
                   isSelected

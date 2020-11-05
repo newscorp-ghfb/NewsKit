@@ -41,8 +41,8 @@ export default {
           <Container>
             <Stack
               flow="horizontal-center"
-              spaceStack="sizing020"
-              spaceInline="sizing020"
+              spaceStack="space020"
+              spaceInline="space020"
               wrap="wrap"
             >
               <Tag href="http://example.com">Enabled</Tag>
@@ -55,8 +55,8 @@ export default {
           <Container>
             <Stack
               flow="horizontal-center"
-              spaceStack="sizing020"
-              spaceInline="sizing020"
+              spaceStack="space020"
+              spaceInline="space020"
               wrap="wrap"
             >
               <Tag size={TagSize.Small} href="http://example.com">
@@ -100,8 +100,8 @@ export default {
           <Container>
             <Stack
               flow="horizontal-center"
-              spaceStack="sizing020"
-              spaceInline="sizing020"
+              spaceStack="space020"
+              spaceInline="space020"
               wrap="wrap"
             >
               <Tag size={TagSize.Small}>
@@ -132,8 +132,8 @@ export default {
           <Container>
             <Stack
               flow="horizontal-center"
-              spaceInline="sizing020"
-              spaceStack="sizing020"
+              spaceInline="space020"
+              spaceStack="space020"
               wrap="wrap"
             >
               <Tag size={TagSize.Small}>
@@ -159,8 +159,8 @@ export default {
           <Container>
             <Stack
               flow="horizontal-center"
-              spaceInline="sizing020"
-              spaceStack="sizing020"
+              spaceInline="space020"
+              spaceStack="space020"
               wrap="wrap"
             >
               <Tag size={TagSize.Small} overrides={{iconSize: 'iconSize020'}}>

@@ -75,36 +75,22 @@ export default {
         <React.Fragment>
           <StorybookHeading>Text Input Sizes</StorybookHeading>
           <Container>
-            <Stack
-              flow="horizontal-center"
-              spaceInline="sizing070"
-              spaceStack="sizing050"
-              wrap="wrap"
-            >
-              <Block>
-                <StorybookSubHeading>Small</StorybookSubHeading>
-                <TextInput
-                  size={TextInputSize.Small}
-                  label="Label"
-                  assistiveText="Assistive text"
-                />
-              </Block>
-              <Block>
-                <StorybookSubHeading>Medium</StorybookSubHeading>
-                <TextInput
-                  size={TextInputSize.Medium}
-                  label="Label"
-                  assistiveText="Assistive text"
-                />
-              </Block>
-              <Block>
-                <StorybookSubHeading>Large</StorybookSubHeading>
-                <TextInput
-                  size={TextInputSize.Large}
-                  label="Label"
-                  assistiveText="Assistive text"
-                />
-              </Block>
+            <Stack flow="horizontal-center" spaceInline="space070" wrap="wrap">
+              <TextInput
+                size={TextInputSize.Small}
+                label="Label"
+                assistiveText="Assistive text"
+              />
+              <TextInput
+                size={TextInputSize.Medium}
+                label="Label"
+                assistiveText="Assistive text"
+              />
+              <TextInput
+                size={TextInputSize.Large}
+                label="Label"
+                assistiveText="Assistive text"
+              />
             </Stack>
           </Container>
         </React.Fragment>
@@ -226,7 +212,7 @@ export default {
           <Grid>
             <Cell xs={4} sm={4}>
               <Stack
-                spaceInline="sizing100"
+                spaceInline="space100"
                 stackDistribution={StackDistribution.Start}
               >
                 {states.map(state => (
@@ -237,7 +223,7 @@ export default {
             {
               <Cell xs={8} sm={4}>
                 <Stack
-                  spaceInline="sizing070"
+                  spaceInline="space070"
                   stackDistribution={StackDistribution.Start}
                 >
                   <CustomBlock data-state="Default">

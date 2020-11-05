@@ -128,7 +128,7 @@ export default {
             <Stack
               flow="horizontal-center"
               stackDistribution="space-between"
-              spaceInline="sizing030"
+              spaceInline="space070"
             >
               <Form onSubmit={onSubmit} validationMode="onBlur">
                 <StorybookSubHeading>large text input</StorybookSubHeading>
