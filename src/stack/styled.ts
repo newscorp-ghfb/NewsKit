@@ -10,12 +10,12 @@ import {
 import {Theme} from '../theme';
 import {ThemeProp} from '../utils/style-types';
 
-export const flowDictionary = {
+const flowDictionary = {
   vertical: 'column',
   horizontal: 'row',
 };
 
-export const alignmentDictionary = {
+const alignmentDictionary = {
   'vertical-left': 'flex-start',
   'vertical-center': 'center',
   'vertical-right': 'flex-end',
@@ -40,11 +40,8 @@ export const hasSpacing = (theme: Theme, spaceToken: SizingKeys) =>
   theme.spacePresets[spaceToken] &&
   parseInt(theme.spacePresets[spaceToken], 10) !== 0;
 
-export const getSpaceInHalf = (
-  theme: Theme,
-  spaceToken: string,
-  negative?: boolean,
-) => `calc(${negative ? '-' : ''}${theme.spacePresets[spaceToken]}/2)`;
+const getSpaceInHalf = (theme: Theme, spaceToken: string, negative?: boolean) =>
+  `calc(${negative ? '-' : ''}${theme.sizing[spaceToken]}/2)`;
 
 const calculateMargins = (negative?: boolean) => ({
   theme,

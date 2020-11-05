@@ -10,7 +10,7 @@ export enum ScrollFlow {
   vertical = 'vertical',
 }
 
-export const StyledScrollFlow = styled.div<ScrollProps>`
+const StyledScrollFlow = styled.div<ScrollProps>`
   overflow-x: ${({flow}) =>
     flow && flow !== ScrollFlow.horizontal ? 'hidden' : 'auto'};
   overflow-y: ${({flow}) =>
@@ -18,7 +18,7 @@ export const StyledScrollFlow = styled.div<ScrollProps>`
   height: 100%;
 `;
 
-export const StyledScrollChildContainer = styled.div`
+const StyledScrollChildContainer = styled.div`
   height: 100%;
 `;
 

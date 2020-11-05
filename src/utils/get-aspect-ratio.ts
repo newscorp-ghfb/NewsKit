@@ -6,7 +6,7 @@ export interface GetAspectRatioProp {
   width?: WidthProperty<string>;
 }
 
-export const getUnit = (value: number, prop?: string) =>
+const getUnit = (value: number, prop?: string) =>
   (prop && prop.replace(value.toString(), '')) || 'px';
 
 export const getAspectRatioStyles = ({

@@ -4,7 +4,7 @@ import {Prop} from '../../components/prop';
 import {TextBoxSwatch} from '../../components/theming-values/colors';
 import {LegacyBlock} from '../../components/legacy-block';
 
-import {Caption, CaptionInsetWithBorder, CaptionInset} from 'newskit';
+import {Caption, CaptionInset} from 'newskit';
 
 export default Layout;
 
@@ -65,7 +65,14 @@ The are two variants of the caption component - a caption without inset `<Captio
 <Playground
   componentName={['Caption', 'CaptionInset']}
   newskitPath="/caption"
-  component={[Caption, CaptionInsetWithBorder]}
+  component={[
+    Caption,
+    props => (
+      <div style={{border: '1px solid black;'}}>
+        <CaptionInset {...props} />
+      </div>
+    ),
+  ]}
   knobs={[
     {
       name: 'Caption content',

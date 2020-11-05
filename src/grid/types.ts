@@ -16,6 +16,8 @@ export interface GridProps {
   mdRowGutter?: string;
   lgRowGutter?: string;
   xlRowGutter?: string;
+
+  maxWidth?: number;
 }
 
 export interface CellProps {

@@ -1,6 +1,7 @@
 import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
-import {UnorderedList, UnorderedListProps, StyledUl} from '..';
+import {UnorderedList, UnorderedListProps} from '..';
+import {StyledUl} from '../styled';
 import {IconFilledMood} from '../../icons';
 import {Link} from '../../link/link';
 

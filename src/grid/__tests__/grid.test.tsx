@@ -26,4 +26,11 @@ describe('Grid Container', () => {
     });
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders expected max width', () => {
+    const fragment = renderToFragmentWithTheme(Grid, {
+      maxWidth: 500,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
 });

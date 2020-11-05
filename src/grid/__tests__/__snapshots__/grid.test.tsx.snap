@@ -57,6 +57,63 @@ exports[`Grid Container renders expected column styles 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Grid Container renders expected max width 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-0 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    margin: -16px 8px 0 8px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-0 {
+    margin: -px NaNpx 0 NaNpx;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-0 {
+    margin: -24px 12px 0 12px;
+  }
+}
+
+<div
+    class="emotion-1"
+  >
+    <div
+      class="emotion-0"
+    />
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Grid Container renders expected row styles 1`] = `
 <DocumentFragment>
   .emotion-1 {

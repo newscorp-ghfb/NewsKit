@@ -1,5 +1,5 @@
 import {Caption} from '../caption';
-import {CaptionInset, CaptionInsetWithBorder} from '../caption-inset';
+import {CaptionInset} from '../caption-inset';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 
 describe('Caption', () => {
@@ -40,14 +40,6 @@ test('renders correctly with overriden props and caption and credit text', () =>
 describe('CaptionInset', () => {
   test('renders correctly with default props and caption and credit text', () => {
     const fragment = renderToFragmentWithTheme(CaptionInset, {
-      children: 'test',
-      creditText: 'this is credit text',
-    });
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('renders correctly with border', () => {
-    const fragment = renderToFragmentWithTheme(CaptionInsetWithBorder, {
       children: 'test',
       creditText: 'this is credit text',
     });

@@ -22,5 +22,3 @@ export function deepMerge(...sources: Array<any>) {
   }
   return res;
 }
-
-export default deepMerge;
