@@ -89,7 +89,7 @@ describe('Stack', () => {
     const fragment = renderToFragmentWithTheme(Stack, {
       children,
       as: 'span',
-      spaceInline: 'sizing030',
+      spaceInline: 'space030',
     });
 
     expect(fragment).toMatchSnapshot();
@@ -132,13 +132,13 @@ describe('Stack', () => {
   });
 
   Object.values(Flow).forEach(flowKey => {
-    ['sizing000', 'sizing090', 'sizing120'].forEach(size => {
+    ['space000', 'space090', 'space120'].forEach(space => {
       Object.values(['wrap', 'nowrap']).forEach(wrapType => {
-        test(`renders where the stack flow is ${flowKey} and the spaceInline & spaceStack is set to ${size}`, () => {
+        test(`renders where the stack flow is ${flowKey} and the spaceInline & spaceStack is set to ${space}`, () => {
           const fragment = renderToFragmentWithTheme(Stack, {
             flow: flowKey,
-            spaceInline: size,
-            spaceStack: size,
+            spaceInline: space,
+            spaceStack: space,
             wrap: wrapType as 'wrap' | 'nowrap',
             children: [
               <Box>child 1</Box>,
@@ -155,10 +155,10 @@ describe('Stack', () => {
 
   Object.values(Flow).forEach(flowKey => {
     Object.values(['wrap', 'nowrap']).forEach(wrapType => {
-      test(`renders where the stack flow is ${flowKey} and only spaceStack is set to sizing090`, () => {
+      test(`renders where the stack flow is ${flowKey} and only spaceStack is set to space090`, () => {
         const fragment = renderToFragmentWithTheme(Stack, {
           flow: flowKey,
-          spaceStack: 'sizing090',
+          spaceStack: 'space090',
           wrap: wrapType as 'wrap' | 'nowrap',
           children: [
             <Box>child 1</Box>,
@@ -174,10 +174,10 @@ describe('Stack', () => {
 
   Object.values(Flow).forEach(flowKey => {
     Object.values(['wrap', 'nowrap']).forEach(wrapType => {
-      test(`renders where the stack flow is ${flowKey} and only spaceInline is set to sizing090`, () => {
+      test(`renders where the stack flow is ${flowKey} and only spaceInline is set to space090`, () => {
         const fragment = renderToFragmentWithTheme(Stack, {
           flow: flowKey,
-          spaceInline: 'sizing090',
+          spaceInline: 'space090',
           wrap: wrapType as 'wrap' | 'nowrap',
           children: [
             <Box>child 1</Box>,
@@ -213,7 +213,7 @@ describe('Nested stacks', () => {
 
   test(`render in vertical flow with space`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
-      spaceInline: 'sizing030',
+      spaceInline: 'space030',
       children: [
         <Stack>
           <Box>child 1</Box>, <Box>child 2</Box>, <Box>child 3</Box>
@@ -251,7 +251,7 @@ describe('Nested stacks', () => {
 
   test(`render in horizontal flow with space`, () => {
     const fragment = renderToFragmentWithTheme(Stack, {
-      spaceInline: 'sizing030',
+      spaceInline: 'space030',
       flow: Flow.HorizontalTop,
       children: [
         <Stack flow={Flow.HorizontalTop}>
@@ -319,7 +319,7 @@ describe('Stack as list', () => {
     const fragment = renderToFragmentWithTheme(Stack, {
       list: true,
       ariaLabel: 'Tag list',
-      spaceInline: 'sizing020',
+      spaceInline: 'space020',
       children,
     });
 
@@ -330,8 +330,8 @@ describe('Stack as list', () => {
     const fragment = renderToFragmentWithTheme(Stack, {
       list: true,
       ariaLabel: 'Tag list',
-      spaceInline: 'sizing020',
-      spaceStack: 'sizing020',
+      spaceInline: 'space020',
+      spaceStack: 'space020',
       wrap: 'wrap',
       children,
     });
@@ -353,7 +353,7 @@ describe('Stack as list', () => {
     const fragment = renderToFragmentWithTheme(Stack, {
       list: true,
       ariaLabel: 'Tag list',
-      spaceInline: 'sizing020',
+      spaceInline: 'space020',
       flow: Flow.HorizontalTop,
       children,
     });
@@ -365,8 +365,8 @@ describe('Stack as list', () => {
     const fragment = renderToFragmentWithTheme(Stack, {
       list: true,
       ariaLabel: 'Tag list',
-      spaceInline: 'sizing020',
-      spaceStack: 'sizing020',
+      spaceInline: 'space020',
+      spaceStack: 'space020',
       wrap: 'wrap',
       flow: Flow.HorizontalTop,
       children,

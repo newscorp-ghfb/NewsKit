@@ -45,7 +45,7 @@ const DescriptionsMeta: React.FC<DescriptionMetaProps & CenterProp> = ({
           stackDistribution={
             center ? StackDistribution.SpaceBetween : StackDistribution.Start
           }
-          spaceInline={center ? 'sizing020' : 'sizing040'}
+          spaceInline={center ? 'space020' : 'space040'}
         >
           {flag && renderFlag(flag)}
           {time && <ProgrammeTime>{time}</ProgrammeTime>}

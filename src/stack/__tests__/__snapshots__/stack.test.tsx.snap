@@ -19,6 +19,9 @@ exports[`Nested stacks render in horizontal flow 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -117,6 +120,9 @@ exports[`Nested stacks render in horizontal flow with space 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -136,6 +142,9 @@ exports[`Nested stacks render in horizontal flow with space 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -250,6 +259,9 @@ exports[`Nested stacks render in vertical flow 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -348,6 +360,9 @@ exports[`Nested stacks render in vertical flow with space 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -374,6 +389,9 @@ exports[`Nested stacks render in vertical flow with space 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -495,6 +513,9 @@ exports[`Nested stacks render mixed content 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -559,6 +580,9 @@ exports[`Nested stacks render with stackDistribution 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -585,6 +609,9 @@ exports[`Nested stacks render with stackDistribution 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -683,6 +710,9 @@ exports[`Stack as list renders correctly 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -763,6 +793,9 @@ exports[`Stack as list renders horizontally 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -829,6 +862,9 @@ exports[`Stack as list renders horizontally with spacing 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -907,6 +943,9 @@ exports[`Stack as list renders horizontally with spacing and wrap 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -983,6 +1022,9 @@ exports[`Stack as list renders nested stack 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -1009,6 +1051,9 @@ exports[`Stack as list renders nested stack 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -1139,6 +1184,9 @@ exports[`Stack as list renders nested stack as list 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -1275,6 +1323,9 @@ exports[`Stack as list renders with spacing 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -1351,6 +1402,9 @@ exports[`Stack as list renders with spacing and wrap 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1427,6 +1481,9 @@ exports[`Stack renders as span 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -1484,6 +1541,9 @@ exports[`Stack renders as span with space 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -1557,6 +1617,9 @@ exports[`Stack renders inline stack 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -1607,6 +1670,9 @@ exports[`Stack renders reverse stack 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column-reverse;
   -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
@@ -1638,7 +1704,7 @@ exports[`Stack renders reverse stack 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-bottom and only spaceInline is set to sizing090 1`] = `
+exports[`Stack renders where the stack flow is horizontal-bottom and only spaceInline is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -1666,6 +1732,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceI
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1714,7 +1783,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceI
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-bottom and only spaceInline is set to sizing090 2`] = `
+exports[`Stack renders where the stack flow is horizontal-bottom and only spaceInline is set to space090 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -1742,6 +1811,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceI
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -1790,7 +1862,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceI
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-bottom and only spaceStack is set to sizing090 1`] = `
+exports[`Stack renders where the stack flow is horizontal-bottom and only spaceStack is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -1818,6 +1890,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceS
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1866,7 +1941,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceS
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-bottom and only spaceStack is set to sizing090 2`] = `
+exports[`Stack renders where the stack flow is horizontal-bottom and only spaceStack is set to space090 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -1892,6 +1967,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceS
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -1938,7 +2016,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and only spaceS
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-bottom and the spaceInline & spaceStack is set to sizing000 1`] = `
+exports[`Stack renders where the stack flow is horizontal-bottom and the spaceInline & spaceStack is set to space000 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -1957,6 +2035,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1991,7 +2072,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-bottom and the spaceInline & spaceStack is set to sizing000 2`] = `
+exports[`Stack renders where the stack flow is horizontal-bottom and the spaceInline & spaceStack is set to space000 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -2010,6 +2091,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -2044,7 +2128,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-bottom and the spaceInline & spaceStack is set to sizing090 1`] = `
+exports[`Stack renders where the stack flow is horizontal-bottom and the spaceInline & spaceStack is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -2074,6 +2158,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -2124,7 +2211,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-bottom and the spaceInline & spaceStack is set to sizing090 2`] = `
+exports[`Stack renders where the stack flow is horizontal-bottom and the spaceInline & spaceStack is set to space090 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -2152,6 +2239,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -2200,7 +2290,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-bottom and the spaceInline & spaceStack is set to sizing120 1`] = `
+exports[`Stack renders where the stack flow is horizontal-bottom and the spaceInline & spaceStack is set to space120 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -2230,6 +2320,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -2280,7 +2373,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-bottom and the spaceInline & spaceStack is set to sizing120 2`] = `
+exports[`Stack renders where the stack flow is horizontal-bottom and the spaceInline & spaceStack is set to space120 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -2308,6 +2401,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the spaceIn
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -2375,6 +2471,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -2425,6 +2524,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -2475,6 +2577,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -2525,6 +2630,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -2575,6 +2683,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -2625,6 +2736,9 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -2662,7 +2776,7 @@ exports[`Stack renders where the stack flow is horizontal-bottom and the stack d
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-center and only spaceInline is set to sizing090 1`] = `
+exports[`Stack renders where the stack flow is horizontal-center and only spaceInline is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -2690,6 +2804,9 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceI
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -2738,7 +2855,7 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceI
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-center and only spaceInline is set to sizing090 2`] = `
+exports[`Stack renders where the stack flow is horizontal-center and only spaceInline is set to space090 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -2766,6 +2883,9 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceI
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -2814,7 +2934,7 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceI
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-center and only spaceStack is set to sizing090 1`] = `
+exports[`Stack renders where the stack flow is horizontal-center and only spaceStack is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -2842,6 +2962,9 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceS
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -2890,7 +3013,7 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceS
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-center and only spaceStack is set to sizing090 2`] = `
+exports[`Stack renders where the stack flow is horizontal-center and only spaceStack is set to space090 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -2916,6 +3039,9 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceS
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -2962,7 +3088,7 @@ exports[`Stack renders where the stack flow is horizontal-center and only spaceS
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-center and the spaceInline & spaceStack is set to sizing000 1`] = `
+exports[`Stack renders where the stack flow is horizontal-center and the spaceInline & spaceStack is set to space000 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -2981,6 +3107,9 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -3015,7 +3144,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-center and the spaceInline & spaceStack is set to sizing000 2`] = `
+exports[`Stack renders where the stack flow is horizontal-center and the spaceInline & spaceStack is set to space000 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -3034,6 +3163,9 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -3068,7 +3200,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-center and the spaceInline & spaceStack is set to sizing090 1`] = `
+exports[`Stack renders where the stack flow is horizontal-center and the spaceInline & spaceStack is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -3098,6 +3230,9 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -3148,7 +3283,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-center and the spaceInline & spaceStack is set to sizing090 2`] = `
+exports[`Stack renders where the stack flow is horizontal-center and the spaceInline & spaceStack is set to space090 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -3176,6 +3311,9 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -3224,7 +3362,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-center and the spaceInline & spaceStack is set to sizing120 1`] = `
+exports[`Stack renders where the stack flow is horizontal-center and the spaceInline & spaceStack is set to space120 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -3254,6 +3392,9 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -3304,7 +3445,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-center and the spaceInline & spaceStack is set to sizing120 2`] = `
+exports[`Stack renders where the stack flow is horizontal-center and the spaceInline & spaceStack is set to space120 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -3332,6 +3473,9 @@ exports[`Stack renders where the stack flow is horizontal-center and the spaceIn
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -3399,6 +3543,9 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -3449,6 +3596,9 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -3499,6 +3649,9 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -3549,6 +3702,9 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -3599,6 +3755,9 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -3649,6 +3808,9 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -3686,7 +3848,7 @@ exports[`Stack renders where the stack flow is horizontal-center and the stack d
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-top and only spaceInline is set to sizing090 1`] = `
+exports[`Stack renders where the stack flow is horizontal-top and only spaceInline is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -3714,6 +3876,9 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceInli
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -3762,7 +3927,7 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceInli
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-top and only spaceInline is set to sizing090 2`] = `
+exports[`Stack renders where the stack flow is horizontal-top and only spaceInline is set to space090 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -3781,6 +3946,9 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceInli
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -3838,7 +4006,7 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceInli
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-top and only spaceStack is set to sizing090 1`] = `
+exports[`Stack renders where the stack flow is horizontal-top and only spaceStack is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -3857,6 +4025,9 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceStac
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -3914,7 +4085,7 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceStac
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-top and only spaceStack is set to sizing090 2`] = `
+exports[`Stack renders where the stack flow is horizontal-top and only spaceStack is set to space090 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -3933,6 +4104,9 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceStac
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -3986,7 +4160,7 @@ exports[`Stack renders where the stack flow is horizontal-top and only spaceStac
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-top and the spaceInline & spaceStack is set to sizing000 1`] = `
+exports[`Stack renders where the stack flow is horizontal-top and the spaceInline & spaceStack is set to space000 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -4005,6 +4179,9 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -4039,7 +4216,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-top and the spaceInline & spaceStack is set to sizing000 2`] = `
+exports[`Stack renders where the stack flow is horizontal-top and the spaceInline & spaceStack is set to space000 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -4058,6 +4235,9 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -4092,7 +4272,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-top and the spaceInline & spaceStack is set to sizing090 1`] = `
+exports[`Stack renders where the stack flow is horizontal-top and the spaceInline & spaceStack is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -4111,6 +4291,9 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -4172,7 +4355,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-top and the spaceInline & spaceStack is set to sizing090 2`] = `
+exports[`Stack renders where the stack flow is horizontal-top and the spaceInline & spaceStack is set to space090 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -4191,6 +4374,9 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -4248,7 +4434,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-top and the spaceInline & spaceStack is set to sizing120 1`] = `
+exports[`Stack renders where the stack flow is horizontal-top and the spaceInline & spaceStack is set to space120 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -4267,6 +4453,9 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -4328,7 +4517,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is horizontal-top and the spaceInline & spaceStack is set to sizing120 2`] = `
+exports[`Stack renders where the stack flow is horizontal-top and the spaceInline & spaceStack is set to space120 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -4347,6 +4536,9 @@ exports[`Stack renders where the stack flow is horizontal-top and the spaceInlin
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -4423,6 +4615,9 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -4473,6 +4668,9 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -4523,6 +4721,9 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -4573,6 +4774,9 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -4623,6 +4827,9 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -4673,6 +4880,9 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -4710,7 +4920,7 @@ exports[`Stack renders where the stack flow is horizontal-top and the stack dist
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-center and only spaceInline is set to sizing090 1`] = `
+exports[`Stack renders where the stack flow is vertical-center and only spaceInline is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -4738,6 +4948,9 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceInl
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -4786,7 +4999,7 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceInl
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-center and only spaceInline is set to sizing090 2`] = `
+exports[`Stack renders where the stack flow is vertical-center and only spaceInline is set to space090 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -4814,6 +5027,9 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceInl
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -4862,7 +5078,7 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceInl
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-center and only spaceStack is set to sizing090 1`] = `
+exports[`Stack renders where the stack flow is vertical-center and only spaceStack is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -4890,6 +5106,9 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceSta
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -4938,7 +5157,7 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceSta
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-center and only spaceStack is set to sizing090 2`] = `
+exports[`Stack renders where the stack flow is vertical-center and only spaceStack is set to space090 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -4964,6 +5183,9 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceSta
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -5010,7 +5232,7 @@ exports[`Stack renders where the stack flow is vertical-center and only spaceSta
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-center and the spaceInline & spaceStack is set to sizing000 1`] = `
+exports[`Stack renders where the stack flow is vertical-center and the spaceInline & spaceStack is set to space000 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -5029,6 +5251,9 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -5063,7 +5288,7 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-center and the spaceInline & spaceStack is set to sizing000 2`] = `
+exports[`Stack renders where the stack flow is vertical-center and the spaceInline & spaceStack is set to space000 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -5082,6 +5307,9 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -5116,7 +5344,7 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-center and the spaceInline & spaceStack is set to sizing090 1`] = `
+exports[`Stack renders where the stack flow is vertical-center and the spaceInline & spaceStack is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -5146,6 +5374,9 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -5196,7 +5427,7 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-center and the spaceInline & spaceStack is set to sizing090 2`] = `
+exports[`Stack renders where the stack flow is vertical-center and the spaceInline & spaceStack is set to space090 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -5224,6 +5455,9 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -5272,7 +5506,7 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-center and the spaceInline & spaceStack is set to sizing120 1`] = `
+exports[`Stack renders where the stack flow is vertical-center and the spaceInline & spaceStack is set to space120 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -5302,6 +5536,9 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -5352,7 +5589,7 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-center and the spaceInline & spaceStack is set to sizing120 2`] = `
+exports[`Stack renders where the stack flow is vertical-center and the spaceInline & spaceStack is set to space120 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -5380,6 +5617,9 @@ exports[`Stack renders where the stack flow is vertical-center and the spaceInli
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -5447,6 +5687,9 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -5497,6 +5740,9 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -5547,6 +5793,9 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -5597,6 +5846,9 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -5647,6 +5899,9 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -5697,6 +5952,9 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -5734,7 +5992,7 @@ exports[`Stack renders where the stack flow is vertical-center and the stack dis
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-left and only spaceInline is set to sizing090 1`] = `
+exports[`Stack renders where the stack flow is vertical-left and only spaceInline is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -5762,6 +6020,9 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceInlin
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -5810,7 +6071,7 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceInlin
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-left and only spaceInline is set to sizing090 2`] = `
+exports[`Stack renders where the stack flow is vertical-left and only spaceInline is set to space090 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -5829,6 +6090,9 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceInlin
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -5886,7 +6150,7 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceInlin
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-left and only spaceStack is set to sizing090 1`] = `
+exports[`Stack renders where the stack flow is vertical-left and only spaceStack is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -5905,6 +6169,9 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceStack
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -5962,7 +6229,7 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceStack
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-left and only spaceStack is set to sizing090 2`] = `
+exports[`Stack renders where the stack flow is vertical-left and only spaceStack is set to space090 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -5981,6 +6248,9 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceStack
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -6034,7 +6304,7 @@ exports[`Stack renders where the stack flow is vertical-left and only spaceStack
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-left and the spaceInline & spaceStack is set to sizing000 1`] = `
+exports[`Stack renders where the stack flow is vertical-left and the spaceInline & spaceStack is set to space000 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -6053,6 +6323,9 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -6087,7 +6360,7 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-left and the spaceInline & spaceStack is set to sizing000 2`] = `
+exports[`Stack renders where the stack flow is vertical-left and the spaceInline & spaceStack is set to space000 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -6106,6 +6379,9 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -6140,7 +6416,7 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-left and the spaceInline & spaceStack is set to sizing090 1`] = `
+exports[`Stack renders where the stack flow is vertical-left and the spaceInline & spaceStack is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -6159,6 +6435,9 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -6220,7 +6499,7 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-left and the spaceInline & spaceStack is set to sizing090 2`] = `
+exports[`Stack renders where the stack flow is vertical-left and the spaceInline & spaceStack is set to space090 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -6239,6 +6518,9 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -6296,7 +6578,7 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-left and the spaceInline & spaceStack is set to sizing120 1`] = `
+exports[`Stack renders where the stack flow is vertical-left and the spaceInline & spaceStack is set to space120 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -6315,6 +6597,9 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -6376,7 +6661,7 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-left and the spaceInline & spaceStack is set to sizing120 2`] = `
+exports[`Stack renders where the stack flow is vertical-left and the spaceInline & spaceStack is set to space120 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -6395,6 +6680,9 @@ exports[`Stack renders where the stack flow is vertical-left and the spaceInline
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -6471,6 +6759,9 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -6521,6 +6812,9 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -6564,6 +6858,9 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -6621,6 +6918,9 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -6671,6 +6971,9 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -6721,6 +7024,9 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -6758,7 +7064,7 @@ exports[`Stack renders where the stack flow is vertical-left and the stack distr
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-right and only spaceInline is set to sizing090 1`] = `
+exports[`Stack renders where the stack flow is vertical-right and only spaceInline is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -6786,6 +7092,9 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceInli
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -6834,7 +7143,7 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceInli
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-right and only spaceInline is set to sizing090 2`] = `
+exports[`Stack renders where the stack flow is vertical-right and only spaceInline is set to space090 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -6862,6 +7171,9 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceInli
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -6910,7 +7222,7 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceInli
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-right and only spaceStack is set to sizing090 1`] = `
+exports[`Stack renders where the stack flow is vertical-right and only spaceStack is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -6938,6 +7250,9 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceStac
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -6986,7 +7301,7 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceStac
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-right and only spaceStack is set to sizing090 2`] = `
+exports[`Stack renders where the stack flow is vertical-right and only spaceStack is set to space090 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -7012,6 +7327,9 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceStac
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -7058,7 +7376,7 @@ exports[`Stack renders where the stack flow is vertical-right and only spaceStac
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-right and the spaceInline & spaceStack is set to sizing000 1`] = `
+exports[`Stack renders where the stack flow is vertical-right and the spaceInline & spaceStack is set to space000 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -7077,6 +7395,9 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -7111,7 +7432,7 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-right and the spaceInline & spaceStack is set to sizing000 2`] = `
+exports[`Stack renders where the stack flow is vertical-right and the spaceInline & spaceStack is set to space000 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -7130,6 +7451,9 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -7164,7 +7488,7 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-right and the spaceInline & spaceStack is set to sizing090 1`] = `
+exports[`Stack renders where the stack flow is vertical-right and the spaceInline & spaceStack is set to space090 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -7194,6 +7518,9 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -7244,7 +7571,7 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-right and the spaceInline & spaceStack is set to sizing090 2`] = `
+exports[`Stack renders where the stack flow is vertical-right and the spaceInline & spaceStack is set to space090 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -7272,6 +7599,9 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -7320,7 +7650,7 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-right and the spaceInline & spaceStack is set to sizing120 1`] = `
+exports[`Stack renders where the stack flow is vertical-right and the spaceInline & spaceStack is set to space120 1`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -7350,6 +7680,9 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -7400,7 +7733,7 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
 </DocumentFragment>
 `;
 
-exports[`Stack renders where the stack flow is vertical-right and the spaceInline & spaceStack is set to sizing120 2`] = `
+exports[`Stack renders where the stack flow is vertical-right and the spaceInline & spaceStack is set to space120 2`] = `
 <DocumentFragment>
   .emotion-0 {
   width: 150px;
@@ -7428,6 +7761,9 @@ exports[`Stack renders where the stack flow is vertical-right and the spaceInlin
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -7495,6 +7831,9 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -7545,9 +7884,9 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -7598,6 +7937,9 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -7648,6 +7990,9 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -7698,6 +8043,9 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -7748,6 +8096,9 @@ exports[`Stack renders where the stack flow is vertical-right and the stack dist
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -7797,6 +8148,9 @@ exports[`Stack renders with defaults only 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -7854,6 +8208,9 @@ exports[`Stack renders with flex grow and shrink 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -7911,6 +8268,9 @@ exports[`Stack renders with flex grow and shrink 2`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-box-flex: 10;
   -webkit-flex-grow: 10;
   -ms-flex-positive: 10;
@@ -7968,6 +8328,9 @@ exports[`Stack renders with invalid stack distribution 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -8064,6 +8427,9 @@ exports[`Stack renders with valid stack distribution 1`] = `
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -8114,6 +8480,9 @@ exports[`Stack renders with valid stack flow 1`] = `
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;

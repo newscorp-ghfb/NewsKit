@@ -112,8 +112,9 @@ export const TabGroup: React.FC<TabGroupProps> = ({
       [] as React.ReactElement[],
     );
 
+  // TODO: PPDSE-259 - spaceInline should not be hard coded here
   return (
-    <Stack flow={Flow.VerticalLeft} spaceInline="sizing020" wrap="wrap">
+    <Stack flow={Flow.VerticalLeft} spaceInline="space020" wrap="wrap">
       <StyledOuterTabGroup data-testid="tab-group" inline>
         <StyledInnerTabGroup
           overrides={overrides}

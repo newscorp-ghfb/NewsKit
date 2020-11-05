@@ -480,7 +480,7 @@ describe('Audio Player', () => {
             },
           },
           controls: {
-            space: 'sizing040',
+            space: 'space040',
             previousButton: {
               stylePreset: 'customAudioPlayerPreviousButton',
             },
