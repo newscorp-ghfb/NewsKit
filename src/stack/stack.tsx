@@ -91,8 +91,8 @@ const wrapChild = (
 };
 
 export const Stack: React.FC<StackProps> = ({
-  spaceStack = 'sizing000',
-  spaceInline = 'sizing000',
+  spaceStack = 'space000',
+  spaceInline = 'space000',
   flow = Flow.VerticalLeft,
   wrap = false,
   stackDistribution = StackDistribution.Start,

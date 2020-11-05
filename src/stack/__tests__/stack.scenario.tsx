@@ -112,7 +112,7 @@ export default {
             Stack vertical using spaceInline token
           </StorybookHeading>
           <Container>
-            <Stack spaceInline="sizing050">
+            <Stack spaceInline="space050">
               <Tag>Example 1</Tag>
               <Tag>Example 2</Tag>
               <Tag>Example 3</Tag>
@@ -130,7 +130,7 @@ export default {
             Stack horizontal using spaceInline token
           </StorybookHeading>
           <Container>
-            <Stack spaceInline="sizing050" flow={Flow.HorizontalTop}>
+            <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
               <Tag>Example 1</Tag>
               <Tag>Example 2</Tag>
               <Tag>Example 3</Tag>
@@ -148,7 +148,7 @@ export default {
             Stack vertical using spaceInline and spaceStack tokens
           </StorybookHeading>
           <Container hasHeight>
-            <Stack spaceInline="sizing050" spaceStack="sizing060" wrap="wrap">
+            <Stack spaceInline="space050" spaceStack="space060" wrap="wrap">
               <Tag>Example 1</Tag>
               <Tag>Example 2</Tag>
               <Tag>Example 3</Tag>
@@ -170,8 +170,8 @@ export default {
           </StorybookHeading>
           <Container hasHeight hasWidth>
             <Stack
-              spaceInline="sizing050"
-              spaceStack="sizing050"
+              spaceInline="space050"
+              spaceStack="space050"
               wrap="wrap"
               flow={Flow.HorizontalTop}
             >
@@ -254,11 +254,7 @@ export default {
             Stack horizontal reverse with space
           </StorybookHeading>
           <Container>
-            <Stack
-              flow={Flow.HorizontalTop}
-              flowReverse
-              spaceInline="sizing030"
-            >
+            <Stack flow={Flow.HorizontalTop} flowReverse spaceInline="space030">
               <Tag>Example 1</Tag>
               <Tag>Example 2</Tag>
               <Tag>Example 3</Tag>
@@ -328,7 +324,7 @@ export default {
         <MainContainer>
           <StorybookHeading>Nested stacks with space</StorybookHeading>
           <Container>
-            <Stack spaceInline="sizing030">
+            <Stack spaceInline="space030">
               <Stack flow={Flow.HorizontalTop}>
                 <Tag>Nested Item 1</Tag>
                 <Tag>Nested Item 2</Tag>
@@ -358,7 +354,7 @@ export default {
             Nested horizontal stacks with space
           </StorybookHeading>
           <Container>
-            <Stack flow={Flow.HorizontalTop} spaceInline="sizing050">
+            <Stack flow={Flow.HorizontalTop} spaceInline="space050">
               <Stack flow={Flow.HorizontalTop}>
                 <Tag>Nested Item 1</Tag>
                 <Tag>Nested Item 2</Tag>
@@ -386,7 +382,7 @@ export default {
         <MainContainer>
           <StorybookHeading>Nested stacks with mixed content</StorybookHeading>
           <Container>
-            <Stack flow={Flow.HorizontalTop} spaceInline="sizing040">
+            <Stack flow={Flow.HorizontalTop} spaceInline="space040">
               <Tag>Item 1</Tag>
               <Tag>Item 2</Tag>
               <Tag>Item 3</Tag>
@@ -455,13 +451,13 @@ export default {
             Nested horizontal stacks as span with space
           </StorybookHeading>
           <Container>
-            <Stack flow={Flow.HorizontalTop} as="span" spaceInline="sizing030">
-              <Stack flow={Flow.HorizontalTop} spaceInline="sizing010">
+            <Stack flow={Flow.HorizontalTop} as="span" spaceInline="space030">
+              <Stack flow={Flow.HorizontalTop} spaceInline="space010">
                 <Tag>Nested Item 1</Tag>
                 <Tag>Nested Item 2</Tag>
                 <Tag>Nested Item 3</Tag>
               </Stack>
-              <Stack flow={Flow.HorizontalTop} spaceInline="sizing010">
+              <Stack flow={Flow.HorizontalTop} spaceInline="space010">
                 <Tag>Nested Item 1</Tag>
                 <Tag>Nested Item 2</Tag>
                 <Tag>Nested Item 3</Tag>
@@ -494,7 +490,7 @@ export default {
         <MainContainer>
           <StorybookHeading>Stack as list with space</StorybookHeading>
           <Container>
-            <Stack list spaceInline="sizing030" ariaLabel="Tag list">
+            <Stack list spaceInline="space030" ariaLabel="Tag list">
               <Tag>Example 1</Tag>
               <Tag>Example 2</Tag>
               <Tag>Example 3</Tag>
@@ -512,8 +508,8 @@ export default {
           <Container hasHeight>
             <Stack
               list
-              spaceInline="sizing030"
-              spaceStack="sizing030"
+              spaceInline="space030"
+              spaceStack="space030"
               ariaLabel="Tag list"
               wrap="wrap"
             >
@@ -558,7 +554,7 @@ export default {
           <Container>
             <Stack
               list
-              spaceInline="sizing030"
+              spaceInline="space030"
               ariaLabel="Tag list"
               flow={Flow.HorizontalTop}
             >
@@ -581,8 +577,8 @@ export default {
           <Container>
             <Stack
               list
-              spaceInline="sizing030"
-              spaceStack="sizing030"
+              spaceInline="space030"
+              spaceStack="space030"
               ariaLabel="Tag list"
               flow={Flow.HorizontalTop}
               wrap="wrap"
@@ -640,7 +636,7 @@ export default {
             Stack as list with space and nested stack as child
           </StorybookHeading>
           <Container>
-            <Stack list spaceInline="sizing030">
+            <Stack list spaceInline="space030">
               <Stack flow={Flow.HorizontalTop}>
                 <Tag>Nested Item 1</Tag>
                 <Tag>Nested Item 2</Tag>
@@ -698,7 +694,7 @@ export default {
             Nested stacks both as list with space
           </StorybookHeading>
           <Container>
-            <Stack list spaceInline="sizing030">
+            <Stack list spaceInline="space030">
               <Stack list flow={Flow.HorizontalTop}>
                 <Tag>Nested Item 1</Tag>
                 <Tag>Nested Item 2</Tag>

@@ -36,14 +36,15 @@ const verticalFlows = [
   Flow.VerticalRight,
 ];
 
-export const hasSpacing = (theme: Theme, spaceToken: string) =>
-  theme.sizing[spaceToken] && parseInt(theme.sizing[spaceToken], 10) !== 0;
+export const hasSpacing = (theme: Theme, spaceToken: SizingKeys) =>
+  theme.spacePresets[spaceToken] &&
+  parseInt(theme.spacePresets[spaceToken], 10) !== 0;
 
 export const getSpaceInHalf = (
   theme: Theme,
   spaceToken: string,
   negative?: boolean,
-) => `calc(${negative ? '-' : ''}${theme.sizing[spaceToken]}/2)`;
+) => `calc(${negative ? '-' : ''}${theme.spacePresets[spaceToken]}/2)`;
 
 const calculateMargins = (negative?: boolean) => ({
   theme,
@@ -103,9 +104,9 @@ const getFlexDirection = ({flow, flowReverse}: StyledStackProps) => {
 
 export const StyledMasterContainer = styled.div<StyledStackProps>`
   display: ${({inline}) => (inline ? 'inline-flex' : 'flex')};
-
   height: 100%;
   align-items: ${({flow}) => alignmentDictionary[flow]};
+  align-content: ${({flow}) => alignmentDictionary[flow]};
   flex-wrap: ${({$wrap}) => ($wrap === true ? 'wrap' : $wrap)};
   flex-grow: ${({flexGrow}) => (flexGrow === true ? 1 : flexGrow)};
   flex-shrink: ${({flexShrink}) => (flexShrink === true ? 1 : flexShrink)};
