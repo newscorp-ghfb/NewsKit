@@ -6,7 +6,6 @@ const routes = {
   audioPlayer: '/components/audio-player',
   dateTime: '/components/date-time',
   icons: '/components/icons',
-  radioPlayer: '/components/radio-player',
   spacing: '/theming/foundations/spacing',
   typography: '/theming/typography-presets',
   welcome: '/index',
