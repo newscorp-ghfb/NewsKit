@@ -25,7 +25,7 @@ export const componentDefaults = {
       },
     },
     controls: {
-      space: 'sizing030',
+      space: 'space030',
       previousButton: {
         stylePreset: 'audioPlayerControlButton',
       },
@@ -70,7 +70,7 @@ export const componentDefaults = {
   byline: {
     stylePreset: 'inkSubtle',
     typographyPreset: 'utilityMeta020',
-    spaceStack: 'sizing020',
+    spaceStack: 'space020',
     link: {
       stylePreset: 'linkInline',
       typographyPreset: 'utilityMeta020',
@@ -88,7 +88,7 @@ export const componentDefaults = {
       minWidth: 'sizing090',
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
-      spaceInline: 'sizing020',
+      spaceInline: 'space020',
     },
     medium: {
       typographyPreset: 'utilityButton020',
@@ -97,7 +97,7 @@ export const componentDefaults = {
       minWidth: 'sizing100',
       minHeight: 'sizing080',
       iconSize: 'iconSize020',
-      spaceInline: 'sizing020',
+      spaceInline: 'space020',
     },
     large: {
       typographyPreset: 'utilityButton030',
@@ -106,7 +106,7 @@ export const componentDefaults = {
       minWidth: 'sizing110',
       minHeight: 'sizing090',
       iconSize: 'iconSize030',
-      spaceInline: 'sizing020',
+      spaceInline: 'space020',
     },
   },
   caption: {
@@ -206,7 +206,7 @@ export const componentDefaults = {
       spaceInset: 'spaceInsetSquish010',
       minHeight: 'sizing050',
       iconSize: 'iconSize010',
-      spaceInline: 'sizing010',
+      spaceInline: 'space010',
     },
     large: {
       typographyPreset: 'utilityLabel030',
@@ -214,7 +214,7 @@ export const componentDefaults = {
       spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
-      spaceInline: 'sizing010',
+      spaceInline: 'space010',
     },
   },
   grid: {
@@ -337,7 +337,7 @@ export const componentDefaults = {
   },
   link: {
     stylePreset: 'linkInline',
-    spaceInline: 'sizing010',
+    spaceInline: 'space010',
     externalIcon: {
       size: 'iconSize010',
     },
@@ -366,7 +366,7 @@ export const componentDefaults = {
       spaceInline: 'space040',
     },
     items: {
-      spaceInline: 'sizing020',
+      spaceInline: 'space020',
     },
   },
   slider: {
@@ -408,7 +408,7 @@ export const componentDefaults = {
       spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
-      spaceInline: 'sizing020',
+      spaceInline: 'space020',
     },
     medium: {
       stylePreset: 'tab',
@@ -416,7 +416,7 @@ export const componentDefaults = {
       spaceInset: 'spaceInsetSquish030',
       minHeight: 'sizing080',
       iconSize: 'iconSize020',
-      spaceInline: 'sizing020',
+      spaceInline: 'space020',
     },
     large: {
       stylePreset: 'tab',
@@ -424,7 +424,7 @@ export const componentDefaults = {
       spaceInset: 'spaceInsetSquish030',
       minHeight: 'sizing090',
       iconSize: 'iconSize030',
-      spaceInline: 'sizing020',
+      spaceInline: 'space020',
     },
   },
   tabGroup: {
@@ -508,7 +508,7 @@ export const componentDefaults = {
       spaceInset: 'spaceInsetSquish010',
       minHeight: 'sizing050',
       iconSize: 'iconSize010',
-      spaceInline: 'sizing010',
+      spaceInline: 'space010',
     },
     medium: {
       typographyPreset: 'utilityLabel020',
@@ -516,7 +516,7 @@ export const componentDefaults = {
       spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
-      spaceInline: 'sizing010',
+      spaceInline: 'space010',
     },
     large: {
       typographyPreset: 'utilityLabel030',
@@ -524,7 +524,7 @@ export const componentDefaults = {
       spaceInset: 'spaceInsetSquish020',
       minHeight: 'sizing070',
       iconSize: 'iconSize020',
-      spaceInline: 'sizing010',
+      spaceInline: 'space010',
     },
   },
   titleBar: {
