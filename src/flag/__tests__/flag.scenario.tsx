@@ -94,8 +94,8 @@ export default {
           <StorybookSubHeading>Flag Sizes</StorybookSubHeading>
           <Stack
             flow="horizontal-center"
-            spaceStack="sizing020"
-            spaceInline="sizing020"
+            spaceStack="space020"
+            spaceInline="space020"
             wrap="wrap"
           >
             <Flag size={FlagSize.Small}>Small</Flag>
@@ -121,8 +121,8 @@ export default {
           <Container>
             <Stack
               flow="horizontal-center"
-              spaceInline="sizing020"
-              spaceStack="sizing020"
+              spaceInline="space020"
+              spaceStack="space020"
               wrap="wrap"
             >
               <Flag size={FlagSize.Small}>
@@ -140,8 +140,8 @@ export default {
           <Container>
             <Stack
               flow="horizontal-center"
-              spaceInline="sizing020"
-              spaceStack="sizing020"
+              spaceInline="space020"
+              spaceStack="space020"
               wrap="wrap"
             >
               <Flag size={FlagSize.Small}>
@@ -161,8 +161,8 @@ export default {
           <Container>
             <Stack
               flow="horizontal-center"
-              spaceInline="sizing020"
-              spaceStack="sizing020"
+              spaceInline="space020"
+              spaceStack="space020"
               wrap="wrap"
             >
               <Flag size={FlagSize.Small}>
@@ -184,8 +184,8 @@ export default {
           <Container>
             <Stack
               flow="horizontal-center"
-              spaceInline="sizing020"
-              spaceStack="sizing020"
+              spaceStack="space020"
+              spaceInline="space020"
               wrap="wrap"
             >
               <Flag size={FlagSize.Small}>

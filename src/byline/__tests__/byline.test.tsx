@@ -146,7 +146,7 @@ describe('Byline', () => {
       overrides: {
         stylePreset: 'bylineCustom',
         typographyPreset: 'utilityLabel030',
-        spaceStack: 'sizing030',
+        spaceStack: 'space030',
         link: {
           stylePreset: 'bylineLinkCustom',
           typographyPreset: 'utilityLabel030',

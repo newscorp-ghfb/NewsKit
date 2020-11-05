@@ -32,7 +32,7 @@ export default {
         <MainContainer>
           <StorybookHeading>StackChild with custom order</StorybookHeading>
           <Container>
-            <Stack spaceInline="sizing050" flow={Flow.HorizontalTop}>
+            <Stack spaceInline="space050" flow={Flow.HorizontalTop}>
               <StackChild order={3}>
                 <Tag>Child 1</Tag>
               </StackChild>
@@ -54,7 +54,7 @@ export default {
         <MainContainer>
           <StorybookHeading>StackChild with stack list</StorybookHeading>
           <Container>
-            <Stack spaceInline="sizing050" flow={Flow.HorizontalTop} list>
+            <Stack spaceInline="space050" flow={Flow.HorizontalTop} list>
               <StackChild order={3}>
                 <Tag>Child 1</Tag>
               </StackChild>

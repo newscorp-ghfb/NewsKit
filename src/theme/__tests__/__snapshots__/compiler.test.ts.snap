@@ -185,7 +185,7 @@ Object {
         "replayButton": Object {
           "stylePreset": "audioPlayerControlButton",
         },
-        "space": "sizing030",
+        "space": "space030",
       },
       "seekBar": Object {
         "buffering": Object {
@@ -238,7 +238,7 @@ Object {
         "iconSize": "iconSize030",
         "minHeight": "sizing090",
         "minWidth": "sizing110",
-        "spaceInline": "sizing020",
+        "spaceInline": "space020",
         "spaceInset": "spaceInsetSquish040",
         "stylePreset": "buttonDefault",
         "typographyPreset": "utilityButton030",
@@ -247,7 +247,7 @@ Object {
         "iconSize": "iconSize020",
         "minHeight": "sizing080",
         "minWidth": "sizing100",
-        "spaceInline": "sizing020",
+        "spaceInline": "space020",
         "spaceInset": "spaceInsetSquish030",
         "stylePreset": "buttonDefault",
         "typographyPreset": "utilityButton020",
@@ -256,7 +256,7 @@ Object {
         "iconSize": "iconSize010",
         "minHeight": "sizing060",
         "minWidth": "sizing090",
-        "spaceInline": "sizing020",
+        "spaceInline": "space020",
         "spaceInset": "spaceInsetSquish020",
         "stylePreset": "buttonDefault",
         "typographyPreset": "utilityButton010",
@@ -271,7 +271,7 @@ Object {
         "stylePreset": "linkInline",
         "typographyPreset": "utilityMeta020",
       },
-      "spaceStack": "sizing020",
+      "spaceStack": "space020",
       "stylePreset": "inkSubtle",
       "typographyPreset": "utilityMeta020",
     },
@@ -369,7 +369,7 @@ Object {
       "large": Object {
         "iconSize": "iconSize010",
         "minHeight": "sizing060",
-        "spaceInline": "sizing010",
+        "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish020",
         "stylePreset": "flagDefault",
         "typographyPreset": "utilityLabel030",
@@ -377,7 +377,7 @@ Object {
       "small": Object {
         "iconSize": "iconSize010",
         "minHeight": "sizing050",
-        "spaceInline": "sizing010",
+        "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish010",
         "stylePreset": "flagDefault",
         "typographyPreset": "utilityLabel010",
@@ -505,7 +505,7 @@ Object {
       "externalIcon": Object {
         "size": "iconSize010",
       },
-      "spaceInline": "sizing010",
+      "spaceInline": "space010",
       "stylePreset": "linkInline",
     },
     "linkStandalone": Object {
@@ -527,7 +527,7 @@ Object {
     },
     "shareBar": Object {
       "items": Object {
-        "spaceInline": "sizing020",
+        "spaceInline": "space020",
       },
       "label": Object {
         "spaceInline": "space040",
@@ -571,7 +571,7 @@ Object {
       "large": Object {
         "iconSize": "iconSize030",
         "minHeight": "sizing090",
-        "spaceInline": "sizing020",
+        "spaceInline": "space020",
         "spaceInset": "spaceInsetSquish030",
         "stylePreset": "tab",
         "typographyPreset": "utilityLabel030",
@@ -579,7 +579,7 @@ Object {
       "medium": Object {
         "iconSize": "iconSize020",
         "minHeight": "sizing080",
-        "spaceInline": "sizing020",
+        "spaceInline": "space020",
         "spaceInset": "spaceInsetSquish030",
         "stylePreset": "tab",
         "typographyPreset": "utilityLabel020",
@@ -587,7 +587,7 @@ Object {
       "small": Object {
         "iconSize": "iconSize010",
         "minHeight": "sizing060",
-        "spaceInline": "sizing020",
+        "spaceInline": "space020",
         "spaceInset": "spaceInsetSquish020",
         "stylePreset": "tab",
         "typographyPreset": "utilityLabel010",
@@ -600,7 +600,7 @@ Object {
       "large": Object {
         "iconSize": "iconSize020",
         "minHeight": "sizing070",
-        "spaceInline": "sizing010",
+        "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish020",
         "stylePreset": "tagDefault",
         "typographyPreset": "utilityLabel030",
@@ -608,7 +608,7 @@ Object {
       "medium": Object {
         "iconSize": "iconSize010",
         "minHeight": "sizing060",
-        "spaceInline": "sizing010",
+        "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish020",
         "stylePreset": "tagDefault",
         "typographyPreset": "utilityLabel020",
@@ -616,7 +616,7 @@ Object {
       "small": Object {
         "iconSize": "iconSize010",
         "minHeight": "sizing050",
-        "spaceInline": "sizing010",
+        "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish010",
         "stylePreset": "tagDefault",
         "typographyPreset": "utilityLabel010",

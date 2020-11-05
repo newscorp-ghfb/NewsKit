@@ -112,7 +112,7 @@ describe('Tag', () => {
   test('renders a tag with an icon and custom spacing between elements', () => {
     const props: TagProps = {
       overrides: {
-        spaceInline: 'sizing020',
+        spaceInline: 'space020',
       },
     };
     const fragment = renderToFragmentWithTheme(renderTagWithTextAndIcon, props);

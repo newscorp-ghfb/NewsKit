@@ -105,7 +105,7 @@ describe('Flag', () => {
   test('renders a flag with an icon and custom spacing between elements', () => {
     const props: FlagProps = {
       overrides: {
-        spaceInline: 'sizing020',
+        spaceInline: 'space020',
       },
     };
     const fragment = renderToFragmentWithTheme(
