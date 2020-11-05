@@ -35,7 +35,7 @@ export const SwatchRow: SwatchComponent = ({
       <Stack flow="horizontal-center" stackDistribution="space-between">
         <span>{color.name}</span>
         <span>
-          <Stack flow="horizontal-center" spaceInline="sizing050">
+          <Stack flow="horizontal-center" spaceInline="space050">
             {color.parentColor && <span>({color.parentColor.name})</span>}
             <span>{colorTokenToUpperCase(color.value)}</span>
             <StyledBadgeContainer>

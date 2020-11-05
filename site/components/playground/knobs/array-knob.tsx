@@ -142,9 +142,8 @@ export const ArrayKnob: React.FC<ArrayKnobProps> = ({
           return row ? (
             <Stack
               flow={Flow.HorizontalBottom}
-              spaceInline="sizing020"
-              /* eslint-disable-next-line react/no-array-index-key */
-              key={label + i}
+              spaceInline="space020"
+              key={label + value}
             >
               {row}
               <ButtonContainer>
