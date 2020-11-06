@@ -92,14 +92,14 @@ const CustomComponent = (props) =>
 const overrides = {
   stylePreset: 'customComponentStylesOverrides',
   typographyPreset: 'customComponentTypographyOverrides',
-  spaceStack: 'sizing040',
+  spaceStack: 'space040',
   nkComponent1: {
     stylePreset: 'nkComponent1StylesOverrides',
-    spaceStack: 'sizing030',
+    spaceStack: 'space030',
   },
   nkComponent2: {
     stylePreset: 'nkComponent2StylesOverrides',
-    spaceInline: 'sizing010',
+    spaceInline: 'space010',
   },
 };
 

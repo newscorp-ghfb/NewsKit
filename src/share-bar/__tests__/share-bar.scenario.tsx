@@ -103,7 +103,7 @@ export default {
                   spaceInset: 'space020',
                 },
                 items: {
-                  spaceInline: 'sizing010',
+                  spaceInline: 'space010',
                 },
               }}
             >

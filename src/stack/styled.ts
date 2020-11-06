@@ -103,11 +103,7 @@ export const StyledMasterContainer = styled.div<StyledStackProps>`
   display: ${({inline}) => (inline ? 'inline-flex' : 'flex')};
   height: 100%;
   align-items: ${({flow}) => alignmentDictionary[flow]};
-  align-content: ${({flow, $wrap}) => {
-    if ($wrap === 'wrap') {
-      return alignmentDictionary[flow];
-    }
-  }};
+  align-content: ${({flow, $wrap}) => ($wrap ? alignmentDictionary[flow] : '')};
   flex-wrap: ${({$wrap}) => ($wrap === true ? 'wrap' : $wrap)};
   flex-grow: ${({flexGrow}) => (flexGrow === true ? 1 : flexGrow)};
   flex-shrink: ${({flexShrink}) => (flexShrink === true ? 1 : flexShrink)};

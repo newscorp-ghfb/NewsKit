@@ -164,7 +164,7 @@ export default {
               overrides={{
                 stylePreset: 'bylineCustom',
                 typographyPreset: 'utilityLabel010',
-                spaceStack: 'sizing030',
+                spaceStack: 'space030',
                 link: {
                   stylePreset: 'bylineLinkCustom',
                   typographyPreset: 'utilityLabel010',

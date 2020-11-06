@@ -245,7 +245,7 @@ export default {
                   overrides={{
                     stylePreset: 'tabCustom',
                     typographyPreset: 'utilityLabel030',
-                    spaceInline: 'sizing030',
+                    spaceInline: 'space030',
                   }}
                 >
                   <IconFilledEmail />
