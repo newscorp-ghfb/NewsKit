@@ -21,7 +21,7 @@ const cardTeaserLeadSpaceStack = {
   xs: 'space040',
 };
 const cardTeaserLeadInsetVariantSpaceStack = 'space000';
-const cardActionsSpace = 'sizing040';
+const cardActionsSpace = 'space040';
 
 const cardTeaserHeadlineSmallTypographyPreset = 'editorialHeading010';
 const cardTeaserLeadSmallTypographyPreset = 'editorialParagraph010';

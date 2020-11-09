@@ -46,7 +46,7 @@ const cardTeaserLead = {
   xs: 'space040',
 };
 const cardTeaserLeadInsetVariant = 'space000';
-const cardActions = 'sizing040';
+const cardActions = 'space040';
 
 // Typography Presets
 const cardTypographyPresets: {[index: string]: string} = {
