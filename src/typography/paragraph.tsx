@@ -26,14 +26,12 @@ export interface ParagraphProps {
 
 export const ParagraphText = styled.p<ParagraphProps>`
   margin: 0;
-  padding: 1px 0;
   ${getStylePreset('paragraph', '')};
-  ${getTypographyPreset('paragraph', '', {withCrop: true})};
+  ${getTypographyPreset('paragraph', '')};
 `;
 
 export const ParagraphDropCap = styled.span<ParagraphProps>`
   margin: 0;
-  padding: 1px 0;
   float: left;
   margin-right: 0.15em;
 

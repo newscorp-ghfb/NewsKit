@@ -356,7 +356,7 @@ export const componentDefaults = {
         md: 'editorialDropCap020',
         lg: 'editorialDropCap030',
       },
-      space: 'space020',
+      space: 'space010',
     },
   },
   shareBar: {
