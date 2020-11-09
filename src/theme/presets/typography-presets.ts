@@ -66,35 +66,35 @@ typographyPresets.editorialHeading080 = {
 typographyPresets.editorialSubheading010 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
   fontSize: '{{fonts.fontSize050}}',
-  lineHeight: getLineHeight('fontSize050', 'fontLineHeight030'),
+  lineHeight: getLineHeight('fontSize050', 'fontLineHeight020'),
   fontWeight: '{{fonts.fontWeight040}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 typographyPresets.editorialSubheading020 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
   fontSize: '{{fonts.fontSize070}}',
-  lineHeight: getLineHeight('fontSize070', 'fontLineHeight030'),
+  lineHeight: getLineHeight('fontSize070', 'fontLineHeight020'),
   fontWeight: '{{fonts.fontWeight040}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 typographyPresets.editorialSubheading030 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
   fontSize: '{{fonts.fontSize080}}',
-  lineHeight: getLineHeight('fontSize080', 'fontLineHeight030'),
+  lineHeight: getLineHeight('fontSize080', 'fontLineHeight020'),
   fontWeight: '{{fonts.fontWeight040}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 typographyPresets.editorialSubheading040 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
   fontSize: '{{fonts.fontSize090}}',
-  lineHeight: getLineHeight('fontSize090', 'fontLineHeight030'),
+  lineHeight: getLineHeight('fontSize090', 'fontLineHeight020'),
   fontWeight: '{{fonts.fontWeight040}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
 typographyPresets.editorialSubheading050 = {
   fontFamily: '{{fonts.fontFamily020.fontFamily}}',
   fontSize: '{{fonts.fontSize100}}',
-  lineHeight: getLineHeight('fontSize100', 'fontLineHeight030'),
+  lineHeight: getLineHeight('fontSize100', 'fontLineHeight020'),
   fontWeight: '{{fonts.fontWeight040}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };

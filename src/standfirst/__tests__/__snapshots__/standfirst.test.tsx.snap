@@ -40,7 +40,7 @@ exports[`Standfirst renders as h4 html tag 1`] = `
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 24px;
-    line-height: 1.3333333333333333;
+    line-height: 1.1666666666666667;
     font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
@@ -53,7 +53,7 @@ exports[`Standfirst renders as h4 html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.31666666666666665em + 1px);
+    margin-bottom: calc(-0.2333333333333334em + 1px);
   }
 
   .emotion-0::after {
@@ -61,7 +61,7 @@ exports[`Standfirst renders as h4 html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.37916666666666665em + 1px);
+    margin-top: calc(-0.2958333333333334em + 1px);
   }
 }
 
@@ -112,7 +112,7 @@ exports[`Standfirst renders as span html tag 1`] = `
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 24px;
-    line-height: 1.3333333333333333;
+    line-height: 1.1666666666666667;
     font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
@@ -125,7 +125,7 @@ exports[`Standfirst renders as span html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.31666666666666665em + 1px);
+    margin-bottom: calc(-0.2333333333333334em + 1px);
   }
 
   .emotion-0::after {
@@ -133,7 +133,7 @@ exports[`Standfirst renders as span html tag 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.37916666666666665em + 1px);
+    margin-top: calc(-0.2958333333333334em + 1px);
   }
 }
 
@@ -183,7 +183,7 @@ exports[`Standfirst renders with custom style preset 1`] = `
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 24px;
-    line-height: 1.3333333333333333;
+    line-height: 1.1666666666666667;
     font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
@@ -196,7 +196,7 @@ exports[`Standfirst renders with custom style preset 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.31666666666666665em + 1px);
+    margin-bottom: calc(-0.2333333333333334em + 1px);
   }
 
   .emotion-0::after {
@@ -204,7 +204,7 @@ exports[`Standfirst renders with custom style preset 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.37916666666666665em + 1px);
+    margin-top: calc(-0.2958333333333334em + 1px);
   }
 }
 
@@ -291,7 +291,7 @@ exports[`Standfirst renders with default styles 1`] = `
   .emotion-0 {
     font-family: "Source Serif Pro",serif;
     font-size: 24px;
-    line-height: 1.3333333333333333;
+    line-height: 1.1666666666666667;
     font-weight: 600;
     -webkit-letter-spacing: 0;
     -moz-letter-spacing: 0;
@@ -304,7 +304,7 @@ exports[`Standfirst renders with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-bottom: calc(-0.31666666666666665em + 1px);
+    margin-bottom: calc(-0.2333333333333334em + 1px);
   }
 
   .emotion-0::after {
@@ -312,7 +312,7 @@ exports[`Standfirst renders with default styles 1`] = `
     display: block;
     height: 0;
     width: 0;
-    margin-top: calc(-0.37916666666666665em + 1px);
+    margin-top: calc(-0.2958333333333334em + 1px);
   }
 }
 
