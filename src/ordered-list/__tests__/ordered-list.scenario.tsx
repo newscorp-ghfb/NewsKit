@@ -38,7 +38,7 @@ export default {
           <ThemeProvider theme={myCustomTheme}>
             <OrderedList
               overrides={{
-                spaceInline: 'sizing010',
+                spaceInline: 'space010',
                 content: {
                   stylePreset: 'customOrderedListItemContent',
                   typographyPreset: 'editorialParagraph030',

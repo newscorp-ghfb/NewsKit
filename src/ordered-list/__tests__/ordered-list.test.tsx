@@ -41,7 +41,7 @@ describe('OrderedList', () => {
     const props = {
       children: ['first node', 'second node', 'third node'],
       overrides: {
-        spaceInline: 'sizing010',
+        spaceInline: 'space010',
         content: {
           stylePreset: 'customOrderedListItemContent',
           typographyPreset: 'editorialParagraph030',

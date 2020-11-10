@@ -175,6 +175,7 @@ exports[`OrderedList renders with overrides 1`] = `
 }
 
 .emotion-0 {
+  margin-bottom: 4px;
   counter-increment: item-counter;
   color: #ef1703;
   font-family: "Noto Sans",sans-serif;
