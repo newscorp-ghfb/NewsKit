@@ -1,0 +1,197 @@
+import Layout from '../../../components/layout';
+import Playground from '../../../components/playground';
+import {Prop} from '../../../components/prop';
+import {TextBoxSwatch} from '../../../components/theming-values/colors';
+import {LegacyBlock} from '../../../components/legacy-block';
+
+import {ScreenReaderOnly, Visible, Hidden} from 'newskit';
+
+export default Layout;
+
+# Visibility
+
+## ScreenReaderOnly
+
+## ScreenReaderOnly Overview
+
+The ScreenReaderOnly component wraps an element making sure that it is not visible to the user but still readable by a screen reader.
+
+## ScreenReaderOnly Props
+
+<LegacyBlock $marginTop="sizing040">
+  <Prop name="children" type="string" required>
+    The description of an element is passed as the child of the component.
+  </Prop>
+  <Prop name="id" type="string">
+   When provided the id can be used to reference this element, for example from a `aria-describedby` attribute.
+  </Prop>
+</LegacyBlock>
+
+## ScreenReaderOnly Playground
+
+<Playground
+  componentName="ScreenReaderOnly"
+  component={ScreenReaderOnly}
+  knobs={[
+    {
+      name: 'Description',
+      propName: 'children',
+      value: 'Element description',
+    },
+    {
+      name: 'Id',
+      propName: 'id',
+      value: 'sr-only',
+    },
+  ]}
+/>
+
+## Visible
+
+## Visible Overview
+
+The Visible is a container component. The content will only be `visible` if the screen size matches the applied breakpoint.
+
+## Visible Props
+
+<LegacyBlock $marginTop="sizing040">
+  <Prop name="children" type="any" required>
+    Content of the visiblity container
+  </Prop>
+  <Prop name="display" type="string">
+    CSS attribute for display.
+    <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/display'>More information</a>
+  </Prop>
+  <Prop name="xs" type="boolean">
+    Render when in xs breakpoint
+  </Prop>
+  <Prop name="sm" type="boolean">
+    Render when in sm breakpoint
+  </Prop>
+  <Prop name="md" type="boolean">
+    Render when in md breakpoint
+  </Prop>
+  <Prop name="lg" type="boolean">
+    Render when in lg breakpoint
+  </Prop>
+  <Prop name="xl" type="boolean">
+    Render when in xl breakpoint
+  </Prop>
+  <Prop name="targetDevices" type="Array<Devices>">
+    Array of devices for which the content is hidden with higher priority than the above breakpoints
+  </Prop>
+</LegacyBlock>
+
+## Visible Playground
+
+<Playground
+  componentName="Visible"
+  component={Visible}
+  knobs={[
+    {
+      name: 'Content',
+      propName: 'children',
+      value: 'Visible Content',
+    },
+    {
+      name: 'Xs',
+      propName: 'xs',
+      value: true,
+    },
+    {
+      name: 'Sm',
+      propName: 'sm',
+      value: false,
+    },
+    {
+      name: 'Md',
+      propName: 'md',
+      value: false,
+    },
+    {
+      name: 'Lg',
+      propName: 'lg',
+      value: false,
+    },
+    {
+      name: 'Xl',
+      propName: 'xl',
+      value: false,
+    },
+  ]}
+/>
+
+## Hidden
+
+## Hidden Overview
+
+The Hidden is a container component. The content will only be `hidden` if the screen size matches the applied breakpoint.
+
+## Hidden Props
+
+<LegacyBlock $marginTop="sizing040">
+  <Prop name="children" type="any" required>
+    Content of the visiblity container
+  </Prop>
+  <Prop name="display" type="string">
+    CSS attribute for display
+    <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/display'>More information</a>
+  </Prop>
+  <Prop name="xs" type="boolean">
+    Hidden when in xs breakpoint
+  </Prop>
+  <Prop name="sm" type="boolean">
+    Hidden when in xs breakpoint
+  </Prop>
+  <Prop name="md" type="boolean">
+    Hidden when in xs breakpoint
+  </Prop>
+  <Prop name="lg" type="boolean">
+    Hidden when in xs breakpoint
+  </Prop>
+  <Prop name="xl" type="boolean">
+    Render when in xl breakpoint
+  </Prop>
+  <Prop name="targetDevices" type="Array<Devices>">
+    Array of devices for which the content is hidden with higher priority than the above breakpoints
+  </Prop>
+</LegacyBlock>
+
+## Hidden Playground
+
+<Playground
+  componentName="Hidden"
+  component={Hidden}
+  knobs={[
+   {
+      name: 'Content',
+      propName: 'children',
+      value: 'Hidden Content',
+    },
+    {
+      name: 'Xs',
+      propName: 'xs',
+      value: true,
+    },
+    {
+      name: 'Sm',
+      propName: 'sm',
+      value: false,
+    },
+    {
+      name: 'Md',
+      propName: 'md',
+      value: false,
+    },
+    {
+      name: 'Lg',
+      propName: 'lg',
+      value: false,
+    },
+    {
+      name: 'Xl',
+      propName: 'xl',
+      value: false,
+    }
+  ]}
+/>

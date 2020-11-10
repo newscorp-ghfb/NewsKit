@@ -1,0 +1,242 @@
+import Layout from '../../../components/layout';
+import Playground from '../../../components/playground';
+import Prop from '../../../components/prop';
+import {CodeFromDefaultPresets} from '../../../components/code';
+
+import {AudioPlayer, UnorderedList, Block} from 'newskit';
+
+export default Layout;
+
+# Audio Player
+
+## Overview
+
+The Audio Player component is a collection of custom features and elements built around the native `<audio>` element.
+
+### Usage
+
+The Audio Player requires a source stream to be passed in as a prop. This will then be loaded into the internal `<audio>` element for playback.
+
+## Props
+
+<Block marginTop="sizing050">
+  <Prop name="src" type="string" required>
+    URL of the audio source to be played.
+  </Prop>
+  <Prop name="live" type="boolean">
+    If true will display the controls for live player.
+  </Prop>
+  <Prop name="autoplay" type="boolean">
+    <div>
+      Even though the feature is supported in most browser but the browser will
+      only follow this setting if:
+    </div>
+    <ul>
+      <li>
+        you are on a desktop browser. it will not work on mobile browsers to
+        prevent users from eating into their mobile data allowance
+      </li>
+      <li>
+        it can't happen on page load, the user has to interact with the site for
+        it to work: navigating inside an SPA seems to satisfy the browser as
+        there was no page refresh.
+      </li>
+    </ul>
+    <div>
+      In Summary autoplay will work in some scenarios, this is expected. It's
+      best thought of as a suggestion for the browser: play the audio
+      automatically if it's acceptable from a usability perspective
+    </div>
+  </Prop>
+  <Prop name="captionSrc" type="string">
+    Source for audio transcription generally provided in{' '}
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API">
+      web vtt format
+    </a>.
+  </Prop>
+  <Prop name="onPreviousTrack" type="function">
+    This function defines the callback of the previous track button
+    for the first 5 secodns of the track.
+    If onPreviousTrack is not provided, the previous track button
+    will be disabled for the first 5 seconds of the track. <b>After
+    the first 5 seconds the button's functionality is overridden
+    to go to the start of the track.</b>
+  </Prop>
+  <Prop name="onNextTrack" type="function">
+    Will display the next track button, provided function is executed on click.
+  </Prop>
+  <Prop name="disableNextTrack" type="boolean">
+    Disable the next track button.
+  </Prop>
+  <Prop name="disablePreviousTrack" type="boolean">
+    Disable the previous track button.
+  </Prop>
+  <Prop name="popoutHref" type="string">
+    Url to player hosted by itself on page. Will open in a new window and pause current instance.
+  </Prop>
+    <Prop name="overrides" type="object">
+    <Prop name="seekBar" type="object">
+        If provided overrides the seek Bar, If in live mode, the track slider is not shown and so
+        these presets are ignored.
+      <Prop name="slider" type="SliderOverrideProps">
+        If provided overrides the styles of the slider that builds the VolumeControl.
+        The slider overrides structure can be found in the <a href="./slider">slider documentation page</a>.
+      </Prop>
+      <Prop name="buffering" type="object">
+        <Prop name="stylePreset" type="MQ<string>">
+          Overrides the stylePreset of the min (mute) and max control buttons.
+        </Prop>
+      </Prop>
+    </Prop>
+    <Prop name="controls" type="ControlsOverrideProps">
+      <div>
+        This prop is an object containing the following optional button style
+        presets.
+      </div>
+      <Prop name="space" type="MQ<string>">
+        Setting the space between the control buttons.
+      </Prop>
+      <Prop name="previousButton" type="object" >
+        <Prop name="stylePreset" type="MQ<string>" >
+          Preset for previous track button.
+        </Prop>
+      </Prop>
+      <Prop name="replayButton" type="object" >
+        <Prop name="stylePreset" type="MQ<string>">
+          Preset for skip replay button.
+        </Prop>
+      </Prop>
+      <Prop name="playPauseButton" type="object" >
+        <Prop name="stylePreset" type="MQ<string>" >
+          Preset for play / pause button.
+        </Prop>
+      </Prop>
+      <Prop name="forwardButton" type="object" >
+        <Prop name="stylePreset" type="MQ<string>" >
+          Preset for skip forward button.
+        </Prop>
+      </Prop>
+      <Prop name="nextButton" type="object" >
+        <Prop name="stylePreset" type="MQ<string>" >
+          Preset for next track button.
+        </Prop>
+      </Prop>
+      <Prop name="popoutButton" type="object" >
+        <Prop name="stylePreset" type="MQ<string>" >
+          Preset for popout button.
+        </Prop>
+      </Prop>
+    </Prop>
+    <Prop name="volumeControl" type="VolumeControlOverrideProps">
+      If provided overrides the styles of the slider that builds the VolumeControl.
+      The volume control overrides structure can be found in the <a href="./volume-control">volume control documentation page</a>.
+   </Prop>
+   <CodeFromDefaultPresets componentName="audioPlayer" />
+  </Prop>
+  <Prop name="ariaLandmark" type="string" default="audio-player">
+    The aria-label attribute for the audio player. It is recommended that you set this
+    for screen readers to be able to explain the audio player purpose. If left
+    undefined it is simply set to "audio-player". ariaLandmark should be unique, so
+    the same value should not appear on the same page more than once.
+  </Prop>
+</Block>
+
+## Playground - Live Player
+
+<Playground
+  componentName="AudioPlayer"
+  component={props => (
+      <AudioPlayer {...props} live />
+  )}
+  knobs={[
+    {
+      name: 'Source',
+      propName: 'src',
+      value: 'https://radio.talkradio.co.uk/stream',
+    },
+    {
+      name: 'Auto Play',
+      propName: 'autoPlay',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'captionSrc',
+      propName: 'captionSrc',
+      value: 'captionsSrc.vtt',
+    },
+    {
+      name: 'ariaLandmark',
+      propName: 'ariaLandmark',
+      value: 'live audio player',
+    },
+  ]}
+/>
+
+## Playground - Recorded Player
+
+<Playground
+  componentName="AudioPlayer"
+  component={AudioPlayer}
+  knobs={[
+    {
+      name: 'Source',
+      propName: 'src',
+      value:
+        'https://extras.thetimes.co.uk/web/public/2018/world-cup-alexa-breifing/assets/latest-briefing.mp3',
+    },
+    {
+      name: 'Auto Play',
+      propName: 'autoPlay',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'Caption Src',
+      propName: 'captionSrc',
+      value: 'captionsSrc.vtt',
+    },
+    {
+      name: 'ariaLandmark',
+      propName: 'ariaLandmark',
+      value: 'recorded audio player',
+    },
+    {
+      name: 'Disable Previous Track',
+      propName: 'disablePreviousTrack',
+      type: 'boolean',
+      value: true,
+    },
+    {
+      name: 'Disable Next Track',
+      propName: 'disableNextTrack',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'Skip Next Track',
+      propName: 'onNextTrack',
+      value: (() => {})
+    },
+    {
+      name: 'Skip Previous Track',
+      propName: 'onPreviousTrack',
+      value: (() => {})
+    },
+    {
+      name: 'Popout',
+      propName: 'popoutHref',
+      value: 'https://newskit.co.uk'
+    }
+  ]}
+/>
+
+## Rationale
+
+### Styling
+
+The Audio Player's internal components can be styled as required.
+
+### Accessibility
+
+The controls of the Audio Player are fully accessible with the keyboard.

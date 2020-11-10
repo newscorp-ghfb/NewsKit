@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Sidebar navigation collapses successfully at nested level 1`] = `
+exports[`Sidebar navigation on group 1 and 2  on group 1 renders as expected 1`] = `
 <DocumentFragment>
-  .emotion-22 {
+  .emotion-33 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -13,1113 +13,38 @@ exports[`Sidebar navigation collapses successfully at nested level 1`] = `
   letter-spacing: 0;
   list-style-type: none;
   margin: 0;
-}
-
-.emotion-19 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0;
-}
-
-.emotion-3 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0 4px;
-}
-
-.emotion-3 .emotion-3,
-.emotion-3 .emotion-3 .emotion-3 {
-  padding-right: 0;
-}
-
-.emotion-2 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
-  box-sizing: border-box;
-  color: #535353;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.emotion-2:hover {
-  color: #2e2e2e;
-  background-color: #e6f4ff;
-}
-
-.emotion-2:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #0a68c1;
-}
-
-.emotion-2:focus svg polygon {
-  fill: #ffffff;
-}
-
-.emotion-2 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-2 a:visited {
-  color: #0a0a0a;
-}
-
-.emotion-2 svg {
-  float: right;
-}
-
-.emotion-0 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-9 {
-  display: inline-block;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #0a68c1;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-9 svg {
-  fill: #0a68c1;
-}
-
-.emotion-9:hover:not(:disabled) {
-  color: #02509b;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-9:hover:not(:disabled) svg {
-  fill: #02509b;
-}
-
-.emotion-9:active:not(:disabled) {
-  color: #01396e;
-}
-
-.emotion-9:active:not(:disabled) svg {
-  fill: #01396e;
-}
-
-.emotion-9:visited:not(:disabled) {
-  color: #0a68c1;
-}
-
-.emotion-9:visited:not(:disabled) svg {
-  fill: #0a68c1;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-9 {
-    vertical-align: text-bottom;
-  }
-}
-
-.emotion-8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-<nav
-    aria-label="Sidebar"
-    class="emotion-22"
-    role="navigation"
-  >
-    <ul
-      class="emotion-19"
-      role="list"
-    >
-      <li
-        class="emotion-3"
-      >
-        <div
-          class="emotion-2"
-          data-testid="/group1"
-          tabindex="0"
-        >
-          Group 1
-          <svg
-            aria-hidden="true"
-            class="emotion-0 emotion-1"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M7 10l5 5 5-5z"
-            />
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-3"
-      >
-        <div
-          class="emotion-2"
-          data-testid="/group2"
-          tabindex="0"
-        >
-          Group 2
-          <svg
-            aria-hidden="true"
-            class="emotion-0 emotion-1"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M7 14l5-5 5 5z"
-            />
-          </svg>
-        </div>
-        <ul
-          class="emotion-19"
-          role="list"
-        >
-          <li
-            class="emotion-3"
-          >
-            <a
-              class="emotion-9"
-              href="/group2/page1"
-            >
-              <span
-                class="emotion-8"
-              >
-                <div
-                  class="emotion-2"
-                  data-testid="/group2/page1"
-                  tabindex="-1"
-                >
-                  Group 2 Page 1
-                </div>
-              </span>
-            </a>
-          </li>
-          <li
-            class="emotion-3"
-          >
-            <a
-              class="emotion-9"
-              href="/group2/page2"
-            >
-              <span
-                class="emotion-8"
-              >
-                <div
-                  class="emotion-2"
-                  data-testid="/group2/page2"
-                  tabindex="-1"
-                >
-                  Group 2 Page 2
-                </div>
-              </span>
-            </a>
-          </li>
-          <li
-            class="emotion-3"
-          >
-            <div
-              class="emotion-2"
-              data-testid="/group2/group2b"
-              tabindex="0"
-            >
-              Group 2b
-              <svg
-                aria-hidden="true"
-                class="emotion-0 emotion-1"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M7 10l5 5 5-5z"
-                />
-              </svg>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</DocumentFragment>
-`;
-
-exports[`Sidebar navigation on group 1 page after click group1 menu collapses 1`] = `
-<DocumentFragment>
-  .emotion-9 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  list-style-type: none;
-  margin: 0;
-}
-
-.emotion-8 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0;
-}
-
-.emotion-3 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0 4px;
-}
-
-.emotion-3 .emotion-3,
-.emotion-3 .emotion-3 .emotion-3 {
-  padding-right: 0;
-}
-
-.emotion-2 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
-  box-sizing: border-box;
-  color: #535353;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.emotion-2:hover {
-  color: #2e2e2e;
-  background-color: #e6f4ff;
-}
-
-.emotion-2:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #0a68c1;
-}
-
-.emotion-2:focus svg polygon {
-  fill: #ffffff;
-}
-
-.emotion-2 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-2 a:visited {
-  color: #0a0a0a;
-}
-
-.emotion-2 svg {
-  float: right;
-}
-
-.emotion-0 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 24px;
-  height: 24px;
-}
-
-<nav
-    aria-label="Sidebar"
-    class="emotion-9"
-    role="navigation"
-  >
-    <ul
-      class="emotion-8"
-      role="list"
-    >
-      <li
-        class="emotion-3"
-      >
-        <div
-          class="emotion-2"
-          data-testid="/group1"
-          tabindex="0"
-        >
-          Group 1
-          <svg
-            aria-hidden="true"
-            class="emotion-0 emotion-1"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M7 10l5 5 5-5z"
-            />
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-3"
-      >
-        <div
-          class="emotion-2"
-          data-testid="/group2"
-          tabindex="0"
-        >
-          Group 2
-          <svg
-            aria-hidden="true"
-            class="emotion-0 emotion-1"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M7 10l5 5 5-5z"
-            />
-          </svg>
-        </div>
-      </li>
-    </ul>
-  </nav>
-</DocumentFragment>
-`;
-
-exports[`Sidebar navigation on group 1 page after enter key group1 menu collapses 1`] = `
-<DocumentFragment>
-  .emotion-9 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  list-style-type: none;
-  margin: 0;
-}
-
-.emotion-8 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0;
-}
-
-.emotion-3 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0 4px;
-}
-
-.emotion-3 .emotion-3,
-.emotion-3 .emotion-3 .emotion-3 {
-  padding-right: 0;
-}
-
-.emotion-2 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
-  box-sizing: border-box;
-  color: #535353;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.emotion-2:hover {
-  color: #2e2e2e;
-  background-color: #e6f4ff;
-}
-
-.emotion-2:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #0a68c1;
-}
-
-.emotion-2:focus svg polygon {
-  fill: #ffffff;
-}
-
-.emotion-2 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-2 a:visited {
-  color: #0a0a0a;
-}
-
-.emotion-2 svg {
-  float: right;
-}
-
-.emotion-0 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 24px;
-  height: 24px;
-}
-
-<nav
-    aria-label="Sidebar"
-    class="emotion-9"
-    role="navigation"
-  >
-    <ul
-      class="emotion-8"
-      role="list"
-    >
-      <li
-        class="emotion-3"
-      >
-        <div
-          class="emotion-2"
-          data-testid="/group1"
-          tabindex="0"
-        >
-          Group 1
-          <svg
-            aria-hidden="true"
-            class="emotion-0 emotion-1"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M7 10l5 5 5-5z"
-            />
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-3"
-      >
-        <div
-          class="emotion-2"
-          data-testid="/group2"
-          tabindex="0"
-        >
-          Group 2
-          <svg
-            aria-hidden="true"
-            class="emotion-0 emotion-1"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M7 10l5 5 5-5z"
-            />
-          </svg>
-        </div>
-      </li>
-    </ul>
-  </nav>
-</DocumentFragment>
-`;
-
-exports[`Sidebar navigation on group 1 page by clicking on components menu, group1 menu collapses and group2 menu expands 1`] = `
-<DocumentFragment>
-  .emotion-22 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  list-style-type: none;
-  margin: 0;
-}
-
-.emotion-19 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0;
-}
-
-.emotion-3 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0 4px;
-}
-
-.emotion-3 .emotion-3,
-.emotion-3 .emotion-3 .emotion-3 {
-  padding-right: 0;
-}
-
-.emotion-2 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
-  box-sizing: border-box;
-  color: #535353;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.emotion-2:hover {
-  color: #2e2e2e;
-  background-color: #e6f4ff;
-}
-
-.emotion-2:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #0a68c1;
-}
-
-.emotion-2:focus svg polygon {
-  fill: #ffffff;
-}
-
-.emotion-2 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-2 a:visited {
-  color: #0a0a0a;
-}
-
-.emotion-2 svg {
-  float: right;
-}
-
-.emotion-0 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-9 {
-  display: inline-block;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #0a68c1;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-9 svg {
-  fill: #0a68c1;
-}
-
-.emotion-9:hover:not(:disabled) {
-  color: #02509b;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-9:hover:not(:disabled) svg {
-  fill: #02509b;
-}
-
-.emotion-9:active:not(:disabled) {
-  color: #01396e;
-}
-
-.emotion-9:active:not(:disabled) svg {
-  fill: #01396e;
-}
-
-.emotion-9:visited:not(:disabled) {
-  color: #0a68c1;
-}
-
-.emotion-9:visited:not(:disabled) svg {
-  fill: #0a68c1;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-9 {
-    vertical-align: text-bottom;
-  }
-}
-
-.emotion-8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-.emotion-6 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
-  box-sizing: border-box;
-  color: #0a68c1;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.emotion-6:hover {
-  color: #2e2e2e;
-  background-color: #e6f4ff;
-}
-
-.emotion-6:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #0a68c1;
-}
-
-.emotion-6:focus svg polygon {
-  fill: #ffffff;
-}
-
-.emotion-6 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-6 a:visited {
-  color: #0a0a0a;
-}
-
-.emotion-6 svg {
-  float: right;
-}
-
-<nav
-    aria-label="Sidebar"
-    class="emotion-22"
-    role="navigation"
-  >
-    <ul
-      class="emotion-19"
-      role="list"
-    >
-      <li
-        class="emotion-3"
-      >
-        <div
-          class="emotion-2"
-          data-testid="/group1"
-          tabindex="0"
-        >
-          Group 1
-          <svg
-            aria-hidden="true"
-            class="emotion-0 emotion-1"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M7 10l5 5 5-5z"
-            />
-          </svg>
-        </div>
-      </li>
-      <li
-        class="emotion-3"
-      >
-        <div
-          class="emotion-6"
-          data-testid="/group2"
-          tabindex="0"
-        >
-          Group 2
-          <svg
-            aria-hidden="true"
-            class="emotion-0 emotion-1"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M7 14l5-5 5 5z"
-            />
-          </svg>
-        </div>
-        <ul
-          class="emotion-19"
-          role="list"
-        >
-          <li
-            class="emotion-3"
-          >
-            <a
-              class="emotion-9"
-              href="/group2/page1"
-            >
-              <span
-                class="emotion-8"
-              >
-                <div
-                  class="emotion-2"
-                  data-testid="/group2/page1"
-                  tabindex="-1"
-                >
-                  Group 2 Page 1
-                </div>
-              </span>
-            </a>
-          </li>
-          <li
-            class="emotion-3"
-          >
-            <a
-              class="emotion-9"
-              href="/group2/page2"
-            >
-              <span
-                class="emotion-8"
-              >
-                <div
-                  class="emotion-2"
-                  data-testid="/group2/page2"
-                  tabindex="-1"
-                >
-                  Group 2 Page 2
-                </div>
-              </span>
-            </a>
-          </li>
-          <li
-            class="emotion-3"
-          >
-            <div
-              class="emotion-2"
-              data-testid="/group2/group2b"
-              tabindex="0"
-            >
-              Group 2b
-              <svg
-                aria-hidden="true"
-                class="emotion-0 emotion-1"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M7 10l5 5 5-5z"
-                />
-              </svg>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</DocumentFragment>
-`;
-
-exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
-<DocumentFragment>
-  .emotion-14 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  list-style-type: none;
-  margin: 0;
-}
-
-.emotion-7 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0;
-}
-
-.emotion-6 {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0 4px;
-}
-
-.emotion-6 .emotion-6,
-.emotion-6 .emotion-6 .emotion-6 {
-  padding-right: 0;
-}
-
-.emotion-2 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
-  box-sizing: border-box;
-  color: #535353;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.emotion-2:hover {
-  color: #2e2e2e;
-  background-color: #e6f4ff;
-}
-
-.emotion-2:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #0a68c1;
-}
-
-.emotion-2:focus svg polygon {
-  fill: #ffffff;
-}
-
-.emotion-2 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-2 a:visited {
-  color: #0a0a0a;
-}
-
-.emotion-2 svg {
-  float: right;
-}
-
-.emotion-0 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 24px;
-  height: 24px;
 }
 
 .emotion-5 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+}
+
+.emotion-5:last-child {
+  margin-bottom: 24px;
+}
+
+.emotion-4 {
+  list-style-type: none;
+  margin: 0px;
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  border-top: 1px solid #e4e4e4;
+  min-height: 40px;
+  padding: 32px 0 8px 0;
+}
+
+.emotion-3 {
   display: inline-block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -1127,48 +52,15 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #0a68c1;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-5 svg {
-  fill: #0a68c1;
-}
-
-.emotion-5:hover:not(:disabled) {
-  color: #02509b;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-5:hover:not(:disabled) svg {
-  fill: #02509b;
-}
-
-.emotion-5:active:not(:disabled) {
-  color: #01396e;
-}
-
-.emotion-5:active:not(:disabled) svg {
-  fill: #01396e;
-}
-
-.emotion-5:visited:not(:disabled) {
-  color: #0a68c1;
-}
-
-.emotion-5:visited:not(:disabled) svg {
-  fill: #0a68c1;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-5 {
+  .emotion-3 {
     vertical-align: text-bottom;
   }
 }
 
-.emotion-4 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1187,118 +79,78 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-3 {
+.emotion-1 {
   font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
   box-sizing: border-box;
-  color: #0a68c1;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
+  color: #535353;
+  cursor: 'pointer';
+  min-height: 32px;
+  min-width: 192px;
+  padding: 8px 12px;
   text-overflow: ellipsis;
-  overflow: hidden;
 }
 
-.emotion-3:hover {
-  color: #2e2e2e;
-  background-color: #e6f4ff;
-}
-
-.emotion-3:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #0a68c1;
-}
-
-.emotion-3:focus svg polygon {
-  fill: #ffffff;
-}
-
-.emotion-3 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-3 a:visited {
-  color: #0a0a0a;
-}
-
-.emotion-3 svg {
-  float: right;
+.emotion-8 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  min-height: 32px;
+  margin-top: 20px;
 }
 
 <nav
     aria-label="Sidebar"
-    class="emotion-14"
+    class="emotion-33"
     role="navigation"
   >
     <ul
-      class="emotion-7"
+      class="emotion-5"
       role="list"
     >
       <li
-        class="emotion-6"
+        class="emotion-4"
       >
-        <div
-          class="emotion-2"
-          data-testid="/group1"
-          tabindex="0"
-        >
-          Group 1
-          <svg
-            aria-hidden="true"
-            class="emotion-0 emotion-1"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group1"
           >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M7 14l5-5 5 5z"
-            />
-          </svg>
+            Group 1
+          </div>
         </div>
         <ul
-          class="emotion-7"
+          class="emotion-5"
           role="list"
         >
           <li
-            class="emotion-6"
+            class="emotion-4"
           >
             <a
-              class="emotion-5"
+              class="emotion-3"
               href="/group1/page1"
             >
               <span
-                class="emotion-4"
+                class="emotion-2"
               >
-                <div
-                  class="emotion-3"
-                  data-testid="/group1/page1"
-                  tabindex="-1"
-                >
-                  Group 1 Page 1
+                <div>
+                  <div
+                    class="emotion-1"
+                    data-testid="/group1/page1"
+                  >
+                    Group 1 Page 1
+                  </div>
                 </div>
               </span>
             </a>
@@ -1306,31 +158,2308 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
         </ul>
       </li>
       <li
-        class="emotion-6"
+        class="emotion-4"
       >
-        <div
-          class="emotion-2"
-          data-testid="/group2"
-          tabindex="0"
-        >
-          Group 2
-          <svg
-            aria-hidden="true"
-            class="emotion-0 emotion-1"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group2"
           >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M7 10l5 5 5-5z"
-            />
-          </svg>
+            Group 2
+          </div>
         </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page1"
+              >
+                Group 2 Page 1
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page1/a"
+                      >
+                        Group 2 Page 1 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page1/b"
+                      >
+                        Group 2 Page 1 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page2"
+              >
+                Group 2 Page 2
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page2/a"
+                      >
+                        Group 2 Page 2 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page2/b"
+                      >
+                        Group 2 Page 2 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Sidebar navigation on group 1 and 2  on group 1, page 1 renders as expected 1`] = `
+<DocumentFragment>
+  .emotion-33 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.emotion-5 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+}
+
+.emotion-5:last-child {
+  margin-bottom: 24px;
+}
+
+.emotion-4 {
+  list-style-type: none;
+  margin: 0px;
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  border-top: 1px solid #e4e4e4;
+  min-height: 40px;
+  padding: 32px 0 8px 0;
+}
+
+.emotion-3 {
+  display: inline-block;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-3 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-9 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  box-sizing: border-box;
+  color: #535353;
+  cursor: 'pointer';
+  min-height: 32px;
+  min-width: 192px;
+  padding: 8px 12px;
+  text-overflow: ellipsis;
+}
+
+.emotion-8 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  min-height: 32px;
+  margin-top: 20px;
+}
+
+.emotion-1 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  box-sizing: border-box;
+  color: #0a68c1;
+  cursor: 'pointer';
+  min-height: 32px;
+  min-width: 192px;
+  padding: 8px 12px;
+  text-overflow: ellipsis;
+}
+
+<nav
+    aria-label="Sidebar"
+    class="emotion-33"
+    role="navigation"
+  >
+    <ul
+      class="emotion-5"
+      role="list"
+    >
+      <li
+        class="emotion-4"
+      >
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group1"
+          >
+            Group 1
+          </div>
+        </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <a
+              class="emotion-3"
+              href="/group1/page1"
+            >
+              <span
+                class="emotion-2"
+              >
+                <div>
+                  <div
+                    class="emotion-1"
+                    data-testid="/group1/page1"
+                  >
+                    Group 1 Page 1
+                  </div>
+                </div>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li
+        class="emotion-4"
+      >
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group2"
+          >
+            Group 2
+          </div>
+        </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page1"
+              >
+                Group 2 Page 1
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-9"
+                        data-testid="/group2/page1/a"
+                      >
+                        Group 2 Page 1 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-9"
+                        data-testid="/group2/page1/b"
+                      >
+                        Group 2 Page 1 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page2"
+              >
+                Group 2 Page 2
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-9"
+                        data-testid="/group2/page2/a"
+                      >
+                        Group 2 Page 2 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-9"
+                        data-testid="/group2/page2/b"
+                      >
+                        Group 2 Page 2 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Sidebar navigation on group 1 and 2  on group 2, page 1 renders as expected 1`] = `
+<DocumentFragment>
+  .emotion-33 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.emotion-5 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+}
+
+.emotion-5:last-child {
+  margin-bottom: 24px;
+}
+
+.emotion-4 {
+  list-style-type: none;
+  margin: 0px;
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  border-top: 1px solid #e4e4e4;
+  min-height: 40px;
+  padding: 32px 0 8px 0;
+}
+
+.emotion-3 {
+  display: inline-block;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-3 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  box-sizing: border-box;
+  color: #535353;
+  cursor: 'pointer';
+  min-height: 32px;
+  min-width: 192px;
+  padding: 8px 12px;
+  text-overflow: ellipsis;
+}
+
+.emotion-8 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  min-height: 32px;
+  margin-top: 20px;
+}
+
+<nav
+    aria-label="Sidebar"
+    class="emotion-33"
+    role="navigation"
+  >
+    <ul
+      class="emotion-5"
+      role="list"
+    >
+      <li
+        class="emotion-4"
+      >
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group1"
+          >
+            Group 1
+          </div>
+        </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <a
+              class="emotion-3"
+              href="/group1/page1"
+            >
+              <span
+                class="emotion-2"
+              >
+                <div>
+                  <div
+                    class="emotion-1"
+                    data-testid="/group1/page1"
+                  >
+                    Group 1 Page 1
+                  </div>
+                </div>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li
+        class="emotion-4"
+      >
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group2"
+          >
+            Group 2
+          </div>
+        </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page1"
+              >
+                Group 2 Page 1
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page1/a"
+                      >
+                        Group 2 Page 1 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page1/b"
+                      >
+                        Group 2 Page 1 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page2"
+              >
+                Group 2 Page 2
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page2/a"
+                      >
+                        Group 2 Page 2 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page2/b"
+                      >
+                        Group 2 Page 2 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Sidebar navigation on group 1 and 2  on group 2, page 1, nav item a renders as expected 1`] = `
+<DocumentFragment>
+  .emotion-33 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.emotion-5 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+}
+
+.emotion-5:last-child {
+  margin-bottom: 24px;
+}
+
+.emotion-4 {
+  list-style-type: none;
+  margin: 0px;
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  border-top: 1px solid #e4e4e4;
+  min-height: 40px;
+  padding: 32px 0 8px 0;
+}
+
+.emotion-3 {
+  display: inline-block;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-3 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  box-sizing: border-box;
+  color: #535353;
+  cursor: 'pointer';
+  min-height: 32px;
+  min-width: 192px;
+  padding: 8px 12px;
+  text-overflow: ellipsis;
+}
+
+.emotion-8 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  min-height: 32px;
+  margin-top: 20px;
+}
+
+.emotion-9 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  box-sizing: border-box;
+  color: #0a68c1;
+  cursor: 'pointer';
+  min-height: 32px;
+  min-width: 192px;
+  padding: 8px 12px;
+  text-overflow: ellipsis;
+}
+
+<nav
+    aria-label="Sidebar"
+    class="emotion-33"
+    role="navigation"
+  >
+    <ul
+      class="emotion-5"
+      role="list"
+    >
+      <li
+        class="emotion-4"
+      >
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group1"
+          >
+            Group 1
+          </div>
+        </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <a
+              class="emotion-3"
+              href="/group1/page1"
+            >
+              <span
+                class="emotion-2"
+              >
+                <div>
+                  <div
+                    class="emotion-1"
+                    data-testid="/group1/page1"
+                  >
+                    Group 1 Page 1
+                  </div>
+                </div>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li
+        class="emotion-4"
+      >
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group2"
+          >
+            Group 2
+          </div>
+        </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page1"
+              >
+                Group 2 Page 1
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-9"
+                        data-testid="/group2/page1/a"
+                      >
+                        Group 2 Page 1 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page1/b"
+                      >
+                        Group 2 Page 1 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page2"
+              >
+                Group 2 Page 2
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page2/a"
+                      >
+                        Group 2 Page 2 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page2/b"
+                      >
+                        Group 2 Page 2 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Sidebar navigation on group 1 and 2  on group 2, page 1, nav item b renders as expected 1`] = `
+<DocumentFragment>
+  .emotion-33 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.emotion-5 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+}
+
+.emotion-5:last-child {
+  margin-bottom: 24px;
+}
+
+.emotion-4 {
+  list-style-type: none;
+  margin: 0px;
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  border-top: 1px solid #e4e4e4;
+  min-height: 40px;
+  padding: 32px 0 8px 0;
+}
+
+.emotion-3 {
+  display: inline-block;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-3 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  box-sizing: border-box;
+  color: #535353;
+  cursor: 'pointer';
+  min-height: 32px;
+  min-width: 192px;
+  padding: 8px 12px;
+  text-overflow: ellipsis;
+}
+
+.emotion-8 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  min-height: 32px;
+  margin-top: 20px;
+}
+
+.emotion-13 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  box-sizing: border-box;
+  color: #0a68c1;
+  cursor: 'pointer';
+  min-height: 32px;
+  min-width: 192px;
+  padding: 8px 12px;
+  text-overflow: ellipsis;
+}
+
+<nav
+    aria-label="Sidebar"
+    class="emotion-33"
+    role="navigation"
+  >
+    <ul
+      class="emotion-5"
+      role="list"
+    >
+      <li
+        class="emotion-4"
+      >
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group1"
+          >
+            Group 1
+          </div>
+        </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <a
+              class="emotion-3"
+              href="/group1/page1"
+            >
+              <span
+                class="emotion-2"
+              >
+                <div>
+                  <div
+                    class="emotion-1"
+                    data-testid="/group1/page1"
+                  >
+                    Group 1 Page 1
+                  </div>
+                </div>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li
+        class="emotion-4"
+      >
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group2"
+          >
+            Group 2
+          </div>
+        </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page1"
+              >
+                Group 2 Page 1
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page1/a"
+                      >
+                        Group 2 Page 1 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-13"
+                        data-testid="/group2/page1/b"
+                      >
+                        Group 2 Page 1 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page2"
+              >
+                Group 2 Page 2
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page2/a"
+                      >
+                        Group 2 Page 2 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page2/b"
+                      >
+                        Group 2 Page 2 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Sidebar navigation on group 1 and 2  on group 2, page 2 renders as expected 1`] = `
+<DocumentFragment>
+  .emotion-33 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.emotion-5 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+}
+
+.emotion-5:last-child {
+  margin-bottom: 24px;
+}
+
+.emotion-4 {
+  list-style-type: none;
+  margin: 0px;
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  border-top: 1px solid #e4e4e4;
+  min-height: 40px;
+  padding: 32px 0 8px 0;
+}
+
+.emotion-3 {
+  display: inline-block;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-3 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  box-sizing: border-box;
+  color: #535353;
+  cursor: 'pointer';
+  min-height: 32px;
+  min-width: 192px;
+  padding: 8px 12px;
+  text-overflow: ellipsis;
+}
+
+.emotion-8 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  min-height: 32px;
+  margin-top: 20px;
+}
+
+<nav
+    aria-label="Sidebar"
+    class="emotion-33"
+    role="navigation"
+  >
+    <ul
+      class="emotion-5"
+      role="list"
+    >
+      <li
+        class="emotion-4"
+      >
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group1"
+          >
+            Group 1
+          </div>
+        </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <a
+              class="emotion-3"
+              href="/group1/page1"
+            >
+              <span
+                class="emotion-2"
+              >
+                <div>
+                  <div
+                    class="emotion-1"
+                    data-testid="/group1/page1"
+                  >
+                    Group 1 Page 1
+                  </div>
+                </div>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li
+        class="emotion-4"
+      >
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group2"
+          >
+            Group 2
+          </div>
+        </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page1"
+              >
+                Group 2 Page 1
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page1/a"
+                      >
+                        Group 2 Page 1 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page1/b"
+                      >
+                        Group 2 Page 1 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page2"
+              >
+                Group 2 Page 2
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page2/a"
+                      >
+                        Group 2 Page 2 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page2/b"
+                      >
+                        Group 2 Page 2 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Sidebar navigation on group 1 and 2  on group 2, page 2, nav item a renders as expected 1`] = `
+<DocumentFragment>
+  .emotion-33 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.emotion-5 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+}
+
+.emotion-5:last-child {
+  margin-bottom: 24px;
+}
+
+.emotion-4 {
+  list-style-type: none;
+  margin: 0px;
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  border-top: 1px solid #e4e4e4;
+  min-height: 40px;
+  padding: 32px 0 8px 0;
+}
+
+.emotion-3 {
+  display: inline-block;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-3 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  box-sizing: border-box;
+  color: #535353;
+  cursor: 'pointer';
+  min-height: 32px;
+  min-width: 192px;
+  padding: 8px 12px;
+  text-overflow: ellipsis;
+}
+
+.emotion-8 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  min-height: 32px;
+  margin-top: 20px;
+}
+
+.emotion-20 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  box-sizing: border-box;
+  color: #0a68c1;
+  cursor: 'pointer';
+  min-height: 32px;
+  min-width: 192px;
+  padding: 8px 12px;
+  text-overflow: ellipsis;
+}
+
+<nav
+    aria-label="Sidebar"
+    class="emotion-33"
+    role="navigation"
+  >
+    <ul
+      class="emotion-5"
+      role="list"
+    >
+      <li
+        class="emotion-4"
+      >
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group1"
+          >
+            Group 1
+          </div>
+        </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <a
+              class="emotion-3"
+              href="/group1/page1"
+            >
+              <span
+                class="emotion-2"
+              >
+                <div>
+                  <div
+                    class="emotion-1"
+                    data-testid="/group1/page1"
+                  >
+                    Group 1 Page 1
+                  </div>
+                </div>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li
+        class="emotion-4"
+      >
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group2"
+          >
+            Group 2
+          </div>
+        </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page1"
+              >
+                Group 2 Page 1
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page1/a"
+                      >
+                        Group 2 Page 1 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page1/b"
+                      >
+                        Group 2 Page 1 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page2"
+              >
+                Group 2 Page 2
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-20"
+                        data-testid="/group2/page2/a"
+                      >
+                        Group 2 Page 2 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page2/b"
+                      >
+                        Group 2 Page 2 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Sidebar navigation on group 1 and 2  on group 2, page 2, nav item b renders as expected 1`] = `
+<DocumentFragment>
+  .emotion-33 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.emotion-5 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+}
+
+.emotion-5:last-child {
+  margin-bottom: 24px;
+}
+
+.emotion-4 {
+  list-style-type: none;
+  margin: 0px;
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  border-top: 1px solid #e4e4e4;
+  min-height: 40px;
+  padding: 32px 0 8px 0;
+}
+
+.emotion-3 {
+  display: inline-block;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-3 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  box-sizing: border-box;
+  color: #535353;
+  cursor: 'pointer';
+  min-height: 32px;
+  min-width: 192px;
+  padding: 8px 12px;
+  text-overflow: ellipsis;
+}
+
+.emotion-8 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  min-height: 32px;
+  margin-top: 20px;
+}
+
+.emotion-24 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  box-sizing: border-box;
+  color: #0a68c1;
+  cursor: 'pointer';
+  min-height: 32px;
+  min-width: 192px;
+  padding: 8px 12px;
+  text-overflow: ellipsis;
+}
+
+<nav
+    aria-label="Sidebar"
+    class="emotion-33"
+    role="navigation"
+  >
+    <ul
+      class="emotion-5"
+      role="list"
+    >
+      <li
+        class="emotion-4"
+      >
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group1"
+          >
+            Group 1
+          </div>
+        </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <a
+              class="emotion-3"
+              href="/group1/page1"
+            >
+              <span
+                class="emotion-2"
+              >
+                <div>
+                  <div
+                    class="emotion-1"
+                    data-testid="/group1/page1"
+                  >
+                    Group 1 Page 1
+                  </div>
+                </div>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li
+        class="emotion-4"
+      >
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group2"
+          >
+            Group 2
+          </div>
+        </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page1"
+              >
+                Group 2 Page 1
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page1/a"
+                      >
+                        Group 2 Page 1 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page1/b"
+                      >
+                        Group 2 Page 1 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page2"
+              >
+                Group 2 Page 2
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page2/a"
+                      >
+                        Group 2 Page 2 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-24"
+                        data-testid="/group2/page2/b"
+                      >
+                        Group 2 Page 2 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </li>
     </ul>
   </nav>
@@ -1339,7 +2468,7 @@ exports[`Sidebar navigation on group 1 page renders as expected 1`] = `
 
 exports[`Sidebar navigation on route level renders as expected 1`] = `
 <DocumentFragment>
-  .emotion-9 {
+  .emotion-33 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -1352,155 +2481,282 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
   margin: 0;
 }
 
-.emotion-8 {
+.emotion-5 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-3 {
+.emotion-5:last-child {
+  margin-bottom: 24px;
+}
+
+.emotion-4 {
   list-style-type: none;
   margin: 0px;
-  padding: 0 4px;
 }
 
-.emotion-3 .emotion-3,
-.emotion-3 .emotion-3 .emotion-3 {
-  padding-right: 0;
-}
-
-.emotion-2 {
+.emotion-0 {
   font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
+  border-top: 1px solid #e4e4e4;
+  min-height: 40px;
+  padding: 32px 0 8px 0;
+}
+
+.emotion-3 {
+  display: inline-block;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-3 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   box-sizing: border-box;
   color: #535353;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
+  cursor: 'pointer';
+  min-height: 32px;
+  min-width: 192px;
+  padding: 8px 12px;
   text-overflow: ellipsis;
-  overflow: hidden;
 }
 
-.emotion-2:hover {
-  color: #2e2e2e;
-  background-color: #e6f4ff;
-}
-
-.emotion-2:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #0a68c1;
-}
-
-.emotion-2:focus svg polygon {
-  fill: #ffffff;
-}
-
-.emotion-2 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-2 a:visited {
-  color: #0a0a0a;
-}
-
-.emotion-2 svg {
-  float: right;
-}
-
-.emotion-0 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 24px;
-  height: 24px;
+.emotion-8 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  min-height: 32px;
+  margin-top: 20px;
 }
 
 <nav
     aria-label="Sidebar"
-    class="emotion-9"
+    class="emotion-33"
     role="navigation"
   >
     <ul
-      class="emotion-8"
+      class="emotion-5"
       role="list"
     >
       <li
-        class="emotion-3"
+        class="emotion-4"
       >
-        <div
-          class="emotion-2"
-          data-testid="/group1"
-          tabindex="0"
-        >
-          Group 1
-          <svg
-            aria-hidden="true"
-            class="emotion-0 emotion-1"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group1"
           >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M7 10l5 5 5-5z"
-            />
-          </svg>
+            Group 1
+          </div>
         </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <a
+              class="emotion-3"
+              href="/group1/page1"
+            >
+              <span
+                class="emotion-2"
+              >
+                <div>
+                  <div
+                    class="emotion-1"
+                    data-testid="/group1/page1"
+                  >
+                    Group 1 Page 1
+                  </div>
+                </div>
+              </span>
+            </a>
+          </li>
+        </ul>
       </li>
       <li
-        class="emotion-3"
+        class="emotion-4"
       >
-        <div
-          class="emotion-2"
-          data-testid="/group2"
-          tabindex="0"
-        >
-          Group 2
-          <svg
-            aria-hidden="true"
-            class="emotion-0 emotion-1"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group2"
           >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M7 10l5 5 5-5z"
-            />
-          </svg>
+            Group 2
+          </div>
         </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page1"
+              >
+                Group 2 Page 1
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page1/a"
+                      >
+                        Group 2 Page 1 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page1/b"
+                      >
+                        Group 2 Page 1 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page2"
+              >
+                Group 2 Page 2
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page2/a"
+                      >
+                        Group 2 Page 2 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page2/b"
+                      >
+                        Group 2 Page 2 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </li>
     </ul>
   </nav>
@@ -1509,7 +2765,7 @@ exports[`Sidebar navigation on route level renders as expected 1`] = `
 
 exports[`Sidebar navigation on route level renders correctly without given path 1`] = `
 <DocumentFragment>
-  .emotion-9 {
+  .emotion-33 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -1522,155 +2778,282 @@ exports[`Sidebar navigation on route level renders correctly without given path 
   margin: 0;
 }
 
-.emotion-8 {
+.emotion-5 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-3 {
+.emotion-5:last-child {
+  margin-bottom: 24px;
+}
+
+.emotion-4 {
   list-style-type: none;
   margin: 0px;
-  padding: 0 4px;
 }
 
-.emotion-3 .emotion-3,
-.emotion-3 .emotion-3 .emotion-3 {
-  padding-right: 0;
-}
-
-.emotion-2 {
+.emotion-0 {
   font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
+  border-top: 1px solid #e4e4e4;
+  min-height: 40px;
+  padding: 32px 0 8px 0;
+}
+
+.emotion-3 {
+  display: inline-block;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-3 {
+    vertical-align: text-bottom;
+  }
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-1 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   box-sizing: border-box;
   color: #535353;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
+  cursor: 'pointer';
+  min-height: 32px;
+  min-width: 192px;
+  padding: 8px 12px;
   text-overflow: ellipsis;
-  overflow: hidden;
 }
 
-.emotion-2:hover {
-  color: #2e2e2e;
-  background-color: #e6f4ff;
-}
-
-.emotion-2:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #0a68c1;
-}
-
-.emotion-2:focus svg polygon {
-  fill: #ffffff;
-}
-
-.emotion-2 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-2 a:visited {
-  color: #0a0a0a;
-}
-
-.emotion-2 svg {
-  float: right;
-}
-
-.emotion-0 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-0.emotion-0 {
-  width: 24px;
-  height: 24px;
+.emotion-8 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  min-height: 32px;
+  margin-top: 20px;
 }
 
 <nav
     aria-label="Sidebar"
-    class="emotion-9"
+    class="emotion-33"
     role="navigation"
   >
     <ul
-      class="emotion-8"
+      class="emotion-5"
       role="list"
     >
       <li
-        class="emotion-3"
+        class="emotion-4"
       >
-        <div
-          class="emotion-2"
-          data-testid="/group1"
-          tabindex="0"
-        >
-          Group 1
-          <svg
-            aria-hidden="true"
-            class="emotion-0 emotion-1"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group1"
           >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M7 10l5 5 5-5z"
-            />
-          </svg>
+            Group 1
+          </div>
         </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <a
+              class="emotion-3"
+              href="/group1/page1"
+            >
+              <span
+                class="emotion-2"
+              >
+                <div>
+                  <div
+                    class="emotion-1"
+                    data-testid="/group1/page1"
+                  >
+                    Group 1 Page 1
+                  </div>
+                </div>
+              </span>
+            </a>
+          </li>
+        </ul>
       </li>
       <li
-        class="emotion-3"
+        class="emotion-4"
       >
-        <div
-          class="emotion-2"
-          data-testid="/group2"
-          tabindex="0"
-        >
-          Group 2
-          <svg
-            aria-hidden="true"
-            class="emotion-0 emotion-1"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+        <div>
+          <div
+            class="emotion-0"
+            data-testid="/group2"
           >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M7 10l5 5 5-5z"
-            />
-          </svg>
+            Group 2
+          </div>
         </div>
+        <ul
+          class="emotion-5"
+          role="list"
+        >
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page1"
+              >
+                Group 2 Page 1
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page1/a"
+                      >
+                        Group 2 Page 1 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page1/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page1/b"
+                      >
+                        Group 2 Page 1 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="emotion-4"
+          >
+            <div>
+              <div
+                class="emotion-8"
+                data-testid="/group2/page2"
+              >
+                Group 2 Page 2
+              </div>
+            </div>
+            <ul
+              class="emotion-5"
+              role="list"
+            >
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/a"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page2/a"
+                      >
+                        Group 2 Page 2 a
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li
+                class="emotion-4"
+              >
+                <a
+                  class="emotion-3"
+                  href="/group2/page2/b"
+                >
+                  <span
+                    class="emotion-2"
+                  >
+                    <div>
+                      <div
+                        class="emotion-1"
+                        data-testid="/group2/page2/b"
+                      >
+                        Group 2 Page 2 b
+                      </div>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </li>
     </ul>
   </nav>

@@ -5,6 +5,8 @@ import {
 import {fireEvent} from '@testing-library/react';
 import {SidebarNav} from '..';
 
+jest.mock('next/link', () => ({children}: any) => children);
+
 jest.mock('../../../routes.json', () => [
   {
     title: 'Group 1',
@@ -23,22 +25,33 @@ jest.mock('../../../routes.json', () => [
     subNav: [
       {
         title: 'Group 2 Page 1',
-        page: true,
         id: '/group2/page1',
+        subNav: [
+          {
+            title: 'Group 2 Page 1 a',
+            page: true,
+            id: '/group2/page1/a',
+          },
+          {
+            title: 'Group 2 Page 1 b',
+            page: true,
+            id: '/group2/page1/b',
+          },
+        ],
       },
       {
         title: 'Group 2 Page 2',
-        page: true,
         id: '/group2/page2',
-      },
-      {
-        title: 'Group 2b',
-        id: '/group2/group2b',
         subNav: [
           {
-            title: 'Group 2b Page 1',
+            title: 'Group 2 Page 2 a',
             page: true,
-            id: '/group2/group2b/page1',
+            id: '/group2/page2/a',
+          },
+          {
+            title: 'Group 2 Page 2 b',
+            page: true,
+            id: '/group2/page2/b',
           },
         ],
       },
@@ -59,52 +72,71 @@ describe('Sidebar navigation', () => {
     });
   });
 
-  describe('on group 1 page', () => {
-    test('renders as expected', () => {
+  describe('on group 1 and 2 ', () => {
+    test('on group 1 renders as expected', () => {
       const fragment = renderToFragmentWithTheme(SidebarNav, {
-        path: '/group1/page1',
+        path: '/group1',
       });
       expect(fragment).toMatchSnapshot();
     });
 
-    test('after click group1 menu collapses', () => {
+    test('on group 1, page 1 renders as expected', () => {
       const {getByTestId, asFragment} = renderWithTheme(SidebarNav, {
         path: '/group1/page1',
       });
-      const group1 = getByTestId('/group1');
-      fireEvent.click(group1 as Element);
+      const group1 = getByTestId('/group1/page1');
+      fireEvent.click(group1);
       expect(asFragment()).toMatchSnapshot();
     });
 
-    test('after enter key group1 menu collapses', () => {
+    test('on group 2, page 1 renders as expected', () => {
+      const fragment = renderToFragmentWithTheme(SidebarNav, {
+        path: '/group2/page1',
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('on group 2, page 1, nav item a renders as expected', () => {
       const {getByTestId, asFragment} = renderWithTheme(SidebarNav, {
-        path: '/group1/page1',
+        path: '/group2/page1/a',
       });
-      const group1 = getByTestId('/group1');
-      fireEvent.focus(group1);
-      fireEvent.keyDown(group1, {
-        key: 'Enter',
-        keyCode: 13,
-      });
+      const group2Page1a = getByTestId('/group2/page1/a');
+      fireEvent.click(group2Page1a);
       expect(asFragment()).toMatchSnapshot();
     });
 
-    test('by clicking on components menu, group1 menu collapses and group2 menu expands', () => {
+    test('on group 2, page 1, nav item b renders as expected', () => {
       const {getByTestId, asFragment} = renderWithTheme(SidebarNav, {
-        path: '/group1/page1',
+        path: '/group2/page1/b',
       });
-      const group2 = getByTestId('/group2');
-      fireEvent.click(group2 as Element);
+      const group2Page1b = getByTestId('/group2/page1/b');
+      fireEvent.click(group2Page1b);
       expect(asFragment()).toMatchSnapshot();
     });
-  });
 
-  test('collapses successfully at nested level', () => {
-    const {getByTestId, asFragment} = renderWithTheme(SidebarNav, {
-      path: '/group2/group2b/page1',
+    test('on group 2, page 2 renders as expected', () => {
+      const fragment = renderToFragmentWithTheme(SidebarNav, {
+        path: '/group2/page2',
+      });
+      expect(fragment).toMatchSnapshot();
     });
-    const nestedMenu = getByTestId('/group2/group2b');
-    fireEvent.click(nestedMenu as Element);
-    expect(asFragment()).toMatchSnapshot();
+
+    test('on group 2, page 2, nav item a renders as expected', () => {
+      const {getByTestId, asFragment} = renderWithTheme(SidebarNav, {
+        path: '/group2/page2/a',
+      });
+      const group2Page2a = getByTestId('/group2/page2/a');
+      fireEvent.click(group2Page2a);
+      expect(asFragment()).toMatchSnapshot();
+    });
+
+    test('on group 2, page 2, nav item b renders as expected', () => {
+      const {getByTestId, asFragment} = renderWithTheme(SidebarNav, {
+        path: '/group2/page2/b',
+      });
+      const group2Page2b = getByTestId('/group2/page2/b');
+      fireEvent.click(group2Page2b);
+      expect(asFragment()).toMatchSnapshot();
+    });
   });
 });

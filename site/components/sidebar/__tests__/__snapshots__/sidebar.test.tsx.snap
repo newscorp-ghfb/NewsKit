@@ -12,22 +12,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: #fafafa;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 16px;
+  padding-bottom: 32px;
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-}
-
-@media screen and (min-width:768px) {
-  .emotion-9 {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-bottom: 32px;
-  }
 }
 
 .emotion-3 {
@@ -143,7 +133,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   height: 16px;
 }
 
-.emotion-31 {
+.emotion-351 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -156,143 +146,80 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin: 0;
 }
 
-.emotion-30 {
+.emotion-27 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-13 {
+.emotion-27:last-child {
+  margin-bottom: 24px;
+}
+
+.emotion-14 {
   list-style-type: none;
   margin: 0px;
-  padding: 0 4px;
 }
 
-.emotion-13 .emotion-13,
-.emotion-13 .emotion-13 .emotion-13 {
-  padding-right: 0;
-}
-
-.emotion-12 {
+.emotion-10 {
   font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
+  min-height: 40px;
+  padding: 8px 0 8px 0;
+}
+
+.emotion-11 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   box-sizing: border-box;
   color: #535353;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
+  cursor: 'pointer';
+  min-height: 32px;
+  min-width: 192px;
+  padding: 8px 12px;
   text-overflow: ellipsis;
-  overflow: hidden;
 }
 
-.emotion-12:hover {
-  color: #2e2e2e;
-  background-color: #e6f4ff;
+.emotion-29 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  border-top: 1px solid #e4e4e4;
+  min-height: 40px;
+  padding: 32px 0 8px 0;
 }
 
-.emotion-12:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #0a68c1;
+.emotion-30 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  min-height: 32px;
+  margin-top: 20px;
 }
 
-.emotion-12:focus svg polygon {
-  fill: #ffffff;
-}
-
-.emotion-12 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-12 a:visited {
-  color: #0a0a0a;
-}
-
-.emotion-12 svg {
-  float: right;
-}
-
-.emotion-10 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-10.emotion-10 {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-28 {
-  display: inline-block;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #0a68c1;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-28 svg {
-  fill: #0a68c1;
-}
-
-.emotion-28:hover:not(:disabled) {
-  color: #02509b;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-28:hover:not(:disabled) svg {
-  fill: #02509b;
-}
-
-.emotion-28:active:not(:disabled) {
-  color: #01396e;
-}
-
-.emotion-28:active:not(:disabled) svg {
-  fill: #01396e;
-}
-
-.emotion-28:visited:not(:disabled) {
-  color: #0a68c1;
-}
-
-.emotion-28:visited:not(:disabled) svg {
-  fill: #0a68c1;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-28 {
-    vertical-align: text-bottom;
-  }
-}
-
-.emotion-32 {
+.emotion-352 {
   width: 276px;
   padding: 0 24px;
   position: fixed;
@@ -314,15 +241,31 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-32 {
+  .emotion-352 {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
 }
 
+@media screen and (min-width:1024px) {
+  .emotion-352 {
+    overflow: hidden;
+  }
+
+  .emotion-352:hover {
+    overflow: auto;
+  }
+}
+
+@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
+  .emotion-352 {
+    overflow: auto;
+  }
+}
+
 <div
-    class="emotion-32"
+    class="emotion-352"
     data-testid="sidebar"
     role="complementary"
   >
@@ -386,140 +329,1822 @@ exports[`Sidebar renders correctly when closed 1`] = `
     </div>
     <nav
       aria-label="Sidebar"
-      class="emotion-31"
+      class="emotion-351"
       role="navigation"
     >
       <ul
-        class="emotion-30"
+        class="emotion-27"
         role="list"
       >
         <li
-          class="emotion-13"
+          class="emotion-14"
         >
-          <div
-            class="emotion-12"
-            data-testid="/guides"
-            tabindex="0"
-          >
-            Getting Started
-            <svg
-              aria-hidden="true"
-              class="emotion-10 emotion-5"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+          <div>
+            <div
+              class="emotion-10"
+              data-testid="/about"
             >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M7 10l5 5 5-5z"
-              />
-            </svg>
+              About
+            </div>
           </div>
-        </li>
-        <li
-          class="emotion-13"
-        >
-          <div
-            class="emotion-12"
-            data-testid="/theming"
-            tabindex="0"
+          <ul
+            class="emotion-27"
+            role="list"
           >
-            Theming
-            <svg
-              aria-hidden="true"
-              class="emotion-10 emotion-5"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <li
+              class="emotion-14"
             >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M7 10l5 5 5-5z"
-              />
-            </svg>
-          </div>
-        </li>
-        <li
-          class="emotion-13"
-        >
-          <div
-            class="emotion-12"
-            data-testid="/components"
-            tabindex="0"
-          >
-            Components
-            <svg
-              aria-hidden="true"
-              class="emotion-10 emotion-5"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M7 10l5 5 5-5z"
-              />
-            </svg>
-          </div>
-        </li>
-        <li
-          class="emotion-13"
-        >
-          <div
-            class="emotion-12"
-            data-testid="/utils"
-            tabindex="0"
-          >
-            Utilities
-            <svg
-              aria-hidden="true"
-              class="emotion-10 emotion-5"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M7 10l5 5 5-5z"
-              />
-            </svg>
-          </div>
-        </li>
-        <li
-          class="emotion-13"
-        >
-          <a
-            class="emotion-28"
-            href="/feedback"
-          >
-            <span
-              class="emotion-2"
-            >
-              <div
-                class="emotion-12"
-                data-testid="/feedback"
-                tabindex="-1"
+              <a
+                class="emotion-3"
+                href="/about/introduction"
               >
-                Feedback
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/about/introduction"
+                    >
+                      Introduction
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/about/release-notes"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/about/release-notes"
+                    >
+                      Release notes
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/about/roadmap"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/about/roadmap"
+                    >
+                      Roadmap
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/about/contribute"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/about/contribute"
+                    >
+                      Contribute
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li
+          class="emotion-14"
+        >
+          <div>
+            <div
+              class="emotion-29"
+              data-testid="/getting-started"
+            >
+              Getting Started
+            </div>
+          </div>
+          <ul
+            class="emotion-27"
+            role="list"
+          >
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/getting-started/code"
+                >
+                  Code
+                </div>
               </div>
-            </span>
-          </a>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/getting-started/code/overview"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/getting-started/code/overview"
+                        >
+                          Overview
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/getting-started/code/web"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/getting-started/code/web"
+                        >
+                          Web
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/getting-started/code/instrumentation"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/getting-started/code/instrumentation"
+                        >
+                          Instrumentation
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/getting-started/design"
+                >
+                  Design
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/getting-started/design/overview"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/getting-started/design/overview"
+                        >
+                          Overview
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/getting-started/design/ways-of-working"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/getting-started/design/ways-of-working"
+                        >
+                          Ways of Working
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/getting-started/design/design-values"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/getting-started/design/design-values"
+                        >
+                          Design Values
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li
+          class="emotion-14"
+        >
+          <div>
+            <div
+              class="emotion-29"
+              data-testid="/theming"
+            >
+              Theme
+            </div>
+          </div>
+          <ul
+            class="emotion-27"
+            role="list"
+          >
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/theming/overview"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/theming/overview"
+                    >
+                      Overview
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/theming/creating-a-theme"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/theming/creating-a-theme"
+                    >
+                      Creating a theme
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/theming/using-a-theme"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/theming/using-a-theme"
+                    >
+                      Using a theme
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/theming/foundations"
+                >
+                  Foundations
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/foundations/overview"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/foundations/overview"
+                        >
+                          Overview
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/foundations/borders"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/foundations/borders"
+                        >
+                          Borders
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/foundations/breakpoints"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/foundations/breakpoints"
+                        >
+                          Breakpoints
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/foundations/colours"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/foundations/colours"
+                        >
+                          Colours
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/foundations/fonts"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/foundations/fonts"
+                        >
+                          Fonts
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/foundations/motions"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/foundations/motions"
+                        >
+                          Motions
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/foundations/overlays"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/foundations/overlays"
+                        >
+                          Overlays
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/foundations/shadows"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/foundations/shadows"
+                        >
+                          Shadows
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/foundations/sizing"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/foundations/sizing"
+                        >
+                          Sizing
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/theming/presets"
+                >
+                  Presets
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/presets/overview"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/presets/overview"
+                        >
+                          Overview
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/presets/space-presets"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/presets/space-presets"
+                        >
+                          Space Presets
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/presets/style-presets"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/presets/style-presets"
+                        >
+                          Style Presets
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/presets/typography-presets"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/presets/typography-presets"
+                        >
+                          Typography Presets
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/theming/component-defaults"
+                >
+                  Component Defaults
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/component-defaults/overview"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/component-defaults/overview"
+                        >
+                          Overview
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li
+          class="emotion-14"
+        >
+          <div>
+            <div
+              class="emotion-29"
+              data-testid="/components"
+            >
+              Components
+            </div>
+          </div>
+          <ul
+            class="emotion-27"
+            role="list"
+          >
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/components/overview"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/components/overview"
+                    >
+                      Overview
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/components/action"
+                >
+                  Action
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/action/button"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/action/button"
+                        >
+                          Button
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/action/share-bar"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/action/share-bar"
+                        >
+                          Share Bar
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/components/inputs"
+                >
+                  Inputs
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/inputs/form"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/inputs/form"
+                        >
+                          Form
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/inputs/text-input"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/inputs/text-input"
+                        >
+                          Text Input
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/components/layout"
+                >
+                  Layout
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/layout/block"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/layout/block"
+                        >
+                          Block
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/layout/card"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/layout/card"
+                        >
+                          Card
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/layout/divider"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/layout/divider"
+                        >
+                          Divider
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/layout/grid"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/layout/grid"
+                        >
+                          Grid
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/layout/scroll"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/layout/scroll"
+                        >
+                          Scroll
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/layout/stack"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/layout/stack"
+                        >
+                          Stack
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/layout/visibility"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/layout/visibility"
+                        >
+                          Visibility
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/components/media"
+                >
+                  Media
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/media/aspect-ratio"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/media/aspect-ratio"
+                        >
+                          Aspect Ratio
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/media/audio-player"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/media/audio-player"
+                        >
+                          Audio Player
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/media/caption"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/media/caption"
+                        >
+                          Caption
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/media/image"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/media/image"
+                        >
+                          Image
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/media/volume-control"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/media/volume-control"
+                        >
+                          Volume Control
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/components/navigation"
+                >
+                  Navigation
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/navigation/link"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/navigation/link"
+                        >
+                          Link
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/navigation/tag"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/navigation/tag"
+                        >
+                          Tag
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/navigation/title-bar"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/navigation/title-bar"
+                        >
+                          Title Bar
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/components/selection-controls"
+                >
+                  Selection Contols
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/selection-controls/tab"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/selection-controls/tab"
+                        >
+                          Tab
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/selection-controls/slider"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/selection-controls/slider"
+                        >
+                          Slider
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/components/text-content"
+                >
+                  Text Content
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/byline"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/byline"
+                        >
+                          Byline
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/date-time"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/date-time"
+                        >
+                          Date Time
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/flag"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/flag"
+                        >
+                          Flag
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/heading"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/heading"
+                        >
+                          Heading
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/headline"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/headline"
+                        >
+                          Headline
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/ordered-list"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/ordered-list"
+                        >
+                          Ordered List
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/paragraph"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/paragraph"
+                        >
+                          Paragraph
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/standfirst"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/standfirst"
+                        >
+                          Standfirst
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/text-block"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/text-block"
+                        >
+                          Text Block
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/unordered-list"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/unordered-list"
+                        >
+                          Unordered List
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/components/third-party-integrations"
+                >
+                  Third Party Integrations
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/third-party-integrations/consent"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/third-party-integrations/consent"
+                        >
+                          Consent
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/third-party-integrations/consent-settings-link"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/third-party-integrations/consent-settings-link"
+                        >
+                          Consent Settings Link
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/third-party-integrations/experimentation-web"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/third-party-integrations/experimentation-web"
+                        >
+                          Experimentation Web
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/third-party-integrations/tealium"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/third-party-integrations/tealium"
+                        >
+                          Tealium
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/components/others"
+                >
+                  Others
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/others/icons"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/others/icons"
+                        >
+                          Icons
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li
+          class="emotion-14"
+        >
+          <div>
+            <div
+              class="emotion-29"
+              data-testid="/utils"
+            >
+              Utilities
+            </div>
+          </div>
+          <ul
+            class="emotion-27"
+            role="list"
+          >
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/utils/overview"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/utils/overview"
+                    >
+                      Overview
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/utils/css"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/utils/css"
+                    >
+                      css
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/utils/get-defaults"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/utils/get-defaults"
+                    >
+                      getComponentDefaults
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/utils/get-from-theme"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/utils/get-from-theme"
+                    >
+                      getFromTheme
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li
+          class="emotion-14"
+        >
+          <div>
+            <div
+              class="emotion-29"
+              data-testid="/help"
+            >
+              Help
+            </div>
+          </div>
+          <ul
+            class="emotion-27"
+            role="list"
+          >
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/help/contact-us"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/help/contact-us"
+                    >
+                      Contact Us
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/help/faqs"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/help/faqs"
+                    >
+                      FAQs
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
@@ -554,7 +2179,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 exports[`Sidebar renders correctly when open 1`] = `
 <DocumentFragment>
-  .emotion-32 {
+  .emotion-352 {
   width: 276px;
   padding: 0 24px;
   position: fixed;
@@ -576,10 +2201,26 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-32 {
+  .emotion-352 {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-352 {
+    overflow: hidden;
+  }
+
+  .emotion-352:hover {
+    overflow: auto;
+  }
+}
+
+@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
+  .emotion-352 {
+    overflow: auto;
   }
 }
 
@@ -593,22 +2234,12 @@ exports[`Sidebar renders correctly when open 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: #fafafa;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 16px;
+  padding-bottom: 32px;
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-}
-
-@media screen and (min-width:768px) {
-  .emotion-9 {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-bottom: 32px;
-  }
 }
 
 .emotion-3 {
@@ -724,7 +2355,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   height: 16px;
 }
 
-.emotion-31 {
+.emotion-351 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -737,144 +2368,81 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin: 0;
 }
 
-.emotion-30 {
+.emotion-27 {
   list-style-type: none;
   margin: 0px;
   padding: 0;
 }
 
-.emotion-13 {
+.emotion-27:last-child {
+  margin-bottom: 24px;
+}
+
+.emotion-14 {
   list-style-type: none;
   margin: 0px;
-  padding: 0 4px;
 }
 
-.emotion-13 .emotion-13,
-.emotion-13 .emotion-13 .emotion-13 {
-  padding-right: 0;
-}
-
-.emotion-12 {
+.emotion-10 {
   font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 700;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  line-height: 1.5rem;
-  background-color: transparent;
+  min-height: 40px;
+  padding: 8px 0 8px 0;
+}
+
+.emotion-11 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   box-sizing: border-box;
   color: #535353;
-  cursor: pointer;
-  font-weight: normal;
-  min-height: 40px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 24px;
-  border-radius: 8px;
+  cursor: 'pointer';
+  min-height: 32px;
+  min-width: 192px;
+  padding: 8px 12px;
   text-overflow: ellipsis;
-  overflow: hidden;
 }
 
-.emotion-12:hover {
-  color: #2e2e2e;
-  background-color: #e6f4ff;
+.emotion-29 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  border-top: 1px solid #e4e4e4;
+  min-height: 40px;
+  padding: 32px 0 8px 0;
 }
 
-.emotion-12:focus {
-  outline: none;
-  color: #ffffff;
-  background-color: #0a68c1;
-}
-
-.emotion-12:focus svg polygon {
-  fill: #ffffff;
-}
-
-.emotion-12 a {
-  color: #0a0a0a;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: normal;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-12 a:visited {
-  color: #0a0a0a;
-}
-
-.emotion-12 svg {
-  float: right;
-}
-
-.emotion-10 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-.emotion-10.emotion-10 {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-28 {
-  display: inline-block;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #0a68c1;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-28 svg {
-  fill: #0a68c1;
-}
-
-.emotion-28:hover:not(:disabled) {
-  color: #02509b;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-28:hover:not(:disabled) svg {
-  fill: #02509b;
-}
-
-.emotion-28:active:not(:disabled) {
-  color: #01396e;
-}
-
-.emotion-28:active:not(:disabled) svg {
-  fill: #01396e;
-}
-
-.emotion-28:visited:not(:disabled) {
-  color: #0a68c1;
-}
-
-.emotion-28:visited:not(:disabled) svg {
-  fill: #0a68c1;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-28 {
-    vertical-align: text-bottom;
-  }
+.emotion-30 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  min-height: 32px;
+  margin-top: 20px;
 }
 
 <div
-    class="emotion-32"
+    class="emotion-352"
     data-testid="sidebar"
     open=""
     role="complementary"
@@ -939,140 +2507,1822 @@ exports[`Sidebar renders correctly when open 1`] = `
     </div>
     <nav
       aria-label="Sidebar"
-      class="emotion-31"
+      class="emotion-351"
       role="navigation"
     >
       <ul
-        class="emotion-30"
+        class="emotion-27"
         role="list"
       >
         <li
-          class="emotion-13"
+          class="emotion-14"
         >
-          <div
-            class="emotion-12"
-            data-testid="/guides"
-            tabindex="0"
-          >
-            Getting Started
-            <svg
-              aria-hidden="true"
-              class="emotion-10 emotion-5"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+          <div>
+            <div
+              class="emotion-10"
+              data-testid="/about"
             >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M7 10l5 5 5-5z"
-              />
-            </svg>
+              About
+            </div>
           </div>
-        </li>
-        <li
-          class="emotion-13"
-        >
-          <div
-            class="emotion-12"
-            data-testid="/theming"
-            tabindex="0"
+          <ul
+            class="emotion-27"
+            role="list"
           >
-            Theming
-            <svg
-              aria-hidden="true"
-              class="emotion-10 emotion-5"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <li
+              class="emotion-14"
             >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M7 10l5 5 5-5z"
-              />
-            </svg>
-          </div>
-        </li>
-        <li
-          class="emotion-13"
-        >
-          <div
-            class="emotion-12"
-            data-testid="/components"
-            tabindex="0"
-          >
-            Components
-            <svg
-              aria-hidden="true"
-              class="emotion-10 emotion-5"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M7 10l5 5 5-5z"
-              />
-            </svg>
-          </div>
-        </li>
-        <li
-          class="emotion-13"
-        >
-          <div
-            class="emotion-12"
-            data-testid="/utils"
-            tabindex="0"
-          >
-            Utilities
-            <svg
-              aria-hidden="true"
-              class="emotion-10 emotion-5"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M7 10l5 5 5-5z"
-              />
-            </svg>
-          </div>
-        </li>
-        <li
-          class="emotion-13"
-        >
-          <a
-            class="emotion-28"
-            href="/feedback"
-          >
-            <span
-              class="emotion-2"
-            >
-              <div
-                class="emotion-12"
-                data-testid="/feedback"
-                tabindex="-1"
+              <a
+                class="emotion-3"
+                href="/about/introduction"
               >
-                Feedback
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/about/introduction"
+                    >
+                      Introduction
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/about/release-notes"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/about/release-notes"
+                    >
+                      Release notes
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/about/roadmap"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/about/roadmap"
+                    >
+                      Roadmap
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/about/contribute"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/about/contribute"
+                    >
+                      Contribute
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li
+          class="emotion-14"
+        >
+          <div>
+            <div
+              class="emotion-29"
+              data-testid="/getting-started"
+            >
+              Getting Started
+            </div>
+          </div>
+          <ul
+            class="emotion-27"
+            role="list"
+          >
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/getting-started/code"
+                >
+                  Code
+                </div>
               </div>
-            </span>
-          </a>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/getting-started/code/overview"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/getting-started/code/overview"
+                        >
+                          Overview
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/getting-started/code/web"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/getting-started/code/web"
+                        >
+                          Web
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/getting-started/code/instrumentation"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/getting-started/code/instrumentation"
+                        >
+                          Instrumentation
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/getting-started/design"
+                >
+                  Design
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/getting-started/design/overview"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/getting-started/design/overview"
+                        >
+                          Overview
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/getting-started/design/ways-of-working"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/getting-started/design/ways-of-working"
+                        >
+                          Ways of Working
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/getting-started/design/design-values"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/getting-started/design/design-values"
+                        >
+                          Design Values
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li
+          class="emotion-14"
+        >
+          <div>
+            <div
+              class="emotion-29"
+              data-testid="/theming"
+            >
+              Theme
+            </div>
+          </div>
+          <ul
+            class="emotion-27"
+            role="list"
+          >
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/theming/overview"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/theming/overview"
+                    >
+                      Overview
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/theming/creating-a-theme"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/theming/creating-a-theme"
+                    >
+                      Creating a theme
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/theming/using-a-theme"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/theming/using-a-theme"
+                    >
+                      Using a theme
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/theming/foundations"
+                >
+                  Foundations
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/foundations/overview"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/foundations/overview"
+                        >
+                          Overview
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/foundations/borders"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/foundations/borders"
+                        >
+                          Borders
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/foundations/breakpoints"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/foundations/breakpoints"
+                        >
+                          Breakpoints
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/foundations/colours"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/foundations/colours"
+                        >
+                          Colours
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/foundations/fonts"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/foundations/fonts"
+                        >
+                          Fonts
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/foundations/motions"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/foundations/motions"
+                        >
+                          Motions
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/foundations/overlays"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/foundations/overlays"
+                        >
+                          Overlays
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/foundations/shadows"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/foundations/shadows"
+                        >
+                          Shadows
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/foundations/sizing"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/foundations/sizing"
+                        >
+                          Sizing
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/theming/presets"
+                >
+                  Presets
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/presets/overview"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/presets/overview"
+                        >
+                          Overview
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/presets/space-presets"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/presets/space-presets"
+                        >
+                          Space Presets
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/presets/style-presets"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/presets/style-presets"
+                        >
+                          Style Presets
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/presets/typography-presets"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/presets/typography-presets"
+                        >
+                          Typography Presets
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/theming/component-defaults"
+                >
+                  Component Defaults
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/theming/component-defaults/overview"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/theming/component-defaults/overview"
+                        >
+                          Overview
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li
+          class="emotion-14"
+        >
+          <div>
+            <div
+              class="emotion-29"
+              data-testid="/components"
+            >
+              Components
+            </div>
+          </div>
+          <ul
+            class="emotion-27"
+            role="list"
+          >
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/components/overview"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/components/overview"
+                    >
+                      Overview
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/components/action"
+                >
+                  Action
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/action/button"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/action/button"
+                        >
+                          Button
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/action/share-bar"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/action/share-bar"
+                        >
+                          Share Bar
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/components/inputs"
+                >
+                  Inputs
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/inputs/form"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/inputs/form"
+                        >
+                          Form
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/inputs/text-input"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/inputs/text-input"
+                        >
+                          Text Input
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/components/layout"
+                >
+                  Layout
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/layout/block"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/layout/block"
+                        >
+                          Block
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/layout/card"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/layout/card"
+                        >
+                          Card
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/layout/divider"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/layout/divider"
+                        >
+                          Divider
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/layout/grid"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/layout/grid"
+                        >
+                          Grid
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/layout/scroll"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/layout/scroll"
+                        >
+                          Scroll
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/layout/stack"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/layout/stack"
+                        >
+                          Stack
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/layout/visibility"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/layout/visibility"
+                        >
+                          Visibility
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/components/media"
+                >
+                  Media
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/media/aspect-ratio"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/media/aspect-ratio"
+                        >
+                          Aspect Ratio
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/media/audio-player"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/media/audio-player"
+                        >
+                          Audio Player
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/media/caption"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/media/caption"
+                        >
+                          Caption
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/media/image"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/media/image"
+                        >
+                          Image
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/media/volume-control"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/media/volume-control"
+                        >
+                          Volume Control
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/components/navigation"
+                >
+                  Navigation
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/navigation/link"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/navigation/link"
+                        >
+                          Link
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/navigation/tag"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/navigation/tag"
+                        >
+                          Tag
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/navigation/title-bar"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/navigation/title-bar"
+                        >
+                          Title Bar
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/components/selection-controls"
+                >
+                  Selection Contols
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/selection-controls/tab"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/selection-controls/tab"
+                        >
+                          Tab
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/selection-controls/slider"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/selection-controls/slider"
+                        >
+                          Slider
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/components/text-content"
+                >
+                  Text Content
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/byline"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/byline"
+                        >
+                          Byline
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/date-time"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/date-time"
+                        >
+                          Date Time
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/flag"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/flag"
+                        >
+                          Flag
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/heading"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/heading"
+                        >
+                          Heading
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/headline"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/headline"
+                        >
+                          Headline
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/ordered-list"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/ordered-list"
+                        >
+                          Ordered List
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/paragraph"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/paragraph"
+                        >
+                          Paragraph
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/standfirst"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/standfirst"
+                        >
+                          Standfirst
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/text-block"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/text-block"
+                        >
+                          Text Block
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/text-content/unordered-list"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/text-content/unordered-list"
+                        >
+                          Unordered List
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/components/third-party-integrations"
+                >
+                  Third Party Integrations
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/third-party-integrations/consent"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/third-party-integrations/consent"
+                        >
+                          Consent
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/third-party-integrations/consent-settings-link"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/third-party-integrations/consent-settings-link"
+                        >
+                          Consent Settings Link
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/third-party-integrations/experimentation-web"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/third-party-integrations/experimentation-web"
+                        >
+                          Experimentation Web
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/third-party-integrations/tealium"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/third-party-integrations/tealium"
+                        >
+                          Tealium
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <div>
+                <div
+                  class="emotion-30"
+                  data-testid="/components/others"
+                >
+                  Others
+                </div>
+              </div>
+              <ul
+                class="emotion-27"
+                role="list"
+              >
+                <li
+                  class="emotion-14"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/others/icons"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-11"
+                          data-testid="/components/others/icons"
+                        >
+                          Icons
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li
+          class="emotion-14"
+        >
+          <div>
+            <div
+              class="emotion-29"
+              data-testid="/utils"
+            >
+              Utilities
+            </div>
+          </div>
+          <ul
+            class="emotion-27"
+            role="list"
+          >
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/utils/overview"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/utils/overview"
+                    >
+                      Overview
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/utils/css"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/utils/css"
+                    >
+                      css
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/utils/get-defaults"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/utils/get-defaults"
+                    >
+                      getComponentDefaults
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/utils/get-from-theme"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/utils/get-from-theme"
+                    >
+                      getFromTheme
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li
+          class="emotion-14"
+        >
+          <div>
+            <div
+              class="emotion-29"
+              data-testid="/help"
+            >
+              Help
+            </div>
+          </div>
+          <ul
+            class="emotion-27"
+            role="list"
+          >
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/help/contact-us"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/help/contact-us"
+                    >
+                      Contact Us
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-14"
+            >
+              <a
+                class="emotion-3"
+                href="/help/faqs"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-11"
+                      data-testid="/help/faqs"
+                    >
+                      FAQs
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>

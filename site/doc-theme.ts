@@ -48,6 +48,36 @@ const stylePresets = {
       iconColor: '{{colors.red070}}',
     },
   },
+  linkNoUnderline: {
+    base: {
+      textDecoration: 'none',
+    },
+    hover: {
+      textDecoration: 'none',
+    },
+  },
+  sidebarNavItem: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      color: '{{colors.inkContrast}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interactivePrimary010}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      color: '{{colors.inkContrast}}',
+    },
+    active: {
+      backgroundColor: '{{colors.interactivePrimary020}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      color: '{{colors.inkContrast}}',
+    },
+  },
+  sidebarHeader: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      color: '{{colors.inkContrast}}',
+    },
+  },
 };
 export const newsKitLight = createTheme({
   name: 'newskit-light',

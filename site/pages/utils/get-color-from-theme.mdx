@@ -1,0 +1,48 @@
+import {LegacyBlock} from '../../components/legacy-block';
+import Layout from '../../components/layout';
+import {Code, CodeFromFile} from '../../components/code';
+import Prop from '../../components/prop';
+
+export default Layout;
+
+# getColorFromTheme()
+
+## Syntax
+
+<Code>{'getColorFromTheme(defaultToken, customProp)(props)'}</Code>
+
+## Overview
+
+Retrieve a color token from the current theme. Color tokens are [CSS color values](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) to be used for CSS styling.
+
+## Parameters
+
+<LegacyBlock marginTop='sizing040'>
+  <Prop name='defaultToken' type='ThemeToken'>
+    Is the name of the color token to be retrieved. If provided, it is used as an object key on the color section of the theme to get the token value.
+  </Prop>
+  <Prop name='customProp' type="Exclude<keyof Props, 'theme'>">
+    Is the name of the component prop in which a color token name can be provided by the end-user of the component. If provided, the color to be retrieved will come from the component prop.
+  </Prop>
+  <Prop name='props' type='Props'>
+    Is the props of the component including the theme. If the function is used inside a styled component template literal, or a css block, Emotion.js will call the function first with the component props passed in.
+  </Prop>
+</LegacyBlock>
+
+## Return value
+
+Returns a color token if valid attributes are received.
+
+Returns an empty string if invalid attributes or no attributes are provided.
+
+## Example
+
+<CodeFromFile path="examples/utils/get-color-from-theme.tsx"/>
+
+In this example the `Paragraph` component will include the color value from `highlight` found in the theme if the `Paragraph` is used with no props:
+
+<Code>{'<Paragraph />'}</Code>
+
+However, it will include value from `focus` if the `Paragraph` is used with the `color` prop and the value passed in is `focus`:
+
+<Code>{'<Paragraph color="focus" />'}</Code>

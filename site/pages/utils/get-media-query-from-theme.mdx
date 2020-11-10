@@ -1,0 +1,47 @@
+import {LegacyBlock} from '../../components/legacy-block';
+import Layout from '../../components/layout';
+import {Code, CodeFromFile} from '../../components/code';
+import Prop from '../../components/prop';
+
+export default Layout;
+
+# getMediaQueryFromTheme()
+
+## Syntax
+
+<Code>{'getMediaQueryFromTheme(minWidth, maxWidth)(props)'}</Code>
+
+## Overview
+
+Contructs a media query from the provided breakpoint keys. Breakpoints are specified in the theme, there are 4: xs, sm, md, lg.
+
+## Parameters
+
+<LegacyBlock marginTop='sizing040'>
+  <Prop name='minWidth' type='BreakpointKeys'>
+    The min-width for the media query. Can be left falsy if only a max-width is to be used.
+  </Prop>
+  <Prop name='maxWidth' type='BreakpointKeys'>
+    The max-width for the media query. Can be left falsy if only a min-width is to be used.
+  </Prop>
+  <Prop name='props' type='Props'>
+    Is the props of the component including the theme. If the function is used inside a styled component template literal, or a css block, Emotion.js will call the function first with the component props passed in.
+  </Prop>
+</LegacyBlock>
+
+## Return value
+
+Returns a media query line, to be used before an opening brace.
+
+Returns an empty screen query (`@media screen`) if no min or max width tokens are provided.
+
+## Example
+
+In this example the `Paragraph` component will use the min-width breakpoint value from `sm`.
+
+<CodeFromFile path="examples/utils/get-media-query-from-theme-1.tsx"/>
+
+In this example the `Paragraph` component will use the min-width breakpoint value from `sm` and the max-width value from `md`.
+
+<CodeFromFile path="examples/utils/get-media-query-from-theme-2.tsx"/>
+

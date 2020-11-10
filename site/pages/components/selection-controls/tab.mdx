@@ -1,0 +1,249 @@
+import Layout from '../../../components/layout';
+import Playground from '../../../components/playground';
+import {Prop} from '../../../components/prop';
+import {TextBoxSwatch} from '../../../components/theming-values/colors';
+import {LegacyBlock} from '../../../components/legacy-block';
+import {CodeFromDefaultPresets} from '../../../components/code';
+import {Tab, TabSize, IconFilledEmail, Block, TabGroup, TabPane} from 'newskit';
+
+export default Layout;
+
+# Tab
+
+## Tab Overview
+
+The tab component is used within the tab group as a way of switching between different views.
+
+## Tab Usage
+
+A tab is used in a tab group for users to alternate between views within the same context, not to navigate to different areas.
+Tabs should all look and work the same where possible.
+
+## Tab Props
+
+Tabs have a number of props to facilitate a variety of uses:
+
+<LegacyBlock marginTop="sizing040">
+  <Prop name="children" type="string">
+    The label of the Tab is passed as the child of the component.
+  </Prop>
+  <Prop name="size" type="TabSize" enum={TabSize} default={TabSize.Medium}>
+    Optional size of the Tab: Small, Medium or Large.
+  </Prop>
+  <Prop name="disabled" type="boolean" default={false}>
+    If true, the Tab will render the disabled state of the style preset.
+  </Prop>
+  <Prop name="isSelected" type="boolean" default={false}>
+    If true, the Tab will render the selected state of the style preset.
+  </Prop>
+  <Prop name="ariaLabel" type="string">
+    The aria-label attribute is to allow a user to describe the action that will
+    be performed when the user interacts with a tab in a tab group. By default,
+    this could be the primary label text.
+  </Prop>
+  <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component and provided
+    elements. Here are the overrides that the Tab accepts:
+    <Prop name="spaceInset" type="MQ<PaddingPresetKeys>">
+      If provided, this overrides the padding of the Tab. Otherwise,
+      spaceInsetSquish020 or spaceInsetSquish030 is used depending on the `size`
+      prop.
+    </Prop>
+    <Prop name="stylePreset" type="MQ<string>">
+      If provided, this overrides the style preset applied to the Tab.
+    </Prop>
+    <Prop name="typographyPreset" type="MQ<TypographyPresetKeys>">
+      If provided, this overrides the typography preset applied to the Tab.
+      Otherwise, label020 or label030 is used depending on the `size` prop.
+    </Prop>
+    <Prop name="spaceInline" type="MQ<string>">
+      If provided, this overrides the space between multiple children in the
+      underlying Stack. If less than 2 children are passed, this prop is
+      irrelevant.
+    </Prop>
+    <Prop name="iconSize" type="string">
+      If provided, this overrides the icon size of any child icons. Otherwise,
+      iconSize010, iconSize020 or iconSize030 is used depending on the `size`
+      prop. If no icons are present in the Tab's children then this prop is
+      irrelevant.
+      <br />
+      <br />
+      <i>
+        Note: You can also set the icon size by passing it directly as a size
+        prop to the icon, but by doing this you will override the iconSize
+        passed from overrides. We discourage this approach but we will keep the
+        functionality in case it is needed.
+      </i>
+    </Prop>
+    <Prop name="minHeight" type="string">
+      If provided, this sets a minimum height to the Tab. This can be a sizing
+      token from the theme, or any CSS length value. By default, sizing060,
+      sizing080 or sizing090 is used depending on the `size` prop.
+    </Prop>
+    Refer to the defaults below for the object structure:
+    <CodeFromDefaultPresets componentName="tab" />
+  </Prop>
+</LegacyBlock>
+
+## Tab Playground
+
+<Playground
+  componentName="Tab"
+  component={state => (
+    <Block role="tablist">
+      <Tab {...state}>
+        <IconFilledEmail />
+        Item One
+      </Tab>
+    </Block>
+  )}
+  knobs={[
+    {
+      name: 'Size',
+      propName: 'size',
+      options: [
+        {
+          label: 'Default (TabSize.Small)',
+          value: TabSize.Small,
+          isDefault: true,
+        },
+        {
+          label: 'TabSize.Medium',
+          value: TabSize.Medium,
+        },
+        {
+          label: 'TabSize.Large',
+          value: TabSize.Large,
+        },
+      ],
+    },
+    {
+      name: 'Disabled',
+      propName: 'disabled',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'Selected',
+      propName: 'isSelected',
+      type: 'boolean',
+      value: false,
+    },
+  ]}
+/>
+
+## Tab Accessibility
+
+We recommend using the ARIA tab model. This works across all major screen readers and browser combinations.<br/><br/>
+Add aria-label prop to allow a user to describe the action that will be performed when the user interacts with a tab in a tab group.<br/>By default, this could be the primary label text.<br/>Where there are no text labels, the icon will need to be assigned a name.
+
+## SEO
+
+Ensure icons have alt text.
+
+## Tab Group Overview
+
+Tab Group consists of tabs and is used as a way of switching between different content panels.
+
+## Tab Group Usage
+
+Tab Group is used for users to alternate between views within the same context, not to navigate to different areas.
+Tabs within the Tab Group should all look and work the same where possible.
+
+## Tab Group Props
+
+Tabs have a number of props to facilitate a variety of uses:
+
+<LegacyBlock marginTop="sizing040">
+  <Prop name="children" type="string">
+    Tab that are passed as the child of the component.
+  </Prop>
+  <Prop name="divider" type="boolean">
+    Optional dividers between Tabs.
+  </Prop>
+  <Prop name="size" type="TabSize" enum={TabSize}
+    default={TabSize.Medium}>
+    Optional size of the Tab: Small, Medium or Large.
+  </Prop>
+  <Prop name="tabPanes" type="array">
+    Array of Tab Panes, containing the content for each view.
+  </Prop>
+ <Prop name="vertical" type="boolean">
+    Allows the Tab Group to flow vertically. The Tab Group is laid out horizontally by default.
+  </Prop>
+
+  <Prop name="overrides" type="object">
+    If provided, overrides the respective presets for the component and provided elements.
+    Here are the overrides that the Tab Group accepts:
+    <Prop name="stylePreset" type="MQ<string>">
+      If provided, this overrides the style preset applied to the Tab Group.
+    </Prop>
+    Refer to the defaults below for the object structure:
+    <CodeFromDefaultPresets componentName="tabGroup" />
+  </Prop>
+</LegacyBlock>
+
+## Tab Group Playground
+
+<Playground
+  componentName="TabGroup"
+  newskitPath="/tab-group"
+  component={state => (
+    <TabGroup
+      tabPanes={[
+        <TabPane tabKey={1}>First tab content</TabPane>,
+        <TabPane tabKey={2}>Second tab content</TabPane>,
+        <TabPane tabKey={3}>Third tab content</TabPane>,
+      ]}
+      {...state}
+    >
+      <Tab tabKey={1}>Tab</Tab>
+      <Tab tabKey={2}>Tab</Tab>
+      <Tab tabKey={3}>Tab</Tab>
+    </TabGroup>
+  )}
+  knobs={[
+    {
+      name: 'Size',
+      propName: 'size',
+      options: [
+        {
+          label: 'TabSize.Small',
+          value: TabSize.Small,
+        },
+        {
+          label: 'TabSize.Medium',
+          value: TabSize.Medium,
+          isDefault: true,
+        },
+        {
+          label: 'TabSize.Large',
+          value: TabSize.Large,
+        },
+      ],
+    },
+    {
+      name: 'divider',
+      propName: 'divider',
+      type: 'boolean',
+      value: false,
+    },
+    {
+      name: 'vertical',
+      propName: 'vertical',
+      type: 'boolean',
+      value: false,
+    },
+  ]}
+/>
+
+## Tab Group Accessibility
+
+We recommend using the ARIA tab model. This works across all major screen readers and browser combinations.
+If you are using a screen reader with Javascript turned on, you should be able to navigate the tabs pattern in the following way:
+
+Use the tab key on your keyboard to access the tab labels
+
+Use the return key to select the tab
+
+Arrow Left & Arrow Right (only on horizontal tab orientation) - Move left and right through the enabled tabs and trigger select

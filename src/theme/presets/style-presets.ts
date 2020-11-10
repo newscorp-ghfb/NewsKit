@@ -1191,5 +1191,4 @@ stylePresets.dividerHorizontal = {
     borderWidth: '{{borders.borderWidthDefault}}',
   },
 };
-
 stylePresets.dividerVertical = stylePresets.dividerHorizontal;

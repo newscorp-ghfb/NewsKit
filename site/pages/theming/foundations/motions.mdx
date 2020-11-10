@@ -1,0 +1,38 @@
+import Layout from '../../../components/layout';
+
+export default Layout;
+
+# Motions
+
+Motion is used to create movement and narrative within your product. Animated interface elements don't just attract attention, they enhance user experience and help guide user flow.
+They reveal the functionality and process of a user interface much better than static text. Like any other element of good design, UI motions should have a purpose without being too noticeable.
+
+## Easing
+
+Easing controls the velocity of a motion over its duration. It helps determine a motion’s feeling and can aid in matching the appearance of real-world physics. Easing values are plotted as curves…..
+
+| Token              |           Value            |
+| ------------------ | :------------------------: |
+| motionEaseIn       | cubic-bezier(.5, 0, 1, 1)  |
+| motionEaseOut      | cubic-bezier(0, 0, .5, 1)  |
+| motionEaseInAndOut | cubic-bezier(.5, 0, .5, 1) |
+
+## Duration
+
+Duration is fundamental to motion. Used properly, it helps motions feel responsive and natural.
+Determining which timing to use is a matter of context, including the complexity of the action and the distance over which the motion occurs.
+
+| Token             | Value |
+| ----------------- | :---: |
+| motionDuration010 | 100ms |
+| motionDuration020 | 200ms |
+| motionDuration030 | 300ms |
+| motionDuration040 | 400ms |
+| motionDuration050 | 500ms |
+
+## Accessibility
+
+When creating custom motions, always keep the following points in mind to help ensure the quality and usability of your implementation.
+
+- Always consider the needs of people who are sensitive to motion. Consider avoiding large, abrupt movements, or moving multiple objects at the same time in different directions.
+- If large scale motions play a big role in your product’s experience, offering an option to reduce motion can improve usability for people adversely affected by motion.

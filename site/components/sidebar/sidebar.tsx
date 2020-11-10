@@ -6,6 +6,9 @@ import {
   getMediaQueryFromTheme,
   styled,
   IconFilledClose,
+  Devices,
+  getDeviceQueryFromTheme,
+  css,
 } from 'newskit';
 
 import {LegacyBlock} from '../legacy-block';
@@ -44,25 +47,31 @@ const SidebarWrapper = styled.div<SidebarWrapperProps>`
   ${getMediaQueryFromTheme('lg')} {
     transform: translateX(0);
   }
+
+  ${getMediaQueryFromTheme('lg')} {
+    overflow: hidden;
+    &:hover {
+      overflow: auto;
+    }
+  }
+
+  ${getDeviceQueryFromTheme(
+    [Devices.iPadPro],
+    css`
+      overflow: auto;
+    `,
+  )};
 `;
 
 const SidebarHeader = styled.div`
   display: flex;
   justify-content: space-between;
   background-color: ${getColorFromTheme('interface020')};
-  padding-left: ${getSizingFromTheme('sizing040')};
-  padding-right: ${getSizingFromTheme('sizing040')};
-  padding-top: ${getSizingFromTheme('sizing020')};
-  padding-bottom: ${getSizingFromTheme('sizing020')};
+  padding-top: ${getSizingFromTheme('sizing040')};
+  padding-bottom: ${getSizingFromTheme('sizing060')};
   width: 100%;
   position: sticky;
   top: 0;
-
-  ${getMediaQueryFromTheme('md')} {
-    padding-top: ${getSizingFromTheme('sizing030')};
-    padding-bottom: ${getSizingFromTheme('sizing030')};
-    margin-bottom: ${getSizingFromTheme('sizing060')};
-  }
 `;
 
 const IconWrapper = styled.div`

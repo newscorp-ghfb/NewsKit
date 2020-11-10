@@ -1,0 +1,121 @@
+import {EventTrigger} from 'newskit';
+import Layout from '../../../components/layout';
+import {CodeFromFile, Code} from '../../../components/code';
+import {EnumTable} from '../../../components/enum-table';
+
+export default Layout;
+
+# Getting Started with Event Instrumentation
+
+## Overview
+
+NewsKit components are built to emit events "out of the box" via the provided NewsKit event instrumentation system. This system requires a small amount of setup in your project to allow the emitted events to reach your desired tag manager. Events fired via the provided instrumentation system can be forwarded to as many "handlers" as desired. NewsKit provides two handlers; a console handler which outputs the fired events to the browser console, and a Tealium handler which forwards the event onto the Tealium tag manager (Tealium must be present on the page for this handler to work). You can also create your own handlers, for example if you require forwarding events to a different tag manager.
+
+As well as the above handlers, NewsKit also provided a middleware composition system to allow for operations on events before they reach a handler. For example, if you wanted to filter events to forward only a specific set to a tag manager, perform some event data transformations, or batch the events reaching a handler.
+
+For more information, users with the relevant access can read the internal RFC which lead to this implementation. This can be found on [GitHub](https://github.com/newsuk/nuk-rfcs/blob/master/active/0037-user-interface-event-instrumentation.md).
+
+## Setup
+
+The event instrumentation system is part of NewsKit, so the same regular install you have for other components is sufficient. The first step is to create the event instrumentation by calling the function; `createEventInstrumentation`. This function takes two arguments;
+
+- an array of event handler functions; an event handler function simply takes an array of events and returns the same. There are two handlers provided by NewsKit, a console and Tealium handler (exported under `instrumentationHandlers`), but you can also pass your own custom handlers.
+- an event context object; this is an optional, but recommended, object of contextual data relevant to the page the events are being fired from. It might contain for example the page url and a user identifier.
+
+This function will return an object containing the context passed to it and the `fireEvent` function. This is the function which is used internally by the NewsKit components to fire events to your handlers.
+
+## InstrumentationProvider
+
+Similar to the way you may use the [ThemeProvider](/theming/code) to set the components theme, NewsKit provides a React context component called `InstrumentationProvider` to wrap the React DOM of your project and provide the required event instrumentation down to NewsKit components. The props required for this component match the object output from the `createEventInstrumentation` function and as a result, the object can simply be destructured into the props of the provider.
+
+<CodeFromFile path="examples/instrumentation/instrumentation-provider.tsx" />
+
+In this example the Link component, and any other NewsKit instrumentation enabled components would emit events to the browsers console. This could look something like this:
+
+<Code>
+  {JSON.stringify(
+    {
+      originator: 'link',
+      trigger: 'click',
+      context: {url: 'www.my-amazing-website.com'},
+    },
+    null,
+    2,
+  )}
+</Code>
+
+InstrumentationProvider components can be nested if you wish to extend the context object to add extra data. See the relevant section below for more information and examples.
+
+## Middleware
+
+NewsKit also contains a middleware composition system to allow for operations on events before they reach a handler. For example, if you wanted to filter events to forward only a specific set to a tag manager, perform some event data transformations, or batch the events reaching a handler. Instrumentation middleware functions have the same signature as handlers; they take in an array of events and must return an array of events. The returned array can be a different length or even empty if necessary, though it is recommended that middleware functions are pure and do not mutate the array or events.
+
+In the example below, filter middleware is used to pass only specific events to specific handlers.
+
+<CodeFromFile path="examples/instrumentation/instrumentation-middleware.tsx" />
+
+## Custom Event Firing
+
+You should not need to add any instrumentation event firing to NewsKit components as this is already provided, but there may be a case where you have pre-existing custom components and wish to utilise the single NewsKit event instrumentation. This can be done easily via two ways;
+
+- using the NewsKit HOC `withInstrumentation`. This will wrap the component argument in the instrumentation context and a `fireEvent` prop will be passed to the component.
+- using the NewsKit React hook `useInstrumentation`. This will return an object containing the `fireEvent` function.
+
+You can then call this function with your custom instrumentation event as necessary, so long as it meets event requirements. Event objects must contain an event `originator` (the name of the component firing the event) and an event `trigger` from the `EventTrigger` enum listed below (this can be used as a JS object or the direct string values in non-TS projects). Events can also contain a `context` object, which can be any JSON-serializable structure.
+
+<EnumTable>{EventTrigger}</EnumTable>
+
+<CodeFromFile path="examples/instrumentation/with-instrumentation.tsx" />
+
+## Nested Instrumentation Providers & Contexts
+
+It is possible to build up and extend an events context by nesting instances of the `InstrumentationProvider`. Each provider can take a context object which will be shallow merged onto the parent when an event is fired.
+
+This can be useful to build up event information which is specific to a particular component instance, without that component needing to know anything outside its own scope. For example, a button can fire a click event, but the layers of context can provide the information on what the button is for and where it is on the page.
+
+<CodeFromFile path="examples/instrumentation/instrumentation-provider-nested.tsx" />
+
+In this example we have a root `InstrumentationProvider` providing the page url. Inside the `Rail` component we have another `InstrumentationProvider`; this provides any child events with rail specifics, like the rail name. The `RailItem` then contains a button which fires a click event. The resulting click event would look like this:
+
+<Code>
+  {JSON.stringify(
+    {
+      context: {
+        pageUrl: 'www.my-amazing-website.com',
+        pageArea: 'rail',
+        railName: 'Some great rail',
+      },
+      originator: 'button',
+      trigger: 'click',
+    },
+    null,
+    2,
+  )}
+</Code>
+
+It is important to remember that in the example above, the `fireEvent` function is scoped to the context of the parent provider (the one which wraps the `RailItem`). This means if we wanted to add more context to the event inside the `RailItem`, in the example above, doing the following would NOT work as expected. The `railItemId` we are adding to the context would NOT appear on the event context.
+
+<CodeFromFile path="examples/instrumentation/instrumentation-provider-nested-2.tsx" />
+
+Instead, we can add context to the event directly (or we must put the button into a separate component and get the `fireEvent` function at that scope level). Passing context information via the fireEvent function is the simpler of the two options:
+
+<CodeFromFile path="examples/instrumentation/instrumentation-provider-nested-3.tsx" />
+
+This would produce the following event (for rail item 1) as expected:
+
+<Code>
+  {JSON.stringify(
+    {
+      context: {
+        pageUrl: 'www.my-amazing-website.com',
+        pageArea: 'rail',
+        railName: 'Some great rail',
+        railItemId: 1,
+      },
+      originator: 'button',
+      trigger: 'click',
+    },
+    null,
+    2,
+  )}
+</Code>

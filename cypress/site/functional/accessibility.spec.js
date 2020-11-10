@@ -1,24 +1,9 @@
 // / <reference types="Cypress" />
 
 import siteRoutes from '../../../site/routes.json';
+import {flatRoutes} from '../../support/commands';
 
-const flatRoutes = routes =>
-  routes.reduce((acc, route) => {
-    if (route.page) {
-      acc.push(route.id);
-      return acc;
-    }
-
-    if (route.subNav) {
-      return acc.concat(flatRoutes(route.subNav));
-    }
-
-    throw new Error(
-      `Route object has no page or subNav property! ${JSON.stringify(route)}`,
-    );
-  }, []);
-
-const pages = flatRoutes(siteRoutes);
+const pages = flatRoutes(siteRoutes, 'id');
 
 describe('Page accessibility', () => {
   pages.forEach(path => {
@@ -29,9 +14,9 @@ describe('Page accessibility', () => {
       cy.acceptCookieBanner();
       cy.injectAxe();
       if (
-        path === `/theming/typography-presets` ||
+        path === `/theming/presets/typography-presets` ||
         path === `/pages/article` ||
-        path === `/components/card`
+        path === `/components/layout/card`
       ) {
         // The typography page is a showcase so we have disabled the heading order rule for this page.
         // More info on the rule here: https://www.w3.org/WAI/tutorials/page-structure/headings/
@@ -43,8 +28,8 @@ describe('Page accessibility', () => {
           },
         });
       } else if (
-        path === `/components/radio-player` ||
-        path === `/components/audio-player`
+        path === `/components/media/radio-player` ||
+        path === `/components/media/audio-player`
       ) {
         cy.checkA11y({
           rules: {

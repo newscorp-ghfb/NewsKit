@@ -1,32 +1,80 @@
 [
   {
-    "title": "Getting Started",
-    "id": "/guides",
+    "title": "About",
+    "id": "/about",
     "subNav": [
       {
-        "title": "NewsKit",
+        "title": "Introduction",
         "page": true,
-        "id": "/guides/getting-started-newskit"
+        "id": "/about/introduction"
       },
       {
-        "title": "AMP",
+        "title": "Release notes",
         "page": true,
-        "id": "/guides/getting-started-amp"
+        "id": "/about/release-notes"
       },
       {
-        "title": "Instrumentation",
+        "title": "Roadmap",
         "page": true,
-        "id": "/guides/getting-started-instrumentation"
+        "id": "/about/roadmap"
       },
       {
-        "title": "Component Generator",
+        "title": "Contribute",
         "page": true,
-        "id": "/guides/getting-started-generator"
+        "id": "/about/contribute"
       }
     ]
   },
   {
-    "title": "Theming",
+    "title": "Getting Started",
+    "id": "/getting-started",
+    "subNav": [
+      {
+        "title": "Code",
+        "id": "/getting-started/code",
+        "subNav": [
+            {
+              "title": "Overview",
+              "page": true,
+              "id": "/getting-started/code/overview"
+            },
+            {
+              "title": "Web",
+              "page": true,
+              "id": "/getting-started/code/web"
+            },
+            {
+              "title": "Instrumentation",
+              "page": true,
+              "id": "/getting-started/code/instrumentation"
+            }
+        ]
+      },
+      {
+        "title": "Design",
+        "id": "/getting-started/design",
+        "subNav": [
+            {
+              "title": "Overview",
+              "page": true,
+              "id": "/getting-started/design/overview"
+            },
+            {
+              "title": "Ways of Working",
+              "page": true,
+              "id": "/getting-started/design/ways-of-working"
+            },
+            {
+              "title": "Design Values",
+              "page": true,
+              "id": "/getting-started/design/design-values"
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Theme",
     "id": "/theming",
     "subNav": [
       {
@@ -49,9 +97,34 @@
         "id": "/theming/foundations",
         "subNav": [
           {
+            "title": "Overview",
+            "page": true,
+            "id": "/theming/foundations/overview"
+          },
+          {
+            "title": "Borders",
+            "page": true,
+            "id": "/theming/foundations/borders"
+          },
+          {
+            "title": "Breakpoints",
+            "page": true,
+            "id": "/theming/foundations/breakpoints"
+          },
+          {
             "title": "Colours",
             "page": true,
             "id": "/theming/foundations/colours"
+          },
+          {
+            "title": "Fonts",
+            "page": true,
+            "id": "/theming/foundations/fonts"
+          },
+          {
+            "title": "Motions",
+            "page": true,
+            "id": "/theming/foundations/motions"
           },
           {
             "title": "Overlays",
@@ -59,31 +132,53 @@
             "id": "/theming/foundations/overlays"
           },
           {
-            "title": "Motion",
+            "title": "Shadows",
             "page": true,
-            "id": "/theming/foundations/motion"
+            "id": "/theming/foundations/shadows"
           },
           {
-            "title": "Spacing",
+            "title": "Sizing",
             "page": true,
-            "id": "/theming/foundations/spacing"
+            "id": "/theming/foundations/sizing"
           }
         ]
       },
       {
-        "title": "Typography Presets",
-        "page": true,
-        "id": "/theming/typography-presets"
-      },
-      {
-        "title": "Style Presets",
-        "page": true,
-        "id": "/theming/style-presets"
+        "title": "Presets",
+        "id": "/theming/presets",
+        "subNav": [
+          {
+            "title": "Overview",
+            "page": true,
+            "id": "/theming/presets/overview"
+          },
+          {
+            "title": "Space Presets",
+            "page": true,
+            "id": "/theming/presets/space-presets"
+          },
+          {
+            "title": "Style Presets",
+            "page": true,
+            "id": "/theming/presets/style-presets"
+          },
+          {
+            "title": "Typography Presets",
+            "page": true,
+            "id": "/theming/presets/typography-presets"
+          }
+        ]
       },
       {
         "title": "Component Defaults",
-        "page": true,
-        "id": "/theming/component-defaults"
+        "id": "/theming/component-defaults",
+        "subNav": [
+          {
+            "title": "Overview",
+            "page": true,
+            "id": "/theming/component-defaults/overview"
+          }
+        ]
       }
     ]
   },
@@ -92,257 +187,286 @@
     "id": "/components",
     "subNav": [
       {
-        "title": "Aspect Ratio",
+        "title": "Overview",
         "page": true,
-        "id": "/components/aspect-ratio"
+        "id": "/components/overview"
       },
       {
-        "title": "Audio Player",
-        "page": true,
-        "id": "/components/audio-player"
-      },
-      {
-        "title": "Block",
-        "page": true,
-        "id": "/components/block"
-      },
-      {
-        "title": "Button",
-        "page": true,
-        "id": "/components/button"
-      },
-      {
-        "title": "Byline",
-        "page": true,
-        "id": "/components/byline"
-      },
-      {
-        "title": "Caption",
-        "page": true,
-        "id": "/components/caption"
-      },
-      {
-        "title": "Card",
-        "page": true,
-        "id": "/components/card"
-      },
-      {
-        "title": "Consent",
-        "page": true,
-        "id": "/components/consent"
-      },
-      {
-        "title": "Consent Settings Link",
-        "page": true,
-        "id": "/components/consent-settings-link"
-      },
-      {
-        "title": "Date Time",
-        "page": true,
-        "id": "/components/date-time"
-      },
-      {
-        "title": "Divider",
-        "page": true,
-        "id": "/components/divider"
-      },
-      {
-        "title": "Experimentation Web",
-        "page": true,
-        "id": "/components/experimentation-web"
-      },
-      {
-        "title": "Flag",
-        "page": true,
-        "id": "/components/flag"
-      },
-      {
-        "title": "Form",
-        "page": true,
-        "id": "/components/form"
-      },
-      {
-        "title": "Grid & Cell",
-        "page": true,
-        "id": "/components/grid"
-      },
-      {
-        "title": "Headline",
-        "page": true,
-        "id": "/components/headline"
-      },
-      {
-        "title": "Icons",
-        "page": true,
-        "id": "/components/icons"
-      },
-      {
-        "title": "Image",
-        "page": true,
-        "id": "/components/image"
-      },
-      {
-        "title": "Link",
-        "page": true,
-        "id": "/components/link"
-      },
-      {
-        "title": "Ordered List",
-        "page": true,
-        "id": "/components/ordered-list"
-      },
-      {
-        "title": "Scroll",
-        "page": true,
-        "id": "/components/scroll"
-      },
-      {
-        "title": "Share Bar",
-        "page": true,
-        "id": "/components/share-bar"
-      },
-      {
-        "title": "Slider",
-        "page": true,
-        "id": "/components/slider"
-      },
-      {
-        "title": "Stack & Stack Child",
-        "page": true,
-        "id": "/components/stack"
-      },
-      {
-        "title": "Standfirst",
-        "page": true,
-        "id": "/components/standfirst"
-      },
-      {
-        "title": "Tab",
-        "page": true,
-        "id": "/components/tab"
-      },
-      {
-        "title": "Tag",
-        "page": true,
-        "id": "/components/tag"
-      },
-      {
-        "title": "Tealium",
-        "page": true,
-        "id": "/components/tealium"
-      },
-      {
-        "title": "Text Block",
-        "page": true,
-        "id": "/components/text-block"
-      },
-      {
-        "title": "Text Input",
-        "page": true,
-        "id": "/components/text-input"
-      },
-      {
-        "title": "Title Bar",
-        "page": true,
-        "id": "/components/title-bar"
-      },
-      {
-        "title": "Unordered List",
-        "page": true,
-        "id": "/components/unordered-list"
-      },
-      {
-        "title": "Visibility",
-        "page": true,
-        "id": "/components/visibility"
-      },
-      {
-        "title": "Volume Control",
-        "page": true,
-        "id": "/components/volume-control"
-      }
-    ]
-  },
-  {
-    "title": "Utilities",
-    "id": "/utils",
-    "subNav": [
-      {
-        "title": "Code Helpers",
-        "id": "/utils/code-helpers",
+        "title": "Action",
+        "id": "/components/action",
         "subNav": [
           {
-            "title": "Component Defaults",
+            "title": "Button",
             "page": true,
-            "id": "/utils/code-helpers/get-defaults"
+            "id": "/components/action/button"
           },
           {
-            "title": "css",
+            "title": "Share Bar",
             "page": true,
-            "id": "/utils/code-helpers/css"
+            "id": "/components/action/share-bar"
+          }
+        ]
+      },
+      {
+        "title": "Inputs",
+        "id": "/components/inputs",
+        "subNav": [
+          {
+            "title": "Form",
+            "page": true,
+            "id": "/components/inputs/form"
           },
           {
-            "title": "getBorderFromTheme",
+            "title": "Text Input",
             "page": true,
-            "id": "/utils/code-helpers/get-border-from-theme"
+            "id": "/components/inputs/text-input"
+          }
+        ]
+      },
+      {
+        "title": "Layout",
+        "id": "/components/layout",
+        "subNav": [
+          {
+            "title": "Block",
+            "page": true,
+            "id": "/components/layout/block"
           },
           {
-            "title": "getSSRId",
+            "title": "Card",
             "page": true,
-            "id": "/utils/code-helpers/get-ssr-id"
+            "id": "/components/layout/card"
           },
           {
-            "title": "getColorFromTheme",
+            "title": "Divider",
             "page": true,
-            "id": "/utils/code-helpers/get-color-from-theme"
+            "id": "/components/layout/divider"
           },
           {
-            "title": "getDeviceQueryFromTheme",
+            "title": "Grid",
             "page": true,
-            "id": "/utils/code-helpers/get-device-query-from-theme"
+            "id": "/components/layout/grid"
           },
           {
-            "title": "getFontsFromTheme",
+            "title": "Scroll",
             "page": true,
-            "id": "/utils/code-helpers/get-fonts-from-theme"
+            "id": "/components/layout/scroll"
           },
           {
-            "title": "getMediaQueryFromTheme",
+            "title": "Stack",
             "page": true,
-            "id": "/utils/code-helpers/get-media-query-from-theme"
+            "id": "/components/layout/stack"
           },
           {
-            "title": "getMotionFromTheme",
+            "title": "Visibility",
             "page": true,
-            "id": "/utils/code-helpers/get-motion-from-theme"
+            "id": "/components/layout/visibility"
+          }
+        ]
+      },
+      {
+        "title": "Media",
+        "id": "/components/media",
+        "subNav": [
+          {
+            "title": "Aspect Ratio",
+            "page": true,
+            "id": "/components/media/aspect-ratio"
           },
           {
-            "title": "getShadowFromTheme",
+            "title": "Audio Player",
             "page": true,
-            "id": "/utils/code-helpers/get-shadow-from-theme"
+            "id": "/components/media/audio-player"
           },
           {
-            "title": "getSizingFromTheme",
+            "title": "Caption",
             "page": true,
-            "id": "/utils/code-helpers/get-sizing-from-theme"
+            "id": "/components/media/caption"
           },
           {
-            "title": "getStylePresetFromTheme",
+            "title": "Image",
             "page": true,
-            "id": "/utils/code-helpers/get-style-preset-from-theme"
+            "id": "/components/media/image"
           },
           {
-            "title": "getTypographyPresetFromTheme",
+            "title": "Volume Control",
             "page": true,
-            "id": "/utils/code-helpers/get-typography-preset-from-theme"
+            "id": "/components/media/volume-control"
+          }
+        ]
+      },
+      {
+        "title": "Navigation",
+        "id": "/components/navigation",
+        "subNav": [
+          {
+            "title": "Link",
+            "page": true,
+            "id": "/components/navigation/link"
+          },
+          {
+            "title": "Tag",
+            "page": true,
+            "id": "/components/navigation/tag"
+          },
+          {
+            "title": "Title Bar",
+            "page": true,
+            "id": "/components/navigation/title-bar"
+          }
+        ]
+      },
+      {
+        "title": "Selection Contols",
+        "id": "/components/selection-controls",
+        "subNav": [
+          {
+            "title": "Tab",
+            "page": true,
+            "id": "/components/selection-controls/tab"
+          },
+          {
+            "title": "Slider",
+            "page": true,
+            "id": "/components/selection-controls/slider"
+          }
+        ]
+      },
+      {
+        "title": "Text Content",
+        "id": "/components/text-content",
+        "subNav": [
+          {
+            "title": "Byline",
+            "page": true,
+            "id": "/components/text-content/byline"
+          },
+          {
+            "title": "Date Time",
+            "page": true,
+            "id": "/components/text-content/date-time"
+          },
+          {
+            "title": "Flag",
+            "page": true,
+            "id": "/components/text-content/flag"
+          },
+          {
+            "title": "Heading",
+            "page": true,
+            "id": "/components/text-content/heading"
+          },
+          {
+            "title": "Headline",
+            "page": true,
+            "id": "/components/text-content/headline"
+          },
+          {
+            "title": "Ordered List",
+            "page": true,
+            "id": "/components/text-content/ordered-list"
+          },
+          {
+            "title": "Paragraph",
+            "page": true,
+            "id": "/components/text-content/paragraph"
+          },
+          {
+            "title": "Standfirst",
+            "page": true,
+            "id": "/components/text-content/standfirst"
+          },
+          {
+            "title": "Text Block",
+            "page": true,
+            "id": "/components/text-content/text-block"
+          },
+          {
+            "title": "Unordered List",
+            "page": true,
+            "id": "/components/text-content/unordered-list"
+          }
+        ]
+      },
+      {
+        "title": "Third Party Integrations",
+        "id": "/components/third-party-integrations",
+        "subNav": [
+          {
+            "title": "Consent",
+            "page": true,
+            "id": "/components/third-party-integrations/consent"
+          },
+          {
+            "title": "Consent Settings Link",
+            "page": true,
+            "id": "/components/third-party-integrations/consent-settings-link"
+          },
+          {
+            "title": "Experimentation Web",
+            "page": true,
+            "id": "/components/third-party-integrations/experimentation-web"
+          },
+          {
+            "title": "Tealium",
+            "page": true,
+            "id": "/components/third-party-integrations/tealium"
+          }
+        ]
+      },
+      {
+        "title": "Others",
+        "id": "/components/others",
+        "subNav": [
+          {
+            "title": "Icons",
+            "page": true,
+            "id": "/components/others/icons"
           }
         ]
       }
     ]
   },
   {
-    "title": "Feedback",
-    "page": true,
-    "id": "/feedback"
-  }
+    "title": "Utilities",
+    "id": "/utils",
+      "subNav": [
+        {
+          "title": "Overview",
+          "page": true,
+          "id": "/utils/overview"
+        },
+        {
+          "title": "css",
+          "page": true,
+          "id": "/utils/css"
+        },
+        {
+          "title": "getComponentDefaults",
+          "page": true,
+          "id": "/utils/get-defaults"
+        },
+        {
+          "title": "getFromTheme",
+          "page": true,
+          "id": "/utils/get-from-theme"
+        }
+      ]
+    },
+    {
+      "title": "Help",
+      "id": "/help",
+        "subNav": [
+          {
+            "title": "Contact Us",
+            "page": true,
+            "id": "/help/contact-us"
+          },
+          {
+            "title": "FAQs",
+            "page": true,
+            "id": "/help/faqs"
+          }
+        ]
+      }
 ]

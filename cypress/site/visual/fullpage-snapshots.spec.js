@@ -2,12 +2,12 @@
 
 // Note: only a subset of pages as a base for smoke tests
 const routes = {
-  articleByline: '/components/byline',
-  audioPlayer: '/components/audio-player',
-  dateTime: '/components/date-time',
-  icons: '/components/icons',
-  spacing: '/theming/foundations/spacing',
-  typography: '/theming/typography-presets',
+  articleByline: '/components/text-content/byline',
+  audioPlayer: '/components/media/audio-player',
+  dateTime: '/components/text-content/date-time',
+  icons: '/components/others/icons',
+  spacePresets: '/theming/presets/space-presets',
+  typography: '/theming/presets/space-presets',
   welcome: '/index',
 };
 
@@ -19,7 +19,7 @@ Object.entries(routes).forEach(route => {
       cy.eyesOpen();
       cy.visit(path);
       cy.acceptCookieBanner();
-      if (!['spacing', 'welcome'].includes(pageName)) {
+      if (!['spacePresets', 'welcome'].includes(pageName)) {
         cy.get('[data-testid="sample-code"]')
           .first()
           .scrollIntoView({
