@@ -526,7 +526,7 @@ Object {
     },
     "paragraph": Object {
       "dropCap": Object {
-        "space": "space020",
+        "space": "space010",
         "stylePreset": "inkContrast",
         "typographyPreset": Object {
           "lg": "editorialDropCap030",

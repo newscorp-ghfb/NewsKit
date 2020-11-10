@@ -4,7 +4,6 @@ exports[`Paragraph renders Paragraph 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   color: #2e2e2e;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
@@ -20,22 +19,6 @@ exports[`Paragraph renders Paragraph 1`] = `
   fill: #2e2e2e;
 }
 
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
 <p
     class="emotion-0"
   >
@@ -48,7 +31,6 @@ exports[`Paragraph renders Paragraph with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   color: #0a68c1;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
@@ -88,22 +70,6 @@ exports[`Paragraph renders Paragraph with overrides 1`] = `
   fill: #7547a3;
 }
 
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
 <p
     class="emotion-0"
   >
@@ -116,7 +82,6 @@ exports[`Paragraph renders empty Paragraph with dropCap without crashing  1`] = 
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   color: #2e2e2e;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
@@ -132,22 +97,6 @@ exports[`Paragraph renders empty Paragraph with dropCap without crashing  1`] = 
   fill: #2e2e2e;
 }
 
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
 <p
     class="emotion-0"
   />
@@ -158,7 +107,6 @@ exports[`Paragraph renders with drop cap 1`] = `
 <DocumentFragment>
   .emotion-1 {
   margin: 0;
-  padding: 1px 0;
   color: #2e2e2e;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
@@ -174,22 +122,6 @@ exports[`Paragraph renders with drop cap 1`] = `
   fill: #2e2e2e;
 }
 
-.emotion-1::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
-}
-
-.emotion-1::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
-}
-
 .emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -200,10 +132,9 @@ exports[`Paragraph renders with drop cap 1`] = `
 
 .emotion-0 {
   margin: 0;
-  padding: 1px 0;
   float: left;
   margin-right: 0.15em;
-  margin-top: 8px;
+  margin-top: 4px;
   color: #0a0a0a;
 }
 
