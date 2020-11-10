@@ -43,8 +43,10 @@ const Article: React.FC = () => (
             <Image
               src="https://via.placeholder.com/736x414"
               alt="Author image"
-              height="414"
-              width="736"
+              overrides={{
+                height: '414',
+                width: '736',
+              }}
             />
             <Byline bylineData={[{author: 'Nick Dorman'}]} />
             <DateTime date="2019-10-30T13:18:17Z" dateFormat="d MMMM yyyy" />
@@ -86,8 +88,10 @@ const Article: React.FC = () => (
             <Image
               src="https://via.placeholder.com/736x414"
               alt="Placeholder image"
-              height="414"
-              width="736"
+              overrides={{
+                height: '414',
+                width: '736',
+              }}
             />
           </Cell>
 

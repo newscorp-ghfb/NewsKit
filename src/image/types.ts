@@ -9,52 +9,44 @@ import {
   PaddingTopProperty,
 } from 'csstype';
 import {MQ} from '../utils/style';
+import {CaptionOverrides} from '../caption';
 
-interface Image extends ImgHTMLAttributes<HTMLImageElement> {
-  height?: HeightProperty<string>;
-  width?: WidthProperty<string>;
-}
+interface HTMLImageElementWithNoSizes
+  extends Omit<ImgHTMLAttributes<HTMLImageElement>, 'height' | 'width'> {}
 
-interface StyledImage extends Omit<Image, 'height' | 'width'> {
-  $height?: HeightProperty<string>;
-  $width?: WidthProperty<string>;
-}
-
-interface CommonProps {
-  maxHeight?: MaxHeightProperty<string>;
-  maxWidth?: MaxWidthProperty<string>;
+interface ImageAlignmentProps {
   fit?: ObjectFitProperty;
   position?: ObjectPositionProperty<string>;
 }
-
-export interface StyledImageProps extends StyledImage, CommonProps {
+export interface StyledImageProps
+  extends HTMLImageElementWithNoSizes,
+    ImageAlignmentProps {
+  $height?: HeightProperty<string>;
+  $width?: WidthProperty<string>;
   isLoading: boolean;
+  maxHeight?: MaxHeightProperty<string>;
+  maxWidth?: MaxWidthProperty<string>;
 }
-
 export interface ImageContainerProps {
   paddingTop?: PaddingTopProperty<number>;
+  isLoading: boolean;
   overrides?: {
     stylePreset?: MQ<string>;
   };
-  isLoading: boolean;
 }
-
-export interface ImageProps extends Image, CommonProps {
+export interface ImageProps
+  extends HTMLImageElementWithNoSizes,
+    ImageAlignmentProps {
   hideLoadingIcon?: boolean;
   loadingAspectRatio?: string;
   captionText?: string;
   creditText?: string;
   overrides?: {
-    stylePreset?: MQ<StylePresetKeys>;
-    caption?: {
-      typographyPreset?: MQ<string>;
-      stylePreset?: MQ<string>;
-      spaceStack?: MQ<string>;
-      spaceInset?: MQ<string>;
-      credit?: {
-        typographyPreset?: MQ<string>;
-        stylePreset?: MQ<string>;
-      };
-    };
+    height?: HeightProperty<string>;
+    width?: WidthProperty<string>;
+    maxHeight?: MaxHeightProperty<string>;
+    maxWidth?: MaxWidthProperty<string>;
+    stylePreset?: MQ<string>;
+    caption?: CaptionOverrides;
   };
 }

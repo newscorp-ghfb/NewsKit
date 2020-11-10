@@ -26,24 +26,6 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
     Image description that is used directly in the 'alt' attribute of the
     internal 'img' element.
   </Prop>
-  <Prop name="width" type="string" default="100%">
-    Used in combination with `height` to calculate the aspect ratio for the
-    image. Generally supply the width px value if know, if not supply horizontal
-    aspect ratio. Both width and aspectRatio should be supplied in a consistent
-    manner.
-  </Prop>
-  <Prop name="maxWidth" type="string">
-    see https://developer.mozilla.org/en-US/docs/Web/CSS/max-width
-  </Prop>
-  <Prop name="height" type="string" default="auto">
-    Used in combination with `width` to calculate the aspect ratio for the
-    image. Generally supply the height px value if know, if not supply vertical
-    aspect ratio. Both width and aspectRatio should be supplied in a consistent
-    manner.
-  </Prop>
-  <Prop name="maxHeight" type="string">
-    see https://developer.mozilla.org/en-US/docs/Web/CSS/max-height
-  </Prop>
   <Prop name="loadingAspectRatio" type="string">
     This is a string interpolation of the aspect ratio of the loading container
     of the image. This is also used to determine the height or width of the
@@ -53,41 +35,42 @@ The image component provides a `<figure>` and an `<img>` element inside it to pl
     Hide the loading icon whilst the image is loading.
   </Prop>
   <Prop name="captionText" type="string">
-    If provided, supplies the caption component. captionText is the text of the caption.
+    If provided, supplies the caption component. captionText is the text of the
+    caption.
   </Prop>
   <Prop name="creditText" type="string">
     If provided, supplies the credit text of the caption component.
   </Prop>
   <Prop name="overrides" type="object">
-    If provided, overrides the respective presets for the component and provided elements.
+    If provided, overrides the respective presets for the component and provided
+    elements.
     <Prop name="stylePreset" type="MQ<string>">
       If provided, this overrides the style preset applied to the image.
     </Prop>
-    <Prop name="caption" type="object" >
+    <Prop name="width" type="string" default="100%">
+      Used in combination with `height` to calculate the aspect ratio for the
+      image. Generally supply the width px value if known, if not supply
+      horizontal aspect ratio. Both width and aspectRatio should be supplied in
+      a consistent manner.
+    </Prop>
+    <Prop name="height" type="string" default="auto">
+      Used in combination with `width` to calculate the aspect ratio for the
+      image. Generally supply the height px value if known, if not supply
+      vertical aspect ratio. Both width and aspectRatio should be supplied in a
+      consistent manner.
+    </Prop>
+    <Prop name="maxWidth" type="string">
+      This property sets the maximum width of the image. It prevents the used
+      value of the width property from becoming larger than the value specified
+      by maxWidth.
+    </Prop>
+    <Prop name="maxHeight" type="string">
+      This property sets the maximum height of the image. It prevents the used
+      value of the height property from becoming larger than the value specified
+      for maxHeight.
+    </Prop>
+    <Prop name="caption" type="CaptionOverrides">
       If provided, this overrides the styling of the caption component.
-      <Prop name="typographyPreset" type="MQ<string>">
-        If provided, this overrides the typography preset of the caption component.
-      </Prop>
-      <Prop name="stylePreset" type="MQ<string>">
-        If provided, this overrides the style preset of the caption component.
-      </Prop>
-      <Prop name="spaceStack" type="MQ<string>">
-        If provided, this overrides the spacing between the caption and the
-        credit.
-      </Prop>
-      <Prop name="spaceInset" type="MQ<string>">
-       If provided, this overrides the padding of the Caption. This override should only be used
-       with CaptionInset. Otherwise, spaceInset040 or spaceInset050  is used depending on the `size` prop.
-      </Prop>
-      <Prop name="credit" type="object" >
-        If provided, this overrides the styling of the credit portion of the caption component.
-          <Prop name="typographyPreset" type="MQ<string>">
-            If provided, this overrides the typography preset of the credit text.
-          </Prop>
-          <Prop name="stylePreset" type="MQ<string>">
-            If provided, this overrides the style preset of the credit text.
-          </Prop>
-      </Prop>
     </Prop>
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="image" />
@@ -107,8 +90,7 @@ The aspect width/height is only used on loading state.
     {
       name: 'src',
       propName: 'src',
-      value:
-        '/static/placeholder-3x2.png',
+      value: '/static/placeholder-3x2.png',
     },
     {
       name: 'alt',
@@ -143,12 +125,14 @@ The aspect width/height is only used on loading state.
     {
       name: 'Caption',
       propName: 'captionText',
-      value: 'This is the caption text within the caption of the image component',
+      value:
+        'This is the caption text within the caption of the image component',
     },
     {
       name: 'Credit',
       propName: 'creditText',
-      value: 'This is the credit text within the caption of the image component',
+      value:
+        'This is the credit text within the caption of the image component',
     },
     {
       name: 'Hide loading icon',
@@ -199,7 +183,7 @@ The aspect width/height is only used on loading state.
           value: {
             caption: {
               stylePreset: undefined,
-            }
+            },
           },
           isDefault: true,
         },
@@ -208,7 +192,7 @@ The aspect width/height is only used on loading state.
           value: {
             caption: {
               stylePreset: 'inkBrand010',
-            }
+            },
           },
         },
       ],
@@ -222,7 +206,7 @@ The aspect width/height is only used on loading state.
           value: {
             caption: {
               typographyPreset: undefined,
-            }
+            },
           },
           isDefault: true,
         },
@@ -231,7 +215,7 @@ The aspect width/height is only used on loading state.
           value: {
             caption: {
               typographyPreset: 'meta030',
-            }
+            },
           },
         },
       ],
@@ -245,7 +229,7 @@ The aspect width/height is only used on loading state.
           value: {
             caption: {
               spaceStack: undefined,
-            }
+            },
           },
           isDefault: true,
         },
@@ -254,7 +238,7 @@ The aspect width/height is only used on loading state.
           value: {
             caption: {
               spaceStack: 'space090',
-            }
+            },
           },
         },
       ],
@@ -268,7 +252,7 @@ The aspect width/height is only used on loading state.
           value: {
             caption: {
               spaceInset: undefined,
-            }
+            },
           },
           isDefault: true,
         },
@@ -277,9 +261,9 @@ The aspect width/height is only used on loading state.
           value: {
             caption: {
               spaceInset: {
-                xs: "spaceInset070",
+                xs: 'spaceInset070',
               },
-            }
+            },
           },
         },
       ],

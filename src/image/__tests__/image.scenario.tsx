@@ -19,9 +19,8 @@ export default {
           <StorybookHeading>300px by 200px</StorybookHeading>
           <Image
             src="/placeholder-3x2.png"
-            width="300px"
-            height="200px"
             alt="Example Image"
+            overrides={{width: '300px', height: '200px'}}
           />
         </Container>
       ),
@@ -34,9 +33,8 @@ export default {
           <StorybookHeading>100% by 60%</StorybookHeading>
           <Image
             src="/placeholder-3x2.png"
-            width="100%"
-            height="66%"
             alt="Example Image"
+            overrides={{width: '100%', height: '66%'}}
           />
         </Container>
       ),
@@ -137,7 +135,7 @@ export default {
             Invalid image reference hiding logo
           </StorybookHeading>
           <Image
-            src="/placeholder-3x2.png"
+            src="/placeholder-3x2.invalid"
             loadingAspectRatio="3:2"
             alt="Example Image"
             hideLoadingIcon

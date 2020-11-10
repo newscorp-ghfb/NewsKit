@@ -118,8 +118,10 @@ const Article: React.FC<{
             <AuthorContainer>
               <AuthorImageContainer>
                 <StyledImage
-                  height="414"
-                  width="736"
+                  overrides={{
+                    height: '414',
+                    width: '736',
+                  }}
                   src="https://via.placeholder.com/736x414"
                   alt="Author image"
                 />
@@ -173,8 +175,10 @@ const Article: React.FC<{
               <Image
                 src="https://via.placeholder.com/736x414"
                 alt="Placeholder image"
-                height="414"
-                width="736"
+                overrides={{
+                  height: '414',
+                  width: '736',
+                }}
               />
             </LayoutContainer>
           </Cell>

@@ -57,8 +57,6 @@ const getSpaceStackValue = (
 };
 
 const ImageComponent: React.FC<ImageProps> = ({
-  width,
-  height,
   captionText,
   creditText,
   loadingAspectRatio,
@@ -66,13 +64,22 @@ const ImageComponent: React.FC<ImageProps> = ({
   overrides = {},
   ...props
 }) => {
+  const theme = useTheme();
   const imageRef: React.RefObject<HTMLImageElement> = useRef(null);
   const [isLoading, setIsLoading] = useState(true);
   const onLoad = useCallback(() => isLoading && setIsLoading(false), [
     isLoading,
     setIsLoading,
   ]);
-  const {paddingTop, width: $width, height: $height} = getAspectRatioStyles({
+  const width = getToken({theme, overrides}, 'image', '', 'width');
+  const height = getToken({theme, overrides}, 'image', '', 'height');
+  const maxWidth = getToken({theme, overrides}, 'image', '', 'maxWidth');
+  const maxHeight = getToken({theme, overrides}, 'image', '', 'maxHeight');
+  const {
+    paddingTop,
+    width: aspectWidth,
+    height: aspectHeight,
+  } = getAspectRatioStyles({
     aspectRatio: loadingAspectRatio,
     height,
     width,
@@ -80,7 +87,6 @@ const ImageComponent: React.FC<ImageProps> = ({
 
   useClientSide(onLoad, imageRef);
 
-  const theme = useTheme();
   const captionSpaceStack =
     creditText &&
     getToken({theme, overrides}, 'image', 'caption', 'spaceStack');
@@ -121,7 +127,7 @@ const ImageComponent: React.FC<ImageProps> = ({
   );
 
   return (
-    <StyledImageAndCaptionContainer $width={$width}>
+    <StyledImageAndCaptionContainer $width={aspectWidth}>
       <ImageContainer
         isLoading={isLoading}
         paddingTop={paddingTop}
@@ -141,8 +147,10 @@ const ImageComponent: React.FC<ImageProps> = ({
         )}
         <StyledImage
           {...props}
-          $width={$width}
-          $height={$height}
+          $width={aspectWidth}
+          $height={aspectHeight}
+          maxWidth={maxWidth}
+          maxHeight={maxHeight}
           ref={imageRef}
           onLoad={onLoad}
           isLoading={isLoading}

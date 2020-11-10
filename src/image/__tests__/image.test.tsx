@@ -11,9 +11,11 @@ import {Image, useClientSide} from '..';
 describe('Image', () => {
   const defaultProps = {
     src: '/placeholder-3x2.png',
-    width: '3',
-    height: '3',
     alt: 'Example Image',
+    overrides: {
+      width: '3',
+      height: '3',
+    },
   };
 
   test('renders with defaults', () => {
@@ -43,8 +45,11 @@ describe('Image', () => {
   test('renders with max height and width', () => {
     const props = {
       ...defaultProps,
-      maxHeight: '500',
-      maxWidth: '500',
+      overrides: {
+        ...defaultProps.overrides,
+        maxHeight: '500',
+        maxWidth: '500',
+      },
     };
     const fragment = renderToFragmentWithTheme(Image, props);
     expect(fragment).toMatchSnapshot();
@@ -71,8 +76,10 @@ describe('Image', () => {
     test('renders with string dimensions or aspect ratio', () => {
       const fragment = renderToFragmentWithTheme(Image, {
         ...props,
-        height: 'auto',
-        width: 'auto',
+        overrides: {
+          height: 'auto',
+          width: 'auto',
+        },
       });
       expect(fragment).toMatchSnapshot();
     });
@@ -80,8 +87,10 @@ describe('Image', () => {
     test('renders with number dimensions or aspect ratio', () => {
       const fragment = renderToFragmentWithTheme(Image, {
         ...props,
-        height: '100',
-        width: '100',
+        overrides: {
+          height: '100',
+          width: '100',
+        },
       });
       expect(fragment).toMatchSnapshot();
     });
@@ -106,7 +115,9 @@ describe('Image', () => {
       const fragment = renderToFragmentWithTheme(Image, {
         ...props,
         loadingAspectRatio: '1:3',
-        width: '100',
+        overrides: {
+          width: '100',
+        },
       });
       expect(fragment).toMatchSnapshot();
     });
@@ -115,7 +126,9 @@ describe('Image', () => {
       const fragment = renderToFragmentWithTheme(Image, {
         ...props,
         loadingAspectRatio: '1:3',
-        width: '100px',
+        overrides: {
+          width: '100px',
+        },
       });
       expect(fragment).toMatchSnapshot();
     });
@@ -124,7 +137,9 @@ describe('Image', () => {
       const fragment = renderToFragmentWithTheme(Image, {
         ...props,
         loadingAspectRatio: '1:3',
-        height: '300',
+        overrides: {
+          height: '300',
+        },
       });
       expect(fragment).toMatchSnapshot();
     });
@@ -133,7 +148,9 @@ describe('Image', () => {
       const fragment = renderToFragmentWithTheme(Image, {
         ...props,
         loadingAspectRatio: '1:3',
-        height: '300px',
+        overrides: {
+          height: '300px',
+        },
       });
       expect(fragment).toMatchSnapshot();
     });
@@ -248,6 +265,7 @@ describe('Image', () => {
         const props = {
           ...defaultProps,
           overrides: {
+            ...defaultProps.overrides,
             stylePreset: token,
           },
         };
@@ -261,6 +279,7 @@ describe('Image', () => {
       const props = {
         ...defaultProps,
         overrides: {
+          ...defaultProps.overrides,
           stylePreset: {
             md: 'imageRoundedMedium',
             lg: 'imageRoundedLarge',
