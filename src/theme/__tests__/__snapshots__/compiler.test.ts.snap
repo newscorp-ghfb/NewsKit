@@ -512,6 +512,18 @@ Object {
       "stylePreset": "linkStandalone",
       "typographyPreset": "utilityButton020",
     },
+    "orderedList": Object {
+      "content": Object {
+        "stylePreset": "inkBase",
+        "typographyPreset": "editorialParagraph010",
+      },
+      "counter": Object {
+        "minWidth": "sizing050",
+        "stylePreset": "inkBase",
+        "typographyPreset": "editorialParagraph010",
+      },
+      "spaceInline": "space040",
+    },
     "paragraph": Object {
       "dropCap": Object {
         "space": "space020",

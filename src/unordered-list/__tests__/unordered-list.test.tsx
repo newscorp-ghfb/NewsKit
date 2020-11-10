@@ -1,9 +1,9 @@
 import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {UnorderedList, UnorderedListProps} from '..';
-import {StyledUl} from '../styled';
 import {IconFilledMood} from '../../icons';
 import {Link} from '../../link/link';
+import {StyledUl} from '../unordered-list';
 
 const renderUnorderedListWithItems = (props: UnorderedListProps) => (
   <UnorderedList {...props}>

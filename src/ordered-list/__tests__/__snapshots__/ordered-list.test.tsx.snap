@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrderedList renders with defaults 1`] = `
+<DocumentFragment>
+  .emotion-3 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: item-counter;
+}
+
+.emotion-0 {
+  margin-bottom: 16px;
+  counter-increment: item-counter;
+  color: #2e2e2e;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-0::before {
+  content: counter(item-counter) '. ';
+  color: #2e2e2e;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: inline-block;
+  min-width: 24px;
+}
+
+.emotion-0::before svg {
+  fill: #2e2e2e;
+}
+
+<ol
+    class="emotion-3"
+    role="list"
+  >
+    <li
+      class="emotion-0"
+    >
+      first node
+    </li>
+    <li
+      class="emotion-0"
+    >
+      second node
+    </li>
+    <li
+      class="emotion-0"
+    >
+      third node
+    </li>
+  </ol>
+</DocumentFragment>
+`;
+
+exports[`OrderedList renders with invalid nodes 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: item-counter;
+}
+
+.emotion-0 {
+  margin-bottom: 16px;
+  counter-increment: item-counter;
+  color: #2e2e2e;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-0::before {
+  content: counter(item-counter) '. ';
+  color: #2e2e2e;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: inline-block;
+  min-width: 24px;
+}
+
+.emotion-0::before svg {
+  fill: #2e2e2e;
+}
+
+<ol
+    class="emotion-2"
+    role="list"
+  >
+    <li
+      class="emotion-0"
+    >
+      second node
+    </li>
+    <li
+      class="emotion-0"
+    >
+      third node
+    </li>
+  </ol>
+</DocumentFragment>
+`;
+
+exports[`OrderedList renders with overrides 1`] = `
+<DocumentFragment>
+  .emotion-3 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: item-counter;
+}
+
+.emotion-0 {
+  counter-increment: item-counter;
+  color: #ef1703;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-0::before {
+  content: counter(item-counter) '. ';
+  color: #0a68c1;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: inline-block;
+  min-width: 12px;
+}
+
+<ol
+    class="emotion-3"
+    role="list"
+  >
+    <li
+      class="emotion-0"
+    >
+      first node
+    </li>
+    <li
+      class="emotion-0"
+    >
+      second node
+    </li>
+    <li
+      class="emotion-0"
+    >
+      third node
+    </li>
+  </ol>
+</DocumentFragment>
+`;

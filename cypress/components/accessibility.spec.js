@@ -2,10 +2,10 @@ const a11yComponentRules = [
   {name: 'byline'},
   {name: 'headline'},
   {name: 'audio-player'},
-  // TODO: we should revisit the below disabled rule once the color restructure work is done
-  {name: 'radio-player', disabledRules: ['color-contrast']},
-  {name: 'tracked-radio-player'},
   {name: 'block'},
+  // Color contrast rule is being disabled for button, tab and text-input as when a button component
+  // is in disabled the span contained inside the button fails the rule. This might need a fix. As it is stopping us from testing color.
+  // contrast of few components.
   {name: 'button', disabledRules: ['color-contrast']},
   {name: 'date-time'},
   {name: 'divider'},

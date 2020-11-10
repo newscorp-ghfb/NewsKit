@@ -1,32 +1,21 @@
 import React from 'react';
-import {styled, getStylePreset, MQ} from '../utils/style';
+import {styled, getStylePreset} from '../utils/style';
 import {isValidNode} from '../utils/component';
 import {getSSRId} from '../utils/get-ssr-id';
-import {StyledLi, StyledUl} from './styled';
 import {TextBlock} from '../text-block';
 import {Block} from '../block';
 
 import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
-import {SvgProps} from '../icons';
+import {UnorderedListProps} from './types';
 
-export interface UnorderedListProps {
-  listItemMarker?: React.ComponentType<SvgProps>;
-  overrides?: {
-    spaceStack?: MQ<string>;
-    content?: {
-      stylePreset?: MQ<string>;
-      typographyPreset?: MQ<string>;
-    };
-    marker?: {
-      stylePreset?: MQ<string>;
-      spaceInline?: MQ<string>;
-      size?: string;
-    };
-  };
-}
+export const StyledUl = styled.ul`
+  margin: 0;
+  padding: 0;
+  list-style: none;
+`;
 
-const ListItem = styled(StyledLi)`
+const ListItem = styled.li`
   &:last-child + div {
     margin: 0;
   }
@@ -78,7 +67,7 @@ export const UnorderedList: React.FC<UnorderedListProps> = ({
   );
 
   return (
-    <StyledUl display="block">
+    <StyledUl>
       {React.Children.map(children, node => {
         if (!isValidNode(node)) return null;
 
