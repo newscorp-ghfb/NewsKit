@@ -7,7 +7,7 @@ const routes = {
   dateTime: '/components/text-content/date-time',
   icons: '/components/others/icons',
   spacePresets: '/theming/presets/space-presets',
-  typography: '/theming/presets/space-presets',
+  typography: '/theming/presets/typography-presets',
   welcome: '/index',
 };
 
