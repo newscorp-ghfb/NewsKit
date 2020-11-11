@@ -12,7 +12,7 @@ describe('get', () => {
             marginPreset: 'spaceInline040',
           },
           items: {
-            space: 'sizing020',
+            spaceInline: 'space020',
           },
         },
       },

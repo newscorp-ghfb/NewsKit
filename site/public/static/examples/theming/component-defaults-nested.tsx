@@ -2,7 +2,7 @@
 byline: {
   stylePreset: 'inkSubtle',
   typographyPreset: 'utilityMeta020',
-  space: 'sizing020',
+  spaceStack: 'space020',
   link: {
     stylePreset: 'bylineLink',
     typographyPreset: 'utilityMeta020',
@@ -18,7 +18,7 @@ byline: {
   overrides={{
     stylePreset: 'bylineCustom',
     typographyPreset: 'bylineCustom',
-    space: 'sizing030',
+    spaceStack: 'space030',
     link: {
       stylePreset: 'bylineLinkCustom',
       typographyPreset: 'bylineLinkCustom',
