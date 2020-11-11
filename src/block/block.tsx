@@ -2,31 +2,26 @@ import React from 'react';
 import {
   styled,
   MQ,
-  getSpacingInset,
-  getSpacingInlineHorizontal,
-  getSpacingStackHorizontal,
-  getStylePreset,
+  getSpacingFromTheme,
+  getSpacingInsetFromTheme,
+  getStylePresetFromTheme,
 } from '../utils/style';
 
 export interface BlockProps {
   as?: keyof JSX.IntrinsicElements;
-  overrides?: {
-    stylePreset?: MQ<string>;
-    spaceInset?: MQ<string>;
-    spaceInline?: MQ<string>;
-    spaceStack?: MQ<string>;
-  };
+  stylePreset?: MQ<string>;
+  spaceInset?: MQ<string>;
+  spaceInline?: MQ<string>;
+  spaceStack?: MQ<string>;
 }
 
 const StyledDiv = styled.div<BlockProps>`
-  ${({overrides}) => overrides && overrides.stylePreset && getStylePreset('')}
-  ${({overrides}) => overrides && overrides.spaceInset && getSpacingInset('')}
-  ${({overrides}) =>
-    overrides && overrides.spaceInline && getSpacingInlineHorizontal('')}
-  ${({overrides}) =>
-    overrides && overrides.spaceStack && getSpacingStackHorizontal('')}
+  ${({stylePreset}) => stylePreset && getStylePresetFromTheme(stylePreset)}
+  ${({spaceInset}) => spaceInset && getSpacingInsetFromTheme(spaceInset)}
+  ${({spaceInline}) =>
+    spaceInline && getSpacingFromTheme(spaceInline, undefined, 'marginRight')}
+  ${({spaceStack}) =>
+    spaceStack && getSpacingFromTheme(spaceStack, undefined, 'marginBottom')}
 `;
 
-export const Block: React.FC<BlockProps> = ({as, overrides = {}, ...props}) => (
-  <StyledDiv overrides={overrides} {...props} as={as} />
-);
+export const Block: React.FC<BlockProps> = props => <StyledDiv {...props} />;

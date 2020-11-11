@@ -48,8 +48,8 @@ export const Caption: React.FC<CaptionProps> = ({
     'spaceInset',
   );
   return (
-    <Block overrides={{spaceInset: captionInset}}>
-      <Block overrides={{spaceStack: captionSpaceStack}}>
+    <Block spaceInset={captionInset}>
+      <Block spaceStack={captionSpaceStack}>
         <TextBlock
           overrides={{
             stylePreset: captionStylePreset,

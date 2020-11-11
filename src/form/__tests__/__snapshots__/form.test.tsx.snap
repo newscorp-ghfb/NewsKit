@@ -323,7 +323,7 @@ exports[`Form renders with error and with submit validation and revalidation mod
             name="email"
             spellcheck="false"
             type="text"
-            value="testi"
+            value="test"
           />
           <span
             class="emotion-4"
@@ -874,7 +874,7 @@ exports[`Form renders with error on blur 1`] = `
             name="email"
             spellcheck="false"
             type="text"
-            value="testi"
+            value="test"
           />
           <span
             class="emotion-4"
@@ -1299,7 +1299,7 @@ exports[`Form renders with error on submit 1`] = `
             name="email"
             spellcheck="false"
             type="text"
-            value="testi"
+            value="test"
           />
           <span
             class="emotion-4"
@@ -1850,7 +1850,7 @@ exports[`Form renders with error with 2 onBlur 1`] = `
             name="email"
             spellcheck="false"
             type="text"
-            value="testi"
+            value="test"
           />
           <span
             class="emotion-4"
@@ -2483,7 +2483,7 @@ exports[`Form renders with nested inputs 1`] = `
             name="email"
             spellcheck="false"
             type="text"
-            value="testi"
+            value="test"
           />
         </div>
         <div
@@ -2872,7 +2872,7 @@ exports[`Form renders with onBlur validation 1`] = `
             name="email"
             spellcheck="false"
             type="text"
-            value="testi"
+            value="test"
           />
         </div>
         <div
@@ -3349,7 +3349,7 @@ exports[`Form renders with valid state 1`] = `
             name="email"
             spellcheck="false"
             type="text"
-            value="testi"
+            value="test"
           />
           <span
             class="emotion-4"

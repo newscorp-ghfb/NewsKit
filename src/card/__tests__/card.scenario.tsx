@@ -208,7 +208,7 @@ const cardBodyBase = ({inset}: {inset: boolean}) => ({
   cardSize: string;
 }) => (
   <>
-    <FlexBlock overrides={{spaceStack: cardLabel}}>
+    <FlexBlock spaceStack={cardLabel}>
       <Flag
         overrides={{
           spaceInset: 'spaceInsetSquish000',
@@ -222,11 +222,7 @@ const cardBodyBase = ({inset}: {inset: boolean}) => ({
       </Flag>
     </FlexBlock>
 
-    <Block
-      overrides={{
-        spaceStack: cardTeaserHeadline,
-      }}
-    >
+    <Block spaceStack={cardTeaserHeadline}>
       <Headline
         kickerText="CROWDS HEAD"
         overrides={{
@@ -245,11 +241,7 @@ const cardBodyBase = ({inset}: {inset: boolean}) => ({
       </Headline>
     </Block>
 
-    <Block
-      overrides={{
-        spaceStack: inset ? cardTeaserLeadInsetVariant : cardTeaserLead,
-      }}
-    >
+    <Block spaceStack={inset ? cardTeaserLeadInsetVariant : cardTeaserLead}>
       <TextBlock
         overrides={{
           stylePreset: 'cardTeaserLead',

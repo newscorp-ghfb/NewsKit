@@ -26,6 +26,13 @@ const myCustomTheme = createTheme({
           borderColor: '{{colors.red060}}',
         },
       },
+      customBlock: {
+        base: {
+          backgroundColor: '{{colors.interfaceInformative010}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+      },
     },
   },
 });
@@ -45,12 +52,8 @@ export default {
           <ThemeProvider theme={myCustomTheme}>
             <StorybookHeading>Block</StorybookHeading>
             <StyledHr />
-            <Block
-              overrides={{
-                stylePreset: 'blockOuter',
-              }}
-            >
-              <Block overrides={{stylePreset: 'blockInner'}}>
+            <Block stylePreset="blockOuter">
+              <Block stylePreset="blockInner">
                 <span>Block default without padding or margin</span>
               </Block>
             </Block>
@@ -59,39 +62,27 @@ export default {
               <span> Block as span </span>
             </Block>
             <StyledHr />
-            <Block
-              overrides={{
-                stylePreset: 'blockOuter',
-              }}
-            >
+            <Block stylePreset="blockOuter">
               <Block
-                overrides={{
-                  spaceStack: 'space030',
-                  spaceInset: 'spaceInset030',
-                  stylePreset: 'flagSolid',
-                }}
+                spaceStack="space030"
+                spaceInset="spaceInset030"
+                stylePreset="customBlock"
               >
                 <span>
                   Block with margin spaceStack030, padding spaceInset030, style
-                  flagSolid, type display010
+                  customBlock
                 </span>
               </Block>
             </Block>
             <StyledHr />
-            <Block
-              overrides={{
-                stylePreset: 'blockOuter',
-              }}
-            >
+            <Block stylePreset="blockOuter">
               <Block
-                overrides={{
-                  stylePreset: 'blockInner',
-                  spaceStack: {
-                    xs: 'space010',
-                    sm: 'space020',
-                    md: 'space030',
-                    lg: 'space040',
-                  },
+                stylePreset="blockInner"
+                spaceStack={{
+                  xs: 'space010',
+                  sm: 'space020',
+                  md: 'space030',
+                  lg: 'space040',
                 }}
               >
                 <Visible xs>
@@ -109,17 +100,8 @@ export default {
               </Block>
             </Block>
             <StyledHr />
-            <Block
-              overrides={{
-                stylePreset: 'blockOuter',
-              }}
-            >
-              <Block
-                overrides={{
-                  spaceInline: 'space030',
-                  stylePreset: 'blockInner',
-                }}
-              >
+            <Block stylePreset="blockOuter">
+              <Block spaceInline="space030" stylePreset="blockInner">
                 <span>Block with margin spaceInline030</span>
               </Block>
             </Block>

@@ -73,12 +73,9 @@ export const UnorderedList: React.FC<UnorderedListProps> = ({
 
         return (
           <ListItem key={getSSRId()}>
-            <StyledBlock overrides={{spaceStack: itemSpaceToken}}>
+            <StyledBlock spaceStack={itemSpaceToken}>
               {ListItemMarker && (
-                <MarkerBlock
-                  overrides={{spaceInline: markerSpaceToken}}
-                  aria-hidden="true"
-                >
+                <MarkerBlock spaceInline={markerSpaceToken} aria-hidden="true">
                   <ListItemMarker overrides={{size: markerSizeToken}} />
                 </MarkerBlock>
               )}

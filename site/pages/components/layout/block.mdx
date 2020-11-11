@@ -22,24 +22,22 @@ For more information on the spacing preset, please refer to page [here](/theming
     to. Block defaults as a div element, but it can be converted to a `span` by
     using this prop.
   </Prop>
-  <Prop name="overrides" type="object">
-    If provided, overrides the respective presets for the component and provided elements.
-    Here are the overrides that the Block accepts:
-    <Prop name="spaceInset" type="MQ<string>">
-      If provided, applies padding on the Block.
-    </Prop>
-    <Prop name="stylePreset" type="MQ<string>">
-      If provided, applies style on the Block.
-    </Prop>
-    <Prop name="spaceInline" type="MQ<string>">
-      This is a spacing preset token which is applied as a margin on the right of
-      the Block. Use this to space inline content across the page.
-    </Prop>
-    <Prop name="spaceStack" type="MQ<string>">
-      This is a spacing preset token which is applied as a margin on the bottom of
-      the Block. Use this to space stacking content down the page.
-    </Prop>
-    This component does not have any component defaults.
+  <Prop name="stylePreset" type="MQ<string>">
+    If provided, applies style on the Block.
+  </Prop>
+  <Prop name="spaceInline" type="MQ<string>">
+    This is a spacing preset token which is applied as a margin on the right of
+    the Block. Use this to space inline content across the page.
+  </Prop>
+  <Prop name="spaceStack" type="MQ<string>">
+    This is a spacing preset token which is applied as a margin on the bottom of
+    the Block. Use this to space stacking content down the page.
+  </Prop>
+  <Prop name="spaceInset" type="MQ<string>">
+    If provided, applies padding on the Block. 
+    The padding space is evenly distributed on either side when `spaceInsetXXX` token is passed.
+    Tokens like `spaceInsetSquishXXX` and `spaceInsetStretchXXX` will also populated space values on all sides
+    but values for horizontal and vertical space will be different depending on the token type.
   </Prop>
 </LegacyBlock>
 
@@ -84,8 +82,8 @@ For more information on the spacing preset, please refer to page [here](/theming
       ],
     },
     {
-      name: 'overrides',
-      propName: 'overrides',
+      name: 'spaceInline',
+      propName: 'spaceInline',
       options: [
         {
           label: 'Default',
@@ -93,28 +91,53 @@ For more information on the spacing preset, please refer to page [here](/theming
           isDefault: true,
         },
         {
-          label: 'space020 spaceInline',
-          value: {
-            spaceInline: 'space020',
-          },
+          label: 'space020',
+          value: 'space020',
+        },
+      ],
+    },
+    {
+      name: 'spaceStack',
+      propName: 'spaceStack',
+      options: [
+        {
+          label: 'Default',
+          value: undefined,
+          isDefault: true,
         },
         {
-          label: 'space020 spaceStack',
-          value: {
-            spaceStack: 'space020',
-          },
+          label: 'space020',
+          value: 'space020',
+        },
+      ],
+    },
+    {
+      name: 'spaceInset',
+      propName: 'spaceInset',
+      options: [
+        {
+          label: 'Default',
+          value: undefined,
+          isDefault: true,
         },
         {
-          label: 'spaceInset030 spaceInset',
-          value: {
-            spaceInset: 'spaceInset030',
-          },
+          label: 'spaceInset030',
+          value: 'spaceInset030',
+        },
+      ],
+    },
+    {
+      name: 'stylePreset',
+      propName: 'stylePreset',
+      options: [
+        {
+          label: 'Default',
+          value: undefined,
+          isDefault: true,
         },
         {
-          label: 'flagSolid stylePreset',
-          value: {
-            stylePreset: 'flagSolid',
-          },
+          label: 'flagSolid',
+          value: 'flagSolid',
         },
       ],
     },

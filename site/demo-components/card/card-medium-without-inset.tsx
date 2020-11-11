@@ -67,7 +67,7 @@ export const CardMediumWithoutInset = () => (
             stylePreset: 'cardContainer',
           }}
         >
-          <Block overrides={{spaceStack: cardLabelSpaceStack}}>
+          <Block spaceStack={cardLabelSpaceStack}>
             <Flag
               overrides={{
                 spaceInset: 'spaceInsetSquish000',
@@ -80,11 +80,7 @@ export const CardMediumWithoutInset = () => (
             </Flag>
           </Block>
 
-          <Block
-            overrides={{
-              spaceStack: cardTeaserHeadlineSpaceStack,
-            }}
-          >
+          <Block spaceStack={cardTeaserHeadlineSpaceStack}>
             <Headline
               kickerText="CROWDS HEAD"
               overrides={{
@@ -102,11 +98,7 @@ export const CardMediumWithoutInset = () => (
             </Headline>
           </Block>
 
-          <Block
-            overrides={{
-              spaceStack: cardTeaserLeadSpaceStack,
-            }}
-          >
+          <Block spaceStack={cardTeaserLeadSpaceStack}>
             <TextBlock
               overrides={{
                 stylePreset: 'cardTeaserLead',

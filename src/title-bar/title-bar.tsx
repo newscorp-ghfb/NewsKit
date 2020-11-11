@@ -58,7 +58,7 @@ export const TitleBar: React.FC<TitleBarProps> = props => {
       flow="horizontal-center"
       stackDistribution="space-between"
     >
-      <Block overrides={blockOverrides}>
+      <Block {...blockOverrides}>
         <Headline headingAs={headingAs} overrides={headlineOverrides}>
           {children}
         </Headline>

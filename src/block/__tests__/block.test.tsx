@@ -1,5 +1,6 @@
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {Block, BlockProps} from '..';
+import {createTheme} from '../../theme';
 
 describe('Block', () => {
   describe('with no props', () => {
@@ -12,11 +13,7 @@ describe('Block', () => {
   describe('with props', () => {
     test('renders with spaceStack020', () => {
       const props: BlockProps = {
-        overrides: {
-          spaceStack: 'space020',
-          spaceInset: 'spaceInset020',
-          stylePreset: 'flagSolid',
-        },
+        spaceStack: 'space020',
       };
       const fragment = renderToFragmentWithTheme(Block, props);
       expect(fragment).toMatchSnapshot();
@@ -24,12 +21,10 @@ describe('Block', () => {
 
     test('renders with spaceStack010 for xs, spaceStack020 for sm, and spaceStack030 for md breakpoints', () => {
       const props: BlockProps = {
-        overrides: {
-          spaceStack: {
-            xs: 'space010',
-            sm: 'space020',
-            md: 'space030',
-          },
+        spaceStack: {
+          xs: 'space010',
+          sm: 'space020',
+          md: 'space030',
         },
       };
       const fragment = renderToFragmentWithTheme(Block, props);
@@ -38,11 +33,40 @@ describe('Block', () => {
 
     test('renders with spaceInline020', () => {
       const props: BlockProps = {
-        overrides: {
-          spaceInline: 'space020',
-        },
+        spaceInline: 'space020',
       };
       const fragment = renderToFragmentWithTheme(Block, props);
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders with spaceInset020', () => {
+      const props: BlockProps = {
+        spaceInset: 'spaceInset020',
+      };
+      const fragment = renderToFragmentWithTheme(Block, props);
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders with customBlock style preset', () => {
+      const myCustomTheme = createTheme({
+        name: 'my-custom-block-theme',
+        overrides: {
+          stylePresets: {
+            customBlock: {
+              base: {
+                backgroundColor: '{{colors.interfaceInformative010}}',
+                color: '{{colors.inkInverse}}',
+                iconColor: '{{colors.inkInverse}}',
+              },
+            },
+          },
+        },
+      });
+
+      const props: BlockProps = {
+        stylePreset: 'customBlock',
+      };
+      const fragment = renderToFragmentWithTheme(Block, props, myCustomTheme);
       expect(fragment).toMatchSnapshot();
     });
 

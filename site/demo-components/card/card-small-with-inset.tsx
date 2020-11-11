@@ -66,7 +66,7 @@ export const CardSmallWithInset = () => (
             stylePreset: 'cardContainer',
           }}
         >
-          <Block overrides={{spaceStack: cardLabelSpaceStack}}>
+          <Block spaceStack={cardLabelSpaceStack}>
             <Flag
               overrides={{
                 minHeight: '0',
@@ -80,11 +80,7 @@ export const CardSmallWithInset = () => (
             </Flag>
           </Block>
 
-          <Block
-            overrides={{
-              spaceStack: cardTeaserHeadlineSpaceStack,
-            }}
-          >
+          <Block spaceStack={cardTeaserHeadlineSpaceStack}>
             <Headline
               kickerText="CROWDS HEAD"
               overrides={{
@@ -102,11 +98,7 @@ export const CardSmallWithInset = () => (
             </Headline>
           </Block>
 
-          <Block
-            overrides={{
-              spaceStack: cardTeaserLeadInsetVariantSpaceStack,
-            }}
-          >
+          <Block spaceStack={cardTeaserLeadInsetVariantSpaceStack}>
             <TextBlock
               overrides={{
                 stylePreset: 'cardTeaserLead',

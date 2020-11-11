@@ -1,5 +1,5 @@
 import {Block} from '../block';
-import {getStylePreset, styled} from '../utils/style';
+import {getStylePresetFromTheme, styled} from '../utils/style';
 
 import {StyledImageProps, ImageContainerProps} from './types';
 
@@ -14,7 +14,8 @@ export const ImageContainer = styled(Block)<ImageContainerProps>`
   width: 100%;
   ${({isLoading, paddingTop = 0}) =>
     isLoading ? {paddingTop, height: 0} : {height: 'auto', paddingTop: 0}}
-  ${({isLoading, ...props}) => getStylePreset('image', '', {isLoading})(props)}
+  ${({isLoading, stylePreset, ...props}) =>
+    getStylePresetFromTheme(stylePreset, undefined, {isLoading})(props)}
 `;
 
 export const StyledImage = styled.img<StyledImageProps>`

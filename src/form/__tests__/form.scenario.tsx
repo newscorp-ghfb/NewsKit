@@ -37,7 +37,7 @@ export default {
               Input validation mode: onSubmit
             </StorybookSubHeading>
             <Form onSubmit={onSubmit}>
-              <Block overrides={{spaceStack: 'space050'}}>
+              <Block spaceStack="space050">
                 <TextInput
                   label="Email"
                   name="email"
@@ -51,7 +51,7 @@ export default {
                   }}
                 />
               </Block>
-              <Block overrides={{spaceStack: 'space050'}}>
+              <Block spaceStack="space050">
                 <TextInput
                   label="Username"
                   name="username"
@@ -82,7 +82,7 @@ export default {
               onSubmit validation and assistive text
             </StorybookSubHeading>
             <Form onSubmit={onSubmit}>
-              <Block overrides={{spaceStack: 'space050'}}>
+              <Block spaceStack="space050">
                 <TextInput
                   label="Email"
                   name="email"
@@ -97,7 +97,7 @@ export default {
                   }}
                 />
               </Block>
-              <Block overrides={{spaceStack: 'space050'}}>
+              <Block spaceStack="space050">
                 <TextInput
                   label="Username"
                   name="username"
@@ -132,7 +132,7 @@ export default {
             >
               <Form onSubmit={onSubmit} validationMode="onBlur">
                 <StorybookSubHeading>large text input</StorybookSubHeading>
-                <Block overrides={{spaceStack: 'space050'}}>
+                <Block spaceStack="space050">
                   <TextInput
                     size={TextInputSize.Large}
                     label="Email"
@@ -148,7 +148,7 @@ export default {
                     }}
                   />
                 </Block>
-                <Block overrides={{spaceStack: 'space050'}}>
+                <Block spaceStack="space050">
                   <TextInput
                     size={TextInputSize.Large}
                     label="Username"
@@ -168,7 +168,7 @@ export default {
               </Form>
               <Form onSubmit={onSubmit} validationMode="onBlur">
                 <StorybookSubHeading>medium text input</StorybookSubHeading>
-                <Block overrides={{spaceStack: 'space050'}}>
+                <Block spaceStack="space050">
                   <TextInput
                     size={TextInputSize.Medium}
                     label="Email"
@@ -184,7 +184,7 @@ export default {
                     }}
                   />
                 </Block>
-                <Block overrides={{spaceStack: 'space050'}}>
+                <Block spaceStack="space050">
                   <TextInput
                     size={TextInputSize.Medium}
                     label="Username"
@@ -204,7 +204,7 @@ export default {
               </Form>
               <Form onSubmit={onSubmit} validationMode="onBlur">
                 <StorybookSubHeading>small text input</StorybookSubHeading>
-                <Block overrides={{spaceStack: 'space050'}}>
+                <Block spaceStack="space050">
                   <TextInput
                     size={TextInputSize.Small}
                     label="Email"
@@ -220,7 +220,7 @@ export default {
                     }}
                   />
                 </Block>
-                <Block overrides={{spaceStack: 'space050'}}>
+                <Block spaceStack="space050">
                   <TextInput
                     size={TextInputSize.Small}
                     label="Username"

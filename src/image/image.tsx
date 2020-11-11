@@ -71,6 +71,12 @@ const ImageComponent: React.FC<ImageProps> = ({
     isLoading,
     setIsLoading,
   ]);
+  const imageContainerStylePreset = getToken(
+    {theme, overrides},
+    'image',
+    '',
+    'stylePreset',
+  );
   const width = getToken({theme, overrides}, 'image', '', 'width');
   const height = getToken({theme, overrides}, 'image', '', 'height');
   const maxWidth = getToken({theme, overrides}, 'image', '', 'maxWidth');
@@ -131,10 +137,8 @@ const ImageComponent: React.FC<ImageProps> = ({
       <ImageContainer
         isLoading={isLoading}
         paddingTop={paddingTop}
-        overrides={{
-          ...overrides,
-          ...{spaceStack: getSpaceStackValue(captionText, captionSpaceInset)},
-        }}
+        stylePreset={imageContainerStylePreset}
+        spaceStack={getSpaceStackValue(captionText, captionSpaceInset)}
       >
         {isLoading && (
           <LoadingContainer>

@@ -40,12 +40,12 @@ describe('Form', () => {
 
   const nestedFormBody = (
     <React.Fragment>
-      <Block overrides={{spaceStack: 'space050'}}>
+      <Block spaceStack="space050">
         <TextInput
           label="Email"
           name="email"
           assistiveText="Your email"
-          defaultValue="testi"
+          defaultValue="test"
           data-testid="text-input"
           rules={{
             required: 'Required field',
@@ -58,7 +58,7 @@ describe('Form', () => {
           }}
         />
       </Block>
-      <Block overrides={{spaceStack: 'space050'}}>
+      <Block spaceStack="space050">
         <TextInput
           label="Username"
           name="username"

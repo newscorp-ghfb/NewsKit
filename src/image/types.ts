@@ -30,9 +30,7 @@ export interface StyledImageProps
 export interface ImageContainerProps {
   paddingTop?: PaddingTopProperty<number>;
   isLoading: boolean;
-  overrides?: {
-    stylePreset?: MQ<string>;
-  };
+  stylePreset?: MQ<string>;
 }
 export interface ImageProps
   extends HTMLImageElementWithNoSizes,

@@ -1480,6 +1480,7 @@ exports[`Card renders media section if the media data is provided 1`] = `
 }
 
 .emotion-4 {
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 66%;
@@ -1609,6 +1610,7 @@ exports[`Card renders media section with a custom component 1`] = `
 }
 
 .emotion-4 {
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 0;
@@ -2120,6 +2122,7 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
 }
 
 .emotion-4 {
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 28%;
@@ -2463,6 +2466,7 @@ exports[`Card renders with card items 1`] = `
 }
 
 .emotion-4 {
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 0;
@@ -3096,6 +3100,7 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 .emotion-4 {
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 0;

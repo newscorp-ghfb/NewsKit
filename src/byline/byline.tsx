@@ -40,7 +40,7 @@ const getStyledTextBlock = (
 
   if (withSpace) {
     return (
-      <InlineBlock overrides={{spaceInline}}>{StyledTextBlock}</InlineBlock>
+      <InlineBlock spaceInline={spaceInline}>{StyledTextBlock}</InlineBlock>
     );
   }
 

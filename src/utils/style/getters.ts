@@ -119,6 +119,7 @@ export const getSpacingInsetFromTheme = <Props extends ThemeProp>(
   return {padding};
 };
 
+// Legacy function, clients might be using it, do not use internally
 export const getMarginPresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<string>,
   customProp?: Exclude<keyof Props, 'theme'>,

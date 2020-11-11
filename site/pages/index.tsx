@@ -12,13 +12,13 @@ const Index: React.FC<{
     <Layout toggleTheme={toggleTheme} themeMode={themeMode} path="/">
       <Grid xsRowGutter="sizing000" xsMargin="sizing000">
         <Cell xs={12}>
-          <Block overrides={{spaceStack: 'space070'}}>
-            <Block overrides={{spaceStack: 'space040'}}>
+          <Block spaceStack="space070">
+            <Block spaceStack="space040">
               <H1 overrides={{typographyPreset: 'utilityHeading050'}}>
                 NewsKit,
               </H1>
             </Block>
-            <Block overrides={{spaceStack: 'space060'}}>
+            <Block spaceStack="space060">
               <H2 overrides={{typographyPreset: 'utilitySubheading040'}}>
                 News Corp&apos;s design system
               </H2>
@@ -37,14 +37,14 @@ const Index: React.FC<{
           </Block>
         </Cell>
         <Cell xs={12} md={4}>
-          <Block overrides={{spaceStack: 'space045'}}>
+          <Block spaceStack="space045">
             <Image
               src="/static/foundations.png"
               alt="foundations image"
               loadingAspectRatio="7:4"
             />
           </Block>
-          <Block overrides={{spaceStack: 'space040'}}>
+          <Block spaceStack="space040">
             <H3
               overrides={{
                 stylePreset: 'inkBase',
@@ -66,14 +66,14 @@ const Index: React.FC<{
           </Paragraph>
         </Cell>
         <Cell xs={12} md={4}>
-          <Block overrides={{spaceStack: 'space045'}}>
+          <Block spaceStack="space045">
             <Image
               src="/static/components.png"
               alt="components image"
               loadingAspectRatio="7:4"
             />
           </Block>
-          <Block overrides={{spaceStack: 'space040'}}>
+          <Block spaceStack="space040">
             <H3
               overrides={{
                 stylePreset: 'inkBase',
@@ -95,14 +95,14 @@ const Index: React.FC<{
           </Paragraph>
         </Cell>
         <Cell xs={12} md={4}>
-          <Block overrides={{spaceStack: 'space045'}}>
+          <Block spaceStack="space045">
             <Image
               src="/static/templates.png"
               alt="templates image"
               loadingAspectRatio="7:4"
             />
           </Block>
-          <Block overrides={{spaceStack: 'space040'}}>
+          <Block spaceStack="space040">
             <H3
               overrides={{
                 stylePreset: 'inkBase',

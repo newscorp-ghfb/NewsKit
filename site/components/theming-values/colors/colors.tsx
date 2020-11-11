@@ -35,18 +35,10 @@ const ColorSet: React.FC<{
 
   return (
     <div>
-      <Block
-        overrides={{
-          spaceStack: 'space050',
-        }}
-      >
+      <Block spaceStack="space050">
         <H3>{groupTitle}</H3>
       </Block>
-      <Block
-        overrides={{
-          spaceStack: 'space050',
-        }}
-      >
+      <Block spaceStack="space050">
         <P>
           {description[groupTitle.toLowerCase() as keyof typeof description]}
         </P>

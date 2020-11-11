@@ -63,10 +63,10 @@ export default {
           <br />
           <StorybookSubHeading>in vertical block</StorybookSubHeading>
           <BlockForHorizontalDivider>
-            <IconContainer overrides={{spaceStack: 'space020'}}>
+            <IconContainer spaceStack="space020">
               <IconFilledFacebook overrides={{size: 'iconSize040'}} />
             </IconContainer>
-            <Block overrides={{spaceStack: 'space020'}}>
+            <Block spaceStack="space020">
               <Divider />
             </Block>
             <IconContainer>
@@ -120,10 +120,10 @@ export default {
           <br />
           <StorybookSubHeading>in horizontal Inline Block</StorybookSubHeading>
           <Block>
-            <IconContainerInline overrides={{spaceInline: 'space020'}}>
+            <IconContainerInline spaceInline="space020">
               <IconFilledFacebook overrides={{size: 'iconSize040'}} />
             </IconContainerInline>
-            <InlineDividerContainer overrides={{spaceInline: 'space020'}}>
+            <InlineDividerContainer spaceInline="space020">
               <Divider vertical />
             </InlineDividerContainer>
             <IconContainerInline>
