@@ -3,6 +3,14 @@ import {ThemeOverrides} from './types';
 
 const overrides: ThemeOverrides = {
   colors: {
+    socialTwitter: '#97e3ff',
+    socialFacebook: '#74abff',
+    socialInstagram: '#ff77a0',
+    socialYoutube: '#ffffff',
+    socialWhatsapp: '#dcf8c6',
+    socialReddit: '#ffffff',
+    socialGithub: '#ffffff',
+
     inkBase: '{{colors.neutral020}}',
     inkContrast: '{{colors.neutral010}}',
     inkSubtle: '{{colors.neutral040}}',
@@ -53,7 +61,7 @@ const overrides: ThemeOverrides = {
     interactive230: '{{colors.blue060}}',
     interactive240: '{{colors.blue090}}',
     interactive250: '{{colors.blue100}}',
-    interactiveDisabled010: '{{colors.interactiveDisabled010}}',
+    interactiveDisabled010: '{{colors.neutral090}}',
     disabled: '{{colors.neutral090}}',
     interfaceSkeleton010: '{{colors.neutral090}}',
     interfaceSkeleton020: '{{colors.neutral080}}',

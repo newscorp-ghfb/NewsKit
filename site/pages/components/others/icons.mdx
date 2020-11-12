@@ -4,6 +4,8 @@ import {Prop} from '../../../components/prop';
 import {PropRenderer as Icon} from '../../../components/prop-renderer';
 import {TextBoxSwatch} from '../../../components/theming-values/colors';
 import {LegacyBlock} from '../../../components/legacy-block';
+import {Code, CodeFromFile} from '../../../components/code';
+import {Link} from 'newskit';
 
 import {
   IconFilledFacebook,
@@ -96,6 +98,42 @@ Icons must have a size specified, and some also support an optional colour overr
     },
   ]}
 />
+
+## Create NewsKit icons
+With the help of the <Link href="/utils/custom-to-newskit-icon">`customToNewsKitIcon`</Link> util function, each SVG icon can be easily turned into a Newskit icon that works well
+with theme tokens and <Link href="/utils/get-from-theme">`getFromTheme`</Link> util functions. The only requirement is to wrap the SVG markup within an `Svg` component and pass props to it.
+
+The following example shows how the SVG component should be used:
+
+<Code>
+ {`
+  <Svg {...props} viewBox="0 0 429 422">
+    <g fill="none" fill-rule="evenodd" transform="translate(-77.000000, -1738.000000) translate(77.000000, 1738.500000)">
+      <circle cx="250.5" cy="242.5" r="178" style="mix-blend-mode:multiply"/>
+      <circle cx="195" cy="195" r="195" style="mix-blend-mode:multiply"/>
+    </g>
+  </Svg>
+ `}
+</Code>
+
+
+Use `customToNewsKitIcon` utility function to make the svg icon compatible with NewsKit:
+<Code>
+ {`
+export const IconFilledCircles = customToNewsKitIcon(
+  'IconFilledCircles',
+  props => (
+ <Svg {...props} viewBox="0 0 429 422">
+  <g fill="none" fill-rule="evenodd" transform="translate(-77.000000, -1738.000000) translate(77.000000, 1738.500000)">
+    <circle cx="250.5" cy="242.5" r="178" style="mix-blend-mode:multiply"/>
+    <circle cx="195" cy="195" r="195" style="mix-blend-mode:multiply"/>
+  </g>
+ </Svg>
+  ),
+);
+ `}
+</Code>
+
 
 ## Rationale
 

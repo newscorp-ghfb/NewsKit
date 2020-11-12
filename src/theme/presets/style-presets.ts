@@ -693,6 +693,11 @@ stylePresets.iconSocialTwitter = {
     iconColor: '{{colors.socialTwitter}}',
   },
 };
+stylePresets.iconSocialGitHub = {
+  base: {
+    iconColor: '{{colors.socialGithub}}',
+  },
+};
 stylePresets.iconSocialFacebook = {
   base: {
     iconColor: '{{colors.socialFacebook}}',
@@ -708,7 +713,7 @@ stylePresets.iconSocialYoutube = {
     iconColor: '{{colors.socialYoutube}}',
   },
 };
-stylePresets.iconSocialWhatsapp = {
+stylePresets.iconSocialWhatsApp = {
   base: {
     iconColor: '{{colors.socialWhatsapp}}',
   },

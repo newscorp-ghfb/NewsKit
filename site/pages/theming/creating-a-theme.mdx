@@ -2,6 +2,7 @@ import Layout from '../../components/layout';
 import {Code, CodeFromFile} from '../../components/code';
 import {LegacyBlock} from '../../components/legacy-block';
 import {Prop} from '../../components/prop';
+import {Link} from 'newskit';
 export default Layout;
 
 # Creating Themes
@@ -96,3 +97,12 @@ Changing the default border radius of NewsKit elements, such as buttons, to shar
 #### Adding a typography preset
 
 <CodeFromFile path="examples/theming/adding-typography-preset.tsx" />
+
+#### Overriding an icon
+
+NewsKit comes with [Material Design's Icon](https://material.io/resources/icons/?style=baseline) filled and outline sets included. 
+In some cases, it might be desirable to replace the default icon with a user defined one, for instance if we want to use our own close icon across the system.
+
+Check out the <Link href="/components/others/icons">Icons page</Link> for detailed explanation on how to create custom NewsKit icon.
+
+<CodeFromFile path="examples/theming/override-icons.tsx" />

@@ -83,6 +83,7 @@ export const palettes = {
   socialYoutube: '#ff0000',
   socialWhatsapp: '#25d366',
   socialReddit: '#ff4500',
+  socialGithub: '#000000',
 
   white: '#ffffff',
   black: '#000000',

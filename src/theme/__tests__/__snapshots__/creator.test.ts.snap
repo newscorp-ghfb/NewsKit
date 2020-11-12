@@ -145,6 +145,7 @@ Object {
     "red090": "#790101",
     "red100": "#4d0000",
     "socialFacebook": "#1877f2",
+    "socialGithub": "#000000",
     "socialInstagram": "#c32aa3",
     "socialReddit": "#ff4500",
     "socialTwitter": "#1da1f2",
@@ -1944,6 +1945,11 @@ Object {
         "iconColor": "{{colors.socialFacebook}}",
       },
     },
+    "iconSocialGitHub": Object {
+      "base": Object {
+        "iconColor": "{{colors.socialGithub}}",
+      },
+    },
     "iconSocialInstagram": Object {
       "base": Object {
         "iconColor": "{{colors.socialInstagram}}",
@@ -1959,7 +1965,7 @@ Object {
         "iconColor": "{{colors.socialTwitter}}",
       },
     },
-    "iconSocialWhatsapp": Object {
+    "iconSocialWhatsApp": Object {
       "base": Object {
         "iconColor": "{{colors.socialWhatsapp}}",
       },

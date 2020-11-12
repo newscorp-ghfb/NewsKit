@@ -1,0 +1,40 @@
+import {LegacyBlock} from '../../components/legacy-block';
+import Layout from '../../components/layout';
+import {Code, CodeFromFile} from '../../components/code';
+import Prop from '../../components/prop';
+import {Link} from 'newskit';
+
+export default Layout;
+
+# customToNewsKitIcon()
+
+## Syntax
+
+<Code>{'customToNewsKitIcon(displayName, CustomIcon, overrides)'}</Code>
+
+## Overview
+
+Transform SVG markup into a Newskit icon that works well with theme tokens and `getFromTheme` util functions.
+
+## Parameters
+
+<LegacyBlock marginTop='sizing040'>
+  <Prop name='displayName' type='string' required>
+    The display name of the icon. It is required an icon name to start either with <b>`IconFilled`</b> or <b>`IconOutlined`</b> prefix, depending on the imported icon type. <br/>
+    E.g: If importing an <b>MenuBook</b> icon, the final icon display name should be <b>`IconFilledMenuBook`</b> or <b>"IconOutlinedMenuBook"</b>
+  </Prop>
+  <Prop name='CustomIcon' type="React.ComponentType<SvgProps>" required>
+    NewsKit Svg component with SVG passed to it's children, props should be spread on the root Svg component, see example below. 
+  </Prop>
+  <Prop name='overrides' type='SvgProps["overrides"]'>
+    <Link href="/components/icons#props">Overriding props</Link> passed to the transformed icon
+  </Prop>
+</LegacyBlock>
+
+## Return value
+
+Returns a NewsKit icon.
+
+## Example
+
+<CodeFromFile path="examples/utils/custom-to-newskit-icon.tsx"/>

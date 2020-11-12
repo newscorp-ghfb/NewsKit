@@ -442,6 +442,11 @@
           "id": "/utils/css"
         },
         {
+          "title": "customToNewsKitIcon",
+          "page": true,
+          "id": "/utils/custom-to-newskit-icon"
+        },
+        {
           "title": "getComponentDefaults",
           "page": true,
           "id": "/utils/get-defaults"
