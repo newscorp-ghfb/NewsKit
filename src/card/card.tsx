@@ -9,25 +9,16 @@ import {
   StyledCardContainerActions,
 } from './styled';
 import {Flow, StackDistribution} from '../stack';
+import {renderComponent} from '../utils/component';
 
-const renderMedia = (
-  media: ImageProps | React.ComponentType,
-  overrides = {},
-) => {
-  if (typeof media === 'function') {
-    return React.createElement(media as React.ComponentType);
-  }
-
-  return (
+const renderMedia = (media: CardProps['media'], overrides = {}) =>
+  renderComponent(media) || (
     <Image
       loadingAspectRatio="3:2"
       {...(media as ImageProps)}
       overrides={overrides}
     />
   );
-};
-
-const renderActions = (Actions: React.ComponentType) => <Actions />;
 
 export const Card: React.FC<CardProps> = ({
   media,
@@ -54,7 +45,7 @@ export const Card: React.FC<CardProps> = ({
           wrap="nowrap"
           overrides={overrides}
         >
-          {renderActions(actions)}
+          {renderComponent(actions)}
         </StyledCardContainerActions>
       )}
     </StyledCardContainerTeaserAndActions>

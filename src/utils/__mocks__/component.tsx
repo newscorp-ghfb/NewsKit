@@ -1,4 +1,5 @@
 import React from 'react';
+import {styled} from '../style';
 
 // When the component has been rendered within a react context, displayName is attached to `type` property,
 // while in nodeJs (e.g. during testing) it's attached directly on the component. That's why we have ComponentWithDisplayName and RenderedComponentWithDisplayName
@@ -29,3 +30,10 @@ export const ComponentWithoutDisplayName: React.FC = () => <div />;
 
 export const ValidNode = <div />;
 export const InvalidNode = false;
+export const StyledComponentMock = styled.div`
+  background-color: blue;
+`;
+export const FunctionalComponentMock: React.ComponentType = () => (
+  <StyledComponentMock />
+);
+export const ReactElementMock: React.ReactElement = <StyledComponentMock />;

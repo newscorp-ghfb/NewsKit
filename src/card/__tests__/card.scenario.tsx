@@ -554,11 +554,13 @@ export default {
       ),
     },
     {
-      name: 'card-media-custom-component',
+      name: 'card-media-custom-functional-component',
       type: 'story',
       component: () => (
         <React.Fragment>
-          <StorybookHeading>Card Media - Custom Component</StorybookHeading>
+          <StorybookHeading>
+            Card Media - Custom Functional Component
+          </StorybookHeading>
           <ContainerWithBackground>
             <Grid>
               <Cell xs={6}>
@@ -572,12 +574,12 @@ export default {
       ),
     },
     {
-      name: 'card-media-custom-component-with-overrides',
+      name: 'card-media-custom-functional-component-with-overrides',
       type: 'story',
       component: () => (
         <React.Fragment>
           <StorybookHeading>
-            Card Media - Custom Component With Overridden Borders
+            Card Media - Custom Functional Component With Overridden Borders
           </StorybookHeading>
           <ContainerWithBackground>
             <Grid>
