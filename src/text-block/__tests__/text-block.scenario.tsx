@@ -70,22 +70,12 @@ export default {
             <StorybookSubHeading>
               With style-preset override
             </StorybookSubHeading>
-            <TextBlock
-              overrides={{
-                stylePreset: 'textblockCustom',
-              }}
-            >
-              {bodyString}
-            </TextBlock>
+            <TextBlock stylePreset="textblockCustom">{bodyString}</TextBlock>
 
             <StorybookSubHeading>
               With typography-preset override
             </StorybookSubHeading>
-            <TextBlock
-              overrides={{
-                typographyPreset: 'editorialParagraph010',
-              }}
-            >
+            <TextBlock typographyPreset="editorialParagraph010">
               {bodyString}
             </TextBlock>
           </ThemeProvider>

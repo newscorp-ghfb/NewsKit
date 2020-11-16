@@ -29,10 +29,8 @@ const getStyledTextBlock = (
     <TextBlock
       aria-hidden={ariaHidden}
       as="span"
-      overrides={{
-        typographyPreset,
-        stylePreset,
-      }}
+      typographyPreset={typographyPreset}
+      stylePreset={stylePreset}
     >
       {children}
     </TextBlock>

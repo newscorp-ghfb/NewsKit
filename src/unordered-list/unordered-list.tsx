@@ -79,9 +79,7 @@ export const UnorderedList: React.FC<UnorderedListProps> = ({
                   <ListItemMarker overrides={{size: markerSizeToken}} />
                 </MarkerBlock>
               )}
-              <TextBlock
-                overrides={{typographyPreset: contentTypographyPresetToken}}
-              >
+              <TextBlock typographyPreset={contentTypographyPresetToken}>
                 {node}
               </TextBlock>
             </StyledBlock>

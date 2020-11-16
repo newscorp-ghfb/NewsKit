@@ -19,18 +19,14 @@ describe('TextBlock', () => {
 
   test('renders with custom style preset', () => {
     const fragment = renderToFragmentWithTheme(TextBlock, {
-      overrides: {
-        stylePreset: 'linkInline',
-      },
+      stylePreset: 'linkInline',
     });
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders with custom typography preset', () => {
     const fragment = renderToFragmentWithTheme(TextBlock, {
-      overrides: {
-        typographyPreset: 'editorialParagraph010',
-      },
+      typographyPreset: 'editorialParagraph010',
     });
     expect(fragment).toMatchSnapshot();
   });

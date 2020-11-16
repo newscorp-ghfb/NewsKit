@@ -92,7 +92,7 @@ export const Link: React.FC<LinkProps> = props => {
       >
         {React.Children.map(children, child =>
           typeof child === 'string' ? (
-            <StyledTextBlock as="span" overrides={{typographyPreset}}>
+            <StyledTextBlock as="span" typographyPreset={typographyPreset}>
               {child}
             </StyledTextBlock>
           ) : (

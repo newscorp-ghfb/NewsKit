@@ -1,25 +1,26 @@
-import React from 'react';
-import {styled, getTypographyPreset, MQ, getStylePreset} from '../utils/style';
+import {HTMLAttributes} from 'react';
+import {
+  styled,
+  MQ,
+  getStylePresetFromTheme,
+  getTypographyPresetFromTheme,
+} from '../utils/style';
 import {isInlineElement} from '../utils/inline-tags';
 
-export interface TextBlockProps {
-  overrides?: {
-    typographyPreset?: MQ<string>;
-    stylePreset?: MQ<string>;
-  };
+export interface TextBlockProps extends HTMLAttributes<HTMLElement> {
+  typographyPreset?: MQ<string>;
+  stylePreset?: MQ<string>;
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'div' | 'span';
 }
 
-const StyledBlock = styled.p<TextBlockProps>`
+const StyledTextBlock = styled.p<TextBlockProps>`
   margin: 0;
   padding: 1px 0;
-  ${getStylePreset('textBlock')}
-  ${getTypographyPreset('textBlock', '', {withCrop: true})}
+  ${({stylePreset}) => stylePreset && getStylePresetFromTheme(stylePreset)}
+  ${({typographyPreset}) =>
+    typographyPreset &&
+    getTypographyPresetFromTheme(typographyPreset, undefined, {withCrop: true})}
   ${({as}) => as && (isInlineElement(as) ? 'display: inline-block;' : '')}
 `;
 
-export const TextBlock: React.FC<TextBlockProps> = ({
-  overrides = {},
-  as,
-  ...props
-}) => <StyledBlock as={as} overrides={overrides} {...props} />;
+export {StyledTextBlock as TextBlock};

@@ -24,7 +24,7 @@ export const DateTime: React.FC<DateTimeProps> = ({
 }) => {
   const theme = useTheme();
 
-  const getOverrides = (path: string) => ({
+  const getPresets = (path: string) => ({
     typographyPreset: getToken(
       {theme, overrides},
       `dateTime.${path}`,
@@ -38,19 +38,24 @@ export const DateTime: React.FC<DateTimeProps> = ({
       'stylePreset',
     ),
   });
+
+  const prefixPresets = getPresets('prefix');
+  const datePresets = getPresets('');
+  const suffixPresets = getPresets('suffix');
+
   return (
     <time>
       {prefix && (
-        <StyledPrefix as="span" overrides={getOverrides('prefix')}>
+        <StyledPrefix as="span" {...prefixPresets}>
           {`${prefix} `}
         </StyledPrefix>
       )}
-      <StyledDateText as="span" overrides={getOverrides('')}>
+      <StyledDateText as="span" {...datePresets}>
         {format(new Date(date), dateFormat)}
         {suffix ? `, ` : ` `}
       </StyledDateText>
       {suffix && (
-        <StyledSuffix as="span" overrides={getOverrides('suffix')}>
+        <StyledSuffix as="span" {...suffixPresets}>
           {suffix}
         </StyledSuffix>
       )}

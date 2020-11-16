@@ -100,10 +100,8 @@ export const CardSmallWithInset = () => (
 
           <Block spaceStack={cardTeaserLeadInsetVariantSpaceStack}>
             <TextBlock
-              overrides={{
-                stylePreset: 'cardTeaserLead',
-                typographyPreset: cardTeaserLeadSmallTypographyPreset,
-              }}
+              stylePreset="cardTeaserLead"
+              typographyPreset={cardTeaserLeadSmallTypographyPreset}
             >
               The bank holiday weekend has seen some mixed weather, but as the
               sun emerged, many in the UK took the opportunity to make the most

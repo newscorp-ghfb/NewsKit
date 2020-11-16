@@ -243,10 +243,8 @@ const cardBodyBase = ({inset}: {inset: boolean}) => ({
 
     <Block spaceStack={inset ? cardTeaserLeadInsetVariant : cardTeaserLead}>
       <TextBlock
-        overrides={{
-          stylePreset: 'cardTeaserLead',
-          typographyPreset: cardTypographyPresets[`cardTeaserLead${cardSize}`],
-        }}
+        stylePreset="cardTeaserLead"
+        typographyPreset={cardTypographyPresets[`cardTeaserLead${cardSize}`]}
       >
         The bank holiday weekend has seen some mixed weather, but as the sun
         emerged, many in the UK took the opportunity to make the most of the

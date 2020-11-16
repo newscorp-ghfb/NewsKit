@@ -100,10 +100,8 @@ export const CardMediumWithoutInset = () => (
 
           <Block spaceStack={cardTeaserLeadSpaceStack}>
             <TextBlock
-              overrides={{
-                stylePreset: 'cardTeaserLead',
-                typographyPreset: cardTeaserLeadMediumTypographyPreset,
-              }}
+              stylePreset="cardTeaserLead"
+              typographyPreset={cardTeaserLeadMediumTypographyPreset}
             >
               The bank holiday weekend has seen some mixed weather, but as the
               sun emerged, many in the UK took the opportunity to make the most

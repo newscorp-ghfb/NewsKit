@@ -51,20 +51,16 @@ export const Caption: React.FC<CaptionProps> = ({
     <Block spaceInset={captionInset}>
       <Block spaceStack={captionSpaceStack}>
         <TextBlock
-          overrides={{
-            stylePreset: captionStylePreset,
-            typographyPreset: captionTypographyPreset,
-          }}
+          stylePreset={captionStylePreset}
+          typographyPreset={captionTypographyPreset}
         >
           {children}
         </TextBlock>
       </Block>
       {creditText && (
         <TextBlock
-          overrides={{
-            stylePreset: creditStylePreset,
-            typographyPreset: creditTypographyPreset,
-          }}
+          stylePreset={creditStylePreset}
+          typographyPreset={creditTypographyPreset}
         >
           {creditText}
         </TextBlock>
