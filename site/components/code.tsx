@@ -44,7 +44,7 @@ export const CodeFromFile: React.FC<CodeFromFileProps> = ({language, path}) => {
 
   useEffect(() => {
     (async () => {
-      const sourcePath = `${String(process.env.STATIC_ROOT)}${path}`;
+      const sourcePath = `/static/${path}`;
       const res = await fetch(sourcePath);
       if (res.status !== 200) {
         setSource('An error occurred loading this code example. 😢');

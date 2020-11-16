@@ -1,10 +1,6 @@
 /* eslint-disable no-param-reassign */
-/* eslint-env node */
-require('dotenv').config();
-
 const path = require('path');
 const {resolve} = require('path');
-const Dotenv = require('dotenv-webpack');
 const CopyPlugin = require('copy-webpack-plugin');
 
 const withImages = require('next-images');
@@ -42,11 +38,6 @@ module.exports = withCSS(
         config.plugins = [
           ...config.plugins,
 
-          // Read the .env file
-          new Dotenv({
-            path: path.join(__dirname, '.env'),
-            systemvars: true,
-          }),
           new CopyPlugin([
             {
               from: resolve(__dirname, '../fonts'),
