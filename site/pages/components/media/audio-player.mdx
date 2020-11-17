@@ -52,15 +52,17 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
     Source for audio transcription generally provided in{' '}
     <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API">
       web vtt format
-    </a>.
+    </a>
+    .
   </Prop>
   <Prop name="onPreviousTrack" type="function">
-    This function defines the callback of the previous track button
-    for the first 5 secodns of the track.
-    If onPreviousTrack is not provided, the previous track button
-    will be disabled for the first 5 seconds of the track. <b>After
-    the first 5 seconds the button's functionality is overridden
-    to go to the start of the track.</b>
+    This function defines the callback of the previous track button for the
+    first 5 secodns of the track. If onPreviousTrack is not provided, the
+    previous track button will be disabled for the first 5 seconds of the track.{' '}
+    <b>
+      After the first 5 seconds the button's functionality is overridden to go
+      to the start of the track.
+    </b>
   </Prop>
   <Prop name="onNextTrack" type="function">
     Will display the next track button, provided function is executed on click.
@@ -72,19 +74,28 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
     Disable the previous track button.
   </Prop>
   <Prop name="popoutHref" type="string">
-    Url to player hosted by itself on page. Will open in a new window and pause current instance.
+    Url to player hosted by itself on page. Will open in a new window and pause
+    current instance.
   </Prop>
-    <Prop name="overrides" type="object">
+  <Prop name="ariaLandmark" type="string" default="audio-player">
+    The aria-label attribute for the audio player. It is recommended that you
+    set this for screen readers to be able to explain the audio player purpose.
+    If left undefined it is simply set to "audio-player". ariaLandmark should be
+    unique, so the same value should not appear on the same page more than once.
+  </Prop>
+  <Prop name="overrides" type="object">
     <Prop name="seekBar" type="object">
-        If provided overrides the seek Bar, If in live mode, the track slider is not shown and so
-        these presets are ignored.
       <Prop name="slider" type="SliderOverrideProps">
-        If provided overrides the styles of the slider that builds the VolumeControl.
-        The slider overrides structure can be found in the <a href="./slider">slider documentation page</a>.
+        If provided overrides the styles of the seek bar slider. The slider
+        overrides structure can be found in the{' '}
+        <a href="./slider">slider documentation page</a>. If player is in live
+        mode, the seek bar slider is not shown and this override is ignored.
       </Prop>
       <Prop name="buffering" type="object">
         <Prop name="stylePreset" type="MQ<string>">
-          Overrides the stylePreset of the min (mute) and max control buttons.
+          Overrides the stylePreset of the buffering section of the seek bar. If
+          player is in live mode, the seek bar slider is not shown and this
+          override is ignored.
         </Prop>
       </Prop>
     </Prop>
@@ -96,48 +107,43 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
       <Prop name="space" type="MQ<string>">
         Setting the space between the control buttons.
       </Prop>
-      <Prop name="previousButton" type="object" >
-        <Prop name="stylePreset" type="MQ<string>" >
+      <Prop name="previousButton" type="object">
+        <Prop name="stylePreset" type="MQ<string>">
           Preset for previous track button.
         </Prop>
       </Prop>
-      <Prop name="replayButton" type="object" >
+      <Prop name="replayButton" type="object">
         <Prop name="stylePreset" type="MQ<string>">
           Preset for skip replay button.
         </Prop>
       </Prop>
-      <Prop name="playPauseButton" type="object" >
-        <Prop name="stylePreset" type="MQ<string>" >
+      <Prop name="playPauseButton" type="object">
+        <Prop name="stylePreset" type="MQ<string>">
           Preset for play / pause button.
         </Prop>
       </Prop>
-      <Prop name="forwardButton" type="object" >
-        <Prop name="stylePreset" type="MQ<string>" >
+      <Prop name="forwardButton" type="object">
+        <Prop name="stylePreset" type="MQ<string>">
           Preset for skip forward button.
         </Prop>
       </Prop>
-      <Prop name="nextButton" type="object" >
-        <Prop name="stylePreset" type="MQ<string>" >
+      <Prop name="nextButton" type="object">
+        <Prop name="stylePreset" type="MQ<string>">
           Preset for next track button.
         </Prop>
       </Prop>
-      <Prop name="popoutButton" type="object" >
-        <Prop name="stylePreset" type="MQ<string>" >
+      <Prop name="popoutButton" type="object">
+        <Prop name="stylePreset" type="MQ<string>">
           Preset for popout button.
         </Prop>
       </Prop>
     </Prop>
     <Prop name="volumeControl" type="VolumeControlOverrideProps">
-      If provided overrides the styles of the slider that builds the VolumeControl.
-      The volume control overrides structure can be found in the <a href="./volume-control">volume control documentation page</a>.
-   </Prop>
-   <CodeFromDefaultPresets componentName="audioPlayer" />
-  </Prop>
-  <Prop name="ariaLandmark" type="string" default="audio-player">
-    The aria-label attribute for the audio player. It is recommended that you set this
-    for screen readers to be able to explain the audio player purpose. If left
-    undefined it is simply set to "audio-player". ariaLandmark should be unique, so
-    the same value should not appear on the same page more than once.
+      If provided overrides the styles of the slider that builds the
+      VolumeControl. The volume control overrides structure can be found in the{' '}
+      <a href="./volume-control">volume control documentation page</a>.
+    </Prop>
+    <CodeFromDefaultPresets componentName="audioPlayer" />
   </Prop>
 </Block>
 
@@ -145,9 +151,7 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
 
 <Playground
   componentName="AudioPlayer"
-  component={props => (
-      <AudioPlayer {...props} live />
-  )}
+  component={props => <AudioPlayer {...props} live />}
   knobs={[
     {
       name: 'Source',
@@ -216,18 +220,18 @@ The Audio Player requires a source stream to be passed in as a prop. This will t
     {
       name: 'Skip Next Track',
       propName: 'onNextTrack',
-      value: (() => {})
+      value: () => {},
     },
     {
       name: 'Skip Previous Track',
       propName: 'onPreviousTrack',
-      value: (() => {})
+      value: () => {},
     },
     {
       name: 'Popout',
       propName: 'popoutHref',
-      value: 'https://newskit.co.uk'
-    }
+      value: 'https://newskit.co.uk',
+    },
   ]}
 />
 

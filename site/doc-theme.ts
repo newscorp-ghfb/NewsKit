@@ -30,6 +30,27 @@ const stylePresets = {
       iconColor: '{{colors.inkBase}}',
     },
   },
+  tableHeader: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      borderStyle: 'solid',
+      borderColor: '{{colors.interface060}}',
+      borderWidth:
+        '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}',
+      color: '{{colors.inkContrast}}',
+    },
+  },
+
+  tableRow: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      borderStyle: 'solid',
+      borderColor: '{{colors.interface050}}',
+      borderWidth:
+        '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}',
+      color: '{{colors.inkBase}}',
+    },
+  },
   closeIcon: {
     base: {
       iconColor: '{{colors.interactiveSecondary040}}',
@@ -79,6 +100,7 @@ const stylePresets = {
     },
   },
 };
+
 export const newsKitLight = createTheme({
   name: 'newskit-light',
   overrides: {
