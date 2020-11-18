@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {Grid, Cell, useTheme, Theme, GridProps, P, Block} from 'newskit';
 import {palettes as newskitLightPaletteColors} from 'newskit/theme/foundations/colors';
-import {overlays} from 'newskit/theme/foundations/overlays';
 import {H3} from '../../markdown-elements';
 import {ColorPalettesWrapper} from './styled';
 import {
@@ -107,7 +106,7 @@ export const ColorFoundations = ({
     {} as Record<string, string>,
   );
 
-  const foundations = isOverlay ? overlays : colorFoundations;
+  const foundations = isOverlay ? theme.overlays : colorFoundations;
   const foundationObjects = Object.entries({...foundations})
     .map(
       mapColorObjects(

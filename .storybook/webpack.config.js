@@ -1,5 +1,5 @@
 const path = require('path');
- 
+
 module.exports = {
   optimization: {
     minimize: false,
@@ -14,7 +14,10 @@ module.exports = {
         loader: 'ts-loader',
         exclude: [
           /src\/icons\/(filled|outlined)\/material\/\.*/
-        ]
+        ],
+        options: {
+          configFile: 'tsconfig.storybook.json'
+        }
       },
       {
         test: /\.js$/,

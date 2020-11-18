@@ -854,6 +854,14 @@ only_pr: &only_pr
         - /trigger-release-.*/
         - /^release.*/
 
+only_pr_and_develop: &only_pr_and_develop
+  filters:
+    branches:
+      ignore:
+        - master
+        - /trigger-release-.*/
+        - /^release.*/
+
 only_pr_and_release: &only_pr_and_release
   filters:
     branches:
@@ -978,18 +986,13 @@ workflows:
           tf_env: false
           requires:
             - init_aws
-    # develop jobs
-      - test_visual_docs:
-          <<: *only_develop
-          context: ncu-product-platforms-context
-          requires:
-            - build_docs
-            - install_cypress
+      
+    # PR & Develop jobs
       - approve_publish_npm_dev:
           type: approval
-          <<: *only_develop
+          <<: *only_pr_and_develop
       - publish_npm:
-          <<: *only_develop
+          <<: *only_pr_and_develop
           name: publish_npm_dev
           context: ncu-product-platforms-context
           publish_dev: true
@@ -1000,6 +1003,13 @@ workflows:
             - test_e2e_comps
             - test_e2e_docs
             - approve_publish_npm_dev
+    # develop jobs
+      - test_visual_docs:
+          <<: *only_develop
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs
+            - install_cypress
       - build_push_docker_ecr:
           name: build_push_docker_ecr_dev
           context: ncu-product-platforms-context

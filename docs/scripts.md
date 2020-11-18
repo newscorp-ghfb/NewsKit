@@ -5,18 +5,7 @@ A list of project script commands included in the package.json.
 ## Naming Convention
 
 Scripts should be named using the following naming convention:
-
 [action]:[context]
-
-```sh
-
-// Good
-dev:docs
-
-// Bad
-docs:dev
-
-```
 
 ## Dev
 
@@ -70,7 +59,7 @@ docs:dev
 
 ## Build and deploy
 
-* `prebuild` -> removes any existing build.
+* `build:clean` -> removes any existing build.
 
 * `build:copy-files` -> copies over README to components dist folder.
 

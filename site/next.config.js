@@ -11,7 +11,7 @@ module.exports = withCSS(
   withMDX(
     withImages({
       webpack: config => {
-        config.resolve.alias.newskit = resolve(__dirname, '../dist');
+        config.resolve.alias.newskit = resolve(__dirname, '../dist/esm');
         config.resolve.alias.examples = resolve(__dirname, 'static/examples');
         config.resolve.alias['@components/page-title'] = path.join(
           __dirname,
