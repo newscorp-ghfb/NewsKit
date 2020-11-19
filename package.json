@@ -1,6 +1,6 @@
 {
   "name": "newskit",
-  "version": "0.19.0",
+  "version": "0.20.0",
   "description": "A React Component library implementing the News design language",
   "keywords": [
     "react",
@@ -35,7 +35,7 @@
     "build:copy-files": "cp README_COMPONENTS.md dist/README.md; cp .npmignore dist/.npmignore",
     "build:package-json": "node ./scripts/build-package-json.js",
     "build:sync-version-number": "node ./scripts/sync-version-number.js",
-    "build:comps:clean-icons" : "sh ./scripts/reduce-file-count.sh",
+    "build:comps:clean-icons": "sh ./scripts/reduce-file-count.sh",
     "build:comps": "yarn build:ts && yarn build:ts:cjs && yarn build:comps:clean-icons && yarn build:copy-files && yarn build:package-json",
     "build:storybook": "build-storybook -c .storybook -o dist-storybook -s ./fonts",
     "build:docs": "next build site && next export site -o public",
