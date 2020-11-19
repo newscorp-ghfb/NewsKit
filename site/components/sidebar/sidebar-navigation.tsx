@@ -25,7 +25,7 @@ const NavItem: React.FC<{
   const isFirstLevelHeader = checkNavItemLevel(level, !page, 0);
   const isSecondLevelHeader = checkNavItemLevel(level, !page, 1);
 
-  const firstNavItem = title === 'About';
+  const firstNavItem = title === 'Getting Started';
 
   const rootActive = !path && id === '/index';
 

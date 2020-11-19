@@ -1,31 +1,5 @@
 [
   {
-    "title": "About",
-    "id": "/about",
-    "subNav": [
-      {
-        "title": "Introduction",
-        "page": true,
-        "id": "/about/introduction"
-      },
-      {
-        "title": "Release notes",
-        "page": true,
-        "id": "/about/release-notes"
-      },
-      {
-        "title": "Roadmap",
-        "page": true,
-        "id": "/about/roadmap"
-      },
-      {
-        "title": "Contribute",
-        "page": true,
-        "id": "/about/contribute"
-      }
-    ]
-  },
-  {
     "title": "Getting Started",
     "id": "/getting-started",
     "subNav": [
@@ -33,11 +7,6 @@
         "title": "Code",
         "id": "/getting-started/code",
         "subNav": [
-            {
-              "title": "Overview",
-              "page": true,
-              "id": "/getting-started/code/overview"
-            },
             {
               "title": "Web",
               "page": true,
@@ -47,27 +16,6 @@
               "title": "Instrumentation",
               "page": true,
               "id": "/getting-started/code/instrumentation"
-            }
-        ]
-      },
-      {
-        "title": "Design",
-        "id": "/getting-started/design",
-        "subNav": [
-            {
-              "title": "Overview",
-              "page": true,
-              "id": "/getting-started/design/overview"
-            },
-            {
-              "title": "Ways of Working",
-              "page": true,
-              "id": "/getting-started/design/ways-of-working"
-            },
-            {
-              "title": "Design Values",
-              "page": true,
-              "id": "/getting-started/design/design-values"
             }
         ]
       }
@@ -97,49 +45,14 @@
         "id": "/theming/foundations",
         "subNav": [
           {
-            "title": "Overview",
-            "page": true,
-            "id": "/theming/foundations/overview"
-          },
-          {
-            "title": "Borders",
-            "page": true,
-            "id": "/theming/foundations/borders"
-          },
-          {
-            "title": "Breakpoints",
-            "page": true,
-            "id": "/theming/foundations/breakpoints"
-          },
-          {
             "title": "Colours",
             "page": true,
             "id": "/theming/foundations/colours"
           },
           {
-            "title": "Fonts",
-            "page": true,
-            "id": "/theming/foundations/fonts"
-          },
-          {
             "title": "Motions",
             "page": true,
             "id": "/theming/foundations/motions"
-          },
-          {
-            "title": "Overlays",
-            "page": true,
-            "id": "/theming/foundations/overlays"
-          },
-          {
-            "title": "Shadows",
-            "page": true,
-            "id": "/theming/foundations/shadows"
-          },
-          {
-            "title": "Sizing",
-            "page": true,
-            "id": "/theming/foundations/sizing"
           }
         ]
       },
@@ -147,11 +60,6 @@
         "title": "Presets",
         "id": "/theming/presets",
         "subNav": [
-          {
-            "title": "Overview",
-            "page": true,
-            "id": "/theming/presets/overview"
-          },
           {
             "title": "Space Presets",
             "page": true,
@@ -186,11 +94,6 @@
     "title": "Components",
     "id": "/components",
     "subNav": [
-      {
-        "title": "Overview",
-        "page": true,
-        "id": "/components/overview"
-      },
       {
         "title": "Action",
         "id": "/components/action",
@@ -352,11 +255,6 @@
             "id": "/components/text-content/flag"
           },
           {
-            "title": "Heading",
-            "page": true,
-            "id": "/components/text-content/heading"
-          },
-          {
             "title": "Headline",
             "page": true,
             "id": "/components/text-content/headline"
@@ -365,11 +263,6 @@
             "title": "Ordered List",
             "page": true,
             "id": "/components/text-content/ordered-list"
-          },
-          {
-            "title": "Paragraph",
-            "page": true,
-            "id": "/components/text-content/paragraph"
           },
           {
             "title": "Standfirst",
@@ -432,11 +325,6 @@
     "id": "/utils",
       "subNav": [
         {
-          "title": "Overview",
-          "page": true,
-          "id": "/utils/overview"
-        },
-        {
           "title": "css",
           "page": true,
           "id": "/utils/css"
@@ -450,11 +338,6 @@
           "title": "getComponentDefaults",
           "page": true,
           "id": "/utils/get-defaults"
-        },
-        {
-          "title": "getFromTheme",
-          "page": true,
-          "id": "/utils/get-from-theme"
         }
       ]
     },
@@ -466,11 +349,6 @@
             "title": "Contact Us",
             "page": true,
             "id": "/help/contact-us"
-          },
-          {
-            "title": "FAQs",
-            "page": true,
-            "id": "/help/faqs"
           }
         ]
       }

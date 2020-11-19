@@ -222,16 +222,14 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys:
-            - yarn-build-{{ checksum "yarn.lock" }}
+          key: yarn-build-v1-{{ checksum "yarn.lock" }}
       - run:
           name: Dependencies Install
           command: make install
       - save_cache:
-          key: yarn-build-{{ checksum "yarn.lock" }}
+          key: yarn-build-v1-{{ checksum "yarn.lock" }}
           paths:
-            - ~/.npm
-            - ~/.cache
+            - 'node_modules'
       - persist_to_workspace:
           root: ./
           paths:
