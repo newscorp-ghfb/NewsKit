@@ -25,24 +25,15 @@ executors:
   # A basic image with just raw Alpine on it that you can run commands on
   base:
     docker:
-      - image: $PIPELINE_REGISTRY/base:latest
-        auth:
-          username: $DOCKER_USERNAME
-          password: $DOCKER_PASSWORD
+      - image: cimg/base:latest
 
   flux-deploy:
     docker:
-      - image: $PIPELINE_REGISTRY/flux-k8s:latest
-        auth:
-          username: $DOCKER_USERNAME
-          password: $DOCKER_PASSWORD
+      - image: nukengprodservice/flux-k8s:latest
 
   kubectl-deploy:
     docker:
-      - image: $PIPELINE_REGISTRY/kubectl:0.1.51
-        auth:
-          username: $DOCKER_USERNAME
-          password: $DOCKER_PASSWORD
+      - image: nukengprodservice/kubectl:0.1.51
 
   terraform:
     docker:
