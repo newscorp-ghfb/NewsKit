@@ -7,8 +7,8 @@ SHORT_GIT_HASH := $(shell echo ${CIRCLE_SHA1} | cut -c -9)
 # CURRENT BRANCH CHECKED OUT
 CURRENT_BRANCH = $(shell git symbolic-ref --short -q HEAD)
 
-# SITE_ENV is for differentiating between newskit.co.uk and pre-prod
-SITE_ENV=$(shell [ ${CURRENT_BRANCH} = "master" ] && echo "production")
+# SITE_ENV is for differentiating between newskit.co.uk and dev
+SITE_ENV=$(shell node -p "/(^release.*)|(^master$$)/.test('${CURRENT_BRANCH}')")
 
 # patch/minor/major
 UPDATE_TYPE = ${shell echo ${CURRENT_BRANCH}| cut -d'-' -f 3}
