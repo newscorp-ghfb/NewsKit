@@ -197,6 +197,7 @@ Object {
           },
           "labels": Object {
             "stylePreset": "audioPlayerLabels",
+            "typographyPreset": "utilityLabel020",
           },
           "thumb": Object {
             "size": "sizing040",

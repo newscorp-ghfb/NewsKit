@@ -169,6 +169,7 @@ export default {
                       },
                       labels: {
                         stylePreset: 'customAudioPlayerLabels',
+                        typographyPreset: 'utilityMeta010',
                       },
                     },
                     buffering: {

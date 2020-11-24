@@ -473,6 +473,7 @@ describe('Audio Player', () => {
               },
               labels: {
                 stylePreset: 'customAudioPlayerLabels',
+                typographyPreset: 'utilityMeta010',
               },
             },
             buffering: {

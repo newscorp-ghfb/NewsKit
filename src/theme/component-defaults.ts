@@ -18,6 +18,7 @@ export const componentDefaults = {
         },
         labels: {
           stylePreset: 'audioPlayerLabels',
+          typographyPreset: 'utilityLabel020',
         },
       },
       buffering: {

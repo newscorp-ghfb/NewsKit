@@ -6635,13 +6635,13 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
 
 .emotion-59 {
   font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-size: 12px;
+  line-height: 1.6666666666666667;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   background-color: transparent;
   color: #fff;
 }
@@ -6651,7 +6651,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+  margin-bottom: calc(-0.4833333333333334em + 1px);
 }
 
 .emotion-59::after {
@@ -6659,7 +6659,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   display: block;
   height: 0;
   width: 0;
-  margin-top: -0.4267857142857143em;
+  margin-top: calc(-0.5458333333333334em + -0.5px);
 }
 
 .emotion-59 svg {
