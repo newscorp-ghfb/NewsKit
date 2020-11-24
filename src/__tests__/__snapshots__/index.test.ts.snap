@@ -116,7 +116,6 @@ Array [
   "getSpacingInsetFromTheme",
   "getMarginPresetFromTheme",
   "getBorderFromTheme",
-  "getBorderRadiusFromTheme",
   "getShadowFromTheme",
   "getFontSizingFromTheme",
   "getTypographyPreset",

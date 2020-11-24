@@ -3,7 +3,7 @@ import {
   styled,
   Flag,
   getTypographyPresetFromTheme,
-  getBorderRadiusFromTheme,
+  getBorderFromTheme,
   getColorFromTheme,
   getSizingFromTheme,
   getShadowFromTheme,
@@ -104,7 +104,7 @@ export const StyledSwatchCardDot = styled.div<{backgroundColor: string}>`
   height: ${getSizingFromTheme('sizing030')};
   background: ${({backgroundColor}) => backgroundColor};
   box-shadow: ${getShadowFromTheme('shadow030')};
-  border-radius: ${getBorderRadiusFromTheme('borderRadiusCircle')};
+  border-radius: ${getBorderFromTheme('borderRadiusCircle')};
   margin-right: ${getSizingFromTheme('sizing020')};
 `;
 

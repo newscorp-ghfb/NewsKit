@@ -143,8 +143,6 @@ export const getMarginPresetFromTheme = <Props extends ThemeProp>(
 
 export const getBorderFromTheme = getValueFromTheme<string>('borders');
 
-export const getBorderRadiusFromTheme = getValueFromTheme<string>('borders');
-
 export const getShadowFromTheme = getValueFromTheme<string>('shadows');
 
 export const getFontSizingFromTheme = (

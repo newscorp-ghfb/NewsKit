@@ -133,7 +133,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   height: 16px;
 }
 
-.emotion-261 {
+.emotion-265 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -219,7 +219,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   padding: 32px 0 8px 0;
 }
 
-.emotion-262 {
+.emotion-266 {
   width: 276px;
   padding: 0 24px;
   position: fixed;
@@ -241,7 +241,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-262 {
+  .emotion-266 {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -249,23 +249,23 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-262 {
+  .emotion-266 {
     overflow: hidden;
   }
 
-  .emotion-262:hover {
+  .emotion-266:hover {
     overflow: auto;
   }
 }
 
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-262 {
+  .emotion-266 {
     overflow: auto;
   }
 }
 
 <div
-    class="emotion-262"
+    class="emotion-266"
     data-testid="sidebar"
     role="complementary"
   >
@@ -329,7 +329,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
     </div>
     <nav
       aria-label="Sidebar"
-      class="emotion-261"
+      class="emotion-265"
       role="navigation"
     >
       <ul
@@ -1615,6 +1615,27 @@ exports[`Sidebar renders correctly when closed 1`] = `
             >
               <a
                 class="emotion-3"
+                href="/utils/get-from-theme"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-12"
+                      data-testid="/utils/get-from-theme"
+                    >
+                      getFromTheme
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-15"
+            >
+              <a
+                class="emotion-3"
                 href="/utils/get-defaults"
               >
                 <span
@@ -1704,7 +1725,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 exports[`Sidebar renders correctly when open 1`] = `
 <DocumentFragment>
-  .emotion-262 {
+  .emotion-266 {
   width: 276px;
   padding: 0 24px;
   position: fixed;
@@ -1726,7 +1747,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-262 {
+  .emotion-266 {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -1734,17 +1755,17 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-262 {
+  .emotion-266 {
     overflow: hidden;
   }
 
-  .emotion-262:hover {
+  .emotion-266:hover {
     overflow: auto;
   }
 }
 
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-262 {
+  .emotion-266 {
     overflow: auto;
   }
 }
@@ -1880,7 +1901,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   height: 16px;
 }
 
-.emotion-261 {
+.emotion-265 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -1967,7 +1988,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 <div
-    class="emotion-262"
+    class="emotion-266"
     data-testid="sidebar"
     open=""
     role="complementary"
@@ -2032,7 +2053,7 @@ exports[`Sidebar renders correctly when open 1`] = `
     </div>
     <nav
       aria-label="Sidebar"
-      class="emotion-261"
+      class="emotion-265"
       role="navigation"
     >
       <ul
@@ -3308,6 +3329,27 @@ exports[`Sidebar renders correctly when open 1`] = `
                       data-testid="/utils/custom-to-newskit-icon"
                     >
                       customToNewsKitIcon
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li
+              class="emotion-15"
+            >
+              <a
+                class="emotion-3"
+                href="/utils/get-from-theme"
+              >
+                <span
+                  class="emotion-2"
+                >
+                  <div>
+                    <div
+                      class="emotion-12"
+                      data-testid="/utils/get-from-theme"
+                    >
+                      getFromTheme
                     </div>
                   </div>
                 </span>

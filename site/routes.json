@@ -335,6 +335,11 @@
           "id": "/utils/custom-to-newskit-icon"
         },
         {
+          "title": "getFromTheme",
+          "page": true,
+          "id": "/utils/get-from-theme"
+        },
+        {
           "title": "getComponentDefaults",
           "page": true,
           "id": "/utils/get-defaults"
