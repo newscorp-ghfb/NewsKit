@@ -132,7 +132,7 @@ export default {
                   <Block data-state="Selected" role="tablist">
                     <Tab
                       ariaLabel="tab label"
-                      isSelected
+                      selected
                       overrides={{stylePreset: 'tab'}}
                     >
                       Tab Label
@@ -240,7 +240,7 @@ export default {
                 role="tablist"
               >
                 <Tab
-                  isSelected
+                  selected
                   ariaLabel="tab label"
                   overrides={{
                     stylePreset: 'tabCustom',
@@ -273,7 +273,7 @@ export default {
                 flow="horizontal-center"
                 spaceInline="space060"
               >
-                <Tab isSelected ariaLabel="tab label">
+                <Tab selected ariaLabel="tab label">
                   <IconFilledEmail />
                   Tab Label
                   <IconFilledEmail overrides={{size: 'iconSize040'}} />
@@ -292,7 +292,7 @@ export default {
                 spaceInline="space060"
               >
                 <Tab
-                  isSelected
+                  selected
                   ariaLabel="tab label"
                   overrides={{
                     iconSize: 'iconSize030',

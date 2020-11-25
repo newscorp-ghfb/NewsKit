@@ -15,6 +15,6 @@ export interface TabGroupProps {
 
 export interface TabPaneProps {
   children: React.ReactNode;
-  isSelected?: boolean;
+  selected?: boolean;
   tabKey?: number;
 }

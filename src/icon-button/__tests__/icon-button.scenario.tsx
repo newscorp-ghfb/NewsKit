@@ -158,7 +158,7 @@ export default {
                         aria-label="Loading indicator"
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
-                        isLoading
+                        loading
                       />
                     </Block>
                   </Stack>
@@ -236,7 +236,7 @@ export default {
                         aria-label="Loading indicator"
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
-                        isLoading
+                        loading
                       />
                     </Block>
                   </Stack>
@@ -312,7 +312,7 @@ export default {
                         aria-label="Loading indicator"
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
-                        isLoading
+                        loading
                       />
                     </Block>
                   </Stack>
@@ -388,7 +388,7 @@ export default {
                         aria-label="Loading indicator"
                         overrides={{stylePreset}}
                         size={ButtonSize.Medium}
-                        isLoading
+                        loading
                       >
                         <IconFilledEmail />
                       </IconButton>

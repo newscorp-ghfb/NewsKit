@@ -199,7 +199,7 @@ export default {
                       <Button
                         aria-label="Loading"
                         overrides={{stylePreset}}
-                        isLoading
+                        loading
                       >
                         Button
                       </Button>
@@ -260,7 +260,7 @@ export default {
                       <Button
                         aria-label="Loading icon"
                         overrides={{stylePreset}}
-                        isLoading
+                        loading
                       >
                         Button
                       </Button>
@@ -321,7 +321,7 @@ export default {
                       <Button
                         aria-label="Loading icon"
                         overrides={{stylePreset}}
-                        isLoading
+                        loading
                       >
                         Button
                       </Button>
@@ -381,7 +381,7 @@ export default {
                       <Button
                         aria-label="Loading icon"
                         overrides={{stylePreset}}
-                        isLoading
+                        loading
                       >
                         Button
                       </Button>

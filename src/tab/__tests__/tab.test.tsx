@@ -71,7 +71,7 @@ describe('Tab', () => {
     });
 
     const props: TabProps = {
-      isSelected: true,
+      selected: true,
       overrides: {
         stylePreset: 'tabCustom',
         typographyPreset: 'utilityLabel030',

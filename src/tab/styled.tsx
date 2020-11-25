@@ -3,7 +3,8 @@ import {TabProps} from './types';
 import {Button, ButtonProps} from '../button';
 
 export const StyledButton = styled(Button)<
-  Omit<ButtonProps, 'size' | 'isLoading'> & TabProps
+  Omit<ButtonProps, 'loading'> & TabProps
 >`
-  ${({isSelected}) => isSelected && getStylePreset('tab', '', {isSelected})}
+  ${({selected}) =>
+    selected && getStylePreset('tab', '', {isSelected: selected})}
 `;

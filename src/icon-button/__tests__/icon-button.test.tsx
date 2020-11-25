@@ -43,7 +43,7 @@ describe('IconButton', () => {
   test('renders Icon Button in loading State', () => {
     const props = {
       size: ButtonSize.Large,
-      isLoading: true,
+      loading: true,
     };
     const fragment = renderToFragmentWithTheme(renderIconButton, props);
     expect(fragment).toMatchSnapshot();

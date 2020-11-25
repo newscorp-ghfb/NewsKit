@@ -7,7 +7,7 @@ export enum FlagSize {
 
 export interface BaseFlagProps {
   disabled?: boolean;
-  isLoading?: boolean;
+  loading?: boolean;
   overrides?: {
     typographyPreset?: MQ<string>;
     stylePreset?: MQ<string>;

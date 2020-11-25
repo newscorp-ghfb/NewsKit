@@ -67,10 +67,10 @@ export const StyledBaseFlag = styled.div<BaseFlagProps>`
   overflow: hidden;
   // End of button related styles
 
-  ${({disabled, isLoading}) =>
+  ${({disabled, loading}) =>
     getStylePreset('', '', {
       isDisabled: disabled,
-      isLoading,
+      isLoading: loading,
     })}
 `;
 

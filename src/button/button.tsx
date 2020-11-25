@@ -15,7 +15,7 @@ export const Button: React.FC<ButtonProps> = ({
   const theme = useTheme();
   const {fireEvent} = useInstrumentation();
   const {size = ButtonSize.Medium} = props;
-  const {disabled, isLoading, eventContext, eventOriginator = 'button'} = props;
+  const {disabled, loading, eventContext, eventOriginator = 'button'} = props;
 
   const buttonSettings: typeof overrides = {
     ...theme.componentDefaults.button[size],
@@ -27,7 +27,7 @@ export const Button: React.FC<ButtonProps> = ({
       type="button"
       data-testid="button"
       disabled={disabled}
-      isLoading={isLoading}
+      loading={loading}
       {...emotionAs('button')}
       {...props}
       onClick={(...args) => {
@@ -44,7 +44,7 @@ export const Button: React.FC<ButtonProps> = ({
       }}
       overrides={buttonSettings}
     >
-      {isLoading ? (
+      {loading ? (
         <IndeterminateProgressIndicator
           overrides={{
             size: buttonSettings!.iconSize,

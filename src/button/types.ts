@@ -12,7 +12,7 @@ export interface ButtonProps
     React.ButtonHTMLAttributes<HTMLButtonElement>,
     EventData {
   size?: ButtonSize;
-  isLoading?: boolean;
+  loading?: boolean;
 }
 
 export interface IconButtonProps extends ButtonProps {

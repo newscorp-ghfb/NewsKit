@@ -93,7 +93,7 @@ export const TabGroup: React.FC<TabGroupProps> = ({
           onClick: () => setActiveTab(tab.props.tabKey),
           onMouseDown: (e: React.MouseEvent) => e.preventDefault(),
           onKeyDown: (e: React.KeyboardEvent<HTMLElement>) => handleKeyDown(e),
-          isSelected: activeTab === tab.props.tabKey,
+          selected: activeTab === tab.props.tabKey,
           size,
         });
 

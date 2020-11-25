@@ -6,9 +6,9 @@ export enum TabSize {
   Large = 'large',
 }
 
-export interface TabProps extends Omit<ButtonProps, 'isLoading' | 'size'> {
+export interface TabProps extends Omit<ButtonProps, 'loading' | 'size'> {
   size?: TabSize;
-  isSelected?: boolean;
+  selected?: boolean;
   ariaLabel?: string;
   tabKey?: number;
 }

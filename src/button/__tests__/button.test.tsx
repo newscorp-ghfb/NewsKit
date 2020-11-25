@@ -105,7 +105,7 @@ describe('Button', () => {
     test('renders Small Button', () => {
       const props: ButtonProps = {
         size: ButtonSize.Small,
-        isLoading: true,
+        loading: true,
       };
       const fragment = renderToFragmentWithTheme(renderButtonWithText, props);
       expect(fragment).toMatchSnapshot();
@@ -114,7 +114,7 @@ describe('Button', () => {
     test('renders Large Button', () => {
       const props: ButtonProps = {
         size: ButtonSize.Large,
-        isLoading: true,
+        loading: true,
       };
       const fragment = renderToFragmentWithTheme(renderButtonWithText, props);
       expect(fragment).toMatchSnapshot();
