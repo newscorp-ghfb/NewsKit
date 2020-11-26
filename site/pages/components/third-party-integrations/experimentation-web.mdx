@@ -23,6 +23,10 @@ and Optimizely script CDN URL.
 
 <CodeFromFile path="examples/experimentation-web.tsx" />
 
+The component should be added at the top-level of the project in the `<head>` tag. The Optimizely script should run before the other scripts to avoid flickering and unexpected DOM changes on the page. 
+
+It’s important to load the Optimizely script before the utag script, so that the GA `page-view` event can report on the running experiments. 
+
 ## Props
 
 <LegacyBlock marginTop="sizing040">
