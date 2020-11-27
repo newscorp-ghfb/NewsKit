@@ -12,14 +12,16 @@ export const StyledImageAndCaptionContainer = styled.div<
 export const ImageContainer = styled(Block)<ImageContainerProps>`
   position: relative;
   width: 100%;
-  ${({isLoading, paddingTop = 0}) =>
-    isLoading ? {paddingTop, height: 0} : {height: 'auto', paddingTop: 0}}
-  ${({isLoading, stylePreset, ...props}) =>
-    getStylePresetFromTheme(stylePreset, undefined, {isLoading})(props)}
+  ${({loading, paddingTop = 0}) =>
+    loading ? {paddingTop, height: 0} : {height: 'auto', paddingTop: 0}}
+  ${({loading, stylePreset, ...props}) =>
+    getStylePresetFromTheme(stylePreset, undefined, {isLoading: loading})(
+      props,
+    )}
 `;
 
 export const StyledImage = styled.img<StyledImageProps>`
-  display: ${({isLoading}) => (isLoading ? 'none' : 'block')};
+  display: ${({loading}) => (loading ? 'none' : 'block')};
   ${({
     $height: height = 'auto',
     $width: width = '100%',

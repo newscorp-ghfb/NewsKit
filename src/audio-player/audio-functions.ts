@@ -16,15 +16,15 @@ export interface AudioFunctionDependencies {
   src: AudioPlayerProps['src'];
   live: NonNullable<AudioPlayerProps['live']>;
 
-  isLoading: boolean;
+  loading: boolean;
   duration: number;
-  isPlaying: boolean;
+  playing: boolean;
 
   showLoaderTimeoutRef: React.MutableRefObject<number>;
   trackPositionRef: React.MutableRefObject<number>;
   audioRef: React.RefObject<HTMLAudioElement>;
 
-  setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
   setTrackPosition: React.Dispatch<React.SetStateAction<number[]>>;
   setPlayState: React.Dispatch<React.SetStateAction<boolean>>;
   setVolume: React.Dispatch<React.SetStateAction<number>>;
@@ -42,12 +42,12 @@ export const useAudioFunctions = ({
   src,
   live,
   duration,
-  isLoading,
-  isPlaying,
+  loading,
+  playing,
   showLoaderTimeoutRef,
   trackPositionRef,
   audioRef,
-  setIsLoading,
+  setLoading,
   setTrackPosition,
   setPlayState,
   setVolume,
@@ -112,19 +112,19 @@ export const useAudioFunctions = ({
 
   const onWaiting = useCallback(() => {
     clearTimeout(showLoaderTimeoutRef.current);
-    // We are giving some extra time before setting isLoading state
+    // We are giving some extra time before setting loading state
     // to avoid flickering of the play/loading button when
     // skipping back to already buffered time.
     showLoaderTimeoutRef.current = window.setTimeout(
-      () => setIsLoading(true),
+      () => setLoading(true),
       700,
     );
-  }, [setIsLoading, showLoaderTimeoutRef]);
+  }, [setLoading, showLoaderTimeoutRef]);
 
   const onCanPlay = useCallback(() => {
     clearTimeout(showLoaderTimeoutRef.current);
-    setIsLoading(false);
-  }, [setIsLoading, showLoaderTimeoutRef]);
+    setLoading(false);
+  }, [setLoading, showLoaderTimeoutRef]);
 
   const updateAudioTime = useCallback(
     (playerTime: number) => {
@@ -215,7 +215,7 @@ export const useAudioFunctions = ({
       );
     }
 
-    if (!isPlaying) {
+    if (!playing) {
       play();
 
       fireEvent(
@@ -231,7 +231,7 @@ export const useAudioFunctions = ({
     });
   };
   const onPause = () => {
-    if (isPlaying) {
+    if (playing) {
       pause();
 
       fireEvent(
@@ -252,11 +252,11 @@ export const useAudioFunctions = ({
   };
 
   const togglePlay = () => {
-    if (isLoading) {
+    if (loading) {
       return;
     }
 
-    if (isPlaying) {
+    if (playing) {
       onPause();
     } else {
       onPlay();
@@ -321,7 +321,7 @@ export const useAudioFunctions = ({
       player.load();
       onWaiting();
       if (!autoPlay) {
-        if (isPlaying) {
+        if (playing) {
           player.play();
         } else {
           player.pause();

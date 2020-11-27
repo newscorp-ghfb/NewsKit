@@ -115,7 +115,7 @@ const Sidebar: React.FC<SidebarProps> = ({
     </SidebarWrapper>
 
     <Overlay
-      isOpen={sidebarOpen}
+      open={sidebarOpen}
       handleSidebarClick={handleSidebarClick}
       zIndex={2}
       lockScroll={sidebarOpen}

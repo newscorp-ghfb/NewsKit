@@ -66,10 +66,10 @@ const ImageComponent: React.FC<ImageProps> = ({
 }) => {
   const theme = useTheme();
   const imageRef: React.RefObject<HTMLImageElement> = useRef(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const onLoad = useCallback(() => isLoading && setIsLoading(false), [
-    isLoading,
-    setIsLoading,
+  const [loading, setLoading] = useState(true);
+  const onLoad = useCallback(() => loading && setLoading(false), [
+    loading,
+    setLoading,
   ]);
   const imageContainerStylePreset = getToken(
     {theme, overrides},
@@ -135,12 +135,12 @@ const ImageComponent: React.FC<ImageProps> = ({
   return (
     <StyledImageAndCaptionContainer $width={aspectWidth}>
       <ImageContainer
-        isLoading={isLoading}
+        loading={loading}
         paddingTop={paddingTop}
         stylePreset={imageContainerStylePreset}
         spaceStack={getSpaceStackValue(captionText, captionSpaceInset)}
       >
-        {isLoading && (
+        {loading && (
           <LoadingContainer>
             {!hideLoadingIcon && (
               <IconContainer>
@@ -157,7 +157,7 @@ const ImageComponent: React.FC<ImageProps> = ({
           maxHeight={maxHeight}
           ref={imageRef}
           onLoad={onLoad}
-          isLoading={isLoading}
+          loading={loading}
         />
       </ImageContainer>
       {captionText &&

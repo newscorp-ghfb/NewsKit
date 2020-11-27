@@ -86,7 +86,7 @@ export const TextInput: React.FC<TextInputProps> = ({
   );
 
   // eslint-disable-next-line no-undef, prettier/prettier
-  const isValid = formContext?.formState?.isSubmitSuccessful || (hadError && !errorText);
+  const valid = formContext?.formState?.isSubmitSuccessful || (hadError && !errorText);
 
   return (
     <StyledTextInputContainer label={label} overrides={overrides}>
@@ -107,31 +107,31 @@ export const TextInput: React.FC<TextInputProps> = ({
           $size={size}
           {...props}
           overrides={overrides}
-          isInvalid={!!errorText}
-          isValid={isValid}
+          invalid={!!errorText}
+          valid={valid}
           aria-invalid={!!errorText}
           onBlur={handleOnBlur}
           spaceInsetRight={spaceInsetRight}
           spellCheck={spellCheck}
         />
-        {(!!errorText || isValid) && (
+        {(!!errorText || valid) && (
         <IconContainer iconSpace={iconSpace}>
           {
               !!errorText && <IconFilledError overrides={{ size: iconSize, stylePreset: 'iconNegative' }}  /> ||
-              isValid && <IconFilledCheckCircle data-testid='tick-icon' overrides={{ size: iconSize, stylePreset: 'iconPositive'}} />
+              valid && <IconFilledCheckCircle data-testid='tick-icon' overrides={{ size: iconSize, stylePreset: 'iconPositive'}} />
             }
         </IconContainer>
 )}
       </InputIconContainer>
       <StyledAssistiveTextContainer $size={size}>
-        {((assistiveText || errorText) && !isValid) && (
+        {((assistiveText || errorText) && !valid) && (
           <StyledAssistiveText
             $size={size}
             id={assistiveTextId}
             disabled={disabled}
             overrides={overrides}
-            isInvalid={!!errorText}
-            isValid={isValid}
+            invalid={!!errorText}
+            valid={valid}
             role={errorText && 'alert'}
             aria-live={errorText && 'polite'}
           >

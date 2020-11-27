@@ -32,9 +32,7 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-  cursor: grabbing;
+  cursor: pointer;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -68,9 +66,7 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-  cursor: grabbing;
+  cursor: pointer;
 }
 
 .emotion-0 svg {

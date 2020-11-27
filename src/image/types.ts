@@ -23,13 +23,13 @@ export interface StyledImageProps
     ImageAlignmentProps {
   $height?: HeightProperty<string>;
   $width?: WidthProperty<string>;
-  isLoading: boolean;
+  loading: boolean;
   maxHeight?: MaxHeightProperty<string>;
   maxWidth?: MaxWidthProperty<string>;
 }
 export interface ImageContainerProps {
   paddingTop?: PaddingTopProperty<number>;
-  isLoading: boolean;
+  loading: boolean;
   stylePreset?: MQ<string>;
 }
 export interface ImageProps

@@ -35,8 +35,8 @@ interface StyledTextInputProps
   $size: TextInputSize;
   stylePreset?: MQ<string>;
   id?: string;
-  isInvalid?: boolean;
-  isValid?: boolean;
+  invalid?: boolean;
+  valid?: boolean;
   role?: string;
   dataTestId?: string;
   spaceInsetRight?: string;
@@ -56,14 +56,17 @@ export const IconContainer = styled.span<{iconSpace: string}>`
 
 export const StyledInput = styled.input<StyledTextInputProps>`
   &{
-    padding-right: ${({spaceInsetRight, isValid, isInvalid}) =>
-      (isValid || isInvalid) && getSpacingFromTheme(spaceInsetRight)};
+    padding-right: ${({spaceInsetRight, valid, invalid}) =>
+      (valid || invalid) && getSpacingFromTheme(spaceInsetRight)};
   }
   box-sizing: border-box;
   width: 100%;
   cursor: ${({disabled}) => (disabled ? 'not-allowed' : 'default')};
-  ${({$size, isInvalid, isValid}) =>
-    getStylePreset(`textInput.${$size}.input`, 'input', {isInvalid, isValid})}
+  ${({$size, invalid, valid}) =>
+    getStylePreset(`textInput.${$size}.input`, 'input', {
+      isInvalid: invalid,
+      isValid: valid,
+    })}
   ${({$size}) =>
     getTypographyPreset(`textInput.${$size}.input`, 'input', {
       withCrop: true,
@@ -91,10 +94,10 @@ export const StyledLabel = styled.label<StyledTextInputProps>`
 export const StyledAssistiveText = styled(TextBlock)<
   Omit<TextBlockProps, 'overrides'> & StyledTextInputProps
 >`
-  ${({$size, isInvalid, isValid, disabled}) =>
+  ${({$size, invalid, valid, disabled}) =>
     getStylePreset(`textInput.${$size}.assistiveText`, 'assistiveText', {
-      isInvalid,
-      isValid,
+      isInvalid: invalid,
+      isValid: valid,
       isDisabled: disabled,
     })}
 

@@ -10,13 +10,13 @@ describe('Overlay', () => {
   });
 
   test('when open', () => {
-    const fragment = renderToFragmentWithTheme(Overlay, {isOpen: true});
+    const fragment = renderToFragmentWithTheme(Overlay, {open: true});
     expect(fragment).toMatchSnapshot();
   });
 
   test('when hidden at breakpoint', () => {
     const fragment = renderToFragmentWithTheme(Overlay, {
-      isOpen: true,
+      open: true,
       hideAtBreakpoint: 'md',
     });
     expect(fragment).toMatchSnapshot();
@@ -24,7 +24,7 @@ describe('Overlay', () => {
 
   test('with z-index', () => {
     const fragment = renderToFragmentWithTheme(Overlay, {
-      isOpen: true,
+      open: true,
       zIndex: 1,
     });
     expect(fragment).toMatchSnapshot();
@@ -32,12 +32,12 @@ describe('Overlay', () => {
 
   it('disables scroll when lockScroll updates to true', () => {
     const initialProps = {
-      isOpen: true,
+      open: true,
       lockScroll: false,
     };
 
     const nextProps = {
-      isOpen: true,
+      open: true,
       lockScroll: true,
     };
 
@@ -50,17 +50,17 @@ describe('Overlay', () => {
 
   it('enables scroll when lockScroll updates to false', () => {
     const initialProps = {
-      isOpen: true,
+      open: true,
       lockScroll: false,
     };
 
     const propsFirstUpdate = {
-      isOpen: true,
+      open: true,
       lockScroll: true,
     };
 
     const propsSecondUpdate = {
-      isOpen: true,
+      open: true,
       lockScroll: false,
     };
 
@@ -76,12 +76,12 @@ describe('Overlay', () => {
 
   it('keeps body overflow styles when no chnages in lockScroll', () => {
     const initialProps = {
-      isOpen: true,
+      open: true,
       lockScroll: false,
     };
 
     const nextProps = {
-      isOpen: true,
+      open: true,
       lockScroll: false,
     };
 

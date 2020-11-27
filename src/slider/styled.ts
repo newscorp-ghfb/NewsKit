@@ -29,16 +29,16 @@ const ifVertical = (value?: string, elseValue?: string) => ({
   return theme.sizing[maybeToken as string] || maybeToken;
 };
 
-type CursorProps = Pick<StyledTrackProps, 'disabled' | 'isDragged' | 'values'>;
+type CursorProps = Pick<StyledTrackProps, 'disabled' | 'dragged' | 'values'>;
 const getCursor = ({
   disabled,
-  isDragged,
+  dragged,
   values,
 }: CursorProps): CursorProperty => {
   switch (true) {
     case disabled:
       return 'not-allowed';
-    case isDragged:
+    case dragged:
       return 'grabbing';
     case values && values.length < 2:
       return 'pointer';
@@ -179,7 +179,7 @@ interface StyledSliderLabelProps
   extends Pick<SliderProps, 'vertical' | 'disabled' | 'labelPosition'>,
     Pick<ThumbLabelProps, 'overrides'> {
   labelType: 'min' | 'max';
-  isText: boolean;
+  text: boolean;
 }
 
 const getLabelMargin = ({
@@ -215,8 +215,8 @@ export const StyledSliderLabel = styled.div<StyledSliderLabelProps>`
     withCrop: true,
   })}
 
-  ${({isText, disabled}) =>
-    isText &&
+  ${({text, disabled}) =>
+    text &&
     getStylePreset('slider.labels', 'labels', {
       isDisabled: disabled,
       filterStates: ['base', 'disabled'],

@@ -8,20 +8,20 @@ import {
 } from '../../icons';
 
 export interface PlayerButtonProps {
-  isPlaying: boolean;
+  playing: boolean;
   canPause: boolean;
   onClick: () => void;
-  isLoading: boolean;
+  loading: boolean;
   overrides?: ButtonProps['overrides'];
 }
 
 export const PlayerButton: React.FC<PlayerButtonProps> = React.memo(
-  ({isPlaying, canPause, ...props}) => {
+  ({playing, canPause, ...props}) => {
     let playStateIcon = <IconFilledPlayArrow />;
     let ariaLabel = 'Play';
     let ariaPressed = false;
 
-    if (isPlaying) {
+    if (playing) {
       ariaPressed = true;
       if (canPause) {
         playStateIcon = <IconFilledPause />;

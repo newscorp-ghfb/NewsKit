@@ -39,9 +39,9 @@ export interface ControlsOverrideProps {
 
 export interface ControlPanelProps extends TrackControlProps {
   showControls: boolean;
-  isPlaying: boolean;
+  playing: boolean;
   live: boolean;
-  isLoading: boolean;
+  loading: boolean;
   togglePlay: () => void;
   onClickBackward?: () => void;
   onClickForward?: () => void;
@@ -59,8 +59,8 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
     onPreviousTrack,
     disablePreviousTrack,
     showControls,
-    isPlaying,
-    isLoading,
+    playing,
+    loading,
     live,
     onClickBackward,
     onClickForward,
@@ -87,10 +87,10 @@ export const ControlPanel: React.FC<ControlPanelProps> = React.memo(
         <StackChild order={3}>
           <PlayerButton
             canPause={showControls}
-            isPlaying={isPlaying}
+            playing={playing}
             onClick={togglePlay}
             overrides={overrides && overrides.playPauseButton}
-            isLoading={isLoading}
+            loading={loading}
           />
         </StackChild>
         <StackChild order={2}>

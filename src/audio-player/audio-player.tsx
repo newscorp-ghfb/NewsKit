@@ -69,9 +69,9 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   const [duration, setDuration] = useState(0);
   const [displayDuration, setDisplayDuration] = useState(0);
   const [trackPositionArr, setTrackPosition] = useState([0]);
-  const [isPlaying, setPlayState] = useState(false);
+  const [playing, setPlayState] = useState(false);
   const [buffered, setBuffered] = useState<TimeRanges>();
-  const [isLoading, setIsLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   const [isPrevTrackBtnDisabled, setIsPrevTrackBtnDisabled] = useState(
     Boolean(disablePreviousTrack),
@@ -118,12 +118,12 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     src,
     live,
     duration,
-    isLoading,
-    isPlaying,
+    loading,
+    playing,
     trackPositionRef,
     audioRef,
     showLoaderTimeoutRef,
-    setIsLoading,
+    setLoading,
     setTrackPosition,
     setPlayState,
     setVolume,
@@ -141,7 +141,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   };
 
   const renderTrack: SliderProps['renderTrack'] = useCallback(
-    ({props: trackProps, children: trackChildren, isDragged}) => {
+    ({props: trackProps, children: trackChildren, dragged}) => {
       const sliderTrackStylePreset = getToken(
         {theme, overrides},
         'audioPlayer.seekBar.slider.track',
@@ -188,7 +188,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
         <StyledTrack
           {...trackProps}
           values={trackPositionArr}
-          isDragged={isDragged}
+          dragged={dragged}
           onKeyDown={e => {
             const spaceKeyCode = 32;
             /* istanbul ignore next */
@@ -272,8 +272,8 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
                 disablePreviousTrack={isPrevTrackBtnDisabled}
                 live={live}
                 showControls={showControls}
-                isLoading={isLoading}
-                isPlaying={isPlaying}
+                loading={loading}
+                playing={playing}
                 onClickBackward={onClickBackward}
                 onClickForward={onClickForward}
                 togglePlay={togglePlay}

@@ -68,11 +68,11 @@ export const Slider: React.FC<SliderProps> = ({
 
   const renderTrackFn =
     renderTrack ||
-    (({props: p, children, isDragged}) => (
+    (({props: p, children, dragged}) => (
       <StyledTrack
         {...p}
         values={values}
-        isDragged={isDragged}
+        dragged={dragged}
         disabled={disabled}
         vertical={vertical}
         aria-valuemin={min}
@@ -103,7 +103,7 @@ export const Slider: React.FC<SliderProps> = ({
 
   const renderThumbFn =
     renderThumb ||
-    (({props: p, index, isDragged}) => (
+    (({props: p, index, dragged}) => (
       <StyledThumb
         {...p}
         disabled={disabled}
@@ -111,7 +111,7 @@ export const Slider: React.FC<SliderProps> = ({
         aria-valuetext={ariaValueText}
         aria-describedby={ariaDescribedBy}
         values={values}
-        isDragged={isDragged}
+        dragged={dragged}
         data-testid={`${dataTestId}-thumb`}
         overrides={overrides}
       >
@@ -119,7 +119,7 @@ export const Slider: React.FC<SliderProps> = ({
         <ThumbLabelWrapper
           values={values}
           index={index}
-          isDragged={isDragged}
+          dragged={dragged}
           thumbLabel={thumbLabel}
           vertical={vertical}
           overrides={overrides}
@@ -134,7 +134,7 @@ export const Slider: React.FC<SliderProps> = ({
       vertical={vertical}
       labelType="min"
       data-testid="min-label"
-      isText={typeof minLabel === 'string'}
+      text={typeof minLabel === 'string'}
       overrides={overrides}
     >
       {renderLabel(minLabel)}
@@ -148,7 +148,7 @@ export const Slider: React.FC<SliderProps> = ({
       vertical={vertical}
       labelType="max"
       data-testid="max-label"
-      isText={typeof maxLabel === 'string'}
+      text={typeof maxLabel === 'string'}
       overrides={overrides}
     >
       {renderLabel(maxLabel)}

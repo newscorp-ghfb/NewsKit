@@ -2,7 +2,7 @@ import * as React from 'react';
 import {getMediaQueryFromTheme, BreakpointKeys, styled, css} from 'newskit';
 
 interface OverlayProps {
-  isOpen: boolean;
+  open: boolean;
   handleSidebarClick?: () => void;
   zIndex?: number;
   lockScroll?: boolean;
@@ -86,11 +86,11 @@ export class Overlay extends React.Component<OverlayProps> {
   };
 
   render() {
-    const {isOpen, handleSidebarClick, ...rest} = this.props;
+    const {open, handleSidebarClick, ...rest} = this.props;
 
     return (
       <StyledOverlay
-        active={isOpen}
+        active={open}
         onClick={handleSidebarClick}
         {...rest}
         data-testid="overlay"
