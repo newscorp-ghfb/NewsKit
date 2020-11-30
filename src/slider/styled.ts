@@ -29,16 +29,16 @@ const ifVertical = (value?: string, elseValue?: string) => ({
   return theme.sizing[maybeToken as string] || maybeToken;
 };
 
-type CursorProps = Pick<StyledTrackProps, 'disabled' | 'dragged' | 'values'>;
+type CursorProps = Pick<StyledTrackProps, 'disabled' | 'isDragged' | 'values'>;
 const getCursor = ({
   disabled,
-  dragged,
+  isDragged,
   values,
 }: CursorProps): CursorProperty => {
   switch (true) {
     case disabled:
       return 'not-allowed';
-    case dragged:
+    case isDragged:
       return 'grabbing';
     case values && values.length < 2:
       return 'pointer';

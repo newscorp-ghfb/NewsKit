@@ -12,7 +12,7 @@ interface ThumbLabelWrapperProps
 export const ThumbLabelWrapper: React.FC<ThumbLabelWrapperProps> = ({
   disabled,
   index,
-  dragged,
+  isDragged,
   thumbLabel: ThumbLabel,
   values,
   vertical,
@@ -34,7 +34,7 @@ export const ThumbLabelWrapper: React.FC<ThumbLabelWrapperProps> = ({
     children: values[index],
     disabled,
     index,
-    dragged,
+    isDragged,
     values,
     vertical,
     overrides,

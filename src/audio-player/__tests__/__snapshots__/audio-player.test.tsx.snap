@@ -1958,60 +1958,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   display: inline-block;
 }
 
-.emotion-47 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  box-sizing: border-box;
-  background-color: #f0f0f0;
-  border-radius: 20rem;
-  margin: calc(16px/2 - 4px/2) calc(16px/2);
-  height: 4px;
-  width: 100%;
-}
-
-.emotion-46 {
-  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
-  background-color: #0a68c1;
-  border-style: solid;
-  border-color: #ffffff;
-  border-width: 1px;
-  border-radius: 50%;
-  height: 16px;
-  width: 16px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.emotion-46 svg {
-  fill: #c0c0c0;
-}
-
-.emotion-46:hover:not(:disabled) {
-  background-color: #02509b;
-}
-
-.emotion-46:active:not(:disabled) {
-  background-color: #01396e;
-}
-
-.emotion-46:active:not(:disabled) svg {
-  fill: #535353;
-}
-
 .emotion-54 {
   font-family: "Noto Sans",sans-serif;
   font-size: 14px;
@@ -2398,6 +2344,64 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 
 .emotion-5:disabled svg {
   fill: #c0c0c0;
+}
+
+.emotion-46 {
+  box-shadow: 0 0 1px 0 rgba(40,41,61,0.08),0 0 2px 0 rgba(96,97,112,0.16);
+  background-color: #0a68c1;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+}
+
+.emotion-46 svg {
+  fill: #c0c0c0;
+}
+
+.emotion-46:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-46:active:not(:disabled) {
+  background-color: #01396e;
+}
+
+.emotion-46:active:not(:disabled) svg {
+  fill: #535353;
+}
+
+.emotion-47 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  border-radius: 20rem;
+  margin: calc(16px/2 - 4px/2) calc(16px/2);
+  height: 4px;
+  width: 100%;
 }
 
 <section
@@ -2873,7 +2877,9 @@ exports[`Audio Player recorded player renders and behaves as expected 2`] = `
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
-  cursor: pointer;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
 }
 
 .emotion-0 svg {

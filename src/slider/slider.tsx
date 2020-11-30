@@ -68,11 +68,11 @@ export const Slider: React.FC<SliderProps> = ({
 
   const renderTrackFn =
     renderTrack ||
-    (({props: p, children, dragged}) => (
+    (({props: p, children, isDragged}) => (
       <StyledTrack
         {...p}
         values={values}
-        dragged={dragged}
+        isDragged={isDragged}
         disabled={disabled}
         vertical={vertical}
         aria-valuemin={min}
@@ -103,7 +103,7 @@ export const Slider: React.FC<SliderProps> = ({
 
   const renderThumbFn =
     renderThumb ||
-    (({props: p, index, dragged}) => (
+    (({props: p, index, isDragged}) => (
       <StyledThumb
         {...p}
         disabled={disabled}
@@ -111,7 +111,7 @@ export const Slider: React.FC<SliderProps> = ({
         aria-valuetext={ariaValueText}
         aria-describedby={ariaDescribedBy}
         values={values}
-        dragged={dragged}
+        isDragged={isDragged}
         data-testid={`${dataTestId}-thumb`}
         overrides={overrides}
       >
@@ -119,7 +119,7 @@ export const Slider: React.FC<SliderProps> = ({
         <ThumbLabelWrapper
           values={values}
           index={index}
-          dragged={dragged}
+          isDragged={isDragged}
           thumbLabel={thumbLabel}
           vertical={vertical}
           overrides={overrides}

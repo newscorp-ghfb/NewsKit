@@ -153,7 +153,7 @@ describe('slider', () => {
               two: 'props',
             },
             index: 0,
-            dragged: false,
+            isDragged: false,
           });
           expect(fragment).toMatchSnapshot();
         });
@@ -168,7 +168,7 @@ describe('slider', () => {
               two: 'props',
             },
             index: 0,
-            dragged: false,
+            isDragged: false,
           });
           expect(fragment).toMatchSnapshot();
         });
@@ -185,7 +185,7 @@ describe('slider', () => {
               two: 'props',
             },
             index: 0,
-            dragged: false,
+            isDragged: false,
           });
           expect(fragment).toMatchSnapshot();
         });
@@ -201,7 +201,7 @@ describe('slider', () => {
               two: 'props',
             },
             index: 0,
-            dragged: false,
+            isDragged: false,
           });
           expect(fragment).toMatchSnapshot();
         });
@@ -243,7 +243,7 @@ describe('slider', () => {
               two: 'props',
             },
             index: 0,
-            dragged: true,
+            isDragged: true,
           });
           expect(fragment).toMatchSnapshot();
         });
@@ -259,7 +259,7 @@ describe('slider', () => {
               two: 'props',
             },
             index: 2,
-            dragged: false,
+            isDragged: false,
           });
           expect(fragment).toMatchSnapshot();
         });
@@ -275,7 +275,7 @@ describe('slider', () => {
               two: 'props',
             },
             index: 0,
-            dragged: false,
+            isDragged: false,
           });
           expect(fragment).toMatchSnapshot();
         });
@@ -293,14 +293,14 @@ describe('slider', () => {
               two: 'props',
             },
             index: 1,
-            dragged: true,
+            isDragged: true,
           });
           expect(fragment).toMatchSnapshot();
           expect(thumbLabel).toHaveBeenCalledWith(
             {
               children: 20,
               index: 1,
-              dragged: true,
+              isDragged: true,
               overrides: {},
               values: [10, 20, 30],
               vertical: undefined,
@@ -318,7 +318,7 @@ describe('slider', () => {
               two: 'props',
             },
             children: <div>children</div>,
-            dragged: false,
+            isDragged: false,
           });
           expect(fragment).toMatchSnapshot();
         });
@@ -334,7 +334,7 @@ describe('slider', () => {
               two: 'props',
             },
             children: <div>children</div>,
-            dragged: false,
+            isDragged: false,
           });
           expect(fragment).toMatchSnapshot();
         });
@@ -350,7 +350,7 @@ describe('slider', () => {
               two: 'props',
             },
             children: <div>children</div>,
-            dragged: false,
+            isDragged: false,
           });
           expect(fragment).toMatchSnapshot();
         });
@@ -362,7 +362,7 @@ describe('slider', () => {
               two: 'props',
             },
             children: <div>children</div>,
-            dragged: true,
+            isDragged: true,
           });
           expect(fragment).toMatchSnapshot();
         });
@@ -378,7 +378,7 @@ describe('slider', () => {
               two: 'props',
             },
             children: <div>children</div>,
-            dragged: false,
+            isDragged: false,
           });
           expect(fragment).toMatchSnapshot();
         });
@@ -394,7 +394,7 @@ describe('slider', () => {
               two: 'props',
             },
             children: <div>children</div>,
-            dragged: false,
+            isDragged: false,
           });
           expect(fragment).toMatchSnapshot();
         });
