@@ -2210,23 +2210,6 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   position: relative;
 }
 
-.emotion-65 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  box-sizing: border-box;
-  background-color: #fafafa;
-  border-radius: 20rem;
-  margin: calc(16px/2 - 8px/2) calc(16px/2);
-  height: 8px;
-  width: 100%;
-}
-
 .emotion-69 {
   width: 100%;
   margin-top: 12px;
@@ -2344,6 +2327,25 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 
 .emotion-5:disabled svg {
   fill: #c0c0c0;
+}
+
+.emotion-65 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  border-radius: 20rem;
+  margin: calc(16px/2 - 8px/2) calc(16px/2);
+  height: 8px;
+  width: 100%;
 }
 
 .emotion-46 {

@@ -141,7 +141,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   };
 
   const renderTrack: SliderProps['renderTrack'] = useCallback(
-    ({props: trackProps, children: trackChildren, dragged: isDragged}) => {
+    ({props: trackProps, children: trackChildren, isDragged}) => {
       const sliderTrackStylePreset = getToken(
         {theme, overrides},
         'audioPlayer.seekBar.slider.track',
