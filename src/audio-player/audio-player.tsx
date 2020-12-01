@@ -141,7 +141,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   };
 
   const renderTrack: SliderProps['renderTrack'] = useCallback(
-    ({props: trackProps, children: trackChildren, dragged}) => {
+    ({props: trackProps, children: trackChildren, dragged: isDragged}) => {
       const sliderTrackStylePreset = getToken(
         {theme, overrides},
         'audioPlayer.seekBar.slider.track',
@@ -188,7 +188,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
         <StyledTrack
           {...trackProps}
           values={trackPositionArr}
-          dragged={dragged}
+          isDragged={isDragged}
           onKeyDown={e => {
             const spaceKeyCode = 32;
             /* istanbul ignore next */
