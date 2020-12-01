@@ -300,7 +300,7 @@ describe('slider', () => {
             {
               children: 20,
               index: 1,
-              isDragged: true,
+              dragged: true,
               overrides: {},
               values: [10, 20, 30],
               vertical: undefined,

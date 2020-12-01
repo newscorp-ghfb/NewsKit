@@ -188,7 +188,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
         <StyledTrack
           {...trackProps}
           values={trackPositionArr}
-          isDragged={isDragged}
+          dragged={isDragged}
           onKeyDown={e => {
             const spaceKeyCode = 32;
             /* istanbul ignore next */
