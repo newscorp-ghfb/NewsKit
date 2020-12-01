@@ -1573,7 +1573,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
             >
               <a
                 class="emotion-3"
-                href="/utils/css"
+                href="/utils/emotion"
               >
                 <span
                   class="emotion-2"
@@ -1581,9 +1581,9 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   <div>
                     <div
                       class="emotion-12"
-                      data-testid="/utils/css"
+                      data-testid="/utils/emotion"
                     >
-                      css
+                      Emotion
                     </div>
                   </div>
                 </span>
@@ -3297,7 +3297,7 @@ exports[`Sidebar renders correctly when open 1`] = `
             >
               <a
                 class="emotion-3"
-                href="/utils/css"
+                href="/utils/emotion"
               >
                 <span
                   class="emotion-2"
@@ -3305,9 +3305,9 @@ exports[`Sidebar renders correctly when open 1`] = `
                   <div>
                     <div
                       class="emotion-12"
-                      data-testid="/utils/css"
+                      data-testid="/utils/emotion"
                     >
-                      css
+                      Emotion
                     </div>
                   </div>
                 </span>
