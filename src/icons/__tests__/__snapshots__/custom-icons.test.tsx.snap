@@ -633,10 +633,15 @@ exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicat
 
 exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicator icon with specified style 1`] = `
 <DocumentFragment>
-  .emotion-0 circle {
+  .emotion-0 {
+  width: 64px;
+  height: 64px;
+  stroke: #535353;
+}
+
+.emotion-0 circle {
   r: calc(50% - 2px);
   fill: transparent;
-  stroke: #535353;
   stroke-width: 2px;
   stroke-dasharray: 502;
   stroke-dashoffset: 360;
@@ -670,10 +675,15 @@ exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicat
 
 exports[`IndeterminateProgressIndicator renders the IndeterminateProgressIndicator icon with title override 1`] = `
 <DocumentFragment>
-  .emotion-0 circle {
+  .emotion-0 {
+  width: 64px;
+  height: 64px;
+  stroke: #535353;
+}
+
+.emotion-0 circle {
   r: calc(50% - 2px);
   fill: transparent;
-  stroke: #535353;
   stroke-width: 2px;
   stroke-dasharray: 502;
   stroke-dashoffset: 360;

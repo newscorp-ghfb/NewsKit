@@ -333,10 +333,15 @@ exports[`Audio Player live player renders as expected 1`] = `
   margin-right: calc(8px/2);
 }
 
+.emotion-1 {
+  width: 32px;
+  height: 32px;
+  stroke: #0a68c1;
+}
+
 .emotion-1 circle {
   r: calc(50% - 2px);
   fill: transparent;
-  stroke: #0a68c1;
   stroke-width: 2px;
   stroke-dasharray: 502;
   stroke-dashoffset: 360;
@@ -1148,10 +1153,15 @@ exports[`Audio Player play button loading state is phasing as expected 1`] = `
   margin-right: calc(8px/2);
 }
 
+.emotion-0 {
+  width: 32px;
+  height: 32px;
+  stroke: #0a68c1;
+}
+
 .emotion-0 circle {
   r: calc(50% - 2px);
   fill: transparent;
-  stroke: #0a68c1;
   stroke-width: 2px;
   stroke-dasharray: 502;
   stroke-dashoffset: 360;
@@ -1412,10 +1422,15 @@ exports[`Audio Player play button loading state is phasing as expected 3`] = `
   margin-right: calc(8px/2);
 }
 
+.emotion-0 {
+  width: 32px;
+  height: 32px;
+  stroke: #0a68c1;
+}
+
 .emotion-0 circle {
   r: calc(50% - 2px);
   fill: transparent;
-  stroke: #0a68c1;
   stroke-width: 2px;
   stroke-dasharray: 502;
   stroke-dashoffset: 360;
@@ -3228,10 +3243,15 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   margin-right: calc(8px/2);
 }
 
+.emotion-1 {
+  width: 32px;
+  height: 32px;
+  stroke: #0a68c1;
+}
+
 .emotion-1 circle {
   r: calc(50% - 2px);
   fill: transparent;
-  stroke: #0a68c1;
   stroke-width: 2px;
   stroke-dasharray: 502;
   stroke-dashoffset: 360;
@@ -4623,10 +4643,15 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   margin-right: calc(8px/2);
 }
 
+.emotion-1 {
+  width: 32px;
+  height: 32px;
+  stroke: #0a68c1;
+}
+
 .emotion-1 circle {
   r: calc(50% - 2px);
   fill: transparent;
-  stroke: #0a68c1;
   stroke-width: 2px;
   stroke-dasharray: 502;
   stroke-dashoffset: 360;
@@ -5960,6 +5985,31 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   margin-right: calc(8px/2);
 }
 
+.emotion-1 {
+  width: 32px;
+  height: 32px;
+  stroke: #0a68c1;
+}
+
+.emotion-1 circle {
+  r: calc(50% - 2px);
+  fill: transparent;
+  stroke-width: 2px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 360;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  will-change: stroke-dasharray;
+  will-change: stroke-dashoffset;
+  will-change: transform;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+
 .emotion-51 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6372,26 +6422,6 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
 .emotion-4:active:not(:disabled) {
   background-color: #818f94;
   border-style: none;
-}
-
-.emotion-1 circle {
-  r: calc(50% - 2px);
-  fill: transparent;
-  stroke: #fff;
-  stroke-width: 2px;
-  stroke-dasharray: 502;
-  stroke-dashoffset: 360;
-  -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  will-change: stroke-dasharray;
-  will-change: stroke-dashoffset;
-  will-change: transform;
-  -webkit-animation: rotate 1s linear infinite;
-  animation: rotate 1s linear infinite;
 }
 
 .emotion-13 {

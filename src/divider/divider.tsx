@@ -15,15 +15,13 @@ const StyledDivider = styled.hr<DividerProps>`
 `;
 
 const StyledVerticalDivider = styled(StyledDivider)`
-  border-left-width: ${({...props}) =>
-    getStylePreset('divider')(props).borderWidth};
+  border-left-width: ${props => getStylePreset('divider')(props).borderWidth};
   display: inline-block;
   height: 100%;
 `;
 
 const StyledHorizontalDivider = styled(StyledDivider)`
-  border-top-width: ${({...props}) =>
-    getStylePreset('divider')(props).borderWidth};
+  border-top-width: ${props => getStylePreset('divider')(props).borderWidth};
   width: 100%;
 `;
 

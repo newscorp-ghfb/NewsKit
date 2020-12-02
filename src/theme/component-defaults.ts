@@ -90,6 +90,9 @@ export const componentDefaults = {
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
       spaceInline: 'space020',
+      loadingIndicator: {
+        stylePreset: 'indeterminateProgressIndicatorPrimary',
+      },
     },
     medium: {
       typographyPreset: 'utilityButton020',
@@ -99,6 +102,9 @@ export const componentDefaults = {
       minHeight: 'sizing080',
       iconSize: 'iconSize020',
       spaceInline: 'space020',
+      loadingIndicator: {
+        stylePreset: 'indeterminateProgressIndicatorPrimary',
+      },
     },
     large: {
       typographyPreset: 'utilityButton030',
@@ -108,6 +114,9 @@ export const componentDefaults = {
       minHeight: 'sizing090',
       iconSize: 'iconSize030',
       spaceInline: 'space020',
+      loadingIndicator: {
+        stylePreset: 'indeterminateProgressIndicatorPrimary',
+      },
     },
   },
   caption: {
@@ -303,18 +312,27 @@ export const componentDefaults = {
       spaceInset: 'spaceInset020',
       width: 'sizing060',
       height: 'sizing060',
+      loadingIndicator: {
+        stylePreset: 'indeterminateProgressIndicatorPrimary',
+      },
     },
     medium: {
       stylePreset: 'iconButtonDefault',
       spaceInset: 'spaceInset030',
       width: 'sizing080',
       height: 'sizing080',
+      loadingIndicator: {
+        stylePreset: 'indeterminateProgressIndicatorPrimary',
+      },
     },
     large: {
       stylePreset: 'iconButtonDefault',
       spaceInset: 'spaceInset040',
       width: 'sizing090',
       height: 'sizing090',
+      loadingIndicator: {
+        stylePreset: 'indeterminateProgressIndicatorPrimary',
+      },
     },
   },
   icons: {
@@ -335,6 +353,10 @@ export const componentDefaults = {
         stylePreset: 'uppercaseInkSubtle',
       },
     },
+  },
+  indeterminateProgressIndicator: {
+    stylePreset: 'iconDefault',
+    size: 'iconSize020',
   },
   link: {
     stylePreset: 'linkInline',

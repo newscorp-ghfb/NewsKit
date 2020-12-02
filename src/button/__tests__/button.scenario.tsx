@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Button} from '..';
 import {styled} from '../../utils/style';
-import {ButtonSize} from '../types';
+import {ButtonOverrides, ButtonSize} from '../types';
 import {IconFilledEmail} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
 import {Grid, Cell} from '../../grid';
@@ -45,28 +45,9 @@ const Spacer = styled.div`
   margin-bottom: 20px;
 `;
 
-enum ButtonPrimaryStyles {
-  Solid = 'buttonSolidPrimary',
-  Outlined = 'buttonOutlinedPrimary',
-  Minimal = 'buttonMinimalPrimary',
-}
-
-enum ButtonSecondaryStyles {
-  Solid = 'buttonSolidSecondary',
-  Outlined = 'buttonOutlinedSecondary',
-  Minimal = 'buttonMinimalSecondary',
-}
-
-enum ButtonNegativeStyles {
-  Solid = 'buttonSolidNegative',
-  Outlined = 'buttonOutlinedNegative',
-  Minimal = 'buttonMinimalNegative',
-}
-
-enum ButtonPositiveStyles {
-  Solid = 'buttonSolidPositive',
-  Outlined = 'buttonOutlinedPositive',
-  Minimal = 'buttonMinimalPositive',
+interface IntentKindStylePreset {
+  kind: string;
+  intentStylePreset: string;
 }
 
 const buttonSizes: Array<{
@@ -80,6 +61,57 @@ const buttonSizes: Array<{
 
 const states = ['Default', 'Focused', 'Disabled', 'Loading'];
 
+const ButtonIntentKindsScenario: React.FC<{
+  name: string;
+  buttonIntents: IntentKindStylePreset[];
+  overrides: ButtonOverrides;
+}> = ({name, buttonIntents: buttonKinds, overrides}) => (
+  <>
+    <StorybookSubHeading>{name}</StorybookSubHeading>
+    <Grid>
+      <Cell xsHidden sm={3}>
+        <Stack>
+          <h3>State</h3>
+          {states.map(state => (
+            <Label>{state}</Label>
+          ))}
+        </Stack>
+      </Cell>
+      {buttonKinds.map(({kind, intentStylePreset: stylePreset}) => {
+        const kindOverrides = {...overrides, stylePreset};
+        return (
+          <Cell xs={4} sm={3}>
+            <Stack
+              spaceInline="space020"
+              stackDistribution={StackDistribution.SpaceEvenly}
+            >
+              <h3>{kind}</h3>
+              <Block data-state="Default">
+                <Button overrides={kindOverrides}>Button</Button>
+              </Block>
+              <Block data-state="Focused">
+                <Button autoFocus overrides={kindOverrides}>
+                  Button
+                </Button>
+              </Block>
+              <Block data-state="Disabled">
+                <Button disabled overrides={kindOverrides}>
+                  Button
+                </Button>
+              </Block>
+              <Block data-state="Loading">
+                <Button aria-label="Loading" overrides={kindOverrides} loading>
+                  Button
+                </Button>
+              </Block>
+            </Stack>
+          </Cell>
+        );
+      })}
+    </Grid>
+  </>
+);
+
 export default {
   name: 'button',
   children: [
@@ -87,7 +119,7 @@ export default {
       name: 'button-size',
       type: 'story',
       component: () => (
-        <React.Fragment>
+        <>
           <StorybookSubHeading>Button Size</StorybookSubHeading>
           <Container>
             <Stack
@@ -101,14 +133,14 @@ export default {
               <Button size={ButtonSize.Large}>Large button</Button>
             </Stack>
           </Container>
-        </React.Fragment>
+        </>
       ),
     },
     {
       name: 'full-and-fixed-width-button',
       type: 'story',
       component: () => (
-        <React.Fragment>
+        <>
           <StorybookSubHeading>Full-Width Button</StorybookSubHeading>
           <Container>
             <Border>
@@ -151,254 +183,90 @@ export default {
               </Button>
             </Border>
           </Container>
-        </React.Fragment>
+        </>
       ),
     },
     {
       name: 'button-intent-primary',
       type: 'story',
       component: () => (
-        <React.Fragment>
-          <StorybookSubHeading>Button Intent Primary</StorybookSubHeading>
-          <Grid>
-            <Cell xsHidden sm={3}>
-              <Stack>
-                <h3>State</h3>
-                {states.map(state => (
-                  <Label>{state}</Label>
-                ))}
-              </Stack>
-            </Cell>
-            {Object.keys(ButtonPrimaryStyles).map(style => {
-              const stylePreset =
-                ButtonPrimaryStyles[style as keyof typeof ButtonPrimaryStyles];
-              return (
-                <Cell xs={4} sm={3}>
-                  <Stack
-                    spaceInline="space020"
-                    stackDistribution={StackDistribution.SpaceEvenly}
-                  >
-                    <h3>{style}</h3>
-                    <Block data-state="Default">
-                      <Button overrides={{stylePreset}}>Button</Button>
-                    </Block>
-
-                    <Block data-state="Focused">
-                      <Button autoFocus overrides={{stylePreset}}>
-                        Button
-                      </Button>
-                    </Block>
-
-                    <Block data-state="Disabled">
-                      <Button disabled overrides={{stylePreset}}>
-                        Button
-                      </Button>
-                    </Block>
-
-                    <Block data-state="Loading">
-                      <Button
-                        aria-label="Loading"
-                        overrides={{stylePreset}}
-                        loading
-                      >
-                        Button
-                      </Button>
-                    </Block>
-                  </Stack>
-                </Cell>
-              );
-            })}
-          </Grid>
-        </React.Fragment>
+        <ButtonIntentKindsScenario
+          name="Button Intent Primary"
+          buttonIntents={[
+            {kind: 'Solid', intentStylePreset: 'buttonSolidPrimary'},
+            {kind: 'Outlined', intentStylePreset: 'buttonOutlinedPrimary'},
+            {kind: 'Minimal', intentStylePreset: 'buttonMinimalPrimary'},
+          ]}
+          overrides={{
+            loadingIndicator: {
+              stylePreset: 'indeterminateProgressIndicatorPrimary',
+            },
+          }}
+        />
       ),
     },
     {
       name: 'button-intent-secondary',
       type: 'story',
       component: () => (
-        <React.Fragment>
-          <StorybookSubHeading>Button Intent Secondary</StorybookSubHeading>
-          <Grid>
-            <Cell xsHidden sm={3}>
-              <Stack>
-                <h3>State</h3>
-                {states.map(state => (
-                  <Label>{state}</Label>
-                ))}
-              </Stack>
-            </Cell>
-            {Object.keys(ButtonSecondaryStyles).map(style => {
-              const stylePreset =
-                ButtonSecondaryStyles[
-                  style as keyof typeof ButtonSecondaryStyles
-                ];
-
-              return (
-                <Cell xs={4} sm={3}>
-                  <Stack
-                    spaceInline="space020"
-                    stackDistribution={StackDistribution.SpaceEvenly}
-                  >
-                    <h3>{style}</h3>
-                    <Block data-state="Default">
-                      <Button overrides={{stylePreset}}>Button</Button>
-                    </Block>
-
-                    <Block data-state="Focused">
-                      <Button autoFocus overrides={{stylePreset}}>
-                        Button
-                      </Button>
-                    </Block>
-
-                    <Block data-state="Disabled">
-                      <Button disabled overrides={{stylePreset}}>
-                        Button
-                      </Button>
-                    </Block>
-
-                    <Block data-state="Loading">
-                      <Button
-                        aria-label="Loading icon"
-                        overrides={{stylePreset}}
-                        loading
-                      >
-                        Button
-                      </Button>
-                    </Block>
-                  </Stack>
-                </Cell>
-              );
-            })}
-          </Grid>
-        </React.Fragment>
+        <ButtonIntentKindsScenario
+          name="Button Intent Secondary"
+          buttonIntents={[
+            {kind: 'Solid', intentStylePreset: 'buttonSolidSecondary'},
+            {kind: 'Outlined', intentStylePreset: 'buttonOutlinedSecondary'},
+            {kind: 'Minimal', intentStylePreset: 'buttonMinimalSecondary'},
+          ]}
+          overrides={{
+            loadingIndicator: {
+              stylePreset: 'indeterminateProgressIndicatorSecondary',
+            },
+          }}
+        />
       ),
     },
     {
       name: 'button-intent-negative',
       type: 'story',
       component: () => (
-        <React.Fragment>
-          <StorybookSubHeading>Button Intent Negative</StorybookSubHeading>
-          <Grid>
-            <Cell xsHidden sm={3}>
-              <Stack>
-                <h3>State</h3>
-                {states.map(state => (
-                  <Label>{state}</Label>
-                ))}
-              </Stack>
-            </Cell>
-            {Object.keys(ButtonNegativeStyles).map(style => {
-              const stylePreset =
-                ButtonNegativeStyles[
-                  style as keyof typeof ButtonNegativeStyles
-                ];
-
-              return (
-                <Cell xs={4} sm={3}>
-                  <Stack
-                    spaceInline="space020"
-                    stackDistribution={StackDistribution.SpaceEvenly}
-                  >
-                    <h3>{style}</h3>
-                    <Block data-state="Default">
-                      <Button overrides={{stylePreset}}>Button</Button>
-                    </Block>
-
-                    <Block data-state="Focused">
-                      <Button autoFocus overrides={{stylePreset}}>
-                        Button
-                      </Button>
-                    </Block>
-
-                    <Block data-state="Disabled">
-                      <Button disabled overrides={{stylePreset}}>
-                        Button
-                      </Button>
-                    </Block>
-
-                    <Block data-state="Loading">
-                      <Button
-                        aria-label="Loading icon"
-                        overrides={{stylePreset}}
-                        loading
-                      >
-                        Button
-                      </Button>
-                    </Block>
-                  </Stack>
-                </Cell>
-              );
-            })}
-          </Grid>
-        </React.Fragment>
+        <ButtonIntentKindsScenario
+          name="Button Intent Negative"
+          buttonIntents={[
+            {kind: 'Solid', intentStylePreset: 'buttonSolidNegative'},
+            {kind: 'Outlined', intentStylePreset: 'buttonOutlinedNegative'},
+            {kind: 'Minimal', intentStylePreset: 'buttonMinimalNegative'},
+          ]}
+          overrides={{
+            loadingIndicator: {
+              stylePreset: 'indeterminateProgressIndicatorNegative',
+            },
+          }}
+        />
       ),
     },
     {
       name: 'button-intent-positive',
       type: 'story',
       component: () => (
-        <React.Fragment>
-          <StorybookSubHeading>Button Intent Positive</StorybookSubHeading>
-          <Grid>
-            <Cell xsHidden sm={3}>
-              <Stack>
-                <h3>State</h3>
-                {states.map(state => (
-                  <Label>{state}</Label>
-                ))}
-              </Stack>
-            </Cell>
-            {Object.keys(ButtonPositiveStyles).map(style => {
-              const stylePreset =
-                ButtonPositiveStyles[
-                  style as keyof typeof ButtonPositiveStyles
-                ];
-              return (
-                <Cell xs={4} sm={3}>
-                  <Stack
-                    spaceInline="space020"
-                    stackDistribution={StackDistribution.SpaceEvenly}
-                  >
-                    <h3>{style}</h3>
-                    <Block data-state="Default">
-                      <Button overrides={{stylePreset}}>Button</Button>
-                    </Block>
-
-                    <Block data-state="Focused">
-                      <Button autoFocus overrides={{stylePreset}}>
-                        Button
-                      </Button>
-                    </Block>
-
-                    <Block data-state="Disabled">
-                      <Button disabled overrides={{stylePreset}}>
-                        Button
-                      </Button>
-                    </Block>
-
-                    <Block data-state="Loading">
-                      <Button
-                        aria-label="Loading icon"
-                        overrides={{stylePreset}}
-                        loading
-                      >
-                        Button
-                      </Button>
-                    </Block>
-                  </Stack>
-                </Cell>
-              );
-            })}
-          </Grid>
-        </React.Fragment>
+        <ButtonIntentKindsScenario
+          name="Button Intent Positive"
+          buttonIntents={[
+            {kind: 'Solid', intentStylePreset: 'buttonSolidPositive'},
+            {kind: 'Outlined', intentStylePreset: 'buttonOutlinedPositive'},
+            {kind: 'Minimal', intentStylePreset: 'buttonMinimalPositive'},
+          ]}
+          overrides={{
+            loadingIndicator: {
+              stylePreset: 'indeterminateProgressIndicatorPositive',
+            },
+          }}
+        />
       ),
     },
     {
       name: 'button-with-icons',
       type: 'story',
       component: () => (
-        <React.Fragment>
+        <>
           <StorybookSubHeading>Button with leading icon</StorybookSubHeading>
           <Container>
             {[Pause, Email, IconFilledLink].map(IconType => (
@@ -449,14 +317,14 @@ export default {
               </Spacer>
             ))}
           </Container>
-        </React.Fragment>
+        </>
       ),
     },
     {
       name: 'button-with-icon-size-overrides',
       type: 'story',
       component: () => (
-        <React.Fragment>
+        <>
           <StorybookSubHeading>
             Button with icon and inline overridden size
           </StorybookSubHeading>
@@ -480,14 +348,14 @@ export default {
               </Spacer>
             ))}
           </Container>
-        </React.Fragment>
+        </>
       ),
     },
     {
       name: 'button-style-at-breakpoints',
       type: 'story',
       component: () => (
-        <React.Fragment>
+        <>
           <StorybookSubHeading>Button style at breakpoints</StorybookSubHeading>
           <Container>
             <Button
@@ -502,7 +370,7 @@ export default {
               Negative XS - Positive MD
             </Button>
           </Container>
-        </React.Fragment>
+        </>
       ),
     },
   ],

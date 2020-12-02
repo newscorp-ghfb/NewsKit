@@ -5,24 +5,24 @@ export enum FlagSize {
   Large = 'large',
 }
 
-export interface BaseFlagProps {
-  disabled?: boolean;
-  loading?: boolean;
-  overrides?: {
-    typographyPreset?: MQ<string>;
-    stylePreset?: MQ<string>;
-    spaceInset?: MQ<string>;
-
-    width?: string;
-    height?: string;
-    minWidth?: string;
-    minHeight?: string;
-
-    iconSize?: string;
-    spaceInline?: MQ<string>;
-  };
+export interface BaseFlagOverrides {
+  typographyPreset?: MQ<string>;
+  stylePreset?: MQ<string>;
+  spaceInset?: MQ<string>;
+  width?: string;
+  height?: string;
+  minWidth?: string;
+  minHeight?: string;
+  iconSize?: string;
+  spaceInline?: MQ<string>;
 }
 
-export interface FlagProps extends BaseFlagProps {
+export interface BaseFlagProps<T> {
+  disabled?: boolean;
+  loading?: boolean;
+  overrides?: T;
+}
+
+export interface FlagProps extends BaseFlagProps<BaseFlagOverrides> {
   size?: FlagSize;
 }

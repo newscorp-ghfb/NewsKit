@@ -1,30 +1,10 @@
 import React from 'react';
-import {
-  styled,
-  getColorFromTheme,
-  MQ,
-  getStylePresetFromTheme,
-  CSSObject,
-} from '../../../utils/style';
-import {Theme, withTheme} from '../../../theme';
+import {styled, getSize, getStylePreset} from '../../../utils/style';
+import {withTheme} from '../../../theme';
 import {Svg} from '../../svg';
 import {SvgProps} from '../../types';
 
-const getIconColourValue = (
-  theme: Theme,
-  stylePreset: MQ<string> | undefined,
-) => {
-  if (!stylePreset || typeof stylePreset !== 'string') return 'inkBase';
-
-  const stylePresetObject = getStylePresetFromTheme(stylePreset, undefined, {
-    isLoading: true,
-  })({theme});
-  return (stylePresetObject &&
-    stylePresetObject.svg &&
-    (stylePresetObject.svg as CSSObject).fill) as string;
-};
-
-const AnimatedSvg = styled(Svg)<SvgProps>`
+const StyledSvg = styled(Svg)<SvgProps>`
   @keyframes rotate {
     0% {
       stroke-dasharray: 410;
@@ -43,15 +23,22 @@ const AnimatedSvg = styled(Svg)<SvgProps>`
     }
   }
 
+  width: ${getSize('indeterminateProgressIndicator', '')};
+  height: ${getSize('indeterminateProgressIndicator', '')};
+  stroke: ${props => {
+    const stylePresetObj = getStylePreset(
+      'indeterminateProgressIndicator',
+      '',
+      {
+        isSvg: true,
+      },
+    )(props);
+    return stylePresetObj.fill;
+  }};
+
   circle {
     r: ${`calc(50% - 2px)`};
     fill: transparent;
-    stroke: ${({theme, overrides}) =>
-      getColorFromTheme(
-        getIconColourValue(theme, overrides!.stylePreset),
-        undefined,
-        true,
-      )({theme})};
     stroke-width: 2px;
     stroke-dasharray: 502;
     stroke-dashoffset: 360;
@@ -64,13 +51,17 @@ const AnimatedSvg = styled(Svg)<SvgProps>`
   }
 `;
 
-const defaultIcon: React.FC<SvgProps> = ({...props}) => (
-  <AnimatedSvg {...props} viewBox="0 0 64 64">
+const DefaultProgressIndicatorIcon: React.FC<SvgProps> = props => (
+  <StyledSvg {...props} viewBox="0 0 64 64">
     <circle cx="50%" cy="50%" />
-  </AnimatedSvg>
+  </StyledSvg>
 );
 
 export const IndeterminateProgressIndicator = withTheme<SvgProps>(props => {
-  const Icon = props.theme.icons.IndeterminateProgressIndicator || defaultIcon;
+  const Icon =
+    props.theme.icons.IndeterminateProgressIndicator ||
+    DefaultProgressIndicatorIcon;
   return <Icon {...props} />;
 });
+
+IndeterminateProgressIndicator.displayName = 'IndeterminateProgressIndicator';

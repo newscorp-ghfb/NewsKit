@@ -6,10 +6,10 @@ import {
   getStylePreset,
 } from '../utils/style';
 
-import {BaseFlagProps} from './types';
+import {BaseFlagProps, BaseFlagOverrides} from './types';
 import {getToken} from '../utils/get-token';
 
-export const IE11FixContainer = styled.div<Pick<BaseFlagProps, 'overrides'>>`
+export const IE11FixContainer = styled.div<BaseFlagProps<BaseFlagOverrides>>`
   display: inline-flex;
   flex-direction: column;
   ${({theme, overrides}) => {
@@ -26,7 +26,7 @@ export const IE11FixContainer = styled.div<Pick<BaseFlagProps, 'overrides'>>`
   }}
 `;
 
-export const StyledBaseFlag = styled.div<BaseFlagProps>`
+export const StyledBaseFlag = styled.div<BaseFlagProps<BaseFlagOverrides>>`
   box-sizing: border-box;
   display: inline-flex;
   justify-content: center;
@@ -75,7 +75,7 @@ export const StyledBaseFlag = styled.div<BaseFlagProps>`
 `;
 
 export const StyledTextCropWrapper = styled.span<
-  Pick<BaseFlagProps, 'overrides'>
+  BaseFlagProps<BaseFlagOverrides>
 >`
   ${getTypographyPreset('', '', {
     withCrop: true,

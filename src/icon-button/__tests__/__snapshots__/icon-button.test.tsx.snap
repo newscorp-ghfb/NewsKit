@@ -90,10 +90,15 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
   fill: #0a68c1;
 }
 
+.emotion-0 {
+  width: 32px;
+  height: 32px;
+  stroke: #0a68c1;
+}
+
 .emotion-0 circle {
   r: calc(50% - 2px);
   fill: transparent;
-  stroke: #0a68c1;
   stroke-width: 2px;
   stroke-dasharray: 502;
   stroke-dashoffset: 360;

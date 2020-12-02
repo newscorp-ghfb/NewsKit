@@ -610,8 +610,8 @@ stylePresets.iconButtonMinimalPrimary = {
 stylePresets.iconButtonMinimalSecondary = {
   base: {
     backgroundColor: '{{colors.transparent}}',
-    color: '{{colors.inkBrand010}}',
-    iconColor: '{{colors.inkBrand010}}',
+    color: '{{colors.inkBase}}',
+    iconColor: '{{colors.inkBase}}',
     borderRadius: '{{borders.borderRadiusCircle}}',
   },
   hover: {
@@ -730,6 +730,31 @@ stylePresets.buttonSocialWhatsapp = stylePresets.iconButtonMinimalSecondary;
 stylePresets.buttonSocialEmail = stylePresets.iconButtonMinimalSecondary;
 stylePresets.buttonSocialLink = stylePresets.iconButtonMinimalSecondary;
 stylePresets.buttonSocialShare = stylePresets.iconButtonMinimalSecondary;
+
+//
+// Indeterminate Progress Indicator
+//
+
+stylePresets.indeterminateProgressIndicatorPrimary = {
+  base: {
+    iconColor: '{{colors.inkBrand010}}',
+  },
+};
+stylePresets.indeterminateProgressIndicatorSecondary = {
+  base: {
+    iconColor: '{{colors.inkBase}}',
+  },
+};
+stylePresets.indeterminateProgressIndicatorNegative = {
+  base: {
+    iconColor: '{{colors.inkNegative}}',
+  },
+};
+stylePresets.indeterminateProgressIndicatorPositive = {
+  base: {
+    iconColor: '{{colors.inkPositive}}',
+  },
+};
 
 //
 // Tag

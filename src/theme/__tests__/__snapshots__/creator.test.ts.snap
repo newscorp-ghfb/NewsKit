@@ -237,6 +237,9 @@ Object {
     "button": Object {
       "large": Object {
         "iconSize": "iconSize030",
+        "loadingIndicator": Object {
+          "stylePreset": "indeterminateProgressIndicatorPrimary",
+        },
         "minHeight": "sizing090",
         "minWidth": "sizing110",
         "spaceInline": "space020",
@@ -246,6 +249,9 @@ Object {
       },
       "medium": Object {
         "iconSize": "iconSize020",
+        "loadingIndicator": Object {
+          "stylePreset": "indeterminateProgressIndicatorPrimary",
+        },
         "minHeight": "sizing080",
         "minWidth": "sizing100",
         "spaceInline": "space020",
@@ -255,6 +261,9 @@ Object {
       },
       "small": Object {
         "iconSize": "iconSize010",
+        "loadingIndicator": Object {
+          "stylePreset": "indeterminateProgressIndicatorPrimary",
+        },
         "minHeight": "sizing060",
         "minWidth": "sizing090",
         "spaceInline": "space020",
@@ -466,18 +475,27 @@ Object {
     "iconButton": Object {
       "large": Object {
         "height": "sizing090",
+        "loadingIndicator": Object {
+          "stylePreset": "indeterminateProgressIndicatorPrimary",
+        },
         "spaceInset": "spaceInset040",
         "stylePreset": "iconButtonDefault",
         "width": "sizing090",
       },
       "medium": Object {
         "height": "sizing080",
+        "loadingIndicator": Object {
+          "stylePreset": "indeterminateProgressIndicatorPrimary",
+        },
         "spaceInset": "spaceInset030",
         "stylePreset": "iconButtonDefault",
         "width": "sizing080",
       },
       "small": Object {
         "height": "sizing060",
+        "loadingIndicator": Object {
+          "stylePreset": "indeterminateProgressIndicatorPrimary",
+        },
         "spaceInset": "spaceInset020",
         "stylePreset": "iconButtonDefault",
         "width": "sizing060",
@@ -501,6 +519,10 @@ Object {
         "typographyPreset": "editorialCaption010",
       },
       "stylePreset": "imageSharp",
+    },
+    "indeterminateProgressIndicator": Object {
+      "size": "iconSize020",
+      "stylePreset": "iconDefault",
     },
     "link": Object {
       "externalIcon": Object {
@@ -1277,8 +1299,8 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "color": "{{colors.inkBrand010}}",
-        "iconColor": "{{colors.inkBrand010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
       "disabled": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -1303,8 +1325,8 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "color": "{{colors.inkBrand010}}",
-        "iconColor": "{{colors.inkBrand010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
       "disabled": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -1329,8 +1351,8 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "color": "{{colors.inkBrand010}}",
-        "iconColor": "{{colors.inkBrand010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
       "disabled": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -1355,8 +1377,8 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "color": "{{colors.inkBrand010}}",
-        "iconColor": "{{colors.inkBrand010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
       "disabled": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -1381,8 +1403,8 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "color": "{{colors.inkBrand010}}",
-        "iconColor": "{{colors.inkBrand010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
       "disabled": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -1407,8 +1429,8 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "color": "{{colors.inkBrand010}}",
-        "iconColor": "{{colors.inkBrand010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
       "disabled": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -1699,8 +1721,8 @@ Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
         "borderRadius": "{{borders.borderRadiusCircle}}",
-        "color": "{{colors.inkBrand010}}",
-        "iconColor": "{{colors.inkBrand010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
       "disabled": Object {
         "backgroundColor": "{{colors.transparent}}",
@@ -2029,6 +2051,26 @@ Object {
       "loading": Object {
         "backgroundColor": "{{colors.interfaceSkeleton010}}",
         "iconColor": "{{colors.inkNonEssential}}",
+      },
+    },
+    "indeterminateProgressIndicatorNegative": Object {
+      "base": Object {
+        "iconColor": "{{colors.inkNegative}}",
+      },
+    },
+    "indeterminateProgressIndicatorPositive": Object {
+      "base": Object {
+        "iconColor": "{{colors.inkPositive}}",
+      },
+    },
+    "indeterminateProgressIndicatorPrimary": Object {
+      "base": Object {
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "indeterminateProgressIndicatorSecondary": Object {
+      "base": Object {
+        "iconColor": "{{colors.inkBase}}",
       },
     },
     "inkBase": Object {

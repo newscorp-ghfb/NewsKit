@@ -1,4 +1,4 @@
-import {ButtonProps} from '../button';
+import {BaseFlagProps, BaseFlagOverrides} from '../flag';
 
 export enum TabSize {
   Small = 'small',
@@ -6,9 +6,10 @@ export enum TabSize {
   Large = 'large',
 }
 
-export interface TabProps extends Omit<ButtonProps, 'loading' | 'size'> {
+export interface TabProps extends BaseFlagProps<BaseFlagOverrides> {
   size?: TabSize;
   selected?: boolean;
   ariaLabel?: string;
   tabKey?: number;
+  autoFocus?: boolean;
 }

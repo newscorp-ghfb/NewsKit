@@ -133,7 +133,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   height: 16px;
 }
 
-.emotion-265 {
+.emotion-272 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -219,7 +219,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   padding: 32px 0 8px 0;
 }
 
-.emotion-266 {
+.emotion-273 {
   width: 276px;
   padding: 0 24px;
   position: fixed;
@@ -241,7 +241,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-266 {
+  .emotion-273 {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -249,23 +249,23 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-266 {
+  .emotion-273 {
     overflow: hidden;
   }
 
-  .emotion-266:hover {
+  .emotion-273:hover {
     overflow: auto;
   }
 }
 
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-266 {
+  .emotion-273 {
     overflow: auto;
   }
 }
 
 <div
-    class="emotion-266"
+    class="emotion-273"
     data-testid="sidebar"
     role="complementary"
   >
@@ -329,7 +329,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
     </div>
     <nav
       aria-label="Sidebar"
-      class="emotion-265"
+      class="emotion-272"
       role="navigation"
     >
       <ul
@@ -1544,6 +1544,44 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           data-testid="/components/others/icons"
                         >
                           Icons
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-15"
+            >
+              <div>
+                <div
+                  class="emotion-11"
+                  data-testid="/components/user-feedback"
+                >
+                  User Feedback
+                </div>
+              </div>
+              <ul
+                class="emotion-20"
+                role="list"
+              >
+                <li
+                  class="emotion-15"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/user-feedback/progress-indicator"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-12"
+                          data-testid="/components/user-feedback/progress-indicator"
+                        >
+                          Progress Indicator
                         </div>
                       </div>
                     </span>
@@ -1725,7 +1763,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 exports[`Sidebar renders correctly when open 1`] = `
 <DocumentFragment>
-  .emotion-266 {
+  .emotion-273 {
   width: 276px;
   padding: 0 24px;
   position: fixed;
@@ -1747,7 +1785,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-266 {
+  .emotion-273 {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -1755,17 +1793,17 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .emotion-266 {
+  .emotion-273 {
     overflow: hidden;
   }
 
-  .emotion-266:hover {
+  .emotion-273:hover {
     overflow: auto;
   }
 }
 
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2) {
-  .emotion-266 {
+  .emotion-273 {
     overflow: auto;
   }
 }
@@ -1901,7 +1939,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   height: 16px;
 }
 
-.emotion-265 {
+.emotion-272 {
   font-family: "Noto Sans",sans-serif;
   font-size: 18px;
   line-height: 1.5555555555555556;
@@ -1988,7 +2026,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 <div
-    class="emotion-266"
+    class="emotion-273"
     data-testid="sidebar"
     open=""
     role="complementary"
@@ -2053,7 +2091,7 @@ exports[`Sidebar renders correctly when open 1`] = `
     </div>
     <nav
       aria-label="Sidebar"
-      class="emotion-265"
+      class="emotion-272"
       role="navigation"
     >
       <ul
@@ -3268,6 +3306,44 @@ exports[`Sidebar renders correctly when open 1`] = `
                           data-testid="/components/others/icons"
                         >
                           Icons
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="emotion-15"
+            >
+              <div>
+                <div
+                  class="emotion-11"
+                  data-testid="/components/user-feedback"
+                >
+                  User Feedback
+                </div>
+              </div>
+              <ul
+                class="emotion-20"
+                role="list"
+              >
+                <li
+                  class="emotion-15"
+                >
+                  <a
+                    class="emotion-3"
+                    href="/components/user-feedback/progress-indicator"
+                  >
+                    <span
+                      class="emotion-2"
+                    >
+                      <div>
+                        <div
+                          class="emotion-12"
+                          data-testid="/components/user-feedback/progress-indicator"
+                        >
+                          Progress Indicator
                         </div>
                       </div>
                     </span>

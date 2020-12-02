@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {FlagProps, FlagSize, BaseFlagProps} from './types';
+import {FlagProps, FlagSize, BaseFlagProps, BaseFlagOverrides} from './types';
 import {Stack} from '../stack';
 import {Flow, StackDistribution} from '../stack/types';
 import {
@@ -12,7 +12,11 @@ import {useTheme} from '../theme';
 import {getToken} from '../utils/get-token';
 import {filterOutFalsyProperties} from '../utils/filter-object';
 
-const BaseFlag: React.FC<BaseFlagProps> = ({children, overrides, ...props}) => {
+const BaseFlag: React.FC<BaseFlagProps<BaseFlagOverrides>> = ({
+  children,
+  overrides,
+  ...props
+}) => {
   const theme = useTheme();
 
   return (

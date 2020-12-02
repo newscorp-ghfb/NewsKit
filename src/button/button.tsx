@@ -16,11 +16,13 @@ export const Button: React.FC<ButtonProps> = ({
   const {fireEvent} = useInstrumentation();
   const {size = ButtonSize.Medium} = props;
   const {disabled, loading, eventContext, eventOriginator = 'button'} = props;
-
   const buttonSettings: typeof overrides = {
     ...theme.componentDefaults.button[size],
     ...filterOutFalsyProperties(overrides),
   };
+  const loadingIndicatorStylePreset =
+    buttonSettings.loadingIndicator &&
+    buttonSettings.loadingIndicator.stylePreset;
 
   return (
     <StyledFlag
@@ -48,7 +50,7 @@ export const Button: React.FC<ButtonProps> = ({
         <IndeterminateProgressIndicator
           overrides={{
             size: buttonSettings!.iconSize,
-            stylePreset: buttonSettings.stylePreset as string,
+            stylePreset: loadingIndicatorStylePreset,
           }}
         />
       ) : (

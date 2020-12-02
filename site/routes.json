@@ -317,6 +317,17 @@
             "id": "/components/others/icons"
           }
         ]
+      },
+      {
+        "title": "User Feedback",
+        "id": "/components/user-feedback",
+        "subNav": [
+          {
+            "title": "Progress Indicator",
+            "page": true,
+            "id": "/components/user-feedback/progress-indicator"
+          }
+        ]
       }
     ]
   },

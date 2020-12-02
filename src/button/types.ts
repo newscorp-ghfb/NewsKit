@@ -1,5 +1,6 @@
 import {EventData} from '../instrumentation/types';
-import {FlagProps} from '../flag';
+import {BaseFlagOverrides, BaseFlagProps} from '../flag/types';
+import {MQ} from '../utils/style';
 
 export enum ButtonSize {
   Small = 'small',
@@ -7,8 +8,14 @@ export enum ButtonSize {
   Large = 'large',
 }
 
+export interface ButtonOverrides extends BaseFlagOverrides {
+  loadingIndicator?: {
+    stylePreset?: MQ<string>;
+  };
+}
+
 export interface ButtonProps
-  extends Omit<FlagProps, 'size'>,
+  extends BaseFlagProps<ButtonOverrides>,
     React.ButtonHTMLAttributes<HTMLButtonElement>,
     EventData {
   size?: ButtonSize;
