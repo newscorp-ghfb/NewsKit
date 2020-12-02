@@ -934,7 +934,7 @@ workflows:
             - build_docs
             - install_cypress
     # PR jobs
-      - run_visual_comps:
+      - run_visual_tests:
           <<: *only_pr_and_release
           type: approval
           requires:
@@ -944,6 +944,11 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - run_visual_comps
+      - test_visual_docs:
+          <<: *only_pr_and_release
+          context: ncu-product-platforms-context
+          requires:
+            - test_visual_comps
       - init_aws:
           <<: *ignore_trigger_release
           context: ncu-product-platforms-context
@@ -993,12 +998,6 @@ workflows:
             - test_e2e_docs
             - approve_publish_npm_dev
     # develop jobs
-      - test_visual_docs:
-          <<: *only_develop
-          context: ncu-product-platforms-context
-          requires:
-            - build_docs
-            - install_cypress
       - build_push_docker_ecr:
           name: build_push_docker_ecr_dev
           context: ncu-product-platforms-context
