@@ -943,7 +943,7 @@ workflows:
           <<: *only_pr_and_release
           context: ncu-product-platforms-context
           requires:
-            - run_visual_comps
+            - run_visual_tests
       - test_visual_docs:
           <<: *only_pr_and_release
           context: ncu-product-platforms-context
