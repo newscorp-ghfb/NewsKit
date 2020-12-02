@@ -54,14 +54,15 @@ describe('TypographyPreset', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders responsive override editorialParagraph010 for xs, editorialParagraph020 for sm, editorialParagraph030 for md, editorialHeadline010 for lg breakpoints and ignore wrong prop', () => {
+  test('renders responsive override editorialParagraph010 for xs, editorialParagraph020 for sm, editorialParagraph030 for md, editorialHeading010 for lg and xl breakpoints and ignore wrong prop', () => {
     const fragment = renderToFragmentWithTheme(TestText, {
       typographyPreset: {
         xs: 'editorialParagraph010',
         sm: 'editorialParagraph020',
         md: 'editorialParagraph030',
-        lg: 'editorialHeadline010',
-        wrong: 'editorialHeadline020',
+        lg: 'editorialHeading010',
+        xl: 'editorialHeading030',
+        wrong: 'editorialHeading020',
       } as any,
     });
     expect(fragment).toMatchSnapshot();
