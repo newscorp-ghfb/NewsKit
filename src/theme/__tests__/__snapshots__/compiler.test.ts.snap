@@ -421,48 +421,48 @@ Object {
         "stylePreset": "uppercaseInkBrand010",
       },
       "typographyPreset": Object {
-        "lg": "editorialHeading070",
-        "sm": "editorialHeading060",
-        "xl": "editorialHeading080",
-        "xs": "editorialHeading060",
+        "lg": "editorialHeadline070",
+        "sm": "editorialHeadline060",
+        "xl": "editorialHeadline080",
+        "xs": "editorialHeadline060",
       },
     },
     "headlineH1": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
-        "lg": "editorialHeading070",
-        "xl": "editorialHeading080",
-        "xs": "editorialHeading050",
+        "lg": "editorialHeadline070",
+        "xl": "editorialHeadline080",
+        "xs": "editorialHeadline050",
       },
     },
     "headlineH2": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
-        "md": "editorialHeading040",
-        "xs": "editorialHeading030",
+        "md": "editorialHeadline040",
+        "xs": "editorialHeadline030",
       },
     },
     "headlineH3": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
-        "md": "editorialHeading030",
-        "xs": "editorialHeading020",
+        "md": "editorialHeadline030",
+        "xs": "editorialHeadline020",
       },
     },
     "headlineH4": Object {
       "stylePreset": "inkContrast",
       "typographyPreset": Object {
-        "md": "editorialHeading020",
-        "xs": "editorialHeading010",
+        "md": "editorialHeadline020",
+        "xs": "editorialHeadline010",
       },
     },
     "headlineH5": Object {
       "stylePreset": "inkContrast",
-      "typographyPreset": "editorialSubheading020",
+      "typographyPreset": "editorialSubheadline020",
     },
     "headlineH6": Object {
       "stylePreset": "inkContrast",
-      "typographyPreset": "editorialSubheading010",
+      "typographyPreset": "editorialSubheadline010",
     },
     "iconButton": Object {
       "large": Object {
@@ -576,8 +576,8 @@ Object {
       "styledText": Object {
         "stylePreset": "inkBase",
         "typographyPreset": Object {
-          "lg": "editorialSubheading020",
-          "xs": "editorialSubheading010",
+          "lg": "editorialSubheadline020",
+          "xs": "editorialSubheadline010",
         },
       },
     },
@@ -710,9 +710,9 @@ Object {
     "titleBar": Object {
       "heading": Object {
         "typographyPreset": Object {
-          "lg": "editorialHeading080",
-          "md": "editorialHeading070",
-          "xs": "editorialHeading050",
+          "lg": "editorialHeadline080",
+          "md": "editorialHeadline070",
+          "xs": "editorialHeadline050",
         },
       },
       "spaceInset": Object {
@@ -2452,56 +2452,56 @@ Object {
       "fontSize": "6em",
       "lineHeight": 0.85,
     },
-    "editorialHeading010": Object {
+    "editorialHeadline010": Object {
       "fontFamily": "\\"Source Serif Pro\\", serif",
       "fontSize": "18px",
       "fontWeight": 600,
       "letterSpacing": "0",
       "lineHeight": 1.1111111111111112,
     },
-    "editorialHeading020": Object {
+    "editorialHeadline020": Object {
       "fontFamily": "\\"Source Serif Pro\\", serif",
       "fontSize": "20px",
       "fontWeight": 600,
       "letterSpacing": "0",
       "lineHeight": 1.2,
     },
-    "editorialHeading030": Object {
+    "editorialHeadline030": Object {
       "fontFamily": "\\"Source Serif Pro\\", serif",
       "fontSize": "24px",
       "fontWeight": 600,
       "letterSpacing": "0",
       "lineHeight": 1.1666666666666667,
     },
-    "editorialHeading040": Object {
+    "editorialHeadline040": Object {
       "fontFamily": "\\"Source Serif Pro\\", serif",
       "fontSize": "28px",
       "fontWeight": 600,
       "letterSpacing": "0",
       "lineHeight": 1.1428571428571428,
     },
-    "editorialHeading050": Object {
+    "editorialHeadline050": Object {
       "fontFamily": "\\"Source Serif Pro\\", serif",
       "fontSize": "32px",
       "fontWeight": 600,
       "letterSpacing": "0",
       "lineHeight": 1.125,
     },
-    "editorialHeading060": Object {
+    "editorialHeadline060": Object {
       "fontFamily": "\\"Source Serif Pro\\", serif",
       "fontSize": "36px",
       "fontWeight": 600,
       "letterSpacing": "0",
       "lineHeight": 1.1111111111111112,
     },
-    "editorialHeading070": Object {
+    "editorialHeadline070": Object {
       "fontFamily": "\\"Source Serif Pro\\", serif",
       "fontSize": "40px",
       "fontWeight": 600,
       "letterSpacing": "0",
       "lineHeight": 1.1,
     },
-    "editorialHeading080": Object {
+    "editorialHeadline080": Object {
       "fontFamily": "\\"Source Serif Pro\\", serif",
       "fontSize": "48px",
       "fontWeight": 600,
@@ -2543,35 +2543,35 @@ Object {
       "letterSpacing": "0",
       "lineHeight": 1.25,
     },
-    "editorialSubheading010": Object {
+    "editorialSubheadline010": Object {
       "fontFamily": "\\"Source Serif Pro\\", serif",
       "fontSize": "20px",
       "fontWeight": 600,
       "letterSpacing": "0",
       "lineHeight": 1.2,
     },
-    "editorialSubheading020": Object {
+    "editorialSubheadline020": Object {
       "fontFamily": "\\"Source Serif Pro\\", serif",
       "fontSize": "24px",
       "fontWeight": 600,
       "letterSpacing": "0",
       "lineHeight": 1.1666666666666667,
     },
-    "editorialSubheading030": Object {
+    "editorialSubheadline030": Object {
       "fontFamily": "\\"Source Serif Pro\\", serif",
       "fontSize": "28px",
       "fontWeight": 600,
       "letterSpacing": "0",
       "lineHeight": 1.1428571428571428,
     },
-    "editorialSubheading040": Object {
+    "editorialSubheadline040": Object {
       "fontFamily": "\\"Source Serif Pro\\", serif",
       "fontSize": "32px",
       "fontWeight": 600,
       "letterSpacing": "0",
       "lineHeight": 1.125,
     },
-    "editorialSubheading050": Object {
+    "editorialSubheadline050": Object {
       "fontFamily": "\\"Source Serif Pro\\", serif",
       "fontSize": "36px",
       "fontWeight": 600,

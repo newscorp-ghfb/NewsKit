@@ -33,7 +33,7 @@ describe('Standfirst', () => {
     const fragment = renderToFragmentWithTheme(Standfirst, {
       overrides: {
         styledText: {
-          typographyPreset: 'editorialSubheading010',
+          typographyPreset: 'editorialSubheadline010',
         },
       },
     });

@@ -35,10 +35,10 @@ export default {
             overrides={{
               heading: {
                 typographyPreset: {
-                  xs: 'editorialHeading010',
-                  sm: 'editorialHeading020',
-                  md: 'editorialHeading030',
-                  lg: 'editorialHeading040',
+                  xs: 'editorialHeadline010',
+                  sm: 'editorialHeadline020',
+                  md: 'editorialHeadline030',
+                  lg: 'editorialHeadline040',
                 },
                 stylePreset: 'linkInline',
               },

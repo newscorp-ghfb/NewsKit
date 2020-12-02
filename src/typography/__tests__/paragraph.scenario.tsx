@@ -69,7 +69,7 @@ export default {
             <P
               overrides={{
                 stylePreset: 'paragraphCustom',
-                typographyPreset: 'editorialHeading020',
+                typographyPreset: 'editorialHeadline020',
               }}
             >
               This being Black History Month, last week was Politicians In
@@ -84,7 +84,7 @@ export default {
               overrides={{
                 dropCap: {
                   stylePreset: 'dropCapCustom',
-                  typographyPreset: 'editorialHeading070',
+                  typographyPreset: 'editorialHeadline070',
                   space: 'space030',
                 },
               }}

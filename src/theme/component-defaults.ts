@@ -242,10 +242,10 @@ export const componentDefaults = {
   },
   headline: {
     typographyPreset: {
-      xs: 'editorialHeading060',
-      sm: 'editorialHeading060',
-      lg: 'editorialHeading070',
-      xl: 'editorialHeading080',
+      xs: 'editorialHeadline060',
+      sm: 'editorialHeadline060',
+      lg: 'editorialHeadline070',
+      xl: 'editorialHeadline080',
     },
     heading: {
       stylePreset: 'inkContrast',
@@ -263,39 +263,39 @@ export const componentDefaults = {
   headlineH1: {
     stylePreset: 'inkContrast',
     typographyPreset: {
-      xs: 'editorialHeading050',
-      lg: 'editorialHeading070',
-      xl: 'editorialHeading080',
+      xs: 'editorialHeadline050',
+      lg: 'editorialHeadline070',
+      xl: 'editorialHeadline080',
     },
   },
   headlineH2: {
     stylePreset: 'inkContrast',
     typographyPreset: {
-      xs: 'editorialHeading030',
-      md: 'editorialHeading040',
+      xs: 'editorialHeadline030',
+      md: 'editorialHeadline040',
     },
   },
   headlineH3: {
     stylePreset: 'inkContrast',
     typographyPreset: {
-      xs: 'editorialHeading020',
-      md: 'editorialHeading030',
+      xs: 'editorialHeadline020',
+      md: 'editorialHeadline030',
     },
   },
   headlineH4: {
     stylePreset: 'inkContrast',
     typographyPreset: {
-      xs: 'editorialHeading010',
-      md: 'editorialHeading020',
+      xs: 'editorialHeadline010',
+      md: 'editorialHeadline020',
     },
   },
   headlineH5: {
     stylePreset: 'inkContrast',
-    typographyPreset: 'editorialSubheading020',
+    typographyPreset: 'editorialSubheadline020',
   },
   headlineH6: {
     stylePreset: 'inkContrast',
-    typographyPreset: 'editorialSubheading010',
+    typographyPreset: 'editorialSubheadline010',
   },
   iconButton: {
     small: {
@@ -409,8 +409,8 @@ export const componentDefaults = {
     styledText: {
       stylePreset: 'inkBase',
       typographyPreset: {
-        xs: 'editorialSubheading010',
-        lg: 'editorialSubheading020',
+        xs: 'editorialSubheadline010',
+        lg: 'editorialSubheadline020',
       },
     },
   },
@@ -548,9 +548,9 @@ export const componentDefaults = {
     },
     heading: {
       typographyPreset: {
-        xs: 'editorialHeading050',
-        md: 'editorialHeading070',
-        lg: 'editorialHeading080',
+        xs: 'editorialHeadline050',
+        md: 'editorialHeadline070',
+        lg: 'editorialHeadline080',
       },
     },
   },

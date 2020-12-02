@@ -32,7 +32,7 @@ describe('headline', () => {
   test('renders correctly with overriden props', () => {
     const fragment = renderToFragmentWithTheme(Headline, {
       overrides: {
-        typographyPreset: 'editorialHeading050',
+        typographyPreset: 'editorialHeadline050',
         heading: {
           stylePreset: 'linkInline',
         },

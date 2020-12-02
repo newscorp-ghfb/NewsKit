@@ -25,14 +25,14 @@ const cardTeaserLeadSpaceStack = {
 const cardTeaserLeadInsetVariantSpaceStack = 'space000';
 const cardActionsSpace = 'sizing040';
 
-const cardTeaserKickerSmallTypographyPreset = 'editorialHeading010';
-const cardTeaserHeadlineSmallTypographyPreset = 'editorialHeading010';
+const cardTeaserKickerSmallTypographyPreset = 'editorialHeadline010';
+const cardTeaserHeadlineSmallTypographyPreset = 'editorialHeadline010';
 const cardTeaserLeadSmallTypographyPreset = 'editorialParagraph010';
 const cardLabelSmallTypographyPreset = 'utilityLabel010';
 const cardTagSmallTypographyPreset = 'utilityLabel010';
 
-const cardTeaserKickerMediumTypographyPreset = 'editorialHeading030';
-const cardTeaserHeadlineMediumTypographyPreset = 'editorialHeading030';
+const cardTeaserKickerMediumTypographyPreset = 'editorialHeadline030';
+const cardTeaserHeadlineMediumTypographyPreset = 'editorialHeadline030';
 const cardTeaserLeadMediumTypographyPreset = 'editorialParagraph010';
 const cardLabelMediumTypographyPreset = 'utilityLabel010';
 const cardTagMediumTypographyPreset = 'utilityLabel010';

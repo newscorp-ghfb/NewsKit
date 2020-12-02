@@ -50,9 +50,9 @@ const cardActions = 'space040';
 
 // Typography Presets
 const cardTypographyPresets: {[index: string]: string} = {
-  cardTeaserHeadlineLarge: 'editorialHeading050',
-  cardTeaserHeadlineMedium: 'editorialHeading030',
-  cardTeaserHeadlineSmall: 'editorialHeading010',
+  cardTeaserHeadlineLarge: 'editorialHeadline050',
+  cardTeaserHeadlineMedium: 'editorialHeadline030',
+  cardTeaserHeadlineSmall: 'editorialHeadline010',
 
   cardTeaserLeadLarge: 'editorialParagraph030',
   cardTeaserLeadMedium: 'editorialParagraph020',
