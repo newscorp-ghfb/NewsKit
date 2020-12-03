@@ -949,8 +949,8 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - build_docs
-            # TODO bring back if working
-            # - test_visual_comps
+            - install_cypress
+            - test_visual_comps
       - init_aws:
           <<: *ignore_trigger_release
           context: ncu-product-platforms-context
