@@ -1,18 +1,25 @@
 import React from 'react';
 import {fireEvent} from '@testing-library/react';
+import '@testing-library/jest-dom';
 import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../test/test-utils';
-import {Button, ButtonProps, ButtonSize} from '..';
+import {
+  Button,
+  ButtonProps,
+  ButtonLinkProps,
+  ButtonSize,
+  ButtonOrButtonLinkProps,
+} from '..';
 import {IconFilledEmail} from '../../icons';
 import {InstrumentationProvider, EventTrigger} from '../../instrumentation';
 
-const renderButtonWithText = (props: ButtonProps) => (
+const renderButtonWithText = (props: ButtonOrButtonLinkProps) => (
   <Button {...props}>click this!</Button>
 );
 
-const renderButtonWithTextAndIcon = (props: ButtonProps) => (
+const renderButtonWithTextAndIcon = (props: ButtonOrButtonLinkProps) => (
   <Button {...props}>
     click this!
     <IconFilledEmail />
@@ -90,7 +97,7 @@ describe('Button', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders with custom spaceInset preset', () => {
+  test('renders with different spaceInset preset', () => {
     const props: ButtonProps = {
       overrides: {
         spaceInset: 'spaceInsetSquish000',
@@ -99,6 +106,58 @@ describe('Button', () => {
 
     const fragment = renderToFragmentWithTheme(renderButtonWithText, props);
     expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders button link when href passed', async () => {
+    const props: ButtonLinkProps = {
+      href: 'http://localhost:6006',
+    };
+
+    const {getByRole, asFragment} = await renderWithTheme((() => (
+      <Button {...props}>test button click</Button>
+    )) as React.FC);
+
+    expect(asFragment()).toMatchSnapshot();
+
+    expect(getByRole('link')).toBeInTheDocument();
+    expect(getByRole('link')).toHaveAttribute('href', 'http://localhost:6006');
+  });
+
+  test('handles correctly passed onClick event handler', async () => {
+    const mockFunc = jest.fn();
+
+    const props: ButtonProps = {
+      onClick: () => {
+        mockFunc(42);
+      },
+    };
+
+    const button = await renderWithTheme((() => (
+      <Button {...props}>test button click</Button>
+    )) as React.FC).findByText('test button click');
+
+    fireEvent.click(button);
+
+    expect(mockFunc).toHaveBeenCalledWith(42);
+  });
+
+  test('as link handles correctly passed onClick event handler', async () => {
+    const mockFunc = jest.fn();
+
+    const props: ButtonLinkProps = {
+      href: 'http://localhost:6006',
+      onClick: () => {
+        mockFunc(42);
+      },
+    };
+
+    const button = await renderWithTheme((() => (
+      <Button {...props}>test link click</Button>
+    )) as React.FC).findByText('test link click');
+
+    fireEvent.click(button);
+
+    expect(mockFunc).toHaveBeenCalledWith(42);
   });
 
   describe('Loading Button', () => {
@@ -186,7 +245,9 @@ describe('Button', () => {
       expect(fragment).toMatchSnapshot();
     });
   });
+});
 
+describe('Button instrumentation', () => {
   test('fires click event onClick', async () => {
     const mockFireEvent = jest.fn();
     const eventContext = {
@@ -205,6 +266,32 @@ describe('Button', () => {
 
     expect(mockFireEvent).toHaveBeenCalledWith({
       originator: 'button',
+      trigger: EventTrigger.Click,
+      context: {
+        event: 'other event data',
+      },
+    });
+  });
+
+  test('fires click event onClick when href passed', async () => {
+    const mockFireEvent = jest.fn();
+    const eventContext = {
+      event: 'other event data',
+    };
+    const props: ButtonLinkProps = {
+      href: 'http://localhost:6006/',
+      eventContext,
+    };
+    const button = await renderWithTheme((() => (
+      <InstrumentationProvider fireEvent={mockFireEvent}>
+        <Button {...props}>test link text</Button>
+      </InstrumentationProvider>
+    )) as React.FC).findByText('test link text');
+
+    fireEvent.click(button);
+
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'link',
       trigger: EventTrigger.Click,
       context: {
         event: 'other event data',

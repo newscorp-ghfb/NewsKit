@@ -214,5 +214,34 @@ export default {
         />
       ),
     },
+    {
+      name: 'icon-button-link',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookSubHeading>Icon button link</StorybookSubHeading>
+          <Container>
+            <IconButton
+              aria-label="Link icon"
+              href="https://www.newskit.co.uk/"
+            >
+              <IconFilledLink />
+            </IconButton>
+          </Container>
+          <StorybookSubHeading>
+            Icon button link with overrides
+          </StorybookSubHeading>
+          <Container>
+            <IconButton
+              aria-label="Link icon"
+              href="https://www.newskit.co.uk/"
+              overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+            >
+              <IconFilledLink />
+            </IconButton>
+          </Container>
+        </React.Fragment>
+      ),
+    },
   ],
 };

@@ -1,11 +1,11 @@
 import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {IconButton} from '..';
-import {ButtonProps, ButtonSize} from '../../button';
+import {ButtonSize, IconButtonProps} from '../../button';
 import {IconFilledEmail} from '../../icons';
 
-const renderIconButton = (props: ButtonProps) => (
-  <IconButton aria-label="Test icon button" {...props}>
+const renderIconButton = (props: IconButtonProps) => (
+  <IconButton {...props}>
     <IconFilledEmail />
   </IconButton>
 );
@@ -19,51 +19,56 @@ describe('IconButton', () => {
   test('renders Small Icon Button', () => {
     const props = {
       size: ButtonSize.Small,
+      'aria-label': 'Test icon button',
     };
     const fragment = renderToFragmentWithTheme(renderIconButton, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders Medium Icon Button', () => {
-    const props = {
+    const props: IconButtonProps = {
       size: ButtonSize.Medium,
+      'aria-label': 'Test icon button',
     };
     const fragment = renderToFragmentWithTheme(renderIconButton, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders Large Icon Button', () => {
-    const props = {
+    const props: IconButtonProps = {
       size: ButtonSize.Large,
+      'aria-label': 'Test icon button',
     };
     const fragment = renderToFragmentWithTheme(renderIconButton, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders Icon Button in loading State', () => {
-    const props = {
+    const props: IconButtonProps = {
       size: ButtonSize.Large,
       loading: true,
+      'aria-label': 'Test icon button',
     };
     const fragment = renderToFragmentWithTheme(renderIconButton, props);
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders with different style preset', () => {
-    const props: ButtonProps = {
+    const props: IconButtonProps = {
       overrides: {
         stylePreset: 'iconButtonOutlinedPrimary',
       },
+      'aria-label': 'Test icon button',
     };
 
     const fragment = renderToFragmentWithTheme(renderIconButton, props);
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders when there is an icon with a colour', () => {
-    const props = {
-      size: ButtonSize.Small,
-      iconColor: 'buttonText',
+  test('renders icon button link when href passed', () => {
+    const props: IconButtonProps = {
+      href: 'http://localhost:6006',
+      'aria-label': 'Test icon button',
     };
     const fragment = renderToFragmentWithTheme(renderIconButton, props);
     expect(fragment).toMatchSnapshot();

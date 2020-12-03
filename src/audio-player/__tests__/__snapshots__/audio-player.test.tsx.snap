@@ -1036,7 +1036,6 @@ exports[`Audio Player live player renders as expected 1`] = `
                       aria-label="Open popout player"
                       class="emotion-38"
                       data-testid="audio-player-popout"
-                      href="www.popout-player.example.com"
                       type="button"
                     >
                       <div

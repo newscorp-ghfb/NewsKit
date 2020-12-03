@@ -1,8 +1,8 @@
-import {Flag, FlagProps} from '../flag';
+import {Flag} from '../flag';
 import {getMotionFromTheme, styled} from '../utils/style';
-import {ButtonProps} from './types';
+import {ButtonOrButtonLinkProps} from './types';
 
-export const StyledFlag = styled(Flag)<FlagProps & ButtonProps>`
+export const StyledFlag = styled(Flag)<Omit<ButtonOrButtonLinkProps, 'size'>>`
   transition-property: background-color;
   transition-duration: ${getMotionFromTheme('motionDuration020')};
   transition-timing-function: ${getMotionFromTheme('motionEaseOut')};

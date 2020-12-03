@@ -9,12 +9,12 @@ export interface BaseFlagOverrides {
   typographyPreset?: MQ<string>;
   stylePreset?: MQ<string>;
   spaceInset?: MQ<string>;
+  spaceInline?: MQ<string>;
   width?: string;
   height?: string;
   minWidth?: string;
   minHeight?: string;
   iconSize?: string;
-  spaceInline?: MQ<string>;
 }
 
 export interface BaseFlagProps<T> {

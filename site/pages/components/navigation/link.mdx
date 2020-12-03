@@ -82,16 +82,16 @@ Links have a number of props to facilitate a variety of uses. Any prop valid on 
     </Prop>
        Refer to the defaults below for the object structure:
        <CodeFromDefaultPresets componentName="link" />
-      For more information about how to apply overrides to a component please refer to the <Link href="/theming/component-defaults">Override component defaults</Link> page.
+      For more information about how to apply overrides to a component please refer to the <Link href="/theming/component-defaults/overview">Override component defaults</Link> page.
 
   </Prop>
+</LegacyBlock>
 
 ### Default HTML props
 
 All the native HTML attributes which an anchor element can take, can also be passed.
 E.g: `<Link aria-label='NewsKit staging website' href="http://newskit.staging-news.co.uk/">`
 
-</LegacyBlock>
 
 ## Playground
 
@@ -189,3 +189,8 @@ https://webaim.org/techniques/hypertext/link_text#underlining
 
 Text and background colours must have a 3:1 minimum contrast ratio.
 Hover states should have clear contrast change or should include a non colour designator.
+
+## Button as link
+
+In some circumstances, the Button component has the ability to behave as fully working and stylable link.
+All you need to do is pass a href property with valid url. <Link href="/components/action/button">Button links</Link> can be styled in the same way as a regular Button component.

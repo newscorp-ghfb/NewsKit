@@ -10,10 +10,11 @@ export interface PopoutButtonProps {
 }
 
 export const PopoutButton: React.FC<PopoutButtonProps> = React.memo(props => {
-  const {href, onClick} = props;
+  const {href, onClick, ...rest} = props;
+
   return (
     <IconButton
-      {...props}
+      {...rest}
       size={ButtonSize.Medium}
       data-testid="audio-player-popout"
       aria-label="Open popout player"

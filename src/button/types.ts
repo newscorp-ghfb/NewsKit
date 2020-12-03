@@ -14,14 +14,25 @@ export interface ButtonOverrides extends BaseFlagOverrides {
   };
 }
 
-export interface ButtonProps
-  extends BaseFlagProps<ButtonOverrides>,
-    React.ButtonHTMLAttributes<HTMLButtonElement>,
-    EventData {
+interface CommonButtonProps extends BaseFlagProps<ButtonOverrides>, EventData {
   size?: ButtonSize;
   loading?: boolean;
 }
 
-export interface IconButtonProps extends ButtonProps {
-  'aria-label': string;
+export interface ButtonProps
+  extends CommonButtonProps,
+    React.ButtonHTMLAttributes<HTMLButtonElement> {}
+
+export interface ButtonLinkProps
+  extends CommonButtonProps,
+    React.AnchorHTMLAttributes<HTMLAnchorElement> {
+  href: string;
 }
+
+export type ButtonOrButtonLinkProps = ButtonProps | ButtonLinkProps;
+
+export const isButtonLink = (
+  props: ButtonOrButtonLinkProps,
+): props is ButtonLinkProps => (props as ButtonLinkProps).href !== undefined;
+
+export type IconButtonProps = {'aria-label': string} & ButtonOrButtonLinkProps;

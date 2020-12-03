@@ -29,7 +29,14 @@ Flags have a number of props to facilitate a variety of uses:
   <Prop name="size" type="FlagSize" enum={FlagSize} default="Small">
     Optional size of the Flag.
   </Prop>
-
+  <Prop name="disabled" type="boolean">
+    If true, this will cause the Flag to render the disabled state of the style
+    preset.
+  </Prop>
+  <Prop name="loading" type="boolean" default={false}>
+    If true, this will cause the Flag to render the loading state of the style
+    preset.
+  </Prop>
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
     Here are the overrides that the Flag accepts:
@@ -74,14 +81,6 @@ Flags have a number of props to facilitate a variety of uses:
     </Prop>
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="flag" />
-  </Prop>
-  <Prop name="disabled" type="boolean">
-    If true, this will cause the Flag to render the disabled state of the style
-    preset.
-  </Prop>
-  <Prop name="loading" type="boolean">
-    If true, this will cause the Flag to render the loading state of the style
-    preset.
   </Prop>
 </LegacyBlock>
 

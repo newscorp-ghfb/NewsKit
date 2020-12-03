@@ -17,10 +17,8 @@ export const IconOutlinedCustomClose = customToNewsKitIcon(
 const theme = createTheme({
   name: 'newskit-override-icons',
   overrides: {
-    typographyPresets: {
-      icons: {
-        IconOutlinedClose: IconOutlinedCustomClose,
-      },
+    icons: {
+      IconOutlinedClose: IconOutlinedCustomClose,
     },
   },
 });

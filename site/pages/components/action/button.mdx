@@ -4,7 +4,7 @@ import {Prop} from '../../../components/prop';
 import {TextBoxSwatch} from '../../../components/theming-values/colors';
 import {LegacyBlock} from '../../../components/legacy-block';
 import {Selector} from '../../../components/playground/selector';
-import {CodeFromDefaultPresets} from '../../../components/code';
+import {CodeFromDefaultPresets, Code} from '../../../components/code';
 import {Button, IconButton, ButtonSize, IconFilledEmail} from 'newskit';
 
 export default Layout;
@@ -38,6 +38,16 @@ Custom props are detailed below:
   <Prop name="eventOriginator" type="string" default="button">
     This props allows users to add event originator custom name. e.x.:
     'play-button'.
+  </Prop>
+  <Prop name="href" type="string">
+    If provided the button component turns into an anchor element.
+  </Prop>
+  <Prop name="disabled" type="boolean" default={false}>
+    If true, the Button will render the disabled state of the styled preset.
+  </Prop>
+  <Prop name="loading" type="boolean" default={false}>
+    If true, this will cause the Button to render the loading state of the style
+    preset.
   </Prop>
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided elements.
@@ -100,13 +110,6 @@ Custom props are detailed below:
     </Prop>
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="button" />
-  </Prop>
-  <Prop name="disabled" type="boolean" default={false}>
-    If true, the Button will render the disabled state of the styled preset.
-  </Prop>
-  <Prop name="loading" type="boolean" default="false">
-    If true, this will cause the Button to render the loading state of the style
-    preset.
   </Prop>
 </LegacyBlock>
 
@@ -240,6 +243,11 @@ Custom props are detailed below:
       type: 'boolean',
       value: false,
     },
+    {
+      name: 'href',
+      propName: 'href',
+      value: 'https://www.newskit.co.uk/',
+    },
   ]}
 />
 
@@ -309,6 +317,11 @@ Custom props are detailed below:
       type: 'boolean',
       value: false,
     },
+    {
+      name: 'href',
+      propName: 'href',
+      value: '',
+    },
   ]}
 />
 
@@ -326,3 +339,18 @@ Each are fully accessible with the native HTML button used.
 
 Text and background colours must have a 3:1 minimum contrast ratio.
 Hover states should have clear contrast change or should include a non colour designator.
+
+## Button as link
+
+Buttons have the ability to render as links when a value for the href prop is passed.
+This is suitable in cases when you may want the styling of a button but the behaviour of a link. 
+
+Any prop valid on an [Anchor HTML element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Attributes) is also valid on the Button link component
+
+<Code>
+  {`
+  <Button href="www.newskit.co.uk" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
+    Click me!
+  </Button>
+`}
+</Code>

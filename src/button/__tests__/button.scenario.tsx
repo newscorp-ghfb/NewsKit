@@ -373,5 +373,28 @@ export default {
         </>
       ),
     },
+    {
+      name: 'button-link',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookSubHeading>Button link</StorybookSubHeading>
+          <Container>
+            <Button href="https://www.newskit.co.uk/">
+              Visit newskit.co.uk
+            </Button>
+          </Container>
+          <StorybookSubHeading>Button link with overrides</StorybookSubHeading>
+          <Container>
+            <Button
+              href="https://www.newskit.co.uk/"
+              overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+            >
+              Another link to newskit.co.uk
+            </Button>
+          </Container>
+        </React.Fragment>
+      ),
+    },
   ],
 };

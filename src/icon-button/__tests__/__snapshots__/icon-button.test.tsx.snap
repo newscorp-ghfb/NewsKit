@@ -269,7 +269,6 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
     class="emotion-5"
   >
     <button
-      aria-label="Test icon button"
       class="emotion-4"
       data-testid="button"
       type="button"
@@ -765,7 +764,7 @@ exports[`IconButton renders Small Icon Button 1`] = `
 </DocumentFragment>
 `;
 
-exports[`IconButton renders when there is an icon with a colour 1`] = `
+exports[`IconButton renders icon button link when href passed 1`] = `
 <DocumentFragment>
   .emotion-5 {
   display: -webkit-inline-box;
@@ -884,11 +883,11 @@ exports[`IconButton renders when there is an icon with a colour 1`] = `
 <div
     class="emotion-5"
   >
-    <button
+    <a
       aria-label="Test icon button"
       class="emotion-4"
-      data-testid="button"
-      type="button"
+      data-testid="buttonLink"
+      href="http://localhost:6006"
     >
       <div
         class="emotion-3"
@@ -914,7 +913,7 @@ exports[`IconButton renders when there is an icon with a colour 1`] = `
           </svg>
         </div>
       </div>
-    </button>
+    </a>
   </div>
 </DocumentFragment>
 `;

@@ -9,6 +9,7 @@ Array [
   "Block",
   "Button",
   "ButtonSize",
+  "isButtonLink",
   "Card",
   "CardInset",
   "Consent",
