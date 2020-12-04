@@ -935,17 +935,17 @@ workflows:
             - install_cypress
     # PR jobs
       - run_visual_tests:
-          <<: *only_pr_and_release
+          <<: *only_pr
           type: approval
           requires:
             - build_storybook
       - test_visual_comps:
-          <<: *only_pr_and_release
+          <<: *only_pr
           context: ncu-product-platforms-context
           requires:
             - run_visual_tests
       - test_visual_docs:
-          <<: *only_pr_and_release
+          <<: *only_pr
           context: ncu-product-platforms-context
           requires:
             - build_docs
