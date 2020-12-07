@@ -378,11 +378,19 @@ Object {
     "flag": Object {
       "large": Object {
         "iconSize": "iconSize010",
-        "minHeight": "sizing060",
+        "minHeight": "sizing070",
         "spaceInline": "space010",
         "spaceInset": "spaceInsetSquish020",
         "stylePreset": "flagDefault",
         "typographyPreset": "utilityLabel030",
+      },
+      "medium": Object {
+        "iconSize": "iconSize010",
+        "minHeight": "sizing060",
+        "spaceInline": "space010",
+        "spaceInset": "spaceInsetSquish020",
+        "stylePreset": "flagDefault",
+        "typographyPreset": "utilityLabel020",
       },
       "small": Object {
         "iconSize": "iconSize010",
