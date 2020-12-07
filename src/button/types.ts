@@ -15,7 +15,6 @@ export interface ButtonOverrides extends BaseFlagOverrides {
 }
 
 interface CommonButtonProps extends BaseFlagProps<ButtonOverrides>, EventData {
-  size?: ButtonSize;
   loading?: boolean;
 }
 

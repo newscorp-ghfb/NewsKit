@@ -2,6 +2,7 @@ import {MQ} from '../utils/style';
 
 export enum FlagSize {
   Small = 'small',
+  Medium = 'medium',
   Large = 'large',
 }
 
@@ -17,12 +18,11 @@ export interface BaseFlagOverrides {
   iconSize?: string;
 }
 
-export interface BaseFlagProps<T> {
+export interface BaseFlagProps<TOverrides> {
   disabled?: boolean;
   loading?: boolean;
-  overrides?: T;
+  overrides?: TOverrides;
+  size?: 'small' | 'medium' | 'large';
 }
 
-export interface FlagProps extends BaseFlagProps<BaseFlagOverrides> {
-  size?: FlagSize;
-}
+export interface FlagProps extends BaseFlagProps<BaseFlagOverrides> {}

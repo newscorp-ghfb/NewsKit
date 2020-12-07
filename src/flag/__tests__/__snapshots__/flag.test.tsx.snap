@@ -1982,6 +1982,82 @@ exports[`Flag renders with Large size 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Flag renders with Medium size 1`] = `
+<DocumentFragment>
+  .emotion-3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<div
+    class="emotion-3"
+  >
+    <div
+      class="emotion-2"
+      data-testid="flag"
+    >
+      <div
+        class="emotion-1"
+      >
+        <span
+          class="emotion-0"
+        >
+          Text
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Flag renders with Small size 1`] = `
 <DocumentFragment>
   .emotion-4 {

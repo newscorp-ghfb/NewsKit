@@ -44,7 +44,7 @@ const BaseFlag: React.FC<BaseFlagProps<BaseFlagOverrides>> = ({
 
 export const Flag: React.FC<FlagProps> = ({overrides = {}, ...props}) => {
   const theme = useTheme();
-  const {size = FlagSize.Small} = props;
+  const {size = FlagSize.Medium} = props;
 
   return (
     <BaseFlag

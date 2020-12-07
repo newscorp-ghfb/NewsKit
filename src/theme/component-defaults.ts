@@ -218,11 +218,19 @@ export const componentDefaults = {
       iconSize: 'iconSize010',
       spaceInline: 'space010',
     },
+    medium: {
+      typographyPreset: "utilityLabel020",
+      stylePreset: "flagDefault",
+      spaceInset: "spaceInsetSquish020",
+      minHeight: "sizing060",
+      iconSize: "iconSize010",
+      spaceInline: "space010"
+    },
     large: {
       typographyPreset: 'utilityLabel030',
       stylePreset: 'flagDefault',
       spaceInset: 'spaceInsetSquish020',
-      minHeight: 'sizing060',
+      minHeight: 'sizing070',
       iconSize: 'iconSize010',
       spaceInline: 'space010',
     },

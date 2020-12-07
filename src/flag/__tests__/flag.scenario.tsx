@@ -99,6 +99,7 @@ export default {
             wrap="wrap"
           >
             <Flag size={FlagSize.Small}>Small</Flag>
+            <Flag size={FlagSize.Medium}>Medium</Flag>
             <Flag size={FlagSize.Large}>Large</Flag>
           </Stack>
 

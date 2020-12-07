@@ -1,4 +1,4 @@
-import {FlagProps} from '../flag';
+import {BaseFlagOverrides, BaseFlagProps} from '../flag';
 
 export enum TagSize {
   Small = 'small',
@@ -6,7 +6,6 @@ export enum TagSize {
   Large = 'large',
 }
 
-export interface TagProps extends Omit<FlagProps, 'size'> {
-  size?: TagSize;
+export interface TagProps extends BaseFlagProps<BaseFlagOverrides> {
   href?: string;
 }

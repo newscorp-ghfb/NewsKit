@@ -7,7 +7,6 @@ export enum TabSize {
 }
 
 export interface TabProps extends BaseFlagProps<BaseFlagOverrides> {
-  size?: TabSize;
   selected?: boolean;
   ariaLabel?: string;
   tabKey?: number;
