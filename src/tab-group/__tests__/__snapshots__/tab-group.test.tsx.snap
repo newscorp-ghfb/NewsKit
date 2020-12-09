@@ -2,7 +2,7 @@
 
 exports[`Tab Group changes focus and sets first to be active on right arrow when on the last tab 1`] = `
 <DocumentFragment>
-  .emotion-20 {
+  .emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -29,7 +29,7 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-17 {
+.emotion-19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -38,11 +38,11 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
   margin-bottom: calc(8px/2);
 }
 
-.emotion-16 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
@@ -61,10 +61,17 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.emotion-15 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -87,7 +94,7 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  position: relative;
 }
 
 .emotion-4 {
@@ -307,7 +314,37 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
   fill: #c0c0c0;
 }
 
-.emotion-18 {
+.emotion-15 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.emotion-15:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-16 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+}
+
+.emotion-20 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -320,7 +357,7 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
   letter-spacing: 0;
 }
 
-.emotion-18::before {
+.emotion-20::before {
   content: '';
   display: block;
   height: 0;
@@ -328,7 +365,7 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
   margin-bottom: -0.4em;
 }
 
-.emotion-18::after {
+.emotion-20::after {
   content: '';
   display: block;
   height: 0;
@@ -337,17 +374,17 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
 }
 
 <div
-    class="emotion-20"
+    class="emotion-22"
   >
     <div
-      class="emotion-17"
+      class="emotion-19"
     >
       <div
-        class="emotion-16"
+        class="emotion-18"
         data-testid="tab-group"
       >
         <div
-          class="emotion-15"
+          class="emotion-17"
           role="tablist"
         >
           <div
@@ -422,14 +459,26 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
               </div>
             </button>
           </div>
+          <div
+            aria-hidden="true"
+            class="emotion-15"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px);"
+          />
+          <div
+            class="emotion-16"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
         </div>
       </div>
     </div>
     <div
-      class="emotion-17"
+      class="emotion-19"
     >
       <p
-        class="emotion-18"
+        class="emotion-20"
         data-testid="tab-pane"
       >
         First tab content
@@ -441,7 +490,7 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
 
 exports[`Tab Group changes focus and sets last to be active on left arrow when on the first tab 1`] = `
 <DocumentFragment>
-  .emotion-20 {
+  .emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -468,7 +517,7 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-17 {
+.emotion-19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -477,11 +526,11 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
   margin-bottom: calc(8px/2);
 }
 
-.emotion-16 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
@@ -500,10 +549,17 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.emotion-15 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -526,7 +582,7 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  position: relative;
 }
 
 .emotion-4 {
@@ -746,7 +802,37 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
   fill: #c0c0c0;
 }
 
-.emotion-18 {
+.emotion-15 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.emotion-15:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-16 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+}
+
+.emotion-20 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -759,7 +845,7 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
   letter-spacing: 0;
 }
 
-.emotion-18::before {
+.emotion-20::before {
   content: '';
   display: block;
   height: 0;
@@ -767,7 +853,7 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
   margin-bottom: -0.4em;
 }
 
-.emotion-18::after {
+.emotion-20::after {
   content: '';
   display: block;
   height: 0;
@@ -776,17 +862,17 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
 }
 
 <div
-    class="emotion-20"
+    class="emotion-22"
   >
     <div
-      class="emotion-17"
+      class="emotion-19"
     >
       <div
-        class="emotion-16"
+        class="emotion-18"
         data-testid="tab-group"
       >
         <div
-          class="emotion-15"
+          class="emotion-17"
           role="tablist"
         >
           <div
@@ -861,14 +947,26 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
               </div>
             </button>
           </div>
+          <div
+            aria-hidden="true"
+            class="emotion-15"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px); transition: all 300ms cubic-bezier(.5, 0, .5, 1);"
+          />
+          <div
+            class="emotion-16"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
         </div>
       </div>
     </div>
     <div
-      class="emotion-17"
+      class="emotion-19"
     >
       <p
-        class="emotion-18"
+        class="emotion-20"
         data-testid="tab-pane"
       >
         Third tab content
@@ -880,7 +978,7 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
 
 exports[`Tab Group changes focus and sets next to be active on right arrow 1`] = `
 <DocumentFragment>
-  .emotion-20 {
+  .emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -907,7 +1005,7 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-17 {
+.emotion-19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -916,11 +1014,11 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
   margin-bottom: calc(8px/2);
 }
 
-.emotion-16 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
@@ -939,10 +1037,17 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.emotion-15 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -965,7 +1070,7 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  position: relative;
 }
 
 .emotion-4 {
@@ -1185,7 +1290,37 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
   fill: #c0c0c0;
 }
 
-.emotion-18 {
+.emotion-15 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.emotion-15:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-16 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+}
+
+.emotion-20 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -1198,7 +1333,7 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
   letter-spacing: 0;
 }
 
-.emotion-18::before {
+.emotion-20::before {
   content: '';
   display: block;
   height: 0;
@@ -1206,7 +1341,7 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
   margin-bottom: -0.4em;
 }
 
-.emotion-18::after {
+.emotion-20::after {
   content: '';
   display: block;
   height: 0;
@@ -1215,17 +1350,17 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
 }
 
 <div
-    class="emotion-20"
+    class="emotion-22"
   >
     <div
-      class="emotion-17"
+      class="emotion-19"
     >
       <div
-        class="emotion-16"
+        class="emotion-18"
         data-testid="tab-group"
       >
         <div
-          class="emotion-15"
+          class="emotion-17"
           role="tablist"
         >
           <div
@@ -1300,14 +1435,26 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
               </div>
             </button>
           </div>
+          <div
+            aria-hidden="true"
+            class="emotion-15"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px); transition: all 300ms cubic-bezier(.5, 0, .5, 1);"
+          />
+          <div
+            class="emotion-16"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
         </div>
       </div>
     </div>
     <div
-      class="emotion-17"
+      class="emotion-19"
     >
       <p
-        class="emotion-18"
+        class="emotion-20"
         data-testid="tab-pane"
       >
         Second tab content
@@ -1319,6 +1466,494 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
 
 exports[`Tab Group changes focus and sets previous to be active on left arrow 1`] = `
 <DocumentFragment>
+  .emotion-22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-19 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.emotion-17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  position: relative;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-3:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-3:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-3:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-3 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-8 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-8 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-8:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-8:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-8:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-8:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-8:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-15 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.emotion-15:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-16 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+}
+
+.emotion-20 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-20::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-20::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-22"
+  >
+    <div
+      class="emotion-19"
+    >
+      <div
+        class="emotion-18"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-17"
+          role="tablist"
+        >
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-3"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-4"
+          >
+            <button
+              class="emotion-8"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-2"
+              >
+                <div
+                  class="emotion-1"
+                >
+                  <span
+                    class="emotion-0"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            aria-hidden="true"
+            class="emotion-15"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px);"
+          />
+          <div
+            class="emotion-16"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-19"
+    >
+      <p
+        class="emotion-20"
+        data-testid="tab-pane"
+      >
+        First tab content
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group changes focus on tab 1`] = `
+<DocumentFragment>
   .emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1346,7 +1981,7 @@ exports[`Tab Group changes focus and sets previous to be active on left arrow 1`
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-17 {
+.emotion-19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1355,11 +1990,11 @@ exports[`Tab Group changes focus and sets previous to be active on left arrow 1`
   margin-bottom: calc(8px/2);
 }
 
-.emotion-16 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
@@ -1378,10 +2013,17 @@ exports[`Tab Group changes focus and sets previous to be active on left arrow 1`
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.emotion-15 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1404,7 +2046,7 @@ exports[`Tab Group changes focus and sets previous to be active on left arrow 1`
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  position: relative;
 }
 
 .emotion-4 {
@@ -1624,457 +2266,48 @@ exports[`Tab Group changes focus and sets previous to be active on left arrow 1`
   fill: #c0c0c0;
 }
 
-.emotion-18 {
-  margin: 0;
-  padding: 1px 0;
-  font-family: "Noto Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
+.emotion-15 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
 }
 
-.emotion-18::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4em;
+.emotion-15:hover:not(:disabled) {
+  background-color: #02509b;
 }
 
-.emotion-18::after {
-  content: '';
+.emotion-15:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-16 {
+  background-color: #e4e4e4;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4625em;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
 }
 
 <div
     class="emotion-20"
   >
     <div
-      class="emotion-17"
+      class="emotion-19"
     >
       <div
-        class="emotion-16"
-        data-testid="tab-group"
-      >
-        <div
-          class="emotion-15"
-          role="tablist"
-        >
-          <div
-            class="emotion-4"
-          >
-            <button
-              class="emotion-3"
-              data-testid="tab"
-              role="tab"
-              type="button"
-            >
-              <div
-                class="emotion-2"
-              >
-                <div
-                  class="emotion-1"
-                >
-                  <span
-                    class="emotion-0"
-                  >
-                    Medium tab
-                  </span>
-                </div>
-              </div>
-            </button>
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              class="emotion-8"
-              data-testid="tab"
-              role="tab"
-              type="button"
-            >
-              <div
-                class="emotion-2"
-              >
-                <div
-                  class="emotion-1"
-                >
-                  <span
-                    class="emotion-0"
-                  >
-                    Medium tab
-                  </span>
-                </div>
-              </div>
-            </button>
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              class="emotion-8"
-              data-testid="tab"
-              role="tab"
-              type="button"
-            >
-              <div
-                class="emotion-2"
-              >
-                <div
-                  class="emotion-1"
-                >
-                  <span
-                    class="emotion-0"
-                  >
-                    Medium tab
-                  </span>
-                </div>
-              </div>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="emotion-17"
-    >
-      <p
         class="emotion-18"
-        data-testid="tab-pane"
-      >
-        First tab content
-      </p>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tab Group changes focus on tab 1`] = `
-<DocumentFragment>
-  .emotion-18 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-top: calc(-8px/2);
-  margin-bottom: calc(-8px/2);
-}
-
-.emotion-17 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: calc(8px/2);
-  margin-bottom: calc(8px/2);
-}
-
-.emotion-16 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 100%;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #cccccc;
-  border-width: 2px;
-  border-radius: 0;
-  border-width: 0;
-  border-bottom-width: 0.5px;
-}
-
-.emotion-15 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #cccccc;
-  border-width: 2px;
-  border-radius: 0;
-  border-width: 0;
-  border-bottom-width: 0.5px;
-}
-
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 48px;
-  min-width: 80px;
-  padding: 12px 16px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  background-color: transparent;
-  color: #2e2e2e;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-  background-color: transparent;
-  color: #0a68c1;
-}
-
-.emotion-3 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-3 svg {
-  fill: #2e2e2e;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  color: #0a68c1;
-}
-
-.emotion-3:hover:not(:disabled) svg {
-  fill: #0a68c1;
-}
-
-.emotion-3:active:not(:disabled) {
-  background-color: #d5ebff;
-  color: #0a68c1;
-}
-
-.emotion-3:active:not(:disabled) svg {
-  fill: #0a68c1;
-}
-
-.emotion-3:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
-}
-
-.emotion-3:disabled svg {
-  fill: #c0c0c0;
-}
-
-.emotion-3 svg {
-  fill: #2e2e2e;
-}
-
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
-}
-
-.emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 48px;
-  min-width: 80px;
-  padding: 12px 16px;
-  cursor: default;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  background-color: transparent;
-  color: #2e2e2e;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  cursor: pointer;
-}
-
-.emotion-8 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-8 svg {
-  fill: #2e2e2e;
-}
-
-.emotion-8:hover:not(:disabled) {
-  background-color: #e6f4ff;
-  color: #0a68c1;
-}
-
-.emotion-8:hover:not(:disabled) svg {
-  fill: #0a68c1;
-}
-
-.emotion-8:active:not(:disabled) {
-  background-color: #d5ebff;
-  color: #0a68c1;
-}
-
-.emotion-8:active:not(:disabled) svg {
-  fill: #0a68c1;
-}
-
-.emotion-8:disabled {
-  background-color: #e4e4e4;
-  color: #c0c0c0;
-}
-
-.emotion-8:disabled svg {
-  fill: #c0c0c0;
-}
-
-<div
-    class="emotion-18"
-  >
-    <div
-      class="emotion-17"
-    >
-      <div
-        class="emotion-16"
         data-testid="tab-group"
       >
         <div
-          class="emotion-15"
+          class="emotion-17"
           role="tablist"
         >
           <div
@@ -2149,6 +2382,18 @@ exports[`Tab Group changes focus on tab 1`] = `
               </div>
             </button>
           </div>
+          <div
+            aria-hidden="true"
+            class="emotion-15"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px);"
+          />
+          <div
+            class="emotion-16"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
         </div>
       </div>
     </div>
@@ -2158,7 +2403,7 @@ exports[`Tab Group changes focus on tab 1`] = `
 
 exports[`Tab Group clears focus onMouseDown 1`] = `
 <DocumentFragment>
-  .emotion-18 {
+  .emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2185,7 +2430,7 @@ exports[`Tab Group clears focus onMouseDown 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-17 {
+.emotion-19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2194,11 +2439,11 @@ exports[`Tab Group clears focus onMouseDown 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-.emotion-16 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
@@ -2217,10 +2462,17 @@ exports[`Tab Group clears focus onMouseDown 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.emotion-15 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2243,7 +2495,7 @@ exports[`Tab Group clears focus onMouseDown 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  position: relative;
 }
 
 .emotion-4 {
@@ -2463,18 +2715,48 @@ exports[`Tab Group clears focus onMouseDown 1`] = `
   fill: #c0c0c0;
 }
 
+.emotion-15 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.emotion-15:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-16 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+}
+
 <div
-    class="emotion-18"
+    class="emotion-20"
   >
     <div
-      class="emotion-17"
+      class="emotion-19"
     >
       <div
-        class="emotion-16"
+        class="emotion-18"
         data-testid="tab-group"
       >
         <div
-          class="emotion-15"
+          class="emotion-17"
           role="tablist"
         >
           <div
@@ -2549,6 +2831,18 @@ exports[`Tab Group clears focus onMouseDown 1`] = `
               </div>
             </button>
           </div>
+          <div
+            aria-hidden="true"
+            class="emotion-15"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px);"
+          />
+          <div
+            class="emotion-16"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
         </div>
       </div>
     </div>
@@ -2558,7 +2852,7 @@ exports[`Tab Group clears focus onMouseDown 1`] = `
 
 exports[`Tab Group doesnt change focus if no other available tabs 1`] = `
 <DocumentFragment>
-  .emotion-18 {
+  .emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2585,7 +2879,7 @@ exports[`Tab Group doesnt change focus if no other available tabs 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-17 {
+.emotion-19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2594,11 +2888,11 @@ exports[`Tab Group doesnt change focus if no other available tabs 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-.emotion-16 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
@@ -2617,10 +2911,17 @@ exports[`Tab Group doesnt change focus if no other available tabs 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.emotion-15 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2643,7 +2944,7 @@ exports[`Tab Group doesnt change focus if no other available tabs 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  position: relative;
 }
 
 .emotion-4 {
@@ -2789,6 +3090,36 @@ exports[`Tab Group doesnt change focus if no other available tabs 1`] = `
   height: 0;
   width: 0;
   margin-top: -0.4267857142857143em;
+}
+
+.emotion-15 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.emotion-15:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-16 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
 }
 
 .emotion-8 {
@@ -2836,17 +3167,17 @@ exports[`Tab Group doesnt change focus if no other available tabs 1`] = `
 }
 
 <div
-    class="emotion-18"
+    class="emotion-20"
   >
     <div
-      class="emotion-17"
+      class="emotion-19"
     >
       <div
-        class="emotion-16"
+        class="emotion-18"
         data-testid="tab-group"
       >
         <div
-          class="emotion-15"
+          class="emotion-17"
           role="tablist"
         >
           <div
@@ -2923,6 +3254,18 @@ exports[`Tab Group doesnt change focus if no other available tabs 1`] = `
               </div>
             </button>
           </div>
+          <div
+            aria-hidden="true"
+            class="emotion-15"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px);"
+          />
+          <div
+            class="emotion-16"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
         </div>
       </div>
     </div>
@@ -2932,7 +3275,7 @@ exports[`Tab Group doesnt change focus if no other available tabs 1`] = `
 
 exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
 <DocumentFragment>
-  .emotion-18 {
+  .emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2959,7 +3302,7 @@ exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-17 {
+.emotion-19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2968,11 +3311,11 @@ exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-.emotion-16 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
@@ -2991,10 +3334,17 @@ exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.emotion-15 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3017,7 +3367,7 @@ exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  position: relative;
 }
 
 .emotion-4 {
@@ -3237,18 +3587,48 @@ exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
   fill: #c0c0c0;
 }
 
+.emotion-15 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.emotion-15:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-16 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+}
+
 <div
-    class="emotion-18"
+    class="emotion-20"
   >
     <div
-      class="emotion-17"
+      class="emotion-19"
     >
       <div
-        class="emotion-16"
+        class="emotion-18"
         data-testid="tab-group"
       >
         <div
-          class="emotion-15"
+          class="emotion-17"
           role="tablist"
         >
           <div
@@ -3323,6 +3703,18 @@ exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
               </div>
             </button>
           </div>
+          <div
+            aria-hidden="true"
+            class="emotion-15"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px);"
+          />
+          <div
+            class="emotion-16"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
         </div>
       </div>
     </div>
@@ -3342,12 +3734,6 @@ exports[`Tab Group renders dividers correctly when orientation is vertical 1`] =
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -3355,24 +3741,121 @@ exports[`Tab Group renders dividers correctly when orientation is vertical 1`] =
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-top: calc(-8px/2);
-  margin-bottom: calc(-8px/2);
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.emotion-24 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
 }
 
 .emotion-21 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: calc(8px/2);
-  margin-bottom: calc(8px/2);
-}
-
-.emotion-20 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
@@ -3391,7 +3874,7 @@ exports[`Tab Group renders dividers correctly when orientation is vertical 1`] =
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  position: relative;
 }
 
 .emotion-4 {
@@ -3402,6 +3885,7 @@ exports[`Tab Group renders dividers correctly when orientation is vertical 1`] =
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 100%;
 }
 
 .emotion-3 {
@@ -3421,7 +3905,7 @@ exports[`Tab Group renders dividers correctly when orientation is vertical 1`] =
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  min-width: 80px;
+  width: 100%;
   padding: 12px 16px;
   cursor: default;
   border: none;
@@ -3482,61 +3966,14 @@ exports[`Tab Group renders dividers correctly when orientation is vertical 1`] =
   fill: #2e2e2e;
 }
 
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: calc(-8px/2);
-  margin-right: calc(-8px/2);
-}
-
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(8px/2);
-  margin-right: calc(8px/2);
-}
-
-.emotion-0 {
-  font-family: "Noto Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-  font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: calc(-0.3642857142857143em + 1.2px);
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4267857142857143em;
+.emotion-5 {
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
 }
 
 .emotion-10 {
@@ -3556,7 +3993,7 @@ exports[`Tab Group renders dividers correctly when orientation is vertical 1`] =
   -webkit-text-decoration: none;
   text-decoration: none;
   min-height: 48px;
-  min-width: 80px;
+  width: 100%;
   padding: 12px 16px;
   cursor: default;
   border: none;
@@ -3611,64 +4048,48 @@ exports[`Tab Group renders dividers correctly when orientation is vertical 1`] =
   fill: #c0c0c0;
 }
 
-.emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-}
-
 .emotion-19 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #cccccc;
-  border-width: 2px;
-  border-radius: 0;
-  border-width: 0;
-  border-bottom-width: 0.5px;
+  background-color: #0a68c1;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
 }
 
-.emotion-5 {
-  border-style: solid;
-  border-color: #e4e4e4;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-top-width: 1px;
-  width: 100%;
+.emotion-19:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-19:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-19:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-20 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 2px;
+  height: 100%;
 }
 
 <div
-    class="emotion-22"
+    class="emotion-24"
   >
     <div
-      class="emotion-21"
+      class="emotion-1"
     >
       <div
-        class="emotion-20"
+        class="emotion-22"
         data-testid="tab-group"
       >
         <div
-          class="emotion-19"
+          class="emotion-21"
           role="tablist"
         >
           <div
@@ -3761,6 +4182,18 @@ exports[`Tab Group renders dividers correctly when orientation is vertical 1`] =
               </div>
             </button>
           </div>
+          <div
+            aria-hidden="true"
+            class="emotion-19"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 2px; height: 0px; transform: translateY(0px);"
+          />
+          <div
+            class="emotion-20"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
         </div>
       </div>
     </div>
@@ -3768,9 +4201,9 @@ exports[`Tab Group renders dividers correctly when orientation is vertical 1`] =
 </DocumentFragment>
 `;
 
-exports[`Tab Group renders with default styles 1`] = `
+exports[`Tab Group renders with custom tab bar track and indicator weight 1`] = `
 <DocumentFragment>
-  .emotion-18 {
+  .emotion-29 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3797,7 +4230,7 @@ exports[`Tab Group renders with default styles 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-17 {
+.emotion-28 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3806,11 +4239,11 @@ exports[`Tab Group renders with default styles 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-.emotion-16 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-27 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
@@ -3829,10 +4262,17 @@ exports[`Tab Group renders with default styles 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.emotion-15 {
+.emotion-26 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3855,7 +4295,525 @@ exports[`Tab Group renders with default styles 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  position: relative;
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-6 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-6 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-6:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-6:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-6:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-6:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-6:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-6:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-6 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-3 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-14 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-14 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-14 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-14:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-14:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-14:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-14:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-14:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-14:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-24 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.emotion-24:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-24:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-24:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-25 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 4px;
+}
+
+<div
+    class="emotion-29"
+  >
+    <div
+      class="emotion-28"
+    >
+      <div
+        class="emotion-27"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-26"
+          role="tablist"
+        >
+          <div
+            class="emotion-7"
+          >
+            <button
+              class="emotion-6"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-5"
+              >
+                <div
+                  class="emotion-2"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-0 emotion-1"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-2"
+                >
+                  <span
+                    class="emotion-3"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-7"
+          >
+            <button
+              class="emotion-14"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-5"
+              >
+                <div
+                  class="emotion-2"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-0 emotion-1"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-2"
+                >
+                  <span
+                    class="emotion-3"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-7"
+          >
+            <button
+              class="emotion-14"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-5"
+              >
+                <div
+                  class="emotion-2"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-0 emotion-1"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-2"
+                >
+                  <span
+                    class="emotion-3"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            aria-hidden="true"
+            class="emotion-24"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 4px; transform: translateX(0px);"
+          />
+          <div
+            class="emotion-25"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group renders with default styles 1`] = `
+<DocumentFragment>
+  .emotion-20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-19 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.emotion-17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  position: relative;
 }
 
 .emotion-4 {
@@ -4075,18 +5033,48 @@ exports[`Tab Group renders with default styles 1`] = `
   fill: #c0c0c0;
 }
 
+.emotion-15 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.emotion-15:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-16 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+}
+
 <div
-    class="emotion-18"
+    class="emotion-20"
   >
     <div
-      class="emotion-17"
+      class="emotion-19"
     >
       <div
-        class="emotion-16"
+        class="emotion-18"
         data-testid="tab-group"
       >
         <div
-          class="emotion-15"
+          class="emotion-17"
           role="tablist"
         >
           <div
@@ -4161,6 +5149,18 @@ exports[`Tab Group renders with default styles 1`] = `
               </div>
             </button>
           </div>
+          <div
+            aria-hidden="true"
+            class="emotion-15"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px);"
+          />
+          <div
+            class="emotion-16"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
         </div>
       </div>
     </div>
@@ -4170,7 +5170,7 @@ exports[`Tab Group renders with default styles 1`] = `
 
 exports[`Tab Group renders with default styles and divider 1`] = `
 <DocumentFragment>
-  .emotion-22 {
+  .emotion-24 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4197,7 +5197,7 @@ exports[`Tab Group renders with default styles and divider 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-21 {
+.emotion-23 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4206,11 +5206,11 @@ exports[`Tab Group renders with default styles and divider 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-.emotion-20 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
@@ -4229,10 +5229,17 @@ exports[`Tab Group renders with default styles and divider 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.emotion-19 {
+.emotion-21 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4255,7 +5262,7 @@ exports[`Tab Group renders with default styles and divider 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  position: relative;
 }
 
 .emotion-4 {
@@ -4473,6 +5480,36 @@ exports[`Tab Group renders with default styles and divider 1`] = `
 
 .emotion-10:disabled svg {
   fill: #c0c0c0;
+}
+
+.emotion-19 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.emotion-19:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-19:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-19:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-20 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
 }
 
 .emotion-6 {
@@ -4497,17 +5534,17 @@ exports[`Tab Group renders with default styles and divider 1`] = `
 }
 
 <div
-    class="emotion-22"
+    class="emotion-24"
   >
     <div
-      class="emotion-21"
+      class="emotion-23"
     >
       <div
-        class="emotion-20"
+        class="emotion-22"
         data-testid="tab-group"
       >
         <div
-          class="emotion-19"
+          class="emotion-21"
           role="tablist"
         >
           <div
@@ -4600,6 +5637,18 @@ exports[`Tab Group renders with default styles and divider 1`] = `
               </div>
             </button>
           </div>
+          <div
+            aria-hidden="true"
+            class="emotion-19"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px);"
+          />
+          <div
+            class="emotion-20"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
         </div>
       </div>
     </div>
@@ -4607,9 +5656,9 @@ exports[`Tab Group renders with default styles and divider 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Tab Group renders with icons and label for tabs 1`] = `
+exports[`Tab Group renders with fixed tab indicator percentage size 1`] = `
 <DocumentFragment>
-  .emotion-27 {
+  .emotion-29 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4636,7 +5685,7 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-26 {
+.emotion-28 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4645,11 +5694,11 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-.emotion-25 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-27 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
@@ -4668,10 +5717,17 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.emotion-24 {
+.emotion-26 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4694,7 +5750,1561 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  position: relative;
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-6 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-6 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-6:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-6:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-6:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-6:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-6:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-6:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-6 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-3 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-14 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-14 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-14 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-14:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-14:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-14:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-14:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-14:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-14:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-24 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.emotion-24:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-24:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-24:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-25 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+}
+
+.emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+<div
+    class="emotion-29"
+  >
+    <div
+      class="emotion-28"
+    >
+      <div
+        class="emotion-27"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-26"
+          role="tablist"
+        >
+          <div
+            class="emotion-7"
+          >
+            <button
+              class="emotion-6"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-5"
+              >
+                <div
+                  class="emotion-2"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-0 emotion-1"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-2"
+                >
+                  <span
+                    class="emotion-3"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-7"
+          >
+            <button
+              class="emotion-14"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-5"
+              >
+                <div
+                  class="emotion-2"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-0 emotion-1"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-2"
+                >
+                  <span
+                    class="emotion-3"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-7"
+          >
+            <button
+              class="emotion-14"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-5"
+              >
+                <div
+                  class="emotion-2"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-0 emotion-1"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-2"
+                >
+                  <span
+                    class="emotion-3"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            aria-hidden="true"
+            class="emotion-24"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px);"
+          />
+          <div
+            class="emotion-25"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group renders with fixed tab indicator size 1`] = `
+<DocumentFragment>
+  .emotion-29 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-28 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-27 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.emotion-26 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  position: relative;
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-6 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-6 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-6:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-6:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-6:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-6:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-6:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-6:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-6 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-3 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-14 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-14 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-14 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-14:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-14:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-14:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-14:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-14:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-14:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-24 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.emotion-24:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-24:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-24:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-25 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+}
+
+.emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+<div
+    class="emotion-29"
+  >
+    <div
+      class="emotion-28"
+    >
+      <div
+        class="emotion-27"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-26"
+          role="tablist"
+        >
+          <div
+            class="emotion-7"
+          >
+            <button
+              class="emotion-6"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-5"
+              >
+                <div
+                  class="emotion-2"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-0 emotion-1"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-2"
+                >
+                  <span
+                    class="emotion-3"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-7"
+          >
+            <button
+              class="emotion-14"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-5"
+              >
+                <div
+                  class="emotion-2"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-0 emotion-1"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-2"
+                >
+                  <span
+                    class="emotion-3"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-7"
+          >
+            <button
+              class="emotion-14"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-5"
+              >
+                <div
+                  class="emotion-2"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-0 emotion-1"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-2"
+                >
+                  <span
+                    class="emotion-3"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            aria-hidden="true"
+            class="emotion-24"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px);"
+          />
+          <div
+            class="emotion-25"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group renders with fixed tab indicator size which is larger than default 1`] = `
+<DocumentFragment>
+  .emotion-29 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-28 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-27 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.emotion-26 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  position: relative;
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+  background-color: transparent;
+  color: #0a68c1;
+}
+
+.emotion-6 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-6 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-6:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-6:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-6:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-6:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-6:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-6:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-6 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-3 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-14 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: transparent;
+  color: #2e2e2e;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-14 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-14 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-14:hover:not(:disabled) {
+  background-color: #e6f4ff;
+  color: #0a68c1;
+}
+
+.emotion-14:hover:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-14:active:not(:disabled) {
+  background-color: #d5ebff;
+  color: #0a68c1;
+}
+
+.emotion-14:active:not(:disabled) svg {
+  fill: #0a68c1;
+}
+
+.emotion-14:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-14:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-24 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.emotion-24:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-24:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-24:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-25 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+}
+
+.emotion-0 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2e2e2e;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+<div
+    class="emotion-29"
+  >
+    <div
+      class="emotion-28"
+    >
+      <div
+        class="emotion-27"
+        data-testid="tab-group"
+      >
+        <div
+          class="emotion-26"
+          role="tablist"
+        >
+          <div
+            class="emotion-7"
+          >
+            <button
+              class="emotion-6"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-5"
+              >
+                <div
+                  class="emotion-2"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-0 emotion-1"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-2"
+                >
+                  <span
+                    class="emotion-3"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-7"
+          >
+            <button
+              class="emotion-14"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-5"
+              >
+                <div
+                  class="emotion-2"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-0 emotion-1"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-2"
+                >
+                  <span
+                    class="emotion-3"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            class="emotion-7"
+          >
+            <button
+              class="emotion-14"
+              data-testid="tab"
+              role="tab"
+              type="button"
+            >
+              <div
+                class="emotion-5"
+              >
+                <div
+                  class="emotion-2"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-0 emotion-1"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-2"
+                >
+                  <span
+                    class="emotion-3"
+                  >
+                    Medium tab
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div
+            aria-hidden="true"
+            class="emotion-24"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px);"
+          />
+          <div
+            class="emotion-25"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tab Group renders with icons and label for tabs 1`] = `
+<DocumentFragment>
+  .emotion-29 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: calc(-8px/2);
+  margin-bottom: calc(-8px/2);
+}
+
+.emotion-28 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: calc(8px/2);
+  margin-bottom: calc(8px/2);
+}
+
+.emotion-27 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.emotion-26 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  border-radius: 0;
+  border-width: 0;
+  position: relative;
 }
 
 .emotion-7 {
@@ -4735,6 +7345,36 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+.emotion-24 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.emotion-24:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-24:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-24:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-25 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
 }
 
 .emotion-6 {
@@ -4924,17 +7564,17 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
 }
 
 <div
-    class="emotion-27"
+    class="emotion-29"
   >
     <div
-      class="emotion-26"
+      class="emotion-28"
     >
       <div
-        class="emotion-25"
+        class="emotion-27"
         data-testid="tab-group"
       >
         <div
-          class="emotion-24"
+          class="emotion-26"
           role="tablist"
         >
           <div
@@ -5069,6 +7709,18 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
               </div>
             </button>
           </div>
+          <div
+            aria-hidden="true"
+            class="emotion-24"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px);"
+          />
+          <div
+            class="emotion-25"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
         </div>
       </div>
     </div>
@@ -5078,7 +7730,7 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
 
 exports[`Tab Group renders with icons for tabs 1`] = `
 <DocumentFragment>
-  .emotion-21 {
+  .emotion-23 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5105,7 +7757,7 @@ exports[`Tab Group renders with icons for tabs 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-20 {
+.emotion-22 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5114,11 +7766,11 @@ exports[`Tab Group renders with icons for tabs 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-.emotion-19 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-21 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
@@ -5137,10 +7789,17 @@ exports[`Tab Group renders with icons for tabs 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.emotion-18 {
+.emotion-20 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5163,7 +7822,7 @@ exports[`Tab Group renders with icons for tabs 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  position: relative;
 }
 
 .emotion-5 {
@@ -5204,6 +7863,36 @@ exports[`Tab Group renders with icons for tabs 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+.emotion-18 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.emotion-18:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-18:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-18:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-19 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
 }
 
 .emotion-4 {
@@ -5366,17 +8055,17 @@ exports[`Tab Group renders with icons for tabs 1`] = `
 }
 
 <div
-    class="emotion-21"
+    class="emotion-23"
   >
     <div
-      class="emotion-20"
+      class="emotion-22"
     >
       <div
-        class="emotion-19"
+        class="emotion-21"
         data-testid="tab-group"
       >
         <div
-          class="emotion-18"
+          class="emotion-20"
           role="tablist"
         >
           <div
@@ -5484,6 +8173,18 @@ exports[`Tab Group renders with icons for tabs 1`] = `
               </div>
             </button>
           </div>
+          <div
+            aria-hidden="true"
+            class="emotion-18"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px);"
+          />
+          <div
+            class="emotion-19"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
         </div>
       </div>
     </div>
@@ -5493,7 +8194,7 @@ exports[`Tab Group renders with icons for tabs 1`] = `
 
 exports[`Tab Group renders with overrides 1`] = `
 <DocumentFragment>
-  .emotion-27 {
+  .emotion-29 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5520,7 +8221,7 @@ exports[`Tab Group renders with overrides 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-26 {
+.emotion-28 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5529,11 +8230,11 @@ exports[`Tab Group renders with overrides 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-.emotion-25 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-27 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
@@ -5552,7 +8253,14 @@ exports[`Tab Group renders with overrides 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .emotion-7 {
@@ -5593,6 +8301,36 @@ exports[`Tab Group renders with overrides 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+.emotion-24 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.emotion-24:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-24:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-24:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-25 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
 }
 
 .emotion-6 {
@@ -5781,7 +8519,7 @@ exports[`Tab Group renders with overrides 1`] = `
   display: inline-block;
 }
 
-.emotion-24 {
+.emotion-26 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5800,21 +8538,21 @@ exports[`Tab Group renders with overrides 1`] = `
   justify-content: flex-start;
   background-color: #ffffff;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  position: relative;
 }
 
 <div
-    class="emotion-27"
+    class="emotion-29"
   >
     <div
-      class="emotion-26"
+      class="emotion-28"
     >
       <div
-        class="emotion-25"
+        class="emotion-27"
         data-testid="tab-group"
       >
         <div
-          class="emotion-24"
+          class="emotion-26"
           role="tablist"
         >
           <div
@@ -5949,6 +8687,18 @@ exports[`Tab Group renders with overrides 1`] = `
               </div>
             </button>
           </div>
+          <div
+            aria-hidden="true"
+            class="emotion-24"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px);"
+          />
+          <div
+            class="emotion-25"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
         </div>
       </div>
     </div>
@@ -5958,7 +8708,7 @@ exports[`Tab Group renders with overrides 1`] = `
 
 exports[`Tab Group renders with sizing 1`] = `
 <DocumentFragment>
-  .emotion-18 {
+  .emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5985,7 +8735,7 @@ exports[`Tab Group renders with sizing 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-17 {
+.emotion-19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5994,11 +8744,11 @@ exports[`Tab Group renders with sizing 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-.emotion-16 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
@@ -6017,10 +8767,17 @@ exports[`Tab Group renders with sizing 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.emotion-15 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6043,7 +8800,7 @@ exports[`Tab Group renders with sizing 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  position: relative;
 }
 
 .emotion-4 {
@@ -6084,6 +8841,36 @@ exports[`Tab Group renders with sizing 1`] = `
   display: inline-flex;
   margin-left: calc(8px/2);
   margin-right: calc(8px/2);
+}
+
+.emotion-15 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.emotion-15:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-16 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
 }
 
 .emotion-3 {
@@ -6264,17 +9051,17 @@ exports[`Tab Group renders with sizing 1`] = `
 }
 
 <div
-    class="emotion-18"
+    class="emotion-20"
   >
     <div
-      class="emotion-17"
+      class="emotion-19"
     >
       <div
-        class="emotion-16"
+        class="emotion-18"
         data-testid="tab-group"
       >
         <div
-          class="emotion-15"
+          class="emotion-17"
           role="tablist"
         >
           <div
@@ -6349,6 +9136,18 @@ exports[`Tab Group renders with sizing 1`] = `
               </div>
             </button>
           </div>
+          <div
+            aria-hidden="true"
+            class="emotion-15"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px);"
+          />
+          <div
+            class="emotion-16"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
         </div>
       </div>
     </div>
@@ -6358,7 +9157,7 @@ exports[`Tab Group renders with sizing 1`] = `
 
 exports[`Tab Group sets active on click 1`] = `
 <DocumentFragment>
-  .emotion-18 {
+  .emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6385,7 +9184,7 @@ exports[`Tab Group sets active on click 1`] = `
   margin-bottom: calc(-8px/2);
 }
 
-.emotion-17 {
+.emotion-19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6394,11 +9193,11 @@ exports[`Tab Group sets active on click 1`] = `
   margin-bottom: calc(8px/2);
 }
 
-.emotion-16 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
@@ -6417,10 +9216,17 @@ exports[`Tab Group sets active on click 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.emotion-15 {
+.emotion-17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6443,7 +9249,7 @@ exports[`Tab Group sets active on click 1`] = `
   border-width: 2px;
   border-radius: 0;
   border-width: 0;
-  border-bottom-width: 0.5px;
+  position: relative;
 }
 
 .emotion-4 {
@@ -6663,18 +9469,48 @@ exports[`Tab Group sets active on click 1`] = `
   fill: #c0c0c0;
 }
 
+.emotion-15 {
+  background-color: #0a68c1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.emotion-15:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:focus:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-15:disabled {
+  background-color: #c0c0c0;
+}
+
+.emotion-16 {
+  background-color: #e4e4e4;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+}
+
 <div
-    class="emotion-18"
+    class="emotion-20"
   >
     <div
-      class="emotion-17"
+      class="emotion-19"
     >
       <div
-        class="emotion-16"
+        class="emotion-18"
         data-testid="tab-group"
       >
         <div
-          class="emotion-15"
+          class="emotion-17"
           role="tablist"
         >
           <div
@@ -6749,6 +9585,18 @@ exports[`Tab Group sets active on click 1`] = `
               </div>
             </button>
           </div>
+          <div
+            aria-hidden="true"
+            class="emotion-15"
+            data-testid="tab-bar-indicator"
+            role="presentation"
+            style="width: 0px; height: 2px; transform: translateX(0px);"
+          />
+          <div
+            class="emotion-16"
+            data-testid="tab-bar-track"
+            role="presentation"
+          />
         </div>
       </div>
     </div>

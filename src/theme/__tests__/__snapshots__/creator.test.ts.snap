@@ -638,6 +638,16 @@ Object {
     },
     "tabGroup": Object {
       "stylePreset": "tabGroup",
+      "tabBarIndicator": Object {
+        "motionDuration": "motionDuration030",
+        "motionTiming": "motionEaseInAndOut",
+        "stylePreset": "tabBarIndicator",
+        "weight": "borderWidth020",
+      },
+      "tabBarTrack": Object {
+        "stylePreset": "tabBarTrack",
+        "weight": "borderWidth020",
+      },
     },
     "tag": Object {
       "large": Object {
@@ -2236,6 +2246,28 @@ Object {
       "selected": Object {
         "color": "{{colors.inkBrand010}}",
         "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "tabBarIndicator": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactivePrimary030}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.inkNonEssential}}",
+      },
+      "focus": Object {
+        "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.interactivePrimary030}}",
+      },
+    },
+    "tabBarTrack": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface040}}",
       },
     },
     "tabGroup": Object {

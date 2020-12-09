@@ -130,6 +130,7 @@ Array [
   "getMinWidth",
   "getSize",
   "getSpace",
+  "getWeight",
   "getPresetStyles",
   "getStylePresetFromTheme",
   "getStylePreset",

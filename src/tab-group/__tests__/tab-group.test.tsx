@@ -16,42 +16,42 @@ import {createTheme, compileTheme} from '../../theme';
 const renderTabGroupDefault = (props: TabGroupProps) => <TabGroup {...props} />;
 
 const tabsWithLabel = [
+  <Tab tabKey={0}>Medium tab</Tab>,
   <Tab tabKey={1}>Medium tab</Tab>,
   <Tab tabKey={2}>Medium tab</Tab>,
-  <Tab tabKey={3}>Medium tab</Tab>,
 ];
 
 const tabsWithIcons = [
+  <Tab tabKey={0}>
+    <IconFilledEmail />
+  </Tab>,
   <Tab tabKey={1}>
     <IconFilledEmail />
   </Tab>,
   <Tab tabKey={2}>
-    <IconFilledEmail />
-  </Tab>,
-  <Tab tabKey={3}>
     <IconFilledEmail />
   </Tab>,
 ];
 
 const tabsWithLabelAndIcons = [
+  <Tab tabKey={0}>
+    <IconFilledEmail />
+    Medium tab
+  </Tab>,
   <Tab tabKey={1}>
     <IconFilledEmail />
     Medium tab
   </Tab>,
   <Tab tabKey={2}>
-    <IconFilledEmail />
-    Medium tab
-  </Tab>,
-  <Tab tabKey={3}>
     <IconFilledEmail />
     Medium tab
   </Tab>,
 ];
 
 const tabPanes = [
-  <TabPane tabKey={1}>First tab content</TabPane>,
-  <TabPane tabKey={2}>Second tab content</TabPane>,
-  <TabPane tabKey={3}>Third tab content</TabPane>,
+  <TabPane tabKey={0}>First tab content</TabPane>,
+  <TabPane tabKey={1}>Second tab content</TabPane>,
+  <TabPane tabKey={2}>Third tab content</TabPane>,
 ];
 
 const selectedTabStyled = 'color: #0a68c1';
@@ -301,11 +301,11 @@ describe('Tab Group', () => {
   it('doesnt change focus if no other available tabs', async () => {
     const props: TabGroupProps = {
       children: [
-        <Tab tabKey={1}>Medium tab</Tab>,
-        <Tab disabled tabKey={2}>
+        <Tab tabKey={0}>Medium tab</Tab>,
+        <Tab disabled tabKey={1}>
           Medium tab
         </Tab>,
-        <Tab disabled tabKey={3}>
+        <Tab disabled tabKey={2}>
           Medium tab
         </Tab>,
       ],
@@ -346,5 +346,68 @@ describe('Tab Group', () => {
     expect(firstTab).toHaveStyle(selectedTabStyled);
 
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('renders with fixed tab indicator size', () => {
+    const props: TabGroupProps = {
+      children: tabsWithLabelAndIcons,
+      size: TabSize.Medium,
+      overrides: {
+        tabBarIndicator: {
+          length: 'sizing050',
+        },
+      },
+    };
+
+    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with fixed tab indicator size which is larger than default', () => {
+    const props: TabGroupProps = {
+      children: tabsWithLabelAndIcons,
+      size: TabSize.Medium,
+      overrides: {
+        tabBarIndicator: {
+          length: 'sizing120',
+        },
+      },
+    };
+
+    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with fixed tab indicator percentage size', () => {
+    const props: TabGroupProps = {
+      children: tabsWithLabelAndIcons,
+      size: TabSize.Medium,
+      overrides: {
+        tabBarIndicator: {
+          length: '75%',
+        },
+      },
+    };
+
+    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders with custom tab bar track and indicator weight', () => {
+    const props: TabGroupProps = {
+      children: tabsWithLabelAndIcons,
+      size: TabSize.Medium,
+      overrides: {
+        tabBarTrack: {
+          weight: 'borderWidth030',
+        },
+        tabBarIndicator: {
+          weight: 'borderWidth030',
+        },
+      },
+    };
+
+    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    expect(fragment).toMatchSnapshot();
   });
 });

@@ -178,6 +178,22 @@ Tabs have a number of props to facilitate a variety of uses:
     <Prop name="stylePreset" type="MQ<string>">
       If provided, this overrides the style preset applied to the Tab Group.
     </Prop>
+    <Prop name="tabBarTrack" type="object">
+      <Prop name="weight" type="string">
+        If provided, this sets a fixed weight (height if horizontal, width if vertical) to the tabBarTrack. This can be a sizing token
+        from the theme, or any CSS length value.
+      </Prop>
+    </Prop>
+    <Prop name="tabBarIndicator" type="object">
+      <Prop name="length" type="string">
+        If provided, this sets a fixed width to the tabBarIndicator. This can be a sizing token
+      from the theme, or any CSS length value, e.g. 75% of the default full-width.
+      </Prop>
+      <Prop name="weight" type="string">
+        If provided, this sets a fixed weight (height if horizontal, width if vertical) to the tabBarIndicator. This can be a sizing token
+        from the theme, or any CSS length value.
+      </Prop>
+    </Prop>
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="tabGroup" />
   </Prop>
@@ -191,15 +207,15 @@ Tabs have a number of props to facilitate a variety of uses:
   component={state => (
     <TabGroup
       tabPanes={[
-        <TabPane tabKey={1}>First tab content</TabPane>,
-        <TabPane tabKey={2}>Second tab content</TabPane>,
-        <TabPane tabKey={3}>Third tab content</TabPane>,
+        <TabPane tabKey={0}>First tab content</TabPane>,
+        <TabPane tabKey={1}>Second tab content</TabPane>,
+        <TabPane tabKey={2}>Third tab content</TabPane>,
       ]}
       {...state}
     >
+      <Tab tabKey={0}>Tab</Tab>
       <Tab tabKey={1}>Tab</Tab>
       <Tab tabKey={2}>Tab</Tab>
-      <Tab tabKey={3}>Tab</Tab>
     </TabGroup>
   )}
   knobs={[
@@ -219,6 +235,83 @@ Tabs have a number of props to facilitate a variety of uses:
         {
           label: 'TabSize.Large',
           value: TabSize.Large,
+        },
+      ],
+    },
+    {
+      name: 'Tab Bar Track Weight',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            tabBarTrack: {
+              weight: undefined,
+            },
+          },
+          isDefault: true,
+        },
+        {
+          label: 'borderWidth030',
+          value: {
+            tabBarTrack: {
+              weight: 'borderWidth030',
+            }
+          },
+        }
+      ],
+    },
+    {
+      name: 'Tab Bar Indicator Weight',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            tabBarIndicator: {
+              weight: undefined,
+            }
+          },
+          isDefault: true,
+        },
+        {
+          label: 'borderWidth030',
+          value: {
+            tabBarIndicator: {
+              weight: 'borderWidth030',
+            },
+          },
+        },
+      ],
+    },
+    {
+      name: 'Tab Bar Indicator Length',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            tabBarIndicator: {
+              length: undefined,
+            }
+          },
+          isDefault: true,
+        },
+        {
+          label: '75%',
+          value: {
+            tabBarIndicator: {
+              length: '75%',
+            },
+          },
+        },
+        {
+          label: 'sizing050',
+          value: {
+            tabBarIndicator: {
+              length: 'sizing050',
+            },
+          },
         },
       ],
     },

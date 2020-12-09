@@ -1,5 +1,6 @@
 import {getDefaultedValue} from './base';
 import {
+  getBorderFromTheme,
   getSizingFromTheme,
   getSpacingFromTheme,
   getSpacingInsetFromTheme,
@@ -45,3 +46,4 @@ export const getMinHeight = getDefaultedValue(getSizingFromTheme, 'minHeight');
 export const getMinWidth = getDefaultedValue(getSizingFromTheme, 'minWidth');
 export const getSize = getDefaultedValue(getSizingFromTheme, 'size');
 export const getSpace = getDefaultedValue(getSpacingFromTheme, 'space');
+export const getWeight = getDefaultedValue(getBorderFromTheme, 'weight');

@@ -7,7 +7,10 @@ import {as as emotionAs} from '../utils/component';
 import {IndeterminateProgressIndicator} from '../icons/filled/custom/indeterminate-progress-indicator';
 import {useInstrumentation, EventTrigger} from '../instrumentation';
 
-export const Button: React.FC<ButtonOrButtonLinkProps> = props => {
+export const Button = React.forwardRef<
+  HTMLButtonElement | HTMLAnchorElement,
+  ButtonOrButtonLinkProps
+>((props, ref) => {
   const theme = useTheme();
   const {fireEvent} = useInstrumentation();
 
@@ -65,7 +68,8 @@ export const Button: React.FC<ButtonOrButtonLinkProps> = props => {
   });
 
   return (
-    <StyledFlag {...getProps(props)}>
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    <StyledFlag {...getProps(props)} ref={ref as any}>
       {loading ? (
         <IndeterminateProgressIndicator
           overrides={{
@@ -78,4 +82,4 @@ export const Button: React.FC<ButtonOrButtonLinkProps> = props => {
       )}
     </StyledFlag>
   );
-};
+});

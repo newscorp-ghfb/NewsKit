@@ -639,6 +639,16 @@ Object {
     },
     "tabGroup": Object {
       "stylePreset": "tabGroup",
+      "tabBarIndicator": Object {
+        "motionDuration": "motionDuration030",
+        "motionTiming": "motionEaseInAndOut",
+        "stylePreset": "tabBarIndicator",
+        "weight": "borderWidth020",
+      },
+      "tabBarTrack": Object {
+        "stylePreset": "tabBarTrack",
+        "weight": "borderWidth020",
+      },
     },
     "tag": Object {
       "large": Object {
@@ -2237,6 +2247,28 @@ Object {
       "selected": Object {
         "color": "#0a68c1",
         "iconColor": "#2e2e2e",
+      },
+    },
+    "tabBarIndicator": Object {
+      "base": Object {
+        "backgroundColor": "#0a68c1",
+      },
+      "disabled": Object {
+        "backgroundColor": "#c0c0c0",
+      },
+      "focus": Object {
+        "backgroundColor": "#02509b",
+      },
+      "hover": Object {
+        "backgroundColor": "#02509b",
+      },
+      "selected": Object {
+        "backgroundColor": "#0a68c1",
+      },
+    },
+    "tabBarTrack": Object {
+      "base": Object {
+        "backgroundColor": "#e4e4e4",
       },
     },
     "tabGroup": Object {

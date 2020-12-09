@@ -10,6 +10,15 @@ export interface TabGroupProps {
   overrides?: {
     stylePreset?: MQ<string>;
     spaceInset?: MQ<string>;
+    tabBarTrack?: {
+      weight?: string;
+    };
+    tabBarIndicator?: {
+      length?: string;
+      weight?: string;
+      motionDuration?: string;
+      motionTiming?: string;
+    };
   };
 }
 

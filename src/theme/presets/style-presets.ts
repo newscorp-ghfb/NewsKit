@@ -824,6 +824,30 @@ stylePresets.tabGroup = {
   },
 };
 
+stylePresets.tabBarTrack = {
+  base: {
+    backgroundColor: '{{colors.interface040}}',
+  },
+};
+
+stylePresets.tabBarIndicator = {
+  base: {
+    backgroundColor: '{{colors.interactivePrimary030}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interactivePrimary040}}',
+  },
+  focus: {
+    backgroundColor: '{{colors.interactivePrimary040}}',
+  },
+  selected: {
+    backgroundColor: '{{colors.interactivePrimary030}}',
+  },
+  disabled: {
+    backgroundColor: '{{colors.inkNonEssential}}',
+  },
+};
+
 // Text Input
 stylePresets.textInput = {
   base: {

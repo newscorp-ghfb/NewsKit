@@ -472,6 +472,16 @@ export const componentDefaults = {
   },
   tabGroup: {
     stylePreset: 'tabGroup',
+    tabBarTrack: {
+      stylePreset: 'tabBarTrack',
+      weight: 'borderWidth020',
+    },
+    tabBarIndicator: {
+      stylePreset: 'tabBarIndicator',
+      weight: 'borderWidth020',
+      motionDuration: 'motionDuration030',
+      motionTiming: 'motionEaseInAndOut',
+    },
   },
   textInput: {
     small: {
