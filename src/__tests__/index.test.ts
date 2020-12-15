@@ -4,7 +4,9 @@ describe('index exports', () => {
   test('all expected functions and components are exported', () => {
     expect(
       // Exclude icons as these will change between local and CI builds.
-      Object.keys(newskit).filter(exportKey => !exportKey.startsWith('Icon')),
+      Object.keys(newskit).filter(
+        exportKey => !exportKey.match(/^Icon(?!Button)/),
+      ),
     ).toMatchSnapshot();
   });
 

@@ -24,6 +24,7 @@ Array [
   "Visible",
   "Hidden",
   "Headline",
+  "IconButton",
   "IndeterminateProgressIndicator",
   "Svg",
   "toNewsKitIcon",

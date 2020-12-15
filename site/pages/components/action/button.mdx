@@ -354,3 +354,79 @@ Any prop valid on an [Anchor HTML element](https://developer.mozilla.org/en-US/d
   </Button>
 `}
 </Code>
+<Code>
+  {`
+  <IconButton aria-label="Link icon" href="https://www.newskit.co.uk/">
+    <IconFilledLink />
+  </IconButton>
+  `}
+</Code>
+
+
+## Variations
+
+Buttons are cues that trigger actions. They are foundation components that allow users to perform actions or navigate an experience in our products.
+
+NewsKit provides 5 types of predefined style preset button variants and corresponding icon buttons, each representing a specific user intention or visual cue that can be performed by the user.
+
+### Primary
+Intended as the leading trigger or cue of an action. Visually should be the most dominant visual cue used on a page, and as such should be used sparingly to ensure visual balance in the page hierarchy.
+
+Add a button primary style preset token (buttonSolidPrimary, buttonOutlinedPrimary, buttonMinimalPrimary, iconButtonSolidPrimary, iconButtonOutlinedPrimary, iconButtonMinimalPrimary) to the overrides .
+
+| Type           |  Button                                                                          | Icon Button
+| -------------- | :------------------------------------------------------------------------------: |:-------------------------------------------------------------------------------------------: |
+| Solid          |  <Button overrides={{stylePreset: 'buttonSolidPrimary'}}> Click me </Button>     | <IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonSolidPrimary'}}><IconFilledEmail /></IconButton>      |     
+| Outlined       |  <Button overrides={{stylePreset: 'buttonOutlinedPrimary'}}> Click me </Button>     | <IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}><IconFilledEmail /></IconButton>   |
+| Minimal        |  <Button overrides={{stylePreset: 'buttonMinimalPrimary'}}> Click me </Button>     | <IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonMinimalPrimary'}}><IconFilledEmail /></IconButton>    |
+
+
+### Secondary
+Indicates actions with lower priority when compared to the primary button. Visually should be more subdued to compliment the primary button.
+
+Add a button secondary style preset token (buttonSolidSecondary, buttonOutlinedSecondary, buttonMinimalSecondary, iconButtonSolidSecondary, iconButtonOutlinedSecondary, iconButtonMinimalSecondary) to the overrides .
+
+| Type           |  Button                                                                          | Icon Button
+| -------------- | :------------------------------------------------------------------------------: |:-------------------------------------------------------------------------------------------: |
+| Solid          |  <Button overrides={{stylePreset: 'buttonSolidSecondary'}}> Click me </Button>     | <IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonSolidSecondary'}}><IconFilledEmail /></IconButton>      |     
+| Outlined       |  <Button overrides={{stylePreset: 'buttonOutlinedSecondary'}}> Click me </Button>     | <IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonOutlinedSecondary'}}><IconFilledEmail /></IconButton>   |
+| Minimal        |  <Button overrides={{stylePreset: 'buttonMinimalSecondary'}}> Click me </Button>     | <IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonMinimalSecondary'}}><IconFilledEmail /></IconButton>    |
+
+
+### Positive
+A semantic button that can hint towards a positive consequence.
+
+Add a button positive style preset token (buttonSolidPositive, buttonOutlinedPositive, buttonMinimalPositive, iconButtonSolidPositive, iconButtonOutlinedPositive, iconButtonMinimalPositive) to the overrides .
+
+| Type           |  Button                                                                          | Icon Button
+| -------------- | :------------------------------------------------------------------------------: |:-------------------------------------------------------------------------------------------: |
+| Solid          |  <Button overrides={{stylePreset: 'buttonSolidPositive'}}> Click me </Button>     | <IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonSolidPositive'}}><IconFilledEmail /></IconButton>      |     
+| Outlined       |  <Button overrides={{stylePreset: 'buttonOutlinedPositive'}}> Click me </Button>     | <IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonOutlinedPositive'}}><IconFilledEmail /></IconButton>   |
+| Minimal        |  <Button overrides={{stylePreset: 'buttonMinimalPositive'}}> Click me </Button>     | <IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonMinimalPositive'}}><IconFilledEmail /></IconButton>    |
+
+
+### Negative
+A semantic button that can hint towards a negative consequence.
+
+Add a button negative style preset token (buttonSolidNegative, buttonOutlinedNegative, buttonMinimalNegative, iconButtonSolidNegative, iconButtonOutlinedNegative, iconButtonMinimalNegative) to the overrides .
+
+| Type           |  Button                                                                          | Icon Button
+| -------------- | :------------------------------------------------------------------------------: |:-------------------------------------------------------------------------------------------: |
+| Solid          |  <Button overrides={{stylePreset: 'buttonSolidNegative'}}> Click me </Button>     | <IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonSolidNegative'}}><IconFilledEmail /></IconButton>      |     
+| Outlined       |  <Button overrides={{stylePreset: 'buttonOutlinedNegative'}}> Click me </Button>     | <IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonOutlinedNegative'}}><IconFilledEmail /></IconButton>   |
+| Minimal        |  <Button overrides={{stylePreset: 'buttonMinimalNegative'}}> Click me </Button>     | <IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonMinimalNegative'}}><IconFilledEmail /></IconButton>    |
+
+
+### Inverse
+Intended for use on a dark background.
+
+Add a button inverse style preset token (buttonSolidInverse, buttonOutlinedInverse, buttonSolidInverse, iconButtonSolidInverse, iconButtonOutlinedInverse, iconButtonMinimalInverse) to the overrides .
+<LegacyBlock backgroundColor="neutral080" display="inline-block">
+
+| Type           |  Button                                                                          | Icon Button
+| -------------- | :------------------------------------------------------------------------------: |:-------------------------------------------------------------------------------------------: |
+| Solid          |  <Button overrides={{stylePreset: 'buttonSolidInverse'}}> Click me </Button>     | <IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonSolidInverse'}}><IconFilledEmail /></IconButton>      |     
+| Outlined       |  <Button overrides={{stylePreset: 'buttonOutlinedInverse'}}> Click me </Button>  | <IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonOutlinedInverse'}}><IconFilledEmail /></IconButton>   |
+| Minimal        |  <Button overrides={{stylePreset: 'buttonMinimalInverse'}}> Click me </Button>   | <IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonMinimalInverse'}}><IconFilledEmail /></IconButton>    |
+
+</LegacyBlock>

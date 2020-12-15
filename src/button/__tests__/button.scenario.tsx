@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Button} from '..';
-import {styled} from '../../utils/style';
+import {getColorFromTheme, styled} from '../../utils/style';
 import {ButtonOverrides, ButtonSize} from '../types';
 import {IconFilledEmail} from '../../icons';
 import {Stack, StackDistribution} from '../../stack';
@@ -45,6 +45,15 @@ const Spacer = styled.div`
   margin-bottom: 20px;
 `;
 
+const Background = styled.div<{hasBackground?: boolean}>`
+  margin-top: 24px;
+  ${({hasBackground, theme}) =>
+    hasBackground && {
+      background: getColorFromTheme('black')({theme}),
+      color: getColorFromTheme('white')({theme}),
+    }}
+`;
+
 interface IntentKindStylePreset {
   kind: string;
   intentStylePreset: string;
@@ -62,11 +71,12 @@ const buttonSizes: Array<{
 const states = ['Default', 'Focused', 'Disabled', 'Loading'];
 
 const ButtonIntentKindsScenario: React.FC<{
+  hasBackground?: boolean;
   name: string;
   buttonIntents: IntentKindStylePreset[];
   overrides: ButtonOverrides;
-}> = ({name, buttonIntents: buttonKinds, overrides}) => (
-  <>
+}> = ({hasBackground = false, name, buttonIntents: buttonKinds, overrides}) => (
+  <Background hasBackground={hasBackground}>
     <StorybookSubHeading>{name}</StorybookSubHeading>
     <Grid>
       <Cell xsHidden sm={3}>
@@ -109,7 +119,7 @@ const ButtonIntentKindsScenario: React.FC<{
         );
       })}
     </Grid>
-  </>
+  </Background>
 );
 
 export default {
@@ -257,6 +267,26 @@ export default {
           overrides={{
             loadingIndicator: {
               stylePreset: 'indeterminateProgressIndicatorPositive',
+            },
+          }}
+        />
+      ),
+    },
+    {
+      name: 'button-inverse',
+      type: 'story',
+      component: () => (
+        <ButtonIntentKindsScenario
+          hasBackground
+          name="Button Inverse"
+          buttonIntents={[
+            {kind: 'Solid', intentStylePreset: 'buttonSolidInverse'},
+            {kind: 'Outlined', intentStylePreset: 'buttonOutlinedInverse'},
+            {kind: 'Minimal', intentStylePreset: 'buttonMinimalInverse'},
+          ]}
+          overrides={{
+            loadingIndicator: {
+              stylePreset: 'indeterminateProgressIndicatorInverse',
             },
           }}
         />

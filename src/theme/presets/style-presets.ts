@@ -167,6 +167,30 @@ stylePresets.buttonSolidPositive = {
     iconColor: '{{colors.inkPositive}}',
   },
 };
+stylePresets.buttonSolidInverse = {
+  base: {
+    backgroundColor: '{{colors.interactiveInverse030}}',
+    borderRadius: '{{borders.borderRadiusDefault}}',
+    color: '{{colors.inkContrast}}',
+    iconColor: '{{colors.inkContrast}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interactiveInverse040}}',
+  },
+  active: {
+    backgroundColor: '{{colors.interactiveInverse050}}',
+  },
+  disabled: {
+    backgroundColor: '{{colors.interactiveDisabled010}}',
+    color: '{{colors.inkNonEssential}}',
+    iconColor: '{{colors.inkNonEssential}}',
+  },
+  loading: {
+    backgroundColor: '{{colors.interactiveInverse020}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
+  },
+};
 
 stylePresets.buttonOutlinedPrimary = {
   base: {
@@ -280,6 +304,34 @@ stylePresets.buttonOutlinedPositive = {
     borderStyle: 'none',
   },
 };
+stylePresets.buttonOutlinedInverse = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.interactiveInverse030}}',
+    borderWidth: '{{borders.borderWidth010}}',
+    borderRadius: '{{borders.borderRadiusDefault}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interactiveInverse010}}',
+    borderColor: '{{colors.interactiveInverse040}}',
+  },
+  active: {
+    backgroundColor: '{{colors.interactiveInverse020}}',
+    borderColor: '{{colors.interactiveInverse050}}',
+  },
+  disabled: {
+    borderColor: '{{colors.interactiveDisabled010}}',
+    color: '{{colors.inkNonEssential}}',
+    iconColor: '{{colors.inkNonEssential}}',
+  },
+  loading: {
+    backgroundColor: '{{colors.interactiveInverse020}}',
+    borderStyle: 'none',
+  },
+};
 
 stylePresets.buttonMinimalPrimary = {
   base: {
@@ -365,6 +417,27 @@ stylePresets.buttonMinimalPositive = {
     backgroundColor: '{{colors.interactivePositive020}}',
   },
 };
+stylePresets.buttonMinimalInverse = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    borderRadius: '{{borders.borderRadiusDefault}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interactiveInverse010}}',
+  },
+  active: {
+    backgroundColor: '{{colors.interactiveInverse020}}',
+  },
+  disabled: {
+    color: '{{colors.inkNonEssential}}',
+    iconColor: '{{colors.inkNonEssential}}',
+  },
+  loading: {
+    backgroundColor: '{{colors.interactiveInverse020}}',
+  },
+};
 
 stylePresets.buttonDefault = stylePresets.buttonSolidPrimary;
 
@@ -396,7 +469,6 @@ stylePresets.iconButtonSolidPrimary = {
     iconColor: '{{colors.inkBrand010}}',
   },
 };
-
 stylePresets.iconButtonSolidSecondary = {
   base: {
     backgroundColor: '{{colors.interactiveSecondary030}}',
@@ -421,7 +493,6 @@ stylePresets.iconButtonSolidSecondary = {
     iconColor: '{{colors.inkBase}}',
   },
 };
-
 stylePresets.iconButtonSolidNegative = {
   base: {
     backgroundColor: '{{colors.interactiveNegative030}}',
@@ -446,7 +517,6 @@ stylePresets.iconButtonSolidNegative = {
     iconColor: '{{colors.inkNegative}}',
   },
 };
-
 stylePresets.iconButtonSolidPositive = {
   base: {
     backgroundColor: '{{colors.interactivePositive030}}',
@@ -469,6 +539,30 @@ stylePresets.iconButtonSolidPositive = {
     backgroundColor: '{{colors.interactivePositive020}}',
     color: '{{colors.inkPositive}}',
     iconColor: '{{colors.inkPositive}}',
+  },
+};
+stylePresets.iconButtonSolidInverse = {
+  base: {
+    backgroundColor: '{{colors.interactiveInverse030}}',
+    borderRadius: '{{borders.borderRadiusCircle}}',
+    color: '{{colors.inkContrast}}',
+    iconColor: '{{colors.inkContrast}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interactiveInverse040}}',
+  },
+  active: {
+    backgroundColor: '{{colors.interactiveInverse050}}',
+  },
+  disabled: {
+    backgroundColor: '{{colors.interactiveDisabled010}}',
+    color: '{{colors.inkNonEssential}}',
+    iconColor: '{{colors.inkNonEssential}}',
+  },
+  loading: {
+    backgroundColor: '{{colors.interactiveInverse020}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
   },
 };
 
@@ -584,12 +678,41 @@ stylePresets.iconButtonOutlinedPositive = {
     borderStyle: 'none',
   },
 };
+stylePresets.iconButtonOutlinedInverse = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.interactiveInverse030}}',
+    borderWidth: '{{borders.borderWidth010}}',
+    borderRadius: '{{borders.borderRadiusCircle}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interactiveInverse010}}',
+    borderColor: '{{colors.interactiveInverse040}}',
+  },
+  active: {
+    backgroundColor: '{{colors.interactiveInverse020}}',
+    borderColor: '{{colors.interactiveInverse050}}',
+  },
+  disabled: {
+    borderColor: '{{colors.interactiveDisabled010}}',
+    color: '{{colors.inkNonEssential}}',
+    iconColor: '{{colors.inkNonEssential}}',
+  },
+  loading: {
+    backgroundColor: '{{colors.interactiveInverse020}}',
+    borderStyle: 'none',
+  },
+};
+
 stylePresets.iconButtonMinimalPrimary = {
   base: {
     backgroundColor: '{{colors.transparent}}',
+    borderRadius: '{{borders.borderRadiusCircle}}',
     color: '{{colors.inkBrand010}}',
     iconColor: '{{colors.inkBrand010}}',
-    borderRadius: '{{borders.borderRadiusCircle}}',
   },
   hover: {
     backgroundColor: '{{colors.interactivePrimary010}}',
@@ -598,21 +721,20 @@ stylePresets.iconButtonMinimalPrimary = {
     backgroundColor: '{{colors.interactivePrimary020}}',
   },
   disabled: {
+    backgroundColor: '{{colors.transparent}}',
     color: '{{colors.inkNonEssential}}',
     iconColor: '{{colors.inkNonEssential}}',
-    backgroundColor: '{{colors.transparent}}',
   },
   loading: {
     backgroundColor: '{{colors.interactivePrimary020}}',
-    color: '{{colors.inkBrand010}}',
   },
 };
 stylePresets.iconButtonMinimalSecondary = {
   base: {
     backgroundColor: '{{colors.transparent}}',
+    borderRadius: '{{borders.borderRadiusCircle}}',
     color: '{{colors.inkBase}}',
     iconColor: '{{colors.inkBase}}',
-    borderRadius: '{{borders.borderRadiusCircle}}',
   },
   hover: {
     backgroundColor: '{{colors.interactiveSecondary010}}',
@@ -633,7 +755,6 @@ stylePresets.iconButtonMinimalSecondary = {
     color: '{{colors.inkInverse}}',
   },
 };
-
 stylePresets.iconButtonMinimalNegative = {
   base: {
     backgroundColor: '{{colors.transparent}}',
@@ -674,6 +795,28 @@ stylePresets.iconButtonMinimalPositive = {
   },
   loading: {
     backgroundColor: '{{colors.interactivePositive020}}',
+  },
+};
+stylePresets.iconButtonMinimalInverse = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    borderRadius: '{{borders.borderRadiusCircle}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interactiveInverse010}}',
+  },
+  active: {
+    backgroundColor: '{{colors.interactiveInverse020}}',
+  },
+  disabled: {
+    backgroundColor: '{{colors.transparent}}',
+    color: '{{colors.inkNonEssential}}',
+    iconColor: '{{colors.inkNonEssential}}',
+  },
+  loading: {
+    backgroundColor: '{{colors.interactiveInverse020}}',
   },
 };
 
@@ -753,6 +896,11 @@ stylePresets.indeterminateProgressIndicatorNegative = {
 stylePresets.indeterminateProgressIndicatorPositive = {
   base: {
     iconColor: '{{colors.inkPositive}}',
+  },
+};
+stylePresets.indeterminateProgressIndicatorInverse = {
+  base: {
+    iconColor: '{{colors.inkInverse}}',
   },
 };
 

@@ -154,4 +154,9 @@ export const colors = {
   interactivePositive050: '{{colors.green080}}',
   interactiveVisited010: '{{colors.purple050}}',
   interactiveDisabled010: '{{colors.neutral030}}',
+  interactiveInverse010: 'rgba(255,255,255,0.20)',
+  interactiveInverse020: 'rgba(255,255,255,0.40)',
+  interactiveInverse030: 'rgba(255,255,255,1)',
+  interactiveInverse040: 'rgba(255,255,255,0.80)',
+  interactiveInverse050: 'rgba(255,255,255,0.70)',
 };

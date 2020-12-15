@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {IconButton} from '..';
-import {styled} from '../../utils/style';
+import {getColorFromTheme, styled} from '../../utils/style';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {
   Block,
@@ -35,12 +35,22 @@ const Label = styled.div`
   justify-content: center;
 `;
 
+const Background = styled.div<{hasBackground?: boolean}>`
+  margin-top: 24px;
+  ${({hasBackground, theme}) =>
+    hasBackground && {
+      background: getColorFromTheme('black')({theme}),
+      color: getColorFromTheme('white')({theme}),
+    }}
+`;
+
 const IconButtonIntentKindsScenario: React.FC<{
+  hasBackground?: boolean;
   name: string;
   buttonKinds: IntentKindStylePreset[];
   overrides: ButtonOverrides;
-}> = ({name, buttonKinds, overrides}) => (
-  <>
+}> = ({hasBackground = false, name, buttonKinds, overrides}) => (
+  <Background hasBackground={hasBackground}>
     <StorybookSubHeading>{name}</StorybookSubHeading>
     <Grid>
       <Cell xsHidden sm={3}>
@@ -105,7 +115,7 @@ const IconButtonIntentKindsScenario: React.FC<{
         );
       })}
     </Grid>
-  </>
+  </Background>
 );
 
 export default {
@@ -209,6 +219,26 @@ export default {
           overrides={{
             loadingIndicator: {
               stylePreset: 'indeterminateProgressIndicatorPositive',
+            },
+          }}
+        />
+      ),
+    },
+    {
+      name: 'icon-button-inverse',
+      type: 'story',
+      component: () => (
+        <IconButtonIntentKindsScenario
+          hasBackground
+          name="Icon Button Inverse"
+          buttonKinds={[
+            {kind: 'Solid', stylePreset: 'iconButtonSolidInverse'},
+            {kind: 'Outlined', stylePreset: 'iconButtonOutlinedInverse'},
+            {kind: 'Minimal', stylePreset: 'iconButtonMinimalInverse'},
+          ]}
+          overrides={{
+            loadingIndicator: {
+              stylePreset: 'indeterminateProgressIndicatorInverse',
             },
           }}
         />

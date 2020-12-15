@@ -4,8 +4,8 @@ exports[`getStylePresetFromTheme with default iconButtonMinimalPrimary style pre
 <DocumentFragment>
   .emotion-0 {
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
 }
 
 .emotion-0 svg {
@@ -21,8 +21,8 @@ exports[`getStylePresetFromTheme with default iconButtonMinimalPrimary style pre
 }
 
 .emotion-0:disabled {
-  color: #c0c0c0;
   background-color: transparent;
+  color: #c0c0c0;
 }
 
 .emotion-0:disabled svg {
@@ -39,8 +39,8 @@ exports[`getStylePresetFromTheme with disabled and loading state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
-  color: #c0c0c0;
   border-radius: 50%;
+  color: #c0c0c0;
 }
 
 .emotion-0 svg {
@@ -57,8 +57,8 @@ exports[`getStylePresetFromTheme with disabled state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #FF0000;
-  color: #c0c0c0;
   border-radius: 50%;
+  color: #c0c0c0;
 }
 
 .emotion-0 svg {
@@ -193,8 +193,8 @@ exports[`getStylePresetFromTheme with isSvg  1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
   fill: #00ff00;
 }
 
@@ -208,8 +208,8 @@ exports[`getStylePresetFromTheme with isSvg  1`] = `
 }
 
 .emotion-0:disabled {
-  color: #c0c0c0;
   background-color: transparent;
+  color: #c0c0c0;
   fill: #c0c0c0;
 }
 
@@ -223,8 +223,8 @@ exports[`getStylePresetFromTheme with loading and selected state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #ffff00;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
 }
 
 .emotion-0 svg {
@@ -241,8 +241,8 @@ exports[`getStylePresetFromTheme with loading state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #ffff00;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
 }
 
 .emotion-0 svg {
@@ -287,8 +287,8 @@ exports[`getStylePresetFromTheme with selected state 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: #00ff00;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
 }
 
 .emotion-0 svg {
@@ -316,8 +316,8 @@ exports[`getStylePresetFromTheme with stateOverwrites without base state fallbac
 exports[`getStylePresetFromTheme without background-color styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
 }
 
 .emotion-0 svg {
@@ -342,8 +342,8 @@ exports[`getStylePresetFromTheme without disabled state styles 1`] = `
 <DocumentFragment>
   .emotion-0 {
   background-color: transparent;
-  color: #0a68c1;
   border-radius: 50%;
+  color: #0a68c1;
 }
 
 .emotion-0 svg {

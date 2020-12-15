@@ -73,6 +73,11 @@ Object {
     "inkPositive": "#0a782a",
     "inkSubtle": "#535353",
     "interactiveDisabled010": "#e4e4e4",
+    "interactiveInverse010": "rgba(255,255,255,0.20)",
+    "interactiveInverse020": "rgba(255,255,255,0.40)",
+    "interactiveInverse030": "rgba(255,255,255,1)",
+    "interactiveInverse040": "rgba(255,255,255,0.80)",
+    "interactiveInverse050": "rgba(255,255,255,0.70)",
     "interactiveNegative010": "#ffe6e5",
     "interactiveNegative020": "#ffb8b8",
     "interactiveNegative030": "#ef1703",
@@ -987,7 +992,6 @@ Object {
       },
       "loading": Object {
         "backgroundColor": "#d5ebff",
-        "color": "#0a68c1",
       },
     },
     "audioPlayerPlayPauseButton": Object {
@@ -1034,7 +1038,6 @@ Object {
       },
       "loading": Object {
         "backgroundColor": "#d5ebff",
-        "color": "#0a68c1",
       },
     },
     "audioPlayerSeekBarBuffering": Object {
@@ -1113,6 +1116,27 @@ Object {
         "backgroundColor": "#d5ebff",
         "color": "#0a68c1",
         "iconColor": "#0a68c1",
+      },
+    },
+    "buttonMinimalInverse": Object {
+      "active": Object {
+        "backgroundColor": "rgba(255,255,255,0.40)",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "8px",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "disabled": Object {
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
+      },
+      "hover": Object {
+        "backgroundColor": "rgba(255,255,255,0.20)",
+      },
+      "loading": Object {
+        "backgroundColor": "rgba(255,255,255,0.40)",
       },
     },
     "buttonMinimalNegative": Object {
@@ -1197,6 +1221,34 @@ Object {
       },
       "loading": Object {
         "backgroundColor": "#f0f0f0",
+      },
+    },
+    "buttonOutlinedInverse": Object {
+      "active": Object {
+        "backgroundColor": "rgba(255,255,255,0.40)",
+        "borderColor": "rgba(255,255,255,0.70)",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "rgba(255,255,255,1)",
+        "borderRadius": "8px",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "disabled": Object {
+        "borderColor": "#e4e4e4",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
+      },
+      "hover": Object {
+        "backgroundColor": "rgba(255,255,255,0.20)",
+        "borderColor": "rgba(255,255,255,0.80)",
+      },
+      "loading": Object {
+        "backgroundColor": "rgba(255,255,255,0.40)",
+        "borderStyle": "none",
       },
     },
     "buttonOutlinedNegative": Object {
@@ -1467,6 +1519,30 @@ Object {
         "backgroundColor": "transparent",
       },
     },
+    "buttonSolidInverse": Object {
+      "active": Object {
+        "backgroundColor": "rgba(255,255,255,0.70)",
+      },
+      "base": Object {
+        "backgroundColor": "rgba(255,255,255,1)",
+        "borderRadius": "8px",
+        "color": "#0a0a0a",
+        "iconColor": "#0a0a0a",
+      },
+      "disabled": Object {
+        "backgroundColor": "#e4e4e4",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
+      },
+      "hover": Object {
+        "backgroundColor": "rgba(255,255,255,0.80)",
+      },
+      "loading": Object {
+        "backgroundColor": "rgba(255,255,255,0.40)",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+    },
     "buttonSolidNegative": Object {
       "active": Object {
         "backgroundColor": "#a60100",
@@ -1668,6 +1744,28 @@ Object {
         "iconColor": "#0a68c1",
       },
     },
+    "iconButtonMinimalInverse": Object {
+      "active": Object {
+        "backgroundColor": "rgba(255,255,255,0.40)",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderRadius": "50%",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "disabled": Object {
+        "backgroundColor": "transparent",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
+      },
+      "hover": Object {
+        "backgroundColor": "rgba(255,255,255,0.20)",
+      },
+      "loading": Object {
+        "backgroundColor": "rgba(255,255,255,0.40)",
+      },
+    },
     "iconButtonMinimalNegative": Object {
       "active": Object {
         "backgroundColor": "#ffb8b8",
@@ -1730,7 +1828,6 @@ Object {
       },
       "loading": Object {
         "backgroundColor": "#d5ebff",
-        "color": "#0a68c1",
       },
     },
     "iconButtonMinimalSecondary": Object {
@@ -1757,6 +1854,34 @@ Object {
       },
       "selected": Object {
         "backgroundColor": "transparent",
+      },
+    },
+    "iconButtonOutlinedInverse": Object {
+      "active": Object {
+        "backgroundColor": "rgba(255,255,255,0.40)",
+        "borderColor": "rgba(255,255,255,0.70)",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "rgba(255,255,255,1)",
+        "borderRadius": "50%",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "disabled": Object {
+        "borderColor": "#e4e4e4",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
+      },
+      "hover": Object {
+        "backgroundColor": "rgba(255,255,255,0.20)",
+        "borderColor": "rgba(255,255,255,0.80)",
+      },
+      "loading": Object {
+        "backgroundColor": "rgba(255,255,255,0.40)",
+        "borderStyle": "none",
       },
     },
     "iconButtonOutlinedNegative": Object {
@@ -1869,6 +1994,30 @@ Object {
       "loading": Object {
         "backgroundColor": "#f0f0f0",
         "borderStyle": "none",
+      },
+    },
+    "iconButtonSolidInverse": Object {
+      "active": Object {
+        "backgroundColor": "rgba(255,255,255,0.70)",
+      },
+      "base": Object {
+        "backgroundColor": "rgba(255,255,255,1)",
+        "borderRadius": "50%",
+        "color": "#0a0a0a",
+        "iconColor": "#0a0a0a",
+      },
+      "disabled": Object {
+        "backgroundColor": "#e4e4e4",
+        "color": "#c0c0c0",
+        "iconColor": "#c0c0c0",
+      },
+      "hover": Object {
+        "backgroundColor": "rgba(255,255,255,0.80)",
+      },
+      "loading": Object {
+        "backgroundColor": "rgba(255,255,255,0.40)",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
       },
     },
     "iconButtonSolidNegative": Object {
@@ -2070,6 +2219,11 @@ Object {
       "loading": Object {
         "backgroundColor": "#fafafa",
         "iconColor": "#c0c0c0",
+      },
+    },
+    "indeterminateProgressIndicatorInverse": Object {
+      "base": Object {
+        "iconColor": "#ffffff",
       },
     },
     "indeterminateProgressIndicatorNegative": Object {
@@ -2478,7 +2632,6 @@ Object {
       },
       "loading": Object {
         "backgroundColor": "#d5ebff",
-        "color": "#0a68c1",
       },
     },
     "volumeControlIndicator": Object {
