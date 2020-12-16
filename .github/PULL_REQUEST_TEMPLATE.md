@@ -22,7 +22,18 @@
  - [ ] There are no new errors in the browser console coming from this PR.
  - [ ] When visual test is not added, it renders correctly on different browsers and mobile viewports (Safari, Firefox, small mobile viewport, tablet)
  - [ ] The Playground feature is working as expected
- 
+
+<!---
+This section will be used to indicate if we should move to a major version in the next release, remove if not revelant.
+DO CONSIDER any of the following are all breaking changes to a consumer, this is by no mean an exhaustive list.
+-removing or renaming props
+-removing or renaming tokens
+-removing or renaming components
+-removing or renaming exported functions
+-major bumps to peer dependencies
+--->
+BREAKING CHANGE: renames the foobar component's prop foo to bar 
+
 <!---
 Below sections are optional
 --->
