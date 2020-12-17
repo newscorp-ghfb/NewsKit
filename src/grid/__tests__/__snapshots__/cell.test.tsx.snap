@@ -34,9 +34,9 @@ exports[`Cell Container renders expected cell offset styles 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-0 {
-    padding: 0 NaNpx;
+    padding: 0 0px;
     margin-left: 25%;
-    margin-top: px;
+    margin-top: 0px;
     display: block;
   }
 }
@@ -102,8 +102,8 @@ exports[`Cell Container renders expected cell order styles 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-0 {
-    padding: 0 NaNpx;
-    margin-top: px;
+    padding: 0 0px;
+    margin-top: 0px;
     display: block;
     -webkit-order: 3;
     -ms-flex-order: 3;
@@ -172,8 +172,8 @@ exports[`Cell Container renders expected cell span styles 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-0 {
-    padding: 0 NaNpx;
-    margin-top: px;
+    padding: 0 0px;
+    margin-top: 0px;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
@@ -240,8 +240,8 @@ exports[`Cell Container renders expected default styles 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-0 {
-    padding: 0 NaNpx;
-    margin-top: px;
+    padding: 0 0px;
+    margin-top: 0px;
     display: block;
   }
 }
@@ -304,8 +304,8 @@ exports[`Cell Container renders expected hidden at lg styles 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-0 {
-    padding: 0 NaNpx;
-    margin-top: px;
+    padding: 0 0px;
+    margin-top: 0px;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
@@ -376,8 +376,8 @@ exports[`Cell Container renders expected hidden at md styles 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-0 {
-    padding: 0 NaNpx;
-    margin-top: px;
+    padding: 0 0px;
+    margin-top: 0px;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
@@ -448,8 +448,8 @@ exports[`Cell Container renders expected hidden at sm styles 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-0 {
-    padding: 0 NaNpx;
-    margin-top: px;
+    padding: 0 0px;
+    margin-top: 0px;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
@@ -520,8 +520,8 @@ exports[`Cell Container renders expected hidden at xl styles 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-0 {
-    padding: 0 NaNpx;
-    margin-top: px;
+    padding: 0 0px;
+    margin-top: 0px;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
@@ -592,8 +592,8 @@ exports[`Cell Container renders expected hidden at xs styles 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-0 {
-    padding: 0 NaNpx;
-    margin-top: px;
+    padding: 0 0px;
+    margin-top: 0px;
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
@@ -662,8 +662,8 @@ exports[`Cell Container renders expected inherited sm cell offset styles from th
 
 @media screen and (min-width:768px) {
   .emotion-0 {
-    padding: 0 NaNpx;
-    margin-top: px;
+    padding: 0 0px;
+    margin-top: 0px;
     display: block;
   }
 }
@@ -728,8 +728,8 @@ exports[`Cell Container renders expected inherited sm cell order styles 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-0 {
-    padding: 0 NaNpx;
-    margin-top: px;
+    padding: 0 0px;
+    margin-top: 0px;
     display: block;
   }
 }
@@ -792,8 +792,8 @@ exports[`Cell Container renders expected inherited sm cell span styles 1`] = `
 
 @media screen and (min-width:768px) {
   .emotion-0 {
-    padding: 0 NaNpx;
-    margin-top: px;
+    padding: 0 0px;
+    margin-top: 0px;
     display: block;
   }
 }

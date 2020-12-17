@@ -27,12 +27,10 @@ export const getOverridableProp = (
     .filter(Boolean)[0];
 
   const themeKey = propThemeMap[prop];
+  const defaultToken = theme.componentDefaults.grid[themeKey][breakpoint];
 
-  // Gutter from theme is a px number, but override is a string token, so convert it to px number.
-  return gutterOverrideToken
-    ? parseInt(theme.sizing[gutterOverrideToken], 10)
-    : (theme.componentDefaults.grid[themeKey] as Record<
-        BreakpointKeys,
-        number
-      >)[breakpoint];
+  const tokenValue =
+    (gutterOverrideToken && theme.spacePresets[gutterOverrideToken]) ||
+    theme.spacePresets[defaultToken];
+  return parseInt(tokenValue, 10) || 0;
 };

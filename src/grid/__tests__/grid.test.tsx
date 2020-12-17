@@ -9,27 +9,27 @@ describe('Grid Container', () => {
 
   test('renders expected column styles', () => {
     const fragment = renderToFragmentWithTheme(Grid, {
-      xsColumnGutter: 'sizing000',
-      smColumnGutter: 'sizing010',
-      mdColumnGutter: 'sizing030',
-      lgColumnGutter: 'sizing050',
+      xsColumnGutter: 'space000',
+      smColumnGutter: 'space010',
+      mdColumnGutter: 'space030',
+      lgColumnGutter: 'space050',
     });
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders expected row styles', () => {
     const fragment = renderToFragmentWithTheme(Grid, {
-      xsRowGutter: 'sizing000',
-      smRowGutter: 'sizing010',
-      mdRowGutter: 'sizing030',
-      lgRowGutter: 'sizing050',
+      xsRowGutter: 'space000',
+      smRowGutter: 'space010',
+      mdRowGutter: 'space030',
+      lgRowGutter: 'space050',
     });
     expect(fragment).toMatchSnapshot();
   });
 
   test('renders expected max width', () => {
     const fragment = renderToFragmentWithTheme(Grid, {
-      maxWidth: 500,
+      maxWidth: '500px',
     });
     expect(fragment).toMatchSnapshot();
   });

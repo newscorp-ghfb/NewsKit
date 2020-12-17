@@ -151,10 +151,10 @@ export default {
 
           <BorderedBox>
             <Grid
-              xsColumnGutter="sizing000"
-              smColumnGutter="sizing010"
-              mdColumnGutter="sizing010"
-              lgColumnGutter="sizing020"
+              xsColumnGutter="space000"
+              smColumnGutter="space010"
+              mdColumnGutter="space010"
+              lgColumnGutter="space020"
             >
               <Cell xs={4}>
                 <Content>
@@ -184,10 +184,10 @@ export default {
           </BorderedBox>
 
           <BorderedBox>
-            <Grid xsColumnGutter="sizing080">
+            <Grid xsColumnGutter="space080">
               <Cell xs={4}>
                 <Content>
-                  <Grid xsColumnGutter="sizing000" xsMargin="sizing000">
+                  <Grid xsColumnGutter="space000" xsMargin="space000">
                     <Cell xs={3}>
                       <BorderedBox>inner 1</BorderedBox>
                     </Cell>
@@ -205,7 +205,7 @@ export default {
               </Cell>
               <Cell xs={4}>
                 <Content>
-                  <Grid xsColumnGutter="sizing010">
+                  <Grid xsColumnGutter="space010">
                     <Cell xs={3}>
                       <BorderedBox>inner 1</BorderedBox>
                     </Cell>
@@ -223,7 +223,7 @@ export default {
               </Cell>
               <Cell xs={4}>
                 <Content>
-                  <Grid xsColumnGutter="sizing030">
+                  <Grid xsColumnGutter="space030">
                     <Cell xs={3}>
                       <BorderedBox>inner 1</BorderedBox>
                     </Cell>
@@ -278,9 +278,9 @@ export default {
 
           <BorderedBox>
             <Grid
-              xsColumnGutter="sizing000"
-              xsRowGutter="sizing000"
-              xsMargin="sizing000"
+              xsColumnGutter="space000"
+              xsRowGutter="space000"
+              xsMargin="space000"
             >
               <Cell xs={6}>
                 <Content>Lorem</Content>

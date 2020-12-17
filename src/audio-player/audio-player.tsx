@@ -234,9 +234,9 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   return (
     <PlayerContainer aria-label={ariaLandmark}>
       <PlayerGrid
-        xsMargin="sizing000"
-        xsColumnGutter="sizing000"
-        xsRowGutter="sizing000"
+        xsMargin="space000"
+        xsColumnGutter="space000"
+        xsRowGutter="space000"
       >
         <audio
           ref={audioRef}

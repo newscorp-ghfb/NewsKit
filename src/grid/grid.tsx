@@ -36,7 +36,7 @@ const generateBreakpointConfig = (breakpoint: BreakpointKeys) => ({
 const StyledGridContainer = styled.div<GridProps>`
   width: 100%;
   max-width: ${({theme, maxWidth}) =>
-    maxWidth || theme.componentDefaults.grid.maxWidth}px;
+    maxWidth || theme.componentDefaults.grid.maxWidth};
   margin: 0 auto;
 `;
 

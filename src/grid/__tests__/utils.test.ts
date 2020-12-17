@@ -29,7 +29,11 @@ describe('Grid utils', () => {
                   },
                 },
               },
-              sizing: {
+              spacePresets: {
+                'xs-theme-value': '12px',
+                'sm-theme-value': '14px',
+                'md-theme-value': '16px',
+                'lg-theme-value': '18px',
                 'the-override-token': `${mockSizingTokenPixels}px`,
               },
             },
@@ -42,17 +46,19 @@ describe('Grid utils', () => {
             breakpointKeys.indexOf(propOverrideBreakpoint)
           ) {
             it('should use the default value from the theme', () => {
+              const token =
+                mockProps.theme.componentDefaults.grid[themeKey][
+                  currentBreakpoint
+                ];
+              const tokenValue =
+                parseInt(mockProps.theme.spacePresets[token], 10) || 0;
               expect(
                 getOverridableProp(
                   overrideProp,
                   currentBreakpoint as BreakpointKeys,
                   mockProps,
                 ),
-              ).toEqual(
-                mockProps.theme.componentDefaults.grid[themeKey][
-                  currentBreakpoint
-                ],
-              );
+              ).toEqual(tokenValue);
             });
           } else {
             it(`should use the ${propOverrideBreakpoint} override token value`, () => {

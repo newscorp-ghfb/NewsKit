@@ -81,20 +81,20 @@ describe('Cell Container', () => {
     const fragment = renderToFragmentWithTheme(() => (
       <GridContextProvider
         value={{
-          xsMargin: 'sizing050',
-          smMargin: 'sizing060',
-          mdMargin: 'sizing070',
-          lgMargin: 'sizing080',
+          xsMargin: 'space050',
+          smMargin: 'space060',
+          mdMargin: 'space070',
+          lgMargin: 'space080',
 
-          xsColumnGutter: 'sizing000',
-          smColumnGutter: 'sizing010',
-          mdColumnGutter: 'sizing030',
-          lgColumnGutter: 'sizing050',
+          xsColumnGutter: 'space000',
+          smColumnGutter: 'space010',
+          mdColumnGutter: 'space030',
+          lgColumnGutter: 'space050',
 
-          xsRowGutter: 'sizing010',
-          smRowGutter: 'sizing020',
-          mdRowGutter: 'sizing040',
-          lgRowGutter: 'sizing060',
+          xsRowGutter: 'space010',
+          smRowGutter: 'space020',
+          mdRowGutter: 'space040',
+          lgRowGutter: 'space060',
         }}
       >
         <Cell>blah blah</Cell>
@@ -107,14 +107,14 @@ describe('Cell Container', () => {
     const fragment = renderToFragmentWithTheme(() => (
       <GridContextProvider
         value={{
-          xsMargin: 'sizing050',
-          smMargin: 'sizing060',
+          xsMargin: 'space050',
+          smMargin: 'space060',
 
-          xsColumnGutter: 'sizing000',
-          smColumnGutter: 'sizing010',
+          xsColumnGutter: 'space000',
+          smColumnGutter: 'space010',
 
-          xsRowGutter: 'sizing010',
-          smRowGutter: 'sizing020',
+          xsRowGutter: 'space010',
+          smRowGutter: 'space020',
         }}
       >
         <Cell>blah blah</Cell>
