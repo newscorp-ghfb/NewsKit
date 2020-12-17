@@ -67,7 +67,7 @@ export const UnorderedList: React.FC<UnorderedListProps> = ({
   );
 
   return (
-    <StyledUl>
+    <StyledUl role="list">
       {React.Children.map(children, node => {
         if (!isValidNode(node)) return null;
 

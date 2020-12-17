@@ -119,6 +119,8 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
 ### Styling
 
 ### Accessibility
+
+- Always pass an `alt` prop to the card image regardless of whether you use the built in or a custom image component.
 - When creating a tab order for the different parts of the card, remember to put the headline before the image or media so that screen-reader users get the context before the image alt tag.
 - Add aria-label prop to allow a user to describe the action that will be performed when the user interacts with the card. By default, this could be the headline text.
 - When nesting other components of the card, always follow those components' accessibility guidelines.

@@ -45,11 +45,14 @@ Icons must have a size specified, and some also support an optional colour overr
 
 <LegacyBlock marginTop="sizing040">
   <Prop name="title" type="string">
-    This is an optional title property to override the existing svg title, set
-    in each icon.
+    This optional prop adds title to the svg image in order to make it
+    accessible and visible for screen readers. If your icon is just decorative
+    and not part of the content this prop can be ommited, otherwise it should be
+    passed.
   </Prop>
   <Prop name="overrides" type="object">
-    If provided, overrides the respective presets for the component and provided elements.
+    If provided, overrides the respective presets for the component and provided
+    elements.
     <Prop name="stylePreset" type="string">
       If provided, this overrides the style preset applied to the svg.
     </Prop>
@@ -63,7 +66,12 @@ Icons must have a size specified, and some also support an optional colour overr
 
 <Playground
   componentName={['Facebook', 'Twitter', 'WhatsApp', 'Github']}
-  component={[IconFilledFacebook, IconFilledTwitter, IconFilledWhatsApp, IconFilledGitHub]}
+  component={[
+    IconFilledFacebook,
+    IconFilledTwitter,
+    IconFilledWhatsApp,
+    IconFilledGitHub,
+  ]}
   knobs={[
     {
       name: 'Size',
@@ -72,26 +80,26 @@ Icons must have a size specified, and some also support an optional colour overr
         {
           label: 'iconSize020',
           value: {
-            size: 'iconSize020'
+            size: 'iconSize020',
           },
         },
         {
           label: 'iconSize030',
           value: {
-            size: 'iconSize030'
+            size: 'iconSize030',
           },
         },
-         {
+        {
           label: 'iconSize040',
           value: {
-            size: 'iconSize040'
+            size: 'iconSize040',
           },
           isDefault: true,
         },
-         {
+        {
           label: 'iconSize050',
           value: {
-            size: 'iconSize050'
+            size: 'iconSize050',
           },
         },
       ],
@@ -100,13 +108,14 @@ Icons must have a size specified, and some also support an optional colour overr
 />
 
 ## Create NewsKit icons
+
 With the help of the <Link href="/utils/custom-to-newskit-icon">`customToNewsKitIcon`</Link> util function, each SVG icon can be easily turned into a Newskit icon that works well
 with theme tokens and <Link href="/utils/get-from-theme">`getFromTheme`</Link> util functions. The only requirement is to wrap the SVG markup within an `Svg` component and pass props to it.
 
 The following example shows how the SVG component should be used:
 
 <Code>
- {`
+  {`
   <Svg {...props} viewBox="0 0 429 422">
     <g fill="none" fill-rule="evenodd" transform="translate(-77.000000, -1738.000000) translate(77.000000, 1738.500000)">
       <circle cx="250.5" cy="242.5" r="178" style="mix-blend-mode:multiply"/>
@@ -116,10 +125,10 @@ The following example shows how the SVG component should be used:
  `}
 </Code>
 
-
 Use `customToNewsKitIcon` utility function to make the svg icon compatible with NewsKit:
+
 <Code>
- {`
+  {`
 export const IconFilledCircles = customToNewsKitIcon(
   'IconFilledCircles',
   props => (
@@ -133,7 +142,6 @@ export const IconFilledCircles = customToNewsKitIcon(
 );
  `}
 </Code>
-
 
 ## Rationale
 

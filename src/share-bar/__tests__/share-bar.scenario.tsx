@@ -69,31 +69,41 @@ export default {
           <StorybookSubHeading>
             Share bar with horizontal items
           </StorybookSubHeading>
-          <ShareBar>
+          <ShareBar role="region" aria-label="share bar default">
             <ShareOnTwitterBtn />
             <ShareOnFacebookBtn />
           </ShareBar>
           <StorybookSubHeading>
             Share bar with horizontal items and label
           </StorybookSubHeading>
-          <ShareBar label="Share">
+          <ShareBar
+            label="Share"
+            role="region"
+            aria-label="share bar with horizontal items and label"
+          >
             <ShareOnTwitterBtn />
             <ShareOnFacebookBtn />
           </ShareBar>
           <StorybookSubHeading>
             Share bar with horizontal items label and button
           </StorybookSubHeading>
-          <ShareBar label="Share">
+          <ShareBar
+            label="Share"
+            role="region"
+            aria-label="share bar with horizontal items label and button"
+          >
             <ShareOnTwitterBtn />
             <ShareOnFacebookBtn />
             <Button>More options</Button>
           </ShareBar>
           <StorybookSubHeading>
-            Share bar with horizontal items and label, with overriden presets
+            Share bar with horizontal items and label, with overridden presets
           </StorybookSubHeading>
           <ThemeProvider theme={myCustomTheme}>
             <ShareBar
               label="Share"
+              role="region"
+              aria-label="share bar with horizontal items and label, with overridden presets"
               overrides={{
                 stylePreset: 'customShareBarContainerPreset',
                 label: {
@@ -139,21 +149,35 @@ export default {
           <StorybookSubHeading>
             Share bar with vertical items
           </StorybookSubHeading>
-          <ShareBar vertical>
+          <ShareBar
+            vertical
+            role="region"
+            aria-label="share bar with vertical items"
+          >
             <ShareOnTwitterBtn />
             <ShareOnFacebookBtn />
           </ShareBar>
           <StorybookSubHeading>
             Share bar with vertical items and label
           </StorybookSubHeading>
-          <ShareBar vertical label="Share">
+          <ShareBar
+            vertical
+            label="Share"
+            role="region"
+            aria-label="share bar with vertical items and label"
+          >
             <ShareOnTwitterBtn />
             <ShareOnFacebookBtn />
           </ShareBar>
           <StorybookSubHeading>
             Share bar with vertical items, label and a button
           </StorybookSubHeading>
-          <ShareBar vertical label="Share">
+          <ShareBar
+            vertical
+            label="Share"
+            role="region"
+            aria-label="share bar with vertical items, label and a button"
+          >
             <ShareOnTwitterBtn />
             <ShareOnFacebookBtn />
             <Button>More options</Button>

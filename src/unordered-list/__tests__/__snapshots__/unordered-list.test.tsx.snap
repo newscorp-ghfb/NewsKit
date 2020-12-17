@@ -184,6 +184,7 @@ exports[`UnorderedList renders different types of children 1`] = `
 
 <ul
     class="emotion-16"
+    role="list"
   >
     <li
       class="emotion-2"
@@ -351,6 +352,7 @@ exports[`UnorderedList renders with custom list item marker 1`] = `
 
 <ul
     class="emotion-18"
+    role="list"
   >
     <li
       class="emotion-5"
@@ -541,6 +543,7 @@ exports[`UnorderedList renders with custom list item marker with different size 
 
 <ul
     class="emotion-18"
+    role="list"
   >
     <li
       class="emotion-5"
@@ -703,6 +706,7 @@ exports[`UnorderedList renders with defaults 1`] = `
 
 <ul
     class="emotion-9"
+    role="list"
   >
     <li
       class="emotion-2"
@@ -802,6 +806,7 @@ exports[`UnorderedList renders with defaults when marker is incorrect 1`] = `
 
 <ul
     class="emotion-9"
+    role="list"
   >
     <li
       class="emotion-2"

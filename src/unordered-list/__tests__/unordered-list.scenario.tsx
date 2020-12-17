@@ -9,7 +9,11 @@ import {Link} from '../../link';
 
 const listData = [
   `alpha`,
-  <IconFilledTwitter key="uniqueIconKey" overrides={{size: 'iconSize010'}} />,
+  <IconFilledTwitter
+    key="uniqueIconKey"
+    title="twitter logo"
+    overrides={{size: 'iconSize010'}}
+  />,
   2,
   `Lorem ipsum dolor sit amet...`,
   <Link key="uniqueLinkKey" href="http://localhost:6006">

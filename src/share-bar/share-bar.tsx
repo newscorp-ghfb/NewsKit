@@ -13,7 +13,7 @@ import {useTheme} from '../theme';
 
 import {getToken} from '../utils/get-token';
 
-export interface ShareBarProps {
+export interface ShareBarProps extends React.HTMLAttributes<HTMLElement> {
   label?: string;
   vertical?: boolean;
   overrides?: {
@@ -30,7 +30,7 @@ export interface ShareBarProps {
   };
 }
 
-interface StyledShareBarProps extends StackProps {
+interface StyledShareBarContainerProps extends StackProps {
   overrides?: {stylePreset?: MQ<string>};
   orientation?: string;
 }
@@ -49,7 +49,7 @@ const StyledLabel = styled.span<Label>`
       : getSpacingInlineHorizontal)('shareBar.label', 'label')};
 `;
 
-const StyledShareBar = styled(Stack)<StyledShareBarProps>`
+const StyledShareBarContainer = styled(Stack)<StyledShareBarContainerProps>`
   ${getStylePreset(`shareBar`)}
 `;
 
@@ -58,6 +58,7 @@ export const ShareBar: React.FC<ShareBarProps> = ({
   vertical,
   children,
   overrides = {},
+  ...rest
 }) => {
   const theme = useTheme();
   const orientation = vertical ? 'vertical' : 'horizontal';
@@ -67,9 +68,10 @@ export const ShareBar: React.FC<ShareBarProps> = ({
   };
 
   return (
-    <StyledShareBar
+    <StyledShareBarContainer
       inline={vertical}
       flow={vertical ? Flow.VerticalCenter : Flow.HorizontalCenter}
+      {...rest}
       {...styledComponentsProps}
     >
       {label && <StyledLabel {...styledComponentsProps}>{label}</StyledLabel>}
@@ -84,7 +86,7 @@ export const ShareBar: React.FC<ShareBarProps> = ({
       >
         {children}
       </Stack>
-    </StyledShareBar>
+    </StyledShareBarContainer>
   );
 };
 

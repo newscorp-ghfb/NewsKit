@@ -2,7 +2,13 @@ import Playground from '../../../components/playground';
 import Prop from '../../../components/prop';
 import {LegacyBlock} from '../../../components/legacy-block';
 import Layout from '../../../components/layout';
-import {IconFilledTwitter, IconFilledFacebook, ShareBar, ButtonSize, IconButton} from 'newskit';
+import {
+  IconFilledTwitter,
+  IconFilledFacebook,
+  ShareBar,
+  ButtonSize,
+  IconButton,
+} from 'newskit';
 import {CodeFromDefaultPresets} from '../../../components/code';
 
 export default Layout;
@@ -11,7 +17,7 @@ export default Layout;
 
 ## Overview
 
-The share bar uses [icons](/components/icons) to allow users to share.
+The share bar uses [icon buttons](/components/action/button#playground-for-icon-button) to allow users to share content.
 
 ### Usage
 
@@ -24,22 +30,28 @@ A share bar can be used anywhere a user would like to easily share something wit
     If provided with text, adds a label and populates it with the string.
   </Prop>
   <Prop name="vertical" type="boolean" defaut="false">
-    If provided, changes the orientation of the share bar to vertical. Note that the 'spaceInline' will still apply between the vertically orientated label and icons.
+    If provided, changes the orientation of the share bar to vertical. Note that
+    the 'spaceInline' will still apply between the vertically orientated label
+    and icons.
   </Prop>
   <Prop name="overrides" type="object">
-    If provided, overrides the respective presets for the component and provided elements.
+    If provided, overrides the respective presets for the component and provided
+    elements.
     <Prop name="label" type="object">
       <Prop name="stylePreset" type="MQ<string>">
-        If provided, this overrides the style preset applied to the passed label.
+        If provided, this overrides the style preset applied to the passed
+        label.
       </Prop>
       <Prop name="typographyPreset" type="MQ<string>">
-        If provided, this overrides the typography preset applied to the passed label.
+        If provided, this overrides the typography preset applied to the passed
+        label.
       </Prop>
       <Prop name="spaceInline" type="MQ<string>">
-        If provided, this overrides the horizontal space between the items and label.
+        If provided, this overrides the horizontal space between the items and
+        label.
       </Prop>
       <Prop name="spaceInset" type="MQ<string>">
-       If provided, this overrides the padding of the share bar.
+        If provided, this overrides the padding of the share bar.
       </Prop>
     </Prop>
     Refer to the defaults below for the object structure:
@@ -94,6 +106,12 @@ Share bars give the user the ability to share articles.
 The articles can be shared via social media or saved locally for later use.
 
 ### Accessibility
+
+In order to make the share bar accessible for screen readers you should pass a role="region" and
+an aria-label to the share bar.
+
+_NOTE: if you have more than one share bar on your page - all share bar components (or their containers)
+should have `role` set to region and also an unique `aria-label`._
 
 #### Keyboard navigation
 
