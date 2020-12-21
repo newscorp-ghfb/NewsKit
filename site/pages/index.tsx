@@ -10,7 +10,7 @@ const Index: React.FC<{
   <React.Fragment>
     <PageTitle title="Homepage" />
     <Layout toggleTheme={toggleTheme} themeMode={themeMode} path="/">
-      <Grid xsRowGutter="sizing000" xsMargin="sizing000">
+      <Grid xsRowGutter="space000" xsMargin="space000">
         <Cell xs={12}>
           <Block spaceStack="space070">
             <Block spaceStack="space040">

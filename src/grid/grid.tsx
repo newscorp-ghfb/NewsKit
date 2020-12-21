@@ -26,11 +26,16 @@ const generateBreakpointConfig = (breakpoint: BreakpointKeys) => ({
   });
   const sideMargin = containerMargin - halfColumnGutter;
 
-  return css`
-    ${getMediaQueryFromTheme(breakpoint)({theme})} {
-      margin: -${rowGutter}px ${sideMargin}px 0 ${sideMargin}px;
-    }
-  `;
+  return (
+    !Number.isNaN(halfColumnGutter) &&
+    !Number.isNaN(rowGutter) &&
+    !Number.isNaN(containerMargin) &&
+    css`
+      ${getMediaQueryFromTheme(breakpoint)({theme})} {
+        margin: -${rowGutter}px ${sideMargin}px 0 ${sideMargin}px;
+      }
+    `
+  );
 };
 
 const StyledGridContainer = styled.div<GridProps>`

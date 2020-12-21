@@ -77,7 +77,7 @@ const year = new Date().getUTCFullYear();
 
 const SiteFooter: React.FC = () => (
   <Footer>
-    <Grid xsRowGutter="sizing000">
+    <Grid xsRowGutter="space000">
       <Cell xs={12} md={4} mdOffset={1}>
         <FooterCopy>
           Copyright &copy; {year} News Corp. All rights reserved.

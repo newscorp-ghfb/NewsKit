@@ -32,5 +32,6 @@ export const getOverridableProp = (
   const tokenValue =
     (gutterOverrideToken && theme.spacePresets[gutterOverrideToken]) ||
     theme.spacePresets[defaultToken];
-  return parseInt(tokenValue, 10) || 0;
+
+  return parseInt(tokenValue, 10);
 };

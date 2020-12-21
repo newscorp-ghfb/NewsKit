@@ -36,9 +36,11 @@ const generateBreakpointConfig = (breakpoint: BreakpointKeys) => ({
 
   return css`
     ${getMediaQueryFromTheme(breakpoint)({theme})} {
-      padding: 0 ${halfColumnGutter}px;
+      padding: 0 ${
+        Number.isNaN(halfColumnGutter) ? 'inherit' : `${halfColumnGutter}px`
+      };
       ${offsetColumnGutter > 0 ? `margin-left: ${offsetColumnGutter}%;` : ''}
-      margin-top: ${rowGutter}px;
+      ${!Number.isNaN(rowGutter) && `margin-top: ${rowGutter}px;`}
       flex-basis: ${width ? `${width}%` : undefined};
       max-width: ${width ? `${width}%` : undefined};
       display: ${hidden ? 'none' : 'block'};
