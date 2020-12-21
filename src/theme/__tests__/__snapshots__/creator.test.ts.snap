@@ -1694,6 +1694,7 @@ Object {
     "flagDefault": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
       },
@@ -1705,18 +1706,42 @@ Object {
         "iconColor": "{{colors.inkInformative}}",
       },
     },
+    "flagMinimalInverse": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
     "flagSolid": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagSolidInverse": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkInformative}}",
+        "iconColor": "{{colors.inkInformative}}",
       },
     },
     "flagSolidLive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interactiveNegative030}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagSolidLiveInverse": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
     },
     "iconButtonDefault": Object {
@@ -2450,8 +2475,7 @@ Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
       },
       "selected": Object {
-        "backgroundColor": "{{colors.interactiveSecondary030}}",
-        "borderStyle": "none",
+        "backgroundColor": "{{colors.interactiveSecondary040}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
       },
@@ -2473,10 +2497,31 @@ Object {
         "backgroundColor": "{{colors.interactiveSecondary020}}",
       },
       "selected": Object {
-        "backgroundColor": "{{colors.interactiveSecondary030}}",
-        "borderStyle": "none",
+        "backgroundColor": "{{colors.interactiveSecondary040}}",
         "color": "{{colors.inkInverse}}",
         "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "tagPrimaryInverse": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interface010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.interactiveInverse030}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
       },
     },
     "textInput": Object {

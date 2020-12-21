@@ -1695,6 +1695,7 @@ Object {
     "flagDefault": Object {
       "base": Object {
         "backgroundColor": "#128293",
+        "borderRadius": "0",
         "color": "#ffffff",
         "iconColor": "#ffffff",
       },
@@ -1706,18 +1707,42 @@ Object {
         "iconColor": "#128293",
       },
     },
+    "flagMinimalInverse": Object {
+      "base": Object {
+        "backgroundColor": "transparent",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+    },
     "flagSolid": Object {
       "base": Object {
         "backgroundColor": "#128293",
+        "borderRadius": "0",
         "color": "#ffffff",
         "iconColor": "#ffffff",
+      },
+    },
+    "flagSolidInverse": Object {
+      "base": Object {
+        "backgroundColor": "#ffffff",
+        "borderRadius": "0",
+        "color": "#128293",
+        "iconColor": "#128293",
       },
     },
     "flagSolidLive": Object {
       "base": Object {
         "backgroundColor": "#ef1703",
+        "borderRadius": "0",
         "color": "#ffffff",
         "iconColor": "#ffffff",
+      },
+    },
+    "flagSolidLiveInverse": Object {
+      "base": Object {
+        "backgroundColor": "#ffe6e5",
+        "color": "#2e2e2e",
+        "iconColor": "#2e2e2e",
       },
     },
     "iconButtonDefault": Object {
@@ -2451,8 +2476,7 @@ Object {
         "backgroundColor": "#f0f0f0",
       },
       "selected": Object {
-        "backgroundColor": "#535353",
-        "borderStyle": "none",
+        "backgroundColor": "#2e2e2e",
         "color": "#ffffff",
         "iconColor": "#ffffff",
       },
@@ -2474,10 +2498,31 @@ Object {
         "backgroundColor": "#f0f0f0",
       },
       "selected": Object {
-        "backgroundColor": "#535353",
-        "borderStyle": "none",
+        "backgroundColor": "#2e2e2e",
         "color": "#ffffff",
         "iconColor": "#ffffff",
+      },
+    },
+    "tagPrimaryInverse": Object {
+      "active": Object {
+        "backgroundColor": "rgba(255,255,255,0.40)",
+      },
+      "base": Object {
+        "backgroundColor": "transparent",
+        "borderColor": "#ffffff",
+        "borderRadius": "0",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+      "hover": Object {
+        "backgroundColor": "rgba(255,255,255,0.20)",
+      },
+      "selected": Object {
+        "backgroundColor": "rgba(255,255,255,1)",
+        "color": "#2e2e2e",
+        "iconColor": "#2e2e2e",
       },
     },
     "textInput": Object {
