@@ -356,16 +356,16 @@
           "id": "/utils/get-defaults"
         }
       ]
-    },
-    {
-      "title": "Help",
-      "id": "/help",
-        "subNav": [
-          {
-            "title": "Contact Us",
-            "page": true,
-            "id": "/help/contact-us"
-          }
-        ]
-      }
+  },
+  {
+    "title": "Help",
+    "id": "/help",
+      "subNav": [
+        {
+          "title": "Contact Us",
+          "page": true,
+          "id": "/help/contact-us"
+        }
+      ]
+  }
 ]

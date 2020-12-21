@@ -1,87 +1,104 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
+import {Divider} from 'newskit';
 import {Link} from '../link';
 import routes from '../../routes.json';
 import {
-  NavItemContainer,
-  SubNavContainer,
-  StyledDefaultNavItem,
-  StyledContainer,
+  StyledSectionContainer,
+  StyledNavigationWrapper,
+  StyledLinkItem,
+  StyledSidebarNav,
   StyledFirstLevelHeader,
   StyledSecondLevelHeader,
+  StyledNavigationSection,
 } from './styled';
-import {Item} from './types';
+import {
+  SidebarNavProps,
+  PageLinkProps,
+  NavigationSectionProps,
+  SectionProps,
+  NavigationSectionType,
+  PageType,
+} from './types';
 
-const checkNavItemLevel = (
-  itemLevel: number,
-  isPage: boolean,
-  itemIndex: number,
-) => itemLevel === itemIndex && isPage;
+const PageLink: React.FC<PageLinkProps> = ({page, active}) => {
+  const ref = useRef<HTMLDivElement>(null);
 
-const NavItem: React.FC<{
-  item: Item;
-  path: string;
-  level: number;
-}> = ({path, level, item: {title, id, page}}) => {
-  const isFirstLevelHeader = checkNavItemLevel(level, !page, 0);
-  const isSecondLevelHeader = checkNavItemLevel(level, !page, 1);
+  useEffect(() => {
+    if (active && ref && ref.current) {
+      ref.current.scrollIntoView({block: 'center'});
+    }
+  });
 
-  const firstNavItem = title === 'Getting Started';
-
-  const rootActive = !path && id === '/index';
-
-  const linkActive = path === id || rootActive;
-
-  const child = (
-    <div>
-      {isFirstLevelHeader && (
-        <StyledFirstLevelHeader firstNavItem={!!firstNavItem} data-testid={id}>
-          {title}
-        </StyledFirstLevelHeader>
-      )}
-      {isSecondLevelHeader && (
-        <StyledSecondLevelHeader data-testid={id}>
-          {title}
-        </StyledSecondLevelHeader>
-      )}
-      {!isFirstLevelHeader && !isSecondLevelHeader && (
-        <StyledDefaultNavItem data-testid={id} active={linkActive}>
-          {title}
-        </StyledDefaultNavItem>
-      )}
+  return (
+    <div ref={ref}>
+      <Link href={page.id} overrides={{stylePreset: 'linkNoUnderline'}}>
+        <StyledLinkItem data-testid={page.id} active={active}>
+          {page.title}
+        </StyledLinkItem>
+      </Link>
     </div>
-  );
-
-  return page ? (
-    <Link href={id} overrides={{stylePreset: 'linkNoUnderline'}}>
-      {child}
-    </Link>
-  ) : (
-    child
   );
 };
 
-const renderNavItem = (
-  path: string = '',
-  item: Item,
-  index: number,
-  level: number,
-) => (
-  <NavItemContainer key={`${level}-${index}`}>
-    <NavItem path={path} level={level} item={item} />
-    {item.subNav && (
-      <SubNavContainer role="list">
-        {item.subNav.map((subitem, idx) =>
-          renderNavItem(path, subitem, idx, level + 1),
-        )}
-      </SubNavContainer>
-    )}
-  </NavItemContainer>
+const NavigationSection: React.FC<NavigationSectionProps> = ({
+  navigationSection,
+  activePagePath,
+}) => (
+  <>
+    <StyledSecondLevelHeader id={navigationSection.id}>
+      {navigationSection.title}
+    </StyledSecondLevelHeader>
+    {navigationSection.subNav.map(page => (
+      <PageLink page={page} active={page.id === activePagePath} />
+    ))}
+  </>
 );
 
-export const SidebarNav: React.FC<{path: string}> = ({path}) => (
-  <StyledContainer role="navigation" aria-label="Sidebar">
-    <SubNavContainer role="list">
-      {routes.map((item, index) => renderNavItem(path, item, index, 0))}
-    </SubNavContainer>
-  </StyledContainer>
+const Section: React.FC<SectionProps> = ({
+  section,
+  activePagePath,
+  lastSection,
+}) => {
+  const mainSectionHeader = section.title;
+
+  return (
+    <StyledSectionContainer>
+      <StyledFirstLevelHeader data-testid={section.id}>
+        {mainSectionHeader}
+      </StyledFirstLevelHeader>
+      <StyledNavigationSection>
+        {section.subNav.map(subNav => {
+          if ((subNav as NavigationSectionType).subNav) {
+            return (
+              <NavigationSection
+                navigationSection={subNav as NavigationSectionType}
+                activePagePath={activePagePath}
+              />
+            );
+          }
+          return (
+            <PageLink
+              page={subNav as PageType}
+              active={subNav.id === activePagePath}
+            />
+          );
+        })}
+      </StyledNavigationSection>
+      {lastSection ? null : <Divider />}
+    </StyledSectionContainer>
+  );
+};
+
+export const SidebarNav: React.FC<SidebarNavProps> = ({path}) => (
+  <StyledSidebarNav role="navigation" aria-label="Sidebar">
+    <StyledNavigationWrapper role="list">
+      {routes.map((section, index) => (
+        <Section
+          section={section}
+          activePagePath={path}
+          lastSection={index === routes.length - 1}
+        />
+      ))}
+    </StyledNavigationWrapper>
+  </StyledSidebarNav>
 );
