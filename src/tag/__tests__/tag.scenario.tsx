@@ -4,13 +4,18 @@ import {
   StorybookHeading,
   StorybookSubHeading,
 } from '../../test/storybook-comps';
-import {styled} from '../../utils/style';
+import {getColorFromTheme, styled} from '../../utils/style';
 import {IconFilledEmail} from '../../icons';
 import {Stack} from '../../stack';
 import {createTheme, ThemeProvider} from '../../theme';
 
-const Container = styled.div`
+const Container = styled.div<{hasBlackBackground?: boolean}>`
   margin: 24px;
+  ${({hasBlackBackground, theme}) =>
+    hasBlackBackground && {
+      background: getColorFromTheme('black')({theme}),
+      color: getColorFromTheme('white')({theme}),
+  }}
 `;
 
 const myCustomTheme = createTheme({
@@ -27,6 +32,10 @@ const myCustomTheme = createTheme({
     },
   },
 });
+
+const BlackContainer = styled.div`
+  background-color: black;
+`
 
 export default {
   name: 'tag',
@@ -114,6 +123,29 @@ export default {
               </Tag>
               <Tag size={TagSize.Large}>
                 <IconFilledEmail />
+                Text
+              </Tag>
+            </Stack>
+          </Container>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'inverse-tag',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <Container hasBlackBackground>
+            <Stack
+              flow="horizontal-center"
+              spaceInline="space020"
+              spaceStack="space020"
+              wrap="wrap"
+            >
+            <StorybookSubHeading>
+              tag with tagPrimaryInverse style preset
+            </StorybookSubHeading>
+              <Tag size={TagSize.Large} overrides={{stylePreset: 'tagPrimaryInverse'}}>
                 Text
               </Tag>
             </Stack>

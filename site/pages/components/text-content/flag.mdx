@@ -184,6 +184,24 @@ Flags have a number of props to facilitate a variety of uses:
 
 For more information on overriding component defaults, see the docs [here](/theming/component-defaults).
 
+## Variations
+
+NewsKit provides 6 types of predefined style preset flags variants.
+
+### Types
+
+The inverse examples sit on a black background.
+
+| StylePreset           |  Flag                                                                          | 
+| -------------- | :------------------------------------------------------------------------------: |
+| flagSolid          |  <Flag overrides={{stylePreset: 'flagSolid'}}> Text </Flag>     | 
+| flagSolidLive       |  <Flag overrides={{stylePreset: 'flagSolidLive'}}> Text </Flag>     | 
+| flagMinimal        |  <Flag overrides={{stylePreset: 'flagMinimal'}}> Text </Flag>     | 
+| flagSolidInverse        |  <div style={{backgroundColor: 'black'}}><Flag overrides={{stylePreset: 'flagSolidInverse'}}> Text </Flag> </div>    | 
+| flagSolidLiveInverse        |  <div style={{backgroundColor: 'black'}}><Flag overrides={{stylePreset: 'flagSolidLiveInverse'}}> Text </Flag></div>     | 
+| flagMinimalInverse        |   <div style={{backgroundColor: 'black'}}><Flag overrides={{stylePreset: 'flagMinimalInverse'}}> Text </Flag></div>     | 
+
+
 ## Rationale
 
 ### Styling

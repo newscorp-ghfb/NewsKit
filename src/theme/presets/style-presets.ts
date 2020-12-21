@@ -927,11 +927,33 @@ stylePresets.tagPrimary = {
   selected: {
     color: '{{colors.inkInverse}}',
     iconColor: '{{colors.inkInverse}}',
-    backgroundColor: '{{colors.interactiveSecondary030}}',
-    borderStyle: 'none',
+    backgroundColor: '{{colors.interactiveSecondary040}}',
   },
 };
 stylePresets.tagDefault = stylePresets.tagPrimary;
+
+stylePresets.tagPrimaryInverse = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.interface010}}',
+    borderWidth: '{{borders.borderWidth010}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
+  },
+  hover: {
+    backgroundColor: '{{colors.interactiveInverse010}}',
+  },
+  active: {
+    backgroundColor: '{{colors.interactiveInverse020}}',
+  },
+  selected: {
+    backgroundColor: '{{colors.interactiveInverse030}}',
+    color: '{{colors.inkBase}}',
+    iconColor: '{{colors.inkBase}}',
+  }
+}
 
 // Tab
 
@@ -1063,6 +1085,7 @@ stylePresets.iconNegative = {
 stylePresets.flagSolid = {
   base: {
     backgroundColor: '{{colors.interfaceInformative010}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
     color: '{{colors.inkInverse}}',
     iconColor: '{{colors.inkInverse}}',
   },
@@ -1081,6 +1104,29 @@ stylePresets.flagMinimal = {
   },
 };
 stylePresets.flagDefault = stylePresets.flagSolid;
+
+stylePresets.flagSolidInverse = {
+  base: {
+    backgroundColor: '{{colors.inkInverse}}',
+    borderRadius: '{{borders.borderRadiusSharp}}',
+    color: '{{colors.inkInformative}}',
+    iconColor: '{{colors.inkInformative}}'
+  }
+};
+stylePresets.flagMinimalInverse = {
+  base: {
+    backgroundColor: '{{colors.transparent}}',
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}'
+  }
+};
+stylePresets.flagSolidLiveInverse = {
+  base: {
+    backgroundColor: '{{colors.interfaceNegative020}}',
+    color: '{{colors.inkBase}}',
+    iconColor: '{{colors.inkBase}}'
+  }
+};
 
 //
 // Link

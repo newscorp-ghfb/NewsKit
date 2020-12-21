@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Flag, FlagSize} from '..';
-import {styled} from '../../utils/style';
+import {getColorFromTheme, styled} from '../../utils/style';
 import {
   IconFilledEmail,
   IconFilledBookmarkBorder,
@@ -16,8 +16,13 @@ const Block = styled.div`
   margin: 10px;
 `;
 
-const Container = styled.div`
+const Container = styled.div<{hasBlackBackground?: boolean}>`
   margin: 24px;
+  ${({hasBlackBackground, theme}) =>
+    hasBlackBackground && {
+      background: getColorFromTheme('black')({theme}),
+      color: getColorFromTheme('white')({theme}),
+  }}
 `;
 
 export default {
@@ -109,6 +114,41 @@ export default {
           <Block>
             <Flag overrides={{typographyPreset: 'meta020'}}>Text</Flag>
           </Block>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'inverse-flag',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>Inverse Flag</StorybookHeading>
+          <Container hasBlackBackground>
+            <Block>
+            <StorybookSubHeading>
+              with flagSolidInverse style preset
+            </StorybookSubHeading>
+              <Flag overrides={{stylePreset: 'flagSolidInverse'}} size={FlagSize.Large}>
+                Text
+              </Flag>
+            </Block>
+            <Block>
+            <StorybookSubHeading>
+              with flagSolidLiveInverse style preset
+            </StorybookSubHeading>
+            <Flag overrides={{stylePreset: 'flagSolidLiveInverse'}} size={FlagSize.Large}>
+              Text
+            </Flag>
+            </Block>
+            <Block>
+            <StorybookSubHeading>
+              with flagMinimalInverse style preset
+            </StorybookSubHeading>
+            <Flag overrides={{stylePreset: 'flagMinimalInverse'}} size={FlagSize.Large}>
+              Text
+            </Flag>
+            </Block>
+          </Container>
         </React.Fragment>
       ),
     },

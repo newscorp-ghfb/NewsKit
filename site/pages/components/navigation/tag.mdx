@@ -185,6 +185,21 @@ Tags have a number of props to facilitate a variety of uses:
 
 For more information on overriding component defaults, see the docs [here](/theming/component-defaults).
 
+
+## Variations
+
+NewsKit provides 6 types of predefined style preset flags variants.
+
+### Types
+
+The inverse examples sit on a black background.
+
+| StylePreset           |  Tag                                                                          | 
+| -------------- | :------------------------------------------------------------------------------: |
+| tagPrimary          |  <Tag overrides={{stylePreset: 'tagPrimary'}}> Text </Tag>     | 
+| tagPrimaryInverse       |  <div style={{backgroundColor: 'black'}}><Tag overrides={{stylePreset: 'tagPrimaryInverse'}}> Text </Tag></div>     | 
+
+
 ## Rationale
 
 ### Styling
