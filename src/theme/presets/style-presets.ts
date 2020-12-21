@@ -952,8 +952,8 @@ stylePresets.tagPrimaryInverse = {
     backgroundColor: '{{colors.interactiveInverse030}}',
     color: '{{colors.inkBase}}',
     iconColor: '{{colors.inkBase}}',
-  }
-}
+  },
+};
 
 // Tab
 
@@ -1110,22 +1110,22 @@ stylePresets.flagSolidInverse = {
     backgroundColor: '{{colors.inkInverse}}',
     borderRadius: '{{borders.borderRadiusSharp}}',
     color: '{{colors.inkInformative}}',
-    iconColor: '{{colors.inkInformative}}'
-  }
+    iconColor: '{{colors.inkInformative}}',
+  },
 };
 stylePresets.flagMinimalInverse = {
   base: {
     backgroundColor: '{{colors.transparent}}',
     color: '{{colors.inkInverse}}',
-    iconColor: '{{colors.inkInverse}}'
-  }
+    iconColor: '{{colors.inkInverse}}',
+  },
 };
 stylePresets.flagSolidLiveInverse = {
   base: {
     backgroundColor: '{{colors.interfaceNegative020}}',
     color: '{{colors.inkBase}}',
-    iconColor: '{{colors.inkBase}}'
-  }
+    iconColor: '{{colors.inkBase}}',
+  },
 };
 
 //

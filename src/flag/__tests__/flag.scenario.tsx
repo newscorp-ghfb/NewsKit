@@ -22,7 +22,7 @@ const Container = styled.div<{hasBlackBackground?: boolean}>`
     hasBlackBackground && {
       background: getColorFromTheme('black')({theme}),
       color: getColorFromTheme('white')({theme}),
-  }}
+    }}
 `;
 
 export default {
@@ -125,28 +125,37 @@ export default {
           <StorybookHeading>Inverse Flag</StorybookHeading>
           <Container hasBlackBackground>
             <Block>
-            <StorybookSubHeading>
-              with flagSolidInverse style preset
-            </StorybookSubHeading>
-              <Flag overrides={{stylePreset: 'flagSolidInverse'}} size={FlagSize.Large}>
+              <StorybookSubHeading>
+                with flagSolidInverse style preset
+              </StorybookSubHeading>
+              <Flag
+                overrides={{stylePreset: 'flagSolidInverse'}}
+                size={FlagSize.Large}
+              >
                 Text
               </Flag>
             </Block>
             <Block>
-            <StorybookSubHeading>
-              with flagSolidLiveInverse style preset
-            </StorybookSubHeading>
-            <Flag overrides={{stylePreset: 'flagSolidLiveInverse'}} size={FlagSize.Large}>
-              Text
-            </Flag>
+              <StorybookSubHeading>
+                with flagSolidLiveInverse style preset
+              </StorybookSubHeading>
+              <Flag
+                overrides={{stylePreset: 'flagSolidLiveInverse'}}
+                size={FlagSize.Large}
+              >
+                Text
+              </Flag>
             </Block>
             <Block>
-            <StorybookSubHeading>
-              with flagMinimalInverse style preset
-            </StorybookSubHeading>
-            <Flag overrides={{stylePreset: 'flagMinimalInverse'}} size={FlagSize.Large}>
-              Text
-            </Flag>
+              <StorybookSubHeading>
+                with flagMinimalInverse style preset
+              </StorybookSubHeading>
+              <Flag
+                overrides={{stylePreset: 'flagMinimalInverse'}}
+                size={FlagSize.Large}
+              >
+                Text
+              </Flag>
             </Block>
           </Container>
         </React.Fragment>

@@ -15,7 +15,7 @@ const Container = styled.div<{hasBlackBackground?: boolean}>`
     hasBlackBackground && {
       background: getColorFromTheme('black')({theme}),
       color: getColorFromTheme('white')({theme}),
-  }}
+    }}
 `;
 
 const myCustomTheme = createTheme({
@@ -32,10 +32,6 @@ const myCustomTheme = createTheme({
     },
   },
 });
-
-const BlackContainer = styled.div`
-  background-color: black;
-`
 
 export default {
   name: 'tag',
@@ -142,10 +138,13 @@ export default {
               spaceStack="space020"
               wrap="wrap"
             >
-            <StorybookSubHeading>
-              tag with tagPrimaryInverse style preset
-            </StorybookSubHeading>
-              <Tag size={TagSize.Large} overrides={{stylePreset: 'tagPrimaryInverse'}}>
+              <StorybookSubHeading>
+                tag with tagPrimaryInverse style preset
+              </StorybookSubHeading>
+              <Tag
+                size={TagSize.Large}
+                overrides={{stylePreset: 'tagPrimaryInverse'}}
+              >
                 Text
               </Tag>
             </Stack>
