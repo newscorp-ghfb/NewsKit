@@ -7,7 +7,6 @@ export interface LinkProps
   // href is optional on AnchorHTMLAttributes, here we make it required.
   href: string;
   external?: boolean;
-  noUnderline?: boolean;
   overrides?: {
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;

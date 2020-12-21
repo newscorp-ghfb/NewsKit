@@ -1131,7 +1131,48 @@ stylePresets.flagSolidLiveInverse = {
 //
 // Link
 //
-
+stylePresets.linkStandalone = {
+  base: {
+    color: '{{colors.interactivePrimary030}}',
+    iconColor: '{{colors.interactivePrimary030}}',
+    textDecoration: 'none',
+  },
+  hover: {
+    color: '{{colors.interactivePrimary040}}',
+    iconColor: '{{colors.interactivePrimary040}}',
+    textDecoration: 'underline',
+  },
+  active: {
+    color: '{{colors.interactivePrimary050}}',
+    iconColor: '{{colors.interactivePrimary050}}',
+    textDecoration: 'underline',
+  },
+  visited: {
+    color: '{{colors.interactiveVisited010}}',
+    iconColor: '{{colors.interactiveVisited010}}',
+  },
+};
+stylePresets.linkStandaloneInverse = {
+  base: {
+    color: '{{colors.interactiveInverse030}}',
+    iconColor: '{{colors.interactiveInverse030}}',
+    textDecoration: 'none',
+  },
+  hover: {
+    color: '{{colors.interactiveInverse030}}',
+    iconColor: '{{colors.interactiveInverse030}}',
+    textDecoration: 'underline',
+  },
+  active: {
+    color: '{{colors.interactiveInverse030}}',
+    iconColor: '{{colors.interactiveInverse030}}',
+    textDecoration: 'underline',
+  },
+  visited: {
+    color: '{{colors.interactiveInverse040}}',
+    iconColor: '{{colors.interactiveInverse040}}',
+  },
+};
 stylePresets.linkInline = {
   base: {
     color: '{{colors.interactivePrimary030}}',
@@ -1150,8 +1191,25 @@ stylePresets.linkInline = {
     iconColor: '{{colors.interactiveVisited010}}',
   },
 };
-
-stylePresets.linkStandalone = {
+stylePresets.linkInlineInverse = {
+  base: {
+    color: '{{colors.interactiveInverse030}}',
+    iconColor: '{{colors.interactiveInverse030}}',
+  },
+  hover: {
+    color: '{{colors.interactiveInverse030}}',
+    iconColor: '{{colors.interactiveInverse030}}',
+  },
+  active: {
+    color: '{{colors.interactiveInverse030}}',
+    iconColor: '{{colors.interactiveInverse030}}',
+  },
+  visited: {
+    color: '{{colors.interactiveInverse040}}',
+    iconColor: '{{colors.interactiveInverse040}}',
+  },
+};
+stylePresets.linkEmail = {
   base: {
     color: '{{colors.interactivePrimary030}}',
     iconColor: '{{colors.interactivePrimary030}}',
@@ -1165,10 +1223,74 @@ stylePresets.linkStandalone = {
   active: {
     color: '{{colors.interactivePrimary050}}',
     iconColor: '{{colors.interactivePrimary050}}',
+    textDecoration: 'underline',
   },
   visited: {
+    color: '{{colors.interactiveVisited010}}',
+    iconColor: '{{colors.interactiveVisited010}}',
+  },
+};
+stylePresets.linkEmailInverse = {
+  base: {
+    color: '{{colors.interactiveInverse030}}',
+    iconColor: '{{colors.interactiveInverse030}}',
+    textDecoration: 'none',
+  },
+  hover: {
+    color: '{{colors.interactiveInverse030}}',
+    iconColor: '{{colors.interactiveInverse030}}',
+    textDecoration: 'underline',
+  },
+  active: {
+    color: '{{colors.interactiveInverse030}}',
+    iconColor: '{{colors.interactiveInverse030}}',
+    textDecoration: 'underline',
+  },
+  visited: {
+    color: '{{colors.interactiveInverse040}}',
+    iconColor: '{{colors.interactiveInverse040}}',
+  },
+};
+stylePresets.linkExternal = {
+  base: {
     color: '{{colors.interactivePrimary030}}',
     iconColor: '{{colors.interactivePrimary030}}',
+    textDecoration: 'none',
+  },
+  hover: {
+    color: '{{colors.interactivePrimary040}}',
+    iconColor: '{{colors.interactivePrimary040}}',
+    textDecoration: 'underline',
+  },
+  active: {
+    color: '{{colors.interactivePrimary050}}',
+    iconColor: '{{colors.interactivePrimary050}}',
+    textDecoration: 'underline',
+  },
+  visited: {
+    color: '{{colors.interactiveVisited010}}',
+    iconColor: '{{colors.interactiveVisited010}}',
+  },
+};
+stylePresets.linkExternalInverse = {
+  base: {
+    color: '{{colors.interactiveInverse030}}',
+    iconColor: '{{colors.interactiveInverse030}}',
+    textDecoration: 'none',
+  },
+  hover: {
+    color: '{{colors.interactiveInverse030}}',
+    iconColor: '{{colors.interactiveInverse030}}',
+    textDecoration: 'underline',
+  },
+  active: {
+    color: '{{colors.interactiveInverse030}}',
+    iconColor: '{{colors.interactiveInverse030}}',
+    textDecoration: 'underline',
+  },
+  visited: {
+    color: '{{colors.interactiveInverse040}}',
+    iconColor: '{{colors.interactiveInverse040}}',
   },
 };
 

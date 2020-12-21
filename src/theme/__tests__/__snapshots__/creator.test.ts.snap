@@ -546,7 +546,7 @@ Object {
     },
     "linkStandalone": Object {
       "stylePreset": "linkStandalone",
-      "typographyPreset": "utilityButton020",
+      "typographyPreset": "utilityLabel020",
     },
     "orderedList": Object {
       "content": Object {
@@ -2300,6 +2300,90 @@ Object {
         "iconColor": "{{colors.inkSubtle}}",
       },
     },
+    "linkEmail": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.interactivePrimary050}}",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "{{colors.interactivePrimary040}}",
+        "iconColor": "{{colors.interactivePrimary040}}",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "{{colors.interactiveVisited010}}",
+        "iconColor": "{{colors.interactiveVisited010}}",
+      },
+    },
+    "linkEmailInverse": Object {
+      "active": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "{{colors.interactiveInverse040}}",
+        "iconColor": "{{colors.interactiveInverse040}}",
+      },
+    },
+    "linkExternal": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.interactivePrimary050}}",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "{{colors.interactivePrimary040}}",
+        "iconColor": "{{colors.interactivePrimary040}}",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "{{colors.interactiveVisited010}}",
+        "iconColor": "{{colors.interactiveVisited010}}",
+      },
+    },
+    "linkExternalInverse": Object {
+      "active": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "{{colors.interactiveInverse040}}",
+        "iconColor": "{{colors.interactiveInverse040}}",
+      },
+    },
     "linkInline": Object {
       "active": Object {
         "color": "{{colors.interactivePrimary050}}",
@@ -2318,10 +2402,29 @@ Object {
         "iconColor": "{{colors.interactiveVisited010}}",
       },
     },
+    "linkInlineInverse": Object {
+      "active": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+      },
+      "base": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+      },
+      "hover": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+      },
+      "visited": Object {
+        "color": "{{colors.interactiveInverse040}}",
+        "iconColor": "{{colors.interactiveInverse040}}",
+      },
+    },
     "linkStandalone": Object {
       "active": Object {
         "color": "{{colors.interactivePrimary050}}",
         "iconColor": "{{colors.interactivePrimary050}}",
+        "textDecoration": "underline",
       },
       "base": Object {
         "color": "{{colors.interactivePrimary030}}",
@@ -2334,8 +2437,29 @@ Object {
         "textDecoration": "underline",
       },
       "visited": Object {
-        "color": "{{colors.interactivePrimary030}}",
-        "iconColor": "{{colors.interactivePrimary030}}",
+        "color": "{{colors.interactiveVisited010}}",
+        "iconColor": "{{colors.interactiveVisited010}}",
+      },
+    },
+    "linkStandaloneInverse": Object {
+      "active": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "{{colors.interactiveInverse040}}",
+        "iconColor": "{{colors.interactiveInverse040}}",
       },
     },
     "sliderIndicator": Object {
@@ -2605,6 +2729,7 @@ Object {
       "active": Object {
         "color": "{{colors.interactivePrimary050}}",
         "iconColor": "{{colors.interactivePrimary050}}",
+        "textDecoration": "underline",
       },
       "base": Object {
         "color": "{{colors.interactivePrimary030}}",
@@ -2617,8 +2742,8 @@ Object {
         "textDecoration": "underline",
       },
       "visited": Object {
-        "color": "{{colors.interactivePrimary030}}",
-        "iconColor": "{{colors.interactivePrimary030}}",
+        "color": "{{colors.interactiveVisited010}}",
+        "iconColor": "{{colors.interactiveVisited010}}",
       },
     },
     "uppercaseInkBase": Object {

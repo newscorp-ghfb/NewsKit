@@ -270,96 +270,6 @@ exports[`Link renders as expected in default state 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Link renders correctly with noUnderline property 1`] = `
-<DocumentFragment>
-  .emotion-2 {
-  display: inline-block;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
-  transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #0a68c1;
-}
-
-.emotion-2 svg {
-  fill: #0a68c1;
-}
-
-.emotion-2:hover:not(:disabled) {
-  color: #02509b;
-}
-
-.emotion-2:hover:not(:disabled) svg {
-  fill: #02509b;
-}
-
-.emotion-2:active:not(:disabled) {
-  color: #01396e;
-}
-
-.emotion-2:active:not(:disabled) svg {
-  fill: #01396e;
-}
-
-.emotion-2:visited:not(:disabled) {
-  color: #7547a3;
-}
-
-.emotion-2:visited:not(:disabled) svg {
-  fill: #7547a3;
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .emotion-2 {
-    vertical-align: text-bottom;
-  }
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-.emotion-0 {
-  margin: 0;
-  padding: 1px 0;
-  display: inline-block;
-  display: block;
-}
-
-<a
-    class="emotion-2"
-    href="#"
-  >
-    <span
-      class="emotion-1"
-    >
-      <span
-        class="emotion-0"
-      >
-        test link text
-      </span>
-    </span>
-  </a>
-</DocumentFragment>
-`;
-
 exports[`Link renders the external icon even if the href is internal 1`] = `
 <DocumentFragment>
   .emotion-6 {
@@ -592,7 +502,7 @@ exports[`Link renders the external icon if the href is external 1`] = `
 </DocumentFragment>
 `;
 
-exports[`LinkStandalone renders as expected in default state 1`] = `
+exports[`Link renders with overrides 1`] = `
 <DocumentFragment>
   .emotion-1 {
   display: -webkit-box;
@@ -621,39 +531,15 @@ exports[`LinkStandalone renders as expected in default state 1`] = `
   transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
   transition-timing-function: cubic-bezier(0,0,.5,1);
-  color: #0a68c1;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-2 svg {
-  fill: #0a68c1;
-}
-
-.emotion-2:hover:not(:disabled) {
-  color: #02509b;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2:hover:not(:disabled) svg {
-  fill: #02509b;
-}
-
-.emotion-2:active:not(:disabled) {
-  color: #01396e;
-}
-
-.emotion-2:active:not(:disabled) svg {
-  fill: #01396e;
+  color: #ef1703;
 }
 
 .emotion-2:visited:not(:disabled) {
-  color: #0a68c1;
+  color: #a60100;
 }
 
-.emotion-2:visited:not(:disabled) svg {
-  fill: #0a68c1;
+.emotion-2:hover:not(:disabled) {
+  color: #23a248;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -691,6 +577,126 @@ exports[`LinkStandalone renders as expected in default state 1`] = `
   height: 0;
   width: 0;
   margin-top: -0.4267857142857143em;
+}
+
+<a
+    class="emotion-2"
+    href="#"
+  >
+    <span
+      class="emotion-1"
+    >
+      <span
+        class="emotion-0"
+      >
+        test link test
+      </span>
+    </span>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`LinkStandalone renders as expected in default state 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-2 {
+  display: inline-block;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  color: #0a68c1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2 svg {
+  fill: #0a68c1;
+}
+
+.emotion-2:hover:not(:disabled) {
+  color: #02509b;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #02509b;
+}
+
+.emotion-2:active:not(:disabled) {
+  color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #01396e;
+}
+
+.emotion-2:visited:not(:disabled) {
+  color: #7547a3;
+}
+
+.emotion-2:visited:not(:disabled) svg {
+  fill: #7547a3;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .emotion-2 {
+    vertical-align: text-bottom;
+  }
 }
 
 <a

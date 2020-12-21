@@ -87,7 +87,6 @@ describe('ConsentSettingsLink', () => {
         siteId,
         privacyManagerId,
         children: 'Some Custom Link Text With Styles',
-        noUnderline: true,
         overrides: {
           typographyPreset: 'utilityBody010',
         },

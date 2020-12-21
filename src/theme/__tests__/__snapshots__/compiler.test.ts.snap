@@ -547,7 +547,7 @@ Object {
     },
     "linkStandalone": Object {
       "stylePreset": "linkStandalone",
-      "typographyPreset": "utilityButton020",
+      "typographyPreset": "utilityLabel020",
     },
     "orderedList": Object {
       "content": Object {
@@ -2301,6 +2301,90 @@ Object {
         "iconColor": "#535353",
       },
     },
+    "linkEmail": Object {
+      "active": Object {
+        "color": "#01396e",
+        "iconColor": "#01396e",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "#02509b",
+        "iconColor": "#02509b",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "#7547a3",
+        "iconColor": "#7547a3",
+      },
+    },
+    "linkEmailInverse": Object {
+      "active": Object {
+        "color": "rgba(255,255,255,1)",
+        "iconColor": "rgba(255,255,255,1)",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "rgba(255,255,255,1)",
+        "iconColor": "rgba(255,255,255,1)",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "rgba(255,255,255,1)",
+        "iconColor": "rgba(255,255,255,1)",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "rgba(255,255,255,0.80)",
+        "iconColor": "rgba(255,255,255,0.80)",
+      },
+    },
+    "linkExternal": Object {
+      "active": Object {
+        "color": "#01396e",
+        "iconColor": "#01396e",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "#0a68c1",
+        "iconColor": "#0a68c1",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "#02509b",
+        "iconColor": "#02509b",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "#7547a3",
+        "iconColor": "#7547a3",
+      },
+    },
+    "linkExternalInverse": Object {
+      "active": Object {
+        "color": "rgba(255,255,255,1)",
+        "iconColor": "rgba(255,255,255,1)",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "rgba(255,255,255,1)",
+        "iconColor": "rgba(255,255,255,1)",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "rgba(255,255,255,1)",
+        "iconColor": "rgba(255,255,255,1)",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "rgba(255,255,255,0.80)",
+        "iconColor": "rgba(255,255,255,0.80)",
+      },
+    },
     "linkInline": Object {
       "active": Object {
         "color": "#01396e",
@@ -2319,10 +2403,29 @@ Object {
         "iconColor": "#7547a3",
       },
     },
+    "linkInlineInverse": Object {
+      "active": Object {
+        "color": "rgba(255,255,255,1)",
+        "iconColor": "rgba(255,255,255,1)",
+      },
+      "base": Object {
+        "color": "rgba(255,255,255,1)",
+        "iconColor": "rgba(255,255,255,1)",
+      },
+      "hover": Object {
+        "color": "rgba(255,255,255,1)",
+        "iconColor": "rgba(255,255,255,1)",
+      },
+      "visited": Object {
+        "color": "rgba(255,255,255,0.80)",
+        "iconColor": "rgba(255,255,255,0.80)",
+      },
+    },
     "linkStandalone": Object {
       "active": Object {
         "color": "#01396e",
         "iconColor": "#01396e",
+        "textDecoration": "underline",
       },
       "base": Object {
         "color": "#0a68c1",
@@ -2335,8 +2438,29 @@ Object {
         "textDecoration": "underline",
       },
       "visited": Object {
-        "color": "#0a68c1",
-        "iconColor": "#0a68c1",
+        "color": "#7547a3",
+        "iconColor": "#7547a3",
+      },
+    },
+    "linkStandaloneInverse": Object {
+      "active": Object {
+        "color": "rgba(255,255,255,1)",
+        "iconColor": "rgba(255,255,255,1)",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "rgba(255,255,255,1)",
+        "iconColor": "rgba(255,255,255,1)",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "rgba(255,255,255,1)",
+        "iconColor": "rgba(255,255,255,1)",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "rgba(255,255,255,0.80)",
+        "iconColor": "rgba(255,255,255,0.80)",
       },
     },
     "sliderIndicator": Object {
@@ -2606,6 +2730,7 @@ Object {
       "active": Object {
         "color": "#01396e",
         "iconColor": "#01396e",
+        "textDecoration": "underline",
       },
       "base": Object {
         "color": "#0a68c1",
@@ -2618,8 +2743,8 @@ Object {
         "textDecoration": "underline",
       },
       "visited": Object {
-        "color": "#0a68c1",
-        "iconColor": "#0a68c1",
+        "color": "#7547a3",
+        "iconColor": "#7547a3",
       },
     },
     "uppercaseInkBase": Object {

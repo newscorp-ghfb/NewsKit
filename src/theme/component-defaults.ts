@@ -375,7 +375,7 @@ export const componentDefaults = {
   },
   linkStandalone: {
     stylePreset: 'linkStandalone',
-    typographyPreset: 'utilityButton020',
+    typographyPreset: 'utilityLabel020',
   },
   orderedList: {
     spaceInline: 'space040',

@@ -114,17 +114,17 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                   <nav>
                     <NavigationList>
                       <li>
-                        <Link href="/components" noUnderline color="inkSubtle">
+                        <Link href="/components" color="inkSubtle">
                           Components
                         </Link>
                       </li>
                       <li>
-                        <Link href="/styleguides" noUnderline color="inkSubtle">
+                        <Link href="/styleguides" color="inkSubtle">
                           Styleguides
                         </Link>
                       </li>
                       <li>
-                        <Link href="/resources" noUnderline color="inkSubtle">
+                        <Link href="/resources" color="inkSubtle">
                           Resources
                         </Link>
                       </li>

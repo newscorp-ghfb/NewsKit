@@ -31,6 +31,8 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 
 .emotion-2:active:not(:disabled) {
   color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-2:active:not(:disabled) svg {
@@ -38,11 +40,11 @@ exports[`ConsentSettingsLink with children renders link with custom text 1`] = `
 }
 
 .emotion-2:visited:not(:disabled) {
-  color: #0a68c1;
+  color: #7547a3;
 }
 
 .emotion-2:visited:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #7547a3;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -150,6 +152,8 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 
 .emotion-2:active:not(:disabled) {
   color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-2:active:not(:disabled) svg {
@@ -157,11 +161,11 @@ exports[`ConsentSettingsLink with link props renders link with styles 1`] = `
 }
 
 .emotion-2:visited:not(:disabled) {
-  color: #0a68c1;
+  color: #7547a3;
 }
 
 .emotion-2:visited:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #7547a3;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
@@ -269,6 +273,8 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
 
 .emotion-2:active:not(:disabled) {
   color: #01396e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-2:active:not(:disabled) svg {
@@ -276,11 +282,11 @@ exports[`ConsentSettingsLink with no children renders link with default text 1`]
 }
 
 .emotion-2:visited:not(:disabled) {
-  color: #0a68c1;
+  color: #7547a3;
 }
 
 .emotion-2:visited:not(:disabled) svg {
-  fill: #0a68c1;
+  fill: #7547a3;
 }
 
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {

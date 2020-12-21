@@ -6,6 +6,31 @@ import {
 } from '../../test/test-utils';
 import {Link, LinkStandalone} from '..';
 import {EventTrigger, InstrumentationProvider} from '../../instrumentation';
+import {createTheme} from '../../theme';
+
+const myCustomTheme = createTheme({
+  name: 'my-custom-link-theme',
+  overrides: {
+    colors: {
+      inkLinkBase: '{{colors.red060}}',
+      inkLinkHover: '{{colors.green060}}',
+      inkLinkVisited: '{{colors.red080}}',
+    },
+    stylePresets: {
+      linkCustom: {
+        base: {
+          color: '{{colors.inkLinkBase}}',
+        },
+        visited: {
+          color: '{{colors.inkLinkVisited}}',
+        },
+        hover: {
+          color: '{{colors.inkLinkHover}}',
+        },
+      },
+    },
+  },
+});
 
 describe('Link', () => {
   test('renders as expected in default state', () => {
@@ -16,12 +41,19 @@ describe('Link', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders correctly with noUnderline property', () => {
-    const fragment = renderToFragmentWithTheme(Link, {
-      href: '#',
-      noUnderline: true,
-      children: 'test link text',
-    });
+  test('renders with overrides', () => {
+    const fragment = renderToFragmentWithTheme(
+      Link,
+      {
+        href: '#',
+        children: 'test link test',
+        overrides: {
+          typographyPreset: 'utilityButton020',
+          stylePreset: 'linkCustom',
+        },
+      },
+      myCustomTheme,
+    );
     expect(fragment).toMatchSnapshot();
   });
 

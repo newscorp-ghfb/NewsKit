@@ -5,7 +5,6 @@ export interface LinkProps
   href: string;
   eventContext?: EventContext;
   external?: boolean;
-  noUnderline?: boolean;
   overrides?: {
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Link, LinkStandalone} from '..';
-import {styled} from '../../utils/style';
+import {getColorFromTheme, styled} from '../../utils/style';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -13,6 +13,7 @@ const myCustomTheme = createTheme({
   overrides: {
     colors: {
       inkLinkBase: '{{colors.red060}}',
+      inkLinkHover: '{{colors.green060}}',
       inkLinkVisited: '{{colors.red080}}',
     },
     stylePresets: {
@@ -23,14 +24,22 @@ const myCustomTheme = createTheme({
         visited: {
           color: '{{colors.inkLinkVisited}}',
         },
+        hover: {
+          color: '{{colors.inkLinkHover}}',
+        },
       },
     },
   },
 });
 
-const Container = styled.div`
+const Container = styled.div<{hasBackground?: boolean}>`
   max-width: 600px;
   margin: 0 auto;
+  ${({hasBackground, theme}) =>
+    hasBackground && {
+      background: getColorFromTheme('black')({theme}),
+      color: getColorFromTheme('white')({theme}),
+    }}
 `;
 
 const CustomPragraph = styled.p`
@@ -42,7 +51,7 @@ const LinkWithOverrides = ({children}: {children: React.ReactNode}) => (
     <Link
       href="http://localhost:6006"
       overrides={{
-        typographyPreset: 'utilityLabel020',
+        typographyPreset: 'utilityButton020',
         stylePreset: 'linkCustom',
       }}
     >
@@ -56,7 +65,7 @@ const ExternalLinkWithOverrides = ({children}: {children: React.ReactNode}) => (
     <Link
       href="http://apple.com"
       overrides={{
-        typographyPreset: 'utilityLabel020',
+        typographyPreset: 'utilityButton020',
         stylePreset: 'linkCustom',
       }}
     >
@@ -73,53 +82,27 @@ export default {
       type: 'story',
       component: () => (
         <Container>
-          <StorybookHeading>Link component</StorybookHeading>
-          <Link href="/">Inline Link without overrides</Link>
-          <br />
-          <br />
-          <Link href="/" eventContext={{event: 'other event data'}}>
-            Inline Link with extra event data
-          </Link>
+          {/* ------ Link inline -------- */}
+          <StorybookHeading>Link inline</StorybookHeading>
+          <Link href="/">Inline link</Link>
           <br />
           <br />
           <ThemeProvider theme={myCustomTheme}>
             <Link
               href="/"
               overrides={{
-                typographyPreset: 'utilityLabel020',
+                typographyPreset: 'utilityButton020',
                 stylePreset: 'linkCustom',
               }}
             >
-              Inline Link with style and type overrides
+              Inline link with style and type overrides
             </Link>
           </ThemeProvider>
           <br />
           <br />
-          <Link href="http://newskit.staging-news.co.uk/">
-            Inline external Link with external Icon
-          </Link>
-          <br />
-          <br />
-          <Link
-            href="http://newskit.staging-news.co.uk/"
-            overrides={{
-              externalIcon: {
-                size: 'iconSize030',
-              },
-            }}
-          >
-            Inline external Link with custom size for external Icon
-          </Link>
-          <br />
-          <br />
-          <Link href="http://newskit.staging-news.co.uk/" external={false}>
-            Inline external Link without external Icon
-          </Link>
-          <br />
-          <br />
           <Link href="/">
             <IconFilledEmail overrides={{size: 'iconSize010'}} />
-            Inline Link with leading and trailing icons
+            Inline link with leading and trailing icons
             <IconFilledEmail overrides={{size: 'iconSize010'}} />
           </Link>
           <br />
@@ -131,44 +114,156 @@ export default {
             }}
           >
             <IconFilledEmail overrides={{size: 'iconSize010'}} />
-            Inline Link with leading and trailing icons and custom space
+            Inline link with leading and trailing icons and custom space
             <IconFilledEmail overrides={{size: 'iconSize010'}} />
           </Link>
           <br />
           <br />
-          <Link href="mailto:###">Inline mail link</Link>
+          <Link href="mailto:###" overrides={{stylePreset: 'linkEmail'}}>
+            Inline mail link
+          </Link>
           <br />
           <br />
           <Link href="tel:###">Inline telephone link</Link>
-        </Container>
-      ),
-    },
-    {
-      name: 'link-standalone',
-      type: 'story',
-      component: () => (
-        <Container>
-          <StorybookHeading>LinkStandalone component</StorybookHeading>
-          <LinkStandalone href="/">Link Standalone internal</LinkStandalone>
+
+          {/* ------ Link external -------- */}
+          <StorybookHeading>Link external</StorybookHeading>
+          <Link
+            href="http://newskit.staging-news.co.uk/"
+            overrides={{stylePreset: 'linkExternal'}}
+          >
+            External link with external icon
+          </Link>
+          <br />
+          <br />
+          <Link
+            href="http://newskit.staging-news.co.uk/"
+            overrides={{
+              stylePreset: 'linkExternal',
+              externalIcon: {
+                size: 'iconSize030',
+              },
+            }}
+          >
+            External link with custom size for external icon
+          </Link>
+          <br />
+          <br />
+          <Link
+            href="http://newskit.staging-news.co.uk/"
+            external={false}
+            overrides={{stylePreset: 'linkExternal'}}
+          >
+            External link without external icon
+          </Link>
+
+          {/* ------ Link standalone -------- */}
+          <StorybookHeading>Link standalone</StorybookHeading>
+          <LinkStandalone href="/">Standalone link</LinkStandalone>
           <br />
           <br />
           <LinkStandalone href="https://google.com">
-            Link Standalone external
+            Standalone link external
           </LinkStandalone>
           <br />
           <br />
-
           <ThemeProvider theme={myCustomTheme}>
             <LinkStandalone
               href="https://google.com"
               overrides={{
-                typographyPreset: 'utilityLabel020',
+                typographyPreset: 'utilityButton020',
                 stylePreset: 'linkCustom',
               }}
             >
               Link Standalone external with type and style Preset overrides
             </LinkStandalone>
           </ThemeProvider>
+        </Container>
+      ),
+    },
+    {
+      name: 'link-inverse',
+      type: 'story',
+      component: () => (
+        <Container hasBackground>
+          {/* ------ Link inline -------- */}
+          <StorybookHeading>Link inline</StorybookHeading>
+          <Link href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
+            Inline link
+          </Link>
+          <br />
+          <br />
+          <Link href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
+            <IconFilledEmail overrides={{size: 'iconSize010'}} />
+            Inline link with leading and trailing icons
+            <IconFilledEmail overrides={{size: 'iconSize010'}} />
+          </Link>
+          <br />
+          <br />
+          <Link
+            href="/"
+            overrides={{
+              stylePreset: 'linkInlineInverse',
+              spaceInline: 'space030',
+            }}
+          >
+            <IconFilledEmail overrides={{size: 'iconSize010'}} />
+            Inline link with leading and trailing icons and custom space
+            <IconFilledEmail overrides={{size: 'iconSize010'}} />
+          </Link>
+          <br />
+          <br />
+          <Link href="mailto:###" overrides={{stylePreset: 'linkEmailInverse'}}>
+            Inline mail link
+          </Link>
+
+          {/* ------ Link external -------- */}
+          <StorybookHeading>Link external</StorybookHeading>
+          <Link
+            href="http://newskit.staging-news.co.uk/"
+            overrides={{stylePreset: 'linkExternalInverse'}}
+          >
+            External link with external icon
+          </Link>
+          <br />
+          <br />
+          <Link
+            href="http://newskit.staging-news.co.uk/"
+            overrides={{
+              stylePreset: 'linkExternalInverse',
+              externalIcon: {
+                size: 'iconSize030',
+              },
+            }}
+          >
+            External link with custom size for external icon
+          </Link>
+          <br />
+          <br />
+          <Link
+            href="http://newskit.staging-news.co.uk/"
+            external={false}
+            overrides={{stylePreset: 'linkExternalInverse'}}
+          >
+            External link without external icon
+          </Link>
+
+          {/* ------ Link standalone -------- */}
+          <StorybookHeading>Link standalone</StorybookHeading>
+          <LinkStandalone
+            href="/"
+            overrides={{stylePreset: 'linkStandaloneInverse'}}
+          >
+            Standalone link
+          </LinkStandalone>
+          <br />
+          <br />
+          <LinkStandalone
+            href="https://google.com"
+            overrides={{stylePreset: 'linkStandaloneInverse'}}
+          >
+            Standalone link external
+          </LinkStandalone>
         </Container>
       ),
     },
