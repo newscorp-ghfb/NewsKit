@@ -192,13 +192,18 @@ NewsKit provides 2 types of predefined style preset tags variants.
 
 ### Types
 
-The inverse examples sit on a black background.
+The inverse example sit on a black background.
 
 | StylePreset           |  Tag                                                                          | 
 | -------------- | :------------------------------------------------------------------------------: |
 | tagPrimary          |  <Tag overrides={{stylePreset: 'tagPrimary'}}> Text </Tag>     | 
-| tagPrimaryInverse       |  <LegacyBlock display="inline-block" backgroundColor="black"><Tag overrides={{stylePreset: 'tagPrimaryInverse'}}> Text </Tag></LegacyBlock>     | 
 
+<LegacyBlock backgroundColor="neutral080" display="inline-block">
+
+  | StylePreset   |  Tag                                                                    | 
+| -------------- | :------------------------------------------------------------------------------: |
+| tagPrimaryInverse       |  <Tag overrides={{stylePreset: 'tagPrimaryInverse'}}> Text </Tag>       |
+ </LegacyBlock> 
 
 ## Rationale
 
