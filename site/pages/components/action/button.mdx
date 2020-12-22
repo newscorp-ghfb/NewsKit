@@ -6,6 +6,7 @@ import {LegacyBlock} from '../../../components/legacy-block';
 import {Selector} from '../../../components/playground/selector';
 import {CodeFromDefaultPresets, Code} from '../../../components/code';
 import {Button, IconButton, ButtonSize, IconFilledEmail} from 'newskit';
+import {InverseTheme} from '../../../components/inverse-theme'
 
 export default Layout;
 
@@ -421,12 +422,13 @@ Add a button negative style preset token (buttonSolidNegative, buttonOutlinedNeg
 Intended for use on a dark background.
 
 Add a button inverse style preset token (buttonSolidInverse, buttonOutlinedInverse, buttonSolidInverse, iconButtonSolidInverse, iconButtonOutlinedInverse, iconButtonMinimalInverse) to the overrides .
-<LegacyBlock backgroundColor="neutral080" display="inline-block">
+<InverseTheme>
+
 
 | Type           |  Button                                                                          | Icon Button
 | -------------- | :------------------------------------------------------------------------------: |:-------------------------------------------------------------------------------------------: |
-| Solid          |  <Button overrides={{stylePreset: 'buttonSolidInverse'}}> Click me </Button>     | <IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonSolidInverse'}}><IconFilledEmail /></IconButton>      |     
-| Outlined       |  <Button overrides={{stylePreset: 'buttonOutlinedInverse'}}> Click me </Button>  | <IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonOutlinedInverse'}}><IconFilledEmail /></IconButton>   |
-| Minimal        |  <Button overrides={{stylePreset: 'buttonMinimalInverse'}}> Click me </Button>   | <IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonMinimalInverse'}}><IconFilledEmail /></IconButton>    |
+| Solid          |  <InverseTheme><Button overrides={{stylePreset: 'buttonSolidInverse'}}> Click me </Button> </InverseTheme>     | <InverseTheme><IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonSolidInverse'}}><IconFilledEmail /></IconButton> </InverseTheme>     |     
+| Outlined       |  <InverseTheme><Button overrides={{stylePreset: 'buttonOutlinedInverse'}}> Click me </Button> </InverseTheme>   | <InverseTheme><IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonOutlinedInverse'}}><IconFilledEmail /></IconButton> </InverseTheme>   |
+| Minimal        |  <InverseTheme><Button overrides={{stylePreset: 'buttonMinimalInverse'}}> Click me </Button> </InverseTheme>   | <InverseTheme><IconButton aria-label="Link icon" overrides={{stylePreset: 'iconButtonMinimalInverse'}}><IconFilledEmail /></IconButton> </InverseTheme>    |
 
-</LegacyBlock>
+</InverseTheme>

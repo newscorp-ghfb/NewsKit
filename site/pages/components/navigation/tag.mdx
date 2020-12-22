@@ -5,6 +5,7 @@ import {TextBoxSwatch} from '../../../components/theming-values/colors';
 import {LegacyBlock} from '../../../components/legacy-block';
 import {CodeFromDefaultPresets} from '../../../components/code';
 import {Tag, TagSize} from 'newskit';
+import {InverseTheme} from '../../../components/inverse-theme'
 
 export default Layout;
 
@@ -192,18 +193,18 @@ NewsKit provides two types of predefined style preset tags variants.
 
 ### Types
 
-The inverse example sits on a black background.
-
 | StylePreset           |  Tag                                                                          | 
 | -------------- | :------------------------------------------------------------------------------: |
 | tagPrimary          |  <Tag overrides={{stylePreset: 'tagPrimary'}}> Text </Tag>     | 
 
-<LegacyBlock backgroundColor="neutral080" display="inline-block">
+Inverse presets
+
+<InverseTheme>
 
   | StylePreset   |  Tag                                                                    | 
 | -------------- | :------------------------------------------------------------------------------: |
-| tagPrimaryInverse       |  <Tag overrides={{stylePreset: 'tagPrimaryInverse'}}> Text </Tag>       |
- </LegacyBlock> 
+| tagPrimaryInverse       |  <InverseTheme><Tag overrides={{stylePreset: 'tagPrimaryInverse'}}> Text </Tag></InverseTheme>       |
+</InverseTheme>
 
 ## Rationale
 

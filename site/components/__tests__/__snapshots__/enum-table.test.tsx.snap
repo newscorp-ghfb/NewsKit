@@ -17,6 +17,7 @@ exports[`EnumTable renders enum as expected 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+  background-color: #ffffff;
   box-shadow: 0 3px 4px 2px #ffffff;
 }
 
