@@ -5,8 +5,8 @@ import {TextBoxSwatch} from '../../../components/theming-values/colors';
 import {LegacyBlock} from '../../../components/legacy-block';
 import {Flag, FlagSize, Sub} from 'newskit';
 import {CodeFromDefaultPresets} from '../../../components/code';
-
 export default Layout;
+import {InverseTheme} from '../../../components/inverse-theme'
 
 # Flag
 
@@ -198,15 +198,15 @@ The inverse examples sit on a black background.
 | flagSolidLive       |  <Flag overrides={{stylePreset: 'flagSolidLive'}}> Text </Flag>     | 
 | flagMinimal        |  <Flag overrides={{stylePreset: 'flagMinimal'}}> Text </Flag>     | 
 
-<LegacyBlock backgroundColor="neutral080" display="inline-block">
+<InverseTheme>
 
-| StylePreset             |  Flag                                                                  | 
-| ----------------------- | :---------------------------------------------------------------------:|
-| flagSolidInverse        |  <Flag overrides={{stylePreset: 'flagSolidInverse'}}> Text </Flag>     | 
-| flagSolidLiveInverse    |  <Flag overrides={{stylePreset: 'flagSolidLiveInverse'}}> Text </Flag> | 
-| flagMinimalInverse      |  <Flag overrides={{stylePreset: 'flagMinimalInverse'}}> Text </Flag>   |      
+| StylePreset             |  Flag                                                                                               | 
+| ----------------------- | :--------------------------------------------------------------------------------------------------:| 
+| flagSolidInverse        |  <InverseTheme><Flag overrides={{stylePreset: 'flagSolidInverse'}}> Text </Flag></InverseTheme>     | 
+| flagSolidLiveInverse    |  <InverseTheme><Flag overrides={{stylePreset: 'flagSolidLiveInverse'}}> Text </Flag></InverseTheme> | 
+| flagMinimalInverse      |  <InverseTheme><Flag overrides={{stylePreset: 'flagMinimalInverse'}}> Text </Flag></InverseTheme>   | 
 
- </LegacyBlock> 
+</InverseTheme>
 
 ## Rationale
 

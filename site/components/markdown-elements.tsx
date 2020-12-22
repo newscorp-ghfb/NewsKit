@@ -149,6 +149,7 @@ const Blockquote = styled.blockquote`
 
 export const Table = styled.table`
   ${getTypographyPresetFromTheme('utilityBody020')}
+  background-color: ${getColorFromTheme('interface010')};
   box-shadow: 0 3px 4px 2px ${getColorFromTheme('interface010')};
 
   &,
