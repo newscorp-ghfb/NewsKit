@@ -1,5 +1,6 @@
 import React from 'react';
 import {fireEvent} from '@testing-library/react';
+import {useForm} from 'react-hook-form/dist/index.ie11';
 import {Form} from '..';
 import {
   renderToFragmentWithTheme,
@@ -9,7 +10,21 @@ import {TextInput} from '../../text-input';
 import {Block} from '../../block';
 import {Button} from '../../button';
 
+let actualRHF: any;
+jest.mock('react-hook-form/dist/index.ie11', () => {
+  actualRHF = jest.requireActual('react-hook-form/dist/index.ie11');
+  return {
+    ...actualRHF,
+    useForm: jest.fn().mockImplementation(actualRHF.useForm),
+  };
+});
+
 describe('Form', () => {
+  afterEach(() => {
+    (useForm as jest.Mock).mockClear();
+    (useForm as jest.Mock).mockImplementation(actualRHF.useForm);
+  });
+
   const formBody = (
     <React.Fragment>
       <TextInput
@@ -174,5 +189,47 @@ describe('Form', () => {
 
     expect(await findByTestId('tick-icon')).not.toBeNull();
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('exposes the expected functions from useForm hook', async () => {
+    const useFormMockMethods = {
+      reset: 'reset-function',
+      watch: 'watch-function',
+      setError: 'setError-function',
+      clearErrors: 'clearErrors-function',
+      setValue: 'setValue-function',
+      getValues: 'getValues-function',
+      trigger: 'trigger-function',
+      handleSubmit: () => {},
+      register: () => {},
+    };
+
+    (useForm as jest.Mock).mockReturnValue(useFormMockMethods);
+    const ref = React.createRef<HTMLFormElement>();
+    const defaultValues = {
+      myValue: 'this is default',
+    };
+    renderWithImplementation(Form, {
+      ...props,
+      ref,
+      validationMode: 'onSubmit',
+      defaultValues,
+    });
+
+    expect(useForm).toHaveBeenCalledWith({
+      mode: 'onSubmit',
+      reValidateMode: 'onBlur',
+      defaultValues,
+    });
+
+    expect(ref.current).toBeDefined();
+    expect(ref.current!.reset).toBe(useFormMockMethods.reset);
+    expect(ref.current!.watch).toBe(useFormMockMethods.watch);
+    expect(ref.current!.setError).toBe(useFormMockMethods.setError);
+    expect(ref.current!.clearErrors).toBe(useFormMockMethods.clearErrors);
+    expect(ref.current!.setValue).toBe(useFormMockMethods.setValue);
+    expect(ref.current!.getValues).toBe(useFormMockMethods.getValues);
+    expect(ref.current!.trigger).toBe(useFormMockMethods.trigger);
+    expect(ref.current!.element).toMatchSnapshot();
   });
 });

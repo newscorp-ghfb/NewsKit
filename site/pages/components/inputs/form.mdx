@@ -23,6 +23,10 @@ A submit button is required to be passed to the Form component, and the name pro
 
 <CodeFromFile path="examples/form/form.tsx" />
 
+On form submission, if there are validation errors present, the `onSubmitInvalid` callback function is called with the validation errors. Note that the `onSubmit` callback will not be called when there are validation errors.
+
+<CodeFromFile path="examples/form/invalid-form.tsx" />
+
 ## Validation
 
 The Form component handles validation. This only works with the TextInput. The validation rules need to be passed to the TextInput. For more information about the validation rules:
@@ -36,15 +40,29 @@ The Form component handles validation. This only works with the TextInput. The v
   <Prop name="children" type="Exclude<React.ReactNode, 'undefined'>" required>
     The form requires to have at least a TextInput and a submit button.  
   </Prop>
-  <Prop name="onSubmit" type="(data: Record<string, string>) => void" required>
-    Function which processes the submited data. 
+  <Prop name="onSubmit" type="SubmitHandler" required>
+    Function called when form is submitted without validation errors.
     The data parameter consists of an object where the input field names are associated with the input values.
+    For more information about the type 'SubmitHandler', please visit &nbsp;
+     <a href="https://react-hook-form.com/ts#SubmitHandler">
+       React Hook Form's documentation
+    </a>
+  </Prop>
+   <Prop name="onSubmitInvalid" type="SubmitErrorHandler">
+    Similar to onSubmit, this function is called when submission is attempted but fails with validation errors.
+    It receives an object of form element names as keys, with FormError objects as values. 
+    FormError objects consist of the type and message of the error, along with a ref to the offending form field element.
+    Type "SubmitErrorHandler" is similar to type "SubmitHandler" except that it accepts the errors parameter rather than data. 
   </Prop>
   <Prop name="validationMode" type="onSubmit | onValidation" default="onSubmit">
-    This option allows you to configure when input fields getting validated. Currently 'onSubmit' and 'onBlur' supported.  
+    This option allows you to configure when input fields getting validated. Currently 'onSubmit' and 'onBlur' are supported.  
   </Prop>
    <Prop name="reValidationMode" type="onSubmit | onValidation" default="onBlur">
-    This option allows you to configure when input fields getting revalidated. Currently 'onSubmit' and 'onBlur' supported.  
+    This option allows you to configure when input fields getting revalidated. Currently 'onSubmit' and 'onBlur' are supported.  
+  </Prop>
+  <Prop name="defaultValues" type="Record<string, string>">
+   The defaultValue for an input is used as the initial value when a component is first rendered, before a user interacts with it. 
+   The defaultValues object uses the form element names as keys.
   </Prop>
 </LegacyBlock>
 

@@ -1,5 +1,392 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Form exposes the expected functions from useForm hook 1`] = `
+.emotion-0 {
+  display: block;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  margin-right: 4px;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-2 {
+  position: relative;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: default;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  text-overflow: ellipsis;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  padding: 12px;
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #535353;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #535353;
+}
+
+.emotion-1::placeholder {
+  color: #535353;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #fafafa;
+  border-color: #0a68c1;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #fafafa;
+}
+
+.emotion-1:disabled {
+  border-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-1::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-1::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+.emotion-4 {
+  min-height: 12px;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 1px 0;
+  color: #535353;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-3:disabled {
+  color: #c0c0c0;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+.emotion-6 {
+  margin-bottom: 24px;
+}
+
+.emotion-18 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-17 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  padding: 12px 16px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  background-color: #0a68c1;
+  border-radius: 8px;
+  color: #ffffff;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0,.5,1);
+  transition-timing-function: cubic-bezier(0,0,.5,1);
+  cursor: pointer;
+}
+
+.emotion-17 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-17 svg {
+  fill: #ffffff;
+}
+
+.emotion-17:hover:not(:disabled) {
+  background-color: #02509b;
+}
+
+.emotion-17:active:not(:disabled) {
+  background-color: #01396e;
+}
+
+.emotion-17:disabled {
+  background-color: #e4e4e4;
+  color: #c0c0c0;
+}
+
+.emotion-17:disabled svg {
+  fill: #c0c0c0;
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-8px/2);
+  margin-right: calc(-8px/2);
+}
+
+.emotion-15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(8px/2);
+  margin-right: calc(8px/2);
+}
+
+.emotion-14 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-14::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-14::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<form>
+  <div
+    class="emotion-6"
+  >
+    <div
+      class="emotion-5"
+      label="Email"
+    >
+      <label
+        class="emotion-0"
+        for="mock-nk-1"
+      >
+        Email
+      </label>
+      <div
+        class="emotion-2"
+      >
+        <input
+          aria-describedby="mock-nk-1-assistive-text"
+          aria-invalid="false"
+          class="emotion-1"
+          data-testid="text-input"
+          id="mock-nk-1"
+          name="email"
+          spellcheck="false"
+          type="text"
+          value="test"
+        />
+      </div>
+      <div
+        class="emotion-4"
+      >
+        <p
+          class="emotion-3"
+          id="mock-nk-1-assistive-text"
+        >
+          Your email
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="emotion-6"
+  >
+    <div
+      class="emotion-5"
+      label="Username"
+    >
+      <label
+        class="emotion-0"
+        for="mock-nk-1"
+      >
+        Username
+      </label>
+      <div
+        class="emotion-2"
+      >
+        <input
+          aria-describedby="mock-nk-1-assistive-text"
+          aria-invalid="false"
+          class="emotion-1"
+          id="mock-nk-1"
+          name="username"
+          spellcheck="false"
+          type="text"
+        />
+      </div>
+      <div
+        class="emotion-4"
+      >
+        <p
+          class="emotion-3"
+          id="mock-nk-1-assistive-text"
+        >
+          Your username
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="emotion-18"
+  >
+    <button
+      class="emotion-17"
+      data-testid="submit-button"
+      type="submit"
+    >
+      <div
+        class="emotion-16"
+      >
+        <div
+          class="emotion-15"
+        >
+          <span
+            class="emotion-14"
+          >
+            Submit
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</form>
+`;
+
 exports[`Form renders with error and with submit validation and revalidation mode  1`] = `
 <DocumentFragment>
   .emotion-0 {
