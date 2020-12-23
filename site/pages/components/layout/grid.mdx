@@ -13,66 +13,85 @@ export default Layout;
 
 The Grid and Cell components are used together to construct a visual grid for responsive page layout. The Grid containers children must be Cell components, which can span different widths at each of the 5 breakpoints.
 
-The 5 breakpoints (xs, sm, md, lg, xl) widths are set via the theme, as are the grid settings. The NewsKit light default grid settings are as follows:
+The 5 breakpoints (xs, sm, md, lg, xl) widths are set via the theme, as are the grid settings. The NewsKit light default grid settings are as follows (set in `componentDefaults`):
 
-| Setting         | Default Value  | Explanation                                                                                                                                                                                                    |
-| --------------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| maxWidth        | 1920           | The maximum width of the Grid container component. The Grid will not grow bigger than 1920px wide.                                                                                                             |
-| containerMargin | 16, 16, 24, 24 | The margin either side of the Grid container component. The margin can be different for each breakpoint. By default it is 16px for xs & sm, and 24px for lg & xl.                                              |
-| columnGutters   | 16, 16, 24, 24 | The spacing between each Cell component column (i.e. left and right). The margin can be different for each breakpoint. By default it is 16px for xs & sm, and 24px for lg & xl.                                |
-| rowGutters      | 16, 16, 24, 24 | The spacing between each Cell component row (i.e. top and bottom when Cells are wrapped). The margin can be different for each breakpoint. By default it is 16px for xs & sm, and 24px for lg & xl.            |
-| columns         | 12             | The total columns available to use. Each Cell by default takes up 1 column. If there are more Cells in a Grid than columns, or the Cell components inside a Grid span a total greater than 12, they will wrap. |
+| Setting         | Default Value      | Explanation                                                                                                                                                                                                     |
+| --------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| maxWidth        | 1920px             | The maximum width of the Grid container component. The Grid will not grow bigger than 1920px wide.                                                                                                              |
+| containerMargin | space040, space050 | The margin either side of the Grid container component. The margin can be different for each breakpoint. By default it is space040 for xs, sm & md, and space050 for lg & xl.                                   |
+| columnGutters   | space040, space050 | The spacing between each Cell component column (i.e. left and right). The margin can be different for each breakpoint. By default it is space040 for xs, sm & md, and space050 for lg & xl.                     |
+| rowGutters      | space040, space050 | The spacing between each Cell component row (i.e. top and bottom when Cells are wrapped). The margin can be different for each breakpoint. By default it is space040 for xs, sm & md, and space050 for lg & xl. |
+| columns         | 12                 | The total columns available to use. Each Cell by default takes up 1 column. If there are more Cells in a Grid than columns, or the Cell components inside a Grid span a total greater than 12, they will wrap.  |
 
 ## Grid Props
 
 <LegacyBlock marginTop="sizing040">
   <Prop name="children" type="Cell">
-    The Cell components must be used as children of the Grid. Using anything other than the Cell components will break the Grid functionality.
+    The Cell components must be used as children of the Grid. Using anything
+    other than the Cell components will break the Grid functionality.
   </Prop>
   <Prop name="xsMargin" type="string">
-    An override for the grid margin sizing at the xs and upwards breakpoint.
+    An override for the grid margin spacing at the xs and upwards breakpoint.
   </Prop>
   <Prop name="smMargin" type="string">
-    An override for the grid margin sizing at the sm and upwards breakpoint.
+    An override for the grid margin spacing at the sm and upwards breakpoint.
   </Prop>
   <Prop name="mdMargin" type="string">
-    An override for the grid margin sizing at the md and upwards breakpoint.
+    An override for the grid margin spacing at the md and upwards breakpoint.
   </Prop>
   <Prop name="lgMargin" type="string">
-    An override for the grid margin sizing at the lg and upwards breakpoint.
+    An override for the grid margin spacing at the lg and upwards breakpoint.
   </Prop>
   <Prop name="xlMargin" type="string">
-    An override for the grid margin sizing at the xl breakpoint.
+    An override for the grid margin spacing at the xl breakpoint.
   </Prop>
   <Prop name="xsColumnGutter" type="string">
-    An override for the column gutter sizing at the xs and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.
+    An override for the column gutter spacing at the xs and upwards breakpoint.
+    This applies to all direct children cells, but not the cells in further
+    nested grids.
   </Prop>
   <Prop name="smColumnGutter" type="string">
-    An override for the column gutter sizing at the sm and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.
+    An override for the column gutter spacing at the sm and upwards breakpoint.
+    This applies to all direct children cells, but not the cells in further
+    nested grids.
   </Prop>
   <Prop name="mdColumnGutter" type="string">
-    An override for the column gutter sizing at the md and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.
+    An override for the column gutter spacing at the md and upwards breakpoint.
+    This applies to all direct children cells, but not the cells in further
+    nested grids.
   </Prop>
   <Prop name="lgColumnGutter" type="string">
-    An override for the column gutter sizing at the lg and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.
+    An override for the column gutter spacing at the lg and upwards breakpoint.
+    This applies to all direct children cells, but not the cells in further
+    nested grids.
   </Prop>
   <Prop name="xlColumnGutter" type="string">
-    An override for the column gutter sizing at the xl breakpoint. This applies to all direct children cells, but not the cells in further nested grids.
+    An override for the column gutter spacing at the xl breakpoint. This applies
+    to all direct children cells, but not the cells in further nested grids.
   </Prop>
   <Prop name="xsRowGutter" type="string">
-    An override for the row gutter sizing at the xs and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.
+    An override for the row gutter spacing at the xs and upwards breakpoint.
+    This applies to all direct children cells, but not the cells in further
+    nested grids.
   </Prop>
   <Prop name="smRowGutter" type="string">
-    An override for the row gutter sizing at the sm and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.
+    An override for the row gutter spacing at the sm and upwards breakpoint.
+    This applies to all direct children cells, but not the cells in further
+    nested grids.
   </Prop>
   <Prop name="mdRowGutter" type="string">
-    An override for the row gutter sizing at the md and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.
+    An override for the row gutter spacing at the md and upwards breakpoint.
+    This applies to all direct children cells, but not the cells in further
+    nested grids.
   </Prop>
   <Prop name="lgRowGutter" type="string">
-    An override for the row gutter sizing at the lg and upwards breakpoint. This applies to all direct children cells, but not the cells in further nested grids.
+    An override for the row gutter spacing at the lg and upwards breakpoint.
+    This applies to all direct children cells, but not the cells in further
+    nested grids.
   </Prop>
   <Prop name="xlRowGutter" type="string">
-    An override for the row gutter sizing at the xl breakpoint. This applies to all direct children cells, but not the cells in further nested grids.
+    An override for the row gutter spacing at the xl breakpoint. This applies to
+    all direct children cells, but not the cells in further nested grids.
   </Prop>
 </LegacyBlock>
 
@@ -139,18 +158,23 @@ The 5 breakpoints (xs, sm, md, lg, xl) widths are set via the theme, as are the 
     breakpoint.
   </Prop>
   <Prop name="xsOffset" type="number">
-   If set, specifies the amount of columns the cell will be offset by at the xs and larger breakpoints.
+    If set, specifies the amount of columns the cell will be offset by at the xs
+    and larger breakpoints.
   </Prop>
   <Prop name="smOffset" type="number">
-    If set, specifies the amount of columns the cell will be offset by at the sm and larger breakpoints.
+    If set, specifies the amount of columns the cell will be offset by at the sm
+    and larger breakpoints.
   </Prop>
   <Prop name="mdOffset" type="number">
-   If set, specifies the amount of columns the cell will be offset by at the md and larger breakpoints.
+    If set, specifies the amount of columns the cell will be offset by at the md
+    and larger breakpoints.
   </Prop>
   <Prop name="lgOffset" type="number">
-   If set, specifies the amount of columns the cell will be offset by at the lg and larger breakpoints.
+    If set, specifies the amount of columns the cell will be offset by at the lg
+    and larger breakpoints.
   </Prop>
   <Prop name="xlOffset" type="number">
-    If set, specifies the amount of columns the cell will be offset by at the xl breakpoint.
+    If set, specifies the amount of columns the cell will be offset by at the xl
+    breakpoint.
   </Prop>
 </LegacyBlock>
