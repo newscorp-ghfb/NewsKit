@@ -2282,16 +2282,40 @@ Object {
         "iconColor": "{{colors.inkBrand010}}",
       },
     },
+    "inkBrand020": Object {
+      "base": Object {
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
+      },
+    },
     "inkContrast": Object {
       "base": Object {
         "color": "{{colors.inkContrast}}",
         "iconColor": "{{colors.inkContrast}}",
       },
     },
+    "inkInverse": Object {
+      "base": Object {
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "inkNegative": Object {
+      "base": Object {
+        "color": "{{colors.inkNegative}}",
+        "iconColor": "{{colors.inkNegative}}",
+      },
+    },
     "inkNonEssential": Object {
       "base": Object {
         "color": "{{colors.inkNonEssential}}",
         "iconColor": "{{colors.inkNonEssential}}",
+      },
+    },
+    "inkPositive": Object {
+      "base": Object {
+        "color": "{{colors.inkPositive}}",
+        "iconColor": "{{colors.inkPositive}}",
       },
     },
     "inkSubtle": Object {
@@ -2696,9 +2720,6 @@ Object {
     "titleBar": Object {
       "base": Object {
         "backgroundColor": "{{colors.transparent}}",
-        "borderColor": "{{colors.interface040}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}",
       },
     },
     "titleBarButton": Object {

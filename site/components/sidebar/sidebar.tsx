@@ -91,7 +91,7 @@ const Sidebar: React.FC<SidebarProps> = ({
     >
       <SidebarHeader>
         <Link href="/" overrides={{stylePreset: 'linkLogo'}}>
-          <NewsKitLogo color="inkBase" size="sizing120" />
+          <NewsKitLogo size="sizing120" />
         </Link>
         <Visible xs sm md>
           <LegacyBlock display="flex" height="100%">

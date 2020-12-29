@@ -18,6 +18,12 @@ stylePresets.uppercaseInkBrand010 = {
     textTransform: 'uppercase',
   },
 };
+stylePresets.inkBrand020 = {
+  base: {
+    color: '{{colors.inkBrand020}}',
+    iconColor: '{{colors.inkBrand020}}',
+  },
+};
 stylePresets.inkContrast = {
   base: {
     color: '{{colors.inkContrast}}',
@@ -48,6 +54,18 @@ stylePresets.inkSubtle = {
     iconColor: '{{colors.inkSubtle}}',
   },
 };
+stylePresets.inkPositive = {
+  base: {
+    color: '{{colors.inkPositive}}',
+    iconColor: '{{colors.inkPositive}}',
+  },
+};
+stylePresets.inkNegative = {
+  base: {
+    color: '{{colors.inkNegative}}',
+    iconColor: '{{colors.inkNegative}}',
+  },
+};
 stylePresets.uppercaseInkSubtle = {
   base: {
     ...stylePresets.inkSubtle.base,
@@ -64,6 +82,13 @@ stylePresets.uppercaseInkNonEssential = {
   base: {
     ...stylePresets.inkNonEssential.base,
     textTransform: 'uppercase',
+  },
+};
+
+stylePresets.inkInverse = {
+  base: {
+    color: '{{colors.inkInverse}}',
+    iconColor: '{{colors.inkInverse}}',
   },
 };
 
@@ -1508,7 +1533,15 @@ stylePresets.cardContainer = {
   },
 };
 
-stylePresets.cardContainerMedia = stylePresets.imageSharp;
+stylePresets.cardContainerMedia = {
+  base: {
+    borderRadius: '{{borders.borderRadiusSharp}}',
+  },
+  loading: {
+    backgroundColor: '{{colors.interfaceSkeleton010}}',
+    iconColor: '{{colors.inkNonEssential}}',
+  },
+};
 
 stylePresets.cardContainerTeaserAndActions = {
   base: {
@@ -1540,10 +1573,6 @@ stylePresets.cardContainerActions = {
 stylePresets.titleBar = {
   base: {
     backgroundColor: '{{colors.transparent}}',
-    borderStyle: 'solid',
-    borderColor: '{{colors.interface040}}',
-    borderWidth:
-      '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}',
   },
 };
 

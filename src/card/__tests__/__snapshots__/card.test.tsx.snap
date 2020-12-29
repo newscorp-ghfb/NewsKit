@@ -1364,6 +1364,7 @@ exports[`Card renders media section if the media data is provided 1`] = `
 .emotion-6 {
   box-sizing: border-box;
   display: block;
+  overflow: hidden;
   border-radius: 0;
 }
 
@@ -1578,6 +1579,7 @@ exports[`Card renders media section with a custom component 1`] = `
 .emotion-6 {
   box-sizing: border-box;
   display: block;
+  overflow: hidden;
   border-radius: 0;
 }
 
@@ -1792,6 +1794,7 @@ exports[`Card renders media section with a custom component using overrides 1`] 
 .emotion-6 {
   box-sizing: border-box;
   display: block;
+  overflow: hidden;
   border-radius: 0;
 }
 
@@ -2006,6 +2009,7 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
 .emotion-6 {
   box-sizing: border-box;
   display: block;
+  overflow: hidden;
   border-radius: 0;
 }
 
@@ -2308,6 +2312,7 @@ exports[`Card renders media section with overrides 1`] = `
 .emotion-6 {
   box-sizing: border-box;
   display: block;
+  overflow: hidden;
   border-radius: 8px;
 }
 
@@ -2434,6 +2439,7 @@ exports[`Card renders with card items 1`] = `
 .emotion-6 {
   box-sizing: border-box;
   display: block;
+  overflow: hidden;
   border-radius: 0;
 }
 
@@ -3459,6 +3465,7 @@ exports[`CardInset renders with card items 1`] = `
 .emotion-6 {
   box-sizing: border-box;
   display: block;
+  overflow: hidden;
   border-radius: 0;
   margin-bottom: 0;
 }

@@ -6,10 +6,6 @@ import {
   getSpacingFromTheme,
 } from 'newskit';
 
-export const StyledContainer = styled.div`
-  overflow-x: auto;
-`;
-
 export const StyledTable = styled.table`
   border-collapse: collapse;
   border-spacing: 0;
@@ -17,21 +13,26 @@ export const StyledTable = styled.table`
 `;
 
 export const StyledHeader = styled.th`
-  ${getStylePresetFromTheme('tableHeader')}
-  ${getTypographyPresetFromTheme('utilityLabel020')}
-  margin-bottom: ${getSpacingFromTheme('space020')};
-  height: ${getSizingFromTheme('sizing080')};
-  text-align: left;
-  vertical-align: middle;
-`;
+    ${getStylePresetFromTheme('tableHeader')}
+    ${getTypographyPresetFromTheme('utilityLabel020')}
+    margin-bottom: ${getSpacingFromTheme('space020')};
+    height: ${getSizingFromTheme('sizing070')};
+    text-align: left;
+    vertical-align: middle;
+    min-width: ${getSpacingFromTheme('space090')};
+
+  `;
 
 export const StyledTableRow = styled.tr`
   ${getStylePresetFromTheme('tableRow')}
-  ${getTypographyPresetFromTheme('utilityBody020')}
+  ${getTypographyPresetFromTheme('utilityBody010')}
 `;
 
 export const StyledDataCell = styled.td`
   padding: ${getSpacingFromTheme('space020')} ${getSpacingFromTheme('space020')}
     ${getSpacingFromTheme('space020')} ${getSpacingFromTheme('space000')};
-  min-width: ${getSpacingFromTheme('space090')};
+`;
+
+export const StyledContainer = styled.div`
+  overflow-x: auto;
 `;

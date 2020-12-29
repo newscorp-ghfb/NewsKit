@@ -6,6 +6,7 @@ export * from './icon-filled-reddit';
 export * from './icon-filled-twitter';
 export * from './icon-filled-whatsapp';
 export * from './icon-filled-youtube';
+export * from './icon-filled-figma';
 
 // Other custom icons
 export * from './icon-filled-circle';

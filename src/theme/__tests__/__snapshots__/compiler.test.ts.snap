@@ -2283,16 +2283,40 @@ Object {
         "iconColor": "#0a68c1",
       },
     },
+    "inkBrand020": Object {
+      "base": Object {
+        "color": "#d5ebff",
+        "iconColor": "#d5ebff",
+      },
+    },
     "inkContrast": Object {
       "base": Object {
         "color": "#0a0a0a",
         "iconColor": "#0a0a0a",
       },
     },
+    "inkInverse": Object {
+      "base": Object {
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+      },
+    },
+    "inkNegative": Object {
+      "base": Object {
+        "color": "#d20600",
+        "iconColor": "#d20600",
+      },
+    },
     "inkNonEssential": Object {
       "base": Object {
         "color": "#c0c0c0",
         "iconColor": "#c0c0c0",
+      },
+    },
+    "inkPositive": Object {
+      "base": Object {
+        "color": "#0a782a",
+        "iconColor": "#0a782a",
       },
     },
     "inkSubtle": Object {
@@ -2697,9 +2721,6 @@ Object {
     "titleBar": Object {
       "base": Object {
         "backgroundColor": "transparent",
-        "borderColor": "#e4e4e4",
-        "borderStyle": "solid",
-        "borderWidth": "0 0 1px 0",
       },
     },
     "titleBarButton": Object {

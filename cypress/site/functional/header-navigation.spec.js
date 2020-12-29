@@ -4,7 +4,6 @@ const hamburgerIconTestID = '[data-testid="mobile-menu-icon"]';
 const closeIcon = '[data-testid="close-icon"]';
 const sidebarTestID = '[data-testid="sidebar"]';
 const overlayTestID = '[data-testid="overlay"]';
-const headerNavigatioTestID = '[data-testid="header-navigation"]';
 
 describe('Documentation Site - header-navigation component', () => {
   before(() => {
@@ -38,14 +37,6 @@ describe('Documentation Site - header-navigation component', () => {
         .and('not.be.visible');
       cy.get('body').should('have.css', 'overflow', 'visible');
       cy.get(overlayTestID).should('have.css', 'visibility', 'hidden');
-    });
-
-    it('should be sticky on mobile', () => {
-      cy.get(headerNavigatioTestID).should('be.visible');
-      cy.scrollTo('bottom');
-      cy.get(headerNavigatioTestID).then($header => {
-        expect($header.get(0).getBoundingClientRect().top).to.equal(0);
-      });
     });
   });
 });

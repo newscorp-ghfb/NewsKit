@@ -21,6 +21,7 @@ export const StyledCardContainer = styled.div<Pick<CardProps, 'overrides'>>`
 export const StyledCardContainerMedia = styled.a<Pick<CardProps, 'overrides'>>`
   box-sizing: border-box;
   display: block;
+  overflow: hidden;
   ${getStylePreset('card.mediaContainer', 'mediaContainer', {
     filterStates: ['base'],
   })}

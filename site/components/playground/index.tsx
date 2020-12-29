@@ -1,12 +1,5 @@
 import React, {useState} from 'react';
-import {
-  styled,
-  getColorFromTheme,
-  getSizingFromTheme,
-  getBorderFromTheme,
-  getTypographyPresetFromTheme,
-  deepMerge,
-} from 'newskit';
+import {styled, getColorFromTheme, deepMerge} from 'newskit';
 import {LegacyBlock, LegacyBlockProps} from '../legacy-block';
 import {MultiChoiceKnob} from './knobs/multichoice-knob';
 import {InputKnob} from './knobs/input-knob';
@@ -31,17 +24,6 @@ const PlaygroundContainer = styled.div`
   border: solid 1px ${getColorFromTheme('interface030')};
   box-shadow: 0 3px 4px 2px ${getColorFromTheme('interface010')};
   background-color: ${getColorFromTheme('interface010')};
-  max-width: 960px;
-`;
-
-const StyledMockTab = styled.span`
-  display: inline-block;
-  padding: ${getSizingFromTheme('sizing040')};
-  border-bottom-style: solid;
-  border-bottom-width: ${getBorderFromTheme('borderWidth020')};
-  border-bottom-color: ${getColorFromTheme('inkBrand010')};
-  color: ${getColorFromTheme('inkBase')};
-  ${getTypographyPresetFromTheme('utilitySubheading020')};
 `;
 
 const isMultiChoiceKnobConfig = (
@@ -204,9 +186,6 @@ export const Playground: React.FC<
         <ErrorBoundary key={errorBoundaryKey}>
           <Component {...state} />
         </ErrorBoundary>
-      </LegacyBlock>
-      <LegacyBlock font="utilityBody030">
-        <StyledMockTab>Props</StyledMockTab>
       </LegacyBlock>
       {componentOptions && (
         <Selector options={componentOptions} onChange={setComponentIndex}>

@@ -45,7 +45,7 @@ const ContentWrapper = styled.div`
   padding-bottom: ${getSizingFromTheme('sizing060')};
 `;
 
-interface LayoutProps {
+export interface LayoutProps {
   path: string;
   toggleTheme: () => void;
   themeMode: string;
@@ -161,19 +161,32 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
           />
 
           <BodyWrapper>
-            <Grid>
-              <Cell xs={12} lg={10} lgOffset={1}>
+            {path.endsWith('-new') ? (
+              <Grid lgMargin="sizing000" xsRowGutter="sizing000">
                 <Playground componentName={false} />
                 <ContentWrapper>
-                  {this.renderNavigation()}
                   <MDXProvider
                     components={this.updatePropsForMarkdownElements()}
                   >
                     {children}
                   </MDXProvider>
                 </ContentWrapper>
-              </Cell>
-            </Grid>
+              </Grid>
+            ) : (
+              <Grid>
+                <Cell xs={12} lg={10} lgOffset={1}>
+                  <Playground componentName={false} />
+                  <ContentWrapper>
+                    {this.renderNavigation()}
+                    <MDXProvider
+                      components={this.updatePropsForMarkdownElements()}
+                    >
+                      {children}
+                    </MDXProvider>
+                  </ContentWrapper>
+                </Cell>
+              </Grid>
+            )}
           </BodyWrapper>
 
           <SiteFooter />

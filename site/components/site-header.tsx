@@ -22,7 +22,7 @@ import {handleEnterKeyPress} from '../helpers/a11y';
 
 const Header = styled.header`
   flex-shrink: 0;
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 1;
   min-height: 72px;

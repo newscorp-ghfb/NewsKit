@@ -21,13 +21,19 @@
     "Replay10",
     "AccountBalance",
     "AccountTree",
+    "RemoveCircle",
+    "HighlightOff",
+    "Cancel",
     "Add",
     "Remove",
     "Menu",
     "Search",
     "Close",
     "ArrowDropDown",
-    "ArrowDropUp"
+    "ArrowDropUp",
+    "Check",
+    "ArrowRightAlt",
+    "Info"
   ]
 }
 
