@@ -130,7 +130,7 @@ const Paragraph: React.FC<TextProps> = ({children}) => (
 
 const UnorderedList = ({children}: TextProps) => <ul>{children}</ul>;
 
-const InlineCode = styled.code`
+export const InlineCode = styled.code`
   background-color: rgba(27, 31, 35, 0.05);
   color: ${getColorFromTheme('inkSubtle')};
   border-radius: 3px;

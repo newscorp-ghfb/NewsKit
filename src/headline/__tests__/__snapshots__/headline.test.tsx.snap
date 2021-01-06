@@ -173,12 +173,12 @@ exports[`headline renders correctly with custom props 1`] = `
     class="emotion-2"
   >
     <h5
-      class="emotion-0"
+      class="nk-headline-kicker emotion-0"
     >
       this is kicker 
     </h5>
     <h4
-      class="emotion-1"
+      class="nk-headline-heading emotion-1"
     >
       test
     </h4>
@@ -323,7 +323,7 @@ exports[`headline renders correctly with default props, just heading 1`] = `
     class="emotion-1"
   >
     <h1
-      class="emotion-0"
+      class="nk-headline-heading emotion-0"
     >
       test
     </h1>
@@ -501,12 +501,12 @@ exports[`headline renders correctly with default props, with heading and kicker 
     class="emotion-2"
   >
     <span
-      class="emotion-0"
+      class="nk-headline-kicker emotion-0"
     >
       this is kicker 
     </span>
     <h1
-      class="emotion-1"
+      class="nk-headline-heading emotion-1"
     />
   </section>
 </DocumentFragment>
@@ -581,7 +581,7 @@ exports[`headline renders correctly with overriden props 1`] = `
     class="emotion-1"
   >
     <h1
-      class="emotion-0"
+      class="nk-headline-heading emotion-0"
     />
   </section>
 </DocumentFragment>

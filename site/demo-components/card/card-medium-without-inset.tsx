@@ -33,7 +33,7 @@ const cardMediumTags = () => (
       size={TagSize.Small}
       href="/"
       overrides={{
-        stylePreset: 'cardTag',
+        stylePreset: 'tagPrimary',
         typographyPreset: cardTagMediumTypographyPreset,
       }}
     >
@@ -43,7 +43,7 @@ const cardMediumTags = () => (
       size={TagSize.Small}
       href="/"
       overrides={{
-        stylePreset: 'cardTag',
+        stylePreset: 'tagPrimary',
         typographyPreset: cardTagMediumTypographyPreset,
       }}
     >
@@ -86,11 +86,11 @@ export const CardMediumWithoutInset = () => (
               overrides={{
                 typographyPreset: cardTeaserHeadlineMediumTypographyPreset,
                 heading: {
-                  stylePreset: 'cardTeaserHeadline',
+                  stylePreset: 'headlineHeadingInteractive',
                 },
                 kicker: {
                   spaceInline: cardTeaserKickerSpaceInline,
-                  stylePreset: 'cardTeaserKicker',
+                  stylePreset: 'headlineKickerInteractive',
                 },
               }}
             >

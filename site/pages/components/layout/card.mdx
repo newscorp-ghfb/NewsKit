@@ -2,11 +2,19 @@ import Playground, {withProps} from '../../../components/playground';
 import Prop from '../../../components/prop';
 import {LegacyBlock} from '../../../components/legacy-block';
 import Layout from '../../../components/layout';
-import {Card, Tag, TagSize, Flow, Stack, StackDistribution} from 'newskit';
+import {
+  Card,
+  Tag,
+  TagSize,
+  Flow,
+  Stack,
+  StackDistribution,
+  Link,
+} from 'newskit';
 import {CodeFromDefaultPresets, CodeFromFile} from '../../../components/code';
-import {CardMediumWithoutInset} from '../../../demo-components/card/card-medium-without-inset.tsx';
-import {CardSmallWithInset} from '../../../demo-components/card/card-small-with-inset.tsx';
-
+import {CardMediumWithoutInset} from '../../../demo-components/card/card-medium-without-inset';
+import {CardSmallWithInset} from '../../../demo-components/card/card-small-with-inset';
+import {InlineCode} from '../../../components/markdown-elements';
 
 export default Layout;
 
@@ -28,9 +36,11 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
 ## Props
 
 <LegacyBlock marginTop="sizing040">
-  <Prop name="href" type="string">
-    If provided, the Card will render as an anchor with this prop value as the
-    href.
+  <Prop name="href" type="string | BaseLinkProps">
+    If provided, the Card will render with an anchor.
+    Both <InlineCode>string</InlineCode> and <InlineCode>BaseLinkProps</InlineCode> are supported,
+    <InlineCode>BaseLinkProps</InlineCode> is derived from <InlineCode>React.AnchorHTMLAttributes</InlineCode>,
+    providing access to all anchor props. For more details check the Interactivity section below.
   </Prop>
   <Prop name="media" type="ImageProps | React.ComponentType">
     If this parameter is provided as ImageProps, it will render the media as an image. <br />
@@ -49,8 +59,13 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
       The default loading aspect ratio of media is 3:2, however, a user should be able to pass any ratio to the media.
     </Prop>
   </Prop>
+  <Prop name="mediaInteractive" type="boolean" default={false}>
+    Removes the card media from link area. This prop only matters when the card is used as a link
+    and when custom media or video components are passed as cardMedia so the user can interact with the video (play, pause, etc...) without navigation to occur. 
+    <br/><b>NOTE:</b> If necessary, make sure your media element is tabbable  by adding <InlineCode>tabindex</InlineCode> to it.
+  </Prop>
   <Prop name="children" type="Exclude<React.ReactNode, 'undefined'>" required>
-    This is the body of the Card. A card requires to have at least a heading. Each element of the body content should be wrapped within a <b>Block</b> component
+    This is the body of the Card. A card requires to have at least a heading. Each element of the body content should be wrapped within a <Link href="/components/layout/block">Block</Link> component
     which is responsible for the spacing between the elements. Refer to the examples below.
   </Prop>
 
@@ -104,7 +119,9 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
 
 ### Examples
 
-#### Prerequisites<CodeFromFile path="examples/card/common.tsx" />
+#### Prerequisites
+
+<CodeFromFile path="examples/card/common.tsx" />
 
 #### Card without inset
 
@@ -116,11 +133,28 @@ There are two card variants - card without inset `<Card/>` card with inset `<Car
 <CardSmallWithInset/>
 <CodeFromFile path="examples/card/card-small-with-inset.tsx" />
 
-### Styling
+### Interactivity
+
+When the Card component has a link applied to it (making it interactive), it is recommended
+to pass the [Headline](/components/text-content/headline) as a child,
+inside of the card content area. In this case the Headline will have a link applied to it,
+which can have multiple interactivity states (hover, visited, etc.) applied
+directly to the overrides of the Headline component, also make sure you pass the
+following overrides to the Headline kicker <InlineCode>headlineKickerInteractive</InlineCode>
+and heading <InlineCode>headlineHeadingInteractive</InlineCode> (or your own custom presets),
+as shown in the example above. For this implementation, we use a z-index property in order to
+exclude the actions area and the media area (when we have mediaInteractive = true) from the link area.
+
+**NOTE:** It is not mandatory for the headline component to be direct child of the card content. It can be nested inside a structure,
+but make sure it does not have any parents with `position: relative` style applied as it will break the clickable area of the link.
+
+**NOTE:** Passing styled component created from the Headline to the card content would not work correctly when the card is used as a link.
+Instead use the Headline overrides to modify its styles. Otherwise, the interactivity of the link will not work as expected.
 
 ### Accessibility
 
 - Always pass an `alt` prop to the card image regardless of whether you use the built in or a custom image component.
 - When creating a tab order for the different parts of the card, remember to put the headline before the image or media so that screen-reader users get the context before the image alt tag.
+- When passing custom interactive component (i.e. video) as card media remember to take care of making the media component visible for screen readers by adding tabindex if necessary.
 - Add aria-label prop to allow a user to describe the action that will be performed when the user interacts with the card. By default, this could be the headline text.
 - When nesting other components of the card, always follow those components' accessibility guidelines.

@@ -1528,9 +1528,6 @@ stylePresets.cardContainer = {
     backgroundColor: '{{colors.interface010}}',
     borderRadius: '{{borders.borderRadiusSharp}}',
   },
-  active: {
-    backgroundColor: '{{colors.interface020}}',
-  },
 };
 
 stylePresets.cardContainerMedia = {
@@ -1554,9 +1551,6 @@ stylePresets.cardContainerTeaser = {
     backgroundColor: '{{colors.interface010}}',
     borderRadius: '{{borders.borderRadiusSharp}}',
     color: '{{colors.inkBase}}',
-  },
-  hover: {
-    backgroundColor: '{{colors.interactivePrimary020}}',
   },
 };
 
@@ -1591,3 +1585,38 @@ stylePresets.dividerHorizontal = {
   },
 };
 stylePresets.dividerVertical = stylePresets.dividerHorizontal;
+
+//
+// Headline
+//
+
+stylePresets.headlineKickerInteractive = {
+  base: {
+    color: '{{colors.interactivePrimary030}}',
+  },
+  hover: {
+    color: '{{colors.interactivePrimary040}}',
+    textDecoration: 'underline',
+  },
+  active: {
+    color: '{{colors.interactivePrimary050}}',
+    textDecoration: 'underline',
+  },
+  visited: {
+    color: '{{colors.interactiveVisited010}}',
+  },
+};
+
+stylePresets.headlineHeadingInteractive = {
+  base: {
+    color: '{{colors.inkBase}}',
+  },
+  hover: {
+    color: '{{colors.interactivePrimary040}}',
+    textDecoration: 'underline',
+  },
+  active: {
+    color: '{{colors.interactivePrimary050}}',
+    textDecoration: 'underline',
+  },
+};

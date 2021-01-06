@@ -1,16 +1,22 @@
 const cardSmallTags = () => (
-  <Stack flow={Flow.HorizontalCenter} space={cardActionsSpace}>
+  <Stack flow={Flow.HorizontalCenter} spaceInline={cardActionsSpace}>
     <Tag
       size={TagSize.Small}
       href="/"
-      overrides={{stylePreset: 'cardTag', typographyPreset: cardTagSmallTypographyPreset}}
+      overrides={{
+        stylePreset: 'cardTag',
+        typographyPreset: cardTagSmallTypographyPreset,
+      }}
     >
       News
     </Tag>
     <Tag
       size={TagSize.Small}
       href="/"
-      overrides={{stylePreset: 'cardTag', typographyPreset: cardTagSmallTypographyPreset}}
+      overrides={{
+        stylePreset: 'cardTag',
+        typographyPreset: cardTagSmallTypographyPreset,
+      }}
     >
       Sport
     </Tag>
@@ -31,7 +37,7 @@ export const CardSmallWithInset = () => (
             stylePreset: 'cardContainer',
           }}
         >
-          <Block overrides={{spaceStack: cardLabelSpaceStack}}>
+          <Block spaceStack={cardLabelSpaceStack}>
             <Flag
               overrides={{
                 minHeight: '0',
@@ -45,22 +51,17 @@ export const CardSmallWithInset = () => (
             </Flag>
           </Block>
 
-          <Block
-            overrides={{
-              spaceStack: cardTeaserHeadlineSpaceStack,
-            }}
-          >
+          <Block spaceStack={cardTeaserHeadlineSpaceStack}>
             <Headline
               kickerText="CROWDS HEAD"
               overrides={{
+                typographyPreset: cardTeaserHeadlineSmallTypographyPreset,
                 heading: {
-                  stylePreset: 'cardTeaserHeadline',
-                  typographyPreset: cardTeaserHeadlineSmallTypographyPreset,
+                  stylePreset: 'headlineHeadingInteractive',
                 },
                 kicker: {
                   spaceInline: cardTeaserKickerSpaceInline,
-                  stylePreset: 'cardTeaserKicker',
-                  typographyPreset: cardTeaserKickerSmallTypographyPreset,
+                  stylePreset: 'headlineKickerInteractive',
                 },
               }}
             >
@@ -68,16 +69,10 @@ export const CardSmallWithInset = () => (
             </Headline>
           </Block>
 
-          <Block
-            overrides={{
-              spaceStack: cardTeaserLeadInsetVariantSpaceStack,
-            }}
-          >
+          <Block spaceStack={cardTeaserLeadInsetVariantSpaceStack}>
             <TextBlock
-              overrides={{
-                stylePreset: 'cardTeaserLead',
-                typographyPreset: cardTeaserLeadSmallTypographyPreset,
-              }}
+              stylePreset="cardTeaserLead"
+              typographyPreset={cardTeaserLeadSmallTypographyPreset}
             >
               The bank holiday weekend has seen some mixed weather, but as the
               sun emerged, many in the UK took the opportunity to make the most

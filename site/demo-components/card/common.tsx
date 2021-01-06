@@ -39,55 +39,17 @@ const labelDefault = {
     iconColor: '{{colors.inkSubtle}}',
   },
 };
-const headlineKicker = {
-  base: {
-    color: '{{colors.inkBrand010}}',
-  },
-};
-const headlineContent = {
-  base: {
-    color: '{{colors.inkContrast}}',
-  },
-};
-const tagPrimary = {
-  base: {
-    backgroundColor: '{{colors.transparent}}',
-    borderStyle: 'solid',
-    borderColor: '{{colors.interactiveSecondary030}}',
-    borderWidth: '{{borders.borderWidth010}}',
-    color: '{{colors.inkBase}}',
-    iconColor: '{{colors.inkBase}}',
-    borderRadius: '{{borders.borderRadiusSharp}}',
-  },
-  hover: {
-    backgroundColor: '{{colors.interactiveSecondary020}}',
-  },
-  active: {
-    borderWidth: '{{borders.borderWidth010}}',
-  },
-  current: {
-    color: '{{colors.inkInverse}}',
-    iconColor: '{{colors.inkInverse}}',
-    backgroundColor: '{{colors.interactiveSecondary030}}',
-    borderStyle: 'none',
-  },
-};
 
 const myCustomCardTheme = createTheme({
   name: 'my-custom-card-theme',
   overrides: {
     stylePresets: {
       cardLabel: labelDefault,
-      cardTeaserHeadline: headlineContent,
-      cardTeaserKicker: headlineKicker,
       cardTeaserLead: {
         base: {
           color: '{{colors.inkBase}}',
         },
       },
-      cardTag: tagPrimary,
-
-      // mocked card Containers
       cardContainer: {
         base: {
           borderStyle: 'solid',

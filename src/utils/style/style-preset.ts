@@ -12,6 +12,7 @@ import {CSSObject} from './emotion';
 import {MQ} from './types';
 
 export interface GetStylePresetFromThemeOptions {
+  nestedCssSelector?: string;
   isLoading?: boolean;
   isSelected?: boolean;
   isDisabled?: boolean;
@@ -104,12 +105,17 @@ const getStylePresetValueFromTheme = (
   Object.entries(getPresetStates(stylePreset, options)).reduce(
     (acc, [stateKey, presetState]) => {
       if (presetState) {
+        const nestedCssSelector = options && options.nestedCssSelector;
         const selector =
           stateKey === 'disabled'
-            ? `:${stateKey}`
-            : `:${stateKey}:not(:disabled)`;
+            ? `:${stateKey} ${nestedCssSelector || ''}`
+            : `:${stateKey}:not(:disabled) ${nestedCssSelector || ''}`;
         const styles = getPresetStyles(presetState, options);
         if (stateKey === 'base') {
+          if (nestedCssSelector) {
+            acc[nestedCssSelector] = styles;
+            return acc;
+          }
           return {...acc, ...styles};
         }
         acc[selector] = styles;

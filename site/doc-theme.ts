@@ -43,11 +43,6 @@ const stylePresets = {
       iconColor: '{{colors.inkBase}}',
     },
   },
-  cardTeaserHeadline: {
-    base: {
-      color: '{{colors.inkContrast}}',
-    },
-  },
   positiveMediaContainer: {
     base: {
       borderStyle: 'none none solid none',

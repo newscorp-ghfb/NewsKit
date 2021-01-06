@@ -15,6 +15,7 @@ import {Block} from '../../block';
 import {IconFilledImage} from '../../icons';
 import {styled} from '../../utils/style';
 import {createTheme, ThemeProvider} from '../../theme';
+import {Link} from '../../link';
 
 const ContainerWithBackground = styled.div`
   background: ${({theme}) => theme.colors.interface040};
@@ -74,39 +75,6 @@ const labelDefault = {
     iconColor: '{{colors.inkSubtle}}',
   },
 };
-const headlineKicker = {
-  base: {
-    color: '{{colors.inkBrand010}}',
-  },
-};
-const headlineContent = {
-  base: {
-    color: '{{colors.inkContrast}}',
-  },
-};
-const tagPrimary = {
-  base: {
-    backgroundColor: '{{colors.transparent}}',
-    borderStyle: 'solid',
-    borderColor: '{{colors.interactiveSecondary030}}',
-    borderWidth: '{{borders.borderWidth010}}',
-    color: '{{colors.inkBase}}',
-    iconColor: '{{colors.inkBase}}',
-    borderRadius: '{{borders.borderRadiusSharp}}',
-  },
-  hover: {
-    backgroundColor: '{{colors.interactiveSecondary020}}',
-  },
-  active: {
-    borderWidth: '{{borders.borderWidth010}}',
-  },
-  current: {
-    color: '{{colors.inkInverse}}',
-    iconColor: '{{colors.inkInverse}}',
-    backgroundColor: '{{colors.interactiveSecondary030}}',
-    borderStyle: 'none',
-  },
-};
 
 const myCustomCardTheme = createTheme({
   name: 'my-custom-card-theme',
@@ -120,15 +88,11 @@ const myCustomCardTheme = createTheme({
     },
     stylePresets: {
       cardLabel: labelDefault,
-      cardTeaserHeadline: headlineContent,
-      cardTeaserKicker: headlineKicker,
       cardTeaserLead: {
         base: {
           color: '{{colors.inkBase}}',
         },
       },
-      cardTag: tagPrimary,
-
       // mocked card Containers
       cardContainerMock: {
         base: {
@@ -179,7 +143,7 @@ const cardTags = (size: TagSize) => ({cardSize}: {cardSize: string}) => () => (
       size={size}
       href="/"
       overrides={{
-        stylePreset: 'cardTag',
+        stylePreset: 'tagPrimary',
         typographyPreset: cardTypographyPresets[`cardTag${cardSize}`],
       }}
     >
@@ -189,7 +153,7 @@ const cardTags = (size: TagSize) => ({cardSize}: {cardSize: string}) => () => (
       size={size}
       href="/"
       overrides={{
-        stylePreset: 'cardTag',
+        stylePreset: 'tagPrimary',
         typographyPreset: cardTypographyPresets[`cardTag${cardSize}`],
       }}
     >
@@ -228,12 +192,8 @@ const cardBodyBase = ({inset}: {inset: boolean}) => ({
         overrides={{
           typographyPreset:
             cardTypographyPresets[`cardTeaserHeadline${cardSize}`],
-          heading: {
-            stylePreset: 'cardTeaserHeadline',
-          },
           kicker: {
             spaceInline: cardTeaserKicker,
-            stylePreset: 'cardTeaserKicker',
           },
         }}
       >
@@ -268,7 +228,6 @@ const renderCard = () => (
       <StorybookSubHeading>Card - small - Without Inset</StorybookSubHeading>
       <ContainerWithBackground>
         <Card
-          href="https://newskit.co.uk/"
           media={{
             src: '/placeholder-3x2.png',
             alt: 'Card Media',
@@ -283,7 +242,6 @@ const renderCard = () => (
       <StorybookSubHeading>Card - Medium - Without Inset</StorybookSubHeading>
       <ContainerWithBackground>
         <Card
-          href="https://newskit.co.uk/"
           media={{
             src: '/placeholder-3x2.png',
             alt: 'Card Media',
@@ -294,11 +252,10 @@ const renderCard = () => (
         </Card>
       </ContainerWithBackground>
     </Visible>
-    <Visible lg>
+    <Visible lg xl>
       <StorybookSubHeading>Card - Large - Without Inset</StorybookSubHeading>
       <ContainerWithBackground>
         <Card
-          href="https://newskit.co.uk/"
           media={{
             src: '/placeholder-3x2.png',
             alt: 'Card Media',
@@ -317,7 +274,6 @@ const renderCardInset = () => (
       <StorybookSubHeading>Card - small - With Inset</StorybookSubHeading>
       <ContainerWithBackground>
         <CardInset
-          href="https://newskit.co.uk/"
           media={{
             src: '/placeholder-3x2.png',
             alt: 'Card Media',
@@ -332,7 +288,6 @@ const renderCardInset = () => (
       <StorybookSubHeading>Card - Medium - With Inset</StorybookSubHeading>
       <ContainerWithBackground>
         <CardInset
-          href="https://newskit.co.uk/"
           media={{
             src: '/placeholder-3x2.png',
             alt: 'Card Media',
@@ -343,11 +298,10 @@ const renderCardInset = () => (
         </CardInset>
       </ContainerWithBackground>
     </Visible>
-    <Visible lg>
+    <Visible lg xl>
       <StorybookSubHeading>Card - Large - With Inset</StorybookSubHeading>
       <ContainerWithBackground>
         <CardInset
-          href="https://newskit.co.uk/"
           media={{
             src: '/placeholder-3x2.png',
             alt: 'Card Media',
@@ -423,7 +377,6 @@ export default {
               <Cell xs={12} sm={4}>
                 <ThemeProvider theme={myCustomCardTheme}>
                   <Card
-                    href="https://newskit.co.uk/"
                     media={{
                       src: '/placeholder-3x2.png',
                       alt: 'Card Media',
@@ -465,7 +418,6 @@ export default {
               <Cell xs={12} sm={4}>
                 <ThemeProvider theme={myCustomCardTheme}>
                   <CardInset
-                    href="https://newskit.co.uk/"
                     media={{
                       src: '/placeholder-3x2.png',
                       alt: 'Card Media',
@@ -505,7 +457,6 @@ export default {
             <Grid>
               <Cell xs={6}>
                 <Card
-                  href="https://newskit.co.uk/"
                   media={{
                     loadingAspectRatio: '5:4',
                     src: '/placeholder-5x4.png',
@@ -532,7 +483,6 @@ export default {
             <Grid>
               <Cell xs={6}>
                 <Card
-                  href="https://newskit.co.uk/"
                   media={{
                     src: '/placeholder-3x2.png',
                     alt: 'Card Media',
@@ -562,9 +512,7 @@ export default {
           <ContainerWithBackground>
             <Grid>
               <Cell xs={6}>
-                <Card href="https://newskit.co.uk/" media={customCardMedia}>
-                  Card content text
-                </Card>
+                <Card media={customCardMedia}>Card content text</Card>
               </Cell>
             </Grid>
           </ContainerWithBackground>
@@ -582,12 +530,290 @@ export default {
           <ContainerWithBackground>
             <Grid>
               <Cell xs={6}>
-                <Card
-                  href="https://newskit.co.uk/"
-                  media={customCardMediaWithOverrides}
-                >
+                <Card media={customCardMediaWithOverrides}>
                   Card content text
                 </Card>
+              </Cell>
+            </Grid>
+          </ContainerWithBackground>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'card-with-media-link-and-headline',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Card with media, link and only Headline in cardBody
+          </StorybookHeading>
+          <ContainerWithBackground>
+            <Grid>
+              <Cell xs={12} sm={4}>
+                <ThemeProvider theme={myCustomCardTheme}>
+                  <Card
+                    href="https://newskit.co.uk/"
+                    media={{
+                      src: '/placeholder-3x2.png',
+                      alt: 'Card Media',
+                    }}
+                    actions={cardSmallTags}
+                  >
+                    <Block spaceStack={cardTeaserHeadline}>
+                      <Headline
+                        kickerText="CROWDS HEAD"
+                        overrides={{
+                          typographyPreset:
+                            cardTypographyPresets.cardTeaserHeadlineSmall,
+                          kicker: {
+                            spaceInline: cardTeaserKicker,
+                            stylePreset: 'headlineKickerInteractive',
+                          },
+                          heading: {
+                            stylePreset: 'headlineHeadingInteractive',
+                          },
+                        }}
+                      >
+                        outdoors as bank holiday temps soar above 20 degrees
+                      </Headline>
+                    </Block>
+                  </Card>
+                </ThemeProvider>
+              </Cell>
+            </Grid>
+          </ContainerWithBackground>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'card-with-link-and-headline-and-mediaInteractive',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Card with link Headline and mediaInteractive set to true
+          </StorybookHeading>
+          <ContainerWithBackground>
+            <Grid>
+              <Cell xs={12} sm={4}>
+                <ThemeProvider theme={myCustomCardTheme}>
+                  <Card
+                    mediaInteractive
+                    href="https://newskit.co.uk/"
+                    media={{
+                      src: '/placeholder-3x2.png',
+                      alt: 'Card Media',
+                    }}
+                    actions={cardSmallTags}
+                  >
+                    <Block spaceStack={cardTeaserHeadline}>
+                      <Headline
+                        kickerText="CROWDS HEAD"
+                        overrides={{
+                          typographyPreset:
+                            cardTypographyPresets.cardTeaserHeadlineSmall,
+                          kicker: {
+                            spaceInline: cardTeaserKicker,
+                            stylePreset: 'headlineKickerInteractive',
+                          },
+                          heading: {
+                            stylePreset: 'headlineHeadingInteractive',
+                          },
+                        }}
+                      >
+                        outdoors as bank holiday temps soar above 20 degrees
+                      </Headline>
+                    </Block>
+                  </Card>
+                </ThemeProvider>
+              </Cell>
+            </Grid>
+          </ContainerWithBackground>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'card-with-link-and-no-headline',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Card - Without Inset - Container Overrides
+          </StorybookHeading>
+          <ContainerWithBackground>
+            <Grid>
+              <Cell xs={12} sm={4}>
+                <ThemeProvider theme={myCustomCardTheme}>
+                  <Card
+                    href="https://newskit.co.uk/"
+                    media={{
+                      src: '/placeholder-3x2.png',
+                      alt: 'Card Media',
+                    }}
+                    actions={cardSmallTags}
+                  >
+                    <Block>
+                      <Block spaceStack={cardLabel}>
+                        <Flag
+                          overrides={{
+                            spaceInset: 'spaceInsetSquish000',
+                            stylePreset: 'cardLabel',
+                            typographyPreset:
+                              cardTypographyPresets.cardLabelSmall,
+                            minHeight: 'sizing000',
+                          }}
+                        >
+                          <IconFilledImage />
+                          IMAGE
+                        </Flag>
+                      </Block>
+                      <Block spaceStack={cardTeaserLead}>
+                        <TextBlock
+                          stylePreset="headlineHeadingInteractive"
+                          typographyPreset={
+                            cardTypographyPresets.cardTeaserLeadSmall
+                          }
+                        >
+                          The bank holiday weekend has seen some mixed weather,
+                          but as the sun emerged, many in the UK took the
+                          opportunity to make the most of the lockdown easing.
+                        </TextBlock>
+                      </Block>
+                    </Block>
+                  </Card>
+                </ThemeProvider>
+              </Cell>
+            </Grid>
+          </ContainerWithBackground>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'card-with-link-headline-and-nested-links-in-card-body',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Card with link, headline and nested links in cardBody
+          </StorybookHeading>
+          <ContainerWithBackground>
+            <Grid>
+              <Cell xs={12} sm={4}>
+                <ThemeProvider theme={myCustomCardTheme}>
+                  <Card
+                    href="https://newskit.co.uk/"
+                    media={{
+                      src: '/placeholder-3x2.png',
+                      alt: 'Card Media',
+                    }}
+                    actions={cardSmallTags}
+                  >
+                    <FlexBlock spaceStack={cardLabel}>
+                      <Flag
+                        overrides={{
+                          spaceInset: 'spaceInsetSquish000',
+                          stylePreset: 'cardLabel',
+                          typographyPreset:
+                            cardTypographyPresets.cardLabelSmall,
+                          minHeight: 'sizing000',
+                        }}
+                      >
+                        <IconFilledImage />
+                        IMAGE
+                      </Flag>
+                    </FlexBlock>
+
+                    <Block spaceStack={cardTeaserHeadline}>
+                      <Headline
+                        kickerText="CROWDS HEAD"
+                        overrides={{
+                          typographyPreset:
+                            cardTypographyPresets.cardTeaserHeadlineSmall,
+                          kicker: {
+                            spaceInline: cardTeaserKicker,
+                            stylePreset: 'headlineKickerInteractive',
+                          },
+                          heading: {
+                            stylePreset: 'headlineHeadingInteractive',
+                          },
+                        }}
+                      >
+                        outdoors as bank holiday temps soar above 20 degrees
+                      </Headline>
+                    </Block>
+
+                    <Block spaceStack={cardTeaserLead}>
+                      <TextBlock
+                        stylePreset="cardTeaserLead"
+                        typographyPreset={
+                          cardTypographyPresets.cardTeaserLeadSmall
+                        }
+                      >
+                        The bank holiday weekend has seen some mixed weather,
+                        but as the sun emerged, many in the{' '}
+                        <Link href="/test">UK took the opportunity</Link> to
+                        make the most of the lockdown easing.
+                      </TextBlock>
+                    </Block>
+
+                    <Block spaceStack={cardTeaserLead}>
+                      <Link href="https://google.com">External link</Link>
+                    </Block>
+                  </Card>
+                </ThemeProvider>
+              </Cell>
+            </Grid>
+          </ContainerWithBackground>
+        </React.Fragment>
+      ),
+    },
+    {
+      name: 'card-with-inset-no-media-and-link',
+      type: 'story',
+      component: () => (
+        <React.Fragment>
+          <StorybookHeading>
+            Card with inset, no media and link
+          </StorybookHeading>
+          <ContainerWithBackground>
+            <Grid>
+              <Cell xs={12} sm={4}>
+                <ThemeProvider theme={myCustomCardTheme}>
+                  <CardInset
+                    href="https://newskit.co.uk/"
+                    actions={cardSmallTags}
+                  >
+                    <Block spaceStack={cardTeaserHeadline}>
+                      <Headline
+                        kickerText="CROWDS HEAD"
+                        overrides={{
+                          typographyPreset:
+                            cardTypographyPresets.cardTeaserHeadlineSmall,
+                          kicker: {
+                            spaceInline: cardTeaserKicker,
+                            stylePreset: 'headlineKickerInteractive',
+                          },
+                          heading: {
+                            stylePreset: 'headlineHeadingInteractive',
+                          },
+                        }}
+                      >
+                        outdoors as bank holiday temps soar above 20 degrees
+                      </Headline>
+                    </Block>
+
+                    <TextBlock
+                      stylePreset="cardTeaserLead"
+                      typographyPreset={
+                        cardTypographyPresets.cardTeaserLeadSmall
+                      }
+                    >
+                      The bank holiday weekend has seen some mixed weather, but
+                      as the sun emerged, many in the UK took the opportunity to
+                      make the most of the lockdown easing.
+                    </TextBlock>
+                  </CardInset>
+                </ThemeProvider>
               </Cell>
             </Grid>
           </ContainerWithBackground>

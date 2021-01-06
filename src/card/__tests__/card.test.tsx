@@ -9,9 +9,18 @@ import {Block} from '../../block';
 import {TextBlock} from '../../text-block';
 import {CardInset} from '../card-inset';
 import {createTheme} from '../../theme';
+import {Headline} from '../../headline';
+import {HeadlineOverrides} from '../../headline/types';
+import {BaseLinkProps} from '../../link';
 
 const placeholder = '/placeholder-3x2.png';
 const href = 'https://newskit.co.uk/';
+
+const hrefAsObject: BaseLinkProps = {
+  href: 'https://newskit.co.uk/',
+  target: '_blank',
+  type: 'preload',
+};
 
 const myCustomCardTheme = createTheme({
   name: 'my-custom-card-theme',
@@ -38,6 +47,16 @@ const myCustomCardTheme = createTheme({
       cardContainerActionsMock: {
         base: {
           backgroundColor: '{{colors.green020}}',
+        },
+      },
+      cardHeadlineLinkStyleMock: {
+        base: {
+          color: '{{colors.inkHeadingLink}}}',
+          textDecoration: 'none',
+        },
+        hover: {
+          color: '{{colors.inkHeadingLinkHover}}}',
+          textDecoration: 'underline',
         },
       },
     },
@@ -71,6 +90,12 @@ const cardBody = (
   </Block>
 );
 
+const cardBodyWithHeadline = (headlineOverrides?: HeadlineOverrides) => (
+  <Block spaceStack="space010">
+    <Headline overrides={headlineOverrides}>Example Card Headline</Headline>
+  </Block>
+);
+
 describe('Card', () => {
   test('renders without card items', () => {
     const fragment = renderToFragmentWithTheme(Card);
@@ -97,12 +122,72 @@ describe('Card', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('adds a href to the anchor containing the media', () => {
+  test('renders correctly with Headline component in cardBody', () => {
     const fragment = renderToFragmentWithTheme(Card, {
-      href,
-      children: cardBody,
+      children: cardBodyWithHeadline(),
     });
     expect(fragment).toMatchSnapshot();
+  });
+
+  describe('with href', () => {
+    test('wraps the children of cardBody with a link provided as string, when no Headline component provided', () => {
+      const fragment = renderToFragmentWithTheme(Card, {
+        href,
+        children: cardBody,
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('wraps the children of cardBody with a link provided as object, when no Headline component provided', () => {
+      const fragment = renderToFragmentWithTheme(Card, {
+        href: hrefAsObject,
+        children: cardBody,
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders correctly with mediaInteractive set to true', () => {
+      const fragment = renderToFragmentWithTheme(Card, {
+        href,
+        mediaInteractive: true,
+        media: {
+          src: placeholder,
+          alt: 'Card Media',
+        },
+        children: cardBody,
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('wraps the Headline component from cardBody with a link as string', () => {
+      const fragment = renderToFragmentWithTheme(Card, {
+        href,
+        children: cardBodyWithHeadline(),
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('wraps the Headline component from cardBody with a link as object', () => {
+      const fragment = renderToFragmentWithTheme(Card, {
+        href: hrefAsObject,
+        children: cardBodyWithHeadline(),
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('wraps the Headline component from cardBody with a link and applies headline overrides to the link', () => {
+      const fragment = renderToFragmentWithTheme(
+        Card,
+        {
+          href,
+          children: cardBodyWithHeadline({
+            heading: {stylePreset: 'cardHeadlineLinkStyleMock'},
+          }),
+        },
+        myCustomCardTheme,
+      );
+      expect(fragment).toMatchSnapshot();
+    });
   });
 
   test('renders media section with custom loadingAspectRatio if the media data is provided', () => {

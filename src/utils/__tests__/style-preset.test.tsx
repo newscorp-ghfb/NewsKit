@@ -444,6 +444,13 @@ describe('getStylePresetFromTheme', () => {
     });
     expect(fragment).toMatchSnapshot();
   });
+
+  test('with nestedCssSelector adds the nested element class to all state selectors', () => {
+    const fragment = renderToFragmentWithTheme(TestSurface, {
+      nestedCssSelector: '.nested-element-class',
+    });
+    expect(fragment).toMatchSnapshot();
+  });
 });
 
 describe('getPresetStyles', () => {

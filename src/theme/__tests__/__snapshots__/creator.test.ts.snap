@@ -1639,9 +1639,6 @@ Object {
       },
     },
     "cardContainer": Object {
-      "active": Object {
-        "backgroundColor": "{{colors.interface020}}",
-      },
       "base": Object {
         "backgroundColor": "{{colors.interface010}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
@@ -1667,9 +1664,6 @@ Object {
         "backgroundColor": "{{colors.interface010}}",
         "borderRadius": "{{borders.borderRadiusSharp}}",
         "color": "{{colors.inkBase}}",
-      },
-      "hover": Object {
-        "backgroundColor": "{{colors.interactivePrimary020}}",
       },
     },
     "cardContainerTeaserAndActions": Object {
@@ -1742,6 +1736,35 @@ Object {
         "backgroundColor": "{{colors.interfaceNegative020}}",
         "color": "{{colors.inkBase}}",
         "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "headlineHeadingInteractive": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "{{colors.inkBase}}",
+      },
+      "hover": Object {
+        "color": "{{colors.interactivePrimary040}}",
+        "textDecoration": "underline",
+      },
+    },
+    "headlineKickerInteractive": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+      },
+      "hover": Object {
+        "color": "{{colors.interactivePrimary040}}",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "{{colors.interactiveVisited010}}",
       },
     },
     "iconButtonDefault": Object {

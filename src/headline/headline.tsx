@@ -42,12 +42,22 @@ export const Headline: React.FC<HeadlineProps> = ({
 }) => (
   <HeadlineContainer overrides={overrides}>
     {kickerText && (
-      <Kicker as={kickerAs} overrides={overrides}>
+      <Kicker
+        className="nk-headline-kicker"
+        as={kickerAs}
+        overrides={overrides}
+      >
         {kickerText}{' '}
       </Kicker>
     )}
-    <Heading as={headingAs} overrides={overrides}>
+    <Heading
+      className="nk-headline-heading"
+      as={headingAs}
+      overrides={overrides}
+    >
       {children}
     </Heading>
   </HeadlineContainer>
 );
+
+Headline.displayName = 'Headline';

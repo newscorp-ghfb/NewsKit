@@ -1640,9 +1640,6 @@ Object {
       },
     },
     "cardContainer": Object {
-      "active": Object {
-        "backgroundColor": "#fafafa",
-      },
       "base": Object {
         "backgroundColor": "#ffffff",
         "borderRadius": "0",
@@ -1668,9 +1665,6 @@ Object {
         "backgroundColor": "#ffffff",
         "borderRadius": "0",
         "color": "#2e2e2e",
-      },
-      "hover": Object {
-        "backgroundColor": "#d5ebff",
       },
     },
     "cardContainerTeaserAndActions": Object {
@@ -1743,6 +1737,35 @@ Object {
         "backgroundColor": "#ffe6e5",
         "color": "#2e2e2e",
         "iconColor": "#2e2e2e",
+      },
+    },
+    "headlineHeadingInteractive": Object {
+      "active": Object {
+        "color": "#01396e",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "#2e2e2e",
+      },
+      "hover": Object {
+        "color": "#02509b",
+        "textDecoration": "underline",
+      },
+    },
+    "headlineKickerInteractive": Object {
+      "active": Object {
+        "color": "#01396e",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "#0a68c1",
+      },
+      "hover": Object {
+        "color": "#02509b",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "#7547a3",
       },
     },
     "iconButtonDefault": Object {

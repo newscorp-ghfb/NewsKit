@@ -7,9 +7,13 @@ import {
   StyledCardContainerTeaserAndActions,
   StyledCardContainerTeaser,
   StyledCardContainerActions,
+  StyledCardLink,
 } from './styled';
 import {Flow, StackDistribution} from '../stack';
-import {renderComponent} from '../utils/component';
+import {renderComponent, hasMatchingDisplayNameWith} from '../utils/component';
+import {deepMap} from '../utils/react-children-utilities';
+import {Headline} from '../headline';
+import {BaseLinkProps} from '../link';
 
 const renderMedia = (media: CardProps['media'], overrides = {}) =>
   renderComponent(media) || (
@@ -20,24 +24,100 @@ const renderMedia = (media: CardProps['media'], overrides = {}) =>
     />
   );
 
+const addHrefToLinkProps = (props: object, href: string | BaseLinkProps) =>
+  typeof href === 'string'
+    ? {
+        ...props,
+        href,
+      }
+    : {
+        ...href,
+        ...props,
+      };
+
+const recursivelyWrapHeadlineInLink = (
+  href: string | BaseLinkProps,
+  children: React.ReactNode,
+) => {
+  let hasHeadline = false;
+  const wrapHeadlineInLink = (child: React.ReactNode) => {
+    if (!child || !hasMatchingDisplayNameWith(child, Headline)) {
+      return child;
+    }
+
+    hasHeadline = true;
+
+    const {overrides: headlineOverrides} = (child as React.ReactElement).props;
+
+    const linkPropsWithHref = addHrefToLinkProps(
+      {
+        className: 'nk-card-link',
+        overrides: headlineOverrides,
+        children: child,
+      },
+      href,
+    );
+
+    return <StyledCardLink {...linkPropsWithHref} />;
+  };
+  const wrappedChildren = deepMap(children, wrapHeadlineInLink);
+  return {hasHeadline, wrappedChildren};
+};
+
+const TeaserDecorator = ({
+  children,
+  href,
+}: {
+  children: React.ReactNode;
+  href?: string | BaseLinkProps;
+}) => {
+  if (!href) {
+    return <>{children}</>;
+  }
+  const {hasHeadline, wrappedChildren} = recursivelyWrapHeadlineInLink(
+    href,
+    children,
+  );
+
+  if (hasHeadline) {
+    return <>{wrappedChildren}</>;
+  }
+
+  const linkProps = addHrefToLinkProps(
+    {
+      className: 'nk-card-link',
+      children,
+    },
+    href,
+  );
+
+  return <StyledCardLink {...linkProps} />;
+};
+
 export const Card: React.FC<CardProps> = ({
   media,
-  href = '#',
+  mediaInteractive = false,
+  href,
   actions,
   children,
   overrides = {},
 }) => (
   <StyledCardContainer overrides={overrides}>
     {media && (
-      <StyledCardContainerMedia href={href} overrides={overrides}>
+      <StyledCardContainerMedia
+        mediaInteractive={mediaInteractive}
+        overrides={overrides}
+      >
         {renderMedia(media, overrides.mediaContainer)}
       </StyledCardContainerMedia>
     )}
 
     <StyledCardContainerTeaserAndActions>
-      <StyledCardContainerTeaser overrides={overrides}>
-        {children}
-      </StyledCardContainerTeaser>
+      {children && (
+        <StyledCardContainerTeaser overrides={overrides}>
+          <TeaserDecorator href={href}>{children}</TeaserDecorator>
+        </StyledCardContainerTeaser>
+      )}
       {actions && (
         <StyledCardContainerActions
           flow={Flow.HorizontalCenter}

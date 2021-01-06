@@ -1,16 +1,22 @@
 const cardMediumTags = () => (
-  <Stack flow={Flow.HorizontalCenter} space={cardActionsSpace}>
+  <Stack flow={Flow.HorizontalCenter} spaceInline={cardActionsSpace}>
     <Tag
       size={TagSize.Small}
       href="/"
-      overrides={{stylePreset: 'cardTag', typographyPreset: cardTagMediumTypographyPreset}}
+      overrides={{
+        stylePreset: 'cardTag',
+        typographyPreset: cardTagMediumTypographyPreset,
+      }}
     >
       News
     </Tag>
     <Tag
       size={TagSize.Small}
       href="/"
-      overrides={{stylePreset: 'cardTag', typographyPreset: cardTagMediumTypographyPreset}}
+      overrides={{
+        stylePreset: 'cardTag',
+        typographyPreset: cardTagMediumTypographyPreset,
+      }}
     >
       Sport
     </Tag>
@@ -32,7 +38,7 @@ export const CardMediumWithoutInset = () => (
             stylePreset: 'cardContainer',
           }}
         >
-          <Block overrides={{spaceStack: cardLabelSpaceStack}}>
+          <Block spaceStack={cardLabelSpaceStack}>
             <Flag
               overrides={{
                 spaceInset: 'spaceInsetSquish000',
@@ -45,22 +51,17 @@ export const CardMediumWithoutInset = () => (
             </Flag>
           </Block>
 
-          <Block
-            overrides={{
-              spaceStack: cardTeaserHeadlineSpaceStack,
-            }}
-          >
+          <Block spaceStack={cardTeaserHeadlineSpaceStack}>
             <Headline
               kickerText="CROWDS HEAD"
               overrides={{
+                typographyPreset: cardTeaserHeadlineMediumTypographyPreset,
                 heading: {
-                  stylePreset: 'cardTeaserHeadline',
-                  typographyPreset: cardTeaserHeadlineMediumTypographyPreset,
+                  stylePreset: 'headlineHeadingInteractive',
                 },
                 kicker: {
                   spaceInline: cardTeaserKickerSpaceInline,
-                  stylePreset: 'cardTeaserKicker',
-                  typographyPreset: cardTeaserKickerMediumTypographyPreset,
+                  stylePreset: 'headlineKickerInteractive',
                 },
               }}
             >
@@ -68,13 +69,9 @@ export const CardMediumWithoutInset = () => (
             </Headline>
           </Block>
 
-          <Block
-            overrides={{
-              spaceStack: cardTeaserLeadSpaceStack,
-            }}
-          >
+          <Block spaceStack={cardTeaserLeadSpaceStack}>
             <TextBlock
-              stylePreset='cardTeaserLead'
+              stylePreset="cardTeaserLead"
               typographyPreset={cardTeaserLeadMediumTypographyPreset}
             >
               The bank holiday weekend has seen some mixed weather, but as the

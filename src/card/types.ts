@@ -1,26 +1,28 @@
 import {ImageProps} from '../image/types';
+import {BaseLinkProps} from '../link/types';
 import {MQ} from '../utils/style';
 
+export interface CardOverridesProps {
+  stylePreset?: MQ<string>;
+  mediaContainer?: {
+    stylePreset?: MQ<string>;
+    spaceInline?: MQ<string>;
+  };
+  teaserContainer?: {
+    stylePreset?: MQ<string>;
+    spaceInset?: MQ<string>;
+  };
+  actionsContainer?: {
+    stylePreset?: MQ<string>;
+    spaceInset?: MQ<string>;
+    minHeight?: string;
+  };
+}
 export interface CardProps {
-  href?: string;
+  href?: string | BaseLinkProps;
   media?: ImageProps | React.ComponentType;
+  mediaInteractive?: boolean;
   children: Exclude<React.ReactNode, 'undefined'>;
   actions?: React.ComponentType;
-
-  overrides?: {
-    stylePreset?: MQ<string>;
-    mediaContainer?: {
-      stylePreset?: MQ<string>;
-      spaceInline?: MQ<string>;
-    };
-    teaserContainer?: {
-      stylePreset?: MQ<string>;
-      spaceInset?: MQ<string>;
-    };
-    actionsContainer?: {
-      stylePreset?: MQ<string>;
-      spaceInset?: MQ<string>;
-      minHeight?: string;
-    };
-  };
+  overrides?: CardOverridesProps;
 }

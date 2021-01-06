@@ -23,6 +23,7 @@
     "lint": "yarn lint:code && yarn lint:markdown",
     "test": "yarn lint && yarn test:unit:dev",
     "test:unit:run": "jest --coverage --coverageReporters=lcov --coverageReporters=text",
+    "test:unit:watch": "yarn test:unit:run --watch",
     "test:unit:dev": "yarn build:icons:dev && yarn test:unit:run --coveragePathIgnorePatterns=/src/icons/",
     "test:unit:ci": "yarn test:unit:run --maxWorkers=4 --ci --reporters=default --reporters=jest-junit",
     "test:unit:comps": "yarn test:unit --projects=src",
