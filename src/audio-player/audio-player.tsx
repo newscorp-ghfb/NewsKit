@@ -24,7 +24,7 @@ import {useTheme, Devices} from '../theme';
 import {getSingleStylePreset} from '../utils/style';
 import {getSSRId} from '../utils/get-ssr-id';
 import {LabelPosition} from '../slider/types';
-import {AudioPlayerProps} from './types';
+import {AudioEvents, AudioPlayerProps} from './types';
 import {useAudioFunctions} from './audio-functions';
 import {StackChild} from '../stack-child';
 import {ScreenReaderOnly} from '../screen-reader-only/screen-reader-only';
@@ -45,7 +45,6 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     children,
     live = false,
     captionSrc,
-    onPlay: onPlayProp,
     ...restProps
   } = props;
 
@@ -93,21 +92,13 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
   }, [src]);
 
   const {
+    audioEvents,
     onClickPrevious,
     onClickNext,
     onClickBackward,
     onClickForward,
     onPopoutClick,
     togglePlay,
-    onCanPlay,
-    onWaiting,
-    onPlay,
-    onPause,
-    onProgress,
-    onDurationChange,
-    onTimeUpdate,
-    onVolumeChange,
-    onEnded,
     onChangeSlider,
     onChangeVolumeSlider,
   } = useAudioFunctions({
@@ -133,11 +124,14 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
     setIsPrevTrackBtnDisabled,
   });
 
-  const handleOnPlay = (e: React.SyntheticEvent<HTMLAudioElement, Event>) => {
-    if (onPlayProp) {
-      onPlayProp(e);
+  const eventHandler = (eventName: AudioEvents) => (
+    e: React.SyntheticEvent<HTMLAudioElement, Event>,
+  ) => {
+    const eventCallback = props[eventName];
+    if (eventCallback) {
+      eventCallback(e);
     }
-    onPlay();
+    audioEvents[eventName](e);
   };
 
   const renderTrack: SliderProps['renderTrack'] = useCallback(
@@ -241,18 +235,19 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = props => {
         <audio
           ref={audioRef}
           src={src}
-          onCanPlay={onCanPlay}
-          onWaiting={onWaiting}
-          onPlay={handleOnPlay}
-          onPause={onPause}
-          onVolumeChange={onVolumeChange}
-          onDurationChange={onDurationChange}
-          onTimeUpdate={onTimeUpdate}
-          onProgress={onProgress}
-          onEnded={onEnded}
-          data-testid="audio-element"
           autoPlay={autoPlay}
+          data-testid="audio-element"
           {...restProps}
+          // override callback handlers
+          onCanPlay={eventHandler(AudioEvents.CanPlay)}
+          onWaiting={eventHandler(AudioEvents.Waiting)}
+          onPlay={eventHandler(AudioEvents.Play)}
+          onPause={eventHandler(AudioEvents.Pause)}
+          onVolumeChange={eventHandler(AudioEvents.VolumeChange)}
+          onEnded={eventHandler(AudioEvents.Ended)}
+          onDurationChange={eventHandler(AudioEvents.DurationChange)}
+          onTimeUpdate={eventHandler(AudioEvents.TimeUpdate)}
+          onProgress={eventHandler(AudioEvents.Progress)}
         >
           {captionSrc && <track kind="captions" src={captionSrc} />}
         </audio>

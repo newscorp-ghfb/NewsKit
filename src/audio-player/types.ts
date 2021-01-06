@@ -21,3 +21,15 @@ export interface AudioPlayerProps
     volumeControl?: VolumeControlOverrideProps;
   };
 }
+
+export enum AudioEvents {
+  Play = 'onPlay',
+  Pause = 'onPause',
+  Waiting = 'onWaiting',
+  CanPlay = 'onCanPlay',
+  Ended = 'onEnded',
+  VolumeChange = 'onVolumeChange',
+  DurationChange = 'onDurationChange',
+  TimeUpdate = 'onTimeUpdate',
+  Progress = 'onProgress',
+}

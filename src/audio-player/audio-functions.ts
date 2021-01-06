@@ -1,7 +1,7 @@
 /* eslint-disable no-param-reassign */
 import {useCallback, SyntheticEvent, useEffect} from 'react';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
-import {AudioPlayerProps} from './types';
+import {AudioPlayerProps, AudioEvents} from './types';
 import {formatTrackTime, getMediaSegment} from './utils';
 import calculateStringPercentage from '../utils/calculate-string-percentage';
 import {getValueInRange} from '../utils/value-in-range';
@@ -345,21 +345,23 @@ export const useAudioFunctions = ({
   }, []);
 
   return {
+    audioEvents: {
+      [AudioEvents.Play]: onPlay,
+      [AudioEvents.Pause]: onPause,
+      [AudioEvents.Waiting]: onWaiting,
+      [AudioEvents.CanPlay]: onCanPlay,
+      [AudioEvents.Ended]: onEnded,
+      [AudioEvents.VolumeChange]: onVolumeChange,
+      [AudioEvents.DurationChange]: onDurationChange,
+      [AudioEvents.TimeUpdate]: onTimeUpdate,
+      [AudioEvents.Progress]: onProgress,
+    },
     onClickPrevious,
     onClickNext,
     onClickBackward,
     onClickForward,
     onPopoutClick,
-    onCanPlay,
-    onWaiting,
     togglePlay,
-    onPlay,
-    onPause,
-    onProgress,
-    onDurationChange,
-    onTimeUpdate,
-    onVolumeChange,
-    onEnded,
     onChangeSlider,
     onChangeVolumeSlider,
   };
