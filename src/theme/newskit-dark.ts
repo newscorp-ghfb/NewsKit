@@ -1,7 +1,6 @@
 import {createTheme} from './creator';
-import {ThemeOverrides} from './types';
 
-const overrides: ThemeOverrides = {
+export const newskitDarkThemeOverrides = {
   colors: {
     socialTwitter: '#97e3ff',
     socialFacebook: '#74abff',
@@ -28,14 +27,8 @@ const overrides: ThemeOverrides = {
     interactiveVisited010: '{{colors.purple020}}',
     interactiveNegative010: '{{colors.red090}}',
     interactiveNegative020: '{{colors.red100}}',
-    interactiveNegative030: '{{colors.red060}}',
-    interactiveNegative040: '{{colors.red070}}',
-    interactiveNegative050: '{{colors.red080}}',
     interactivePositive010: '{{colors.green090}}',
     interactivePositive020: '{{colors.green100}}',
-    interactivePositive030: '{{colors.green060}}',
-    interactivePositive040: '{{colors.green070}}',
-    interactivePositive050: '{{colors.green080}}',
     interfaceNotice010: '{{colors.amber030}}',
     interfaceBackground: '{{colors.neutral090}}',
     interface010: '{{colors.neutral090}}',
@@ -44,13 +37,8 @@ const overrides: ThemeOverrides = {
     interface040: '{{colors.neutral060}}',
     interface050: '{{colors.neutral050}}',
     interface060: '{{colors.neutral010}}',
-    interfaceBrand010: '{{colors.blue060}}',
-    interfaceBrand020: '{{colors.blue020}}',
     interactivePrimary010: '{{colors.blue080}}',
     interactivePrimary020: '{{colors.blue090}}',
-    interactivePrimary030: '{{colors.blue060}}',
-    interactivePrimary040: '{{colors.blue070}}',
-    interactivePrimary050: '{{colors.blue080}}',
     interactiveSecondary010: '{{colors.neutral080}}',
     interactiveSecondary020: '{{colors.neutral090}}',
     interactiveSecondary030: '{{colors.neutral070}}',
@@ -68,14 +56,6 @@ const overrides: ThemeOverrides = {
     inverse: '{{colors.black}}',
   },
   overlays: {
-    overlayLight010: 'rgba(255,255,255,0.20)',
-    overlayLight020: 'rgba(255,255,255,0.40)',
-    overlayLight030: 'rgba(255,255,255,0.60)',
-    overlayLight040: 'rgba(255,255,255,0.80)',
-    overlayDark010: 'rgba(10,10,10,0.20)',
-    overlayDark020: 'rgba(10,10,10,0.40)',
-    overlayDark030: 'rgba(10,10,10,0.60)',
-    overlayDark040: 'rgba(10,10,10,0.80)',
     overlayLightGradient010:
       'linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%)',
     overlayDarkGradient010:
@@ -85,5 +65,5 @@ const overrides: ThemeOverrides = {
 
 export const newskitDarkTheme = createTheme({
   name: 'newskit-dark',
-  overrides,
+  overrides: newskitDarkThemeOverrides,
 });

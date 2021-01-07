@@ -38,6 +38,26 @@ To create a theme you use the `createTheme` function exported from NewsKit. The 
     structure matches the theme, think of this as being deep merged over the
     baseTheme.
   </Prop>
+  <Prop name="checkOverrides" type="boolean" default="false">
+    If true, the theme creator will check your provided overrides against your
+    base theme (or the NewsKit Light default, if not set) for unecessary
+    overriding. For example, if red070 is set to #d20600 in the base theme, and
+    you override red070 to the same #d20600 value, this will trigger a console
+    warning. You can change this logging behaviour using the property below. To
+    maximise performance, it is recommended you do not set this to true in
+    production.
+  </Prop>
+  <Prop
+    name="warningLogger"
+    type="(message: string) => void"
+    default="console.warn"
+  >
+    This logger is only used when checkOverrides is true. When using
+    checkOverrides you can set your own logging behaviour by passing a suitable
+    function. This can be useful if you wish to unit test your theme by passing
+    an error throwing function or mock, for example. There is an example of this
+    below.
+  </Prop>
 </LegacyBlock>
 
 ### Sub-themes
@@ -56,7 +76,7 @@ Tokens can also be used as object keys as well as values, this is how you can se
 
 To make this system as flexible as reasonably possible the compilation lookup process is recursive. This is utilised in NewsKit for example by a button style preset `buttonOutlinedNegative` using `{{colors.inkNegative}}` which in turn uses `{{colors.red070}}` which evaluates to a hex code colour. A recursion depth limit of 5 is in place to avoid recursive loops, if a loop should occur an error will be logged to console and the values will be set to empty strings.
 
-As well as recursion protection the compiler will also log warnings when you reference tokens which it cannot find.
+As well as recursion protection the compiler will also log warnings when you reference tokens which it cannot find. This logging behaviour is overridable by passing your own logger function to the `errorLogger` property inside the options (2nd) argument. One useful reason to do this is to unit test your theme. By replacing the logger with an error throwing function or mock, you can ensure your theme is valid as part of your development lifecycle. There is an example of this below.
 
 ### Functions as theme values
 
@@ -98,9 +118,13 @@ Changing the default border radius of NewsKit elements, such as buttons, to shar
 
 <CodeFromFile path="examples/theming/adding-typography-preset.tsx" />
 
+#### Unit testing your theme
+
+<CodeFromFile path="examples/theming/unit-testing-your-theme.tsx" />
+
 #### Overriding an icon
 
-NewsKit comes with [Material Design's Icon](https://material.io/resources/icons/?style=baseline) filled and outline sets included. 
+NewsKit comes with [Material Design's Icon](https://material.io/resources/icons/?style=baseline) filled and outline sets included.
 In some cases, it might be desirable to replace the default icon with a user defined one, for instance if we want to use our own close icon across the system.
 
 Check out the <Link href="/components/others/icons">Icons page</Link> for detailed explanation on how to create custom NewsKit icon.

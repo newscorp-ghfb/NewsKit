@@ -45,5 +45,7 @@ export interface Theme extends ThemeBase, ThemeIdentifier {
   compiled: true;
 }
 
+export type ThemeLoggerFunction = (message: string) => void;
+
 export type BreakpointKeys = keyof Breakpoints;
 export * from './presets/types';

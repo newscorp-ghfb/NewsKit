@@ -1,0 +1,3185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsKit Dark theme should match expected snapshot 1`] = `
+Object {
+  "borders": Object {
+    "borderRadiusCircle": "50%",
+    "borderRadiusDefault": "{{sizing.sizing020}}",
+    "borderRadiusPill": "20rem",
+    "borderRadiusRounded010": "{{sizing.sizing010}}",
+    "borderRadiusRounded020": "{{sizing.sizing020}}",
+    "borderRadiusRounded030": "{{sizing.sizing030}}",
+    "borderRadiusRounded040": "{{sizing.sizing040}}",
+    "borderRadiusRounded050": "{{sizing.sizing050}}",
+    "borderRadiusSharp": "{{sizing.sizing000}}",
+    "borderWidth000": "0",
+    "borderWidth010": "1px",
+    "borderWidth020": "2px",
+    "borderWidth030": "4px",
+    "borderWidthDefault": "1px",
+  },
+  "breakpoints": Object {
+    "lg": 1024,
+    "md": 768,
+    "sm": 480,
+    "xl": 1440,
+    "xs": 0,
+  },
+  "colors": Object {
+    "amber010": "#ffeecf",
+    "amber020": "#ffdb89",
+    "amber030": "#ffc058",
+    "amber040": "#ffad2c",
+    "amber050": "#ff9900",
+    "amber060": "#ff8f00",
+    "amber070": "#ff8200",
+    "amber080": "#ff7200",
+    "amber090": "#ff6000",
+    "amber100": "#ff4b00",
+    "black": "#000000",
+    "blue010": "#e6f4ff",
+    "blue020": "#d5ebff",
+    "blue030": "#abd5fc",
+    "blue040": "#6eb2f2",
+    "blue050": "#358cde",
+    "blue060": "#0a68c1",
+    "blue070": "#02509b",
+    "blue080": "#01396e",
+    "blue090": "#002141",
+    "blue100": "#000a14",
+    "disabled": "{{colors.neutral090}}",
+    "green010": "#e6faeb",
+    "green020": "#b8efc8",
+    "green030": "#8ee1a6",
+    "green040": "#67cf86",
+    "green050": "#42ba67",
+    "green060": "#23a248",
+    "green070": "#148f39",
+    "green080": "#0a782a",
+    "green090": "#005d1c",
+    "green100": "#003e11",
+    "inkBase": "{{colors.neutral020}}",
+    "inkBrand010": "{{colors.blue040}}",
+    "inkBrand020": "{{colors.blue020}}",
+    "inkContrast": "{{colors.neutral010}}",
+    "inkHeadingLink": "{{colors.neutral020}}",
+    "inkHeadingLinkActive": "{{colors.blue020}}",
+    "inkHeadingLinkHover": "{{colors.blue020}}",
+    "inkHeadingLinkVisited": "{{colors.neutral020}}",
+    "inkInformative": "{{colors.purple020}}",
+    "inkInverse": "{{colors.black}}",
+    "inkNegative": "{{colors.red030}}",
+    "inkNonEssential": "{{colors.neutral070}}",
+    "inkNotice": "{{colors.amber040}}",
+    "inkPositive": "{{colors.green030}}",
+    "inkSubtle": "{{colors.neutral040}}",
+    "interactive210": "{{colors.white}}",
+    "interactive220": "{{colors.neutral090}}",
+    "interactive230": "{{colors.blue060}}",
+    "interactive240": "{{colors.blue090}}",
+    "interactive250": "{{colors.blue100}}",
+    "interactiveDisabled010": "{{colors.neutral090}}",
+    "interactiveInverse010": "rgba(255,255,255,0.20)",
+    "interactiveInverse020": "rgba(255,255,255,0.40)",
+    "interactiveInverse030": "rgba(255,255,255,1)",
+    "interactiveInverse040": "rgba(255,255,255,0.80)",
+    "interactiveInverse050": "rgba(255,255,255,0.70)",
+    "interactiveNegative010": "{{colors.red090}}",
+    "interactiveNegative020": "{{colors.red100}}",
+    "interactiveNegative030": "{{colors.red060}}",
+    "interactiveNegative040": "{{colors.red070}}",
+    "interactiveNegative050": "{{colors.red080}}",
+    "interactivePositive010": "{{colors.green090}}",
+    "interactivePositive020": "{{colors.green100}}",
+    "interactivePositive030": "{{colors.green060}}",
+    "interactivePositive040": "{{colors.green070}}",
+    "interactivePositive050": "{{colors.green080}}",
+    "interactivePrimary010": "{{colors.blue080}}",
+    "interactivePrimary020": "{{colors.blue090}}",
+    "interactivePrimary030": "{{colors.blue060}}",
+    "interactivePrimary040": "{{colors.blue070}}",
+    "interactivePrimary050": "{{colors.blue080}}",
+    "interactiveSecondary010": "{{colors.neutral080}}",
+    "interactiveSecondary020": "{{colors.neutral090}}",
+    "interactiveSecondary030": "{{colors.neutral070}}",
+    "interactiveSecondary040": "{{colors.neutral080}}",
+    "interactiveSecondary050": "{{colors.neutral090}}",
+    "interactiveVisited010": "{{colors.purple020}}",
+    "interface010": "{{colors.neutral090}}",
+    "interface020": "{{colors.neutral080}}",
+    "interface030": "{{colors.neutral070}}",
+    "interface040": "{{colors.neutral060}}",
+    "interface050": "{{colors.neutral050}}",
+    "interface060": "{{colors.neutral010}}",
+    "interfaceBackground": "{{colors.neutral090}}",
+    "interfaceBrand010": "{{colors.blue060}}",
+    "interfaceBrand020": "{{colors.blue020}}",
+    "interfaceInformative010": "{{colors.teal070}}",
+    "interfaceInformative020": "{{colors.teal010}}",
+    "interfaceNegative010": "{{colors.red070}}",
+    "interfaceNegative020": "{{colors.red010}}",
+    "interfaceNeutral010": "{{colors.neutral080}}",
+    "interfaceNotice010": "{{colors.amber030}}",
+    "interfaceNotice020": "{{colors.amber010}}",
+    "interfacePositive010": "{{colors.green080}}",
+    "interfacePositive020": "{{colors.green010}}",
+    "interfaceSkeleton010": "{{colors.neutral090}}",
+    "interfaceSkeleton020": "{{colors.neutral080}}",
+    "inverse": "{{colors.black}}",
+    "neutral010": "#fafafa",
+    "neutral020": "#f0f0f0",
+    "neutral030": "#e4e4e4",
+    "neutral040": "#cccccc",
+    "neutral050": "#c0c0c0",
+    "neutral060": "#9c9c9c",
+    "neutral070": "#777777",
+    "neutral080": "#535353",
+    "neutral090": "#2e2e2e",
+    "neutral100": "#0a0a0a",
+    "purple010": "#d1c2e0",
+    "purple020": "#b399cc",
+    "purple030": "#9470b8",
+    "purple040": "#855cad",
+    "purple050": "#7547a3",
+    "purple060": "#663399",
+    "purple070": "#52297a",
+    "purple080": "#47246b",
+    "purple090": "#3d1f5c",
+    "purple100": "#29143d",
+    "red010": "#ffe6e5",
+    "red020": "#ffb8b8",
+    "red030": "#ff8a8a",
+    "red040": "#ff5c5c",
+    "red050": "#ff362e",
+    "red060": "#ef1703",
+    "red070": "#d20600",
+    "red080": "#a60100",
+    "red090": "#790101",
+    "red100": "#4d0000",
+    "socialFacebook": "#74abff",
+    "socialGithub": "#ffffff",
+    "socialInstagram": "#ff77a0",
+    "socialReddit": "#ffffff",
+    "socialTwitter": "#97e3ff",
+    "socialWhatsapp": "#dcf8c6",
+    "socialYoutube": "#ffffff",
+    "teal010": "#e8f6f8",
+    "teal020": "#d1ecf1",
+    "teal030": "#a2dae3",
+    "teal040": "#74c7d4",
+    "teal050": "#45b5c6",
+    "teal060": "#17a2b8",
+    "teal070": "#128293",
+    "teal080": "#0e616e",
+    "teal090": "#09414a",
+    "teal100": "#073137",
+    "transparent": "transparent",
+    "white": "#ffffff",
+  },
+  "componentDefaults": Object {
+    "audioPlayer": Object {
+      "controls": Object {
+        "forwardButton": Object {
+          "stylePreset": "audioPlayerControlButton",
+        },
+        "nextButton": Object {
+          "stylePreset": "audioPlayerControlButton",
+        },
+        "playPauseButton": Object {
+          "stylePreset": "audioPlayerPlayPauseButton",
+        },
+        "popoutButton": Object {
+          "stylePreset": "audioPlayerControlButton",
+        },
+        "previousButton": Object {
+          "stylePreset": "audioPlayerControlButton",
+        },
+        "replayButton": Object {
+          "stylePreset": "audioPlayerControlButton",
+        },
+        "space": "space030",
+      },
+      "seekBar": Object {
+        "buffering": Object {
+          "stylePreset": "audioPlayerSeekBarBuffering",
+        },
+        "slider": Object {
+          "indicator": Object {
+            "stylePreset": "audioPlayerSeekBarIndicator",
+          },
+          "labels": Object {
+            "stylePreset": "audioPlayerLabels",
+            "typographyPreset": "utilityLabel020",
+          },
+          "thumb": Object {
+            "size": "sizing040",
+            "stylePreset": "audioPlayerThumb",
+          },
+          "thumbLabel": Object {
+            "stylePreset": "audioPlayerLabels",
+          },
+          "track": Object {
+            "size": "sizing020",
+            "stylePreset": "audioPlayerSeekBarTrack",
+          },
+        },
+      },
+      "volumeControl": Object {
+        "slider": Object {
+          "indicator": Object {
+            "stylePreset": "volumeControlIndicator",
+          },
+          "labels": Object {
+            "stylePreset": "volumeControlButtons",
+          },
+          "thumb": Object {
+            "size": "sizing040",
+            "stylePreset": "audioPlayerVolumeControlThumb",
+          },
+          "thumbLabel": Object {
+            "stylePreset": "volumeControlLabels",
+          },
+          "track": Object {
+            "size": "sizing010",
+            "stylePreset": "volumeControlTrack",
+          },
+        },
+      },
+    },
+    "button": Object {
+      "large": Object {
+        "iconSize": "iconSize030",
+        "loadingIndicator": Object {
+          "stylePreset": "indeterminateProgressIndicatorPrimary",
+        },
+        "minHeight": "sizing090",
+        "minWidth": "sizing110",
+        "spaceInline": "space020",
+        "spaceInset": "spaceInsetSquish040",
+        "stylePreset": "buttonDefault",
+        "typographyPreset": "utilityButton030",
+      },
+      "medium": Object {
+        "iconSize": "iconSize020",
+        "loadingIndicator": Object {
+          "stylePreset": "indeterminateProgressIndicatorPrimary",
+        },
+        "minHeight": "sizing080",
+        "minWidth": "sizing100",
+        "spaceInline": "space020",
+        "spaceInset": "spaceInsetSquish030",
+        "stylePreset": "buttonDefault",
+        "typographyPreset": "utilityButton020",
+      },
+      "small": Object {
+        "iconSize": "iconSize010",
+        "loadingIndicator": Object {
+          "stylePreset": "indeterminateProgressIndicatorPrimary",
+        },
+        "minHeight": "sizing060",
+        "minWidth": "sizing090",
+        "spaceInline": "space020",
+        "spaceInset": "spaceInsetSquish020",
+        "stylePreset": "buttonDefault",
+        "typographyPreset": "utilityButton010",
+      },
+    },
+    "byline": Object {
+      "divider": Object {
+        "spaceInline": "space020",
+        "stylePreset": "inkNonEssential",
+      },
+      "link": Object {
+        "stylePreset": "linkInline",
+        "typographyPreset": "utilityMeta020",
+      },
+      "spaceStack": "space020",
+      "stylePreset": "inkSubtle",
+      "typographyPreset": "utilityMeta020",
+    },
+    "caption": Object {
+      "credit": Object {
+        "stylePreset": "uppercaseInkSubtle",
+        "typographyPreset": "utilityMeta010",
+      },
+      "spaceStack": "space040",
+      "stylePreset": "inkBase",
+      "typographyPreset": "editorialCaption010",
+    },
+    "captionInset": Object {
+      "credit": Object {
+        "stylePreset": "uppercaseInkSubtle",
+        "typographyPreset": "utilityMeta010",
+      },
+      "spaceInset": Object {
+        "md": "spaceInset050",
+        "xs": "spaceInset040",
+      },
+      "spaceStack": "space040",
+      "stylePreset": "inkBase",
+      "typographyPreset": "editorialCaption010",
+    },
+    "card": Object {
+      "actionsContainer": Object {
+        "minHeight": "sizing080",
+        "spaceInset": "spaceInsetSquish000",
+        "stylePreset": "cardContainerActions",
+      },
+      "contentAndActionsContainer": Object {
+        "stylePreset": "cardContainerTeaserAndActions",
+      },
+      "mediaContainer": Object {
+        "spaceInline": Object {
+          "lg": "space050",
+          "sm": "space040",
+          "xl": "space050",
+          "xs": "space040",
+        },
+        "stylePreset": "cardContainerMedia",
+      },
+      "stylePreset": "cardContainer",
+      "teaserContainer": Object {
+        "spaceInset": "spaceInsetSquish000",
+        "stylePreset": "cardContainerTeaser",
+      },
+    },
+    "cardInset": Object {
+      "actionsContainer": Object {
+        "minHeight": "sizing000",
+        "spaceInset": Object {
+          "lg": "spaceInsetSquish040",
+          "sm": "spaceInsetSquish030",
+          "xl": "spaceInsetSquish040",
+          "xs": "spaceInsetSquish030",
+        },
+        "stylePreset": "cardContainerActions",
+      },
+      "contentAndActionsContainer": Object {
+        "stylePreset": "cardContainerTeaserAndActions",
+      },
+      "mediaContainer": Object {
+        "spaceInline": "space000",
+        "stylePreset": "cardContainerMedia",
+      },
+      "stylePreset": "cardContainer",
+      "teaserContainer": Object {
+        "spaceInset": Object {
+          "lg": "spaceInset050",
+          "sm": "spaceInset040",
+          "xl": "spaceInset050",
+          "xs": "spaceInset040",
+        },
+        "stylePreset": "cardContainerTeaser",
+      },
+    },
+    "dateTime": Object {
+      "prefix": Object {
+        "stylePreset": "inkSubtle",
+        "typographyPreset": "utilityMeta020",
+      },
+      "stylePreset": "inkSubtle",
+      "suffix": Object {
+        "stylePreset": "inkSubtle",
+        "typographyPreset": "utilityMeta020",
+      },
+      "typographyPreset": "utilityMeta020",
+    },
+    "divider": Object {
+      "stylePreset": "dividerHorizontal",
+    },
+    "flag": Object {
+      "large": Object {
+        "iconSize": "iconSize010",
+        "minHeight": "sizing070",
+        "spaceInline": "space010",
+        "spaceInset": "spaceInsetSquish020",
+        "stylePreset": "flagDefault",
+        "typographyPreset": "utilityLabel030",
+      },
+      "medium": Object {
+        "iconSize": "iconSize010",
+        "minHeight": "sizing060",
+        "spaceInline": "space010",
+        "spaceInset": "spaceInsetSquish020",
+        "stylePreset": "flagDefault",
+        "typographyPreset": "utilityLabel020",
+      },
+      "small": Object {
+        "iconSize": "iconSize010",
+        "minHeight": "sizing050",
+        "spaceInline": "space010",
+        "spaceInset": "spaceInsetSquish010",
+        "stylePreset": "flagDefault",
+        "typographyPreset": "utilityLabel010",
+      },
+    },
+    "grid": Object {
+      "columnGutters": Object {
+        "lg": "space050",
+        "sm": "space040",
+        "xl": "space050",
+        "xs": "space040",
+      },
+      "columns": 12,
+      "containerMargin": Object {
+        "lg": "space050",
+        "sm": "space040",
+        "xl": "space050",
+        "xs": "space040",
+      },
+      "maxWidth": "1920px",
+      "rowGutters": Object {
+        "lg": "space050",
+        "sm": "space040",
+        "xl": "space050",
+        "xs": "space040",
+      },
+    },
+    "headline": Object {
+      "heading": Object {
+        "stylePreset": "inkContrast",
+      },
+      "kicker": Object {
+        "spaceInline": Object {
+          "lg": "space040",
+          "sm": "space030",
+          "xl": "space040",
+          "xs": "space030",
+        },
+        "stylePreset": "uppercaseInkBrand010",
+      },
+      "typographyPreset": Object {
+        "lg": "editorialHeadline070",
+        "sm": "editorialHeadline060",
+        "xl": "editorialHeadline080",
+        "xs": "editorialHeadline060",
+      },
+    },
+    "headlineH1": Object {
+      "stylePreset": "inkContrast",
+      "typographyPreset": Object {
+        "lg": "editorialHeadline070",
+        "xl": "editorialHeadline080",
+        "xs": "editorialHeadline050",
+      },
+    },
+    "headlineH2": Object {
+      "stylePreset": "inkContrast",
+      "typographyPreset": Object {
+        "md": "editorialHeadline040",
+        "xs": "editorialHeadline030",
+      },
+    },
+    "headlineH3": Object {
+      "stylePreset": "inkContrast",
+      "typographyPreset": Object {
+        "md": "editorialHeadline030",
+        "xs": "editorialHeadline020",
+      },
+    },
+    "headlineH4": Object {
+      "stylePreset": "inkContrast",
+      "typographyPreset": Object {
+        "md": "editorialHeadline020",
+        "xs": "editorialHeadline010",
+      },
+    },
+    "headlineH5": Object {
+      "stylePreset": "inkContrast",
+      "typographyPreset": "editorialSubheadline020",
+    },
+    "headlineH6": Object {
+      "stylePreset": "inkContrast",
+      "typographyPreset": "editorialSubheadline010",
+    },
+    "iconButton": Object {
+      "large": Object {
+        "height": "sizing090",
+        "loadingIndicator": Object {
+          "stylePreset": "indeterminateProgressIndicatorPrimary",
+        },
+        "spaceInset": "spaceInset040",
+        "stylePreset": "iconButtonDefault",
+        "width": "sizing090",
+      },
+      "medium": Object {
+        "height": "sizing080",
+        "loadingIndicator": Object {
+          "stylePreset": "indeterminateProgressIndicatorPrimary",
+        },
+        "spaceInset": "spaceInset030",
+        "stylePreset": "iconButtonDefault",
+        "width": "sizing080",
+      },
+      "small": Object {
+        "height": "sizing060",
+        "loadingIndicator": Object {
+          "stylePreset": "indeterminateProgressIndicatorPrimary",
+        },
+        "spaceInset": "spaceInset020",
+        "stylePreset": "iconButtonDefault",
+        "width": "sizing060",
+      },
+    },
+    "icons": Object {
+      "stylePreset": "iconDefault",
+    },
+    "image": Object {
+      "caption": Object {
+        "credit": Object {
+          "stylePreset": "uppercaseInkSubtle",
+          "typographyPreset": "utilityMeta010",
+        },
+        "spaceInset": Object {
+          "md": "spaceInset050",
+          "xs": "spaceInset040",
+        },
+        "spaceStack": "space040",
+        "stylePreset": "inkBase",
+        "typographyPreset": "editorialCaption010",
+      },
+      "stylePreset": "imageSharp",
+    },
+    "indeterminateProgressIndicator": Object {
+      "size": "iconSize020",
+      "stylePreset": "iconDefault",
+    },
+    "link": Object {
+      "externalIcon": Object {
+        "size": "iconSize010",
+      },
+      "spaceInline": "space010",
+      "stylePreset": "linkInline",
+    },
+    "linkStandalone": Object {
+      "stylePreset": "linkStandalone",
+      "typographyPreset": "utilityLabel020",
+    },
+    "orderedList": Object {
+      "content": Object {
+        "stylePreset": "inkBase",
+        "typographyPreset": "editorialParagraph010",
+      },
+      "counter": Object {
+        "minWidth": "sizing050",
+        "stylePreset": "inkBase",
+        "typographyPreset": "editorialParagraph010",
+      },
+      "spaceInline": "space040",
+    },
+    "paragraph": Object {
+      "dropCap": Object {
+        "space": "space010",
+        "stylePreset": "inkContrast",
+        "typographyPreset": Object {
+          "lg": "editorialDropCap030",
+          "md": "editorialDropCap020",
+          "xs": "editorialDropCap010",
+        },
+      },
+      "stylePreset": "inkBase",
+      "typographyPreset": "editorialParagraph020",
+    },
+    "shareBar": Object {
+      "items": Object {
+        "spaceInline": "space020",
+      },
+      "label": Object {
+        "spaceInline": "space040",
+        "stylePreset": "shareBarLabel",
+        "typographyPreset": "utilityLabel020",
+      },
+    },
+    "slider": Object {
+      "indicator": Object {
+        "stylePreset": "sliderIndicator",
+      },
+      "labels": Object {
+        "space": "space030",
+        "stylePreset": "sliderLabels",
+        "typographyPreset": "utilityLabel020",
+      },
+      "thumb": Object {
+        "size": "sizing060",
+        "stylePreset": "sliderThumb",
+      },
+      "thumbLabel": Object {
+        "space": "space060",
+        "stylePreset": "sliderThumbLabel",
+        "typographyPreset": "utilityLabel030",
+      },
+      "track": Object {
+        "size": "sizing030",
+        "stylePreset": "sliderTrack",
+      },
+    },
+    "standfirst": Object {
+      "styledText": Object {
+        "stylePreset": "inkBase",
+        "typographyPreset": Object {
+          "lg": "editorialSubheadline020",
+          "xs": "editorialSubheadline010",
+        },
+      },
+    },
+    "tab": Object {
+      "large": Object {
+        "iconSize": "iconSize030",
+        "minHeight": "sizing090",
+        "spaceInline": "space020",
+        "spaceInset": "spaceInsetSquish030",
+        "stylePreset": "tab",
+        "typographyPreset": "utilityLabel030",
+      },
+      "medium": Object {
+        "iconSize": "iconSize020",
+        "minHeight": "sizing080",
+        "spaceInline": "space020",
+        "spaceInset": "spaceInsetSquish030",
+        "stylePreset": "tab",
+        "typographyPreset": "utilityLabel020",
+      },
+      "small": Object {
+        "iconSize": "iconSize010",
+        "minHeight": "sizing060",
+        "spaceInline": "space020",
+        "spaceInset": "spaceInsetSquish020",
+        "stylePreset": "tab",
+        "typographyPreset": "utilityLabel010",
+      },
+    },
+    "tabGroup": Object {
+      "stylePreset": "tabGroup",
+      "tabBarIndicator": Object {
+        "motionDuration": "motionDuration030",
+        "motionTiming": "motionEaseInAndOut",
+        "stylePreset": "tabBarIndicator",
+        "weight": "borderWidth020",
+      },
+      "tabBarTrack": Object {
+        "stylePreset": "tabBarTrack",
+        "weight": "borderWidth020",
+      },
+    },
+    "tag": Object {
+      "large": Object {
+        "iconSize": "iconSize020",
+        "minHeight": "sizing070",
+        "spaceInline": "space010",
+        "spaceInset": "spaceInsetSquish020",
+        "stylePreset": "tagDefault",
+        "typographyPreset": "utilityLabel030",
+      },
+      "medium": Object {
+        "iconSize": "iconSize010",
+        "minHeight": "sizing060",
+        "spaceInline": "space010",
+        "spaceInset": "spaceInsetSquish020",
+        "stylePreset": "tagDefault",
+        "typographyPreset": "utilityLabel020",
+      },
+      "small": Object {
+        "iconSize": "iconSize010",
+        "minHeight": "sizing050",
+        "spaceInline": "space010",
+        "spaceInset": "spaceInsetSquish010",
+        "stylePreset": "tagDefault",
+        "typographyPreset": "utilityLabel010",
+      },
+    },
+    "textInput": Object {
+      "large": Object {
+        "assistiveText": Object {
+          "minHeight": "sizing030",
+          "stylePreset": "textInputAssistiveText",
+          "typographyPreset": "utilityLabel030",
+        },
+        "input": Object {
+          "iconSize": "iconSize030",
+          "iconSpace": "space030",
+          "minHeight": "sizing090",
+          "spaceInset": "spaceInset030",
+          "spaceInsetRight": "space080",
+          "spaceStack": "space020",
+          "stylePreset": "textInput",
+          "typographyPreset": "utilityBody030",
+        },
+        "label": Object {
+          "spaceInline": "space010",
+          "spaceStack": "space040",
+          "stylePreset": "inkContrast",
+          "typographyPreset": "utilityLabel030",
+        },
+      },
+      "medium": Object {
+        "assistiveText": Object {
+          "minHeight": "sizing030",
+          "stylePreset": "textInputAssistiveText",
+          "typographyPreset": "utilityLabel020",
+        },
+        "input": Object {
+          "iconSize": "iconSize020",
+          "iconSpace": "space030",
+          "minHeight": "sizing080",
+          "spaceInset": "spaceInset030",
+          "spaceInsetRight": "space070",
+          "spaceStack": "space020",
+          "stylePreset": "textInput",
+          "typographyPreset": "utilityBody020",
+        },
+        "label": Object {
+          "spaceInline": "space010",
+          "spaceStack": "space040",
+          "stylePreset": "inkContrast",
+          "typographyPreset": "utilityLabel030",
+        },
+      },
+      "small": Object {
+        "assistiveText": Object {
+          "minHeight": "sizing030",
+          "stylePreset": "textInputAssistiveText",
+          "typographyPreset": "utilityLabel020",
+        },
+        "input": Object {
+          "iconSize": "iconSize020",
+          "iconSpace": "space030",
+          "minHeight": "sizing060",
+          "spaceInset": "spaceInset020",
+          "spaceInsetRight": "space070",
+          "spaceStack": "space020",
+          "stylePreset": "textInput",
+          "typographyPreset": "utilityBody020",
+        },
+        "label": Object {
+          "spaceInline": "space010",
+          "spaceStack": "space040",
+          "stylePreset": "inkContrast",
+          "typographyPreset": "utilityLabel030",
+        },
+      },
+    },
+    "titleBar": Object {
+      "heading": Object {
+        "typographyPreset": Object {
+          "lg": "editorialHeadline080",
+          "md": "editorialHeadline070",
+          "xs": "editorialHeadline050",
+        },
+      },
+      "spaceInset": Object {
+        "lg": "spaceInsetSquish040",
+        "xs": "spaceInsetSquish030",
+      },
+      "stylePreset": "titleBar",
+    },
+    "unorderedList": Object {
+      "content": Object {
+        "stylePreset": "inkBase",
+        "typographyPreset": "editorialParagraph010",
+      },
+      "marker": Object {
+        "size": "iconSize005",
+        "spaceInline": "space020",
+        "stylePreset": "inkBase",
+      },
+      "spaceStack": "space040",
+    },
+    "volumeControl": Object {
+      "button": Object {
+        "iconSize": "iconSize020",
+        "size": "small",
+        "stylePreset": "volumeControlButtons",
+      },
+      "slider": Object {
+        "indicator": Object {
+          "stylePreset": "volumeControlIndicator",
+        },
+        "thumb": Object {
+          "stylePreset": "volumeControlThumb",
+        },
+        "track": Object {
+          "stylePreset": "volumeControlTrack",
+        },
+      },
+    },
+  },
+  "fonts": Object {
+    "fontFamily010": Object {
+      "cropAdjustments": Object {
+        "{{fonts.fontSize010}}": Object {
+          "bottom": -0.5,
+          "top": 1,
+        },
+        "{{fonts.fontSize020}}": Object {
+          "top": 1.2,
+        },
+        "{{fonts.fontSize070}}": Object {
+          "bottom": 1,
+          "top": 1,
+        },
+      },
+      "cropConfig": Object {
+        "bottom": 10,
+        "top": 8,
+      },
+      "fontFamily": "\\"Noto Sans\\", sans-serif",
+    },
+    "fontFamily020": Object {
+      "cropAdjustments": Object {
+        "{{fonts.fontSize010}}": Object {
+          "bottom": -0.5,
+          "top": 1,
+        },
+        "{{fonts.fontSize020}}": Object {
+          "top": 1.2,
+        },
+        "{{fonts.fontSize070}}": Object {
+          "bottom": 1,
+          "top": 1,
+        },
+      },
+      "cropConfig": Object {
+        "bottom": 10,
+        "top": 8,
+      },
+      "fontFamily": "\\"Source Serif Pro\\", serif",
+    },
+    "fontFamily030": Object {
+      "cropConfig": Object {
+        "bottom": 3,
+        "top": 3,
+      },
+      "fontFamily": "\\"Courier\\", monospace",
+    },
+    "fontLetterSpacing010": "-0.5px",
+    "fontLetterSpacing020": "-0.25px",
+    "fontLetterSpacing030": "0",
+    "fontLetterSpacing040": "0.25px",
+    "fontLetterSpacing050": "0.5px",
+    "fontLineHeight010": 1,
+    "fontLineHeight020": 1.125,
+    "fontLineHeight030": 1.25,
+    "fontLineHeight040": 1.5,
+    "fontLineHeight050": 1.75,
+    "fontLineHeight060": 2,
+    "fontSize010": "12px",
+    "fontSize020": "14px",
+    "fontSize030": "16px",
+    "fontSize040": "18px",
+    "fontSize050": "20px",
+    "fontSize060": "22px",
+    "fontSize070": "24px",
+    "fontSize080": "28px",
+    "fontSize090": "32px",
+    "fontSize100": "36px",
+    "fontSize110": "40px",
+    "fontSize120": "44px",
+    "fontSize130": "48px",
+    "fontSize140": "56px",
+    "fontSize150": "64px",
+    "fontSize160": "80px",
+    "fontWeight010": 300,
+    "fontWeight020": 400,
+    "fontWeight030": 500,
+    "fontWeight040": 600,
+    "fontWeight050": 700,
+  },
+  "icons": Object {},
+  "motions": Object {
+    "motionDuration010": "100ms",
+    "motionDuration020": "200ms",
+    "motionDuration030": "300ms",
+    "motionDuration040": "400ms",
+    "motionDuration050": "500ms",
+    "motionEaseIn": "cubic-bezier(.5, 0, 1, 1)",
+    "motionEaseInAndOut": "cubic-bezier(.5, 0, .5, 1)",
+    "motionEaseOut": "cubic-bezier(0, 0, .5, 1)",
+  },
+  "name": "newskit-dark",
+  "overlays": Object {
+    "overlayDark010": "rgba(10,10,10,0.20)",
+    "overlayDark020": "rgba(10,10,10,0.40)",
+    "overlayDark030": "rgba(10,10,10,0.60)",
+    "overlayDark040": "rgba(10,10,10,0.80)",
+    "overlayDarkGradient010": "linear-gradient(180deg, rgba(51, 51, 51, 0) 0%, #0A0A0A 100%)",
+    "overlayLight010": "rgba(255,255,255,0.20)",
+    "overlayLight020": "rgba(255,255,255,0.40)",
+    "overlayLight030": "rgba(255,255,255,0.60)",
+    "overlayLight040": "rgba(255,255,255,0.80)",
+    "overlayLightGradient010": "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%)",
+  },
+  "shadows": Object {
+    "shadow010": "0 0 1px 0 rgba(40,41,61,0.08), 0 0 2px 0 rgba(96,97,112,0.16)",
+    "shadow020": "0 0 1px 0 rgba(40,41,61,0.04), 0 2px 4px 0 rgba(96,97,112,0.16)",
+    "shadow030": "0 0 2px 0 rgba(40,41,61,0.04), 0 4px 8px 0 rgba(96,97,112,0.16)",
+    "shadow040": "0 2px 4px 0 rgba(40,41,61,0.04), 0 8px 16px 0 rgba(96,97,112,0.16)",
+    "shadow050": "0 2px 8px 0 rgba(40,41,61,0.04), 0 16px 24px 0 rgba(96,97,112,0.16)",
+    "shadow060": "0 2px 8px 0 rgba(40,41,61,0.08), 0 20px 32px 0 rgba(96,97,112,0.24)",
+  },
+  "sizing": Object {
+    "iconSize005": "{{sizing.sizing020}}",
+    "iconSize010": "{{sizing.sizing040}}",
+    "iconSize020": "{{sizing.sizing050}}",
+    "iconSize030": "{{sizing.sizing060}}",
+    "iconSize040": "{{sizing.sizing080}}",
+    "iconSize050": "{{sizing.sizing090}}",
+    "sizing000": "0",
+    "sizing010": "4px",
+    "sizing020": "8px",
+    "sizing030": "12px",
+    "sizing040": "16px",
+    "sizing045": "20px",
+    "sizing050": "24px",
+    "sizing060": "32px",
+    "sizing070": "40px",
+    "sizing080": "48px",
+    "sizing090": "64px",
+    "sizing100": "80px",
+    "sizing110": "120px",
+    "sizing120": "160px",
+  },
+  "spacePresets": Object {
+    "space000": "{{sizing.sizing000}}",
+    "space010": "{{sizing.sizing010}}",
+    "space020": "{{sizing.sizing020}}",
+    "space030": "{{sizing.sizing030}}",
+    "space040": "{{sizing.sizing040}}",
+    "space045": "{{sizing.sizing045}}",
+    "space050": "{{sizing.sizing050}}",
+    "space060": "{{sizing.sizing060}}",
+    "space070": "{{sizing.sizing070}}",
+    "space080": "{{sizing.sizing080}}",
+    "space090": "{{sizing.sizing090}}",
+    "space100": "{{sizing.sizing100}}",
+    "space110": "{{sizing.sizing110}}",
+    "space120": "{{sizing.sizing120}}",
+    "spaceInset000": "{{sizing.sizing000}}",
+    "spaceInset010": "{{sizing.sizing010}}",
+    "spaceInset020": "{{sizing.sizing020}}",
+    "spaceInset030": "{{sizing.sizing030}}",
+    "spaceInset040": "{{sizing.sizing040}}",
+    "spaceInset045": "{{sizing.sizing045}}",
+    "spaceInset050": "{{sizing.sizing050}}",
+    "spaceInset060": "{{sizing.sizing060}}",
+    "spaceInset070": "{{sizing.sizing080}}",
+    "spaceInsetSquish000": "{{sizing.sizing000}}",
+    "spaceInsetSquish010": "{{sizing.sizing010}} {{sizing.sizing020}}",
+    "spaceInsetSquish020": "{{sizing.sizing020}} {{sizing.sizing030}}",
+    "spaceInsetSquish030": "{{sizing.sizing030}} {{sizing.sizing040}}",
+    "spaceInsetSquish040": "{{sizing.sizing040}} {{sizing.sizing050}}",
+    "spaceInsetSquish050": "{{sizing.sizing050}} {{sizing.sizing060}}",
+    "spaceInsetSquish060": "{{sizing.sizing060}} {{sizing.sizing080}}",
+    "spaceInsetStretch000": "{{sizing.sizing000}}",
+    "spaceInsetStretch010": "{{sizing.sizing020}} {{sizing.sizing010}}",
+    "spaceInsetStretch020": "{{sizing.sizing030}} {{sizing.sizing020}}",
+    "spaceInsetStretch030": "{{sizing.sizing040}} {{sizing.sizing030}}",
+    "spaceInsetStretch040": "{{sizing.sizing050}} {{sizing.sizing040}}",
+    "spaceInsetStretch050": "{{sizing.sizing060}} {{sizing.sizing050}}",
+    "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
+  },
+  "stylePresets": Object {
+    "audioPlayerControlButton": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+      },
+    },
+    "audioPlayerPlayPauseButton": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactivePrimary030}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "audioPlayerPopoutButton": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+      },
+    },
+    "audioPlayerSeekBarBuffering": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+      },
+    },
+    "audioPlayerSeekBarIndicator": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactivePrimary030}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+      },
+    },
+    "audioPlayerSeekBarTrack": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+      },
+    },
+    "audioPlayerThumb": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.inkSubtle}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactivePrimary030}}",
+        "borderColor": "{{colors.interfaceBackground}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "boxShadow": "{{shadows.shadow010}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+    },
+    "audioPlayerVolumeControlThumb": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.inkSubtle}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactivePrimary030}}",
+        "borderColor": "{{colors.interfaceBackground}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "boxShadow": "{{shadows.shadow010}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+    },
+    "buttonDefault": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactivePrimary030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "buttonMinimalInverse": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+    },
+    "buttonMinimalNegative": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveNegative020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkNegative}}",
+        "iconColor": "{{colors.inkNegative}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveNegative010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveNegative020}}",
+      },
+    },
+    "buttonMinimalPositive": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePositive020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkPositive}}",
+        "iconColor": "{{colors.inkPositive}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePositive010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePositive020}}",
+      },
+    },
+    "buttonMinimalPrimary": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+      },
+    },
+    "buttonMinimalSecondary": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveSecondary010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+      },
+    },
+    "buttonOutlinedInverse": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderColor": "{{colors.interactiveInverse050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+        "borderColor": "{{colors.interactiveInverse040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedNegative": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveNegative020}}",
+        "borderColor": "{{colors.interactiveNegative050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveNegative030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkNegative}}",
+        "iconColor": "{{colors.inkNegative}}",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveNegative010}}",
+        "borderColor": "{{colors.interactiveNegative040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveNegative020}}",
+        "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedPositive": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePositive020}}",
+        "borderColor": "{{colors.interactivePositive050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactivePositive030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkPositive}}",
+        "iconColor": "{{colors.inkPositive}}",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePositive010}}",
+        "borderColor": "{{colors.interactivePositive040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePositive020}}",
+        "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedPrimary": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+        "borderColor": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactivePrimary030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "borderColor": "{{colors.interactivePrimary040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+        "borderStyle": "none",
+      },
+    },
+    "buttonOutlinedSecondary": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+        "borderColor": "{{colors.interactiveSecondary050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveSecondary010}}",
+        "borderColor": "{{colors.interactiveSecondary040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+        "borderStyle": "none",
+      },
+    },
+    "buttonSocialEmail": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveSecondary010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.transparent}}",
+      },
+    },
+    "buttonSocialFacebook": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveSecondary010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.transparent}}",
+      },
+    },
+    "buttonSocialLink": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveSecondary010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.transparent}}",
+      },
+    },
+    "buttonSocialShare": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveSecondary010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.transparent}}",
+      },
+    },
+    "buttonSocialTwitter": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveSecondary010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.transparent}}",
+      },
+    },
+    "buttonSocialWhatsapp": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveSecondary010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.transparent}}",
+      },
+    },
+    "buttonSolidInverse": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "buttonSolidNegative": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveNegative050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveNegative030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveNegative020}}",
+        "color": "{{colors.inkNegative}}",
+        "iconColor": "{{colors.inkNegative}}",
+      },
+    },
+    "buttonSolidPositive": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePositive050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactivePositive030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePositive020}}",
+        "color": "{{colors.inkPositive}}",
+        "iconColor": "{{colors.inkPositive}}",
+      },
+    },
+    "buttonSolidPrimary": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactivePrimary030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "buttonSolidSecondary": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveSecondary050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveSecondary040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "cardContainer": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+      },
+    },
+    "cardContainerActions": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+      },
+    },
+    "cardContainerMedia": Object {
+      "base": Object {
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interfaceSkeleton010}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+    },
+    "cardContainerTeaser": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
+    "cardContainerTeaserAndActions": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+      },
+    },
+    "dividerHorizontal": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface040}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidthDefault}}",
+      },
+    },
+    "dividerVertical": Object {
+      "base": Object {
+        "borderColor": "{{colors.interface040}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidthDefault}}",
+      },
+    },
+    "flagDefault": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagMinimal": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkInformative}}",
+        "iconColor": "{{colors.inkInformative}}",
+      },
+    },
+    "flagMinimalInverse": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagSolid": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagSolidInverse": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.inkInverse}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkInformative}}",
+        "iconColor": "{{colors.inkInformative}}",
+      },
+    },
+    "flagSolidLive": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveNegative030}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "flagSolidLiveInverse": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceNegative020}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "headlineHeadingInteractive": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "{{colors.inkBase}}",
+      },
+      "hover": Object {
+        "color": "{{colors.interactivePrimary040}}",
+        "textDecoration": "underline",
+      },
+    },
+    "headlineKickerInteractive": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+      },
+      "hover": Object {
+        "color": "{{colors.interactivePrimary040}}",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "{{colors.interactiveVisited010}}",
+      },
+    },
+    "iconButtonDefault": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactivePrimary030}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "iconButtonMinimalInverse": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+    },
+    "iconButtonMinimalNegative": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveNegative020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkNegative}}",
+        "iconColor": "{{colors.inkNegative}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveNegative010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveNegative020}}",
+      },
+    },
+    "iconButtonMinimalPositive": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePositive020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkPositive}}",
+        "iconColor": "{{colors.inkPositive}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePositive010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePositive020}}",
+      },
+    },
+    "iconButtonMinimalPrimary": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+      },
+    },
+    "iconButtonMinimalSecondary": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveSecondary010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+        "color": "{{colors.inkInverse}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.transparent}}",
+      },
+    },
+    "iconButtonOutlinedInverse": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderColor": "{{colors.interactiveInverse050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+        "borderColor": "{{colors.interactiveInverse040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "borderStyle": "none",
+      },
+    },
+    "iconButtonOutlinedNegative": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveNegative020}}",
+        "borderColor": "{{colors.interactiveNegative030}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveNegative030}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkNegative}}",
+        "iconColor": "{{colors.inkNegative}}",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveNegative010}}",
+        "borderColor": "{{colors.interactiveNegative050}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveNegative020}}",
+        "borderStyle": "none",
+      },
+    },
+    "iconButtonOutlinedPositive": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePositive020}}",
+        "borderColor": "{{colors.interactivePositive050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactivePositive030}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkPositive}}",
+        "iconColor": "{{colors.inkPositive}}",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePositive010}}",
+        "borderColor": "{{colors.interactivePositive040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePositive020}}",
+        "borderStyle": "none",
+      },
+    },
+    "iconButtonOutlinedPrimary": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+        "borderColor": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactivePrimary030}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "borderColor": "{{colors.interactivePrimary040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+        "borderStyle": "none",
+      },
+    },
+    "iconButtonOutlinedSecondary": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+        "borderColor": "{{colors.interactiveSecondary050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveSecondary010}}",
+        "borderColor": "{{colors.interactiveSecondary040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+        "borderStyle": "none",
+      },
+    },
+    "iconButtonSolidInverse": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveInverse030}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "iconButtonSolidNegative": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveNegative050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveNegative030}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveNegative040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveNegative020}}",
+        "color": "{{colors.inkNegative}}",
+        "iconColor": "{{colors.inkNegative}}",
+      },
+    },
+    "iconButtonSolidPositive": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePositive050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactivePositive030}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePositive040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePositive020}}",
+        "color": "{{colors.inkPositive}}",
+        "iconColor": "{{colors.inkPositive}}",
+      },
+    },
+    "iconButtonSolidPrimary": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactivePrimary030}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "iconButtonSolidSecondary": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveSecondary050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveSecondary040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "iconDefault": Object {
+      "base": Object {
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "iconNegative": Object {
+      "base": Object {
+        "iconColor": "{{colors.inkNegative}}",
+      },
+    },
+    "iconPositive": Object {
+      "base": Object {
+        "iconColor": "{{colors.inkPositive}}",
+      },
+    },
+    "iconSocialFacebook": Object {
+      "base": Object {
+        "iconColor": "{{colors.socialFacebook}}",
+      },
+    },
+    "iconSocialGitHub": Object {
+      "base": Object {
+        "iconColor": "{{colors.socialGithub}}",
+      },
+    },
+    "iconSocialInstagram": Object {
+      "base": Object {
+        "iconColor": "{{colors.socialInstagram}}",
+      },
+    },
+    "iconSocialReddit": Object {
+      "base": Object {
+        "iconColor": "{{colors.socialReddit}}",
+      },
+    },
+    "iconSocialTwitter": Object {
+      "base": Object {
+        "iconColor": "{{colors.socialTwitter}}",
+      },
+    },
+    "iconSocialWhatsApp": Object {
+      "base": Object {
+        "iconColor": "{{colors.socialWhatsapp}}",
+      },
+    },
+    "iconSocialYoutube": Object {
+      "base": Object {
+        "iconColor": "{{colors.socialYoutube}}",
+      },
+    },
+    "imageCircle": Object {
+      "base": Object {
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interfaceSkeleton010}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+    },
+    "imageDefault": Object {
+      "base": Object {
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interfaceSkeleton010}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+    },
+    "imageRoundedLarge": Object {
+      "base": Object {
+        "borderRadius": "{{borders.borderRadiusRounded050}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interfaceSkeleton010}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+    },
+    "imageRoundedMedium": Object {
+      "base": Object {
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interfaceSkeleton010}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+    },
+    "imageRoundedSmall": Object {
+      "base": Object {
+        "borderRadius": "{{borders.borderRadiusRounded010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interfaceSkeleton010}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+    },
+    "imageSharp": Object {
+      "base": Object {
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interfaceSkeleton010}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+    },
+    "indeterminateProgressIndicatorInverse": Object {
+      "base": Object {
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "indeterminateProgressIndicatorNegative": Object {
+      "base": Object {
+        "iconColor": "{{colors.inkNegative}}",
+      },
+    },
+    "indeterminateProgressIndicatorPositive": Object {
+      "base": Object {
+        "iconColor": "{{colors.inkPositive}}",
+      },
+    },
+    "indeterminateProgressIndicatorPrimary": Object {
+      "base": Object {
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "indeterminateProgressIndicatorSecondary": Object {
+      "base": Object {
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "inkBase": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "inkBrand010": Object {
+      "base": Object {
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "inkBrand020": Object {
+      "base": Object {
+        "color": "{{colors.inkBrand020}}",
+        "iconColor": "{{colors.inkBrand020}}",
+      },
+    },
+    "inkContrast": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+      },
+    },
+    "inkInverse": Object {
+      "base": Object {
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "inkNegative": Object {
+      "base": Object {
+        "color": "{{colors.inkNegative}}",
+        "iconColor": "{{colors.inkNegative}}",
+      },
+    },
+    "inkNonEssential": Object {
+      "base": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+    },
+    "inkPositive": Object {
+      "base": Object {
+        "color": "{{colors.inkPositive}}",
+        "iconColor": "{{colors.inkPositive}}",
+      },
+    },
+    "inkSubtle": Object {
+      "base": Object {
+        "color": "{{colors.inkSubtle}}",
+        "iconColor": "{{colors.inkSubtle}}",
+      },
+    },
+    "linkEmail": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.interactivePrimary050}}",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "{{colors.interactivePrimary040}}",
+        "iconColor": "{{colors.interactivePrimary040}}",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "{{colors.interactiveVisited010}}",
+        "iconColor": "{{colors.interactiveVisited010}}",
+      },
+    },
+    "linkEmailInverse": Object {
+      "active": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "{{colors.interactiveInverse040}}",
+        "iconColor": "{{colors.interactiveInverse040}}",
+      },
+    },
+    "linkExternal": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.interactivePrimary050}}",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "{{colors.interactivePrimary040}}",
+        "iconColor": "{{colors.interactivePrimary040}}",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "{{colors.interactiveVisited010}}",
+        "iconColor": "{{colors.interactiveVisited010}}",
+      },
+    },
+    "linkExternalInverse": Object {
+      "active": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "{{colors.interactiveInverse040}}",
+        "iconColor": "{{colors.interactiveInverse040}}",
+      },
+    },
+    "linkInline": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+      },
+      "hover": Object {
+        "color": "{{colors.interactivePrimary040}}",
+        "iconColor": "{{colors.interactivePrimary040}}",
+      },
+      "visited": Object {
+        "color": "{{colors.interactiveVisited010}}",
+        "iconColor": "{{colors.interactiveVisited010}}",
+      },
+    },
+    "linkInlineInverse": Object {
+      "active": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+      },
+      "base": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+      },
+      "hover": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+      },
+      "visited": Object {
+        "color": "{{colors.interactiveInverse040}}",
+        "iconColor": "{{colors.interactiveInverse040}}",
+      },
+    },
+    "linkStandalone": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.interactivePrimary050}}",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "{{colors.interactivePrimary040}}",
+        "iconColor": "{{colors.interactivePrimary040}}",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "{{colors.interactiveVisited010}}",
+        "iconColor": "{{colors.interactiveVisited010}}",
+      },
+    },
+    "linkStandaloneInverse": Object {
+      "active": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "{{colors.interactiveInverse030}}",
+        "iconColor": "{{colors.interactiveInverse030}}",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "{{colors.interactiveInverse040}}",
+        "iconColor": "{{colors.interactiveInverse040}}",
+      },
+    },
+    "sliderIndicator": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactivePrimary030}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interface040}}",
+      },
+    },
+    "sliderLabels": Object {
+      "base": Object {
+        "color": "{{colors.inkSubtle}}",
+        "iconColor": "{{colors.inkSubtle}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+    },
+    "sliderThumb": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.inkSubtle}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactivePrimary030}}",
+        "borderColor": "{{colors.interactivePrimary010}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "boxShadow": "{{shadows.shadow010}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interface040}}",
+        "borderColor": "none",
+        "borderStyle": "none",
+        "borderWidth": "none",
+        "boxShadow": "none",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary040}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+    },
+    "sliderThumbLabel": Object {
+      "base": Object {
+        "color": "{{colors.inkBrand010}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+      },
+    },
+    "sliderTrack": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveDisabled010}}",
+      },
+    },
+    "tab": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "selected": Object {
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "tabBarIndicator": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactivePrimary030}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.inkNonEssential}}",
+      },
+      "focus": Object {
+        "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.interactivePrimary030}}",
+      },
+    },
+    "tabBarTrack": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface040}}",
+      },
+    },
+    "tabGroup": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interface050}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth020}}",
+      },
+    },
+    "tagDefault": Object {
+      "active": Object {
+        "borderWidth": "{{borders.borderWidth010}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.interactiveSecondary040}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "tagPrimary": Object {
+      "active": Object {
+        "borderWidth": "{{borders.borderWidth010}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interactiveSecondary030}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveSecondary020}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.interactiveSecondary040}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+    },
+    "tagPrimaryInverse": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactiveInverse020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interface010}}",
+        "borderRadius": "{{borders.borderRadiusSharp}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactiveInverse010}}",
+      },
+      "selected": Object {
+        "backgroundColor": "{{colors.interactiveInverse030}}",
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+      },
+    },
+    "textInput": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderColor": "{{colors.interface040}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidthDefault}}",
+        "color": "{{colors.inkBase}}",
+        "placeholderColor": "{{colors.inkSubtle}}",
+        "textOverflow": "ellipsis",
+      },
+      "disabled": Object {
+        "borderColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+      },
+      "focus": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceBrand010}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
+      },
+      "invalid": Object {
+        "borderColor": "{{colors.interactiveNegative030}}",
+        "caretColor": "{{colors.inkNegative}}",
+      },
+      "valid": Object {
+        "borderColor": "{{colors.interactivePositive030}}",
+        "caretColor": "{{colors.inkPositive}}",
+      },
+    },
+    "textInputAssistiveText": Object {
+      "base": Object {
+        "color": "{{colors.inkSubtle}}",
+      },
+      "disabled": Object {
+        "color": "{{colors.inkNonEssential}}",
+      },
+      "invalid": Object {
+        "color": "{{colors.inkNegative}}",
+      },
+      "valid": Object {
+        "color": "{{colors.inkPositive}}",
+      },
+    },
+    "titleBar": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+      },
+    },
+    "titleBarButton": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePrimary050}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactivePrimary030}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
+        "iconColor": "{{colors.inkInverse}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.interactiveDisabled010}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary040}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "titleBarLink": Object {
+      "active": Object {
+        "color": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.interactivePrimary050}}",
+        "textDecoration": "underline",
+      },
+      "base": Object {
+        "color": "{{colors.interactivePrimary030}}",
+        "iconColor": "{{colors.interactivePrimary030}}",
+        "textDecoration": "none",
+      },
+      "hover": Object {
+        "color": "{{colors.interactivePrimary040}}",
+        "iconColor": "{{colors.interactivePrimary040}}",
+        "textDecoration": "underline",
+      },
+      "visited": Object {
+        "color": "{{colors.interactiveVisited010}}",
+        "iconColor": "{{colors.interactiveVisited010}}",
+      },
+    },
+    "uppercaseInkBase": Object {
+      "base": Object {
+        "color": "{{colors.inkBase}}",
+        "iconColor": "{{colors.inkBase}}",
+        "textTransform": "uppercase",
+      },
+    },
+    "uppercaseInkBrand010": Object {
+      "base": Object {
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+        "textTransform": "uppercase",
+      },
+    },
+    "uppercaseInkContrast": Object {
+      "base": Object {
+        "color": "{{colors.inkContrast}}",
+        "iconColor": "{{colors.inkContrast}}",
+        "textTransform": "uppercase",
+      },
+    },
+    "uppercaseInkNonEssential": Object {
+      "base": Object {
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+        "textTransform": "uppercase",
+      },
+    },
+    "uppercaseInkSubtle": Object {
+      "base": Object {
+        "color": "{{colors.inkSubtle}}",
+        "iconColor": "{{colors.inkSubtle}}",
+        "textTransform": "uppercase",
+      },
+    },
+    "volumeControlButtons": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "color": "{{colors.inkBrand010}}",
+        "iconColor": "{{colors.inkBrand010}}",
+      },
+      "disabled": Object {
+        "backgroundColor": "{{colors.transparent}}",
+        "color": "{{colors.inkNonEssential}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary010}}",
+      },
+      "loading": Object {
+        "backgroundColor": "{{colors.interactivePrimary020}}",
+      },
+    },
+    "volumeControlIndicator": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interactivePrimary030}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+      },
+    },
+    "volumeControlThumb": Object {
+      "active": Object {
+        "backgroundColor": "{{colors.interactivePrimary050}}",
+        "iconColor": "{{colors.inkSubtle}}",
+      },
+      "base": Object {
+        "backgroundColor": "{{colors.interactivePrimary030}}",
+        "borderColor": "{{colors.interactivePrimary010}}",
+        "borderRadius": "{{borders.borderRadiusCircle}}",
+        "borderStyle": "solid",
+        "borderWidth": "{{borders.borderWidth010}}",
+        "boxShadow": "{{shadows.shadow010}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+      "hover": Object {
+        "backgroundColor": "{{colors.interactivePrimary040}}",
+        "iconColor": "{{colors.inkNonEssential}}",
+      },
+    },
+    "volumeControlTrack": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface030}}",
+        "borderRadius": "{{borders.borderRadiusPill}}",
+      },
+    },
+  },
+  "themeVersion": 1,
+  "typographyPresets": Object {
+    "editorialCaption010": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize020}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "editorialDropCap010": Object {
+      "fontSize": "5.625em",
+      "lineHeight": 0.85,
+    },
+    "editorialDropCap020": Object {
+      "fontSize": "5.875em",
+      "lineHeight": 0.85,
+    },
+    "editorialDropCap030": Object {
+      "fontSize": "6em",
+      "lineHeight": 0.85,
+    },
+    "editorialHeadline010": Object {
+      "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+      "fontSize": "{{fonts.fontSize040}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "editorialHeadline020": Object {
+      "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+      "fontSize": "{{fonts.fontSize050}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "editorialHeadline030": Object {
+      "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+      "fontSize": "{{fonts.fontSize070}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "editorialHeadline040": Object {
+      "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+      "fontSize": "{{fonts.fontSize080}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "editorialHeadline050": Object {
+      "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+      "fontSize": "{{fonts.fontSize090}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "editorialHeadline060": Object {
+      "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+      "fontSize": "{{fonts.fontSize100}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "editorialHeadline070": Object {
+      "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+      "fontSize": "{{fonts.fontSize110}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "editorialHeadline080": Object {
+      "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+      "fontSize": "{{fonts.fontSize130}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "editorialParagraph010": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize020}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "editorialParagraph020": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "editorialParagraph030": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize040}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "editorialQuote010": Object {
+      "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+      "fontSize": "{{fonts.fontSize070}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "editorialQuote020": Object {
+      "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+      "fontSize": "{{fonts.fontSize090}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "editorialSubheadline010": Object {
+      "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+      "fontSize": "{{fonts.fontSize050}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "editorialSubheadline020": Object {
+      "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+      "fontSize": "{{fonts.fontSize070}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "editorialSubheadline030": Object {
+      "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+      "fontSize": "{{fonts.fontSize080}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "editorialSubheadline040": Object {
+      "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+      "fontSize": "{{fonts.fontSize090}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "editorialSubheadline050": Object {
+      "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+      "fontSize": "{{fonts.fontSize100}}",
+      "fontWeight": "{{fonts.fontWeight040}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilityBody010": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize020}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilityBody020": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilityBody030": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize040}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilityButton010": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize010}}",
+      "fontWeight": "{{fonts.fontWeight030}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilityButton020": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize020}}",
+      "fontWeight": "{{fonts.fontWeight030}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilityButton030": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize030}}",
+      "fontWeight": "{{fonts.fontWeight030}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilityHeading010": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize030}}",
+      "fontWeight": "{{fonts.fontWeight050}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilityHeading020": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize040}}",
+      "fontWeight": "{{fonts.fontWeight050}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilityHeading030": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize050}}",
+      "fontWeight": "{{fonts.fontWeight050}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilityHeading040": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize070}}",
+      "fontWeight": "{{fonts.fontWeight050}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilityHeading050": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize080}}",
+      "fontWeight": "{{fonts.fontWeight050}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilityLabel010": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize010}}",
+      "fontWeight": "{{fonts.fontWeight030}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilityLabel020": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize020}}",
+      "fontWeight": "{{fonts.fontWeight030}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilityLabel030": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize030}}",
+      "fontWeight": "{{fonts.fontWeight030}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilityMeta010": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize010}}",
+      "fontWeight": "{{fonts.fontWeight030}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing050}}",
+      "lineHeight": [Function],
+    },
+    "utilityMeta020": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize020}}",
+      "fontWeight": "{{fonts.fontWeight030}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilitySubheading010": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize020}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilitySubheading020": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize030}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilitySubheading030": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize040}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilitySubheading040": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize050}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+    "utilitySubheading050": Object {
+      "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+      "fontSize": "{{fonts.fontSize070}}",
+      "fontWeight": "{{fonts.fontWeight020}}",
+      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+      "lineHeight": [Function],
+    },
+  },
+}
+`;

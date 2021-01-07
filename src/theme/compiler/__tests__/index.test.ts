@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
-import {compileTheme} from '../compiler';
-import {createTheme} from '../creator';
+import {compileTheme} from '..';
+import {createTheme} from '../../creator';
 
 describe('compileTheme', () => {
   test('compiles flat sibling tokens', () => {

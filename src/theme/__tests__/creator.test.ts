@@ -17,5 +17,61 @@ describe('themeing functions', () => {
         `"createTheme received a compiled baseTheme. Base themes must be uncompiled."`,
       );
     });
+
+    describe('checkOverrides option', () => {
+      test('should warn when override has same value as base theme', () => {
+        const warningLogger = jest.fn();
+
+        createTheme({
+          checkOverrides: true,
+          warningLogger,
+          baseTheme: {
+            colors: {
+              red010: '#ff0000',
+              green010: '#00ff00',
+              blue010: '#0000ff',
+            },
+            stylePresets: {
+              myStylePreset: {
+                base: {
+                  color: '{{colors.red010}}',
+                  backgroundColor: '{{colors.blue010}}',
+                },
+              },
+            },
+          } as any,
+          overrides: {
+            colors: {
+              // Duplicates
+              red010: '#ff0000',
+              green010: '#00ff00',
+              // Value change
+              blue010: '#2222cc',
+              // New value
+              grey010: '#999999',
+            },
+            stylePresets: {
+              myStylePreset: {
+                base: {
+                  color: '{{colors.red010}}',
+                  backgroundColor: '{{colors.green010}}',
+                },
+              },
+            },
+          },
+        });
+
+        expect(warningLogger).toHaveBeenCalledTimes(3);
+        expect(warningLogger).toHaveBeenCalledWith(
+          "Override at path: 'colors.red010' has the same value as base theme: '#ff0000'.",
+        );
+        expect(warningLogger).toHaveBeenCalledWith(
+          "Override at path: 'colors.green010' has the same value as base theme: '#00ff00'.",
+        );
+        expect(warningLogger).toHaveBeenCalledWith(
+          "Override at path: 'stylePresets.myStylePreset.base.color' has the same value as base theme: '{{colors.red010}}'.",
+        );
+      });
+    });
   });
 });
