@@ -2,10 +2,10 @@ import * as React from 'react';
 import {MDXProvider} from '@mdx-js/react';
 import {
   Grid,
-  Cell,
   getSizingFromTheme,
   getColorFromTheme,
   getMediaQueryFromTheme,
+  Cell,
   styled,
 } from 'newskit';
 

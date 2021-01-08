@@ -4,5 +4,6 @@ export interface PageIntroductionProps {
   introduction: React.ReactNode;
   hero: {
     src: string;
+    alt: string;
   };
 }

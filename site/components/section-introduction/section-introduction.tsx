@@ -8,9 +8,10 @@ export const SectionIntroduction = ({
   title: string;
   introduction?: string;
 }) => (
-  <Cell xs={9} md={8} lg={6} mdOffset={1}>
+  <Cell xs={12} md={8} lg={6} mdOffset={1}>
     <Block spaceStack="space060">
       <TitleBar
+        headingAs="h2"
         overrides={{
           spaceInset: 'space000',
           heading: {

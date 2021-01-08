@@ -334,7 +334,7 @@
   {
     "title": "Utilities",
     "id": "/utils",
-      "subNav": [
+    "subNav": [
         {
           "title": "Emotion",
           "page": true,
@@ -355,17 +355,28 @@
           "page": true,
           "id": "/utils/get-defaults"
         }
-      ]
+    ]
   },
   {
     "title": "Help",
     "id": "/help",
-      "subNav": [
-        {
-          "title": "Contact Us",
-          "page": true,
-          "id": "/help/contact-us"
-        }
-      ]
+    "subNav": [
+      {
+        "title": "Contact Us",
+        "page": true,
+        "id": "/help/contact-us"
+      }
+    ]
+  },
+  {
+    "title": "About",
+    "id": "/about",
+    "subNav": [
+      {
+        "title": "Roadmap",
+        "page": true,
+        "id": "/about/roadmap"
+      }
+    ]
   }
 ]
