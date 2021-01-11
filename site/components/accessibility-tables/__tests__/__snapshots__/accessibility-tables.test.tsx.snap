@@ -1,0 +1,1433 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accessibility doesnt render tables if there is no data 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-2 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-2 {
+    padding: 0 8px;
+    margin-top: 16px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-2 {
+    padding: 0 inherit;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-2 {
+    padding: 0 12px;
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-2 {
+    padding: 0 12px;
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+.emotion-1 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-0 {
+    margin: -80px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-0 {
+    margin: -80px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-0 {
+    margin: -80px -12px 0 -12px;
+  }
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-0"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Accessibility renders aria interactions table if data is provided 1`] = `
+<DocumentFragment>
+  .emotion-18 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-18 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-18 {
+    padding: 0 8px;
+    margin-top: 16px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-18 {
+    padding: 0 inherit;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-18 {
+    padding: 0 12px;
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-18 {
+    padding: 0 12px;
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+.emotion-17 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-16 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-16 {
+    margin: -80px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-16 {
+    margin: -80px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-16 {
+    margin: -80px -12px 0 -12px;
+  }
+}
+
+.emotion-15 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-15 {
+    padding: 0 8px;
+    margin-top: 80px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-15 {
+    padding: 0 8px;
+    margin-top: 80px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-15 {
+    padding: 0 inherit;
+    margin-left: 8.333333333333334%;
+    margin-top: 80px;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-15 {
+    padding: 0 12px;
+    margin-top: 80px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-15 {
+    padding: 0 12px;
+    margin-top: 80px;
+    display: block;
+  }
+}
+
+.emotion-1 {
+  margin-bottom: 16px;
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  color: #0a0a0a;
+  font-family: "Source Serif Pro",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.25em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3125em;
+}
+
+.emotion-3 {
+  margin-bottom: 24px;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  color: #2e2e2e;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-14 {
+  overflow-x: auto;
+}
+
+.emotion-13 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  height: 40px;
+  text-align: left;
+  vertical-align: middle;
+  min-width: 64px;
+}
+
+.emotion-12 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-8 {
+  padding: 8px 8px 8px 0;
+}
+
+<div
+    class="emotion-18"
+  >
+    <div
+      class="emotion-17"
+    >
+      <div
+        class="emotion-16"
+      >
+        <div
+          class="emotion-15"
+        >
+          <div
+            class="emotion-1"
+          >
+            <p
+              class="emotion-0"
+            >
+              WAI-ARIA
+            </p>
+          </div>
+          <div
+            class="emotion-3"
+          >
+            <p
+              class="emotion-2"
+            >
+              Some random text
+            </p>
+          </div>
+          <div
+            class="emotion-14"
+          >
+            <table
+              class="emotion-13"
+            >
+              <thead>
+                <tr>
+                  <th
+                    class="emotion-4"
+                  >
+                    Category
+                  </th>
+                  <th
+                    class="emotion-4"
+                  >
+                    Attribute
+                  </th>
+                  <th
+                    class="emotion-4"
+                  >
+                    Value
+                  </th>
+                  <th
+                    class="emotion-4"
+                  >
+                    Description
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="emotion-12"
+                >
+                  <td
+                    class="emotion-8"
+                  >
+                    2
+                  </td>
+                  <td
+                    class="emotion-8"
+                  >
+                    description
+                  </td>
+                  <td
+                    class="emotion-8"
+                  >
+                    value
+                  </td>
+                  <td
+                    class="emotion-8"
+                  >
+                    description
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Accessibility renders focus order table with keyCombo if data is provided 1`] = `
+<DocumentFragment>
+  .emotion-21 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-21 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-21 {
+    padding: 0 8px;
+    margin-top: 16px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-21 {
+    padding: 0 inherit;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-21 {
+    padding: 0 12px;
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-21 {
+    padding: 0 12px;
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+.emotion-20 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-19 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-19 {
+    margin: -80px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-19 {
+    margin: -80px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-19 {
+    margin: -80px -12px 0 -12px;
+  }
+}
+
+.emotion-18 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-18 {
+    padding: 0 8px;
+    margin-top: 80px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-18 {
+    padding: 0 8px;
+    margin-top: 80px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-18 {
+    padding: 0 inherit;
+    margin-left: 8.333333333333334%;
+    margin-top: 80px;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-18 {
+    padding: 0 12px;
+    margin-top: 80px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-18 {
+    padding: 0 12px;
+    margin-top: 80px;
+    display: block;
+  }
+}
+
+.emotion-1 {
+  margin-bottom: 16px;
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  color: #0a0a0a;
+  font-family: "Source Serif Pro",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.25em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3125em;
+}
+
+.emotion-3 {
+  margin-bottom: 24px;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  color: #2e2e2e;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-17 {
+  overflow-x: auto;
+}
+
+.emotion-16 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  height: 40px;
+  text-align: left;
+  vertical-align: middle;
+  min-width: 64px;
+}
+
+.emotion-15 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-12 {
+  padding: 8px 8px 8px 0;
+}
+
+.emotion-11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 40px;
+  padding: 8px 12px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+}
+
+.emotion-10 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-7 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-7::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-7::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-21"
+  >
+    <div
+      class="emotion-20"
+    >
+      <div
+        class="emotion-19"
+      >
+        <div
+          class="emotion-18"
+        >
+          <div
+            class="emotion-1"
+          >
+            <p
+              class="emotion-0"
+            >
+              Focus order
+            </p>
+          </div>
+          <div
+            class="emotion-3"
+          >
+            <p
+              class="emotion-2"
+            >
+              Some random text here
+            </p>
+          </div>
+          <div
+            class="emotion-17"
+          >
+            <table
+              class="emotion-16"
+            >
+              <thead>
+                <tr>
+                  <th
+                    class="emotion-4"
+                  >
+                    Order
+                  </th>
+                  <th
+                    class="emotion-4"
+                  >
+                    Element
+                  </th>
+                  <th
+                    class="emotion-4"
+                  >
+                    Role
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="emotion-15"
+                >
+                  <td
+                    class="emotion-12"
+                  >
+                    <div
+                      class="emotion-11"
+                    >
+                      <div
+                        class="emotion-10"
+                        data-testid="flag"
+                      >
+                        <div
+                          class="emotion-9"
+                        >
+                          <div
+                            class="emotion-8"
+                          >
+                            <span
+                              class="emotion-7"
+                            >
+                              1
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="emotion-12"
+                  >
+                    element
+                  </td>
+                  <td
+                    class="emotion-12"
+                  >
+                    Role
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Accessibility renders keyboard interactions table with keyCombo if data is provided 1`] = `
+<DocumentFragment>
+  .emotion-24 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-24 {
+    padding: 0 8px;
+    margin-top: 16px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-24 {
+    padding: 0 8px;
+    margin-top: 16px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-24 {
+    padding: 0 inherit;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-24 {
+    padding: 0 12px;
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-24 {
+    padding: 0 12px;
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+.emotion-23 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-22 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen {
+  .emotion-22 {
+    margin: -80px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-22 {
+    margin: -80px -8px 0 -8px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-22 {
+    margin: -80px -12px 0 -12px;
+  }
+}
+
+.emotion-21 {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-21 {
+    padding: 0 8px;
+    margin-top: 80px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .emotion-21 {
+    padding: 0 8px;
+    margin-top: 80px;
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .emotion-21 {
+    padding: 0 inherit;
+    margin-left: 8.333333333333334%;
+    margin-top: 80px;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .emotion-21 {
+    padding: 0 12px;
+    margin-top: 80px;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+    display: block;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .emotion-21 {
+    padding: 0 12px;
+    margin-top: 80px;
+    display: block;
+  }
+}
+
+.emotion-1 {
+  margin-bottom: 16px;
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 1px 0;
+  color: #0a0a0a;
+  font-family: "Source Serif Pro",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-0 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-0::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.25em;
+}
+
+.emotion-0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3125em;
+}
+
+.emotion-3 {
+  margin-bottom: 24px;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 1px 0;
+  color: #2e2e2e;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555555555556;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2 svg {
+  fill: #2e2e2e;
+}
+
+.emotion-2::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4277777777777778em;
+}
+
+.emotion-2::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4902777777777778em;
+}
+
+.emotion-20 {
+  overflow-x: auto;
+}
+
+.emotion-19 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  height: 40px;
+  text-align: left;
+  vertical-align: middle;
+  min-width: 64px;
+}
+
+.emotion-18 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-16 {
+  padding: 8px 8px 8px 0;
+}
+
+.emotion-10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 40px;
+  padding: 8px 12px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+}
+
+.emotion-9 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-6 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-6::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-6::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
+}
+
+<div
+    class="emotion-24"
+  >
+    <div
+      class="emotion-23"
+    >
+      <div
+        class="emotion-22"
+      >
+        <div
+          class="emotion-21"
+        >
+          <div
+            class="emotion-1"
+          >
+            <p
+              class="emotion-0"
+            >
+              Keyboard Interactions
+            </p>
+          </div>
+          <div
+            class="emotion-3"
+          >
+            <p
+              class="emotion-2"
+            >
+              Some random text
+            </p>
+          </div>
+          <div
+            class="emotion-20"
+          >
+            <table
+              class="emotion-19"
+            >
+              <thead>
+                <tr>
+                  <th
+                    class="emotion-4"
+                  >
+                    Command
+                  </th>
+                  <th
+                    class="emotion-4"
+                  >
+                    Description
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="emotion-18"
+                >
+                  <td
+                    class="emotion-16"
+                  >
+                    <div
+                      class="emotion-10"
+                    >
+                      <div
+                        class="emotion-9"
+                        data-testid="flag"
+                      >
+                        <div
+                          class="emotion-8"
+                        >
+                          <div
+                            class="emotion-7"
+                          >
+                            <span
+                              class="emotion-6"
+                            >
+                              ctrl
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                     + 
+                    <div
+                      class="emotion-10"
+                    >
+                      <div
+                        class="emotion-9"
+                        data-testid="flag"
+                      >
+                        <div
+                          class="emotion-8"
+                        >
+                          <div
+                            class="emotion-7"
+                          >
+                            <span
+                              class="emotion-6"
+                            >
+                              esc
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="emotion-16"
+                  >
+                    description
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -162,16 +162,11 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
 
           <BodyWrapper>
             {path.endsWith('-new') ? (
-              <Grid lgMargin="sizing000" xsRowGutter="sizing000">
-                <Playground componentName={false} />
-                <ContentWrapper>
-                  <MDXProvider
-                    components={this.updatePropsForMarkdownElements()}
-                  >
-                    {children}
-                  </MDXProvider>
-                </ContentWrapper>
-              </Grid>
+              <ContentWrapper>
+                <MDXProvider components={this.updatePropsForMarkdownElements()}>
+                  {children}
+                </MDXProvider>
+              </ContentWrapper>
             ) : (
               <Grid>
                 <Cell xs={12} lg={10} lgOffset={1}>

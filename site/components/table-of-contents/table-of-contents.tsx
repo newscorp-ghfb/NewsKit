@@ -37,7 +37,7 @@ export const TableOfContents: React.FC = () => {
         <ContentsNavItem itemKey={2} href="#variations">
           Variations
         </ContentsNavItem>
-        <ContentsNavItem itemKey={3} href="#behaviours">
+        <ContentsNavItem itemKey={3} href="#behaviors">
           Behaviours
         </ContentsNavItem>
         <ContentsNavItem itemKey={4} href="#usage">

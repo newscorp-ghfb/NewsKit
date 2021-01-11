@@ -23,29 +23,36 @@ export const AccessibilityTables: React.FC<AccessibilityTablesProps> = ({
   aria,
   interaction,
 }) => {
-  const focusOrderWithKeyCombo = focusOrder.table.data.map(row => ({
-    ...row,
-    order: renderKeyCombo(row.order),
-  }));
-  const interactionsWithKeyCombo = interaction.table.data.map(row => ({
-    ...row,
-    command: renderKeyCombo(row.command),
-  }));
+  const focusOrderWithKeyCombo =
+    focusOrder &&
+    focusOrder.table.rows.map(row => ({
+      ...row,
+      order: renderKeyCombo(row.order),
+    }));
+  const interactionsWithKeyCombo =
+    interaction &&
+    interaction.table.rows.map(row => ({
+      ...row,
+      command: renderKeyCombo(row.command),
+    }));
 
-  const focusOrderTable = {
+  const focusOrderTable = focusOrder && {
     ...focusOrder,
-    table: {...focusOrder.table, data: focusOrderWithKeyCombo},
+    table: {...focusOrder.table, rows: focusOrderWithKeyCombo},
   };
-  const interactionTable = {
+  const interactionTable = interaction && {
     ...interaction,
-    table: {...interaction.table, data: interactionsWithKeyCombo},
+    table: interaction && {
+      ...interaction.table,
+      rows: interactionsWithKeyCombo,
+    },
   };
 
   return (
     <Cell xs={12}>
       <Grid xsRowGutter="space100" xsMargin="space000">
-        {focusOrder && <A11yTable {...focusOrderTable} />}
-        {interaction && <A11yTable {...interactionTable} />}
+        {focusOrderTable && <A11yTable {...focusOrderTable} />}
+        {interactionTable && <A11yTable {...interactionTable} />}
         {aria && <A11yTable {...aria} />}
       </Grid>
     </Cell>

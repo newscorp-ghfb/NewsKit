@@ -1,13 +1,11 @@
 import React from 'react';
 import {Block, TextBlock, TitleBar, Cell} from 'newskit';
+import {SectionIntroductionProps} from './types';
 
 export const SectionIntroduction = ({
   title,
   introduction,
-}: {
-  title: string;
-  introduction?: string;
-}) => (
+}: SectionIntroductionProps) => (
   <Cell xs={12} md={8} lg={6} mdOffset={1}>
     <Block spaceStack="space060">
       <TitleBar

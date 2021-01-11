@@ -6,9 +6,10 @@ import {
   css,
   getColorFromTheme,
   MQ,
+  getSSRId,
 } from 'newskit';
 import {LegacyBlock} from '../../legacy-block';
-import {KnobContainer, StyledTitle, getHash} from './common';
+import {KnobContainer, StyledTitle} from './common';
 
 export interface Overrides {
   typographyPreset?: MQ<string>;
@@ -112,36 +113,32 @@ export const MultiChoiceKnob: React.FC<MultiChoiceKnobProps> = ({
   options,
   onChange,
   value: selectedValue,
-}) => {
-  const hash = getHash();
+}) => (
+  <KnobContainer>
+    <LegacyBlock display="inline" position="relative">
+      <StyledFieldset>
+        <StyledLegend>{name}</StyledLegend>
+        {options.map(({value, label}) => {
+          const checked = setChecked(selectedValue, value);
 
-  return (
-    <KnobContainer>
-      <LegacyBlock display="inline" position="relative">
-        <StyledFieldset>
-          <StyledLegend>{name}</StyledLegend>
-          {options.map(({value, label}) => {
-            const checked = setChecked(selectedValue, value);
-
-            const id = `multichoice-knob-${hash}-${label}-${value}`;
-            return (
-              <React.Fragment key={id}>
-                <StyledInput
-                  type="radio"
-                  id={id}
-                  data-testid={value}
-                  name={hash + name}
-                  defaultChecked={checked}
-                  onClick={() => onChange && onChange(value)}
-                />
-                <StyledLabel htmlFor={id}>{label}</StyledLabel>
-              </React.Fragment>
-            );
-          })}
-        </StyledFieldset>
-      </LegacyBlock>
-    </KnobContainer>
-  );
-};
+          const id = `multichoice-knob-${getSSRId()}-${label}-${value}`;
+          return (
+            <React.Fragment key={id}>
+              <StyledInput
+                type="radio"
+                id={id}
+                data-testid={value}
+                name={getSSRId() + name}
+                defaultChecked={checked}
+                onClick={() => onChange && onChange(value)}
+              />
+              <StyledLabel htmlFor={id}>{label}</StyledLabel>
+            </React.Fragment>
+          );
+        })}
+      </StyledFieldset>
+    </LegacyBlock>
+  </KnobContainer>
+);
 
 export default MultiChoiceKnob;

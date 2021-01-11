@@ -1,0 +1,915 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` columm 1`] = `
+<DocumentFragment>
+  .emotion-13 {
+  overflow-x: auto;
+}
+
+.emotion-12 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  height: 40px;
+  text-align: left;
+  vertical-align: middle;
+  min-width: 64px;
+}
+
+.emotion-6 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2 {
+  padding: 8px 8px 8px 0;
+}
+
+.emotion-3 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #0a782a;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+.emotion-3.emotion-3 {
+  width: 24px;
+  height: 24px;
+}
+
+<div
+    class="emotion-13"
+  >
+    <table
+      class="emotion-12"
+    >
+      <thead>
+        <tr>
+          <th
+            class="emotion-0"
+          >
+            Column
+          </th>
+          <th
+            class="emotion-0"
+          >
+            Required
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="emotion-6"
+        >
+          <td
+            class="emotion-2"
+          >
+            column
+          </td>
+          <td
+            class="emotion-2"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-3 emotion-4"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+              />
+            </svg>
+          </td>
+        </tr>
+        <tr
+          class="emotion-6"
+        >
+          <td
+            class="emotion-2"
+          >
+            column
+          </td>
+          <td
+            class="emotion-2"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-3 emotion-4"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+              />
+            </svg>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Table renders with default styles 1`] = `
+<DocumentFragment>
+  .emotion-9 {
+  overflow-x: auto;
+}
+
+.emotion-8 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  height: 40px;
+  text-align: left;
+  vertical-align: middle;
+  min-width: 64px;
+}
+
+.emotion-4 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-2 {
+  padding: 8px 8px 8px 0;
+}
+
+<div
+    class="emotion-9"
+  >
+    <table
+      class="emotion-8"
+    >
+      <thead>
+        <tr>
+          <th
+            class="emotion-0"
+          >
+            Col
+          </th>
+          <th
+            class="emotion-0"
+          >
+            Column
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="emotion-4"
+        >
+          <td
+            class="emotion-2"
+          >
+            col
+          </td>
+          <td
+            class="emotion-2"
+          >
+            column
+          </td>
+        </tr>
+        <tr
+          class="emotion-4"
+        >
+          <td
+            class="emotion-2"
+          >
+            col
+          </td>
+          <td
+            class="emotion-2"
+          >
+            column
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Table wraps content with styledFlag if the column is either Name, Type or Default styles 1`] = `
+<DocumentFragment>
+  .emotion-42 {
+  overflow-x: auto;
+}
+
+.emotion-41 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  height: 40px;
+  text-align: left;
+  vertical-align: middle;
+  min-width: 64px;
+}
+
+.emotion-21 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-8 {
+  padding: 8px 8px 8px 0;
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  padding: 8px 12px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+}
+
+.emotion-6 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-3 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-42"
+  >
+    <table
+      class="emotion-41"
+    >
+      <thead>
+        <tr>
+          <th
+            class="emotion-0"
+          >
+            Name
+          </th>
+          <th
+            class="emotion-0"
+          >
+            Type
+          </th>
+          <th
+            class="emotion-0"
+          >
+            Default
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="emotion-21"
+        >
+          <td
+            class="emotion-8"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-6"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-5"
+                >
+                  <div
+                    class="emotion-4"
+                  >
+                    <span
+                      class="emotion-3"
+                    >
+                      name
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td
+            class="emotion-8"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-6"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-5"
+                >
+                  <div
+                    class="emotion-4"
+                  >
+                    <span
+                      class="emotion-3"
+                    >
+                      type
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td
+            class="emotion-8"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-6"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-5"
+                >
+                  <div
+                    class="emotion-4"
+                  >
+                    <span
+                      class="emotion-3"
+                    >
+                      default
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="emotion-21"
+        >
+          <td
+            class="emotion-8"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-6"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-5"
+                >
+                  <div
+                    class="emotion-4"
+                  >
+                    <span
+                      class="emotion-3"
+                    >
+                      name
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td
+            class="emotion-8"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-6"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-5"
+                >
+                  <div
+                    class="emotion-4"
+                  >
+                    <span
+                      class="emotion-3"
+                    >
+                      type
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td
+            class="emotion-8"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-6"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-5"
+                >
+                  <div
+                    class="emotion-4"
+                  >
+                    <span
+                      class="emotion-3"
+                    >
+                      default
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Table wraps content with styledFlag if the column is either Name, Type or Default styles 2`] = `
+<DocumentFragment>
+  .emotion-42 {
+  overflow-x: auto;
+}
+
+.emotion-41 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.emotion-0 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 500;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  height: 40px;
+  text-align: left;
+  vertical-align: middle;
+  min-width: 64px;
+}
+
+.emotion-21 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-8 {
+  padding: 8px 8px 8px 0;
+}
+
+.emotion-7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  padding: 8px 12px;
+  cursor: default;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
+}
+
+.emotion-6 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-3 {
+  font-family: "Noto Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-3::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: calc(-0.3642857142857143em + 1.2px);
+}
+
+.emotion-3::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4267857142857143em;
+}
+
+<div
+    class="emotion-42"
+  >
+    <table
+      class="emotion-41"
+    >
+      <thead>
+        <tr>
+          <th
+            class="emotion-0"
+          >
+            Name
+          </th>
+          <th
+            class="emotion-0"
+          >
+            Type
+          </th>
+          <th
+            class="emotion-0"
+          >
+            Default
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="emotion-21"
+        >
+          <td
+            class="emotion-8"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-6"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-5"
+                >
+                  <div
+                    class="emotion-4"
+                  >
+                    <span
+                      class="emotion-3"
+                    >
+                      name
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td
+            class="emotion-8"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-6"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-5"
+                >
+                  <div
+                    class="emotion-4"
+                  >
+                    <span
+                      class="emotion-3"
+                    >
+                      type
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td
+            class="emotion-8"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-6"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-5"
+                >
+                  <div
+                    class="emotion-4"
+                  >
+                    <span
+                      class="emotion-3"
+                    >
+                      default
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="emotion-21"
+        >
+          <td
+            class="emotion-8"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-6"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-5"
+                >
+                  <div
+                    class="emotion-4"
+                  >
+                    <span
+                      class="emotion-3"
+                    >
+                      name
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td
+            class="emotion-8"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-6"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-5"
+                >
+                  <div
+                    class="emotion-4"
+                  >
+                    <span
+                      class="emotion-3"
+                    >
+                      type
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td
+            class="emotion-8"
+          >
+            <div
+              class="emotion-7"
+            >
+              <div
+                class="emotion-6"
+                data-testid="flag"
+              >
+                <div
+                  class="emotion-5"
+                >
+                  <div
+                    class="emotion-4"
+                  >
+                    <span
+                      class="emotion-3"
+                    >
+                      default
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;

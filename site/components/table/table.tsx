@@ -9,7 +9,7 @@ import {
 } from './styled';
 import {TableProps} from './types';
 
-export const Table: React.FC<TableProps> = ({data, columns}) => {
+export const Table: React.FC<TableProps> = ({rows, columns}) => {
   const StyledFlag: React.FC = ({children}) => (
     <Flag
       overrides={{
@@ -36,7 +36,7 @@ export const Table: React.FC<TableProps> = ({data, columns}) => {
         columnName === 'Type' ||
         columnName === 'Default'
       ) {
-        cellContent = <StyledFlag>{cellContent}</StyledFlag>;
+        cellContent = cellContent && <StyledFlag>{cellContent}</StyledFlag>;
       }
       if (columnName === 'Required') {
         cellContent = (
@@ -54,7 +54,7 @@ export const Table: React.FC<TableProps> = ({data, columns}) => {
 
   const renderRows = () =>
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    data.map((row: any) => (
+    rows.map((row: any) => (
       <StyledTableRow key={getSSRId()}>{renderCols(row)}</StyledTableRow>
     ));
 

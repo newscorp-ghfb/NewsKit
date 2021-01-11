@@ -62,16 +62,18 @@ export const Meta = ({status, introduced, codeUrl, figmaUrl}: MetaProps) => (
                 <IconFilledGitHub />
                 View source code
               </Button>
-              <Button
-                overrides={{
-                  stylePreset: 'buttonOutlinedSecondary',
-                  minWidth: '176px',
-                }}
-                href={figmaUrl}
-              >
-                <IconFilledFigma />
-                View Design
-              </Button>
+              {figmaUrl && (
+                <Button
+                  overrides={{
+                    stylePreset: 'buttonOutlinedSecondary',
+                    minWidth: '176px',
+                  }}
+                  href={figmaUrl}
+                >
+                  <IconFilledFigma />
+                  View Design
+                </Button>
+              )}
             </Stack>
           </Stack>
         </Hidden>
@@ -116,15 +118,18 @@ export const Meta = ({status, introduced, codeUrl, figmaUrl}: MetaProps) => (
                 <IconFilledGitHub />
                 View source code
               </Button>
-              <Button
-                overrides={{
-                  stylePreset: 'buttonOutlinedSecondary',
-                  minWidth: '176px',
-                }}
-              >
-                <IconFilledFigma />
-                View Design
-              </Button>
+              {figmaUrl && (
+                <Button
+                  overrides={{
+                    stylePreset: 'buttonOutlinedSecondary',
+                    minWidth: '176px',
+                  }}
+                  href={figmaUrl}
+                >
+                  <IconFilledFigma />
+                  View Design
+                </Button>
+              )}
             </Stack>
           </Stack>
         </Hidden>

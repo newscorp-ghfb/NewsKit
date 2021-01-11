@@ -4,8 +4,9 @@ import {
   getTypographyPresetFromTheme,
   getSizingFromTheme,
   getColorFromTheme,
+  getSSRId,
 } from 'newskit';
-import {KnobContainer, getHash} from './common';
+import {KnobContainer} from './common';
 
 type Value = string | number;
 export interface InputKnobProps {
@@ -62,7 +63,7 @@ export const InputKnob: React.FC<InputKnobProps> = ({
   value,
   onChange = () => {},
 }) => {
-  const id = `${getHash()}-${label}`;
+  const id = `${getSSRId()}-${label}`;
   const lowercaseLabel = label.toLowerCase().replace(' ', '-');
   const LabelForInput = labelVisible ? (
     <StyledLabel htmlFor={id}>{label}</StyledLabel>

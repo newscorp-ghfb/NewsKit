@@ -58,7 +58,7 @@ export default (layoutProps: LayoutProps) => (
     props={{
       summary: `Buttons have a number of props to facilitate a variety of uses:`,
       columns: ['Name', 'Type', 'Default', 'Description', 'Required'],
-      props: [
+      rows: [
         {
           name: 'children',
           type: 'string',
@@ -90,7 +90,7 @@ export default (layoutProps: LayoutProps) => (
       summary:
         'If provided, overrides the respective presets for the component and provided elements. Here are the overrides that the Button accepts:',
       columns: ['Name', 'Type', 'Description'],
-      props: [
+      rows: [
         {
           name: 'spaceInset',
           type: 'MQ<string>',
@@ -352,7 +352,7 @@ export default (layoutProps: LayoutProps) => (
         },
       ],
     }}
-    behaviours={{
+    behaviors={{
       introduction:
         'The three main variations of button must include at least one element (either text or icon) and have some optional elements which allow for interface customisation.',
       cards: [
@@ -440,7 +440,7 @@ export default (layoutProps: LayoutProps) => (
         description: 'Some random text here',
         table: {
           columns: ['Order', 'Element', 'Role'],
-          data: [
+          rows: [
             {
               order: ['1'],
               element: 'element',
@@ -482,7 +482,7 @@ export default (layoutProps: LayoutProps) => (
         description: 'Some random text',
         table: {
           columns: ['Command', 'Description'],
-          data: [
+          rows: [
             {
               command: ['ctrl', 'esc'],
               description: 'description',
@@ -523,7 +523,7 @@ export default (layoutProps: LayoutProps) => (
         description: 'Some random text',
         table: {
           columns: ['Category', 'Attribute', 'Value', 'Description'],
-          data: [
+          rows: [
             {
               category: '2',
               attribute: 'description',
@@ -569,6 +569,10 @@ export default (layoutProps: LayoutProps) => (
           ],
         },
       },
+    }}
+    seo={{
+      title: 'SEO Considerations',
+      introduction: 'Seo text',
     }}
   />
 );

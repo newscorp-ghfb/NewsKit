@@ -55,18 +55,21 @@ const CrossIcon = () => (
   </Flag>
 );
 
-export const UsageCard = ({
-  card,
-  overrides = {},
-}: {
-  card: UsageCardProps;
-  overrides: {};
-}) => (
+export const UsageCard = ({card}: {card: UsageCardProps}) => (
   <RelativeBlock>
     <AbsoluteBlock>
       {card.allowed ? <CheckIcon /> : <CrossIcon />}
     </AbsoluteBlock>
-    <Card media={card.media} overrides={overrides}>
+    <Card
+      media={card.media}
+      overrides={{
+        mediaContainer: {
+          stylePreset: card.allowed
+            ? 'positiveMediaContainer'
+            : 'negativeMediaContainer',
+        },
+      }}
+    >
       <Block spaceStack="space040">
         <Headline
           overrides={{
@@ -96,18 +99,7 @@ export const Usage: React.FC<UsageProps> = ({cards}) => (
     <Grid xsMargin="space000">
       {cards.map(card => (
         <Cell xs={6}>
-          <UsageCard
-            overrides={{
-              mediaContainer: {
-                stylePreset: card.allowed
-                  ? 'positiveMediaContainer'
-                  : 'negativeMediaContainer',
-                spaceStack: 'space040',
-              },
-              spaceStack: 'space070',
-            }}
-            card={card}
-          />
+          <UsageCard card={card} />
         </Cell>
       ))}
     </Grid>

@@ -17,6 +17,3 @@ export const StyledTitle = styled.span`
   ${getTypographyPresetFromTheme('utilityLabel030')};
   color: ${getColorFromTheme('inkBase')};
 `;
-
-export const getHash = () =>
-  (Math.random() * 10 ** 10).toString(16).split('.')[0];

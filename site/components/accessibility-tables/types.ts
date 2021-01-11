@@ -1,26 +1,26 @@
 export interface AccessibilityTablesProps {
-  focusOrder: {
+  focusOrder?: {
     name: string;
     description: string;
     table: {
       columns: string[];
-      data: FocusOrderProps[];
+      rows: FocusOrderProps[];
     };
   };
-  aria: {
+  aria?: {
     name: string;
     description: string;
     table: {
       columns: string[];
-      data: AriaProps[];
+      rows: AriaProps[];
     };
   };
-  interaction: {
+  interaction?: {
     name: string;
     description: string;
     table: {
       columns: string[];
-      data: InteractionProps[];
+      rows: InteractionProps[];
     };
   };
 }
