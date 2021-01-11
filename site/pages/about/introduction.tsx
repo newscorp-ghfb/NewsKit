@@ -201,7 +201,7 @@ export default (layoutProps: LayoutProps) => (
         introduction="NewsKit design system and the NewsKit team is guided by a set of principles."
       />
       <Cell xs={12} md={10} lg={8} mdOffset={1}>
-        <Grid xsMargin="space000">
+        <Grid xsMargin="space020">
           <Stack spaceInline="space100">{cardContents.map(Card)}</Stack>
         </Grid>
       </Cell>
