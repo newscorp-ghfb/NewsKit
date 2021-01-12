@@ -10,8 +10,9 @@ export interface MediaListProps {
 
 export interface MediaItem {
   title: string;
+  subtitle?: string;
   description: string;
-  media: {
+  media?: {
     src: string;
     alt: string;
   };

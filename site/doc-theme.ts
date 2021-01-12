@@ -235,7 +235,7 @@ const stylePresets = {
     },
   },
 
-  // // Card
+  // Card
   cardContainerMedia: {
     base: {
       borderRadius: '{{borders.borderRadiusDefault}}',
@@ -244,6 +244,13 @@ const stylePresets = {
   cardContainerMediaInteractive: {
     base: {
       borderRadius: '{{borders.borderRadiusRounded040}}',
+    },
+  },
+  testCard: {
+    base: {
+      borderRadius: '{{borders.borderRadiusRounded040}}',
+      borderColor: '{{colors.inkBrand020}}',
+      backgroundColor: '{{colors.inkLogo}}',
     },
   },
 };
