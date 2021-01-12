@@ -198,7 +198,7 @@ export default (layoutProps: LayoutProps) => (
         introduction="NewsKit design system and the NewsKit team is guided by a set of principles."
       />
       <SectionIntroduction
-        title="smt"
+        title="Introduction"
         introduction={<IntroductionComponent />}
       />
       <Cell xs={12} md={10} lg={8} mdOffset={1}>
