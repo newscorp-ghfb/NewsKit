@@ -1,14 +1,6 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
-import {
-  Link,
-  Cell,
-  Block,
-  styled,
-  Divider,
-  getSpacingFromTheme,
-  Grid,
-} from 'newskit';
+import {Link, Cell, Block, Grid} from 'newskit';
 import {InfoNotice} from '../info-notice';
 import {ContactUs} from '../contact-us';
 import {AccessibilityTables} from '../accessibility-tables';
@@ -25,19 +17,8 @@ import {ComponentPageTemplateProps} from './types';
 import {SectionIntroduction} from '../section-introduction';
 import {Table} from '../table';
 import {PageIntroduction} from '../page-introduction/page-introduction';
+import {Separator} from '../separator';
 
-const StyledBlock = styled(Block)`
-  margin-top: ${getSpacingFromTheme('space110')};
-  margin-bottom: ${getSpacingFromTheme('space110')};
-`;
-
-const Separator = () => (
-  <Cell xs={12} md={10} lg={8} mdOffset={1}>
-    <StyledBlock>
-      <Divider />
-    </StyledBlock>
-  </Cell>
-);
 const renderSections = ({
   componentDefaultsKey,
   pageIntroduction,
@@ -87,7 +68,9 @@ const renderSections = ({
             </Grid>
           </section>
         </Cell>
-        <Separator />
+        <Cell xs={12} md={10} lg={8} mdOffset={1}>
+          <Separator />
+        </Cell>
       </>
     )}
 
@@ -104,7 +87,9 @@ const renderSections = ({
             </Grid>
           </section>
         </Cell>
-        <Separator />
+        <Cell xs={12} md={10} lg={8} mdOffset={1}>
+          <Separator />
+        </Cell>
       </>
     )}
     {behaviors && (
@@ -120,7 +105,9 @@ const renderSections = ({
             </Grid>
           </section>
         </Cell>
-        <Separator />
+        <Cell xs={12} md={10} lg={8} mdOffset={1}>
+          <Separator />
+        </Cell>
       </>
     )}
     {usage && (
@@ -136,7 +123,9 @@ const renderSections = ({
             </Grid>
           </section>
         </Cell>
-        <Separator />
+        <Cell xs={12} md={10} lg={8} mdOffset={1}>
+          <Separator />
+        </Cell>
       </>
     )}
 
@@ -153,7 +142,9 @@ const renderSections = ({
             </Grid>
           </section>
         </Cell>
-        <Separator />
+        <Cell xs={12} md={10} lg={8} mdOffset={1}>
+          <Separator />
+        </Cell>
       </>
     )}
     {seo && (
@@ -165,7 +156,9 @@ const renderSections = ({
             </Grid>
           </section>
         </Cell>
-        <Separator />
+        <Cell xs={12} md={10} lg={8} mdOffset={1}>
+          <Separator />
+        </Cell>
       </>
     )}
     {(props || overrides) && (
@@ -181,7 +174,11 @@ const renderSections = ({
                 <Cell xs={12} md={10} lg={8} mdOffset={1}>
                   <Table rows={props.rows} columns={props.columns} />
                 </Cell>
-                <Separator />
+                <Cell xs={12} md={10} lg={8} mdOffset={1}>
+                  <Cell xs={12} md={10} lg={8} mdOffset={1}>
+                    <Separator />
+                  </Cell>
+                </Cell>
               </>
             )}
             {overrides && (
@@ -207,7 +204,9 @@ const renderSections = ({
         <Link href="/theming/component-defaults">here</Link>.
       </InfoNotice>
     </Cell>
-    <Separator />
+    <Cell xs={12} md={10} lg={8} mdOffset={1}>
+      <Separator />
+    </Cell>
     {compliance && (
       <>
         <SectionIntroduction
@@ -215,7 +214,9 @@ const renderSections = ({
           introduction="All of the components in the NewsKit design system go through a comprehensive set of checks to ensure that we are producing compliant and best practice components."
         />
         <Compliance {...compliance} />
-        <Separator />
+        <Cell xs={12} md={10} lg={8} mdOffset={1}>
+          <Separator />
+        </Cell>
       </>
     )}
     {related && (
