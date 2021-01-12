@@ -10,14 +10,11 @@ import {
   TextBlock,
   Image,
   Stack,
+  Paragraph,
 } from 'newskit';
 import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
 import {SectionIntroduction} from '../../components/section-introduction';
-
-const NewLineTextBlock = styled(TextBlock)`
-  white-space: pre-wrap;
-`;
 
 const StyledDivider = styled(Divider)`
   margin-bottom: ${getSpacingFromTheme('space080')};
@@ -148,6 +145,40 @@ const Card = ({img, title, subtitle, content}: Card) => (
   </Grid>
 );
 
+const IntroductionComponent = () => (
+  <>
+    <Paragraph>
+      The design system aims to improve the consistency and quality of digital
+      products and experiences, enabling the design and development process to
+      be more efficient and focused, establishing a common language between
+      designer and engineer, and providing clear, considered guidance around
+      design and engineering best practices.
+    </Paragraph>
+    <br />
+    <Paragraph>
+      NewsKit currently serves a wide range of designers and developers at News
+      UK building digital products and experiences with a view to becoming
+      publicly open source in the future.
+    </Paragraph>
+    <br />
+    <Paragraph>
+      It is maintained by a core centralised team at News UK with contributions
+      from other product teams to evolve and improve NewsKit.
+    </Paragraph>
+    <br />
+    <Paragraph>
+      The UI library is built using{' '}
+      <Link href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2349139141/Designing+with+NewsKit+-+Web+Documentation">
+        Figma for design
+      </Link>{' '}
+      and{' '}
+      <Link href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2348942613/Engineering+with+NewsKit+-+Web+Documentation">
+        React for the codebase.
+      </Link>
+    </Paragraph>
+  </>
+);
+
 export default (layoutProps: LayoutProps) => (
   //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
   <Layout {...layoutProps} path={`${layoutProps.path}-new`}>
@@ -159,46 +190,16 @@ export default (layoutProps: LayoutProps) => (
       build better products faster."
         hero={{src: '/static/roadmap-hero.svg', alt: 'introduction-hero-image'}}
       />
-      <Cell xs={12} md={10} lg={6} mdOffset={1}>
-        <Block spaceStack="space080">
-          <NewLineTextBlock
-            stylePreset="inkBase"
-            typographyPreset="editorialParagraph030"
-          >
-            The design system aims to improve the consistency and quality of
-            digital products and experiences, enabling the design and
-            development process to be more efficient and focused, establishing a
-            common language between designer and engineer, and providing clear,
-            considered guidance around design and engineering best practices.
-            <br />
-            {'\n'}
-            NewsKit currently serves a wide range of designers and developers at
-            News UK building digital products and experiences with a view to
-            becoming publicly open source in the future.
-            <br />
-            {'\n'}
-            It is maintained by a core centralised team at News UK with
-            contributions from other product teams to evolve and improve
-            NewsKit.
-            <br />
-            {'\n'}
-            The UI library is built using{' '}
-            <Link href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2349139141/Designing+with+NewsKit+-+Web+Documentation">
-              Figma for design
-            </Link>{' '}
-            and{' '}
-            <Link href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2348942613/Engineering+with+NewsKit+-+Web+Documentation">
-              React for the codebase.
-            </Link>
-          </NewLineTextBlock>
-        </Block>
-      </Cell>
       <Cell xs={12} md={10} lg={8} mdOffset={1}>
         <StyledDivider />
       </Cell>
       <SectionIntroduction
         title="Principles"
         introduction="NewsKit design system and the NewsKit team is guided by a set of principles."
+      />
+      <SectionIntroduction
+        title="smt"
+        introduction={<IntroductionComponent />}
       />
       <Cell xs={12} md={10} lg={8} mdOffset={1}>
         <Grid xsMargin="space020">

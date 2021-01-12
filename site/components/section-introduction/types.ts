@@ -1,4 +1,4 @@
 export interface SectionIntroductionProps {
   title: string;
-  introduction?: string;
+  introduction?: string | React.ReactElement;
 }
