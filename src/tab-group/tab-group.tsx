@@ -1,15 +1,17 @@
 import React, {useState} from 'react';
-import {TabGroupProps, TabPaneProps} from './types';
+import {TabGroupProps, TabPaneProps, TabsDistribution} from './types';
 import {
-  StyledOuterTabGroup,
+  StyledtabBar,
   StyledInnerTabGroup,
   StyledTabBarTrack,
   StyledTabBarIndicator,
+  StyledTabGroup,
+  StyledDistributionWrapper,
 } from './styled';
-import {Flow, Stack} from '../stack';
+import {Flow} from '../stack';
 import {Divider} from '../divider';
 import {AlignSelfValues, StackChild} from '../stack-child';
-import {Tab, TabSize} from '../tab';
+import {TabSize, Tab} from '../tab';
 import {useTheme} from '../theme';
 import {
   getTabBarIndicatorStyle,
@@ -17,6 +19,8 @@ import {
   KEYBOARD_ACTION,
   parseKeyDown,
   preventDefault,
+  getFirstParentElementWithRole,
+  getDescendantOnlyFromFirstChild,
 } from './utils';
 
 export const TabGroup: React.FC<TabGroupProps> = ({
@@ -26,6 +30,7 @@ export const TabGroup: React.FC<TabGroupProps> = ({
   divider,
   tabPanes,
   vertical = false,
+  distribution,
 }) => {
   const theme = useTheme();
   // The id of the active tab - this is what we change on click to trigger a visual tab change
@@ -61,52 +66,53 @@ export const TabGroup: React.FC<TabGroupProps> = ({
     }
   }, [currentActiveTabRef, tabBarIndicatorLengthOverride, theme, vertical]);
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const handleKeyDown = (event: any) => {
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {
     // WAI-ARIA 1.1
     // https://www.w3.org/TR/wai-aria-practices-1.1/#tabpanel
     // We use directional keys to iterate focus through Tabs.
 
     // Find all tabs eligible for focus
     const availableTabs: HTMLButtonElement[] = [];
-    [...event.target.parentNode.parentNode.childNodes].forEach(node => {
-      [...node.childNodes].forEach((innerNode: HTMLButtonElement) => {
-        if (!innerNode.disabled && innerNode.getAttribute('role') === 'tab') {
-          availableTabs.push(innerNode);
-        }
-      });
+
+    const tabListElement = getFirstParentElementWithRole(
+      event.currentTarget,
+      'tablist',
+    );
+
+    tabListElement.childNodes.forEach(innerNode => {
+      const element = getDescendantOnlyFromFirstChild(
+        innerNode,
+        'tab',
+      ) as HTMLButtonElement;
+
+      if (element && !element.disabled) {
+        availableTabs.push(element);
+      }
     });
 
-    // Exit early if there are no other tabs available
-    if (availableTabs.length === 1) return;
+    // // Exit early if there are no other tabs available
+    if (availableTabs.length <= 1) return;
 
     // Find tab to focus, looping to start/end of list if necessary
-    const currentTabIndex = availableTabs.indexOf(event.target);
+    const currentTabIndex = availableTabs.indexOf(event.currentTarget);
     const action = parseKeyDown(event);
-    if (action) {
-      let nextTab;
-      /* istanbul ignore else */
-      if (action === KEYBOARD_ACTION.previous) {
-        if (availableTabs[currentTabIndex - 1]) {
-          nextTab = availableTabs[currentTabIndex - 1];
-        } else {
-          nextTab = availableTabs[availableTabs.length - 1];
-        }
-      } else if (action === KEYBOARD_ACTION.next) {
-        if (availableTabs[currentTabIndex + 1]) {
-          nextTab = availableTabs[currentTabIndex + 1];
-        } else {
-          const [firstTab] = availableTabs;
-          nextTab = firstTab;
-        }
-      }
-      /* istanbul ignore else */
-      if (nextTab) {
-        // Focus the tab
-        nextTab.focus();
-        nextTab.click();
-      }
+
+    if (!action) return;
+
+    let nextTab;
+    /* istanbul ignore else */
+    if (action === KEYBOARD_ACTION.previous) {
+      nextTab =
+        availableTabs[currentTabIndex - 1] ||
+        availableTabs[availableTabs.length - 1];
+    } else if (action === KEYBOARD_ACTION.next) {
+      nextTab = availableTabs[currentTabIndex + 1] || availableTabs[0];
+    } else {
+      return;
     }
+    // Focus the tab
+    nextTab.focus();
+    nextTab.click();
   };
 
   const tabContent =
@@ -117,12 +123,12 @@ export const TabGroup: React.FC<TabGroupProps> = ({
     );
 
   return (
-    <Stack
-      flow={vertical ? Flow.HorizontalTop : Flow.VerticalLeft}
-      spaceInline="space020"
-      wrap="wrap"
+    <StyledTabGroup
+      vertical={vertical}
+      overrides={overrides}
+      data-testid="tab-group"
     >
-      <StyledOuterTabGroup data-testid="tab-group">
+      <StyledtabBar overrides={overrides} data-testid="tab-bar">
         <StyledInnerTabGroup
           overrides={overrides}
           flow={vertical ? Flow.VerticalLeft : Flow.HorizontalCenter}
@@ -133,21 +139,30 @@ export const TabGroup: React.FC<TabGroupProps> = ({
             (acc, child, index, array) => {
               const key = child.props.tabKey;
               const isActive = key === activeTab;
+
               acc.push(
-                <Tab
-                  {...child.props}
-                  key={key}
-                  selected={isActive}
-                  size={size}
-                  onKeyDown={handleKeyDown}
-                  onClick={() => setActiveTab(key)}
-                  onMouseDown={preventDefault}
-                  ref={isActive ? activeTabRef : undefined}
-                  overrides={{
-                    ...child.props.overrides,
-                    width: vertical ? '100%' : undefined,
-                  }}
-                />,
+                <StyledDistributionWrapper
+                  distribution={distribution || TabsDistribution.LeftStacked}
+                  numberOfSiblings={array.length}
+                  data-testid="distribution-wrapper"
+                  vertical={vertical}
+                >
+                  <Tab
+                    {...child.props}
+                    key={key}
+                    selected={isActive}
+                    size={size}
+                    onKeyDown={handleKeyDown}
+                    onClick={() => setActiveTab(key)}
+                    onMouseDown={preventDefault}
+                    ref={isActive ? activeTabRef : undefined}
+                    overrides={{
+                      ...child.props.overrides,
+                      width: '100%',
+                      height: vertical ? '100%' : '',
+                    }}
+                  />
+                </StyledDistributionWrapper>,
               );
 
               if (divider && index < array.length - 1) {
@@ -164,6 +179,13 @@ export const TabGroup: React.FC<TabGroupProps> = ({
             },
             [] as React.ReactElement[],
           )}
+
+          <StyledTabBarTrack
+            overrides={overrides}
+            vertical={vertical}
+            role="presentation"
+            data-testid="tab-bar-track"
+          />
           <StyledTabBarIndicator
             overrides={overrides}
             vertical={vertical}
@@ -179,15 +201,9 @@ export const TabGroup: React.FC<TabGroupProps> = ({
             aria-hidden="true"
             role="presentation"
           />
-          <StyledTabBarTrack
-            overrides={overrides}
-            vertical={vertical}
-            role="presentation"
-            data-testid="tab-bar-track"
-          />
         </StyledInnerTabGroup>
-      </StyledOuterTabGroup>
+      </StyledtabBar>
       {tabContent}
-    </Stack>
+    </StyledTabGroup>
   );
 };

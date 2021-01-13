@@ -4,7 +4,17 @@ import {Prop} from '../../../components/prop';
 import {TextBoxSwatch} from '../../../components/theming-values/colors';
 import {LegacyBlock} from '../../../components/legacy-block';
 import {CodeFromDefaultPresets} from '../../../components/code';
-import {Tab, TabSize, IconFilledEmail, Block, TabGroup, TabPane} from 'newskit';
+import {InlineCode} from '../../../components/markdown-elements';
+import {
+  Tab,
+  TabSize,
+  IconFilledEmail,
+  Block,
+  TabGroup,
+  TabPane,
+  TabsDistribution,
+  UnorderedList,
+} from 'newskit';
 
 export default Layout;
 
@@ -40,6 +50,10 @@ Tabs have a number of props to facilitate a variety of uses:
     The aria-label attribute is to allow a user to describe the action that will
     be performed when the user interacts with a tab in a tab group. By default,
     this could be the primary label text.
+  </Prop>
+  <Prop name="tabKey" type="number">
+    Numeric key used used to associate the <InlineCode>Tab</InlineCode> to the
+    <InlineCode>TabPane</InlineCode>. This should be unique.
   </Prop>
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided
@@ -161,41 +175,120 @@ Tabs have a number of props to facilitate a variety of uses:
   <Prop name="divider" type="boolean">
     Optional dividers between Tabs.
   </Prop>
-  <Prop name="size" type="TabSize" enum={TabSize}
-    default={TabSize.Medium}>
+  <Prop name="size" type="TabSize" enum={TabSize} default={TabSize.Medium}>
     Optional size of the Tab: Small, Medium or Large.
   </Prop>
   <Prop name="tabPanes" type="array">
     Array of Tab Panes, containing the content for each view.
   </Prop>
- <Prop name="vertical" type="boolean">
-    Allows the Tab Group to flow vertically. The Tab Group is laid out horizontally by default.
+  <Prop name="vertical" type="boolean">
+    Allows the Tab Group to flow vertically. The Tab Group is laid out
+    horizontally by default.
   </Prop>
-
+  <Prop
+    name="distribution"
+    type="string"
+    enum={TabSize}
+    default={'TabsDistribution.LeftStacked'}
+  >
+    Change the distribution of the tab group.
+    <br />
+    <br />
+    When flow is set to horizontal:
+    <br />
+    <UnorderedList>
+      <>
+        <InlineCode>left-stacked</InlineCode> Align the Tab Group to the left of
+        the content area with the width of the individual tabs defined by the
+        width of their children.
+      </>
+      <>
+        <InlineCode>fitted-flex</InlineCode> Spread tabs in the Tab Group
+        equally across the content area, filling the entire width. Each tab’s
+        width should be defined by that of its child.
+      </>
+      <>
+        <InlineCode>fitted-equal</InlineCode> Space each tab across the content
+        area equally, regardless of the width of its child.
+      </>
+    </UnorderedList>
+    <br />
+    When flow is vertical:
+    <UnorderedList>
+      <>
+        <InlineCode>left-stacked</InlineCode> Align the Tab Group to the top of
+        the content area with the height of the individual tabs defined by the
+        height of their children.
+      </>
+      <>
+        <InlineCode>fitted-flex</InlineCode> Spread tabs in the Tab Group
+        equally across the content area, filling the entire height. Each tab’s
+        height should be defined by that of its child.
+      </>
+      <>
+        <InlineCode>fitted-equal</InlineCode> Space each tab across the content
+        area equally, regardless of the height of its child.
+      </>
+    </UnorderedList>
+  </Prop>
   <Prop name="overrides" type="object">
-    If provided, overrides the respective presets for the component and provided elements.
-    Here are the overrides that the Tab Group accepts:
+    If provided, overrides the respective presets for the component and provided
+    elements. Here are the overrides that the Tab Group accepts:
     <Prop name="stylePreset" type="MQ<string>">
       If provided, this overrides the style preset applied to the Tab Group.
     </Prop>
+    <Prop name="spaceInset" type="MQ<string>">
+      The value for this prop should be a spaceInset token, If provided it will
+      inset the the whole tab group.
+    </Prop>
+    <Prop name="tabBar" type="object">
+      <Prop name="height" type="string">
+        The value for this prop should be a sizing token. If provided, will
+        override the height of the container wrapping the Tab components.
+      </Prop>
+    </Prop>
     <Prop name="tabBarTrack" type="object">
       <Prop name="weight" type="string">
-        If provided, this sets a fixed weight (height if horizontal, width if vertical) to the tabBarTrack. This can be a sizing token
-        from the theme, or any CSS length value.
+        If provided, this sets a fixed weight (height if horizontal, width if
+        vertical) to the tabBarTrack. This can be a sizing token from the theme,
+        or any CSS length value.
       </Prop>
     </Prop>
     <Prop name="tabBarIndicator" type="object">
       <Prop name="length" type="string">
-        If provided, this sets a fixed width to the tabBarIndicator. This can be a sizing token
-      from the theme, or any CSS length value, e.g. 75% of the default full-width.
+        If provided, this sets a fixed width to the tabBarIndicator. This can be
+        a sizing token from the theme, or any CSS length value, e.g. 75% of the
+        default full-width.
       </Prop>
       <Prop name="weight" type="string">
-        If provided, this sets a fixed weight (height if horizontal, width if vertical) to the tabBarIndicator. This can be a sizing token
-        from the theme, or any CSS length value.
+        If provided, this sets a fixed weight (height if horizontal, width if
+        vertical) to the tabBarIndicator. This can be a sizing token from the
+        theme, or any CSS length value.
       </Prop>
     </Prop>
     Refer to the defaults below for the object structure:
     <CodeFromDefaultPresets componentName="tabGroup" />
+  </Prop>
+</LegacyBlock>
+
+## Tab Pane Props
+
+Container for the tab's associated content. This should be used to wrap each view passed to the <InlineCode>TabGroup</InlineCode> componet's <InlineCode>tabPanes</InlineCode> prop.
+
+<LegacyBlock marginTop="sizing040">
+  <Prop name="children" type="React.ReactNode">
+    Child content to rendered inside the pane.
+  </Prop>
+  <Prop name="tabKey" type="number">
+    Numeric key used to associate the <InlineCode>Tab</InlineCode> to the
+    <InlineCode>TabPane</InlineCode>. This should be unique.
+  </Prop>
+  <Prop name="overrides" type="object">
+    <Prop name="typographyPreset" type="MQ<string>">
+      If provided, this overrides the typography preset applied to the TabPane.
+    </Prop>
+    Refer to the defaults below for the object structure:
+    <CodeFromDefaultPresets componentName="tabPane" />
   </Prop>
 </LegacyBlock>
 
@@ -205,20 +298,76 @@ Tabs have a number of props to facilitate a variety of uses:
   componentName="TabGroup"
   newskitPath="/tab-group"
   component={state => (
-    <TabGroup
-      tabPanes={[
-        <TabPane tabKey={0}>First tab content</TabPane>,
-        <TabPane tabKey={1}>Second tab content</TabPane>,
-        <TabPane tabKey={2}>Third tab content</TabPane>,
-      ]}
-      {...state}
-    >
-      <Tab tabKey={0}>Tab</Tab>
-      <Tab tabKey={1}>Tab</Tab>
-      <Tab tabKey={2}>Tab</Tab>
-    </TabGroup>
+    <div style={{width: '100%'}}>
+      <TabGroup
+        tabPanes={[
+          <TabPane tabKey={0}>
+            <Block spaceInset="spaceInset040">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </Block>
+          </TabPane>,
+          <TabPane tabKey={1}>
+            <Block spaceInset="spaceInset040">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque lauda ntium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              di rem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+              quia non numquam eius modi tempora in cidunt ut labore et dolore
+              magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+              nostrum exercit ationem ullam corporis suscipit laboriosam, nisi
+              ut aliquid ex ea commodi consequatur? Quis autem vel eum iu re
+              reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+              consequatur, vel illum qui dolorem eum fugi at quo voluptas nulla
+              pariatur?
+            </Block>
+          </TabPane>,
+          <TabPane tabKey={2}>
+            <Block spaceInset="spaceInset040">
+              Pellentesque ut odio orci. Sed non ipsum sed neque tincidunt
+              bibendum. Sed sit amet blandit purus, ac tincidunt nunc. Mauris
+              dignissim augue non eros dictum convallis. Nam quis nulla mi. Sed
+              venenatis elit ac urna elementum efficitur. Vivamus erat lorem,
+              pellentesque rhoncus metus a, venenatis porttitor enim. Quisque id
+              massa quam. Sed fringilla blandit lacus, a elementum lacus aliquam
+              nec. Mauris dui leo, pretium vitae fringilla at, tincidunt nec
+              est.
+            </Block>
+          </TabPane>,
+        ]}
+        {...state}
+      >
+        <Tab tabKey={0}>Tab one, uno, une.</Tab>
+        <Tab tabKey={1}>Tab two</Tab>
+        <Tab tabKey={2}>Tab three</Tab>
+      </TabGroup>
+    </div>
   )}
   knobs={[
+    {
+      name: 'Distribution',
+      propName: 'distribution',
+      options: [
+        {
+          label: 'TabsDistribution.LeftStacked',
+          value: TabsDistribution.LeftStacked,
+          isDefault: true,
+        },
+        {
+          label: 'TabsDistribution.FittedFlex',
+          value: TabsDistribution.FittedFlex,
+        },
+        {
+          label: 'TabsDistribution.FittedEqual',
+          value: TabsDistribution.FittedEqual,
+        },
+      ],
+    },
     {
       name: 'Size',
       propName: 'size',
@@ -256,9 +405,9 @@ Tabs have a number of props to facilitate a variety of uses:
           value: {
             tabBarTrack: {
               weight: 'borderWidth030',
-            }
+            },
           },
-        }
+        },
       ],
     },
     {
@@ -270,7 +419,7 @@ Tabs have a number of props to facilitate a variety of uses:
           value: {
             tabBarIndicator: {
               weight: undefined,
-            }
+            },
           },
           isDefault: true,
         },
@@ -293,7 +442,7 @@ Tabs have a number of props to facilitate a variety of uses:
           value: {
             tabBarIndicator: {
               length: undefined,
-            }
+            },
           },
           isDefault: true,
         },
@@ -310,6 +459,67 @@ Tabs have a number of props to facilitate a variety of uses:
           value: {
             tabBarIndicator: {
               length: 'sizing050',
+            },
+          },
+        },
+      ],
+    },
+    {
+      name: 'Style preset overrides',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            stylePreset: undefined,
+          },
+          isDefault: true,
+        },
+        {
+          label: 'cardContainer',
+          value: {
+            stylePreset: 'cardContainer',
+          },
+        },
+      ],
+    },
+    {
+      name: 'Space inset',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            spaceInset: undefined,
+          },
+          isDefault: true,
+        },
+        {
+          label: 'spaceInset040',
+          value: {
+            spaceInset: 'spaceInset040',
+          },
+        },
+      ],
+    },
+    {
+      name: 'tabBar height',
+      propName: 'overrides',
+      options: [
+        {
+          label: 'Default',
+          value: {
+            tabBar: {
+              height: undefined,
+            },
+          },
+          isDefault: true,
+        },
+        {
+          label: 'sizing120',
+          value: {
+            tabBar: {
+              height: 'sizing120',
             },
           },
         },

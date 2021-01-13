@@ -43,6 +43,7 @@ export const getSpacingInset = getDefaultedValue(
 // TODO: Which of these funcs is no longer used ?
 export const getSizing = getDefaultedValue(getSizingFromTheme, 'sizing');
 export const getMinHeight = getDefaultedValue(getSizingFromTheme, 'minHeight');
+export const getHeight = getDefaultedValue(getSizingFromTheme, 'height');
 export const getMinWidth = getDefaultedValue(getSizingFromTheme, 'minWidth');
 export const getSize = getDefaultedValue(getSizingFromTheme, 'size');
 export const getSpace = getDefaultedValue(getSpacingFromTheme, 'space');

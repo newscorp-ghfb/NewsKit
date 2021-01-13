@@ -108,3 +108,30 @@ export const getTabBarIndicatorStyle = (
         : '',
   };
 };
+
+export const getFirstParentElementWithRole = (
+  element: Node | null,
+  role: string,
+) => {
+  let currentElement = element as HTMLElement;
+  while (currentElement && !(currentElement.getAttribute('role') === role)) {
+    currentElement = currentElement.parentElement as HTMLElement;
+  }
+  return currentElement;
+};
+
+// Take the descendant element with a specific role but traverse the DOM only looking in each first child.
+export const getDescendantOnlyFromFirstChild = (
+  element: Node | null,
+  role: string,
+) => {
+  let currentElement = element && element.childNodes && element.childNodes[0];
+
+  while (
+    currentElement &&
+    !((currentElement as HTMLElement).getAttribute('role') === role)
+  ) {
+    currentElement = currentElement.childNodes && currentElement.childNodes[0];
+  }
+  return currentElement;
+};

@@ -483,6 +483,9 @@ export const componentDefaults = {
       motionTiming: 'motionEaseInAndOut',
     },
   },
+  tabPane: {
+    typographyPreset: 'utilityBody020',
+  },
   textInput: {
     small: {
       label: {

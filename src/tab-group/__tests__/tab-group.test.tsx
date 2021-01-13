@@ -7,7 +7,7 @@ import {
   renderWithTheme,
 } from '../../test/test-utils';
 import {Tab, TabSize} from '../../tab';
-import {TabGroup, TabPane} from '..';
+import {TabGroup, TabPane, TabsDistribution} from '..';
 import {TabGroupProps} from '../types';
 import {IconFilledEmail} from '../../icons';
 
@@ -403,6 +403,102 @@ describe('Tab Group', () => {
         },
         tabBarIndicator: {
           weight: 'borderWidth030',
+        },
+      },
+    };
+
+    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    expect(fragment).toMatchSnapshot();
+  });
+});
+
+const tabs = [
+  <Tab tabKey={0}>H tab 1</Tab>,
+  <Tab tabKey={1}>H tab 2</Tab>,
+  <Tab tabKey={2}>H tab 3</Tab>,
+];
+
+describe('Tab Group LeftStacked', () => {
+  test('renders tab group horizontal leftstacked', () => {
+    const props: TabGroupProps = {
+      children: tabs,
+      distribution: TabsDistribution.LeftStacked,
+      tabPanes,
+    };
+
+    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders tab group vertical leftstacked', () => {
+    const props: TabGroupProps = {
+      children: tabs,
+      distribution: TabsDistribution.LeftStacked,
+      tabPanes,
+      vertical: true,
+      overrides: {
+        tabBar: {
+          height: '300px',
+        },
+      },
+    };
+
+    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    expect(fragment).toMatchSnapshot();
+  });
+});
+
+describe('Tab Group FittedFlex', () => {
+  test('renders tab group horizontal fittedFlex', () => {
+    const props: TabGroupProps = {
+      children: tabs,
+      distribution: TabsDistribution.FittedFlex,
+      tabPanes,
+    };
+
+    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders tab group vertical FittedFlex', () => {
+    const props: TabGroupProps = {
+      children: tabs,
+      distribution: TabsDistribution.FittedFlex,
+      tabPanes,
+      vertical: true,
+      overrides: {
+        tabBar: {
+          height: '300px',
+        },
+      },
+    };
+
+    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    expect(fragment).toMatchSnapshot();
+  });
+});
+
+describe('Tab Group FittedEqual', () => {
+  test('renders tab group horizontal FittedEqual', () => {
+    const props: TabGroupProps = {
+      children: tabs,
+      distribution: TabsDistribution.FittedEqual,
+      tabPanes,
+    };
+
+    const fragment = renderToFragmentWithTheme(renderTabGroupDefault, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('renders tab group vertical FittedEqual', () => {
+    const props: TabGroupProps = {
+      children: tabs,
+      distribution: TabsDistribution.FittedEqual,
+      tabPanes,
+      vertical: true,
+      overrides: {
+        tabBar: {
+          height: '300px',
         },
       },
     };

@@ -661,6 +661,9 @@ Object {
         "weight": "borderWidth020",
       },
     },
+    "tabPane": Object {
+      "typographyPreset": "utilityBody020",
+    },
     "tag": Object {
       "large": Object {
         "iconSize": "iconSize020",
