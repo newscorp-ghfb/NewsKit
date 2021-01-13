@@ -6,6 +6,7 @@ const colors = {
   interfaceBrand010: '#577FFB',
   inkBrand010: '#4B6ADF',
   inkLogo: '#192C48',
+  pink: '#FFC0CB',
 };
 
 const colorsDarkTheme = {
@@ -250,7 +251,7 @@ const stylePresets = {
     base: {
       borderRadius: '{{borders.borderRadiusRounded040}}',
       borderColor: '{{colors.inkBrand020}}',
-      backgroundColor: '{{colors.inkLogo}}',
+      backgroundColor: '{{colors.pink}}',
     },
   },
 };
