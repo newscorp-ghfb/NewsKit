@@ -21,15 +21,17 @@ export const MediaList: React.FC<MediaListProps> = ({
               overrides={{
                 stylePreset: 'testCard',
                 mediaContainer: {
-                  stylePreset: href && 'cardContainerMediaInteractive',
+                  stylePreset: media && href && 'cardContainerMediaInteractive',
                 },
               }}
               href={href}
             >
               <Block spaceStack="space040">
                 <TextBlock
-                  stylePreset="inkContrast"
-                  typographyPreset="editorialHeadline020"
+                  stylePreset={media ? 'inkContrast' : 'inkInverse'}
+                  typographyPreset={
+                    media ? 'editorialHeadline020' : 'utilityLabel020'
+                  }
                 >
                   {cardTitle}
                 </TextBlock>
@@ -37,16 +39,20 @@ export const MediaList: React.FC<MediaListProps> = ({
               {subtitle && (
                 <Block spaceStack="space040">
                   <TextBlock
-                    stylePreset="inkContrast"
-                    typographyPreset="editorialHeadline020"
+                    stylePreset={media ? 'inkContrast' : 'inkInverse'}
+                    typographyPreset={
+                      media ? 'editorialHeadline020' : 'editorialHeadline030'
+                    }
                   >
                     {subtitle}
                   </TextBlock>
                 </Block>
               )}
               <TextBlock
-                stylePreset="inkPreset"
-                typographyPreset="editorialParagraph020"
+                stylePreset={media ? 'inkContrast' : 'inkInverse'}
+                typographyPreset={
+                  media ? 'editorialParagraph020' : 'utilityBody020'
+                }
               >
                 {description}
               </TextBlock>
