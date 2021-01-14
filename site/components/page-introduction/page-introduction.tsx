@@ -47,8 +47,8 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
     </Cell>
     <Cell xs={12} md={8} lg={6} mdOffset={1}>
       <ExtendedBlock
-      // TODO there is spacing coming from don't know where. Removing the space would maybe fix it
-      // but... not the root of the problem
+        // TODO there is spacing coming from don't know where. Removing the space would maybe fix it
+        // but... not the root of the problem
         spaceStack={{xs: 'space060', md: 'space080', lg: 'space090'}}
       >
         <TextBlock
