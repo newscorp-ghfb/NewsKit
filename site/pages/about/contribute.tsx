@@ -1,16 +1,6 @@
 import React from 'react';
-import {
-  Cell,
-  TextBlock,
-  Block,
-  LinkStandalone,
-  Link,
-  Grid,
-  Image,
-  Headline,
-  Paragraph,
-} from 'newskit';
-import {InfoNotice} from 'components/info-notice';
+import {Cell, LinkStandalone, Link, Grid, Headline, Paragraph} from 'newskit';
+import {InfoNotice} from '../../components/info-notice';
 import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
 import {SectionIntroduction} from '../../components/section-introduction';
@@ -158,7 +148,7 @@ export default (layoutProps: LayoutProps) => (
             target="_blank"
             href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2294973413/Help+-+Web+Documentation"
           >
-            > online form
+            online form
           </Link>
           .
         </Paragraph>
@@ -187,7 +177,7 @@ export default (layoutProps: LayoutProps) => (
           overrides={{typographyPreset: 'utilityHeading030'}}
           headingAs="h3"
         >
-          > Respond to questions
+          Respond to questions
         </Headline>
         <br />
         <Paragraph>
@@ -237,7 +227,7 @@ export default (layoutProps: LayoutProps) => (
             target="_blank"
             href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2294973413/Help+-+Web+Documentation"
           >
-            > let our team know
+            let our team know
           </Link>
           . The NewsKit team will assess the design, following the process
           outlined in the{' '}
@@ -278,7 +268,7 @@ export default (layoutProps: LayoutProps) => (
             target="_blank"
             href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2294973413/Help+-+Web+Documentation"
           >
-            > NewsKit workflow
+            NewsKit workflow
           </Link>
           . Your contribution could make it into NewsKit and other products!
         </Paragraph>
@@ -300,7 +290,7 @@ export default (layoutProps: LayoutProps) => (
             target="_blank"
             href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2294973413/Help+-+Web+Documentation"
           >
-            > let our team know
+            let our team know
           </Link>
           . The NewsKit team can guide you through the contribution process.
         </Paragraph>
