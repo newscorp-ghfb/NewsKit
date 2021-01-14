@@ -270,16 +270,12 @@ const stylePresets = {
   },
 
   // Card
-  // cardContainerMedia: {
-  //   base: {
-  //     borderRadius: '{{borders.borderRadiusDefault}}',
-  //   },
-  // },
-  // cardContainerMediaInteractive: {
-  //   base: {
-  //     borderRadius: '{{borders.borderRadiusRounded040}}',
-  //   },
-  // },
+
+  cardContainerMediaInteractive: {
+    base: {
+      borderRadius: '{{borders.borderRadiusRounded040}}',
+    },
+  },
 
   // Override these here for now - will move to NewsKit Light in another ticket
   cardContainer: {
@@ -291,7 +287,7 @@ const stylePresets = {
   },
   cardContainerMedia: {
     base: {
-      borderRadius: (false as unknown) as string,
+      borderRadius: '{{borders.borderRadiusDefault}}',
     },
     loading: {
       backgroundColor: '{{colors.interfaceSkeleton010}}',
@@ -314,15 +310,6 @@ const stylePresets = {
     base: {
       backgroundColor: (false as unknown) as string,
       borderRadius: (false as unknown) as string,
-    },
-  },
-
-  testCard: {
-    base: {
-      color: '{{colors.inkInverse}}',
-      borderRadius: '{{borders.borderRadiusRounded040}}',
-      borderColor: '{{colors.inkBrand020}}',
-      backgroundColor: '{{colors.blue080}}',
     },
   },
 };

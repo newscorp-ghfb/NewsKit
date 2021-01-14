@@ -103,7 +103,10 @@ exports[`Media List renders with custom layout 1`] = `
 
 .emotion-12 {
   box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 0;
   position: relative;
+  height: 100%;
 }
 
 .emotion-6 {
@@ -232,7 +235,6 @@ exports[`Media List renders with custom layout 1`] = `
 .emotion-7 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
   font-family: "Source Serif Pro",serif;
   font-size: 20px;
   line-height: 1.2;
@@ -241,10 +243,6 @@ exports[`Media List renders with custom layout 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-}
-
-.emotion-7 svg {
-  fill: #0a0a0a;
 }
 
 .emotion-7::before {
@@ -266,7 +264,6 @@ exports[`Media List renders with custom layout 1`] = `
 .emotion-9 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -275,10 +272,6 @@ exports[`Media List renders with custom layout 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-}
-
-.emotion-9 svg {
-  fill: #0a0a0a;
 }
 
 .emotion-9::before {
@@ -663,7 +656,10 @@ exports[`Media List renders with default layout 1`] = `
 
 .emotion-12 {
   box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 0;
   position: relative;
+  height: 100%;
 }
 
 .emotion-6 {
@@ -792,7 +788,6 @@ exports[`Media List renders with default layout 1`] = `
 .emotion-7 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
   font-family: "Source Serif Pro",serif;
   font-size: 20px;
   line-height: 1.2;
@@ -801,10 +796,6 @@ exports[`Media List renders with default layout 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-}
-
-.emotion-7 svg {
-  fill: #0a0a0a;
 }
 
 .emotion-7::before {
@@ -826,7 +817,6 @@ exports[`Media List renders with default layout 1`] = `
 .emotion-9 {
   margin: 0;
   padding: 1px 0;
-  color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -835,10 +825,6 @@ exports[`Media List renders with default layout 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-}
-
-.emotion-9 svg {
-  fill: #0a0a0a;
 }
 
 .emotion-9::before {
