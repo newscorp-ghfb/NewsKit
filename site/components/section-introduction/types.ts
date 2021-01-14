@@ -1,4 +1,6 @@
+import {CellProps} from 'newskit';
+
 export interface SectionIntroductionProps {
   title: string;
-  introduction?: string | React.ReactElement;
+  cellProps?: CellProps;
 }

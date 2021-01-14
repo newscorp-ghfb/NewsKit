@@ -266,6 +266,7 @@ exports[`Media List renders with custom layout 1`] = `
 .emotion-9 {
   margin: 0;
   padding: 1px 0;
+  color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -274,6 +275,10 @@ exports[`Media List renders with custom layout 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+}
+
+.emotion-9 svg {
+  fill: #0a0a0a;
 }
 
 .emotion-9::before {
@@ -821,6 +826,7 @@ exports[`Media List renders with default layout 1`] = `
 .emotion-9 {
   margin: 0;
   padding: 1px 0;
+  color: #0a0a0a;
   font-family: "Noto Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -829,6 +835,10 @@ exports[`Media List renders with default layout 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+}
+
+.emotion-9 svg {
+  fill: #0a0a0a;
 }
 
 .emotion-9::before {

@@ -42,10 +42,9 @@ const renderSections = ({
       <Cell xs={12}>
         <section id="interactive-demo">
           <Grid lgMargin="space000" xsRowGutter="space000">
-            <SectionIntroduction
-              title="Interactive Demo"
-              introduction={interactiveDemo.introduction}
-            />
+            <SectionIntroduction title="Interactive Demo">
+              {interactiveDemo.introduction}
+            </SectionIntroduction>
             <Cell xs={12} md={10} lg={8} mdOffset={1}>
               <Block spaceStack="space110">
                 <Playground {...interactiveDemo.playground} />
@@ -60,10 +59,9 @@ const renderSections = ({
         <Cell xs={12}>
           <section id="anatomy">
             <Grid lgMargin="space000" xsRowGutter="space000">
-              <SectionIntroduction
-                title="Anatomy"
-                introduction={anatomy.introduction}
-              />
+              <SectionIntroduction title="Anatomy">
+                {anatomy.introduction}
+              </SectionIntroduction>
               <Anatomy {...anatomy} />
             </Grid>
           </section>
@@ -79,10 +77,9 @@ const renderSections = ({
         <Cell xs={12}>
           <section id="variations">
             <Grid lgMargin="space000" xsRowGutter="space000">
-              <SectionIntroduction
-                title="Variations"
-                introduction={variations.introduction}
-              />
+              <SectionIntroduction title="Variations">
+                {variations.introduction}
+              </SectionIntroduction>
               <MediaList {...variations} />
             </Grid>
           </section>
@@ -97,10 +94,9 @@ const renderSections = ({
         <Cell xs={12}>
           <section id="behaviors">
             <Grid lgMargin="space000" xsRowGutter="space000">
-              <SectionIntroduction
-                title="Behaviours"
-                introduction={behaviors.introduction}
-              />
+              <SectionIntroduction title="Behaviours">
+                {behaviors.introduction}
+              </SectionIntroduction>
               <MediaList {...behaviors} />
             </Grid>
           </section>
@@ -115,10 +111,9 @@ const renderSections = ({
         <Cell xs={12}>
           <section id="usage">
             <Grid lgMargin="space000" xsRowGutter="space000">
-              <SectionIntroduction
-                title="Usage"
-                introduction={usage.introduction}
-              />
+              <SectionIntroduction title="Usage">
+                {usage.introduction}
+              </SectionIntroduction>
               <Usage {...usage} />
             </Grid>
           </section>
@@ -134,10 +129,9 @@ const renderSections = ({
         <Cell xs={12}>
           <section id="accessibility">
             <Grid lgMargin="space000" xsRowGutter="space000">
-              <SectionIntroduction
-                title="Accessibility Considerations"
-                introduction={accessibility.introduction}
-              />
+              <SectionIntroduction title="Accessibility Considerations">
+                {accessibility.introduction}
+              </SectionIntroduction>
               <AccessibilityTables {...accessibility} />
             </Grid>
           </section>
@@ -152,7 +146,9 @@ const renderSections = ({
         <Cell xs={12}>
           <section id="seo">
             <Grid lgMargin="space000" xsRowGutter="space000">
-              <SectionIntroduction {...seo} />
+              <SectionIntroduction title={seo.title}>
+                {seo.introduction}
+              </SectionIntroduction>
             </Grid>
           </section>
         </Cell>
@@ -167,10 +163,9 @@ const renderSections = ({
           <Grid lgMargin="space000" xsRowGutter="space000">
             {props && (
               <>
-                <SectionIntroduction
-                  title="Props"
-                  introduction={props.summary as string}
-                />
+                <SectionIntroduction title="Props">
+                  {props.summary}
+                </SectionIntroduction>
                 <Cell xs={12} md={10} lg={8} mdOffset={1}>
                   <Table rows={props.rows} columns={props.columns} />
                 </Cell>
@@ -183,10 +178,9 @@ const renderSections = ({
             )}
             {overrides && (
               <>
-                <SectionIntroduction
-                  title="Overrides"
-                  introduction={overrides.summary as string}
-                />
+                <SectionIntroduction title="Overrides">
+                  {overrides.summary}
+                </SectionIntroduction>
                 <Cell xs={12} md={10} lg={8} mdOffset={1}>
                   <Table rows={overrides.rows} columns={overrides.columns} />
                 </Cell>
@@ -209,10 +203,11 @@ const renderSections = ({
     </Cell>
     {compliance && (
       <>
-        <SectionIntroduction
-          title="Compliance"
-          introduction="All of the components in the NewsKit design system go through a comprehensive set of checks to ensure that we are producing compliant and best practice components."
-        />
+        <SectionIntroduction title="Compliance">
+          All of the components in the NewsKit design system go through a
+          comprehensive set of checks to ensure that we are producing compliant
+          and best practice components.
+        </SectionIntroduction>
         <Compliance {...compliance} />
         <Cell xs={12} md={10} lg={8} mdOffset={1}>
           <Separator />
@@ -221,10 +216,9 @@ const renderSections = ({
     )}
     {related && (
       <>
-        <SectionIntroduction
-          title="Related Components"
-          introduction={related.introduction}
-        />
+        <SectionIntroduction title="Related Components">
+          {related.introduction}
+        </SectionIntroduction>
         <MediaList spaceStack="space110" xsCard={6} lgCard={3} {...related} />
       </>
     )}

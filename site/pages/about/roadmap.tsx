@@ -15,12 +15,10 @@ export default (layoutProps: LayoutProps) => (
         build better products faster."
         hero={{src: '/static/roadmap-hero.svg', alt: 'roadmap-hero-image'}}
       />
-      <SectionIntroduction
-        title="NewsKit Roadmap"
-        introduction="Here is the team’s focus over the
-        coming months. This is updated regularly as our priorities change over
-        time."
-      />
+      <SectionIntroduction title="NewsKit Roadmap">
+        Here is the team’s focus over the coming months. This is updated
+        regularly as our priorities change over time.
+      </SectionIntroduction>
       <Cell mdOffset={1} xs={12} md={10} lg={8}>
         <Block spaceStack="space090">
           <iframe

@@ -37,7 +37,7 @@ export interface ComponentPageTemplateProps {
   behaviors?: MediaListProps & {introduction: string};
   usage?: UsageProps & {introduction: string};
   accessibility?: AccessibilityTablesProps & {introduction: string};
-  seo?: SectionIntroductionProps;
+  seo?: SectionIntroductionProps & {introduction: string};
   props?: PropsProps;
   overrides?: PropsProps;
   compliance?: ComplianceProps;

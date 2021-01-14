@@ -9,12 +9,4 @@ describe('SectionIntroduction', () => {
     const fragment = renderToFragmentWithTheme(SectionIntroduction, props);
     expect(fragment).toMatchSnapshot();
   });
-  test('renders with mandatory title and introduction', () => {
-    const props = {
-      title: 'Title',
-      introduction: 'Introduction',
-    };
-    const fragment = renderToFragmentWithTheme(SectionIntroduction, props);
-    expect(fragment).toMatchSnapshot();
-  });
 });
