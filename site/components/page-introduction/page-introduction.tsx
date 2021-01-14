@@ -31,7 +31,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
           {type.toUpperCase()}
         </TextBlock>
       </Block>
-      <Block spaceStack={{xs: 'space070', md: 'space070', xl: 'space070'}}>
+      <Block spaceStack={{xs: 'space030', md: 'space030', xl: 'space030'}}>
         <TextBlock
           as="h1"
           stylePreset="inkContrast"
@@ -47,13 +47,15 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
     </Cell>
     <Cell xs={12} md={8} lg={6} mdOffset={1}>
       <ExtendedBlock
+      // TODO there is spacing coming from don't know where. Removing the space would maybe fix it
+      // but... not the root of the problem
         spaceStack={{xs: 'space060', md: 'space080', lg: 'space090'}}
       >
         <TextBlock
           stylePreset="inkBase"
           typographyPreset={{
             xs: 'editorialSubheading010',
-            md: 'editorialSubheading020',
+            md: 'editorialSubheadline010',
           }}
         >
           {introduction}
@@ -61,7 +63,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
       </ExtendedBlock>
     </Cell>
     <Cell xs={12} md={10} lg={8} mdOffset={1}>
-      <Block spaceStack="space080">
+      <Block spaceStack="space090">
         <Image
           src={hero.src}
           alt={hero.alt}

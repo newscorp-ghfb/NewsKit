@@ -15,6 +15,39 @@ const colorsDarkTheme = {
 };
 
 const stylePresets = {
+  cardContainerNonInteractive010: {
+    base: {
+      backgroundColor: '{{colors.blue060}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+    },
+  },
+  cardContainerNonInteractive020: {
+    base: {
+      backgroundColor: '{{colors.blue070}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+    },
+  },
+  cardContainerNonInteractive030: {
+    base: {
+      backgroundColor: '{{colors.blue080}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+    },
+  },
+  inkWhiteContrast: {
+    base: {
+      color: '{{colors.white}}',
+    },
+  },
+  inkWhiteSubtle: {
+    base: {
+      color: '{{colors.whiteTint080}}',
+    },
+  },
+  inkWhiteBase: {
+    base: {
+      color: '{{colors.whiteTint090}}',
+    },
+  },
   buttonLightDarkToggle: {
     base: {
       backgroundColor: '{{colors.interactivePrimary010}}',
