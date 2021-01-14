@@ -237,21 +237,59 @@ const stylePresets = {
   },
 
   // Card
+  // cardContainerMedia: {
+  //   base: {
+  //     borderRadius: '{{borders.borderRadiusDefault}}',
+  //   },
+  // },
+  // cardContainerMediaInteractive: {
+  //   base: {
+  //     borderRadius: '{{borders.borderRadiusRounded040}}',
+  //   },
+  // },
+
+  // Override these here for now - will move to NewsKit Light in another ticket
+  cardContainer: {
+    base: {
+      backgroundColor: '{{colors.interface010}}',
+      borderRadius: (false as unknown) as string,
+      color: '{{color.inkBase}}',
+    },
+  },
   cardContainerMedia: {
     base: {
-      borderRadius: '{{borders.borderRadiusDefault}}',
+      borderRadius: (false as unknown) as string,
+    },
+    loading: {
+      backgroundColor: '{{colors.interfaceSkeleton010}}',
+      iconColor: '{{colors.inkNonEssential}}',
     },
   },
-  cardContainerMediaInteractive: {
+  cardContainerTeaserAndActions: {
     base: {
-      borderRadius: '{{borders.borderRadiusRounded040}}',
+      backgroundColor: (false as unknown) as string,
     },
   },
+  cardContainerTeaser: {
+    base: {
+      backgroundColor: (false as unknown) as string,
+      borderRadius: (false as unknown) as string,
+      color: 'inherit',
+    },
+  },
+  cardContainerActions: {
+    base: {
+      backgroundColor: (false as unknown) as string,
+      borderRadius: (false as unknown) as string,
+    },
+  },
+
   testCard: {
     base: {
+      color: '{{colors.inkInverse}}',
       borderRadius: '{{borders.borderRadiusRounded040}}',
       borderColor: '{{colors.inkBrand020}}',
-      backgroundColor: '{{colors.pink}}',
+      backgroundColor: '{{colors.blue080}}',
     },
   },
 };

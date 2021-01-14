@@ -101,8 +101,9 @@ export const Card: React.FC<CardProps> = ({
   actions,
   children,
   overrides = {},
+  className,
 }) => (
-  <StyledCardContainer overrides={overrides}>
+  <StyledCardContainer className={className} overrides={overrides}>
     {media && (
       <StyledCardContainerMedia
         mediaInteractive={mediaInteractive}

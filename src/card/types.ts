@@ -19,6 +19,7 @@ export interface CardOverridesProps {
   };
 }
 export interface CardProps {
+  className?: string;
   href?: string | BaseLinkProps;
   media?: ImageProps | React.ComponentType;
   mediaInteractive?: boolean;

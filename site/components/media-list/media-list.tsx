@@ -1,6 +1,10 @@
 import React from 'react';
-import {Cell, Grid, Card, TextBlock, Block} from 'newskit';
+import {Cell, Grid, TextBlock, Block, Card, styled} from 'newskit';
 import {MediaListProps} from './types';
+
+const StyledCard = styled(Card)`
+  height: 100%;
+`;
 
 export const MediaList: React.FC<MediaListProps> = ({
   spaceStack,
@@ -16,19 +20,28 @@ export const MediaList: React.FC<MediaListProps> = ({
       <Grid xsMargin="space000" xsRowGutter="space080">
         {cards.map(({media, title: cardTitle, description, subtitle, href}) => (
           <Cell xs={xsCard} sm={smCard} md={mdCard} lg={lgCard} xl={xlCard}>
-            <Card
+            <StyledCard
               media={media}
               overrides={{
-                stylePreset: 'testCard',
+                stylePreset: !media ? 'testCard' : undefined,
                 mediaContainer: {
                   stylePreset: media && href && 'cardContainerMediaInteractive',
+                },
+                teaserContainer: {
+                  spaceInset: !media
+                    ? {
+                        xs: 'spaceInset040',
+                        sm: 'spaceInset040',
+                        lg: 'spaceInset050',
+                        xl: 'spaceInset050',
+                      }
+                    : undefined,
                 },
               }}
               href={href}
             >
               <Block spaceStack="space040">
                 <TextBlock
-                  stylePreset={media ? 'inkContrast' : 'inkInverse'}
                   typographyPreset={
                     media ? 'editorialHeadline020' : 'utilityLabel020'
                   }
@@ -39,7 +52,6 @@ export const MediaList: React.FC<MediaListProps> = ({
               {subtitle && (
                 <Block spaceStack="space040">
                   <TextBlock
-                    stylePreset={media ? 'inkContrast' : 'inkInverse'}
                     typographyPreset={
                       media ? 'editorialHeadline020' : 'editorialHeadline030'
                     }
@@ -49,14 +61,13 @@ export const MediaList: React.FC<MediaListProps> = ({
                 </Block>
               )}
               <TextBlock
-                stylePreset={media ? 'inkContrast' : 'inkInverse'}
                 typographyPreset={
                   media ? 'editorialParagraph020' : 'utilityBody020'
                 }
               >
                 {description}
               </TextBlock>
-            </Card>
+            </StyledCard>
           </Cell>
         ))}
       </Grid>
