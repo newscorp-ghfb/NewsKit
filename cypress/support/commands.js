@@ -1,18 +1,10 @@
-const checkViewport = viewport => {
-  if (viewport.includes('Landscape')) {
-    cy.viewport(viewport, 'landscape');
-  } else {
-    cy.viewport(viewport);
-  }
-};
-
-Cypress.Commands.add('visitViewport', (viewport, url) => {
-  checkViewport(viewport);
+Cypress.Commands.add('mockConsentAndVisit', url => {
+  cy.intercept('GET', '**/wrapper/tcfv2/v1/gdpr/**', 'fx:consent-request');
   cy.visit(url);
 });
 
 Cypress.Commands.add('checkA11yWithDefaultRules', () => {
-  cy.checkA11y({
+  cy.checkA11y(null, {
     rules: {
       'page-has-heading-one': {enabled: false},
     },
@@ -20,7 +12,7 @@ Cypress.Commands.add('checkA11yWithDefaultRules', () => {
 });
 
 Cypress.Commands.add('checkA11yWithCustomRule', disabledRules => {
-  cy.checkA11y({
+  cy.checkA11y(null, {
     rules: disabledRules.reduce(
       (acc, rule) => {
         acc[rule] = {enabled: false};
@@ -41,7 +33,7 @@ Cypress.Commands.add('acceptCookieBanner', () => {
         cy.wrap(innerBody)
           .find('.message-component.message-button')
           .contains('Yes, I agree')
-          .click({force: true});
+          .click();
       });
     }
   });

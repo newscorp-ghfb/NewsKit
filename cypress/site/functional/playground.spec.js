@@ -3,8 +3,8 @@
 const playgroundElement = '[data-testid="playground-element"]';
 
 describe('Documentation Site - playground', () => {
-  beforeEach(() => {
-    cy.visit('/components/navigation/tag');
+  before(() => {
+    cy.mockConsentAndVisit('/components/navigation/tag');
   });
 
   it('Tag playground should update the content', () => {
@@ -22,8 +22,8 @@ describe('Documentation Site - playground', () => {
 });
 
 describe('Documentation Site - playground - Unordered List', () => {
-  beforeEach(() => {
-    cy.visit('/components/text-content/unordered-list');
+  before(() => {
+    cy.mockConsentAndVisit('/components/text-content/unordered-list');
   });
 
   const ulArrayKnob = '[data-testid="array-knob-list-data"]';
@@ -47,8 +47,8 @@ describe('Documentation Site - playground - Unordered List', () => {
 });
 
 describe('Documentation Site - playground', () => {
-  beforeEach(() => {
-    cy.visit('/components/text-content/flag');
+  before(() => {
+    cy.mockConsentAndVisit('/components/text-content/flag');
   });
 
   it('Flag playground should update the content', () => {

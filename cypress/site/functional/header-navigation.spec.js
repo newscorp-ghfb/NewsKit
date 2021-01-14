@@ -7,7 +7,7 @@ const overlayTestID = '[data-testid="overlay"]';
 
 describe('Documentation Site - header-navigation component', () => {
   before(() => {
-    cy.visit('/');
+    cy.mockConsentAndVisit('/');
   });
 
   describe('Desktop view', () => {

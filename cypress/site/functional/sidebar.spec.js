@@ -7,12 +7,7 @@ const pages = flatRoutes(siteRoutes, 'title');
 
 describe('Documentation Site - sidebar component', () => {
   before(() => {
-    cy.visit('/');
-  });
-
-  it('should pass basic a11y test', () => {
-    cy.injectAxe();
-    cy.checkA11y();
+    cy.mockConsentAndVisit('/');
   });
 
   pages.forEach(title => {

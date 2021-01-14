@@ -10,8 +10,7 @@ describe('Page accessibility', () => {
     it(`should pass basic a11y test for ${Cypress.config(
       'baseUrl',
     )}${path}`, () => {
-      cy.visit(path);
-      cy.acceptCookieBanner();
+      cy.mockConsentAndVisit(path);
       cy.injectAxe();
       if (
         path === `/theming/presets/typography-presets` ||
@@ -21,24 +20,15 @@ describe('Page accessibility', () => {
         // The typography page is a showcase so we have disabled the heading order rule for this page.
         // More info on the rule here: https://www.w3.org/WAI/tutorials/page-structure/headings/
         // TODO: Need to revisit the below color contrast rule while working on the newskit site remake project
-        cy.checkA11y({
+        cy.checkA11y(null, {
           rules: {
             'heading-order': {enabled: false},
             'color-contrast': {enabled: false},
           },
         });
-      } else if (
-        path === `/components/media/radio-player` ||
-        path === `/components/media/audio-player`
-      ) {
-        cy.checkA11y({
-          rules: {
-            'color-contrast': {enabled: false},
-          },
-        });
       } else {
         // TODO: Need to revisit this rule while working on the newskit site remake project
-        cy.checkA11y({
+        cy.checkA11y(null, {
           rules: {
             'color-contrast': {enabled: false},
           },

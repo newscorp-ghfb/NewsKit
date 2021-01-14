@@ -9,6 +9,14 @@ slack_status: &slack_status
   fail_only: true
   only_for_branches: 'develop,master'
 
+working_directory: &working_directory
+  working_directory: ~/project
+
+cypress_defaults: &cypress_defaults
+  <<: *working_directory
+  environment:
+    CYPRESS_CACHE_FOLDER: '~/project/.cache/Cypress'
+
 # ========== APPLITOOLS ENVIRONMENT VARIABLES START ==========
 
 applitools_defaults: &applitools_defaults
@@ -208,7 +216,7 @@ commands:
 
 jobs:
   install_deps:
-    working_directory: ~/project
+    <<: *working_directory
     executor: node
     steps:
       - checkout
@@ -220,7 +228,7 @@ jobs:
       - save_cache:
           key: yarn-build-v1-{{ checksum "yarn.lock" }}
           paths:
-            - 'node_modules'
+            - ~/.cache
       - persist_to_workspace:
           root: ./
           paths:
@@ -229,8 +237,29 @@ jobs:
       - slack/status:
           <<: *slack_status
 
+  install_cypress:
+    <<: *cypress_defaults
+    executor: cypress
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: install cypress
+          command: make install_cypress
+      - save_cache:
+          key: v1-cypress-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - .cache
+      - slack/status:
+          <<: *slack_status
+
   build_icons:
-    working_directory: ~/project
+    <<: *working_directory
     executor: node
     steps:
       - checkout
@@ -247,7 +276,7 @@ jobs:
           <<: *slack_status
 
   build_components:
-    working_directory: ~/project
+    <<: *working_directory
     executor: node
     steps:
       - checkout
@@ -264,7 +293,7 @@ jobs:
           <<: *slack_status
 
   build_storybook:
-    working_directory: ~/project
+    <<: *working_directory
     executor: node
     steps:
       - checkout
@@ -281,7 +310,7 @@ jobs:
           <<: *slack_status
 
   build_docs:
-    working_directory: ~/project
+    <<: *working_directory
     executor: node
     steps:
       - checkout
@@ -298,7 +327,7 @@ jobs:
           <<: *slack_status
 
   build_test_e2e:
-    working_directory: ~/project
+    <<: *working_directory
     executor: node
     steps:
       - checkout
@@ -315,7 +344,7 @@ jobs:
           <<: *slack_status
 
   test_unit_comps:
-    working_directory: ~/project
+    <<: *working_directory
     executor: node-large
     steps:
       - checkout
@@ -334,7 +363,7 @@ jobs:
           <<: *slack_status
 
   test_unit_docs:
-    working_directory: ~/project
+    <<: *working_directory
     executor: node-large
     steps:
       - checkout
@@ -353,7 +382,7 @@ jobs:
           <<: *slack_status
 
   lint:
-    working_directory: ~/project
+    <<: *working_directory
     executor: node
     steps:
       - checkout
@@ -370,7 +399,7 @@ jobs:
       job_type:
         type: string
         default: "default"
-    working_directory: ~/project
+    <<: *working_directory
     executor: python
     steps:
       - checkout
@@ -398,7 +427,7 @@ jobs:
       environment:
         type: string
         default: ""
-    working_directory: ~/project
+    <<: *working_directory
     executor: terraform
     steps:
       - add_ssh_keys:
@@ -449,7 +478,7 @@ jobs:
                 package: << parameters.package >>
 
   test_visual_comps:
-    working_directory: ~/project
+    <<: *working_directory
     executor: node-large
     steps:
       - checkout
@@ -485,25 +514,10 @@ jobs:
       - slack/status:
           <<: *slack_status
 
-  install_cypress:
-    working_directory: ~/project
-    executor: cypress
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: install cypress
-          command: make install_cypress
-      - save_cache:
-          key: v1-cypress-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache/Cypress
-      - slack/status:
-          <<: *slack_status
+
 
   test_visual_docs:
-    working_directory: ~/project
+    <<: *cypress_defaults
     executor: cypress
     steps:
       - checkout
@@ -529,7 +543,7 @@ jobs:
           <<: *slack_status
 
   test_e2e_comps:
-    working_directory: ~/project
+    <<: *cypress_defaults
     executor: cypress
     steps:
       - checkout
@@ -549,7 +563,7 @@ jobs:
           <<: *slack_status
 
   test_e2e_docs:
-    working_directory: ~/project
+    <<: *cypress_defaults
     executor: cypress
     steps:
       - checkout
@@ -570,7 +584,7 @@ jobs:
           <<: *slack_status
 
   copy_dev_baselines_to_master:
-    working_directory: ~/project
+    <<: *working_directory
     executor: java
     steps:
       - checkout
@@ -583,7 +597,7 @@ jobs:
             java -jar EyesUtilities_1.3.1.jar copyBaselines -s develop -t master -k ${APPLITOOLS_API_KEY_WITH_MERGE_CREDENTIALS}
 
   create_release_candidate:
-    working_directory: ~/project
+    <<: *working_directory
     executor: node
     steps:
       - checkout
