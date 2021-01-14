@@ -62,7 +62,6 @@ export default (layoutProps: LayoutProps) => (
           },
         ]}
       />
-      />
       {/* TODO we need to be able to override space - for xs.  Another ticket. */}
       <Cell xs={12} md={10} lg={8} mdOffset={1}>
         <Separator />
