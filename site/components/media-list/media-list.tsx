@@ -14,62 +14,72 @@ export const MediaList: React.FC<MediaListProps> = ({
   lgCard,
   xlCard,
   cards,
-  cellWrapperProps,
 }) => (
-  <Cell xs={12} md={10} lg={8} mdOffset={1} {...cellWrapperProps}>
+  <Cell xs={12} md={10} lg={8} mdOffset={1}>
     <Block spaceStack={spaceStack}>
       <Grid xsMargin="space000" xsRowGutter="space080">
-        {cards.map(({media, title: cardTitle, description, subtitle, href}) => (
-          <Cell xs={xsCard} sm={smCard} md={mdCard} lg={lgCard} xl={xlCard}>
-            <StyledCard
-              media={media}
-              overrides={{
-                mediaContainer: {
-                  stylePreset: media && href && 'cardContainerMediaInteractive',
-                },
-                teaserContainer: {
-                  spaceInset: !media
-                    ? {
-                        xs: 'spaceInset040',
-                        sm: 'spaceInset040',
-                        lg: 'spaceInset050',
-                        xl: 'spaceInset050',
-                      }
-                    : undefined,
-                },
-              }}
-              href={href}
-            >
-              <Block spaceStack="space040">
-                <TextBlock
-                  typographyPreset={
-                    media ? 'editorialHeadline020' : 'utilityLabel020'
-                  }
-                >
-                  {cardTitle}
-                </TextBlock>
-              </Block>
-              {subtitle && (
+        {cards.map(
+          ({media, title: cardTitle, description, subtitle, href, styles}) => (
+            <Cell xs={xsCard} sm={smCard} md={mdCard} lg={lgCard} xl={xlCard}>
+              <StyledCard
+                media={media}
+                overrides={styles && styles.card && {...styles.card}}
+                href={href}
+              >
                 <Block spaceStack="space040">
                   <TextBlock
+                    stylePreset={
+                      styles && styles.title && styles.title.stylePreset
+                        ? styles.title.stylePreset
+                        : 'inkContrast'
+                    }
                     typographyPreset={
-                      media ? 'editorialHeadline020' : 'editorialHeadline030'
+                      styles && styles.title && styles.title.typographyPreset
+                        ? styles.title.typographyPreset
+                        : 'editorialHeadline020'
                     }
                   >
-                    {subtitle}
+                    {cardTitle}
                   </TextBlock>
                 </Block>
-              )}
-              <TextBlock
-                typographyPreset={
-                  media ? 'editorialParagraph020' : 'utilityBody020'
-                }
-              >
-                {description}
-              </TextBlock>
-            </StyledCard>
-          </Cell>
-        ))}
+                {subtitle && (
+                  <Block spaceStack="space040">
+                    <TextBlock
+                      stylePreset={
+                        styles && styles.subtitle && styles.subtitle.stylePreset
+                      }
+                      typographyPreset={
+                        styles &&
+                        styles.subtitle &&
+                        styles.subtitle.typographyPreset
+                      }
+                    >
+                      {subtitle}
+                    </TextBlock>
+                  </Block>
+                )}
+                <TextBlock
+                  stylePreset={
+                    styles &&
+                    styles.description &&
+                    styles.description.stylePreset
+                      ? styles.description.stylePreset
+                      : 'inkPreset'
+                  }
+                  typographyPreset={
+                    styles &&
+                    styles.description &&
+                    styles.description.typographyPreset
+                      ? styles.description.typographyPreset
+                      : 'editorialParagraph020'
+                  }
+                >
+                  {description}
+                </TextBlock>
+              </StyledCard>
+            </Cell>
+          ),
+        )}
       </Grid>
     </Block>
   </Cell>

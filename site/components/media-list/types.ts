@@ -1,4 +1,4 @@
-import {CellProps} from 'newskit';
+import {CardOverridesProps, MQ} from 'newskit';
 
 export interface MediaListProps {
   cards: Array<MediaItem>;
@@ -8,7 +8,11 @@ export interface MediaListProps {
   lgCard?: number;
   xlCard?: number;
   spaceStack?: string;
-  cellWrapperProps?: CellProps;
+}
+
+interface TextBlockPresets {
+  stylePreset: MQ<string>;
+  typographyPreset: MQ<string>;
 }
 
 export interface MediaItem {
@@ -20,4 +24,10 @@ export interface MediaItem {
     alt: string;
   };
   href?: string;
+  styles?: {
+    card?: CardOverridesProps;
+    title?: TextBlockPresets;
+    subtitle?: TextBlockPresets;
+    description?: TextBlockPresets;
+  };
 }

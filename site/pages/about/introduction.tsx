@@ -6,17 +6,6 @@ import {SectionIntroduction} from '../../components/section-introduction';
 import {Separator} from '../../components/separator';
 import {MediaList} from '../../components/media-list';
 
-interface Card {
-  media: {
-    src: string;
-    alt: string;
-  };
-  title: string;
-  subtitle: string;
-  description: string;
-}
-
-// As a proposal we can move all of the static description in another file
 const cardContents = [
   {
     title: 'User focusse',
@@ -60,6 +49,46 @@ const cardContents = [
       'We thoroughly consider, design, develop and test solutions before they are released for users to consume. Whenever we make a change to the design system, we communicate this through well-structured documentation.',
   },
 ];
+
+const cardStylePresets = [
+  'cardContainerNonInteractive030',
+  'cardContainerNonInteractive030',
+  'cardContainerNonInteractive020',
+  'cardContainerNonInteractive020',
+  'cardContainerNonInteractive010',
+  'cardContainerNonInteractive010',
+];
+
+const cardStyles = cardStylePresets.map(preset => ({
+  card: {
+    stylePreset: preset,
+    teaserContainer: {
+      spaceInset: {
+        xs: 'spaceInset040',
+        sm: 'spaceInset040',
+        lg: 'spaceInset050',
+        xl: 'spaceInset050',
+      },
+    },
+  },
+  title: {
+    stylePreset: 'inkWhiteSubtle',
+    typographyPreset: 'utilityLabel020',
+  },
+  subtitle: {
+    stylePreset: 'inkWhiteContrast',
+    typographyPreset: 'editorialHeadline030',
+  },
+  description: {
+    stylePreset: 'inkWhiteSubtle',
+    typographyPreset: 'editorialParagraph020',
+  },
+}));
+
+const cardsForPage = cardContents.map((content, index) => ({
+  ...content,
+  styles: {...cardStyles[index]},
+}));
 
 export default (layoutProps: LayoutProps) => (
   //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
@@ -113,7 +142,7 @@ export default (layoutProps: LayoutProps) => (
         NewsKit design system and the NewsKit team is guided by a set of
         principles.
       </SectionIntroduction>
-      <MediaList cards={cardContents} />
+      <MediaList cards={cardsForPage} />
     </Grid>
   </Layout>
 );
