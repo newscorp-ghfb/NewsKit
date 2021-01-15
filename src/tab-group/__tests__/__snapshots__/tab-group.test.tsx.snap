@@ -22,6 +22,7 @@ exports[`Tab Group FittedEqual renders tab group horizontal FittedEqual 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-20 {
@@ -468,14 +469,7 @@ exports[`Tab Group FittedEqual renders tab group horizontal FittedEqual 1`] = `
 
 exports[`Tab Group FittedEqual renders tab group vertical FittedEqual 1`] = `
 <DocumentFragment>
-  .emotion-21 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
+  .emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -545,6 +539,14 @@ exports[`Tab Group FittedEqual renders tab group vertical FittedEqual 1`] = `
   -webkit-flex-flow: row;
   -ms-flex-flow: row;
   flex-flow: row;
+}
+
+.emotion-21 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 8px;
 }
 
 .emotion-20 {
@@ -956,6 +958,7 @@ exports[`Tab Group FittedFlex renders tab group horizontal fittedFlex 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-20 {
@@ -1402,14 +1405,7 @@ exports[`Tab Group FittedFlex renders tab group horizontal fittedFlex 1`] = `
 
 exports[`Tab Group FittedFlex renders tab group vertical FittedFlex 1`] = `
 <DocumentFragment>
-  .emotion-21 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
+  .emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1479,6 +1475,14 @@ exports[`Tab Group FittedFlex renders tab group vertical FittedFlex 1`] = `
   -webkit-flex-flow: row;
   -ms-flex-flow: row;
   flex-flow: row;
+}
+
+.emotion-21 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 8px;
 }
 
 .emotion-20 {
@@ -1890,6 +1894,7 @@ exports[`Tab Group LeftStacked renders tab group horizontal leftstacked 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-20 {
@@ -2336,14 +2341,7 @@ exports[`Tab Group LeftStacked renders tab group horizontal leftstacked 1`] = `
 
 exports[`Tab Group LeftStacked renders tab group vertical leftstacked 1`] = `
 <DocumentFragment>
-  .emotion-21 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
+  .emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2413,6 +2411,14 @@ exports[`Tab Group LeftStacked renders tab group vertical leftstacked 1`] = `
   -webkit-flex-flow: row;
   -ms-flex-flow: row;
   flex-flow: row;
+}
+
+.emotion-21 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 8px;
 }
 
 .emotion-20 {
@@ -2824,6 +2830,7 @@ exports[`Tab Group changes focus and sets first to be active on right arrow when
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-20 {
@@ -3290,6 +3297,7 @@ exports[`Tab Group changes focus and sets last to be active on left arrow when o
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-20 {
@@ -3756,6 +3764,7 @@ exports[`Tab Group changes focus and sets next to be active on right arrow 1`] =
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-20 {
@@ -4222,6 +4231,7 @@ exports[`Tab Group changes focus and sets previous to be active on left arrow 1`
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-20 {
@@ -4688,6 +4698,7 @@ exports[`Tab Group changes focus on tab 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-20 {
@@ -5118,6 +5129,7 @@ exports[`Tab Group clears focus onMouseDown 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-20 {
@@ -5548,6 +5560,7 @@ exports[`Tab Group doesnt change focus if no other available tabs 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-20 {
@@ -5952,6 +5965,7 @@ exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-20 {
@@ -6362,14 +6376,7 @@ exports[`Tab Group doesnt change focus if unassigned key is pushed 1`] = `
 
 exports[`Tab Group renders dividers correctly when orientation is vertical 1`] = `
 <DocumentFragment>
-  .emotion-25 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2 {
+  .emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6449,6 +6456,14 @@ exports[`Tab Group renders dividers correctly when orientation is vertical 1`] =
   -webkit-flex-flow: row;
   -ms-flex-flow: row;
   flex-flow: row;
+}
+
+.emotion-25 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 8px;
 }
 
 .emotion-24 {
@@ -6852,6 +6867,7 @@ exports[`Tab Group renders with custom tab bar track and indicator weight 1`] = 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-29 {
@@ -7351,6 +7367,7 @@ exports[`Tab Group renders with default styles 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-20 {
@@ -7781,6 +7798,7 @@ exports[`Tab Group renders with default styles and divider 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-24 {
@@ -8250,6 +8268,7 @@ exports[`Tab Group renders with fixed tab indicator percentage size 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-29 {
@@ -8749,6 +8768,7 @@ exports[`Tab Group renders with fixed tab indicator size 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-29 {
@@ -9248,6 +9268,7 @@ exports[`Tab Group renders with fixed tab indicator size which is larger than de
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-29 {
@@ -9747,6 +9768,7 @@ exports[`Tab Group renders with icons and label for tabs 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-29 {
@@ -10246,6 +10268,7 @@ exports[`Tab Group renders with icons for tabs 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-23 {
@@ -10671,14 +10694,7 @@ exports[`Tab Group renders with icons for tabs 1`] = `
 
 exports[`Tab Group renders with overrides 1`] = `
 <DocumentFragment>
-  .emotion-30 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-29 {
+  .emotion-29 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -10987,6 +11003,14 @@ exports[`Tab Group renders with overrides 1`] = `
   flex-flow: column;
 }
 
+.emotion-30 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
 <div
     class="emotion-31"
     data-testid="tab-group"
@@ -11186,6 +11210,7 @@ exports[`Tab Group renders with sizing 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-20 {
@@ -11616,6 +11641,7 @@ exports[`Tab Group sets active on click 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .emotion-20 {

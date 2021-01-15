@@ -132,6 +132,7 @@ describe('Tab Group', () => {
       size: TabSize.Large,
       overrides: {
         stylePreset: 'tabGroupCustom',
+        spaceInline: 'space050',
       },
     };
 

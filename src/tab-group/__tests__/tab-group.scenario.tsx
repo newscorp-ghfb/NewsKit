@@ -863,7 +863,7 @@ export default {
         <React.Fragment>
           <StorybookHeading>
             Tab Group with custom inset, style preset, tabs navigation bar
-            height
+            height, spaceInline
           </StorybookHeading>
           <StorybookSubHeading>Vertical</StorybookSubHeading>
           <TabGroup
@@ -872,6 +872,11 @@ export default {
               tabBar: {height: 'sizing120'},
               stylePreset: 'tagPrimary',
               spaceInset: 'spaceInset040',
+              spaceInline: {
+                xs: 'space020',
+                md: 'space050',
+                xl: 'space080',
+              },
             }}
             tabPanes={[
               <TabPane

@@ -4,6 +4,8 @@ import {
   getStylePreset,
   getHeight,
   getWeight,
+  getSpacingInlineVertical,
+  getSpacingInlineHorizontal,
 } from '../utils/style';
 import {
   TabGroupProps,
@@ -43,6 +45,11 @@ export const StyledtabBar = styled.div<tabBarProps>`
   /* it works with FittedFlex and FittedEqual */
   height: ${getHeight(undefined, 'tabBar')};
   display: flex;
+  ${({vertical}) =>
+    (vertical ? getSpacingInlineHorizontal : getSpacingInlineVertical)(
+      'tabGroup',
+      '',
+    )}
 `;
 
 export const StyledInnerTabGroup = styled(Stack)<

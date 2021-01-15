@@ -17,6 +17,7 @@ export interface TabGroupProps {
   overrides?: {
     stylePreset?: MQ<string>;
     spaceInset?: MQ<string>;
+    spaceInline?: MQ<string>;
     tabBar?: {
       height?: string;
     };
@@ -47,4 +48,5 @@ export interface DistributionWrapperProps {
   vertical: boolean;
 }
 
-export interface tabBarProps extends Pick<TabGroupProps, 'overrides'> {}
+export interface tabBarProps
+  extends Pick<TabGroupProps, 'overrides' | 'vertical'> {}

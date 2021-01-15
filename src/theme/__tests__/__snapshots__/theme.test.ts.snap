@@ -649,6 +649,7 @@ Object {
       },
     },
     "tabGroup": Object {
+      "spaceInline": "space020",
       "stylePreset": "tabGroup",
       "tabBarIndicator": Object {
         "motionDuration": "motionDuration030",

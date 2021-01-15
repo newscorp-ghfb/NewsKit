@@ -187,9 +187,8 @@ Tabs have a number of props to facilitate a variety of uses:
   </Prop>
   <Prop
     name="distribution"
-    type="string"
-    enum={TabSize}
-    default={'TabsDistribution.LeftStacked'}
+    type="TabsDistribution"
+    default="TabsDistribution.LeftStacked"
   >
     Change the distribution of the tab group.
     <br />
@@ -240,6 +239,10 @@ Tabs have a number of props to facilitate a variety of uses:
     <Prop name="spaceInset" type="MQ<string>">
       The value for this prop should be a spaceInset token, If provided it will
       inset the the whole tab group.
+    </Prop>
+    <Prop name="spaceInline" type="MQ<string>">
+      The value for this prop should be a space token, If provided, this
+      overrides the space between the Tab navigation and Tab content
     </Prop>
     <Prop name="tabBar" type="object">
       <Prop name="height" type="string">

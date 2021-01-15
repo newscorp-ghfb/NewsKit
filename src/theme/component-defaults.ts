@@ -482,6 +482,7 @@ export const componentDefaults = {
       motionDuration: 'motionDuration030',
       motionTiming: 'motionEaseInAndOut',
     },
+    spaceInline: 'space020',
   },
   tabPane: {
     typographyPreset: 'utilityBody020',

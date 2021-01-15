@@ -128,7 +128,11 @@ export const TabGroup: React.FC<TabGroupProps> = ({
       overrides={overrides}
       data-testid="tab-group"
     >
-      <StyledtabBar overrides={overrides} data-testid="tab-bar">
+      <StyledtabBar
+        overrides={overrides}
+        vertical={vertical}
+        data-testid="tab-bar"
+      >
         <StyledInnerTabGroup
           overrides={overrides}
           flow={vertical ? Flow.VerticalLeft : Flow.HorizontalCenter}
