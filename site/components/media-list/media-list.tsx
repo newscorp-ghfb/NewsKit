@@ -64,7 +64,7 @@ export const MediaList: React.FC<MediaListProps> = ({
                     styles.description &&
                     styles.description.stylePreset
                       ? styles.description.stylePreset
-                      : 'inkPreset'
+                      : 'inkContrast'
                   }
                   typographyPreset={
                     styles &&

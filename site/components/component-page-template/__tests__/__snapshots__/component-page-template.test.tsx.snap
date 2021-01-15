@@ -7552,7 +7552,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   margin-right: calc(-8px/2);
 }
 
-.emotion-377 {
+.emotion-398 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -7565,7 +7565,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   letter-spacing: 0;
 }
 
-.emotion-377::before {
+.emotion-398::before {
   content: '';
   display: block;
   height: 0;
@@ -7573,7 +7573,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   margin-bottom: -0.4em;
 }
 
-.emotion-377::after {
+.emotion-398::after {
   content: '';
   display: block;
   height: 0;
@@ -8806,6 +8806,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 .emotion-375 {
   margin: 0;
   padding: 1px 0;
+  color: #0a0a0a;
   font-family: "Source Serif Pro",serif;
   font-size: 20px;
   line-height: 1.2;
@@ -8814,6 +8815,10 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+}
+
+.emotion-375 svg {
+  fill: #0a0a0a;
 }
 
 .emotion-375::before {
@@ -8830,6 +8835,40 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   height: 0;
   width: 0;
   margin-top: -0.3125em;
+}
+
+.emotion-377 {
+  margin: 0;
+  padding: 1px 0;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-377 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-377::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-377::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
 }
 
 <div
@@ -11049,7 +11088,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                             class="emotion-236"
                           >
                             <p
-                              class="emotion-377"
+                              class="emotion-398"
                             >
                               For more information on overriding component defaults, see the docs 
                               <a
@@ -20383,6 +20422,40 @@ exports[`Component Page Template renders mandatory sections and focus order from
   margin-bottom: 16px;
 }
 
+.emotion-368 {
+  margin: 0;
+  padding: 1px 0;
+  color: #0a0a0a;
+  font-family: "Source Serif Pro",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-368 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-368::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.25em;
+}
+
+.emotion-368::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3125em;
+}
+
 .emotion-389 {
   box-sizing: border-box;
   background-clip: padding-box;
@@ -20527,40 +20600,6 @@ exports[`Component Page Template renders mandatory sections and focus order from
     margin-top: 80px;
     display: block;
   }
-}
-
-.emotion-368 {
-  margin: 0;
-  padding: 1px 0;
-  color: #0a0a0a;
-  font-family: "Source Serif Pro",serif;
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-368 svg {
-  fill: #0a0a0a;
-}
-
-.emotion-368::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.25em;
-}
-
-.emotion-368::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3125em;
 }
 
 .emotion-385 {
@@ -43525,62 +43564,12 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   height: 100%;
 }
 
-.emotion-394 {
-  box-sizing: border-box;
-  background-color: transparent;
-}
-
-.emotion-393 {
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 0;
-  color: #2e2e2e;
-  padding: 0;
-}
-
-.emotion-393 a:not(.nk-card-link) {
-  z-index: 2;
-  position: relative;
-}
-
-.emotion-390 {
-  margin-bottom: 16px;
-}
-
-.emotion-389 {
-  margin: 0;
-  padding: 1px 0;
-  font-family: "Source Serif Pro",serif;
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 600;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-}
-
-.emotion-389::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.25em;
-}
-
-.emotion-389::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3125em;
-}
-
 .emotion-388 {
   box-sizing: border-box;
   display: block;
   position: relative;
   overflow: hidden;
+  border-radius: 0;
 }
 
 @media screen and (max-width:479px) {
@@ -43608,10 +43597,107 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 }
 
 .emotion-386 {
+  border-radius: 0;
   position: relative;
   width: 100%;
   padding-top: 66%;
   height: 0;
+  border-radius: 0;
+  background-color: #fafafa;
+}
+
+.emotion-386 svg {
+  fill: #c0c0c0;
+}
+
+.emotion-394 {
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.emotion-393 {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 0;
+  color: #2e2e2e;
+  padding: 0;
+}
+
+.emotion-393 a:not(.nk-card-link) {
+  z-index: 2;
+  position: relative;
+}
+
+.emotion-390 {
+  margin-bottom: 16px;
+}
+
+.emotion-389 {
+  margin: 0;
+  padding: 1px 0;
+  color: #0a0a0a;
+  font-family: "Source Serif Pro",serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-389 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-389::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.25em;
+}
+
+.emotion-389::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.3125em;
+}
+
+.emotion-391 {
+  margin: 0;
+  padding: 1px 0;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-391 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-391::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-391::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
 }
 
 .emotion-396 {
@@ -45903,7 +45989,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
                                         </p>
                                       </div>
                                       <p
-                                        class="emotion-366"
+                                        class="emotion-391"
                                       >
                                         Description
                                       </p>
@@ -59387,7 +59473,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   margin-right: calc(-8px/2);
 }
 
-.emotion-377 {
+.emotion-398 {
   margin: 0;
   padding: 1px 0;
   font-family: "Noto Sans",sans-serif;
@@ -59400,7 +59486,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   letter-spacing: 0;
 }
 
-.emotion-377::before {
+.emotion-398::before {
   content: '';
   display: block;
   height: 0;
@@ -59408,7 +59494,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   margin-bottom: -0.4em;
 }
 
-.emotion-377::after {
+.emotion-398::after {
   content: '';
   display: block;
   height: 0;
@@ -60641,6 +60727,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 .emotion-375 {
   margin: 0;
   padding: 1px 0;
+  color: #0a0a0a;
   font-family: "Source Serif Pro",serif;
   font-size: 20px;
   line-height: 1.2;
@@ -60649,6 +60736,10 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
+}
+
+.emotion-375 svg {
+  fill: #0a0a0a;
 }
 
 .emotion-375::before {
@@ -60665,6 +60756,40 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   height: 0;
   width: 0;
   margin-top: -0.3125em;
+}
+
+.emotion-377 {
+  margin: 0;
+  padding: 1px 0;
+  color: #0a0a0a;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+.emotion-377 svg {
+  fill: #0a0a0a;
+}
+
+.emotion-377::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-bottom: -0.4em;
+}
+
+.emotion-377::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: -0.4625em;
 }
 
 <div
@@ -62884,7 +63009,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                             class="emotion-236"
                           >
                             <p
-                              class="emotion-377"
+                              class="emotion-398"
                             >
                               For more information on overriding component defaults, see the docs 
                               <a
