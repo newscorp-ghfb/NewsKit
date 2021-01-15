@@ -15,6 +15,7 @@ describe('compileTheme', () => {
         "icons": Object {},
         "interactiveNegative010": "#ff0000",
         "red010": "#ff0000",
+        "stylePresets": Object {},
       }
     `);
   });
@@ -35,6 +36,7 @@ describe('compileTheme', () => {
         "mySizing000": 0,
         "sizing00": "",
         "sizing000": 0,
+        "stylePresets": Object {},
       }
     `);
   });
@@ -55,6 +57,7 @@ describe('compileTheme', () => {
         },
         "compiled": true,
         "icons": Object {},
+        "stylePresets": Object {},
       }
     `);
   });
@@ -83,6 +86,7 @@ describe('compileTheme', () => {
           "fontLineHeight020Copy": 1.125,
         },
         "icons": Object {},
+        "stylePresets": Object {},
       }
     `);
   });
@@ -258,21 +262,85 @@ describe('compileTheme', () => {
     };
 
     expect(compileTheme(theme)).toMatchInlineSnapshot(`
-            Object {
-              "compiled": true,
-              "fonts": Object {
-                "fontConfig1": Object {
-                  "cropAdjustments": Object {
-                    "12px": Object {
-                      "top": 1.2,
-                    },
-                  },
-                },
-                "fontSize020": "12px",
+      Object {
+        "compiled": true,
+        "fonts": Object {
+          "fontConfig1": Object {
+            "cropAdjustments": Object {
+              "12px": Object {
+                "top": 1.2,
               },
-              "icons": Object {},
-            }
-        `);
+            },
+          },
+          "fontSize020": "12px",
+        },
+        "icons": Object {},
+        "stylePresets": Object {},
+      }
+    `);
+  });
+
+  test('adds ink stylePreset when ink colors are being passed', () => {
+    const theme: any = {
+      colors: {
+        inkBase: 'base-colour',
+        inkContrast: 'contrast-colour',
+        inkSubtle: 'subtle-colour',
+      },
+    };
+
+    expect(compileTheme(theme)).toMatchInlineSnapshot(`
+      Object {
+        "colors": Object {
+          "inkBase": "base-colour",
+          "inkContrast": "contrast-colour",
+          "inkSubtle": "subtle-colour",
+        },
+        "compiled": true,
+        "icons": Object {},
+        "stylePresets": Object {
+          "inkBase": Object {
+            "base": Object {
+              "color": "base-colour",
+              "iconColor": "base-colour",
+            },
+          },
+          "inkContrast": Object {
+            "base": Object {
+              "color": "contrast-colour",
+              "iconColor": "contrast-colour",
+            },
+          },
+          "inkSubtle": Object {
+            "base": Object {
+              "color": "subtle-colour",
+              "iconColor": "subtle-colour",
+            },
+          },
+          "uppercaseInkBase": Object {
+            "base": Object {
+              "color": "base-colour",
+              "iconColor": "base-colour",
+              "textTransform": "uppercase",
+            },
+          },
+          "uppercaseInkContrast": Object {
+            "base": Object {
+              "color": "contrast-colour",
+              "iconColor": "contrast-colour",
+              "textTransform": "uppercase",
+            },
+          },
+          "uppercaseInkSubtle": Object {
+            "base": Object {
+              "color": "subtle-colour",
+              "iconColor": "subtle-colour",
+              "textTransform": "uppercase",
+            },
+          },
+        },
+      }
+    `);
   });
 
   test('only replaces double bracket wrapped tokens', () => {
@@ -284,15 +352,16 @@ describe('compileTheme', () => {
     };
 
     expect(compileTheme(theme)).toMatchInlineSnapshot(`
-            Object {
-              "colour1": "white",
-              "colour2": "{white}",
-              "colour3": "#ffffff",
-              "compiled": true,
-              "icons": Object {},
-              "white": "#ffffff",
-            }
-        `);
+      Object {
+        "colour1": "white",
+        "colour2": "{white}",
+        "colour3": "#ffffff",
+        "compiled": true,
+        "icons": Object {},
+        "stylePresets": Object {},
+        "white": "#ffffff",
+      }
+    `);
   });
 
   test('replaces multiple tokens in a single string', () => {
@@ -305,16 +374,17 @@ describe('compileTheme', () => {
     };
 
     expect(compileTheme(theme)).toMatchInlineSnapshot(`
-            Object {
-              "compiled": true,
-              "icons": Object {},
-              "sizing": Object {
-                "sizing010": "2px",
-                "sizing020": "4px",
-                "spaceInset": "2px 4px",
-              },
-            }
-        `);
+      Object {
+        "compiled": true,
+        "icons": Object {},
+        "sizing": Object {
+          "sizing010": "2px",
+          "sizing020": "4px",
+          "spaceInset": "2px 4px",
+        },
+        "stylePresets": Object {},
+      }
+    `);
   });
 
   test('calls calculation functions', () => {
@@ -323,14 +393,15 @@ describe('compileTheme', () => {
     };
 
     const result = compileTheme(theme);
-    expect(theme.lineHeight).toHaveBeenCalledWith(theme);
+    expect(theme.lineHeight).toHaveBeenCalledWith({...theme, stylePresets: {}});
     expect(result).toMatchInlineSnapshot(`
-            Object {
-              "compiled": true,
-              "icons": Object {},
-              "lineHeight": 42,
-            }
-        `);
+      Object {
+        "compiled": true,
+        "icons": Object {},
+        "lineHeight": 42,
+        "stylePresets": Object {},
+      }
+    `);
   });
 
   test('logs error if a token is not found', () => {
@@ -348,6 +419,7 @@ describe('compileTheme', () => {
         "compiled": true,
         "icons": Object {},
         "myColour": undefined,
+        "stylePresets": Object {},
       }
     `);
   });
@@ -366,16 +438,17 @@ describe('compileTheme', () => {
     const result1 = compileTheme(deepTheme);
     expect(console.error).not.toHaveBeenCalledWith();
     expect(result1).toMatchInlineSnapshot(`
-            Object {
-              "compiled": true,
-              "deepToken": "#00ff00",
-              "deepToken1": "#00ff00",
-              "deepToken2": "#00ff00",
-              "deepToken3": "#00ff00",
-              "deepToken4": "#00ff00",
-              "icons": Object {},
-            }
-        `);
+      Object {
+        "compiled": true,
+        "deepToken": "#00ff00",
+        "deepToken1": "#00ff00",
+        "deepToken2": "#00ff00",
+        "deepToken3": "#00ff00",
+        "deepToken4": "#00ff00",
+        "icons": Object {},
+        "stylePresets": Object {},
+      }
+    `);
   });
 
   test('stops if recursion level hits 5', () => {
@@ -402,6 +475,7 @@ describe('compileTheme', () => {
         "deepToken4": "#00ff00",
         "deepToken5": "",
         "icons": Object {},
+        "stylePresets": Object {},
       }
     `);
   });
@@ -418,14 +492,15 @@ describe('compileTheme', () => {
       'Recursive loop detected, token stack: "recursiveToken1", "recursiveToken", "recursiveToken1", "recursiveToken", "recursiveToken1"!',
     );
     expect(result).toMatchInlineSnapshot(`
-            Object {
-              "compiled": true,
-              "icons": Object {},
-              "recursiveToken": "",
-              "recursiveToken1": "",
-              "recursiveToken2": "",
-            }
-        `);
+      Object {
+        "compiled": true,
+        "icons": Object {},
+        "recursiveToken": "",
+        "recursiveToken1": "",
+        "recursiveToken2": "",
+        "stylePresets": Object {},
+      }
+    `);
   });
 
   test('full theme compile', () => {

@@ -1,6 +1,6 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import {ThemeLoggerFunction, Theme, UncompiledTheme} from '../types';
+import {ThemeLoggerFunction, Theme, UncompiledTheme, ThemeBase} from '../types';
 import {get} from '../../utils/get';
 import {ThemeCompilerOptions} from './types';
 
@@ -17,7 +17,6 @@ const parseTokens = (str: unknown) => {
   while ((res = regex.exec(str))) {
     result.push(res[1]);
   }
-
   return result;
 };
 
@@ -51,7 +50,6 @@ const parseAndGet = (
             ...stack,
           ]);
         }
-
         return tokens.length > 1
           ? result.replace(`{{${tokenPath}}}`, tokenValue as string)
           : recurseUnknown(theme, tokenValue, errorLogger);
@@ -101,10 +99,35 @@ export const compileTheme = (
 
   // eslint-disable-next-line no-console
   const errorLogger = options.errorLogger || console.error.bind(console);
-
-  const {icons = {}, ...filteredTheme} = theme;
+  const inkStylePresets =
+    theme.colors &&
+    Object.keys(theme.colors).reduce(
+      (acc, color) => {
+        if (color.startsWith('ink')) {
+          acc[color] = {
+            base: {
+              color: `{{colors.${color}}}`,
+              iconColor: `{{colors.${color}}}`,
+            },
+          };
+          acc[`uppercaseI${color.slice(1)}`] = {
+            base: {
+              ...acc[color].base,
+              textTransform: 'uppercase',
+            },
+          };
+        }
+        return acc;
+      },
+      {} as ThemeBase['stylePresets'],
+    );
+  const uncompiledTheme = {
+    ...theme,
+    stylePresets: {...theme.stylePresets, ...inkStylePresets},
+  };
+  const {icons = {}, ...filteredTheme} = uncompiledTheme;
   return {
-    ...(recurseUnknown(theme, filteredTheme, errorLogger) as any),
+    ...(recurseUnknown(uncompiledTheme, filteredTheme, errorLogger) as any),
     icons,
     compiled: true,
   };

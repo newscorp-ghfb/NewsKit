@@ -2321,6 +2321,36 @@ Object {
         "iconColor": "#0a0a0a",
       },
     },
+    "inkHeadingLink": Object {
+      "base": Object {
+        "color": "#0a0a0a",
+        "iconColor": "#0a0a0a",
+      },
+    },
+    "inkHeadingLinkActive": Object {
+      "base": Object {
+        "color": "#2F75D7",
+        "iconColor": "#2F75D7",
+      },
+    },
+    "inkHeadingLinkHover": Object {
+      "base": Object {
+        "color": "#2F75D7",
+        "iconColor": "#2F75D7",
+      },
+    },
+    "inkHeadingLinkVisited": Object {
+      "base": Object {
+        "color": "#0a0a0a",
+        "iconColor": "#0a0a0a",
+      },
+    },
+    "inkInformative": Object {
+      "base": Object {
+        "color": "#128293",
+        "iconColor": "#128293",
+      },
+    },
     "inkInverse": Object {
       "base": Object {
         "color": "#ffffff",
@@ -2337,6 +2367,12 @@ Object {
       "base": Object {
         "color": "#c0c0c0",
         "iconColor": "#c0c0c0",
+      },
+    },
+    "inkNotice": Object {
+      "base": Object {
+        "color": "#ff7200",
+        "iconColor": "#ff7200",
       },
     },
     "inkPositive": Object {
@@ -2808,6 +2844,13 @@ Object {
         "textTransform": "uppercase",
       },
     },
+    "uppercaseInkBrand020": Object {
+      "base": Object {
+        "color": "#d5ebff",
+        "iconColor": "#d5ebff",
+        "textTransform": "uppercase",
+      },
+    },
     "uppercaseInkContrast": Object {
       "base": Object {
         "color": "#0a0a0a",
@@ -2815,10 +2858,73 @@ Object {
         "textTransform": "uppercase",
       },
     },
+    "uppercaseInkHeadingLink": Object {
+      "base": Object {
+        "color": "#0a0a0a",
+        "iconColor": "#0a0a0a",
+        "textTransform": "uppercase",
+      },
+    },
+    "uppercaseInkHeadingLinkActive": Object {
+      "base": Object {
+        "color": "#2F75D7",
+        "iconColor": "#2F75D7",
+        "textTransform": "uppercase",
+      },
+    },
+    "uppercaseInkHeadingLinkHover": Object {
+      "base": Object {
+        "color": "#2F75D7",
+        "iconColor": "#2F75D7",
+        "textTransform": "uppercase",
+      },
+    },
+    "uppercaseInkHeadingLinkVisited": Object {
+      "base": Object {
+        "color": "#0a0a0a",
+        "iconColor": "#0a0a0a",
+        "textTransform": "uppercase",
+      },
+    },
+    "uppercaseInkInformative": Object {
+      "base": Object {
+        "color": "#128293",
+        "iconColor": "#128293",
+        "textTransform": "uppercase",
+      },
+    },
+    "uppercaseInkInverse": Object {
+      "base": Object {
+        "color": "#ffffff",
+        "iconColor": "#ffffff",
+        "textTransform": "uppercase",
+      },
+    },
+    "uppercaseInkNegative": Object {
+      "base": Object {
+        "color": "#d20600",
+        "iconColor": "#d20600",
+        "textTransform": "uppercase",
+      },
+    },
     "uppercaseInkNonEssential": Object {
       "base": Object {
         "color": "#c0c0c0",
         "iconColor": "#c0c0c0",
+        "textTransform": "uppercase",
+      },
+    },
+    "uppercaseInkNotice": Object {
+      "base": Object {
+        "color": "#ff7200",
+        "iconColor": "#ff7200",
+        "textTransform": "uppercase",
+      },
+    },
+    "uppercaseInkPositive": Object {
+      "base": Object {
+        "color": "#0a782a",
+        "iconColor": "#0a782a",
         "textTransform": "uppercase",
       },
     },

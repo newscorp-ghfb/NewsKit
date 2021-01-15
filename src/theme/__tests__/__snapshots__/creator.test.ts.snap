@@ -2296,60 +2296,6 @@ Object {
         "iconColor": "{{colors.inkBase}}",
       },
     },
-    "inkBase": Object {
-      "base": Object {
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkBase}}",
-      },
-    },
-    "inkBrand010": Object {
-      "base": Object {
-        "color": "{{colors.inkBrand010}}",
-        "iconColor": "{{colors.inkBrand010}}",
-      },
-    },
-    "inkBrand020": Object {
-      "base": Object {
-        "color": "{{colors.inkBrand020}}",
-        "iconColor": "{{colors.inkBrand020}}",
-      },
-    },
-    "inkContrast": Object {
-      "base": Object {
-        "color": "{{colors.inkContrast}}",
-        "iconColor": "{{colors.inkContrast}}",
-      },
-    },
-    "inkInverse": Object {
-      "base": Object {
-        "color": "{{colors.inkInverse}}",
-        "iconColor": "{{colors.inkInverse}}",
-      },
-    },
-    "inkNegative": Object {
-      "base": Object {
-        "color": "{{colors.inkNegative}}",
-        "iconColor": "{{colors.inkNegative}}",
-      },
-    },
-    "inkNonEssential": Object {
-      "base": Object {
-        "color": "{{colors.inkNonEssential}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-      },
-    },
-    "inkPositive": Object {
-      "base": Object {
-        "color": "{{colors.inkPositive}}",
-        "iconColor": "{{colors.inkPositive}}",
-      },
-    },
-    "inkSubtle": Object {
-      "base": Object {
-        "color": "{{colors.inkSubtle}}",
-        "iconColor": "{{colors.inkSubtle}}",
-      },
-    },
     "linkEmail": Object {
       "active": Object {
         "color": "{{colors.interactivePrimary050}}",
@@ -2791,41 +2737,6 @@ Object {
       "visited": Object {
         "color": "{{colors.interactiveVisited010}}",
         "iconColor": "{{colors.interactiveVisited010}}",
-      },
-    },
-    "uppercaseInkBase": Object {
-      "base": Object {
-        "color": "{{colors.inkBase}}",
-        "iconColor": "{{colors.inkBase}}",
-        "textTransform": "uppercase",
-      },
-    },
-    "uppercaseInkBrand010": Object {
-      "base": Object {
-        "color": "{{colors.inkBrand010}}",
-        "iconColor": "{{colors.inkBrand010}}",
-        "textTransform": "uppercase",
-      },
-    },
-    "uppercaseInkContrast": Object {
-      "base": Object {
-        "color": "{{colors.inkContrast}}",
-        "iconColor": "{{colors.inkContrast}}",
-        "textTransform": "uppercase",
-      },
-    },
-    "uppercaseInkNonEssential": Object {
-      "base": Object {
-        "color": "{{colors.inkNonEssential}}",
-        "iconColor": "{{colors.inkNonEssential}}",
-        "textTransform": "uppercase",
-      },
-    },
-    "uppercaseInkSubtle": Object {
-      "base": Object {
-        "color": "{{colors.inkSubtle}}",
-        "iconColor": "{{colors.inkSubtle}}",
-        "textTransform": "uppercase",
       },
     },
     "volumeControlButtons": Object {
