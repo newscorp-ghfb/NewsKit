@@ -2,8 +2,8 @@ import {Block, Divider, getSpacingFromTheme, styled} from 'newskit';
 import React from 'react';
 
 const StyledBlock = styled(Block)`
-  margin-top: ${getSpacingFromTheme('space110')};
-  margin-bottom: ${getSpacingFromTheme('space110')};
+  margin-top: ${getSpacingFromTheme('space100')};
+  margin-bottom: ${getSpacingFromTheme('space100')};
 `;
 
 export const Separator = () => (

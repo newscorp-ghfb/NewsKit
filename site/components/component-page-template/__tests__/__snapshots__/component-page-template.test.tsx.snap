@@ -1907,8 +1907,8 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 }
 
 .emotion-387 {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .emotion-419 {
@@ -7589,8 +7589,8 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 }
 
 .emotion-390 {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .emotion-422 {
@@ -13388,8 +13388,8 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 }
 
 .emotion-372 {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .emotion-484 {
@@ -19399,8 +19399,8 @@ exports[`Component Page Template renders mandatory sections and focus order from
 }
 
 .emotion-394 {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .emotion-426 {
@@ -25181,8 +25181,8 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 }
 
 .emotion-406 {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .emotion-424 {
@@ -31225,8 +31225,8 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 }
 
 .emotion-403 {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .emotion-421 {
@@ -36893,8 +36893,8 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 }
 
 .emotion-395 {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .emotion-431 {
@@ -42625,8 +42625,8 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 }
 
 .emotion-372 {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .emotion-417 {
@@ -48266,8 +48266,8 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 }
 
 .emotion-372 {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .emotion-404 {
@@ -53693,8 +53693,8 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 }
 
 .emotion-399 {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .emotion-431 {
@@ -59510,8 +59510,8 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 }
 
 .emotion-390 {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .emotion-422 {
@@ -65309,8 +65309,8 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 }
 
 .emotion-372 {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .emotion-390 {
