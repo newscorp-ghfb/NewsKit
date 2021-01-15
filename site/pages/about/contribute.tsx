@@ -18,7 +18,7 @@ export default (layoutProps: LayoutProps) => (
         type="About"
         name="Contribute"
         introduction="Interested in contributing to NewsKit? Contributors help to make NewsKit great."
-        hero={{src: '/static/placeholder-1x1.png', alt: 'placeholder'}}
+        hero={{src: '/static/contribute-page-introduction.svg', alt: 'placeholder'}}
       />
       {/* TODO the cell is adding some margin top, with adds 
       to the margin bottom of 65 px coming from the image. */}
@@ -34,11 +34,11 @@ export default (layoutProps: LayoutProps) => (
         lgCard={4}
         cards={[
           {
-            title: 'Guide',
+            title: 'Feedback',
             description:
               'Stay in contact with the NewsKit team and help it progress in a positive direction.',
             media: {
-              src: '/static/placeholder-16x9.png',
+              src: '/static/contribute-feedback-card.svg',
               alt: 'Card Media',
             },
           },
@@ -47,7 +47,7 @@ export default (layoutProps: LayoutProps) => (
             description:
               'Promote the Design System, answer questions and help your team integrate.',
             media: {
-              src: '/static/placeholder-16x9.png',
+              src: '/static/contribute-share-card.svg',
               alt: 'Card Media',
             },
           },
@@ -56,7 +56,7 @@ export default (layoutProps: LayoutProps) => (
             description:
               'Write code or design assets for the Design System for other users to reuse.',
             media: {
-              src: '/static/placeholder-16x9.png',
+              src: '/static/contribute-create-card.svg',
               alt: 'Card Media',
             },
           },
