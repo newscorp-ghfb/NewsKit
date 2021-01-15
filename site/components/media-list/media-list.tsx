@@ -14,8 +14,9 @@ export const MediaList: React.FC<MediaListProps> = ({
   lgCard,
   xlCard,
   cards,
+  cellWrapperProps,
 }) => (
-  <Cell xs={12} md={10} lg={8} mdOffset={1}>
+  <Cell xs={12} md={10} lg={8} mdOffset={1} {...cellWrapperProps}>
     <Block spaceStack={spaceStack}>
       <Grid xsMargin="space000" xsRowGutter="space080">
         {cards.map(({media, title: cardTitle, description, subtitle, href}) => (
@@ -23,7 +24,6 @@ export const MediaList: React.FC<MediaListProps> = ({
             <StyledCard
               media={media}
               overrides={{
-                stylePreset: !media ? 'testCard' : undefined,
                 mediaContainer: {
                   stylePreset: media && href && 'cardContainerMediaInteractive',
                 },

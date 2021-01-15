@@ -1,3 +1,5 @@
+import {CellProps} from 'newskit';
+
 export interface MediaListProps {
   cards: Array<MediaItem>;
   xsCard?: number;
@@ -6,6 +8,7 @@ export interface MediaListProps {
   lgCard?: number;
   xlCard?: number;
   spaceStack?: string;
+  cellWrapperProps?: CellProps;
 }
 
 export interface MediaItem {
