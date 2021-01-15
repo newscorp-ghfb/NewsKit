@@ -938,19 +938,19 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
 
 @media screen and (max-width:767px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:768px) and (max-width:1439px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
@@ -1143,8 +1143,37 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   fill: #2e2e2e;
 }
 
+@media screen and (min-width:768px) {
+  .emotion-251 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-251::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-251::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
 .emotion-260 {
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
 .emotion-259 {
@@ -2832,6 +2861,10 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
   }
 }
 
+.emotion-366 {
+  margin-bottom: 48px;
+}
+
 .emotion-365 {
   margin: 0;
   padding: 1px 0;
@@ -4238,16 +4271,16 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
               <div>
                 <a
                   class="emotion-4"
-                  href="/about/introduction"
+                  href="/about/contribute"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/about/introduction"
+                      data-testid="/about/contribute"
                     >
-                      Introduction
+                      Contribute
                     </div>
                   </span>
                 </a>
@@ -5121,7 +5154,7 @@ exports[`Component Page Template renders mandatory sections and anatomy 1`] = `
                                 </div>
                               </div>
                               <div
-                                class="emotion-260"
+                                class="emotion-366"
                               >
                                 <p
                                   class="emotion-365"
@@ -6587,19 +6620,19 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
 
 @media screen and (max-width:767px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:768px) and (max-width:1439px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
@@ -6792,8 +6825,37 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   fill: #2e2e2e;
 }
 
+@media screen and (min-width:768px) {
+  .emotion-251 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-251::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-251::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
 .emotion-260 {
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
 .emotion-259 {
@@ -8481,6 +8543,10 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
   }
 }
 
+.emotion-366 {
+  margin-bottom: 48px;
+}
+
 .emotion-365 {
   margin: 0;
   padding: 1px 0;
@@ -9956,16 +10022,16 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
               <div>
                 <a
                   class="emotion-4"
-                  href="/about/introduction"
+                  href="/about/contribute"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/about/introduction"
+                      data-testid="/about/contribute"
                     >
-                      Introduction
+                      Contribute
                     </div>
                   </span>
                 </a>
@@ -10839,7 +10905,7 @@ exports[`Component Page Template renders mandatory sections and behaviors 1`] = 
                                 </div>
                               </div>
                               <div
-                                class="emotion-260"
+                                class="emotion-366"
                               >
                                 <p
                                   class="emotion-365"
@@ -12314,19 +12380,19 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
 
 @media screen and (max-width:767px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:768px) and (max-width:1439px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
@@ -12519,8 +12585,37 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   fill: #2e2e2e;
 }
 
+@media screen and (min-width:768px) {
+  .emotion-251 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-251::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-251::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
 .emotion-260 {
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
 .emotion-259 {
@@ -14114,6 +14209,10 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
   }
 }
 
+.emotion-380 {
+  margin-bottom: 48px;
+}
+
 .emotion-379 {
   margin: 0;
   padding: 1px 0;
@@ -15600,16 +15699,16 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
               <div>
                 <a
                   class="emotion-4"
-                  href="/about/introduction"
+                  href="/about/contribute"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/about/introduction"
+                      data-testid="/about/contribute"
                     >
-                      Introduction
+                      Contribute
                     </div>
                   </span>
                 </a>
@@ -16543,7 +16642,7 @@ exports[`Component Page Template renders mandatory sections and compliance 1`] =
                         </div>
                       </div>
                       <div
-                        class="emotion-260"
+                        class="emotion-380"
                       >
                         <p
                           class="emotion-379"
@@ -18292,19 +18391,19 @@ exports[`Component Page Template renders mandatory sections and focus order from
 
 @media screen and (max-width:767px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:768px) and (max-width:1439px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
@@ -18497,8 +18596,37 @@ exports[`Component Page Template renders mandatory sections and focus order from
   fill: #2e2e2e;
 }
 
+@media screen and (min-width:768px) {
+  .emotion-251 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-251::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-251::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
 .emotion-260 {
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
 .emotion-259 {
@@ -20186,6 +20314,10 @@ exports[`Component Page Template renders mandatory sections and focus order from
   }
 }
 
+.emotion-366 {
+  margin-bottom: 48px;
+}
+
 .emotion-365 {
   margin: 0;
   padding: 1px 0;
@@ -21662,16 +21794,16 @@ exports[`Component Page Template renders mandatory sections and focus order from
               <div>
                 <a
                   class="emotion-4"
-                  href="/about/introduction"
+                  href="/about/contribute"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/about/introduction"
+                      data-testid="/about/contribute"
                     >
-                      Introduction
+                      Contribute
                     </div>
                   </span>
                 </a>
@@ -22545,7 +22677,7 @@ exports[`Component Page Template renders mandatory sections and focus order from
                                 </div>
                               </div>
                               <div
-                                class="emotion-260"
+                                class="emotion-366"
                               >
                                 <p
                                   class="emotion-365"
@@ -24041,19 +24173,19 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
 
 @media screen and (max-width:767px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:768px) and (max-width:1439px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
@@ -24246,8 +24378,37 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   fill: #2e2e2e;
 }
 
+@media screen and (min-width:768px) {
+  .emotion-251 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-251::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-251::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
 .emotion-260 {
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
 .emotion-259 {
@@ -25935,6 +26096,10 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
   }
 }
 
+.emotion-366 {
+  margin-bottom: 48px;
+}
+
 .emotion-365 {
   margin: 0;
   padding: 1px 0;
@@ -27463,16 +27628,16 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
               <div>
                 <a
                   class="emotion-4"
-                  href="/about/introduction"
+                  href="/about/contribute"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/about/introduction"
+                      data-testid="/about/contribute"
                     >
-                      Introduction
+                      Contribute
                     </div>
                   </span>
                 </a>
@@ -28346,7 +28511,7 @@ exports[`Component Page Template renders mandatory sections and interactiveDemo 
                                 </div>
                               </div>
                               <div
-                                class="emotion-260"
+                                class="emotion-366"
                               >
                                 <p
                                   class="emotion-365"
@@ -30052,19 +30217,19 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
 
 @media screen and (max-width:767px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:768px) and (max-width:1439px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
@@ -30257,8 +30422,37 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   fill: #2e2e2e;
 }
 
+@media screen and (min-width:768px) {
+  .emotion-251 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-251::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-251::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
 .emotion-260 {
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
 .emotion-259 {
@@ -31946,6 +32140,10 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
   }
 }
 
+.emotion-366 {
+  margin-bottom: 48px;
+}
+
 .emotion-365 {
   margin: 0;
   padding: 1px 0;
@@ -33330,16 +33528,16 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
               <div>
                 <a
                   class="emotion-4"
-                  href="/about/introduction"
+                  href="/about/contribute"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/about/introduction"
+                      data-testid="/about/contribute"
                     >
-                      Introduction
+                      Contribute
                     </div>
                   </span>
                 </a>
@@ -34213,7 +34411,7 @@ exports[`Component Page Template renders mandatory sections and overrides 1`] = 
                                 </div>
                               </div>
                               <div
-                                class="emotion-260"
+                                class="emotion-366"
                               >
                                 <p
                                   class="emotion-365"
@@ -35687,19 +35885,19 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
 
 @media screen and (max-width:767px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:768px) and (max-width:1439px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
@@ -35892,8 +36090,37 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   fill: #2e2e2e;
 }
 
+@media screen and (min-width:768px) {
+  .emotion-251 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-251::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-251::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
 .emotion-260 {
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
 .emotion-259 {
@@ -37581,6 +37808,10 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
   }
 }
 
+.emotion-366 {
+  margin-bottom: 48px;
+}
+
 .emotion-365 {
   margin: 0;
   padding: 1px 0;
@@ -38979,16 +39210,16 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
               <div>
                 <a
                   class="emotion-4"
-                  href="/about/introduction"
+                  href="/about/contribute"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/about/introduction"
+                      data-testid="/about/contribute"
                     >
-                      Introduction
+                      Contribute
                     </div>
                   </span>
                 </a>
@@ -39862,7 +40093,7 @@ exports[`Component Page Template renders mandatory sections and props 1`] = `
                                 </div>
                               </div>
                               <div
-                                class="emotion-260"
+                                class="emotion-366"
                               >
                                 <p
                                   class="emotion-365"
@@ -41386,19 +41617,19 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
 
 @media screen and (max-width:767px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:768px) and (max-width:1439px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
@@ -41591,8 +41822,37 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   fill: #2e2e2e;
 }
 
+@media screen and (min-width:768px) {
+  .emotion-251 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-251::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-251::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
 .emotion-260 {
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
 .emotion-259 {
@@ -43186,6 +43446,10 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
   }
 }
 
+.emotion-380 {
+  margin-bottom: 48px;
+}
+
 .emotion-379 {
   margin: 0;
   padding: 1px 0;
@@ -44613,16 +44877,16 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
               <div>
                 <a
                   class="emotion-4"
-                  href="/about/introduction"
+                  href="/about/contribute"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/about/introduction"
+                      data-testid="/about/contribute"
                     >
-                      Introduction
+                      Contribute
                     </div>
                   </span>
                 </a>
@@ -45556,7 +45820,7 @@ exports[`Component Page Template renders mandatory sections and related 1`] = `
                         </div>
                       </div>
                       <div
-                        class="emotion-260"
+                        class="emotion-380"
                       >
                         <p
                           class="emotion-379"
@@ -46947,19 +47211,19 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
 
 @media screen and (max-width:767px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:768px) and (max-width:1439px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
@@ -47152,8 +47416,37 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   fill: #2e2e2e;
 }
 
+@media screen and (min-width:768px) {
+  .emotion-251 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-251::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-251::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
 .emotion-260 {
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
 .emotion-259 {
@@ -48841,6 +49134,10 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
   }
 }
 
+.emotion-366 {
+  margin-bottom: 48px;
+}
+
 .emotion-365 {
   margin: 0;
   padding: 1px 0;
@@ -50065,16 +50362,16 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
               <div>
                 <a
                   class="emotion-4"
-                  href="/about/introduction"
+                  href="/about/contribute"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/about/introduction"
+                      data-testid="/about/contribute"
                     >
-                      Introduction
+                      Contribute
                     </div>
                   </span>
                 </a>
@@ -50948,7 +51245,7 @@ exports[`Component Page Template renders mandatory sections and seo 1`] = `
                                 </div>
                               </div>
                               <div
-                                class="emotion-260"
+                                class="emotion-366"
                               >
                                 <p
                                   class="emotion-365"
@@ -52341,19 +52638,19 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
 
 @media screen and (max-width:767px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:768px) and (max-width:1439px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
@@ -52546,8 +52843,37 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   fill: #2e2e2e;
 }
 
+@media screen and (min-width:768px) {
+  .emotion-251 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-251::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-251::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
 .emotion-260 {
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
 .emotion-259 {
@@ -54235,6 +54561,10 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
   }
 }
 
+.emotion-366 {
+  margin-bottom: 48px;
+}
+
 .emotion-365 {
   margin: 0;
   padding: 1px 0;
@@ -55722,16 +56052,16 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
               <div>
                 <a
                   class="emotion-4"
-                  href="/about/introduction"
+                  href="/about/contribute"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/about/introduction"
+                      data-testid="/about/contribute"
                     >
-                      Introduction
+                      Contribute
                     </div>
                   </span>
                 </a>
@@ -56605,7 +56935,7 @@ exports[`Component Page Template renders mandatory sections and usage 1`] = `
                                 </div>
                               </div>
                               <div
-                                class="emotion-260"
+                                class="emotion-366"
                               >
                                 <p
                                   class="emotion-365"
@@ -58125,19 +58455,19 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
 
 @media screen and (max-width:767px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:768px) and (max-width:1439px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
@@ -58330,8 +58660,37 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   fill: #2e2e2e;
 }
 
+@media screen and (min-width:768px) {
+  .emotion-251 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-251::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-251::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
 .emotion-260 {
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
 .emotion-259 {
@@ -60019,6 +60378,10 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
   }
 }
 
+.emotion-366 {
+  margin-bottom: 48px;
+}
+
 .emotion-365 {
   margin: 0;
   padding: 1px 0;
@@ -61494,16 +61857,16 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
               <div>
                 <a
                   class="emotion-4"
-                  href="/about/introduction"
+                  href="/about/contribute"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/about/introduction"
+                      data-testid="/about/contribute"
                     >
-                      Introduction
+                      Contribute
                     </div>
                   </span>
                 </a>
@@ -62377,7 +62740,7 @@ exports[`Component Page Template renders mandatory sections and variations 1`] =
                                 </div>
                               </div>
                               <div
-                                class="emotion-260"
+                                class="emotion-366"
                               >
                                 <p
                                   class="emotion-365"
@@ -63852,19 +64215,19 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
 
 @media screen and (max-width:767px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:768px) and (max-width:1439px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
 @media screen and (min-width:1440px) {
   .emotion-249 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
   }
 }
 
@@ -64057,8 +64420,37 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
   fill: #2e2e2e;
 }
 
+@media screen and (min-width:768px) {
+  .emotion-251 {
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+
+  .emotion-251::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: -0.25em;
+  }
+
+  .emotion-251::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: -0.3125em;
+  }
+}
+
 .emotion-260 {
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
 .emotion-259 {
@@ -66755,16 +67147,16 @@ exports[`Component Page Template renders with mandatory sections 1`] = `
               <div>
                 <a
                   class="emotion-4"
-                  href="/about/introduction"
+                  href="/about/contribute"
                 >
                   <span
                     class="emotion-3"
                   >
                     <div
                       class="emotion-13"
-                      data-testid="/about/introduction"
+                      data-testid="/about/contribute"
                     >
-                      Introduction
+                      Contribute
                     </div>
                   </span>
                 </a>
