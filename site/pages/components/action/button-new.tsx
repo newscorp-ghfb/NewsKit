@@ -404,7 +404,9 @@ export default (layoutProps: LayoutProps) => (
           },
           styles: {
             card: {
-              stylePreset: 'cardContainerMediaInteractive',
+              mediaContainer: {
+                stylePreset: 'cardContainerMediaInteractive',
+              },
             },
           },
         },
@@ -418,7 +420,9 @@ export default (layoutProps: LayoutProps) => (
           },
           styles: {
             card: {
-              stylePreset: 'cardContainerMediaInteractive',
+              mediaContainer: {
+                stylePreset: 'cardContainerMediaInteractive',
+              },
             },
           },
         },
@@ -432,7 +436,9 @@ export default (layoutProps: LayoutProps) => (
           },
           styles: {
             card: {
-              stylePreset: 'cardContainerMediaInteractive',
+              mediaContainer: {
+                stylePreset: 'cardContainerMediaInteractive',
+              },
             },
           },
         },
@@ -446,7 +452,9 @@ export default (layoutProps: LayoutProps) => (
           },
           styles: {
             card: {
-              stylePreset: 'cardContainerMediaInteractive',
+              mediaContainer: {
+                stylePreset: 'cardContainerMediaInteractive',
+              },
             },
           },
         },
