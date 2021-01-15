@@ -18,16 +18,18 @@ export default (layoutProps: LayoutProps) => (
         type="About"
         name="Contribute"
         introduction="Interested in contributing to NewsKit? Contributors help to make NewsKit great."
-        hero={{src: '/static/contribute-page-introduction.svg', alt: 'placeholder'}}
+        hero={{
+          src: '/static/contribute-page-introduction.svg',
+          alt: 'placeholder',
+        }}
       />
       {/* TODO the cell is adding some margin top, with adds 
       to the margin bottom of 65 px coming from the image. */}
-      <SectionIntroduction
-        title="How to contribute"
-        introduction="There are a lot of ways to contribute to the NewsKit community 
-        and Design System; from submitting a proposal to designing a new feature for other 
-        users to benefit from."
-      />
+      <SectionIntroduction title="How to contribute">
+        There are a lot of ways to contribute to the NewsKit community and
+        Design System; from submitting a proposal to designing a new feature for
+        other users to benefit from.
+      </SectionIntroduction>
       <MediaList
         xsCard={12}
         smCard={4}
