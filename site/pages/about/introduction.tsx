@@ -8,6 +8,10 @@ import {MediaList} from '../../components/media-list';
 
 const cardContents = [
   {
+    media: {
+      src: '../../static/Principles01.svg',
+      alt: 'user-foccusee-media-image',
+    },
     title: 'User focusse',
     subtitle:
       'We don’t design for screens, we design for people; whether the product teams using our components or the customers using the end products.',
@@ -15,6 +19,10 @@ const cardContents = [
       'We establish insights on our user needs through qualitative and quantitative data from research. We continually test our components and the overall design system to ensure it meets these needs.',
   },
   {
+    media: {
+      src: '../../static/Principles02.svg',
+      alt: 'user-foccusee-media-image',
+    },
     title: 'Inclusive',
     subtitle:
       'Every design decision has the potential to include or exclude users. To ensure our solutions meet the needs of as many users as possible we take an inclusive first, design approach. ',
@@ -22,6 +30,10 @@ const cardContents = [
       'The default components are accessible to WCAG 2.1 AA standards. We strive for clarity around everything we do, simplifying the complex. We use simple language, avoid acronyms and offer more detail when required. Our users should always be able to understand and act with confidence.',
   },
   {
+    media: {
+      src: '../../static/Principles03.svg',
+      alt: 'user-foccusee-media-image',
+    },
     title: 'Essential',
     subtitle:
       'Every component serves a user’s need that is shared by multiple services or products.',
@@ -29,12 +41,20 @@ const cardContents = [
       "We don't create new solutions to solve problems that already exist in the system unless they are intended to replace them. We never build something 'just in case'. Every design decision and component has a clear purpose and contributes to a larger purpose; if it doesn’t, it shouldn’t be there.",
   },
   {
+    media: {
+      src: '../../static/Principles04.svg',
+      alt: 'user-foccusee-media-image',
+    },
     title: 'Collaborative',
     subtitle: 'Great ideas come from everywhere.',
     description:
       'Everyone is encouraged to contribute. We share everything we are doing at every step in the process: designs, code, ideas, successes or failures. We encourage and seek feedback, suggestions and contributions. We all take responsibility for the output of the team and reject ownership.',
   },
   {
+    media: {
+      src: '../../static/Principles05.svg',
+      alt: 'user-foccusee-media-image',
+    },
     title: 'Consistent',
     subtitle:
       'Ensuring everything reusable and shareable instead of constantly reinventing different solutions to solve the same need. ',
@@ -42,6 +62,10 @@ const cardContents = [
       'We create familiarity across our products by using the same solution to the same problem.',
   },
   {
+    media: {
+      src: '../../static/Principles06.svg',
+      alt: 'user-foccusee-media-image',
+    },
     title: 'Robust',
     subtitle:
       'Our users require a design system that they can trust and rely upon. ',
