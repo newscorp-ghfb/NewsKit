@@ -14,10 +14,14 @@ export const MediaList: React.FC<MediaListProps> = ({
   lgCard,
   xlCard,
   cards,
+  gridProps = {
+    xsRowGutter: 'space080',
+    xsMargin: 'space000',
+  },
 }) => (
   <Cell xs={12} md={10} lg={8} mdOffset={1}>
     <Block spaceStack={spaceStack}>
-      <Grid xsMargin="space000" xsRowGutter="space080">
+      <Grid {...gridProps}>
         {cards.map(
           ({media, title: cardTitle, description, subtitle, href, styles}) => (
             <Cell xs={xsCard} sm={smCard} md={mdCard} lg={lgCard} xl={xlCard}>

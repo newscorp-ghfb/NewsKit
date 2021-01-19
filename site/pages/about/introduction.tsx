@@ -9,7 +9,7 @@ import {MediaList} from '../../components/media-list';
 const cardContents = [
   {
     media: {
-      src: '../../static/Principles01.svg',
+      src: '../../static/principles-01.svg',
       alt: 'user-foccusee-media-image',
     },
     title: 'User focusse',
@@ -20,7 +20,7 @@ const cardContents = [
   },
   {
     media: {
-      src: '../../static/Principles02.svg',
+      src: '../../static/principles-02.svg',
       alt: 'user-foccusee-media-image',
     },
     title: 'Inclusive',
@@ -31,7 +31,7 @@ const cardContents = [
   },
   {
     media: {
-      src: '../../static/Principles03.svg',
+      src: '../../static/principles-03.svg',
       alt: 'user-foccusee-media-image',
     },
     title: 'Essential',
@@ -42,7 +42,7 @@ const cardContents = [
   },
   {
     media: {
-      src: '../../static/Principles04.svg',
+      src: '../../static/principles-04.svg',
       alt: 'user-foccusee-media-image',
     },
     title: 'Collaborative',
@@ -52,7 +52,7 @@ const cardContents = [
   },
   {
     media: {
-      src: '../../static/Principles05.svg',
+      src: '../../static/principles-05.svg',
       alt: 'user-foccusee-media-image',
     },
     title: 'Consistent',
@@ -63,7 +63,7 @@ const cardContents = [
   },
   {
     media: {
-      src: '../../static/Principles06.svg',
+      src: '../../static/principles-06.svg',
       alt: 'user-foccusee-media-image',
     },
     title: 'Robust',
@@ -166,7 +166,7 @@ export default (layoutProps: LayoutProps) => (
         NewsKit design system and the NewsKit team is guided by a set of
         principles.
       </SectionIntroduction>
-      <MediaList cards={cardsForPage} />
+      <MediaList cards={cardsForPage} gridProps={{xsRowGutter: 'space050'}} />
     </Grid>
   </Layout>
 );

@@ -1,4 +1,4 @@
-import {CardOverridesProps, MQ} from 'newskit';
+import {CardOverridesProps, GridProps, MQ} from 'newskit';
 
 export interface MediaListProps {
   cards: Array<MediaItem>;
@@ -8,6 +8,7 @@ export interface MediaListProps {
   lgCard?: number;
   xlCard?: number;
   spaceStack?: string;
+  gridProps?: GridProps;
 }
 
 interface TextBlockPresets {
