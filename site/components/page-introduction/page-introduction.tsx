@@ -21,24 +21,24 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
 }) => (
   <>
     <Cell xs={12} md={10} lg={8} mdOffset={1}>
-      <Block spaceStack={{xs: 'space050', md: 'space050', xl: 'space050'}}>
+      <Block spaceStack={{xs: 'space010', md: 'space030'}}>
         <TextBlock
           stylePreset="inkBrand010"
           typographyPreset={{
             xs: 'editorialHeadline010',
           }}
         >
-          {type.toUpperCase()}
+          {type}
         </TextBlock>
       </Block>
-      <Block spaceStack={{xs: 'space030', md: 'space030', xl: 'space030'}}>
+      <Block spaceStack={{xs: 'space010', md: 'space030'}}>
         <TextBlock
           as="h1"
           stylePreset="inkContrast"
           typographyPreset={{
             xs: 'editorialHeadline060',
             md: 'editorialHeadline070',
-            xl: 'editorialHeadline080',
+            lg: 'editorialHeadline080',
           }}
         >
           {name}
@@ -52,10 +52,10 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
         spaceStack={{xs: 'space060', md: 'space080', lg: 'space090'}}
       >
         <TextBlock
-          stylePreset="inkBase"
+          stylePreset="inkSubtle"
           typographyPreset={{
             xs: 'editorialSubheading010',
-            md: 'editorialSubheadline010',
+            md: 'editorialSubheadline020',
           }}
         >
           {introduction}
@@ -63,7 +63,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
       </ExtendedBlock>
     </Cell>
     <Cell xs={12} md={10} lg={8} mdOffset={1}>
-      <Block spaceStack="space090">
+      <Block spaceStack={{xs: 'space080', md: 'space060'}}>
         <Image
           src={hero.src}
           alt={hero.alt}

@@ -15,8 +15,8 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
           spaceInset: 'space000',
           heading: {
             typographyPreset: {
-              xs: 'editorialHeadline030',
-              md: 'editorialHeadline040',
+              xs: 'editorialHeadline040',
+              md: 'editorialHeadline060',
             },
           },
         }}
@@ -27,8 +27,8 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
     {children && (
       <Block spaceStack="space080">
         <TextBlock
-          stylePreset="inkBase"
-          typographyPreset="editorialParagraph030"
+          stylePreset="inkSubtle"
+          typographyPreset="editorialSubheading010"
         >
           {children}
         </TextBlock>

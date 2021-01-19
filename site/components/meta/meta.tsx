@@ -20,7 +20,7 @@ import {MetaProps, MetaFlagStylePresets} from './types';
 
 export const Meta = ({status, introduced, codeUrl, figmaUrl}: MetaProps) => (
   <Cell xs={12} md={10} lg={8} mdOffset={1}>
-    <Block spaceStack="space110">
+    <Block spaceStack={{xs: 'space080', md: 'space090'}}>
       <Block spaceStack="space050">
         <Hidden xs sm md lg>
           <Stack flow={Flow.HorizontalCenter} stackDistribution="space-between">
