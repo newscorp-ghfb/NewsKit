@@ -381,6 +381,11 @@
         "title": "Contribute",
         "page": true,
         "id": "/about/contribute"
+      },
+      {
+        "title": "Introduction",
+        "page": true,
+        "id": "/about/introduction"
       }
     ]
   }

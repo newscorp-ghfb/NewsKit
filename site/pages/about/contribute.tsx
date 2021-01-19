@@ -1,11 +1,69 @@
 import React from 'react';
-import {Cell, LinkStandalone, Link, Grid, Headline, Paragraph} from 'newskit';
+import {Cell, Link, Grid, Headline, Paragraph} from 'newskit';
 import {InfoNotice} from '../../components/info-notice';
 import Layout, {LayoutProps} from '../../components/layout';
 import {PageIntroduction} from '../../components/page-introduction';
 import {SectionIntroduction} from '../../components/section-introduction';
 import {MediaList} from '../../components/media-list';
 import {Separator} from '../../components/separator';
+
+const cardStyle = {
+  card: { 
+    stylePreset: 'cardContainerNonInteractive010',
+    teaserContainer: {
+      spaceInset: {
+        xs: 'spaceInset040',
+        sm: 'spaceInset040',
+        lg: 'spaceInset050',
+        xl: 'spaceInset050',
+      },
+    },
+  },
+  title: {
+    stylePreset: 'inkWhiteContrast',
+    typographyPreset: {
+      xs: 'editorialHeadline020',
+      lg: 'editorialHeadline030',
+    }
+  },
+  description: {
+    stylePreset: 'inkWhiteSubtle',
+    typographyPreset: 'editorialParagraph020',
+  },
+}
+
+const cards = [
+  {
+    title: 'Feedback',
+    description:
+      'Stay in contact with the NewsKit team and help it progress in a positive direction.',
+    media: {
+      src: '/static/contribute-feedback-card.svg',
+      alt: 'Card Media',
+    },
+    styles: cardStyle
+  },
+  {
+    title: 'Share',
+    description:
+      'Promote the Design System, answer questions and help your team integrate.',
+    media: {
+      src: '/static/contribute-share-card.svg',
+      alt: 'Card Media',
+    },
+    styles: cardStyle
+  },
+  {
+    title: 'Create',
+    description:
+      'Write code or design assets for the Design System for other users to reuse.',
+    media: {
+      src: '/static/contribute-create-card.svg',
+      alt: 'Card Media',
+    },
+    styles: cardStyle
+  },
+];
 
 export default (layoutProps: LayoutProps) => (
   //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
@@ -33,35 +91,9 @@ export default (layoutProps: LayoutProps) => (
       <MediaList
         xsCard={12}
         smCard={4}
-        lgCard={4}
+        mdCard={4}
         cards={[
-          {
-            title: 'Feedback',
-            description:
-              'Stay in contact with the NewsKit team and help it progress in a positive direction.',
-            media: {
-              src: '/static/contribute-feedback-card.svg',
-              alt: 'Card Media',
-            },
-          },
-          {
-            title: 'Share',
-            description:
-              'Promote the Design System, answer questions and help your team integrate.',
-            media: {
-              src: '/static/contribute-share-card.svg',
-              alt: 'Card Media',
-            },
-          },
-          {
-            title: 'Create',
-            description:
-              'Write code or design assets for the Design System for other users to reuse.',
-            media: {
-              src: '/static/contribute-create-card.svg',
-              alt: 'Card Media',
-            },
-          },
+          ...cards
         ]}
       />
       {/* TODO we need to be able to override space - for xs.  Another ticket. */}
@@ -96,12 +128,12 @@ export default (layoutProps: LayoutProps) => (
         <Paragraph>
           We also conduct focus group sessions, interviews and research tasks.
           Apply to be part of a research programme by contacting us via the{' '}
-          <LinkStandalone
+          <Link
             target="_blank"
             href="https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2294973413/Help+-+Web+Documentation"
           >
             contact form
-          </LinkStandalone>
+          </Link>
           .
         </Paragraph>
         <br />
@@ -250,6 +282,7 @@ export default (layoutProps: LayoutProps) => (
         </Headline>
         <br />
         <br />
+        {/* TODO UPDATE AS DESIGN in another ticker!? */}
         <InfoNotice>Currently only applicable for News UK teams.</InfoNotice>
         <br />
         <br />
